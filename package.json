@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npx @opennextjs/cloudflare@latest build",
+    "build": "./node_modules/.bin/opennextjs-cloudflare build",
     "start": "next start",
     "deploy:railway": "railway up",
     "refresh": "npx ts-node scripts/manual-refresh.ts",
@@ -26,6 +26,7 @@
     "@types/react": "^18",
     "ts-node": "^10.9.2",
     "typescript": "^5",
-    "wrangler": "^3.114.0"
+    "wrangler": "3.114.0",
+    "@opennextjs/cloudflare": "1.19.11"
   }
 }
