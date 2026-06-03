@@ -1,0 +1,39 @@
+name: Monitor and Alert
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: 'Optional focus topic for this monitor run'
+        required: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Run monitor
+        run: |
+          BODY="{}"
+          if [ -n "${{ github.event.inputs.topic }}" ]; then
+            BODY="{\"topic\":\"${{ github.event.inputs.topic }}\"}"
+          fi
+
+          HTTP=$(curl -s -o /tmp/resp.json -w "%{http_code}" \
+            -X POST "${{ secrets.APP_URL }}/api/monitor" \
+            -H "Content-Type: application/json" \
+            -H "x-cron-secret: ${{ secrets.CRON_SECRET }}" \
+            -H "x-vercel-protection-bypass: ${{ secrets.VERCEL_BYPASS_TOKEN }}" \
+            -d "$BODY" \
+            --max-time 120)
+
+          echo "HTTP: $HTTP"
+          cat /tmp/resp.json
+
+          if [ "$HTTP" != "200" ]; then
+            echo "Failed with HTTP $HTTP"
+            exit 1
+          fi
+          echo "Success"
