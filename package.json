@@ -4,12 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "./node_modules/.bin/opennextjs-cloudflare build",
+    "build": "next build && ./node_modules/.bin/opennextjs-cloudflare build",
     "start": "next start",
     "deploy:railway": "railway up",
     "refresh": "npx ts-node scripts/manual-refresh.ts",
     "deploy": "npx wrangler pages deploy",
-    "preview": "npx wrangler pages dev"
+    "preview": "npx wrangler pages dev",
+    "build:next": "next build"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.24.0",
