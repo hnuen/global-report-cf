@@ -20,7 +20,6 @@
     "react-dom": "^18"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.13.16",
     "@cloudflare/workers-types": "^4.20251124.0",
     "@types/node": "^20",
     "@types/nodemailer": "^6.4.0",
