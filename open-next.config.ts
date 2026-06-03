@@ -1,4 +1,4 @@
-const config = {
+export default {
   default: {
     override: {
       wrapper: "cloudflare-node",
@@ -9,6 +9,7 @@ const config = {
       queue: "direct",
     },
   },
+  edgeExternals: ["node:crypto"],
   middleware: {
     external: true,
     override: {
@@ -21,5 +22,3 @@ const config = {
     },
   },
 };
-
-export default config;
