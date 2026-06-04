@@ -1,13 +1,7 @@
 const fs = require('fs');
-let worker = fs.readFileSync('.open-next/worker.js', 'utf8');
-
-// Remove missing durable-objects exports
-worker = worker
-  .replace(/export \{ DOQueueHandler \} from "\.\/\.build\/durable-objects\/queue\.js";\n?/g, '')
-  .replace(/export \{ DOShardedTagCache \} from "\.\/\.build\/durable-objects\/sharded-tag-cache\.js";\n?/g, '')
-  .replace(/export \{ BucketCachePurge \} from "\.\/\.build\/durable-objects\/bucket-cache-purge\.js";\n?/g, '');
-
-// Write as _worker.js in .open-next root (same directory as cloudflare/, middleware/, server-functions/)
-fs.writeFileSync('.open-next/_worker.js', worker);
-console.log('_worker.js written to .open-next/');
-console.log('durable-objects refs remaining:', (worker.match(/durable-objects/g)||[]).length);
+// Simply rename worker.js to _worker.js — all referenced files exist in .open-next/
+fs.copyFileSync('.open-next/worker.js', '.open-next/_worker.js');
+// Copy assets to root so /_next/static/* is served correctly
+const { execSync } = require('child_process');
+execSync('cp -r .open-next/assets/. .open-next/');
+console.log('Done: _worker.js created, assets copied to root');
