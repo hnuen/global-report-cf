@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && ./node_modules/.bin/opennextjs-cloudflare build",
+    "build": "./node_modules/.bin/opennextjs-cloudflare build",
     "start": "next start",
     "deploy:railway": "railway up",
     "refresh": "npx ts-node scripts/manual-refresh.ts",
