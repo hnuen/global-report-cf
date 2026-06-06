@@ -5,6 +5,7 @@ import { fetchOfficialSources, formatSourcesForPrompt } from "./official-sources
 import { buildBriefingFromSources } from "./official-briefing";
 import { buildAnalyzedBriefing } from "./local-analyzer";
 import { getHistoricalForSection, getRecentBySource } from "./historical-articles";
+import { loadArticleCache, mergeIntoCache, getCachedBySource } from "./article-cache";
 import type { Briefing, Section } from "./types";
 import { enrichArticlesWithBriefs } from "./brief-generator";
 
@@ -20,6 +21,10 @@ export async function refreshBriefing(topic?: string): Promise<{
   savedTo: string[];
 }> {
   const storage = await buildStorageManager();
+
+  // Pre-load the rolling article cache (one Redis GET; used later for per-source backfill)
+  const cachedArticles = await loadArticleCache();
+  console.log(`[orchestrator] Article cache: ${cachedArticles.length} entries`);
 
   // Always fetch official sources first — fast and free
   console.log("[orchestrator] Fetching official government sources...");
@@ -88,11 +93,17 @@ export async function refreshBriefing(topic?: string): Promise<{
   for (const { keyword, limit } of SOURCE_BACKFILLS) {
     const hasSource = briefing.articles.some(a => a.source.includes(keyword));
     if (!hasSource) {
-      const fallback = getRecentBySource(keyword, limit, existingIds);
+      // Prefer the rolling cache (real live articles from past refreshes)
+      // over hardcoded historical entries — cache is always fresher.
+      const fromCache = getCachedBySource(cachedArticles, keyword, limit, existingIds);
+      const fallback = fromCache.length > 0
+        ? fromCache
+        : getRecentBySource(keyword, limit, existingIds);
       if (fallback.length > 0) {
         briefing.articles = [...briefing.articles, ...fallback];
         fallback.forEach(a => existingIds.add(a.id));
-        console.log(`[orchestrator] Backfilled ${fallback.length} ${keyword} historical articles (source had 0 live)`);
+        const src2 = fromCache.length > 0 ? "cache" : "historical";
+        console.log(`[orchestrator] Backfilled ${fallback.length} ${keyword} articles from ${src2}`);
       }
     }
   }
@@ -157,6 +168,11 @@ export async function refreshBriefing(topic?: string): Promise<{
   // Eastern-time lastUpdated persist before enrichment can starve the budget.
   await storage.save(briefing);
   console.log("[orchestrator] Saved core briefing (pre-enrichment)");
+  // Update the rolling article cache asynchronously — non-blocking, non-fatal.
+  // waitUntil would be ideal here but is not available in all runtimes;
+  // using void to fire-and-forget is acceptable since cache failures never
+  // affect the briefing that was already saved above.
+  void mergeIntoCache(briefing.articles);
 
   // Enrich articles with AI-generated briefs (cached in Redis, runs async)
   // Only runs when LLM fallback was used (structured briefing) — LLM articles already have good body text

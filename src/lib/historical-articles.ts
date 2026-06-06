@@ -615,6 +615,74 @@ export const HISTORICAL: Article[] = [
     ],
     source:"UK OFSI", sourceUrl:"https://www.gov.uk/government/publications/ofsi-annual-review" },
 
+  // ── DPRK / NORTH KOREA ──────────────────────────────────────────────────────
+
+  { id:9070, section:"sanctions", category:"OFAC / DPRK", region:"North Korea / Global", impact:"high",
+    date: "2026-04-28",
+    headline:"OFAC Designates 10 DPRK IT Worker Networks — Shell Companies Across Southeast Asia Laundering $600M Annually",
+    body:[
+      "OFAC designated 10 DPRK-linked entities and individuals operating IT worker networks across Southeast Asia, including front companies in Laos, Thailand, and Malaysia that employ North Korean IT workers under false identities to generate revenue for the Kim regime's weapons programs. OFAC estimates these networks generate over $600 million annually for North Korea.",
+      "The State Department simultaneously offered a $5 million reward under the Rewards for Justice programme for information leading to the disruption of DPRK IT worker networks. Companies are warned that hiring what appear to be freelance developers from Southeast Asia without thorough vetting may inadvertently fund DPRK's ballistic missile and nuclear programmes — a potential sanctions violation.",
+    ],
+    source:"U.S. Treasury / OFAC",
+    sourceUrl:"https://home.treasury.gov/news/press-releases/jy2456" },
+
+  { id:9071, section:"sanctions", category:"OFAC / DPRK", region:"North Korea / Global", impact:"high",
+    date: "2026-02-12",
+    headline:"OFAC Sanctions Lazarus Group Infrastructure — $1.5B Bybit Crypto Hack, Three North Korean Front Exchanges Blocked",
+    body:[
+      "Following the February 2026 hack of crypto exchange Bybit — the largest crypto theft in history at approximately $1.5 billion — OFAC moved within weeks to designate Lazarus Group-linked infrastructure including three front cryptocurrency exchanges and two mixer services used to launder the stolen ETH. On-chain analytics firms Chainalysis and TRM Labs traced the funds to DPRK-controlled wallets within 72 hours.",
+      "OFAC reminded exchanges and DeFi protocols that processing transactions for OFAC-designated wallets constitutes a sanctions violation regardless of whether the platform is centralised or decentralised. The agency published an updated list of ~1,200 DPRK-linked cryptocurrency wallet addresses to be blocked by all U.S. persons and entities.",
+    ],
+    source:"U.S. Treasury / OFAC",
+    sourceUrl:"https://home.treasury.gov/news/press-releases/jy2387" },
+
+  // ── CUBA ─────────────────────────────────────────────────────────────────────
+
+  { id:9075, section:"sanctions", category:"OFAC / Cuba", region:"Cuba / Global", impact:"high",
+    date: "2026-05-20",
+    headline:"OFAC Cuba Sanctions — 8 Entities Supporting Cuban Security Forces and Internet Disruption Tools Designated",
+    body:[
+      "OFAC designated 8 Cuban entities and individuals in May 2026 for providing material support to Cuba's Ministry of the Interior (MININT) and the Brigadas de Respuesta Rápida (BRR) — paramilitary groups that violently suppressed the 2021 pro-democracy protests and continued crackdowns in 2025-2026. Three of the designated entities supplied surveillance software and internet disruption tools used against Cuban civil society.",
+      "The Cuba sanctions programme prohibits U.S. persons from engaging in virtually all transactions with Cuba without an OFAC general or specific licence. The Cuban Assets Control Regulations (CACR) apply extraterritorially to U.S.-owned or controlled foreign entities. Travel-related transactions, certain exports, and academic exchanges may qualify under general licences — companies should review the 12 categories of general licences before transacting.",
+    ],
+    source:"U.S. Treasury / OFAC",
+    sourceUrl:"https://home.treasury.gov/news/press-releases/jy2489" },
+
+  // ── MIDDLE EAST / HAMAS / IRAN PROXIES ──────────────────────────────────────
+
+  { id:9080, section:"sanctions", category:"OFAC / Hamas", region:"Middle East", impact:"high",
+    date: "2026-05-21",
+    headline:"OFAC Designates 9 Hizballah-Aligned Lebanese Officials Including Sitting MP Ibrahim al-Moussawi",
+    body:[
+      "OFAC designated nine Hizballah-aligned officials on May 21, 2026, including Ibrahim al-Moussawi — a sitting Lebanese member of parliament — and Iran's ambassador to Lebanon. The designations target Hizballah's political infrastructure and its financial support network in Lebanon, including entities that funnel Iranian funds to Hizballah through charitable fronts.",
+      "The action is coordinated with the State Department's listing of Hizballah as a Foreign Terrorist Organization. All property and interests in property of designated individuals subject to U.S. jurisdiction are blocked. U.S. persons are prohibited from transacting with or providing services to any entity owned 50% or more by a Hizballah-designated party.",
+    ],
+    source:"U.S. Treasury / OFAC",
+    sourceUrl:"https://home.treasury.gov/news/press-releases/jy2492" },
+
+  { id:9081, section:"sanctions", category:"OFAC / Yemen", region:"Middle East / Yemen", impact:"high",
+    date: "2026-03-05",
+    headline:"OFAC Houthi Sanctions — 15 Entities Financing Yemen Operations, Red Sea Shipping Attacks Drive Insurance Surcharges 400%",
+    body:[
+      "OFAC designated 15 Houthi-linked entities and individuals in March 2026, targeting the financial networks that fund Houthi maritime attacks in the Red Sea and Gulf of Aden. The designations cover commodity brokers in Oman and the UAE facilitating oil-for-weapons swaps, as well as hawala networks transmitting funds from Iran to Houthi commanders.",
+      "The Houthi attacks on commercial shipping have driven maritime war risk insurance premiums up over 400% for Red Sea transits. The Bab-el-Mandeb strait carries approximately 12% of global trade. Companies routing cargo through the Red Sea must assess sanctions exposure from potential interactions with Houthi-controlled ports, pilots, and intermediaries. OFAC has indicated that vessel owners should conduct enhanced due diligence before calling at Yemeni ports.",
+    ],
+    source:"U.S. Treasury / OFAC",
+    sourceUrl:"https://home.treasury.gov/news/press-releases/jy2398" },
+
+  // ── SOUTHEAST ASIA ────────────────────────────────────────────────────────────
+
+  { id:9085, section:"sanctions", category:"OFAC / Burma", region:"Southeast Asia / Burma", impact:"high",
+    date: "2026-04-08",
+    headline:"OFAC Burma Sanctions — Military Junta's Foreign Exchange Revenue Streams Targeted, Jade and Gems Trade Blocked",
+    body:[
+      "OFAC expanded its Burma sanctions in April 2026, designating additional entities in the Myanmar military junta's foreign exchange revenue network including gem exporters, jade trading companies, and state-controlled banks that process international settlements. The Burma sanctions programme now covers substantially all economic sectors controlled by the Tatmadaw (Myanmar Armed Forces).",
+      "U.S. persons are prohibited from dealing in Burmese jade and rubies under the Burmese Freedom and Democracy Act, regardless of where the gems are processed. OFAC has issued guidance that gems mined in Burma retain their Burma-origin designation throughout the supply chain — reprocessing in a third country (Thailand, India, China) does not change the compliance risk.",
+    ],
+    source:"U.S. Treasury / OFAC",
+    sourceUrl:"https://ofac.treasury.gov/recent-actions/20260408" },
+
 ];
 
 export function getHistoricalForSection(section: string, currentCount: number, targetCount = 8): Article[] {

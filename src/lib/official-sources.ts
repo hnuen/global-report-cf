@@ -236,7 +236,7 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean }> = [
 
   // ── Penalties & Enforcement ──────────────────────────────────────────────────
   { name: "Federal Reserve Enforcement Actions",  url: "https://www.federalreserve.gov/supervisionreg/enforcement-actions-about.htm", official: true },
-  { name: "UK Financial Sanctions Penalties",     url: "https://www.gov.uk/government/publications/financial-sanctions-enforcement-and-monetary-penalties-guidance/financial-sanctions-enforcement-and-monetary-penalties-guidance", official: true },
+  { name: "UK Financial Sanctions Penalties",     url: "https://www.gov.uk/government/publications/ofsi-monetary-penalty-notices-and-reports", official: true },
 
   // ── European Union ───────────────────────────────────────────────────────────
   { name: "EU Commission — Latest News",          url: "https://ec.europa.eu/commission/presscorner/api/documents?pagesize=10&page=0&keywords=sanctions&sortby=date_updated&orderby=DESC&language=en", official: true },
@@ -312,7 +312,7 @@ function getTreasurySources(): Array<{ name: string; url: string }> {
 function getOFACDateSources(): Array<{ name: string; url: string }> {
   const sources = [];
   const today = new Date();
-  for (let i = 0; i < 14; i++) {
+  for (let i = 0; i < 7; i++) {
     const d = new Date(today);
     d.setDate(d.getDate() - i);
     const dateStr = d.getFullYear().toString() +
@@ -328,7 +328,13 @@ function getOFACDateSources(): Array<{ name: string; url: string }> {
 
 export async function fetchOfficialSources(): Promise<OfficialSource[]> {
   const now = new Date().toISOString();
-  const allSources = [...SOURCES];
+  // Include OFAC date-specific pages (last 7 days) and recent Treasury SB press releases.
+  // getOFACDateSources/getTreasurySources are defined above but were previously not wired up.
+  const allSources = [
+    ...SOURCES,
+    ...getOFACDateSources(),        // OFAC date pages for last 7 days
+    ...getTreasurySources().slice(0, 10), // 10 most recent Treasury SB press releases
+  ];
   const MASTER_TIMEOUT = 20000;
 
   const fetchOne = async (source: typeof allSources[0]) => {
