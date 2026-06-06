@@ -73,22 +73,21 @@ function stripHTML(html: string): string {
         }
       }
 
-      // Pick the best article URL — prefer non-Google-redirect URLs
-      // For Google News RSS, the <source url="..."> attribute has the real publisher URL
-      let link = (sourceUrlMatch?.[1] || linkMatch?.[1] || guidMatch?.[1] || "").trim();
-      // If still a Google News URL, keep it — it will redirect to the real article
-      if (!link || link.trim() === "") {
-        link = linkMatch?.[1] || guidMatch?.[1] || "";
-      }
+      // For Google News RSS: <link> has the google.com redirect URL which works fine
+      // <source url="..."> is just the publisher homepage — don't use it as article URL
+      let link = (linkMatch?.[1] || guidMatch?.[1] || "").trim();
 
+      // Google News descriptions contain HTML inside CDATA — strip all of it
+      // First strip real tags, then decode entities, then strip any decoded tags
       let desc = (descMatch?.[1] || descMatch?.[2] || "")
+        .replace(/<[^>]+>/g, " ")                                          // strip real HTML tags
+        .replace(/&lt;[^&]*&gt;/g, " ")                                    // strip encoded <tags>
         .replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&amp;/g, "&")
-        .replace(/<[^>]+>/g, " ")
+        .replace(/<[^>]+>/g, " ")                                          // strip decoded tags
         .replace(/&nbsp;/g, " ").replace(/&#39;/g, "'")
         .replace(/&#([0-9]+);/g, (_,n) => String.fromCharCode(Number(n)))
         .replace(/\s+/g, " ").trim()
-        // Strip any remaining HTML-like content
-        .replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+        .slice(0, 400);
 
       if (desc.toLowerCase().startsWith(title.toLowerCase().slice(0, 30))) {
         desc = desc.slice(title.length).replace(/^[\s\-–—:]+/, "").trim();
@@ -314,37 +313,24 @@ function getOFACDateSources(): Array<{ name: string; url: string }> {
 export async function fetchOfficialSources(): Promise<OfficialSource[]> {
   const now = new Date().toISOString();
   const allSources = [...SOURCES];
-
-  // Master 25s timeout for all sources combined — well under Vercel 60s limit
   const MASTER_TIMEOUT = 20000;
 
-  const fetchAll = Promise.allSettled(
-    allSources.map(async (source) => {
-      try {
-        console.log(`[official] Fetching ${source.name}...`);
-        const html = await fetchWithTimeout(source.url);
-        const content = stripHTML(html);
-        console.log(`[official] ✅ ${source.name} — ${content.length} chars`);
-        return {
-          name: source.name,
-          url: source.url,
-          content,
-          fetchedAt: now,
-        };
-      } catch (e) {
-        console.warn(`[official] ❌ ${source.name} failed: ${e}`);
-        return {
-          name: source.name,
-          url: source.url,
-          content: "",
-          fetchedAt: now,
-          error: String(e),
-        };
-      }
-    })
-  );
+  const fetchOne = async (source: typeof allSources[0]) => {
+    try {
+      console.log(`[official] Fetching ${source.name}...`);
+      const html = await fetchWithTimeout(source.url, (source as any).official ? 6000 : 4000);
+      const content = stripHTML(html);
+      console.log(`[official] ✅ ${source.name} — ${content.length} chars`);
+      return { name: source.name, url: source.url, content, fetchedAt: now };
+    } catch (e) {
+      console.warn(`[official] ❌ ${source.name} failed: ${e}`);
+      return { name: source.name, url: source.url, content: "", fetchedAt: now, error: String(e) };
+    }
+  };
 
-  // Race against master timeout
+  // Fetch all in parallel but race against master timeout
+  const fetchAll = Promise.allSettled(allSources.map(fetchOne));
+
   const timeoutPromise = new Promise<typeof results>((resolve) =>
     setTimeout(() => {
       console.warn("[official] Master timeout hit — returning partial results");
