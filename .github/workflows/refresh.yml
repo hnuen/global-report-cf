@@ -73,4 +73,15 @@ jobs:
   monitor:
     if: |
       github.event_name == 'workflow_dispatch' && github.event.inputs.job == 'monitor' ||
-      github.event_name 
+      github.event_name == 'schedule' && contains(github.event.schedule, '15 ')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Trigger monitor
+        run: |
+          HTTP=$(curl -s -o /tmp/resp.json -w "%{http_code}" \
+            -X POST "${{ secrets.APP_URL }}/api/monitor" \
+            -H "Content-Type: application/json" \
+            -d "{}" --max-time 60 || echo "000")
+          echo "Monitor HTTP: $HTTP"
+          cat /tmp/resp.json 2>/dev/null || true
