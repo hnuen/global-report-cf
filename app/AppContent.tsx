@@ -478,23 +478,39 @@ export default function GlobalMonitor() {
     fetch(url).then(r=>r.json()).then((d:{records:FinCENPenalty[]})=>setFincenPenalties(d.records)).catch(()=>{});
   };
 
+  const [refreshQueued, setRefreshQueued] = useState(false);
+
+  // Refreshing in-process (fetching ~50 sources) reliably exceeds Cloudflare's
+  // worker time limits, so the button no longer waits on /api/refresh directly.
+  // Instead it asks the "Refresh Global Report" GitHub Actions workflow to run
+  // right now (which has much more headroom) via /api/trigger-refresh, then
+  // polls /api/news for a couple of minutes until the new briefing lands.
   const handleRefresh = useCallback(async () => {
-    setRefreshing(true); setError("");
+    setRefreshing(true); setError(""); setRefreshQueued(false);
+    const previousUpdated = data?.lastUpdated;
     try {
-      const res = await fetch("/api/refresh", {
-        method:"POST", headers:{"Content-Type":"application/json"},
-        body:JSON.stringify({topic:refreshTopic||undefined}),
-      });
-      if (!res.ok) throw new Error(`${res.status}`);
-      // Refresh returns {ok, articleCount} — reload actual data from /api/news
-      const refreshResult = await res.json();
-      console.log("[refresh] result:", refreshResult);
-      const newsRes = await fetch("/api/news");
-      const newsData = await newsRes.json();
-      setData(newsData); setExpanded({}); setSanOn(false);
-    } catch(e){ setError("Refresh failed — check Vercel logs."); console.error(e); }
-    setRefreshing(false);
-  }, [refreshTopic]);
+      const res = await fetch("/api/trigger-refresh", { method: "POST" });
+      const result = await res.json().catch(() => ({}));
+      if (!res.ok || !result.ok) throw new Error(result.error || `HTTP ${res.status}`);
+      setRefreshQueued(true);
+      // Poll for the new briefing — GitHub Actions runs typically land within ~1-2 min
+      for (let i = 0; i < 6; i++) {
+        await new Promise(r => setTimeout(r, 20000));
+        try {
+          const newsRes = await fetch("/api/news");
+          const newsData = await newsRes.json();
+          if (newsData?.lastUpdated && newsData.lastUpdated !== previousUpdated) {
+            setData(newsData); setExpanded({}); setSanOn(false);
+            break;
+          }
+        } catch { /* keep polling */ }
+      }
+    } catch(e){
+      setError("Couldn't queue a refresh — check that GITHUB_TOKEN is configured for this app.");
+      console.error(e);
+    }
+    setRefreshing(false); setRefreshQueued(false);
+  }, [refreshTopic, data]);
 
   // Live web fallback — called when tab date/keyword search returns 0 local results
   const doTabLiveSearch = async (q: string, from: string, to: string, sec: string) => {
@@ -745,7 +761,7 @@ export default function GlobalMonitor() {
         )}
       </div></div>
       <div className="upd-bar"><div className="upd-inner">
-        {refreshing ? <><span className="spin-dot"/><span className="upd-text">Fetching latest news… (~30s)</span></>
+        {refreshing ? <><span className="spin-dot"/><span className="upd-text">{refreshQueued ? "Refresh queued — waiting for new articles… (~1-2 min)" : "Queuing refresh…"}</span></>
           : <><span className="live-dot"/><span className="upd-text">{data.lastUpdated} · {allFiltered.length} stories</span></>}
         {error && <span className="err-msg">{error}</span>}
         <input className="topic-input" placeholder="Optional: focus topic…" value={refreshTopic} onChange={e=>setRefreshTopic(e.target.value)} onKeyDown={e=>e.key==="Enter"&&!refreshing&&handleRefresh()}/>
@@ -1116,8 +1132,8 @@ export default function GlobalMonitor() {
           )}
           {section!=="penalties" && !allFiltered.length&&!sanOn&&<div className="empty-s">No stories match the current filters.</div>}
           <div className="hint"><strong style={{color:"var(--muted)"}}>HOW THIS WORKS</strong><br/>
-            ↻ Refresh Now fetches live news via web search (~30s) · Sources linked below each article<br/>
-            Auto-refreshes daily via cron · Sanctions search filters the current edition instantly
+            ↻ Refresh Now queues a live source fetch (lands in ~1-2 min) · Sources linked below each article<br/>
+            Auto-refreshes throughout the day on a schedule · Sanctions search filters the current edition instantly
           </div>
         </main>
         <aside>
