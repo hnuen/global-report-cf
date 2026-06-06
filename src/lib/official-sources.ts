@@ -264,6 +264,9 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean }> = [
   // chosen so the resulting displaySource matches the Tier-1 officialKeywords
   // list in orchestrator.ts (e.g. "OFAC", "FinCEN", "BIS", "EU Council", "OFSI").
   { name: "Google News — OFAC Actions",            url: "https://news.google.com/rss/search?q=OFAC+sanctions+designations+site:ofac.treasury.gov&hl=en-US&gl=US&ceid=US:en", official: true },
+  // Broader OFAC/Treasury query restricted to last 7 days — catches releases
+  // not yet indexed under the narrower site:ofac.treasury.gov search above
+  { name: "Google News — OFAC Recent",             url: "https://news.google.com/rss/search?q=OFAC+sanctions+designations+treasury+when%3A7d&hl=en-US&gl=US&ceid=US:en", official: true },
   { name: "Google News — FinCEN",                  url: "https://news.google.com/rss/search?q=FinCEN+enforcement+advisory+site:fincen.gov&hl=en-US&gl=US&ceid=US:en", official: true },
   { name: "Google News — BIS Entity List",         url: "https://news.google.com/rss/search?q=BIS+export+controls+Entity+List+site:bis.gov&hl=en-US&gl=US&ceid=US:en", official: true },
   { name: "Google News — EU Council Sanctions",    url: "https://news.google.com/rss/search?q=EU+Council+sanctions+designations+site:consilium.europa.eu&hl=en-US&gl=US&ceid=US:en", official: true },
@@ -294,11 +297,21 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean }> = [
 // ── Main function: fetch all sources in parallel ──────────────────────────────
 // Generate Treasury press release URLs (sequential SB numbers)
 // Latest known: sb0505 (May 21 2026). Fetch last 20 releases.
-const LATEST_SB_NUMBER = 509; // sb0509 confirmed May 28 2026 — SDN modernization
+// SB509 = May 28 2026 (confirmed). Treasury/OFAC publishes ~1-2 SBs per day.
+// Dynamically estimate the ceiling so new releases are always probed without
+// ever needing to update a hardcoded constant again.
+const SB509_DATE    = new Date("2026-05-28T00:00:00Z");
+const SB509_NUM     = 509;
+const SB_PER_DAY    = 1.5; // conservative estimate (~10/week)
+function getEstimatedLatestSB(): number {
+  const daysSince = Math.max(0, (Date.now() - SB509_DATE.getTime()) / 86_400_000);
+  return Math.ceil(SB509_NUM + daysSince * SB_PER_DAY) + 5; // +5 buffer
+}
 function getTreasurySources(): Array<{ name: string; url: string }> {
+  const ceiling = getEstimatedLatestSB();
   const sources = [];
-  for (let i = 0; i < 30; i++) {  // fetch last 30 releases
-    const num = LATEST_SB_NUMBER - i;
+  for (let i = 0; i < 20; i++) {  // probe 20 SBs from ceiling downward
+    const num = ceiling - i;
     const padded = "sb" + String(num).padStart(4, "0");
     sources.push({
       name: `Treasury Press Release ${padded.toUpperCase()}`,
@@ -333,7 +346,7 @@ export async function fetchOfficialSources(): Promise<OfficialSource[]> {
   const allSources = [
     ...SOURCES,
     ...getOFACDateSources(),        // OFAC date pages for last 7 days
-    ...getTreasurySources().slice(0, 10), // 10 most recent Treasury SB press releases
+    ...getTreasurySources().slice(0, 15), // 15 most recent Treasury SB press releases (ceiling auto-estimated)
   ];
   const MASTER_TIMEOUT = 20000;
 
