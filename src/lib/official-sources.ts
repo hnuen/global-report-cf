@@ -23,7 +23,7 @@ export interface OfficialSource {
 }
 
 // ── Fetch a single URL with timeout ──────────────────────────────────────────
-async function fetchWithTimeout(url: string, timeoutMs = 5000): Promise<string> {
+async function fetchWithTimeout(url: string, timeoutMs = 4000): Promise<string> {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
   try {
@@ -324,7 +324,7 @@ export async function fetchOfficialSources(): Promise<OfficialSource[]> {
   const allSources = [...SOURCES];
 
   // Master 25s timeout for all sources combined — well under Vercel 60s limit
-  const MASTER_TIMEOUT = 25000;
+  const MASTER_TIMEOUT = 20000;
 
   const fetchAll = Promise.allSettled(
     allSources.map(async (source) => {

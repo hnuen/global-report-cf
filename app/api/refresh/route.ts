@@ -2,7 +2,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { refreshBriefing } from "@/src/lib/orchestrator";
 
-export const maxDuration = 60;
 export const dynamic = "force-dynamic";
 
 export async function POST(request: NextRequest) {
