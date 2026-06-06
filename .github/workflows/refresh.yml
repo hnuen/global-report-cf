@@ -49,34 +49,28 @@ jobs:
       github.event_name == 'workflow_dispatch' && github.event.inputs.job != 'monitor' ||
       github.event_name == 'schedule' && !contains(github.event.schedule, '15 ')
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
       - name: Trigger refresh
         run: |
+          # refreshBriefing() fetches official sources (~20s) plus Gemini brief
+          # enrichment (batches of 3 with 4.5s rate-limit gaps — can take 60-120s+),
+          # so give curl enough headroom to actually receive the response. A
+          # "000" here means curl gave up before the Worker finished saving —
+          # that is a REAL failure (stale data stays in Redis), not an "OK".
           HTTP=$(curl -s -o /tmp/resp.json -w "%{http_code}" \
             -X POST "${{ secrets.APP_URL }}/api/refresh" \
             -H "Content-Type: application/json" \
-            -d "{}" --max-time 60 || echo "000")
+            -d "{}" --max-time 420 || echo "000")
           echo "Refresh HTTP: $HTTP"
           cat /tmp/resp.json 2>/dev/null || true
-          if [ "$HTTP" = "200" ] || [ "$HTTP" = "202" ] || [ "$HTTP" = "000" ]; then
+          if [ "$HTTP" = "200" ] || [ "$HTTP" = "202" ]; then
             echo "OK"
           else
-            echo "ERROR: HTTP $HTTP" && exit 1
+            echo "ERROR: HTTP $HTTP — refresh did not complete (timeout or server error); Redis data was likely NOT updated" && exit 1
           fi
 
   monitor:
     if: |
       github.event_name == 'workflow_dispatch' && github.event.inputs.job == 'monitor' ||
-      github.event_name == 'schedule' && contains(github.event.schedule, '15 ')
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    steps:
-      - name: Trigger monitor
-        run: |
-          HTTP=$(curl -s -o /tmp/resp.json -w "%{http_code}" \
-            -X POST "${{ secrets.APP_URL }}/api/monitor" \
-            -H "Content-Type: application/json" \
-            -d "{}" --max-time 60 || echo "000")
-          echo "Monitor HTTP: $HTTP"
-          cat /tmp/resp.json 2>/dev/null || true
+      github.event_name 
