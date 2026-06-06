@@ -4,6 +4,19 @@ function isConcatenated(text: string): boolean {
 }
 
 // Convert any date string to YYYY-MM-DD for consistent sorting
+// Today's date as YYYY-MM-DD in US Eastern Time (America/New_York — handles EST/EDT
+// automatically). Used as the fallback "publish date" for articles when no real
+// date can be extracted, so the displayed default reflects the Eastern-time day
+// rather than the UTC day (which can be a day ahead late in the evening ET).
+function todayInEastern(): string {
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "America/New_York",
+    year: "numeric", month: "2-digit", day: "2-digit",
+  }).formatToParts(new Date());
+  const get = (t: string) => parts.find(p => p.type === t)?.value || "";
+  return `${get("year")}-${get("month")}-${get("day")}`;
+}
+
 function toISODate(d: string): string {
   if (!d || d === "Ongoing") return d;
   if (/^\d{4}-\d{2}-\d{2}$/.test(d)) return d; // already ISO
@@ -272,13 +285,13 @@ function buildArticleFromSource(source: OfficialSource): Article | null {
       .replace("U.S. Treasury — OFAC Sanctions", "U.S. Treasury / OFAC")
       .replace("U.S. Treasury — Press Releases", "U.S. Treasury")
       .replace("U.S. Treasury — Enforcement", "U.S. Treasury")
-      .replace("U.S. Treasury — ", "U.S. Treasury")
-      .replace("Google News — ", "")
-      .replace("OFAC — ", "OFAC / "));
+      .replace(/^U\.S\. Treasury — /, "U.S. Treasury / ")
+      .replace(/^Google News — /, "")
+      .replace(/^OFAC — /, "OFAC / "));
 
-  // Use UTC-safe ISO date directly — toLocaleDateString fails on CF/Vercel edge
-  const _now = new Date();
-  const today = `${_now.getUTCFullYear()}-${String(_now.getUTCMonth()+1).padStart(2,"0")}-${String(_now.getUTCDate()).padStart(2,"0")}`;
+  // Default/fallback date — Eastern Time day (matches the "lastUpdated" timestamp
+  // below, which is also shown in America/New_York).
+  const today = todayInEastern();
 
   // Extract bullet points (headlines from official sites)
   const rawBulletLines = source.content
@@ -401,13 +414,14 @@ export function buildAllFromSource(source: OfficialSource): Article[] {
   const displaySource = SOURCE_DISPLAY_NAMES[source.name] ||
     (source.name.startsWith("Treasury Press Release ") ? "U.S. Treasury" : source.name
       .replace("OFAC Sanctions List Updates", "OFAC")
-      .replace("U.S. Treasury — ", "U.S. Treasury")
-      .replace("Google News — ", "")
-      .replace("OFAC — ", "OFAC / "));
+      .replace("U.S. Treasury — OFAC Sanctions", "U.S. Treasury / OFAC")
+      .replace(/^U\.S\. Treasury — /, "U.S. Treasury / ")
+      .replace(/^Google News — /, "")
+      .replace(/^OFAC — /, "OFAC / "));
 
-  // Use UTC-safe ISO date directly — toLocaleDateString fails on CF/Vercel edge
-  const _now = new Date();
-  const today = `${_now.getUTCFullYear()}-${String(_now.getUTCMonth()+1).padStart(2,"0")}-${String(_now.getUTCDate()).padStart(2,"0")}`;
+  // Default/fallback date — Eastern Time day (matches the "lastUpdated" timestamp
+  // below, which is also shown in America/New_York).
+  const today = todayInEastern();
 
   const rawBulletLines = source.content
     .split("\n")
@@ -432,7 +446,7 @@ export function buildAllFromSource(source: OfficialSource): Article[] {
     const rest = parts.slice(2).join(" ||| ").trim();
     const dateMatch = rest.match(/^DATE:([^|]{0,50}?)\s*(\|\|\||$)/);
     const pubDate = dateMatch?.[1]?.trim() || "";
-    const brief = rest.replace(/^DATE:[^\s]*/,"").trim();
+    const brief = rest.replace(/^DATE:[^\s|]*\s*(\|\|\|)?\s*/, "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
     return { text: parts[0].trim(), url: parts[1]?.trim() || "", brief, pubDate };
   }).filter(b =>
     b.text.length > 20 && b.text.length < 300 &&
@@ -689,9 +703,9 @@ function buildArticlesFromSource(source: OfficialSource): Article[] {
   const category = SOURCE_CATEGORY_MAP[source.name] ?? (isOFACDate ? "OFAC" : isTreasuryPR ? "U.S. Treasury" : source.name);
   const baseUrl = SOURCE_BASE_URLS[source.name] || (isOFACDate ? "https://ofac.treasury.gov" : isTreasuryPR ? "https://home.treasury.gov" : "");
   const region = (isOFACDate || isTreasuryPR) ? detectRegionFromContent(source.content) : detectRegion(source.name);
-  // Use UTC-safe ISO date directly — toLocaleDateString fails on CF/Vercel edge
-  const _now = new Date();
-  const today = `${_now.getUTCFullYear()}-${String(_now.getUTCMonth()+1).padStart(2,"0")}-${String(_now.getUTCDate()).padStart(2,"0")}`;
+  // Default/fallback date — Eastern Time day (matches the "lastUpdated" timestamp
+  // below, which is also shown in America/New_York).
+  const today = todayInEastern();
 
   const NAV_PATTERNS = [
     /^https?:\/\//i, /^\/[a-z]/,
@@ -719,20 +733,23 @@ function buildArticlesFromSource(source: OfficialSource): Article[] {
     .map(l => l.replace(/^•\s*/, "").trim());
 
   // Parse text ||| url ||| description, resolving relative URLs
-  const parsed: Array<{text:string;url:string;hasDirectLink?:boolean}> = rawBullets
+  const parsed: Array<{text:string;url:string;pubDate?:string;hasDirectLink?:boolean}> = rawBullets
     .map(b => {
       const parts = b.split(" ||| ");
       const rest3 = parts.slice(2).join(" ||| ").trim();
       const dateMatch3 = rest3.match(/^DATE:([^|]{0,50}?)\s*(\|\|\||$)/);
       const rssDate3 = dateMatch3?.[1]?.trim() || "";
-      const desc = rest3.replace(/^DATE:[^\s]*/,"").trim();
+      // Strip "DATE:..." AND the following " ||| " separator — leaving only the brief text.
+      // (A bare /^DATE:[^\s]*/ replace leaves a stray "|||" prefix on desc, which then
+      // leaks into the article body as visible "||| <raw text>" artifacts.)
+      const desc = rest3.replace(/^DATE:[^\s|]*\s*(\|\|\|)?\s*/, "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
       let url = parts[1]?.trim() || source.url;
       if (url.includes("/feeds/") || url.endsWith(".xml") || url.includes("news.google.com")) url = source.url;
       // Resolve relative URLs
       if (url.startsWith("/") && baseUrl) url = baseUrl + url;
       // Store description back in text field with separator for article builder
       const textWithDesc: string = desc.length > 20 ? `${parts[0].trim()} ||| ${desc}` : parts[0].trim();
-      return { text: textWithDesc, url };
+      return { text: textWithDesc, url, pubDate: rssDate3 };
     })
     .filter(b => b.text.length > 30)
     .filter(b => !NAV_PATTERNS.some(p => p.test(b.text)))
@@ -744,9 +761,10 @@ function buildArticlesFromSource(source: OfficialSource): Article[] {
   const displaySource = SOURCE_DISPLAY_NAMES[source.name] ||
     (isTreasuryPR ? "U.S. Treasury" : source.name
       .replace("OFAC Sanctions List Updates", "OFAC")
-      .replace("U.S. Treasury — ", "U.S. Treasury")
-      .replace("Google News — ", "")
-      .replace("OFAC — ", "OFAC / "));
+      .replace("U.S. Treasury — OFAC Sanctions", "U.S. Treasury / OFAC")
+      .replace(/^U\.S\. Treasury — /, "U.S. Treasury / ")
+      .replace(/^Google News — /, "")
+      .replace(/^OFAC — /, "OFAC / "));
 
   // Create one article per bullet — body shows description if available (RSS), else directs to source
   return parsed.map((item) => {
@@ -757,8 +775,16 @@ function buildArticlesFromSource(source: OfficialSource): Article[] {
 
     // Extract real date — try multiple sources
     const months = ["","January","February","March","April","May","June","July","August","September","October","November","December"];
+    // Prefer the actual RSS/feed-supplied publish date (pubDate/published/updated/dc:date)
+    // over "today" — this was previously parsed and then discarded, causing every
+    // article to be stamped with the fetch date instead of its real publish date.
     let articleDateRaw = today;
-    // 1. From dated OFAC URL e.g. /recent-actions/20260527
+    if (item.pubDate) {
+      const parsedPub = new Date(item.pubDate);
+      if (!isNaN(parsedPub.getTime())) articleDateRaw = item.pubDate;
+    }
+    // 1. From dated OFAC URL e.g. /recent-actions/20260527 — most precise when present,
+    //    so it takes priority even over a parsed pubDate.
     const dateFromUrl = item.url.match(/recent-actions\/(202\d)(\d{2})(\d{2})/);
     if (dateFromUrl) {
       const mo = parseInt(dateFromUrl[2]);
@@ -842,6 +868,7 @@ export function buildBriefingFromSources(sources: OfficialSource[]): Briefing {
   const now = new Date().toLocaleString("en-US", {
     month: "long", day: "numeric", year: "numeric",
     hour: "2-digit", minute: "2-digit", timeZoneName: "short",
+    timeZone: "America/New_York",
   });
 
   const emptySidebar = { watchlist: [], keyFigures: [] };

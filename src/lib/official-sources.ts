@@ -73,19 +73,24 @@ function stripHTML(html: string): string {
         }
       }
 
-      // For Google News RSS: <link> has the google.com redirect URL which works fine
+      // For Google News RSS: <link> has the google.com redirect URL which works fine.
+      // <guid isPermaLink="false"> is an OPAQUE base64 article ID, NOT a URL — never use it as a link
+      // (using it produces broken relative links like https://<this-app>/CBMi...).
       // <source url="..."> is just the publisher homepage — don't use it as article URL
-      let link = (linkMatch?.[1] || guidMatch?.[1] || "").trim();
+      const guidLooksLikeUrl = !!guidMatch?.[1] && /^https?:\/\//i.test(guidMatch[1].trim());
+      let link = (linkMatch?.[1] || (guidLooksLikeUrl ? guidMatch![1] : "") || "").trim();
 
       // Google News descriptions contain HTML inside CDATA — strip all of it
       // First strip real tags, then decode entities, then strip any decoded tags
       let desc = (descMatch?.[1] || descMatch?.[2] || "")
+        .replace(/<a\b[^>]*>/gi, " ").replace(/<\/a>/gi, " ")              // explicitly drop anchor tags first (Google News wraps headlines in <a href>)
         .replace(/<[^>]+>/g, " ")                                          // strip real HTML tags
         .replace(/&lt;[^&]*&gt;/g, " ")                                    // strip encoded <tags>
         .replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&amp;/g, "&")
         .replace(/<[^>]+>/g, " ")                                          // strip decoded tags
         .replace(/&nbsp;/g, " ").replace(/&#39;/g, "'")
         .replace(/&#([0-9]+);/g, (_,n) => String.fromCharCode(Number(n)))
+        .replace(/<[^>]+>/g, " ")                                          // final pass — catch tags revealed by numeric-entity decoding
         .replace(/\s+/g, " ").trim()
         .slice(0, 400);
 
@@ -252,6 +257,17 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean }> = [
   { name: "U.S. Treasury — OFAC Sanctions",        url: "https://news.google.com/rss/search?q=OFAC+sanctions+site:home.treasury.gov&hl=en-US&gl=US&ceid=US:en", official: true },
   { name: "U.S. Treasury — Press Releases",        url: "https://news.google.com/rss/search?q=treasury+sanctions+OFAC+designations+site:home.treasury.gov&hl=en-US&gl=US&ceid=US:en", official: true },
   { name: "U.S. Treasury — Enforcement",           url: "https://news.google.com/rss/search?q=treasury+enforcement+penalties+site:home.treasury.gov&hl=en-US&gl=US&ceid=US:en", official: true },
+  // ── Google News site-search proxies for official regulators whose own sites
+  // block/timeout server-side fetches (mirrors the proven Treasury workaround
+  // above — these route through Google's index but the underlying articles are
+  // genuine .gov / official-domain releases with real pubDates). Names are
+  // chosen so the resulting displaySource matches the Tier-1 officialKeywords
+  // list in orchestrator.ts (e.g. "OFAC", "FinCEN", "BIS", "EU Council", "OFSI").
+  { name: "Google News — OFAC Actions",            url: "https://news.google.com/rss/search?q=OFAC+sanctions+designations+site:ofac.treasury.gov&hl=en-US&gl=US&ceid=US:en", official: true },
+  { name: "Google News — FinCEN",                  url: "https://news.google.com/rss/search?q=FinCEN+enforcement+advisory+site:fincen.gov&hl=en-US&gl=US&ceid=US:en", official: true },
+  { name: "Google News — BIS Entity List",         url: "https://news.google.com/rss/search?q=BIS+export+controls+Entity+List+site:bis.gov&hl=en-US&gl=US&ceid=US:en", official: true },
+  { name: "Google News — EU Council Sanctions",    url: "https://news.google.com/rss/search?q=EU+Council+sanctions+designations+site:consilium.europa.eu&hl=en-US&gl=US&ceid=US:en", official: true },
+  { name: "Google News — UK OFSI",                 url: "https://news.google.com/rss/search?q=OFSI+financial+sanctions+site:gov.uk&hl=en-US&gl=US&ceid=US:en", official: true },
   { name: "Google News — Sanctions",              url: "https://news.google.com/rss/search?q=OFAC+sanctions+designations&hl=en-US&gl=US&ceid=US:en" },
   { name: "Google News — BIS Export Controls",    url: "https://news.google.com/rss/search?q=BIS+export+controls+Entity+List&hl=en-US&gl=US&ceid=US:en" },
   { name: "Google News — EU Sanctions",           url: "https://news.google.com/rss/search?q=EU+sanctions+Russia+designations&hl=en-US&gl=US&ceid=US:en" },

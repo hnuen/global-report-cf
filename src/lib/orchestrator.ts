@@ -94,22 +94,48 @@ export async function refreshBriefing(topic?: string): Promise<{
     }
   }
 
-  // Sort all articles newest first (after all sources including historical)
-  // Sort: official sources first (within same date), then newest first
-  const officialSourceNames = new Set([
-    "OCC", "Federal Reserve", "BIS", "FinCEN", "U.S. Treasury", "OFAC",
-    "U.S. State Department", "UK OFSI", "UK HM Treasury", "EU Commission",
-    "Wassenaar", "UK Strategic Export"
-  ]);
-  const tier3SourceNames = new Set([
-    "Al Jazeera", "UN News", "India MEA"
-  ]);
-  // Priority: 2 = official gov, 1 = Google News / general, 0 = tier3 (Al Jazeera, UN, India MEA)
+  // ── 3-tier source priority system ──────────────────────────────────────────
+  // Tier 1 (official — always fetched first & always shown): OFAC, FinCEN, BIS,
+  //         OCC, Federal Reserve, UK OFSI, EU
+  // Tier 2 (Google News / general outlets — only kept if <= 30 days old)
+  // Tier 3 (Al Jazeera, UN News, India MEA — always shown)
+  //
+  // Matching is done via keyword/substring rather than exact-name equality
+  // because display names produced upstream are often compound, e.g.
+  // "U.S. Treasury / OFAC", "OFAC / Iran", "EU Council — Sanctions RSS".
+  const officialKeywords = [
+    "OFAC", "FinCEN", "BIS", "OCC", "Federal Reserve", "Fed Reserve",
+    "UK OFSI", "OFSI", "EU Council", "EU Commission", "European Commission",
+    "U.S. Treasury", "UK HM Treasury", "Wassenaar", "UK Strategic Export",
+    "U.S. State Department", "State Dept",
+  ];
+  const tier3Keywords = ["Al Jazeera", "UN News", "India MEA"];
+
+  const isOfficialSource = (source: string) =>
+    officialKeywords.some(k => source.includes(k));
+  const isTier3Source = (source: string) =>
+    tier3Keywords.some(k => source.includes(k));
+
+  // Priority: 2 = Tier 1 (official gov), 1 = Tier 2 (Google News/general), 0 = Tier 3
   const getPriority = (source: string) => {
-    if (officialSourceNames.has(source)) return 2;
-    if (tier3SourceNames.has(source)) return 0;
+    if (isOfficialSource(source)) return 2;
+    if (isTier3Source(source)) return 0;
     return 1;
   };
+
+  // Tier 2 spec: Google News / general articles only count if <= 30 days old.
+  // Tier 1 (official) and Tier 3 (Al Jazeera/UN News/India MEA) are always shown
+  // regardless of age.
+  const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
+  const cutoff = Date.now() - THIRTY_DAYS_MS;
+  briefing.articles = briefing.articles.filter(a => {
+    if (isOfficialSource(a.source) || isTier3Source(a.source)) return true;
+    const t = Date.parse(a.date || "");
+    if (isNaN(t)) return true; // unparseable date — don't drop, just don't filter on it
+    return t >= cutoff;
+  });
+
+  // Sort: Tier 1 first, then Tier 2, then Tier 3 — newest first within each tier
   briefing.articles = briefing.articles.sort((a, b) => {
     const aPriority = getPriority(a.source);
     const bPriority = getPriority(b.source);

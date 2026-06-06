@@ -103,6 +103,7 @@ export class GeminiProvider implements LLMProvider {
     const today = new Date().toLocaleString("en-US", {
       weekday: "long", year: "numeric", month: "long", day: "numeric",
       hour: "2-digit", minute: "2-digit", timeZoneName: "short",
+      timeZone: "America/New_York",
     });
 
     // Build last 7 days for OFAC search

@@ -204,6 +204,7 @@ export function buildAnalyzedBriefing(sources: OfficialSource[]): Briefing {
   const now = new Date().toLocaleString("en-US", {
     month: "long", day: "numeric", year: "numeric",
     hour: "2-digit", minute: "2-digit", timeZoneName: "short",
+    timeZone: "America/New_York",
   });
 
   const emptySidebar = { watchlist: [], keyFigures: [] };
