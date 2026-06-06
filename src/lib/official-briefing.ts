@@ -8,7 +8,7 @@ function isConcatenated(text: string): boolean {
 // automatically). Used as the fallback "publish date" for articles when no real
 // date can be extracted, so the displayed default reflects the Eastern-time day
 // rather than the UTC day (which can be a day ahead late in the evening ET).
-function todayInEastern(): string {
+export function todayInEastern(): string {
   const parts = new Intl.DateTimeFormat("en-CA", {
     timeZone: "America/New_York",
     year: "numeric", month: "2-digit", day: "2-digit",
@@ -874,7 +874,7 @@ export function buildBriefingFromSources(sources: OfficialSource[]): Briefing {
   const emptySidebar = { watchlist: [], keyFigures: [] };
 
   return {
-    lastUpdated: `${now} — Direct from official sources (LLM unavailable)`,
+    lastUpdated: `${now} — Official government sources`,
     articles,
     sidebar: {
       sanctions:  emptySidebar,
