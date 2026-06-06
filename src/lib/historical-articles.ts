@@ -174,7 +174,7 @@ export const HISTORICAL: Article[] = [
     source:"U.S. Treasury OFAC / Al-Monitor",
     sourceUrl:"https://home.treasury.gov/news/press-releases/sb0505" },
 
-  { id:8996, section:"sanctions", category:"OFAC / Sinaloa", region:"Mexico / SEA", impact:"high",
+  { id:8996, section:"sanctions", category:"OFAC / Sinaloa", region:"Mexico / North America", impact:"high",
     date: "2026-05-20",
     headline:"OFAC Sanctions Sinaloa Cartel Fentanyl Networks — 6 Ethereum Addresses Blacklisted, Cash-to-Crypto Pipeline from US Streets to Mexico",
     body:[
