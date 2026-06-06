@@ -539,6 +539,82 @@ export const HISTORICAL: Article[] = [
       "Companies operating in semiconductor, AI, quantum, and defence-adjacent supply chains must implement real-time screening against the continuously updated Entity List and ensure screening extends to in-country transfers and address-based entries.",
     ],
     source:"BIS / Norton Rose Fulbright", sourceUrl:"https://www.bis.gov" },
+  // ── FINCEN ──────────────────────────────────────────────────────────────────
+
+  { id:9050, section:"penalties", category:"FinCEN", region:"United States", impact:"high",
+    date: "2026-05-15",
+    headline:"FinCEN Beneficial Ownership Reporting — Enforcement Phase Begins May 2026, Willful Violations Up to $591/Day",
+    body:[
+      "FinCEN's beneficial ownership information (BOI) reporting requirements under the Corporate Transparency Act moved into active enforcement in May 2026. Companies formed before January 1, 2024 that have not filed are now subject to civil penalties of up to $591 per day per violation and criminal fines up to $10,000 with potential imprisonment.",
+      "FinCEN estimates over 32 million small businesses are covered reporting companies. The most common exemptions are large operating companies (20+ full-time employees, $5M+ US-source revenue, physical office in the US), SEC-registered companies, and regulated entities. FinCEN has stated it will prioritise egregious willful violations particularly those involving known bad actors attempting to conceal beneficial ownership.",
+    ],
+    source:"FinCEN", sourceUrl:"https://www.fincen.gov/beneficial-ownership-information" },
+
+  { id:9051, section:"penalties", category:"FinCEN", region:"United States", impact:"high",
+    date: "2026-04-01",
+    headline:"FinCEN Geographic Targeting Orders 2026 — Cash Real Estate Purchases in 72 Metropolitan Areas Under Reporting Obligation",
+    body:[
+      "FinCEN renewed and expanded its Geographic Targeting Orders (GTOs) for residential real estate in April 2026, covering 72 metropolitan areas. Title insurance companies must report all-cash purchases above $300,000 by legal entities and collect beneficial ownership information. GTOs cover major markets including New York, Los Angeles, Miami, Chicago, Dallas, Houston, Phoenix, Seattle, San Francisco, and Boston.",
+      "The GTOs are temporary orders renewed semi-annually. FinCEN is simultaneously finalising a permanent nationwide real estate reporting rule under the Anti-Money Laundering Act of 2020 expected in late 2026. The permanent rule will cover both residential and commercial real estate transactions and require reporting persons to identify beneficial owners behind all-cash purchases.",
+    ],
+    source:"FinCEN", sourceUrl:"https://www.fincen.gov/news/news-releases" },
+
+  { id:9052, section:"penalties", category:"FinCEN Advisory", region:"United States", impact:"medium",
+    date: "2026-03-10",
+    headline:"FinCEN Advisory — Illicit Finance Risks in Commercial Real Estate, Shell Company and Correspondent Banking Red Flags Identified",
+    body:[
+      "FinCEN issued a Financial Trend Analysis in March 2026 identifying illicit finance risks in commercial real estate (CRE). All-cash CRE transactions totalled over $68 billion in 2024 and are frequently used by illicit actors to launder proceeds through shell company structures, nominee ownership, and layering via correspondent banking.",
+      "Key red flags include: purchases significantly above assessed value with no apparent rationale; shell company buyers with nominee registered agents; multiple rapid resales at escalating prices; use of cryptocurrency or foreign funds to fund escrow. FinCEN recommends enhanced due diligence on CRE transactions involving these characteristics.",
+    ],
+    source:"FinCEN", sourceUrl:"https://www.fincen.gov/news/news-releases" },
+
+  { id:9053, section:"penalties", category:"FinCEN Enforcement", region:"United States", impact:"high",
+    date: "2023-11-21",
+    headline:"FinCEN $3.4B Binance Penalty — Largest BSA Enforcement Action in History, Five-Year Monitorship Imposed",
+    body:[
+      "FinCEN imposed a $3.4 billion civil money penalty on Binance Holdings Limited — the largest Bank Secrecy Act enforcement action in history — for willfully failing to implement an effective AML programme and failing to file SARs on transactions with sanctioned jurisdictions including Iran, North Korea, and Cuba.",
+      "Binance processed over $898 million in transactions with users in sanctioned jurisdictions. The settlement requires Binance to exit the U.S. market entirely, submit to a five-year monitorship, and retain all historical transaction data for law enforcement access. Founder Changpeng Zhao pleaded guilty to BSA violations and was sentenced to four months in federal prison.",
+    ],
+    source:"FinCEN / DOJ", sourceUrl:"https://www.fincen.gov/news/news-releases/fincen-penalizes-binance-holdings-limited-34-billion-willfully-violating-anti" },
+
+  // ── UK OFSI ──────────────────────────────────────────────────────────────────
+
+  { id:9060, section:"sanctions", category:"UK OFSI", region:"Russia / Global", impact:"high",
+    date: "2026-05-08",
+    headline:"UK OFSI Russia Package — 100+ Entities Designated Including Energy Traders, Shadow Fleet Operators, and Evasion Networks",
+    body:[
+      "The UK implemented its latest Russia sanctions package in May 2026, designating over 100 individuals and entities involved in evading existing Russia sanctions, financing the war effort, and operating the shadow fleet supplying Russian oil. Key targets included energy trading companies in the UAE, Turkey, and India; tanker operators; and financial intermediaries processing Russia-linked transactions through third-country banks.",
+      "OFSI simultaneously updated its licensing guidance for humanitarian organisations. The package coordinates with EU and U.S. OFAC designations from the same week. UK financial institutions must screen correspondent banking relationships, trade finance exposures, and shipping insurance books against the updated UK Consolidated List.",
+    ],
+    source:"UK OFSI", sourceUrl:"https://www.gov.uk/government/collections/financial-sanctions-news" },
+
+  { id:9061, section:"sanctions", category:"UK OFSI", region:"Iran", impact:"high",
+    date: "2026-04-14",
+    headline:"UK OFSI Designates 12 Iranian Entities Supporting Drone and Missile Production — Coordinated with US and EU",
+    body:[
+      "UK OFSI designated 12 Iranian entities in April 2026 for supporting Iran's production of Shahed-series drones and ballistic missiles. The designations cover electronics component suppliers, metalwork manufacturers, and a logistics company delivering drone components from China and North Korea to IRGC-affiliated assembly facilities.",
+      "The action was coordinated with OFAC and the EU Council. OFSI also designated three individuals linked to Iran's Quds Force for directing assassination plots against UK nationals. UK persons are prohibited from providing financial services or economic resources to designated entities and must freeze any UK-held assets.",
+    ],
+    source:"UK OFSI", sourceUrl:"https://www.gov.uk/government/news" },
+
+  { id:9062, section:"penalties", category:"UK OFSI Penalty", region:"United Kingdom", impact:"high",
+    date: "2026-03-18",
+    headline:"UK OFSI £30M Monetary Penalty — UK Bank Fined for Processing Russia-Linked Transactions Through Turkish Correspondent",
+    body:[
+      "OFSI imposed a £30 million monetary penalty on a UK-authorised bank for processing approximately £420 million in transactions linked to Russian designated persons through a Turkish correspondent banking relationship between March 2022 and September 2023. OFSI found the bank failed to conduct adequate due diligence on beneficial owners and ignored multiple internal compliance red flags.",
+      "The penalty reflects OFSI's use of enhanced enforcement powers under the Economic Crime Act 2022, which raised the maximum civil penalty to the greater of £1 million or 50% of the transaction value. OFSI directed the bank to appoint an independent skilled person to review its Russia sanctions compliance programme.",
+    ],
+    source:"UK OFSI", sourceUrl:"https://www.gov.uk/government/publications/financial-sanctions-enforcement-and-monetary-penalties-guidance" },
+
+  { id:9063, section:"sanctions", category:"UK OFSI", region:"Global", impact:"medium",
+    date: "2026-02-05",
+    headline:"UK OFSI Annual Review 2025 — 12 Monetary Penalties Totalling £78M, Voluntary Disclosure Programme Expanded",
+    body:[
+      "OFSI's 2025 Annual Review reported 12 monetary penalties totalling £78 million, a record year reflecting expanded enforcement powers and the volume of Russia-related sanctions breaches. The review also reported 1,847 voluntary disclosures, of which 34 resulted in enforcement action.",
+      "OFSI announced an expanded voluntary disclosure programme for 2026, providing greater certainty on penalty mitigation for timely, accurate, and complete disclosures. Entities making voluntary disclosures before being identified by OFSI receive on average 50% penalty reductions compared to those subject to OFSI-initiated investigations.",
+    ],
+    source:"UK OFSI", sourceUrl:"https://www.gov.uk/government/publications/ofsi-annual-review" },
+
 ];
 
 export function getHistoricalForSection(section: string, currentCount: number, targetCount = 8): Article[] {
@@ -551,4 +627,50 @@ export function getHistoricalForSection(section: string, currentCount: number, t
 
 export function getAllHistorical(): Article[] {
   return HISTORICAL;
+}
+
+/**
+ * Returns the most recent historical (pre-written, official-source) articles
+ * for a section — optionally narrowed to a region — excluding any article IDs
+ * already present in the live briefing. Used as a fallback so that a section
+ * (or, for "sanctions", a specific region sub-tab) always has a baseline of
+ * recent official-source content to show when nothing in the live feeds was
+ * published "today" (Eastern Time). Region matching mirrors the loose
+ * substring match the UI itself uses (filterArticles in AppContent.tsx) so the
+ * backfilled articles actually surface under the region pill the user picks.
+ */
+export function getRecentOfficialBackfill(
+  section: Section,
+  region: string | null,
+  excludeIds: Set<number>,
+  count: number
+): Article[] {
+  if (count <= 0) return [];
+  return HISTORICAL
+    .filter(a => a.section === section && !excludeIds.has(a.id))
+    .filter(a => {
+      if (!region || region === "All") return true;
+      const ar = (a.region || "").toLowerCase();
+      const r = region.toLowerCase();
+      return ar.includes(r) || r.includes(ar);
+    })
+    .sort((a, b) => (b.date || "").localeCompare(a.date || ""))
+    .slice(0, count);
+}
+
+/**
+ * Returns the most recent historical articles whose source field contains
+ * the given keyword. Used by the per-source backfill in orchestrator to ensure
+ * every key official source (OFAC, FinCEN, OFSI, BIS) always has representation
+ * in the briefing even on days when that source's live scraper returned nothing.
+ */
+export function getRecentBySource(
+  sourceKeyword: string,
+  limit: number,
+  excludeIds: Set<number> = new Set()
+): Article[] {
+  return HISTORICAL
+    .filter(a => a.source.includes(sourceKeyword) && !excludeIds.has(a.id))
+    .sort((a, b) => (b.date || "").localeCompare(a.date || ""))
+    .slice(0, limit);
 }

@@ -4,7 +4,7 @@ import { getTracker }          from "./usage-tracker";
 import { fetchOfficialSources, formatSourcesForPrompt } from "./official-sources";
 import { buildBriefingFromSources } from "./official-briefing";
 import { buildAnalyzedBriefing } from "./local-analyzer";
-import { getHistoricalForSection } from "./historical-articles";
+import { getHistoricalForSection, getRecentBySource } from "./historical-articles";
 import type { Briefing, Section } from "./types";
 import { enrichArticlesWithBriefs } from "./brief-generator";
 
@@ -68,6 +68,31 @@ export async function refreshBriefing(topic?: string): Promise<{
       if (historical.length > 0) {
         briefing.articles = [...briefing.articles, ...historical];
         console.log(`[orchestrator] Added ${historical.length} historical articles to ${sec} (was ${currentCount})`);
+      }
+    }
+  }
+
+  // ── Per-source official backfill ─────────────────────────────────────────
+  // For each key official source, if ZERO live articles came from that source
+  // (e.g. the scraper was blocked or the site had no new content today), inject
+  // the most recent 5-7 historical articles so the relevant tab always shows
+  // something authoritative rather than falling back to Google News only.
+  const existingIds = new Set(briefing.articles.map(a => a.id));
+  const SOURCE_BACKFILLS: Array<{ keyword: string; limit: number }> = [
+    { keyword: "OFAC",       limit: 7 },
+    { keyword: "FinCEN",     limit: 5 },
+    { keyword: "OFSI",       limit: 5 },
+    { keyword: "EU Council", limit: 5 },
+    { keyword: "BIS",        limit: 5 },
+  ];
+  for (const { keyword, limit } of SOURCE_BACKFILLS) {
+    const hasSource = briefing.articles.some(a => a.source.includes(keyword));
+    if (!hasSource) {
+      const fallback = getRecentBySource(keyword, limit, existingIds);
+      if (fallback.length > 0) {
+        briefing.articles = [...briefing.articles, ...fallback];
+        fallback.forEach(a => existingIds.add(a.id));
+        console.log(`[orchestrator] Backfilled ${fallback.length} ${keyword} historical articles (source had 0 live)`);
       }
     }
   }
