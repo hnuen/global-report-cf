@@ -74,29 +74,21 @@ function stripHTML(html: string): string {
       }
 
       // Pick the best article URL — prefer non-Google-redirect URLs
-      let link = (linkMatch?.[1] || guidMatch?.[1] || sourceUrlMatch?.[1] || "").trim();
-      // Google News links are redirects - extract real URL
-      if (link.includes("news.google.com")) {
-        // Try url= parameter first
-        const urlParam = link.match(/url=([^&]+)/);
-        if (urlParam) {
-          link = decodeURIComponent(urlParam[1]);
-        } else {
-          // Google News RSS guid often has the real article URL
-          const guidUrl = guidMatch?.[1] || "";
-          if (guidUrl && !guidUrl.includes("news.google.com")) {
-            link = guidUrl;
-          }
-          // If still google URL, keep it as-is — at least it links somewhere
-        }
+      // For Google News RSS, the <source url="..."> attribute has the real publisher URL
+      let link = (sourceUrlMatch?.[1] || linkMatch?.[1] || guidMatch?.[1] || "").trim();
+      // If still a Google News URL, keep it — it will redirect to the real article
+      if (!link || link.trim() === "") {
+        link = linkMatch?.[1] || guidMatch?.[1] || "";
       }
 
       let desc = (descMatch?.[1] || descMatch?.[2] || "")
+        .replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&amp;/g, "&")
         .replace(/<[^>]+>/g, " ")
-        .replace(/&amp;/g, "&").replace(/&nbsp;/g, " ").replace(/&#39;/g, "'")
-        .replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"')
+        .replace(/&nbsp;/g, " ").replace(/&#39;/g, "'")
         .replace(/&#([0-9]+);/g, (_,n) => String.fromCharCode(Number(n)))
-        .replace(/\s+/g, " ").trim();
+        .replace(/\s+/g, " ").trim()
+        // Strip any remaining HTML-like content
+        .replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
 
       if (desc.toLowerCase().startsWith(title.toLowerCase().slice(0, 30))) {
         desc = desc.slice(title.length).replace(/^[\s\-–—:]+/, "").trim();
@@ -205,7 +197,7 @@ function stripHTML(html: string): string {
 }
 
 // ── Source definitions ────────────────────────────────────────────────────────
-const SOURCES: Array<{ name: string; url: string }> = [
+const SOURCES: Array<{ name: string; url: string; official?: boolean }> = [
   // ── U.S. Government ─────────────────────────────────────────────────────────
   // ── Treasury / OFAC — working sources ──────────────────────────────────────
   // OFAC RSS was retired Feb 6 2025 — use program-specific pages instead
@@ -214,42 +206,42 @@ const SOURCES: Array<{ name: string; url: string }> = [
   // OFAC enforcement actions
   // Program-specific pages for key sanctions programs
   // OCC — news releases page works
-  { name: "OCC Enforcement Actions 2026",         url: "https://www.occ.gov/news-events/newsroom/news-issuances-by-year/news-releases/2026-news-releases.html" },
+  { name: "OCC Enforcement Actions 2026",         url: "https://www.occ.gov/news-events/newsroom/news-issuances-by-year/news-releases/2026-news-releases.html", official: true },
   // Fed — press releases RSS
-  { name: "Federal Reserve — Press Releases",     url: "https://www.federalreserve.gov/feeds/press_all.xml" },
+  { name: "Federal Reserve — Press Releases",     url: "https://www.federalreserve.gov/feeds/press_all.xml", official: true },
   // BIS — bureau of industry and security
-  { name: "BIS Export Enforcement",               url: "https://www.bis.gov/news" },
+  { name: "BIS Export Enforcement",               url: "https://www.bis.gov/news", official: true },
   // State Department RSS
-  { name: "U.S. State Department — News",         url: "https://www.state.gov/rss-feeds/press-releases/" },
+  { name: "U.S. State Department — News",         url: "https://www.state.gov/rss-feeds/press-releases/", official: true },
   // FinCEN enforcement
-  { name: "FinCEN Enforcement Actions",           url: "https://www.fincen.gov/news/enforcement-actions" },
-  { name: "FinCEN News Releases",                 url: "https://www.fincen.gov/news/news-releases" },
+  { name: "FinCEN Enforcement Actions",           url: "https://www.fincen.gov/news/enforcement-actions", official: true },
+  { name: "FinCEN News Releases",                 url: "https://www.fincen.gov/news/news-releases", official: true },
 
   // ── China / Global Export Controls ──────────────────────────────────────────
   // China MOFCOM export controls — English press releases
   // EU dual-use export controls
   // Wassenaar Arrangement — multilateral export controls
-  { name: "Wassenaar Arrangement News",           url: "https://www.wassenaar.org/news/" },
+  { name: "Wassenaar Arrangement News",           url: "https://www.wassenaar.org/news/", official: true },
   // SIPRI arms and export controls
   // UK Strategic Export Controls
-  { name: "UK Strategic Export Controls",         url: "https://www.gov.uk/government/collections/strategic-export-controls-licensing-data" },
+  { name: "UK Strategic Export Controls",         url: "https://www.gov.uk/government/collections/strategic-export-controls-licensing-data", official: true },
   // Google News — China export controls
   { name: "Google News — China Export Controls",  url: "https://news.google.com/rss/search?q=China+MOFCOM+export+controls+rare+earth+sanctions+2026&hl=en-US&gl=US&ceid=US:en" },
   // Google News — Global sanctions enforcement
   { name: "Google News — Global Sanctions",       url: "https://news.google.com/rss/search?q=global+sanctions+enforcement+BIS+Wassenaar+2026&hl=en-US&gl=US&ceid=US:en" },
 
   // ── Penalties & Enforcement ──────────────────────────────────────────────────
-  { name: "Federal Reserve Enforcement Actions",  url: "https://www.federalreserve.gov/supervisionreg/enforcement-actions-about.htm" },
-  { name: "UK Financial Sanctions Penalties",     url: "https://www.gov.uk/government/publications/financial-sanctions-enforcement-and-monetary-penalties-guidance/financial-sanctions-enforcement-and-monetary-penalties-guidance" },
+  { name: "Federal Reserve Enforcement Actions",  url: "https://www.federalreserve.gov/supervisionreg/enforcement-actions-about.htm", official: true },
+  { name: "UK Financial Sanctions Penalties",     url: "https://www.gov.uk/government/publications/financial-sanctions-enforcement-and-monetary-penalties-guidance/financial-sanctions-enforcement-and-monetary-penalties-guidance", official: true },
 
   // ── European Union ───────────────────────────────────────────────────────────
-  { name: "EU Commission — Latest News",          url: "https://ec.europa.eu/commission/presscorner/api/documents?pagesize=10&page=0&keywords=sanctions&sortby=date_updated&orderby=DESC&language=en" },
+  { name: "EU Commission — Latest News",          url: "https://ec.europa.eu/commission/presscorner/api/documents?pagesize=10&page=0&keywords=sanctions&sortby=date_updated&orderby=DESC&language=en", official: true },
 
   // ── United Kingdom ───────────────────────────────────────────────────────────
-  { name: "UK Government — Latest News",          url: "https://www.gov.uk/search/news-and-communications?keywords=sanctions&order=updated-newest" },
-  { name: "UK HM Treasury — News",               url: "https://www.gov.uk/search/news-and-communications?keywords=sanctions+financial&organisations%5B%5D=hm-treasury&order=updated-newest" },
-  { name: "UK OFSI — Financial Sanctions",       url: "https://www.gov.uk/search/news-and-communications?keywords=financial+sanctions&organisations%5B%5D=office-of-financial-sanctions-implementation&order=updated-newest" },
-  { name: "UK Sanctions List",                    url: "https://www.gov.uk/government/publications/the-uk-sanctions-list" },
+  { name: "UK Government — Latest News",          url: "https://www.gov.uk/search/news-and-communications?keywords=sanctions&order=updated-newest", official: true },
+  { name: "UK HM Treasury — News",               url: "https://www.gov.uk/search/news-and-communications?keywords=sanctions+financial&organisations%5B%5D=hm-treasury&order=updated-newest", official: true },
+  { name: "UK OFSI — Financial Sanctions",       url: "https://www.gov.uk/search/news-and-communications?keywords=financial+sanctions&organisations%5B%5D=office-of-financial-sanctions-implementation&order=updated-newest", official: true },
+  { name: "UK Sanctions List",                    url: "https://www.gov.uk/government/publications/the-uk-sanctions-list", official: true },
 
   // ── United Nations ───────────────────────────────────────────────────────────
   { name: "UN News — Latest",                    url: "https://news.un.org/en/news/topic/peace-and-security" },
@@ -258,9 +250,9 @@ const SOURCES: Array<{ name: string; url: string }> = [
   { name: "Al Jazeera — Latest News",             url: "https://www.aljazeera.com/news/" },
   // Treasury news via Google News RSS — bypasses Treasury's server-side IP block
   // These return real Treasury press release URLs with correct pubDates
-  { name: "U.S. Treasury — OFAC Sanctions",        url: "https://news.google.com/rss/search?q=OFAC+sanctions+site:home.treasury.gov&hl=en-US&gl=US&ceid=US:en" },
-  { name: "U.S. Treasury — Press Releases",        url: "https://news.google.com/rss/search?q=treasury+sanctions+OFAC+designations+site:home.treasury.gov&hl=en-US&gl=US&ceid=US:en" },
-  { name: "U.S. Treasury — Enforcement",           url: "https://news.google.com/rss/search?q=treasury+enforcement+penalties+site:home.treasury.gov&hl=en-US&gl=US&ceid=US:en" },
+  { name: "U.S. Treasury — OFAC Sanctions",        url: "https://news.google.com/rss/search?q=OFAC+sanctions+site:home.treasury.gov&hl=en-US&gl=US&ceid=US:en", official: true },
+  { name: "U.S. Treasury — Press Releases",        url: "https://news.google.com/rss/search?q=treasury+sanctions+OFAC+designations+site:home.treasury.gov&hl=en-US&gl=US&ceid=US:en", official: true },
+  { name: "U.S. Treasury — Enforcement",           url: "https://news.google.com/rss/search?q=treasury+enforcement+penalties+site:home.treasury.gov&hl=en-US&gl=US&ceid=US:en", official: true },
   { name: "Google News — Sanctions",              url: "https://news.google.com/rss/search?q=OFAC+sanctions+designations&hl=en-US&gl=US&ceid=US:en" },
   { name: "Google News — BIS Export Controls",    url: "https://news.google.com/rss/search?q=BIS+export+controls+Entity+List&hl=en-US&gl=US&ceid=US:en" },
   { name: "Google News — EU Sanctions",           url: "https://news.google.com/rss/search?q=EU+sanctions+Russia+designations&hl=en-US&gl=US&ceid=US:en" },

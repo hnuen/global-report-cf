@@ -263,6 +263,8 @@ function buildArticleFromSource(source: OfficialSource): Article | null {
 
   const isTreasuryPR2 = source.name.startsWith("Treasury Press Release ");
   const section = SOURCE_SECTION_MAP[source.name] ?? "sanctions";
+  const isGoogleNews = source.url?.includes("news.google.com");
+  const isOfficial = (source as any).official === true || !isGoogleNews;
   const category = SOURCE_CATEGORY_MAP[source.name] ?? source.name;
   const displaySource = SOURCE_DISPLAY_NAMES[source.name] ||
     (isTreasuryPR2 ? "U.S. Treasury" : source.name

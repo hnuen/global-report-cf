@@ -95,8 +95,27 @@ export async function refreshBriefing(topic?: string): Promise<{
   }
 
   // Sort all articles newest first (after all sources including historical)
-  // Dates are stored as YYYY-MM-DD — sort as strings (lexicographic = chronological)
-  briefing.articles = briefing.articles.sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+  // Sort: official sources first (within same date), then newest first
+  const officialSourceNames = new Set([
+    "OCC", "Federal Reserve", "BIS", "FinCEN", "U.S. Treasury", "OFAC",
+    "U.S. State Department", "UK OFSI", "UK HM Treasury", "EU Commission",
+    "Wassenaar", "UK Strategic Export"
+  ]);
+  const tier3SourceNames = new Set([
+    "Al Jazeera", "UN News", "India MEA"
+  ]);
+  // Priority: 2 = official gov, 1 = Google News / general, 0 = tier3 (Al Jazeera, UN, India MEA)
+  const getPriority = (source: string) => {
+    if (officialSourceNames.has(source)) return 2;
+    if (tier3SourceNames.has(source)) return 0;
+    return 1;
+  };
+  briefing.articles = briefing.articles.sort((a, b) => {
+    const aPriority = getPriority(a.source);
+    const bPriority = getPriority(b.source);
+    if (bPriority !== aPriority) return bPriority - aPriority;
+    return (b.date || "").localeCompare(a.date || "");
+  });
 
   await storage.save(briefing);
 
