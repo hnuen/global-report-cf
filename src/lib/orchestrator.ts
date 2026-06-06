@@ -72,28 +72,6 @@ export async function refreshBriefing(topic?: string): Promise<{
     }
   }
 
-  // Enrich articles with AI-generated briefs (cached in Redis, runs async)
-  // Only runs when LLM fallback was used (structured briefing) — LLM articles already have good body text
-  if (usedProvider.includes("Official Sources") || usedProvider.includes("Local Analysis")) {
-    try {
-      console.log("[orchestrator] Enriching article briefs...");
-      const sanctionsArticles = briefing.articles
-        .filter(a => a.section === "sanctions" && a.sourceUrl)
-        .map(a => ({ sourceUrl: a.sourceUrl!, headline: a.headline, body: a.body }));
-
-      const enriched = await enrichArticlesWithBriefs(sanctionsArticles);
-      if (enriched.size > 0) {
-        briefing.articles = briefing.articles.map(a => {
-          const newBrief = a.sourceUrl ? enriched.get(a.sourceUrl) : undefined;
-          return newBrief ? { ...a, body: [newBrief, ...a.body.slice(1)] } : a;
-        });
-        console.log(`[orchestrator] Enriched ${enriched.size} article briefs`);
-      }
-    } catch (e) {
-      console.log("[orchestrator] Brief enrichment failed (non-fatal):", String(e).slice(0, 100));
-    }
-  }
-
   // ── 3-tier source priority system ──────────────────────────────────────────
   // Tier 1 (official — always fetched first & always shown): OFAC, FinCEN, BIS,
   //         OCC, Federal Reserve, UK OFSI, EU
@@ -143,7 +121,47 @@ export async function refreshBriefing(topic?: string): Promise<{
     return (b.date || "").localeCompare(a.date || "");
   });
 
+  // ── Save the core briefing FIRST ───────────────────────────────────────────
+  // Cloudflare Workers caps subrequests per invocation. Brief enrichment below
+  // does per-article Redis cache lookups + article fetches + Gemini calls,
+  // which can exhaust that budget — causing the *real* Upstash save to throw
+  // "Too many subrequests by single Worker invocation" while the in-memory
+  // fallback silently "succeeds," masking the failure (refresh still reports
+  // ok:true, but Redis never gets the fresh data — lastUpdated stays frozen).
+  // Saving here guarantees the correctly-dated official-source articles and
+  // Eastern-time lastUpdated persist before enrichment can starve the budget.
   await storage.save(briefing);
+  console.log("[orchestrator] Saved core briefing (pre-enrichment)");
+
+  // Enrich articles with AI-generated briefs (cached in Redis, runs async)
+  // Only runs when LLM fallback was used (structured briefing) — LLM articles already have good body text
+  // Best-effort: failure here does not lose data, since the core briefing is already saved above.
+  if (usedProvider.includes("Official Sources") || usedProvider.includes("Local Analysis")) {
+    try {
+      console.log("[orchestrator] Enriching article briefs...");
+      const sanctionsArticles = briefing.articles
+        .filter(a => a.section === "sanctions" && a.sourceUrl)
+        .map(a => ({ sourceUrl: a.sourceUrl!, headline: a.headline, body: a.body }));
+
+      const enriched = await enrichArticlesWithBriefs(sanctionsArticles);
+      if (enriched.size > 0) {
+        briefing.articles = briefing.articles.map(a => {
+          const newBrief = a.sourceUrl ? enriched.get(a.sourceUrl) : undefined;
+          return newBrief ? { ...a, body: [newBrief, ...a.body.slice(1)] } : a;
+        });
+        console.log(`[orchestrator] Enriched ${enriched.size} article briefs`);
+
+        try {
+          await storage.save(briefing);
+          console.log("[orchestrator] Saved enriched briefing");
+        } catch (saveErr) {
+          console.log("[orchestrator] Enriched-briefing save failed (non-fatal — core briefing already saved):", String(saveErr).slice(0, 150));
+        }
+      }
+    } catch (e) {
+      console.log("[orchestrator] Brief enrichment failed (non-fatal):", String(e).slice(0, 100));
+    }
+  }
 
   const savedTo = storage.getHealth()
     .filter(h => h.healthy)
