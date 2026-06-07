@@ -5,7 +5,6 @@ import { fetchOfficialSources, formatSourcesForPrompt } from "./official-sources
 import { buildBriefingFromSources } from "./official-briefing";
 import { buildAnalyzedBriefing } from "./local-analyzer";
 import { getHistoricalForSection, getRecentBySource } from "./historical-articles";
-import { mergeIntoCache } from "./article-cache";
 import type { Briefing, Section } from "./types";
 import { enrichArticlesWithBriefs } from "./brief-generator";
 
@@ -164,7 +163,6 @@ export async function refreshBriefing(topic?: string): Promise<{
   } catch (e) {
     console.log("[orchestrator] Pre-save failed:", String(e).slice(0, 100));
   }
-  void mergeIntoCache(briefing.articles);
 
   // Enrich articles with AI-generated briefs (cached in Redis, runs async)
   // Only runs when LLM fallback was used (structured briefing) — LLM articles already have good body text
