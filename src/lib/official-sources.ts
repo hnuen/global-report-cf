@@ -131,7 +131,10 @@ function stripHTML(html: string): string {
         !text.toLowerCase().includes("skip to") &&
         !text.toLowerCase().includes("menu") &&
         !text.toLowerCase().includes("recent actions body") &&
-        !text.toLowerCase().includes("release date")) {
+        !text.toLowerCase().includes("release date") &&
+        !text.toLowerCase().startsWith("enforcement actions for") &&
+        !text.toLowerCase().startsWith("notices of proposed") &&
+        !/^civil money penalty$/i.test(text.trim())) {
       headlines.push(`• ${text}`);
     }
   }
