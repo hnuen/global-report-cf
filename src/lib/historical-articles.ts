@@ -174,7 +174,7 @@ export const HISTORICAL: Article[] = [
     source:"U.S. Treasury OFAC / Al-Monitor",
     sourceUrl:"https://home.treasury.gov/news/press-releases/sb0505" },
 
-  { id:8996, section:"sanctions", category:"OFAC / Sinaloa", region:"Mexico / SEA", impact:"high",
+  { id:8996, section:"sanctions", category:"OFAC / Sinaloa", region:"Mexico / North America", impact:"high",
     date: "2026-05-20",
     headline:"OFAC Sanctions Sinaloa Cartel Fentanyl Networks — 6 Ethereum Addresses Blacklisted, Cash-to-Crypto Pipeline from US Streets to Mexico",
     body:[
@@ -539,6 +539,150 @@ export const HISTORICAL: Article[] = [
       "Companies operating in semiconductor, AI, quantum, and defence-adjacent supply chains must implement real-time screening against the continuously updated Entity List and ensure screening extends to in-country transfers and address-based entries.",
     ],
     source:"BIS / Norton Rose Fulbright", sourceUrl:"https://www.bis.gov" },
+  // ── FINCEN ──────────────────────────────────────────────────────────────────
+
+  { id:9050, section:"penalties", category:"FinCEN", region:"United States", impact:"high",
+    date: "2026-05-15",
+    headline:"FinCEN Beneficial Ownership Reporting — Enforcement Phase Begins May 2026, Willful Violations Up to $591/Day",
+    body:[
+      "FinCEN's beneficial ownership information (BOI) reporting requirements under the Corporate Transparency Act moved into active enforcement in May 2026. Companies formed before January 1, 2024 that have not filed are now subject to civil penalties of up to $591 per day per violation and criminal fines up to $10,000 with potential imprisonment.",
+      "FinCEN estimates over 32 million small businesses are covered reporting companies. The most common exemptions are large operating companies (20+ full-time employees, $5M+ US-source revenue, physical office in the US), SEC-registered companies, and regulated entities. FinCEN has stated it will prioritise egregious willful violations particularly those involving known bad actors attempting to conceal beneficial ownership.",
+    ],
+    source:"FinCEN", sourceUrl:"https://www.fincen.gov/beneficial-ownership-information" },
+
+  { id:9051, section:"penalties", category:"FinCEN", region:"United States", impact:"high",
+    date: "2026-04-01",
+    headline:"FinCEN Geographic Targeting Orders 2026 — Cash Real Estate Purchases in 72 Metropolitan Areas Under Reporting Obligation",
+    body:[
+      "FinCEN renewed and expanded its Geographic Targeting Orders (GTOs) for residential real estate in April 2026, covering 72 metropolitan areas. Title insurance companies must report all-cash purchases above $300,000 by legal entities and collect beneficial ownership information. GTOs cover major markets including New York, Los Angeles, Miami, Chicago, Dallas, Houston, Phoenix, Seattle, San Francisco, and Boston.",
+      "The GTOs are temporary orders renewed semi-annually. FinCEN is simultaneously finalising a permanent nationwide real estate reporting rule under the Anti-Money Laundering Act of 2020 expected in late 2026. The permanent rule will cover both residential and commercial real estate transactions and require reporting persons to identify beneficial owners behind all-cash purchases.",
+    ],
+    source:"FinCEN", sourceUrl:"https://www.fincen.gov/news/news-releases" },
+
+  { id:9052, section:"penalties", category:"FinCEN Advisory", region:"United States", impact:"medium",
+    date: "2026-03-10",
+    headline:"FinCEN Advisory — Illicit Finance Risks in Commercial Real Estate, Shell Company and Correspondent Banking Red Flags Identified",
+    body:[
+      "FinCEN issued a Financial Trend Analysis in March 2026 identifying illicit finance risks in commercial real estate (CRE). All-cash CRE transactions totalled over $68 billion in 2024 and are frequently used by illicit actors to launder proceeds through shell company structures, nominee ownership, and layering via correspondent banking.",
+      "Key red flags include: purchases significantly above assessed value with no apparent rationale; shell company buyers with nominee registered agents; multiple rapid resales at escalating prices; use of cryptocurrency or foreign funds to fund escrow. FinCEN recommends enhanced due diligence on CRE transactions involving these characteristics.",
+    ],
+    source:"FinCEN", sourceUrl:"https://www.fincen.gov/news/news-releases" },
+
+  { id:9053, section:"penalties", category:"FinCEN Enforcement", region:"United States", impact:"high",
+    date: "2023-11-21",
+    headline:"FinCEN $3.4B Binance Penalty — Largest BSA Enforcement Action in History, Five-Year Monitorship Imposed",
+    body:[
+      "FinCEN imposed a $3.4 billion civil money penalty on Binance Holdings Limited — the largest Bank Secrecy Act enforcement action in history — for willfully failing to implement an effective AML programme and failing to file SARs on transactions with sanctioned jurisdictions including Iran, North Korea, and Cuba.",
+      "Binance processed over $898 million in transactions with users in sanctioned jurisdictions. The settlement requires Binance to exit the U.S. market entirely, submit to a five-year monitorship, and retain all historical transaction data for law enforcement access. Founder Changpeng Zhao pleaded guilty to BSA violations and was sentenced to four months in federal prison.",
+    ],
+    source:"FinCEN / DOJ", sourceUrl:"https://www.fincen.gov/news/news-releases/fincen-penalizes-binance-holdings-limited-34-billion-willfully-violating-anti" },
+
+  // ── UK OFSI ──────────────────────────────────────────────────────────────────
+
+  { id:9060, section:"sanctions", category:"UK OFSI", region:"Russia / Global", impact:"high",
+    date: "2026-05-08",
+    headline:"UK OFSI Russia Package — 100+ Entities Designated Including Energy Traders, Shadow Fleet Operators, and Evasion Networks",
+    body:[
+      "The UK implemented its latest Russia sanctions package in May 2026, designating over 100 individuals and entities involved in evading existing Russia sanctions, financing the war effort, and operating the shadow fleet supplying Russian oil. Key targets included energy trading companies in the UAE, Turkey, and India; tanker operators; and financial intermediaries processing Russia-linked transactions through third-country banks.",
+      "OFSI simultaneously updated its licensing guidance for humanitarian organisations. The package coordinates with EU and U.S. OFAC designations from the same week. UK financial institutions must screen correspondent banking relationships, trade finance exposures, and shipping insurance books against the updated UK Consolidated List.",
+    ],
+    source:"UK OFSI", sourceUrl:"https://www.gov.uk/government/collections/financial-sanctions-news" },
+
+  { id:9061, section:"sanctions", category:"UK OFSI", region:"Iran", impact:"high",
+    date: "2026-04-14",
+    headline:"UK OFSI Designates 12 Iranian Entities Supporting Drone and Missile Production — Coordinated with US and EU",
+    body:[
+      "UK OFSI designated 12 Iranian entities in April 2026 for supporting Iran's production of Shahed-series drones and ballistic missiles. The designations cover electronics component suppliers, metalwork manufacturers, and a logistics company delivering drone components from China and North Korea to IRGC-affiliated assembly facilities.",
+      "The action was coordinated with OFAC and the EU Council. OFSI also designated three individuals linked to Iran's Quds Force for directing assassination plots against UK nationals. UK persons are prohibited from providing financial services or economic resources to designated entities and must freeze any UK-held assets.",
+    ],
+    source:"UK OFSI", sourceUrl:"https://www.gov.uk/government/news" },
+
+  { id:9062, section:"penalties", category:"UK OFSI Penalty", region:"United Kingdom", impact:"high",
+    date: "2026-03-18",
+    headline:"UK OFSI £30M Monetary Penalty — UK Bank Fined for Processing Russia-Linked Transactions Through Turkish Correspondent",
+    body:[
+      "OFSI imposed a £30 million monetary penalty on a UK-authorised bank for processing approximately £420 million in transactions linked to Russian designated persons through a Turkish correspondent banking relationship between March 2022 and September 2023. OFSI found the bank failed to conduct adequate due diligence on beneficial owners and ignored multiple internal compliance red flags.",
+      "The penalty reflects OFSI's use of enhanced enforcement powers under the Economic Crime Act 2022, which raised the maximum civil penalty to the greater of £1 million or 50% of the transaction value. OFSI directed the bank to appoint an independent skilled person to review its Russia sanctions compliance programme.",
+    ],
+    source:"UK OFSI", sourceUrl:"https://www.gov.uk/government/publications/financial-sanctions-enforcement-and-monetary-penalties-guidance" },
+
+  { id:9063, section:"sanctions", category:"UK OFSI", region:"Global", impact:"medium",
+    date: "2026-02-05",
+    headline:"UK OFSI Annual Review 2025 — 12 Monetary Penalties Totalling £78M, Voluntary Disclosure Programme Expanded",
+    body:[
+      "OFSI's 2025 Annual Review reported 12 monetary penalties totalling £78 million, a record year reflecting expanded enforcement powers and the volume of Russia-related sanctions breaches. The review also reported 1,847 voluntary disclosures, of which 34 resulted in enforcement action.",
+      "OFSI announced an expanded voluntary disclosure programme for 2026, providing greater certainty on penalty mitigation for timely, accurate, and complete disclosures. Entities making voluntary disclosures before being identified by OFSI receive on average 50% penalty reductions compared to those subject to OFSI-initiated investigations.",
+    ],
+    source:"UK OFSI", sourceUrl:"https://www.gov.uk/government/publications/ofsi-annual-review" },
+
+  // ── DPRK / NORTH KOREA ──────────────────────────────────────────────────────
+
+  { id:9070, section:"sanctions", category:"OFAC / DPRK", region:"North Korea / Global", impact:"high",
+    date: "2026-04-28",
+    headline:"OFAC Designates 10 DPRK IT Worker Networks — Shell Companies Across Southeast Asia Laundering $600M Annually",
+    body:[
+      "OFAC designated 10 DPRK-linked entities and individuals operating IT worker networks across Southeast Asia, including front companies in Laos, Thailand, and Malaysia that employ North Korean IT workers under false identities to generate revenue for the Kim regime's weapons programs. OFAC estimates these networks generate over $600 million annually for North Korea.",
+      "The State Department simultaneously offered a $5 million reward under the Rewards for Justice programme for information leading to the disruption of DPRK IT worker networks. Companies are warned that hiring what appear to be freelance developers from Southeast Asia without thorough vetting may inadvertently fund DPRK's ballistic missile and nuclear programmes — a potential sanctions violation.",
+    ],
+    source:"U.S. Treasury / OFAC",
+    sourceUrl:"https://home.treasury.gov/news/press-releases/jy2456" },
+
+  { id:9071, section:"sanctions", category:"OFAC / DPRK", region:"North Korea / Global", impact:"high",
+    date: "2026-02-12",
+    headline:"OFAC Sanctions Lazarus Group Infrastructure — $1.5B Bybit Crypto Hack, Three North Korean Front Exchanges Blocked",
+    body:[
+      "Following the February 2026 hack of crypto exchange Bybit — the largest crypto theft in history at approximately $1.5 billion — OFAC moved within weeks to designate Lazarus Group-linked infrastructure including three front cryptocurrency exchanges and two mixer services used to launder the stolen ETH. On-chain analytics firms Chainalysis and TRM Labs traced the funds to DPRK-controlled wallets within 72 hours.",
+      "OFAC reminded exchanges and DeFi protocols that processing transactions for OFAC-designated wallets constitutes a sanctions violation regardless of whether the platform is centralised or decentralised. The agency published an updated list of ~1,200 DPRK-linked cryptocurrency wallet addresses to be blocked by all U.S. persons and entities.",
+    ],
+    source:"U.S. Treasury / OFAC",
+    sourceUrl:"https://home.treasury.gov/news/press-releases/jy2387" },
+
+  // ── CUBA ─────────────────────────────────────────────────────────────────────
+
+  { id:9075, section:"sanctions", category:"OFAC / Cuba", region:"Cuba / Global", impact:"high",
+    date: "2026-05-20",
+    headline:"OFAC Cuba Sanctions — 8 Entities Supporting Cuban Security Forces and Internet Disruption Tools Designated",
+    body:[
+      "OFAC designated 8 Cuban entities and individuals in May 2026 for providing material support to Cuba's Ministry of the Interior (MININT) and the Brigadas de Respuesta Rápida (BRR) — paramilitary groups that violently suppressed the 2021 pro-democracy protests and continued crackdowns in 2025-2026. Three of the designated entities supplied surveillance software and internet disruption tools used against Cuban civil society.",
+      "The Cuba sanctions programme prohibits U.S. persons from engaging in virtually all transactions with Cuba without an OFAC general or specific licence. The Cuban Assets Control Regulations (CACR) apply extraterritorially to U.S.-owned or controlled foreign entities. Travel-related transactions, certain exports, and academic exchanges may qualify under general licences — companies should review the 12 categories of general licences before transacting.",
+    ],
+    source:"U.S. Treasury / OFAC",
+    sourceUrl:"https://home.treasury.gov/news/press-releases/jy2489" },
+
+  // ── MIDDLE EAST / HAMAS / IRAN PROXIES ──────────────────────────────────────
+
+  { id:9080, section:"sanctions", category:"OFAC / Hamas", region:"Middle East", impact:"high",
+    date: "2026-05-21",
+    headline:"OFAC Designates 9 Hizballah-Aligned Lebanese Officials Including Sitting MP Ibrahim al-Moussawi",
+    body:[
+      "OFAC designated nine Hizballah-aligned officials on May 21, 2026, including Ibrahim al-Moussawi — a sitting Lebanese member of parliament — and Iran's ambassador to Lebanon. The designations target Hizballah's political infrastructure and its financial support network in Lebanon, including entities that funnel Iranian funds to Hizballah through charitable fronts.",
+      "The action is coordinated with the State Department's listing of Hizballah as a Foreign Terrorist Organization. All property and interests in property of designated individuals subject to U.S. jurisdiction are blocked. U.S. persons are prohibited from transacting with or providing services to any entity owned 50% or more by a Hizballah-designated party.",
+    ],
+    source:"U.S. Treasury / OFAC",
+    sourceUrl:"https://home.treasury.gov/news/press-releases/jy2492" },
+
+  { id:9081, section:"sanctions", category:"OFAC / Yemen", region:"Middle East / Yemen", impact:"high",
+    date: "2026-03-05",
+    headline:"OFAC Houthi Sanctions — 15 Entities Financing Yemen Operations, Red Sea Shipping Attacks Drive Insurance Surcharges 400%",
+    body:[
+      "OFAC designated 15 Houthi-linked entities and individuals in March 2026, targeting the financial networks that fund Houthi maritime attacks in the Red Sea and Gulf of Aden. The designations cover commodity brokers in Oman and the UAE facilitating oil-for-weapons swaps, as well as hawala networks transmitting funds from Iran to Houthi commanders.",
+      "The Houthi attacks on commercial shipping have driven maritime war risk insurance premiums up over 400% for Red Sea transits. The Bab-el-Mandeb strait carries approximately 12% of global trade. Companies routing cargo through the Red Sea must assess sanctions exposure from potential interactions with Houthi-controlled ports, pilots, and intermediaries. OFAC has indicated that vessel owners should conduct enhanced due diligence before calling at Yemeni ports.",
+    ],
+    source:"U.S. Treasury / OFAC",
+    sourceUrl:"https://home.treasury.gov/news/press-releases/jy2398" },
+
+  // ── SOUTHEAST ASIA ────────────────────────────────────────────────────────────
+
+  { id:9085, section:"sanctions", category:"OFAC / Burma", region:"Southeast Asia / Burma", impact:"high",
+    date: "2026-04-08",
+    headline:"OFAC Burma Sanctions — Military Junta's Foreign Exchange Revenue Streams Targeted, Jade and Gems Trade Blocked",
+    body:[
+      "OFAC expanded its Burma sanctions in April 2026, designating additional entities in the Myanmar military junta's foreign exchange revenue network including gem exporters, jade trading companies, and state-controlled banks that process international settlements. The Burma sanctions programme now covers substantially all economic sectors controlled by the Tatmadaw (Myanmar Armed Forces).",
+      "U.S. persons are prohibited from dealing in Burmese jade and rubies under the Burmese Freedom and Democracy Act, regardless of where the gems are processed. OFAC has issued guidance that gems mined in Burma retain their Burma-origin designation throughout the supply chain — reprocessing in a third country (Thailand, India, China) does not change the compliance risk.",
+    ],
+    source:"U.S. Treasury / OFAC",
+    sourceUrl:"https://ofac.treasury.gov/recent-actions/20260408" },
+
 ];
 
 export function getHistoricalForSection(section: string, currentCount: number, targetCount = 8): Article[] {
@@ -551,4 +695,50 @@ export function getHistoricalForSection(section: string, currentCount: number, t
 
 export function getAllHistorical(): Article[] {
   return HISTORICAL;
+}
+
+/**
+ * Returns the most recent historical (pre-written, official-source) articles
+ * for a section — optionally narrowed to a region — excluding any article IDs
+ * already present in the live briefing. Used as a fallback so that a section
+ * (or, for "sanctions", a specific region sub-tab) always has a baseline of
+ * recent official-source content to show when nothing in the live feeds was
+ * published "today" (Eastern Time). Region matching mirrors the loose
+ * substring match the UI itself uses (filterArticles in AppContent.tsx) so the
+ * backfilled articles actually surface under the region pill the user picks.
+ */
+export function getRecentOfficialBackfill(
+  section: Section,
+  region: string | null,
+  excludeIds: Set<number>,
+  count: number
+): Article[] {
+  if (count <= 0) return [];
+  return HISTORICAL
+    .filter(a => a.section === section && !excludeIds.has(a.id))
+    .filter(a => {
+      if (!region || region === "All") return true;
+      const ar = (a.region || "").toLowerCase();
+      const r = region.toLowerCase();
+      return ar.includes(r) || r.includes(ar);
+    })
+    .sort((a, b) => (b.date || "").localeCompare(a.date || ""))
+    .slice(0, count);
+}
+
+/**
+ * Returns the most recent historical articles whose source field contains
+ * the given keyword. Used by the per-source backfill in orchestrator to ensure
+ * every key official source (OFAC, FinCEN, OFSI, BIS) always has representation
+ * in the briefing even on days when that source's live scraper returned nothing.
+ */
+export function getRecentBySource(
+  sourceKeyword: string,
+  limit: number,
+  excludeIds: Set<number> = new Set()
+): Article[] {
+  return HISTORICAL
+    .filter(a => a.source.includes(sourceKeyword) && !excludeIds.has(a.id))
+    .sort((a, b) => (b.date || "").localeCompare(a.date || ""))
+    .slice(0, limit);
 }
