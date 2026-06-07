@@ -175,7 +175,16 @@ function stripHTML(html: string): string {
       href.includes("designation") || href.includes("license");
 
     if (text.length > 30 && text.length < 250 && !isNav && isNewsLink) {
-      headlines.push(`• ${text}`);
+      // Look for a date in the surrounding HTML context (100 chars before + 400 after)
+      // so HTML listing pages (FinCEN, OCC, UK Gov, etc.) get the correct per-item date
+      // instead of defaulting to today. Strip tags from context before matching.
+      const ctxStart = Math.max(0, (m.index ?? 0) - 100);
+      const ctxEnd   = Math.min(clean.length, (m.index ?? 0) + m[0].length + 400);
+      const ctx = clean.slice(ctxStart, ctxEnd).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
+      const fullDate   = ctx.match(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s+20\d{2}\b/);
+      const monthYear  = !fullDate && ctx.match(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+20\d{2}\b/);
+      const dateAppend = fullDate?.[0] || monthYear?.[0] || "";
+      headlines.push(`• ${text}${dateAppend ? " — " + dateAppend : ""}`);
     }
   }
 
@@ -372,34 +381,4 @@ export async function fetchOfficialSources(): Promise<OfficialSource[]> {
 
   return results.map((r, i) =>
     r.status === "fulfilled"
-      ? r.value
-      : {
-          name: allSources[i].name,
-          url: allSources[i].url,
-          content: "",
-          fetchedAt: now,
-          error: String((r as PromiseRejectedResult).reason),
-        }
-  );
-}
-
-// ── Format sources for injection into LLM prompt ─────────────────────────────
-export function formatSourcesForPrompt(sources: OfficialSource[]): string {
-  const successful = sources.filter(s => s.content.length > 100);
-  if (successful.length === 0) return "";
-
-  return `
-OFFICIAL GOVERNMENT SOURCES — fetched directly right now:
-Use this raw data as the primary source for your briefing. Do not ignore or contradict it.
-
-${successful.map(s => `
---- ${s.name} ---
-URL: ${s.url}
-Fetched: ${s.fetchedAt}
-Content:
-${s.content}
-`).join("\n")}
-
-END OF OFFICIAL SOURCES. Write articles based on the above real data.
-`;
-}
+  
