@@ -187,7 +187,10 @@ function stripHTML(html: string): string {
       const fullDate   = ctx.match(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s+20\d{2}\b/);
       const monthYear  = !fullDate && ctx.match(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+20\d{2}\b/);
       const dateAppend = fullDate?.[0] || monthYear?.[0] || "";
-      headlines.push(`• ${text}${dateAppend ? " — " + dateAppend : ""}`);
+      // Include the href so downstream can build a direct article link.
+      // Relative hrefs (starting with /) are left as-is; extractDirectUrl in
+      // official-briefing.ts will resolve them against the source base URL.
+      headlines.push(`• ${text} ||| ${href}${dateAppend ? " ||| DATE:" + dateAppend : ""}`);
     }
   }
 

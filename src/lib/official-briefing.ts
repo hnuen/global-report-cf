@@ -259,8 +259,15 @@ function extractDateFromContent(content: string): string | null {
 
 // Extract direct article URL from bullet ||| separator or dated OFAC URL pattern
 function extractDirectUrl(bulletUrl: string, sourceUrl: string, text: string): string {
+  // Resolve relative hrefs (e.g. /news/enforcement-actions/case-name) to absolute
+  if (bulletUrl && bulletUrl.startsWith("/")) {
+    try {
+      const base = new URL(sourceUrl);
+      bulletUrl = `${base.protocol}//${base.host}${bulletUrl}`;
+    } catch {}
+  }
   // If bullet has a specific URL that isn't just the source index page
-  if (bulletUrl && bulletUrl !== sourceUrl && bulletUrl.length > 10) {
+  if (bulletUrl && bulletUrl !== sourceUrl && bulletUrl.startsWith("http") && bulletUrl.length > 10) {
     return bulletUrl;
   }
   // Try to extract dated OFAC URL from text
