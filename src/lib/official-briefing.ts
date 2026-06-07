@@ -294,7 +294,7 @@ function buildArticleFromSource(source: OfficialSource): Article | null {
       .replace("U.S. Treasury — Press Releases", "U.S. Treasury")
       .replace("U.S. Treasury — Enforcement", "U.S. Treasury")
       .replace(/^U\.S\. Treasury — /, "U.S. Treasury / ")
-      .replace(/^Google News — /, "")
+      .replace(/^Google News — .*$/, "Google News")
       .replace(/^OFAC — /, "OFAC / "));
 
   // Default/fallback date — Eastern Time day (matches the "lastUpdated" timestamp
@@ -374,7 +374,7 @@ function buildArticleFromSource(source: OfficialSource): Article | null {
     const articleDate = toISODate(extractedDate || today);
 
     // Use the article URL from the RSS item, not the feed URL
-    const directUrl = bullet.url && bullet.url.startsWith("http") && !bullet.url.includes("/feeds/") && !bullet.url.includes("/rss")
+    const directUrl = bullet.url && bullet.url.startsWith("http") && !bullet.url.includes("/feeds/") && (!bullet.url.includes("/rss") || bullet.url.includes("/rss/articles/"))
       ? bullet.url
       : extractDirectUrl(bullet.url, source.url, bullet.url + " " + bullet.text);
 
@@ -424,7 +424,7 @@ export function buildAllFromSource(source: OfficialSource): Article[] {
       .replace("OFAC Sanctions List Updates", "OFAC")
       .replace("U.S. Treasury — OFAC Sanctions", "U.S. Treasury / OFAC")
       .replace(/^U\.S\. Treasury — /, "U.S. Treasury / ")
-      .replace(/^Google News — /, "")
+      .replace(/^Google News — .*$/, "Google News")
       .replace(/^OFAC — /, "OFAC / "));
 
   // Default/fallback date — Eastern Time day (matches the "lastUpdated" timestamp
@@ -752,7 +752,8 @@ function buildArticlesFromSource(source: OfficialSource): Article[] {
       // leaks into the article body as visible "||| <raw text>" artifacts.)
       const desc = rest3.replace(/^DATE:[^\s|]*\s*(\|\|\|)?\s*/, "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
       let url = parts[1]?.trim() || source.url;
-      if (url.includes("/feeds/") || url.endsWith(".xml") || url.includes("news.google.com")) url = source.url;
+      // Keep per-article Google redirect URLs (news.google.com/rss/articles/...) — they work as redirects
+      if (url.includes("/feeds/") || url.endsWith(".xml") || (url.includes("news.google.com") && !url.includes("/rss/articles/"))) url = source.url;
       // Resolve relative URLs
       if (url.startsWith("/") && baseUrl) url = baseUrl + url;
       // Store description back in text field with separator for article builder
@@ -771,7 +772,7 @@ function buildArticlesFromSource(source: OfficialSource): Article[] {
       .replace("OFAC Sanctions List Updates", "OFAC")
       .replace("U.S. Treasury — OFAC Sanctions", "U.S. Treasury / OFAC")
       .replace(/^U\.S\. Treasury — /, "U.S. Treasury / ")
-      .replace(/^Google News — /, "")
+      .replace(/^Google News — .*$/, "Google News")
       .replace(/^OFAC — /, "OFAC / "));
 
   // Create one article per bullet — body shows description if available (RSS), else directs to source

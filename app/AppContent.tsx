@@ -436,6 +436,8 @@ export default function GlobalMonitor() {
   const [fincenYears, setFincenYears]   = useState<number[]>([]);
   const [fincenYear, setFincenYear]     = useState<number|null>(null);
   const [penTab, setPenTab]             = useState<"ofac"|"fincen">("ofac");
+  const [penaltiesLoading, setPenaltiesLoading] = useState(true);
+  const [penaltiesError, setPenaltiesError]   = useState("");
   const [globalQ, setGlobalQ]           = useState("");
   const [globalResults, setGlobalResults] = useState<any[]>([]);
   const [globalSearching, setGlobalSearching] = useState(false);
@@ -460,8 +462,8 @@ export default function GlobalMonitor() {
     fetch("/api/news").then(r=>r.json()).then(setData)
       .catch(()=>setError("Could not load briefing."));
     fetch("/api/penalties").then(r=>r.json())
-      .then((d:{records:PenaltyRecord[];years:number[]})=>{ setPenalties(d.records); setPenaltyYears(d.years); })
-      .catch(()=>{});
+      .then((d:{records:PenaltyRecord[];years:number[]})=>{ setPenalties(d.records); setPenaltyYears(d.years); setPenaltiesLoading(false); })
+      .catch((e)=>{ setPenaltiesError("Failed to load: "+String(e)); setPenaltiesLoading(false); });
     fetch("/api/fincen").then(r=>r.json())
       .then((d:{records:FinCENPenalty[];years:number[]})=>{ setFincenPenalties(d.records); setFincenYears(d.years); })
       .catch(()=>{});
@@ -1046,6 +1048,8 @@ export default function GlobalMonitor() {
                   </div>
                 )}
               </div>
+              {penaltiesLoading && <div style={{fontFamily:"var(--mono)",fontSize:".65rem",color:"#6b7280",padding:"12px 0"}}>Loading penalty records…</div>}
+              {penaltiesError && <div style={{fontFamily:"var(--mono)",fontSize:".65rem",color:"#cc0000",padding:"12px 0"}}>⚠ {penaltiesError}</div>}
               {penTab==="ofac" && (
                 <>
                 <div style={{fontSize:".65rem",color:"#6b7280",fontFamily:"var(--mono)",marginBottom:"8px"}}>
