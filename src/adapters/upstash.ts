@@ -31,5 +31,41 @@ export class UpstashAdapter implements StorageAdapter {
 
   private async restSet(key: string, value: string): Promise<void> {
     if (!this.url || !this.token) throw new Error("Upstash env vars not set");
-    // Use pipeline for atomic SET (single subrequest)
-    const
+    const res = await fetch(`${this.url}/pipeline`, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${this.token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify([["SET", key, value]]),
+    });
+    if (!res.ok) throw new Error(`Upstash SET ${res.status}: ${await res.text()}`);
+  }
+
+  async load(): Promise<Briefing | null> {
+    getTracker().increment("upstash:read");
+    try {
+      return await this.restGet<Briefing>(KEY);
+    } catch (e) {
+      throw new Error(`Upstash.load failed: ${e}`);
+    }
+  }
+
+  async save(briefing: Briefing): Promise<void> {
+    getTracker().increment("upstash:write");
+    try {
+      await this.restSet(KEY, JSON.stringify(briefing));
+    } catch (e) {
+      throw new Error(`Upstash.save failed: ${e}`);
+    }
+  }
+
+  async ping(): Promise<number> {
+    const start = Date.now();
+    const res = await fetch(`${this.url}/ping`, {
+      headers: { Authorization: `Bearer ${this.token}` },
+    });
+    if (!res.ok) throw new Error(`ping failed: ${res.status}`);
+    return Date.now() - start;
+  }
+}
