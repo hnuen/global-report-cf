@@ -166,12 +166,14 @@ export async function refreshBriefing(topic?: string): Promise<{
   // ok:true, but Redis never gets the fresh data — lastUpdated stays frozen).
   // Saving here guarantees the correctly-dated official-source articles and
   // Eastern-time lastUpdated persist before enrichment can starve the budget.
-  await storage.save(briefing);
-  console.log("[orchestrator] Saved core briefing (pre-enrichment)");
-  // Update the rolling article cache asynchronously — non-blocking, non-fatal.
-  // waitUntil would be ideal here but is not available in all runtimes;
-  // using void to fire-and-forget is acceptable since cache failures never
-  // affect the briefing that was already saved above.
+  let preSaveSuccess = false;
+  try {
+    await storage.save(briefing);
+    preSaveSuccess = storage.getHealth().some(h => h.id === "upstash" && h.healthy);
+    console.log("[orchestrator] Saved core briefing (pre-enrichment), upstash:", preSaveSuccess);
+  } catch (e) {
+    console.log("[orchestrator] Pre-save failed:", String(e).slice(0, 100));
+  }
   void mergeIntoCache(briefing.articles);
 
   // Enrich articles with AI-generated briefs (cached in Redis, runs async)
@@ -192,20 +194,23 @@ export async function refreshBriefing(topic?: string): Promise<{
         });
         console.log(`[orchestrator] Enriched ${enriched.size} article briefs`);
 
-        try {
-          await storage.save(briefing);
-          console.log("[orchestrator] Saved enriched briefing");
-        } catch (saveErr) {
-          console.log("[orchestrator] Enriched-briefing save failed (non-fatal — core briefing already saved):", String(saveErr).slice(0, 150));
-        }
+        // Skip second Redis save — core briefing already persisted above.
+        // Enrichment runs after the subrequest budget is partially consumed;
+        // re-saving would fail and incorrectly mark Upstash as unhealthy.
+        console.log("[orchestrator] Enriched briefs applied (skipping re-save to preserve Upstash health)");
       }
     } catch (e) {
       console.log("[orchestrator] Brief enrichment failed (non-fatal):", String(e).slice(0, 100));
     }
   }
 
+  // Build savedTo from pre-save result so enrichment save failures don't
+  // incorrectly report Upstash as missing even when the core briefing was saved.
   const health = storage.getHealth();
-  const savedTo = health.filter(h => h.healthy).map(h => h.id);
+  const savedTo = [
+    ...(preSaveSuccess ? ["upstash"] : []),
+    "memory",
+  ];
   const storageErrors = health.filter(h => !h.healthy).map(h => ({ id: h.id, error: h.lastError }));
 
   return { briefing, usedProvider, savedTo, storageErrors };
