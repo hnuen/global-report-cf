@@ -4,8 +4,7 @@ import { getTracker }          from "./usage-tracker";
 import { fetchOfficialSources, formatSourcesForPrompt } from "./official-sources";
 import { buildBriefingFromSources } from "./official-briefing";
 import { buildAnalyzedBriefing } from "./local-analyzer";
-import { getHistoricalForSection, getRecentBySource } from "./historical-articles";
-import { mergeIntoCache } from "./article-cache";
+import { getHistoricalForSection } from "./historical-articles";
 import type { Briefing, Section } from "./types";
 import { enrichArticlesWithBriefs } from "./brief-generator";
 
@@ -73,28 +72,25 @@ export async function refreshBriefing(topic?: string): Promise<{
     }
   }
 
-  // ── Per-source official backfill ─────────────────────────────────────────
-  // For each key official source, if ZERO live articles came from that source
-  // (e.g. the scraper was blocked or the site had no new content today), inject
-  // the most recent 5-7 historical articles so the relevant tab always shows
-  // something authoritative rather than falling back to Google News only.
-  const existingIds = new Set(briefing.articles.map(a => a.id));
-  const SOURCE_BACKFILLS: Array<{ keyword: string; limit: number }> = [
-    { keyword: "OFAC",       limit: 7 },
-    { keyword: "FinCEN",     limit: 5 },
-    { keyword: "OFSI",       limit: 5 },
-    { keyword: "EU Council", limit: 5 },
-    { keyword: "BIS",        limit: 5 },
-  ];
-  for (const { keyword, limit } of SOURCE_BACKFILLS) {
-    const hasSource = briefing.articles.some(a => a.source.includes(keyword));
-    if (!hasSource) {
-      const fallback = getRecentBySource(keyword, limit, existingIds);
-      if (fallback.length > 0) {
-        briefing.articles = [...briefing.articles, ...fallback];
-        fallback.forEach(a => existingIds.add(a.id));
-        console.log(`[orchestrator] Backfilled ${fallback.length} ${keyword} articles from historical`);
+  // Enrich articles with AI-generated briefs (cached in Redis, runs async)
+  // Only runs when LLM fallback was used (structured briefing) — LLM articles already have good body text
+  if (usedProvider.includes("Official Sources") || usedProvider.includes("Local Analysis")) {
+    try {
+      console.log("[orchestrator] Enriching article briefs...");
+      const sanctionsArticles = briefing.articles
+        .filter(a => a.section === "sanctions" && a.sourceUrl)
+        .map(a => ({ sourceUrl: a.sourceUrl!, headline: a.headline, body: a.body }));
+
+      const enriched = await enrichArticlesWithBriefs(sanctionsArticles);
+      if (enriched.size > 0) {
+        briefing.articles = briefing.articles.map(a => {
+          const newBrief = a.sourceUrl ? enriched.get(a.sourceUrl) : undefined;
+          return newBrief ? { ...a, body: [newBrief, ...a.body.slice(1)] } : a;
+        });
+        console.log(`[orchestrator] Enriched ${enriched.size} article briefs`);
       }
+    } catch (e) {
+      console.log("[orchestrator] Brief enrichment failed (non-fatal):", String(e).slice(0, 100));
     }
   }
 
@@ -147,63 +143,13 @@ export async function refreshBriefing(topic?: string): Promise<{
     return (b.date || "").localeCompare(a.date || "");
   });
 
-  // ── Save the core briefing FIRST ───────────────────────────────────────────
-  // Cloudflare Workers caps subrequests per invocation. Brief enrichment below
-  // does per-article Redis cache lookups + article fetches + Gemini calls,
-  // which can exhaust that budget — causing the *real* Upstash save to throw
-  // "Too many subrequests by single Worker invocation" while the in-memory
-  // fallback silently "succeeds," masking the failure (refresh still reports
-  // ok:true, but Redis never gets the fresh data — lastUpdated stays frozen).
-  // Saving here guarantees the correctly-dated official-source articles and
-  // Eastern-time lastUpdated persist before enrichment can starve the budget.
-  let preSaveSuccess = false;
-  try {
-    await storage.save(briefing);
-    preSaveSuccess = storage.getHealth().some(h => h.id === "upstash" && h.healthy);
-    console.log("[orchestrator] Saved core briefing (pre-enrichment), upstash:", preSaveSuccess);
-  } catch (e) {
-    console.log("[orchestrator] Pre-save failed:", String(e).slice(0, 100));
-  }
-  void mergeIntoCache(briefing.articles);
+  await storage.save(briefing);
 
-  // Enrich articles with AI-generated briefs (cached in Redis, runs async)
-  // Only runs when LLM fallback was used (structured briefing) — LLM articles already have good body text
-  // Best-effort: failure here does not lose data, since the core briefing is already saved above.
-  if (usedProvider.includes("Official Sources") || usedProvider.includes("Local Analysis")) {
-    try {
-      console.log("[orchestrator] Enriching article briefs...");
-      const sanctionsArticles = briefing.articles
-        .filter(a => a.section === "sanctions" && a.sourceUrl)
-        .map(a => ({ sourceUrl: a.sourceUrl!, headline: a.headline, body: a.body }));
+  const savedTo = storage.getHealth()
+    .filter(h => h.healthy)
+    .map(h => h.id);
 
-      const enriched = await enrichArticlesWithBriefs(sanctionsArticles);
-      if (enriched.size > 0) {
-        briefing.articles = briefing.articles.map(a => {
-          const newBrief = a.sourceUrl ? enriched.get(a.sourceUrl) : undefined;
-          return newBrief ? { ...a, body: [newBrief, ...a.body.slice(1)] } : a;
-        });
-        console.log(`[orchestrator] Enriched ${enriched.size} article briefs`);
-
-        // Skip second Redis save — core briefing already persisted above.
-        // Enrichment runs after the subrequest budget is partially consumed;
-        // re-saving would fail and incorrectly mark Upstash as unhealthy.
-        console.log("[orchestrator] Enriched briefs applied (skipping re-save to preserve Upstash health)");
-      }
-    } catch (e) {
-      console.log("[orchestrator] Brief enrichment failed (non-fatal):", String(e).slice(0, 100));
-    }
-  }
-
-  // Build savedTo from pre-save result so enrichment save failures don't
-  // incorrectly report Upstash as missing even when the core briefing was saved.
-  const health = storage.getHealth();
-  const savedTo = [
-    ...(preSaveSuccess ? ["upstash"] : []),
-    "memory",
-  ];
-  const storageErrors = health.filter(h => !h.healthy).map(h => ({ id: h.id, error: h.lastError }));
-
-  return { briefing, usedProvider, savedTo, storageErrors };
+  return { briefing, usedProvider, savedTo };
 }
 
 export async function getSystemHealth() {

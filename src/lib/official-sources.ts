@@ -206,11 +206,11 @@ function stripHTML(html: string): string {
 const SOURCES: Array<{ name: string; url: string; official?: boolean }> = [
   // ── U.S. Government ─────────────────────────────────────────────────────────
   // ── Treasury / OFAC — working sources ──────────────────────────────────────
-  // OFAC RSS was retired Feb 6 2025 — use program-specific pages instead
-  // Sign up for email alerts at: service.govdelivery.com/service/subscribe.html?code=USTREAS_61
-  // OFAC sanctions list updates — renders without JS
-  // OFAC enforcement actions
-  // Program-specific pages for key sanctions programs
+  // OFAC RSS was retired Feb 6 2025 — use Federal Register API + Treasury SB probes instead.
+  // Federal Register (federalregister.gov) is an API-first service accessible from Cloudflare IPs.
+  // OFAC publishes all formal designations/notices there as Federal Register documents.
+  { name: "Federal Register — OFAC Actions",       url: "https://www.federalregister.gov/documents/search.rss?conditions%5Bagencies%5D%5B%5D=office-of-foreign-assets-control", official: true },
+  { name: "Federal Register — Treasury Sanctions", url: "https://www.federalregister.gov/documents/search.rss?conditions%5Bagencies%5D%5B%5D=department-of-the-treasury&conditions%5Bterm%5D=OFAC+sanctions+designations", official: true },
   // OCC — news releases page works
   { name: "OCC Enforcement Actions 2026",         url: "https://www.occ.gov/news-events/newsroom/news-issuances-by-year/news-releases/2026-news-releases.html", official: true },
   // Fed — press releases RSS
@@ -254,9 +254,10 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean }> = [
   // These return real Treasury press release URLs with correct pubDates
   // Google News RSS — primary: site:-scoped for precision; broad fallback if site: queries timeout.
   // Timeout raised to 10s for official sources to handle Google's slower site: searches.
-  { name: "U.S. Treasury — OFAC Sanctions",        url: "https://news.google.com/rss/search?q=OFAC+sanctions+site:home.treasury.gov&hl=en-US&gl=US&ceid=US:en", official: true },
-  { name: "Google News — OFAC Actions",            url: "https://news.google.com/rss/search?q=OFAC+sanctions+designations+site:ofac.treasury.gov&hl=en-US&gl=US&ceid=US:en", official: true },
+  // Google News site: queries for ofac.treasury.gov / home.treasury.gov timeout from Cloudflare IPs.
+  // Replaced by Federal Register RSS above. Keep broad queries which work reliably.
   { name: "Google News — OFAC Broad",              url: "https://news.google.com/rss/search?q=OFAC+sanctions+SDN+designations+treasury+2026&hl=en-US&gl=US&ceid=US:en", official: true },
+  { name: "Google News — Treasury OFAC Actions",   url: "https://news.google.com/rss/search?q=%22Treasury%22+%22OFAC%22+%22designated%22+OR+%22sanctions%22+2026&hl=en-US&gl=US&ceid=US:en", official: true },
   { name: "Google News — FinCEN",                  url: "https://news.google.com/rss/search?q=FinCEN+enforcement+AML+BSA+advisory+penalty+2026&hl=en-US&gl=US&ceid=US:en", official: true },
   { name: "Google News — BIS Entity List",         url: "https://news.google.com/rss/search?q=BIS+export+controls+Entity+List+EAR+2026&hl=en-US&gl=US&ceid=US:en", official: true },
   { name: "Google News — EU Council Sanctions",    url: "https://news.google.com/rss/search?q=EU+Council+sanctions+designations+restrictive+measures+2026&hl=en-US&gl=US&ceid=US:en", official: true },
@@ -333,7 +334,8 @@ export async function fetchOfficialSources(): Promise<OfficialSource[]> {
   // SOURCES has ~45 entries. Add only 3 Treasury SB probes (the 3 most likely current ones).
   // OFAC date pages removed — they are blocked from Cloudflare network and waste subrequest budget.
   // 45 sources + 3 SB probes + ~4 Redis calls = ~52, safely within budget.
-  const treasurySources = getTreasurySources().slice(0, 3);
+  // Probe 8 Treasury SBs: 35 SOURCES + 8 SBs + 1 Redis = 44 subrequests (safe under 50 limit)
+  const treasurySources = getTreasurySources().slice(0, 8);
   const allSources = [
     ...SOURCES,
     ...treasurySources,
@@ -382,22 +384,4 @@ export async function fetchOfficialSources(): Promise<OfficialSource[]> {
 }
 
 // ── Format sources for injection into LLM prompt ─────────────────────────────
-export function formatSourcesForPrompt(sources: OfficialSource[]): string {
-  const successful = sources.filter(s => s.content.length > 100);
-  if (successful.length === 0) return "";
-
-  return `
-OFFICIAL GOVERNMENT SOURCES — fetched directly right now:
-Use this raw data as the primary source for your briefing. Do not ignore or contradict it.
-
-${successful.map(s => `
---- ${s.name} ---
-URL: ${s.url}
-Fetched: ${s.fetchedAt}
-Content:
-${s.content}
-`).join("\n")}
-
-END OF OFFICIAL SOURCES. Write articles based on the above real data.
-`;
-}
+export function f
