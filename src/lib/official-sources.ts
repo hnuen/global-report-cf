@@ -384,4 +384,41 @@ export async function fetchOfficialSources(): Promise<OfficialSource[]> {
 }
 
 // ── Format sources for injection into LLM prompt ─────────────────────────────
-export function f
+export function formatSourcesForPrompt(sources: OfficialSource[]): string {
+  const successful = sources.filter(s => s.content.length > 100);
+  if (successful.length === 0) return "";
+
+  return `
+OFFICIAL GOVERNMENT SOURCES — fetched directly right now:
+Use this raw data as the primary source for your briefing. Do not ignore or contradict it.
+
+${successful.map(s => `
+--- ${s.name} ---
+URL: ${s.url}
+Fetched: ${s.fetchedAt}
+Content:
+${s.content}
+`).join("\n")}
+
+END OF OFFICIAL SOURCES. Write articles based on the above real data.
+`;
+}
+ormatSourcesForPrompt(sources: OfficialSource[]): string {
+  const successful = sources.filter(s => s.content.length > 100);
+  if (successful.length === 0) return "";
+
+  return `
+OFFICIAL GOVERNMENT SOURCES — fetched directly right now:
+Use this raw data as the primary source for your briefing. Do not ignore or contradict it.
+
+${successful.map(s => `
+--- ${s.name} ---
+URL: ${s.url}
+Fetched: ${s.fetchedAt}
+Content:
+${s.content}
+`).join("\n")}
+
+END OF OFFICIAL SOURCES. Write articles based on the above real data.
+`;
+}
