@@ -12,7 +12,7 @@ export async function GET() {
       getSystemHealth(),
       Promise.resolve(getNotifierManager().status()),
     ]);
-    return NextResponse.json({ ...health, notifiers });
+    return NextResponse.json({ ...health, notifiers, buildCommit: "aceda13", buildTs: "2026-06-07" });
   } catch (e) {
     return NextResponse.json({ error: String(e) }, { status: 500 });
   }
