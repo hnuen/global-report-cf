@@ -204,11 +204,11 @@ export async function refreshBriefing(topic?: string): Promise<{
     }
   }
 
-  const savedTo = storage.getHealth()
-    .filter(h => h.healthy)
-    .map(h => h.id);
+  const health = storage.getHealth();
+  const savedTo = health.filter(h => h.healthy).map(h => h.id);
+  const storageErrors = health.filter(h => !h.healthy).map(h => ({ id: h.id, error: h.lastError }));
 
-  return { briefing, usedProvider, savedTo };
+  return { briefing, usedProvider, savedTo, storageErrors };
 }
 
 export async function getSystemHealth() {
