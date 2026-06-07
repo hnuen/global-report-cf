@@ -74,6 +74,7 @@ const SOURCE_SECTION_MAP: Record<string, Section> = {
   "Google News — BIS Export Controls":"bis",
   "BIS Press Releases":               "bis",
   "OCC Enforcement Actions 2026":     "occ",
+  "FinCEN Enforcement Actions":                  "penalties",
   "FinCEN News Releases":                        "penalties",
   "OFAC Civil Penalties & Enforcement":          "penalties",
   "CFPB Enforcement Actions":                    "penalties",

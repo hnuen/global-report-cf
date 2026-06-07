@@ -232,7 +232,7 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean }> = [
   // State Department RSS
   { name: "U.S. State Department — News",         url: "https://www.state.gov/rss-feeds/press-releases/", official: true },
   // FinCEN enforcement
-  { name: "FinCEN Enforcement Actions",           url: "https://www.fincen.gov/news/enforcement-actions", official: true },
+  { name: "FinCEN Enforcement Actions",           url: "https://www.fincen.gov/news", official: true },
   { name: "FinCEN News Releases",                 url: "https://www.fincen.gov/news/news-releases", official: true },
 
   // ── China / Global Export Controls ──────────────────────────────────────────
