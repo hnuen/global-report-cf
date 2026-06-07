@@ -859,10 +859,13 @@ export function buildBriefingFromSources(sources: OfficialSource[]): Briefing {
   const articles: Article[] = [];
   const successful = sources.filter(s => s.content.length > 50);
 
-  for (const source of successful) {
+  // Process penalty sources first so enforcement articles always make it in
+  const penaltySources = successful.filter(s => (SOURCE_SECTION_MAP[s.name] ?? "") === "penalties");
+  const otherSources   = successful.filter(s => (SOURCE_SECTION_MAP[s.name] ?? "") !== "penalties");
+  for (const source of [...penaltySources, ...otherSources]) {
     const sourceArticles = buildArticlesFromSource(source);
     articles.push(...sourceArticles);
-    if (articles.length >= 40) break; // cap total
+    if (articles.length >= 100) break; // raised cap — ensures all sections are covered
   }
 
   // Fallback: if no articles extracted, use old method
