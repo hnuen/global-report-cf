@@ -225,10 +225,8 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean }> = [
   // China MOFCOM export controls — English press releases
   // EU dual-use export controls
   // Wassenaar Arrangement — multilateral export controls
-  { name: "Wassenaar Arrangement News",           url: "https://www.wassenaar.org/news/", official: true },
   // SIPRI arms and export controls
   // UK Strategic Export Controls
-  { name: "UK Strategic Export Controls",         url: "https://www.gov.uk/government/collections/strategic-export-controls-licensing-data", official: true },
   // Google News — China export controls
   { name: "Google News — China Export Controls",  url: "https://news.google.com/rss/search?q=China+MOFCOM+export+controls+rare+earth+sanctions+2026&hl=en-US&gl=US&ceid=US:en" },
   // Google News — Global sanctions enforcement
@@ -248,10 +246,8 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean }> = [
   { name: "UK Sanctions List",                    url: "https://www.gov.uk/government/publications/the-uk-sanctions-list", official: true },
 
   // ── United Nations ───────────────────────────────────────────────────────────
-  { name: "UN News — Latest",                    url: "https://news.un.org/en/news/topic/peace-and-security" },
 
   // ── News Sources ─────────────────────────────────────────────────────────────
-  { name: "Al Jazeera — Latest News",             url: "https://www.aljazeera.com/news/" },
   // Treasury news via Google News RSS — bypasses Treasury's server-side IP block
   // These return real Treasury press release URLs with correct pubDates
   { name: "U.S. Treasury — OFAC Sanctions",        url: "https://news.google.com/rss/search?q=OFAC+sanctions+site:home.treasury.gov&hl=en-US&gl=US&ceid=US:en", official: true },
@@ -276,17 +272,13 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean }> = [
   { name: "Google News — EU Sanctions",           url: "https://news.google.com/rss/search?q=EU+sanctions+Russia+designations&hl=en-US&gl=US&ceid=US:en" },
   { name: "Google News — Iran Sanctions",         url: "https://news.google.com/rss/search?q=Iran+sanctions+OFAC+2026&hl=en-US&gl=US&ceid=US:en" },
   { name: "Google News — Russia Sanctions",       url: "https://news.google.com/rss/search?q=Russia+sanctions+OFAC+designations+2026&hl=en-US&gl=US&ceid=US:en" },
-  { name: "Google News — Cuba Sanctions",         url: "https://news.google.com/rss/search?q=Cuba+sanctions+OFAC+2026&hl=en-US&gl=US&ceid=US:en" },
-  { name: "Google News — Venezuela Sanctions",    url: "https://news.google.com/rss/search?q=Venezuela+sanctions+OFAC+2026&hl=en-US&gl=US&ceid=US:en" },
   { name: "Google News — China Sanctions",        url: "https://news.google.com/rss/search?q=China+Hong+Kong+sanctions+export+controls+2026&hl=en-US&gl=US&ceid=US:en" },
   { name: "Google News — DPRK Sanctions",         url: "https://news.google.com/rss/search?q=North+Korea+DPRK+sanctions+2026&hl=en-US&gl=US&ceid=US:en" },
   { name: "Google News — Middle East Sanctions",  url: "https://news.google.com/rss/search?q=Middle+East+Gulf+sanctions+designations+2026&hl=en-US&gl=US&ceid=US:en" },
   { name: "Google News — Southeast Asia",         url: "https://news.google.com/rss/search?q=Southeast+Asia+sanctions+Myanmar+2026&hl=en-US&gl=US&ceid=US:en" },
   // ── India / Pakistan / Indonesia ─────────────────────────────────────────────
   // India DGFT (Directorate General of Foreign Trade) — export controls
-  { name: "India DGFT — Trade Notices",           url: "https://www.dgft.gov.in/CP/?opt=notice" },
   // India MEA — sanctions and foreign policy
-  { name: "India MEA — Press Releases",           url: "https://www.mea.gov.in/press-releases.htm" },
   // Global Sanctions — India tracker
   // Google News — India sanctions BIS
   { name: "Google News — India Sanctions",        url: "https://news.google.com/rss/search?q=India+sanctions+export+controls+DGFT+SCOMET+2026&hl=en-US&gl=US&ceid=US:en" },

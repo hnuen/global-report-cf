@@ -5,7 +5,7 @@ import { fetchOfficialSources, formatSourcesForPrompt } from "./official-sources
 import { buildBriefingFromSources } from "./official-briefing";
 import { buildAnalyzedBriefing } from "./local-analyzer";
 import { getHistoricalForSection, getRecentBySource } from "./historical-articles";
-import { loadArticleCache, mergeIntoCache, getCachedBySource } from "./article-cache";
+import { mergeIntoCache } from "./article-cache";
 import type { Briefing, Section } from "./types";
 import { enrichArticlesWithBriefs } from "./brief-generator";
 
@@ -21,10 +21,6 @@ export async function refreshBriefing(topic?: string): Promise<{
   savedTo: string[];
 }> {
   const storage = await buildStorageManager();
-
-  // Pre-load the rolling article cache (one Redis GET; used later for per-source backfill)
-  const cachedArticles = await loadArticleCache();
-  console.log(`[orchestrator] Article cache: ${cachedArticles.length} entries`);
 
   // Always fetch official sources first — fast and free
   console.log("[orchestrator] Fetching official government sources...");
@@ -93,17 +89,11 @@ export async function refreshBriefing(topic?: string): Promise<{
   for (const { keyword, limit } of SOURCE_BACKFILLS) {
     const hasSource = briefing.articles.some(a => a.source.includes(keyword));
     if (!hasSource) {
-      // Prefer the rolling cache (real live articles from past refreshes)
-      // over hardcoded historical entries — cache is always fresher.
-      const fromCache = getCachedBySource(cachedArticles, keyword, limit, existingIds);
-      const fallback = fromCache.length > 0
-        ? fromCache
-        : getRecentBySource(keyword, limit, existingIds);
+      const fallback = getRecentBySource(keyword, limit, existingIds);
       if (fallback.length > 0) {
         briefing.articles = [...briefing.articles, ...fallback];
         fallback.forEach(a => existingIds.add(a.id));
-        const src2 = fromCache.length > 0 ? "cache" : "historical";
-        console.log(`[orchestrator] Backfilled ${fallback.length} ${keyword} articles from ${src2}`);
+        console.log(`[orchestrator] Backfilled ${fallback.length} ${keyword} articles from historical`);
       }
     }
   }
