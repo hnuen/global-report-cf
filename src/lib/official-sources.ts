@@ -250,23 +250,14 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean }> = [
   // ── News Sources ─────────────────────────────────────────────────────────────
   // Treasury news via Google News RSS — bypasses Treasury's server-side IP block
   // These return real Treasury press release URLs with correct pubDates
-  { name: "U.S. Treasury — OFAC Sanctions",        url: "https://news.google.com/rss/search?q=OFAC+sanctions+site:home.treasury.gov&hl=en-US&gl=US&ceid=US:en", official: true },
-  { name: "U.S. Treasury — Press Releases",        url: "https://news.google.com/rss/search?q=treasury+sanctions+OFAC+designations+site:home.treasury.gov&hl=en-US&gl=US&ceid=US:en", official: true },
-  { name: "U.S. Treasury — Enforcement",           url: "https://news.google.com/rss/search?q=treasury+enforcement+penalties+site:home.treasury.gov&hl=en-US&gl=US&ceid=US:en", official: true },
-  // ── Google News site-search proxies for official regulators whose own sites
-  // block/timeout server-side fetches (mirrors the proven Treasury workaround
-  // above — these route through Google's index but the underlying articles are
-  // genuine .gov / official-domain releases with real pubDates). Names are
-  // chosen so the resulting displaySource matches the Tier-1 officialKeywords
-  // list in orchestrator.ts (e.g. "OFAC", "FinCEN", "BIS", "EU Council", "OFSI").
-  { name: "Google News — OFAC Actions",            url: "https://news.google.com/rss/search?q=OFAC+sanctions+designations+site:ofac.treasury.gov&hl=en-US&gl=US&ceid=US:en", official: true },
-  // Broader OFAC/Treasury query restricted to last 7 days — catches releases
-  // not yet indexed under the narrower site:ofac.treasury.gov search above
-  { name: "Google News — OFAC Recent",             url: "https://news.google.com/rss/search?q=OFAC+sanctions+designations+treasury+when%3A7d&hl=en-US&gl=US&ceid=US:en", official: true },
-  { name: "Google News — FinCEN",                  url: "https://news.google.com/rss/search?q=FinCEN+enforcement+advisory+site:fincen.gov&hl=en-US&gl=US&ceid=US:en", official: true },
-  { name: "Google News — BIS Entity List",         url: "https://news.google.com/rss/search?q=BIS+export+controls+Entity+List+site:bis.gov&hl=en-US&gl=US&ceid=US:en", official: true },
-  { name: "Google News — EU Council Sanctions",    url: "https://news.google.com/rss/search?q=EU+Council+sanctions+designations+site:consilium.europa.eu&hl=en-US&gl=US&ceid=US:en", official: true },
-  { name: "Google News — UK OFSI",                 url: "https://news.google.com/rss/search?q=OFSI+financial+sanctions+site:gov.uk&hl=en-US&gl=US&ceid=US:en", official: true },
+  // Google News RSS — broad keyword queries (no site: filter — site: causes timeouts from Cloudflare IPs)
+  // Named so displaySource matches Tier-1 officialKeywords (OFAC, FinCEN, BIS, EU Council, OFSI)
+  { name: "Google News — OFAC Sanctions",          url: "https://news.google.com/rss/search?q=OFAC+sanctions+SDN+designations+2026&hl=en-US&gl=US&ceid=US:en", official: true },
+  { name: "Google News — OFAC Treasury",           url: "https://news.google.com/rss/search?q=OFAC+treasury+sanctions+action+designation+enforcement+2026&hl=en-US&gl=US&ceid=US:en", official: true },
+  { name: "Google News — FinCEN",                  url: "https://news.google.com/rss/search?q=FinCEN+enforcement+AML+BSA+advisory+penalty+2026&hl=en-US&gl=US&ceid=US:en", official: true },
+  { name: "Google News — BIS Entity List",         url: "https://news.google.com/rss/search?q=BIS+export+controls+Entity+List+EAR+2026&hl=en-US&gl=US&ceid=US:en", official: true },
+  { name: "Google News — EU Council Sanctions",    url: "https://news.google.com/rss/search?q=EU+Council+sanctions+designations+restrictive+measures+2026&hl=en-US&gl=US&ceid=US:en", official: true },
+  { name: "Google News — UK OFSI",                 url: "https://news.google.com/rss/search?q=OFSI+UK+financial+sanctions+penalty+2026&hl=en-US&gl=US&ceid=US:en", official: true },
   { name: "Google News — Sanctions",              url: "https://news.google.com/rss/search?q=OFAC+sanctions+designations&hl=en-US&gl=US&ceid=US:en" },
   { name: "Google News — BIS Export Controls",    url: "https://news.google.com/rss/search?q=BIS+export+controls+Entity+List&hl=en-US&gl=US&ceid=US:en" },
   { name: "Google News — EU Sanctions",           url: "https://news.google.com/rss/search?q=EU+sanctions+Russia+designations&hl=en-US&gl=US&ceid=US:en" },
