@@ -30,8 +30,10 @@ async function fetchWithTimeout(url: string, timeoutMs = 4000): Promise<string> 
     const res = await fetch(url, {
       signal: controller.signal,
       headers: {
-        "User-Agent": "Mozilla/5.0 (compatible; GlobalReportBot/1.0)",
-        "Accept": "text/html,application/xhtml+xml",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,application/rss+xml;q=0.8,*/*;q=0.7",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Cache-Control": "no-cache",
       },
     });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -250,10 +252,11 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean }> = [
   // ── News Sources ─────────────────────────────────────────────────────────────
   // Treasury news via Google News RSS — bypasses Treasury's server-side IP block
   // These return real Treasury press release URLs with correct pubDates
-  // Google News RSS — broad keyword queries (no site: filter — site: causes timeouts from Cloudflare IPs)
-  // Named so displaySource matches Tier-1 officialKeywords (OFAC, FinCEN, BIS, EU Council, OFSI)
-  { name: "Google News — OFAC Sanctions",          url: "https://news.google.com/rss/search?q=OFAC+sanctions+SDN+designations+2026&hl=en-US&gl=US&ceid=US:en", official: true },
-  { name: "Google News — OFAC Treasury",           url: "https://news.google.com/rss/search?q=OFAC+treasury+sanctions+action+designation+enforcement+2026&hl=en-US&gl=US&ceid=US:en", official: true },
+  // Google News RSS — primary: site:-scoped for precision; broad fallback if site: queries timeout.
+  // Timeout raised to 10s for official sources to handle Google's slower site: searches.
+  { name: "U.S. Treasury — OFAC Sanctions",        url: "https://news.google.com/rss/search?q=OFAC+sanctions+site:home.treasury.gov&hl=en-US&gl=US&ceid=US:en", official: true },
+  { name: "Google News — OFAC Actions",            url: "https://news.google.com/rss/search?q=OFAC+sanctions+designations+site:ofac.treasury.gov&hl=en-US&gl=US&ceid=US:en", official: true },
+  { name: "Google News — OFAC Broad",              url: "https://news.google.com/rss/search?q=OFAC+sanctions+SDN+designations+treasury+2026&hl=en-US&gl=US&ceid=US:en", official: true },
   { name: "Google News — FinCEN",                  url: "https://news.google.com/rss/search?q=FinCEN+enforcement+AML+BSA+advisory+penalty+2026&hl=en-US&gl=US&ceid=US:en", official: true },
   { name: "Google News — BIS Entity List",         url: "https://news.google.com/rss/search?q=BIS+export+controls+Entity+List+EAR+2026&hl=en-US&gl=US&ceid=US:en", official: true },
   { name: "Google News — EU Council Sanctions",    url: "https://news.google.com/rss/search?q=EU+Council+sanctions+designations+restrictive+measures+2026&hl=en-US&gl=US&ceid=US:en", official: true },
@@ -340,7 +343,7 @@ export async function fetchOfficialSources(): Promise<OfficialSource[]> {
   const fetchOne = async (source: typeof allSources[0]) => {
     try {
       console.log(`[official] Fetching ${source.name}...`);
-      const html = await fetchWithTimeout(source.url, (source as any).official ? 6000 : 4000);
+      const html = await fetchWithTimeout(source.url, (source as any).official ? 10000 : 5000);
       const content = stripHTML(html);
       console.log(`[official] ✅ ${source.name} — ${content.length} chars`);
       return { name: source.name, url: source.url, content, fetchedAt: now };
