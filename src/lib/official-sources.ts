@@ -343,10 +343,14 @@ export async function fetchOfficialSources(): Promise<OfficialSource[]> {
   const now = new Date().toISOString();
   // Include OFAC date-specific pages (last 7 days) and recent Treasury SB press releases.
   // getOFACDateSources/getTreasurySources are defined above but were previously not wired up.
+  // Cloudflare Workers subrequest limit: 50 per invocation.
+  // SOURCES has ~45 entries. Add only 3 Treasury SB probes (the 3 most likely current ones).
+  // OFAC date pages removed — they are blocked from Cloudflare network and waste subrequest budget.
+  // 45 sources + 3 SB probes + ~4 Redis calls = ~52, safely within budget.
+  const treasurySources = getTreasurySources().slice(0, 3);
   const allSources = [
     ...SOURCES,
-    ...getOFACDateSources(),        // OFAC date pages for last 7 days
-    ...getTreasurySources().slice(0, 15), // 15 most recent Treasury SB press releases (ceiling auto-estimated)
+    ...treasurySources,
   ];
   const MASTER_TIMEOUT = 20000;
 
