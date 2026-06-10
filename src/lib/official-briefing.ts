@@ -894,4 +894,8 @@ export function buildBriefingFromSources(sources: OfficialSource[]): Briefing {
       economics:  emptySidebar,
       religion:   emptySidebar,
       occ:        emptySidebar,
-      p
+      penalties:  emptySidebar,
+      bis:        emptySidebar,
+    },
+  };
+}
