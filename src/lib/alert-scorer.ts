@@ -163,11 +163,25 @@ export function scoreArticle(article: Article): ScoredArticle {
   const sectionOk = watchSections.includes("all") || watchSections.includes(article.section);
 
   // 6. Authoritative gov enforcement sources = always 100
+  // All official government enforcement/sanctions source domains → force score 100
   const GOV_SOURCES_100 = [
-    "ofac.treasury.gov/recent-actions",
-    "www.fincen.gov/news/enforcement-actions",
-    "www.bis.gov/news-updates",
-    "www.gov.uk/government/collections/enforcement-of-financial-sanctions",
+    // OFAC / Treasury
+    "ofac.treasury.gov",
+    "home.treasury.gov/news/press-releases",
+    // Federal Register (OFAC-targeted feeds only — both feed URLs contain "office-of-foreign-assets-control" or "OFAC")
+    "federalregister.gov",
+    // FinCEN enforcement
+    "fincen.gov",
+    // OCC enforcement
+    "occ.gov/news-events",
+    // Federal Reserve enforcement
+    "federalreserve.gov/supervisionreg",
+    "federalreserve.gov/apps/enforcementactions",
+    // BIS export enforcement
+    "bis.gov",
+    // UK OFSI penalties
+    "gov.uk/government/publications/ofsi",
+    "gov.uk/government/collections",
   ];
   const EU_COMMISSION = "ec.europa.eu/commission/presscorner";
   const EU_KEYWORDS = ["sanction","fine","penalty","enforcement","designation","restrictive measure","freeze","asset","cartel","antitrust"];
