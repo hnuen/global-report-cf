@@ -226,6 +226,9 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean }> = [
   // OFAC publishes all formal designations/notices there as Federal Register documents.
   { name: "Federal Register — OFAC Actions",       url: "https://www.federalregister.gov/documents/search.rss?conditions%5Bagencies%5D%5B%5D=office-of-foreign-assets-control", official: true },
   { name: "Federal Register — Treasury Sanctions", url: "https://www.federalregister.gov/documents/search.rss?conditions%5Bagencies%5D%5B%5D=department-of-the-treasury&conditions%5Bterm%5D=OFAC+sanctions+designations", official: true },
+  // Treasury news listing page — gives actual press release titles+links without guessing SB numbers
+  // home.treasury.gov is accessible from Cloudflare IPs (unlike ofac.treasury.gov)
+  { name: "U.S. Treasury — News", url: "https://home.treasury.gov/news/press-releases", official: true },
   // OCC — news releases page works
   { name: "OCC Enforcement Actions 2026",         url: "https://www.occ.gov/news-events/newsroom/news-issuances-by-year/news-releases/2026-news-releases.html", official: true },
   // Fed — press releases RSS
@@ -304,10 +307,10 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean }> = [
 // ever needing to update a hardcoded constant again.
 const SB509_DATE    = new Date("2026-05-28T00:00:00Z");
 const SB509_NUM     = 509;
-const SB_PER_DAY    = 1.5; // conservative estimate (~10/week)
+const SB_PER_DAY    = 1.0; // ~7/week — lowered from 1.5 so probes land near actual latest
 function getEstimatedLatestSB(): number {
   const daysSince = Math.max(0, (Date.now() - SB509_DATE.getTime()) / 86_400_000);
-  return Math.ceil(SB509_NUM + daysSince * SB_PER_DAY) + 5; // +5 buffer
+  return Math.ceil(SB509_NUM + daysSince * SB_PER_DAY) + 2; // +2 buffer (was +5, caused all probes to miss)
 }
 function getTreasurySources(): Array<{ name: string; url: string }> {
   const ceiling = getEstimatedLatestSB();
@@ -349,7 +352,7 @@ export async function fetchOfficialSources(): Promise<OfficialSource[]> {
   // SOURCES has ~45 entries. Add only 3 Treasury SB probes (the 3 most likely current ones).
   // OFAC date pages removed — they are blocked from Cloudflare network and waste subrequest budget.
   // 45 sources + 3 SB probes + ~4 Redis calls = ~52, safely within budget.
-  // Probe 8 Treasury SBs: 35 SOURCES + 8 SBs + 1 Redis = 44 subrequests (safe under 50 limit)
+  // Probe 8 Treasury SBs: 36 SOURCES + 8 SBs + ~4 Redis = 48 subrequests (safe under 50 limit)
   const treasurySources = getTreasurySources().slice(0, 8);
   const allSources = [
     ...SOURCES,

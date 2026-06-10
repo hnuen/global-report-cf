@@ -501,6 +501,7 @@ export function buildAllFromSource(source: OfficialSource): Article[] {
 // Base URLs for resolving relative links per source domain
 const SOURCE_BASE_URLS: Record<string, string> = {
   "U.S. Treasury — Press Releases":     "https://home.treasury.gov",
+  "U.S. Treasury — News":               "https://home.treasury.gov",
   "U.S. Treasury — News RSS":            "https://home.treasury.gov",
   "U.S. Treasury — Press Releases RSS":  "https://home.treasury.gov",
   "OFAC RSS Feed":                       "https://ofac.treasury.gov",
@@ -893,8 +894,4 @@ export function buildBriefingFromSources(sources: OfficialSource[]): Briefing {
       economics:  emptySidebar,
       religion:   emptySidebar,
       occ:        emptySidebar,
-      penalties:  emptySidebar,
-      bis:        emptySidebar,
-    },
-  };
-}
+      p
