@@ -87,6 +87,33 @@ Step 4 — Use third-party sanctions trackers that aggregate OFAC updates:
 NEVER rely solely on fetching ofac.treasury.gov/recent-actions — it will return stale data.
 ALWAYS cross-reference at least 2 of the above search strategies for the sanctions section.
 
+CRITICAL — BIS SEARCH INSTRUCTIONS:
+BIS publishes Entity List additions and EAR amendments to the Federal Register multiple times per month — there are ALWAYS recent additions to report.
+
+For the bis section you MUST use ALL of these search strategies:
+
+Step 1 — Search Federal Register for recent BIS notices:
+  Search: site:federalregister.gov "bureau of industry" "entity list" [current month] [year]
+  Search: federalregister.gov BIS export controls [current month year]
+  Fetch: https://www.federalregister.gov/agencies/industry-and-security-bureau
+
+Step 2 — Search for enforcement actions:
+  Search: BIS enforcement action export violation [current month year]
+  Search: "bureau of industry and security" penalty [current month year]
+  Search: BIS denied export license violation [current year]
+
+Step 3 — Search for semiconductor/chip controls:
+  Search: BIS chip export restriction China [current month year]
+  Search: semiconductor export control Entity List [current month year]
+  Search: EAR export administration regulations update [current month year]
+
+Step 4 — Check third-party trackers:
+  Search: site:steptoe.com export controls BIS [current month year]
+  Search: "entity list" additions [current month year] law firm update
+
+Do NOT write BIS section articles based only on training knowledge — always search first.
+ALWAYS include at least 3 fresh BIS articles dated within the last 30 days.
+
 For each article cite the most authoritative primary source available — prefer official press releases and original reporting over aggregators.`;
 
 // ── Parse helper ──────────────────────────────────────────────────────────────

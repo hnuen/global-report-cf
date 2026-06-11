@@ -539,6 +539,52 @@ export const HISTORICAL: Article[] = [
       "Companies operating in semiconductor, AI, quantum, and defence-adjacent supply chains must implement real-time screening against the continuously updated Entity List and ensure screening extends to in-country transfers and address-based entries.",
     ],
     source:"BIS / Norton Rose Fulbright", sourceUrl:"https://www.bis.gov" },
+
+  { id:9404, section:"bis", category:"Entity List", region:"China / Global", impact:"high",
+    date: "2026-06-05",
+    headline:"BIS Adds 50+ Entities to Export Control List — Chinese Chipmakers, Iranian Procurement Networks, Russian Defence Suppliers Targeted",
+    body:[
+      "The Bureau of Industry and Security published a June 2026 Federal Register notice adding over 50 entities across China, Iran, Russia, and the UAE to the Entity List under the Export Administration Regulations. Chinese targets include semiconductor fabrication companies alleged to be producing chips for the People's Liberation Army and front companies used to procure U.S.-origin electronic components in violation of EAR licensing requirements.",
+      "Iranian entities include a procurement network operating through UAE shell companies that has sought to acquire radiation-hardened semiconductors and inertial navigation components. Russian entries focus on defence-industrial base suppliers providing precision components for guided munitions systems. All listed entities require a licence for any export, reexport or in-country transfer of items subject to the EAR, with a presumption of denial policy applied to the most sensitive end-uses.",
+    ],
+    source:"BIS / Federal Register", sourceUrl:"https://www.federalregister.gov/agencies/industry-and-security-bureau" },
+
+  { id:9405, section:"bis", category:"Enforcement", region:"United States / China", impact:"high",
+    date: "2026-05-20",
+    headline:"BIS Enforcement — $45M Penalty Against Electronics Distributor for Diverting Controlled Chips to China via Singapore Intermediary",
+    body:[
+      "BIS Office of Export Enforcement concluded a $45 million settlement with a U.S. electronics distributor for 138 violations of the Export Administration Regulations involving diversion of controlled semiconductors and networking equipment to restricted Chinese end-users through a Singapore-based intermediary. The investigation, codenamed Operation Semiconductor Shield, identified a layered diversion scheme in which the distributor received purchase orders referencing legitimate civilian end-users while the goods were systematically rerouted to Chinese state-linked entities on the Entity List.",
+      "The settlement requires implementation of a comprehensive export compliance programme including automated screening of all orders against the Consolidated Screening List, mandatory end-user verification for shipments to 26 identified high-risk jurisdictions, and a two-year external audit. BIS noted this is the third major enforcement action in 2026 targeting semiconductor diversion through Southeast Asian transit hubs, following the Applied Materials $252.5M penalty and an earlier action against a Hong Kong freight forwarder.",
+    ],
+    source:"BIS", sourceUrl:"https://www.bis.gov" },
+
+  { id:9406, section:"bis", category:"Policy", region:"United States / China", impact:"high",
+    date: "2026-05-10",
+    headline:"BIS Tightens AI Chip Controls — H20 and A800 Export Restrictions Extended, Huawei Ascend Chips Designated as EAR Items",
+    body:[
+      "BIS issued an interim final rule in May 2026 extending export licensing requirements to Nvidia H20 and AMD MI300X chips following intelligence assessments that restricted Chinese entities have acquired these products at scale. The rule designates the chips under ECCN 3A090 and applies a presumption of denial for exports to China, Macau, and entities on the Entity List regardless of claimed end-use.",
+      "Separately, BIS issued a determination that Huawei Ascend 910B and 910C AI chips constitute items subject to the EAR when manufactured using U.S.-origin equipment, tooling, or design software. The determination means any foreign company producing Ascend chips with U.S. technology inputs requires a BIS licence for export to third countries — a significant expansion of EAR jurisdictional reach. Industry groups have filed comments arguing the measures will accelerate Chinese domestic chip self-sufficiency.",
+    ],
+    source:"BIS", sourceUrl:"https://www.bis.gov" },
+
+  { id:9407, section:"bis", category:"Wassenaar / Global", region:"Global", impact:"medium",
+    date: "2026-04-28",
+    headline:"UK Strategic Export Controls — Post-Brexit Alignment with Wassenaar Maintained; New Cyber-Surveillance Controls Aligned with EU",
+    body:[
+      "The UK Department for Business and Trade published updated Strategic Export Controls guidance confirming post-Brexit alignment with Wassenaar Arrangement control lists for dual-use goods. The UK's Export Control Joint Unit (ECJU) confirmed adoption of Wassenaar 2025 list amendments covering quantum computing components, advanced manufacturing equipment, and enhanced surveillance software capable of mass monitoring of encrypted communications.",
+      "The UK is maintaining parallel controls to the EU's Dual-Use Regulation (2021/821) for cyber-surveillance tools following a 2025 alignment agreement. UK exporters of intrusion software, network intelligence tools, and biometric systems must now obtain licences under the same criteria as EU exporters, reducing regulatory arbitrage for companies previously routing controlled exports through UK entities post-Brexit.",
+    ],
+    source:"UK ECJU / BIS", sourceUrl:"https://www.gov.uk/guidance/export-controls-dual-use-items-software-and-technology-uk-military-list" },
+
+  { id:9408, section:"bis", category:"Entity List", region:"Russia / Global", impact:"high",
+    date: "2026-04-15",
+    headline:"BIS Russia-Ukraine Entity List Additions — 80 Entities Supporting Defence Industrial Base Targeted in Spring 2026 Action",
+    body:[
+      "BIS published a Federal Register notice in April 2026 adding 80 entities across Russia, Belarus, the UAE, Turkey, and Kazakhstan to the Entity List for supporting Russia's defence industrial base and circumventing export controls. Russian targets include machine tool manufacturers producing precision components for T-90 tank production lines and aviation MRO companies performing maintenance on military aircraft using smuggled U.S.-origin parts.",
+      "Third-country entities in UAE and Turkey were added for acting as transshipment hubs for controlled U.S.-origin goods destined for Russian defence customers. BIS noted that 73 percent of electronic components recovered from Russian weapons systems captured in Ukraine in 2025 were U.S.-origin items, predominantly sourced through third-country diversion routes. The action was coordinated with OFAC designations targeting the same networks.",
+    ],
+    source:"BIS / Federal Register", sourceUrl:"https://www.federalregister.gov/agencies/industry-and-security-bureau" },
+
   // ── FINCEN ──────────────────────────────────────────────────────────────────
 
   { id:9050, section:"penalties", category:"FinCEN", region:"United States", impact:"high",
