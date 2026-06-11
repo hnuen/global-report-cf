@@ -234,16 +234,22 @@ export class LLMManager {
    * Skip any that have hit their daily limit.
    * Falls back to the next if one throws.
    */
-  async fetch(topic?: string): Promise<{ briefing: Briefing; usedProvider: string }> {
+  async fetch(topic?: string, prebuiltContext?: string): Promise<{ briefing: Briefing; usedProvider: string }> {
     const tracker = getTracker();
     const errors: string[] = [];
 
-    // Pre-fetch official government sources before calling LLM
-    console.log("[llm] Pre-fetching official government sources...");
-    const officialSources = await fetchOfficialSources();
-    const officialContext = formatSourcesForPrompt(officialSources);
-    const successCount = officialSources.filter(s => s.content.length > 100).length;
-    console.log(`[llm] Fetched ${successCount}/${officialSources.length} official sources`);
+    // Use pre-fetched context if provided (avoids double-fetching when orchestrator already ran fetchOfficialSources)
+    let officialContext: string;
+    if (prebuiltContext) {
+      officialContext = prebuiltContext;
+      console.log("[llm] Using pre-fetched official sources context from orchestrator");
+    } else {
+      console.log("[llm] Pre-fetching official government sources...");
+      const officialSources = await fetchOfficialSources();
+      officialContext = formatSourcesForPrompt(officialSources);
+      const successCount = officialSources.filter(s => s.content.length > 100).length;
+      console.log(`[llm] Fetched ${successCount}/${officialSources.length} official sources`);
+    }
 
     for (const p of this.providers) {
       const usageKey = `${p.id}:llm`;

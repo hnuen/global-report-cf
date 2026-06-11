@@ -35,33 +35,26 @@ export async function refreshBriefing(topic?: string): Promise<{
   let briefing: Briefing;
   let usedProvider: string;
 
-  // Skip LLM during auto-refresh to avoid timeouts — use structured source builder
-  // LLM is only used when explicitly requested via topic parameter from manual trigger
-  if (false && topic) {
-    try {
-      const llm = buildLLMManager();
-      const result = await llm.fetch(topic);
-      briefing = result.briefing;
-      usedProvider = result.usedProvider;
-    } catch (llmError) {
-      console.log("[orchestrator] LLM failed — using structured sources");
-      const structuredBriefing = buildBriefingFromSources(officialSources);
-      briefing = structuredBriefing.articles.length >= 5 ? structuredBriefing : buildAnalyzedBriefing(officialSources);
-      usedProvider = "Official Sources (LLM fallback)";
-    }
-  } else {
-    // Fast path — structured builder from official sources, no LLM calls
-    if (successCount === 0) {
-      throw new Error("No official sources fetched successfully");
-    }
+  if (successCount === 0) {
+    throw new Error("No official sources fetched successfully");
+  }
+
+  // Pre-format context once so it can be passed to LLM without double-fetching
+  const officialContext = formatSourcesForPrompt(officialSources);
+
+  // Always try LLM for rich editorial bodies.
+  // GitHub Actions handles the execution timeout, so there is no wall-clock concern.
+  // Pre-built context is passed so the LLM manager does NOT re-fetch all sources.
+  try {
+    const llm = buildLLMManager();
+    const result = await llm.fetch(topic, officialContext);
+    briefing = result.briefing;
+    usedProvider = result.usedProvider;
+  } catch (llmError) {
+    console.log("[orchestrator] LLM failed — falling back to structured sources:", String(llmError).slice(0, 120));
     const structuredBriefing = buildBriefingFromSources(officialSources);
-    if (structuredBriefing.articles.length >= 5) {
-      briefing = structuredBriefing;
-      usedProvider = "Official Sources";
-    } else {
-      briefing = buildAnalyzedBriefing(officialSources);
-      usedProvider = "Local Analysis";
-    }
+    briefing = structuredBriefing.articles.length >= 5 ? structuredBriefing : buildAnalyzedBriefing(officialSources);
+    usedProvider = "Official Sources (LLM fallback)";
   }
 
   // Fill any section with < 8 articles using historical records
