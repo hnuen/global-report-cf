@@ -3,6 +3,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { refreshBriefing } from "@/src/lib/orchestrator";
 import { maybeSyncPenalties } from "@/src/lib/penalties-fetcher";
 import { PENALTIES } from "@/src/lib/penalties-data";
+import { maybeSyncFinCEN } from "@/src/lib/fincen-fetcher";
+import { FINCEN_PENALTIES } from "@/src/lib/fincen-penalties";
 
 export const maxDuration = 120;
 
@@ -16,7 +18,4 @@ export async function GET(request: NextRequest) {
   }
   try {
     const { briefing, usedProvider, savedTo } = await refreshBriefing();
-    console.log(`[cron] Done — ${briefing.articles.length} articles via ${usedProvider}, saved to: ${savedTo.join(", ")}`);
-
-    // Sync new OFAC penalties (at most once per 24 h — skips if recently run)
-    const penaltySync = 
+    console.log(`[cron] Done — ${briefing.articles.length} articles via ${usedProvider}, saved to: ${savedT
