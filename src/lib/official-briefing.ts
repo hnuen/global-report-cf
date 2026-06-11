@@ -465,9 +465,15 @@ export function buildAllFromSource(source: OfficialSource): Article[] {
   return parsedBullets.map(bullet => {
     const headline = bullet.text.slice(0, 200);
     const articleDate = toISODate(bullet.pubDate || extractDateFromContent(bullet.url + " " + bullet.text + " " + source.content.slice(0, 300)) || today);
-    const directUrl = bullet.url && bullet.url.startsWith("http") && !bullet.url.includes("/feeds/") && !bullet.url.endsWith(".xml") && !bullet.url.includes("news.google.com")
-      ? bullet.url
-      : extractDirectUrl(bullet.url, source.url, bullet.url + " " + bullet.text);
+    // Convert Google News RSS redirect URL to the web version (removes /rss/ prefix,
+    // still redirects to the real article but shows a cleaner URL in the UI)
+    const rawBulletUrl = (bullet.url || "").replace(
+      /^https:\/\/news\.google\.com\/rss\/articles\//,
+      "https://news.google.com/articles/"
+    );
+    const directUrl = rawBulletUrl && rawBulletUrl.startsWith("http") && !rawBulletUrl.includes("/feeds/") && !rawBulletUrl.endsWith(".xml")
+      ? rawBulletUrl
+      : extractDirectUrl(rawBulletUrl, source.url, rawBulletUrl + " " + bullet.text);
 
     let brief = bullet.brief;
     if (!brief || brief.length < 10) {
@@ -681,7 +687,7 @@ function buildArticlesFromSource(source: OfficialSource): Article[] {
   // Dynamic OFAC date sources (e.g. "OFAC Actions May 25")
   const isOFACDate = source.name.startsWith("OFAC Actions ");
   // Dynamic Treasury press release sources (e.g. "Treasury Press Release SB0505")
-  const isTreasuryPR = source.name.startsWith("Treasury Press Release ") || source.name === "U.S. Treasury — News";
+  const isTreasuryPR = source.name.startsWith("Treasury Press Release ") || source.name === "U.S. Treasury — News" || source.name.includes("HM Treasury") || source.name.includes("UK HM");
 
   // Per-article sanctions filter for Treasury sources.
   // Checking full page content doesn't work: Treasury pages include navigation
@@ -695,6 +701,8 @@ function buildArticlesFromSource(source: OfficialSource): Article[] {
     "terror","cartel","narco","fentanyl","money laundering","iran","russia",
     "north korea","dprk","cuba","venezuela","hizballah","hezbollah","hamas",
     "isis","isil","al-qaeda","wagner","sinaloa","export control","bis",
+    "ofsi","financial sanctions","asset freeze","travel ban","restrictive measures",
+    "uk sanctions","designated person","frozen assets",
   ] : [];
   const NON_SANCTIONS_KEYWORDS_TR = isTreasuryPR ? [
     "tax credit","tax relief","tax guidance","education savings","k-12","529 plan",
@@ -704,6 +712,11 @@ function buildArticlesFromSource(source: OfficialSource): Article[] {
     "savings bond","i bond","tips","floating rate","currency swap",
     "financial literacy","freedom250","student loan","housing finance",
     "crypto framework","digital asset framework",
+    "access to banking","banking services","mortgage guarantee","infrastructure levy",
+    "growth initiative","cost of living","autumn statement","spring statement",
+    "public spending","fiscal rules","borrowing forecast","debt sustainability",
+    "gilts","gilt market","national insurance","income tax","corporation tax",
+    "pension credit","benefit cap","universal credit","child benefit",
   ] : [];
 
   const section = SOURCE_SECTION_MAP[source.name] ?? "sanctions";

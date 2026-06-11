@@ -178,6 +178,32 @@ export async function refreshBriefing(topic?: string): Promise<{
     return (b.date || "").localeCompare(a.date || "");
   });
 
+  // ── Apply enriched briefs from previous runs (library → live articles) ───────
+  // Must happen BEFORE storage.save so the Redis copy has real briefs, not generics.
+  if (libraryArticles.length > 0) {
+    const libraryBriefMap = new Map<string, string>();
+    for (const la of libraryArticles) {
+      const key = la.headline.slice(0, 80).toLowerCase().replace(/\s+/g, " ").trim();
+      if ((la.body[0] || "").length > 50) libraryBriefMap.set(key, la.body[0]);
+    }
+    let appliedCount = 0;
+    briefing.articles = briefing.articles.map(a => {
+      const key = a.headline.slice(0, 80).toLowerCase().replace(/\s+/g, " ").trim();
+      const lib = libraryBriefMap.get(key);
+      if (!lib) return a;
+      const cur = (a.body[0] || "").toLowerCase();
+      const isGeneric = cur.length < 60 || [
+        "official action","see source link","targeting iran","targeting russia",
+        "treasury action","treasury department","new designations","general license issued",
+        "regulatory guidance","dprk-related","counter-terrorism",
+      ].some(g => cur.includes(g));
+      if (!isGeneric) return a; // already has a real brief — keep it
+      appliedCount++;
+      return { ...a, body: [lib, ...a.body.slice(1)] };
+    });
+    if (appliedCount > 0) console.log(\`[orchestrator] Applied \${appliedCount} enriched briefs from library\`);
+  }
+
   // ── Save the core briefing FIRST ───────────────────────────────────────────
   // Cloudflare Workers caps subrequests per invocation. Brief enrichment below
   // does per-article Redis cache lookups + article fetches + Gemini calls,
