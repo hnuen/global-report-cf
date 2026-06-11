@@ -66,7 +66,19 @@ async function generateBriefWithGemini(headline: string, content: string): Promi
   const apiKey = process.env.GEMINI_API_KEY || process.env.GEMINI_API_KEY_2;
   if (!apiKey) return null;
 
-  const prompt = `You are a sanctions and financial news analyst. Read this official government notice and write exactly 2 paragraphs separated by a blank line:
+  const headlineOnly = content.startsWith("[headline-only]");
+  const prompt = headlineOnly
+    ? `You are a sanctions and financial news analyst. Based on this government press release headline, write exactly 2 sentences:
+
+Sentence 1 (max 40 words): What specific action was taken — who was targeted, what sanctions program, what behavior.
+Sentence 2 (max 40 words): Why it matters — the broader geopolitical or compliance significance.
+
+Be factual and direct. Use plain text only. Infer from your knowledge of this topic.
+
+Headline: ${headline}
+
+Response:`
+    : `You are a sanctions and financial news analyst. Read this official government notice and write exactly 2 paragraphs separated by a blank line:
 
 Paragraph 1 (1-2 sentences, max 50 words): The specific action taken — who was designated/penalized, what program, what amount or how many entities.
 Paragraph 2 (1-2 sentences, max 50 words): Why it matters — the broader context, which sanctions program, what behavior it targets, or what it signals.
@@ -140,12 +152,16 @@ export async function getBriefForArticle(
     if (cached) return cached as string;
   } catch { /* Redis unavailable — continue */ }
 
-  // Fetch article content
+  // Fetch article content — for client-rendered gov pages this may return null/short
   const content = await fetchArticleText(url);
-  if (!content || content.length < 100) return existingBrief || "";
+  // If we can't get real content, fall back to headline-only mode for descriptive
+  // government headlines (Treasury, OFAC, FinCEN etc.) which carry enough signal.
+  const inputContent = (content && content.length >= 100)
+    ? content
+    : "[headline-only] government press release";
 
   // Generate brief with Gemini
-  const brief = await generateBriefWithGemini(headline, content);
+  const brief = await generateBriefWithGemini(headline, inputContent);
   if (!brief) return existingBrief || "";
 
   // Cache the brief in Redis
