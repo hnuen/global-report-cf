@@ -4,25 +4,10 @@
  * and caches it in Redis to avoid redundant work on subsequent refreshes.
  */
 
-import { buildStorageManager } from "./storage-manager";
+import { getCachedBrief, setCachedBrief } from "./article-library";
 
-const BRIEF_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days — briefs don't expire quickly
-const BRIEF_PREFIX = "brief:v1:";
 const FETCH_TIMEOUT_MS = 6000;
 const MAX_CONTENT_CHARS = 3000;
-
-// Hash a URL to a short stable key
-function hashUrl(url: string): string {
-  let h = 0;
-  for (let i = 0; i < url.length; i++) {
-    h = ((h << 5) - h + url.charCodeAt(i)) | 0;
-  }
-  return Math.abs(h).toString(36);
-}
-
-function redisKey(url: string): string {
-  return BRIEF_PREFIX + hashUrl(url);
-}
 
 // Fetch and extract readable text from a URL
 async function fetchArticleText(url: string): Promise<string | null> {
@@ -145,12 +130,8 @@ export async function getBriefForArticle(
   if (skipPatterns.some(p => p.test(url))) return existingBrief || "";
 
   // Check Redis cache first
-  try {
-    const storage = await buildStorageManager();
-    const cacheKey = redisKey(url);
-    const cached = await storage.get(cacheKey);
-    if (cached) return cached as string;
-  } catch { /* Redis unavailable — continue */ }
+  const cached = await getCachedBrief(url);
+  if (cached) return cached;
 
   // Fetch article content — for client-rendered gov pages this may return null/short
   const content = await fetchArticleText(url);
@@ -165,11 +146,7 @@ export async function getBriefForArticle(
   if (!brief) return existingBrief || "";
 
   // Cache the brief in Redis
-  try {
-    const storage = await buildStorageManager();
-    const cacheKey = redisKey(url);
-    await storage.set(cacheKey, brief, BRIEF_TTL_SECONDS);
-  } catch { /* Cache write failed — non-fatal */ }
+  await setCachedBrief(url, brief);
 
   return brief;
 }
@@ -212,14 +189,8 @@ export async function enrichArticlesWithBriefs(
 
     // Check Redis cache first for all in this batch — avoids unnecessary Gemini calls
     const batchWithCache = await Promise.all(batch.map(async (a) => {
-      try {
-        const storage = await buildStorageManager();
-        const cached = await storage.get(redisKey(a.sourceUrl));
-        if (cached) {
-          cacheHitCount++;
-          return { a, cached: cached as string };
-        }
-      } catch { /* Redis unavailable */ }
+      const cached = await getCachedBrief(a.sourceUrl);
+      if (cached) { cacheHitCount++; return { a, cached }; }
       return { a, cached: null };
     }));
 
@@ -251,3 +222,4 @@ export async function enrichArticlesWithBriefs(
   console.log(`[brief-generator] Done — ${newBriefCount} new briefs generated, ${cacheHitCount} from cache`);
   return results;
 }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          

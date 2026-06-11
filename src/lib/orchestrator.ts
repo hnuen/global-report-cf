@@ -7,6 +7,7 @@ import { buildAnalyzedBriefing } from "./local-analyzer";
 import { getHistoricalForSection, getRecentBySource } from "./historical-articles";
 import type { Briefing, Section } from "./types";
 import { enrichArticlesWithBriefs } from "./brief-generator";
+import { loadArticleLibrary, saveArticlesToLibrary } from "./article-library";
 
 // No module-level singletons — always read env vars fresh on each invocation
 export async function loadBriefing(): Promise<Briefing | null> {
@@ -20,6 +21,10 @@ export async function refreshBriefing(topic?: string): Promise<{
   savedTo: string[];
 }> {
   const storage = await buildStorageManager();
+
+  // Load persisted article library (Redis-backed — built up across refresh runs)
+  const libraryArticles = await loadArticleLibrary();
+  console.log(`[orchestrator] Loaded ${libraryArticles.length} articles from library`);
 
   // Always fetch official sources first — fast and free
   console.log("[orchestrator] Fetching official government sources...");
@@ -68,6 +73,33 @@ export async function refreshBriefing(topic?: string): Promise<{
       if (historical.length > 0) {
         briefing.articles = [...briefing.articles, ...historical];
         console.log(`[orchestrator] Added ${historical.length} historical articles to ${sec} (was ${currentCount})`);
+      }
+    }
+  }
+
+  // ── Library backfill — persisted Gemini-enriched articles ─────────────────
+  // Use library articles to supplement sections that still have < 8 articles,
+  // preferring library over static HISTORICAL since library briefs are Gemini-quality.
+  if (libraryArticles.length > 0) {
+    const liveHeadlines = new Set(
+      briefing.articles.map(a => a.headline.slice(0, 80).toLowerCase().replace(/\s+/g, " ").trim())
+    );
+    const libraryBySection = new Map<string, typeof libraryArticles>();
+    for (const a of libraryArticles) {
+      const key = a.headline.slice(0, 80).toLowerCase().replace(/\s+/g, " ").trim();
+      if (liveHeadlines.has(key)) continue; // already in live briefing
+      const list = libraryBySection.get(a.section) ?? [];
+      list.push(a);
+      libraryBySection.set(a.section, list);
+    }
+    for (const sec of SECTIONS) {
+      const currentCount = briefing.articles.filter(a => a.section === sec).length;
+      if (currentCount < 8) {
+        const candidates = (libraryBySection.get(sec) ?? []).slice(0, 8 - currentCount);
+        if (candidates.length > 0) {
+          briefing.articles = [...briefing.articles, ...candidates];
+          console.log(`[orchestrator] Added ${candidates.length} library articles to ${sec}`);
+        }
       }
     }
   }
@@ -182,45 +214,12 @@ export async function refreshBriefing(topic?: string): Promise<{
         });
         console.log(`[orchestrator] Enriched ${enriched.size} article briefs`);
 
-        // Skip second Redis save — core briefing already persisted above.
-        // Enrichment runs after the subrequest budget is partially consumed;
-        // re-saving would fail and incorrectly mark Upstash as unhealthy.
-        console.log("[orchestrator] Enriched briefs applied (skipping re-save to preserve Upstash health)");
-      }
-    } catch (e) {
-      console.log("[orchestrator] Brief enrichment failed (non-fatal):", String(e).slice(0, 100));
-    }
-  }
+        // Save enriched articles to the persistent library for future refreshes
+        const enrichedArticles = briefing.articles.filter(a =>
+          a.sourceUrl && enriched.has(a.sourceUrl)
+        );
+        saveArticlesToLibrary(enrichedArticles).catch(e =>
+          console.log("[orchestrator] Library save failed (non-fatal):", String(e).slice(0, 80))
+        );
 
-  // Build savedTo from pre-save result so enrichment save failures don't
-  // incorrectly report Upstash as missing even when the core briefing was saved.
-  const health = storage.getHealth();
-  const savedTo = [
-    ...(preSaveSuccess ? ["upstash"] : []),
-    "memory",
-  ];
-  const storageErrors = health.filter(h => !h.healthy).map(h => ({ id: h.id, error: h.lastError }));
-
-  return { briefing, usedProvider, savedTo, storageErrors };
-}
-
-export async function getSystemHealth() {
-  const storage = await buildStorageManager();
-  const tracker = getTracker();
-
-  return {
-    storage: storage.getHealth(),
-    llm: {
-      primary:   { id: "anthropic-primary",   calls: tracker.get("anthropic-primary:llm"),   limit: Number(process.env.ANTHROPIC_PRIMARY_DAILY_LIMIT   ?? 0) },
-      secondary: { id: "anthropic-secondary", calls: tracker.get("anthropic-secondary:llm"), limit: Number(process.env.ANTHROPIC_SECONDARY_DAILY_LIMIT ?? 0) },
-      tertiary:  { id: "anthropic-tertiary",  calls: tracker.get("anthropic-tertiary:llm"),  limit: Number(process.env.ANTHROPIC_TERTIARY_DAILY_LIMIT  ?? 0) },
-      gemini:    { id: "gemini",              calls: tracker.get("gemini:llm"),              limit: Number(process.env.GEMINI_DAILY_LIMIT ?? 1500) },
-    },
-    hasAnthropicKey: !!process.env.ANTHROPIC_API_KEY,
-    hasGeminiKey:    !!process.env.GEMINI_API_KEY,
-    hasUpstash:      !!process.env.UPSTASH_REDIS_REST_URL,
-    hasTelegram:     !!process.env.TELEGRAM_BOT_TOKEN,
-    timestamp: new Date().toISOString(),
-  };
-}
-                             
+        // Skip seco
