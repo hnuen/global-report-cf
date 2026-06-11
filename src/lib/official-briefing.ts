@@ -681,7 +681,7 @@ function buildArticlesFromSource(source: OfficialSource): Article[] {
   // Dynamic OFAC date sources (e.g. "OFAC Actions May 25")
   const isOFACDate = source.name.startsWith("OFAC Actions ");
   // Dynamic Treasury press release sources (e.g. "Treasury Press Release SB0505")
-  const isTreasuryPR = source.name.startsWith("Treasury Press Release ");
+  const isTreasuryPR = source.name.startsWith("Treasury Press Release ") || source.name === "U.S. Treasury — News";
 
   // Filter Treasury PRs — only keep sanctions-related content
   // Skip bond auctions, borrowing estimates, refunding statements, TIC data etc.
@@ -833,7 +833,14 @@ function buildArticlesFromSource(source: OfficialSource): Article[] {
       else if (hl.includes("advisory") || hl.includes("alert") || hl.includes("guidance")) context = "Regulatory guidance or advisory notice published.";
       else if (hl.includes("removal") || hl.includes("delisting")) context = "Sanctions removal or delisting action.";
       else if (hl.includes("export") || hl.includes("entity list") || hl.includes("bis")) context = "Export control measures or Entity List update.";
-      else context = "Official action — see source link for full details.";
+      else if (hl.includes("iran") || hl.includes("irgc")) context = "U.S. Treasury action targeting Iran-linked networks or actors.";
+      else if (hl.includes("russia") || hl.includes("ukraine")) context = "U.S. Treasury action targeting Russia/Ukraine-related actors.";
+      else if (hl.includes("china") || hl.includes("hong kong") || hl.includes("prc")) context = "Treasury action related to China or Hong Kong.";
+      else if (hl.includes("north korea") || hl.includes("dprk")) context = "DPRK-related Treasury enforcement action.";
+      else if (hl.includes("cuba") || hl.includes("venezuela") || hl.includes("maduro")) context = "Treasury action targeting Cuba or Venezuela.";
+      else if (hl.includes("disrupt") || hl.includes("network") || hl.includes("target") || hl.includes("counter")) context = "Treasury Department sanctions or enforcement action.";
+      else if (hl.includes("terror") || hl.includes("cartel") || hl.includes("narco") || hl.includes("fentanyl")) context = "Counter-terrorism or counter-narcotics enforcement action.";
+      else context = `Official action published by ${displaySource}. See source link for full details.`;
       body = [context];
     }
 

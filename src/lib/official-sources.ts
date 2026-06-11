@@ -122,8 +122,37 @@ function stripHTML(html: string): string {
     .replace(/<footer[^>]*>[\s\S]*?<\/footer>/gi, "")
     .replace(/<!--[\s\S]*?-->/g, "");
 
-  // Extract headings (h1-h4) and anchor text as headlines
+  // Extract links FIRST so deduplication keeps the version with the href.
+  // (Headings and links often share the same text; without this ordering the
+  //  bare-heading version wins and the specific article URL is lost.)
   const headlines: string[] = [];
+
+  // Extract link text from news-like anchors — show TEXT not URL
+  const linkMatches0 = clean.matchAll(/<a[^>]*href="([^"]*)"[^>]*>([\s\S]*?)<\/a>/gi);
+  for (const m of linkMatches0) {
+    const href = m[1];
+    const text = m[2].replace(/<[^>]+>/g,"").replace(/&amp;/g,"&").replace(/&nbsp;/g," ").trim();
+    const isNav0 = text.toLowerCase().match(
+      /^(click|read|here|more|view|see|go|back|next|prev|skip|menu|home|search|contact|about|login|sign|additional|sanctions programs|civil penalties and enforcement information$|counter terrorism designations$|international criminal|consolidated sanctions|non-sdn|sdn list|frequently asked|download|subscribe|follow us)/
+    );
+    const isNewsLink0 = href.includes("press") || href.includes("news") ||
+      href.includes("release") || href.includes("action") ||
+      href.includes("enforcement") || href.includes("2026") ||
+      href.includes("2025") || href.includes("penalty") ||
+      href.includes("sanction") || href.includes("notice") ||
+      href.includes("designation") || href.includes("license");
+    if (text.length > 30 && text.length < 250 && !isNav0 && isNewsLink0) {
+      const ctxStart0 = Math.max(0, (m.index ?? 0) - 100);
+      const ctxEnd0   = Math.min(clean.length, (m.index ?? 0) + m[0].length + 400);
+      const ctx0 = clean.slice(ctxStart0, ctxEnd0).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
+      const fullDate0   = ctx0.match(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s+20\d{2}\b/);
+      const monthYear0  = !fullDate0 && ctx0.match(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+20\d{2}\b/);
+      const dateAppend0 = fullDate0?.[0] || monthYear0?.[0] || "";
+      headlines.push(`• ${text} ||| ${href}${dateAppend0 ? " ||| DATE:" + dateAppend0 : ""}`);
+    }
+  }
+
+  // Extract headings (h1-h4) — added after links so dedup keeps the link version
   const headingMatches = clean.matchAll(/<h[1-4][^>]*>([\s\S]*?)<\/h[1-4]>/gi);
   for (const m of headingMatches) {
     const text = m[1].replace(/<[^>]+>/g,"").replace(/&amp;/g,"&").replace(/&nbsp;/g," ").replace(/&#([0-9]+);/g, (_,n) => String.fromCharCode(Number(n))).trim();
@@ -161,38 +190,6 @@ function stripHTML(html: string): string {
     }
   }
 
-  // Extract link text from news-like anchors — show TEXT not URL
-  const linkMatches = clean.matchAll(/<a[^>]*href="([^"]*)"[^>]*>([\s\S]*?)<\/a>/gi);
-  for (const m of linkMatches) {
-    const href = m[1];
-    const text = m[2].replace(/<[^>]+>/g,"").replace(/&amp;/g,"&").replace(/&nbsp;/g," ").trim();
-    // Filter out navigation, boilerplate, and generic items
-    const isNav = text.toLowerCase().match(
-      /^(click|read|here|more|view|see|go|back|next|prev|skip|menu|home|search|contact|about|login|sign|additional|sanctions programs|civil penalties and enforcement information$|counter terrorism designations$|international criminal|consolidated sanctions|non-sdn|sdn list|frequently asked|download|subscribe|follow us)/
-    );
-    const isNewsLink = href.includes("press") || href.includes("news") ||
-      href.includes("release") || href.includes("action") ||
-      href.includes("enforcement") || href.includes("2026") ||
-      href.includes("2025") || href.includes("penalty") ||
-      href.includes("sanction") || href.includes("notice") ||
-      href.includes("designation") || href.includes("license");
-
-    if (text.length > 30 && text.length < 250 && !isNav && isNewsLink) {
-      // Look for a date in the surrounding HTML context (100 chars before + 400 after)
-      // so HTML listing pages (FinCEN, OCC, UK Gov, etc.) get the correct per-item date
-      // instead of defaulting to today. Strip tags from context before matching.
-      const ctxStart = Math.max(0, (m.index ?? 0) - 100);
-      const ctxEnd   = Math.min(clean.length, (m.index ?? 0) + m[0].length + 400);
-      const ctx = clean.slice(ctxStart, ctxEnd).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
-      const fullDate   = ctx.match(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s+20\d{2}\b/);
-      const monthYear  = !fullDate && ctx.match(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+20\d{2}\b/);
-      const dateAppend = fullDate?.[0] || monthYear?.[0] || "";
-      // Include the href so downstream can build a direct article link.
-      // Relative hrefs (starting with /) are left as-is; extractDirectUrl in
-      // official-briefing.ts will resolve them against the source base URL.
-      headlines.push(`• ${text} ||| ${href}${dateAppend ? " ||| DATE:" + dateAppend : ""}`);
-    }
-  }
 
   // Deduplicate
   const seen = new Set<string>();
