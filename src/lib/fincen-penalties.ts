@@ -403,7 +403,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     agencies:["FinCEN","OTS"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement AML program",
     program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
-  }
+  },
 
   // ── 2020 ──────────────────────────────────────────────────────────────────
   // ── 2017 ──────────────────────────────────────────────────────────────────
