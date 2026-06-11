@@ -222,4 +222,44 @@ export async function refreshBriefing(topic?: string): Promise<{
           console.log("[orchestrator] Library save failed (non-fatal):", String(e).slice(0, 80))
         );
 
-        // Skip seco
+        // Skip second Redis save — core briefing already persisted above.
+        // Enrichment runs after the subrequest budget is partially consumed;
+        // re-saving would fail and incorrectly mark Upstash as unhealthy.
+        console.log("[orchestrator] Enriched briefs applied (skipping re-save to preserve Upstash health)");
+      }
+    } catch (e) {
+      console.log("[orchestrator] Brief enrichment failed (non-fatal):", String(e).slice(0, 100));
+    }
+  }
+
+  // Build savedTo from pre-save result so enrichment save failures don't
+  // incorrectly report Upstash as missing even when the core briefing was saved.
+  const health = storage.getHealth();
+  const savedTo = [
+    ...(preSaveSuccess ? ["upstash"] : []),
+    "memory",
+  ];
+  const storageErrors = health.filter(h => !h.healthy).map(h => ({ id: h.id, error: h.lastError }));
+
+  return { briefing, usedProvider, savedTo, storageErrors };
+}
+
+export async function getSystemHealth() {
+  const storage = await buildStorageManager();
+  const tracker = getTracker();
+
+  return {
+    storage: storage.getHealth(),
+    llm: {
+      primary:   { id: "anthropic-primary",   calls: tracker.get("anthropic-primary:llm"),   limit: Number(process.env.ANTHROPIC_PRIMARY_DAILY_LIMIT   ?? 0) },
+      secondary: { id: "anthropic-secondary", calls: tracker.get("anthropic-secondary:llm"), limit: Number(process.env.ANTHROPIC_SECONDARY_DAILY_LIMIT ?? 0) },
+      tertiary:  { id: "anthropic-tertiary",  calls: tracker.get("anthropic-tertiary:llm"),  limit: Number(process.env.ANTHROPIC_TERTIARY_DAILY_LIMIT  ?? 0) },
+      gemini:    { id: "gemini",              calls: tracker.get("gemini:llm"),              limit: Number(process.env.GEMINI_DAILY_LIMIT ?? 1500) },
+    },
+    hasAnthropicKey: !!process.env.ANTHROPIC_API_KEY,
+    hasGeminiKey:    !!process.env.GEMINI_API_KEY,
+    hasUpstash:      !!process.env.UPSTASH_REDIS_REST_URL,
+    hasTelegram:     !!process.env.TELEGRAM_BOT_TOKEN,
+    timestamp: new Date().toISOString(),
+  };
+}
