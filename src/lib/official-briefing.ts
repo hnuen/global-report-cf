@@ -683,30 +683,28 @@ function buildArticlesFromSource(source: OfficialSource): Article[] {
   // Dynamic Treasury press release sources (e.g. "Treasury Press Release SB0505")
   const isTreasuryPR = source.name.startsWith("Treasury Press Release ") || source.name === "U.S. Treasury — News";
 
-  // Filter Treasury PRs — only keep sanctions-related content
-  // Skip bond auctions, borrowing estimates, refunding statements, TIC data etc.
-  if (isTreasuryPR) {
-    const c = source.content.toLowerCase();
-    const SANCTIONS_KEYWORDS = [
-      "sanction","designat","ofac","blocked person","sdn","specially designated",
-      "general license","enforcement","penalties","arms","weapons","proliferat",
-      "terror","cartel","narco","fentanyl","money laundering","iran","russia",
-      "north korea","dprk","cuba","venezuela","hizballah","hezbollah","hamas",
-      "isis","isil","al-qaeda","wagner","sinaloa","export control","bis",
-    ];
-    const NON_SANCTIONS_KEYWORDS = [
-      "treasury note","treasury bond","auction","refunding","marketable borrowing",
-      "quarterly refunding","tbac","treasury borrowing advisory","tic data",
-      "interest rate","yield curve","debt management","bill auction","coupon",
-      "savings bond","i bond","tips","floating rate","currency swap",
-      "financial literacy","freedom250",
-    ];
-    const hasSanctions = SANCTIONS_KEYWORDS.some(k => c.includes(k));
-    const hasNonSanctions = NON_SANCTIONS_KEYWORDS.some(k => c.includes(k));
-    // Skip if clearly non-sanctions OR if has no sanctions keywords at all
-    if (hasNonSanctions && !hasSanctions) return [];
-    if (!hasSanctions) return [];
-  }
+  // Per-article sanctions filter for Treasury sources.
+  // Checking full page content doesn't work: Treasury pages include navigation
+  // boilerplate like "Sanctions Programs", "OFAC" in every page, so even a
+  // Tax Credit guidance page would pass a content-level hasSanctions check.
+  // Instead we filter each article's HEADLINE individually (applied in the
+  // return map below). Define keywords here so they're in scope.
+  const SANCTIONS_KEYWORDS = isTreasuryPR ? [
+    "sanction","designat","ofac","blocked person","sdn","specially designated",
+    "general license","enforcement","penalties","arms","weapons","proliferat",
+    "terror","cartel","narco","fentanyl","money laundering","iran","russia",
+    "north korea","dprk","cuba","venezuela","hizballah","hezbollah","hamas",
+    "isis","isil","al-qaeda","wagner","sinaloa","export control","bis",
+  ] : [];
+  const NON_SANCTIONS_KEYWORDS_TR = isTreasuryPR ? [
+    "tax credit","tax relief","tax guidance","education savings","k-12","529 plan",
+    "treasury note","treasury bond","auction","refunding","marketable borrowing",
+    "quarterly refunding","tbac","treasury borrowing advisory","tic data",
+    "interest rate","yield curve","debt management","bill auction","coupon",
+    "savings bond","i bond","tips","floating rate","currency swap",
+    "financial literacy","freedom250","student loan","housing finance",
+    "crypto framework","digital asset framework",
+  ] : [];
 
   const section = SOURCE_SECTION_MAP[source.name] ?? "sanctions";
   const category = SOURCE_CATEGORY_MAP[source.name] ?? (isOFACDate ? "OFAC" : isTreasuryPR ? "U.S. Treasury" : source.name);
@@ -777,11 +775,20 @@ function buildArticlesFromSource(source: OfficialSource): Article[] {
       .replace(/^OFAC — /, "OFAC / "));
 
   // Create one article per bullet — body shows description if available (RSS), else directs to source
-  return parsed.map((item) => {
+  return parsed.flatMap((item) => {
     // RSS items have format: "headline ||| url ||| description"
     const parts2 = item.text.split(" ||| ");
     const headline = parts2[0].slice(0, 180);
     const description = parts2[1] || "";
+
+    // Per-article headline filter for Treasury sources
+    if (isTreasuryPR && SANCTIONS_KEYWORDS.length > 0) {
+      const hl = headline.toLowerCase();
+      const hasSanctions = SANCTIONS_KEYWORDS.some(k => hl.includes(k));
+      const hasNonSanctions = NON_SANCTIONS_KEYWORDS_TR.some(k => hl.includes(k));
+      // Skip if headline has zero sanctions keywords, or explicitly non-sanctions
+      if (!hasSanctions || (hasNonSanctions && !hasSanctions)) return [];
+    }
 
     // Extract real date — try multiple sources
     const months = ["","January","February","March","April","May","June","July","August","September","October","November","December"];
@@ -848,7 +855,7 @@ function buildArticlesFromSource(source: OfficialSource): Article[] {
     const hlRegion = detectRegionFromContent(headline);
     const articleRegion = hlRegion !== "Global" ? hlRegion : region;
 
-    return {
+    return [{
       id: articleId++,
       section,
       category,
@@ -860,7 +867,7 @@ function buildArticlesFromSource(source: OfficialSource): Article[] {
       source: displaySource,
       // Use item URL if specific, else fall back to source URL (dated page)
       sourceUrl: item.url && item.url !== source.url ? item.url : source.url,
-    };
+    }];
   });
 }
 
@@ -871,10 +878,17 @@ export function buildBriefingFromSources(sources: OfficialSource[]): Briefing {
   // Process penalty sources first so enforcement articles always make it in
   const penaltySources = successful.filter(s => (SOURCE_SECTION_MAP[s.name] ?? "") === "penalties");
   const otherSources   = successful.filter(s => (SOURCE_SECTION_MAP[s.name] ?? "") !== "penalties");
+  const seenHeadlines = new Set<string>();
   for (const source of [...penaltySources, ...otherSources]) {
     const sourceArticles = buildArticlesFromSource(source);
-    articles.push(...sourceArticles);
-    if (articles.length >= 100) break; // raised cap — ensures all sections are covered
+    for (const a of sourceArticles) {
+      const key = a.headline.slice(0, 80).toLowerCase().replace(/\s+/g, " ").trim();
+      if (seenHeadlines.has(key)) continue; // skip duplicate headline from another source
+      seenHeadlines.add(key);
+      articles.push(a);
+      if (articles.length >= 100) break;
+    }
+    if (articles.length >= 100) break;
   }
 
   // Fallback: if no articles extracted, use old method
