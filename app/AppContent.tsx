@@ -495,18 +495,23 @@ export default function GlobalMonitor() {
       const result = await res.json().catch(() => ({}));
       if (!res.ok || !result.ok) throw new Error(result.error || `HTTP ${res.status}`);
       setRefreshQueued(true);
-      // Poll for the new briefing — GitHub Actions runs typically land within ~1-2 min
-      for (let i = 0; i < 6; i++) {
+      // Poll for the new briefing — LLM+source fetch can take 2-4 min, so poll 18×20s=6min
+      let detected = false;
+      for (let i = 0; i < 18; i++) {
         await new Promise(r => setTimeout(r, 20000));
         try {
           const newsRes = await fetch("/api/news");
           const newsData = await newsRes.json();
           if (newsData?.lastUpdated && newsData.lastUpdated !== previousUpdated) {
             setData(newsData); setExpanded({}); setSanOn(false);
+            detected = true;
             break;
           }
         } catch { /* keep polling */ }
       }
+      // If poll window expired without detecting a change, force a page reload
+      // so the user gets whatever is now in Redis (the refresh may have landed late)
+      if (!detected) { window.location.reload(); }
     } catch(e){
       setError("Couldn't queue a refresh — check that GITHUB_TOKEN is configured for this app.");
       console.error(e);
