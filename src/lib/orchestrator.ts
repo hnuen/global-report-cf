@@ -171,7 +171,7 @@ export async function refreshBriefing(topic?: string): Promise<{
     try {
       console.log("[orchestrator] Enriching article briefs...");
       const sanctionsArticles = briefing.articles
-        .filter(a => a.section === "sanctions" && a.sourceUrl)
+        .filter(a => a.sourceUrl)
         .map(a => ({ sourceUrl: a.sourceUrl!, headline: a.headline, body: a.body }));
 
       const enriched = await enrichArticlesWithBriefs(sanctionsArticles);
@@ -223,3 +223,4 @@ export async function getSystemHealth() {
     timestamp: new Date().toISOString(),
   };
 }
+                             

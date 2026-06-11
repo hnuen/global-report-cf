@@ -155,14 +155,14 @@ export async function getBriefForArticle(
     await storage.set(cacheKey, brief, BRIEF_TTL_SECONDS);
   } catch { /* Cache write failed — non-fatal */ }
 
-  return finalBrief || brief;
+  return brief;
 }
 
 // Gemini free tier limits: 15 RPM (requests per minute), 1500 RPD (requests per day)
 // We stay well under by: max 3 parallel, 4s gap between batches, skip cached articles
 const GEMINI_BATCH_SIZE   = 3;    // max parallel Gemini calls
 const GEMINI_BATCH_GAP_MS = 4500; // wait 4.5s between batches → max ~13 RPM, safely under 15
-const GEMINI_MAX_PER_RUN  = 15;   // max new briefs per refresh run (saves daily quota)
+const GEMINI_MAX_PER_RUN  = 25;   // max new briefs per refresh run (saves daily quota)
 
 const sleep = (ms: number) => new Promise(r => setTimeout(r, ms));
 
