@@ -1,6 +1,8 @@
 export const dynamic = "force-dynamic";
 import { NextRequest, NextResponse } from "next/server";
 import { refreshBriefing } from "@/src/lib/orchestrator";
+import { maybeSyncPenalties } from "@/src/lib/penalties-fetcher";
+import { PENALTIES } from "@/src/lib/penalties-data";
 
 export const maxDuration = 120;
 
@@ -15,9 +17,6 @@ export async function GET(request: NextRequest) {
   try {
     const { briefing, usedProvider, savedTo } = await refreshBriefing();
     console.log(`[cron] Done — ${briefing.articles.length} articles via ${usedProvider}, saved to: ${savedTo.join(", ")}`);
-    return NextResponse.json({ ok: true, articles: briefing.articles.length, usedProvider, savedTo });
-  } catch (e) {
-    console.error("[cron]", e);
-    return NextResponse.json({ error: String(e) }, { status: 500 });
-  }
-}
+
+    // Sync new OFAC penalties (at most once per 24 h — skips if recently run)
+    const penaltySync = 
