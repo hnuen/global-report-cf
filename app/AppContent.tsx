@@ -986,6 +986,7 @@ export default function GlobalMonitor() {
             </div>
           )}
           {groups.map(g=>{
+            if (g==="penalties") return null; // penalties section uses dedicated table UI below — not article cards
             if (g==="sanctions"&&sanOn) return null;
             if (g==="sanctions"&&ofacProgram&&section==="sanctions") return null;
             const arts = allFiltered.filter(a=>a.section===g);
