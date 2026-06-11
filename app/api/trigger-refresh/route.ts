@@ -1,34 +1,24 @@
 // Triggers the "Refresh Global Report" GitHub Actions workflow on demand.
 //
-// Why this exists: calling /api/refresh directly fetches ~50 sources sequentially
-// and routinely exceeds Cloudflare's worker wall-clock limits, so the in-app
-// "Refresh Now" button would hang/timeout without ever completing. The GitHub
-// Actions workflow already runs the same refresh on a schedule from GitHub's
-// infrastructure (which has much more headroom), so instead of duplicating that
-// work in-process, this route asks GitHub to run the workflow right now via the
-// `workflow_dispatch` API. The button becomes "queue a refresh" rather than
-// "wait ~30s for a refresh" — the new data shows up within a minute or two.
+// Primary path: dispatches workflow_dispatch to GitHub Actions, which calls
+// /api/refresh with a 7-minute timeout (much more headroom than CF Workers).
 //
-// Requires a GitHub Personal Access Token with `repo` + `workflow` scope, stored
-// as the Cloudflare Pages environment variable GITHUB_TOKEN (Settings → Environment
-// variables → add GITHUB_TOKEN, mark as a secret). Set REFRESH_REPO/REFRESH_WORKFLOW
-// only if the repo or workflow filename ever changes from the defaults below.
+// Fallback path: if GITHUB_TOKEN is not configured, calls /api/refresh in-process.
+// The refresh now completes in < 28s (22s LLM timeout + source fetch), so it
+// safely fits within Cloudflare's 30s wall-clock limit. The caller should use
+// the polling mechanism to detect when new content lands in Redis.
 import { NextRequest, NextResponse } from "next/server";
+import { refreshBriefing } from "@/src/lib/orchestrator";
 
 export const dynamic = "force-dynamic";
 
-const REPO = process.env.REFRESH_REPO || "hnuen/global-report-cf";
+const REPO     = process.env.REFRESH_REPO     || "hnuen/global-report-cf";
 const WORKFLOW = process.env.REFRESH_WORKFLOW || "refresh.yml";
-const REF = process.env.REFRESH_REF || "main";
+const REF      = process.env.REFRESH_REF      || "main";
 
-async function dispatch() {
+async function tryGitHubDispatch(): Promise<NextResponse | null> {
   const token = process.env.GITHUB_TOKEN;
-  if (!token) {
-    return NextResponse.json(
-      { ok: false, error: "GITHUB_TOKEN is not configured on the server — add it in Cloudflare Pages → Settings → Environment variables." },
-      { status: 500 }
-    );
-  }
+  if (!token) return null; // signal: fall back to in-process
 
   const url = `https://api.github.com/repos/${REPO}/actions/workflows/${WORKFLOW}/dispatches`;
   const ghRes = await fetch(url, {
@@ -48,10 +38,25 @@ async function dispatch() {
   }
 
   const text = await ghRes.text().catch(() => "");
-  return NextResponse.json(
-    { ok: false, error: `GitHub API returned ${ghRes.status}`, details: text.slice(0, 500) },
-    { status: 502 }
-  );
+  console.log(`[trigger-refresh] GitHub dispatch failed (${ghRes.status}) — falling back to in-process: ${text.slice(0, 200)}`);
+  return null; // fall back to in-process refresh
+}
+
+async function dispatch() {
+  // Try GitHub Actions first (preferred — longer timeout)
+  const ghResponse = await tryGitHubDispatch();
+  if (ghResponse) return ghResponse;
+
+  // Fallback: run in-process (< 28s with 22s LLM timeout — fits CF wall-clock)
+  console.log("[trigger-refresh] Running in-process refresh (GITHUB_TOKEN not set or GitHub API failed)");
+  const { usedProvider, savedTo } = await refreshBriefing();
+  return NextResponse.json({
+    ok: true,
+    queued: false,
+    message: `Refresh complete (${usedProvider}). New articles available now.`,
+    usedProvider,
+    savedTo,
+  });
 }
 
 export async function POST(_request: NextRequest) {

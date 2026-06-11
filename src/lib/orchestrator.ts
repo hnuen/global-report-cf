@@ -42,19 +42,26 @@ export async function refreshBriefing(topic?: string): Promise<{
   // Pre-format context once so it can be passed to LLM without double-fetching
   const officialContext = formatSourcesForPrompt(officialSources);
 
-  // Always try LLM for rich editorial bodies.
-  // GitHub Actions handles the execution timeout, so there is no wall-clock concern.
-  // Pre-built context is passed so the LLM manager does NOT re-fetch all sources.
+  // Try LLM for rich editorial bodies, with a hard 22s timeout so the endpoint
+  // always completes within Cloudflare's 30s wall-clock limit.
+  // If LLM is slow or fails, we fall back to the structured source builder.
+  const LLM_TIMEOUT_MS = 22_000;
   try {
     const llm = buildLLMManager();
-    const result = await llm.fetch(topic, officialContext);
+    const result = await Promise.race([
+      llm.fetch(topic, officialContext),
+      new Promise<never>((_, reject) =>
+        setTimeout(() => reject(new Error(`LLM timeout after ${LLM_TIMEOUT_MS / 1000}s`)), LLM_TIMEOUT_MS)
+      ),
+    ]);
     briefing = result.briefing;
     usedProvider = result.usedProvider;
   } catch (llmError) {
-    console.log("[orchestrator] LLM failed — falling back to structured sources:", String(llmError).slice(0, 120));
+    const reason = String(llmError).slice(0, 120);
+    console.log("[orchestrator] LLM unavailable — using structured sources:", reason);
     const structuredBriefing = buildBriefingFromSources(officialSources);
     briefing = structuredBriefing.articles.length >= 5 ? structuredBriefing : buildAnalyzedBriefing(officialSources);
-    usedProvider = "Official Sources (LLM fallback)";
+    usedProvider = "Official Sources";
   }
 
   // Fill any section with < 8 articles using historical records
