@@ -248,10 +248,16 @@ export async function refreshBriefing(topic?: string): Promise<{
           console.log("[orchestrator] Library save failed (non-fatal):", String(e).slice(0, 80))
         );
 
-        // Skip second Redis save — core briefing already persisted above.
-        // Enrichment runs after the subrequest budget is partially consumed;
-        // re-saving would fail and incorrectly mark Upstash as unhealthy.
-        console.log("[orchestrator] Enriched briefs applied (skipping re-save to preserve Upstash health)");
+        // Re-save briefing with enriched briefs so users see Gemini summaries immediately.
+        // This save is best-effort — if it fails (subrequest limit), the pre-save copy
+        // (with generic briefs) is already in Redis and the library will propagate
+        // enriched briefs on the next refresh cycle.
+        try {
+          await storage.save(briefing);
+          console.log("[orchestrator] Re-saved briefing with enriched briefs");
+        } catch (saveErr) {
+          console.log("[orchestrator] Re-save failed (non-fatal, pre-save intact):", String(saveErr).slice(0, 80));
+        }
       }
     } catch (e) {
       console.log("[orchestrator] Brief enrichment failed (non-fatal):", String(e).slice(0, 100));
