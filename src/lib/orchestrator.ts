@@ -201,7 +201,7 @@ export async function refreshBriefing(topic?: string): Promise<{
       appliedCount++;
       return { ...a, body: [lib, ...a.body.slice(1)] };
     });
-    if (appliedCount > 0) console.log(\`[orchestrator] Applied \${appliedCount} enriched briefs from library\`);
+    if (appliedCount > 0) console.log(`[orchestrator] Applied ${appliedCount} enriched briefs from library`);
   }
 
   // ── Save the core briefing FIRST ───────────────────────────────────────────
