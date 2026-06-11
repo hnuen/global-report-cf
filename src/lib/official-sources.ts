@@ -231,7 +231,10 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean }> = [
   // Fed — press releases RSS
   { name: "Federal Reserve — Press Releases",     url: "https://www.federalreserve.gov/feeds/press_all.xml", official: true },
   // BIS — bureau of industry and security
-  { name: "BIS Export Enforcement",               url: "https://www.bis.gov/news", official: true },
+  // bis.gov blocks server-side fetches (403 from CDN allowlist) — use Federal Register instead
+  // Federal Register publishes all BIS Entity List additions, EAR amendments, and enforcement actions
+  { name: "Federal Register — BIS Export Controls", url: "https://www.federalregister.gov/documents/search.rss?conditions%5Bagencies%5D%5B%5D=bureau-of-industry-and-security&conditions%5Bterm%5D=export+controls+entity+list", official: true },
+  { name: "Federal Register — BIS Actions",         url: "https://www.federalregister.gov/documents/search.rss?conditions%5Bagencies%5D%5B%5D=bureau-of-industry-and-security", official: true },
   // State Department RSS
   { name: "U.S. State Department — News",         url: "https://www.state.gov/rss-feeds/press-releases/", official: true },
   // FinCEN enforcement
