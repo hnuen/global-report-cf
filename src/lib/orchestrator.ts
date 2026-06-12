@@ -23,8 +23,9 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
   const storage = await buildStorageManager();
 
   // Load persisted article library (Redis-backed — built up across refresh runs)
-  const libraryArticles = await loadArticleLibrary();
-  console.log(`[orchestrator] Loaded ${libraryArticles.length} articles from library`);
+  // Skip in skipLLM path to conserve CF Workers subrequest budget (stay under 50 limit)
+  const libraryArticles = opts?.skipLLM ? [] : await loadArticleLibrary();
+  console.log(`[orchestrator] Loaded ${libraryArticles.length} articles from library (skipLLM=${opts?.skipLLM ?? false})`);
 
   // Always fetch official sources first — fast and free
   console.log("[orchestrator] Fetching official government sources...");

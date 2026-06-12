@@ -344,6 +344,32 @@ function getOFACDateSources(): Array<{ name: string; url: string }> {
   return sources;
 }
 
+
+// ── Subrequest budget guard ──────────────────────────────────────────────────
+// CF Workers hard limit: 50 subrequests per invocation.
+// Budget breakdown (skipLLM=true fast path):
+//   - source fetches   (SOURCES + Treasury SBs)
+//   - Redis save       ~2 calls
+//   - safety headroom  5
+// Budget breakdown (full LLM path):
+//   - source fetches + Redis load + Redis save + Gemini
+//   - Allow more headroom since LLM path has fewer sources
+const CF_SUBREQUEST_LIMIT = 50;
+const REDIS_OVERHEAD = 4;  // load + save + connection overhead
+const SUBREQUEST_HEADROOM = 4;  // safety buffer
+
+export function checkSubrequestBudget(sources: Array<unknown>, label = "fetchOfficialSources"): void {
+  const estimated = sources.length + REDIS_OVERHEAD + SUBREQUEST_HEADROOM;
+  const budget = CF_SUBREQUEST_LIMIT - SUBREQUEST_HEADROOM;
+  if (estimated > budget) {
+    const msg = `[subrequest-guard] ${label}: estimated ${estimated} subrequests (${sources.length} sources + ${REDIS_OVERHEAD} Redis overhead + ${SUBREQUEST_HEADROOM} headroom) exceeds safe budget of ${budget}. Redis save WILL fail. Reduce source count by ${estimated - budget}.`;
+    console.error(msg);
+    // Don't throw — let the fetch proceed but warn loudly so logs surface the problem
+  } else {
+    console.log(`[subrequest-guard] ${label}: ${estimated} estimated subrequests (${sources.length} sources) — within budget ✅`);
+  }
+}
+
 export async function fetchOfficialSources(): Promise<OfficialSource[]> {
   const now = new Date().toISOString();
   // Include OFAC date-specific pages (last 7 days) and recent Treasury SB press releases.
@@ -352,12 +378,13 @@ export async function fetchOfficialSources(): Promise<OfficialSource[]> {
   // SOURCES has ~45 entries. Add only 3 Treasury SB probes (the 3 most likely current ones).
   // OFAC date pages removed — they are blocked from Cloudflare network and waste subrequest budget.
   // 45 sources + 3 SB probes + ~4 Redis calls = ~52, safely within budget.
-  // Probe 8 Treasury SBs: 36 SOURCES + 8 SBs + ~4 Redis = 48 subrequests (safe under 50 limit)
-  const treasurySources = getTreasurySources().slice(0, 8);
+  // Probe only 2 Treasury SBs: 38 SOURCES + 2 SBs + 2 Redis = 42 subrequests (safe under 50 limit)
+  const treasurySources = getTreasurySources().slice(0, 2);
   const allSources = [
     ...SOURCES,
     ...treasurySources,
   ];
+  checkSubrequestBudget(allSources);
   const MASTER_TIMEOUT = 10000;  // 10s — must leave headroom for LLM+save within CF 30s wall-clock limit
 
   const fetchOne = async (source: typeof allSources[0]) => {
