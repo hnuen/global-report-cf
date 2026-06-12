@@ -15,7 +15,7 @@ export async function loadBriefing(): Promise<Briefing | null> {
   return storage.load();
 }
 
-export async function refreshBriefing(topic?: string): Promise<{
+export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean }): Promise<{
   briefing: Briefing;
   usedProvider: string;
   savedTo: string[];
@@ -42,26 +42,34 @@ export async function refreshBriefing(topic?: string): Promise<{
   // Pre-format context once so it can be passed to LLM without double-fetching
   const officialContext = formatSourcesForPrompt(officialSources);
 
-  // Try LLM for rich editorial bodies, with a hard 22s timeout so the endpoint
-  // always completes within Cloudflare's 30s wall-clock limit.
-  // If LLM is slow or fails, we fall back to the structured source builder.
-  const LLM_TIMEOUT_MS = 22_000;
-  try {
-    const llm = buildLLMManager();
-    const result = await Promise.race([
-      llm.fetch(topic, officialContext),
-      new Promise<never>((_, reject) =>
-        setTimeout(() => reject(new Error(`LLM timeout after ${LLM_TIMEOUT_MS / 1000}s`)), LLM_TIMEOUT_MS)
-      ),
-    ]);
-    briefing = result.briefing;
-    usedProvider = result.usedProvider;
-  } catch (llmError) {
-    const reason = String(llmError).slice(0, 120);
-    console.log("[orchestrator] LLM unavailable — using structured sources:", reason);
+  // Try LLM for rich editorial bodies, with a hard 17s timeout so the full
+  // endpoint (10s source fetch + 17s LLM + ~2s save) fits in CF's 30s wall-clock limit.
+  // skipLLM=true is set by trigger-refresh's in-process fallback path so it always
+  // completes quickly; GitHub Actions calls /api/refresh without skipLLM for full enrichment.
+  const LLM_TIMEOUT_MS = 17_000;
+  if (opts?.skipLLM) {
+    console.log("[orchestrator] skipLLM=true — using structured sources directly");
     const structuredBriefing = buildBriefingFromSources(officialSources);
     briefing = structuredBriefing.articles.length >= 5 ? structuredBriefing : buildAnalyzedBriefing(officialSources);
     usedProvider = "Official Sources";
+  } else {
+    try {
+      const llm = buildLLMManager();
+      const result = await Promise.race([
+        llm.fetch(topic, officialContext),
+        new Promise<never>((_, reject) =>
+          setTimeout(() => reject(new Error(`LLM timeout after ${LLM_TIMEOUT_MS / 1000}s`)), LLM_TIMEOUT_MS)
+        ),
+      ]);
+      briefing = result.briefing;
+      usedProvider = result.usedProvider;
+    } catch (llmError) {
+      const reason = String(llmError).slice(0, 120);
+      console.log("[orchestrator] LLM unavailable — using structured sources:", reason);
+      const structuredBriefing = buildBriefingFromSources(officialSources);
+      briefing = structuredBriefing.articles.length >= 5 ? structuredBriefing : buildAnalyzedBriefing(officialSources);
+      usedProvider = "Official Sources";
+    }
   }
 
   // Fill any section with < 8 articles using historical records

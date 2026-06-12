@@ -49,7 +49,7 @@ async function dispatch() {
 
   // Fallback: run in-process (< 28s with 22s LLM timeout — fits CF wall-clock)
   console.log("[trigger-refresh] Running in-process refresh (GITHUB_TOKEN not set or GitHub API failed)");
-  const { usedProvider, savedTo } = await refreshBriefing();
+  const { usedProvider, savedTo } = await refreshBriefing(undefined, { skipLLM: true });
   return NextResponse.json({
     ok: true,
     queued: false,

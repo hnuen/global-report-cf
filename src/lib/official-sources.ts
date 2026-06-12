@@ -358,7 +358,7 @@ export async function fetchOfficialSources(): Promise<OfficialSource[]> {
     ...SOURCES,
     ...treasurySources,
   ];
-  const MASTER_TIMEOUT = 20000;
+  const MASTER_TIMEOUT = 10000;  // 10s — must leave headroom for LLM+save within CF 30s wall-clock limit
 
   const fetchOne = async (source: typeof allSources[0]) => {
     try {
