@@ -24,7 +24,7 @@ body{background:#ffffff}
 .pub-name{font-family:'Playfair Display',serif;font-size:clamp(1rem,2.4vw,1.7rem);font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:#111111;line-height:1;display:block;text-align:center}
 .pub-tag{font-family:var(--mono);font-size:.48rem;color:#6b7280;letter-spacing:.14em;text-transform:uppercase;margin-top:4px;display:block;text-align:center}
 .sec-nav{background:#f9fafb;border-bottom:1px solid #e5e7eb;overflow-x:auto;-webkit-overflow-scrolling:touch}
-.sec-nav-inner{max-width:1140px;margin:0 auto;display:flex;min-width:420px}
+.sec-nav-inner{max-width:1140px;margin:0 auto;display:flex;min-width:0}
 .sec-tab{flex:1;padding:10px 4px;background:transparent;border:none;border-right:1px solid #e5e7eb;color:#6b7280;font-family:'Playfair Display',serif;font-size:.7rem;font-style:italic;cursor:pointer;transition:all .2s;text-align:center;white-space:nowrap}
 .sec-tab:last-child{border-right:none}
 .sec-tab:hover{color:#111111;background:#f3f4f6}
@@ -221,9 +221,21 @@ body{background:#ffffff}
   .layout{grid-template-columns:1fr;padding:12px 14px 44px}
   .mast-inner{grid-template-columns:1fr;gap:4px;padding:10px 14px}
   .mast-l,.mast-r{display:none}
-  .toolbar,.san-search,.upd-bar{padding:6px 14px}
+  .toolbar,.san-search,.upd-bar{padding:6px 10px}
   .san-inner{flex-direction:column;align-items:stretch}
-  .date-in,.topic-input{width:100%}
+  .date-in,.topic-input{width:100%;box-sizing:border-box}
+  .sec-nav-inner{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .sec-nav-inner::-webkit-scrollbar{display:none}
+  .toolbar-inner{flex-wrap:wrap;gap:4px}
+  .upd-inner{flex-wrap:wrap;gap:6px}
+  .gs-input{min-width:0;width:100%;box-sizing:border-box}
+  .ofac-prog-select{min-width:0;width:100%;box-sizing:border-box}
+  .art-head{font-size:1rem}
+  .fincen-table th,.fincen-table td,.pen-table th,.pen-table td{font-size:.62rem;padding:4px 5px}
+}
+@media(max-width:420px){
+  .mast-title{font-size:1.6rem}
+  .sec-tab{font-size:.58rem;padding:7px 8px}
 }
 `;
 
