@@ -39,38 +39,18 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
     throw new Error("No official sources fetched successfully");
   }
 
+  // ── Step 1: build structured briefing immediately (fast, ~0s) ───────────────
+  // This is always done first so we can pre-save a valid briefing with today's
+  // timestamp BEFORE attempting the slow LLM call.  That guarantees Redis is
+  // updated even if the LLM / enrichment steps are killed by CF's wall-clock limit.
+  const structuredBriefingEarly = buildBriefingFromSources(officialSources);
+  briefing = structuredBriefingEarly.articles.length >= 5
+    ? structuredBriefingEarly
+    : buildAnalyzedBriefing(officialSources);
+  usedProvider = "Official Sources";
+
   // Pre-format context once so it can be passed to LLM without double-fetching
   const officialContext = formatSourcesForPrompt(officialSources);
-
-  // Try LLM for rich editorial bodies, with a hard 17s timeout so the full
-  // endpoint (10s source fetch + 17s LLM + ~2s save) fits in CF's 30s wall-clock limit.
-  // skipLLM=true is set by trigger-refresh's in-process fallback path so it always
-  // completes quickly; GitHub Actions calls /api/refresh without skipLLM for full enrichment.
-  const LLM_TIMEOUT_MS = 17_000;
-  if (opts?.skipLLM) {
-    console.log("[orchestrator] skipLLM=true — using structured sources directly");
-    const structuredBriefing = buildBriefingFromSources(officialSources);
-    briefing = structuredBriefing.articles.length >= 5 ? structuredBriefing : buildAnalyzedBriefing(officialSources);
-    usedProvider = "Official Sources";
-  } else {
-    try {
-      const llm = buildLLMManager();
-      const result = await Promise.race([
-        llm.fetch(topic, officialContext),
-        new Promise<never>((_, reject) =>
-          setTimeout(() => reject(new Error(`LLM timeout after ${LLM_TIMEOUT_MS / 1000}s`)), LLM_TIMEOUT_MS)
-        ),
-      ]);
-      briefing = result.briefing;
-      usedProvider = result.usedProvider;
-    } catch (llmError) {
-      const reason = String(llmError).slice(0, 120);
-      console.log("[orchestrator] LLM unavailable — using structured sources:", reason);
-      const structuredBriefing = buildBriefingFromSources(officialSources);
-      briefing = structuredBriefing.articles.length >= 5 ? structuredBriefing : buildAnalyzedBriefing(officialSources);
-      usedProvider = "Official Sources";
-    }
-  }
 
   // Fill any section with < 8 articles using historical records
   const SECTIONS: Section[] = ["sanctions","economics","religion","occ","penalties","bis"];
@@ -212,6 +192,31 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
     if (appliedCount > 0) console.log(`[orchestrator] Applied ${appliedCount} enriched briefs from library`);
   }
 
+  // ── Step 2: attempt LLM upgrade (best-effort, 17s timeout) ─────────────────
+  // Runs AFTER the pre-save-ready structured briefing is built but BEFORE the
+  // actual save.  If the LLM responds in time, its richer articles replace the
+  // structured ones.  If it times out or errors, briefing stays as structured.
+  // skipLLM=true (in-process trigger-refresh) bypasses this entirely.
+  if (!opts?.skipLLM) {
+    const LLM_TIMEOUT_MS = 17_000;
+    try {
+      const llm = buildLLMManager();
+      const result = await Promise.race([
+        llm.fetch(topic, officialContext),
+        new Promise<never>((_, reject) =>
+          setTimeout(() => reject(new Error(`LLM timeout after ${LLM_TIMEOUT_MS / 1000}s`)), LLM_TIMEOUT_MS)
+        ),
+      ]);
+      briefing = result.briefing;
+      usedProvider = result.usedProvider;
+      console.log(`[orchestrator] LLM succeeded (${usedProvider})`);
+    } catch (llmError) {
+      const reason = String(llmError).slice(0, 120);
+      console.log("[orchestrator] LLM unavailable — keeping structured briefing:", reason);
+      // briefing / usedProvider already set to structured above — no change needed
+    }
+  }
+
   // ── Save the core briefing FIRST ───────────────────────────────────────────
   // Cloudflare Workers caps subrequests per invocation. Brief enrichment below
   // does per-article Redis cache lookups + article fetches + Gemini calls,
@@ -231,9 +236,9 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
   }
 
   // Enrich articles with AI-generated briefs (cached in Redis, runs async)
-  // Only runs when LLM fallback was used (structured briefing) — LLM articles already have good body text
+  // Skipped when skipLLM=true (in-process fast path) — endpoint must return quickly.
   // Best-effort: failure here does not lose data, since the core briefing is already saved above.
-  if (usedProvider.includes("Official Sources") || usedProvider.includes("Local Analysis")) {
+  if (!opts?.skipLLM && (usedProvider.includes("Official Sources") || usedProvider.includes("Local Analysis"))) {
     try {
       console.log("[orchestrator] Enriching article briefs...");
       const sanctionsArticles = briefing.articles
