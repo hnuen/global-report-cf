@@ -255,11 +255,11 @@ body{background:#ffffff}
   .ofac-prog-select{min-width:0;width:100%;box-sizing:border-box}
 
   /* Articles — full-width cards with padding */
-  .article{padding:12px 14px;border-bottom:1px solid #e5e7eb;overflow:hidden;word-break:break-word;overflow-wrap:break-word}
+  .article{padding:12px 14px;border-bottom:1px solid #e5e7eb;word-break:break-word;overflow-wrap:break-word;max-width:100%}
   .art-meta{flex-wrap:wrap;gap:4px;row-gap:3px}
   .art-date{white-space:normal;margin-left:0;font-size:.56rem}
   .art-region{font-size:.56rem;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .art-hl{font-size:.95rem;line-height:1.3;word-break:break-word}
+  .art-hl{font-size:.95rem;line-height:1.3;word-break:break-word;overflow-wrap:break-word;hyphens:auto;max-width:100%}
   /* Hide body text on mobile — just show headline + source */
   .art-body{display:none}
   /* Hide long path label — show only source name */
@@ -269,7 +269,7 @@ body{background:#ffffff}
   .src-link{font-size:.55rem}
 
   /* Penalties — scrollable */
-  .pen-wrap,.fincen-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;width:100%;max-width:100%}
+  .pen-wrap,.fincen-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;width:100%;max-width:100%;display:block}
   .pen-table,.fincen-table{min-width:500px}
   .fincen-table th,.fincen-table td,.pen-table th,.pen-table td{font-size:.6rem;padding:4px 5px}
   .pen-table .pen-col-note,.fincen-table .fincen-col-note{display:none}
