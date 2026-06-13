@@ -405,44 +405,83 @@ const decodeEntities = (s: string): string => {
     .replace(/&nbsp;/g, " ");
 };
 
-// Explicit keyword sets for each sanctions region tab
-// Checked against: article.region (lowercase) + article.headline (lowercase)
+// Explicit keyword sets for each sanctions region tab.
+// Match is checked against BOTH article.region (from server) AND article.headline.
+// Keep region lists TIGHT — only keywords that unambiguously belong to that region.
 const REGION_MATCH: Record<string, string[]> = {
-  "Iran":             ["iran", "irgc", "economic fury", "tehran"],
-  "DPRK":             ["dprk", "north korea", "pyongyang", "kim jong"],
-  "Russia":           ["russia", "ukraine", "rosneft", "lukoil", "kremlin", "moscow"],
-  "Cuba":             ["cuba", "gaesa", "havana"],
-  "Venezuela":        ["venezuela", "maduro", "pdvsa", "caracas"],
-  "EU / Europe":      ["eu / europe", "eu council", "european", "balkans", "belarus", "europe"],
-  "UK":               ["uk", "united kingdom", "ofsi", "hm treasury", "british", "britain", "london"],
-  "China / HK":       ["china", "hong kong", "hk", "xinjiang", "ccmc", "prc", "uyghur", "beijing", "caatsa china", "china / hk", "chinese military"],
-  "MEA":              ["mea", "middle east", "iran", "iraq", "syria", "lebanon", "israel", "yemen", "sudan", "somalia", "libya", "mali", "ethiopia", "afghanistan", "hizballah", "hezbollah", "hamas", "gaza", "west bank"],
-  "India / Pakistan": ["india", "pakistan", "india / pakistan"],
-  "SEA":              ["sea", "southeast asia", "myanmar", "burma", "vietnam", "thailand", "singapore", "malaysia", "philippines", "indonesia", "cambodia", "laos"],
+  // US program / country-specific OFAC programs
+  "Iran":             ["iran", "irgc", "economic fury", "tehran", "persian"],
+  "DPRK":             ["dprk", "north korea", "pyongyang", "kim jong", "korean people"],
+  "Russia":           ["russia", "ukraine", "rosneft", "lukoil", "kremlin", "moscow", "zelensky", "zelenskyy"],
+  "Cuba":             ["cuba", "gaesa", "havana", "cuban"],
+  "Venezuela":        ["venezuela", "maduro", "pdvsa", "caracas", "venezuelan"],
+  // European bodies — exclude UK (not in EU post-Brexit)
+  "EU / Europe":      ["eu / europe", "eu council", "consilium.europa.eu", "european commission",
+                       "european union", "eu sanctions", "eu restrictive", "balkans", "eu external action"],
+  // UK bodies only
+  "UK":               ["uk", " / uk", "united kingdom", "ofsi", "hm treasury", "british",
+                       "britain", "london", "gov.uk"],
+  // China / Hong Kong — specific programs & keywords
+  "China / HK":       ["china / hk", "china / hong kong", "hong kong", "xinjiang", "ccmc",
+                       "uyghur", "chinese military", "caatsa china", "cmic", "prc export",
+                       "beijing chip", "huawei", "smic", "byd sanction", "china sanction"],
+  // Middle East & Africa — explicit country list, no Iran (has own tab)
+  "MEA":              ["mea", "middle east", "iraq", "syria", "lebanon", "israel", "gaza",
+                       "west bank", "yemen", "sudan", "somalia", "libya", "mali", "ethiopia",
+                       "congo", "drc", "south sudan", "caf", "central african",
+                       "hizballah", "hezbollah", "hamas", "al-shabaab"],
+  // India & Pakistan — bilateral + regional
+  "India / Pakistan": ["india", "pakistan", "india / pakistan", "new delhi", "islamabad",
+                       "karachi", "lahore", "balochistan", "kashmir"],
+  // Southeast Asia — explicit country list
+  "SEA":              ["sea", "southeast asia", "myanmar", "burma", "vietnam", "thailand",
+                       "singapore", "malaysia", "philippines", "indonesia", "cambodia",
+                       "laos", "brunei", "timor"],
 };
-// Regions that are "specific" — used to decide what Global catches
+
+// Source names whose articles belong to specific regions regardless of headline
+const SOURCE_REGION_OVERRIDES: Record<string, string> = {
+  "UK OFSI":         "UK",
+  "UK Sanctions":    "UK",
+  "UK Government":   "UK",
+  "EU Council":      "EU / Europe",
+  "EU External":     "EU / Europe",
+  "EU Sanctions":    "EU / Europe",
+};
+
 const SPECIFIC_REGION_KEYS = Object.keys(REGION_MATCH);
 
 const articleMatchesRegion = (a: Article, reg: string): boolean => {
   if (reg === "All") return true;
+  const ar  = (a.region  || "").toLowerCase();
+  const hl  = (a.headline|| "").toLowerCase();
+  const src = (a.source  || "");
+
+  // Check source-based override first
+  for (const [srcKey, srcReg] of Object.entries(SOURCE_REGION_OVERRIDES)) {
+    if (src.includes(srcKey)) {
+      if (reg === "Global") return false; // source-pinned articles excluded from Global
+      return reg === srcReg;
+    }
+  }
+
   if (reg === "Global") {
-    // Global = doesn\'t match any specific region
-    const ar = (a.region || "").toLowerCase();
-    const hl = (a.headline || "").toLowerCase();
+    // Global = doesn\'t match any specific named region
     return !SPECIFIC_REGION_KEYS.some(rk => {
-      if (rk === "EU / Europe" || rk === "UK") return false; // EU/UK are non-exclusive in Global
       const kws = REGION_MATCH[rk] || [];
       return kws.some(kw => ar.includes(kw) || hl.includes(kw));
     });
   }
+
   const keywords = REGION_MATCH[reg] || [reg.toLowerCase()];
-  const ar = (a.region || "").toLowerCase();
-  const hl = (a.headline || "").toLowerCase();
-  // EU filter: exclude UK-only articles
-  if (reg === "EU / Europe") {
-    const ukOnly = ["ofsi", "hm treasury", "uk government", "united kingdom"].some(kw => ar.includes(kw));
-    if (ukOnly) return false;
+
+  // For China / HK: require at least one specific China/HK keyword — exclude Russia/Iran hits
+  if (reg === "China / HK") {
+    const chinaSpecific = ["china", "hong kong", "hk", "xinjiang", "ccmc", "uyghur",
+                           "chinese", "prc", "huawei", "smic", "cmic", "beijing"];
+    return chinaSpecific.some(kw => ar.includes(kw) || hl.includes(kw));
   }
+
   return keywords.some(kw => ar.includes(kw) || hl.includes(kw));
 };
 
@@ -455,22 +494,12 @@ const filterArticles = (articles:Article[], sec:string, reg:string) => {
   let result = reg === "All" ? pool : pool.filter(a => articleMatchesRegion(a, reg));
   // Sort newest first
   result.sort((a,b) => parseDate(b.date) - parseDate(a.date));
-  // Pin top 3 OFAC/Treasury articles relevant to this region at the top
+  // Pin top 3 OFAC/Treasury articles at the top (for any region — US sanctions are always relevant)
   const ofacPin = result.filter(isOFACArticle).slice(0, 3);
   if (ofacPin.length > 0) {
     const ofacIds = new Set(ofacPin.map(a => a.url || a.headline));
     const rest    = result.filter(a => !ofacIds.has(a.url || a.headline));
     result = [...ofacPin, ...rest];
-  }
-  // Guarantee at least 5 articles — pad with recent same-section articles
-  const MIN_ARTICLES = 5;
-  if (reg && reg !== "All" && result.length < MIN_ARTICLES) {
-    const existing = new Set(result.map(a => a.url || a.headline));
-    const pad = pool
-      .filter(a => !existing.has(a.url || a.headline))
-      .sort((a,b) => parseDate(b.date) - parseDate(a.date))
-      .slice(0, MIN_ARTICLES - result.length);
-    result = [...result, ...pad];
   }
   return result;
 };

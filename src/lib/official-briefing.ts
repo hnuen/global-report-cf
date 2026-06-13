@@ -562,6 +562,7 @@ const SOURCE_BASE_URLS: Record<string, string> = {
   "EU Council — Russia Sanctions":       "https://www.consilium.europa.eu",
   "EU Council — Iran Sanctions":         "https://www.consilium.europa.eu",
   "EU Council — Press Releases":         "https://www.consilium.europa.eu",
+  "UK Sanctions List":                    "https://www.gov.uk",
   "UK OFSI — Financial Sanctions":       "https://www.gov.uk",
   "UK OFSI — Enforcement Penalties":     "https://www.gov.uk",
   "UK Sanctions RSS":                    "https://www.gov.uk",
