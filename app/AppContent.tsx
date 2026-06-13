@@ -194,7 +194,8 @@ body{background:#ffffff}
 .ofac-update-panel.checking{background:#fefce8;border-color:#fde047}
 .ofac-update-panel.none{background:#f9fafb;border-color:#e5e7eb}
 .ofac-update-meta{font-family:var(--mono);font-size:.58rem;color:#6b7280;margin-top:6px}
-.live-fallback{background:#f0fdf4;border:1px solid #86efac;.show-more-btn{width:100%;padding:8px 0;border:1px dashed #d1d5db;border-radius:3px;background:transparent;font-family:var(--mono);font-size:.62rem;color:#6b7280;cursor:pointer;margin-top:4px;letter-spacing:.05em}
+.live-fallback{background:#f0fdf4;border:1px solid #86efac}
+.show-more-btn{width:100%;padding:8px 0;border:1px dashed #d1d5db;border-radius:3px;background:transparent;font-family:var(--mono);font-size:.62rem;color:#6b7280;cursor:pointer;margin-top:4px;letter-spacing:.05em}
 .show-more-btn:hover{border-color:#111;color:#111;background:#f9fafb}
 .ofac-update-panel{background:#f0fdf4;border:1px solid #86efac;border-radius:4px;padding:12px 14px;margin-bottom:14px}
 .ofac-update-panel.checking{background:#fefce8;border-color:#fde047}
