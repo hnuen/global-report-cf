@@ -15,7 +15,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
   --c-occ:#b45309;--c-pen:#0369a1;--c-bis:#6d28d9;
   --rule:#e5e7eb;--muted:#6b7280;--mono:'IBM Plex Mono',monospace
 }
-body{background:#ffffff}
+html{overflow-x:hidden}body{background:#ffffff;overflow-x:hidden;max-width:100vw}
 .app{min-height:100vh;background:var(--paper);color:var(--ink);font-family:'IBM Plex Sans',sans-serif}
 .masthead{background:#ffffff;border-bottom:2px solid #e5e7eb}
 .mast-inner{max-width:1140px;margin:0 auto;padding:14px 20px 11px;display:grid;grid-template-columns:1fr auto 1fr;align-items:end;gap:10px}
@@ -241,6 +241,16 @@ body{background:#ffffff}
   /* Hide full sidebar on mobile — show compact strip instead */
   aside{display:none}
   .kf-strip{display:flex}
+  /* Prevent nowrap elements from pushing page width */
+  .art-date{white-space:normal;margin-left:0}
+  .ofac-prog-table td:first-child,.ofac-prog-table td:last-child{white-space:normal}
+  .ofac-prog-table{font-size:.6rem}
+  /* Constrain article source URLs */
+  .art-src-url{word-break:break-all;max-width:100%}
+  /* Update bar text wraps */
+  .upd-text{word-break:break-word}
+  /* Toolbar pills wrap tightly */
+  .pill{font-size:.52rem;padding:3px 7px}
 }
 @media(max-width:420px){
   .mast-title{font-size:1.5rem}
