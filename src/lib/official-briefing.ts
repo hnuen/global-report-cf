@@ -626,14 +626,20 @@ function detectRegionFromContent(text: string): string {
   if (t.includes("iran") || t.includes("irgc") || t.includes("economic fury")) return "Iran";
   if (t.includes("russia") || t.includes("ukraine") || t.includes("rosneft") || t.includes("lukoil")) return "Russia";
   if (t.includes("cuba") || t.includes("gaesa") || t.includes("cubans")) return "Cuba";
-  if (t.includes("venezuela") || t.includes("maduro") || t.includes("chavez")) return "Venezuela";
-  if (t.includes("dprk") || t.includes("north korea") || t.includes("kim")) return "DPRK";
-  if (t.includes("hizballah") || t.includes("hezbollah") || t.includes("lebano")) return "Middle East";
-  if (t.includes("sinaloa") || t.includes("cartel") || t.includes("fentanyl")) return "Mexico / SEA";
-  if (t.includes("china") || t.includes("hong kong") || t.includes("prc")) return "China / Hong Kong";
-  if (t.includes("myanmar") || t.includes("burma") || t.includes("southeast asia")) return "SEA";
-  if (t.includes("europe") || t.includes("eu sanctions")) return "EU / Europe";
-  return "United States";
+  if (t.includes("venezuela") || t.includes("maduro") || t.includes("chavez") || t.includes("pdvsa")) return "Venezuela";
+  if (t.includes("dprk") || t.includes("north korea") || t.includes("kim jong")) return "DPRK";
+  if (t.includes("xinjiang") || t.includes("ccmc") || t.includes("hong kong") || t.includes("uyghur")) return "China / HK";
+  if (t.includes("china") || t.includes("prc") || t.includes("beijing")) return "China / HK";
+  if (t.includes("hizballah") || t.includes("hezbollah") || t.includes("hamas") || t.includes("lebano") ||
+      t.includes("israel") || t.includes("gaza") || t.includes("west bank") ||
+      t.includes("iraq") || t.includes("syria") || t.includes("yemen") || t.includes("sudan")) return "MEA";
+  if (t.includes("sinaloa") || t.includes("cartel") || t.includes("fentanyl") || t.includes("mexico")) return "Global";
+  if (t.includes("myanmar") || t.includes("burma") || t.includes("indonesia") ||
+      t.includes("vietnam") || t.includes("thailand") || t.includes("philippines") ||
+      t.includes("malaysia") || t.includes("singapore") || t.includes("southeast asia")) return "SEA";
+  if (t.includes("india") || t.includes("pakistan")) return "India / Pakistan";
+  if (t.includes("europe") || t.includes("eu sanctions") || t.includes("balkans") || t.includes("belarus")) return "EU / Europe";
+  return "Global";
 }
 
 // Detect region from source name
@@ -686,15 +692,15 @@ function detectRegion(sourceName: string): string {
   if (sourceName.includes("Google News — DPRK")) return "DPRK";
   if (sourceName.includes("Google News — Middle East")) return "Middle East";
   if (sourceName.includes("Google News — Southeast")) return "SEA";
-  if (sourceName.includes("India DGFT") || sourceName.includes("India MEA") || sourceName.includes("India Sanctions") || sourceName.includes("India Pakistan") || sourceName.includes("Google News — India")) return "India";
+  if (sourceName.includes("India DGFT") || sourceName.includes("India MEA") || sourceName.includes("India Sanctions") || sourceName.includes("India Pakistan") || sourceName.includes("Google News — India") || sourceName.includes("Pakistan")) return "India / Pakistan";
   if (sourceName.includes("Indonesia")) return "Indonesia / SEA";
   if (sourceName.includes("Global Sanctions — India")) return "India";
   if (sourceName.includes("Iran")) return "Iran";
   if (sourceName.includes("Russia")) return "Russia";
   if (sourceName.includes("Cuba")) return "Cuba";
   if (sourceName.includes("Venezuela")) return "Venezuela";
-  if (sourceName.includes("Counter Terror")) return "Middle East";
-  if (sourceName.includes("Counter Narco") || sourceName.includes("Sinaloa")) return "Mexico / SEA";
+  if (sourceName.includes("Counter Terror") || sourceName.includes("SDGT")) return "Global";
+  if (sourceName.includes("Counter Narco") || sourceName.includes("Sinaloa")) return "Global";
   if (sourceName.includes("OCC") || sourceName.includes("FinCEN") || sourceName.includes("Federal Reserve")
     || sourceName.includes("CFPB") || sourceName.includes("State Department") || sourceName.includes("Treasury")
     || sourceName.includes("OFAC") || sourceName.includes("BIS")) return "United States";

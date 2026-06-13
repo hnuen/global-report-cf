@@ -391,39 +391,86 @@ const isOFACArticle = (a: Article) =>
     (a.source||"" ).includes(p) || (a.sourceUrl||"").includes("ofac.treasury.gov") || (a.sourceUrl||"").includes("home.treasury.gov")
   );
 
-const filterArticles = (articles:Article[], sec:string, reg:string) => {
-  if (!articles || !Array.isArray(articles)) return [];
-  let result = [...articles];
-  // Filter by section
-  if (sec && sec !== "all") {
-    result = result.filter(a => a.section === sec);
-  }
-  // Filter by region
-  if (reg && reg !== "All") {
-    result = result.filter(a => {
-      const ar = (a.region||"").toLowerCase();
-      const r = reg.toLowerCase();
-      return ar.includes(r) || r.includes(ar);
+// Decode HTML entities (&#39; → ', &amp; → &, etc.)
+const decodeEntities = (s: string): string => {
+  if (!s || !s.includes("&")) return s;
+  return s
+    .replace(/&#39;/g, "\'")
+    .replace(/&quot;/g, "\"")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&apos;/g, "\'")
+    .replace(/&#x27;/g, "\'")
+    .replace(/&nbsp;/g, " ");
+};
+
+// Explicit keyword sets for each sanctions region tab
+// Checked against: article.region (lowercase) + article.headline (lowercase)
+const REGION_MATCH: Record<string, string[]> = {
+  "Iran":             ["iran", "irgc", "economic fury", "tehran"],
+  "DPRK":             ["dprk", "north korea", "pyongyang", "kim jong"],
+  "Russia":           ["russia", "ukraine", "rosneft", "lukoil", "kremlin", "moscow"],
+  "Cuba":             ["cuba", "gaesa", "havana"],
+  "Venezuela":        ["venezuela", "maduro", "pdvsa", "caracas"],
+  "EU / Europe":      ["eu / europe", "eu council", "european", "balkans", "belarus", "europe"],
+  "UK":               ["uk", "united kingdom", "ofsi", "hm treasury", "british", "britain", "london"],
+  "China / HK":       ["china", "hong kong", "hk", "xinjiang", "ccmc", "prc", "uyghur", "beijing", "caatsa china", "china / hk", "chinese military"],
+  "MEA":              ["mea", "middle east", "iran", "iraq", "syria", "lebanon", "israel", "yemen", "sudan", "somalia", "libya", "mali", "ethiopia", "afghanistan", "hizballah", "hezbollah", "hamas", "gaza", "west bank"],
+  "India / Pakistan": ["india", "pakistan", "india / pakistan"],
+  "SEA":              ["sea", "southeast asia", "myanmar", "burma", "vietnam", "thailand", "singapore", "malaysia", "philippines", "indonesia", "cambodia", "laos"],
+};
+// Regions that are "specific" — used to decide what Global catches
+const SPECIFIC_REGION_KEYS = Object.keys(REGION_MATCH);
+
+const articleMatchesRegion = (a: Article, reg: string): boolean => {
+  if (reg === "All") return true;
+  if (reg === "Global") {
+    // Global = doesn\'t match any specific region
+    const ar = (a.region || "").toLowerCase();
+    const hl = (a.headline || "").toLowerCase();
+    return !SPECIFIC_REGION_KEYS.some(rk => {
+      if (rk === "EU / Europe" || rk === "UK") return false; // EU/UK are non-exclusive in Global
+      const kws = REGION_MATCH[rk] || [];
+      return kws.some(kw => ar.includes(kw) || hl.includes(kw));
     });
   }
+  const keywords = REGION_MATCH[reg] || [reg.toLowerCase()];
+  const ar = (a.region || "").toLowerCase();
+  const hl = (a.headline || "").toLowerCase();
+  // EU filter: exclude UK-only articles
+  if (reg === "EU / Europe") {
+    const ukOnly = ["ofsi", "hm treasury", "uk government", "united kingdom"].some(kw => ar.includes(kw));
+    if (ukOnly) return false;
+  }
+  return keywords.some(kw => ar.includes(kw) || hl.includes(kw));
+};
+
+const filterArticles = (articles:Article[], sec:string, reg:string) => {
+  if (!articles || !Array.isArray(articles)) return [];
+  let pool = [...articles];
+  // Filter by section
+  if (sec && sec !== "all") pool = pool.filter(a => a.section === sec);
+  // Filter by region using explicit keyword matching
+  let result = reg === "All" ? pool : pool.filter(a => articleMatchesRegion(a, reg));
   // Sort newest first
   result.sort((a,b) => parseDate(b.date) - parseDate(a.date));
-  // Guarantee at least 5 articles when a region filter is active —
-  // pad with the most recent same-section articles not already in the list.
+  // Pin top 3 OFAC/Treasury articles relevant to this region at the top
+  const ofacPin = result.filter(isOFACArticle).slice(0, 3);
+  if (ofacPin.length > 0) {
+    const ofacIds = new Set(ofacPin.map(a => a.url || a.headline));
+    const rest    = result.filter(a => !ofacIds.has(a.url || a.headline));
+    result = [...ofacPin, ...rest];
+  }
+  // Guarantee at least 5 articles — pad with recent same-section articles
   const MIN_ARTICLES = 5;
   if (reg && reg !== "All" && result.length < MIN_ARTICLES) {
     const existing = new Set(result.map(a => a.url || a.headline));
-    const sectionPool = [...articles]
-      .filter(a => (sec === "all" || a.section === sec) && !existing.has(a.url || a.headline))
-      .sort((a,b) => parseDate(b.date) - parseDate(a.date));
-    result = [...result, ...sectionPool.slice(0, MIN_ARTICLES - result.length)];
-  }
-  // Pin top 5 OFAC articles at the top of the sanctions tab (All-regions view only)
-  if ((sec === "sanctions" || sec === "all") && reg === "All") {
-    const ofacTop = result.filter(isOFACArticle).slice(0, 5);
-    const ofacIds = new Set(ofacTop.map(a => a.url || a.headline));
-    const rest    = result.filter(a => !ofacIds.has(a.url || a.headline));
-    result = [...ofacTop, ...rest];
+    const pad = pool
+      .filter(a => !existing.has(a.url || a.headline))
+      .sort((a,b) => parseDate(b.date) - parseDate(a.date))
+      .slice(0, MIN_ARTICLES - result.length);
+    result = [...result, ...pad];
   }
   return result;
 };
@@ -746,10 +793,10 @@ export default function GlobalMonitor() {
         <div className={`idot d-${a.impact??"medium"}`}/>
         {section==="all" && <span className={`stag stag-${a.section}`}>{a.section==="bis"?"BIS":a.section}</span>}
         <span className={`art-tag ${tagCls(a.section)}`}>{a.category}</span>
-        <span className="art-region">{a.region}</span>
+        <span className="art-region">{decodeEntities(a.region)}</span>
         <span className="art-date">{formatDisplayDate(a.date)}</span>
       </div>
-      <h2 className="art-hl">{a.headline}</h2>
+      <h2 className="art-hl">{decodeEntities(a.headline)}</h2>
       {renderBody(a, key??a.id)}
     </article>
   );
