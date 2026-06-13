@@ -604,6 +604,7 @@ export default function GlobalMonitor() {
   const [fincenYears, setFincenYears]   = useState<number[]>([]);
   const [fincenYear, setFincenYear]     = useState<number|null>(null);
   const [penTab, setPenTab]             = useState<"ofac"|"fincen">("ofac");
+  const [searchBarOpen, setSearchBarOpen] = useState(false);
   const [penaltiesLoading, setPenaltiesLoading] = useState(true);
   const [penaltiesError, setPenaltiesError]   = useState("");
   const [globalQ, setGlobalQ]           = useState("");
@@ -931,18 +932,25 @@ export default function GlobalMonitor() {
       <div className="sec-nav"><div className="sec-nav-inner">
         {SECTIONS.map(s=><button key={s} className={`sec-tab ${s} ${section===s?"active":""}`} onClick={()=>handleSection(s)}>{LABELS[s]}</button>)}
       </div></div>
-      {section !== "penalties" && (
+      {section !== "penalties" && searchBarOpen && (
         <div className="san-search" style={{background: section==="bis"?"#f0f9ff":section==="economics"?"#f0fdf4":section==="occ"?"#fffbeb":section==="religion"?"#faf5ff":"#fef2f2", borderBottomColor: section==="bis"?"#7dd3fc":section==="economics"?"#86efac":section==="occ"?"#fcd34d":section==="religion"?"#d8b4fe":"#fca5a5"}}><div className="san-inner">
           <span className="san-lbl" style={{color: section==="bis"?"#0369a1":section==="economics"?"#15803d":section==="occ"?"#b45309":section==="religion"?"#6d28d9":"#cc0000"}}>⊘ Search {section==="all"?"All":section.toUpperCase()}</span>
-          <input className="san-q" placeholder='Keyword — "Iran oil", "EU 20th", "OFSI"' value={sanQ} onChange={e=>setSanQ(e.target.value)} onKeyDown={e=>e.key==="Enter"&&doSearch()}/>
+          <input className="san-q" placeholder='Keyword — "Iran oil", "EU 20th", "OFSI"' value={sanQ} onChange={e=>setSanQ(e.target.value)} onKeyDown={e=>e.key==="Enter"&&doSearch()} autoFocus/>
           <input className="date-in" type="date" value={dateFrom} onChange={e=>{setDateFrom(e.target.value);if(e.target.value||dateTo)setSanOn(true);}} title="From date"/>
           <span style={{color:"#5a3020",fontFamily:"var(--mono)",fontSize:".65rem"}}>→</span>
           <input className="date-in" type="date" value={dateTo} onChange={e=>{setDateTo(e.target.value);if(e.target.value||dateFrom)setSanOn(true);}} title="To date"/>
           <button className="san-go" onClick={doSearch}>Search</button>
-          {sanOn && <button className="san-x" onClick={clearSearch}>✕ Clear</button>}
+          {sanOn && <button className="san-x" onClick={()=>{clearSearch();setSearchBarOpen(false);}}>✕ Clear</button>}
+          <button className="san-x" onClick={()=>setSearchBarOpen(false)} style={{marginLeft:"auto"}}>✕</button>
         </div></div>
       )}
       <div className="toolbar"><div className="toolbar-inner">
+        {section !== "penalties" && (
+          <button className={`pill ${searchBarOpen||sanOn?"on":""}`}
+            onClick={()=>setSearchBarOpen(v=>!v)}
+            style={{fontFamily:"var(--mono)",fontSize:".58rem"}}
+          >⊘ {sanOn?"Filtered":"Filter"}</button>
+        )}
         {(REGIONS[section]?.length||0)>1 && <><span className="tlbl">Region:</span>
           {(REGIONS[section]||["All"]).map(r=><button key={r} className={`pill ${region===r?"on":""}`} onClick={()=>setRegion(r)}>{r}</button>)}
         </>}
@@ -1268,7 +1276,7 @@ export default function GlobalMonitor() {
               {penTab==="ofac" && (
                 <>
                 <div style={{fontSize:".65rem",color:"#6b7280",fontFamily:"var(--mono)",marginBottom:"8px"}}>
-                  Source: <a href={`https://ofac.treasury.gov/civil-penalties-and-enforcement-information/${penaltyYear||"2026"}-enforcement-information`} target="_blank" rel="noopener" style={{color:"#1a56db"}}>OFAC {penaltyYear||"All Years"} Civil Penalties ↗</a>
+                  Source: <a href={penaltyYear ? `https://ofac.treasury.gov/civil-penalties-and-enforcement-information/${penaltyYear}-enforcement-information` : "https://ofac.treasury.gov/civil-penalties-and-enforcement-information"} target="_blank" rel="noopener" style={{color:"#1a56db"}}>OFAC {penaltyYear||"All Years"} Civil Penalties ↗</a>
                 </div>
                 <div className="pen-wrap"><table className="pen-table">
                   <thead><tr>
