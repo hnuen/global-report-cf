@@ -282,22 +282,35 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean }> = [
   { name: "Google News — UK OFSI",                 url: "https://news.google.com/rss/search?q=OFSI+UK+financial+sanctions+penalty+2026&hl=en-US&gl=US&ceid=US:en", official: true },
   { name: "Google News — Sanctions",              url: "https://news.google.com/rss/search?q=OFAC+sanctions+designations&hl=en-US&gl=US&ceid=US:en" },
   { name: "Google News — BIS Export Controls",    url: "https://news.google.com/rss/search?q=BIS+export+controls+Entity+List&hl=en-US&gl=US&ceid=US:en" },
-  { name: "Google News — EU Sanctions",           url: "https://news.google.com/rss/search?q=EU+sanctions+Russia+designations&hl=en-US&gl=US&ceid=US:en" },
+  { name: "Google News — EU Sanctions",           url: "https://news.google.com/rss/search?q=EU+France+Germany+sanctions+restrictive+measures+designations+2026&hl=en-US&gl=US&ceid=US:en" },
   { name: "Google News — Iran Sanctions",         url: "https://news.google.com/rss/search?q=Iran+sanctions+OFAC+2026&hl=en-US&gl=US&ceid=US:en" },
   { name: "Google News — Russia Sanctions",       url: "https://news.google.com/rss/search?q=Russia+sanctions+OFAC+designations+2026&hl=en-US&gl=US&ceid=US:en" },
   { name: "Google News — China Sanctions",        url: "https://news.google.com/rss/search?q=China+Hong+Kong+sanctions+export+controls+2026&hl=en-US&gl=US&ceid=US:en" },
-  { name: "Google News — DPRK Sanctions",         url: "https://news.google.com/rss/search?q=North+Korea+DPRK+sanctions+2026&hl=en-US&gl=US&ceid=US:en" },
+  { name: "Google News — DPRK Sanctions",         url: "https://news.google.com/rss/search?q=North+Korea+DPRK+OFAC+sanctions+designations+2026&hl=en-US&gl=US&ceid=US:en" },
   { name: "Google News — Middle East Sanctions",  url: "https://news.google.com/rss/search?q=Middle+East+Gulf+sanctions+designations+2026&hl=en-US&gl=US&ceid=US:en" },
-  { name: "Google News — Southeast Asia",         url: "https://news.google.com/rss/search?q=Southeast+Asia+sanctions+Myanmar+2026&hl=en-US&gl=US&ceid=US:en" },
+  { name: "Google News — Southeast Asia",         url: "https://news.google.com/rss/search?q=ASEAN+Myanmar+Singapore+Malaysia+Indonesia+Philippines+Vietnam+sanctions+2026&hl=en-US&gl=US&ceid=US:en" },
   // ── India / Pakistan / Indonesia ─────────────────────────────────────────────
   // India DGFT (Directorate General of Foreign Trade) — export controls
   // India MEA — sanctions and foreign policy
   // Global Sanctions — India tracker
   // Google News — India sanctions BIS
-  { name: "Google News — India Sanctions",        url: "https://news.google.com/rss/search?q=India+sanctions+export+controls+DGFT+SCOMET+2026&hl=en-US&gl=US&ceid=US:en" },
-  { name: "Google News — India Pakistan",         url: "https://news.google.com/rss/search?q=India+Pakistan+sanctions+trade+ban+2026&hl=en-US&gl=US&ceid=US:en" },
-  { name: "Google News — Indonesia Sanctions",    url: "https://news.google.com/rss/search?q=Indonesia+sanctions+export+controls+BIS+2026&hl=en-US&gl=US&ceid=US:en" },
-];
+  { name: "Google News — India Sanctions",        url: "https://news.google.com/rss/search?q=India+Pakistan+sanctions+OFAC+export+controls+2026&hl=en-US&gl=US&ceid=US:en" },
+  { name: "Google News — India Pakistan",         url: "https://news.google.com/rss/search?q=site:aljazeera.com+Pakistan+Iran+India+sanctions&hl=en-US&gl=US&ceid=US:en" },
+  // OFAC country program pages — DPRK and Venezuela
+  { name: "OFAC — North Korea (DPRK)",
+    url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/north-korea-sanctions" },
+  { name: "OFAC — Venezuela",
+    url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/venezuela-sanctions" },
+  // Venezuela sanctions news
+  { name: "Google News — Venezuela Sanctions",
+    url: "https://news.google.com/rss/search?q=Venezuela+OFAC+Maduro+sanctions+designations+2026&hl=en-US&gl=US&ceid=US:en" },
+  // Singapore MAS + ASEAN government sanctions
+  { name: "Google News — Singapore ASEAN",
+    url: "https://news.google.com/rss/search?q=Singapore+MAS+Malaysia+Indonesia+ASEAN+sanctions+2026&hl=en-US&gl=US&ceid=US:en" },
+  // Al Jazeera — Pakistan/Iran/India coverage
+  { name: "Google News — Al Jazeera Pakistan Iran",
+    url: "https://news.google.com/rss/search?q=site:aljazeera.com+Pakistan+Iran+India+sanctions+nuclear+2026&hl=en-US&gl=US&ceid=US:en" },
+  ];
 
 // ── Main function: fetch all sources in parallel ──────────────────────────────
 // Generate Treasury press release URLs (sequential SB numbers)

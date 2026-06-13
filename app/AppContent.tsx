@@ -414,7 +414,7 @@ const REGION_MATCH: Record<string, string[]> = {
   "DPRK":             ["dprk", "north korea", "pyongyang", "kim jong", "korean people"],
   "Russia":           ["russia", "ukraine", "rosneft", "lukoil", "kremlin", "moscow", "zelensky", "zelenskyy"],
   "Cuba":             ["cuba", "gaesa", "havana", "cuban"],
-  "Venezuela":        ["venezuela", "maduro", "pdvsa", "caracas", "venezuelan"],
+  "Venezuela":        ["venezuela", "maduro", "pdvsa", "caracas", "venezuelan", "venezuela sanctions"],
   // European bodies — exclude UK (not in EU post-Brexit)
   "EU / Europe":      ["eu / europe", "eu council", "consilium.europa.eu", "european commission",
                        "european union", "eu sanctions", "eu restrictive", "balkans", "eu external action"],
@@ -447,6 +447,9 @@ const SOURCE_REGION_OVERRIDES: Record<string, string> = {
   "EU Council":      "EU / Europe",
   "EU External":     "EU / Europe",
   "EU Sanctions":    "EU / Europe",
+  // New targeted sources
+  "Singapore ASEAN": "SEA",
+  "Al Jazeera Pakistan Iran": "India / Pakistan",
 };
 
 const SPECIFIC_REGION_KEYS = Object.keys(REGION_MATCH);

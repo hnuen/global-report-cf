@@ -569,7 +569,9 @@ const SOURCE_BASE_URLS: Record<string, string> = {
   "UK Foreign Office — Sanctions":       "https://www.gov.uk",
   "State Dept — Iran Sanctions":         "https://www.state.gov",
   "State Dept — Venezuela Sanctions":    "https://www.state.gov",
-  "OFAC DPRK Sanctions":                 "https://ofac.treasury.gov",
+  "OFAC — North Korea (DPRK)":            "https://ofac.treasury.gov",
+  "OFAC — Venezuela":                     "https://ofac.treasury.gov",
+  "OFAC DPRK Sanctions":                  "https://ofac.treasury.gov",
   "State Dept — DPRK Sanctions":         "https://www.state.gov",
   "UN SC Sanctions Committees":          "https://www.un.org",
   // All OFAC program pages
@@ -652,8 +654,12 @@ function detectRegion(sourceName: string): string {
   if (sourceName.includes("— Iran") || sourceName.includes("Iran Sanctions")) return "Iran";
   if (sourceName.includes("— Russia") || sourceName.includes("Russia Sanctions") || sourceName.includes("Ukraine-Russia")) return "Russia";
   if (sourceName.includes("— Cuba")) return "Cuba";
+  if (sourceName.includes("— Venezuela") || sourceName.includes("Venezuela Sanctions")) return "Venezuela";
+  if (sourceName.includes("Singapore ASEAN")) return "SEA";
+  if (sourceName.includes("Al Jazeera Pakistan Iran")) return "India / Pakistan";
   if (sourceName.includes("— Venezuela")) return "Venezuela";
-  if (sourceName.includes("— North Korea") || sourceName.includes("DPRK")) return "DPRK";
+  if (sourceName.includes("— North Korea") || sourceName.includes("DPRK") ||
+      sourceName.includes("North Korea (DPRK)")) return "DPRK";
   if (sourceName.includes("— Hong Kong") || sourceName.includes("Chinese Military") || sourceName.includes("CAATSA")) return "China / HK";
   if (sourceName.includes("— Lebanon") || sourceName.includes("— Iraq") || sourceName.includes("— Libya") ||
       sourceName.includes("— Yemen") || sourceName.includes("— Sudan") || sourceName.includes("— Somalia") ||
