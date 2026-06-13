@@ -217,6 +217,16 @@ body{background:#ffffff}
 .fincen-stats{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:14px;padding:10px 14px;background:#f9fafb;border-radius:6px;border:1px solid #e5e7eb}
 .fincen-stat{font-size:12px;color:#6b7280;font-family:var(--font-mono)}
 .fincen-stat b{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:#cc0000;display:block}
+/* Key-figures compact strip — mobile only, hidden on desktop */
+.kf-strip{display:none;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;
+  gap:0;border-bottom:1px solid #e5e7eb;background:#fafafa;padding:0 4px;margin-bottom:10px}
+.kf-strip::-webkit-scrollbar{display:none}
+.kf-chip{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;padding:8px 14px;
+  border-right:1px solid #e5e7eb;min-width:80px}
+.kf-chip:last-child{border-right:none}
+.kf-chip-val{font-family:'Playfair Display',serif;font-size:.95rem;font-weight:700;line-height:1.1}
+.kf-chip-lbl{font-family:'IBM Plex Mono',monospace;font-size:.44rem;letter-spacing:.1em;
+  text-transform:uppercase;color:#9ca3af;margin-top:2px;text-align:center;white-space:nowrap}
 @media(max-width:768px){
   /* Layout */
   html,body{overflow-x:hidden;max-width:100vw}
@@ -277,16 +287,7 @@ body{background:#ffffff}
   .art-hl{font-size:.88rem}
   .pill{font-size:.5rem;padding:3px 6px}
 }
-/* Key-figures compact strip — shown only on mobile, hidden on desktop */
-.kf-strip{display:none;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;
-  gap:0;border-bottom:1px solid #e5e7eb;background:#fafafa;padding:0 4px;margin-bottom:10px}
-.kf-strip::-webkit-scrollbar{display:none}
-.kf-chip{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;padding:8px 14px;
-  border-right:1px solid #e5e7eb;min-width:80px}
-.kf-chip:last-child{border-right:none}
-.kf-chip-val{font-family:'Playfair Display',serif;font-size:.95rem;font-weight:700;line-height:1.1}
-.kf-chip-lbl{font-family:'IBM Plex Mono',monospace;font-size:.44rem;letter-spacing:.1em;
-  text-transform:uppercase;color:#9ca3af;margin-top:2px;text-align:center;white-space:nowrap}
+
 `;
 
 interface Article {
