@@ -574,7 +574,25 @@ export default function GlobalMonitor() {
   const [tabLiveError, setTabLiveError] = useState("");
   const [tabLiveSearched, setTabLiveSearched] = useState(false);
 
+  // Silent background auto-refresh — re-fetches briefing every 30 min.
+  // Only updates if new data has more articles (> 50) and a newer timestamp.
+  const AUTO_REFRESH_MS = 30 * 60 * 1000; // 30 minutes
+
   useEffect(() => {
+    const loadNews = () =>
+      fetch("/api/news").then(r=>r.json()).then((fresh: Briefing) => {
+        setData(prev => {
+          if (!prev) return fresh;
+          const freshCount = fresh?.articles?.length ?? 0;
+          if (freshCount >= 50 && fresh.lastUpdated !== prev.lastUpdated) {
+            console.log(`[auto-refresh] New briefing detected — ${freshCount} articles`);
+            return fresh;
+          }
+          return prev;
+        });
+      }).catch(() => {});
+
+    loadNews(); // initial load
     fetch("/api/news").then(r=>r.json()).then(setData)
       .catch(()=>setError("Could not load briefing."));
     fetch("/api/penalties").then(r=>r.json())
@@ -583,6 +601,9 @@ export default function GlobalMonitor() {
     fetch("/api/fincen").then(r=>r.json())
       .then((d:{records:FinCENPenalty[];years:number[]})=>{ setFincenPenalties(d.records); setFincenYears(d.years); })
       .catch(()=>{});
+
+    const timer = setInterval(loadNews, AUTO_REFRESH_MS);
+    return () => clearInterval(timer);
   }, []);
 
   const setPenYear = (y:number|null) => {

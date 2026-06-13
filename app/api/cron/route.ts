@@ -17,8 +17,20 @@ export async function GET(request: NextRequest) {
     }
   }
   try {
-    const { briefing, usedProvider, savedTo } = await refreshBriefing();
+    let { briefing, usedProvider, savedTo } = await refreshBriefing();
     console.log(`[cron] Done — ${briefing.articles.length} articles via ${usedProvider}, saved to: ${savedTo.join(", ")}`);
+
+    // Auto-retry if article count is suspiciously low (< 50 = likely a fetch failure)
+    const MIN_ARTICLES = 50;
+    if (briefing.articles.length < MIN_ARTICLES) {
+      console.log(`[cron] Only ${briefing.articles.length} articles — below threshold of ${MIN_ARTICLES}. Retrying in 8 s...`);
+      await new Promise(r => setTimeout(r, 8_000));
+      const retry = await refreshBriefing();
+      briefing    = retry.briefing;
+      usedProvider = retry.usedProvider;
+      savedTo     = retry.savedTo;
+      console.log(`[cron] Retry done — ${briefing.articles.length} articles via ${retry.usedProvider}, saved to: ${retry.savedTo.join(", ")}`);
+    }
 
     // Sync new OFAC penalties (at most once per 24 h — skips if recently run)
     const penaltySync = await maybeSyncPenalties(PENALTIES).catch(e => {
