@@ -383,6 +383,14 @@ const parseDate = (d:string): number => {
     return isNaN(t) ? 0 : t;
   } catch { return 0; }
 };
+const OFAC_SOURCE_PATTERNS = [
+  "ofac.treasury.gov", "OFAC", "U.S. Treasury", "Treasury Press Release",
+];
+const isOFACArticle = (a: Article) =>
+  OFAC_SOURCE_PATTERNS.some(p =>
+    (a.source||"" ).includes(p) || (a.sourceUrl||"").includes("ofac.treasury.gov") || (a.sourceUrl||"").includes("home.treasury.gov")
+  );
+
 const filterArticles = (articles:Article[], sec:string, reg:string) => {
   if (!articles || !Array.isArray(articles)) return [];
   let result = [...articles];
@@ -400,6 +408,13 @@ const filterArticles = (articles:Article[], sec:string, reg:string) => {
   }
   // Sort newest first
   result.sort((a,b) => parseDate(b.date) - parseDate(a.date));
+  // Pin top 5 OFAC articles at the top of the sanctions tab
+  if ((sec === "sanctions" || sec === "all") && reg === "All") {
+    const ofacTop = result.filter(isOFACArticle).slice(0, 5);
+    const ofacIds = new Set(ofacTop.map(a => a.url || a.headline));
+    const rest    = result.filter(a => !ofacIds.has(a.url || a.headline));
+    result = [...ofacTop, ...rest];
+  }
   return result;
 };
 
