@@ -408,7 +408,17 @@ const filterArticles = (articles:Article[], sec:string, reg:string) => {
   }
   // Sort newest first
   result.sort((a,b) => parseDate(b.date) - parseDate(a.date));
-  // Pin top 5 OFAC articles at the top of the sanctions tab
+  // Guarantee at least 5 articles when a region filter is active —
+  // pad with the most recent same-section articles not already in the list.
+  const MIN_ARTICLES = 5;
+  if (reg && reg !== "All" && result.length < MIN_ARTICLES) {
+    const existing = new Set(result.map(a => a.url || a.headline));
+    const sectionPool = [...articles]
+      .filter(a => (sec === "all" || a.section === sec) && !existing.has(a.url || a.headline))
+      .sort((a,b) => parseDate(b.date) - parseDate(a.date));
+    result = [...result, ...sectionPool.slice(0, MIN_ARTICLES - result.length)];
+  }
+  // Pin top 5 OFAC articles at the top of the sanctions tab (All-regions view only)
   if ((sec === "sanctions" || sec === "all") && reg === "All") {
     const ofacTop = result.filter(isOFACArticle).slice(0, 5);
     const ofacIds = new Set(ofacTop.map(a => a.url || a.headline));
