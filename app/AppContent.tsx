@@ -218,8 +218,8 @@ body{background:#ffffff}
 .fincen-stat{font-size:12px;color:#6b7280;font-family:var(--font-mono)}
 .fincen-stat b{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:#cc0000;display:block}
 @media(max-width:768px){
-  .layout{grid-template-columns:1fr;padding:12px 14px 44px}
-  .mast-inner{grid-template-columns:1fr;gap:4px;padding:10px 14px}
+  .layout{grid-template-columns:1fr;padding:12px 12px 44px}
+  .mast-inner{grid-template-columns:1fr;gap:4px;padding:10px 12px}
   .mast-l,.mast-r{display:none}
   .toolbar,.san-search,.upd-bar{padding:6px 10px}
   .san-inner{flex-direction:column;align-items:stretch}
@@ -232,11 +232,32 @@ body{background:#ffffff}
   .ofac-prog-select{min-width:0;width:100%;box-sizing:border-box}
   .art-head{font-size:1rem}
   .fincen-table th,.fincen-table td,.pen-table th,.pen-table td{font-size:.62rem;padding:4px 5px}
+  /* Wrap penalty tables in a scrollable container */
+  .pen-wrap,.fincen-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;width:100%;max-width:100%}
+  .pen-table,.fincen-table{min-width:520px}
+  /* Hide least-important columns on mobile */
+  .pen-table .pen-col-note,.fincen-table .fincen-col-note{display:none}
+  .pen-sort-row{flex-wrap:wrap;gap:4px}
+  /* Hide full sidebar on mobile — show compact strip instead */
+  aside{display:none}
+  .kf-strip{display:flex}
 }
 @media(max-width:420px){
-  .mast-title{font-size:1.6rem}
-  .sec-tab{font-size:.58rem;padding:7px 8px}
+  .mast-title{font-size:1.5rem}
+  .sec-tab{font-size:.55rem;padding:6px 7px}
+  .article{padding:10px 0}
+  .art-hl{font-size:.92rem}
 }
+/* Key-figures compact strip — shown only on mobile, hidden on desktop */
+.kf-strip{display:none;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;
+  gap:0;border-bottom:1px solid #e5e7eb;background:#fafafa;padding:0 4px;margin-bottom:10px}
+.kf-strip::-webkit-scrollbar{display:none}
+.kf-chip{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;padding:8px 14px;
+  border-right:1px solid #e5e7eb;min-width:80px}
+.kf-chip:last-child{border-right:none}
+.kf-chip-val{font-family:'Playfair Display',serif;font-size:.95rem;font-weight:700;line-height:1.1}
+.kf-chip-lbl{font-family:'IBM Plex Mono',monospace;font-size:.44rem;letter-spacing:.1em;
+  text-transform:uppercase;color:#9ca3af;margin-top:2px;text-align:center;white-space:nowrap}
 `;
 
 interface Article {
@@ -1120,6 +1141,26 @@ export default function GlobalMonitor() {
       )}
       <div className="layout">
         <main>
+          {/* Mobile-only compact key-figures strip — scrollable horizontal chips */}
+          {(() => {
+            const kfAll = sidebarSecs.flatMap(s => {
+              const kf = ((data.sidebar?.[s]?.keyFigures ?? []).length > 0
+                ? data.sidebar[s].keyFigures
+                : STATIC_SIDEBAR[s]?.keyFigures) ?? [];
+              return kf.slice(0, 2).map(f => ({ ...f, s }));
+            });
+            if (!kfAll.length) return null;
+            return (
+              <div className="kf-strip">
+                {kfAll.map((f, i) => (
+                  <div key={i} className="kf-chip">
+                    <span className={`kf-chip-val ${kvCls(f.s)}`}>{f.value}</span>
+                    <span className="kf-chip-lbl">{f.label}</span>
+                  </div>
+                ))}
+              </div>
+            );
+          })()}
           {sanOn && section !== "penalties" && (
             <div style={{marginBottom:24}}>
               <div className="sec-banner"><div className={`sec-stripe stripe-${section==="all"?"sanctions":section}`}/><span className="sec-title">{section==="all"?"All":"" } Search Results</span><span className="sec-count">{sanQ&&`"${sanQ}"`}</span></div>
@@ -1198,7 +1239,7 @@ export default function GlobalMonitor() {
                 <div style={{fontSize:".65rem",color:"#6b7280",fontFamily:"var(--mono)",marginBottom:"8px"}}>
                   Source: <a href={`https://ofac.treasury.gov/civil-penalties-and-enforcement-information/${penaltyYear||"2026"}-enforcement-information`} target="_blank" rel="noopener" style={{color:"#1a56db"}}>OFAC {penaltyYear||"All Years"} Civil Penalties ↗</a>
                 </div>
-                <table className="pen-table">
+                <div className="pen-wrap"><table className="pen-table">
                   <thead><tr>
                     <th onClick={()=>setPenaltySort("date")} style={{width:110}}>Date {penaltySort==="date"?"↓":""}</th>
                     <th>Name / Institution</th>
@@ -1229,7 +1270,7 @@ export default function GlobalMonitor() {
                       </tr>;
                     })}
                   </tbody>
-                </table>
+                </table></div>
                 </>
               )}
               {penTab==="fincen" && (
@@ -1237,7 +1278,7 @@ export default function GlobalMonitor() {
                 <div style={{fontSize:".65rem",color:"#6b7280",fontFamily:"var(--mono)",marginBottom:"8px"}}>
                   Source: <a href="https://www.fincen.gov/news/enforcement-actions" target="_blank" rel="noopener" style={{color:"#1a56db"}}>FinCEN Enforcement Actions ↗</a>
                 </div>
-                <table className="pen-table">
+                <div className="pen-wrap"><table className="pen-table">
                   <thead><tr>
                     <th style={{width:110}}>Date</th>
                     <th>Institution</th>
@@ -1272,7 +1313,7 @@ export default function GlobalMonitor() {
                       </tr>
                     ))}
                   </tbody>
-                </table>
+                </table></div>
                 </>
               )}
             </div>
