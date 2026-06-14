@@ -114,7 +114,22 @@ console.log(`[gemini-refresh] Calling Gemini at ${new Date().toISOString()}...`)
 console.log(`[gemini-refresh] Today: ${today}`);
 console.log(`[gemini-refresh] OFAC URLs: checking ${ofacDates.length} dates (${ofacDates.length * 3} URLs)`);
 
-const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`;
+// Try 2.5-flash first (better quality + grounding), fall back to 2.0-flash
+const GEMINI_MODELS = [
+  "gemini-2.5-flash",
+  "gemini-2.0-flash",
+];
+
+async function callGemini(model, body) {
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_API_KEY}`;
+  console.log(`[gemini-refresh] Trying model: ${model}`);
+  const res = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  });
+  return res;
+}
 
 const geminiBody = {
   system_instruction: { parts: [{ text: SYSTEM_PROMPT }] },
@@ -124,22 +139,27 @@ const geminiBody = {
 };
 
 let geminiRes;
-try {
-  geminiRes = await fetch(geminiUrl, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(geminiBody),
-  });
-} catch (e) {
-  console.error("[gemini-refresh] Gemini fetch failed:", e);
-  process.exit(1);
+let modelUsed;
+for (const model of GEMINI_MODELS) {
+  try {
+    geminiRes = await callGemini(model, geminiBody);
+    modelUsed = model;
+    if (geminiRes.ok) break;
+    const err = await geminiRes.text();
+    console.error(`[gemini-refresh] ${model} error ${geminiRes.status}: ${err.slice(0, 300)}`);
+    // reset body text for retry (response body consumed)
+    geminiRes = null;
+  } catch (e) {
+    console.error(`[gemini-refresh] ${model} fetch threw:`, e.message);
+    geminiRes = null;
+  }
 }
 
-if (!geminiRes.ok) {
-  const err = await geminiRes.text();
-  console.error(`[gemini-refresh] Gemini error ${geminiRes.status}: ${err.slice(0, 500)}`);
+if (!geminiRes?.ok) {
+  console.error("[gemini-refresh] All Gemini models failed — exiting");
   process.exit(1);
 }
+console.log(`[gemini-refresh] Using model: ${modelUsed}`);
 
 const geminiData = await geminiRes.json();
 const rawText = geminiData.candidates
@@ -183,22 +203,35 @@ const ofacArticles = briefing.articles?.filter(a =>
 console.log(`[gemini-refresh] OFAC recent-action articles: ${ofacArticles.length}`);
 ofacArticles.forEach(a => console.log(`  → ${a.date}: ${a.headline} (${a.sourceUrl})`));
 
-// ── POST to /api/save-briefing ─────────────────────────────────────────────
+// ── POST to /api/save-briefing (retry once on failure) ─────────────────────
 console.log(`[gemini-refresh] Saving to ${APP_URL}/api/save-briefing ...`);
 
-const saveRes = await fetch(`${APP_URL}/api/save-briefing`, {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-    "x-save-secret": SAVE_SECRET,
-  },
-  body: JSON.stringify(briefing),
-});
+async function trySave() {
+  const saveRes = await fetch(`${APP_URL}/api/save-briefing`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "x-save-secret": SAVE_SECRET,
+    },
+    body: JSON.stringify(briefing),
+  });
+  const saveData = await saveRes.json().catch(() => ({}));
+  return { saveRes, saveData };
+}
 
-const saveData = await saveRes.json().catch(() => ({}));
+let { saveRes, saveData } = await trySave();
+
 if (!saveRes.ok || !saveData.ok) {
-  console.error(`[gemini-refresh] Save failed (${saveRes.status}):`, JSON.stringify(saveData));
+  console.warn(`[gemini-refresh] Save attempt 1 failed (${saveRes.status}): ${JSON.stringify(saveData)} — retrying in 5s`);
+  await new Promise(r => setTimeout(r, 5000));
+  ({ saveRes, saveData } = await trySave());
+}
+
+if (!saveRes.ok || !saveData.ok) {
+  console.error(`[gemini-refresh] Save failed after retry (${saveRes.status}): ${JSON.stringify(saveData)}`);
+  // Log briefing summary so we know what would have been saved
+  console.error(`[gemini-refresh] Briefing had ${briefing.articles?.length} articles, lastUpdated: ${briefing.lastUpdated}`);
   process.exit(1);
 }
 
-console.log(`[gemini-refresh] ✅ Saved successfully — ${saveData.articleCount} articles`);
+console.log(`[gemini-refresh] ✅ Saved successfully — ${saveData.articleCount} articles, lastUpdated: ${saveData.lastUpdated}`);
