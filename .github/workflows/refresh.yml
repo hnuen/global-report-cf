@@ -2,12 +2,15 @@ name: Refresh Global Report
 
 on:
   schedule:
-    # All times UTC (EDT = UTC-4, EST = UTC-5)
-    # Peak 8am-6pm ET: every 15 min  →  UTC hours 12-21 (EDT) covers 8:00am-5:45pm
-    - cron: '0,15,30,45 12-21 * * *'
-    # Off-peak 6pm-8am ET: every hour  →  UTC hours 0-11 + 22-23
-    - cron: '0 0-11,22,23 * * *'
-    # Total: 40 peak + 14 off-peak = 54 Gemini calls/day (well under 250 RPD free limit)
+    # All times EDT (UTC-4). Free tier: 20 RPD — total below = 15 calls/day
+    # 9am, 12pm, 1pm, 5pm, 6pm ET — hourly slots outside the 30-min windows
+    - cron: '0 13,16,17,21,22 * * *'
+    # 8:30am, 9:30am, 5:30pm ET
+    - cron: '30 12,13,21 * * *'
+    # 10am–11:30am ET — every 30 min (10:00, 10:30, 11:00, 11:30)
+    - cron: '0,30 14,15 * * *'
+    # 2pm–4:30pm ET — every 30 min (2:00, 2:30, 3:00, 3:30, 4:00, 4:30)
+    - cron: '0,30 18,19,20 * * *'
   workflow_dispatch:
     inputs:
       job:
@@ -18,8 +21,8 @@ on:
 jobs:
   refresh:
     if: |
-      github.event_name == 'workflow_dispatch' && github.event.inputs.job != 'monitor' ||
-      github.event_name == 'schedule' && !contains(github.event.schedule, '15 ')
+      github.event_name == 'schedule' ||
+      github.event_name == 'workflow_dispatch' && github.event.inputs.job != 'monitor'
     runs-on: ubuntu-latest
     timeout-minutes: 8
     env:
@@ -50,8 +53,7 @@ jobs:
 
   monitor:
     if: |
-      github.event_name == 'workflow_dispatch' && github.event.inputs.job == 'monitor' ||
-      github.event_name == 'schedule' && contains(github.event.schedule, '15 ')
+      github.event_name == 'workflow_dispatch' && github.event.inputs.job == 'monitor'
     runs-on: ubuntu-latest
     timeout-minutes: 5
     env:
