@@ -1140,11 +1140,7 @@ export default function GlobalMonitor() {
           <div style={{display:"flex",alignItems:"center",gap:5,flexShrink:0,flexWrap:"wrap"}}>
             {refreshing ? <><span className="spin-dot"/><span className="upd-text">{refreshQueued?"Queued…":"Refreshing…"}</span></>
               : <><span className="live-dot"/><span className="upd-text">{data.lastUpdated} · {allFiltered.length} stories</span></>}
-            {!refreshing && bgRefreshNextGroup > 0 && bgRefreshCountdown > 0 && (
-              <span className="upd-text" style={{color:"#9ca3af",fontSize:".54rem"}}>
-                · batch {bgRefreshNextGroup}/4 in {Math.floor(bgRefreshCountdown/60)}:{String(bgRefreshCountdown%60).padStart(2,"0")}
-              </span>
-            )}
+
             {error && <span className="err-msg">{error}</span>}
           </div>
           <span style={{color:"#d1d5db",fontFamily:"var(--mono)"}}>|</span>

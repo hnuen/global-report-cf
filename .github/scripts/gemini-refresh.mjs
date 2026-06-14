@@ -17,17 +17,7 @@ const SAVE_SECRET    = process.env.SAVE_BRIEFING_SECRET || "";
 if (!GEMINI_API_KEY) { console.error("Missing GEMINI_API_KEY"); process.exit(1); }
 if (!APP_URL)        { console.error("Missing APP_URL");        process.exit(1); }
 
-// ── Fetch OFAC recent-actions pages directly (GitHub Actions IPs not blocked) ─
-// ofac.treasury.gov returns 403 from Cloudflare IPs, but GitHub Actions can reach it.
-// URL pattern: /recent-actions/YYYYMMDD, /YYYYMMDD_33, /YYYYMMDD_66 (multiple actions/day)
-const ofacDates = Array.from({ length: 7 }, (_, i) => {
-  const d = new Date();
-  d.setDate(d.getDate() - i);
-  return d.getFullYear().toString() +
-    String(d.getMonth() + 1).padStart(2, "0") +
-    String(d.getDate()).padStart(2, "0");
-});
-
+// ── Scrape OFAC pages directly (GitHub Actions IPs not blocked by ofac.treasury.gov) ─
 function stripHtml(html) {
   return html
     .replace(/<script[\s\S]*?<\/script>/gi, " ")
@@ -38,38 +28,89 @@ function stripHtml(html) {
     .trim();
 }
 
-const ofacPages = [];
-console.log(`[gemini-refresh] Fetching OFAC recent-actions pages for ${ofacDates.length} days...`);
-for (const code of ofacDates) {
-  for (const suffix of ["", "_33", "_66"]) {
-    const url = `https://ofac.treasury.gov/recent-actions/${code}${suffix}`;
-    try {
-      const res = await fetch(url, {
-        signal: AbortSignal.timeout(10000),
-        headers: { "User-Agent": "Mozilla/5.0 (compatible; sanctions-monitor/1.0; +https://github.com)" },
-      });
-      if (res.ok) {
-        const html = await res.text();
-        const text = stripHtml(html);
-        if (text.length > 300) {
-          ofacPages.push({ url, text: text.slice(0, 3000) });
-          console.log(`[gemini-refresh] ✅ OFAC ${url}: ${text.length} chars`);
-        }
-      } else if (res.status !== 404) {
-        console.warn(`[gemini-refresh] OFAC ${url}: HTTP ${res.status}`);
-      }
-    } catch (e) {
-      console.warn(`[gemini-refresh] OFAC ${url}: ${e.message}`);
-    }
+async function fetchOfac(url) {
+  try {
+    const res = await fetch(url, {
+      signal: AbortSignal.timeout(15000),
+      headers: {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+        "Cache-Control": "no-cache",
+        "Pragma": "no-cache",
+      },
+    });
+    if (!res.ok) { console.warn(`[ofac] ${url}: HTTP ${res.status}`); return null; }
+    return await res.text();
+  } catch (e) {
+    console.warn(`[ofac] ${url}: ${e.message}`);
+    return null;
   }
 }
-console.log(`[gemini-refresh] OFAC pages fetched: ${ofacPages.length} (of up to ${ofacDates.length * 3})`);
 
-const ofacContext = ofacPages.length > 0
-  ? ofacPages.map(p => `\n--- ${p.url} ---\n${p.text}`).join("\n")
-  : "No OFAC pages accessible — use Google Search grounding to find recent OFAC actions.";
+// 1. Parse recent-actions listing to extract entry titles + URLs (avoids fetching each date page)
+function parseRecentActions(html) {
+  const entries = [];
+  // Each entry: <a href="/recent-actions/YYYYMMDD...">Title</a> followed by date text
+  const linkRe = /href="(https?:\/\/ofac\.treasury\.gov\/recent-actions\/(\d{8}[^"]*))">([^<]+)<\/a>/g;
+  const dateRe = /(\w+ \d+, \d{4})/;
+  let m;
+  // Also capture surrounding text for date
+  const blocks = html.split(/<\/li>|<\/p>/);
+  for (const block of blocks) {
+    const lm = /href="(https?:\/\/ofac\.treasury\.gov\/recent-actions\/(\d{8}[^"]*))">([^<]+)<\/a>/.exec(block);
+    if (!lm) continue;
+    const dm = dateRe.exec(stripHtml(block));
+    entries.push({ url: lm[1], code: lm[2], title: lm[3].trim(), date: dm?.[1] ?? "" });
+  }
+  return entries;
+}
 
-const ofacUrls = ofacPages.map(p => p.url).join("\n  ");
+// 2. Parse civil penalties table
+function parseCivilPenalties(html) {
+  const rows = [];
+  // Match table rows: date | name | count | amount
+  const rowRe = /<tr[^>]*>([\s\S]*?)<\/tr>/gi;
+  const cellRe = /<td[^>]*>([\s\S]*?)<\/td>/gi;
+  let rm;
+  while ((rm = rowRe.exec(html)) !== null) {
+    const cells = [];
+    let cm;
+    const cellHtml = rm[1];
+    const tmpRe = /<td[^>]*>([\s\S]*?)<\/td>/gi;
+    while ((cm = tmpRe.exec(cellHtml)) !== null) {
+      cells.push(stripHtml(cm[1]).trim());
+    }
+    if (cells.length >= 4 && /\d{2}\/\d{2}\/\d{4}/.test(cells[0])) {
+      const linkMatch = /href="([^"]+)"/.exec(rm[1]);
+      rows.push({ date: cells[0], name: cells[1], count: cells[2], amount: cells[3], pdfUrl: linkMatch?.[1] ?? "" });
+    }
+  }
+  return rows;
+}
+
+console.log("[gemini-refresh] Fetching OFAC recent-actions listing...");
+const recentActionsHtml = await fetchOfac("https://ofac.treasury.gov/recent-actions");
+const recentActions = recentActionsHtml ? parseRecentActions(recentActionsHtml) : [];
+console.log(`[gemini-refresh] Recent actions parsed: ${recentActions.length} entries`);
+recentActions.slice(0, 10).forEach(e => console.log(`  ${e.date} — ${e.title} (${e.url})`));
+
+console.log("[gemini-refresh] Fetching OFAC civil penalties page...");
+const penaltiesHtml = await fetchOfac("https://ofac.treasury.gov/civil-penalties-and-enforcement-information");
+const civilPenalties = penaltiesHtml ? parseCivilPenalties(penaltiesHtml) : [];
+console.log(`[gemini-refresh] Civil penalties parsed: ${civilPenalties.length} rows`);
+civilPenalties.forEach(r => console.log(`  ${r.date} — ${r.name}: $${r.amount}`));
+
+// Build context strings for Gemini
+const recentActionsContext = recentActions.length > 0
+  ? recentActions.slice(0, 15).map(e =>
+      `• ${e.date} — ${e.title}\n  URL: ${e.url}`
+    ).join("\n")
+  : "Unavailable — use Google Search: site:ofac.treasury.gov/recent-actions";
+
+const penaltiesContext = civilPenalties.length > 0
+  ? civilPenalties.map(r =>
+      `• ${r.date} — ${r.name} — $${r.amount}${r.pdfUrl ? `\n  PDF: ${r.pdfUrl}` : ""}`
+    ).join("\n")
+  : "Unavailable — use Google Search: site:ofac.treasury.gov civil penalties 2026";
 
 const today = new Date().toLocaleString("en-US", {
   weekday: "long", year: "numeric", month: "long", day: "numeric",
@@ -118,12 +159,11 @@ SECTIONS:
 Write 3-4 articles per section (18-24 total). Each body is an array of 2-3 full editorial paragraphs.
 Real current facts from web search only. Include real source names and URLs.
 
-OFAC RECENT ACTIONS — PRE-FETCHED CONTENT:
-The user message contains the raw text of ofac.treasury.gov/recent-actions/YYYYMMDD pages fetched directly.
-URL pattern: /YYYYMMDD = first action, /YYYYMMDD_33 = second, /YYYYMMDD_66 = third action on same date.
-For every OFAC action article, sourceUrl MUST be the exact /recent-actions/YYYYMMDD URL from the fetched content.
-Write one article per distinct OFAC action found. Do NOT merge multiple actions into one article.
-If no pages were fetched, use Google Search: site:ofac.treasury.gov/recent-actions
+OFAC RECENT ACTIONS — LIVE DATA:
+The user message contains entries scraped directly from ofac.treasury.gov/recent-actions.
+Each bullet is one action: date, title, and URL. Write one article per entry. Do NOT merge entries.
+sourceUrl MUST be the exact URL listed for that entry.
+For any entry without enough detail, use Google Search grounding to find more context.
 
 BIS: search site:federalregister.gov "bureau of industry" "entity list" for current month.
 Al Jazeera required for Middle East, Iran, Gulf, and Islamic world stories.
@@ -137,11 +177,15 @@ CHINA/HK SANCTIONS — search for:
 
 const userMsg = `Today is ${today}.
 
-══ OFAC RECENT ACTIONS — RAW PAGE CONTENT (directly fetched) ══
-${ofacContext}
+══ OFAC RECENT ACTIONS (live from ofac.treasury.gov/recent-actions) ══
+${recentActionsContext}
 
-For each OFAC action page above: write one article per distinct action. Use the page URL as sourceUrl.
-If a page was not accessible, use Google Search grounding: search "site:ofac.treasury.gov/recent-actions" to find actions.
+Write one article per entry above. sourceUrl = the URL listed. Do NOT merge multiple entries into one article.
+
+══ OFAC CIVIL PENALTIES 2026 (live from ofac.treasury.gov/civil-penalties-and-enforcement-information) ══
+${penaltiesContext}
+
+Write one penalties article per entry above (section: "penalties"). Include exact dollar amounts. sourceUrl = https://ofac.treasury.gov/civil-penalties-and-enforcement-information
 
 For BIS: search Federal Register for Entity List additions this month.
 Search the web for the latest developments across all six domains. JSON only.`;
