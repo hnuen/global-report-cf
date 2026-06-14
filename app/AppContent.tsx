@@ -49,7 +49,9 @@ body{background:#ffffff}
 .san-x{padding:7px 10px;background:transparent;border:1px solid #d1d5db;border-radius:3px;color:#6b7280;font-family:var(--mono);font-size:.6rem;cursor:pointer}
 .san-x:hover{border-color:#cc0000}
 .ctrl-bar{background:#f9fafb;border-bottom:1px solid #e5e7eb;padding:5px 20px}
-.ctrl-inner{max-width:1140px;margin:0 auto;display:flex;gap:8px;align-items:center;flex-wrap:nowrap;overflow:hidden}
+.ctrl-inner{max-width:1140px;margin:0 auto;display:flex;flex-direction:column;gap:0}
+.ctrl-main{display:flex;align-items:center;gap:8px;flex-wrap:nowrap;overflow:hidden;padding:5px 0}
+.ctrl-regions{display:flex;align-items:center;gap:6px;padding:3px 0 5px;border-top:1px solid #f3f4f6;flex-wrap:wrap}
 .pill{padding:4px 10px;border-radius:3px;border:1px solid #d1d5db;background:transparent;color:#374151;font-family:var(--mono);font-size:.58rem;letter-spacing:.07em;cursor:pointer;transition:all .15s;white-space:nowrap}
 .pill:hover{border-color:#111111;color:#111111}.pill.on{background:#111111;border-color:#111111;color:#ffffff}
 .tlbl{font-family:var(--mono);font-size:.58rem;color:#9ca3af;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
@@ -1057,57 +1059,57 @@ export default function GlobalMonitor() {
         </div></div>
       )}
       <div className="ctrl-bar"><div className="ctrl-inner">
-        {/* Left: live status */}
-        <div style={{display:"flex",alignItems:"center",gap:5,flexShrink:0}}>
-          {refreshing ? <><span className="spin-dot"/><span className="upd-text">{refreshQueued?"Queued…":"Refreshing…"}</span></>
-            : <><span className="live-dot"/><span className="upd-text">{data.lastUpdated} · {allFiltered.length} stories</span></>}
-          {error && <span className="err-msg">{error}</span>}
-        </div>
-        <span style={{color:"#d1d5db",fontFamily:"var(--mono)"}}>|</span>
-        {section !== "penalties" && (
-          <button className={`pill ${searchBarOpen||sanOn?"on":""}`}
-            onClick={()=>setSearchBarOpen(v=>!v)}
-            style={{fontFamily:"var(--mono)",fontSize:".58rem"}}
-          >⊘ {sanOn?"Filtered":"Filter"}</button>
-        )}
-        {showGlobalSearch ? (
-          <>
-            <input className="gs-inline" placeholder="Search web…" value={globalQ}
-              onChange={e=>setGlobalQ(e.target.value)}
-              onKeyDown={e=>{if(e.key==="Enter"&&!globalSearching)doGlobalSearch();}}
-              autoFocus
-            />
-            <button className="pill on" onClick={()=>doGlobalSearch()} disabled={globalSearching}
-              style={{fontFamily:"var(--mono)",fontSize:".58rem",flexShrink:0}}>
-              {globalSearching?"…":"🔍 Go"}
+        {/* Row 1: status · filter · search · OFAC · refresh */}
+        <div className="ctrl-main">
+          <div style={{display:"flex",alignItems:"center",gap:5,flexShrink:0}}>
+            {refreshing ? <><span className="spin-dot"/><span className="upd-text">{refreshQueued?"Queued…":"Refreshing…"}</span></>
+              : <><span className="live-dot"/><span className="upd-text">{data.lastUpdated} · {allFiltered.length} stories</span></>}
+            {error && <span className="err-msg">{error}</span>}
+          </div>
+          <span style={{color:"#d1d5db",fontFamily:"var(--mono)"}}>|</span>
+          {section !== "penalties" && (
+            <button className={`pill ${searchBarOpen||sanOn?"on":""}`}
+              onClick={()=>setSearchBarOpen(v=>!v)}
+              style={{fontFamily:"var(--mono)",fontSize:".58rem"}}
+            >⊘ {sanOn?"Filtered":"Filter"}</button>
+          )}
+          {showGlobalSearch ? (
+            <>
+              <input className="gs-inline" placeholder="Search web…" value={globalQ}
+                onChange={e=>setGlobalQ(e.target.value)}
+                onKeyDown={e=>{if(e.key==="Enter"&&!globalSearching)doGlobalSearch();}}
+                autoFocus
+              />
+              <button className="pill on" onClick={()=>doGlobalSearch()} disabled={globalSearching}
+                style={{fontFamily:"var(--mono)",fontSize:".58rem",flexShrink:0}}>
+                {globalSearching?"…":"🔍 Go"}
+              </button>
+              <button className="san-x" onClick={()=>{setShowGlobalSearch(false);setGlobalResults([]);setGlobalQ("");}}>✕</button>
+            </>
+          ) : (
+            <button className="pill" onClick={()=>setShowGlobalSearch(true)}
+              style={{fontFamily:"var(--mono)",fontSize:".58rem"}}>🔍 Search</button>
+          )}
+          {section==="sanctions" && (
+            <button className={`pill ${ofacProgram?"on":""}`}
+              style={{fontFamily:"var(--mono)",fontSize:".6rem"}}
+              onClick={()=>setOfacProgram(ofacProgram?"":"iran")}
+            >⚖ OFAC Programs</button>
+          )}
+          <div style={{marginLeft:"auto",display:"flex",alignItems:"center",gap:6,flexShrink:0}}>
+            <input className="topic-input" placeholder="Focus topic…" value={refreshTopic} onChange={e=>setRefreshTopic(e.target.value)} onKeyDown={e=>e.key==="Enter"&&!refreshing&&handleRefresh()}/>
+            <button className="refresh-btn" onClick={handleRefresh} disabled={refreshing}>
+              {refreshing ? <><span className="spin">↻</span>Refreshing…</> : "↻ Refresh Now"}
             </button>
-            <button className="san-x" onClick={()=>{setShowGlobalSearch(false);setGlobalResults([]);setGlobalQ("");}}>✕</button>
-          </>
-        ) : (
-          <button className="pill" onClick={()=>setShowGlobalSearch(true)}
-            style={{fontFamily:"var(--mono)",fontSize:".58rem"}}>🔍 Search</button>
-        )}
+          </div>
+        </div>
+        {/* Row 2: region pills — only when regions exist */}
         {(REGIONS[section]?.length||0)>1 && (
-          <div style={{display:"flex",alignItems:"center",gap:6,overflow:"hidden",flexShrink:1,minWidth:0}}>
-            <span className="tlbl" style={{flexShrink:0}}>Region:</span>
-            <div style={{display:"flex",gap:4,overflowX:"auto",scrollbarWidth:"none",flexWrap:"nowrap"}}>
-              {(REGIONS[section]||["All"]).map(r=><button key={r} className={`pill ${region===r?"on":""}`}
-                style={{flexShrink:0}} onClick={()=>setRegion(r)}>{r}</button>)}
-            </div>
+          <div className="ctrl-regions">
+            <span className="tlbl">Region:</span>
+            {(REGIONS[section]||["All"]).map(r=><button key={r} className={`pill ${region===r?"on":""}`} onClick={()=>setRegion(r)}>{r}</button>)}
           </div>
         )}
-        {section==="sanctions" && (
-          <button className={`pill ${ofacProgram?"on":""}`}
-            style={{fontFamily:"var(--mono)",fontSize:".6rem"}}
-            onClick={()=>setOfacProgram(ofacProgram?"":"iran")}
-          >⚖ OFAC Programs</button>
-        )}
-        <div style={{marginLeft:"auto",display:"flex",alignItems:"center",gap:6,flexShrink:0}}>
-          <input className="topic-input" placeholder="Focus topic…" value={refreshTopic} onChange={e=>setRefreshTopic(e.target.value)} onKeyDown={e=>e.key==="Enter"&&!refreshing&&handleRefresh()}/>
-          <button className="refresh-btn" onClick={handleRefresh} disabled={refreshing}>
-            {refreshing ? <><span className="spin">↻</span>Refreshing…</> : "↻ Refresh Now"}
-          </button>
-        </div>
       </div></div>
       {showGlobalSearch && (globalSearching || globalResults.length > 0 || globalError) && (
         <div style={{borderBottom:"2px solid #111",background:"#fff"}}>
