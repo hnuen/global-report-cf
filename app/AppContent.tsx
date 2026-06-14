@@ -659,7 +659,7 @@ export default function GlobalMonitor() {
       // If still not detected after 45s, force reload to pick up whatever landed
       if (!detected) { window.location.reload(); }
     } catch(e){
-      setError("Couldn't queue a refresh — check that GITHUB_TOKEN is configured for this app.");
+      setError("Refresh failed — please try again in a moment.");
       console.error(e);
     }
     setRefreshing(false); setRefreshQueued(false);
