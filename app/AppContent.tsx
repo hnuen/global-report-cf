@@ -49,9 +49,9 @@ body{background:#ffffff}
 .san-x{padding:7px 10px;background:transparent;border:1px solid #d1d5db;border-radius:3px;color:#6b7280;font-family:var(--mono);font-size:.6rem;cursor:pointer}
 .san-x:hover{border-color:#cc0000}
 .ctrl-bar{background:#f9fafb;border-bottom:1px solid #e5e7eb;padding:5px 20px}
-.ctrl-inner{max-width:1140px;margin:0 auto;display:flex;flex-direction:column;gap:0}
-.ctrl-row1{display:flex;align-items:center;gap:6px;flex-wrap:wrap;padding:5px 0}
-.ctrl-row2{display:flex;align-items:center;gap:6px;padding:3px 0}
+.ctrl-inner{max-width:1140px;margin:0 auto;display:flex;gap:6px;align-items:center;flex-wrap:nowrap;padding:4px 0}
+.ctrl-row1{display:contents}
+.ctrl-row2{display:contents}
 .pill{padding:4px 10px;border-radius:3px;border:1px solid #d1d5db;background:transparent;color:#374151;font-family:var(--mono);font-size:.58rem;letter-spacing:.07em;cursor:pointer;transition:all .15s;white-space:nowrap}
 .region-select{display:none}
 .region-pills{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
@@ -252,13 +252,11 @@ body{background:#ffffff}
   .sec-nav-inner::-webkit-scrollbar{display:none}
   .sec-tab{font-size:.58rem;padding:9px 7px;white-space:nowrap}
 
-  /* Ctrl-bar: stack into two rows on mobile */
+  /* Ctrl-bar: two visual rows on mobile */
   .ctrl-bar{padding:0}
-  .ctrl-inner{flex-wrap:wrap;gap:0;padding:0;align-items:stretch}
-  /* Row 1: date/time + Filter + Search */
-  .ctrl-row1{display:flex;align-items:center;gap:6px;padding:5px 12px;width:100%;box-sizing:border-box;border-bottom:1px solid #f0f0f0;flex-wrap:wrap}
-  /* Row 2: focus topic + refresh */
-  .ctrl-row2{display:flex;align-items:center;gap:6px;padding:4px 12px;width:100%;box-sizing:border-box}
+  .ctrl-inner{flex-wrap:wrap;gap:0;padding:0;align-items:center}
+  .ctrl-row1{display:flex;align-items:center;gap:5px;padding:5px 12px;width:100%;box-sizing:border-box;border-bottom:1px solid #f0f0f0;flex-wrap:wrap}
+  .ctrl-row2{display:flex;align-items:center;gap:5px;padding:4px 12px;width:100%;box-sizing:border-box}
   .upd-text{font-size:.52rem;word-break:break-word}
   .refresh-btn{font-size:.52rem;padding:3px 8px;white-space:nowrap}
   .topic-input{flex:1;min-width:0;box-sizing:border-box}
