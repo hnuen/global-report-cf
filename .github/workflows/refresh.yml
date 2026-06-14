@@ -51,24 +51,28 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 8
     steps:
-      - name: Trigger refresh
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch official sources (fast path — no LLM)
         run: |
-          # refreshBriefing() fetches official sources (~20s) plus Gemini brief
-          # enrichment (batches of 3 with 4.5s rate-limit gaps — can take 60-120s+),
-          # so give curl enough headroom to actually receive the response. A
-          # "000" here means curl gave up before the Worker finished saving —
-          # that is a REAL failure (stale data stays in Redis), not an "OK".
+          # Fetches official RSS/HTML sources and saves to Redis quickly (~10s).
+          # Gemini (LLM) step below replaces this with enriched articles.
           HTTP=$(curl -s -o /tmp/resp.json -w "%{http_code}" \
             -X POST "${{ secrets.APP_URL }}/api/refresh" \
             -H "Content-Type: application/json" \
-            -d "{}" --max-time 420 || echo "000")
-          echo "Refresh HTTP: $HTTP"
+            -d "{}" --max-time 30 || echo "000")
+          echo "Official sources HTTP: $HTTP"
           cat /tmp/resp.json 2>/dev/null || true
-          if [ "$HTTP" = "200" ] || [ "$HTTP" = "202" ]; then
-            echo "OK"
-          else
-            echo "ERROR: HTTP $HTTP — refresh did not complete (timeout or server error); Redis data was likely NOT updated" && exit 1
-          fi
+
+      - name: Call Gemini + save enriched briefing
+        # Gemini with Google Search grounding takes 30-90s — too slow for CF's 30s wall-clock limit.
+        # We run it here (8-min GitHub Actions timeout) and POST the result to /api/save-briefing.
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          APP_URL: ${{ secrets.APP_URL }}
+          SAVE_BRIEFING_SECRET: ${{ secrets.SAVE_BRIEFING_SECRET }}
+        run: node .github/scripts/gemini-refresh.mjs
 
   monitor:
     if: |
