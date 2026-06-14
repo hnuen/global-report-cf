@@ -1476,7 +1476,7 @@ export default function GlobalMonitor() {
                       <td style={{padding:"9px 10px"}}><span style={{fontFamily:"'Playfair Display',serif",fontSize:"1rem",fontWeight:700,color:"#cc0000"}}>${(fincenPenalties.reduce((s,p)=>s+p.penalty,0)/1e9).toFixed(2)}B</span></td>
                       <td colSpan={3} style={{color:"#6b7280",padding:"9px 10px",fontSize:".65rem",fontFamily:"var(--mono)"}}>{fincenPenalties.filter(p=>p.egregious).length} egregious · {fincenPenalties.filter(p=>p.voluntaryDisclosure).length} VSD</td>
                     </tr>
-                    {[...fincenPenalties].sort((a,b)=>b.penalty-a.penalty).map(p=>(
+                    {[...fincenPenalties].sort((a,b)=>b.date.localeCompare(a.date)||b.penalty-a.penalty).map(p=>(
                       <tr key={p.id}>
                         <td style={{fontFamily:"var(--mono)",fontSize:".7rem",color:"#374151",whiteSpace:"nowrap"}}>{p.date}</td>
                         <td><div className="pen-inst">{p.institution}</div><div className="pen-viol" style={{fontSize:".65rem"}}>{p.institutionType}</div></td>
