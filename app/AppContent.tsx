@@ -17,6 +17,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 }
 body{background:#ffffff}
 .app{min-height:100vh;background:var(--paper);color:var(--ink);font-family:'IBM Plex Sans',sans-serif}
+.app{overflow-x:hidden;max-width:100vw}
 .masthead{background:#ffffff}
 .mast-inner{max-width:1140px;margin:0 auto;padding:14px 20px 11px;display:flex;justify-content:center;align-items:center;border-bottom:2px solid #e5e7eb}
 .mast-l,.mast-r{font-family:var(--mono);font-size:.6rem;color:#9ca3af;letter-spacing:.1em;text-transform:uppercase;line-height:1.8}
@@ -931,7 +932,6 @@ export default function GlobalMonitor() {
       )}
       <div className="sec-nav"><div className="sec-nav-inner">
         {SECTIONS.map(s=><button key={s} className={`sec-tab ${s} ${section===s?"active":""}`} onClick={()=>handleSection(s)}>{LABELS[s]}</button>)}
-        <button className={`sec-tab sec-search-btn ${showGlobalSearch?"active":""}`} onClick={()=>setShowGlobalSearch(v=>!v)} title="Global Search" style={{flex:"0 0 auto",borderRight:"none"}}>🔍</button>
       </div></div>
       {section !== "penalties" && searchBarOpen && (
         <div className="san-search" style={{background: section==="bis"?"#f0f9ff":section==="economics"?"#f0fdf4":section==="occ"?"#fffbeb":section==="religion"?"#faf5ff":"#fef2f2", borderBottomColor: section==="bis"?"#7dd3fc":section==="economics"?"#86efac":section==="occ"?"#fcd34d":section==="religion"?"#d8b4fe":"#fca5a5"}}><div className="san-inner">
@@ -946,12 +946,27 @@ export default function GlobalMonitor() {
         </div></div>
       )}
       <div className="ctrl-bar"><div className="ctrl-inner">
+        {/* Left: live status */}
+        <div style={{display:"flex",alignItems:"center",gap:5,flexShrink:0}}>
+          {refreshing ? <><span className="spin-dot"/><span className="upd-text">{refreshQueued?"Refresh queued…":"Refreshing…"}</span></>
+            : <><span className="live-dot"/><span className="upd-text">{data.lastUpdated} · {allFiltered.length} stories</span></>}
+          {error && <span className="err-msg">{error}</span>}
+        </div>
+        {/* Divider */}
+        <span style={{color:"#d1d5db",fontFamily:"var(--mono)"}}>|</span>
+        {/* Filter pill */}
         {section !== "penalties" && (
           <button className={`pill ${searchBarOpen||sanOn?"on":""}`}
             onClick={()=>setSearchBarOpen(v=>!v)}
             style={{fontFamily:"var(--mono)",fontSize:".58rem"}}
           >⊘ {sanOn?"Filtered":"Filter"}</button>
         )}
+        {/* Web Search pill */}
+        <button className={`pill ${showGlobalSearch?"on":""}`}
+          onClick={()=>setShowGlobalSearch(v=>!v)}
+          style={{fontFamily:"var(--mono)",fontSize:".58rem"}}
+        >🔍 Search</button>
+        {/* Region pills */}
         {(REGIONS[section]?.length||0)>1 && <><span className="tlbl">Region:</span>
           {(REGIONS[section]||["All"]).map(r=><button key={r} className={`pill ${region===r?"on":""}`} onClick={()=>setRegion(r)}>{r}</button>)}
         </>}
@@ -961,17 +976,15 @@ export default function GlobalMonitor() {
             onClick={()=>setOfacProgram(ofacProgram?"":"iran")}
           >⚖ OFAC Programs</button>
         )}
-        <div style={{marginLeft:"auto",display:"flex",alignItems:"center",gap:8,flexWrap:"wrap"}}>
-          {refreshing ? <><span className="spin-dot"/><span className="upd-text">{refreshQueued ? "Refresh queued… (~1-2 min)" : "Queuing…"}</span></>
-            : <><span className="live-dot"/><span className="upd-text">{data.lastUpdated} · {allFiltered.length} stories</span></>}
-          {error && <span className="err-msg">{error}</span>}
+        {/* Right: topic + refresh */}
+        <div style={{marginLeft:"auto",display:"flex",alignItems:"center",gap:6,flexShrink:0}}>
           <input className="topic-input" placeholder="Focus topic…" value={refreshTopic} onChange={e=>setRefreshTopic(e.target.value)} onKeyDown={e=>e.key==="Enter"&&!refreshing&&handleRefresh()}/>
           <button className="refresh-btn" onClick={handleRefresh} disabled={refreshing}>
             {refreshing ? <><span className="spin">↻</span>Refreshing…</> : "↻ Refresh Now"}
           </button>
         </div>
       </div></div>
-      {showGlobalSearch && (
+      {showGlobalSearch && (globalSearching || globalResults.length > 0 || globalError) && (
         <div style={{borderBottom:"2px solid #111",background:"#fff"}}>
           <div className="gs-panel">
             <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:"12px",borderBottom:"1px solid #e5e7eb",paddingBottom:"10px"}}>
