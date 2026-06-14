@@ -17,8 +17,8 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 }
 body{background:#ffffff}
 .app{min-height:100vh;background:var(--paper);color:var(--ink);font-family:'IBM Plex Sans',sans-serif}
-.masthead{background:#ffffff;border-bottom:2px solid #e5e7eb}
-.mast-inner{max-width:1140px;margin:0 auto;padding:14px 20px 11px;display:grid;grid-template-columns:1fr auto 1fr;align-items:end;gap:10px}
+.masthead{background:#ffffff}
+.mast-inner{max-width:1140px;margin:0 auto;padding:14px 20px 11px;display:flex;justify-content:center;align-items:center;border-bottom:2px solid #e5e7eb}
 .mast-l,.mast-r{font-family:var(--mono);font-size:.6rem;color:#9ca3af;letter-spacing:.1em;text-transform:uppercase;line-height:1.8}
 .mast-r{text-align:right}
 .pub-name{font-family:'Playfair Display',serif;font-size:clamp(1rem,2.4vw,1.7rem);font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:#111111;line-height:1;display:block;text-align:center}
@@ -47,13 +47,12 @@ body{background:#ffffff}
 .san-go:hover{background:#aa0000}
 .san-x{padding:7px 10px;background:transparent;border:1px solid #d1d5db;border-radius:3px;color:#6b7280;font-family:var(--mono);font-size:.6rem;cursor:pointer}
 .san-x:hover{border-color:#cc0000}
-.toolbar{background:#f9fafb;border-bottom:1px solid #e5e7eb;padding:6px 20px}
-.toolbar-inner{max-width:1140px;margin:0 auto;display:flex;gap:5px;align-items:center;flex-wrap:wrap}
+.ctrl-bar{background:#f9fafb;border-bottom:1px solid #e5e7eb;padding:5px 20px}
+.ctrl-inner{max-width:1140px;margin:0 auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .pill{padding:4px 10px;border-radius:3px;border:1px solid #d1d5db;background:transparent;color:#374151;font-family:var(--mono);font-size:.58rem;letter-spacing:.07em;cursor:pointer;transition:all .15s;white-space:nowrap}
 .pill:hover{border-color:#111111;color:#111111}.pill.on{background:#111111;border-color:#111111;color:#ffffff}
 .tlbl{font-family:var(--mono);font-size:.58rem;color:#9ca3af;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
-.upd-bar{background:#f9fafb;border-bottom:1px solid #e5e7eb;padding:5px 20px}
-.upd-inner{max-width:1140px;margin:0 auto;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+
 .live-dot{width:6px;height:6px;border-radius:50%;background:#4ade80;display:inline-block;animation:pulse 2s infinite;margin-right:4px;vertical-align:middle}
 .spin-dot{width:6px;height:6px;border-radius:50%;background:var(--gold2);display:inline-block;animation:pulse .8s infinite;margin-right:4px;vertical-align:middle}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
@@ -238,12 +237,12 @@ body{background:#ffffff}
   .kf-strip{display:flex}
 
   /* Nav & toolbar */
-  .toolbar,.san-search,.upd-bar{padding:6px 14px}
+  .ctrl-bar,.san-search{padding:5px 14px}
   .sec-nav-inner{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
   .sec-nav-inner::-webkit-scrollbar{display:none}
   .sec-tab{font-size:.6rem;padding:9px 8px;white-space:nowrap}
-  .toolbar-inner{flex-wrap:wrap;gap:4px}
-  .upd-inner{flex-wrap:wrap;gap:4px}
+  .ctrl-inner{flex-wrap:wrap;gap:4px}
+  
   .upd-text{font-size:.54rem;word-break:break-word}
   .refresh-btn{font-size:.54rem;padding:3px 8px}
 
@@ -946,7 +945,7 @@ export default function GlobalMonitor() {
           <button className="san-x" onClick={()=>setSearchBarOpen(false)} style={{marginLeft:"auto"}}>✕</button>
         </div></div>
       )}
-      <div className="toolbar"><div className="toolbar-inner">
+      <div className="ctrl-bar"><div className="ctrl-inner">
         {section !== "penalties" && (
           <button className={`pill ${searchBarOpen||sanOn?"on":""}`}
             onClick={()=>setSearchBarOpen(v=>!v)}
@@ -957,23 +956,20 @@ export default function GlobalMonitor() {
           {(REGIONS[section]||["All"]).map(r=><button key={r} className={`pill ${region===r?"on":""}`} onClick={()=>setRegion(r)}>{r}</button>)}
         </>}
         {section==="sanctions" && (
-          <button
-            className={`pill ${ofacProgram?"on":""}`}
-            style={{marginLeft:"auto",fontFamily:"var(--mono)",fontSize:".6rem"}}
+          <button className={`pill ${ofacProgram?"on":""}`}
+            style={{fontFamily:"var(--mono)",fontSize:".6rem"}}
             onClick={()=>setOfacProgram(ofacProgram?"":"iran")}
-          >
-            ⚖ OFAC Programs
-          </button>
+          >⚖ OFAC Programs</button>
         )}
-      </div></div>
-      <div className="upd-bar"><div className="upd-inner">
-        {refreshing ? <><span className="spin-dot"/><span className="upd-text">{refreshQueued ? "Refresh queued — waiting for new articles… (~1-2 min)" : "Queuing refresh…"}</span></>
-          : <><span className="live-dot"/><span className="upd-text">{data.lastUpdated} · {allFiltered.length} stories</span></>}
-        {error && <span className="err-msg">{error}</span>}
-        <input className="topic-input" placeholder="Optional: focus topic…" value={refreshTopic} onChange={e=>setRefreshTopic(e.target.value)} onKeyDown={e=>e.key==="Enter"&&!refreshing&&handleRefresh()}/>
-        <button className="refresh-btn" onClick={handleRefresh} disabled={refreshing}>
-          {refreshing ? <><span className="spin">↻</span>Refreshing…</> : "↻ Refresh Now"}
-        </button>
+        <div style={{marginLeft:"auto",display:"flex",alignItems:"center",gap:8,flexWrap:"wrap"}}>
+          {refreshing ? <><span className="spin-dot"/><span className="upd-text">{refreshQueued ? "Refresh queued… (~1-2 min)" : "Queuing…"}</span></>
+            : <><span className="live-dot"/><span className="upd-text">{data.lastUpdated} · {allFiltered.length} stories</span></>}
+          {error && <span className="err-msg">{error}</span>}
+          <input className="topic-input" placeholder="Focus topic…" value={refreshTopic} onChange={e=>setRefreshTopic(e.target.value)} onKeyDown={e=>e.key==="Enter"&&!refreshing&&handleRefresh()}/>
+          <button className="refresh-btn" onClick={handleRefresh} disabled={refreshing}>
+            {refreshing ? <><span className="spin">↻</span>Refreshing…</> : "↻ Refresh Now"}
+          </button>
+        </div>
       </div></div>
       {showGlobalSearch && (
         <div style={{borderBottom:"2px solid #111",background:"#fff"}}>
