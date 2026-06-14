@@ -641,10 +641,11 @@ export default function GlobalMonitor() {
       const result = await res.json().catch(() => ({}));
       if (!res.ok || !result.ok) throw new Error(result.error || `HTTP ${res.status}`);
       setRefreshQueued(true);
-      // Poll for the new briefing — LLM+source fetch can take 2-4 min, so poll 18×20s=6min
+      // Poll for the new briefing — trigger-refresh already saved to Redis before returning,
+      // so first check is immediate (1s), then every 3s for up to 45s.
       let detected = false;
-      for (let i = 0; i < 18; i++) {
-        await new Promise(r => setTimeout(r, 20000));
+      for (let i = 0; i < 15; i++) {
+        await new Promise(r => setTimeout(r, i === 0 ? 1000 : 3000));
         try {
           const newsRes = await fetch("/api/news");
           const newsData = await newsRes.json();
@@ -655,15 +656,14 @@ export default function GlobalMonitor() {
           }
         } catch { /* keep polling */ }
       }
-      // If poll window expired without detecting a change, force a page reload
-      // so the user gets whatever is now in Redis (the refresh may have landed late)
+      // If still not detected after 45s, force reload to pick up whatever landed
       if (!detected) { window.location.reload(); }
     } catch(e){
       setError("Couldn't queue a refresh — check that GITHUB_TOKEN is configured for this app.");
       console.error(e);
     }
     setRefreshing(false); setRefreshQueued(false);
-  }, [refreshTopic, data]);
+  }, [refreshTopic, data, section]);
 
   // Live web fallback — called when tab date/keyword search returns 0 local results
   const doTabLiveSearch = async (q: string, from: string, to: string, sec: string) => {
