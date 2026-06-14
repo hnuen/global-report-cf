@@ -1276,7 +1276,7 @@ export default function GlobalMonitor() {
               {penTab==="ofac" && (
                 <>
                 <div style={{fontSize:".65rem",color:"#6b7280",fontFamily:"var(--mono)",marginBottom:"8px"}}>
-                  Source: <a href={penaltyYear ? `https://ofac.treasury.gov/civil-penalties-and-enforcement-information/${penaltyYear}-enforcement-information` : "https://ofac.treasury.gov/civil-penalties-and-enforcement-information"} target="_blank" rel="noopener" style={{color:"#1a56db"}}>OFAC {penaltyYear||"All Years"} Civil Penalties ↗</a>
+                  Source: <a href={(!penaltyYear || penaltyYear === 2026) ? "https://ofac.treasury.gov/civil-penalties-and-enforcement-information" : `https://ofac.treasury.gov/civil-penalties-and-enforcement-information/${penaltyYear}-enforcement-information`} target="_blank" rel="noopener" style={{color:"#1a56db"}}>OFAC {penaltyYear||"All Years"} Civil Penalties ↗</a>
                 </div>
                 <div className="pen-wrap"><table className="pen-table">
                   <thead><tr>
