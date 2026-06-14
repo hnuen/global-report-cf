@@ -15,7 +15,7 @@ export async function loadBriefing(): Promise<Briefing | null> {
   return storage.load();
 }
 
-export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean; section?: string }): Promise<{
+export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean; section?: string; manualRefresh?: boolean }): Promise<{
   briefing: Briefing;
   usedProvider: string;
   savedTo: string[];
@@ -193,7 +193,7 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
     if (appliedCount > 0) console.log(`[orchestrator] Applied ${appliedCount} enriched briefs from library`);
   }
 
-  // ── Step 2: attempt LLM upgrade (best-effort, 17s timeout) ─────────────────
+  // ── Step 2: attempt LLM upgrade (best-effort, timeout varies) ───────────────
   // Runs AFTER the pre-save-ready structured briefing is built but BEFORE the
   // actual save.  If the LLM responds in time, its richer articles replace the
   // structured ones.  If it times out or errors, briefing stays as structured.
@@ -201,7 +201,9 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
   // Sanctions always runs LLM — OFAC date-URL search requires Gemini grounding
   const needsLLM = !opts?.skipLLM || opts?.section === "sanctions";
   if (needsLLM) {
-    const LLM_TIMEOUT_MS = 17_000;
+    // Manual refresh: shorter timeout so the user gets a response quickly.
+    // Scheduled runs (manualRefresh=false) get more time since they run in GitHub Actions.
+    const LLM_TIMEOUT_MS = opts?.manualRefresh ? 12_000 : 17_000;
     try {
       const llm = buildLLMManager();
       const result = await Promise.race([
@@ -239,9 +241,9 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
   }
 
   // Enrich articles with AI-generated briefs (cached in Redis, runs async)
-  // Skipped when skipLLM=true (in-process fast path) — endpoint must return quickly.
+  // Skipped on manual refresh (too slow for interactive use) and when skipLLM=true.
   // Best-effort: failure here does not lose data, since the core briefing is already saved above.
-  if (needsLLM && (usedProvider.includes("Official Sources") || usedProvider.includes("Local Analysis"))) {
+  if (needsLLM && !opts?.manualRefresh && (usedProvider.includes("Official Sources") || usedProvider.includes("Local Analysis"))) {
     try {
       console.log("[orchestrator] Enriching article briefs...");
       const sanctionsArticles = briefing.articles

@@ -434,7 +434,7 @@ export async function fetchOfficialSources(section?: string): Promise<OfficialSo
     : allSourcesUnfiltered;
   console.log(`[official] Section filter: ${section ?? "all"} → ${allSources.length}/${allSourcesUnfiltered.length} sources`);
   checkSubrequestBudget(allSources);
-  const MASTER_TIMEOUT = 10000;  // 10s — must leave headroom for LLM+save within CF 30s wall-clock limit
+  const MASTER_TIMEOUT = 5000;  // 5s — fast path; scheduled runs get more time via GitHub Actions
 
   const fetchOne = async (source: typeof allSources[0]) => {
     try {

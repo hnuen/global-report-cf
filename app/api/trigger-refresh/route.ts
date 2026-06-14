@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
     // Sanctions always uses LLM — needs Gemini to search OFAC date URLs via Google grounding
     const skipLLM = section !== "sanctions";
 
-    const { usedProvider, savedTo } = await refreshBriefing(body.topic, { skipLLM, section });
+    const { usedProvider, savedTo } = await refreshBriefing(body.topic, { skipLLM, section, manualRefresh: true });
     return NextResponse.json({
       ok: true,
       queued: false,
