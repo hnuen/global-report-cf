@@ -49,7 +49,7 @@ body{background:#ffffff}
 .san-x{padding:7px 10px;background:transparent;border:1px solid #d1d5db;border-radius:3px;color:#6b7280;font-family:var(--mono);font-size:.6rem;cursor:pointer}
 .san-x:hover{border-color:#cc0000}
 .ctrl-bar{background:#f9fafb;border-bottom:1px solid #e5e7eb;padding:5px 20px}
-.ctrl-inner{max-width:1140px;margin:0 auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.ctrl-inner{max-width:1140px;margin:0 auto;display:flex;gap:8px;align-items:center;flex-wrap:nowrap;overflow:hidden}
 .pill{padding:4px 10px;border-radius:3px;border:1px solid #d1d5db;background:transparent;color:#374151;font-family:var(--mono);font-size:.58rem;letter-spacing:.07em;cursor:pointer;transition:all .15s;white-space:nowrap}
 .pill:hover{border-color:#111111;color:#111111}.pill.on{background:#111111;border-color:#111111;color:#ffffff}
 .tlbl{font-family:var(--mono);font-size:.58rem;color:#9ca3af;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
@@ -975,7 +975,7 @@ export default function GlobalMonitor() {
       {section !== "penalties" && (<>
         {mArticles.length === 0 && <div className="m-empty">No stories match your filter.</div>}
         {mArticles.map((a,i)=>{
-          const sd = SOURCE_DISPLAY[a.source] ?? { label: a.source };
+          const sd = getSourceDisplay(a.source, a.sourceUrl);
           return (
             <div key={a.id??i} className="m-art">
               <div className="m-art-meta">
@@ -987,7 +987,7 @@ export default function GlobalMonitor() {
                 style={{textDecoration:"none",color:"inherit"}}>
                 <span className="m-art-hl">{decodeEntities(a.headline)}</span>
               </a>
-              <div className="m-art-src">{sd.label}</div>
+              <div className="m-art-src">{sd.name}</div>
             </div>
           );
         })}
@@ -999,12 +999,12 @@ export default function GlobalMonitor() {
           <table className="m-pen-table">
             <thead><tr><th>Date</th><th>Entity</th><th>Amount</th><th>Program</th></tr></thead>
             <tbody>
-              {(data.ofacPenalties ?? OFAC_PENALTIES_STATIC).slice(0,40).map((p:any,i:number)=>(
+              {[...penalties].sort((a,b)=>b.year-a.year||b.date.localeCompare(a.date)).slice(0,40).map((p,i)=>(
                 <tr key={i}>
-                  <td style={{whiteSpace:"nowrap"}}>{p.date}</td>
-                  <td>{p.entity}</td>
-                  <td style={{whiteSpace:"nowrap",color:"#cc0000",fontWeight:600}}>{typeof p.amount==="number"?`$${p.amount.toLocaleString()}`:p.amount}</td>
-                  <td style={{color:"#6b7280"}}>{p.program}</td>
+                  <td style={{whiteSpace:"nowrap",fontFamily:"var(--mono)",fontSize:".55rem"}}>{p.date}</td>
+                  <td><div style={{fontWeight:600,fontSize:".62rem"}}>{p.institution}</div><div style={{fontSize:".52rem",color:"#6b7280"}}>{p.violation}</div></td>
+                  <td style={{whiteSpace:"nowrap",color:"#cc0000",fontWeight:700,fontFamily:"var(--mono)"}}>{p.amountDisplay}</td>
+                  <td style={{color:"#6b7280",fontFamily:"var(--mono)",fontSize:".55rem"}}>{p.regulator}</td>
                 </tr>
               ))}
             </tbody>
@@ -1015,12 +1015,12 @@ export default function GlobalMonitor() {
           <table className="m-pen-table">
             <thead><tr><th>Date</th><th>Institution</th><th>Amount</th><th>Violation</th></tr></thead>
             <tbody>
-              {FINCEN_PENALTIES.slice(0,30).map((p:any,i:number)=>(
+              {[...fincenPenalties].sort((a,b)=>b.penalty-a.penalty).slice(0,30).map((p,i)=>(
                 <tr key={i}>
-                  <td style={{whiteSpace:"nowrap"}}>{p.date}</td>
-                  <td>{p.institution}</td>
-                  <td style={{whiteSpace:"nowrap",color:"#1d4ed8",fontWeight:600}}>{typeof p.amount==="number"?`$${p.amount.toLocaleString()}`:p.amount}</td>
-                  <td style={{color:"#6b7280"}}>{p.violation}</td>
+                  <td style={{whiteSpace:"nowrap",fontFamily:"var(--mono)",fontSize:".55rem"}}>{p.date}</td>
+                  <td style={{fontWeight:600,fontSize:".62rem"}}>{p.institution}</td>
+                  <td style={{whiteSpace:"nowrap",color:"#1d4ed8",fontWeight:700,fontFamily:"var(--mono)"}}>${(p.penalty/1e6).toFixed(1)}M</td>
+                  <td style={{color:"#6b7280",fontSize:".55rem"}}>{p.violation}</td>
                 </tr>
               ))}
             </tbody>
@@ -1087,9 +1087,15 @@ export default function GlobalMonitor() {
           <button className="pill" onClick={()=>setShowGlobalSearch(true)}
             style={{fontFamily:"var(--mono)",fontSize:".58rem"}}>🔍 Search</button>
         )}
-        {(REGIONS[section]?.length||0)>1 && <><span className="tlbl">Region:</span>
-          {(REGIONS[section]||["All"]).map(r=><button key={r} className={`pill ${region===r?"on":""}`} onClick={()=>setRegion(r)}>{r}</button>)}
-        </>}
+        {(REGIONS[section]?.length||0)>1 && (
+          <div style={{display:"flex",alignItems:"center",gap:6,overflow:"hidden",flexShrink:1,minWidth:0}}>
+            <span className="tlbl" style={{flexShrink:0}}>Region:</span>
+            <div style={{display:"flex",gap:4,overflowX:"auto",scrollbarWidth:"none",flexWrap:"nowrap"}}>
+              {(REGIONS[section]||["All"]).map(r=><button key={r} className={`pill ${region===r?"on":""}`}
+                style={{flexShrink:0}} onClick={()=>setRegion(r)}>{r}</button>)}
+            </div>
+          </div>
+        )}
         {section==="sanctions" && (
           <button className={`pill ${ofacProgram?"on":""}`}
             style={{fontFamily:"var(--mono)",fontSize:".6rem"}}
