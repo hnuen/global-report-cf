@@ -350,18 +350,27 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean; sections: 
 // news articles that CITE specific /recent-actions/YYYYMMDD URLs — law firms,
 // Reuters, AP all reference the exact URLs when covering OFAC actions.
 function getOFACDateNewsRSS(): Array<{ name: string; url: string; sections: string[] }> {
+  // ofac.treasury.gov returns 403 from Cloudflare IPs — cannot fetch directly.
+  // Instead: search Google News for the EXACT generated URLs.
+  // When OFAC publishes an action, Reuters/AP/law firms cite the specific
+  // ofac.treasury.gov/recent-actions/YYYYMMDD URL in their articles.
+  // Google News indexes those articles and returns them via RSS.
   const results = [];
   const today = new Date();
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 7; i++) {
     const d = new Date(today);
     d.setDate(d.getDate() - i);
     const code = d.getFullYear().toString() +
       String(d.getMonth() + 1).padStart(2, "0") +
       String(d.getDate()).padStart(2, "0");
     const label = d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+    // Search for the exact URL strings (all 3 variants) — finds any article that links to them
+    const q = encodeURIComponent(
+      `"ofac.treasury.gov/recent-actions/${code}" OR "ofac.treasury.gov/recent-actions/${code}_33" OR "ofac.treasury.gov/recent-actions/${code}_66"`
+    );
     results.push({
       name: `OFAC Recent Actions ${label}`,
-      url: `https://news.google.com/rss/search?q=%22recent-actions%2F${code}%22+OR+%22recent-actions%2F${code}_33%22+OFAC+treasury&hl=en-US&gl=US&ceid=US:en`,
+      url: `https://news.google.com/rss/search?q=${q}&hl=en-US&gl=US&ceid=US:en`,
       sections: ["sanctions"],
     });
   }
