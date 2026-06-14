@@ -912,25 +912,27 @@ export default function GlobalMonitor() {
     <div className="app">
       <div className="masthead">
         <div className="mast-inner">
-          <div className="mast-l">Global Intelligence<br/>Six-Domain Monitor<br/>Est. 2024</div>
-          <div><span className="pub-name">The Global Report</span><span className="pub-tag">Sanctions · Economics · Religion · OCC · Penalties · BIS / Export Controls</span></div>
-          <div className="mast-r">Live Edition<br/>Auto-updates daily<br/>{data.lastUpdated}</div>
+          <div><span className="pub-name">The Global Report</span></div>
         </div>
       </div>
-      <div className="gs-wrap"><div className="gs-inner">
-        <span className="gs-lbl">🔍 Global Search</span>
-        <input className="gs-input" placeholder='Search news — "Iran shadow fleet", "OFAC Adani", "FinCEN BSA penalty"...'
-          value={globalQ}
-          onChange={e=>setGlobalQ(e.target.value)}
-          onKeyDown={e=>{if(e.key==="Enter"&&!globalSearching)doGlobalSearch();}}
-        />
-        <button className="gs-btn" onClick={()=>doGlobalSearch()} disabled={globalSearching}>
-          {globalSearching ? "Searching…" : "Search Web ↗"}
-        </button>
-        {showGlobalSearch && <button className="gs-close" onClick={()=>{setShowGlobalSearch(false);setGlobalResults([]);setGlobalQ("");}}>✕ Close</button>}
-      </div></div>
+      {showGlobalSearch && (
+        <div className="gs-wrap"><div className="gs-inner">
+          <span className="gs-lbl">🔍 Global Search</span>
+          <input className="gs-input" placeholder='Search news — "Iran shadow fleet", "OFAC Adani", "FinCEN BSA penalty"...'
+            value={globalQ}
+            onChange={e=>setGlobalQ(e.target.value)}
+            onKeyDown={e=>{if(e.key==="Enter"&&!globalSearching)doGlobalSearch();}}
+            autoFocus
+          />
+          <button className="gs-btn" onClick={()=>doGlobalSearch()} disabled={globalSearching}>
+            {globalSearching ? "Searching…" : "Search Web ↗"}
+          </button>
+          <button className="gs-close" onClick={()=>{setShowGlobalSearch(false);setGlobalResults([]);setGlobalQ("");}}>✕</button>
+        </div></div>
+      )}
       <div className="sec-nav"><div className="sec-nav-inner">
         {SECTIONS.map(s=><button key={s} className={`sec-tab ${s} ${section===s?"active":""}`} onClick={()=>handleSection(s)}>{LABELS[s]}</button>)}
+        <button className={`sec-tab sec-search-btn ${showGlobalSearch?"active":""}`} onClick={()=>setShowGlobalSearch(v=>!v)} title="Global Search" style={{flex:"0 0 auto",borderRight:"none"}}>🔍</button>
       </div></div>
       {section !== "penalties" && searchBarOpen && (
         <div className="san-search" style={{background: section==="bis"?"#f0f9ff":section==="economics"?"#f0fdf4":section==="occ"?"#fffbeb":section==="religion"?"#faf5ff":"#fef2f2", borderBottomColor: section==="bis"?"#7dd3fc":section==="economics"?"#86efac":section==="occ"?"#fcd34d":section==="religion"?"#d8b4fe":"#fca5a5"}}><div className="san-inner">
