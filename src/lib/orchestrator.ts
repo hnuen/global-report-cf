@@ -4,9 +4,10 @@ import { getTracker }          from "./usage-tracker";
 import { fetchOfficialSources, formatSourcesForPrompt } from "./official-sources";
 import { buildBriefingFromSources } from "./official-briefing";
 import { buildAnalyzedBriefing } from "./local-analyzer";
-import { getHistoricalForSection } from "./historical-articles";
+import { getHistoricalForSection, getRecentBySource } from "./historical-articles";
 import type { Briefing, Section } from "./types";
 import { enrichArticlesWithBriefs } from "./brief-generator";
+import { loadArticleLibrary, saveArticlesToLibrary } from "./article-library";
 
 // No module-level singletons — always read env vars fresh on each invocation
 export async function loadBriefing(): Promise<Briefing | null> {
@@ -14,50 +15,43 @@ export async function loadBriefing(): Promise<Briefing | null> {
   return storage.load();
 }
 
-export async function refreshBriefing(topic?: string): Promise<{
+export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean; section?: string }): Promise<{
   briefing: Briefing;
   usedProvider: string;
   savedTo: string[];
 }> {
   const storage = await buildStorageManager();
 
+  // Load persisted article library (Redis-backed — built up across refresh runs)
+  // Skip in skipLLM path to conserve CF Workers subrequest budget (stay under 50 limit)
+  const libraryArticles = opts?.skipLLM ? [] : await loadArticleLibrary();
+  console.log(`[orchestrator] Loaded ${libraryArticles.length} articles from library (skipLLM=${opts?.skipLLM ?? false})`);
+
   // Always fetch official sources first — fast and free
   console.log("[orchestrator] Fetching official government sources...");
-  const officialSources = await fetchOfficialSources();
+  const officialSources = await fetchOfficialSources(opts?.section);
   const successCount = officialSources.filter(s => s.content.length > 50).length;
   console.log(`[orchestrator] Got ${successCount}/${officialSources.length} official sources`);
 
   let briefing: Briefing;
   let usedProvider: string;
 
-  // Skip LLM during auto-refresh to avoid timeouts — use structured source builder
-  // LLM is only used when explicitly requested via topic parameter from manual trigger
-  if (false && topic) {
-    try {
-      const llm = buildLLMManager();
-      const result = await llm.fetch(topic);
-      briefing = result.briefing;
-      usedProvider = result.usedProvider;
-    } catch (llmError) {
-      console.log("[orchestrator] LLM failed — using structured sources");
-      const structuredBriefing = buildBriefingFromSources(officialSources);
-      briefing = structuredBriefing.articles.length >= 5 ? structuredBriefing : buildAnalyzedBriefing(officialSources);
-      usedProvider = "Official Sources (LLM fallback)";
-    }
-  } else {
-    // Fast path — structured builder from official sources, no LLM calls
-    if (successCount === 0) {
-      throw new Error("No official sources fetched successfully");
-    }
-    const structuredBriefing = buildBriefingFromSources(officialSources);
-    if (structuredBriefing.articles.length >= 5) {
-      briefing = structuredBriefing;
-      usedProvider = "Official Sources";
-    } else {
-      briefing = buildAnalyzedBriefing(officialSources);
-      usedProvider = "Local Analysis";
-    }
+  if (successCount === 0) {
+    throw new Error("No official sources fetched successfully");
   }
+
+  // ── Step 1: build structured briefing immediately (fast, ~0s) ───────────────
+  // This is always done first so we can pre-save a valid briefing with today's
+  // timestamp BEFORE attempting the slow LLM call.  That guarantees Redis is
+  // updated even if the LLM / enrichment steps are killed by CF's wall-clock limit.
+  const structuredBriefingEarly = buildBriefingFromSources(officialSources);
+  briefing = structuredBriefingEarly.articles.length >= 5
+    ? structuredBriefingEarly
+    : buildAnalyzedBriefing(officialSources);
+  usedProvider = "Official Sources";
+
+  // Pre-format context once so it can be passed to LLM without double-fetching
+  const officialContext = formatSourcesForPrompt(officialSources);
 
   // Fill any section with < 8 articles using historical records
   const SECTIONS: Section[] = ["sanctions","economics","religion","occ","penalties","bis"];
@@ -72,25 +66,55 @@ export async function refreshBriefing(topic?: string): Promise<{
     }
   }
 
-  // Enrich articles with AI-generated briefs (cached in Redis, runs async)
-  // Only runs when LLM fallback was used (structured briefing) — LLM articles already have good body text
-  if (usedProvider.includes("Official Sources") || usedProvider.includes("Local Analysis")) {
-    try {
-      console.log("[orchestrator] Enriching article briefs...");
-      const sanctionsArticles = briefing.articles
-        .filter(a => a.section === "sanctions" && a.sourceUrl)
-        .map(a => ({ sourceUrl: a.sourceUrl!, headline: a.headline, body: a.body }));
-
-      const enriched = await enrichArticlesWithBriefs(sanctionsArticles);
-      if (enriched.size > 0) {
-        briefing.articles = briefing.articles.map(a => {
-          const newBrief = a.sourceUrl ? enriched.get(a.sourceUrl) : undefined;
-          return newBrief ? { ...a, body: [newBrief, ...a.body.slice(1)] } : a;
-        });
-        console.log(`[orchestrator] Enriched ${enriched.size} article briefs`);
+  // ── Library backfill — persisted Gemini-enriched articles ─────────────────
+  // Use library articles to supplement sections that still have < 8 articles,
+  // preferring library over static HISTORICAL since library briefs are Gemini-quality.
+  if (libraryArticles.length > 0) {
+    const liveHeadlines = new Set(
+      briefing.articles.map(a => a.headline.slice(0, 80).toLowerCase().replace(/\s+/g, " ").trim())
+    );
+    const libraryBySection = new Map<string, typeof libraryArticles>();
+    for (const a of libraryArticles) {
+      const key = a.headline.slice(0, 80).toLowerCase().replace(/\s+/g, " ").trim();
+      if (liveHeadlines.has(key)) continue; // already in live briefing
+      const list = libraryBySection.get(a.section) ?? [];
+      list.push(a);
+      libraryBySection.set(a.section, list);
+    }
+    for (const sec of SECTIONS) {
+      const currentCount = briefing.articles.filter(a => a.section === sec).length;
+      if (currentCount < 8) {
+        const candidates = (libraryBySection.get(sec) ?? []).slice(0, 8 - currentCount);
+        if (candidates.length > 0) {
+          briefing.articles = [...briefing.articles, ...candidates];
+          console.log(`[orchestrator] Added ${candidates.length} library articles to ${sec}`);
+        }
       }
-    } catch (e) {
-      console.log("[orchestrator] Brief enrichment failed (non-fatal):", String(e).slice(0, 100));
+    }
+  }
+
+  // ── Per-source official backfill ─────────────────────────────────────────
+  // For each key official source, if ZERO live articles came from that source
+  // (e.g. the scraper was blocked or the site had no new content today), inject
+  // the most recent 5-7 historical articles so the relevant tab always shows
+  // something authoritative rather than falling back to Google News only.
+  const existingIds = new Set(briefing.articles.map(a => a.id));
+  const SOURCE_BACKFILLS: Array<{ keyword: string; limit: number }> = [
+    { keyword: "OFAC",       limit: 7 },
+    { keyword: "FinCEN",     limit: 5 },
+    { keyword: "OFSI",       limit: 5 },
+    { keyword: "EU Council", limit: 5 },
+    { keyword: "BIS",        limit: 5 },
+  ];
+  for (const { keyword, limit } of SOURCE_BACKFILLS) {
+    const hasSource = briefing.articles.some(a => a.source.includes(keyword));
+    if (!hasSource) {
+      const fallback = getRecentBySource(keyword, limit, existingIds);
+      if (fallback.length > 0) {
+        briefing.articles = [...briefing.articles, ...fallback];
+        fallback.forEach(a => existingIds.add(a.id));
+        console.log(`[orchestrator] Backfilled ${fallback.length} ${keyword} articles from historical`);
+      }
     }
   }
 
@@ -143,13 +167,129 @@ export async function refreshBriefing(topic?: string): Promise<{
     return (b.date || "").localeCompare(a.date || "");
   });
 
-  await storage.save(briefing);
+  // ── Apply enriched briefs from previous runs (library → live articles) ───────
+  // Must happen BEFORE storage.save so the Redis copy has real briefs, not generics.
+  if (libraryArticles.length > 0) {
+    const libraryBriefMap = new Map<string, string>();
+    for (const la of libraryArticles) {
+      const key = la.headline.slice(0, 80).toLowerCase().replace(/\s+/g, " ").trim();
+      if ((la.body[0] || "").length > 50) libraryBriefMap.set(key, la.body[0]);
+    }
+    let appliedCount = 0;
+    briefing.articles = briefing.articles.map(a => {
+      const key = a.headline.slice(0, 80).toLowerCase().replace(/\s+/g, " ").trim();
+      const lib = libraryBriefMap.get(key);
+      if (!lib) return a;
+      const cur = (a.body[0] || "").toLowerCase();
+      const isGeneric = cur.length < 60 || [
+        "official action","see source link","targeting iran","targeting russia",
+        "treasury action","treasury department","new designations","general license issued",
+        "regulatory guidance","dprk-related","counter-terrorism",
+      ].some(g => cur.includes(g));
+      if (!isGeneric) return a; // already has a real brief — keep it
+      appliedCount++;
+      return { ...a, body: [lib, ...a.body.slice(1)] };
+    });
+    if (appliedCount > 0) console.log(`[orchestrator] Applied ${appliedCount} enriched briefs from library`);
+  }
 
-  const savedTo = storage.getHealth()
-    .filter(h => h.healthy)
-    .map(h => h.id);
+  // ── Step 2: attempt LLM upgrade (best-effort, 17s timeout) ─────────────────
+  // Runs AFTER the pre-save-ready structured briefing is built but BEFORE the
+  // actual save.  If the LLM responds in time, its richer articles replace the
+  // structured ones.  If it times out or errors, briefing stays as structured.
+  // skipLLM=true (in-process trigger-refresh) bypasses this entirely.
+  // Sanctions always runs LLM — OFAC date-URL search requires Gemini grounding
+  const needsLLM = !opts?.skipLLM || opts?.section === "sanctions";
+  if (needsLLM) {
+    const LLM_TIMEOUT_MS = 17_000;
+    try {
+      const llm = buildLLMManager();
+      const result = await Promise.race([
+        llm.fetch(topic, officialContext),
+        new Promise<never>((_, reject) =>
+          setTimeout(() => reject(new Error(`LLM timeout after ${LLM_TIMEOUT_MS / 1000}s`)), LLM_TIMEOUT_MS)
+        ),
+      ]);
+      briefing = result.briefing;
+      usedProvider = result.usedProvider;
+      console.log(`[orchestrator] LLM succeeded (${usedProvider})`);
+    } catch (llmError) {
+      const reason = String(llmError).slice(0, 120);
+      console.log("[orchestrator] LLM unavailable — keeping structured briefing:", reason);
+      // briefing / usedProvider already set to structured above — no change needed
+    }
+  }
 
-  return { briefing, usedProvider, savedTo };
+  // ── Save the core briefing FIRST ───────────────────────────────────────────
+  // Cloudflare Workers caps subrequests per invocation. Brief enrichment below
+  // does per-article Redis cache lookups + article fetches + Gemini calls,
+  // which can exhaust that budget — causing the *real* Upstash save to throw
+  // "Too many subrequests by single Worker invocation" while the in-memory
+  // fallback silently "succeeds," masking the failure (refresh still reports
+  // ok:true, but Redis never gets the fresh data — lastUpdated stays frozen).
+  // Saving here guarantees the correctly-dated official-source articles and
+  // Eastern-time lastUpdated persist before enrichment can starve the budget.
+  let preSaveSuccess = false;
+  try {
+    await storage.save(briefing);
+    preSaveSuccess = storage.getHealth().some(h => h.id === "upstash" && h.healthy);
+    console.log("[orchestrator] Saved core briefing (pre-enrichment), upstash:", preSaveSuccess);
+  } catch (e) {
+    console.log("[orchestrator] Pre-save failed:", String(e).slice(0, 100));
+  }
+
+  // Enrich articles with AI-generated briefs (cached in Redis, runs async)
+  // Skipped when skipLLM=true (in-process fast path) — endpoint must return quickly.
+  // Best-effort: failure here does not lose data, since the core briefing is already saved above.
+  if (needsLLM && (usedProvider.includes("Official Sources") || usedProvider.includes("Local Analysis"))) {
+    try {
+      console.log("[orchestrator] Enriching article briefs...");
+      const sanctionsArticles = briefing.articles
+        .filter(a => a.sourceUrl)
+        .map(a => ({ sourceUrl: a.sourceUrl!, headline: a.headline, body: a.body }));
+
+      const enriched = await enrichArticlesWithBriefs(sanctionsArticles);
+      if (enriched.size > 0) {
+        briefing.articles = briefing.articles.map(a => {
+          const newBrief = a.sourceUrl ? enriched.get(a.sourceUrl) : undefined;
+          return newBrief ? { ...a, body: [newBrief, ...a.body.slice(1)] } : a;
+        });
+        console.log(`[orchestrator] Enriched ${enriched.size} article briefs`);
+
+        // Save enriched articles to the persistent library for future refreshes
+        const enrichedArticles = briefing.articles.filter(a =>
+          a.sourceUrl && enriched.has(a.sourceUrl)
+        );
+        saveArticlesToLibrary(enrichedArticles).catch(e =>
+          console.log("[orchestrator] Library save failed (non-fatal):", String(e).slice(0, 80))
+        );
+
+        // Re-save briefing with enriched briefs so users see Gemini summaries immediately.
+        // This save is best-effort — if it fails (subrequest limit), the pre-save copy
+        // (with generic briefs) is already in Redis and the library will propagate
+        // enriched briefs on the next refresh cycle.
+        try {
+          await storage.save(briefing);
+          console.log("[orchestrator] Re-saved briefing with enriched briefs");
+        } catch (saveErr) {
+          console.log("[orchestrator] Re-save failed (non-fatal, pre-save intact):", String(saveErr).slice(0, 80));
+        }
+      }
+    } catch (e) {
+      console.log("[orchestrator] Brief enrichment failed (non-fatal):", String(e).slice(0, 100));
+    }
+  }
+
+  // Build savedTo from pre-save result so enrichment save failures don't
+  // incorrectly report Upstash as missing even when the core briefing was saved.
+  const health = storage.getHealth();
+  const savedTo = [
+    ...(preSaveSuccess ? ["upstash"] : []),
+    "memory",
+  ];
+  const storageErrors = health.filter(h => !h.healthy).map(h => ({ id: h.id, error: h.lastError }));
+
+  return { briefing, usedProvider, savedTo, storageErrors };
 }
 
 export async function getSystemHealth() {

@@ -633,7 +633,11 @@ export default function GlobalMonitor() {
     setRefreshing(true); setError(""); setRefreshQueued(false);
     const previousUpdated = data?.lastUpdated;
     try {
-      const res = await fetch("/api/trigger-refresh", { method: "POST" });
+      const res = await fetch("/api/trigger-refresh", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ section, topic: refreshTopic || undefined }),
+      });
       const result = await res.json().catch(() => ({}));
       if (!res.ok || !result.ok) throw new Error(result.error || `HTTP ${res.status}`);
       setRefreshQueued(true);

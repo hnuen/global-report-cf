@@ -122,8 +122,37 @@ function stripHTML(html: string): string {
     .replace(/<footer[^>]*>[\s\S]*?<\/footer>/gi, "")
     .replace(/<!--[\s\S]*?-->/g, "");
 
-  // Extract headings (h1-h4) and anchor text as headlines
+  // Extract links FIRST so deduplication keeps the version with the href.
+  // (Headings and links often share the same text; without this ordering the
+  //  bare-heading version wins and the specific article URL is lost.)
   const headlines: string[] = [];
+
+  // Extract link text from news-like anchors — show TEXT not URL
+  const linkMatches0 = clean.matchAll(/<a[^>]*href="([^"]*)"[^>]*>([\s\S]*?)<\/a>/gi);
+  for (const m of linkMatches0) {
+    const href = m[1];
+    const text = m[2].replace(/<[^>]+>/g,"").replace(/&amp;/g,"&").replace(/&nbsp;/g," ").trim();
+    const isNav0 = text.toLowerCase().match(
+      /^(click|read|here|more|view|see|go|back|next|prev|skip|menu|home|search|contact|about|login|sign|additional|sanctions programs|civil penalties and enforcement information$|counter terrorism designations$|international criminal|consolidated sanctions|non-sdn|sdn list|frequently asked|download|subscribe|follow us)/
+    );
+    const isNewsLink0 = href.includes("press") || href.includes("news") ||
+      href.includes("release") || href.includes("action") ||
+      href.includes("enforcement") || href.includes("2026") ||
+      href.includes("2025") || href.includes("penalty") ||
+      href.includes("sanction") || href.includes("notice") ||
+      href.includes("designation") || href.includes("license");
+    if (text.length > 30 && text.length < 250 && !isNav0 && isNewsLink0) {
+      const ctxStart0 = Math.max(0, (m.index ?? 0) - 100);
+      const ctxEnd0   = Math.min(clean.length, (m.index ?? 0) + m[0].length + 400);
+      const ctx0 = clean.slice(ctxStart0, ctxEnd0).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
+      const fullDate0   = ctx0.match(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s+20\d{2}\b/);
+      const monthYear0  = !fullDate0 && ctx0.match(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+20\d{2}\b/);
+      const dateAppend0 = fullDate0?.[0] || monthYear0?.[0] || "";
+      headlines.push(`• ${text} ||| ${href}${dateAppend0 ? " ||| DATE:" + dateAppend0 : ""}`);
+    }
+  }
+
+  // Extract headings (h1-h4) — added after links so dedup keeps the link version
   const headingMatches = clean.matchAll(/<h[1-4][^>]*>([\s\S]*?)<\/h[1-4]>/gi);
   for (const m of headingMatches) {
     const text = m[1].replace(/<[^>]+>/g,"").replace(/&amp;/g,"&").replace(/&nbsp;/g," ").replace(/&#([0-9]+);/g, (_,n) => String.fromCharCode(Number(n))).trim();
@@ -131,7 +160,10 @@ function stripHTML(html: string): string {
         !text.toLowerCase().includes("skip to") &&
         !text.toLowerCase().includes("menu") &&
         !text.toLowerCase().includes("recent actions body") &&
-        !text.toLowerCase().includes("release date")) {
+        !text.toLowerCase().includes("release date") &&
+        !text.toLowerCase().startsWith("enforcement actions for") &&
+        !text.toLowerCase().startsWith("notices of proposed") &&
+        !/^civil money penalty$/i.test(text.trim())) {
       headlines.push(`• ${text}`);
     }
   }
@@ -158,26 +190,6 @@ function stripHTML(html: string): string {
     }
   }
 
-  // Extract link text from news-like anchors — show TEXT not URL
-  const linkMatches = clean.matchAll(/<a[^>]*href="([^"]*)"[^>]*>([\s\S]*?)<\/a>/gi);
-  for (const m of linkMatches) {
-    const href = m[1];
-    const text = m[2].replace(/<[^>]+>/g,"").replace(/&amp;/g,"&").replace(/&nbsp;/g," ").trim();
-    // Filter out navigation, boilerplate, and generic items
-    const isNav = text.toLowerCase().match(
-      /^(click|read|here|more|view|see|go|back|next|prev|skip|menu|home|search|contact|about|login|sign|additional|sanctions programs|civil penalties and enforcement information$|counter terrorism designations$|international criminal|consolidated sanctions|non-sdn|sdn list|frequently asked|download|subscribe|follow us)/
-    );
-    const isNewsLink = href.includes("press") || href.includes("news") ||
-      href.includes("release") || href.includes("action") ||
-      href.includes("enforcement") || href.includes("2026") ||
-      href.includes("2025") || href.includes("penalty") ||
-      href.includes("sanction") || href.includes("notice") ||
-      href.includes("designation") || href.includes("license");
-
-    if (text.length > 30 && text.length < 250 && !isNav && isNewsLink) {
-      headlines.push(`• ${text}`);
-    }
-  }
 
   // Deduplicate
   const seen = new Set<string>();
@@ -203,25 +215,31 @@ function stripHTML(html: string): string {
 }
 
 // ── Source definitions ────────────────────────────────────────────────────────
-const SOURCES: Array<{ name: string; url: string; official?: boolean }> = [
+const SOURCES: Array<{ name: string; url: string; official?: boolean; sections: string[] }> = [
   // ── U.S. Government ─────────────────────────────────────────────────────────
   // ── Treasury / OFAC — working sources ──────────────────────────────────────
   // OFAC RSS was retired Feb 6 2025 — use Federal Register API + Treasury SB probes instead.
   // Federal Register (federalregister.gov) is an API-first service accessible from Cloudflare IPs.
   // OFAC publishes all formal designations/notices there as Federal Register documents.
-  { name: "Federal Register — OFAC Actions",       url: "https://www.federalregister.gov/documents/search.rss?conditions%5Bagencies%5D%5B%5D=office-of-foreign-assets-control", official: true },
-  { name: "Federal Register — Treasury Sanctions", url: "https://www.federalregister.gov/documents/search.rss?conditions%5Bagencies%5D%5B%5D=department-of-the-treasury&conditions%5Bterm%5D=OFAC+sanctions+designations", official: true },
+  { name: "Federal Register — OFAC Actions",       url: "https://www.federalregister.gov/documents/search.rss?conditions%5Bagencies%5D%5B%5D=office-of-foreign-assets-control", official: true, sections: ["sanctions","penalties"] },
+  { name: "Federal Register — Treasury Sanctions", url: "https://www.federalregister.gov/documents/search.rss?conditions%5Bagencies%5D%5B%5D=department-of-the-treasury&conditions%5Bterm%5D=OFAC+sanctions+designations", official: true, sections: ["sanctions"] },
+  // Treasury news listing page — gives actual press release titles+links without guessing SB numbers
+  // home.treasury.gov is accessible from Cloudflare IPs (unlike ofac.treasury.gov)
+  { name: "U.S. Treasury — News", url: "https://home.treasury.gov/news/press-releases", official: true, sections: ["sanctions","economics","penalties"] },
   // OCC — news releases page works
-  { name: "OCC Enforcement Actions 2026",         url: "https://www.occ.gov/news-events/newsroom/news-issuances-by-year/news-releases/2026-news-releases.html", official: true },
+  { name: "OCC Enforcement Actions 2026",         url: "https://www.occ.gov/news-events/newsroom/news-issuances-by-year/news-releases/2026-news-releases.html", official: true, sections: ["occ"] },
   // Fed — press releases RSS
-  { name: "Federal Reserve — Press Releases",     url: "https://www.federalreserve.gov/feeds/press_all.xml", official: true },
+  { name: "Federal Reserve — Press Releases",     url: "https://www.federalreserve.gov/feeds/press_all.xml", official: true, sections: ["economics","occ","penalties"] },
   // BIS — bureau of industry and security
-  { name: "BIS Export Enforcement",               url: "https://www.bis.gov/news", official: true },
+  // bis.gov blocks server-side fetches (403 from CDN allowlist) — use Federal Register instead
+  // Federal Register publishes all BIS Entity List additions, EAR amendments, and enforcement actions
+  { name: "Federal Register — BIS Export Controls", url: "https://www.federalregister.gov/documents/search.rss?conditions%5Bagencies%5D%5B%5D=bureau-of-industry-and-security&conditions%5Bterm%5D=export+controls+entity+list", official: true, sections: ["bis"] },
+  { name: "Federal Register — BIS Actions",         url: "https://www.federalregister.gov/documents/search.rss?conditions%5Bagencies%5D%5B%5D=bureau-of-industry-and-security", official: true, sections: ["bis"] },
   // State Department RSS
-  { name: "U.S. State Department — News",         url: "https://www.state.gov/rss-feeds/press-releases/", official: true },
+  { name: "U.S. State Department — News",         url: "https://www.state.gov/rss-feeds/press-releases/", official: true, sections: ["sanctions","economics"] },
   // FinCEN enforcement
-  { name: "FinCEN Enforcement Actions",           url: "https://www.fincen.gov/news/enforcement-actions", official: true },
-  { name: "FinCEN News Releases",                 url: "https://www.fincen.gov/news/news-releases", official: true },
+  { name: "FinCEN Enforcement Actions",           url: "https://www.fincen.gov/news", official: true, sections: ["penalties"] },
+  { name: "FinCEN News Releases",                 url: "https://www.fincen.gov/news/news-releases", official: true, sections: ["penalties"] },
 
   // ── China / Global Export Controls ──────────────────────────────────────────
   // China MOFCOM export controls — English press releases
@@ -230,22 +248,22 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean }> = [
   // SIPRI arms and export controls
   // UK Strategic Export Controls
   // Google News — China export controls
-  { name: "Google News — China Export Controls",  url: "https://news.google.com/rss/search?q=China+MOFCOM+export+controls+rare+earth+sanctions+2026&hl=en-US&gl=US&ceid=US:en" },
+  { name: "Google News — China Export Controls",  url: "https://news.google.com/rss/search?q=China+MOFCOM+export+controls+rare+earth+sanctions+2026&hl=en-US&gl=US&ceid=US:en", sections: ["bis","sanctions"] },
   // Google News — Global sanctions enforcement
-  { name: "Google News — Global Sanctions",       url: "https://news.google.com/rss/search?q=global+sanctions+enforcement+BIS+Wassenaar+2026&hl=en-US&gl=US&ceid=US:en" },
+  { name: "Google News — Global Sanctions",       url: "https://news.google.com/rss/search?q=global+sanctions+enforcement+BIS+Wassenaar+2026&hl=en-US&gl=US&ceid=US:en", sections: ["sanctions","bis"] },
 
   // ── Penalties & Enforcement ──────────────────────────────────────────────────
-  { name: "Federal Reserve Enforcement Actions",  url: "https://www.federalreserve.gov/supervisionreg/enforcement-actions-about.htm", official: true },
-  { name: "UK Financial Sanctions Penalties",     url: "https://www.gov.uk/government/publications/ofsi-monetary-penalty-notices-and-reports", official: true },
+  { name: "Federal Reserve Enforcement Actions",  url: "https://www.federalreserve.gov/supervisionreg/enforcement-actions-about.htm", official: true, sections: ["occ","penalties"] },
+  { name: "UK Financial Sanctions Penalties",     url: "https://www.gov.uk/government/publications/ofsi-monetary-penalty-notices-and-reports", official: true, sections: ["penalties","sanctions"] },
 
   // ── European Union ───────────────────────────────────────────────────────────
-  { name: "EU Commission — Latest News",          url: "https://ec.europa.eu/commission/presscorner/api/documents?pagesize=10&page=0&keywords=sanctions&sortby=date_updated&orderby=DESC&language=en", official: true },
+  { name: "EU Commission — Latest News",          url: "https://ec.europa.eu/commission/presscorner/api/documents?pagesize=10&page=0&keywords=sanctions&sortby=date_updated&orderby=DESC&language=en", official: true, sections: ["sanctions"] },
 
   // ── United Kingdom ───────────────────────────────────────────────────────────
-  { name: "UK Government — Latest News",          url: "https://www.gov.uk/search/news-and-communications?keywords=sanctions&order=updated-newest", official: true },
-  { name: "UK HM Treasury — News",               url: "https://www.gov.uk/search/news-and-communications?keywords=sanctions+financial&organisations%5B%5D=hm-treasury&order=updated-newest", official: true },
-  { name: "UK OFSI — Financial Sanctions",       url: "https://www.gov.uk/search/news-and-communications?keywords=financial+sanctions&organisations%5B%5D=office-of-financial-sanctions-implementation&order=updated-newest", official: true },
-  { name: "UK Sanctions List",                    url: "https://www.gov.uk/government/publications/the-uk-sanctions-list", official: true },
+  { name: "UK Government — Latest News",          url: "https://www.gov.uk/search/news-and-communications?keywords=sanctions&order=updated-newest", official: true, sections: ["sanctions"] },
+  { name: "UK HM Treasury — News",               url: "https://www.gov.uk/search/news-and-communications?keywords=sanctions+financial&organisations%5B%5D=hm-treasury&order=updated-newest", official: true, sections: ["sanctions","economics"] },
+  { name: "UK OFSI — Financial Sanctions",       url: "https://www.gov.uk/search/news-and-communications?keywords=financial+sanctions&organisations%5B%5D=office-of-financial-sanctions-implementation&order=updated-newest", official: true, sections: ["sanctions"] },
+  { name: "UK Sanctions List",                    url: "https://www.gov.uk/government/publications/the-uk-sanctions-list", official: true, sections: ["sanctions"] },
 
   // ── United Nations ───────────────────────────────────────────────────────────
 
@@ -256,30 +274,63 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean }> = [
   // Timeout raised to 10s for official sources to handle Google's slower site: searches.
   // Google News site: queries for ofac.treasury.gov / home.treasury.gov timeout from Cloudflare IPs.
   // Replaced by Federal Register RSS above. Keep broad queries which work reliably.
-  { name: "Google News — OFAC Broad",              url: "https://news.google.com/rss/search?q=OFAC+sanctions+SDN+designations+treasury+2026&hl=en-US&gl=US&ceid=US:en", official: true },
-  { name: "Google News — Treasury OFAC Actions",   url: "https://news.google.com/rss/search?q=%22Treasury%22+%22OFAC%22+%22designated%22+OR+%22sanctions%22+2026&hl=en-US&gl=US&ceid=US:en", official: true },
-  { name: "Google News — FinCEN",                  url: "https://news.google.com/rss/search?q=FinCEN+enforcement+AML+BSA+advisory+penalty+2026&hl=en-US&gl=US&ceid=US:en", official: true },
-  { name: "Google News — BIS Entity List",         url: "https://news.google.com/rss/search?q=BIS+export+controls+Entity+List+EAR+2026&hl=en-US&gl=US&ceid=US:en", official: true },
-  { name: "Google News — EU Council Sanctions",    url: "https://news.google.com/rss/search?q=EU+Council+sanctions+designations+restrictive+measures+2026&hl=en-US&gl=US&ceid=US:en", official: true },
-  { name: "Google News — UK OFSI",                 url: "https://news.google.com/rss/search?q=OFSI+UK+financial+sanctions+penalty+2026&hl=en-US&gl=US&ceid=US:en", official: true },
-  { name: "Google News — Sanctions",              url: "https://news.google.com/rss/search?q=OFAC+sanctions+designations&hl=en-US&gl=US&ceid=US:en" },
-  { name: "Google News — BIS Export Controls",    url: "https://news.google.com/rss/search?q=BIS+export+controls+Entity+List&hl=en-US&gl=US&ceid=US:en" },
-  { name: "Google News — EU Sanctions",           url: "https://news.google.com/rss/search?q=EU+sanctions+Russia+designations&hl=en-US&gl=US&ceid=US:en" },
-  { name: "Google News — Iran Sanctions",         url: "https://news.google.com/rss/search?q=Iran+sanctions+OFAC+2026&hl=en-US&gl=US&ceid=US:en" },
-  { name: "Google News — Russia Sanctions",       url: "https://news.google.com/rss/search?q=Russia+sanctions+OFAC+designations+2026&hl=en-US&gl=US&ceid=US:en" },
-  { name: "Google News — China Sanctions",        url: "https://news.google.com/rss/search?q=China+Hong+Kong+sanctions+export+controls+2026&hl=en-US&gl=US&ceid=US:en" },
-  { name: "Google News — DPRK Sanctions",         url: "https://news.google.com/rss/search?q=North+Korea+DPRK+sanctions+2026&hl=en-US&gl=US&ceid=US:en" },
-  { name: "Google News — Middle East Sanctions",  url: "https://news.google.com/rss/search?q=Middle+East+Gulf+sanctions+designations+2026&hl=en-US&gl=US&ceid=US:en" },
-  { name: "Google News — Southeast Asia",         url: "https://news.google.com/rss/search?q=Southeast+Asia+sanctions+Myanmar+2026&hl=en-US&gl=US&ceid=US:en" },
+  { name: "Google News — OFAC Broad",              url: "https://news.google.com/rss/search?q=OFAC+sanctions+SDN+designations+treasury+2026&hl=en-US&gl=US&ceid=US:en", official: true, sections: ["sanctions"] },
+  { name: "Google News — Treasury OFAC Actions",   url: "https://news.google.com/rss/search?q=%22Treasury%22+%22OFAC%22+%22designated%22+OR+%22sanctions%22+2026&hl=en-US&gl=US&ceid=US:en", official: true, sections: ["sanctions"] },
+  { name: "Google News — FinCEN",                  url: "https://news.google.com/rss/search?q=FinCEN+enforcement+AML+BSA+advisory+penalty+2026&hl=en-US&gl=US&ceid=US:en", official: true, sections: ["penalties"] },
+  { name: "Google News — BIS Entity List",         url: "https://news.google.com/rss/search?q=BIS+export+controls+Entity+List+EAR+2026&hl=en-US&gl=US&ceid=US:en", official: true, sections: ["bis"] },
+  { name: "Google News — EU Council Sanctions",    url: "https://news.google.com/rss/search?q=EU+Council+sanctions+designations+restrictive+measures+2026&hl=en-US&gl=US&ceid=US:en", official: true, sections: ["sanctions"] },
+  { name: "Google News — UK OFSI",                 url: "https://news.google.com/rss/search?q=OFSI+UK+financial+sanctions+penalty+2026&hl=en-US&gl=US&ceid=US:en", official: true, sections: ["sanctions","penalties"] },
+  { name: "Google News — Sanctions",              url: "https://news.google.com/rss/search?q=OFAC+sanctions+designations&hl=en-US&gl=US&ceid=US:en", sections: ["sanctions"] },
+  { name: "Google News — BIS Export Controls",    url: "https://news.google.com/rss/search?q=BIS+export+controls+Entity+List&hl=en-US&gl=US&ceid=US:en", sections: ["bis"] },
+  { name: "Google News — EU Sanctions",           url: "https://news.google.com/rss/search?q=EU+France+Germany+sanctions+restrictive+measures+designations+2026&hl=en-US&gl=US&ceid=US:en", sections: ["sanctions"] },
+  { name: "Google News — Iran Sanctions",         url: "https://news.google.com/rss/search?q=Iran+sanctions+OFAC+2026&hl=en-US&gl=US&ceid=US:en", sections: ["sanctions"] },
+  { name: "Google News — Russia Sanctions",       url: "https://news.google.com/rss/search?q=Russia+sanctions+OFAC+designations+2026&hl=en-US&gl=US&ceid=US:en", sections: ["sanctions"] },
+  { name: "Google News — China Sanctions",        url: "https://news.google.com/rss/search?q=China+Hong+Kong+sanctions+export+controls+2026&hl=en-US&gl=US&ceid=US:en", sections: ["sanctions","bis"] },
+  { name: "Google News — DPRK Sanctions",         url: "https://news.google.com/rss/search?q=North+Korea+DPRK+OFAC+sanctions+designations+2026&hl=en-US&gl=US&ceid=US:en", sections: ["sanctions"] },
+  { name: "Google News — Middle East Sanctions",  url: "https://news.google.com/rss/search?q=Middle+East+Gulf+sanctions+designations+2026&hl=en-US&gl=US&ceid=US:en", sections: ["sanctions"] },
+  { name: "Google News — Southeast Asia",         url: "https://news.google.com/rss/search?q=ASEAN+Myanmar+Singapore+Malaysia+Indonesia+Philippines+Vietnam+sanctions+2026&hl=en-US&gl=US&ceid=US:en", sections: ["sanctions"] },
   // ── India / Pakistan / Indonesia ─────────────────────────────────────────────
   // India DGFT (Directorate General of Foreign Trade) — export controls
   // India MEA — sanctions and foreign policy
   // Global Sanctions — India tracker
   // Google News — India sanctions BIS
-  { name: "Google News — India Sanctions",        url: "https://news.google.com/rss/search?q=India+sanctions+export+controls+DGFT+SCOMET+2026&hl=en-US&gl=US&ceid=US:en" },
-  { name: "Google News — India Pakistan",         url: "https://news.google.com/rss/search?q=India+Pakistan+sanctions+trade+ban+2026&hl=en-US&gl=US&ceid=US:en" },
-  { name: "Google News — Indonesia Sanctions",    url: "https://news.google.com/rss/search?q=Indonesia+sanctions+export+controls+BIS+2026&hl=en-US&gl=US&ceid=US:en" },
-];
+  { name: "Google News — India Sanctions",        url: "https://news.google.com/rss/search?q=India+Pakistan+sanctions+OFAC+export+controls+2026&hl=en-US&gl=US&ceid=US:en", sections: ["sanctions"] },
+  { name: "Google News — India Pakistan",         url: "https://news.google.com/rss/search?q=site:aljazeera.com+Pakistan+Iran+India+sanctions&hl=en-US&gl=US&ceid=US:en", sections: ["sanctions"] },
+  // OFAC country program pages — DPRK and Venezuela
+  { name: "OFAC — North Korea (DPRK)",
+    url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/north-korea-sanctions", sections: ["sanctions"] },
+  { name: "OFAC — Venezuela",
+    url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/venezuela-sanctions", sections: ["sanctions"] },
+  // Venezuela sanctions news
+  { name: "Google News — Venezuela Sanctions",
+    url: "https://news.google.com/rss/search?q=Venezuela+OFAC+Maduro+sanctions+designations+2026&hl=en-US&gl=US&ceid=US:en", sections: ["sanctions"] },
+  // Singapore MAS + ASEAN government sanctions
+  { name: "Google News — Singapore ASEAN",
+    url: "https://news.google.com/rss/search?q=Singapore+MAS+Malaysia+Indonesia+ASEAN+sanctions+2026&hl=en-US&gl=US&ceid=US:en", sections: ["sanctions"] },
+  // Al Jazeera — Pakistan/Iran/India coverage
+  { name: "Google News — Al Jazeera Pakistan Iran",
+    url: "https://news.google.com/rss/search?q=site:aljazeera.com+Pakistan+Iran+India+sanctions+nuclear+2026&hl=en-US&gl=US&ceid=US:en", sections: ["sanctions","religion"] },
+
+  // ── AP News ──────────────────────────────────────────────────────────────────
+  { name: "AP News — Sanctions & Finance",
+    url: "https://news.google.com/rss/search?q=site:apnews.com+sanctions+treasury+OFAC+2026&hl=en-US&gl=US&ceid=US:en", sections: ["sanctions","penalties"] },
+  { name: "AP News — World & Economics",
+    url: "https://news.google.com/rss/search?q=site:apnews.com+economy+trade+export+controls+2026&hl=en-US&gl=US&ceid=US:en", sections: ["economics","bis"] },
+  { name: "AP News — Religion & International",
+    url: "https://news.google.com/rss/search?q=site:apnews.com+religion+Vatican+papacy+interfaith+2026&hl=en-US&gl=US&ceid=US:en", sections: ["religion"] },
+
+  // ── BBC News ──────────────────────────────────────────────────────────────────
+  { name: "BBC News — World",
+    url: "https://feeds.bbci.co.uk/news/world/rss.xml", sections: ["sanctions","economics","religion"] },
+  { name: "BBC News — Business",
+    url: "https://feeds.bbci.co.uk/news/business/rss.xml", sections: ["economics","penalties","occ"] },
+
+  // ── CNN ───────────────────────────────────────────────────────────────────────
+  { name: "CNN — World & Sanctions",
+    url: "https://news.google.com/rss/search?q=site:cnn.com+sanctions+OFAC+treasury+designations+2026&hl=en-US&gl=US&ceid=US:en", sections: ["sanctions","economics"] },
+  { name: "CNN — Business & Trade",
+    url: "https://news.google.com/rss/search?q=site:cnn.com+business+trade+export+controls+economy+2026&hl=en-US&gl=US&ceid=US:en", sections: ["economics","bis"] },
+  ];
 
 // ── Main function: fetch all sources in parallel ──────────────────────────────
 // Generate Treasury press release URLs (sequential SB numbers)
@@ -287,14 +338,14 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean }> = [
 // SB509 = May 28 2026 (confirmed). Treasury/OFAC publishes ~1-2 SBs per day.
 // Dynamically estimate the ceiling so new releases are always probed without
 // ever needing to update a hardcoded constant again.
-const SB509_DATE    = new Date("2026-05-28T00:00:00Z");
-const SB509_NUM     = 509;
-const SB_PER_DAY    = 1.5; // conservative estimate (~10/week)
+const SB509_DATE    = new Date("2026-06-10T00:00:00Z");  // updated baseline: SB0528 = June 10, 2026
+const SB509_NUM     = 528;
+const SB_PER_DAY    = 1.0; // ~7/week — lowered from 1.5 so probes land near actual latest
 function getEstimatedLatestSB(): number {
   const daysSince = Math.max(0, (Date.now() - SB509_DATE.getTime()) / 86_400_000);
-  return Math.ceil(SB509_NUM + daysSince * SB_PER_DAY) + 5; // +5 buffer
+  return Math.ceil(SB509_NUM + daysSince * SB_PER_DAY) + 1; // +1 buffer — keeps ceiling just above actual latest
 }
-function getTreasurySources(): Array<{ name: string; url: string }> {
+function getTreasurySources(): Array<{ name: string; url: string; sections: string[] }> {
   const ceiling = getEstimatedLatestSB();
   const sources = [];
   for (let i = 0; i < 20; i++) {  // probe 20 SBs from ceiling downward
@@ -302,7 +353,8 @@ function getTreasurySources(): Array<{ name: string; url: string }> {
     const padded = "sb" + String(num).padStart(4, "0");
     sources.push({
       name: `Treasury Press Release ${padded.toUpperCase()}`,
-      url: `https://home.treasury.gov/news/press-releases/${padded}`
+      url: `https://home.treasury.gov/news/press-releases/${padded}`,
+      sections: ["sanctions","economics","penalties"],
     });
   }
   return sources;
@@ -326,7 +378,33 @@ function getOFACDateSources(): Array<{ name: string; url: string }> {
   return sources;
 }
 
-export async function fetchOfficialSources(): Promise<OfficialSource[]> {
+
+// ── Subrequest budget guard ──────────────────────────────────────────────────
+// CF Workers hard limit: 50 subrequests per invocation.
+// Budget breakdown (skipLLM=true fast path):
+//   - source fetches   (SOURCES + Treasury SBs)
+//   - Redis save       ~2 calls
+//   - safety headroom  5
+// Budget breakdown (full LLM path):
+//   - source fetches + Redis load + Redis save + Gemini
+//   - Allow more headroom since LLM path has fewer sources
+const CF_SUBREQUEST_LIMIT = 50;
+const REDIS_OVERHEAD = 4;  // load + save + connection overhead
+const SUBREQUEST_HEADROOM = 4;  // safety buffer
+
+export function checkSubrequestBudget(sources: Array<unknown>, label = "fetchOfficialSources"): void {
+  const estimated = sources.length + REDIS_OVERHEAD + SUBREQUEST_HEADROOM;
+  const budget = CF_SUBREQUEST_LIMIT - SUBREQUEST_HEADROOM;
+  if (estimated > budget) {
+    const msg = `[subrequest-guard] ${label}: estimated ${estimated} subrequests (${sources.length} sources + ${REDIS_OVERHEAD} Redis overhead + ${SUBREQUEST_HEADROOM} headroom) exceeds safe budget of ${budget}. Redis save WILL fail. Reduce source count by ${estimated - budget}.`;
+    console.error(msg);
+    // Don't throw — let the fetch proceed but warn loudly so logs surface the problem
+  } else {
+    console.log(`[subrequest-guard] ${label}: ${estimated} estimated subrequests (${sources.length} sources) — within budget ✅`);
+  }
+}
+
+export async function fetchOfficialSources(section?: string): Promise<OfficialSource[]> {
   const now = new Date().toISOString();
   // Include OFAC date-specific pages (last 7 days) and recent Treasury SB press releases.
   // getOFACDateSources/getTreasurySources are defined above but were previously not wired up.
@@ -334,13 +412,16 @@ export async function fetchOfficialSources(): Promise<OfficialSource[]> {
   // SOURCES has ~45 entries. Add only 3 Treasury SB probes (the 3 most likely current ones).
   // OFAC date pages removed — they are blocked from Cloudflare network and waste subrequest budget.
   // 45 sources + 3 SB probes + ~4 Redis calls = ~52, safely within budget.
-  // Probe 8 Treasury SBs: 35 SOURCES + 8 SBs + 1 Redis = 44 subrequests (safe under 50 limit)
-  const treasurySources = getTreasurySources().slice(0, 8);
-  const allSources = [
-    ...SOURCES,
-    ...treasurySources,
-  ];
-  const MASTER_TIMEOUT = 20000;
+  // Probe 4 Treasury SBs: 38 SOURCES + 4 SBs + 4 Redis overhead = 46 subrequests (safe under 50 limit)
+  const treasurySources = getTreasurySources().slice(0, 4);
+  const allSourcesUnfiltered = [...SOURCES, ...treasurySources];
+  // Filter to section-relevant sources when a specific section is requested
+  const allSources = section && section !== "all"
+    ? allSourcesUnfiltered.filter(s => (s as any).sections?.includes(section))
+    : allSourcesUnfiltered;
+  console.log(`[official] Section filter: ${section ?? "all"} → ${allSources.length}/${allSourcesUnfiltered.length} sources`);
+  checkSubrequestBudget(allSources);
+  const MASTER_TIMEOUT = 10000;  // 10s — must leave headroom for LLM+save within CF 30s wall-clock limit
 
   const fetchOne = async (source: typeof allSources[0]) => {
     try {
