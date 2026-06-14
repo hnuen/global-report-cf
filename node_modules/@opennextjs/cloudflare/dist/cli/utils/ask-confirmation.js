@@ -1,0 +1,14 @@
+import { randomUUID } from "node:crypto";
+import Enquirer from "enquirer";
+export async function askConfirmation(message) {
+    const questionName = randomUUID();
+    const enquirerAnswersObject = await Enquirer.prompt({
+        name: questionName,
+        message,
+        type: "confirm",
+        initial: "y",
+    });
+    console.log("");
+    const answer = !!enquirerAnswersObject[questionName];
+    return answer;
+}

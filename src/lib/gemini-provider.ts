@@ -77,7 +77,38 @@ BIS SEARCH: BIS publishes Entity List additions to the Federal Register multiple
 5. site:bis.doc.gov [current month year]
 Do NOT rely on general BIS knowledge — search specifically for Federal Register Entity List notices from the last 14 days.
 
-Al Jazeera is required for Middle East, Iran, Gulf, and Islamic world stories.`;
+Al Jazeera is required for Middle East, Iran, Gulf, and Islamic world stories.
+
+CHINA/HK SANCTIONS — MANDATORY SEARCH (for China/HK region articles):
+Focus on these U.S. government lists and programs:
+
+1. NS-CMIC List (Non-SDN Chinese Military-Industrial Complex Companies):
+   — Authorized by EO 13959 (Nov 2020) and expanded by EO 14032 (Jun 2021)
+   — Prohibits U.S. persons from investing in listed companies
+   — Search: "NS-CMIC" OFAC treasury designation 2026
+   — Search: "EO 13959" OR "EO 14032" China military investment ban
+
+2. Section 1237 DoD List (NDAA Chinese Military Companies):
+   — Pentagon designates Chinese companies with military ties
+   — Search: "Section 1237" "Chinese military companies" DoD Pentagon 2026
+   — Search: site:defense.gov Chinese military companies 1260H
+
+3. Key designated entities — track for additions, removals, appeals:
+   AVIC (Aviation Industry Corp of China), CASIC (China Aerospace Science & Industry),
+   CETC (China Electronics Technology Group), CNOOC, SMIC, Hikvision, Dahua,
+   DJI, SenseTime, BGI Genomics, Norinco, China Telecom, China Mobile,
+   China Unicom, Huawei, CITIC Group, China Communications Construction
+
+4. Xinjiang / XPCC Program (EO 13818 / UFLPA):
+   — XPCC (Xinjiang Production and Construction Corps) is sanctioned under EO 13818
+   — UFLPA (Uyghur Forced Labor Prevention Act) entity list
+   — Search: Xinjiang XPCC UFLPA "forced labor" sanctions OFAC 2026
+
+5. Hong Kong Autonomy Act (EO 13936):
+   — Targets individuals and entities undermining HK autonomy
+   — Search: "Hong Kong" OFAC sanctions "EO 13936" autonomy 2026
+
+For China/HK articles: sourceUrl must be the specific OFAC action page (/recent-actions/YYYYMMDD), Federal Register notice, or DoD press release — not a generic news article.`;
 
 function parseJSON(text: string): Briefing | null {
   const clean = text.replace(/```json|```/g, "").trim();

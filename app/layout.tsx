@@ -1,8 +1,14 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
   title: "The Global Report",
   description: "Sanctions · Economics · Religion · OCC · Penalties · BIS/Export Controls",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#f5f0e8",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

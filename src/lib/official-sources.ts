@@ -286,6 +286,19 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean; sections: 
   { name: "Google News — Iran Sanctions",         url: "https://news.google.com/rss/search?q=Iran+sanctions+OFAC+2026&hl=en-US&gl=US&ceid=US:en", sections: ["sanctions"] },
   { name: "Google News — Russia Sanctions",       url: "https://news.google.com/rss/search?q=Russia+sanctions+OFAC+designations+2026&hl=en-US&gl=US&ceid=US:en", sections: ["sanctions"] },
   { name: "Google News — China Sanctions",        url: "https://news.google.com/rss/search?q=China+Hong+Kong+sanctions+export+controls+2026&hl=en-US&gl=US&ceid=US:en", sections: ["sanctions","bis"] },
+  // ── China/HK — Military Companies & Sanctions Programs ───────────────────────
+  // NS-CMIC = Non-SDN Chinese Military-Industrial Complex Companies (EO 13959 / EO 14032)
+  // Section 1237 = DoD list of Chinese military companies (NDAA)
+  { name: "Google News — NS-CMIC Section 1237",
+    url: "https://news.google.com/rss/search?q=%22NS-CMIC%22+OR+%22Section+1237%22+%22Chinese+military%22+OFAC+DoD+2026&hl=en-US&gl=US&ceid=US:en", sections: ["sanctions"] },
+  { name: "Google News — EO 13959 EO 14032",
+    url: "https://news.google.com/rss/search?q=%22EO+13959%22+OR+%22EO+14032%22+OR+%2213959%22+China+military+investment+ban+2026&hl=en-US&gl=US&ceid=US:en", sections: ["sanctions"] },
+  { name: "Google News — China Military Tech Firms",
+    url: "https://news.google.com/rss/search?q=AVIC+OR+CETC+OR+CASIC+OR+Norinco+OR+CNOOC+OR+SMIC+OR+Hikvision+OR+DJI+OR+SenseTime+OR+BGI+sanctions+entity+list+2026&hl=en-US&gl=US&ceid=US:en", sections: ["sanctions","bis"] },
+  { name: "Google News — Xinjiang XPCC",
+    url: "https://news.google.com/rss/search?q=Xinjiang+XPCC+Uyghur+%22forced+labor%22+sanctions+OFAC+2026&hl=en-US&gl=US&ceid=US:en", sections: ["sanctions"] },
+  { name: "Google News — Hong Kong Autonomy Sanctions",
+    url: "https://news.google.com/rss/search?q=%22Hong+Kong%22+sanctions+%22EO+13936%22+OR+%22autonomy%22+OFAC+treasury+2026&hl=en-US&gl=US&ceid=US:en", sections: ["sanctions"] },
   { name: "Google News — DPRK Sanctions",         url: "https://news.google.com/rss/search?q=North+Korea+DPRK+OFAC+sanctions+designations+2026&hl=en-US&gl=US&ceid=US:en", sections: ["sanctions"] },
   { name: "Google News — Middle East Sanctions",  url: "https://news.google.com/rss/search?q=Middle+East+Gulf+sanctions+designations+2026&hl=en-US&gl=US&ceid=US:en", sections: ["sanctions"] },
   { name: "Google News — Southeast Asia",         url: "https://news.google.com/rss/search?q=ASEAN+Myanmar+Singapore+Malaysia+Indonesia+Philippines+Vietnam+sanctions+2026&hl=en-US&gl=US&ceid=US:en", sections: ["sanctions"] },

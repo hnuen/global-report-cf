@@ -210,7 +210,7 @@ export function buildAnalyzedBriefing(sources: OfficialSource[]): Briefing {
   const emptySidebar = { watchlist: [], keyFigures: [] };
 
   return {
-    lastUpdated: `${now} — Local analysis (all LLMs unavailable)`,
+    lastUpdated: `${now} — Official government sources`,
     articles,
     sidebar: {
       sanctions: emptySidebar,
