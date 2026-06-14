@@ -651,14 +651,21 @@ export default function GlobalMonitor() {
           const newsRes = await fetch(`/api/news?t=${Date.now()}`, { cache: "no-store" });
           const newsData = await newsRes.json();
           if (newsData?.lastUpdated && newsData.lastUpdated !== previousUpdated) {
-            setData(newsData); setExpanded({}); setSanOn(false);
+            setData(newsData); setExpanded({});
             detected = true;
             break;
           }
         } catch { /* keep polling */ }
       }
-      // If still not detected after 45s, force reload to pick up whatever landed
-      if (!detected) { window.location.reload(); }
+      // If lastUpdated didn't change (same-minute refresh), force one final fetch.
+      // DO NOT window.location.reload() — that resets the active section to "all".
+      if (!detected) {
+        try {
+          const finalRes = await fetch(`/api/news?t=${Date.now()}`, { cache: "no-store" });
+          const finalData = await finalRes.json().catch(() => null);
+          if (finalData?.articles?.length) { setData(finalData); setExpanded({}); }
+        } catch { /* ignore */ }
+      }
     } catch(e){
       setError("Refresh failed — please try again in a moment.");
       console.error(e);

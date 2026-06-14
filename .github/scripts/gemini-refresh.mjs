@@ -89,7 +89,10 @@ REQUIRED searches for sanctions:
   1. site:ofac.treasury.gov/recent-actions — all indexed action pages
   2. site:ofac.treasury.gov "recent-actions/202606" — current month
   3. OFAC designations sanctions SDN "June 2026" treasury
+  4. OFAC Cuba Russia "general license" designation June 2026
+  5. OFAC Sinaloa cartel fentanyl designations June 2026
 For every OFAC action article, sourceUrl MUST be the /recent-actions/YYYYMMDD URL.
+Write a separate article for EACH distinct OFAC date page found — do not merge multiple dates into one article.
 
 BIS: search site:federalregister.gov "bureau of industry" "entity list" for current month.
 Al Jazeera required for Middle East, Iran, Gulf, and Islamic world stories.
