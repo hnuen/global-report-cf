@@ -8,7 +8,7 @@ function isConcatenated(text: string): boolean {
 // automatically). Used as the fallback "publish date" for articles when no real
 // date can be extracted, so the displayed default reflects the Eastern-time day
 // rather than the UTC day (which can be a day ahead late in the evening ET).
-export function todayInEastern(): string {
+function todayInEastern(): string {
   const parts = new Intl.DateTimeFormat("en-CA", {
     timeZone: "America/New_York",
     year: "numeric", month: "2-digit", day: "2-digit",
@@ -71,24 +71,9 @@ const SOURCE_SECTION_MAP: Record<string, Section> = {
   "Federal Reserve News":             "economics",
   "Federal Reserve — Press Releases":  "economics",
   "Federal Reserve Enforcement Actions": "penalties",
-  "Google News — BIS Export Controls":        "bis",
-  "Google News — BIS Entity List":            "bis",
-  "Google News — China Export Controls":      "bis",
-  "Google News — Global Sanctions":           "sanctions",
-  "Google News — OFAC Broad":                 "sanctions",
-  "Google News — Treasury OFAC Actions":      "sanctions",
-  "Google News — FinCEN":                     "penalties",
-  "Google News — EU Council Sanctions":       "sanctions",
-  "Google News — UK OFSI":                    "sanctions",
-  "Google News — Iran Sanctions":             "sanctions",
-  "Google News — China Sanctions":            "sanctions",
-  "Google News — India Sanctions":            "sanctions",
-  "Google News — Indonesia Sanctions":        "sanctions",
+  "Google News — BIS Export Controls":"bis",
   "BIS Press Releases":               "bis",
-  "Federal Register — BIS Export Controls": "bis",
-  "Federal Register — BIS Actions":         "bis",
   "OCC Enforcement Actions 2026":     "occ",
-  "FinCEN Enforcement Actions":                  "penalties",
   "FinCEN News Releases":                        "penalties",
   "OFAC Civil Penalties & Enforcement":          "penalties",
   "CFPB Enforcement Actions":                    "penalties",
@@ -162,8 +147,6 @@ const SOURCE_CATEGORY_MAP: Record<string, string> = {
   "Federal Reserve News":             "Federal Reserve",
   "Google News — BIS Export Controls":"BIS / Export Controls",
   "BIS Press Releases":               "BIS",
-  "Federal Register — BIS Export Controls": "BIS / Export Controls",
-  "Federal Register — BIS Actions":         "BIS",
   "OCC Enforcement Actions 2026":     "OCC Enforcement",
   "FinCEN News Releases":                        "FinCEN",
   "OFAC Civil Penalties & Enforcement":          "OFAC Civil Penalties",
@@ -250,8 +233,6 @@ const SOURCE_DISPLAY_NAMES: Record<string, string> = {
   "State Dept — Iran Sanctions":         "State Dept",
   "State Dept — DPRK Sanctions":         "State Dept",
   "BIS Press Releases":                  "BIS",
-  "Federal Register — BIS Export Controls": "BIS (Federal Register)",
-  "Federal Register — BIS Actions":         "BIS (Federal Register)",
   "OCC Enforcement Actions 2026":        "OCC",
   "FinCEN News Releases":                "FinCEN",
   "Federal Reserve Enforcement Actions": "Federal Reserve",
@@ -277,15 +258,8 @@ function extractDateFromContent(content: string): string | null {
 
 // Extract direct article URL from bullet ||| separator or dated OFAC URL pattern
 function extractDirectUrl(bulletUrl: string, sourceUrl: string, text: string): string {
-  // Resolve relative hrefs (e.g. /news/enforcement-actions/case-name) to absolute
-  if (bulletUrl && bulletUrl.startsWith("/")) {
-    try {
-      const base = new URL(sourceUrl);
-      bulletUrl = `${base.protocol}//${base.host}${bulletUrl}`;
-    } catch {}
-  }
   // If bullet has a specific URL that isn't just the source index page
-  if (bulletUrl && bulletUrl !== sourceUrl && bulletUrl.startsWith("http") && bulletUrl.length > 10) {
+  if (bulletUrl && bulletUrl !== sourceUrl && bulletUrl.length > 10) {
     return bulletUrl;
   }
   // Try to extract dated OFAC URL from text
@@ -312,7 +286,7 @@ function buildArticleFromSource(source: OfficialSource): Article | null {
       .replace("U.S. Treasury — Press Releases", "U.S. Treasury")
       .replace("U.S. Treasury — Enforcement", "U.S. Treasury")
       .replace(/^U\.S\. Treasury — /, "U.S. Treasury / ")
-      .replace(/^Google News — .*$/, "Google News")
+      .replace(/^Google News — /, "")
       .replace(/^OFAC — /, "OFAC / "));
 
   // Default/fallback date — Eastern Time day (matches the "lastUpdated" timestamp
@@ -392,7 +366,7 @@ function buildArticleFromSource(source: OfficialSource): Article | null {
     const articleDate = toISODate(extractedDate || today);
 
     // Use the article URL from the RSS item, not the feed URL
-    const directUrl = bullet.url && bullet.url.startsWith("http") && !bullet.url.includes("/feeds/") && (!bullet.url.includes("/rss") || bullet.url.includes("/rss/articles/"))
+    const directUrl = bullet.url && bullet.url.startsWith("http") && !bullet.url.includes("/feeds/") && !bullet.url.includes("/rss")
       ? bullet.url
       : extractDirectUrl(bullet.url, source.url, bullet.url + " " + bullet.text);
 
@@ -442,7 +416,7 @@ export function buildAllFromSource(source: OfficialSource): Article[] {
       .replace("OFAC Sanctions List Updates", "OFAC")
       .replace("U.S. Treasury — OFAC Sanctions", "U.S. Treasury / OFAC")
       .replace(/^U\.S\. Treasury — /, "U.S. Treasury / ")
-      .replace(/^Google News — .*$/, "Google News")
+      .replace(/^Google News — /, "")
       .replace(/^OFAC — /, "OFAC / "));
 
   // Default/fallback date — Eastern Time day (matches the "lastUpdated" timestamp
@@ -483,15 +457,9 @@ export function buildAllFromSource(source: OfficialSource): Article[] {
   return parsedBullets.map(bullet => {
     const headline = bullet.text.slice(0, 200);
     const articleDate = toISODate(bullet.pubDate || extractDateFromContent(bullet.url + " " + bullet.text + " " + source.content.slice(0, 300)) || today);
-    // Convert Google News RSS redirect URL to the web version (removes /rss/ prefix,
-    // still redirects to the real article but shows a cleaner URL in the UI)
-    const rawBulletUrl = (bullet.url || "").replace(
-      /^https:\/\/news\.google\.com\/rss\/articles\//,
-      "https://news.google.com/articles/"
-    );
-    const directUrl = rawBulletUrl && rawBulletUrl.startsWith("http") && !rawBulletUrl.includes("/feeds/") && !rawBulletUrl.endsWith(".xml")
-      ? rawBulletUrl
-      : extractDirectUrl(rawBulletUrl, source.url, rawBulletUrl + " " + bullet.text);
+    const directUrl = bullet.url && bullet.url.startsWith("http") && !bullet.url.includes("/feeds/") && !bullet.url.endsWith(".xml") && !bullet.url.includes("news.google.com")
+      ? bullet.url
+      : extractDirectUrl(bullet.url, source.url, bullet.url + " " + bullet.text);
 
     let brief = bullet.brief;
     if (!brief || brief.length < 10) {
@@ -512,7 +480,7 @@ export function buildAllFromSource(source: OfficialSource): Article[] {
       section,
       category,
       region,
-      impact: source.url?.includes("google.com") ? "medium" as const : "high" as const,
+      impact: "medium" as const,
       date: articleDate,
       headline,
       body: [brief],
@@ -525,7 +493,6 @@ export function buildAllFromSource(source: OfficialSource): Article[] {
 // Base URLs for resolving relative links per source domain
 const SOURCE_BASE_URLS: Record<string, string> = {
   "U.S. Treasury — Press Releases":     "https://home.treasury.gov",
-  "U.S. Treasury — News":               "https://home.treasury.gov",
   "U.S. Treasury — News RSS":            "https://home.treasury.gov",
   "U.S. Treasury — Press Releases RSS":  "https://home.treasury.gov",
   "OFAC RSS Feed":                       "https://ofac.treasury.gov",
@@ -543,8 +510,6 @@ const SOURCE_BASE_URLS: Record<string, string> = {
   "Federal Reserve Enforcement Actions":"https://www.federalreserve.gov",
   "BIS Press Releases":                          "https://www.bis.gov",
   "BIS Export Enforcement":                     "https://www.bis.gov",
-  "Federal Register — BIS Export Controls":     "https://www.federalregister.gov",
-  "Federal Register — BIS Actions":             "https://www.federalregister.gov",
   "China MOFCOM — Export Controls":             "http://english.mofcom.gov.cn",
   "China MOFCOM — Trade News":                  "http://english.mofcom.gov.cn",
   "EU Dual-Use Export Controls":                "https://policy.trade.ec.europa.eu",
@@ -562,16 +527,13 @@ const SOURCE_BASE_URLS: Record<string, string> = {
   "EU Council — Russia Sanctions":       "https://www.consilium.europa.eu",
   "EU Council — Iran Sanctions":         "https://www.consilium.europa.eu",
   "EU Council — Press Releases":         "https://www.consilium.europa.eu",
-  "UK Sanctions List":                    "https://www.gov.uk",
   "UK OFSI — Financial Sanctions":       "https://www.gov.uk",
   "UK OFSI — Enforcement Penalties":     "https://www.gov.uk",
   "UK Sanctions RSS":                    "https://www.gov.uk",
   "UK Foreign Office — Sanctions":       "https://www.gov.uk",
   "State Dept — Iran Sanctions":         "https://www.state.gov",
   "State Dept — Venezuela Sanctions":    "https://www.state.gov",
-  "OFAC — North Korea (DPRK)":            "https://ofac.treasury.gov",
-  "OFAC — Venezuela":                     "https://ofac.treasury.gov",
-  "OFAC DPRK Sanctions":                  "https://ofac.treasury.gov",
+  "OFAC DPRK Sanctions":                 "https://ofac.treasury.gov",
   "State Dept — DPRK Sanctions":         "https://www.state.gov",
   "UN SC Sanctions Committees":          "https://www.un.org",
   // All OFAC program pages
@@ -629,20 +591,14 @@ function detectRegionFromContent(text: string): string {
   if (t.includes("iran") || t.includes("irgc") || t.includes("economic fury")) return "Iran";
   if (t.includes("russia") || t.includes("ukraine") || t.includes("rosneft") || t.includes("lukoil")) return "Russia";
   if (t.includes("cuba") || t.includes("gaesa") || t.includes("cubans")) return "Cuba";
-  if (t.includes("venezuela") || t.includes("maduro") || t.includes("chavez") || t.includes("pdvsa")) return "Venezuela";
-  if (t.includes("dprk") || t.includes("north korea") || t.includes("kim jong")) return "DPRK";
-  if (t.includes("xinjiang") || t.includes("ccmc") || t.includes("hong kong") || t.includes("uyghur")) return "China / HK";
-  if (t.includes("china") || t.includes("prc") || t.includes("beijing")) return "China / HK";
-  if (t.includes("hizballah") || t.includes("hezbollah") || t.includes("hamas") || t.includes("lebano") ||
-      t.includes("israel") || t.includes("gaza") || t.includes("west bank") ||
-      t.includes("iraq") || t.includes("syria") || t.includes("yemen") || t.includes("sudan")) return "MEA";
-  if (t.includes("sinaloa") || t.includes("cartel") || t.includes("fentanyl") || t.includes("mexico")) return "Global";
-  if (t.includes("myanmar") || t.includes("burma") || t.includes("indonesia") ||
-      t.includes("vietnam") || t.includes("thailand") || t.includes("philippines") ||
-      t.includes("malaysia") || t.includes("singapore") || t.includes("southeast asia")) return "SEA";
-  if (t.includes("india") || t.includes("pakistan")) return "India / Pakistan";
-  if (t.includes("europe") || t.includes("eu sanctions") || t.includes("balkans") || t.includes("belarus")) return "EU / Europe";
-  return "Global";
+  if (t.includes("venezuela") || t.includes("maduro") || t.includes("chavez")) return "Venezuela";
+  if (t.includes("dprk") || t.includes("north korea") || t.includes("kim")) return "DPRK";
+  if (t.includes("hizballah") || t.includes("hezbollah") || t.includes("lebano")) return "Middle East";
+  if (t.includes("sinaloa") || t.includes("cartel") || t.includes("fentanyl")) return "Mexico / SEA";
+  if (t.includes("china") || t.includes("hong kong") || t.includes("prc")) return "China / Hong Kong";
+  if (t.includes("myanmar") || t.includes("burma") || t.includes("southeast asia")) return "SEA";
+  if (t.includes("europe") || t.includes("eu sanctions")) return "EU / Europe";
+  return "United States";
 }
 
 // Detect region from source name
@@ -654,12 +610,8 @@ function detectRegion(sourceName: string): string {
   if (sourceName.includes("— Iran") || sourceName.includes("Iran Sanctions")) return "Iran";
   if (sourceName.includes("— Russia") || sourceName.includes("Russia Sanctions") || sourceName.includes("Ukraine-Russia")) return "Russia";
   if (sourceName.includes("— Cuba")) return "Cuba";
-  if (sourceName.includes("— Venezuela") || sourceName.includes("Venezuela Sanctions")) return "Venezuela";
-  if (sourceName.includes("Singapore ASEAN")) return "SEA";
-  if (sourceName.includes("Al Jazeera Pakistan Iran")) return "India / Pakistan";
   if (sourceName.includes("— Venezuela")) return "Venezuela";
-  if (sourceName.includes("— North Korea") || sourceName.includes("DPRK") ||
-      sourceName.includes("North Korea (DPRK)")) return "DPRK";
+  if (sourceName.includes("— North Korea") || sourceName.includes("DPRK")) return "DPRK";
   if (sourceName.includes("— Hong Kong") || sourceName.includes("Chinese Military") || sourceName.includes("CAATSA")) return "China / HK";
   if (sourceName.includes("— Lebanon") || sourceName.includes("— Iraq") || sourceName.includes("— Libya") ||
       sourceName.includes("— Yemen") || sourceName.includes("— Sudan") || sourceName.includes("— Somalia") ||
@@ -699,15 +651,15 @@ function detectRegion(sourceName: string): string {
   if (sourceName.includes("Google News — DPRK")) return "DPRK";
   if (sourceName.includes("Google News — Middle East")) return "Middle East";
   if (sourceName.includes("Google News — Southeast")) return "SEA";
-  if (sourceName.includes("India DGFT") || sourceName.includes("India MEA") || sourceName.includes("India Sanctions") || sourceName.includes("India Pakistan") || sourceName.includes("Google News — India") || sourceName.includes("Pakistan")) return "India / Pakistan";
+  if (sourceName.includes("India DGFT") || sourceName.includes("India MEA") || sourceName.includes("India Sanctions") || sourceName.includes("India Pakistan") || sourceName.includes("Google News — India")) return "India";
   if (sourceName.includes("Indonesia")) return "Indonesia / SEA";
   if (sourceName.includes("Global Sanctions — India")) return "India";
   if (sourceName.includes("Iran")) return "Iran";
   if (sourceName.includes("Russia")) return "Russia";
   if (sourceName.includes("Cuba")) return "Cuba";
   if (sourceName.includes("Venezuela")) return "Venezuela";
-  if (sourceName.includes("Counter Terror") || sourceName.includes("SDGT")) return "Global";
-  if (sourceName.includes("Counter Narco") || sourceName.includes("Sinaloa")) return "Global";
+  if (sourceName.includes("Counter Terror")) return "Middle East";
+  if (sourceName.includes("Counter Narco") || sourceName.includes("Sinaloa")) return "Mexico / SEA";
   if (sourceName.includes("OCC") || sourceName.includes("FinCEN") || sourceName.includes("Federal Reserve")
     || sourceName.includes("CFPB") || sourceName.includes("State Department") || sourceName.includes("Treasury")
     || sourceName.includes("OFAC") || sourceName.includes("BIS")) return "United States";
@@ -720,37 +672,32 @@ function buildArticlesFromSource(source: OfficialSource): Article[] {
   // Dynamic OFAC date sources (e.g. "OFAC Actions May 25")
   const isOFACDate = source.name.startsWith("OFAC Actions ");
   // Dynamic Treasury press release sources (e.g. "Treasury Press Release SB0505")
-  const isTreasuryPR = source.name.startsWith("Treasury Press Release ") || source.name === "U.S. Treasury — News" || source.name.includes("HM Treasury") || source.name.includes("UK HM");
+  const isTreasuryPR = source.name.startsWith("Treasury Press Release ");
 
-  // Per-article sanctions filter for Treasury sources.
-  // Checking full page content doesn't work: Treasury pages include navigation
-  // boilerplate like "Sanctions Programs", "OFAC" in every page, so even a
-  // Tax Credit guidance page would pass a content-level hasSanctions check.
-  // Instead we filter each article's HEADLINE individually (applied in the
-  // return map below). Define keywords here so they're in scope.
-  const SANCTIONS_KEYWORDS = isTreasuryPR ? [
-    "sanction","designat","ofac","blocked person","sdn","specially designated",
-    "general license","enforcement","penalties","arms","weapons","proliferat",
-    "terror","cartel","narco","fentanyl","money laundering","iran","russia",
-    "north korea","dprk","cuba","venezuela","hizballah","hezbollah","hamas",
-    "isis","isil","al-qaeda","wagner","sinaloa","export control","bis",
-    "ofsi","financial sanctions","asset freeze","travel ban","restrictive measures",
-    "uk sanctions","designated person","frozen assets",
-  ] : [];
-  const NON_SANCTIONS_KEYWORDS_TR = isTreasuryPR ? [
-    "tax credit","tax relief","tax guidance","education savings","k-12","529 plan",
-    "treasury note","treasury bond","auction","refunding","marketable borrowing",
-    "quarterly refunding","tbac","treasury borrowing advisory","tic data",
-    "interest rate","yield curve","debt management","bill auction","coupon",
-    "savings bond","i bond","tips","floating rate","currency swap",
-    "financial literacy","freedom250","student loan","housing finance",
-    "crypto framework","digital asset framework",
-    "access to banking","banking services","mortgage guarantee","infrastructure levy",
-    "growth initiative","cost of living","autumn statement","spring statement",
-    "public spending","fiscal rules","borrowing forecast","debt sustainability",
-    "gilts","gilt market","national insurance","income tax","corporation tax",
-    "pension credit","benefit cap","universal credit","child benefit",
-  ] : [];
+  // Filter Treasury PRs — only keep sanctions-related content
+  // Skip bond auctions, borrowing estimates, refunding statements, TIC data etc.
+  if (isTreasuryPR) {
+    const c = source.content.toLowerCase();
+    const SANCTIONS_KEYWORDS = [
+      "sanction","designat","ofac","blocked person","sdn","specially designated",
+      "general license","enforcement","penalties","arms","weapons","proliferat",
+      "terror","cartel","narco","fentanyl","money laundering","iran","russia",
+      "north korea","dprk","cuba","venezuela","hizballah","hezbollah","hamas",
+      "isis","isil","al-qaeda","wagner","sinaloa","export control","bis",
+    ];
+    const NON_SANCTIONS_KEYWORDS = [
+      "treasury note","treasury bond","auction","refunding","marketable borrowing",
+      "quarterly refunding","tbac","treasury borrowing advisory","tic data",
+      "interest rate","yield curve","debt management","bill auction","coupon",
+      "savings bond","i bond","tips","floating rate","currency swap",
+      "financial literacy","freedom250",
+    ];
+    const hasSanctions = SANCTIONS_KEYWORDS.some(k => c.includes(k));
+    const hasNonSanctions = NON_SANCTIONS_KEYWORDS.some(k => c.includes(k));
+    // Skip if clearly non-sanctions OR if has no sanctions keywords at all
+    if (hasNonSanctions && !hasSanctions) return [];
+    if (!hasSanctions) return [];
+  }
 
   const section = SOURCE_SECTION_MAP[source.name] ?? "sanctions";
   const category = SOURCE_CATEGORY_MAP[source.name] ?? (isOFACDate ? "OFAC" : isTreasuryPR ? "U.S. Treasury" : source.name);
@@ -797,8 +744,7 @@ function buildArticlesFromSource(source: OfficialSource): Article[] {
       // leaks into the article body as visible "||| <raw text>" artifacts.)
       const desc = rest3.replace(/^DATE:[^\s|]*\s*(\|\|\|)?\s*/, "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
       let url = parts[1]?.trim() || source.url;
-      // Keep per-article Google redirect URLs (news.google.com/rss/articles/...) — they work as redirects
-      if (url.includes("/feeds/") || url.endsWith(".xml") || (url.includes("news.google.com") && !url.includes("/rss/articles/"))) url = source.url;
+      if (url.includes("/feeds/") || url.endsWith(".xml") || url.includes("news.google.com")) url = source.url;
       // Resolve relative URLs
       if (url.startsWith("/") && baseUrl) url = baseUrl + url;
       // Store description back in text field with separator for article builder
@@ -817,24 +763,15 @@ function buildArticlesFromSource(source: OfficialSource): Article[] {
       .replace("OFAC Sanctions List Updates", "OFAC")
       .replace("U.S. Treasury — OFAC Sanctions", "U.S. Treasury / OFAC")
       .replace(/^U\.S\. Treasury — /, "U.S. Treasury / ")
-      .replace(/^Google News — .*$/, "Google News")
+      .replace(/^Google News — /, "")
       .replace(/^OFAC — /, "OFAC / "));
 
   // Create one article per bullet — body shows description if available (RSS), else directs to source
-  return parsed.flatMap((item) => {
+  return parsed.map((item) => {
     // RSS items have format: "headline ||| url ||| description"
     const parts2 = item.text.split(" ||| ");
     const headline = parts2[0].slice(0, 180);
     const description = parts2[1] || "";
-
-    // Per-article headline filter for Treasury sources
-    if (isTreasuryPR && SANCTIONS_KEYWORDS.length > 0) {
-      const hl = headline.toLowerCase();
-      const hasSanctions = SANCTIONS_KEYWORDS.some(k => hl.includes(k));
-      const hasNonSanctions = NON_SANCTIONS_KEYWORDS_TR.some(k => hl.includes(k));
-      // Skip if headline has zero sanctions keywords, or explicitly non-sanctions
-      if (!hasSanctions || (hasNonSanctions && !hasSanctions)) return [];
-    }
 
     // Extract real date — try multiple sources
     const months = ["","January","February","March","April","May","June","July","August","September","October","November","December"];
@@ -886,14 +823,7 @@ function buildArticlesFromSource(source: OfficialSource): Article[] {
       else if (hl.includes("advisory") || hl.includes("alert") || hl.includes("guidance")) context = "Regulatory guidance or advisory notice published.";
       else if (hl.includes("removal") || hl.includes("delisting")) context = "Sanctions removal or delisting action.";
       else if (hl.includes("export") || hl.includes("entity list") || hl.includes("bis")) context = "Export control measures or Entity List update.";
-      else if (hl.includes("iran") || hl.includes("irgc")) context = "U.S. Treasury action targeting Iran-linked networks or actors.";
-      else if (hl.includes("russia") || hl.includes("ukraine")) context = "U.S. Treasury action targeting Russia/Ukraine-related actors.";
-      else if (hl.includes("china") || hl.includes("hong kong") || hl.includes("prc")) context = "Treasury action related to China or Hong Kong.";
-      else if (hl.includes("north korea") || hl.includes("dprk")) context = "DPRK-related Treasury enforcement action.";
-      else if (hl.includes("cuba") || hl.includes("venezuela") || hl.includes("maduro")) context = "Treasury action targeting Cuba or Venezuela.";
-      else if (hl.includes("disrupt") || hl.includes("network") || hl.includes("target") || hl.includes("counter")) context = "Treasury Department sanctions or enforcement action.";
-      else if (hl.includes("terror") || hl.includes("cartel") || hl.includes("narco") || hl.includes("fentanyl")) context = "Counter-terrorism or counter-narcotics enforcement action.";
-      else context = `Official action published by ${displaySource}. See source link for full details.`;
+      else context = "Official action — see source link for full details.";
       body = [context];
     }
 
@@ -901,19 +831,19 @@ function buildArticlesFromSource(source: OfficialSource): Article[] {
     const hlRegion = detectRegionFromContent(headline);
     const articleRegion = hlRegion !== "Global" ? hlRegion : region;
 
-    return [{
+    return {
       id: articleId++,
       section,
       category,
       region: articleRegion,
-      impact: source.url?.includes("google.com") ? "medium" as const : "high" as const,
+      impact: "medium" as const,
       date: articleDate,
       headline,
       body,
       source: displaySource,
       // Use item URL if specific, else fall back to source URL (dated page)
       sourceUrl: item.url && item.url !== source.url ? item.url : source.url,
-    }];
+    };
   });
 }
 
@@ -921,20 +851,10 @@ export function buildBriefingFromSources(sources: OfficialSource[]): Briefing {
   const articles: Article[] = [];
   const successful = sources.filter(s => s.content.length > 50);
 
-  // Process penalty sources first so enforcement articles always make it in
-  const penaltySources = successful.filter(s => (SOURCE_SECTION_MAP[s.name] ?? "") === "penalties");
-  const otherSources   = successful.filter(s => (SOURCE_SECTION_MAP[s.name] ?? "") !== "penalties");
-  const seenHeadlines = new Set<string>();
-  for (const source of [...penaltySources, ...otherSources]) {
+  for (const source of successful) {
     const sourceArticles = buildArticlesFromSource(source);
-    for (const a of sourceArticles) {
-      const key = a.headline.slice(0, 80).toLowerCase().replace(/\s+/g, " ").trim();
-      if (seenHeadlines.has(key)) continue; // skip duplicate headline from another source
-      seenHeadlines.add(key);
-      articles.push(a);
-      if (articles.length >= 100) break;
-    }
-    if (articles.length >= 100) break;
+    articles.push(...sourceArticles);
+    if (articles.length >= 40) break; // cap total
   }
 
   // Fallback: if no articles extracted, use old method
@@ -954,7 +874,7 @@ export function buildBriefingFromSources(sources: OfficialSource[]): Briefing {
   const emptySidebar = { watchlist: [], keyFigures: [] };
 
   return {
-    lastUpdated: `${now} — Official government sources`,
+    lastUpdated: `${now} — Direct from official sources (LLM unavailable)`,
     articles,
     sidebar: {
       sanctions:  emptySidebar,

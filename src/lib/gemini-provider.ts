@@ -59,14 +59,6 @@ Real current facts from web search only. Include real source names and URLs.
 OFAC SEARCH: Do NOT fetch ofac.treasury.gov/recent-actions directly — use targeted date searches instead:
 Search "OFAC sanctions [today's date]", "OFAC designations this week", "site:home.treasury.gov OFAC [month year]"
 
-BIS SEARCH: BIS publishes Entity List additions to the Federal Register multiple times per month — there are ALWAYS recent additions. For the bis section you MUST actively search:
-1. site:federalregister.gov "bureau of industry" "entity list" [current month] [current year]
-2. "BIS entity list" additions [current month year]
-3. BIS export enforcement action [current year]
-4. "export controls" semiconductor chip China [current month year]
-5. site:bis.doc.gov [current month year]
-Do NOT rely on general BIS knowledge — search specifically for Federal Register Entity List notices from the last 14 days.
-
 Al Jazeera is required for Middle East, Iran, Gulf, and Islamic world stories.`;
 
 function parseJSON(text: string): Briefing | null {
@@ -123,8 +115,8 @@ export class GeminiProvider implements LLMProvider {
 
     const contextBlock = officialContext ? `\n\n${officialContext}` : "";
     const userMsg = topic
-      ? `Today is ${today}. Last 7 days: ${last7}. Search for OFAC actions on each date. For BIS: search Federal Register for Entity List additions in ${today.split(",").slice(-2).join(",").trim()}. Deliver a full intelligence briefing focusing on: "${topic}".${contextBlock} JSON only.`
-      : `Today is ${today}. Last 7 days: ${last7}. Search for OFAC actions on each date. For BIS: search Federal Register for Entity List additions this month — they publish multiple times per month. Search the web for the latest across all six domains.${contextBlock} JSON only.`;
+      ? `Today is ${today}. Last 7 days: ${last7}. Search for OFAC actions on each date. Deliver a full intelligence briefing focusing on: "${topic}".${contextBlock} JSON only.`
+      : `Today is ${today}. Last 7 days: ${last7}. Search for OFAC actions on each date. Search the web for the latest across all six domains.${contextBlock} JSON only.`;
 
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${this.model}:generateContent?key=${this.apiKey}`;
 

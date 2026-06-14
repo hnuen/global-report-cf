@@ -4,10 +4,25 @@
  * and caches it in Redis to avoid redundant work on subsequent refreshes.
  */
 
-import { getCachedBrief, setCachedBrief } from "./article-library";
+import { buildStorageManager } from "./storage-manager";
 
+const BRIEF_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days — briefs don't expire quickly
+const BRIEF_PREFIX = "brief:v1:";
 const FETCH_TIMEOUT_MS = 6000;
 const MAX_CONTENT_CHARS = 3000;
+
+// Hash a URL to a short stable key
+function hashUrl(url: string): string {
+  let h = 0;
+  for (let i = 0; i < url.length; i++) {
+    h = ((h << 5) - h + url.charCodeAt(i)) | 0;
+  }
+  return Math.abs(h).toString(36);
+}
+
+function redisKey(url: string): string {
+  return BRIEF_PREFIX + hashUrl(url);
+}
 
 // Fetch and extract readable text from a URL
 async function fetchArticleText(url: string): Promise<string | null> {
@@ -51,19 +66,7 @@ async function generateBriefWithGemini(headline: string, content: string): Promi
   const apiKey = process.env.GEMINI_API_KEY || process.env.GEMINI_API_KEY_2;
   if (!apiKey) return null;
 
-  const headlineOnly = content.startsWith("[headline-only]");
-  const prompt = headlineOnly
-    ? `You are a sanctions and financial news analyst. Based on this government press release headline, write exactly 2 sentences:
-
-Sentence 1 (max 40 words): What specific action was taken — who was targeted, what sanctions program, what behavior.
-Sentence 2 (max 40 words): Why it matters — the broader geopolitical or compliance significance.
-
-Be factual and direct. Use plain text only. Infer from your knowledge of this topic.
-
-Headline: ${headline}
-
-Response:`
-    : `You are a sanctions and financial news analyst. Read this official government notice and write exactly 2 paragraphs separated by a blank line:
+  const prompt = `You are a sanctions and financial news analyst. Read this official government notice and write exactly 2 paragraphs separated by a blank line:
 
 Paragraph 1 (1-2 sentences, max 50 words): The specific action taken — who was designated/penalized, what program, what amount or how many entities.
 Paragraph 2 (1-2 sentences, max 50 words): Why it matters — the broader context, which sanctions program, what behavior it targets, or what it signals.
@@ -130,32 +133,36 @@ export async function getBriefForArticle(
   if (skipPatterns.some(p => p.test(url))) return existingBrief || "";
 
   // Check Redis cache first
-  const cached = await getCachedBrief(url);
-  if (cached) return cached;
+  try {
+    const storage = await buildStorageManager();
+    const cacheKey = redisKey(url);
+    const cached = await storage.get(cacheKey);
+    if (cached) return cached as string;
+  } catch { /* Redis unavailable — continue */ }
 
-  // Fetch article content — for client-rendered gov pages this may return null/short
+  // Fetch article content
   const content = await fetchArticleText(url);
-  // If we can't get real content, fall back to headline-only mode for descriptive
-  // government headlines (Treasury, OFAC, FinCEN etc.) which carry enough signal.
-  const inputContent = (content && content.length >= 100)
-    ? content
-    : "[headline-only] government press release";
+  if (!content || content.length < 100) return existingBrief || "";
 
   // Generate brief with Gemini
-  const brief = await generateBriefWithGemini(headline, inputContent);
+  const brief = await generateBriefWithGemini(headline, content);
   if (!brief) return existingBrief || "";
 
   // Cache the brief in Redis
-  await setCachedBrief(url, brief);
+  try {
+    const storage = await buildStorageManager();
+    const cacheKey = redisKey(url);
+    await storage.set(cacheKey, brief, BRIEF_TTL_SECONDS);
+  } catch { /* Cache write failed — non-fatal */ }
 
-  return brief;
+  return finalBrief || brief;
 }
 
 // Gemini free tier limits: 15 RPM (requests per minute), 1500 RPD (requests per day)
 // We stay well under by: max 3 parallel, 4s gap between batches, skip cached articles
 const GEMINI_BATCH_SIZE   = 3;    // max parallel Gemini calls
 const GEMINI_BATCH_GAP_MS = 4500; // wait 4.5s between batches → max ~13 RPM, safely under 15
-const GEMINI_MAX_PER_RUN  = 25;   // max new briefs per refresh run (saves daily quota)
+const GEMINI_MAX_PER_RUN  = 15;   // max new briefs per refresh run (saves daily quota)
 
 const sleep = (ms: number) => new Promise(r => setTimeout(r, ms));
 
@@ -189,8 +196,14 @@ export async function enrichArticlesWithBriefs(
 
     // Check Redis cache first for all in this batch — avoids unnecessary Gemini calls
     const batchWithCache = await Promise.all(batch.map(async (a) => {
-      const cached = await getCachedBrief(a.sourceUrl);
-      if (cached) { cacheHitCount++; return { a, cached }; }
+      try {
+        const storage = await buildStorageManager();
+        const cached = await storage.get(redisKey(a.sourceUrl));
+        if (cached) {
+          cacheHitCount++;
+          return { a, cached: cached as string };
+        }
+      } catch { /* Redis unavailable */ }
       return { a, cached: null };
     }));
 
@@ -222,4 +235,3 @@ export async function enrichArticlesWithBriefs(
   console.log(`[brief-generator] Done — ${newBriefCount} new briefs generated, ${cacheHitCount} from cache`);
   return results;
 }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          

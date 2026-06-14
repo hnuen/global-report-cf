@@ -6,8 +6,8 @@ export const dynamic = "force-dynamic";
 
 export async function POST(request: NextRequest) {
   try {
-    const { briefing, usedProvider, savedTo, storageErrors } = await refreshBriefing();
-    return NextResponse.json({ ok: true, usedProvider, savedTo, storageErrors, articleCount: briefing.articles.length });
+    const { briefing, usedProvider, savedTo } = await refreshBriefing();
+    return NextResponse.json({ ok: true, usedProvider, savedTo, articleCount: briefing.articles.length });
   } catch (e) {
     console.error("[refresh]", String(e));
     return NextResponse.json({ error: String(e) }, { status: 500 });
@@ -16,8 +16,8 @@ export async function POST(request: NextRequest) {
 
 export async function GET(request: NextRequest) {
   try {
-    const { briefing, usedProvider, savedTo, storageErrors } = await refreshBriefing();
-    return NextResponse.json({ ok: true, usedProvider, savedTo, storageErrors, articleCount: briefing.articles.length });
+    const { briefing, usedProvider, savedTo } = await refreshBriefing();
+    return NextResponse.json({ ok: true, usedProvider, savedTo, articleCount: briefing.articles.length });
   } catch (e) {
     console.error("[refresh GET]", String(e));
     return NextResponse.json({ error: String(e) }, { status: 500 });
