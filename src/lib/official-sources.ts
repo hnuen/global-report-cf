@@ -345,6 +345,29 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean; sections: 
     url: "https://news.google.com/rss/search?q=site:cnn.com+business+trade+export+controls+economy+2026&hl=en-US&gl=US&ceid=US:en", sections: ["economics","bis"] },
   ];
 
+// ── OFAC date-specific Google News queries (last 5 days) ─────────────────────
+// ofac.treasury.gov is blocked from CF IPs (403). Instead search Google News for
+// news articles that CITE specific /recent-actions/YYYYMMDD URLs — law firms,
+// Reuters, AP all reference the exact URLs when covering OFAC actions.
+function getOFACDateNewsRSS(): Array<{ name: string; url: string; sections: string[] }> {
+  const results = [];
+  const today = new Date();
+  for (let i = 0; i < 5; i++) {
+    const d = new Date(today);
+    d.setDate(d.getDate() - i);
+    const code = d.getFullYear().toString() +
+      String(d.getMonth() + 1).padStart(2, "0") +
+      String(d.getDate()).padStart(2, "0");
+    const label = d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+    results.push({
+      name: `OFAC Recent Actions ${label}`,
+      url: `https://news.google.com/rss/search?q=%22recent-actions%2F${code}%22+OR+%22recent-actions%2F${code}_33%22+OFAC+treasury&hl=en-US&gl=US&ceid=US:en`,
+      sections: ["sanctions"],
+    });
+  }
+  return results;
+}
+
 // ── Main function: fetch all sources in parallel ──────────────────────────────
 // Generate Treasury press release URLs (sequential SB numbers)
 // Latest known: sb0505 (May 21 2026). Fetch last 20 releases.
@@ -427,7 +450,10 @@ export async function fetchOfficialSources(section?: string): Promise<OfficialSo
   // 45 sources + 3 SB probes + ~4 Redis calls = ~52, safely within budget.
   // Probe 4 Treasury SBs: 38 SOURCES + 4 SBs + 4 Redis overhead = 46 subrequests (safe under 50 limit)
   const treasurySources = getTreasurySources().slice(0, 4);
-  const allSourcesUnfiltered = [...SOURCES, ...treasurySources];
+  // OFAC recent-action date queries — Google News finds law firm/news coverage citing exact URLs.
+  // Added first so they appear early in the fetch queue and are prioritized.
+  const ofacDateNews = getOFACDateNewsRSS();
+  const allSourcesUnfiltered = [...ofacDateNews, ...SOURCES, ...treasurySources];
   // Filter to section-relevant sources when a specific section is requested
   const allSources = section && section !== "all"
     ? allSourcesUnfiltered.filter(s => (s as any).sections?.includes(section))
