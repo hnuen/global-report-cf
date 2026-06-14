@@ -144,6 +144,7 @@ body{background:#ffffff}
 .gs-inner{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .gs-lbl{font-family:var(--mono);font-size:.55rem;color:#374151;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
 .gs-input{flex:1;min-width:200px;background:#fff;border:1px solid #d1d5db;border-radius:3px;padding:7px 10px;color:#111;font-family:var(--mono);font-size:.72rem;outline:none}
+.gs-inline{width:200px;background:#fff;border:1px solid #374151;border-radius:3px;padding:4px 8px;color:#111;font-family:var(--mono);font-size:.65rem;outline:none;transition:width .2s}
 .gs-input:focus{border-color:#111}
 .gs-btn{padding:7px 14px;background:#111;border:none;border-radius:3px;color:#fff;font-family:'Playfair Display',serif;font-size:.72rem;font-style:italic;cursor:pointer;white-space:nowrap}
 .gs-btn:hover{background:#374151}
@@ -915,21 +916,7 @@ export default function GlobalMonitor() {
           <div><span className="pub-name">The Global Report</span></div>
         </div>
       </div>
-      {showGlobalSearch && (
-        <div className="gs-wrap"><div className="gs-inner">
-          <span className="gs-lbl">🔍 Global Search</span>
-          <input className="gs-input" placeholder='Search news — "Iran shadow fleet", "OFAC Adani", "FinCEN BSA penalty"...'
-            value={globalQ}
-            onChange={e=>setGlobalQ(e.target.value)}
-            onKeyDown={e=>{if(e.key==="Enter"&&!globalSearching)doGlobalSearch();}}
-            autoFocus
-          />
-          <button className="gs-btn" onClick={()=>doGlobalSearch()} disabled={globalSearching}>
-            {globalSearching ? "Searching…" : "Search Web ↗"}
-          </button>
-          <button className="gs-close" onClick={()=>{setShowGlobalSearch(false);setGlobalResults([]);setGlobalQ("");}}>✕</button>
-        </div></div>
-      )}
+
       <div className="sec-nav"><div className="sec-nav-inner">
         {SECTIONS.map(s=><button key={s} className={`sec-tab ${s} ${section===s?"active":""}`} onClick={()=>handleSection(s)}>{LABELS[s]}</button>)}
       </div></div>
@@ -961,11 +948,24 @@ export default function GlobalMonitor() {
             style={{fontFamily:"var(--mono)",fontSize:".58rem"}}
           >⊘ {sanOn?"Filtered":"Filter"}</button>
         )}
-        {/* Web Search pill */}
-        <button className={`pill ${showGlobalSearch?"on":""}`}
-          onClick={()=>setShowGlobalSearch(v=>!v)}
-          style={{fontFamily:"var(--mono)",fontSize:".58rem"}}
-        >🔍 Search</button>
+        {/* Web Search — inline */}
+        {showGlobalSearch ? (
+          <>
+            <input className="gs-inline" placeholder="Search web…" value={globalQ}
+              onChange={e=>setGlobalQ(e.target.value)}
+              onKeyDown={e=>{if(e.key==="Enter"&&!globalSearching)doGlobalSearch();}}
+              autoFocus
+            />
+            <button className="pill on" onClick={()=>doGlobalSearch()} disabled={globalSearching}
+              style={{fontFamily:"var(--mono)",fontSize:".58rem",flexShrink:0}}>
+              {globalSearching?"…":"🔍 Go"}
+            </button>
+            <button className="san-x" onClick={()=>{setShowGlobalSearch(false);setGlobalResults([]);setGlobalQ("");}}>✕</button>
+          </>
+        ) : (
+          <button className="pill" onClick={()=>setShowGlobalSearch(true)}
+            style={{fontFamily:"var(--mono)",fontSize:".58rem"}}>🔍 Search</button>
+        )}
         {/* Region pills */}
         {(REGIONS[section]?.length||0)>1 && <><span className="tlbl">Region:</span>
           {(REGIONS[section]||["All"]).map(r=><button key={r} className={`pill ${region===r?"on":""}`} onClick={()=>setRegion(r)}>{r}</button>)}
