@@ -56,8 +56,26 @@ SECTIONS:
 Write 3-4 articles per section (18-24 total). Each body is an array of 2-3 full editorial paragraphs.
 Real current facts from web search only. Include real source names and URLs.
 
-OFAC SEARCH: Do NOT fetch ofac.treasury.gov/recent-actions directly — use targeted date searches instead:
-Search "OFAC sanctions [today's date]", "OFAC designations this week", "site:home.treasury.gov OFAC [month year]"
+OFAC RECENT ACTIONS — EXACT URL PATTERN (mandatory, use every run):
+OFAC publishes every action at: https://ofac.treasury.gov/recent-actions/YYYYMMDD
+  — First action on a date:  /YYYYMMDD        e.g. /20260611
+  — Second action same day:  /YYYYMMDD_33     e.g. /20260601_33
+  — Third action same day:   /YYYYMMDD_66     e.g. /20260601_66
+These pages are indexed by Google. The exact URLs are injected into the user message.
+
+REQUIRED searches for sanctions section:
+  1. site:ofac.treasury.gov/recent-actions — shows all indexed action pages with full titles
+  2. site:ofac.treasury.gov "recent-actions/202606" — current month
+  3. OFAC designations sanctions SDN "June 2026" treasury
+For every article about an OFAC action, sourceUrl MUST be the /recent-actions/YYYYMMDD URL, not the listing page.
+
+BIS SEARCH: BIS publishes Entity List additions to the Federal Register multiple times per month — there are ALWAYS recent additions. For the bis section you MUST actively search:
+1. site:federalregister.gov "bureau of industry" "entity list" [current month] [current year]
+2. "BIS entity list" additions [current month year]
+3. BIS export enforcement action [current year]
+4. "export controls" semiconductor chip China [current month year]
+5. site:bis.doc.gov [current month year]
+Do NOT rely on general BIS knowledge — search specifically for Federal Register Entity List notices from the last 14 days.
 
 Al Jazeera is required for Middle East, Iran, Gulf, and Islamic world stories.`;
 
@@ -106,17 +124,26 @@ export class GeminiProvider implements LLMProvider {
       timeZone: "America/New_York",
     });
 
-    // Build last 7 days for OFAC search
-    const last7 = Array.from({ length: 7 }, (_, i) => {
+    // Build last 14 days as YYYYMMDD codes + human-readable for OFAC URL pattern
+    const ofacDates = Array.from({ length: 14 }, (_, i) => {
       const d = new Date();
       d.setDate(d.getDate() - i);
-      return d.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
-    }).join(", ");
+      const code = d.getFullYear().toString() +
+        String(d.getMonth() + 1).padStart(2, "0") +
+        String(d.getDate()).padStart(2, "0");
+      return code;
+    });
+    const ofacUrls = ofacDates.flatMap(code => [
+      `https://ofac.treasury.gov/recent-actions/${code}`,
+      `https://ofac.treasury.gov/recent-actions/${code}_33`,
+      `https://ofac.treasury.gov/recent-actions/${code}_66`,
+    ]).join("\n  ");
 
     const contextBlock = officialContext ? `\n\n${officialContext}` : "";
+    const ofacBlock = `\nOFAC DATE URLS TO CHECK (search each, use as sourceUrl for matching articles):\n  ${ofacUrls}`;
     const userMsg = topic
-      ? `Today is ${today}. Last 7 days: ${last7}. Search for OFAC actions on each date. Deliver a full intelligence briefing focusing on: "${topic}".${contextBlock} JSON only.`
-      : `Today is ${today}. Last 7 days: ${last7}. Search for OFAC actions on each date. Search the web for the latest across all six domains.${contextBlock} JSON only.`;
+      ? `Today is ${today}.${ofacBlock}\nFor BIS: search Federal Register for Entity List additions this month. Deliver a full intelligence briefing focusing on: "${topic}".${contextBlock} JSON only.`
+      : `Today is ${today}.${ofacBlock}\nFor BIS: search Federal Register for Entity List additions this month — they publish multiple times per month. Search the web for the latest across all six domains.${contextBlock} JSON only.`;
 
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${this.model}:generateContent?key=${this.apiKey}`;
 

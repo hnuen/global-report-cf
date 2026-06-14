@@ -59,33 +59,59 @@ Al Jazeera is a required source for any story touching:
   - Global South perspectives on sanctions and trade
 Search "site:aljazeera.com [topic]" explicitly for these topics.
 
-CRITICAL — OFAC WEBSITE WORKAROUND:
-The OFAC website (ofac.treasury.gov/recent-actions) uses JavaScript rendering and web_fetch returns stale/cached results that miss recent actions. You MUST use these specific search strategies instead:
+CRITICAL — OFAC RECENT ACTIONS URL PATTERN:
+OFAC publishes every action at: https://ofac.treasury.gov/recent-actions/YYYYMMDD
+Multiple actions on the same day use suffixes: /YYYYMMDD_33, /YYYYMMDD_66
+These individual pages ARE indexed by Google — use site: queries to find them.
 
-Step 1 — Get today's date and search for each of the last 7 days explicitly:
-  Search: site:ofac.treasury.gov "MONTH DAY, YEAR" for each day e.g. "May 19, 2026"
-  Search: OFAC sanctions designations "May 19 2026" treasury
-  Search: OFAC "May 18 2026" OR "May 19 2026" sanctions
+Step 1 — Search Google for OFAC action pages by date code:
+  Search: site:ofac.treasury.gov/recent-actions 2026
+  Search: site:ofac.treasury.gov "recent-actions/202606"
+  Search: site:ofac.treasury.gov "recent-actions/202605"
+  For each result Google returns, you get the exact page title AND the /YYYYMMDD URL.
+  Use those ofac.treasury.gov/recent-actions/YYYYMMDD URLs as sourceUrl in articles.
 
-Step 2 — Search for specific action types:
-  Search: OFAC SDN list update May 2026
-  Search: OFAC general license issued May 2026
-  Search: OFAC enforcement action May 2026
-  Search: treasury.gov OFAC designations this week
+Step 2 — Specific date code searches (the user will inject the actual codes in the message):
+  Search: ofac.treasury.gov/recent-actions/[YYYYMMDD] for each date in the last 14 days
+  Also try: ofac.treasury.gov/recent-actions/[YYYYMMDD]_33 for days with multiple actions
 
-Step 3 — Check program-specific pages directly (these pages DO render correctly):
+Step 3 — Cross-reference with law firm trackers:
+  Search: site:steptoe.com OFAC sanctions update June 2026
+  Search: site:hklaw.com OFAC June 2026
+  Search: site:fieldfisher.com sanctions June 2026
+
+Step 4 — Check program pages (these render correctly without JS):
   Fetch: https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions
   Fetch: https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions
-  Fetch: https://ofac.treasury.gov/selected-general-licenses-issued-ofac
 
-Step 4 — Use third-party sanctions trackers that aggregate OFAC updates:
-  Search: steptoe weekly sanctions update May 2026
-  Search: site:steptoe.com sanctions update May 2026
-  Search: site:hklaw.com OFAC May 2026
-  Search: site:fieldfisher.com sanctions May 2026
+ALWAYS use ofac.treasury.gov/recent-actions/YYYYMMDD as the sourceUrl — never the listing page.
 
-NEVER rely solely on fetching ofac.treasury.gov/recent-actions — it will return stale data.
-ALWAYS cross-reference at least 2 of the above search strategies for the sanctions section.
+CRITICAL — BIS SEARCH INSTRUCTIONS:
+BIS publishes Entity List additions and EAR amendments to the Federal Register multiple times per month — there are ALWAYS recent additions to report.
+
+For the bis section you MUST use ALL of these search strategies:
+
+Step 1 — Search Federal Register for recent BIS notices:
+  Search: site:federalregister.gov "bureau of industry" "entity list" [current month] [year]
+  Search: federalregister.gov BIS export controls [current month year]
+  Fetch: https://www.federalregister.gov/agencies/industry-and-security-bureau
+
+Step 2 — Search for enforcement actions:
+  Search: BIS enforcement action export violation [current month year]
+  Search: "bureau of industry and security" penalty [current month year]
+  Search: BIS denied export license violation [current year]
+
+Step 3 — Search for semiconductor/chip controls:
+  Search: BIS chip export restriction China [current month year]
+  Search: semiconductor export control Entity List [current month year]
+  Search: EAR export administration regulations update [current month year]
+
+Step 4 — Check third-party trackers:
+  Search: site:steptoe.com export controls BIS [current month year]
+  Search: "entity list" additions [current month year] law firm update
+
+Do NOT write BIS section articles based only on training knowledge — always search first.
+ALWAYS include at least 3 fresh BIS articles dated within the last 30 days.
 
 For each article cite the most authoritative primary source available — prefer official press releases and original reporting over aggregators.`;
 
@@ -139,19 +165,24 @@ export class AnthropicProvider implements LLMProvider {
       timeZone: "America/New_York",
     });
 
-    // Build last 7 days as explicit search targets for OFAC workaround
-    const last7Days = Array.from({length: 7}, (_, i) => {
+    // Build OFAC date codes for last 14 days (YYYYMMDD format matching their URL pattern)
+    const ofacDates = Array.from({length: 14}, (_, i) => {
       const d = new Date();
       d.setDate(d.getDate() - i);
-      return d.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
-    }).join(", ");
+      return d.getFullYear().toString() +
+        String(d.getMonth() + 1).padStart(2, "0") +
+        String(d.getDate()).padStart(2, "0");
+    });
+    const ofacUrlList = ofacDates.flatMap(code => [
+      `https://ofac.treasury.gov/recent-actions/${code}`,
+      `https://ofac.treasury.gov/recent-actions/${code}_33`,
+      `https://ofac.treasury.gov/recent-actions/${code}_66`,
+    ]).join("\n  ");
 
     const ofacInstructions = `
-OFAC SEARCH INSTRUCTIONS FOR THIS RUN:
-Today is ${today}. The last 7 days are: ${last7Days}.
-For the sanctions section you MUST search for OFAC actions on EACH of these dates individually.
-Use search queries like: OFAC sanctions "${last7Days.split(",")[0]}" treasury designations
-Do NOT rely on fetching ofac.treasury.gov/recent-actions directly — use targeted date searches instead.`;
+OFAC DATE URLS FOR THIS RUN — search each one, use as sourceUrl for matching articles:
+  ${ofacUrlList}
+Search: site:ofac.treasury.gov/recent-actions ${ofacDates[0].slice(0,6)} to find all this month's indexed action pages.`;
 
     const contextBlock = officialContext ? `\n\n${officialContext}` : "";
     const userMsg = topic
@@ -207,16 +238,22 @@ export class LLMManager {
    * Skip any that have hit their daily limit.
    * Falls back to the next if one throws.
    */
-  async fetch(topic?: string): Promise<{ briefing: Briefing; usedProvider: string }> {
+  async fetch(topic?: string, prebuiltContext?: string): Promise<{ briefing: Briefing; usedProvider: string }> {
     const tracker = getTracker();
     const errors: string[] = [];
 
-    // Pre-fetch official government sources before calling LLM
-    console.log("[llm] Pre-fetching official government sources...");
-    const officialSources = await fetchOfficialSources();
-    const officialContext = formatSourcesForPrompt(officialSources);
-    const successCount = officialSources.filter(s => s.content.length > 100).length;
-    console.log(`[llm] Fetched ${successCount}/${officialSources.length} official sources`);
+    // Use pre-fetched context if provided (avoids double-fetching when orchestrator already ran fetchOfficialSources)
+    let officialContext: string;
+    if (prebuiltContext) {
+      officialContext = prebuiltContext;
+      console.log("[llm] Using pre-fetched official sources context from orchestrator");
+    } else {
+      console.log("[llm] Pre-fetching official government sources...");
+      const officialSources = await fetchOfficialSources();
+      officialContext = formatSourcesForPrompt(officialSources);
+      const successCount = officialSources.filter(s => s.content.length > 100).length;
+      console.log(`[llm] Fetched ${successCount}/${officialSources.length} official sources`);
+    }
 
     for (const p of this.providers) {
       const usageKey = `${p.id}:llm`;
