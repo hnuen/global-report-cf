@@ -18,10 +18,12 @@ export async function POST(request: NextRequest) {
     // Sanctions always uses LLM — needs Gemini to search OFAC date URLs via Google grounding
     const skipLLM = section !== "sanctions";
 
-    // Batch 1 (immediate): only group-1 sources — OFAC date news + Treasury SBs (~11 sources).
-    // Batches 2-4 (groups 2/3/4) fire every 3 minutes via /api/background-refresh,
-    // merging additional articles into Redis without overwriting batch-1 data.
-    const { usedProvider, savedTo } = await refreshBriefing(body.topic, { skipLLM, section, manualRefresh: true, group: 1 });
+    // group:1 only applies to sanctions/all — those have OFAC/Treasury as group-1 sources.
+    // Other sections (bis, occ, penalties, etc.) have NO group-1 sources, so passing group:1
+    // would return 0 sources and throw. Let them fetch all sources for their section instead.
+    const group: 1 | undefined = (!section || section === "sanctions") ? 1 : undefined;
+
+    const { usedProvider, savedTo } = await refreshBriefing(body.topic, { skipLLM, section, manualRefresh: true, group });
     return NextResponse.json({
       ok: true,
       queued: false,
