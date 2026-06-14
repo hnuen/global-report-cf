@@ -317,8 +317,8 @@ function getOFACDateNewsRSS(): Array<{ name: string; url: string; group: 1; sect
 // OFAC designation-only actions (not full sanctions campaigns) do NOT get SB press releases —
 // they appear only on ofac.treasury.gov/recent-actions (JS-rendered, inaccessible from CF Workers).
 // Strategy: probe SB_BASELINE ± BUFFER to catch the known latest plus any new releases.
-const SB_BASELINE_NUM  = 498;  // SB0498 = May 11, 2026 (last confirmed Treasury press release)
-const SB_PROBE_ABOVE   = 5;    // probe up to 5 above baseline for new releases
+const SB_BASELINE_NUM  = 528;  // SB0528 = Jun 12, 2026 (last confirmed Treasury press release)
+const SB_PROBE_ABOVE   = 8;    // probe up to 8 above baseline for new releases (~1 new SB/day)
 function getTreasurySources(): Array<{ name: string; url: string; group: 1; sections: string[] }> {
   const sources = [];
   // Probe from (baseline + PROBE_ABOVE) down to baseline — ensures we always hit the known latest

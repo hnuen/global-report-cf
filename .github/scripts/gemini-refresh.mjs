@@ -17,19 +17,59 @@ const SAVE_SECRET    = process.env.SAVE_BRIEFING_SECRET || "";
 if (!GEMINI_API_KEY) { console.error("Missing GEMINI_API_KEY"); process.exit(1); }
 if (!APP_URL)        { console.error("Missing APP_URL");        process.exit(1); }
 
-// ── Build OFAC date URLs for last 14 days ──────────────────────────────────
-const ofacDates = Array.from({ length: 14 }, (_, i) => {
+// ── Fetch OFAC recent-actions pages directly (GitHub Actions IPs not blocked) ─
+// ofac.treasury.gov returns 403 from Cloudflare IPs, but GitHub Actions can reach it.
+// URL pattern: /recent-actions/YYYYMMDD, /YYYYMMDD_33, /YYYYMMDD_66 (multiple actions/day)
+const ofacDates = Array.from({ length: 7 }, (_, i) => {
   const d = new Date();
   d.setDate(d.getDate() - i);
   return d.getFullYear().toString() +
     String(d.getMonth() + 1).padStart(2, "0") +
     String(d.getDate()).padStart(2, "0");
 });
-const ofacUrls = ofacDates.flatMap(code => [
-  `https://ofac.treasury.gov/recent-actions/${code}`,
-  `https://ofac.treasury.gov/recent-actions/${code}_33`,
-  `https://ofac.treasury.gov/recent-actions/${code}_66`,
-]).join("\n  ");
+
+function stripHtml(html) {
+  return html
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&nbsp;/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+const ofacPages = [];
+console.log(`[gemini-refresh] Fetching OFAC recent-actions pages for ${ofacDates.length} days...`);
+for (const code of ofacDates) {
+  for (const suffix of ["", "_33", "_66"]) {
+    const url = `https://ofac.treasury.gov/recent-actions/${code}${suffix}`;
+    try {
+      const res = await fetch(url, {
+        signal: AbortSignal.timeout(10000),
+        headers: { "User-Agent": "Mozilla/5.0 (compatible; sanctions-monitor/1.0; +https://github.com)" },
+      });
+      if (res.ok) {
+        const html = await res.text();
+        const text = stripHtml(html);
+        if (text.length > 300) {
+          ofacPages.push({ url, text: text.slice(0, 3000) });
+          console.log(`[gemini-refresh] ✅ OFAC ${url}: ${text.length} chars`);
+        }
+      } else if (res.status !== 404) {
+        console.warn(`[gemini-refresh] OFAC ${url}: HTTP ${res.status}`);
+      }
+    } catch (e) {
+      console.warn(`[gemini-refresh] OFAC ${url}: ${e.message}`);
+    }
+  }
+}
+console.log(`[gemini-refresh] OFAC pages fetched: ${ofacPages.length} (of up to ${ofacDates.length * 3})`);
+
+const ofacContext = ofacPages.length > 0
+  ? ofacPages.map(p => `\n--- ${p.url} ---\n${p.text}`).join("\n")
+  : "No OFAC pages accessible — use Google Search grounding to find recent OFAC actions.";
+
+const ofacUrls = ofacPages.map(p => p.url).join("\n  ");
 
 const today = new Date().toLocaleString("en-US", {
   weekday: "long", year: "numeric", month: "long", day: "numeric",
@@ -78,21 +118,12 @@ SECTIONS:
 Write 3-4 articles per section (18-24 total). Each body is an array of 2-3 full editorial paragraphs.
 Real current facts from web search only. Include real source names and URLs.
 
-OFAC RECENT ACTIONS — EXACT URL PATTERN (mandatory):
-OFAC publishes every action at: https://ofac.treasury.gov/recent-actions/YYYYMMDD
-  — First action on a date:  /YYYYMMDD        e.g. /20260611
-  — Second action same day:  /YYYYMMDD_33     e.g. /20260611_33
-  — Third action same day:   /YYYYMMDD_66
-These pages ARE indexed by Google. The exact URLs are injected into the user message.
-
-REQUIRED searches for sanctions:
-  1. site:ofac.treasury.gov/recent-actions — all indexed action pages
-  2. site:ofac.treasury.gov "recent-actions/202606" — current month
-  3. OFAC designations sanctions SDN "June 2026" treasury
-  4. OFAC Cuba Russia "general license" designation June 2026
-  5. OFAC Sinaloa cartel fentanyl designations June 2026
-For every OFAC action article, sourceUrl MUST be the /recent-actions/YYYYMMDD URL.
-Write a separate article for EACH distinct OFAC date page found — do not merge multiple dates into one article.
+OFAC RECENT ACTIONS — PRE-FETCHED CONTENT:
+The user message contains the raw text of ofac.treasury.gov/recent-actions/YYYYMMDD pages fetched directly.
+URL pattern: /YYYYMMDD = first action, /YYYYMMDD_33 = second, /YYYYMMDD_66 = third action on same date.
+For every OFAC action article, sourceUrl MUST be the exact /recent-actions/YYYYMMDD URL from the fetched content.
+Write one article per distinct OFAC action found. Do NOT merge multiple actions into one article.
+If no pages were fetched, use Google Search: site:ofac.treasury.gov/recent-actions
 
 BIS: search site:federalregister.gov "bureau of industry" "entity list" for current month.
 Al Jazeera required for Middle East, Iran, Gulf, and Islamic world stories.
@@ -106,8 +137,11 @@ CHINA/HK SANCTIONS — search for:
 
 const userMsg = `Today is ${today}.
 
-OFAC DATE URLS TO CHECK (search each, use as sourceUrl for matching articles):
-  ${ofacUrls}
+══ OFAC RECENT ACTIONS — RAW PAGE CONTENT (directly fetched) ══
+${ofacContext}
+
+For each OFAC action page above: write one article per distinct action. Use the page URL as sourceUrl.
+If a page was not accessible, use Google Search grounding: search "site:ofac.treasury.gov/recent-actions" to find actions.
 
 For BIS: search Federal Register for Entity List additions this month.
 Search the web for the latest developments across all six domains. JSON only.`;
