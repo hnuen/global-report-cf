@@ -1007,7 +1007,7 @@ export default function GlobalMonitor() {
       {/* Status bar */}
       <div className="m-bar">
         <span className="m-dot"/>
-        <span className="m-txt">{data.lastUpdated} · {allFiltered.length} stories</span>
+        <span className="m-txt">{data.lastUpdated.replace(/\s*·\s*\d+\s*stories/i, "")} · {allFiltered.length} stories</span>
         {section !== "penalties" && (
           <button className={`m-btn ${searchBarOpen||sanOn?"on":""}`}
             onClick={()=>setSearchBarOpen(v=>!v)}>⊘ {sanOn?"Filtered":"Filter"}</button>
@@ -1139,7 +1139,7 @@ export default function GlobalMonitor() {
         <div className="ctrl-main">
           <div style={{display:"flex",alignItems:"center",gap:5,flexShrink:0,flexWrap:"wrap"}}>
             {refreshing ? <><span className="spin-dot"/><span className="upd-text">{refreshQueued?"Queued…":"Refreshing…"}</span></>
-              : <><span className="live-dot"/><span className="upd-text">{data.lastUpdated} · {allFiltered.length} stories</span></>}
+              : <><span className="live-dot"/><span className="upd-text">{data.lastUpdated.replace(/\s*·\s*\d+\s*stories/i, "")} · {allFiltered.length} stories</span></>}
 
             {error && <span className="err-msg">{error}</span>}
           </div>

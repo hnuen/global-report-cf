@@ -101,7 +101,7 @@ export async function POST(request: NextRequest) {
     const merged = {
       ...(existing ?? {}),
       articles: [...(existing?.articles ?? []), ...newArticles],
-      lastUpdated: `${now} — Official government sources · ${totalCount} stories`,
+      lastUpdated: `${now} — Official government sources`,
       sidebar: existing?.sidebar ?? groupBriefing.sidebar,
     };
 
