@@ -22,6 +22,8 @@ function parseDate(d: string): number {
   } catch { return 0; }
 }
 
+const NO_CACHE = { "Cache-Control": "no-store, no-cache, must-revalidate", "Pragma": "no-cache" };
+
 export async function GET() {
   try {
     const briefing = await loadBriefing();
@@ -30,8 +32,8 @@ export async function GET() {
     if (data.articles) {
       data.articles = [...data.articles].sort((a, b) => (b.date||"").localeCompare(a.date||""));
     }
-    return NextResponse.json(data);
+    return NextResponse.json(data, { headers: NO_CACHE });
   } catch (e) {
-    return NextResponse.json(SEED_DATA);
+    return NextResponse.json(SEED_DATA, { headers: NO_CACHE });
   }
 }

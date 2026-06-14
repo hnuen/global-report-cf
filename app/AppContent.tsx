@@ -577,12 +577,13 @@ export default function GlobalMonitor() {
   const AUTO_REFRESH_MS = 30 * 60 * 1000; // 30 minutes
 
   useEffect(() => {
+    const newsUrl = () => `/api/news?t=${Date.now()}`;
     const loadNews = () =>
-      fetch("/api/news").then(r=>r.json()).then((fresh: Briefing) => {
+      fetch(newsUrl(), { cache: "no-store" }).then(r=>r.json()).then((fresh: Briefing) => {
         setData(prev => {
           if (!prev) return fresh;
           const freshCount = fresh?.articles?.length ?? 0;
-          if (freshCount >= 50 && fresh.lastUpdated !== prev.lastUpdated) {
+          if (freshCount >= 20 && fresh.lastUpdated !== prev.lastUpdated) {
             console.log(`[auto-refresh] New briefing detected — ${freshCount} articles`);
             return fresh;
           }
@@ -591,7 +592,7 @@ export default function GlobalMonitor() {
       }).catch(() => {});
 
     loadNews(); // initial load
-    fetch("/api/news").then(r=>r.json()).then(setData)
+    fetch(newsUrl(), { cache: "no-store" }).then(r=>r.json()).then(setData)
       .catch(()=>setError("Could not load briefing."));
     fetch("/api/penalties").then(r=>r.json())
       .then((d:{records:PenaltyRecord[];years:number[]})=>{ setPenalties(d.records); setPenaltyYears(d.years); setPenaltiesLoading(false); })
@@ -647,7 +648,7 @@ export default function GlobalMonitor() {
       for (let i = 0; i < 15; i++) {
         await new Promise(r => setTimeout(r, i === 0 ? 1000 : 3000));
         try {
-          const newsRes = await fetch("/api/news");
+          const newsRes = await fetch(`/api/news?t=${Date.now()}`, { cache: "no-store" });
           const newsData = await newsRes.json();
           if (newsData?.lastUpdated && newsData.lastUpdated !== previousUpdated) {
             setData(newsData); setExpanded({}); setSanOn(false);
