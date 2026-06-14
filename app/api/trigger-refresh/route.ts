@@ -18,7 +18,10 @@ export async function POST(request: NextRequest) {
     // Sanctions always uses LLM — needs Gemini to search OFAC date URLs via Google grounding
     const skipLLM = section !== "sanctions";
 
-    const { usedProvider, savedTo } = await refreshBriefing(body.topic, { skipLLM, section, manualRefresh: true });
+    // Batch 1 (immediate): only group-1 sources — OFAC date news + Treasury SBs (~11 sources).
+    // Batches 2-4 (groups 2/3/4) fire every 3 minutes via /api/background-refresh,
+    // merging additional articles into Redis without overwriting batch-1 data.
+    const { usedProvider, savedTo } = await refreshBriefing(body.topic, { skipLLM, section, manualRefresh: true, group: 1 });
     return NextResponse.json({
       ok: true,
       queued: false,

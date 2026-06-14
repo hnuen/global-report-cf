@@ -15,7 +15,7 @@ export async function loadBriefing(): Promise<Briefing | null> {
   return storage.load();
 }
 
-export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean; section?: string; manualRefresh?: boolean }): Promise<{
+export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean; section?: string; manualRefresh?: boolean; group?: 1|2|3|4 }): Promise<{
   briefing: Briefing;
   usedProvider: string;
   savedTo: string[];
@@ -28,8 +28,10 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
   console.log(`[orchestrator] Loaded ${libraryArticles.length} articles from library (skipLLM=${opts?.skipLLM ?? false})`);
 
   // Always fetch official sources first — fast and free
+  // group=1 (manual refresh, batch 1): OFAC date news + Treasury SBs (~11 sources)
+  // group=undefined (scheduled runs): fetch all sources
   console.log("[orchestrator] Fetching official government sources...");
-  const officialSources = await fetchOfficialSources(opts?.section);
+  const officialSources = await fetchOfficialSources(opts?.section, { group: opts?.group });
   const successCount = officialSources.filter(s => s.content.length > 50).length;
   console.log(`[orchestrator] Got ${successCount}/${officialSources.length} official sources`);
 

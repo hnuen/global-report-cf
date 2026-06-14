@@ -1,6 +1,6 @@
 "use client";
 // v6 cache bust CF
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { SANCTIONS_PROGRAMS } from "@/src/lib/sanctions-programs-library";
 
 
@@ -566,6 +566,12 @@ export default function GlobalMonitor() {
   const [ofacOverride, setOfacOverride] = useState<any>(null);
   const [ofacApplying, setOfacApplying] = useState(false);
 
+  // Multi-batch background refresh — groups 2/3/4 fire at t=+3min/+6min/+9min
+  const [bgRefreshCountdown, setBgRefreshCountdown] = useState(0); // seconds to NEXT batch
+  const [bgRefreshNextGroup, setBgRefreshNextGroup] = useState(0); // 0 = none pending
+  const bgTimerIdsRef  = useRef<ReturnType<typeof setTimeout>[]>([]);
+  const bgIntervalRef  = useRef<ReturnType<typeof setInterval> | null>(null);
+
   const [tabShowAll, setTabShowAll] = useState<Record<string,boolean>>({});
   const [tabLiveResults, setTabLiveResults] = useState<any[]>([]);
   const [tabLiveSearching, setTabLiveSearching] = useState(false);
@@ -666,6 +672,64 @@ export default function GlobalMonitor() {
           if (finalData?.articles?.length) { setData(finalData); setExpanded({}); }
         } catch { /* ignore */ }
       }
+      // Multi-batch background refresh — groups 2/3/4 at t=+3min, +6min, +9min
+      // Each group fetches its own source slice and merges into Redis without overwriting.
+      bgTimerIdsRef.current.forEach(clearTimeout);
+      bgTimerIdsRef.current = [];
+      if (bgIntervalRef.current) { clearInterval(bgIntervalRef.current); bgIntervalRef.current = null; }
+
+      const BATCH_SECS = 3 * 60; // 3 minutes between batches
+      const bgBatches: { group: 2|3|4; fireAt: number }[] = [
+        { group: 2, fireAt: Date.now() + BATCH_SECS * 1000 },
+        { group: 3, fireAt: Date.now() + BATCH_SECS * 2000 },
+        { group: 4, fireAt: Date.now() + BATCH_SECS * 3000 },
+      ];
+
+      // Countdown shows the NEXT upcoming batch
+      let nextIdx = 0;
+      setBgRefreshNextGroup(2);
+      setBgRefreshCountdown(BATCH_SECS);
+
+      bgIntervalRef.current = setInterval(() => {
+        if (nextIdx >= bgBatches.length) {
+          clearInterval(bgIntervalRef.current!);
+          bgIntervalRef.current = null;
+          setBgRefreshCountdown(0);
+          setBgRefreshNextGroup(0);
+          return;
+        }
+        const secsLeft = Math.max(0, Math.round((bgBatches[nextIdx].fireAt - Date.now()) / 1000));
+        setBgRefreshNextGroup(bgBatches[nextIdx].group);
+        setBgRefreshCountdown(secsLeft);
+        // Once this batch has fired (secsLeft=0), advance to the next one
+        if (secsLeft === 0) nextIdx++;
+      }, 1000);
+
+      const triggerGroup = async (groupNum: 2|3|4) => {
+        try {
+          console.log(`[bg-refresh] Group ${groupNum} starting`);
+          const bgRes = await fetch("/api/background-refresh", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ group: groupNum, section }),
+          });
+          const bgData = await bgRes.json().catch(() => ({}));
+          console.log(`[bg-refresh] Group ${groupNum} done — ${bgData.newArticles ?? 0} new articles`);
+          if ((bgData.newArticles ?? 0) > 0) {
+            const fresh = await fetch(`/api/news?t=${Date.now()}`, { cache: "no-store" });
+            const freshData = await fresh.json().catch(() => null);
+            if (freshData?.articles?.length) setData(freshData);
+          }
+        } catch (bgErr) {
+          console.warn(`[bg-refresh] Group ${groupNum} failed (non-fatal):`, String(bgErr));
+        }
+      };
+
+      const t2 = setTimeout(() => triggerGroup(2), BATCH_SECS * 1000);
+      const t3 = setTimeout(() => triggerGroup(3), BATCH_SECS * 2000);
+      const t4 = setTimeout(() => triggerGroup(4), BATCH_SECS * 3000);
+      bgTimerIdsRef.current = [t2, t3, t4];
+
     } catch(e){
       setError("Refresh failed — please try again in a moment.");
       console.error(e);
@@ -1073,9 +1137,14 @@ export default function GlobalMonitor() {
       <div className="ctrl-bar"><div className="ctrl-inner">
         {/* Row 1: status · filter · search · OFAC · refresh */}
         <div className="ctrl-main">
-          <div style={{display:"flex",alignItems:"center",gap:5,flexShrink:0}}>
+          <div style={{display:"flex",alignItems:"center",gap:5,flexShrink:0,flexWrap:"wrap"}}>
             {refreshing ? <><span className="spin-dot"/><span className="upd-text">{refreshQueued?"Queued…":"Refreshing…"}</span></>
               : <><span className="live-dot"/><span className="upd-text">{data.lastUpdated} · {allFiltered.length} stories</span></>}
+            {!refreshing && bgRefreshNextGroup > 0 && bgRefreshCountdown > 0 && (
+              <span className="upd-text" style={{color:"#9ca3af",fontSize:".54rem"}}>
+                · batch {bgRefreshNextGroup}/4 in {Math.floor(bgRefreshCountdown/60)}:{String(bgRefreshCountdown%60).padStart(2,"0")}
+              </span>
+            )}
             {error && <span className="err-msg">{error}</span>}
           </div>
           <span style={{color:"#d1d5db",fontFamily:"var(--mono)"}}>|</span>
