@@ -434,12 +434,12 @@ export async function fetchOfficialSources(section?: string): Promise<OfficialSo
     : allSourcesUnfiltered;
   console.log(`[official] Section filter: ${section ?? "all"} → ${allSources.length}/${allSourcesUnfiltered.length} sources`);
   checkSubrequestBudget(allSources);
-  const MASTER_TIMEOUT = 5000;  // 5s — fast path; scheduled runs get more time via GitHub Actions
+  const MASTER_TIMEOUT = 8000;  // 8s — enough for gov sites; CF 30s wall-clock leaves room for LLM+save
 
   const fetchOne = async (source: typeof allSources[0]) => {
     try {
       console.log(`[official] Fetching ${source.name}...`);
-      const html = await fetchWithTimeout(source.url, (source as any).official ? 10000 : 5000);
+      const html = await fetchWithTimeout(source.url, (source as any).official ? 6000 : 4000);
       const content = stripHTML(html);
       console.log(`[official] ✅ ${source.name} — ${content.length} chars`);
       return { name: source.name, url: source.url, content, fetchedAt: now };

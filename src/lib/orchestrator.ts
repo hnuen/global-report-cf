@@ -36,7 +36,9 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
   let briefing: Briefing;
   let usedProvider: string;
 
-  if (successCount === 0) {
+  // Even 1 successful source is enough — fall through to historical/library backfill
+  // if most sources timed out. Only hard-fail if absolutely nothing came back.
+  if (officialSources.length === 0) {
     throw new Error("No official sources fetched successfully");
   }
 
