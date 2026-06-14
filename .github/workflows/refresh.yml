@@ -2,40 +2,12 @@ name: Refresh Global Report
 
 on:
   schedule:
-    # ── WEEKDAYS (Mon-Fri) EDT (UTC-4) — refresh at :00, monitor at :15 ──
-    - cron: '0 10 * * 1-5'   # 6:00 AM EDT
-    - cron: '15 10 * * 1-5'  # 6:15 AM EDT — monitor
-    - cron: '0 12 * * 1-5'   # 8:00 AM EDT
-    - cron: '15 12 * * 1-5'  # 8:15 AM EDT — monitor
-    - cron: '0 13 * * 1-5'   # 9:00 AM EDT
-    - cron: '15 13 * * 1-5'  # 9:15 AM EDT — monitor
-    - cron: '0 14 * * 1-5'   # 10:00 AM EDT
-    - cron: '15 14 * * 1-5'  # 10:15 AM EDT — monitor
-    - cron: '0 15 * * 1-5'   # 11:00 AM EDT
-    - cron: '15 15 * * 1-5'  # 11:15 AM EDT — monitor
-    - cron: '0 16 * * 1-5'   # 12:00 PM EDT
-    - cron: '15 16 * * 1-5'  # 12:15 PM EDT — monitor
-    - cron: '0 17 * * 1-5'   # 1:00 PM EDT
-    - cron: '15 17 * * 1-5'  # 1:15 PM EDT — monitor
-    - cron: '0 18 * * 1-5'   # 2:00 PM EDT
-    - cron: '15 18 * * 1-5'  # 2:15 PM EDT — monitor
-    - cron: '0 19 * * 1-5'   # 3:00 PM EDT
-    - cron: '15 19 * * 1-5'  # 3:15 PM EDT — monitor
-    - cron: '0 20 * * 1-5'   # 4:00 PM EDT
-    - cron: '15 20 * * 1-5'  # 4:15 PM EDT — monitor
-    - cron: '0 21 * * 1-5'   # 5:00 PM EDT
-    - cron: '15 21 * * 1-5'  # 5:15 PM EDT — monitor
-    - cron: '0 22 * * 1-5'   # 6:00 PM EDT
-    - cron: '15 22 * * 1-5'  # 6:15 PM EDT — monitor
-    - cron: '0 1 * * 2-6'    # 9:00 PM EDT (next UTC day Tue-Sat)
-    - cron: '15 1 * * 2-6'   # 9:15 PM EDT — monitor
-    # ── WEEKENDS (Sat-Sun) EDT — 3 times ──
-    - cron: '0 14 * * 0,6'   # 10:00 AM EDT
-    - cron: '15 14 * * 0,6'  # 10:15 AM EDT — monitor
-    - cron: '0 18 * * 0,6'   # 2:00 PM EDT
-    - cron: '15 18 * * 0,6'  # 2:15 PM EDT — monitor
-    - cron: '0 22 * * 0,6'   # 6:00 PM EDT
-    - cron: '15 22 * * 0,6'  # 6:15 PM EDT — monitor
+    # All times UTC (EDT = UTC-4, EST = UTC-5)
+    # Peak 8am-6pm ET: every 15 min  →  UTC hours 12-21 (EDT) covers 8:00am-5:45pm
+    - cron: '0,15,30,45 12-21 * * *'
+    # Off-peak 6pm-8am ET: every hour  →  UTC hours 0-11 + 22-23
+    - cron: '0 0-11,22,23 * * *'
+    # Total: 40 peak + 14 off-peak = 54 Gemini calls/day (well under 250 RPD free limit)
   workflow_dispatch:
     inputs:
       job:
