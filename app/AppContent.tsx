@@ -49,12 +49,8 @@ body{background:#ffffff}
 .san-x{padding:7px 10px;background:transparent;border:1px solid #d1d5db;border-radius:3px;color:#6b7280;font-family:var(--mono);font-size:.6rem;cursor:pointer}
 .san-x:hover{border-color:#cc0000}
 .ctrl-bar{background:#f9fafb;border-bottom:1px solid #e5e7eb;padding:5px 20px}
-.ctrl-inner{max-width:1140px;margin:0 auto;display:flex;gap:6px;align-items:center;flex-wrap:nowrap;padding:4px 0}
-.ctrl-row1{display:contents}
-.ctrl-row2{display:contents}
+.ctrl-inner{max-width:1140px;margin:0 auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .pill{padding:4px 10px;border-radius:3px;border:1px solid #d1d5db;background:transparent;color:#374151;font-family:var(--mono);font-size:.58rem;letter-spacing:.07em;cursor:pointer;transition:all .15s;white-space:nowrap}
-.region-select{display:none}
-.region-pills{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
 .pill:hover{border-color:#111111;color:#111111}.pill.on{background:#111111;border-color:#111111;color:#ffffff}
 .tlbl{font-family:var(--mono);font-size:.58rem;color:#9ca3af;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
 
@@ -233,75 +229,8 @@ body{background:#ffffff}
 .kf-chip-val{font-family:'Playfair Display',serif;font-size:.95rem;font-weight:700;line-height:1.1}
 .kf-chip-lbl{font-family:'IBM Plex Mono',monospace;font-size:.44rem;letter-spacing:.1em;
   text-transform:uppercase;color:#9ca3af;margin-top:2px;text-align:center;white-space:nowrap}
-@media(max-width:768px){
-  /* Root */
-  html,body,.app{overflow-x:hidden;max-width:100vw}
-  /* Layout */
-  .layout{grid-template-columns:1fr;padding:10px 0 44px}
-  .mast-inner{padding:10px 14px;border-bottom:2px solid #e5e7eb}
-  .mast-l,.mast-r{display:none}
-  aside{display:none}
-  .kf-strip{display:flex}
-  /* kf-strip: constrain chips so they don't overflow */
-  .kf-chip{min-width:70px;padding:6px 10px}
-  .kf-chip-val{font-size:.82rem}
-  .kf-chip-lbl{font-size:.38rem}
 
-  /* Nav tabs */
-  .sec-nav-inner{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
-  .sec-nav-inner::-webkit-scrollbar{display:none}
-  .sec-tab{font-size:.58rem;padding:9px 7px;white-space:nowrap}
 
-  /* Ctrl-bar: two visual rows on mobile */
-  .ctrl-bar{padding:0}
-  .ctrl-inner{flex-wrap:wrap;gap:0;padding:0;align-items:center}
-  .ctrl-row1{display:flex;align-items:center;gap:5px;padding:5px 12px;width:100%;box-sizing:border-box;border-bottom:1px solid #f0f0f0;flex-wrap:wrap}
-  .ctrl-row2{display:flex;align-items:center;gap:5px;padding:4px 12px;width:100%;box-sizing:border-box}
-  .upd-text{font-size:.52rem;word-break:break-word}
-  .refresh-btn{font-size:.52rem;padding:3px 8px;white-space:nowrap}
-  .topic-input{flex:1;min-width:0;box-sizing:border-box}
-
-  /* Region: show dropdown, hide pills */
-  .region-pills{display:none}
-  .region-select{display:block;font-family:var(--mono);font-size:.62rem;padding:3px 6px;border:1px solid #d1d5db;border-radius:3px;background:#fff;max-width:160px}
-  .region-lbl{display:inline}
-
-  /* Article filter search */
-  .san-search{padding:6px 12px}
-  .san-inner{flex-direction:column;align-items:stretch;gap:6px}
-  .san-q,.date-in{width:100%;box-sizing:border-box;min-width:0}
-  .ofac-prog-select,.gs-inline{min-width:0;width:100%;box-sizing:border-box}
-
-  /* Articles */
-  .article{padding:10px 12px;border-bottom:1px solid #e5e7eb;word-break:break-word;overflow-wrap:break-word;box-sizing:border-box;max-width:100%}
-  .art-meta{flex-wrap:wrap;gap:4px}
-  .art-date{white-space:normal;margin-left:0;font-size:.54rem}
-  .art-region{font-size:.54rem}
-  .art-hl{font-size:.9rem;line-height:1.3;word-break:break-word;overflow-wrap:break-word;max-width:100%;display:block}
-  .art-body{display:none}
-  .src-path{display:none}
-  .art-source{flex-wrap:wrap;gap:4px;margin-top:4px}
-  .src-lbl,.src-link{font-size:.54rem}
-
-  /* Penalties */
-  .pen-wrap,.fincen-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;width:100%;max-width:100%;display:block;-ms-overflow-style:-ms-autohiding-scrollbar}
-  .pen-table,.fincen-table{min-width:480px}
-  .pen-table th,.pen-table td,.fincen-table th,.fincen-table td{font-size:.58rem;padding:3px 4px}
-  .pen-table .pen-col-note,.fincen-table .fincen-col-note{display:none}
-  .pen-sort-row{flex-wrap:wrap;gap:4px}
-  .pen-tab-btn{font-size:.6rem;padding:5px 8px}
-
-  /* OFAC program table */
-  .ofac-prog-table td:first-child,.ofac-prog-table td:last-child{white-space:normal;font-size:.58rem}
-  .ofac-prog-table{font-size:.58rem}
-  .gs-panel{padding:10px 12px}
-}
-@media(max-width:420px){
-  .mast-title{font-size:1.4rem}
-  .sec-tab{font-size:.55rem;padding:8px 6px}
-  .art-hl{font-size:.88rem}
-  .pill{font-size:.5rem;padding:3px 6px}
-}
 
 `;
 
@@ -685,6 +614,13 @@ export default function GlobalMonitor() {
   };
 
   const [refreshQueued, setRefreshQueued] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(()=>{
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
 
   // Refreshing in-process (fetching ~50 sources) reliably exceeds Cloudflare's
   // worker time limits, so the button no longer waits on /api/refresh directly.
@@ -921,6 +857,181 @@ export default function GlobalMonitor() {
     </article>
   );
 
+  // ── MOBILE VIEW ──────────────────────────────────────────────
+  if (isMobile) {
+    const mSecs = SECTIONS;
+    const mArticles = allFiltered.slice(0, 60);
+    const kfAll = sidebarSecs.flatMap(s => {
+      const kf = ((data.sidebar?.[s]?.keyFigures ?? []).length > 0
+        ? data.sidebar[s].keyFigures
+        : STATIC_SIDEBAR[s]?.keyFigures) ?? [];
+      return kf.slice(0, 2).map((f:any) => ({ ...f, s }));
+    });
+    const mRegions = REGIONS[section] || [];
+
+    return (<><style>{css}</style><style>{`
+      .m-app{font-family:var(--sans);background:#fff;min-height:100vh;max-width:100vw;overflow-x:hidden}
+      .m-head{text-align:center;padding:12px 0 8px;border-bottom:2px solid #111;background:#fff}
+      .m-head h1{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;letter-spacing:.02em;margin:0}
+      .m-tabs{display:flex;overflow-x:auto;border-bottom:1px solid #e5e7eb;scrollbar-width:none;background:#fff;position:sticky;top:0;z-index:20}
+      .m-tabs::-webkit-scrollbar{display:none}
+      .m-tab{flex-shrink:0;padding:10px 14px;font-family:var(--mono);font-size:.62rem;font-weight:600;letter-spacing:.05em;border:none;background:transparent;color:#6b7280;cursor:pointer;border-bottom:2px solid transparent;text-transform:uppercase}
+      .m-tab.active{color:#cc0000;border-bottom-color:#cc0000}
+      .m-tab.sanctions.active{color:#cc0000;border-bottom-color:#cc0000}
+      .m-tab.economics.active{color:#15803d;border-bottom-color:#15803d}
+      .m-tab.religion.active{color:#6d28d9;border-bottom-color:#6d28d9}
+      .m-tab.occ.active{color:#b45309;border-bottom-color:#b45309}
+      .m-tab.penalties.active{color:#374151;border-bottom-color:#374151}
+      .m-tab.bis.active{color:#0369a1;border-bottom-color:#0369a1}
+      .m-bar{display:flex;align-items:center;gap:6px;padding:6px 12px;border-bottom:1px solid #e5e7eb;flex-wrap:wrap;font-family:var(--mono);font-size:.58rem;color:#374151;background:#f9fafb}
+      .m-dot{width:6px;height:6px;border-radius:50%;background:#22c55e;flex-shrink:0}
+      .m-txt{flex:1;min-width:0;font-size:.56rem;color:#6b7280}
+      .m-btn{padding:3px 9px;border:1px solid #d1d5db;border-radius:3px;background:transparent;font-family:var(--mono);font-size:.56rem;color:#374151;cursor:pointer;white-space:nowrap}
+      .m-btn.on{background:#111;color:#fff;border-color:#111}
+      .m-region-sel{font-family:var(--mono);font-size:.58rem;padding:3px 6px;border:1px solid #d1d5db;border-radius:3px;background:#fff;max-width:140px}
+      .m-filter{background:#fef2f2;border-bottom:1px solid #fca5a5;padding:8px 12px;display:flex;flex-direction:column;gap:6px}
+      .m-filter input{padding:5px 8px;border:1px solid #d1d5db;border-radius:3px;font-size:.68rem;font-family:var(--mono);width:100%;box-sizing:border-box}
+      .m-filter-row{display:flex;gap:6px;align-items:center}
+      .m-kf{display:flex;overflow-x:auto;padding:8px 12px;gap:8px;border-bottom:1px solid #e5e7eb;scrollbar-width:none;background:#fafafa}
+      .m-kf::-webkit-scrollbar{display:none}
+      .m-kfc{flex-shrink:0;display:flex;flex-direction:column;align-items:center;min-width:72px;padding:5px 8px;background:#fff;border:1px solid #e5e7eb;border-radius:4px}
+      .m-kfv{font-family:var(--mono);font-size:.9rem;font-weight:700;line-height:1}
+      .m-kfl{font-family:var(--mono);font-size:.35rem;letter-spacing:.04em;text-transform:uppercase;color:#9ca3af;margin-top:2px;text-align:center}
+      .m-art{padding:10px 12px;border-bottom:1px solid #e5e7eb}
+      .m-art-meta{display:flex;align-items:center;gap:5px;flex-wrap:wrap;margin-bottom:3px}
+      .m-art-tag{font-family:var(--mono);font-size:.48rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:1px 4px;border-radius:2px;background:#fee2e2;color:#cc0000}
+      .m-art-tag.economics{background:#dcfce7;color:#15803d}
+      .m-art-tag.religion{background:#f3e8ff;color:#6d28d9}
+      .m-art-tag.occ{background:#fef3c7;color:#b45309}
+      .m-art-tag.bis{background:#dbeafe;color:#1d4ed8}
+      .m-art-tag.penalties{background:#f3f4f6;color:#374151}
+      .m-art-reg{font-family:var(--mono);font-size:.5rem;color:#9ca3af}
+      .m-art-date{font-family:var(--mono);font-size:.5rem;color:#9ca3af;margin-left:auto}
+      .m-art-hl{font-family:'Playfair Display',serif;font-size:.95rem;line-height:1.35;color:#111;font-weight:700;display:block;word-break:break-word;overflow-wrap:break-word}
+      .m-art-src{font-family:var(--mono);font-size:.5rem;color:#9ca3af;margin-top:3px}
+      .m-art-src a{color:#6b7280;text-decoration:none}
+      .m-pen-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;padding:0 0 8px}
+      .m-pen-table{min-width:480px;width:100%;border-collapse:collapse;font-family:var(--mono);font-size:.58rem}
+      .m-pen-table th{background:#f9fafb;border-bottom:1px solid #e5e7eb;padding:4px 6px;text-align:left;font-size:.5rem;letter-spacing:.04em;color:#6b7280;white-space:nowrap}
+      .m-pen-table td{padding:4px 6px;border-bottom:1px solid #f3f4f6;vertical-align:top}
+      .m-pen-table tr:hover td{background:#f9fafb}
+      .m-section-hd{padding:10px 12px 4px;font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;border-bottom:1px solid #e5e7eb}
+      .m-empty{padding:20px 12px;font-family:var(--mono);font-size:.62rem;color:#9ca3af;text-align:center}
+    `}</style>
+    <div className="m-app">
+      {/* Header */}
+      <div className="m-head"><h1>THE GLOBAL REPORT</h1></div>
+      {/* Section tabs */}
+      <div className="m-tabs">
+        {mSecs.map(s=><button key={s} className={`m-tab ${s} ${section===s?"active":""}`}
+          onClick={()=>{ handleSection(s); setSearchBarOpen(false); }}>{LABELS[s]}</button>)}
+      </div>
+      {/* Status bar */}
+      <div className="m-bar">
+        <span className="m-dot"/>
+        <span className="m-txt">{data.lastUpdated} · {allFiltered.length} stories</span>
+        {section !== "penalties" && (
+          <button className={`m-btn ${searchBarOpen||sanOn?"on":""}`}
+            onClick={()=>setSearchBarOpen(v=>!v)}>⊘ {sanOn?"Filtered":"Filter"}</button>
+        )}
+        {mRegions.length>1 && (
+          <select className="m-region-sel" value={region} onChange={e=>setRegion(e.target.value)}>
+            {mRegions.map(r=><option key={r} value={r}>{r}</option>)}
+          </select>
+        )}
+        <button className="m-btn" onClick={handleRefresh} disabled={refreshing}>
+          {refreshing?"…":"↻"}
+        </button>
+      </div>
+      {/* Filter panel */}
+      {section !== "penalties" && searchBarOpen && (
+        <div className="m-filter">
+          <input placeholder='Keyword — "Iran oil", "EU 20th"' value={sanQ}
+            onChange={e=>setSanQ(e.target.value)} onKeyDown={e=>e.key==="Enter"&&doSearch()} autoFocus/>
+          <div className="m-filter-row">
+            <input type="date" value={dateFrom} onChange={e=>setDateFrom(e.target.value)} style={{flex:1}}/>
+            <span style={{fontFamily:"var(--mono)",fontSize:".6rem",color:"#9ca3af"}}>→</span>
+            <input type="date" value={dateTo} onChange={e=>setDateTo(e.target.value)} style={{flex:1}}/>
+          </div>
+          <div className="m-filter-row">
+            <button className="m-btn on" onClick={doSearch} style={{flex:1}}>Search</button>
+            {sanOn && <button className="m-btn" onClick={()=>{clearSearch();setSearchBarOpen(false);}} style={{flex:1}}>✕ Clear</button>}
+            <button className="m-btn" onClick={()=>setSearchBarOpen(false)}>✕</button>
+          </div>
+        </div>
+      )}
+      {/* Key figures strip */}
+      {kfAll.length > 0 && section !== "penalties" && (
+        <div className="m-kf">
+          {kfAll.map((f:any,i:number)=>(
+            <div key={i} className="m-kfc">
+              <span className="m-kfv" style={{color:f.s==="economics"?"#15803d":f.s==="religion"?"#6d28d9":f.s==="occ"?"#b45309":f.s==="bis"?"#1d4ed8":"#cc0000"}}>{f.value}</span>
+              <span className="m-kfl">{f.label}</span>
+            </div>
+          ))}
+        </div>
+      )}
+      {/* Articles */}
+      {section !== "penalties" && (<>
+        {mArticles.length === 0 && <div className="m-empty">No stories match your filter.</div>}
+        {mArticles.map((a,i)=>{
+          const sd = SOURCE_DISPLAY[a.source] ?? { label: a.source };
+          return (
+            <div key={a.id??i} className="m-art">
+              <div className="m-art-meta">
+                <span className={`m-art-tag ${a.section}`}>{a.section==="bis"?"BIS":a.section}</span>
+                <span className="m-art-reg">{decodeEntities(a.region)}</span>
+                <span className="m-art-date">{formatDisplayDate(a.date)}</span>
+              </div>
+              <a href={a.sourceUrl} target="_blank" rel="noopener noreferrer"
+                style={{textDecoration:"none",color:"inherit"}}>
+                <span className="m-art-hl">{decodeEntities(a.headline)}</span>
+              </a>
+              <div className="m-art-src">{sd.label}</div>
+            </div>
+          );
+        })}
+      </>)}
+      {/* Penalties section */}
+      {section === "penalties" && (<>
+        <div className="m-section-hd">OFAC Civil Penalties</div>
+        <div className="m-pen-wrap">
+          <table className="m-pen-table">
+            <thead><tr><th>Date</th><th>Entity</th><th>Amount</th><th>Program</th></tr></thead>
+            <tbody>
+              {(data.ofacPenalties ?? OFAC_PENALTIES_STATIC).slice(0,40).map((p:any,i:number)=>(
+                <tr key={i}>
+                  <td style={{whiteSpace:"nowrap"}}>{p.date}</td>
+                  <td>{p.entity}</td>
+                  <td style={{whiteSpace:"nowrap",color:"#cc0000",fontWeight:600}}>{typeof p.amount==="number"?`$${p.amount.toLocaleString()}`:p.amount}</td>
+                  <td style={{color:"#6b7280"}}>{p.program}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div className="m-section-hd" style={{marginTop:8}}>FinCEN Enforcement</div>
+        <div className="m-pen-wrap">
+          <table className="m-pen-table">
+            <thead><tr><th>Date</th><th>Institution</th><th>Amount</th><th>Violation</th></tr></thead>
+            <tbody>
+              {FINCEN_PENALTIES.slice(0,30).map((p:any,i:number)=>(
+                <tr key={i}>
+                  <td style={{whiteSpace:"nowrap"}}>{p.date}</td>
+                  <td>{p.institution}</td>
+                  <td style={{whiteSpace:"nowrap",color:"#1d4ed8",fontWeight:600}}>{typeof p.amount==="number"?`$${p.amount.toLocaleString()}`:p.amount}</td>
+                  <td style={{color:"#6b7280"}}>{p.violation}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </>)}
+    </div>
+    </>);
+  }
+  // ── END MOBILE VIEW ───────────────────────────────────────────
+
   return (
     <><style>{css}</style>
     <div className="app">
@@ -946,55 +1057,46 @@ export default function GlobalMonitor() {
         </div></div>
       )}
       <div className="ctrl-bar"><div className="ctrl-inner">
-        {/* Row 1: status + filter + search + regions */}
-        <div className="ctrl-row1">
-          <span className="live-dot"/>
-          {refreshing
-            ? <span className="upd-text">{refreshQueued?"Queued…":"Refreshing…"}</span>
-            : <span className="upd-text">{data.lastUpdated} · {allFiltered.length} stories</span>}
+        {/* Left: live status */}
+        <div style={{display:"flex",alignItems:"center",gap:5,flexShrink:0}}>
+          {refreshing ? <><span className="spin-dot"/><span className="upd-text">{refreshQueued?"Queued…":"Refreshing…"}</span></>
+            : <><span className="live-dot"/><span className="upd-text">{data.lastUpdated} · {allFiltered.length} stories</span></>}
           {error && <span className="err-msg">{error}</span>}
-          <span style={{color:"#d1d5db",fontFamily:"var(--mono)",margin:"0 2px"}}>|</span>
-          {section !== "penalties" && (
-            <button className={`pill ${searchBarOpen||sanOn?"on":""}`}
-              onClick={()=>setSearchBarOpen(v=>!v)}
-              style={{fontFamily:"var(--mono)",fontSize:".58rem"}}
-            >⊘ {sanOn?"Filtered":"Filter"}</button>
-          )}
-          {showGlobalSearch ? (
-            <>
-              <input className="gs-inline" placeholder="Search web…" value={globalQ}
-                onChange={e=>setGlobalQ(e.target.value)}
-                onKeyDown={e=>{if(e.key==="Enter"&&!globalSearching)doGlobalSearch();}}
-                autoFocus
-              />
-              <button className="pill on" onClick={()=>doGlobalSearch()} disabled={globalSearching}
-                style={{fontFamily:"var(--mono)",fontSize:".58rem",flexShrink:0}}>
-                {globalSearching?"…":"🔍 Go"}
-              </button>
-              <button className="san-x" onClick={()=>{setShowGlobalSearch(false);setGlobalResults([]);setGlobalQ("");}}>✕</button>
-            </>
-          ) : (
-            <button className="pill" onClick={()=>setShowGlobalSearch(true)}
-              style={{fontFamily:"var(--mono)",fontSize:".58rem"}}>🔍 Search</button>
-          )}
-          {(REGIONS[section]?.length||0)>1 && (<>
-            <span className="tlbl region-lbl">Region:</span>
-            <select className="region-select" value={region} onChange={e=>setRegion(e.target.value)}>
-              {(REGIONS[section]||["All"]).map(r=><option key={r} value={r}>{r}</option>)}
-            </select>
-            <div className="region-pills">
-              {(REGIONS[section]||["All"]).map(r=><button key={r} className={`pill ${region===r?"on":""}`} onClick={()=>setRegion(r)}>{r}</button>)}
-            </div>
-          </>)}
-          {section==="sanctions" && (
-            <button className={`pill ${ofacProgram?"on":""}`}
-              style={{fontFamily:"var(--mono)",fontSize:".6rem"}}
-              onClick={()=>setOfacProgram(ofacProgram?"":"iran")}
-            >⚖ OFAC Programs</button>
-          )}
         </div>
-        {/* Row 2: focus topic + refresh (hidden on mobile if no topic) */}
-        <div className="ctrl-row2" style={{marginLeft:"auto"}}>
+        <span style={{color:"#d1d5db",fontFamily:"var(--mono)"}}>|</span>
+        {section !== "penalties" && (
+          <button className={`pill ${searchBarOpen||sanOn?"on":""}`}
+            onClick={()=>setSearchBarOpen(v=>!v)}
+            style={{fontFamily:"var(--mono)",fontSize:".58rem"}}
+          >⊘ {sanOn?"Filtered":"Filter"}</button>
+        )}
+        {showGlobalSearch ? (
+          <>
+            <input className="gs-inline" placeholder="Search web…" value={globalQ}
+              onChange={e=>setGlobalQ(e.target.value)}
+              onKeyDown={e=>{if(e.key==="Enter"&&!globalSearching)doGlobalSearch();}}
+              autoFocus
+            />
+            <button className="pill on" onClick={()=>doGlobalSearch()} disabled={globalSearching}
+              style={{fontFamily:"var(--mono)",fontSize:".58rem",flexShrink:0}}>
+              {globalSearching?"…":"🔍 Go"}
+            </button>
+            <button className="san-x" onClick={()=>{setShowGlobalSearch(false);setGlobalResults([]);setGlobalQ("");}}>✕</button>
+          </>
+        ) : (
+          <button className="pill" onClick={()=>setShowGlobalSearch(true)}
+            style={{fontFamily:"var(--mono)",fontSize:".58rem"}}>🔍 Search</button>
+        )}
+        {(REGIONS[section]?.length||0)>1 && <><span className="tlbl">Region:</span>
+          {(REGIONS[section]||["All"]).map(r=><button key={r} className={`pill ${region===r?"on":""}`} onClick={()=>setRegion(r)}>{r}</button>)}
+        </>}
+        {section==="sanctions" && (
+          <button className={`pill ${ofacProgram?"on":""}`}
+            style={{fontFamily:"var(--mono)",fontSize:".6rem"}}
+            onClick={()=>setOfacProgram(ofacProgram?"":"iran")}
+          >⚖ OFAC Programs</button>
+        )}
+        <div style={{marginLeft:"auto",display:"flex",alignItems:"center",gap:6,flexShrink:0}}>
           <input className="topic-input" placeholder="Focus topic…" value={refreshTopic} onChange={e=>setRefreshTopic(e.target.value)} onKeyDown={e=>e.key==="Enter"&&!refreshing&&handleRefresh()}/>
           <button className="refresh-btn" onClick={handleRefresh} disabled={refreshing}>
             {refreshing ? <><span className="spin">↻</span>Refreshing…</> : "↻ Refresh Now"}
