@@ -56,10 +56,12 @@ function parseRecentActions(html) {
   // Also capture surrounding text for date
   const blocks = html.split(/<\/li>|<\/p>/);
   for (const block of blocks) {
-    const lm = /href="(https?:\/\/ofac\.treasury\.gov\/recent-actions\/(\d{8}[^"]*))">([^<]+)<\/a>/.exec(block);
+    // Match both absolute (https://ofac...) and relative (/recent-actions/...) hrefs
+    const lm = /href="(?:https:\/\/ofac\.treasury\.gov)?(\/recent-actions\/(\d{8}[^"]*))">([^<]+)<\/a>/.exec(block);
     if (!lm) continue;
     const dm = dateRe.exec(stripHtml(block));
-    entries.push({ url: lm[1], code: lm[2], title: lm[3].trim(), date: dm?.[1] ?? "" });
+    const url = `https://ofac.treasury.gov${lm[1]}`;
+    entries.push({ url, code: lm[2], title: lm[3].trim(), date: dm?.[1] ?? "" });
   }
   return entries;
 }
@@ -193,7 +195,7 @@ Search the web for the latest developments across all six domains. JSON only.`;
 // ── Call Gemini ────────────────────────────────────────────────────────────
 console.log(`[gemini-refresh] Calling Gemini at ${new Date().toISOString()}...`);
 console.log(`[gemini-refresh] Today: ${today}`);
-console.log(`[gemini-refresh] OFAC URLs: checking ${ofacDates.length} dates (${ofacDates.length * 3} URLs)`);
+console.log(`[gemini-refresh] Recent actions: ${recentActions.length} entries | Civil penalties: ${civilPenalties.length} rows`);
 
 // Try 2.5-flash first (better quality + grounding), fall back to 2.0-flash
 const GEMINI_MODELS = [
