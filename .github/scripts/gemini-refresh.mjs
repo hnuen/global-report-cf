@@ -46,22 +46,23 @@ async function fetchOfac(url) {
   }
 }
 
-// 1. Parse recent-actions listing to extract entry titles + URLs (avoids fetching each date page)
+// 1. Parse recent-actions listing — global scan, no dependency on HTML structure
 function parseRecentActions(html) {
   const entries = [];
-  // Each entry: <a href="/recent-actions/YYYYMMDD...">Title</a> followed by date text
-  const linkRe = /href="(https?:\/\/ofac\.treasury\.gov\/recent-actions\/(\d{8}[^"]*))">([^<]+)<\/a>/g;
   const dateRe = /(\w+ \d+, \d{4})/;
+  // Scan entire HTML for any href="/recent-actions/YYYYMMDD..." link
+  // Handles both relative (/recent-actions/...) and absolute (https://ofac.../recent-actions/...)
+  const linkRe = /href="(?:https:\/\/ofac\.treasury\.gov)?(\/recent-actions\/(\d{8}[^"]*))"[^>]*>([^<]{5,300})<\/a>/g;
   let m;
-  // Also capture surrounding text for date
-  const blocks = html.split(/<\/li>|<\/p>/);
-  for (const block of blocks) {
-    // Match both absolute (https://ofac...) and relative (/recent-actions/...) hrefs
-    const lm = /href="(?:https:\/\/ofac\.treasury\.gov)?(\/recent-actions\/(\d{8}[^"]*))">([^<]+)<\/a>/.exec(block);
-    if (!lm) continue;
-    const dm = dateRe.exec(stripHtml(block));
-    const url = `https://ofac.treasury.gov${lm[1]}`;
-    entries.push({ url, code: lm[2], title: lm[3].trim(), date: dm?.[1] ?? "" });
+  while ((m = linkRe.exec(html)) !== null) {
+    const path = m[1], code = m[2], title = m[3].trim();
+    // Skip navigation/category links — those have non-date paths like /recent-actions/sanctions-list-updates
+    if (!/^\d{8}/.test(code)) continue;
+    const url = `https://ofac.treasury.gov${path}`;
+    // Find nearest date in surrounding 300 chars
+    const surrounding = stripHtml(html.slice(Math.max(0, m.index - 50), m.index + m[0].length + 300));
+    const dm = dateRe.exec(surrounding);
+    entries.push({ url, code, title, date: dm?.[1] ?? "" });
   }
   return entries;
 }
@@ -230,7 +231,11 @@ for (const model of GEMINI_MODELS) {
     if (geminiRes.ok) break;
     const err = await geminiRes.text();
     console.error(`[gemini-refresh] ${model} error ${geminiRes.status}: ${err.slice(0, 300)}`);
-    // reset body text for retry (response body consumed)
+    // 403 = key issue (leaked/invalid) — same key used for all models, no point retrying
+    if (geminiRes.status === 403) {
+      console.error(`[gemini-refresh] 403 on API key — skipping fallback models`);
+      break;
+    }
     geminiRes = null;
   } catch (e) {
     console.error(`[gemini-refresh] ${model} fetch threw:`, e.message);
