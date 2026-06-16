@@ -226,6 +226,27 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
     }
   }
 
+  // ── Section-scoped merge: don't overwrite other sections ──────────────────
+  // When a specific section is refreshed (e.g. BIS), only replace that section's
+  // articles in Redis. Without this, refreshing BIS would overwrite sanctions,
+  // penalties, etc. with 2025 historical backfill articles.
+  if (opts?.section && opts.section !== "all") {
+    const existing = await storage.load();
+    if (existing?.articles?.length) {
+      const otherArticles = existing.articles.filter(a => a.section !== opts.section);
+      const newSectionArticles = briefing.articles.filter(a => a.section === opts.section);
+      console.log(`[orchestrator] Section merge: ${newSectionArticles.length} new ${opts.section} articles + ${otherArticles.length} kept from existing`);
+      briefing.articles = [...newSectionArticles, ...otherArticles];
+      // Preserve existing sidebar for other sections
+      briefing.sidebar = {
+        ...existing.sidebar,
+        ...(briefing.sidebar?.[opts.section as keyof typeof briefing.sidebar]
+          ? { [opts.section]: briefing.sidebar[opts.section as keyof typeof briefing.sidebar] }
+          : {}),
+      };
+    }
+  }
+
   // ── Save the core briefing FIRST ───────────────────────────────────────────
   // Cloudflare Workers caps subrequests per invocation. Brief enrichment below
   // does per-article Redis cache lookups + article fetches + Gemini calls,
