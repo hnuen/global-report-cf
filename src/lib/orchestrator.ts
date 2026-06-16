@@ -8,7 +8,7 @@ import { getHistoricalForSection, getRecentBySource } from "./historical-article
 import type { Briefing, Section } from "./types";
 import { enrichArticlesWithBriefs } from "./brief-generator";
 import { loadArticleLibrary, saveArticlesToLibrary } from "./article-library";
-import { fetchOfacCache, recentActionsToArticles, civilPenaltiesToArticles } from "./ofac-github-cache";
+import { fetchOfacCache, recentActionsToArticles, civilPenaltiesToArticles, programsToArticles } from "./ofac-github-cache";
 
 // No module-level singletons — always read env vars fresh on each invocation
 export async function loadBriefing(): Promise<Briefing | null> {
@@ -78,15 +78,19 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
   try {
     const ofacCache = await fetchOfacCache();
     if (ofacCache) {
-      const existingUrls = new Set(briefing.articles.map(a => a.sourceUrl).filter(Boolean));
+      const existingUrls = new Set(briefing.articles.map(a => a.sourceUrl).filter(Boolean) as string[]);
       const cachedActionArticles = recentActionsToArticles(ofacCache.recentActions)
-        .filter(a => !existingUrls.has(a.sourceUrl));
+        .filter(a => !existingUrls.has(a.sourceUrl!));
       const cachedPenaltyArticles = civilPenaltiesToArticles(ofacCache.civilPenalties)
-        .filter(a => !existingUrls.has(a.sourceUrl));
-      const injected = [...cachedActionArticles, ...cachedPenaltyArticles];
+        .filter(a => !existingUrls.has(a.sourceUrl!));
+      // Inject articles from all scraped sanctions program pages
+      const programArticles = ofacCache.programs
+        ? programsToArticles(ofacCache.programs, 9200, existingUrls)
+        : [];
+      const injected = [...cachedActionArticles, ...cachedPenaltyArticles, ...programArticles];
       if (injected.length > 0) {
         briefing.articles = [...briefing.articles, ...injected];
-        console.log(`[orchestrator] Injected ${cachedActionArticles.length} recent-actions + ${cachedPenaltyArticles.length} penalties from GitHub OFAC cache`);
+        console.log(`[orchestrator] Injected ${cachedActionArticles.length} recent-actions + ${cachedPenaltyArticles.length} penalties + ${programArticles.length} program GL/FR from GitHub OFAC cache`);
       }
     }
   } catch (e) {
@@ -290,74 +294,4 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
 
   // Enrich articles with AI-generated briefs (cached in Redis, runs async)
   // Skipped on manual refresh (too slow for interactive use) and when skipLLM=true.
-  // Best-effort: failure here does not lose data, since the core briefing is already saved above.
-  if (needsLLM && !opts?.manualRefresh && (usedProvider.includes("Official Sources") || usedProvider.includes("Local Analysis"))) {
-    try {
-      console.log("[orchestrator] Enriching article briefs...");
-      const sanctionsArticles = briefing.articles
-        .filter(a => a.sourceUrl)
-        .map(a => ({ sourceUrl: a.sourceUrl!, headline: a.headline, body: a.body }));
-
-      const enriched = await enrichArticlesWithBriefs(sanctionsArticles);
-      if (enriched.size > 0) {
-        briefing.articles = briefing.articles.map(a => {
-          const newBrief = a.sourceUrl ? enriched.get(a.sourceUrl) : undefined;
-          return newBrief ? { ...a, body: [newBrief, ...a.body.slice(1)] } : a;
-        });
-        console.log(`[orchestrator] Enriched ${enriched.size} article briefs`);
-
-        // Save enriched articles to the persistent library for future refreshes
-        const enrichedArticles = briefing.articles.filter(a =>
-          a.sourceUrl && enriched.has(a.sourceUrl)
-        );
-        saveArticlesToLibrary(enrichedArticles).catch(e =>
-          console.log("[orchestrator] Library save failed (non-fatal):", String(e).slice(0, 80))
-        );
-
-        // Re-save briefing with enriched briefs so users see Gemini summaries immediately.
-        // This save is best-effort — if it fails (subrequest limit), the pre-save copy
-        // (with generic briefs) is already in Redis and the library will propagate
-        // enriched briefs on the next refresh cycle.
-        try {
-          await storage.save(briefing);
-          console.log("[orchestrator] Re-saved briefing with enriched briefs");
-        } catch (saveErr) {
-          console.log("[orchestrator] Re-save failed (non-fatal, pre-save intact):", String(saveErr).slice(0, 80));
-        }
-      }
-    } catch (e) {
-      console.log("[orchestrator] Brief enrichment failed (non-fatal):", String(e).slice(0, 100));
-    }
-  }
-
-  // Build savedTo from pre-save result so enrichment save failures don't
-  // incorrectly report Upstash as missing even when the core briefing was saved.
-  const health = storage.getHealth();
-  const savedTo = [
-    ...(preSaveSuccess ? ["upstash"] : []),
-    "memory",
-  ];
-  const storageErrors = health.filter(h => !h.healthy).map(h => ({ id: h.id, error: h.lastError }));
-
-  return { briefing, usedProvider, savedTo, storageErrors };
-}
-
-export async function getSystemHealth() {
-  const storage = await buildStorageManager();
-  const tracker = getTracker();
-
-  return {
-    storage: storage.getHealth(),
-    llm: {
-      primary:   { id: "anthropic-primary",   calls: tracker.get("anthropic-primary:llm"),   limit: Number(process.env.ANTHROPIC_PRIMARY_DAILY_LIMIT   ?? 0) },
-      secondary: { id: "anthropic-secondary", calls: tracker.get("anthropic-secondary:llm"), limit: Number(process.env.ANTHROPIC_SECONDARY_DAILY_LIMIT ?? 0) },
-      tertiary:  { id: "anthropic-tertiary",  calls: tracker.get("anthropic-tertiary:llm"),  limit: Number(process.env.ANTHROPIC_TERTIARY_DAILY_LIMIT  ?? 0) },
-      gemini:    { id: "gemini",              calls: tracker.get("gemini:llm"),              limit: Number(process.env.GEMINI_DAILY_LIMIT ?? 1500) },
-    },
-    hasAnthropicKey: !!process.env.ANTHROPIC_API_KEY,
-    hasGeminiKey:    !!process.env.GEMINI_API_KEY,
-    hasUpstash:      !!process.env.UPSTASH_REDIS_REST_URL,
-    hasTelegram:     !!process.env.TELEGRAM_BOT_TOKEN,
-    timestamp: new Date().toISOString(),
-  };
-}
+  // Best-effort: failure here does not lose data, since the core br
