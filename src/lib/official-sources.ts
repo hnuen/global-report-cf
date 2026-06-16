@@ -426,4 +426,90 @@ export async function fetchOfficialSources(
   // Cap at 42 so 42+5=47 < 50. Phase groups (11/8/11/26) are all well under this cap.
   const MAX_SOURCES = 42;
   if (allSources.length > MAX_SOURCES) {
-    console.warn(`[offic
+    console.warn(`[official] Source count ${allSources.length} exceeds safe budget of ${MAX_SOURCES} — truncating`);
+    allSources = allSources.slice(0, MAX_SOURCES);
+  }
+
+  console.log(`[official] Section filter: ${section ?? "all"} → ${allSources.length}/${allSourcesUnfiltered.length} sources`);
+  checkSubrequestBudget(allSources);
+  const MASTER_TIMEOUT = 8000;  // 8s — enough for gov sites; CF 30s wall-clock leaves room for LLM+save
+
+  // Load ETag store once (1 Redis GET) — shared across all parallel fetches
+  const etagStore = await loadETagStore();
+  let notModifiedCount = 0;
+
+  const fetchOne = async (source: typeof allSources[0]) => {
+    try {
+      console.log(`[official] Fetching ${source.name}...`);
+      const html = await fetchWithTimeout(
+        source.url,
+        (source as any).official ? 6000 : 4000,
+        etagStore,
+      );
+      if (html === null) {
+        // 304 Not Modified — server confirmed nothing changed
+        notModifiedCount++;
+        console.log(`[official] ⚡ ${source.name} — 304 unchanged`);
+        return { name: source.name, url: source.url, content: "", fetchedAt: now, notModified: true };
+      }
+      const content = stripHTML(html);
+      console.log(`[official] ✅ ${source.name} — ${content.length} chars`);
+      return { name: source.name, url: source.url, content, fetchedAt: now };
+    } catch (e) {
+      console.warn(`[official] ❌ ${source.name} failed: ${e}`);
+      return { name: source.name, url: source.url, content: "", fetchedAt: now, error: String(e) };
+    }
+  };
+
+  // Fetch all in parallel but race against master timeout
+  const fetchAll = Promise.allSettled(allSources.map(fetchOne));
+
+  const timeoutPromise = new Promise<typeof results>((resolve) =>
+    setTimeout(() => {
+      console.warn("[official] Master timeout hit — returning partial results");
+      resolve(allSources.map((s) => ({
+        status: "fulfilled" as const,
+        value: { name: s.name, url: s.url, content: "", fetchedAt: now, error: "timeout" }
+      })));
+    }, MASTER_TIMEOUT)
+  );
+
+  const results = await Promise.race([fetchAll, timeoutPromise]);
+
+  // Flush updated ETag store (1 Redis SET) — fire-and-forget, non-blocking
+  flushETagStore(etagStore).catch(() => {});
+  console.log(`[official] ETag summary: ${notModifiedCount} unchanged (304), ${allSources.length - notModifiedCount} fetched`);
+
+  return results.map((r, i) =>
+    r.status === "fulfilled"
+      ? r.value
+      : {
+          name: allSources[i].name,
+          url: allSources[i].url,
+          content: "",
+          fetchedAt: now,
+          error: String((r as PromiseRejectedResult).reason),
+        }
+  );
+}
+
+// ── Format sources for injection into LLM prompt ─────────────────────────────
+export function formatSourcesForPrompt(sources: OfficialSource[]): string {
+  const successful = sources.filter(s => s.content.length > 100);
+  if (successful.length === 0) return "";
+
+  return `
+OFFICIAL GOVERNMENT SOURCES — fetched directly right now:
+Use this raw data as the primary source for your briefing. Do not ignore or contradict it.
+
+${successful.map(s => `
+--- ${s.name} ---
+URL: ${s.url}
+Fetched: ${s.fetchedAt}
+Content:
+${s.content}
+`).join("\n")}
+
+END OF OFFICIAL SOURCES. Write articles based on the above real data.
+`;
+}
