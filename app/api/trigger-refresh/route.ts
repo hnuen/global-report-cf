@@ -7,6 +7,10 @@
 // GitHub Actions cron which calls /api/refresh with a 7-minute timeout.
 import { NextRequest, NextResponse } from "next/server";
 import { refreshBriefing } from "@/src/lib/orchestrator";
+import { maybeSyncPenalties } from "@/src/lib/penalties-fetcher";
+import { PENALTIES } from "@/src/lib/penalties-data";
+import { maybeSyncFinCEN } from "@/src/lib/fincen-fetcher";
+import { FINCEN_PENALTIES } from "@/src/lib/fincen-penalties";
 
 export const dynamic = "force-dynamic";
 
@@ -24,12 +28,30 @@ export async function POST(request: NextRequest) {
     const group: 1 | undefined = (!section || section === "sanctions") ? 1 : undefined;
 
     const { usedProvider, savedTo } = await refreshBriefing(body.topic, { skipLLM, section, manualRefresh: true, group });
+
+    // Clicking "Refresh Now" on the Penalties tab (or a global refresh) should also sync the
+    // dedicated OFAC/FinCEN penalty tables — these previously only synced via /api/cron, which
+    // nothing in production calls. Self-throttled to once per 24h, so cheap to call here.
+    let penaltySync, fincenSync;
+    if (!section || section === "penalties") {
+      penaltySync = await maybeSyncPenalties(PENALTIES).catch(e => {
+        console.log("[trigger-refresh] Penalty sync failed (non-fatal):", String(e).slice(0, 80));
+        return { ran: false, added: 0 };
+      });
+      fincenSync = await maybeSyncFinCEN(FINCEN_PENALTIES).catch(e => {
+        console.log("[trigger-refresh] FinCEN sync failed (non-fatal):", String(e).slice(0, 80));
+        return { ran: false, added: 0 };
+      });
+    }
+
     return NextResponse.json({
       ok: true,
       queued: false,
       message: `Refresh complete${section ? ` (${section})` : ""} — new articles available now.`,
       usedProvider,
       savedTo,
+      penaltySync,
+      fincenSync,
     });
   } catch (e) {
     return NextResponse.json({ ok: false, error: String(e) }, { status: 500 });
