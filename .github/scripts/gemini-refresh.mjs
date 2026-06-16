@@ -264,10 +264,10 @@ console.log(`[gemini-refresh] Calling Gemini at ${new Date().toISOString()}...`)
 console.log(`[gemini-refresh] Today: ${today}`);
 console.log(`[gemini-refresh] Recent actions: ${recentActions.length} entries | Civil penalties: ${civilPenalties.length} rows`);
 
-// Try 2.5-flash first (better quality + grounding), fall back to 2.0-flash
+// Try 3.1-flash-lite first (500 RPD free tier), fall back to 2.5-flash (20 RPD)
 const GEMINI_MODELS = [
+  "gemini-3.1-flash-lite",
   "gemini-2.5-flash",
-  "gemini-2.0-flash",
 ];
 
 async function callGemini(model, body) {
