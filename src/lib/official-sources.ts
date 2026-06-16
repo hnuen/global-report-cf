@@ -258,6 +258,9 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean; group: 2|3
   { name: "UK HM Treasury — News",                url: "https://www.gov.uk/search/news-and-communications?keywords=sanctions+financial&organisations%5B%5D=hm-treasury&order=updated-newest", official: true, group: 3, sections: ["sanctions","economics"] },
   { name: "UK OFSI — Financial Sanctions",        url: "https://www.gov.uk/search/news-and-communications?keywords=financial+sanctions&organisations%5B%5D=office-of-financial-sanctions-implementation&order=updated-newest", official: true, group: 3, sections: ["sanctions"] },
   { name: "UK Sanctions List",                     url: "https://www.gov.uk/government/publications/the-uk-sanctions-list", official: true, group: 3, sections: ["sanctions"] },
+  // U.S. Department of War (formerly Department of Defense) — News Releases RSS.
+  // Publishes the Section 1260H "Chinese Military Companies" list updates and related DOW statements.
+  { name: "U.S. Department of War — News Releases", url: "https://www.war.gov/DesktopModules/ArticleCS/RSS.ashx?ContentType=9&Site=945&max=10", official: true, group: 3, sections: ["sanctions","bis"] },
 
   // ── Group 4 — FinCEN, China/HK, regional, media sources ─────────────────────
   { name: "FinCEN Enforcement Actions",            url: "https://www.fincen.gov/news", official: true, group: 4, sections: ["penalties"] },
@@ -396,7 +399,7 @@ export function checkSubrequestBudget(sources: Array<unknown>, label = "fetchOff
 // Multi-batch fetch strategy — 4 groups fetched at t=0, +3min, +6min, +9min:
 // group 1 (t=0)    — OFAC date news + Treasury SBs               (~11 sources)
 // group 2 (t=+3m)  — Federal Register OFAC/Treasury + OFAC news  (~8 sources)
-// group 3 (t=+6m)  — UK, EU, BIS, OCC, Fed official pages        (~11 sources)
+// group 3 (t=+6m)  — UK, EU, BIS, OCC, Fed, DoW official pages    (~12 sources)
 // group 4 (t=+9m)  — China/regional/FinCEN/AP/BBC/CNN            (~26 sources)
 // Default (no group) — all sources (used by GitHub Actions scheduled runs)
 // Each group runs in its own CF Worker invocation, well under the 50-subrequest limit.
