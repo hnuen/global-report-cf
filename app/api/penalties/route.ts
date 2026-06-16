@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { PENALTIES } from "@/src/lib/penalties-data";
 import type { PenaltyRecord } from "@/src/lib/penalties-data";
 import { loadExtraPenalties } from "@/src/lib/penalties-fetcher";
+import { fetchOfacCache, civilPenaltiesToPenaltyRecords } from "@/src/lib/ofac-github-cache";
 
 export const dynamic = "force-dynamic";
 
@@ -11,7 +12,20 @@ export async function GET(request: NextRequest) {
 
   // Merge static database with any auto-synced entries stored in Redis
   const extra = await loadExtraPenalties();
-  const all: PenaltyRecord[] = [...PENALTIES, ...extra];
+
+  // Also merge in rows from the main OFAC civil-penalties listing page, scraped
+  // on every GitHub Actions run and committed to data/ofac-cache.json. That page
+  // is far more current than the narrow "additional select settlement agreements"
+  // archive page the Redis sync above covers — it's how new penalties (e.g. ones
+  // announced this week) show up here without waiting on the archive page to be
+  // updated by OFAC, which can lag by days or never happen for some entries.
+  const cache = await fetchOfacCache().catch(() => null);
+  const knownUrls = new Set([...PENALTIES, ...extra].map(p => p.sourceUrl));
+  const fromCache = cache
+    ? civilPenaltiesToPenaltyRecords(cache.civilPenalties).filter(p => !knownUrls.has(p.sourceUrl))
+    : [];
+
+  const all: PenaltyRecord[] = [...PENALTIES, ...extra, ...fromCache];
 
   const records = yearParam
     ? all.filter(p => p.year === Number(yearParam)).sort((a, b) => b.date.localeCompare(a.date))

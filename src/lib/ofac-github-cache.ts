@@ -10,6 +10,7 @@
  */
 
 import type { Article } from "./types";
+import type { PenaltyRecord } from "./penalties-data";
 
 // ── Interfaces ─────────────────────────────────────────────────────────────
 
@@ -143,6 +144,57 @@ export function civilPenaltiesToArticles(penalties: OfacCivilPenalty[], startId 
           : `The action was recorded on ${row.date}.`,
       ],
       source: "OFAC Civil Penalties and Enforcement Information",
+      sourceUrl: row.pdfUrl || "https://ofac.treasury.gov/civil-penalties-and-enforcement-information",
+    };
+  });
+}
+
+// ── Civil-penalties → dedicated Penalties table records ─────────────────────
+//
+// The "additional select settlement agreements" archive page (scraped by
+// penalties-fetcher.ts for the dedicated table) is a narrow legacy list that
+// OFAC doesn't always update with every new settlement. The MAIN civil
+// penalties listing page (https://ofac.treasury.gov/civil-penalties-and-enforcement-information)
+// is scraped on every GitHub Actions run and is far more current — it's what
+// already caught entries like FTI Consulting before the archive page did.
+// Converting these rows into PenaltyRecord[] gives the dedicated table a
+// second, always-fresh source with no extra OFAC fetch (reuses this cache).
+
+function mediaIdFromPdfUrl(url: string): string {
+  const m = url.match(/\/media\/(\d+)\//);
+  return m ? m[1] : "";
+}
+
+function civilPenaltyAmount(amountStr: string): number {
+  const n = parseFloat(amountStr.replace(/[^0-9.]/g, ""));
+  return Number.isFinite(n) ? n : 0;
+}
+
+function mdyToIso(dateStr: string): string {
+  const m = dateStr.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
+  return m ? `${m[3]}-${m[1]}-${m[2]}` : "";
+}
+
+/** Convert OFAC cache civil-penalties rows → PenaltyRecord[] for the dedicated table. */
+export function civilPenaltiesToPenaltyRecords(penalties: OfacCivilPenalty[]): PenaltyRecord[] {
+  return penalties.map(row => {
+    const iso = mdyToIso(row.date);
+    const year = iso ? parseInt(iso.slice(0, 4), 10) : new Date().getFullYear();
+    const mediaId = mediaIdFromPdfUrl(row.pdfUrl);
+    const amount = civilPenaltyAmount(row.amount);
+    return {
+      id: mediaId ? `ofac-cache-media-${mediaId}` : `ofac-cache-${row.date}-${row.name}`.replace(/\s+/g, "-"),
+      year,
+      date: iso || `${year}-01-01`,
+      institution: row.name,
+      type: "Corp",
+      regulator: "OFAC",
+      program: "Sanctions",
+      amount,
+      amountDisplay: row.amount.startsWith("$") ? row.amount : `$${row.amount}`,
+      currency: "USD",
+      violation: `Civil monetary penalty for apparent violations of OFAC-administered sanctions programs${row.count ? ` (${row.count})` : ""} — see settlement document for full details.`,
+      jurisdiction: "US",
       sourceUrl: row.pdfUrl || "https://ofac.treasury.gov/civil-penalties-and-enforcement-information",
     };
   });
