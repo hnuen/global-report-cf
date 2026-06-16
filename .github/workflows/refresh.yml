@@ -45,10 +45,14 @@ jobs:
       - name: Call Gemini + save enriched briefing
         # Gemini with Google Search grounding takes 30-90s — too slow for CF's 30s wall-clock limit.
         # We run it here (8-min GitHub Actions timeout) and POST the result to /api/save-briefing.
+        # GITHUB_TOKEN commits scraped OFAC data to data/ofac-cache.json so the CF app
+        # can read it via raw.githubusercontent.com (ofac.treasury.gov blocks CF IPs).
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           APP_URL: ${{ secrets.APP_URL }}
           SAVE_BRIEFING_SECRET: ${{ secrets.SAVE_BRIEFING_SECRET }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
         run: node .github/scripts/gemini-refresh.mjs
 
   monitor:

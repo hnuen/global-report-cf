@@ -13,6 +13,8 @@
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const APP_URL        = (process.env.APP_URL || "").replace(/\/$/, "");
 const SAVE_SECRET    = process.env.SAVE_BRIEFING_SECRET || "";
+const GITHUB_TOKEN   = process.env.GITHUB_TOKEN || "";
+const GITHUB_REPO    = process.env.GITHUB_REPOSITORY || ""; // auto-set by Actions: "owner/repo"
 
 if (!GEMINI_API_KEY) { console.error("Missing GEMINI_API_KEY"); process.exit(1); }
 if (!APP_URL)        { console.error("Missing APP_URL");        process.exit(1); }
@@ -101,6 +103,51 @@ const penaltiesHtml = await fetchOfac("https://ofac.treasury.gov/civil-penalties
 const civilPenalties = penaltiesHtml ? parseCivilPenalties(penaltiesHtml) : [];
 console.log(`[gemini-refresh] Civil penalties parsed: ${civilPenalties.length} rows`);
 civilPenalties.forEach(r => console.log(`  ${r.date} — ${r.name}: $${r.amount}`));
+
+// ── Commit scraped OFAC data to repo as a cache file ──────────────────────
+// The app (CF Workers) can't reach ofac.treasury.gov directly (IP blocked).
+// Committing to the repo lets the app read fresh OFAC data via raw.githubusercontent.com.
+async function commitOfacCache(recentActions, civilPenalties) {
+  if (!GITHUB_TOKEN || !GITHUB_REPO) {
+    console.warn("[ofac-cache] Missing GITHUB_TOKEN or GITHUB_REPOSITORY — skipping cache commit");
+    return;
+  }
+  const path = "data/ofac-cache.json";
+  const content = JSON.stringify({
+    updatedAt: new Date().toISOString(),
+    recentActions,
+    civilPenalties,
+  }, null, 2);
+  const encoded = Buffer.from(content).toString("base64");
+
+  // Fetch existing file SHA (required by GitHub API for updates)
+  const apiUrl = `https://api.github.com/repos/${GITHUB_REPO}/contents/${path}`;
+  const headers = {
+    "Authorization": `token ${GITHUB_TOKEN}`,
+    "Accept": "application/vnd.github+json",
+    "Content-Type": "application/json",
+  };
+  let sha;
+  try {
+    const existing = await fetch(apiUrl, { headers });
+    if (existing.ok) sha = (await existing.json()).sha;
+  } catch { /* new file — no SHA needed */ }
+
+  const body = {
+    message: `chore: update OFAC cache [skip ci]`,
+    content: encoded,
+    ...(sha ? { sha } : {}),
+  };
+  const res = await fetch(apiUrl, { method: "PUT", headers, body: JSON.stringify(body) });
+  if (res.ok) {
+    console.log(`[ofac-cache] ✅ Committed ${recentActions.length} recent-actions + ${civilPenalties.length} penalties to ${path}`);
+  } else {
+    const err = await res.text();
+    console.warn(`[ofac-cache] Commit failed (${res.status}): ${err.slice(0, 200)}`);
+  }
+}
+
+await commitOfacCache(recentActions, civilPenalties);
 
 // ── Build fallback briefing from scraped data (when Gemini fails) ──────────
 function buildFallbackBriefing(recentActions, civilPenalties) {
@@ -288,25 +335,43 @@ const geminiBody = {
   generationConfig: { temperature: 0.2, maxOutputTokens: 8192 },
 };
 
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
 let geminiRes;
 let modelUsed;
 for (const model of GEMINI_MODELS) {
-  try {
-    geminiRes = await callGemini(model, geminiBody);
-    modelUsed = model;
-    if (geminiRes.ok) break;
-    const err = await geminiRes.text();
-    console.error(`[gemini-refresh] ${model} error ${geminiRes.status}: ${err.slice(0, 300)}`);
-    // 403 = key issue (leaked/invalid) — same key used for all models, no point retrying
-    if (geminiRes.status === 403) {
-      console.error(`[gemini-refresh] 403 on API key — skipping fallback models`);
+  // Each model gets up to 2 attempts — on 429 wait 65s for the RPM window to reset
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    try {
+      geminiRes = await callGemini(model, geminiBody);
+      modelUsed = model;
+      if (geminiRes.ok) break;
+      const err = await geminiRes.text();
+      console.error(`[gemini-refresh] ${model} attempt ${attempt} error ${geminiRes.status}: ${err.slice(0, 200)}`);
+
+      if (geminiRes.status === 403) {
+        // Key issue — same key for all models, no point retrying anything
+        console.error(`[gemini-refresh] 403 on API key — aborting`);
+        geminiRes = null;
+        break;
+      }
+      if (geminiRes.status === 429 && attempt === 1) {
+        // Rate limit — wait 65s for the per-minute window to reset, then retry same model
+        console.warn(`[gemini-refresh] 429 rate limit on ${model} — waiting 65s before retry`);
+        await sleep(65_000);
+        geminiRes = null;
+        continue; // retry same model
+      }
+      // Other error or second 429 — move to next model
+      geminiRes = null;
+      break;
+    } catch (e) {
+      console.error(`[gemini-refresh] ${model} attempt ${attempt} threw:`, e.message);
+      geminiRes = null;
       break;
     }
-    geminiRes = null;
-  } catch (e) {
-    console.error(`[gemini-refresh] ${model} fetch threw:`, e.message);
-    geminiRes = null;
   }
+  if (geminiRes?.ok) break; // success — stop trying models
 }
 
 if (!geminiRes?.ok) {

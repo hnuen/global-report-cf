@@ -8,6 +8,7 @@ import { getHistoricalForSection, getRecentBySource } from "./historical-article
 import type { Briefing, Section } from "./types";
 import { enrichArticlesWithBriefs } from "./brief-generator";
 import { loadArticleLibrary, saveArticlesToLibrary } from "./article-library";
+import { fetchOfacCache, recentActionsToArticles, civilPenaltiesToArticles } from "./ofac-github-cache";
 
 // No module-level singletons — always read env vars fresh on each invocation
 export async function loadBriefing(): Promise<Briefing | null> {
@@ -68,6 +69,28 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
         console.log(`[orchestrator] Added ${historical.length} historical articles to ${sec} (was ${currentCount})`);
       }
     }
+  }
+
+  // ── GitHub OFAC cache — inject fresh scraped data committed by GH Actions ──
+  // CF Workers can't reach ofac.treasury.gov (IP blocked). GH Actions scrapes it
+  // and commits data/ofac-cache.json; we read it via raw.githubusercontent.com.
+  // Only inject entries not already covered by Gemini/official sources (dedup by sourceUrl).
+  try {
+    const ofacCache = await fetchOfacCache();
+    if (ofacCache) {
+      const existingUrls = new Set(briefing.articles.map(a => a.sourceUrl).filter(Boolean));
+      const cachedActionArticles = recentActionsToArticles(ofacCache.recentActions)
+        .filter(a => !existingUrls.has(a.sourceUrl));
+      const cachedPenaltyArticles = civilPenaltiesToArticles(ofacCache.civilPenalties)
+        .filter(a => !existingUrls.has(a.sourceUrl));
+      const injected = [...cachedActionArticles, ...cachedPenaltyArticles];
+      if (injected.length > 0) {
+        briefing.articles = [...briefing.articles, ...injected];
+        console.log(`[orchestrator] Injected ${cachedActionArticles.length} recent-actions + ${cachedPenaltyArticles.length} penalties from GitHub OFAC cache`);
+      }
+    }
+  } catch (e) {
+    console.warn("[orchestrator] GitHub OFAC cache fetch failed (non-fatal):", String(e).slice(0, 80));
   }
 
   // ── Library backfill — persisted Gemini-enriched articles ─────────────────
