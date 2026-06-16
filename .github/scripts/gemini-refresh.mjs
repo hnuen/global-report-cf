@@ -180,6 +180,10 @@ function parseCivilPenalties(html) {
   return rows;
 }
 
+// Load existing cache FIRST — used for change detection on all three sources
+const existingCache = await loadExistingCache();
+const cachedPrograms = existingCache?.programs ?? {};
+
 console.log("[gemini-refresh] Fetching OFAC recent-actions listing...");
 const recentActionsHtml = await fetchOfac("https://ofac.treasury.gov/recent-actions");
 const recentActions = recentActionsHtml ? parseRecentActions(recentActionsHtml) : [];
@@ -198,10 +202,6 @@ const programsIndexHtml = await fetchOfac("https://ofac.treasury.gov/sanctions-p
 const programsList = programsIndexHtml ? parseProgramsIndex(programsIndexHtml) : [];
 console.log(`[gemini-refresh] Programs index: ${programsList.length} programs found`);
 
-// Load existing cache for change detection
-const existingCache = await loadExistingCache();
-const cachedPrograms = existingCache?.programs ?? {};
-
 // Fetch only programs whose lastUpdated date changed (cap at 15 per run)
 const changedPrograms = programsList.filter(p =>
   p.lastUpdated && p.lastUpdated !== (cachedPrograms[p.slug]?.lastUpdated ?? "")
@@ -209,7 +209,4 @@ const changedPrograms = programsList.filter(p =>
 
 console.log(`[gemini-refresh] Programs with changes: ${changedPrograms.length} (of ${programsList.length} total)`);
 changedPrograms.forEach(p =>
-  console.log(`  ${p.slug}: ${cachedPrograms[p.slug]?.lastUpdated ?? "(new)"} → ${p.lastUpdated}`)
-);
-
-// Fetch and
+  console.log(`  ${p.slug}: ${cachedPrograms[p.slug]?.lastUpdated ?? "(new)"} →

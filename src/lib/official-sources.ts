@@ -1,4 +1,4 @@
-// v5 - fix RSS link extraction date format Fed filter
+// v6 - ETag/Last-Modified conditional requests to skip unchanged sources
 /**
  * Official Source Scraper
  *
@@ -14,6 +14,8 @@
  *   - UK OFSI (gov.uk/ofsi)
  */
 
+import { loadETagStore, flushETagStore, getConditionalHeaders, recordETagResponse, type ETagStore } from "./source-etag-cache";
+
 export interface OfficialSource {
   name: string;
   url: string;
@@ -22,10 +24,16 @@ export interface OfficialSource {
   error?: string;
 }
 
-// ── Fetch a single URL with timeout ──────────────────────────────────────────
-async function fetchWithTimeout(url: string, timeoutMs = 4000): Promise<string> {
+// ── Fetch a single URL with timeout + optional ETag conditional headers ──────
+// Returns null on 304 Not Modified (caller should use cached articles instead).
+async function fetchWithTimeout(
+  url: string,
+  timeoutMs = 4000,
+  etagStore?: ETagStore,
+): Promise<string | null> {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
+  const conditionalHeaders = etagStore ? getConditionalHeaders(url, etagStore) : {};
   try {
     const res = await fetch(url, {
       signal: controller.signal,
@@ -34,9 +42,14 @@ async function fetchWithTimeout(url: string, timeoutMs = 4000): Promise<string> 
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,application/rss+xml;q=0.8,*/*;q=0.7",
         "Accept-Language": "en-US,en;q=0.9",
         "Cache-Control": "no-cache",
+        ...conditionalHeaders,
       },
     });
+    // 304 Not Modified — source unchanged since last fetch
+    if (res.status === 304) return null;
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    // Record ETag/Last-Modified for next run
+    if (etagStore) recordETagResponse(url, res, etagStore);
     return await res.text();
   } finally {
     clearTimeout(timer);
@@ -409,77 +422,8 @@ export async function fetchOfficialSources(
   }
 
   // Hard cap: CF Workers allows 50 subrequests per invocation.
-  // Redis overhead (library load + save) consumes ~2-3 subrequests.
-  // Cap at 44 to guarantee Redis save succeeds (44 + 3 Redis = 47 < 50).
-  // Phase 1 (~19) and Phase 2 (~24) are both well under this cap.
-  const MAX_SOURCES = 44;
+  // Budget breakdown: N HTTP sources + ~3 Redis (library/save) + 2 ETag Redis (load/flush) = N+5.
+  // Cap at 42 so 42+5=47 < 50. Phase groups (11/8/11/26) are all well under this cap.
+  const MAX_SOURCES = 42;
   if (allSources.length > MAX_SOURCES) {
-    console.warn(`[official] Source count ${allSources.length} exceeds safe budget of ${MAX_SOURCES} — truncating to prevent Redis save failure`);
-    allSources = allSources.slice(0, MAX_SOURCES);
-  }
-
-  console.log(`[official] Section filter: ${section ?? "all"} → ${allSources.length}/${allSourcesUnfiltered.length} sources`);
-  checkSubrequestBudget(allSources);
-  const MASTER_TIMEOUT = 8000;  // 8s — enough for gov sites; CF 30s wall-clock leaves room for LLM+save
-
-  const fetchOne = async (source: typeof allSources[0]) => {
-    try {
-      console.log(`[official] Fetching ${source.name}...`);
-      const html = await fetchWithTimeout(source.url, (source as any).official ? 6000 : 4000);
-      const content = stripHTML(html);
-      console.log(`[official] ✅ ${source.name} — ${content.length} chars`);
-      return { name: source.name, url: source.url, content, fetchedAt: now };
-    } catch (e) {
-      console.warn(`[official] ❌ ${source.name} failed: ${e}`);
-      return { name: source.name, url: source.url, content: "", fetchedAt: now, error: String(e) };
-    }
-  };
-
-  // Fetch all in parallel but race against master timeout
-  const fetchAll = Promise.allSettled(allSources.map(fetchOne));
-
-  const timeoutPromise = new Promise<typeof results>((resolve) =>
-    setTimeout(() => {
-      console.warn("[official] Master timeout hit — returning partial results");
-      resolve(allSources.map((s) => ({
-        status: "fulfilled" as const,
-        value: { name: s.name, url: s.url, content: "", fetchedAt: now, error: "timeout" }
-      })));
-    }, MASTER_TIMEOUT)
-  );
-
-  const results = await Promise.race([fetchAll, timeoutPromise]);
-
-  return results.map((r, i) =>
-    r.status === "fulfilled"
-      ? r.value
-      : {
-          name: allSources[i].name,
-          url: allSources[i].url,
-          content: "",
-          fetchedAt: now,
-          error: String((r as PromiseRejectedResult).reason),
-        }
-  );
-}
-
-// ── Format sources for injection into LLM prompt ─────────────────────────────
-export function formatSourcesForPrompt(sources: OfficialSource[]): string {
-  const successful = sources.filter(s => s.content.length > 100);
-  if (successful.length === 0) return "";
-
-  return `
-OFFICIAL GOVERNMENT SOURCES — fetched directly right now:
-Use this raw data as the primary source for your briefing. Do not ignore or contradict it.
-
-${successful.map(s => `
---- ${s.name} ---
-URL: ${s.url}
-Fetched: ${s.fetchedAt}
-Content:
-${s.content}
-`).join("\n")}
-
-END OF OFFICIAL SOURCES. Write articles based on the above real data.
-`;
-}
+    console.warn(`[offic
