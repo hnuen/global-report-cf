@@ -640,6 +640,10 @@ export default function GlobalMonitor() {
     setRefreshing(true); setError(""); setRefreshQueued(false);
     const previousUpdated = data?.lastUpdated;
     try {
+      // Fire GitHub Actions workflow in background (Gemini + full OFAC scrape, ~2-3 min)
+      // Don't await — it runs async while trigger-refresh handles the immediate fast path
+      fetch("/api/trigger-github-refresh", { method: "POST" }).catch(() => {});
+
       const res = await fetch("/api/trigger-refresh", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
