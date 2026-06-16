@@ -589,7 +589,7 @@ export default function GlobalMonitor() {
         setData(prev => {
           if (!prev) return fresh;
           const freshCount = fresh?.articles?.length ?? 0;
-          if (freshCount >= 20 && fresh.lastUpdated !== prev.lastUpdated) {
+          if (freshCount >= 5 && fresh.lastUpdated !== prev.lastUpdated) {
             console.log(`[auto-refresh] New briefing detected — ${freshCount} articles`);
             return fresh;
           }
