@@ -102,6 +102,72 @@ const civilPenalties = penaltiesHtml ? parseCivilPenalties(penaltiesHtml) : [];
 console.log(`[gemini-refresh] Civil penalties parsed: ${civilPenalties.length} rows`);
 civilPenalties.forEach(r => console.log(`  ${r.date} — ${r.name}: $${r.amount}`));
 
+// ── Build fallback briefing from scraped data (when Gemini fails) ──────────
+function buildFallbackBriefing(recentActions, civilPenalties) {
+  const nowStr = new Date().toLocaleString("en-US", {
+    month: "long", day: "numeric", year: "numeric",
+    hour: "2-digit", minute: "2-digit", timeZoneName: "short",
+    timeZone: "America/New_York",
+  });
+
+  const articles = [];
+  let id = 1;
+
+  // Recent-action entries → sanctions articles
+  for (const entry of recentActions.slice(0, 10)) {
+    articles.push({
+      id: id++,
+      section: "sanctions",
+      category: "OFAC",
+      region: "United States",
+      impact: "high",
+      date: entry.date || "",
+      headline: entry.title,
+      body: [
+        `OFAC published a new action on ${entry.date || "an unspecified date"}: "${entry.title}". Full details are available at the official OFAC website.`,
+      ],
+      source: "OFAC Recent Actions",
+      sourceUrl: entry.url,
+    });
+  }
+
+  // Civil penalties rows → penalties articles
+  for (const row of civilPenalties.slice(0, 8)) {
+    const amountStr = row.amount.startsWith("$") ? row.amount : `$${row.amount}`;
+    articles.push({
+      id: id++,
+      section: "penalties",
+      category: "OFAC Enforcement",
+      region: "United States",
+      impact: "high",
+      date: row.date || "",
+      headline: `OFAC Penalizes ${row.name} ${amountStr} for Sanctions Violations`,
+      body: [
+        `The Office of Foreign Assets Control (OFAC) assessed a civil monetary penalty of ${amountStr} against ${row.name} for apparent violations of OFAC-administered sanctions programs.`,
+        row.pdfUrl
+          ? `The settlement agreement is available on the OFAC civil penalties page: ${row.pdfUrl}`
+          : `The action was recorded on ${row.date}.`,
+      ],
+      source: "OFAC Civil Penalties and Enforcement Information",
+      sourceUrl: row.pdfUrl || "https://ofac.treasury.gov/civil-penalties-and-enforcement-information",
+    });
+  }
+
+  const emptySection = { watchlist: [], keyFigures: [] };
+  return {
+    lastUpdated: `${nowStr} — Official government sources [Structured/Actions]`,
+    articles,
+    sidebar: {
+      sanctions: emptySection,
+      economics: emptySection,
+      religion:  emptySection,
+      occ:       emptySection,
+      penalties: emptySection,
+      bis:       emptySection,
+    },
+  };
+}
+
 // Build context strings for Gemini
 const recentActionsContext = recentActions.length > 0
   ? recentActions.slice(0, 15).map(e =>
@@ -244,8 +310,15 @@ for (const model of GEMINI_MODELS) {
 }
 
 if (!geminiRes?.ok) {
-  console.error("[gemini-refresh] All Gemini models failed — exiting");
-  process.exit(1);
+  console.warn("[gemini-refresh] All Gemini models failed — saving structured fallback articles");
+  const fallback = buildFallbackBriefing(recentActions, civilPenalties);
+  if (fallback.articles.length === 0) {
+    console.error("[gemini-refresh] No OFAC data fetched either — nothing to save");
+    process.exit(1);
+  }
+  console.log(`[gemini-refresh] Fallback: ${fallback.articles.length} structured articles from scraped OFAC data`);
+  await saveBriefingWithRetry(fallback);
+  process.exit(0);
 }
 console.log(`[gemini-refresh] Using model: ${modelUsed}`);
 
@@ -263,8 +336,13 @@ const clean = rawText.replace(/```json|```/g, "").trim();
 const s = clean.indexOf("{");
 const e = clean.lastIndexOf("}");
 if (s === -1 || e === -1) {
-  console.error("[gemini-refresh] Could not find JSON in Gemini response");
+  console.error("[gemini-refresh] Could not find JSON in Gemini response — falling back to structured articles");
   console.error("Raw text:", rawText.slice(0, 500));
+  const fallback = buildFallbackBriefing(recentActions, civilPenalties);
+  if (fallback.articles.length > 0) {
+    await saveBriefingWithRetry(fallback);
+    process.exit(0);
+  }
   process.exit(1);
 }
 
@@ -277,8 +355,13 @@ try {
   }));
   briefing.lastUpdated += " [Gemini/Actions]";
 } catch (parseErr) {
-  console.error("[gemini-refresh] JSON parse failed:", parseErr);
+  console.error("[gemini-refresh] JSON parse failed — falling back to structured articles:", parseErr);
   console.error("Raw text slice:", clean.slice(s, s + 500));
+  const fallback = buildFallbackBriefing(recentActions, civilPenalties);
+  if (fallback.articles.length > 0) {
+    await saveBriefingWithRetry(fallback);
+    process.exit(0);
+  }
   process.exit(1);
 }
 
@@ -291,35 +374,60 @@ const ofacArticles = briefing.articles?.filter(a =>
 console.log(`[gemini-refresh] OFAC recent-action articles: ${ofacArticles.length}`);
 ofacArticles.forEach(a => console.log(`  → ${a.date}: ${a.headline} (${a.sourceUrl})`));
 
-// ── POST to /api/save-briefing (retry once on failure) ─────────────────────
-console.log(`[gemini-refresh] Saving to ${APP_URL}/api/save-briefing ...`);
+// ── Inject any recent-action articles Gemini missed (dedup by sourceUrl) ───
+const coveredUrls = new Set(
+  (briefing.articles ?? []).map(a => a.sourceUrl).filter(Boolean)
+);
+const missingEntries = recentActions.filter(e => !coveredUrls.has(e.url));
+if (missingEntries.length > 0) {
+  console.log(`[gemini-refresh] Injecting ${missingEntries.length} recent-action entries Gemini missed`);
+  const baseId = (briefing.articles?.length ?? 0) + 1;
+  const injected = missingEntries.map((entry, i) => ({
+    id: baseId + i,
+    section: "sanctions",
+    category: "OFAC",
+    region: "United States",
+    impact: "high",
+    date: entry.date || "",
+    headline: entry.title,
+    body: [
+      `OFAC published a new action on ${entry.date || "an unspecified date"}: "${entry.title}". Full details are available at the official OFAC website.`,
+    ],
+    source: "OFAC Recent Actions",
+    sourceUrl: entry.url,
+  }));
+  briefing.articles = [...(briefing.articles ?? []), ...injected];
+  console.log(`[gemini-refresh] Total articles after injection: ${briefing.articles.length}`);
+}
 
-async function trySave() {
+// ── POST to /api/save-briefing (retry once on failure) ─────────────────────
+async function trySaveBriefing(payload) {
   const saveRes = await fetch(`${APP_URL}/api/save-briefing`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
       "x-save-secret": SAVE_SECRET,
     },
-    body: JSON.stringify(briefing),
+    body: JSON.stringify(payload),
   });
   const saveData = await saveRes.json().catch(() => ({}));
   return { saveRes, saveData };
 }
 
-let { saveRes, saveData } = await trySave();
-
-if (!saveRes.ok || !saveData.ok) {
-  console.warn(`[gemini-refresh] Save attempt 1 failed (${saveRes.status}): ${JSON.stringify(saveData)} — retrying in 5s`);
-  await new Promise(r => setTimeout(r, 5000));
-  ({ saveRes, saveData } = await trySave());
+async function saveBriefingWithRetry(payload) {
+  console.log(`[gemini-refresh] Saving to ${APP_URL}/api/save-briefing ...`);
+  let { saveRes, saveData } = await trySaveBriefing(payload);
+  if (!saveRes.ok || !saveData.ok) {
+    console.warn(`[gemini-refresh] Save attempt 1 failed (${saveRes.status}): ${JSON.stringify(saveData)} — retrying in 5s`);
+    await new Promise(r => setTimeout(r, 5000));
+    ({ saveRes, saveData } = await trySaveBriefing(payload));
+  }
+  if (!saveRes.ok || !saveData.ok) {
+    console.error(`[gemini-refresh] Save failed after retry (${saveRes.status}): ${JSON.stringify(saveData)}`);
+    console.error(`[gemini-refresh] Briefing had ${payload.articles?.length} articles, lastUpdated: ${payload.lastUpdated}`);
+    process.exit(1);
+  }
+  console.log(`[gemini-refresh] ✅ Saved — ${saveData.articleCount} articles, lastUpdated: ${saveData.lastUpdated}`);
 }
 
-if (!saveRes.ok || !saveData.ok) {
-  console.error(`[gemini-refresh] Save failed after retry (${saveRes.status}): ${JSON.stringify(saveData)}`);
-  // Log briefing summary so we know what would have been saved
-  console.error(`[gemini-refresh] Briefing had ${briefing.articles?.length} articles, lastUpdated: ${briefing.lastUpdated}`);
-  process.exit(1);
-}
-
-console.log(`[gemini-refresh] ✅ Saved successfully — ${saveData.articleCount} articles, lastUpdated: ${saveData.lastUpdated}`);
+await saveBriefingWithRetry(briefing);
