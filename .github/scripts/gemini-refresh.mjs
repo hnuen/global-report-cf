@@ -346,9 +346,24 @@ if (s === -1 || e === -1) {
   process.exit(1);
 }
 
+function parseGeminiJSON(text) {
+  // Attempt 1: parse as-is
+  try { return JSON.parse(text); } catch (_) {}
+  // Attempt 2: strip control chars that break JSON string literals
+  // (\n \r \t must be escaped inside strings; they're valid whitespace BETWEEN tokens)
+  // Strategy: replace every raw control char globally with a space —
+  // JSON structural whitespace tolerates spaces, and string content loses
+  // line breaks but stays readable.
+  try { return JSON.parse(text.replace(/[\x00-\x1F\x7F]/g, " ")); } catch (_) {}
+  // Attempt 3: also collapse runs of whitespace
+  try { return JSON.parse(text.replace(/[\x00-\x1F\x7F]+/g, " ")); } catch (e) {
+    throw e; // surface the final error
+  }
+}
+
 let briefing;
 try {
-  briefing = JSON.parse(clean.slice(s, e + 1));
+  briefing = parseGeminiJSON(clean.slice(s, e + 1));
   briefing.articles = briefing.articles.map(a => ({
     ...a,
     body: Array.isArray(a.body) ? a.body : String(a.body).split("\n").filter(Boolean),
