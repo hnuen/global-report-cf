@@ -382,7 +382,7 @@ if (!geminiRes?.ok) {
     process.exit(1);
   }
   console.log(`[gemini-refresh] Fallback: ${fallback.articles.length} structured articles from scraped OFAC data`);
-  await saveBriefingWithRetry(fallback);
+  await saveBriefingWithRetry(fallback, true);
   process.exit(0);
 }
 console.log(`[gemini-refresh] Using model: ${modelUsed}`);
@@ -405,7 +405,7 @@ if (s === -1 || e === -1) {
   console.error("Raw text:", rawText.slice(0, 500));
   const fallback = buildFallbackBriefing(recentActions, civilPenalties);
   if (fallback.articles.length > 0) {
-    await saveBriefingWithRetry(fallback);
+    await saveBriefingWithRetry(fallback, true);
     process.exit(0);
   }
   process.exit(1);
@@ -439,7 +439,7 @@ try {
   console.error("Raw text slice:", clean.slice(s, s + 500));
   const fallback = buildFallbackBriefing(recentActions, civilPenalties);
   if (fallback.articles.length > 0) {
-    await saveBriefingWithRetry(fallback);
+    await saveBriefingWithRetry(fallback, true);
     process.exit(0);
   }
   process.exit(1);
@@ -481,26 +481,28 @@ if (missingEntries.length > 0) {
 }
 
 // ── POST to /api/save-briefing (retry once on failure) ─────────────────────
-async function trySaveBriefing(payload) {
+// merge=true: keep articles from sections NOT covered by this payload (used for fallback).
+// merge=false (default): full replace — used when Gemini succeeds and covers all sections.
+async function trySaveBriefing(payload, merge = false) {
   const saveRes = await fetch(`${APP_URL}/api/save-briefing`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
       "x-save-secret": SAVE_SECRET,
     },
-    body: JSON.stringify(payload),
+    body: JSON.stringify({ ...payload, merge }),
   });
   const saveData = await saveRes.json().catch(() => ({}));
   return { saveRes, saveData };
 }
 
-async function saveBriefingWithRetry(payload) {
-  console.log(`[gemini-refresh] Saving to ${APP_URL}/api/save-briefing ...`);
-  let { saveRes, saveData } = await trySaveBriefing(payload);
+async function saveBriefingWithRetry(payload, merge = false) {
+  console.log(`[gemini-refresh] Saving to ${APP_URL}/api/save-briefing (merge=${merge}) ...`);
+  let { saveRes, saveData } = await trySaveBriefing(payload, merge);
   if (!saveRes.ok || !saveData.ok) {
     console.warn(`[gemini-refresh] Save attempt 1 failed (${saveRes.status}): ${JSON.stringify(saveData)} — retrying in 5s`);
     await new Promise(r => setTimeout(r, 5000));
-    ({ saveRes, saveData } = await trySaveBriefing(payload));
+    ({ saveRes, saveData } = await trySaveBriefing(payload, merge));
   }
   if (!saveRes.ok || !saveData.ok) {
     console.error(`[gemini-refresh] Save failed after retry (${saveRes.status}): ${JSON.stringify(saveData)}`);

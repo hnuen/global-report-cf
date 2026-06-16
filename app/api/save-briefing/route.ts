@@ -16,16 +16,38 @@ export async function POST(request: NextRequest) {
   }
 
   try {
-    const briefing = await request.json() as Briefing;
+    const body = await request.json() as Briefing & { merge?: boolean };
+    const { merge, ...briefing } = body as any;
     if (!briefing?.articles?.length) {
       return NextResponse.json({ error: "Invalid briefing — no articles" }, { status: 400 });
     }
 
     const storage = await buildStorageManager();
-    await storage.save(briefing);
+
+    // merge=true: only replace sections present in the new briefing, keep others from Redis.
+    // Used by the structured fallback (which only covers sanctions + penalties) so it doesn't
+    // wipe economics/religion/occ/bis articles from a previous successful Gemini run.
+    let toSave = briefing as Briefing;
+    if (merge) {
+      const { loadBriefing } = await import("@/src/lib/orchestrator");
+      const existing = await loadBriefing();
+      if (existing?.articles?.length) {
+        const newSections = new Set(briefing.articles.map((a: any) => a.section));
+        const keptArticles = existing.articles.filter((a: any) => !newSections.has(a.section));
+        toSave = {
+          ...existing,
+          ...briefing,
+          articles: [...briefing.articles, ...keptArticles],
+          lastUpdated: briefing.lastUpdated,
+        };
+        console.log(`[save-briefing] Merge: ${briefing.articles.length} new + ${keptArticles.length} kept from existing`);
+      }
+    }
+
+    await storage.save(toSave);
     const health = storage.getHealth();
-    console.log(`[save-briefing] Saved ${briefing.articles.length} articles, lastUpdated: ${briefing.lastUpdated}`);
-    return NextResponse.json({ ok: true, articleCount: briefing.articles.length, lastUpdated: briefing.lastUpdated, health });
+    console.log(`[save-briefing] Saved ${toSave.articles.length} articles, lastUpdated: ${toSave.lastUpdated}`);
+    return NextResponse.json({ ok: true, articleCount: toSave.articles.length, lastUpdated: toSave.lastUpdated, health });
   } catch (e) {
     console.error("[save-briefing]", String(e));
     return NextResponse.json({ error: String(e) }, { status: 500 });
