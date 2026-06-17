@@ -1,0 +1,103 @@
+{
+  "updatedAt": "2026-06-17T01:39:00.127Z",
+  "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260611",
+      "code": "20260611",
+      "title": "Cuba Designation; Russia-related Designations Removals and Designation Update; Issuance of Amended Russia-related General Licenses and Frequently Asked Questions",
+      "date": "June 11, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260610",
+      "code": "20260610",
+      "title": "Non-Proliferation Designations; Iran-related Designations; Issuance of Venezuela-related Amended General Licenses and Frequently Asked Questions",
+      "date": "June 10, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260605",
+      "code": "20260605",
+      "title": "Iran-related Designations; Counter Terrorism Designations Updates",
+      "date": "June 05, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260604",
+      "code": "20260604",
+      "title": "Cuba Designations; Issuance of Cuba-related Frequently Asked Question",
+      "date": "June 04, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260602",
+      "code": "20260602",
+      "title": "Counter Terrorism and Iran-related Designations; Democratic Republic of the Congo-related Designations; Issuance of Iran-related Frequently Asked Question",
+      "date": "June 02, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260601",
+      "code": "20260601",
+      "title": "Publication of Introduction to OFAC Guide",
+      "date": "June 01, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260601_33",
+      "code": "20260601_33",
+      "title": "Settlement Agreement between the U.S. Department of the Treasury&#039;s Office of Foreign Assets Control, and FTI Consulting, Inc.",
+      "date": "June 01, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260529",
+      "code": "20260529",
+      "title": "Counter Terrorism Designations; Issuance of Amended Iran-related Frequently Asked Question",
+      "date": "May 29, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260528_33",
+      "code": "20260528_33",
+      "title": "Iran-related Designations; Issuance of Russia-related General License and Amended Frequently Asked Questions",
+      "date": "May 28, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260528",
+      "code": "20260528",
+      "title": "Designations Removals",
+      "date": "May 28, 2026"
+    }
+  ],
+  "civilPenalties": [
+    {
+      "date": "06/01/2026",
+      "name": "FTI Consulting, Inc.",
+      "count": "1",
+      "amount": "1,050,000",
+      "pdfUrl": "/media/935651/download?inline"
+    },
+    {
+      "date": "05/18/2026",
+      "name": "Adani Enterprises Limited",
+      "count": "1",
+      "amount": "275,000,000",
+      "pdfUrl": "/media/935631/download?inline"
+    },
+    {
+      "date": "03/17/2026",
+      "name": "TradeStation Securities, Inc.",
+      "count": "1",
+      "amount": "1,110,661",
+      "pdfUrl": "/media/935351/download?inline"
+    },
+    {
+      "date": "02/25/2026",
+      "name": "An Individual",
+      "count": "1",
+      "amount": "3,777,000",
+      "pdfUrl": "/media/935041/download?inline"
+    },
+    {
+      "date": "02/12/2026",
+      "name": "IMG Academy, LLC",
+      "count": "1",
+      "amount": "1,720,000",
+      "pdfUrl": "/media/935006/download?inline"
+    }
+  ],
+  "programs": {}
+}
