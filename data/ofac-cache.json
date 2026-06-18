@@ -1,10 +1,16 @@
 {
-  "updatedAt": "2026-06-18T19:35:09.839Z",
+  "updatedAt": "2026-06-18T20:34:44.343Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260618",
       "code": "20260618",
       "title": "Counter Terrorism Designations",
+      "date": "June 18, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260618_33",
+      "code": "20260618_33",
+      "title": "Issuance of Venezuela-related General Licenses and Amended Frequently Asked Question",
       "date": "June 18, 2026"
     },
     {
@@ -54,12 +60,6 @@
       "code": "20260529",
       "title": "Counter Terrorism Designations; Issuance of Amended Iran-related Frequently Asked Question",
       "date": "May 29, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260528_33",
-      "code": "20260528_33",
-      "title": "Iran-related Designations; Issuance of Russia-related General License and Amended Frequently Asked Questions",
-      "date": "May 28, 2026"
     }
   ],
   "civilPenalties": [
