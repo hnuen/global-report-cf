@@ -3,14 +3,16 @@ name: Refresh Global Report
 on:
   schedule:
     # All times EDT (UTC-4). Free tier: 20 RPD — total below = 15 calls/day
-    # 9am, 12pm, 1pm, 5pm, 6pm ET — hourly slots outside the 30-min windows
-    - cron: '0 13,16,17,21,22 * * *'
-    # 8:30am, 9:30am, 5:30pm ET
-    - cron: '30 12,13,21 * * *'
-    # 10am–11:30am ET — every 30 min (10:00, 10:30, 11:00, 11:30)
-    - cron: '0,30 14,15 * * *'
-    # 2pm–4:30pm ET — every 30 min (2:00, 2:30, 3:00, 3:30, 4:00, 4:30)
-    - cron: '0,30 18,19,20 * * *'
+    # Minutes offset to :07/:37 (not :00/:30) to dodge GitHub Actions' top-of-hour
+    # scheduler congestion, which delays/drops runs queued at :00 and :30.
+    # 9:07am, 12:07pm, 1:07pm, 5:07pm, 6:07pm ET — hourly slots outside the 30-min windows
+    - cron: '7 13,16,17,21,22 * * *'
+    # 8:37am, 9:37am, 5:37pm ET
+    - cron: '37 12,13,21 * * *'
+    # 10:07am–11:37am ET — every 30 min (10:07, 10:37, 11:07, 11:37)
+    - cron: '7,37 14,15 * * *'
+    # 2:07pm–4:37pm ET — every 30 min (2:07, 2:37, 3:07, 3:37, 4:07, 4:37)
+    - cron: '7,37 18,19,20 * * *'
   workflow_dispatch:
     inputs:
       job:

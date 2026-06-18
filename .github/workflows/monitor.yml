@@ -2,7 +2,9 @@ name: Monitor and Alert
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    # Minute offset to :17 (not :00) to dodge GitHub Actions' top-of-hour
+    # scheduler congestion, which delays/drops runs queued at :00.
+    - cron: '17 * * * *'
   workflow_dispatch:
     inputs:
       topic:
