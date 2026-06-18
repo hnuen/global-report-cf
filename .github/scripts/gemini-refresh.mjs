@@ -471,6 +471,11 @@ occNews.slice(0, 5).forEach(e => console.log(`  ${e.date} — ${e.title} (${e.ur
 
 console.log("[gemini-refresh] Fetching Federal Reserve press releases feed...");
 const fedXml = await fetchOfac("https://www.federalreserve.gov/feeds/press_all.xml");
+console.log(`[gemini-refresh] Fed feed raw response: ${fedXml ? `${fedXml.length} chars` : "NULL (fetch failed)"}`);
+if (fedXml) console.log(`[gemini-refresh] Fed feed snippet: ${fedXml.slice(0, 300).replace(/\s+/g, " ")}`);
+const allFedItems = parseFedPressItems(fedXml);
+console.log(`[gemini-refresh] Fed feed items parsed (pre-filter): ${allFedItems.length}`);
+allFedItems.slice(0, 3).forEach(e => console.log(`  [pre-filter] ${e.date} — [${e.category}] ${e.title}`));
 const economicsNews = parseFedEconomics(fedXml);
 console.log(`[gemini-refresh] Fed economics-relevant news parsed: ${economicsNews.length} entries`);
 economicsNews.slice(0, 5).forEach(e => console.log(`  ${e.date} — ${e.title} (${e.url})`));
@@ -900,12 +905,22 @@ async function callGemini(model, body) {
   return res;
 }
 
-const geminiBody = {
-  system_instruction: { parts: [{ text: SYSTEM_PROMPT }] },
-  contents: [{ role: "user", parts: [{ text: userMsg }] }],
-  tools: [{ google_search: {} }],
-  generationConfig: { temperature: 0.2, maxOutputTokens: 8192 },
-};
+function buildGeminiBody(model) {
+  const generationConfig = { temperature: 0.2, maxOutputTokens: 65536 };
+  // gemini-2.5-flash has "thinking" enabled by default, and thinking tokens are
+  // drawn from the same maxOutputTokens budget — this can silently eat the whole
+  // budget before any visible JSON is written, truncating the response mid-object.
+  // Disable thinking for models known to support thinkingConfig.
+  if (model.includes("2.5")) {
+    generationConfig.thinkingConfig = { thinkingBudget: 0 };
+  }
+  return {
+    system_instruction: { parts: [{ text: SYSTEM_PROMPT }] },
+    contents: [{ role: "user", parts: [{ text: userMsg }] }],
+    tools: [{ google_search: {} }],
+    generationConfig,
+  };
+}
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
@@ -915,7 +930,7 @@ for (const model of GEMINI_MODELS) {
   // Each model gets up to 2 attempts — on 429 wait 65s for the RPM window to reset
   for (let attempt = 1; attempt <= 2; attempt++) {
     try {
-      geminiRes = await callGemini(model, geminiBody);
+      geminiRes = await callGemini(model, buildGeminiBody(model));
       modelUsed = model;
       if (geminiRes.ok) break;
       const err = await geminiRes.text();
@@ -967,6 +982,10 @@ const rawText = geminiData.candidates
   .trim() ?? "";
 
 console.log(`[gemini-refresh] Gemini responded — ${rawText.length} chars`);
+console.log(`[gemini-refresh] candidates: ${geminiData.candidates?.length ?? 0}, finishReason: ${geminiData.candidates?.[0]?.finishReason ?? "n/a"}, promptFeedback: ${JSON.stringify(geminiData.promptFeedback ?? {})}`);
+if (geminiData.usageMetadata) {
+  console.log(`[gemini-refresh] usage — prompt: ${geminiData.usageMetadata.promptTokenCount}, candidates: ${geminiData.usageMetadata.candidatesTokenCount}, total: ${geminiData.usageMetadata.totalTokenCount}`);
+}
 
 // ── Parse briefing JSON ────────────────────────────────────────────────────
 const clean = rawText.replace(/```json|```/g, "").trim();
@@ -974,7 +993,9 @@ const s = clean.indexOf("{");
 const e = clean.lastIndexOf("}");
 if (s === -1 || e === -1) {
   console.error("[gemini-refresh] Could not find JSON in Gemini response — falling back to structured articles");
-  console.error("Raw text:", rawText.slice(0, 500));
+  console.error(`[gemini-refresh] finishReason was: ${geminiData.candidates?.[0]?.finishReason ?? "n/a"}`);
+  console.error("Raw text (first 500 chars):", rawText.slice(0, 500));
+  console.error("Raw text (last 500 chars):", rawText.slice(-500));
   const fallback = buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices, europaNews, unNotices, bbcNews, ajNews, occNews, economicsNews, bisNews);
   if (fallback.articles.length > 0) {
     await saveBriefingWithRetry(fallback, true);
