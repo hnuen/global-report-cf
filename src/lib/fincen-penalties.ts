@@ -29,7 +29,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:80000000, penaltyDisplay:"$80M",
     agencies:["FinCEN","SEC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to maintain effective AML program; failed to file SARs for suspicious securities transactions",
-    program:"BSA / AML / Securities", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Securities", sourceUrl:"https://www.fincen.gov/system/files/2026-03/Canaccord-Consent-Order-No-2026-01.pdf",
   },
   {
     id:"F2025-02", date:"2025-12-09", year:2025,
@@ -37,7 +37,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:7700000, penaltyDisplay:"$7.7M",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to register as MSB; failure to implement effective AML program for P2P crypto marketplace",
-    program:"BSA / AML / Crypto", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Crypto", sourceUrl:"https://www.fincen.gov/system/files/2025-12/PaxfulConsentOrder.pdf",
   },
   {
     id:"F2025-01", date:"2025-01-31", year:2025,
@@ -45,7 +45,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:37000000, penaltyDisplay:"$37M",
     agencies:["FinCEN","DOJ"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — first action against armored car company; failed to register as MSB; moved ~$800M in bulk currency without effective AML controls",
-    program:"BSA / AML / MSB", sourceUrl:"https://www.fincen.gov/news/news-releases/fincen-announces-37000000-civil-money-penalty-against-brinks-global-services-usa",
+    program:"BSA / AML / MSB", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2025-02-06/FinCEN-Brinks-FINALv508.pdf",
     notes:"FinCEN-only $37M; total resolution $42M including DOJ forfeiture",
   },
   {
@@ -54,7 +54,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:650000, penaltyDisplay:"$650K",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program at casino",
-    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2024-10-23/FinCEN-Consent-Order-Lake-Elsinore-508.pdf",
   },
   {
     id:"F2024-02", date:"2024-10-10", year:2024,
@@ -62,7 +62,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:1300000000, penaltyDisplay:"$1.3B",
     agencies:["FinCEN","OCC","DOJ","Federal Reserve"], voluntaryDisclosure:false, egregious:true,
     violation:"BSA violations — processed $18.3T in transactions with systemic AML failures; three money laundering networks moved $670M+; monitored only 8% of transaction volume",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/news-releases/fincen-takes-historic-13-billion-enforcement-action-against-td-bank",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2024-10-10/FinCEN-TD-Bank-Consent-Order-508FINAL.pdf",
     notes:"Largest BSA penalty in US history; $3.09B total with DOJ/OCC",
   },
   {
@@ -71,7 +71,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:100000, penaltyDisplay:"$100K",
     agencies:["FinCEN","NCUA"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — BSA compliance officer failure to implement effective AML program at credit union",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2024-01-31/FinCEN_Consent_Order_2024-01_FINAL508.pdf",
   },
   {
     id:"F2023-04", date:"2023-11-21", year:2023,
@@ -79,7 +79,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:3400000000, penaltyDisplay:"$3.4B",
     agencies:["FinCEN","DOJ","CFTC","OFAC"], voluntaryDisclosure:false, egregious:true,
     violation:"BSA violations — willfully operated as unregistered MSB; processed transactions for sanctioned jurisdictions; failed to implement AML program",
-    program:"BSA / AML / Crypto / Sanctions", sourceUrl:"https://www.fincen.gov/news/news-releases/fincen-and-doj-reach-43-billion-resolution-with-binance",
+    program:"BSA / AML / Crypto / Sanctions", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2023-11-21/FinCEN_Consent_Order_2023-04_FINAL508.pdf",
     notes:"Largest crypto enforcement ever; FinCEN $3.4B of $4.3B total",
   },
   {
@@ -88,7 +88,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:15000000, penaltyDisplay:"$15M",
     agencies:["FinCEN","FDIC","NYDFS"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program; failed to file SARs for suspicious transactions 2016-2021",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2023-09-29/SHBA_9-28_FINAL_508.pdf",
   },
   {
     id:"F2023-02", date:"2023-09-15", year:2023,
@@ -96,7 +96,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:15000000, penaltyDisplay:"$15M",
     agencies:["FinCEN","OCIF"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — first enforcement action against Puerto Rican International Banking Entity; inadequate correspondent account due diligence",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2023-09-15/Bancredito_Consent_FINAL_091523_508C.pdf",
   },
   {
     id:"F2023-01", date:"2023-04-26", year:2023,
@@ -104,7 +104,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:1500000, penaltyDisplay:"$1.5M",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program as a trust company holding digital assets",
-    program:"BSA / AML / Crypto", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Crypto", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2023-04-27/FinCEN_KTC_ConsentOrder_FINAL_042523.pdf",
   },
   {
     id:"F2022-03", date:"2022-10-11", year:2022,
@@ -112,7 +112,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:29000000, penaltyDisplay:"$29M",
     agencies:["FinCEN","OFAC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to maintain effective AML program; processed transactions for sanctioned jurisdictions",
-    program:"BSA / AML / Crypto", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Crypto", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2023-04-04/Bittrex_Consent_Order_10.11.2022.pdf",
   },
   {
     id:"F2022-02", date:"2022-03-31", year:2022,
@@ -120,7 +120,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:200000, penaltyDisplay:"$200K",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to register as MSB and maintain AML program",
-    program:"BSA / AML / MSB", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / MSB", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2023-04-05/AS_World_Trading_Consent_Order_FINAL.pdf",
   },
   {
     id:"F2022-01", date:"2022-03-17", year:2022,
@@ -128,7 +128,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:140000000, penaltyDisplay:"$140M",
     agencies:["FinCEN","OCC"], voluntaryDisclosure:false, egregious:true,
     violation:"BSA violations — willful failure to implement AML program; failed to file thousands of SARs and CTRs",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2023-04-05/USAA_Consent_Order_Final_508_2.pdf",
   },
   {
     id:"F2021-03", date:"2021-12-16", year:2021,
@@ -136,7 +136,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:8000000, penaltyDisplay:"$8M",
     agencies:["FinCEN","OCC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — willful failure to implement effective AML program; failed to file SARs 2015-2019",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2023-04-05/CBOT_Enf_Action_121621_508_FINAL.pdf",
   },
   {
     id:"F2021-02", date:"2021-08-10", year:2021,
@@ -144,7 +144,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:100000000, penaltyDisplay:"$100M",
     agencies:["FinCEN","CFTC"], voluntaryDisclosure:false, egregious:true,
     violation:"BSA violations — willful failure to implement AML program as unregistered MSB; served US customers without KYC/AML controls",
-    program:"BSA / AML / Crypto", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Crypto", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2021-08-10/Assessment_BITMEX_508_FINAL_0.pdf",
   },
   {
     id:"F2021-01", date:"2021-01-15", year:2021,
@@ -152,7 +152,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:390000000, penaltyDisplay:"$390M",
     agencies:["FinCEN","OCC"], voluntaryDisclosure:false, egregious:true,
     violation:"BSA violations — willful failure to implement AML program 2008-2014; failed to file thousands of SARs and CTRs; allowed millions in suspicious transactions",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/news-releases/fincen-announces-390000000-enforcement-action-against-capital-one-national",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2023-04-05/Assessment_CONA_508_0.pdf",
   },
   {
     id:"F2020-02", date:"2020-10-19", year:2020,
@@ -160,7 +160,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:60000000, penaltyDisplay:"$60M",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — operated Bitcoin mixer (tumbler) as unregistered MSB; processed $311M for dark web markets",
-    program:"BSA / AML / Crypto", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Crypto", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2023-04-05/HarmonHelix_Assessment_and_SoF_508_101920.pdf",
   },
   {
     id:"F2020-01", date:"2020-03-04", year:2020,
@@ -168,7 +168,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:450000, penaltyDisplay:"$450K",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — BSA compliance officer willful failure; allowed millions in suspicious transactions to go unreported",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2023-04-05/Michael_LaFontaine_Assessment_02.26.20_508.pdf",
   },
   {
     id:"F2019-01", date:"2019-04-18", year:2019,
@@ -176,7 +176,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:35350, penaltyDisplay:"$35.4K",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — operated peer-to-peer virtual currency exchange as unlicensed MSB",
-    program:"BSA / AML / Crypto", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Crypto", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2023-04-05/Assessment_Eric_Powers_Final_for_Posting_04.18.19.pdf",
   },
   {
     id:"F2018-03", date:"2018-12-17", year:2018,
@@ -184,7 +184,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:14500000, penaltyDisplay:"$14.5M",
     agencies:["FinCEN","SEC","FINRA"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — willful failure to implement AML program and file SARs",
-    program:"BSA / AML / Securities", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Securities", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2023-04-05/UBS_Assessment_12.17.2018_FINAL_508_Revised_0.pdf",
   },
   {
     id:"F2018-02", date:"2018-05-03", year:2018,
@@ -192,7 +192,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:5000000, penaltyDisplay:"$5M",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program at card club casino",
-    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2023-04-05/AJC_Assessment_05.03.18.pdf",
   },
   {
     id:"F2018-01", date:"2018-02-15", year:2018,
@@ -200,7 +200,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:185000000, penaltyDisplay:"$185M",
     agencies:["FinCEN","OCC","DOJ"], voluntaryDisclosure:false, egregious:true,
     violation:"BSA violations — willful failure to maintain AML program; deliberately capped SAR filings; processed transactions for high-risk customers",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2023-04-05/FinCEN_U.S_Bank_Assesment_FinCEN_review_2.14.18_Final.pdf",
   },
   {
     id:"F2017-04", date:"2017-11-01", year:2017,
@@ -208,7 +208,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:2000000, penaltyDisplay:"$2M",
     agencies:["FinCEN","OCC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to file SARs for money laundering along US-Mexico border",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2023-04-05/Lone_Star.ASSESSMENT_OF_CIVIL_MONEY_PENALTY_Final_11.01_0.pdf",
   },
   {
     id:"F2017-03", date:"2017-07-27", year:2017,
@@ -216,7 +216,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:110003520, penaltyDisplay:"$110M",
     agencies:["FinCEN","DOJ"], voluntaryDisclosure:false, egregious:true,
     violation:"BSA violations — operated unlicensed MSB; facilitated transactions for ransomware, dark web, and cybercriminals",
-    program:"BSA / AML / Crypto", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Crypto", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2023-04-05/Assessment_for_BTCeVinnik_FINAL2.pdf",
   },
   {
     id:"F2017-02", date:"2017-02-27", year:2017,
@@ -224,7 +224,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:7000000, penaltyDisplay:"$7M",
     agencies:["FinCEN","OCC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program; failed to file SARs",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2023-04-05/Merchants_Bank_of_California_Assessment_of_CMP_02.24.2017.v2.pdf",
   },
   {
     id:"F2017-01", date:"2017-01-19", year:2017,
@@ -232,7 +232,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:184000000, penaltyDisplay:"$184M",
     agencies:["FinCEN","DOJ","FTC"], voluntaryDisclosure:false, egregious:true,
     violation:"BSA violations — willful failure to implement AML program; processed payments for fraud schemes",
-    program:"BSA / AML / MSB", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / MSB", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2023-04-05/WUFSI_Assessment_of_Civil_Money_Penalty_1_19_2017.pdf",
   },
   {
     id:"F2016-05", date:"2016-10-03", year:2016,
@@ -240,7 +240,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:22500000, penaltyDisplay:"$22.5M",
     agencies:["FinCEN","Nevada"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program at Nevada sports book",
-    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2023-04-05/20161003_Cantor_Assessment_Final.pdf",
   },
   {
     id:"F2016-04", date:"2016-07-15", year:2016,
@@ -248,7 +248,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:2800000, penaltyDisplay:"$2.8M",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program at California card club",
-    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2023-04-05/20160715_HG_Assessment_Final.pdf",
   },
   {
     id:"F2016-01", date:"2016-02-25", year:2016,
@@ -256,7 +256,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:4000000, penaltyDisplay:"$4M",
     agencies:["FinCEN","OCC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/Gibraltar_%20Assessment.pdf",
   },
   {
     id:"F2015-10", date:"2015-09-08", year:2015,
@@ -264,7 +264,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:8000000, penaltyDisplay:"$8M",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program; failed to file SARs for high-rollers",
-    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/Caesars_Palace_ASSESSMENT.pdf",
   },
   {
     id:"F2015-05", date:"2015-05-05", year:2015,
@@ -272,7 +272,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:700000, penaltyDisplay:"$700K",
     agencies:["FinCEN","DOJ"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to register as MSB; sold XRP without implementing AML program",
-    program:"BSA / AML / Crypto", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Crypto", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/20150505.pdf",
   },
   {
     id:"F2015-02", date:"2015-03-06", year:2015,
@@ -280,7 +280,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:10000000, penaltyDisplay:"$10M",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — willful and repeated failure to implement AML program; third action against this casino",
-    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/20150302%20Assessment%20of%20Civil%20Money%20Penalty%20Trump%20Taj%20Mahal%20%28post-approval%20by%20bankruptcy%20court%29.pdf",
   },
   {
     id:"F2015-01", date:"2015-01-27", year:2015,
@@ -288,7 +288,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:20000000, penaltyDisplay:"$20M",
     agencies:["FinCEN","SEC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — repeat offender; willful failure to implement AML program and file SARs",
-    program:"BSA / AML / Securities", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Securities", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/Oppenheimer_Assessment_20150126.pdf",
   },
   {
     id:"F2014-01", date:"2014-01-07", year:2014,
@@ -296,7 +296,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:461000000, penaltyDisplay:"$461M",
     agencies:["FinCEN","OCC"], voluntaryDisclosure:false, egregious:true,
     violation:"BSA violations — failure to file SARs related to Bernie Madoff ponzi scheme; processed hundreds of millions without reporting",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/JPMorgan_ASSESSMENT_01072014_0.pdf",
   },
   {
     id:"F2013-01", date:"2013-09-23", year:2013,
@@ -304,7 +304,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:37500000, penaltyDisplay:"$37.5M",
     agencies:["FinCEN","OCC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement AML program; processed $1B+ in suspicious transactions",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/TD_ASSESSMENT_09222013.pdf",
   },
   {
     id:"F2012-02", date:"2012-12-11", year:2012,
@@ -312,7 +312,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:1256000000, penaltyDisplay:"$1.256B",
     agencies:["FinCEN","DOJ","OCC"], voluntaryDisclosure:false, egregious:true,
     violation:"BSA/AML failures — processed $881B for sanctioned countries; $665M for drug cartels; systemic AML failures",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/HSBC_ASSESSMENT.pdf",
     notes:"FinCEN portion of $1.92B global settlement",
   },
   {
@@ -321,7 +321,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:160000000, penaltyDisplay:"$160M",
     agencies:["FinCEN","OCC","DOJ"], voluntaryDisclosure:false, egregious:true,
     violation:"BSA violations — failed to monitor $378B through Mexican currency exchange houses linked to drug cartels",
-    program:"BSA / AML / Narcotics", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Narcotics", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/100316095447.pdf",
   },
   {
     id:"F2007-01", date:"2007-08-06", year:2007,
@@ -329,7 +329,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:65000000, penaltyDisplay:"$65M",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to file SARs on suspicious activity through private banking accounts",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/fincen_amex.pdf",
   },
   {
     id:"F2006-07", date:"2006-10-31", year:2006,
@@ -337,7 +337,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:8000000, penaltyDisplay:"$8M",
     agencies:["FinCEN","NYDFS"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/fincen_assessment_of_civil_money_penalty.pdf",
   },
   {
     id:"F2006-03", date:"2006-04-26", year:2006,
@@ -345,7 +345,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:10000000, penaltyDisplay:"$10M",
     agencies:["FinCEN","OTS"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/bankatlantic_assessment.pdf",
   },
   {
     id:"F2005-05", date:"2005-12-19", year:2005,
@@ -353,7 +353,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:80000000, penaltyDisplay:"$80M",
     agencies:["FinCEN","DOJ"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — processed transactions for sanctioned countries by stripping wire transfer information",
-    program:"BSA / AML / Sanctions", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Sanctions", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/abn_assessment.pdf",
   },
   {
     id:"F2005-02", date:"2005-08-17", year:2005,
@@ -361,7 +361,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:24000000, penaltyDisplay:"$24M",
     agencies:["FinCEN","FDIC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program for high-risk correspondent accounts",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/arab081705.pdf",
   },
   {
     id:"F2004-02", date:"2004-10-12", year:2004,
@@ -369,7 +369,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:10000000, penaltyDisplay:"$10M",
     agencies:["FinCEN","Federal Reserve"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to establish adequate AML program; failure to file SARs",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/amsouthassessmentcivilmoney.pdf",
   },
   {
     id:"F2004-01", date:"2004-05-13", year:2004,
@@ -377,7 +377,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:25000000, penaltyDisplay:"$25M",
     agencies:["FinCEN","OCC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to report suspicious transactions for Saudi Arabia and Equatorial Guinea government accounts; led to bank collapse",
-    program:"BSA / AML / Foreign Government Accounts", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Foreign Government Accounts", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/riggsassessment3.pdf",
     notes:"Largest CMP at time; led to Riggs Bank collapse and PNC acquisition",
   },
   {
@@ -386,7 +386,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:8000000, penaltyDisplay:"$8M",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement AML program as large MSB money transmitter",
-    program:"BSA / AML / MSB", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / MSB", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/western_union_assessment.pdf",
   },
   {
     id:"F2003-01", date:"2003-01-16", year:2003,
@@ -394,7 +394,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:21000000, penaltyDisplay:"$21M",
     agencies:["FinCEN","FDIC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/bancopopular.pdf",
   },
   {
     id:"F2002-01", date:"2002-04-08", year:2002,
@@ -402,7 +402,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:1000000, penaltyDisplay:"$1M",
     agencies:["FinCEN","OTS"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement AML program",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/sovereignbank.pdf",
   },
 
   // ── 2020 ──────────────────────────────────────────────────────────────────
@@ -413,7 +413,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"See 2018-02",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — original action superseded by updated 2018-02 assessment",
-    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2023-04-05/AJC_Proposed_Assessment_Signed_11.15.17.pdf",
     notes:"Original assessment; updated and superseded by matter 2018-02",
   },
 
@@ -424,7 +424,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN","NCUA"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program at federal credit union",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2023-04-05/Bethex_Assessment_Final_0.pdf",
   },
   {
     id:"F2016-03", date:"2016-04-05", year:2016,
@@ -432,7 +432,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program at casino",
-    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/Sparks_Nugget_EA.pdf",
   },
   {
     id:"F2016-02", date:"2016-03-24", year:2016,
@@ -440,7 +440,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to register as MSB and implement AML controls",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/Thriftway_Assessment.pdf",
   },
 
   // ── 2015 ──────────────────────────────────────────────────────────────────
@@ -450,7 +450,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement AML program for precious metals dealer",
-    program:"BSA / AML / Precious Metals", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Precious Metals", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/20151230.pdf",
   },
   {
     id:"F2015-11", date:"2015-12-17", year:2015,
@@ -458,7 +458,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement AML program at card club",
-    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/20151217_Oaks_Assessment.pdf",
   },
   {
     id:"F2015-09", date:"2015-06-26", year:2015,
@@ -466,7 +466,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — unlicensed MSB; failure to file CTRs",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/20150626_Assessment.pdf",
   },
   {
     id:"F2015-08", date:"2015-06-15", year:2015,
@@ -474,7 +474,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN","FDIC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/Mingo_Assessment.pdf",
   },
   {
     id:"F2015-07", date:"2015-06-03", year:2015,
@@ -482,7 +482,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement AML program at casino resort",
-    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/Tinian_Dynasty_Assessment.pdf",
   },
   {
     id:"F2015-06", date:"2015-06-01", year:2015,
@@ -490,7 +490,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — unlicensed MSB operations; failure to file SARs",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/20150601Assessment.pdf",
   },
   {
     id:"F2015-04", date:"2015-03-18", year:2015,
@@ -498,7 +498,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — operated unlicensed MSB; failure to maintain AML program",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/Assessment_20150318_Civil_Money_Penalty_for_Aurora_Sunmart.pdf",
   },
   {
     id:"F2015-03", date:"2015-02-27", year:2015,
@@ -506,7 +506,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN","OCC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/FNCB_Assessment.pdf",
   },
 
   // ── 2014 ──────────────────────────────────────────────────────────────────
@@ -516,7 +516,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:1000000, penaltyDisplay:"$1M",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — as CCO of MoneyGram, willfully failed to implement effective AML program",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/Haider_Assessment.pdf",
     notes:"Individual officer liability action",
   },
   {
@@ -525,7 +525,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN","NCUA"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program at federal credit union",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/NorthDade_Assessment.pdf",
   },
   {
     id:"F2014-06", date:"2014-08-28", year:2014,
@@ -533,7 +533,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to register as MSB and maintain AML program",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/BPI_Inc_Assessment.pdf",
   },
   {
     id:"F2014-05", date:"2014-08-20", year:2014,
@@ -541,7 +541,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — casino structuring violations",
-    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/GeorgeQue_Assessment_20140820.pdf",
   },
   {
     id:"F2014-04", date:"2014-07-15", year:2014,
@@ -549,7 +549,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — operated unlicensed MSB; failure to file CTRs",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/Mian_Assessment_071514.pdf",
   },
   {
     id:"F2014-03", date:"2014-04-23", year:2014,
@@ -557,7 +557,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — unlicensed MSB; failure to file SARs",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2023-04-05/NMCE_Assessment.pdf",
   },
   {
     id:"F2014-02", date:"2014-02-07", year:2014,
@@ -565,7 +565,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — operated unlicensed MSB; failure to maintain AML controls",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/FinalAdamServiceASSESSMENT2-7-14.pdf",
   },
 
   // ── 2013 ──────────────────────────────────────────────────────────────────
@@ -575,7 +575,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN","OCC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/SRVB_Assessment_092413.pdf",
   },
   // ── 2012 ──────────────────────────────────────────────────────────────────
   {
@@ -584,7 +584,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:1500000, penaltyDisplay:"$1.5M",
     agencies:["FinCEN","FDIC","DOJ"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program; facilitated fraud",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/First_Bank_of_Delaware_11-15-2012_Assessment.pdf",
   },
 
   // ── 2011 ──────────────────────────────────────────────────────────────────
@@ -594,7 +594,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — individual officer liability for AML program failures",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/ASSESSMENT_without_consent.pdf",
   },
   {
     id:"F2011-10", date:"2011-12-08", year:2011,
@@ -602,7 +602,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — operated unlicensed MSB; failure to file SARs",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/ASSESSMENT_SarithMeas_Enforcement_matter_number_2011-10.pdf",
   },
   {
     id:"F2011-09", date:"2011-09-23", year:2011,
@@ -610,7 +610,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — operated unlicensed hawaladaar MSB; failure to file SARs",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/MohamedSheikhASSESSMENT.pdf",
   },
   {
     id:"F2011-08", date:"2011-09-07", year:2011,
@@ -618,7 +618,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — unlicensed MSB; failure to maintain AML program",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/Altima_Assessment.pdf",
   },
   {
     id:"F2011-07", date:"2011-08-22", year:2011,
@@ -626,7 +626,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:10962000, penaltyDisplay:"$10.96M",
     agencies:["FinCEN","FDIC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program; processed transactions for high-risk customers without adequate controls",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/08222011_OceanBank_ASSESSMENT.pdf",
   },
   {
     id:"F2011-06", date:"2011-04-21", year:2011,
@@ -634,7 +634,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program at tribal casino",
-    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/jackpotjunction.pdf",
   },
   {
     id:"F2011-05", date:"2011-03-24", year:2011,
@@ -642,7 +642,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:7000000, penaltyDisplay:"$7M",
     agencies:["FinCEN","OCC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/PacificNationalBankASSESSMENT.pdf",
   },
   {
     id:"F2011-02", date:"2011-03-11", year:2011,
@@ -650,7 +650,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — operated unlicensed MSB; failed to maintain AML controls",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/03-07-2011KaganovASSESSMENT.pdf",
   },
   {
     id:"F2011-04", date:"2011-03-02", year:2011,
@@ -658,7 +658,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — operated unlicensed hawaladaar MSB",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/11_03_02-13001299070846canned.pdf",
   },
   {
     id:"F2011-03", date:"2011-03-02", year:2011,
@@ -666,7 +666,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — operated unlicensed hawaladaar MSB",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/11_03_02-13001299070846canned000.pdf",
   },
   {
     id:"F2011-01", date:"2011-02-11", year:2011,
@@ -674,7 +674,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:8000000, penaltyDisplay:"$8M",
     agencies:["FinCEN","OCC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program; inadequate SAR filing practices",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/ZionsAssessment.pdf",
   },
 
   // ── 2010 ──────────────────────────────────────────────────────────────────
@@ -684,7 +684,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to register as MSB; failure to maintain AML program",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/BalticAssessment.pdf",
   },
   {
     id:"F2010-04", date:"2010-09-01", year:2010,
@@ -692,7 +692,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN","SEC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement AML program at broker-dealer",
-    program:"BSA / AML / Securities", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Securities", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2023-04-05/Final_Pinnacle_Assessment_for_FinCEN_Internet_with_Date_and_No_Signature.pdf",
   },
   {
     id:"F2010-03", date:"2010-06-03", year:2010,
@@ -700,7 +700,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:5000000, penaltyDisplay:"$5M",
     agencies:["FinCEN","OTS"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program; processed transactions for high-risk customers",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/PamrapoAssessment.pdf",
   },
   {
     id:"F2010-02", date:"2010-05-04", year:2010,
@@ -708,7 +708,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN","FDIC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/AssessmentEurobank.pdf",
   },
   // ── 2009 ──────────────────────────────────────────────────────────────────
   {
@@ -717,7 +717,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN","NYDFS"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program at foreign bank branch",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/2020-05-21/Doha.pdf",
   },
 
   // ── 2008 ──────────────────────────────────────────────────────────────────
@@ -727,7 +727,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN","Federal Reserve"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program at foreign bank branch",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/UBAAssessment.pdf",
   },
   {
     id:"F2008-02", date:"2008-04-14", year:2008,
@@ -735,7 +735,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — operated unlicensed MSB; failure to file SARs and CTRs",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/ElNoaNoa.pdf",
   },
   {
     id:"F2008-01", date:"2008-01-28", year:2008,
@@ -743,7 +743,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN","DOJ"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program for international money transfer company",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/sigue_assement_final.pdf",
   },
 
   // ── 2007 ──────────────────────────────────────────────────────────────────
@@ -753,7 +753,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:10000000, penaltyDisplay:"$10M",
     agencies:["FinCEN","OCC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program; processed transactions for Mexican casas de cambio linked to drug trafficking",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/ASSESSMENT_In_the_Matter_of_Union_Bank_of_California.pdf",
   },
 
   // ── 2006 ──────────────────────────────────────────────────────────────────
@@ -763,7 +763,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN","FDIC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/beachbank.pdf",
   },
   {
     id:"F2006-08", date:"2006-12-14", year:2006,
@@ -771,7 +771,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN","FDIC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/foster.pdf",
   },
   {
     id:"F2006-06", date:"2006-07-20", year:2006,
@@ -779,7 +779,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to file CTRs; failure to maintain AML program at precious metals/jewelry dealer",
-    program:"BSA / AML / Precious Metals", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Precious Metals", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/deprez_assessment_07202006.pdf",
   },
   {
     id:"F2006-05", date:"2006-05-19", year:2006,
@@ -787,7 +787,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN","FDIC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/liberty_assessment.pdf",
   },
   {
     id:"F2006-04", date:"2006-05-09", year:2006,
@@ -795,7 +795,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — operated unlicensed MSB; failure to file CTRs",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/frosty_cmp_consent.pdf",
   },
   {
     id:"F2006-02", date:"2006-04-19", year:2006,
@@ -803,7 +803,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN","Federal Reserve"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program at foreign bank branch",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/metro_assessment.pdf",
   },
   {
     id:"F2006-01", date:"2006-03-24", year:2006,
@@ -811,7 +811,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement AML program at tribal casino",
-    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/tonkawa.pdf",
   },
 
   // ── 2005 ──────────────────────────────────────────────────────────────────
@@ -821,7 +821,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:2800000, penaltyDisplay:"$2.8M",
     agencies:["FinCEN","SEC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program at broker-dealer",
-    program:"BSA / AML / Securities", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Securities", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/oppenheimerassessment.pdf",
   },
   {
     id:"F2005-03", date:"2005-10-12", year:2005,
@@ -829,7 +829,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN","Federal Reserve"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program at foreign bank branches",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/bancodechile.pdf",
   },
   {
     id:"F2005-01", date:"2005-07-05", year:2005,
@@ -837,7 +837,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN","FDIC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/gulf070505.pdf",
   },
 
   // ── 2003 ──────────────────────────────────────────────────────────────────
@@ -847,7 +847,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN","SEC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement AML program at broker-dealer",
-    program:"BSA / AML / Securities", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Securities", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/hartsfieldassessment.pdf",
   },
   {
     id:"F2003-04", date:"2003-06-24", year:2003,
@@ -855,7 +855,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN","OCC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement effective AML program",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/koreaexchangeassessment.pdf",
   },
   {
     id:"F2003-03", date:"2003-05-23", year:2003,
@@ -863,7 +863,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement AML program at riverboat casino",
-    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/greenvilleassessfinal.pdf",
   },
 
   // ── 2001 ──────────────────────────────────────────────────────────────────
@@ -873,7 +873,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — operated unlicensed MSB; failure to file CTRs",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/plett.pdf",
   },
   {
     id:"F2001-01", date:"2001-09-04", year:2001,
@@ -881,7 +881,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — operated unlicensed MSB; failure to file CTRs",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/sivigliano.pdf",
   },
 
   // ── 2000 ──────────────────────────────────────────────────────────────────
@@ -891,7 +891,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement AML program at casino",
-    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/rainbowcasinovicksburg.pdf",
   },
   {
     id:"F2000-01", date:"2000-10-23", year:2000,
@@ -899,7 +899,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — operated unlicensed currency exchange; failure to file SARs and CTRs",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/casadecambiorega.pdf",
   },
 
   // ── 1999 ──────────────────────────────────────────────────────────────────
@@ -909,7 +909,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — operated unlicensed MSB; failure to file CTRs",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/checkcashing.pdf",
     notes:"Matter number MSB99-012",
   },
   {
@@ -918,7 +918,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — operated unlicensed currency exchange business",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/msb99009.pdf",
     notes:"Matter number MSB99-009",
   },
   {
@@ -927,7 +927,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement AML program at casino",
-    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/ameristar.pdf",
     notes:"Matter number CAS-99-003",
   },
   {
@@ -936,7 +936,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN","NCUA"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement AML program at federal credit union",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/polishslavic.pdf",
     notes:"Matter number DI 99-011",
   },
   {
@@ -945,7 +945,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN","OCC"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement AML program",
-    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/sunflowerbank.pdf",
     notes:"Matter number DI 99-008",
   },
   {
@@ -954,7 +954,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement AML program at riverboat casino",
-    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/islecapribiloxi.pdf",
     notes:"Matter number CAS-99-004",
   },
   {
@@ -963,7 +963,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement AML program at casino",
-    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/grandcasinosmiss.pdf",
     notes:"Matter number CAS-99-007",
   },
   {
@@ -972,7 +972,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement AML program at riverboat casino",
-    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/islecaprivicksburg.pdf",
     notes:"Matter number CAS-99-005",
   },
   {
@@ -981,7 +981,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement AML program at casino",
-    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/ladyluck.pdf",
     notes:"Matter number CAS-99-006",
   },
   {
@@ -990,7 +990,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement AML program at casino",
-    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/casinomagic.pdf",
     notes:"Matter number CAS-99-002",
   },
   {
@@ -999,7 +999,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
     penalty:0, penaltyDisplay:"N/A",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to implement AML program at casino",
-    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/news/enforcement-actions",
+    program:"BSA / AML / Casino", sourceUrl:"https://www.fincen.gov/system/files/enforcement_action/gulfsidecasino.pdf",
     notes:"Matter number CAS-99-001",
   },
 
