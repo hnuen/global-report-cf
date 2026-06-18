@@ -23,8 +23,13 @@ jobs:
             BODY="{\"topic\":\"${{ github.event.inputs.topic }}\"}"
           fi
 
-          HTTP=$(curl -s -o /tmp/resp.json -w "%{http_code}" \
-            -X POST "${{ secrets.APP_URL }}/api/monitor" \
+          # Strip any trailing slash from APP_URL to avoid a double-slash URL
+          # (Cloudflare 308-redirects that, and curl won't follow it without -L).
+          APP_URL="${{ secrets.APP_URL }}"
+          APP_URL="${APP_URL%/}"
+
+          HTTP=$(curl -s -L -o /tmp/resp.json -w "%{http_code}" \
+            -X POST "$APP_URL/api/monitor" \
             -H "Content-Type: application/json" \
             -H "x-cron-secret: ${{ secrets.CRON_SECRET }}" \
             -H "x-vercel-protection-bypass: ${{ secrets.VERCEL_BYPASS_TOKEN }}" \

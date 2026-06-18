@@ -39,8 +39,13 @@ jobs:
         run: |
           # Fetches official RSS/HTML sources and saves to Redis quickly (~10s).
           # Gemini (LLM) step below replaces this with enriched articles.
-          HTTP=$(curl -s -o /tmp/resp.json -w "%{http_code}" \
-            -X POST "${{ secrets.APP_URL }}/api/refresh" \
+          # Strip any trailing slash from APP_URL to avoid a double-slash URL
+          # (Cloudflare 308-redirects that, and curl won't follow it without -L).
+          APP_URL="${{ secrets.APP_URL }}"
+          APP_URL="${APP_URL%/}"
+
+          HTTP=$(curl -s -L -o /tmp/resp.json -w "%{http_code}" \
+            -X POST "$APP_URL/api/refresh" \
             -H "Content-Type: application/json" \
             -d "{}" --max-time 30 || echo "000")
           echo "Official sources HTTP: $HTTP"
@@ -69,8 +74,13 @@ jobs:
     steps:
       - name: Trigger monitor
         run: |
-          HTTP=$(curl -s -o /tmp/resp.json -w "%{http_code}" \
-            -X POST "${{ secrets.APP_URL }}/api/monitor" \
+          # Strip any trailing slash from APP_URL to avoid a double-slash URL
+          # (Cloudflare 308-redirects that, and curl won't follow it without -L).
+          APP_URL="${{ secrets.APP_URL }}"
+          APP_URL="${APP_URL%/}"
+
+          HTTP=$(curl -s -L -o /tmp/resp.json -w "%{http_code}" \
+            -X POST "$APP_URL/api/monitor" \
             -H "Content-Type: application/json" \
             -d "{}" --max-time 60 || echo "000")
           echo "Monitor HTTP: $HTTP"
