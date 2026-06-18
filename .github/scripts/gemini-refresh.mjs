@@ -24,8 +24,13 @@ function stripHtml(html) {
   return html
     .replace(/<script[\s\S]*?<\/script>/gi, " ")
     .replace(/<style[\s\S]*?<\/style>/gi, " ")
-    .replace(/<[^>]+>/g, " ")
+    // Decode entities BEFORE stripping tags: Drupal RSS <description> fields
+    // (used by the EU finance-news feed) HTML-escape their markup, e.g.
+    // "&lt;p&gt;text&lt;/p&gt;" — decoding first turns that into real tags
+    // so the tag-strip pass below removes them instead of leaking literal
+    // "<p>" text into the parsed description.
     .replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&nbsp;/g, " ")
+    .replace(/<[^>]+>/g, " ")
     .replace(/\s+/g, " ")
     .trim();
 }
@@ -140,6 +145,122 @@ function parseProgramsIndex(html) {
   return programs;
 }
 
+// ── OFSI (UK) notices — direct scrape, no Gemini ───────────────────────────
+// gov.uk publishes an official Atom feed of all OFSI news/notices. Plain
+// fetch + regex parse, mirrors the OFAC pattern above. No LLM involved.
+function parseOfsiNotices(xml) {
+  if (!xml) return [];
+  const entries = [];
+  const entryRe = /<entry>([\s\S]*?)<\/entry>/g;
+  let m;
+  while ((m = entryRe.exec(xml)) !== null) {
+    const block = m[1];
+    const titleMatch = /<title[^>]*>([\s\S]*?)<\/title>/.exec(block);
+    const linkMatch = /<link[^>]*rel="alternate"[^>]*href="([^"]+)"/.exec(block)
+      ?? /<link[^>]*href="([^"]+)"/.exec(block);
+    const dateMatch = /<updated>([^<]+)<\/updated>/.exec(block);
+    if (!titleMatch || !linkMatch) continue;
+    const title = stripHtml(titleMatch[1]).trim();
+    const url = linkMatch[1].trim();
+    const date = dateMatch
+      ? new Date(dateMatch[1]).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })
+      : "";
+    entries.push({ title, url, date });
+  }
+  return entries;
+}
+
+// ── Generic RSS 2.0 <item> parser — shared by EU, UN, BBC, and Al Jazeera ──
+// feeds below. All four are standard RSS, so one parser + a keyword filter
+// covers them; only OFSI (Atom, above) needs its own <entry> format.
+function parseRssItems(xml) {
+  if (!xml) return [];
+  const entries = [];
+  const itemRe = /<item>([\s\S]*?)<\/item>/g;
+  let m;
+  while ((m = itemRe.exec(xml)) !== null) {
+    const block = m[1];
+    const titleMatch = /<title>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/title>/.exec(block);
+    const linkMatch = /<link>([^<]+)<\/link>/.exec(block);
+    const dateMatch = /<pubDate>([^<]+)<\/pubDate>/.exec(block);
+    const descMatch = /<description>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/description>/.exec(block);
+    if (!titleMatch || !linkMatch) continue;
+    const title = stripHtml(titleMatch[1]).trim();
+    const description = descMatch ? stripHtml(descMatch[1]).trim() : "";
+    const url = linkMatch[1].trim();
+    const date = dateMatch
+      ? new Date(dateMatch[1]).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })
+      : "";
+    entries.push({ title, url, date, description });
+  }
+  return entries;
+}
+
+// General-purpose sanctions keyword filter — used for any feed that isn't
+// sanctions-specific on its own (EU finance news, BBC world/business, Al
+// Jazeera all-news) so only relevant items get surfaced.
+const SANCTIONS_KEYWORDS = /sanction|restrictive measure|asset freeze|designat|embargo|export control|russia|belarus|\biran\b|syria|venezuela|north korea|\bdprk\b|myanmar/i;
+
+function filterSanctionsRelevant(entries) {
+  return entries.filter(e => SANCTIONS_KEYWORDS.test(e.title) || SANCTIONS_KEYWORDS.test(e.description));
+}
+
+// ── EU (Europa/DG FISMA) finance news — direct scrape, no Gemini ───────────
+// finance.ec.europa.eu publishes an official RSS feed of all finance news.
+// It isn't sanctions-only, so entries are filtered by keyword before being
+// treated as a "sanctions" article. Plain fetch + regex parse, no LLM.
+function parseEuropaSanctions(xml) {
+  return filterSanctionsRelevant(parseRssItems(xml));
+}
+
+// ── UN Security Council sanctions press releases — direct scrape, no Gemini ─
+// press.un.org publishes an official RSS feed of all UN press releases
+// (Security Council, General Assembly, Secretary-General, etc. all mixed
+// together), so entries are filtered for Security Council sanctions-committee
+// language specifically — narrower than SANCTIONS_KEYWORDS to avoid pulling
+// in unrelated GA/SG releases that merely mention a country name. Plain
+// fetch + regex parse, no LLM.
+const UN_SANCTIONS_KEYWORDS = /sanctions committee|security council.*sanctions|sanctions list|asset freeze|travel ban|arms embargo|de-?listing|designat/i;
+
+function parseUnSanctions(xml) {
+  return parseRssItems(xml).filter(e => UN_SANCTIONS_KEYWORDS.test(e.title) || UN_SANCTIONS_KEYWORDS.test(e.description));
+}
+
+// ── BBC News — direct scrape, no Gemini ─────────────────────────────────────
+// feeds.bbci.co.uk publishes official RSS for World and Business news. Not
+// sanctions-specific, so filtered the same way as the EU feed.
+function parseBbcSanctions(xml) {
+  return filterSanctionsRelevant(parseRssItems(xml));
+}
+
+// ── Al Jazeera — direct scrape, no Gemini ───────────────────────────────────
+// aljazeera.com publishes an official all-news RSS feed. Not sanctions-
+// specific, so filtered the same way as the EU/BBC feeds.
+//
+// NOTE: CNN and AP were evaluated and excluded from direct scraping. CNN's
+// legacy rss.cnn.com feeds are abandoned (serving cached items from
+// 2017/2023, not live data) and AP discontinued official RSS entirely with
+// no replacement. Both are still covered via Gemini's Google Search
+// grounding when Gemini runs (see SYSTEM_PROMPT below).
+function parseAlJazeeraSanctions(xml) {
+  return filterSanctionsRelevant(parseRssItems(xml));
+}
+
+// ── OCC (Comptroller of the Currency) news — direct scrape, no Gemini ──────
+// occ.gov publishes an official RSS feed of ALL news releases (testimony,
+// CRA evaluations, personnel announcements, final rules, enforcement
+// actions, etc. all mixed together). The "occ" section is scoped specifically
+// to enforcement actions / consent orders / prohibition orders, so entries
+// are filtered the same way the EU/BBC/AJ feeds are filtered for sanctions
+// relevance — keeps the section focused instead of diluted with unrelated
+// OCC press releases. This directly fixes the staleness the user reported:
+// the monthly "OCC Announces Enforcement Actions for <Month>" release matches.
+const OCC_KEYWORDS = /enforcement action|consent order|cease.?and.?desist|prohibition order|civil money penalty|formal agreement|removal order|terminat/i;
+
+function parseOccNews(xml) {
+  return parseRssItems(xml).filter(e => OCC_KEYWORDS.test(e.title) || OCC_KEYWORDS.test(e.description));
+}
+
 // 5. Load existing cache from GitHub to enable change detection
 async function loadExistingCache() {
   if (!GITHUB_TOKEN || !GITHUB_REPO) return null;
@@ -235,6 +356,48 @@ for (const prog of changedPrograms) {
   console.log(`  → ${parsed.executiveOrders.length} EOs, ${parsed.frNotices.length} FR notices, ${parsed.generalLicenses.length} GL PDFs`);
 }
 
+// ── OFSI (UK) + EU direct scrapes — run every time, independent of the ─────
+// OFAC-only early-exit/Gemini-trigger logic below. Plain HTTP fetch only,
+// no Gemini/LLM call — keeps these additive without touching RPD quota.
+console.log("[gemini-refresh] Fetching OFSI (UK) notices feed...");
+const ofsiXml = await fetchOfac("https://www.gov.uk/search/news-and-communications.atom?organisations%5B%5D=office-of-financial-sanctions-implementation");
+const ofsiNotices = parseOfsiNotices(ofsiXml);
+console.log(`[gemini-refresh] OFSI notices parsed: ${ofsiNotices.length} entries`);
+ofsiNotices.slice(0, 5).forEach(e => console.log(`  ${e.date} — ${e.title} (${e.url})`));
+
+console.log("[gemini-refresh] Fetching EU (Europa/DG FISMA) finance news feed...");
+const europaXml = await fetchOfac("https://finance.ec.europa.eu/node/1408/rss_en");
+const europaNews = parseEuropaSanctions(europaXml);
+console.log(`[gemini-refresh] EU sanctions-relevant news parsed: ${europaNews.length} entries`);
+europaNews.slice(0, 5).forEach(e => console.log(`  ${e.date} — ${e.title} (${e.url})`));
+
+console.log("[gemini-refresh] Fetching UN Security Council press releases feed...");
+const unXml = await fetchOfac("https://press.un.org/en/rss.xml");
+const unNotices = parseUnSanctions(unXml);
+console.log(`[gemini-refresh] UN sanctions-relevant press releases parsed: ${unNotices.length} entries`);
+unNotices.slice(0, 5).forEach(e => console.log(`  ${e.date} — ${e.title} (${e.url})`));
+
+console.log("[gemini-refresh] Fetching BBC News World + Business feeds...");
+const [bbcWorldXml, bbcBusinessXml] = await Promise.all([
+  fetchOfac("https://feeds.bbci.co.uk/news/world/rss.xml"),
+  fetchOfac("https://feeds.bbci.co.uk/news/business/rss.xml"),
+]);
+const bbcNews = [...parseBbcSanctions(bbcWorldXml), ...parseBbcSanctions(bbcBusinessXml)];
+console.log(`[gemini-refresh] BBC sanctions-relevant news parsed: ${bbcNews.length} entries`);
+bbcNews.slice(0, 5).forEach(e => console.log(`  ${e.date} — ${e.title} (${e.url})`));
+
+console.log("[gemini-refresh] Fetching Al Jazeera news feed...");
+const ajXml = await fetchOfac("https://www.aljazeera.com/xml/rss/all.xml");
+const ajNews = parseAlJazeeraSanctions(ajXml);
+console.log(`[gemini-refresh] Al Jazeera sanctions-relevant news parsed: ${ajNews.length} entries`);
+ajNews.slice(0, 5).forEach(e => console.log(`  ${e.date} — ${e.title} (${e.url})`));
+
+console.log("[gemini-refresh] Fetching OCC news releases feed...");
+const occXml = await fetchOfac("https://www.occ.gov/rss/occ_news.xml");
+const occNews = parseOccNews(occXml);
+console.log(`[gemini-refresh] OCC enforcement-relevant news parsed: ${occNews.length} entries`);
+occNews.slice(0, 5).forEach(e => console.log(`  ${e.date} — ${e.title} (${e.url})`));
+
 // ── Early-exit: skip Gemini if nothing changed since last run ─────────────
 // Compare first recent-action URL (most recent = most likely to change),
 // first civil-penalty row (date + name), and whether any programs updated.
@@ -252,13 +415,16 @@ const noNewPrograms  = changedPrograms.length === 0;
 if (noNewActions && noNewPenalties && noNewPrograms) {
   console.log("[gemini-refresh] ✅ No new OFAC data — skipping Gemini to preserve RPD quota");
   // Re-commit cache to refresh updatedAt (app reads this to know last scrape time)
-  await commitOfacCache(recentActions, civilPenalties, programs);
+  await commitOfacCache(recentActions, civilPenalties, programs, ofsiNotices, europaNews, unNotices, bbcNews, ajNews, occNews);
 
   // Still touch the saved briefing's lastUpdated so the app shows a fresh
   // "checked at" time on every run, not just runs that found new OFAC data.
   // Zero Gemini calls — reuses the scrape we already did above. merge:true
-  // keeps the economics/religion/occ/bis sections from the last Gemini run.
-  const touch = buildFallbackBriefing(recentActions, civilPenalties);
+  // keeps the economics/religion/bis sections from the last Gemini run.
+  // OFSI/EU/UN/BBC/Al Jazeera/OCC entries are included unconditionally so
+  // they show up in their sections on every run, regardless of the OFAC
+  // early-exit outcome — this is what fixes OCC staleness specifically.
+  const touch = buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices, europaNews, unNotices, bbcNews, ajNews, occNews);
   if (touch.articles.length > 0) {
     await saveBriefingWithRetry(touch, true);
   }
@@ -269,7 +435,7 @@ console.log(`[gemini-refresh] New data detected — actions:${!noNewActions} pen
 // ── Commit scraped OFAC data to repo as a cache file ──────────────────────
 // The app (CF Workers) can't reach ofac.treasury.gov directly (IP blocked).
 // Committing to the repo lets the app read fresh OFAC data via raw.githubusercontent.com.
-async function commitOfacCache(recentActions, civilPenalties, programs) {
+async function commitOfacCache(recentActions, civilPenalties, programs, ofsiNotices = [], europaNews = [], unNotices = [], bbcNews = [], ajNews = [], occNews = []) {
   if (!GITHUB_TOKEN || !GITHUB_REPO) {
     console.warn("[ofac-cache] Missing GITHUB_TOKEN or GITHUB_REPOSITORY — skipping cache commit");
     return;
@@ -280,6 +446,12 @@ async function commitOfacCache(recentActions, civilPenalties, programs) {
     recentActions,
     civilPenalties,
     programs,
+    ofsiNotices,
+    europaNews,
+    unNotices,
+    bbcNews,
+    ajNews,
+    occNews,
   }, null, 2);
   const encoded = Buffer.from(content).toString("base64");
 
@@ -304,17 +476,17 @@ async function commitOfacCache(recentActions, civilPenalties, programs) {
   const res = await fetch(apiUrl, { method: "PUT", headers, body: JSON.stringify(body) });
   if (res.ok) {
     const progCount = Object.keys(programs).length;
-    console.log(`[ofac-cache] ✅ Committed: ${recentActions.length} recent-actions, ${civilPenalties.length} penalties, ${progCount} programs to ${path}`);
+    console.log(`[ofac-cache] ✅ Committed: ${recentActions.length} recent-actions, ${civilPenalties.length} penalties, ${progCount} programs, ${ofsiNotices.length} OFSI notices, ${europaNews.length} EU items, ${unNotices.length} UN items, ${bbcNews.length} BBC items, ${ajNews.length} Al Jazeera items, ${occNews.length} OCC items to ${path}`);
   } else {
     const err = await res.text();
     console.warn(`[ofac-cache] Commit failed (${res.status}): ${err.slice(0, 200)}`);
   }
 }
 
-await commitOfacCache(recentActions, civilPenalties, programs);
+await commitOfacCache(recentActions, civilPenalties, programs, ofsiNotices, europaNews, unNotices, bbcNews, ajNews, occNews);
 
 // ── Build fallback briefing from scraped data (when Gemini fails) ──────────
-function buildFallbackBriefing(recentActions, civilPenalties) {
+function buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices = [], europaNews = [], unNotices = [], bbcNews = [], ajNews = [], occNews = []) {
   const nowStr = new Date().toLocaleString("en-US", {
     month: "long", day: "numeric", year: "numeric",
     hour: "2-digit", minute: "2-digit", timeZoneName: "short",
@@ -361,6 +533,117 @@ function buildFallbackBriefing(recentActions, civilPenalties) {
       ],
       source: "OFAC Civil Penalties and Enforcement Information",
       sourceUrl: row.pdfUrl || "https://ofac.treasury.gov/civil-penalties-and-enforcement-information",
+    });
+  }
+
+  // OFSI (UK) notices → sanctions articles — always included, independent
+  // of the OFAC early-exit/Gemini path, so EU/UK coverage shows up every run.
+  for (const entry of ofsiNotices.slice(0, 6)) {
+    articles.push({
+      id: id++,
+      section: "sanctions",
+      category: "OFSI",
+      region: "United Kingdom",
+      impact: "medium",
+      date: entry.date || "",
+      headline: entry.title,
+      body: [
+        `The UK's Office of Financial Sanctions Implementation (OFSI) published: "${entry.title}". Full details are available on GOV.UK.`,
+      ],
+      source: "OFSI (GOV.UK)",
+      sourceUrl: entry.url,
+    });
+  }
+
+  // EU (Europa/DG FISMA) sanctions-relevant news → sanctions articles
+  for (const entry of europaNews.slice(0, 6)) {
+    articles.push({
+      id: id++,
+      section: "sanctions",
+      category: "EU",
+      region: "European Union",
+      impact: "medium",
+      date: entry.date || "",
+      headline: entry.title,
+      body: [
+        entry.description || `The European Commission (DG FISMA) published: "${entry.title}". Full details are available on finance.ec.europa.eu.`,
+      ],
+      source: "European Commission — Finance News",
+      sourceUrl: entry.url,
+    });
+  }
+
+  // UN Security Council sanctions press releases → sanctions articles
+  for (const entry of unNotices.slice(0, 6)) {
+    articles.push({
+      id: id++,
+      section: "sanctions",
+      category: "UN",
+      region: "International",
+      impact: "medium",
+      date: entry.date || "",
+      headline: entry.title,
+      body: [
+        entry.description || `The United Nations published: "${entry.title}". Full details are available on press.un.org.`,
+      ],
+      source: "United Nations — Press Releases",
+      sourceUrl: entry.url,
+    });
+  }
+
+  // BBC News sanctions-relevant coverage → sanctions articles
+  for (const entry of bbcNews.slice(0, 6)) {
+    articles.push({
+      id: id++,
+      section: "sanctions",
+      category: "News",
+      region: "International",
+      impact: "medium",
+      date: entry.date || "",
+      headline: entry.title,
+      body: [
+        entry.description || `BBC News reported: "${entry.title}".`,
+      ],
+      source: "BBC News",
+      sourceUrl: entry.url,
+    });
+  }
+
+  // Al Jazeera sanctions-relevant coverage → sanctions articles
+  for (const entry of ajNews.slice(0, 6)) {
+    articles.push({
+      id: id++,
+      section: "sanctions",
+      category: "News",
+      region: "International",
+      impact: "medium",
+      date: entry.date || "",
+      headline: entry.title,
+      body: [
+        entry.description || `Al Jazeera reported: "${entry.title}".`,
+      ],
+      source: "Al Jazeera",
+      sourceUrl: entry.url,
+    });
+  }
+
+  // OCC enforcement-relevant news → occ articles — fixes the staleness the
+  // user reported (OCC section was frozen on whatever Gemini last wrote,
+  // since this was previously the only section with no non-Gemini source).
+  for (const entry of occNews.slice(0, 6)) {
+    articles.push({
+      id: id++,
+      section: "occ",
+      category: "OCC",
+      region: "United States",
+      impact: "high",
+      date: entry.date || "",
+      headline: entry.title,
+      body: [
+        entry.description || `The Office of the Comptroller of the Currency (OCC) published: "${entry.title}". Full details are available on occ.gov.`,
+      ],
+      source: "OCC News Releases",
+      sourceUrl: entry.url,
     });
   }
 
@@ -447,6 +730,7 @@ For any entry without enough detail, use Google Search grounding to find more co
 
 BIS: search site:federalregister.gov "bureau of industry" "entity list" for current month.
 Al Jazeera required for Middle East, Iran, Gulf, and Islamic world stories.
+AP and CNN no longer publish usable RSS feeds, so when using Google Search grounding, prioritize and cite site:apnews.com and site:cnn.com results for sanctions/enforcement stories where available, alongside Al Jazeera, BBC, and Reuters.
 
 CHINA/HK SANCTIONS — search for:
 1. NS-CMIC list (EO 13959 / EO 14032) additions/removals
@@ -540,7 +824,7 @@ for (const model of GEMINI_MODELS) {
 
 if (!geminiRes?.ok) {
   console.warn("[gemini-refresh] All Gemini models failed — saving structured fallback articles");
-  const fallback = buildFallbackBriefing(recentActions, civilPenalties);
+  const fallback = buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices, europaNews, unNotices, bbcNews, ajNews, occNews);
   if (fallback.articles.length === 0) {
     console.error("[gemini-refresh] No OFAC data fetched either — nothing to save");
     process.exit(1);
@@ -567,7 +851,7 @@ const e = clean.lastIndexOf("}");
 if (s === -1 || e === -1) {
   console.error("[gemini-refresh] Could not find JSON in Gemini response — falling back to structured articles");
   console.error("Raw text:", rawText.slice(0, 500));
-  const fallback = buildFallbackBriefing(recentActions, civilPenalties);
+  const fallback = buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices, europaNews, unNotices, bbcNews, ajNews, occNews);
   if (fallback.articles.length > 0) {
     await saveBriefingWithRetry(fallback, true);
     process.exit(0);
@@ -601,7 +885,7 @@ try {
 } catch (parseErr) {
   console.error("[gemini-refresh] JSON parse failed — falling back to structured articles:", parseErr);
   console.error("Raw text slice:", clean.slice(s, s + 500));
-  const fallback = buildFallbackBriefing(recentActions, civilPenalties);
+  const fallback = buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices, europaNews, unNotices, bbcNews, ajNews, occNews);
   if (fallback.articles.length > 0) {
     await saveBriefingWithRetry(fallback, true);
     process.exit(0);
@@ -642,6 +926,109 @@ if (missingEntries.length > 0) {
   }));
   briefing.articles = [...(briefing.articles ?? []), ...injected];
   console.log(`[gemini-refresh] Total articles after injection: ${briefing.articles.length}`);
+}
+
+// ── Inject OFSI (UK) + EU sanctions entries Gemini didn't cover (dedup by ──
+// sourceUrl). This guarantees EU/OFSI articles appear in the sanctions
+// section on every run, regardless of whether Gemini happened to surface
+// them via Google Search grounding. No Gemini call — pure merge of the
+// direct scrapes performed earlier in this script.
+function injectExtra(entries, mapper) {
+  const extra = entries.filter(e => !coveredUrls.has(e.url));
+  extra.forEach(e => coveredUrls.add(e.url));
+  return extra.map(mapper);
+}
+
+const ofsiInjected = injectExtra(ofsiNotices, entry => ({
+  section: "sanctions",
+  category: "OFSI",
+  region: "United Kingdom",
+  impact: "medium",
+  date: entry.date || "",
+  headline: entry.title,
+  body: [
+    `The UK's Office of Financial Sanctions Implementation (OFSI) published: "${entry.title}". Full details are available on GOV.UK.`,
+  ],
+  source: "OFSI (GOV.UK)",
+  sourceUrl: entry.url,
+}));
+
+const europaInjected = injectExtra(europaNews, entry => ({
+  section: "sanctions",
+  category: "EU",
+  region: "European Union",
+  impact: "medium",
+  date: entry.date || "",
+  headline: entry.title,
+  body: [
+    entry.description || `The European Commission (DG FISMA) published: "${entry.title}". Full details are available on finance.ec.europa.eu.`,
+  ],
+  source: "European Commission — Finance News",
+  sourceUrl: entry.url,
+}));
+
+const unInjected = injectExtra(unNotices, entry => ({
+  section: "sanctions",
+  category: "UN",
+  region: "International",
+  impact: "medium",
+  date: entry.date || "",
+  headline: entry.title,
+  body: [
+    entry.description || `The United Nations published: "${entry.title}". Full details are available on press.un.org.`,
+  ],
+  source: "United Nations — Press Releases",
+  sourceUrl: entry.url,
+}));
+
+const bbcInjected = injectExtra(bbcNews, entry => ({
+  section: "sanctions",
+  category: "News",
+  region: "International",
+  impact: "medium",
+  date: entry.date || "",
+  headline: entry.title,
+  body: [
+    entry.description || `BBC News reported: "${entry.title}".`,
+  ],
+  source: "BBC News",
+  sourceUrl: entry.url,
+}));
+
+const ajInjected = injectExtra(ajNews, entry => ({
+  section: "sanctions",
+  category: "News",
+  region: "International",
+  impact: "medium",
+  date: entry.date || "",
+  headline: entry.title,
+  body: [
+    entry.description || `Al Jazeera reported: "${entry.title}".`,
+  ],
+  source: "Al Jazeera",
+  sourceUrl: entry.url,
+}));
+
+const occInjected = injectExtra(occNews, entry => ({
+  section: "occ",
+  category: "OCC",
+  region: "United States",
+  impact: "high",
+  date: entry.date || "",
+  headline: entry.title,
+  body: [
+    entry.description || `The Office of the Comptroller of the Currency (OCC) published: "${entry.title}". Full details are available on occ.gov.`,
+  ],
+  source: "OCC News Releases",
+  sourceUrl: entry.url,
+}));
+
+const extraInjected = [...ofsiInjected, ...europaInjected, ...unInjected, ...bbcInjected, ...ajInjected, ...occInjected];
+if (extraInjected.length > 0) {
+  const baseId2 = (briefing.articles?.length ?? 0) + 1;
+  extraInjected.forEach((a, i) => { a.id = baseId2 + i; });
+  briefing.articles = [...(briefing.articles ?? []), ...extraInjected];
+  console.log(`[gemini-refresh] Injected ${ofsiInjected.length} OFSI + ${europaInjected.length} EU + ${unInjected.length} UN + ${bbcInjected.length} BBC + ${ajInjected.length} Al Jazeera + ${occInjected.length} OCC entries — total articles: ${briefing.articles.length}`);
 }
 
 // ── POST to /api/save-briefing (retry once on failure) ─────────────────────
