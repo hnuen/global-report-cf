@@ -46,23 +46,24 @@ export class StorageManager {
    * Logs but does not throw if some fail.
    */
   async save(briefing: Briefing): Promise<void> {
+    const writable = this.adapters.filter(a => !this.isSkippable(a, "write"));
     const results = await Promise.allSettled(
-      this.adapters
-        .filter(a => !this.isSkippable(a, "write"))
-        .map(async a => {
-          await a.save(briefing);
-          this.markHealthy(a);
-          console.log(`[storage] Saved to ${a.name}`);
-        })
+      writable.map(async a => {
+        await a.save(briefing);
+        this.markHealthy(a);
+        console.log(`[storage] Saved to ${a.name}`);
+      })
     );
 
-    const failures = results.filter(r => r.status === "rejected");
-    failures.forEach((r, i) => {
-      const adapter = this.adapters[i];
+    results.forEach((r, i) => {
+      if (r.status !== "rejected") return;
+      const adapter = writable[i];
       const msg = (r as PromiseRejectedResult).reason?.message ?? String(r);
       console.error(`[storage] Failed to save to ${adapter?.name}: ${msg}`);
       if (adapter) this.markUnhealthy(adapter, msg);
     });
+
+    const failures = results.filter(r => r.status === "rejected");
 
     if (failures.length === results.length) {
       throw new Error("All storage adapters failed to save briefing");
@@ -137,18 +138,26 @@ export class StorageManager {
 export async function buildStorageManager(): Promise<StorageManager> {
   const adapters: StorageAdapter[] = [];
 
-  // Vercel KV — available when deployed on Vercel
-  if (process.env.KV_REST_API_URL || process.env.KV_URL) {
-    const { VercelKVAdapter } = await import("../adapters/vercel-kv");
-    adapters.push(new VercelKVAdapter());
-    console.log("[storage] Registered: Vercel KV");
-  }
-
   // Upstash Redis — available on any platform (Vercel, Railway, Cloudflare, etc.)
-  if (process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN) {
+  // Registered FIRST: load() returns the first adapter's result without checking
+  // freshness, so the live, directly-configured store must take priority over
+  // the legacy Vercel KV shim below (which reads/writes a different key and can
+  // silently fall behind — see src/adapters/vercel-kv.ts).
+  const hasUpstash = !!(process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN);
+  if (hasUpstash) {
     const { UpstashAdapter } = await import("../adapters/upstash");
     adapters.push(new UpstashAdapter());
     console.log("[storage] Registered: Upstash Redis");
+  }
+
+  // Vercel KV — deprecated legacy adapter (writes key "briefing_v1" via the
+  // @upstash/redis SDK, vs. Upstash's "briefing_v7" via plain REST). Only register
+  // it when Upstash isn't already configured directly, so we never end up serving
+  // its key in preference to the live one.
+  if (!hasUpstash && (process.env.KV_REST_API_URL || process.env.KV_URL)) {
+    const { VercelKVAdapter } = await import("../adapters/vercel-kv");
+    adapters.push(new VercelKVAdapter());
+    console.log("[storage] Registered: Vercel KV");
   }
 
   // Memory fallback — always last
