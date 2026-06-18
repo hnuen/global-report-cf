@@ -261,6 +261,77 @@ function parseOccNews(xml) {
   return parseRssItems(xml).filter(e => OCC_KEYWORDS.test(e.title) || OCC_KEYWORDS.test(e.description));
 }
 
+// ── Federal Reserve press releases — direct scrape, no Gemini ─────────────
+// federalreserve.gov publishes an official RSS feed of ALL press releases
+// (monetary policy, enforcement actions, banking applications, other
+// announcements, all mixed together). The "economics" section is scoped to
+// markets/inflation/central banks/trade/energy, which maps most closely to
+// items tagged <category>Monetary Policy</category> — enforcement/banking-
+// application items overlap with the occ/penalties sections instead, so
+// this needs its own parser (parseRssItems doesn't capture <category>) plus
+// a keyword fallback for economics-relevant items that lack that category
+// (e.g. semiannual reports, trade/energy commentary). Fixes the staleness
+// the user reported: economics was previously Gemini-only, same as OCC was.
+function parseFedPressItems(xml) {
+  if (!xml) return [];
+  const entries = [];
+  const itemRe = /<item>([\s\S]*?)<\/item>/g;
+  let m;
+  while ((m = itemRe.exec(xml)) !== null) {
+    const block = m[1];
+    const titleMatch = /<title>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/title>/.exec(block);
+    const linkMatch = /<link>([^<]+)<\/link>/.exec(block);
+    const dateMatch = /<pubDate>([^<]+)<\/pubDate>/.exec(block);
+    const descMatch = /<description>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/description>/.exec(block);
+    const catMatch = /<category>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/category>/.exec(block);
+    if (!titleMatch || !linkMatch) continue;
+    const title = stripHtml(titleMatch[1]).trim();
+    const description = descMatch ? stripHtml(descMatch[1]).trim() : "";
+    const url = linkMatch[1].trim();
+    const category = catMatch ? stripHtml(catMatch[1]).trim() : "";
+    const date = dateMatch
+      ? new Date(dateMatch[1]).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })
+      : "";
+    entries.push({ title, url, date, description, category });
+  }
+  return entries;
+}
+
+const ECONOMICS_KEYWORDS = /monetary policy|inflation|interest rate|federal funds rate|fomc|economic projection|\bgdp\b|recession|trade deficit|tariff|energy price|oil price|jobs report|employment situation|consumer price/i;
+
+function parseFedEconomics(xml) {
+  return parseFedPressItems(xml).filter(e =>
+    e.category === "Monetary Policy" || ECONOMICS_KEYWORDS.test(e.title) || ECONOMICS_KEYWORDS.test(e.description)
+  );
+}
+
+// ── BIS (Bureau of Industry and Security) actions — direct scrape, no Gemini ─
+// federalregister.gov publishes an official JSON API of every Federal
+// Register document (no API key required). Querying by agency returns all
+// BIS filings, but most are routine procedural notices (OMB collection
+// requests, individual "denied export privileges" personnel orders) rather
+// than "export controls, Entity List, EAR enforcement, semiconductor policy"
+// per the bis section's scope — so results are filtered the same way the
+// OCC/sanctions feeds are: keyword match on title + abstract. No LLM involved.
+const BIS_KEYWORDS = /entity list|export control|denied person|export administration regulation|\bear\b|semiconductor|antiboycott|export privilege|embargo|end.?use|deemed export/i;
+
+function parseBisNews(json) {
+  if (!json) return [];
+  let data;
+  try { data = JSON.parse(json); } catch { return []; }
+  const results = data?.results ?? [];
+  return results
+    .filter(r => BIS_KEYWORDS.test(r.title || "") || BIS_KEYWORDS.test(r.abstract || ""))
+    .map(r => ({
+      title: r.title,
+      url: r.html_url,
+      date: r.publication_date
+        ? new Date(r.publication_date).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })
+        : "",
+      description: r.abstract || "",
+    }));
+}
+
 // 5. Load existing cache from GitHub to enable change detection
 async function loadExistingCache() {
   if (!GITHUB_TOKEN || !GITHUB_REPO) return null;
@@ -398,6 +469,18 @@ const occNews = parseOccNews(occXml);
 console.log(`[gemini-refresh] OCC enforcement-relevant news parsed: ${occNews.length} entries`);
 occNews.slice(0, 5).forEach(e => console.log(`  ${e.date} — ${e.title} (${e.url})`));
 
+console.log("[gemini-refresh] Fetching Federal Reserve press releases feed...");
+const fedXml = await fetchOfac("https://www.federalreserve.gov/feeds/press_all.xml");
+const economicsNews = parseFedEconomics(fedXml);
+console.log(`[gemini-refresh] Fed economics-relevant news parsed: ${economicsNews.length} entries`);
+economicsNews.slice(0, 5).forEach(e => console.log(`  ${e.date} — ${e.title} (${e.url})`));
+
+console.log("[gemini-refresh] Fetching Federal Register BIS documents...");
+const bisJson = await fetchOfac("https://www.federalregister.gov/api/v1/documents.json?conditions%5Bagencies%5D%5B%5D=industry-and-security-bureau&order=newest&per_page=20");
+const bisNews = parseBisNews(bisJson);
+console.log(`[gemini-refresh] BIS export-control-relevant documents parsed: ${bisNews.length} entries`);
+bisNews.slice(0, 5).forEach(e => console.log(`  ${e.date} — ${e.title} (${e.url})`));
+
 // ── Early-exit: skip Gemini if nothing changed since last run ─────────────
 // Compare first recent-action URL (most recent = most likely to change),
 // first civil-penalty row (date + name), and whether any programs updated.
@@ -415,16 +498,16 @@ const noNewPrograms  = changedPrograms.length === 0;
 if (noNewActions && noNewPenalties && noNewPrograms) {
   console.log("[gemini-refresh] ✅ No new OFAC data — skipping Gemini to preserve RPD quota");
   // Re-commit cache to refresh updatedAt (app reads this to know last scrape time)
-  await commitOfacCache(recentActions, civilPenalties, programs, ofsiNotices, europaNews, unNotices, bbcNews, ajNews, occNews);
+  await commitOfacCache(recentActions, civilPenalties, programs, ofsiNotices, europaNews, unNotices, bbcNews, ajNews, occNews, economicsNews, bisNews);
 
   // Still touch the saved briefing's lastUpdated so the app shows a fresh
   // "checked at" time on every run, not just runs that found new OFAC data.
   // Zero Gemini calls — reuses the scrape we already did above. merge:true
-  // keeps the economics/religion/bis sections from the last Gemini run.
-  // OFSI/EU/UN/BBC/Al Jazeera/OCC entries are included unconditionally so
-  // they show up in their sections on every run, regardless of the OFAC
-  // early-exit outcome — this is what fixes OCC staleness specifically.
-  const touch = buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices, europaNews, unNotices, bbcNews, ajNews, occNews);
+  // keeps the religion section from the last Gemini run (no direct source).
+  // OFSI/EU/UN/BBC/Al Jazeera/OCC/Fed/BIS entries are included unconditionally
+  // so they show up in their sections on every run, regardless of the OFAC
+  // early-exit outcome — this is what fixes OCC/economics/bis staleness.
+  const touch = buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices, europaNews, unNotices, bbcNews, ajNews, occNews, economicsNews, bisNews);
   if (touch.articles.length > 0) {
     await saveBriefingWithRetry(touch, true);
   }
@@ -435,7 +518,7 @@ console.log(`[gemini-refresh] New data detected — actions:${!noNewActions} pen
 // ── Commit scraped OFAC data to repo as a cache file ──────────────────────
 // The app (CF Workers) can't reach ofac.treasury.gov directly (IP blocked).
 // Committing to the repo lets the app read fresh OFAC data via raw.githubusercontent.com.
-async function commitOfacCache(recentActions, civilPenalties, programs, ofsiNotices = [], europaNews = [], unNotices = [], bbcNews = [], ajNews = [], occNews = []) {
+async function commitOfacCache(recentActions, civilPenalties, programs, ofsiNotices = [], europaNews = [], unNotices = [], bbcNews = [], ajNews = [], occNews = [], economicsNews = [], bisNews = []) {
   if (!GITHUB_TOKEN || !GITHUB_REPO) {
     console.warn("[ofac-cache] Missing GITHUB_TOKEN or GITHUB_REPOSITORY — skipping cache commit");
     return;
@@ -452,6 +535,8 @@ async function commitOfacCache(recentActions, civilPenalties, programs, ofsiNoti
     bbcNews,
     ajNews,
     occNews,
+    economicsNews,
+    bisNews,
   }, null, 2);
   const encoded = Buffer.from(content).toString("base64");
 
@@ -476,17 +561,17 @@ async function commitOfacCache(recentActions, civilPenalties, programs, ofsiNoti
   const res = await fetch(apiUrl, { method: "PUT", headers, body: JSON.stringify(body) });
   if (res.ok) {
     const progCount = Object.keys(programs).length;
-    console.log(`[ofac-cache] ✅ Committed: ${recentActions.length} recent-actions, ${civilPenalties.length} penalties, ${progCount} programs, ${ofsiNotices.length} OFSI notices, ${europaNews.length} EU items, ${unNotices.length} UN items, ${bbcNews.length} BBC items, ${ajNews.length} Al Jazeera items, ${occNews.length} OCC items to ${path}`);
+    console.log(`[ofac-cache] ✅ Committed: ${recentActions.length} recent-actions, ${civilPenalties.length} penalties, ${progCount} programs, ${ofsiNotices.length} OFSI notices, ${europaNews.length} EU items, ${unNotices.length} UN items, ${bbcNews.length} BBC items, ${ajNews.length} Al Jazeera items, ${occNews.length} OCC items, ${economicsNews.length} Fed items, ${bisNews.length} BIS items to ${path}`);
   } else {
     const err = await res.text();
     console.warn(`[ofac-cache] Commit failed (${res.status}): ${err.slice(0, 200)}`);
   }
 }
 
-await commitOfacCache(recentActions, civilPenalties, programs, ofsiNotices, europaNews, unNotices, bbcNews, ajNews, occNews);
+await commitOfacCache(recentActions, civilPenalties, programs, ofsiNotices, europaNews, unNotices, bbcNews, ajNews, occNews, economicsNews, bisNews);
 
 // ── Build fallback briefing from scraped data (when Gemini fails) ──────────
-function buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices = [], europaNews = [], unNotices = [], bbcNews = [], ajNews = [], occNews = []) {
+function buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices = [], europaNews = [], unNotices = [], bbcNews = [], ajNews = [], occNews = [], economicsNews = [], bisNews = []) {
   const nowStr = new Date().toLocaleString("en-US", {
     month: "long", day: "numeric", year: "numeric",
     hour: "2-digit", minute: "2-digit", timeZoneName: "short",
@@ -643,6 +728,45 @@ function buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices = [], 
         entry.description || `The Office of the Comptroller of the Currency (OCC) published: "${entry.title}". Full details are available on occ.gov.`,
       ],
       source: "OCC News Releases",
+      sourceUrl: entry.url,
+    });
+  }
+
+  // Fed press releases (Monetary Policy + economics-relevant) → economics
+  // articles — fixes the staleness the user reported (economics was
+  // previously Gemini-only, frozen the same way OCC was).
+  for (const entry of economicsNews.slice(0, 6)) {
+    articles.push({
+      id: id++,
+      section: "economics",
+      category: "Federal Reserve",
+      region: "United States",
+      impact: "medium",
+      date: entry.date || "",
+      headline: entry.title,
+      body: [
+        entry.description || `The Federal Reserve published: "${entry.title}". Full details are available on federalreserve.gov.`,
+      ],
+      source: "Federal Reserve — Press Releases",
+      sourceUrl: entry.url,
+    });
+  }
+
+  // Federal Register BIS documents (export-control-relevant) → bis articles —
+  // fixes the staleness the user reported (bis was previously Gemini-only).
+  for (const entry of bisNews.slice(0, 6)) {
+    articles.push({
+      id: id++,
+      section: "bis",
+      category: "BIS",
+      region: "United States",
+      impact: "high",
+      date: entry.date || "",
+      headline: entry.title,
+      body: [
+        entry.description || `The Bureau of Industry and Security (BIS) published: "${entry.title}". Full details are available on federalregister.gov.`,
+      ],
+      source: "Federal Register — BIS",
       sourceUrl: entry.url,
     });
   }
@@ -824,7 +948,7 @@ for (const model of GEMINI_MODELS) {
 
 if (!geminiRes?.ok) {
   console.warn("[gemini-refresh] All Gemini models failed — saving structured fallback articles");
-  const fallback = buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices, europaNews, unNotices, bbcNews, ajNews, occNews);
+  const fallback = buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices, europaNews, unNotices, bbcNews, ajNews, occNews, economicsNews, bisNews);
   if (fallback.articles.length === 0) {
     console.error("[gemini-refresh] No OFAC data fetched either — nothing to save");
     process.exit(1);
@@ -851,7 +975,7 @@ const e = clean.lastIndexOf("}");
 if (s === -1 || e === -1) {
   console.error("[gemini-refresh] Could not find JSON in Gemini response — falling back to structured articles");
   console.error("Raw text:", rawText.slice(0, 500));
-  const fallback = buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices, europaNews, unNotices, bbcNews, ajNews, occNews);
+  const fallback = buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices, europaNews, unNotices, bbcNews, ajNews, occNews, economicsNews, bisNews);
   if (fallback.articles.length > 0) {
     await saveBriefingWithRetry(fallback, true);
     process.exit(0);
@@ -885,7 +1009,7 @@ try {
 } catch (parseErr) {
   console.error("[gemini-refresh] JSON parse failed — falling back to structured articles:", parseErr);
   console.error("Raw text slice:", clean.slice(s, s + 500));
-  const fallback = buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices, europaNews, unNotices, bbcNews, ajNews, occNews);
+  const fallback = buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices, europaNews, unNotices, bbcNews, ajNews, occNews, economicsNews, bisNews);
   if (fallback.articles.length > 0) {
     await saveBriefingWithRetry(fallback, true);
     process.exit(0);
@@ -1023,12 +1147,40 @@ const occInjected = injectExtra(occNews, entry => ({
   sourceUrl: entry.url,
 }));
 
-const extraInjected = [...ofsiInjected, ...europaInjected, ...unInjected, ...bbcInjected, ...ajInjected, ...occInjected];
+const economicsInjected = injectExtra(economicsNews, entry => ({
+  section: "economics",
+  category: "Federal Reserve",
+  region: "United States",
+  impact: "medium",
+  date: entry.date || "",
+  headline: entry.title,
+  body: [
+    entry.description || `The Federal Reserve published: "${entry.title}". Full details are available on federalreserve.gov.`,
+  ],
+  source: "Federal Reserve — Press Releases",
+  sourceUrl: entry.url,
+}));
+
+const bisInjected = injectExtra(bisNews, entry => ({
+  section: "bis",
+  category: "BIS",
+  region: "United States",
+  impact: "high",
+  date: entry.date || "",
+  headline: entry.title,
+  body: [
+    entry.description || `The Bureau of Industry and Security (BIS) published: "${entry.title}". Full details are available on federalregister.gov.`,
+  ],
+  source: "Federal Register — BIS",
+  sourceUrl: entry.url,
+}));
+
+const extraInjected = [...ofsiInjected, ...europaInjected, ...unInjected, ...bbcInjected, ...ajInjected, ...occInjected, ...economicsInjected, ...bisInjected];
 if (extraInjected.length > 0) {
   const baseId2 = (briefing.articles?.length ?? 0) + 1;
   extraInjected.forEach((a, i) => { a.id = baseId2 + i; });
   briefing.articles = [...(briefing.articles ?? []), ...extraInjected];
-  console.log(`[gemini-refresh] Injected ${ofsiInjected.length} OFSI + ${europaInjected.length} EU + ${unInjected.length} UN + ${bbcInjected.length} BBC + ${ajInjected.length} Al Jazeera + ${occInjected.length} OCC entries — total articles: ${briefing.articles.length}`);
+  console.log(`[gemini-refresh] Injected ${ofsiInjected.length} OFSI + ${europaInjected.length} EU + ${unInjected.length} UN + ${bbcInjected.length} BBC + ${ajInjected.length} Al Jazeera + ${occInjected.length} OCC + ${economicsInjected.length} Fed + ${bisInjected.length} BIS entries — total articles: ${briefing.articles.length}`);
 }
 
 // ── POST to /api/save-briefing (retry once on failure) ─────────────────────
