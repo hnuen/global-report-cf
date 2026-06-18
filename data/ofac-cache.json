@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-06-18T16:01:51.728Z",
+  "updatedAt": "2026-06-18T16:40:18.369Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260618",
+      "code": "20260618",
+      "title": "Counter Terrorism Designations",
+      "date": "June 18, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260611",
       "code": "20260611",
@@ -53,12 +59,6 @@
       "url": "https://ofac.treasury.gov/recent-actions/20260528_33",
       "code": "20260528_33",
       "title": "Iran-related Designations; Issuance of Russia-related General License and Amended Frequently Asked Questions",
-      "date": "May 28, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260528",
-      "code": "20260528",
-      "title": "Designations Removals",
       "date": "May 28, 2026"
     }
   ],
