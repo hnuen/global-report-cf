@@ -174,7 +174,12 @@ function parseCivilPenalties(html) {
     }
     if (cells.length >= 4 && /\d{2}\/\d{2}\/\d{4}/.test(cells[0])) {
       const linkMatch = /href="([^"]+)"/.exec(rm[1]);
-      rows.push({ date: cells[0], name: cells[1], count: cells[2], amount: cells[3], pdfUrl: linkMatch?.[1] ?? "" });
+      // OFAC's penalties table uses relative hrefs (e.g. "/media/935651/download?inline").
+      // Always store an absolute URL so downstream consumers (Telegram/Discord
+      // markdown links, the app UI) can link to it directly.
+      let pdfUrl = linkMatch?.[1] ?? "";
+      if (pdfUrl && pdfUrl.startsWith("/")) pdfUrl = `https://ofac.treasury.gov${pdfUrl}`;
+      rows.push({ date: cells[0], name: cells[1], count: cells[2], amount: cells[3], pdfUrl });
     }
   }
   return rows;

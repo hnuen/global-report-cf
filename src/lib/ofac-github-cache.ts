@@ -103,6 +103,15 @@ export async function fetchOfacCache(): Promise<OfacCache | null> {
 
 // ── Article converters ───────────────────────────────────────────────────────
 
+// Some older cached entries (and any scraper edge case) may still have a
+// relative pdfUrl like "/media/935651/download?inline" instead of an
+// absolute URL — relative links aren't clickable from Telegram/Discord
+// messages or the app UI, so always normalize before using one as sourceUrl.
+function absOfacUrl(url: string): string {
+  if (url && url.startsWith("/")) return `https://ofac.treasury.gov${url}`;
+  return url;
+}
+
 /** Convert OFAC cache → Article[] for the sanctions section */
 export function recentActionsToArticles(actions: OfacRecentAction[], startId = 9000): Article[] {
   return actions.slice(0, 15).map((entry, i) => ({
@@ -140,11 +149,11 @@ export function civilPenaltiesToArticles(penalties: OfacCivilPenalty[], startId 
       body: [
         `The Office of Foreign Assets Control (OFAC) assessed a civil monetary penalty of ${amount} against ${row.name} for apparent violations of OFAC-administered sanctions programs.`,
         row.pdfUrl
-          ? `The settlement agreement is available at: ${row.pdfUrl}`
+          ? `The settlement agreement is available at: ${absOfacUrl(row.pdfUrl)}`
           : `The action was recorded on ${row.date}.`,
       ],
       source: "OFAC Civil Penalties and Enforcement Information",
-      sourceUrl: row.pdfUrl || "https://ofac.treasury.gov/civil-penalties-and-enforcement-information",
+      sourceUrl: row.pdfUrl ? absOfacUrl(row.pdfUrl) : "https://ofac.treasury.gov/civil-penalties-and-enforcement-information",
     };
   });
 }
@@ -195,7 +204,7 @@ export function civilPenaltiesToPenaltyRecords(penalties: OfacCivilPenalty[]): P
       currency: "USD",
       violation: `Civil monetary penalty for apparent violations of OFAC-administered sanctions programs${row.count ? ` (${row.count})` : ""} — see settlement document for full details.`,
       jurisdiction: "US",
-      sourceUrl: row.pdfUrl || "https://ofac.treasury.gov/civil-penalties-and-enforcement-information",
+      sourceUrl: row.pdfUrl ? absOfacUrl(row.pdfUrl) : "https://ofac.treasury.gov/civil-penalties-and-enforcement-information",
     };
   });
 }
