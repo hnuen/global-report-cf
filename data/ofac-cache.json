@@ -1,6 +1,18 @@
 {
-  "updatedAt": "2026-06-18T16:01:51.728Z",
+  "updatedAt": "2026-06-18T23:20:39.844Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260618",
+      "code": "20260618",
+      "title": "Counter Terrorism Designations",
+      "date": "June 18, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260618_33",
+      "code": "20260618_33",
+      "title": "Issuance of Venezuela-related General Licenses and Amended Frequently Asked Question",
+      "date": "June 18, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260611",
       "code": "20260611",
@@ -48,18 +60,6 @@
       "code": "20260529",
       "title": "Counter Terrorism Designations; Issuance of Amended Iran-related Frequently Asked Question",
       "date": "May 29, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260528_33",
-      "code": "20260528_33",
-      "title": "Iran-related Designations; Issuance of Russia-related General License and Amended Frequently Asked Questions",
-      "date": "May 28, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260528",
-      "code": "20260528",
-      "title": "Designations Removals",
-      "date": "May 28, 2026"
     }
   ],
   "civilPenalties": [
@@ -99,5 +99,379 @@
       "pdfUrl": "https://ofac.treasury.gov/media/935006/download?inline"
     }
   ],
-  "programs": {}
+  "programs": {},
+  "ofsiNotices": [
+    {
+      "title": "UK issues largest penalty for financial sanctions breaches since Russia’s 2022 illegal invasion of Ukraine",
+      "url": "https://www.gov.uk/government/news/uk-issues-largest-penalty-for-financial-sanctions-breaches-since-russias-2022-illegal-invasion-of-ukraine",
+      "date": "June 17, 2026"
+    },
+    {
+      "title": "Penalty issued for breach of Russia Sanctions",
+      "url": "https://www.gov.uk/government/news/penalty-issued-for-breach-of-russia-sanctions",
+      "date": "July 30, 2025"
+    },
+    {
+      "title": "Penalty issued against subsidiary of major law firm for breaches of sanctions linked to Russia’s invasion of Ukraine",
+      "url": "https://www.gov.uk/government/news/penalty-issued-against-subsidiary-of-major-law-firm-for-breaches-of-sanctions-linked-to-russias-invasion-of-ukraine",
+      "date": "March 20, 2025"
+    },
+    {
+      "title": "Extreme Right Wing group sanctioned by HM Treasury under Domestic Counter-Terrorism Regulations",
+      "url": "https://www.gov.uk/government/news/extreme-right-wing-group-sanctioned-by-hm-treasury-under-domestic-counter-terrorism-regulations",
+      "date": "January 8, 2025"
+    },
+    {
+      "title": "New Sanctions under Domestic Counter-Terrorism Regulations",
+      "url": "https://www.gov.uk/government/news/new-sanctions-under-domestic-counter-terrorism-regulations",
+      "date": "December 3, 2024"
+    },
+    {
+      "title": "Penalty issued for breaches linked to Russia's invasion of Ukraine",
+      "url": "https://www.gov.uk/government/news/penalty-issued-for-breaches-linked-to-russias-invasion-of-ukraine",
+      "date": "September 27, 2024"
+    },
+    {
+      "title": "Travel ban on two individuals under counter-terrorism sanctions",
+      "url": "https://www.gov.uk/government/news/travel-ban-on-two-individuals-under-counter-terrorism-sanctions",
+      "date": "August 29, 2024"
+    },
+    {
+      "title": "New sanctions on persons linked to Hamas-supporting media network",
+      "url": "https://www.gov.uk/government/news/new-sanctions-on-persons-linked-to-hamas-supporting-media-network",
+      "date": "March 27, 2024"
+    },
+    {
+      "title": "Suspected Hizballah financier sanctioned under counter-terrorism regulations",
+      "url": "https://www.gov.uk/government/news/suspected-hizballah-financier-sanctioned-under-counter-terrorism-regulations",
+      "date": "April 18, 2023"
+    },
+    {
+      "title": "UK takes steps to further facilitate aid flow into Syria",
+      "url": "https://www.gov.uk/government/news/uk-takes-steps-to-further-facilitate-aid-flow-into-syria",
+      "date": "February 15, 2023"
+    },
+    {
+      "title": "UK cracks down on ransomware actors",
+      "url": "https://www.gov.uk/government/news/uk-cracks-down-on-ransomware-actors",
+      "date": "February 9, 2023"
+    },
+    {
+      "title": "UK sanctions on Russia top £18 billion for the first time",
+      "url": "https://www.gov.uk/government/news/uk-sanctions-on-russia-top-18-billion-for-the-first-time",
+      "date": "November 10, 2022"
+    },
+    {
+      "title": "UK Statement on Further Economic Sanctions Targeted at the Central Bank of the Russian Federation",
+      "url": "https://www.gov.uk/government/news/uk-statement-on-further-economic-sanctions-targeted-at-the-central-bank-of-the-russian-federation",
+      "date": "February 28, 2022"
+    },
+    {
+      "title": "New guidance on financial and trade sanctions for importers and exporters",
+      "url": "https://www.gov.uk/government/news/new-guidance-on-financial-and-trade-sanctions-for-importers-and-exporters",
+      "date": "May 11, 2018"
+    },
+    {
+      "title": "Chancellor leads global crackdown on dirty money",
+      "url": "https://www.gov.uk/government/news/chancellor-leads-global-crackdown-on-dirty-money",
+      "date": "April 20, 2018"
+    },
+    {
+      "title": "New guidance to help charities comply with financial sanctions",
+      "url": "https://www.gov.uk/government/news/new-guidance-to-help-charities-comply-with-financial-sanctions",
+      "date": "October 19, 2017"
+    },
+    {
+      "title": "New penalties for breaching financial sanctions now in force",
+      "url": "https://www.gov.uk/government/news/new-penalties-for-breaching-financial-sanctions-now-in-force",
+      "date": "April 3, 2017"
+    },
+    {
+      "title": "New million pound penalties for breaching financial sanctions",
+      "url": "https://www.gov.uk/government/news/new-million-pound-penalties-for-breaching-financial-sanctions",
+      "date": "December 1, 2016"
+    },
+    {
+      "title": "New body to support financial sanctions implementation launched",
+      "url": "https://www.gov.uk/government/news/new-body-to-support-financial-sanctions-implementation-launched",
+      "date": "March 31, 2016"
+    }
+  ],
+  "europaNews": [
+    {
+      "title": "Statement on the seventh Sanctions Coordinators Forum",
+      "url": "https://finance.ec.europa.eu/news/statement-seventh-sanctions-coordinators-forum-2026-04-30_en",
+      "date": "April 30, 2026",
+      "description": "Today, EU Sanctions Envoy, David O’Sullivan, convened the sixth Sanctions Coordinators Forum, gathering high‑level representatives from all EU Member States and a broad coalition of international partners. Representatives of the Government of Ukraine joined for a dedicated session."
+    },
+    {
+      "title": "Statement by Commissioner Albuquerque on the outcomes of the ninth high-level meeting on sanctions implementation",
+      "url": "https://finance.ec.europa.eu/news/statement-commissioner-albuquerque-outcomes-ninth-high-level-meeting-sanctions-implementation-2026-04-30_en",
+      "date": "April 30, 2026",
+      "description": "High‑level representatives from Member States, alongside the Commission and the European External Action Service, came together to share best practices and success stories, and discuss challenges."
+    },
+    {
+      "title": "EU adopts 20th package of sanctions against Russia",
+      "url": "https://finance.ec.europa.eu/news/eu-adopts-20th-package-sanctions-against-russia-2026-04-23_en",
+      "date": "April 24, 2026",
+      "description": "The Commission welcomes the Council's adoption of the 20th Russia sanctions package, that puts further pressure on Russia to engage in negotiations and do so on terms acceptable for Ukraine."
+    },
+    {
+      "title": "Commission welcomes new sanctions against Iran",
+      "url": "https://finance.ec.europa.eu/news/commission-welcomes-new-sanctions-against-iran-2026-01-30_en",
+      "date": "January 30, 2026",
+      "description": "The restrictive measures consist of an asset freeze, travel bans to the EU, and a prohibition to make funds or economic resources available to those listed."
+    },
+    {
+      "title": "New dynamic mechanism to lower price cap for Russian crude oil to $44,10 per barrel",
+      "url": "https://finance.ec.europa.eu/news/new-dynamic-mechanism-lower-price-cap-russian-crude-oil-4410-barrel-2026-01-15_en",
+      "date": "January 30, 2026",
+      "description": "Today, the new automatic and dynamic mechanism for price adaptation of the oil price cap for Russian crude will be applied for the first time."
+    },
+    {
+      "title": "Sanctions: Member States designate 41 additional vessels in Russia's shadow fleet",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_25_3129",
+      "date": "December 18, 2025",
+      "description": "With these new listings, a total of 597 vessels are now listed by the EU."
+    },
+    {
+      "title": "Sanctions: The EU adopts new measures against the Russian shadow fleet ecosystem and Belarus",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_25_3070",
+      "date": "December 15, 2025",
+      "description": "These new measures aim at further increasing the pressure on Russia and Belarus and supporting EU's goal of achieving a just and lasting peace for Ukraine."
+    },
+    {
+      "title": "Commission adds Russia to its list of high-risk jurisdictions to strengthen international fight against financial crime",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_25_2910",
+      "date": "December 3, 2025",
+      "description": "The technical assessment conducted by the Commission concluded that Russia meets the criteria to be designated as a high‑risk third country."
+    }
+  ],
+  "unNotices": [
+    {
+      "title": "Security Council Sanctions Committee concerning Democratic Republic of the Congo Discusses Final Report of Group of Experts",
+      "url": "https://press.un.org/en/2026/sc16391.doc.htm",
+      "date": "June 18, 2026",
+      "description": "On 5 June 2026, the Security Council Committee established pursuant to resolution 1533 (2004) concerning the Democratic Republic of the Congo held informal consultations during which the Coordinator of the Group of Experts presented the Group’s final report."
+    }
+  ],
+  "bbcNews": [
+    {
+      "title": "US lifts naval blockade as Iran's supreme leader says Trump made deal 'out of desperation'",
+      "url": "https://www.bbc.com/news/articles/c8r2eejdd35o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "Iran's supreme leader says he disagrees with the deal and Donald Trump signed it \"out of desperation\"."
+    },
+    {
+      "title": "Bowen: US-Iran deal raises inescapable question of what the war was for",
+      "url": "https://www.bbc.com/news/articles/clyegr2mp8jo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "While the human cost is clear, the Iranian regime has not just survived the war, it has been empowered."
+    },
+    {
+      "title": "What Iran and US get from deal and why both could struggle to keep it",
+      "url": "https://www.bbc.com/news/articles/c932yqz8lggo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "BBC analysts assess the claims by both Washington and Tehran to have won a victory with the deal to end their war."
+    },
+    {
+      "title": "Moscow residents complain of black rain after largest Ukrainian attack hits oil refinery",
+      "url": "https://www.bbc.com/news/articles/c98291g5rr1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "A refinery and a shopping centre burned after almost 200 Ukrainian drones struck an area to the south-east of the Russian capital."
+    },
+    {
+      "title": "Weapons, money and ships: How is this Iran deal different from others?",
+      "url": "https://www.bbc.com/news/articles/c74ynmnrwmeo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "BBC Verify examines how the new deal between the US and Iran affects three key areas."
+    },
+    {
+      "title": "What's in the US-Iran agreement?",
+      "url": "https://www.bbc.com/news/articles/cvgmqzr6p9mo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "The 14-paragraph memo includes an end to fighting, an agreement that Iran will never have a nuclear weapon, and a $300bn redevelopment package for Iran."
+    },
+    {
+      "title": "First Russian shadow fleet tanker enters Channel since Smyrtos boarding",
+      "url": "https://www.bbc.com/news/articles/cgk6d12lz6jo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "Forwarder, a Russian-flagged ship which left port in Primorsk last week, entered the Channel on Wednesday evening."
+    },
+    {
+      "title": "US-Iran deal leaves core sticking points unresolved - and a $300bn question",
+      "url": "https://www.bbc.com/news/articles/cgmd8dgklzzo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "Trump has insisted the deal ensures that Iran will never buy, develop or produce a nuclear weapon. But text of the agreement falls short of that."
+    },
+    {
+      "title": "Will Putin change tactics after Ukrainian drone attacks?",
+      "url": "https://www.bbc.com/news/videos/cgjx87jljqpo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "Steve Rosenberg explains what Russia's next steps may be after frequent Ukrainian drone attacks."
+    },
+    {
+      "title": "Moment Trump signs US-Iran agreement at Palace of Versailles",
+      "url": "https://www.bbc.com/news/videos/crm03y1xx2no?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "The 14-point Memorandum of Understanding was signed at a post-G7 dinner in France."
+    },
+    {
+      "title": "'Warning fire went up': Couple on board yacht describe encounter with Russian warship",
+      "url": "https://www.bbc.com/news/videos/cevldxgklxko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 16, 2026",
+      "description": "The Russian frigate fired warning shots near a British retired couple on a yacht in the English Channel."
+    },
+    {
+      "title": "Five ways the Iran peace deal could affect you and your money",
+      "url": "https://www.bbc.com/news/articles/c4g5574pwreo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "With fuel and gas prices having fallen in recent days, we look at how the end of hostitlities might affect you - in five charts."
+    },
+    {
+      "title": "'Do not travel' advice for Dubai dropped",
+      "url": "https://www.bbc.com/news/articles/cddl29lg5gro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "Thousands of Brits were left stranded in the Middle East when the US-Iran war broke out in early 2026."
+    },
+    {
+      "title": "Cadbury chocolate-owner Mondelez defends staying in Russia",
+      "url": "https://www.bbc.com/news/articles/cy06d00jpn0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 16, 2026",
+      "description": "Mondelez boss Dirk Van de Put says it was the \"right decision\" to remain after the war with Ukraine."
+    },
+    {
+      "title": "How the Iran war affects your money and bills",
+      "url": "https://www.bbc.com/news/articles/c2e4ygndjpwo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 16, 2026",
+      "description": "The conflict in the Middle East has increased pressure on the cost of petrol, household energy bills and even food."
+    },
+    {
+      "title": "How could the US-Iran deal affect oil prices and the cost of food?",
+      "url": "https://www.bbc.com/news/articles/cd0p8me2m5do?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 15, 2026",
+      "description": "Experts warn the impact of the war will continue to affect the global economy for months to come."
+    },
+    {
+      "title": "What's happening to UK petrol and diesel prices now the US and Iran have a deal?",
+      "url": "https://www.bbc.com/news/articles/c20zgjzz0e4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 15, 2026",
+      "description": "When the conflict began on 28 February, fuel costs jumped as the war disrupted the production and transportation of energy across the Middle East."
+    },
+    {
+      "title": "Five ways the Iran peace deal could affect you and your money",
+      "url": "https://www.bbc.com/news/articles/c4g5574pwreo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "With fuel and gas prices having fallen in recent days, we look at how the end of hostitlities might affect you - in five charts."
+    }
+  ],
+  "ajNews": [
+    {
+      "title": "Myanmar military airstrike kills seven civilians in Rakhine state",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/18/aje-onl-nf_myanmar-military-airstrike-kills-seven-civilians-180626?traffic_source=rss",
+      "date": "June 18, 2026",
+      "description": "A Myanmar military airstrike on the Rakhine state town of Kyauktaw killed at least seven civilians."
+    },
+    {
+      "title": "Pro-Israel hawks in US criticise Iran MoU but avoid clashing with Trump",
+      "url": "https://www.aljazeera.com/news/2026/6/18/pro-israel-hawks-in-us-criticise-iran-mou-but-avoid-clashing-with-trump?traffic_source=rss",
+      "date": "June 18, 2026",
+      "description": "Analysts warn that pro-Israel groups and politicians in Washington will likely push to derail diplomacy with Tehran."
+    },
+    {
+      "title": "Iran’s supreme leader says approved US deal despite having ‘different’ view",
+      "url": "https://www.aljazeera.com/news/2026/6/18/irans-supreme-leader-says-approved-us-deal-despite-having-different-view?traffic_source=rss",
+      "date": "June 18, 2026",
+      "description": "Iran says it has suspended Strait of Hormuz transit charges for commercial vessels for 60 days."
+    },
+    {
+      "title": "MoU’s $300bn Iran reconstruction fund becomes US political flashpoint",
+      "url": "https://www.aljazeera.com/news/2026/6/18/mous-300bn-iran-reconstruction-fund-becomes-us-political-flashpoint?traffic_source=rss",
+      "date": "June 18, 2026",
+      "description": "Trump says US will not pay for planned fund as part of Iran MoU, as lawmakers connect price tag to affordability issues."
+    },
+    {
+      "title": "Pakistan signs US-Iran MoU",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/18/pakistan-signs-us-iran-mou?traffic_source=rss",
+      "date": "June 18, 2026",
+      "description": "Pakistan’s Prime Minister Shehbaz Sharif signed a US-Iran memorandum of understanding aimed at ending the war."
+    },
+    {
+      "title": "US vice president slams Israel over criticism of Trump’s Iran deal",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/18/us-vice-president-slams-israel-over-criticism-of-trumps-iran-deal?traffic_source=rss",
+      "date": "June 18, 2026",
+      "description": "JD Vance slammed members of Israel’s government for criticising US President Donald Trump over his Iran deal efforts."
+    }
+  ],
+  "occNews": [
+    {
+      "title": "OCC Announces Enforcement Actions for May 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-40.html",
+      "date": "May 21, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for May 2026."
+    }
+  ],
+  "economicsNews": [],
+  "bisNews": [
+    {
+      "title": "Agency Information Collection Activities; Submission to the Office of Management and Budget (OMB) for Review and Approval; Comment Request; Reporting of Violations of the Export Administration Regulations",
+      "url": "https://www.federalregister.gov/documents/2026/05/21/2026-10217/agency-information-collection-activities-submission-to-the-office-of-management-and-budget-omb-for",
+      "date": "May 21, 2026",
+      "description": ""
+    },
+    {
+      "title": "Agency Information Collection Activities; Submission to the Office of Management and Budget (OMB) for Review and Approval; Comment Request; Entity List and Unverified List Requests",
+      "url": "https://www.federalregister.gov/documents/2026/05/21/2026-10216/agency-information-collection-activities-submission-to-the-office-of-management-and-budget-omb-for",
+      "date": "May 21, 2026",
+      "description": ""
+    },
+    {
+      "title": "Emerging Technology Technical Advisory Committee",
+      "url": "https://www.federalregister.gov/documents/2026/05/14/2026-09580/emerging-technology-technical-advisory-committee",
+      "date": "May 14, 2026",
+      "description": "The Emerging Technology Technical Advisory Committee (ETTAC) advises and assists the Department of Commerce on matters related to export control policies. The ETTAC will meet on June 2, 2026, to review and discuss these matters. This meeting will be partially closed to the public pursuant to the exemptions under the Federal Advisory Committee Act (FACA) and the Government in the Sunshine Act. The meeting will be held in person, with no option for virtual attendance."
+    },
+    {
+      "title": "Agency Information Collection Activities; Submission to the Office of Management and Budget (OMB) for Review and Approval; Comment Request; Voluntary Self-Disclosure of Antiboycott Violations",
+      "url": "https://www.federalregister.gov/documents/2026/04/09/2026-06901/agency-information-collection-activities-submission-to-the-office-of-management-and-budget-omb-for",
+      "date": "April 9, 2026",
+      "description": "The Department of Commerce, in accordance with the Paperwork Reduction Act of 1995 (PRA), invites the general public and other Federal agencies to comment on proposed, and continuing information collections, which helps us assess the impact of our information collection requirements and minimize the public's reporting burden. The purpose of this notice is to allow for 60 days of public comment preceding submission of the collection to OMB."
+    },
+    {
+      "title": "Extension of Authorized Integrated Circuit (IC) Designer Status and Application Deadline To Become an Approved IC Designer",
+      "url": "https://www.federalregister.gov/documents/2026/04/09/2026-06851/extension-of-authorized-integrated-circuit-ic-designer-status-and-application-deadline-to-become-an",
+      "date": "April 9, 2026",
+      "description": "The Bureau of Industry and Security (BIS) is revising the Export Administration Regulations (EAR) by extending by about eight months the triggering date for authorized integrated circuit designer status and submission date for applications to become an approved integrated circuit (IC) designer. The new date is December 31, 2026."
+    },
+    {
+      "title": "Aviastar-TU, 5 b. 7 Leningradsky prospect g. Moskva, 125040, Moscow, Russia; Order Renewing Temporary Denial of Export Privileges",
+      "url": "https://www.federalregister.gov/documents/2026/03/31/2026-06161/aviastar-tu-5-b-7-leningradsky-prospect-g-moskva-125040-moscow-russia-order-renewing-temporary",
+      "date": "March 31, 2026",
+      "description": ""
+    },
+    {
+      "title": "Agency Information Collection Activities; Submission to the Office of Management and Budget (OMB) for Review and Approval; Comment Request; Entity List and Unverified List Requests",
+      "url": "https://www.federalregister.gov/documents/2026/02/27/2026-03965/agency-information-collection-activities-submission-to-the-office-of-management-and-budget-omb-for",
+      "date": "February 27, 2026",
+      "description": "The Department of Commerce, in accordance with the Paperwork Reduction Act of 1995 (PRA), invites the general public and other Federal agencies to comment on proposed, and continuing information collections, which helps us assess the impact of our information collection requirements and minimize the public's reporting burden. The purpose of this notice is to allow for 60 days of public comment preceding submission of the collection to OMB."
+    },
+    {
+      "title": "Agency Information Collection Activities; Submission to the Office of Management and Budget (OMB) for Review and Approval; Comment Request; Reporting of Violations of the Export Administration Regulations",
+      "url": "https://www.federalregister.gov/documents/2026/02/24/2026-03676/agency-information-collection-activities-submission-to-the-office-of-management-and-budget-omb-for",
+      "date": "February 24, 2026",
+      "description": "The Department of Commerce, in accordance with the Paperwork Reduction Act of 1995 (PRA), invites the general public and other Federal agencies to comment on proposed, and continuing information collections, which helps us assess the impact of our information collection requirements and minimize the public's reporting burden. The purpose of this notice is to allow for 60 days of public comment preceding submission of the collection to OMB."
+    },
+    {
+      "title": "Conforming Change to the Export Administration Regulations for Cambodia",
+      "url": "https://www.federalregister.gov/documents/2026/02/04/2026-02262/conforming-change-to-the-export-administration-regulations-for-cambodia",
+      "date": "February 4, 2026",
+      "description": "In this final rule, the Bureau of Industry and Security (BIS) makes a conforming change to the Export Administration Regulations (EAR) to reflect that Cambodia is no longer a Country Group D:5 country. On November 7, 2025, the Department of State published a final rule, \"International Traffic in Arms Regulations: Changes to Section 126.1,\" that removed Cambodia as an arms embargoed destination under the International Traffic in Arms Regulations (ITAR), pursuant to a determination made by the Secretary of State."
+    },
+    {
+      "title": "Streamlining Export Controls for Drone Exports",
+      "url": "https://www.federalregister.gov/documents/2026/01/21/2026-01059/streamlining-export-controls-for-drone-exports",
+      "date": "January 21, 2026",
+      "description": "The Bureau of Industry and Security (BIS) is easing export controls on certain civil Unmanned Aerial Vehicles (UAVs) and related technologies, which currently need a license to be exported to most countries. In particular, this interim final rule (IFR): a) allows less sensitive UAVs--namely, commercial UAVs with a maximum endurance of less than one hour, for which there is broad foreign availability--to be exported to most Wassenaar Arrangement Participating States (Country Group A:1) without a license; and b) allows more capable non-military UAVs--namely, certain long-range cargo delivery and agricultural spraying drones--to be exported to certain U.S. partners and allies (Country Group A:5) under License Exception Strategic Trade Authorization (STA). Exports pursuant to License Exception STA are subject to notification and reporting requirements to ensure the security of the exports. BIS is making these changes pursuant to Executive Order (E.O.) 14307, \"Unleashing American Drone Dominance.\""
+    }
+  ]
 }
