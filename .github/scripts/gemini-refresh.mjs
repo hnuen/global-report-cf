@@ -248,6 +248,15 @@ if (noNewActions && noNewPenalties && noNewPrograms) {
   console.log("[gemini-refresh] ✅ No new OFAC data — skipping Gemini to preserve RPD quota");
   // Re-commit cache to refresh updatedAt (app reads this to know last scrape time)
   await commitOfacCache(recentActions, civilPenalties, programs);
+
+  // Still touch the saved briefing's lastUpdated so the app shows a fresh
+  // "checked at" time on every run, not just runs that found new OFAC data.
+  // Zero Gemini calls — reuses the scrape we already did above. merge:true
+  // keeps the economics/religion/occ/bis sections from the last Gemini run.
+  const touch = buildFallbackBriefing(recentActions, civilPenalties);
+  if (touch.articles.length > 0) {
+    await saveBriefingWithRetry(touch, true);
+  }
   process.exit(0);
 }
 console.log(`[gemini-refresh] New data detected — actions:${!noNewActions} penalties:${!noNewPenalties} programs:${!noNewPrograms} — calling Gemini`);
