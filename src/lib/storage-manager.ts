@@ -138,26 +138,16 @@ export class StorageManager {
 export async function buildStorageManager(): Promise<StorageManager> {
   const adapters: StorageAdapter[] = [];
 
-  // Upstash Redis — available on any platform (Vercel, Railway, Cloudflare, etc.)
-  // Registered FIRST: load() returns the first adapter's result without checking
-  // freshness, so the live, directly-configured store must take priority over
-  // the legacy Vercel KV shim below (which reads/writes a different key and can
-  // silently fall behind — see src/adapters/vercel-kv.ts).
-  const hasUpstash = !!(process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN);
-  if (hasUpstash) {
+  // Upstash Redis — the live store. Works on any platform (Vercel, Railway,
+  // Cloudflare, etc.) via plain REST calls, which is also why it's the only
+  // Redis adapter kept here: the old Vercel KV adapter (key "briefing_v1",
+  // via the @upstash/redis SDK) was removed after it caused the app to get
+  // stuck serving a stale snapshot — see git history for storage-manager.ts
+  // around 2026-06-18 if you need the postmortem.
+  if (process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN) {
     const { UpstashAdapter } = await import("../adapters/upstash");
     adapters.push(new UpstashAdapter());
     console.log("[storage] Registered: Upstash Redis");
-  }
-
-  // Vercel KV — deprecated legacy adapter (writes key "briefing_v1" via the
-  // @upstash/redis SDK, vs. Upstash's "briefing_v7" via plain REST). Only register
-  // it when Upstash isn't already configured directly, so we never end up serving
-  // its key in preference to the live one.
-  if (!hasUpstash && (process.env.KV_REST_API_URL || process.env.KV_URL)) {
-    const { VercelKVAdapter } = await import("../adapters/vercel-kv");
-    adapters.push(new VercelKVAdapter());
-    console.log("[storage] Registered: Vercel KV");
   }
 
   // Memory fallback — always last

@@ -28,7 +28,7 @@ export interface Briefing {
 
 // ── Platform health / failover types ─────────────────────────────────────────
 
-export type PlatformId = "vercel-kv" | "upstash" | "cloudflare-kv" | "memory";
+export type PlatformId = "upstash" | "cloudflare-kv" | "memory";
 
 export interface PlatformHealth {
   id: PlatformId;
