@@ -6,7 +6,7 @@
  * src/lib/sanctions-programs-library.ts file.
  *
  * WHY THIS EXISTS
- * sanctions-programs-library.ts has zero programmatic writers. gemini-refresh.mjs
+ * sanctions-programs-library.ts has zero programmatic writers. refresh-briefing.mjs
  * already scrapes each OFAC program page (EOs, GL PDF links, FR notices) into
  * data/ofac-cache.json, but that data was never wired into the curated library —
  * so a newly issued GL could sit in the cache indefinitely without ever showing up
