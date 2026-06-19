@@ -1225,6 +1225,8 @@ export default function GlobalMonitor() {
           </div>
         </div>
       )}
+      <div className="layout">
+        <main>
       {section==="sanctions" && ofacProgram && (()=>{
         const prog=SANCTIONS_PROGRAMS.find(p=>p.id===ofacProgram);
         if(!prog) return null;
@@ -1397,8 +1399,6 @@ export default function GlobalMonitor() {
           </div>
         </div>
       )}
-      <div className="layout">
-        <main>
           {/* Mobile-only compact key-figures strip — scrollable horizontal chips */}
           {(() => {
             const kfAll = sidebarSecs.flatMap(s => {
