@@ -176,13 +176,14 @@ function parseOfsiNotices(xml) {
 function parseRssItems(xml) {
   if (!xml) return [];
   const entries = [];
-  const itemRe = /<item>([\s\S]*?)<\/item>/g;
+  const itemRe = /<item[^>]*>([\s\S]*?)<\/item>/gi;
   let m;
   while ((m = itemRe.exec(xml)) !== null) {
     const block = m[1];
     const titleMatch = /<title>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/title>/.exec(block);
-    const linkMatch = /<link>([^<]+)<\/link>/.exec(block);
-    const dateMatch = /<pubDate>([^<]+)<\/pubDate>/.exec(block);
+    // Some feeds (e.g. Federal Reserve) CDATA-wrap <link>; tolerate both forms.
+    const linkMatch = /<link>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/link>/.exec(block);
+    const dateMatch = /<pubDate>(?:<!\[CDATA\[)?([^<\]]+)/.exec(block);
     const descMatch = /<description>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/description>/.exec(block);
     if (!titleMatch || !linkMatch) continue;
     const title = stripHtml(titleMatch[1]).trim();
@@ -275,13 +276,18 @@ function parseOccNews(xml) {
 function parseFedPressItems(xml) {
   if (!xml) return [];
   const entries = [];
-  const itemRe = /<item>([\s\S]*?)<\/item>/g;
+  // Tolerant to attributes (e.g. <item rdf:about="...">) and case, in case the
+  // server returns a slightly different feed flavor to some requesters.
+  const itemRe = /<item[^>]*>([\s\S]*?)<\/item>/gi;
   let m;
   while ((m = itemRe.exec(xml)) !== null) {
     const block = m[1];
     const titleMatch = /<title>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/title>/.exec(block);
-    const linkMatch = /<link>([^<]+)<\/link>/.exec(block);
-    const dateMatch = /<pubDate>([^<]+)<\/pubDate>/.exec(block);
+    // Federal Reserve's feed CDATA-wraps <link> (<link><![CDATA[https://...]]></link>);
+    // the old [^<]+ pattern required a non-"<" char right after <link>, which
+    // immediately fails on "<![CDATA[" and silently dropped every single item.
+    const linkMatch = /<link>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/link>/.exec(block);
+    const dateMatch = /<pubDate>(?:<!\[CDATA\[)?([^<\]]+)/.exec(block);
     const descMatch = /<description>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/description>/.exec(block);
     const catMatch = /<category>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/category>/.exec(block);
     if (!titleMatch || !linkMatch) continue;
