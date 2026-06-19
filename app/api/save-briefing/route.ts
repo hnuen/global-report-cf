@@ -24,23 +24,59 @@ export async function POST(request: NextRequest) {
 
     const storage = await buildStorageManager();
 
-    // merge=true: only replace sections present in the new briefing, keep others from Redis.
-    // Used by the structured fallback (which only covers sanctions + penalties) so it doesn't
-    // wipe economics/regions/occ/bis articles from a previous successful Gemini run.
+    // merge=true: used by the structured/fallback path, which runs on nearly every
+    // GitHub Actions invocation (Gemini is skipped whenever OFAC has no new data,
+    // to preserve daily quota). That path only ever carries this run's freshly
+    // scraped items per section (e.g. up to 6 OCC entries, 8 Regions entries).
+    //
+    // Previously this did a full per-section REPLACE: any section present in the
+    // new payload had its old articles discarded entirely and swapped for just
+    // this run's scrape. That's fine for high-frequency feeds, but it actively
+    // destroyed content for low-frequency ones — e.g. OCC publishes enforcement
+    // batches roughly monthly, so a run that only found 1 fresh OCC item would
+    // wipe out everything else previously accumulated in that section, visibly
+    // shrinking it to a single story. Fixed 2026-06-19: merge at the ARTICLE
+    // level instead — keep existing articles for a touched section too, just
+    // dedup by sourceUrl (new wins on collision) and cap so history doesn't
+    // grow unbounded across hundreds of daily runs.
+    const SECTION_CAP = 20;
     let toSave = briefing as Briefing;
     if (merge) {
       const { loadBriefing } = await import("@/src/lib/orchestrator");
       const existing = await loadBriefing();
       if (existing?.articles?.length) {
         const newSections = new Set(briefing.articles.map((a: any) => a.section));
-        const keptArticles = existing.articles.filter((a: any) => !newSections.has(a.section));
+        const newUrls = new Set(briefing.articles.map((a: any) => a.sourceUrl).filter(Boolean));
+
+        // Sections this payload doesn't touch at all — carry over unchanged.
+        const untouchedArticles = existing.articles.filter((a: any) => !newSections.has(a.section));
+
+        // Sections this payload DOES touch — merge instead of replace: this
+        // run's articles first (newest), then existing articles for that same
+        // section that aren't duplicates (by sourceUrl), capped per section.
+        const mergedTouched: any[] = [];
+        for (const section of newSections) {
+          const incoming = briefing.articles.filter((a: any) => a.section === section);
+          const carriedOver = existing.articles.filter(
+            (a: any) => a.section === section && !newUrls.has(a.sourceUrl)
+          );
+          mergedTouched.push(...[...incoming, ...carriedOver].slice(0, SECTION_CAP));
+        }
+
+        const mergedArticles = [...mergedTouched, ...untouchedArticles]
+          // Reassign sequential ids — incoming and carried-over articles were
+          // numbered independently (each run's id++ starts at 1), so without
+          // this, merged articles from different runs would collide on id,
+          // breaking anything keyed off it (e.g. React list keys).
+          .map((a: any, i: number) => ({ ...a, id: i + 1 }));
+
         toSave = {
           ...existing,
           ...briefing,
-          articles: [...briefing.articles, ...keptArticles],
+          articles: mergedArticles,
           lastUpdated: briefing.lastUpdated,
         };
-        console.log(`[save-briefing] Merge: ${briefing.articles.length} new + ${keptArticles.length} kept from existing`);
+        console.log(`[save-briefing] Merge: ${mergedTouched.length} merged (touched sections, capped ${SECTION_CAP}/section) + ${untouchedArticles.length} kept (untouched sections)`);
       }
     }
 

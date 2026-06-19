@@ -11,8 +11,9 @@ on:
     # scheduler congestion, which delays/drops runs queued at :00 and :30.
     # 9:07am, 12:07pm, 1:07pm, 5:07pm, 6:07pm ET — hourly slots outside the 30-min windows
     - cron: '7 13,16,17,21,22 * * *'
-    # 8:37am, 9:37am, 5:37pm ET
-    - cron: '37 12,13,21 * * *'
+    # 8:37am, 9:37am, 1:37pm, 5:37pm ET — 1:37pm added 2026-06-19 to close the
+    # previous 1:07pm→2:07pm gap (was the only hour-long silent window all day).
+    - cron: '37 12,13,17,21 * * *'
     # 10:07am–11:37am ET — every 30 min (10:07, 10:37, 11:07, 11:37)
     - cron: '7,37 14,15 * * *'
     # 2:07pm–4:37pm ET — every 30 min (2:07, 2:37, 3:07, 3:37, 4:07, 4:37)
