@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-19T19:02:54.250Z",
+  "updatedAt": "2026-06-19T19:57:37.695Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260618",
@@ -385,6 +385,18 @@
   ],
   "ajNews": [
     {
+      "title": "Iran war: Success or disaster? Mehdi Hasan and David Des Roches",
+      "url": "https://www.aljazeera.com/video/head-to-head/2026/6/19/iran-war-success-or-disaster-mehdi-hasan-and-david-des-roches?traffic_source=rss",
+      "date": "June 19, 2026",
+      "description": "Mehdi Hasan goes Head to Head with former Pentagon official David Des Roches on the Iran war."
+    },
+    {
+      "title": "How is the Iran-US agreement being viewed in Israel?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/6/19/how-is-the-iran-us-agreement-being-viewed-in-israel?traffic_source=rss",
+      "date": "June 19, 2026",
+      "description": "Washington rebukes right-wing Israeli ministers for criticism."
+    },
+    {
       "title": "Two men jailed for arson attacks on property linked to UK prime minister",
       "url": "https://www.aljazeera.com/news/2026/6/19/two-men-jailed-for-arson-attacks-on-property-linked-to-uk-prime-minister?traffic_source=rss",
       "date": "June 19, 2026",
@@ -433,14 +445,7 @@
       "description": "Israel&#039;s invasion and attacks in Lebanon pose &#039;greatest vulnerability&#039; to US-Iran diplomacy, says analyst Trita Parsi."
     }
   ],
-  "occNews": [
-    {
-      "title": "OCC Announces Enforcement Actions for May 2026",
-      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-40.html",
-      "date": "May 21, 2026",
-      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for May 2026."
-    }
-  ],
+  "occNews": [],
   "economicsNews": [
     {
       "title": "Federal Reserve issues FOMC statement",
@@ -997,10 +1002,16 @@
       "description": "Do online saving methods really work?"
     },
     {
+      "title": "Norway seeks to ban trade with illegal Israeli settlements in Palestine",
+      "url": "https://www.aljazeera.com/news/2026/6/19/norway-seeks-to-ban-trade-with-illegal-israeli-settlements-in-palestine?traffic_source=rss",
+      "date": "June 19, 2026",
+      "description": "Norwegian government announces consultation on new bill as it steps up policies regarding &#039;unlawful&#039; Israeli activities."
+    },
+    {
       "title": "Two trains collide near Bedford, north of London",
       "url": "https://www.aljazeera.com/news/2026/6/19/two-trains-collide-near-bedford-north-of-london?traffic_source=rss",
       "date": "June 19, 2026",
-      "description": "This is a breaking news story."
+      "description": "Media sources say multiple injuries reported, but emergency services did not provide details."
     },
     {
       "title": "Backlash for UK MP who linked England World Cup result to women’s safety",
@@ -1079,24 +1090,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/6/19/sudanese-journalist-denied-uk-visa-to-collect-prestigious-award?traffic_source=rss",
       "date": "June 19, 2026",
       "description": "Mohammed Amin was awarded ‘Journalist of the Year’ but couldn’t attend the ceremony as the UK refused to give him a visa"
-    },
-    {
-      "title": "British lawyers’ body suspends ICC Prosecutor Khan over misconduct claim",
-      "url": "https://www.aljazeera.com/news/2026/6/19/british-lawyers-body-suspends-icc-prosecutor-khan-over-misconduct-claim?traffic_source=rss",
-      "date": "June 19, 2026",
-      "description": "Khan is the subject of multiple investigations into allegations of sexual misconduct at the international court."
-    },
-    {
-      "title": "Chile’s Palestinians push back against Israel policy shift",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/19/chiles-palestinians-push-back-against-israel-policy-shift?traffic_source=rss",
-      "date": "June 19, 2026",
-      "description": "Chile’s Palestinians push back against Israel policy shift"
-    },
-    {
-      "title": "Search continues for kidnapped Mexican journalist Roxana Guzman",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/19/search-continues-for-kidnapped-mexican-journalist-roxana-guzman?traffic_source=rss",
-      "date": "June 19, 2026",
-      "description": "Search continues for kidnapped Mexican journalist Roxana Guzman"
     }
   ]
 }
