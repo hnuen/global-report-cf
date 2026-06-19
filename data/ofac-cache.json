@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-19T16:37:49.482Z",
+  "updatedAt": "2026-06-19T19:02:54.250Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260618",
@@ -257,6 +257,12 @@
   ],
   "bbcNews": [
     {
+      "title": "Israel and Hezbollah agree ceasefire, US says, as more Lebanon strikes reported",
+      "url": "https://www.bbc.com/news/articles/cwyk7kkygj5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 19, 2026",
+      "description": "The agreement followed concerns that continued clashes would undermine the deal to end the war between the US and Iran."
+    },
+    {
       "title": "Italy's Meloni says Trump 'made up' story that she 'begged' him for photo at G7",
       "url": "https://www.bbc.com/news/articles/c20y1ygn707o?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 19, 2026",
@@ -425,12 +431,6 @@
       "url": "https://www.aljazeera.com/news/2026/6/19/as-lebanon-tests-us-iran-deal-trump-must-rein-in-netanyahu-analysts-say?traffic_source=rss",
       "date": "June 19, 2026",
       "description": "Israel&#039;s invasion and attacks in Lebanon pose &#039;greatest vulnerability&#039; to US-Iran diplomacy, says analyst Trita Parsi."
-    },
-    {
-      "title": "Trump hints at new approach to North Korea’s nuclear programme",
-      "url": "https://www.aljazeera.com/news/2026/6/19/trump-hints-at-new-approach-to-north-koreas-nuclear-programme?traffic_source=rss",
-      "date": "June 19, 2026",
-      "description": "South Korea&#039;s president said Trump had told him the &#039;time had come&#039; to focus on North Korea &#039;issue&#039; at the G7 summit."
     }
   ],
   "occNews": [
@@ -531,6 +531,572 @@
       "url": "https://www.federalregister.gov/documents/2026/01/21/2026-01059/streamlining-export-controls-for-drone-exports",
       "date": "January 21, 2026",
       "description": "The Bureau of Industry and Security (BIS) is easing export controls on certain civil Unmanned Aerial Vehicles (UAVs) and related technologies, which currently need a license to be exported to most countries. In particular, this interim final rule (IFR): a) allows less sensitive UAVs--namely, commercial UAVs with a maximum endurance of less than one hour, for which there is broad foreign availability--to be exported to most Wassenaar Arrangement Participating States (Country Group A:1) without a license; and b) allows more capable non-military UAVs--namely, certain long-range cargo delivery and agricultural spraying drones--to be exported to certain U.S. partners and allies (Country Group A:5) under License Exception Strategic Trade Authorization (STA). Exports pursuant to License Exception STA are subject to notification and reporting requirements to ensure the security of the exports. BIS is making these changes pursuant to Executive Order (E.O.) 14307, \"Unleashing American Drone Dominance.\""
+    }
+  ],
+  "regionsNews": [
+    {
+      "title": "US to end funding of South Africa's HIV programmes over claims of Afrikaner persecution",
+      "url": "https://www.bbc.com/news/articles/cdr457lxr71o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 19, 2026",
+      "description": "The US says South Africa is not doing enough to protect the white-minority Afrikaner community."
+    },
+    {
+      "title": "Do it at home too, women tell Japanese fans who cleaned World Cup stadium",
+      "url": "https://www.bbc.com/news/articles/crel9xlp8r1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 19, 2026",
+      "description": "Some see a double standard: Japanese men who clean in public while their wives do all the housework."
+    },
+    {
+      "title": "Six-year-old Ebola patient taken from DR Congo hospital found and 'doing well'",
+      "url": "https://www.bbc.com/news/articles/c0qyg29wpk2o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 19, 2026",
+      "description": "Health facilities have come under attack during the current outbreak as a result of misinformation and fear."
+    },
+    {
+      "title": "Morocco captain Achraf Hakimi to stand trial for rape",
+      "url": "https://www.bbc.com/sport/football/articles/c20y18z7le1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 19, 2026",
+      "description": "French prosecutors confirm Morocco captain Achraf Hakimi will stand trial for rape, in accusations dating back to 2023."
+    },
+    {
+      "title": "Pétanque player, 68, dies after being 'hit in head with metal boule'",
+      "url": "https://www.bbc.com/news/articles/cvgmny9v14no?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 19, 2026",
+      "description": "The man was allegedly struck by his 81-year-old opponent, who has since been arrested, the public prosecutor says."
+    },
+    {
+      "title": "Boy, 12, wins hearts after trying to check sick chicken into Ethiopian hospital",
+      "url": "https://www.bbc.com/news/articles/cy49e7w3rmxo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 19, 2026",
+      "description": "Markos's beloved hen was not responding to any treatments - so he did the only thing he could think of."
+    },
+    {
+      "title": "Zimbabwe MPs pass bill to extend president's time in power",
+      "url": "https://www.bbc.com/news/articles/c20y15m0337o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 19, 2026",
+      "description": "The proposal would extend Emmerson Mnangagwa's term by two years and scrap direct presidential elections."
+    },
+    {
+      "title": "UK actress charged with importing meth worth almost A$300m into Australia",
+      "url": "https://www.bbc.com/news/articles/ckg5nq0172no?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 19, 2026",
+      "description": "Emaa Hussen, 34, faces life in prison for allegedly trying to smuggle 320kg of meth hidden in bags of charcoal."
+    },
+    {
+      "title": "Asia's richest man Ambani announces what could be India's biggest share sale",
+      "url": "https://www.bbc.com/news/articles/cx2kerpkynko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 19, 2026",
+      "description": "India's largest telecom operator is expected to raise around $4bn (£3.02bn), according to media reports."
+    },
+    {
+      "title": "Mangione's lawyers reverse course on psychiatric defence in state murder trial",
+      "url": "https://www.bbc.com/news/articles/c20y162gpm6o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 19, 2026",
+      "description": "The defence team reverse course a day after saying they would argue he suffered \"extreme emotional disturbance\"."
+    },
+    {
+      "title": "Thirty-five killed as gunmen attack Niger's biggest airport",
+      "url": "https://www.bbc.com/news/articles/cdx7krkdqeno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 19, 2026",
+      "description": "Niger has been fighting a militant Islamist insurgency for a decade and in January suspected jihadists attacked the same airport."
+    },
+    {
+      "title": "Parents of Serbia's teenage school shooter given jail terms in retrial",
+      "url": "https://www.bbc.com/news/articles/c14ykj2nr8lo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "The boy was 13 when he killed eight girls, a boy and a school guard at Vladislav Ribnikar school in Belgrade in 2023."
+    },
+    {
+      "title": "Hegseth renews Nato criticism and says US will review presence in Europe",
+      "url": "https://www.bbc.com/news/articles/c3vy5l62622o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "The US defence secretary's move follows a US decision to scale back its commitments to a high readiness force within the alliance."
+    },
+    {
+      "title": "British man dies in paragliding accident in Spain",
+      "url": "https://www.bbc.com/news/articles/c1dye3e9gnwo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "Authorities in Catalonia confirmed that the 63-year-old died in the Palau de Noguera area on Wednesday."
+    },
+    {
+      "title": "Suspected gang leader shot dead in flower bouquet ambush at airport",
+      "url": "https://www.bbc.com/news/articles/c4gy2l30dd0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "The gunmen concealed their weapons behind flowers and stuffed toys while waiting for the victim outside Guayaquil airport."
+    },
+    {
+      "title": "Jury fails to reach verdict in Norwegian 'hitman' trial",
+      "url": "https://www.bbc.com/news/articles/cz6v1qw7d0no?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "Johannes Natland, 19, was remanded in custody and will now face a retrial."
+    },
+    {
+      "title": "Obama moved to tears by wife Michelle's speech",
+      "url": "https://www.bbc.com/news/articles/cly91eqyd0ko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 19, 2026",
+      "description": "The couple were opening a site in Chicago, which the former president described as a \"celebration of community\"."
+    },
+    {
+      "title": "Bird flu kills more than 75% of baby seals on remote Australian island, study finds",
+      "url": "https://www.bbc.com/news/articles/cr5jdy92gyeo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "Scientists say 13,000 southern elephant seal pups on Heard Island have died of the H5N1 strain."
+    },
+    {
+      "title": "Lawyer in high-profile Ugandan treason case charged with related offence",
+      "url": "https://www.bbc.com/news/articles/cj9g3j4pe2no?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "Uganda's military chief had boasted of \"the hurt and pain\" he would inflict on Erias Lukwago, who was arrested earlier this week."
+    },
+    {
+      "title": "Japan ramping up defence is 'critical' to prevent war, Defence Minister Koizumi tells BBC",
+      "url": "https://www.bbc.com/news/articles/cly8qd4595eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 17, 2026",
+      "description": "Japan needs to revisit the pacifist posture that has defined it since World War Two, Shinjiro Koizumi says."
+    },
+    {
+      "title": "Apple to raise prices as AI boom pushes up chip costs",
+      "url": "https://www.bbc.com/news/articles/c3wyxvqdx1zo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "The firm's outgoing boss Tim Cook did not say when prices would rise or which products would be affected."
+    },
+    {
+      "title": "Teenager dies in horse-drawn carriage accident in New York",
+      "url": "https://www.bbc.com/news/articles/c20yxwjn873o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "The horse bolted and toppled over after the carriage driver stepped down to take a picture of the passengers."
+    },
+    {
+      "title": "'We had to get out of the way': The backlash over delivery robots",
+      "url": "https://www.bbc.com/news/articles/c0rygp005wjo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 17, 2026",
+      "description": "As the delivery vehicles increasing take to US streets, bans and protest groups are springing up."
+    },
+    {
+      "title": "'I buried my parents one day after the other' - Ebola mourners learn how to grieve safely",
+      "url": "https://www.bbc.com/news/articles/cj3gx8jl6d5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 17, 2026",
+      "description": "A cemetery at the epicentre of the outbreak is rapidly filling up, however large traditional funerals have been scrapped."
+    },
+    {
+      "title": "'They came with machetes' - deadline looms for migrants to leave South Africa",
+      "url": "https://www.bbc.com/news/articles/cg740l2jpr0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 17, 2026",
+      "description": "Protesters have set 30 June as the date for all undocumented migrants to leave the country."
+    },
+    {
+      "title": "Would you choose to take a 22-hour non-stop flight?",
+      "url": "https://www.bbc.com/news/videos/cn4dqg0dz5go?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 19, 2026",
+      "description": "The BBC asked Sydney locals if they would take the newly announced, longest ever commercial flight from Sydney to London."
+    },
+    {
+      "title": "Should the US impose a teen social media ban like the UK?",
+      "url": "https://www.bbc.com/news/videos/c5yzgxd428qo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "The UK is enforcing a social media ban for children under the age of 16. The BBC asked Americans of different ages if they thought it was a good idea."
+    },
+    {
+      "title": "Drones create the first-ever Fifa scoreboard in Seattle sky",
+      "url": "https://www.bbc.com/news/videos/ced4y9ljye9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 16, 2026",
+      "description": "BBC reporter Max Matza is in Seattle, Washington, where 400 drones lit up the night sky on Monday to display the score of the Egypt v Belgium match."
+    },
+    {
+      "title": "Plans to end gazumping with binding agreements in house sales shake-up",
+      "url": "https://www.bbc.com/news/articles/c6216g52p8wo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 19, 2026",
+      "description": "Sales agreements will be legally binding sooner and making sellers provide more home information up front are part of the planned changes."
+    },
+    {
+      "title": "O'Leary extends Ryanair contract in deal that could net him over £130m",
+      "url": "https://www.bbc.com/news/articles/c4gyejpy221o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 19, 2026",
+      "description": "The Ryanair boss extends his contract to 2032, in a deal featuring a bonus scheme that could earn him more than €150m (£130m)."
+    },
+    {
+      "title": "Warning over 'fragile' public finances as borrowing rises",
+      "url": "https://www.bbc.com/news/articles/cqx1e8nrwgvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 19, 2026",
+      "description": "The UK borrowed £23.3bn in May, according to official figures, up almost a third on the same month last year."
+    },
+    {
+      "title": "'I'd be put off if he asked to split it': Who should pay on a first date?",
+      "url": "https://www.bbc.com/news/articles/c74yl4gknzno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 19, 2026",
+      "description": "Some insist on splitting the bill, others say the asker should pay, while many still see a man paying as romantic."
+    },
+    {
+      "title": "Brexit cost 6% of UK economy, Bank of England company data suggests",
+      "url": "https://www.bbc.com/news/articles/cvg75npqkq4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "Analysis showed how much the UK could have grown if it had not exited the EU."
+    },
+    {
+      "title": "The artificial ice pyramids saving India's mountain villages",
+      "url": "https://www.bbc.com/news/articles/c072414183go?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "Himalayan villages are creating artificial glaciers to guarantee water for their crops in the spring."
+    },
+    {
+      "title": "Interest rates held as Bank warns of impact of high energy prices",
+      "url": "https://www.bbc.com/news/articles/c33yzm5mdjpo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "The Bank last cut interest rates in December but upheaval in the Middle East has stalled any further reductions."
+    },
+    {
+      "title": "Number of job vacancies hits five year-low",
+      "url": "https://www.bbc.com/news/articles/cm203nn7lzro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "Latest figures suggest companies are becoming more cautious about taking on new staff."
+    },
+    {
+      "title": "Apple to raise prices as AI boom pushes up chip costs",
+      "url": "https://www.bbc.com/news/articles/c3wyxvqdx1zo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "The firm's outgoing boss Tim Cook did not say when prices would rise or which products would be affected."
+    },
+    {
+      "title": "CrossCountry ranked Britain's worst train operator",
+      "url": "https://www.bbc.com/news/articles/c36y5ezr0k7o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "Transport Focus asks it to reduce delays and provide better information during disruption."
+    },
+    {
+      "title": "Why has Texas set its sights on London?",
+      "url": "https://www.bbc.com/news/articles/ckgpgvklkgko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "Texas, which once had an embassy in London, strengthens its ties with the capital by opening a new trade office."
+    },
+    {
+      "title": "Warsh to review how Fed works after holding US interest rates at first meeting",
+      "url": "https://www.bbc.com/news/articles/cdjkl78vd7lo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 17, 2026",
+      "description": "The Federal Reserve held rates between 3.5% and 3.75% after Kevin Warsh's first meeting in charge of the central bank."
+    },
+    {
+      "title": "Driving test wait time target will not be met until autumn next year",
+      "url": "https://www.bbc.com/news/articles/cd7wv0xqvryo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 17, 2026",
+      "description": "The Transport Secretary had been aiming to reduce the backlog to seven weeks by this autumn."
+    },
+    {
+      "title": "Inflation unexpectedly steady as food price rises slow",
+      "url": "https://www.bbc.com/news/articles/cyv0qpn9zvjo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 17, 2026",
+      "description": "Higher petrol prices were offset by slower price rises for meat, dairy and vegetables, according to the ONS."
+    },
+    {
+      "title": "Japan raids ice cream giants over price-fixing allegations",
+      "url": "https://www.bbc.com/news/articles/c0ly0k88e61o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 17, 2026",
+      "description": "The investigation on alleged cartel pricing of ice cream comes as Japan faces record summer temperatures."
+    },
+    {
+      "title": "'It's a unique scenario' - Inside Lidl's first ever pub",
+      "url": "https://www.bbc.com/news/articles/cj9gnljenpko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 17, 2026",
+      "description": "The supermarket chain Lidl owns and operates The Middle Ale, a 'world first' for the brand."
+    },
+    {
+      "title": "Struggling Pizza Hut chain to be sold for $2.7bn",
+      "url": "https://www.bbc.com/news/articles/c75yd6dy2vlo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 16, 2026",
+      "description": "The decision comes after a prolonged period of difficulty for the chain, which has faced increasing competition from a range of rivals."
+    },
+    {
+      "title": "Musk's SpaceX overtakes Amazon to become world's fifth most valuable firm",
+      "url": "https://www.bbc.com/news/articles/cvgd5g7d7gyo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 17, 2026",
+      "description": "Elon Musk's rocket firm has overtaken the retail and media empire in value after a surge in its share price."
+    },
+    {
+      "title": "Thames Water moves step closer to nationalisation after government objects to rescue deal",
+      "url": "https://www.bbc.com/news/articles/cly089d0wl7o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 16, 2026",
+      "description": "The environment secretary says the deal does not do enough for consumers or the environment."
+    },
+    {
+      "title": "Japan raises interest rate to highest for 31 years",
+      "url": "https://www.bbc.com/news/articles/cjdgl213dpzo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 16, 2026",
+      "description": "The Bank of Japan has been raising rates from near-zero since 2024."
+    },
+    {
+      "title": "Why is Thames Water in so much trouble?",
+      "url": "https://www.bbc.com/news/articles/cgleg70r7rno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 16, 2026",
+      "description": "Thames Water's lenders have submitted a new rescue plan to save the firm, but how did it end up in this state?"
+    },
+    {
+      "title": "'We had to get out of the way': The backlash over delivery robots",
+      "url": "https://www.bbc.com/news/articles/c0rygp005wjo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 17, 2026",
+      "description": "As the delivery vehicles increasing take to US streets, bans and protest groups are springing up."
+    },
+    {
+      "title": "What is Helium-3 and could we get it from the moon?",
+      "url": "https://www.bbc.com/news/articles/ce8jmg2e4kro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 16, 2026",
+      "description": "Helium-3 is expensive and demand is forecast to soar, so some are planning to mine it on the moon."
+    },
+    {
+      "title": "Why I sold my business to my staff",
+      "url": "https://www.bbc.com/news/articles/c0ey87z1ggjo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 14, 2026",
+      "description": "As more US company owners reach retirement age many are selling up to their employees."
+    },
+    {
+      "title": "India's 'blue gold' starts a new drinks industry",
+      "url": "https://www.bbc.com/news/articles/cdrpe4vly5mo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 11, 2026",
+      "description": "Agave plants grow wild in India and new distillers are using them to create a spirits industry."
+    },
+    {
+      "title": "New candy stores are popping up across NYC. Why?",
+      "url": "https://www.bbc.com/news/articles/c30ylzlygngo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 10, 2026",
+      "description": "While US consumer confidence is at an historic low the Big Apple's sweet shops are expanding."
+    },
+    {
+      "title": "Could humanoid robots be heading for the battlefield?",
+      "url": "https://www.bbc.com/news/articles/cedpxwe26l1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 8, 2026",
+      "description": "Armed forces are experimenting with humanoid robots, but battlefield deployment is some way off."
+    },
+    {
+      "title": "Spain's visitor numbers hit new highs as tourists avoid Middle East",
+      "url": "https://www.bbc.com/news/articles/c4gvndd2qelo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 7, 2026",
+      "description": "The European country had 9.1 million international visitors in April, the most ever for that month."
+    },
+    {
+      "title": "The ancient trick making food waste useful and tasty",
+      "url": "https://www.bbc.com/news/articles/c78kmj2kyklo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 4, 2026",
+      "description": "Instead of throwing away byproducts of food processing, fermentation is making them valuable."
+    },
+    {
+      "title": "'By the grace of God': Miners dig on as lab-grown diamonds change market",
+      "url": "https://www.bbc.com/news/articles/czx2jqvwp7go?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 3, 2026",
+      "description": "The rising popularity of lab-grown diamonds heaps pressure on those hunting for the natural gems."
+    },
+    {
+      "title": "How 'confused' AI rollout hurts firms and baffles staff",
+      "url": "https://www.bbc.com/news/articles/c74d1ydv01eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 1, 2026",
+      "description": "Some firms are putting pressure on staff to use AI, but have not thought through their AI rollout."
+    },
+    {
+      "title": "Caribbean hot sauce producers warn of shortages and higher prices",
+      "url": "https://www.bbc.com/news/articles/cq8p1jy3vxlo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "May 31, 2026",
+      "description": "Manufacturers in Jamaica say the key chilli peppers they need are in limited supply."
+    },
+    {
+      "title": "Humanoid robots 'the future' of car making, says BMW",
+      "url": "https://www.bbc.com/news/articles/cgmpwzzvxr2o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "May 28, 2026",
+      "description": "BMW is introducing humanoid robots to a car plant in Europe, building on similar projects in the US."
+    },
+    {
+      "title": "Is 'out of control' US tipping culture spreading overseas?",
+      "url": "https://www.bbc.com/news/articles/cj6p0wrkpj8o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "May 27, 2026",
+      "description": "With US waiting staff getting cross at receiving less than 20%, tips are also on the rise elsewhere."
+    },
+    {
+      "title": "The rise of the fruit that tastes like custard",
+      "url": "https://www.bbc.com/news/articles/ce8pmrp0m47o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "May 27, 2026",
+      "description": "Custard apple plants are prized for their hardiness but exporting their delicate fruit is difficult."
+    },
+    {
+      "title": "Morocco wants tourists to visit Western Sahara. Some say it's tightening its control",
+      "url": "https://www.bbc.com/news/articles/cvgldqk4w95o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "May 24, 2026",
+      "description": "The Moroccan government wants more Western holidaymakers to visit the territory it claims to own."
+    },
+    {
+      "title": "Do you want to know the secret to haggling with call centres?",
+      "url": "https://www.bbc.com/news/videos/ceqdgj4x5q0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 19, 2026",
+      "description": "Martin Lewis explains how your TV, phone, breakdown cover, insurance and more could be cheaper!"
+    },
+    {
+      "title": "'I'd be put off if he asked to split it': Who should pay on a first date?",
+      "url": "https://www.bbc.com/news/articles/c74yl4gknzno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 19, 2026",
+      "description": "Some insist on splitting the bill, others say the asker should pay, while many still see a man paying as romantic."
+    },
+    {
+      "title": "Farnham sets out 'ambitious' vision for island",
+      "url": "https://www.bbc.com/news/articles/c36y5ezr2kzo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 19, 2026",
+      "description": "Only chief minister candidate wants to tackle costs, boost investment and increase housing supply."
+    },
+    {
+      "title": "The furious dispute over what caused Air India flight 171 to crash",
+      "url": "https://www.bbc.com/news/articles/cwyk9exxp2qo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 10, 2026",
+      "description": "The final conclusions of the investigation have yet to be published, although more could become apparent in the coming days."
+    },
+    {
+      "title": "How the High Street became a window on our political instability",
+      "url": "https://www.bbc.com/news/articles/cq5p59286v5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 7, 2026",
+      "description": "High Streets have declined in recent years. What does this tell us about the UK?"
+    },
+    {
+      "title": "The £5 coffee that tells a story of global economic turmoil",
+      "url": "https://www.bbc.com/news/articles/cr5pp1m6z06o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "May 28, 2026",
+      "description": "Coffees at some city centre outlets now cost £5. It's a story of tariffs, the climate, Gen Z cultural tastes, and savvy coffee farmers playing the market, writes Faisal Islam"
+    },
+    {
+      "title": "The threat to summer holidays looming from jet fuel shortages",
+      "url": "https://www.bbc.com/news/articles/c86d9v28qxxo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "May 3, 2026",
+      "description": "What impact might shortages have on our summer holidays - and what could be done about it?"
+    },
+    {
+      "title": "Scammers are becoming ever more sophisticated - this is what the fightback looks like",
+      "url": "https://www.bbc.com/news/articles/cj60pl5g4z4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "April 18, 2026",
+      "description": "Scams have exploded over the last few years. Can countries and companies come together to turn the tables on the scammers?"
+    },
+    {
+      "title": "Do you want to know the secret to haggling with call centres?",
+      "url": "https://www.bbc.com/news/videos/ceqdgj4x5q0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 19, 2026",
+      "description": "Martin Lewis explains how your TV, phone, breakdown cover, insurance and more could be cheaper!"
+    },
+    {
+      "title": "Who had the best World Cup advert?",
+      "url": "https://www.bbc.com/sport/football/videos/c982pwr20k1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 19, 2026",
+      "description": "BBC Sport looks at the numbers behind both Nike and Adidas' World Cup adverts."
+    },
+    {
+      "title": "Americast",
+      "url": "https://www.bbc.co.uk/sounds/play/w3ct8lz7?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 19, 2026",
+      "description": "The US economy backs Elon Musk’s vision for AI and sending people into space"
+    },
+    {
+      "title": "Business Daily",
+      "url": "https://www.bbc.co.uk/sounds/play/w3ct8g9d?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 18, 2026",
+      "description": "Which jobs could be most resistant to the rise of AI?"
+    },
+    {
+      "title": "Do online saving methods really work?",
+      "url": "https://www.bbc.com/videos/c98247rge4no?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 16, 2026",
+      "description": "Do online saving methods really work?"
+    },
+    {
+      "title": "Two trains collide near Bedford, north of London",
+      "url": "https://www.aljazeera.com/news/2026/6/19/two-trains-collide-near-bedford-north-of-london?traffic_source=rss",
+      "date": "June 19, 2026",
+      "description": "This is a breaking news story."
+    },
+    {
+      "title": "Backlash for UK MP who linked England World Cup result to women’s safety",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/19/backlash-for-uk-mp-who-linked-england-world-cup-result-to-womens-safety?traffic_source=rss",
+      "date": "June 19, 2026",
+      "description": "Backlash for UK MP who linked England World Cup result to women’s safety."
+    },
+    {
+      "title": "More than 70 medics infected with Ebola as DRC outbreak spreads ‘fast’",
+      "url": "https://www.aljazeera.com/news/2026/6/19/more-than-70-medics-infected-with-ebola-as-drc-outbreak-spreads-fast?traffic_source=rss",
+      "date": "June 19, 2026",
+      "description": "Aid cuts and poor sanitation are deepening fears that Ebola is spreading through displacement camps."
+    },
+    {
+      "title": "Dramatic rescue as fire rips through school in Japan",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/19/aje-onl-nf_dramatic-rescue-fire-rips-through-school-in-japan-190626?traffic_source=rss",
+      "date": "June 19, 2026",
+      "description": "Eyewitness video shows dozens of schoolchildren forced onto a narrow window ledge after a fire broke out in Tokyo."
+    },
+    {
+      "title": "Italy’s top diplomat nixes US trip after Meloni says Trump fabricated story",
+      "url": "https://www.aljazeera.com/news/2026/6/19/italys-top-diplomat-nixes-us-trip-after-meloni-says-trump-fabricated-story?traffic_source=rss",
+      "date": "June 19, 2026",
+      "description": "The Italian prime minister has accused Trump of making up a story that she &#039;begged&#039; him for a photo at G7 in France."
+    },
+    {
+      "title": "How is China using AI in the classroom?",
+      "url": "https://www.aljazeera.com/video/the-take-2/2026/6/19/how-is-china-using-ai-in-the-classroom?traffic_source=rss",
+      "date": "June 19, 2026",
+      "description": "How will teaching artificial intelligence help China take on a high-tech future?"
+    },
+    {
+      "title": "Israeli air strikes hit Lebanon minutes after new ceasefire",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/19/israeli-air-strikes-hit-lebanon-minutes-after-new-ceasefire?traffic_source=rss",
+      "date": "June 19, 2026",
+      "description": "Minutes after a new ceasefire had come into force between Israel and Hezbollah, explosions were seen in southern Lebanon"
+    },
+    {
+      "title": "Germany and Ivory Coast aim to seal World Cup knockout place: All to know",
+      "url": "https://www.aljazeera.com/sports/2026/6/19/germany-and-ivory-coast-aim-to-seal-world-cup-knockout-place?traffic_source=rss",
+      "date": "June 19, 2026",
+      "description": "Team news, prediction, and lineups as Germany and Ivory Coast meet in Group E aiming to secure last-32 qualification."
+    },
+    {
+      "title": "Cuba: Between charcoal and solar panels",
+      "url": "https://www.aljazeera.com/features/longform/2026/6/19/cuba-between-charcoal-and-solar-panels-2?traffic_source=rss",
+      "date": "June 19, 2026",
+      "description": "Millions of Cubans have grown accustomed to living without electricity for long periods of time."
+    },
+    {
+      "title": "From outsider to president? Inside de la Espriella’s bid to lead Colombia",
+      "url": "https://www.aljazeera.com/news/longform/2026/6/19/from-outsider-to-president-inside-de-la-espriellas-bid-to-lead-colombia?traffic_source=rss",
+      "date": "June 19, 2026",
+      "description": "A political newcomer, de la Espriella has reached the last round of Colombia&#039;s presidential race. What would a win mean?"
+    },
+    {
+      "title": "More than a game: Football, friendship and mental health recovery",
+      "url": "https://www.aljazeera.com/features/longform/2026/6/19/more-than-a-game-football-friendship-and-mental-health-recovery?traffic_source=rss",
+      "date": "June 19, 2026",
+      "description": "Men recovering from bipolar disorder, schizophrenia and other mental health challenges find help through football."
+    },
+    {
+      "title": "Cuba approves major economic reforms amid US pressure",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/19/cuba-approves-major-economic-reforms-amid-us-pressure?traffic_source=rss",
+      "date": "June 19, 2026",
+      "description": "Cuba has approved sweeping economic reforms, opening key sectors to private investment."
+    },
+    {
+      "title": "Israel slams EU’s Kallas for ‘apartheid’ comment: Are ties unravelling?",
+      "url": "https://www.aljazeera.com/news/2026/6/19/israel-slams-eus-kallas-for-apartheid-comment-are-ties-unravelling?traffic_source=rss",
+      "date": "June 19, 2026",
+      "description": "Leaked media reports quoted EU&#039;s top diplomat likening Israel to South Africa&#039;s apartheid regime."
+    },
+    {
+      "title": "Sudanese journalist denied UK visa to collect prestigious award",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/19/sudanese-journalist-denied-uk-visa-to-collect-prestigious-award?traffic_source=rss",
+      "date": "June 19, 2026",
+      "description": "Mohammed Amin was awarded ‘Journalist of the Year’ but couldn’t attend the ceremony as the UK refused to give him a visa"
+    },
+    {
+      "title": "British lawyers’ body suspends ICC Prosecutor Khan over misconduct claim",
+      "url": "https://www.aljazeera.com/news/2026/6/19/british-lawyers-body-suspends-icc-prosecutor-khan-over-misconduct-claim?traffic_source=rss",
+      "date": "June 19, 2026",
+      "description": "Khan is the subject of multiple investigations into allegations of sexual misconduct at the international court."
+    },
+    {
+      "title": "Chile’s Palestinians push back against Israel policy shift",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/19/chiles-palestinians-push-back-against-israel-policy-shift?traffic_source=rss",
+      "date": "June 19, 2026",
+      "description": "Chile’s Palestinians push back against Israel policy shift"
+    },
+    {
+      "title": "Search continues for kidnapped Mexican journalist Roxana Guzman",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/19/search-continues-for-kidnapped-mexican-journalist-roxana-guzman?traffic_source=rss",
+      "date": "June 19, 2026",
+      "description": "Search continues for kidnapped Mexican journalist Roxana Guzman"
     }
   ]
 }
