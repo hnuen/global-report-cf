@@ -516,7 +516,7 @@ if (noNewActions && noNewPenalties && noNewPrograms) {
   // Still touch the saved briefing's lastUpdated so the app shows a fresh
   // "checked at" time on every run, not just runs that found new OFAC data.
   // Zero Gemini calls — reuses the scrape we already did above. merge:true
-  // keeps the religion section from the last Gemini run (no direct source).
+  // keeps the regions section from the last Gemini run (no direct source).
   // OFSI/EU/UN/BBC/Al Jazeera/OCC/Fed/BIS entries are included unconditionally
   // so they show up in their sections on every run, regardless of the OFAC
   // early-exit outcome — this is what fixes OCC/economics/bis staleness.
@@ -792,7 +792,7 @@ function buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices = [], 
     sidebar: {
       sanctions: emptySection,
       economics: emptySection,
-      religion:  emptySection,
+      regions:   emptySection,
       occ:       emptySection,
       penalties: emptySection,
       bis:       emptySection,
@@ -842,7 +842,7 @@ Return ONLY valid JSON — no markdown fences, no preamble, no trailing text:
   "sidebar": {
     "sanctions":  { "watchlist": [{"entity":"","type":"","note":""}], "keyFigures": [{"label":"","value":""}] },
     "economics":  { "watchlist": [], "keyFigures": [] },
-    "religion":   { "watchlist": [], "keyFigures": [] },
+    "regions":    { "watchlist": [], "keyFigures": [] },
     "occ":        { "watchlist": [], "keyFigures": [] },
     "penalties":  { "watchlist": [], "keyFigures": [] },
     "bis":        { "watchlist": [], "keyFigures": [] }
@@ -852,7 +852,7 @@ Return ONLY valid JSON — no markdown fences, no preamble, no trailing text:
 SECTIONS:
 1. sanctions  — OFAC, EU, UK/OFSI, UN designations, enforcement, evasion, Russia/Iran/DPRK/Venezuela/Cuba
 2. economics  — Markets, inflation, central banks, trade, energy prices
-3. religion   — Vatican/papacy, interfaith, faith & politics, global trends
+3. regions    — General world & regional news from non-government outlets (AP/BBC/Al Jazeera/Reuters/CNN) not covered by the other five sections
 4. occ        — OCC enforcement actions, consent orders, prohibition orders, AML/BSA & sanctions advisories
 5. penalties  — FinCEN, AML/BSA fines, OFAC civil penalties, bank settlements
 6. bis        — BIS export controls, Entity List, EAR enforcement, semiconductor policy

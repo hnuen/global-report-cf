@@ -959,7 +959,7 @@ export function buildBriefingFromSources(sources: OfficialSource[]): Briefing {
     sidebar: {
       sanctions:  emptySidebar,
       economics:  emptySidebar,
-      religion:   emptySidebar,
+      regions:    emptySidebar,
       occ:        emptySidebar,
       penalties:  emptySidebar,
       bis:        emptySidebar,

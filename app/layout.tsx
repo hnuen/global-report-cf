@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
   title: "The Global Report",
-  description: "Sanctions · Economics · Religion · OCC · Penalties · BIS/Export Controls",
+  description: "Sanctions · Economics · Regions · OCC · Penalties · BIS/Export Controls",
 };
 
 export const viewport: Viewport = {

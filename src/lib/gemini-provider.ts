@@ -38,7 +38,7 @@ Return ONLY valid JSON — no markdown fences, no preamble, no trailing text:
   "sidebar": {
     "sanctions":  { "watchlist": [{"entity":"","type":"","note":""}], "keyFigures": [{"label":"","value":""}] },
     "economics":  { "watchlist": [], "keyFigures": [] },
-    "religion":   { "watchlist": [], "keyFigures": [] },
+    "regions":    { "watchlist": [], "keyFigures": [] },
     "occ":        { "watchlist": [], "keyFigures": [] },
     "penalties":  { "watchlist": [], "keyFigures": [] },
     "bis":        { "watchlist": [], "keyFigures": [] }
@@ -48,7 +48,7 @@ Return ONLY valid JSON — no markdown fences, no preamble, no trailing text:
 SECTIONS:
 1. sanctions  — OFAC, EU, UK/OFSI, UN designations, enforcement, evasion, Russia/Iran/DPRK/Venezuela/Cuba
 2. economics  — Markets, inflation, central banks, trade, energy prices
-3. religion   — Vatican/papacy, interfaith, faith & politics, global trends
+3. regions    — General world & regional news from non-government outlets (AP/BBC/Al Jazeera/Reuters/CNN) not covered by the other five sections
 4. occ        — OCC enforcement actions, consent orders, prohibition orders
 5. penalties  — FinCEN, AML/BSA fines, OFAC civil penalties, bank settlements
 6. bis        — BIS export controls, Entity List, EAR enforcement, semiconductor policy

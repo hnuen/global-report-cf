@@ -19,7 +19,7 @@ import type { ScoredArticle }          from "../lib/alert-scorer";
 const COLOUR_MAP: Record<string, number> = {
   sanctions: 0xC0392B,   // red
   economics: 0x2471A3,   // blue
-  religion:  0x1E8449,   // green
+  regions:   0x1E8449,   // green
   occ:       0x935116,   // brown
   penalties: 0x1A5276,   // dark blue
   bis:       0x6C3483,   // purple

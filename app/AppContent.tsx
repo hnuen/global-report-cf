@@ -31,7 +31,7 @@ body{background:#ffffff}
 .sec-tab:hover{color:#111111;background:#f3f4f6}
 .sec-tab.sanctions.active{color:#cc0000;background:#ffffff;border-bottom:2px solid #cc0000}
 .sec-tab.economics.active{color:#1a56db;background:#ffffff;border-bottom:2px solid #1a56db}
-.sec-tab.religion.active{color:#15803d;background:#ffffff;border-bottom:2px solid #15803d}
+.sec-tab.regions.active{color:#15803d;background:#ffffff;border-bottom:2px solid #15803d}
 .sec-tab.occ.active{color:#b45309;background:#ffffff;border-bottom:2px solid #b45309}
 .sec-tab.penalties.active{color:#0369a1;background:#ffffff;border-bottom:2px solid #0369a1}
 .sec-tab.bis.active{color:#6d28d9;background:#ffffff;border-bottom:2px solid #6d28d9}
@@ -72,7 +72,7 @@ body{background:#ffffff}
 .sec-banner{display:flex;align-items:center;gap:8px;margin-bottom:13px;padding-bottom:6px;border-bottom:2px solid var(--ink)}
 .sec-stripe{width:4px;height:20px;border-radius:2px;flex-shrink:0}
 .stripe-sanctions{background:var(--c-san)}.stripe-economics{background:var(--c-eco)}
-.stripe-religion{background:var(--c-rel)}.stripe-occ{background:var(--c-occ)}
+.stripe-regions{background:var(--c-rel)}.stripe-occ{background:var(--c-occ)}
 .stripe-penalties{background:var(--c-pen)}.stripe-bis{background:var(--c-bis)}.stripe-all{background:var(--gold)}
 .sec-title{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--ink)}
 .sec-count{font-family:var(--mono);font-size:.58rem;color:var(--muted);margin-left:auto}
@@ -88,7 +88,7 @@ body{background:#ffffff}
 .t-bis{background:#4a1a6b18;color:var(--c-bis);border:1px solid #4a1a6b30}
 .stag{font-family:var(--mono);font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;padding:2px 5px;border-radius:2px;flex-shrink:0}
 .stag-sanctions{background:var(--c-san);color:#fce8e8}.stag-economics{background:var(--c-eco);color:#e8ecfc}
-.stag-religion{background:var(--c-rel);color:#e8fcea}.stag-occ{background:var(--c-occ);color:#fceee8}
+.stag-regions{background:var(--c-rel);color:#e8fcea}.stag-occ{background:var(--c-occ);color:#fceee8}
 .stag-penalties{background:var(--c-pen);color:#e8f8fc}.stag-bis{background:var(--c-bis);color:#f0e8fc}
 .art-region{font-family:var(--mono);font-size:.6rem;color:var(--muted)}
 .art-date{font-family:var(--mono);font-size:.6rem;color:#b8a880;margin-left:auto;white-space:nowrap}
@@ -256,7 +256,7 @@ interface FinCENPenalty {
   program: string; voluntaryDisclosure: boolean; egregious: boolean; sourceUrl: string; notes?: string;
 }
 
-const SECTIONS = ["all","sanctions","economics","religion","occ","penalties","bis"];
+const SECTIONS = ["all","sanctions","economics","regions","occ","penalties","bis"];
 
 // Static sidebar data — always shown regardless of LLM status
 const STATIC_SIDEBAR: Record<string, { watchlist: {entity:string;type:string;note:string;url?:string}[]; keyFigures: {label:string;value:string}[] }> = {
@@ -288,7 +288,7 @@ const STATIC_SIDEBAR: Record<string, { watchlist: {entity:string;type:string;not
       {entity:"Germany Sanctions Act", type:"Regulatory", note:"In force Feb 6 — fines up to €40M, circumvention criminal", url:"https://www.nortonrosefulbright.com/en/knowledge/publications/70ad8666/spotlight-on-sanctions"},
     ]
   },
-  religion: {
+  regions: {
     keyFigures: [
       {label:"Pope Leo XIV Africa journey countries", value:"4"},
       {label:"U.S. Christians (Pew 2026)", value:"62%"},
@@ -339,14 +339,14 @@ const STATIC_SIDEBAR: Record<string, { watchlist: {entity:string;type:string;not
     ]
   },
 };
-const LABELS: Record<string,string> = {all:"All",sanctions:"Sanctions",economics:"Economics",religion:"Religion",occ:"OCC",penalties:"Penalties",bis:"BIS / Export"};
+const LABELS: Record<string,string> = {all:"All",sanctions:"Sanctions",economics:"Economics",regions:"Regions",occ:"OCC",penalties:"Penalties",bis:"BIS / Export"};
 const REGIONS: Record<string,string[]> = {
   all:["All"], sanctions:["All","Iran","DPRK","Russia","Cuba","Venezuela","EU / Europe","UK","China / HK","MEA","India / Pakistan","SEA","Global"],
-  economics:["All","United States","Europe","Global"], religion:["All","Africa / Vatican","Middle East","Southeast Asia","South Asia","Central Asia","United Kingdom","United States","Europe","Global"],
+  economics:["All","United States","Europe","Global"], regions:["All","Africa","Middle East","Southeast Asia","South Asia","Central Asia","United Kingdom","United States","Europe","Global"],
   occ:["All","United States"], penalties:["All"], bis:["All","United States / China","China / Global","United States"],
 };
-const tagCls = (s:string) => ({sanctions:"t-san",economics:"t-eco",religion:"t-rel",occ:"t-occ",penalties:"t-pen",bis:"t-bis"}[s]||"t-san");
-const kvCls  = (s:string) => ({sanctions:"kv-san",economics:"kv-eco",religion:"kv-rel",occ:"kv-occ",penalties:"kv-pen",bis:"kv-bis"}[s]||"kv-san");
+const tagCls = (s:string) => ({sanctions:"t-san",economics:"t-eco",regions:"t-rel",occ:"t-occ",penalties:"t-pen",bis:"t-bis"}[s]||"t-san");
+const kvCls  = (s:string) => ({sanctions:"kv-san",economics:"kv-eco",regions:"kv-rel",occ:"kv-occ",penalties:"kv-pen",bis:"kv-bis"}[s]||"kv-san");
 
 const MONTHS: Record<string,number> = {january:0,february:1,march:2,april:3,may:4,june:5,july:6,august:7,september:8,october:9,november:10,december:11};
 const MONTH_NAMES = ["January","February","March","April","May","June",
@@ -755,7 +755,7 @@ export default function GlobalMonitor() {
         occ:       "site:occ.gov OR site:fdic.gov OR site:federalreserve.gov OR site:ffiec.gov",
         bis:       "site:bis.doc.gov OR site:state.gov OR site:wassenaar.org",
         penalties: "site:ofac.treasury.gov OR site:fincen.gov OR site:occ.gov",
-        religion:  "site:vatican.va OR site:uscirf.gov OR site:state.gov/religiousfreedom",
+        regions:   "site:apnews.com OR site:reuters.com OR site:bbc.com OR site:aljazeera.com OR site:cnn.com",
         all:       "site:home.treasury.gov OR site:ofac.treasury.gov OR site:consilium.europa.eu OR site:gov.uk",
       };
       const sources = officialSources[sec] || officialSources["all"];
@@ -871,8 +871,8 @@ export default function GlobalMonitor() {
 
   const allFiltered = data?.articles ? filterArticles(data.articles, section, region) : [];
   const sanResults  = (sanOn && data?.articles) ? filterArticlesBySearch(data.articles, section, sanQ, dateFrom, dateTo) : null;
-  const groups      = section==="all" ? ["sanctions","economics","religion","occ","penalties","bis"] : [section];
-  const sidebarSecs = section==="all" ? ["sanctions","economics","religion","occ","penalties","bis"] : [section];
+  const groups      = section==="all" ? ["sanctions","economics","regions","occ","penalties","bis"] : [section];
+  const sidebarSecs = section==="all" ? ["sanctions","economics","regions","occ","penalties","bis"] : [section];
 
   const getSourceDisplay = (source: string, sourceUrl: string) => {
     const name = (source||"")
@@ -961,7 +961,7 @@ export default function GlobalMonitor() {
       .m-tab.active{color:#cc0000;border-bottom-color:#cc0000}
       .m-tab.sanctions.active{color:#cc0000;border-bottom-color:#cc0000}
       .m-tab.economics.active{color:#15803d;border-bottom-color:#15803d}
-      .m-tab.religion.active{color:#6d28d9;border-bottom-color:#6d28d9}
+      .m-tab.regions.active{color:#6d28d9;border-bottom-color:#6d28d9}
       .m-tab.occ.active{color:#b45309;border-bottom-color:#b45309}
       .m-tab.penalties.active{color:#374151;border-bottom-color:#374151}
       .m-tab.bis.active{color:#0369a1;border-bottom-color:#0369a1}
@@ -983,7 +983,7 @@ export default function GlobalMonitor() {
       .m-art-meta{display:flex;align-items:center;gap:5px;flex-wrap:wrap;margin-bottom:3px}
       .m-art-tag{font-family:var(--mono);font-size:.48rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:1px 4px;border-radius:2px;background:#fee2e2;color:#cc0000}
       .m-art-tag.economics{background:#dcfce7;color:#15803d}
-      .m-art-tag.religion{background:#f3e8ff;color:#6d28d9}
+      .m-art-tag.regions{background:#f3e8ff;color:#6d28d9}
       .m-art-tag.occ{background:#fef3c7;color:#b45309}
       .m-art-tag.bis{background:#dbeafe;color:#1d4ed8}
       .m-art-tag.penalties{background:#f3f4f6;color:#374151}
@@ -1047,7 +1047,7 @@ export default function GlobalMonitor() {
         <div className="m-kf">
           {kfAll.map((f:any,i:number)=>(
             <div key={i} className="m-kfc">
-              <span className="m-kfv" style={{color:f.s==="economics"?"#15803d":f.s==="religion"?"#6d28d9":f.s==="occ"?"#b45309":f.s==="bis"?"#1d4ed8":"#cc0000"}}>{f.value}</span>
+              <span className="m-kfv" style={{color:f.s==="economics"?"#15803d":f.s==="regions"?"#6d28d9":f.s==="occ"?"#b45309":f.s==="bis"?"#1d4ed8":"#cc0000"}}>{f.value}</span>
               <span className="m-kfl">{f.label}</span>
             </div>
           ))}
@@ -1127,8 +1127,8 @@ export default function GlobalMonitor() {
         {SECTIONS.map(s=><button key={s} className={`sec-tab ${s} ${section===s?"active":""}`} onClick={()=>handleSection(s)}>{LABELS[s]}</button>)}
       </div></div>
       {section !== "penalties" && searchBarOpen && (
-        <div className="san-search" style={{background: section==="bis"?"#f0f9ff":section==="economics"?"#f0fdf4":section==="occ"?"#fffbeb":section==="religion"?"#faf5ff":"#fef2f2", borderBottomColor: section==="bis"?"#7dd3fc":section==="economics"?"#86efac":section==="occ"?"#fcd34d":section==="religion"?"#d8b4fe":"#fca5a5"}}><div className="san-inner">
-          <span className="san-lbl" style={{color: section==="bis"?"#0369a1":section==="economics"?"#15803d":section==="occ"?"#b45309":section==="religion"?"#6d28d9":"#cc0000"}}>⊘ Search {section==="all"?"All":section.toUpperCase()}</span>
+        <div className="san-search" style={{background: section==="bis"?"#f0f9ff":section==="economics"?"#f0fdf4":section==="occ"?"#fffbeb":section==="regions"?"#faf5ff":"#fef2f2", borderBottomColor: section==="bis"?"#7dd3fc":section==="economics"?"#86efac":section==="occ"?"#fcd34d":section==="regions"?"#d8b4fe":"#fca5a5"}}><div className="san-inner">
+          <span className="san-lbl" style={{color: section==="bis"?"#0369a1":section==="economics"?"#15803d":section==="occ"?"#b45309":section==="regions"?"#6d28d9":"#cc0000"}}>⊘ Search {section==="all"?"All":section.toUpperCase()}</span>
           <input className="san-q" placeholder='Keyword — "Iran oil", "EU 20th", "OFSI"' value={sanQ} onChange={e=>setSanQ(e.target.value)} onKeyDown={e=>e.key==="Enter"&&doSearch()} autoFocus/>
           <input className="date-in" type="date" value={dateFrom} onChange={e=>{setDateFrom(e.target.value);if(e.target.value||dateTo)setSanOn(true);}} title="From date"/>
           <span style={{color:"#5a3020",fontFamily:"var(--mono)",fontSize:".65rem"}}>→</span>

@@ -26,7 +26,7 @@ export async function POST(request: NextRequest) {
 
     // merge=true: only replace sections present in the new briefing, keep others from Redis.
     // Used by the structured fallback (which only covers sanctions + penalties) so it doesn't
-    // wipe economics/religion/occ/bis articles from a previous successful Gemini run.
+    // wipe economics/regions/occ/bis articles from a previous successful Gemini run.
     let toSave = briefing as Briefing;
     if (merge) {
       const { loadBriefing } = await import("@/src/lib/orchestrator");

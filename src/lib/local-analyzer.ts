@@ -47,7 +47,7 @@ function classifySection(text: string, sourceName: string): Section {
   if (sourceName.includes("FinCEN") || sourceName.includes("CFPB") || sourceName.includes("Penalties") || t.includes("bsa") || t.includes("aml") || t.includes("civil penalt") || t.includes("enforcement action") && t.includes("bank")) return "penalties";
   if (sourceName.includes("BIS") || sourceName.includes("Export") || sourceName.includes("MOFCOM") || sourceName.includes("Wassenaar") || t.includes("export control") || t.includes("entity list") || t.includes("ear ") || t.includes("dual-use")) return "bis";
   if (sourceName.includes("Fed") || t.includes("federal reserve") || t.includes("interest rate") || t.includes("inflation") || t.includes("gdp") || t.includes("monetary policy") || t.includes("central bank") || t.includes("ecb")) return "economics";
-  if (t.includes("pope") || t.includes("vatican") || t.includes("church") || t.includes("religion") || t.includes("faith") || t.includes("interfaith") || t.includes("muslim") || t.includes("christian") || t.includes("jewish")) return "religion";
+  if (t.includes("pope") || t.includes("vatican") || t.includes("church") || t.includes("religion") || t.includes("faith") || t.includes("interfaith") || t.includes("muslim") || t.includes("christian") || t.includes("jewish")) return "regions";
   return "sanctions";
 }
 
@@ -215,7 +215,7 @@ export function buildAnalyzedBriefing(sources: OfficialSource[]): Briefing {
     sidebar: {
       sanctions: emptySidebar,
       economics: emptySidebar,
-      religion: emptySidebar,
+      regions: emptySidebar,
       occ: emptySidebar,
       penalties: emptySidebar,
       bis: emptySidebar,

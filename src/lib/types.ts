@@ -1,6 +1,6 @@
 // ── Briefing data types ───────────────────────────────────────────────────────
 
-export type Section = "sanctions" | "economics" | "religion" | "occ" | "penalties" | "bis";
+export type Section = "sanctions" | "economics" | "regions" | "occ" | "penalties" | "bis";
 export type Impact  = "high" | "medium" | "low";
 
 export interface Article {

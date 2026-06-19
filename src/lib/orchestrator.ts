@@ -59,7 +59,7 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
   const officialContext = formatSourcesForPrompt(officialSources);
 
   // Fill any section with < 8 articles using historical records
-  const SECTIONS: Section[] = ["sanctions","economics","religion","occ","penalties","bis"];
+  const SECTIONS: Section[] = ["sanctions","economics","regions","occ","penalties","bis"];
   for (const sec of SECTIONS) {
     const currentCount = briefing.articles.filter(a => a.section === sec).length;
     if (currentCount < 8) {

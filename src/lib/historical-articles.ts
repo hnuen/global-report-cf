@@ -414,9 +414,9 @@ export const HISTORICAL: Article[] = [
     ],
     source:"Norton Rose Fulbright", sourceUrl:"https://www.nortonrosefulbright.com" },
 
-  // ── RELIGION ─────────────────────────────────────────────────────────────
+  // ── REGIONS ──────────────────────────────────────────────────────────────
 
-  { id:9201, section:"religion", category:"Catholic", region:"Africa / Vatican", impact:"high",
+  { id:9201, section:"regions", category:"Catholic", region:"Africa / Vatican", impact:"high",
     date:"April 13–23, 2026",
     headline:"Pope Leo XIV Returns from Africa — Magnifica Humanitas Encyclical in Development, AI and Social Doctrine Focus",
     body:[
@@ -425,7 +425,7 @@ export const HISTORICAL: Article[] = [
     ],
     source:"Vatican News / USC Center for Religion", sourceUrl:"https://www.vaticannews.va" },
 
-  { id:9202, section:"religion", category:"Interfaith", region:"Lebanon / Middle East", impact:"high",
+  { id:9202, section:"regions", category:"Interfaith", region:"Lebanon / Middle East", impact:"high",
     date: "2026-05-21",
     headline:"U.S. Sanctions on Hizballah MPs Draw Lebanon's Religious Communities Into Political Fault Lines",
     body:[
@@ -434,7 +434,7 @@ export const HISTORICAL: Article[] = [
     ],
     source:"Al-Monitor / U.S. State Department", sourceUrl:"https://www.al-monitor.com" },
 
-  { id:9203, section:"religion", category:"Interfaith", region:"United Kingdom", impact:"medium",
+  { id:9203, section:"regions", category:"Interfaith", region:"United Kingdom", impact:"medium",
     date: "2026-05-01",
     headline:"UK Terror Threat Raised to 'Severe' — Muslim Leaders Condemn London Attack and Reaffirm Interfaith Accords",
     body:[
@@ -443,7 +443,7 @@ export const HISTORICAL: Article[] = [
     ],
     source:"Counter Terrorism Policing UK", sourceUrl:"https://www.counterterrorism.police.uk" },
 
-  { id:9204, section:"religion", category:"Catholic", region:"Global", impact:"medium",
+  { id:9204, section:"regions", category:"Catholic", region:"Global", impact:"medium",
     date: "2026-05-11",
     headline:"Pope Leo XIV Meets Jordan's Royal Institute for Interfaith Studies — Calls for Christian-Muslim Renewal",
     body:[
