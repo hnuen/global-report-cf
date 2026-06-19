@@ -250,13 +250,15 @@ function parseAlJazeeraSanctions(xml) {
 // ── OCC (Comptroller of the Currency) news — direct scrape, no Gemini ──────
 // occ.gov publishes an official RSS feed of ALL news releases (testimony,
 // CRA evaluations, personnel announcements, final rules, enforcement
-// actions, etc. all mixed together). The "occ" section is scoped specifically
-// to enforcement actions / consent orders / prohibition orders, so entries
-// are filtered the same way the EU/BBC/AJ feeds are filtered for sanctions
-// relevance — keeps the section focused instead of diluted with unrelated
-// OCC press releases. This directly fixes the staleness the user reported:
-// the monthly "OCC Announces Enforcement Actions for <Month>" release matches.
-const OCC_KEYWORDS = /enforcement action|consent order|cease.?and.?desist|prohibition order|civil money penalty|formal agreement|removal order|terminat/i;
+// actions, etc. all mixed together). The "occ" section is scoped to
+// enforcement actions / consent orders / prohibition orders PLUS key
+// advisories on AML/BSA, sanctions, and banking-industry/country risk —
+// broadened 2026-06-19 because the strict enforcement-only filter went
+// quiet for weeks between OCC's monthly enforcement batches even though
+// occ.gov was actively publishing relevant advisories in the meantime.
+// Still excludes unrelated noise like testimony, personnel announcements,
+// CRA evaluation schedules, and routine final rules (e.g. escrow interest).
+const OCC_KEYWORDS = /enforcement action|consent order|cease.?and.?desist|prohibition order|civil money penalty|formal agreement|removal order|terminat|money laundering|bank secrecy act|\bbsa\b|suspicious activity|\bsanctions?\b|\bofac\b|advisory|bulletin|\balert\b|country risk|correspondent bank/i;
 
 function parseOccNews(xml) {
   return parseRssItems(xml).filter(e => OCC_KEYWORDS.test(e.title) || OCC_KEYWORDS.test(e.description));
@@ -723,9 +725,10 @@ function buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices = [], 
     });
   }
 
-  // OCC enforcement-relevant news → occ articles — fixes the staleness the
-  // user reported (OCC section was frozen on whatever Gemini last wrote,
-  // since this was previously the only section with no non-Gemini source).
+  // OCC enforcement + AML/sanctions/banking-advisory news → occ articles —
+  // fixes the staleness the user reported (OCC section was frozen on
+  // whatever Gemini last wrote, since this was previously the only section
+  // with no non-Gemini source; scope broadened 2026-06-19, see OCC_KEYWORDS).
   for (const entry of occNews.slice(0, 6)) {
     articles.push({
       id: id++,
@@ -850,7 +853,7 @@ SECTIONS:
 1. sanctions  — OFAC, EU, UK/OFSI, UN designations, enforcement, evasion, Russia/Iran/DPRK/Venezuela/Cuba
 2. economics  — Markets, inflation, central banks, trade, energy prices
 3. religion   — Vatican/papacy, interfaith, faith & politics, global trends
-4. occ        — OCC enforcement actions, consent orders, prohibition orders
+4. occ        — OCC enforcement actions, consent orders, prohibition orders, AML/BSA & sanctions advisories
 5. penalties  — FinCEN, AML/BSA fines, OFAC civil penalties, bank settlements
 6. bis        — BIS export controls, Entity List, EAR enforcement, semiconductor policy
 
