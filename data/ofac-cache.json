@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-19T22:11:43.368Z",
+  "updatedAt": "2026-06-19T22:33:40.095Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260618",
@@ -431,15 +431,16 @@
       "url": "https://www.aljazeera.com/news/2026/6/19/destruction-is-the-goal-israel-steers-between-the-us-iran-and-lebanon?traffic_source=rss",
       "date": "June 19, 2026",
       "description": "Netanyahu faces political backlash and US criticism as Israeli attacks on Lebanon defy Iran peace agreement."
-    },
-    {
-      "title": "Petrol shortages and ‘oil rain’ bring Russia-Ukraine war home to Moscow",
-      "url": "https://www.aljazeera.com/news/2026/6/19/petrol-shortages-and-oil-rain-bring-russia-ukraine-war-home-to-moscow?traffic_source=rss",
-      "date": "June 19, 2026",
-      "description": "Ukraine increases strikes on Russian oil and weapons infrastructure as it garners aid and begins EU talks."
     }
   ],
-  "occNews": [],
+  "occNews": [
+    {
+      "title": "OCC Announces Enforcement Actions for May 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-40.html",
+      "date": "May 21, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for May 2026."
+    }
+  ],
   "economicsNews": [
     {
       "title": "Federal Reserve issues FOMC statement",
@@ -979,7 +980,7 @@
     },
     {
       "title": "Americast",
-      "url": "https://www.bbc.co.uk/sounds/play/live:bbc_radio_fourfm?at_medium=RSS&amp;at_campaign=rss",
+      "url": "https://www.bbc.co.uk/sounds/play/w3ct8lz7?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 19, 2026",
       "description": "The US economy backs Elon Musk’s vision for AI and sending people into space"
     },
@@ -994,6 +995,18 @@
       "url": "https://www.bbc.com/videos/c98247rge4no?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 16, 2026",
       "description": "Do online saving methods really work?"
+    },
+    {
+      "title": "USA beat Australia 2–0 to book knockout spot at World Cup",
+      "url": "https://www.aljazeera.com/sports/2026/6/19/usa-beat-australia-2-0-to-book-knockout-spot-at-world?traffic_source=rss",
+      "date": "June 19, 2026",
+      "description": "An own goal and a goal by Alex Freeman helped the home side maintain a perfect record and progress to the Round of 32."
+    },
+    {
+      "title": "Spain’s Yamal says ‘very early, unnecessary’ to play full World Cup match",
+      "url": "https://www.aljazeera.com/sports/2026/6/19/spains-yamal-says-very-early-unnecessary-to-play-full-world-cup-match?traffic_source=rss",
+      "date": "June 19, 2026",
+      "description": "&#039;It&#039;s not the time to play a whole match,&#039; Lamine Yamal said ahead of Spain&#039;s match against Saudi Arabia."
     },
     {
       "title": "Canada’s Kone undergoes major leg surgery; to miss rest of World Cup",
@@ -1084,12 +1097,6 @@
       "url": "https://www.aljazeera.com/features/longform/2026/6/19/cuba-between-charcoal-and-solar-panels-2?traffic_source=rss",
       "date": "June 19, 2026",
       "description": "Millions of Cubans have grown accustomed to living without electricity for long periods of time."
-    },
-    {
-      "title": "From outsider to president? Inside de la Espriella’s bid to lead Colombia",
-      "url": "https://www.aljazeera.com/news/longform/2026/6/19/from-outsider-to-president-inside-de-la-espriellas-bid-to-lead-colombia?traffic_source=rss",
-      "date": "June 19, 2026",
-      "description": "A political newcomer, de la Espriella has reached the last round of Colombia&#039;s presidential race. What would a win mean?"
     }
   ]
 }
