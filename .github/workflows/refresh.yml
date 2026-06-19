@@ -2,9 +2,10 @@ name: Refresh Global Report
 
 on:
   schedule:
-    # Re-registered 2026-06-18 — scheduled trigger had silently stopped firing
-    # (GitHub's cron registration can desync after unusual branch history/force-pushes;
-    # touching this file forces it to re-parse and re-register the schedule).
+    # Re-registered 2026-06-19 (previously re-registered 2026-06-18) — scheduled
+    # trigger keeps silently stopping. GitHub's cron registration can desync after
+    # repeated pushes/rebases on main; touching this file forces it to re-parse and
+    # re-register the schedule. If runs go missing again, bump this date and re-push.
     # All times EDT (UTC-4). Free tier: 20 RPD — total below = 15 calls/day
     # Minutes offset to :07/:37 (not :00/:30) to dodge GitHub Actions' top-of-hour
     # scheduler congestion, which delays/drops runs queued at :00 and :30.
