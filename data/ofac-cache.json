@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-20T15:07:30.075Z",
+  "updatedAt": "2026-06-20T15:51:17.309Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260618",
@@ -379,6 +379,12 @@
   ],
   "ajNews": [
     {
+      "title": "Iran warns of ‘reciprocal action’ if US doesn’t honour MOU commitments",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/20/iran-warns-of-reciprocal-action-if-us-doesnt-honour-mou-commitments?traffic_source=rss",
+      "date": "June 20, 2026",
+      "description": "Iran warns of ‘reciprocal action’ if US doesn’t honour MOU commitments."
+    },
+    {
       "title": "Where do Iran’s political factions stand on the US peace deal?",
       "url": "https://www.aljazeera.com/news/2026/6/20/where-do-irans-political-factions-stand-on-the-us-peace-deal?traffic_source=rss",
       "date": "June 20, 2026",
@@ -403,7 +409,7 @@
       "description": "The precarious memorandum of understanding between the US and Iran."
     },
     {
-      "title": "Israeli strikes kill 32 in Lebanon, putting US-Iran peace talks in peril",
+      "title": "Israeli strikes kill 32 in Lebanon, putting US-Iran talks in peril",
       "url": "https://www.aljazeera.com/news/2026/6/20/us-envoy-headed-for-switzerland-israeli-strikes-on-lebanon-threaten-talks?traffic_source=rss",
       "date": "June 20, 2026",
       "description": "Mediator Pakistan says ⁠follow-up ​talks between Iran ⁠and US set for Sunday in Burgenstock, Switzerland."
@@ -514,13 +520,19 @@
       "title": "Israel and Hezbollah continue strikes despite ceasefire agreement",
       "url": "https://www.bbc.com/news/articles/cx240k9l112o?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 20, 2026",
-      "description": "Deaths are reported in southern Lebanon, with the IDF saying it hit Hezbollah targets after the group fired over 50 projectiles at Israeli forces."
+      "description": "At least 20 people have reportedly been killed by Israeli air strikes as the Israeli military said Hezbollah had fired at Israeli troops in southern Lebanon."
     },
     {
-      "title": "Zelensky stripped of highest Polish honour over WW2 name of army unit",
-      "url": "https://www.bbc.com/news/articles/cr7xzg3dmj8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 19, 2026",
-      "description": "Ukraine has denounced the move, calling it a \"strategic mistake\" and \"disrespectful\"."
+      "title": "Meloni tells Trump to 'focus on your own popularity' as row escalates",
+      "url": "https://www.bbc.com/news/articles/cgqj77909jpo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 20, 2026",
+      "description": "The US president earlier questioned Meloni's popularity after suggesting she \"begged\" for a photo at G7 summit"
+    },
+    {
+      "title": "Bolivian president declares state of emergency",
+      "url": "https://www.bbc.com/news/articles/cr47wn92zdgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 20, 2026",
+      "description": "The move comes after weeks of anti-government protests that have caused a shortage of basic goods in Bolivia."
     },
     {
       "title": "Tourist dies in Dominican Republic luxury resort fire",
@@ -529,22 +541,16 @@
       "description": "Nearly 1,700 people were evacuated from the huge blaze at Viva Wyndham Dominicus Beach in Bayahibe, a popular resort town on the Caribbean coast."
     },
     {
-      "title": "Trump hits out at Italy's Meloni after pushback on G7 photo claim",
-      "url": "https://www.bbc.com/news/articles/cgqj77909jpo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 20, 2026",
-      "description": "Trump said the Italian leader asked \"over and over\" for a picture at G7, after she said the US president \"made-up\" a story that she \"begged\" for a photo."
+      "title": "Zelensky stripped of highest Polish honour over WW2 name of army unit",
+      "url": "https://www.bbc.com/news/articles/cr7xzg3dmj8o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 19, 2026",
+      "description": "Ukraine has denounced the move, calling it a \"strategic mistake\" and \"disrespectful\"."
     },
     {
       "title": "US to stop funding HIV programmes in South Africa",
       "url": "https://www.bbc.com/news/articles/cdr457lxr71o?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 19, 2026",
       "description": "More than eight million South Africans are living with HIV – the highest number of any country in the world."
-    },
-    {
-      "title": "Watch: World Cup fans react to US defeating Australia to reach knockout round",
-      "url": "https://www.bbc.com/news/videos/cdxdly41p23o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 20, 2026",
-      "description": "US supporters were delighted after their team won 2-0 against the Socceroos while Australian fans were left disappointed but still hopeful."
     },
     {
       "title": "Australia confirms first case of H5N1 bird flu as virus reaches every continent",
@@ -647,12 +653,6 @@
       "url": "https://www.bbc.com/news/articles/c4gy2l30dd0o?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 18, 2026",
       "description": "The gunmen concealed their weapons behind flowers and stuffed toys while waiting for the victim outside Guayaquil airport."
-    },
-    {
-      "title": "Jury fails to reach verdict in Norwegian 'hitman' trial",
-      "url": "https://www.bbc.com/news/articles/cz6v1qw7d0no?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 18, 2026",
-      "description": "Johannes Natland, 19, was remanded in custody and will now face a retrial."
     },
     {
       "title": "Japanese pop group XG went from brutal five year training to global pop stars",
@@ -1103,12 +1103,6 @@
       "url": "https://www.aljazeera.com/news/2026/6/20/australia-pledges-action-on-h5n1-after-bird-flu-case-confirmed?traffic_source=rss",
       "date": "June 20, 2026",
       "description": "Australia confirmed its first mainland H5N1 bird flu case in a seabird near Esperance, WA."
-    },
-    {
-      "title": "‘We tasted the horrors of war’: Stories of refugees who returned home",
-      "url": "https://www.aljazeera.com/features/longform/2026/6/20/we-tasted-the-horrors-of-war-stories-of-refugees-who-returned-home?traffic_source=rss",
-      "date": "June 20, 2026",
-      "description": "In 2025, nearly 15 million displaced people returned - the largest surge of returns recorded by the UN."
     }
   ]
 }
