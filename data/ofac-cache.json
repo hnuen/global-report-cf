@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-21T15:00:08.113Z",
+  "updatedAt": "2026-06-21T15:14:31.646Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260618",
@@ -361,6 +361,12 @@
   ],
   "ajNews": [
     {
+      "title": "Iran-U.S. launch historic peace talks with 60-day roadmap",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/21/iran-u-s-launch-historic-peace-talks-with-60-day-roadmap?traffic_source=rss",
+      "date": "June 21, 2026",
+      "description": "Iran-U.S. launch historic peace talks with 60-day roadmap"
+    },
+    {
       "title": "Why Lebanon may make or break the Iran-US deal",
       "url": "https://www.aljazeera.com/news/2026/6/21/why-lebanon-may-make-or-break-the-iran-us-deal?traffic_source=rss",
       "date": "June 21, 2026",
@@ -395,15 +401,16 @@
       "url": "https://www.aljazeera.com/news/2026/6/21/us-iran-talks-in-switzerland-is-lebanon-top-of-agenda-who-is-attending?traffic_source=rss",
       "date": "June 21, 2026",
       "description": "Iran wants the US to pressure Israel to stop the war in Lebanon, which has reeled from renewed attacks."
-    },
-    {
-      "title": "US and Iran face make-or-break talks in Switzerland",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/21/us-and-iran-face-make-or-break-talks-in-switzerland?traffic_source=rss",
-      "date": "June 21, 2026",
-      "description": "Iranian and US officials are set for high stakes talks in Switzerland to reinforce the Memorandum of Understanding."
     }
   ],
-  "occNews": [],
+  "occNews": [
+    {
+      "title": "OCC Announces Enforcement Actions for May 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-40.html",
+      "date": "May 21, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for May 2026."
+    }
+  ],
   "economicsNews": [
     {
       "title": "Federal Reserve issues FOMC statement",
@@ -990,6 +997,12 @@
       "description": "Which jobs could be most resistant to the rise of AI?"
     },
     {
+      "title": "Fans flood Atlanta streets before Spain-Saudi Arabia match",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/21/fans-flood-atlanta-streets-before-spain-saudi-arabia-match?traffic_source=rss",
+      "date": "June 21, 2026",
+      "description": "Spain and Saudi Arabia fans filled the streets of Atlanta with chants and celebrations ahead of their World Cup clash."
+    },
+    {
       "title": "Bolivian authorities say no active blockades after state of emergency decree",
       "url": "https://www.aljazeera.com/news/2026/6/21/bolivian-authorities-say-no-active-blockades-after-state-of-emergency-decree?traffic_source=rss",
       "date": "June 21, 2026",
@@ -1090,12 +1103,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/6/21/protests-in-albania-against-kushner-resort-swell-to-tens-of-thousands?traffic_source=rss",
       "date": "June 21, 2026",
       "description": "Albanians have gathered for the 21st day in a row to protest plans to build a resort on Albania&#039;s coast."
-    },
-    {
-      "title": "Watch World Cup Day 10: Netherlands thrash Sweden, Japan eliminate Tunisia",
-      "url": "https://www.aljazeera.com/video/2026/6/21/video-world-cup-2026-highlights?traffic_source=rss",
-      "date": "June 21, 2026",
-      "description": "Latest match highlights, reaction and previews from the FIFA World Cup 2026 in North America."
     }
   ]
 }
