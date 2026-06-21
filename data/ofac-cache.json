@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-21T19:05:15.767Z",
+  "updatedAt": "2026-06-21T19:54:15.242Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260618",
@@ -257,10 +257,10 @@
   ],
   "bbcNews": [
     {
-      "title": "US and Iran begin talks on initial peace deal in Switzerland",
+      "title": "Trump and Iran's negotiator trade warnings as talks held in Switzerland",
       "url": "https://www.bbc.com/news/articles/cwy0q41v1lzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 21, 2026",
-      "description": "The face-to-face meeting follows ongoing fighting in Lebanon and Iran's claim to have shut the Strait of Hormuz."
+      "description": "The US president, who is not at the talks, threatens to attack Iran if it does not restrain Hezbollah in Lebanon."
     },
     {
       "title": "Fuel sales halted in occupied Crimea as Ukraine targets oil facilities",
@@ -401,12 +401,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/6/21/us-iran-delegations-arrive-as-talks-begin-in-switzerland?traffic_source=rss",
       "date": "June 21, 2026",
       "description": "US-Iran delegations arrive as talks begin in Switzerland."
-    },
-    {
-      "title": "Ukraine strikes hit oil facilities in Crimea, Russia’s Krasnodar",
-      "url": "https://www.aljazeera.com/news/2026/6/21/ukraine-strikes-hit-oil-facilities-in-crimea-russias-krasnodar?traffic_source=rss",
-      "date": "June 21, 2026",
-      "description": "Crimea&#039;s Moscow-installed leader says four people killed in drone attack on the Russian-occupied Black Sea peninsula."
     }
   ],
   "occNews": [
@@ -980,7 +974,7 @@
     },
     {
       "title": "Money Box",
-      "url": "https://www.bbc.co.uk/sounds/play/m002xzly?at_medium=RSS&amp;at_campaign=rss",
+      "url": "https://www.bbc.co.uk/sounds/play/live:bbc_radio_fourfm?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 20, 2026",
       "description": "Civil service pensioners face further delays to payments."
     },
@@ -1007,6 +1001,18 @@
       "url": "https://www.bbc.co.uk/sounds/play/w3ct8g9d?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 18, 2026",
       "description": "Which jobs could be most resistant to the rise of AI?"
+    },
+    {
+      "title": "Europe heatwave scorches cities and wildlife",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/21/europe-heatwave-scorches-cities-and-wildlife?traffic_source=rss",
+      "date": "June 21, 2026",
+      "description": "Europe heatwave scorches cities and wildlife"
+    },
+    {
+      "title": "Lamine Yamal scores first World Cup goal as Spain thrash Saudi Arabia",
+      "url": "https://www.aljazeera.com/sports/2026/6/21/spain-thrash-saudi-arabia-as-lamine-yamal-off-mark-at-world-cup-2026?traffic_source=rss",
+      "date": "June 21, 2026",
+      "description": "Yamal makes a goal-scoring return for Spain as European champions get their World Cup campaign back on track."
     },
     {
       "title": "What’s next in the Strait of Hormuz crisis?",
@@ -1090,7 +1096,7 @@
       "title": "Spain vs Saudi Arabia 4-0: World Cup 2026 – as it happened",
       "url": "https://www.aljazeera.com/sports/liveblog/2026/6/21/spain-vs-saudi-arabia-live-world-cup-2026?traffic_source=rss",
       "date": "June 21, 2026",
-      "description": "Live updates as Spain face Saudi Arabia in Group H - follow the build-up, analysis and live text commentary of the game."
+      "description": "All the updates as Spain get their World Cup campaign back on track with a 4-0 dismantling of Saudi Arabia in Group H."
     },
     {
       "title": "Henry stars as New Zealand wrap up victory against England in second Test",
@@ -1103,12 +1109,6 @@
       "url": "https://www.aljazeera.com/sports/2026/6/21/messi-argentina-play-austria-in-world-cup-group-match-all-to-know?traffic_source=rss",
       "date": "June 21, 2026",
       "description": "Hat-trick hero Lionel Messi back in action for Argentina as they look to take a huge step towards the knockout stages."
-    },
-    {
-      "title": "‘Kind, principled’: Colleagues remember Gaza journalist killed by Israel",
-      "url": "https://www.aljazeera.com/news/2026/6/21/kind-principled-palestinian-journalists-remember-slain-gaza-journalist?traffic_source=rss",
-      "date": "June 21, 2026",
-      "description": "Ahmed Wishah is the 12th Al Jazeera journalist killed by Israel in Gaza since October 2023."
     }
   ]
 }
