@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-22T18:16:36.163Z",
+  "updatedAt": "2026-06-22T20:21:40.386Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260622_33",
@@ -247,14 +247,7 @@
       "description": "The technical assessment conducted by the Commission concluded that Russia meets the criteria to be designated as a high‑risk third country."
     }
   ],
-  "unNotices": [
-    {
-      "title": "Security Council Sanctions Committee concerning Democratic Republic of the Congo Discusses Final Report of Group of Experts",
-      "url": "https://press.un.org/en/2026/sc16391.doc.htm",
-      "date": "June 18, 2026",
-      "description": "On 5 June 2026, the Security Council Committee established pursuant to resolution 1533 (2004) concerning the Democratic Republic of the Congo held informal consultations during which the Coordinator of the Group of Experts presented the Group’s final report."
-    }
-  ],
+  "unNotices": [],
   "bbcNews": [
     {
       "title": "Vance says Iran will allow nuclear inspectors back into the country",
@@ -367,6 +360,12 @@
   ],
   "ajNews": [
     {
+      "title": "Qatar PM on preventing US-Iran talks from escalation",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/22/qatar-pm-on-preventing-us-iran-talks-from-escalation?traffic_source=rss",
+      "date": "June 22, 2026",
+      "description": "Qatar&#039;s PM said that safeguards have been put in place to prevent US-Iran negotiations from regional escalation."
+    },
+    {
       "title": "Qatar’s PM tells Al Jazeera progress made in US-Iran talks",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/6/22/qatars-pm-tells-al-jazeera-progress-made-in-us-iran-talks?traffic_source=rss",
       "date": "June 22, 2026",
@@ -395,18 +394,6 @@
       "url": "https://www.aljazeera.com/news/2026/6/22/ukraine-says-it-hit-missile-electronics-plant-in-western-russia?traffic_source=rss",
       "date": "June 22, 2026",
       "description": "Ukraine says facility a &#039;critical component&#039; in defence production as local Russian authorities confirm attack."
-    },
-    {
-      "title": "China adds 10 US firms, including rare-earth miner, to export control list",
-      "url": "https://www.aljazeera.com/news/2026/6/22/china-adds-10-us-firms-including-rare-earth-miner-to-export-control-list?traffic_source=rss",
-      "date": "June 22, 2026",
-      "description": "Export ban follows move by Pentagon to blacklist major Chinese companies such as Alibaba and Baidu."
-    },
-    {
-      "title": "JD Vance touts progress on key issues in US-Iran negotiations",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/22/jd-vance-touts-progress-on-key-issues-in-us-iran-negotiations?traffic_source=rss",
-      "date": "June 22, 2026",
-      "description": "JD Vance touts progress on key issues in US-Iran negotiations."
     }
   ],
   "occNews": [
@@ -745,6 +732,12 @@
       "description": "The airline describes the latest bid approach from Castlelake as \"highly opportunistic\"."
     },
     {
+      "title": "Tesla crash that killed a woman under US federal investigation",
+      "url": "https://www.bbc.com/news/articles/c07yp02mxyjo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 22, 2026",
+      "description": "A Tesla driver on Friday said he was using ‘self-driving’ technology after his vehicle sped into a Texas home."
+    },
+    {
       "title": "Alan Greenspan, architect of the modern American economy, dies aged 100",
       "url": "https://www.bbc.com/news/articles/cjer7x7yl12o?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 22, 2026",
@@ -1021,6 +1014,48 @@
       "description": "Which jobs could be most resistant to the rise of AI?"
     },
     {
+      "title": "Lionel Messi scores brace as Argentina beat Austria 2–0 at World Cup 2026",
+      "url": "https://www.aljazeera.com/sports/2026/6/22/lionel-messi-scores-brace-as-argentina-beat-austria-2-0-at-world-cup-2026?traffic_source=rss",
+      "date": "June 22, 2026",
+      "description": "Messi scores twice to become all-time leading scorer in men&#039;s World Cup history as Argentina reach knockout rounds."
+    },
+    {
+      "title": "Canadian police officer, suspect among 3 dead in Montreal shooting",
+      "url": "https://www.aljazeera.com/news/2026/6/22/canadian-police-officer-suspect-among-3-dead-in-montreal-shooting?traffic_source=rss",
+      "date": "June 22, 2026",
+      "description": "Few details available after law enforcement say suspected attacker &#039;neutralised&#039; in Quebec city."
+    },
+    {
+      "title": "Thousands of kites soar over Denmark at annual beach festival",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/22/thousands-of-kites-soar-over-denmark-at-annual-beach-festival?traffic_source=rss",
+      "date": "June 22, 2026",
+      "description": "Roughly 25,000 kites flew over the Danish island of Fano for its annual International Kite Fliers Meeting."
+    },
+    {
+      "title": "US raises concern as RSF forces encircle Sudanese city of el-Obeid",
+      "url": "https://www.aljazeera.com/news/2026/6/22/us-raises-concern-as-rsf-forces-encircle-sudanese-city-of-el-obeid?traffic_source=rss",
+      "date": "June 22, 2026",
+      "description": "US calls for negotiated solution and expresses alarm over potential &#039;mass atrocities&#039; as paramilitary surrounds city."
+    },
+    {
+      "title": "A leftward lurch? What to know about the Democratic primaries in New York",
+      "url": "https://www.aljazeera.com/news/2026/6/22/a-leftward-lurch-what-to-know-about-the-democratic-primaries-in-new-york?traffic_source=rss",
+      "date": "June 22, 2026",
+      "description": "Democratic socialist candidates push for an edge in US races that hinge on issues like Israel policy and inequality."
+    },
+    {
+      "title": "Messi breaks World Cup’s all-time scoring record with 17th goal vs Austria",
+      "url": "https://www.aljazeera.com/sports/2026/6/22/messi-breaks-world-cups-all-time-scoring-record-with-17th-goal-vs-austria?traffic_source=rss",
+      "date": "June 22, 2026",
+      "description": "Lionel Messi is tournament&#039;s all-time and current edition&#039;s leading goal scorer with 17 and four goals, respectively."
+    },
+    {
+      "title": "Lebanon discusses ‘deconfliction’ mechanism ahead of Israel talks",
+      "url": "https://www.aljazeera.com/news/2026/6/22/lebanon-discusses-de-confliction-mechanism-ahead-of-israel-talks?traffic_source=rss",
+      "date": "June 22, 2026",
+      "description": "Mediators Qatar and Pakistan say plan seeks to ensure the end of military operations in Lebanon."
+    },
+    {
       "title": "Kenyan court finds minister in contempt over US Ebola site",
       "url": "https://www.aljazeera.com/news/2026/6/22/kenyan-court-finds-minister-in-contempt-over-us-ebola-site?traffic_source=rss",
       "date": "June 22, 2026",
@@ -1033,10 +1068,10 @@
       "description": "Xenophobic protest groups have demanded that undocumented foreigners leave the country by June 30 ."
     },
     {
-      "title": "LIVE: France vs Iraq – World Cup 2026",
+      "title": "France vs Iraq LIVE: World Cup 2026",
       "url": "https://www.aljazeera.com/sports/liveblog/2026/6/22/live-france-vs-iraq-world-cup-2026?traffic_source=rss",
       "date": "June 22, 2026",
-      "description": "Follow the live build-up and team news coverage ahead of our text commentary stream of the Group I game in Philadelphia."
+      "description": "Follow updates as Mbappe&#039;s France play Iraq in Group I, including the build-up, analysis and live text commentary."
     },
     {
       "title": "Canada’s inflation hits 29-month high amid heightened oil prices",
@@ -1091,42 +1126,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/6/22/qatar-pm-denies-snubbing-us-vice-president-in-viral-video?traffic_source=rss",
       "date": "June 22, 2026",
       "description": "Qatar&#039;s Prime Minister told Al Jazeera that reports of him snubbing the US vice president were unfounded."
-    },
-    {
-      "title": "Argentina vs Austria LIVE: World Cup 2026",
-      "url": "https://www.aljazeera.com/sports/liveblog/2026/6/22/argentina-vs-austria-live-world-cup-2026?traffic_source=rss",
-      "date": "June 22, 2026",
-      "description": "Follow updates as Messi&#039;s Argentina play Austria in Group J, including the build-up, analysis and live text commentary."
-    },
-    {
-      "title": "Pakistan issues nationwide alert over fears of heavy rains, floods",
-      "url": "https://www.aljazeera.com/news/2026/6/22/pakistan-issues-nationwide-alert-over-fears-of-heavy-rains-floods?traffic_source=rss",
-      "date": "June 22, 2026",
-      "description": "Warning comes as country braces for likely fourth consecutive year of punishing monsoon, expected to arrive this month."
-    },
-    {
-      "title": "Far-right de la Espriella elected Colombia president: What’s next?",
-      "url": "https://www.aljazeera.com/news/2026/6/22/far-right-de-la-espriella-elected-colombia-president-whats-next?traffic_source=rss",
-      "date": "June 22, 2026",
-      "description": "Election results show Trump-endorsed millionaire Abelardo de la Espriella wins by razor-thin margin."
-    },
-    {
-      "title": "US strike on an alleged drug boat in eastern Pacific kills two",
-      "url": "https://www.aljazeera.com/news/2026/6/22/us-strike-on-an-alleged-drug-boat-in-eastern-pacific-kills-two?traffic_source=rss",
-      "date": "June 22, 2026",
-      "description": "SOUTHCOM said it notified the US Coast Guard about the &#039;six male survivors&#039; without providing details of their rescue."
-    },
-    {
-      "title": "Gaza’s surfers seek solace from war in the Mediterranean Sea",
-      "url": "https://www.aljazeera.com/sports/2026/6/22/gazas-surfers-seek-solace-from-war-in-the-mediterranean-sea?traffic_source=rss",
-      "date": "June 22, 2026",
-      "description": "Surfers still ride the waves off Gaza despite the ever-present threat of becoming an Israeli military target."
-    },
-    {
-      "title": "How Canada’s Muslims face ‘perfect storm’ amid rising xenophobia",
-      "url": "https://www.aljazeera.com/news/2026/6/22/how-canadas-muslims-face-perfect-storm-amid-rising-xenophobia?traffic_source=rss",
-      "date": "June 22, 2026",
-      "description": "As anti-immigrant rhetoric intensifies in Canada, community advocates say Muslim communities face heightened risks."
     }
   ]
 }
