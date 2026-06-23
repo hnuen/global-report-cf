@@ -1,16 +1,22 @@
 {
-  "updatedAt": "2026-06-23T14:08:42.140Z",
+  "updatedAt": "2026-06-23T14:38:35.710Z",
   "recentActions": [
     {
-      "url": "https://ofac.treasury.gov/recent-actions/20260622_33",
-      "code": "20260622_33",
-      "title": "Issuance of Iran-related General License",
-      "date": "June 22, 2026"
+      "url": "https://ofac.treasury.gov/recent-actions/20260623",
+      "code": "20260623",
+      "title": "Transnational Criminal Organizations Designations; Cuba Designations; Russia-related Designations Removals; Issuance of TCO-related General License; Publication of OFAC-OFSI Comparative Overview",
+      "date": "June 23, 2026"
     },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260622",
       "code": "20260622",
       "title": "Counter Terrorism Designations",
+      "date": "June 22, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260622_33",
+      "code": "20260622_33",
+      "title": "Issuance of Iran-related General License",
       "date": "June 22, 2026"
     },
     {
@@ -54,12 +60,6 @@
       "code": "20260602",
       "title": "Counter Terrorism and Iran-related Designations; Democratic Republic of the Congo-related Designations; Issuance of Iran-related Frequently Asked Question",
       "date": "June 02, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260601",
-      "code": "20260601",
-      "title": "Publication of Introduction to OFAC Guide",
-      "date": "June 01, 2026"
     }
   ],
   "civilPenalties": [
@@ -330,7 +330,7 @@
       "description": "Former PM Naftali Bennett has admitted Israel smuggled Starlink internet systems into Iran."
     },
     {
-      "title": "Iran’s President Pezeshkian lands in Pakistan after US deal",
+      "title": "Iran’s President Pezeshkian lands in Pakistan for talks after US deal",
       "url": "https://www.aljazeera.com/news/2026/6/23/irans-president-lands-in-pakistan-after-crucial-talks-with-us?traffic_source=rss",
       "date": "June 23, 2026",
       "description": "Pakistan hosts Iranian President Masoud Pezeshkian after mediating the breakthrough US-Iran negotiations in Switzerland."
@@ -930,6 +930,18 @@
       "description": "Which jobs could be most resistant to the rise of AI?"
     },
     {
+      "title": "Demand for tunnel maps and personal weapons tests Gaza talks",
+      "url": "https://www.aljazeera.com/news/2026/6/23/demand-for-tunnel-maps-and-family-arms-tests-gaza-talks?traffic_source=rss",
+      "date": "June 23, 2026",
+      "description": "Gaza talks remain active, but stall as the US envoy demands the handover of tunnel maps and family arms."
+    },
+    {
+      "title": "Mexico exhibition relives memories of Qatar World Cup 2022",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/23/mexico-exhibition-relives-memories-of-qatar-world-cup-2022?traffic_source=rss",
+      "date": "June 23, 2026",
+      "description": "An exhibition in Mexico held during the World Cup explores the legacy of Qatar 2022."
+    },
+    {
       "title": "Kenya minister says US-run Ebola facility plans halted after court order",
       "url": "https://www.aljazeera.com/news/2026/6/23/kenya-minister-says-us-run-ebola-facility-plans-halted-after-court-order?traffic_source=rss",
       "date": "June 23, 2026",
@@ -1030,18 +1042,6 @@
       "url": "https://www.aljazeera.com/news/2026/6/23/about-20-drown-in-france-trying-to-escape-heatwave-sweeping-much-of-europe?traffic_source=rss",
       "date": "June 23, 2026",
       "description": "France struggles with extreme heat and power grid challenges as temperature records also smashed in parts of UK, Spain."
-    },
-    {
-      "title": "US gov’t investigates New York coffee chain over ban on pro-Israel lawmaker",
-      "url": "https://www.aljazeera.com/economy/2026/6/23/us-govt-investigates-new-york-coffee-chain-over-ban-on-pro-israel-lawmaker?traffic_source=rss",
-      "date": "June 23, 2026",
-      "description": "Top civil rights prosecutor announces probe after cafe chain says it will not serve Democratic lawmaker Dan Goldman."
-    },
-    {
-      "title": "What to know about Tuesday’s primary elections in Maryland, Utah, New York",
-      "url": "https://www.aljazeera.com/news/2026/6/23/what-to-know-about-tuesdays-primary-elections-in-maryland-utah-new-york?traffic_source=rss",
-      "date": "June 23, 2026",
-      "description": "Redistricting will be central to Democratic primaries in Utah and Maryland while South Carolina faces Republican run-off."
     }
   ]
 }
