@@ -15,6 +15,8 @@
  *   SAVE_BRIEFING_SECRET — shared secret, must match CF env var
  */
 
+import { syncProgramsLibrary } from "./sync-programs-library.mjs";
+
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const APP_URL        = (process.env.APP_URL || "").replace(/\/$/, "");
 const SAVE_SECRET    = process.env.SAVE_BRIEFING_SECRET || "";
@@ -542,6 +544,7 @@ if (noNewActions && noNewPenalties && noNewPrograms) {
   console.log("[refresh-briefing] ✅ No new OFAC data — skipping Gemini to preserve RPD quota");
   // Re-commit cache to refresh updatedAt (app reads this to know last scrape time)
   await commitOfacCache(recentActions, civilPenalties, programs, ofsiNotices, europaNews, unNotices, bbcNews, ajNews, occNews, economicsNews, bisNews, regionsNews);
+  await syncPrograms(programs, recentActions);
 
   // Still touch the saved briefing's lastUpdated so the app shows a fresh
   // "checked at" time on every run, not just runs that found new OFAC data.
@@ -613,6 +616,32 @@ async function commitOfacCache(recentActions, civilPenalties, programs, ofsiNoti
 }
 
 await commitOfacCache(recentActions, civilPenalties, programs, ofsiNotices, europaNews, unNotices, bbcNews, ajNews, occNews, economicsNews, bisNews, regionsNews);
+await syncPrograms(programs, recentActions);
+
+// ── Sync newly-scraped GL/EO/advisory data into the curated programs library ─
+// Non-fatal by design — a sync failure must never break the briefing refresh.
+// See sync-programs-library.mjs for the safety model (string-surgery + sanity
+// checks; aborts and writes nothing if anything looks off).
+async function syncPrograms(programs, recentActions) {
+  try {
+    const result = await syncProgramsLibrary({
+      programs,
+      recentActions,
+      githubToken: GITHUB_TOKEN,
+      githubRepo: GITHUB_REPO,
+      dryRun: false,
+    });
+    if (result?.changed) {
+      console.log(`[sync-programs] ✅ Library updated: ${JSON.stringify(result)}`);
+    } else if (result?.error) {
+      console.warn(`[sync-programs] Aborted: ${result.error}`);
+    } else {
+      console.log("[sync-programs] No changes needed");
+    }
+  } catch (e) {
+    console.warn(`[sync-programs] Failed (non-fatal): ${String(e).slice(0, 300)}`);
+  }
+}
 
 // ── Build fallback briefing from scraped data (when Gemini fails) ──────────
 function buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices = [], europaNews = [], unNotices = [], bbcNews = [], ajNews = [], occNews = [], economicsNews = [], bisNews = [], regionsNews = []) {
