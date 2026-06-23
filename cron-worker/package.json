@@ -1,0 +1,14 @@
+{
+  "name": "global-report-cron-trigger",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail",
+    "test-trigger": "wrangler dev --test-scheduled"
+  },
+  "devDependencies": {
+    "wrangler": "3.112.0"
+  }
+}

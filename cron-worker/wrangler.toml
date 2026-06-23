@@ -1,0 +1,21 @@
+name = "global-report-cron-trigger"
+main = "src/index.js"
+compatibility_date = "2025-04-01"
+
+# Standalone Cloudflare Worker — separate from the main Pages app (Pages
+# projects can't have Cron Triggers; only Workers can). Its only job is to
+# fire on schedule and call GitHub's workflow_dispatch API, which is more
+# reliable than GitHub Actions' own `schedule:` trigger (best-effort, no SLA,
+# known to silently drop/delay runs under platform load — see refresh.yml).
+#
+# Mirrors refresh.yml's cron slots exactly. If you change one, change both —
+# or better, once this Worker is confirmed reliable, delete the `schedule:`
+# block from refresh.yml entirely so refresh.yml is dispatch-only and there's
+# a single source of truth for timing (this file).
+[triggers]
+crons = [
+  "7 13,16,17,21,22 * * *",   # 9:07am, 12:07pm, 1:07pm, 5:07pm, 6:07pm ET
+  "37 12,13,17,21 * * *",     # 8:37am, 9:37am, 1:37pm, 5:37pm ET
+  "7,37 14,15 * * *",         # 10:07–11:37am ET, every 30 min
+  "7,37 18,19,20 * * *",      # 2:07–4:37pm ET, every 30 min
+]
