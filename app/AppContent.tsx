@@ -1316,7 +1316,7 @@ export default function GlobalMonitor() {
                 {prog.executiveOrders.length===0
                   ?<div className="ofac-prog-empty">No executive orders - statute-based program.</div>
                   :<table className="ofac-prog-table"><thead><tr><th>EO Number</th><th>Title</th><th>Date</th><th>Document</th></tr></thead><tbody>
-                    {[...prog.executiveOrders].reverse().map((eo,i)=>(
+                    {[...prog.executiveOrders].sort((a,b)=>parseDate(b.date)-parseDate(a.date)).map((eo,i)=>(
                       <tr key={i}><td>EO {eo.number}</td><td>{eo.title}</td><td>{eo.date}</td>
                         <td>{eo.url?<a href={eo.url} target="_blank" rel="noopener" style={{display:"inline-flex",alignItems:"center",gap:"4px",fontFamily:"var(--mono)",fontSize:".62rem",color:"#fff",background:"#111",padding:"3px 8px",borderRadius:"3px",textDecoration:"none"}}>View PDF</a>:<span style={{color:"#d1d5db"}}>-</span>}</td>
                       </tr>
@@ -1330,7 +1330,7 @@ export default function GlobalMonitor() {
                 {prog.generalLicenses.length===0
                   ?<div className="ofac-prog-empty">No active general licenses.</div>
                   :<table className="ofac-prog-table"><thead><tr><th>License</th><th>Title / Authorization</th><th>Date</th><th>Document</th></tr></thead><tbody>
-                    {[...prog.generalLicenses].reverse().map((gl,i)=>(
+                    {[...prog.generalLicenses].sort((a,b)=>parseDate(b.date)-parseDate(a.date)).map((gl,i)=>(
                       <tr key={i}><td>{gl.number}</td><td>{gl.title}</td><td>{gl.date}</td>
                         <td>{gl.url?<a href={gl.url} target="_blank" rel="noopener" style={{display:"inline-flex",alignItems:"center",gap:"4px",fontFamily:"var(--mono)",fontSize:".62rem",color:"#fff",background:"#166534",padding:"3px 8px",borderRadius:"3px",textDecoration:"none"}}>View PDF</a>:<a href={`${prog.url}#general-licenses`} target="_blank" rel="noopener" style={{display:"inline-flex",alignItems:"center",gap:"4px",fontFamily:"var(--mono)",fontSize:".62rem",color:"#1a56db",background:"#eff6ff",padding:"3px 8px",borderRadius:"3px",textDecoration:"none",border:"1px solid #bfdbfe"}}>OFAC Page</a>}</td>
                       </tr>
@@ -1343,7 +1343,7 @@ export default function GlobalMonitor() {
                     <span style={{background:"#1a56db",color:"#fff",fontFamily:"var(--mono)",fontSize:".55rem",padding:"2px 7px",borderRadius:"10px",fontWeight:600}}>{prog.keyAdvisories.length} Items</span>
                   </div>
                   <table className="ofac-prog-table"><thead><tr><th>Date</th><th>Title</th><th>Link / Source</th></tr></thead><tbody>
-                    {prog.keyAdvisories.map((adv,i)=>(
+                    {[...prog.keyAdvisories].sort((a,b)=>parseDate(b.date)-parseDate(a.date)).map((adv,i)=>(
                       <tr key={i}><td>{adv.date}</td><td>{adv.title}</td>
                         <td>{adv.url?<a href={adv.url} target="_blank" rel="noopener" style={{display:"inline-flex",alignItems:"center",gap:"4px",fontFamily:"var(--mono)",fontSize:".62rem",color:"#fff",background:"#cc0000",padding:"3px 8px",borderRadius:"3px",textDecoration:"none"}}>Read</a>:<span style={{color:"#d1d5db"}}>-</span>}</td>
                       </tr>
@@ -1363,7 +1363,9 @@ export default function GlobalMonitor() {
                   <table className="ofac-prog-table" style={{opacity:.8}}>
                     <thead><tr><th>Item</th><th>Title</th><th>Archived</th><th>Note</th></tr></thead>
                     <tbody>
-                      {[...(prog.archive.generalLicenses||[]),...(prog.archive.executiveOrders||[]),...(prog.archive.advisories||[])].map((item,i)=>(
+                      {[...(prog.archive.generalLicenses||[]),...(prog.archive.executiveOrders||[]),...(prog.archive.advisories||[])]
+                        .sort((a,b)=>parseDate(b.archivedDate||b.date)-parseDate(a.archivedDate||a.date))
+                        .map((item,i)=>(
                         <tr key={i} style={{background:"#f9fafb"}}>
                           <td style={{textDecoration:"line-through",color:"#9ca3af",fontFamily:"var(--mono)",fontSize:".65rem"}}>{item.number||"Advisory"}</td>
                           <td style={{color:"#9ca3af"}}>{item.title}</td>
