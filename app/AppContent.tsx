@@ -999,6 +999,10 @@ export default function GlobalMonitor() {
       .m-pen-table tr:hover td{background:#f9fafb}
       .m-section-hd{padding:10px 12px 4px;font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;border-bottom:1px solid #e5e7eb}
       .m-empty{padding:20px 12px;font-family:var(--mono);font-size:.62rem;color:#9ca3af;text-align:center}
+      .m-yr-row{display:flex;gap:5px;overflow-x:auto;padding:6px 12px;scrollbar-width:none;background:#fafafa;border-bottom:1px solid #f3f4f6}
+      .m-yr-row::-webkit-scrollbar{display:none}
+      .m-yr-pill{flex-shrink:0;padding:3px 9px;border-radius:3px;border:1px solid #d1d5db;background:#fff;color:#374151;font-family:var(--mono);font-size:.56rem;cursor:pointer;white-space:nowrap}
+      .m-yr-pill.on{background:#111;border-color:#111;color:#fff}
     `}</style>
     <div className="m-app">
       {/* Header */}
@@ -1077,6 +1081,12 @@ export default function GlobalMonitor() {
       {/* Penalties section */}
       {section === "penalties" && (<>
         <div className="m-section-hd">OFAC Civil Penalties</div>
+        <div className="m-yr-row">
+          <button className={`m-yr-pill ${penaltyYear===null?"on":""}`} onClick={()=>setPenYear(null)}>All</button>
+          {penaltyYears.map(y=>(
+            <button key={y} className={`m-yr-pill ${penaltyYear===y?"on":""}`} onClick={()=>setPenYear(y)}>{y}</button>
+          ))}
+        </div>
         <div className="m-pen-wrap">
           <table className="m-pen-table">
             <thead><tr><th>Date</th><th>Entity</th><th>Amount</th><th>Program</th></tr></thead>
@@ -1093,11 +1103,17 @@ export default function GlobalMonitor() {
           </table>
         </div>
         <div className="m-section-hd" style={{marginTop:8}}>FinCEN Enforcement</div>
+        <div className="m-yr-row">
+          <button className={`m-yr-pill ${fincenYear===null?"on":""}`} onClick={()=>setFincenYearFn(null)}>All</button>
+          {fincenYears.map(y=>(
+            <button key={y} className={`m-yr-pill ${fincenYear===y?"on":""}`} onClick={()=>setFincenYearFn(y)}>{y}</button>
+          ))}
+        </div>
         <div className="m-pen-wrap">
           <table className="m-pen-table">
             <thead><tr><th>Date</th><th>Institution</th><th>Amount</th><th>Violation</th></tr></thead>
             <tbody>
-              {[...fincenPenalties].sort((a,b)=>b.penalty-a.penalty).slice(0,30).map((p,i)=>(
+              {[...fincenPenalties].sort((a,b)=>b.date.localeCompare(a.date)).slice(0,30).map((p,i)=>(
                 <tr key={i}>
                   <td style={{whiteSpace:"nowrap",fontFamily:"var(--mono)",fontSize:".55rem"}}>{p.date}</td>
                   <td style={{fontWeight:600,fontSize:".62rem"}}>{p.institution}</td>

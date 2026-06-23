@@ -11,8 +11,8 @@
     "deploy": "npx wrangler pages deploy",
     "preview": "npx wrangler pages dev",
     "build:next": "next build",
-    "build:pages": "./node_modules/.bin/opennextjs-cloudflare build && node scripts/patch-worker.js && cp -r .open-next/assets/. .open-next/",
-    "deploy:pages": "./node_modules/.bin/opennextjs-cloudflare deploy"
+    "build:pages": "npx opennextjs-cloudflare build && node scripts/patch-worker.js && node -e \"require('fs').cpSync('.open-next/assets','.open-next',{recursive:true})\"",
+    "deploy:pages": "npx opennextjs-cloudflare deploy"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.24.0",
