@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-23T20:38:35.485Z",
+  "updatedAt": "2026-06-23T21:08:40.574Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260623",
@@ -378,20 +378,7 @@
       "description": "Kyiv has previously accused Moscow of using cluster munitions, which, when dropped, scatter into smaller munitions."
     }
   ],
-  "occNews": [
-    {
-      "title": "OCC Announces Enforcement Actions for June 2026",
-      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-48.html",
-      "date": "June 18, 2026",
-      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for June 2026."
-    },
-    {
-      "title": "OCC Announces Enforcement Actions for May 2026",
-      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-40.html",
-      "date": "May 21, 2026",
-      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for May 2026."
-    }
-  ],
+  "occNews": [],
   "economicsNews": [
     {
       "title": "Federal Reserve issues FOMC statement",
@@ -666,10 +653,10 @@
       "description": "The prime minister's resignation has fired the starting gun on the race to be in charge of the UK's finances."
     },
     {
-      "title": "Stop pretending EU's new border system is working, says airports chief",
-      "url": "https://www.bbc.co.uk/news/articles/cn4rlzrdj14o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Tech stocks tumble on concerns over AI spending",
+      "url": "https://www.bbc.co.uk/news/articles/c802gvxpyxzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 23, 2026",
-      "description": "The head of Europe's airports lobby says concerns over EES are keeping him awake at night and he doesn't know how airports will cope over the summer."
+      "description": "A sudden wave of selling in major tech shares triggers doubt over the sustainability of the AI boom."
     },
     {
       "title": "Meta halts worker tracking for AI training due to privacy fears",
@@ -678,10 +665,10 @@
       "description": "The company had started just two months ago tracking workers’ computer usage for AI training data."
     },
     {
-      "title": "Tech stocks tumble on concerns over AI spending",
-      "url": "https://www.bbc.co.uk/news/articles/c802gvxpyxzo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Stop pretending EU's new border system is working, says airports chief",
+      "url": "https://www.bbc.co.uk/news/articles/cn4rlzrdj14o?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 23, 2026",
-      "description": "A sudden wave of selling in major tech shares triggers doubt over the sustainability of the AI boom."
+      "description": "The head of Europe's airports lobby says concerns over EES are keeping him awake at night and he doesn't know how airports will cope over the summer."
     },
     {
       "title": "Ticket reseller StubHub UK customers to get refunds over illegal hidden fees",
