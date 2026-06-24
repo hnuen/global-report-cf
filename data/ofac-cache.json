@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T18:08:38.816Z",
+  "updatedAt": "2026-06-24T18:38:37.797Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260624",
@@ -322,18 +322,6 @@
       "url": "https://www.aljazeera.com/news/2026/6/24/iranians-cautiously-optimistic-about-thorny-deal-with-us?traffic_source=rss",
       "date": "June 24, 2026",
       "description": "Iran is watching closely as months of complex negotiations lie ahead amid internal political disputes."
-    },
-    {
-      "title": "Japan weighs deploying forces to demine the Strait of Hormuz",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/24/japan-weighs-deploying-forces-to-demine-the-strait-of-hormuz?traffic_source=rss",
-      "date": "June 24, 2026",
-      "description": "Japan is considering sending its navy to help clear mines in the Strait of Hormuz following the US-Iran ceasefire."
-    },
-    {
-      "title": "US Senate approves Iran war powers resolution: What that means for Trump",
-      "url": "https://www.aljazeera.com/news/2026/6/24/us-senate-approves-iran-war-powers-resolution-what-that-means-for-trump?traffic_source=rss",
-      "date": "June 24, 2026",
-      "description": "Four Republicans cross party lines to vote in favour of the measure."
     }
   ],
   "occNews": [
@@ -882,6 +870,30 @@
       "description": "The US economy backs Elon Musk’s vision for AI and sending people into space"
     },
     {
+      "title": "Ivan Cepeda concedes defeat in Colombia election, sealing right-wing win",
+      "url": "https://www.aljazeera.com/news/2026/6/24/ivan-cepeda-concedes-defeat-in-colombia-election-sealing-right-wing-win?traffic_source=rss",
+      "date": "June 24, 2026",
+      "description": "Presidential candidate Ivan Cepeda accepted the victory of his opponent Abelardo de la Espriella."
+    },
+    {
+      "title": "Palestinian boy amongst dead in Israeli strike on displaced tent in Gaza",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/24/palestinian-boy-amongst-dead-in-israeli-strike-on-displaced-tent-in-gaza?traffic_source=rss",
+      "date": "June 24, 2026",
+      "description": "An Israeli drone strike on a tent sheltering displaced Palestinians in Khan Younis killed two people, including a child."
+    },
+    {
+      "title": "Scotland vs Brazil LIVE: World Cup 2026",
+      "url": "https://www.aljazeera.com/sports/liveblog/2026/6/24/scotland-vs-brazil-live-world-cup-2026?traffic_source=rss",
+      "date": "June 24, 2026",
+      "description": "Updates of Scotland vs Brazil, who have Neymar back from injury, via our buildup and text commentary stream coverage."
+    },
+    {
+      "title": "What to know about the Israeli-developed chip in Apple’s iPhone 17e",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/24/what-to-know-about-the-israeli-developed-chip-in-apples-iphone-17e?traffic_source=rss",
+      "date": "June 24, 2026",
+      "description": "There’s more to the iPhone 17e than meets the eye. Like an advanced silicon chip that is said to be developed in Israel."
+    },
+    {
       "title": "Flash floods hit India’s Arunachal Pradesh",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/6/24/flash-floods-hit-indias-arunachal-pradesh?traffic_source=rss",
       "date": "June 24, 2026",
@@ -976,26 +988,14 @@
       "url": "https://www.aljazeera.com/sports/2026/6/24/world-cup-2026-full-group-schedule-and-top-third-round-matches-to-watch?traffic_source=rss",
       "date": "June 24, 2026",
       "description": "Remaining group schedule, teams, as well as the best third-round group fixtures at the tournament in North America."
-    },
-    {
-      "title": "World Cup 2026: Messi, Mbappe, Haaland contest best ever Golden Boot race?",
-      "url": "https://www.aljazeera.com/sports/2026/6/24/world-cup-2026-messi-mbappe-haaland-contest-best-ever-golden-boot-race?traffic_source=rss",
-      "date": "June 24, 2026",
-      "description": "Lionel Messi leads the way with five goals with Kylian Mbappe and Erling Haaland second with four goals each."
-    },
-    {
-      "title": "Mamdani-backed candidates defeat pro-Israel lawmakers in primaries",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/24/mamdani-backed-candidates-defeat-pro-israel-lawmakers-in-primaries?traffic_source=rss",
-      "date": "June 24, 2026",
-      "description": "Candidates backed by Zohran Mamdani have scored major wins in primaries, unseating Democrats backed by pro-Israel groups"
     }
   ],
   "_debugProgIdx": {
-    "length": 65448,
+    "length": 65447,
     "trCount": 38,
     "tableCount": 1,
     "hrefMentions": 50,
-    "iranIdx": 14706,
+    "iranIdx": 14705,
     "snippet": "-current active\" aria-expanded=\"false\" aria-controls=\"megamenu-4\">\n                  <span>Sanctions Programs</span>\n                </button>\n              \n                                \n  \n            <ul id=\"megamenu-4\" class=\"usa-nav__submenu \" hidden>\n\n                  \n                      <li class=\" usa-nav__submenu-item treas-main-nav__submenu-item \">\n\n              \n                              <a href=\"/sanctions-programs-and-country-information/russia-related-sanctions\" class=\"\">\n                  <span>Russia-related Sanctions</span>\n                </a>\n              \n            </li>\n                      <li class=\" usa-nav__submenu-item treas-main-nav__submenu-item \">\n\n              \n                              <a href=\"/sanctions-programs-and-country-information/iran-sanctions\" class=\"\">\n                  <span>Iran Sanctions</span>\n                </a>\n              \n            </li>\n                      <li class=\" usa-nav__submenu-item treas-main-nav__submenu-item \">\n\n              \n                              <a href=\"/sanctions-programs-and-country-information/north-korea-sanctions\" class=\"\">\n                  <span>North Korea Sanctions</span>\n "
   }
 }
