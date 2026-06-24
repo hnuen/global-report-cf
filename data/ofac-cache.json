@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T18:38:37.797Z",
+  "updatedAt": "2026-06-24T19:08:38.148Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260624",
@@ -870,6 +870,12 @@
       "description": "The US economy backs Elon Musk’s vision for AI and sending people into space"
     },
     {
+      "title": "Our life stops’: West Bank childhood shattered by Israeli military raids",
+      "url": "https://www.aljazeera.com/features/2026/6/24/our-life-stops-west-bank-childhood-shattered-by-israeli-military-raids?traffic_source=rss",
+      "date": "June 24, 2026",
+      "description": "A new UN report documents killings, detentions and lasting psychological harm to Palestinian children."
+    },
+    {
       "title": "Ivan Cepeda concedes defeat in Colombia election, sealing right-wing win",
       "url": "https://www.aljazeera.com/news/2026/6/24/ivan-cepeda-concedes-defeat-in-colombia-election-sealing-right-wing-win?traffic_source=rss",
       "date": "June 24, 2026",
@@ -882,7 +888,7 @@
       "description": "An Israeli drone strike on a tent sheltering displaced Palestinians in Khan Younis killed two people, including a child."
     },
     {
-      "title": "Scotland vs Brazil LIVE: World Cup 2026",
+      "title": "LIVE: Scotland vs Brazil – World Cup 2026",
       "url": "https://www.aljazeera.com/sports/liveblog/2026/6/24/scotland-vs-brazil-live-world-cup-2026?traffic_source=rss",
       "date": "June 24, 2026",
       "description": "Updates of Scotland vs Brazil, who have Neymar back from injury, via our buildup and text commentary stream coverage."
@@ -982,20 +988,14 @@
       "url": "https://www.aljazeera.com/news/2026/6/24/deaths-disruptions-across-europe-what-you-should-know-about-the-heatwave?traffic_source=rss",
       "date": "June 24, 2026",
       "description": "Experts say the climate crisis is making Europe&#039;s heatwaves more frequent and more intense."
-    },
-    {
-      "title": "World Cup 2026: Full group schedule and top third-round matches to watch",
-      "url": "https://www.aljazeera.com/sports/2026/6/24/world-cup-2026-full-group-schedule-and-top-third-round-matches-to-watch?traffic_source=rss",
-      "date": "June 24, 2026",
-      "description": "Remaining group schedule, teams, as well as the best third-round group fixtures at the tournament in North America."
     }
   ],
   "_debugProgIdx": {
-    "length": 65447,
+    "length": 65448,
     "trCount": 38,
     "tableCount": 1,
     "hrefMentions": 50,
-    "iranIdx": 14705,
+    "iranIdx": 14706,
     "snippet": "-current active\" aria-expanded=\"false\" aria-controls=\"megamenu-4\">\n                  <span>Sanctions Programs</span>\n                </button>\n              \n                                \n  \n            <ul id=\"megamenu-4\" class=\"usa-nav__submenu \" hidden>\n\n                  \n                      <li class=\" usa-nav__submenu-item treas-main-nav__submenu-item \">\n\n              \n                              <a href=\"/sanctions-programs-and-country-information/russia-related-sanctions\" class=\"\">\n                  <span>Russia-related Sanctions</span>\n                </a>\n              \n            </li>\n                      <li class=\" usa-nav__submenu-item treas-main-nav__submenu-item \">\n\n              \n                              <a href=\"/sanctions-programs-and-country-information/iran-sanctions\" class=\"\">\n                  <span>Iran Sanctions</span>\n                </a>\n              \n            </li>\n                      <li class=\" usa-nav__submenu-item treas-main-nav__submenu-item \">\n\n              \n                              <a href=\"/sanctions-programs-and-country-information/north-korea-sanctions\" class=\"\">\n                  <span>North Korea Sanctions</span>\n "
   }
 }
