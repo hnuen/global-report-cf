@@ -137,11 +137,18 @@ function parseProgramsIndex(html) {
   let rm;
   while ((rm = rowRe.exec(html)) !== null) {
     const rowHtml = rm[1];
-    const progMatch = /href="(\/sanctions-programs-and-country-information\/([^"?#]+))"[^>]*>([^<]{3,200})<\/a>/i.exec(rowHtml);
+    // Matches parseRecentActions' handling below: OFAC's table links render as
+    // absolute URLs (https://ofac.treasury.gov/...), not relative — the original
+    // relative-only regex here never matched a single row, so parseProgramsIndex
+    // silently returned [] on every run and `programs` in the cache stayed {}
+    // forever (confirmed via ofac-cache.json history: 0 programs on every commit
+    // back to the earliest one in the repo). The optional absolute-prefix group
+    // doesn't change capture indices, so progMatch[1]/[2]/[3] still line up.
+    const progMatch = /href="(?:https:\/\/ofac\.treasury\.gov)?(\/sanctions-programs-and-country-information\/([^"?#]+))"[^>]*>([^<]{3,200})<\/a>/i.exec(rowHtml);
     if (!progMatch) continue;
     const slug = progMatch[2];
     if (['where-is-ofac', 'archive', 'information'].some(s => slug.includes(s))) continue;
-    const dateMatch = /href="\/recent-actions\/\d{8}[^"]*"[^>]*>([^<]+)<\/a>/i.exec(rowHtml);
+    const dateMatch = /href="(?:https:\/\/ofac\.treasury\.gov)?\/recent-actions\/\d{8}[^"]*"[^>]*>([^<]+)<\/a>/i.exec(rowHtml);
     programs.push({
       slug,
       name: stripHtml(progMatch[3]).trim(),
