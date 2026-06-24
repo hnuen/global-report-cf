@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T14:08:42.254Z",
+  "updatedAt": "2026-06-24T14:38:36.865Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260624",
@@ -250,22 +250,16 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "Congress passes war powers measure for first time, breaking with Trump over Iran",
-      "url": "https://www.bbc.co.uk/news/articles/ce8j6g3v3r4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 24, 2026",
-      "description": "The resolution passed on Tuesday was largely symbolic, but it adds to pressure on the White House to end the conflict once and for all."
-    },
-    {
-      "title": "UN says it will evacuate sailors stranded in Strait of Hormuz, as Rubio warns against tolls",
-      "url": "https://www.bbc.co.uk/news/articles/c24yr796emzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 23, 2026",
-      "description": "US Secretary of State Marco Rubio warned Iran that no country can charge fees for ships to travel through the strait."
-    },
-    {
       "title": "UN nuclear chief says inspectors will visit Iran sites as part of war deal",
       "url": "https://www.bbc.co.uk/news/articles/cpd395zv81vo?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 24, 2026",
       "description": "Rafael Grossi says the IAEA is \"working on modalities\" but an Iranian minister says such access would only be part of a final deal with the US."
+    },
+    {
+      "title": "Congress passes war powers measure for first time, breaking with Trump over Iran",
+      "url": "https://www.bbc.co.uk/news/articles/ce8j6g3v3r4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 24, 2026",
+      "description": "The resolution passed on Tuesday was largely symbolic, but it adds to pressure on the White House to end the conflict once and for all."
     },
     {
       "title": "Dozens of ships head through Strait of Hormuz after US-Iran deal",
@@ -280,7 +274,7 @@
       "description": "BBC correspondent Jessica Parker explains some key points of the direct talks between the US vice-president and Iran."
     },
     {
-      "title": "US to probe petrol price gouging claims, Trump says",
+      "title": "Trump accuses oil firms of price gouging at petrol pumps",
       "url": "https://www.bbc.co.uk/news/articles/cly790j1j6ro?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 24, 2026",
       "description": "The president's remarks come as global oil prices have fallen but remain higher than before the US-Israel war with Iran."
@@ -462,6 +456,12 @@
       "description": "About 68,000 homes in Brittany have been affected, with electricity unlikely to be fully restored until Wednesday night."
     },
     {
+      "title": "Air conditioning creates political divide as France records hottest day",
+      "url": "https://www.bbc.co.uk/news/articles/c4gyqldl3p5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 24, 2026",
+      "description": "France is being forced to re-think its longstanding reservations about air-conditioning as temperatures soar."
+    },
+    {
       "title": "Clean sweep for Mamdani-backed candidates in New York's Democratic primary",
       "url": "https://www.bbc.co.uk/news/articles/clye652m41po?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 24, 2026",
@@ -477,7 +477,7 @@
       "title": "France confirms first Ebola case",
       "url": "https://www.bbc.co.uk/news/articles/cj9gzr9rdjlo?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 24, 2026",
-      "description": "More than 260 people in the Democratic Republic of Congo are known to have died during the current outbreak."
+      "description": "The French doctor had been working in DR Congo, where more than 260 people are known to have died."
     },
     {
       "title": "French woman allegedly held captive by husband for 12 years rescued in Pakistan",
@@ -520,12 +520,6 @@
       "url": "https://www.bbc.co.uk/news/articles/ckg0258vpvqo?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 23, 2026",
       "description": "It is suing the US defence department after it was added to a list of firms with ties to the Chinese military."
-    },
-    {
-      "title": "Air conditioning creates political divide as France records hottest day",
-      "url": "https://www.bbc.co.uk/news/articles/c4gyqldl3p5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 24, 2026",
-      "description": "France is being forced to re-think its longstanding reservations about air-conditioning as temperatures soar."
     },
     {
       "title": "Stanford was their golden ticket - could AI help or hinder that?",
@@ -865,7 +859,7 @@
     },
     {
       "title": "Business Daily",
-      "url": "https://www.bbc.co.uk/sounds/play/w3ct98s2?at_medium=RSS&amp;at_campaign=rss",
+      "url": "https://www.bbc.co.uk/sounds/play/live:bbc_world_service?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 23, 2026",
       "description": "Luis von Ahn co-founded the #1 language app after selling reCAPTCHA to Google"
     },
