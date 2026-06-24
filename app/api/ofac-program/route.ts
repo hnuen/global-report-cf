@@ -1,94 +1,22 @@
 export const dynamic = "force-dynamic";
 /**
  * /api/ofac-program?id=iran
- * Fetches the real OFAC program page, extracts EOs / GLs / Advisories,
- * diffs against the static library snapshot stored in Redis,
- * and returns what's new, changed, or removed.
+ * Diffs the curated library snapshot against the latest GitHub Actions scrape
+ * (data/ofac-cache.json, committed ~15x/day by refresh-briefing.mjs) and
+ * returns what's new or removed.
  *
- * Results cached in Redis for 24h to avoid hammering OFAC.
- * Pass ?force=1 to bypass cache.
+ * Previously this fetched ofac.treasury.gov directly from the CF Workers
+ * runtime — but OFAC blocks/black-holes requests from Cloudflare's edge IPs
+ * (the same constraint documented in ofac-github-cache.ts and
+ * penalties-fetcher.ts), so the live fetch would hang or fail outright and
+ * this "Check for Updates" feature never actually worked. Reading the
+ * already-scraped, already-committed cache via raw.githubusercontent.com
+ * (same source the /api/penalties route uses) avoids that entirely, and as
+ * a bonus carries real title/date/url for each entry instead of the bare
+ * EO/GL numbers the old regex-over-raw-HTML approach extracted.
  */
 import { NextRequest, NextResponse } from "next/server";
-
-const CACHE_TTL  = 60 * 60 * 24;        // 24 hours
-const CACHE_PFX  = "ofac-diff-v2:";
-
-// ── Redis helpers ──────────────────────────────────────────────────────────
-async function redisGet(key: string) {
-  const u = process.env.UPSTASH_REDIS_REST_URL;
-  const t = process.env.UPSTASH_REDIS_REST_TOKEN;
-  if (!u || !t) return null;
-  try {
-    const r = await fetch(`${u}/get/${encodeURIComponent(key)}`,
-      { headers: { Authorization: `Bearer ${t}` } });
-    const d = await r.json();
-    return d.result ? JSON.parse(d.result) : null;
-  } catch { return null; }
-}
-async function redisSet(key: string, value: any) {
-  const u = process.env.UPSTASH_REDIS_REST_URL;
-  const t = process.env.UPSTASH_REDIS_REST_TOKEN;
-  if (!u || !t) return;
-  try {
-    await fetch(`${u}/set/${encodeURIComponent(key)}`, {
-      method: "POST",
-      headers: { Authorization: `Bearer ${t}`, "Content-Type": "application/json" },
-      body: JSON.stringify({ value: JSON.stringify(value), ex: CACHE_TTL }),
-    });
-  } catch {}
-}
-
-// ── Fetch & parse the real OFAC page ──────────────────────────────────────
-async function fetchOfacPage(url: string): Promise<string | null> {
-  try {
-    const ctrl = new AbortController();
-    setTimeout(() => ctrl.abort(), 10000);
-    const r = await fetch(url, {
-      signal: ctrl.signal,
-      headers: {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-        "Accept": "text/html,application/xhtml+xml",
-        "Accept-Language": "en-US,en;q=0.9",
-      },
-    });
-    if (!r.ok) return null;
-    return await r.text();
-  } catch { return null; }
-}
-
-function parseOfacPage(html: string) {
-  // Strip scripts/styles/nav
-  let text = html
-    .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, " ")
-    .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, " ")
-    .replace(/<[^>]+>/g, " ")
-    .replace(/&amp;/g, "&").replace(/&nbsp;/g, " ")
-    .replace(/&#39;/g, "'").replace(/&quot;/g, '"')
-    .replace(/\s{2,}/g, " ").trim();
-
-  // Extract EOs: "Executive Order 14024" or "E.O. 14024"
-  const eoNums = new Set<string>();
-  for (const m of text.matchAll(/(?:Executive Order|E\.O\.)\s*(\d{4,5})/gi))
-    eoNums.add(m[1]);
-
-  // Extract GLs: "General License 4A" / "General License 134C" / "GL 25G"
-  const glNums = new Set<string>();
-  for (const m of text.matchAll(/General License\s+([0-9]+[A-Z]?(?:\s+[A-Z])?)/gi))
-    glNums.add(m[1].trim().replace(/\s+/g, ""));
-  for (const m of text.matchAll(/\bGL\s+([0-9]+[A-Z]?)/gi))
-    glNums.add(m[1].trim());
-
-  // Extract advisories: lines containing Advisory|Alert|Guidance followed by a year
-  const advLines: string[] = [];
-  for (const m of text.matchAll(/([A-Z][^.!?]{10,120}(?:Advisory|Alert|Guidance|Fact Sheet)[^.!?]{0,80}(?:20\d{2})[^.!?]*)/gi))
-    advLines.push(m[1].trim().slice(0, 150));
-
-  return {
-    executiveOrders: [...eoNums].sort((a, b) => Number(b) - Number(a)),
-    generalLicenses: [...glNums].sort(),
-    advisories: [...new Set(advLines)].slice(0, 20),
-  };
-}
+import { fetchOfacCache } from "@/src/lib/ofac-github-cache";
 
 // ── Program URL map ────────────────────────────────────────────────────────
 const PROGRAMS: Record<string, { name: string; url: string }> = {
@@ -131,44 +59,52 @@ const PROGRAMS: Record<string, { name: string; url: string }> = {
   "diamonds":        { name: "Rough Diamond Trade Controls",         url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/rough-diamond-trade-controls" },
 };
 
+// data/ofac-cache.json's `programs` object is keyed by the URL path slug
+// (e.g. "venezuela-related-sanctions"), set by parseProgramsIndex() in
+// refresh-briefing.mjs — derive the same key from the program's full URL
+// so this map's short `id`s (e.g. "venezuela") line up with the cache.
+function slugFromUrl(url: string): string {
+  return url.replace(
+    /^https:\/\/ofac\.treasury\.gov\/sanctions-programs-and-country-information\//,
+    ""
+  );
+}
+
 // ── Handler ────────────────────────────────────────────────────────────────
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
-  const id    = searchParams.get("id");
-  const force = searchParams.get("force") === "1";
+  const id = searchParams.get("id");
 
   if (!id) return NextResponse.json({ error: "Missing id" }, { status: 400 });
   const prog = PROGRAMS[id];
   if (!prog) return NextResponse.json({ error: "Unknown program id" }, { status: 404 });
 
-  const cacheKey = CACHE_PFX + id;
-
-  // Return cached result unless forced
-  if (!force) {
-    const cached = await redisGet(cacheKey);
-    if (cached) return NextResponse.json({ ...cached, cached: true });
-  }
-
-  // Fetch the real page
-  const html = await fetchOfacPage(prog.url);
-  if (!html) {
+  const cache = await fetchOfacCache();
+  if (!cache || !cache.programs) {
     return NextResponse.json({
       blocked: true,
-      message: "OFAC page blocked server-side fetch. Use the 📋 View on OFAC.gov button to check manually.",
+      message: "OFAC scrape cache is temporarily unavailable. Use the 📋 View on OFAC.gov button to check manually.",
       url: prog.url,
     }, { status: 200 });
   }
 
-  const parsed = parseOfacPage(html);
-  const result = {
+  const slug = slugFromUrl(prog.url);
+  const scraped = cache.programs[slug];
+  if (!scraped) {
+    return NextResponse.json({
+      blocked: true,
+      message: "This program hasn't appeared in a scrape yet — try again after the next scheduled refresh, or use the 📋 View on OFAC.gov button.",
+      url: prog.url,
+    }, { status: 200 });
+  }
+
+  return NextResponse.json({
     programId: id,
     programName: prog.name,
     url: prog.url,
-    checkedAt: new Date().toISOString(),
-    ...parsed,
-    cached: false,
-  };
-
-  await redisSet(cacheKey, result);
-  return NextResponse.json(result);
+    checkedAt: cache.updatedAt,
+    executiveOrders: scraped.executiveOrders ?? [],
+    generalLicenses: scraped.generalLicenses ?? [],
+    cached: true,
+  });
 }

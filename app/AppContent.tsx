@@ -1273,13 +1273,19 @@ export default function GlobalMonitor() {
             {prog.notes && <div className="ofac-prog-note">note: {prog.notes}</div>}
 
             {ofacDiff && !ofacDiff.error && !ofacDiff.blocked && (()=>{
-              const liveEOs=new Set<string>(ofacDiff.executiveOrders||[]);
-              const liveGLs=new Set<string>(ofacDiff.generalLicenses||[]);
+              // ofacDiff.executiveOrders/generalLicenses are now full {number,title,date,url}
+              // objects sourced from the GitHub Actions scrape cache (see app/api/ofac-program/route.ts) —
+              // carry the real metadata through instead of just bare numbers, so accepted
+              // changes get real titles/dates/urls rather than "pending title update" placeholders.
+              const liveEOs=new Map<string,any>((ofacDiff.executiveOrders||[]).map((e:any)=>[String(e.number),e]));
+              const liveGLs=new Map<string,any>((ofacDiff.generalLicenses||[]).map((g:any)=>[String(g.number),g]));
               const libEOs=new Set(prog.executiveOrders.map(e=>e.number));
               const libGLs=new Set(prog.generalLicenses.map(g=>g.number.replace("GL ","").trim()));
-              const newEOs=[...liveEOs].filter(n=>!libEOs.has(n)&&!libEOs.has("EO "+n));
-              const newGLs=[...liveGLs].filter(n=>!libGLs.has(n)&&!libGLs.has("GL "+n));
-              const removedGLs=[...libGLs].filter(n=>!liveGLs.has(n)&&!liveGLs.has("GL "+n));
+              const newEOs=[...liveEOs.values()].filter(e=>!libEOs.has(e.number)&&!libEOs.has("EO "+e.number));
+              const newGLs=[...liveGLs.values()].filter(g=>!libGLs.has(g.number)&&!libGLs.has("GL "+g.number));
+              const removedGLs=prog.generalLicenses
+                .filter(g=>{const n=g.number.replace("GL ","").trim(); return !liveGLs.has(n)&&!liveGLs.has("GL "+n);})
+                .map(g=>({number:g.number.replace("GL ","").trim(), title:g.title}));
               const allGood=!newEOs.length&&!newGLs.length&&!removedGLs.length;
               const diffPayload={newGLs,removedGLs,newEOs,removedEOs:[],checkedAt:ofacDiff.checkedAt};
               return (
@@ -1299,13 +1305,13 @@ export default function GlobalMonitor() {
                     <span>Library EOs: <b>{prog.executiveOrders.length}</b></span>
                     <span>Library GLs: <b>{prog.generalLicenses.length}</b></span>
                   </div>
-                  {newEOs.length>0&&<div style={{fontFamily:"var(--mono)",fontSize:".6rem",color:"#166534",marginTop:4}}>New EOs: {newEOs.map(n=>`EO ${n}`).join(", ")}</div>}
-                  {newGLs.length>0&&<div style={{fontFamily:"var(--mono)",fontSize:".6rem",color:"#166534",marginTop:4}}>New GLs: {newGLs.map(n=>`GL ${n}`).join(", ")}</div>}
-                  {removedGLs.length>0&&<div style={{fontFamily:"var(--mono)",fontSize:".6rem",color:"#cc0000",marginTop:4}}>Will archive: {removedGLs.map(n=>`GL ${n}`).join(", ")}</div>}
+                  {newEOs.length>0&&<div style={{fontFamily:"var(--mono)",fontSize:".6rem",color:"#166534",marginTop:4}}>New EOs: {newEOs.map(e=>`EO ${e.number}${e.title?` (${e.title})`:""}`).join(", ")}</div>}
+                  {newGLs.length>0&&<div style={{fontFamily:"var(--mono)",fontSize:".6rem",color:"#166534",marginTop:4}}>New GLs: {newGLs.map(g=>`GL ${g.number}${g.title?` (${g.title})`:""}`).join(", ")}</div>}
+                  {removedGLs.length>0&&<div style={{fontFamily:"var(--mono)",fontSize:".6rem",color:"#cc0000",marginTop:4}}>Will archive: {removedGLs.map(g=>`GL ${g.number}`).join(", ")}</div>}
                 </div>
               );
             })()}
-            {ofacDiff?.blocked&&<div className="ofac-prog-note" style={{borderColor:"#fde047",background:"#fefce8",color:"#854d0e"}}>OFAC blocks server fetch. Use View on OFAC.gov to check manually.</div>}
+            {ofacDiff?.blocked&&<div className="ofac-prog-note" style={{borderColor:"#fde047",background:"#fefce8",color:"#854d0e"}}>{ofacDiff.message || "OFAC scrape cache temporarily unavailable. Use View on OFAC.gov to check manually."}</div>}
             {ofacDiff?.error&&<div className="ofac-prog-note" style={{borderColor:"#fca5a5",background:"#fef2f2",color:"#cc0000"}}>{ofacDiff.error}</div>}
 
             <div className="ofac-prog-panel">
