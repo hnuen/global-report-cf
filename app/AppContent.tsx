@@ -1329,20 +1329,57 @@ export default function GlobalMonitor() {
                     ))}
                   </tbody></table>}
               </div>
-              <div className="ofac-prog-section">
-                <div className="ofac-prog-section-title">General Licenses
-                  <span style={{background:prog.generalLicenses.length>0?"#166534":"#6b7280",color:"#fff",fontFamily:"var(--mono)",fontSize:".55rem",padding:"2px 7px",borderRadius:"10px",fontWeight:600}}>{prog.generalLicenses.length} Active</span>
-                </div>
-                {prog.generalLicenses.length===0
-                  ?<div className="ofac-prog-empty">No active general licenses.</div>
-                  :<table className="ofac-prog-table"><thead><tr><th>License</th><th>Title / Authorization</th><th>Date</th><th>Document</th></tr></thead><tbody>
-                    {[...prog.generalLicenses].sort((a,b)=>parseDate(b.date)-parseDate(a.date)).map((gl,i)=>(
-                      <tr key={i}><td>{gl.number}</td><td>{gl.title}</td><td>{gl.date}</td>
-                        <td>{gl.url?<a href={gl.url} target="_blank" rel="noopener" style={{display:"inline-flex",alignItems:"center",gap:"4px",fontFamily:"var(--mono)",fontSize:".62rem",color:"#fff",background:"#166534",padding:"3px 8px",borderRadius:"3px",textDecoration:"none"}}>View PDF</a>:<a href={`${prog.url}#general-licenses`} target="_blank" rel="noopener" style={{display:"inline-flex",alignItems:"center",gap:"4px",fontFamily:"var(--mono)",fontSize:".62rem",color:"#1a56db",background:"#eff6ff",padding:"3px 8px",borderRadius:"3px",textDecoration:"none",border:"1px solid #bfdbfe"}}>OFAC Page</a>}</td>
-                      </tr>
-                    ))}
-                  </tbody></table>}
-              </div>
+              {(() => {
+                // GLs carry an optional `expires` date (parsed from OFAC's own
+                // "...through <date>" authorization text — see refresh-briefing.mjs).
+                // Once that date has passed, treat it as expired in the UI even if
+                // the curated library hasn't been explicitly updated with
+                // archived:true yet (that only happens once a successor GL is
+                // detected during a sync run). This is purely a display-layer
+                // partition — it does not mutate the underlying data.
+                const now = Date.now();
+                const isPastExpiry = (gl: typeof prog.generalLicenses[number]) =>
+                  !!gl.expires && parseDate(gl.expires) < now;
+                const liveGLs = prog.generalLicenses.filter(gl => !isPastExpiry(gl));
+                const autoExpiredGLs = prog.generalLicenses.filter(isPastExpiry);
+                return (
+                  <>
+                    <div className="ofac-prog-section">
+                      <div className="ofac-prog-section-title">General Licenses
+                        <span style={{background:liveGLs.length>0?"#166534":"#6b7280",color:"#fff",fontFamily:"var(--mono)",fontSize:".55rem",padding:"2px 7px",borderRadius:"10px",fontWeight:600}}>{liveGLs.length} Active</span>
+                      </div>
+                      {liveGLs.length===0
+                        ?<div className="ofac-prog-empty">No active general licenses.</div>
+                        :<table className="ofac-prog-table"><thead><tr><th>License</th><th>Title / Authorization</th><th>Date</th><th>Expires</th><th>Document</th></tr></thead><tbody>
+                          {[...liveGLs].sort((a,b)=>parseDate(b.date)-parseDate(a.date)).map((gl,i)=>(
+                            <tr key={i}><td>{gl.number}</td><td>{gl.title}</td><td>{gl.date}</td>
+                              <td style={{whiteSpace:"nowrap"}}>{gl.expires||"—"}</td>
+                              <td>{gl.url?<a href={gl.url} target="_blank" rel="noopener" style={{display:"inline-flex",alignItems:"center",gap:"4px",fontFamily:"var(--mono)",fontSize:".62rem",color:"#fff",background:"#166534",padding:"3px 8px",borderRadius:"3px",textDecoration:"none"}}>View PDF</a>:<a href={`${prog.url}#general-licenses`} target="_blank" rel="noopener" style={{display:"inline-flex",alignItems:"center",gap:"4px",fontFamily:"var(--mono)",fontSize:".62rem",color:"#1a56db",background:"#eff6ff",padding:"3px 8px",borderRadius:"3px",textDecoration:"none",border:"1px solid #bfdbfe"}}>OFAC Page</a>}</td>
+                            </tr>
+                          ))}
+                        </tbody></table>}
+                    </div>
+                    {autoExpiredGLs.length>0 && (
+                      <div className="ofac-prog-section" style={{opacity:.7}}>
+                        <div className="ofac-prog-section-title" style={{color:"#9ca3af"}}>
+                          Expired — Pending Archive
+                          <span style={{background:"#9ca3af",color:"#fff",fontFamily:"var(--mono)",fontSize:".55rem",padding:"2px 7px",borderRadius:"10px",fontWeight:600}}>{autoExpiredGLs.length} Items</span>
+                        </div>
+                        <table className="ofac-prog-table" style={{opacity:.8}}><thead><tr><th>License</th><th>Title / Authorization</th><th>Expired</th><th>Document</th></tr></thead><tbody>
+                          {[...autoExpiredGLs].sort((a,b)=>parseDate(b.expires||"")-parseDate(a.expires||"")).map((gl,i)=>(
+                            <tr key={i} style={{background:"#f9fafb"}}>
+                              <td style={{textDecoration:"line-through",color:"#9ca3af",fontFamily:"var(--mono)",fontSize:".65rem"}}>{gl.number}</td>
+                              <td style={{color:"#9ca3af"}}>{gl.title}</td>
+                              <td style={{fontFamily:"var(--mono)",fontSize:".6rem",color:"#cc0000",whiteSpace:"nowrap"}}>{gl.expires}</td>
+                              <td>{gl.url?<a href={gl.url} target="_blank" rel="noopener" style={{display:"inline-flex",alignItems:"center",gap:"4px",fontFamily:"var(--mono)",fontSize:".62rem",color:"#9ca3af",background:"#f3f4f6",padding:"3px 8px",borderRadius:"3px",textDecoration:"none"}}>View PDF</a>:"—"}</td>
+                            </tr>
+                          ))}
+                        </tbody></table>
+                      </div>
+                    )}
+                  </>
+                );
+              })()}
               {prog.keyAdvisories&&prog.keyAdvisories.length>0&&(
                 <div className="ofac-prog-section">
                   <div className="ofac-prog-section-title">Key Advisories &amp; Press Releases

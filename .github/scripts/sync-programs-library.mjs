@@ -204,6 +204,25 @@ function glPrefix(num) {
   return m ? m[1] : num;
 }
 
+// Convert a Roman numeral string to an integer, or null if it isn't one.
+// Used for GL series that rotate through plain Roman numerals (Iran's rolling
+// petroleum GLs: ... VIII, IX, X, XI ...) instead of a digit+letter-suffix
+// scheme (8L → 8M) — glPrefix() above can't relate "IX" to "X" at all since
+// neither has a leading digit, so without this, that whole series of GLs
+// would always get ADDED as new active entries and never get the predecessor
+// auto-archived/superseded.
+function romanToInt(s) {
+  if (!/^[IVXLCDM]+$/i.test(s)) return null;
+  const map = { I: 1, V: 5, X: 10, L: 50, C: 100, D: 500, M: 1000 };
+  const up = s.toUpperCase();
+  let total = 0;
+  for (let i = 0; i < up.length; i++) {
+    const cur = map[up[i]], next = map[up[i + 1]];
+    total += next && cur < next ? -cur : cur;
+  }
+  return total;
+}
+
 // Recompute a leading "// N GLs ..." comment to match the new entry count, if present.
 function refreshCountComment(itemsText) {
   const count = (itemsText.match(/\{\s*number:/g) || []).length;
@@ -238,6 +257,19 @@ function syncBlockEntries(blockText, scraped, log) {
         while ((m = re.exec(activeItems)) !== null) {
           if (m[1] !== gl.number) predecessor = m[1];
         }
+        // Fallback: pure Roman-numeral series (no leading digit at all, so the
+        // prefix match above can never fire) — find an active GL whose number
+        // is the immediately preceding Roman numeral value.
+        if (!predecessor) {
+          const newVal = romanToInt(gl.number);
+          if (newVal) {
+            const reRoman = /number:\s*"GL ([IVXLCDM]+)"/gi;
+            let rm;
+            while ((rm = reRoman.exec(activeItems)) !== null) {
+              if (romanToInt(rm[1]) === newVal - 1) predecessor = rm[1];
+            }
+          }
+        }
         if (predecessor) {
           if (archiveItems !== null) {
             const titleM = new RegExp(`number:\\s*"GL ${predecessor}",\\s*title:\\s*"([^"]*)"`).exec(activeItems);
@@ -255,7 +287,8 @@ function syncBlockEntries(blockText, scraped, log) {
       const indent = entryIndentOf(activeItems);
       let adds = "";
       for (const gl of newGLs) {
-        adds += `${indent}{ number: "GL ${esc(gl.number)}", title: "${esc(gl.title)}", date: "${esc(gl.date)}", url: "${esc(gl.url)}", addedDate: "${today()}" },\n`;
+        const expiresField = gl.expires ? `, expires: "${esc(gl.expires)}"` : "";
+        adds += `${indent}{ number: "GL ${esc(gl.number)}", title: "${esc(gl.title)}", date: "${esc(gl.date)}", url: "${esc(gl.url)}"${expiresField}, addedDate: "${today()}" },\n`;
       }
       activeItems = insertAtTop(activeItems, adds);
       activeItems = refreshCountComment(activeItems);

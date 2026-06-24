@@ -118,11 +118,31 @@ function parseSanctionsProgram(html) {
   while ((mm = mediaRe.exec(html)) !== null) {
     const url = `https://ofac.treasury.gov${mm[1]}`;
     const linkText = stripHtml(mm[2]).trim();
-    const numMatch = /(?:General\s+License|GL)[^#\d]*#?\s*(?:No\.?\s*)?(\d+[A-Z]?)/i.exec(linkText);
+    // Numeric-style designators (e.g. "General License 8M") first — this is the
+    // common case across most programs.
+    let numMatch = /(?:General\s+License|GL)[^#\d]*#?\s*(?:No\.?\s*)?(\d+[A-Z]?)/i.exec(linkText);
+    if (!numMatch) {
+      // Letter/Roman-numeral-style designators (e.g. Iran's "General License X",
+      // "General License D-1", "General License K") have NO leading digit, so the
+      // numeric regex above never matches them — this is the concrete reason
+      // Iran's GL X (and similar Iran GLs) never showed up at all, even after the
+      // programs-index and per-run-cap fixes landed.
+      numMatch = /(?:General\s+License|GL)\s+(?:No\.?\s*)?([A-Z]+(?:-\d+)?)\b/i.exec(linkText);
+    }
     if (!numMatch) continue;
     const surrounding = stripHtml(html.slice(Math.max(0, mm.index - 300), mm.index + mm[0].length + 300));
     const dateMatch = /(\w+ \d{1,2},? \d{4})/i.exec(surrounding);
-    generalLicenses.push({ number: numMatch[1], title: linkText, date: dateMatch?.[1] ?? "", url });
+    // Expiration date — OFAC's rolling Iran petroleum GLs (and similar time-limited
+    // licenses) state their own end date inline, e.g. "...through August 21, 2026".
+    // Check the link text itself first, then the surrounding page text.
+    const expiresMatch = /\b(?:through|until|expir(?:es|ing|ation)?(?:\s+on)?)\s+(\w+ \d{1,2},? \d{4})/i.exec(`${linkText} ${surrounding}`);
+    generalLicenses.push({
+      number: numMatch[1].toUpperCase(),
+      title: linkText,
+      date: dateMatch?.[1] ?? "",
+      expires: expiresMatch?.[1] ?? "",
+      url,
+    });
   }
   const seenGL = new Set();
   const uniqueGLs = generalLicenses.filter(gl => !seenGL.has(gl.number) && seenGL.add(gl.number));

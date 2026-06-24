@@ -15,6 +15,10 @@ export interface SanctionsItem {
   title: string;
   date?: string;
   url?: string;
+  expires?: string;     // GL expiration date, e.g. "August 21, 2026" — parsed from
+                         // the GL's own "...through <date>" authorization text when
+                         // present. Used to auto-flag/archive expired GLs in the UI
+                         // even before a successor GL has been scraped.
   archived?: boolean;   // true = no longer on current OFAC page
   archivedDate?: string;// when it was removed/superseded
   archivedNote?: string;// reason e.g. "Superseded by GL 134C" or "Expired"
