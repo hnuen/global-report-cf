@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T15:38:35.714Z",
+  "updatedAt": "2026-06-24T16:08:37.374Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260624",
@@ -346,28 +346,9 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/6/24/north-korea-commissions-largest-ever-warship?traffic_source=rss",
       "date": "June 24, 2026",
       "description": "North Korea commissions largest-ever warship"
-    },
-    {
-      "title": "Ukraine strikes strategic Russian bridge in Crimea",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/24/ukraine-strikes-strategic-russian-bridge-in-crimea?traffic_source=rss",
-      "date": "June 24, 2026",
-      "description": "Ukraine strikes strategic Russian bridge in Crimea"
     }
   ],
-  "occNews": [
-    {
-      "title": "OCC Announces Enforcement Actions for June 2026",
-      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-48.html",
-      "date": "June 18, 2026",
-      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for June 2026."
-    },
-    {
-      "title": "OCC Announces Enforcement Actions for May 2026",
-      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-40.html",
-      "date": "May 21, 2026",
-      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for May 2026."
-    }
-  ],
+  "occNews": [],
   "economicsNews": [
     {
       "title": "Federal Reserve issues FOMC statement",
@@ -490,6 +471,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cj0g71pnv3no?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 24, 2026",
       "description": "Yasmina alleges she was held along with her five children, and they were all cut off from the outside world."
+    },
+    {
+      "title": "Colombia's left-wing presidential candidate concedes defeat",
+      "url": "https://www.bbc.co.uk/news/articles/cgrkqky5lzpo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 24, 2026",
+      "description": "Senator Iván Cepeda was beaten by right-wing businessman Abelardo de la Espriella by less than a percentage point."
     },
     {
       "title": "Sydney woman wakes from induced coma more than a week after shark attack",
@@ -894,6 +881,18 @@
       "description": "The US economy backs Elon Musk’s vision for AI and sending people into space"
     },
     {
+      "title": "Israeli attacks on Gaza and occupied West Bank kill two, including child",
+      "url": "https://www.aljazeera.com/news/2026/6/24/israeli-attacks-on-gaza-and-occupied-west-bank-kill-two-including-child?traffic_source=rss",
+      "date": "June 24, 2026",
+      "description": "Health officials at Nasser Medical Complex tell Al Jazeera a 12-year-old child was killed in al-Mawasi, Gaza."
+    },
+    {
+      "title": "How Colombia’s traditional midwives serve as lifelines to rural communities",
+      "url": "https://www.aljazeera.com/features/longform/2026/6/24/how-colombias-traditional-midwives-serve-as-lifelines-to-rural-communities?traffic_source=rss",
+      "date": "June 24, 2026",
+      "description": "Parts of Colombia are isolated, with no hospitals nearby. Experts say midwives can help bridge the healthcare gap."
+    },
+    {
       "title": "Why Accra slavery reparatory justice meeting matters",
       "url": "https://www.aljazeera.com/news/2026/6/24/why-accra-slavery-reparatory-justice-meeting-matters?traffic_source=rss",
       "date": "June 24, 2026",
@@ -976,12 +975,14 @@
       "url": "https://www.aljazeera.com/opinions/2026/6/24/south-africas-crises-will-not-be-solved-by-blaming-migrants?traffic_source=rss",
       "date": "June 24, 2026",
       "description": "The solution is real socio-economic change in the country, and the labour movement is best positioned to push for it."
-    },
-    {
-      "title": "Ukraine’s recovery to be deliberated in Poland amid Kyiv-Warsaw spat",
-      "url": "https://www.aljazeera.com/news/2026/6/24/ukraines-recovery-to-be-deliberated-in-poland-amid-kyiv-warsaw-spat?traffic_source=rss",
-      "date": "June 24, 2026",
-      "description": "Amid a brewing row that tests Poland&#039;s alliance with Ukraine, President Zelenskyy will skip a key conference."
     }
-  ]
+  ],
+  "_debugProgIdx": {
+    "length": 65449,
+    "trCount": 38,
+    "tableCount": 1,
+    "hrefMentions": 50,
+    "iranIdx": 14707,
+    "snippet": "-current active\" aria-expanded=\"false\" aria-controls=\"megamenu-4\">\n                  <span>Sanctions Programs</span>\n                </button>\n              \n                                \n  \n            <ul id=\"megamenu-4\" class=\"usa-nav__submenu \" hidden>\n\n                  \n                      <li class=\" usa-nav__submenu-item treas-main-nav__submenu-item \">\n\n              \n                              <a href=\"/sanctions-programs-and-country-information/russia-related-sanctions\" class=\"\">\n                  <span>Russia-related Sanctions</span>\n                </a>\n              \n            </li>\n                      <li class=\" usa-nav__submenu-item treas-main-nav__submenu-item \">\n\n              \n                              <a href=\"/sanctions-programs-and-country-information/iran-sanctions\" class=\"\">\n                  <span>Iran Sanctions</span>\n                </a>\n              \n            </li>\n                      <li class=\" usa-nav__submenu-item treas-main-nav__submenu-item \">\n\n              \n                              <a href=\"/sanctions-programs-and-country-information/north-korea-sanctions\" class=\"\">\n                  <span>North Korea Sanctions</span>\n "
+  }
 }
