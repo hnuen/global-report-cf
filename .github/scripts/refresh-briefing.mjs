@@ -441,10 +441,14 @@ const programsIndexHtml = await fetchOfac("https://ofac.treasury.gov/sanctions-p
 const programsList = programsIndexHtml ? parseProgramsIndex(programsIndexHtml) : [];
 console.log(`[refresh-briefing] Programs index: ${programsList.length} programs found`);
 
-// Fetch only programs whose lastUpdated date changed (cap at 15 per run)
+// Fetch only programs whose lastUpdated date changed (cap at 50 per run —
+// OFAC has ~30-40 total programs, so this covers a full cold-cache backfill
+// in a single run instead of needing several runs to alphabetically work
+// through the list. Once the cache is warm, "changed" will only ever be a
+// handful per run anyway, so the higher cap costs nothing day-to-day.)
 const changedPrograms = programsList.filter(p =>
   p.lastUpdated && p.lastUpdated !== (cachedPrograms[p.slug]?.lastUpdated ?? "")
-).slice(0, 15);
+).slice(0, 50);
 
 console.log(`[refresh-briefing] Programs with changes: ${changedPrograms.length} (of ${programsList.length} total)`);
 changedPrograms.forEach(p =>
@@ -1122,6 +1126,21 @@ function parseGeminiJSON(text) {
   }
 }
 
+// The JSON schema in SYSTEM_PROMPT necessarily shows an illustrative example
+// value for "lastUpdated" (e.g. "June 14, 2026 — 14:00 UTC") so Gemini knows
+// the expected format. In practice Gemini sometimes parrots that literal
+// example back verbatim instead of substituting the real current time —
+// this is what caused the app to show a frozen, wrong "June 14, 2026" date
+// regardless of when the workflow actually ran. Rather than fight this with
+// prompt wording, just never trust Gemini's self-reported timestamp: always
+// stamp lastUpdated ourselves from the real clock right before saving.
+function formatLastUpdatedUtc() {
+  const d = new Date();
+  const datePart = d.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
+  const timePart = d.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit", hour12: false, timeZone: "UTC" });
+  return `${datePart} — ${timePart} UTC`;
+}
+
 let briefing;
 try {
   briefing = parseGeminiJSON(clean.slice(s, e + 1));
@@ -1129,7 +1148,7 @@ try {
     ...a,
     body: Array.isArray(a.body) ? a.body : String(a.body).split("\n").filter(Boolean),
   }));
-  briefing.lastUpdated += " [Gemini/Actions]";
+  briefing.lastUpdated = `${formatLastUpdatedUtc()} [Gemini/Actions]`;
 } catch (parseErr) {
   console.error("[refresh-briefing] JSON parse failed — falling back to structured articles:", parseErr);
   console.error("Raw text slice:", clean.slice(s, s + 500));
