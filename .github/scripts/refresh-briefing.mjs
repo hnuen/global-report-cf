@@ -137,18 +137,24 @@ function parseProgramsIndex(html) {
   let rm;
   while ((rm = rowRe.exec(html)) !== null) {
     const rowHtml = rm[1];
-    // Matches parseRecentActions' handling below: OFAC's table links render as
-    // absolute URLs (https://ofac.treasury.gov/...), not relative — the original
-    // relative-only regex here never matched a single row, so parseProgramsIndex
-    // silently returned [] on every run and `programs` in the cache stayed {}
-    // forever (confirmed via ofac-cache.json history: 0 programs on every commit
-    // back to the earliest one in the repo). The optional absolute-prefix group
-    // doesn't change capture indices, so progMatch[1]/[2]/[3] still line up.
-    const progMatch = /href="(?:https:\/\/ofac\.treasury\.gov)?(\/sanctions-programs-and-country-information\/([^"?#]+))"[^>]*>([^<]{3,200})<\/a>/i.exec(rowHtml);
+    // Two bugs stacked here, both confirmed via committed debug instrumentation
+    // (_debugProgIdx snippet from a live production fetch, removed below):
+    // 1. OFAC's table links render as absolute URLs (https://ofac.treasury.gov/...),
+    //    not relative — fixed by the optional absolute-prefix group on the href.
+    // 2. The link TEXT is wrapped in a <span>, e.g.
+    //      <a href="/sanctions-programs-and-country-information/iran-sanctions">
+    //        <span>Iran Sanctions</span>
+    //      </a>
+    //    The old capture group `([^<]{3,200})` cannot cross the `<span>` tag, so
+    //    the whole regex failed to match (no `</a>` immediately after consuming
+    //    only whitespace) — `programs` stayed {} on every run since the start,
+    //    even after fix #1 shipped. Using `([\s\S]{0,300}?)` lets the capture
+    //    span inner tags; stripHtml() (already applied below) then removes them.
+    const progMatch = /href="(?:https:\/\/ofac\.treasury\.gov)?(\/sanctions-programs-and-country-information\/([^"?#]+))"[^>]*>([\s\S]{0,300}?)<\/a>/i.exec(rowHtml);
     if (!progMatch) continue;
     const slug = progMatch[2];
     if (['where-is-ofac', 'archive', 'information'].some(s => slug.includes(s))) continue;
-    const dateMatch = /href="(?:https:\/\/ofac\.treasury\.gov)?\/recent-actions\/\d{8}[^"]*"[^>]*>([^<]+)<\/a>/i.exec(rowHtml);
+    const dateMatch = /href="(?:https:\/\/ofac\.treasury\.gov)?\/recent-actions\/\d{8}[^"]*"[^>]*>([\s\S]{0,300}?)<\/a>/i.exec(rowHtml);
     programs.push({
       slug,
       name: stripHtml(progMatch[3]).trim(),
@@ -435,28 +441,6 @@ const programsIndexHtml = await fetchOfac("https://ofac.treasury.gov/sanctions-p
 const programsList = programsIndexHtml ? parseProgramsIndex(programsIndexHtml) : [];
 console.log(`[refresh-briefing] Programs index: ${programsList.length} programs found`);
 
-// TEMP DEBUG (remove once parseProgramsIndex is confirmed fixed): the fix in
-// this commit's parseProgramsIndex() (optional absolute-href prefix) still
-// produced 0 programs in production for 2 runs after shipping, even though
-// the page content itself is confirmed reachable and well-formed (verified
-// via manual fetch outside this pipeline). Capturing raw structural stats
-// + a snippet around "iran-sanctions" in the committed cache so the real
-// markup shape can be inspected directly instead of guessing blind again.
-const _debugProgIdx = (() => {
-  if (!programsIndexHtml) return { html: null, fetchFailed: true };
-  const idx = programsIndexHtml.toLowerCase().indexOf("iran-sanctions");
-  return {
-    length: programsIndexHtml.length,
-    trCount: (programsIndexHtml.match(/<tr\b/gi) || []).length,
-    tableCount: (programsIndexHtml.match(/<table\b/gi) || []).length,
-    hrefMentions: (programsIndexHtml.match(/sanctions-programs-and-country-information/gi) || []).length,
-    iranIdx: idx,
-    snippet: idx >= 0
-      ? programsIndexHtml.slice(Math.max(0, idx - 800), idx + 400)
-      : programsIndexHtml.slice(0, 1500),
-  };
-})();
-
 // Fetch only programs whose lastUpdated date changed (cap at 15 per run)
 const changedPrograms = programsList.filter(p =>
   p.lastUpdated && p.lastUpdated !== (cachedPrograms[p.slug]?.lastUpdated ?? "")
@@ -613,7 +597,6 @@ async function commitOfacCache(recentActions, civilPenalties, programs, ofsiNoti
     economicsNews,
     bisNews,
     regionsNews,
-    _debugProgIdx,
   }, null, 2);
   const encoded = Buffer.from(content).toString("base64");
 
