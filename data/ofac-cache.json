@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-06-24T13:38:35.876Z",
+  "updatedAt": "2026-06-24T14:08:42.254Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260624",
+      "code": "20260624",
+      "title": "Russia-related Designations Removals",
+      "date": "June 24, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260623",
       "code": "20260623",
@@ -54,12 +60,6 @@
       "code": "20260604",
       "title": "Cuba Designations; Issuance of Cuba-related Frequently Asked Question",
       "date": "June 04, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260602",
-      "code": "20260602",
-      "title": "Counter Terrorism and Iran-related Designations; Democratic Republic of the Congo-related Designations; Issuance of Iran-related Frequently Asked Question",
-      "date": "June 02, 2026"
     }
   ],
   "civilPenalties": [
@@ -300,6 +300,12 @@
   ],
   "ajNews": [
     {
+      "title": "Rubio tries to reassure Gulf allies on US-Iran deal details",
+      "url": "https://www.aljazeera.com/news/2026/6/24/rubio-tries-to-reassure-gulf-allies-on-us-iran-deal-details?traffic_source=rss",
+      "date": "June 24, 2026",
+      "description": "Rubio tours Gulf in bid to allay allies&#039; security concerns over the US-Iran memorandum of understanding."
+    },
+    {
       "title": "What does Pakistan stand to gain from helping broker the US-Iran deal?",
       "url": "https://www.aljazeera.com/news/2026/6/24/what-does-pakistan-stand-to-gain-from-helping-broker-the-us-iran-deal?traffic_source=rss",
       "date": "June 24, 2026",
@@ -346,12 +352,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/6/24/ukraine-strikes-strategic-russian-bridge-in-crimea?traffic_source=rss",
       "date": "June 24, 2026",
       "description": "Ukraine strikes strategic Russian bridge in Crimea"
-    },
-    {
-      "title": "Iran war day 117: Nuclear inspections dispute as US Senate curbs war powers",
-      "url": "https://www.aljazeera.com/news/2026/6/24/iran-war-day-117-nuclear-inspections-dispute-as-us-senate-curbs-war-powers?traffic_source=rss",
-      "date": "June 24, 2026",
-      "description": "Iran and the US clash over nuclear inspections and Hormuz as negotiators push for a final deal within 60 days."
     }
   ],
   "occNews": [
@@ -522,6 +522,12 @@
       "description": "It is suing the US defence department after it was added to a list of firms with ties to the Chinese military."
     },
     {
+      "title": "Air conditioning creates political divide as France records hottest day",
+      "url": "https://www.bbc.co.uk/news/articles/c4gyqldl3p5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 24, 2026",
+      "description": "France is being forced to re-think its longstanding reservations about air-conditioning as temperatures soar."
+    },
+    {
       "title": "Stanford was their golden ticket - could AI help or hinder that?",
       "url": "https://www.bbc.co.uk/news/articles/c872j82j2qyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 23, 2026",
@@ -550,12 +556,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cz0j87vpz79o?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 23, 2026",
       "description": "People across the continent are taking measures to cope with the searing temperatures gripping Europe."
-    },
-    {
-      "title": "Have World Cup changes made final group stage games unfair?",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cdejryxlkxro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 23, 2026",
-      "description": "With eight teams already having nothing to play for, has the jeopardy in the group stage at the World Cup been diminished? And are concerns over the integrity of competition justified?"
     },
     {
       "title": "Temperatures hit record levels in western Europe",
@@ -894,6 +894,12 @@
       "description": "The US economy backs Elon Musk’s vision for AI and sending people into space"
     },
     {
+      "title": "When Paris is hotter than Mecca: How Europe’s heatwave compares globally",
+      "url": "https://www.aljazeera.com/news/2026/6/24/when-paris-is-hotter-than-mecca-how-europes-heatwave-compares-globally?traffic_source=rss",
+      "date": "June 24, 2026",
+      "description": "Paris and other European cities are seeing temperatures above 40C (104F), levels normally seen across the Middle East."
+    },
+    {
       "title": "Deaths, disruptions across Europe: What you should know about the heatwave",
       "url": "https://www.aljazeera.com/news/2026/6/24/deaths-disruptions-across-europe-what-you-should-know-about-the-heatwave?traffic_source=rss",
       "date": "June 24, 2026",
@@ -982,12 +988,6 @@
       "url": "https://www.aljazeera.com/news/2026/6/24/power-outage-in-france-as-europe-bakes-in-record-heat?traffic_source=rss",
       "date": "June 24, 2026",
       "description": "Italy declares red heatwave alert in 16 cities, including Rome, as UK prepares for highest ever June temperatures."
-    },
-    {
-      "title": "Diabetes patients in Gaza face survival battle amid war shortages",
-      "url": "https://www.aljazeera.com/features/2026/6/24/diabetes-patients-in-gaza-face-survival-battle-amid-war-shortages?traffic_source=rss",
-      "date": "June 24, 2026",
-      "description": "Insulin and equipment shortages in Gaza pose fatal risks, leading to critical health complications."
     }
   ]
 }
