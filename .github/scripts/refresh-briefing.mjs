@@ -435,6 +435,28 @@ const programsIndexHtml = await fetchOfac("https://ofac.treasury.gov/sanctions-p
 const programsList = programsIndexHtml ? parseProgramsIndex(programsIndexHtml) : [];
 console.log(`[refresh-briefing] Programs index: ${programsList.length} programs found`);
 
+// TEMP DEBUG (remove once parseProgramsIndex is confirmed fixed): the fix in
+// this commit's parseProgramsIndex() (optional absolute-href prefix) still
+// produced 0 programs in production for 2 runs after shipping, even though
+// the page content itself is confirmed reachable and well-formed (verified
+// via manual fetch outside this pipeline). Capturing raw structural stats
+// + a snippet around "iran-sanctions" in the committed cache so the real
+// markup shape can be inspected directly instead of guessing blind again.
+const _debugProgIdx = (() => {
+  if (!programsIndexHtml) return { html: null, fetchFailed: true };
+  const idx = programsIndexHtml.toLowerCase().indexOf("iran-sanctions");
+  return {
+    length: programsIndexHtml.length,
+    trCount: (programsIndexHtml.match(/<tr\b/gi) || []).length,
+    tableCount: (programsIndexHtml.match(/<table\b/gi) || []).length,
+    hrefMentions: (programsIndexHtml.match(/sanctions-programs-and-country-information/gi) || []).length,
+    iranIdx: idx,
+    snippet: idx >= 0
+      ? programsIndexHtml.slice(Math.max(0, idx - 800), idx + 400)
+      : programsIndexHtml.slice(0, 1500),
+  };
+})();
+
 // Fetch only programs whose lastUpdated date changed (cap at 15 per run)
 const changedPrograms = programsList.filter(p =>
   p.lastUpdated && p.lastUpdated !== (cachedPrograms[p.slug]?.lastUpdated ?? "")
@@ -591,6 +613,7 @@ async function commitOfacCache(recentActions, civilPenalties, programs, ofsiNoti
     economicsNews,
     bisNews,
     regionsNews,
+    _debugProgIdx,
   }, null, 2);
   const encoded = Buffer.from(content).toString("base64");
 
