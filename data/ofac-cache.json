@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T16:08:37.374Z",
+  "updatedAt": "2026-06-24T17:08:39.010Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260624",
@@ -334,21 +334,22 @@
       "url": "https://www.aljazeera.com/gallery/2026/6/24/north-korea-commissions-warship-as-kim-eyes-nuclear-navy?traffic_source=rss",
       "date": "June 24, 2026",
       "description": "Kim Jong Un vows to equip North Korea&#039;s navy with nuclear weapons, signaling a strategic shift in military capabilities."
-    },
-    {
-      "title": "Ukraine attacks on Russian-occupied Crimea trigger power cuts in Sevastopol",
-      "url": "https://www.aljazeera.com/news/2026/6/24/ukraine-attacks-on-russian-occupied-crimea-trigger-power-cuts-in-sevastopol?traffic_source=rss",
-      "date": "June 24, 2026",
-      "description": "The largest city on the Russia-controlled peninsula has been left without power after an attack on energy facilities."
-    },
-    {
-      "title": "North Korea commissions largest-ever warship",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/24/north-korea-commissions-largest-ever-warship?traffic_source=rss",
-      "date": "June 24, 2026",
-      "description": "North Korea commissions largest-ever warship"
     }
   ],
-  "occNews": [],
+  "occNews": [
+    {
+      "title": "OCC Announces Enforcement Actions for June 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-48.html",
+      "date": "June 18, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for June 2026."
+    },
+    {
+      "title": "OCC Announces Enforcement Actions for May 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-40.html",
+      "date": "May 21, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for May 2026."
+    }
+  ],
   "economicsNews": [
     {
       "title": "Federal Reserve issues FOMC statement",
@@ -437,10 +438,10 @@
   ],
   "regionsNews": [
     {
-      "title": "Power outages hit France as record heatwave set to peak",
+      "title": "Power outages hit France as it records hottest day since measurements began",
       "url": "https://www.bbc.co.uk/news/articles/c78y4102n1zo?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 24, 2026",
-      "description": "About 68,000 homes in Brittany have been affected, with electricity unlikely to be fully restored until Wednesday night."
+      "description": "France has recorded it hottest day since records began in 1947, its national weather agency says, breaking a record set on Tuesday."
     },
     {
       "title": "Air conditioning creates political divide after France records hottest day",
@@ -881,6 +882,42 @@
       "description": "The US economy backs Elon Musk’s vision for AI and sending people into space"
     },
     {
+      "title": "ABC ‘fighting back’, urging US public to defend stations amid FCC scrutiny",
+      "url": "https://www.aljazeera.com/economy/2026/6/24/abc-fighting-back-urging-us-public-to-defend-stations-amid-fcc-scrutiny?traffic_source=rss",
+      "date": "June 24, 2026",
+      "description": "Donald Trump has intensified criticism of ABC, alleging bias and threatening lawsuits over network&#039;s recent coverage."
+    },
+    {
+      "title": "Has the worst of the Hormuz crisis passed?",
+      "url": "https://www.aljazeera.com/video/counting-the-cost/2026/6/24/has-the-worst-of-the-hormuz-crisis-passed?traffic_source=rss",
+      "date": "June 24, 2026",
+      "description": "Ships are moving again through the Strait of Hormuz, with oil prices falling. But relief for consumers may take longer."
+    },
+    {
+      "title": "Greta Thunberg pleads not guilty in trespassing case over 2024 pro-Palestin",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/24/greta-thunberg-pleads-not-guilty-in-trespassing-case-over-2024-pro-palestin?traffic_source=rss",
+      "date": "June 24, 2026",
+      "description": "Greta Thunberg pleads not guilty in trespassing case over 2024 pro-Palestine protest"
+    },
+    {
+      "title": "Israeli attacks kill 2 in southern Lebanon despite ongoing Washington talks",
+      "url": "https://www.aljazeera.com/news/2026/6/24/israeli-attacks-kill-2-in-southern-lebanon-despite-ongoing-washington-talks?traffic_source=rss",
+      "date": "June 24, 2026",
+      "description": "Israeli defence minister says troops won’t withdraw from southern Lebanon as attacks slow but do not stop."
+    },
+    {
+      "title": "Trump cancels housing bill signing, demands US voter ID law first",
+      "url": "https://www.aljazeera.com/economy/2026/6/24/trump-cancels-housing-bill-signing-demands-us-voter-id-law-first?traffic_source=rss",
+      "date": "June 24, 2026",
+      "description": "The affordable housing bill had been passed by bipartisan support, a rare move in a deeply divided US Congress."
+    },
+    {
+      "title": "What The Elephant Knows | Ep 7 – Sri Lanka",
+      "url": "https://www.aljazeera.com/video/making-peace/2026/6/24/what-the-elephant-knows-ep-7-sri?traffic_source=rss",
+      "date": "June 24, 2026",
+      "description": "In rural Sri Lanka, families face deadly human-elephant conflict while seeking a fragile path to co-existence."
+    },
+    {
       "title": "Israeli attacks on Gaza and occupied West Bank kill two, including child",
       "url": "https://www.aljazeera.com/news/2026/6/24/israeli-attacks-on-gaza-and-occupied-west-bank-kill-two-including-child?traffic_source=rss",
       "date": "June 24, 2026",
@@ -951,30 +988,6 @@
       "url": "https://www.aljazeera.com/news/2026/6/24/how-to-stay-cool-and-treat-heatstroke-during-a-heatwave?traffic_source=rss",
       "date": "June 24, 2026",
       "description": "Heatstroke is a severe medical condition that occurs when a human body’s internal temperature exceeds 40C (104F)."
-    },
-    {
-      "title": "Four Gaza aid flotilla activists released from Libya detention",
-      "url": "https://www.aljazeera.com/news/2026/6/24/four-gaza-aid-flotilla-activists-released-from-libya-detention?traffic_source=rss",
-      "date": "June 24, 2026",
-      "description": "Global Sumud Flotilla group says six others remain in detention and are expected to be released within 24 hours."
-    },
-    {
-      "title": "Israeli soldiers ‘celebrate’ inside displaced Lebanese family’s home",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/24/israeli-soldiers-celebrate-inside-displaced-lebanese-familys-home?traffic_source=rss",
-      "date": "June 24, 2026",
-      "description": "Israeli soldiers ‘celebrate’ inside displaced Lebanese family&#039;s home"
-    },
-    {
-      "title": "World Cup 2026: Key takeaways from the second round of group stage matches",
-      "url": "https://www.aljazeera.com/sports/2026/6/24/world-cup-2026-key-takeaways-second-round-group-matches-messi-ronaldo-mbappe-haaland-salah?traffic_source=rss",
-      "date": "June 24, 2026",
-      "description": "Here&#039;s a look at the viral moments, on-field controversies, the biggest players, best performances, goals and more."
-    },
-    {
-      "title": "South Africa’s crises will not be solved by blaming migrants",
-      "url": "https://www.aljazeera.com/opinions/2026/6/24/south-africas-crises-will-not-be-solved-by-blaming-migrants?traffic_source=rss",
-      "date": "June 24, 2026",
-      "description": "The solution is real socio-economic change in the country, and the labour movement is best positioned to push for it."
     }
   ],
   "_debugProgIdx": {
