@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T20:08:39.783Z",
+  "updatedAt": "2026-06-24T20:38:37.160Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260624",
@@ -294,6 +294,12 @@
   ],
   "ajNews": [
     {
+      "title": "At least three killed in drone strikes in Russian controlled Horlivka",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/24/at-least-three-killed-in-drone-strikes-in-russian-controlled-horlivka?traffic_source=rss",
+      "date": "June 24, 2026",
+      "description": "A multi-storey apartment has been hit with what Russian-installed authorities called a Ukrainian drone strike."
+    },
+    {
       "title": "Rubio: US ‘completely aligned’ with Gulf allies on Iran",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/6/24/rubio-us-completely-aligned-with-gulf-allies-on-iran?traffic_source=rss",
       "date": "June 24, 2026",
@@ -312,7 +318,20 @@
       "description": "Iran’s President Masoud Pezeshkian was awarded an honorary medical fellowship in cardiac surgery."
     }
   ],
-  "occNews": [],
+  "occNews": [
+    {
+      "title": "OCC Announces Enforcement Actions for June 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-48.html",
+      "date": "June 18, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for June 2026."
+    },
+    {
+      "title": "OCC Announces Enforcement Actions for May 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-40.html",
+      "date": "May 21, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for May 2026."
+    }
+  ],
   "economicsNews": [
     {
       "title": "Federal Reserve Board&#39;s annual bank stress test confirms that large banks are well positioned to weather a severe recession and able to continue to lend to households and businesses",
@@ -852,6 +871,12 @@
       "description": "The US economy backs Elon Musk’s vision for AI and sending people into space"
     },
     {
+      "title": "US judge blocks Trump subpoenas into transgender care at New York hospitals",
+      "url": "https://www.aljazeera.com/news/2026/6/24/us-judge-blocks-trump-subpoenas-into-transgender-care-at-new-york-hospitals?traffic_source=rss",
+      "date": "June 24, 2026",
+      "description": "The Trump administration has called for a probe into transgender healthcare, leading it to subpoena medical records."
+    },
+    {
       "title": "De la Espriella pledges to restore Colombia’s relations with Israel",
       "url": "https://www.aljazeera.com/news/2026/6/24/de-la-espriella-pledges-to-restore-colombias-relations-with-israel?traffic_source=rss",
       "date": "June 24, 2026",
@@ -970,18 +995,6 @@
       "url": "https://www.aljazeera.com/news/2026/6/24/israeli-attacks-on-gaza-and-occupied-west-bank-kill-two-including-child?traffic_source=rss",
       "date": "June 24, 2026",
       "description": "Health officials at Nasser Medical Complex tell Al Jazeera a 12-year-old child was killed in al-Mawasi, Gaza."
-    },
-    {
-      "title": "How Colombia’s traditional midwives serve as lifelines to rural communities",
-      "url": "https://www.aljazeera.com/features/longform/2026/6/24/how-colombias-traditional-midwives-serve-as-lifelines-to-rural-communities?traffic_source=rss",
-      "date": "June 24, 2026",
-      "description": "Parts of Colombia are isolated, with no hospitals nearby. Experts say midwives can help bridge the healthcare gap."
-    },
-    {
-      "title": "Why Accra slavery reparatory justice meeting matters",
-      "url": "https://www.aljazeera.com/news/2026/6/24/why-accra-slavery-reparatory-justice-meeting-matters?traffic_source=rss",
-      "date": "June 24, 2026",
-      "description": "From apology to action: the renewed push for slavery reparations amid questions over delivery."
     }
   ],
   "_debugProgIdx": {
