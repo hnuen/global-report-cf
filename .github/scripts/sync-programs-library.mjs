@@ -223,6 +223,27 @@ function romanToInt(s) {
   return total;
 }
 
+// Add a missing `expires` field onto the single-line entry for `number`
+// (e.g. "GL X") in itemsText, if that entry exists and doesn't already carry
+// one. Returns { text, changed }. Tier 1 below only writes `expires` for
+// entries it INSERTS — a GL already in the curated library before this field
+// existed (e.g. Iran's older rolling petroleum GLs) would otherwise show a
+// permanently blank "Expires" column forever, even once OFAC's page (and our
+// scraper) clearly has the date. Never touches a line that already has an
+// expires field — existing/manually-curated data always wins.
+function backfillExpires(itemsText, number, expiresVal) {
+  const lines = itemsText.split("\n");
+  let changed = false;
+  const newLines = lines.map((line) => {
+    if (changed || !line.includes(`number: "GL ${number}"`) || line.includes("expires:")) return line;
+    const m = /\}\s*,?\s*$/.exec(line);
+    if (!m) return line;
+    changed = true;
+    return line.slice(0, m.index) + `, expires: "${esc(expiresVal)}"` + line.slice(m.index);
+  });
+  return { text: newLines.join("\n"), changed };
+}
+
 // Recompute a leading "// N GLs ..." comment to match the new entry count, if present.
 function refreshCountComment(itemsText) {
   const count = (itemsText.match(/\{\s*number:/g) || []).length;
@@ -245,6 +266,20 @@ function syncBlockEntries(blockText, scraped, log) {
     let activeItems = activeGL.itemsText;
     const archiveGL = archive ? findArray(archive, "generalLicenses") : null;
     let archiveItems = archiveGL ? archiveGL.itemsText : null;
+
+    // Backfill `expires` onto already-existing active entries that don't have
+    // it yet but have a known expiration date in this run's scrape — runs
+    // regardless of whether any genuinely new GL also shows up below.
+    let backfilledAny = false;
+    for (const gl of scraped.generalLicenses || []) {
+      if (!gl.number || !gl.expires) continue;
+      const result = backfillExpires(activeItems, gl.number, gl.expires);
+      if (result.changed) {
+        activeItems = result.text;
+        backfilledAny = true;
+        notes.push(`Backfilled expires="${gl.expires}" onto existing GL ${gl.number}`);
+      }
+    }
 
     const known = new Set([...extractNumbers(activeItems), ...(archiveItems !== null ? extractNumbers(archiveItems) : [])]);
     const newGLs = (scraped.generalLicenses || []).filter((gl) => gl.number && !known.has(`GL ${gl.number}`));
@@ -292,8 +327,10 @@ function syncBlockEntries(blockText, scraped, log) {
       }
       activeItems = insertAtTop(activeItems, adds);
       activeItems = refreshCountComment(activeItems);
-      changed = true;
+    }
 
+    if (newGLs.length > 0 || backfilledAny) {
+      changed = true;
       before = replaceArray(before, activeGL, activeItems);
       if (archiveGL && archiveItems !== archiveGL.itemsText) {
         archive = replaceArray(archive, archiveGL, archiveItems);

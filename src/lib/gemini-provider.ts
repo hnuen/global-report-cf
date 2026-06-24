@@ -223,7 +223,22 @@ export class GeminiProvider implements LLMProvider {
     const briefing = parseJSON(text);
     if (!briefing) throw new Error("Failed to parse briefing JSON from Gemini");
 
-    briefing.lastUpdated += " [Gemini]";
+    // The JSON schema above necessarily shows an illustrative example value for
+    // "lastUpdated" (e.g. "May 23, 2026 — 14:00 UTC") so Gemini knows the
+    // expected shape — but Gemini sometimes parrots that literal example back
+    // verbatim instead of substituting the real current time. This is the same
+    // bug already fixed for the GitHub Actions script (refresh-briefing.mjs's
+    // formatLastUpdatedUtc), which froze the app's displayed timestamp. Never
+    // trust Gemini's self-reported timestamp: always stamp it from the real
+    // clock right before returning, in the same Eastern-time format the
+    // official-briefing.ts fallback path uses, so both halves of the
+    // orchestrator's output look consistent regardless of which provider ran.
+    const stamp = new Date().toLocaleString("en-US", {
+      month: "long", day: "numeric", year: "numeric",
+      hour: "2-digit", minute: "2-digit", timeZoneName: "short",
+      timeZone: "America/New_York",
+    });
+    briefing.lastUpdated = `${stamp} [Gemini]`;
     return briefing;
   }
 }

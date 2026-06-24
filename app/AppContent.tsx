@@ -18,6 +18,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{background:#ffffff}
 .app{min-height:100vh;background:var(--paper);color:var(--ink);font-family:'IBM Plex Sans',sans-serif}
 .app{overflow-x:hidden;max-width:100vw}
+.site-header{position:sticky;top:0;z-index:30;background:#fff}
 .masthead{background:#ffffff}
 .mast-inner{max-width:1140px;margin:0 auto;padding:14px 20px 11px;display:flex;justify-content:center;align-items:center;border-bottom:2px solid #e5e7eb}
 .mast-l,.mast-r{font-family:var(--mono);font-size:.6rem;color:#9ca3af;letter-spacing:.1em;text-transform:uppercase;line-height:1.8}
@@ -1133,6 +1134,7 @@ export default function GlobalMonitor() {
   return (
     <><style>{css}</style>
     <div className="app">
+      <div className="site-header">
       <div className="masthead">
         <div className="mast-inner">
           <div><span className="pub-name">The Global Report</span></div>
@@ -1208,6 +1210,7 @@ export default function GlobalMonitor() {
           </div>
         )}
       </div></div>
+      </div>
       {showGlobalSearch && (globalSearching || globalResults.length > 0 || globalError) && (
         <div style={{borderBottom:"2px solid #111",background:"#fff"}}>
           <div className="gs-panel">
