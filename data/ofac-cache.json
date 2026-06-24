@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T21:08:37.184Z",
+  "updatedAt": "2026-06-24T21:38:36.451Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260624",
@@ -433,7 +433,7 @@
   ],
   "regionsNews": [
     {
-      "title": "Power outages hit France as it records hottest day since measurements began",
+      "title": "France, UK and Spain see record temperatures as heatwave grips western Europe",
       "url": "https://www.bbc.co.uk/news/articles/c78y4102n1zo?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 24, 2026",
       "description": "France has recorded it hottest day since records began in 1947, its national weather agency says, breaking a record set on Tuesday."
@@ -998,11 +998,11 @@
     }
   ],
   "_debugProgIdx": {
-    "length": 65447,
+    "length": 65449,
     "trCount": 38,
     "tableCount": 1,
     "hrefMentions": 50,
-    "iranIdx": 14705,
+    "iranIdx": 14707,
     "snippet": "-current active\" aria-expanded=\"false\" aria-controls=\"megamenu-4\">\n                  <span>Sanctions Programs</span>\n                </button>\n              \n                                \n  \n            <ul id=\"megamenu-4\" class=\"usa-nav__submenu \" hidden>\n\n                  \n                      <li class=\" usa-nav__submenu-item treas-main-nav__submenu-item \">\n\n              \n                              <a href=\"/sanctions-programs-and-country-information/russia-related-sanctions\" class=\"\">\n                  <span>Russia-related Sanctions</span>\n                </a>\n              \n            </li>\n                      <li class=\" usa-nav__submenu-item treas-main-nav__submenu-item \">\n\n              \n                              <a href=\"/sanctions-programs-and-country-information/iran-sanctions\" class=\"\">\n                  <span>Iran Sanctions</span>\n                </a>\n              \n            </li>\n                      <li class=\" usa-nav__submenu-item treas-main-nav__submenu-item \">\n\n              \n                              <a href=\"/sanctions-programs-and-country-information/north-korea-sanctions\" class=\"\">\n                  <span>North Korea Sanctions</span>\n "
   }
 }
