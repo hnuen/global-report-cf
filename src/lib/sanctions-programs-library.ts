@@ -79,7 +79,10 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
       { number: "13219", title: "Blocking Property of Persons Who Threaten International Stabilization Efforts in the Western Balkans", date: "June 26, 2001", url: "https://ofac.treasury.gov/media/6246/download?inline" },
       { number: "13304", title: "Termination of Emergencies With Respect to Yugoslavia and Modification of EO 13219", date: "May 28, 2003", url: "https://ofac.treasury.gov/media/6176/download?inline" },
     ],
-    generalLicenses: [],
+    generalLicenses: [
+      { number: "GL 1", title: "Western Balkans General License (No. 1)", date: "July 09, 2003", url: "https://ofac.treasury.gov/media/6201/download?inline", addedDate: "June 24, 2026" },
+      { number: "GL 3A", title: "Western Balkans General License (No. 3A)", date: "July 09, 2003", url: "https://ofac.treasury.gov/media/932961/download?inline", addedDate: "June 24, 2026" },
+    ],
 
         archive: {
       generalLicenses: [
@@ -100,7 +103,9 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
       { number: "13405", title: "Blocking Property of Certain Persons Undermining Democratic Processes or Institutions in Belarus", date: "June 16, 2006", url: "https://ofac.treasury.gov/media/9216/download?inline" },
     ],
     generalLicenses: [
-      { number: "GL 8", title: "Authorizing Certain Activities to Preserve Potash Operations in Belarus", date: "December 2021" },
+            { number: "GL 12", title: "Belarus General License 12", date: "November 04, 2025", url: "https://ofac.treasury.gov/media/934731/download?inline", addedDate: "June 24, 2026" },
+      { number: "GL 14", title: "Belarus General License 14", date: "November 04, 2025", url: "https://ofac.treasury.gov/media/935366/download?inline", addedDate: "June 24, 2026" },
+{ number: "GL 8", title: "Authorizing Certain Activities to Preserve Potash Operations in Belarus", date: "December 2021" },
     ],
 
         archive: {
@@ -581,7 +586,8 @@ archive: {
     ],
     keyAdvisories: [
       // 3 advisories — all PDF links verified from OFAC page
-      { title: "FACT SHEET: Russia Sanctions and Agricultural Trade", date: "July 2022", url: "https://ofac.treasury.gov/media/924341/download?inline" },
+            { title: "Russia-related Designations Removals", date: "June 24, 2026", url: "https://ofac.treasury.gov/recent-actions/20260624", addedDate: "June 24, 2026" },
+{ title: "FACT SHEET: Russia Sanctions and Agricultural Trade", date: "July 2022", url: "https://ofac.treasury.gov/media/924341/download?inline" },
       { title: "FACT SHEET: Preserving Agricultural Trade, Access to Communication, and Other Support to Those Impacted by Russia's War Against Ukraine", date: "April 2022", url: "https://ofac.treasury.gov/media/922206/download?inline" },
       { title: "Advisory Regarding the Obfuscation of Critical Information in Financial and Trade Transactions Involving the Crimea Region of Ukraine", date: "July 30, 2015", url: "https://ofac.treasury.gov/media/8676/download?inline" },
     ],
@@ -729,14 +735,36 @@ archive: {
     id: "sdgt",
     name: "Counter Terrorism Sanctions (SDGT)",
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-terrorism-sanctions",
-    region: "Global", category: "thematic", lastUpdated: "May 8, 2026", status: "active",
+    region: "Global", category: "thematic", lastUpdated: "Jun 22, 2026", status: "active",
     executiveOrders: [
       { number: "13224", title: "Blocking Property and Prohibiting Transactions With Persons Who Commit, Threaten To Commit, or Support Terrorism", date: "September 23, 2001", url: "https://ofac.treasury.gov/media/5536/download?inline" },
       { number: "13268", title: "Termination of Emergency With Respect to the Taliban", date: "July 2, 2002", url: "https://ofac.treasury.gov/media/5631/download?inline" },
       { number: "13372", title: "Clarifying the Prohibition on Transactions With, and the Confiscation of Assets of, Terrorists Who Threaten to Disrupt the Middle East Peace Process", date: "February 16, 2005", url: "https://ofac.treasury.gov/media/5576/download?inline" },
     ],
     generalLicenses: [
-      { number: "CT GL 26A", title: "Authorizing Certain Transactions Necessary to Port and Airport Operations Involving Ansarallah", date: "March 5, 2025" },
+            { number: "GL 25", title: "Fact Sheet: Frequently Asked Questions (FAQs) for Syria General License 25", date: "June 30, 2025", url: "https://ofac.treasury.gov/media/934311/download?inline", addedDate: "June 24, 2026" },
+      { number: "GL 2", title: "Counter Terrorism General License 2", date: "April 12, 2006", url: "https://ofac.treasury.gov/media/8366/download?inline", addedDate: "June 24, 2026" },
+      { number: "GL 3", title: "Counter Terrorism General License 3", date: "April 12, 2006", url: "https://ofac.treasury.gov/media/8371/download?inline", addedDate: "June 24, 2026" },
+      { number: "GL 4", title: "Counter Terrorism General License 4", date: "April 12, 2006", url: "https://ofac.treasury.gov/media/8376/download?inline", addedDate: "June 24, 2026" },
+      { number: "GL 5", title: "Counter Terrorism General License 5", date: "April 12, 2006", url: "https://ofac.treasury.gov/media/8381/download?inline", addedDate: "June 24, 2026" },
+      { number: "GL 6", title: "Counter Terrorism General License 6", date: "April 12, 2006", url: "https://ofac.treasury.gov/media/8391/download?inline", addedDate: "June 24, 2026" },
+      { number: "GL 7", title: "Counter Terrorism General License 7", date: "July 06, 2006", url: "https://ofac.treasury.gov/media/4816/download?inline", addedDate: "June 24, 2026" },
+      { number: "GL 7a", title: "Counter Terrorism General License 7a", date: "December 07, 2010", url: "https://ofac.treasury.gov/media/8396/download?inline", addedDate: "June 24, 2026" },
+      { number: "GL 8A", title: "Counter Terrorism General License 8A", date: "May 14, 2013", url: "https://ofac.treasury.gov/media/48841/download?inline", addedDate: "June 24, 2026" },
+      { number: "GL 14", title: "Counter Terrorism General License 14", date: "October 26, 2020", url: "https://ofac.treasury.gov/media/912996/download?inline", addedDate: "June 24, 2026" },
+      { number: "GL 15", title: "Counter Terrorism General License 15", date: "September 24, 2021", url: "https://ofac.treasury.gov/media/913001/download?inline", addedDate: "June 24, 2026" },
+      { number: "GL 16", title: "Counter Terrorism General License 16", date: "September 24, 2021", url: "https://ofac.treasury.gov/media/915126/download?inline", addedDate: "June 24, 2026" },
+      { number: "GL 17", title: "Counter Terrorism General License 17", date: "December 10, 2021", url: "https://ofac.treasury.gov/media/917126/download?inline", addedDate: "June 24, 2026" },
+      { number: "GL 18", title: "Counter Terrorism General License 18", date: "December 22, 2021", url: "https://ofac.treasury.gov/media/917131/download?inline", addedDate: "June 24, 2026" },
+      { number: "GL 19", title: "Counter Terrorism General License 19", date: "December 22, 2021", url: "https://ofac.treasury.gov/media/917136/download?inline", addedDate: "June 24, 2026" },
+      { number: "GL 20", title: "Counter Terrorism General License 20", date: "December 22, 2021", url: "https://ofac.treasury.gov/media/918776/download?inline", addedDate: "June 24, 2026" },
+      { number: "GL 22A", title: "Counter Terrorism General License 22A", date: "February 25, 2022", url: "https://ofac.treasury.gov/media/934031/download?inline", addedDate: "June 24, 2026" },
+      { number: "GL 23A", title: "Counter Terrorism General License 23A", date: "March 05, 2025", url: "https://ofac.treasury.gov/media/934036/download?inline", addedDate: "June 24, 2026" },
+      { number: "GL 24A", title: "Counter Terrorism General License 24A", date: "March 05, 2025", url: "https://ofac.treasury.gov/media/934041/download?inline", addedDate: "June 24, 2026" },
+      { number: "GL 26A", title: "Counter Terrorism General License 26A", date: "March 05, 2025", url: "https://ofac.treasury.gov/media/934051/download?inline", addedDate: "June 24, 2026" },
+      { number: "GL 28A", title: "Counter Terrorism General License 28A", date: "March 05, 2025", url: "https://ofac.treasury.gov/media/934056/download?inline", addedDate: "June 24, 2026" },
+      { number: "GL 134C", title: "Russia-related General License 134C", date: "May 23, 2025", url: "https://ofac.treasury.gov/media/935641/download?inline", addedDate: "June 24, 2026" },
+{ number: "CT GL 26A", title: "Authorizing Certain Transactions Necessary to Port and Airport Operations Involving Ansarallah", date: "March 5, 2025" },
       { number: "CT GL 28A", title: "Authorizing Transactions for Third-Country Diplomatic and Consular Missions Involving Ansarallah", date: "March 5, 2025" },
     ],
     keyAdvisories: [
@@ -808,7 +836,9 @@ archive: {
       { number: "13757", title: "Taking Additional Steps to Address the National Emergency With Respect to Significant Malicious Cyber-Enabled Activities", date: "December 28, 2016", url: "https://ofac.treasury.gov/media/8561/download?inline" },
     ],
     generalLicenses: [
-      { number: "Cyber GL 2", title: "Authorizing Certain Transactions Involving Anco Water Supply Co. Ltd. Related to the Treatment and Distribution of Drinking Water", date: "April 23, 2026", url: "https://ofac.treasury.gov/selected-general-licenses-issued-ofac" },
+            { number: "GL 1C", title: "Cyber General License 1C", date: "April 27, 2023", url: "https://ofac.treasury.gov/media/931686/download?inline", addedDate: "June 24, 2026" },
+      { number: "GL 2", title: "Cyber General License 2", date: "April 27, 2023", url: "https://ofac.treasury.gov/media/935531/download?inline", addedDate: "June 24, 2026" },
+{ number: "Cyber GL 2", title: "Authorizing Certain Transactions Involving Anco Water Supply Co. Ltd. Related to the Treatment and Distribution of Drinking Water", date: "April 23, 2026", url: "https://ofac.treasury.gov/selected-general-licenses-issued-ofac" },
       { number: "Cyber GL 1C", title: "Authorizing Certain Transactions with the Federal Security Service (FSB)", date: "April 27, 2023" },
     ],
   },
@@ -817,12 +847,13 @@ archive: {
     id: "global-magnitsky",
     name: "Global Magnitsky Sanctions",
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/global-magnitsky-sanctions",
-    region: "Global", category: "thematic", lastUpdated: "Mar 27, 2026", status: "active",
+    region: "Global", category: "thematic", lastUpdated: "May 28, 2026", status: "active",
     executiveOrders: [
       { number: "13818", title: "Blocking the Property of Persons Involved in Serious Human Rights Abuse or Corruption", date: "December 20, 2017", url: "https://ofac.treasury.gov/media/8656/download?inline" },
     ],
     generalLicenses: [
-      { number: "Global Magnitsky GL 8", title: "Authorizing Transactions Involving Certain Entities Owned by Ly Yong Phat or L.Y.P. Group Co., Ltd.", date: "2025", url: "https://ofac.treasury.gov/selected-general-licenses-issued-ofac" },
+            { number: "GL 8", title: "Global Magnitsky General License 8", date: "September 12, 2024", url: "https://ofac.treasury.gov/media/933216/download?inline", addedDate: "June 24, 2026" },
+{ number: "Global Magnitsky GL 8", title: "Authorizing Transactions Involving Certain Entities Owned by Ly Yong Phat or L.Y.P. Group Co., Ltd.", date: "2025", url: "https://ofac.treasury.gov/selected-general-licenses-issued-ofac" },
     ],
 
         archive: {
