@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T22:08:37.546Z",
+  "updatedAt": "2026-06-24T22:42:04.623Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260624",
@@ -99,7 +99,714 @@
       "pdfUrl": "https://ofac.treasury.gov/media/935006/download?inline"
     }
   ],
-  "programs": {},
+  "programs": {
+    "afghanistan-related-sanctions": {
+      "name": "Afghanistan-Related Sanctions",
+      "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/afghanistan-related-sanctions",
+      "lastUpdated": "Feb 25, 2022",
+      "executiveOrders": [],
+      "frNotices": [],
+      "generalLicenses": [
+        {
+          "number": "14",
+          "title": "Afghanistan-related General License 14",
+          "date": "September 24, 2021",
+          "url": "https://ofac.treasury.gov/media/912996/download?inline"
+        },
+        {
+          "number": "15",
+          "title": "Afghanistan-related General License 15",
+          "date": "September 24, 2021",
+          "url": "https://ofac.treasury.gov/media/913001/download?inline"
+        },
+        {
+          "number": "16",
+          "title": "Afghanistan-related General License 16",
+          "date": "September 24, 2021",
+          "url": "https://ofac.treasury.gov/media/915126/download?inline"
+        },
+        {
+          "number": "17",
+          "title": "Afghanistan-related General License 17",
+          "date": "December 10, 2021",
+          "url": "https://ofac.treasury.gov/media/917126/download?inline"
+        },
+        {
+          "number": "18",
+          "title": "Afghanistan-related General License 18",
+          "date": "December 22, 2021",
+          "url": "https://ofac.treasury.gov/media/917131/download?inline"
+        },
+        {
+          "number": "19",
+          "title": "Afghanistan-related General License 19",
+          "date": "December 22, 2021",
+          "url": "https://ofac.treasury.gov/media/917136/download?inline"
+        },
+        {
+          "number": "20",
+          "title": "Afghanistan-related General License 20",
+          "date": "December 22, 2021",
+          "url": "https://ofac.treasury.gov/media/918776/download?inline"
+        }
+      ]
+    },
+    "balkans-related-sanctions": {
+      "name": "Balkans-Related Sanctions",
+      "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/balkans-related-sanctions",
+      "lastUpdated": "Nov 20, 2025",
+      "executiveOrders": [],
+      "frNotices": [
+        {
+          "citation": "89 FR 96901-24",
+          "description": "Publication of Western Balkans Stabilization Regulations Web General License 5A 89 FR 84472-24 - Publication of Western Balkans Stabilization Regulations Web General Licenses 3A, 4, and 5 89 FR 16452-24 - Publication of Western Balkans Stabilization Regulations Web General Licenses 2 and 3 88 FR 254",
+          "year": "2024",
+          "glNumbers": [
+            "5A",
+            "3A",
+            "2"
+          ]
+        },
+        {
+          "citation": "87 FR 78484-22",
+          "description": "Publication of Humanitarian Sanctions Regulations Amendment and General Licenses (Nongovernmental Organizations, Agricultural, and Medicine) 87 FR 58983-22 - Western Balkans Stabilization Regulations 76 FR 38002-11 - Final rule containing the Western Balkans Stabilization Regulations 76 FR 38000-11",
+          "year": "2022",
+          "glNumbers": []
+        },
+        {
+          "citation": "71 FR 29251-06",
+          "description": "Revisions to IEEPA made by the Combating Terrorism Financing Act of 2005 69 FR 64632-04 - Publication of General Licenses Related to the Cuba, Burma, and Western Balkans Sanctions Programs United Nations Security Council Resolutions 1244 - Determined to resolve the grave humanitarian situation in Ko",
+          "year": "2006",
+          "glNumbers": []
+        }
+      ],
+      "generalLicenses": [
+        {
+          "number": "1",
+          "title": "Western Balkans General License (No. 1)",
+          "date": "July 09, 2003",
+          "url": "https://ofac.treasury.gov/media/6201/download?inline"
+        },
+        {
+          "number": "3A",
+          "title": "Western Balkans General License (No. 3A)",
+          "date": "July 09, 2003",
+          "url": "https://ofac.treasury.gov/media/932961/download?inline"
+        }
+      ]
+    },
+    "belarus-sanctions": {
+      "name": "Belarus Sanctions",
+      "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/belarus-sanctions",
+      "lastUpdated": "Mar 26, 2026",
+      "executiveOrders": [],
+      "frNotices": [
+        {
+          "citation": "91 FR 24714-26",
+          "description": "Publication of a Belarus Sanctions Regulations Web General License 91 FR 10002-26 - Publication of a Belarus Sanctions Regulations Web General License (12) 91 FR 10002-26 - Publication of a Belarus Sanctions Regulations Web General License (13) 89 FR 89926-24 - Publication of Belarus Sanctions Regul",
+          "year": "2026",
+          "glNumbers": [
+            "91"
+          ]
+        },
+        {
+          "citation": "89 FR 72717-24",
+          "description": "Publication of Belarus Sanctions Regulations and Russian Harmful Foreign Activities Sanctions Regulations Web General License 101 88 FR 63017-23 - Publication of Belarus Sanctions Regulations Web General Licenses 8 and 9 88 FR 36947-23 - Publication of Belarus Sanctions Regulations Web General Licen",
+          "year": "2024",
+          "glNumbers": [
+            "101",
+            "8"
+          ]
+        },
+        {
+          "citation": "88 FR 36946-23",
+          "description": "Publication of Belarus Sanctions Regulations Web General License 1 and Subsequent Iterations 88 FR 36942-23 - Publication of Belarus Sanctions Regulations Web General License 2 and Subsequent Iterations 88 FR 18038-23 - Amended Belarus Sanctions Regulations 87 FR 78484-22 - Publication of Humanitari",
+          "year": "2023",
+          "glNumbers": [
+            "1",
+            "2"
+          ]
+        },
+        {
+          "citation": "87 FR 78470-22",
+          "description": "Publication of United States Government and International Organizations Official Business Sanctions Regulations Amendment and General Licenses 76 FR 5482-11 - Final rule to revoke a general license authorizing U.S. persons to engage until May 31, 2011, in otherwise prohibited transactions with two b",
+          "year": "2022",
+          "glNumbers": [
+            "76"
+          ]
+        },
+        {
+          "citation": "75 FR 73958",
+          "description": "10​ - Belarus Sanctions Regulations​ 75 FR 5502-10 - New regulations to implement Executive Order 13405 Recent Actions regarding Belarus Sanctions Belarus Designations Removals; Issuance of Belarus General License; Rescission of Belarus Directive 1 Release Date: Mar 26, 2026 Issuance of Belarus Gene",
+          "year": "",
+          "glNumbers": []
+        }
+      ],
+      "generalLicenses": [
+        {
+          "number": "12",
+          "title": "Belarus General License 12",
+          "date": "November 04, 2025",
+          "url": "https://ofac.treasury.gov/media/934731/download?inline"
+        },
+        {
+          "number": "14",
+          "title": "Belarus General License 14",
+          "date": "November 04, 2025",
+          "url": "https://ofac.treasury.gov/media/935366/download?inline"
+        }
+      ]
+    },
+    "burma": {
+      "name": "Burma-Related Sanctions",
+      "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/burma",
+      "lastUpdated": "May 28, 2026",
+      "executiveOrders": [],
+      "frNotices": [
+        {
+          "citation": "89 FR 89481-24",
+          "description": "Publication of Amended Burma Sanctions Regulations 89 FR 67556-24 - Addition of General License for certain transactions related to the provision of agricultural commodities, medicine, medical devices, replacement parts and components for medical devices, or software updates for medical devices 89 F",
+          "year": "2024",
+          "glNumbers": []
+        },
+        {
+          "citation": "88 FR 87714-23",
+          "description": "Publication of Burma Sanctions Regulations Web General Licenses 3 and 4 88 FR 45816-23 - Publication of Burma Sanctions Regulations Web General License 5 87 FR 78470-22 - Publication of United States Government and International Organizations Official Business Sanctions Regulations Amendment and Gen",
+          "year": "2023",
+          "glNumbers": [
+            "3",
+            "5"
+          ]
+        },
+        {
+          "citation": "86 FR 29197-21",
+          "description": "Burma Sanctions Regulations Recent Actions regarding Burma-Related Sanctions Designations Removals Release Date: May 28, 2026 Counter Terrorism Designations; Burma-related Designations; Cyber-related Designations; Non-Proliferation Designations and Designation Updates; Iran-related Designation Updat",
+          "year": "2021",
+          "glNumbers": []
+        }
+      ],
+      "generalLicenses": [
+        {
+          "number": "6",
+          "title": "89 FR 13269-24 - Publication of Burma Sanctions Regulations Web General License 6",
+          "date": "",
+          "url": "https://ofac.treasury.gov/media/933281/download?inline"
+        }
+      ]
+    },
+    "central-african-republic-sanctions": {
+      "name": "Central African Republic Sanctions",
+      "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/central-african-republic-sanctions",
+      "lastUpdated": "Dec 08, 2023",
+      "executiveOrders": [],
+      "frNotices": [
+        {
+          "citation": "87 FR 78484-22",
+          "description": "Publication of Humanitarian Sanctions Regulations Amendment and General Licenses (Nongovernmental Organizations, Agricultural, and Medicine) 87 FR 58972-22 - Central African Republic Sanctions Regulations 79 FR 38248-14 - Final rule adding the Central African Republic Sanctions Regulations Recent Ac",
+          "year": "2022",
+          "glNumbers": []
+        }
+      ],
+      "generalLicenses": []
+    },
+    "chinese-military-companies-sanctions": {
+      "name": "Chinese Military Companies Sanctions",
+      "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/chinese-military-companies-sanctions",
+      "lastUpdated": "Jun 01, 2022",
+      "executiveOrders": [],
+      "frNotices": [
+        {
+          "citation": "88 FR 60889-23",
+          "description": "Publication of Chinese Military- Industrial Complex Sanctions Regulations Web General Licenses 1, 1A, 1B, and 2 87 FR 8735-22 - Chinese Military-Industrial Complex Sanctions Regulations Recent Actions regarding Chinese Military Companies Sanctions Publication of Chinese Military-Industrial Complex S",
+          "year": "2023",
+          "glNumbers": [
+            "1"
+          ]
+        }
+      ],
+      "generalLicenses": []
+    },
+    "counter-narcotics-trafficking-sanctions": {
+      "name": "Counter Narcotics Trafficking Sanctions",
+      "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-narcotics-trafficking-sanctions",
+      "lastUpdated": "May 28, 2026",
+      "executiveOrders": [],
+      "frNotices": [
+        {
+          "citation": "91 FR 24722-26",
+          "description": "Publication of a Global Terrorism Sanctions Regulations and Illicit Drug Trade Sanctions Regulations Web General License 87 FR 78484-22 - Publication of Humanitarian Sanctions Regulations Amendment and General Licenses (Nongovernmental Organizations, Agricultural, and Medicine) 87 FR 78470-22 - Publ",
+          "year": "2026",
+          "glNumbers": [
+            "87"
+          ]
+        },
+        {
+          "citation": "87 FR 77711-22",
+          "description": "Publication of Illicit Drug Trade Sanctions Regulations 87 FR 73647-22 - Publication of Foreign Narcotics Kingpin Sanctions Regulations Web General License 1A and Subsequent Iterations 87 FR 73643-22 - Publication of Foreign Narcotics Kingpin Sanctions Regulations Web General Licenses 5, 6, and 7 an",
+          "year": "2022",
+          "glNumbers": [
+            "1A",
+            "5"
+          ]
+        },
+        {
+          "citation": "87 FR 73639-22",
+          "description": "Publication of Foreign Narcotics Kingpin Sanctions Regulations Web General License 4 and Subsequent Iterations 87 FR 73637-22 - Publication of Foreign Narcotics Kingpin Sanctions Regulations Web General Licenses 2, 3, 3A, and 3B 86 FR 26661-21 - Amendments to the Narcotics Trafficking Sanctions Regu",
+          "year": "2022",
+          "glNumbers": [
+            "4",
+            "2"
+          ]
+        },
+        {
+          "citation": "80 FR 74835-15",
+          "description": "Publication of a General License Related to the Foreign Narcotics Kingpin Sanctions Program 80 FR 29201-15 - Delegation of Functions Under the Foreign Narcotics Kingpin Designation Act 78 FR 33943-13 - Delegation of Functions Under Subsection 804(h)(2)(A) of the Foreign Narcotics Kingpin Designation",
+          "year": "2015",
+          "glNumbers": []
+        },
+        {
+          "citation": "71 FR 29251-06",
+          "description": "Revisions to IEEPA made by the Combating Terrorism Financing Act of 2005 68 FR 61359-03 - Reporting, Procedures and Penalties Regulations; Iraqi Sanctions Regulations; Foreign Terrorist Organizations Sanctions Regulations; Foreign Narcotics Kingpin Sanctions Regulations Recent Actions regarding Coun",
+          "year": "2006",
+          "glNumbers": []
+        }
+      ],
+      "generalLicenses": []
+    },
+    "counter-terrorism-sanctions": {
+      "name": "Counter Terrorism Sanctions",
+      "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-terrorism-sanctions",
+      "lastUpdated": "Jun 22, 2026",
+      "executiveOrders": [],
+      "frNotices": [
+        {
+          "citation": "91 FR 24722-26",
+          "description": "Publication of a Global Terrorism Sanctions Regulations and Illicit Drug Trade Sanctions Regulations Web General License 90 FR 38941-25 - Publication of Syrian Sanctions Regulations Web General License 25 90 FR 34600-25 - Publication of Global Terrorism Sanctions Regulations Web General License 33 9",
+          "year": "2026",
+          "glNumbers": [
+            "90",
+            "25",
+            "33"
+          ]
+        },
+        {
+          "citation": "89 FR 91261-24",
+          "description": "Publication of Covid-Related Web General License Related to Iranian Transactions and Sanctions Regulations and Global Terrorism Sanctions Regulations 89 FR 84821-24 - Publication of Global Terrorism Sanctions Regulations Web General Licenses 30 and 31 89 FR 48842-24 - Publication of Global Terrorism",
+          "year": "2024",
+          "glNumbers": [
+            "30"
+          ]
+        },
+        {
+          "citation": "89 FR 48841-24",
+          "description": "Publication of Global Terrorism Sanctions Regulations Web General License 28 89 FR 20120-24 - Publication of Global Terrorism Sanctions Regulations Web General License 29 89 FR 13271-24 - Publication of Global Terrorism Sanctions Regulations Web General Licenses 22, 23, 24, 25, 26, and 27 88 FR 9397",
+          "year": "2024",
+          "glNumbers": [
+            "28",
+            "29",
+            "22"
+          ]
+        },
+        {
+          "citation": "87 FR 78484-22",
+          "description": "Publication of Humanitarian Sanctions Regulations Amendment and General Licenses (Nongovernmental Organizations, Agricultural, and Medicine) 87 FR 78470-22 - Publication of United States Government and International Organizations Official Business Sanctions Regulations Amendment and General Licenses",
+          "year": "2022",
+          "glNumbers": []
+        },
+        {
+          "citation": "87 FR 76932-22",
+          "description": "Publication of Global Terrorism Sanctions Regulations Web General License 21 87 FR 58450-22 - Publication of Iranian Transactions and Sanctions Regulations and Global Terrorism Sanctions Regulations Web General Licenses 8 and 8A 87 FR 39337-22 - Amendment to the Global Terrorism Sanctions Regulation",
+          "year": "2022",
+          "glNumbers": [
+            "21",
+            "8"
+          ]
+        },
+        {
+          "citation": "86 FR 27273-21",
+          "description": "Terrorism List Governments Sanctions Regulations: Amendment to implement the rescission of the designation of Sudan as a State Sponsor of Terrorism 85 FR 13746-20 - Removal of Terrorism Sanctions Regulations 84 FR 35307-19 - Amendments to the Global Terrorism Sanctions Regulations (GTSR); Transnatio",
+          "year": "2021",
+          "glNumbers": []
+        },
+        {
+          "citation": "84 FR 9456-19",
+          "description": "Amendment for the List of Foreign Financial Institutions Subject to Correspondent Account or Payable-Through Account Sanctions (CAPTA List) 83 FR 30539-18 - Removal of the Sudanese Sanctions Regulations and Amendment of the Terrorism List Government Sanctions Regulations 82 FR 50313-17 - Amendment o",
+          "year": "2019",
+          "glNumbers": []
+        },
+        {
+          "citation": "81 FR 22185-16",
+          "description": "Hizballah Financial Sanctions Regulations 78 FR 38574-13 - Technical Amendments to Counter-Terrorism Sanctions Regulations Implemented by OFAC 75 FR 75904-10 - Amendments to Global Terrorism Sanctions Regulations and Terrorism Sanctions Regulations to expand the scope of authorizations in each of th",
+          "year": "2016",
+          "glNumbers": []
+        },
+        {
+          "citation": "74 FR 61036-09",
+          "description": "Global Terrorism Sanctions Regulations - Amendment to define the terms \"financial, material, or technological support\" 74 FR 23111-09 - Terrorism List Governments Sanctions Regulations - Amendment to remove countries that are no longer designated as supporting terrorism 73 FR 78631-08 - Global Terro",
+          "year": "2009",
+          "glNumbers": []
+        },
+        {
+          "citation": "72 FR 61517-07",
+          "description": "Global Terrorism Sanctions Regulations; Terrorism Sanctions Regulations; Foreign Terrorist Organizations Sanctions Regulations - Revision to authorize transactions with the Palestinian Authority 72 FR 4206-07 - Global Terrorism Sanctions Regulations - Amendment to clarify and redefine terms 71 FR 58",
+          "year": "2007",
+          "glNumbers": []
+        },
+        {
+          "citation": "71 FR 29251-06",
+          "description": "Revisions to IEEPA made by the Combating Terrorism Financing Act of 2005 71 FR 27199-06 - Global Terrorism Sanctions Regulations; Terrorism Sanctions Regulations; Foreign Terrorist Organizations Sanctions Regulations - Revisions to authorize certain transactions with the Palestinian Authority 68 FR",
+          "year": "2006",
+          "glNumbers": []
+        }
+      ],
+      "generalLicenses": [
+        {
+          "number": "25",
+          "title": "Fact Sheet: Frequently Asked Questions (FAQs) for Syria General License 25",
+          "date": "June 30, 2025",
+          "url": "https://ofac.treasury.gov/media/934311/download?inline"
+        },
+        {
+          "number": "2",
+          "title": "Counter Terrorism General License 2",
+          "date": "April 12, 2006",
+          "url": "https://ofac.treasury.gov/media/8366/download?inline"
+        },
+        {
+          "number": "3",
+          "title": "Counter Terrorism General License 3",
+          "date": "April 12, 2006",
+          "url": "https://ofac.treasury.gov/media/8371/download?inline"
+        },
+        {
+          "number": "4",
+          "title": "Counter Terrorism General License 4",
+          "date": "April 12, 2006",
+          "url": "https://ofac.treasury.gov/media/8376/download?inline"
+        },
+        {
+          "number": "5",
+          "title": "Counter Terrorism General License 5",
+          "date": "April 12, 2006",
+          "url": "https://ofac.treasury.gov/media/8381/download?inline"
+        },
+        {
+          "number": "6",
+          "title": "Counter Terrorism General License 6",
+          "date": "April 12, 2006",
+          "url": "https://ofac.treasury.gov/media/8391/download?inline"
+        },
+        {
+          "number": "7",
+          "title": "Counter Terrorism General License 7",
+          "date": "July 06, 2006",
+          "url": "https://ofac.treasury.gov/media/4816/download?inline"
+        },
+        {
+          "number": "7a",
+          "title": "Counter Terrorism General License 7a",
+          "date": "December 07, 2010",
+          "url": "https://ofac.treasury.gov/media/8396/download?inline"
+        },
+        {
+          "number": "8A",
+          "title": "Counter Terrorism General License 8A",
+          "date": "May 14, 2013",
+          "url": "https://ofac.treasury.gov/media/48841/download?inline"
+        },
+        {
+          "number": "14",
+          "title": "Counter Terrorism General License 14",
+          "date": "October 26, 2020",
+          "url": "https://ofac.treasury.gov/media/912996/download?inline"
+        },
+        {
+          "number": "15",
+          "title": "Counter Terrorism General License 15",
+          "date": "September 24, 2021",
+          "url": "https://ofac.treasury.gov/media/913001/download?inline"
+        },
+        {
+          "number": "16",
+          "title": "Counter Terrorism General License 16",
+          "date": "September 24, 2021",
+          "url": "https://ofac.treasury.gov/media/915126/download?inline"
+        },
+        {
+          "number": "17",
+          "title": "Counter Terrorism General License 17",
+          "date": "December 10, 2021",
+          "url": "https://ofac.treasury.gov/media/917126/download?inline"
+        },
+        {
+          "number": "18",
+          "title": "Counter Terrorism General License 18",
+          "date": "December 22, 2021",
+          "url": "https://ofac.treasury.gov/media/917131/download?inline"
+        },
+        {
+          "number": "19",
+          "title": "Counter Terrorism General License 19",
+          "date": "December 22, 2021",
+          "url": "https://ofac.treasury.gov/media/917136/download?inline"
+        },
+        {
+          "number": "20",
+          "title": "Counter Terrorism General License 20",
+          "date": "December 22, 2021",
+          "url": "https://ofac.treasury.gov/media/918776/download?inline"
+        },
+        {
+          "number": "22A",
+          "title": "Counter Terrorism General License 22A",
+          "date": "February 25, 2022",
+          "url": "https://ofac.treasury.gov/media/934031/download?inline"
+        },
+        {
+          "number": "23A",
+          "title": "Counter Terrorism General License 23A",
+          "date": "March 05, 2025",
+          "url": "https://ofac.treasury.gov/media/934036/download?inline"
+        },
+        {
+          "number": "24A",
+          "title": "Counter Terrorism General License 24A",
+          "date": "March 05, 2025",
+          "url": "https://ofac.treasury.gov/media/934041/download?inline"
+        },
+        {
+          "number": "26A",
+          "title": "Counter Terrorism General License 26A",
+          "date": "March 05, 2025",
+          "url": "https://ofac.treasury.gov/media/934051/download?inline"
+        },
+        {
+          "number": "28A",
+          "title": "Counter Terrorism General License 28A",
+          "date": "March 05, 2025",
+          "url": "https://ofac.treasury.gov/media/934056/download?inline"
+        },
+        {
+          "number": "134C",
+          "title": "Russia-related General License 134C",
+          "date": "May 23, 2025",
+          "url": "https://ofac.treasury.gov/media/935641/download?inline"
+        }
+      ]
+    },
+    "countering-americas-adversaries-through-sanctions-act-related-sanctions": {
+      "name": "Countering America&#039;s Adversaries Through Sanctions Act-Related Sanctions",
+      "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/countering-americas-adversaries-through-sanctions-act-related-sanctions",
+      "lastUpdated": "Feb 24, 2026",
+      "executiveOrders": [],
+      "frNotices": [],
+      "generalLicenses": []
+    },
+    "cuba-sanctions": {
+      "name": "Cuba Sanctions",
+      "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/cuba-sanctions",
+      "lastUpdated": "Jun 23, 2026",
+      "executiveOrders": [],
+      "frNotices": [
+        {
+          "citation": "89 FR 46323-24",
+          "description": "May 2024 Amendments to the Cuban Assets Control Regulations 87 FR 35088-22 - June 2022 Amendments to the Cuban Assets Control Regulations 85 FR 67988-20 - October 2020 Amendments to the Cuban Assets Control Regulations 85 FR 60068-20 - September 2020 Amendments to the Cuban Assets Control Regulation",
+          "year": "2024",
+          "glNumbers": []
+        },
+        {
+          "citation": "84 FR 47121-19",
+          "description": "September 2019 Amendments to the Cuban Assets Control Regulations 84 FR 25992-19 - June 2019 Amendments to the Cuban Assets Control Regulations 82 FR 51998-17 - November 2017 Amendments to the Cuban Assets Control Regulations 81 FR 71372-16 - October 2016 Amendments to the Cuban Assets Control Regul",
+          "year": "2019",
+          "glNumbers": []
+        },
+        {
+          "citation": "81 FR 13989-16",
+          "description": "March 2016 Amendments to the Cuban Assets Control Regulations 81 FR 4583-16 - January 2016 Amendments to the Cuban Assets Control Regulations 80 FR 56915-15 - September 2015 Amendments to the Cuban Assets Control Regulations 80 FR 34053-15 - Amendment to the Terrorism List Government Sanctions Regul",
+          "year": "2016",
+          "glNumbers": []
+        },
+        {
+          "citation": "80 FR 2291-15",
+          "description": "January 2015 Amendments to the Cuban Assets Control Regulations 77 FR 71530-12 - 2012 Amendments to the Cuban Assets Control Regulations 76 FR 5072-11 - 2011 Amendments to the Cuban Assets Control Regulations 75 FR 10997-10 - 2010 Amendments to authorize certain types of exportation 75 FR 10996-10 -",
+          "year": "2015",
+          "glNumbers": []
+        },
+        {
+          "citation": "74 FR 46000-09",
+          "description": "2009 Amendments to the Cuban Assets Control Regulations 72 FR 50047-07 - 2007 Cuban Assets Control Regulations; Burmese Sanctions Regulations; Sudanese Sanctions Regulations; Iranian Transactions Regulations - Revision to the general license for certain publishing activities 70 FR 9225-05 - 2005 Cub",
+          "year": "2009",
+          "glNumbers": []
+        },
+        {
+          "citation": "69 FR 75468-04",
+          "description": "2004 Cuban Assets Control Regulations; Sudanese Sanctions Regulations; Iranian Transactions Regulations - Revision to authorize certain publishing activities 69 FR 64632-04 - Publication of General Licenses Related to the Cuba, Burma, and Western Balkans Sanctions Programs 69 FR 33768-04 - 2004 Cuba",
+          "year": "2004",
+          "glNumbers": []
+        },
+        {
+          "citation": "68 FR 14141-03",
+          "description": "2003 Amendments to the Cuban Assets Control Regulations 68 FR 9744-03 - 2003 Correction to 68 FR 8077 - Payments to Persons Who Hold Certain Categories of Judgments Against Cuba or Iran 68 FR 8077-03 - 2003 Payments to Persons Who Hold Certain Categories of Judgments Against Cuba or Iran 67 FR 75897",
+          "year": "2003",
+          "glNumbers": []
+        },
+        {
+          "citation": "66 FR 36683-01",
+          "description": "2001 Exports of Agricultural Products, Medicines, and Medical Devices to Cuba, Sudan, Libya, and Iran; Cuba Travel-Related Transactions 65 FR 70382-00 - 2000 Payments to Persons Who Hold Certain Categories of Judgments Against Cuba or Iran Recent Actions regarding Cuba Sanctions Transnational Crimin",
+          "year": "2001",
+          "glNumbers": []
+        }
+      ],
+      "generalLicenses": [
+        {
+          "number": "1",
+          "title": "Cuba General License 1",
+          "date": "May 07, 2026",
+          "url": "https://ofac.treasury.gov/media/935571/download?inline"
+        }
+      ]
+    },
+    "sanctions-related-to-significant-malicious-cyber-enabled-activities": {
+      "name": "Cyber-Related Sanctions",
+      "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/sanctions-related-to-significant-malicious-cyber-enabled-activities",
+      "lastUpdated": "Apr 23, 2026",
+      "executiveOrders": [],
+      "frNotices": [
+        {
+          "citation": "91 FR 35142-26",
+          "description": "Cyber-Related Sanctions Regulations Web General License 2 88 FR 34443-23 - Publication of Cyber-Related Sanctions Regulations Web General License 1 and Subsequent Iterations 87 FR 78484-22 - Publication of Humanitarian Sanctions Regulations Amendment and General Licenses (Nongovernmental Organizatio",
+          "year": "2026",
+          "glNumbers": [
+            "2",
+            "1"
+          ]
+        },
+        {
+          "citation": "87 FR 54373-22",
+          "description": "Cyber-Related Sanctions Regulations 80 FR 81752-15 - Issuance of Cyber-Related Sanctions Regulations to implement Executive Order 13694 Recent Actions regarding Cyber-Related Sanctions Counter Terrorism, Counter Narcotics, and Cyber-related Designations; Issuance of Cyber-related General License Rel",
+          "year": "2022",
+          "glNumbers": []
+        }
+      ],
+      "generalLicenses": [
+        {
+          "number": "1C",
+          "title": "Cyber General License 1C",
+          "date": "April 27, 2023",
+          "url": "https://ofac.treasury.gov/media/931686/download?inline"
+        },
+        {
+          "number": "2",
+          "title": "Cyber General License 2",
+          "date": "April 27, 2023",
+          "url": "https://ofac.treasury.gov/media/935531/download?inline"
+        }
+      ]
+    },
+    "democratic-republic-of-the-congo-related-sanctions": {
+      "name": "Democratic Republic of the Congo-Related Sanctions",
+      "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/democratic-republic-of-the-congo-related-sanctions",
+      "lastUpdated": "Jun 02, 2026",
+      "executiveOrders": [],
+      "frNotices": [
+        {
+          "citation": "91 FR 24714-26",
+          "description": "Publication of a Democratic Republic of the Congo Sanctions Regulations Web General License 87 FR 78484-22 - Publication of Humanitarian Sanctions Regulations Amendment and General Licenses (Nongovernmental Organizations, Agricultural, and Medicine) 87 FR 78470-22 - Publication of United States Gove",
+          "year": "2026",
+          "glNumbers": [
+            "87"
+          ]
+        },
+        {
+          "citation": "83 FR 57308-18",
+          "description": "Amendment of the Democratic Republic of the Congo Sanctions Regulations 74 FR 25439-09 - New regulations to implement Executive Order 13413 United Nations Security Council Resolutions 1698 - Condemning the continuing illicit flow of weapons within and into the Democratic Republic of the Congo (July",
+          "year": "2018",
+          "glNumbers": []
+        }
+      ],
+      "generalLicenses": []
+    },
+    "ethiopia": {
+      "name": "Ethiopia-Related Sanctions",
+      "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/ethiopia",
+      "lastUpdated": "Feb 08, 2022",
+      "executiveOrders": [],
+      "frNotices": [
+        {
+          "citation": "88 FR 64379-23",
+          "description": "Publication of Ethiopia Sanctions Regulations Web General License 4 87 FR 7374-22 - Issuance of Ethiopia Sanctions Regulations Recent Actions regarding Ethiopia-Related Sanctions Issuance of Ethiopia Sanctions Regulations; Implementation of the Federal Civil Penalties Inflation Adjustment Act Releas",
+          "year": "2023",
+          "glNumbers": [
+            "4"
+          ]
+        }
+      ],
+      "generalLicenses": []
+    },
+    "foreign-interference-in-a-united-states-election-sanctions": {
+      "name": "Foreign Interference in a United States Election Sanctions",
+      "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/foreign-interference-in-a-united-states-election-sanctions",
+      "lastUpdated": "Dec 31, 2024",
+      "executiveOrders": [],
+      "frNotices": [
+        {
+          "citation": "87 FR 78484-22",
+          "description": "Publication of Humanitarian Sanctions Regulations Amendment and General Licenses (Nongovernmental Organizations, Agricultural, and Medicine) 87 FR 78470-22 - Publication of United States Government and International Organizations Official Business Sanctions Regulations Amendment and General Licenses",
+          "year": "2022",
+          "glNumbers": []
+        },
+        {
+          "citation": "84 FR 17950-19",
+          "description": "Foreign Interference in U.S. Elections Sanctions Regulations Recent Actions regarding Foreign Interference in a United States Election Sanctions Russia-related, Iran-related, Cyber-related, and Foreign Interference in U.S. Election Designations; Global Magnitsky Designation Release Date: Dec 31, 202",
+          "year": "2019",
+          "glNumbers": []
+        }
+      ],
+      "generalLicenses": []
+    },
+    "global-magnitsky-sanctions": {
+      "name": "Global Magnitsky Sanctions",
+      "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/global-magnitsky-sanctions",
+      "lastUpdated": "May 28, 2026",
+      "executiveOrders": [],
+      "frNotices": [
+        {
+          "citation": "89 FR 78815-24",
+          "description": "Publication of Global Magnitsky Sanctions Regulations Web General License 8 89 FR 17728-24 - Publication of Amended Global Magnitsky Sanctions Regulations 88 FR 64380-23 - Publication of Global Magnitsky Sanctions Regulations Web General Licenses 1, 2, and Subsequent Iterations 88 FR 31475-23 - Publ",
+          "year": "2024",
+          "glNumbers": [
+            "8",
+            "1"
+          ]
+        },
+        {
+          "citation": "88 FR 11815-23",
+          "description": "Publication of Global Magnitsky Sanctions Regulations Web General Licenses 5 and 6 88 FR 2522-23 - Publication of Global Magnitsky Sanctions Regulations Web General Licenses 3 and 4 87 FR 78484-22 - Publication of Humanitarian Sanctions Regulations Amendment and General Licenses (Nongovernmental Org",
+          "year": "2023",
+          "glNumbers": [
+            "5",
+            "3"
+          ]
+        },
+        {
+          "citation": "87 FR 78470-22",
+          "description": "Publication of United States Government and International Organizations Official Business Sanctions Regulations Amendment and General Licenses 83 FR 30541-18 - Implementation of the Global Magnitsky Human Rights Accountability Act and Executive Order 13818 of December 20, 2017 (\"Blocking the Propert",
+          "year": "2022",
+          "glNumbers": [
+            "83"
+          ]
+        }
+      ],
+      "generalLicenses": [
+        {
+          "number": "8",
+          "title": "Global Magnitsky General License 8",
+          "date": "September 12, 2024",
+          "url": "https://ofac.treasury.gov/media/933216/download?inline"
+        }
+      ]
+    }
+  },
   "ofsiNotices": [
     {
       "title": "UK issues largest penalty for financial sanctions breaches since Russia’s 2022 illegal invasion of Ukraine",
@@ -318,7 +1025,20 @@
       "description": "Head of the IAEA, Rafael Grossi, said the MoU stated &#039;explicitly&#039; that the agency would supervise inspections in Iran."
     }
   ],
-  "occNews": [],
+  "occNews": [
+    {
+      "title": "OCC Announces Enforcement Actions for June 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-48.html",
+      "date": "June 18, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for June 2026."
+    },
+    {
+      "title": "OCC Announces Enforcement Actions for May 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-40.html",
+      "date": "May 21, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for May 2026."
+    }
+  ],
   "economicsNews": [
     {
       "title": "Federal Reserve Board&#39;s annual bank stress test confirms that large banks are well positioned to weather a severe recession and able to continue to lend to households and businesses",
@@ -858,6 +1578,12 @@
       "description": "The US economy backs Elon Musk’s vision for AI and sending people into space"
     },
     {
+      "title": "Ronaldinho makes surprise return to football at 46",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/24/ronaldinho-makes-surprise-return-to-football-at-46?traffic_source=rss",
+      "date": "June 24, 2026",
+      "description": "Former Brazil football star Ronaldinho comes out of retirement at the age of 46, signing with Italian club Ravenna FC."
+    },
+    {
       "title": "Bosnia win 3-2, knock out Qatar to keep alive hopes of World Cup round of 32",
       "url": "https://www.aljazeera.com/sports/2026/6/24/bosnia-win-3-2-knock-out-qatar-to-keep-alive-hopes-of-world-cup-round-of-32?traffic_source=rss",
       "date": "June 24, 2026",
@@ -976,20 +1702,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/6/24/flash-floods-hit-indias-arunachal-pradesh?traffic_source=rss",
       "date": "June 24, 2026",
       "description": "Torrential rain has triggered flash floods and landslides in India&#039;s northeastern state of Arunachal Pradesh."
-    },
-    {
-      "title": "Did Brexit actually work?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/24/did-brexit-actually-work?traffic_source=rss",
-      "date": "June 24, 2026",
-      "description": "A vote that changed Britain forever. Ten years after Brexit, the UK is still grappling with its consequences."
     }
-  ],
-  "_debugProgIdx": {
-    "length": 65450,
-    "trCount": 38,
-    "tableCount": 1,
-    "hrefMentions": 50,
-    "iranIdx": 14708,
-    "snippet": "-current active\" aria-expanded=\"false\" aria-controls=\"megamenu-4\">\n                  <span>Sanctions Programs</span>\n                </button>\n              \n                                \n  \n            <ul id=\"megamenu-4\" class=\"usa-nav__submenu \" hidden>\n\n                  \n                      <li class=\" usa-nav__submenu-item treas-main-nav__submenu-item \">\n\n              \n                              <a href=\"/sanctions-programs-and-country-information/russia-related-sanctions\" class=\"\">\n                  <span>Russia-related Sanctions</span>\n                </a>\n              \n            </li>\n                      <li class=\" usa-nav__submenu-item treas-main-nav__submenu-item \">\n\n              \n                              <a href=\"/sanctions-programs-and-country-information/iran-sanctions\" class=\"\">\n                  <span>Iran Sanctions</span>\n                </a>\n              \n            </li>\n                      <li class=\" usa-nav__submenu-item treas-main-nav__submenu-item \">\n\n              \n                              <a href=\"/sanctions-programs-and-country-information/north-korea-sanctions\" class=\"\">\n                  <span>North Korea Sanctions</span>\n "
-  }
+  ]
 }
