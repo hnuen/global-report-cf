@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-06-25T17:08:36.978Z",
+  "updatedAt": "2026-06-25T17:51:21.878Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260625",
+      "code": "20260625",
+      "title": "Democratic Republic of the Congo-related Designations; Issuance of Amended Russia-related General License and Frequently Asked Questions",
+      "date": "June 25, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260624",
       "code": "20260624",
@@ -54,12 +60,6 @@
       "code": "20260605",
       "title": "Iran-related Designations; Counter Terrorism Designations Updates",
       "date": "June 05, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260604",
-      "code": "20260604",
-      "title": "Cuba Designations; Issuance of Cuba-related Frequently Asked Question",
-      "date": "June 04, 2026"
     }
   ],
   "civilPenalties": [
@@ -706,7 +706,7 @@
     "democratic-republic-of-the-congo-related-sanctions": {
       "name": "Democratic Republic of the Congo-Related Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/democratic-republic-of-the-congo-related-sanctions",
-      "lastUpdated": "Jun 02, 2026",
+      "lastUpdated": "Jun 25, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -1442,7 +1442,7 @@
     "russian-harmful-foreign-activities-sanctions": {
       "name": "Russian Harmful Foreign Activities Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions",
-      "lastUpdated": "Jun 24, 2026",
+      "lastUpdated": "Jun 25, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -1875,16 +1875,16 @@
           "url": "https://ofac.treasury.gov/media/935501/download?inline"
         },
         {
-          "number": "131F",
-          "title": "Russia-related General License 131F",
+          "number": "131G",
+          "title": "Russia-related General License 131G",
           "date": "April 14, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/935646/download?inline"
+          "url": "https://ofac.treasury.gov/media/936301/download?inline"
         },
         {
           "number": "132",
           "title": "Russia-related General License 132",
-          "date": "May 28, 2026",
+          "date": "June 25, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934776/download?inline"
         },
@@ -2824,6 +2824,18 @@
   ],
   "ajNews": [
     {
+      "title": "Ukrainian attack on Crimea kills five, Russian officials say",
+      "url": "https://www.aljazeera.com/news/2026/6/25/ukrainian-attack-on-crimea-kills-five-russian-officials-say?traffic_source=rss",
+      "date": "June 25, 2026",
+      "description": "Attacks continue on the ground as Moscow expels Romania’s consul general in a tit-for-tat move."
+    },
+    {
+      "title": "Pragmatic choice: Israel’s war backfires as Gulf backs US-Iran deal",
+      "url": "https://www.aljazeera.com/features/2026/6/25/hard-headed-pragmatism-israels-war-backfires-as-gulf-backs-us-iran-mou?traffic_source=rss",
+      "date": "June 25, 2026",
+      "description": "A war meant to isolate Iran instead deepened Gulf pragmatism and strengthened support for diplomacy."
+    },
+    {
       "title": "Venezuela struggles to respond to devastating twin earthquakes",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/6/25/venezuela-struggles-to-respond-to-devastating-twin-earthquakes?traffic_source=rss",
       "date": "June 25, 2026",
@@ -3401,6 +3413,18 @@
       "description": "Martin Lewis explains how your TV, phone, breakdown cover, insurance and more could be cheaper!"
     },
     {
+      "title": "US Supreme Court scales back Roundup cancer lawsuits in victory for company",
+      "url": "https://www.aljazeera.com/economy/2026/6/25/us-supreme-court-scales-back-roundup-cancer-lawsuits-in-victory-for-company?traffic_source=rss",
+      "date": "June 25, 2026",
+      "description": "More than 100,000 plaintiffs had filed cases in US state and federal courts alleging cancer link to weedkiller Roundup."
+    },
+    {
+      "title": "How the HPV vaccine changes how we think about cancer",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/25/how-the-hpv-vaccine-changes-how-we-think-about-cancer?traffic_source=rss",
+      "date": "June 25, 2026",
+      "description": "Al Jazeera’s Linh Nguyen explains how the HPV vaccine changes the way we think about cancer."
+    },
+    {
       "title": "Rubio: Gulf countries don’t support Strait of Hormuz tolls",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/6/25/rubio-gulf-countries-dont-support-strait-of-hormuz-tolls?traffic_source=rss",
       "date": "June 25, 2026",
@@ -3489,30 +3513,6 @@
       "url": "https://www.aljazeera.com/news/2026/6/25/we-did-regain-control-the-brexit-voters-with-no-regrets-10-years-on?traffic_source=rss",
       "date": "June 25, 2026",
       "description": "The UK may have squandered the freedoms it won, but leaving the EU was the right decision, say pro-Brexit Britons."
-    },
-    {
-      "title": "US push for unified Libyan government tests Tripoli factions",
-      "url": "https://www.aljazeera.com/features/2026/6/25/us-push-for-unified-libyan-government-tests-tripoli-factions?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "A US-backed initiative aiming to unify Libya&#039;s divided institutions tests political loyalties in the country&#039;s west."
-    },
-    {
-      "title": "Why Britain devours its prime ministers",
-      "url": "https://www.aljazeera.com/opinions/2026/6/25/why-britain-devours-its-prime-ministers?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "Weak leaders are only part of the story. Restless MPs and volatile voters have made Downing Street harder to survive."
-    },
-    {
-      "title": "Israeli forces kill Palestinian man during raid on his home",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/25/israeli-forces-kill-palestinian-man-during-raid-on-his-home?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "Israeli forces kill Palestinian man during raid on his home"
-    },
-    {
-      "title": "How minesweeping in the Strait of Hormuz works: A visual guide",
-      "url": "https://www.aljazeera.com/news/2026/6/25/how-minesweeping-in-the-strait-of-hormuz-works-a-visual-guide?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "Clearing mines is a slow, high-risk operation that involves finding and destroying them using specialised techniques."
     }
   ]
 }
