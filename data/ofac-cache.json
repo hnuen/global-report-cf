@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-26T14:38:36.625Z",
+  "updatedAt": "2026-06-26T15:08:37.156Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260626",
@@ -8,15 +8,15 @@
       "date": "June 26, 2026"
     },
     {
-      "url": "https://ofac.treasury.gov/recent-actions/20260625",
-      "code": "20260625",
-      "title": "Democratic Republic of the Congo-related Designations; Issuance of Amended Russia-related General License and Frequently Asked Questions",
-      "date": "June 25, 2026"
-    },
-    {
       "url": "https://ofac.treasury.gov/recent-actions/20260625_33",
       "code": "20260625_33",
       "title": "Issuance of Venezuela-related General License",
+      "date": "June 25, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260625",
+      "code": "20260625",
+      "title": "Democratic Republic of the Congo-related Designations; Issuance of Amended Russia-related General License and Frequently Asked Questions",
       "date": "June 25, 2026"
     },
     {
@@ -2867,6 +2867,12 @@
   ],
   "ajNews": [
     {
+      "title": "Why has the UN paused plans to evacuate sailors from the Strait of Hormuz?",
+      "url": "https://www.aljazeera.com/news/2026/6/26/why-has-the-un-paused-plans-to-evacuate-sailors-from-the-strait-of-hormuz?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "A cargo vessel had been struck by a projectile near Oman, as Iran says all ships must pass with its permission."
+    },
+    {
       "title": "Iran slams the GCC and the US for ‘interventionist’ statement: What we know",
       "url": "https://www.aljazeera.com/news/2026/6/26/iran-slams-the-gcc-and-the-us-for-interventionist-statement-what-we-know?traffic_source=rss",
       "date": "June 26, 2026",
@@ -2931,12 +2937,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/6/26/mother-gives-birth-amid-venezuela-earthquake-devastation?traffic_source=rss",
       "date": "June 26, 2026",
       "description": "Mother gives birth amid Venezuela earthquake devastation"
-    },
-    {
-      "title": "Venezuela earthquakes: Why is Caracas so vulnerable?",
-      "url": "https://www.aljazeera.com/news/2026/6/26/venezuela-earthquakes-why-is-caracas-so-vulnerable?traffic_source=rss",
-      "date": "June 26, 2026",
-      "description": "Inadequate infrastructure in Caracas due to underfunding intensified destruction from the tremors."
     }
   ],
   "occNews": [
@@ -3480,6 +3480,18 @@
       "description": "Civil service pensioners face further delays to payments."
     },
     {
+      "title": "Morocco jails 29, including politicians and sports figures, in drug trial",
+      "url": "https://www.aljazeera.com/news/2026/6/26/morocco-jails-29-including-politicians-and-sports-figures-in-drug-trial?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "Casablanca court delivers landmark verdict in &#039;Escobar of the Sahara&#039; case: up to 12 years for top figures."
+    },
+    {
+      "title": "Ex-Trump adviser Bolton pleads guilty in classified documents case",
+      "url": "https://www.aljazeera.com/news/2026/6/26/ex-trump-adviser-bolton-pleads-guilty-in-classified-documents-case?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "This is a breaking news story."
+    },
+    {
       "title": "South Korean court jails former first lady for seven years in bribery case",
       "url": "https://www.aljazeera.com/news/2026/6/26/south-korean-court-jails-former-first-lady-for-seven-years-in-bribery-case?traffic_source=rss",
       "date": "June 26, 2026",
@@ -3544,18 +3556,6 @@
       "url": "https://www.aljazeera.com/sports/2026/6/26/fifa-world-cup-friday-schedule-predictions-standings-knockout-race?traffic_source=rss",
       "date": "June 26, 2026",
       "description": "World Cup knockout places are on the line as Groups G, H and I conclude, with fixtures, predictions, and standings."
-    },
-    {
-      "title": "‘London cooking’: Why can’t the UK cope with the heat; when will it adapt?",
-      "url": "https://www.aljazeera.com/news/2026/6/26/feeling-the-heat-the-uk-is-cooking?traffic_source=rss",
-      "date": "June 26, 2026",
-      "description": "A nation used to cold, rainy weather is starting to discuss the value of overhauling its systems."
-    },
-    {
-      "title": "‘Affordability crisis’: How the Western housing crisis spiralled",
-      "url": "https://www.aljazeera.com/economy/2026/6/26/affordability-crisis-how-the-western-housing-crisis-spiralled?traffic_source=rss",
-      "date": "June 26, 2026",
-      "description": "Rising rents and prices outpacing wages provoke global debate: Is housing a basic right or an investment asset?"
     }
   ]
 }
