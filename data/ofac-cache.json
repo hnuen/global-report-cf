@@ -1,10 +1,16 @@
 {
-  "updatedAt": "2026-06-25T22:08:35.741Z",
+  "updatedAt": "2026-06-26T12:38:39.049Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260625",
       "code": "20260625",
       "title": "Democratic Republic of the Congo-related Designations; Issuance of Amended Russia-related General License and Frequently Asked Questions",
+      "date": "June 25, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260625_33",
+      "code": "20260625_33",
+      "title": "Issuance of Venezuela-related General License",
       "date": "June 25, 2026"
     },
     {
@@ -54,12 +60,6 @@
       "code": "20260610",
       "title": "Non-Proliferation Designations; Iran-related Designations; Issuance of Venezuela-related Amended General Licenses and Frequently Asked Questions",
       "date": "June 10, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260605",
-      "code": "20260605",
-      "title": "Iran-related Designations; Counter Terrorism Designations Updates",
-      "date": "June 05, 2026"
     }
   ],
   "civilPenalties": [
@@ -2189,7 +2189,7 @@
     "venezuela-related-sanctions": {
       "name": "Venezuela-Related Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/venezuela-related-sanctions",
-      "lastUpdated": "Jun 18, 2026",
+      "lastUpdated": "Jun 25, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -2611,6 +2611,13 @@
           "date": "May 05, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935736/download?inline"
+        },
+        {
+          "number": "60",
+          "title": "Venezuela General License 60",
+          "date": "June 18, 2026",
+          "expires": "",
+          "url": "https://ofac.treasury.gov/media/936396/download?inline"
         }
       ]
     },
@@ -2788,13 +2795,25 @@
     {
       "title": "Earthquake is devastating blow to Venezuela at time of uncertainty",
       "url": "https://www.bbc.co.uk/news/articles/c3vynpw7rk4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 25, 2026",
+      "date": "June 26, 2026",
       "description": "The twin quakes come less than six months after Venezuela's then-leader Nicolás Maduro was seized by US forces."
+    },
+    {
+      "title": "Aerial footage reveals destruction in coastal Venezuela",
+      "url": "https://www.bbc.co.uk/news/videos/c75y1kd16qdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 26, 2026",
+      "description": "Multi-storey buildings have collapsed in La Guaira following two major earthquakes on Wednesday."
+    },
+    {
+      "title": "Senior Ukrainian intelligence official jailed for life for spying for Russia",
+      "url": "https://www.bbc.co.uk/news/articles/cg4w3wyxzzno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 26, 2026",
+      "description": "Col Dmytro Kozyura agreed to share state secrets and systematically disclosed classified information, prosecutors say."
     },
     {
       "title": "Supreme Court allows Trump to end protected status for Haitian and Syrian immigrants",
       "url": "https://www.bbc.co.uk/news/articles/c4g8ym422lko?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 25, 2026",
+      "date": "June 26, 2026",
       "description": "The ruling opens the path for the Trump administration to deport hundreds of thousands of immigrants who have been living in the US for years."
     },
     {
@@ -2816,10 +2835,16 @@
       "description": "Rafael Grossi says the IAEA is \"working on modalities\" but an Iranian minister says such access would only be part of a final deal with the US."
     },
     {
-      "title": "Why was JD Vance in a luxury Swiss resort for talks with Iran?",
-      "url": "https://www.bbc.co.uk/news/videos/c4gyenl6nz0o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 23, 2026",
-      "description": "BBC correspondent Jessica Parker explains some key points of the direct talks between the US vice-president and Iran."
+      "title": "Moment woman pulled from rubble alive after Venezuela earthquake",
+      "url": "https://www.bbc.co.uk/news/videos/clyxgxr2672o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 26, 2026",
+      "description": "First responders and volunteers pulled a survivor from under the rubble of a collapsed building in La Guaira."
+    },
+    {
+      "title": "Rescues and prayers a day after Venezuelan earthquakes",
+      "url": "https://www.bbc.co.uk/news/videos/cz6vny382q9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 26, 2026",
+      "description": "The BBC's Vanessa Silva reports from Caracas as the city faces the aftermath of back-to-back tremors."
     },
     {
       "title": "Oil price falls back to pre-Iran war levels",
@@ -2830,94 +2855,76 @@
   ],
   "ajNews": [
     {
-      "title": "Venezuela earthquakes live: At least 188 dead as rescue efforts intensify",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/6/25/venezuela-earthquakes-live-at-least-188-dead-as-rescue-efforts-intensify?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "Venezuelans battle to rescue loved ones trapped alive beneath rubble of collapsed buildings after two major earthquakes."
+      "title": "Venezuela earthquakes: What happens in the first 72 hours?",
+      "url": "https://www.aljazeera.com/news/2026/6/26/venezuela-earthquakes-what-happens-in-the-first-72-hours?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "Experts say the first three days following a serious quake often determine how many lives can still be saved."
     },
     {
-      "title": "Venezuela rescue teams race to find earthquake survivors",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/25/venezuela-rescue-teams-race-to-find-earthquake-survivors?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "Rescue teams raced to find survivors and recover bodies after twin earthquakes rocked Venezuela on Wednesday."
+      "title": "Egypt vs Iran at World Cup 2026 – Salah, prediction, lineups, how to watch",
+      "url": "https://www.aljazeera.com/sports/2026/6/26/egypt-vs-iran-world-cup-2026-prediction-kickoff-schedule-teams?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "Mohamed Salah&#039;s Egypt and Mehdi Taremi&#039;s Iran are both in the hunt for the FIFA World Cup knockouts in Group G."
     },
     {
-      "title": "Economic losses mount as Venezuela earthquake death toll grows",
-      "url": "https://www.aljazeera.com/news/2026/6/25/economic-losses-mount-as-venezuela-earthquake-death-toll-grows?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "Initial forecasts suggest damage could cost as much as 7 percent of the South American nation&#039;s GDP."
+      "title": "IAEA demands verification of Iran nuclear ambitions amid ‘statement war’",
+      "url": "https://www.aljazeera.com/news/2026/6/26/iaea-demands-strong-verification-of-irans-nuclear-programme?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "Watchdog&#039;s call for &#039;strong system&#039; comes as US and Iran issue conflicting claims over ceasefire negotiations."
     },
     {
-      "title": "UN agency pauses Hormuz ship evacuation initiative after vessel attacked",
-      "url": "https://www.aljazeera.com/news/2026/6/25/un-agency-pauses-hormuz-ship-evacuation-initiative-after-vessel-attacked?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "Iran warns vessels to use only Tehran-approved routes as IMO halts Hormuz evacuation after ship struck."
+      "title": "Who has profited most from the war on Iran?",
+      "url": "https://www.aljazeera.com/news/2026/6/26/who-has-profited-most-from-the-war-on-iran?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "Defence contractors, energy companies and investment banks saw profits soar as war and uncertainty upended markets."
     },
     {
-      "title": "Venezuela quake leaves La Guaira in almost total devastation",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/25/venezuela-quake-leaves-la-guaira-in-almost-total-devastation?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "La Guaira, the region hardest hit by two earthquakes in Venezuela, has been left devastated."
+      "title": "Baby pulled alive from rubble after Venezuela earthquake",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/26/baby-pulled-alive-from-rubble-after-venezuela-earthquake?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "Baby pulled alive from rubble after Venezuela earthquake"
     },
     {
-      "title": "Netanyahu: ‘We will remain in Lebanon, Syria, and Gaza as long as required’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/25/netanyahu-we-will-remain-in-lebanon-syria-and-gaza-as-long-as?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "Israeli PM Benjamin Netanyahu stated that Israeli forces will maintain a presence in southern Lebanon, Syria and Gaza."
+      "title": "Russia reports downing 660 Ukrainian drones, denies seeking Belarus war aid",
+      "url": "https://www.aljazeera.com/news/2026/6/26/russia-reports-downing-660-ukrainian-drones-denies-seeking-belarus-war-aid?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "The drone attack is one of Kyiv&#039;s biggest of the war, sustaining pressure on Russia as it struggles with fuel shortages."
     },
     {
-      "title": "Ashura ceremonies intertwine faith and support for state in Iran",
-      "url": "https://www.aljazeera.com/news/2026/6/25/ashura-ceremonies-intertwine-faith-and-support-for-state-in-iran?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "State-backed Ashura events showcase leaders killed by US, Israel, seen as martyrs in the mould of Imam Hussein."
+      "title": "Mother gives birth amid Venezuela earthquake devastation",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/26/mother-gives-birth-amid-venezuela-earthquake-devastation?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "Mother gives birth amid Venezuela earthquake devastation"
     },
     {
-      "title": "Has Marco Rubio’s tour of the Gulf reassured US allies?",
-      "url": "https://www.aljazeera.com/video/inside-story/2026/6/25/has-marco-rubios-tour-of-the-gulf-reassured-us-allies?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "The US secretary of state tells Gulf Cooperation Council (GCC) states that the Iran deal will ensure their security."
+      "title": "Venezuela earthquakes: Why is Caracas so vulnerable?",
+      "url": "https://www.aljazeera.com/news/2026/6/26/venezuela-earthquakes-why-is-caracas-so-vulnerable?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "Inadequate infrastructure in Caracas due to underfunding intensified destruction from the tremors."
     },
     {
-      "title": "‘Truly terrifying’: Caracas confronts the aftermath of Venezuela earthquake",
-      "url": "https://www.aljazeera.com/news/2026/6/25/truly-terrifying-caracas-confronts-the-aftermath-of-venezuela-earthquake?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "Devastated residents recall the moment when they experienced the twin earthquakes that toppled buildings and killed 188."
+      "title": "North Korea conducts major weapons tests; South training ‘drone warriors’",
+      "url": "https://www.aljazeera.com/news/2026/6/26/north-korea-conducts-major-weapons-tests-south-training-drone-warriors?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "Kim Jong Un demands a &#039;deadly and destructive offensive posture&#039; as North Korea upgrades arsenal to reach all of South."
     },
     {
-      "title": "Krieg: For Iran control of the Strait of Hormuz is about the spoils of war",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/25/aje-onl-nf_krieg_control-of-the-strait-of-hormuz-spoils-of-war-250626w?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "Andreas Krieg said Iran possesses sufficient geographic and military leverage in the Strait of Hormuz."
+      "title": "World aids rescue effort as Venezuela quake death toll hits 235",
+      "url": "https://www.aljazeera.com/news/2026/6/26/neighbours-aid-rescue-effort-as-venezuela-quake-death-toll-hits-235?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "Rescuers and humanitarian aid are flooding in from across the Americas as hospitals fill up with patients."
     },
     {
-      "title": "‘Concrete breaking off walls’: Survivors describe Venezuela’s earthquakes",
-      "url": "https://www.aljazeera.com/news/2026/6/25/concrete-breaking-off-walls-survivors-describe-venezuelas-earthquakes?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "The Venezuelan government has loosened restrictions on social media as residents search for missing loved ones."
+      "title": "Iran war day 119: Israel hits Lebanon as IAEA says it will return to Iran",
+      "url": "https://www.aljazeera.com/news/2026/6/26/iran-war-day-119-israel-hits-lebanon-as-iaea-says-it-will-return-to-iran?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "Israeli and Lebanese delegations will continue their talks on Friday."
     },
     {
-      "title": "Russia set to return to FIFA competition at inaugural U-15 World Cup",
-      "url": "https://www.aljazeera.com/sports/2026/6/25/russia-set-to-return-to-fifa-competition-as-inaugural-u-15-world-cup?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "FIFA&#039;s inaugural U-15 World Cup in October is opened to all of its member associates, paving way for Russia&#039;s return."
-    },
-    {
-      "title": "Ukrainian attack on Crimea kills five, Russian officials say",
-      "url": "https://www.aljazeera.com/news/2026/6/25/ukrainian-attack-on-crimea-kills-five-russian-officials-say?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "Attacks continue on the ground as Moscow expels Romania’s consul general in a tit-for-tat move."
-    },
-    {
-      "title": "Pragmatic choice: Israel’s war backfires as Gulf backs US-Iran deal",
-      "url": "https://www.aljazeera.com/features/2026/6/25/hard-headed-pragmatism-israels-war-backfires-as-gulf-backs-us-iran-mou?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "A war meant to isolate Iran instead deepened Gulf pragmatism and strengthened support for diplomacy."
-    },
-    {
-      "title": "Venezuela struggles to respond to devastating twin earthquakes",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/25/venezuela-struggles-to-respond-to-devastating-twin-earthquakes?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "Noris Soto says authorities appear to lack a clear response plan in the aftermath of two powerful earthquakes."
+      "title": "US ends deportation protections (TPS) for Haitians and Syrians",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/26/us-ends-deportation-protections-tps-for-haitians-and-syrians?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "The US Supreme Court has sided with the Trump administration in its bid to end Temporary Protected Status (TPS)."
     }
   ],
   "occNews": [
@@ -3029,22 +3036,46 @@
   ],
   "regionsNews": [
     {
-      "title": "People flee as building collapses on Caracas outskirts",
-      "url": "https://www.bbc.co.uk/news/videos/c78y1e3606vo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 25, 2026",
-      "description": "The capital and its surrounding areas have seen some of the worst damage from the 7.2 and 7.5 quakes, which hit a minute apart."
-    },
-    {
-      "title": "France warns even young people's health at risk as Europe's heatwave shifts east",
-      "url": "https://www.bbc.co.uk/news/articles/cwy0pdq89zno?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 25, 2026",
-      "description": "Temperatures in Germany could hit 40C in some areas while French officials say deaths linked to the heat are being seen among young people."
-    },
-    {
       "title": "UN pauses Strait of Hormuz evacuation plan after cargo ship attacked",
       "url": "https://www.bbc.co.uk/news/articles/cjwg9np904qo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 25, 2026",
+      "date": "June 26, 2026",
       "description": "The ship was reportedly struck by an \"unknown projectile\" near Oman but no casualties were reported."
+    },
+    {
+      "title": "Christmas market attacker jailed for life for murdering six in Germany",
+      "url": "https://www.bbc.co.uk/news/articles/cy06y63y6lno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 26, 2026",
+      "description": "A nine-year-old and five women were killed when Taleb Al-Abdulmohsen drove into the market in 2024."
+    },
+    {
+      "title": "Reflecting Pool liner cut with sharp knife or razor, National Park Service says",
+      "url": "https://www.bbc.co.uk/news/articles/cn8qxz6qypyo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 26, 2026",
+      "description": "Earlier in the week Donald Trump blamed vandals for \"a 300 foot long gash\" in the pool and accused someone of putting fertiliser in the water."
+    },
+    {
+      "title": "Asia stock markets slide as tech shares slump",
+      "url": "https://www.bbc.co.uk/news/articles/ce8jz40k00ro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 26, 2026",
+      "description": "Trading on South Korea's Kospi index was halted for the third time this week to prevent panic selling."
+    },
+    {
+      "title": "Housing board votes to freeze New York rents in victory for Mamdani",
+      "url": "https://www.bbc.co.uk/news/articles/cn947pxxz4yo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 26, 2026",
+      "description": "The decision was welcomed by many tenants - but landlords fear it will worsen housing conditions."
+    },
+    {
+      "title": "Row over alleged theft of donations from India's landmark Ram temple",
+      "url": "https://www.bbc.co.uk/news/articles/cn07gl6wx6go?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 26, 2026",
+      "description": "Questions are being raised over the handling of cash, valuable jewellery, gold and silver offered by devotees."
+    },
+    {
+      "title": "Paris restricts alcohol consumption and sales as Europe's heatwave shifts east",
+      "url": "https://www.bbc.co.uk/news/articles/cwy0pdq89zno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 26, 2026",
+      "description": "Temperatures in Germany could hit 40C in some areas while French officials bring in alcohol restrictions to ease pressure on hospitals."
     },
     {
       "title": "Women alleging rape and sexual assault in France call to abolish statute of limitations",
@@ -3113,6 +3144,24 @@
       "description": "Sevastopol's Moscow-installed governor warns there will be no electricity in some areas until the evening."
     },
     {
+      "title": "The abundant but expensive energy source that's under your feet",
+      "url": "https://www.bbc.co.uk/news/articles/cj3gj1n8yz8o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 26, 2026",
+      "description": "Start-ups are taking fresh approaches to geothermal energy, but will the economics work?"
+    },
+    {
+      "title": "Why the trail went cold in Nancy Guthrie case",
+      "url": "https://www.bbc.co.uk/news/articles/cy064kg3n0ko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 25, 2026",
+      "description": "The lack of a breakthrough in the abduction of a famous TV anchor's mother is puzzling given the huge publicity."
+    },
+    {
+      "title": "A Chinese box office hit sparks a debate about identity in Singapore",
+      "url": "https://www.bbc.co.uk/news/articles/c5yzv23g75eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 25, 2026",
+      "description": "A nostalgic tale about family, hope and hardship has opened an unexpected conversation."
+    },
+    {
       "title": "Could a Madison Square Garden wedding be the love story of Taylor Swift's wildest dreams?",
       "url": "https://www.bbc.co.uk/news/articles/cy73e5xek8xo?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 25, 2026",
@@ -3131,24 +3180,6 @@
       "description": "Kerala is searching for new ways to care for its ageing population as migration leaves more elderly people living alone."
     },
     {
-      "title": "How to cope in a heatwave - according to you",
-      "url": "https://www.bbc.co.uk/news/articles/cze9w9xnprno?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 25, 2026",
-      "description": "From what to wear to getting a restful night's sleep, you share your tips for beating the heat."
-    },
-    {
-      "title": "Find out which university degrees could earn you most across your lifetime",
-      "url": "https://www.bbc.co.uk/news/articles/c892dv0qy2jo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 25, 2026",
-      "description": "New data suggests which university degrees have the highest and lowest financial returns over a lifetime."
-    },
-    {
-      "title": "The woman who fought for Pakistan's disappeared men now faces life in jail",
-      "url": "https://www.bbc.co.uk/news/articles/c0ry07x87kvo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 24, 2026",
-      "description": "The Nobel Peace Prize nominee has spent years demanding answers about the missing in Balochistan province."
-    },
-    {
       "title": "Watch: Moment earthquakes hit airport and buildings in Caracas",
       "url": "https://www.bbc.co.uk/news/videos/cvgl42lm8dwo?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 24, 2026",
@@ -3161,10 +3192,46 @@
       "description": "France, Spain and Italy, have been hardest hit by the heatwave so far."
     },
     {
-      "title": "'We're begging' - Savannah Guthrie pleads for help as details of her mother’s case emerge",
-      "url": "https://www.bbc.co.uk/news/videos/cjdg1enzrk5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 23, 2026",
-      "description": "Savannah Guthrie spoke on NBC's Today show about a note sent to the media in February regarding her missing mother, Nancy Guthrie, which claimed she had died."
+      "title": "Power banks and vapes now biggest fire risk on planes",
+      "url": "https://www.bbc.co.uk/news/articles/cly716qd146o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 25, 2026",
+      "description": "Lithium battery fires are the number one safety risk to aircraft, yet the number of devices found in hold bags has nearly doubled in a year."
+    },
+    {
+      "title": "I'm back at home again after uni - here's how I'm making it work",
+      "url": "https://www.bbc.co.uk/news/articles/cg53q6dl0plo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 25, 2026",
+      "description": "Rising costs are forcing more young adults to live with their parents, here's how not to come to blows."
+    },
+    {
+      "title": "Asia stock markets slide as tech shares slump",
+      "url": "https://www.bbc.co.uk/news/articles/ce8jz40k00ro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 26, 2026",
+      "description": "Trading on South Korea's Kospi index was halted for the third time this week to prevent panic selling."
+    },
+    {
+      "title": "Who could be the UK's next chancellor?",
+      "url": "https://www.bbc.co.uk/news/articles/c36yj4pn7jdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 26, 2026",
+      "description": "The prime minister's resignation has fired the starting gun on the race to be in charge of the UK's finances."
+    },
+    {
+      "title": "Teens who hacked TfL were known to police years before cyber-attack",
+      "url": "https://www.bbc.co.uk/news/articles/cx2kx8jr244o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 25, 2026",
+      "description": "Owen Flowers and Thalha Jubair were convicted for their roles in the attack, which led to large costs for Transport for London."
+    },
+    {
+      "title": "The abundant but expensive energy source that's under your feet",
+      "url": "https://www.bbc.co.uk/news/articles/cj3gj1n8yz8o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 26, 2026",
+      "description": "Start-ups are taking fresh approaches to geothermal energy, but will the economics work?"
+    },
+    {
+      "title": "Apple hikes some prices by nearly 20% while Xbox raises console cost",
+      "url": "https://www.bbc.co.uk/news/articles/c3ryj81ywlro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 25, 2026",
+      "description": "Apple said it had \"never seen a component price increase this much, this quickly\"."
     },
     {
       "title": "Ryanair says it will reluctantly not charge parents to sit next to children",
@@ -3179,22 +3246,10 @@
       "description": "Experts say support is available as total debt and arrears to suppliers hit a new record."
     },
     {
-      "title": "Apple hikes some prices by nearly 20% while Xbox raises console cost",
-      "url": "https://www.bbc.co.uk/news/articles/c3ryj81ywlro?at_medium=RSS&amp;at_campaign=rss",
+      "title": "IBM hails new 'block of flats' design breakthrough for ultra tiny chips",
+      "url": "https://www.bbc.co.uk/news/articles/cvg7vpyn5pxo?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 25, 2026",
-      "description": "Apple said it had \"never seen a component price increase this much, this quickly\"."
-    },
-    {
-      "title": "Reeves urges Burnham to 'stick to what I'm doing' on economy",
-      "url": "https://www.bbc.co.uk/news/articles/cvgm9mj262qo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 25, 2026",
-      "description": "The chancellor throws her support behind the MP for Makerfield despite reports he could demote her if he becomes PM."
-    },
-    {
-      "title": "The legal fight to get equal pay for Germany's disabled workers",
-      "url": "https://www.bbc.co.uk/news/articles/cwy0v1d24elo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 24, 2026",
-      "description": "A test case is seeking the minimum wage for 300,000 disabled people who currently get paid less."
+      "description": "IBM says it has created the world's first known chip tech below 1 nanometre - but it will be some time before it's ready for production."
     },
     {
       "title": "I've spent 30 years in recruitment - this is how to get a job",
@@ -3203,16 +3258,16 @@
       "description": "The recruitment agency boss shares his tips on getting noticed in a tougher jobs market."
     },
     {
+      "title": "Reeves urges Burnham to 'stick to what I'm doing' on economy",
+      "url": "https://www.bbc.co.uk/news/articles/cvgm9mj262qo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 25, 2026",
+      "description": "The chancellor throws her support behind the MP for Makerfield despite reports he could demote her if he becomes PM."
+    },
+    {
       "title": "Price cuts on family summer days out come into force",
       "url": "https://www.bbc.co.uk/news/articles/cwy05rnlpe9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 25, 2026",
       "description": "The government is reducing VAT from 20% to 5% on attractions and kids' meals as schools begin to break-up."
-    },
-    {
-      "title": "IBM hails new 'block of flats' design breakthrough for ultra tiny chips",
-      "url": "https://www.bbc.co.uk/news/articles/cvg7vpyn5pxo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 25, 2026",
-      "description": "IBM says it has created the world's first known chip tech below 1 nanometre - but it will be some time before it's ready for production."
     },
     {
       "title": "EasyJet rejects fourth takeover offer",
@@ -3263,64 +3318,10 @@
       "description": "The Baroness and her husband Doug Barrowman are among individuals being sued in a bid to recover some of the money owed to the government by the business."
     },
     {
-      "title": "Texas family sues Tesla over fatal crash into home",
-      "url": "https://www.bbc.co.uk/news/articles/c8x2rzke05yo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "The legal fight to get equal pay for Germany's disabled workers",
+      "url": "https://www.bbc.co.uk/news/articles/cwy0v1d24elo?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 24, 2026",
-      "description": "A woman in her 70s was killed after a Tesla crashed directly into the family’s home."
-    },
-    {
-      "title": "Elon Musk loses trillionaire status as global tech rout hits SpaceX",
-      "url": "https://www.bbc.co.uk/news/articles/c8j2m2p8dgmo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 24, 2026",
-      "description": "Elon Musk lost his trillionaire status on Tuesday after a brutal global tech rout erased billions from his wealth."
-    },
-    {
-      "title": "The economic challenges facing the next prime minister",
-      "url": "https://www.bbc.co.uk/news/articles/crkvj0ngzexo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 23, 2026",
-      "description": "Though the person in charge of the country will change, the fiscal issues remain the same."
-    },
-    {
-      "title": "Who could be the UK's next chancellor?",
-      "url": "https://www.bbc.co.uk/news/articles/c36yj4pn7jdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 24, 2026",
-      "description": "The prime minister's resignation has fired the starting gun on the race to be in charge of the UK's finances."
-    },
-    {
-      "title": "Trump accuses big oil firms of price-gouging drivers",
-      "url": "https://www.bbc.co.uk/news/articles/cly790j1j6ro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 25, 2026",
-      "description": "The US president named Shell, ExxonMobil, BP and Chevron when talking to reporters about a probe into fuel prices."
-    },
-    {
-      "title": "Council tax debt rises to £9bn but here's how you can get help",
-      "url": "https://www.bbc.co.uk/news/articles/c0my4gwe3y2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 24, 2026",
-      "description": "New figures show billions of pounds is owed to councils but the government has plans to reform the system."
-    },
-    {
-      "title": "Train passed red signal before fatal crash - report",
-      "url": "https://www.bbc.co.uk/news/articles/cly90nqpryko?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 24, 2026",
-      "description": "A preliminary report from the Independent Rail Accident Investigation Branch is published."
-    },
-    {
-      "title": "Ten years on, Brexit's economic impact is becoming clearer",
-      "url": "https://www.bbc.co.uk/news/articles/cyv0m164m84o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 23, 2026",
-      "description": "A decade ago, many economists argued the UK would sustain longer-term economic damage by leaving the EU. So what did happen?"
-    },
-    {
-      "title": "Why are there holiday delay warnings over the EU's new border system?",
-      "url": "https://www.bbc.co.uk/news/articles/c39rkpe8mj2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 24, 2026",
-      "description": "The EU's much-delayed Entry/Exit System will change the way UK passengers travel to 29 countries."
-    },
-    {
-      "title": "Burnham likely to replace Reeves if he becomes PM",
-      "url": "https://www.bbc.co.uk/news/articles/cwyl91qlyr1o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 24, 2026",
-      "description": "Rachel Reeves would be offered a more junior cabinet role, the BBC understands."
+      "description": "A test case is seeking the minimum wage for 300,000 disabled people who currently get paid less."
     },
     {
       "title": "Do you know your 'sweat score'? The rise of hydration tech",
@@ -3383,16 +3384,22 @@
       "description": "The European country had 9.1 million international visitors in April, the most ever for that month."
     },
     {
-      "title": "The ancient trick making food waste useful and tasty",
-      "url": "https://www.bbc.co.uk/news/articles/c78kmj2kyklo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 4, 2026",
-      "description": "Instead of throwing away byproducts of food processing, fermentation is making them valuable."
+      "title": "Record temperatures drives up home air conditioning sales",
+      "url": "https://www.bbc.co.uk/news/articles/c1wyl2glg93o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 26, 2026",
+      "description": "Companies see inquiries surge during heatwaves as UK households look to cool down their homes."
     },
     {
-      "title": "'By the grace of God': Miners dig on as lab-grown diamonds change market",
-      "url": "https://www.bbc.co.uk/news/articles/czx2jqvwp7go?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 3, 2026",
-      "description": "The rising popularity of lab-grown diamonds heaps pressure on those hunting for the natural gems."
+      "title": "Charity celebrates 50 years of 'transformative' holidays",
+      "url": "https://www.bbc.co.uk/news/articles/cy4ejeq40nvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 26, 2026",
+      "description": "Sheffield Family Holiday Fund provide much-needed holidays for families facing adversity."
+    },
+    {
+      "title": "I'm back at home again after uni - here's how I'm making it work",
+      "url": "https://www.bbc.co.uk/news/articles/cg53q6dl0plo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 25, 2026",
+      "description": "Rising costs are forcing more young adults to live with their parents, here's how not to come to blows."
     },
     {
       "title": "How you can save money on your energy bill as debts rise",
@@ -3405,24 +3412,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cwy05rnlpe9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 25, 2026",
       "description": "The government is reducing VAT from 20% to 5% on attractions and kids' meals as schools begin to break-up."
-    },
-    {
-      "title": "Attraction tax cut welcomed by businesses",
-      "url": "https://www.bbc.co.uk/news/articles/c3vyz7l9x7yo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 25, 2026",
-      "description": "VAT will be cut on children's meals and tickets to some attractions across Surrey and the UK."
-    },
-    {
-      "title": "Council tax debt rises to £9bn but here's how you can get help",
-      "url": "https://www.bbc.co.uk/news/articles/c0my4gwe3y2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 24, 2026",
-      "description": "New figures show billions of pounds is owed to councils but the government has plans to reform the system."
-    },
-    {
-      "title": "Tension 'likely' in new government - ex-chief",
-      "url": "https://www.bbc.co.uk/news/articles/cn0729ny7edo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 23, 2026",
-      "description": "Kristina Moore says she expects to see \"some quite considerable clashes\" between senior politicians."
     },
     {
       "title": "The furious dispute over what caused Air India flight 171 to crash",
@@ -3479,64 +3468,82 @@
       "description": "Martin Lewis explains how your TV, phone, breakdown cover, insurance and more could be cheaper!"
     },
     {
-      "title": "WNBA: Alyssa Thomas suspended one game for fist into Cailtin Clark’s throat",
-      "url": "https://www.aljazeera.com/sports/2026/6/25/wnba-alyssa-thomas-suspended-one-game-for-fist-into-cailtin-clarks-throat?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "Both players were on the floor when Thomas pushed her fist into Clark&#039;s throat before getting up and stepping over her."
+      "title": "The hands behind the beautiful game",
+      "url": "https://www.aljazeera.com/features/longform/2026/6/26/the-hands-behind-the-beautiful-game?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "Pakistan&#039;s last hand-stitched football makers keep a fading craft alive as machines reshape the world&#039;s game."
     },
     {
-      "title": "Dutch fans party in Kansas City ahead of World Cup clash with Tunisia",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/25/aje-onl-nf_dutch-fans-party-in-kansas-ahead-of-tunisia-match-250626?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "Netherlands supporters got the party going in Kansas City, US ahead of their final group stage game against Tunisia."
+      "title": "New synthetic drugs, cocaine and meth booming, warns UN",
+      "url": "https://www.aljazeera.com/news/2026/6/26/new-synthetic-drugs-cocaine-and-meth-booming-warns-un?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "A spike in potent synthetic drugs comes as manufacturers respond to geopolitical changes and look to increase profits."
     },
     {
-      "title": "Kenya’s Kandie gets seven-year ban for doping violations",
-      "url": "https://www.aljazeera.com/sports/2026/6/25/kenyas-kandie-gets-seven-year-ban-for-doping-violations?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "Kibiwott Kandie initially faced an eight-year ban split evenly across two violations, but received a one-year reduction."
+      "title": "Climate change the culprit for Europe’s ‘most severe’ heatwave: Report",
+      "url": "https://www.aljazeera.com/news/2026/6/26/climate-change-the-culprit-for-europes-most-severe-heatwave-report?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "The extreme June temperatures would have been &#039;virtually impossible&#039; 50 years ago, says World Weather Attribution group."
     },
     {
-      "title": "Kenya arrests more than 350 as people mark anniversary of deadly protests",
-      "url": "https://www.aljazeera.com/news/2026/6/25/kenya-arrests-more-than-350-as-people-mark-anniversary-of-deadly-protests?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "Demonstrators mark the second anniversary of a 2024 protest where 60 people were killed by security forces."
+      "title": "Can Europe’s historic cities survive a warming climate?",
+      "url": "https://www.aljazeera.com/opinions/2026/6/26/can-europes-historic-cities-survive-a-warming-climate?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "Heatwaves are forcing the continent to choose between preserving the past and adapting for the future."
     },
     {
-      "title": "Bedouins protest Israel’s home demolition policy in the Negev desert",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/25/bedouins-protest-israels-home-demolition-policy-in-the-negev-desert?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "Bedouins protest Israel’s home demolition policy in the Negev desert"
+      "title": "FIFA World Cup: Friday schedule, predictions, standings, knockout race",
+      "url": "https://www.aljazeera.com/sports/2026/6/26/fifa-world-cup-friday-schedule-predictions-standings-knockout-race?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "World Cup knockout places are on the line as Groups G, H and I conclude, with fixtures, predictions, and standings."
     },
     {
-      "title": "US Supreme Court scales back Roundup cancer lawsuits in victory for company",
-      "url": "https://www.aljazeera.com/economy/2026/6/25/us-supreme-court-scales-back-roundup-cancer-lawsuits-in-victory-for-company?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "More than 100,000 plaintiffs had filed cases in US state and federal courts alleging cancer link to weedkiller Roundup."
+      "title": "‘London cooking’: Why can’t the UK cope with the heat; when will it adapt?",
+      "url": "https://www.aljazeera.com/news/2026/6/26/feeling-the-heat-the-uk-is-cooking?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "A nation used to cold, rainy weather is starting to discuss the value of overhauling its systems."
     },
     {
-      "title": "How the HPV vaccine changes how we think about cancer",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/25/how-the-hpv-vaccine-changes-how-we-think-about-cancer?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "Al Jazeera’s Linh Nguyen explains how the HPV vaccine changes the way we think about cancer."
+      "title": "‘Affordability crisis’: How the Western housing crisis spiralled",
+      "url": "https://www.aljazeera.com/economy/2026/6/26/affordability-crisis-how-the-western-housing-crisis-spiralled?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "Rising rents and prices outpacing wages provoke global debate: Is housing a basic right or an investment asset?"
     },
     {
-      "title": "Rubio: Gulf countries don’t support Strait of Hormuz tolls",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/25/rubio-gulf-countries-dont-support-strait-of-hormuz-tolls?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "US Secretary of State Marco Rubio said all Gulf countries oppose a toll in the Strait of Hormuz."
+      "title": "Watch World Cup Day 15: Netherlands, Australia advance; Curacao eliminated",
+      "url": "https://www.aljazeera.com/video/2026/6/26/video-world-cup-2026-highlights?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "Latest match highlights, reaction and previews from the FIFA World Cup 2026 in North America."
     },
     {
-      "title": "Israeli forces shoot and kill Palestinians in occupied West Bank, Gaza",
-      "url": "https://www.aljazeera.com/news/2026/6/25/israeli-forces-shoot-and-kill-palestinians-in-occupied-west-bank-gaza?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "The deaths come amid escalating Israeli military raids and settler attacks across the occupied territories."
+      "title": "Driver plows through Mexico World Cup crowd",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/26/driver-plows-through-mexico-world-cup-crowd?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "Driver plows through Mexico World Cup crowd"
     },
     {
-      "title": "US Supreme Court paves way for government to block asylum seekers at border",
-      "url": "https://www.aljazeera.com/news/2026/6/25/us-supreme-court-paves-way-for-government-to-block-asylum-seekers-at-border?traffic_source=rss",
-      "date": "June 25, 2026",
-      "description": "Liberal justices say the ruling &#039;circumvents&#039; US law by allowing agents to prevent asylum seekers from filing a claim."
+      "title": "Turkiye beat US with stoppage-time goal in World Cup dead rubber",
+      "url": "https://www.aljazeera.com/sports/2026/6/26/turkiye-usa-fifa-world-cup-2026-ayhan-guler-yilmaz-trusty-berhalter-pulisic?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "Kaan Ayhan scored the winner late in stoppage time as Turkiye handed the US their first defeat of 2026 FIFA World Cup."
+    },
+    {
+      "title": "Which teams have qualified for the World Cup 2026 knockouts, round of 32?",
+      "url": "https://www.aljazeera.com/sports/2026/6/26/which-teams-have-qualified-for-the-world-cup-2026-knockouts-round-of-32?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "The 2026 FIFA World Cup knockout stage format, criteria and rules for qualification. Find out who&#039;s in and who&#039;s out."
+    },
+    {
+      "title": "Apple, Microsoft hike prices over surging chip costs",
+      "url": "https://www.aljazeera.com/economy/2026/6/26/apple-microsoft-hike-prices-over-surging-chip-costs?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "Tech giants roll out steep price increases amid shortage of memory chips used to power AI."
+    },
+    {
+      "title": "Australia reach World Cup knockouts after gritty draw with Paraguay",
+      "url": "https://www.aljazeera.com/sports/2026/6/26/australia-paraguay-fifa-world-cup-2026-score-report-socceroos?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "The Socceroos finish second in Group D with four points and are through to the 2026 FIFA World Cup round of 32."
     }
   ]
 }
