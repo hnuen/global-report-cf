@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-26T21:08:37.104Z",
+  "updatedAt": "2026-06-26T21:38:35.029Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260626",
@@ -2793,16 +2793,22 @@
   "unNotices": [],
   "bbcNews": [
     {
+      "title": "Venezuela earthquakes kill 920 people as families desperate for news",
+      "url": "https://www.bbc.co.uk/news/articles/c39y79g7gzko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 26, 2026",
+      "description": "Hundreds are still feared trapped under the rubble, as international rescue teams start to arrive."
+    },
+    {
       "title": "Mother dies saving daughter in Venezuela earthquakes",
       "url": "https://www.bbc.co.uk/news/articles/c0jydyz8z6jo?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 26, 2026",
       "description": "Héctor Bello wrote on social media that \"you gave your own life for our daughter\" in the quakes which killed at least 920 people."
     },
     {
-      "title": "Trump accuses Iran of ceasefire breach after Strait of Hormuz attack",
-      "url": "https://www.bbc.co.uk/news/articles/ckg54g0ry0vo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "US conducts strikes on Iran after attack on cargo ship",
+      "url": "https://www.bbc.co.uk/news/articles/ckg590wqxwpo?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 26, 2026",
-      "description": "A Singapore-flagged ship was struck crossing the waterway on Thursday, prompting a large-scale evacuation to be paused."
+      "description": "US Central Command says it has struck missile and drone storage facilities and coastal radar positions."
     },
     {
       "title": "Senior Ukrainian intelligence official jailed for life for spying for Russia",
@@ -2879,6 +2885,12 @@
   ],
   "ajNews": [
     {
+      "title": "US strikes Iran in response to drone strike on commercial ship",
+      "url": "https://www.aljazeera.com/news/2026/6/26/us-strikes-iran-in-response-to-drone-strike-on-commercial-ship?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "The new strikes come in response to an Iranian drone attack on the Ever Lovely in the Strait of Hormuz."
+    },
+    {
       "title": "How much disaster aid will the US provide to Venezuela?",
       "url": "https://www.aljazeera.com/video/inside-story/2026/6/26/how-much-disaster-aid-will-the-u-s-provide-to-venezuela?traffic_source=rss",
       "date": "June 26, 2026",
@@ -2888,7 +2900,7 @@
       "title": "Trump blames Iran for ‘foolish’ strike on cargo ship in Strait of Hormuz",
       "url": "https://www.aljazeera.com/news/2026/6/26/trump-blames-iran-for-foolish-strike-on-cargo-ship-in-strait-of-hormuz?traffic_source=rss",
       "date": "June 26, 2026",
-      "description": "Fragile US-Iran ceasefire tested as drone strike off Oman draws stern warning from the US president."
+      "description": "US Central Command forces conduct strikes against Iran in &#039;response&#039; to attack on commercial ship, Ever Lovely."
     },
     {
       "title": "Advocates warn of wide-ranging implications of US Supreme Court TPS ruling",
@@ -2903,7 +2915,20 @@
       "description": "Rescue teams in Venezuela are racing to find earthquake survivors as the critical 72-hour &quot;golden window&quot; nears."
     }
   ],
-  "occNews": [],
+  "occNews": [
+    {
+      "title": "OCC Announces Enforcement Actions for June 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-48.html",
+      "date": "June 18, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for June 2026."
+    },
+    {
+      "title": "OCC Announces Enforcement Actions for May 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-40.html",
+      "date": "May 21, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for May 2026."
+    }
+  ],
   "economicsNews": [
     {
       "title": "Federal Reserve Board&#39;s annual bank stress test confirms that large banks are well positioned to weather a severe recession and able to continue to lend to households and businesses",
@@ -2999,28 +3024,28 @@
   ],
   "regionsNews": [
     {
-      "title": "DR Congo takes Rwanda to international court over decades of conflict",
-      "url": "https://www.bbc.co.uk/news/articles/c8724zn3491o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 26, 2026",
-      "description": "Kinshasa accuses its neighbour of committing various violations since the 1994 Rwanda genocide."
-    },
-    {
       "title": "Europe's deadly heatwave breaks German record and halts public events",
       "url": "https://www.bbc.co.uk/news/articles/cx2knzzwprgo?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 26, 2026",
       "description": "Germany's highest ever temperature of 41.3C is recorded provisionally in Saarbrücken, over the border from France."
     },
     {
-      "title": "Ex-Trump adviser John Bolton pleads guilty to mishandling classified documents",
-      "url": "https://www.bbc.co.uk/news/articles/czxqwg4nrvlo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "DR Congo takes Rwanda to international court over decades of conflict",
+      "url": "https://www.bbc.co.uk/news/articles/c8724zn3491o?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 26, 2026",
-      "description": "Bolton faces a prison sentence of up to five years and has agreed to pay $2.25m in fine, prosecutors say."
+      "description": "Kinshasa accuses its neighbour of committing various violations since the 1994 Rwanda genocide."
     },
     {
       "title": "Israel and Lebanon sign framework agreement after US-brokered talks",
       "url": "https://www.bbc.co.uk/news/articles/cg5315n1v5go?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 26, 2026",
       "description": "Previous ceasefires between Israel and Hezbollah have still seen near-daily cross-border strikes"
+    },
+    {
+      "title": "Ex-Trump adviser John Bolton pleads guilty to mishandling classified documents",
+      "url": "https://www.bbc.co.uk/news/articles/czxqwg4nrvlo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 26, 2026",
+      "description": "Bolton faces a prison sentence of up to five years and has agreed to pay $2.25m in fine, prosecutors say."
     },
     {
       "title": "Christmas market attacker jailed for life for murdering six in Germany",
@@ -3419,6 +3444,30 @@
       "description": "Luis von Ahn co-founded the #1 language app after selling reCAPTCHA to Google"
     },
     {
+      "title": "Dembele scores hat-trick as France beat Norway 4-1 at World Cup 2026",
+      "url": "https://www.aljazeera.com/sports/2026/6/26/dembele-scores-hat-trick-as-france-beat-norway-4-1-at-world-cup-2026?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "Dembele&#039;s ⁠first-half hat-trick helps France to a 4-1 win over second-string Norway ⁠to finish top of Group I."
+    },
+    {
+      "title": "Thousands of migrants flee South Africa ahead of anti-immigrant protests",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/26/thousands-of-migrants-flee-south-africa-ahead-of-anti-immigrant-protests?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "Thousands of migrants flee South Africa ahead of anti-immigrant protests"
+    },
+    {
+      "title": "Burkina Faso cuts diplomatic ties with former colonial ruler France",
+      "url": "https://www.aljazeera.com/news/2026/6/26/burkina-faso-cuts-diplomatic-ties-with-former-colonial-ruler-france?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "The military government, in power since 2022 coup, accused France of having &#039;neo-colonial ambitions&#039;."
+    },
+    {
+      "title": "UN rights chief calls for probe into migrant deaths in US detention centres",
+      "url": "https://www.aljazeera.com/news/2026/6/26/un-rights-chief-calls-for-probe-into-migrant-deaths-in-us-detention-centres?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "Deaths of immigrants held in US detention centres have surged during Donald Trump&#039;s second term."
+    },
+    {
       "title": "Mistrial declared in federal arson case related to California wildfires",
       "url": "https://www.aljazeera.com/news/2026/6/26/mistrial-declared-in-federal-arson-case-related-to-california-wildfires?traffic_source=rss",
       "date": "June 26, 2026",
@@ -3513,36 +3562,6 @@
       "url": "https://www.aljazeera.com/video/the-take-2/2026/6/26/how-did-colombias-election-split-a-nation-in-two?traffic_source=rss",
       "date": "June 26, 2026",
       "description": "Colombia elected its first right-wing president in years by a razor-thin margin."
-    },
-    {
-      "title": "‘This time’: The World Cup commercials capturing Egypt’s soaring hopes",
-      "url": "https://www.aljazeera.com/news/2026/6/26/this-time-the-world-cup-commercials-capturing-egypts-soaring-hopes?traffic_source=rss",
-      "date": "June 26, 2026",
-      "description": "The advertisements play on Egypt&#039;s poor World Cup record — and the belief that 2026 is different. So far, they ring true"
-    },
-    {
-      "title": "Hezbollah: Israel must ‘unconditionally’ leave Lebanon",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/26/aje-onl-nf_hezbollah_israel-must-unconditionally-leave-lebanon-260626?traffic_source=rss",
-      "date": "June 26, 2026",
-      "description": "Hezbollah says Israel has &quot;no option&quot; but to “unconditionally” withdraw from southern Lebanon and other occupied areas."
-    },
-    {
-      "title": "Why did these World Cup ads strike a nerve in Egypt?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/26/why-did-these-world-cup-ads-strike-a-nerve-in-egypt?traffic_source=rss",
-      "date": "June 26, 2026",
-      "description": "Why did these World Cup ads strike a nerve in Egypt?"
-    },
-    {
-      "title": "Norway vs France LIVE: FIFA World Cup 2026",
-      "url": "https://www.aljazeera.com/sports/liveblog/2026/6/26/norway-vs-france-live-fifa-world-cup-2026?traffic_source=rss",
-      "date": "June 26, 2026",
-      "description": "Follow live updates from the blockbuster clash in Group I - including the build-up, analysis and live text commentary."
-    },
-    {
-      "title": "EU targets Somalia with visa curbs as president pushes back on returns",
-      "url": "https://www.aljazeera.com/news/2026/6/26/eu-targets-somalia-with-visa-curbs-as-president-pushes-back-on-returns?traffic_source=rss",
-      "date": "June 26, 2026",
-      "description": "President says his country will readmit genuine nationals but insists Europe must first verify deportees&#039; identities."
     }
   ]
 }
