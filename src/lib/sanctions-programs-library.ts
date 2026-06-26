@@ -255,7 +255,9 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
     ],
     generalLicenses: [
       // 11 active GLs — newest first — all media IDs verified from OFAC page
-      { number: "GL X", title: "Iran General License X", date: "June 21, 2026", url: "https://ofac.treasury.gov/media/936206/download?inline", expires: "August 21, 2026", addedDate: "June 24, 2026" },
+            { number: "GL 1", title: "Iran General License J-1", date: "March 19, 2014", url: "https://ofac.treasury.gov/media/7971/download?inline", addedDate: "June 26, 2026" },
+      { number: "GL 134C", title: "Russia-related General License 134C", date: "August 21, 2026", url: "https://ofac.treasury.gov/media/935641/download?inline", expires: "August 21, 2026", addedDate: "June 26, 2026" },
+{ number: "GL X", title: "Iran General License X", date: "June 21, 2026", url: "https://ofac.treasury.gov/media/936206/download?inline", expires: "August 21, 2026", addedDate: "June 24, 2026" },
 { number: "GL W",   title: "Authorizing the Wind Down of Transactions Involving Certain Persons Blocked on May 1, 2026", date: "May 1, 2026", url: "https://ofac.treasury.gov/media/935561/download?inline" },
       { number: "GL V",   title: "Authorizing the Wind Down of Transactions Involving Hengli Petrochemical (Dalian) Refinery Co., Ltd.", date: "April 24, 2026", url: "https://ofac.treasury.gov/media/935521/download?inline" },
       { number: "GL T",   title: "Authorizing Limited Safety and Environmental Transactions and the Offloading of Cargo Involving Certain Persons or Vessels Blocked on January 23, 2026", date: "January 23, 2026", url: "https://ofac.treasury.gov/media/934946/download?inline" },
@@ -318,7 +320,8 @@ archive: {
       { number: "13364", title: "Modifying the Protection Afforded to the Development Fund for Iraq", date: "November 29, 2004", url: "https://ofac.treasury.gov/media/7381/download?inline" },
     ],
     generalLicenses: [
-      { number: "GL (575.533)", title: "Iraqi General License - Section 575.533", date: "March 26, 2004", url: "https://ofac.treasury.gov/media/7356/download?inline" },
+            { number: "GL 575", title: "Iraqi General License - Section 575.533", date: "March 26, 2004", url: "https://ofac.treasury.gov/media/7356/download?inline", addedDate: "June 26, 2026" },
+{ number: "GL (575.533)", title: "Iraqi General License - Section 575.533", date: "March 26, 2004", url: "https://ofac.treasury.gov/media/7356/download?inline" },
       { number: "GL 6", title: "Iraqi General License (No. 6) - Section 575.534", date: "September 30, 2003", url: "https://ofac.treasury.gov/media/7366/download?inline" },
       { number: "GL 1", title: "Iraqi General License (No. 1 / 13315)", date: "August 30, 2003", url: "https://ofac.treasury.gov/media/7361/download?inline" },
     ],
@@ -413,7 +416,7 @@ archive: {
     id: "russia-hfa",
     name: "Russian Harmful Foreign Activities Sanctions",
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions",
-    region: "Russia", category: "country", lastUpdated: "Jun 24, 2026", status: "active",
+    region: "Russia", category: "country", lastUpdated: "Jun 25, 2026", status: "active",
     executiveOrders: [
       { number: "14114", title: "Taking Additional Steps With Respect to the Russian Federation's Harmful Activities — amends EO 14024 to add secondary sanctions on foreign financial institutions supporting Russia's military-industrial base", date: "December 22, 2023", url: "https://ofac.treasury.gov/media/932441/download?inline" },
       { number: "14071", title: "Prohibiting New Investment in and Certain Services to the Russian Federation — accounting, management consulting, quantum computing, IT services", date: "April 6, 2022", url: "https://ofac.treasury.gov/media/922081/download?inline" },
@@ -423,8 +426,10 @@ archive: {
       { number: "14024", title: "Blocking Property With Respect to Specified Harmful Foreign Activities of the Government of the Russian Federation — primary authority for the Russia HFA program", date: "April 15, 2021", url: "https://ofac.treasury.gov/media/57936/download?inline" },
     ],
     generalLicenses: [
-      // 42 GLs — verified live against OFAC's Russia-HFA program page, June 26, 2026
-      { number: "GL 1B", title: "Authorizing Certain Activities Involving Federal State Budgetary Institution Marine Rescue Service", date: "December 18, 2024", url: "https://ofac.treasury.gov/media/933721/download?inline" },
+      // 43 GLs — verified live against OFAC's Russia-HFA program page, June 26, 2026
+            { number: "GL 131G", title: "Russia-related General License 131G", date: "April 14, 2026", url: "https://ofac.treasury.gov/media/936301/download?inline", addedDate: "June 26, 2026" },
+      { number: "GL X", title: "Iran General License X", date: "November 21, 2025", url: "https://ofac.treasury.gov/media/936206/download?inline", expires: "August 21, 2026", addedDate: "June 26, 2026" },
+{ number: "GL 1B", title: "Authorizing Certain Activities Involving Federal State Budgetary Institution Marine Rescue Service", date: "December 18, 2024", url: "https://ofac.treasury.gov/media/933721/download?inline" },
       { number: "GL 2", title: "Authorizing Certain Servicing Transactions Involving State Corporation Bank for Development and Foreign Economic Affairs Vnesheconombank", date: "February 22, 2022", url: "https://ofac.treasury.gov/media/918631/download?inline" },
       { number: "GL 6D", title: "Transactions Related to Agricultural Commodities, Medicine, Medical Devices, Replacement Parts and Components, or Software Updates, the Coronavirus Disease 2019 (COVID-19) Pandemic, or Clinical Trials", date: "June 12, 2024", url: "https://ofac.treasury.gov/media/932921/download?inline" },
       { number: "GL 7A", title: "Authorizing Overflight Payments, Emergency Landings, and Air Ambulance Services", date: "May 05, 2022", url: "https://ofac.treasury.gov/media/922841/download?inline" },
@@ -463,7 +468,6 @@ archive: {
       { number: "GL 128C", title: "Authorizing Certain Transactions Involving Lukoil Retail Service Stations Located Outside of Russia", date: "April 14, 2026", url: "https://ofac.treasury.gov/media/935496/download?inline" },
       { number: "GL 129A", title: "Authorizing Transactions Involving Rosneft Deutschland GmbH and RN Refining & Marketing GmbH", date: "March 05, 2026", url: "https://ofac.treasury.gov/media/935096/download?inline" },
       { number: "GL 130A", title: "Authorizing Transactions Involving Certain Lukoil Entities in Bulgaria", date: "April 14, 2026", url: "https://ofac.treasury.gov/media/935501/download?inline" },
-      { number: "GL 131F", title: "Authorizing Certain Transactions for the Negotiation of and Entry Into Contingent Contracts for the Sale of Lukoil International GmbH and Related Maintenance Activities", date: "May 28, 2026", url: "https://ofac.treasury.gov/media/935646/download?inline" },
       { number: "GL 132", title: "Authorizing Certain Transactions Involving Paks II Civil Nuclear Power Plant", date: "November 21, 2025", url: "https://ofac.treasury.gov/media/934776/download?inline" },
       { number: "GL 134C", title: "Authorizing the Delivery and Sale of Crude Oil and Petroleum Products of Russian Federation Origin Loaded on Vessels as of April 17, 2026", date: "May 18, 2026", url: "https://ofac.treasury.gov/media/935641/download?inline", expires: "June 17, 2026" },
     ],
@@ -483,7 +487,8 @@ archive: {
 
         archive: {
       generalLicenses: [
-                                { number: "GL 131E", title: "Authorizing Certain Transactions for the Negotiation of and Entry Into Contingent Contracts for the Sale of Lukoil International GmbH and Related Maintenance Activities", archived: true, archivedNote: "Superseded by General License 131F", archivedDate: "April 14, 2026" },
+                                                                { number: "GL 131F", title: "Authorizing Certain Transactions for the Negotiation of and Entry Into Contingent Contracts for the Sale of Lukoil International GmbH and Related Maintenance Activities", archived: true, archivedNote: "Superseded by General License 131G", archivedDate: "April 14, 2026" },
+{ number: "GL 131E", title: "Authorizing Certain Transactions for the Negotiation of and Entry Into Contingent Contracts for the Sale of Lukoil International GmbH and Related Maintenance Activities", archived: true, archivedNote: "Superseded by General License 131F", archivedDate: "April 14, 2026" },
 { number: "GL 40A", title: "Authorizing Certain Administrative Transactions Involving VTB Capital PLC", archived: true, archivedNote: "Superseded by General License 40C", archivedDate: "August 19, 2022" },
 { number: "GL 1A", title: "Authorizing Certain Activities Involving Federal State Budgetary Institution Marine Rescue Service", archived: true, archivedNote: "Superseded by General License 1B" },
         { number: "GL 6C", title: "Transactions Related to Agricultural Commodities, Medicine, Medical Devices, Replacement Parts and Components, or Software Updates, the COVID-19 Pandemic, or Clinical Trials", archived: true, archivedNote: "Superseded by General License 6D" },
@@ -579,8 +584,20 @@ archive: {
       { number: "13660", title: "Blocking Property of Certain Persons Contributing to the Situation in Ukraine", date: "March 6, 2014", url: "https://ofac.treasury.gov/media/5946/download?inline" },
     ],
     generalLicenses: [
-      // 12 GLs — sorted newest first — all PDF links + dates verified directly against OFAC's live page on June 25, 2026
-      { number: "Russia GL 134C", title: "Authorizing the Delivery and Sale of Crude Oil and Petroleum Products of Russian Federation Origin Loaded on Vessels as of April 17, 2026", date: "May 18, 2026", expires: "June 17, 2026", url: "https://ofac.treasury.gov/media/935641/download?inline" },
+      // 24 GLs — sorted newest first — all PDF links + dates verified directly against OFAC's live page on June 25, 2026
+            { number: "GL 11", title: "Ukraine General License 11", date: "December 20, 2016", url: "https://ofac.treasury.gov/media/8781/download?inline", addedDate: "June 26, 2026" },
+      { number: "GL 18", title: "Ukraine General License 18", date: "December 20, 2016", url: "https://ofac.treasury.gov/media/918686/download?inline", addedDate: "June 26, 2026" },
+      { number: "GL 19", title: "Ukraine General License 19", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/918691/download?inline", addedDate: "June 26, 2026" },
+      { number: "GL 20", title: "Ukraine General License 20", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/918696/download?inline", addedDate: "June 26, 2026" },
+      { number: "GL 21", title: "Ukraine General License 21", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/918701/download?inline", addedDate: "June 26, 2026" },
+      { number: "GL 22", title: "Ukraine General License 22", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/918706/download?inline", addedDate: "June 26, 2026" },
+      { number: "GL 23", title: "Ukraine General License 23", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/919151/download?inline", addedDate: "June 26, 2026" },
+      { number: "GL 24", title: "Ukraine General License 24", date: "March 11, 2022", url: "https://ofac.treasury.gov/media/919801/download?inline", addedDate: "June 26, 2026" },
+      { number: "GL 25", title: "Ukraine General License 25", date: "March 18, 2022", url: "https://ofac.treasury.gov/media/920276/download?inline", addedDate: "June 26, 2026" },
+      { number: "GL 26A", title: "Ukraine General License 26A", date: "May 31, 2022", url: "https://ofac.treasury.gov/media/933911/download?inline", addedDate: "June 26, 2026" },
+      { number: "GL 134C", title: "Russia-related General License 134C", date: "January 15, 2025", url: "https://ofac.treasury.gov/media/935641/download?inline", addedDate: "June 26, 2026" },
+      { number: "GL X", title: "Iran General License X", date: "April 17, 2026", url: "https://ofac.treasury.gov/media/936206/download?inline", expires: "August 21, 2026", addedDate: "June 26, 2026" },
+{ number: "Russia GL 134C", title: "Authorizing the Delivery and Sale of Crude Oil and Petroleum Products of Russian Federation Origin Loaded on Vessels as of April 17, 2026", date: "May 18, 2026", expires: "June 17, 2026", url: "https://ofac.treasury.gov/media/935641/download?inline" },
       { number: "Ukraine GL 26A", title: "Transactions Authorized Pursuant to the Russian Harmful Foreign Activities Sanctions Regulations", date: "January 15, 2025", url: "https://ofac.treasury.gov/media/933911/download?inline" },
       { number: "Ukraine GL 25", title: "Journalistic Activities and Establishment of News Bureaus in Certain Regions of Ukraine", date: "March 24, 2022", url: "https://ofac.treasury.gov/media/920276/download?inline" },
       { number: "Ukraine GL 24", title: "Transactions Related to the Provision of Maritime Services", date: "March 18, 2022", url: "https://ofac.treasury.gov/media/919801/download?inline" },
@@ -659,7 +676,7 @@ archive: {
     id: "venezuela",
     name: "Venezuela-Related Sanctions",
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/venezuela-related-sanctions",
-    region: "Venezuela", category: "country", lastUpdated: "Jun 18, 2026", status: "active",
+    region: "Venezuela", category: "country", lastUpdated: "Jun 25, 2026", status: "active",
     executiveOrders: [
       { number: "13692", title: "Blocking Property and Suspending Entry of Certain Persons Contributing to the Situation in Venezuela", date: "March 8, 2015", url: "https://ofac.treasury.gov/media/5906/download?inline" },
       { number: "13808", title: "Imposing Additional Sanctions With Respect to Venezuela", date: "August 24, 2017", url: "https://ofac.treasury.gov/media/5476/download?inline" },
@@ -672,10 +689,19 @@ archive: {
     generalLicenses: [
       // All dates, titles, and URLs verified directly against OFAC's live Venezuela page on June 25, 2026.
       // GL 58/59 are unconfirmed (not on the live active page at fetch time, but URLs look genuine) — left as-is pending a direct PDF check.
-      { number: "GL 2A", title: "Authorizing Certain New Debt, New Equity, and Securities Transactions Involving PDV Holding, Inc. and CITGO Holding, Inc.", date: "August 05, 2019", url: "https://ofac.treasury.gov/media/34121/download?inline" },
+            { number: "GL 5X", title: "Venezuela General License 5X", date: "August 05, 2019", url: "https://ofac.treasury.gov/media/935746/download?inline", addedDate: "June 26, 2026" },
+      { number: "GL 24A", title: "Venezuela General License 24A", date: "August 05, 2019", url: "https://ofac.treasury.gov/media/935731/download?inline", addedDate: "June 26, 2026" },
+      { number: "GL 46C", title: "Venezuela General License 46C", date: "February 29, 2024", url: "https://ofac.treasury.gov/media/935661/download?inline", addedDate: "June 26, 2026" },
+      { number: "GL 47A", title: "Venezuela General License 47A", date: "June 10, 2026", url: "https://ofac.treasury.gov/media/935666/download?inline", addedDate: "June 26, 2026" },
+      { number: "GL 48B", title: "Venezuela General License 48B", date: "June 10, 2026", url: "https://ofac.treasury.gov/media/935671/download?inline", addedDate: "June 26, 2026" },
+      { number: "GL 50B", title: "Venezuela General License 50B", date: "June 10, 2026", url: "https://ofac.treasury.gov/media/935676/download?inline", addedDate: "June 26, 2026" },
+      { number: "GL 51B", title: "Venezuela General License 51B", date: "June 10, 2026", url: "https://ofac.treasury.gov/media/935681/download?inline", addedDate: "June 26, 2026" },
+      { number: "GL 52A", title: "Venezuela General License 52A", date: "June 10, 2026", url: "https://ofac.treasury.gov/media/935686/download?inline", addedDate: "June 26, 2026" },
+      { number: "GL 54A", title: "Venezuela General License 54A", date: "March 24, 2026", url: "https://ofac.treasury.gov/media/935691/download?inline", addedDate: "June 26, 2026" },
+      { number: "GL 60", title: "Venezuela General License 60", date: "June 18, 2026", url: "https://ofac.treasury.gov/media/936396/download?inline", addedDate: "June 26, 2026" },
+{ number: "GL 2A", title: "Authorizing Certain New Debt, New Equity, and Securities Transactions Involving PDV Holding, Inc. and CITGO Holding, Inc.", date: "August 05, 2019", url: "https://ofac.treasury.gov/media/34121/download?inline" },
       { number: "GL 3I", title: "Authorizing Transactions Related to, Provision of Financing for, and Other Dealings in Certain Bonds", date: "October 18, 2023", url: "https://ofac.treasury.gov/media/932211/download?inline" },
       { number: "GL 4C", title: "Authorizing Certain New Debt Transactions and Other Transactions Involving Certain Blocked Persons Related to the Exportation or Reexportation of Agricultural Commodities, Medicine, Medical Devices, Replacement Parts and Components, or Software Updates", date: "October 18, 2023", url: "https://ofac.treasury.gov/media/31741/download?inline" },
-      { number: "GL 5V", title: "Authorizing Certain Transactions Related to the Petróleos de Venezuela, S.A. 2020 8.5 Percent Bond on or After May 5, 2026", date: "March 19, 2026", url: "https://ofac.treasury.gov/media/935361/download?inline" },
       { number: "GL 7C", title: "Authorizing Certain Activities Involving PDV Holding, Inc. and CITGO Holding, Inc.", date: "August 05, 2019", url: "https://ofac.treasury.gov/media/34136/download?inline" },
       { number: "GL 9H", title: "Authorizing Transactions Related to Dealings in Certain Securities", date: "October 18, 2023", url: "https://ofac.treasury.gov/media/932221/download?inline" },
       { number: "GL 10A", title: "Authorizing the Purchase in Venezuela of Refined Petroleum Products from Petróleos de Venezuela, S.A. (PdVSA)", date: "October 18, 2023", url: "https://ofac.treasury.gov/media/34131/download?inline" },
@@ -685,7 +711,6 @@ archive: {
       { number: "GL 21", title: "Entries in Certain Accounts for Normal Service Charges and Payments and Transfers to Blocked Accounts in U.S. Financial Institutions Authorized", date: "August 05, 2019", url: "https://ofac.treasury.gov/media/46421/download?inline" },
       { number: "GL 22", title: "Venezuela's Mission to the United Nations", date: "August 05, 2019", url: "https://ofac.treasury.gov/media/30601/download?inline" },
       { number: "GL 23", title: "Third-country Diplomatic and Consular Funds Transfers Authorized", date: "August 05, 2019", url: "https://ofac.treasury.gov/media/34116/download?inline" },
-      { number: "GL 24", title: "Certain Transactions Involving the Government of Venezuela Related to Telecommunications and Mail Authorized", date: "August 05, 2019", url: "https://ofac.treasury.gov/media/31756/download?inline" },
       { number: "GL 25", title: "Exportation of Certain Services, Software, Hardware, and Technology Incident to the Exchange of Communications over the Internet Authorized", date: "August 05, 2019", url: "https://ofac.treasury.gov/media/31761/download?inline" },
       { number: "GL 26", title: "Emergency and Certain Other Medical Services Authorized", date: "August 05, 2019", url: "https://ofac.treasury.gov/media/31766/download?inline" },
       { number: "GL 27", title: "Certain Transactions Related to Patents, Trademarks, and Copyrights Authorized", date: "August 05, 2019", url: "https://ofac.treasury.gov/media/34111/download?inline" },
@@ -699,15 +724,8 @@ archive: {
       { number: "GL 40D", title: "Authorizing the Offloading of Liquefied Petroleum Gas in Venezuela", date: "July 07, 2025", url: "https://ofac.treasury.gov/media/934461/download?inline" },
       { number: "GL 42", title: "Authorizing Certain Transactions Related to the Negotiation of Certain Settlement Agreements with the IV Venezuelan National Assembly and Certain Other Persons", date: "May 01, 2023", url: "https://ofac.treasury.gov/media/931696/download?inline" },
       { number: "GL 45B", title: "Authorizing Certain Repatriation Transactions Involving Consorcio Venezolano de Industrias Aeronáuticas y Servicios Aéreos, S.A.", date: "February 29, 2024", url: "https://ofac.treasury.gov/media/932686/download?inline" },
-      { number: "GL 46B", title: "Authorizing Certain Activities Involving Venezuelan-Origin Oil or Petrochemical Products", date: "March 13, 2026", url: "https://ofac.treasury.gov/media/935196/download?inline" },
-      { number: "GL 47", title: "Authorizing the Sale of U.S.-Origin Diluents to Venezuela", date: "February 03, 2026", url: "https://ofac.treasury.gov/media/934891/download?inline" },
-      { number: "GL 48A", title: "Authorizing the Supply of Certain Items and Services to Venezuela", date: "March 13, 2026", url: "https://ofac.treasury.gov/media/935201/download?inline" },
       { number: "GL 49A", title: "Authorizing Negotiations of and Entry Into Contingent Contracts for Certain Investment in Venezuela", date: "March 13, 2026", url: "https://ofac.treasury.gov/media/935206/download?inline" },
-      { number: "GL 50A", title: "Authorizing Transactions Related to Oil or Gas Sector Operations in Venezuela of Certain Entities", date: "February 18, 2026", url: "https://ofac.treasury.gov/media/935031/download?inline" },
-      { number: "GL 51A", title: "Authorizing Certain Activities Involving Venezuelan-Origin Minerals, Including Gold", date: "March 27, 2026", url: "https://ofac.treasury.gov/media/935381/download?inline" },
-      { number: "GL 52", title: "Authorizing Certain Transactions Involving Petróleos de Venezuela, S.A.", date: "March 18, 2026", url: "https://ofac.treasury.gov/media/935356/download?inline" },
       { number: "GL 53", title: "Official Missions of the Government of Venezuela to the United States", date: "March 24, 2026", url: "https://ofac.treasury.gov/media/935386/download?inline" },
-      { number: "GL 54", title: "Authorizing the Supply of Certain Items and Services for Minerals Operations in Venezuela", date: "March 27, 2026", url: "https://ofac.treasury.gov/media/935391/download?inline" },
       { number: "GL 55", title: "Authorizing Negotiations of and Entry Into Contingent Contracts for Certain Investment in Venezuela's Minerals Sector", date: "March 27, 2026", url: "https://ofac.treasury.gov/media/935396/download?inline" },
       { number: "GL 56", title: "Authorizing Commercial-Related Negotiations of Contingent Contracts with the Government of Venezuela", date: "April 14, 2026", url: "https://ofac.treasury.gov/media/935401/download?inline" },
       { number: "GL 57", title: "Authorizing Financial Services Transactions Involving Certain Venezuelan Banks and Government of Venezuela Individuals", date: "April 14, 2026", url: "https://ofac.treasury.gov/media/935516/download?inline" },
@@ -721,7 +739,16 @@ archive: {
 
         archive: {
       generalLicenses: [
-        { number: "GL 3H", title: "Authorizing Transactions Related to, Provision of Financing for, and Other Dealings in Certain Bonds", archived: true, archivedNote: "Superseded by General License 3I" },
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                { number: "GL 54", title: "Authorizing the Supply of Certain Items and Services for Minerals Operations in Venezuela", archived: true, archivedNote: "Superseded by General License 54A", archivedDate: "March 24, 2026" },
+{ number: "GL 52", title: "Authorizing Certain Transactions Involving Petróleos de Venezuela, S.A.", archived: true, archivedNote: "Superseded by General License 52A", archivedDate: "June 10, 2026" },
+{ number: "GL 51A", title: "Authorizing Certain Activities Involving Venezuelan-Origin Minerals, Including Gold", archived: true, archivedNote: "Superseded by General License 51B", archivedDate: "June 10, 2026" },
+{ number: "GL 50A", title: "Authorizing Transactions Related to Oil or Gas Sector Operations in Venezuela of Certain Entities", archived: true, archivedNote: "Superseded by General License 50B", archivedDate: "June 10, 2026" },
+{ number: "GL 48A", title: "Authorizing the Supply of Certain Items and Services to Venezuela", archived: true, archivedNote: "Superseded by General License 48B", archivedDate: "June 10, 2026" },
+{ number: "GL 47", title: "Authorizing the Sale of U.S.-Origin Diluents to Venezuela", archived: true, archivedNote: "Superseded by General License 47A", archivedDate: "June 10, 2026" },
+{ number: "GL 46B", title: "Authorizing Certain Activities Involving Venezuelan-Origin Oil or Petrochemical Products", archived: true, archivedNote: "Superseded by General License 46C", archivedDate: "February 29, 2024" },
+{ number: "GL 24", title: "Certain Transactions Involving the Government of Venezuela Related to Telecommunications and Mail Authorized", archived: true, archivedNote: "Superseded by General License 24A", archivedDate: "August 05, 2019" },
+{ number: "GL 5V", title: "Authorizing Certain Transactions Related to the Petróleos de Venezuela, S.A. 2020 8.5 Percent Bond on or After May 5, 2026", archived: true, archivedNote: "Superseded by General License 5X", archivedDate: "August 05, 2019" },
+{ number: "GL 3H", title: "Authorizing Transactions Related to, Provision of Financing for, and Other Dealings in Certain Bonds", archived: true, archivedNote: "Superseded by General License 3I" },
         { number: "GL 5R", title: "Authorizing Certain Transactions Related to the Petróleos de Venezuela, S.A. 2020 8.5 Percent Bond on or After July 3, 2025", archived: true, archivedNote: "Superseded by General License 5S" },
         { number: "GL 5S", title: "Authorizing Certain Transactions Related to the Petróleos de Venezuela, S.A. 2020 8.5 Percent Bond on or After December 20, 2025", archived: true, archivedNote: "Superseded by General License 5T" },
         { number: "GL 5T", title: "Authorizing Certain Transactions Related to the Petróleos de Venezuela, S.A. 2020 8.5 Percent Bond on or After February 3, 2026", archived: true, archivedNote: "Superseded by General License 5U" },
@@ -796,7 +823,9 @@ archive: {
       { number: "13372", title: "Clarifying the Prohibition on Transactions With, and the Confiscation of Assets of, Terrorists Who Threaten to Disrupt the Middle East Peace Process", date: "February 16, 2005", url: "https://ofac.treasury.gov/media/5576/download?inline" },
     ],
     generalLicenses: [
-      { number: "GL 2", title: "Travel, Employment, Residence and Maintenance Transactions with the Palestinian Authority", date: "April 12, 2006", url: "https://ofac.treasury.gov/media/8366/download?inline" },
+            { number: "GL 25", title: "Fact Sheet: Frequently Asked Questions (FAQs) for Syria General License 25", date: "June 30, 2025", url: "https://ofac.treasury.gov/media/934311/download?inline", addedDate: "June 26, 2026" },
+      { number: "GL 134C", title: "Russia-related General License 134C", date: "May 23, 2025", url: "https://ofac.treasury.gov/media/935641/download?inline", addedDate: "June 26, 2026" },
+{ number: "GL 2", title: "Travel, Employment, Residence and Maintenance Transactions with the Palestinian Authority", date: "April 12, 2006", url: "https://ofac.treasury.gov/media/8366/download?inline" },
       { number: "GL 3", title: "Payment of Taxes and Incidental Fees to the Palestinian Authority", date: "April 12, 2006", url: "https://ofac.treasury.gov/media/8371/download?inline" },
       { number: "GL 4", title: "Transactions with Entities Under the Control of the Palestinian President and Certain Other Entities", date: "April 12, 2006", url: "https://ofac.treasury.gov/media/8376/download?inline" },
       { number: "GL 5", title: "Concluding Activities with the Palestinian Authority", date: "April 12, 2006", url: "https://ofac.treasury.gov/media/8381/download?inline" },
@@ -871,7 +900,9 @@ archive: {
       { number: "13382", title: "Blocking Property of Weapons of Mass Destruction Proliferators and Their Supporters", date: "June 28, 2005", url: "https://ofac.treasury.gov/media/5556/download?inline" },
     ],
     generalLicenses: [
-      { number: "GL 1", title: "Revocation of Non-Proliferation General License No. 1", date: "", url: "https://ofac.treasury.gov/media/8591/download?inline" },
+            { number: "GL 134C", title: "Russia-related General License 134C", date: "February 03, 2014", url: "https://ofac.treasury.gov/media/935641/download?inline", addedDate: "June 26, 2026" },
+      { number: "GL X", title: "Iran General License X", date: "April 17, 2026", url: "https://ofac.treasury.gov/media/936206/download?inline", expires: "August 21, 2026", addedDate: "June 26, 2026" },
+{ number: "GL 1", title: "Revocation of Non-Proliferation General License No. 1", date: "", url: "https://ofac.treasury.gov/media/8591/download?inline" },
       { number: "GL 2", title: "Non-Proliferation General License No. 2", date: "", url: "https://ofac.treasury.gov/media/8596/download?inline" },
       { number: "GL 3", title: "Revocation of Non-Proliferation General License No. 3", date: "December 21, 2010", url: "https://ofac.treasury.gov/media/8601/download?inline" },
       { number: "GL 4", title: "Non-Proliferation General License No. 4", date: "June 23, 2011", url: "https://ofac.treasury.gov/media/8606/download?inline" },
