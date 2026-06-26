@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-06-26T14:08:37.379Z",
+  "updatedAt": "2026-06-26T14:38:36.625Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260626",
+      "code": "20260626",
+      "title": "Sudan-related Designations",
+      "date": "June 26, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260625",
       "code": "20260625",
@@ -54,12 +60,6 @@
       "code": "20260611",
       "title": "Cuba Designation; Russia-related Designations Removals and Designation Update; Issuance of Amended Russia-related General Licenses and Frequently Asked Questions",
       "date": "June 11, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260610",
-      "code": "20260610",
-      "title": "Non-Proliferation Designations; Iran-related Designations; Issuance of Venezuela-related Amended General Licenses and Frequently Asked Questions",
-      "date": "June 10, 2026"
     }
   ],
   "civilPenalties": [
@@ -1942,7 +1942,7 @@
     "sudan-and-darfur-sanctions": {
       "name": "Sudan and Darfur Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/sudan-and-darfur-sanctions",
-      "lastUpdated": "Apr 17, 2026",
+      "lastUpdated": "Jun 26, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -2867,6 +2867,12 @@
   ],
   "ajNews": [
     {
+      "title": "Iran slams the GCC and the US for ‘interventionist’ statement: What we know",
+      "url": "https://www.aljazeera.com/news/2026/6/26/iran-slams-the-gcc-and-the-us-for-interventionist-statement-what-we-know?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "Tehran rejects US-GCC pressure over missiles, the Strait of Hormuz and regional armed groups."
+    },
+    {
       "title": "Everything we know so far about the deadly earthquakes in Venezuela",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/6/26/everything-we-know-so-far-about-the-deadly-earthquakes-in-venezuela-2?traffic_source=rss",
       "date": "June 26, 2026",
@@ -2931,12 +2937,6 @@
       "url": "https://www.aljazeera.com/news/2026/6/26/venezuela-earthquakes-why-is-caracas-so-vulnerable?traffic_source=rss",
       "date": "June 26, 2026",
       "description": "Inadequate infrastructure in Caracas due to underfunding intensified destruction from the tremors."
-    },
-    {
-      "title": "North Korea conducts major weapons tests; South training ‘drone warriors’",
-      "url": "https://www.aljazeera.com/news/2026/6/26/north-korea-conducts-major-weapons-tests-south-training-drone-warriors?traffic_source=rss",
-      "date": "June 26, 2026",
-      "description": "Kim Jong Un demands a &#039;deadly and destructive offensive posture&#039; as North Korea upgrades arsenal to reach all of South."
     }
   ],
   "occNews": [
@@ -3480,6 +3480,12 @@
       "description": "Civil service pensioners face further delays to payments."
     },
     {
+      "title": "South Korean court jails former first lady for seven years in bribery case",
+      "url": "https://www.aljazeera.com/news/2026/6/26/south-korean-court-jails-former-first-lady-for-seven-years-in-bribery-case?traffic_source=rss",
+      "date": "June 26, 2026",
+      "description": "Kim Keon Hee was sentenced for taking bribes including luxury items in return for political favours."
+    },
+    {
       "title": "Iraq’s new PM launches anticorruption campaign, but is it enough?",
       "url": "https://www.aljazeera.com/news/2026/6/26/iraqs-new-pm-launches-anticorruption-campaign-but-is-it-enough?traffic_source=rss",
       "date": "June 26, 2026",
@@ -3550,12 +3556,6 @@
       "url": "https://www.aljazeera.com/economy/2026/6/26/affordability-crisis-how-the-western-housing-crisis-spiralled?traffic_source=rss",
       "date": "June 26, 2026",
       "description": "Rising rents and prices outpacing wages provoke global debate: Is housing a basic right or an investment asset?"
-    },
-    {
-      "title": "Watch World Cup Day 15: Netherlands, Australia advance; Curacao eliminated",
-      "url": "https://www.aljazeera.com/video/2026/6/26/video-world-cup-2026-highlights?traffic_source=rss",
-      "date": "June 26, 2026",
-      "description": "Latest match highlights, reaction and previews from the FIFA World Cup 2026 in North America."
     }
   ]
 }
