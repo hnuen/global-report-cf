@@ -214,13 +214,30 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
       { number: "14046", title: "Imposing Sanctions on Certain Persons With Respect to the Humanitarian and Human Rights Crisis in Ethiopia", date: "September 17, 2021", url: "https://ofac.treasury.gov/media/913011/download?inline" },
     ],
     generalLicenses: [
-      // Corrected 2026-06-26: titles/dates/urls were wrong on every entry —
-      // verified against OFAC recent-actions/20210917, which is the original
-      // issuance notice for all three Ethiopia GLs (all dated Sept 17, 2021).
-      { number: "GL 1", title: "Official Activities of Certain International Organizations and Other International Entities", date: "September 17, 2021", url: "https://ofac.treasury.gov/media/912916/download?inline" },
-      { number: "GL 2", title: "Certain Transactions in Support of Nongovernmental Organizations' Activities", date: "September 17, 2021", url: "https://ofac.treasury.gov/media/912921/download?inline" },
-      { number: "GL 3", title: "Transactions Related to the Exportation or Reexportation of Agricultural Commodities, Medicine, Medical Devices, Replacement Parts and Components, or Software Updates", date: "September 17, 2021", url: "https://ofac.treasury.gov/media/912926/download?inline" },
+      // Corrected 2026-06-26: confirmed via OFAC's live Ethiopia page that
+      // none of GL 1/2/3 are listed as active general licenses anymore —
+      // see archive block below for why (codified into 31 CFR Part 550).
     ],
+    archive: {
+      generalLicenses: [
+        // Moved here 2026-06-26. Titles/dates/urls verified against OFAC
+        // recent-actions/20210917 (original issuance notice, all three
+        // dated Sept 17, 2021). Confirmed via OFAC's live Ethiopia page
+        // (General Licenses section now empty, links only to an archive)
+        // that these are no longer listed as standalone GLs. Root cause
+        // found in 31 CFR Part 550 Subpart E (eCFR, source: 87 FR 7374,
+        // Feb 9, 2022 — matches this program's "Issuance of Ethiopia
+        // Sanctions Regulations" recent action of Feb 8, 2022): the exact
+        // operative text of all three GLs was codified directly into the
+        // regulation as standing authorizations, so OFAC stopped carrying
+        // them as separate numbered "GL" web postings. The underlying
+        // authorizations remain in effect — they just live in the CFR now,
+        // not as a GL — same pattern as the Burma §525.512 case.
+        { number: "GL 1", title: "Official Activities of Certain International Organizations and Other International Entities", date: "September 17, 2021", url: "https://ofac.treasury.gov/media/912916/download?inline", archived: true, archivedDate: "February 9, 2022", archivedNote: "Codified into 31 CFR 550.510 (\"Official business of certain international organizations and entities\") — no longer carried as a standalone GL" },
+        { number: "GL 2", title: "Certain Transactions in Support of Nongovernmental Organizations' Activities", date: "September 17, 2021", url: "https://ofac.treasury.gov/media/912921/download?inline", archived: true, archivedDate: "February 9, 2022", archivedNote: "Codified into 31 CFR 550.511 (\"Certain transactions in support of nongovernmental organizations' activities\") — no longer carried as a standalone GL" },
+        { number: "GL 3", title: "Transactions Related to the Exportation or Reexportation of Agricultural Commodities, Medicine, Medical Devices, Replacement Parts and Components, or Software Updates", date: "September 17, 2021", url: "https://ofac.treasury.gov/media/912926/download?inline", archived: true, archivedDate: "February 9, 2022", archivedNote: "Codified into 31 CFR 550.512 (same title) — no longer carried as a standalone GL" },
+      ],
+    },
   },
 
   {
