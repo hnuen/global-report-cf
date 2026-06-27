@@ -572,7 +572,13 @@ archive: {
       { number: "GL 129A", title: "Authorizing Transactions Involving Rosneft Deutschland GmbH and RN Refining & Marketing GmbH", date: "March 05, 2026", url: "https://ofac.treasury.gov/media/935096/download?inline" },
       { number: "GL 130A", title: "Authorizing Transactions Involving Certain Lukoil Entities in Bulgaria", date: "April 14, 2026", url: "https://ofac.treasury.gov/media/935501/download?inline", expires: "October 29, 2026" },
       { number: "GL 132", title: "Authorizing Certain Transactions Involving Paks II Civil Nuclear Power Plant", date: "November 21, 2025", url: "https://ofac.treasury.gov/media/934776/download?inline" },
-      { number: "GL 134C", title: "Authorizing the Delivery and Sale of Crude Oil and Petroleum Products of Russian Federation Origin Loaded on Vessels as of April 17, 2026", date: "May 18, 2026", url: "https://ofac.treasury.gov/media/935641/download?inline", expires: "June 17, 2026" },
+      // Removed 2026-06-27: GL 134C moved to archive below — confirmed
+      // expired against its own PDF (media/935641: "authorized through ...
+      // June 17, 2026", a fixed wind-down date, not a rolling one). Checked
+      // live OFAC recent-actions and secondary-source coverage for a "GL
+      // 134D" successor — none exists; the 133/134 Russia-oil-vessel GL
+      // series ends at 134C. Real-world example of the date-expiry-with-no-
+      // successor gap — see [[project_gl_auto_archive_mechanism]].
     ],
     keyAdvisories: [
       { title: "OFAC Alert: Sanctions Risk for Foreign Financial Institutions that Join Russian Financial Messaging System (SPFS)", date: "November 21, 2024", url: "https://ofac.treasury.gov/media/933656/download?inline" },
@@ -590,6 +596,7 @@ archive: {
 
         archive: {
       generalLicenses: [
+        { number: "GL 134C", title: "Authorizing the Delivery and Sale of Crude Oil and Petroleum Products of Russian Federation Origin Loaded on Vessels as of April 17, 2026", date: "May 18, 2026", archived: true, archivedNote: "Expired June 17, 2026 — fixed wind-down date reached; no successor GL issued (133/134 Russia-oil-vessel GL series ends at 134C)", archivedDate: "June 17, 2026" },
         { number: "GL 131F", title: "Authorizing Certain Transactions for the Negotiation of and Entry Into Contingent Contracts for the Sale of Lukoil International GmbH and Related Maintenance Activities", date: "May 28, 2026", archived: true, archivedNote: "Superseded by General License 131G", archivedDate: "June 25, 2026" },
         // Removed 2026-06-26: a duplicate "GL 131E" entry was here with an
         // impossible archivedDate ("April 14, 2026" — before GL 131F's own

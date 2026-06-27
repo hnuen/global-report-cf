@@ -23,6 +23,13 @@
  *     `archive: { generalLicenses: [...] }` block to move it into. If not, the new
  *     GL is still added, but the predecessor is left in place and logged — never
  *     silently dropped, never guessed at.
+ *   - A second, independent archiving path (added 2026-06-27) catches GLs whose
+ *     `expires` date has passed even when no successor GL was ever scraped — same
+ *     "needs archive{} block to land in" rule applies. See the date-based block
+ *     inside syncBlockEntries.
+ *   - These together mean GLs are auto-archived for two different reasons:
+ *     superseded by a new GL number, or simply past their own expiry date — not
+ *     a third "pending" state. Either way, no archive{} block means logged-only.
  *   - A sanity check on bracket balance and block count runs before every commit;
  *     any mismatch aborts the whole sync with nothing written.
  *   - Tier 2 (designation/advisory detection) only fires on unambiguous program-name
@@ -35,6 +42,18 @@ const today = () =>
   new Date().toLocaleString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "America/New_York" });
 
 const esc = (s) => String(s ?? "").replace(/\\/g, "\\\\").replace(/"/g, '\\"');
+
+// Parse a curated-file date string ("June 17, 2026") into a local Date at
+// midnight, or null if it doesn't match. Used only by the pure date-based
+// expiry check below — never written back verbatim, only compared.
+const MONTH_NAMES = { january: 0, february: 1, march: 2, april: 3, may: 4, june: 5, july: 6, august: 7, september: 8, october: 9, november: 10, december: 11 };
+function parseDate(str) {
+  const m = /^([A-Za-z]+)\s+(\d{1,2}),?\s+(\d{4})$/.exec(String(str ?? "").trim());
+  if (!m) return null;
+  const month = MONTH_NAMES[m[1].toLowerCase()];
+  if (month === undefined) return null;
+  return new Date(Number(m[3]), month, Number(m[2]));
+}
 
 // ── GitHub Contents API ─────────────────────────────────────────────────────
 async function getFile(repo, token, path) {
@@ -409,7 +428,54 @@ function syncBlockEntries(blockText, scraped, log, ownMeta, allMetas) {
       activeItems = refreshCountComment(activeItems);
     }
 
-    if (newGLs.length > 0 || backfilledAny || selfHealedAny) {
+    // Pure date-based expiry archiving — catches a GL whose `expires` date
+    // has passed but for which no successor was EVER scraped (a fixed
+    // wind-down license that simply lapses, e.g. Russia-HFA's GL 134C in
+    // June 2026: a hard end date, no "134D" ever issued). The supersession
+    // block above only fires when a new GL number shows up, so without this,
+    // a lapsed-with-no-replacement GL would sit active forever — the only
+    // thing that ever flagged it was a render-time UI badge in
+    // AppContent.tsx that never wrote anything back to this file. Runs every
+    // time this program's page is scraped (independent of whether any new GL
+    // was found above), comparing each active `expires` date against today
+    // (America/New_York, matching today() below) — by the time a date-only
+    // comparison trips (expDate < todayDate), at least one full calendar day
+    // has already passed since expiry, so this naturally fires on "expiry +
+    // 1 day or later," never the same day.
+    let expiredArchivedAny = false;
+    const todayDate = parseDate(today());
+    if (todayDate) {
+      const lines = activeItems.split("\n");
+      const keepLines = [];
+      for (const line of lines) {
+        const numM = /number:\s*"GL ([^"]+)"/.exec(line);
+        const expM = /expires:\s*"([^"]+)"/.exec(line);
+        const expDate = expM ? parseDate(expM[1]) : null;
+        if (!numM || !expDate || !(expDate < todayDate)) {
+          keepLines.push(line);
+          continue;
+        }
+        const titleM = /title:\s*"([^"]*)"/.exec(line);
+        const dateM = /\bdate:\s*"([^"]*)"/.exec(line);
+        if (archiveItems !== null) {
+          const archIndent = entryIndentOf(archiveItems) || "        ";
+          const dateField = dateM?.[1] ? `date: "${esc(dateM[1])}", ` : "";
+          const archivedLine = `${archIndent}{ number: "GL ${numM[1]}", title: "${esc(titleM?.[1] || "")}", ${dateField}archived: true, archivedNote: "Expired ${esc(expM[1])} — no successor GL detected", archivedDate: "${esc(expM[1])}" },\n`;
+          archiveItems = insertAtTop(archiveItems, archivedLine);
+          notes.push(`Archived GL ${numM[1]} — expired ${expM[1]}, no successor GL ever detected`);
+          expiredArchivedAny = true;
+          // line intentionally dropped from keepLines — it's moved, not kept
+        } else {
+          notes.push(`GL ${numM[1]} expired ${expM[1]} but program has no archive{} block — left active, needs manual archiving`);
+          keepLines.push(line);
+        }
+      }
+      if (expiredArchivedAny) {
+        activeItems = refreshCountComment(keepLines.join("\n"));
+      }
+    }
+
+    if (newGLs.length > 0 || backfilledAny || selfHealedAny || expiredArchivedAny) {
       changed = true;
       before = replaceArray(before, activeGL, activeItems);
       if (archiveGL && archiveItems !== archiveGL.itemsText) {
