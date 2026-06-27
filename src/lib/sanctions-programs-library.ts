@@ -214,9 +214,12 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
       { number: "14046", title: "Imposing Sanctions on Certain Persons With Respect to the Humanitarian and Human Rights Crisis in Ethiopia", date: "September 17, 2021", url: "https://ofac.treasury.gov/media/913011/download?inline" },
     ],
     generalLicenses: [
-      { number: "GL 1", title: "Authorizing Humanitarian Activities", date: "2021" },
-      { number: "GL 2", title: "Authorizing Official Business of the US Government", date: "2021" },
-      { number: "GL 3", title: "Authorizing Official Activities of International Organizations", date: "2021" },
+      // Corrected 2026-06-26: titles/dates/urls were wrong on every entry —
+      // verified against OFAC recent-actions/20210917, which is the original
+      // issuance notice for all three Ethiopia GLs (all dated Sept 17, 2021).
+      { number: "GL 1", title: "Official Activities of Certain International Organizations and Other International Entities", date: "September 17, 2021", url: "https://ofac.treasury.gov/media/912916/download?inline" },
+      { number: "GL 2", title: "Certain Transactions in Support of Nongovernmental Organizations' Activities", date: "September 17, 2021", url: "https://ofac.treasury.gov/media/912921/download?inline" },
+      { number: "GL 3", title: "Transactions Related to the Exportation or Reexportation of Agricultural Commodities, Medicine, Medical Devices, Replacement Parts and Components, or Software Updates", date: "September 17, 2021", url: "https://ofac.treasury.gov/media/912926/download?inline" },
     ],
   },
 
