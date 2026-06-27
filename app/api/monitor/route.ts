@@ -48,7 +48,13 @@ async function markAlerted(key: string, cooldownMinutes: number): Promise<void> 
 
 async function runMonitor(topic?: string, force = false) {
   const appUrl = process.env.APP_URL ?? "";
-  const cooldownMinutes = Number(process.env.ALERT_COOLDOWN_MINUTES ?? 360);
+  // Default raised from 360 (6h) to 10080 (7 days): this TTL is the only thing
+  // standing between "this article already alerted" and "alert it again" —
+  // since the cached penalty/program feeds keep old entries in the article
+  // pool indefinitely (not just newly-published ones), a 6h window meant the
+  // same old article re-qualified and re-sent every few hours, forever. See
+  // alert-scorer.ts's isRecentEnough() for the companion age gate on score.
+  const cooldownMinutes = Number(process.env.ALERT_COOLDOWN_MINUTES ?? 10080);
   const maxAlertsPerRun = Number(process.env.ALERT_MAX_PER_RUN ?? 3);
 
   // 1. Load existing briefing from Redis — no re-fetch needed

@@ -731,6 +731,7 @@ archive: {
       { number: "GL 57", title: "Authorizing Financial Services Transactions Involving Certain Venezuelan Banks and Government of Venezuela Individuals", date: "April 14, 2026", url: "https://ofac.treasury.gov/media/935516/download?inline" },
       { number: "GL 58", title: "Venezuela General License 58", date: "April 14, 2026", url: "https://ofac.treasury.gov/media/935566/download?inline" },
       { number: "GL 59", title: "Venezuela General License 59", date: "May 05, 2026", url: "https://ofac.treasury.gov/media/935736/download?inline" },
+      { number: "GL 60", title: "Authorizing Transactions Related to Earthquake Relief Efforts in Venezuela", date: "June 25, 2026", url: "https://ofac.treasury.gov/media/936396/download?inline" },
       { number: "GL 20", title: "Authorizing Transactions Involving the Export or Reexport of Petroleum or Petroleum Products", date: "Ongoing" },
     ],
     keyAdvisories: [

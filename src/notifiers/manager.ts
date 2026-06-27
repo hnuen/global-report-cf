@@ -119,7 +119,11 @@ export class NotifierManager {
     const channels   = this.configured();
     const strategy   = process.env.NOTIFIER_STRATEGY ?? "first-success";
     const maxPerRun  = Number(process.env.ALERT_MAX_PER_RUN ?? 3);
-    const cooldownMs = Number(process.env.ALERT_COOLDOWN_MINUTES ?? 360) * 60 * 1000;
+    // Default raised from 360 (6h) to 10080 (7 days) — kept in sync with the
+    // same env var's default in app/api/monitor/route.ts. See the comment
+    // there: a short cooldown let the same old cached article re-alert every
+    // few hours indefinitely.
+    const cooldownMs = Number(process.env.ALERT_COOLDOWN_MINUTES ?? 10080) * 60 * 1000;
     const now        = Date.now();
 
     if (channels.length === 0) {

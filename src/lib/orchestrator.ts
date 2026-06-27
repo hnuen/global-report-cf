@@ -8,7 +8,7 @@ import { getHistoricalForSection, getRecentBySource } from "./historical-article
 import type { Briefing, Section } from "./types";
 import { enrichArticlesWithBriefs } from "./brief-generator";
 import { loadArticleLibrary, saveArticlesToLibrary } from "./article-library";
-import { fetchOfacCache, recentActionsToArticles, civilPenaltiesToArticles, programsToArticles } from "./ofac-github-cache";
+import { fetchOfacCache, recentActionsToArticles, civilPenaltiesToArticles, programsToArticles, ofsiNoticesToArticles, europaNewsToArticles, unNoticesToArticles, bbcNewsToArticles, ajNewsToArticles, occNewsToArticles, economicsNewsToArticles, bisNewsToArticles, regionsNewsToArticles } from "./ofac-github-cache";
 
 // No module-level singletons — always read env vars fresh on each invocation
 export async function loadBriefing(): Promise<Briefing | null> {
@@ -87,10 +87,57 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
       const programArticles = ofacCache.programs
         ? programsToArticles(ofacCache.programs, 9200, existingUrls)
         : [];
-      const injected = [...cachedActionArticles, ...cachedPenaltyArticles, ...programArticles];
+      // UK OFSI / EU Commission — same idea as the OFAC injection above: these
+      // are scraped and committed to the cache file by refresh-briefing.mjs
+      // already, but previously had no converter here, so they sat unused and
+      // never reached the live briefing or alert pipeline.
+      const ofsiArticles = (ofacCache.ofsiNotices ?? [])
+        .length > 0
+        ? ofsiNoticesToArticles(ofacCache.ofsiNotices!).filter(a => !existingUrls.has(a.sourceUrl!))
+        : [];
+      const europaArticles = (ofacCache.europaNews ?? [])
+        .length > 0
+        ? europaNewsToArticles(ofacCache.europaNews!).filter(a => !existingUrls.has(a.sourceUrl!))
+        : [];
+      // Remaining direct-scrape feeds — same gap as OFSI/EU above: scraped and
+      // committed by refresh-briefing.mjs already, but no converter here meant
+      // none of this ever reached the live briefing or alert pipeline.
+      const unArticles = (ofacCache.unNotices ?? [])
+        .length > 0
+        ? unNoticesToArticles(ofacCache.unNotices!).filter(a => !existingUrls.has(a.sourceUrl!))
+        : [];
+      const bbcArticles = (ofacCache.bbcNews ?? [])
+        .length > 0
+        ? bbcNewsToArticles(ofacCache.bbcNews!).filter(a => !existingUrls.has(a.sourceUrl!))
+        : [];
+      const ajArticles = (ofacCache.ajNews ?? [])
+        .length > 0
+        ? ajNewsToArticles(ofacCache.ajNews!).filter(a => !existingUrls.has(a.sourceUrl!))
+        : [];
+      const occArticles = (ofacCache.occNews ?? [])
+        .length > 0
+        ? occNewsToArticles(ofacCache.occNews!).filter(a => !existingUrls.has(a.sourceUrl!))
+        : [];
+      const economicsArticles = (ofacCache.economicsNews ?? [])
+        .length > 0
+        ? economicsNewsToArticles(ofacCache.economicsNews!).filter(a => !existingUrls.has(a.sourceUrl!))
+        : [];
+      const bisArticles = (ofacCache.bisNews ?? [])
+        .length > 0
+        ? bisNewsToArticles(ofacCache.bisNews!).filter(a => !existingUrls.has(a.sourceUrl!))
+        : [];
+      const regionsArticles = (ofacCache.regionsNews ?? [])
+        .length > 0
+        ? regionsNewsToArticles(ofacCache.regionsNews!).filter(a => !existingUrls.has(a.sourceUrl!))
+        : [];
+      const injected = [
+        ...cachedActionArticles, ...cachedPenaltyArticles, ...programArticles,
+        ...ofsiArticles, ...europaArticles, ...unArticles, ...bbcArticles,
+        ...ajArticles, ...occArticles, ...economicsArticles, ...bisArticles, ...regionsArticles,
+      ];
       if (injected.length > 0) {
         briefing.articles = [...briefing.articles, ...injected];
-        console.log(`[orchestrator] Injected ${cachedActionArticles.length} recent-actions + ${cachedPenaltyArticles.length} penalties + ${programArticles.length} program GL/FR from GitHub OFAC cache`);
+        console.log(`[orchestrator] Injected ${cachedActionArticles.length} recent-actions + ${cachedPenaltyArticles.length} penalties + ${programArticles.length} program GL/FR + ${ofsiArticles.length} OFSI + ${europaArticles.length} EU Commission + ${unArticles.length} UN + ${bbcArticles.length} BBC + ${ajArticles.length} Al Jazeera + ${occArticles.length} OCC + ${economicsArticles.length} Fed + ${bisArticles.length} BIS + ${regionsArticles.length} Regions from GitHub OFAC cache`);
       }
     }
   } catch (e) {

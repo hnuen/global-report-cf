@@ -250,8 +250,44 @@ function refreshCountComment(itemsText) {
   return itemsText.replace(/(\/\/\s*)\d+(\s*GLs?\b)/, `$1${count}$2`);
 }
 
+// ── Tier 1 guard: detect a GL that textually belongs to a DIFFERENT program ─
+// OFAC genuinely cross-lists certain "headline" GLs on more than one program's
+// page — e.g. Russia-related GL 134C (a crude-oil wind-down license) appears
+// in the General Licenses section of Iran's page too, and Iran's GL X showed
+// up on Russia-HFA's, Ukraine's, and Non-Proliferation's pages as well. The
+// scraper has no way to avoid picking these up (it reads whatever a program's
+// own page lists), but blindly treating "appears on this page" as "belongs to
+// this program" duplicated the same GL into 4-5 unrelated program blocks in
+// production, each with a different garbled scraped date (the date/expires
+// regexes grabbed whatever nearby text happened to be on that page). Guard
+// against it here: if a GL's title doesn't name THIS program but does name a
+// different known program, skip it and log a note instead of inserting it.
+function tokenize(s) {
+  return (s || "").toLowerCase().replace(/[^a-z0-9\s-]/g, " ").split(/\s+/).filter(Boolean);
+}
+function stemMatch(a, b) {
+  if (a === b) return true;
+  if (a.length >= 5 && b.length >= 5) return a.slice(0, 5) === b.slice(0, 5);
+  return false;
+}
+function anyStemMatch(toksA, toksB) {
+  return toksA.some((a) => toksB.some((b) => stemMatch(a, b)));
+}
+function crossProgramMismatch(glTitle, ownMeta, allMetas) {
+  const titleToks = tokenize(glTitle).filter((w) => w.length >= 4 && !STOPWORDS.has(w));
+  if (titleToks.length === 0) return null; // nothing to go on — don't guess
+  const ownToks = nameTokens(ownMeta?.name);
+  if (ownToks.length > 0 && anyStemMatch(titleToks, ownToks)) return null; // title names this program
+  for (const m of allMetas || []) {
+    if (!m || m === ownMeta) continue;
+    const toks = nameTokens(m.name);
+    if (toks.length > 0 && anyStemMatch(titleToks, toks)) return m.name;
+  }
+  return null; // doesn't clearly name anyone else either — don't guess, let it through
+}
+
 // ── Tier 1: sync GL / EO entries for one block against scraped program data ─
-function syncBlockEntries(blockText, scraped, log) {
+function syncBlockEntries(blockText, scraped, log, ownMeta, allMetas) {
   const notes = [];
   if (!scraped) return { text: blockText, changed: false, notes };
 
@@ -282,7 +318,16 @@ function syncBlockEntries(blockText, scraped, log) {
     }
 
     const known = new Set([...extractNumbers(activeItems), ...(archiveItems !== null ? extractNumbers(archiveItems) : [])]);
-    const newGLs = (scraped.generalLicenses || []).filter((gl) => gl.number && !known.has(`GL ${gl.number}`));
+    const candidateGLs = (scraped.generalLicenses || []).filter((gl) => gl.number && !known.has(`GL ${gl.number}`));
+    const newGLs = [];
+    for (const gl of candidateGLs) {
+      const mismatch = crossProgramMismatch(gl.title, ownMeta, allMetas);
+      if (mismatch) {
+        notes.push(`Skipped GL ${gl.number} ("${gl.title}") — title names "${mismatch}", not ${ownMeta?.name || "this program"}; likely an OFAC cross-listing on this page, not a genuinely new GL for this program`);
+        continue;
+      }
+      newGLs.push(gl);
+    }
 
     if (newGLs.length > 0) {
       for (const gl of newGLs) {
@@ -449,7 +494,7 @@ export async function syncProgramsLibrary({ programs, recentActions, githubToken
     if (!meta) continue;
     const scraped = programs[meta.slug];
     if (!scraped) continue;
-    const result = syncBlockEntries(blocks[i].text, scraped, log);
+    const result = syncBlockEntries(blocks[i].text, scraped, log, meta, metas);
     if (result.changed) {
       blocks[i].text = result.text;
       anyChanged = true;

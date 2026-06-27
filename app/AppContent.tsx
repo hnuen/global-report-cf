@@ -15,9 +15,9 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
   --c-occ:#b45309;--c-pen:#0369a1;--c-bis:#6d28d9;
   --rule:#e5e7eb;--muted:#6b7280;--mono:'IBM Plex Mono',monospace
 }
-body{background:#ffffff}
+body{background:#ffffff;overflow-x:hidden}
 .app{min-height:100vh;background:var(--paper);color:var(--ink);font-family:'IBM Plex Sans',sans-serif}
-.app{overflow-x:hidden;max-width:100vw}
+.app{max-width:100vw}
 .site-header{position:sticky;top:0;z-index:30;background:#fff}
 .masthead{background:#ffffff}
 .mast-inner{max-width:1140px;margin:0 auto;padding:14px 20px 11px;display:flex;justify-content:center;align-items:center;border-bottom:2px solid #e5e7eb}

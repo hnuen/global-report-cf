@@ -9,7 +9,20 @@
  *   ALERT_SCORE_THRESHOLD   number 0-100, default 75
  *   ALERT_KEYWORDS          comma-separated list added on top of built-ins
  *   ALERT_SECTIONS          comma-separated sections to watch, default "all"
- *   ALERT_COOLDOWN_MINUTES  minimum minutes between SMS for same headline, default 360
+ *   ALERT_COOLDOWN_MINUTES  minimum minutes before the same article (by sourceUrl)
+ *                           can alert again, default 10080 (7 days). This is
+ *                           dedup, not a "remind me later" snooze — official
+ *                           source articles (OFAC, Treasury, FR, etc.) are
+ *                           force-scored 100 below regardless of age, and the
+ *                           cached penalty/program feeds always carry the last
+ *                           ~10 entries (not just newly-published ones), so a
+ *                           short cooldown previously caused the same old
+ *                           penalty to re-alert every few hours indefinitely.
+ *   ALERT_MAX_AGE_HOURS     max age (by the article's own reported date) for it
+ *                           to be alert-eligible at all, default 48. Independent
+ *                           of score — stops old cached articles (e.g. a
+ *                           penalty from weeks ago) from ever qualifying, even
+ *                           on a fresh cooldown.
  */
 
 import type { Article } from "./types";
@@ -107,6 +120,35 @@ const CATEGORY_BOOSTS: Record<string, number> = {
   "AML / BSA":         8,
 };
 
+// ── Recency gate ──────────────────────────────────────────────────────────────
+// GOV_SOURCES_100 below force-scores ANY official .gov sourceUrl to 100
+// regardless of how old the underlying article is, and the cached penalty/
+// program feeds (ofac-github-cache.ts) always carry the last ~10 entries on
+// every run, not just newly-published ones. Without an independent recency
+// check, a months-old OFAC penalty scores exactly as "urgent" as one from
+// this morning and re-qualifies as an alert candidate on every single hourly
+// monitor run. This gate is checked separately from score so it can't be
+// bypassed by a high score.
+const ALERT_MAX_AGE_HOURS = Number(process.env.ALERT_MAX_AGE_HOURS ?? 48);
+
+export function isRecentEnough(dateStr: string, maxAgeHours = ALERT_MAX_AGE_HOURS): boolean {
+  if (!dateStr) return true; // can't verify staleness — don't block on missing data
+  const trimmed = dateStr.trim();
+  // Some sources (e.g. Federal Register notices scraped from program pages)
+  // only ever capture a bare 4-digit year, never a full date — Date.parse on
+  // just "2026" isn't reliably interpretable as "this is recent." Best we can
+  // do without a real date is: only treat the current year as potentially recent.
+  if (/^\d{4}$/.test(trimmed)) {
+    return Number(trimmed) === new Date().getFullYear();
+  }
+  const t = Date.parse(trimmed);
+  if (isNaN(t)) return true; // unparseable — don't block, just can't filter on it
+  const ageMs = Date.now() - t;
+  const FUTURE_SLOP_MS = 24 * 60 * 60 * 1000; // tolerate clock/timezone skew
+  if (ageMs < -FUTURE_SLOP_MS) return false; // implausibly far in the future — bad data, don't alert
+  return ageMs <= maxAgeHours * 60 * 60 * 1000;
+}
+
 // ── Scorer ─────────────────────────────────────────────────────────────────────
 
 export function scoreArticle(article: Article): ScoredArticle {
@@ -191,10 +233,28 @@ export function scoreArticle(article: Article): ScoredArticle {
   const EU_KEYWORDS = ["sanction","fine","penalty","enforcement","designation","restrictive measure","freeze","asset","cartel","antitrust"];
   const isEuCommission = article.sourceUrl?.includes(EU_COMMISSION);
   const euHasKeyword = EU_KEYWORDS.some(k => searchText.includes(k));
+  // UK OFSI / EU Commission / UN / OCC articles injected from the GitHub OFAC
+  // cache (ofac-github-cache.ts converters) carry their own real gov.uk /
+  // ec.europa.eu / press.un.org / occ.gov URLs, but those URLs don't always
+  // match the narrow path patterns in GOV_SOURCES_100 above (e.g. a notice
+  // lives at gov.uk/government/news/..., not .../publications/ofsi). Trust
+  // the source label directly instead — it's already curated/official by
+  // construction (each one passed through its own keyword filter in
+  // refresh-briefing.mjs before ever landing in this cache).
+  //
+  // Deliberately NOT included here: "BBC News", "Al Jazeera", "World News"
+  // (regions), and "Federal Reserve — Press Releases" — these are general
+  // news/press feeds, not enforcement-specific, and force-scoring them to
+  // 100 would reintroduce the alert-noise problem the user originally
+  // reported. They still alert normally via keyword/impact scoring below.
+  // BIS Federal Register items are already covered by the "federalregister.gov"
+  // entry in GOV_SOURCES_100, so no special case is needed for those either.
+  const isCuratedOfficialSource = article.source === "UK OFSI" || article.source === "EU Commission" ||
+    article.source === "United Nations — Press Releases" || article.source === "OCC News Releases";
 
-  if (GOV_SOURCES_100.some(s => article.sourceUrl?.includes(s))) {
+  if (GOV_SOURCES_100.some(s => article.sourceUrl?.includes(s)) || isCuratedOfficialSource) {
     score = 100;
-    reasons.push(`Official enforcement source (100): ${article.sourceUrl}`);
+    reasons.push(`Official enforcement source (100): ${article.source} — ${article.sourceUrl}`);
   } else if (isEuCommission && euHasKeyword) {
     score = 100;
     reasons.push("EU Commission press corner — sanctions/fines keyword match (100)");
@@ -207,7 +267,10 @@ export function scoreArticle(article: Article): ScoredArticle {
 
   // 7. Threshold check
   const threshold = Number(process.env.ALERT_SCORE_THRESHOLD ?? 65);
-  const shouldAlert = sectionOk && score >= threshold;
+  // 8. Recency check — independent of score, see isRecentEnough() above.
+  const recentEnough = isRecentEnough(article.date);
+  if (!recentEnough) reasons.push(`too old to alert (date: "${article.date}")`);
+  const shouldAlert = sectionOk && score >= threshold && recentEnough;
 
   return { article, score, reasons, shouldAlert };
 }
@@ -221,7 +284,18 @@ export function scoreAll(articles: Article[]): ScoredArticle[] {
 // ── Deduplication — track what we've already alerted on ───────────────────────
 
 export function buildAlertKey(article: Article): string {
-  // Stable key: first 60 chars of headline (normalised)
+  // Prefer sourceUrl: it's the actual link to the official action/PDF/notice
+  // and never changes between runs. The previous headline-only key broke
+  // dedup for Gemini-enriched articles, whose headline wording can shift
+  // slightly run-to-run (paraphrasing) for the *same* underlying article —
+  // a different key meant the cooldown/already-alerted check never matched,
+  // so the same news could resend under a "new" key. sourceUrl doesn't have
+  // that problem for official sources, which is exactly the class of article
+  // that was duplicating.
+  if (article.sourceUrl) {
+    return article.sourceUrl.toLowerCase().trim().replace(/\/+$/, "").slice(0, 200);
+  }
+  // Fallback for articles with no sourceUrl: first 60 chars of headline (normalised)
   return article.headline
     .toLowerCase()
     .replace(/[^a-z0-9 ]/g, "")

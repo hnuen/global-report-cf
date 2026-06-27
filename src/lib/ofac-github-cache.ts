@@ -56,11 +56,52 @@ interface OfacCivilPenalty {
   pdfUrl: string;
 }
 
+interface OfsiNotice {
+  title: string;
+  url: string;
+  date: string;
+}
+
+interface EuropaNewsItem {
+  title: string;
+  url: string;
+  date: string;
+  description?: string;
+}
+
+// Shared shape for the remaining direct-scrape feeds (UN, BBC, Al Jazeera,
+// OCC, Federal Reserve, BIS Federal Register, Regions) — refresh-briefing.mjs
+// parses all of these to the same { title, url, date, description? } shape.
+interface NewsCacheItem {
+  title: string;
+  url: string;
+  date: string;
+  description?: string;
+}
+
 export interface OfacCache {
   updatedAt: string;
   recentActions: OfacRecentAction[];
   civilPenalties: OfacCivilPenalty[];
   programs?: Record<string, ProgramData>;
+  // Scraped and committed by refresh-briefing.mjs alongside the OFAC data above,
+  // but previously had no converter here — meaning UK OFSI / EU Commission
+  // sanctions news sat in this cache file unused and never reached the live
+  // briefing or alert pipeline, regardless of how current it was.
+  ofsiNotices?: OfsiNotice[];
+  europaNews?: EuropaNewsItem[];
+  // Same gap as ofsiNotices/europaNews above, for the remaining direct-scrape
+  // feeds in refresh-briefing.mjs. unNotices/occNews are frequently empty —
+  // their keyword filters are intentionally narrow and these sources publish
+  // sparsely, so an empty array here reflects "no matching item this run,"
+  // not a bug.
+  unNotices?: NewsCacheItem[];
+  bbcNews?: NewsCacheItem[];
+  ajNews?: NewsCacheItem[];
+  occNews?: NewsCacheItem[];
+  economicsNews?: NewsCacheItem[];
+  bisNews?: NewsCacheItem[];
+  regionsNews?: NewsCacheItem[];
   /** @deprecated replaced by programs */
   russiaSanctions?: {
     executiveOrders: ProgramEO[];
@@ -207,6 +248,173 @@ export function civilPenaltiesToPenaltyRecords(penalties: OfacCivilPenalty[]): P
       sourceUrl: row.pdfUrl ? absOfacUrl(row.pdfUrl) : "https://ofac.treasury.gov/civil-penalties-and-enforcement-information",
     };
   });
+}
+
+/** Convert UK OFSI notices cache → Article[] for the sanctions/penalties sections */
+export function ofsiNoticesToArticles(notices: OfsiNotice[], startId = 9300): Article[] {
+  return notices.slice(0, 10).map((entry, i) => {
+    const isPenalty = /penalt|fine/i.test(entry.title);
+    const section: Article["section"] = isPenalty ? "penalties" : "sanctions";
+    return {
+      id: startId + i,
+      section,
+      category: isPenalty ? "OFSI Enforcement" : "OFSI",
+      region: "United Kingdom",
+      impact: "high" as const,
+      date: entry.date || "",
+      headline: entry.title,
+      body: [
+        `The UK Office of Financial Sanctions Implementation (OFSI) published "${entry.title}" on ${entry.date || "an unspecified date"}. Full details are available at the official gov.uk notice.`,
+      ],
+      source: "UK OFSI",
+      sourceUrl: entry.url,
+    };
+  });
+}
+
+/** Convert EU Commission/Council sanctions news cache → Article[] for the sanctions section */
+export function europaNewsToArticles(items: EuropaNewsItem[], startId = 9400): Article[] {
+  return items.slice(0, 10).map((entry, i) => ({
+    id: startId + i,
+    section: "sanctions" as const,
+    category: "EU Commission",
+    region: "European Union",
+    impact: "high" as const,
+    date: entry.date || "",
+    headline: entry.title,
+    body: [
+      entry.description ||
+        `The European Commission published "${entry.title}" on ${entry.date || "an unspecified date"}. Full details are available at the official EU source.`,
+    ],
+    source: "EU Commission",
+    sourceUrl: entry.url,
+  }));
+}
+
+/** Convert UN Security Council press-release cache → Article[] for the sanctions section */
+export function unNoticesToArticles(items: NewsCacheItem[], startId = 9500): Article[] {
+  return items.slice(0, 10).map((entry, i) => ({
+    id: startId + i,
+    section: "sanctions" as const,
+    category: "UN",
+    region: "International",
+    impact: "medium" as const,
+    date: entry.date || "",
+    headline: entry.title,
+    body: [
+      entry.description || `The United Nations published: "${entry.title}". Full details are available on press.un.org.`,
+    ],
+    source: "United Nations — Press Releases",
+    sourceUrl: entry.url,
+  }));
+}
+
+/** Convert BBC News (sanctions-relevant) cache → Article[] for the sanctions section */
+export function bbcNewsToArticles(items: NewsCacheItem[], startId = 9600): Article[] {
+  return items.slice(0, 10).map((entry, i) => ({
+    id: startId + i,
+    section: "sanctions" as const,
+    category: "News",
+    region: "International",
+    impact: "medium" as const,
+    date: entry.date || "",
+    headline: entry.title,
+    body: [
+      entry.description || `BBC News reported: "${entry.title}".`,
+    ],
+    source: "BBC News",
+    sourceUrl: entry.url,
+  }));
+}
+
+/** Convert Al Jazeera (sanctions-relevant) cache → Article[] for the sanctions section */
+export function ajNewsToArticles(items: NewsCacheItem[], startId = 9700): Article[] {
+  return items.slice(0, 10).map((entry, i) => ({
+    id: startId + i,
+    section: "sanctions" as const,
+    category: "News",
+    region: "International",
+    impact: "medium" as const,
+    date: entry.date || "",
+    headline: entry.title,
+    body: [
+      entry.description || `Al Jazeera reported: "${entry.title}".`,
+    ],
+    source: "Al Jazeera",
+    sourceUrl: entry.url,
+  }));
+}
+
+/** Convert OCC news-release cache → Article[] for the occ section */
+export function occNewsToArticles(items: NewsCacheItem[], startId = 9800): Article[] {
+  return items.slice(0, 10).map((entry, i) => ({
+    id: startId + i,
+    section: "occ" as const,
+    category: "OCC",
+    region: "United States",
+    impact: "high" as const,
+    date: entry.date || "",
+    headline: entry.title,
+    body: [
+      entry.description || `The Office of the Comptroller of the Currency (OCC) published: "${entry.title}". Full details are available on occ.gov.`,
+    ],
+    source: "OCC News Releases",
+    sourceUrl: entry.url,
+  }));
+}
+
+/** Convert Federal Reserve press-release cache → Article[] for the economics section */
+export function economicsNewsToArticles(items: NewsCacheItem[], startId = 9900): Article[] {
+  return items.slice(0, 10).map((entry, i) => ({
+    id: startId + i,
+    section: "economics" as const,
+    category: "Federal Reserve",
+    region: "United States",
+    impact: "medium" as const,
+    date: entry.date || "",
+    headline: entry.title,
+    body: [
+      entry.description || `The Federal Reserve published: "${entry.title}". Full details are available on federalreserve.gov.`,
+    ],
+    source: "Federal Reserve — Press Releases",
+    sourceUrl: entry.url,
+  }));
+}
+
+/** Convert BIS (Federal Register) export-control documents cache → Article[] for the bis section */
+export function bisNewsToArticles(items: NewsCacheItem[], startId = 10000): Article[] {
+  return items.slice(0, 10).map((entry, i) => ({
+    id: startId + i,
+    section: "bis" as const,
+    category: "BIS",
+    region: "United States",
+    impact: "high" as const,
+    date: entry.date || "",
+    headline: entry.title,
+    body: [
+      entry.description || `The Bureau of Industry and Security (BIS) published: "${entry.title}". Full details are available on federalregister.gov.`,
+    ],
+    source: "Federal Register — BIS",
+    sourceUrl: entry.url,
+  }));
+}
+
+/** Convert general world/regional news cache (non-sanctions BBC/Al Jazeera) → Article[] for the regions section */
+export function regionsNewsToArticles(items: NewsCacheItem[], startId = 10100): Article[] {
+  return items.slice(0, 10).map((entry, i) => ({
+    id: startId + i,
+    section: "regions" as const,
+    category: "World News",
+    region: "International",
+    impact: "medium" as const,
+    date: entry.date || "",
+    headline: entry.title,
+    body: [
+      entry.description || entry.title,
+    ],
+    source: entry.url?.includes("bbc.co") ? "BBC News" : "Al Jazeera",
+    sourceUrl: entry.url,
+  }));
 }
 
 /** Map a program slug to a human-readable region string */

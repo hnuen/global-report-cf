@@ -118,15 +118,26 @@ function parseSanctionsProgram(html) {
   while ((mm = mediaRe.exec(html)) !== null) {
     const url = `https://ofac.treasury.gov${mm[1]}`;
     const linkText = stripHtml(mm[2]).trim();
-    // Numeric-style designators (e.g. "General License 8M") first — this is the
-    // common case across most programs.
-    let numMatch = /(?:General\s+License|GL)[^#\d]*#?\s*(?:No\.?\s*)?(\d+[A-Z]?)/i.exec(linkText);
+    // Letter-hyphen-digit designators (e.g. Iran's "General License J-1",
+    // "General License D-1") FIRST, before the numeric regex below — the numeric
+    // regex's `[^#\d]*` skip happily consumes a leading letter+hyphen like "J-"
+    // (neither character is a digit or "#"), then matches the trailing digit
+    // alone, mangling "GL J-1" into "GL 1". That actually happened in production:
+    // a duplicate of the already-correctly-parsed "GL J-1" entry got inserted
+    // under the bogus designator "GL 1". Trying this specific, unambiguous
+    // pattern first prevents the numeric regex from ever seeing it.
+    let numMatch = /(?:General\s+License|GL)\s+(?:No\.?\s*)?([A-Z]-\d+)\b/i.exec(linkText);
+    if (!numMatch) {
+      // Numeric-style designators (e.g. "General License 8M") — this is the
+      // common case across most programs.
+      numMatch = /(?:General\s+License|GL)[^#\d]*#?\s*(?:No\.?\s*)?(\d+[A-Z]?)/i.exec(linkText);
+    }
     if (!numMatch) {
       // Letter/Roman-numeral-style designators (e.g. Iran's "General License X",
-      // "General License D-1", "General License K") have NO leading digit, so the
-      // numeric regex above never matches them — this is the concrete reason
-      // Iran's GL X (and similar Iran GLs) never showed up at all, even after the
-      // programs-index and per-run-cap fixes landed.
+      // "General License K") have NO leading digit, so the numeric regex above
+      // never matches them — this is the concrete reason Iran's GL X (and
+      // similar Iran GLs) never showed up at all, even after the programs-index
+      // and per-run-cap fixes landed.
       numMatch = /(?:General\s+License|GL)\s+(?:No\.?\s*)?([A-Z]+(?:-\d+)?)\b/i.exec(linkText);
     }
     if (!numMatch) continue;
@@ -474,6 +485,48 @@ console.log(`[refresh-briefing] Programs with changes: ${changedPrograms.length}
 changedPrograms.forEach(p =>
   console.log(`  ${p.slug}: ${cachedPrograms[p.slug]?.lastUpdated ?? "(new)"} → ${p.lastUpdated}`)
 );
+
+// ── Fallback: catch programs whose change the index page's "last updated" ──
+// column missed entirely. Confirmed live 2026-06-25: OFAC issued Venezuela
+// General License 60 (recent-actions entry dated June 25, 2026), but the
+// programs-index date column for Venezuela never flipped, so the date-diff
+// filter above returned 0 changed programs and the GL was never scraped/
+// synced into the curated library. Cross-reference recentActions titles
+// (filtered to GL/EO/designation-signal language) against programsList names
+// using the same single-match-only token-overlap rule already used for
+// keyAdvisories matching in sync-programs-library.mjs's syncAdvisories() —
+// only force a program in when exactly one program name matches, so an
+// ambiguous/multi-program title (e.g. one mentioning two countries) is
+// skipped rather than guessed.
+const SIGNAL_RE = /general license|designat|executive order|\bEO\s?\d|blocks?\b|sanction|prohibit|sdn list/i;
+const STOPWORDS = new Set(["sanctions", "related", "the", "and", "of", "united", "states", "country", "information"]);
+function nameTokens(name) {
+  return (name || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, " ")
+    .split(/\s+/)
+    .filter(w => w.length >= 4 && !STOPWORDS.has(w));
+}
+const changedSlugs = new Set(changedPrograms.map(p => p.slug));
+let forcedCount = 0;
+for (const action of recentActions || []) {
+  if (!SIGNAL_RE.test(action.title || "")) continue;
+  const titleLower = (action.title || "").toLowerCase();
+  const matches = programsList.filter(p => {
+    const toks = nameTokens(p.name);
+    return toks.length > 0 && toks.some(t => titleLower.includes(t));
+  });
+  if (matches.length !== 1) continue; // ambiguous or no match — skip, don't guess
+  const p = matches[0];
+  if (changedSlugs.has(p.slug)) continue; // already picked up by the date check
+  console.log(`[refresh-briefing] Forcing re-scrape of "${p.slug}" — index date didn't flip, but recent-actions title matched: "${action.title}"`);
+  changedPrograms.push(p);
+  changedSlugs.add(p.slug);
+  forcedCount++;
+}
+if (forcedCount > 0) {
+  console.log(`[refresh-briefing] Forced ${forcedCount} program(s) into the re-scrape list via recent-actions fallback match`);
+}
 
 // Fetch and parse each changed program, carry over unchanged from existing cache
 const programs = { ...cachedPrograms };
