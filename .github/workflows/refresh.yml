@@ -30,6 +30,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Install PDF parser (for GL expiry extraction)
+        # refresh-briefing.mjs reads each GL's own PDF to find expiration
+        # dates OFAC states only in the PDF body, never on the program
+        # webpage (e.g. Venezuela GL 60 — "authorized through ... October
+        # 23, 2026" appears only in the PDF). This job otherwise runs with
+        # no `npm ci`/install step at all, so install just this one small
+        # package standalone (--no-save: doesn't touch package.json/lock).
+        # continue-on-error: a registry hiccup here must not break the rest
+        # of the refresh — the script's pdf-parse import is wrapped in a
+        # try/catch and degrades to "skip PDF expiry extraction" if missing.
+        continue-on-error: true
+        run: npm install pdf-parse@1.1.1 --no-save --no-audit --no-fund
+
       - name: Fetch official sources (fast path — no LLM)
         run: |
           # Fetches official RSS/HTML sources and saves to Redis quickly (~10s).

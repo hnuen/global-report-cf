@@ -405,6 +405,69 @@ function parseBisNews(json) {
     }));
 }
 
+// ── Optional: pdf-parse for extracting GL expiry dates from PDF body text ──
+// OFAC's recent-actions/program-index HTML rarely states a GL's expiration
+// inline — for many programs (e.g. Venezuela GL 60, "authorized through
+// 12:01 a.m. eastern daylight time, October 23, 2026") the expiry is stated
+// ONLY inside the GL's own PDF body, which the HTML-only expiresMatch regex
+// in parseSanctionsProgram() can never see. Installed via a separate
+// `npm install pdf-parse --no-save` workflow step (see refresh.yml) rather
+// than added to package.json, since this script runs standalone with no
+// `npm ci` step. Entirely optional/non-fatal: if the install step failed or
+// this import throws for any reason, PDF expiry extraction is just skipped —
+// everything else in the script (cache commit, programs sync, Gemini call)
+// runs exactly as before.
+let pdfParse = null;
+try {
+  // Import the inner lib file, NOT the package's top-level "pdf-parse" entry.
+  // pdf-parse's index.js has a debug-mode footgun: `let isDebugMode =
+  // !module.parent;` is meant to detect "was I required by another module,
+  // or run directly as the main script" — but under ESM dynamic import()
+  // there's no CJS parent chain, so module.parent is always undefined and
+  // isDebugMode is always (incorrectly) true. That branch then tries to
+  // read a test fixture that only exists in the package's own dev repo
+  // (./test/data/05-versions-space.pdf) and throws ENOENT, crashing this
+  // import on every run. Confirmed via local repro: `import("pdf-parse")`
+  // throws ENOENT immediately; `import("pdf-parse/lib/pdf-parse.js")` — the
+  // actual implementation index.js just re-exports — loads cleanly with the
+  // debug code never executing.
+  pdfParse = (await import("pdf-parse/lib/pdf-parse.js")).default;
+  console.log("[pdf-expiry] pdf-parse loaded — PDF expiry extraction enabled");
+} catch (e) {
+  console.warn("[pdf-expiry] pdf-parse unavailable — PDF expiry extraction disabled:", e.message);
+}
+
+async function fetchPdfExpiry(pdfUrl) {
+  if (!pdfParse) return "";
+  try {
+    const res = await fetch(pdfUrl, {
+      signal: AbortSignal.timeout(12000),
+      headers: { "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36" },
+    });
+    if (!res.ok) { console.warn(`[pdf-expiry] ${pdfUrl}: HTTP ${res.status}`); return ""; }
+    const buf = Buffer.from(await res.arrayBuffer());
+    const data = await pdfParse(buf);
+    const text = (data.text || "").replace(/\s+/g, " ");
+    // PDFs commonly word this as "...authorized through 12:01 a.m. eastern
+    // daylight time, October 23, 2026" — the keyword and the actual date
+    // aren't adjacent (unlike the simpler webpage phrasing the HTML regex
+    // expects), so scan a window after each keyword hit for the first
+    // "Month DD, YYYY" date instead of requiring it immediately follow.
+    const KEYWORD_RE = /\b(?:through|until|expir(?:es|ing|ation)?(?:\s+on)?)\b/gi;
+    const DATE_RE = /([A-Z][a-z]+ \d{1,2},? \d{4})/;
+    let km;
+    while ((km = KEYWORD_RE.exec(text)) !== null) {
+      const window = text.slice(km.index, km.index + 200);
+      const dm = DATE_RE.exec(window);
+      if (dm) return dm[1];
+    }
+    return "";
+  } catch (e) {
+    console.warn(`[pdf-expiry] ${pdfUrl}: ${e.message}`);
+    return "";
+  }
+}
+
 // 5. Load existing cache from GitHub to enable change detection
 async function loadExistingCache() {
   if (!GITHUB_TOKEN || !GITHUB_REPO) return null;
@@ -530,11 +593,35 @@ if (forcedCount > 0) {
 
 // Fetch and parse each changed program, carry over unchanged from existing cache
 const programs = { ...cachedPrograms };
+// Bounds worst-case PDF-fetch time across this whole run (8-min Actions
+// timeout) — shared budget across all changed programs, not per-program.
+const PDF_EXPIRY_FETCH_CAP = 25;
+let pdfExpiryFetchCount = 0;
 for (const prog of changedPrograms) {
   console.log(`[refresh-briefing] Fetching: ${prog.name}`);
   const html = await fetchOfac(prog.url);
   if (!html) { console.warn(`  skipped (fetch failed)`); continue; }
   const parsed = parseSanctionsProgram(html);
+
+  // Backfill expiry from each GL's own PDF when the webpage text didn't
+  // state one (see fetchPdfExpiry above for why). Carry forward an
+  // already-known value from the existing cache first — no refetch needed —
+  // and only spend the per-run PDF-fetch budget on GLs whose expiry is
+  // genuinely still unknown.
+  const cachedGLs = cachedPrograms[prog.slug]?.generalLicenses ?? [];
+  for (const gl of parsed.generalLicenses) {
+    if (gl.expires) continue;
+    const cachedMatch = cachedGLs.find(c => c.number === gl.number);
+    if (cachedMatch?.expires) { gl.expires = cachedMatch.expires; continue; }
+    if (pdfExpiryFetchCount >= PDF_EXPIRY_FETCH_CAP) continue;
+    pdfExpiryFetchCount++;
+    const exp = await fetchPdfExpiry(gl.url);
+    if (exp) {
+      gl.expires = exp;
+      console.log(`  [pdf-expiry] GL ${gl.number}: found expiry "${exp}" in PDF body`);
+    }
+  }
+
   programs[prog.slug] = {
     name: prog.name,
     url: prog.url,
@@ -544,6 +631,9 @@ for (const prog of changedPrograms) {
     generalLicenses: parsed.generalLicenses,
   };
   console.log(`  → ${parsed.executiveOrders.length} EOs, ${parsed.frNotices.length} FR notices, ${parsed.generalLicenses.length} GL PDFs`);
+}
+if (pdfExpiryFetchCount > 0) {
+  console.log(`[refresh-briefing] PDF-expiry fallback: fetched ${pdfExpiryFetchCount} PDF(s) this run`);
 }
 
 // ── OFSI (UK) + EU direct scrapes — run every time, independent of the ─────
