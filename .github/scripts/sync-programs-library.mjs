@@ -303,6 +303,35 @@ function syncBlockEntries(blockText, scraped, log, ownMeta, allMetas) {
     const archiveGL = archive ? findArray(archive, "generalLicenses") : null;
     let archiveItems = archiveGL ? archiveGL.itemsText : null;
 
+    // Self-heal: remove any EXISTING active entries whose title clearly names
+    // a different known program. OFAC's program pages embed a sitewide
+    // "Recent Actions" widget listing headline GLs from every program, and
+    // the scraper's media-link regex can't tell that widget apart from a
+    // program's own General Licenses section — so a wrong-program GL can
+    // slip in once (confirmed live 2026-06-26: GL 134C and GL X duplicated
+    // across Iran, russia-hfa, russia-ukraine, sdgt, and non-prolif). Once
+    // in, the backfill loop below only matches by GL number and never
+    // re-checks ownership, so a bad entry would otherwise sit there forever,
+    // silently getting its `expires` re-confirmed every run instead of ever
+    // being caught. Re-validate every existing entry's title each run, not
+    // just new candidates, so these self-heal instead of persisting.
+    let selfHealedAny = false;
+    for (const num of [...extractNumbers(activeItems)]) {
+      const safeNum = num.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      const titleM = new RegExp(`number:\\s*"${safeNum}",\\s*title:\\s*"([^"]*)"`).exec(activeItems);
+      const title = titleM?.[1];
+      if (!title) continue;
+      const mismatch = crossProgramMismatch(title, ownMeta, allMetas);
+      if (mismatch) {
+        const removed = removeEntryLine(activeItems, num);
+        if (removed.removedLine) {
+          activeItems = removed.text;
+          selfHealedAny = true;
+          notes.push(`Removed existing GL ${num} ("${title}") — title names "${mismatch}", not ${ownMeta?.name || "this program"}; corrupted cross-listing duplicate`);
+        }
+      }
+    }
+
     // Backfill `expires` onto already-existing active entries that don't have
     // it yet but have a known expiration date in this run's scrape — runs
     // regardless of whether any genuinely new GL also shows up below.
@@ -380,7 +409,7 @@ function syncBlockEntries(blockText, scraped, log, ownMeta, allMetas) {
       activeItems = refreshCountComment(activeItems);
     }
 
-    if (newGLs.length > 0 || backfilledAny) {
+    if (newGLs.length > 0 || backfilledAny || selfHealedAny) {
       changed = true;
       before = replaceArray(before, activeGL, activeItems);
       if (archiveGL && archiveItems !== archiveGL.itemsText) {

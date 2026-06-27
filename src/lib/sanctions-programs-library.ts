@@ -272,8 +272,16 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
       // addedDate today) was just auto-inserted by the sync script — the
       // designator regex captured "1" instead of "J-1" from the same source
       // text. The correct entry already exists below as "GL J-1".
-      { number: "GL 134C", title: "Russia-related General License 134C", date: "August 21, 2026", url: "https://ofac.treasury.gov/media/935641/download?inline", expires: "August 21, 2026", addedDate: "June 26, 2026" },
-{ number: "GL X", title: "Iran General License X", date: "June 21, 2026", url: "https://ofac.treasury.gov/media/936206/download?inline", expires: "August 21, 2026", addedDate: "June 24, 2026" },
+      // Removed 2026-06-26: a "GL 134C" entry (generic title "Russia-related
+      // General License 134C") was also auto-inserted here — that's Russia
+      // HFA's GL, not Iran's. OFAC's Iran page embeds a sitewide "Recent
+      // Actions" widget listing headline GLs from every program, and the
+      // scraper's media-link regex doesn't distinguish that widget from
+      // Iran's own General Licenses section. GL 134C's real, correctly-
+      // titled entry lives in the russia-hfa block. Fixed GL X's title below
+      // from the same kind of generic placeholder to its real text, verified
+      // against the GL's own PDF (media/936206) — GL X does belong here.
+      { number: "GL X", title: "Authorizing the Production, Delivery and Sale of Crude Oil, Petrochemical Products, and Petroleum Products of Iranian-Origin", date: "June 21, 2026", url: "https://ofac.treasury.gov/media/936206/download?inline", expires: "August 21, 2026" },
 { number: "GL W",   title: "Authorizing the Wind Down of Transactions Involving Certain Persons Blocked on May 1, 2026", date: "May 1, 2026", url: "https://ofac.treasury.gov/media/935561/download?inline" },
       { number: "GL V",   title: "Authorizing the Wind Down of Transactions Involving Hengli Petrochemical (Dalian) Refinery Co., Ltd.", date: "April 24, 2026", url: "https://ofac.treasury.gov/media/935521/download?inline" },
       { number: "GL T",   title: "Authorizing Limited Safety and Environmental Transactions and the Offloading of Cargo Involving Certain Persons or Vessels Blocked on January 23, 2026", date: "January 23, 2026", url: "https://ofac.treasury.gov/media/934946/download?inline" },
@@ -442,10 +450,17 @@ archive: {
       { number: "14024", title: "Blocking Property With Respect to Specified Harmful Foreign Activities of the Government of the Russian Federation — primary authority for the Russia HFA program", date: "April 15, 2021", url: "https://ofac.treasury.gov/media/57936/download?inline" },
     ],
     generalLicenses: [
-      // 43 GLs — verified live against OFAC's Russia-HFA program page, June 26, 2026
-            { number: "GL 131G", title: "Russia-related General License 131G", date: "April 14, 2026", url: "https://ofac.treasury.gov/media/936301/download?inline", addedDate: "June 26, 2026" },
-      { number: "GL X", title: "Iran General License X", date: "November 21, 2025", url: "https://ofac.treasury.gov/media/936206/download?inline", expires: "August 21, 2026", addedDate: "June 26, 2026" },
-{ number: "GL 1B", title: "Authorizing Certain Activities Involving Federal State Budgetary Institution Marine Rescue Service", date: "December 18, 2024", url: "https://ofac.treasury.gov/media/933721/download?inline" },
+      // 42 GLs — verified live against OFAC's Russia-HFA program page, June 26, 2026
+      // Removed 2026-06-26: a "GL X" entry (generic title "Iran General
+      // License X") was auto-inserted here — that's Iran's GL, not Russia
+      // HFA's. Same sitewide "Recent Actions" widget mis-scrape as the
+      // GL 134C/GL X duplicates found in Iran, russia-ukraine, sdgt, and
+      // non-prolif. GL X's real, correctly-titled entry lives in the iran
+      // block. GL 131G below had the same generic-placeholder problem —
+      // fixed its title/date/expires from the GL's own PDF (media/936301):
+      // dated June 25, 2026, authorized through July 25, 2026.
+      { number: "GL 131G", title: "Authorizing Certain Transactions for the Negotiation of and Entry Into Contingent Contracts for the Sale of Lukoil International GmbH and Related Maintenance Activities", date: "June 25, 2026", url: "https://ofac.treasury.gov/media/936301/download?inline", expires: "July 25, 2026" },
+      { number: "GL 1B", title: "Authorizing Certain Activities Involving Federal State Budgetary Institution Marine Rescue Service", date: "December 18, 2024", url: "https://ofac.treasury.gov/media/933721/download?inline" },
       { number: "GL 2", title: "Authorizing Certain Servicing Transactions Involving State Corporation Bank for Development and Foreign Economic Affairs Vnesheconombank", date: "February 22, 2022", url: "https://ofac.treasury.gov/media/918631/download?inline" },
       { number: "GL 6D", title: "Transactions Related to Agricultural Commodities, Medicine, Medical Devices, Replacement Parts and Components, or Software Updates, the Coronavirus Disease 2019 (COVID-19) Pandemic, or Clinical Trials", date: "June 12, 2024", url: "https://ofac.treasury.gov/media/932921/download?inline" },
       { number: "GL 7A", title: "Authorizing Overflight Payments, Emergency Landings, and Air Ambulance Services", date: "May 05, 2022", url: "https://ofac.treasury.gov/media/922841/download?inline" },
@@ -503,7 +518,7 @@ archive: {
 
         archive: {
       generalLicenses: [
-                                                                { number: "GL 131F", title: "Authorizing Certain Transactions for the Negotiation of and Entry Into Contingent Contracts for the Sale of Lukoil International GmbH and Related Maintenance Activities", archived: true, archivedNote: "Superseded by General License 131G", archivedDate: "April 14, 2026" },
+        { number: "GL 131F", title: "Authorizing Certain Transactions for the Negotiation of and Entry Into Contingent Contracts for the Sale of Lukoil International GmbH and Related Maintenance Activities", date: "May 28, 2026", archived: true, archivedNote: "Superseded by General License 131G", archivedDate: "June 25, 2026" },
 { number: "GL 131E", title: "Authorizing Certain Transactions for the Negotiation of and Entry Into Contingent Contracts for the Sale of Lukoil International GmbH and Related Maintenance Activities", archived: true, archivedNote: "Superseded by General License 131F", archivedDate: "April 14, 2026" },
 { number: "GL 40A", title: "Authorizing Certain Administrative Transactions Involving VTB Capital PLC", archived: true, archivedNote: "Superseded by General License 40C", archivedDate: "August 19, 2022" },
 { number: "GL 1A", title: "Authorizing Certain Activities Involving Federal State Budgetary Institution Marine Rescue Service", archived: true, archivedNote: "Superseded by General License 1B" },
@@ -611,9 +626,14 @@ archive: {
       { number: "GL 24", title: "Ukraine General License 24", date: "March 11, 2022", url: "https://ofac.treasury.gov/media/919801/download?inline", addedDate: "June 26, 2026" },
       { number: "GL 25", title: "Ukraine General License 25", date: "March 18, 2022", url: "https://ofac.treasury.gov/media/920276/download?inline", addedDate: "June 26, 2026" },
       { number: "GL 26A", title: "Ukraine General License 26A", date: "May 31, 2022", url: "https://ofac.treasury.gov/media/933911/download?inline", addedDate: "June 26, 2026" },
-      { number: "GL 134C", title: "Russia-related General License 134C", date: "January 15, 2025", url: "https://ofac.treasury.gov/media/935641/download?inline", addedDate: "June 26, 2026" },
-      { number: "GL X", title: "Iran General License X", date: "April 17, 2026", url: "https://ofac.treasury.gov/media/936206/download?inline", expires: "August 21, 2026", addedDate: "June 26, 2026" },
-{ number: "Russia GL 134C", title: "Authorizing the Delivery and Sale of Crude Oil and Petroleum Products of Russian Federation Origin Loaded on Vessels as of April 17, 2026", date: "May 18, 2026", expires: "June 17, 2026", url: "https://ofac.treasury.gov/media/935641/download?inline" },
+      // Removed 2026-06-26: three corrupted entries auto-inserted here — "GL
+      // 134C" and "GL X" (generic placeholder titles naming Russia-HFA and
+      // Iran respectively, not this program) plus a malformed third copy
+      // under the nonstandard designator "Russia GL 134C". All are the same
+      // sitewide "Recent Actions" widget mis-scrape found across Iran,
+      // russia-hfa, sdgt, and non-prolif. GL 134C's and GL X's real entries
+      // live in the russia-hfa and iran blocks respectively — neither
+      // belongs in russia-ukraine.
       { number: "Ukraine GL 26A", title: "Transactions Authorized Pursuant to the Russian Harmful Foreign Activities Sanctions Regulations", date: "January 15, 2025", url: "https://ofac.treasury.gov/media/933911/download?inline" },
       { number: "Ukraine GL 25", title: "Journalistic Activities and Establishment of News Bureaus in Certain Regions of Ukraine", date: "March 24, 2022", url: "https://ofac.treasury.gov/media/920276/download?inline" },
       { number: "Ukraine GL 24", title: "Transactions Related to the Provision of Maritime Services", date: "March 18, 2022", url: "https://ofac.treasury.gov/media/919801/download?inline" },
@@ -840,8 +860,11 @@ archive: {
     ],
     generalLicenses: [
             { number: "GL 25", title: "Fact Sheet: Frequently Asked Questions (FAQs) for Syria General License 25", date: "June 30, 2025", url: "https://ofac.treasury.gov/media/934311/download?inline", addedDate: "June 26, 2026" },
-      { number: "GL 134C", title: "Russia-related General License 134C", date: "May 23, 2025", url: "https://ofac.treasury.gov/media/935641/download?inline", addedDate: "June 26, 2026" },
-{ number: "GL 2", title: "Travel, Employment, Residence and Maintenance Transactions with the Palestinian Authority", date: "April 12, 2006", url: "https://ofac.treasury.gov/media/8366/download?inline" },
+      // Removed 2026-06-26: "GL 134C" (generic placeholder title naming
+      // Russia HFA, not SDGT) — same sitewide "Recent Actions" widget
+      // mis-scrape as the duplicates found in Iran, russia-hfa, russia-
+      // ukraine, and non-prolif. Its real entry lives in the russia-hfa block.
+      { number: "GL 2", title: "Travel, Employment, Residence and Maintenance Transactions with the Palestinian Authority", date: "April 12, 2006", url: "https://ofac.treasury.gov/media/8366/download?inline" },
       { number: "GL 3", title: "Payment of Taxes and Incidental Fees to the Palestinian Authority", date: "April 12, 2006", url: "https://ofac.treasury.gov/media/8371/download?inline" },
       { number: "GL 4", title: "Transactions with Entities Under the Control of the Palestinian President and Certain Other Entities", date: "April 12, 2006", url: "https://ofac.treasury.gov/media/8376/download?inline" },
       { number: "GL 5", title: "Concluding Activities with the Palestinian Authority", date: "April 12, 2006", url: "https://ofac.treasury.gov/media/8381/download?inline" },
@@ -916,9 +939,12 @@ archive: {
       { number: "13382", title: "Blocking Property of Weapons of Mass Destruction Proliferators and Their Supporters", date: "June 28, 2005", url: "https://ofac.treasury.gov/media/5556/download?inline" },
     ],
     generalLicenses: [
-            { number: "GL 134C", title: "Russia-related General License 134C", date: "February 03, 2014", url: "https://ofac.treasury.gov/media/935641/download?inline", addedDate: "June 26, 2026" },
-      { number: "GL X", title: "Iran General License X", date: "April 17, 2026", url: "https://ofac.treasury.gov/media/936206/download?inline", expires: "August 21, 2026", addedDate: "June 26, 2026" },
-{ number: "GL 1", title: "Revocation of Non-Proliferation General License No. 1", date: "", url: "https://ofac.treasury.gov/media/8591/download?inline" },
+            // Removed 2026-06-26: "GL 134C" and "GL X" (generic placeholder titles
+      // naming Russia HFA and Iran, not Non-Proliferation) — same sitewide
+      // "Recent Actions" widget mis-scrape as the duplicates found in Iran,
+      // russia-hfa, russia-ukraine, and sdgt. Their real entries live in the
+      // russia-hfa and iran blocks respectively.
+      { number: "GL 1", title: "Revocation of Non-Proliferation General License No. 1", date: "", url: "https://ofac.treasury.gov/media/8591/download?inline" },
       { number: "GL 2", title: "Non-Proliferation General License No. 2", date: "", url: "https://ofac.treasury.gov/media/8596/download?inline" },
       { number: "GL 3", title: "Revocation of Non-Proliferation General License No. 3", date: "December 21, 2010", url: "https://ofac.treasury.gov/media/8601/download?inline" },
       { number: "GL 4", title: "Non-Proliferation General License No. 4", date: "June 23, 2011", url: "https://ofac.treasury.gov/media/8606/download?inline" },
