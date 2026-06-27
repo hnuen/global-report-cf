@@ -80,8 +80,13 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/balkans-related-sanctions",
     region: "EU / Europe", category: "country", lastUpdated: "Nov 20, 2025", status: "active",
     executiveOrders: [
-      { number: "13219", title: "Blocking Property of Persons Who Threaten International Stabilization Efforts in the Western Balkans", date: "June 26, 2001", url: "https://ofac.treasury.gov/media/6246/download?inline" },
+      // Added 14140/14033 2026-06-27: were missing — verified via live OFAC
+      // Balkans-Related Sanctions Legal Framework page, which lists EOs
+      // newest-first as 14140, 14033, 13304, 13219.
+      { number: "14140", title: "Taking Additional Steps with Respect to the Situation in the Western Balkans", url: "https://ofac.treasury.gov/media/933906/download?inline" },
+      { number: "14033", title: "Blocking Property and Suspending Entry into the United States of Certain Persons Contributing to the Destabilizing Situation in the Western Balkans", date: "June 8, 2021", url: "https://ofac.treasury.gov/media/99181/download?inline" },
       { number: "13304", title: "Termination of Emergencies With Respect to Yugoslavia and Modification of EO 13219", date: "May 28, 2003", url: "https://ofac.treasury.gov/media/6176/download?inline" },
+      { number: "13219", title: "Blocking Property of Persons Who Threaten International Stabilization Efforts in the Western Balkans", date: "June 26, 2001", url: "https://ofac.treasury.gov/media/6246/download?inline" },
     ],
     generalLicenses: [
       { number: "GL 1", title: "Western Balkans General License (No. 1) - Legal Representation in Matters Pending before the International Criminal Tribunal the former Yugoslavia", date: "July 09, 2003", url: "https://ofac.treasury.gov/media/6201/download?inline" },
@@ -129,7 +134,9 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/burma",
     region: "SEA", category: "country", lastUpdated: "Nov 12, 2025", status: "active",
     executiveOrders: [
-      { number: "14014", title: "Blocking Property With Respect to the Situation in Burma", date: "February 10, 2021", url: "https://www.federalregister.gov/executive-order/14014" },
+      // url corrected 2026-06-27: was pointing to federalregister.gov; live
+      // OFAC Burma Legal Framework page hosts its own PDF at this media id.
+      { number: "14014", title: "Blocking Property With Respect to the Situation in Burma", date: "February 10, 2021", url: "https://ofac.treasury.gov/media/54046/download?inline" },
     ],
     generalLicenses: [
       // Corrected 2026-06-26: the previous "GL 4"/"GL 5" entries here (dated
@@ -174,14 +181,31 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/cuba-sanctions",
     region: "Cuba", category: "country", lastUpdated: "May 7, 2026", status: "active",
     executiveOrders: [
-      // 2 EOs — sorted newest first
+      // 3 EOs — sorted newest first.
+      // Added 14380 2026-06-27: was missing entirely — confirmed real via
+      // White House/Federal Register (signed Jan 29, 2026, the underlying
+      // national-emergency declaration that EO 14404 itself takes "further
+      // steps" under — EO 14404's own text cites it directly). No OFAC media
+      // PDF exists yet (see note below), so url points to the Federal
+      // Register notice.
+      // NOTE: as of 2026-06-27 OFAC's live "Cuba Sanctions" Legal Framework
+      // page (the legacy CACR page) still lists ONLY EO 12854 (1993) under
+      // Executive Orders — it has not been updated to reflect the new
+      // IEEPA-based program (EOs 14380/14404) at all, and doesn't list 13799
+      // either despite that EO never having been revoked. This looks like
+      // page staleness on OFAC's part (the new program may eventually get
+      // its own dedicated page/slug) rather than evidence these EOs are
+      // wrong — 14404 was independently verified by fetching its own PDF
+      // text, which explicitly invokes 14380. Not removing 13799/14404
+      // based on this single page's incompleteness.
       { number: "14404", title: "Imposing Sanctions on Those Responsible for Repression in Cuba and for Threats to United States National Security and Foreign Policy (new IEEPA-based program, separate from and in addition to CACR)", date: "May 1, 2026", url: "https://ofac.treasury.gov/media/935581/download?inline" },
+      { number: "14380", title: "Addressing Threats to the United States by the Government of Cuba (national emergency declaration underlying EO 14404)", date: "January 29, 2026", url: "https://www.federalregister.gov/documents/2026/02/03/2026-02250/addressing-threats-to-the-united-states-by-the-government-of-cuba" },
       { number: "13799", title: "Strengthening the Policy of the United States Toward Cuba (National Security Presidential Memorandum-5 implementation; reinstated Cuba Restricted List)", date: "November 8, 2017", url: "https://ofac.treasury.gov/media/10651/download?inline" },
     ],
     generalLicenses: [
       { number: "GL 1", title: "Transactions Authorized Pursuant to the Cuban Assets Control Regulations — authorizes all transactions prohibited by EO 14404 where already authorized or exempt under the CACR (31 CFR Part 515)", date: "May 7, 2026", url: "https://ofac.treasury.gov/media/931821/download?inline" },
     ],
-    notes: "Cuba sanctions operate on two parallel tracks: (1) Cuban Assets Control Regulations (CACR), 31 CFR Part 515 — the comprehensive embargo in place since 1963, statute-based, not an EO; and (2) EO 14404 (May 2026) — new IEEPA-based targeted sanctions program covering energy, defense, metals/mining, financial services, and security sectors. EO 14404 does not replace the CACR; both operate simultaneously.",
+    notes: "Cuba sanctions operate on two parallel tracks: (1) Cuban Assets Control Regulations (CACR), 31 CFR Part 515 — the comprehensive embargo in place since 1963, statute-based, not an EO; and (2) EO 14380 (Jan 2026, national emergency declaration) and EO 14404 (May 2026, implementing sanctions) — new IEEPA-based targeted sanctions program covering energy, defense, metals/mining, financial services, and security sectors. Neither EO replaces the CACR; all operate simultaneously. As of 2026-06-27, OFAC's live Cuba Sanctions Legal Framework page has not yet been updated to list 14380/14404.",
   },
 
   {
@@ -366,14 +390,23 @@ archive: {
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/iraq-related-sanctions",
     region: "MEA", category: "country", lastUpdated: "Jul 09, 2025", status: "active",
     executiveOrders: [
-      { number: "13303", title: "Protecting the Development Fund for Iraq and Certain Other Property in Which Iraq Has an Interest", date: "May 22, 2003", url: "https://ofac.treasury.gov/media/7391/download?inline" },
-      { number: "13315", title: "Blocking Property of the Former Iraqi Regime, Its Senior Officials and Their Family Members", date: "August 28, 2003", url: "https://ofac.treasury.gov/media/7386/download?inline" },
-      { number: "13350", title: "Termination of Emergency Declared in EO 12722 and EO 12724 with Respect to Iraq", date: "July 30, 2004", url: "https://ofac.treasury.gov/media/7406/download?inline" },
+      // Added 13668/13438/13290 2026-06-27: were missing — verified via live
+      // OFAC Iraq-Related Sanctions Legal Framework page, which lists 7 EOs
+      // newest-first as 13668, 13438, 13364, 13350, 13315, 13303, 13290.
+      { number: "13668", title: "Ending Immunities Granted to the Development Fund for Iraq and Certain Other Iraqi Property and Interests in Property Pursuant to Executive Order 13303, as Amended", date: "May 27, 2014", url: "https://ofac.treasury.gov/media/7416/download?inline" },
+      { number: "13438", title: "Blocking Property of Certain Persons Who Threaten Stabilization Efforts in Iraq", date: "July 17, 2007", url: "https://ofac.treasury.gov/media/7371/download?inline" },
       { number: "13364", title: "Modifying the Protection Afforded to the Development Fund for Iraq", date: "November 29, 2004", url: "https://ofac.treasury.gov/media/7381/download?inline" },
+      { number: "13350", title: "Termination of Emergency Declared in EO 12722 and EO 12724 with Respect to Iraq", date: "July 30, 2004", url: "https://ofac.treasury.gov/media/7406/download?inline" },
+      { number: "13315", title: "Blocking Property of the Former Iraqi Regime, Its Senior Officials and Their Family Members", date: "August 28, 2003", url: "https://ofac.treasury.gov/media/7386/download?inline" },
+      { number: "13303", title: "Protecting the Development Fund for Iraq and Certain Other Property in Which Iraq Has an Interest", date: "May 22, 2003", url: "https://ofac.treasury.gov/media/7391/download?inline" },
+      { number: "13290", title: "Confiscating and Vesting Certain Iraqi Property", date: "March 20, 2003", url: "https://ofac.treasury.gov/media/7411/download?inline" },
     ],
     generalLicenses: [
-            { number: "GL 575", title: "Iraqi General License - Section 575.533", date: "March 26, 2004", url: "https://ofac.treasury.gov/media/7356/download?inline", addedDate: "June 26, 2026" },
-{ number: "GL (575.533)", title: "Iraqi General License - Section 575.533", date: "March 26, 2004", url: "https://ofac.treasury.gov/media/7356/download?inline" },
+            { number: "GL (575.533)", title: "Iraqi General License - Section 575.533", date: "March 26, 2004", url: "https://ofac.treasury.gov/media/7356/download?inline" },
+      // Deduped 2026-06-27: removed a "GL 575" entry that was an exact
+      // duplicate of this one (same title/date/media URL), just under a
+      // different number format. Same dedup pattern as the prior Cyber GL
+      // and Global Magnitsky GL8 fixes.
       { number: "GL 6", title: "Iraqi General License (No. 6) - Section 575.534", date: "September 30, 2003", url: "https://ofac.treasury.gov/media/7366/download?inline" },
       { number: "GL 1", title: "Iraqi General License (No. 1 / 13315)", date: "August 30, 2003", url: "https://ofac.treasury.gov/media/7361/download?inline" },
     ],
@@ -422,8 +455,15 @@ archive: {
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/nicaragua-related-sanctions",
     region: "Global", category: "country", lastUpdated: "Apr 16, 2026", status: "active",
     executiveOrders: [
+      // Fixed 2026-06-27: live OFAC Nicaragua Legal Framework page lists only
+      // 14088 and 13851 under Executive Orders. Added missing 14088. Removed
+      // the prior "13779" entry — that EO number is actually "Establishing an
+      // Initiative to Promote and Strengthen Historically Black Colleges and
+      // Universities" (Feb 28, 2017), unrelated to Nicaragua/Venezuela; it
+      // does not appear on the live page and the title/date attached to it
+      // here didn't match the real EO 13779 — looks like a hallucinated entry.
+      { number: "14088", title: "Taking Additional Steps to Address the National Emergency With Respect to the Situation in Nicaragua", date: "October 24, 2022", url: "https://ofac.treasury.gov/media/929106/download?inline" },
       { number: "13851", title: "Taking Additional Steps to Address the National Emergency With Respect to Nicaragua", date: "November 27, 2018", url: "https://ofac.treasury.gov/media/6931/download?inline" },
-      { number: "13779", title: "Taking Additional Steps With Respect to the National Emergency With Respect to the Situation in Venezuela (applied to Nicaragua)", date: "2019", url: "https://www.federalregister.gov/executive-order/13779" },
     ],
     generalLicenses: [],
     keyAdvisories: [
@@ -732,7 +772,17 @@ archive: {
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/sudan-and-darfur-sanctions",
     region: "MEA", category: "country", lastUpdated: "Apr 17, 2026", status: "active",
     executiveOrders: [
+      // Added 2026-06-27: live OFAC Sudan and Darfur Legal Framework page
+      // lists 6 EOs (mirroring its own historical-EO convention used for
+      // other programs like DPRK/Iraq); library only had 13400. Added the
+      // 5 missing ones — notably EO 14098 (2023), which is a currently
+      // active order for the post-2023 Sudan conflict, not a historical one.
+      { number: "14098", title: "Imposing Sanctions on Certain Persons Destabilizing Sudan and Undermining the Goal of a Democratic Transition", date: "May 4, 2023", url: "https://ofac.treasury.gov/media/931716/download?inline" },
+      { number: "13804", title: "Allowing Additional Time for Recognizing Positive Actions by the Government of Sudan and Amending Executive Order 13671", date: "July 11, 2017", url: "https://ofac.treasury.gov/media/7291/download?inline" },
+      { number: "13761", title: "Recognizing Positive Actions by the Government of Sudan and Providing for the Revocation of Certain Sudan-Related Sanctions", date: "January 13, 2017", url: "https://ofac.treasury.gov/media/7296/download?inline" },
+      { number: "13412", title: "Blocking Property of and Prohibiting Transactions With the Government of Sudan", date: "October 13, 2006", url: "https://ofac.treasury.gov/media/7301/download?inline" },
       { number: "13400", title: "Blocking Property of Persons in Connection With the Conflict in Sudan's Darfur Region", date: "April 26, 2006", url: "https://ofac.treasury.gov/media/7306/download?inline" },
+      { number: "13067", title: "Blocking Sudanese Government Property and Prohibiting Transactions With Sudan", date: "November 3, 1997", url: "https://ofac.treasury.gov/media/7311/download?inline" },
     ],
     generalLicenses: [
       { number: "GL 1", title: "Official Business of Certain International Organizations and Entities", date: "June 01, 2023", url: "https://ofac.treasury.gov/media/931821/download?inline" },
@@ -754,6 +804,9 @@ archive: {
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/venezuela-related-sanctions",
     region: "Venezuela", category: "country", lastUpdated: "Jun 25, 2026", status: "active",
     executiveOrders: [
+      // Added 2026-06-27: EO 14373 (Jan 2026) was missing — live OFAC
+      // Venezuela Legal Framework page lists 8 EOs, library only had 7.
+      { number: "14373", title: "Safeguarding Venezuelan Oil Revenue for the Good of the American and Venezuelan People", date: "January 9, 2026", url: "https://ofac.treasury.gov/media/934901/download?inline" },
       { number: "13692", title: "Blocking Property and Suspending Entry of Certain Persons Contributing to the Situation in Venezuela", date: "March 8, 2015", url: "https://ofac.treasury.gov/media/5906/download?inline" },
       { number: "13808", title: "Imposing Additional Sanctions With Respect to Venezuela", date: "August 24, 2017", url: "https://ofac.treasury.gov/media/5476/download?inline" },
       { number: "13827", title: "Taking Additional Steps to Address the Situation in Venezuela", date: "March 19, 2018", url: "https://ofac.treasury.gov/media/5486/download?inline" },
@@ -870,7 +923,16 @@ archive: {
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/paarss",
     region: "MEA", category: "country", lastUpdated: "Dec 23, 2025", status: "residual",
     executiveOrders: [
-      { number: "14309 (EO of June 30, 2025)", title: "Removing US Sanctions on Syria — broad Syria sanctions lifted July 1, 2025", date: "June 30, 2025" },
+      // Fixed 2026-06-27: live OFAC PAARSS Legal Framework page lists 4 EOs.
+      // The prior single entry had the wrong EO number ("14309" doesn't
+      // exist as this order — the real revocation order is EO 14312) and
+      // a non-official title. Also added the 3 other EOs that remain part
+      // of the residual program's legal authority (14142, 13894, 13606),
+      // which were missing entirely.
+      { number: "14312", title: "Providing for the Revocation of Syria Sanctions", date: "July 1, 2025", url: "https://ofac.treasury.gov/media/934411/download?inline" },
+      { number: "14142", title: "Taking Additional Steps with Respect to the Situation in Syria", date: "January 15, 2025", url: "https://ofac.treasury.gov/media/933951/download?inline" },
+      { number: "13894", title: "Blocking Property and Suspending Entry of Certain Persons Contributing to the Situation in Syria", date: "October 14, 2019", url: "https://ofac.treasury.gov/media/25986/download?inline" },
+      { number: "13606", title: "Blocking the Property and Suspending Entry Into the United States of Certain Persons With Respect to Grave Human Rights Abuses by the Governments of Iran and Syria via Information Technology", date: "April 23, 2012", url: "https://ofac.treasury.gov/media/6491/download?inline" },
     ],
     generalLicenses: [
             { number: "GL 25", title: "Syria General License (GL) 25", date: "July 1, 2025", url: "https://ofac.treasury.gov/media/934306/download?inline", addedDate: "June 24, 2026" },
