@@ -352,11 +352,17 @@ function syncBlockEntries(blockText, scraped, log, ownMeta, allMetas) {
         }
         if (predecessor) {
           if (archiveItems !== null) {
-            const titleM = new RegExp(`number:\\s*"GL ${predecessor}",\\s*title:\\s*"([^"]*)"`).exec(activeItems);
+            // Capture the predecessor's issued `date` too (not just title) so the
+            // archived entry preserves "Issued Date" instead of losing it — the
+            // archive table in AppContent.tsx shows License #/Title/Issued
+            // Date/Expired Date as separate columns, so the original issue date
+            // needs to survive the move into archive{}.
+            const titleM = new RegExp(`number:\\s*"GL ${predecessor}",\\s*title:\\s*"([^"]*)"(?:,\\s*date:\\s*"([^"]*)")?`).exec(activeItems);
             const removed = removeEntryLine(activeItems, `GL ${predecessor}`);
             activeItems = removed.text;
             const archIndent = entryIndentOf(archiveItems) || "        ";
-            const archivedLine = `${archIndent}{ number: "GL ${predecessor}", title: "${esc(titleM?.[1] || "")}", archived: true, archivedNote: "Superseded by General License ${esc(gl.number)}", archivedDate: "${esc(gl.date)}" },\n`;
+            const dateField = titleM?.[2] ? `date: "${esc(titleM[2])}", ` : "";
+            const archivedLine = `${archIndent}{ number: "GL ${predecessor}", title: "${esc(titleM?.[1] || "")}", ${dateField}archived: true, archivedNote: "Superseded by General License ${esc(gl.number)}", archivedDate: "${esc(gl.date)}" },\n`;
             archiveItems = insertAtTop(archiveItems, archivedLine);
             notes.push(`Archived GL ${predecessor} → superseded by GL ${gl.number}`);
           } else {

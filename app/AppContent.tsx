@@ -1407,18 +1407,25 @@ export default function GlobalMonitor() {
                     </span>
                   </div>
                   <table className="ofac-prog-table" style={{opacity:.8}}>
-                    <thead><tr><th>Item</th><th>Title</th><th>Archived</th><th>Note</th></tr></thead>
+                    <thead><tr><th>License #</th><th>Title</th><th>Issued Date</th><th>Expired Date</th></tr></thead>
                     <tbody>
                       {[...(prog.archive.generalLicenses||[]),...(prog.archive.executiveOrders||[]),...(prog.archive.advisories||[])]
                         .sort((a,b)=>parseDate(b.archivedDate||b.date)-parseDate(a.archivedDate||a.date))
-                        .map((item,i)=>(
-                        <tr key={i} style={{background:"#f9fafb"}}>
-                          <td style={{textDecoration:"line-through",color:"#9ca3af",fontFamily:"var(--mono)",fontSize:".65rem"}}>{item.number||"Advisory"}</td>
-                          <td style={{color:"#9ca3af"}}>{item.title}</td>
-                          <td style={{fontFamily:"var(--mono)",fontSize:".6rem",color:"#9ca3af",whiteSpace:"nowrap"}}>{item.archivedDate||"—"}</td>
-                          <td style={{fontStyle:"italic",color:"#9ca3af",fontSize:".7rem"}}>{item.archivedNote||"—"}</td>
-                        </tr>
-                      ))}
+                        .map((item,i)=>{
+                          // Expired Date: prefer the explicit archivedDate field; older entries
+                          // that predate that field only have it embedded as text in archivedNote
+                          // (e.g. "Expired June 22, 2021") — fall back to extracting it from there
+                          // rather than showing blank.
+                          const expiredDate = item.archivedDate || item.archivedNote?.match(/([A-Z][a-z]+ \d{1,2},? \d{4})/)?.[1] || "—";
+                          return (
+                            <tr key={i} style={{background:"#f9fafb"}}>
+                              <td style={{textDecoration:"line-through",color:"#9ca3af",fontFamily:"var(--mono)",fontSize:".65rem"}}>{item.number||"Advisory"}</td>
+                              <td style={{color:"#9ca3af"}}>{item.title}</td>
+                              <td style={{fontFamily:"var(--mono)",fontSize:".6rem",color:"#9ca3af",whiteSpace:"nowrap"}}>{item.date||"—"}</td>
+                              <td style={{fontFamily:"var(--mono)",fontSize:".6rem",color:"#9ca3af",whiteSpace:"nowrap"}}>{expiredDate}</td>
+                            </tr>
+                          );
+                        })}
                     </tbody>
                   </table>
                 </div>

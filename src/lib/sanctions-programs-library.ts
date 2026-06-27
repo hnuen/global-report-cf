@@ -132,15 +132,27 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
       { number: "14014", title: "Blocking Property With Respect to the Situation in Burma", date: "February 10, 2021", url: "https://www.federalregister.gov/executive-order/14014" },
     ],
     generalLicenses: [
-      { number: "GL 4", title: "Authorizing Certain Transactions Related to the Exportation or Reexportation of Agricultural Commodities, Medicine, and Medical Devices to Burma", date: "February 2021" },
-      { number: "GL 5", title: "Authorizing Certain Personal Remittances and NGO Activities in Burma", date: "February 2021" },
+      // Corrected 2026-06-26: the previous "GL 4"/"GL 5" entries here (dated
+      // "February 2021", no url) collided with genuinely different GLs of the
+      // same number in the archive below and were wrong on every field —
+      // verified against the actual Federal Register notices/GL text:
+      // 88 FR 87714-23 (GL 3, issued March 25, 2021) and 89 FR 67556-24 (the
+      // agricultural/medicine provision, added directly to 31 CFR 525.512 on
+      // August 21, 2024 — OFAC never assigned it a "GL #"; it's a standing
+      // regulatory authorization, not a numbered web GL).
+      { number: "GL 3", title: "Certain Transactions in Support of Nongovernmental Organizations' Activities", date: "March 25, 2021", url: "https://ofac.treasury.gov/media/932496/download?inline" },
+      { number: "31 CFR 525.512", title: "Transactions Related to the Provision of Agricultural Commodities, Medicine, Medical Devices, Replacement Parts and Components, or Software Updates for Personal, Non-Commercial Use", date: "August 21, 2024", url: "https://ofac.treasury.gov/media/933111/download?inline" },
     ],
 
         archive: {
       generalLicenses: [
-        { number: "GL 4", title: "Authorizing the Wind Down of Transactions Involving Myanmar Economic Corporation Limited and Myanma Economic Holdings Public Company Limited", archived: true, archivedNote: "Expired June 22, 2021" },
-        { number: "GL 5", title: "Authorizing the Wind Down of Transactions Involving Myanma Investment and Commercial Bank or Myanma Foreign Trade Bank", archived: true, archivedNote: "Expired August 5, 2023" },
-        { number: "GL 6", title: "Authorizing the Wind Down of Transactions Involving Shwe Byain Phyu Group of Companies", archived: true, archivedNote: "Expired March 1, 2024" },
+        // date/archivedDate added 2026-06-26 — verified against the GL's own
+        // text as published in the Federal Register (date = when OFAC issued
+        // the GL; archivedDate = the "authorized through" expiration stated
+        // in the GL itself).
+        { number: "GL 4", title: "Authorizing the Wind Down of Transactions Involving Myanmar Economic Corporation Limited and Myanma Economic Holdings Public Company Limited", date: "March 25, 2021", archived: true, archivedNote: "Wind-down period expired", archivedDate: "June 22, 2021", url: "https://ofac.treasury.gov/media/932496/download?inline" },
+        { number: "GL 5", title: "Authorizing the Wind Down of Transactions Involving Myanma Investment and Commercial Bank or Myanma Foreign Trade Bank", date: "June 21, 2023", archived: true, archivedNote: "Wind-down period expired", archivedDate: "August 5, 2023", url: "https://ofac.treasury.gov/media/932001/download?inline" },
+        { number: "GL 6", title: "Authorizing the Wind Down of Transactions Involving Shwe Byain Phyu Group of Companies", date: "January 31, 2024", archived: true, archivedNote: "Wind-down period expired", archivedDate: "March 1, 2024", url: "https://ofac.treasury.gov/media/933281/download?inline" },
       ],
     },
   },
@@ -255,7 +267,11 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
     ],
     generalLicenses: [
       // 11 active GLs — newest first — all media IDs verified from OFAC page
-            { number: "GL 1", title: "Iran General License J-1", date: "March 19, 2014", url: "https://ofac.treasury.gov/media/7971/download?inline", addedDate: "June 26, 2026" },
+      // Removed 2026-06-26: a duplicate "GL 1" entry (title literally "Iran
+      // General License J-1", same url/media ID as the real GL J-1 below,
+      // addedDate today) was just auto-inserted by the sync script — the
+      // designator regex captured "1" instead of "J-1" from the same source
+      // text. The correct entry already exists below as "GL J-1".
       { number: "GL 134C", title: "Russia-related General License 134C", date: "August 21, 2026", url: "https://ofac.treasury.gov/media/935641/download?inline", expires: "August 21, 2026", addedDate: "June 26, 2026" },
 { number: "GL X", title: "Iran General License X", date: "June 21, 2026", url: "https://ofac.treasury.gov/media/936206/download?inline", expires: "August 21, 2026", addedDate: "June 24, 2026" },
 { number: "GL W",   title: "Authorizing the Wind Down of Transactions Involving Certain Persons Blocked on May 1, 2026", date: "May 1, 2026", url: "https://ofac.treasury.gov/media/935561/download?inline" },
