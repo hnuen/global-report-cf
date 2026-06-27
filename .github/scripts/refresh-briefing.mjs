@@ -126,21 +126,36 @@ function parseSanctionsProgram(html) {
     // a duplicate of the already-correctly-parsed "GL J-1" entry got inserted
     // under the bogus designator "GL 1". Trying this specific, unambiguous
     // pattern first prevents the numeric regex from ever seeing it.
-    let numMatch = /(?:General\s+License|GL)\s+(?:No\.?\s*)?([A-Z]-\d+)\b/i.exec(linkText);
-    if (!numMatch) {
+    //
+    // Confirmed live 2026-06-26: this STILL happened for Iran's GL J-1 even
+    // with this guard in place, because OFAC's page doesn't always use a
+    // plain ASCII hyphen between the letter and digit — it can render as an
+    // en dash/em dash/minus sign depending on how the link text was authored.
+    // A literal "-" in the character class doesn't match those, so the regex
+    // silently failed and fell through to the numeric regex below, which
+    // reproduced the exact "J-1" -> "1" mangling this comment describes.
+    // Accept any common dash variant here and normalize back to an ASCII
+    // hyphen in the stored designator so downstream number-matching (e.g.
+    // against the curated library's "GL J-1") stays consistent.
+    const DASH = "\\-\\u2010\\u2011\\u2012\\u2013\\u2014\\u2212";
+    let numMatch = new RegExp(`(?:General\\s+License|GL)\\s+(?:No\\.?\\s*)?([A-Z])[${DASH}](\\d+)\\b`, "i").exec(linkText);
+    let designator = numMatch ? `${numMatch[1]}-${numMatch[2]}` : null;
+    if (!designator) {
       // Numeric-style designators (e.g. "General License 8M") — this is the
       // common case across most programs.
       numMatch = /(?:General\s+License|GL)[^#\d]*#?\s*(?:No\.?\s*)?(\d+[A-Z]?)/i.exec(linkText);
+      designator = numMatch ? numMatch[1] : null;
     }
-    if (!numMatch) {
+    if (!designator) {
       // Letter/Roman-numeral-style designators (e.g. Iran's "General License X",
       // "General License K") have NO leading digit, so the numeric regex above
       // never matches them — this is the concrete reason Iran's GL X (and
       // similar Iran GLs) never showed up at all, even after the programs-index
       // and per-run-cap fixes landed.
-      numMatch = /(?:General\s+License|GL)\s+(?:No\.?\s*)?([A-Z]+(?:-\d+)?)\b/i.exec(linkText);
+      numMatch = new RegExp(`(?:General\\s+License|GL)\\s+(?:No\\.?\\s*)?([A-Z]+(?:[${DASH}]\\d+)?)\\b`, "i").exec(linkText);
+      designator = numMatch ? numMatch[1].replace(new RegExp(`[${DASH}]`), "-") : null;
     }
-    if (!numMatch) continue;
+    if (!designator) continue;
     const surrounding = stripHtml(html.slice(Math.max(0, mm.index - 300), mm.index + mm[0].length + 300));
     const dateMatch = /(\w+ \d{1,2},? \d{4})/i.exec(surrounding);
     // Expiration date — OFAC's rolling Iran petroleum GLs (and similar time-limited
@@ -148,7 +163,7 @@ function parseSanctionsProgram(html) {
     // Check the link text itself first, then the surrounding page text.
     const expiresMatch = /\b(?:through|until|expir(?:es|ing|ation)?(?:\s+on)?)\s+(\w+ \d{1,2},? \d{4})/i.exec(`${linkText} ${surrounding}`);
     generalLicenses.push({
-      number: numMatch[1].toUpperCase(),
+      number: designator.toUpperCase(),
       title: linkText,
       date: dateMatch?.[1] ?? "",
       expires: expiresMatch?.[1] ?? "",

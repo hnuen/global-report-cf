@@ -1280,12 +1280,35 @@ export default function GlobalMonitor() {
               // objects sourced from the GitHub Actions scrape cache (see app/api/ofac-program/route.ts) —
               // carry the real metadata through instead of just bare numbers, so accepted
               // changes get real titles/dates/urls rather than "pending title update" placeholders.
-              const liveEOs=new Map<string,any>((ofacDiff.executiveOrders||[]).map((e:any)=>[String(e.number),e]));
-              const liveGLs=new Map<string,any>((ofacDiff.generalLicenses||[]).map((g:any)=>[String(g.number),g]));
+              //
+              // Fixed 2026-06-26 — two false-positive sources confirmed live against Iran:
+              // 1. This never checked prog.archive — anything deliberately archived (e.g. a
+              //    confirmed-expired GL whose PDF link OFAC still hosts on the page) was
+              //    re-flagged as "new" every time. Now known numbers include the archive.
+              // 2. OFAC's sitewide "Recent Actions" widget bleeds headline GLs from OTHER
+              //    programs onto this program's page (e.g. Russia-HFA's GL 134C showing up
+              //    on Iran's page) — same cross-listing bug already guarded against in
+              //    sync-programs-library.mjs's crossProgramMismatch(). Port the same
+              //    title-vs-program-name heuristic here so the live diff doesn't surface them.
+              const STOPWORDS=new Set(["sanctions","related","general","license","licenses","program","programs","the","and","of","for","on","in","to","with"]);
+              const nameTokens=(s?:string)=>(s||"").toLowerCase().replace(/[^a-z0-9\s-]/g," ").split(/\s+/).filter(w=>w.length>=4&&!STOPWORDS.has(w));
+              const stemMatch=(a:string,b:string)=>a===b||(a.length>=5&&b.length>=5&&a.slice(0,5)===b.slice(0,5));
+              const ownToks=nameTokens(prog.name);
+              const otherProgToks=SANCTIONS_PROGRAMS.filter(p=>p.id!==prog.id).map(p=>nameTokens(p.name));
+              const titleNamesOtherProgram=(title?:string)=>{
+                const toks=nameTokens(title);
+                if(!toks.length) return false;
+                if(ownToks.length && toks.some(t=>ownToks.some(o=>stemMatch(t,o)))) return false; // names this program
+                return otherProgToks.some(oToks=>oToks.length>0 && toks.some(t=>oToks.some(o=>stemMatch(t,o))));
+              };
+              const liveEOs=new Map<string,any>((ofacDiff.executiveOrders||[]).filter((e:any)=>!titleNamesOtherProgram(e.title)).map((e:any)=>[String(e.number),e]));
+              const liveGLs=new Map<string,any>((ofacDiff.generalLicenses||[]).filter((g:any)=>!titleNamesOtherProgram(g.title)).map((g:any)=>[String(g.number),g]));
               const libEOs=new Set(prog.executiveOrders.map(e=>e.number));
               const libGLs=new Set(prog.generalLicenses.map(g=>g.number.replace("GL ","").trim()));
-              const newEOs=[...liveEOs.values()].filter(e=>!libEOs.has(e.number)&&!libEOs.has("EO "+e.number));
-              const newGLs=[...liveGLs.values()].filter(g=>!libGLs.has(g.number)&&!libGLs.has("GL "+g.number));
+              const archiveEOs=new Set((prog.archive?.executiveOrders||[]).map(e=>e.number));
+              const archiveGLs=new Set((prog.archive?.generalLicenses||[]).map(g=>g.number.replace("GL ","").trim()));
+              const newEOs=[...liveEOs.values()].filter(e=>!libEOs.has(e.number)&&!libEOs.has("EO "+e.number)&&!archiveEOs.has(e.number)&&!archiveEOs.has("EO "+e.number));
+              const newGLs=[...liveGLs.values()].filter(g=>!libGLs.has(g.number)&&!libGLs.has("GL "+g.number)&&!archiveGLs.has(g.number)&&!archiveGLs.has("GL "+g.number));
               const removedGLs=prog.generalLicenses
                 .filter(g=>{const n=g.number.replace("GL ","").trim(); return !liveGLs.has(n)&&!liveGLs.has("GL "+n);})
                 .map(g=>({number:g.number.replace("GL ","").trim(), title:g.title}));

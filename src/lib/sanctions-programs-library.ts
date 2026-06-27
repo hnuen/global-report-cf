@@ -1146,9 +1146,14 @@ archive: {
     name: "Rough Diamond Trade Controls",
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/rough-diamond-trade-controls",
     region: "MEA", category: "thematic", lastUpdated: "Jun 18, 2018", status: "active",
-    executiveOrders: [],
+    executiveOrders: [
+      // Corrected 2026-06-26: OFAC's live page lists one EO under its
+      // "Executive Orders" legal-framework heading — the "No EO" note below
+      // was wrong. Verified via direct fetch of the live page.
+      { number: "13312", title: "Executive Order Implementing the Clean Diamond Trade Act", date: "July 30, 2003", url: "https://ofac.treasury.gov/media/7716/download?inline" },
+    ],
     generalLicenses: [],
-    notes: "Based on the Clean Diamond Trade Act (Public Law 108-19, 2003) and the Kimberley Process Certification Scheme. No EO.",
+    notes: "Based on the Clean Diamond Trade Act (Public Law 108-19, 2003) and the Kimberley Process Certification Scheme.",
   },
 ];
 
