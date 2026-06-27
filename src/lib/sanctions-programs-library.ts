@@ -1066,9 +1066,14 @@ archive: {
     name: "CAATSA-Related Sanctions",
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/countering-americas-adversaries-through-sanctions-act-related-sanctions",
     region: "Global", category: "thematic", lastUpdated: "Feb 24, 2026", status: "active",
-    executiveOrders: [],
+    executiveOrders: [
+      // Corrected 2026-06-26: same bug as Diamonds — OFAC's live page does list
+      // one EO under its "Executive Orders" legal-framework heading. The "No EO"
+      // note below was wrong. Verified via direct fetch of the live page.
+      { number: "13849", title: "Authorizing the Implementation of Certain Sanctions Set Forth in the Countering America's Adversaries Through Sanctions Act", date: "September 20, 2018", url: "https://ofac.treasury.gov/media/8671/download?inline" },
+    ],
     generalLicenses: [],
-    notes: "Based on the Countering America's Adversaries Through Sanctions Act (CAATSA), Public Law 115-44 (August 2, 2017). Targets Russia, Iran, and North Korea. No EO — statute-based.",
+    notes: "Based on the Countering America's Adversaries Through Sanctions Act (CAATSA), Public Law 115-44 (August 2, 2017). Targets Russia, Iran, and North Korea.",
   },
 
   {
