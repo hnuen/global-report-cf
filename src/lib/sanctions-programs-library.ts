@@ -1006,8 +1006,13 @@ archive: {
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/sanctions-related-to-significant-malicious-cyber-enabled-activities",
     region: "Global", category: "thematic", lastUpdated: "Apr 23, 2026", status: "active",
     executiveOrders: [
-      { number: "13694", title: "Blocking the Property of Certain Persons Engaging in Significant Malicious Cyber-Enabled Activities", date: "April 1, 2015", url: "https://ofac.treasury.gov/media/5831/download?inline" },
+      // Added 14306/14144 2026-06-26: were missing — OFAC's live page lists 4
+      // EOs, library only had the original 2 (13694, 13757). Verified via
+      // direct fetch of the live page.
+      { number: "14306", title: "Sustaining Select Efforts to Strengthen the Nation's Cybersecurity and Amending Executive Order 13694 and Executive Order 14144", date: "June 6, 2025", url: "https://ofac.treasury.gov/media/934361/download?inline" },
+      { number: "14144", title: "Strengthening and Promoting Innovation in the Nation's Cybersecurity", date: "January 16, 2025", url: "https://ofac.treasury.gov/media/933946/download?inline" },
       { number: "13757", title: "Taking Additional Steps to Address the National Emergency With Respect to Significant Malicious Cyber-Enabled Activities", date: "December 28, 2016", url: "https://ofac.treasury.gov/media/8561/download?inline" },
+      { number: "13694", title: "Blocking the Property of Certain Persons Engaging in Significant Malicious Cyber-Enabled Activities", date: "April 1, 2015", url: "https://ofac.treasury.gov/media/5831/download?inline" },
     ],
     generalLicenses: [
       { number: "GL 1C", title: "Authorizing Certain Transactions with the Federal Security Service", date: "April 27, 2023", url: "https://ofac.treasury.gov/media/931686/download?inline" },
