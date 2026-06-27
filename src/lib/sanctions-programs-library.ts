@@ -894,9 +894,16 @@ archive: {
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-terrorism-sanctions",
     region: "Global", category: "thematic", lastUpdated: "Jun 22, 2026", status: "active",
     executiveOrders: [
+      // Added 14157/13886/13099/12947 2026-06-26: were missing — OFAC's live
+      // page lists 7 EOs, library only had 3. Verified via direct fetch of
+      // the live page.
+      { number: "14157", title: "Designating Cartels and Other Organizations as Foreign Terrorist Organizations and Specially Designated Global Terrorists", date: "January 20, 2025", url: "https://ofac.treasury.gov/media/934126/download?inline" },
+      { number: "13886", title: "Modernizing Sanctions to Combat Terrorism", date: "September 10, 2019", url: "https://ofac.treasury.gov/media/26041/download?inline" },
+      { number: "13372", title: "Clarification of Certain Executive Orders Blocking Property and Prohibiting Certain Transactions", date: "February 16, 2005", url: "https://ofac.treasury.gov/media/5576/download?inline" },
+      { number: "13268", title: "Termination of Emergency With Respect to the Taliban and Amendment of Executive Order 13224", date: "July 2, 2002", url: "https://ofac.treasury.gov/media/5631/download?inline" },
       { number: "13224", title: "Blocking Property and Prohibiting Transactions With Persons Who Commit, Threaten To Commit, or Support Terrorism", date: "September 23, 2001", url: "https://ofac.treasury.gov/media/5536/download?inline" },
-      { number: "13268", title: "Termination of Emergency With Respect to the Taliban", date: "July 2, 2002", url: "https://ofac.treasury.gov/media/5631/download?inline" },
-      { number: "13372", title: "Clarifying the Prohibition on Transactions With, and the Confiscation of Assets of, Terrorists Who Threaten to Disrupt the Middle East Peace Process", date: "February 16, 2005", url: "https://ofac.treasury.gov/media/5576/download?inline" },
+      { number: "13099", title: "Prohibiting Transactions With Terrorists Who Threaten To Disrupt the Middle East Peace Process", date: "August 21, 1998", url: "https://ofac.treasury.gov/media/6086/download?inline" },
+      { number: "12947", title: "Prohibiting Transactions With Terrorists Who Threaten To Disrupt the Middle East Peace Process", date: "January 23, 1995", url: "https://ofac.treasury.gov/media/6131/download?inline" },
     ],
     generalLicenses: [
             { number: "GL 25", title: "Fact Sheet: Frequently Asked Questions (FAQs) for Syria General License 25", date: "June 30, 2025", url: "https://ofac.treasury.gov/media/934311/download?inline", addedDate: "June 26, 2026" },
@@ -959,8 +966,14 @@ archive: {
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-narcotics-trafficking-sanctions",
     region: "Global", category: "thematic", lastUpdated: "May 8, 2026", status: "active",
     executiveOrders: [
-      { number: "12978", title: "Blocking Assets and Prohibiting Transactions With Significant Narcotics Traffickers", date: "October 21, 1995", url: "https://ofac.treasury.gov/media/6146/download?inline" },
-      { number: "13818", title: "Blocking the Property of Persons Involved in Serious Human Rights Abuse or Corruption (also GNMA)", date: "December 20, 2017", url: "https://ofac.treasury.gov/media/8656/download?inline" },
+      // Corrected 2026-06-26: added 14157/14059 (missing — live page lists 3
+      // EOs, library only had 1 real match); removed 13818, which is the
+      // Global Magnitsky EO and does NOT appear on the live Counter Narcotics
+      // page at all — it was mistakenly added here (belongs to
+      // global-magnitsky). Verified via direct fetch of the live page.
+      { number: "14157", title: "Designating Cartels and Other Organizations as Foreign Terrorist Organizations and Specially Designated Global Terrorists", date: "January 20, 2025", url: "https://ofac.treasury.gov/media/934126/download?inline" },
+      { number: "14059", title: "Imposing Sanctions on Foreign Persons Involved in the Global Illicit Drug Trade", date: "December 15, 2021", url: "https://ofac.treasury.gov/media/917361/download?inline" },
+      { number: "12978", title: "Blocking Assets and Prohibiting Transactions With Significant Narcotics Traffickers", date: "October 22, 1995", url: "https://ofac.treasury.gov/media/6146/download?inline" },
     ],
     generalLicenses: [],
     keyAdvisories: [
@@ -974,9 +987,14 @@ archive: {
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/non-proliferation-sanctions",
     region: "Global", category: "thematic", lastUpdated: "Jun 10, 2026", status: "active",
     executiveOrders: [
-      { number: "12938", title: "Proliferation of Weapons of Mass Destruction", date: "November 14, 1994", url: "https://ofac.treasury.gov/media/6126/download?inline" },
-      { number: "13094", title: "Amending EO 12938 with Respect to Proliferation of Weapons of Mass Destruction", date: "July 28, 1998", url: "https://ofac.treasury.gov/media/6076/download?inline" },
+      // Added 13883/13608 2026-06-26: were missing — OFAC's live page lists 5
+      // EOs, library only had 3. Verified via direct fetch of the live page
+      // (and user screenshot).
+      { number: "13883", title: "Administration of Proliferation Sanctions and Amendment of Executive Order 12851", date: "August 3, 2019", url: "https://ofac.treasury.gov/media/26281/download?inline" },
+      { number: "13608", title: "Prohibiting Certain Transactions With And Suspending Entry Into The United States Of Foreign Sanctions Evaders With Respect To Iran And Syria", date: "May 1, 2012", url: "https://ofac.treasury.gov/media/5926/download?inline" },
       { number: "13382", title: "Blocking Property of Weapons of Mass Destruction Proliferators and Their Supporters", date: "June 28, 2005", url: "https://ofac.treasury.gov/media/5556/download?inline" },
+      { number: "13094", title: "Amending EO 12938 with Respect to Proliferation of Weapons of Mass Destruction", date: "July 28, 1998", url: "https://ofac.treasury.gov/media/6076/download?inline" },
+      { number: "12938", title: "Proliferation of Weapons of Mass Destruction", date: "November 14, 1994", url: "https://ofac.treasury.gov/media/6126/download?inline" },
     ],
     generalLicenses: [
             // Removed 2026-06-26: "GL 134C" and "GL X" (generic placeholder titles
