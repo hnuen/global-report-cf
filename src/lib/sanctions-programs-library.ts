@@ -1054,10 +1054,16 @@ archive: {
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/transnational-criminal-organizations",
     region: "Global", category: "thematic", lastUpdated: "Jun 23, 2026", status: "active",
     executiveOrders: [
+      // Added 13863 2026-06-26: was missing — OFAC's live page lists 2 EOs,
+      // library only had 1. Verified via direct fetch of the live page.
+      { number: "13863", title: "Taking Additional Steps to Address the National Emergency With Respect to Significant Transnational Criminal Organizations", date: "March 15, 2019", url: "https://ofac.treasury.gov/media/14141/download?inline" },
       { number: "13581", title: "Blocking Property of Transnational Criminal Organizations", date: "July 24, 2011", url: "https://ofac.treasury.gov/media/7551/download?inline" },
     ],
     generalLicenses: [
-      { number: "GL 2", title: "Authorizing the Wind Down of Transactions Involving CCU Commercial Bank Plc.", date: "June 23, 2026", url: "https://ofac.treasury.gov/media/936216/download?inline" },
+      // expires backfilled 2026-06-26: GL's own text says "through 12:01 a.m.
+      // eastern daylight time, July 23, 2026" — verified via direct fetch of
+      // the GL PDF itself (media/936216).
+      { number: "GL 2", title: "Authorizing the Wind Down of Transactions Involving CCU Commercial Bank Plc.", date: "June 23, 2026", expires: "July 23, 2026", url: "https://ofac.treasury.gov/media/936216/download?inline" },
     ],
   },
 
