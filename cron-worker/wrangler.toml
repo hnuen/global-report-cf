@@ -8,14 +8,21 @@ compatibility_date = "2025-04-01"
 # reliable than GitHub Actions' own `schedule:` trigger (best-effort, no SLA,
 # known to silently drop/delay runs under platform load — see refresh.yml).
 #
-# Mirrors refresh.yml's cron slots exactly. If you change one, change both —
-# or better, once this Worker is confirmed reliable, delete the `schedule:`
-# block from refresh.yml entirely so refresh.yml is dispatch-only and there's
-# a single source of truth for timing (this file).
+# Two workflows are dispatched from here now (see src/index.js's
+# CRON_WORKFLOW_MAP, which maps each cron string below to a workflow file):
+#   - refresh.yml  : the original 4 slots, business-hours cadence.
+#   - monitor.yml  : added 2026-06-27, hourly around the clock — the alert
+#     pipeline previously ran on GitHub Actions' native `schedule:`, which hit
+#     the same reliability problem refresh.yml already had, causing a
+#     multi-day backlog of alerts to burst out at once instead of firing
+#     promptly. If you add another workflow here, add its cron string AND a
+#     matching entry in CRON_WORKFLOW_MAP — anything not in that map falls
+#     back to dispatching refresh.yml.
 [triggers]
 crons = [
-  "7 13,16,17,21,22 * * *",   # 9:07am, 12:07pm, 1:07pm, 5:07pm, 6:07pm ET
-  "37 12,13,17,21 * * *",     # 8:37am, 9:37am, 1:37pm, 5:37pm ET
-  "7,37 14,15 * * *",         # 10:07–11:37am ET, every 30 min
-  "7,37 18,19,20 * * *",      # 2:07–4:37pm ET, every 30 min
+  "7 13,16,17,21,22 * * *",   # 9:07am, 12:07pm, 1:07pm, 5:07pm, 6:07pm ET — refresh.yml
+  "37 12,13,17,21 * * *",     # 8:37am, 9:37am, 1:37pm, 5:37pm ET — refresh.yml
+  "7,37 14,15 * * *",         # 10:07–11:37am ET, every 30 min — refresh.yml
+  "7,37 18,19,20 * * *",      # 2:07–4:37pm ET, every 30 min — refresh.yml
+  "17 * * * *",               # every hour on the :17 — monitor.yml
 ]

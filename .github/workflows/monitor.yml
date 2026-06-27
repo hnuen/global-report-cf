@@ -1,10 +1,18 @@
 name: Monitor and Alert
 
 on:
-  schedule:
-    # Minute offset to :17 (not :00) to dodge GitHub Actions' top-of-hour
-    # scheduler congestion, which delays/drops runs queued at :00.
-    - cron: '17 * * * *'
+  # Timing moved 2026-06-27 to the same dedicated Cloudflare Worker
+  # (../cron-worker) that already drives refresh.yml, with its own native
+  # Cron Trigger calling workflow_dispatch below on an hourly schedule. This
+  # workflow previously used GitHub Actions' own `schedule:` trigger, which
+  # is the exact mechanism documented in cron-worker/wrangler.toml as
+  # silently delaying/dropping runs under platform load with no SLA — for
+  # an alerting pipeline, a delayed run meant a backlog of articles aging
+  # past the alert-eligibility window before they were ever evaluated, then
+  # several qualifying at once on whatever run finally fired (the root cause
+  # of a multi-day alert burst reported 2026-06-25). This workflow is now
+  # dispatch-only; do not re-add a `schedule:` block here, or both
+  # schedulers will fire and double-send alerts.
   workflow_dispatch:
     inputs:
       topic:

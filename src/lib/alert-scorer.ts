@@ -18,11 +18,20 @@
  *                           ~10 entries (not just newly-published ones), so a
  *                           short cooldown previously caused the same old
  *                           penalty to re-alert every few hours indefinitely.
- *   ALERT_MAX_AGE_HOURS     max age (by the article's own reported date) for it
- *                           to be alert-eligible at all, default 48. Independent
- *                           of score — stops old cached articles (e.g. a
- *                           penalty from weeks ago) from ever qualifying, even
- *                           on a fresh cooldown.
+ *   ALERT_MAX_AGE_HOURS     if set, switches the recency gate back to a rolling
+ *                           hours window (legacy behaviour) instead of the
+ *                           default "today only" calendar-day check. Default:
+ *                           unset — only news dated today (America/New_York)
+ *                           is alert-eligible. Independent of score — stops
+ *                           old cached articles (e.g. a penalty from weeks
+ *                           ago) from ever qualifying, even on a fresh
+ *                           cooldown. Changed 2026-06-27: a 48h rolling
+ *                           window let days-old backlogged articles (the live
+ *                           OFAC scraper often discovers a penalty well after
+ *                           its own listed date) re-qualify once a delayed
+ *                           monitor run finally caught up, bursting out a
+ *                           multi-day backlog of alerts at once instead of
+ *                           same-day news only.
  */
 
 import type { Article } from "./types";
@@ -129,18 +138,70 @@ const CATEGORY_BOOSTS: Record<string, number> = {
 // this morning and re-qualifies as an alert candidate on every single hourly
 // monitor run. This gate is checked separately from score so it can't be
 // bypassed by a high score.
-const ALERT_MAX_AGE_HOURS = Number(process.env.ALERT_MAX_AGE_HOURS ?? 48);
+// undefined → default "today only" calendar-day gate (see header comment).
+// Set ALERT_MAX_AGE_HOURS to opt back into the old rolling-hours behaviour.
+const ALERT_MAX_AGE_HOURS: number | undefined =
+  process.env.ALERT_MAX_AGE_HOURS !== undefined ? Number(process.env.ALERT_MAX_AGE_HOURS) : undefined;
 
-export function isRecentEnough(dateStr: string, maxAgeHours = ALERT_MAX_AGE_HOURS): boolean {
+const MONTH_NUM: Record<string, number> = {
+  january: 1, february: 2, march: 3, april: 4, may: 5, june: 6,
+  july: 7, august: 8, september: 9, october: 10, november: 11, december: 12,
+};
+
+/** Extract a {y,m,d} calendar date from the date-string formats this codebase's
+ *  feeds actually use (ISO "2026-06-27...", "June 27, 2026", "06/27/2026").
+ *  Returns null if the string doesn't match any of them — deliberately
+ *  conservative, since callers treat "can't parse" as "can't confirm it's
+ *  today" under the default gate. */
+function parseCalendarDate(trimmed: string): { y: string; m: string; d: string } | null {
+  let m = /^(\d{4})-(\d{2})-(\d{2})/.exec(trimmed);
+  if (m) return { y: m[1], m: m[2], d: m[3] };
+
+  m = /^([A-Za-z]+)\s+(\d{1,2}),?\s+(\d{4})$/.exec(trimmed);
+  if (m) {
+    const mo = MONTH_NUM[m[1].toLowerCase()];
+    if (mo) return { y: m[3], m: String(mo).padStart(2, "0"), d: m[2].padStart(2, "0") };
+  }
+
+  m = /^(\d{2})\/(\d{2})\/(\d{4})$/.exec(trimmed);
+  if (m) return { y: m[3], m: m[1], d: m[2] };
+
+  return null;
+}
+
+/** Today's calendar date in America/New_York — matches the timezone
+ *  convention used elsewhere in this project (e.g. sync-programs-library.mjs). */
+function todayNY(): { y: string; m: string; d: string } {
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/New_York", year: "numeric", month: "2-digit", day: "2-digit",
+  }).formatToParts(new Date());
+  const get = (t: string) => parts.find(p => p.type === t)?.value ?? "";
+  return { y: get("year"), m: get("month"), d: get("day") };
+}
+
+export function isRecentEnough(dateStr: string, maxAgeHours: number | undefined = ALERT_MAX_AGE_HOURS): boolean {
   if (!dateStr) return true; // can't verify staleness — don't block on missing data
   const trimmed = dateStr.trim();
+
   // Some sources (e.g. Federal Register notices scraped from program pages)
-  // only ever capture a bare 4-digit year, never a full date — Date.parse on
-  // just "2026" isn't reliably interpretable as "this is recent." Best we can
-  // do without a real date is: only treat the current year as potentially recent.
+  // only ever capture a bare 4-digit year, never a full date. That can never
+  // resolve to "today" under the default gate; under an explicit hours
+  // override, fall back to "is it at least the current year."
   if (/^\d{4}$/.test(trimmed)) {
+    if (maxAgeHours === undefined) return false;
     return Number(trimmed) === new Date().getFullYear();
   }
+
+  if (maxAgeHours === undefined) {
+    // Default: today only, calendar-day match in America/New_York — not a
+    // rolling window, so it can't be fooled by time-of-day edge cases.
+    const parsed = parseCalendarDate(trimmed);
+    if (!parsed) return false; // can't confirm it's today — don't alert
+    const today = todayNY();
+    return parsed.y === today.y && parsed.m === today.m && parsed.d === today.d;
+  }
+
+  // Explicit rolling-hours override (legacy behaviour).
   const t = Date.parse(trimmed);
   if (isNaN(t)) return true; // unparseable — don't block, just can't filter on it
   const ageMs = Date.now() - t;
