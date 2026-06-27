@@ -935,8 +935,14 @@ archive: {
       { number: "13606", title: "Blocking the Property and Suspending Entry Into the United States of Certain Persons With Respect to Grave Human Rights Abuses by the Governments of Iran and Syria via Information Technology", date: "April 23, 2012", url: "https://ofac.treasury.gov/media/6491/download?inline" },
     ],
     generalLicenses: [
-            { number: "GL 25", title: "Syria General License (GL) 25", date: "July 1, 2025", url: "https://ofac.treasury.gov/media/934306/download?inline", addedDate: "June 24, 2026" },
-{ number: "Syria GL 25", title: "Authorizing Transactions Prohibited by the Syrian Sanctions Regulations or Involving Certain Blocked Persons", date: "May 23, 2025", url: "https://ofac.treasury.gov/media/934306/download?inline" },
+      // Fixed 2026-06-27: "GL 25" (date July 1, 2025 — actually the EO
+      // revocation effective date, not this GL's issuance date) was an
+      // exact duplicate of "Syria GL 25" below — both point to the same
+      // document (media/934306). Live OFAC confirms GL 25 was issued
+      // May 23, 2025, official title "Authorizing Transactions Prohibited
+      // by the Syrian Sanctions Regulations or Involving Certain Blocked
+      // Persons" — kept the correctly-dated/titled entry, removed the dupe.
+      { number: "Syria GL 25", title: "Authorizing Transactions Prohibited by the Syrian Sanctions Regulations or Involving Certain Blocked Persons", date: "May 23, 2025", url: "https://ofac.treasury.gov/media/934306/download?inline" },
     ],
     notes: "Syria broad sanctions LIFTED July 1, 2025. PAARSS residual program covers: Assad & associates, human rights abusers, Captagon traffickers, proliferation-linked persons, ISIS/AQ affiliates, Iran proxies in Syria.",
 
