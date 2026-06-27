@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-27T15:09:01.136Z",
+  "updatedAt": "2026-06-27T15:38:56.179Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260626",
@@ -2939,7 +2939,20 @@
       "description": "Vance warned &#039;violence will be met with violence&#039; while the IRGC says future responses to aggression will be &#039;broader&#039;."
     }
   ],
-  "occNews": [],
+  "occNews": [
+    {
+      "title": "OCC Announces Enforcement Actions for June 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-48.html",
+      "date": "June 18, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for June 2026."
+    },
+    {
+      "title": "OCC Announces Enforcement Actions for May 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-40.html",
+      "date": "May 21, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for May 2026."
+    }
+  ],
   "economicsNews": [
     {
       "title": "Federal Reserve Board&#39;s annual bank stress test confirms that large banks are well positioned to weather a severe recession and able to continue to lend to households and businesses",
@@ -3443,6 +3456,12 @@
       "description": "Luis von Ahn co-founded the #1 language app after selling reCAPTCHA to Google"
     },
     {
+      "title": "Sabalenka defends Wimbledon prize protest, says it’s for struggling players",
+      "url": "https://www.aljazeera.com/sports/2026/6/27/sabalenka-defends-wimbledon-protest-says-its-for-struggling-players?traffic_source=rss",
+      "date": "June 27, 2026",
+      "description": "The world number one is in a group of players seeking a greater prize return at Grand Slams."
+    },
+    {
       "title": "Bodycam shows driver offering armed police a lift mid-chase",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/6/27/bodycam-shows-driver-offering-armed-police-a-lift-mid-chase?traffic_source=rss",
       "date": "June 27, 2026",
@@ -3525,12 +3544,6 @@
       "url": "https://www.aljazeera.com/news/2026/6/27/belgium-new-zealand-fifa-world-cup-2026-trossard-lukaku-de-bruyne-saelemaekers?traffic_source=rss",
       "date": "June 27, 2026",
       "description": "A double strike from Arsenal&#039;s Leandro Trossard against New Zealand carried Belgium to top of Group G, ahead of Egypt."
-    },
-    {
-      "title": "Which teams have qualified for the World Cup 2026 knockouts, round of 32?",
-      "url": "https://www.aljazeera.com/sports/2026/6/27/which-teams-have-qualified-for-the-world-cup-2026-knockouts-round-of-32?traffic_source=rss",
-      "date": "June 27, 2026",
-      "description": "The 2026 FIFA World Cup knockout stage format, criteria and rules for qualification. Find out who&#039;s in and who&#039;s out."
     }
   ]
 }
