@@ -37,6 +37,9 @@ body{background:#ffffff;overflow-x:hidden}
 .sec-tab.penalties.active{color:#0369a1;background:#ffffff;border-bottom:2px solid #0369a1}
 .sec-tab.bis.active{color:#6d28d9;background:#ffffff;border-bottom:2px solid #6d28d9}
 .sec-tab.all.active{color:#111111;background:#ffffff;border-bottom:2px solid #111111}
+.util-nav{margin-left:auto;display:flex;align-items:center;gap:18px;padding-right:16px;white-space:nowrap}
+.util-link{font-family:'Playfair Display',serif;font-size:.72rem;font-style:italic;color:#6b7280;text-decoration:none;cursor:pointer}
+.util-link:hover{color:#cc0000}
 .san-search{background:#fef2f2;border-bottom:1px solid #fca5a5;padding:8px 20px}
 .san-inner{max-width:1140px;margin:0 auto;display:flex;gap:6px;align-items:center;flex-wrap:wrap}
 .san-lbl{font-family:var(--mono);font-size:.55rem;color:#cc0000;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
@@ -966,6 +969,9 @@ export default function GlobalMonitor() {
       .m-tab.occ.active{color:#b45309;border-bottom-color:#b45309}
       .m-tab.penalties.active{color:#374151;border-bottom-color:#374151}
       .m-tab.bis.active{color:#0369a1;border-bottom-color:#0369a1}
+      .m-util-nav{display:flex;justify-content:center;gap:14px;margin-top:4px}
+      .m-util-link{font-family:var(--mono);font-size:.6rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:#6b7280;text-decoration:none}
+      .m-util-link:hover{color:#cc0000}
       .m-bar{display:flex;align-items:center;gap:6px;padding:6px 12px;border-bottom:1px solid #e5e7eb;flex-wrap:wrap;font-family:var(--mono);font-size:.58rem;color:#374151;background:#f9fafb}
       .m-dot{width:6px;height:6px;border-radius:50%;background:#22c55e;flex-shrink:0}
       .m-txt{flex:1;min-width:0;font-size:.56rem;color:#6b7280}
@@ -1009,9 +1015,9 @@ export default function GlobalMonitor() {
       {/* Header */}
       <div className="m-head">
         <h1>THE GLOBAL REPORT</h1>
-        <div style={{display:"flex",justifyContent:"center",gap:14,marginTop:4}}>
-          <a href="/subscribe" style={{fontSize:".68rem",fontWeight:600,color:"#8a2424",textDecoration:"none"}}>Get Alerts</a>
-          <a href="/contact" style={{fontSize:".68rem",fontWeight:600,color:"#6b7280",textDecoration:"none"}}>Contact</a>
+        <div className="m-util-nav">
+          <a href="/subscribe" className="m-util-link">Get Alerts</a>
+          <a href="/contact" className="m-util-link">Contact Us</a>
         </div>
       </div>
       {/* Section tabs */}
@@ -1149,9 +1155,9 @@ export default function GlobalMonitor() {
 
       <div className="sec-nav"><div className="sec-nav-inner">
         {SECTIONS.map(s=><button key={s} className={`sec-tab ${s} ${section===s?"active":""}`} onClick={()=>handleSection(s)}>{LABELS[s]}</button>)}
-        <div style={{marginLeft:"auto",display:"flex",alignItems:"center",gap:16,paddingRight:16,whiteSpace:"nowrap"}}>
-          <a href="/subscribe" style={{fontSize:".7rem",fontWeight:600,color:"#8a2424",textDecoration:"none"}}>Get Alerts</a>
-          <a href="/contact" style={{fontSize:".7rem",fontWeight:600,color:"#6b7280",textDecoration:"none"}}>Contact</a>
+        <div className="util-nav">
+          <a href="/subscribe" className="util-link">Get Alerts</a>
+          <a href="/contact" className="util-link">Contact Us</a>
         </div>
       </div></div>
       {section !== "penalties" && searchBarOpen && (
