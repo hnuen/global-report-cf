@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-28T16:09:01.404Z",
+  "updatedAt": "2026-06-28T17:08:58.643Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260626",
@@ -2861,6 +2861,12 @@
   ],
   "ajNews": [
     {
+      "title": "Drone captures ongoing rescue efforts after Venezuela earthquakes",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/28/drone-captures-ongoing-rescue-efforts-after-venezuela-earthquakes?traffic_source=rss",
+      "date": "June 28, 2026",
+      "description": "Drone footage from Venezuela&#039;s La Guaira shows widespread destruction after twin earthquakes devastated the region."
+    },
+    {
       "title": "Pape: US trying to ‘squeak out of strategic defeat’ after Iran",
       "url": "https://www.aljazeera.com/video/the-bottom-line/2026/6/28/pape-us-trying-to-squeak-out-of-strategic-defeat-after-iran?traffic_source=rss",
       "date": "June 28, 2026",
@@ -2913,18 +2919,6 @@
       "url": "https://www.aljazeera.com/news/2026/6/28/us-strikes-iran-for-second-day-is-it-a-violation-of-war-powers-resolution?traffic_source=rss",
       "date": "June 28, 2026",
       "description": "Days after Congress tells Trump he needs to seek its approval or end Iran war, Trump returns to attacks. Is it legal?"
-    },
-    {
-      "title": "World Cup 2026: Most controversial VAR officiating decisions in group stage",
-      "url": "https://www.aljazeera.com/sports/2026/6/28/world-cup-2026-most-controversial-var-officiating-decisions-in-group-stage?traffic_source=rss",
-      "date": "June 28, 2026",
-      "description": "From Iran&#039;s stoppage-time winner ruled out by VAR, to Ghana denied a penalty against England - all the controversies."
-    },
-    {
-      "title": "‘US trying to find its way out of MoU with Iran’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/28/us-trying-to-find-its-way-out-of-mou-with?traffic_source=rss",
-      "date": "June 28, 2026",
-      "description": "Bahrain and Kuwait have condemned Iran’s retaliatory attacks after a second day of US strikes on Iran."
     }
   ],
   "occNews": [
@@ -3036,16 +3030,16 @@
   ],
   "regionsNews": [
     {
+      "title": "Europe's heatwave linked to 1,300 deaths, WHO says, as Germany hits record 41.7C",
+      "url": "https://www.bbc.co.uk/news/articles/cn4d2vv935lo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 28, 2026",
+      "description": "WHO chief Tedros Adhanom Ghebreyesus warned that Europe is not prepared for high temperatures."
+    },
+    {
       "title": "Eleven killed after plane carrying skydivers crashes in eastern France",
       "url": "https://www.bbc.co.uk/news/articles/c5yz9yj9x74o?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 28, 2026",
       "description": "The pilot and 10 passengers died in the incident, local officials said."
-    },
-    {
-      "title": "Heatwave breaks records in Germany, Denmark and Czech Republic",
-      "url": "https://www.bbc.co.uk/news/articles/cx2vdydz31no?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 27, 2026",
-      "description": "An estimated 150 million people have been experiencing temperatures of over 35C across Europe."
     },
     {
       "title": "Australian man charged with murder after girl found dead in suitcase in Thailand",
@@ -3060,16 +3054,22 @@
       "description": "The aircraft belonged to state oil giant Aramco and the cause of the crash is being investigated."
     },
     {
-      "title": "117 dead dogs found at California 'no-kill' animal rescue - many with gunshot wounds",
-      "url": "https://www.bbc.co.uk/news/articles/cj4gqz5lx1eo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Three firefighters die battling huge wildfires on Colorado-Utah border",
+      "url": "https://www.bbc.co.uk/news/articles/cp8l7mpmdggo?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 28, 2026",
-      "description": "Hundreds more animals are still missing from the California facility as investigators continue excavating the grounds."
+      "description": "A number of blazes have been raging across Utah and Colorado, leading both governors to declare states of emergency."
     },
     {
       "title": "Uganda's leading media outlets shut down by army chief",
       "url": "https://www.bbc.co.uk/news/articles/cj9gyk1z7ngo?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 28, 2026",
       "description": "NTV and Daily Monitor say their offices in the capital are under \"military siege\"."
+    },
+    {
+      "title": "117 dead dogs found at California 'no-kill' animal rescue - many with gunshot wounds",
+      "url": "https://www.bbc.co.uk/news/articles/cj4gqz5lx1eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 28, 2026",
+      "description": "Hundreds more animals are still missing from the California facility as investigators continue excavating the grounds."
     },
     {
       "title": "Australia to double maximum penalty for platforms in breach of social media ban",
@@ -3082,6 +3082,12 @@
       "url": "https://www.bbc.co.uk/news/articles/ce3ewkdgw9ro?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 27, 2026",
       "description": "The commemorative special edition passports will be available on 6 July, and can only be applied for in person"
+    },
+    {
+      "title": "Heatwave breaks records in Germany, Denmark and Czech Republic",
+      "url": "https://www.bbc.co.uk/news/articles/cx2vdydz31no?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 27, 2026",
+      "description": "An estimated 150 million people have been experiencing temperatures of over 35C across Europe."
     },
     {
       "title": "Israel strikes southern Lebanon as Hezbollah condemns new deal",
@@ -3408,6 +3414,12 @@
       "description": "Luis von Ahn co-founded the #1 language app after selling reCAPTCHA to Google"
     },
     {
+      "title": "Russell beats Verstappen at Austrian Grand Prix to boost F1 title hopes",
+      "url": "https://www.aljazeera.com/sports/2026/6/28/russell-beats-verstappen-at-austrian-grand-prix-to-boost-f1-title-hopes?traffic_source=rss",
+      "date": "June 28, 2026",
+      "description": "George Russell&#039;s victory over Max Verstappen further reduces teammate Kimi Antonelli’s lead in the drivers&#039; title race."
+    },
+    {
       "title": "Israel strikes Lebanon, testing days-old peace deal",
       "url": "https://www.aljazeera.com/news/2026/6/28/israel-strikes-lebanon-testing-days-old-peace-deal?traffic_source=rss",
       "date": "June 28, 2026",
@@ -3424,6 +3436,12 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/6/28/iraq-arrests-senior-officials-in-anti-corruption-raids?traffic_source=rss",
       "date": "June 28, 2026",
       "description": "Iraqi security forces arrested several politicians, lawmakers and senior officials in dawn raids across Baghdad."
+    },
+    {
+      "title": "Three firefighters killed in US wildfires along Colorado–Utah border",
+      "url": "https://www.aljazeera.com/news/2026/6/28/three-firefighters-killed-in-us-wildfires-along-colorado-utah?traffic_source=rss",
+      "date": "June 28, 2026",
+      "description": "The US has seen a harsh wildfire season this year, with prolonged droughts and dry conditions fuelling blazes."
     },
     {
       "title": "Ben Stokes, England test captain, to retire from international cricket",
@@ -3484,12 +3502,6 @@
       "url": "https://www.aljazeera.com/news/2026/6/28/at-least-11-dead-in-civilian-plane-crash-in-eastern-france-authorities?traffic_source=rss",
       "date": "June 28, 2026",
       "description": "Authorities say pilot and all 10 ⁠passengers - ​five students ⁠and five instructors - died in the accident in Tomblaine."
-    },
-    {
-      "title": "Uganda’s military chief orders shutdown of two media outlets",
-      "url": "https://www.aljazeera.com/news/2026/6/28/ugandas-military-chief-orders-shutdown-of-two-media-outlets?traffic_source=rss",
-      "date": "June 28, 2026",
-      "description": "The president&#039;s son said he did not believe in a free press as military personnel were deployed to the media offices."
     }
   ]
 }
