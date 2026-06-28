@@ -1016,7 +1016,6 @@ export default function GlobalMonitor() {
       <div className="m-head">
         <h1>THE GLOBAL REPORT</h1>
         <div className="m-util-nav">
-          <a href="/subscribe" className="m-util-link">Get Alerts</a>
           <a href="/contact" className="m-util-link">Contact Us</a>
         </div>
       </div>
@@ -1156,7 +1155,6 @@ export default function GlobalMonitor() {
       <div className="sec-nav"><div className="sec-nav-inner">
         {SECTIONS.map(s=><button key={s} className={`sec-tab ${s} ${section===s?"active":""}`} onClick={()=>handleSection(s)}>{LABELS[s]}</button>)}
         <div className="util-nav">
-          <a href="/subscribe" className="util-link">Get Alerts</a>
           <a href="/contact" className="util-link">Contact Us</a>
         </div>
       </div></div>
