@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-28T18:39:01.524Z",
+  "updatedAt": "2026-06-28T19:09:06.654Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260626",
@@ -2820,7 +2820,7 @@
       "title": "Watch: Inside the Venezuela country club now a makeshift hospital",
       "url": "https://www.bbc.co.uk/news/videos/clyx5r0068go?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 28, 2026",
-      "description": "Survivors of Venezuela's devastating earthquakes are being cared for at a makeshift hospital formed on the site of a country club in"
+      "description": "Survivors of Venezuela's devastating earthquakes are being cared for at a makeshift hospital formed on the site of a country club in Caraballeda."
     },
     {
       "title": "Panic attacks and fractures - Venezuela hospital treats earthquake victims",
@@ -2860,6 +2860,12 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "US and Iran trade strikes days after peace agreement",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/28/us-and-iran-trade-strikes-days-after-peace-agreement?traffic_source=rss",
+      "date": "June 28, 2026",
+      "description": "Just days after signing a memorandum of understanding, the US and Iran have traded strikes."
+    },
     {
       "title": "The aftermath of Venezuela’s deadly earthquake",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/6/28/the-aftermath-of-venezuelas-deadly-earthquake?traffic_source=rss",
@@ -2901,27 +2907,22 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/6/28/stories-of-survivors-of-venezuelas-earthquakes?traffic_source=rss",
       "date": "June 28, 2026",
       "description": "Rescuers in Venezuela are racing against time to find survivors after twin earthquakes left thousands missing."
-    },
-    {
-      "title": "What is Article 5 of Iran-US MoU, and why is it blamed for Hormuz strikes?",
-      "url": "https://www.aljazeera.com/news/2026/6/28/why-is-article-5-of-mou-causing-confrontations-in-the-strait-of-hormuz?traffic_source=rss",
-      "date": "June 28, 2026",
-      "description": "Iran and the US trade attacks over navigation through the Strait of Hormuz, which has emerged as a major sticking point."
-    },
-    {
-      "title": "Araghchi: Strait of Hormuz remains under Iranian control for 30 days",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/28/araghchi-strait-of-hormuz-remains-under-iranian-control-for-30-days?traffic_source=rss",
-      "date": "June 28, 2026",
-      "description": "Iran’s foreign minister has urged ‘all parties not to interfere’ in the management of the Strait of Hormuz."
-    },
-    {
-      "title": "Satellite images show scale of destruction in Venezuela earthquakes",
-      "url": "https://www.aljazeera.com/news/longform/2026/6/28/satellite-images-show-scale-of-destruction-in-venezuela-earthquakes?traffic_source=rss",
-      "date": "June 28, 2026",
-      "description": "Satellite images show the before and after of parts of Venezuela left in ruins by two devastating quakes."
     }
   ],
-  "occNews": [],
+  "occNews": [
+    {
+      "title": "OCC Announces Enforcement Actions for June 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-48.html",
+      "date": "June 18, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for June 2026."
+    },
+    {
+      "title": "OCC Announces Enforcement Actions for May 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-40.html",
+      "date": "May 21, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for May 2026."
+    }
+  ],
   "economicsNews": [
     {
       "title": "Federal Reserve Board&#39;s annual bank stress test confirms that large banks are well positioned to weather a severe recession and able to continue to lend to households and businesses",
@@ -3401,6 +3402,18 @@
       "description": "Luis von Ahn co-founded the #1 language app after selling reCAPTCHA to Google"
     },
     {
+      "title": "Serbia’s protesters press on even after Vucic promises to step aside",
+      "url": "https://www.aljazeera.com/news/2026/6/28/serbias-protesters-press-on-even-after-vucic-promises-to-step-aside?traffic_source=rss",
+      "date": "June 28, 2026",
+      "description": "Demonstrators doubt the president is truly surrendering power after 12 years in charge."
+    },
+    {
+      "title": "Why do reports of domestic abuse increase during World Cups?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/28/why-do-reports-of-domestic-abuse-increase-during-world-cups?traffic_source=rss",
+      "date": "June 28, 2026",
+      "description": "Why do reports of domestic abuse increase during World Cups?"
+    },
+    {
       "title": "In Lebanon, framework agreement signed with Israel spurs protest, criticism",
       "url": "https://www.aljazeera.com/features/2026/6/28/in-lebanon-framework-agreement-signed-with-israel-spurs-protest-criticism?traffic_source=rss",
       "date": "June 28, 2026",
@@ -3431,7 +3444,7 @@
       "description": "Hezbollah calls the deal a surrender as Israeli forces stay put and continue striking the south."
     },
     {
-      "title": "South Africa vs Canada LIVE: FIFA World Cup 2026",
+      "title": "LIVE: South Africa vs Canada: FIFA World Cup 2026",
       "url": "https://www.aljazeera.com/sports/liveblog/2026/6/28/south-africa-vs-canada-live-fifa-world-cup-2026?traffic_source=rss",
       "date": "June 28, 2026",
       "description": "Live updates, analyses and text commentary as South Africa face cohosts Canada in first knockout match in Los Angeles."
