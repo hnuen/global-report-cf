@@ -300,6 +300,35 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
     }
   }
 
+  // ── "No news" / non-event filler guard ─────────────────────────────────────
+  // Same pattern as alert-scorer.ts's NO_NEWS_PATTERN veto and
+  // refresh-briefing.mjs's save-time filter. This function is a THIRD,
+  // independent Gemini-call-and-save path (hit directly by /api/refresh —
+  // ~15x/day via the GitHub Actions "fast path" step, and by the in-app
+  // "Refresh Now" button) that saves straight to Redis and was not covered by
+  // either of those other two fixes. Without this, a filler article from
+  // THIS path's own Gemini call could still display on the live site —
+  // alert-scorer.ts's veto only blocks the Telegram alert, not the page.
+  // Regex-only, deliberately no network calls: a per-article link-existence
+  // check would add ~20+ fetches on top of the enrichment calls below, which
+  // risks tripping Cloudflare Workers' per-invocation subrequest cap (see the
+  // "Save the core briefing FIRST" comment further down for why that budget
+  // is already tight here). Link verification instead lives only in
+  // refresh-briefing.mjs, which runs in GitHub Actions with no such cap.
+  // Added 2026-06-28 after the same gap was found and closed in the other two
+  // pipelines.
+  const NO_NEWS_PATTERN = /\bno new\b|\bshows no\b|\breports? no\b|\bno additions?\b|\bno changes?\b|\bnothing new\b|\bremains? unchanged\b|\bdid not add\b|\bno entries (?:were |have been )?added\b|\bno updates? (?:were |have been )?(?:made|reported)\b|\bno actions? (?:were |have been )?(?:taken|reported)\b/i;
+  const beforeNoNewsFilter = briefing.articles.length;
+  briefing.articles = briefing.articles.filter(a => {
+    const text = `${a.headline ?? ""} ${(a.body ?? [])[0] ?? ""}`;
+    const isFiller = NO_NEWS_PATTERN.test(text);
+    if (isFiller) console.log(`[orchestrator] Dropped no-news filler article: "${a.headline}"`);
+    return !isFiller;
+  });
+  if (briefing.articles.length < beforeNoNewsFilter) {
+    console.log(`[orchestrator] Filtered ${beforeNoNewsFilter - briefing.articles.length} no-news filler article(s)`);
+  }
+
   // ── Section-scoped merge: don't overwrite other sections ──────────────────
   // When a specific section is refreshed (e.g. BIS), only replace that section's
   // articles in Redis. Without this, refreshing BIS would overwrite sanctions,
