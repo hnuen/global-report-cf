@@ -1133,7 +1133,14 @@ SECTIONS:
 5. penalties  — FinCEN, AML/BSA fines, OFAC civil penalties, bank settlements
 6. bis        — BIS export controls, Entity List, EAR enforcement, semiconductor policy
 
-Write 3-4 articles per section (18-24 total). Each body is an array of 2-3 full editorial paragraphs.
+Aim for 3-4 articles per section (18-24 total) when real news supports it — but NEVER invent a
+"nothing happened" filler article just to hit that count (e.g. "Federal Register Shows No New
+Entity List Additions This Month," "No New OFAC Designations Today"). If genuine new
+developments for a sub-topic are thin, write fewer articles in that section instead, or cover a
+related real story (a different enforcement action, a policy change, market-moving commentary)
+in its place. A section with only 1-2 real articles is correct; a non-event dressed up as an
+article is not.
+Each body is an array of 2-3 full editorial paragraphs.
 Real current facts from web search only. Include real source names and URLs.
 
 OFAC RECENT ACTIONS — LIVE DATA:

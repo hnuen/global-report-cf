@@ -331,7 +331,22 @@ export function scoreArticle(article: Article): ScoredArticle {
   // 8. Recency check — independent of score, see isRecentEnough() above.
   const recentEnough = isRecentEnough(article.date);
   if (!recentEnough) reasons.push(`too old to alert (date: "${article.date}")`);
-  const shouldAlert = sectionOk && score >= threshold && recentEnough;
+
+  // 9. "No news" / non-event guard — independent of score, same pattern as
+  // the recency gate. Gemini is prompted to write 3-4 articles per section
+  // even when there's no genuine new development, which produces filler
+  // like "Federal Register Shows No New Entity List Additions" — a
+  // non-event that still scores 100 (forced by the federalregister.gov
+  // GOV_SOURCES_100 rule above) and, because LLM phrasing isn't identical
+  // run to run, evades the sourceUrl/headline dedup key — so it re-alerts
+  // on every Gemini call that touches that section instead of once. Catch
+  // it by content rather than relying on the prompt alone (reported
+  // 2026-06-28: this exact BIS filler was firing daily).
+  const NO_NEWS_PATTERN = /\bno new\b|\bshows no\b|\breports? no\b|\bno additions?\b|\bno changes?\b|\bnothing new\b|\bremains? unchanged\b|\bdid not add\b|\bno entries (?:were |have been )?added\b|\bno updates? (?:were |have been )?(?:made|reported)\b|\bno actions? (?:were |have been )?(?:taken|reported)\b/i;
+  const isNoNewsFiller = NO_NEWS_PATTERN.test(searchText);
+  if (isNoNewsFiller) reasons.push(`non-event / "no news" content — never alerts regardless of score`);
+
+  const shouldAlert = sectionOk && score >= threshold && recentEnough && !isNoNewsFiller;
 
   return { article, score, reasons, shouldAlert };
 }
