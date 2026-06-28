@@ -12,6 +12,7 @@ export default function ContactPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [website, setWebsite] = useState(""); // honeypot — left blank by real users
   const [busy, setBusy] = useState(false);
   const [result, setResult] = useState<{ ok: boolean; message: string } | null>(null);
 
@@ -23,7 +24,7 @@ export default function ContactPage() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, message }),
+        body: JSON.stringify({ name, email, message, website }),
       });
       const data = await res.json();
       if (!res.ok) {
@@ -116,6 +117,18 @@ export default function ContactPage() {
             </div>
           ) : (
             <form onSubmit={submit}>
+              {/* Honeypot — invisible to real users, catches bots that fill every field. */}
+              <input
+                type="text"
+                name="website"
+                value={website}
+                onChange={e => setWebsite(e.target.value)}
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                style={{ position: "absolute", left: "-9999px", width: 1, height: 1, opacity: 0 }}
+              />
+
               <label style={{ display: "block", fontSize: 14, marginBottom: 6, fontWeight: 500 }}>
                 Name (optional)
               </label>

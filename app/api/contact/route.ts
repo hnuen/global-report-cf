@@ -7,9 +7,18 @@
  * Reuses ADMIN_APPROVAL_EMAIL as the destination rather than adding a new
  * env var: it's already "the site owner's inbox" and is documented/set up
  * for exactly this purpose.
+ *
+ * Spam protection (this is public + unauthenticated, unlike the other API
+ * routes which are all gated by a secret):
+ *   - Honeypot field ("website") — invisible to real users, bots that
+ *     auto-fill every field trip it. We pretend success and silently drop.
+ *   - Per-IP rate limit (5 / hour) via src/lib/rate-limit.ts, so a bot/script
+ *     hammering this endpoint can't burn through the Resend free-tier quota
+ *     or spam the owner's inbox.
  */
 import { NextRequest, NextResponse } from "next/server";
 import { sendEmail, isEmailConfigured } from "@/src/lib/email";
+import { checkRateLimit, getClientIp } from "@/src/lib/rate-limit";
 
 export const dynamic = "force-dynamic";
 
@@ -22,7 +31,25 @@ function escapeHtml(s: string): string {
 }
 
 export async function POST(req: NextRequest) {
-  const body = await req.json().catch(() => ({})) as { name?: string; email?: string; message?: string };
+  const body = await req.json().catch(() => ({})) as {
+    name?: string; email?: string; message?: string; website?: string;
+  };
+
+  // Honeypot — real users never see/fill this field. Pretend success so a
+  // bot doesn't learn to look for a different signal.
+  if ((body.website ?? "").trim() !== "") {
+    return NextResponse.json({ ok: true });
+  }
+
+  const ip = getClientIp(req);
+  const allowed = await checkRateLimit(`contact_rl:${ip}`, 5, 60 * 60);
+  if (!allowed) {
+    return NextResponse.json(
+      { error: "Too many messages from this network — please try again in a bit." },
+      { status: 429 }
+    );
+  }
+
   const name = (body.name ?? "").trim().slice(0, 200);
   const email = (body.email ?? "").trim().slice(0, 320);
   const message = (body.message ?? "").trim().slice(0, 5000);
