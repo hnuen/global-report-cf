@@ -18,19 +18,31 @@
 import type { Notifier, NotifyResult } from "./types";
 import type { ScoredArticle }          from "../lib/alert-scorer";
 import { formatAlert, formatDigest }   from "./format";
+import { listApprovedByChannel }       from "../lib/subscribers";
 
 export class TelegramNotifier implements Notifier {
   id   = "telegram";
   name = "Telegram Bot";
 
   isConfigured(): boolean {
-    return !!(process.env.TELEGRAM_BOT_TOKEN && process.env.TELEGRAM_CHAT_IDS);
+    // TELEGRAM_CHAT_IDS is no longer required on its own — the public
+    // /subscribe registration flow can supply chat IDs dynamically via
+    // Redis (see listApprovedByChannel below), so a bot token alone is
+    // enough to be "configured." Static TELEGRAM_CHAT_IDS still works and
+    // is merged in at send time.
+    return !!process.env.TELEGRAM_BOT_TOKEN;
   }
 
   async send(articles: ScoredArticle[], appUrl: string): Promise<NotifyResult> {
-    const token   = process.env.TELEGRAM_BOT_TOKEN!;
-    const chatIds = process.env.TELEGRAM_CHAT_IDS!
+    const token = process.env.TELEGRAM_BOT_TOKEN!;
+    const staticChatIds = (process.env.TELEGRAM_CHAT_IDS ?? "")
       .split(",").map(s => s.trim()).filter(Boolean);
+    // Dynamic recipients from the public registration flow (app/subscribe),
+    // approved one-by-one via the site owner's email. Failure here (e.g.
+    // Redis unreachable) must not block the static-list send, hence the catch.
+    const approved = await listApprovedByChannel("telegram").catch(() => []);
+    const dynamicChatIds = approved.map(s => s.telegramChatId).filter((id): id is string => !!id);
+    const chatIds = Array.from(new Set([...staticChatIds, ...dynamicChatIds]));
     const digest  = process.env.TELEGRAM_DIGEST_MODE === "true";
 
     const url = `https://api.telegram.org/bot${token}/sendMessage`;

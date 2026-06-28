@@ -24,6 +24,18 @@ import { NtfyNotifier }                from "./ntfy";
 import { DiscordNotifier }             from "./discord";
 import { EmailSMSNotifier }            from "./email-sms";
 import { TwilioNotifier }              from "./twilio";
+import { WhatsAppNotifier }            from "./whatsapp";
+import { listApprovedByChannel, type SubscriberChannel } from "../lib/subscribers";
+
+// Maps a notifier's `id` to the subscriber channel it can serve dynamic,
+// self-registered recipients for (app/subscribe). Channels not in this map
+// (ntfy, discord, email-sms) only ever serve the site owner's static env-var
+// recipient lists.
+const SUBSCRIBER_CHANNEL_BY_NOTIFIER_ID: Record<string, SubscriberChannel> = {
+  telegram: "telegram",
+  twilio:   "sms",
+  whatsapp: "whatsapp",
+};
 
 // ── Cooldown store (in-memory + persisted to KV) ──────────────────────────────
 
@@ -85,6 +97,7 @@ export class NotifierManager {
       new DiscordNotifier(),
       new EmailSMSNotifier(),
       new TwilioNotifier(),
+      new WhatsAppNotifier(),
     ];
   }
 
@@ -93,7 +106,7 @@ export class NotifierManager {
     const orderEnv = process.env.NOTIFIER_ORDER ?? "";
     const order    = orderEnv
       ? orderEnv.split(",").map(s => s.trim()).filter(Boolean)
-      : ["telegram","ntfy","discord","email-sms","twilio"];
+      : ["telegram","ntfy","discord","email-sms","twilio","whatsapp"];
 
     const sorted = [
       ...order.map(id => this.all.find(n => n.id === id)).filter(Boolean) as Notifier[],
@@ -168,8 +181,28 @@ export class NotifierManager {
         if (result.success) summary.channels.push(result.channel);
       });
     } else {
-      // "first-success" — try channels in order, stop at first success
-      for (const ch of channels) {
+      // "first-success" was designed for redundant fallback delivery to the
+      // SAME person (the site owner) across multiple methods — stop once
+      // one works. But telegram/twilio/whatsapp can now also carry
+      // dynamically self-registered subscribers (app/subscribe) who are
+      // genuinely different people, not fallback paths for each other. If
+      // those channels were left in the ordinary fallback chain, the chain
+      // would stop at e.g. Telegram and silently never reach a WhatsApp- or
+      // SMS-only subscriber. So: any channel with at least one approved
+      // dynamic subscriber is always sent to, separate from the fallback
+      // chain among the rest.
+      const dynamicChannelFlags = await Promise.all(
+        channels.map(async ch => {
+          const subChannel = SUBSCRIBER_CHANNEL_BY_NOTIFIER_ID[ch.id];
+          if (!subChannel) return false;
+          const approved = await listApprovedByChannel(subChannel).catch(() => []);
+          return approved.length > 0;
+        })
+      );
+      const alwaysSendChannels = channels.filter((_, i) => dynamicChannelFlags[i]);
+      const fallbackChannels   = channels.filter((_, i) => !dynamicChannelFlags[i]);
+
+      for (const ch of fallbackChannels) {
         try {
           console.log(`[notifier] Trying: ${ch.name}`);
           const result = await ch.send(toSend, appUrl);
@@ -178,6 +211,24 @@ export class NotifierManager {
             console.log(`[notifier] ✅ Delivered via ${ch.name}`);
             summary.channels.push(ch.name);
             break;
+          } else {
+            console.warn(`[notifier] ${ch.name} returned failure: ${result.error}`);
+          }
+        } catch (e) {
+          console.error(`[notifier] ${ch.name} threw:`, e);
+          summary.results.push({
+            channel: ch.name, success: false, recipients: 0, error: String(e),
+          });
+        }
+      }
+
+      for (const ch of alwaysSendChannels) {
+        try {
+          console.log(`[notifier] Sending to subscriber channel: ${ch.name}`);
+          const result = await ch.send(toSend, appUrl);
+          summary.results.push(result);
+          if (result.success) {
+            summary.channels.push(ch.name);
           } else {
             console.warn(`[notifier] ${ch.name} returned failure: ${result.error}`);
           }

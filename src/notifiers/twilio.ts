@@ -13,17 +13,21 @@
 import type { Notifier, NotifyResult } from "./types";
 import type { ScoredArticle }          from "../lib/alert-scorer";
 import { formatAlert }                 from "./format";
+import { listApprovedByChannel }       from "../lib/subscribers";
 
 export class TwilioNotifier implements Notifier {
   id   = "twilio";
   name = "Twilio SMS";
 
   isConfigured(): boolean {
+    // ALERT_TO_NUMBERS is no longer required by itself — the public
+    // /subscribe flow can supply approved numbers dynamically (see
+    // listApprovedByChannel below). Twilio account creds are still required
+    // either way, since that's what actually sends the text.
     return !!(
       process.env.TWILIO_ACCOUNT_SID &&
       process.env.TWILIO_AUTH_TOKEN &&
-      process.env.TWILIO_FROM_NUMBER &&
-      process.env.ALERT_TO_NUMBERS
+      process.env.TWILIO_FROM_NUMBER
     );
   }
 
@@ -31,8 +35,11 @@ export class TwilioNotifier implements Notifier {
     const sid       = process.env.TWILIO_ACCOUNT_SID!;
     const token     = process.env.TWILIO_AUTH_TOKEN!;
     const from      = process.env.TWILIO_FROM_NUMBER!;
-    const toNumbers = process.env.ALERT_TO_NUMBERS!
+    const staticNumbers = (process.env.ALERT_TO_NUMBERS ?? "")
       .split(",").map(n => n.trim()).filter(Boolean);
+    const approved = await listApprovedByChannel("sms").catch(() => []);
+    const dynamicNumbers = approved.map(s => s.phone).filter((p): p is string => !!p);
+    const toNumbers = Array.from(new Set([...staticNumbers, ...dynamicNumbers]));
 
     const url  = `https://api.twilio.com/2010-04-01/Accounts/${sid}/Messages.json`;
     const auth = btoa(`${sid}:${token}`);
