@@ -1007,7 +1007,13 @@ export default function GlobalMonitor() {
     `}</style>
     <div className="m-app">
       {/* Header */}
-      <div className="m-head"><h1>THE GLOBAL REPORT</h1></div>
+      <div className="m-head">
+        <h1>THE GLOBAL REPORT</h1>
+        <div style={{display:"flex",justifyContent:"center",gap:14,marginTop:4}}>
+          <a href="/subscribe" style={{fontSize:".68rem",fontWeight:600,color:"#8a2424",textDecoration:"none"}}>Get Alerts</a>
+          <a href="/contact" style={{fontSize:".68rem",fontWeight:600,color:"#6b7280",textDecoration:"none"}}>Contact</a>
+        </div>
+      </div>
       {/* Section tabs */}
       <div className="m-tabs">
         {mSecs.map(s=><button key={s} className={`m-tab ${s} ${section===s?"active":""}`}
@@ -1143,6 +1149,10 @@ export default function GlobalMonitor() {
 
       <div className="sec-nav"><div className="sec-nav-inner">
         {SECTIONS.map(s=><button key={s} className={`sec-tab ${s} ${section===s?"active":""}`} onClick={()=>handleSection(s)}>{LABELS[s]}</button>)}
+        <div style={{marginLeft:"auto",display:"flex",alignItems:"center",gap:16,paddingRight:16,whiteSpace:"nowrap"}}>
+          <a href="/subscribe" style={{fontSize:".7rem",fontWeight:600,color:"#8a2424",textDecoration:"none"}}>Get Alerts</a>
+          <a href="/contact" style={{fontSize:".7rem",fontWeight:600,color:"#6b7280",textDecoration:"none"}}>Contact</a>
+        </div>
       </div></div>
       {section !== "penalties" && searchBarOpen && (
         <div className="san-search" style={{background: section==="bis"?"#f0f9ff":section==="economics"?"#f0fdf4":section==="occ"?"#fffbeb":section==="regions"?"#faf5ff":"#fef2f2", borderBottomColor: section==="bis"?"#7dd3fc":section==="economics"?"#86efac":section==="occ"?"#fcd34d":section==="regions"?"#d8b4fe":"#fca5a5"}}><div className="san-inner">

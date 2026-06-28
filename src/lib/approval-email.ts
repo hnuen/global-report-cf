@@ -22,6 +22,7 @@
  */
 
 import type { Subscriber } from "./subscribers";
+import { sendEmail } from "./email";
 
 export function isApprovalEmailConfigured(): boolean {
   return !!(
@@ -78,27 +79,10 @@ export async function sendApprovalEmail(sub: Subscriber): Promise<{ ok: boolean;
     <p style="color:#888;font-size:13px;">These links work once — clicking either one finalizes the request.</p>
   `;
 
-  try {
-    const res = await fetch("https://api.resend.com/emails", {
-      method: "POST",
-      headers: {
-        "Authorization": `Bearer ${process.env.RESEND_API_KEY}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        from: process.env.EMAIL_FROM ?? "onboarding@resend.dev",
-        to: process.env.ADMIN_APPROVAL_EMAIL,
-        subject,
-        text,
-        html,
-      }),
-    });
-    if (!res.ok) {
-      const body = await res.text().catch(() => "");
-      return { ok: false, error: `Resend API error ${res.status}: ${body.slice(0, 300)}` };
-    }
-    return { ok: true };
-  } catch (e) {
-    return { ok: false, error: String(e) };
-  }
+  return sendEmail({
+    to: process.env.ADMIN_APPROVAL_EMAIL!,
+    subject,
+    text,
+    html,
+  });
 }
