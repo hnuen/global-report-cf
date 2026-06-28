@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-28T18:09:02.125Z",
+  "updatedAt": "2026-06-28T18:39:01.524Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260626",
@@ -2919,28 +2919,9 @@
       "url": "https://www.aljazeera.com/news/longform/2026/6/28/satellite-images-show-scale-of-destruction-in-venezuela-earthquakes?traffic_source=rss",
       "date": "June 28, 2026",
       "description": "Satellite images show the before and after of parts of Venezuela left in ruins by two devastating quakes."
-    },
-    {
-      "title": "US strikes Iran for second day: Is it a violation of war powers resolution?",
-      "url": "https://www.aljazeera.com/news/2026/6/28/us-strikes-iran-for-second-day-is-it-a-violation-of-war-powers-resolution?traffic_source=rss",
-      "date": "June 28, 2026",
-      "description": "Days after Congress tells Trump he needs to seek its approval or end Iran war, Trump returns to attacks. Is it legal?"
     }
   ],
-  "occNews": [
-    {
-      "title": "OCC Announces Enforcement Actions for June 2026",
-      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-48.html",
-      "date": "June 18, 2026",
-      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for June 2026."
-    },
-    {
-      "title": "OCC Announces Enforcement Actions for May 2026",
-      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-40.html",
-      "date": "May 21, 2026",
-      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for May 2026."
-    }
-  ],
+  "occNews": [],
   "economicsNews": [
     {
       "title": "Federal Reserve Board&#39;s annual bank stress test confirms that large banks are well positioned to weather a severe recession and able to continue to lend to households and businesses",
@@ -3045,7 +3026,7 @@
       "title": "Eleven killed after plane carrying skydivers crashes in eastern France",
       "url": "https://www.bbc.co.uk/news/articles/c5yz9yj9x74o?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 28, 2026",
-      "description": "The pilot and 10 passengers died in the incident, local officials said."
+      "description": "The pilot and 10 passengers - including five first-time parachutists - died in the incident, local officials said."
     },
     {
       "title": "Australian man charged with murder after dead girl found in suitcase in Thailand",
@@ -3420,10 +3401,22 @@
       "description": "Luis von Ahn co-founded the #1 language app after selling reCAPTCHA to Google"
     },
     {
+      "title": "In Lebanon, framework agreement signed with Israel spurs protest, criticism",
+      "url": "https://www.aljazeera.com/features/2026/6/28/in-lebanon-framework-agreement-signed-with-israel-spurs-protest-criticism?traffic_source=rss",
+      "date": "June 28, 2026",
+      "description": "Anger over deal that does not force Israeli troops to withdraw from occupied land after months of deadly attacks."
+    },
+    {
       "title": "The match that changed the World Cup forever",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/6/28/the-match-that-changed-the-world-cup-forever?traffic_source=rss",
       "date": "June 28, 2026",
       "description": "One of football&#039;s biggest scandals changed the World Cup forever."
+    },
+    {
+      "title": "Louisiana primary win puts Trump endorsee Letlow on path to US Senate",
+      "url": "https://www.aljazeera.com/news/2026/6/28/louisiana-primary-win-puts-trump-endorsee-letlow-on-path-to-us-senate?traffic_source=rss",
+      "date": "June 28, 2026",
+      "description": "Trump waded into race to defeat incumbent Bill Cassidy, a Republican and critic of Trump&#039;s actions following 2020 vote."
     },
     {
       "title": "Russell beats Verstappen at Austrian Grand Prix to boost F1 title hopes",
@@ -3496,12 +3489,6 @@
       "url": "https://www.aljazeera.com/economy/2026/6/28/paradise-lost-how-israel-is-making-war-on-west-bank-farmers?traffic_source=rss",
       "date": "June 28, 2026",
       "description": "Israel is attacking West Bank agriculture in an attempt to drive Palestinian farmers off their land."
-    },
-    {
-      "title": "‘Digging with a needle’: Generals stall peace as Sudan’s el-Obeid burns",
-      "url": "https://www.aljazeera.com/news/2026/6/28/digging-with-a-needle-generals-stall-peace-as-sudans-el-obeid-burns?traffic_source=rss",
-      "date": "June 28, 2026",
-      "description": "The battle for el-Obeid exposes the foreign arms and polarised narratives stalling peace in Sudan’s grinding war."
     }
   ]
 }
