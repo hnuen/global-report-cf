@@ -1326,6 +1326,43 @@ function formatLastUpdatedUtc() {
   return `${datePart} — ${timePart} UTC`;
 }
 
+// ── Verify a Gemini-cited sourceUrl actually resolves (anti-hallucination) ──
+// Google Search grounding makes citations *probable*, not guaranteed — Gemini
+// can still write a plausible-looking URL that 404s, points to the wrong
+// document, or never existed. This is a different failure mode than the
+// "no news" filler filtered above: it's a real-sounding claim attached to a
+// broken/fabricated link. HEAD-check (falling back to GET for servers that
+// reject HEAD) with the same Chrome UA used for OFAC scraping above — plain
+// "fetch" with a bot-labeled UA gets 403'd by some .gov sites even for real
+// pages. Deliberately strict: if a link can't be verified at all (timeout,
+// DNS failure, non-2xx after both attempts), the article is dropped rather
+// than published or alerted on unverified — trades an occasional false drop
+// during a transient site outage for never showing a citation that doesn't
+// actually back up the claim. Reported/requested 2026-06-28.
+const LINK_CHECK_UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36";
+async function urlResolves(url) {
+  if (!url) return false;
+  const attempt = async (method) => {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 8000);
+    try {
+      const res = await fetch(url, {
+        method, redirect: "follow", signal: controller.signal,
+        headers: { "User-Agent": LINK_CHECK_UA },
+      });
+      return res.ok;
+    } catch {
+      return false;
+    } finally {
+      clearTimeout(timer);
+    }
+  };
+  if (await attempt("HEAD")) return true;
+  // Some servers (notably some .gov sites) reject/mishandle HEAD but serve
+  // GET fine — retry once before concluding the link is genuinely broken.
+  return await attempt("GET");
+}
+
 let briefing;
 try {
   briefing = parseGeminiJSON(clean.slice(s, e + 1));
@@ -1333,6 +1370,26 @@ try {
     ...a,
     body: Array.isArray(a.body) ? a.body : String(a.body).split("\n").filter(Boolean),
   }));
+
+  // Drop "nothing happened" filler articles before they're ever saved — not
+  // just before they alert. The prompt above now tells Gemini not to write
+  // these, but that's probabilistic; this is the deterministic backstop so
+  // a no-news article never reaches the saved briefing (and therefore never
+  // shows up on the site itself, not just never alerts on Telegram). Keep
+  // this regex in sync with the identical NO_NEWS_PATTERN guard in
+  // src/lib/alert-scorer.ts (separate runtime, can't share an import here).
+  const NO_NEWS_PATTERN = /\bno new\b|\bshows no\b|\breports? no\b|\bno additions?\b|\bno changes?\b|\bnothing new\b|\bremains? unchanged\b|\bdid not add\b|\bno entries (?:were |have been )?added\b|\bno updates? (?:were |have been )?(?:made|reported)\b|\bno actions? (?:were |have been )?(?:taken|reported)\b/i;
+  const beforeFilter = briefing.articles.length;
+  briefing.articles = briefing.articles.filter(a => {
+    const text = `${a.headline ?? ""} ${(a.body ?? [])[0] ?? ""}`;
+    const isFiller = NO_NEWS_PATTERN.test(text);
+    if (isFiller) console.log(`[refresh-briefing] Dropped no-news filler article: "${a.headline}"`);
+    return !isFiller;
+  });
+  if (briefing.articles.length < beforeFilter) {
+    console.log(`[refresh-briefing] Filtered ${beforeFilter - briefing.articles.length} no-news filler article(s) from Gemini output`);
+  }
+
   briefing.lastUpdated = `${formatLastUpdatedUtc()} [Gemini/Actions]`;
 } catch (parseErr) {
   console.error("[refresh-briefing] JSON parse failed — falling back to structured articles:", parseErr);
