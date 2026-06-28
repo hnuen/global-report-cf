@@ -26,7 +26,8 @@ export type SubscriberStatus =
   | "pending_telegram_link"  // Telegram only: waiting for them to hit /start
   | "pending_approval"       // waiting on the site owner's email approval
   | "approved"
-  | "denied";
+  | "denied"
+  | "revoked";              // was approved, later revoked via the admin page
 
 export interface Subscriber {
   id: string;
@@ -178,7 +179,22 @@ export async function denySubscriber(token: string): Promise<Subscriber | null> 
   return sub;
 }
 
-// ── Listing (used by notifiers at send time) ────────────────────────────────
+/**
+ * Revokes a previously-approved subscriber — used by the admin page
+ * (app/admin/subscribers) when the site owner wants to stop alerts to
+ * someone who was already approved. Only valid from "approved"; returns
+ * null if the id doesn't exist or isn't currently approved (e.g. already
+ * revoked, or never approved in the first place).
+ */
+export async function revokeSubscriber(id: string): Promise<Subscriber | null> {
+  const sub = await getSubscriber(id);
+  if (!sub || sub.status !== "approved") return null;
+  sub.status = "revoked";
+  await saveSubscriber(sub);
+  return sub;
+}
+
+// ── Listing (used by notifiers at send time, and by the admin page) ────────
 
 export async function listApprovedByChannel(channel: SubscriberChannel): Promise<Subscriber[]> {
   const cfg = getRedisConfig();
@@ -191,6 +207,24 @@ export async function listApprovedByChannel(channel: SubscriberChannel): Promise
     return all.filter((s): s is Subscriber => !!s && s.channel === channel && s.status === "approved");
   } catch (e) {
     console.warn("[subscribers] listApprovedByChannel failed (non-fatal):", String(e).slice(0, 100));
+    return [];
+  }
+}
+
+/** All subscribers regardless of status, newest first — for the admin page. */
+export async function listAllSubscribers(): Promise<Subscriber[]> {
+  const cfg = getRedisConfig();
+  if (!cfg) return [];
+  try {
+    const redis = await getRedis();
+    const ids = await redis.smembers("subscribers_index");
+    if (!ids || ids.length === 0) return [];
+    const all = await Promise.all(ids.map(id => getSubscriber(id)));
+    return all
+      .filter((s): s is Subscriber => !!s)
+      .sort((a, b) => b.createdAt - a.createdAt);
+  } catch (e) {
+    console.warn("[subscribers] listAllSubscribers failed (non-fatal):", String(e).slice(0, 100));
     return [];
   }
 }

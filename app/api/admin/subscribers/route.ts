@@ -1,0 +1,46 @@
+/**
+ * Admin endpoint for viewing and revoking subscribers (app/admin/subscribers
+ * is the UI on top of this). Unlike /api/monitor's isAuthorised(), an unset
+ * ADMIN_SECRET does NOT fall back to "everyone's authorized" — this endpoint
+ * can reveal subscriber names/phone numbers, so it must be explicitly
+ * configured to do anything at all.
+ *
+ * Env vars:
+ *   ADMIN_SECRET — required; sent by the admin page as the x-admin-secret header
+ */
+import { NextRequest, NextResponse } from "next/server";
+import { listAllSubscribers, revokeSubscriber } from "@/src/lib/subscribers";
+
+export const dynamic = "force-dynamic";
+
+function isAuthorised(req: NextRequest): boolean {
+  const secret = process.env.ADMIN_SECRET;
+  if (!secret) return false;
+  return req.headers.get("x-admin-secret") === secret;
+}
+
+export async function GET(req: NextRequest) {
+  if (!isAuthorised(req)) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+  const subscribers = await listAllSubscribers();
+  return NextResponse.json({ subscribers });
+}
+
+export async function POST(req: NextRequest) {
+  if (!isAuthorised(req)) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+  const body = await req.json().catch(() => ({})) as { id?: string };
+  if (!body.id) {
+    return NextResponse.json({ error: "Missing id" }, { status: 400 });
+  }
+  const sub = await revokeSubscriber(body.id);
+  if (!sub) {
+    return NextResponse.json(
+      { error: "Not found, or not currently approved (already revoked/denied/pending)" },
+      { status: 404 }
+    );
+  }
+  return NextResponse.json({ ok: true, subscriber: sub });
+}
