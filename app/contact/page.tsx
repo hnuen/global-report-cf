@@ -45,16 +45,9 @@ export default function ContactPage() {
       <style>{css}</style>
 
       <div className="masthead">
-        <div className="mast-inner" style={{ position: "relative" }}>
+        <div className="mast-inner">
           <a href="/" style={{ textDecoration: "none" }}>
             <span className="pub-name">The Global Report</span>
-          </a>
-          <a
-            href="/contact"
-            className="util-link"
-            style={{ position: "absolute", right: 20, top: "50%", transform: "translateY(-50%)", color: ACCENT }}
-          >
-            Contact Us
           </a>
         </div>
       </div>
@@ -71,6 +64,9 @@ export default function ContactPage() {
               {LABELS[s]}
             </a>
           ))}
+          <a href="/contact" className="sec-tab contact" style={{ color: ACCENT }}>
+            Contact Us
+          </a>
         </div>
       </div>
 

@@ -37,7 +37,8 @@ body{background:#ffffff;overflow-x:hidden}
 .sec-tab.penalties.active{color:#0369a1;background:#ffffff;border-bottom:2px solid #0369a1}
 .sec-tab.bis.active{color:#6d28d9;background:#ffffff;border-bottom:2px solid #6d28d9}
 .sec-tab.all.active{color:#111111;background:#ffffff;border-bottom:2px solid #111111}
-.util-nav{margin-left:auto;display:flex;align-items:center;gap:18px;padding-right:16px;white-space:nowrap}
+.sec-tab.contact{text-decoration:none;display:block}
+.sec-tab.contact:hover{color:#cc0000}
 .util-link{font-family:'Playfair Display',serif;font-size:.72rem;font-style:italic;color:#6b7280;text-decoration:none;cursor:pointer}
 .util-link:hover{color:#cc0000}
 .san-search{background:#fef2f2;border-bottom:1px solid #fca5a5;padding:8px 20px}
@@ -1156,14 +1157,14 @@ export default function GlobalMonitor() {
     <div className="app">
       <div className="site-header">
       <div className="masthead">
-        <div className="mast-inner" style={{position:"relative"}}>
+        <div className="mast-inner">
           <div><span className="pub-name">The Global Report</span></div>
-          <a href="/contact" className="util-link" style={{position:"absolute",right:20,top:"50%",transform:"translateY(-50%)"}}>Contact Us</a>
         </div>
       </div>
 
       <div className="sec-nav"><div className="sec-nav-inner">
         {SECTIONS.map(s=><button key={s} className={`sec-tab ${s} ${section===s?"active":""}`} onClick={()=>handleSection(s)}>{LABELS[s]}</button>)}
+        <a href="/contact" className="sec-tab contact">Contact Us</a>
       </div></div>
       {section !== "penalties" && searchBarOpen && (
         <div className="san-search" style={{background: section==="bis"?"#f0f9ff":section==="economics"?"#f0fdf4":section==="occ"?"#fffbeb":section==="regions"?"#faf5ff":"#fef2f2", borderBottomColor: section==="bis"?"#7dd3fc":section==="economics"?"#86efac":section==="occ"?"#fcd34d":section==="regions"?"#d8b4fe":"#fca5a5"}}><div className="san-inner">
