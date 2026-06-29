@@ -507,7 +507,7 @@ archive: {
     id: "russia-hfa",
     name: "Russian Harmful Foreign Activities Sanctions",
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions",
-    region: "Russia", category: "country", lastUpdated: "Jun 25, 2026", status: "active",
+    region: "Russia", category: "country", lastUpdated: "Jun 29, 2026", status: "active",
     executiveOrders: [
       { number: "14114", title: "Taking Additional Steps With Respect to the Russian Federation's Harmful Activities — amends EO 14024 to add secondary sanctions on foreign financial institutions supporting Russia's military-industrial base", date: "December 22, 2023", url: "https://ofac.treasury.gov/media/932441/download?inline" },
       { number: "14071", title: "Prohibiting New Investment in and Certain Services to the Russian Federation — accounting, management consulting, quantum computing, IT services", date: "April 6, 2022", url: "https://ofac.treasury.gov/media/922081/download?inline" },
@@ -527,7 +527,7 @@ archive: {
       // fixed its title/date/expires from the GL's own PDF (media/936301):
       // dated June 25, 2026, authorized through July 25, 2026.
             { number: "GL 6D", title: "Russia-related General License 6D", date: "February 22, 2022", url: "https://ofac.treasury.gov/media/932921/download?inline", addedDate: "June 27, 2026" },
-      { number: "GL 13Q", title: "Russia-related General License 13Q", date: "May 05, 2022", url: "https://ofac.treasury.gov/media/935451/download?inline", addedDate: "June 27, 2026" },
+      { number: "GL 13Q", title: "Russia-related General License 13Q", date: "May 05, 2022", url: "https://ofac.treasury.gov/media/935451/download?inline", addedDate: "June 27, 2026" , expires: "July 9, 2026"},
       { number: "GL 14", title: "Russia-related General License 14", date: "April 08, 2026", url: "https://ofac.treasury.gov/media/918896/download?inline", addedDate: "June 27, 2026" },
       { number: "GL 20", title: "Russia-related General License 20", date: "March 11, 2022", url: "https://ofac.treasury.gov/media/920271/download?inline", addedDate: "June 27, 2026" },
       { number: "GL 25G", title: "Russia-related General License 25G", date: "March 24, 2022", url: "https://ofac.treasury.gov/media/933536/download?inline", addedDate: "June 27, 2026" },
@@ -735,7 +735,8 @@ archive: {
     ],
     keyAdvisories: [
       // 3 advisories — all PDF links verified from OFAC page
-            { title: "Russia-related Designations Removals", date: "June 24, 2026", url: "https://ofac.treasury.gov/recent-actions/20260624", addedDate: "June 24, 2026" },
+                        { title: "Russia-related Designations Removals", date: "June 29, 2026", url: "https://ofac.treasury.gov/recent-actions/20260629", addedDate: "June 29, 2026" },
+{ title: "Russia-related Designations Removals", date: "June 24, 2026", url: "https://ofac.treasury.gov/recent-actions/20260624", addedDate: "June 24, 2026" },
 { title: "FACT SHEET: Russia Sanctions and Agricultural Trade", date: "July 2022", url: "https://ofac.treasury.gov/media/924341/download?inline" },
       { title: "FACT SHEET: Preserving Agricultural Trade, Access to Communication, and Other Support to Those Impacted by Russia's War Against Ukraine", date: "April 2022", url: "https://ofac.treasury.gov/media/922206/download?inline" },
       { title: "Advisory Regarding the Obfuscation of Critical Information in Financial and Trade Transactions Involving the Crimea Region of Ukraine", date: "July 30, 2015", url: "https://ofac.treasury.gov/media/8676/download?inline" },
