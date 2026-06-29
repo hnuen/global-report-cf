@@ -1,10 +1,16 @@
 {
-  "updatedAt": "2026-06-29T18:09:01.846Z",
+  "updatedAt": "2026-06-29T18:38:58.781Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260629",
       "code": "20260629",
       "title": "Russia-related Designations Removals",
+      "date": "June 29, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260629_33",
+      "code": "20260629_33",
+      "title": "Launch of OFAC Reconsideration Portal",
       "date": "June 29, 2026"
     },
     {
@@ -53,12 +59,6 @@
       "url": "https://ofac.treasury.gov/recent-actions/20260618",
       "code": "20260618",
       "title": "Counter Terrorism Designations",
-      "date": "June 18, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260618_33",
-      "code": "20260618_33",
-      "title": "Issuance of Venezuela-related General Licenses and Amended Frequently Asked Question",
       "date": "June 18, 2026"
     }
   ],
@@ -2895,12 +2895,6 @@
       "url": "https://www.aljazeera.com/news/2026/6/29/trump-announces-meeting-with-iran-in-qatar-despite-military-skirmishes?traffic_source=rss",
       "date": "June 29, 2026",
       "description": "US president says talks will take place on Tuesday, but Tehran has not confirmed the negotiations in Doha."
-    },
-    {
-      "title": "Russian missile and drone attacks kill at least eight in Ukraine",
-      "url": "https://www.aljazeera.com/news/2026/6/29/russian-missile-and-drone-attacks-kill-at-least-eight-in-ukraine?traffic_source=rss",
-      "date": "June 29, 2026",
-      "description": "President Volodymyr Zelenskyy condemns the &#039;horrific attacks&#039; and urges allies to boost Ukraine&#039;s air defences."
     }
   ],
   "occNews": [
@@ -3478,6 +3472,12 @@
       "url": "https://www.bbc.co.uk/sounds/play/w3ct98s2?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 23, 2026",
       "description": "Luis von Ahn co-founded the #1 language app after selling reCAPTCHA to Google"
+    },
+    {
+      "title": "Can governments fix the global housing crisis?",
+      "url": "https://www.aljazeera.com/video/counting-the-cost/2026/6/29/can-governments-fix-the-global-housing-crisis?traffic_source=rss",
+      "date": "June 29, 2026",
+      "description": "From city skyscrapers to sprawling slums, a roof over your head has never been harder to afford."
     },
     {
       "title": "UK’s prime minister-in-waiting vows to shake up politics",
