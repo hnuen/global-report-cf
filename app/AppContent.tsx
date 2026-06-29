@@ -1147,16 +1147,14 @@ export default function GlobalMonitor() {
     <div className="app">
       <div className="site-header">
       <div className="masthead">
-        <div className="mast-inner">
+        <div className="mast-inner" style={{position:"relative"}}>
           <div><span className="pub-name">The Global Report</span></div>
+          <a href="/contact" className="util-link" style={{position:"absolute",right:20,top:"50%",transform:"translateY(-50%)"}}>Contact Us</a>
         </div>
       </div>
 
       <div className="sec-nav"><div className="sec-nav-inner">
         {SECTIONS.map(s=><button key={s} className={`sec-tab ${s} ${section===s?"active":""}`} onClick={()=>handleSection(s)}>{LABELS[s]}</button>)}
-        <div className="util-nav">
-          <a href="/contact" className="util-link">Contact Us</a>
-        </div>
       </div></div>
       {section !== "penalties" && searchBarOpen && (
         <div className="san-search" style={{background: section==="bis"?"#f0f9ff":section==="economics"?"#f0fdf4":section==="occ"?"#fffbeb":section==="regions"?"#faf5ff":"#fef2f2", borderBottomColor: section==="bis"?"#7dd3fc":section==="economics"?"#86efac":section==="occ"?"#fcd34d":section==="regions"?"#d8b4fe":"#fca5a5"}}><div className="san-inner">
