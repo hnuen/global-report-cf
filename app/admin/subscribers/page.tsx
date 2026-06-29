@@ -93,6 +93,13 @@ export default function AdminSubscribersPage() {
     }
   }
 
+  function logout() {
+    setUnlocked(false);
+    setSecret("");
+    setSubs(null);
+    setError(null);
+  }
+
   async function remove(id: string) {
     if (!window.confirm("Permanently remove this record? This can't be undone.")) return;
     setRemovingId(id);
@@ -126,16 +133,36 @@ export default function AdminSubscribersPage() {
       }}
     >
       <div style={{ maxWidth: 760, margin: "0 auto" }}>
-        <h1
-          style={{
-            fontFamily: '"Playfair Display", serif',
-            fontWeight: 900,
-            fontSize: 32,
-            marginBottom: 8,
-          }}
-        >
-          Subscribers
-        </h1>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 16 }}>
+          <h1
+            style={{
+              fontFamily: '"Playfair Display", serif',
+              fontWeight: 900,
+              fontSize: 32,
+              marginBottom: 8,
+            }}
+          >
+            Subscribers
+          </h1>
+          {unlocked && (
+            <button
+              onClick={logout}
+              style={{
+                background: "none",
+                border: "1px solid #999",
+                color: "#555",
+                borderRadius: 4,
+                padding: "8px 16px",
+                fontSize: 13,
+                cursor: "pointer",
+                whiteSpace: "nowrap",
+                marginTop: 4,
+              }}
+            >
+              Log out
+            </button>
+          )}
+        </div>
         <p style={{ color: "#555", marginBottom: 32, lineHeight: 1.5 }}>
           Review who has access to alerts, and revoke it if needed.
         </p>
