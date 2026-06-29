@@ -701,7 +701,7 @@ archive: {
       { number: "13660", title: "Blocking Property of Certain Persons Contributing to the Situation in Ukraine", date: "March 6, 2014", url: "https://ofac.treasury.gov/media/5946/download?inline" },
     ],
     generalLicenses: [
-      // 16 GLs — sorted newest first — all PDF links + dates verified directly against OFAC's live page on June 25, 2026
+      // 14 GLs — sorted newest first — all PDF links + dates verified directly against OFAC's live page on June 25, 2026
       // Removed 2026-06-26: ten duplicate entries (generic titles "GL 11"
       // through "GL 26A", addedDate "June 26, 2026") were auto-inserted
       // here by the sync script under a different naming convention than
@@ -720,13 +720,11 @@ archive: {
       { number: "GL 18", title: "Ukraine General License 18", date: "December 20, 2016", url: "https://ofac.treasury.gov/media/918686/download?inline", addedDate: "June 27, 2026" },
       { number: "GL 19", title: "Ukraine General License 19", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/918691/download?inline", addedDate: "June 27, 2026" },
       { number: "GL 20", title: "Ukraine General License 20", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/918696/download?inline", addedDate: "June 27, 2026" },
-      { number: "GL 21", title: "Ukraine General License 21", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/918701/download?inline", addedDate: "June 27, 2026" },
       { number: "GL 22", title: "Ukraine General License 22", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/918706/download?inline", addedDate: "June 27, 2026" },
       { number: "GL 23", title: "Ukraine General License 23", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/919151/download?inline", addedDate: "June 27, 2026" },
       { number: "GL 24", title: "Ukraine General License 24", date: "March 11, 2022", url: "https://ofac.treasury.gov/media/919801/download?inline", addedDate: "June 27, 2026" },
       { number: "GL 25", title: "Ukraine General License 25", date: "March 18, 2022", url: "https://ofac.treasury.gov/media/920276/download?inline", addedDate: "June 27, 2026" },
       { number: "GL 26A", title: "Ukraine General License 26A", date: "May 31, 2022", url: "https://ofac.treasury.gov/media/933911/download?inline", addedDate: "June 27, 2026" },
-      { number: "GL 134C", title: "Russia-related General License 134C", date: "January 15, 2025", url: "https://ofac.treasury.gov/media/935641/download?inline", addedDate: "June 27, 2026" },
 { number: "Ukraine GL 26A", title: "Transactions Authorized Pursuant to the Russian Harmful Foreign Activities Sanctions Regulations", date: "January 15, 2025", url: "https://ofac.treasury.gov/media/933911/download?inline" },
       { number: "Ukraine GL 25", title: "Journalistic Activities and Establishment of News Bureaus in Certain Regions of Ukraine", date: "March 24, 2022", url: "https://ofac.treasury.gov/media/920276/download?inline" },
       { number: "Ukraine GL 21", title: "Authorizing Noncommercial, Personal Remittances and the Operation of Accounts", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/918701/download?inline" },
@@ -745,7 +743,9 @@ archive: {
 
         archive: {
       generalLicenses: [
-        { number: "Ukraine GL 3", title: "Authorizing Transactions Involving Certain Entities Otherwise Prohibited by Directive 1 under Executive Order 13662", archived: true, archivedNote: "Revoked May 2, 2022" },
+                                { number: "GL 134C", title: "Russia-related General License 134C", date: "January 15, 2025", archived: true, archivedNote: "Expired June 17, 2026 — no successor GL detected", archivedDate: "June 17, 2026" },
+{ number: "GL 21", title: "Ukraine General License 21", date: "February 21, 2022", archived: true, archivedNote: "Expired February 21, 2022 — no successor GL detected", archivedDate: "February 21, 2022" },
+{ number: "Ukraine GL 3", title: "Authorizing Transactions Involving Certain Entities Otherwise Prohibited by Directive 1 under Executive Order 13662", archived: true, archivedNote: "Revoked May 2, 2022" },
         { number: "Ukraine GL 26", title: "Transactions Authorized Pursuant to the Russian Harmful Foreign Activities Sanctions Regulations", archived: true, archivedNote: "Superseded by General License 26A" },
         // Removed 2026-06-26: a "Russia GL 125" entry was here — that's
         // Russia-HFA's GL 125 (Alaska meetings), not this program's. Same
