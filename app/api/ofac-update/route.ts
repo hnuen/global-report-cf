@@ -84,9 +84,10 @@ export async function GET(req: NextRequest) {
 
 // POST — apply diff to stored override
 export async function POST(req: NextRequest) {
-  const body = await req.json();
+  try {
+  const body = await req.json().catch(() => ({})) as Record<string, any>;
   const { programId, newGLs = [], newEOs = [], removedGLs = [], removedEOs = [],
-          newAdvisories = [], removedAdvisories = [], checkedAt } = body;
+          newAdvisories = [], removedAdvisories = [], checkedAt } = body ?? {};
 
   if (!programId) return NextResponse.json({ error: "Missing programId" }, { status: 400 });
 
@@ -95,8 +96,11 @@ export async function POST(req: NextRequest) {
     month: "long", day: "numeric", year: "numeric"
   });
 
-  // Load existing override (or empty)
-  const existing = await redisGet(OVERRIDE_PFX + programId) || {
+  // Load existing override (or empty) — also backfills any fields missing from
+  // an older/partial stored shape, so a schema change here can't crash a
+  // later run's .find()/.filter() calls on a previously-saved override.
+  const loaded = await redisGet(OVERRIDE_PFX + programId);
+  const existing = {
     programId,
     addedGLs: [],
     archivedGLs: [],
@@ -106,6 +110,7 @@ export async function POST(req: NextRequest) {
     archivedAdvisories: [],
     lastUpdated: dateStr,
     history: [],
+    ...(loaded ?? {}),
   };
 
   // Track what changed this run
@@ -230,4 +235,8 @@ export async function POST(req: NextRequest) {
       ? `Applied ${changes.length} change(s) to library`
       : "No changes — library already up to date",
   });
+  } catch (e) {
+    console.error("[ofac-update]", String(e));
+    return NextResponse.json({ error: String(e) }, { status: 500 });
+  }
 }
