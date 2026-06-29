@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T19:08:59.375Z",
+  "updatedAt": "2026-06-29T19:38:58.122Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260629",
@@ -2873,13 +2873,25 @@
   ],
   "ajNews": [
     {
+      "title": "Israel launches attacks and incursions inside southern Syria",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/29/israel-launches-attacks-and-incursions-inside-southern-syria?traffic_source=rss",
+      "date": "June 29, 2026",
+      "description": "Israeli forces have shelled a village in southern Syria, firing artillery and illumination flares overnight."
+    },
+    {
+      "title": "‘Miracle’: Man pulled from rubble four days after Venezuelan quakes",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/29/miracle-man-pulled-from-rubble-four-days-after-venezuelan-quakes?traffic_source=rss",
+      "date": "June 29, 2026",
+      "description": "A 21-year-old man was pulled alive from the rubble of an apartment building in La Guaira, Venezuela."
+    },
+    {
       "title": "New Israeli assault in southern Syria forces families to flee their homes",
       "url": "https://www.aljazeera.com/news/2026/6/29/new-israeli-assault-in-southern-syria-forces-families-to-flee-their-homes?traffic_source=rss",
       "date": "June 29, 2026",
       "description": "Turkiye has condemned Israel’s attacks in Syria, calling them a violation of international law."
     },
     {
-      "title": "Aftershock hits Caracas during critical hours for Venezuela rescue efforts",
+      "title": "Venezuela quakes death toll rises to 1,719, thousands still missing",
       "url": "https://www.aljazeera.com/news/2026/6/29/aftershock-hits-caracas-during-critical-hours-for-venezuela-rescue-efforts?traffic_source=rss",
       "date": "June 29, 2026",
       "description": "Tens of thousands remain missing after the devastating twin earthquakes that struck Venezuela last week"
@@ -2895,18 +2907,6 @@
       "url": "https://www.aljazeera.com/news/2026/6/29/the-us-iran-mou-looks-at-managing-the-pain-rather-than-ending-the-war?traffic_source=rss",
       "date": "June 29, 2026",
       "description": "The US-Iran MoU acts as a state-to-state framework managing mutual pain, not a definitive end to regional conflict."
-    },
-    {
-      "title": "Why the Arab League could not stop Israel’s genocide",
-      "url": "https://www.aljazeera.com/opinions/2026/6/29/why-the-arab-league-could-not-stop-israels-genocide?traffic_source=rss",
-      "date": "June 29, 2026",
-      "description": "Arab governments are constrained by dependency, regime survival and fear of empowering Iran-aligned rivals."
-    },
-    {
-      "title": "Trump announces meeting with Iran in Qatar despite military skirmishes",
-      "url": "https://www.aljazeera.com/news/2026/6/29/trump-announces-meeting-with-iran-in-qatar-despite-military-skirmishes?traffic_source=rss",
-      "date": "June 29, 2026",
-      "description": "US president says talks will take place on Tuesday, but Tehran has not confirmed the negotiations in Doha."
     }
   ],
   "occNews": [
@@ -3030,13 +3030,19 @@
       "description": "Opposition politicians accuse the government of using the outbreak to halt a planned protest."
     },
     {
+      "title": "South African leader warns anti-migrant protesters ahead of unofficial deadline",
+      "url": "https://www.bbc.co.uk/news/articles/cy4eq1l184po?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 29, 2026",
+      "description": "Thousands of people from other African countries have left South Africa ahead of Tuesday's deadline set by anti-migrant groups."
+    },
+    {
       "title": "Pakistani strikes kill at least 28 civilians in Afghanistan, UN says",
       "url": "https://www.bbc.co.uk/news/articles/cy8wygyed0wo?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 29, 2026",
       "description": "Pakistan claims it was targeting militants near its border, but the Taliban government calls it an \"atrocity\"."
     },
     {
-      "title": "Supreme Court blocks Trump's attempt to fire Federal Reserve governor Lisa Cook",
+      "title": "Supreme Court blocks Trump's attempt to fire Federal Reserve Governor Lisa Cook",
       "url": "https://www.bbc.co.uk/news/articles/cy4wwy0nkeno?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 29, 2026",
       "description": "The decision, seen as a win for central bank independence, sends the fight over removal back to the lower courts."
@@ -3138,12 +3144,6 @@
       "description": "The commemorative special edition passports will be available on 6 July, and can only be applied for in person"
     },
     {
-      "title": "Heatwave breaks records in Germany, Denmark and Czech Republic",
-      "url": "https://www.bbc.co.uk/news/articles/cx2vdydz31no?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 27, 2026",
-      "description": "An estimated 150 million people have been experiencing temperatures of over 35C across Europe."
-    },
-    {
       "title": "How population decline is exposing Germany's old divides",
       "url": "https://www.bbc.co.uk/news/articles/c24ylyv40y5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 29, 2026",
@@ -3180,10 +3180,10 @@
       "description": "Tidying expert Dilly Carter shares her best tips on organising your kitchen, lounge and clothes."
     },
     {
-      "title": "Desperate search for earthquake survivors continues outside Caracas",
+      "title": "'Hoping beyond hope': Rescue efforts continue at collapsed La Guaira building",
       "url": "https://www.bbc.co.uk/news/videos/cz75y2rggppo?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 29, 2026",
-      "description": "The BBC's Will Grant reports on the efforts to dig out survivors in the port city of Catia la Mer."
+      "description": "At least 1,450 people are known to have been killed in the disaster but hope remains that others can continue to be found alive."
     },
     {
       "title": "Burnham's 'Manchesterism' could change the UK, but is not yet a full economic plan",
@@ -3192,7 +3192,7 @@
       "description": "Andy Burnham's speech depicted a different way of seeing and running the UK, though there are many other questions about the detail."
     },
     {
-      "title": "Supreme Court blocks Trump's attempt to fire Federal Reserve governor Lisa Cook",
+      "title": "Supreme Court blocks Trump's attempt to fire Federal Reserve Governor Lisa Cook",
       "url": "https://www.bbc.co.uk/news/articles/cy4wwy0nkeno?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 29, 2026",
       "description": "The decision, seen as a win for central bank independence, sends the fight over removal back to the lower courts."
@@ -3475,7 +3475,7 @@
     },
     {
       "title": "Rethink",
-      "url": "https://www.bbc.co.uk/sounds/play/live:bbc_radio_fourfm?at_medium=RSS&amp;at_campaign=rss",
+      "url": "https://www.bbc.co.uk/sounds/play/m002y1ht?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 25, 2026",
       "description": "Could the US dollar lose its number one status?"
     },
@@ -3484,6 +3484,24 @@
       "url": "https://www.bbc.co.uk/sounds/play/w3ct98s2?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 23, 2026",
       "description": "Luis von Ahn co-founded the #1 language app after selling reCAPTCHA to Google"
+    },
+    {
+      "title": "Deadly heatwave grips Italy and Balkans as wildfire fears grow",
+      "url": "https://www.aljazeera.com/news/2026/6/29/deadly-heatwave-grips-italy-and-balkans-as-wildfire-fears-grow?traffic_source=rss",
+      "date": "June 29, 2026",
+      "description": "Older people remain most at risk as the heatwave drives up excess deaths across Europe."
+    },
+    {
+      "title": "Israeli attacks kill four men and a boy in Gaza and a teenager in West Bank",
+      "url": "https://www.aljazeera.com/news/2026/6/29/israeli-attacks-kill-four-men-and-a-boy-in-gaza-and-a-teenager-in-west-bank?traffic_source=rss",
+      "date": "June 29, 2026",
+      "description": "Israeli rights group B’Tselem has condemned the &#039;unprecedented killing of Palestinian children and teenagers&quot;"
+    },
+    {
+      "title": "Pakistani strikes kill dozens of Afghan villagers",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/29/pakistani-strikes-kill-dozens-of-afghan-villagers?traffic_source=rss",
+      "date": "June 29, 2026",
+      "description": "Afghan villagers inspected destroyed homes after overnight Pakistani strikes targeting Taliban-allied fighters."
     },
     {
       "title": "Undocumented migrants flee South Africa amid rising anti-immigrant protests",
@@ -3516,10 +3534,10 @@
       "description": "With democracy on the decline in both the UK and US, Mehdi Hasan makes the case for independent journalism."
     },
     {
-      "title": "Supreme Court blocks Trump’s bid to fire US Federal Reserve’s Lisa Cook",
+      "title": "US Supreme Court backs Trump’s firings; Fed’s Cook reserved as exception",
       "url": "https://www.aljazeera.com/economy/2026/6/29/supreme-court-blocks-trumps-bid-to-fire-us-federal-reserves-lisa-cook?traffic_source=rss",
       "date": "June 29, 2026",
-      "description": "Supreme Court blocks Trump&#039;s attempt to fire Fed governor Lisa Cook over unproven mortgage fraud allegations"
+      "description": "Justices rule in favor of expanded executive power, preserving Lisa Cook’s Fed position amid Trump’s dismissal attempt."
     },
     {
       "title": "Ex-NBA players Malik Beasley, Ed Davis indicted in gambling case",
@@ -3580,24 +3598,6 @@
       "url": "https://www.aljazeera.com/opinions/2026/6/29/jd-vances-2028-strategy-is-starting-to-take-shape?traffic_source=rss",
       "date": "June 29, 2026",
       "description": "The vice president’s decision to criticise Israel and distance himself from rival Rubio means he is reading the base."
-    },
-    {
-      "title": "Five killed in shooting at German youth centre",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/29/five-killed-in-shooting-at-german-youth-centre?traffic_source=rss",
-      "date": "June 29, 2026",
-      "description": "Five people were killed in a shooting at a youth welfare centre in Stade, northern Germany."
-    },
-    {
-      "title": "Enzo Maresca appointed Manchester City manager to succeed Pep Guardiola",
-      "url": "https://www.aljazeera.com/sports/2026/6/29/enzo-maresca-appointed-man-city-manager-to-succeed-pep-guardiola?traffic_source=rss",
-      "date": "June 29, 2026",
-      "description": "Former Blues boss signs three-year City deal to succeed Pep Guardiola who stepped down in May."
-    },
-    {
-      "title": "Sudan’s el-Obeid: Life on the edge of collapse",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/29/sudans-el-obeid-life-on-the-edge-of-collapse?traffic_source=rss",
-      "date": "June 29, 2026",
-      "description": "Sudan&#039;s el-Obeid faces mass atrocities, like el-Fasher in 2025, the UN warns."
     }
   ]
 }
