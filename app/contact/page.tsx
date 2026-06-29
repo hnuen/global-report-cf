@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { css, SECTIONS, LABELS } from "../AppContent";
 
 const PAPER = "#ffffff";
 const INK = "#111111";
@@ -41,21 +42,36 @@ export default function ContactPage() {
 
   return (
     <main style={{ minHeight: "100vh", background: PAPER, color: INK, fontFamily: '"IBM Plex Sans", sans-serif' }}>
-      <div style={{ background: PAPER, borderBottom: `2px solid ${RULE}`, padding: "14px 20px 11px", textAlign: "center" }}>
-        <a href="/" style={{ textDecoration: "none" }}>
-          <span
-            style={{
-              fontFamily: '"Playfair Display", serif',
-              fontSize: "clamp(1rem, 2.4vw, 1.7rem)",
-              fontWeight: 900,
-              letterSpacing: ".09em",
-              textTransform: "uppercase",
-              color: INK,
-            }}
+      <style>{css}</style>
+
+      <div className="masthead">
+        <div className="mast-inner" style={{ position: "relative" }}>
+          <a href="/" style={{ textDecoration: "none" }}>
+            <span className="pub-name">The Global Report</span>
+          </a>
+          <a
+            href="/contact"
+            className="util-link"
+            style={{ position: "absolute", right: 20, top: "50%", transform: "translateY(-50%)", color: ACCENT }}
           >
-            The Global Report
-          </span>
-        </a>
+            Contact Us
+          </a>
+        </div>
+      </div>
+
+      <div className="sec-nav">
+        <div className="sec-nav-inner">
+          {SECTIONS.map(s => (
+            <a
+              key={s}
+              href={s === "all" ? "/" : `/?section=${s}`}
+              className={`sec-tab ${s}`}
+              style={{ textDecoration: "none", display: "block" }}
+            >
+              {LABELS[s]}
+            </a>
+          ))}
+        </div>
       </div>
 
       <div style={{ display: "flex", justifyContent: "center", padding: "48px 20px" }}>

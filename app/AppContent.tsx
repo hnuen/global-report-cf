@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback, useRef } from "react";
 import { SANCTIONS_PROGRAMS } from "@/src/lib/sanctions-programs-library";
 
 
-const css = `
+export const css = `
 /* fonts loaded via layout.tsx */
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -260,7 +260,7 @@ interface FinCENPenalty {
   program: string; voluntaryDisclosure: boolean; egregious: boolean; sourceUrl: string; notes?: string;
 }
 
-const SECTIONS = ["all","sanctions","economics","regions","occ","penalties","bis"];
+export const SECTIONS = ["all","sanctions","economics","regions","occ","penalties","bis"];
 
 // Static sidebar data — always shown regardless of LLM status
 const STATIC_SIDEBAR: Record<string, { watchlist: {entity:string;type:string;note:string;url?:string}[]; keyFigures: {label:string;value:string}[] }> = {
@@ -343,7 +343,7 @@ const STATIC_SIDEBAR: Record<string, { watchlist: {entity:string;type:string;not
     ]
   },
 };
-const LABELS: Record<string,string> = {all:"All",sanctions:"Sanctions",economics:"Economics",regions:"Regions",occ:"OCC",penalties:"Penalties",bis:"BIS / Export"};
+export const LABELS: Record<string,string> = {all:"All",sanctions:"Sanctions",economics:"Economics",regions:"Regions",occ:"OCC",penalties:"Penalties",bis:"BIS / Export"};
 const REGIONS: Record<string,string[]> = {
   all:["All"], sanctions:["All","Iran","DPRK","Russia","Cuba","Venezuela","EU / Europe","UK","China / HK","MEA","India / Pakistan","SEA","Global"],
   economics:["All","United States","Europe","Global"], regions:["All","Africa","Middle East","Southeast Asia","South Asia","Central Asia","United Kingdom","United States","Europe","Global"],
@@ -552,6 +552,15 @@ export default function GlobalMonitor() {
   const [fincenPenalties, setFincenPenalties] = useState<FinCENPenalty[]>([]);
   const [fincenYears, setFincenYears]   = useState<number[]>([]);
   const [fincenYear, setFincenYear]     = useState<number|null>(null);
+
+  // Pages like /contact and /subscribe link back here as "/?section=sanctions"
+  // so their header tabs land on the matching section instead of always "all".
+  useEffect(() => {
+    try {
+      const s = new URLSearchParams(window.location.search).get("section");
+      if (s && SECTIONS.includes(s)) setSection(s);
+    } catch {}
+  }, []);
   const [penTab, setPenTab]             = useState<"ofac"|"fincen">("ofac");
   const [searchBarOpen, setSearchBarOpen] = useState(false);
   const [penaltiesLoading, setPenaltiesLoading] = useState(true);
