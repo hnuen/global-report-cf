@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-06-29T13:39:06.191Z",
+  "updatedAt": "2026-06-29T14:09:06.091Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260629",
+      "code": "20260629",
+      "title": "Russia-related Designations Removals",
+      "date": "June 29, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260626",
       "code": "20260626",
@@ -54,12 +60,6 @@
       "code": "20260618_33",
       "title": "Issuance of Venezuela-related General Licenses and Amended Frequently Asked Question",
       "date": "June 18, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260611",
-      "code": "20260611",
-      "title": "Cuba Designation; Russia-related Designations Removals and Designation Update; Issuance of Amended Russia-related General Licenses and Frequently Asked Questions",
-      "date": "June 11, 2026"
     }
   ],
   "civilPenalties": [
@@ -1442,7 +1442,7 @@
     "russian-harmful-foreign-activities-sanctions": {
       "name": "Russian Harmful Foreign Activities Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions",
-      "lastUpdated": "Jun 25, 2026",
+      "lastUpdated": "Jun 29, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -1654,7 +1654,7 @@
           "number": "13Q",
           "title": "Russia-related General License 13Q",
           "date": "May 05, 2022",
-          "expires": "",
+          "expires": "July 9, 2026",
           "url": "https://ofac.treasury.gov/media/935451/download?inline"
         },
         {
@@ -1773,7 +1773,7 @@
           "number": "55F",
           "title": "Russia-related General License 55F",
           "date": "January 17, 2023",
-          "expires": "",
+          "expires": "December 18, 2026",
           "url": "https://ofac.treasury.gov/media/935696/download?inline"
         },
         {
@@ -2915,12 +2915,6 @@
       "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-48.html",
       "date": "June 18, 2026",
       "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for June 2026."
-    },
-    {
-      "title": "OCC Announces Enforcement Actions for May 2026",
-      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-40.html",
-      "date": "May 21, 2026",
-      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for May 2026."
     }
   ],
   "economicsNews": [
@@ -3018,7 +3012,7 @@
   ],
   "regionsNews": [
     {
-      "title": "Five dead following shooting at youth centre in Stade, northern Germany",
+      "title": "Five dead in shooting at youth welfare centre in northern Germany",
       "url": "https://www.bbc.co.uk/news/articles/c17yzzw1vkjo?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 29, 2026",
       "description": "Two people have been arrested, one of whom is a suspect, police say."
@@ -3471,7 +3465,7 @@
       "title": "Five killed in shooting at youth welfare centre in Germany’s Stade",
       "url": "https://www.aljazeera.com/news/2026/6/29/five-killed-in-shooting-at-youth-welfare-centre-in-germanys-stade?traffic_source=rss",
       "date": "June 29, 2026",
-      "description": "Police say several people also injured while the suspected shooter has been arrested."
+      "description": "Police say several others were injured and the suspected attacker has been arrested."
     },
     {
       "title": "Israeli attack in Gaza kills three, including a child",
