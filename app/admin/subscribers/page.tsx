@@ -47,6 +47,7 @@ export default function AdminSubscribersPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [revokingId, setRevokingId] = useState<string | null>(null);
+  const [removingId, setRemovingId] = useState<string | null>(null);
 
   async function load(s: string) {
     setLoading(true);
@@ -89,6 +90,28 @@ export default function AdminSubscribersPage() {
       setError("Network error — please try again.");
     } finally {
       setRevokingId(null);
+    }
+  }
+
+  async function remove(id: string) {
+    if (!window.confirm("Permanently remove this record? This can't be undone.")) return;
+    setRemovingId(id);
+    try {
+      const res = await fetch("/api/admin/subscribers", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json", "x-admin-secret": secret },
+        body: JSON.stringify({ id }),
+      });
+      if (res.ok) {
+        await load(secret);
+      } else {
+        const data = await res.json().catch(() => ({}));
+        setError(data.error ?? "Failed to remove.");
+      }
+    } catch {
+      setError("Network error — please try again.");
+    } finally {
+      setRemovingId(null);
     }
   }
 
@@ -203,6 +226,23 @@ export default function AdminSubscribersPage() {
                             }}
                           >
                             {revokingId === s.id ? "Revoking…" : "Revoke"}
+                          </button>
+                        )}
+                        {s.status !== "approved" && (
+                          <button
+                            onClick={() => remove(s.id)}
+                            disabled={removingId === s.id}
+                            style={{
+                              background: "none",
+                              border: "1px solid #999",
+                              color: "#555",
+                              borderRadius: 4,
+                              padding: "6px 12px",
+                              fontSize: 13,
+                              cursor: removingId === s.id ? "default" : "pointer",
+                            }}
+                          >
+                            {removingId === s.id ? "Removing…" : "Remove"}
                           </button>
                         )}
                       </td>

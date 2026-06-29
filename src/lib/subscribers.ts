@@ -194,6 +194,26 @@ export async function revokeSubscriber(id: string): Promise<Subscriber | null> {
   return sub;
 }
 
+/**
+ * Permanently deletes a subscriber record — used by the admin page to clean
+ * up test/duplicate/junk registrations (e.g. denied or stuck pending_approval
+ * rows) that revoke() can't touch since it only works on "approved" records.
+ * Unlike revoke, this removes the record entirely rather than changing its
+ * status, so it's irreversible. Returns false if the id doesn't exist.
+ */
+export async function deleteSubscriber(id: string): Promise<boolean> {
+  const sub = await getSubscriber(id);
+  if (!sub) return false;
+  const redis = await getRedis();
+  await redis.del(`subscriber:${id}`);
+  await redis.del(`subscriber_token:${sub.token}`);
+  if (sub.telegramLinkCode) {
+    await redis.del(`subscriber_telegram_link:${sub.telegramLinkCode}`);
+  }
+  await redis.srem("subscribers_index", id);
+  return true;
+}
+
 // ── Listing (used by notifiers at send time, and by the admin page) ────────
 
 export async function listApprovedByChannel(channel: SubscriberChannel): Promise<Subscriber[]> {

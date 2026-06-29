@@ -9,7 +9,7 @@
  *   ADMIN_SECRET — required; sent by the admin page as the x-admin-secret header
  */
 import { NextRequest, NextResponse } from "next/server";
-import { listAllSubscribers, revokeSubscriber } from "@/src/lib/subscribers";
+import { listAllSubscribers, revokeSubscriber, deleteSubscriber } from "@/src/lib/subscribers";
 
 export const dynamic = "force-dynamic";
 
@@ -43,4 +43,20 @@ export async function POST(req: NextRequest) {
     );
   }
   return NextResponse.json({ ok: true, subscriber: sub });
+}
+
+/** Permanently removes a record (test/duplicate/junk registrations) — see deleteSubscriber(). */
+export async function DELETE(req: NextRequest) {
+  if (!isAuthorised(req)) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+  const body = await req.json().catch(() => ({})) as { id?: string };
+  if (!body.id) {
+    return NextResponse.json({ error: "Missing id" }, { status: 400 });
+  }
+  const ok = await deleteSubscriber(body.id);
+  if (!ok) {
+    return NextResponse.json({ error: "Not found" }, { status: 404 });
+  }
+  return NextResponse.json({ ok: true });
 }
