@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T14:09:06.091Z",
+  "updatedAt": "2026-06-29T14:39:01.593Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260629",
@@ -2132,7 +2132,7 @@
           "number": "21",
           "title": "Ukraine General License 21",
           "date": "February 21, 2022",
-          "expires": "",
+          "expires": "February 21, 2022",
           "url": "https://ofac.treasury.gov/media/918701/download?inline"
         },
         {
@@ -2174,7 +2174,7 @@
           "number": "134C",
           "title": "Russia-related General License 134C",
           "date": "January 15, 2025",
-          "expires": "",
+          "expires": "June 17, 2026",
           "url": "https://ofac.treasury.gov/media/935641/download?inline"
         },
         {
@@ -2861,6 +2861,18 @@
   ],
   "ajNews": [
     {
+      "title": "Trump announces meeting with Iran in Qatar despite military skirmishes",
+      "url": "https://www.aljazeera.com/news/2026/6/29/trump-announces-meeting-with-iran-in-qatar-despite-military-skirmishes?traffic_source=rss",
+      "date": "June 29, 2026",
+      "description": "US president says talks will take place on Tuesday, but Tehran has not confirmed the negotiations in Doha."
+    },
+    {
+      "title": "Russian missile and drone attacks kill at least eight in Ukraine",
+      "url": "https://www.aljazeera.com/news/2026/6/29/russian-missile-and-drone-attacks-kill-at-least-eight-in-ukraine?traffic_source=rss",
+      "date": "June 29, 2026",
+      "description": "President Volodymyr Zelenskyy condemns the &#039;horrific attacks&#039; and urges allies to boost Ukraine&#039;s air defences."
+    },
+    {
       "title": "Sudan says China has waived $50m loan: What’s in it for Khartoum, Beijing?",
       "url": "https://www.aljazeera.com/news/2026/6/29/sudan-says-china-has-waived-50m-loan-whats-in-it-for-khartoum-beijing?traffic_source=rss",
       "date": "June 29, 2026",
@@ -3018,6 +3030,18 @@
       "description": "Two people have been arrested, one of whom is a suspect, police say."
     },
     {
+      "title": "US Supreme Court rejects Trump's appeal of E Jean Carroll's sexual abuse case",
+      "url": "https://www.bbc.co.uk/news/articles/cn8q2z5wpn2o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 29, 2026",
+      "description": "The decision means the US president will now have to pay her the $5m (£3.6m) in damages she'd been awarded."
+    },
+    {
+      "title": "DR Congo bans mass gatherings in the capital to prevent spread of Ebola",
+      "url": "https://www.bbc.co.uk/news/articles/c992k7zk981o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 29, 2026",
+      "description": "Opposition politicians accuse the government of using the outbreak to halt a planned protest."
+    },
+    {
       "title": "Pakistani strikes kill dozens in Afghanistan",
       "url": "https://www.bbc.co.uk/news/articles/cy8wygyed0wo?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 29, 2026",
@@ -3172,6 +3196,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cvgd54yvjz1o?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 28, 2026",
       "description": "Tidying expert Dilly Carter shares her best tips on organising your kitchen, lounge and clothes."
+    },
+    {
+      "title": "Supreme Court blocks Trump's attempt to fire Federal Reserve governor Lisa Cook",
+      "url": "https://www.bbc.co.uk/news/articles/cy4wwy0nkeno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 29, 2026",
+      "description": "The decision, seen as a win for central bank independence, sends the fight over removal back to the lower courts."
     },
     {
       "title": "British American Tobacco to cut 9,000 jobs",
@@ -3462,6 +3492,36 @@
       "description": "Luis von Ahn co-founded the #1 language app after selling reCAPTCHA to Google"
     },
     {
+      "title": "Brazil vs Japan LIVE: FIFA World Cup 2026",
+      "url": "https://www.aljazeera.com/sports/liveblog/2026/6/29/brazil-vs-japan-live-fifa-world-cup-2026?traffic_source=rss",
+      "date": "June 29, 2026",
+      "description": "Follow updates as Brazil face Japan in the last 32, as we bring you the build-up, analysis and text commentary."
+    },
+    {
+      "title": "Is the Israeli military deliberately targeting children in Gaza?",
+      "url": "https://www.aljazeera.com/video/by-the-numbers-3/2026/6/29/is-the-israeli-military-deliberately-targeting-children-in-gaza?traffic_source=rss",
+      "date": "June 29, 2026",
+      "description": "A UN inquiry found that children in Gaza are being shot with a single bullet."
+    },
+    {
+      "title": "Why Pakistan’s Afghan air strikes aren’t stopping armed attacks",
+      "url": "https://www.aljazeera.com/news/2026/6/29/why-pakistans-afghan-air-strikes-arent-stopping-armed-attacks?traffic_source=rss",
+      "date": "June 29, 2026",
+      "description": "Analysts warn military pressure alone cannot contain a threat from armed groups that has reached Pakistan&#039;s cities."
+    },
+    {
+      "title": "More than 1,300 deaths in Europe amid heatwave: What can countries do?",
+      "url": "https://www.aljazeera.com/news/2026/6/29/more-than-1300-deaths-in-europe-amid-heatwave-what-can-countries-do?traffic_source=rss",
+      "date": "June 29, 2026",
+      "description": "Temperatures reached 40 degrees Celsius (104 degrees Fahrenheit) in parts of Europe on Sunday."
+    },
+    {
+      "title": "Brazil supporters in Indonesia grab Israeli flag off motorcyclist",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/29/brazil-supporters-in-indonesia-grab-israeli-flag-off-motorcyclist?traffic_source=rss",
+      "date": "June 29, 2026",
+      "description": "A video of an Israeli flag being grabbed off two young men in Indonesia has gone viral."
+    },
+    {
       "title": "Five killed in shooting at youth welfare centre in Germany’s Stade",
       "url": "https://www.aljazeera.com/news/2026/6/29/five-killed-in-shooting-at-youth-welfare-centre-in-germanys-stade?traffic_source=rss",
       "date": "June 29, 2026",
@@ -3520,48 +3580,6 @@
       "url": "https://www.aljazeera.com/news/2026/6/29/uks-likely-next-leader-andy-burnham-to-unveil-economic-devolution-agenda?traffic_source=rss",
       "date": "June 29, 2026",
       "description": "Frontrunner to be next PM expected to announce a 10-year mission to raise living standards."
-    },
-    {
-      "title": "Israel triggers huge explosion in southern Lebanon",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/29/israel-triggers-huge-explosion-in-southern-lebanon?traffic_source=rss",
-      "date": "June 29, 2026",
-      "description": "A massive explosion triggered by the Israeli military shook the southern Lebanese village of Majdal Zoun."
-    },
-    {
-      "title": "Watch World Cup Day 18: Canada beats South Africa, through to last 16",
-      "url": "https://www.aljazeera.com/video/2026/6/29/video-world-cup-2026-highlights?traffic_source=rss",
-      "date": "June 29, 2026",
-      "description": "Latest match highlights, reaction and previews from the FIFA World Cup 2026 in North America."
-    },
-    {
-      "title": "South Korea announces more than $1 trillion AI, chip investment drive",
-      "url": "https://www.aljazeera.com/news/2026/6/29/south-korea-announces-more-than-1-trillion-ai-chip-investment-drive?traffic_source=rss",
-      "date": "June 29, 2026",
-      "description": "South Korean president frames the push as a race against time to secure the country&#039;s domination in AI boom."
-    },
-    {
-      "title": "Stealing from the gods: India’s Ram Temple hit by corruption scandal",
-      "url": "https://www.aljazeera.com/features/2026/6/29/stealing-from-the-gods-indias-ram-temple-hit-by-corruption-scandal?traffic_source=rss",
-      "date": "June 29, 2026",
-      "description": "The temple is mired in embezzlement allegations before crucial state elections, embarrassing PM Modi&#039;s government."
-    },
-    {
-      "title": "South Korean president, ex-players, fans demand change after World Cup exit",
-      "url": "https://www.aljazeera.com/news/2026/6/29/south-korean-president-ex-players-fans-demand-change-after-world-cup-exit?traffic_source=rss",
-      "date": "June 29, 2026",
-      "description": "South Korea&#039;s World Cup exit after the group stage prompted the coach to quit, with the president calling for a probe."
-    },
-    {
-      "title": "Brazil vs Japan: FIFA World Cup Round of 16 – Vinicius, prediction, lineups",
-      "url": "https://www.aljazeera.com/sports/2026/6/29/brazil-play-japan-at-world-cup-knockouts-vinicius-prediction-and-lineups?traffic_source=rss",
-      "date": "June 29, 2026",
-      "description": "The 2026 FIFA World Cup round of 32 pits South American giants Brazil against Asian heavyweights Japan in Houston."
-    },
-    {
-      "title": "Skydiving plane crash kills 11 in northeastern France",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/29/aje-onl-nf_skydiving-plane-crash-kills-11-in-france-290626?traffic_source=rss",
-      "date": "June 29, 2026",
-      "description": "11 people were killed when a plane belonging to a parachuting school crashed in Tomblaine, France."
     }
   ]
 }
