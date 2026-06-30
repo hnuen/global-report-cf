@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T14:09:04.336Z",
+  "updatedAt": "2026-06-30T14:39:00.577Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260629",
@@ -2843,7 +2843,14 @@
       "description": "Trump says Iran wants to meet in Qatar after attacks, but Tehran says it is sending a delegation only over frozen funds."
     }
   ],
-  "occNews": [],
+  "occNews": [
+    {
+      "title": "OCC Announces Enforcement Actions for June 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-48.html",
+      "date": "June 18, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for June 2026."
+    }
+  ],
   "economicsNews": [
     {
       "title": "Federal Reserve Board&#39;s annual bank stress test confirms that large banks are well positioned to weather a severe recession and able to continue to lend to households and businesses",
