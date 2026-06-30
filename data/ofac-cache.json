@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T18:09:20.927Z",
+  "updatedAt": "2026-06-30T18:39:02.097Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260630",
@@ -2790,7 +2790,14 @@
       "description": "The technical assessment conducted by the Commission concluded that Russia meets the criteria to be designated as a high‑risk third country."
     }
   ],
-  "unNotices": [],
+  "unNotices": [
+    {
+      "title": "Unanimously Adopting Resolution 2825 (2026), Security Council Extends Sanctions Regime for Democratic Republic of the Congo by One Year",
+      "url": "https://press.un.org/en/2026/sc16403.doc.htm",
+      "date": "June 30, 2026",
+      "description": "The Security Council today renewed its sanctions regime on the Democratic Republic of the Congo until 1 July 2027 and extended the mandate of the Group of Experts responsible for overseeing its implementation until 1 August 2027."
+    }
+  ],
   "bbcNews": [
     {
       "title": "Angry Venezuelans accuse government of negligence over earthquake response",
@@ -2853,12 +2860,6 @@
       "url": "https://www.aljazeera.com/news/2026/6/30/us-envoys-in-doha-for-indirect-talks-with-iranian-technical-delegation?traffic_source=rss",
       "date": "June 30, 2026",
       "description": "Iran says it will send an expert delegation to Doha to follow up on the release of frozen Iranian funds."
-    },
-    {
-      "title": "Are US and Iranian negotiators meeting in Doha? What we know about talks",
-      "url": "https://www.aljazeera.com/news/2026/6/30/are-us-and-iranian-negotiators-meeting-in-doha-what-we-know-about-talks?traffic_source=rss",
-      "date": "June 30, 2026",
-      "description": "Trump says Iran wants to meet in Qatar after attacks, but Tehran says it is sending a delegation only over frozen funds."
     }
   ],
   "occNews": [
@@ -3454,6 +3455,12 @@
       "url": "https://www.bbc.co.uk/videos/cly8902rzpvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 26, 2026",
       "description": "How do you escape an overdraft? Finance expert Ioan Bain explains"
+    },
+    {
+      "title": "Supreme Court strikes down US campaign spending limits in landmark ruling",
+      "url": "https://www.aljazeera.com/news/2026/6/30/supreme-court-strikes-down-us-campaign-spending-limits-in-landmark-ruling?traffic_source=rss",
+      "date": "June 30, 2026",
+      "description": "The High Court strikes down campaign spending limits, citing First Amendment protections in a 6-3 decision"
     },
     {
       "title": "US heatwave to test power grid amid soaring AI-driven energy demand",
