@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-06-30T16:09:04.921Z",
+  "updatedAt": "2026-06-30T17:09:01.397Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260630",
+      "code": "20260630",
+      "title": "Counter Narcotics Designations; Russia-related Designations Removals; Publication of Report for Licensing Activities Undertaken Pursuant to the Trade Sanctions Reform and Export Enhancement Act (TSRA)",
+      "date": "June 30, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260629",
       "code": "20260629",
@@ -54,12 +60,6 @@
       "code": "20260622_33",
       "title": "Issuance of Iran-related General License",
       "date": "June 22, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260618",
-      "code": "20260618",
-      "title": "Counter Terrorism Designations",
-      "date": "June 18, 2026"
     }
   ],
   "civilPenalties": [
@@ -329,7 +329,7 @@
     "counter-narcotics-trafficking-sanctions": {
       "name": "Counter Narcotics Trafficking Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-narcotics-trafficking-sanctions",
-      "lastUpdated": "May 28, 2026",
+      "lastUpdated": "Jun 30, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -1442,7 +1442,7 @@
     "russian-harmful-foreign-activities-sanctions": {
       "name": "Russian Harmful Foreign Activities Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions",
-      "lastUpdated": "Jun 29, 2026",
+      "lastUpdated": "Jun 30, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -2831,6 +2831,12 @@
   ],
   "ajNews": [
     {
+      "title": "How severe is Russia’s energy shortage because of Ukrainian strikes?",
+      "url": "https://www.aljazeera.com/news/2026/6/30/how-severe-is-russias-energy-shortage-because-of-ukrainian-strikes?traffic_source=rss",
+      "date": "June 30, 2026",
+      "description": "Analysts say Russia&#039;s fuel crisis may affect its domestic economy, but the war in Ukraine will remain the priority."
+    },
+    {
       "title": "Iran to hold talks with Qatar on MoU deal with US, frozen assets",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/6/30/iran-to-hold-talks-with-qatar-on-mou-deal-with-us-frozen-assets?traffic_source=rss",
       "date": "June 30, 2026",
@@ -2958,10 +2964,16 @@
       "description": "The BBC’s Gary O’Donoghue explains what the court's landmark ruling means for the US president."
     },
     {
+      "title": "Almost 60,000 far-right extremists in Germany, intelligence agency says",
+      "url": "https://www.bbc.co.uk/news/articles/crlw4ng79wzo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 30, 2026",
+      "description": "More than a quarter of those identified are believed to be violent, Germany's domestic intelligence agency says."
+    },
+    {
       "title": "US Supreme Court upholds bans on transgender women in female school and college sports",
       "url": "https://www.bbc.co.uk/news/articles/cj40x888d9go?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 30, 2026",
-      "description": "It rules that states can ban transgender athletes from competing in women's and girls' sports."
+      "description": "Trump called it a \"big win\" but a major LGBT campaign group described the ruling as \"heartbreaking\"."
     },
     {
       "title": "Manhunt after bomb injures Ukrainian oligarch in Monaco",
@@ -2974,6 +2986,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cgl352xjgngo?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 30, 2026",
       "description": "The proposed changes agreed by a majority of MPs sparked protests outside parliament."
+    },
+    {
+      "title": "Missing US congressman explains mysterious four-month absence",
+      "url": "https://www.bbc.co.uk/news/articles/c9q2prq8301o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 30, 2026",
+      "description": "New Jersey Republican Tom Kean Jr, told fellow lawmakers that depression was the reason he had been away since March."
     },
     {
       "title": "Founder of Asian super-app Gojek sentenced to years in jail for corruption",
@@ -3078,18 +3096,6 @@
       "description": "WHO chief Tedros Adhanom Ghebreyesus warned that Europe is not prepared for high temperatures."
     },
     {
-      "title": "Senior South African police officer survives assassination attempt",
-      "url": "https://www.bbc.co.uk/news/articles/c9v2x700l8vo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 29, 2026",
-      "description": "Deputy crime intelligence boss Maj-Gen Feroz Khan was due to appear before an inquiry into police corruption this week."
-    },
-    {
-      "title": "First dinosaur bone from Antarctica found in a drawer",
-      "url": "https://www.bbc.co.uk/news/articles/cdep67jnn9zo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 29, 2026",
-      "description": "The fossil, collected in Antarctica in 1985, is part of the tail of a beast called a Titanosaur."
-    },
-    {
       "title": "Why $20 durians are now being sold at half price - or given away for free",
       "url": "https://www.bbc.co.uk/news/articles/c8x21yld0yro?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 29, 2026",
@@ -3098,7 +3104,7 @@
     {
       "title": "What to know about the looming deadline on North American free trade",
       "url": "https://www.bbc.co.uk/news/articles/czdejmqmrdgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 29, 2026",
+      "date": "June 30, 2026",
       "description": "The US, Canada and Mexico were to reach an agreement on whether to extend their free trade pact by 1 July. All signs point to them blowing past that deadline."
     },
     {
@@ -3136,6 +3142,12 @@
       "url": "https://www.bbc.co.uk/news/videos/cdx7j0wn9lvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 30, 2026",
       "description": "The BBC's Jessica Parker reports from the scene of the shooting that killed six people in northern Germany."
+    },
+    {
+      "title": "Cruise passengers 'stranded' after air con failure to be flown home",
+      "url": "https://www.bbc.co.uk/news/articles/cy0639x4dp8o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "June 30, 2026",
+      "description": "Tui has apologised and told passengers it has arranged flights home for tomorrow and a full refund."
     },
     {
       "title": "Homes harder to sell as high mortgage rates frustrate buyers",
@@ -3438,6 +3450,24 @@
       "description": "How do you escape an overdraft? Finance expert Ioan Bain explains"
     },
     {
+      "title": "The path from Gaza to Trump’s return",
+      "url": "https://www.aljazeera.com/video/the-take-2/2026/6/30/the-path-from-gaza-to-trumps-return?traffic_source=rss",
+      "date": "June 30, 2026",
+      "description": "How the Biden administration’s response to October 7 reshaped US politics and influenced the 2024 presidential election."
+    },
+    {
+      "title": "Heavy rainfall kills dozens in Ghana, Ivory Coast",
+      "url": "https://www.aljazeera.com/news/2026/6/30/heavy-rainfall-kills-dozens-in-ghana-ivory-coast?traffic_source=rss",
+      "date": "June 30, 2026",
+      "description": "Greater Accra Regional Fire Command says crews rescued more than 400 people."
+    },
+    {
+      "title": "Ivory Coast vs Norway LIVE: FIFA World Cup 2026",
+      "url": "https://www.aljazeera.com/sports/liveblog/2026/6/30/ivory-coast-vs-norway-live-fifa-world-cup-2026?traffic_source=rss",
+      "date": "June 30, 2026",
+      "description": "Follow live updates and text commentary as Erling Haaland&#039;s Norway and Yan Diomande&#039;s Ivory Coast meet in last 32 match."
+    },
+    {
       "title": "SCOTUS rules against Trump’s order limiting birthright citizenship",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/6/30/scotus-rules-against-trumps-order-limiting-birthright-citizenship?traffic_source=rss",
       "date": "June 30, 2026",
@@ -3544,30 +3574,6 @@
       "url": "https://www.aljazeera.com/opinions/2026/6/30/the-next-british-pm-should-steer-clear-of-starmers-shameful-legacy?traffic_source=rss",
       "date": "June 30, 2026",
       "description": "The outgoing PM succeeded in enabling genocide and failed miserably at improving the lives of ordinary Brits."
-    },
-    {
-      "title": "Top 5 World Cup knockout shocks – Paraguay win hurts Germany again",
-      "url": "https://www.aljazeera.com/sports/2026/6/30/paraguays-shock-win-against-germany-headlines-all-time-world-cup-upsets?traffic_source=rss",
-      "date": "June 30, 2026",
-      "description": "Paraguay&#039;s longshot win against Germany in the Round of 32 is the latest in a long line of World Cup knockout boilovers."
-    },
-    {
-      "title": "Video: At least two killed and hundreds displaced in Israeli attack on Gaza",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/30/video-at-least-two-killed-and-hundreds-displaced-in-israeli-attack-on-gaza?traffic_source=rss",
-      "date": "June 30, 2026",
-      "description": "An Israeli attack on the al-Mawasi camp in Khan Younis has killed several people, including a mother and her child."
-    },
-    {
-      "title": "Heatwave scorches east Europe as Slovakia, Czechia see record temperatures",
-      "url": "https://www.aljazeera.com/news/2026/6/30/heatwave-scorches-east-europe-as-slovakia-czechia-see-record-temperatures?traffic_source=rss",
-      "date": "June 30, 2026",
-      "description": "Some 130 million people in Central and Eastern Europe endure temperatures above 35C (95F) as heat records set."
-    },
-    {
-      "title": "Caracas park helps children cope through activities after twin quakes",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/30/caracas-park-helps-children-cope-through-activities-after-twin-quakes?traffic_source=rss",
-      "date": "June 30, 2026",
-      "description": "A public park in Caracas has been transformed into a hub of activities for children to help them cope after twin quakes."
     }
   ]
 }
