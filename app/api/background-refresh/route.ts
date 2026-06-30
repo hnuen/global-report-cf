@@ -102,6 +102,7 @@ export async function POST(request: NextRequest) {
       ...(existing ?? {}),
       articles: [...(existing?.articles ?? []), ...newArticles],
       lastUpdated: `${now} — Official government sources`,
+      lastUpdatedIso: new Date().toISOString(),
       sidebar: existing?.sidebar ?? groupBriefing.sidebar,
     };
 

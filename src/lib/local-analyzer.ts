@@ -211,6 +211,7 @@ export function buildAnalyzedBriefing(sources: OfficialSource[]): Briefing {
 
   return {
     lastUpdated: `${now} — Official government sources`,
+    lastUpdatedIso: new Date().toISOString(),
     articles,
     sidebar: {
       sanctions: emptySidebar,

@@ -245,6 +245,11 @@ export class GeminiProvider implements LLMProvider {
       timeZone: "America/New_York",
     });
     briefing.lastUpdated = `${stamp} [Gemini]`;
+    // Canonical UTC instant for client-side local-time rendering — see the
+    // lastUpdatedIso comment in src/lib/types.ts. The Eastern-time string
+    // above is fine as a human-readable fallback, but isn't itself something
+    // the client can safely re-render in the viewer's own timezone.
+    briefing.lastUpdatedIso = new Date().toISOString();
     return briefing;
   }
 }

@@ -1064,6 +1064,7 @@ function buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices = [], 
   const emptySection = { watchlist: [], keyFigures: [] };
   return {
     lastUpdated: `${nowStr} — Official government sources [Structured/Actions]`,
+    lastUpdatedIso: new Date().toISOString(),
     articles,
     sidebar: {
       sanctions: emptySection,
@@ -1391,6 +1392,9 @@ try {
   }
 
   briefing.lastUpdated = `${formatLastUpdatedUtc()} [Gemini/Actions]`;
+  // Canonical UTC instant for client-side local-time rendering — see the
+  // lastUpdatedIso comment in src/lib/types.ts.
+  briefing.lastUpdatedIso = new Date().toISOString();
 } catch (parseErr) {
   console.error("[refresh-briefing] JSON parse failed — falling back to structured articles:", parseErr);
   console.error("Raw text slice:", clean.slice(s, s + 500));

@@ -22,6 +22,19 @@ export interface SidebarSection { watchlist: WatchItem[]; keyFigures: KeyFigure[
 
 export interface Briefing {
   lastUpdated: string;
+  // ISO-8601 UTC instant the briefing was actually stamped, set alongside
+  // `lastUpdated` by every producer (gemini-provider.ts, official-briefing.ts,
+  // local-analyzer.ts, background-refresh route, refresh-briefing.mjs). The
+  // free-form `lastUpdated` string is built independently by each of those
+  // paths in whatever timezone/format that path happened to use (some UTC,
+  // some America/New_York) — which is why the displayed banner used to
+  // visibly change format/timezone depending on which path last wrote the
+  // briefing. This field is the single unambiguous source of truth the
+  // client formats in the *viewer's own* local timezone via
+  // toLocaleString() — correct for any visitor, not just one hardcoded zone.
+  // Optional for backward compatibility with already-cached briefings saved
+  // before this field existed.
+  lastUpdatedIso?: string;
   articles: Article[];
   sidebar: Record<Section, SidebarSection>;
 }

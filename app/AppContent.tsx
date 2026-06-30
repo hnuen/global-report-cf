@@ -247,8 +247,36 @@ interface Article {
   source: string; sourceUrl: string;
 }
 interface Briefing {
-  lastUpdated: string; articles: Article[];
+  lastUpdated: string; lastUpdatedIso?: string; articles: Article[];
   sidebar: Record<string, { watchlist: {entity:string;type:string;note:string;url?:string}[]; keyFigures: {label:string;value:string}[] }>;
+}
+
+// The backend has several independent code paths that each stamp
+// `lastUpdated` in whatever format/timezone that path happens to use (UTC,
+// US Eastern, etc — see src/lib/types.ts's lastUpdatedIso comment for the
+// full story). That's why the displayed banner used to visibly change
+// format/timezone from refresh to refresh. `lastUpdatedIso`, when present,
+// is an unambiguous UTC instant — render it in *this browser's* local
+// timezone so the display is always correct for whoever is looking at it,
+// and always consistent regardless of which backend path produced it.
+// Falls back to the raw legacy string for already-cached briefings saved
+// before lastUpdatedIso existed.
+function extractUpdatedTag(raw: string): string {
+  const bracket = raw.match(/\[(Gemini\/Actions|Gemini|Structured\/Actions)\]\s*$/);
+  const official = /Official government sources/i.test(raw);
+  if (official && bracket) return `— Official government sources ${bracket[0]}`;
+  if (official) return "— Official government sources";
+  if (bracket) return bracket[0];
+  return "";
+}
+function formatLastUpdated(raw: string, iso?: string): string {
+  if (!iso) return raw;
+  const d = new Date(iso);
+  if (isNaN(d.getTime())) return raw;
+  const datePart = d.toLocaleDateString(undefined, { month: "long", day: "numeric", year: "numeric" });
+  const timePart = d.toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" });
+  const tag = extractUpdatedTag(raw);
+  return tag ? `${datePart} — ${timePart} ${tag}` : `${datePart} — ${timePart}`;
 }
 interface PenaltyRecord {
   id: string; year: number; date: string; institution: string; type: string;
@@ -1037,7 +1065,7 @@ export default function GlobalMonitor() {
       {/* Status bar */}
       <div className="m-bar">
         <span className="m-dot"/>
-        <span className="m-txt">{data.lastUpdated.replace(/\s*·\s*\d+\s*stories/i, "")} · {allFiltered.length} stories</span>
+        <span className="m-txt">{formatLastUpdated(data.lastUpdated.replace(/\s*·\s*\d+\s*stories/i, ""), data.lastUpdatedIso)} · {allFiltered.length} stories</span>
         {section !== "penalties" && (
           <button className={`m-btn ${searchBarOpen||sanOn?"on":""}`}
             onClick={()=>setSearchBarOpen(v=>!v)}>⊘ {sanOn?"Filtered":"Filter"}</button>
@@ -1183,7 +1211,7 @@ export default function GlobalMonitor() {
         <div className="ctrl-main">
           <div style={{display:"flex",alignItems:"center",gap:5,flexShrink:0,flexWrap:"wrap"}}>
             {refreshing ? <><span className="spin-dot"/><span className="upd-text">{refreshQueued?"Queued…":"Refreshing…"}</span></>
-              : <><span className="live-dot"/><span className="upd-text">{data.lastUpdated.replace(/\s*·\s*\d+\s*stories/i, "")} · {allFiltered.length} stories</span></>}
+              : <><span className="live-dot"/><span className="upd-text">{formatLastUpdated(data.lastUpdated.replace(/\s*·\s*\d+\s*stories/i, ""), data.lastUpdatedIso)} · {allFiltered.length} stories</span></>}
 
             {error && <span className="err-msg">{error}</span>}
           </div>

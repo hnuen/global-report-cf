@@ -1,0 +1,50 @@
+<svg width="100%" viewBox="0 0 680 520" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" role="img">
+<title>Data refresh pipeline</title>
+<desc>Cloudflare cron-worker triggers a GitHub Actions refresh job, which runs two steps that both write into Upstash Redis: an in-app fetch with a quick LLM call, and a separate script that calls Gemini and scrapes IP-blocked sources.</desc>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+</defs>
+
+<line x1="340" y1="96" x2="340" y2="140" stroke="#5F5E5A" stroke-width="0.5" marker-end="url(#arrow)"/>
+<line x1="340" y1="260" x2="340" y2="280" stroke="#5F5E5A" stroke-width="0.5" fill="none"/>
+<path d="M340,280 L190,280 L190,300" fill="none" stroke="#5F5E5A" stroke-width="0.5" marker-end="url(#arrow)"/>
+<path d="M340,280 L470,280 L470,300" fill="none" stroke="#5F5E5A" stroke-width="0.5" marker-end="url(#arrow)"/>
+<path d="M190,356 L190,400 L300,400 L300,420" fill="none" stroke="#5F5E5A" stroke-width="0.5" marker-end="url(#arrow)"/>
+<path d="M470,356 L470,400 L380,400 L380,420" fill="none" stroke="#5F5E5A" stroke-width="0.5" marker-end="url(#arrow)"/>
+
+<g>
+  <rect x="180" y="40" width="320" height="56" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+  <text x="340" y="58" font-size="14" font-weight="500" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">Cloudflare cron-worker</text>
+  <text x="340" y="78" font-size="12" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">Native Cron Trigger</text>
+</g>
+
+<g>
+  <rect x="56" y="140" width="568" height="140" rx="20" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+  <text x="76" y="164" font-size="14" font-weight="500" fill="#4A1B0C">GitHub Actions</text>
+  <text x="76" y="182" font-size="12" fill="#993C1D">workflow_dispatch, ~15&#215;/day</text>
+</g>
+<g>
+  <rect x="180" y="204" width="320" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text x="340" y="222" font-size="14" font-weight="500" fill="#04342C" text-anchor="middle" dominant-baseline="central">Refresh job</text>
+  <text x="340" y="242" font-size="12" fill="#0F6E56" text-anchor="middle" dominant-baseline="central">Two-step run</text>
+</g>
+
+<g>
+  <rect x="70" y="300" width="240" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="190" y="318" font-size="14" font-weight="500" fill="#042C53" text-anchor="middle" dominant-baseline="central">Step 1 &#8212; /api/refresh</text>
+  <text x="190" y="338" font-size="12" fill="#185FA5" text-anchor="middle" dominant-baseline="central">Sources + quick LLM</text>
+</g>
+<g>
+  <rect x="330" y="300" width="280" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="470" y="318" font-size="14" font-weight="500" fill="#042C53" text-anchor="middle" dominant-baseline="central">Step 2 &#8212; refresh-briefing.mjs</text>
+  <text x="470" y="338" font-size="12" fill="#185FA5" text-anchor="middle" dominant-baseline="central">Gemini + scrapes blocked sites</text>
+</g>
+
+<g>
+  <rect x="140" y="420" width="400" height="56" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+  <text x="340" y="438" font-size="14" font-weight="500" fill="#2C2C2A" text-anchor="middle" dominant-baseline="central">Upstash Redis</text>
+  <text x="340" y="458" font-size="12" fill="#5F5E5A" text-anchor="middle" dominant-baseline="central">Stores the saved briefing</text>
+</g>
+</svg>
