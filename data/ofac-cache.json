@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-01T20:09:00.982Z",
+  "updatedAt": "2026-07-01T20:39:03.987Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260701",
@@ -2819,14 +2819,7 @@
       "description": "The technical assessment conducted by the Commission concluded that Russia meets the criteria to be designated as a high‑risk third country."
     }
   ],
-  "unNotices": [
-    {
-      "title": "Unanimously Adopting Resolution 2825 (2026), Security Council Extends Sanctions Regime for Democratic Republic of the Congo by One Year",
-      "url": "https://press.un.org/en/2026/sc16403.doc.htm",
-      "date": "June 30, 2026",
-      "description": "The Security Council today renewed its sanctions regime on the Democratic Republic of the Congo until 1 July 2027 and extended the mandate of the Group of Experts responsible for overseeing its implementation until 1 August 2027."
-    }
-  ],
+  "unNotices": [],
   "bbcNews": [
     {
       "title": "Syria's president names final 70 lawmakers to new post-Assad parliament",
@@ -2993,12 +2986,6 @@
   ],
   "regionsNews": [
     {
-      "title": "'Time for him to pay' - Carroll calls on Trump to pay $5m after president's appeal fails",
-      "url": "https://www.bbc.co.uk/news/articles/cn4r8n3ek80o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 1, 2026",
-      "description": "The writer's lawyers say Trump wants to delay paying the damages awarded by a jury that found the president liable for sexually abusing and defaming her."
-    },
-    {
       "title": "Ukrainian charged in Germany over Nord Stream blasts",
       "url": "https://www.bbc.co.uk/news/articles/c33yjk0ldkdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 1, 2026",
@@ -3011,16 +2998,28 @@
       "description": "US blocks 16-year North America trade deal renewal, triggering annual rolling reviews"
     },
     {
+      "title": "Nigeria to seek compensation for property abandoned by citizens fleeing South Africa",
+      "url": "https://www.bbc.co.uk/news/articles/c9d2n8elwdlo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 1, 2026",
+      "description": "Nigeria's High Commissioner says businesses and properties left behind by returnees are being documented."
+    },
+    {
       "title": "Controversial bishops ordained as Pope warns of 'schism' in Catholic Church",
       "url": "https://www.bbc.co.uk/news/articles/c74y7k8wyz8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 1, 2026",
       "description": "Thousands of worshippers attended a ceremony in the Swiss Alps as part of the breakaway Society of Saint Pius X."
     },
     {
-      "title": "Three die in Mexico City World Cup celebrations",
+      "title": "Four die in Mexico City World Cup celebrations",
       "url": "https://www.bbc.co.uk/news/articles/cx2xjwj8p39o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 1, 2026",
-      "description": "More than one million people took to the streets of Mexico City on Tuesday to mark the country's win over Ecuador."
+      "description": "More than one million people took to the streets of Mexico's capital on Tuesday to mark the country's win over Ecuador."
+    },
+    {
+      "title": "'Time for him to pay' - Carroll calls on Trump to pay $5m after president's appeal fails",
+      "url": "https://www.bbc.co.uk/news/articles/cn4r8n3ek80o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 1, 2026",
+      "description": "The writer's lawyers say Trump wants to delay paying the damages awarded by a jury that found the president liable for sexually abusing and defaming her."
     },
     {
       "title": "Businessman goes on trial over murder of Maltese journalist",
