@@ -1,10 +1,16 @@
 {
-  "updatedAt": "2026-07-01T18:39:09.465Z",
+  "updatedAt": "2026-07-01T19:09:00.772Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260701",
       "code": "20260701",
       "title": "Counter Narcotics Designations; Counter Terrorism Designations and Designation Update",
+      "date": "July 01, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260701_33",
+      "code": "20260701_33",
+      "title": "Reminder to File the 2026 Annual Report of Blocked Property",
       "date": "July 01, 2026"
     },
     {
@@ -54,12 +60,6 @@
       "code": "20260623",
       "title": "Transnational Criminal Organizations Designations; Cuba Designations; Russia-related Designations Removals; Issuance of TCO-related General License; Publication of OFAC-OFSI Comparative Overview",
       "date": "June 23, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260622",
-      "code": "20260622",
-      "title": "Counter Terrorism Designations",
-      "date": "June 22, 2026"
     }
   ],
   "civilPenalties": [
@@ -2849,6 +2849,18 @@
   ],
   "ajNews": [
     {
+      "title": "As Venezuela responds to earthquake devastation, volunteers take charge",
+      "url": "https://www.aljazeera.com/features/longform/2026/7/1/as-venezuela-responds-to-earthquake-devastation-volunteers-take-charge?traffic_source=rss",
+      "date": "July 1, 2026",
+      "description": "As frustration with the government disaster response grows, everyday citizens are organising to distribute aid."
+    },
+    {
+      "title": "One week on from Venezuela’s deadly earthquakes",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/1/one-week-on-from-venezuelas-deadly-earthquakes?traffic_source=rss",
+      "date": "July 1, 2026",
+      "description": "One week after Venezuela&#039;s twin earthquakes, more than 1,900 are confirmed dead while tens of thousands are missing."
+    },
+    {
       "title": "What military capabilities does Iran possess as it negotiates with US?",
       "url": "https://www.aljazeera.com/news/2026/7/1/what-military-capabilities-does-iran-possess-as-it-negotiates-with-us?traffic_source=rss",
       "date": "July 1, 2026",
@@ -3143,6 +3155,12 @@
       "description": "Official documents show the US president made billions of dollars as he returned to the White House."
     },
     {
+      "title": "US blocks long-term renewal of North American trade deal",
+      "url": "https://www.bbc.co.uk/news/articles/ce8j2lmrvrdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 1, 2026",
+      "description": "US blocks 16-year North America trade deal renewal, triggering annual rolling reviews"
+    },
+    {
       "title": "Plea for households to read energy meter as prices rise",
       "url": "https://www.bbc.co.uk/news/articles/c5yzqrpw2g8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 30, 2026",
@@ -3161,16 +3179,16 @@
       "description": "The president's crypto income far outpaces his earnings from real estate and Trump-themed items such as watches."
     },
     {
-      "title": "Brewery boss who banned phones and swearing from pubs dies aged 81",
-      "url": "https://www.bbc.co.uk/news/articles/c0ky1v2e275o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 1, 2026",
-      "description": "Humphrey Smith had been at the helm of the Tadcaster brewer since the 1980s."
-    },
-    {
       "title": "Why is crucial tech vulnerable to the heat?",
       "url": "https://www.bbc.co.uk/news/articles/cj0gez6d50ro?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 1, 2026",
       "description": "Energy grids and train services are among the vital services that are vulnerable to very hot weather."
+    },
+    {
+      "title": "Brewery boss who banned phones and swearing from pubs dies aged 81",
+      "url": "https://www.bbc.co.uk/news/articles/c0ky1v2e275o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 1, 2026",
+      "description": "Humphrey Smith had been at the helm of the Tadcaster brewer since the 1980s."
     },
     {
       "title": "Why Gen Z are planning for life without a state pension",
@@ -3291,12 +3309,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cze9wpny62go?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 29, 2026",
       "description": "Christian Williams benefitted to the tune of £160,000 from offending - but had just £1 to pay back."
-    },
-    {
-      "title": "Could you handle a 20-plus hour flight? This airline is banking on it",
-      "url": "https://www.bbc.co.uk/news/articles/cx2j7v51l5ko?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 26, 2026",
-      "description": "Some analysts say the first non-stop London to Sydney flight is a major milestone - but would you buy a ticket?"
     },
     {
       "title": "The legal fight to get equal pay for Germany's disabled workers",
@@ -3449,6 +3461,12 @@
       "description": "Af Malhotra sits in and discusses how entrepreneurs can use AI daily with Polly Dhaliwal."
     },
     {
+      "title": "Kane double fires England to comeback win over DR Congo at World Cup 2026",
+      "url": "https://www.aljazeera.com/sports/2026/7/1/kane-double-fires-england-to-comeback-win-over-dr-congo-at-world-cup-2026?traffic_source=rss",
+      "date": "July 1, 2026",
+      "description": "England survive huge scare against DR Congo to win 2-1 and set up last 16 clash with cohosts Mexico."
+    },
+    {
       "title": "How AI is being weaponised against India’s Muslim women",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/1/how-ai-is-being-weaponised-against-indias-muslim-women?traffic_source=rss",
       "date": "July 1, 2026",
@@ -3543,24 +3561,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/1/after-afghanistan-fires-drones-into-pakistan-whats-next?traffic_source=rss",
       "date": "July 1, 2026",
       "description": "Pakistan and Afghanistan have been locked in an on-off cycle of cross-border strikes, leaving their ties in tatters."
-    },
-    {
-      "title": "Caught between the US and China, can Europe remain competitive?",
-      "url": "https://www.aljazeera.com/video/counting-the-cost/2026/7/1/caught-between-the-us-and-china-can-europe-remain-competitive?traffic_source=rss",
-      "date": "July 1, 2026",
-      "description": "As trade tensions grow, Europe tries to remain competitive while balancing ties with the US and China."
-    },
-    {
-      "title": "Colorado primary election results: Melat Kiros wins – key takeaways",
-      "url": "https://www.aljazeera.com/news/2026/7/1/colorado-primary-election-results-melat-kiros-wins-key-takeaways?traffic_source=rss",
-      "date": "July 1, 2026",
-      "description": "Melat Kiros defeated Diana DeGette, who has been in office for as long as the 29-year-old Kiros has been alive."
-    },
-    {
-      "title": "Algeria heads to legislative polls amid record-low turnout fear",
-      "url": "https://www.aljazeera.com/news/2026/7/1/algeria-heads-to-legislative-polls-amid-record-low-turnout-fear?traffic_source=rss",
-      "date": "July 1, 2026",
-      "description": "Post-Hirak distrust, candidate exclusions and political apathy are expected to drive low turnout."
     }
   ]
 }
