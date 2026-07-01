@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-07-01T21:09:05.208Z",
+  "updatedAt": "2026-07-01T21:38:19.279Z",
   "recentActions": [
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260701",
-      "code": "20260701",
-      "title": "Counter Narcotics Designations; Counter Terrorism Designations and Designation Update",
-      "date": "July 01, 2026"
-    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260701_33",
       "code": "20260701_33",
       "title": "Reminder to File the 2026 Annual Report of Blocked Property",
+      "date": "July 01, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260701",
+      "code": "20260701",
+      "title": "Counter Narcotics Designations; Counter Terrorism Designations and Designation Update",
       "date": "July 01, 2026"
     },
     {
@@ -2842,6 +2842,18 @@
   ],
   "ajNews": [
     {
+      "title": "Iran to open ‘communication channel’ on MoU with US after talks in Qatar",
+      "url": "https://www.aljazeera.com/news/2026/7/1/iran-to-open-communication-channel-on-mou-with-us-after-talks-in-qatar?traffic_source=rss",
+      "date": "July 1, 2026",
+      "description": "Iran&#039;s Deputy FM Gharibabadi also says part of $6bn in frozen assets would be used to buy goods that Tehran needs."
+    },
+    {
+      "title": "Russian couple arrested after climbing Empire State Building",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/1/russian-couple-arrested-after-climbing-empire-state-building?traffic_source=rss",
+      "date": "July 1, 2026",
+      "description": "Two Russian climbers scaled New York’s Empire State Building on Wednesday as part of a death-defying marriage proposal."
+    },
+    {
       "title": "As Venezuela responds to earthquake devastation, volunteers take charge",
       "url": "https://www.aljazeera.com/features/longform/2026/7/1/as-venezuela-responds-to-earthquake-devastation-volunteers-take-charge?traffic_source=rss",
       "date": "July 1, 2026",
@@ -2864,24 +2876,6 @@
       "url": "https://www.aljazeera.com/opinions/2026/7/1/the-iran-talks-expose-the-collapse-of-us-diplomacy?traffic_source=rss",
       "date": "July 1, 2026",
       "description": "In the Trump era, American diplomacy is being led not by impartial diplomats, but by real estate investors."
-    },
-    {
-      "title": "Is Ukraine’s campaign of targeting Russian refineries working?",
-      "url": "https://www.aljazeera.com/opinions/2026/7/1/is-ukraines-campaign-of-targeting-russian-refineries-working?traffic_source=rss",
-      "date": "July 1, 2026",
-      "description": "Fuel shortages in the country are unlikely to force Putin into concessions for peace."
-    },
-    {
-      "title": "‘Will not leave’: Is Israel killing the US-Iran MoU by staying in Lebanon?",
-      "url": "https://www.aljazeera.com/news/2026/7/1/will-not-leave-is-israel-killing-the-us-iran-mou-by-staying-in-lebanon?traffic_source=rss",
-      "date": "July 1, 2026",
-      "description": "Analysts say both sides want the MOU to succeed but Israel&#039;s actions in Lebanon will prove a formidable obstacle."
-    },
-    {
-      "title": "First Syrian parliament since al-Assad’s ousting begins legislative duties",
-      "url": "https://www.aljazeera.com/news/2026/7/1/first-syrian-parliament-since-al-assads-ousting-begins-legislative-duties?traffic_source=rss",
-      "date": "July 1, 2026",
-      "description": "The new 210-member parliament takes shape, marking a historic shift after decades of Assad family rule."
     }
   ],
   "occNews": [
@@ -3466,6 +3460,30 @@
       "description": "Af Malhotra sits in and discusses how entrepreneurs can use AI daily with Polly Dhaliwal."
     },
     {
+      "title": "US signs $1 lease with Israel to build permanent embassy in West Jerusalem",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/1/us-signs-1-lease-with-israel-to-build-permanent-embassy-in-west-jerusalem?traffic_source=rss",
+      "date": "July 1, 2026",
+      "description": "The US and Israel have signed a deal allocating land for a permanent US embassy in West Jerusalem."
+    },
+    {
+      "title": "US Supreme Court hands wealthy donors more sway with latest decision",
+      "url": "https://www.aljazeera.com/news/2026/7/1/us-supreme-court-hands-wealthy-donors-more-sway-with-latest-decision?traffic_source=rss",
+      "date": "July 1, 2026",
+      "description": "Critics say the ruling invites corruption, benefitting wealthy donors and amplifying special interest sway in politics."
+    },
+    {
+      "title": "LIVE: USA vs Bosnia and Herzegovina – FIFA World Cup 2026",
+      "url": "https://www.aljazeera.com/sports/liveblog/2026/7/1/live-usa-vs-bosnia-and-herzegovina-fifa-world-cup-2026?traffic_source=rss",
+      "date": "July 1, 2026",
+      "description": "Live coverage and text updates as USA play Bosnia and Herzegovina in the round of 32 knockout stage in San Francisco."
+    },
+    {
+      "title": "State of emergency: Bolivia’s currency plummets as anger simmers",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/1/state-of-emergency-bolivias-currency-plummets-as-anger-simmers?traffic_source=rss",
+      "date": "July 1, 2026",
+      "description": "Bolivia’s President Paz declared a state of emergency after 50 days of protests against his policies."
+    },
+    {
       "title": "Despite marquee losses, Supreme Court term grows Trump’s presidential power",
       "url": "https://www.aljazeera.com/news/2026/7/1/despite-marquee-losses-supreme-court-term-grows-trumps-presidential-power?traffic_source=rss",
       "date": "July 1, 2026",
@@ -3554,24 +3572,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/1/secretive-gaza-meetings-in-cyprus-as-plan-to-isolate-hamas-gathers-pace?traffic_source=rss",
       "date": "July 1, 2026",
       "description": "Board of Peace talks on Gaza&#039;s post-war future face funding crises and warnings of a colonial occupation."
-    },
-    {
-      "title": "Trump takes first flight on new Qatar-gifted Air Force One",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/1/trump-takes-first-flight-on-new-qatar-gifted-air-force-one?traffic_source=rss",
-      "date": "July 1, 2026",
-      "description": "US President Donald Trump took his maiden voyage aboard the new Air Force One on Wednesday."
-    },
-    {
-      "title": "Cape Verde: All to know before FIFA World Cup knockout against Argentina",
-      "url": "https://www.aljazeera.com/news/2026/7/1/cape-verde-fifa-world-cup-2026-vozinha-argentina-round-of-32-knockouts?traffic_source=rss",
-      "date": "July 1, 2026",
-      "description": "An island nation of just over half a million inhabitants, Cape Verde pulled off the unthinkable by reaching the last 32."
-    },
-    {
-      "title": "India’s Bengal drops eggs from school lunches: Why that’s stoking debate",
-      "url": "https://www.aljazeera.com/news/2026/7/1/indias-bengal-drops-eggs-from-school-lunches-why-thats-stoking-debate?traffic_source=rss",
-      "date": "July 1, 2026",
-      "description": "Opposition politicians say the BJP is &#039;imposing vegetarianism&#039; by removing eggs from midday meals."
     }
   ]
 }
