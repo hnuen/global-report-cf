@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-07-01T13:39:08.277Z",
+  "updatedAt": "2026-07-01T14:09:07.614Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260701",
+      "code": "20260701",
+      "title": "Counter Narcotics Designations; Counter Terrorism Designations and Designation Update",
+      "date": "July 01, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260630",
       "code": "20260630",
@@ -53,12 +59,6 @@
       "url": "https://ofac.treasury.gov/recent-actions/20260622",
       "code": "20260622",
       "title": "Counter Terrorism Designations",
-      "date": "June 22, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260622_33",
-      "code": "20260622_33",
-      "title": "Issuance of Iran-related General License",
       "date": "June 22, 2026"
     }
   ],
@@ -329,7 +329,7 @@
     "counter-narcotics-trafficking-sanctions": {
       "name": "Counter Narcotics Trafficking Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-narcotics-trafficking-sanctions",
-      "lastUpdated": "Jun 30, 2026",
+      "lastUpdated": "Jul 01, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -376,7 +376,7 @@
     "counter-terrorism-sanctions": {
       "name": "Counter Terrorism Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-terrorism-sanctions",
-      "lastUpdated": "Jun 22, 2026",
+      "lastUpdated": "Jul 01, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -464,133 +464,162 @@
           "number": "25",
           "title": "Fact Sheet: Frequently Asked Questions (FAQs) for Syria General License 25",
           "date": "June 30, 2025",
+          "expires": "July 1, 2025",
           "url": "https://ofac.treasury.gov/media/934311/download?inline"
         },
         {
           "number": "2",
           "title": "Counter Terrorism General License 2",
           "date": "April 12, 2006",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/8366/download?inline"
         },
         {
           "number": "3",
           "title": "Counter Terrorism General License 3",
           "date": "April 12, 2006",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/8371/download?inline"
         },
         {
           "number": "4",
           "title": "Counter Terrorism General License 4",
           "date": "April 12, 2006",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/8376/download?inline"
         },
         {
           "number": "5",
           "title": "Counter Terrorism General License 5",
           "date": "April 12, 2006",
+          "expires": "May 12, 2006",
           "url": "https://ofac.treasury.gov/media/8381/download?inline"
         },
         {
           "number": "6",
           "title": "Counter Terrorism General License 6",
           "date": "April 12, 2006",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/8391/download?inline"
         },
         {
           "number": "7",
           "title": "Counter Terrorism General License 7",
           "date": "July 06, 2006",
+          "expires": "October 23, 2007",
           "url": "https://ofac.treasury.gov/media/4816/download?inline"
         },
         {
-          "number": "7a",
+          "number": "7A",
           "title": "Counter Terrorism General License 7a",
           "date": "December 07, 2010",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/8396/download?inline"
         },
         {
           "number": "8A",
           "title": "Counter Terrorism General License 8A",
           "date": "May 14, 2013",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/48841/download?inline"
         },
         {
           "number": "14",
           "title": "Counter Terrorism General License 14",
           "date": "October 26, 2020",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/912996/download?inline"
         },
         {
           "number": "15",
           "title": "Counter Terrorism General License 15",
           "date": "September 24, 2021",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/913001/download?inline"
         },
         {
           "number": "16",
           "title": "Counter Terrorism General License 16",
           "date": "September 24, 2021",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/915126/download?inline"
         },
         {
           "number": "17",
           "title": "Counter Terrorism General License 17",
           "date": "December 10, 2021",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/917126/download?inline"
         },
         {
           "number": "18",
           "title": "Counter Terrorism General License 18",
           "date": "December 22, 2021",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/917131/download?inline"
         },
         {
           "number": "19",
           "title": "Counter Terrorism General License 19",
           "date": "December 22, 2021",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/917136/download?inline"
         },
         {
           "number": "20",
           "title": "Counter Terrorism General License 20",
           "date": "December 22, 2021",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/918776/download?inline"
         },
         {
           "number": "22A",
           "title": "Counter Terrorism General License 22A",
           "date": "February 25, 2022",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/934031/download?inline"
         },
         {
           "number": "23A",
           "title": "Counter Terrorism General License 23A",
           "date": "March 05, 2025",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/934036/download?inline"
         },
         {
           "number": "24A",
           "title": "Counter Terrorism General License 24A",
           "date": "March 05, 2025",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/934041/download?inline"
         },
         {
           "number": "26A",
           "title": "Counter Terrorism General License 26A",
           "date": "March 05, 2025",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/934051/download?inline"
         },
         {
           "number": "28A",
           "title": "Counter Terrorism General License 28A",
           "date": "March 05, 2025",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/934056/download?inline"
         },
         {
           "number": "134C",
           "title": "Russia-related General License 134C",
           "date": "May 23, 2025",
+          "expires": "June 17, 2026",
           "url": "https://ofac.treasury.gov/media/935641/download?inline"
+        },
+        {
+          "number": "X",
+          "title": "Iran General License X",
+          "date": "April 17, 2026",
+          "expires": "August 21, 2026",
+          "url": "https://ofac.treasury.gov/media/936206/download?inline"
         }
       ]
     },
@@ -3397,6 +3426,12 @@
       "description": "In this week’s episode, there’s a deep dive into first-time buyer savings, with a special focus on Lifetime ISAs."
     },
     {
+      "title": "Algeria heads to legislative polls amid record-low turnout fear",
+      "url": "https://www.aljazeera.com/news/2026/7/1/algeria-heads-to-legislative-polls-amid-record-low-turnout-fear?traffic_source=rss",
+      "date": "July 1, 2026",
+      "description": "Post-Hirak distrust, candidate exclusions and political apathy are expected to drive low turnout."
+    },
+    {
       "title": "Man charged after arson attack on Islamic centre in Dublin",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/1/man-charged-after-arson-attack-on-islamic-centre-in-dublin?traffic_source=rss",
       "date": "July 1, 2026",
@@ -3427,7 +3462,7 @@
       "description": "Police in Monaco and France are hunting for a suspect seen leaving an explosive device at a residential building."
     },
     {
-      "title": "Several people killed in fire at apartment block in Belgium’s Antwerp",
+      "title": "At least 6 killed in fire at apartment block in Belgium’s Antwerp",
       "url": "https://www.aljazeera.com/news/2026/7/1/several-killed-in-fire-at-apartment-block-in-belgiums-antwerp?traffic_source=rss",
       "date": "July 1, 2026",
       "description": "Firefighters battle blaze that has also injured a number of people in Linkeroever area of Antwerp."
@@ -3515,12 +3550,6 @@
       "url": "https://www.aljazeera.com/opinions/2026/7/1/africa-can-finally-mine-beneficiate-and-industrialise-on-its-own-terms?traffic_source=rss",
       "date": "July 1, 2026",
       "description": "From Kenya to Ghana to Mali, governments are insisting their minerals be processed at home before they leave."
-    },
-    {
-      "title": "Democratic socialist Kiros defeats longtime incumbent in Colorado primary",
-      "url": "https://www.aljazeera.com/news/2026/7/1/democratic-socialist-kiros-defeats-longtime-incumbent-in-colorado-primary?traffic_source=rss",
-      "date": "July 1, 2026",
-      "description": "Former lawyer Melat Kiros, 29, has criticised Democrats for support of Israel during its genocidal war on Gaza."
     }
   ]
 }
