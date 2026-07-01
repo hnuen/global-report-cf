@@ -972,7 +972,7 @@ archive: {
     id: "sdgt",
     name: "Counter Terrorism Sanctions (SDGT)",
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-terrorism-sanctions",
-    region: "Global", category: "thematic", lastUpdated: "Jun 22, 2026", status: "active",
+    region: "Global", category: "thematic", lastUpdated: "Jul 01, 2026", status: "active",
     executiveOrders: [
       // Added 14157/13886/13099/12947 2026-06-26: were missing — OFAC's live
       // page lists 7 EOs, library only had 3. Verified via direct fetch of
@@ -990,10 +990,9 @@ archive: {
       // Russia HFA, not SDGT) — same sitewide "Recent Actions" widget
       // mis-scrape as the duplicates found in Iran, russia-hfa, russia-
       // ukraine, and non-prolif. Its real entry lives in the russia-hfa block.
-            { number: "GL 2", title: "Counter Terrorism General License 2", date: "April 12, 2006", url: "https://ofac.treasury.gov/media/8366/download?inline", addedDate: "June 27, 2026" },
+                        { number: "GL 7A", title: "Counter Terrorism General License 7a", date: "December 07, 2010", url: "https://ofac.treasury.gov/media/8396/download?inline", addedDate: "July 1, 2026" },
+{ number: "GL 2", title: "Counter Terrorism General License 2", date: "April 12, 2006", url: "https://ofac.treasury.gov/media/8366/download?inline", addedDate: "June 27, 2026" },
       { number: "GL 4", title: "Counter Terrorism General License 4", date: "April 12, 2006", url: "https://ofac.treasury.gov/media/8376/download?inline", addedDate: "June 27, 2026" },
-      { number: "GL 5", title: "Counter Terrorism General License 5", date: "April 12, 2006", url: "https://ofac.treasury.gov/media/8381/download?inline", addedDate: "June 27, 2026" },
-      { number: "GL 7a", title: "Counter Terrorism General License 7a", date: "December 07, 2010", url: "https://ofac.treasury.gov/media/8396/download?inline", addedDate: "June 27, 2026" },
       { number: "GL 8A", title: "Counter Terrorism General License 8A", date: "May 14, 2013", url: "https://ofac.treasury.gov/media/48841/download?inline", addedDate: "June 27, 2026" },
       { number: "GL 14", title: "Counter Terrorism General License 14", date: "October 26, 2020", url: "https://ofac.treasury.gov/media/912996/download?inline", addedDate: "June 27, 2026" },
       { number: "GL 15", title: "Counter Terrorism General License 15", date: "September 24, 2021", url: "https://ofac.treasury.gov/media/913001/download?inline", addedDate: "June 27, 2026" },
@@ -1017,7 +1016,9 @@ archive: {
 
         archive: {
       generalLicenses: [
-                { number: "GL 7", title: "Broad Authorization for U.S. Persons to Engage in All Transactions Otherwise Prohibited by the Terrorism Sanctions Programs with the Palestinian Authority", date: "June 20, 2007", archived: true, archivedNote: "Superseded by General License 7a", archivedDate: "December 07, 2010" },
+                                                                { number: "GL 5", title: "Counter Terrorism General License 5", date: "April 12, 2006", archived: true, archivedNote: "Expired May 12, 2006 — no successor GL detected", archivedDate: "May 12, 2006" },
+{ number: "GL 7a", title: "Counter Terrorism General License 7a", date: "December 07, 2010", archived: true, archivedNote: "Superseded by General License 7A", archivedDate: "December 07, 2010" },
+{ number: "GL 7", title: "Broad Authorization for U.S. Persons to Engage in All Transactions Otherwise Prohibited by the Terrorism Sanctions Programs with the Palestinian Authority", date: "June 20, 2007", archived: true, archivedNote: "Superseded by General License 7a", archivedDate: "December 07, 2010" },
 { number: "CT GL (unnamed)", title: "To authorize payments from funds originating outside the United States for certain legal services to or on behalf of blocked persons", archived: true, archivedNote: "Incorporated into 31 CFR Part 594" },
         { number: "CT GL 21B", title: "Authorizing Limited Safety and Environmental Transactions Involving Certain Vessels", archived: true, archivedNote: "Expired April 13, 2023" },
         { number: "CT GL 22", title: "Transactions Related to the Provision of Agricultural Commodities, Medicine, Medical Devices, Replacement Parts and Components, or Software Updates Involving Ansarallah", archived: true, archivedNote: "Superseded by Counter Terrorism General License 22A" },
