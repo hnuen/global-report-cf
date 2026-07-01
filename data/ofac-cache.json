@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-01T14:39:05.564Z",
+  "updatedAt": "2026-07-01T15:09:04.907Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260701",
@@ -2769,7 +2769,56 @@
       "date": "March 31, 2016"
     }
   ],
-  "europaNews": [],
+  "europaNews": [
+    {
+      "title": "Statement on the seventh Sanctions Coordinators Forum",
+      "url": "https://finance.ec.europa.eu/news/statement-seventh-sanctions-coordinators-forum-2026-04-30_en",
+      "date": "April 30, 2026",
+      "description": "Today, EU Sanctions Envoy, David O’Sullivan, convened the sixth Sanctions Coordinators Forum, gathering high‑level representatives from all EU Member States and a broad coalition of international partners. Representatives of the Government of Ukraine joined for a dedicated session."
+    },
+    {
+      "title": "Statement by Commissioner Albuquerque on the outcomes of the ninth high-level meeting on sanctions implementation",
+      "url": "https://finance.ec.europa.eu/news/statement-commissioner-albuquerque-outcomes-ninth-high-level-meeting-sanctions-implementation-2026-04-30_en",
+      "date": "April 30, 2026",
+      "description": "High‑level representatives from Member States, alongside the Commission and the European External Action Service, came together to share best practices and success stories, and discuss challenges."
+    },
+    {
+      "title": "EU adopts 20th package of sanctions against Russia",
+      "url": "https://finance.ec.europa.eu/news/eu-adopts-20th-package-sanctions-against-russia-2026-04-23_en",
+      "date": "April 24, 2026",
+      "description": "The Commission welcomes the Council's adoption of the 20th Russia sanctions package, that puts further pressure on Russia to engage in negotiations and do so on terms acceptable for Ukraine."
+    },
+    {
+      "title": "Commission welcomes new sanctions against Iran",
+      "url": "https://finance.ec.europa.eu/news/commission-welcomes-new-sanctions-against-iran-2026-01-30_en",
+      "date": "January 30, 2026",
+      "description": "The restrictive measures consist of an asset freeze, travel bans to the EU, and a prohibition to make funds or economic resources available to those listed."
+    },
+    {
+      "title": "New dynamic mechanism to lower price cap for Russian crude oil to $44,10 per barrel",
+      "url": "https://finance.ec.europa.eu/news/new-dynamic-mechanism-lower-price-cap-russian-crude-oil-4410-barrel-2026-01-15_en",
+      "date": "January 30, 2026",
+      "description": "Today, the new automatic and dynamic mechanism for price adaptation of the oil price cap for Russian crude will be applied for the first time."
+    },
+    {
+      "title": "Sanctions: Member States designate 41 additional vessels in Russia's shadow fleet",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_25_3129",
+      "date": "December 18, 2025",
+      "description": "With these new listings, a total of 597 vessels are now listed by the EU."
+    },
+    {
+      "title": "Sanctions: The EU adopts new measures against the Russian shadow fleet ecosystem and Belarus",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_25_3070",
+      "date": "December 15, 2025",
+      "description": "These new measures aim at further increasing the pressure on Russia and Belarus and supporting EU's goal of achieving a just and lasting peace for Ukraine."
+    },
+    {
+      "title": "Commission adds Russia to its list of high-risk jurisdictions to strengthen international fight against financial crime",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_25_2910",
+      "date": "December 3, 2025",
+      "description": "The technical assessment conducted by the Commission concluded that Russia meets the criteria to be designated as a high‑risk third country."
+    }
+  ],
   "unNotices": [
     {
       "title": "Unanimously Adopting Resolution 2825 (2026), Security Council Extends Sanctions Regime for Democratic Republic of the Congo by One Year",
@@ -2800,6 +2849,12 @@
   ],
   "ajNews": [
     {
+      "title": "How war on Iran changed the global energy sector forever",
+      "url": "https://www.aljazeera.com/economy/2026/7/1/how-war-on-iran-changed-the-global-energy-sector-forever?traffic_source=rss",
+      "date": "July 1, 2026",
+      "description": "Conflict will accelerate shift to renewables and search for alternatives to Strait of Hormuz, energy analysts say."
+    },
+    {
       "title": "Russian attacks kill three in Ukraine as Kyiv hits another oil refinery",
       "url": "https://www.aljazeera.com/news/2026/7/1/russian-attacks-kill-three-in-ukraine-as-kyiv-hits-another-oil-refinery?traffic_source=rss",
       "date": "July 1, 2026",
@@ -2810,18 +2865,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/1/venezuelan-sky-turns-deep-red-as-sun-sets-over-caracas?traffic_source=rss",
       "date": "July 1, 2026",
       "description": "Venezuelan sky turns deep red as sun sets over Caracas"
-    },
-    {
-      "title": "US-Iran negotiations: What’s the latest?",
-      "url": "https://www.aljazeera.com/news/2026/7/1/us-iran-negotiations-whats-the-latest?traffic_source=rss",
-      "date": "July 1, 2026",
-      "description": "Iranian officials are expected in Doha for talks with Qatari mediators, a day after US negotiators arrived there."
-    },
-    {
-      "title": "Rescuers race to reach survivors in Venezuela",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/1/rescuers-race-to-reach-survivors-in-venezuela?traffic_source=rss",
-      "date": "July 1, 2026",
-      "description": "&quot;I&#039;m still begging for people to help me get him out.&quot;"
     }
   ],
   "occNews": [
@@ -2951,7 +2994,7 @@
       "description": "The collision left holes on the side of the tower, but Beijing has scrubbed other visible traces of the incident."
     },
     {
-      "title": "Canada will take part in Eurovision Song Contest 2027",
+      "title": "Canada to make Eurovision Song Contest debut in 2027",
       "url": "https://www.bbc.co.uk/news/articles/c8x2y2vwqn1o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 1, 2026",
       "description": "The country becomes the first new participant since Australia joined the contest in 2015."
@@ -3377,6 +3420,24 @@
       "description": "Paul Lewis interviews Richard Lloyd, the chair of the Access to Banking Review."
     },
     {
+      "title": "India’s Bengal drops eggs from school lunches: Why that’s stoking debate",
+      "url": "https://www.aljazeera.com/news/2026/7/1/indias-bengal-drops-eggs-from-school-lunches-why-thats-stoking-debate?traffic_source=rss",
+      "date": "July 1, 2026",
+      "description": "Opposition politicians say the BJP is &#039;imposing vegetarianism&#039; by removing eggs from midday meals."
+    },
+    {
+      "title": "Israeli forces kill Palestinian goalkeeper in Gaza",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/1/israeli-forces-kill-palestinian-goalkeeper-in-gaza?traffic_source=rss",
+      "date": "July 1, 2026",
+      "description": "Palestinian goalkeeper Saleem Al-Ashqar was shot dead by Israeli forces in Gaza."
+    },
+    {
+      "title": "Sabalenka overcomes Kessler at Wimbledon, sets up Ostapenko clash",
+      "url": "https://www.aljazeera.com/sports/2026/7/1/sabalenka-overcomes-kessler-at-wimbledon-sets-up-ostapenko-clash?traffic_source=rss",
+      "date": "July 1, 2026",
+      "description": "Top-seeded Aryna Sabalenka will play former French Open champion Jelena Ostapenko in a challenging last-32 matchup."
+    },
+    {
       "title": "After Afghanistan fires drones into Pakistan, what’s next?",
       "url": "https://www.aljazeera.com/news/2026/7/1/after-afghanistan-fires-drones-into-pakistan-whats-next?traffic_source=rss",
       "date": "July 1, 2026",
@@ -3489,18 +3550,6 @@
       "url": "https://www.aljazeera.com/video/2026/7/1/video-world-cup-2026-highlights?traffic_source=rss",
       "date": "July 1, 2026",
       "description": "Latest match highlights, reaction and previews from the FIFA World Cup 2026 in North America."
-    },
-    {
-      "title": "FIFA World Cup: Wednesday schedule, predictions and bracket update",
-      "url": "https://www.aljazeera.com/sports/2026/7/1/fifa_world-cup-wednesday-schedule-predictions-bracket-update?traffic_source=rss",
-      "date": "July 1, 2026",
-      "description": "England, Argentina and Belgium chase round of 16 spots as World Cup underdogs eye historic upsets."
-    },
-    {
-      "title": "Trump official says White House will fight birthright citizenship decision",
-      "url": "https://www.aljazeera.com/video/2026/7/1/trump-official-says-white-house-will-fight-birthright-citizenship-decision?traffic_source=rss",
-      "date": "July 1, 2026",
-      "description": "A White House adviser told Al Jazeera the Trump administration will continue ‘fighting’ to end birthright citizenship."
     }
   ]
 }
