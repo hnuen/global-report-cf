@@ -143,7 +143,7 @@ export async function GET(req: NextRequest) {
 
 export async function POST(req: NextRequest) {
   try {
-    const body = await req.json().catch(() => ({})) as { topic?: string };
-    return NextResponse.json(await runMonitor(body.topic));
+    const body = await req.json().catch(() => ({})) as { topic?: string; force?: boolean };
+    return NextResponse.json(await runMonitor(body.topic, body.force ?? false));
   } catch (e) { return NextResponse.json({ error: String(e) }, { status: 500 }); }
 }
