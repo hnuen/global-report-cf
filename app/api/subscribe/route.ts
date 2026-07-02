@@ -18,10 +18,11 @@ const PHONE_PATTERN = /^\+[1-9]\d{7,14}$/;
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json().catch(() => ({})) as {
-      channel?: string; phone?: string; name?: string; ntfyTopic?: string;
+      channel?: string; phone?: string; name?: string; email?: string;
     };
     const channel = body.channel as SubscriberChannel;
-    const name = (body.name ?? "").trim().slice(0, 80) || undefined;
+    const name  = (body.name  ?? "").trim().slice(0, 80) || undefined;
+    const email = (body.email ?? "").trim().slice(0, 200) || undefined;
 
     if (!["telegram", "whatsapp", "sms", "ntfy"].includes(channel)) {
       return NextResponse.json({ error: "channel must be telegram, whatsapp, sms, or ntfy" }, { status: 400 });
@@ -35,7 +36,7 @@ export async function POST(request: NextRequest) {
           { status: 503 }
         );
       }
-      const sub = await createTelegramSubscriber(name);
+      const sub = await createTelegramSubscriber(name, email);
       const telegramDeepLink = `https://t.me/${botUsername}?start=${sub.telegramLinkCode}`;
       return NextResponse.json({
         ok: true,
@@ -45,13 +46,9 @@ export async function POST(request: NextRequest) {
       });
     }
 
-    // ntfy — require a topic name, approval email goes out now
+    // ntfy — topic is generated server-side and emailed after approval
     if (channel === "ntfy") {
-      const ntfyTopic = (body.ntfyTopic ?? "").trim().slice(0, 100);
-      if (!ntfyTopic) {
-        return NextResponse.json({ error: "ntfyTopic is required" }, { status: 400 });
-      }
-      const sub = await createNtfySubscriber(ntfyTopic, name);
+      const sub = await createNtfySubscriber(name, email);
       if (!isApprovalEmailConfigured()) {
         return NextResponse.json({
           ok: true, status: sub.status,
@@ -75,7 +72,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const sub = await createPhoneSubscriber(channel, phone, name);
+    const sub = await createPhoneSubscriber(channel as "whatsapp" | "sms", phone, name, email);
 
     if (!isApprovalEmailConfigured()) {
       // Subscriber is still saved as pending_approval — just nobody got

@@ -14,7 +14,7 @@ const RULE = "#e5e7eb";
 export default function SubscribePage() {
   const [channel, setChannel] = useState<Channel>("telegram");
   const [phone, setPhone] = useState("");
-  const [ntfyTopic, setNtfyTopic] = useState("");
+  const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [busy, setBusy] = useState(false);
   const [result, setResult] = useState<{ ok: boolean; message: string; deepLink?: string } | null>(null);
@@ -27,7 +27,7 @@ export default function SubscribePage() {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ channel, phone, name, ntfyTopic }),
+        body: JSON.stringify({ channel, phone, email, name }),
       });
       const data = await res.json();
       if (!res.ok) {
@@ -148,6 +148,23 @@ export default function SubscribePage() {
               />
 
               <label style={{ display: "block", fontSize: 14, marginBottom: 6, marginTop: 18, fontWeight: 500 }}>
+                Email{channel === "ntfy" ? "" : " (optional)"}
+              </label>
+              <input
+                type="email"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
+                placeholder="jane@example.com"
+                required={channel === "ntfy"}
+                style={inputStyle}
+              />
+              {channel === "ntfy" && (
+                <p style={{ fontSize: 12, color: MUTED, marginTop: 4, marginBottom: 0 }}>
+                  Required — we'll email your private ntfy topic after approval.
+                </p>
+              )}
+
+              <label style={{ display: "block", fontSize: 14, marginBottom: 6, marginTop: 18, fontWeight: 500 }}>
                 How should we reach you?
               </label>
               <div style={{ display: "flex", gap: 8, marginBottom: 18, flexWrap: "wrap" }}>
@@ -191,22 +208,10 @@ export default function SubscribePage() {
               )}
 
               {channel === "ntfy" && (
-                <>
-                  <label style={{ display: "block", fontSize: 14, marginBottom: 6, fontWeight: 500 }}>
-                    Your ntfy topic name
-                  </label>
-                  <input
-                    value={ntfyTopic}
-                    onChange={e => setNtfyTopic(e.target.value)}
-                    placeholder="my-unique-topic-name"
-                    required
-                    style={inputStyle}
-                  />
-                  <p style={{ fontSize: 13, color: MUTED, lineHeight: 1.5, marginTop: 8, marginBottom: 0 }}>
-                    Install the <strong>ntfy</strong> app (iOS / Android), subscribe to your topic,
-                    then enter it here. Pick a hard-to-guess name — ntfy topics are public by default.
-                  </p>
-                </>
+                <p style={{ fontSize: 13, color: MUTED, lineHeight: 1.5, marginTop: 18, marginBottom: 0 }}>
+                  Install the <strong>ntfy</strong> app (iOS / Android).
+                  After approval, you'll receive an email with your private topic name to subscribe to.
+                </p>
               )}
 
               {channel === "telegram" && (

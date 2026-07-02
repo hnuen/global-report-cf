@@ -34,9 +34,10 @@ export interface Subscriber {
   channel: SubscriberChannel;
   name?: string;
   phone?: string;            // E.164, e.g. +14155551234 — whatsapp/sms only
+  email?: string;            // subscriber's email — collected for all channels
   telegramChatId?: string;   // filled in once they /start the bot
   telegramLinkCode?: string; // random code embedded in the t.me deep link
-  ntfyTopic?: string;        // ntfy topic name they subscribed to in the app
+  ntfyTopic?: string;        // server-generated random topic, emailed after approval
   status: SubscriberStatus;
   token: string;             // unguessable — used in the approve/deny email links
   createdAt: number;
@@ -71,7 +72,8 @@ function newLinkCode(): string {
 export async function createPhoneSubscriber(
   channel: "whatsapp" | "sms",
   phone: string,
-  name?: string
+  name?: string,
+  email?: string,
 ): Promise<Subscriber> {
   const redis = await getRedis();
   const sub: Subscriber = {
@@ -79,6 +81,7 @@ export async function createPhoneSubscriber(
     channel,
     phone,
     name,
+    email,
     status: "pending_approval",
     token: newToken(),
     createdAt: Date.now(),
@@ -89,17 +92,20 @@ export async function createPhoneSubscriber(
   return sub;
 }
 
-/** Register an ntfy subscriber — goes straight to pending_approval. */
+/** Register an ntfy subscriber — generates a random topic server-side, emailed after approval. */
 export async function createNtfySubscriber(
-  ntfyTopic: string,
-  name?: string
+  name?: string,
+  email?: string,
 ): Promise<Subscriber> {
   const redis = await getRedis();
+  // Generate a hard-to-guess topic — subscriber gets it emailed after approval
+  const ntfyTopic = `gr-${randomBytes(10).toString("hex")}`;
   const sub: Subscriber = {
     id: randomUUID(),
     channel: "ntfy",
     ntfyTopic,
     name,
+    email,
     status: "pending_approval",
     token: newToken(),
     createdAt: Date.now(),
@@ -118,13 +124,14 @@ export async function createNtfySubscriber(
  * approval email is NOT sent yet — see linkTelegramChat() below, which
  * fires it once the chat_id is actually known.
  */
-export async function createTelegramSubscriber(name?: string): Promise<Subscriber> {
+export async function createTelegramSubscriber(name?: string, email?: string): Promise<Subscriber> {
   const redis = await getRedis();
   const linkCode = newLinkCode();
   const sub: Subscriber = {
     id: randomUUID(),
     channel: "telegram",
     name,
+    email,
     telegramLinkCode: linkCode,
     status: "pending_telegram_link",
     token: newToken(),

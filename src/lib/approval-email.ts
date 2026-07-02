@@ -24,6 +24,52 @@
 import type { Subscriber } from "./subscribers";
 import { sendEmail } from "./email";
 
+/** After approving an ntfy subscriber, email them their generated topic name. */
+export async function sendNtfyTopicEmail(sub: Subscriber): Promise<{ ok: boolean; error?: string }> {
+  if (!sub.email || !sub.ntfyTopic) {
+    return { ok: false, error: "Subscriber has no email or ntfy topic" };
+  }
+  const topic = sub.ntfyTopic;
+  const text = [
+    `Hi${sub.name ? ` ${sub.name}` : ""},`,
+    "",
+    "Your request to receive OFAC sanctions alerts has been approved.",
+    "",
+    "To start receiving push notifications, open the ntfy app and subscribe to this topic:",
+    "",
+    `  ${topic}`,
+    "",
+    "Steps:",
+    "  1. Open the ntfy app (iOS / Android)",
+    '  2. Tap "Subscribe to topic"',
+    `  3. Enter exactly: ${topic}`,
+    "  4. Tap Subscribe",
+    "",
+    "Keep this topic private — anyone who knows it can read your alerts.",
+    "",
+    "— The Global Report",
+  ].join("\n");
+
+  const html = `
+    <p>Hi${sub.name ? ` <b>${sub.name}</b>` : ""},</p>
+    <p>Your request to receive OFAC sanctions alerts has been <b>approved</b>.</p>
+    <p>To start receiving push notifications, open the <b>ntfy app</b> and subscribe to this topic:</p>
+    <p style="background:#f4f4f4;padding:12px 16px;border-radius:4px;font-family:monospace;font-size:16px;letter-spacing:0.5px;">
+      ${topic}
+    </p>
+    <p><b>Steps:</b><br/>
+      1. Open the ntfy app (iOS / Android)<br/>
+      2. Tap "Subscribe to topic"<br/>
+      3. Enter exactly: <code>${topic}</code><br/>
+      4. Tap Subscribe
+    </p>
+    <p style="color:#888;font-size:13px;">Keep this topic private — anyone who knows it can read your alerts.</p>
+    <p>— The Global Report</p>
+  `;
+
+  return sendEmail({ to: sub.email, subject: "Your OFAC Alerts are Active — Ntfy Setup Instructions", text, html });
+}
+
 export function isApprovalEmailConfigured(): boolean {
   return !!(
     process.env.RESEND_API_KEY &&
@@ -39,6 +85,8 @@ function describeSubscriber(sub: Subscriber): string {
       return `WhatsApp — ${sub.phone}`;
     case "sms":
       return `SMS — ${sub.phone}`;
+    case "ntfy":
+      return `Ntfy — topic: ${sub.ntfyTopic} (email after approval: ${sub.email ?? "none provided"})`;
   }
 }
 
