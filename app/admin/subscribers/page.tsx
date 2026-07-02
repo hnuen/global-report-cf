@@ -11,10 +11,12 @@ type SubscriberStatus =
 
 interface Subscriber {
   id: string;
-  channel: "telegram" | "whatsapp" | "sms";
+  channel: "telegram" | "whatsapp" | "sms" | "ntfy";
   name?: string;
   phone?: string;
+  email?: string;
   telegramChatId?: string;
+  ntfyTopic?: string;
   status: SubscriberStatus;
   createdAt: number;
   approvedAt?: number;
@@ -229,7 +231,10 @@ export default function AdminSubscribersPage() {
                         {s.channel === "sms" ? "SMS" : s.channel}
                       </td>
                       <td style={{ padding: "8px 6px" }}>
-                        {s.phone || s.telegramChatId || "—"}
+                        {s.channel === "ntfy"
+                          ? (s.ntfyTopic ? `topic: ${s.ntfyTopic}` : "—") + (s.email ? ` / ${s.email}` : "")
+                          : s.phone || s.telegramChatId || "—"
+                        }
                       </td>
                       <td style={{ padding: "8px 6px", color: STATUS_COLOR[s.status], fontWeight: 500 }}>
                         {STATUS_LABEL[s.status]}
