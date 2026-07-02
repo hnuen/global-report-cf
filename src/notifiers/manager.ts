@@ -35,6 +35,7 @@ const SUBSCRIBER_CHANNEL_BY_NOTIFIER_ID: Record<string, SubscriberChannel> = {
   telegram: "telegram",
   twilio:   "sms",
   whatsapp: "whatsapp",
+  ntfy:     "ntfy",
 };
 
 // ── Cooldown store (in-memory + persisted to KV) ──────────────────────────────

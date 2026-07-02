@@ -20,7 +20,7 @@
 
 import { randomUUID, randomBytes } from "crypto";
 
-export type SubscriberChannel = "telegram" | "whatsapp" | "sms";
+export type SubscriberChannel = "telegram" | "whatsapp" | "sms" | "ntfy";
 
 export type SubscriberStatus =
   | "pending_telegram_link"  // Telegram only: waiting for them to hit /start
@@ -36,6 +36,7 @@ export interface Subscriber {
   phone?: string;            // E.164, e.g. +14155551234 — whatsapp/sms only
   telegramChatId?: string;   // filled in once they /start the bot
   telegramLinkCode?: string; // random code embedded in the t.me deep link
+  ntfyTopic?: string;        // ntfy topic name they subscribed to in the app
   status: SubscriberStatus;
   token: string;             // unguessable — used in the approve/deny email links
   createdAt: number;
@@ -77,6 +78,27 @@ export async function createPhoneSubscriber(
     id: randomUUID(),
     channel,
     phone,
+    name,
+    status: "pending_approval",
+    token: newToken(),
+    createdAt: Date.now(),
+  };
+  await redis.set(`subscriber:${sub.id}`, JSON.stringify(sub));
+  await redis.set(`subscriber_token:${sub.token}`, sub.id);
+  await redis.sadd("subscribers_index", sub.id);
+  return sub;
+}
+
+/** Register an ntfy subscriber — goes straight to pending_approval. */
+export async function createNtfySubscriber(
+  ntfyTopic: string,
+  name?: string
+): Promise<Subscriber> {
+  const redis = await getRedis();
+  const sub: Subscriber = {
+    id: randomUUID(),
+    channel: "ntfy",
+    ntfyTopic,
     name,
     status: "pending_approval",
     token: newToken(),

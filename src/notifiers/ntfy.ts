@@ -24,6 +24,7 @@
 import type { Notifier, NotifyResult } from "./types";
 import type { ScoredArticle }          from "../lib/alert-scorer";
 import { formatAlert }                 from "./format";
+import { listApprovedByChannel }       from "../lib/subscribers";
 
 const PRIORITY_MAP: Record<number, string> = {
   90: "urgent",
@@ -48,10 +49,17 @@ export class NtfyNotifier implements Notifier {
   }
 
   async send(articles: ScoredArticle[], appUrl: string): Promise<NotifyResult> {
-    const topic  = process.env.NTFY_TOPIC!;
     const server = (process.env.NTFY_SERVER ?? "https://ntfy.sh").replace(/\/$/, "");
     const token  = process.env.NTFY_TOKEN;
-    const url    = `${server}/${topic}`;
+
+    // Collect topics: static env-var + approved dynamic subscribers
+    const staticTopic = process.env.NTFY_TOPIC;
+    const approved    = await listApprovedByChannel("ntfy").catch(() => []);
+    const subTopics   = approved.map(s => s.ntfyTopic).filter((t): t is string => !!t);
+    const topics      = Array.from(new Set([
+      ...(staticTopic ? [staticTopic] : []),
+      ...subTopics,
+    ]));
 
     let sent = 0;
 
@@ -59,30 +67,33 @@ export class NtfyNotifier implements Notifier {
       const { subject, plain, emoji } = formatAlert(sa, appUrl);
       const priority = ntfyPriority(sa.score);
 
-      const headers: Record<string, string> = {
-        "Title":    subject.slice(0, 250),
-        "Priority": priority,
-        "Tags":     `${emoji.replace(/\s/g, "")},${sa.article.section}`,
-        "Content-Type": "text/plain",
-      };
+      for (const topic of topics) {
+        const url = `${server}/${topic}`;
+        const headers: Record<string, string> = {
+          "Title":    subject.slice(0, 250),
+          "Priority": priority,
+          "Tags":     `${emoji.replace(/\s/g, "")},${sa.article.section}`,
+          "Content-Type": "text/plain",
+        };
 
-      if (appUrl)  headers["Click"] = appUrl;
-      if (token)   headers["Authorization"] = `Bearer ${token}`;
+        if (appUrl) headers["Click"] = appUrl;
+        if (token)  headers["Authorization"] = `Bearer ${token}`;
 
-      try {
-        const res = await fetch(url, {
-          method: "POST",
-          headers,
-          body: plain,
-        });
-        if (res.ok) {
-          sent++;
-        } else {
-          const err = await res.text();
-          console.error(`[ntfy] Error ${res.status}: ${err}`);
+        try {
+          const res = await fetch(url, {
+            method: "POST",
+            headers,
+            body: plain,
+          });
+          if (res.ok) {
+            sent++;
+          } else {
+            const err = await res.text();
+            console.error(`[ntfy] Error ${res.status} for topic ${topic}: ${err}`);
+          }
+        } catch (e) {
+          console.error(`[ntfy] Fetch error for topic ${topic}:`, e);
         }
-      } catch (e) {
-        console.error("[ntfy] Fetch error:", e);
       }
     }
 

@@ -6,7 +6,7 @@
 // and hit "Start" first (handled by app/api/telegram-webhook). The frontend
 // shows that deep link using the telegramDeepLink field in the response.
 import { NextRequest, NextResponse } from "next/server";
-import { createPhoneSubscriber, createTelegramSubscriber, type SubscriberChannel } from "@/src/lib/subscribers";
+import { createPhoneSubscriber, createTelegramSubscriber, createNtfySubscriber, type SubscriberChannel } from "@/src/lib/subscribers";
 import { sendApprovalEmail, isApprovalEmailConfigured } from "@/src/lib/approval-email";
 
 export const dynamic = "force-dynamic";
@@ -18,13 +18,13 @@ const PHONE_PATTERN = /^\+[1-9]\d{7,14}$/;
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json().catch(() => ({})) as {
-      channel?: string; phone?: string; name?: string;
+      channel?: string; phone?: string; name?: string; ntfyTopic?: string;
     };
     const channel = body.channel as SubscriberChannel;
     const name = (body.name ?? "").trim().slice(0, 80) || undefined;
 
-    if (!["telegram", "whatsapp", "sms"].includes(channel)) {
-      return NextResponse.json({ error: "channel must be telegram, whatsapp, or sms" }, { status: 400 });
+    if (!["telegram", "whatsapp", "sms", "ntfy"].includes(channel)) {
+      return NextResponse.json({ error: "channel must be telegram, whatsapp, sms, or ntfy" }, { status: 400 });
     }
 
     if (channel === "telegram") {
@@ -42,6 +42,27 @@ export async function POST(request: NextRequest) {
         status: sub.status,
         telegramDeepLink,
         message: "Open Telegram and tap Start to finish registering — your request will then go to the site owner for approval.",
+      });
+    }
+
+    // ntfy — require a topic name, approval email goes out now
+    if (channel === "ntfy") {
+      const ntfyTopic = (body.ntfyTopic ?? "").trim().slice(0, 100);
+      if (!ntfyTopic) {
+        return NextResponse.json({ error: "ntfyTopic is required" }, { status: 400 });
+      }
+      const sub = await createNtfySubscriber(ntfyTopic, name);
+      if (!isApprovalEmailConfigured()) {
+        return NextResponse.json({
+          ok: true, status: sub.status,
+          warning: "Saved, but the site owner's approval email isn't configured yet.",
+        });
+      }
+      const emailResult = await sendApprovalEmail(sub);
+      return NextResponse.json({
+        ok: true, status: sub.status,
+        message: "Request sent — you'll start receiving alerts once the site owner approves it.",
+        ...(emailResult.ok ? {} : { warning: `Saved, but the approval email failed: ${emailResult.error}` }),
       });
     }
 

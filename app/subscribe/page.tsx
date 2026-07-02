@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { css, SECTIONS, LABELS } from "../AppContent";
 
-type Channel = "telegram" | "whatsapp" | "sms";
+type Channel = "telegram" | "whatsapp" | "sms" | "ntfy";
 
 const PAPER = "#ffffff";
 const INK = "#111111";
@@ -14,6 +14,7 @@ const RULE = "#e5e7eb";
 export default function SubscribePage() {
   const [channel, setChannel] = useState<Channel>("telegram");
   const [phone, setPhone] = useState("");
+  const [ntfyTopic, setNtfyTopic] = useState("");
   const [name, setName] = useState("");
   const [busy, setBusy] = useState(false);
   const [result, setResult] = useState<{ ok: boolean; message: string; deepLink?: string } | null>(null);
@@ -26,7 +27,7 @@ export default function SubscribePage() {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ channel, phone, name }),
+        body: JSON.stringify({ channel, phone, name, ntfyTopic }),
       });
       const data = await res.json();
       if (!res.ok) {
@@ -149,14 +150,15 @@ export default function SubscribePage() {
               <label style={{ display: "block", fontSize: 14, marginBottom: 6, marginTop: 18, fontWeight: 500 }}>
                 How should we reach you?
               </label>
-              <div style={{ display: "flex", gap: 8, marginBottom: 18 }}>
-                {(["telegram", "whatsapp", "sms"] as Channel[]).map(c => (
+              <div style={{ display: "flex", gap: 8, marginBottom: 18, flexWrap: "wrap" }}>
+                {(["telegram", "whatsapp", "sms", "ntfy"] as Channel[]).map(c => (
                   <button
                     type="button"
                     key={c}
                     onClick={() => setChannel(c)}
                     style={{
                       flex: 1,
+                      minWidth: 70,
                       padding: "10px 0",
                       borderRadius: 4,
                       border: `1px solid ${channel === c ? ACCENT : "#ccc"}`,
@@ -168,12 +170,12 @@ export default function SubscribePage() {
                       textTransform: "capitalize",
                     }}
                   >
-                    {c === "sms" ? "SMS" : c}
+                    {c === "sms" ? "SMS" : c === "ntfy" ? "Ntfy" : c}
                   </button>
                 ))}
               </div>
 
-              {channel !== "telegram" && (
+              {(channel === "whatsapp" || channel === "sms") && (
                 <>
                   <label style={{ display: "block", fontSize: 14, marginBottom: 6, fontWeight: 500 }}>
                     Phone number (with country code)
@@ -185,6 +187,25 @@ export default function SubscribePage() {
                     required
                     style={inputStyle}
                   />
+                </>
+              )}
+
+              {channel === "ntfy" && (
+                <>
+                  <label style={{ display: "block", fontSize: 14, marginBottom: 6, fontWeight: 500 }}>
+                    Your ntfy topic name
+                  </label>
+                  <input
+                    value={ntfyTopic}
+                    onChange={e => setNtfyTopic(e.target.value)}
+                    placeholder="my-unique-topic-name"
+                    required
+                    style={inputStyle}
+                  />
+                  <p style={{ fontSize: 13, color: MUTED, lineHeight: 1.5, marginTop: 8, marginBottom: 0 }}>
+                    Install the <strong>ntfy</strong> app (iOS / Android), subscribe to your topic,
+                    then enter it here. Pick a hard-to-guess name — ntfy topics are public by default.
+                  </p>
                 </>
               )}
 
