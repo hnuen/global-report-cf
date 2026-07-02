@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-02T17:08:14.209Z",
+  "updatedAt": "2026-07-02T17:38:30.446Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260701_33",
@@ -2866,6 +2866,18 @@
   ],
   "ajNews": [
     {
+      "title": "What’s behind the deadly bombing of a crowded Damascus cafe?",
+      "url": "https://www.aljazeera.com/news/2026/7/2/whats-behind-the-deadly-bombing-of-a-crowded-damascus-cafe?traffic_source=rss",
+      "date": "July 2, 2026",
+      "description": "The blast near Damascus&#039;s main courthouse killed five and wounded 16 as Syria&#039;s new state battles to enforce security."
+    },
+    {
+      "title": "US wants intervention, but Syria signals diplomacy after FM’s Lebanon trip",
+      "url": "https://www.aljazeera.com/news/2026/7/2/us-wants-intervention-syria-signals-diplomacy-after-fm-lebanon-trip?traffic_source=rss",
+      "date": "July 2, 2026",
+      "description": "Syrian Foreign Minister al-Shaibani met Hezbollah ally Berri during visit, as Trump calls for Syria to disarm group."
+    },
+    {
       "title": "Who is Iranian oil tycoon Shamkhani whose ship is stranded in Hormuz?",
       "url": "https://www.aljazeera.com/news/2026/7/2/who-is-iranian-oil-tycoon-shamkhani-whose-ship-is-stranded-in-hormuz?traffic_source=rss",
       "date": "July 2, 2026",
@@ -2884,7 +2896,14 @@
       "description": "⁠An improvised explosive device detonates in a popular ​Damascus cafe as Syrian security forces hunt for attackers."
     }
   ],
-  "occNews": [],
+  "occNews": [
+    {
+      "title": "OCC Announces Enforcement Actions for June 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-48.html",
+      "date": "June 18, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for June 2026."
+    }
+  ],
   "economicsNews": [
     {
       "title": "Federal Reserve Board&#39;s annual bank stress test confirms that large banks are well positioned to weather a severe recession and able to continue to lend to households and businesses",
@@ -2979,7 +2998,7 @@
       "description": "Once described as \"the godfather\" of French migrant camps, he has been working in a Leicestershire village."
     },
     {
-      "title": "Vatican excommunicates hundreds of thousands of splinter sect followers",
+      "title": "Vatican excommunicates followers of global Catholic sect",
       "url": "https://www.bbc.co.uk/news/articles/c5yz95188jjo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 2, 2026",
       "description": "Around 600,000 followers of the Society of Saint Pius X, a Catholic sect, are affected."
@@ -3435,6 +3454,12 @@
       "description": "Money Box Live considers what buying a flat means for your finances?"
     },
     {
+      "title": "German prosecutors allege Ukraine ordered Nord Stream pipeline attack",
+      "url": "https://www.aljazeera.com/news/2026/7/2/german-prosecutors-allege-ukraine-ordered-nord-stream-pipeline-attack?traffic_source=rss",
+      "date": "July 2, 2026",
+      "description": "Former Ukrainian soldier accused of &#039;war crime&#039; and leading a team of divers to blow up Nord Stream pipelines."
+    },
+    {
       "title": "Spain immigration scheme sees 1.2 million apply for legal status",
       "url": "https://www.aljazeera.com/news/2026/7/2/spain-immigration-scheme-sees-1-2-million-apply-for-legal-status?traffic_source=rss",
       "date": "July 2, 2026",
@@ -3547,24 +3572,6 @@
       "url": "https://www.aljazeera.com/sports/2026/7/2/controversial-penalty-ends-senegals-fifa-world-cup-run-against-belgium?traffic_source=rss",
       "date": "July 2, 2026",
       "description": "Late VAR penalty leads to fury as Senegal blows 2-0 lead, loses 3-2 to Belgium in dramatic World Cup round of 32 exit."
-    },
-    {
-      "title": "Jaylen Brown traded to Philadelphia 76ers from Boston Celtics",
-      "url": "https://www.aljazeera.com/sports/2026/7/2/jaylen-brown-traded-to-philadelphia-76ers-from-boston-celtics?traffic_source=rss",
-      "date": "July 2, 2026",
-      "description": "In an unexpected move, Boston traded the All-Star guard to division rivals Philadelphia for Paul George and draft picks."
-    },
-    {
-      "title": "Vatican expels members of rebel Catholic group over unapproved ordination",
-      "url": "https://www.aljazeera.com/news/2026/7/2/breakaway-catholic-group-condemned-sacraments-deemed-illicit-by-vatican?traffic_source=rss",
-      "date": "July 2, 2026",
-      "description": "Vatican stresses only pope may approve bishop consecrations to safeguard apostolic ties to Jesus&#039;s original disciples."
-    },
-    {
-      "title": "Philippines volcano erupts blasting plumes of ash and steam",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/2/philippines-volcano-erupts-blasting-plumes-of-ash-and-steam?traffic_source=rss",
-      "date": "July 2, 2026",
-      "description": "Taal Volcano in the Philippines erupted, sending a column of ash and steam 1,200 metres into the air."
     }
   ]
 }
