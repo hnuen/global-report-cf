@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-02T19:38:10.261Z",
+  "updatedAt": "2026-07-02T20:08:16.539Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260701_33",
@@ -2846,12 +2846,6 @@
       "description": "Kleiber Moran, 2, was rescued on Wednesday, six days after last week's deadly earthquakes."
     },
     {
-      "title": "The US deported them to Venezuela - hours later earthquakes struck",
-      "url": "https://www.bbc.co.uk/news/articles/c3eyxjy01y3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 2, 2026",
-      "description": "They landed on Flight 164 just before the twin quakes. Family members are desperately searching for them."
-    },
-    {
       "title": "Watch: BBC at site of deadly Russian attack on Kyiv flats",
       "url": "https://www.bbc.co.uk/news/videos/c33yl1l8dkro?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 2, 2026",
@@ -2871,6 +2865,12 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Trump administration renews pressure on International Criminal Court",
+      "url": "https://www.aljazeera.com/news/2026/7/2/trump-administration-renews-pressure-on-international-criminal-court?traffic_source=rss",
+      "date": "July 2, 2026",
+      "description": "The US says it will reject any effort by court to assert authority over citizens, days after judges sue over sanctions."
+    },
     {
       "title": "The last time Iran held a funeral for the Supreme Leader",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/2/the-last-time-iran-held-a-funeral-for-the-supreme-leader?traffic_source=rss",
@@ -2906,12 +2906,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/2/who-is-iranian-oil-tycoon-shamkhani-whose-ship-is-stranded-in-hormuz?traffic_source=rss",
       "date": "July 2, 2026",
       "description": "Iranian oil shipping magnate Mohammad Hossein Shamkhani has been sanctioned by the West over his shadow fleet."
-    },
-    {
-      "title": "Explosion in Damascus cafe causes casualties",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/2/explosion-in-damascus-cafe-causes-casualties?traffic_source=rss",
-      "date": "July 2, 2026",
-      "description": "An explosion inside a cafe in Damascus’s Hejaz district has caused casualties, according to Syrian state media."
     }
   ],
   "occNews": [
@@ -3020,6 +3014,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cr47129ky6do?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 2, 2026",
       "description": "The 66-year-old, who died in the crash, had anxiety and referenced \"ending his life\" in his diary."
+    },
+    {
+      "title": "Former Olympian indicted for allegedly vandalising Washington Reflecting Pool",
+      "url": "https://www.bbc.co.uk/news/articles/c2ky3p9jlveo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 2, 2026",
+      "description": "US authorities charged him with property destruction after renovations championed by President Donald Trump appeared to go awry."
     },
     {
       "title": "South Africa and Ghana in diplomatic row over alleged killing of migrant",
@@ -3466,6 +3466,18 @@
       "description": "Struggling to get a refund? Consumer journalist Rebecca Wilcox shares some tips."
     },
     {
+      "title": "Supermarket chaos for air conditioner sale in France amid heatwave",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/2/supermarket-chaos-for-air-conditioner-sale-in-france-amid-heatwave?traffic_source=rss",
+      "date": "July 2, 2026",
+      "description": "Supermarket chaos erupted in France as shoppers raced to buy Lidl&#039;s discounted air conditioners and fans"
+    },
+    {
+      "title": "Nine Buddhist monks killed by child driving truck in Thailand",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/2/nine-buddhist-monks-killed-by-child-driving-truck-in-thailand?traffic_source=rss",
+      "date": "July 2, 2026",
+      "description": "Nine Buddhist monks were killed after a truck driven by an 11-year-old boy struck a pilgrimage procession in Thailand."
+    },
+    {
       "title": "Fears of new massacre in Sudan’s el-Obeid: What do we know?",
       "url": "https://www.aljazeera.com/editorial/2026/7/2/fears-of-new-massacre-in-sudans-el-obeid-what-do-we-know?traffic_source=rss",
       "date": "July 2, 2026",
@@ -3560,18 +3572,6 @@
       "url": "https://www.aljazeera.com/sports/2026/7/2/man-city-sign-elliot-anderson-from-forest-in-record-british-transfer?traffic_source=rss",
       "date": "July 2, 2026",
       "description": "Anderson will become the most expensive British player in history when the transfer is finalised with Nottingham Forest."
-    },
-    {
-      "title": "With Hormuz reopened, has the oil shortage turned into a glut?",
-      "url": "https://www.aljazeera.com/news/2026/7/2/with-hormuz-reopened-has-the-oil-shortage-turned-into-a-glut?traffic_source=rss",
-      "date": "July 2, 2026",
-      "description": "As flow resumes through the strait, an oil surplus may yet again destabilise global energy markets."
-    },
-    {
-      "title": "Gaza’s first women’s amputee football team reclaims the pitch after war",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/2/gazas-first-womens-amputee-football-team-reclaims-the-pitch-after-war?traffic_source=rss",
-      "date": "July 2, 2026",
-      "description": "Gaza’s first women’s amputee football team is reclaiming a space that war tried to take from them."
     }
   ]
 }
