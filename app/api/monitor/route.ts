@@ -46,19 +46,62 @@ async function markAlerted(key: string, cooldownMinutes: number): Promise<void> 
   } catch {}
 }
 
+// ── URL pre-flight check ──────────────────────────────────────────────────────
+// Trusted government/official domains — skip verification (always valid).
+const TRUSTED_DOMAINS = [
+  "treasury.gov", "ofac.treasury.gov", "home.treasury.gov",
+  "federalregister.gov", "fincen.gov", "occ.gov", "bis.doc.gov",
+  "state.gov", "commerce.gov", "whitehouse.gov",
+  "eur-lex.europa.eu", "sanctions.ec.europa.eu",
+  "gov.uk", "legislation.gov.uk",
+  "un.org", "bbc.co.uk", "bbc.com",
+  "reuters.com", "apnews.com",
+];
+
+function isTrustedDomain(url: string): boolean {
+  try {
+    const host = new URL(url).hostname.replace(/^www\./, "");
+    return TRUSTED_DOMAINS.some(d => host === d || host.endsWith("." + d));
+  } catch { return false; }
+}
+
+/** HEAD-check a URL; returns true if reachable (2xx/3xx), false on 4xx/error */
+async function isUrlReachable(url: string): Promise<boolean> {
+  if (!url || url === "#") return false;
+  if (isTrustedDomain(url)) return true;
+  try {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 4000);
+    const res = await fetch(url, {
+      method: "HEAD",
+      signal: controller.signal,
+      headers: { "User-Agent": "Mozilla/5.0 (compatible; GlobalReportBot/1.0)" },
+      redirect: "follow",
+    });
+    clearTimeout(timer);
+    return res.status < 400;
+  } catch { return false; }
+}
+
+/** Strip broken sourceUrls from alert candidates in-place */
+async function verifyAlertUrls(alerts: import("@/src/lib/alert-scorer").ScoredArticle[]): Promise<void> {
+  await Promise.all(alerts.map(async sa => {
+    const url = sa.article.sourceUrl;
+    if (!url || url === "#") return;
+    const ok = await isUrlReachable(url);
+    if (!ok) {
+      console.warn(`[monitor] sourceUrl 404/unreachable - stripping: ${url.slice(0, 80)}`);
+      sa.article.sourceUrl = undefined;
+    }
+  }));
+}
+
 async function runMonitor(topic?: string, force = false) {
   const appUrl = process.env.APP_URL ?? "";
-  // Default raised from 360 (6h) to 10080 (7 days): this TTL is the only thing
-  // standing between "this article already alerted" and "alert it again" —
-  // since the cached penalty/program feeds keep old entries in the article
-  // pool indefinitely (not just newly-published ones), a 6h window meant the
-  // same old article re-qualified and re-sent every few hours, forever. See
-  // alert-scorer.ts's isRecentEnough() for the companion age gate on score.
   const cooldownMinutes = Number(process.env.ALERT_COOLDOWN_MINUTES ?? 10080);
   const maxAlertsPerRun = Number(process.env.ALERT_MAX_PER_RUN ?? 3);
 
-  // 1. Load existing briefing from Redis — no re-fetch needed
-  //    Only do a full refresh if explicitly requested via topic
+  // 1. Load existing briefing from Redis
   let briefing;
   let usedProvider = "cached";
   if (topic) {
@@ -75,12 +118,11 @@ async function runMonitor(topic?: string, force = false) {
     }
   }
 
-  // 2. Score all articles — lower threshold for OFAC/sanctions to ensure alerts fire
+  // 2. Score all articles
   const scored = scoreAll(briefing.articles);
   const candidates = scored.filter(s => s.shouldAlert);
 
-  // 3. Deduplicate — skip articles already alerted within cooldown window
-  //    Pass force=true in body to bypass cooldown (for testing)
+  // 3. Deduplicate
   const { buildAlertKey } = await import("@/src/lib/alert-scorer");
   const forceSend = force;
   const newAlerts = [];
@@ -96,7 +138,10 @@ async function runMonitor(topic?: string, force = false) {
     if (newAlerts.length >= maxAlertsPerRun) break;
   }
 
-  console.log(`[monitor] ${briefing.articles.length} articles — ${candidates.length} above threshold — ${newAlerts.length} new — ${blockedKeys.length} cooldown blocked${forceSend?" (FORCED)":""}`);
+  console.log(`[monitor] ${briefing.articles.length} articles - ${candidates.length} above threshold - ${newAlerts.length} new - ${blockedKeys.length} cooldown blocked${forceSend?" (FORCED)":""}`);
+
+  // 4a. Pre-flight URL check - strip 404/unreachable sourceUrls before alerting
+  if (newAlerts.length > 0) await verifyAlertUrls(newAlerts);
 
   // 4. Fire notifications only for new alerts
   const manager = getNotifierManager();
@@ -109,12 +154,10 @@ async function runMonitor(topic?: string, force = false) {
     await markAlerted(buildAlertKey(s.article), cooldownMinutes);
   }
 
-  const alerting = newAlerts;
-
   return {
     ok:           true,
     articles:     briefing.articles.length,
-    alerting:     alerting.length,
+    alerting:     newAlerts.length,
     notified:     notifyResult.sent,
     skipped:      notifyResult.skipped,
     channels:     notifyResult.channels,
