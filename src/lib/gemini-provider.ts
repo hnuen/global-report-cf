@@ -241,4 +241,20 @@ export class GeminiProvider implements LLMProvider {
     // bug already fixed for the GitHub Actions script (refresh-briefing.mjs's
     // formatLastUpdatedUtc), which froze the app's displayed timestamp. Never
     // trust Gemini's self-reported timestamp: always stamp it from the real
-    // clock right before returnin
+    // clock right before returning, in the same Eastern-time format the
+    // official-briefing.ts fallback path uses, so both halves of the
+    // orchestrator's output look consistent regardless of which provider ran.
+    const stamp = new Date().toLocaleString("en-US", {
+      month: "long", day: "numeric", year: "numeric",
+      hour: "2-digit", minute: "2-digit", timeZoneName: "short",
+      timeZone: "America/New_York",
+    });
+    briefing.lastUpdated = `${stamp} [Gemini]`;
+    // Canonical UTC instant for client-side local-time rendering — see the
+    // lastUpdatedIso comment in src/lib/types.ts. The Eastern-time string
+    // above is fine as a human-readable fallback, but isn't itself something
+    // the client can safely re-render in the viewer's own timezone.
+    briefing.lastUpdatedIso = new Date().toISOString();
+    return briefing;
+  }
+}
