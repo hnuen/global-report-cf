@@ -1141,6 +1141,11 @@ developments for a sub-topic are thin, write fewer articles in that section inst
 related real story (a different enforcement action, a policy change, market-moving commentary)
 in its place. A section with only 1-2 real articles is correct; a non-event dressed up as an
 article is not.
+
+CRITICAL — NEW ACTIONS ONLY: Every article must report a NEW, SPECIFIC event that occurred recently (a new designation, a new enforcement action, a new GL, a new EO, a new penalty, a new regulatory change). Do NOT write articles about ongoing/standing sanctions regimes, background on existing programs, or general "the U.S. continues to sanction X" descriptions — those are not news. If no new action occurred in a category this week, omit it rather than writing background context.
+
+FORBIDDEN SOURCES: Never use Wikipedia, Investopedia, or other encyclopedic/reference sites as a sourceUrl. Only use primary government sources (treasury.gov, ofac.treasury.gov, federalregister.gov, bis.doc.gov, occ.gov, fincen.gov, state.gov, commerce.gov, eur-lex.europa.eu, gov.uk) or major wire services (reuters.com, apnews.com, bbc.com) as sourceUrls.
+
 Each body is an array of 2-3 full editorial paragraphs.
 Real current facts from web search only. Include real source names and URLs.
 
@@ -1380,13 +1385,33 @@ try {
   // this regex in sync with the identical NO_NEWS_PATTERN guard in
   // src/lib/alert-scorer.ts (separate runtime, can't share an import here).
   const NO_NEWS_PATTERN = /\bno new\b|\bshows no\b|\breports? no\b|\bno additions?\b|\bno changes?\b|\bnothing new\b|\bremains? unchanged\b|\bdid not add\b|\bno entries (?:were |have been )?added\b|\bno updates? (?:were |have been )?(?:made|reported)\b|\bno actions? (?:were |have been )?(?:taken|reported)\b/i;
+  // Drop "ongoing situation" background articles — not new news.
+  const BACKGROUND_PATTERN = /\bcontinues? to (?:impose|sanction|target|enforce|maintain)\b|\bremains? (?:under sanctions|subject to|in effect)\b|\bhas been (?:sanctioned|designated|subject)\b|\bongoing sanctions\b|\bstanding (?:sanctions|designation)\b/i;
+  // Forbidden source domains — strip these sourceUrls rather than blocking the article.
+  const FORBIDDEN_SOURCE_HOSTS = ["wikipedia.org", "en.wikipedia.org", "investopedia.com", "britannica.com"];
   const beforeFilter = briefing.articles.length;
-  briefing.articles = briefing.articles.filter(a => {
-    const text = `${a.headline ?? ""} ${(a.body ?? [])[0] ?? ""}`;
-    const isFiller = NO_NEWS_PATTERN.test(text);
-    if (isFiller) console.log(`[refresh-briefing] Dropped no-news filler article: "${a.headline}"`);
-    return !isFiller;
-  });
+  briefing.articles = briefing.articles
+    .map(a => {
+      // Strip forbidden sourceUrls
+      if (a.sourceUrl) {
+        try {
+          const host = new URL(a.sourceUrl).hostname.replace(/^www\./, "");
+          if (FORBIDDEN_SOURCE_HOSTS.some(d => host === d || host.endsWith("." + d))) {
+            console.log(`[refresh-briefing] Stripped forbidden sourceUrl (${host}): "${a.headline}"`);
+            a = { ...a, sourceUrl: undefined };
+          }
+        } catch {}
+      }
+      return a;
+    })
+    .filter(a => {
+      const text = `${a.headline ?? ""} ${(a.body ?? [])[0] ?? ""}`;
+      const isFiller = NO_NEWS_PATTERN.test(text);
+      const isBackground = BACKGROUND_PATTERN.test(text);
+      if (isFiller) console.log(`[refresh-briefing] Dropped no-news filler article: "${a.headline}"`);
+      if (isBackground) console.log(`[refresh-briefing] Dropped background/ongoing article: "${a.headline}"`);
+      return !isFiller && !isBackground;
+    });
   if (briefing.articles.length < beforeFilter) {
     console.log(`[refresh-briefing] Filtered ${beforeFilter - briefing.articles.length} no-news filler article(s) from Gemini output`);
   }
@@ -1586,39 +1611,4 @@ if (extraInjected.length > 0) {
   const baseId2 = (briefing.articles?.length ?? 0) + 1;
   extraInjected.forEach((a, i) => { a.id = baseId2 + i; });
   briefing.articles = [...(briefing.articles ?? []), ...extraInjected];
-  console.log(`[refresh-briefing] Injected ${ofsiInjected.length} OFSI + ${europaInjected.length} EU + ${unInjected.length} UN + ${bbcInjected.length} BBC + ${ajInjected.length} Al Jazeera + ${occInjected.length} OCC + ${economicsInjected.length} Fed + ${bisInjected.length} BIS + ${regionsInjected.length} Regions entries — total articles: ${briefing.articles.length}`);
-}
-
-// ── POST to /api/save-briefing (retry once on failure) ─────────────────────
-// merge=true: keep articles from sections NOT covered by this payload (used for fallback).
-// merge=false (default): full replace — used when Gemini succeeds and covers all sections.
-async function trySaveBriefing(payload, merge = false) {
-  const saveRes = await fetch(`${APP_URL}/api/save-briefing`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "x-save-secret": SAVE_SECRET,
-    },
-    body: JSON.stringify({ ...payload, merge }),
-  });
-  const saveData = await saveRes.json().catch(() => ({}));
-  return { saveRes, saveData };
-}
-
-async function saveBriefingWithRetry(payload, merge = false) {
-  console.log(`[refresh-briefing] Saving to ${APP_URL}/api/save-briefing (merge=${merge}) ...`);
-  let { saveRes, saveData } = await trySaveBriefing(payload, merge);
-  if (!saveRes.ok || !saveData.ok) {
-    console.warn(`[refresh-briefing] Save attempt 1 failed (${saveRes.status}): ${JSON.stringify(saveData)} — retrying in 5s`);
-    await new Promise(r => setTimeout(r, 5000));
-    ({ saveRes, saveData } = await trySaveBriefing(payload, merge));
-  }
-  if (!saveRes.ok || !saveData.ok) {
-    console.error(`[refresh-briefing] Save failed after retry (${saveRes.status}): ${JSON.stringify(saveData)}`);
-    console.error(`[refresh-briefing] Briefing had ${payload.articles?.length} articles, lastUpdated: ${payload.lastUpdated}`);
-    process.exit(1);
-  }
-  console.log(`[refresh-briefing] ✅ Saved — ${saveData.articleCount} articles, lastUpdated: ${saveData.lastUpdated}`);
-}
-
-await saveBriefingWithRetry(briefing);
+  console.log(`[refresh-briefing

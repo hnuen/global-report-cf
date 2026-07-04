@@ -59,6 +59,11 @@ Entity List Additions This Month," "No New OFAC Designations Today"). If genuine
 developments for a sub-topic are thin, write fewer articles in that section instead, or cover a
 related real story in its place. A section with only 1-2 real articles is correct; a non-event
 dressed up as an article is not.
+
+CRITICAL — NEW ACTIONS ONLY: Every article must report a NEW, SPECIFIC event that occurred recently (a new designation, a new enforcement action, a new GL, a new EO, a new penalty, a new regulatory change). Do NOT write articles about ongoing/standing sanctions regimes, background on existing programs, or general "the U.S. continues to sanction X" descriptions — those are not news. If no new action occurred in a category this week, omit it rather than writing background context.
+
+FORBIDDEN SOURCES: Never use Wikipedia, Investopedia, or other encyclopedic/reference sites as a sourceUrl. Only use primary government sources (treasury.gov, ofac.treasury.gov, federalregister.gov, bis.doc.gov, occ.gov, fincen.gov, state.gov, commerce.gov, eur-lex.europa.eu, gov.uk) or major wire services (reuters.com, apnews.com, bbc.com) as sourceUrls.
+
 Each body is an array of 2-3 full editorial paragraphs.
 Real current facts from web search only. Include real source names and URLs.
 
@@ -236,20 +241,4 @@ export class GeminiProvider implements LLMProvider {
     // bug already fixed for the GitHub Actions script (refresh-briefing.mjs's
     // formatLastUpdatedUtc), which froze the app's displayed timestamp. Never
     // trust Gemini's self-reported timestamp: always stamp it from the real
-    // clock right before returning, in the same Eastern-time format the
-    // official-briefing.ts fallback path uses, so both halves of the
-    // orchestrator's output look consistent regardless of which provider ran.
-    const stamp = new Date().toLocaleString("en-US", {
-      month: "long", day: "numeric", year: "numeric",
-      hour: "2-digit", minute: "2-digit", timeZoneName: "short",
-      timeZone: "America/New_York",
-    });
-    briefing.lastUpdated = `${stamp} [Gemini]`;
-    // Canonical UTC instant for client-side local-time rendering — see the
-    // lastUpdatedIso comment in src/lib/types.ts. The Eastern-time string
-    // above is fine as a human-readable fallback, but isn't itself something
-    // the client can safely re-render in the viewer's own timezone.
-    briefing.lastUpdatedIso = new Date().toISOString();
-    return briefing;
-  }
-}
+    // clock right before returnin
