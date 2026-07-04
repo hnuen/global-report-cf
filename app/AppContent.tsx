@@ -1721,10 +1721,7 @@ export default function GlobalMonitor() {
             </div>
           )}
           {section!=="penalties" && !allFiltered.length&&!sanOn&&<div className="empty-s">No stories match the current filters.</div>}
-          <div className="hint"><strong style={{color:"var(--muted)"}}>HOW THIS WORKS</strong><br/>
-            ↻ Refresh Now queues a live source fetch (lands in ~1-2 min) · Sources linked below each article<br/>
-            Auto-refreshes throughout the day on a schedule · Sanctions search filters the current edition instantly
-          </div>
+
         </main>
         <aside>
           {sidebarSecs.map((s,si)=>{
@@ -1766,3 +1763,4 @@ export default function GlobalMonitor() {
     </div></>
   );
 }
+                                                                                                                                                                                                                                                                                                                                                                  
