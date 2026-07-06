@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-06T15:08:08.733Z",
+  "updatedAt": "2026-07-06T15:38:13.033Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260701_33",
@@ -2816,7 +2816,7 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "Ukraine warns of interceptor missile shortage as 21 killed in Kyiv region",
+      "title": "Ukraine warns of interceptor missile shortage as 22 killed in Kyiv region",
       "url": "https://www.bbc.co.uk/news/articles/cewqqnd7zdwo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 6, 2026",
       "description": "President Zelensky says Sunday's \"massive Russian attack\" on Kyiv consisted of 68 missiles and 351 strike drones."
@@ -2965,7 +2965,7 @@
       "title": "Trump confirms he asked Fifa to review Balogun ban",
       "url": "https://www.bbc.co.uk/sport/football/articles/c1myykx0gmxo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 6, 2026",
-      "description": "United States President Donald Trump says Fifa \"made the right decision\" to suspend Folarin Balogun's one-match ban, adding that otherwise, it would have left a \"big stain\" on the World Cup."
+      "description": "President Donald Trump confirms he asked Fifa to review United States striker Folarin Balogun's one-match suspension at the World Cup."
     },
     {
       "title": "Huge crowds fill Tehran streets for Khamenei's funeral procession",
@@ -3076,6 +3076,12 @@
       "description": "Eastern Europe correspondent Sarah Rainsford explains why Crimea is a target for Kyiv, and why the peninsula matters to Vladimir Putin."
     },
     {
+      "title": "Microsoft cuts 4,800 jobs and shrinks Xbox in 'significant restructure'",
+      "url": "https://www.bbc.co.uk/news/articles/c36yy27rnpeo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 6, 2026",
+      "description": "The sweeping layoffs equate to roughly 2.1% of Microsoft's workforce, with 1,600 job losses at Xbox."
+    },
+    {
       "title": "ITV hits such as I'm a Celebrity to stay free to watch after Sky takeover",
       "url": "https://www.bbc.co.uk/news/articles/cx2wwgeg041o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 6, 2026",
@@ -3112,16 +3118,16 @@
       "description": "Sky is set to buy ITV's TV and streaming channels for up to £1.6bn, the companies announced on Monday."
     },
     {
-      "title": "'Start work at 11' - but will other bosses be as flexible over England's 1am match?",
-      "url": "https://www.bbc.co.uk/news/articles/c8x27k180x8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 5, 2026",
-      "description": "Employers are being urged to use their \"common sense\" to allow staff to work flexibly where they can."
-    },
-    {
       "title": "No-gift policy for Taylor Swift, but how much should you give at a wedding?",
       "url": "https://www.bbc.co.uk/news/articles/c78yj9p0m91o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 3, 2026",
       "description": "Wedding lists are being replaced by cash requests, but guests are divided over how much to give."
+    },
+    {
+      "title": "'Start work at 11' - but will other bosses be as flexible over England's 1am match?",
+      "url": "https://www.bbc.co.uk/news/articles/c8x27k180x8o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 5, 2026",
+      "description": "Employers are being urged to use their \"common sense\" to allow staff to work flexibly where they can."
     },
     {
       "title": "Clay, kilns and the cost of survival for tile makers",
@@ -3224,12 +3230,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cx2d9y18g73o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 2, 2026",
       "description": "The luxury home was seized as part of a probe into the illegal trade of servers containing AI semiconductors."
-    },
-    {
-      "title": "Old British fridges 'cannot cope with the heat'",
-      "url": "https://www.bbc.co.uk/news/articles/c77yejxnvpxo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 2, 2026",
-      "description": "Experts say older fridges are failing in hot weather as rising temperatures put them under pressure."
     },
     {
       "title": "AI is 'not smart' so what's next in artificial intelligence?",
@@ -3394,6 +3394,24 @@
       "description": "Young people tells the BBC what they think about the state pension."
     },
     {
+      "title": "US president Trump defends FIFA’s Balogun red card reversal",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/6/us-president-trump-defends-fifas-balogun-red-card-reversal?traffic_source=rss",
+      "date": "July 6, 2026",
+      "description": "US President Donald Trump defended FIFA&#039;s decision to overturn Folarin Balogun&#039;s red card suspension."
+    },
+    {
+      "title": "Is NATO at breaking point as it meets in Turkiye?",
+      "url": "https://www.aljazeera.com/news/2026/7/6/is-nato-at-breaking-point-as-it-meets-in-turkiye?traffic_source=rss",
+      "date": "July 6, 2026",
+      "description": "NATO leaders gather in Ankara to tackle US-Europe tensions, defence gaps and support for Ukraine’s military resilience."
+    },
+    {
+      "title": "Israel’s Smotrich declares ‘revolution’ in West Bank settlement expansion",
+      "url": "https://www.aljazeera.com/news/2026/7/6/israels-smotrich-declares-revolution-in-west-bank-settlement-expansion?traffic_source=rss",
+      "date": "July 6, 2026",
+      "description": "Smotrich declares a settlement &#039;revolution&#039; as Israel approves 13 new outposts during big increase in settler violence."
+    },
+    {
       "title": "FIFA World Cup: Mohamed Salah and the ghosts of Egypt’s ‘golden generation’",
       "url": "https://www.aljazeera.com/sports/2026/7/6/fifa-world-cup-mohamed-salah-egypt-football-team-golden-generation?traffic_source=rss",
       "date": "July 6, 2026",
@@ -3512,24 +3530,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/6/philippine-vice-president-dutertes-impeachment-trial-begins-what-we-know?traffic_source=rss",
       "date": "July 6, 2026",
       "description": "Duterte faces charges of mishandling government funds and making threats during rift with President Ferdinand Marcos Jr."
-    },
-    {
-      "title": "Who is leading the race for the FIFA World Cup 2026 Golden Boot award?",
-      "url": "https://www.aljazeera.com/sports/2026/7/6/who-is-leading-the-race-for-the-fifa-world-cup-2026-golden-boot-award?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "Haaland&#039;s double against Brazil takes him to seven goals, the same as Mbappe and Messi at the top of the chart."
-    },
-    {
-      "title": "FIFA World Cup round of 16: Bracket, schedule, Portugal vs Spain prediction",
-      "url": "https://www.aljazeera.com/sports/2026/7/6/fifa-world-cup-round-of-16-bracket-schedule-portugal-vs-spain-prediction?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "Round of 16 continues as Portugal-Spain rivalry renews before USA take on Belgium."
-    },
-    {
-      "title": "Mexican fans proud despite World Cup exit",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/6/mexican-fans-proud-despite-world-cup-exit-2?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "Mexican fans proud despite World Cup exit"
     }
   ]
 }
