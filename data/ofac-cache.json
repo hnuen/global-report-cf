@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-06T22:08:10.158Z",
+  "updatedAt": "2026-07-07T12:38:07.792Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260701_33",
@@ -2523,16 +2523,9 @@
           "url": "https://ofac.treasury.gov/media/25961/download?inline"
         },
         {
-          "number": "40D",
-          "title": "Venezuela General License 40D",
-          "date": "November 05, 2019",
-          "expires": "September 5, 2025",
-          "url": "https://ofac.treasury.gov/media/934461/download?inline"
-        },
-        {
           "number": "42",
           "title": "Venezuela General License 42",
-          "date": "July 07, 2025",
+          "date": "November 05, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/931696/download?inline"
         },
@@ -2816,10 +2809,22 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "Ukraine warns of interceptor missile shortage as 23 killed in Kyiv region",
-      "url": "https://www.bbc.co.uk/news/articles/cewqqnd7zdwo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Zelensky to press Nato for air defence systems after intense Russian strikes",
+      "url": "https://www.bbc.co.uk/news/articles/c9d227e5zj6o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 7, 2026",
+      "description": "The Ukrainian president will use the Nato meeting in Turkey to argue he needs more interceptor missiles."
+    },
+    {
+      "title": "Jailers and officials at Russia's 'torture prisons' in Ukraine exposed by BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cx2kkrx8jeno?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 6, 2026",
-      "description": "President Zelensky says Sunday's \"massive Russian attack\" on Kyiv consisted of 68 missiles and 351 strike drones."
+      "description": "Former prisoners accuse the men of abuse in detention centres and want to see them brought to trial."
+    },
+    {
+      "title": "Explosions injure 18 in Damascus during Macron's visit",
+      "url": "https://www.bbc.co.uk/news/articles/c2eylx1jj9ko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 7, 2026",
+      "description": "As reports of the blasts came in, state television said the Syrian president had welcomed Macron at the presidential palace."
     },
     {
       "title": "Ex-Syrian intelligence chief found guilty of torture and sexual abuse by Austrian court",
@@ -2832,6 +2837,12 @@
       "url": "https://www.bbc.co.uk/news/articles/c9922x87nj8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 6, 2026",
       "description": "Fabiana was trapped in the rubble of a 10-storey residential building after two earthquakes rocked Venezuela in June."
+    },
+    {
+      "title": "Resistance and revenge - Iran wanted to send a message with its farewell to Khamenei",
+      "url": "https://www.bbc.co.uk/news/articles/c07yy3j3nljo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 7, 2026",
+      "description": "Three days of public mourning in Tehran was a political spectacle Iran's leaders wanted the world to see, writes the BBC's international correspondent Lyse Doucet."
     },
     {
       "title": "'The spectacle Iran wants the world to see': Lyse Doucet in Tehran",
@@ -2850,50 +2861,38 @@
       "url": "https://www.bbc.co.uk/news/videos/cjrggj051pvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 6, 2026",
       "description": "BBC international correspondent Yogita Limayee meets 12-year-old Fabiana, who was trapped in Venezuela's devastating earthquakes."
-    },
-    {
-      "title": "Emotion and politics merge in Tehran at funeral of former supreme leader",
-      "url": "https://www.bbc.co.uk/news/videos/c4gyye3rplno?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 5, 2026",
-      "description": "The BBC's chief international correspondent Lyse Doucet is in Tehran, where funeral events are taking place in honour of Iran's former leader, Ayatollah Ali Khamenei."
-    },
-    {
-      "title": "Diesel sees biggest monthly fall in 26 years. What's happening to fuel prices?",
-      "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 1, 2026",
-      "description": "When the US-Israel war with Iran began, fuel costs jumped, but they are now plummeting as hope of lasting peace grows."
     }
   ],
   "ajNews": [
     {
-      "title": "Influencers say they’re ‘honoured’ to attend Khamenei funeral",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/6/influencers-say-theyre-honoured-to-attend-khamenei-funeral?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "Several social media influencers travelled to Iran for the state funeral of Supreme Leader Ali Khamenei."
+      "title": "Ukrainian drones hit Russian fuel tankers",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/7/ukrainian-drones-hit-russian-fuel-tankers?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "Ukrainian drones hit Russian fuel tankers"
     },
     {
-      "title": "Survivors and bodies still being pulled from rubble days after twin quakes",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/6/survivors-and-bodies-still-being-pulled-from-rubble-days-after-twin-quakes?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "International aid teams have played a key part in Venezuela’s ‘miracle rescues’, days after twin earthquakes struck."
+      "title": "Syria’s capital rocked by blasts during Macron visit",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/7/syrias-capital-rocked-by-blasts-during-macron-visit?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "Syria’s capital rocked by blasts during Macron visit"
     },
     {
-      "title": "Macron arrives in Syria for talks ahead of NATO summit in Turkiye",
-      "url": "https://www.aljazeera.com/news/2026/7/6/macron-arrives-in-syria-for-talks-ahead-of-nato-summit-in-turkiye?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "The French president is the first leader from western Europe to visit Syria since the overthrow of Bashar al-Assad."
+      "title": "After Iran war upheaval, global shipping eyes return to status quo",
+      "url": "https://www.aljazeera.com/economy/2026/7/7/after-iran-war-upheaval-global-shipping-eyes-return-to-status-quo?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "Industry known for its resilience is likely to emerge from war relatively unchanged, analysts say."
     },
     {
-      "title": "Body of Iran’s slain Supreme Leader Ali Khamenei arrives in Qom",
-      "url": "https://www.aljazeera.com/news/2026/7/6/body-of-irans-slain-supreme-leader-ali-khamenei-arrives-in-qom?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "Ayatollah Ali Khamenei’s body arrives in Qom as millions of mourners honour his leadership over past three days."
+      "title": "Russia touts ‘war with NATO’ amid losses in Ukraine",
+      "url": "https://www.aljazeera.com/news/2026/7/7/russia-touts-war-with-nato-amid-losses-in-ukraine?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "As Russia faces challenges on the frontlines and at home, President Putin&#039;s backers decry Kyiv&#039;s Western allies."
     },
     {
-      "title": "Iran reappoints a familiar face to powerful post during Khamenei funeral",
-      "url": "https://www.aljazeera.com/news/2026/7/6/iran-reappoints-a-familiar-face-to-powerful-post-during-khamenei-funeral?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "The judiciary chief has emphasised the need to avenge Supreme Leader Ali Khamenei and prosecute foreign &#039;aggressors&#039;."
+      "title": "Eighteen wounded as explosions rock Damascus during Macron’s visit to Syria",
+      "url": "https://www.aljazeera.com/news/2026/7/7/explosions-heard-in-syrias-damascus?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "At least 18 people, including four police officers, were wounded in the blasts, Syria&#039;s Interior Ministry says."
     }
   ],
   "occNews": [
@@ -2982,32 +2981,44 @@
       "url": "https://www.federalregister.gov/documents/2026/02/27/2026-03965/agency-information-collection-activities-submission-to-the-office-of-management-and-budget-omb-for",
       "date": "February 27, 2026",
       "description": "The Department of Commerce, in accordance with the Paperwork Reduction Act of 1995 (PRA), invites the general public and other Federal agencies to comment on proposed, and continuing information collections, which helps us assess the impact of our information collection requirements and minimize the public's reporting burden. The purpose of this notice is to allow for 60 days of public comment preceding submission of the collection to OMB."
-    },
-    {
-      "title": "Agency Information Collection Activities; Submission to the Office of Management and Budget (OMB) for Review and Approval; Comment Request; Reporting of Violations of the Export Administration Regulations",
-      "url": "https://www.federalregister.gov/documents/2026/02/24/2026-03676/agency-information-collection-activities-submission-to-the-office-of-management-and-budget-omb-for",
-      "date": "February 24, 2026",
-      "description": "The Department of Commerce, in accordance with the Paperwork Reduction Act of 1995 (PRA), invites the general public and other Federal agencies to comment on proposed, and continuing information collections, which helps us assess the impact of our information collection requirements and minimize the public's reporting burden. The purpose of this notice is to allow for 60 days of public comment preceding submission of the collection to OMB."
     }
   ],
   "regionsNews": [
+    {
+      "title": "Woman suspected of Monaco bomb attack found dead in Ukraine",
+      "url": "https://www.bbc.co.uk/news/articles/c5yz3770yg8o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 7, 2026",
+      "description": "Police had been hunting Anastasiia Berezovska after a Ukrainian millionaire was injured in the blast."
+    },
+    {
+      "title": "Watch: Moment rare tornado lashes central Chinese cities",
+      "url": "https://www.bbc.co.uk/news/videos/cq61d22ved2o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 7, 2026",
+      "description": "Videos shared with the BBC show debris flying through the air as the storm swept through Ezhou and Huanggang in Hubei province."
+    },
+    {
+      "title": "Zimbabwean football star survives gun attack in South Africa",
+      "url": "https://www.bbc.co.uk/news/articles/c1my1rvy28do?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 7, 2026",
+      "description": "South African police say they are investigating a case of attempted murder but that no arrests have been made so far."
+    },
+    {
+      "title": "Erika Kirk comes face-to-face in court with husband's alleged killer",
+      "url": "https://www.bbc.co.uk/news/articles/c1myyyyjvx5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 7, 2026",
+      "description": "Charlie Kirk's widow was joined by the late US activist's family - all of whom attended court for the first time in the case."
+    },
+    {
+      "title": "India's landmark Ram temple overhauls board after alleged theft of donations",
+      "url": "https://www.bbc.co.uk/news/articles/c872ngz405xo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 7, 2026",
+      "description": "Questions have been raised over alleged theft of cash, valuable jewellery, gold and silver offered by devotees."
+    },
     {
       "title": "Trump confirms he asked Fifa to review Balogun ban",
       "url": "https://www.bbc.co.uk/sport/football/articles/c1myykx0gmxo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 6, 2026",
       "description": "President Donald Trump confirms he asked Fifa to review United States striker Folarin Balogun's one-match suspension at the World Cup."
-    },
-    {
-      "title": "Charlie Kirk's family attends hearing for suspect charged with his murder",
-      "url": "https://www.bbc.co.uk/news/articles/c1myyyyjvx5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 6, 2026",
-      "description": "Tyler Robinson, 23, is accused of murdering Kirk, a key Trump ally and founder of youth organisation Turning Point USA."
-    },
-    {
-      "title": "Huge crowds fill Tehran streets for Khamenei's funeral procession",
-      "url": "https://www.bbc.co.uk/news/articles/cdejj44kl70o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 6, 2026",
-      "description": "Many people were waving Iranian flags and red banners symbolising vengeance for the former supreme leader's war death."
     },
     {
       "title": "Wildfire in southern France forces evacuation of 10,000 people",
@@ -3028,64 +3039,28 @@
       "description": "The two days of violence at Negombo Prison are the worst prison riots in the country in years."
     },
     {
-      "title": "Marine Le Pen appeal verdict: Why this moment matters for France",
-      "url": "https://www.bbc.co.uk/news/articles/clyeele4leeo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 5, 2026",
-      "description": "The leader of France's National Rally leads the opinion polls ahead of the 2027 presidential election and will now find out if she can stand."
+      "title": "Why some African nations are turning down Trump aid money",
+      "url": "https://www.bbc.co.uk/news/articles/ckg0921y8kdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 7, 2026",
+      "description": "The Trump administration sees the aid as more transactional - but some say it is not a fair trade."
     },
     {
-      "title": "Australian PM apologises for 'inappropriate' comments about Kylie Minogue",
-      "url": "https://www.bbc.co.uk/news/articles/cr477en6w3go?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Can China repeat its EV success with robotaxis?",
+      "url": "https://www.bbc.co.uk/news/articles/cvgl8dlxjd3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 6, 2026",
-      "description": "Albanese has apologised 'unequivocally' after his remarks prompted a backlash."
+      "description": "China's self-driving car firms have been given a headstart by the country's EV supply chain as they expand globally."
     },
     {
-      "title": "Super Typhoon Bavi strikes US Pacific islands with pummeling winds",
-      "url": "https://www.bbc.co.uk/news/articles/cr7xpgx50jxo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Why a Diljit Dosanjh film vanished from streaming after two days",
+      "url": "https://www.bbc.co.uk/news/articles/cly99z1w4gdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 6, 2026",
-      "description": "The storm lashed the Mariana Islands, hitting Rota and prompting emergency warnings on Guam."
-    },
-    {
-      "title": "Australia space agency has found 'likely source' of mystery space balls",
-      "url": "https://www.bbc.co.uk/news/articles/c1jyydr7jnjo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 6, 2026",
-      "description": "The agency says that they \"appear to be pressure vessels from a space launch vehicle\"."
-    },
-    {
-      "title": "Thousands of forgotten WW1 soldiers recognised for first time",
-      "url": "https://www.bbc.co.uk/news/articles/cgqjpqjgxzgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 6, 2026",
-      "description": "Nearly 10,000 soldiers' names are being added to the official database of war dead, a cherished step for many of their descendants."
+      "description": "The film's troubled journey spans years of censorship disputes, court battles and an unexpected release on a streaming platform."
     },
     {
       "title": "From 'a beautiful night' to 'world's greatest hangover', guests react to Taylor and Travis's wedding",
       "url": "https://www.bbc.co.uk/news/articles/clyxxr9n2kjo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 6, 2026",
       "description": "Some of the famous guests have been posting on social media about the big day in New York."
-    },
-    {
-      "title": "Is this a breakthrough moment for soccer in the US?",
-      "url": "https://www.bbc.co.uk/news/articles/cd6exx1xl4po?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 6, 2026",
-      "description": "Victory for the national team against Belgium on Monday could mean the sport takes further strides among American audiences."
-    },
-    {
-      "title": "A global hub for fake luxury goods, Vietnam cracks down on its black market",
-      "url": "https://www.bbc.co.uk/news/articles/cdx7zzywz7wo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 5, 2026",
-      "description": "The Trump administration wants Vietnam to stamp out its booming counterfeit industry. Locals are divided."
-    },
-    {
-      "title": "The African fishermen who blame Chinese trawlers for their woes",
-      "url": "https://www.bbc.co.uk/news/articles/cj4gy9qy7vyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 5, 2026",
-      "description": "Fishing crews in Sierra Leone say large Chinese ships are illegally hoovering up stocks."
-    },
-    {
-      "title": "Why an anti-sacrilege law in India's Punjab has sparked controversy",
-      "url": "https://www.bbc.co.uk/news/articles/crlw1xrzd8yo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 6, 2026",
-      "description": "The dispute has revived one of Punjab's most sensitive political and religious issues ahead of state elections next year."
     },
     {
       "title": "'It's a very sad day' - Mexican fans react to loss to England",
@@ -3104,6 +3079,66 @@
       "url": "https://www.bbc.co.uk/news/videos/c2dy21549w1o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 6, 2026",
       "description": "Eastern Europe correspondent Sarah Rainsford explains why Crimea is a target for Kyiv, and why the peninsula matters to Vladimir Putin."
+    },
+    {
+      "title": "One million more UK homeowners set to face higher mortgages",
+      "url": "https://www.bbc.co.uk/news/articles/cze9kpxx6d8o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 7, 2026",
+      "description": "Homeowners face paying £45 a month more on average when they move onto a new deal over the next two years."
+    },
+    {
+      "title": "Online gamblers betting more than £1,000 to face new checks",
+      "url": "https://www.bbc.co.uk/news/articles/cqj1xvy44xno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 7, 2026",
+      "description": "Punters who bet more than £1,000 online in a 24-hour window will have to undergo an assessment, the regulator says."
+    },
+    {
+      "title": "Banks accused of pushing customers away from basic accounts",
+      "url": "https://www.bbc.co.uk/news/articles/cgl33dyk7y9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 6, 2026",
+      "description": "Some of the UK's biggest banks have been failing their most vulnerable customers, according to the financial regulator."
+    },
+    {
+      "title": "Amazon bars breastfeeding boss from business course",
+      "url": "https://www.bbc.co.uk/news/articles/cp9llgg5k8ro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 6, 2026",
+      "description": "Rachael Bews says she told on the way her child would not be allowed on site. Amazon has apologised for not communicating its policy clearly."
+    },
+    {
+      "title": "'I wear it on my middle finger': The rise of the defiant divorce ring",
+      "url": "https://www.bbc.co.uk/news/articles/c3wy56v4ge6o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 6, 2026",
+      "description": "Around the world women are marking their split with new - or repurposed engagement - rings."
+    },
+    {
+      "title": "Robots available for rent: But what can they do?",
+      "url": "https://www.bbc.co.uk/news/articles/c4gymkg9lr2o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 6, 2026",
+      "description": "Robotics tech is changing fast, so for many it makes sense to rent a robot."
+    },
+    {
+      "title": "Samsung profits jump 1,800% as AI chip sales soar",
+      "url": "https://www.bbc.co.uk/news/articles/c1kyy8yrpxdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 7, 2026",
+      "description": "The firm's shares fell sharply on Tuesday as some investors had expected an even stronger performance."
+    },
+    {
+      "title": "Phone contract comparisons 'amounted to mis-selling' student loans, MPs say",
+      "url": "https://www.bbc.co.uk/news/articles/c4gy9lpylz9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 6, 2026",
+      "description": "A new report says students were not well-enough informed that their loan terms could change retrospectively."
+    },
+    {
+      "title": "E-bike injury payouts top £110m and push up insurance premiums",
+      "url": "https://www.bbc.co.uk/news/articles/c05y9pe5p1jo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 7, 2026",
+      "description": "It is only seven years since the first claim over an injury from a micromobility vehicle was made."
+    },
+    {
+      "title": "Can China repeat its EV success with robotaxis?",
+      "url": "https://www.bbc.co.uk/news/articles/cvgl8dlxjd3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 6, 2026",
+      "description": "China's self-driving car firms have been given a headstart by the country's EV supply chain as they expand globally."
     },
     {
       "title": "Microsoft cuts 4,800 jobs and shrinks Xbox in 'significant restructure'",
@@ -3158,108 +3193,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c8x27k180x8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 5, 2026",
       "description": "Employers are being urged to use their \"common sense\" to allow staff to work flexibly where they can."
-    },
-    {
-      "title": "Clay, kilns and the cost of survival for tile makers",
-      "url": "https://www.bbc.co.uk/news/articles/c982e3k9zw9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 5, 2026",
-      "description": "While some firms lean into their heritage, others are modernising in the face of economic pressures."
-    },
-    {
-      "title": "Tackle workplace sickness to unlock hidden growth, former John Lewis boss says",
-      "url": "https://www.bbc.co.uk/news/articles/cq61j11r577o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 3, 2026",
-      "description": "More than 250 of the UK's biggest employers have signed up to his 'Get Britain Working' taskforce."
-    },
-    {
-      "title": "What could new rights for unmarried couples mean for your money?",
-      "url": "https://www.bbc.co.uk/news/articles/cx2vx4dvgzno?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 4, 2026",
-      "description": "Co-habiting couples in England and Wales could be given more protections if they break up under new government proposals."
-    },
-    {
-      "title": "Pubs allowed to stay open until 5am on Monday for England Mexico match",
-      "url": "https://www.bbc.co.uk/news/articles/c1kyr8747m9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 2, 2026",
-      "description": "The government had initially said it would not relax licensing laws further for the World Cup."
-    },
-    {
-      "title": "Burnham says there is some room for movement on tax",
-      "url": "https://www.bbc.co.uk/news/articles/c5yz9j7v0z6o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 3, 2026",
-      "description": "But the likely next PM says he will stick to Labour's pledges to not raise VAT, income tax or national insurance."
-    },
-    {
-      "title": "'Less than 10% sheep': How millions may have unknowingly eaten goat, skin and fat kebabs",
-      "url": "https://www.bbc.co.uk/news/articles/ce95y1zlzyxo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 3, 2026",
-      "description": "Millions are likely to have eaten \"lamb\" kebabs that were actually made with goat, skin and fat."
-    },
-    {
-      "title": "Instagram running ads promoting child sexual abuse material in India, BBC finds",
-      "url": "https://www.bbc.co.uk/news/articles/cvgm4e0316zo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 3, 2026",
-      "description": "The ads use terms including “rape” and “child video” and link to content on the messaging app Telegram."
-    },
-    {
-      "title": "Security staff strikes averted at Aberdeen Airport",
-      "url": "https://www.bbc.co.uk/news/articles/c39y3expgk3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 3, 2026",
-      "description": "The strikes, involving baggage screening staff, were due begin on Monday with the Unite union warning of \"significant delays\"."
-    },
-    {
-      "title": "Ryanair warns of 'queue chaos' from new EU border system",
-      "url": "https://www.bbc.co.uk/news/articles/c8x2y74wp9eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 2, 2026",
-      "description": "The airline calls on European governments to postpone the EES system until after the summer holiday period."
-    },
-    {
-      "title": "World Cup boom falters as US hospitality jobs fall in June",
-      "url": "https://www.bbc.co.uk/news/articles/cr471w6ykxno?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 2, 2026",
-      "description": "There had been early signs of a jobs boom from the tournament, but hospitality jobs declined in June."
-    },
-    {
-      "title": "Car finance compensation payments delayed until next year",
-      "url": "https://www.bbc.co.uk/news/articles/c2l9vvj097lo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 2, 2026",
-      "description": "Millions could be entitled to compensation as a result of commission arrangements between lenders and dealers."
-    },
-    {
-      "title": "'I spent $6,000 on a World Cup trip but was left stranded at the gate'",
-      "url": "https://www.bbc.co.uk/news/articles/crkvlekgy07o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 2, 2026",
-      "description": "Hundreds of fans who bought World Cup tickets on resale site StubHub say they have had them cancelled at the last minute."
-    },
-    {
-      "title": "Google must pay €4.1bn fine for using Android to 'block' rivals",
-      "url": "https://www.bbc.co.uk/news/articles/cvgj0pp5p62o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 2, 2026",
-      "description": "A Google spokesperson said the judgement \"fails to recognise\" the firm's \"significant investment to ensure Android remains open.\""
-    },
-    {
-      "title": "Bibles, Home Alone and perfume: Six takeaways from Trump's 2025 finances",
-      "url": "https://www.bbc.co.uk/news/articles/cy9rg133lrjo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 1, 2026",
-      "description": "Official documents show the US president made billions of dollars as he returned to the White House."
-    },
-    {
-      "title": "Why the expected fight over the North American trade deal never kicked off",
-      "url": "https://www.bbc.co.uk/news/articles/c70yd58y27yo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 2, 2026",
-      "description": "The US has confirmed it will not extend the agreement for another 16 years, but stopped short of more dramatic action."
-    },
-    {
-      "title": "Don't expect connected car apps to save your stolen car, experts say",
-      "url": "https://www.bbc.co.uk/news/articles/cp8r1798kp7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 1, 2026",
-      "description": "Kia told the BBC UK law prevented its location tracking function being used to live track vehicles."
-    },
-    {
-      "title": "Singapore seizes $42m mansion over Nvidia chip smuggling",
-      "url": "https://www.bbc.co.uk/news/articles/cx2d9y18g73o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 2, 2026",
-      "description": "The luxury home was seized as part of a probe into the illegal trade of servers containing AI semiconductors."
     },
     {
       "title": "AI is 'not smart' so what's next in artificial intelligence?",
@@ -3334,34 +3267,34 @@
       "description": "Armed forces are experimenting with humanoid robots, but battlefield deployment is some way off."
     },
     {
-      "title": "Fuel providers hopeful of more price reductions",
-      "url": "https://www.bbc.co.uk/news/articles/c4gy4g2npk4o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Budget Energy announces 9.5% price increase",
+      "url": "https://www.bbc.co.uk/news/articles/c78yge1eel0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 7, 2026",
+      "description": "Budget Energy NI says the rise is due to the \"continued volatility\" in wholesale energy markets."
+    },
+    {
+      "title": "One million more UK homeowners set to face higher mortgages",
+      "url": "https://www.bbc.co.uk/news/articles/cze9kpxx6d8o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 7, 2026",
+      "description": "Homeowners face paying £45 a month more on average when they move onto a new deal over the next two years."
+    },
+    {
+      "title": "Volunteers racing to save surplus Silverstone food",
+      "url": "https://www.bbc.co.uk/news/articles/czrxx44e2ndo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 7, 2026",
+      "description": "A Towcester community larder is collecting produce from the circuit following the Grand Prix."
+    },
+    {
+      "title": "'I wear it on my middle finger': The rise of the defiant divorce ring",
+      "url": "https://www.bbc.co.uk/news/articles/c3wy56v4ge6o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 6, 2026",
-      "description": "Rubis and ATF Fuels both say they expect to see prices fall further in time."
+      "description": "Around the world women are marking their split with new - or repurposed engagement - rings."
     },
     {
-      "title": "Three things you can do to stop EU border checks at the airport costing you",
-      "url": "https://www.bbc.co.uk/news/articles/cg4w39gvdw1o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 5, 2026",
-      "description": "Queues are expected at airports this summer owing to EU's new digital border control system."
-    },
-    {
-      "title": "SSE Airtricity bills to increase by more than £70 a year",
-      "url": "https://www.bbc.co.uk/news/articles/c872wvr21l9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 3, 2026",
-      "description": "SSE Airtricity said electricity bills will increase by 6.2% seeing the customer's bill rise by about 20p a day- that's £71.57 extra a year."
-    },
-    {
-      "title": "'Not a lot of Gen Z trust the state pension system'",
-      "url": "https://www.bbc.co.uk/news/videos/clyxedeykzro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 3, 2026",
-      "description": "Young people tells the BBC what they think about the state pension."
-    },
-    {
-      "title": "Excitement and concerns over credit card plans",
-      "url": "https://www.bbc.co.uk/news/articles/czrxedg1e4do?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 3, 2026",
-      "description": "Some islanders say changes will help but others are worried about their data being shared."
+      "title": "Banks accused of pushing customers away from basic accounts",
+      "url": "https://www.bbc.co.uk/news/articles/cgl33dyk7y9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 6, 2026",
+      "description": "Some of the UK's biggest banks have been failing their most vulnerable customers, according to the financial regulator."
     },
     {
       "title": "Why Gen Z are planning for life without a state pension",
@@ -3394,6 +3327,12 @@
       "description": "What impact might shortages have on our summer holidays - and what could be done about it?"
     },
     {
+      "title": "People Fixing The World",
+      "url": "https://www.bbc.co.uk/sounds/play/w3ct8t0z?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 7, 2026",
+      "description": "The people turning life experience into business ideas with funding and other support"
+    },
+    {
       "title": "Shoppers hit by hidden fees",
       "url": "https://www.bbc.co.uk/videos/c872254pj4vo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 6, 2026",
@@ -3418,130 +3357,124 @@
       "description": "Martin is revealing everything you need to know right now to cut the cost of getting away."
     },
     {
-      "title": "'Not a lot of Gen Z trust the state pension system'",
-      "url": "https://www.bbc.co.uk/news/videos/clyxedeykzro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 3, 2026",
-      "description": "Young people tells the BBC what they think about the state pension."
+      "title": "France appeals court opens door for Le Pen presidential run, with ankle tag",
+      "url": "https://www.aljazeera.com/news/2026/7/7/france-appeals-court-opens-door-for-le-pen-presidential-run-with-ankle-tag?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "Paris appeals court rules Le Pen guilty of misusing public funds but reduces the ban on her holding public office."
     },
     {
-      "title": "One Phone Call, One Vanishing Red Card — The Balogun Scandal",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/6/aje-onl-nf_the-balogun-scandal-060726?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "Al Jazeera&#039;s Basel Ghazoghli (@baselgazi) breaks down how the White House helped Folarin Balogun stay in the World Cup."
+      "title": "Ships attacked in the Strait of Hormuz: What that means for ongoing talks",
+      "url": "https://www.aljazeera.com/news/2026/7/7/ships-attacked-in-the-strait-of-hormuz-what-that-means-for-ongoing-talks?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "While marine traffic in Hormuz has steadily risen, vague provisions on the strait remain contentious in peace talks."
     },
     {
-      "title": "Morocco says it has dismantled ISIL-linked cell planning attack",
-      "url": "https://www.aljazeera.com/news/2026/7/6/morocco-says-it-has-dismantled-isil-linked-cell-planning-attack?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "Police arrest 10 suspects, seizing bladed weapons, military-style clothes and bomb‑making instructions."
+      "title": "Watch World Cup Day 26: Co-hosts USA and Ronaldo’s Portugal eliminated",
+      "url": "https://www.aljazeera.com/video/2026/7/7/video-world-cup-2026-highlights?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "Latest match highlights, reaction and previews from the FIFA World Cup 2026 in North America."
     },
     {
-      "title": "Mbappe, FFF hit back at Paraguayan senator Amarilla over racist tirade",
-      "url": "https://www.aljazeera.com/sports/2026/7/6/mbappe-fff-hit-back-at-paraguayan-senator-amarilla-over-racist-tirade?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "Amarilla called Mbappe a &#039;colonised Cameroonian&#039; after his penalty helped France knock Paraguay out of the World Cup."
+      "title": "What does Trump want from his NATO allies?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/7/what-does-trump-want-from-his-nato-allies?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "What does Trump want from his NATO allies?"
     },
     {
-      "title": "LIVE: USA vs Belgium – FIFA World Cup 2026 round of 16",
-      "url": "https://www.aljazeera.com/sports/liveblog/2026/7/6/usa-belgium-live-fifa-world-cup-2026-round-of-16?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "Live coverage and text updates of USA against Belgium in last-16 game, overshadowed by Balogun suspension row."
+      "title": "Egypt coach makes impassioned plea for Palestine in pre-match conference",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/7/egypt-coach-makes-impassioned-plea-for-palestine-in-pre-match-conference?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "Egypt coach makes impassioned plea for Palestine in pre-match conference"
     },
     {
-      "title": "US judge tosses out Musk’s bid to void Twitter fraud verdict",
-      "url": "https://www.aljazeera.com/economy/2026/7/6/us-judge-tosses-out-musks-bid-to-void-twitter-fraud-verdict?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "Jurors had found owner Elon Musk liable for tweets questioning whether Twitter was overrun by fake and spam accounts."
+      "title": "The Responsibility to Protect doctrine can be resurrected",
+      "url": "https://www.aljazeera.com/opinions/2026/7/7/the-responsibility-to-protect-doctrine-can-be-resurrected?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "The legal norm has been manipulated and forgotten. But today it is needed more than ever"
     },
     {
-      "title": "Crowds hold ‘destroy Israel’ banner at Spain’s Pamplona bull run",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/6/crowds-hold-destroy-israel-banner-at-spains-pamplona-bull-run?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "A giant banner reading ‘Destroy Israel’ was unfurled as thousands gathered for the San Fermin bull run festival."
+      "title": "Bangladesh landslides kill nine, including eight Rohingya in refugee camp",
+      "url": "https://www.aljazeera.com/news/2026/7/7/bangladesh-landslides-kill-nine-including-eight-rohingya-in-refugee-camp?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "Hillsides collapse at four locations at camps in Cox&#039;s Bazar in southeastern Bangladesh amid monsoon rains."
     },
     {
-      "title": "Prosecutors in US lay out case against alleged killer of Charlie Kirk",
-      "url": "https://www.aljazeera.com/news/2026/7/6/prosecutors-in-us-lay-out-case-against-alleged-killer-of-charlie-kirk?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "Judge to decide whether there&#039;s enough evidence to bring Tyler Robinson to trial for conservative activist&#039;s killing."
+      "title": "What is the new Gaza administration as Hamas dissolves government?",
+      "url": "https://www.aljazeera.com/news/2026/7/7/what-is-the-new-gaza-administration-as-hamas-dissolves-government?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "The NCAG will oversee civilian affairs such as health and education, as well as security."
     },
     {
-      "title": "What is the fallout of the increasing violence in Mali?",
-      "url": "https://www.aljazeera.com/video/inside-story/2026/7/6/what-is-the-fallout-of-the-increasing-violence-in-mali?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "Coalition of rebels and armed groups carries out another series of attacks."
+      "title": "UK High Court to rule in Prince Harry’s Daily Mail privacy case",
+      "url": "https://www.aljazeera.com/news/2026/7/7/uk-high-court-to-rule-in-prince-harrys-daily-mail-privacy-case?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "UK High Court to rule on a privacy case brought by Prince Harry against Daily Mail publisher."
     },
     {
-      "title": "US Supreme Court clears path for Texas to enforce app age verification law",
-      "url": "https://www.aljazeera.com/news/2026/7/6/us-supreme-court-clears-path-for-texas-to-enforce-app-age-verification-law?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "Parents must approve app downloads for minors as legal fight over Texas age verification law continues."
+      "title": "Explosions in Damascus during Macron visit: What we know",
+      "url": "https://www.aljazeera.com/news/2026/7/7/explosions-in-damascus-during-macron-visit-what-we-know?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "Blasts occurred near hotel French president was reportedly staying in shortly after he departed for presidential palace."
     },
     {
-      "title": "NATO urges members to deliver plans for reaching defence spending targets",
-      "url": "https://www.aljazeera.com/news/2026/7/6/nato-urges-members-to-deliver-plans-for-reaching-defence-spending-targets?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "US warns of consequences for NATO members without clear spending plans, signalling high expectations from allies."
+      "title": "USA crashes out after 4–1 defeat to Belgium",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/7/usa-crashes-out-after-4-1-defeat-to?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "Belgium thrashed the USA 4–1 to knock the host nation out of the World Cup, leaving home fans stunned."
     },
     {
-      "title": "Pro-Palestine protesters rally for ‘Filton 25’ activists at UK court",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/6/pro-palestine-protesters-rally-for-filton-25-activists-at-uk-court?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "Pro-Palestine protesters rally for &#039;Filton 25’ activists at UK court."
+      "title": "FIFA World Cup: Argentina vs Egypt, Ronaldo exit and Mbappe condemns racism",
+      "url": "https://www.aljazeera.com/sports/2026/7/7/fifa-world-cup-2026-argentina-egypt-ronaldo-exit-mbappe-racism?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "Argentina continue their knockout journey against Egypt as Switzerland and Colombia also fight for progression."
     },
     {
-      "title": "NATO chief calls for ‘credible plans’ to reach defence spending goals",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/6/nato-chief-calls-for-credible-plans-to-reach-defence-spending-goals?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "NATO Secretary General Mark Rutte said members are now spending around 4% of GDP on defence."
+      "title": "Switzerland vs Colombia: FIFA World Cup last 16 – prediction, start, news",
+      "url": "https://www.aljazeera.com/news/2026/7/7/switzerland-colombia-world-cup-munoz-embolo-manzambi-prediction-news-start-time?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "Colombia, the World Cup&#039;s dangerous outsiders, take on Switzerland in Vancouver for a place in the quarterfinals."
     },
     {
-      "title": "Nigeria sees no sign that anti-immigrant violence is waning in South Africa",
-      "url": "https://www.aljazeera.com/news/2026/7/6/nigeria-sees-no-sign-that-anti-immigrant-violence-is-waning-in-south-africa?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "South Africa&#039;s government has been accused of not doing enough to tackle xenophobic attacks."
+      "title": "Explosions in Damascus as French president visits",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/7/explosions-in-damascus-as-french-president-visits?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "Explosions in Damascus as French president visits"
     },
     {
-      "title": "Left-wing candidate Roberto Sanchez concedes Peru vote to Keiko Fujimori",
-      "url": "https://www.aljazeera.com/news/2026/7/6/left-wing-candidate-roberto-sanchez-concedes-peru-vote-to-keiko-fujimori?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "Announcement comes days after Peru&#039;s electoral agency certified right-wing Fujimori as winner in razor-thin race."
+      "title": "NATO’s Turkiye summit live: Trump, leaders to meet in Ankara",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/7/7/natos-turkiye-summit-live-trump-leaders-to-meet-in-ankara?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "Defence spending and support for Ukraine&#039;s military needs are expected to top the agenda of summit in Turkish capital."
     },
     {
-      "title": "Ebola death toll in DR Congo surpasses 500",
-      "url": "https://www.aljazeera.com/news/2026/7/6/ebola-death-toll-in-dr-congo-surpasses-500?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "Nation’s 17th Ebola epidemic is fuelled by the Bundibugyo virus, with no existing vaccine or approved treatment options."
+      "title": "France’s Court of Appeal to rule on Le Pen conviction – what it’s all about",
+      "url": "https://www.aljazeera.com/news/2026/7/7/frances-court-of-appeal-to-rule-on-le-pen-conviction-what-its-all-about?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "The far-right leader could be prevented from running for president in 2027 if embezzlement charges are upheld."
     },
     {
-      "title": "Trump rings in new ‘Trump Account’ investment accounts for children",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/6/trump-rings-in-new-trump-account-investment-accounts-for-children?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "US President Donald Trump rang the opening bells of the New York Stock Exchange and Nasdaq to welcome &#039;Trump Accounts&#039;."
+      "title": "NATO summit begins in Turkiye’s Ankara: Who is attending, what is at stake?",
+      "url": "https://www.aljazeera.com/news/2026/7/7/nato-summit-begins-who-is-attending-and-what-is-at-stake?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "Trump warns NATO members ahead of summit, as European nations prepare to announce record defence spending."
     },
     {
-      "title": "Flavio Bolsonaro asks Trump to delay tariffs on Brazil until after election",
-      "url": "https://www.aljazeera.com/news/2026/7/6/flavio-bolsonaro-asks-trump-to-delay-tariffs-on-brazil-until-after-election?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "President Lula accuses Jair Bolsonaro&#039;s son, now a presidential hopeful, of helping trigger proposed US tariffs."
+      "title": "China sentences former local official to death in $324m corruption case",
+      "url": "https://www.aljazeera.com/economy/2026/7/7/china-sentences-former-local-official-to-death-in-324m-corruption-case?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "Yang Youlin, an ex-official in the eastern city Nanjing, accepted bribes in exchange for business favours, court says."
     },
     {
-      "title": "Ticket prices continue to fall for USA-Belgium World Cup last-16 clash",
-      "url": "https://www.aljazeera.com/sports/2026/7/6/ticket-prices-continue-to-fall-for-usa-belgium-world-cup-last-16-clash?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "Get-in prices for the round of 16 football game at Seattle Stadium have fallen by 27 percent over the past three days."
+      "title": "Palestine weekly: One thousand days of genocide in Gaza",
+      "url": "https://www.aljazeera.com/news/2026/7/7/palestine-weekly-one-thousand-days-of-genocide-in-gaza?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "Gaza marks 1,000 days of Israel&#039;s genocidal war, with at least 1,072 killed since October &#039;ceasefire&#039;."
     },
     {
-      "title": "Belgian football body challenges reversal of Balogun’s World Cup suspension",
-      "url": "https://www.aljazeera.com/news/2026/7/6/belgian-football-body-challenges-reversal-of-baloguns-world-cup-suspension?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "Trump says he asked FIFA&#039;s president to review USA player Balogun&#039;s game suspension, but did not tell him what to do."
-    },
-    {
-      "title": "What makes this NATO summit high stakes?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/6/what-makes-this-nato-summit-high-stakes?traffic_source=rss",
-      "date": "July 6, 2026",
-      "description": "Al Jazeera’s James Bays explains why NATO’s Ankara summit is high stakes."
+      "title": "Sorry USA riled for World Cup thrashing by Belgium despite Balogun reprieve",
+      "url": "https://www.aljazeera.com/sports/2026/7/7/sorry-usa-riled-for-world-cup-thrashing-by-belgium-despite-balogun-reprieve?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "Belgium midfielder Nicolas Raskin said his side’s win felt like a measure of justice after FIFA’s decision on Balogun."
     }
   ]
 }
