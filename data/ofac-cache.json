@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-07-07T18:38:30.027Z",
+  "updatedAt": "2026-07-07T19:08:21.884Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260707",
+      "code": "20260707",
+      "title": "Issuance of Amended Iran-related General License",
+      "date": "July 07, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260701_33",
       "code": "20260701_33",
@@ -54,12 +60,6 @@
       "code": "20260624",
       "title": "Russia-related Designations Removals",
       "date": "June 24, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260623",
-      "code": "20260623",
-      "title": "Transnational Criminal Organizations Designations; Cuba Designations; Russia-related Designations Removals; Issuance of TCO-related General License; Publication of OFAC-OFSI Comparative Overview",
-      "date": "June 23, 2026"
     }
   ],
   "civilPenalties": [
@@ -901,7 +901,7 @@
     "iran-sanctions": {
       "name": "Iran Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions",
-      "lastUpdated": "Jun 22, 2026",
+      "lastUpdated": "Jul 07, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -1083,20 +1083,20 @@
           "number": "T",
           "title": "Iran General License T",
           "date": "May 20, 2025",
-          "expires": "",
+          "expires": "February 22, 2026",
           "url": "https://ofac.treasury.gov/media/934946/download?inline"
         },
         {
-          "number": "X",
-          "title": "Iran General License X",
+          "number": "1",
+          "title": "Iran General License X1",
           "date": "January 23, 2026",
-          "expires": "August 21, 2026",
-          "url": "https://ofac.treasury.gov/media/936206/download?inline"
+          "expires": "July 17, 2026",
+          "url": "https://ofac.treasury.gov/media/936446/download?inline"
         },
         {
           "number": "134C",
           "title": "Russia-related General License 134C",
-          "date": "August 21, 2026",
+          "date": "June 21, 2026",
           "expires": "August 21, 2026",
           "url": "https://ofac.treasury.gov/media/935641/download?inline"
         }
@@ -2207,11 +2207,11 @@
           "url": "https://ofac.treasury.gov/media/935641/download?inline"
         },
         {
-          "number": "X",
-          "title": "Iran General License X",
+          "number": "1",
+          "title": "Iran General License X1",
           "date": "April 17, 2026",
-          "expires": "August 21, 2026",
-          "url": "https://ofac.treasury.gov/media/936206/download?inline"
+          "expires": "July 17, 2026",
+          "url": "https://ofac.treasury.gov/media/936446/download?inline"
         }
       ]
     },
@@ -2809,12 +2809,6 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "Zelensky presses Nato for air defence systems after intense Russian strikes",
-      "url": "https://www.bbc.co.uk/news/articles/c9d227e5zj6o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 7, 2026",
-      "description": "The Ukrainian president says \"decisions for air defence\" should be \"one of the key outcomes\" of this week's summit in Turkey."
-    },
-    {
       "title": "Jailers and officials at Russia's 'torture prisons' in Ukraine exposed by BBC",
       "url": "https://www.bbc.co.uk/news/articles/cx2kkrx8jeno?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 6, 2026",
@@ -2973,10 +2967,16 @@
   ],
   "regionsNews": [
     {
-      "title": "Marine Le Pen found guilty, but court clears way for presidential run if she wears tag",
-      "url": "https://www.bbc.co.uk/news/articles/cly85qjg45no?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Marine Le Pen to run for French presidency and appeal conviction in top court",
+      "url": "https://www.bbc.co.uk/news/articles/c7vygl3zymjo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 7, 2026",
-      "description": "The National Rally leader now has to decide whether she will run with an electronic tag and will speak on TV later."
+      "description": "The hard-right National Rally leader has ended months of speculation, after a court ruled she could run but would have to wear a tag for a year."
+    },
+    {
+      "title": "Trump looms large as Nato grapples with challenge of rearming Europe",
+      "url": "https://www.bbc.co.uk/news/articles/ckg06d3dgnlo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 7, 2026",
+      "description": "The US president's inflammatory words have punctuated the image of unity at this crucial gathering, Security Correspondent Frank Gardner writes."
     },
     {
       "title": "Woman suspected of Monaco bomb attack found dead in Ukraine",
@@ -2991,16 +2991,16 @@
       "description": "The lawyer for Dr Hussam Abu Safiya tells the BBC his client was so badly beaten he could not recognise him during a visit last week."
     },
     {
+      "title": "Hungary's public news broadcasts halted in bid to scrap Orban-era propaganda",
+      "url": "https://www.bbc.co.uk/news/articles/cgevwq1pndgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 7, 2026",
+      "description": "The country's main state TV channel displayed a message saying it was \"sorry\" for lying on Tuesday."
+    },
+    {
       "title": "Ghana halts visit by South African president amid row over anti-migrant protests",
       "url": "https://www.bbc.co.uk/news/articles/cy8dmelnjk7o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 7, 2026",
       "description": "Many in Ghana feared his presence would lead to mass protests, and officials say it is postponed for now."
-    },
-    {
-      "title": "Watch: Moment rare tornado lashes central Chinese cities",
-      "url": "https://www.bbc.co.uk/news/videos/cq61d22ved2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 7, 2026",
-      "description": "Videos shared with the BBC show debris flying through the air as the storm swept through Ezhou and Huanggang in Hubei province."
     },
     {
       "title": "China sentences official to death for taking $325m in bribes",
@@ -3013,6 +3013,12 @@
       "url": "https://www.bbc.co.uk/news/articles/c1my1rvy28do?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 7, 2026",
       "description": "South African police say they are investigating a case of attempted murder but that no arrests have been made so far."
+    },
+    {
+      "title": "Watch: Moment rare tornado lashes central Chinese cities",
+      "url": "https://www.bbc.co.uk/news/videos/cq61d22ved2o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 7, 2026",
+      "description": "Videos shared with the BBC show debris flying through the air as the storm swept through Ezhou and Huanggang in Hubei province."
     },
     {
       "title": "Erika Kirk comes face-to-face in court with husband's alleged killer",
@@ -3369,6 +3375,24 @@
       "description": "Martin is revealing everything you need to know right now to cut the cost of getting away."
     },
     {
+      "title": "‘They brought me here to kill me’ says Gaza doctor in Israeli prison",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/7/they-brought-me-here-to-kill-me-says-gaza-doctor-in-israeli-prison?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "‘They brought me here to kill me’ says Gaza doctor in Israeli prison"
+    },
+    {
+      "title": "France’s Marine Le Pen must wear ankle tag after appeal ruling",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/7/frances-marine-le-pen-must-wear-ankle-tag-after-appeal-ruling?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "A French appeals court upheld Marine Le Pen&#039;s conviction for misusing European Parliament funds."
+    },
+    {
+      "title": "Argentina stage stunning late comeback to beat Egypt in World Cup last 16",
+      "url": "https://www.aljazeera.com/sports/2026/7/7/argentina-stage-stunning-late-comeback-to-beat-egypt-in-world-cup-last-16?traffic_source=rss",
+      "date": "July 7, 2026",
+      "description": "‌Holders Argentina survive huge scare to earn a 3-2 win ⁠over Egypt and reach the World Cup quarterfinals."
+    },
+    {
       "title": "SpaceX shares slide as it joins the tech-heavy Nasdaq-100",
       "url": "https://www.aljazeera.com/economy/2026/7/7/spacex-shares-slide-as-it-joins-the-tech-heavy-nasdaq-100?traffic_source=rss",
       "date": "July 7, 2026",
@@ -3378,7 +3402,7 @@
       "title": "French far-right leader Le Pen says will run in 2027 presidential election",
       "url": "https://www.aljazeera.com/news/2026/7/7/french-far-right-leader-le-pen-says-will-run-in-2027-presidential-election?traffic_source=rss",
       "date": "July 7, 2026",
-      "description": "Her announcement followed a court ruling that meant she would have to wear an electronic tag while campaigning."
+      "description": "Her announcement followed a court ruling that reduced the length of time she was banned from holding public office."
     },
     {
       "title": "Tornadoes kill 17 in central China as Typhoon Bavi looms offshore",
@@ -3475,24 +3499,6 @@
       "url": "https://www.aljazeera.com/sports/liveblog/2026/7/7/argentina-vs-egypt-live-fifa-world-cup-2026?traffic_source=rss",
       "date": "July 7, 2026",
       "description": "Live coverage and text updates as Argentina play Egypt in the round of 16 knockout stage."
-    },
-    {
-      "title": "France appeals court opens door for Le Pen presidential run, with ankle tag",
-      "url": "https://www.aljazeera.com/news/2026/7/7/france-appeals-court-opens-door-for-le-pen-presidential-run-with-ankle-tag?traffic_source=rss",
-      "date": "July 7, 2026",
-      "description": "Paris appeals court rules Le Pen guilty of misusing public funds but reduces the ban on her holding public office."
-    },
-    {
-      "title": "Ships attacked in the Strait of Hormuz: What that means for ongoing talks",
-      "url": "https://www.aljazeera.com/news/2026/7/7/ships-attacked-in-the-strait-of-hormuz-what-that-means-for-ongoing-talks?traffic_source=rss",
-      "date": "July 7, 2026",
-      "description": "While marine traffic in Hormuz has steadily risen, vague provisions on the strait remain contentious in peace talks."
-    },
-    {
-      "title": "Watch World Cup Day 26: Co-hosts USA and Ronaldo’s Portugal eliminated",
-      "url": "https://www.aljazeera.com/video/2026/7/7/video-world-cup-2026-highlights?traffic_source=rss",
-      "date": "July 7, 2026",
-      "description": "Latest match highlights, reaction and previews from the FIFA World Cup 2026 in North America."
     }
   ]
 }
