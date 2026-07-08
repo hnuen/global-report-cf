@@ -508,7 +508,7 @@ archive: {
     id: "russia-hfa",
     name: "Russian Harmful Foreign Activities Sanctions",
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions",
-    region: "Russia", category: "country", lastUpdated: "Jun 29, 2026", status: "active",
+    region: "Russia", category: "country", lastUpdated: "Jul 08, 2026", status: "active",
     executiveOrders: [
       { number: "14114", title: "Taking Additional Steps With Respect to the Russian Federation's Harmful Activities — amends EO 14024 to add secondary sanctions on foreign financial institutions supporting Russia's military-industrial base", date: "December 22, 2023", url: "https://ofac.treasury.gov/media/932441/download?inline" },
       { number: "14071", title: "Prohibiting New Investment in and Certain Services to the Russian Federation — accounting, management consulting, quantum computing, IT services", date: "April 6, 2022", url: "https://ofac.treasury.gov/media/922081/download?inline" },
@@ -518,7 +518,7 @@ archive: {
       { number: "14024", title: "Blocking Property With Respect to Specified Harmful Foreign Activities of the Government of the Russian Federation — primary authority for the Russia HFA program", date: "April 15, 2021", url: "https://ofac.treasury.gov/media/57936/download?inline" },
     ],
     generalLicenses: [
-      // 38 GLs — verified live against OFAC's Russia-HFA program page, June 26, 2026
+      // 37 GLs — verified live against OFAC's Russia-HFA program page, June 26, 2026
       // Removed 2026-06-26: a "GL X" entry (generic title "Iran General
       // License X") was auto-inserted here — that's Iran's GL, not Russia
       // HFA's. Same sitewide "Recent Actions" widget mis-scrape as the
@@ -527,8 +527,7 @@ archive: {
       // block. GL 131G below had the same generic-placeholder problem —
       // fixed its title/date/expires from the GL's own PDF (media/936301):
       // dated June 25, 2026, authorized through July 25, 2026.
-            { number: "GL 6D", title: "Russia-related General License 6D", date: "February 22, 2022", url: "https://ofac.treasury.gov/media/932921/download?inline", addedDate: "June 27, 2026" },
-      { number: "GL 13Q", title: "Russia-related General License 13Q", date: "May 05, 2022", url: "https://ofac.treasury.gov/media/935451/download?inline", addedDate: "June 27, 2026" , expires: "July 9, 2026"},
+{ number: "GL 6D", title: "Russia-related General License 6D", date: "February 22, 2022", url: "https://ofac.treasury.gov/media/932921/download?inline", addedDate: "June 27, 2026" },
       { number: "GL 14", title: "Russia-related General License 14", date: "April 08, 2026", url: "https://ofac.treasury.gov/media/918896/download?inline", addedDate: "June 27, 2026" },
       { number: "GL 20", title: "Russia-related General License 20", date: "March 11, 2022", url: "https://ofac.treasury.gov/media/920271/download?inline", addedDate: "June 27, 2026" },
       { number: "GL 25G", title: "Russia-related General License 25G", date: "March 24, 2022", url: "https://ofac.treasury.gov/media/933536/download?inline", addedDate: "June 27, 2026" },
@@ -596,7 +595,9 @@ archive: {
 
         archive: {
       generalLicenses: [
-        { number: "GL 134C", title: "Authorizing the Delivery and Sale of Crude Oil and Petroleum Products of Russian Federation Origin Loaded on Vessels as of April 17, 2026", date: "May 18, 2026", archived: true, archivedNote: "Expired June 17, 2026 — fixed wind-down date reached; no successor GL issued (133/134 Russia-oil-vessel GL series ends at 134C)", archivedDate: "June 17, 2026" },
+                                { number: "GL 13R", title: "Russia-related General License 13R", date: "May 05, 2022", archived: true, archivedNote: "Expired October 9, 2025 — no successor GL detected", archivedDate: "October 9, 2025" },
+{ number: "GL 13Q", title: "Russia-related General License 13Q", date: "May 05, 2022", archived: true, archivedNote: "Superseded by General License 13R", archivedDate: "May 05, 2022" },
+{ number: "GL 134C", title: "Authorizing the Delivery and Sale of Crude Oil and Petroleum Products of Russian Federation Origin Loaded on Vessels as of April 17, 2026", date: "May 18, 2026", archived: true, archivedNote: "Expired June 17, 2026 — fixed wind-down date reached; no successor GL issued (133/134 Russia-oil-vessel GL series ends at 134C)", archivedDate: "June 17, 2026" },
         { number: "GL 131F", title: "Authorizing Certain Transactions for the Negotiation of and Entry Into Contingent Contracts for the Sale of Lukoil International GmbH and Related Maintenance Activities", date: "May 28, 2026", archived: true, archivedNote: "Superseded by General License 131G", archivedDate: "June 25, 2026" },
         // Removed 2026-06-26: a duplicate "GL 131E" entry was here with an
         // impossible archivedDate ("April 14, 2026" — before GL 131F's own
