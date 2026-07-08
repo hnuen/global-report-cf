@@ -3,6 +3,7 @@
 // so the heavy LLM work runs in GitHub Actions and POSTs the result here.
 import { NextRequest, NextResponse } from "next/server";
 import { buildStorageManager } from "@/src/lib/storage-manager";
+import { saveArticlesToLibrary } from "@/src/lib/article-library";
 import type { Briefing } from "@/src/lib/types";
 
 export const dynamic = "force-dynamic";
@@ -81,11 +82,9 @@ export async function POST(request: NextRequest) {
     }
 
     await storage.save(toSave);
+    // Accumulate into the 6-month article library (fire-and-forget — non-fatal)
+    saveArticlesToLibrary(toSave.articles).catch(e =>
+      console.warn("[save-briefing] Library save failed (non-fatal):", String(e).slice(0, 80))
+    );
     const health = storage.getHealth();
-    console.log(`[save-briefing] Saved ${toSave.articles.length} articles, lastUpdated: ${toSave.lastUpdated}`);
-    return NextResponse.json({ ok: true, articleCount: toSave.articles.length, lastUpdated: toSave.lastUpdated, health });
-  } catch (e) {
-    console.error("[save-briefing]", String(e));
-    return NextResponse.json({ error: String(e) }, { status: 500 });
-  }
-}
+    console.log(`[save-briefing] Saved ${toSave.articles.length} artic
