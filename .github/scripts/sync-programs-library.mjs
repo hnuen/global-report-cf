@@ -219,8 +219,15 @@ function entryIndentOf(itemsText) {
 }
 
 function glPrefix(num) {
+  // digit+letter suffix (134C → 134, 8M → 8)
   const m = /^(\d+)([A-Za-z]*)$/.exec(num);
-  return m ? m[1] : num;
+  if (m) return m[1];
+  // letter+digit suffix (X1 → X, D2 → D) — e.g. Iran's rolling petroleum GLs
+  // where X is superseded by X1. Without this, glPrefix("X1") returns "X1"
+  // and the predecessor search pattern `GL X1[A-Za-z]*` never matches "GL X".
+  const m2 = /^([A-Za-z]+)(\d+)$/.exec(num);
+  if (m2) return m2[1];
+  return num;
 }
 
 // Convert a Roman numeral string to an integer, or null if it isn't one.

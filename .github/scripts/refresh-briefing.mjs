@@ -141,6 +141,14 @@ function parseSanctionsProgram(html) {
     let numMatch = new RegExp(`(?:General\\s+License|GL)\\s+(?:No\\.?\\s*)?([A-Z])[${DASH}](\\d+)\\b`, "i").exec(linkText);
     let designator = numMatch ? `${numMatch[1]}-${numMatch[2]}` : null;
     if (!designator) {
+      // Letter-immediately-followed-by-digit (e.g. "General License X1", "GL D2").
+      // MUST be tried before the generic numeric regex below — that regex uses
+      // [^#\d]* which eats the leading letter and then captures only the trailing
+      // digit, turning "X1" into "1". This step catches [A-Z]\d+ patterns first.
+      numMatch = /(?:General\s+License|GL)\s+(?:No\.?\s*)?([A-Z]\d+)\b/i.exec(linkText);
+      designator = numMatch ? numMatch[1].toUpperCase() : null;
+    }
+    if (!designator) {
       // Numeric-style designators (e.g. "General License 8M") — this is the
       // common case across most programs.
       numMatch = /(?:General\s+License|GL)[^#\d]*#?\s*(?:No\.?\s*)?(\d+[A-Z]?)/i.exec(linkText);
