@@ -308,7 +308,7 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
       { number: "12170", title: "Blocking Iranian Government Property", date: "November 14, 1979", url: "https://ofac.treasury.gov/media/6316/download?inline" },
     ],
     generalLicenses: [
-      // 9 active GLs — newest first — all media IDs verified from OFAC page
+      // 8 active GLs — newest first — all media IDs verified from OFAC page
       // Removed 2026-06-26: a duplicate "GL 1" entry (title literally "Iran
       // General License J-1", same url/media ID as the real GL J-1 below,
       // addedDate today) was just auto-inserted by the sync script — the
@@ -320,13 +320,12 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
       // Actions" widget listing headline GLs from every program, and the
       // scraper's media-link regex doesn't distinguish that widget from
       // Iran's own General Licenses section. GL 134C's real, correctly-
-      // titled entry lives in the russia-hfa block.
-      // 2026-07-07: GL X (June 21, 2026) revoked and superseded by GL X1.
-      // Sync auto-inserted a "GL 1" entry with wrong designator and wrong date;
-      // corrected here. GL X moved to archive below.
-      { number: "GL X1", title: "Revocation and Wind Down of June 21, 2026 Authorization for the Production, Delivery and Sale of Crude Oil, Petrochemical Products, and Petroleum Products of Iranian Origin", date: "July 7, 2026", url: "https://ofac.treasury.gov/media/936446/download?inline", expires: "July 17, 2026", addedDate: "July 7, 2026" },
+      // titled entry lives in the russia-hfa block. Fixed GL X's title below
+      // from the same kind of generic placeholder to its real text, verified
+      // against the GL's own PDF (media/936206) — GL X does belong here.
             { number: "GL L", title: "Iran General License L", date: "December 15, 2016", url: "https://ofac.treasury.gov/media/48626/download?inline", addedDate: "June 27, 2026" },
       { number: "GL Q", title: "Iran General License Q", date: "October 26, 2020", url: "https://ofac.treasury.gov/media/934291/download?inline", addedDate: "June 27, 2026" },
+{ number: "GL X1", title: "Revocation and Wind Down of June 21, 2026 Authorization for the Production, Delivery and Sale of Crude Oil, Petrochemical Products, and Petroleum Products of Iranian Origin", date: "July 7, 2026", url: "https://ofac.treasury.gov/media/936446/download?inline", expires: "July 17, 2026", addedDate: "July 7, 2026" },
       // Removed 2026-06-26: GL W, GL V, GL T moved to archive below — each
       // confirmed expired against its own PDF/Federal Register text (W:
       // media/935561, "authorized through ... May 31, 2026"; V: title/date
@@ -1285,4 +1284,16 @@ export function getProgramsByRegion(region: string): SanctionsProgram[] {
 // Helper: get all active general licenses across all programs
 export function getAllActiveGeneralLicenses() {
   return SANCTIONS_PROGRAMS.flatMap(p =>
-    p.general
+    p.generalLicenses.map(gl => ({ ...gl, program: p.name, programId: p.id, region: p.region }))
+  );
+}
+
+// Helper: get programs with recent updates (within N days)
+export function getRecentlyUpdatedPrograms(days = 90): SanctionsProgram[] {
+  const cutoff = new Date();
+  cutoff.setDate(cutoff.getDate() - days);
+  return SANCTIONS_PROGRAMS.filter(p => {
+    const d = new Date(p.lastUpdated);
+    return !isNaN(d.getTime()) && d >= cutoff;
+  });
+}

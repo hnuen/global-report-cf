@@ -87,4 +87,10 @@ export async function POST(request: NextRequest) {
       console.warn("[save-briefing] Library save failed (non-fatal):", String(e).slice(0, 80))
     );
     const health = storage.getHealth();
-    console.log(`[save-briefing] Saved ${toSave.articles.length} artic
+    console.log(`[save-briefing] Saved ${toSave.articles.length} articles, lastUpdated: ${toSave.lastUpdated}`);
+    return NextResponse.json({ ok: true, articleCount: toSave.articles.length, lastUpdated: toSave.lastUpdated, health });
+  } catch (e) {
+    console.error("[save-briefing]", String(e));
+    return NextResponse.json({ error: String(e) }, { status: 500 });
+  }
+}
