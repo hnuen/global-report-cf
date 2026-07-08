@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-07-08T14:08:29.322Z",
+  "updatedAt": "2026-07-08T14:38:28.669Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260708",
+      "code": "20260708",
+      "title": "Issuance of Amended Russia-related General License and Frequently Asked Questions",
+      "date": "July 08, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260707",
       "code": "20260707",
@@ -54,12 +60,6 @@
       "code": "20260625",
       "title": "Democratic Republic of the Congo-related Designations; Issuance of Amended Russia-related General License and Frequently Asked Questions",
       "date": "June 25, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260624",
-      "code": "20260624",
-      "title": "Russia-related Designations Removals",
-      "date": "June 24, 2026"
     }
   ],
   "civilPenalties": [
@@ -1471,7 +1471,7 @@
     "russian-harmful-foreign-activities-sanctions": {
       "name": "Russian Harmful Foreign Activities Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions",
-      "lastUpdated": "Jun 30, 2026",
+      "lastUpdated": "Jul 08, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -1680,16 +1680,16 @@
           "url": "https://ofac.treasury.gov/media/922841/download?inline"
         },
         {
-          "number": "13Q",
-          "title": "Russia-related General License 13Q",
+          "number": "13R",
+          "title": "Russia-related General License 13R",
           "date": "May 05, 2022",
-          "expires": "July 9, 2026",
-          "url": "https://ofac.treasury.gov/media/935451/download?inline"
+          "expires": "October 9, 2025",
+          "url": "https://ofac.treasury.gov/media/936431/download?inline"
         },
         {
           "number": "14",
           "title": "Russia-related General License 14",
-          "date": "April 08, 2026",
+          "date": "July 08, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918896/download?inline"
         },
@@ -1918,11 +1918,11 @@
           "url": "https://ofac.treasury.gov/media/934776/download?inline"
         },
         {
-          "number": "X",
-          "title": "Iran General License X",
+          "number": "X1",
+          "title": "Iran General License X1",
           "date": "November 21, 2025",
-          "expires": "August 21, 2026",
-          "url": "https://ofac.treasury.gov/media/936206/download?inline"
+          "expires": "",
+          "url": "https://ofac.treasury.gov/media/936446/download?inline"
         }
       ]
     },
@@ -2997,10 +2997,10 @@
   ],
   "regionsNews": [
     {
-      "title": "German doctor jailed for killing 15 of his patients",
+      "title": "German doctor jailed for murder of 15 patients and suspected of more",
       "url": "https://www.bbc.co.uk/news/articles/cq819jyp2g7o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 8, 2026",
-      "description": "The German palliative care doctor was found guilty of murdering 12 women and three men between September 2021 and July 2024."
+      "description": "The German palliative care doctor has been sentenced to life imprisonment for killing 15 of his patients."
     },
     {
       "title": "Will Le Pen rise again? French nationalist leader defiant after court's ruling",
@@ -3015,22 +3015,28 @@
       "description": "Prime Minister Sir Keir Starmer will convene around a dozen leaders to discuss the programme in Ankara."
     },
     {
+      "title": "Eight killed after landslide hits girls' school in Bangladesh",
+      "url": "https://www.bbc.co.uk/news/articles/cx2wkzww20ro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 8, 2026",
+      "description": "Rescuers pull bodies from the mud after heavy monsoon rains batter the south-eastern coast."
+    },
+    {
       "title": "Nigeria's president demands to know how fake agency was allegedly set up in his office",
       "url": "https://www.bbc.co.uk/news/articles/c621xrrp6jeo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 8, 2026",
       "description": "Adeniyi Adeyemi allegedly forged a letter of appointment and secured funding for an agency the presidency knew nothing about."
     },
     {
-      "title": "Suspect ate Chick-fil-A and interacted with Charlie Kirk staff before shooting, court hears",
-      "url": "https://www.bbc.co.uk/news/articles/cr5j983p046o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 8, 2026",
-      "description": "The preliminary hearing will determine whether Tyler Robinson, accused of killing conservative activist Charlie Kirk, will stand trial."
-    },
-    {
       "title": "Trains and emergency calls affected after major outage at Australia's largest telecoms company",
       "url": "https://www.bbc.co.uk/news/articles/cgevw0d95pdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 8, 2026",
       "description": "Servers at data centres in Sydney and Melbourne were to blame but the exact cause remains unknown."
+    },
+    {
+      "title": "Suspect ate Chick-fil-A and interacted with Charlie Kirk staff before shooting, court hears",
+      "url": "https://www.bbc.co.uk/news/articles/cr5j983p046o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 8, 2026",
+      "description": "The preliminary hearing will determine whether Tyler Robinson, accused of killing conservative activist Charlie Kirk, will stand trial."
     },
     {
       "title": "Utah boarding school where Paris Hilton alleged abuse as a teen loses its licence",
@@ -3145,6 +3151,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cd95wendvdeo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 8, 2026",
       "description": "A union says workers are \"in the crosshairs\" of automation as AI is being tested across ports."
+    },
+    {
+      "title": "Jackdaw owner says gas field will 'not materially influence' climate change",
+      "url": "https://www.bbc.co.uk/news/articles/cly85e2z2n4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 8, 2026",
+      "description": "The new assessment was required by the industry regulator, after it found several areas had not been adequately addressed in a previous submission."
     },
     {
       "title": "Airbnb data identifies illegal social home sublets",
