@@ -62,6 +62,11 @@ export class NtfyNotifier implements Notifier {
     ]));
 
     let sent = 0;
+    const errors: string[] = [];
+
+    // Sanitize a string for use in HTTP headers: strip control chars and newlines
+    // that would break header parsing (and could allow header injection).
+    const hdr = (s: string) => s.replace(/[\r\n\t]/g, " ").replace(/[^\x09\x20-\x7E -\uFFFF]/g, "").slice(0, 250);
 
     for (const sa of articles) {
       const { subject, plain, emoji } = formatAlert(sa, appUrl);
@@ -70,10 +75,12 @@ export class NtfyNotifier implements Notifier {
       for (const topic of topics) {
         const url = `${server}/${topic}`;
         const headers: Record<string, string> = {
-          "Title":    subject.slice(0, 250),
+          "Title":    hdr(subject),
           "Priority": priority,
-          "Tags":     `${emoji.replace(/\s/g, "")},${sa.article.section}`,
-          "Content-Type": "text/plain",
+          // Use emoji shortcode names instead of raw Unicode in Tags to avoid
+          // header encoding issues on some ntfy.sh server versions.
+          "Tags":     `${sa.score >= 90 ? "rotating_light" : sa.score >= 80 ? "warning" : "pushpin"},${sa.article.section}`,
+          "Content-Type": "text/plain; charset=utf-8",
         };
 
         if (appUrl) headers["Click"] = appUrl;
@@ -88,11 +95,15 @@ export class NtfyNotifier implements Notifier {
           if (res.ok) {
             sent++;
           } else {
-            const err = await res.text();
-            console.error(`[ntfy] Error ${res.status} for topic ${topic}: ${err}`);
+            const errBody = await res.text().catch(() => "");
+            const msg = `HTTP ${res.status} for topic ${topic}: ${errBody.slice(0, 120)}`;
+            console.error(`[ntfy] ${msg}`);
+            errors.push(msg);
           }
         } catch (e) {
-          console.error(`[ntfy] Fetch error for topic ${topic}:`, e);
+          const msg = `Fetch error for topic ${topic}: ${String(e).slice(0, 80)}`;
+          console.error(`[ntfy] ${msg}`);
+          errors.push(msg);
         }
       }
     }
@@ -101,7 +112,7 @@ export class NtfyNotifier implements Notifier {
       channel: this.name,
       success: sent > 0,
       recipients: sent,
-      error: sent === 0 ? "No messages delivered to ntfy" : undefined,
+      error: sent === 0 ? (errors[0] ?? "No messages delivered to ntfy") : undefined,
     };
   }
 }
