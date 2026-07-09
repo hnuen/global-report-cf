@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-09T15:38:45.958Z",
+  "updatedAt": "2026-07-09T16:08:26.847Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260708",
@@ -2816,16 +2816,10 @@
   ],
   "bbcNews": [
     {
-      "title": "Iran launches more strikes after accusing US of striking near nuclear plant",
+      "title": "Tehran launches more strikes after explosions reported in southern Iran",
       "url": "https://www.bbc.co.uk/news/articles/cz75zjj5wp8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 9, 2026",
       "description": "Centcom says it hit 90 Iranian targets in the latest round of strikes, with the Iranian health ministry saying 14 people were killed since Tuesday."
-    },
-    {
-      "title": "Sharp drop in ships crossing Strait of Hormuz after US and Iran trade strikes",
-      "url": "https://www.bbc.co.uk/news/articles/c621k5r8764o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 9, 2026",
-      "description": "Data shows a decline in the number of ships - many carrying oil and gas - going through the waterway after attacks this week."
     },
     {
       "title": "Ukraine strikes Russian ships near Crimea, escalating attacks on fuel supplies",
@@ -2853,6 +2847,12 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Strait of Hormuz: What has happened since the US-Iran MoU on June 17?",
+      "url": "https://www.aljazeera.com/news/2026/7/9/strait-of-hormuz-what-has-happened-since-the-us-iran-mou-on-june-17?traffic_source=rss",
+      "date": "July 9, 2026",
+      "description": "More than 500 ships have passed through the strait since June 17, but many remain stuck."
+    },
     {
       "title": "Photos: Iran to bury slain supreme leader in culmination of mass funeral",
       "url": "https://www.aljazeera.com/gallery/2026/7/9/photos-iran-to-bury-slain-supreme-leader-in-culmination-of-mass-funeral?traffic_source=rss",
@@ -2888,12 +2888,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/9/us-strikes-iran-for-second-night-is-the-peace-process-all-over-now?traffic_source=rss",
       "date": "July 9, 2026",
       "description": "Neither side has officially called off the interim peace agreement, despite the escalation."
-    },
-    {
-      "title": "Air raid sirens in Bahrain after uneasy night of US-Iran strikes",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/9/air-raid-sirens-in-bahrain-after-uneasy-night-of-us-iran-strikes?traffic_source=rss",
-      "date": "July 9, 2026",
-      "description": "After a tense night of overnight US-led strikes on Iran, air raid alerts sounded across Gulf states."
     }
   ],
   "occNews": [
@@ -2993,22 +2987,28 @@
   ],
   "regionsNews": [
     {
+      "title": "Big drop in oil, gas and cargo ships crossing Strait of Hormuz after new strikes",
+      "url": "https://www.bbc.co.uk/news/articles/c621k5r8764o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 9, 2026",
+      "description": "Data shows a decline in the number of ships - many carrying oil and gas - going through the waterway after attacks this week."
+    },
+    {
       "title": "Democrat Graham Platner suspends campaign for key US Senate race after assault allegation",
       "url": "https://www.bbc.co.uk/news/articles/c9v229434p2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 9, 2026",
       "description": "The decision came days after a woman accused him of sexual assault, an accusation he says is \"categorically false\"."
     },
     {
+      "title": "Ex-Olympian pleads not guilty to Reflecting Pool vandalism charges",
+      "url": "https://www.bbc.co.uk/news/articles/c78y013ny3eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 9, 2026",
+      "description": "A former US Olympian canoeist denies accusations that he deliberately damaged the lining of the refurbished Lincoln Memorial Reflecting Pool."
+    },
+    {
       "title": "Factory fire kills at least 28 in China's 'shoe capital'",
       "url": "https://www.bbc.co.uk/news/articles/cx2vz51v2pjo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 9, 2026",
       "description": "Footage shows huge flames rising from a building and thick, black smoke rising into the sky."
-    },
-    {
-      "title": "International court tells BBC of breakthrough in Sudan war crimes probe",
-      "url": "https://www.bbc.co.uk/news/articles/c9928zr2m5xo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 9, 2026",
-      "description": "The ICC has been looking into atrocities committed in Darfur over the past three years."
     },
     {
       "title": "Starmer gifted gun and ammunition by Turkish president at Nato",
@@ -3039,6 +3039,12 @@
       "url": "https://www.bbc.co.uk/news/articles/c1wyx7g9e1do?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 8, 2026",
       "description": "The Super Bowl-style show marks the Canadian singer's latest big performance after his comeback shows at Coachella."
+    },
+    {
+      "title": "International court tells BBC of breakthrough in Sudan war crimes probe",
+      "url": "https://www.bbc.co.uk/news/articles/c9928zr2m5xo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 9, 2026",
+      "description": "The ICC has been looking into atrocities committed in Darfur over the past three years."
     },
     {
       "title": "Teenager arrested after two girls, 13, seriously injured in German school attack",
@@ -3087,24 +3093,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cr5j983p046o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 8, 2026",
       "description": "The preliminary hearing will determine whether Tyler Robinson, accused of killing conservative activist Charlie Kirk, will stand trial."
-    },
-    {
-      "title": "Australia dock workers call for 28-hour week in AI talks",
-      "url": "https://www.bbc.co.uk/news/articles/cd95wendvdeo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 8, 2026",
-      "description": "A union says workers are \"in the crosshairs\" of automation as AI is being tested across ports."
-    },
-    {
-      "title": "Top Democrats press Maine Senate candidate to drop out of race over sexual assault allegation",
-      "url": "https://www.bbc.co.uk/news/articles/cm2004nx8v9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 8, 2026",
-      "description": "Graham Platner denied the allegation, calling it \"categorically false\" but said he was \"taking the time to reflect on the best path forward\"."
-    },
-    {
-      "title": "Lawyer says detained Gaza doctor was severely beaten in Israeli jail",
-      "url": "https://www.bbc.co.uk/news/articles/c07yy3pgrlmo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 7, 2026",
-      "description": "The lawyer for Dr Hussam Abu Safiya tells the BBC his client was so badly beaten he could not recognise him during a visit last week."
     },
     {
       "title": "It was 'love at first sight' with their adopted baby. Then they were told he may have been trafficked",
@@ -3479,6 +3467,18 @@
       "description": "Linzi checks in on 89-year-old Margaret's battle to get her landline reconnected."
     },
     {
+      "title": "Lebanon Latest: concerns about latest escalation in regional fighting",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/9/lebanon-latest-concerns-about-latest-escalation-in-regional-fighting-2?traffic_source=rss",
+      "date": "July 9, 2026",
+      "description": "Al Jazeera’s Robert McBride has the latest from Beirut with concerns on how renewed fighting could impact Lebanon."
+    },
+    {
+      "title": "Erdogan gifts NATO leaders engraved revolvers with live ammunition",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/9/erdogan-gifts-nato-leaders-engraved-revolvers-with-live-ammunition?traffic_source=rss",
+      "date": "July 9, 2026",
+      "description": "NATO’s leaders left the Ankara summit with guns and live ammunition gifted to them by Turkiye’s President."
+    },
+    {
       "title": "At least 28 people killed as fire engulfs shoe factory in China",
       "url": "https://www.aljazeera.com/news/2026/7/9/at-least-28-people-killed-as-fire-engulfs-shoe-factory-in-china?traffic_source=rss",
       "date": "July 9, 2026",
@@ -3573,18 +3573,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/9/australia-to-begin-selling-uranium-to-india-for-peaceful-purposes?traffic_source=rss",
       "date": "July 9, 2026",
       "description": "Australia to begin selling uranium to India for peaceful purposes"
-    },
-    {
-      "title": "Who is Zeynep Sonmez, Wimbledon star with a ‘Palestine’ watermelon racket?",
-      "url": "https://www.aljazeera.com/news/2026/7/9/who-is-zeynep-sonmez-the-wimbledon-with-the-palestine-watermelon-racket?traffic_source=rss",
-      "date": "July 9, 2026",
-      "description": "Turkish tennis player Zeynep Sonmez defies a Wimbledon ban to stand in solidarity with Palestine."
-    },
-    {
-      "title": "World Cup: France vs Morocco prediction, schedule, Hakimi vs Mbappe rivalry",
-      "url": "https://www.aljazeera.com/news/2026/7/9/world-cup-france-vs-morocco-prediction-schedule-hakimi-vs-mbappe-rivalry?traffic_source=rss",
-      "date": "July 9, 2026",
-      "description": "Hakimi meets Mbappe as France face Morocco in the opening World Cup quarterfinal, with Opta backing Les Bleus to win."
     }
   ]
 }
