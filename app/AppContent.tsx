@@ -614,7 +614,7 @@ export default function GlobalMonitor() {
   const bgTimerIdsRef  = useRef<ReturnType<typeof setTimeout>[]>([]);
   const bgIntervalRef  = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  const [tabShowAll, setTabShowAll] = useState<Record<string,boolean>>({});
+  const [tabShowAll, setTabShowAll] = useState<Record<string,number>>({});
   const [tabLiveResults, setTabLiveResults] = useState<any[]>([]);
   const [tabLiveSearching, setTabLiveSearching] = useState(false);
   const [tabLiveError, setTabLiveError] = useState("");
@@ -1577,19 +1577,21 @@ export default function GlobalMonitor() {
             const arts = allFiltered.filter(a=>a.section===g);
             if (!arts.length) return null;
             const LIMIT = 15;
-            const showAll = tabShowAll[g];
-            const visible = showAll ? arts : arts.slice(0, LIMIT);
-            const hidden = arts.length - LIMIT;
+            const PAGE  = 15;
+            const extra = tabShowAll[g] ?? 0;
+            const shown = LIMIT + extra;
+            const visible = arts.slice(0, shown);
+            const remaining = arts.length - shown;
             return <div key={g} style={{marginBottom:22}}>
               <div className="sec-banner"><div className={`sec-stripe stripe-${g}`}/><span className="sec-title">{LABELS[g]}</span><span className="sec-count">{arts.length} stories</span></div>
               {visible.map((a,i)=>renderArticle(a,i))}
-              {!showAll && hidden > 0 && (
-                <button className="show-more-btn" onClick={()=>setTabShowAll(p=>({...p,[g]:true}))}>
-                  ↓ Show {hidden} more {LABELS[g]?.toLowerCase()||g} stories
+              {remaining > 0 && (
+                <button className="show-more-btn" onClick={()=>setTabShowAll(p=>({...p,[g]:(p[g]??0)+PAGE}))}>
+                  ↓ Show {Math.min(PAGE, remaining)} more {LABELS[g]?.toLowerCase()||g} stories
                 </button>
               )}
-              {showAll && arts.length > LIMIT && (
-                <button className="show-more-btn" onClick={()=>setTabShowAll(p=>({...p,[g]:false}))}>
+              {extra > 0 && (
+                <button className="show-more-btn" onClick={()=>setTabShowAll(p=>({...p,[g]:0}))}>
                   ↑ Show less
                 </button>
               )}
