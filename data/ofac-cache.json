@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-09T19:08:43.277Z",
+  "updatedAt": "2026-07-09T22:08:31.477Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260708",
@@ -2806,17 +2806,10 @@
       "description": "These new measures aim at further increasing the pressure on Russia and Belarus and supporting EU's goal of achieving a just and lasting peace for Ukraine."
     }
   ],
-  "unNotices": [
-    {
-      "title": "Security Council ISIL (Da’esh) and Al-Qaida Sanctions Committee Amends One Entry to Its Sanctions List",
-      "url": "https://press.un.org/en/2026/sc16407.doc.htm",
-      "date": "July 8, 2026",
-      "description": "On 8 July 2026, the Security Council Committee pursuant to resolutions 1267 (1999), 1989 (2011) and 2253 (2015) concerning ISIL (Da’esh), Al‑Qaida and associated individuals, groups, undertakings and entities enacted the amendments specified with strikethrough and underline in the entry below on its ISIL (Da’esh) and Al-Qaida Sanctions List of individuals and entities subject to the assets freeze, travel ban and arms embargo set out in paragraph 1 of Security Council resolution 2734 (2024), and adopted under Chapter VII of the Charter of the United Nations."
-    }
-  ],
+  "unNotices": [],
   "bbcNews": [
     {
-      "title": "Tehran launches more strikes after explosions reported in southern Iran",
+      "title": "Tehran launches more strikes after second round of US attacks in southern Iran",
       "url": "https://www.bbc.co.uk/news/articles/cz75zjj5wp8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 9, 2026",
       "description": "Centcom says it hit 90 Iranian targets in the latest round of strikes, with the Iranian health ministry saying 14 people were killed since Tuesday."
@@ -2834,19 +2827,55 @@
       "description": "Although the Patriots are highly effective against Russia's ballistic missiles, they also have lengthy production times."
     },
     {
-      "title": "Khamenei's coffin carried through Shia shrines as ceremonies held in Iraq",
-      "url": "https://www.bbc.co.uk/news/articles/cp9le3kjj8eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 8, 2026",
-      "description": "The remains of Iran's late supreme leader are transported to Najaf and Karbala, as funeral ceremonies continue for a fifth day."
-    },
-    {
-      "title": "Watch: Why is there a 'black cloud' over unity at the Nato summit?",
-      "url": "https://www.bbc.co.uk/news/videos/cn75n0lyzedo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 8, 2026",
-      "description": "US President Donald Trump has used the Nato summit to criticise the lack of support for his war on Iran, and revive his interest in taking over Greenland."
+      "title": "What's next for Iran after the funeral of their late supreme leader?",
+      "url": "https://www.bbc.co.uk/news/videos/c4gym0r7kj1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 9, 2026",
+      "description": "The BBC's chief international correspondent looks at how Iran's new leadership will respond to several issues affecting the country."
     }
   ],
   "ajNews": [
+    {
+      "title": "Syria says cell behind ‘terrorist bombings’ in Damascus arrested",
+      "url": "https://www.aljazeera.com/news/2026/7/9/syria-says-cell-behind-terrorist-bombings-in-damascus-arrested?traffic_source=rss",
+      "date": "July 9, 2026",
+      "description": "Explosions rocked the Syrian capital on Tuesday as French President Emmanuel Macron visited the city."
+    },
+    {
+      "title": "How Strait of Hormuz dispute led to latest US-Iran cycle of fighting",
+      "url": "https://www.aljazeera.com/news/2026/7/9/how-strait-of-hormuz-dispute-led-to-latest-us-iran-cycle-of-fighting?traffic_source=rss",
+      "date": "July 9, 2026",
+      "description": "Clashing interpretations of vague memorandum of understanding language on Hormuz at heart of escalation, analysts say."
+    },
+    {
+      "title": "NYT-led group asks court to sanction OpenAI in US copyright dispute",
+      "url": "https://www.aljazeera.com/economy/2026/7/9/nyt-led-group-asks-court-to-sanction-openai-in-us-copyright-dispute?traffic_source=rss",
+      "date": "July 9, 2026",
+      "description": "The news firms allege ChatGPT maker is hiding evidence important to what could be landmark copyright infringement trial."
+    },
+    {
+      "title": "US military denies involvement after explosions heard in Iran",
+      "url": "https://www.aljazeera.com/news/2026/7/9/explosions-heard-in-iran-as-us-military-denies-involvement?traffic_source=rss",
+      "date": "July 9, 2026",
+      "description": "Iranian media report loud explosions in several locations as Israeli officials say war is &#039;not over&#039;."
+    },
+    {
+      "title": "UK Labour’s Burnham apologises for response to Israel’s Gaza violence",
+      "url": "https://www.aljazeera.com/news/2026/7/9/uk-labours-burnham-apologises-for-response-to-israels-gaza-violence?traffic_source=rss",
+      "date": "July 9, 2026",
+      "description": "UK&#039;s likely next PM Burnham pushes for ceasefire, tougher sanctions over Gaza violence and settlement trade bans."
+    },
+    {
+      "title": "Why the US Strategic Petroleum Reserve matters amid US-Iran tensions",
+      "url": "https://www.aljazeera.com/economy/2026/7/9/why-the-us-strategic-petroleum-reserve-matters-amid-us-iran-tensions?traffic_source=rss",
+      "date": "July 9, 2026",
+      "description": "US oil reserves hit lowest levels since 1983 amid growing tensions with Iran and global supply concerns."
+    },
+    {
+      "title": "Is Syria stable enough to engage with the world?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/7/9/is-syria-stable-enough-to-engage-with-the-world?traffic_source=rss",
+      "date": "July 9, 2026",
+      "description": "The Trump administration plans to remove Syria from list of state sponsors of &#039;terrorism&#039;."
+    },
     {
       "title": "US expands Iran strikes Iran hitting fishing piers near nuclear plant",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/9/us-expands-iran-strikes-iran-hitting-fishing-piers-near-nuclear-plant?traffic_source=rss",
@@ -2858,30 +2887,6 @@
       "url": "https://www.aljazeera.com/video/inside-story/2026/7/9/will-nato-get-involved-in-securing-strait-of-hormuz?traffic_source=rss",
       "date": "July 9, 2026",
       "description": "Iran war overshadows defence alliance&#039;s summit in Turkiye."
-    },
-    {
-      "title": "A quest for closure: In search of the missing after Venezuela’s earthquakes",
-      "url": "https://www.aljazeera.com/features/longform/2026/7/9/a-quest-for-closure-in-search-of-the-missing-after-venezuelas-earthquakes?traffic_source=rss",
-      "date": "July 9, 2026",
-      "description": "Tens of thousands of people remain unaccounted for nearly two weeks after a pair of deadly earthquakes struck the coast."
-    },
-    {
-      "title": "Chemical weapons watchdog restores Syria’s voting rights, citing progress",
-      "url": "https://www.aljazeera.com/news/2026/7/9/chemical-weapons-watchdog-restores-syrias-voting-rights-citing-progress?traffic_source=rss",
-      "date": "July 9, 2026",
-      "description": "Syria regains voting rights in the OPCW as new leadership makes progress in addressing chemical weapons issues."
-    },
-    {
-      "title": "Strait of Hormuz: What has happened since the US-Iran MoU on June 17?",
-      "url": "https://www.aljazeera.com/news/2026/7/9/strait-of-hormuz-what-has-happened-since-the-us-iran-mou-on-june-17?traffic_source=rss",
-      "date": "July 9, 2026",
-      "description": "More than 500 ships have passed through the strait since June 17, but many remain stuck."
-    },
-    {
-      "title": "Photos: Iran to bury slain supreme leader in culmination of mass funeral",
-      "url": "https://www.aljazeera.com/gallery/2026/7/9/photos-iran-to-bury-slain-supreme-leader-in-culmination-of-mass-funeral?traffic_source=rss",
-      "date": "July 9, 2026",
-      "description": "Iranians gather in sweltering heat for Ayatollah Ali Khamenei’s funeral in his hometown of Mashhad."
     }
   ],
   "occNews": [
@@ -2993,6 +2998,18 @@
       "description": "The decision came days after a woman accused him of sexual assault, an accusation he says is \"categorically false\"."
     },
     {
+      "title": "Ukrainian agent accused of murdering Monaco bomb suspect changes story",
+      "url": "https://www.bbc.co.uk/news/articles/cpv3e8y39j7o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 9, 2026",
+      "description": "Two men with links to Ukraine's security services are accused of killing Anastasiia Berezovska and dumping her body in woods."
+    },
+    {
+      "title": "Palestinians mourn Gaza World Cup screenings organiser killed in Israeli strike",
+      "url": "https://www.bbc.co.uk/news/articles/cwylznzjk04o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 9, 2026",
+      "description": "Aid worker Mohammed al-Wahidi had become a prominent humanitarian figure during the Israel-Hamas war."
+    },
+    {
       "title": "Greek F-16 fighter jet crash-lands at busy Zakynthos airport",
       "url": "https://www.bbc.co.uk/news/articles/czrxz18720eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 9, 2026",
@@ -3051,48 +3068,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c0qyvkgndzpo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 8, 2026",
       "description": "Police said a major operation was under way in the area of Welfen-Gymnasium secondary school in Schongau, Bavaria."
-    },
-    {
-      "title": "Eight killed after landslide hits girls' school in Bangladesh",
-      "url": "https://www.bbc.co.uk/news/articles/cx2wkzww20ro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 8, 2026",
-      "description": "Rescuers pull bodies from the mud after heavy monsoon rains batter the south-eastern coast."
-    },
-    {
-      "title": "German doctor jailed for murder of 15 patients and suspected of more",
-      "url": "https://www.bbc.co.uk/news/articles/cq819jyp2g7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 8, 2026",
-      "description": "The German palliative care doctor has been sentenced to life imprisonment for killing 15 of his patients."
-    },
-    {
-      "title": "Nigeria's president demands to know how fake agency was allegedly set up in his office",
-      "url": "https://www.bbc.co.uk/news/articles/c621xrrp6jeo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 8, 2026",
-      "description": "Adeniyi Adeyemi allegedly forged a letter of appointment and secured funding for an agency the presidency knew nothing about."
-    },
-    {
-      "title": "Trains and emergency calls affected after major outage at Australia's largest telecoms company",
-      "url": "https://www.bbc.co.uk/news/articles/cgevw0d95pdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 8, 2026",
-      "description": "Servers at data centres in Sydney and Melbourne were to blame but the exact cause remains unknown."
-    },
-    {
-      "title": "Cubans protest after third nationwide power cut this year",
-      "url": "https://www.bbc.co.uk/news/articles/cm20g0d3ry4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 8, 2026",
-      "description": "While Cuban officials said that power had been mostly restored, those still left in the dark vented their anger."
-    },
-    {
-      "title": "Utah boarding school where Paris Hilton alleged abuse as a teen loses its licence",
-      "url": "https://www.bbc.co.uk/news/articles/cjdg4r3k3emo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 8, 2026",
-      "description": "Hilton said the facility \"failed the children\", as regulators cited neglect and use of unnecessary restraints."
-    },
-    {
-      "title": "Suspect ate Chick-fil-A and interacted with Charlie Kirk staff before shooting, court hears",
-      "url": "https://www.bbc.co.uk/news/articles/cr5j983p046o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 8, 2026",
-      "description": "The preliminary hearing will determine whether Tyler Robinson, accused of killing conservative activist Charlie Kirk, will stand trial."
     },
     {
       "title": "It was 'love at first sight' with their adopted baby. Then they were told he may have been trafficked",
@@ -3455,16 +3430,64 @@
       "description": "Linzi checks in on 89-year-old Margaret's battle to get her landline reconnected."
     },
     {
+      "title": "Trump airport name change sparks backlash in Florida",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/9/trump-airport-name-change-sparks-backlash-in-florida?traffic_source=rss",
+      "date": "July 9, 2026",
+      "description": "Trump airport name change sparks backlash in Florida"
+    },
+    {
+      "title": "Mexico seeks prosecutions over migrant deaths in the US",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/9/mexico-seeks-prosecutions-over-migrant-deaths-in-the-us?traffic_source=rss",
+      "date": "July 9, 2026",
+      "description": "Mexico will seek state and federal prosecutions in the United States over the deaths of Mexican migrants."
+    },
+    {
+      "title": "Canadian PM visits Saudi Arabia to strengthen energy, mining partnerships",
+      "url": "https://www.aljazeera.com/economy/2026/7/9/canadian-pm-visits-saudi-arabia-to-strengthen-energy-mining-partnerships?traffic_source=rss",
+      "date": "July 9, 2026",
+      "description": "Carney and Saudi Crown Prince Bin Salman strengthen partnerships after years of strained relations under Trudeau."
+    },
+    {
+      "title": "South African protesters intimidate migrants as aid group issues warning",
+      "url": "https://www.aljazeera.com/news/2026/7/9/south-african-protesters-intimidate-migrants-as-aid-group-issues-warning?traffic_source=rss",
+      "date": "July 9, 2026",
+      "description": "Doctors Without Borders (MSF) warns of growing humanitarian needs as tens of thousands of African migrants displaced."
+    },
+    {
+      "title": "Two more men plead guilty in US for deadly 2021 human-smuggling truck crash",
+      "url": "https://www.aljazeera.com/news/2026/7/9/two-more-men-plead-guilty-in-us-for-deadly-2021-human-smuggling-truck-crash?traffic_source=rss",
+      "date": "July 9, 2026",
+      "description": "Five Guatemalan nationals have now plead guilty in the migrant smuggling case linked to the deaths of 55 migrants."
+    },
+    {
+      "title": "What happened to the beautiful game?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/9/what-happened-to-the-beautiful-game?traffic_source=rss",
+      "date": "July 9, 2026",
+      "description": "Has football lost its soul? From Pele’s “Joga Bonito” to billion-dollar World Cups, the game has changed."
+    },
+    {
+      "title": "How Lyhanna’s rape and murder put France’s justice system under scrutiny",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/9/how-lyhannas-rape-and-murder-put-frances-justice-system-under-scrutiny?traffic_source=rss",
+      "date": "July 9, 2026",
+      "description": "The rape and murder of 11-year-old Lyhanna has sparked outrage in France."
+    },
+    {
+      "title": "Deadly fire breaks out at shoe factory in China",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/9/deadly-fire-breaks-out-at-shoe-factory-in-china?traffic_source=rss",
+      "date": "July 9, 2026",
+      "description": "A fire has torn through a shoe factory in eastern China, killing at least 28 people and trapping workers on the roof."
+    },
+    {
       "title": "England’s Quansah banned for two matches after World Cup last-16 red card",
       "url": "https://www.aljazeera.com/sports/2026/7/9/englands-quansah-banned-for-two-matches-after-world-cup-last-16-red-card?traffic_source=rss",
       "date": "July 9, 2026",
       "description": "Quansah will miss England&#039;s quarterfinal against Norway after being sent off for a sliding studs-up tackle."
     },
     {
-      "title": "Israeli attacks on Gaza kill 10 people in 24 hours despite ‘ceasefire’",
+      "title": "Israeli attacks on Gaza kill six people despite ‘ceasefire’",
       "url": "https://www.aljazeera.com/news/2026/7/9/israeli-attacks-on-gaza-kill-10-people-in-24-hours-despite-ceasefire?traffic_source=rss",
       "date": "July 9, 2026",
-      "description": "World Central Kitchen condemns deadly air strike on aid driver, calls for accountability amid escalating Gaza violence."
+      "description": "World Central Kitchen condemns air strike on aid driver, calls for accountability amid escalating Israeli violence."
     },
     {
       "title": "Mexico to seek US criminal complaints over ICE-related deaths of citizens",
@@ -3491,7 +3514,7 @@
       "description": "A court ruling clears the way for Marine Le Pen to run for president next year."
     },
     {
-      "title": "LIVE: France vs Morocco – FIFA World Cup 2026 quarterfinal",
+      "title": "France vs Morocco LIVE: FIFA World Cup 2026 quarterfinal",
       "url": "https://www.aljazeera.com/sports/liveblog/2026/7/9/live-france-vs-morocco-fifa-world-cup-2026-quarterfinal?traffic_source=rss",
       "date": "July 9, 2026",
       "description": "Live coverage, text updates and build-up from our full text commentary stream as Mbappe&#039;s France face Morocco."
@@ -3501,72 +3524,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/9/former-us-olympian-pleads-not-guilty-in-dc-reflecting-pool-vandalism-case?traffic_source=rss",
       "date": "July 9, 2026",
       "description": "Former Olympic canoeist David Hearn denies damaging Donald Trump’s Washington, DC reflecting pool renovation."
-    },
-    {
-      "title": "Lebanon Latest: concerns about latest escalation in regional fighting",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/9/lebanon-latest-concerns-about-latest-escalation-in-regional-fighting-2?traffic_source=rss",
-      "date": "July 9, 2026",
-      "description": "Al Jazeera’s Robert McBride has the latest from Beirut with concerns on how renewed fighting could impact Lebanon."
-    },
-    {
-      "title": "Erdogan gifts NATO leaders engraved revolvers with live ammunition",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/9/erdogan-gifts-nato-leaders-engraved-revolvers-with-live-ammunition?traffic_source=rss",
-      "date": "July 9, 2026",
-      "description": "NATO’s leaders left the Ankara summit with guns and live ammunition gifted to them by Turkiye’s President."
-    },
-    {
-      "title": "At least 28 people killed as fire engulfs shoe factory in China",
-      "url": "https://www.aljazeera.com/news/2026/7/9/at-least-28-people-killed-as-fire-engulfs-shoe-factory-in-china?traffic_source=rss",
-      "date": "July 9, 2026",
-      "description": "Beijing demands &#039;all-out&#039; effort to extinguish the blaze, search for survivors and treat the injured."
-    },
-    {
-      "title": "‘Not Nigel Farage’: Who is Count Binface, contesting as MP for Clacton, UK?",
-      "url": "https://www.aljazeera.com/news/2026/7/9/not-nigel-farage-who-is-count-binface-contesting-as-mp-for-clacton-uk?traffic_source=rss",
-      "date": "July 9, 2026",
-      "description": "The joke candidate with a bin-shaped helmet is so far Farage&#039;s only challenger in the English constituency of Clacton."
-    },
-    {
-      "title": "‘She doesn’t give up that easily’: France’s Le Pen eyes the Elysee",
-      "url": "https://www.aljazeera.com/news/2026/7/9/shes-extremely-dangerous-frances-le-pen-eyes-the-elysee?traffic_source=rss",
-      "date": "July 9, 2026",
-      "description": "Marine Le Pen, convicted of embezzling EU funds, announces her plans to run in 2027 after winning an appeal."
-    },
-    {
-      "title": "FIFA World Cup: Which quarterfinal team has best chance to win the trophy?",
-      "url": "https://www.aljazeera.com/sports/2026/7/9/fifa-world-cup-which-quarterfinal-team-has-best-chance-to-win-the-trophy?traffic_source=rss",
-      "date": "July 9, 2026",
-      "description": "Form guide on the final eight teams as they battle it out for the FIFA World Cup 2026 trophy in the United States."
-    },
-    {
-      "title": "Graham Platner drops Maine Senate bid: What that means for Democrats",
-      "url": "https://www.aljazeera.com/news/2026/7/9/graham-platner-drops-maine-senate-bid-what-that-means-for-democrats?traffic_source=rss",
-      "date": "July 9, 2026",
-      "description": "Democrats are scrambling to field a candidate as popular as Platner to clinch Maine in the midterms."
-    },
-    {
-      "title": "EU lawmakers call for probe into FIFA’s Infantino",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/9/eu-lawmakers-call-for-probe-into-fifas-infantino?traffic_source=rss",
-      "date": "July 9, 2026",
-      "description": "EU lawmakers call for probe into FIFA’s Infantino"
-    },
-    {
-      "title": "Indonesian farmer goes viral using a drone as transportation",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/9/indonesian-farmer-goes-viral-using-a-drone-as-transportation?traffic_source=rss",
-      "date": "July 9, 2026",
-      "description": "Indonesian farmer goes viral using a drone as transportation"
-    },
-    {
-      "title": "Trump targets Spain, NATO backs Ukraine: Is the alliance still united?",
-      "url": "https://www.aljazeera.com/news/2026/7/9/trump-targets-spain-nato-backs-ukraine-is-the-alliance-still-united?traffic_source=rss",
-      "date": "July 9, 2026",
-      "description": "While NATO members have agreed to boost defence spending, Trump&#039;s attacks on Spain and Greenland have threatened unity."
-    },
-    {
-      "title": "Mosque model placed on top of Northern Ireland bonfire",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/9/mosque-model-placed-on-top-of-northern-ireland-bonfire?traffic_source=rss",
-      "date": "July 9, 2026",
-      "description": "Pro-UK loyalists in Northern Ireland have placed a replica mosque at the top of a bonfire, which is due to be lit."
     }
   ]
 }
