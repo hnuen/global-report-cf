@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-09T16:08:26.847Z",
+  "updatedAt": "2026-07-09T17:08:29.734Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260708",
@@ -2848,6 +2848,24 @@
   ],
   "ajNews": [
     {
+      "title": "Will NATO get involved in securing Strait of Hormuz?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/7/9/will-nato-get-involved-in-securing-strait-of-hormuz?traffic_source=rss",
+      "date": "July 9, 2026",
+      "description": "Iran war overshadows defence alliance&#039;s summit in Turkiye."
+    },
+    {
+      "title": "A quest for closure: In search of the missing after Venezuela’s earthquakes",
+      "url": "https://www.aljazeera.com/features/longform/2026/7/9/a-quest-for-closure-in-search-of-the-missing-after-venezuelas-earthquakes?traffic_source=rss",
+      "date": "July 9, 2026",
+      "description": "Tens of thousands of people remain unaccounted for nearly two weeks after a pair of deadly earthquakes struck the coast."
+    },
+    {
+      "title": "Chemical weapons watchdog restores Syria’s voting rights, citing progress",
+      "url": "https://www.aljazeera.com/news/2026/7/9/chemical-weapons-watchdog-restores-syrias-voting-rights-citing-progress?traffic_source=rss",
+      "date": "July 9, 2026",
+      "description": "Syria regains voting rights in the OPCW as new leadership makes progress in addressing chemical weapons issues."
+    },
+    {
       "title": "Strait of Hormuz: What has happened since the US-Iran MoU on June 17?",
       "url": "https://www.aljazeera.com/news/2026/7/9/strait-of-hormuz-what-has-happened-since-the-us-iran-mou-on-june-17?traffic_source=rss",
       "date": "July 9, 2026",
@@ -2870,24 +2888,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/9/mediator-pakistan-says-renewed-us-iran-conflict-is-in-no-ones-interest?traffic_source=rss",
       "date": "July 9, 2026",
       "description": "Islamabad urges both sides to honour their MoU as renewed attacks raise fears of a wider regional conflict."
-    },
-    {
-      "title": "Deadly US strikes trigger Iranian attacks on Gulf states",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/9/deadly-us-strikes-trigger-iranian-attacks-on-gulf-states?traffic_source=rss",
-      "date": "July 9, 2026",
-      "description": "The US military says it has struck 90 targets in Iran. Iran says it sent drone strikes on US-linked sites in the Gulf."
-    },
-    {
-      "title": "Iran prepares to bury slain leader Khamenei after mass funeral processions",
-      "url": "https://www.aljazeera.com/news/2026/7/9/iran-prepares-to-bury-slain-leader-khamenei-after-mass-funeral-ceremonies?traffic_source=rss",
-      "date": "July 9, 2026",
-      "description": "The late supreme leader will be buried in his hometown, the eastern holy city of Mashhad."
-    },
-    {
-      "title": "US strikes Iran for second night – is the peace process all over now?",
-      "url": "https://www.aljazeera.com/news/2026/7/9/us-strikes-iran-for-second-night-is-the-peace-process-all-over-now?traffic_source=rss",
-      "date": "July 9, 2026",
-      "description": "Neither side has officially called off the interim peace agreement, despite the escalation."
     }
   ],
   "occNews": [
@@ -2987,7 +2987,7 @@
   ],
   "regionsNews": [
     {
-      "title": "Big drop in oil, gas and cargo ships crossing Strait of Hormuz after new strikes",
+      "title": "Big fall in oil, gas and cargo ships taking US-backed Hormuz route after new strikes",
       "url": "https://www.bbc.co.uk/news/articles/c621k5r8764o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 9, 2026",
       "description": "Data shows a decline in the number of ships - many carrying oil and gas - going through the waterway after attacks this week."
@@ -2999,16 +2999,16 @@
       "description": "The decision came days after a woman accused him of sexual assault, an accusation he says is \"categorically false\"."
     },
     {
+      "title": "Greek F-16 fighter jet crash-lands at busy Zakynthos airport",
+      "url": "https://www.bbc.co.uk/news/articles/czrxz18720eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 9, 2026",
+      "description": "The runway is closed after the jet reportedly landed without deploying its landing gear before bursting into flames."
+    },
+    {
       "title": "Ex-Olympian pleads not guilty to Reflecting Pool vandalism charges",
       "url": "https://www.bbc.co.uk/news/articles/c78y013ny3eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 9, 2026",
       "description": "A former US Olympian canoeist denies accusations that he deliberately damaged the lining of the refurbished Lincoln Memorial Reflecting Pool."
-    },
-    {
-      "title": "Factory fire kills at least 28 in China's 'shoe capital'",
-      "url": "https://www.bbc.co.uk/news/articles/cx2vz51v2pjo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 9, 2026",
-      "description": "Footage shows huge flames rising from a building and thick, black smoke rising into the sky."
     },
     {
       "title": "Starmer gifted gun and ammunition by Turkish president at Nato",
@@ -3039,6 +3039,12 @@
       "url": "https://www.bbc.co.uk/news/articles/c1wyx7g9e1do?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 8, 2026",
       "description": "The Super Bowl-style show marks the Canadian singer's latest big performance after his comeback shows at Coachella."
+    },
+    {
+      "title": "Factory fire kills at least 28 in China's 'shoe capital'",
+      "url": "https://www.bbc.co.uk/news/articles/cx2vz51v2pjo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 9, 2026",
+      "description": "Footage shows huge flames rising from a building and thick, black smoke rising into the sky."
     },
     {
       "title": "International court tells BBC of breakthrough in Sudan war crimes probe",
@@ -3111,18 +3117,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c20ylnn8wqgo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 9, 2026",
       "description": "Along with creating tumult in a must-win race for Democrats, Graham Platner's exit is laying bare division between the party's left wing and moderates."
-    },
-    {
-      "title": "Nato chief tells BBC that Trump comments are like 'family argument'",
-      "url": "https://www.bbc.co.uk/news/articles/c98205r7dylo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 8, 2026",
-      "description": "Mark Rutte says Nato is stronger than ever, and that he is 100% convinced of the US president's commitment to the alliance."
-    },
-    {
-      "title": "The Pitt leads Emmy nominations, but Stranger Things snubbed in top categories",
-      "url": "https://www.bbc.co.uk/news/articles/ceqde3zr399o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 8, 2026",
-      "description": "The Pitt and Hacks lead the race for America's most coveted TV awards - see the full list of nominations."
     },
     {
       "title": "Watch: Nato chief asked if there really is 'unity' in Nato",
@@ -3467,6 +3461,24 @@
       "description": "Linzi checks in on 89-year-old Margaret's battle to get her landline reconnected."
     },
     {
+      "title": "Is this France’s far-right National Rally’s best chance to take power?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/7/9/is-this-frances-far-right-national-rallys-best-chance-to-take-power?traffic_source=rss",
+      "date": "July 9, 2026",
+      "description": "A court ruling clears the way for Marine Le Pen to run for president next year."
+    },
+    {
+      "title": "LIVE: France vs Morocco – FIFA World Cup 2026 quarterfinal",
+      "url": "https://www.aljazeera.com/sports/liveblog/2026/7/9/live-france-vs-morocco-fifa-world-cup-2026-quarterfinal?traffic_source=rss",
+      "date": "July 9, 2026",
+      "description": "Live coverage, text updates and build-up from our full text commentary stream as Mbappe&#039;s France face Morocco."
+    },
+    {
+      "title": "Former US Olympian pleads not guilty in DC reflecting pool vandalism case",
+      "url": "https://www.aljazeera.com/news/2026/7/9/former-us-olympian-pleads-not-guilty-in-dc-reflecting-pool-vandalism-case?traffic_source=rss",
+      "date": "July 9, 2026",
+      "description": "Former Olympic canoeist David Hearn denies damaging Donald Trump’s Washington, DC reflecting pool renovation."
+    },
+    {
       "title": "Lebanon Latest: concerns about latest escalation in regional fighting",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/9/lebanon-latest-concerns-about-latest-escalation-in-regional-fighting-2?traffic_source=rss",
       "date": "July 9, 2026",
@@ -3555,24 +3567,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/9/india-floods-sweep-away-thousands-of-gas-cylinders?traffic_source=rss",
       "date": "July 9, 2026",
       "description": "India floods sweep away thousands of gas cylinders"
-    },
-    {
-      "title": "Watch World Cup Preview: Morocco plays France in quarterfinal opener",
-      "url": "https://www.aljazeera.com/video/2026/7/9/video-world-cup-2026-highlights?traffic_source=rss",
-      "date": "July 9, 2026",
-      "description": "Latest match highlights, reaction and previews from the FIFA World Cup 2026 in North America."
-    },
-    {
-      "title": "UN probe finds mass killings, gang rapes by Sudan’s RSF amount to genocide",
-      "url": "https://www.aljazeera.com/news/2026/7/9/un-probe-finds-mass-killings-gang-rapes-by-sudans-rsf-amount-to-genocide?traffic_source=rss",
-      "date": "July 9, 2026",
-      "description": "UN Fact-Finding Mission found that the paramilitary&#039;s systematic campaign of violence in Darfur amounted to genocide."
-    },
-    {
-      "title": "Australia to begin selling uranium to India for peaceful purposes",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/9/australia-to-begin-selling-uranium-to-india-for-peaceful-purposes?traffic_source=rss",
-      "date": "July 9, 2026",
-      "description": "Australia to begin selling uranium to India for peaceful purposes"
     }
   ]
 }
