@@ -4,18 +4,19 @@
  * A Redis-backed store of enriched articles that persists across refreshes.
  * After each refresh, newly-enriched articles (with real Gemini briefs) are
  * merged in.  The orchestrator loads the library at startup and uses it for
- * historical backfill, so the date-filter in the UI always returns articles
- * with full summaries regardless of when they were originally scraped.
+ * historical display, so the app shows accumulated articles across all sections
+ * for up to 6 months.
  *
- * Storage: Upstash Redis, key "app:article-library:v1", TTL 90 days.
- * Size cap: 500 articles (oldest trimmed first when cap is reached).
+ * Storage: Upstash Redis, key "app:article-library:v1", TTL 180 days.
+ * Size cap: 50 articles per section (300 total across 6 sections).
  */
 
 import type { Article } from "./types";
 
-const LIBRARY_KEY = "app:article-library:v1";
-const LIBRARY_TTL = 90 * 24 * 3600; // 90 days in seconds
-const MAX_SIZE    = 500;
+const LIBRARY_KEY     = "app:article-library:v1";
+const LIBRARY_TTL     = 180 * 24 * 3600; // 6 months in seconds
+const MAX_PER_SECTION = 150;             // cap per section (~6 months at OFAC publish frequency)
+const SIX_MONTHS_MS   = 180 * 24 * 60 * 60 * 1000;
 
 // ── Upstash REST helpers (direct — StorageManager only exposes load/save Briefing) ──
 
@@ -90,6 +91,13 @@ function headlineKey(headline: string): string {
   return headline.slice(0, 80).toLowerCase().replace(/\s+/g, " ").trim();
 }
 
+/** True if the article's date is within the 6-month retention window */
+function isWithinRetention(article: Article): boolean {
+  const t = Date.parse(article.date || "");
+  if (isNaN(t)) return true; // undated articles — keep
+  return Date.now() - t <= SIX_MONTHS_MS;
+}
+
 export async function loadArticleLibrary(): Promise<Article[]> {
   try {
     const raw = await redisGet(LIBRARY_KEY);
@@ -100,8 +108,11 @@ export async function loadArticleLibrary(): Promise<Article[]> {
 }
 
 export async function saveArticlesToLibrary(newArticles: Article[]): Promise<void> {
-  // Only save articles with real briefs
-  const candidates = newArticles.filter(hasRealBrief);
+  // Accept real-brief OR government-source articles (gov sources are always authoritative)
+  const GOV_SOURCES = ["OFAC","FinCEN","BIS","OCC","Federal Reserve","OFSI","EU Council","EU Commission","U.S. Treasury","Federal Register","UN Security"];
+  const candidates = newArticles.filter(a =>
+    hasRealBrief(a) || GOV_SOURCES.some(s => (a.source ?? "").includes(s))
+  );
   if (candidates.length === 0) return;
 
   // Load existing library
@@ -118,11 +129,32 @@ export async function saveArticlesToLibrary(newArticles: Article[]): Promise<voi
     }
   }
 
-  // Sort by date descending, trim to MAX_SIZE
-  const merged = [...map.values()]
-    .sort((a, b) => (b.date || "").localeCompare(a.date || ""))
-    .slice(0, MAX_SIZE);
+  // Apply 6-month retention filter
+  const retained = [...map.values()].filter(isWithinRetention);
+
+  // Cap at MAX_PER_SECTION per section — sort newest first within each section
+  const SECTIONS = ["sanctions","economics","regions","occ","penalties","bis"] as const;
+  const bySection = new Map<string, Article[]>();
+  for (const a of retained) {
+    const sec = a.section ?? "sanctions";
+    const list = bySection.get(sec) ?? [];
+    list.push(a);
+    bySection.set(sec, list);
+  }
+  const merged: Article[] = [];
+  for (const sec of SECTIONS) {
+    const list = (bySection.get(sec) ?? [])
+      .sort((a, b) => (b.date || "").localeCompare(a.date || ""))
+      .slice(0, MAX_PER_SECTION);
+    merged.push(...list);
+  }
+  // Also keep articles from sections not in the standard list
+  for (const [sec, list] of bySection) {
+    if (!(SECTIONS as readonly string[]).includes(sec)) {
+      merged.push(...list.slice(0, MAX_PER_SECTION));
+    }
+  }
 
   await redisSet(LIBRARY_KEY, JSON.stringify(merged), LIBRARY_TTL);
-  console.log(`[article-library] Saved ${merged.size ?? merged.length} articles (${candidates.length} new)`);
+  console.log(`[article-library] Saved ${merged.length} articles total (${candidates.length} new/updated)`);
 }
