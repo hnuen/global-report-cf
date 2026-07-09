@@ -131,7 +131,7 @@ export class NotifierManager {
     };
 
     const channels   = this.configured();
-    const strategy   = process.env.NOTIFIER_STRATEGY ?? "first-success";
+    const strategy   = process.env.NOTIFIER_STRATEGY ?? "all";
     const maxPerRun  = Number(process.env.ALERT_MAX_PER_RUN ?? 3);
     // Default raised from 360 (6h) to 10080 (7 days) — kept in sync with the
     // same env var's default in app/api/monitor/route.ts. See the comment
