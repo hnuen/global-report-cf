@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-10T19:38:25.503Z",
+  "updatedAt": "2026-07-10T20:08:23.877Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260710",
@@ -2821,7 +2821,14 @@
       "description": "These new measures aim at further increasing the pressure on Russia and Belarus and supporting EU's goal of achieving a just and lasting peace for Ukraine."
     }
   ],
-  "unNotices": [],
+  "unNotices": [
+    {
+      "title": "UN Watchdog ‘Lost Continuity of Knowledge’ on Iran Nuclear Programme, Security Council Told amid Dispute over Sanctions",
+      "url": "https://press.un.org/en/2026/sc16409.doc.htm",
+      "date": "July 10, 2026",
+      "description": "Following the collapse of the 2015 Iran nuclear deal and the region’s chaotic recent military escalations, the United Nations dedicated nuclear agency has “lost continuity of knowledge” about the Iranian nuclear programme it was once tasked with overseeing, the Security Council heard today, in a briefing by the Organization’s senior political affairs officer."
+    }
+  ],
   "bbcNews": [
     {
       "title": "Ukraine strikes Russian ships near Crimea, escalating attacks on fuel supplies",
@@ -2844,16 +2851,22 @@
   ],
   "ajNews": [
     {
+      "title": "Why are politicians and sanctioned states embracing crypto?",
+      "url": "https://www.aljazeera.com/video/counting-the-cost/2026/7/10/why-is-the-cryptocurrency-market-slumping?traffic_source=rss",
+      "date": "July 10, 2026",
+      "description": "Bitcoin is falling, yet cryptocurrency is spreading beyond investing into politics, sanctions and global finance."
+    },
+    {
       "title": "Can the agreement between Iran and the US be rescued?",
       "url": "https://www.aljazeera.com/video/inside-story/2026/7/10/can-the-agreement-between-iran-and-the-us-be-rescued?traffic_source=rss",
       "date": "July 10, 2026",
       "description": "Latest attacks jeopardise ceasefire and memorandum of understanding."
     },
     {
-      "title": "Russian attacks kill four as Ukraine continues to target oil infrastructure",
+      "title": "Russian attacks kill five as Ukraine continues to target oil infrastructure",
       "url": "https://www.aljazeera.com/news/2026/7/10/russian-attacks-kill-four-as-ukraine-continues-to-target-oil-infrastructure?traffic_source=rss",
       "date": "July 10, 2026",
-      "description": "Ukrainian official says Russia&#039;s attack on Kramatorsk kills four, including a teenager, and injures nine."
+      "description": "Ukrainian officials say Russia&#039;s attack on Kramatorsk kills four, while a strike on Zaporizhzhia kills one."
     },
     {
       "title": "Trump hints at further Iran negotiations after exchange of fire over Hormuz",
@@ -3391,6 +3404,12 @@
       "description": "Shoppers hit by hidden fees"
     },
     {
+      "title": "Egypt World Cup team return home to hero’s welcome after historic run",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/10/egypt-world-cup-team-return-home-to-heros-welcome-after-historic-run?traffic_source=rss",
+      "date": "July 10, 2026",
+      "description": "Egypt’s squad has returned home to a hero’s welcome following their controversial exit from the World Cup."
+    },
+    {
       "title": "What happened at France v Morocco",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/10/what-happened-at-france-v-morocco?traffic_source=rss",
       "date": "July 10, 2026",
@@ -3415,7 +3434,7 @@
       "description": "Morocco were eliminated from the 2026 World Cup by a 2-0 defeat by France in the quarterfinals, but host next edition."
     },
     {
-      "title": "Clinical Sinner demolishes Djokovic to set up Wimbledon final with Zverev",
+      "title": "Sinner demolishes Djokovic to set up Wimbledon final with Zverev",
       "url": "https://www.aljazeera.com/sports/2026/7/10/clinical-sinner-demolishes-djokovic-to-set-up-wimbledon-final-with-zverev?traffic_source=rss",
       "date": "July 10, 2026",
       "description": "Sinner is targeting his fifth Grand Slam title, which would bring him within two of the tally of rival Carlos Alcaraz."
@@ -3503,18 +3522,6 @@
       "url": "https://www.aljazeera.com/features/2026/7/10/the-search-for-gazas-missing-brings-heartbreak-and-closure-for-loved-ones?traffic_source=rss",
       "date": "July 10, 2026",
       "description": "Thousands of bodies remain trapped under the rubble of their homes in Gaza, with retrieval a long and difficult task."
-    },
-    {
-      "title": "Israeli drones strike Lebanon despite US-brokered framework deal",
-      "url": "https://www.aljazeera.com/news/2026/7/10/israeli-drones-strike-lebanon-despite-us-brokered-framework-deal?traffic_source=rss",
-      "date": "July 10, 2026",
-      "description": "The latest strikes reportedly injure two, as Amnesty urges probe into earlier Israeli attacks which killed 24 civilians."
-    },
-    {
-      "title": "Super typhoon as wide as France heads to East Asia",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/10/super-typhoon-as-wide-as-france-heads-to-east-asia?traffic_source=rss",
-      "date": "July 10, 2026",
-      "description": "As Super Typhoon Bavi approaches, residents in Taiwan, Japan and China have been stockpiling supplies."
     }
   ]
 }
