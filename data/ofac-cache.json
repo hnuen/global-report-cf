@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-07-10T14:08:21.096Z",
+  "updatedAt": "2026-07-10T14:38:25.526Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260710",
+      "code": "20260710",
+      "title": "Issuance of Democratic Republic of the Congo-related General License",
+      "date": "July 10, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260708",
       "code": "20260708",
@@ -53,12 +59,6 @@
       "url": "https://ofac.treasury.gov/recent-actions/20260625_33",
       "code": "20260625_33",
       "title": "Issuance of Venezuela-related General License",
-      "date": "June 25, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260625",
-      "code": "20260625",
-      "title": "Democratic Republic of the Congo-related Designations; Issuance of Amended Russia-related General License and Frequently Asked Questions",
       "date": "June 25, 2026"
     }
   ],
@@ -735,7 +735,7 @@
     "democratic-republic-of-the-congo-related-sanctions": {
       "name": "Democratic Republic of the Congo-Related Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/democratic-republic-of-the-congo-related-sanctions",
-      "lastUpdated": "Jun 25, 2026",
+      "lastUpdated": "Jul 10, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -753,7 +753,15 @@
           "glNumbers": []
         }
       ],
-      "generalLicenses": []
+      "generalLicenses": [
+        {
+          "number": "2",
+          "title": "Democratic Republic of the Congo General License 2",
+          "date": "July 10, 2026",
+          "expires": "",
+          "url": "https://ofac.treasury.gov/media/936441/download?inline"
+        }
+      ]
     },
     "ethiopia": {
       "name": "Ethiopia-Related Sanctions",
@@ -3412,6 +3420,12 @@
       "description": "Shoppers hit by hidden fees"
     },
     {
+      "title": "Super typhoon as wide as France heads to East Asia",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/10/super-typhoon-as-wide-as-france-heads-to-east-asia?traffic_source=rss",
+      "date": "July 10, 2026",
+      "description": "As Super Typhoon Bavi approaches, residents in Taiwan, Japan and China have been stockpiling supplies."
+    },
+    {
       "title": "Ukrainian court detains alleged killers of Monaco bomb attack suspect",
       "url": "https://www.aljazeera.com/news/2026/7/10/ukrainian-court-detains-alleged-killers-of-monaco-bomb-attack-suspect?traffic_source=rss",
       "date": "July 10, 2026",
@@ -3530,12 +3544,6 @@
       "url": "https://www.aljazeera.com/video/2026/7/10/video-world-cup-2026-highlights?traffic_source=rss",
       "date": "July 10, 2026",
       "description": "Latest match highlights, reaction and previews from the FIFA World Cup 2026 in North America."
-    },
-    {
-      "title": "Degree but no job: The battle against unemployment in Gaza",
-      "url": "https://www.aljazeera.com/features/2026/7/10/degree-but-no-job-the-battle-against-unemployment-in-gaza?traffic_source=rss",
-      "date": "July 10, 2026",
-      "description": "Gaza&#039;s young graduates face sky-high unemployment as Israel&#039;s war devastates job market."
     }
   ]
 }
