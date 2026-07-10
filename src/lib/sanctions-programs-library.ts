@@ -210,12 +210,14 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
     id: "drc",
     name: "Democratic Republic of the Congo-Related Sanctions",
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/democratic-republic-of-the-congo-related-sanctions",
-    region: "MEA", category: "country", lastUpdated: "Apr 30, 2026", status: "active",
+    region: "MEA", category: "country", lastUpdated: "Jul 10, 2026", status: "active",
     executiveOrders: [
       { number: "13671", title: "Taking Additional Steps to Address the National Emergency With Respect to the Conflict in the Democratic Republic of the Congo", date: "July 8, 2014", url: "https://ofac.treasury.gov/media/7656/download?inline" },
       { number: "13413", title: "Blocking Property of Certain Persons Contributing to the Conflict in the Democratic Republic of the Congo", date: "October 27, 2006", url: "https://ofac.treasury.gov/media/7651/download?inline" },
     ],
-    generalLicenses: [],
+    generalLicenses: [
+      { number: "GL 2", title: "Democratic Republic of the Congo General License 2", date: "July 10, 2026", url: "https://ofac.treasury.gov/media/936441/download?inline", addedDate: "July 10, 2026" },
+    ],
     keyAdvisories: [
       { title: "Rwanda Defence Force and DRC M23 Designations", date: "March 2, 2026", url: "https://home.treasury.gov/news/press-releases/sb0411" },
     ],
