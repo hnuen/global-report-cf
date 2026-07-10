@@ -1,10 +1,16 @@
 {
-  "updatedAt": "2026-07-10T18:08:25.774Z",
+  "updatedAt": "2026-07-10T18:38:36.098Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260710",
       "code": "20260710",
       "title": "Issuance of Democratic Republic of the Congo-related General License",
+      "date": "July 10, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260710_33",
+      "code": "20260710_33",
+      "title": "Iran-related and Counter Terrorism Designations; Issuance of Iran-related General License",
       "date": "July 10, 2026"
     },
     {
@@ -54,12 +60,6 @@
       "code": "20260626",
       "title": "Sudan-related Designations",
       "date": "June 26, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260625_33",
-      "code": "20260625_33",
-      "title": "Issuance of Venezuela-related General License",
-      "date": "June 25, 2026"
     }
   ],
   "civilPenalties": [
@@ -376,7 +376,7 @@
     "counter-terrorism-sanctions": {
       "name": "Counter Terrorism Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-terrorism-sanctions",
-      "lastUpdated": "Jul 01, 2026",
+      "lastUpdated": "Jul 10, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -615,11 +615,11 @@
           "url": "https://ofac.treasury.gov/media/935641/download?inline"
         },
         {
-          "number": "X",
-          "title": "Iran General License X",
+          "number": "X1",
+          "title": "Iran General License X1",
           "date": "April 17, 2026",
-          "expires": "August 21, 2026",
-          "url": "https://ofac.treasury.gov/media/936206/download?inline"
+          "expires": "July 17, 2026",
+          "url": "https://ofac.treasury.gov/media/936446/download?inline"
         }
       ]
     },
@@ -909,7 +909,7 @@
     "iran-sanctions": {
       "name": "Iran Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions",
-      "lastUpdated": "Jul 07, 2026",
+      "lastUpdated": "Jul 10, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -3007,40 +3007,16 @@
       "description": "Wells' body was found in the water near Mississippi's Horn Island days after he went on a boating trip there with friends."
     },
     {
+      "title": "Superb Sinner ends Djokovic's latest bid for history",
+      "url": "https://www.bbc.co.uk/sport/tennis/articles/c04y0pyqk6zo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 10, 2026",
+      "description": "Jannik Sinner produces a devastating display to end Novak Djokovic's latest bid for history and set up a Wimbledon final against Alexander Zverev."
+    },
+    {
       "title": "Chip giant SK Hynix raises $26.5bn as shares surge in bumper US listing",
       "url": "https://www.bbc.co.uk/news/articles/c4gym70r0y4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 10, 2026",
       "description": "The shares surged as much as 17% in their Nasdaq trading debut on Friday following the record-breaking foreign listing."
-    },
-    {
-      "title": "Democrat Graham Platner suspends campaign for key US Senate race after assault allegation",
-      "url": "https://www.bbc.co.uk/news/articles/c9v229434p2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 9, 2026",
-      "description": "The decision came days after a woman accused him of sexual assault, an accusation he says is \"categorically false\"."
-    },
-    {
-      "title": "Greek F-16 fighter jet crash-lands at busy Zakynthos airport",
-      "url": "https://www.bbc.co.uk/news/articles/czrxz18720eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 9, 2026",
-      "description": "The runway is closed after the jet reportedly landed without deploying its landing gear before bursting into flames."
-    },
-    {
-      "title": "Ukrainian agent accused of murdering Monaco bomb suspect changes story",
-      "url": "https://www.bbc.co.uk/news/articles/cpv3e8y39j7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 9, 2026",
-      "description": "Two men with links to Ukraine's security services are accused of killing Anastasiia Berezovska and dumping her body in woods."
-    },
-    {
-      "title": "Palestinians mourn Gaza World Cup screenings organiser killed in Israeli strike",
-      "url": "https://www.bbc.co.uk/news/articles/cwylznzjk04o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 9, 2026",
-      "description": "Aid worker Mohammed al-Wahidi had become a prominent humanitarian figure during the Israel-Hamas war."
-    },
-    {
-      "title": "Ex-Olympian pleads not guilty to Reflecting Pool vandalism charges",
-      "url": "https://www.bbc.co.uk/news/articles/c78y013ny3eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 9, 2026",
-      "description": "A former US Olympian canoeist denies accusations that he deliberately damaged the lining of the refurbished Lincoln Memorial Reflecting Pool."
     },
     {
       "title": "How an app in South Korea will let victims track their stalkers",
@@ -3409,6 +3385,18 @@
       "description": "Shoppers hit by hidden fees"
     },
     {
+      "title": "UK police arrest man suspected of murdering former MP Ann Widdecombe",
+      "url": "https://www.aljazeera.com/news/2026/7/10/uk-police-arrest-man-suspected-of-murdering-former-mp-ann-widdecombe?traffic_source=rss",
+      "date": "July 10, 2026",
+      "description": "Reform UK politician Widdecombe, 78, was found dead at her home on Thursday with serious injuries."
+    },
+    {
+      "title": "Peru’s President-elect Fujimori says she wants to restore ties with Mexico",
+      "url": "https://www.aljazeera.com/news/2026/7/10/perus-president-elect-fujimori-says-she-wants-to-restore-ties-with-mexico?traffic_source=rss",
+      "date": "July 10, 2026",
+      "description": "Keiko Fujimori has &#039;every intention&#039; of ending months-long rift with Mexico over its political asylum decisions."
+    },
+    {
       "title": "Hospital workers wounded in Israeli drone attack on Gaza’s Kamal Adwan",
       "url": "https://www.aljazeera.com/news/2026/7/10/hospital-workers-wounded-in-israeli-drone-attack-on-gazas-kamal-adwan?traffic_source=rss",
       "date": "July 10, 2026",
@@ -3527,18 +3515,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/10/philippines-landslides-kill-15-as-typhoon-bavi-threatens-region?traffic_source=rss",
       "date": "July 10, 2026",
       "description": "Typhoon Bavi is intensifying seasonal monsoon rains across the region as it moves towards Taiwan and China."
-    },
-    {
-      "title": "Paramount-Warner merger: could it reshape the media?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/10/paramount-warner-merger-could-it-reshape-the-media?traffic_source=rss",
-      "date": "July 10, 2026",
-      "description": "The UK is considering intervening in the Paramount-Warner merger over concerns about media plurality."
-    },
-    {
-      "title": "First Palestinian legislative elections in 20 years announced",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/10/first-palestinian-legislative-elections-in-20-years-announced?traffic_source=rss",
-      "date": "July 10, 2026",
-      "description": "First Palestinian legislative elections in 20 years announced"
     }
   ]
 }
