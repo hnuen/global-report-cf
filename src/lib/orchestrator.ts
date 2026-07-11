@@ -144,10 +144,14 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
     console.warn("[orchestrator] GitHub OFAC cache fetch failed (non-fatal):", String(e).slice(0, 80));
   }
 
-  // ── Library backfill — persisted Gemini-enriched articles ─────────────────
-  // Use library articles to supplement sections that still have < 8 articles,
-  // preferring library over static HISTORICAL since library briefs are Gemini-quality.
+  // ── Library accumulation — persist articles across refreshes (up to 50/section, 6 months) ─────
+  // Merge ALL library articles (not just backfill-to-8) so each section accumulates
+  // up to 50 articles. The UI shows 15 by default with a "show more" toggle.
   if (libraryArticles.length > 0) {
+    const SIX_MONTHS_MS = 180 * 24 * 60 * 60 * 1000;
+    const retentionCutoff = Date.now() - SIX_MONTHS_MS;
+    const MAX_PER_SECTION = 50;
+
     const liveHeadlines = new Set(
       briefing.articles.map(a => a.headline.slice(0, 80).toLowerCase().replace(/\s+/g, " ").trim())
     );
@@ -155,20 +159,28 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
     for (const a of libraryArticles) {
       const key = a.headline.slice(0, 80).toLowerCase().replace(/\s+/g, " ").trim();
       if (liveHeadlines.has(key)) continue; // already in live briefing
+      // Apply 6-month retention filter
+      const t = Date.parse(a.date || "");
+      if (!isNaN(t) && Date.now() - t > SIX_MONTHS_MS) continue;
       const list = libraryBySection.get(a.section) ?? [];
       list.push(a);
       libraryBySection.set(a.section, list);
     }
+    let totalAdded = 0;
     for (const sec of SECTIONS) {
-      const currentCount = briefing.articles.filter(a => a.section === sec).length;
-      if (currentCount < 8) {
-        const candidates = (libraryBySection.get(sec) ?? []).slice(0, 8 - currentCount);
-        if (candidates.length > 0) {
-          briefing.articles = [...briefing.articles, ...candidates];
-          console.log(`[orchestrator] Added ${candidates.length} library articles to ${sec}`);
-        }
+      const freshCount = briefing.articles.filter(a => a.section === sec).length;
+      const slots = MAX_PER_SECTION - freshCount;
+      if (slots <= 0) continue;
+      // Sort library articles newest-first before slicing
+      const libForSec = (libraryBySection.get(sec) ?? [])
+        .sort((a, b) => (b.date || "").localeCompare(a.date || ""))
+        .slice(0, slots);
+      if (libForSec.length > 0) {
+        briefing.articles = [...briefing.articles, ...libForSec];
+        totalAdded += libForSec.length;
       }
     }
+    if (totalAdded > 0) console.log(`[orchestrator] Added ${totalAdded} library articles for retention display`);
   }
 
   // ── Per-source official backfill ─────────────────────────────────────────
@@ -293,6 +305,11 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
       briefing = result.briefing;
       usedProvider = result.usedProvider;
       console.log(`[orchestrator] LLM succeeded (${usedProvider})`);
+      // Save Gemini articles to the persistent library so they accumulate over time
+      // (the enrichment path below only saves structured-source articles, not LLM ones)
+      saveArticlesToLibrary(briefing.articles).catch(e =>
+        console.log("[orchestrator] Library save (LLM) failed (non-fatal):", String(e).slice(0, 80))
+      );
     } catch (llmError) {
       const reason = String(llmError).slice(0, 120);
       console.log("[orchestrator] LLM unavailable — keeping structured briefing:", reason);

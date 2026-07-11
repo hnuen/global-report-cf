@@ -29,6 +29,7 @@ export async function GET() {
   try {
     const briefing = await loadBriefing();
     const data = briefing ?? SEED_DATA;
+
     // Merge 6-month article library so historical articles survive full
     // briefing replacements (merge=false Gemini runs wipe current articles).
     try {

@@ -141,14 +141,6 @@ function parseSanctionsProgram(html) {
     let numMatch = new RegExp(`(?:General\\s+License|GL)\\s+(?:No\\.?\\s*)?([A-Z])[${DASH}](\\d+)\\b`, "i").exec(linkText);
     let designator = numMatch ? `${numMatch[1]}-${numMatch[2]}` : null;
     if (!designator) {
-      // Letter-immediately-followed-by-digit (e.g. "General License X1", "GL D2").
-      // MUST be tried before the generic numeric regex below — that regex uses
-      // [^#\d]* which eats the leading letter and then captures only the trailing
-      // digit, turning "X1" into "1". This step catches [A-Z]\d+ patterns first.
-      numMatch = /(?:General\s+License|GL)\s+(?:No\.?\s*)?([A-Z]\d+)\b/i.exec(linkText);
-      designator = numMatch ? numMatch[1].toUpperCase() : null;
-    }
-    if (!designator) {
       // Numeric-style designators (e.g. "General License 8M") — this is the
       // common case across most programs.
       numMatch = /(?:General\s+License|GL)[^#\d]*#?\s*(?:No\.?\s*)?(\d+[A-Z]?)/i.exec(linkText);
@@ -1011,24 +1003,29 @@ function buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices = [], 
     occSourceUrls.add(entry.url);
   }
   // Pad with recent historical OCC articles when RSS feed is sparse (OCC publishes monthly batches).
+  // Prevents this briefing path from overwriting a richer orchestrator-built Redis briefing with
+  // only 1 article between monthly enforcement-action releases.
   const OCC_HISTORICAL = [
     { date: "June 18, 2026", headline: "OCC Announces Enforcement Actions for June 2026",
-      body: ["The OCC released its June 2026 enforcement actions covering consent orders, formal agreements, and civil money penalties against federally regulated banks. The monthly release is the primary mechanism through which the OCC publicizes supervisory actions taken during the prior month."],
+      body: ["The OCC released its June 2026 enforcement actions covering consent orders, formal agreements, and civil money penalties against federally regulated banks and thrifts. The monthly release is the primary mechanism through which the OCC publicizes supervisory actions taken during the prior month."],
       sourceUrl: "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-57.html" },
-    { date: "May 1, 2026", headline: "OCC Releases May 2026 Enforcement Actions — Three Terminations, AI Model Risk Remains Top Priority",
-      body: ["The OCC released its May 2026 enforcement actions, including termination of formal agreements with Axiom Bank and Cenlar Federal Savings Bank. The OCC confirmed AI model risk governance remains its top examination priority for 2026.", "Updated model risk management guidance was issued jointly with the Federal Reserve and FDIC on April 17, 2026."],
+    { date: "May 1, 2026", headline: "OCC Releases May 2026 Enforcement Actions — Three Terminations, AI Model Risk Remains Top Supervisory Priority",
+      body: ["The OCC released its May 2026 enforcement actions, including termination of the formal agreement with Axiom Bank, and consent order termination for Cenlar Federal Savings Bank. The OCC confirmed AI model risk governance remains its top examination priority for 2026.", "Updated model risk management guidance was issued jointly with the Federal Reserve and FDIC on April 17, 2026. The guidance aims to tailor the supervisory framework to reduce unnecessary burden while promoting risk-based examination across institutions of all sizes."],
       sourceUrl: "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-40.html" },
-    { date: "April 16, 2026", headline: "OCC Consent Order Against Federal Savings Bank Chicago — $10.8B in VA Loans, Deceptive Marketing",
-      body: ["The OCC issued a consent order against The Federal Savings Bank of Chicago for deceptive marketing of VA-backed cash-out refinance loans to military service members between 2022 and 2024. The bank originated $10.8 billion in loans covering 30,361 transactions."],
+    { date: "April 16, 2026", headline: "OCC Consent Order Against Federal Savings Bank Chicago — $10.8B in VA Loans, Deceptive Marketing, Restitution Required",
+      body: ["The OCC issued a consent order against The Federal Savings Bank of Chicago for deceptive marketing of VA-backed cash-out refinance loans to military service members between 2022 and 2024. The bank originated $10.8 billion in loans covering 30,361 transactions.", "This is the bank\'s second consent order in five years. The board must engage an independent restitution consultant within 90 days."],
       sourceUrl: "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-35.html" },
     { date: "February 25, 2026", headline: "OCC Issues Proposed Rulemaking to Implement GENIUS Act on Stablecoin Regulation",
-      body: ["The OCC issued a proposed rulemaking to implement the Guiding and Establishing National Innovation for U.S. Stablecoins (GENIUS) Act, setting regulations for permitted payment stablecoin issuers under OCC jurisdiction.", "The proposed rule covers custody activities by OCC-supervised entities, establishing for the first time a comprehensive federal framework for stablecoin issuance."],
+      body: ["The OCC issued a proposed rulemaking to implement the Guiding and Establishing National Innovation for U.S. Stablecoins (GENIUS) Act. The rule sets forth regulations for permitted payment stablecoin issuers under OCC jurisdiction.", "The proposed rule covers custody activities conducted by OCC-supervised entities, establishing for the first time a comprehensive federal framework for stablecoin issuance."],
       sourceUrl: "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-9.html" },
   ];
   for (const h of OCC_HISTORICAL) {
-    if (occSourceUrls.has(h.sourceUrl)) continue;
-    articles.push({ id: id++, section: "occ", category: "OCC", region: "United States", impact: "high",
-      date: h.date, headline: h.headline, body: h.body, source: "OCC Enforcement Actions", sourceUrl: h.sourceUrl });
+    if (occSourceUrls.has(h.sourceUrl)) continue; // already from live feed
+    articles.push({
+      id: id++, section: "occ", category: "OCC", region: "United States", impact: "high",
+      date: h.date, headline: h.headline, body: h.body,
+      source: "OCC Enforcement Actions", sourceUrl: h.sourceUrl,
+    });
     occSourceUrls.add(h.sourceUrl);
   }
 
@@ -1176,6 +1173,7 @@ article is not.
 CRITICAL — NEW ACTIONS ONLY: Every article must report a NEW, SPECIFIC event that occurred recently (a new designation, a new enforcement action, a new GL, a new EO, a new penalty, a new regulatory change). Do NOT write articles about ongoing/standing sanctions regimes, background on existing programs, or general "the U.S. continues to sanction X" descriptions — those are not news. If no new action occurred in a category this week, omit it rather than writing background context.
 
 FORBIDDEN SOURCES: Never use Wikipedia, Investopedia, or other encyclopedic/reference sites as a sourceUrl. Only use primary government sources (treasury.gov, ofac.treasury.gov, federalregister.gov, bis.doc.gov, occ.gov, fincen.gov, state.gov, commerce.gov, eur-lex.europa.eu, gov.uk) or major wire services (reuters.com, apnews.com, bbc.com) as sourceUrls.
+
 Each body is an array of 2-3 full editorial paragraphs.
 Real current facts from web search only. Include real source names and URLs.
 
@@ -1415,39 +1413,35 @@ try {
   // this regex in sync with the identical NO_NEWS_PATTERN guard in
   // src/lib/alert-scorer.ts (separate runtime, can't share an import here).
   const NO_NEWS_PATTERN = /\bno new\b|\bshows no\b|\breports? no\b|\bno additions?\b|\bno changes?\b|\bnothing new\b|\bremains? unchanged\b|\bdid not add\b|\bno entries (?:were |have been )?added\b|\bno updates? (?:were |have been )?(?:made|reported)\b|\bno actions? (?:were |have been )?(?:taken|reported)\b/i;
+  // Drop "ongoing situation" background articles — not new news.
+  const BACKGROUND_PATTERN = /\bcontinues? to (?:impose|sanction|target|enforce|maintain)\b|\bremains? (?:under sanctions|subject to|in effect)\b|\bhas been (?:sanctioned|designated|subject)\b|\bongoing sanctions\b|\bstanding (?:sanctions|designation)\b/i;
+  // Forbidden source domains — strip these sourceUrls rather than blocking the article.
+  const FORBIDDEN_SOURCE_HOSTS = ["wikipedia.org", "en.wikipedia.org", "investopedia.com", "britannica.com"];
   const beforeFilter = briefing.articles.length;
-  briefing.articles = briefing.articles.filter(a => {
-    const text = `${a.headline ?? ""} ${(a.body ?? [])[0] ?? ""}`;
-    const isFiller = NO_NEWS_PATTERN.test(text);
-    if (isFiller) console.log(`[refresh-briefing] Dropped no-news filler article: "${a.headline}"`);
-    return !isFiller;
-  });
+  briefing.articles = briefing.articles
+    .map(a => {
+      // Strip forbidden sourceUrls
+      if (a.sourceUrl) {
+        try {
+          const host = new URL(a.sourceUrl).hostname.replace(/^www\./, "");
+          if (FORBIDDEN_SOURCE_HOSTS.some(d => host === d || host.endsWith("." + d))) {
+            console.log(`[refresh-briefing] Stripped forbidden sourceUrl (${host}): "${a.headline}"`);
+            a = { ...a, sourceUrl: undefined };
+          }
+        } catch {}
+      }
+      return a;
+    })
+    .filter(a => {
+      const text = `${a.headline ?? ""} ${(a.body ?? [])[0] ?? ""}`;
+      const isFiller = NO_NEWS_PATTERN.test(text);
+      const isBackground = BACKGROUND_PATTERN.test(text);
+      if (isFiller) console.log(`[refresh-briefing] Dropped no-news filler article: "${a.headline}"`);
+      if (isBackground) console.log(`[refresh-briefing] Dropped background/ongoing article: "${a.headline}"`);
+      return !isFiller && !isBackground;
+    });
   if (briefing.articles.length < beforeFilter) {
     console.log(`[refresh-briefing] Filtered ${beforeFilter - briefing.articles.length} no-news filler article(s) from Gemini output`);
-  }
-
-  // Drop "ongoing situation" background articles and strip forbidden sourceUrls
-  const BACKGROUND_PATTERN = /\bcontinues? to (?:impose|sanction|target|enforce|maintain)\b|\bremains? (?:under sanctions|subject to|in effect)\b|\bhas been (?:sanctioned|designated|subject)\b|\bongoing sanctions\b|\bstanding (?:sanctions|designation)\b/i;
-  const FORBIDDEN_SOURCE_HOSTS = ["wikipedia.org", "en.wikipedia.org", "investopedia.com", "britannica.com"];
-  const beforeBgFilter = briefing.articles.length;
-  briefing.articles = briefing.articles.filter(a => {
-    // Strip forbidden sourceUrls
-    if (a.sourceUrl) {
-      try {
-        const host = new URL(a.sourceUrl).hostname.replace(/^www\./, "");
-        if (FORBIDDEN_SOURCE_HOSTS.some(d => host === d || host.endsWith("." + d))) {
-          console.log(`[refresh-briefing] Stripped forbidden sourceUrl (${host}): "${a.headline}"`);
-          a.sourceUrl = undefined;
-        }
-      } catch {}
-    }
-    const text = `${a.headline ?? ""} ${(a.body ?? [])[0] ?? ""}`;
-    const isBackground = BACKGROUND_PATTERN.test(text);
-    if (isBackground) console.log(`[refresh-briefing] Dropped background/ongoing article: "${a.headline}"`);
-    return !isBackground;
-  });
-  if (briefing.articles.length < beforeBgFilter) {
-    console.log(`[refresh-briefing] Filtered ${beforeBgFilter - briefing.articles.length} background article(s)`);
   }
 
   briefing.lastUpdated = `${formatLastUpdatedUtc()} [Gemini/Actions]`;
@@ -1645,39 +1639,4 @@ if (extraInjected.length > 0) {
   const baseId2 = (briefing.articles?.length ?? 0) + 1;
   extraInjected.forEach((a, i) => { a.id = baseId2 + i; });
   briefing.articles = [...(briefing.articles ?? []), ...extraInjected];
-  console.log(`[refresh-briefing] Injected ${ofsiInjected.length} OFSI + ${europaInjected.length} EU + ${unInjected.length} UN + ${bbcInjected.length} BBC + ${ajInjected.length} Al Jazeera + ${occInjected.length} OCC + ${economicsInjected.length} Fed + ${bisInjected.length} BIS + ${regionsInjected.length} Regions entries — total articles: ${briefing.articles.length}`);
-}
-
-// ── POST to /api/save-briefing (retry once on failure) ─────────────────────
-// merge=true: keep articles from sections NOT covered by this payload (used for fallback).
-// merge=false (default): full replace — used when Gemini succeeds and covers all sections.
-async function trySaveBriefing(payload, merge = false) {
-  const saveRes = await fetch(`${APP_URL}/api/save-briefing`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "x-save-secret": SAVE_SECRET,
-    },
-    body: JSON.stringify({ ...payload, merge }),
-  });
-  const saveData = await saveRes.json().catch(() => ({}));
-  return { saveRes, saveData };
-}
-
-async function saveBriefingWithRetry(payload, merge = false) {
-  console.log(`[refresh-briefing] Saving to ${APP_URL}/api/save-briefing (merge=${merge}) ...`);
-  let { saveRes, saveData } = await trySaveBriefing(payload, merge);
-  if (!saveRes.ok || !saveData.ok) {
-    console.warn(`[refresh-briefing] Save attempt 1 failed (${saveRes.status}): ${JSON.stringify(saveData)} — retrying in 5s`);
-    await new Promise(r => setTimeout(r, 5000));
-    ({ saveRes, saveData } = await trySaveBriefing(payload, merge));
-  }
-  if (!saveRes.ok || !saveData.ok) {
-    console.error(`[refresh-briefing] Save failed after retry (${saveRes.status}): ${JSON.stringify(saveData)}`);
-    console.error(`[refresh-briefing] Briefing had ${payload.articles?.length} articles, lastUpdated: ${payload.lastUpdated}`);
-    process.exit(1);
-  }
-  console.log(`[refresh-briefing] ✅ Saved — ${saveData.articleCount} articles, lastUpdated: ${saveData.lastUpdated}`);
-}
-
-await saveBriefingWithRetry(briefing);
+  console.log(`[refresh-briefing
