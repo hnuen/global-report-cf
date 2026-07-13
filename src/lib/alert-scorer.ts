@@ -346,7 +346,18 @@ export function scoreArticle(article: Article): ScoredArticle {
   const isNoNewsFiller = NO_NEWS_PATTERN.test(searchText);
   if (isNoNewsFiller) reasons.push(`non-event / "no news" content — never alerts regardless of score`);
 
-  const shouldAlert = sectionOk && score >= threshold && recentEnough && !isNoNewsFiller;
+  // 10. Source-URL guard — Gemini-generated articles that lack a sourceUrl
+  // are LLM summaries with no primary source to link to. Alerting on them
+  // results in notifications whose link falls back to the app URL instead of
+  // the actual article, which is confusing. Only skip if it's clearly NOT an
+  // authoritative gov source (those are always worth alerting regardless).
+  const isGovSource = GOV_SOURCES_100.some(s => article.sourceUrl?.includes(s)) ||
+    isCuratedOfficialSource || (isEuCommission && euHasKeyword);
+  const hasSourceUrl = !!(article.sourceUrl && article.sourceUrl !== "#");
+  const hasNoUrlAlert = !isGovSource && !hasSourceUrl;
+  if (hasNoUrlAlert) reasons.push(`no sourceUrl and not a gov source — skipping alert`);
+
+  const shouldAlert = sectionOk && score >= threshold && recentEnough && !isNoNewsFiller && !hasNoUrlAlert;
 
   return { article, score, reasons, shouldAlert };
 }

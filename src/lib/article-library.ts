@@ -5,16 +5,24 @@
  * After each refresh, newly-enriched articles (with real Gemini briefs) are
  * merged in.  The orchestrator loads the library at startup and uses it for
  * historical display, so the app shows accumulated articles across all sections
- * for up to 6 months.
+ * indefinitely.
  *
- * Storage: Upstash Redis, key "app:article-library:v1", TTL 180 days.
- * Size cap: 50 articles per section (300 total across 6 sections).
+ * Storage: Upstash Redis — per-section keys "app:article-library:v2:{section}"
+ *   (one key per section: sanctions, economics, regions, occ, penalties, bis).
+ *   No TTL. Splitting across keys keeps each key well under Upstash's 1 MB
+ *   per-key limit regardless of how many articles accumulate.
+ *   Auto-migrates from legacy "app:article-library:v1" on first load.
  */
 
 import type { Article } from "./types";
 
-const LIBRARY_KEY     = "app:article-library:v1";
-// No time or count limits — library grows indefinitely; Redis free tier (256 MB) is ample.
+const LEGACY_KEY = "app:article-library:v1";
+const KEY_PREFIX = "app:article-library:v2:";
+const SECTIONS   = ["sanctions","economics","regions","occ","penalties","bis"] as const;
+
+function sectionKey(sec: string): string {
+  return `${KEY_PREFIX}${sec}`;
+}
 
 // ── Upstash REST helpers (direct — StorageManager only exposes load/save Briefing) ──
 
@@ -34,16 +42,25 @@ async function redisGet(key: string): Promise<string | null> {
   } catch { return null; }
 }
 
-async function redisSet(key: string, value: string, ttl?: number): Promise<void> {
+async function redisSet(key: string, value: string): Promise<void> {
   const url = upstashUrl(); const token = upstashToken();
   if (!url || !token) return;
   try {
     await fetch(`${url}/set/${encodeURIComponent(key)}`, {
       method: "POST",
       headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
-      body: JSON.stringify(ttl ? { value, ex: ttl } : { value }),
+      body: JSON.stringify({ value }),
     });
   } catch { /* non-fatal */ }
+}
+
+async function redisGetArticles(key: string): Promise<Article[]> {
+  try {
+    const raw = await redisGet(key);
+    if (!raw) return [];
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch { return []; }
 }
 
 // ── Generic brief cache (fix brief-generator.ts which used broken StorageManager.get) ──
@@ -57,12 +74,24 @@ function briefHashUrl(url: string): string {
   return Math.abs(h).toString(36);
 }
 
+async function redisSetTtl(key: string, value: string, ttl: number): Promise<void> {
+  const url = upstashUrl(); const token = upstashToken();
+  if (!url || !token) return;
+  try {
+    await fetch(`${url}/set/${encodeURIComponent(key)}`, {
+      method: "POST",
+      headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
+      body: JSON.stringify({ value, ex: ttl }),
+    });
+  } catch { /* non-fatal */ }
+}
+
 export async function getCachedBrief(url: string): Promise<string | null> {
   return redisGet(BRIEF_PREFIX + briefHashUrl(url));
 }
 
 export async function setCachedBrief(url: string, brief: string): Promise<void> {
-  await redisSet(BRIEF_PREFIX + briefHashUrl(url), brief, BRIEF_TTL);
+  await redisSetTtl(BRIEF_PREFIX + briefHashUrl(url), brief, BRIEF_TTL);
 }
 
 // ── Article library ──────────────────────────────────────────────────────────
@@ -90,12 +119,22 @@ function headlineKey(headline: string): string {
 }
 
 export async function loadArticleLibrary(): Promise<Article[]> {
-  try {
-    const raw = await redisGet(LIBRARY_KEY);
-    if (!raw) return [];
-    const parsed = JSON.parse(raw);
-    return Array.isArray(parsed) ? parsed : [];
-  } catch { return []; }
+  // Load from per-section v2 keys
+  const results = await Promise.all(
+    SECTIONS.map(sec => redisGetArticles(sectionKey(sec)))
+  );
+  const all = results.flat();
+
+  // Auto-migrate from legacy v1 key if v2 is empty
+  if (all.length === 0) {
+    const legacy = await redisGetArticles(LEGACY_KEY);
+    if (legacy.length > 0) {
+      console.log(`[article-library] Migrating ${legacy.length} articles from v1 → v2 per-section keys`);
+      await saveArticlesToLibrary(legacy);
+      return legacy;
+    }
+  }
+  return all;
 }
 
 export async function saveArticlesToLibrary(newArticles: Article[]): Promise<void> {
@@ -106,43 +145,42 @@ export async function saveArticlesToLibrary(newArticles: Article[]): Promise<voi
   );
   if (candidates.length === 0) return;
 
-  // Load existing library
-  const existing = await loadArticleLibrary();
-
-  // Merge: build map by headline key, prefer longer/better briefs
-  const map = new Map<string, Article>();
-  for (const a of existing) map.set(headlineKey(a.headline), a);
+  // Group candidates by section
+  const candidatesBySection = new Map<string, Article[]>();
   for (const a of candidates) {
-    const key = headlineKey(a.headline);
-    const prev = map.get(key);
-    if (!prev || (a.body[0] || "").length > (prev.body[0] || "").length) {
-      map.set(key, a);
-    }
-  }
-
-  // Sort newest first within each section
-  const SECTIONS = ["sanctions","economics","regions","occ","penalties","bis"] as const;
-  const allArticles = [...map.values()];
-  const bySection = new Map<string, Article[]>();
-  for (const a of allArticles) {
     const sec = a.section ?? "sanctions";
-    const list = bySection.get(sec) ?? [];
+    const list = candidatesBySection.get(sec) ?? [];
     list.push(a);
-    bySection.set(sec, list);
-  }
-  const merged: Article[] = [];
-  for (const sec of SECTIONS) {
-    const list = (bySection.get(sec) ?? [])
-      .sort((a, b) => (b.date || "").localeCompare(a.date || ""));
-    merged.push(...list);
-  }
-  // Also keep articles from sections not in the standard list
-  for (const [sec, list] of bySection) {
-    if (!(SECTIONS as readonly string[]).includes(sec)) {
-      merged.push(...list);
-    }
+    candidatesBySection.set(sec, list);
   }
 
-  await redisSet(LIBRARY_KEY, JSON.stringify(merged)); // no TTL — persists indefinitely
-  console.log(`[article-library] Saved ${merged.length} articles total (${candidates.length} new/updated)`);
+  // Determine all sections that need updating (standard + any extras in candidates)
+  const allSections = new Set<string>([...SECTIONS, ...candidatesBySection.keys()]);
+
+  // Process each section in parallel
+  await Promise.all([...allSections].map(async (sec) => {
+    const newForSec = candidatesBySection.get(sec) ?? [];
+    if (newForSec.length === 0) return; // no new articles for this section — skip
+
+    const existing = await redisGetArticles(sectionKey(sec));
+
+    // Merge: build map by headline key, prefer longer/better briefs
+    const map = new Map<string, Article>();
+    for (const a of existing) map.set(headlineKey(a.headline), a);
+    for (const a of newForSec) {
+      const key = headlineKey(a.headline);
+      const prev = map.get(key);
+      if (!prev || (a.body[0] || "").length > (prev.body[0] || "").length) {
+        map.set(key, a);
+      }
+    }
+
+    const merged = [...map.values()]
+      .sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+
+    await redisSet(sectionKey(sec), JSON.stringify(merged));
+    console.log(`[article-library] Section "${sec}": ${merged.length} articles saved`);
+  }));
+
+  console.log(`[article-library] Saved ${candidates.length} new/updated articles`);
 }
