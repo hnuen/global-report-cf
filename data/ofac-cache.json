@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-07-12T22:08:48.931Z",
+  "updatedAt": "2026-07-13T23:57:53.434Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260713",
+      "code": "20260713",
+      "title": "Cyber-related Designations; Cuba Designations; Issuance of Cuba-related Frequently Asked Question",
+      "date": "July 13, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260710",
       "code": "20260710",
@@ -54,12 +60,6 @@
       "code": "20260629_33",
       "title": "Launch of OFAC Reconsideration Portal",
       "date": "June 29, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260626",
-      "code": "20260626",
-      "title": "Sudan-related Designations",
-      "date": "June 26, 2026"
     }
   ],
   "civilPenalties": [
@@ -634,7 +634,7 @@
     "cuba-sanctions": {
       "name": "Cuba Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/cuba-sanctions",
-      "lastUpdated": "Jun 23, 2026",
+      "lastUpdated": "Jul 13, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -681,7 +681,7 @@
         },
         {
           "citation": "66 FR 36683-01",
-          "description": "2001 Exports of Agricultural Products, Medicines, and Medical Devices to Cuba, Sudan, Libya, and Iran; Cuba Travel-Related Transactions 65 FR 70382-00 - 2000 Payments to Persons Who Hold Certain Categories of Judgments Against Cuba or Iran Recent Actions regarding Cuba Sanctions Transnational Crimin",
+          "description": "2001 Exports of Agricultural Products, Medicines, and Medical Devices to Cuba, Sudan, Libya, and Iran; Cuba Travel-Related Transactions 65 FR 70382-00 - 2000 Payments to Persons Who Hold Certain Categories of Judgments Against Cuba or Iran Recent Actions regarding Cuba Sanctions Cyber-related Design",
           "year": "2001",
           "glNumbers": []
         }
@@ -691,6 +691,7 @@
           "number": "1",
           "title": "Cuba General License 1",
           "date": "May 07, 2026",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/935571/download?inline"
         }
       ]
@@ -698,7 +699,7 @@
     "sanctions-related-to-significant-malicious-cyber-enabled-activities": {
       "name": "Cyber-Related Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/sanctions-related-to-significant-malicious-cyber-enabled-activities",
-      "lastUpdated": "Apr 23, 2026",
+      "lastUpdated": "Jul 13, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -712,7 +713,7 @@
         },
         {
           "citation": "87 FR 54373-22",
-          "description": "Cyber-Related Sanctions Regulations 80 FR 81752-15 - Issuance of Cyber-Related Sanctions Regulations to implement Executive Order 13694 Recent Actions regarding Cyber-Related Sanctions Counter Terrorism, Counter Narcotics, and Cyber-related Designations; Issuance of Cyber-related General License Rel",
+          "description": "Cyber-Related Sanctions Regulations 80 FR 81752-15 - Issuance of Cyber-Related Sanctions Regulations to implement Executive Order 13694 Recent Actions regarding Cyber-Related Sanctions Cyber-related Designations; Cuba Designations; Issuance of Cuba-related Frequently Asked Question Release Date: Jul",
           "year": "2022",
           "glNumbers": []
         }
@@ -722,12 +723,14 @@
           "number": "1C",
           "title": "Cyber General License 1C",
           "date": "April 27, 2023",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/931686/download?inline"
         },
         {
           "number": "2",
           "title": "Cyber General License 2",
           "date": "April 27, 2023",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/935531/download?inline"
         }
       ]
@@ -2831,48 +2834,48 @@
   ],
   "bbcNews": [
     {
-      "title": "US insists Strait of Hormuz is open as it exchanges strikes with Iran",
-      "url": "https://www.bbc.co.uk/news/articles/cj9gkpp0dkeo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 12, 2026",
-      "description": "Iranian forces earlier said the Strait was closed and launched wide-ranging attacks at US allies and bases in the region."
+      "title": "UAE condemns Iran's 'brazen' attack on tankers as US launches fresh strikes",
+      "url": "https://www.bbc.co.uk/news/articles/c8d2vn38dy1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "The third consecutive night of US strikes on Iran came as Trump announced a 20% charge as part of a new blockade on the strait."
     },
     {
-      "title": "People flee as Russian strike hits near Ukraine coffee shop",
-      "url": "https://www.bbc.co.uk/news/videos/c8r27drk1nxo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 12, 2026",
-      "description": "Three cameras caught the moment people ducked then ran for cover in Sumy, in north eastern Ukraine."
+      "title": "UAE condemns Iran's 'brazen' attack on tankers as US launches fresh strikes",
+      "url": "https://www.bbc.co.uk/news/articles/c8d2vn38dy1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "The third consecutive night of US strikes on Iran came as Trump announced a 20% charge as part of a new blockade on the strait."
     }
   ],
   "ajNews": [
     {
-      "title": "Iran says almost a dozen ‘enemy projectiles’ targeted Qeshm Island",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/12/iran-says-almost-a-dozen-enemy-projectiles-targeted-qeshm-island?traffic_source=rss",
-      "date": "July 12, 2026",
-      "description": "New explosions have been heard in Bandar Abbas and Qeshm Island."
+      "title": "US, Iran exchange attacks around Strait of Hormuz",
+      "url": "https://www.aljazeera.com/news/2026/7/13/missile-strikes-and-attacks-on-ships-reported-around-strait-of-hormuz?traffic_source=rss",
+      "date": "July 13, 2026",
+      "description": "Washington and Tehran both claim to be in control of the strategic waterway as fighting escalates."
     },
     {
-      "title": "Nine dead as Russia and Ukraine trade drone and missile salvos",
-      "url": "https://www.aljazeera.com/news/2026/7/12/nine-dead-as-russia-and-ukraine-trade-drone-and-missile-salvos?traffic_source=rss",
-      "date": "July 12, 2026",
-      "description": "Ukraine is particularly vulnerable to Russian ballistic missiles due to critical shortage of Patriot munitions."
+      "title": "Lindsey Graham’s legacy: Israel advocate, Trump ally, Iran war supporter",
+      "url": "https://www.aljazeera.com/news/2026/7/13/lindsey-grahams-legacy-israel-advocate-trump-ally-iran-war-supporter?traffic_source=rss",
+      "date": "July 13, 2026",
+      "description": "Late US senator backed invasion of Iraq, war on Iran and approach of &#039;more for Israel&#039; as he became a Trump confidant."
     },
     {
-      "title": "Why the Iran-US ceasefire is falling apart",
-      "url": "https://www.aljazeera.com/video/the-bottom-line/2026/7/12/why-the-iran-us-ceasefire-is-falling-apart?traffic_source=rss",
-      "date": "July 12, 2026",
-      "description": "Iran, US resumed fighting because they don’t see each other as ‘reliable negotiating partners’, says analyst Ali Vaez."
+      "title": "Kyiv attacked after Ukraine launches coalition to tackle Russia missiles",
+      "url": "https://www.aljazeera.com/news/2026/7/13/ukraine-and-allies-launch-coalition-to-tackle-russias-ballistic-missiles?traffic_source=rss",
+      "date": "July 13, 2026",
+      "description": "Russia has escalated attacks in recent weeks, taking advantage of Ukraine’s critical shortage of air defences."
     },
     {
-      "title": "Anti-migrant display set alight in Northern Ireland bonfire",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/12/anti-migrant-display-set-alight-in-northern-ireland-bonfire?traffic_source=rss",
-      "date": "July 12, 2026",
-      "description": "The flags of Palestine, Syria, Sudan and Somalia were draped over a huge bonfire tower before it was set alight."
+      "title": "Iran military warns US against Strait of Hormuz ‘interference’",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/13/iran-military-warns-us-against-strait-of-hormuz?traffic_source=rss",
+      "date": "July 13, 2026",
+      "description": "Iran&#039;s military has warned it will not allow the United States to ‘interfere’ in the management of the Strait of Hormuz."
     },
     {
-      "title": "Concern for renewed war in Iran as US attacks military, civilian targets",
-      "url": "https://www.aljazeera.com/news/2026/7/12/concern-for-renewed-war-in-iran-as-us-attacks-military-civilian-targets?traffic_source=rss",
-      "date": "July 12, 2026",
-      "description": "US military has significantly increased the scale of attacks on Iran in recent days as the Strait of Hormuz standoff boils over."
+      "title": "UK designates IRGC as terrorist organisation",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/13/uk-designates-irgc-as-terrorist-organisation?traffic_source=rss",
+      "date": "July 13, 2026",
+      "description": "The UK government has designated Iran’s Revolutionary Guard Corps (IRGC) as a terrorist organisation under new powers."
     }
   ],
   "occNews": [
@@ -2972,52 +2975,76 @@
   ],
   "regionsNews": [
     {
-      "title": "At least 27 killed in Bangkok bar fire",
+      "title": "Briton tells of surviving Spain wildfire in car as wife and friends died trying to run to safety",
+      "url": "https://www.bbc.co.uk/news/articles/cp9ld3p324jo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "Malcolm Timbrell's wife and their friends are thought to have died when a devastating wildfire tore through their village in Spain."
+    },
+    {
+      "title": "Hungary parliament votes to remove president from office",
+      "url": "https://www.bbc.co.uk/news/articles/cp8r002gdevo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "Tamás Sulyok was widely seen as a loyalist of former prime minister Viktor Orbán, who lost power in April after 16 years."
+    },
+    {
+      "title": "At least 28 killed, 25 critically injured after fire engulfs Bangkok bar",
       "url": "https://www.bbc.co.uk/news/articles/c24yev53q06o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 12, 2026",
-      "description": "Firefighters arrived at the scene in the Chatuchak district to find patrons running through blasting flames to escape."
+      "date": "July 13, 2026",
+      "description": "Firefighters arrived at the scene in the Chatuchak district to find patrons running through flames to escape."
     },
     {
-      "title": "US senator and close Trump ally Lindsey Graham dies after 'brief and sudden illness'",
-      "url": "https://www.bbc.co.uk/news/articles/cvgj25j6nmeo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 12, 2026",
-      "description": "Donald Trump pays tribute to the 71-year-old South Carolina senator, calling him a \"true American patriot\" who will be \"greatly missed\"."
+      "title": "'Hero, legend, sweetheart': Tributes to Jurassic Park actor Sam Neill, who has died aged 78",
+      "url": "https://www.bbc.co.uk/news/articles/cy06e5e1lygo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "Friends, politicians and fellow film stars remember Neill following his \"sudden and unexpected\" death."
     },
     {
-      "title": "Anthony Zurcher: From Trump critic to ally, Lindsey Graham was a political survivor of the Maga era",
-      "url": "https://www.bbc.co.uk/news/articles/clyrdn216k2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 12, 2026",
-      "description": "The senator's career was marked by a willingness to adapt to America's dramatically changing political climate, writes the BBC's North America correspondent."
+      "title": "Wildfire raging south of Paris could have been set deliberately, says minister",
+      "url": "https://www.bbc.co.uk/news/articles/clye4z168edo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "The interior minister has said the fire near Paris could have been set deliberately and two people have been arrested."
     },
     {
-      "title": "Badly burned British couple rescued from ravine during Spain wildfires, reports say",
-      "url": "https://www.bbc.co.uk/news/articles/cx2x7441762o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 12, 2026",
-      "description": "The unnamed pair were found semi-conscious with 40% burns after being trapped by the blazes raging through Almeria province, local media reports."
+      "title": "Lindsey Graham's sister chosen as replacement after senator's death",
+      "url": "https://www.bbc.co.uk/news/articles/c05y3rlvp20o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "The South Carolina governor chose the senator's little sister to serve out the rest of his term after Graham's death on Saturday."
     },
     {
-      "title": "China evacuates nearly two million people as powerful typhoon makes landfall",
-      "url": "https://www.bbc.co.uk/news/articles/cdxd3wkp2rzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 12, 2026",
-      "description": "Schools, work and outdoor activities have been suspended in Zhejiang province and many transport services cancelled."
+      "title": "UK-Switzerland deal to scrap roaming charges and allow Britons to use e-gates",
+      "url": "https://www.bbc.co.uk/news/articles/c621p9yjz1zo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "The UK signs a new services deal with Switzerland it says will increase exports by £5.2bn annually \"in the long run\"."
     },
     {
-      "title": "David Willey, esteemed BBC Vatican correspondent, dies aged 93",
-      "url": "https://www.bbc.co.uk/news/articles/cn9403518jro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 12, 2026",
-      "description": "One of the BBC's longest-serving foreign correspondents, he reported on five popes during his career."
+      "title": "German court convicts Iraqi couple of enslaving Yazidi girls",
+      "url": "https://www.bbc.co.uk/news/articles/cg53rp4e2j4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "The pair, named only as Twana H.S. and Asia R. A., left Germany for Iraq in 2015 and became members of the Islamic State group."
     },
     {
-      "title": "T. rex could become most expensive fossil ever - but it's a ​problem for scientists",
-      "url": "https://www.bbc.co.uk/news/articles/c4gykgyn1r4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 11, 2026",
-      "description": "A 67 million-year-old Tyrannosaurus rex will go on sale in New York with a pre-sale value of $30m."
+      "title": "Sudan's paramilitary RSF chief sentenced to death over war crimes",
+      "url": "https://www.bbc.co.uk/news/articles/cn4dk3kl0l4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "Mohamed Hamdan Dagalo was convicted in absentia along with 15 RSF commanders and allies."
     },
     {
-      "title": "Former Emir of Qatar Sheikh Hamad bin Khalifa Al Thani dies aged 74",
-      "url": "https://www.bbc.co.uk/news/articles/cql1qdq14xro?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Ted Lasso actor Fernandez makes professional debut",
+      "url": "https://www.bbc.co.uk/sport/football/articles/ckg7me5kdk1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "Ted Lasso actor Cristo Fernandez makes his professional football debut for American second-tier side El Paso Locomotive."
+    },
+    {
+      "title": "Men disguised as police kill Ecuadorean drug lord's brother",
+      "url": "https://www.bbc.co.uk/news/articles/c20yx84g103o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "The victim, David Macías, was the brother of drug lord 'El Fito', who is awaiting trial in the US."
+    },
+    {
+      "title": "Infantino opens door to 64-team World Cup",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cj9gm31jwg8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 12, 2026",
-      "description": "He took power in 1996 after staging a bloodless coup against his father, and went on to transform Qatar into the gas-rich power it is today."
+      "description": "Plans for a 64-team men's world cup are set to be picked up and assessed in detail after the 2026 tournament with Fifa boss Gianni Infantino saying football needs to be \"for the whole world\"."
     },
     {
       "title": "South Africa says more than 53,000 foreigners deported in migration campaign",
@@ -3026,82 +3053,82 @@
       "description": "South Africa is cracking down on undocumented migrants following widespread anti-immigration protests."
     },
     {
-      "title": "At least two killed in Toronto street festival shooting",
-      "url": "https://www.bbc.co.uk/news/articles/ce3e66e1x3go?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Heavy rains and flash floods in Bangladesh leave 51 dead",
+      "url": "https://www.bbc.co.uk/news/articles/ce8k7e75k7go?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "Thousands have lost their homes as flash floods and landslides have hit large parts of the country."
+    },
+    {
+      "title": "US Senator Mitch McConnell says absence due to fall and pneumonia",
+      "url": "https://www.bbc.co.uk/news/articles/cvge2nd611zo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 12, 2026",
-      "description": "Police say there was an exchange of gunfire between two individuals at the festival, and two firearms had been recovered from the scene."
+      "description": "The veteran Republican says he will not return to work \"quite yet\", in his first statement following weeks of speculation about his health."
     },
     {
-      "title": "Muslim judge in India faces death threats after convicting 'cow vigilantes'",
-      "url": "https://www.bbc.co.uk/news/articles/cd6e9zq87xvo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Man wanted in connection with murder arrested in Jordan",
+      "url": "https://www.bbc.co.uk/news/articles/c621p1zne6qo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "The body of Jamey Carney was discovered at a property in Killarney, County Kerry, last week."
+    },
+    {
+      "title": "A versatile actor whose roles went far beyond Jurassic Park - Sam Neill dies aged 78",
+      "url": "https://www.bbc.co.uk/news/articles/cx2wrvqq9rlo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "The actor built up a long string of screen credits over a five-decade career."
+    },
+    {
+      "title": "The SpaceX IPO made history. One month on has it lost momentum?",
+      "url": "https://www.bbc.co.uk/news/articles/c3wyj6e4210o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "A month on from the firm's stock market debut, the reality of how SpaceX currently makes money has seemed to come into clearer focus."
+    },
+    {
+      "title": "New era for Gibraltar with removal of 118-year-old border controls with Spain",
+      "url": "https://www.bbc.co.uk/news/articles/cwydz60j3eno?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 12, 2026",
-      "description": "Tabassum Khan has been facing online abuse after convicting 14 Hindu men in a lynching case."
+      "description": "It is hoped that free movement between the UK territory and Spain will provide an economic boost."
     },
     {
-      "title": "Polish PM pledges memorial to victims of WW2 'genocide by Ukrainian nationalists'",
-      "url": "https://www.bbc.co.uk/news/articles/cze94x4361po?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 11, 2026",
-      "description": "Warsaw and Kyiv have for decades been at loggerheads over the killings of many thousands of civilians during World War Two."
+      "title": "How Indian scientists are mapping the brain's last frontier",
+      "url": "https://www.bbc.co.uk/news/articles/cg53l737v1qo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "India's new brainstem atlas offers scientists an unprecedented map of one of the brain's least known regions."
     },
     {
-      "title": "US Democrat Ro Khanna says he was detained by armed Israeli settlers",
-      "url": "https://www.bbc.co.uk/news/articles/c0qyk9jwq9no?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 11, 2026",
-      "description": "Khanna, 49, was visiting the occupied West Bank when he was held for 90 minutes, he says."
+      "title": "The Chinese graduate accused of being Mexico's 'fentanyl king'",
+      "url": "https://www.bbc.co.uk/news/articles/c39ymggglxeo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "Cartel members and ex-colleagues describe how Zhang Zhidong allegedly linked Chinese chemicals to Mexican drug labs."
     },
     {
-      "title": "Trump administration subpoenas New York Times journalists over Air Force One reporting",
-      "url": "https://www.bbc.co.uk/news/articles/cpd3g8q51g7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 11, 2026",
-      "description": "The reporters received the legal summons after they reported on alleged security issues with the president's new plane, which was gifted by Qatar."
+      "title": "10 years of Pokémon Go and the millions still trying to catch 'em all",
+      "url": "https://www.bbc.co.uk/news/articles/cevlwk4nrm7o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "Michael Steranka, vice president at the mobile game's owner Scopely, says it has always been about bringing people together."
     },
     {
-      "title": "South Africa World Cup midfielder Adams dies aged 25",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cr47y5nvrqlo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 11, 2026",
-      "description": "South Africa and Mamelodi Sundowns midfielder Jayden Adams dies at the age of 25, just weeks after featuring for his country at the World Cup."
+      "title": "Bombs, blood, ambushes - football coaching with the army",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cd7we8we4xgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "From kidnappings to invasions, military training takes football coaches out of their comfort zone as part of the Football Association of Wales' Uefa pro licence course."
     },
     {
-      "title": "More than 40 kidnapped children and teachers freed after Nigerian army operation",
-      "url": "https://www.bbc.co.uk/news/articles/cly9lnjlp1eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 11, 2026",
-      "description": "\"I feel happy and elated… I feel joy,\" the head of the local teachers' union tells the BBC."
+      "title": "Watch: Horses evacuated as fire approaches riding centre near Paris",
+      "url": "https://www.bbc.co.uk/news/videos/c1jy64065ylo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "The Fontainebleau forest blaze, described by officials as of 'exceptional scale', continues to rage for the second day."
     },
     {
-      "title": "Indian tourists among 15 killed as speedboat capsizes in Vietnam",
-      "url": "https://www.bbc.co.uk/news/articles/cwyd7x22lp1o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 11, 2026",
-      "description": "Local media say 21 people were saved after the boat overturned in rough seas near an island in south Vietnam."
+      "title": "People flee Bangkok bar as huge flames shoot out from doorway",
+      "url": "https://www.bbc.co.uk/news/videos/cy5vx2e45xdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "At least 28 people have died and 25 are critically injured after a fire tore through a bar in a popular Bangkok district."
     },
     {
-      "title": "How Aldi is taking on US supermarkets with its $4 almond butter",
-      "url": "https://www.bbc.co.uk/news/articles/cly0l5d5xn7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 12, 2026",
-      "description": "The German supermarket's $9bn US push targets urban hubs like Manhattan. Can its discount model match Walmart?"
-    },
-    {
-      "title": "Ice on testicles and donating blood - the myths sold to men trying to boost their sperm",
-      "url": "https://www.bbc.co.uk/news/articles/c8921982pgzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 11, 2026",
-      "description": "With men’s fertility increasingly in the spotlight, we meet the men using unproven “hacks” promoted by influencers to up their sperm counts."
-    },
-    {
-      "title": "How men with female surnames are standing up to ridicule in Kenya",
-      "url": "https://www.bbc.co.uk/news/articles/c75ygy71wdgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 11, 2026",
-      "description": "Children often inherit their father's first name as a surname, but traditions are changing and causing upset."
-    },
-    {
-      "title": "Meet the crypto billionaires building a world where money buys you a vote",
-      "url": "https://www.bbc.co.uk/news/articles/cly8eqyj8e2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 10, 2026",
-      "description": "They think democracy has run its course - so they're setting up their own nations instead."
-    },
-    {
-      "title": "The photo that shows who's really on top in Le Pen's party",
-      "url": "https://www.bbc.co.uk/news/articles/cn7558gdvjro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 10, 2026",
-      "description": "Thirty-year-old Jordan Bardella had been groomed for success as France's next hard-right leader. He will now have to wait longer."
+      "title": "Watch: At the scene where Bangkok's deadly bar fire unfolded",
+      "url": "https://www.bbc.co.uk/news/videos/clyrd9nwn9wo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "The BBC’s South East Asia correspondent visits the site where at least 27 people were killed during a bar fire in Thailand."
     },
     {
       "title": "'This landscape is completely charred': Inside the village at epicentre of Spain's wildfires",
@@ -3110,28 +3137,64 @@
       "description": "The BBC's Nick Beake sees homes razed to the ground and \"a sea of black\" in Bédar."
     },
     {
-      "title": "How a viral seal called Neil caused mayhem in Australia",
-      "url": "https://www.bbc.co.uk/news/videos/c05yr465yyro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 11, 2026",
-      "description": "The five-year-old elephant seal attracted global attention during his recent time ashore in southern Tasmania."
+      "title": "The secretive crypto firm backed by Farage's biggest donor",
+      "url": "https://www.bbc.co.uk/news/articles/cg4w6wqye32o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "Tether is a giant in crytocurrency, an industry that Nigel Farage believes the UK should be embracing."
     },
     {
-      "title": "'We escaped Spanish wildfire, but our friends lost their lives'",
-      "url": "https://www.bbc.co.uk/news/videos/c07y357zvl1o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 11, 2026",
-      "description": "Hundreds of firefighters in Spain have been battling a deadly wildfire in the south of the country."
+      "title": "'I don't want to seem tight': How much should you give to the year-end teacher collection?",
+      "url": "https://www.bbc.co.uk/news/articles/ckg8x4vk04vo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "Collecting money for a joint present might overcome the competitive gift-giving, but it can still cause friction."
     },
     {
-      "title": "Newly-released video shows Peter Falconio's killer questioned",
-      "url": "https://www.bbc.co.uk/news/videos/c0rylp72p9ro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 11, 2026",
-      "description": "Australian police have released bodycam footage showing one of the last attempts to get Bradley Murdoch to reveal the location of Peter Falconio's body, on the 25th anniversary of his murder."
+      "title": "California leads lawsuit to block Paramount Warner Bros mega merger",
+      "url": "https://www.bbc.co.uk/news/articles/cgev34lvgp4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "The state, where the both studios have headquarters, has joined 11 others to halt the deal."
+    },
+    {
+      "title": "Volkswagen planning to cut up to 100,000 jobs globally",
+      "url": "https://www.bbc.co.uk/news/articles/cx2wzpwn51lo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "The group, which includes Porsche and Audi, has faced a steep fall in profits and tough competition from China."
+    },
+    {
+      "title": "Is tracking your food purchases good for your health?",
+      "url": "https://www.bbc.co.uk/news/articles/cy8wlplellvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "Food tracking apps are popular, but are they a good way to make us eat a healthier diet?"
+    },
+    {
+      "title": "How to change bank, energy or broadband provider and save money",
+      "url": "https://www.bbc.co.uk/news/articles/cd7w98n2y3eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 12, 2026",
+      "description": "Changing your broadband or energy supplier, or even your bank, for a better deal is simpler than it used to be."
+    },
+    {
+      "title": "The SpaceX IPO made history. One month on has it lost momentum?",
+      "url": "https://www.bbc.co.uk/news/articles/c3wyj6e4210o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "A month on from the firm's stock market debut, the reality of how SpaceX currently makes money has seemed to come into clearer focus."
+    },
+    {
+      "title": "UK-Switzerland deal to scrap roaming charges and allow Britons to use e-gates",
+      "url": "https://www.bbc.co.uk/news/articles/c621p9yjz1zo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "The UK signs a new services deal with Switzerland it says will increase exports by £5.2bn annually \"in the long run\"."
     },
     {
       "title": "How Aldi is taking on US supermarkets with its $4 almond butter",
       "url": "https://www.bbc.co.uk/news/articles/cly0l5d5xn7o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 12, 2026",
       "description": "The German supermarket's $9bn US push targets urban hubs like Manhattan. Can its discount model match Walmart?"
+    },
+    {
+      "title": "10 years of Pokémon Go and the millions still trying to catch 'em all",
+      "url": "https://www.bbc.co.uk/news/articles/cevlwk4nrm7o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "Michael Steranka, vice president at the mobile game's owner Scopely, says it has always been about bringing people together."
     },
     {
       "title": "Reeves tells BBC: Burnham needs worked-through plan to govern from the start",
@@ -3230,64 +3293,10 @@
       "description": "Ofcom has fined a slew of sites it says are failing to prevent children accessing their adult content."
     },
     {
-      "title": "Jackdaw boss warns of winter fuel shortage risk if gas field not approved",
-      "url": "https://www.bbc.co.uk/news/articles/cdx78n4nkvyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 9, 2026",
-      "description": "Adura says the UK government must approve North Sea production urgently to avoid domestic supply shortages."
-    },
-    {
-      "title": "Life of Sizewell B extended by another 20 years",
-      "url": "https://www.bbc.co.uk/news/articles/c1dy1rdv17lo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 9, 2026",
-      "description": "The power plant was due to reach the end of its life in 2035 but will now continue until 2055."
-    },
-    {
-      "title": "Virgin Media fined after hanging up on customers trying to cancel contracts",
-      "url": "https://www.bbc.co.uk/news/articles/c982vm2jzl1o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 8, 2026",
-      "description": "Millions of phone calls from customers were \"likely mishandled\" over nearly a three-year period, the regulator says."
-    },
-    {
-      "title": "From mouthwash to hair dye: How weight-loss jabs are changing shopping habits",
-      "url": "https://www.bbc.co.uk/news/articles/cy49w2knlrdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 8, 2026",
-      "description": "The BBC looks at how spending habits have shifted as users report feeling less hungry."
-    },
-    {
-      "title": "Online marketplaces still selling dozens of unsafe baby products, Which? finds",
-      "url": "https://www.bbc.co.uk/news/articles/c1dy11vvwk1o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 8, 2026",
-      "description": "Pillows, sleeping bags and feeders subject to safety notices were found on sites including Amazon and TikTok."
-    },
-    {
-      "title": "Hundreds of jobs at risk as John Lewis plans to cut some services",
-      "url": "https://www.bbc.co.uk/news/articles/c30y4vqq4p6o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 8, 2026",
-      "description": "No final decision has been made but the job cuts will happen in the autumn if the redundancy plans are approved."
-    },
-    {
-      "title": "Outcry as Meta lets users make AI images from public Instagram profile pics",
-      "url": "https://www.bbc.co.uk/news/articles/cp9lee19y1yo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 8, 2026",
-      "description": "The tech giant said people can opt out - but privacy campaigners called it a \"recipe for disaster\"."
-    },
-    {
-      "title": "Trains and emergency calls affected after major outage at Australia's largest telecoms company",
-      "url": "https://www.bbc.co.uk/news/articles/cgevw0d95pdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 8, 2026",
-      "description": "Servers at data centres in Sydney and Melbourne were to blame but the exact cause remains unknown."
-    },
-    {
-      "title": "Victims of 23andMe data breach to get $47m payout, judge rules",
-      "url": "https://www.bbc.co.uk/news/articles/cn0vnx2192vo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 7, 2026",
-      "description": "23andMe compiles genetic profiles of people through DNA testing kits, but it was heavily criticised after a 2023 hack."
-    },
-    {
-      "title": "Australia dock workers call for 28-hour week in AI talks",
-      "url": "https://www.bbc.co.uk/news/articles/cd95wendvdeo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 8, 2026",
-      "description": "A union says workers are \"in the crosshairs\" of automation as AI is being tested across ports."
+      "title": "New era for Gibraltar with removal of 118-year-old border controls with Spain",
+      "url": "https://www.bbc.co.uk/news/articles/cwydz60j3eno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 12, 2026",
+      "description": "It is hoped that free movement between the UK territory and Spain will provide an economic boost."
     },
     {
       "title": "Wealthy AI workers send San Francisco house prices soaring",
@@ -3350,28 +3359,22 @@
       "description": "Helium-3 is expensive and demand is forecast to soar, so some are planning to mine it on the moon."
     },
     {
-      "title": "Why I sold my business to my staff",
-      "url": "https://www.bbc.co.uk/news/articles/c0ey87z1ggjo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 14, 2026",
-      "description": "As more US company owners reach retirement age many are selling up to their employees."
+      "title": "'I don't want to seem tight': How much should you give to the year-end teacher collection?",
+      "url": "https://www.bbc.co.uk/news/articles/ckg8x4vk04vo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "Collecting money for a joint present might overcome the competitive gift-giving, but it can still cause friction."
     },
     {
-      "title": "India's 'blue gold' starts a new drinks industry",
-      "url": "https://www.bbc.co.uk/news/articles/cdrpe4vly5mo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 11, 2026",
-      "description": "Agave plants grow wild in India and new distillers are using them to create a spirits industry."
+      "title": "Demand for baby bank growing faster than donations",
+      "url": "https://www.bbc.co.uk/news/articles/c5yzeg04n38o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 13, 2026",
+      "description": "The charity says it gave out 36,400 items of child clothing and 536 tubs of formula milk in 2025."
     },
     {
-      "title": "New candy stores are popping up across NYC. Why?",
-      "url": "https://www.bbc.co.uk/news/articles/c30ylzlygngo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 10, 2026",
-      "description": "While US consumer confidence is at an historic low the Big Apple's sweet shops are expanding."
-    },
-    {
-      "title": "Could humanoid robots be heading for the battlefield?",
-      "url": "https://www.bbc.co.uk/news/articles/cedpxwe26l1o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 8, 2026",
-      "description": "Armed forces are experimenting with humanoid robots, but battlefield deployment is some way off."
+      "title": "How to change bank, energy or broadband provider and save money",
+      "url": "https://www.bbc.co.uk/news/articles/cd7w98n2y3eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 12, 2026",
+      "description": "Changing your broadband or energy supplier, or even your bank, for a better deal is simpler than it used to be."
     },
     {
       "title": "Londoners face hidden poverty premium, study says",
@@ -3384,24 +3387,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c5yznlrxeyeo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 11, 2026",
       "description": "Two community groups say they have welcomed \"record attendances\" and given away many 'random items\"."
-    },
-    {
-      "title": "Should you be switching bank accounts?",
-      "url": "https://www.bbc.co.uk/news/videos/c24yjeze14mo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 10, 2026",
-      "description": "Martin Lewis covers whether you should be switching bank accounts."
-    },
-    {
-      "title": "We've saved £6,000 on holidays by swapping homes with strangers",
-      "url": "https://www.bbc.co.uk/news/articles/ce8kkerxz74o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 10, 2026",
-      "description": "The BBC looks at the growing trend of people swapping homes to cut holiday costs."
-    },
-    {
-      "title": "Drivers urged to shop around amid 11p fuel gap",
-      "url": "https://www.bbc.co.uk/news/articles/cg53l34g8p3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 10, 2026",
-      "description": "The RAC says motorists are missing out on savings because many are not using price comparison tools."
     },
     {
       "title": "Why Gen Z are planning for life without a state pension",
@@ -3458,124 +3443,124 @@
       "description": "Shoppers hit by hidden fees"
     },
     {
-      "title": "Israel releases video of huge detonations in Lebanon",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/12/israel-releases-video-of-huge-detonations-in-lebanon?traffic_source=rss",
-      "date": "July 12, 2026",
-      "description": "The Israeli military has released video showing huge explosions and detonations in villages in southern Lebanon."
+      "title": "Three Palestinians killed, 15 wounded in Israeli attacks across Gaza",
+      "url": "https://www.aljazeera.com/news/2026/7/13/three-palestinians-killed-15-wounded-in-israeli-attacks-across-gaza?traffic_source=rss",
+      "date": "July 13, 2026",
+      "description": "Three Palestinians killed and 15 wounded in Israeli attacks across Gaza as ceasefire violations continue."
     },
     {
-      "title": "Deadly Israeli strikes pound Gaza",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/12/deadly-israeli-strikes-pound-gaza?traffic_source=rss",
-      "date": "July 12, 2026",
-      "description": "Israel’s military has attacked several places across Gaza."
+      "title": "Norway ‘rows’ at the royal palace to welcome back World Cup heroes",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/13/aje-onl-nf_norway-rows-at-the-royal-palace-world-cup-heroes-130726?traffic_source=rss",
+      "date": "July 13, 2026",
+      "description": "More than 100,000 people turned out to celebrate Norway&#039;s national football team after their World Cup exit."
     },
     {
-      "title": "Israel to hold national elections on October 27, parliament says",
-      "url": "https://www.aljazeera.com/news/2026/7/12/israel-to-hold-national-elections-on-october-27-parliament-says?traffic_source=rss",
-      "date": "July 12, 2026",
-      "description": "Netanyahu, Israel&#039;s longest-serving prime minister, has confirmed that he will run for office again."
+      "title": "Backed by Trump, Lindsey Graham’s sister Darline will replace him in Senate",
+      "url": "https://www.aljazeera.com/news/2026/7/13/backed-by-trump-lindsey-grahams-sister-darline-will-replace-him-in-senate?traffic_source=rss",
+      "date": "July 13, 2026",
+      "description": "South Carolina governor chooses Darline Graham Nordone to serve the rest of the late US senator&#039;s term until early 2027."
     },
     {
-      "title": "Protest on London’s Tower Bridge demands release of Dr Hussam Abu Safia",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/12/protest-on-londons-tower-bridge-demands-release-of-dr-hussam-abu-safia?traffic_source=rss",
-      "date": "July 12, 2026",
-      "description": "Pro-Palestine activists unfurled a giant Palestinian flag and a banner on London&#039;s Tower Bridge."
+      "title": "Nine deaths tied to Trump’s immigration enforcement operations in US",
+      "url": "https://www.aljazeera.com/news/2026/7/13/nine-deaths-tied-to-trumps-immigration-enforcement-operations-in-us?traffic_source=rss",
+      "date": "July 13, 2026",
+      "description": "Fatal shooting in Biddeford, Maine, is latest in at least nine deaths linked to US president&#039;s immigration crackdown."
     },
     {
-      "title": "Lindsey Graham, hardline backer of US-Israeli wars, dies aged 71",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/12/lindsey-graham-hardline-backer-of-us-israeli-wars-dies-aged-71?traffic_source=rss",
-      "date": "July 12, 2026",
-      "description": "US senator Lindsey Graham, a key ally of Israel and one of Washington’s most prominent foreign policy hawks, has died."
+      "title": "Haaland’s Norway receive heroes’ welcome in Oslo after World Cup exit",
+      "url": "https://www.aljazeera.com/sports/2026/7/13/haalands-norway-receive-heroes-welcome-in-oslo-after-world-cup-exit?traffic_source=rss",
+      "date": "July 13, 2026",
+      "description": "A crowd of more than 100,000, an open-top bus parade and a royal reception welcomed back the Norwegian World Cup squad."
     },
     {
-      "title": "The man who changed the Arab world",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/12/the-man-who-changed-the-arab-world?traffic_source=rss",
-      "date": "July 12, 2026",
-      "description": "Former Emir of Qatar Sheikh Hamad bin Khalifa Al Thani has died at age 74."
+      "title": "Police in South Africa open probe into post-World Cup death of Jayden Adams",
+      "url": "https://www.aljazeera.com/sports/2026/7/13/police-in-south-africa-open-probe-into-post-world-cup-death-of-jayden-adams?traffic_source=rss",
+      "date": "July 13, 2026",
+      "description": "The country&#039;s football players&#039; union confirmed Adams&#039;s death on Saturday, but the cause has not been revealed."
     },
     {
-      "title": "Fire engulfs popular Bangkok pub, killing 27 people and injuring 63",
-      "url": "https://www.aljazeera.com/news/2026/7/12/fire-engulfs-popular-bangkok-pub-killing-27-people-and-injuring-63?traffic_source=rss",
-      "date": "July 12, 2026",
-      "description": "Footage shared online by first responders showed a huge blaze raging in the Na Ladprao pub."
+      "title": "How is the US tech industry regulated?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/7/13/how-is-the-us-tech-industry-regulated?traffic_source=rss",
+      "date": "July 13, 2026",
+      "description": "Apple files a lawsuit against OpenAI, accusing it of stealing trade secrets."
     },
     {
-      "title": "Sinner beats Zverev to defend Wimbledon men’s singles tennis title",
-      "url": "https://www.aljazeera.com/sports/2026/7/12/sinner-beats-zverev-to-defend-wimbledon-mens-singles-tennis-title?traffic_source=rss",
-      "date": "July 12, 2026",
-      "description": "Italy&#039;s Jannik Sinner beats Germany&#039;s Alexander Zverev 6-7 (7-9) 7-6 (7-2) 6-3 6-4 to claim his fifth Grand Slam."
+      "title": "Andy Burnham in line to become British PM after securing party support",
+      "url": "https://www.aljazeera.com/news/2026/7/13/andy-burnham-in-line-to-become-british-pm-after-securing-party-support?traffic_source=rss",
+      "date": "July 13, 2026",
+      "description": "Burnham&#039;s bid cannot be challenged by fellow MPs, as he now has the support of almost the entire parliamentary party."
     },
     {
-      "title": "Qatar’s former emir remembered as ‘a man of vision and courage’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/12/qatars-former-emir-remembered-as-a-man-of-vision-and?traffic_source=rss",
-      "date": "July 12, 2026",
-      "description": "US diplomat Adam Ereli remembers Qatar’s former Emir Sheikh as a personable and charismatic leader."
+      "title": "Argentina vs England World Cup tickets more expensive than France vs Spain",
+      "url": "https://www.aljazeera.com/sports/2026/7/13/argentina-vs-england-world-cup-tickets-more-expensive-than-france-vs-spain?traffic_source=rss",
+      "date": "July 13, 2026",
+      "description": "Prices for the Argentina vs England semifinal have seen a 34 percent increase over the past three days."
     },
     {
-      "title": "How will Qatar’s Father Emir be remembered?",
-      "url": "https://www.aljazeera.com/video/inside-story/2026/7/12/how-will-qatars-father-emir-be-remembered?traffic_source=rss",
-      "date": "July 12, 2026",
-      "description": "Former Emir Sheikh Hamad Bin Khalifa Al Thani has died"
+      "title": "US strikes Iranian ship with drone boats in first-of-its-kind attack",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/13/us-strikes-iranian-ship-with-drone-boats-in-first-of-its-kind-attack?traffic_source=rss",
+      "date": "July 13, 2026",
+      "description": "US CENTCOM has published a video it says shows three Corsair unmanned surface vessels striking an Iranian ship facility"
     },
     {
-      "title": "Former Spain PM criticised for ‘xenophobic’ remark on French World Cup team",
-      "url": "https://www.aljazeera.com/sports/2026/7/12/spain-ex-pm-criticised-for-xenophobic-remark-on-french-world-cup-team?traffic_source=rss",
-      "date": "July 12, 2026",
-      "description": "Mariano Rajoy condemned for opinion piece on Spanish website El Debate ahead of World Cup semifinal."
+      "title": "Artist sews names of Gaza children killed by Israel into gown",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/13/artist-sews-names-of-gaza-children-killed-by-israel-into-gown?traffic_source=rss",
+      "date": "July 13, 2026",
+      "description": "Welsh artist Diana Williams stitched the names of 300 babies killed by Israel’s genocidal war on Gaza into a gown."
     },
     {
-      "title": "Iraqi PM to meet US President Trump in Washington to deepen strategic ties",
-      "url": "https://www.aljazeera.com/news/2026/7/12/iraqi-pm-to-meet-us-president-trump-in-washington-to-deepen-strategic-ties?traffic_source=rss",
-      "date": "July 12, 2026",
-      "description": "Oil and gas deals are expected ⁠to be signed as part of a broader push ​for economic, trade and investment cooperation."
+      "title": "What do Israeli settler attacks on Americans reveal?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/13/what-do-israeli-settler-attacks-on-americans-reveal?traffic_source=rss",
+      "date": "July 13, 2026",
+      "description": "Recent attacks on international journalists and a US congressman have once again put a spotlight on settler violence."
     },
     {
-      "title": "England vs Argentina: Greatest moments before FIFA World Cup semifinal",
-      "url": "https://www.aljazeera.com/sports/2026/7/12/fifa-world-cup-england-vs-argentina-historic-rivalry-greatest-moments-semifinal?traffic_source=rss",
-      "date": "July 12, 2026",
-      "description": "England and Argentina renew their longstanding football rivalry with a World Cup final place at stake."
+      "title": "Gaza man builds roadside library from books buried in rubble",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/13/gaza-man-builds-roadside-library-from-books-buried-in-rubble?traffic_source=rss",
+      "date": "July 13, 2026",
+      "description": "Bookseller Mohammad Saad lost his son, his home, and his bookstore in the aftermath of Israel’s war on Gaza."
     },
     {
-      "title": "Friends turned foes: The split reshaping Senegal",
-      "url": "https://www.aljazeera.com/video/talk-to-al-jazeera/2026/7/12/friends-turned-foes-the-split-reshaping-senegal?traffic_source=rss",
-      "date": "July 12, 2026",
-      "description": "Ousmane Sonko reveals what ended his political partnership with the president, sparking a constitutional standoff."
+      "title": "US keeping the Strait of Hormuz open is ‘a massive force problem’",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/13/us-keeping-the-strait-of-hormuz-open-is-a-massive-force?traffic_source=rss",
+      "date": "July 13, 2026",
+      "description": "Former NATO analyst says Trump&#039;s push for a naval blockade in the Strait of Hormuz would mean a huge military operation."
     },
     {
-      "title": "Some 30 Malian soldiers killed during Anefis retaking, says army chief",
-      "url": "https://www.aljazeera.com/news/2026/7/12/some-30-malian-soldiers-killed-during-anefis-retaking-says-army-chief?traffic_source=rss",
-      "date": "July 12, 2026",
-      "description": "General Jean Elysee Dao says 60 others also wounded as army retakes key town after nearly a week of fighting."
+      "title": "World pays tribute to Qatar’s Father Emir",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/13/world-pays-tribute-to-qatars-father-emir?traffic_source=rss",
+      "date": "July 13, 2026",
+      "description": "From Gaza to India, this is how the world paid tribute to Qatar&#039;s Father Emir Sheikh Hamad bin Khalifa Al Thani."
     },
     {
-      "title": "Thousands gather to bid farewell to Qatar’s Father Emir Sheikh Hamad",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/12/thousands-gather-to-bid-farewell-to-qatars-father-emir-sheikh-hamad?traffic_source=rss",
-      "date": "July 12, 2026",
-      "description": "Thousands gathered in Doha to bid farewell to Qatar&#039;s Father Emir, Sheikh Hamad bin Khalifa Al Thani."
+      "title": "Twelve US states sue Paramount to block Warner Bros merger",
+      "url": "https://www.aljazeera.com/economy/2026/7/13/twelve-us-states-sue-paramount-to-block-warner-bros-merger?traffic_source=rss",
+      "date": "July 13, 2026",
+      "description": "The states claim the $110bn acquisition would limit competition in the TV and film industries."
     },
     {
-      "title": "Who will replace Trump ally Lindsey Graham in the US Senate?",
-      "url": "https://www.aljazeera.com/news/2026/7/12/who-will-replace-trump-ally-lindsey-graham-in-the-us-senate?traffic_source=rss",
-      "date": "July 12, 2026",
-      "description": "The US president suggests he is considering a potential candidate to fill the late senator&#039;s seat in South Carolina."
+      "title": "UK arrests 12 over extreme right-wing ‘terror’ threat to Muslim event",
+      "url": "https://www.aljazeera.com/news/2026/7/13/uk-arrests-12-over-extreme-right-wing-terror-threat-to-muslim-event?traffic_source=rss",
+      "date": "July 13, 2026",
+      "description": "Arrests come against a backdrop of rising racial tensions and hate crimes across Britain."
     },
     {
-      "title": "Qatar’s Father Emir Sheikh Hamad bin ⁠Khalifa Al Thani laid to rest in Doha",
-      "url": "https://www.aljazeera.com/news/2026/7/12/funeral-prayers-held-for-qatars-father-emir-sheikh-hamad-in-doha?traffic_source=rss",
-      "date": "July 12, 2026",
-      "description": "Sheikh Hamad, who ruled the Gulf state from 1995 to 2013, is buried after a simple Islamic ceremony."
+      "title": "Spanish PM visits site of deadly wildfire",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/13/spanish-pm-visits-site-of-deadly-wildfire?traffic_source=rss",
+      "date": "July 13, 2026",
+      "description": "Spain’s Prime Minister, Pedro Sanchez met with firefighters and emergency crews who battled a wildfire in Almeria."
     },
     {
-      "title": "UK Christians protest for Church of England to recognise genocide in Gaza",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/12/uk-christians-protest-for-church-of-england-to-recognise-genocide-in-gaza?traffic_source=rss",
-      "date": "July 12, 2026",
-      "description": "UK Christians are urging the Church of England General Synod to pass a motion to engage with Kairos Palelestine II"
+      "title": "US judge voids Trump’s IRS settlement, alleges self-dealing",
+      "url": "https://www.aljazeera.com/news/2026/7/13/us-judge-voids-trumps-irs-settlement-alleges-self-dealing?traffic_source=rss",
+      "date": "July 13, 2026",
+      "description": "Judge rules that US president, Department of Justice misused courts in settlement that led to &#039;anti-weaponization&#039; fund."
     },
     {
-      "title": "Funeral prayers held for Qatar’s Father Emir Sheikh Hamad",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/12/funeral-prayers-held-for-qatars-father-emir-sheikh-hamad?traffic_source=rss",
-      "date": "July 12, 2026",
-      "description": "Funeral prayers have been held for the Father Emir, Sheikh Hamad bin Khalifa Al Thani, at Qatar’s national mosque."
+      "title": "Locked exits, burning decor: inside Bangkok’s deadly pub fire",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/13/locked-exits-burning-decor-inside-bangkoks-deadly-pub-fire?traffic_source=rss",
+      "date": "July 13, 2026",
+      "description": "Survivors recount the horror after a deadly blaze engulfed a popular pub on a busy street in Bangkok."
     }
   ]
 }
