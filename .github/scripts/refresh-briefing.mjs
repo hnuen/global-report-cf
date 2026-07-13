@@ -1069,7 +1069,7 @@ function buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices = [], 
     { date: "February 12, 2025", headline: "OCC Announces January 2025 Enforcement Actions — Bank of America Cease and Desist for BSA/AML Deficiencies",
       body: ["The OCC announced January 2025 enforcement actions including a cease and desist order against Bank of America, N.A. for violations related to its BSA/AML and sanctions compliance programs. A $1.5 million civil money penalty was assessed against Paul McLinko, former Executive Audit Director at Wells Fargo, for compliance failures.", "The OCC also announced updates to its enforcement action search tool to improve public access to supervisory action records."],
       sourceUrl: "https://www.occ.gov/news-issuances/news-releases/2025/nr-occ-2025-5.html" },
-  ]];
+  ];
   for (const h of OCC_HISTORICAL) {
     if (occSourceUrls.has(h.sourceUrl)) continue;
     articles.push({ id: id++, section: "occ", category: "OCC", region: "United States", impact: "high",
