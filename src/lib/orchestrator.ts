@@ -20,6 +20,7 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
   briefing: Briefing;
   usedProvider: string;
   savedTo: string[];
+  storageErrors: { id: string; error: string | undefined }[];
 }> {
   const storage = await buildStorageManager();
 

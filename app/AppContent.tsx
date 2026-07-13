@@ -530,8 +530,8 @@ const filterArticles = (articles:Article[], sec:string, reg:string) => {
   // Pin top 3 OFAC/Treasury articles at the top (for any region — US sanctions are always relevant)
   const ofacPin = result.filter(isOFACArticle).slice(0, 3);
   if (ofacPin.length > 0) {
-    const ofacIds = new Set(ofacPin.map(a => a.url || a.headline));
-    const rest    = result.filter(a => !ofacIds.has(a.url || a.headline));
+    const ofacIds = new Set(ofacPin.map(a => a.sourceUrl || a.headline));
+    const rest    = result.filter(a => !ofacIds.has(a.sourceUrl || a.headline));
     result = [...ofacPin, ...rest];
   }
   return result;
