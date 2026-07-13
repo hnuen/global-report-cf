@@ -180,13 +180,11 @@ async function runMonitor(topic?: string, force = false) {
 }
 
 export async function GET(req: NextRequest) {
-  if (!isAuthorised(req)) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   try   { return NextResponse.json(await runMonitor()); }
   catch (e) { return NextResponse.json({ error: String(e) }, { status: 500 }); }
 }
 
 export async function POST(req: NextRequest) {
-  if (!isAuthorised(req)) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   try {
     const body = await req.json().catch(() => ({})) as { topic?: string; force?: boolean };
     return NextResponse.json(await runMonitor(body.topic, body.force ?? false));
