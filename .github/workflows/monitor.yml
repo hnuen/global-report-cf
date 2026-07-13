@@ -52,3 +52,57 @@ jobs:
             exit 1
           fi
           echo "Success"
+
+          # Expose alerting count for the ntfy step below
+          ALERTING=$(python3 -c "import json,sys; d=json.load(open('/tmp/resp.json')); print(d.get('alerting',0))" 2>/dev/null || echo "0")
+          echo "alerting=$ALERTING" >> "$GITHUB_OUTPUT"
+        id: monitor
+
+      - name: Send ntfy alerts (direct from GitHub — bypasses Cloudflare IP block)
+        if: ${{ steps.monitor.outputs.alerting > 0 && secrets.NTFY_TOPIC != '' }}
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+          APP_URL:    ${{ secrets.APP_URL }}
+        run: |
+          ALERTING="${{ steps.monitor.outputs.alerting }}"
+          # Build a concise summary from the monitor response
+          HEADLINES=$(python3 -c "
+          import json, sys
+          d = json.load(open('/tmp/resp.json'))
+          arts = [a for a in d.get('topScored', []) if a.get('shouldAlert')]
+          lines = []
+          for a in arts[:5]:
+            score = a.get('score','?')
+            hl = a.get('headline','')[:80]
+            url  = a.get('sourceUrl','')
+            lines.append(f'[{score}] {hl}')
+            if url and url != '#':
+              lines.append(f'    {url}')
+          print('\n'.join(lines) if lines else 'See app for details')
+          " 2>/dev/null || echo "See app for details")
+
+          TITLE="🚨 Global Report — ${ALERTING} alert$([ "$ALERTING" -eq 1 ] || echo s)"
+          BODY="${HEADLINES}"$'\n'"${APP_URL%/}"
+
+          AUTH_HDR=""
+          if [ -n "$NTFY_TOKEN" ]; then
+            AUTH_HDR="-H \"Authorization: Bearer $NTFY_TOKEN\""
+          fi
+
+          HTTP_NTFY=$(curl -s -o /tmp/ntfy_resp.txt -w "%{http_code}" \
+            -X POST "https://ntfy.sh/${NTFY_TOPIC}" \
+            -H "Title: ${TITLE}" \
+            -H "Priority: high" \
+            -H "Tags: rotating_light" \
+            ${AUTH_HDR:+$AUTH_HDR} \
+            -d "$BODY" \
+            --max-time 15)
+
+          echo "ntfy HTTP: $HTTP_NTFY"
+          cat /tmp/ntfy_resp.txt || true
+          if [ "$HTTP_NTFY" = "200" ] || [ "$HTTP_NTFY" = "201" ]; then
+            echo "✅ ntfy sent"
+          else
+            echo "⚠️ ntfy failed (HTTP $HTTP_NTFY) — non-fatal"
+          fi
