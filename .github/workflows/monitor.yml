@@ -85,9 +85,9 @@ jobs:
           TITLE="🚨 Global Report — ${ALERTING} alert$([ "$ALERTING" -eq 1 ] || echo s)"
           BODY="${HEADLINES}"$'\n'"${APP_URL%/}"
 
-          AUTH_HDR=""
+          AUTH_ARGS=()
           if [ -n "$NTFY_TOKEN" ]; then
-            AUTH_HDR="-H \"Authorization: Bearer $NTFY_TOKEN\""
+            AUTH_ARGS+=(-H "Authorization: Bearer $NTFY_TOKEN")
           fi
 
           HTTP_NTFY=$(curl -s -o /tmp/ntfy_resp.txt -w "%{http_code}" \
@@ -95,7 +95,7 @@ jobs:
             -H "Title: ${TITLE}" \
             -H "Priority: high" \
             -H "Tags: rotating_light" \
-            ${AUTH_HDR:+$AUTH_HDR} \
+            "${AUTH_ARGS[@]}" \
             -d "$BODY" \
             --max-time 15)
 
