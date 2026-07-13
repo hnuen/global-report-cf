@@ -1,0 +1,59 @@
+name: Weekly Article Backup
+
+on:
+  schedule:
+    # Every Sunday at 02:00 UTC
+    - cron: '0 2 * * 0'
+  workflow_dispatch: {}
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Fetch article library from app
+        run: |
+          APP_URL="${{ secrets.APP_URL }}"
+          APP_URL="${APP_URL%/}"
+
+          HTTP=$(curl -s -L -o /tmp/articles.json -w "%{http_code}" \
+            "$APP_URL/api/news" \
+            -H "x-vercel-protection-bypass: ${{ secrets.VERCEL_BYPASS_TOKEN }}" \
+            --max-time 30)
+
+          echo "HTTP: $HTTP"
+          if [ "$HTTP" != "200" ]; then
+            echo "Failed to fetch articles (HTTP $HTTP)"
+            exit 1
+          fi
+
+          COUNT=$(python3 -c "import json; d=json.load(open('/tmp/articles.json')); print(len(d.get('articles', [])))" 2>/dev/null || echo "?")
+          echo "Articles fetched: $COUNT"
+
+      - name: Save backup file
+        run: |
+          DATE=$(date -u +"%Y-%m-%d")
+          mkdir -p data/backups
+
+          # Stamped copy (keeps history)
+          cp /tmp/articles.json "data/backups/articles-${DATE}.json"
+
+          # Latest symlink-style file (always current)
+          cp /tmp/articles.json data/article-backup.json
+
+          echo "Saved data/article-backup.json and data/backups/articles-${DATE}.json"
+
+      - name: Commit backup
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/article-backup.json data/backups/
+          git diff --cached --quiet && echo "No changes" && exit 0
+          COUNT=$(python3 -c "import json; d=json.load(open('data/article-backup.json')); print(len(d.get('articles', [])))" 2>/dev/null || echo "?")
+          DATE=$(date -u +"%Y-%m-%d")
+          git commit -m "chore: weekly article backup ${DATE} (${COUNT} articles) [skip ci]"
+          git push
