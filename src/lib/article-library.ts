@@ -14,9 +14,7 @@
 import type { Article } from "./types";
 
 const LIBRARY_KEY     = "app:article-library:v1";
-const LIBRARY_TTL     = 180 * 24 * 3600; // 6 months in seconds
-const MAX_PER_SECTION = 150;             // cap per section (~6 months at OFAC publish frequency)
-const SIX_MONTHS_MS   = 180 * 24 * 60 * 60 * 1000;
+// No time or count limits — library grows indefinitely; Redis free tier (256 MB) is ample.
 
 // ── Upstash REST helpers (direct — StorageManager only exposes load/save Briefing) ──
 
@@ -36,14 +34,14 @@ async function redisGet(key: string): Promise<string | null> {
   } catch { return null; }
 }
 
-async function redisSet(key: string, value: string, ttl: number): Promise<void> {
+async function redisSet(key: string, value: string, ttl?: number): Promise<void> {
   const url = upstashUrl(); const token = upstashToken();
   if (!url || !token) return;
   try {
     await fetch(`${url}/set/${encodeURIComponent(key)}`, {
       method: "POST",
       headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
-      body: JSON.stringify({ value, ex: ttl }),
+      body: JSON.stringify(ttl ? { value, ex: ttl } : { value }),
     });
   } catch { /* non-fatal */ }
 }
@@ -91,13 +89,6 @@ function headlineKey(headline: string): string {
   return headline.slice(0, 80).toLowerCase().replace(/\s+/g, " ").trim();
 }
 
-/** True if the article's date is within the 6-month retention window */
-function isWithinRetention(article: Article): boolean {
-  const t = Date.parse(article.date || "");
-  if (isNaN(t)) return true; // undated articles — keep
-  return Date.now() - t <= SIX_MONTHS_MS;
-}
-
 export async function loadArticleLibrary(): Promise<Article[]> {
   try {
     const raw = await redisGet(LIBRARY_KEY);
@@ -129,13 +120,11 @@ export async function saveArticlesToLibrary(newArticles: Article[]): Promise<voi
     }
   }
 
-  // Apply 6-month retention filter
-  const retained = [...map.values()].filter(isWithinRetention);
-
-  // Cap at MAX_PER_SECTION per section — sort newest first within each section
+  // Sort newest first within each section
   const SECTIONS = ["sanctions","economics","regions","occ","penalties","bis"] as const;
+  const allArticles = [...map.values()];
   const bySection = new Map<string, Article[]>();
-  for (const a of retained) {
+  for (const a of allArticles) {
     const sec = a.section ?? "sanctions";
     const list = bySection.get(sec) ?? [];
     list.push(a);
@@ -144,17 +133,16 @@ export async function saveArticlesToLibrary(newArticles: Article[]): Promise<voi
   const merged: Article[] = [];
   for (const sec of SECTIONS) {
     const list = (bySection.get(sec) ?? [])
-      .sort((a, b) => (b.date || "").localeCompare(a.date || ""))
-      .slice(0, MAX_PER_SECTION);
+      .sort((a, b) => (b.date || "").localeCompare(a.date || ""));
     merged.push(...list);
   }
   // Also keep articles from sections not in the standard list
   for (const [sec, list] of bySection) {
     if (!(SECTIONS as readonly string[]).includes(sec)) {
-      merged.push(...list.slice(0, MAX_PER_SECTION));
+      merged.push(...list);
     }
   }
 
-  await redisSet(LIBRARY_KEY, JSON.stringify(merged), LIBRARY_TTL);
+  await redisSet(LIBRARY_KEY, JSON.stringify(merged)); // no TTL — persists indefinitely
   console.log(`[article-library] Saved ${merged.length} articles total (${candidates.length} new/updated)`);
 }
