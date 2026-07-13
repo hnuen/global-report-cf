@@ -59,7 +59,7 @@ jobs:
         id: monitor
 
       - name: Send ntfy alerts (direct from GitHub — bypasses Cloudflare IP block)
-        if: ${{ steps.monitor.outputs.alerting > 0 && secrets.NTFY_TOPIC != '' }}
+        if: ${{ steps.monitor.outputs.alerting > 0 }}
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
