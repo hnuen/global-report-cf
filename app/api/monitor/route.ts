@@ -168,6 +168,19 @@ async function runMonitor(topic?: string, force = false) {
     forceSend,
     cooldownBlocked: blockedKeys.length,
     blockedKeys,
+    // alertedArticles: exactly what was sent to notifiers this run (used by
+    // the ntfy step in monitor.yml to build the push notification body).
+    // topScored only shows the highest-scoring articles overall — which are
+    // often dominated by older OFAC entries (score 100 via gov-source rule)
+    // that don't alert (recentEnough=false), pushing today's alerted public-
+    // media articles off the list and making them invisible to ntfy.
+    alertedArticles: newAlerts.map(s => ({
+      score:     s.score,
+      section:   s.article.section,
+      sourceUrl: s.article.sourceUrl?.slice(0, 120),
+      headline:  s.article.headline?.slice(0, 100),
+      reasons:   s.reasons,
+    })),
     topScored: scored.slice(0, 5).map(s => ({
       score:       s.score,
       shouldAlert: s.shouldAlert,

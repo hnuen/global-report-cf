@@ -70,7 +70,11 @@ jobs:
           HEADLINES=$(python3 -c "
           import json, sys
           d = json.load(open('/tmp/resp.json'))
-          arts = [a for a in d.get('topScored', []) if a.get('shouldAlert')]
+          # Use alertedArticles (exact set sent to notifiers) when available.
+          # topScored fallback is dominated by high-scoring older OFAC entries
+          # (score 100 via gov-source rule, but recentEnough=false), which can
+          # push today’s alerted public-media articles off the visible list.
+          arts = d.get('alertedArticles') or [a for a in d.get('topScored', []) if a.get('shouldAlert')]
           lines = []
           for a in arts[:5]:
             score = a.get('score','?')
