@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14T20:09:04.327Z",
+  "updatedAt": "2026-07-14T20:39:02.198Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260714",
@@ -1115,7 +1115,7 @@
           "number": "Z",
           "title": "Iran General License Z",
           "date": "July 10, 2026",
-          "expires": "",
+          "expires": "September 12, 2026",
           "url": "https://ofac.treasury.gov/media/936551/download?inline"
         },
         {
@@ -2834,7 +2834,7 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "Trump scraps threat of 20% fee on Hormuz cargo as US prepares to resume blockade of Iran ports",
+      "title": "Trump scraps threat of 20% fee on Hormuz cargo as US resumes blockade of Iran ports",
       "url": "https://www.bbc.co.uk/news/articles/cy0608wy8pro?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 14, 2026",
       "description": "Trump drops a 24-hour-old vow to charge cargo ships for using the Strait as the US continues its battle to break Iran's hold on the waterway."
@@ -2852,7 +2852,7 @@
       "description": "The Iran-backed Houthis blame Saudi Arabia for the attack in Yemen's capital and say they targeted Abha airport in response."
     },
     {
-      "title": "Trump scraps threat of 20% fee on Hormuz cargo as US prepares to resume blockade of Iran ports",
+      "title": "Trump scraps threat of 20% fee on Hormuz cargo as US resumes blockade of Iran ports",
       "url": "https://www.bbc.co.uk/news/articles/cy0608wy8pro?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 14, 2026",
       "description": "Trump drops a 24-hour-old vow to charge cargo ships for using the Strait as the US continues its battle to break Iran's hold on the waterway."
@@ -2865,6 +2865,12 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Senate Democrats block defence bill over Iran war, Israel provisions",
+      "url": "https://www.aljazeera.com/news/2026/7/14/senate-democrats-block-defence-bill-over-iran-war-israel-provisions?traffic_source=rss",
+      "date": "July 14, 2026",
+      "description": "The Senate voted 50-46 to block debate on the annual defence bill over war funding and defence cooperation with Israel."
+    },
     {
       "title": "US strikes new targets in Iran as Tehran hits Gulf states, Hormuz shipping",
       "url": "https://www.aljazeera.com/news/2026/7/14/us-strikes-new-targets-in-iran-as-tehran-hits-gulf-states-hormuz?traffic_source=rss",
@@ -2894,24 +2900,6 @@
       "url": "https://www.aljazeera.com/economy/2026/7/14/us-consumer-prices-drop-in-june-as-energy-costs-tumble?traffic_source=rss",
       "date": "July 14, 2026",
       "description": "Inflation eased due to cheaper energy, but experts warn price increases may return after renewed US-Iran tensions."
-    },
-    {
-      "title": "Even if the Iran war ends, the next fossil fuel shock is already on its way",
-      "url": "https://www.aljazeera.com/opinions/2026/7/14/even-if-the-iran-war-ends-the-next-fossil-fuel-shock-is-already-on-its-way?traffic_source=rss",
-      "date": "July 14, 2026",
-      "description": "To prepare, the world needs to focus on building energy independence through renewables and decentralisation."
-    },
-    {
-      "title": "India summons Iranian diplomat over missile killing of seafarer",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/14/india-summons-iranian-diplomat-over-missile-killing-of-seafarer?traffic_source=rss",
-      "date": "July 14, 2026",
-      "description": "India summoned Iran&#039;s deputy ambassador after an Indian crew member was killed in the Strait of Hormuz."
-    },
-    {
-      "title": "Olympic funding questioned by nine EU nations over Russia readmission",
-      "url": "https://www.aljazeera.com/sports/2026/7/14/olympic-funding-questioned-by-nine-eu-nations-over-russia-readmission?traffic_source=rss",
-      "date": "July 14, 2026",
-      "description": "Nine EU nations urge funding cuts for sports bodies including International Olympic Committee over readmitting Russians."
     }
   ],
   "occNews": [
@@ -3516,6 +3504,30 @@
       "description": "The people turning life experience into business ideas with funding and other support"
     },
     {
+      "title": "Worker killed in furnace explosion fire at Indian recycling plant",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/14/worker-killed-in-furnace-explosion-fire-at-indian-recycling-plant?traffic_source=rss",
+      "date": "July 14, 2026",
+      "description": "A furnace explosion triggered a fire at Jain Resource Recycling&#039;s plant in the Indian state of Tamil Nadu."
+    },
+    {
+      "title": "Why Yemen’s long ‘no war, no peace’ deadlock may be ending",
+      "url": "https://www.aljazeera.com/features/2026/7/14/why-yemens-long-no-war-no-peace-deadlock-may-be-ending?traffic_source=rss",
+      "date": "July 14, 2026",
+      "description": "Mobilisation of fighters and attacks signal the collapse of Yemen&#039;s fragile peace, with regional implications looming."
+    },
+    {
+      "title": "Mahmoud Khalil alleges conspiracy in lawsuit against Trump officials",
+      "url": "https://www.aljazeera.com/news/2026/7/14/mahmoud-khalil-alleges-conspiracy-in-lawsuit-against-trump-officials?traffic_source=rss",
+      "date": "July 14, 2026",
+      "description": "Lawsuit claims conspiracy between top administrative officials and private groups to target the pro-Palestine advocate."
+    },
+    {
+      "title": "New York imposes landmark one-year ban on large data centres",
+      "url": "https://www.aljazeera.com/economy/2026/7/14/new-york-imposes-landmark-one-year-ban-on-large-data-centres?traffic_source=rss",
+      "date": "July 14, 2026",
+      "description": "Data centre moratorium pushes have gained steam around the US, with bans proposed in at least a dozen states."
+    },
+    {
       "title": "US President Trump meets with ‘fan of America’ Iraqi PM Ali al-Zaidi",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/14/us-president-trump-meets-with-fan-of-america-iraqi-pm-ali-al-zaidi?traffic_source=rss",
       "date": "July 14, 2026",
@@ -3604,18 +3616,6 @@
       "url": "https://www.aljazeera.com/video/money-works/2026/7/14/how-the-late-father-emir-transformed-qatars-economy?traffic_source=rss",
       "date": "July 14, 2026",
       "description": "How the late Father Emir transformed Qatar’s economy"
-    },
-    {
-      "title": "FIFA World Cup: Meet Ismail Elfath, referee for England-Argentina semifinal",
-      "url": "https://www.aljazeera.com/sports/2026/7/14/fifa-world-cup-meet-ismail-elfath-referee-for-england-argentina-semifinal?traffic_source=rss",
-      "date": "July 14, 2026",
-      "description": "American-Moroccan referee Elfath will take charge of England against Argentina, his fourth game at the 2026 World Cup."
-    },
-    {
-      "title": "‘Piracy’: Will Trump’s 20 percent Hormuz toll find takers?",
-      "url": "https://www.aljazeera.com/economy/2026/7/14/piracy-will-trumps-20-percent-hormuz-toll-find-takers?traffic_source=rss",
-      "date": "July 14, 2026",
-      "description": "Trump says the US will start charging a cargo fee for ships passing through the Strait of Hormuz."
     }
   ]
 }
