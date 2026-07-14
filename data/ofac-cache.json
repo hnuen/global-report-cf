@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14T14:09:05.179Z",
+  "updatedAt": "2026-07-14T14:39:02.265Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260713",
@@ -2780,50 +2780,7 @@
       "date": "March 31, 2016"
     }
   ],
-  "europaNews": [
-    {
-      "title": "Statement on the seventh Sanctions Coordinators Forum",
-      "url": "https://finance.ec.europa.eu/news/statement-seventh-sanctions-coordinators-forum-2026-04-30_en",
-      "date": "April 30, 2026",
-      "description": "Today, EU Sanctions Envoy, David O’Sullivan, convened the sixth Sanctions Coordinators Forum, gathering high‑level representatives from all EU Member States and a broad coalition of international partners. Representatives of the Government of Ukraine joined for a dedicated session."
-    },
-    {
-      "title": "Statement by Commissioner Albuquerque on the outcomes of the ninth high-level meeting on sanctions implementation",
-      "url": "https://finance.ec.europa.eu/news/statement-commissioner-albuquerque-outcomes-ninth-high-level-meeting-sanctions-implementation-2026-04-30_en",
-      "date": "April 30, 2026",
-      "description": "High‑level representatives from Member States, alongside the Commission and the European External Action Service, came together to share best practices and success stories, and discuss challenges."
-    },
-    {
-      "title": "EU adopts 20th package of sanctions against Russia",
-      "url": "https://finance.ec.europa.eu/news/eu-adopts-20th-package-sanctions-against-russia-2026-04-23_en",
-      "date": "April 24, 2026",
-      "description": "The Commission welcomes the Council's adoption of the 20th Russia sanctions package, that puts further pressure on Russia to engage in negotiations and do so on terms acceptable for Ukraine."
-    },
-    {
-      "title": "Commission welcomes new sanctions against Iran",
-      "url": "https://finance.ec.europa.eu/news/commission-welcomes-new-sanctions-against-iran-2026-01-30_en",
-      "date": "January 30, 2026",
-      "description": "The restrictive measures consist of an asset freeze, travel bans to the EU, and a prohibition to make funds or economic resources available to those listed."
-    },
-    {
-      "title": "New dynamic mechanism to lower price cap for Russian crude oil to $44,10 per barrel",
-      "url": "https://finance.ec.europa.eu/news/new-dynamic-mechanism-lower-price-cap-russian-crude-oil-4410-barrel-2026-01-15_en",
-      "date": "January 30, 2026",
-      "description": "Today, the new automatic and dynamic mechanism for price adaptation of the oil price cap for Russian crude will be applied for the first time."
-    },
-    {
-      "title": "Sanctions: Member States designate 41 additional vessels in Russia's shadow fleet",
-      "url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_25_3129",
-      "date": "December 18, 2025",
-      "description": "With these new listings, a total of 597 vessels are now listed by the EU."
-    },
-    {
-      "title": "Sanctions: The EU adopts new measures against the Russian shadow fleet ecosystem and Belarus",
-      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_25_3070",
-      "date": "December 15, 2025",
-      "description": "These new measures aim at further increasing the pressure on Russia and Belarus and supporting EU's goal of achieving a just and lasting peace for Ukraine."
-    }
-  ],
+  "europaNews": [],
   "unNotices": [],
   "bbcNews": [
     {
@@ -2840,6 +2797,12 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Russia-Ukraine war: What is Europe’s new ballistic missile shield plan?",
+      "url": "https://www.aljazeera.com/news/2026/7/14/russia-ukraine-war-what-is-europes-new-ballistic-missile-shield-plan?traffic_source=rss",
+      "date": "July 14, 2026",
+      "description": "Nine European countries and Ukraine have launched a coalition to build Europe&#039;s own defence against ballistic missiles."
+    },
     {
       "title": "Iran lawmakers present Hormuz management bill as US war heats up",
       "url": "https://www.aljazeera.com/news/2026/7/14/iran-lawmakers-present-hormuz-management-bill-as-us-war-heats-up?traffic_source=rss",
@@ -2968,10 +2931,22 @@
   ],
   "regionsNews": [
     {
-      "title": "Bangkok fire investigation finds locked doors and flammable decor as deaths climb to 30",
-      "url": "https://www.bbc.co.uk/news/articles/clyxyzlp9p2o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "How US commerce secretary's Epstein links were uncovered by British whistleblower",
+      "url": "https://www.bbc.co.uk/news/articles/c9q28dlyxrzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 14, 2026",
-      "description": "Survivors and first responders reported locked doors and a lack of signage marking emergency exits."
+      "description": "Simon Andriesz made the discovery about Howard Lutnick in publicly released Epstein files."
+    },
+    {
+      "title": "Israeli strike on police post in north Gaza kills seven, officials say",
+      "url": "https://www.bbc.co.uk/news/articles/cqj1jqeyl5ro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 14, 2026",
+      "description": "A senior officer in the Hamas-run police force was among those killed in the strike, which Israel's military says targeted \"terrorists\"."
+    },
+    {
+      "title": "Diamond giant De Beers halts work at flagship South African mine as demand plummets",
+      "url": "https://www.bbc.co.uk/news/articles/cjrgr7lr1ejo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 14, 2026",
+      "description": "Production will stop for two years at the mine which employs more than 4,000 people."
     },
     {
       "title": "'If we die, we die together': Wife of man nearly sucked out of Ryanair plane speaks of ordeal",
@@ -2980,10 +2955,22 @@
       "description": "Svetlana Grković told Serbian media that her husband is \"seriously injured and in shock\"."
     },
     {
+      "title": "Bangkok fire investigation finds locked doors and flammable decor as deaths climb to 30",
+      "url": "https://www.bbc.co.uk/news/articles/clyxyzlp9p2o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 14, 2026",
+      "description": "Survivors and first responders reported locked doors and a lack of signage marking emergency exits."
+    },
+    {
       "title": "Australian police reveal unseen photos 25 years after British backpacker murder",
       "url": "https://www.bbc.co.uk/news/articles/crlwln0gkzlo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 14, 2026",
       "description": "Police hope the images could jog memories that will help them find the body of Peter Falconio."
+    },
+    {
+      "title": "Singapore court orders Bloomberg to pay $356,000 to ministers in defamation case",
+      "url": "https://www.bbc.co.uk/news/articles/cx232p85lp5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 14, 2026",
+      "description": "The ministers claimed the piece, which cited their luxury bungalow deals, had tarnished their reputation."
     },
     {
       "title": "Hungary parliament votes to remove president from office",
@@ -3034,12 +3021,6 @@
       "description": "Other US fast-food brands have struggled to succeed in the countries their dishes originated in."
     },
     {
-      "title": "Briton tells of surviving Spain wildfire in car as wife and friends died trying to run to safety",
-      "url": "https://www.bbc.co.uk/news/articles/cp9ld3p324jo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 13, 2026",
-      "description": "Malcolm Timbrell's wife and their friends are thought to have died when a devastating wildfire tore through their village in Spain."
-    },
-    {
       "title": "'Hero, legend, sweetheart': Tributes to Jurassic Park actor Sam Neill, who has died aged 78",
       "url": "https://www.bbc.co.uk/news/articles/cy06e5e1lygo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 14, 2026",
@@ -3070,28 +3051,10 @@
       "description": "The pair, named only as Twana H.S. and Asia R. A., left Germany for Iraq in 2015 and became members of the Islamic State group."
     },
     {
-      "title": "Wildfire raging south of Paris could have been set deliberately, says minister",
-      "url": "https://www.bbc.co.uk/news/articles/clye4z168edo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Briton tells of surviving Spain wildfire in car as wife and friends died trying to run to safety",
+      "url": "https://www.bbc.co.uk/news/articles/cp9ld3p324jo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 13, 2026",
-      "description": "The interior minister has said the fire near Paris could have been set deliberately and two people have been arrested."
-    },
-    {
-      "title": "Sudan's paramilitary RSF chief sentenced to death over war crimes",
-      "url": "https://www.bbc.co.uk/news/articles/cn4dk3kl0l4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 13, 2026",
-      "description": "Mohamed Hamdan Dagalo was convicted in absentia along with 15 RSF commanders and allies."
-    },
-    {
-      "title": "Ted Lasso actor Fernandez makes professional debut",
-      "url": "https://www.bbc.co.uk/sport/football/articles/ckg7me5kdk1o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 13, 2026",
-      "description": "Ted Lasso actor Cristo Fernandez makes his professional football debut for American second-tier side El Paso Locomotive."
-    },
-    {
-      "title": "Men disguised as police kill Ecuadorean drug lord's brother",
-      "url": "https://www.bbc.co.uk/news/articles/c20yx84g103o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 13, 2026",
-      "description": "The victim, David Macías, was the brother of drug lord 'El Fito', who is awaiting trial in the US."
+      "description": "Malcolm Timbrell's wife and their friends are thought to have died when a devastating wildfire tore through their village in Spain."
     },
     {
       "title": "How India's Lord's win echoes the legacy of its pioneering women cricketers",
@@ -3104,12 +3067,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cx2wrvqq9rlo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 13, 2026",
       "description": "The actor built up a long string of screen credits over a five-decade career."
-    },
-    {
-      "title": "How US commerce secretary's Epstein links were uncovered by British whistleblower",
-      "url": "https://www.bbc.co.uk/news/articles/c9q28dlyxrzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 14, 2026",
-      "description": "Simon Andriesz made the discovery about Howard Lutnick in publicly released Epstein files."
     },
     {
       "title": "The SpaceX IPO made history. One month on has it lost momentum?",
@@ -3466,6 +3423,12 @@
       "description": "The people turning life experience into business ideas with funding and other support"
     },
     {
+      "title": "‘Piracy’: Will Trump’s 20 percent Hormuz toll find takers?",
+      "url": "https://www.aljazeera.com/economy/2026/7/14/piracy-will-trumps-20-percent-hormuz-toll-find-takers?traffic_source=rss",
+      "date": "July 14, 2026",
+      "description": "Trump says the US will start charging a cargo fee for ships passing through the Strait of Hormuz."
+    },
+    {
       "title": "Indian activist Wangchuk urged to end hunger strike over exam paper leaks",
       "url": "https://www.aljazeera.com/news/2026/7/14/indian-activist-wangchuk-urged-to-end-hunger-strike-over-exam-paper-leaks?traffic_source=rss",
       "date": "July 14, 2026",
@@ -3572,18 +3535,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/14/ice-kills-26-year-old-in-maine-what-happened-and-who-else-has-ice-killed?traffic_source=rss",
       "date": "July 14, 2026",
       "description": "More than 60 people have died in ICE shootings or while in detention since Donald Trump returned to power."
-    },
-    {
-      "title": "Emir of Qatar receives condolences on the death of the Father Emir",
-      "url": "https://www.aljazeera.com/news/2026/7/14/emir-of-qatar-receives-condolences-on-the-death-of-the-father-emir?traffic_source=rss",
-      "date": "July 14, 2026",
-      "description": "Condolences from several government leaders, who expressed their sincere sympathy to Qatar, its leadership and people."
-    },
-    {
-      "title": "FIFA World Cup brackets: Semifinal schedule, France vs Spain prediction",
-      "url": "https://www.aljazeera.com/sports/2026/7/14/fifa-world-cup-brackets-semifinal-schedule-france-vs-spain-prediction?traffic_source=rss",
-      "date": "July 14, 2026",
-      "description": "France face Spain in the first World Cup semifinal, as Argentina prepare to renew their rivalry with England."
     }
   ]
 }
