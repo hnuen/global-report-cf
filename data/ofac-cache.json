@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14T17:39:09.207Z",
+  "updatedAt": "2026-07-14T18:09:03.771Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260713",
@@ -2887,12 +2887,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/14/iran-lawmakers-present-hormuz-management-bill-as-us-war-heats-up?traffic_source=rss",
       "date": "July 14, 2026",
       "description": "Hardline MPs table plan that aims to formalise control over the strait and undermine any negotiations."
-    },
-    {
-      "title": "Russia readies to reroute exports from Sea of Azov after Ukrainian attacks",
-      "url": "https://www.aljazeera.com/news/2026/7/14/russia-readies-to-reroute-exports-from-sea-of-azov-after-ukrainian-attacks?traffic_source=rss",
-      "date": "July 14, 2026",
-      "description": "Ukraine says drones hit 11 Russian vessels in the Azov Sea, targeting tankers, dry cargo ships, and a tugboat overnight."
     }
   ],
   "occNews": [
@@ -2904,6 +2898,13 @@
     }
   ],
   "economicsNews": [
+    {
+      "title": "Minutes of the Board&#39;s discount rate meetings on June 8 and June 17, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260714a.htm",
+      "date": "July 14, 2026",
+      "description": "Minutes of the Board&#39;s discount rate meetings on June 8 and June 17, 2026",
+      "category": "Monetary Policy"
+    },
     {
       "title": "Federal Reserve announces the leadership and objectives of its task forces to advance the conduct of monetary policy",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260709a.htm",
@@ -3490,6 +3491,24 @@
       "description": "The people turning life experience into business ideas with funding and other support"
     },
     {
+      "title": "Cuba’s power grid collapses again, triggering third blackout in 10 days",
+      "url": "https://www.aljazeera.com/news/2026/7/14/cubas-power-grid-collapses-again-triggering-third-blackout-in-10-days?traffic_source=rss",
+      "date": "July 14, 2026",
+      "description": "Millions lost power as Cuba’s fifth nationwide blackout of 2026 hit amid a US-imposed oil blockade."
+    },
+    {
+      "title": "Trump meets with Iraq Prime Minister at White House, vows ‘a lot of deals’",
+      "url": "https://www.aljazeera.com/news/2026/7/14/trump-meets-with-iraq-prime-minister-at-white-house-vows-a-lot-of-deals?traffic_source=rss",
+      "date": "July 14, 2026",
+      "description": "Iraqi prime minister says relations with US shifting from militaristic to economic, vows disarmament of factions."
+    },
+    {
+      "title": "Sudan faces escalating hunger crisis due to war and Hormuz disruption – WFP",
+      "url": "https://www.aljazeera.com/news/2026/7/14/sudan-faces-escalating-hunger-crisis-due-to-war-and-hormuz-disruption?traffic_source=rss",
+      "date": "July 14, 2026",
+      "description": "Renewed conflict and tensions in the Strait of Hormuz have slowed fertiliser shipments, worsening hunger in Sudan."
+    },
+    {
       "title": "Murder of UK politician Ann Widdecombe was ‘targeted attack’, police say",
       "url": "https://www.aljazeera.com/news/2026/7/14/murder-of-uk-politician-ann-widdecombe-was-targeted-attack-police-say?traffic_source=rss",
       "date": "July 14, 2026",
@@ -3584,18 +3603,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/14/whats-behind-the-sanaa-airport-attack-and-latest-yemen-tensions?traffic_source=rss",
       "date": "July 14, 2026",
       "description": "A diverted Iranian plane, a strike on Sanaa Airport and threats of retaliation have reignited tensions in Yemen."
-    },
-    {
-      "title": "WHO warns DR Congo Ebola outbreak may be double the official tally",
-      "url": "https://www.aljazeera.com/news/2026/7/14/who-warns-dr-congo-ebola-outbreak-may-be-double-the-official-tally?traffic_source=rss",
-      "date": "July 14, 2026",
-      "description": "UN health agency says cases are underreported while doctors at outbreak epicentre threaten to go on strike."
-    },
-    {
-      "title": "Israel launches new illegal settlement expansion plan",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/14/israel-launches-new-illegal-settlement-expansion-plan?traffic_source=rss",
-      "date": "July 14, 2026",
-      "description": "Israel launches new illegal settlement expansion plan"
     }
   ]
 }
