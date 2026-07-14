@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14T15:08:58.479Z",
+  "updatedAt": "2026-07-14T15:39:01.090Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260713",
@@ -2780,7 +2780,50 @@
       "date": "March 31, 2016"
     }
   ],
-  "europaNews": [],
+  "europaNews": [
+    {
+      "title": "Statement on the seventh Sanctions Coordinators Forum",
+      "url": "https://finance.ec.europa.eu/news/statement-seventh-sanctions-coordinators-forum-2026-04-30_en",
+      "date": "April 30, 2026",
+      "description": "Today, EU Sanctions Envoy, David O’Sullivan, convened the sixth Sanctions Coordinators Forum, gathering high‑level representatives from all EU Member States and a broad coalition of international partners. Representatives of the Government of Ukraine joined for a dedicated session."
+    },
+    {
+      "title": "Statement by Commissioner Albuquerque on the outcomes of the ninth high-level meeting on sanctions implementation",
+      "url": "https://finance.ec.europa.eu/news/statement-commissioner-albuquerque-outcomes-ninth-high-level-meeting-sanctions-implementation-2026-04-30_en",
+      "date": "April 30, 2026",
+      "description": "High‑level representatives from Member States, alongside the Commission and the European External Action Service, came together to share best practices and success stories, and discuss challenges."
+    },
+    {
+      "title": "EU adopts 20th package of sanctions against Russia",
+      "url": "https://finance.ec.europa.eu/news/eu-adopts-20th-package-sanctions-against-russia-2026-04-23_en",
+      "date": "April 24, 2026",
+      "description": "The Commission welcomes the Council's adoption of the 20th Russia sanctions package, that puts further pressure on Russia to engage in negotiations and do so on terms acceptable for Ukraine."
+    },
+    {
+      "title": "Commission welcomes new sanctions against Iran",
+      "url": "https://finance.ec.europa.eu/news/commission-welcomes-new-sanctions-against-iran-2026-01-30_en",
+      "date": "January 30, 2026",
+      "description": "The restrictive measures consist of an asset freeze, travel bans to the EU, and a prohibition to make funds or economic resources available to those listed."
+    },
+    {
+      "title": "New dynamic mechanism to lower price cap for Russian crude oil to $44,10 per barrel",
+      "url": "https://finance.ec.europa.eu/news/new-dynamic-mechanism-lower-price-cap-russian-crude-oil-4410-barrel-2026-01-15_en",
+      "date": "January 30, 2026",
+      "description": "Today, the new automatic and dynamic mechanism for price adaptation of the oil price cap for Russian crude will be applied for the first time."
+    },
+    {
+      "title": "Sanctions: Member States designate 41 additional vessels in Russia's shadow fleet",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_25_3129",
+      "date": "December 18, 2025",
+      "description": "With these new listings, a total of 597 vessels are now listed by the EU."
+    },
+    {
+      "title": "Sanctions: The EU adopts new measures against the Russian shadow fleet ecosystem and Belarus",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_25_3070",
+      "date": "December 15, 2025",
+      "description": "These new measures aim at further increasing the pressure on Russia and Belarus and supporting EU's goal of achieving a just and lasting peace for Ukraine."
+    }
+  ],
   "unNotices": [],
   "bbcNews": [
     {
@@ -2797,6 +2840,12 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Even if the Iran war ends, the next fossil fuel shock is already on its way",
+      "url": "https://www.aljazeera.com/opinions/2026/7/14/even-if-the-iran-war-ends-the-next-fossil-fuel-shock-is-already-on-its-way?traffic_source=rss",
+      "date": "July 14, 2026",
+      "description": "To prepare, the world needs to focus on building energy independence through renewables and decentralisation."
+    },
     {
       "title": "India summons Iranian diplomat over missile killing of seafarer",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/14/india-summons-iranian-diplomat-over-missile-killing-of-seafarer?traffic_source=rss",
@@ -2826,18 +2875,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/14/russia-readies-to-reroute-exports-from-sea-of-azov-after-ukrainian-attacks?traffic_source=rss",
       "date": "July 14, 2026",
       "description": "Ukraine says drones hit 11 Russian vessels in the Azov Sea, targeting tankers, dry cargo ships, and a tugboat overnight."
-    },
-    {
-      "title": "Can Gulf countries defend themselves against renewed Iranian attacks?",
-      "url": "https://www.aljazeera.com/news/2026/7/14/can-gulf-countries-defend-themselves-against-renewed-iranian-attacks?traffic_source=rss",
-      "date": "July 14, 2026",
-      "description": "Expensive interceptor missiles are facing mounting pressure from Iran&#039;s cheaply produced drones."
-    },
-    {
-      "title": "Schumer slams Trump over Iran war",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/14/schumer-slams-trump-over-iran-war?traffic_source=rss",
-      "date": "July 14, 2026",
-      "description": "Schumer slams Trump over Iran war"
     }
   ],
   "occNews": [
@@ -3429,6 +3466,24 @@
       "description": "The people turning life experience into business ideas with funding and other support"
     },
     {
+      "title": "Jude Bellingham Station unveiled ahead of World Cup semi-final",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/14/jude-bellingham-station-unveiled-ahead-of-world-cup-semi-final?traffic_source=rss",
+      "date": "July 14, 2026",
+      "description": "A station in southeast London has been temporarily renamed Jude Bellingham Station before the World Cup semi-finals."
+    },
+    {
+      "title": "Leading Houthi threatens ‘siege’ on Saudi Arabia after Yemen airport attack",
+      "url": "https://www.aljazeera.com/news/2026/7/14/leading-houthi-threatens-siege-on-saudi-arabia-after-yemen-airport-attack?traffic_source=rss",
+      "date": "July 14, 2026",
+      "description": "Speaking to Al Jazeera, leading Houthi Mohammed al-Bukhaiti warns of attacks on Saudi Arabia."
+    },
+    {
+      "title": "How the late Father Emir transformed Qatar’s economy",
+      "url": "https://www.aljazeera.com/video/money-works/2026/7/14/how-the-late-father-emir-transformed-qatars-economy?traffic_source=rss",
+      "date": "July 14, 2026",
+      "description": "How the late Father Emir transformed Qatar’s economy"
+    },
+    {
       "title": "FIFA World Cup: Meet Ismail Elfath, referee for England-Argentina semifinal",
       "url": "https://www.aljazeera.com/sports/2026/7/14/fifa-world-cup-meet-ismail-elfath-referee-for-england-argentina-semifinal?traffic_source=rss",
       "date": "July 14, 2026",
@@ -3523,18 +3578,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/14/lebanon-israel-hold-talks-in-rome-on-implementing-framework-deal?traffic_source=rss",
       "date": "July 14, 2026",
       "description": "Beirut is hoping for progress towards securing an Israeli withdrawal from southern Lebanon."
-    },
-    {
-      "title": "Dozens of healthcare workers in DRC strike amid Ebola outbreak",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/14/dozens-of-healthcare-workers-in-drc-strike-amid-ebola-outbreak?traffic_source=rss",
-      "date": "July 14, 2026",
-      "description": "Healthcare workers at an Ebola treatment centre in the Democratic Republic of the Congo have gone on strike."
-    },
-    {
-      "title": "Utah Jazz guard Trey Alexander stretchered off court in NBA Summer League",
-      "url": "https://www.aljazeera.com/sports/2026/7/14/utah-jazz-guard-trey-alexander-stretchered-off-court-in-nba-summer-league?traffic_source=rss",
-      "date": "July 14, 2026",
-      "description": "Alexander, who signed a two-way deal with the Jazz last week. was injured in game against Chicago Bulls."
     }
   ]
 }
