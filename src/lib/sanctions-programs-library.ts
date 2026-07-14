@@ -325,7 +325,7 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
       // titled entry lives in the russia-hfa block. Fixed GL X's title below
       // from the same kind of generic placeholder to its real text, verified
       // against the GL's own PDF (media/936206) — GL X does belong here.
-                                                { number: "GL Z", title: "Iran General License Z", date: "July 10, 2026", url: "https://ofac.treasury.gov/media/936551/download?inline", addedDate: "July 14, 2026" },
+                                                { number: "GL Z", title: "Iran General License Z", date: "July 10, 2026", url: "https://ofac.treasury.gov/media/936551/download?inline", addedDate: "July 14, 2026" , expires: "September 12, 2026"},
 { number: "GL Y", title: "Iran General License Y", date: "June 21, 2026", url: "https://ofac.treasury.gov/media/936546/download?inline", expires: "August 9, 2026", addedDate: "July 10, 2026" },
 { number: "GL L", title: "Iran General License L", date: "December 15, 2016", url: "https://ofac.treasury.gov/media/48626/download?inline", addedDate: "June 27, 2026" },
       { number: "GL Q", title: "Iran General License Q", date: "October 26, 2020", url: "https://ofac.treasury.gov/media/934291/download?inline", addedDate: "June 27, 2026" },
