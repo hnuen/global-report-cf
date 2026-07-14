@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-07-14T19:39:05.845Z",
+  "updatedAt": "2026-07-14T20:09:04.327Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260714",
+      "code": "20260714",
+      "title": "Iran-related Designations; Iran-related and Counter Terrorism Designation Update; Issuance of Iran-related General License",
+      "date": "July 14, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260713",
       "code": "20260713",
@@ -8,15 +14,15 @@
       "date": "July 13, 2026"
     },
     {
-      "url": "https://ofac.treasury.gov/recent-actions/20260710",
-      "code": "20260710",
-      "title": "Issuance of Democratic Republic of the Congo-related General License",
-      "date": "July 10, 2026"
-    },
-    {
       "url": "https://ofac.treasury.gov/recent-actions/20260710_33",
       "code": "20260710_33",
       "title": "Iran-related and Counter Terrorism Designations; Issuance of Iran-related General License",
+      "date": "July 10, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260710",
+      "code": "20260710",
+      "title": "Issuance of Democratic Republic of the Congo-related General License",
       "date": "July 10, 2026"
     },
     {
@@ -53,12 +59,6 @@
       "url": "https://ofac.treasury.gov/recent-actions/20260629",
       "code": "20260629",
       "title": "Russia-related Designations Removals",
-      "date": "June 29, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260629_33",
-      "code": "20260629_33",
-      "title": "Launch of OFAC Reconsideration Portal",
       "date": "June 29, 2026"
     }
   ],
@@ -376,7 +376,7 @@
     "counter-terrorism-sanctions": {
       "name": "Counter Terrorism Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-terrorism-sanctions",
-      "lastUpdated": "Jul 10, 2026",
+      "lastUpdated": "Jul 14, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -912,7 +912,7 @@
     "iran-sanctions": {
       "name": "Iran Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions",
-      "lastUpdated": "Jul 10, 2026",
+      "lastUpdated": "Jul 14, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -1112,9 +1112,16 @@
           "url": "https://ofac.treasury.gov/media/936546/download?inline"
         },
         {
+          "number": "Z",
+          "title": "Iran General License Z",
+          "date": "July 10, 2026",
+          "expires": "",
+          "url": "https://ofac.treasury.gov/media/936551/download?inline"
+        },
+        {
           "number": "134C",
           "title": "Russia-related General License 134C",
-          "date": "July 10, 2026",
+          "date": "July 14, 2026",
           "expires": "August 21, 2026",
           "url": "https://ofac.treasury.gov/media/935641/download?inline"
         }
@@ -2833,7 +2840,7 @@
       "description": "Trump drops a 24-hour-old vow to charge cargo ships for using the Strait as the US continues its battle to break Iran's hold on the waterway."
     },
     {
-      "title": "Strait of Hormuz remains a fault line as Iran and US drift back into war",
+      "title": "Strait of Hormuz 'faultline' exposes weakness of the US-Iran deal",
       "url": "https://www.bbc.co.uk/news/articles/cwy0ydn033yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 14, 2026",
       "description": "Control of the waterway has become a key point of contention between the US and Iran, as a ceasefire deal falters."
@@ -2858,6 +2865,12 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "US strikes new targets in Iran as Tehran hits Gulf states, Hormuz shipping",
+      "url": "https://www.aljazeera.com/news/2026/7/14/us-strikes-new-targets-in-iran-as-tehran-hits-gulf-states-hormuz?traffic_source=rss",
+      "date": "July 14, 2026",
+      "description": "Iran&#039;s deputy foreign minister accuses US of destroying the interim peace deal."
+    },
     {
       "title": "US risks falling into ‘escalation trap’ if it deploys troops in Iran",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/14/us-risks-falling-into-escalation-trap-if-it-deploys-troops-in-iran?traffic_source=rss",
@@ -2899,12 +2912,6 @@
       "url": "https://www.aljazeera.com/sports/2026/7/14/olympic-funding-questioned-by-nine-eu-nations-over-russia-readmission?traffic_source=rss",
       "date": "July 14, 2026",
       "description": "Nine EU nations urge funding cuts for sports bodies including International Olympic Committee over readmitting Russians."
-    },
-    {
-      "title": "Russia-Ukraine war: What is Europe’s new ballistic missile shield plan?",
-      "url": "https://www.aljazeera.com/news/2026/7/14/russia-ukraine-war-what-is-europes-new-ballistic-missile-shield-plan?traffic_source=rss",
-      "date": "July 14, 2026",
-      "description": "Nine European countries and Ukraine have launched a coalition to build Europe&#039;s own defence against ballistic missiles."
     }
   ],
   "occNews": [
@@ -3509,6 +3516,18 @@
       "description": "The people turning life experience into business ideas with funding and other support"
     },
     {
+      "title": "US President Trump meets with ‘fan of America’ Iraqi PM Ali al-Zaidi",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/14/us-president-trump-meets-with-fan-of-america-iraqi-pm-ali-al-zaidi?traffic_source=rss",
+      "date": "July 14, 2026",
+      "description": "US President Donald Trump welcomed Iraqi Prime Minister Ali al-Zaidi to the White House."
+    },
+    {
+      "title": "Families claim bodies of victims of deadly Bangkok pub fire",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/14/families-claim-bodies-of-victims-of-deadly-bangkok-pub-fire?traffic_source=rss",
+      "date": "July 14, 2026",
+      "description": "‘No one has been able to accept it yet.’"
+    },
+    {
       "title": "US President Trump drops 20% Strait of Hormuz fee plan",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/14/us-president-trump-drops-20-strait-of-hormuz-fee-plan?traffic_source=rss",
       "date": "July 14, 2026",
@@ -3597,18 +3616,6 @@
       "url": "https://www.aljazeera.com/economy/2026/7/14/piracy-will-trumps-20-percent-hormuz-toll-find-takers?traffic_source=rss",
       "date": "July 14, 2026",
       "description": "Trump says the US will start charging a cargo fee for ships passing through the Strait of Hormuz."
-    },
-    {
-      "title": "Indian activist Wangchuk urged to end hunger strike over exam paper leaks",
-      "url": "https://www.aljazeera.com/news/2026/7/14/indian-activist-wangchuk-urged-to-end-hunger-strike-over-exam-paper-leaks?traffic_source=rss",
-      "date": "July 14, 2026",
-      "description": "Sonam Wangchuk has been​ fasting in New Delhi since June 28 in solidarity with Gen Z-led Cockroach Janta Party."
-    },
-    {
-      "title": "Mexico files criminal complaints over migrant deaths during ICE operations",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/14/mexico-files-criminal-complaints-over-migrant-deaths-during-ice-operations?traffic_source=rss",
-      "date": "July 14, 2026",
-      "description": "Mexico files criminal complaints over migrant deaths during ICE operations"
     }
   ]
 }
