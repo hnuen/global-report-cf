@@ -54,8 +54,12 @@ const TRUSTED_DOMAINS = [
   "state.gov", "commerce.gov", "whitehouse.gov",
   "eur-lex.europa.eu", "sanctions.ec.europa.eu",
   "gov.uk", "legislation.gov.uk",
-  "un.org", "bbc.co.uk", "bbc.com",
+  "un.org", "press.un.org",
+  "bbc.co.uk", "bbc.com",
   "reuters.com", "apnews.com",
+  "aljazeera.com",                  // AJ URLs blocked HEAD checks — trust by domain
+  "federalreserve.gov",
+  "finance.ec.europa.eu",
 ];
 
 function isTrustedDomain(url: string): boolean {

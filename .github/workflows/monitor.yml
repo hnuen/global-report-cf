@@ -66,28 +66,27 @@ jobs:
           APP_URL:    ${{ secrets.APP_URL }}
         run: |
           ALERTING="${{ steps.monitor.outputs.alerting }}"
-          # Build a concise summary from the monitor response
-          HEADLINES=$(python3 -c "
-          import json, sys
+
+          # Extract headlines + primary click URL from alertedArticles.
+          # URLs are NOT embedded in the body — mobile push bodies truncate at
+          # ~200 chars and the URL is the first thing cut. Instead we use
+          # ntfy's Click header so tapping the notification opens the article
+          # directly. Falls back to the app URL if no article sourceUrl exists.
+          NTFY_INFO=$(python3 -c "
+          import json
           d = json.load(open('/tmp/resp.json'))
-          # Use alertedArticles (exact set sent to notifiers) when available.
-          # topScored fallback is dominated by high-scoring older OFAC entries
-          # (score 100 via gov-source rule, but recentEnough=false), which can
-          # push today’s alerted public-media articles off the visible list.
           arts = d.get('alertedArticles') or [a for a in d.get('topScored', []) if a.get('shouldAlert')]
-          lines = []
-          for a in arts[:5]:
-            score = a.get('score','?')
-            hl = a.get('headline','')[:80]
-            url  = a.get('sourceUrl','')
-            lines.append(f'[{score}] {hl}')
-            if url and url != '#':
-              lines.append(f'    {url}')
-          print('\n'.join(lines) if lines else 'See app for details')
-          " 2>/dev/null || echo "See app for details")
+          click = next((a.get('sourceUrl','') for a in arts if a.get('sourceUrl') and a.get('sourceUrl') != '#'), '')
+          lines = [f\"[{a.get('score','?')}] {a.get('headline','')[:80]}\" for a in arts[:5]]
+          print(click)
+          print('\\n'.join(lines) if lines else 'See app for details')
+          " 2>/dev/null)
+
+          CLICK_URL=$(echo "$NTFY_INFO" | head -1)
+          BODY=$(echo "$NTFY_INFO" | tail -n +2)
+          [ -z "$CLICK_URL" ] && CLICK_URL="${APP_URL%/}"
 
           TITLE="🚨 Global Report — ${ALERTING} alert$([ "$ALERTING" -eq 1 ] || echo s)"
-          BODY="${HEADLINES}"$'\n'"${APP_URL%/}"
 
           AUTH_ARGS=()
           if [ -n "$NTFY_TOKEN" ]; then
@@ -99,6 +98,7 @@ jobs:
             -H "Title: ${TITLE}" \
             -H "Priority: high" \
             -H "Tags: rotating_light" \
+            -H "Click: ${CLICK_URL}" \
             "${AUTH_ARGS[@]}" \
             -d "$BODY" \
             --max-time 15)
