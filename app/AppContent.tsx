@@ -1066,7 +1066,7 @@ export default function GlobalMonitor() {
       {/* Status bar */}
       <div className="m-bar">
         <span className="m-dot"/>
-        <span className="m-txt">{formatLastUpdated(data.lastUpdated.replace(/\s*·\s*\d+\s*stories/i, ""), data.lastUpdatedIso)} · {allFiltered.length} stories</span>
+        <span className="m-txt">{data.lastUpdatedIso ? new Date(data.lastUpdatedIso).toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"})+" — "+new Date(data.lastUpdatedIso).toLocaleTimeString(undefined,{hour:"2-digit",minute:"2-digit"}) : data.lastUpdated.split(" — ")[0].trim()}</span>
         {section !== "penalties" && (
           <button className={`m-btn ${searchBarOpen||sanOn?"on":""}`}
             onClick={()=>setSearchBarOpen(v=>!v)}>⊘ {sanOn?"Filtered":"Filter"}</button>
