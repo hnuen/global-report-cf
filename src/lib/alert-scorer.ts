@@ -346,7 +346,13 @@ export function scoreArticle(article: Article): ScoredArticle {
   const isNoNewsFiller = NO_NEWS_PATTERN.test(searchText);
   if (isNoNewsFiller) reasons.push(`non-event / "no news" content — never alerts regardless of score`);
 
-  const shouldAlert = sectionOk && score >= threshold && recentEnough && !isNoNewsFiller;
+  // 10. AI-generated article gate — Gemini can hallucinate URLs that look
+  //     real but return 404s.  Any article produced by the LLM path is
+  //     display-only; only verified RSS/scrape articles should trigger alerts.
+  const isAiGenerated = !!(article as any).aiGenerated;
+  if (isAiGenerated) reasons.push("AI-generated article — display only, never alerts");
+
+  const shouldAlert = sectionOk && score >= threshold && recentEnough && !isNoNewsFiller && !isAiGenerated;
 
   return { article, score, reasons, shouldAlert };
 }

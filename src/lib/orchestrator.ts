@@ -304,6 +304,10 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
         ),
       ]);
       briefing = result.briefing;
+      // Mark every Gemini article so the alert pipeline can exclude them.
+      // LLM-generated articles have plausible-looking source/URL strings but the
+      // URLs are often hallucinated — a broken-link alert is worse than no alert.
+      briefing.articles = briefing.articles.map(a => ({ ...a, aiGenerated: true }));
       usedProvider = result.usedProvider;
       console.log(`[orchestrator] LLM succeeded (${usedProvider})`);
       // Save Gemini articles to the persistent library so they accumulate over time

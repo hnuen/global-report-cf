@@ -14,6 +14,10 @@ export interface Article {
   body: string[];        // array of paragraphs
   source: string;
   sourceUrl: string;
+  // Set to true for articles produced by the Gemini/LLM path.
+  // These are display-only and must never trigger push/Telegram alerts because
+  // the LLM can hallucinate plausible-looking URLs that are 404s on real sites.
+  aiGenerated?: boolean;
 }
 
 export interface WatchItem  { entity: string; type: string; note: string; }
