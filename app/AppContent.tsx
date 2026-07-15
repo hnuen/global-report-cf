@@ -1154,7 +1154,7 @@ export default function GlobalMonitor() {
                     {gl.url
                       ? <a href={gl.url} target="_blank" rel="noopener noreferrer" style={{fontFamily:"var(--mono)",fontSize:".55rem",color:"#374151",textDecoration:"none",flex:1,lineHeight:1.3}}>{gl.title}</a>
                       : <span style={{fontFamily:"var(--mono)",fontSize:".55rem",color:"#374151",flex:1,lineHeight:1.3}}>{gl.title}</span>}
-                    {gl.expires&&<span style={{fontFamily:"var(--mono)",fontSize:".48rem",color:"#f97316",flexShrink:0"}}>exp {gl.expires}</span>}
+                    {gl.expires&&<span style={{fontFamily:"var(--mono)",fontSize:".48rem",color:"#f97316",flexShrink:0}}>exp {gl.expires}</span>}
                   </div>
                 ))}
               </div>
@@ -1843,3 +1843,4 @@ export default function GlobalMonitor() {
     </div></>
   );
 }
+ 
