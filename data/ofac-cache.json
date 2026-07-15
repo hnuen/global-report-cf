@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-15T14:08:10.624Z",
+  "updatedAt": "2026-07-15T14:38:21.470Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260714",
@@ -2914,6 +2914,12 @@
   ],
   "ajNews": [
     {
+      "title": "Legal challenge says Trump ICC sanctions tread on US citizens’ rights",
+      "url": "https://www.aljazeera.com/news/2026/7/15/legal-challenge-says-trump-icc-sanctions-tread-on-us-citizens-rights?traffic_source=rss",
+      "date": "July 15, 2026",
+      "description": "Groups charge that sanctions against ICC, Palestinian rights organisations stifle freedom of speech and expression."
+    },
+    {
       "title": "US strikes marine control tower in Iran",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/15/us-strikes-marine-control-tower-in-iran?traffic_source=rss",
       "date": "July 15, 2026",
@@ -2930,28 +2936,9 @@
       "url": "https://www.aljazeera.com/news/2026/7/15/could-the-us-take-control-of-irans-southern-islands?traffic_source=rss",
       "date": "July 15, 2026",
       "description": "Operation would be a dramatic military spectacle but would carry costs analysts doubt Washington is willing to incur."
-    },
-    {
-      "title": "Iran launches attacks across region as US strikes continue",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/15/iran-launches-attacks-across-region-as-us-strikes-continue?traffic_source=rss",
-      "date": "July 15, 2026",
-      "description": "Iran attacked Kuwait, Bahrain, and Jordan on Tuesday night, claiming to destroy the US Fifth Fleet’s command centre."
-    },
-    {
-      "title": "Russian attack on Odesa kills three as Ukraine targets vessels in Black Sea",
-      "url": "https://www.aljazeera.com/news/2026/7/15/russian-attack-on-odesa-kills-three-as-ukraine-targets-vessels-in-black-sea?traffic_source=rss",
-      "date": "July 15, 2026",
-      "description": "At least three people killed and three others wounded in Russian strikes on Odesa, city&#039;s military administrator says."
     }
   ],
-  "occNews": [
-    {
-      "title": "OCC Announces Enforcement Actions for June 2026",
-      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-48.html",
-      "date": "June 18, 2026",
-      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for June 2026."
-    }
-  ],
+  "occNews": [],
   "economicsNews": [
     {
       "title": "Minutes of the Board&#39;s discount rate meetings on June 8 and June 17, 2026",
@@ -3216,16 +3203,16 @@
       "description": "Parenting experts share their tips on how to keep children's screen time under control."
     },
     {
+      "title": "EasyJet passengers stuck on tarmac for hours when plane couldn't refuel",
+      "url": "https://www.bbc.co.uk/news/articles/c3ryr25gvjdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 15, 2026",
+      "description": "One passenger said she only got home at 06:00 after being stuck on the runway in the middle of the night."
+    },
+    {
       "title": "How will Buy Now Pay Later changes affect you?",
       "url": "https://www.bbc.co.uk/news/articles/c9q283r9px3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 15, 2026",
       "description": "Consumers should be better protected as Buy Now Pay Later lenders now require authorisation to operate."
-    },
-    {
-      "title": "Several flights diverted after plane blocks Gatwick runway",
-      "url": "https://www.bbc.co.uk/news/articles/c3ryr25gvjdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 15, 2026",
-      "description": "An Easyjet flight had to land at Stanstead Airport instead, but then became stuck there when it couldn't find fuel."
     },
     {
       "title": "Midnight social media curfew proposed for UK teens aged 16 and 17",
@@ -3468,6 +3455,12 @@
       "description": "What impact might shortages have on our summer holidays - and what could be done about it?"
     },
     {
+      "title": "Money Box",
+      "url": "https://www.bbc.co.uk/sounds/play/m002yx7t?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 15, 2026",
+      "description": "New regulations start for shoppers using Buy Now, Pay Later."
+    },
+    {
       "title": "Woman's Hour",
       "url": "https://www.bbc.co.uk/sounds/play/m002yx3c?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 14, 2026",
@@ -3486,10 +3479,10 @@
       "description": "How to find lost bank accounts"
     },
     {
-      "title": "People Fixing The World",
-      "url": "https://www.bbc.co.uk/sounds/play/w3ct8t0z?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 7, 2026",
-      "description": "The people turning life experience into business ideas with funding and other support"
+      "title": "Iraq’s prime minister carries the title, but not the power",
+      "url": "https://www.aljazeera.com/opinions/2026/7/15/iraqs-prime-minister-carries-the-title-but-not-the-power?traffic_source=rss",
+      "date": "July 15, 2026",
+      "description": "Al-Zaidi’s Washington visit exposed the pressure reshaping Baghdad’s politics, security and economy."
     },
     {
       "title": "What DOGE saved, and what it cost",
