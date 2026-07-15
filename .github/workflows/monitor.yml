@@ -77,9 +77,14 @@ jobs:
           d = json.load(open('/tmp/resp.json'))
           arts = d.get('alertedArticles') or [a for a in d.get('topScored', []) if a.get('shouldAlert')]
           click = next((a.get('sourceUrl','') for a in arts if a.get('sourceUrl') and a.get('sourceUrl') != '#'), '')
-          lines = [f\"[{a.get('score','?')}] {a.get('headline','')[:80]}\" for a in arts[:5]]
+          def fmt(a):
+              sec = a.get('section','').upper()
+              region = a.get('region','')
+              tag = f\"{sec} | {region}\" if region else sec
+              return f\"{tag}\\n{a.get('headline','')[:120]}\"
+          lines = [fmt(a) for a in arts[:5]]
           print(click)
-          print('\\n'.join(lines) if lines else 'See app for details')
+          print('\\n\\n'.join(lines) if lines else 'See app for details')
           " 2>/dev/null)
 
           CLICK_URL=$(echo "$NTFY_INFO" | head -1)
@@ -105,8 +110,4 @@ jobs:
 
           echo "ntfy HTTP: $HTTP_NTFY"
           cat /tmp/ntfy_resp.txt || true
-          if [ "$HTTP_NTFY" = "200" ] || [ "$HTTP_NTFY" = "201" ]; then
-            echo "✅ ntfy sent"
-          else
-            echo "⚠️ ntfy failed (HTTP $HTTP_NTFY) — non-fatal"
-          fi
+          if 
