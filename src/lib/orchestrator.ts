@@ -310,11 +310,9 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
       briefing.articles = briefing.articles.map(a => ({ ...a, aiGenerated: true }));
       usedProvider = result.usedProvider;
       console.log(`[orchestrator] LLM succeeded (${usedProvider})`);
-      // Save Gemini articles to the persistent library so they accumulate over time
-      // (the enrichment path below only saves structured-source articles, not LLM ones)
-      saveArticlesToLibrary(briefing.articles).catch(e =>
-        console.log("[orchestrator] Library save (LLM) failed (non-fatal):", String(e).slice(0, 80))
-      );
+      // NOTE: Gemini articles are NOT saved to the library — they can contain
+      // hallucinated URLs/sources.  Only real RSS/scrape articles (injected
+      // below from the OFAC cache) are persisted for future use.
     } catch (llmError) {
       const reason = String(llmError).slice(0, 120);
       console.log("[orchestrator] LLM unavailable — keeping structured briefing:", reason);
@@ -408,9 +406,10 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
         });
         console.log(`[orchestrator] Enriched ${enriched.size} article briefs`);
 
-        // Save enriched articles to the persistent library for future refreshes
+        // Save enriched articles to the persistent library — real RSS/scrape only,
+        // never AI-generated articles (those have hallucinated URLs).
         const enrichedArticles = briefing.articles.filter(a =>
-          a.sourceUrl && enriched.has(a.sourceUrl)
+          a.sourceUrl && enriched.has(a.sourceUrl) && !(a as any).aiGenerated
         );
         saveArticlesToLibrary(enrichedArticles).catch(e =>
           console.log("[orchestrator] Library save failed (non-fatal):", String(e).slice(0, 80))
