@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-15T17:08:15.070Z",
+  "updatedAt": "2026-07-15T17:38:36.002Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260715",
@@ -2846,12 +2846,6 @@
       "description": "The abrupt about-face from the US president was the latest twist in a conflict that has now lasted more than four months."
     },
     {
-      "title": "Strait of Hormuz 'faultline' exposes weakness of the US-Iran deal",
-      "url": "https://www.bbc.co.uk/news/articles/cwy0ydn033yo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 14, 2026",
-      "description": "Control of the waterway has become a key point of contention between the US and Iran, as a ceasefire deal falters."
-    },
-    {
       "title": "Russian attacks kill eight as Ukraine hits Black Sea oil tankers",
       "url": "https://www.bbc.co.uk/news/articles/c8929jv8kdzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 15, 2026",
@@ -2874,6 +2868,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cqx1xdn3g4eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 15, 2026",
       "description": "Chen Youlin's family says he has been wrongfully detained for nearly two years on spying charges."
+    },
+    {
+      "title": "Strait of Hormuz 'faultline' exposes weakness of the US-Iran deal",
+      "url": "https://www.bbc.co.uk/news/articles/cwy0ydn033yo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 14, 2026",
+      "description": "Control of the waterway has become a key point of contention between the US and Iran, as a ceasefire deal falters."
     },
     {
       "title": "Watch: The clash between US and Iran for control of the Strait of Hormuz",
@@ -2930,18 +2930,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/15/legal-challenge-says-trump-icc-sanctions-tread-on-us-citizens-rights?traffic_source=rss",
       "date": "July 15, 2026",
       "description": "Groups charge that sanctions against ICC, Palestinian rights organisations stifle freedom of speech and expression."
-    },
-    {
-      "title": "US strikes marine control tower in Iran",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/15/us-strikes-marine-control-tower-in-iran?traffic_source=rss",
-      "date": "July 15, 2026",
-      "description": "US strikes marine control tower in Iran"
-    },
-    {
-      "title": "As the US restarts war on Iran, is its weapons stockpile running low?",
-      "url": "https://www.aljazeera.com/news/2026/7/15/as-the-us-restarts-war-on-iran-is-its-weapons-stockpile-running-low?traffic_source=rss",
-      "date": "July 15, 2026",
-      "description": "The US has expended a significant number of munitions since the war began in February."
     }
   ],
   "occNews": [],
@@ -3041,10 +3029,28 @@
   ],
   "regionsNews": [
     {
+      "title": "French MPs approve assisted dying law with strict rules after years of argument",
+      "url": "https://www.bbc.co.uk/news/articles/cvg7g2z4pv3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 15, 2026",
+      "description": "The bill would allow assisted dying for terminally ill adults who meet strict criteria."
+    },
+    {
+      "title": "More people around the world now favour China over the US, Pew study suggests",
+      "url": "https://www.bbc.co.uk/news/articles/cd959q11g54o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 15, 2026",
+      "description": "There is more confidence in Xi Jinping than Donald Trump, the US think tank's survey indicates."
+    },
+    {
       "title": "Special police team to investigate killing of an anti-migrant leader in South Africa",
       "url": "https://www.bbc.co.uk/news/articles/cm2d2qlgj71o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 15, 2026",
       "description": "The March and March provincial leader died of his injuries in hospital several days after being shot."
+    },
+    {
+      "title": "Five arrested after Hong Kong police raid independent bookshops",
+      "url": "https://www.bbc.co.uk/news/articles/cq61660qpdpo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 15, 2026",
+      "description": "Officials say they are suspected of selling \"seditious\" books which incited \"hatred\" against authorities."
     },
     {
       "title": "Italy's Meloni suffers surprise setback in close vote on electoral reform",
@@ -3185,6 +3191,12 @@
       "description": "Despite returning to profit after hiking bills 40%, the deeply troubled company is far from out of the woods."
     },
     {
+      "title": "SpaceX share price drops below stock market debut",
+      "url": "https://www.bbc.co.uk/news/articles/clyl33q0yl0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 15, 2026",
+      "description": "Share trading in Elon Musk’s rocket company has been volatile since it went public a month ago."
+    },
+    {
       "title": "EasyJet passengers stuck on tarmac for hours when plane couldn't refuel",
       "url": "https://www.bbc.co.uk/news/articles/c3ryr25gvjdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 15, 2026",
@@ -3309,12 +3321,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cx2wzpwn51lo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 13, 2026",
       "description": "The group, which includes Porsche and Audi, has faced a steep fall in profits and tough competition from China."
-    },
-    {
-      "title": "How to change bank, energy or broadband provider and save money",
-      "url": "https://www.bbc.co.uk/news/articles/cd7w98n2y3eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 12, 2026",
-      "description": "Changing your broadband or energy supplier, or even your bank, for a better deal is simpler than it used to be."
     },
     {
       "title": "Is tracking your food purchases good for your health?",
@@ -3467,6 +3473,42 @@
       "description": "How to find lost bank accounts"
     },
     {
+      "title": "Todd Blanche’s loyalty to Trump questioned in Senate confirmation hearing",
+      "url": "https://www.aljazeera.com/news/2026/7/15/todd-blanches-loyalty-to-trump-questioned-in-senate-confirmation-hearing?traffic_source=rss",
+      "date": "July 15, 2026",
+      "description": "Blanche&#039;s actions have raised questions over the independence of the Department of Justice, which he currently leads."
+    },
+    {
+      "title": "Why are right-wing parties gaining ground in Latin America?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/15/why-are-right-wing-parties-gaining-ground-in-latin-america?traffic_source=rss",
+      "date": "July 15, 2026",
+      "description": "Several recent elections have strengthened conservative forces across parts of Latin America."
+    },
+    {
+      "title": "Argentine VP calls England ‘pirates’ ahead of World Cup semifinal clash",
+      "url": "https://www.aljazeera.com/sports/2026/7/15/argentine-vp-calls-england-pirates-ahead-of-world-cup-semifinal-clash?traffic_source=rss",
+      "date": "July 15, 2026",
+      "description": "Argentina vice president&#039;s remarks made ahead of the World Cup semifinal against England and amid sovereignty dispute."
+    },
+    {
+      "title": "Cruise ship hotel left listing in China port after high tides",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/15/cruise-ship-hotel-left-listing-in-china-port-after-high-tides?traffic_source=rss",
+      "date": "July 15, 2026",
+      "description": "A cruise ship-turned-luxury floating hotel that has been idle for about 14 years rolled onto its side while docked."
+    },
+    {
+      "title": "Zelenskyy backs state energy company chief Koretskyi for new Ukraine PM",
+      "url": "https://www.aljazeera.com/news/2026/7/15/zelenskyy-backs-state-energy-company-chief-koretskyi-for-new-pm?traffic_source=rss",
+      "date": "July 15, 2026",
+      "description": "Ukraine&#039;s parliament is expected to vote for the next prime minister on Thursday."
+    },
+    {
+      "title": "Norway’s Waerenskjold wins fastest Tour de France stage in history",
+      "url": "https://www.aljazeera.com/sports/2026/7/15/norways-waerenskjold-wins-fastest-tour-de-france-stage-in-history?traffic_source=rss",
+      "date": "July 15, 2026",
+      "description": "At an average speed of 50.91kph, Soren Waerenskjold&#039;s sprint was the fastest road stage in the 113 editions of the Tour."
+    },
+    {
       "title": "Starmer bids MPs goodbye as British PM and pledges to support his successor",
       "url": "https://www.aljazeera.com/news/2026/7/15/starmer-bids-mps-goodbye-as-british-pm-and-pledges-to-support-his-successor?traffic_source=rss",
       "date": "July 15, 2026",
@@ -3561,30 +3603,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/15/spains-oscar-winning-actor-raises-palestine-flag-at-world-cup-match?traffic_source=rss",
       "date": "July 15, 2026",
       "description": "Spain&#039;s Oscar-winning actor Javier Bardem had a message for Palestinians as he raised Palestine flag during World Cup."
-    },
-    {
-      "title": "Utah man arrested after allegedly targeting Muslim kiosk worker in stabbing",
-      "url": "https://www.aljazeera.com/news/2026/7/15/utah-man-arrested-after-allegedly-targeting-muslim-kiosk-worker-in-stabbing?traffic_source=rss",
-      "date": "July 15, 2026",
-      "description": "Rights groups condemn the attack and warn against recent anti-immigration rhetoric."
-    },
-    {
-      "title": "Will Lindsey Graham’s death affect Israel’s standing in Washington?",
-      "url": "https://www.aljazeera.com/opinions/2026/7/15/will-lindsey-grahams-death-affect-israels-standing-in-washington?traffic_source=rss",
-      "date": "July 15, 2026",
-      "description": "It might in the short term, but not in the long term."
-    },
-    {
-      "title": "Israeli air attack on Gaza apartment kills family of three",
-      "url": "https://www.aljazeera.com/news/2026/7/15/israeli-air-attack-on-gaza-apartment-kills-family-of-3?traffic_source=rss",
-      "date": "July 15, 2026",
-      "description": "One child survives hit on Deir el-Balah home as Israel escalates attacks across territory despite October &#039;ceasefire&#039;."
-    },
-    {
-      "title": "DRC Ebola cases surpass 2,000 as more health workers begin strike",
-      "url": "https://www.aljazeera.com/news/2026/7/15/drc-ebola-cases-surpass-2000-as-more-health-workers-begin-strike?traffic_source=rss",
-      "date": "July 15, 2026",
-      "description": "Health workers in Democratic Republic of the Congo&#039;s Ituri province strike over unpaid wages as death toll rises to 754."
     }
   ]
 }
