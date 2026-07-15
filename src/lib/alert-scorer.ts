@@ -180,7 +180,10 @@ function todayNY(): { y: string; m: string; d: string } {
 }
 
 export function isRecentEnough(dateStr: string, maxAgeHours: number | undefined = ALERT_MAX_AGE_HOURS): boolean {
-  if (!dateStr) return true; // can't verify staleness — don't block on missing data
+  // Treat missing/empty date as NOT recent — "we don't know when this was published"
+  // is not a reason to alert.  OFAC cache entries with no scraped date would otherwise
+  // pass the recency gate (empty string is falsy) and fire alerts every cooldown cycle.
+  if (!dateStr) return false;
   const trimmed = dateStr.trim();
 
   // Some sources (e.g. Federal Register notices scraped from program pages)
