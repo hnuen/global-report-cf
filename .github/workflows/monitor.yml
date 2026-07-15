@@ -67,47 +67,41 @@ jobs:
         run: |
           ALERTING="${{ steps.monitor.outputs.alerting }}"
 
-          # Extract headlines + primary click URL from alertedArticles.
-          # URLs are NOT embedded in the body — mobile push bodies truncate at
-          # ~200 chars and the URL is the first thing cut. Instead we use
-          # ntfy's Click header so tapping the notification opens the article
-          # directly. Falls back to the app URL if no article sourceUrl exists.
+          # Build a rich ntfy body matching the Telegram alert format:
+          # section | region | score, headline, body excerpt, source, article URL.
+          # Click header opens the top article; URL also appears in the body
+          # so it's visible without tapping.
           NTFY_INFO=$(python3 -c "
           import json
           d = json.load(open('/tmp/resp.json'))
+          app_url = '${APP_URL%/}'
           arts = d.get('alertedArticles') or [a for a in d.get('topScored', []) if a.get('shouldAlert')]
-          click = next((a.get('sourceUrl','') for a in arts if a.get('sourceUrl') and a.get('sourceUrl') != '#'), '')
+          click = next((a.get('sourceUrl','') for a in arts if a.get('sourceUrl') and a.get('sourceUrl') != '#'), app_url)
+          def emoji(score):
+              s = int(score) if str(score).isdigit() else 0
+              return '🚨' if s >= 90 else '⚠️' if s >= 80 else '📌'
           def fmt(a):
-              sec = a.get('section','').upper()
-              region = a.get('region','')
-              tag = f\"{sec} | {region}\" if region else sec
-              return f\"{tag}\\n{a.get('headline','')[:120]}\"
-          lines = [fmt(a) for a in arts[:5]]
+              sec     = a.get('section','').upper()
+              region  = a.get('region','')
+              cat     = a.get('category','')
+              score   = a.get('score','?')
+              tag     = ' | '.join(filter(None,[sec, cat, region]))
+              e       = emoji(score)
+              headline = a.get('headline','')
+              body    = (a.get('body') or [''])[0][:250]
+              if body and len((a.get('body') or [''])[0]) > 250: body += '…'
+              src     = a.get('source','')
+              url     = a.get('sourceUrl','')
+              url     = '' if url == '#' else url
+              parts   = [f'{e} {tag} | Score: {score}/100', headline]
+              if body: parts.append(body)
+              if src:  parts.append(f'Source: {src}')
+              if url:  parts.append(url)
+              return '\\n'.join(parts)
+          blocks = [fmt(a) for a in arts[:5]]
+          sep = '\\n\\n' + '-'*30 + '\\n\\n'
+          body = sep.join(blocks) if blocks else 'See app for details'
+          if app_url: body += f'\\n\\n🌐 {app_url}'
           print(click)
-          print('\\n\\n'.join(lines) if lines else 'See app for details')
-          " 2>/dev/null)
-
-          CLICK_URL=$(echo "$NTFY_INFO" | head -1)
-          BODY=$(echo "$NTFY_INFO" | tail -n +2)
-          [ -z "$CLICK_URL" ] && CLICK_URL="${APP_URL%/}"
-
-          TITLE="🚨 Global Report — ${ALERTING} alert$([ "$ALERTING" -eq 1 ] || echo s)"
-
-          AUTH_ARGS=()
-          if [ -n "$NTFY_TOKEN" ]; then
-            AUTH_ARGS+=(-H "Authorization: Bearer $NTFY_TOKEN")
-          fi
-
-          HTTP_NTFY=$(curl -s -o /tmp/ntfy_resp.txt -w "%{http_code}" \
-            -X POST "https://ntfy.sh/${NTFY_TOPIC}" \
-            -H "Title: ${TITLE}" \
-            -H "Priority: high" \
-            -H "Tags: rotating_light" \
-            -H "Click: ${CLICK_URL}" \
-            "${AUTH_ARGS[@]}" \
-            -d "$BODY" \
-            --max-time 15)
-
-          echo "ntfy HTTP: $HTTP_NTFY"
-          cat /tmp/ntfy_resp.txt || true
-          if 
+          print(body)
+          " 2>/dev/null
