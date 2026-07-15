@@ -14,7 +14,7 @@ import { NextRequest, NextResponse } from "next/server";
 const SECTIONS = ["sanctions", "economics", "regions", "occ", "penalties", "bis"];
 const V2_PREFIX = "app:article-library:v2:";
 const LEGACY_KEY = "app:article-library:v1";
-const BRIEFING_KEY = "briefing";
+const BRIEFING_KEY = "briefing_v7";
 
 function isAuthorised(req: NextRequest): boolean {
   const secret = process.env.ADMIN_SECRET;
