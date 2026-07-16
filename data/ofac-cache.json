@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-16T21:39:22.929Z",
+  "updatedAt": "2026-07-16T22:09:46.606Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260715",
@@ -2841,16 +2841,16 @@
   ],
   "bbcNews": [
     {
+      "title": "Blasts reported in Iran as US launches new wave of strikes",
+      "url": "https://www.bbc.co.uk/news/articles/c151gdjwd10o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 16, 2026",
+      "description": "The US says its attacks aim to \"further degrade Iranian military capabilities\", as fighting continued for the sixth day in a row."
+    },
+    {
       "title": "Teenager accused of carrying out sabotage actions in Poland for Russia",
       "url": "https://www.bbc.co.uk/news/articles/cp305dx493do?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 16, 2026",
       "description": "Polish security services say the aim was to incite ethnic tensions between Poland and Ukraine."
-    },
-    {
-      "title": "Iran targets military bases as US launches wave of strikes",
-      "url": "https://www.bbc.co.uk/news/articles/c2lq1ed28jxo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "Explosions were heard across Iran overnight, shortly after neighbouring Gulf states began to report attacks."
     },
     {
       "title": "Heating oil customers to get compensation after price hikes",
@@ -2931,12 +2931,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/16/us-approves-nearly-2bn-in-weapons-sale-to-saudi-arabia?traffic_source=rss",
       "date": "July 16, 2026",
       "description": "The sale intends to bolster Saudi air defence systems as the kingdom risks escalation with the Iran-backed Houthis."
-    },
-    {
-      "title": "Vance says Israeli campaign tried to sway US opinion against Iran diplomacy",
-      "url": "https://www.aljazeera.com/news/2026/7/16/vance-says-israeli-campaign-tried-to-sway-us-opinion-against-iran-diplomacy?traffic_source=rss",
-      "date": "July 16, 2026",
-      "description": "The US vice-president also said he faced &#039;vicious&#039; personal attacks over his diplomatic outreach to end war."
     }
   ],
   "occNews": [
@@ -3082,7 +3076,7 @@
       "title": "At least one dead in Texas floods ravaging same area where campers died",
       "url": "https://www.bbc.co.uk/news/articles/c3v0xe5elzyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 16, 2026",
-      "description": "The same area devastated by floods last year - causing more than 130 deaths, including those at Camp Mystic - is once again being hit."
+      "description": "The same area devastated by floods last year's floods, which caused more than 130 deaths, is once again being hit."
     },
     {
       "title": "'Moment of joy' as Uganda discharges last Ebola patient",
@@ -3157,6 +3151,18 @@
       "description": "Blanche faces a bipartisan grilling as he seeks to assume the role of US attorney general permanently."
     },
     {
+      "title": "I thought we'd grow old together, says band leader whose girlfriend died in Thai bar inferno",
+      "url": "https://www.bbc.co.uk/news/articles/c1k13zj914mo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 16, 2026",
+      "description": "Athipat Wichan tells BBC Thai he regrets bringing his girlfriend Nahathai into his indie band Thotsakan."
+    },
+    {
+      "title": "As heatwaves strike, Europeans turn to prized Chinese air-conditioner",
+      "url": "https://www.bbc.co.uk/news/articles/c86262j7j75o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 16, 2026",
+      "description": "Previously little-known in Europe, the Midea PortaSplit has become a household name this summer."
+    },
+    {
       "title": "What to know about the Canadian and US wildfires and their impact",
       "url": "https://www.bbc.co.uk/news/articles/c5ywdl9ne3yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 16, 2026",
@@ -3179,18 +3185,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cn4d3lpjkggo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 15, 2026",
       "description": "A former Canadian government nuclear bomb shelter in rural Nova Scotia may soon be home to the country’s first large-scale luxury survival shelter."
-    },
-    {
-      "title": "'I must get out into the free world', dissident who fled China on boat tells BBC",
-      "url": "https://www.bbc.co.uk/news/articles/cm2j2jw117lo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 15, 2026",
-      "description": "Dong Guangping, who has resettled in Canada, recounts his perilous escape from China to South Korea."
-    },
-    {
-      "title": "Crackdown on 'objectionable' books in Indian-administered Kashmir sparks row",
-      "url": "https://www.bbc.co.uk/news/articles/c0jyj292xdgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 15, 2026",
-      "description": "Authorities in Indian-administered Kashmir have asked educational institutions to review every book on their premises."
     },
     {
       "title": "Watch: What to know as Genoa bridge disaster trial ends",
@@ -3217,16 +3211,22 @@
       "description": "CN Rail told the BBC that operations were temporarily suspended in the affected area in the province of Ontario."
     },
     {
-      "title": "White House teleprompter operator accused of making $100k off Trump speech bets",
-      "url": "https://www.bbc.co.uk/news/articles/cjrvdqyr5d5o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Trump Media to sell early access to key social posts",
+      "url": "https://www.bbc.co.uk/news/articles/c79gw4lj89eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 16, 2026",
-      "description": "A White House staffer has been accused of using inside knowledge of speeches to make nearly $100,000 on Kalshi."
+      "description": "Trump Media is launching a fast, paid feed of the its social posts for Wall Street traders."
     },
     {
       "title": "British Steel taken into public ownership to protect 'vital' UK supply",
       "url": "https://www.bbc.co.uk/news/articles/c5y680w62wno?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 16, 2026",
       "description": "The Scunthorpe steelworks has been officially nationalised under new government powers passed this week."
+    },
+    {
+      "title": "White House teleprompter operator accused of making $100k off Trump speech bets",
+      "url": "https://www.bbc.co.uk/news/articles/cjrvdqyr5d5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 16, 2026",
+      "description": "A White House staffer has been accused of using inside knowledge of speeches to make nearly $100,000 on Kalshi."
     },
     {
       "title": "Investigation into parking tickets for drivers queuing at petrol stations",
@@ -3359,12 +3359,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c8x2x549vgdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 14, 2026",
       "description": "The investor's decision comes weeks after Gates' appearance before US Congress over his links to Jeffrey Epstein."
-    },
-    {
-      "title": "Gas prices drive down US inflation - but will it last?",
-      "url": "https://www.bbc.co.uk/news/articles/c98289j7lg7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 14, 2026",
-      "description": "While the US inflation rate fell in June, concerns remain over price rises increasing again due to the renewed conflict in the Middle East."
     },
     {
       "title": "Is tracking your food purchases good for your health?",
@@ -3517,6 +3511,18 @@
       "description": "How to find lost bank accounts"
     },
     {
+      "title": "Ilhan Omar renews push for US to join ICC amid Trump pressure",
+      "url": "https://www.aljazeera.com/news/2026/7/16/ilhan-omar-renews-push-for-us-to-join-icc-amid-trump-pressure?traffic_source=rss",
+      "date": "July 16, 2026",
+      "description": "The resolution comes days after US Secretary of State Marco Rubio pledged to &#039;dismantle&#039; the international court."
+    },
+    {
+      "title": "Grand Mosque of Paris celebrates 100-year anniversary",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/16/grand-mosque-of-paris-celebrates-100-year-anniversary?traffic_source=rss",
+      "date": "July 16, 2026",
+      "description": "The Grand Mosque of Paris is celebrating 100 years since its inauguration."
+    },
+    {
       "title": "FIFA to probe Argentina’s Falklands banner display at World Cup semifinal",
       "url": "https://www.aljazeera.com/sports/2026/7/16/fifa-to-probe-argentinas-falklands-banner-display-at-world-cup-semifinal?traffic_source=rss",
       "date": "July 16, 2026",
@@ -3593,12 +3599,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/16/trump-limits-length-of-visas-for-students-exchange-visitors-journalists?traffic_source=rss",
       "date": "July 16, 2026",
       "description": "New rule ends open-ended stays and requires extensions after fixed visa periods for students and foreign media."
-    },
-    {
-      "title": "How can Argentina and Messi beat Spain and Yamal to defend World Cup?",
-      "url": "https://www.aljazeera.com/sports/2026/7/16/how-can-argentina-beat-favourites-spain-to-win-back-to-back-world-cups?traffic_source=rss",
-      "date": "July 16, 2026",
-      "description": "Despite Lionel Messi&#039;s presence, Argentina enter the 2026 final as underdogs to Spain and their starlet Lamine Yamal."
     }
   ]
 }
