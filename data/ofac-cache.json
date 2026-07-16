@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-16T12:39:12.995Z",
+  "updatedAt": "2026-07-16T13:09:23.174Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260715",
@@ -2906,12 +2906,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/16/us-strikes-iran-tanker-as-tehran-hits-kuwait-jordan-whats-the-latest?traffic_source=rss",
       "date": "July 16, 2026",
       "description": "Strikes have hit closer to Tehran for the first time since the latest wave of attacks started."
-    },
-    {
-      "title": "US launches new attacks on Iran as Tehran targets Gulf sites",
-      "url": "https://www.aljazeera.com/news/2026/7/16/us-launches-new-attacks-on-iran-as-tehran-targets-gulf-sites?traffic_source=rss",
-      "date": "July 16, 2026",
-      "description": "Iran&#039;s Health Ministry has said at least 35 people have been killed and more than 300 injured since fighting resumed."
     }
   ],
   "occNews": [],
@@ -3011,7 +3005,13 @@
   ],
   "regionsNews": [
     {
-      "title": "Protests in Ukraine's cities against Zelensky's removal of defence minister",
+      "title": "Italian officials handed jail terms for Genoa bridge disaster that killed 43",
+      "url": "https://www.bbc.co.uk/news/articles/c36dnz1zez5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 16, 2026",
+      "description": "The ex-head of Italy's motorway operator Giovanni Castellucci was handed a 12-year term over the 2018 bridge collapse."
+    },
+    {
+      "title": "Protests in Ukrainian cities against Zelensky's removal of defence minister",
       "url": "https://www.bbc.co.uk/news/articles/cdx76069n3do?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 16, 2026",
       "description": "Ukraine's president has not explained Mykhailo Fedorov's dismissal, which is causing great upset among civil society and the military."
@@ -3029,6 +3029,12 @@
       "description": "Argentina face the prospect of disciplinary action from Fifa after their players celebrate the World Cup semi-final win against England with a banner in support of their country's claims to the Falkland Islands."
     },
     {
+      "title": "Volunteer firefighter suspected of starting devastating France forest fire",
+      "url": "https://www.bbc.co.uk/news/articles/ce97zd8yx1xo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 16, 2026",
+      "description": "President Macron said there would be no leniency for arsonists, as France - along with much of Europe - deals with a series of unusual heatwaves."
+    },
+    {
       "title": "'Moment of joy' as Uganda discharges last Ebola patient",
       "url": "https://www.bbc.co.uk/news/articles/cx2myxjv172o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 16, 2026",
@@ -3039,12 +3045,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cvgwd4nz344o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 16, 2026",
       "description": "Along with the fatalities, 19 people suffered injuries, the authorities say."
-    },
-    {
-      "title": "Families of 43 victims await verdict in Genoa bridge disaster",
-      "url": "https://www.bbc.co.uk/news/articles/c20y00712ezo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 15, 2026",
-      "description": "A large section of the giant Morandi motorway bridge crumbled and collapsed on to the railway tracks below."
     },
     {
       "title": "New monkey species with orange lips found 'hiding' in DR Congo forest",
@@ -3185,7 +3185,7 @@
       "description": "The Scunthorpe steelworks has been officially nationalised under new government powers passed this week."
     },
     {
-      "title": "Investigation into parking charges for drivers queuing at petrol stations",
+      "title": "Investigation into parking tickets for drivers queuing at petrol stations",
       "url": "https://www.bbc.co.uk/news/articles/cnvnyr75r48o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 16, 2026",
       "description": "It's part of a wider crackdown from the consumer regulator into potentially unfair practices by private parking operators."
@@ -3473,6 +3473,36 @@
       "description": "How to find lost bank accounts"
     },
     {
+      "title": "US hosts global meet on ‘far-left terror’: Who’s attending, why it matters",
+      "url": "https://www.aljazeera.com/news/2026/7/16/us-hosts-global-meet-on-far-left-terror-whos-attending-why-it-matters?traffic_source=rss",
+      "date": "July 16, 2026",
+      "description": "More than 65 countries expected to address &#039;renewed threats&#039; from &#039;far-left political violence and terrorism&#039;."
+    },
+    {
+      "title": "John Esposito, pioneering scholar of Islam in the US, dies aged 86",
+      "url": "https://www.aljazeera.com/features/2026/7/16/john-esposito-pioneering-scholar-of-islam-in-the-us-dies-aged-86?traffic_source=rss",
+      "date": "July 16, 2026",
+      "description": "Georgetown scholar and author spent decades building bridges between the Islamic and Western worlds."
+    },
+    {
+      "title": "Palestinians in Gaza search through homes destroyed by Israeli strikes",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/16/palestinians-in-gaza-search-through-homes-destroyed-by-israeli-strikes?traffic_source=rss",
+      "date": "July 16, 2026",
+      "description": "Palestinians are inspecting the damage in Nuseirat after Israeli strikes reduced their homes to rubble."
+    },
+    {
+      "title": "FIFA World Cup 2026: Biggest takeaways from the semifinals",
+      "url": "https://www.aljazeera.com/sports/2026/7/16/fifa-world-cup-2026-biggest-takeaways-from-the-semifinals?traffic_source=rss",
+      "date": "July 16, 2026",
+      "description": "The semifinals are now behind us, with plenty of key moments and incidents to digest ahead of Sunday&#039;s final."
+    },
+    {
+      "title": "Thousands to lose their homes as Ivory Coast demolitions begin",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/16/thousands-to-lose-their-homes-as-ivory-coast-demolitions-begin?traffic_source=rss",
+      "date": "July 16, 2026",
+      "description": "Thousands to lose their homes as Ivory Coast demolitions begin"
+    },
+    {
       "title": "EU court upholds Spanish amnesty law as compatible with EU law",
       "url": "https://www.aljazeera.com/news/2026/7/16/eu-court-upholds-spanish-amnesty-law-as-compatible-with-eu-law?traffic_source=rss",
       "date": "July 16, 2026",
@@ -3555,30 +3585,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/16/vance-says-epstein-had-connections-to-us-israeli-intelligence?traffic_source=rss",
       "date": "July 16, 2026",
       "description": "The US vice president says Epstein &#039;seemed&#039; to be connected to elements of the &#039;Israeli deep state&#039;."
-    },
-    {
-      "title": "Greece pins hopes on heat-seeking satellites to predict wildfires",
-      "url": "https://www.aljazeera.com/news/2026/7/16/greece-pins-hopes-on-heat-seeking-satellites-to-predict-wildfires?traffic_source=rss",
-      "date": "July 16, 2026",
-      "description": "The country, which suffers each summer, builds an arsenal of high-tech surveillance to help pre-position firefighters."
-    },
-    {
-      "title": "Watch FIFA World Cup: Argentina rallies past England to reach final",
-      "url": "https://www.aljazeera.com/video/2026/7/16/video-world-cup-2026-highlights?traffic_source=rss",
-      "date": "July 16, 2026",
-      "description": "Latest match highlights, reaction and previews from the FIFA World Cup 2026 in North America."
-    },
-    {
-      "title": "‘Escaping Beijing’: Why some young Chinese are quitting the capital",
-      "url": "https://www.aljazeera.com/news/2026/7/16/escaping-beijing-why-some-young-chinese-are-quitting-the-capital?traffic_source=rss",
-      "date": "July 16, 2026",
-      "description": "A slowing economy and rising prices are making it harder for young Chinese to thrive in the city."
-    },
-    {
-      "title": "Pete Hegseth says US military to start testosterone screening for over 30s",
-      "url": "https://www.aljazeera.com/news/2026/7/16/pete-hegseth-says-us-military-to-start-testosterone-screening-for-over-30s?traffic_source=rss",
-      "date": "July 16, 2026",
-      "description": "US Defense Secretary says plan is &#039;about restoring and optimising ... natural capabilities&#039; of troops."
     }
   ]
 }
