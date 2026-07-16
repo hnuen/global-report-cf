@@ -349,6 +349,40 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
     console.log(`[orchestrator] Filtered ${beforeNoNewsFilter - briefing.articles.length} no-news filler article(s)`);
   }
 
+  // ── Group-mode additive merge ─────────────────────────────────────────────
+  // When fetching a specific group (11-26 sources each — safely under CF's
+  // 50-subrequest limit), merge new articles INTO the existing Redis briefing
+  // instead of overwriting it. Each refresh.yml cycle calls /api/refresh 4×
+  // (group 1, 2, 3, 4 sequentially); without this, group 4's save would wipe
+  // everything written by groups 1, 2, 3.
+  if (opts?.group !== undefined) {
+    try {
+      const existing = await storage.load();
+      if (existing?.articles?.length) {
+        const currentKeys = new Set(
+          briefing.articles.map(a =>
+            a.headline.slice(0, 80).toLowerCase().replace(/\s+/g, " ").trim()
+          )
+        );
+        const fromExisting = existing.articles.filter(a =>
+          !currentKeys.has(a.headline.slice(0, 80).toLowerCase().replace(/\s+/g, " ").trim())
+        );
+        if (fromExisting.length > 0) {
+          briefing.articles = [...briefing.articles, ...fromExisting];
+          // Re-sort to keep tier order consistent after merge
+          briefing.articles = briefing.articles.sort((a, b) => {
+            const pa = getPriority(a.source), pb = getPriority(b.source);
+            if (pb !== pa) return pb - pa;
+            return (b.date || "").localeCompare(a.date || "");
+          });
+          console.log(`[orchestrator] Group ${opts.group} additive merge: +${fromExisting.length} from existing → ${briefing.articles.length} total`);
+        }
+      }
+    } catch (e) {
+      console.log("[orchestrator] Additive merge failed (non-fatal):", String(e).slice(0, 80));
+    }
+  }
+
   // ── Section-scoped merge: don't overwrite other sections ──────────────────
   // When a specific section is refreshed (e.g. BIS), only replace that section's
   // articles in Redis. Without this, refreshing BIS would overwrite sanctions,
@@ -386,6 +420,15 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
     console.log("[orchestrator] Saved core briefing (pre-enrichment), upstash:", preSaveSuccess);
   } catch (e) {
     console.log("[orchestrator] Pre-save failed:", String(e).slice(0, 100));
+  }
+
+  // Save government-source articles to the library even in skipLLM (group) path.
+  // Without this, group-based refreshes never accumulate the article library,
+  // so library-based backfill stays empty after a purge.
+  if (opts?.skipLLM) {
+    saveArticlesToLibrary(briefing.articles).catch(e =>
+      console.log("[orchestrator] Library save (skipLLM, non-fatal):", String(e).slice(0, 80))
+    );
   }
 
   // Enrich articles with AI-generated briefs (cached in Redis, runs async)

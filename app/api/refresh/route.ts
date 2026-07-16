@@ -35,7 +35,15 @@ async function syncPenaltyTables() {
 
 export async function POST(request: NextRequest) {
   try {
-    const { briefing, usedProvider, savedTo, storageErrors } = await refreshBriefing();
+    // Accept optional group (1-4) to fetch only that group of sources.
+    // Each group has 11-26 RSS sources — well under CF's 50-subrequest limit.
+    // Group-mode is always skipLLM=true (LLM step runs in GitHub Actions instead).
+    const body = await request.json().catch(() => ({})) as { group?: 1|2|3|4 };
+    const group = ([1,2,3,4] as const).find(g => g === body.group);
+    const { briefing, usedProvider, savedTo, storageErrors } = await refreshBriefing(undefined, {
+      skipLLM: group !== undefined ? true : undefined,
+      group,
+    });
     const { penaltySync, fincenSync } = await syncPenaltyTables();
     return NextResponse.json({ ok: true, usedProvider, savedTo, storageErrors, articleCount: briefing.articles.length, penaltySync, fincenSync });
   } catch (e) {
@@ -46,7 +54,13 @@ export async function POST(request: NextRequest) {
 
 export async function GET(request: NextRequest) {
   try {
-    const { briefing, usedProvider, savedTo, storageErrors } = await refreshBriefing();
+    const url = new URL(request.url);
+    const groupParam = Number(url.searchParams.get("group"));
+    const group = ([1,2,3,4] as const).find(g => g === groupParam);
+    const { briefing, usedProvider, savedTo, storageErrors } = await refreshBriefing(undefined, {
+      skipLLM: group !== undefined ? true : undefined,
+      group,
+    });
     const { penaltySync, fincenSync } = await syncPenaltyTables();
     return NextResponse.json({ ok: true, usedProvider, savedTo, storageErrors, articleCount: briefing.articles.length, penaltySync, fincenSync });
   } catch (e) {
