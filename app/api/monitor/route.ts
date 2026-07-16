@@ -47,35 +47,31 @@ async function markAlerted(key: string, cooldownMinutes: number): Promise<void> 
 }
 
 // ── URL pre-flight check ──────────────────────────────────────────────────────
-// Trusted government/official domains — skip verification (always valid).
-const TRUSTED_DOMAINS = [
-  "treasury.gov", "ofac.treasury.gov", "home.treasury.gov",
-  "federalregister.gov", "fincen.gov", "occ.gov", "bis.doc.gov",
-  "state.gov", "commerce.gov", "whitehouse.gov",
-  "eur-lex.europa.eu", "sanctions.ec.europa.eu",
-  "gov.uk", "legislation.gov.uk",
-  "un.org", "press.un.org",
-  "bbc.co.uk", "bbc.com",
-  "reuters.com", "apnews.com",
-  "aljazeera.com",                  // AJ URLs blocked HEAD checks — trust by domain
-  "federalreserve.gov",
-  "finance.ec.europa.eu",
+// Domains where HEAD checks are blocked at the network level (not domain trust).
+// Government and major news domains are NOT skipped — we still HEAD-check their
+// URLs so that AI-hallucinated paths on real domains (e.g. bis.doc.gov/fake)
+// get caught as 404s. Only domains that actively block HEAD/GET from cloud IPs
+// (causing false-negative drops) go here.
+const HEAD_BLOCKED_DOMAINS = [
+  "aljazeera.com",   // AJ blocks cloud-origin HEAD checks — returns 403/timeout
 ];
 
-function isTrustedDomain(url: string): boolean {
+function isHeadBlocked(url: string): boolean {
   try {
     const host = new URL(url).hostname.replace(/^www\./, "");
-    return TRUSTED_DOMAINS.some(d => host === d || host.endsWith("." + d));
+    return HEAD_BLOCKED_DOMAINS.some(d => host === d || host.endsWith("." + d));
   } catch { return false; }
 }
 
 /** HEAD-check a URL; returns true if reachable (2xx/3xx), false on 4xx/error */
 async function isUrlReachable(url: string): Promise<boolean> {
   if (!url || url === "#") return false;
-  if (isTrustedDomain(url)) return true;
+  // Skip check only for domains that block cloud-origin requests (not domain trust).
+  // All other domains — including .gov — are checked so fake paths are caught.
+  if (isHeadBlocked(url)) return true;
   try {
     const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 4000);
+    const timer = setTimeout(() => controller.abort(), 5000);
     const res = await fetch(url, {
       method: "HEAD",
       signal: controller.signal,
@@ -172,17 +168,15 @@ async function runMonitor(topic?: string, force = false) {
     forceSend,
     cooldownBlocked: blockedKeys.length,
     blockedKeys,
-    // alertedArticles: exactly what was sent to notifiers this run (used by
-    // the ntfy step in monitor.yml to build the push notification body).
-    // topScored only shows the highest-scoring articles overall — which are
-    // often dominated by older OFAC entries (score 100 via gov-source rule)
-    // that don't alert (recentEnough=false), pushing today's alerted public-
-    // media articles off the list and making them invisible to ntfy.
     alertedArticles: newAlerts.map(s => ({
       score:     s.score,
       section:   s.article.section,
-      sourceUrl: s.article.sourceUrl?.slice(0, 120),
-      headline:  s.article.headline?.slice(0, 100),
+      category:  s.article.category,
+      region:    s.article.region,
+      sourceUrl: s.article.sourceUrl?.slice(0, 200),
+      source:    s.article.source,
+      headline:  s.article.headline,
+      body:      s.article.body?.slice(0, 2),
       reasons:   s.reasons,
     })),
     topScored: scored.slice(0, 5).map(s => ({
