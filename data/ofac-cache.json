@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-16T18:09:30.994Z",
+  "updatedAt": "2026-07-16T18:39:41.584Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260715",
@@ -2831,7 +2831,14 @@
       "description": "These new measures aim at further increasing the pressure on Russia and Belarus and supporting EU's goal of achieving a just and lasting peace for Ukraine."
     }
   ],
-  "unNotices": [],
+  "unNotices": [
+    {
+      "title": "Security Council 1533 Sanctions Committee Adds Six Individuals and Two Entities to Its Sanctions List",
+      "url": "https://press.un.org/en/2026/sc16416.doc.htm",
+      "date": "July 16, 2026",
+      "description": "On 14 July 2026, the Security Council Committee established pursuant to resolution 1533 (2004) concerning the Democratic Republic of the Congo approved the addition of the entries specified below to its Sanctions List of individuals and entities subject to the measures imposed by the Security Council and adopted under Chapter VII of the Charter of the United Nations."
+    }
+  ],
   "bbcNews": [
     {
       "title": "Teenager accused of carrying out sabotage actions in Poland for Russia",
@@ -2862,12 +2869,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cd959x4edy8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 15, 2026",
       "description": "Weak demand domestically and the impact of the Iran war on oil prices overshadowed the country's strong exports."
-    },
-    {
-      "title": "Trump threatens to bomb bridges and power plants unless Iran resumes talks",
-      "url": "https://www.bbc.co.uk/news/articles/cy0608wy8pro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 15, 2026",
-      "description": "Trump's comments aired as the two countries exchanged fire for the fourth day in a row and the US resumed blockading Iranian ports."
     },
     {
       "title": "Heating oil customers to get compensation after price hikes",
@@ -3204,6 +3205,12 @@
       "description": "The symbolic midnight ceremony was followed by large crowds crossing between Gibraltar and Spain without border checks."
     },
     {
+      "title": "White House teleprompter operator accused of making $100k off Trump speech bets",
+      "url": "https://www.bbc.co.uk/news/articles/cjrvdqyr5d5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 16, 2026",
+      "description": "A White House staffer has been accused of using inside knowledge of speeches to make nearly $100,000 on Kalshi."
+    },
+    {
       "title": "British Steel taken into public ownership to protect 'vital' UK supply",
       "url": "https://www.bbc.co.uk/news/articles/c5y680w62wno?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 16, 2026",
@@ -3498,6 +3505,12 @@
       "description": "How to find lost bank accounts"
     },
     {
+      "title": "WHO: Ebola spreading faster than ever recorded in DR Congo",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/16/who-ebola-spreading-faster-than-ever-recorded-in-dr-congo?traffic_source=rss",
+      "date": "July 16, 2026",
+      "description": "The World Health Organization warns the Ebola outbreak in DR Congo is spreading faster than any previous outbreak."
+    },
+    {
       "title": "Rare protests in Kyiv over dismissal of defence minister",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/16/rare-protests-in-kyiv-over-dismissal-of-defence-minister?traffic_source=rss",
       "date": "July 16, 2026",
@@ -3610,12 +3623,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/16/falklands-are-argentinian-celebrations-over-england-win-revive-old-wounds?traffic_source=rss",
       "date": "July 16, 2026",
       "description": "The Falkland Islands have been at the heart of a long-running dispute between the United Kingdom and Argentina."
-    },
-    {
-      "title": "US hosts global meet on ‘far-left terror’: Who’s attending, why it matters",
-      "url": "https://www.aljazeera.com/news/2026/7/16/us-hosts-global-meet-on-far-left-terror-whos-attending-why-it-matters?traffic_source=rss",
-      "date": "July 16, 2026",
-      "description": "More than 65 countries expected to address &#039;renewed threats&#039; from &#039;far-left political violence and terrorism&#039;."
     }
   ]
 }
