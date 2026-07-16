@@ -64,15 +64,8 @@ jobs:
               -H "Content-Type: application/json" \
               -d "{\"group\":$GROUP}" --max-time 35 || echo "000")
             echo "HTTP: $HTTP"
-            python3 -c "
-import json, sys
-try:
-  d = json.load(open('/tmp/resp_g${GROUP}.json'))
-  errors = [e['error'][:80] for e in d.get('storageErrors',[])]
-  print(f'  savedTo={d.get(\"savedTo\",[])} articles={d.get(\"articleCount\",\"?\")} errors={errors}')
-except Exception as e:
-  print(f'  (parse error: {e})')
-" 2>/dev/null || cat /tmp/resp_g${GROUP}.json 2>/dev/null || true
+            jq '{savedTo,articleCount,errors:[.storageErrors[]?.error]}' \
+              /tmp/resp_g${GROUP}.json 2>/dev/null || cat /tmp/resp_g${GROUP}.json 2>/dev/null || true
             sleep 3
           done
 
