@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-17T18:09:20.034Z",
+  "updatedAt": "2026-07-17T18:39:34.247Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260717_33",
@@ -2827,18 +2827,6 @@
   ],
   "bbcNews": [
     {
-      "title": "Iran accuses US of hitting civilian infrastructure",
-      "url": "https://www.bbc.co.uk/news/articles/c151gdjwd10o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "The US military says its attacks were intended to \"further degrade Iranian military capabilities\"."
-    },
-    {
-      "title": "More than 500 Rohingya vanished at sea - what happened?",
-      "url": "https://www.bbc.co.uk/news/articles/cr59n096mrmo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "Two boats carrying an estimated 530 Rohingyas have disappeared since leaving Myanmar on 29 June."
-    },
-    {
       "title": "More than 500 Rohingya vanished at sea - what happened?",
       "url": "https://www.bbc.co.uk/news/articles/cr59n096mrmo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 17, 2026",
@@ -2870,6 +2858,18 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Beyond LNG: Berlin’s red-carpet diplomacy signals a bigger bet on Algeria",
+      "url": "https://www.aljazeera.com/economy/2026/7/17/beyond-lng-berlins-red-carpet-diplomacy-signals-a-bigger-bet-on-algeria?traffic_source=rss",
+      "date": "July 17, 2026",
+      "description": "Germany, stripped of Russian pipeline gas, received Algeria&#039;s president with military honours and talked about LNG."
+    },
+    {
+      "title": "Can the US and Iran reach a lasting deal to end the conflict?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/7/17/can-the-us-and-iran-reach-a-lasting-deal-to-end-the-conflict?traffic_source=rss",
+      "date": "July 17, 2026",
+      "description": "Air strikes intensify raising fear of an all-out war."
+    },
     {
       "title": "Pakistan cricketer Nawaz sanctioned after cannabis-related positive test",
       "url": "https://www.aljazeera.com/sports/2026/7/17/pakistan-cricketer-nawaz-sanctioned-after-cannabis-related-positive-test?traffic_source=rss",
@@ -2999,16 +2999,22 @@
   ],
   "regionsNews": [
     {
+      "title": "US denies Iranian claims it hit civilian infrastructure in latest strikes",
+      "url": "https://www.bbc.co.uk/news/articles/c151gdjwd10o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 17, 2026",
+      "description": "The US military says its attacks were intended to \"further degrade Iranian military capabilities\"."
+    },
+    {
       "title": "Trump alleges China meddled in 2020 election and questions voting security ahead of midterms",
       "url": "https://www.bbc.co.uk/news/articles/cx2k9wvv5wyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 17, 2026",
       "description": "China said Trump's claims were fabricated and US Democrats said he was paving the way to undermine November's elections."
     },
     {
-      "title": "Second tanker in three months hijacked off Yemen by suspected Somali pirates",
-      "url": "https://www.bbc.co.uk/news/articles/c7vg6dml34vo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "EU proposes slowing down cuts to carbon emissions for businesses",
+      "url": "https://www.bbc.co.uk/news/articles/ckgv0zd497zo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 17, 2026",
-      "description": "There have also been several unsuccessful attacks in a region where piracy appears to be making a comeback."
+      "description": "Under the proposals, the EU plans to relax its emissions trading system to give companies more time to reduce their carbon output."
     },
     {
       "title": "Air conditioner sparked deadly blaze at children's orphanage - police",
@@ -3027,6 +3033,18 @@
       "url": "https://www.bbc.co.uk/news/articles/c151gegwqv1o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 17, 2026",
       "description": "Thousands are killed on Uganda's roads each year but this is one of its deadliest accidents involving children."
+    },
+    {
+      "title": "Second tanker in three months hijacked off Yemen by suspected Somali pirates",
+      "url": "https://www.bbc.co.uk/news/articles/c7vg6dml34vo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 17, 2026",
+      "description": "There have also been several unsuccessful attacks in a region where piracy appears to be making a comeback."
+    },
+    {
+      "title": "Magnitude 7.3 earthquake quake strikes off Mexico coast",
+      "url": "https://www.bbc.co.uk/news/articles/cwyjv3815yxo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 17, 2026",
+      "description": "The US Tsunami Warning Center issued a warning and has recorded waves 0.3m (1.1 feet) high in Puerto Madero and Chiapas in Mexico."
     },
     {
       "title": "Canada fires prompt US air quality alerts as smoke blankets major cities",
@@ -3123,12 +3141,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cvgwd4nz344o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 16, 2026",
       "description": "Eleven people have died and 19 other have suffered injuries in the overnight fire, the authorities say."
-    },
-    {
-      "title": "New monkey species with orange lips found 'hiding' in DR Congo forest",
-      "url": "https://www.bbc.co.uk/news/articles/c15y5wgj4x8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 15, 2026",
-      "description": "Scientists describe \"amazing feeling\" to look into the face of an animal that so few people knew existed."
     },
     {
       "title": "I thought we'd grow old together, says band leader whose girlfriend died in Thai bar inferno",
@@ -3479,6 +3491,12 @@
       "description": "What impact might shortages have on our summer holidays - and what could be done about it?"
     },
     {
+      "title": "Why women should speak openly about money",
+      "url": "https://www.bbc.co.uk/news/videos/cvgwdxqj3k4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 17, 2026",
+      "description": "Emma joins Nuala McGovern to discuss her book Start With Yourself: A New Vision for Work and Life."
+    },
+    {
       "title": "What are your rights if you buy something that breaks?",
       "url": "https://www.bbc.co.uk/news/videos/c3r0lq9n14wo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 17, 2026",
@@ -3503,10 +3521,10 @@
       "description": "New regulations start for shoppers using Buy Now, Pay Later."
     },
     {
-      "title": "Woman's Hour",
-      "url": "https://www.bbc.co.uk/sounds/play/m002yx3c?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 14, 2026",
-      "description": "We hear about a new study exploring the impact hormones have on women with ADHD."
+      "title": "Life after amputation: Gaza women find recovery through football",
+      "url": "https://www.aljazeera.com/features/2026/7/17/life-after-amputation-gaza-women-find-recovery-through-football?traffic_source=rss",
+      "date": "July 17, 2026",
+      "description": "Palestinian women in Gaza who have lost limbs during Israel&#039;s genocidal war are using football as a way of recovering."
     },
     {
       "title": "World Cup 2026: What did we learn?",
@@ -3515,10 +3533,10 @@
       "description": "World Cup 2026: What did we learn?"
     },
     {
-      "title": "Burnham elected Labour leader, vows new direction for UK",
+      "title": "Burnham confirmed as Labour leader, vows new direction for UK",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/17/burnham-elected-labour-leader-vows-new-direction-for-uk?traffic_source=rss",
       "date": "July 17, 2026",
-      "description": "Britain&#039;s governing Labour Party elected Andy Burnham as its new leader, clearing the way for him to become PM"
+      "description": "Britain&#039;s governing Labour Party confirmed as Andy Burnham as its new leader, clearing the way for him to become PM"
     },
     {
       "title": "Did the US just start a trade war with Brazil?",
@@ -3554,7 +3572,7 @@
       "title": "Israeli attacks on Gaza kill 14, including mourners attending funeral",
       "url": "https://www.aljazeera.com/news/2026/7/17/israeli-attacks-on-gaza-kill-14-including-mourners-attending-funeral?traffic_source=rss",
       "date": "July 17, 2026",
-      "description": "Twenty people also injured in strike on funeral procession for Palestinian killed by Israel earlier in the day."
+      "description": "Eight killed and 20 injured in strike on funeral procession for Palestinian killed by Israel earlier in the day."
     },
     {
       "title": "‘They took our toilet’: How a settlement has squeezed a Palestinian village",
@@ -3615,24 +3633,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/17/us-seeks-extradition-of-wealthy-pro-palestine-donor-from-spain?traffic_source=rss",
       "date": "July 17, 2026",
       "description": "Washington&#039;s pursuit of James &#039;Fergie&#039; Chambers for supporting &#039;terror&#039; seen as a warning to other left-leaning donors."
-    },
-    {
-      "title": "US marines board commercial tanker in Gulf of Oman",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/17/us-marines-board-commercial-tanker-in-gulf-of-oman?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "US marines board commercial tanker in Gulf of Oman"
-    },
-    {
-      "title": "China slams Trump’s claims over 2020 US election interference",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/17/china-slams-trumps-claims-over-2020-us-election-interference?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "China has responded to US President Donald Trump’s claims that China interfered in the 2020 US presidential election."
-    },
-    {
-      "title": "Church of England backs Palestinian Christians despite backlash",
-      "url": "https://www.aljazeera.com/news/2026/7/17/church-of-england-backs-palestinian-christians-despite-backlash?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "The Church of England passed a motion to learn about the experiences of Palestinian Christians in the Kairos documents."
     }
   ]
 }
