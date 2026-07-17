@@ -1,10 +1,16 @@
 {
-  "updatedAt": "2026-07-17T15:07:58.443Z",
+  "updatedAt": "2026-07-17T16:09:33.264Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260717",
       "code": "20260717",
       "title": "Hong Kong-related Designations Updates and Removals",
+      "date": "July 17, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260717_33",
+      "code": "20260717_33",
+      "title": "Issuance of Venezuela-related Frequently Asked Question",
       "date": "July 17, 2026"
     },
     {
@@ -53,12 +59,6 @@
       "url": "https://ofac.treasury.gov/recent-actions/20260701_33",
       "code": "20260701_33",
       "title": "Reminder to File the 2026 Annual Report of Blocked Property",
-      "date": "July 01, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260701",
-      "code": "20260701",
-      "title": "Counter Narcotics Designations; Counter Terrorism Designations and Designation Update",
       "date": "July 01, 2026"
     }
   ],
@@ -2243,7 +2243,7 @@
     "venezuela-related-sanctions": {
       "name": "Venezuela-Related Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/venezuela-related-sanctions",
-      "lastUpdated": "Jun 25, 2026",
+      "lastUpdated": "Jul 17, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -2885,6 +2885,12 @@
   ],
   "ajNews": [
     {
+      "title": "Ukraine suffers port attacks as protests persist over defence shake-up",
+      "url": "https://www.aljazeera.com/news/2026/7/17/ukraine-suffers-port-attacks-as-protests-persist-over-defence-shake-up?traffic_source=rss",
+      "date": "July 17, 2026",
+      "description": "Russian attacks reportedly kill two Ukrainians aboard foreign vessel in Mykolaiv; two more killed in Kherson and Odesa."
+    },
+    {
       "title": "Satellite images show damage inside Iran’s Bushehr nuclear power plant",
       "url": "https://www.aljazeera.com/news/2026/7/17/satellite-images-show-damage-inside-irans-bushehr-nuclear-power-plant?traffic_source=rss",
       "date": "July 17, 2026",
@@ -3145,7 +3151,7 @@
       "description": "The company says it will create \"high-tech, high-paying jobs\", and raises its total commitment to the US to $265bn."
     },
     {
-      "title": "He escaped the Bangkok bar inferno - but his girlfriend and three bandmates didn't",
+      "title": "I thought we'd grow old together, says band leader whose girlfriend died in Thai bar inferno",
       "url": "https://www.bbc.co.uk/news/articles/c1k13zj914mo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 16, 2026",
       "description": "Athipat Wichan tells BBC Thai he regrets bringing his girlfriend Nahathai into his indie band Thotsakan."
@@ -3433,6 +3439,12 @@
       "description": "Helium-3 is expensive and demand is forecast to soar, so some are planning to mine it on the moon."
     },
     {
+      "title": "What are your rights if you buy something that breaks?",
+      "url": "https://www.bbc.co.uk/news/videos/c3r0lq9n14wo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 17, 2026",
+      "description": "Martin Lewis explains why you should go back to the item's retailer, not the manufacturer."
+    },
+    {
       "title": "'Volunteering with food charity saved me from loneliness'",
       "url": "https://www.bbc.co.uk/news/articles/c1eye5jv9xgo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 17, 2026",
@@ -3449,12 +3461,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c5yz4wnz6jdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 16, 2026",
       "description": "Sarah and her husband have shared one account for 25 years, but she says managing it falls to her."
-    },
-    {
-      "title": "Calls for government taskforce to tackle poverty",
-      "url": "https://www.bbc.co.uk/news/articles/ce85d6j5y75o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "Charities, schools and businesses warn too many families are struggling with the cost of living."
     },
     {
       "title": "Why Gen Z are planning for life without a state pension",
@@ -3487,6 +3493,12 @@
       "description": "What impact might shortages have on our summer holidays - and what could be done about it?"
     },
     {
+      "title": "What are your rights if you buy something that breaks?",
+      "url": "https://www.bbc.co.uk/news/videos/c3r0lq9n14wo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 17, 2026",
+      "description": "Martin Lewis explains why you should go back to the item's retailer, not the manufacturer."
+    },
+    {
       "title": "How do you split the bill with friends?",
       "url": "https://www.bbc.co.uk/news/videos/c5yzy3j39vwo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 17, 2026",
@@ -3511,10 +3523,16 @@
       "description": "We hear about a new study exploring the impact hormones have on women with ADHD."
     },
     {
-      "title": "Should you be switching bank accounts?",
-      "url": "https://www.bbc.co.uk/news/videos/c24yjeze14mo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 10, 2026",
-      "description": "Martin Lewis covers whether you should be switching bank accounts."
+      "title": "‘They took our toilet’: How a settlement has squeezed a Palestinian village",
+      "url": "https://www.aljazeera.com/features/2026/7/17/they-took-toilet-settlement-squeezed-palestinian-village?traffic_source=rss",
+      "date": "July 17, 2026",
+      "description": "An illegal Israeli outpost set up next to Umm al-Khair in West Bank, immediately separating villagers from their land."
+    },
+    {
+      "title": "Plainclothes ICE agents manhandle man during arrest attempt",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/17/plainclothes-ice-agents-manhandle-man-during-arrest-attempt?traffic_source=rss",
+      "date": "July 17, 2026",
+      "description": "Plainclothes ICE agents manhandle man during arrest attempt at the Las Vegas airport on July 13, 2026."
     },
     {
       "title": "France vs England – World Cup third-place playoff: Prediction, kickoff",
@@ -3629,24 +3647,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/17/knesset-dissolves-how-will-israel-vote-in-octobers-general-election?traffic_source=rss",
       "date": "July 17, 2026",
       "description": "Knesset dissolves after first full term since 1988, with Israel heading towards crucial elections on October 27, 2026."
-    },
-    {
-      "title": "Has Ukraine’s Zelenskyy created a rival by sacking his defence minister?",
-      "url": "https://www.aljazeera.com/news/2026/7/17/has-ukraines-zelenskyy-created-a-rival-by-sacking-his-defence-minister?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "Rallies in support of sacked Defence Minister Mykhailo Fedorov have exposed a political challenge for Zelenskyy."
-    },
-    {
-      "title": "As Chinese economy slows, experts say there will be ‘problems for Beijing’",
-      "url": "https://www.aljazeera.com/economy/2026/7/17/as-chinese-economy-slows-experts-say-there-will-be-problems-for-beijing?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "While the &#039;export engine is running very hot&#039;, jobs are lagging, squeezing spending in China."
-    },
-    {
-      "title": "FIFA World Cup: 10 things to know before Spain-Argentina final in New York",
-      "url": "https://www.aljazeera.com/sports/2026/7/17/spain-argentina-fifa-world-cup-2026-final-messi-yamal-photo-trump?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "From the viral photo of Lionel Messi with baby Lamine Yamal to Donald Trump&#039;s presence and the NFL-style half-time show."
     }
   ]
 }
