@@ -43,21 +43,31 @@ jobs:
         continue-on-error: true
         run: npm install pdf-parse@1.1.1 --no-save --no-audit --no-fund
 
-      - name: Fetch official sources (fast path — no LLM)
+      - name: Fetch official sources — 4 groups (each under CF 50-subrequest limit)
         run: |
-          # Fetches official RSS/HTML sources and saves to Redis quickly (~10s).
-          # Gemini (LLM) step below replaces this with enriched articles.
-          # Strip any trailing slash from APP_URL to avoid a double-slash URL
-          # (Cloudflare 308-redirects that, and curl won't follow it without -L).
+          # CF Workers hard-caps subrequests at 50 per invocation. Fetching all
+          # 62 RSS sources in one call exceeds that. Instead we call /api/refresh
+          # 4× with group=1..4 (11/8/12/26 sources respectively — each well under
+          # the limit). Each call additively merges into Redis so no group's
+          # articles are lost when the next group saves.
+          # group 1 (~11): OFAC date news + Treasury SB probes
+          # group 2 (~8):  Federal Register + Google News OFAC/Iran/Russia
+          # group 3 (~12): UK/EU/BIS/OCC/Fed/DoW official pages
+          # group 4 (~26): FinCEN + China/DPRK/regional + AP/BBC/CNN
           APP_URL="${{ secrets.APP_URL }}"
           APP_URL="${APP_URL%/}"
 
-          HTTP=$(curl -s -L -o /tmp/resp.json -w "%{http_code}" \
-            -X POST "$APP_URL/api/refresh" \
-            -H "Content-Type: application/json" \
-            -d "{}" --max-time 30 || echo "000")
-          echo "Official sources HTTP: $HTTP"
-          cat /tmp/resp.json 2>/dev/null || true
+          for GROUP in 1 2 3 4; do
+            echo "=== Group $GROUP ==="
+            HTTP=$(curl -s -L -o /tmp/resp_g${GROUP}.json -w "%{http_code}" \
+              -X POST "$APP_URL/api/refresh" \
+              -H "Content-Type: application/json" \
+              -H "x-cron-secret: ${{ secrets.CRON_SECRET }}" \
+              -d "{\"group\":$GROUP}" --max-time 35 || echo "000")
+            echo "HTTP: $HTTP"
+            python3 -c "import json; d=json.load(open('/tmp/resp_g${GROUP}.json')); print('  savedTo=%s articles=%s errors=%s' % (d.get('savedTo',[]), d.get('articleCount','?'), [e['error'][:80] for e in d.get('storageErrors',[])]))" 2>/dev/null || cat /tmp/resp_g${GROUP}.json 2>/dev/null || true
+            sleep 3
+          done
 
       - name: Call Gemini + save enriched briefing
         # Gemini with Google Search grounding takes 30-90s — too slow for CF's 30s wall-clock limit.

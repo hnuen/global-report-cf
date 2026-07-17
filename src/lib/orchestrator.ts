@@ -304,13 +304,15 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
         ),
       ]);
       briefing = result.briefing;
+      // Mark every Gemini article so the alert pipeline can exclude them.
+      // LLM-generated articles have plausible-looking source/URL strings but the
+      // URLs are often hallucinated — a broken-link alert is worse than no alert.
+      briefing.articles = briefing.articles.map(a => ({ ...a, aiGenerated: true }));
       usedProvider = result.usedProvider;
       console.log(`[orchestrator] LLM succeeded (${usedProvider})`);
-      // Save Gemini articles to the persistent library so they accumulate over time
-      // (the enrichment path below only saves structured-source articles, not LLM ones)
-      saveArticlesToLibrary(briefing.articles).catch(e =>
-        console.log("[orchestrator] Library save (LLM) failed (non-fatal):", String(e).slice(0, 80))
-      );
+      // NOTE: Gemini articles are NOT saved to the library — they can contain
+      // hallucinated URLs/sources.  Only real RSS/scrape articles (injected
+      // below from the OFAC cache) are persisted for future use.
     } catch (llmError) {
       const reason = String(llmError).slice(0, 120);
       console.log("[orchestrator] LLM unavailable — keeping structured briefing:", reason);
@@ -345,6 +347,40 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
   });
   if (briefing.articles.length < beforeNoNewsFilter) {
     console.log(`[orchestrator] Filtered ${beforeNoNewsFilter - briefing.articles.length} no-news filler article(s)`);
+  }
+
+  // ── Group-mode additive merge ─────────────────────────────────────────────
+  // When fetching a specific group (11-26 sources each — safely under CF's
+  // 50-subrequest limit), merge new articles INTO the existing Redis briefing
+  // instead of overwriting it. Each refresh.yml cycle calls /api/refresh 4×
+  // (group 1, 2, 3, 4 sequentially); without this, group 4's save would wipe
+  // everything written by groups 1, 2, 3.
+  if (opts?.group !== undefined) {
+    try {
+      const existing = await storage.load();
+      if (existing?.articles?.length) {
+        const currentKeys = new Set(
+          briefing.articles.map(a =>
+            a.headline.slice(0, 80).toLowerCase().replace(/\s+/g, " ").trim()
+          )
+        );
+        const fromExisting = existing.articles.filter(a =>
+          !currentKeys.has(a.headline.slice(0, 80).toLowerCase().replace(/\s+/g, " ").trim())
+        );
+        if (fromExisting.length > 0) {
+          briefing.articles = [...briefing.articles, ...fromExisting];
+          // Re-sort to keep tier order consistent after merge
+          briefing.articles = briefing.articles.sort((a, b) => {
+            const pa = getPriority(a.source), pb = getPriority(b.source);
+            if (pb !== pa) return pb - pa;
+            return (b.date || "").localeCompare(a.date || "");
+          });
+          console.log(`[orchestrator] Group ${opts.group} additive merge: +${fromExisting.length} from existing → ${briefing.articles.length} total`);
+        }
+      }
+    } catch (e) {
+      console.log("[orchestrator] Additive merge failed (non-fatal):", String(e).slice(0, 80));
+    }
   }
 
   // ── Section-scoped merge: don't overwrite other sections ──────────────────
@@ -386,6 +422,15 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
     console.log("[orchestrator] Pre-save failed:", String(e).slice(0, 100));
   }
 
+  // Save government-source articles to the library even in skipLLM (group) path.
+  // Without this, group-based refreshes never accumulate the article library,
+  // so library-based backfill stays empty after a purge.
+  if (opts?.skipLLM) {
+    saveArticlesToLibrary(briefing.articles).catch(e =>
+      console.log("[orchestrator] Library save (skipLLM, non-fatal):", String(e).slice(0, 80))
+    );
+  }
+
   // Enrich articles with AI-generated briefs (cached in Redis, runs async)
   // Skipped on manual refresh (too slow for interactive use) and when skipLLM=true.
   // Best-effort: failure here does not lose data, since the core briefing is already saved above.
@@ -404,9 +449,10 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
         });
         console.log(`[orchestrator] Enriched ${enriched.size} article briefs`);
 
-        // Save enriched articles to the persistent library for future refreshes
+        // Save enriched articles to the persistent library — real RSS/scrape only,
+        // never AI-generated articles (those have hallucinated URLs).
         const enrichedArticles = briefing.articles.filter(a =>
-          a.sourceUrl && enriched.has(a.sourceUrl)
+          a.sourceUrl && enriched.has(a.sourceUrl) && !(a as any).aiGenerated
         );
         saveArticlesToLibrary(enrichedArticles).catch(e =>
           console.log("[orchestrator] Library save failed (non-fatal):", String(e).slice(0, 80))

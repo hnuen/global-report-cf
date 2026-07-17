@@ -1450,6 +1450,14 @@ try {
   briefing.articles = briefing.articles.map(a => ({
     ...a,
     body: Array.isArray(a.body) ? a.body : String(a.body).split("\n").filter(Boolean),
+    // Everything in this map came out of Gemini — mark it so the alert
+    // scorer's aiGenerated gate (src/lib/alert-scorer.ts step 10) applies.
+    // Previously only the in-app LLM path (orchestrator.ts) set this flag,
+    // so Gemini articles saved via /api/save-briefing bypassed the gate and
+    // could fire alerts with hallucinated or missing source links. Articles
+    // injected later from the OFAC GitHub cache / direct scrapes are added
+    // AFTER this map and stay unflagged (they carry real, verified URLs).
+    aiGenerated: true,
   }));
 
   // Drop "nothing happened" filler articles before they're ever saved — not

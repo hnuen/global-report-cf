@@ -54,6 +54,42 @@ async function redisSet(key: string, value: string): Promise<void> {
   } catch { /* non-fatal */ }
 }
 
+/**
+ * Batch GET multiple keys in a single Upstash pipeline request (1 subrequest).
+ * Replaces N individual GETs to stay within CF Workers' 50-subrequest limit.
+ */
+async function redisMGet(keys: string[]): Promise<(string | null)[]> {
+  const url = upstashUrl(); const token = upstashToken();
+  if (!url || !token) return keys.map(() => null);
+  try {
+    const commands = keys.map(k => ["GET", k]);
+    const res = await fetch(`${url}/pipeline`, {
+      method: "POST",
+      headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
+      body: JSON.stringify(commands),
+    });
+    if (!res.ok) return keys.map(() => null);
+    const data: { result: string | null }[] = await res.json();
+    return data.map(r => r.result ?? null);
+  } catch { return keys.map(() => null); }
+}
+
+/**
+ * Batch SET multiple key/value pairs in a single Upstash pipeline request (1 subrequest).
+ */
+async function redisMSet(pairs: { key: string; value: string }[]): Promise<void> {
+  const url = upstashUrl(); const token = upstashToken();
+  if (!url || !token || pairs.length === 0) return;
+  try {
+    const commands = pairs.map(({ key, value }) => ["SET", key, value]);
+    await fetch(`${url}/pipeline`, {
+      method: "POST",
+      headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
+      body: JSON.stringify(commands),
+    });
+  } catch { /* non-fatal */ }
+}
+
 async function redisGetArticles(key: string): Promise<Article[]> {
   try {
     const raw = await redisGet(key);
@@ -94,7 +130,7 @@ export async function setCachedBrief(url: string, brief: string): Promise<void> 
   await redisSetTtl(BRIEF_PREFIX + briefHashUrl(url), brief, BRIEF_TTL);
 }
 
-// ── Article library ──────────────────────────────────────────────────────────
+// ── Article library ────────────────────────────────────────────────────────────────────────────
 
 const GENERIC_BRIEFS = [
   "new designations or sanctions measures issued",
@@ -119,10 +155,17 @@ function headlineKey(headline: string): string {
 }
 
 export async function loadArticleLibrary(): Promise<Article[]> {
-  // Load from per-section v2 keys
-  const results = await Promise.all(
-    SECTIONS.map(sec => redisGetArticles(sectionKey(sec)))
-  );
+  // Batch-load all section keys in ONE pipeline request (saves 5 subrequests vs
+  // 6 individual GETs — critical for CF Workers' 50-subrequest-per-invocation limit).
+  const keys = SECTIONS.map(sectionKey);
+  const raws = await redisMGet(keys);
+  const results = raws.map(raw => {
+    try {
+      if (!raw) return [] as Article[];
+      const parsed = JSON.parse(raw);
+      return Array.isArray(parsed) ? (parsed as Article[]) : [];
+    } catch { return [] as Article[]; }
+  });
   const all = results.flat();
 
   // Auto-migrate from legacy v1 key if v2 is empty
@@ -157,30 +200,36 @@ export async function saveArticlesToLibrary(newArticles: Article[]): Promise<voi
   // Determine all sections that need updating (standard + any extras in candidates)
   const allSections = new Set<string>([...SECTIONS, ...candidatesBySection.keys()]);
 
-  // Process each section in parallel
-  await Promise.all([...allSections].map(async (sec) => {
+  // Batch-load existing articles for all affected sections in ONE pipeline request.
+  const affectedSections = [...allSections].filter(sec => (candidatesBySection.get(sec) ?? []).length > 0);
+  const existingRaws = await redisMGet(affectedSections.map(sectionKey));
+  const existingBySec = new Map<string, Article[]>();
+  affectedSections.forEach((sec, i) => {
+    try {
+      const raw = existingRaws[i];
+      const parsed = raw ? JSON.parse(raw) : [];
+      existingBySec.set(sec, Array.isArray(parsed) ? parsed : []);
+    } catch { existingBySec.set(sec, []); }
+  });
+
+  // Merge each section
+  const toSave: { key: string; value: string }[] = [];
+  for (const sec of affectedSections) {
     const newForSec = candidatesBySection.get(sec) ?? [];
-    if (newForSec.length === 0) return; // no new articles for this section — skip
-
-    const existing = await redisGetArticles(sectionKey(sec));
-
-    // Merge: build map by headline key, prefer longer/better briefs
+    const existing  = existingBySec.get(sec) ?? [];
     const map = new Map<string, Article>();
     for (const a of existing) map.set(headlineKey(a.headline), a);
     for (const a of newForSec) {
-      const key = headlineKey(a.headline);
-      const prev = map.get(key);
-      if (!prev || (a.body[0] || "").length > (prev.body[0] || "").length) {
-        map.set(key, a);
-      }
+      const k = headlineKey(a.headline);
+      const prev = map.get(k);
+      if (!prev || (a.body[0] || "").length > (prev.body[0] || "").length) map.set(k, a);
     }
+    const merged = [...map.values()].sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+    toSave.push({ key: sectionKey(sec), value: JSON.stringify(merged) });
+    console.log(`[article-library] Section "${sec}": ${merged.length} articles to save`);
+  }
 
-    const merged = [...map.values()]
-      .sort((a, b) => (b.date || "").localeCompare(a.date || ""));
-
-    await redisSet(sectionKey(sec), JSON.stringify(merged));
-    console.log(`[article-library] Section "${sec}": ${merged.length} articles saved`);
-  }));
-
+  // Batch-save all sections in ONE pipeline request (saves N-1 subrequests).
+  await redisMSet(toSave);
   console.log(`[article-library] Saved ${candidates.length} new/updated articles`);
 }

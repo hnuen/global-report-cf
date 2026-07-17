@@ -1,0 +1,12 @@
+# Force LF line endings on files that are executed as shell scripts or
+# written verbatim into shell steps by CI. CRLF (\r) in these breaks bash on
+# Linux runners — a stray carriage return caused GitHub Actions monitor.yml's
+# ntfy step to fail with "unexpected EOF while looking for matching ')'".
+*.yml   text eol=lf
+*.yaml  text eol=lf
+*.sh    text eol=lf
+*.mjs   text eol=lf
+*.js    text eol=lf
+*.ts    text eol=lf
+*.tsx   text eol=lf
+*.json  text eol=lf

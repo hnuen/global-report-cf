@@ -1061,11 +1061,12 @@ export default function GlobalMonitor() {
       <div className="m-tabs">
         {mSecs.map(s=><button key={s} className={`m-tab ${s} ${section===s?"active":""}`}
           onClick={()=>{ handleSection(s); setSearchBarOpen(false); }}>{LABELS[s]}</button>)}
+        <a href="/contact" className="m-tab" style={{textDecoration:"none",color:"#6b7280",flexShrink:0}}>Contact</a>
       </div>
       {/* Status bar */}
       <div className="m-bar">
         <span className="m-dot"/>
-        <span className="m-txt">{formatLastUpdated(data.lastUpdated.replace(/\s*·\s*\d+\s*stories/i, ""), data.lastUpdatedIso)} · {allFiltered.length} stories</span>
+        <span className="m-txt">{data.lastUpdatedIso ? new Date(data.lastUpdatedIso).toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"})+" — "+new Date(data.lastUpdatedIso).toLocaleTimeString(undefined,{hour:"2-digit",minute:"2-digit"}) : data.lastUpdated.split(" — ")[0].trim()}</span>
         {section !== "penalties" && (
           <button className={`m-btn ${searchBarOpen||sanOn?"on":""}`}
             onClick={()=>setSearchBarOpen(v=>!v)}>⊘ {sanOn?"Filtered":"Filter"}</button>
@@ -1074,6 +1075,12 @@ export default function GlobalMonitor() {
           <select className="m-region-sel" value={region} onChange={e=>setRegion(e.target.value)}>
             {mRegions.map(r=><option key={r} value={r}>{r}</option>)}
           </select>
+        )}
+        {section==="sanctions" && (
+          <button className={`m-btn ${ofacProgram?"on":""}`}
+            onClick={()=>{setOfacProgram(ofacProgram?"":"iran");setOfacProgramUpdate(null);setOfacDiff(null);setOfacOverride(null);if(!ofacProgram)loadOfacOverride("iran");}}>
+            ⚖ Programs
+          </button>
         )}
         <button className="m-btn" onClick={handleRefresh} disabled={refreshing}>
           {refreshing?"…":"↻"}
@@ -1096,6 +1103,77 @@ export default function GlobalMonitor() {
           </div>
         </div>
       )}
+      {/* Mobile OFAC programs panel */}
+      {section==="sanctions" && ofacProgram && (()=>{
+        const prog=SANCTIONS_PROGRAMS.find(p=>p.id===ofacProgram);
+        if(!prog) return null;
+        const activeGLs=prog.generalLicenses||[];
+        const activeEOs=prog.executiveOrders||[];
+        return (
+          <div style={{background:"#f9fafb",borderBottom:"2px solid #111",padding:"10px 12px"}}>
+            {/* Selector row */}
+            <div style={{display:"flex",alignItems:"center",gap:6,flexWrap:"wrap",marginBottom:8}}>
+              <select value={ofacProgram} onChange={e=>{const id=e.target.value;setOfacProgram(id);setOfacProgramUpdate(null);setOfacDiff(null);setOfacOverride(null);loadOfacOverride(id);}}
+                style={{fontFamily:"var(--mono)",fontSize:".58rem",padding:"3px 5px",border:"1px solid #d1d5db",borderRadius:3,background:"#fff",flex:1,minWidth:0}}>
+                <optgroup label="Country Programs">
+                  {SANCTIONS_PROGRAMS.filter(p=>p.category==="country").map(p=><option key={p.id} value={p.id}>{p.name}</option>)}
+                </optgroup>
+                <optgroup label="Thematic Programs">
+                  {SANCTIONS_PROGRAMS.filter(p=>p.category==="thematic").map(p=><option key={p.id} value={p.id}>{p.name}</option>)}
+                </optgroup>
+              </select>
+              <span style={{fontFamily:"var(--mono)",fontSize:".5rem",fontWeight:700,padding:"2px 6px",borderRadius:3,background:prog.status==="active"?"#dcfce7":"#f3f4f6",color:prog.status==="active"?"#166534":"#6b7280",flexShrink:0,textTransform:"uppercase"}}>{prog.status}</span>
+              <button className="m-btn" onClick={()=>setOfacProgram("")} style={{flexShrink:0}}>✕</button>
+            </div>
+            {/* Action row */}
+            <div style={{display:"flex",gap:6,marginBottom:10,flexWrap:"wrap"}}>
+              <a href={prog.url} target="_blank" rel="noopener noreferrer"
+                style={{fontFamily:"var(--mono)",fontSize:".58rem",padding:"4px 10px",border:"1.5px solid #1a56db",borderRadius:3,background:"#1a56db",color:"#fff",textDecoration:"none",whiteSpace:"nowrap"}}>
+                OFAC.gov ↗
+              </a>
+              <button onClick={()=>checkOfacDiff(ofacProgram)} disabled={ofacDiffLoading}
+                style={{fontFamily:"var(--mono)",fontSize:".58rem",padding:"4px 10px",border:"1.5px solid #166534",borderRadius:3,background:ofacDiffLoading?"#f9fafb":"#166534",color:ofacDiffLoading?"#6b7280":"#fff",cursor:ofacDiffLoading?"wait":"pointer",whiteSpace:"nowrap"}}>
+                {ofacDiffLoading?"Checking…":"Check for Updates"}
+              </button>
+            </div>
+            {/* Diff result */}
+            {ofacDiff && !ofacDiff.error && (
+              <div style={{fontFamily:"var(--mono)",fontSize:".58rem",padding:"6px 10px",borderRadius:3,background:"#fff",border:"1px solid #e5e7eb",marginBottom:8}}>
+                {ofacDiff.generalLicenses?.length||ofacDiff.executiveOrders?.length
+                  ? <span style={{color:"#854d0e"}}>⚠ Live page has changes — check desktop view to review & accept</span>
+                  : <span style={{color:"#166534"}}>✓ Library matches OFAC page</span>}
+              </div>
+            )}
+            {/* General Licenses */}
+            {activeGLs.length>0 && (
+              <div style={{marginBottom:8}}>
+                <div style={{fontFamily:"var(--mono)",fontSize:".5rem",fontWeight:700,letterSpacing:".05em",color:"#6b7280",marginBottom:4,textTransform:"uppercase"}}>General Licenses ({activeGLs.length})</div>
+                {activeGLs.map(gl=>(
+                  <div key={gl.number} style={{display:"flex",gap:6,padding:"4px 0",borderBottom:"1px solid #f3f4f6",alignItems:"flex-start"}}>
+                    <span style={{fontFamily:"var(--mono)",fontSize:".55rem",color:"#cc0000",flexShrink:0,minWidth:36}}>{gl.number}</span>
+                    {gl.url
+                      ? <a href={gl.url} target="_blank" rel="noopener noreferrer" style={{fontFamily:"var(--mono)",fontSize:".55rem",color:"#374151",textDecoration:"none",flex:1,lineHeight:1.3}}>{gl.title}</a>
+                      : <span style={{fontFamily:"var(--mono)",fontSize:".55rem",color:"#374151",flex:1,lineHeight:1.3}}>{gl.title}</span>}
+                    {gl.expires&&<span style={{fontFamily:"var(--mono)",fontSize:".48rem",color:"#f97316",flexShrink:0}}>exp {gl.expires}</span>}
+                  </div>
+                ))}
+              </div>
+            )}
+            {/* Executive Orders */}
+            {activeEOs.length>0 && (
+              <div>
+                <div style={{fontFamily:"var(--mono)",fontSize:".5rem",fontWeight:700,letterSpacing:".05em",color:"#6b7280",marginBottom:4,textTransform:"uppercase"}}>Executive Orders ({activeEOs.length})</div>
+                {activeEOs.map(eo=>(
+                  <div key={eo.number} style={{display:"flex",gap:6,padding:"3px 0",borderBottom:"1px solid #f3f4f6",alignItems:"center"}}>
+                    <span style={{fontFamily:"var(--mono)",fontSize:".55rem",color:"#1d4ed8",flexShrink:0,minWidth:56}}>{eo.number}</span>
+                    <span style={{fontFamily:"var(--mono)",fontSize:".55rem",color:"#374151",flex:1,lineHeight:1.3}}>{eo.title}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        );
+      })()}
       {/* Key figures strip */}
       {kfAll.length > 0 && section !== "penalties" && (
         <div className="m-kf">
@@ -1765,3 +1843,4 @@ export default function GlobalMonitor() {
     </div></>
   );
 }
+ 
