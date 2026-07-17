@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-17T17:09:28.990Z",
+  "updatedAt": "2026-07-17T17:39:22.771Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260717",
@@ -2871,12 +2871,6 @@
       "description": "UK fuel prices are going up again after the collapse of peace talks to end the US-Israel war with Iran."
     },
     {
-      "title": "Heating oil customers to get compensation after price hikes",
-      "url": "https://www.bbc.co.uk/news/articles/cy494yypnv3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 14, 2026",
-      "description": "The cost of heating oil spiked following the US-Israel war with Iran which forced up crude prices."
-    },
-    {
       "title": "Why are UK fuel prices rising again?",
       "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 17, 2026",
@@ -2907,15 +2901,16 @@
       "url": "https://www.aljazeera.com/news/2026/7/17/ukraine-cuts-off-crimea-from-russia-plunging-it-into-an-energy-crisis?traffic_source=rss",
       "date": "July 17, 2026",
       "description": "Ukraine is ramping up short-, medium- and long-range drone production to bring Russia’s war to a standstill."
-    },
-    {
-      "title": "Why is the US attacking southern Iran’s civilian infrastructure?",
-      "url": "https://www.aljazeera.com/news/2026/7/17/why-is-the-us-attacking-southern-irans-civilian-infrastructure?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "Analysts say the goals range from targeting Iran&#039;s supply lines to curbing its influence in the Strait of Hormuz."
     }
   ],
-  "occNews": [],
+  "occNews": [
+    {
+      "title": "OCC Announces Enforcement Actions for July 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-59.html",
+      "date": "July 16, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for July 2026."
+    }
+  ],
   "economicsNews": [
     {
       "title": "Minutes of the Board&#39;s discount rate meetings on June 8 and June 17, 2026",
@@ -3228,6 +3223,12 @@
       "description": "From defence spending to housing - the next UK leader has a series of challenges to deal with."
     },
     {
+      "title": "Brewdog founder faces data complaints over efforts to buy back firm",
+      "url": "https://www.bbc.co.uk/news/articles/c4gw9pp0xlno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 17, 2026",
+      "description": "The UK data watchdog has received complaints after James Watt reportedly contacted former shareholders."
+    },
+    {
       "title": "China's Moonshot AI claims Kimi K3 can rival OpenAI and Anthropic",
       "url": "https://www.bbc.co.uk/news/articles/cy9w4q8pgp0o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 17, 2026",
@@ -3522,6 +3523,24 @@
       "description": "We hear about a new study exploring the impact hormones have on women with ADHD."
     },
     {
+      "title": "Burnham elected Labour leader, vows new direction for UK",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/17/burnham-elected-labour-leader-vows-new-direction-for-uk?traffic_source=rss",
+      "date": "July 17, 2026",
+      "description": "Britain&#039;s governing Labour Party elected Andy Burnham as its new leader, clearing the way for him to become PM"
+    },
+    {
+      "title": "Did the US just start a trade war with Brazil?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/17/did-the-us-just-start-a-trade-war-with-brazil?traffic_source=rss",
+      "date": "July 17, 2026",
+      "description": "Did the US just start a trade war with Brazil?"
+    },
+    {
+      "title": "Iranian forces: missiles and drones fired at US targets in Gulf States",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/17/iranian-forces-missiles-and-drones-fired-at-us-targets-in-gulf-states?traffic_source=rss",
+      "date": "July 17, 2026",
+      "description": "Iranian forces: missiles and drones fired at US targets in Gulf States."
+    },
+    {
       "title": "Apple regains top spot as world’s most valuable company",
       "url": "https://www.aljazeera.com/economy/2026/7/17/apple-regains-top-spot-as-worlds-most-valuable-company?traffic_source=rss",
       "date": "July 17, 2026",
@@ -3628,18 +3647,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/17/did-china-steal-2020-us-election-data-as-trump-claims?traffic_source=rss",
       "date": "July 17, 2026",
       "description": "Trump revived long-debunked theories regarding the 2020 elections in a primetime speech."
-    },
-    {
-      "title": "‘Yuba’ – My dear father",
-      "url": "https://www.aljazeera.com/opinions/2026/7/17/yuba-my-dear-father?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "My father, Sheikh Hamad bin Khalifa Al Thani, believed leadership meant putting Qatar and its people first."
-    },
-    {
-      "title": "The Church of England has taken a long-overdue step on Palestine",
-      "url": "https://www.aljazeera.com/opinions/2026/7/17/the-church-of-england-has-taken-a-long-overdue-step-on-palestine?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "By agreeing to hear Palestinian Christians, the Synod has begun to confront its history and responsibilities."
     }
   ]
 }
