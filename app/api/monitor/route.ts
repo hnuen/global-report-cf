@@ -56,12 +56,26 @@ async function markAlerted(key: string, cooldownMinutes: number): Promise<void> 
 // (causing false-negative drops) go here.
 const HEAD_BLOCKED_DOMAINS = [
   "aljazeera.com",   // AJ blocks cloud-origin HEAD checks — returns 403/timeout
+  "treasury.gov",    // ofac.treasury.gov / home.treasury.gov block Cloudflare IPs
+                     // (the whole reason OFAC data is read from a GitHub cache) —
+                     // a HEAD from the CF Worker always fails, which would wrongly
+                     // drop every OFAC alert now that unreachable alerts are dropped.
 ];
 
 function isHeadBlocked(url: string): boolean {
   try {
-    const host = new URL(url).hostname.replace(/^www\./, "");
-    return HEAD_BLOCKED_DOMAINS.some(d => host === d || host.endsWith("." + d));
+    const host = new URL(url).hostname.replace(/^www\./, "").toLowerCase();
+    if (HEAD_BLOCKED_DOMAINS.some(d => host === d || host.endsWith("." + d))) return true;
+    // Government / intergovernmental domains are authoritative and several
+    // block cloud-origin requests. A HEAD failure from the CF Worker is a
+    // false negative, not evidence the notice is fake — never drop these.
+    // (LLM-hallucinated gov URLs are already excluded upstream: aiGenerated
+    // articles never alert, per alert-scorer.ts.)
+    return (
+      host.endsWith(".gov") || host === "gov.uk" || host.endsWith(".gov.uk") ||
+      host === "europa.eu" || host.endsWith(".europa.eu") ||
+      host === "un.org" || host.endsWith(".un.org") || host.endsWith(".mil")
+    );
   } catch { return false; }
 }
 
