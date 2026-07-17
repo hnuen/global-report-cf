@@ -180,7 +180,10 @@ function todayNY(): { y: string; m: string; d: string } {
 }
 
 export function isRecentEnough(dateStr: string, maxAgeHours: number | undefined = ALERT_MAX_AGE_HOURS): boolean {
-  if (!dateStr) return true; // can't verify staleness — don't block on missing data
+  // Treat missing/empty date as NOT recent — "we don't know when this was published"
+  // is not a reason to alert.  OFAC cache entries with no scraped date would otherwise
+  // pass the recency gate (empty string is falsy) and fire alerts every cooldown cycle.
+  if (!dateStr) return false;
   const trimmed = dateStr.trim();
 
   // Some sources (e.g. Federal Register notices scraped from program pages)
@@ -346,9 +349,64 @@ export function scoreArticle(article: Article): ScoredArticle {
   const isNoNewsFiller = NO_NEWS_PATTERN.test(searchText);
   if (isNoNewsFiller) reasons.push(`non-event / "no news" content — never alerts regardless of score`);
 
-  const shouldAlert = sectionOk && score >= threshold && recentEnough && !isNoNewsFiller;
+  // 10. AI-generated article gate — Gemini can hallucinate URLs that look
+  //     real but return 404s.  Any article produced by the LLM path is
+  //     display-only; only verified RSS/scrape articles should trigger alerts.
+  const isAiGenerated = !!(article as any).aiGenerated;
+  if (isAiGenerated) reasons.push("AI-generated article — display only, never alerts");
+
+  // 11. Trusted-source gate — an alert must carry a direct link to an
+  //     official government or well-known media domain. This is the backstop
+  //     for the hallucinated-alert problem: even if an LLM article slips
+  //     past the aiGenerated flag (e.g. a pipeline that forgets to set it),
+  //     an article with no sourceUrl, or a sourceUrl on some unknown domain,
+  //     never reaches a phone. Reachability (404s on real domains) is
+  //     checked separately in /api/monitor before sending.
+  const hasTrustedSource = isTrustedAlertUrl(article.sourceUrl);
+  if (!hasTrustedSource) {
+    reasons.push(
+      article.sourceUrl
+        ? `sourceUrl domain not on trusted gov/media list — never alerts (${article.sourceUrl.slice(0, 80)})`
+        : "no sourceUrl — alerts require a direct link to a gov/major-media source"
+    );
+  }
+
+  const shouldAlert = sectionOk && score >= threshold && recentEnough && !isNoNewsFiller && !isAiGenerated && hasTrustedSource;
 
   return { article, score, reasons, shouldAlert };
+}
+
+// ── Trusted alert sources ──────────────────────────────────────────────────────
+// Well-known media outlets whose links may appear via the RSS/Google News
+// feeds. Extend without redeploying via ALERT_TRUSTED_DOMAINS (comma-separated).
+const TRUSTED_MEDIA_DOMAINS = [
+  "reuters.com", "apnews.com", "bbc.com", "bbc.co.uk", "aljazeera.com",
+  "bloomberg.com", "ft.com", "wsj.com", "nytimes.com", "washingtonpost.com",
+  "theguardian.com", "cnbc.com", "cnn.com", "politico.com", "axios.com",
+  "economist.com",
+  "news.google.com", // Google News RSS item links — redirect to the real outlet
+];
+
+/** True if the URL's host is an official gov/intergov domain or a well-known media outlet. */
+export function isTrustedAlertUrl(url?: string): boolean {
+  if (!url || url === "#") return false;
+  let host: string;
+  try {
+    host = new URL(url).hostname.replace(/^www\./, "").toLowerCase();
+  } catch { return false; }
+
+  // Official government / intergovernmental domains
+  if (
+    host.endsWith(".gov") ||                                  // treasury.gov, occ.gov, state.gov, war.gov, …
+    host === "gov.uk" || host.endsWith(".gov.uk") ||          // UK OFSI et al.
+    host === "europa.eu" || host.endsWith(".europa.eu") ||    // EU Commission
+    host === "un.org" || host.endsWith(".un.org") ||          // UN press
+    host.endsWith(".mil")
+  ) return true;
+
+  const extra = (process.env.ALERT_TRUSTED_DOMAINS ?? "")
+    .split(",").map(s => s.trim().toLowerCase()).filter(Boolean);
+  return [...TRUSTED_MEDIA_DOMAINS, ...extra].some(d => host === d || host.endsWith("." + d));
 }
 
 export function scoreAll(articles: Article[]): ScoredArticle[] {

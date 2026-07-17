@@ -9,10 +9,15 @@ import type { Briefing } from "@/src/lib/types";
 export const dynamic = "force-dynamic";
 
 export async function POST(request: NextRequest) {
-  // Verify shared secret so random callers can't overwrite the briefing
+  // Verify shared secret so random callers can't overwrite the briefing.
+  // FAIL CLOSED: an unset SAVE_BRIEFING_SECRET must never mean "everyone is
+  // authorized" — this endpoint replaces the site's entire published content.
   const secret = request.headers.get("x-save-secret");
   const expected = process.env.SAVE_BRIEFING_SECRET;
-  if (expected && secret !== expected) {
+  if (!expected) {
+    return NextResponse.json({ error: "SAVE_BRIEFING_SECRET not configured — refusing all writes" }, { status: 503 });
+  }
+  if (secret !== expected) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 

@@ -9,12 +9,14 @@ import { FINCEN_PENALTIES } from "@/src/lib/fincen-penalties";
 export const maxDuration = 120;
 
 export async function GET(request: NextRequest) {
+  // FAIL CLOSED: unset CRON_SECRET means nobody is authorized, not everybody.
   const secret = process.env.CRON_SECRET;
-  if (secret) {
-    const auth = request.headers.get("authorization");
-    if (auth !== `Bearer ${secret}`) {
-      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-    }
+  if (!secret) {
+    return NextResponse.json({ error: "CRON_SECRET not configured" }, { status: 503 });
+  }
+  const auth = request.headers.get("authorization");
+  if (auth !== `Bearer ${secret}` && request.headers.get("x-cron-secret") !== secret) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
   try {
     let { briefing, usedProvider, savedTo } = await refreshBriefing();

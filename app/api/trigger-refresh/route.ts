@@ -11,10 +11,21 @@ import { maybeSyncPenalties } from "@/src/lib/penalties-fetcher";
 import { PENALTIES } from "@/src/lib/penalties-data";
 import { maybeSyncFinCEN } from "@/src/lib/fincen-fetcher";
 import { FINCEN_PENALTIES } from "@/src/lib/fincen-penalties";
+import { checkRateLimit, getClientIp } from "@/src/lib/rate-limit";
 
 export const dynamic = "force-dynamic";
 
 export async function POST(request: NextRequest) {
+  // Public (the in-app Refresh Now button), so rate-limit per IP — each call
+  // burns RSS subrequests and, for the sanctions section, Gemini quota.
+  const ip = getClientIp(request);
+  const allowed = await checkRateLimit(`trigger_refresh_rl:${ip}`, 6, 60 * 60);
+  if (!allowed) {
+    return NextResponse.json(
+      { ok: false, error: "Too many refreshes from this network — please try again later." },
+      { status: 429 }
+    );
+  }
   try {
     const body = await request.json().catch(() => ({}));
     const section: string | undefined = body.section && body.section !== "all" ? body.section : undefined;

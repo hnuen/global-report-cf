@@ -1,9 +1,15 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { buildStorageManager } from "@/src/lib/storage-manager";
 
 export const dynamic = "force-dynamic";
 
-export async function GET() {
+export async function GET(req: NextRequest) {
+  // Admin-only: leaks storage internals and raw error strings.
+  // FAIL CLOSED: unset ADMIN_SECRET disables this endpoint entirely.
+  const adminSecret = process.env.ADMIN_SECRET;
+  if (!adminSecret || req.headers.get("x-admin-secret") !== adminSecret) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
   let upstashPingTest = "not tested";
   try {
     const url = process.env.UPSTASH_REDIS_REST_URL;

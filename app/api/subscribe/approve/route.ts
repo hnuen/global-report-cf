@@ -4,6 +4,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { approveSubscriber } from "@/src/lib/subscribers";
 import { sendNtfyTopicEmail } from "@/src/lib/approval-email";
+import { escapeHtml } from "@/src/lib/escape-html";
 import { confirmationPage } from "../confirmation-page";
 
 export const dynamic = "force-dynamic";
@@ -30,16 +31,18 @@ export async function GET(request: NextRequest) {
     const emailResult = sub.email
       ? await sendNtfyTopicEmail(sub)
       : { ok: false, error: "No email provided" };
+    // sub.email is user-supplied via the public /api/subscribe form and this
+    // string is rendered as HTML in the admin's browser — escape it.
     ntfyNote = emailResult.ok
-      ? ` Topic emailed to ${sub.email}.`
-      : ` Could not email topic (${emailResult.error}) — topic is: ${sub.ntfyTopic}`;
+      ? ` Topic emailed to ${escapeHtml(sub.email!)}.`
+      : ` Could not email topic (${escapeHtml(emailResult.error ?? "unknown")}) — topic is: ${escapeHtml(sub.ntfyTopic ?? "")}`;
   }
 
   const destination = sub.channel === "telegram"
     ? "their linked Telegram chat"
     : sub.channel === "ntfy"
-    ? `ntfy topic ${sub.ntfyTopic}`
-    : sub.phone ?? "unknown";
+    ? `ntfy topic ${escapeHtml(sub.ntfyTopic ?? "")}`
+    : escapeHtml(sub.phone ?? "unknown");
 
   return new NextResponse(
     confirmationPage(

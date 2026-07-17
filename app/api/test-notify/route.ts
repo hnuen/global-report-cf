@@ -2,12 +2,16 @@
  * /api/test-notify — sends a test alert to all configured notification channels.
  * Bypasses cooldown and article scoring. Useful for verifying ntfy, SMS, WhatsApp, Telegram.
  *
- * GET or POST /api/test-notify  →  no auth required (test-only endpoint)
+ * GET or POST /api/test-notify — requires ADMIN_SECRET header
+ * (x-admin-secret). This sends REAL SMS/WhatsApp/Telegram messages to all
+ * configured recipients, so it must never be callable anonymously — an
+ * attacker looping it would drain the Twilio balance and spam every
+ * subscriber.
  *
  * Returns: { ok, results: [{ channel, configured, success, error }] }
  */
 
-import { NextResponse }       from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { TelegramNotifier }   from "@/src/notifiers/telegram";
 import { NtfyNotifier }       from "@/src/notifiers/ntfy";
 import { TwilioNotifier }     from "@/src/notifiers/twilio";
@@ -43,11 +47,24 @@ function makeTestArticle(): ScoredArticle {
   };
 }
 
-export async function GET() {
+function isAuthorised(req: NextRequest): boolean {
+  // FAIL CLOSED: unset ADMIN_SECRET disables this endpoint entirely.
+  const secret = process.env.ADMIN_SECRET;
+  if (!secret) return false;
+  return req.headers.get("x-admin-secret") === secret;
+}
+
+export async function GET(req: NextRequest) {
+  if (!isAuthorised(req)) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
   return handler();
 }
 
-export async function POST() {
+export async function POST(req: NextRequest) {
+  if (!isAuthorised(req)) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
   return handler();
 }
 

@@ -23,6 +23,7 @@
 
 import type { Subscriber } from "./subscribers";
 import { sendEmail } from "./email";
+import { escapeHtml } from "./escape-html";
 
 /** After approving an ntfy subscriber, email them their generated topic name. */
 export async function sendNtfyTopicEmail(sub: Subscriber): Promise<{ ok: boolean; error?: string }> {
@@ -51,7 +52,7 @@ export async function sendNtfyTopicEmail(sub: Subscriber): Promise<{ ok: boolean
   ].join("\n");
 
   const html = `
-    <p>Hi${sub.name ? ` <b>${sub.name}</b>` : ""},</p>
+    <p>Hi${sub.name ? ` <b>${escapeHtml(sub.name)}</b>` : ""},</p>
     <p>Your request to receive OFAC sanctions alerts has been <b>approved</b>.</p>
     <p>To start receiving push notifications, open the <b>ntfy app</b> and subscribe to this topic:</p>
     <p style="background:#f4f4f4;padding:12px 16px;border-radius:4px;font-family:monospace;font-size:16px;letter-spacing:0.5px;">
@@ -116,8 +117,8 @@ export async function sendApprovalEmail(sub: Subscriber): Promise<{ ok: boolean;
   const html = `
     <p>Someone registered to receive Global Report alerts:</p>
     <p>
-      <b>Channel:</b> ${describeSubscriber(sub)}<br/>
-      ${sub.name ? `<b>Name:</b> ${sub.name}<br/>` : ""}
+      <b>Channel:</b> ${escapeHtml(describeSubscriber(sub))}<br/>
+      ${sub.name ? `<b>Name:</b> ${escapeHtml(sub.name)}<br/>` : ""}
       <b>Requested:</b> ${new Date(sub.createdAt).toLocaleString()}
     </p>
     <p>

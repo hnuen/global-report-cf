@@ -19,16 +19,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { sendEmail, isEmailConfigured } from "@/src/lib/email";
 import { checkRateLimit, getClientIp } from "@/src/lib/rate-limit";
+import { escapeHtml } from "@/src/lib/escape-html";
 
 export const dynamic = "force-dynamic";
-
-function escapeHtml(s: string): string {
-  return s
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
-}
 
 export async function POST(req: NextRequest) {
   const body = await req.json().catch(() => ({})) as {

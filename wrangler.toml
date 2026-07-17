@@ -2,3 +2,11 @@ name = "global-report-cf"
 compatibility_date = "2025-04-01"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".open-next"
+
+[limits]
+# Default CF Workers limit is 50 subrequests/invocation. The refresh route
+# fetches 60+ RSS feeds + Redis ops in a single invocation, which exceeds
+# the default. Requires Workers Paid plan; ignored on free plan.
+# cpu_ms is required alongside subrequest_limit (CF wrangler schema requirement).
+cpu_ms = 50
+subrequest_limit = 500

@@ -1,4 +1,7 @@
-// No auth required — public app, refresh just fetches news
+// Requires CRON_SECRET (Authorization: Bearer <secret> or x-cron-secret header).
+// Callers: GitHub Actions refresh.yml (sends x-cron-secret). Although refresh
+// "just fetches news", each call burns RSS subrequests, Redis writes, and
+// potentially LLM quota — anonymous access made it a free DoS/cost-abuse lever.
 import { NextRequest, NextResponse } from "next/server";
 import { refreshBriefing } from "@/src/lib/orchestrator";
 import { maybeSyncPenalties } from "@/src/lib/penalties-fetcher";
@@ -33,7 +36,20 @@ async function syncPenaltyTables() {
   return { penaltySync, fincenSync };
 }
 
+function isAuthorised(req: NextRequest): boolean {
+  // FAIL CLOSED: unset CRON_SECRET means nobody is authorized.
+  const secret = process.env.CRON_SECRET;
+  if (!secret) return false;
+  return (
+    req.headers.get("authorization") === `Bearer ${secret}` ||
+    req.headers.get("x-cron-secret") === secret
+  );
+}
+
 export async function POST(request: NextRequest) {
+  if (!isAuthorised(request)) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
   try {
     // Accept optional group (1-4) to fetch only that group of sources.
     // Each group has 11-26 RSS sources — well under CF's 50-subrequest limit.
@@ -53,6 +69,9 @@ export async function POST(request: NextRequest) {
 }
 
 export async function GET(request: NextRequest) {
+  if (!isAuthorised(request)) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
   try {
     const url = new URL(request.url);
     const groupParam = Number(url.searchParams.get("group"));

@@ -8,6 +8,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createPhoneSubscriber, createTelegramSubscriber, createNtfySubscriber, type SubscriberChannel } from "@/src/lib/subscribers";
 import { sendApprovalEmail, isApprovalEmailConfigured } from "@/src/lib/approval-email";
+import { checkRateLimit, getClientIp } from "@/src/lib/rate-limit";
 
 export const dynamic = "force-dynamic";
 
@@ -15,14 +16,40 @@ export const dynamic = "force-dynamic";
 // typos without rejecting legitimate international formats.
 const PHONE_PATTERN = /^\+[1-9]\d{7,14}$/;
 
+// Loose email sanity check — not full RFC 5322, just enough to reject junk
+// and HTML payloads before the value is stored and later emailed/rendered.
+const EMAIL_PATTERN = /^[^\s@<>"']+@[^\s@<>"']+\.[^\s@<>"']+$/;
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json().catch(() => ({})) as {
-      channel?: string; phone?: string; name?: string; email?: string;
+      channel?: string; phone?: string; name?: string; email?: string; website?: string;
     };
+
+    // Honeypot — same pattern as /api/contact: real users never see/fill
+    // this field; bots that auto-fill every field trip it. Pretend success.
+    if ((body.website ?? "").trim() !== "") {
+      return NextResponse.json({ ok: true, status: "pending_approval" });
+    }
+
+    // Per-IP rate limit — every registration writes to Redis and emails the
+    // site owner via Resend, so an unthrottled bot could flood both.
+    const ip = getClientIp(request);
+    const allowed = await checkRateLimit(`subscribe_rl:${ip}`, 5, 60 * 60);
+    if (!allowed) {
+      return NextResponse.json(
+        { error: "Too many registration attempts from this network — please try again later." },
+        { status: 429 }
+      );
+    }
+
     const channel = body.channel as SubscriberChannel;
     const name  = (body.name  ?? "").trim().slice(0, 80) || undefined;
     const email = (body.email ?? "").trim().slice(0, 200) || undefined;
+
+    if (email && !EMAIL_PATTERN.test(email)) {
+      return NextResponse.json({ error: "That email address doesn't look valid." }, { status: 400 });
+    }
 
     if (!["telegram", "whatsapp", "sms", "ntfy"].includes(channel)) {
       return NextResponse.json({ error: "channel must be telegram, whatsapp, sms, or ntfy" }, { status: 400 });

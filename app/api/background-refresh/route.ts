@@ -19,10 +19,21 @@ import { loadBriefing } from "@/src/lib/orchestrator";
 import { fetchOfficialSources } from "@/src/lib/official-sources";
 import { buildBriefingFromSources } from "@/src/lib/official-briefing";
 import { buildStorageManager } from "@/src/lib/storage-manager";
+import { checkRateLimit, getClientIp } from "@/src/lib/rate-limit";
 
 export const dynamic = "force-dynamic";
 
 export async function POST(request: NextRequest) {
+  // Public (called by the client 3x after a manual refresh), so rate-limit
+  // per IP — 20/hour covers ~6 full manual refreshes.
+  const ip = getClientIp(request);
+  const allowed = await checkRateLimit(`background_refresh_rl:${ip}`, 20, 60 * 60);
+  if (!allowed) {
+    return NextResponse.json(
+      { ok: false, error: "Too many refreshes from this network — please try again later." },
+      { status: 429 }
+    );
+  }
   const startTime = Date.now();
   try {
     const body = await request.json().catch(() => ({}));

@@ -12,8 +12,10 @@ import { getNotifierManager }         from "@/src/notifiers/manager";
 export const maxDuration = 120;
 
 function isAuthorised(req: NextRequest): boolean {
+  // FAIL CLOSED: this endpoint fires real SMS/Telegram/WhatsApp alerts, so an
+  // unset CRON_SECRET must mean "nobody is authorized", not "everybody is".
   const secret = process.env.CRON_SECRET;
-  if (!secret) return true;
+  if (!secret) return false;
   return (
     req.headers.get("authorization") === `Bearer ${secret}` ||
     req.headers.get("x-cron-secret") === secret
@@ -83,17 +85,31 @@ async function isUrlReachable(url: string): Promise<boolean> {
   } catch { return false; }
 }
 
-/** Strip broken sourceUrls from alert candidates in-place */
-async function verifyAlertUrls(alerts: import("@/src/lib/alert-scorer").ScoredArticle[]): Promise<void> {
-  await Promise.all(alerts.map(async sa => {
+/**
+ * DROP alert candidates whose sourceUrl is missing or unreachable.
+ * Previously this only STRIPPED the broken URL and still sent the alert —
+ * which is exactly how hallucinated articles reached subscribers as alerts
+ * with no link to a government or media source. An alert we can't back with
+ * a working, trusted link should not be sent at all: the article stays
+ * visible on the site, it just never pages anyone.
+ */
+async function verifyAlertUrls(
+  alerts: import("@/src/lib/alert-scorer").ScoredArticle[]
+): Promise<import("@/src/lib/alert-scorer").ScoredArticle[]> {
+  const results = await Promise.all(alerts.map(async sa => {
     const url = sa.article.sourceUrl;
-    if (!url || url === "#") return;
+    if (!url || url === "#") {
+      console.warn(`[monitor] no sourceUrl - dropping alert: "${sa.article.headline?.slice(0, 80)}"`);
+      return null;
+    }
     const ok = await isUrlReachable(url);
     if (!ok) {
-      console.warn(`[monitor] sourceUrl 404/unreachable - stripping: ${url.slice(0, 80)}`);
-      sa.article.sourceUrl = undefined;
+      console.warn(`[monitor] sourceUrl 404/unreachable - dropping alert: ${url.slice(0, 80)}`);
+      return null;
     }
+    return sa;
   }));
+  return results.filter((sa): sa is import("@/src/lib/alert-scorer").ScoredArticle => sa !== null);
 }
 
 async function runMonitor(topic?: string, force = false) {
@@ -140,24 +156,29 @@ async function runMonitor(topic?: string, force = false) {
 
   console.log(`[monitor] ${briefing.articles.length} articles - ${candidates.length} above threshold - ${newAlerts.length} new - ${blockedKeys.length} cooldown blocked${forceSend?" (FORCED)":""}`);
 
-  // 4a. Pre-flight URL check - strip 404/unreachable sourceUrls before alerting
-  if (newAlerts.length > 0) await verifyAlertUrls(newAlerts);
+  // 4a. Pre-flight URL check - DROP alerts with missing/unreachable sourceUrls
+  const verifiedAlerts = newAlerts.length > 0 ? await verifyAlertUrls(newAlerts) : [];
+  const droppedNoLink = newAlerts.length - verifiedAlerts.length;
+  if (droppedNoLink > 0) {
+    console.warn(`[monitor] dropped ${droppedNoLink} alert(s) lacking a working source link`);
+  }
 
-  // 4. Fire notifications only for new alerts
+  // 4. Fire notifications only for new, link-verified alerts
   const manager = getNotifierManager();
-  const notifyResult = newAlerts.length > 0
-    ? await manager.notify(newAlerts, appUrl)
+  const notifyResult = verifiedAlerts.length > 0
+    ? await manager.notify(verifiedAlerts, appUrl)
     : { sent: 0, skipped: 0, channels: [], results: [], totalAlerts: 0 };
 
-  // 5. Mark alerted articles in Redis with cooldown TTL
-  for (const s of newAlerts) {
+  // 5. Mark alerted articles in Redis with cooldown TTL (only ones actually sent)
+  for (const s of verifiedAlerts) {
     await markAlerted(buildAlertKey(s.article), cooldownMinutes);
   }
 
   return {
     ok:           true,
     articles:     briefing.articles.length,
-    alerting:     newAlerts.length,
+    alerting:     verifiedAlerts.length,
+    droppedNoLink,
     notified:     notifyResult.sent,
     skipped:      notifyResult.skipped,
     channels:     notifyResult.channels,
@@ -168,7 +189,7 @@ async function runMonitor(topic?: string, force = false) {
     forceSend,
     cooldownBlocked: blockedKeys.length,
     blockedKeys,
-    alertedArticles: newAlerts.map(s => ({
+    alertedArticles: verifiedAlerts.map(s => ({
       score:     s.score,
       section:   s.article.section,
       category:  s.article.category,
@@ -191,11 +212,17 @@ async function runMonitor(topic?: string, force = false) {
 }
 
 export async function GET(req: NextRequest) {
+  if (!isAuthorised(req)) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
   try   { return NextResponse.json(await runMonitor()); }
   catch (e) { return NextResponse.json({ error: String(e) }, { status: 500 }); }
 }
 
 export async function POST(req: NextRequest) {
+  if (!isAuthorised(req)) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
   try {
     const body = await req.json().catch(() => ({})) as { topic?: string; force?: boolean };
     return NextResponse.json(await runMonitor(body.topic, body.force ?? false));

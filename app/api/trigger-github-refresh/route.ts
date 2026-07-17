@@ -9,7 +9,8 @@
  *   GITHUB_REPO       — e.g. "hnuen/global-report-cf"
  */
 
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
+import { checkRateLimit, getClientIp } from "@/src/lib/rate-limit";
 
 export const dynamic = "force-dynamic";
 
@@ -17,7 +18,17 @@ const GITHUB_PAT  = process.env.GITHUB_PAT  || "";
 const GITHUB_REPO = process.env.GITHUB_REPO || "hnuen/global-report-cf";
 const WORKFLOW    = "refresh.yml";
 
-export async function POST() {
+export async function POST(request: NextRequest) {
+  // Public (called by the Refresh button), so rate-limit per IP — each call
+  // burns GitHub Actions minutes and Gemini quota.
+  const ip = getClientIp(request);
+  const allowed = await checkRateLimit(`gh_refresh_rl:${ip}`, 4, 60 * 60);
+  if (!allowed) {
+    return NextResponse.json(
+      { ok: false, error: "Too many refreshes from this network — please try again later." },
+      { status: 429 }
+    );
+  }
   if (!GITHUB_PAT) {
     return NextResponse.json({ ok: false, error: "GITHUB_PAT not configured" }, { status: 503 });
   }
