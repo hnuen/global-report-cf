@@ -1071,7 +1071,7 @@ archive: {
     id: "non-prolif",
     name: "Non-Proliferation Sanctions",
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/non-proliferation-sanctions",
-    region: "Global", category: "thematic", lastUpdated: "Jun 10, 2026", status: "active",
+    region: "Global", category: "thematic", lastUpdated: "Jul 15, 2026", status: "active",
     executiveOrders: [
       // Added 13883/13608 2026-06-26: were missing — OFAC's live page lists 5
       // EOs, library only had 3. Verified via direct fetch of the live page
@@ -1091,9 +1091,9 @@ archive: {
       { number: "GL 1", title: "Revocation of Non-Proliferation General License No. 1", date: "", url: "https://ofac.treasury.gov/media/8591/download?inline" },
       { number: "GL 2", title: "Non-Proliferation General License No. 2", date: "", url: "https://ofac.treasury.gov/media/8596/download?inline" },
       { number: "GL 3", title: "Revocation of Non-Proliferation General License No. 3", date: "December 21, 2010", url: "https://ofac.treasury.gov/media/8601/download?inline" },
-      { number: "GL 4", title: "Non-Proliferation General License No. 4", date: "June 23, 2011", url: "https://ofac.treasury.gov/media/8606/download?inline" },
-      { number: "GL 5C", title: "Non-Proliferation General License No. 5c", date: "November 17, 2011", url: "https://ofac.treasury.gov/media/8611/download?inline" },
-      { number: "GL 6", title: "Non-Proliferation General License 6", date: "February 06, 2012", url: "https://ofac.treasury.gov/media/8616/download?inline" },
+      { number: "GL 4", title: "Non-Proliferation General License No. 4", date: "June 23, 2011", url: "https://ofac.treasury.gov/media/8606/download?inline" , expires: "June 23, 2011"},
+      { number: "GL 5C", title: "Non-Proliferation General License No. 5c", date: "November 17, 2011", url: "https://ofac.treasury.gov/media/8611/download?inline" , expires: "November 30, 2014"},
+      { number: "GL 6", title: "Non-Proliferation General License 6", date: "February 06, 2012", url: "https://ofac.treasury.gov/media/8616/download?inline" , expires: "January 31, 2014"},
       { number: "GL 7", title: "Revocation of Non-Proliferation General License No. 7", date: "December 20, 2012", url: "https://ofac.treasury.gov/media/8621/download?inline" },
       { number: "GL 8", title: "Non-Proliferation General License No. 8", date: "January 08, 2013", url: "https://ofac.treasury.gov/media/8631/download?inline" },
       { number: "GL 9", title: "Non-Proliferation General License No. 9", date: "February 03, 2014", url: "https://ofac.treasury.gov/media/8626/download?inline" },
