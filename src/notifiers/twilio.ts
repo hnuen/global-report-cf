@@ -41,9 +41,21 @@ export class TwilioNotifier implements Notifier {
     const dynamicNumbers = approved.map(s => s.phone).filter((p): p is string => !!p);
     const toNumbers = Array.from(new Set([...staticNumbers, ...dynamicNumbers]));
 
+    // No point calling Twilio if there's nobody to text — surface that
+    // explicitly instead of the ambiguous "No messages delivered".
+    if (toNumbers.length === 0) {
+      return {
+        channel: this.name,
+        success: false,
+        recipients: 0,
+        error: "No SMS recipients — set ALERT_TO_NUMBERS or approve an SMS subscriber via /subscribe",
+      };
+    }
+
     const url  = `https://api.twilio.com/2010-04-01/Accounts/${sid}/Messages.json`;
     const auth = btoa(`${sid}:${token}`);
     let sent   = 0;
+    let lastError = "";
 
     for (const sa of articles) {
       const { plain } = formatAlert(sa, appUrl);
@@ -59,14 +71,18 @@ export class TwilioNotifier implements Notifier {
             },
             body: new URLSearchParams({ To: to, From: from, Body: body }).toString(),
           });
-          const data = await res.json() as { sid?: string; message?: string };
+          const data = await res.json() as { sid?: string; message?: string; code?: number };
           if (res.ok && data.sid) {
             sent++;
             console.log(`[twilio] Sent to ${to}: ${data.sid}`);
           } else {
-            console.error(`[twilio] Error to ${to}: ${data.message}`);
+            // Twilio returns a numeric error code + human message — keep both
+            // (e.g. 21608 = number unverified on trial, 21211 = invalid To).
+            lastError = `${data.code ?? res.status}: ${data.message ?? "unknown"}`;
+            console.error(`[twilio] Error to ${to}: ${lastError}`);
           }
         } catch (e) {
+          lastError = String(e);
           console.error(`[twilio] Fetch error to ${to}:`, e);
         }
       }
@@ -76,7 +92,9 @@ export class TwilioNotifier implements Notifier {
       channel: this.name,
       success: sent > 0,
       recipients: sent,
-      error: sent === 0 ? "No Twilio messages delivered" : undefined,
+      error: sent === 0
+        ? `0/${toNumbers.length} delivered — last Twilio error: ${lastError || "none"}`
+        : undefined,
     };
   }
 }

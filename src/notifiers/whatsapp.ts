@@ -49,9 +49,19 @@ export class WhatsAppNotifier implements Notifier {
     const dynamicNumbers = approved.map(s => s.phone).filter((p): p is string => !!p);
     const toNumbers = Array.from(new Set([...staticNumbers, ...dynamicNumbers]));
 
+    if (toNumbers.length === 0) {
+      return {
+        channel: this.name,
+        success: false,
+        recipients: 0,
+        error: "No WhatsApp recipients — set ALERT_WHATSAPP_TO_NUMBERS or approve a WhatsApp subscriber via /subscribe",
+      };
+    }
+
     const url  = `https://api.twilio.com/2010-04-01/Accounts/${sid}/Messages.json`;
     const auth = btoa(`${sid}:${token}`);
     let sent   = 0;
+    let lastError = "";
 
     for (const sa of articles) {
       const { plain } = formatAlert(sa, appUrl);
@@ -67,14 +77,18 @@ export class WhatsAppNotifier implements Notifier {
             },
             body: new URLSearchParams({ To: `whatsapp:${to}`, From: from, Body: body }).toString(),
           });
-          const data = await res.json() as { sid?: string; message?: string };
+          const data = await res.json() as { sid?: string; message?: string; code?: number };
           if (res.ok && data.sid) {
             sent++;
             console.log(`[whatsapp] Sent to ${to}: ${data.sid}`);
           } else {
-            console.error(`[whatsapp] Error to ${to}: ${data.message}`);
+            // Common WhatsApp codes: 63016 (no template / outside 24h window),
+            // 63007 (sender not a WhatsApp sender), 21910 (from/to mismatch).
+            lastError = `${data.code ?? res.status}: ${data.message ?? "unknown"}`;
+            console.error(`[whatsapp] Error to ${to}: ${lastError}`);
           }
         } catch (e) {
+          lastError = String(e);
           console.error(`[whatsapp] Fetch error to ${to}:`, e);
         }
       }
@@ -84,7 +98,9 @@ export class WhatsAppNotifier implements Notifier {
       channel: this.name,
       success: sent > 0,
       recipients: sent,
-      error: sent === 0 ? "No WhatsApp messages delivered" : undefined,
+      error: sent === 0
+        ? `0/${toNumbers.length} delivered — last Twilio error: ${lastError || "none"}`
+        : undefined,
     };
   }
 }
