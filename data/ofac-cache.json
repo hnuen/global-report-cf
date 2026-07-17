@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-07-17T14:09:21.431Z",
+  "updatedAt": "2026-07-17T14:39:25.863Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260717",
+      "code": "20260717",
+      "title": "Hong Kong-related Designations Updates and Removals",
+      "date": "July 17, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260715",
       "code": "20260715",
@@ -54,12 +60,6 @@
       "code": "20260701",
       "title": "Counter Narcotics Designations; Counter Terrorism Designations and Designation Update",
       "date": "July 01, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260630",
-      "code": "20260630",
-      "title": "Counter Narcotics Designations; Russia-related Designations Removals; Publication of Report for Licensing Activities Undertaken Pursuant to the Trade Sanctions Reform and Export Enhancement Act (TSRA)",
-      "date": "June 30, 2026"
     }
   ],
   "civilPenalties": [
@@ -849,7 +849,7 @@
     "hong-kong-related-sanctions": {
       "name": "Hong Kong-Related Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/hong-kong-related-sanctions",
-      "lastUpdated": "Mar 31, 2025",
+      "lastUpdated": "Jul 17, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -860,7 +860,7 @@
         },
         {
           "citation": "86 FR 3793-21",
-          "description": "Hong Kong-Related Sanctions Regulations Recent Actions regarding Hong Kong-Related Sanctions Counter Terrorism Designations; Counter Narcotics Designations; Hong Kong-related Designations Release Date: Mar 31, 2025 Hong Kong-related Designations Updates; Counter Terrorism Designation Update; Iran-re",
+          "description": "Hong Kong-Related Sanctions Regulations Recent Actions regarding Hong Kong-Related Sanctions Hong Kong-related Designations Updates and Removals Release Date: Jul 17, 2026 Counter Terrorism Designations; Counter Narcotics Designations; Hong Kong-related Designations Release Date: Mar 31, 2025 Hong K",
           "year": "2021",
           "glNumbers": []
         }
@@ -2865,10 +2865,22 @@
       "description": "Polish security services say the aim was to incite ethnic tensions between Poland and Ukraine."
     },
     {
+      "title": "Why are UK fuel prices rising again?",
+      "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 17, 2026",
+      "description": "UK fuel prices are going up again after the collapse of peace talks to end the US-Israel war with Iran."
+    },
+    {
       "title": "Heating oil customers to get compensation after price hikes",
       "url": "https://www.bbc.co.uk/news/articles/cy494yypnv3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 14, 2026",
       "description": "The cost of heating oil spiked following the US-Israel war with Iran which forced up crude prices."
+    },
+    {
+      "title": "Why are UK fuel prices rising again?",
+      "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 17, 2026",
+      "description": "UK fuel prices are going up again after the collapse of peace talks to end the US-Israel war with Iran."
     }
   ],
   "ajNews": [
@@ -2889,12 +2901,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/17/why-is-the-us-attacking-southern-irans-civilian-infrastructure?traffic_source=rss",
       "date": "July 17, 2026",
       "description": "Analysts say the goals range from targeting Iran&#039;s supply lines to curbing its influence in the Strait of Hormuz."
-    },
-    {
-      "title": "US strikes destroy key bridges, tower in southern Iran",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/17/us-strikes-destroy-key-bridges-tower-in-southern-iran?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "US strikes destroy key bridges, tower in southern Iran"
     }
   ],
   "occNews": [
@@ -3355,12 +3361,6 @@
       "description": "The new legislation would see Scunthorpe-based British Steel brought into public ownership."
     },
     {
-      "title": "How will Buy Now Pay Later changes affect you?",
-      "url": "https://www.bbc.co.uk/news/articles/c9q283r9px3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 15, 2026",
-      "description": "Consumers should be better protected as Buy Now Pay Later lenders now require authorisation to operate."
-    },
-    {
       "title": "Is tracking your food purchases good for your health?",
       "url": "https://www.bbc.co.uk/news/articles/cy8wlplellvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 13, 2026",
@@ -3457,12 +3457,6 @@
       "description": "Charities, schools and businesses warn too many families are struggling with the cost of living."
     },
     {
-      "title": "What are my rights if my flight is cancelled or delayed?",
-      "url": "https://www.bbc.co.uk/news/articles/c9qxnyengdjo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 15, 2026",
-      "description": "We look at the different circumstances that affect you if you're due a refund for cancelled or delayed flights."
-    },
-    {
       "title": "Why Gen Z are planning for life without a state pension",
       "url": "https://www.bbc.co.uk/news/articles/c8e2yp1gg37o?at_medium=RSS&amp;at_campaign=rss",
       "date": "June 30, 2026",
@@ -3500,7 +3494,7 @@
     },
     {
       "title": "Business Daily",
-      "url": "https://www.bbc.co.uk/sounds/play/w3ct8g9j?at_medium=RSS&amp;at_campaign=rss",
+      "url": "https://www.bbc.co.uk/sounds/play/live:bbc_world_service?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 16, 2026",
       "description": "China's economy slows, New York targets AI centres, and the ‘king of fruits’ giveaway"
     },
@@ -3521,6 +3515,24 @@
       "url": "https://www.bbc.co.uk/news/videos/c24yjeze14mo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 10, 2026",
       "description": "Martin Lewis covers whether you should be switching bank accounts."
+    },
+    {
+      "title": "Uganda school bus crash kills 20 children and 1 adult",
+      "url": "https://www.aljazeera.com/news/2026/7/17/uganda-school-bus-crash-kills-20-children-and-1-adult?traffic_source=rss",
+      "date": "July 17, 2026",
+      "description": "Uganda halts school trips after bus crashes returning from waterfall field trip; at least a dozen also injured."
+    },
+    {
+      "title": "Burnham confirmed as leader of UK’s governing Labour Party, headed for PM",
+      "url": "https://www.aljazeera.com/news/2026/7/17/burnham-confirmed-as-leader-of-uks-governing-labour-party-headed-for-pm?traffic_source=rss",
+      "date": "July 17, 2026",
+      "description": "Andy Burnham set to become UK prime minister but faces challenges including the cost of living crisis and two wars."
+    },
+    {
+      "title": "China’s Xi Jinping launches new AI alliance: What is it?",
+      "url": "https://www.aljazeera.com/news/2026/7/17/chinas-xi-jinping-launches-new-ai-alliance-what-is-it?traffic_source=rss",
+      "date": "July 17, 2026",
+      "description": "Beijing is likely to use the WAICO alliance to influence global AI regulations, analysts say."
     },
     {
       "title": "UN urges probe into deaths in Pakistani-administered Kashmir unrest",
@@ -3635,18 +3647,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/17/israel-headed-for-october-election-as-parliament-dissolved?traffic_source=rss",
       "date": "July 17, 2026",
       "description": "PM Netanyahu’s political survival at stake as Knesset dissolves before the vote."
-    },
-    {
-      "title": "Germany repeats call for EU force to replace UN peacekeepers in Lebanon",
-      "url": "https://www.aljazeera.com/news/2026/7/17/germany-repeats-call-for-eu-force-to-replace-un-peacekeepers-in-lebanon?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "Berlin warns against a &#039;security vacuum&#039; in Lebanon&#039;s south once UNIFIL mandate expires at year&#039;s end."
-    },
-    {
-      "title": "Watch FIFA World Cup: Argentina arrives in New Jersey ahead of Spain final",
-      "url": "https://www.aljazeera.com/video/2026/7/17/video-world-cup-2026-highlights?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "Latest match highlights, reaction and previews from the FIFA World Cup 2026 in North America."
     }
   ]
 }
