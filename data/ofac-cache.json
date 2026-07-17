@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-17T21:39:15.722Z",
+  "updatedAt": "2026-07-17T22:09:22.007Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260717_33",
@@ -2875,15 +2875,16 @@
       "url": "https://www.aljazeera.com/video/inside-story/2026/7/17/can-the-us-and-iran-reach-a-lasting-deal-to-end-the-conflict?traffic_source=rss",
       "date": "July 17, 2026",
       "description": "Air strikes intensify raising fear of an all-out war."
-    },
-    {
-      "title": "Pakistan cricketer Nawaz sanctioned after cannabis-related positive test",
-      "url": "https://www.aljazeera.com/sports/2026/7/17/pakistan-cricketer-nawaz-sanctioned-after-cannabis-related-positive-test?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "Nawaz admitted the violation and that the substance had been used in a manner unrelated to sporting performance."
     }
   ],
-  "occNews": [],
+  "occNews": [
+    {
+      "title": "OCC Announces Enforcement Actions for July 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-59.html",
+      "date": "July 16, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for July 2026."
+    }
+  ],
   "economicsNews": [
     {
       "title": "Minutes of the Board&#39;s discount rate meetings on June 8 and June 17, 2026",
@@ -3502,6 +3503,24 @@
       "description": "New regulations start for shoppers using Buy Now, Pay Later."
     },
     {
+      "title": "Tackling Messi ‘huge challenge’ for Spain in World Cup final: Merino",
+      "url": "https://www.aljazeera.com/sports/2026/7/17/tackling-messi-huge-challenge-for-spain-in-world-cup-final-merino?traffic_source=rss",
+      "date": "July 17, 2026",
+      "description": "Spanish midfielder says he has &#039;huge confidence&#039; in his abilities after his impressive performances as a substitute."
+    },
+    {
+      "title": "Herbert leads British Open golf, equals record lowest score at a Major",
+      "url": "https://www.aljazeera.com/sports/2026/7/17/herbert-leads-british-open-golf-equals-record-lowest-score-at-a-major?traffic_source=rss",
+      "date": "July 17, 2026",
+      "description": "Australian golfer Herbert ended the second round of the British Open with a two-shot lead on eight-under."
+    },
+    {
+      "title": "Star speedcubers square off at European championship",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/17/star-speedcubers-square-off-at-european-championship?traffic_source=rss",
+      "date": "July 17, 2026",
+      "description": "More than 1,200 speedcubers from 53 countries are descending are attending the European Speedcubing Championship."
+    },
+    {
       "title": "ICE agent behind fatal shooting in Maine reportedly had troubled history",
       "url": "https://www.aljazeera.com/news/2026/7/17/ice-agent-behind-fatal-shooting-in-maine-reportedly-had-troubled-history?traffic_source=rss",
       "date": "July 17, 2026",
@@ -3620,18 +3639,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/17/amazons-zoox-recalls-self-driving-vehicles-amid-emergency-response-issues?traffic_source=rss",
       "date": "July 17, 2026",
       "description": "The recall is the latest development in a series of reports of autonomous vehicles impeding emergency response efforts."
-    },
-    {
-      "title": "Eight killed, at least 34 missing after landslide in China’s Chongqing",
-      "url": "https://www.aljazeera.com/news/2026/7/17/eight-killed-at-least-34-missing-after-landslide-in-chinas-chongqing?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "Landslide has buried homes and forced more than 1,100 people to evacuate."
-    },
-    {
-      "title": "Israeli attacks on Gaza kill 14, including mourners attending funeral",
-      "url": "https://www.aljazeera.com/news/2026/7/17/israeli-attacks-on-gaza-kill-14-including-mourners-attending-funeral?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "Eight killed and 20 injured in strike on funeral procession for Palestinian killed by Israel earlier in the day."
     }
   ]
 }
