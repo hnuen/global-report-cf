@@ -1447,17 +1447,21 @@ async function urlResolves(url) {
 let briefing;
 try {
   briefing = parseGeminiJSON(clean.slice(s, e + 1));
+  // A Gemini article is safe to ALERT only if its sourceUrl matches a real
+  // OFAC action we actually fetched this run (recentActions). That set is
+  // ground truth — Gemini was handed those exact URLs to write from. Any
+  // other Gemini article (invented/paraphrased URL, or no real backing) is
+  // marked aiGenerated so the scorer's gate keeps it display-only and it can
+  // never fire an alert with a hallucinated or missing link. This replaced a
+  // blanket aiGenerated:true, which was too aggressive — it suppressed
+  // legitimate OFAC alerts (e.g. the July 17 Hong Kong designations) whose
+  // Gemini write-up carried a genuine ofac.treasury.gov/recent-actions URL.
+  const normUrl = (u) => (u || "").trim().replace(/\/+$/, "").toLowerCase();
+  const verifiedUrls = new Set((recentActions ?? []).map((e) => normUrl(e.url)).filter(Boolean));
   briefing.articles = briefing.articles.map(a => ({
     ...a,
     body: Array.isArray(a.body) ? a.body : String(a.body).split("\n").filter(Boolean),
-    // Everything in this map came out of Gemini — mark it so the alert
-    // scorer's aiGenerated gate (src/lib/alert-scorer.ts step 10) applies.
-    // Previously only the in-app LLM path (orchestrator.ts) set this flag,
-    // so Gemini articles saved via /api/save-briefing bypassed the gate and
-    // could fire alerts with hallucinated or missing source links. Articles
-    // injected later from the OFAC GitHub cache / direct scrapes are added
-    // AFTER this map and stay unflagged (they carry real, verified URLs).
-    aiGenerated: true,
+    aiGenerated: !verifiedUrls.has(normUrl(a.sourceUrl)),
   }));
 
   // Drop "nothing happened" filler articles before they're ever saved — not
