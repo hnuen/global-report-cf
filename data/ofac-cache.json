@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-17T19:39:21.614Z",
+  "updatedAt": "2026-07-17T20:09:24.586Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260717_33",
@@ -2827,10 +2827,10 @@
   ],
   "bbcNews": [
     {
-      "title": "More than 500 Rohingya vanished at sea - what happened?",
-      "url": "https://www.bbc.co.uk/news/articles/cr59n096mrmo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "One anti-war critic fined, another held as Russia clamps down on opponents",
+      "url": "https://www.bbc.co.uk/news/articles/cn0n3y6ewn4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 17, 2026",
-      "description": "Two boats carrying an estimated 530 Rohingyas have disappeared since leaving Myanmar on 29 June."
+      "description": "While Boris Nadezhdin is barred from running for parliament, blogger Ilya Remeslo is remanded in custody."
     },
     {
       "title": "JD Vance accuses Israel of 'manipulating' US public opinion to prolong Iran war",
@@ -2843,6 +2843,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cp305dx493do?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 16, 2026",
       "description": "Polish security services say the aim was to incite ethnic tensions between Poland and Ukraine."
+    },
+    {
+      "title": "More than 500 Rohingya vanished at sea - what happened?",
+      "url": "https://www.bbc.co.uk/news/articles/cr59n096mrmo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 17, 2026",
+      "description": "Two boats carrying an estimated 530 Rohingyas have disappeared since leaving Myanmar on 29 June."
     },
     {
       "title": "Why are UK fuel prices rising again?",
@@ -2877,22 +2883,16 @@
       "description": "Nawaz admitted the violation and that the substance had been used in a manner unrelated to sporting performance."
     },
     {
-      "title": "Ukraine suffers port attacks as protests persist over defence shake-up",
+      "title": "Ten killed in attacks in Russia and Ukraine as protests continue in Kyiv",
       "url": "https://www.aljazeera.com/news/2026/7/17/ukraine-suffers-port-attacks-as-protests-persist-over-defence-shake-up?traffic_source=rss",
       "date": "July 17, 2026",
-      "description": "Russian attacks reportedly kill two Ukrainians aboard foreign vessel in Mykolaiv; two more killed in Kherson and Odesa."
+      "description": "Thousands rally in the Ukrainian capital to protest the ouster of Defence Minister Mykhailo Fedorov."
     },
     {
       "title": "Satellite images show damage inside Iran’s Bushehr nuclear power plant",
       "url": "https://www.aljazeera.com/news/2026/7/17/satellite-images-show-damage-inside-irans-bushehr-nuclear-power-plant?traffic_source=rss",
       "date": "July 17, 2026",
       "description": "Satellite images reveal strikes between July 7 and 12 on Iran’s largest nuclear power plant."
-    },
-    {
-      "title": "Ukraine ‘cuts off’ Crimea from Russia, plunging it into an energy crisis",
-      "url": "https://www.aljazeera.com/news/2026/7/17/ukraine-cuts-off-crimea-from-russia-plunging-it-into-an-energy-crisis?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "Ukraine is ramping up short-, medium- and long-range drone production to bring Russia’s war to a standstill."
     }
   ],
   "occNews": [
@@ -3005,10 +3005,10 @@
       "description": "The US military says its attacks were intended to \"further degrade Iranian military capabilities\"."
     },
     {
-      "title": "Trump alleges China meddled in 2020 election and questions voting security ahead of midterms",
-      "url": "https://www.bbc.co.uk/news/articles/cx2k9wvv5wyo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Many Ukrainian soldiers outraged over removal of defence minister, troops tell BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cvg8w4dpjkwo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 17, 2026",
-      "description": "China said Trump's claims were fabricated and US Democrats said he was paving the way to undermine November's elections."
+      "description": "Protests erupted in Ukraine on Thursday after Mykhailo Fedorov's removal - and now soldiers are also criticising the move."
     },
     {
       "title": "EU proposes slowing down cuts to carbon emissions for businesses",
@@ -3017,10 +3017,22 @@
       "description": "Under the proposals, the EU plans to relax its emissions trading system to give companies more time to reduce their carbon output."
     },
     {
+      "title": "Magnitude 7.3 earthquake quake strikes off Mexico coast",
+      "url": "https://www.bbc.co.uk/news/articles/cwyjv3815yxo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 17, 2026",
+      "description": "The US Tsunami Warning Center issued a warning and has recorded waves 0.3m (1.1 feet) high in Puerto Madero and Chiapas in Mexico."
+    },
+    {
       "title": "Air conditioner sparked deadly blaze at children's orphanage - police",
       "url": "https://www.bbc.co.uk/news/articles/c9d8ylw60e9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 17, 2026",
       "description": "Eleven people, including children, died in the fire that also injured 19 others."
+    },
+    {
+      "title": "Second tanker in three months hijacked off Yemen by suspected Somali pirates",
+      "url": "https://www.bbc.co.uk/news/articles/c7vg6dml34vo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 17, 2026",
+      "description": "There have also been several unsuccessful attacks in a region where piracy appears to be making a comeback."
     },
     {
       "title": "China hits out at British Steel nationalisation",
@@ -3035,16 +3047,10 @@
       "description": "Thousands are killed on Uganda's roads each year but this is one of its deadliest accidents involving children."
     },
     {
-      "title": "Second tanker in three months hijacked off Yemen by suspected Somali pirates",
-      "url": "https://www.bbc.co.uk/news/articles/c7vg6dml34vo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Trump alleges China meddled in 2020 election and questions voting security ahead of midterms",
+      "url": "https://www.bbc.co.uk/news/articles/cx2k9wvv5wyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 17, 2026",
-      "description": "There have also been several unsuccessful attacks in a region where piracy appears to be making a comeback."
-    },
-    {
-      "title": "Magnitude 7.3 earthquake quake strikes off Mexico coast",
-      "url": "https://www.bbc.co.uk/news/articles/cwyjv3815yxo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "The US Tsunami Warning Center issued a warning and has recorded waves 0.3m (1.1 feet) high in Puerto Madero and Chiapas in Mexico."
+      "description": "China said Trump's claims were fabricated and US Democrats said he was paving the way to undermine November's elections."
     },
     {
       "title": "Canada fires prompt US air quality alerts as smoke blankets major cities",
@@ -3135,12 +3141,6 @@
       "url": "https://www.bbc.co.uk/news/articles/ce97zd8yx1xo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 16, 2026",
       "description": "President Macron said there would be no leniency for arsonists, as France - along with much of Europe - deals with a series of unusual heatwaves."
-    },
-    {
-      "title": "Children among dead at Algeria foster care home blaze - president",
-      "url": "https://www.bbc.co.uk/news/articles/cvgwd4nz344o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "Eleven people have died and 19 other have suffered injuries in the overnight fire, the authorities say."
     },
     {
       "title": "I thought we'd grow old together, says band leader whose girlfriend died in Thai bar inferno",
@@ -3519,6 +3519,12 @@
       "url": "https://www.bbc.co.uk/sounds/play/m002yx7t?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 15, 2026",
       "description": "New regulations start for shoppers using Buy Now, Pay Later."
+    },
+    {
+      "title": "Will the Canadian wildfire smoke affect Spain vs Argentina World Cup final?",
+      "url": "https://www.aljazeera.com/sports/2026/7/17/will-the-canadian-wildfire-smoke-affect-spain-vs-argentina-world-cup-final?traffic_source=rss",
+      "date": "July 17, 2026",
+      "description": "World Cup organisers are monitoring the situation &#039;closely&#039;, with US and FIFA presidents meeting on Friday."
     },
     {
       "title": "At least three killed and hundreds displaced by heavy rain in Chile",
