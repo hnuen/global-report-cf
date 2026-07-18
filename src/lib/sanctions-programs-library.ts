@@ -329,7 +329,6 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
 { number: "GL Y", title: "Iran General License Y", date: "June 21, 2026", url: "https://ofac.treasury.gov/media/936546/download?inline", expires: "August 9, 2026", addedDate: "July 10, 2026" },
 { number: "GL L", title: "Iran General License L", date: "December 15, 2016", url: "https://ofac.treasury.gov/media/48626/download?inline", addedDate: "June 27, 2026" },
       { number: "GL Q", title: "Iran General License Q", date: "October 26, 2020", url: "https://ofac.treasury.gov/media/934291/download?inline", addedDate: "June 27, 2026" },
-{ number: "GL X1", title: "Revocation and Wind Down of June 21, 2026 Authorization for the Production, Delivery and Sale of Crude Oil, Petrochemical Products, and Petroleum Products of Iranian Origin", date: "July 7, 2026", url: "https://ofac.treasury.gov/media/936446/download?inline", expires: "July 17, 2026", addedDate: "July 7, 2026" },
       // Removed 2026-06-26: GL W, GL V, GL T moved to archive below — each
       // confirmed expired against its own PDF/Federal Register text (W:
       // media/935561, "authorized through ... May 31, 2026"; V: title/date
@@ -360,7 +359,8 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
     ],
 archive: {
       generalLicenses: [
-        { number: "GL X", title: "Authorizing the Production, Delivery and Sale of Crude Oil, Petrochemical Products, and Petroleum Products of Iranian-Origin", date: "June 21, 2026", url: "https://ofac.treasury.gov/media/936206/download?inline", archived: true, archivedNote: "Revoked and superseded by GL X1 effective July 7, 2026" },
+                { number: "GL X1", title: "Revocation and Wind Down of June 21, 2026 Authorization for the Production, Delivery and Sale of Crude Oil, Petrochemical Products, and Petroleum Products of Iranian Origin", date: "July 7, 2026", archived: true, archivedNote: "Expired July 17, 2026 — no successor GL detected", archivedDate: "July 17, 2026" },
+{ number: "GL X", title: "Authorizing the Production, Delivery and Sale of Crude Oil, Petrochemical Products, and Petroleum Products of Iranian-Origin", date: "June 21, 2026", url: "https://ofac.treasury.gov/media/936206/download?inline", archived: true, archivedNote: "Revoked and superseded by GL X1 effective July 7, 2026" },
         { number: "GL 2 (unnamed)", title: "Authorizing U.S. persons who are employees or contractors of six international organizations to perform transactions for the conduct of the official business of those organizations in or involving Iran", archived: true, archivedNote: "Incorporated into 31 CFR Part 560" },
         { number: "GL (Personal Comms)", title: "Exportation of certain services and software over the internet", archived: true, archivedNote: "Incorporated into 31 CFR Part 560" },
         { number: "GL (Food)", title: "Authorizing the Exportation or Reexportation of Food Items", archived: true, archivedNote: "Incorporated into 31 CFR Part 560" },
