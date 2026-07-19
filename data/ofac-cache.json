@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-19T19:38:48.837Z",
+  "updatedAt": "2026-07-19T20:09:43.437Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260717_33",
@@ -2827,12 +2827,6 @@
   ],
   "bbcNews": [
     {
-      "title": "US and Iran trade fire after two US soldiers killed in Jordan",
-      "url": "https://www.bbc.co.uk/news/articles/cgk417jp83po?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 19, 2026",
-      "description": "Kuwait says an electricity and water plant is on fire after the second such attack in two days. Iran says US strikes hit an under-construction nuclear power plant."
-    },
-    {
       "title": "Russia launches major ballistic missile attack on Ukrainian cities",
       "url": "https://www.bbc.co.uk/news/articles/c2el7xpnzrpo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 19, 2026",
@@ -2992,6 +2986,12 @@
     }
   ],
   "regionsNews": [
+    {
+      "title": "US soldier killed and one injured after Iranian attack in Iraq",
+      "url": "https://www.bbc.co.uk/news/articles/cgk417jp83po?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 19, 2026",
+      "description": "The US military reports another death a day after two of its soldiers were killed in Jordan."
+    },
     {
       "title": "Tate brothers arrested in US as further UK charges take total to 59",
       "url": "https://www.bbc.co.uk/news/articles/cwymly9yd33o?at_medium=RSS&amp;at_campaign=rss",
@@ -3479,6 +3479,12 @@
       "description": "New regulations start for shoppers using Buy Now, Pay Later."
     },
     {
+      "title": "Five passengers found drifting days after boat sinks in Indonesia",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/19/five-passengers-found-drifting-days-after-boat-sinks-in-indonesia?traffic_source=rss",
+      "date": "July 19, 2026",
+      "description": "Five passengers, including a seven-year-old girl, were rescued from a passenger boat that sank in Indonesia."
+    },
+    {
       "title": "Fans light up NYC’s Little Argentina ahead of Spain World Cup final clash",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/19/fans-light-up-nycs-little-argentina-ahead-of-spain-world-cup-final-clash?traffic_source=rss",
       "date": "July 19, 2026",
@@ -3488,7 +3494,7 @@
       "title": "Trump visit causes logistical delays at World Cup final",
       "url": "https://www.aljazeera.com/sports/2026/7/19/trump-visit-causes-logistical-delays-at-world-cup-final?traffic_source=rss",
       "date": "July 19, 2026",
-      "description": "Al Jazeera reporters on the ground faced lengthy queues to enter the stadium due to tighter security checks."
+      "description": "Al Jazeera reporters faced lengthy queues to enter the stadium due to tighter security checks."
     },
     {
       "title": "The story behind Gaza’s #TheyLiedToYou campaign",
@@ -3597,12 +3603,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/19/lebanon-convicts-influencer-of-smuggling-drugs-in-biscuits?traffic_source=rss",
       "date": "July 19, 2026",
       "description": "Lebanese food influencer Georges Dib, known as Dr Food, has been sentenced in absentia to life with hard labour."
-    },
-    {
-      "title": "Why were Andrew and Tristan Tate arrested? Will they be extradited to UK?",
-      "url": "https://www.aljazeera.com/news/2026/7/19/why-were-andrew-and-tristan-tate-arrested-will-they-be-extradited-to-uk?traffic_source=rss",
-      "date": "July 19, 2026",
-      "description": "Influencer brothers arrested in Miami, as UK seeks extradition to face new charges of rape, sex trafficking and assault."
     }
   ]
 }
