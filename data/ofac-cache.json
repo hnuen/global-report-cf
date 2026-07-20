@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-07-17T22:09:22.007Z",
+  "updatedAt": "2026-07-20T22:10:19.554Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260720",
+      "code": "20260720",
+      "title": "Russia-related Designations Updates",
+      "date": "July 20, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260717_33",
       "code": "20260717_33",
@@ -54,12 +60,6 @@
       "code": "20260707",
       "title": "Issuance of Amended Iran-related General License",
       "date": "July 07, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260701_33",
-      "code": "20260701_33",
-      "title": "Reminder to File the 2026 Annual Report of Blocked Property",
-      "date": "July 01, 2026"
     }
   ],
   "civilPenalties": [
@@ -1489,7 +1489,7 @@
     "russian-harmful-foreign-activities-sanctions": {
       "name": "Russian Harmful Foreign Activities Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions",
-      "lastUpdated": "Jul 08, 2026",
+      "lastUpdated": "Jul 20, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -1934,13 +1934,6 @@
           "date": "June 25, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934776/download?inline"
-        },
-        {
-          "number": "X1",
-          "title": "Iran General License X1",
-          "date": "November 21, 2025",
-          "expires": "",
-          "url": "https://ofac.treasury.gov/media/936446/download?inline"
         }
       ]
     },
@@ -2817,64 +2810,87 @@
       "description": "These new measures aim at further increasing the pressure on Russia and Belarus and supporting EU's goal of achieving a just and lasting peace for Ukraine."
     }
   ],
-  "unNotices": [
-    {
-      "title": "Security Council 1533 Sanctions Committee Adds Six Individuals and Two Entities to Its Sanctions List",
-      "url": "https://press.un.org/en/2026/sc16416.doc.htm",
-      "date": "July 16, 2026",
-      "description": "On 14 July 2026, the Security Council Committee established pursuant to resolution 1533 (2004) concerning the Democratic Republic of the Congo approved the addition of the entries specified below to its Sanctions List of individuals and entities subject to the measures imposed by the Security Council and adopted under Chapter VII of the Charter of the United Nations."
-    }
-  ],
+  "unNotices": [],
   "bbcNews": [
     {
-      "title": "One anti-war critic fined, another held as Russia clamps down on opponents",
-      "url": "https://www.bbc.co.uk/news/articles/cn0n3y6ewn4o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "US launches fresh strikes on Iran, as Trump warns of retaliation for deaths of soldiers",
+      "url": "https://www.bbc.co.uk/news/articles/cx25wg2x26do?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "The US says the attacks were aimed at degrading Iran's capabilities to attack ships in the Strait of Hormuz."
+    },
+    {
+      "title": "Yemen's Houthis announce 'maritime embargo' on Saudi Arabia",
+      "url": "https://www.bbc.co.uk/news/articles/cm2gmddx1ldo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "The Houthis say the embargo begins immediately and is a response to a Saudi blockade of ports and airports in Yemen."
+    },
+    {
+      "title": "Ten killed as Russian attacks on merchant ships in Black Sea intensify",
+      "url": "https://www.bbc.co.uk/news/articles/c4gvpv3ewv2o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "Russian strikes on the Odesa region have killed 28 people in July alone, local authorities say."
+    },
+    {
+      "title": "Ryanair profits drop as Iran war puts off passengers and lifts fuel costs",
+      "url": "https://www.bbc.co.uk/news/articles/cn8nldwj12jo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "The Irish airline said oil prices had increased costs meanwhile Brent crude surpassed $90."
+    },
+    {
+      "title": "Russia launches major ballistic missile attack on Ukrainian cities",
+      "url": "https://www.bbc.co.uk/news/articles/c2el7xpnzrpo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 19, 2026",
+      "description": "Eight people die and dozens are injured as several cities are hit by missile and drone attacks, while Kyiv continues its own assault on Russian infrastructure."
+    },
+    {
+      "title": "Russians turn to cash, putting more strain on slowing wartime economy",
+      "url": "https://www.bbc.co.uk/news/articles/cglj255jk8ko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 18, 2026",
+      "description": "Russians have been hit by mobile internet shutdowns and more businesses are seeking to dodge tax after more than four years of war with Ukraine."
+    },
+    {
+      "title": "Kim Jong Un was meant to be their only idol - then North Koreans discovered K-pop",
+      "url": "https://www.bbc.co.uk/news/articles/c0jygjezvlwo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 17, 2026",
-      "description": "While Boris Nadezhdin is barred from running for parliament, blogger Ilya Remeslo is remanded in custody."
+      "description": "Defectors tell the BBC that despite restrictions, K-pop has cut through in the stifling dictatorship."
     },
     {
-      "title": "JD Vance accuses Israel of 'manipulating' US public opinion to prolong Iran war",
-      "url": "https://www.bbc.co.uk/news/articles/c1m107yj327o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "The US vice president says he thinks some Israeli politicians are trying to detail efforts to end the conflict."
-    },
-    {
-      "title": "Teenager accused of carrying out sabotage actions in Poland for Russia",
-      "url": "https://www.bbc.co.uk/news/articles/cp305dx493do?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "Polish security services say the aim was to incite ethnic tensions between Poland and Ukraine."
-    },
-    {
-      "title": "More than 500 Rohingya vanished at sea - what happened?",
-      "url": "https://www.bbc.co.uk/news/articles/cr59n096mrmo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "Two boats carrying an estimated 530 Rohingyas have disappeared since leaving Myanmar on 29 June."
-    },
-    {
-      "title": "Why are UK fuel prices rising again?",
-      "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "UK fuel prices are going up again after the collapse of peace talks to end the US-Israel war with Iran."
-    },
-    {
-      "title": "Why are UK fuel prices rising again?",
-      "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "UK fuel prices are going up again after the collapse of peace talks to end the US-Israel war with Iran."
+      "title": "Ryanair profits drop as Iran war puts off passengers and lifts fuel costs",
+      "url": "https://www.bbc.co.uk/news/articles/cn8nldwj12jo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "The Irish airline said oil prices had increased costs meanwhile Brent crude surpassed $90."
     }
   ],
   "ajNews": [
     {
-      "title": "Beyond LNG: Berlin’s red-carpet diplomacy signals a bigger bet on Algeria",
-      "url": "https://www.aljazeera.com/economy/2026/7/17/beyond-lng-berlins-red-carpet-diplomacy-signals-a-bigger-bet-on-algeria?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "Germany, stripped of Russian pipeline gas, received Algeria&#039;s president with military honours and talked about LNG."
+      "title": "How will Zelenskyy handle the growing political crisis at home?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/7/20/how-will-zelenskyy-handle-the-growing-political-crisis-at-home?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "Ukraine strikes Russian oil sites after major missile attack, as President Zelenskyy faces crisis over sacked minister."
     },
     {
-      "title": "Can the US and Iran reach a lasting deal to end the conflict?",
-      "url": "https://www.aljazeera.com/video/inside-story/2026/7/17/can-the-us-and-iran-reach-a-lasting-deal-to-end-the-conflict?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "Air strikes intensify raising fear of an all-out war."
+      "title": "Iran condemns US attacks on civilian infrastructure",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/20/iran-condemns-us-attacks-on-civilian-infrastructure?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "Iran says it has received mediation proposals from multiple parties and insists diplomatic efforts remain active."
+    },
+    {
+      "title": "Houthis announce maritime blockade on Saudi Arabia",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/20/houthis-announce-maritime-blockade-on-saudi-arabia?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "Yemen’s Iran-backed Houthi rebels have announced a maritime blockade on Saudi Arabia after the two sides traded fire"
+    },
+    {
+      "title": "Trump vows Iran will ‘pay’ for killing US soldiers",
+      "url": "https://www.aljazeera.com/news/2026/7/20/trump-vows-iran-will-pay-for-killing-us-soldiers?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "The US intensifies air strikes on Iran, targeting critical sites after the deaths of American soldiers in the region."
+    },
+    {
+      "title": "Petrol prices climb as US–Iran tensions disrupt markets",
+      "url": "https://www.aljazeera.com/economy/2026/7/20/petrol-prices-climb-as-us-iran-tensions-disrupt?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "US petrol prices reach $4.00 per gallon (3.78 litres), marking the second week of increased costs for consumers."
     }
   ],
   "occNews": [
@@ -2981,226 +2997,328 @@
   ],
   "regionsNews": [
     {
-      "title": "US denies Iranian claims it hit civilian infrastructure in latest strikes",
-      "url": "https://www.bbc.co.uk/news/articles/c151gdjwd10o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Trump imposes 50% tariff on Canadian imports",
+      "url": "https://www.bbc.co.uk/news/articles/cg4dzq3x3e1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "The duties take effect within 30 days and mark a major escalation in trade tensions between the North American neighbours."
+    },
+    {
+      "title": "Tate brothers appear in US court for extradition proceedings",
+      "url": "https://www.bbc.co.uk/news/articles/c6294y87wk6o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "They were arrested on Saturday after the UK announced dozens of new charges, including rape and sex trafficking, which they deny."
+    },
+    {
+      "title": "Notorious drug cartel leader Ismael Zambada sentenced to life in US prison",
+      "url": "https://www.bbc.co.uk/news/articles/ce3q1d1ed5do?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "Known as \"El Mayo\", the co-founder the Sinaloa Cartel was also ordered to pay $15bn after he admitted to sending vast amounts of drugs to the US."
+    },
+    {
+      "title": "Rare identical quadruplets born in Australia",
+      "url": "https://www.bbc.co.uk/news/articles/cx2jnj3428lo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "The parents of the four naturally-conceived girls were taken by \"immense surprise\" with the pregnancy, the hospital said."
+    },
+    {
+      "title": "Boy, 13, dies during World Cup celebrations in Spain",
+      "url": "https://www.bbc.co.uk/news/articles/c0qvdy0jv05o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "Two other young people were injured after a fountain partially collapsed in Salamanca's Ciudad Rodrigo."
+    },
+    {
+      "title": "Police block thousands of 'cockroach' protesters marching on India's parliament",
+      "url": "https://www.bbc.co.uk/news/articles/cvg9w9dxd7lo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "Some protesters demanding education reforms said they were injured in clashes with police who banned the march."
+    },
+    {
+      "title": "Merger deal between Paramount and Warner Bros paused by judge",
+      "url": "https://www.bbc.co.uk/news/articles/c5ywxy41vg6o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "US court temporarily stops Paramount and Warner Bros merging after 12 states launched legal action."
+    },
+    {
+      "title": "Hamas names Khalil al-Hayya as new overall leader",
+      "url": "https://www.bbc.co.uk/news/articles/cx25nzkyj50o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "The Palestinian armed group's Qatar-based chief negotiator replaces Yahya Sinwar, who was killed by Israeli forces in Gaza in 2024."
+    },
+    {
+      "title": "Scores feared dead after passenger ferry capsizes off Guyana",
+      "url": "https://www.bbc.co.uk/news/articles/cm2gm99nrm7o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "Sixty-seven people have been rescued but the ferry is thought to have had more than 130 people on board."
+    },
+    {
+      "title": "Newcastle, Liverpool and England legend Keegan dies",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c2lyl82n2e2o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "Former England captain and manager Kevin Keegan dies at the age of 75, seven weeks after he revealed he had been diagnosed with stage four cancer."
+    },
+    {
+      "title": "JD Vance says wife Usha and son 'happy and healthy' after birth of fourth child",
+      "url": "https://www.bbc.co.uk/news/articles/cj63kngxpxpo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "The couple welcomed their fourth child, Alec Neel Vance, on Sunday morning."
+    },
+    {
+      "title": "Lamine Yamal celebrates World Cup win with little brother who charmed fans",
+      "url": "https://www.bbc.co.uk/news/articles/c89nvnklkpdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "The three-year-old brother of Yamal has been hailed one of Spain's World Cup breakout stars by fans"
+    },
+    {
+      "title": "Utah firefighter and four family members killed in flash flooding",
+      "url": "https://www.bbc.co.uk/news/articles/c9d8l88jnwvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "A husband, wife and their three sons died - meaning that only a daughter who did not join the outing is still alive."
+    },
+    {
+      "title": "'If only people knew what a tick could do' - the deadly meat allergies caused by tick bites",
+      "url": "https://www.bbc.co.uk/news/articles/cj6g03567edo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "Mammalian meat allergy is a growing problem along Australia's east coast - and it's caused by tick bites."
+    },
+    {
+      "title": "Norway opens new memorial for victims of 2011 massacre",
+      "url": "https://www.bbc.co.uk/news/articles/c07r9m22gyyo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "The artwork in the capital Oslo was unveiled on Sunday ahead of the 15th anniversary of the attack."
+    },
+    {
+      "title": "Food delivery rider wins China's top literary prize",
+      "url": "https://www.bbc.co.uk/news/articles/c5ydr3xd0kvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "Wang Jibing is among blue-collar Chinese workers gaining wider attention for their literary works."
+    },
+    {
+      "title": "US soldier killed and one injured after Iranian attack in Iraq",
+      "url": "https://www.bbc.co.uk/news/articles/cgk417jp83po?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 19, 2026",
+      "description": "The US military reports another death a day after two of its soldiers were killed in Jordan."
+    },
+    {
+      "title": "Tate brothers arrested in US as further UK charges take total to 59",
+      "url": "https://www.bbc.co.uk/news/articles/cwymly9yd33o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 19, 2026",
+      "description": "The Crown Prosecution Service says it has requested their extradition from the US, while their lawyer says they are innocent."
+    },
+    {
+      "title": "The 1975's Matty Healy marries model Gabbriette Bechtel in Los Angeles",
+      "url": "https://www.bbc.co.uk/news/articles/c5ywxp2d826o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 19, 2026",
+      "description": "The newlyweds were first linked in 2023 after Healy's brief relationship with Taylor Swift."
+    },
+    {
+      "title": "Test that found source of US explosive diarrhoea outbreak was false positive",
+      "url": "https://www.bbc.co.uk/news/articles/c4gw9n1kx9do?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "The latest update from the US Food and Drug Administration means the exact source of the parasite is still not known."
+    },
+    {
+      "title": "Neighbours actor Terence Donovan dies aged 90",
+      "url": "https://www.bbc.co.uk/news/articles/crmrznw82j4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 19, 2026",
+      "description": "His son, actor Jason Donovan, posted to social media that his father died on Saturday night peacefully in Melbourne, Australia"
+    },
+    {
+      "title": "Cuban dissident Luis Manuel Otero Alcántara goes into exile in US",
+      "url": "https://www.bbc.co.uk/news/articles/cx2k77p2r1xo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 19, 2026",
+      "description": "He was arrested in 2021 during Cuba's largest anti-government protests in decades and spent five years ⁠in prison."
+    },
+    {
+      "title": "New EU border system tripling time at passport control, airport boss says",
+      "url": "https://www.bbc.co.uk/news/articles/ckg5gg6n9x3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 19, 2026",
+      "description": "Ryanair has also warned passengers travelling to Europe this summer to prepare for extended waits."
+    },
+    {
+      "title": "Why are thousands of people protesting in Delhi?",
+      "url": "https://www.bbc.co.uk/news/articles/cedj9j911p8o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "Thousands of mostly young people tried to march on India's parliament to demand changes to how the education system is run."
+    },
+    {
+      "title": "Shakira, Madonna, Justin Bieber and BTS perform at colourful World Cup half-time show",
+      "url": "https://www.bbc.co.uk/news/articles/clyxjl0wkl7o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 19, 2026",
+      "description": "Robbie Williams and Jennifer Hudson also performed, with Kylie Jenner and Timothee Chalamet among the celebrities in the crowds."
+    },
+    {
+      "title": "‘All I think about is her’: Families demand answers as Nigeria's boat disasters keep happening",
+      "url": "https://www.bbc.co.uk/news/articles/c309vzn676go?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "Hundreds of lives are lost each year in Nigeria as a result of boat accidents yet nothing seems to change."
+    },
+    {
+      "title": "‘Everyone's afraid to die’: Struggle to recruit soldiers in Ukraine turns violent",
+      "url": "https://www.bbc.co.uk/news/articles/cr7k5ngde3vo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "Aggression against recruitment officers has become increasingly threatening, police say."
+    },
+    {
+      "title": "This farmer wanted to quit the cocaine industry - he couldn't",
+      "url": "https://www.bbc.co.uk/news/articles/c0kyml1zxz4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 19, 2026",
+      "description": "Colombians who grow cocaine's raw material bemoan a lack of support to help them switch crops."
+    },
+    {
+      "title": "Private jets flock to Montana - but locals can't afford the trailer park",
+      "url": "https://www.bbc.co.uk/news/articles/ckg92d8d40yo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 18, 2026",
+      "description": "Rents in Bozeman, Montana have skyrocketed as wealthy out-of-towners flock to the city to experience the American West."
+    },
+    {
+      "title": "Control, threats, disfiguring surgery: My life inside Jeffrey Epstein's 'cult'",
+      "url": "https://www.bbc.co.uk/news/articles/czek5wl6p2go?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 18, 2026",
+      "description": "\"Anya\" gives the BBC a rare account of how sex-criminal financier Epstein lured and abused his “assistants”."
+    },
+    {
+      "title": "What this desert city can teach the world about tackling heat deaths",
+      "url": "https://www.bbc.co.uk/news/articles/cgl3lnpxy6no?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 17, 2026",
-      "description": "The US military says its attacks were intended to \"further degrade Iranian military capabilities\"."
+      "description": "Maricopa County in Arizona has some of the hottest temperatures, but it has reduced the number of heat-related deaths."
     },
     {
-      "title": "Many Ukrainian soldiers outraged over removal of defence minister, troops tell BBC",
-      "url": "https://www.bbc.co.uk/news/articles/cvg8w4dpjkwo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "How these twins' rare growth disorder could provide the key to preventing cancer",
+      "url": "https://www.bbc.co.uk/news/articles/c8jnlmek8reo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 17, 2026",
-      "description": "Protests erupted in Ukraine on Thursday after Mykhailo Fedorov's removal - and now soldiers are also criticising the move."
+      "description": "Researchers have found that people with Laron syndrome have a lower incidence of cancer than the wider population."
     },
     {
-      "title": "Trump threatens to tariff Canada over wildfire smoke choking northern US cities",
-      "url": "https://www.bbc.co.uk/news/articles/cwyq93j34lgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "Canadian leader Mark Carney says both the US and Canada have an equal responsibility to fight climate change, which experts say are worsening wildfire conditions."
+      "title": "From hundreds to thousands: How India's 'cockroach' protest movement has grown",
+      "url": "https://www.bbc.co.uk/news/videos/c0qvdywj97ko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "BBC's Azadeh Moshiri reports as thousands attempt to march to India's parliament in support of the Cockroach Janta Party's demand for education reforms."
     },
     {
-      "title": "EU proposes slowing down cuts to carbon emissions for businesses",
-      "url": "https://www.bbc.co.uk/news/articles/ckgv0zd497zo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "Under the proposals, the EU plans to relax its emissions trading system to give companies more time to reduce their carbon output."
+      "title": "Why are Ukraine's military recruiters facing violence in their own country?",
+      "url": "https://www.bbc.co.uk/news/videos/c0kmjy02rxko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "The latest National Police Service report recorded more than 600 assaults on recruitment officers to date and warned that the aggression has become “increasingly threatening”."
     },
     {
-      "title": "Magnitude 7.3 earthquake quake strikes off Mexico coast",
-      "url": "https://www.bbc.co.uk/news/articles/cwyjv3815yxo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "The US Tsunami Warning Center has recorded waves 0.3m (1.1 feet) high in Puerto Madero and Chiapas in Mexico after the quake."
+      "title": "Spanish and Argentinian fans react outside World Cup final",
+      "url": "https://www.bbc.co.uk/news/videos/czxqr9rl9r0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "Ecstatic Spanish spectators and disappointed Argentine fans spoke to the BBC after the World Cup final on Sunday."
     },
     {
-      "title": "Air conditioner sparked deadly blaze at children's orphanage - police",
-      "url": "https://www.bbc.co.uk/news/articles/c9d8ylw60e9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "Eleven people, including children, died in the fire that also injured 19 others."
+      "title": "Moment fans in Madrid celebrate World Cup win",
+      "url": "https://www.bbc.co.uk/news/videos/cgr701xrg14o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 19, 2026",
+      "description": "Thousands of spectators watched Spain's victory in central Madrid on late Sunday night."
     },
     {
-      "title": "Second tanker in three months hijacked off Yemen by suspected Somali pirates",
-      "url": "https://www.bbc.co.uk/news/articles/c7vg6dml34vo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "There have also been several unsuccessful attacks in a region where piracy appears to be making a comeback."
+      "title": "Watch: Torrential rain hits New York and New Jersey triggering flash floods",
+      "url": "https://www.bbc.co.uk/news/videos/cq89veggnvqo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 19, 2026",
+      "description": "Water cascaded into subway stations and flooded streets, with people seen wading through water."
     },
     {
-      "title": "China hits out at British Steel nationalisation",
-      "url": "https://www.bbc.co.uk/news/articles/cjd4kvxpd3do?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "The UK government said taking the firm into public hands would safeguard \"a vital national capability\"."
+      "title": "John Healey becomes chancellor weeks after shock resignation from defence job",
+      "url": "https://www.bbc.co.uk/news/articles/ce85y9lm81no?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "The former defence secretary is seen as a safe pair of hands - and is now in charge of the government's finances."
     },
     {
-      "title": "Trump alleges China meddled in 2020 election and questions voting security ahead of midterms",
-      "url": "https://www.bbc.co.uk/news/articles/cx2k9wvv5wyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "China said Trump's claims were fabricated and US Democrats said he was paving the way to undermine November's elections."
+      "title": "Burnham has big ideas - but what will they cost?",
+      "url": "https://www.bbc.co.uk/news/articles/c9357rlk494o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "Every tricky decision and trade off is being watched by the country and the markets at the same time"
     },
     {
-      "title": "Uganda suspends school trips after 20 pupils die in bus crash",
-      "url": "https://www.bbc.co.uk/news/articles/c151gegwqv1o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "Thousands are killed on Uganda's roads each year but this is one of its deadliest accidents involving children."
+      "title": "Burnham promises help with your money. How could it affect you?",
+      "url": "https://www.bbc.co.uk/news/articles/cp9ezldrkkgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "The new PM says he will look at how much people can earn before paying tax but admitted changing it would be difficult."
     },
     {
-      "title": "Trump Media to sell instant access to 'market-moving' social posts",
-      "url": "https://www.bbc.co.uk/news/articles/c79gw4lj89eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "Trump Media is launching a fast, paid feed to its most influential posts for Wall Street traders."
+      "title": "Trump imposes 50% tariff on Canadian imports",
+      "url": "https://www.bbc.co.uk/news/articles/cg4dzq3x3e1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "The duties take effect within 30 days and mark a major escalation in trade tensions between the North American neighbours."
     },
     {
-      "title": "Canada fires prompt US air quality alerts as smoke blankets major cities",
-      "url": "https://www.bbc.co.uk/news/articles/c0m7n427xd8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "Smoke from more than 800 blazes has filled major cities from Toronto and New York, to parts of the US Midwest and Great Lakes."
+      "title": "This farmer wanted to quit the cocaine industry - he couldn't",
+      "url": "https://www.bbc.co.uk/news/articles/c0kyml1zxz4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 19, 2026",
+      "description": "Colombians who grow cocaine's raw material bemoan a lack of support to help them switch crops."
     },
     {
-      "title": "Japan relaxes royal succession rules - but ban on female emperors remains",
-      "url": "https://www.bbc.co.uk/news/articles/cy07rz79zg9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "The law now allows the adoption of male distant relatives aged over 15 back into the imperial family."
+      "title": "AliExpress fined record €550m by EU for allowing sale of illegal goods",
+      "url": "https://www.bbc.co.uk/news/articles/cp8714286dpo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "The Chinese retailer allowed unsafe toys and counterfeit clothes to be sold on its site, says the EU."
     },
     {
-      "title": "Philippines condemns monkey video on Chinese media as racist",
-      "url": "https://www.bbc.co.uk/news/articles/cj632307934o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "The AI video on China Daily showed a monkey in Philippine garments singing its claims to the South China Sea."
+      "title": "West Africa signs off $25bn mega gas-pipeline plan",
+      "url": "https://www.bbc.co.uk/news/articles/cwyr5rpglngo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "A 6,000km pipeline running along the Atlantic coast of 14 countries is to be built starting in 2028."
     },
     {
-      "title": "Olympic cyclist admits to driving despite ban after crash that killed wife",
-      "url": "https://www.bbc.co.uk/news/articles/c62q3ywep1ro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "Rohan Dennis pleaded guilty to driving while disqualified after police pulled him over last month."
+      "title": "Are you a parent missing out on £27 a week? Here's how to check",
+      "url": "https://www.bbc.co.uk/news/articles/cz9l993wj5ko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 19, 2026",
+      "description": "Thousands of new parents fail to claim child benefit until it is too late to receive some of the money, HMRC says."
     },
     {
-      "title": "Australia 'deeply frustrated' over Laos methanol poisoning charges",
-      "url": "https://www.bbc.co.uk/news/articles/cy5d4z343wlo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "Media reports say Laos will press charges of up to one year in jail against those allegedly responsible."
+      "title": "Jobs, borrowing and taxes: Andy Burnham's economic challenges",
+      "url": "https://www.bbc.co.uk/news/articles/crkvj0ngzexo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "The person in charge of the country will change but the financial challenges remain the same."
     },
     {
-      "title": "Pele's 1958 World Cup final shirt sells for $4.9m",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cn8n7dejqy2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "A shirt worn by Pele during the 1958 World Cup final has sold for $4.9m (£3.6m) at a Sotheby's auction in New York."
+      "title": "South East Water hosepipe ban to affect 2.4 million people",
+      "url": "https://www.bbc.co.uk/news/articles/c7vg3geg3qmo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "South East Water says customers in Sussex, Surrey, Hampshire and Berkshire will face a ban."
     },
     {
-      "title": "Taco Bell removes lettuce from menu in US after links to explosive diarrhoea parasite",
-      "url": "https://www.bbc.co.uk/news/articles/cm2gnglyv0jo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "About 1,645 people in five states were infected by the parasite after having Taco Bell, according to US health officials."
+      "title": "My fitness tracker knew I was pregnant before I did",
+      "url": "https://www.bbc.co.uk/news/articles/cr474z1qyn6o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 19, 2026",
+      "description": "Ravika is one of hundreds of women who are noticing early pregnancy signs through the data on their fitness trackers."
     },
     {
-      "title": "White House teleprompter operator accused of making $100k from Trump speech bets",
-      "url": "https://www.bbc.co.uk/news/articles/cjrvdqyr5d5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "A White House staffer has been accused of using inside knowledge of speeches to make nearly $100,000 on Kalshi."
+      "title": "Thames Water lenders preparing legal challenge in event of Burnham nationalisation",
+      "url": "https://www.bbc.co.uk/news/articles/cx278ed09nzo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 19, 2026",
+      "description": "The BBC understands creditors would would pursue payment in full of the outstanding debts, in the multi-billions of pounds."
     },
     {
-      "title": "Zelensky's removal of popular defence minister sparks protests in Ukraine",
-      "url": "https://www.bbc.co.uk/news/articles/cdx76069n3do?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "A rift between Fedorov and Commander-in-Chief Oleksandr Syrskyi was apparently at the heart of Zelensky's decision."
+      "title": "New EU border system tripling time at passport control, airport boss says",
+      "url": "https://www.bbc.co.uk/news/articles/ckg5gg6n9x3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 19, 2026",
+      "description": "Ryanair has also warned passengers travelling to Europe this summer to prepare for extended waits."
     },
     {
-      "title": "Italian officials handed jail terms for Genoa bridge disaster that killed 43",
-      "url": "https://www.bbc.co.uk/news/articles/c36dnz1zez5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "The ex-head of Italy's motorway operator Giovanni Castellucci was handed a 12-year term over the 2018 bridge collapse."
+      "title": "Chinese firm seeks compensation over British Steel nationalisation",
+      "url": "https://www.bbc.co.uk/news/articles/cwyj4ppqn41o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 19, 2026",
+      "description": "Jingye said it will take action \"through legal means to the very end\" after the UK government nationalised British Steel."
     },
     {
-      "title": "Kris Jenner's mother Mary Jo dies aged 91",
-      "url": "https://www.bbc.co.uk/news/articles/c70g35n4518o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "Mary Jo 'MJ' Campbell was featured on multiple episodes of Keeping Up with the Kardashians over the years."
+      "title": "'My buyers dropped their offer by £15,000 the day before exchange': Gazundering and how to avoid it",
+      "url": "https://www.bbc.co.uk/news/articles/c3d39r338m0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 18, 2026",
+      "description": "It's a small but growing problem in the property market - here's how to protect yourself."
     },
     {
-      "title": "At least two dead in Texas floods ravaging same area where campers died",
-      "url": "https://www.bbc.co.uk/news/articles/c3v0xe5elzyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "The same area devastated by floods last year's floods, which caused more than 130 deaths, is once again being hit."
+      "title": "Is Burnham promising a new dawn for North Sea oil and gas?",
+      "url": "https://www.bbc.co.uk/news/articles/c4g3l22ry6wo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 19, 2026",
+      "description": "The incoming PM is expected to announce fresh support for the North Sea from day one of his premiership."
     },
     {
-      "title": "'Moment of joy' as Uganda discharges last Ebola patient",
-      "url": "https://www.bbc.co.uk/news/articles/cx2myxjv172o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "The good news from Uganda comes as the WHO chief warns the virus in DR Congo is spreading fast."
-    },
-    {
-      "title": "I thought we'd grow old together, says band leader whose girlfriend died in Thai bar inferno",
-      "url": "https://www.bbc.co.uk/news/articles/c1k13zj914mo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "Athipat Wichan tells BBC Thai he regrets bringing his girlfriend Nahathai into his indie band Thotsakan."
-    },
-    {
-      "title": "What to know about the Canadian and US wildfires and their impact",
-      "url": "https://www.bbc.co.uk/news/articles/c5ywdl9ne3yo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "Wildfires in Ontario have blanketed US and Canadian cities with dangerous smoke."
-    },
-    {
-      "title": "One man's hunger strike changed India's map. Can it still change politics?",
-      "url": "https://www.bbc.co.uk/news/articles/cn4d4eq9n8do?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "Why hunger strikes still shape Indian politics, from Gandhi to Sonam Wangchuk."
-    },
-    {
-      "title": "I wouldn't marry him until he paid off his debt, now I'm in charge of our money",
-      "url": "https://www.bbc.co.uk/news/articles/c5yz4wnz6jdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "Sarah and her husband have shared one account for 25 years, but she says managing it falls to her."
-    },
-    {
-      "title": "US strikes first tanker with missiles as it enforces new blockade",
-      "url": "https://www.bbc.co.uk/news/articles/clyqwkegqk0o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "The US military targeted an unladen oil tanker which it said was heading for the key Iranian oil terminal on Kharg island."
-    },
-    {
-      "title": "'A true miracle of destiny' - Messi and Lamine Yamal's incredible first meeting",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c9w0j104rvgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "BBC Sport explores a bond between two world-class footballers from different generations who appear bound by destiny"
-    },
-    {
-      "title": "Bodycam footage shows airlift of girl stranded by Texas floods",
-      "url": "https://www.bbc.co.uk/news/videos/c36d1n6g3x9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "Footage shows a rescuer reaching a family of three stranded by floods that destroyed their house in Uvalde county."
-    },
-    {
-      "title": "Watch: What we know about newly discovered monkey species",
-      "url": "https://www.bbc.co.uk/news/videos/cx25glwll79o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "New monkey species hailed as 'amazing discovery' by conservationist."
-    },
-    {
-      "title": "Watch: What to know as Genoa bridge disaster trial ends",
-      "url": "https://www.bbc.co.uk/news/videos/cgewd07ee3go?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "More than 50 defendants have been on trial in Italy over the 2018 bridge collapse which killed 43 people."
-    },
-    {
-      "title": "Orange haze from Canada wildfires seen in Ontario and northern US",
-      "url": "https://www.bbc.co.uk/news/videos/c62q3kw126xo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "There are currently 838 wildfires actively burning across the country, according to the Canadian Interagency Forest Fire Centre."
-    },
-    {
-      "title": "What if Bluey spoke one of the world's oldest living languages?",
-      "url": "https://www.bbc.co.uk/news/videos/c07y7r91vz9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 15, 2026",
-      "description": "Five episodes of the award-winning children’s cartoon have been released in Australian Indigenous language for the first time."
-    },
-    {
-      "title": "Burnham's 'Manchesterism' got him to No 10 - but will it work for the UK?",
-      "url": "https://www.bbc.co.uk/news/articles/clyl3z2xld8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "Economics editor Faisal Islam examines whether the north-west city can be a template for the entire country."
-    },
-    {
-      "title": "Five headaches Andy Burnham will have to deal with as PM",
-      "url": "https://www.bbc.co.uk/news/articles/c62122pgjqdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "From defence spending to housing - the next UK leader has a series of challenges to deal with."
+      "title": "The hidden cost of the night shift and how to sleep it off",
+      "url": "https://www.bbc.co.uk/news/articles/cp9errxl97go?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 19, 2026",
+      "description": "More than three million people in the UK work night shifts, which can greatly impact their health. What can be done to help them?"
     },
     {
       "title": "Brewdog founder faces data complaints over efforts to buy back firm",
@@ -3209,10 +3327,22 @@
       "description": "The UK data watchdog has received complaints after James Watt reportedly contacted former shareholders."
     },
     {
-      "title": "China's Moonshot AI claims Kimi K3 can rival OpenAI and Anthropic",
-      "url": "https://www.bbc.co.uk/news/articles/cy9w4q8pgp0o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "The financial winners and losers from the World Cup",
+      "url": "https://www.bbc.co.uk/news/articles/cgrkek8lrzvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 17, 2026",
-      "description": "The company has unveiled a massive new artificial intelligence model it says can take on top American firms."
+      "description": "Big bucks are being made from the 2026 tournament off the field, but who is raking in the most, and who is losing out?"
+    },
+    {
+      "title": "Anger as water supply misery continues for second day",
+      "url": "https://www.bbc.co.uk/news/articles/ce3q128kn4qo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 19, 2026",
+      "description": "Residents in Kent describe South East Water as \"incompetently useless\" as supply issues continue."
+    },
+    {
+      "title": "Burnham's 'Manchesterism' got him to No 10 - but will it work for the UK?",
+      "url": "https://www.bbc.co.uk/news/articles/clyl3z2xld8o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 17, 2026",
+      "description": "Economics editor Faisal Islam examines whether the north-west city can be a template for the entire country."
     },
     {
       "title": "China hits out at British Steel nationalisation",
@@ -3221,10 +3351,16 @@
       "description": "The UK government said taking the firm into public hands would safeguard \"a vital national capability\"."
     },
     {
-      "title": "The financial winners and losers from the World Cup",
-      "url": "https://www.bbc.co.uk/news/articles/cgrkek8lrzvo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Five headaches Andy Burnham will have to deal with as PM",
+      "url": "https://www.bbc.co.uk/news/articles/c62122pgjqdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 17, 2026",
-      "description": "Big bucks are being made from the 2026 tournament off the field, but who is raking in the most, and who is losing out?"
+      "description": "From defence spending to housing - the next UK leader has a series of challenges to deal with."
+    },
+    {
+      "title": "China's Moonshot AI claims Kimi K3 can rival OpenAI and Anthropic",
+      "url": "https://www.bbc.co.uk/news/articles/cy9w4q8pgp0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 17, 2026",
+      "description": "The company has unveiled a massive new artificial intelligence model it says can take on top American firms."
     },
     {
       "title": "I wouldn't marry him until he paid off his debt, now I'm in charge of our money",
@@ -3235,116 +3371,8 @@
     {
       "title": "Why has British Steel been nationalised?",
       "url": "https://www.bbc.co.uk/news/articles/c5y66y40kgpo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
+      "date": "July 19, 2026",
       "description": "The UK's only remaining plant making virgin steel has been taken into public ownership after years of uncertainty over its future."
-    },
-    {
-      "title": "Who is the frontrunner to be the UK's next chancellor?",
-      "url": "https://www.bbc.co.uk/news/articles/c36yj4pn7jdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "Andy Burnham will be moving into Downing Street next week, and a question remains over who will be his neighbour in Number 11."
-    },
-    {
-      "title": "Trump Media to sell instant access to 'market-moving' social posts",
-      "url": "https://www.bbc.co.uk/news/articles/c79gw4lj89eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "Trump Media is launching a fast, paid feed to its most influential posts for Wall Street traders."
-    },
-    {
-      "title": "White House teleprompter operator accused of making $100k from Trump speech bets",
-      "url": "https://www.bbc.co.uk/news/articles/cjrvdqyr5d5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "A White House staffer has been accused of using inside knowledge of speeches to make nearly $100,000 on Kalshi."
-    },
-    {
-      "title": "Investigation into parking tickets for drivers queuing at petrol stations",
-      "url": "https://www.bbc.co.uk/news/articles/cnvnyr75r48o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "It's part of a wider crackdown from the consumer regulator into potentially unfair practices by private parking operators."
-    },
-    {
-      "title": "Celebrity influencers paid up to £1m to advertise deodorant on Instagram",
-      "url": "https://www.bbc.co.uk/news/articles/cvgegqrp656o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "The chief executive of Wild reveals what happens behind the scenes of social media posts."
-    },
-    {
-      "title": "British Steel taken into public ownership to protect 'vital' UK supply",
-      "url": "https://www.bbc.co.uk/news/articles/c5y680w62wno?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "The Scunthorpe steelworks has been officially nationalised under new government powers passed this week."
-    },
-    {
-      "title": "UK economy returns to growth in May",
-      "url": "https://www.bbc.co.uk/news/articles/c8xnllq944go?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "The modest growth reverses a slight contraction that had been seen the previous month."
-    },
-    {
-      "title": "TikTok faces Ofcom investigation over child age checks",
-      "url": "https://www.bbc.co.uk/news/articles/ce8l1zk9dk9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "It follows a review by the regulator in May that criticised the platform for not being \"safe enough\" for children."
-    },
-    {
-      "title": "Chip giant TSMC pledges another $100bn to expand US production",
-      "url": "https://www.bbc.co.uk/news/articles/c62x8ldxr7eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "The company says it will create \"high-tech, high-paying jobs\", and raises its total commitment to the US to $265bn."
-    },
-    {
-      "title": "Buffett calls Bill Gates relationship with Epstein 'distasteful'",
-      "url": "https://www.bbc.co.uk/news/articles/cz97wx2zj78o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 15, 2026",
-      "description": "The billionaire investor's firm has stopped giving donations to the Microsoft co-founder's charity."
-    },
-    {
-      "title": "Aer Lingus proposes cutting 500 jobs under savings plan",
-      "url": "https://www.bbc.co.uk/news/articles/ceqe52l4yr4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "The company proposes cutting 290 roles in its head office, along with 140 cabin roles and 70 pilots."
-    },
-    {
-      "title": "SpaceX share price drops below stock market debut",
-      "url": "https://www.bbc.co.uk/news/articles/clyl33q0yl0o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 15, 2026",
-      "description": "Share trading in Elon Musk’s rocket company has been volatile since it went public a month ago."
-    },
-    {
-      "title": "Salary information to be shown on job ads under new laws",
-      "url": "https://www.bbc.co.uk/news/articles/ckg7gg2zdexo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 15, 2026",
-      "description": "The government argues the move would help jobseekers and could reduce pay discrimination claims."
-    },
-    {
-      "title": "Burnham faces crucial choice for chancellor as battle for No 11 continues",
-      "url": "https://www.bbc.co.uk/news/articles/ceqe55d0q9po?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 15, 2026",
-      "description": "Whoever Burnham appoints to the key role will send a signal of his intent, writes Iain Watson."
-    },
-    {
-      "title": "Cash-strapped Thames Water poses big test for Burnham",
-      "url": "https://www.bbc.co.uk/news/articles/c4gygy43103o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 15, 2026",
-      "description": "Despite returning to profit after hiking bills 40%, the deeply troubled company is far from out of the woods."
-    },
-    {
-      "title": "Brewdog co-founder James Watt launches bid to buy back beer firm",
-      "url": "https://www.bbc.co.uk/news/articles/c7vyv2v2vmzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 15, 2026",
-      "description": "Watt says he has made an offer to buy back the craft beer business months after it was sold to a US company."
-    },
-    {
-      "title": "Don't panic - five ways to stop your kids' endless scrolling",
-      "url": "https://www.bbc.co.uk/news/articles/c86e3q5j992o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 15, 2026",
-      "description": "Parenting experts share their tips on how to keep children's screen time under control."
-    },
-    {
-      "title": "EasyJet passengers stuck on tarmac for hours when plane couldn't refuel",
-      "url": "https://www.bbc.co.uk/news/articles/c3ryr25gvjdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 15, 2026",
-      "description": "One passenger said she only got home at 06:00 after being stuck on the runway in the middle of the night."
     },
     {
       "title": "Is tracking your food purchases good for your health?",
@@ -3419,28 +3447,34 @@
       "description": "Helium-3 is expensive and demand is forecast to soar, so some are planning to mine it on the moon."
     },
     {
-      "title": "What are your rights if you buy something that breaks?",
-      "url": "https://www.bbc.co.uk/news/videos/c3r0lq9n14wo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "Martin Lewis explains why you should go back to the item's retailer, not the manufacturer."
+      "title": "Burnham has big ideas - but what will they cost?",
+      "url": "https://www.bbc.co.uk/news/articles/c9357rlk494o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "Every tricky decision and trade off is being watched by the country and the markets at the same time"
     },
     {
-      "title": "'Volunteering with food charity saved me from loneliness'",
-      "url": "https://www.bbc.co.uk/news/articles/c1eye5jv9xgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "FoodCycle takes surplus food and turns it into three-course meals served to the community."
+      "title": "Burnham promises help with your money. How could it affect you?",
+      "url": "https://www.bbc.co.uk/news/articles/cp9ezldrkkgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "The new PM says he will look at how much people can earn before paying tax but admitted changing it would be difficult."
     },
     {
-      "title": "How do you split the bill with friends?",
-      "url": "https://www.bbc.co.uk/news/videos/c5yzy3j39vwo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "Hands down the worst part of going out for dinner."
+      "title": "Former academy pupil offers students free haircuts",
+      "url": "https://www.bbc.co.uk/news/articles/c87nxj7dw1zo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "Razwan Amin set up his barbers after leaving Erdington Academy and wants to help people with the cost of living."
     },
     {
-      "title": "I wouldn't marry him until he paid off his debt, now I'm in charge of our money",
-      "url": "https://www.bbc.co.uk/news/articles/c5yz4wnz6jdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "Sarah and her husband have shared one account for 25 years, but she says managing it falls to her."
+      "title": "Are you a parent missing out on £27 a week? Here's how to check",
+      "url": "https://www.bbc.co.uk/news/articles/cz9l993wj5ko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 19, 2026",
+      "description": "Thousands of new parents fail to claim child benefit until it is too late to receive some of the money, HMRC says."
+    },
+    {
+      "title": "Private jets flock to Montana - but locals can't afford the trailer park",
+      "url": "https://www.bbc.co.uk/news/articles/ckg92d8d40yo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 18, 2026",
+      "description": "Rents in Bozeman, Montana have skyrocketed as wealthy out-of-towners flock to the city to experience the American West."
     },
     {
       "title": "Why Gen Z are planning for life without a state pension",
@@ -3473,6 +3507,18 @@
       "description": "What impact might shortages have on our summer holidays - and what could be done about it?"
     },
     {
+      "title": "Healey seen as 'safe pair of hands' as he is appointed chancellor",
+      "url": "https://www.bbc.co.uk/news/videos/ceqexq43q02o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "The BBC's Economics Editor Faisal Islam outlines the challenges facing the new chancellor."
+    },
+    {
+      "title": "Money Box",
+      "url": "https://www.bbc.co.uk/sounds/play/m002z5p9?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 18, 2026",
+      "description": "Call for help for people on low incomes who must now wait longer for their state pension."
+    },
+    {
       "title": "Why women should speak openly about money",
       "url": "https://www.bbc.co.uk/news/videos/cvgwdxqj3k4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 17, 2026",
@@ -3491,154 +3537,124 @@
       "description": "Hands down the worst part of going out for dinner."
     },
     {
-      "title": "Business Daily",
-      "url": "https://www.bbc.co.uk/sounds/play/w3ct8g9j?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "China's economy slows, New York targets AI centres, and the ‘king of fruits’ giveaway"
+      "title": "World Cup champions Spain return to royal welcome, parade through Madrid",
+      "url": "https://www.aljazeera.com/sports/2026/7/20/world-cup-champions-spain-return-to-royal-welcome-parade-through-madrid?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "Tens of thousands of fans greet La Roja as they travel down Madrid&#039;s historic avenues to Cibeles Square."
     },
     {
-      "title": "Money Box",
-      "url": "https://www.bbc.co.uk/sounds/play/m002yx7t?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 15, 2026",
-      "description": "New regulations start for shoppers using Buy Now, Pay Later."
+      "title": "Albanian protesters pelt lawmakers’ cars over resort projects",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/20/albanian-protesters-pelt-lawmakers-cars-over-resort-projects?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "Protesters threw eggs at lawmakers&#039; vehicles outside Albania&#039;s parliament, demanding changes to laws."
     },
     {
-      "title": "Tackling Messi ‘huge challenge’ for Spain in World Cup final: Merino",
-      "url": "https://www.aljazeera.com/sports/2026/7/17/tackling-messi-huge-challenge-for-spain-in-world-cup-final-merino?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "Spanish midfielder says he has &#039;huge confidence&#039; in his abilities after his impressive performances as a substitute."
+      "title": "FIFA investigating on-pitch brawl after Spain vs Argentina World Cup final",
+      "url": "https://www.aljazeera.com/sports/2026/7/20/fifa-investigating-on-pitch-brawl-after-spain-vs-argentina-world-cup-final?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "Argentina&#039;s Paredes was seen shoving Spanish players, which led to an on-field melee, while Spain&#039;s Yamal prayed calmly."
     },
     {
-      "title": "Herbert leads British Open golf, equals record lowest score at a Major",
-      "url": "https://www.aljazeera.com/sports/2026/7/17/herbert-leads-british-open-golf-equals-record-lowest-score-at-a-major?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "Australian golfer Herbert ended the second round of the British Open with a two-shot lead on eight-under."
+      "title": "Trump rejects Mamdani threat to arrest Israel’s Netanyahu for war crimes",
+      "url": "https://www.aljazeera.com/news/2026/7/20/trump-rejects-mamdani-threat-to-arrest-israels-netanyahu-for-war-crimes?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "US president insists Netanyahu will not be arrested, despite ICC warrant."
     },
     {
-      "title": "Star speedcubers square off at European championship",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/17/star-speedcubers-square-off-at-european-championship?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "More than 1,200 speedcubers from 53 countries are descending are attending the European Speedcubing Championship."
+      "title": "King of Spain celebrates World Cup winners in Madrid",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/20/king-of-spain-celebrates-world-cup-winners-in-madrid?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "Spain’s World Cup-winning team received a royal reception from King Felipe VI in Madrid ahead of a victory parade."
     },
     {
-      "title": "ICE agent behind fatal shooting in Maine reportedly had troubled history",
-      "url": "https://www.aljazeera.com/news/2026/7/17/ice-agent-behind-fatal-shooting-in-maine-reportedly-had-troubled-history?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "Relatives of David Brouillette, the agent who shot and killed a man in Maine, said he had record of violent behaviour."
+      "title": "Gaza residents weigh in on election of new Hamas leader",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/20/gaza-residents-weigh-in-on-election-of-new-hamas-leader?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "Gaza residents weigh in on election of new Hamas leader"
     },
     {
-      "title": "Food emergency deepens across Uganda’s Karamoja",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/17/food-emergency-deepens-across-ugandas-karamoja?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "Food emergency deepens across Uganda’s Karamoja"
+      "title": "Ortega insists no more elections for Nicaragua",
+      "url": "https://www.aljazeera.com/news/2026/7/20/ortega-insists-no-more-elections-for-nicaragua?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "The Central American state&#039;s longtime leader intends to block the opposition from challenging his rule."
     },
     {
-      "title": "World Cup winners to receive US-style championship rings, FIFA says",
-      "url": "https://www.aljazeera.com/sports/2026/7/17/world-cup-winners-to-receive-us-style-championship-rings-fifa-says?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "Players&#039; rings will be limited edition of 2,026 individually numbered pieces, with the rest available for public sale."
+      "title": "Man arrested after fire outside New York immigration court",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/20/man-arrested-after-fire-outside-new-york-immigration-court?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "A man has been arrested after setting off an incendiary device outside an immigration court building in New York City."
     },
     {
-      "title": "Houthi supporters rally in Sanaa against ‘Saudi-led blockade’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/17/houthi-supporters-rally-in-sanaa-against-saudi-led?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "Thousands of Houthi supporters rallied in Sanaa against what they described as the Saudi-led blockade against Yemen."
+      "title": "Monsoon-driven flash flooding kills at least 20 in Afghanistan",
+      "url": "https://www.aljazeera.com/news/2026/7/20/monsoon-driven-flash-flooding-kills-at-least-20-in-afghanistan?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "Rescue teams are racing to reach Nuristan province as devastation continues across the region."
     },
     {
-      "title": "Suspected Somali pirates seize tanker near Yemen amid wave of hijackings",
-      "url": "https://www.aljazeera.com/news/2026/7/17/suspected-somali-pirates-seize-tanker-near-yemen-amid-wave-of-hijackings?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "The seizure of the Astana is the latest in a rapidly growing wave of piracy sweeping the Gulf of Aden."
+      "title": "Indian police attack Cockroach Janta Party’s parliament march",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/20/indian-police-attack-cockroach-janta-partys-parliament-march?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "Police used batons to disperse protesters as thousands of people joined the Cockroach Janta Party&#039;s march in New Delhi."
     },
     {
-      "title": "Top IRS lawyer to resign post amid disagreements with Trump administration",
-      "url": "https://www.aljazeera.com/news/2026/7/17/top-irs-lawyer-to-resign-post-amid-disagreements-with-trump-administration?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "Reports indicate a controversial settlement deal and disputes over tax audits may have prompted Ken Kies to step down."
+      "title": "What does Khalil al-Hayya’s election win mean for Gaza?",
+      "url": "https://www.aljazeera.com/news/2026/7/20/what-does-khalil-al-hayyas-election-win-mean-for-gaza?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "Al-Hayya wins Hamas leadership with a single-vote margin, signalling a focus on Gaza amidst continued Israeli aggression"
     },
     {
-      "title": "Israel, Gaza and the future of US power",
-      "url": "https://www.aljazeera.com/video/the-india-report/2026/7/17/2271?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "Congressman Ro Khanna joins Sreenivasan Jain."
+      "title": "Yemeni women support families through enterprise as economic crisis bites",
+      "url": "https://www.aljazeera.com/economy/2026/7/20/yemeni-women-support-families-through-enterprise-as-economic-crisis-bites?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "Amid Yemen’s harsh economic crisis, securing viable employment has become increasingly difficult for men."
     },
     {
-      "title": "How an Italian sculptor created the iconic World Cup trophy",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/17/how-an-italian-sculptor-created-the-iconic-world-cup-trophy?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "In 1970, an Italian sculptor designed the iconic World Cup trophy that’s become familiar to generations of fans."
+      "title": "EU pauses methane penalties amid energy crisis, US pressure",
+      "url": "https://www.aljazeera.com/news/2026/7/20/eu-pauses-methane-penalties-amid-energy-crisis-us-pressure?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "The European Commission says waiving penalties will ensure the security of energy supply."
     },
     {
-      "title": "At least two dead as heavy rains, floods strike central Texas",
-      "url": "https://www.aljazeera.com/gallery/2026/7/17/at-least-two-dead-as-heavy-rains-floods-strike-central-texas?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "Officials in the southern state have seen new warning systems tested by the floods, after last year&#039;s deadly rainfall."
+      "title": "US judge orders pause on Paramount–Warner Bros merger",
+      "url": "https://www.aljazeera.com/economy/2026/7/20/us-judge-orders-pause-on-paramount-warner-bros?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "Paramount risks $650m quarterly fees if merger delays extend beyond September, as per the merger agreement terms."
     },
     {
-      "title": "Will the Canadian wildfire smoke affect Spain vs Argentina World Cup final?",
-      "url": "https://www.aljazeera.com/sports/2026/7/17/will-the-canadian-wildfire-smoke-affect-spain-vs-argentina-world-cup-final?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "World Cup organisers are monitoring the situation &#039;closely&#039;, with US and FIFA presidents meeting on Friday."
+      "title": "A tournament of contradictions: What did we learn at World Cup 2026?",
+      "url": "https://www.aljazeera.com/sports/2026/7/20/a-tournament-of-contradictions-what-did-we-learn-at-world-cup-2026?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "A look back at the World Cup&#039;s moments of glory and controversy, and their impact on fans, teams and the sport."
     },
     {
-      "title": "At least three killed and hundreds displaced by heavy rain in Chile",
-      "url": "https://www.aljazeera.com/news/2026/7/17/at-least-three-killed-and-hundreds-displaced-by-heavy-rain-in-chile?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "Chilean President Jose Antonio Kast says that he is travelling to the Biobio region to survey flood damage."
+      "title": "Italians protest in Bologna after Moroccan man dies during arrest",
+      "url": "https://www.aljazeera.com/news/2026/7/20/protests-in-italy-after-moroccan-man-dies-during-arrest?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "Abderrahim Fakir died as police were restraining him, drawing comparisons with George Floyd&#039;s death in 2020."
     },
     {
-      "title": "All-time West Indies cricket great Garfield Sobers dies aged 89",
-      "url": "https://www.aljazeera.com/sports/2026/7/17/all-time-west-indies-cricket-great-garfield-sobers-dies-aged-89?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "Arguably the greatest all-rounder of the game, Sobers led the West Indies at his peak, breaking Test cricket records."
+      "title": "‘Now or never’: Students defy Delhi lockdown to march on India’s parliament",
+      "url": "https://www.aljazeera.com/news/2026/7/20/now-or-never-students-defy-delhi-lockdown-to-march-on-indias-parliament?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "Youth-led protesters answer call of Cockroach Janta Party to demand accountability, sweeping reforms after exam scandal."
     },
     {
-      "title": "Germany’s Merz hails nuclear deterrence cooperation with France",
-      "url": "https://www.aljazeera.com/news/2026/7/17/germanys-merz-hails-nuclear-deterrence-cooperation-with-france?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "The Franco-German cooperation is not a move to replace NATO’s nuclear umbrella, stresses German Chancellor."
+      "title": "FIFA World Cup: Five key takeaways from 2026 edition won by Spain",
+      "url": "https://www.aljazeera.com/sports/2026/7/20/fifa-world-cup-five-key-takeaways-from-2026-edition-won-by-spain?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "Spain beat Argentina, but talking points remain. Should there be 48 or 64 teams? Hydration breaks? The &#039;dark arts&#039;?"
     },
     {
-      "title": "Life after amputation: Gaza women find recovery through football",
-      "url": "https://www.aljazeera.com/features/2026/7/17/life-after-amputation-gaza-women-find-recovery-through-football?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "Palestinian women in Gaza who have lost limbs during Israel&#039;s genocidal war are using football as a way of recovering."
+      "title": "Mexican drug lord Ismael ‘El Mayo’ Zambada sentenced to life in US prison",
+      "url": "https://www.aljazeera.com/news/2026/7/20/mexican-drug-lord-ismael-el-mayo-zambada-sentenced-to-life-in-us-prison?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "US judge hands life sentence to Ismael Zambada for leading one of Mexico&#039;s most violent drug cartels for decades."
     },
     {
-      "title": "World Cup 2026: What did we learn?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/17/world-cup-2026-what-did-we-learn?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "World Cup 2026: What did we learn?"
-    },
-    {
-      "title": "Burnham confirmed as Labour leader, vows new direction for UK",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/17/burnham-elected-labour-leader-vows-new-direction-for-uk?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "Britain&#039;s governing Labour Party confirmed as Andy Burnham as its new leader, clearing the way for him to become PM"
-    },
-    {
-      "title": "Did the US just start a trade war with Brazil?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/17/did-the-us-just-start-a-trade-war-with-brazil?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "Did the US just start a trade war with Brazil?"
-    },
-    {
-      "title": "Iranian forces: missiles and drones fired at US targets in Gulf States",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/17/iranian-forces-missiles-and-drones-fired-at-us-targets-in-gulf-states?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "Iranian forces: missiles and drones fired at US targets in Gulf States."
-    },
-    {
-      "title": "Apple regains top spot as world’s most valuable company",
-      "url": "https://www.aljazeera.com/economy/2026/7/17/apple-regains-top-spot-as-worlds-most-valuable-company?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "Apple regained world’s top spot with $4.88 trillion valuation, overtaking Nvidia which saw a 3.5% market value drop."
-    },
-    {
-      "title": "Amazon’s Zoox recalls self-driving vehicles amid emergency response issues",
-      "url": "https://www.aljazeera.com/news/2026/7/17/amazons-zoox-recalls-self-driving-vehicles-amid-emergency-response-issues?traffic_source=rss",
-      "date": "July 17, 2026",
-      "description": "The recall is the latest development in a series of reports of autonomous vehicles impeding emergency response efforts."
+      "title": "Spain team arrives home after winning the World Cup",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/20/spain-team-arrives-home-after-winning-the-world-cup?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "World champions Spain have landed home carrying the World Cup trophy a day after defeating Argentina in the final."
     }
   ]
 }
