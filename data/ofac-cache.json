@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-20T18:40:17.708Z",
+  "updatedAt": "2026-07-20T19:10:17.601Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260720",
@@ -2810,7 +2810,14 @@
       "description": "These new measures aim at further increasing the pressure on Russia and Belarus and supporting EU's goal of achieving a just and lasting peace for Ukraine."
     }
   ],
-  "unNotices": [],
+  "unNotices": [
+    {
+      "title": "Security Council 1533 Sanctions Committee Adds Six Individuals and Two Entities to Its Sanctions List",
+      "url": "https://press.un.org/en/2026/sc16416.doc.htm",
+      "date": "July 16, 2026",
+      "description": "On 14 July 2026, the Security Council Committee established pursuant to resolution 1533 (2004) concerning the Democratic Republic of the Congo approved the addition of the entries specified below to its Sanctions List of individuals and entities subject to the measures imposed by the Security Council and adopted under Chapter VII of the Charter of the United Nations."
+    }
+  ],
   "bbcNews": [
     {
       "title": "Trump says US strikes hit Iran in 'honour' of American soldiers killed",
@@ -2869,6 +2876,18 @@
   ],
   "ajNews": [
     {
+      "title": "Houthis announce maritime blockade on Saudi Arabia",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/20/houthis-announce-maritime-blockade-on-saudi-arabia?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "Yemen’s Iran-backed Houthi rebels have announced a maritime blockade on Saudi Arabia after the two sides traded fire"
+    },
+    {
+      "title": "Trump vows Iran will ‘pay’ for killing US soldiers",
+      "url": "https://www.aljazeera.com/news/2026/7/20/trump-vows-iran-will-pay-for-killing-us-soldiers?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "The US intensifies air strikes on Iran, targeting critical sites after the deaths of American soldiers in the region."
+    },
+    {
       "title": "Petrol prices climb as US–Iran tensions disrupt markets",
       "url": "https://www.aljazeera.com/economy/2026/7/20/petrol-prices-climb-as-us-iran-tensions-disrupt?traffic_source=rss",
       "date": "July 20, 2026",
@@ -2897,12 +2916,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/20/what-we-know-about-us-soldiers-killed-in-iran-war-and-iranian-casualties?traffic_source=rss",
       "date": "July 20, 2026",
       "description": "Trump has expressed sadness and vowed to hit Iran &#039;very hard&#039; to honour killed US soldiers."
-    },
-    {
-      "title": "Since Islamabad MoU: What’s changed for the US, Iran and the Gulf?",
-      "url": "https://www.aljazeera.com/features/2026/7/20/since-islamabad-mou-whats-changed-for-the-us-iran-and-the-gulf?traffic_source=rss",
-      "date": "July 20, 2026",
-      "description": "We explain how the war has changed for all the parties since their MoU unravelled and as the conflict has escalated."
     }
   ],
   "occNews": [
@@ -3219,6 +3232,12 @@
       "description": "Water cascaded into subway stations and flooded streets, with people seen wading through water."
     },
     {
+      "title": "John Healey becomes chancellor weeks after shock resignation from defence job",
+      "url": "https://www.bbc.co.uk/news/articles/ce85y9lm81no?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "The former defence secretary is seen as a safe pair of hands - and is now in charge of the government's finances."
+    },
+    {
       "title": "Burnham has big ideas - but what will they cost?",
       "url": "https://www.bbc.co.uk/news/articles/c9357rlk494o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 20, 2026",
@@ -3237,16 +3256,16 @@
       "description": "The Chinese retailer allowed unsafe toys and counterfeit clothes to be sold on its site, says the EU."
     },
     {
-      "title": "West Africa signs off $25bn mega gas-pipeline plan",
-      "url": "https://www.bbc.co.uk/news/articles/cwyr5rpglngo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 20, 2026",
-      "description": "A 6,000km pipeline running along the Atlantic coast of 14 countries is to be built starting in 2028."
-    },
-    {
       "title": "This farmer wanted to quit the cocaine industry - he couldn't",
       "url": "https://www.bbc.co.uk/news/articles/c0kyml1zxz4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 19, 2026",
       "description": "Colombians who grow cocaine's raw material bemoan a lack of support to help them switch crops."
+    },
+    {
+      "title": "West Africa signs off $25bn mega gas-pipeline plan",
+      "url": "https://www.bbc.co.uk/news/articles/cwyr5rpglngo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "A 6,000km pipeline running along the Atlantic coast of 14 countries is to be built starting in 2028."
     },
     {
       "title": "Are you a parent missing out on £27 a week? Here's how to check",
@@ -3361,12 +3380,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c5y66y40kgpo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 19, 2026",
       "description": "The UK's only remaining plant making virgin steel has been taken into public ownership after years of uncertainty over its future."
-    },
-    {
-      "title": "Who is the frontrunner to be the UK's next chancellor?",
-      "url": "https://www.bbc.co.uk/news/articles/c36yj4pn7jdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "Andy Burnham will be moving into Downing Street next week, and a question remains over who will be his neighbour in Number 11."
     },
     {
       "title": "Is tracking your food purchases good for your health?",
@@ -3531,6 +3544,18 @@
       "description": "Hands down the worst part of going out for dinner."
     },
     {
+      "title": "Protests in Italy after Moroccan man dies during arrest",
+      "url": "https://www.aljazeera.com/news/2026/7/20/protests-in-italy-after-moroccan-man-dies-during-arrest?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "Outrage across Italy&#039;s political spectrum following death in Bologna likened to killing of George Floyd in 2020."
+    },
+    {
+      "title": "‘Now or never’: Students defy Delhi lockdown to march on India’s parliament",
+      "url": "https://www.aljazeera.com/news/2026/7/20/now-or-never-students-defy-delhi-lockdown-to-march-on-indias-parliament?traffic_source=rss",
+      "date": "July 20, 2026",
+      "description": "Youth-led protesters answer call of Cockroach Janta Party to demand accountability, sweeping reforms after exam scandal."
+    },
+    {
       "title": "FIFA World Cup: Five key takeaways from 2026 edition won by Spain",
       "url": "https://www.aljazeera.com/sports/2026/7/20/fifa-world-cup-five-key-takeaways-from-2026-edition-won-by-spain?traffic_source=rss",
       "date": "July 20, 2026",
@@ -3625,24 +3650,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/20/burnhams-move-to-scrap-uks-digital-id-plans-earns-cheers-and-criticism?traffic_source=rss",
       "date": "July 20, 2026",
       "description": "Digital inclusion and civil liberties campaigners welcome the U-turn — for different reasons. But some are unhappy."
-    },
-    {
-      "title": "Why Palestinians in Gaza are celebrating Spain’s World Cup win",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/20/why-palestinians-in-gaza-are-celebrating-spains-world-cup-win?traffic_source=rss",
-      "date": "July 20, 2026",
-      "description": "Thousands gathered across Gaza to watch the World Cup final, with many backing Spain over its support for Palestinians."
-    },
-    {
-      "title": "Who is Khalil al-Hayya, Hamas’s newly elected political chief?",
-      "url": "https://www.aljazeera.com/news/2026/7/20/who-is-khalil-al-hayya-hamas-newly-elected-political-chief?traffic_source=rss",
-      "date": "July 20, 2026",
-      "description": "Veteran negotiator assumes Palestinian group&#039;s overall leadership following a wartime election process."
-    },
-    {
-      "title": "‘I want to be honest with you’ says new UK PM Andy Burnham",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/20/i-want-to-be-honest-with-you-says-new-uk-pm-andy-burnham?traffic_source=rss",
-      "date": "July 20, 2026",
-      "description": "‘I want to be honest with you’ says new UK PM Andy Burnham"
     }
   ]
 }
