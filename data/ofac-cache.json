@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-07-20T15:40:32.039Z",
+  "updatedAt": "2026-07-20T16:10:11.703Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260720",
+      "code": "20260720",
+      "title": "Russia-related Designations Updates",
+      "date": "July 20, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260717_33",
       "code": "20260717_33",
@@ -54,12 +60,6 @@
       "code": "20260707",
       "title": "Issuance of Amended Iran-related General License",
       "date": "July 07, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260701_33",
-      "code": "20260701_33",
-      "title": "Reminder to File the 2026 Annual Report of Blocked Property",
-      "date": "July 01, 2026"
     }
   ],
   "civilPenalties": [
@@ -1489,7 +1489,7 @@
     "russian-harmful-foreign-activities-sanctions": {
       "name": "Russian Harmful Foreign Activities Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions",
-      "lastUpdated": "Jul 08, 2026",
+      "lastUpdated": "Jul 20, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -1934,13 +1934,6 @@
           "date": "June 25, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934776/download?inline"
-        },
-        {
-          "number": "X1",
-          "title": "Iran General License X1",
-          "date": "November 21, 2025",
-          "expires": "",
-          "url": "https://ofac.treasury.gov/media/936446/download?inline"
         }
       ]
     },
@@ -3251,6 +3244,18 @@
       "description": "Colombians who grow cocaine's raw material bemoan a lack of support to help them switch crops."
     },
     {
+      "title": "West Africa signs off $25bn mega gas pipeline plan",
+      "url": "https://www.bbc.co.uk/news/articles/cwyr5rpglngo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "A 6,000km pipeline running along the Atlantic coast of 13 countries is to be built starting in 2028."
+    },
+    {
+      "title": "South East Water hosepipe ban to affect 2.4 million people",
+      "url": "https://www.bbc.co.uk/news/articles/c7vg3geg3qmo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 20, 2026",
+      "description": "South East Water says customers in Sussex, Surrey, Hampshire and Berkshire will face a ban."
+    },
+    {
       "title": "My fitness tracker knew I was pregnant before I did",
       "url": "https://www.bbc.co.uk/news/articles/cr474z1qyn6o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 19, 2026",
@@ -3357,18 +3362,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c79gw4lj89eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 17, 2026",
       "description": "Trump Media is launching a fast, paid feed to its most influential posts for Wall Street traders."
-    },
-    {
-      "title": "White House teleprompter operator accused of making $100k from Trump speech bets",
-      "url": "https://www.bbc.co.uk/news/articles/cjrvdqyr5d5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "A White House staffer has been accused of using inside knowledge of speeches to make nearly $100,000 on Kalshi."
-    },
-    {
-      "title": "Investigation into parking tickets for drivers queuing at petrol stations",
-      "url": "https://www.bbc.co.uk/news/articles/cnvnyr75r48o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 16, 2026",
-      "description": "It's part of a wider crackdown from the consumer regulator into potentially unfair practices by private parking operators."
     },
     {
       "title": "Is tracking your food purchases good for your health?",
