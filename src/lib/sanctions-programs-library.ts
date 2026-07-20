@@ -739,7 +739,8 @@ archive: {
     ],
     keyAdvisories: [
       // 3 advisories — all PDF links verified from OFAC page
-                        { title: "Russia-related Designations Removals", date: "June 29, 2026", url: "https://ofac.treasury.gov/recent-actions/20260629", addedDate: "June 29, 2026" },
+                                                { title: "Russia-related Designations Updates", date: "July 20, 2026", url: "https://ofac.treasury.gov/recent-actions/20260720", addedDate: "July 20, 2026" },
+{ title: "Russia-related Designations Removals", date: "June 29, 2026", url: "https://ofac.treasury.gov/recent-actions/20260629", addedDate: "June 29, 2026" },
 { title: "Russia-related Designations Removals", date: "June 24, 2026", url: "https://ofac.treasury.gov/recent-actions/20260624", addedDate: "June 24, 2026" },
 { title: "FACT SHEET: Russia Sanctions and Agricultural Trade", date: "July 2022", url: "https://ofac.treasury.gov/media/924341/download?inline" },
       { title: "FACT SHEET: Preserving Agricultural Trade, Access to Communication, and Other Support to Those Impacted by Russia's War Against Ukraine", date: "April 2022", url: "https://ofac.treasury.gov/media/922206/download?inline" },
