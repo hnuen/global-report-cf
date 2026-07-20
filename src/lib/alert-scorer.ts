@@ -277,8 +277,11 @@ export function scoreArticle(article: Article): ScoredArticle {
     "treasury.gov",
     // Federal Register
     "federalregister.gov",
-    // FinCEN enforcement
-    "fincen.gov",
+    // FinCEN — deliberately NOT bare "fincen.gov": that domain also hosts
+    // proposed rules, press releases, and guidance notices, which were
+    // wrongly force-scored 100 and alerted as "enforcement". FinCEN items now
+    // only force-100 when the text actually signals enforcement or a FINAL
+    // rule — see the fincenActionable check below.
     // OCC enforcement
     "occ.gov/news-events",
     // Federal Reserve enforcement
@@ -316,7 +319,20 @@ export function scoreArticle(article: Article): ScoredArticle {
   const isCuratedOfficialSource = article.source === "UK OFSI" || article.source === "EU Commission" ||
     article.source === "United Nations — Press Releases" || article.source === "OCC News Releases";
 
-  if (GOV_SOURCES_100.some(s => article.sourceUrl?.includes(s)) || isCuratedOfficialSource) {
+  // ── Regulatory event classification ─────────────────────────────────────────
+  // Distinguishes actionable events (enforcement, finalized rules) from
+  // non-events (proposals, guidance, comment requests). Used both to decide
+  // whether FinCEN items force-100, and as a cross-source alert gate below.
+  const ENFORCEMENT_PATTERN = /\bassess(?:es|ed|ment)?\b|\bcivil money penalty\b|\bconsent order\b|\bpenalt(?:y|ies)\b|\bimposes?\s+(?:a\s+)?\$?[\d,.]+|\bfine[sd]?\b|\benforcement action\b|\bsettlement\b|\bdisgorge/i;
+  const FINAL_RULE_PATTERN  = /\bfinal rule\b|\binterim final rule\b|\bissues?\s+(?:a\s+)?final rule\b|\badopts?\s+(?:a\s+)?final rule\b/i;
+  const REG_NONEVENT_PATTERN = /\bpropose[sd]?\b|\bproposed rule\b|\bnotice of proposed rulemaking\b|\bnprm\b|\brequest for comment\b|\bseeks?\s+(?:public\s+)?comment\b|\brequest for information\b|\badvance notice\b|\bissues?\s+guidance\b|\bguidance to\b|\bfact sheet\b/i;
+
+  const looksEnforcement = ENFORCEMENT_PATTERN.test(searchText);
+  const looksFinalRule   = FINAL_RULE_PATTERN.test(searchText);
+  // FinCEN force-100 ONLY when the item is real enforcement or a final rule.
+  const fincenActionable = !!article.sourceUrl?.includes("fincen.gov") && (looksEnforcement || looksFinalRule);
+
+  if (GOV_SOURCES_100.some(s => article.sourceUrl?.includes(s)) || isCuratedOfficialSource || fincenActionable) {
     score = 100;
     reasons.push(`Official enforcement source (100): ${article.source} — ${article.sourceUrl}`);
   } else if (isEuCommission && euHasKeyword) {
@@ -349,6 +365,18 @@ export function scoreArticle(article: Article): ScoredArticle {
   const isNoNewsFiller = NO_NEWS_PATTERN.test(searchText);
   if (isNoNewsFiller) reasons.push(`non-event / "no news" content — never alerts regardless of score`);
 
+  // 9b. Regulatory non-event gate — proposed rules, guidance, and comment
+  //     requests are not enforcement and should not page anyone, even from a
+  //     .gov domain (this is what fired the June/July FinCEN false positives:
+  //     "Propose Rule to Implement GENIUS Act CIP", "Issues Guidance to Help
+  //     ... Eliminate Fraud"). Actual enforcement and FINALIZED rules still
+  //     alert — the user opted to keep those. See REG_NONEVENT_PATTERN above.
+  const isRegulatoryNonEvent =
+    REG_NONEVENT_PATTERN.test(searchText) && !looksEnforcement && !looksFinalRule;
+  if (isRegulatoryNonEvent) {
+    reasons.push("regulatory proposal/guidance (not enforcement or a final rule) — never alerts");
+  }
+
   // 10. AI-generated article gate — Gemini can hallucinate URLs that look
   //     real but return 404s.  Any article produced by the LLM path is
   //     display-only; only verified RSS/scrape articles should trigger alerts.
@@ -371,7 +399,7 @@ export function scoreArticle(article: Article): ScoredArticle {
     );
   }
 
-  const shouldAlert = sectionOk && score >= threshold && recentEnough && !isNoNewsFiller && !isAiGenerated && hasTrustedSource;
+  const shouldAlert = sectionOk && score >= threshold && recentEnough && !isNoNewsFiller && !isRegulatoryNonEvent && !isAiGenerated && hasTrustedSource;
 
   return { article, score, reasons, shouldAlert };
 }
