@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-21T17:10:01.765Z",
+  "updatedAt": "2026-07-21T17:40:15.000Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260720",
@@ -2867,18 +2867,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/21/asean-diplomats-voice-serious-concern-over-iran-war-and-energy-crisis?traffic_source=rss",
       "date": "July 21, 2026",
       "description": "Southeast Asian countries are highly affected by oil supply shortages caused by Iran war and Strait of Hormuz closure."
-    },
-    {
-      "title": "Iran war: Look beyond stocks to understand state of economy, experts say",
-      "url": "https://www.aljazeera.com/economy/2026/7/21/iran-war-look-beyond-stocks-to-understand-state-of-economy-experts-say?traffic_source=rss",
-      "date": "July 21, 2026",
-      "description": "Yields on 10-year US Treasury bills, a bellwether for inflation, are up 60 basis points since the start of the Iran war."
-    },
-    {
-      "title": "Hamas’s new leader must bridge a movement divided over Iran",
-      "url": "https://www.aljazeera.com/opinions/2026/7/21/hamass-new-leader-must-bridge-a-movement-divided-over-iran?traffic_source=rss",
-      "date": "July 21, 2026",
-      "description": "After a one-vote victory, Khalil al-Hayya must reconcile rival currents while preserving Hamas’s independence."
     }
   ],
   "occNews": [
@@ -2985,7 +2973,7 @@
   ],
   "regionsNews": [
     {
-      "title": "Trump slaps 50% tariffs on Canada and Carney vows to 'intensify' trade talks",
+      "title": "Carney looking at 'all options' as Trump announces 50% tariffs on Canada",
       "url": "https://www.bbc.co.uk/news/articles/cg4dzq3x3e1o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 21, 2026",
       "description": "The duties mark a major escalation in trade tensions between the North American neighbours."
@@ -3165,16 +3153,16 @@
       "description": "The water supplier's lenders are trying to prevent the company from being taken over by the Burnham government"
     },
     {
-      "title": "Ryanair broken window may have been caused by 'foreign object'",
-      "url": "https://www.bbc.co.uk/news/articles/cy9wq82q1pgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 21, 2026",
-      "description": "Passenger Ljubisa Karović was partially sucked out of a cabin window on the Boeing aircraft."
-    },
-    {
       "title": "Lindt's Easter chocolate sales fall after price hike",
       "url": "https://www.bbc.co.uk/news/articles/c74gxj937mmo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 21, 2026",
       "description": "The Swiss chocolate maker adjusts its strategy in response to weaker demand after its price rises."
+    },
+    {
+      "title": "Ryanair broken window may have been caused by 'foreign object'",
+      "url": "https://www.bbc.co.uk/news/articles/cy9wq82q1pgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 21, 2026",
+      "description": "Passenger Ljubisa Karović was partially sucked out of a cabin window on the Boeing aircraft."
     },
     {
       "title": "The 20-somethings betting big on tech stocks",
@@ -3201,7 +3189,13 @@
       "description": "Over 100 jobs are at risk after British Sugar announced plans to shut one of its four factories."
     },
     {
-      "title": "Trump slaps 50% tariffs on Canada and Carney vows to 'intensify' trade talks",
+      "title": "Union plans rail strikes over train safety concerns",
+      "url": "https://www.bbc.co.uk/news/articles/ce3q2kpkz84o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 21, 2026",
+      "description": "RMT says it has been in dispute with the rail operator since April, following the rollout of the 810 fleet."
+    },
+    {
+      "title": "Carney looking at 'all options' as Trump announces 50% tariffs on Canada",
       "url": "https://www.bbc.co.uk/news/articles/cg4dzq3x3e1o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 21, 2026",
       "description": "The duties mark a major escalation in trade tensions between the North American neighbours."
@@ -3295,12 +3289,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cr474z1qyn6o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 19, 2026",
       "description": "Ravika is one of hundreds of women who are noticing early pregnancy signs through the data on their fitness trackers."
-    },
-    {
-      "title": "Thames Water lenders preparing legal challenge in event of Burnham nationalisation",
-      "url": "https://www.bbc.co.uk/news/articles/cx278ed09nzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 19, 2026",
-      "description": "The BBC understands creditors would would pursue payment in full of the outstanding debts, in the multi-billions of pounds."
     },
     {
       "title": "This farmer wanted to quit the cocaine industry - he couldn't",
@@ -3405,6 +3393,12 @@
       "description": "What impact might shortages have on our summer holidays - and what could be done about it?"
     },
     {
+      "title": "Trump: 50% tariffs response to Canada's treatment of US farmers",
+      "url": "https://www.bbc.co.uk/news/videos/c3ek302pzdzo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 21, 2026",
+      "description": "This new round of duties on Canadian goods is fuelling speculation about a potential announcement of new US tariffs on countries across the world."
+    },
+    {
       "title": "Is the internet broken?",
       "url": "https://www.bbc.co.uk/videos/c0qv07pzyepo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 21, 2026",
@@ -3429,10 +3423,58 @@
       "description": "Emma joins Nuala McGovern to discuss her book Start With Yourself: A New Vision for Work and Life."
     },
     {
-      "title": "What are your rights if you buy something that breaks?",
-      "url": "https://www.bbc.co.uk/news/videos/c3r0lq9n14wo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 17, 2026",
-      "description": "Martin Lewis explains why you should go back to the item's retailer, not the manufacturer."
+      "title": "Where will LeBron James go next? NBA star ‘not rushed’ to make a decision",
+      "url": "https://www.aljazeera.com/sports/2026/7/21/where-will-lebron-james-go-next-nba-star-not-rushed-to-make-a-decision?traffic_source=rss",
+      "date": "July 21, 2026",
+      "description": "Reports have linked James to the Golden State Warriors, the Philadelphia 76ers, the Miami Heat, or the Cleveland Cavaliers."
+    },
+    {
+      "title": "Lebanon’s goal to end hostilities with Israel ‘forever’, says president",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/21/lebanons-goal-to-end-hostilities-with-israel-forever-says-president?traffic_source=rss",
+      "date": "July 21, 2026",
+      "description": "Lebanese President Aoun told Trump that Lebanon&#039;s “ultimate objective” is to end hostilities with Israel “forever”."
+    },
+    {
+      "title": "Salah to Besiktas? Football’s transfer window centre stage after World Cup",
+      "url": "https://www.aljazeera.com/sports/2026/7/21/salah-to-besiktas-footballs-transfer-window-centre-stage-after-world-cup?traffic_source=rss",
+      "date": "July 21, 2026",
+      "description": "Mohamed Salah&#039;s future tops the latest news, contract, salary rumours, and transfer agenda ahead of the new football season."
+    },
+    {
+      "title": "Greek-American tourists stabbed near the Acropolis",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/21/greek-american-tourists-stabbed-near-the-acropolis?traffic_source=rss",
+      "date": "July 21, 2026",
+      "description": "Police arrested a 60-year-old man on Tuesday after he allegedly stabbed two Greek-American tourists near the Acropolis."
+    },
+    {
+      "title": "An embattled coal terminal could be a lifeline for US coal",
+      "url": "https://www.aljazeera.com/economy/2026/7/21/an-embattled-coal-terminal-could-be-a-lifeline-for-us-coal?traffic_source=rss",
+      "date": "July 21, 2026",
+      "description": "West Oakland residents push legislation to block a coal terminal that could lead to air pollution in their area."
+    },
+    {
+      "title": "Trump vows to help Lebanon but offers no timeline for Israeli withdrawal",
+      "url": "https://www.aljazeera.com/news/2026/7/21/trump-vows-to-help-lebanon-but-offers-no-timeline-for-israeli-withdrawal?traffic_source=rss",
+      "date": "July 21, 2026",
+      "description": "Lebanese President Joseph Aoun says his goal is to end &#039;state of hostility between Lebanon and Israel forever&#039;."
+    },
+    {
+      "title": "Police detain Indian opposition leader Gandhi as protests continue to grow",
+      "url": "https://www.aljazeera.com/news/2026/7/21/police-arrest-indian-opposition-leader-gandhi-as-protests-continue-to-grow?traffic_source=rss",
+      "date": "July 21, 2026",
+      "description": "Detained while picketing PM&#039;s residence, Gandhi demands Modi&#039;s resignation for &#039;destroying the future of India&#039;s youth&#039;."
+    },
+    {
+      "title": "Civilians faced attacks, abuse in joint US-Ecuador operations, HRW says",
+      "url": "https://www.aljazeera.com/news/2026/7/21/civilians-faced-attacks-abuse-in-joint-us-ecuador-operations-hrw-says?traffic_source=rss",
+      "date": "July 21, 2026",
+      "description": "Report presents evidence civilian farmers, fisherman were caught up in anti-drug crime operations from January to March."
+    },
+    {
+      "title": "External review finds no wrongdoing in Gates Foundation–Epstein links",
+      "url": "https://www.aljazeera.com/economy/2026/7/21/external-review-finds-no-wrongdoing-in-gates-foundation-epstein?traffic_source=rss",
+      "date": "July 21, 2026",
+      "description": "Report notes foundation&#039;s interaction with US sex offender Epstein on donor fund and grant, but rules out wrongdoing."
     },
     {
       "title": "US appeals court overturns ruling that freed Columbia activist Mahdawi",
@@ -3505,48 +3547,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/21/trumps-new-50-percent-canada-tariffs-what-products-are-affected-and-why?traffic_source=rss",
       "date": "July 21, 2026",
       "description": "US leader imposes new sweeping tariffs on Canada, straining already tense ties with its second-largest trading partner."
-    },
-    {
-      "title": "Bodycam shows Florida student tased and arrested by campus police",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/21/bodycam-shows-florida-student-tased-and-arrested-by-campus-police?traffic_source=rss",
-      "date": "July 21, 2026",
-      "description": "Bodycam shows Florida student tased and arrested by campus police"
-    },
-    {
-      "title": "Baby trafficking ringleader jailed for 7 years",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/21/baby-trafficking-ringleader-jailed-for-7-years?traffic_source=rss",
-      "date": "July 21, 2026",
-      "description": "An Indonesian court has sentenced Lie Siu Luan to seven years in prison for leading a baby trafficking ring."
-    },
-    {
-      "title": "Mexican drug lord ‘El Mayo’ sentenced to life in US prison",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/21/mexican-drug-lord-el-mayo-sentenced-to-life-in-us-prison?traffic_source=rss",
-      "date": "July 21, 2026",
-      "description": "Mexican drug lord ‘El Mayo’ sentenced to life in US prison"
-    },
-    {
-      "title": "How a 64-team World Cup could transform football’s economics",
-      "url": "https://www.aljazeera.com/sports/2026/7/21/how-a-64-team-world-cup-could-transform-footballs-economics?traffic_source=rss",
-      "date": "July 21, 2026",
-      "description": "Spain, Portugal and Morocco are the cohosts of the 2030 edition, but we await confirmation of 48 or 64 competitors."
-    },
-    {
-      "title": "India’s ‘cockroach’ protest movement halts marches after police violence",
-      "url": "https://www.aljazeera.com/news/2026/7/21/indias-cockroach-protest-movement-halts-marches-after-police-violence?traffic_source=rss",
-      "date": "July 21, 2026",
-      "description": "Leaders of the movement say they will continue campaigning but will not stage another march through New Delhi."
-    },
-    {
-      "title": "Hunger is falling but is still higher than pre-COVID levels: UN report",
-      "url": "https://www.aljazeera.com/news/2026/7/21/hunger-is-falling-but-is-still-higher-than-pre-covid-levels-un-report?traffic_source=rss",
-      "date": "July 21, 2026",
-      "description": "Global hunger has declined, yet millions of people are still going hungry."
-    },
-    {
-      "title": "‘Won’t back down’: Indian student protesters return after police crackdown",
-      "url": "https://www.aljazeera.com/news/2026/7/21/wont-back-down-indian-student-protesters-return-after-police-crackdown?traffic_source=rss",
-      "date": "July 21, 2026",
-      "description": "More than 100 students injured in police action against thousands of demonstrators during march on parliament."
     }
   ]
 }
