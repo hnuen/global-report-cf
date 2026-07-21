@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-21T15:39:59.941Z",
+  "updatedAt": "2026-07-21T16:10:07.035Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260720",
@@ -2875,14 +2875,7 @@
       "description": "After a one-vote victory, Khalil al-Hayya must reconcile rival currents while preserving Hamas’s independence."
     }
   ],
-  "occNews": [
-    {
-      "title": "OCC Announces Enforcement Actions for July 2026",
-      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-59.html",
-      "date": "July 16, 2026",
-      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for July 2026."
-    }
-  ],
+  "occNews": [],
   "economicsNews": [
     {
       "title": "Minutes of the Board&#39;s discount rate meetings on June 8 and June 17, 2026",
@@ -2985,22 +2978,28 @@
       "description": "The duties mark a major escalation in trade tensions between the North American neighbours."
     },
     {
-      "title": "Lebanese army says troops deploying in 'pilot zone' after Israeli withdrawal",
-      "url": "https://www.bbc.co.uk/news/articles/cy8mynlmn55o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 21, 2026",
-      "description": "A US-brokered agreement should see Israeli troops pulling out of a small part of Lebanon occupied during their conflict with Hezbollah."
-    },
-    {
       "title": "Row escalates in Ukraine over army chief's future",
       "url": "https://www.bbc.co.uk/news/articles/c7vgel8374yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 21, 2026",
       "description": "Protesters are demanding Oleksandr Syrskyi be removed and former defence minister Mykhailo Fedorov reinstated by Friday."
     },
     {
+      "title": "Lebanese army says troops deploying in 'pilot zone' after Israeli withdrawal",
+      "url": "https://www.bbc.co.uk/news/articles/cy8mynlmn55o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 21, 2026",
+      "description": "A US-brokered agreement should see Israeli troops pulling out of a small part of Lebanon occupied during their conflict with Hezbollah."
+    },
+    {
       "title": "Dozens hurt in Bologna protests after man dies while being restrained by police",
       "url": "https://www.bbc.co.uk/news/articles/c86nwgw148xo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 21, 2026",
       "description": "Thousands of people took to the streets demanding justice for a Moroccan-born man who died on Sunday."
+    },
+    {
+      "title": "Brazil's Amazon sees sharp decline in size of area burned in 2025",
+      "url": "https://www.bbc.co.uk/news/articles/cqx78eplqqlo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 21, 2026",
+      "description": "The amount of land burned in the world's largest rainforest was the smallest since MapBiomas records began in 1985."
     },
     {
       "title": "Israeli air strike in Gaza City kills family of six, medics say",
@@ -3049,12 +3048,6 @@
       "url": "https://www.bbc.co.uk/news/articles/ce3q1d1ed5do?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 20, 2026",
       "description": "Known as \"El Mayo\", the co-founder the Sinaloa Cartel was also ordered to pay $15bn after he admitted to sending vast amounts of drugs to the US."
-    },
-    {
-      "title": "Rare identical quadruplets born in Australia",
-      "url": "https://www.bbc.co.uk/news/articles/cx2jnj3428lo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 20, 2026",
-      "description": "The parents of the four naturally conceived girls were taken by \"immense surprise\" with the pregnancy, the hospital said."
     },
     {
       "title": "Boy, 13, dies during World Cup celebrations in Spain",
@@ -3159,10 +3152,10 @@
       "description": "Passenger Ljubisa Karović was partially sucked out of a cabin window on the Boeing aircraft."
     },
     {
-      "title": "UK's first sugar factory at risk of closure",
-      "url": "https://www.bbc.co.uk/news/articles/c8dnq6v5pvgo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Lindt's Easter chocolate sales fall after price hike",
+      "url": "https://www.bbc.co.uk/news/articles/c74gxj937mmo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 21, 2026",
-      "description": "Over 100 jobs are at risk after British Sugar announced plans to shut one of its four factories."
+      "description": "The Swiss chocolate maker adjusts its strategy in response to weaker demand after its price rises."
     },
     {
       "title": "The 20-somethings betting big on tech stocks",
@@ -3177,6 +3170,12 @@
       "description": "Public finances for last month were better than expected but the UK is carrying major debt."
     },
     {
+      "title": "UK's first sugar factory at risk of closure",
+      "url": "https://www.bbc.co.uk/news/articles/c8dnq6v5pvgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 21, 2026",
+      "description": "Over 100 jobs are at risk after British Sugar announced plans to shut one of its four factories."
+    },
+    {
       "title": "Trump slaps 50% tariffs on Canada and Carney vows to 'intensify' trade talks",
       "url": "https://www.bbc.co.uk/news/articles/cg4dzq3x3e1o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 21, 2026",
@@ -3186,7 +3185,7 @@
       "title": "B&M fined £2m over serious food hygiene failings at Birmingham shops",
       "url": "https://www.bbc.co.uk/news/articles/cvgvxm1n3keo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 21, 2026",
-      "description": "Mouse droppings and gnawed food are found after inspections at three stores in the city."
+      "description": "Mouse droppings and gnawed food are found after inspections at three stores in Birmingham."
     },
     {
       "title": "What does an Andy Burnham-led government mean for your money?",
@@ -3283,12 +3282,6 @@
       "url": "https://www.bbc.co.uk/news/articles/ckg5gg6n9x3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 19, 2026",
       "description": "Ryanair has also warned passengers travelling to Europe this summer to prepare for extended waits."
-    },
-    {
-      "title": "Chinese firm seeks compensation over British Steel nationalisation",
-      "url": "https://www.bbc.co.uk/news/articles/cwyj4ppqn41o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 19, 2026",
-      "description": "Jingye said it will take action \"through legal means to the very end\" after the UK government nationalised British Steel."
     },
     {
       "title": "This farmer wanted to quit the cocaine industry - he couldn't",
@@ -3423,6 +3416,30 @@
       "description": "Martin Lewis explains why you should go back to the item's retailer, not the manufacturer."
     },
     {
+      "title": "US eyes new tariffs as existing trade duties near expiration",
+      "url": "https://www.aljazeera.com/economy/2026/7/21/us-eyes-new-tariffs-as-existing-trade-duties-near-expiration?traffic_source=rss",
+      "date": "July 21, 2026",
+      "description": "US Trade Rep Jamieson Greer hints at new tariffs on 60 trading partners as Trump&#039;s temporary tariffs expire on Friday."
+    },
+    {
+      "title": "Italy’s Meloni slams protesters following clashes in Bologna",
+      "url": "https://www.aljazeera.com/news/2026/7/21/italys-meloni-slams-protesters-following-clashes-in-bologna?traffic_source=rss",
+      "date": "July 21, 2026",
+      "description": "PM pledges probe into death of Moroccan man under police restraint, condemns violence as protests injure 56 officers."
+    },
+    {
+      "title": "UK PM Burnham: ‘We need to be a cost-of-living government’",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/21/uk-pm-burnham-we-need-to-be-a-cost-of-living?traffic_source=rss",
+      "date": "July 21, 2026",
+      "description": "At his first cabinet meeting as UK prime minister, Burnham told ministers they must be a &quot;cost-of-living government&quot;."
+    },
+    {
+      "title": "FIFA ‘destroying football’ for the World Cup, says Spanish football chief",
+      "url": "https://www.aljazeera.com/sports/2026/7/21/fifa-destroying-football-for-the-world-cup-says-spanish-football-chief?traffic_source=rss",
+      "date": "July 21, 2026",
+      "description": "In a scathing interview, La Liga President Javier Tebas says FIFA chief Gianni Infantino’s time is &#039;over&#039;."
+    },
+    {
       "title": "Saudi condemns Houthi blockade: How will the rest of the world be impacted?",
       "url": "https://www.aljazeera.com/news/2026/7/21/saudi-condemns-houthi-blockade-how-will-the-rest-of-the-world-be-impacted?traffic_source=rss",
       "date": "July 21, 2026",
@@ -3517,30 +3534,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/21/arizonas-primary-elections-which-us-races-to-watch-and-why-they-matter?traffic_source=rss",
       "date": "July 21, 2026",
       "description": "From the governor’s race to Democratic divisions over Gaza, here’s what could shape Arizona elections on Tuesday."
-    },
-    {
-      "title": "Lebanon’s Joseph Aoun to meet Trump: What to expect",
-      "url": "https://www.aljazeera.com/news/2026/7/21/lebanons-joseph-aoun-to-meet-trump-what-to-expect?traffic_source=rss",
-      "date": "July 21, 2026",
-      "description": "The Lebanese president is seeking Washington&#039;s support for his agenda, including diplomacy with Israel."
-    },
-    {
-      "title": "FIFA World Cup 2026: Who had the most goals and assists at the tournament?",
-      "url": "https://www.aljazeera.com/sports/2026/7/21/who-scored-the-most-goals-kept-clean-sheets-made-assists-fifa-world-cup-yellow-cards-saves?traffic_source=rss",
-      "date": "July 21, 2026",
-      "description": "FIFA’s biggest global showpiece saw 1,039 players from 48 nations play across 16 venues and score 308 goals."
-    },
-    {
-      "title": "Can AI systems make moral decisions in war?",
-      "url": "https://www.aljazeera.com/news/2026/7/21/can-ai-systems-make-moral-decisions-in-war?traffic_source=rss",
-      "date": "July 21, 2026",
-      "description": "As more militaries adopt AI technology into their kill chain, Al Jazeera asks if they are capable of moral judgement."
-    },
-    {
-      "title": "Andy Burnham to cut taxes on electricity bills, announces new UK cabinet",
-      "url": "https://www.aljazeera.com/news/2026/7/21/andy-burnham-to-cut-taxes-on-electricity-bills-announces-new-uk-cabinet?traffic_source=rss",
-      "date": "July 21, 2026",
-      "description": "Burnham is attempting to act quickly ​to deliver on promises to tackle the UK&#039;s cost-of-living crisis."
     }
   ]
 }
