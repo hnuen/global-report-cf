@@ -1802,4 +1802,65 @@ async function saveBriefingWithRetry(payload, merge = false) {
   console.log(`[refresh-briefing] ✅ Saved — ${saveData.articleCount} articles, lastUpdated: ${saveData.lastUpdated}`);
 }
 
+// ── Trusted-link enforcement ────────────────────────────────────────────────
+// Only ever show articles that link to a trusted destination: an official
+// government / intergovernmental site, OR a well-known media outlet. This
+// drops any article (Gemini-written or otherwise) whose sourceUrl is invented,
+// empty, or on an unknown domain — so the site never displays a fabricated
+// link. Gemini articles that DO cite a real gov / major-media link are kept as
+// a legitimate second opinion. Keep this list in sync with
+// src/lib/alert-scorer.ts's TRUSTED_MEDIA_DOMAINS (separate runtime).
+const TRUSTED_MEDIA_DOMAINS = [
+  // Wire services
+  "reuters.com", "apnews.com", "afp.com", "bloomberg.com",
+  // US broadcast / national
+  "cnn.com", "nbcnews.com", "cbsnews.com", "abcnews.go.com", "npr.org",
+  "pbs.org", "usatoday.com", "latimes.com",
+  // US print / business
+  "nytimes.com", "washingtonpost.com", "wsj.com", "cnbc.com", "marketwatch.com",
+  "barrons.com", "forbes.com", "fortune.com", "businessinsider.com",
+  "time.com", "theatlantic.com", "newsweek.com", "thehill.com",
+  "politico.com", "politico.eu", "axios.com", "semafor.com",
+  // UK / Europe
+  "bbc.com", "bbc.co.uk", "ft.com", "economist.com", "theguardian.com",
+  "telegraph.co.uk", "thetimes.co.uk", "independent.co.uk",
+  "dw.com", "france24.com", "euronews.com", "lemonde.fr", "spiegel.de",
+  // Middle East / Asia
+  "aljazeera.com", "scmp.com", "japantimes.co.jp", "straitstimes.com",
+  "thehindu.com", "indiatimes.com",
+  // Sanctions / compliance / national-security beat (this app's focus)
+  "law360.com", "globalinvestigationsreview.com", "complianceweek.com",
+  "occrp.org", "icij.org", "foreignpolicy.com", "foreignaffairs.com",
+  "lawfaremedia.org", "justsecurity.org",
+  // Aggregator — Google News item links redirect to the real outlet
+  "news.google.com",
+];
+function isTrustedSourceUrl(url) {
+  if (!url || url === "#") return false;
+  let host;
+  try { host = new URL(url).hostname.replace(/^www\./, "").toLowerCase(); } catch { return false; }
+  if (
+    host.endsWith(".gov") || host === "gov.uk" || host.endsWith(".gov.uk") ||
+    host === "europa.eu" || host.endsWith(".europa.eu") ||
+    host === "un.org" || host.endsWith(".un.org") || host.endsWith(".mil")
+  ) return true;
+  const extra = (process.env.ALERT_TRUSTED_DOMAINS ?? "").split(",").map(s => s.trim().toLowerCase()).filter(Boolean);
+  return [...TRUSTED_MEDIA_DOMAINS, ...extra].some(d => host === d || host.endsWith("." + d));
+}
+if (Array.isArray(briefing.articles)) {
+  const beforeTrust = briefing.articles.length;
+  const rejected = [];
+  briefing.articles = briefing.articles.filter(a => {
+    if (isTrustedSourceUrl(a.sourceUrl)) return true;
+    rejected.push(`${a.section ?? "?"}: ${a.sourceUrl || "(no link)"}`);
+    return false;
+  });
+  const droppedTrust = beforeTrust - briefing.articles.length;
+  if (droppedTrust > 0) {
+    console.log(`[refresh-briefing] Dropped ${droppedTrust} article(s) without a trusted gov/major-media link:`);
+    rejected.slice(0, 12).forEach(r => console.log(`    ✗ ${r.slice(0, 100)}`));
+  }
+  console.log(`[refresh-briefing] ${briefing.articles.length} articles remain, all with trusted official/media links`);
+}
+
 await saveBriefingWithRetry(briefing);

@@ -407,12 +407,32 @@ export function scoreArticle(article: Article): ScoredArticle {
 // ── Trusted alert sources ──────────────────────────────────────────────────────
 // Well-known media outlets whose links may appear via the RSS/Google News
 // feeds. Extend without redeploying via ALERT_TRUSTED_DOMAINS (comma-separated).
+// NOTE: keep this list identical to TRUSTED_MEDIA_DOMAINS in
+// .github/scripts/refresh-briefing.mjs (separate runtime, can't share import).
 const TRUSTED_MEDIA_DOMAINS = [
-  "reuters.com", "apnews.com", "bbc.com", "bbc.co.uk", "aljazeera.com",
-  "bloomberg.com", "ft.com", "wsj.com", "nytimes.com", "washingtonpost.com",
-  "theguardian.com", "cnbc.com", "cnn.com", "politico.com", "axios.com",
-  "economist.com",
-  "news.google.com", // Google News RSS item links — redirect to the real outlet
+  // Wire services
+  "reuters.com", "apnews.com", "afp.com", "bloomberg.com",
+  // US broadcast / national
+  "cnn.com", "nbcnews.com", "cbsnews.com", "abcnews.go.com", "npr.org",
+  "pbs.org", "usatoday.com", "latimes.com",
+  // US print / business
+  "nytimes.com", "washingtonpost.com", "wsj.com", "cnbc.com", "marketwatch.com",
+  "barrons.com", "forbes.com", "fortune.com", "businessinsider.com",
+  "time.com", "theatlantic.com", "newsweek.com", "thehill.com",
+  "politico.com", "politico.eu", "axios.com", "semafor.com",
+  // UK / Europe
+  "bbc.com", "bbc.co.uk", "ft.com", "economist.com", "theguardian.com",
+  "telegraph.co.uk", "thetimes.co.uk", "independent.co.uk",
+  "dw.com", "france24.com", "euronews.com", "lemonde.fr", "spiegel.de",
+  // Middle East / Asia
+  "aljazeera.com", "scmp.com", "japantimes.co.jp", "straitstimes.com",
+  "thehindu.com", "indiatimes.com",
+  // Sanctions / compliance / national-security beat (this app's focus)
+  "law360.com", "globalinvestigationsreview.com", "complianceweek.com",
+  "occrp.org", "icij.org", "foreignpolicy.com", "foreignaffairs.com",
+  "lawfaremedia.org", "justsecurity.org",
+  // Aggregator — Google News item links redirect to the real outlet
+  "news.google.com",
 ];
 
 /** True if the URL's host is an official gov/intergov domain or a well-known media outlet. */
