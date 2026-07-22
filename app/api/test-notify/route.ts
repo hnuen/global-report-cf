@@ -8,7 +8,13 @@
  * attacker looping it would drain the Twilio balance and spam every
  * subscriber.
  *
- * Returns: { ok, results: [{ channel, configured, success, error }] }
+ * Category-aware: pass ?category=economics (GET, repeatable or comma-separated)
+ * or { category: "economics" | ["economics","bis"] } (POST) to send a test in
+ * specific categories. With no category, one test per category is sent — so
+ * each subscriber receives a test for exactly the categories they're
+ * subscribed to, which verifies category routing end-to-end.
+ *
+ * Returns: { ok, testedCategories, results: [{ channel, configured, success, error }] }
  */
 
 import { NextRequest, NextResponse } from "next/server";
@@ -17,31 +23,32 @@ import { NtfyNotifier }       from "@/src/notifiers/ntfy";
 import { TwilioNotifier }     from "@/src/notifiers/twilio";
 import { WhatsAppNotifier }   from "@/src/notifiers/whatsapp";
 import type { ScoredArticle } from "@/src/lib/alert-scorer";
+import { ALERT_CATEGORIES, validateCategoryKeys, type AlertCategory } from "@/src/lib/alert-categories";
 
 export const dynamic = "force-dynamic";
 
 const appUrl = process.env.APP_URL ?? "https://global-report-cf.pages.dev";
 
-function makeTestArticle(): ScoredArticle {
+function makeTestArticle(cat: AlertCategory): ScoredArticle {
   return {
     score: 100,
     shouldAlert: true,
     reasons: ["test"],
     article: {
-      id: 9999,
-      section: "sanctions",
-      category: "OFAC",
+      id: 9000 + Math.max(0, ALERT_CATEGORIES.indexOf(cat)),
+      section: cat.sections[0] as ScoredArticle["article"]["section"], // representative section
+      category: cat.label,
       region: "Global",
       impact: "high",
       date: new Date().toLocaleDateString("en-US", {
         month: "long", day: "numeric", year: "numeric",
       }),
-      headline: "Test Alert — OFAC Sanctions Monitor is Active",
+      headline: `Test Alert — ${cat.label}`,
       body: [
-        "This is a test notification from your OFAC sanctions monitor.",
-        "If you received this, your alert channel is working correctly.",
+        `This is a test notification for the "${cat.label}" category.`,
+        "If you received this, your alert channel and category routing are working.",
       ],
-      source:    "OFAC Sanctions Monitor",
+      source:    "Global Report Monitor",
       sourceUrl: appUrl,
     },
   };
@@ -58,17 +65,20 @@ export async function GET(req: NextRequest) {
   if (!isAuthorised(req)) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
-  return handler();
+  const raw = new URL(req.url).searchParams.getAll("category").flatMap(c => c.split(","));
+  return handler(validateCategoryKeys(raw));
 }
 
 export async function POST(req: NextRequest) {
   if (!isAuthorised(req)) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
-  return handler();
+  const body = await req.json().catch(() => ({})) as { category?: string | string[]; categories?: string[] };
+  const raw = body.categories ?? (Array.isArray(body.category) ? body.category : body.category ? [body.category] : []);
+  return handler(validateCategoryKeys(raw));
 }
 
-async function handler() {
+async function handler(categoryKeys: string[]) {
   const notifiers = [
     new TelegramNotifier(),
     new NtfyNotifier(),
@@ -76,7 +86,12 @@ async function handler() {
     new WhatsAppNotifier(),
   ];
 
-  const payload = [makeTestArticle()];
+  // No category filter → test every category (one article each), so each
+  // subscriber gets a test for exactly the categories they subscribed to.
+  const cats = categoryKeys.length
+    ? ALERT_CATEGORIES.filter(c => categoryKeys.includes(c.key))
+    : ALERT_CATEGORIES;
+  const payload = cats.map(makeTestArticle);
   const results = [];
 
   for (const n of notifiers) {
@@ -92,5 +107,5 @@ async function handler() {
     }
   }
 
-  return NextResponse.json({ ok: true, results });
+  return NextResponse.json({ ok: true, testedCategories: cats.map(c => c.key), results });
 }
