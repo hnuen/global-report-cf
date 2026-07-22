@@ -244,6 +244,36 @@ function parseOfsiNotices(xml) {
   return entries;
 }
 
+// ── U.S. Treasury press releases — direct scrape ───────────────────────────
+// home.treasury.gov is reachable from GitHub Actions IPs. The listing wraps
+// each item's title in <a href=".../news/press-releases/sbNNNN">, so we get
+// the DIRECT per-release link. Without this scrape, Gemini writes Treasury
+// news from Google grounding and can only supply the generic listing URL,
+// leaving those articles with no direct link (reported 2026-07-21).
+function treasurySection(title) {
+  const t = (title || "").toLowerCase();
+  if (/sanction|designat|\bofac\b|illicit|terror|iran|russia|weapons?|network|ransomware|malware|\bsdn\b|blocked|shipping|procur/.test(t)) return "sanctions";
+  return "economics";
+}
+function parseTreasuryNews(html) {
+  if (!html) return [];
+  const out = [];
+  const seen = new Set();
+  const re = /<a[^>]+href="(https:\/\/home\.treasury\.gov\/news\/press-releases\/sb\d+)"[^>]*>([\s\S]*?)<\/a>/gi;
+  let m;
+  while ((m = re.exec(html)) !== null) {
+    const url = m[1];
+    const title = m[2].replace(/<[^>]+>/g, "").replace(/&amp;/g, "&").replace(/&#\d+;/g, " ").replace(/&nbsp;/g, " ").replace(/\s+/g, " ").trim();
+    if (!title || title.length < 15 || seen.has(url)) continue;
+    // Nearest date string in the markup just before this title.
+    const before = html.slice(Math.max(0, m.index - 260), m.index).replace(/<[^>]+>/g, " ");
+    const dm = before.match(/\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+20\d{2}\b/g);
+    seen.add(url);
+    out.push({ date: dm ? dm[dm.length - 1] : "", title, url });
+  }
+  return out.slice(0, 12);
+}
+
 // ── Generic RSS 2.0 <item> parser — shared by EU, UN, BBC, and Al Jazeera ──
 // feeds below. All four are standard RSS, so one parser + a keyword filter
 // covers them; only OFSI (Atom, above) needs its own <entry> format.
@@ -667,6 +697,12 @@ const ofsiXml = await fetchOfac("https://www.gov.uk/search/news-and-communicatio
 const ofsiNotices = parseOfsiNotices(ofsiXml);
 console.log(`[refresh-briefing] OFSI notices parsed: ${ofsiNotices.length} entries`);
 ofsiNotices.slice(0, 5).forEach(e => console.log(`  ${e.date} — ${e.title} (${e.url})`));
+
+console.log("[refresh-briefing] Fetching U.S. Treasury press releases...");
+const treasuryHtml = await fetchOfac("https://home.treasury.gov/news/press-releases");
+const treasuryNews = parseTreasuryNews(treasuryHtml);
+console.log(`[refresh-briefing] Treasury press releases parsed: ${treasuryNews.length} entries`);
+treasuryNews.slice(0, 5).forEach(e => console.log(`  ${e.date} — ${e.title} (${e.url})`));
 
 console.log("[refresh-briefing] Fetching EU (Europa/DG FISMA) finance news feed...");
 const europaXml = await fetchOfac("https://finance.ec.europa.eu/node/1408/rss_en");
@@ -1697,12 +1733,41 @@ const regionsInjected = injectExtra(regionsNews, entry => ({
   sourceUrl: entry.url,
 }));
 
-const extraInjected = [...ofsiInjected, ...europaInjected, ...unInjected, ...bbcInjected, ...ajInjected, ...occInjected, ...economicsInjected, ...bisInjected, ...regionsInjected];
+// U.S. Treasury press releases — real per-release sbNNNN links from the
+// direct scrape above. First drop any Gemini article that only carries the
+// generic listing URL (no direct link) — the scrape replaces those. Only
+// strip when the scrape actually returned items, so a failed fetch degrades
+// to Gemini's generic-link version rather than dropping Treasury news.
+if (treasuryNews.length > 0 && Array.isArray(briefing.articles)) {
+  const beforeT = briefing.articles.length;
+  briefing.articles = briefing.articles.filter(a => {
+    const u = (a.sourceUrl || "").replace(/\/+$/, "");
+    return u !== "https://home.treasury.gov/news/press-releases"
+        && u !== "https://home.treasury.gov/news";
+  });
+  const dropped = beforeT - briefing.articles.length;
+  if (dropped > 0) console.log(`[refresh-briefing] Dropped ${dropped} Treasury article(s) with only the generic listing URL (replaced by direct-link scrape)`);
+}
+const treasuryInjected = injectExtra(treasuryNews, entry => ({
+  section: treasurySection(entry.title),
+  category: "U.S. Treasury",
+  region: "United States",
+  impact: "high",
+  date: entry.date || "",
+  headline: entry.title,
+  body: [
+    `The U.S. Department of the Treasury published: "${entry.title}". Full details are available at home.treasury.gov.`,
+  ],
+  source: "U.S. Treasury",
+  sourceUrl: entry.url,
+}));
+
+const extraInjected = [...ofsiInjected, ...europaInjected, ...unInjected, ...bbcInjected, ...ajInjected, ...occInjected, ...economicsInjected, ...bisInjected, ...regionsInjected, ...treasuryInjected];
 if (extraInjected.length > 0) {
   const baseId2 = (briefing.articles?.length ?? 0) + 1;
   extraInjected.forEach((a, i) => { a.id = baseId2 + i; });
   briefing.articles = [...(briefing.articles ?? []), ...extraInjected];
-  console.log(`[refresh-briefing] Injected ${ofsiInjected.length} OFSI + ${europaInjected.length} EU + ${unInjected.length} UN + ${bbcInjected.length} BBC + ${ajInjected.length} Al Jazeera + ${occInjected.length} OCC + ${economicsInjected.length} Fed + ${bisInjected.length} BIS + ${regionsInjected.length} Regions entries — total articles: ${briefing.articles.length}`);
+  console.log(`[refresh-briefing] Injected ${ofsiInjected.length} OFSI + ${europaInjected.length} EU + ${unInjected.length} UN + ${bbcInjected.length} BBC + ${ajInjected.length} Al Jazeera + ${occInjected.length} OCC + ${economicsInjected.length} Fed + ${bisInjected.length} BIS + ${regionsInjected.length} Regions + ${treasuryInjected.length} Treasury entries — total articles: ${briefing.articles.length}`);
 }
 
 // ── POST to /api/save-briefing (retry once on failure) ─────────────────────
