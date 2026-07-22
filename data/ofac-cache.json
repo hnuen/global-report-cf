@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-22T13:10:05.572Z",
+  "updatedAt": "2026-07-22T13:40:22.968Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260720",
@@ -2885,18 +2885,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/22/iran-gulf-hit-as-hormuz-bab-al-mandeb-close-whats-the-latest?traffic_source=rss",
       "date": "July 22, 2026",
       "description": "Defense Secretary Pete Hegseth tells US senators that the war has cost the US $37.5bn so far."
-    },
-    {
-      "title": "US ‘open’ to negotiations with Iran but Tehran not ‘serious’, Rubio says",
-      "url": "https://www.aljazeera.com/news/2026/7/22/us-open-to-negotiations-with-iran-but-tehran-not-serious-rubio-says?traffic_source=rss",
-      "date": "July 22, 2026",
-      "description": "US Secretary of State says Iranian control over Strait of Hormuz sets &#039;dangerous precedent&#039;, as attacks continue."
-    },
-    {
-      "title": "Air defences activate in Iran and flames rise from US attacks",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/22/air-defences-activate-in-iran-and-flames-rise-from-us-attacks?traffic_source=rss",
-      "date": "July 22, 2026",
-      "description": "Explosions could be heard over Tehran as the US army said it had completed its 11th consecutive day of strikes on Iran."
     }
   ],
   "occNews": [
@@ -3003,6 +2991,12 @@
   ],
   "regionsNews": [
     {
+      "title": "US to announce deal allowing Saudi Arabia a nuclear programme, reports say",
+      "url": "https://www.bbc.co.uk/news/articles/cj03r59z73po?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 22, 2026",
+      "description": "The agreement would fulfil a long-held Saudi ambition but could attract concern in Israel and from some US lawmakers."
+    },
+    {
       "title": "Zelensky sacks Ukraine's top army commander after days of protests",
       "url": "https://www.bbc.co.uk/news/articles/cyvl35z3917o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 22, 2026",
@@ -3045,16 +3039,16 @@
       "description": "Officials say the restaurant in South Korea used some 49,000 ants in various dishes over four years."
     },
     {
-      "title": "Cocaine worth $370m seized in Liberia's biggest-ever drugs bust",
-      "url": "https://www.bbc.co.uk/news/articles/cyvl3zgr3v4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 22, 2026",
-      "description": "The seizure follows a long-running investigation into drug-trafficking networks, police say."
-    },
-    {
       "title": "Rebel Wilson cleared in defamation case brought by actress in her own film",
       "url": "https://www.bbc.co.uk/news/articles/c80nv4eevero?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 22, 2026",
       "description": "Wilson was accused of defaming young Australian actress Charlotte MacInnes, but cleared by a Sydney court."
+    },
+    {
+      "title": "Cocaine worth $370m seized in Liberia's biggest-ever drugs bust",
+      "url": "https://www.bbc.co.uk/news/articles/cyvl3zgr3v4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 22, 2026",
+      "description": "The seizure follows a long-running investigation into drug-trafficking networks, police say."
     },
     {
       "title": "Gruesome images in D4vd hearing are 'worst nightmare' for teen girl's family",
@@ -3129,22 +3123,22 @@
       "description": "The BBC speaks to people around the country about their view on the newly-announced bus fare cap."
     },
     {
-      "title": "Most bus fares in England to be capped at £2 from January",
-      "url": "https://www.bbc.co.uk/news/articles/cz64l78n5vpo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 22, 2026",
-      "description": "The government says the policy will \"help with the cost of living and give people the breathing space they need\""
-    },
-    {
       "title": "Will your job be replaced by AI? Here are the roles most affected",
       "url": "https://www.bbc.co.uk/news/articles/cn7nllr4vd6o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 22, 2026",
       "description": "Artificial Intelligence companies make vast claims about their tools replacing human labour - our charts show what's happening."
     },
     {
-      "title": "Ex-Southern Water boss charged with conspiracy to defraud over water tests",
+      "title": "Most bus fares in England to be capped at £2 from January",
+      "url": "https://www.bbc.co.uk/news/articles/cz64l78n5vpo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 22, 2026",
+      "description": "The government says the policy will \"help with the cost of living and give people the breathing space they need\""
+    },
+    {
+      "title": "Ex-Southern Water boss charged over alleged plan to manipulate water tests",
       "url": "https://www.bbc.co.uk/news/articles/c36d0njy7jjo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 22, 2026",
-      "description": "The former boss is among four charged over an alleged plan to manipulate water quality tests"
+      "description": "Matthew Wright is accused of trying to save the company millions of pounds in penalties."
     },
     {
       "title": "What does an Andy Burnham-led government mean for your money?",
@@ -3387,6 +3381,12 @@
       "description": "What impact might shortages have on our summer holidays - and what could be done about it?"
     },
     {
+      "title": "Bus travellers respond to fare reduction",
+      "url": "https://www.bbc.co.uk/news/videos/c62vq3v42e6o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 22, 2026",
+      "description": "'It's going to help us' - public respond to bus fare cut."
+    },
+    {
       "title": "Transport secretary quizzed on bus fare change",
       "url": "https://www.bbc.co.uk/news/videos/cdrv08vjknko?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 22, 2026",
@@ -3405,10 +3405,46 @@
       "description": "This new round of duties on Canadian goods is fuelling speculation about a potential announcement of new US tariffs on countries across the world."
     },
     {
-      "title": "Is the internet broken?",
-      "url": "https://www.bbc.co.uk/videos/c0qv07pzyepo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 21, 2026",
-      "description": "75% of the world is online, and in many ways it makes all our lives better. But faced with AI slop, misinformation and toxicity, many people are asking: Is there a better way?"
+      "title": "Israeli strike leaves two Palestinians burnt beyond recognition",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/22/israeli-strike-leaves-two-palestinians-burnt-beyond-recognition?traffic_source=rss",
+      "date": "July 22, 2026",
+      "description": "An Israeli strike hit a civilian vehicle in central Gaza, killing two Palestinians."
+    },
+    {
+      "title": "The Indian football tournament where goats replace trophies",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/22/the-indian-football-tournament-where-goats-replace-trophies?traffic_source=rss",
+      "date": "July 22, 2026",
+      "description": "GOATs are not players, but prizes at this football tournament in eastern India."
+    },
+    {
+      "title": "English FA charges Southampton coach Tonda Eckert over ‘spygate’ scandal",
+      "url": "https://www.aljazeera.com/sports/2026/7/22/english-fa-charges-southampton-coach-tonda-eckert-over-spygate-scandal?traffic_source=rss",
+      "date": "July 22, 2026",
+      "description": "Allegations of spying on rivals led to Southampton&#039;s expulsion from the Championship playoff final."
+    },
+    {
+      "title": "‘This land will remain ours’ says a resident in Lebanon’s ‘pilot zone’",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/22/this-land-will-remain-ours-says-a-resident-in-lebanons-pilot?traffic_source=rss",
+      "date": "July 22, 2026",
+      "description": "‘This land will remain ours’ says a resident in Lebanon’s ‘pilot zone’"
+    },
+    {
+      "title": "‘Just want to go back’: Lebanese await return as army enters ‘pilot zone’",
+      "url": "https://www.aljazeera.com/news/2026/7/22/just-want-to-go-back-lebanese-await-return-as-army-enters-pilot-zone?traffic_source=rss",
+      "date": "July 22, 2026",
+      "description": "Lebanese army deploys into southern Lebanon&#039;s Zawtar al-Gharbiya as implementation of US-brokered framework deal begins."
+    },
+    {
+      "title": "Zelenskyy replaces Ukraine’s commander-in-chief after days of protests",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/22/zelenskyy-replaces-ukraines-commander-in-chief-after-days-of-protests?traffic_source=rss",
+      "date": "July 22, 2026",
+      "description": "Zelenskyy replaces Ukraine’s commander-in-chief after days of protests"
+    },
+    {
+      "title": "Settlers attack Palestinian towns in occupied West Bank",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/22/settlers-attack-palestinian-towns-in-occupied-west-bank?traffic_source=rss",
+      "date": "July 22, 2026",
+      "description": "Settlers attack Palestinian towns in Occupied West Bank"
     },
     {
       "title": "Can the Suez save Asian oil consumers after Houthis shut Bab al-Mandeb?",
@@ -3469,36 +3505,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/22/al-jazeera-reports-from-anti-us-protest-outside-asean-summit?traffic_source=rss",
       "date": "July 22, 2026",
       "description": "Al Jazeera reports from anti-US protest outside ASEAN summit"
-    },
-    {
-      "title": "Mexico goalkeeper Guillermo Ochoa retires after 22-year career",
-      "url": "https://www.aljazeera.com/sports/2026/7/22/mexico-goalkeeper-guillermo-ochoa-retires-after-22-year-career?traffic_source=rss",
-      "date": "July 22, 2026",
-      "description": "The 41-year-old, who played in six FIFA World Cups, announces he will retire from both club and country."
-    },
-    {
-      "title": "Chelsea signs Morgan Rogers from Aston Villa in record British deal",
-      "url": "https://www.aljazeera.com/sports/2026/7/22/chelsea-sign-morgan-rogers-from-aston-villa-in-record-british-deal?traffic_source=rss",
-      "date": "July 22, 2026",
-      "description": "The 23-year-old Rogers, one of the Premier League&#039;s top attacking talents, has signed a contract until 2033."
-    },
-    {
-      "title": "Rabat demands answers after Moroccan man dies during arrest in Italy",
-      "url": "https://www.aljazeera.com/news/2026/7/22/rabat-demands-answers-after-moroccan-man-dies-during-arrest-in-italy?traffic_source=rss",
-      "date": "July 22, 2026",
-      "description": "Italian Prime Minister Meloni says truth must be &#039;pursued to the very end&#039; after death of Abderrahim Fakir in Bologna."
-    },
-    {
-      "title": "FIFA World Cup final draws record viewership in United States",
-      "url": "https://www.aljazeera.com/sports/2026/7/22/fifa-world-cup-final-draws-record-viewership-in-united-states?traffic_source=rss",
-      "date": "July 22, 2026",
-      "description": "Figures reveal that viewership remained strong even after the USA were eliminated from tournament."
-    },
-    {
-      "title": "Algeria: Toxic colonisation",
-      "url": "https://www.aljazeera.com/video/featured-documentaries/2026/7/22/algeria-toxic-colonisation?traffic_source=rss",
-      "date": "July 22, 2026",
-      "description": "The French army’s illegal use of chemical weapons in Algeria’s war of independence, as revealed by testimony and documents."
     }
   ]
 }
