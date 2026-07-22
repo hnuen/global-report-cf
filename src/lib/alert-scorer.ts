@@ -140,8 +140,15 @@ const CATEGORY_BOOSTS: Record<string, number> = {
 // bypassed by a high score.
 // undefined → default "today only" calendar-day gate (see header comment).
 // Set ALERT_MAX_AGE_HOURS to opt back into the old rolling-hours behaviour.
+// Default 48h rolling window: an action alerts if it's dated within the last
+// 48 hours, not just today. Closes the "discovered a day late" gap where an
+// action published yesterday but first scraped today would never alert under a
+// today-only gate. Duplicate sends are prevented separately by the per-article
+// 7-day cooldown (keyed on sourceUrl), so a wider window doesn't re-alert the
+// same item. Override with ALERT_MAX_AGE_HOURS (e.g. "0" would be today-ish;
+// set a larger number for a longer catch-up window).
 const ALERT_MAX_AGE_HOURS: number | undefined =
-  process.env.ALERT_MAX_AGE_HOURS !== undefined ? Number(process.env.ALERT_MAX_AGE_HOURS) : undefined;
+  process.env.ALERT_MAX_AGE_HOURS !== undefined ? Number(process.env.ALERT_MAX_AGE_HOURS) : 48;
 
 const MONTH_NUM: Record<string, number> = {
   january: 1, february: 2, march: 3, april: 4, may: 5, june: 6,
@@ -233,10 +240,14 @@ export function scoreArticle(article: Article): ScoredArticle {
     reasons.push(`${article.category} category (+${catBoost})`);
   }
 
-  // 3. Built-in keyword matches (search headline + first paragraph)
+  // 3. Built-in keyword matches — search the headline + the FULL body, not just
+  // the first paragraph. Media articles often bury the sanctions-relevant term
+  // (e.g. "designated", "export ban", "OFAC") below the lede, so a title-and-
+  // first-line-only scan under-scored genuinely relevant coverage.
+  const bodyText = Array.isArray(article.body) ? article.body.join(" ") : String(article.body ?? "");
   const searchText = [
     article.headline,
-    article.body[0] ?? "",
+    bodyText,
     article.category,
     article.region,
   ].join(" ").toLowerCase();

@@ -129,7 +129,7 @@ async function verifyAlertUrls(
 async function runMonitor(topic?: string, force = false) {
   const appUrl = process.env.APP_URL ?? "";
   const cooldownMinutes = Number(process.env.ALERT_COOLDOWN_MINUTES ?? 10080);
-  const maxAlertsPerRun = Number(process.env.ALERT_MAX_PER_RUN ?? 3);
+  const maxAlertsPerRun = Number(process.env.ALERT_MAX_PER_RUN ?? 5);
 
   // 1. Load existing briefing from Redis
   let briefing;
