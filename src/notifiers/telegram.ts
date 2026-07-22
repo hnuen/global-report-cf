@@ -19,6 +19,7 @@ import type { Notifier, NotifyResult } from "./types";
 import type { ScoredArticle }          from "../lib/alert-scorer";
 import { formatAlert, formatDigest }   from "./format";
 import { listApprovedByChannel }       from "../lib/subscribers";
+import { mergeRecipients, articlesForSections } from "../lib/alert-categories";
 
 export class TelegramNotifier implements Notifier {
   id   = "telegram";
@@ -41,18 +42,24 @@ export class TelegramNotifier implements Notifier {
     // approved one-by-one via the site owner's email. Failure here (e.g.
     // Redis unreachable) must not block the static-list send, hence the catch.
     const approved = await listApprovedByChannel("telegram").catch(() => []);
-    const dynamicChatIds = approved.map(s => s.telegramChatId).filter((id): id is string => !!id);
-    const chatIds = Array.from(new Set([...staticChatIds, ...dynamicChatIds]));
+    const dynamic = approved
+      .filter(s => !!s.telegramChatId)
+      .map(s => ({ to: s.telegramChatId as string, sections: s.sections }));
+    // Each recipient carries the sections they subscribed to (env-var chat IDs
+    // get everything). Merge + dedupe, then send each only their categories.
+    const recipients = mergeRecipients(staticChatIds, dynamic);
     const digest  = process.env.TELEGRAM_DIGEST_MODE === "true";
 
     const url = `https://api.telegram.org/bot${token}/sendMessage`;
     let sent = 0;
 
-    const messages: string[] = digest
-      ? [formatDigest(articles, appUrl).markdown]
-      : articles.map(a => formatAlert(a, appUrl).markdown);
-
-    for (const chatId of chatIds) {
+    for (const recipient of recipients) {
+      const mine = articlesForSections(articles, recipient.sections);
+      if (mine.length === 0) continue; // nothing in this recipient's categories
+      const chatId = recipient.to;
+      const messages: string[] = digest
+        ? [formatDigest(mine, appUrl).markdown]
+        : mine.map(a => formatAlert(a, appUrl).markdown);
       for (const text of messages) {
         try {
           const res = await fetch(url, {

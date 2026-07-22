@@ -25,6 +25,7 @@ import type { Notifier, NotifyResult } from "./types";
 import type { ScoredArticle }          from "../lib/alert-scorer";
 import { formatAlert }                 from "./format";
 import { listApprovedByChannel }       from "../lib/subscribers";
+import { mergeRecipients, articlesForSections } from "../lib/alert-categories";
 
 export class WhatsAppNotifier implements Notifier {
   id   = "whatsapp";
@@ -46,10 +47,12 @@ export class WhatsAppNotifier implements Notifier {
     const staticNumbers = (process.env.ALERT_WHATSAPP_TO_NUMBERS ?? "")
       .split(",").map(n => n.trim()).filter(Boolean);
     const approved = await listApprovedByChannel("whatsapp").catch(() => []);
-    const dynamicNumbers = approved.map(s => s.phone).filter((p): p is string => !!p);
-    const toNumbers = Array.from(new Set([...staticNumbers, ...dynamicNumbers]));
+    const dynamic = approved
+      .filter(s => !!s.phone)
+      .map(s => ({ to: s.phone as string, sections: s.sections }));
+    const recipients = mergeRecipients(staticNumbers, dynamic);
 
-    if (toNumbers.length === 0) {
+    if (recipients.length === 0) {
       return {
         channel: this.name,
         success: false,
@@ -63,11 +66,14 @@ export class WhatsAppNotifier implements Notifier {
     let sent   = 0;
     let lastError = "";
 
-    for (const sa of articles) {
-      const { plain } = formatAlert(sa, appUrl);
-      const body = plain.slice(0, 1500); // WhatsApp allows much longer bodies than SMS
+    for (const recipient of recipients) {
+      const mine = articlesForSections(articles, recipient.sections);
+      if (mine.length === 0) continue; // nothing in this recipient's categories
+      const to = recipient.to;
 
-      for (const to of toNumbers) {
+      for (const sa of mine) {
+        const { plain } = formatAlert(sa, appUrl);
+        const body = plain.slice(0, 1500); // WhatsApp allows much longer bodies than SMS
         try {
           const res = await fetch(url, {
             method: "POST",
@@ -99,7 +105,7 @@ export class WhatsAppNotifier implements Notifier {
       success: sent > 0,
       recipients: sent,
       error: sent === 0
-        ? `0/${toNumbers.length} delivered — last Twilio error: ${lastError || "none"}`
+        ? `0 delivered — last Twilio error: ${lastError || "no articles matched any recipient's categories"}`
         : undefined,
     };
   }

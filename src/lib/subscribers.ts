@@ -38,6 +38,9 @@ export interface Subscriber {
   telegramChatId?: string;   // filled in once they /start the bot
   telegramLinkCode?: string; // random code embedded in the t.me deep link
   ntfyTopic?: string;        // server-generated random topic, emailed after approval
+  sections?: string[];       // internal sections this subscriber wants alerts for
+                             // (expanded from their chosen categories). Empty/
+                             // undefined = all (legacy subs predate categories).
   status: SubscriberStatus;
   token: string;             // unguessable — used in the approve/deny email links
   createdAt: number;
@@ -74,6 +77,7 @@ export async function createPhoneSubscriber(
   phone: string,
   name?: string,
   email?: string,
+  sections?: string[],
 ): Promise<Subscriber> {
   const redis = await getRedis();
   const sub: Subscriber = {
@@ -82,6 +86,7 @@ export async function createPhoneSubscriber(
     phone,
     name,
     email,
+    sections,
     status: "pending_approval",
     token: newToken(),
     createdAt: Date.now(),
@@ -96,6 +101,7 @@ export async function createPhoneSubscriber(
 export async function createNtfySubscriber(
   name?: string,
   email?: string,
+  sections?: string[],
 ): Promise<Subscriber> {
   const redis = await getRedis();
   // Generate a hard-to-guess topic — subscriber gets it emailed after approval
@@ -106,6 +112,7 @@ export async function createNtfySubscriber(
     ntfyTopic,
     name,
     email,
+    sections,
     status: "pending_approval",
     token: newToken(),
     createdAt: Date.now(),
@@ -124,7 +131,7 @@ export async function createNtfySubscriber(
  * approval email is NOT sent yet — see linkTelegramChat() below, which
  * fires it once the chat_id is actually known.
  */
-export async function createTelegramSubscriber(name?: string, email?: string): Promise<Subscriber> {
+export async function createTelegramSubscriber(name?: string, email?: string, sections?: string[]): Promise<Subscriber> {
   const redis = await getRedis();
   const linkCode = newLinkCode();
   const sub: Subscriber = {
@@ -132,6 +139,7 @@ export async function createTelegramSubscriber(name?: string, email?: string): P
     channel: "telegram",
     name,
     email,
+    sections,
     telegramLinkCode: linkCode,
     status: "pending_telegram_link",
     token: newToken(),
@@ -219,6 +227,19 @@ export async function revokeSubscriber(id: string): Promise<Subscriber | null> {
   const sub = await getSubscriber(id);
   if (!sub || sub.status !== "approved") return null;
   sub.status = "revoked";
+  await saveSubscriber(sub);
+  return sub;
+}
+
+/**
+ * Admin override of which sections a subscriber is authorised to receive.
+ * `sections` are internal section values (already expanded from categories by
+ * the caller). Returns the updated record, or null if the id doesn't exist.
+ */
+export async function updateSubscriberSections(id: string, sections: string[]): Promise<Subscriber | null> {
+  const sub = await getSubscriber(id);
+  if (!sub) return null;
+  sub.sections = sections;
   await saveSubscriber(sub);
   return sub;
 }

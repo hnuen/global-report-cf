@@ -9,7 +9,8 @@
  *   ADMIN_SECRET — required; sent by the admin page as the x-admin-secret header
  */
 import { NextRequest, NextResponse } from "next/server";
-import { listAllSubscribers, revokeSubscriber, deleteSubscriber } from "@/src/lib/subscribers";
+import { listAllSubscribers, revokeSubscriber, deleteSubscriber, updateSubscriberSections } from "@/src/lib/subscribers";
+import { validateCategoryKeys, categoriesToSections } from "@/src/lib/alert-categories";
 
 export const dynamic = "force-dynamic";
 
@@ -59,4 +60,28 @@ export async function DELETE(req: NextRequest) {
     return NextResponse.json({ error: "Not found" }, { status: 404 });
   }
   return NextResponse.json({ ok: true });
+}
+
+/**
+ * PATCH — admin overrides which alert categories a subscriber is authorised for.
+ * Body: { id, categories: string[] }. At least one valid category required.
+ */
+export async function PATCH(req: NextRequest) {
+  if (!isAuthorised(req)) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+  const body = await req.json().catch(() => ({})) as { id?: string; categories?: string[] };
+  if (!body.id) {
+    return NextResponse.json({ error: "Missing id" }, { status: 400 });
+  }
+  const categories = validateCategoryKeys(body.categories);
+  if (categories.length === 0) {
+    return NextResponse.json({ error: "Select at least one category" }, { status: 400 });
+  }
+  const sections = categoriesToSections(categories);
+  const sub = await updateSubscriberSections(body.id, sections);
+  if (!sub) {
+    return NextResponse.json({ error: "Not found" }, { status: 404 });
+  }
+  return NextResponse.json({ ok: true, subscriber: sub });
 }

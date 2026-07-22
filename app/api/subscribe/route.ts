@@ -9,6 +9,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { createPhoneSubscriber, createTelegramSubscriber, createNtfySubscriber, type SubscriberChannel } from "@/src/lib/subscribers";
 import { sendApprovalEmail, isApprovalEmailConfigured } from "@/src/lib/approval-email";
 import { checkRateLimit, getClientIp } from "@/src/lib/rate-limit";
+import { validateCategoryKeys, categoriesToSections } from "@/src/lib/alert-categories";
 
 export const dynamic = "force-dynamic";
 
@@ -24,6 +25,7 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json().catch(() => ({})) as {
       channel?: string; phone?: string; name?: string; email?: string; website?: string;
+      categories?: string[];
     };
 
     // Honeypot — same pattern as /api/contact: real users never see/fill
@@ -51,6 +53,18 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "That email address doesn't look valid." }, { status: 400 });
     }
 
+    // Category selection is required — the subscriber must choose at least one
+    // alert category. Expand the chosen categories to internal sections, which
+    // is what the notifier dispatch filters on.
+    const categories = validateCategoryKeys(body.categories);
+    if (categories.length === 0) {
+      return NextResponse.json(
+        { error: "Please choose at least one alert category." },
+        { status: 400 }
+      );
+    }
+    const sections = categoriesToSections(categories);
+
     if (!["telegram", "whatsapp", "sms", "ntfy"].includes(channel)) {
       return NextResponse.json({ error: "channel must be telegram, whatsapp, sms, or ntfy" }, { status: 400 });
     }
@@ -63,7 +77,7 @@ export async function POST(request: NextRequest) {
           { status: 503 }
         );
       }
-      const sub = await createTelegramSubscriber(name, email);
+      const sub = await createTelegramSubscriber(name, email, sections);
       const telegramDeepLink = `https://t.me/${botUsername}?start=${sub.telegramLinkCode}`;
       return NextResponse.json({
         ok: true,
@@ -75,7 +89,7 @@ export async function POST(request: NextRequest) {
 
     // ntfy — topic is generated server-side and emailed after approval
     if (channel === "ntfy") {
-      const sub = await createNtfySubscriber(name, email);
+      const sub = await createNtfySubscriber(name, email, sections);
       if (!isApprovalEmailConfigured()) {
         return NextResponse.json({
           ok: true, status: sub.status,
@@ -99,7 +113,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const sub = await createPhoneSubscriber(channel as "whatsapp" | "sms", phone, name, email);
+    const sub = await createPhoneSubscriber(channel as "whatsapp" | "sms", phone, name, email, sections);
 
     if (!isApprovalEmailConfigured()) {
       // Subscriber is still saved as pending_approval — just nobody got

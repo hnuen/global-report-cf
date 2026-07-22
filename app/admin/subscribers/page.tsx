@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, Fragment } from "react";
+import { ALERT_CATEGORIES, describeSections, sectionsToCategoryKeys } from "@/src/lib/alert-categories";
 
 type SubscriberStatus =
   | "pending_telegram_link"
@@ -17,6 +18,7 @@ interface Subscriber {
   email?: string;
   telegramChatId?: string;
   ntfyTopic?: string;
+  sections?: string[];
   status: SubscriberStatus;
   createdAt: number;
   approvedAt?: number;
@@ -50,6 +52,39 @@ export default function AdminSubscribersPage() {
   const [error, setError] = useState<string | null>(null);
   const [revokingId, setRevokingId] = useState<string | null>(null);
   const [removingId, setRemovingId] = useState<string | null>(null);
+  const [editingId, setEditingId] = useState<string | null>(null);
+  const [editCats, setEditCats] = useState<string[]>([]);
+  const [savingId, setSavingId] = useState<string | null>(null);
+
+  function startEdit(s: Subscriber) {
+    setEditingId(s.id);
+    setEditCats(sectionsToCategoryKeys(s.sections));
+    setError(null);
+  }
+  const toggleEditCat = (key: string) =>
+    setEditCats(prev => (prev.includes(key) ? prev.filter(k => k !== key) : [...prev, key]));
+
+  async function saveCats(id: string) {
+    setSavingId(id);
+    try {
+      const res = await fetch("/api/admin/subscribers", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json", "x-admin-secret": secret },
+        body: JSON.stringify({ id, categories: editCats }),
+      });
+      if (res.ok) {
+        setEditingId(null);
+        await load(secret);
+      } else {
+        const d = await res.json().catch(() => ({}));
+        setError(d.error ?? "Failed to save categories.");
+      }
+    } catch {
+      setError("Network error — please try again.");
+    } finally {
+      setSavingId(null);
+    }
+  }
 
   async function load(s: string) {
     setLoading(true);
@@ -219,13 +254,15 @@ export default function AdminSubscribersPage() {
                     <th style={{ padding: "8px 6px" }}>Channel</th>
                     <th style={{ padding: "8px 6px" }}>Contact</th>
                     <th style={{ padding: "8px 6px" }}>Status</th>
+                    <th style={{ padding: "8px 6px" }}>Categories</th>
                     <th style={{ padding: "8px 6px" }}>Requested</th>
                     <th style={{ padding: "8px 6px" }} />
                   </tr>
                 </thead>
                 <tbody>
                   {subs.map(s => (
-                    <tr key={s.id} style={{ borderBottom: "1px solid #ddd" }}>
+                    <Fragment key={s.id}>
+                    <tr style={{ borderBottom: editingId === s.id ? "none" : "1px solid #ddd" }}>
                       <td style={{ padding: "8px 6px" }}>{s.name || "—"}</td>
                       <td style={{ padding: "8px 6px", textTransform: "capitalize" }}>
                         {s.channel === "sms" ? "SMS" : s.channel}
@@ -239,10 +276,28 @@ export default function AdminSubscribersPage() {
                       <td style={{ padding: "8px 6px", color: STATUS_COLOR[s.status], fontWeight: 500 }}>
                         {STATUS_LABEL[s.status]}
                       </td>
+                      <td style={{ padding: "8px 6px", color: "#555", maxWidth: 170 }}>
+                        {describeSections(s.sections)}
+                      </td>
                       <td style={{ padding: "8px 6px", color: "#777" }}>
                         {new Date(s.createdAt).toLocaleDateString()}
                       </td>
-                      <td style={{ padding: "8px 6px", textAlign: "right" }}>
+                      <td style={{ padding: "8px 6px", textAlign: "right", whiteSpace: "nowrap" }}>
+                        <button
+                          onClick={() => (editingId === s.id ? setEditingId(null) : startEdit(s))}
+                          style={{
+                            background: "none",
+                            border: "1px solid #999",
+                            color: "#555",
+                            borderRadius: 4,
+                            padding: "6px 12px",
+                            fontSize: 13,
+                            cursor: "pointer",
+                            marginRight: 6,
+                          }}
+                        >
+                          {editingId === s.id ? "Close" : "Categories"}
+                        </button>
                         {s.status === "approved" && (
                           <button
                             onClick={() => revoke(s.id)}
@@ -279,6 +334,42 @@ export default function AdminSubscribersPage() {
                         )}
                       </td>
                     </tr>
+                    {editingId === s.id && (
+                      <tr style={{ borderBottom: "1px solid #ddd" }}>
+                        <td colSpan={7} style={{ padding: "4px 6px 16px", background: "#faf7f2" }}>
+                          <div style={{ display: "flex", flexWrap: "wrap", gap: 14, alignItems: "center" }}>
+                            <span style={{ fontSize: 13, color: "#555", fontWeight: 500 }}>Authorize:</span>
+                            {ALERT_CATEGORIES.map(c => (
+                              <label key={c.key} style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 13, cursor: "pointer" }}>
+                                <input
+                                  type="checkbox"
+                                  checked={editCats.includes(c.key)}
+                                  onChange={() => toggleEditCat(c.key)}
+                                />
+                                {c.label}
+                              </label>
+                            ))}
+                            <button
+                              onClick={() => saveCats(s.id)}
+                              disabled={savingId === s.id || editCats.length === 0}
+                              style={{
+                                background: ACCENT,
+                                border: "none",
+                                color: "#fff",
+                                borderRadius: 4,
+                                padding: "6px 14px",
+                                fontSize: 13,
+                                cursor: savingId === s.id || editCats.length === 0 ? "default" : "pointer",
+                                opacity: editCats.length === 0 ? 0.5 : 1,
+                              }}
+                            >
+                              {savingId === s.id ? "Saving…" : "Save"}
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    )}
+                    </Fragment>
                   ))}
                 </tbody>
               </table>

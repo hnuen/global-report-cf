@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { css, SECTIONS, LABELS } from "../AppContent";
+import { ALERT_CATEGORIES } from "@/src/lib/alert-categories";
 
 type Channel = "telegram" | "whatsapp" | "sms" | "ntfy";
 
@@ -16,18 +17,26 @@ export default function SubscribePage() {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
+  const [categories, setCategories] = useState<string[]>([]);
   const [busy, setBusy] = useState(false);
   const [result, setResult] = useState<{ ok: boolean; message: string; deepLink?: string } | null>(null);
 
+  const toggleCategory = (key: string) =>
+    setCategories(prev => (prev.includes(key) ? prev.filter(k => k !== key) : [...prev, key]));
+
   async function submit(e: React.FormEvent) {
     e.preventDefault();
+    if (categories.length === 0) {
+      setResult({ ok: false, message: "Please choose at least one alert category." });
+      return;
+    }
     setBusy(true);
     setResult(null);
     try {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ channel, phone, email, name }),
+        body: JSON.stringify({ channel, phone, email, name, categories }),
       });
       const data = await res.json();
       if (!res.ok) {
@@ -163,6 +172,28 @@ export default function SubscribePage() {
                   Required — we'll email your private ntfy topic after approval.
                 </p>
               )}
+
+              <label style={{ display: "block", fontSize: 14, marginBottom: 6, marginTop: 18, fontWeight: 500 }}>
+                Which alerts do you want? <span style={{ color: ACCENT }}>*</span>
+              </label>
+              <div style={{ display: "flex", flexDirection: "column", gap: 8, marginBottom: 4 }}>
+                {ALERT_CATEGORIES.map(c => (
+                  <label
+                    key={c.key}
+                    style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 14, cursor: "pointer" }}
+                  >
+                    <input
+                      type="checkbox"
+                      checked={categories.includes(c.key)}
+                      onChange={() => toggleCategory(c.key)}
+                    />
+                    {c.label}
+                  </label>
+                ))}
+              </div>
+              <p style={{ fontSize: 12, color: MUTED, marginTop: 4, marginBottom: 0 }}>
+                Choose at least one — you'll only receive alerts for the categories you pick.
+              </p>
 
               <label style={{ display: "block", fontSize: 14, marginBottom: 6, marginTop: 18, fontWeight: 500 }}>
                 How should we reach you?

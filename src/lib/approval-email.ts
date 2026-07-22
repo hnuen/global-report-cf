@@ -24,6 +24,7 @@
 import type { Subscriber } from "./subscribers";
 import { sendEmail } from "./email";
 import { escapeHtml } from "./escape-html";
+import { describeSections } from "./alert-categories";
 
 /** After approving an ntfy subscriber, email them their generated topic name. */
 export async function sendNtfyTopicEmail(sub: Subscriber): Promise<{ ok: boolean; error?: string }> {
@@ -106,6 +107,7 @@ export async function sendApprovalEmail(sub: Subscriber): Promise<{ ok: boolean;
     "",
     `Channel: ${describeSubscriber(sub)}`,
     sub.name ? `Name: ${sub.name}` : "",
+    `Categories: ${describeSections(sub.sections)}`,
     `Requested: ${new Date(sub.createdAt).toLocaleString()}`,
     "",
     `Approve: ${approveUrl}`,
@@ -119,6 +121,7 @@ export async function sendApprovalEmail(sub: Subscriber): Promise<{ ok: boolean;
     <p>
       <b>Channel:</b> ${escapeHtml(describeSubscriber(sub))}<br/>
       ${sub.name ? `<b>Name:</b> ${escapeHtml(sub.name)}<br/>` : ""}
+      <b>Categories:</b> ${escapeHtml(describeSections(sub.sections))}<br/>
       <b>Requested:</b> ${new Date(sub.createdAt).toLocaleString()}
     </p>
     <p>
