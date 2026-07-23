@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23T19:40:07.505Z",
+  "updatedAt": "2026-07-23T20:10:09.785Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260723",
@@ -2826,7 +2826,14 @@
       "description": "These new measures aim at further increasing the pressure on Russia and Belarus and supporting EU's goal of achieving a just and lasting peace for Ukraine."
     }
   ],
-  "unNotices": [],
+  "unNotices": [
+    {
+      "title": "Security Council Committee concerning Libya Adds One Vessel to Its Sanctions List",
+      "url": "https://press.un.org/en/2026/sc16421.doc.htm",
+      "date": "July 23, 2026",
+      "description": "On 22 July 2026, the Committee approved the addition of one entry specified below to its List of individuals and entities subject to the assets freeze, travel ban and other measures relating to attempts to illicitly export petroleum, including crude oil and refined petroleum products, from Libya (the Libya Sanctions List), set out in paragraphs 15 and/or 17 of Security Council resolution 1970 (2011) and/or paragraph 19 of resolution 1973 (2011), or paragraph 10 of resolution 2146 (2014) as amended by paragraph 2 of resolutions 2441 (2018) and 2509 (2020) and extended in resolution 2819 (2026), adopted under Chapter VII of the Charter of the United Nations:"
+    }
+  ],
   "bbcNews": [
     {
       "title": "Yemen's Houthis attack Saudi tanker as US launches more Iran strikes",
@@ -2883,12 +2890,6 @@
       "url": "https://www.aljazeera.com/opinions/2026/7/23/the-missing-half-of-mediation?traffic_source=rss",
       "date": "July 23, 2026",
       "description": "The future of diplomacy between the US and Iran depends on giving mediators the backing needed to make agreements stick."
-    },
-    {
-      "title": "Has Russia helped Iran target CIA sites in the Gulf?",
-      "url": "https://www.aljazeera.com/news/2026/7/23/has-russia-helped-iran-target-cia-sites-in-the-gulf?traffic_source=rss",
-      "date": "July 23, 2026",
-      "description": "Reports of Iran targeting sites belonging to the US&#039;s CIA first emerged in the early days of the Iran war."
     }
   ],
   "occNews": [
@@ -3413,6 +3414,12 @@
       "url": "https://www.bbc.co.uk/news/videos/cdrv08vjknko?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 22, 2026",
       "description": "Labour MP is asked about the lowering of the bus fare cap, after Starmer increased it in 2025."
+    },
+    {
+      "title": "Journalist killed in Mexico after years of exposing corruption",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/23/journalist-killed-in-mexico-after-years-of-exposing-corruption?traffic_source=rss",
+      "date": "July 23, 2026",
+      "description": "Mexican journalist Alejandro Leyva Aguilar was shot dead while eating at a street food stall in Oaxaca."
     },
     {
       "title": "Resumption of oil exports: Will Yemen recover its economic lifeline?",
