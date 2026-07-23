@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23T16:10:00.246Z",
+  "updatedAt": "2026-07-23T17:10:17.180Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260720",
@@ -2832,6 +2832,12 @@
       "description": "Ukrainian drones have hit several retail warehouses belonging to Russia's biggest online retailer Wildberries in a matter of days."
     },
     {
+      "title": "Houthi attacks raise fears of wider Middle East conflict and more global economic damage",
+      "url": "https://www.bbc.co.uk/news/articles/cvgve0vxy1yo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 23, 2026",
+      "description": "The Iran-backed group in Yemen has threatened to target Saudi vessels in a vital shipping route."
+    },
+    {
       "title": "'What was their crime?': BBC visits Iran school where strike killed 120 children",
       "url": "https://www.bbc.co.uk/news/articles/cewrx0ldlkko?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 23, 2026",
@@ -2845,6 +2851,18 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "US House votes to limit Iran war for first time since ceasefire breakdown",
+      "url": "https://www.aljazeera.com/news/2026/7/23/us-house-votes-to-limit-iran-war-for-first-time-since-ceasefire-breakdown?traffic_source=rss",
+      "date": "July 23, 2026",
+      "description": "The Senate was also expected to vote on War Powers resolution, in largely symbolic move attempting to reign in Trump."
+    },
+    {
+      "title": "The missing half of mediation",
+      "url": "https://www.aljazeera.com/opinions/2026/7/23/the-missing-half-of-mediation?traffic_source=rss",
+      "date": "July 23, 2026",
+      "description": "The future of diplomacy between the US and Iran depends on giving mediators the backing needed to make agreements stick."
+    },
     {
       "title": "Has Russia helped Iran target CIA sites in the Gulf?",
       "url": "https://www.aljazeera.com/news/2026/7/23/has-russia-helped-iran-target-cia-sites-in-the-gulf?traffic_source=rss",
@@ -2868,18 +2886,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/23/several-killed-as-ukraine-russia-trade-attacks-deep-behind-the-front-line?traffic_source=rss",
       "date": "July 23, 2026",
       "description": "Four have been killed by Russian strikes in Ukraine, while four others died in Russia and Crimea, according to reports."
-    },
-    {
-      "title": "Rubio says US policy on Iran is ‘a head for an eye’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/23/rubio-says-us-policy-on-iran-is-a-head-for-an?traffic_source=rss",
-      "date": "July 23, 2026",
-      "description": "Rubio says US policy on Iran is ‘a head for an eye’"
-    },
-    {
-      "title": "Rubio says Iran ‘begging’ for a deal with US but not ready to make one",
-      "url": "https://www.aljazeera.com/news/2026/7/23/rubio-says-iran-begging-for-a-deal-with-us-but-not-ready-to-make-one?traffic_source=rss",
-      "date": "July 23, 2026",
-      "description": "Secretary of state says US has &#039;a head for an eye&#039; policy as strikes hit Iran for a 12th straight night."
     }
   ],
   "occNews": [
@@ -3016,22 +3022,16 @@
       "description": "Sonam Wangchuk has been the main draw at the Cockroach Janta Party (CJP) protest in Delhi."
     },
     {
+      "title": "Teen jailed for exam cheating in Guinea dies after sickle cell complications, father says",
+      "url": "https://www.bbc.co.uk/news/articles/cn0nykz6lweo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 23, 2026",
+      "description": "Mamadou Djouma Bah, 17, was arrested and sentenced to prison for exam fraud earlier this month."
+    },
+    {
       "title": "Canada's 'powerful' dairy sector is in Trump's trade crosshairs",
       "url": "https://www.bbc.co.uk/news/articles/ce8kvm84lxmo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 23, 2026",
-      "description": "Canada's dairy supply management system is in the spotlight after the US president singled it out as one of three main irritants used to justify new tariffs."
-    },
-    {
-      "title": "Nicaragua's legislature debates barring opposition from elections",
-      "url": "https://www.bbc.co.uk/news/articles/cd694w0l30do?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 23, 2026",
-      "description": "The move comes days after President Daniel Ortega demanded 'a wall, a blockade' against opposition parties."
-    },
-    {
-      "title": "South Korea woman acquitted of murdering newborn after hospital delivery",
-      "url": "https://www.bbc.co.uk/news/articles/cwyrj7ww1gko?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 23, 2026",
-      "description": "The woman, who had wanted to end her pregnancy at 36 weeks, gave birth to a baby who doctors later killed."
+      "description": "Canada's industry is in the spotlight after the US president singled it out as one of three main irritants used to justify new tariffs."
     },
     {
       "title": "'Let's enjoy the ride' says Elon Musk, as AI fears mount",
@@ -3040,16 +3040,34 @@
       "description": "Talking to The Economist, Musk said he doesn't care if people hate him and said he was not a racist."
     },
     {
-      "title": "Ghanaians' ICC petition over migrant attacks 'opportunistic', says South Africa",
-      "url": "https://www.bbc.co.uk/news/articles/cp87qejzy8go?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Nicaragua's legislature debates barring opposition from elections",
+      "url": "https://www.bbc.co.uk/news/articles/cd694w0l30do?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 23, 2026",
-      "description": "The petition argues the violence against migrants in South Africa could amount to crimes against humanity."
+      "description": "The move comes days after President Daniel Ortega demanded 'a wall, a blockade' against opposition parties."
+    },
+    {
+      "title": "Ex-governor convicted of murdering a pregnant student in Kenya",
+      "url": "https://www.bbc.co.uk/news/articles/cvg9l039ljyo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 23, 2026",
+      "description": "Okoth Obado was found guilty of killing Sharon Otieno with whom he had had an affair."
     },
     {
       "title": "Blocked by censors, China's animal lovers take fight against abuse offline and overseas",
       "url": "https://www.bbc.co.uk/news/articles/cqx7wd3x420o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 23, 2026",
       "description": "The killing of a dog and her puppies in Guangdong has sparked outrage inside and outside the country."
+    },
+    {
+      "title": "South Korea woman acquitted of murdering newborn after hospital delivery",
+      "url": "https://www.bbc.co.uk/news/articles/cwyrj7ww1gko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 23, 2026",
+      "description": "The woman, who had wanted to end her pregnancy at 36 weeks, gave birth to a baby who doctors later killed."
+    },
+    {
+      "title": "Ghanaians' ICC petition over migrant attacks 'opportunistic', says South Africa",
+      "url": "https://www.bbc.co.uk/news/articles/cp87qejzy8go?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 23, 2026",
+      "description": "The petition argues the violence against migrants in South Africa could amount to crimes against humanity."
     },
     {
       "title": "Wreckage of Pan Am plane that shaped aviation safety found 74 years on",
@@ -3086,12 +3104,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c3ek3l9gp7go?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 22, 2026",
       "description": "For 'cockroach' protesters, reels and memes became a way of documenting fear, making sense of violence and refusing to let it have the last word."
-    },
-    {
-      "title": "Tankers make sharp U-turns after Houthi shipping threat",
-      "url": "https://www.bbc.co.uk/news/articles/cn0n127lpzgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 22, 2026",
-      "description": "All of the ships were travelling to or from Saudi ports before changing course, ship-tracking data shows."
     },
     {
       "title": "A year after deadly jet crash at Bangladesh school, families demand answers",
@@ -3310,16 +3322,16 @@
       "description": "Energy grids and train services are among the vital services that are vulnerable to very hot weather."
     },
     {
-      "title": "Business rate cut not enough, says Michelin-star chef",
-      "url": "https://www.bbc.co.uk/news/articles/ceqe91pnn7eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 23, 2026",
-      "description": "Alex Claridge, owner of The Wilderness in Birmingham, said the proposal did not go far enough."
-    },
-    {
       "title": "Burnham says 20% business rates cut for English pubs 'a first step'",
       "url": "https://www.bbc.co.uk/news/articles/cq6dg816464o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 23, 2026",
       "description": "Some hospitality firms will get a discount from next April but hotels and restaurants won't get a cut."
+    },
+    {
+      "title": "Business rate cut not enough, says Michelin-star chef",
+      "url": "https://www.bbc.co.uk/news/articles/ceqe91pnn7eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 23, 2026",
+      "description": "Alex Claridge, owner of The Wilderness in Birmingham, said the proposal did not go far enough."
     },
     {
       "title": "Help for electricity bills as crude oil nears $100",
@@ -3392,6 +3404,36 @@
       "url": "https://www.bbc.co.uk/news/videos/cdrv08vjknko?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 22, 2026",
       "description": "Labour MP is asked about the lowering of the bus fare cap, after Starmer increased it in 2025."
+    },
+    {
+      "title": "Lebanon Latest: President Aoun visits White House to discuss Hezbollah",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/23/lebanon-latest-president-aoun-visits-white-house-to-discuss-hezbollah?traffic_source=rss",
+      "date": "July 23, 2026",
+      "description": "Al Jazeera’s Zeina Khodr brings you the latest from Beirut."
+    },
+    {
+      "title": "Lebanon Latest: President Aoun visits White House to discuss Hezbollah",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/23/lebanon-latest-president-aoun-visits-white-house-to-discuss-hezbollah-2?traffic_source=rss",
+      "date": "July 23, 2026",
+      "description": "Al Jazeera’s Zeina Khodr brings you the latest from Beirut after Lebanon’s President meets with Donald Trump."
+    },
+    {
+      "title": "Yemen faces a new challenge amid prospects of confrontation",
+      "url": "https://www.aljazeera.com/news/2026/7/23/yemen-faces-a-new-challenge-amid-prospects-of-confrontation?traffic_source=rss",
+      "date": "July 23, 2026",
+      "description": "What is the military balance of power in Yemen and the likelihood of confrontation between the government and Houthis?"
+    },
+    {
+      "title": "Norway Viking Row gets ‘resign’ twist in ‘Cockroach’ protest",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/23/norway-viking-row-gets-resign-twist-in-cockroach-protest?traffic_source=rss",
+      "date": "July 23, 2026",
+      "description": "Cockroach Janty Party-led protesters in Mumbai, India recreated Norway’s viral Viking Row, replacing ‘ro’ with ‘resign’."
+    },
+    {
+      "title": "Two Palestinians shot dead by Israeli forces as West Bank fields set ablaze",
+      "url": "https://www.aljazeera.com/news/2026/7/23/two-palestinians-shot-dead-by-israeli-forces-as-west-bank-fields-set-ablaze?traffic_source=rss",
+      "date": "July 23, 2026",
+      "description": "Two men were killed in the town of Beit Furik, east of Nablus. An Israeli settler was also reportedly stabbed."
     },
     {
       "title": "In India, fear has switched sides",
@@ -3476,36 +3518,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/23/eu-hits-google-with-new-1bn-fine-saying-it-broke-digital-antitrust-rules?traffic_source=rss",
       "date": "July 23, 2026",
       "description": "The fine is part of a major crackdown on Big Tech by Brussels which says it is seeking to ensure fair competition."
-    },
-    {
-      "title": "Israel releases 35 detainees from Gaza",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/23/israel-releases-35-detainees-from-gaza?traffic_source=rss",
-      "date": "July 23, 2026",
-      "description": "Israel releases 35 detainees from Gaza"
-    },
-    {
-      "title": "Why a North Sea oilfield is emerging as British PM Burnham’s big test",
-      "url": "https://www.aljazeera.com/news/2026/7/23/why-a-north-sea-oilfield-is-emerging-as-british-pm-burnhams-big-test?traffic_source=rss",
-      "date": "July 23, 2026",
-      "description": "Reports suggesting the new British PM might allow drilling in the North Sea have excited Donald Trump, divided locals."
-    },
-    {
-      "title": "Women’s Africa Cup of Nations 2026: What to know about the tournament",
-      "url": "https://www.aljazeera.com/sports/2026/7/23/womens-africa-cup-of-nations-2026-wafcon-what-to-know-about-the-tournament?traffic_source=rss",
-      "date": "July 23, 2026",
-      "description": "Tournament format, venues, title favourites, groups, prize money and players to watch at the 2026 WAFCON in Morocco."
-    },
-    {
-      "title": "Right-wing Israeli groups storm Al-Aqsa as Palestinians barred from worship",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/23/right-wing-israeli-groups-storm-al-aqsa-as-palestinians-barred-from-worship?traffic_source=rss",
-      "date": "July 23, 2026",
-      "description": "Israeli police barred Palestinians from entering Al-Aqsa Mosque as more than 2,300 right-wing Israelis entered."
-    },
-    {
-      "title": "Norway to make formal complaint to FIFA over Balogun red card saga",
-      "url": "https://www.aljazeera.com/sports/2026/7/23/norway-to-make-formal-complaint-to-fifa-over-balogun-red-card-saga?traffic_source=rss",
-      "date": "July 23, 2026",
-      "description": "FIFA overturned the suspension for a red card for the USA forward at the World Cup after a request from President Trump."
     }
   ]
 }
