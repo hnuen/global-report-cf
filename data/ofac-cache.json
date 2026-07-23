@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23T14:10:16.517Z",
+  "updatedAt": "2026-07-23T14:40:15.763Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260720",
@@ -2813,10 +2813,10 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "Houthis claim attack on oil tankers as US launches more strikes on Iran",
+      "title": "Yemen's Houthis attack Saudi tanker as US launches more Iran strikes",
       "url": "https://www.bbc.co.uk/news/articles/cpw9xzx9r4ko?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 23, 2026",
-      "description": "The Houthi attacks would be the first in the Red Sea since the Iran-backed group announced a \"maritime embargo\" against Saudi Arabia."
+      "description": "The Iran-backed group, which previously announced a \"maritime embargo\" against Saudi Arabia, also claims to have hit another vessel."
     },
     {
       "title": "Russia's businesses under strain from Ukraine's attacks on Wildberries",
@@ -2844,6 +2844,12 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Has Russia helped Iran target CIA sites in the Gulf?",
+      "url": "https://www.aljazeera.com/news/2026/7/23/has-russia-helped-iran-target-cia-sites-in-the-gulf?traffic_source=rss",
+      "date": "July 23, 2026",
+      "description": "Reports of Iran targeting sites belonging to the US&#039;s CIA first emerged in the early days of the Iran war."
+    },
     {
       "title": "Can Iran withstand new pressure from the US?",
       "url": "https://www.aljazeera.com/video/project-force-2/2026/7/23/can-iran-withstand-new-pressure-from-the-us?traffic_source=rss",
@@ -2991,6 +2997,12 @@
   ],
   "regionsNews": [
     {
+      "title": "Oil prices hit $100 for the first time since May",
+      "url": "https://www.bbc.co.uk/news/articles/cx2djnzrqk2o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 23, 2026",
+      "description": "The price of Brent crude rose more than 5% on Thursday as the war in the Middle East continues to escalate."
+    },
+    {
       "title": "Saudis must recognise Israel for nuclear deal, says Trump",
       "url": "https://www.bbc.co.uk/news/articles/cwye71yq8wwo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 23, 2026",
@@ -3021,28 +3033,28 @@
       "description": "The woman, who had wanted to end her pregnancy at 36 weeks, gave birth to a baby who doctors later killed."
     },
     {
-      "title": "Ghanaians' ICC petition over migrant attacks 'opportunistic', says South Africa",
-      "url": "https://www.bbc.co.uk/news/articles/cp87qejzy8go?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 23, 2026",
-      "description": "The petition argues the violence against migrants in South Africa could amount to crimes against humanity."
-    },
-    {
       "title": "'Let's enjoy the ride' says Elon Musk, as AI fears mount",
       "url": "https://www.bbc.co.uk/news/articles/c4gkxppljpyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 23, 2026",
       "description": "Talking to The Economist, Musk said he doesn't care if people hate him and said he was not a racist."
     },
     {
-      "title": "Blocked by censors, China's animal lovers take fight against abuse offline and overseas",
-      "url": "https://www.bbc.co.uk/news/articles/cqx7wd3x420o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 23, 2026",
-      "description": "The killing of a dog and her puppies in Guangdong has sparked outrage inside and outside the country."
-    },
-    {
       "title": "Google burning through cash with spiralling AI costs",
       "url": "https://www.bbc.co.uk/news/articles/c235n47g8g8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 23, 2026",
       "description": "The company said earlier this year it expected to spend as much as $190bn on AI investments."
+    },
+    {
+      "title": "Ghanaians' ICC petition over migrant attacks 'opportunistic', says South Africa",
+      "url": "https://www.bbc.co.uk/news/articles/cp87qejzy8go?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 23, 2026",
+      "description": "The petition argues the violence against migrants in South Africa could amount to crimes against humanity."
+    },
+    {
+      "title": "Blocked by censors, China's animal lovers take fight against abuse offline and overseas",
+      "url": "https://www.bbc.co.uk/news/articles/cqx7wd3x420o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 23, 2026",
+      "description": "The killing of a dog and her puppies in Guangdong has sparked outrage inside and outside the country."
     },
     {
       "title": "Wreckage of Pan Am plane that shaped aviation safety found 74 years on",
@@ -3129,16 +3141,22 @@
       "description": "The price of Brent crude rose more than 5% on Thursday as the war in the Middle East continues to escalate."
     },
     {
+      "title": "Pubs cheer business rates relief while other firms 'left out in the cold'",
+      "url": "https://www.bbc.co.uk/news/articles/clyvnz4489wo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 23, 2026",
+      "description": "Pubs welcomed the support package, while other High Street firms asked why they were left out."
+    },
+    {
       "title": "Gary Lineker among millionaires asking Andy Burnham to tax them more",
       "url": "https://www.bbc.co.uk/news/articles/cvgjp79m42go?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 23, 2026",
       "description": "A group including the former England footballer write to the new PM telling him \"we can afford it\"."
     },
     {
-      "title": "Government to cut business rates for pubs, clubs and music venues",
+      "title": "Burnham calls 20% business rates cut for English pubs 'a first step'",
       "url": "https://www.bbc.co.uk/news/articles/cq6dg816464o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 23, 2026",
-      "description": "Some hospitality firms will get a 20% discount from next April, saving an estimated £1,100."
+      "description": "Some hospitality firms will get a discount from next April but hotels and restaurants won't get a cut."
     },
     {
       "title": "Airport drop-off fees up by a third - here are the priciest",
@@ -3297,16 +3315,16 @@
       "description": "Energy grids and train services are among the vital services that are vulnerable to very hot weather."
     },
     {
+      "title": "Burnham calls 20% business rates cut for English pubs 'a first step'",
+      "url": "https://www.bbc.co.uk/news/articles/cq6dg816464o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 23, 2026",
+      "description": "Some hospitality firms will get a discount from next April but hotels and restaurants won't get a cut."
+    },
+    {
       "title": "Help for electricity bills as crude oil nears $100",
       "url": "https://www.bbc.co.uk/news/articles/c4gd9kypkjlo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 23, 2026",
       "description": "The States of Guernsey said it would give Alderney Electricity £200,000 to offset islanders' bills."
-    },
-    {
-      "title": "Government to cut business rates for pubs, clubs and music venues",
-      "url": "https://www.bbc.co.uk/news/articles/cq6dg816464o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 23, 2026",
-      "description": "Some hospitality firms will get a 20% discount from next April, saving an estimated £1,100."
     },
     {
       "title": "Business rate cut not enough, says Michelin-star chef",
@@ -3379,6 +3397,18 @@
       "url": "https://www.bbc.co.uk/news/videos/cdrv08vjknko?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 22, 2026",
       "description": "Labour MP is asked about the lowering of the bus fare cap, after Starmer increased it in 2025."
+    },
+    {
+      "title": "How shipping insurance rates are rising, as Hormuz, Bab al-Mandeb shut down",
+      "url": "https://www.aljazeera.com/economy/2026/7/23/how-shipping-insurance-rates-are-rising-as-hormuz-bab-al-mandeb-shut-down?traffic_source=rss",
+      "date": "July 23, 2026",
+      "description": "Insurance rates through Hormuz are currently four times the five-year average."
+    },
+    {
+      "title": "Ebola death toll in DR Congo surpasses 1,000",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/23/ebola-death-toll-in-dr-congo-surpasses-1000?traffic_source=rss",
+      "date": "July 23, 2026",
+      "description": "More than 1,000 people have died in the latest Ebola outbreak in DR Congo, according to official government data."
     },
     {
       "title": "Why do some of the cheapest cities cost the most to live in?",
@@ -3475,24 +3505,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/23/more-than-2300-israelis-storm-al-aqsa-mosque-in-jerusalem?traffic_source=rss",
       "date": "July 23, 2026",
       "description": "National Security Minister Ben-Gvir joins settlers and far-right groups at holy site under heavy police protection."
-    },
-    {
-      "title": "‘Back from the dead’: The continuing agony over Gaza’s 9,500 missing people",
-      "url": "https://www.aljazeera.com/features/2026/7/23/back-from-the-dead-the-continuing-agony-of-gazas-9500-missing-persons?traffic_source=rss",
-      "date": "July 23, 2026",
-      "description": "Palestinian&#039;s sudden return alive after family held his funeral highlights suffering of those still waiting for answers."
-    },
-    {
-      "title": "Indian activist Wangchuk sets conditions to end hunger strike",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/23/indian-activist-wangchuk-sets-conditions-to-end-hunger-strike?traffic_source=rss",
-      "date": "July 23, 2026",
-      "description": "Indian activist Wangchuk sets conditions to end hunger strike"
-    },
-    {
-      "title": "Photos: Gaza’s shelter crisis",
-      "url": "https://www.aljazeera.com/gallery/2026/7/23/photos-gazas-shelter-crisis?traffic_source=rss",
-      "date": "July 23, 2026",
-      "description": "Gaza faces a deepening housing crisis as more than 92 percent of homes have been damaged or destroyed by Israel."
     }
   ]
 }
