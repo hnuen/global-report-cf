@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-07-23T17:40:19.616Z",
+  "updatedAt": "2026-07-23T18:10:07.263Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260723",
+      "code": "20260723",
+      "title": "Counter Terrorism Designations; Counter Narcotics Designations; Cuba Designations; Belarus-related Designation Removal; Issuance of Cuba-related General Licenses",
+      "date": "July 23, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260720",
       "code": "20260720",
@@ -54,12 +60,6 @@
       "code": "20260708",
       "title": "Issuance of Amended Russia-related General License and Frequently Asked Questions",
       "date": "July 08, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260707",
-      "code": "20260707",
-      "title": "Issuance of Amended Iran-related General License",
-      "date": "July 07, 2026"
     }
   ],
   "civilPenalties": [
@@ -198,7 +198,7 @@
     "belarus-sanctions": {
       "name": "Belarus Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/belarus-sanctions",
-      "lastUpdated": "Mar 26, 2026",
+      "lastUpdated": "Jul 23, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -237,7 +237,7 @@
         },
         {
           "citation": "75 FR 73958",
-          "description": "10​ - Belarus Sanctions Regulations​ 75 FR 5502-10 - New regulations to implement Executive Order 13405 Recent Actions regarding Belarus Sanctions Belarus Designations Removals; Issuance of Belarus General License; Rescission of Belarus Directive 1 Release Date: Mar 26, 2026 Issuance of Belarus Gene",
+          "description": "10​ - Belarus Sanctions Regulations​ 75 FR 5502-10 - New regulations to implement Executive Order 13405 Recent Actions regarding Belarus Sanctions Counter Terrorism Designations; Counter Narcotics Designations; Cuba Designations; Belarus-related Designation Removal; Issuance of Cuba-related General",
           "year": "",
           "glNumbers": []
         }
@@ -247,12 +247,14 @@
           "number": "12",
           "title": "Belarus General License 12",
           "date": "November 04, 2025",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/934731/download?inline"
         },
         {
           "number": "14",
           "title": "Belarus General License 14",
           "date": "November 04, 2025",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/935366/download?inline"
         }
       ]
@@ -329,7 +331,7 @@
     "counter-narcotics-trafficking-sanctions": {
       "name": "Counter Narcotics Trafficking Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-narcotics-trafficking-sanctions",
-      "lastUpdated": "Jul 01, 2026",
+      "lastUpdated": "Jul 23, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -376,7 +378,7 @@
     "counter-terrorism-sanctions": {
       "name": "Counter Terrorism Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-terrorism-sanctions",
-      "lastUpdated": "Jul 15, 2026",
+      "lastUpdated": "Jul 23, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -613,13 +615,6 @@
           "date": "May 23, 2025",
           "expires": "June 17, 2026",
           "url": "https://ofac.treasury.gov/media/935641/download?inline"
-        },
-        {
-          "number": "X1",
-          "title": "Iran General License X1",
-          "date": "April 17, 2026",
-          "expires": "July 17, 2026",
-          "url": "https://ofac.treasury.gov/media/936446/download?inline"
         }
       ]
     },
@@ -634,7 +629,7 @@
     "cuba-sanctions": {
       "name": "Cuba Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/cuba-sanctions",
-      "lastUpdated": "Jul 13, 2026",
+      "lastUpdated": "Jul 23, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -681,7 +676,7 @@
         },
         {
           "citation": "66 FR 36683-01",
-          "description": "2001 Exports of Agricultural Products, Medicines, and Medical Devices to Cuba, Sudan, Libya, and Iran; Cuba Travel-Related Transactions 65 FR 70382-00 - 2000 Payments to Persons Who Hold Certain Categories of Judgments Against Cuba or Iran Recent Actions regarding Cuba Sanctions Cyber-related Design",
+          "description": "2001 Exports of Agricultural Products, Medicines, and Medical Devices to Cuba, Sudan, Libya, and Iran; Cuba Travel-Related Transactions 65 FR 70382-00 - 2000 Payments to Persons Who Hold Certain Categories of Judgments Against Cuba or Iran Recent Actions regarding Cuba Sanctions Counter Terrorism De",
           "year": "2001",
           "glNumbers": []
         }
@@ -693,6 +688,27 @@
           "date": "May 07, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935571/download?inline"
+        },
+        {
+          "number": "2",
+          "title": "Cuba General License 2",
+          "date": "May 07, 2026",
+          "expires": "August 22, 2026",
+          "url": "https://ofac.treasury.gov/media/936436/download?inline"
+        },
+        {
+          "number": "3",
+          "title": "Cuba General License 3",
+          "date": "July 23, 2026",
+          "expires": "August 22, 2026",
+          "url": "https://ofac.treasury.gov/media/936621/download?inline"
+        },
+        {
+          "number": "4",
+          "title": "Cuba General License 4",
+          "date": "July 23, 2026",
+          "expires": "",
+          "url": "https://ofac.treasury.gov/media/936626/download?inline"
         }
       ]
     },
@@ -2855,7 +2871,7 @@
       "title": "US House votes to limit Iran war for first time since ceasefire breakdown",
       "url": "https://www.aljazeera.com/news/2026/7/23/us-house-votes-to-limit-iran-war-for-first-time-since-ceasefire-breakdown?traffic_source=rss",
       "date": "July 23, 2026",
-      "description": "The Senate was also expected to vote on War Powers resolution, in largely symbolic move attempting to reign in Trump."
+      "description": "Senate fails to pass latest War Powers resolution, in largely symbolic move attempting to reign in Trump."
     },
     {
       "title": "The missing half of mediation",
@@ -2992,6 +3008,12 @@
       "description": "The US president says the landmark agreement to help Saudis develop nuclear energy is dependent on it joining the Abraham Accords."
     },
     {
+      "title": "Ukraine's ousted defence minister insists on being reinstated",
+      "url": "https://www.bbc.co.uk/news/articles/ce97nm53pgxo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 23, 2026",
+      "description": "Mykhailo Fedorov refuses President Zelensky's offer to accept an alternative post, as the battle of wills continues."
+    },
+    {
       "title": "France evacuates 20,000 as wildfires spread in south-west",
       "url": "https://www.bbc.co.uk/news/articles/cy4kmr82n44o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 23, 2026",
@@ -3008,12 +3030,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cn0nykz6lweo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 23, 2026",
       "description": "Mamadou Djouma Bah, 17, was arrested and sentenced to prison for exam fraud earlier this month."
-    },
-    {
-      "title": "Canada's 'powerful' dairy sector is in Trump's trade crosshairs",
-      "url": "https://www.bbc.co.uk/news/articles/ce8kvm84lxmo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 23, 2026",
-      "description": "Canada's industry is in the spotlight after the US president singled it out as one of three main irritants used to justify new tariffs."
     },
     {
       "title": "'Let's enjoy the ride' says Elon Musk, as AI fears mount",
@@ -3044,6 +3060,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cwyrj7ww1gko?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 23, 2026",
       "description": "The woman, who had wanted to end her pregnancy at 36 weeks, gave birth to a baby who doctors later killed."
+    },
+    {
+      "title": "Canada's 'powerful' dairy sector is in Trump's trade crosshairs",
+      "url": "https://www.bbc.co.uk/news/articles/ce8kvm84lxmo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 23, 2026",
+      "description": "Canada's industry is in the spotlight after the US president singled it out as one of three main irritants used to justify new tariffs."
     },
     {
       "title": "Ghanaians' ICC petition over migrant attacks 'opportunistic', says South Africa",
@@ -3388,6 +3410,12 @@
       "description": "Labour MP is asked about the lowering of the bus fare cap, after Starmer increased it in 2025."
     },
     {
+      "title": "What are the security implications of the US-Saudi nuclear deal?",
+      "url": "https://www.aljazeera.com/news/2026/7/23/what-are-the-security-implications-of-the-us-saudi-nuclear-deal?traffic_source=rss",
+      "date": "July 23, 2026",
+      "description": "Concerns are growing over a nuclear arms race in the Middle East."
+    },
+    {
       "title": "Far-right Israeli incursion heightens tensions at Al-Aqsa ahead of election",
       "url": "https://www.aljazeera.com/news/2026/7/23/far-right-israeli-incursion-heightens-tensions-at-al-aqsa-ahead-of-election?traffic_source=rss",
       "date": "July 23, 2026",
@@ -3512,12 +3540,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/23/which-middle-east-nations-have-nuclear-programmes-and-how-were-they-built?traffic_source=rss",
       "date": "July 23, 2026",
       "description": "Saudi Arabia aims to join the region&#039;s nuclear club after it signs a deal with the US."
-    },
-    {
-      "title": "Cricket: No Ashes 2027 Tests to take place in the north of England",
-      "url": "https://www.aljazeera.com/sports/2026/7/23/cricket-no-ashes-2027-tests-to-take-place-in-the-north-of-england?traffic_source=rss",
-      "date": "July 23, 2026",
-      "description": "England will not host Australia at Old Trafford or Headingley."
     }
   ]
 }
