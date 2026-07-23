@@ -177,7 +177,7 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
     id: "cuba",
     name: "Cuba Sanctions",
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/cuba-sanctions",
-    region: "Cuba", category: "country", lastUpdated: "Jun 23, 2026", status: "active",
+    region: "Cuba", category: "country", lastUpdated: "Jul 23, 2026", status: "active",
     executiveOrders: [
       // 3 EOs — sorted newest first.
       // Added 14380 2026-06-27: was missing entirely — confirmed real via
@@ -201,7 +201,10 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
       { number: "13799", title: "Strengthening the Policy of the United States Toward Cuba (National Security Presidential Memorandum-5 implementation; reinstated Cuba Restricted List)", date: "November 8, 2017", url: "https://ofac.treasury.gov/media/10651/download?inline" },
     ],
     generalLicenses: [
-      { number: "GL 1", title: "Cuba General License 1", date: "May 07, 2026", url: "https://ofac.treasury.gov/media/935571/download?inline", addedDate: "June 27, 2026" },
+            { number: "GL 2", title: "Cuba General License 2", date: "May 07, 2026", url: "https://ofac.treasury.gov/media/936436/download?inline", expires: "August 22, 2026", addedDate: "July 23, 2026" },
+      { number: "GL 3", title: "Cuba General License 3", date: "July 23, 2026", url: "https://ofac.treasury.gov/media/936621/download?inline", expires: "August 22, 2026", addedDate: "July 23, 2026" },
+      { number: "GL 4", title: "Cuba General License 4", date: "July 23, 2026", url: "https://ofac.treasury.gov/media/936626/download?inline", addedDate: "July 23, 2026" },
+{ number: "GL 1", title: "Cuba General License 1", date: "May 07, 2026", url: "https://ofac.treasury.gov/media/935571/download?inline", addedDate: "June 27, 2026" },
     ],
     notes: "Cuba sanctions operate on two parallel tracks: (1) Cuban Assets Control Regulations (CACR), 31 CFR Part 515 — the comprehensive embargo in place since 1963, statute-based, not an EO; and (2) EO 14380 (Jan 2026, national emergency declaration) and EO 14404 (May 2026, implementing sanctions) — new IEEPA-based targeted sanctions program covering energy, defense, metals/mining, financial services, and security sectors. Neither EO replaces the CACR; all operate simultaneously. As of 2026-06-27, OFAC's live Cuba Sanctions Legal Framework page has not yet been updated to list 14380/14404.",
   },
