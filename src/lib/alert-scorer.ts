@@ -402,6 +402,17 @@ export function scoreArticle(article: Article): ScoredArticle {
   //     never reaches a phone. Reachability (404s on real domains) is
   //     checked separately in /api/monitor before sending.
   const hasTrustedSource = isTrustedAlertUrl(article.sourceUrl);
+
+  // 11b. Direct-link gate — a bare listing/index page (e.g.
+  //      home.treasury.gov/news/press-releases) is a trusted domain but NOT a
+  //      direct link to the specific action, so it must not alert. The app's
+  //      own Treasury fetch can occasionally emit the generic listing URL;
+  //      block it here and wait for the direct-link version (the GitHub-Actions
+  //      Treasury scraper resolves the per-release .../sbNNNN URL).
+  const hasDirectLink = !isGenericListingUrl(article.sourceUrl);
+  if (!hasDirectLink) {
+    reasons.push(`generic listing/index URL — not a direct article link, never alerts (${article.sourceUrl})`);
+  }
   if (!hasTrustedSource) {
     reasons.push(
       article.sourceUrl
@@ -410,7 +421,7 @@ export function scoreArticle(article: Article): ScoredArticle {
     );
   }
 
-  const shouldAlert = sectionOk && score >= threshold && recentEnough && !isNoNewsFiller && !isRegulatoryNonEvent && !isAiGenerated && hasTrustedSource;
+  const shouldAlert = sectionOk && score >= threshold && recentEnough && !isNoNewsFiller && !isRegulatoryNonEvent && !isAiGenerated && hasTrustedSource && hasDirectLink;
 
   return { article, score, reasons, shouldAlert };
 }
@@ -466,6 +477,33 @@ export function isTrustedAlertUrl(url?: string): boolean {
   const extra = (process.env.ALERT_TRUSTED_DOMAINS ?? "")
     .split(",").map(s => s.trim().toLowerCase()).filter(Boolean);
   return [...TRUSTED_MEDIA_DOMAINS, ...extra].some(d => host === d || host.endsWith("." + d));
+}
+
+// Bare listing/index pages: trusted domains, but NOT a direct link to a
+// specific action. An alert must point at the actual release/notice, not the
+// section landing page — so these never qualify. Specific article URLs (e.g.
+// ofac.treasury.gov/recent-actions/20260720, home.treasury.gov/news/press-releases/sb0569)
+// are longer than these and are NOT matched.
+const GENERIC_LISTING_PATHS = new Set([
+  "home.treasury.gov/news",
+  "home.treasury.gov/news/press-releases",
+  "home.treasury.gov/news/featured-stories",
+  "home.treasury.gov/news/press-releases/statements-remarks",
+  "home.treasury.gov/news/press-releases/readouts",
+  "ofac.treasury.gov/recent-actions",
+  "fincen.gov/news/news-releases",
+  "fincen.gov/news/press-releases",
+  "gov.uk/government/news",
+  "occ.gov/news-issuances/news-releases",
+]);
+/** True if the URL is a bare listing/index page rather than a specific article. */
+export function isGenericListingUrl(url?: string): boolean {
+  if (!url) return false;
+  try {
+    const u = new URL(url);
+    const key = u.hostname.replace(/^www\./, "").toLowerCase() + u.pathname.replace(/\/+$/, "").toLowerCase();
+    return GENERIC_LISTING_PATHS.has(key);
+  } catch { return false; }
 }
 
 export function scoreAll(articles: Article[]): ScoredArticle[] {

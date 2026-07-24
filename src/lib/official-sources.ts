@@ -140,6 +140,26 @@ function stripHTML(html: string): string {
   //  bare-heading version wins and the specific article URL is lost.)
   const headlines: string[] = [];
 
+  // U.S. Treasury press releases: pull each release's DIRECT per-item link
+  // (.../news/press-releases/sbNNNN) plus its date, pushed first so downstream
+  // articles link straight to the release instead of falling back to the
+  // generic listing URL (home.treasury.gov/news/press-releases). No-op on any
+  // page without these links. Mirrors parseTreasuryNews in
+  // .github/scripts/refresh-briefing.mjs.
+  const treasuryRe = /<a[^>]+href="(https:\/\/home\.treasury\.gov\/news\/press-releases\/sb\d+)"[^>]*>([\s\S]*?)<\/a>/gi;
+  const treasurySeen = new Set<string>();
+  let tm: RegExpExecArray | null;
+  while ((tm = treasuryRe.exec(clean)) !== null) {
+    const turl = tm[1];
+    const ttitle = tm[2].replace(/<[^>]+>/g, "").replace(/&amp;/g, "&").replace(/&#\d+;/g, " ").replace(/&nbsp;/g, " ").replace(/\s+/g, " ").trim();
+    if (!ttitle || ttitle.length < 15 || treasurySeen.has(turl)) continue;
+    const before = clean.slice(Math.max(0, (tm.index ?? 0) - 260), tm.index).replace(/<[^>]+>/g, " ");
+    const dm = before.match(/\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+20\d{2}\b/g);
+    const tdate = dm ? dm[dm.length - 1] : "";
+    treasurySeen.add(turl);
+    headlines.push(`• ${ttitle} ||| ${turl}${tdate ? " ||| DATE:" + tdate : ""}`);
+  }
+
   // Extract link text from news-like anchors — show TEXT not URL
   const linkMatches0 = clean.matchAll(/<a[^>]*href="([^"]*)"[^>]*>([\s\S]*?)<\/a>/gi);
   for (const m of linkMatches0) {
