@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-24T18:39:42.069Z",
+  "updatedAt": "2026-07-24T19:10:07.128Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260724",
@@ -2836,6 +2836,12 @@
   ],
   "bbcNews": [
     {
+      "title": "Ten killed in Russian attack on drone exhibition near Kyiv",
+      "url": "https://www.bbc.co.uk/news/articles/cj637zd1k1ko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 24, 2026",
+      "description": "The event, attended by prominent members of the Ukrainian defence industry, was hit by ballistic missiles in the middle of the day."
+    },
+    {
       "title": "US and Iran trade more strikes in Gulf as fears of escalation mount",
       "url": "https://www.bbc.co.uk/news/articles/c05ql5llj4do?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 24, 2026",
@@ -2884,12 +2890,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/24/netanyahu-to-meet-trump-at-white-house-next-week-amid-iran-war-escalation?traffic_source=rss",
       "date": "July 24, 2026",
       "description": "Visit will be Netanyahu&#039;s seventh to White House, underscoring US commitment during war with Iran, genocide in Gaza."
-    },
-    {
-      "title": "At least 21 killed as Ukraine and Russia continue to trade attacks",
-      "url": "https://www.aljazeera.com/news/2026/7/24/at-least-11-killed-in-ukraine-as-moscow-and-kyiv-continue-to-trade-attacks?traffic_source=rss",
-      "date": "July 24, 2026",
-      "description": "Strikes target Ukrainian defence industry event, Russia’s Kirov and more Wildberries warehouses."
     }
   ],
   "occNews": [
@@ -3002,10 +3002,10 @@
   ],
   "regionsNews": [
     {
-      "title": "US hits dozens of countries with new wave of tariffs",
-      "url": "https://www.bbc.co.uk/news/articles/cvgj61j6l08o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Trump vows to investigate EU over fining of US tech companies",
+      "url": "https://www.bbc.co.uk/news/articles/cvgjenp4680o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 24, 2026",
-      "description": "Imposed citing forced labour concerns, the levies replace a temporary global duty brought in after the US Supreme Court struck down tariffs in February."
+      "description": "The US president says fines against Google, as well as Apple, Meta and Amazon, should be \"entirely reversed.\""
     },
     {
       "title": "Indonesian babies were trafficked to Singapore. What happens to them now?",
@@ -3024,6 +3024,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cx2rxmye4k3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 24, 2026",
       "description": "Palestinians say villagers came under attack by settlers, while the Israeli military says a Palestinian stole a weapon and opened fire on hikers."
+    },
+    {
+      "title": "US hits dozens of countries with new wave of tariffs",
+      "url": "https://www.bbc.co.uk/news/articles/cvgj61j6l08o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 24, 2026",
+      "description": "Imposed citing forced labour concerns, the levies replace a temporary global duty brought in after the US Supreme Court struck down tariffs in February."
     },
     {
       "title": "Nigeria's president approves largest military expansion in recent times",
@@ -3054,12 +3060,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cx2djnzrqk2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 23, 2026",
       "description": "The price of Brent crude rose more than 6% on Thursday as the war in the Middle East continues to escalate."
-    },
-    {
-      "title": "Saudis must recognise Israel for nuclear deal, says Trump",
-      "url": "https://www.bbc.co.uk/news/articles/cwye71yq8wwo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 23, 2026",
-      "description": "The US president says the landmark agreement to help Saudis develop nuclear energy is dependent on it joining the Abraham Accords."
     },
     {
       "title": "CJP protest: The youth movement India's Modi didn't see coming",
@@ -3386,6 +3386,18 @@
       "description": "What was the best business move of the last 12 months and who made the biggest blunder?"
     },
     {
+      "title": "ICC prosecutor Khan removed over sexual misconduct allegations: Sources",
+      "url": "https://www.aljazeera.com/news/2026/7/24/icc-prosecutor-khan-removed-over-sexual-misconduct-allegations-sources?traffic_source=rss",
+      "date": "July 24, 2026",
+      "description": "This is a breaking news story."
+    },
+    {
+      "title": "US school shooter pleads guilty in Georgia following father’s conviction",
+      "url": "https://www.aljazeera.com/news/2026/7/24/us-school-shooter-pleads-guilty-in-georgia-following-fathers-conviction?traffic_source=rss",
+      "date": "July 24, 2026",
+      "description": "Colt Gray pleads guilty to killing two students and two teachers in 2024 attack, which upped scrutiny of parental role."
+    },
+    {
       "title": "Trump’s Israel condition on Saudi nuclear deal",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/24/trumps-israel-condition-on-saudi-nuclear-deal?traffic_source=rss",
       "date": "July 24, 2026",
@@ -3504,12 +3516,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/24/spain-declares-national-emergency-over-wildfires?traffic_source=rss",
       "date": "July 24, 2026",
       "description": "At least 10,000 people have been evacuated following wildfires in the central region of Madrid."
-    },
-    {
-      "title": "Spain’s De la Fuente slams Argentina’s World Cup conduct as ‘unacceptable’",
-      "url": "https://www.aljazeera.com/sports/2026/7/24/spains-de-la-fuente-slams-argentinas-world-cup-conduct-as-unacceptable?traffic_source=rss",
-      "date": "July 24, 2026",
-      "description": "While Argentina faced criticism through World Cup 2026, post-final altercations are now being investigated."
     }
   ]
 }
