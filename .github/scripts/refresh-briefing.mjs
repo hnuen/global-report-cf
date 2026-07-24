@@ -1802,6 +1802,30 @@ async function saveBriefingWithRetry(payload, merge = false) {
   console.log(`[refresh-briefing] ✅ Saved — ${saveData.articleCount} articles, lastUpdated: ${saveData.lastUpdated}`);
 }
 
+// ── Section correction ──────────────────────────────────────────────────────
+// Gemini occasionally files an official sanctions action under the wrong
+// section (e.g. "Treasury Disrupts Muslim Brotherhood and Hamas Financial
+// Networks" tagged "regions" instead of "sanctions"). Re-file by the
+// authoritative source URL so it shows — and routes to subscribers — under
+// Sanctions. Only reclassifies clear OFAC/Treasury-sanctions items; leaves
+// everything else (incl. genuine Treasury economics/admin releases) untouched.
+if (Array.isArray(briefing.articles)) {
+  const SANCTIONS_KW = /\bofac\b|\bsdn\b|designat|\bsanction|disrupt|\btargets?\b|blocked persons|terrorist financ|illicit financ|financial network|price cap|export control|entity list/i;
+  let refiled = 0;
+  for (const a of briefing.articles) {
+    const url = (a.sourceUrl || "").toLowerCase();
+    const text = `${a.headline || ""} ${(a.body && a.body[0]) || ""}`;
+    const isOfac = url.includes("ofac.treasury.gov");
+    const isTreasuryRelease = /home\.treasury\.gov\/news\/press-releases\/sb\d+/.test(url);
+    if (a.section !== "sanctions" && (isOfac || (isTreasuryRelease && SANCTIONS_KW.test(text)))) {
+      console.log(`[refresh-briefing] Re-filed "${a.headline}" from ${a.section} → sanctions`);
+      a.section = "sanctions";
+      refiled++;
+    }
+  }
+  if (refiled > 0) console.log(`[refresh-briefing] Section correction: ${refiled} article(s) re-filed to sanctions`);
+}
+
 // ── Trusted-link enforcement ────────────────────────────────────────────────
 // Only ever show articles that link to a trusted destination: an official
 // government / intergovernmental site, OR a well-known media outlet. This
