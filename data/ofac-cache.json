@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-07-24T14:09:51.911Z",
+  "updatedAt": "2026-07-24T14:40:03.608Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260724",
+      "code": "20260724",
+      "title": "Iran-related Designations; Issuance of Amended Russia-related General License and Frequently Asked Questions; Issuance of Amended Venezuela-related Frequently Asked Question; Publication of Regulatory Amendments",
+      "date": "July 24, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260723",
       "code": "20260723",
@@ -54,12 +60,6 @@
       "code": "20260710",
       "title": "Issuance of Democratic Republic of the Congo-related General License",
       "date": "July 10, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260708",
-      "code": "20260708",
-      "title": "Issuance of Amended Russia-related General License and Frequently Asked Questions",
-      "date": "July 08, 2026"
     }
   ],
   "civilPenalties": [
@@ -928,7 +928,7 @@
     "iran-sanctions": {
       "name": "Iran Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions",
-      "lastUpdated": "Jul 14, 2026",
+      "lastUpdated": "Jul 24, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -1505,7 +1505,7 @@
     "russian-harmful-foreign-activities-sanctions": {
       "name": "Russian Harmful Foreign Activities Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions",
-      "lastUpdated": "Jul 20, 2026",
+      "lastUpdated": "Jul 24, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -1938,16 +1938,16 @@
           "url": "https://ofac.treasury.gov/media/935501/download?inline"
         },
         {
-          "number": "131G",
-          "title": "Russia-related General License 131G",
+          "number": "131H",
+          "title": "Russia-related General License 131H",
           "date": "April 14, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/936301/download?inline"
+          "url": "https://ofac.treasury.gov/media/936636/download?inline"
         },
         {
           "number": "132",
           "title": "Russia-related General License 132",
-          "date": "June 25, 2026",
+          "date": "July 24, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934776/download?inline"
         }
@@ -2238,7 +2238,7 @@
     "venezuela-related-sanctions": {
       "name": "Venezuela-Related Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/venezuela-related-sanctions",
-      "lastUpdated": "Jul 17, 2026",
+      "lastUpdated": "Jul 24, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -2878,12 +2878,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/24/us-attacks-iran-for-13th-consecutive-night?traffic_source=rss",
       "date": "July 24, 2026",
       "description": "The US military says it has completed its 13th night of strikes against Iran."
-    },
-    {
-      "title": "US attacks Iran as Houthis allow Chinese ships to pass: What’s the latest?",
-      "url": "https://www.aljazeera.com/news/2026/7/24/us-attacks-iran-as-houthis-allow-chinese-ships-to-pass-whats-the-latest?traffic_source=rss",
-      "date": "July 24, 2026",
-      "description": "The number of tanker crossings in the Strait of Hormuz dropped to lowest levels in two months on Thursday."
     }
   ],
   "occNews": [
@@ -3429,7 +3423,7 @@
     },
     {
       "title": "Business Daily",
-      "url": "https://www.bbc.co.uk/sounds/play/w3ct8g9k?at_medium=RSS&amp;at_campaign=rss",
+      "url": "https://www.bbc.co.uk/sounds/play/live:bbc_world_service?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 23, 2026",
       "description": "What tech earnings reveal about AI investment and Donald Trump's tariff talks"
     },
@@ -3450,6 +3444,24 @@
       "url": "https://www.bbc.co.uk/sounds/play/m002z78b?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 23, 2026",
       "description": "What was the best business move of the last 12 months and who made the biggest blunder?"
+    },
+    {
+      "title": "Senegal gets CAS date for appeal to regain AFCON from Morocco",
+      "url": "https://www.aljazeera.com/sports/2026/7/24/senegal-gets-cas-date-for-appeal-to-regain-afcon-from-morocco?traffic_source=rss",
+      "date": "July 24, 2026",
+      "description": "Senegal given October date by CAS for appeal to regain AFCON title won in chaotic final against Morocco in January."
+    },
+    {
+      "title": "World Cup hero Rodri to undergo back surgery before Man City’s new season",
+      "url": "https://www.aljazeera.com/sports/2026/7/24/world-cup-hero-rodri-to-undergo-back-surgery-before-man-citys-new-season?traffic_source=rss",
+      "date": "July 24, 2026",
+      "description": "Spain and Man City midfielder Rodri will need surgery and rest before returning to the club, new coach Maresca said."
+    },
+    {
+      "title": "What to know about the White House Correspondents’ Dinner, take two",
+      "url": "https://www.aljazeera.com/news/2026/7/24/what-to-know-about-the-white-house-correspondents-dinner-take-two?traffic_source=rss",
+      "date": "July 24, 2026",
+      "description": "Perennially controversial dinner is back, with Trump set to attend, after a gunman derailed the proceedings in April."
     },
     {
       "title": "Indian student protests: What’s next after Modi’s promise on exam leaks?",
@@ -3570,18 +3582,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/24/icc-prosecutor-karim-khan-faces-removal-vote-whats-the-case?traffic_source=rss",
       "date": "July 24, 2026",
       "description": "ICC&#039;s 125 member states will vote by secret ballot Friday on the fate of Khan, who faces sexual misconduct allegations."
-    },
-    {
-      "title": "Real Madrid legend Ancelotti rivals Barcelona great Guardiola for Italy job",
-      "url": "https://www.aljazeera.com/sports/2026/7/24/real-madrid-legend-ancelotti-rivals-barcelona-great-guardiola-for-italy-job?traffic_source=rss",
-      "date": "July 24, 2026",
-      "description": "Former Man City and Barca boss Pep Guardiola is not the clear candidate for Italian job, as Carlo Ancelotti approached."
-    },
-    {
-      "title": "Indian activist Wangchuk ends 26-day hunger strike",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/24/indian-activist-wangchuk-ends-26-day-hunger-strike?traffic_source=rss",
-      "date": "July 24, 2026",
-      "description": "Indian activist Sonam Wangchuk has ended a 26-day hunger strike over leaked medical entrance exams"
     }
   ]
 }
