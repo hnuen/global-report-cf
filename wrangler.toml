@@ -7,6 +7,11 @@ pages_build_output_dir = ".open-next"
 # Default CF Workers limit is 50 subrequests/invocation. The refresh route
 # fetches 60+ RSS feeds + Redis ops in a single invocation, which exceeds
 # the default. Requires Workers Paid plan; ignored on free plan.
-# cpu_ms is required alongside subrequest_limit (CF wrangler schema requirement).
-cpu_ms = 50
+#
+# cpu_ms is the max CPU time per request. It was previously 50 (ms), which
+# capped every request at 50ms of compute — the heavy refresh groups and
+# /api/save-briefing (parsing 60+ feeds, serialising 150+ articles) exceeded
+# that and Cloudflare killed them with HTTP 503 "error 1102: Worker exceeded
+# resource limits". Raised to 30000ms (30s) so those requests can complete.
+cpu_ms = 30000
 subrequest_limit = 500
