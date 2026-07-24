@@ -177,7 +177,7 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
     id: "cuba",
     name: "Cuba Sanctions",
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/cuba-sanctions",
-    region: "Cuba", category: "country", lastUpdated: "Jun 23, 2026", status: "active",
+    region: "Cuba", category: "country", lastUpdated: "Jul 23, 2026", status: "active",
     executiveOrders: [
       // 3 EOs — sorted newest first.
       // Added 14380 2026-06-27: was missing entirely — confirmed real via
@@ -201,7 +201,10 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
       { number: "13799", title: "Strengthening the Policy of the United States Toward Cuba (National Security Presidential Memorandum-5 implementation; reinstated Cuba Restricted List)", date: "November 8, 2017", url: "https://ofac.treasury.gov/media/10651/download?inline" },
     ],
     generalLicenses: [
-      { number: "GL 1", title: "Cuba General License 1", date: "May 07, 2026", url: "https://ofac.treasury.gov/media/935571/download?inline", addedDate: "June 27, 2026" },
+            { number: "GL 2", title: "Cuba General License 2", date: "May 07, 2026", url: "https://ofac.treasury.gov/media/936436/download?inline", expires: "August 22, 2026", addedDate: "July 23, 2026" },
+      { number: "GL 3", title: "Cuba General License 3", date: "July 23, 2026", url: "https://ofac.treasury.gov/media/936621/download?inline", expires: "August 22, 2026", addedDate: "July 23, 2026" },
+      { number: "GL 4", title: "Cuba General License 4", date: "July 23, 2026", url: "https://ofac.treasury.gov/media/936626/download?inline", addedDate: "July 23, 2026" },
+{ number: "GL 1", title: "Cuba General License 1", date: "May 07, 2026", url: "https://ofac.treasury.gov/media/935571/download?inline", addedDate: "June 27, 2026" },
     ],
     notes: "Cuba sanctions operate on two parallel tracks: (1) Cuban Assets Control Regulations (CACR), 31 CFR Part 515 — the comprehensive embargo in place since 1963, statute-based, not an EO; and (2) EO 14380 (Jan 2026, national emergency declaration) and EO 14404 (May 2026, implementing sanctions) — new IEEPA-based targeted sanctions program covering energy, defense, metals/mining, financial services, and security sectors. Neither EO replaces the CACR; all operate simultaneously. As of 2026-06-27, OFAC's live Cuba Sanctions Legal Framework page has not yet been updated to list 14380/14404.",
   },
@@ -512,7 +515,7 @@ archive: {
     id: "russia-hfa",
     name: "Russian Harmful Foreign Activities Sanctions",
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions",
-    region: "Russia", category: "country", lastUpdated: "Jul 08, 2026", status: "active",
+    region: "Russia", category: "country", lastUpdated: "Jul 24, 2026", status: "active",
     executiveOrders: [
       { number: "14114", title: "Taking Additional Steps With Respect to the Russian Federation's Harmful Activities — amends EO 14024 to add secondary sanctions on foreign financial institutions supporting Russia's military-industrial base", date: "December 22, 2023", url: "https://ofac.treasury.gov/media/932441/download?inline" },
       { number: "14071", title: "Prohibiting New Investment in and Certain Services to the Russian Federation — accounting, management consulting, quantum computing, IT services", date: "April 6, 2022", url: "https://ofac.treasury.gov/media/922081/download?inline" },
@@ -531,6 +534,7 @@ archive: {
       // block. GL 131G below had the same generic-placeholder problem —
       // fixed its title/date/expires from the GL's own PDF (media/936301):
       // dated June 25, 2026, authorized through July 25, 2026.
+{ number: "GL 131H", title: "Russia-related General License 131H", date: "April 14, 2026", url: "https://ofac.treasury.gov/media/936636/download?inline", addedDate: "July 24, 2026" },
 { number: "GL 6D", title: "Russia-related General License 6D", date: "February 22, 2022", url: "https://ofac.treasury.gov/media/932921/download?inline", addedDate: "June 27, 2026" },
       { number: "GL 14", title: "Russia-related General License 14", date: "April 08, 2026", url: "https://ofac.treasury.gov/media/918896/download?inline", addedDate: "June 27, 2026" },
       { number: "GL 20", title: "Russia-related General License 20", date: "March 11, 2022", url: "https://ofac.treasury.gov/media/920271/download?inline", addedDate: "June 27, 2026" },
@@ -552,7 +556,6 @@ archive: {
       { number: "GL 129A", title: "Russia-related General License 129A", date: "April 14, 2026", url: "https://ofac.treasury.gov/media/935096/download?inline", addedDate: "June 27, 2026" },
       { number: "GL 130A", title: "Russia-related General License 130A", date: "March 05, 2026", url: "https://ofac.treasury.gov/media/935501/download?inline", addedDate: "June 27, 2026" },
       { number: "GL 132", title: "Russia-related General License 132", date: "June 25, 2026", url: "https://ofac.treasury.gov/media/934776/download?inline", addedDate: "June 27, 2026" },
-{ number: "GL 131G", title: "Authorizing Certain Transactions for the Negotiation of and Entry Into Contingent Contracts for the Sale of Lukoil International GmbH and Related Maintenance Activities", date: "June 25, 2026", url: "https://ofac.treasury.gov/media/936301/download?inline", expires: "July 25, 2026" },
       { number: "GL 1B", title: "Authorizing Certain Activities Involving Federal State Budgetary Institution Marine Rescue Service", date: "December 18, 2024", url: "https://ofac.treasury.gov/media/933721/download?inline" },
       { number: "GL 2", title: "Authorizing Certain Servicing Transactions Involving State Corporation Bank for Development and Foreign Economic Affairs Vnesheconombank", date: "February 22, 2022", url: "https://ofac.treasury.gov/media/918631/download?inline" },
       { number: "GL 7A", title: "Authorizing Overflight Payments, Emergency Landings, and Air Ambulance Services", date: "May 05, 2022", url: "https://ofac.treasury.gov/media/922841/download?inline" },
@@ -599,7 +602,8 @@ archive: {
 
         archive: {
       generalLicenses: [
-                                { number: "GL 13R", title: "Russia-related General License 13R", date: "May 05, 2022", archived: true, archivedNote: "Expired October 9, 2025 — no successor GL detected", archivedDate: "October 9, 2025" },
+                                                                { number: "GL 131G", title: "Authorizing Certain Transactions for the Negotiation of and Entry Into Contingent Contracts for the Sale of Lukoil International GmbH and Related Maintenance Activities", date: "June 25, 2026", archived: true, archivedNote: "Superseded by General License 131H", archivedDate: "April 14, 2026" },
+{ number: "GL 13R", title: "Russia-related General License 13R", date: "May 05, 2022", archived: true, archivedNote: "Expired October 9, 2025 — no successor GL detected", archivedDate: "October 9, 2025" },
 { number: "GL 13Q", title: "Russia-related General License 13Q", date: "May 05, 2022", archived: true, archivedNote: "Superseded by General License 13R", archivedDate: "May 05, 2022" },
 { number: "GL 134C", title: "Authorizing the Delivery and Sale of Crude Oil and Petroleum Products of Russian Federation Origin Loaded on Vessels as of April 17, 2026", date: "May 18, 2026", archived: true, archivedNote: "Expired June 17, 2026 — fixed wind-down date reached; no successor GL issued (133/134 Russia-oil-vessel GL series ends at 134C)", archivedDate: "June 17, 2026" },
         { number: "GL 131F", title: "Authorizing Certain Transactions for the Negotiation of and Entry Into Contingent Contracts for the Sale of Lukoil International GmbH and Related Maintenance Activities", date: "May 28, 2026", archived: true, archivedNote: "Superseded by General License 131G", archivedDate: "June 25, 2026" },
