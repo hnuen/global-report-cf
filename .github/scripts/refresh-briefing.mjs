@@ -517,14 +517,31 @@ function extractIssuedDate(text, expires) {
   return best;
 }
 
-async function fetchPdfMeta(pdfUrl) {
-  if (!pdfParse) return { issued: "", expires: "" };
+// Extract a GL's real title from its PDF. OFAC GL PDFs read
+// "...GENERAL LICENSE NO. <num> <Title> (a) Except as provided...", so capture
+// the heading between the license number and the first "(a)" clause. Used to
+// replace generic placeholder titles like "Venezuela General License 42".
+function extractPdfTitle(text, number) {
+  const num = String(number || "").replace(/^.*?GL\s*/i, "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  if (!num) return "";
+  const re = new RegExp(`GENERAL LICENSE\\s+(?:NO\\.?\\s*)?${num}\\b[\\s:.\\u2013\\u2014-]*([\\s\\S]{8,220}?)\\s*(?:\\(a\\)|\\(1\\)|\\bExcept as\\b|\\bAll transactions\\b|$)`, "i");
+  const m = re.exec(text);
+  if (!m) return "";
+  let t = m[1].replace(/\s+/g, " ").replace(/[\s.,;:–—-]+$/, "").trim();
+  // Reject non-titles: too short/long, or just a date/number fragment.
+  if (t.length < 10 || t.length > 200) return "";
+  if (/^\W|general license|^\d/i.test(t)) return "";
+  return t;
+}
+
+async function fetchPdfMeta(pdfUrl, number) {
+  if (!pdfParse) return { issued: "", expires: "", title: "" };
   try {
     const res = await fetch(pdfUrl, {
       signal: AbortSignal.timeout(12000),
       headers: { "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36" },
     });
-    if (!res.ok) { console.warn(`[pdf-expiry] ${pdfUrl}: HTTP ${res.status}`); return { issued: "", expires: "" }; }
+    if (!res.ok) { console.warn(`[pdf-expiry] ${pdfUrl}: HTTP ${res.status}`); return { issued: "", expires: "", title: "" }; }
     const buf = Buffer.from(await res.arrayBuffer());
     const data = await pdfParse(buf);
     const text = (data.text || "").replace(/\s+/g, " ");
@@ -539,10 +556,10 @@ async function fetchPdfMeta(pdfUrl) {
       const dm = DATE_RE.exec(window);
       if (dm) { expires = dm[1]; break; }
     }
-    return { issued: extractIssuedDate(text, expires), expires };
+    return { issued: extractIssuedDate(text, expires), expires, title: extractPdfTitle(text, number) };
   } catch (e) {
     console.warn(`[pdf-expiry] ${pdfUrl}: ${e.message}`);
-    return { issued: "", expires: "" };
+    return { issued: "", expires: "", title: "" };
   }
 }
 
@@ -704,7 +721,7 @@ for (const prog of changedPrograms) {
                     (!sameDoc || !gl.datePdf || !gl.expires);
     if (needPdf) {
       pdfExpiryFetchCount++;
-      const meta = await fetchPdfMeta(gl.url);
+      const meta = await fetchPdfMeta(gl.url, gl.number);
       if (meta.issued) {
         gl.date = meta.issued;
         gl.datePdf = true; // marks this date as PDF-verified so it carries forward
@@ -713,6 +730,14 @@ for (const prog of changedPrograms) {
       if (meta.expires && !gl.expires) {
         gl.expires = meta.expires;
         console.log(`  [pdf] GL ${gl.number}: expires "${meta.expires}"`);
+      }
+      // Replace a generic placeholder title (e.g. "Venezuela General License 42")
+      // with the real title from the PDF. Only overwrite generics — never clobber
+      // a descriptive title we already have.
+      const isGenericTitle = /^[A-Za-z .\/-]+ General Licens\w* (?:\(GL\) )?[A-Z]?\d+[A-Z]?$/i.test(gl.title || "");
+      if (meta.title && (isGenericTitle || !gl.title)) {
+        console.log(`  [pdf] GL ${gl.number}: title "${gl.title}" → "${meta.title}"`);
+        gl.title = meta.title;
       }
     }
   }
