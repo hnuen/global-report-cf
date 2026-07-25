@@ -635,10 +635,18 @@ console.log(`[refresh-briefing] Programs index: ${programsList.length} programs 
 // in a single run instead of needing several runs to alphabetically work
 // through the list. Once the cache is warm, "changed" will only ever be a
 // handful per run anyway, so the higher cap costs nothing day-to-day.)
-const changedPrograms = programsList.filter(p =>
-  p.lastUpdated && p.lastUpdated !== (cachedPrograms[p.slug]?.lastUpdated ?? "")
-).slice(0, 50);
+// FORCE_RESCRAPE_ALL=1 (set on a manual workflow_dispatch run) re-scrapes every
+// program regardless of change detection — used for a one-time backfill that
+// pulls authoritative titles/dates/expiry from every GL's PDF (e.g. to correct
+// generic placeholder titles across the whole library in one pass).
+const FORCE_ALL = process.env.FORCE_RESCRAPE_ALL === "1";
+const changedPrograms = FORCE_ALL
+  ? [...programsList]
+  : programsList.filter(p =>
+      p.lastUpdated && p.lastUpdated !== (cachedPrograms[p.slug]?.lastUpdated ?? "")
+    ).slice(0, 50);
 
+if (FORCE_ALL) console.log(`[refresh-briefing] FORCE_RESCRAPE_ALL — re-scraping all ${changedPrograms.length} programs (one-time PDF backfill)`);
 console.log(`[refresh-briefing] Programs with changes: ${changedPrograms.length} (of ${programsList.length} total)`);
 changedPrograms.forEach(p =>
   console.log(`  ${p.slug}: ${cachedPrograms[p.slug]?.lastUpdated ?? "(new)"} → ${p.lastUpdated}`)
@@ -690,7 +698,9 @@ if (forcedCount > 0) {
 const programs = { ...cachedPrograms };
 // Bounds worst-case PDF-fetch time across this whole run (8-min Actions
 // timeout) — shared budget across all changed programs, not per-program.
-const PDF_EXPIRY_FETCH_CAP = 25;
+// Raise the per-run PDF-fetch budget for a forced full backfill (needs to reach
+// every GL's PDF in one pass); normal runs stay conservative.
+const PDF_EXPIRY_FETCH_CAP = FORCE_ALL ? 120 : 25;
 let pdfExpiryFetchCount = 0;
 for (const prog of changedPrograms) {
   console.log(`[refresh-briefing] Fetching: ${prog.name}`);

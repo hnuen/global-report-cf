@@ -16,6 +16,10 @@ on:
         description: 'refresh or monitor'
         required: false
         default: 'refresh'
+      force_rescrape:
+        description: 'Re-scrape ALL programs to backfill GL titles/dates from PDFs (one-time). true/false'
+        required: false
+        default: 'false'
 
 jobs:
   refresh:
@@ -80,6 +84,7 @@ jobs:
           SAVE_BRIEFING_SECRET: ${{ secrets.SAVE_BRIEFING_SECRET }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
+          FORCE_RESCRAPE_ALL: ${{ github.event.inputs.force_rescrape == 'true' && '1' || '' }}
         run: node .github/scripts/refresh-briefing.mjs
 
   monitor:

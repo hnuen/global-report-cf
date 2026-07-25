@@ -263,6 +263,24 @@ function backfillExpires(itemsText, number, expiresVal) {
   return { text: newLines.join("\n"), changed };
 }
 
+// Replace a GENERIC placeholder title (e.g. "Venezuela General License 42") on
+// an already-existing active entry with the real descriptive title from this
+// run's scrape (which comes from the GL PDF — see fetchPdfMeta/extractPdfTitle
+// in refresh-briefing.mjs). Never overwrites a title that's already descriptive.
+const GENERIC_GL_TITLE = /^[A-Za-z .\/-]+ General Licens\w* (?:\(GL\) )?[A-Z]?\d+[A-Z]?$/i;
+function backfillTitle(itemsText, number, newTitle) {
+  const lines = itemsText.split("\n");
+  let changed = false, oldTitle = "";
+  const newLines = lines.map((line) => {
+    if (changed || !line.includes(`number: "GL ${number}"`)) return line;
+    const tm = /title:\s*"((?:[^"\\]|\\.)*)"/.exec(line);
+    if (!tm || !GENERIC_GL_TITLE.test(tm[1])) return line; // only replace generics
+    changed = true; oldTitle = tm[1];
+    return line.slice(0, tm.index) + `title: "${esc(newTitle)}"` + line.slice(tm.index + tm[0].length);
+  });
+  return { text: newLines.join("\n"), changed, oldTitle };
+}
+
 // Recompute a leading "// N GLs ..." comment to match the new entry count, if present.
 function refreshCountComment(itemsText) {
   const count = (itemsText.match(/\{\s*number:/g) || []).length;
@@ -362,6 +380,18 @@ function syncBlockEntries(blockText, scraped, log, ownMeta, allMetas) {
         activeItems = result.text;
         backfilledAny = true;
         notes.push(`Backfilled expires="${gl.expires}" onto existing GL ${gl.number}`);
+      }
+    }
+    // Backfill the real (descriptive) title onto existing entries that still
+    // carry a generic placeholder — corrects the ~65 "<Program> General License
+    // N" titles as each program re-scrapes.
+    for (const gl of scraped.generalLicenses || []) {
+      if (!gl.number || !gl.title || GENERIC_GL_TITLE.test(gl.title)) continue; // need a descriptive scraped title
+      const result = backfillTitle(activeItems, gl.number, gl.title);
+      if (result.changed) {
+        activeItems = result.text;
+        backfilledAny = true;
+        notes.push(`Backfilled title onto GL ${gl.number}: "${result.oldTitle}" → "${gl.title}"`);
       }
     }
 
