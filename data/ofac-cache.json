@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-25T01:55:09.174Z",
+  "updatedAt": "2026-07-25T02:11:28.672Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260724",
@@ -109,44 +109,51 @@
       "generalLicenses": [
         {
           "number": "14",
-          "title": "Afghanistan-related General License 14",
+          "title": "Authorizing Humanitarian Activities in Afghanistan",
           "date": "September 24, 2021",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/912996/download?inline"
         },
         {
           "number": "15",
-          "title": "Afghanistan-related General License 15",
+          "title": "Transactions Related to the Exportation or Reexportation of Agricultural Commodities, Medicine, Medical Devices, Replacement Parts and Components, or Software Updates in Afghanistan",
           "date": "September 24, 2021",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/913001/download?inline"
         },
         {
           "number": "16",
-          "title": "Afghanistan-related General License 16",
+          "title": "Authorizing Noncommercial, Personal Remittances to Afghanistan",
           "date": "September 24, 2021",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/915126/download?inline"
         },
         {
           "number": "17",
-          "title": "Afghanistan-related General License 17",
+          "title": "Official Business of the United States Government",
           "date": "December 10, 2021",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/917126/download?inline"
         },
         {
           "number": "18",
-          "title": "Afghanistan-related General License 18",
+          "title": "Official Activities of Certain International Organizations and Other International Entities",
           "date": "December 22, 2021",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/917131/download?inline"
         },
         {
           "number": "19",
-          "title": "Afghanistan-related General License 19",
+          "title": "Certain Transactions in Support of Nongovernmental Organizations’ Activities in Afghanistan",
           "date": "December 22, 2021",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/917136/download?inline"
         },
         {
           "number": "20",
-          "title": "Afghanistan-related General License 20",
+          "title": "Authorizing Transactions Involving Afghanistan or Governing Institutions in Afghanistan",
           "date": "December 22, 2021",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/918776/download?inline"
         }
       ]
@@ -185,13 +192,16 @@
           "number": "1",
           "title": "Western Balkans General License (No. 1)",
           "date": "July 09, 2003",
+          "expires": "",
           "url": "https://ofac.treasury.gov/media/6201/download?inline"
         },
         {
           "number": "3A",
           "title": "Western Balkans General License (No. 3A)",
-          "date": "July 09, 2003",
-          "url": "https://ofac.treasury.gov/media/932961/download?inline"
+          "date": "June 18, 2024",
+          "expires": "",
+          "url": "https://ofac.treasury.gov/media/932961/download?inline",
+          "datePdf": true
         }
       ]
     },
@@ -245,17 +255,19 @@
       "generalLicenses": [
         {
           "number": "12",
-          "title": "Belarus General License 12",
-          "date": "November 04, 2025",
+          "title": "Authorizing Transactions Related to Certain Blocked Aircraft",
+          "date": "November 4, 2025",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/934731/download?inline"
+          "url": "https://ofac.treasury.gov/media/934731/download?inline",
+          "datePdf": true
         },
         {
           "number": "14",
-          "title": "Belarus General License 14",
-          "date": "November 04, 2025",
+          "title": "Authorizing Transactions Involving Belarussian Bank of Development and Reconstruction Belinvestbank Joint Stock Company and Certain Additional Entities",
+          "date": "March 26, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/935366/download?inline"
+          "url": "https://ofac.treasury.gov/media/935366/download?inline",
+          "datePdf": true
         }
       ]
     },
@@ -291,8 +303,10 @@
         {
           "number": "6",
           "title": "89 FR 13269-24 - Publication of Burma Sanctions Regulations Web General License 6",
-          "date": "",
-          "url": "https://ofac.treasury.gov/media/933281/download?inline"
+          "date": "May 8, 2024",
+          "expires": "March 1, 2024",
+          "url": "https://ofac.treasury.gov/media/933281/download?inline",
+          "datePdf": true
         }
       ]
     },
@@ -465,13 +479,14 @@
         {
           "number": "25",
           "title": "Fact Sheet: Frequently Asked Questions (FAQs) for Syria General License 25",
-          "date": "June 30, 2025",
+          "date": "July 7, 2025",
           "expires": "July 1, 2025",
-          "url": "https://ofac.treasury.gov/media/934311/download?inline"
+          "url": "https://ofac.treasury.gov/media/934311/download?inline",
+          "datePdf": true
         },
         {
           "number": "2",
-          "title": "Counter Terrorism General License 2",
+          "title": "Travel, employment, residence and maintenance transactions with the Palestinian Authority. U.S. persons are authorized to engage in",
           "date": "April 12, 2006",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/8366/download?inline"
@@ -485,21 +500,21 @@
         },
         {
           "number": "4",
-          "title": "Counter Terrorism General License 4",
+          "title": "Transactions with entities under the control of the Palestinian President and certain other entities",
           "date": "April 12, 2006",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/8376/download?inline"
         },
         {
           "number": "5",
-          "title": "Counter Terrorism General License 5",
+          "title": "Concluding activities with the Palestinian Authority",
           "date": "April 12, 2006",
           "expires": "May 12, 2006",
           "url": "https://ofac.treasury.gov/media/8381/download?inline"
         },
         {
           "number": "6",
-          "title": "Counter Terrorism General License 6",
+          "title": "In-kind donations of medicine, medical devices, and medical services",
           "date": "April 12, 2006",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/8391/download?inline"
@@ -513,108 +528,114 @@
         },
         {
           "number": "7A",
-          "title": "Counter Terrorism General License 7a",
+          "title": "Transactions with the Palestinian Authority authorized",
           "date": "December 07, 2010",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/8396/download?inline"
         },
         {
           "number": "8A",
-          "title": "Counter Terrorism General License 8A",
+          "title": "Authorizing Certain Humanitarian Trade Transactions Involving the Central Bank of Iran or the National Iranian Oil Company",
           "date": "May 14, 2013",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48841/download?inline"
         },
         {
           "number": "14",
-          "title": "Counter Terrorism General License 14",
+          "title": "Authorizing Humanitarian Activities in Afghanistan",
           "date": "October 26, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/912996/download?inline"
         },
         {
           "number": "15",
-          "title": "Counter Terrorism General License 15",
+          "title": "Transactions Related to the Exportation or Reexportation of Agricultural Commodities, Medicine, Medical Devices, Replacement Parts and Components, or Software Updates in Afghanistan",
           "date": "September 24, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/913001/download?inline"
         },
         {
           "number": "16",
-          "title": "Counter Terrorism General License 16",
+          "title": "Authorizing Noncommercial, Personal Remittances to Afghanistan",
           "date": "September 24, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/915126/download?inline"
         },
         {
           "number": "17",
-          "title": "Counter Terrorism General License 17",
+          "title": "Official Business of the United States Government",
           "date": "December 10, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/917126/download?inline"
         },
         {
           "number": "18",
-          "title": "Counter Terrorism General License 18",
+          "title": "Official Activities of Certain International Organizations and Other International Entities",
           "date": "December 22, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/917131/download?inline"
         },
         {
           "number": "19",
-          "title": "Counter Terrorism General License 19",
+          "title": "Certain Transactions in Support of Nongovernmental Organizations’ Activities in Afghanistan",
           "date": "December 22, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/917136/download?inline"
         },
         {
           "number": "20",
-          "title": "Counter Terrorism General License 20",
+          "title": "Authorizing Transactions Involving Afghanistan or Governing Institutions in Afghanistan",
           "date": "December 22, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918776/download?inline"
         },
         {
           "number": "22A",
-          "title": "Counter Terrorism General License 22A",
-          "date": "February 25, 2022",
+          "title": "Transactions Related to the Provision of Agricultural Commodities, Medicine, Medical Devices, Replacement Parts and Components, or Software Updates Involving Ansarallah",
+          "date": "March 5, 2025",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/934031/download?inline"
+          "url": "https://ofac.treasury.gov/media/934031/download?inline",
+          "datePdf": true
         },
         {
           "number": "23A",
-          "title": "Counter Terrorism General License 23A",
-          "date": "March 05, 2025",
+          "title": "Authorizing Transactions Related to Telecommunications, Mail, and Certain Internet- Based Communications Involving Ansarallah",
+          "date": "March 5, 2025",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/934036/download?inline"
+          "url": "https://ofac.treasury.gov/media/934036/download?inline",
+          "datePdf": true
         },
         {
           "number": "24A",
-          "title": "Counter Terrorism General License 24A",
-          "date": "March 05, 2025",
+          "title": "Authorizing Noncommercial, Personal Remittances Involving Ansarallah",
+          "date": "March 5, 2025",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/934041/download?inline"
+          "url": "https://ofac.treasury.gov/media/934041/download?inline",
+          "datePdf": true
         },
         {
           "number": "26A",
-          "title": "Counter Terrorism General License 26A",
-          "date": "March 05, 2025",
+          "title": "Authorizing Certain Transactions Necessary to Port and Airport Operations Involving Ansarallah",
+          "date": "March 5, 2025",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/934051/download?inline"
+          "url": "https://ofac.treasury.gov/media/934051/download?inline",
+          "datePdf": true
         },
         {
           "number": "28A",
-          "title": "Counter Terrorism General License 28A",
-          "date": "March 05, 2025",
+          "title": "Authorizing Transactions for Third-Country Diplomatic and Consular Missions Involving Ansarallah",
+          "date": "March 5, 2025",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/934056/download?inline"
+          "url": "https://ofac.treasury.gov/media/934056/download?inline",
+          "datePdf": true
         },
         {
           "number": "134C",
-          "title": "Russia-related General License 134C",
-          "date": "May 23, 2025",
+          "title": "Authorizing the Delivery and Sale of Crude Oil and Petroleum Products of Russian Federation Origin Loaded on Vessels as of April 17, 2026",
+          "date": "May 18, 2026",
           "expires": "June 17, 2026",
-          "url": "https://ofac.treasury.gov/media/935641/download?inline"
+          "url": "https://ofac.treasury.gov/media/935641/download?inline",
+          "datePdf": true
         }
       ]
     },
@@ -684,31 +705,35 @@
       "generalLicenses": [
         {
           "number": "1",
-          "title": "Cuba General License 1",
-          "date": "May 07, 2026",
+          "title": "Transactions Authorized Pursuant to the Cuban Assets Control Regulations",
+          "date": "May 7, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/935571/download?inline"
+          "url": "https://ofac.treasury.gov/media/935571/download?inline",
+          "datePdf": true
         },
         {
           "number": "2",
-          "title": "Cuba General License 2",
-          "date": "May 07, 2026",
+          "title": "Authorizing the Wind Down of Transactions Involving CEIBA Investments Limited",
+          "date": "July 23, 2026",
           "expires": "August 22, 2026",
-          "url": "https://ofac.treasury.gov/media/936436/download?inline"
+          "url": "https://ofac.treasury.gov/media/936436/download?inline",
+          "datePdf": true
         },
         {
           "number": "3",
-          "title": "Cuba General License 3",
+          "title": "Authorizing Certain Transactions Related to Debt or Equity of, or Derivative Contracts Involving, CEIBA Investments Limited",
           "date": "July 23, 2026",
           "expires": "August 22, 2026",
-          "url": "https://ofac.treasury.gov/media/936621/download?inline"
+          "url": "https://ofac.treasury.gov/media/936621/download?inline",
+          "datePdf": true
         },
         {
           "number": "4",
-          "title": "Cuba General License 4",
+          "title": "Authorizing Transactions for Third-Country Diplomatic and Consular Missions in Cuba",
           "date": "July 23, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/936626/download?inline"
+          "url": "https://ofac.treasury.gov/media/936626/download?inline",
+          "datePdf": true
         }
       ]
     },
@@ -737,17 +762,18 @@
       "generalLicenses": [
         {
           "number": "1C",
-          "title": "Cyber General License 1C",
+          "title": "Authorizing Certain Transactions with the Federal Security Service",
           "date": "April 27, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/931686/download?inline"
         },
         {
           "number": "2",
-          "title": "Cyber General License 2",
-          "date": "April 27, 2023",
+          "title": "Authorizing Certain Transactions Involving Anco Water Supply Co. Ltd. Related to the Treatment and Distribution of Drinking Water",
+          "date": "April 23, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/935531/download?inline"
+          "url": "https://ofac.treasury.gov/media/935531/download?inline",
+          "datePdf": true
         }
       ]
     },
@@ -775,10 +801,11 @@
       "generalLicenses": [
         {
           "number": "2",
-          "title": "Democratic Republic of the Congo General License 2",
+          "title": "Authorizing Transactions Related to Agricultural Commodities, Medicine, Medical Devices, Replacement Parts and Components, Software Updates, or Clinical Trials",
           "date": "July 10, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/936441/download?inline"
+          "url": "https://ofac.treasury.gov/media/936441/download?inline",
+          "datePdf": true
         }
       ]
     },
@@ -856,9 +883,11 @@
       "generalLicenses": [
         {
           "number": "8",
-          "title": "Global Magnitsky General License 8",
+          "title": "Authorizing Transactions Involving Certain Entities Owned by Ly Yong Phat or L.Y .P . Group Co., LTD",
           "date": "September 12, 2024",
-          "url": "https://ofac.treasury.gov/media/933216/download?inline"
+          "expires": "",
+          "url": "https://ofac.treasury.gov/media/933216/download?inline",
+          "datePdf": true
         }
       ]
     },
@@ -1094,7 +1123,7 @@
         },
         {
           "number": "8A",
-          "title": "Iran General License 8A",
+          "title": "Authorizing Certain Humanitarian Trade Transactions Involving the Central Bank of Iran or the National Iranian Oil Company",
           "date": "October 08, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48841/download?inline"
@@ -1102,37 +1131,42 @@
         {
           "number": "Q",
           "title": "Iran General License Q",
-          "date": "October 26, 2020",
+          "date": "May 20, 2025",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/934291/download?inline"
+          "url": "https://ofac.treasury.gov/media/934291/download?inline",
+          "datePdf": true
         },
         {
           "number": "T",
           "title": "Iran General License T",
-          "date": "May 20, 2025",
+          "date": "January 23, 2026",
           "expires": "February 22, 2026",
-          "url": "https://ofac.treasury.gov/media/934946/download?inline"
+          "url": "https://ofac.treasury.gov/media/934946/download?inline",
+          "datePdf": true
         },
         {
           "number": "Y",
           "title": "Iran General License Y",
-          "date": "January 23, 2026",
+          "date": "July 10, 2026",
           "expires": "August 9, 2026",
-          "url": "https://ofac.treasury.gov/media/936546/download?inline"
+          "url": "https://ofac.treasury.gov/media/936546/download?inline",
+          "datePdf": true
         },
         {
           "number": "Z",
           "title": "Iran General License Z",
-          "date": "July 10, 2026",
+          "date": "July 14, 2026",
           "expires": "September 12, 2026",
-          "url": "https://ofac.treasury.gov/media/936551/download?inline"
+          "url": "https://ofac.treasury.gov/media/936551/download?inline",
+          "datePdf": true
         },
         {
           "number": "134C",
-          "title": "Russia-related General License 134C",
-          "date": "July 14, 2026",
+          "title": "Authorizing the Delivery and Sale of Crude Oil and Petroleum Products of Russian Federation Origin Loaded on Vessels as of April 17, 2026",
+          "date": "May 18, 2026",
           "expires": "August 21, 2026",
-          "url": "https://ofac.treasury.gov/media/935641/download?inline"
+          "url": "https://ofac.treasury.gov/media/935641/download?inline",
+          "datePdf": true
         }
       ]
     },
@@ -1379,7 +1413,7 @@
         },
         {
           "number": "6",
-          "title": "Non-Proliferation General License 6",
+          "title": "Specified transactions involving certain blocked property authorized",
           "date": "February 06, 2012",
           "expires": "January 31, 2014",
           "url": "https://ofac.treasury.gov/media/8616/download?inline"
@@ -1407,17 +1441,11 @@
         },
         {
           "number": "134C",
-          "title": "Russia-related General License 134C",
-          "date": "February 03, 2014",
-          "expires": "",
-          "url": "https://ofac.treasury.gov/media/935641/download?inline"
-        },
-        {
-          "number": "X1",
-          "title": "Iran General License X1",
-          "date": "April 17, 2026",
-          "expires": "",
-          "url": "https://ofac.treasury.gov/media/936446/download?inline"
+          "title": "Authorizing the Delivery and Sale of Crude Oil and Petroleum Products of Russian Federation Origin Loaded on Vessels as of April 17, 2026",
+          "date": "May 18, 2026",
+          "expires": "June 17, 2026",
+          "url": "https://ofac.treasury.gov/media/935641/download?inline",
+          "datePdf": true
         }
       ]
     },
@@ -1474,10 +1502,11 @@
       "generalLicenses": [
         {
           "number": "25",
-          "title": "Syria General License (GL) 25",
-          "date": "July 1, 2025",
+          "title": "Authorizing Transactions Prohibited by the Syrian Sanctions Regulations or Involving Certain Blocked Persons",
+          "date": "May 23, 2025",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/934306/download?inline"
+          "url": "https://ofac.treasury.gov/media/934306/download?inline",
+          "datePdf": true
         }
       ]
     },
@@ -1687,269 +1716,287 @@
       "generalLicenses": [
         {
           "number": "1B",
-          "title": "Russia-related General License 1B",
+          "title": "Authorizing Certain Activities Involving Federal State Budgetary Institution Marine Rescue Service",
           "date": "December 18, 2024",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/933721/download?inline"
+          "url": "https://ofac.treasury.gov/media/933721/download?inline",
+          "datePdf": true
         },
         {
           "number": "2",
-          "title": "Russia-related General License 2",
+          "title": "Authorizing Certain Servicing Transactions Involving State Corporation Bank for Development and Foreign Economic Affairs Vnesheconombank",
           "date": "December 18, 2024",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918631/download?inline"
         },
         {
           "number": "6D",
-          "title": "Russia-related General License 6D",
-          "date": "February 22, 2022",
+          "title": "Transactions Related to Agricultural Commodities, Medicine, Medical Devices, Replacement Parts and Components, or Software Updates, the Coronavirus Disease 2019 (COVID-19) Pandemic, or Clinical Trials",
+          "date": "June 12, 2024",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/932921/download?inline"
+          "url": "https://ofac.treasury.gov/media/932921/download?inline",
+          "datePdf": true
         },
         {
           "number": "7A",
-          "title": "Russia-related General License 7A",
+          "title": "Authorizing Overflight Payments, Emergency Landings, and Air Ambulance Services",
           "date": "June 12, 2024",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/922841/download?inline"
         },
         {
           "number": "13R",
-          "title": "Russia-related General License 13R",
-          "date": "May 05, 2022",
+          "title": "Authorizing Certain Administrative Transactions Prohibited by Directive 4 under Executive Order 14024",
+          "date": "July 8, 2026",
           "expires": "October 9, 2025",
-          "url": "https://ofac.treasury.gov/media/936431/download?inline"
+          "url": "https://ofac.treasury.gov/media/936431/download?inline",
+          "datePdf": true
         },
         {
           "number": "14",
-          "title": "Russia-related General License 14",
+          "title": "Authorizing Certain Clearing and Settlement Transactions Prohibited by Directive 4 under Executive Order 14024",
           "date": "July 08, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918896/download?inline"
         },
         {
           "number": "18",
-          "title": "Russia-related General License 18",
+          "title": "Authorizing U.S. Dollar-Denominated Banknote Noncommercial, Personal Remittances Prohibited by Executive Order of March 11, 2022",
           "date": "March 02, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919081/download?inline"
         },
         {
           "number": "19",
-          "title": "Russia-related General License 19",
+          "title": "Authorizing Transactions Related to Personal Maintenance of U.S. Individuals Located in the Russian Federation Prohibited by Executive Order of March 11, 2022",
           "date": "March 11, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919086/download?inline"
         },
         {
           "number": "20",
-          "title": "Russia-related General License 20",
+          "title": "Authorizing Third-Country Diplomatic and Consular Funds Transfers",
           "date": "March 11, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/920271/download?inline"
         },
         {
           "number": "25G",
-          "title": "Russia-related General License 25G",
-          "date": "March 24, 2022",
+          "title": "Authorizing Transactions Related to Telecommunications and Certain Internet-Based Communications",
+          "date": "October 30, 2024",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/933536/download?inline"
+          "url": "https://ofac.treasury.gov/media/933536/download?inline",
+          "datePdf": true
         },
         {
           "number": "27",
-          "title": "Russia-related General License 27",
+          "title": "Certain Transactions in Support of Nongovernmental Organizations’ Activities",
           "date": "October 30, 2024",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/922211/download?inline"
         },
         {
           "number": "31",
-          "title": "Russia-related General License 31",
+          "title": "Authorizing Certain Transactions Related to Patents, Trademarks, and Copyrights",
           "date": "April 19, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/922851/download?inline"
         },
         {
           "number": "38A",
-          "title": "Russia-related General License 38A",
+          "title": "Authorizing Transactions Related to Pension Payments",
           "date": "May 05, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/925321/download?inline"
         },
         {
           "number": "40C",
-          "title": "Russia-related General License 40C",
+          "title": "Civil Aviation Safety",
           "date": "August 19, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/929386/download?inline"
         },
         {
           "number": "42",
-          "title": "Russia-related General License 42",
+          "title": "Authorizing Certain Transactions with the Federal Security Service",
           "date": "November 14, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/923976/download?inline"
         },
         {
           "number": "44",
-          "title": "Russia-related General License 44",
+          "title": "Authorizing the Export or Reexport of Certain Accounting Services to U.S. Individuals Located in the Russian Federation",
           "date": "June 28, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/924336/download?inline"
         },
         {
           "number": "46",
-          "title": "Russia-related General License 46",
+          "title": "Authorizing Transactions in Support of an Auction Process to Settle Certain Credit Derivative Transactions Prohibited by Executive Order 14071",
           "date": "July 14, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/924546/download?inline"
         },
         {
           "number": "50",
-          "title": "Russia-related General License 50",
+          "title": "Authorizing the Closing of Individual Accounts at Financial Institutions Blocked Pursuant to Executive Order 14024",
           "date": "July 22, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/925326/download?inline"
         },
         {
           "number": "52",
-          "title": "Russia-related General License 52",
+          "title": "Journalistic Activities and Establishment of News Bureaus",
           "date": "August 19, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/926581/download?inline"
         },
         {
           "number": "53A",
-          "title": "Russia-related General License 53A",
-          "date": "September 15, 2022",
+          "title": "Authorizing Transactions for Diplomatic Missions of the Russian Federation Involving Gazprombank Joint Stock Company or Prohibited by Directive 4 under Executive Order 14024",
+          "date": "November 21, 2024",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/933626/download?inline"
+          "url": "https://ofac.treasury.gov/media/933626/download?inline",
+          "datePdf": true
         },
         {
           "number": "54A",
-          "title": "Russia-related General License 54A",
+          "title": "Authorizing Certain Transactions Involving VEON Ltd. or VEON Holdings B.V. Prohibited by Executive Order 14071",
           "date": "November 21, 2024",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/930441/download?inline"
         },
         {
           "number": "55F",
-          "title": "Russia-related General License 55F",
-          "date": "January 17, 2023",
+          "title": "Authorizing Certain Services Related to Sakhalin-2",
+          "date": "June 11, 2026",
           "expires": "December 18, 2026",
-          "url": "https://ofac.treasury.gov/media/935696/download?inline"
+          "url": "https://ofac.treasury.gov/media/935696/download?inline",
+          "datePdf": true
         },
         {
           "number": "56A",
-          "title": "Russia-related General License 56A",
+          "title": "Authorizing Certain Services with Respect to the European Union",
           "date": "June 11, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/931011/download?inline"
         },
         {
           "number": "57A",
-          "title": "Russia-related General License 57A",
+          "title": "Authorizing Certain Services Related to Vessel Emergencies",
           "date": "February 03, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/931016/download?inline"
         },
         {
           "number": "64",
-          "title": "Russia-related General License 64",
+          "title": "Authorizing Certain Transactions Involving Kommersant",
           "date": "February 03, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/931616/download?inline"
         },
         {
           "number": "65",
-          "title": "Russia-related General License 65",
+          "title": "Authorizing Transactions Related to Telecommunications and Certain Internet-based Communications Involving Megafon PAO or Digital Invest Limited Liability Company",
           "date": "April 12, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/931621/download?inline"
         },
         {
           "number": "84",
-          "title": "Russia-related General License 84",
-          "date": "April 12, 2023",
+          "title": "Authorizing Transactions Related to Closing a Correspondent or Payable-Through Account",
+          "date": "December 22, 2023",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/932476/download?inline"
+          "url": "https://ofac.treasury.gov/media/932476/download?inline",
+          "datePdf": true
         },
         {
           "number": "94",
-          "title": "Russia-related General License 94",
-          "date": "December 22, 2023",
+          "title": "Authorizing Transactions Involving OWH SE i.L. (Formerly Known as VTB Bank Europe SE)",
+          "date": "April 19, 2024",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/932831/download?inline"
+          "url": "https://ofac.treasury.gov/media/932831/download?inline",
+          "datePdf": true
         },
         {
           "number": "103",
-          "title": "Russia-related General License 103",
-          "date": "April 19, 2024",
+          "title": "Authorizing Transactions Related to Imports of Certain Diamond Jewelry Prohibited by Executive Order 14068",
+          "date": "August 23, 2024",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/933116/download?inline"
+          "url": "https://ofac.treasury.gov/media/933116/download?inline",
+          "datePdf": true
         },
         {
           "number": "104A",
-          "title": "Russia-related General License 104A",
-          "date": "August 23, 2024",
-          "expires": "",
-          "url": "https://ofac.treasury.gov/media/934591/download?inline"
+          "title": "Authorizing Transactions Related to Imports of Certain Diamonds Prohibited by Executive Order 14068",
+          "date": "August 27, 2025",
+          "expires": "September 1, 2026",
+          "url": "https://ofac.treasury.gov/media/934591/download?inline",
+          "datePdf": true
         },
         {
           "number": "115D",
-          "title": "Russia-related General License 115D",
-          "date": "August 27, 2025",
-          "expires": "",
-          "url": "https://ofac.treasury.gov/media/935701/download?inline"
+          "title": "Authorizing Certain Transactions Related to Civil Nuclear Energy",
+          "date": "June 11, 2026",
+          "expires": "December 18, 2026",
+          "url": "https://ofac.treasury.gov/media/935701/download?inline",
+          "datePdf": true
         },
         {
           "number": "116",
-          "title": "Russia-related General License 116",
-          "date": "June 11, 2026",
+          "title": "Authorizing Transactions Involving Entities Owned by Bidzina Ivanishvili",
+          "date": "December 27, 2024",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/933766/download?inline"
+          "url": "https://ofac.treasury.gov/media/933766/download?inline",
+          "datePdf": true
         },
         {
           "number": "124B",
-          "title": "Russia-related General License 124B",
-          "date": "December 27, 2024",
+          "title": "Authorizing Petroleum Services and Other Transactions Related to the Caspian Pipeline Consortium, Tengizchevroil, and Karachaganak Projects",
+          "date": "November 14, 2025",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/934746/download?inline"
+          "url": "https://ofac.treasury.gov/media/934746/download?inline",
+          "datePdf": true
         },
         {
           "number": "128C",
-          "title": "Russia-related General License 128C",
-          "date": "November 14, 2025",
-          "expires": "",
-          "url": "https://ofac.treasury.gov/media/935496/download?inline"
+          "title": "Authorizing Certain Transactions Involving Lukoil Retail Service Stations Located Outside of Russia",
+          "date": "April 14, 2026",
+          "expires": "October 29, 2026",
+          "url": "https://ofac.treasury.gov/media/935496/download?inline",
+          "datePdf": true
         },
         {
           "number": "129A",
-          "title": "Russia-related General License 129A",
-          "date": "April 14, 2026",
+          "title": "Authorizing Transactions Involving Rosneft Deutschland GmbH and RN Refining & Marketing GmbH",
+          "date": "March 5, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/935096/download?inline"
+          "url": "https://ofac.treasury.gov/media/935096/download?inline",
+          "datePdf": true
         },
         {
           "number": "130A",
-          "title": "Russia-related General License 130A",
-          "date": "March 05, 2026",
-          "expires": "",
-          "url": "https://ofac.treasury.gov/media/935501/download?inline"
+          "title": "Authorizing Transactions Involving Certain Lukoil Entities in Bulgaria",
+          "date": "April 14, 2026",
+          "expires": "October 29, 2026",
+          "url": "https://ofac.treasury.gov/media/935501/download?inline",
+          "datePdf": true
         },
         {
           "number": "131H",
-          "title": "Russia-related General License 131H",
-          "date": "April 14, 2026",
-          "expires": "",
-          "url": "https://ofac.treasury.gov/media/936636/download?inline"
+          "title": "Authorizing Certain Transactions for the Negotiation of and Entry Into Contingent Contracts for the Sale of Lukoil International GmbH and Related Maintenance Activities",
+          "date": "July 24, 2026",
+          "expires": "August 22, 2026",
+          "url": "https://ofac.treasury.gov/media/936636/download?inline",
+          "datePdf": true
         },
         {
           "number": "132",
-          "title": "Russia-related General License 132",
-          "date": "July 24, 2026",
+          "title": "Authorizing Certain Transactions Involving Paks II Civil Nuclear Power Plant",
+          "date": "November 21, 2025",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/934776/download?inline"
+          "url": "https://ofac.treasury.gov/media/934776/download?inline",
+          "datePdf": true
         }
       ]
     },
@@ -2098,10 +2145,11 @@
       "generalLicenses": [
         {
           "number": "2",
-          "title": "TCO General License 2",
+          "title": "Authorizing the Wind Down of Transactions Involving CCU Commercial Bank Plc",
           "date": "June 23, 2026",
-          "expires": "",
-          "url": "https://ofac.treasury.gov/media/936216/download?inline"
+          "expires": "July 23, 2026",
+          "url": "https://ofac.treasury.gov/media/936216/download?inline",
+          "datePdf": true
         }
       ]
     },
@@ -2229,7 +2277,7 @@
         },
         {
           "number": "134C",
-          "title": "Authorizing the Delivery and Sale of Crude Oil and Petroleum Products of Russian Federation Origin Loaded on Vessels as of April 17, 2026",
+          "title": "Russia-related General License 134C",
           "date": "May 18, 2026",
           "expires": "June 17, 2026",
           "url": "https://ofac.treasury.gov/media/935641/download?inline",
@@ -3033,6 +3081,12 @@
       "description": "Karim Khan denies allegations of engaging in an improper sexual relationship with a junior ICC staff member and seeking to stop her pursuing her complaint."
     },
     {
+      "title": "Trump orders Smithsonian to post warnings about 'inaccurate' US history",
+      "url": "https://www.bbc.co.uk/news/articles/c1w10gwnj74o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 25, 2026",
+      "description": "The Trump administration has often accused the world's largest research museum of harbouring an anti-American bias."
+    },
+    {
       "title": "US hits dozens of countries with new wave of tariffs",
       "url": "https://www.bbc.co.uk/news/articles/cvgj61j6l08o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 24, 2026",
@@ -3061,12 +3115,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cjwx4x04yqzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 24, 2026",
       "description": "The meeting came hours after activist Sonam Wangchuk announced he was ending his 26-day hunger strike."
-    },
-    {
-      "title": "Tech titan ordered to pay ex-wife $644m in divorce settlement",
-      "url": "https://www.bbc.co.uk/news/articles/ckg68jky65eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 24, 2026",
-      "description": "The divorce, involving the chairman of one of South Korea's biggest companies, has gripped the nation."
     },
     {
       "title": "Warning shot or publicity stunt - how worried should we be about the OpenAI hack?",
