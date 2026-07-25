@@ -490,34 +490,59 @@ try {
   console.warn("[pdf-expiry] pdf-parse unavailable — PDF expiry extraction disabled:", e.message);
 }
 
-async function fetchPdfExpiry(pdfUrl) {
-  if (!pdfParse) return "";
+// Extract a GL's ISSUANCE date from its PDF body. The webpage proximity grab
+// in parseSanctionsProgram() frequently captures an adjacent GL's date (this
+// is the "GL 131H shows April 14 (129A's date)" class of bug documented in
+// gl-dates-audit). The PDF is authoritative. Heuristic: the issuance date is
+// the most recent "Month DD, YYYY" that is (a) not the expiry, (b) not a
+// backward reference to an Executive Order / statute ("...Order 14024 of April
+// 15, 2021"), and (c) within the last ~3 years and not in the future — which
+// excludes old EO references and future expiry/deadline dates, leaving the
+// actual issuance/amendment date.
+function extractIssuedDate(text, expires) {
+  const now = Date.now();
+  const THREE_YEARS = 3 * 365 * 24 * 3600 * 1000;
+  const norm = (s) => s.replace(/,/g, "").toLowerCase();
+  const re = /([A-Z][a-z]+ \d{1,2},? \d{4})/g;
+  let m, best = "", bestT = -Infinity;
+  while ((m = re.exec(text)) !== null) {
+    const ds = m[1];
+    if (expires && norm(ds) === norm(expires)) continue;
+    const ctx = text.slice(Math.max(0, m.index - 90), m.index);
+    if (/\bof\s*$/i.test(ctx) && /(?:Order|Act|Pub(?:lic)?\.?\s*Law|U\.?S\.?C)/i.test(ctx)) continue; // EO/statute reference
+    const t = Date.parse(ds);
+    if (isNaN(t) || t > now + 24 * 3600 * 1000 || t < now - THREE_YEARS) continue;
+    if (t > bestT) { bestT = t; best = ds; }
+  }
+  return best;
+}
+
+async function fetchPdfMeta(pdfUrl) {
+  if (!pdfParse) return { issued: "", expires: "" };
   try {
     const res = await fetch(pdfUrl, {
       signal: AbortSignal.timeout(12000),
       headers: { "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36" },
     });
-    if (!res.ok) { console.warn(`[pdf-expiry] ${pdfUrl}: HTTP ${res.status}`); return ""; }
+    if (!res.ok) { console.warn(`[pdf-expiry] ${pdfUrl}: HTTP ${res.status}`); return { issued: "", expires: "" }; }
     const buf = Buffer.from(await res.arrayBuffer());
     const data = await pdfParse(buf);
     const text = (data.text || "").replace(/\s+/g, " ");
-    // PDFs commonly word this as "...authorized through 12:01 a.m. eastern
-    // daylight time, October 23, 2026" — the keyword and the actual date
-    // aren't adjacent (unlike the simpler webpage phrasing the HTML regex
-    // expects), so scan a window after each keyword hit for the first
-    // "Month DD, YYYY" date instead of requiring it immediately follow.
+    // Expiry: PDFs word this as "...authorized through 12:01 a.m. eastern
+    // daylight time, October 23, 2026" — keyword and date aren't adjacent, so
+    // scan a window after each keyword hit for the first "Month DD, YYYY".
     const KEYWORD_RE = /\b(?:through|until|expir(?:es|ing|ation)?(?:\s+on)?)\b/gi;
     const DATE_RE = /([A-Z][a-z]+ \d{1,2},? \d{4})/;
-    let km;
+    let expires = "", km;
     while ((km = KEYWORD_RE.exec(text)) !== null) {
       const window = text.slice(km.index, km.index + 200);
       const dm = DATE_RE.exec(window);
-      if (dm) return dm[1];
+      if (dm) { expires = dm[1]; break; }
     }
-    return "";
+    return { issued: extractIssuedDate(text, expires), expires };
   } catch (e) {
     console.warn(`[pdf-expiry] ${pdfUrl}: ${e.message}`);
-    return "";
+    return { issued: "", expires: "" };
   }
 }
 
@@ -656,22 +681,39 @@ for (const prog of changedPrograms) {
   if (!html) { console.warn(`  skipped (fetch failed)`); continue; }
   const parsed = parseSanctionsProgram(html);
 
-  // Backfill expiry from each GL's own PDF when the webpage text didn't
-  // state one (see fetchPdfExpiry above for why). Carry forward an
-  // already-known value from the existing cache first — no refetch needed —
+  // Backfill the issuance date + expiry from each GL's own PDF (authoritative)
+  // — see fetchPdfMeta above. Carry forward an already-known value from the
+  // existing cache first — no refetch needed —
   // and only spend the per-run PDF-fetch budget on GLs whose expiry is
   // genuinely still unknown.
   const cachedGLs = cachedPrograms[prog.slug]?.generalLicenses ?? [];
   for (const gl of parsed.generalLicenses) {
-    if (gl.expires) continue;
     const cachedMatch = cachedGLs.find(c => c.number === gl.number);
-    if (cachedMatch?.expires) { gl.expires = cachedMatch.expires; continue; }
-    if (pdfExpiryFetchCount >= PDF_EXPIRY_FETCH_CAP) continue;
-    pdfExpiryFetchCount++;
-    const exp = await fetchPdfExpiry(gl.url);
-    if (exp) {
-      gl.expires = exp;
-      console.log(`  [pdf-expiry] GL ${gl.number}: found expiry "${exp}" in PDF body`);
+    // Same underlying PDF (same URL) = same document; its issuance/expiry can't
+    // have changed, so carry forward PDF-verified values and skip the refetch.
+    // An amended GL (e.g. 131G → 131H) has a NEW PDF URL, so sameDoc is false
+    // and we refetch to get the amendment's real date.
+    const sameDoc = cachedMatch && cachedMatch.url === gl.url;
+    if (sameDoc) {
+      if (cachedMatch.datePdf && cachedMatch.date) { gl.date = cachedMatch.date; gl.datePdf = true; }
+      if (cachedMatch.expires) gl.expires = cachedMatch.expires;
+    }
+    // Fetch the PDF (authoritative) when this is a new/amended document, or we
+    // still lack a PDF-verified issuance date or an expiry. Budget-capped.
+    const needPdf = pdfParse && pdfExpiryFetchCount < PDF_EXPIRY_FETCH_CAP &&
+                    (!sameDoc || !gl.datePdf || !gl.expires);
+    if (needPdf) {
+      pdfExpiryFetchCount++;
+      const meta = await fetchPdfMeta(gl.url);
+      if (meta.issued) {
+        gl.date = meta.issued;
+        gl.datePdf = true; // marks this date as PDF-verified so it carries forward
+        console.log(`  [pdf] GL ${gl.number}: issued "${meta.issued}" (was "${cachedMatch?.date ?? "?"}")`);
+      }
+      if (meta.expires && !gl.expires) {
+        gl.expires = meta.expires;
+        console.log(`  [pdf] GL ${gl.number}: expires "${meta.expires}"`);
+      }
     }
   }
 
