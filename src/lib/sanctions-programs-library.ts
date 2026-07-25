@@ -725,12 +725,15 @@ archive: {
       // russia-hfa, sdgt, and non-prolif. GL 134C's and GL X's real entries
       // live in the russia-hfa and iran blocks respectively — neither
       // belongs in russia-ukraine.
-            { number: "GL 11", title: "Ukraine General License 11", date: "December 20, 2016", url: "https://ofac.treasury.gov/media/8781/download?inline", addedDate: "June 27, 2026" },
-      { number: "GL 19", title: "Ukraine General License 19", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/918691/download?inline", addedDate: "June 27, 2026" },
-      { number: "GL 20", title: "Ukraine General License 20", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/918696/download?inline", addedDate: "June 27, 2026" },
-      { number: "GL 22", title: "Ukraine General License 22", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/918706/download?inline", addedDate: "June 27, 2026" },
-      { number: "GL 23", title: "Ukraine General License 23", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/919151/download?inline", addedDate: "June 27, 2026" },
-      { number: "GL 24", title: "Ukraine General License 24", date: "March 11, 2022", url: "https://ofac.treasury.gov/media/919801/download?inline", addedDate: "June 27, 2026" },
+                        { number: "GL 18", title: "Ukraine General License 18", date: "December 20, 2016", url: "https://ofac.treasury.gov/media/918686/download?inline", addedDate: "July 24, 2026" },
+            { number: "GL 25", title: "Journalistic Activities and Establishment of News Bureaus in Certain Regions of Ukraine", date: "March 18, 2022", url: "https://ofac.treasury.gov/media/920276/download?inline", addedDate: "July 24, 2026" },
+            { number: "GL 26A", title: "Transactions Authorized Pursuant to the Russian Harmful Foreign Activities Sanctions Regulations", date: "January 15, 2025", url: "https://ofac.treasury.gov/media/933911/download?inline", addedDate: "July 24, 2026" },
+{ number: "GL 11", title: "Ukraine General License 11", date: "December 20, 2016", url: "https://ofac.treasury.gov/media/8781/download?inline", addedDate: "June 27, 2026" },
+      { number: "GL 19", title: "Authorizing Transactions Related to Telecommunications and Mail", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/918691/download?inline", addedDate: "June 27, 2026" },
+      { number: "GL 20", title: "Official Business of Certain International Organizations and Entities", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/918696/download?inline", addedDate: "June 27, 2026" },
+      { number: "GL 22", title: "Authorizing the Exportation of Certain Services and Software Incident to Internet-Based Communications", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/918706/download?inline", addedDate: "June 27, 2026" },
+      { number: "GL 23", title: "Certain Transactions in Support of Nongovernmental Organizations’ Activities", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/919151/download?inline", addedDate: "June 27, 2026" },
+      { number: "GL 24", title: "Transactions Related to the Provision of Maritime Services", date: "March 11, 2022", url: "https://ofac.treasury.gov/media/919801/download?inline", addedDate: "June 27, 2026" },
 { number: "Ukraine GL 26A", title: "Transactions Authorized Pursuant to the Russian Harmful Foreign Activities Sanctions Regulations", date: "January 15, 2025", url: "https://ofac.treasury.gov/media/933911/download?inline" },
       { number: "Ukraine GL 25", title: "Journalistic Activities and Establishment of News Bureaus in Certain Regions of Ukraine", date: "March 24, 2022", url: "https://ofac.treasury.gov/media/920276/download?inline" },
       { number: "Ukraine GL 21", title: "Authorizing Noncommercial, Personal Remittances and the Operation of Accounts", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/918701/download?inline" },
@@ -960,6 +963,7 @@ archive: {
       // May 23, 2025, official title "Authorizing Transactions Prohibited
       // by the Syrian Sanctions Regulations or Involving Certain Blocked
       // Persons" — kept the correctly-dated/titled entry, removed the dupe.
+{ number: "GL 25", title: "Syria General License (GL) 25", date: "July 1, 2025", url: "https://ofac.treasury.gov/media/934306/download?inline", addedDate: "July 24, 2026" },
 { number: "Syria GL 25", title: "Authorizing Transactions Prohibited by the Syrian Sanctions Regulations or Involving Certain Blocked Persons", date: "May 23, 2025", url: "https://ofac.treasury.gov/media/934306/download?inline" },
     ],
     notes: "Syria broad sanctions LIFTED July 1, 2025. PAARSS residual program covers: Assad & associates, human rights abusers, Captagon traffickers, proliferation-linked persons, ISIS/AQ affiliates, Iran proxies in Syria.",
@@ -978,7 +982,7 @@ archive: {
     id: "sdgt",
     name: "Counter Terrorism Sanctions (SDGT)",
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-terrorism-sanctions",
-    region: "Global", category: "thematic", lastUpdated: "Jul 01, 2026", status: "active",
+    region: "Global", category: "thematic", lastUpdated: "Jul 23, 2026", status: "active",
     executiveOrders: [
       // Added 14157/13886/13099/12947 2026-06-26: were missing — OFAC's live
       // page lists 7 EOs, library only had 3. Verified via direct fetch of
@@ -996,7 +1000,15 @@ archive: {
       // Russia HFA, not SDGT) — same sitewide "Recent Actions" widget
       // mis-scrape as the duplicates found in Iran, russia-hfa, russia-
       // ukraine, and non-prolif. Its real entry lives in the russia-hfa block.
-                        { number: "GL 7A", title: "Counter Terrorism General License 7a", date: "December 07, 2010", url: "https://ofac.treasury.gov/media/8396/download?inline", addedDate: "July 1, 2026" },
+                                                { number: "GL 8A", title: "Counter Terrorism General License 8A", date: "May 14, 2013", url: "https://ofac.treasury.gov/media/48841/download?inline", addedDate: "July 24, 2026" },
+                        { number: "GL 14", title: "Counter Terrorism General License 14", date: "October 26, 2020", url: "https://ofac.treasury.gov/media/912996/download?inline", addedDate: "July 24, 2026" },
+                        { number: "GL 15", title: "Counter Terrorism General License 15", date: "September 24, 2021", url: "https://ofac.treasury.gov/media/913001/download?inline", addedDate: "July 24, 2026" },
+                        { number: "GL 16", title: "Counter Terrorism General License 16", date: "September 24, 2021", url: "https://ofac.treasury.gov/media/915126/download?inline", addedDate: "July 24, 2026" },
+                        { number: "GL 17", title: "Counter Terrorism General License 17", date: "December 10, 2021", url: "https://ofac.treasury.gov/media/917126/download?inline", addedDate: "July 24, 2026" },
+                        { number: "GL 18", title: "Counter Terrorism General License 18", date: "December 22, 2021", url: "https://ofac.treasury.gov/media/917131/download?inline", addedDate: "July 24, 2026" },
+                        { number: "GL 19", title: "Counter Terrorism General License 19", date: "December 22, 2021", url: "https://ofac.treasury.gov/media/917136/download?inline", addedDate: "July 24, 2026" },
+                        { number: "GL 20", title: "Counter Terrorism General License 20", date: "December 22, 2021", url: "https://ofac.treasury.gov/media/918776/download?inline", addedDate: "July 24, 2026" },
+{ number: "GL 7A", title: "Counter Terrorism General License 7a", date: "December 07, 2010", url: "https://ofac.treasury.gov/media/8396/download?inline", addedDate: "July 1, 2026" },
 { number: "GL 2", title: "Counter Terrorism General License 2", date: "April 12, 2006", url: "https://ofac.treasury.gov/media/8366/download?inline", addedDate: "June 27, 2026" },
       { number: "GL 4", title: "Counter Terrorism General License 4", date: "April 12, 2006", url: "https://ofac.treasury.gov/media/8376/download?inline", addedDate: "June 27, 2026" },
       { number: "GL 22A", title: "Counter Terrorism General License 22A", date: "February 25, 2022", url: "https://ofac.treasury.gov/media/934031/download?inline", addedDate: "June 27, 2026" },
