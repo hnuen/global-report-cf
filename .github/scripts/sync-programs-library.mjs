@@ -281,6 +281,22 @@ function backfillTitle(itemsText, number, newTitle) {
   return { text: newLines.join("\n"), changed, oldTitle };
 }
 
+// Correct an existing entry's issuance `date` from the PDF's signed date — used
+// only when the scrape read it off the "Dated:"/signature line (high confidence),
+// so a mis-picked reference date can never overwrite a good one.
+function backfillDate(itemsText, number, newDate) {
+  const lines = itemsText.split("\n");
+  let changed = false, oldDate = "";
+  const newLines = lines.map((line) => {
+    if (changed || !line.includes(`number: "GL ${number}"`)) return line;
+    const dm = /\bdate:\s*"([^"]*)"/.exec(line);
+    if (!dm || dm[1] === newDate) return line;
+    changed = true; oldDate = dm[1];
+    return line.slice(0, dm.index) + `date: "${esc(newDate)}"` + line.slice(dm.index + dm[0].length);
+  });
+  return { text: newLines.join("\n"), changed, oldDate };
+}
+
 // Recompute a leading "// N GLs ..." comment to match the new entry count, if present.
 function refreshCountComment(itemsText) {
   const count = (itemsText.match(/\{\s*number:/g) || []).length;
@@ -394,6 +410,18 @@ function syncBlockEntries(blockText, scraped, log, ownMeta, allMetas) {
         notes.push(`Backfilled title onto GL ${gl.number}: "${result.oldTitle}" → "${gl.title}"`);
       }
     }
+    // Correct the issuance date on existing entries — ONLY when the scrape read
+    // it off the PDF's signed "Dated:"/signature line (dateConfident), so a
+    // reference date can never overwrite a good one.
+    for (const gl of scraped.generalLicenses || []) {
+      if (!gl.number || !gl.date || !gl.dateConfident) continue;
+      const result = backfillDate(activeItems, gl.number, gl.date);
+      if (result.changed) {
+        activeItems = result.text;
+        backfilledAny = true;
+        notes.push(`Backfilled signed issuance date onto GL ${gl.number}: "${result.oldDate}" → "${gl.date}"`);
+      }
+    }
 
     const known = new Set([...extractNumbers(activeItems), ...(archiveItems !== null ? extractNumbers(archiveItems) : [])]);
     const candidateGLs = (scraped.generalLicenses || []).filter((gl) => gl.number && !known.has(`GL ${gl.number}`));
@@ -436,11 +464,24 @@ function syncBlockEntries(blockText, scraped, log, ownMeta, allMetas) {
             // Date/Expired Date as separate columns, so the original issue date
             // needs to survive the move into archive{}.
             const titleM = new RegExp(`number:\\s*"GL ${predecessor}",\\s*title:\\s*"([^"]*)"(?:,\\s*date:\\s*"([^"]*)")?`).exec(activeItems);
+            // A superseding GL can't predate the GL it replaces. OFAC GL PDFs
+            // sometimes surface a reference date (e.g. a "vessels loaded as of"
+            // date) rather than the issuance date; if the scraped date is
+            // earlier than the predecessor's, use today() (the publication date
+            // this run first saw it) as the issuance date instead.
+            const predDate = titleM?.[2];
+            if (predDate && gl.date) {
+              const gd = Date.parse(gl.date), pd = Date.parse(predDate);
+              if (!isNaN(gd) && !isNaN(pd) && gd < pd) {
+                gl.__date = today();
+                notes.push(`GL ${gl.number} scraped date "${gl.date}" predates superseded GL ${predecessor} ("${predDate}") — corrected issuance date to ${gl.__date}`);
+              }
+            }
             const removed = removeEntryLine(activeItems, `GL ${predecessor}`);
             activeItems = removed.text;
             const archIndent = entryIndentOf(archiveItems) || "        ";
             const dateField = titleM?.[2] ? `date: "${esc(titleM[2])}", ` : "";
-            const archivedLine = `${archIndent}{ number: "GL ${predecessor}", title: "${esc(titleM?.[1] || "")}", ${dateField}archived: true, archivedNote: "Superseded by General License ${esc(gl.number)}", archivedDate: "${esc(gl.date)}" },\n`;
+            const archivedLine = `${archIndent}{ number: "GL ${predecessor}", title: "${esc(titleM?.[1] || "")}", ${dateField}archived: true, archivedNote: "Superseded by General License ${esc(gl.number)}", archivedDate: "${esc(gl.__date || gl.date)}" },\n`;
             archiveItems = insertAtTop(archiveItems, archivedLine);
             notes.push(`Archived GL ${predecessor} → superseded by GL ${gl.number}`);
           } else {
@@ -452,7 +493,7 @@ function syncBlockEntries(blockText, scraped, log, ownMeta, allMetas) {
       let adds = "";
       for (const gl of newGLs) {
         const expiresField = gl.expires ? `, expires: "${esc(gl.expires)}"` : "";
-        adds += `${indent}{ number: "GL ${esc(gl.number)}", title: "${esc(gl.title)}", date: "${esc(gl.date)}", url: "${esc(gl.url)}"${expiresField}, addedDate: "${today()}" },\n`;
+        adds += `${indent}{ number: "GL ${esc(gl.number)}", title: "${esc(gl.title)}", date: "${esc(gl.__date || gl.date)}", url: "${esc(gl.url)}"${expiresField}, addedDate: "${today()}" },\n`;
       }
       activeItems = insertAtTop(activeItems, adds);
       activeItems = refreshCountComment(activeItems);

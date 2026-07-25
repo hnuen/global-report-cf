@@ -533,7 +533,7 @@ archive: {
       // block. GL 131G below had the same generic-placeholder problem —
       // fixed its title/date/expires from the GL's own PDF (media/936301):
       // dated June 25, 2026, authorized through July 25, 2026.
-{ number: "GL 131H", title: "Authorizing Certain Transactions for the Negotiation of and Entry Into Contingent Contracts for the Sale of Lukoil International GmbH and Related Maintenance Activities", date: "April 14, 2026", url: "https://ofac.treasury.gov/media/936636/download?inline", addedDate: "July 24, 2026" , expires: "August 22, 2026"},
+{ number: "GL 131H", title: "Authorizing Certain Transactions for the Negotiation of and Entry Into Contingent Contracts for the Sale of Lukoil International GmbH and Related Maintenance Activities", date: "July 24, 2026", url: "https://ofac.treasury.gov/media/936636/download?inline", addedDate: "July 24, 2026" , expires: "August 22, 2026"},
 { number: "GL 6D", title: "Transactions Related to Agricultural Commodities, Medicine, Medical Devices, Replacement Parts and Components, or Software Updates, the Coronavirus Disease 2019 (COVID-19) Pandemic, or Clinical Trials", date: "February 22, 2022", url: "https://ofac.treasury.gov/media/932921/download?inline", addedDate: "June 27, 2026" },
       { number: "GL 14", title: "Authorizing Certain Clearing and Settlement Transactions Prohibited by Directive 4 under Executive Order 14024", date: "April 08, 2026", url: "https://ofac.treasury.gov/media/918896/download?inline", addedDate: "June 27, 2026" },
       { number: "GL 20", title: "Authorizing Third-Country Diplomatic and Consular Funds Transfers", date: "March 11, 2022", url: "https://ofac.treasury.gov/media/920271/download?inline", addedDate: "June 27, 2026" },
@@ -601,7 +601,7 @@ archive: {
 
         archive: {
       generalLicenses: [
-                                                                { number: "GL 131G", title: "Authorizing Certain Transactions for the Negotiation of and Entry Into Contingent Contracts for the Sale of Lukoil International GmbH and Related Maintenance Activities", date: "June 25, 2026", archived: true, archivedNote: "Superseded by General License 131H", archivedDate: "April 14, 2026" },
+                                                                { number: "GL 131G", title: "Authorizing Certain Transactions for the Negotiation of and Entry Into Contingent Contracts for the Sale of Lukoil International GmbH and Related Maintenance Activities", date: "June 25, 2026", archived: true, archivedNote: "Superseded by General License 131H", archivedDate: "July 24, 2026" },
 { number: "GL 13R", title: "Russia-related General License 13R", date: "May 05, 2022", archived: true, archivedNote: "Expired October 9, 2025 — no successor GL detected", archivedDate: "October 9, 2025" },
 { number: "GL 13Q", title: "Russia-related General License 13Q", date: "May 05, 2022", archived: true, archivedNote: "Superseded by General License 13R", archivedDate: "May 05, 2022" },
 { number: "GL 134C", title: "Authorizing the Delivery and Sale of Crude Oil and Petroleum Products of Russian Federation Origin Loaded on Vessels as of April 17, 2026", date: "May 18, 2026", archived: true, archivedNote: "Expired June 17, 2026 — fixed wind-down date reached; no successor GL issued (133/134 Russia-oil-vessel GL series ends at 134C)", archivedDate: "June 17, 2026" },

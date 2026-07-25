@@ -500,21 +500,36 @@ try {
 // excludes old EO references and future expiry/deadline dates, leaving the
 // actual issuance/amendment date.
 function extractIssuedDate(text, expires) {
+  const DATE = "([A-Z][a-z]+ \\d{1,2},? \\d{4})";
+  // 1. HIGH CONFIDENCE — the issuance date is printed on the signed page: OFAC
+  //    GLs end with a "Dated: <date>" line above the Director's signature.
+  let m = new RegExp(`\\bDated\\s*:?\\s*${DATE}`, "i").exec(text);
+  if (m) return { date: m[1], confident: true };
+  //    Otherwise take the date nearest the OFAC Director signature block.
+  const sig = /Director,?\s+Office of Foreign Assets Control/i.exec(text);
+  if (sig) {
+    const win = text.slice(Math.max(0, sig.index - 220), sig.index + 40);
+    const ds = win.match(new RegExp(DATE, "g"));
+    if (ds && ds.length) return { date: ds[ds.length - 1], confident: true };
+  }
+  // 2. LOW CONFIDENCE fallback — latest plausible date that isn't the expiry or
+  //    an EO/statute reference. For display only; never overwrites an existing
+  //    date (a mis-picked reference date must not spread across the library).
   const now = Date.now();
   const THREE_YEARS = 3 * 365 * 24 * 3600 * 1000;
   const norm = (s) => s.replace(/,/g, "").toLowerCase();
-  const re = /([A-Z][a-z]+ \d{1,2},? \d{4})/g;
-  let m, best = "", bestT = -Infinity;
-  while ((m = re.exec(text)) !== null) {
-    const ds = m[1];
+  const re = new RegExp(DATE, "g");
+  let mm, best = "", bestT = -Infinity;
+  while ((mm = re.exec(text)) !== null) {
+    const ds = mm[1];
     if (expires && norm(ds) === norm(expires)) continue;
-    const ctx = text.slice(Math.max(0, m.index - 90), m.index);
-    if (/\bof\s*$/i.test(ctx) && /(?:Order|Act|Pub(?:lic)?\.?\s*Law|U\.?S\.?C)/i.test(ctx)) continue; // EO/statute reference
+    const ctx = text.slice(Math.max(0, mm.index - 90), mm.index);
+    if (/\bof\s*$/i.test(ctx) && /(?:Order|Act|Pub(?:lic)?\.?\s*Law|U\.?S\.?C)/i.test(ctx)) continue;
     const t = Date.parse(ds);
     if (isNaN(t) || t > now + 24 * 3600 * 1000 || t < now - THREE_YEARS) continue;
     if (t > bestT) { bestT = t; best = ds; }
   }
-  return best;
+  return { date: best, confident: false };
 }
 
 // Extract a GL's real title from its PDF. OFAC GL PDFs read
@@ -556,7 +571,8 @@ async function fetchPdfMeta(pdfUrl, number) {
       const dm = DATE_RE.exec(window);
       if (dm) { expires = dm[1]; break; }
     }
-    return { issued: extractIssuedDate(text, expires), expires, title: extractPdfTitle(text, number) };
+    const iss = extractIssuedDate(text, expires);
+    return { issued: iss.date, issuedConfident: iss.confident, expires, title: extractPdfTitle(text, number) };
   } catch (e) {
     console.warn(`[pdf-expiry] ${pdfUrl}: ${e.message}`);
     return { issued: "", expires: "", title: "" };
@@ -735,7 +751,8 @@ for (const prog of changedPrograms) {
       if (meta.issued) {
         gl.date = meta.issued;
         gl.datePdf = true; // marks this date as PDF-verified so it carries forward
-        console.log(`  [pdf] GL ${gl.number}: issued "${meta.issued}" (was "${cachedMatch?.date ?? "?"}")`);
+        gl.dateConfident = meta.issuedConfident; // true only when read off the signed "Dated:"/signature line
+        console.log(`  [pdf] GL ${gl.number}: issued "${meta.issued}"${meta.issuedConfident ? " (signed)" : " (approx)"} (was "${cachedMatch?.date ?? "?"}")`);
       }
       if (meta.expires && !gl.expires) {
         gl.expires = meta.expires;
