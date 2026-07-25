@@ -765,6 +765,35 @@ const bisNews = parseBisNews(bisJson);
 console.log(`[refresh-briefing] BIS export-control-relevant documents parsed: ${bisNews.length} entries`);
 bisNews.slice(0, 5).forEach(e => console.log(`  ${e.date} — ${e.title} (${e.url})`));
 
+// ── U.S. political / policy sources that can drive sanctions ────────────────
+// Executive Orders establish sanctions authorities; DOJ prosecutes evasion;
+// Commerce/BIS set export-control policy; Congress writes sanctions statutes.
+// Standard RSS, so parseRssItems handles them; keyword-filter to keep only
+// sanctions-relevant items so routine political news doesn't flood the feed.
+// All link to trusted domains (federalregister.gov / news.google.com → outlet),
+// and are scored + gated like everything else, so they only ALERT when the
+// headline is genuinely sanctions-relevant.
+const POLITICAL_FEEDS = [
+  { url: "https://www.federalregister.gov/documents/search.rss?conditions%5Btype%5D%5B%5D=PRESDOCU&conditions%5Bterm%5D=sanctions+national+emergency+blocking+property", source: "White House — Presidential Actions" },
+  { url: "https://news.google.com/rss/search?q=site:justice.gov+(sanctions+OR+%22export+control%22+OR+FARA+OR+%22national+security%22)+2026&hl=en-US&gl=US&ceid=US:en", source: "U.S. Department of Justice" },
+  { url: "https://news.google.com/rss/search?q=(site:bis.doc.gov+OR+site:commerce.gov)+(%22export+control%22+OR+%22entity+list%22+OR+sanctions)+2026&hl=en-US&gl=US&ceid=US:en", source: "U.S. Commerce / BIS" },
+  { url: "https://news.google.com/rss/search?q=Congress+(%22sanctions+act%22+OR+%22sanctions+bill%22+OR+%22sanctions+legislation%22)+2026&hl=en-US&gl=US&ceid=US:en", source: "U.S. Congress — Sanctions Legislation" },
+];
+const politicalItems = [];
+for (const feed of POLITICAL_FEEDS) {
+  try {
+    const xml = await fetchOfac(feed.url);
+    const items = parseRssItems(xml)
+      .filter(it => SANCTIONS_KEYWORDS.test(`${it.title} ${it.description}`))
+      .slice(0, 6);
+    for (const it of items) politicalItems.push({ ...it, source: feed.source });
+  } catch (e) {
+    console.log(`[refresh-briefing] Political feed failed (${feed.source}): ${String(e).slice(0, 60)}`);
+  }
+}
+console.log(`[refresh-briefing] U.S. political/policy sources parsed: ${politicalItems.length} entries`);
+politicalItems.slice(0, 5).forEach(e => console.log(`  ${e.date} — [${e.source}] ${e.title} (${e.url})`));
+
 // ── Early-exit: skip Gemini if nothing changed since last run ─────────────
 // Compare first recent-action URL (most recent = most likely to change),
 // first civil-penalty row (date + name), and whether any programs updated.
@@ -1762,12 +1791,47 @@ const treasuryInjected = injectExtra(treasuryNews, entry => ({
   sourceUrl: entry.url,
 }));
 
-const extraInjected = [...ofsiInjected, ...europaInjected, ...unInjected, ...bbcInjected, ...ajInjected, ...occInjected, ...economicsInjected, ...bisInjected, ...regionsInjected, ...treasuryInjected];
+// Region reflects the SUBJECT of the item, not the (US) publisher — a White
+// House EO on Russia or a DOJ Iran-evasion case is region Russia/Iran, not US.
+function detectRegion(text) {
+  const t = (text || "").toLowerCase();
+  if (/\biran\b|tehran|irgc/.test(t)) return "Iran";
+  if (/russia|russian|moscow|kremlin|belarus/.test(t)) return "Russia";
+  if (/\bchina\b|chinese|hong kong|beijing|\bprc\b|xinjiang|uyghur/.test(t)) return "China";
+  if (/venezuela|maduro|caracas/.test(t)) return "Venezuela";
+  if (/north korea|\bdprk\b|pyongyang/.test(t)) return "North Korea";
+  if (/\bcuba\b|havana/.test(t)) return "Cuba";
+  if (/syria|damascus/.test(t)) return "Syria";
+  if (/myanmar|burma/.test(t)) return "Myanmar";
+  if (/ukraine|kyiv|kiev/.test(t)) return "Ukraine";
+  if (/hamas|hezbollah|hizballah|houthi|yemen|gaza|\bisrael|lebanon|middle east/.test(t)) return "Middle East";
+  if (/afghanistan|taliban/.test(t)) return "Afghanistan";
+  return "United States";
+}
+
+// U.S. political / policy sources — filed under sanctions so they're scored
+// and routed like sanctions news, but keyword-gated so only genuinely
+// sanctions-relevant policy items ever alert.
+const politicalInjected = injectExtra(politicalItems, entry => ({
+  section: "sanctions",
+  category: "Policy",
+  region: detectRegion(`${entry.title} ${entry.description}`),
+  impact: "medium",
+  date: entry.date || "",
+  headline: entry.title,
+  body: [
+    entry.description || `${entry.source} published: "${entry.title}".`,
+  ],
+  source: entry.source,
+  sourceUrl: entry.url,
+}));
+
+const extraInjected = [...ofsiInjected, ...europaInjected, ...unInjected, ...bbcInjected, ...ajInjected, ...occInjected, ...economicsInjected, ...bisInjected, ...regionsInjected, ...treasuryInjected, ...politicalInjected];
 if (extraInjected.length > 0) {
   const baseId2 = (briefing.articles?.length ?? 0) + 1;
   extraInjected.forEach((a, i) => { a.id = baseId2 + i; });
   briefing.articles = [...(briefing.articles ?? []), ...extraInjected];
-  console.log(`[refresh-briefing] Injected ${ofsiInjected.length} OFSI + ${europaInjected.length} EU + ${unInjected.length} UN + ${bbcInjected.length} BBC + ${ajInjected.length} Al Jazeera + ${occInjected.length} OCC + ${economicsInjected.length} Fed + ${bisInjected.length} BIS + ${regionsInjected.length} Regions + ${treasuryInjected.length} Treasury entries — total articles: ${briefing.articles.length}`);
+  console.log(`[refresh-briefing] Injected ${ofsiInjected.length} OFSI + ${europaInjected.length} EU + ${unInjected.length} UN + ${bbcInjected.length} BBC + ${ajInjected.length} Al Jazeera + ${occInjected.length} OCC + ${economicsInjected.length} Fed + ${bisInjected.length} BIS + ${regionsInjected.length} Regions + ${treasuryInjected.length} Treasury + ${politicalInjected.length} Political entries — total articles: ${briefing.articles.length}`);
 }
 
 // ── POST to /api/save-briefing (retry once on failure) ─────────────────────
