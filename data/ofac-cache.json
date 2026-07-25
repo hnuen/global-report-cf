@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-25T02:43:27.448Z",
+  "updatedAt": "2026-07-25T13:09:12.824Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260724",
@@ -2358,12 +2358,11 @@
         },
         {
           "number": "21",
-          "title": "Authorizing Noncommercial, Personal Remittances and the Operation of Accounts",
+          "title": "Ukraine General License 21",
           "date": "February 21, 2022",
           "expires": "February 21, 2022",
           "url": "https://ofac.treasury.gov/media/918701/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "22",
@@ -3050,16 +3049,16 @@
   "unNotices": [],
   "bbcNews": [
     {
+      "title": "Iran-backed Houthis claim missile attack on Saudi Arabia",
+      "url": "https://www.bbc.co.uk/news/articles/cj9d27v70j1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 25, 2026",
+      "description": "US military says it disabled a tanker that was attempting to evade the American blockade on Iranian ports."
+    },
+    {
       "title": "Ten killed in Russian attack on drone exhibition near Kyiv",
       "url": "https://www.bbc.co.uk/news/articles/cj637zd1k1ko?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 25, 2026",
       "description": "The event, attended by prominent members of the Ukrainian defence industry, was hit by ballistic missiles in the middle of the day."
-    },
-    {
-      "title": "US and Iran trade more strikes in Gulf as fears of escalation mount",
-      "url": "https://www.bbc.co.uk/news/articles/c05ql5llj4do?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 24, 2026",
-      "description": "It comes as Iran condemned the US plan to use frozen Iranian assets to pay for war damages."
     },
     {
       "title": "World chess chief faces endgame after EU announces Russia war sanctions",
@@ -3088,22 +3087,40 @@
   ],
   "ajNews": [
     {
-      "title": "Iran war live: Trump says US ‘locked and loaded’ as it seeks Iran talks",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/7/25/iran-war-live-trump-says-us-locked-and-loaded-as-it-seeks-iran-talks?traffic_source=rss",
+      "title": "Iran blames US for Hormuz dispute as both sides confirm ongoing talks",
+      "url": "https://www.aljazeera.com/news/2026/7/25/iran-blames-us-for-hormuz-dispute-as-both-sides-confirm-ongoing-talks?traffic_source=rss",
       "date": "July 25, 2026",
-      "description": "US President Donald Trump says Washington remains ‘locked and loaded’ while pursuing diplomatic talks with Tehran."
+      "description": "Iran reports no new US strikes overnight into Saturday for the first time in two weeks."
     },
     {
-      "title": "Iran’s Abbas Araghchi vows ‘we fear no one’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/24/irans-abbas-araghchi-vows-we-fear-no-one?traffic_source=rss",
-      "date": "July 24, 2026",
-      "description": "Iranian Foreign Minister Abbas Araghchi said Iran does not fear threats or &#039;succumb to pressures&#039;."
+      "title": "At least 11 killed in Ukrainian and Russian strikes as holiday camp hit",
+      "url": "https://www.aljazeera.com/news/2026/7/25/at-least-11-killed-in-ukrainian-and-russian-strikes-as-holiday-camp-hit?traffic_source=rss",
+      "date": "July 25, 2026",
+      "description": "Separately, at least eight people killed in Ukrainian attacks on a Russian-controlled area."
     },
     {
-      "title": "Venezuela to exit International Criminal Court, accusing it of ‘bias’",
-      "url": "https://www.aljazeera.com/news/2026/7/24/venezuela-to-exit-international-criminal-court-accusing-it-of-bias?traffic_source=rss",
-      "date": "July 24, 2026",
-      "description": "Announcement comes as Venezuela has hewed close to Trump administration, who has pledged to&#039;disable&#039; international court."
+      "title": "Two buses collide in Syria, killing at least 35 people",
+      "url": "https://www.aljazeera.com/news/2026/7/25/two-buses-collide-in-syria-killing-at-least-35-people?traffic_source=rss",
+      "date": "July 25, 2026",
+      "description": "One of the buses was carrying members of the Internal Security Forces, while the other was transporting civilians."
+    },
+    {
+      "title": "How Volker Turk won new UN rights chief term despite US, Israel opposition",
+      "url": "https://www.aljazeera.com/news/2026/7/25/how-volker-turk-won-a-new-term-as-un-rights-chief-despite-israel-opposition?traffic_source=rss",
+      "date": "July 25, 2026",
+      "description": "UN General Assembly votes 144-10 to grant Turk a new four-year term, despite objections from the US, Israel and Russia."
+    },
+    {
+      "title": "Guterres arrives in Syria in first official visit by a UN chief in 17 years",
+      "url": "https://www.aljazeera.com/news/2026/7/25/guterres-arrives-in-syria-in-first-official-visit-by-a-un-chief-in-17-years?traffic_source=rss",
+      "date": "July 25, 2026",
+      "description": "The UN chief will meet Syrian President Ahmed al-Sharaa, who was under UN Security Council sanctions until last year."
+    },
+    {
+      "title": "Venezuelans hold vigil one month after devastating earthquakes",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/25/venezuelans-hold-vigil-one-month-after-devastating-earthquakes?traffic_source=rss",
+      "date": "July 25, 2026",
+      "description": "One month after Venezuela’s earthquakes, families are still searching collapsed buildings for missing loved ones."
     }
   ],
   "occNews": [
@@ -3216,16 +3233,28 @@
   ],
   "regionsNews": [
     {
-      "title": "More than 220,000 evacuated in France and Spain due to wildfires",
-      "url": "https://www.bbc.co.uk/news/articles/czjlenp0xk8o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Trump takes swipes at press during White House Correspondents' Dinner",
+      "url": "https://www.bbc.co.uk/news/articles/cd7le4ylev2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 25, 2026",
-      "description": "French firefighters battle a blaze heading towards Bordeaux while officials in Madrid say they face the \"worst fire in the history of the region\"."
+      "description": "The event celebrated press freedom after the first dinner was cancelled by a shooting in April."
     },
     {
       "title": "Zelensky tries to fix crisis over removal of defence minister and counts the cost",
       "url": "https://www.bbc.co.uk/news/articles/c1d1gz3n99ro?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 24, 2026",
       "description": "Protests have continued over Zelensky's decision to dismiss Mykhailo Fedorov, and some commentators believe he has been damaged politically."
+    },
+    {
+      "title": "Four Palestinians and two Israelis killed in West Bank shooting",
+      "url": "https://www.bbc.co.uk/news/articles/cx2rxmye4k3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 24, 2026",
+      "description": "Palestinians say villagers came under attack by settlers, while the Israeli military says a Palestinian stole a weapon and opened fire on hikers."
+    },
+    {
+      "title": "ICC top prosecutor removed over sexual misconduct allegations",
+      "url": "https://www.bbc.co.uk/news/articles/cqjxddx12qqo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 24, 2026",
+      "description": "Karim Khan denies allegations of engaging in an improper sexual relationship with a junior ICC staff member and seeking to stop her pursuing her complaint."
     },
     {
       "title": "Texts reveal 14-year-old allegedly murdered by singer D4vd had pregnancy and abortion",
@@ -3240,12 +3269,6 @@
       "description": "The US president says fines against Google, as well as Apple, Meta and Amazon, should be \"entirely reversed.\""
     },
     {
-      "title": "ICC top prosecutor removed over sexual misconduct allegations",
-      "url": "https://www.bbc.co.uk/news/articles/cqjxddx12qqo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 24, 2026",
-      "description": "Karim Khan denies allegations of engaging in an improper sexual relationship with a junior ICC staff member and seeking to stop her pursuing her complaint."
-    },
-    {
       "title": "Trump orders Smithsonian to post warnings about 'inaccurate' US history",
       "url": "https://www.bbc.co.uk/news/articles/c1w10gwnj74o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 25, 2026",
@@ -3258,33 +3281,21 @@
       "description": "Imposed citing forced labour concerns, the levies replace a temporary global duty brought in after the US Supreme Court struck down tariffs in February."
     },
     {
-      "title": "Four Palestinians and two Israelis killed in West Bank shooting",
-      "url": "https://www.bbc.co.uk/news/articles/cx2rxmye4k3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 24, 2026",
-      "description": "Palestinians say villagers came under attack by settlers, while the Israeli military says a Palestinian stole a weapon and opened fire on hikers."
-    },
-    {
       "title": "Nigeria's president approves largest military expansion in recent times",
       "url": "https://www.bbc.co.uk/news/articles/cwymjx3nrxvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 24, 2026",
       "description": "The government is under intense pressure to tackle a slew of armed groups, many of whom attack civilians."
     },
     {
-      "title": "South Africa's president wins bid to temporarily halt impeachment inquiry over 'Farmgate'",
-      "url": "https://www.bbc.co.uk/news/articles/cwymj9lkx13o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "PlayStation Network outage resolved after thousands of gamers unable to play",
+      "url": "https://www.bbc.co.uk/news/articles/cx2j0wy1gl5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 24, 2026",
-      "description": "Ramaphosa has faced scrutiny following the theft of large sums of cash from his private farm in 2020."
-    },
-    {
-      "title": "India's 'cockroach' protesters hold talks with government as stalemate continues",
-      "url": "https://www.bbc.co.uk/news/articles/cjwx4x04yqzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 24, 2026",
-      "description": "The meeting came hours after activist Sonam Wangchuk announced he was ending his 26-day hunger strike."
+      "description": "The outage affected gamers' ability to launch games, apps or network features on their PlayStation."
     },
     {
       "title": "Warning shot or publicity stunt - how worried should we be about the OpenAI hack?",
       "url": "https://www.bbc.co.uk/news/articles/cd9w22n9e4go?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 24, 2026",
+      "date": "July 25, 2026",
       "description": "Hugging Face said the hack was done at superhuman speed by an AI with little or no human guidance."
     },
     {
@@ -3294,7 +3305,7 @@
       "description": "At least 12 babies have been trafficked from Indonesia to Singapore, but what will happen to them remains unclear."
     },
     {
-      "title": "'The dogs were getting upset': How LA band Muna survived their worst ever gig",
+      "title": "The pop band who went from playing for rescue dogs to selling out arenas",
       "url": "https://www.bbc.co.uk/news/articles/ce85j65r4l2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 24, 2026",
       "description": "The group discuss disastrous gigs, putting political action into music and the meaning of \"queer pop\"."
@@ -3306,10 +3317,10 @@
       "description": "The CJP protest began with exam paper leaks. It became India's biggest student movement in years - why?"
     },
     {
-      "title": "Trump's nuclear deal with Saudis jettisons longstanding US demands",
-      "url": "https://www.bbc.co.uk/news/articles/cz05lx0xpero?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 23, 2026",
-      "description": "Signing a nuclear pact in the Middle East is a bold move that has drawn criticism in the US and in Israel."
+      "title": "South Africa's president wins bid to temporarily halt impeachment inquiry over 'Farmgate'",
+      "url": "https://www.bbc.co.uk/news/articles/cwymj9lkx13o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 24, 2026",
+      "description": "Ramaphosa has faced scrutiny following the theft of large sums of cash from his private farm in 2020."
     },
     {
       "title": "India cockroach protests: Videos show officers firing 'pellet guns'",
@@ -3534,6 +3545,18 @@
       "description": "Energy grids and train services are among the vital services that are vulnerable to very hot weather."
     },
     {
+      "title": "What does the South make of the King of the North?",
+      "url": "https://www.bbc.co.uk/news/articles/czekpx8yzj0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 25, 2026",
+      "description": "BBC South has been hearing from people about new PM Andy Burnham's first week in the top job."
+    },
+    {
+      "title": "'We feel the pressure juggling holiday logistics'",
+      "url": "https://www.bbc.co.uk/news/articles/c7vg3gnzn6mo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 25, 2026",
+      "description": "Parents say childcare costs, unpaid leave and SEND support gaps make summer holidays harder"
+    },
+    {
       "title": "Students tell us how to keep graduation outfit costs down",
       "url": "https://www.bbc.co.uk/news/articles/cn8n9lzj136o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 24, 2026",
@@ -3550,18 +3573,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cj637z28xnyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 24, 2026",
       "description": "They face 4.7% inflation - driven by steep rises in fuel and household service costs, report finds."
-    },
-    {
-      "title": "Preston Bus still to decide on Burnham's £2 cap",
-      "url": "https://www.bbc.co.uk/news/articles/cre4wz4np7lo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 24, 2026",
-      "description": "The operator says it needs more details before deciding whether to join Andy Burnham's new scheme."
-    },
-    {
-      "title": "Why are UK fuel prices rising again?",
-      "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 24, 2026",
-      "description": "UK petrol and diesel prices are going up again as the price of oil returns to around $100 a barrel."
     },
     {
       "title": "Why Gen Z are planning for life without a state pension",
@@ -3618,10 +3629,100 @@
       "description": "Pubs, clubs and live music venues in England will get a 20% cut in business rates from April."
     },
     {
-      "title": "The Bottom Line",
-      "url": "https://www.bbc.co.uk/sounds/play/m002z78b?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 23, 2026",
-      "description": "What was the best business move of the last 12 months and who made the biggest blunder?"
+      "title": "What’s behind the ICC investigation into Karim Khan?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/25/whats-behind-the-icc-investigation-into-karim-khan?traffic_source=rss",
+      "date": "July 25, 2026",
+      "description": "Lawyers for the ICC’s ousted Chief Prosecutor Karim Khan say he is the victim of a political witchhunt"
+    },
+    {
+      "title": "Baby rescued after Israeli settlers set home on fire amid raids",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/25/baby-rescued-after-israeli-settlers-set-home-on-fire-amid-raids?traffic_source=rss",
+      "date": "July 25, 2026",
+      "description": "A baby was rescued by her family after her home was set on fire by Israeli settlers in the occupied West Bank."
+    },
+    {
+      "title": "Trump faces backlash for using ‘Palestinian’ as an insult",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/25/trump-faces-backlash-for-using-palestinian-as-an-insult?traffic_source=rss",
+      "date": "July 25, 2026",
+      "description": "US President Donald Trump is facing backlash after using ‘Palestinian’ as an insult while mocking a Democratic Senator."
+    },
+    {
+      "title": "Scrutiny of WNBA intensifies as disarray looms over All-Star festivities",
+      "url": "https://www.aljazeera.com/sports/2026/7/25/scrutiny-of-wnba-intensifies-as-disarray-looms-over-all-star-festivities?traffic_source=rss",
+      "date": "July 25, 2026",
+      "description": "Discussions about race, gender and sexuality overshadow Saturday’s WNBA All-Star Game, as league lurches into disarray."
+    },
+    {
+      "title": "Tuberculosis: How drones are transforming care in the Philippines",
+      "url": "https://www.aljazeera.com/video/101-east/2026/7/25/tuberculosis-how-drones-are-transforming-care-in-the-philippines?traffic_source=rss",
+      "date": "July 25, 2026",
+      "description": "101 East meets the doctors using drones to fight tuberculosis and save lives in remote communities in the Philippines."
+    },
+    {
+      "title": "India’s youth protesters are fighting Modi with irreverent humour and memes",
+      "url": "https://www.aljazeera.com/news/2026/7/25/indias-youth-protesters-are-fighting-modi-with-irreverent-humour-and-memes?traffic_source=rss",
+      "date": "July 25, 2026",
+      "description": "Modi built his political brand through social media. Now protesters are using same platforms to mock his administration."
+    },
+    {
+      "title": "Israel arrests dozens of Palestinians in West Bank amid settler attacks",
+      "url": "https://www.aljazeera.com/news/2026/7/25/israel-arrests-dozens-of-palestinians-in-west-bank-amid-settler-attacks?traffic_source=rss",
+      "date": "July 25, 2026",
+      "description": "Military crackdown follows a shooting that killed four Palestinians and two Israeli soldiers."
+    },
+    {
+      "title": "India’s ‘Cockroach’ youth call off protests after education minister quits",
+      "url": "https://www.aljazeera.com/news/2026/7/25/indias-education-minister-resigns-after-weeks-of-cockroach-protests?traffic_source=rss",
+      "date": "July 25, 2026",
+      "description": "Youth protesters agree to end agitation after Dharmendra Pradhan resigns over a series of exam paper leaks."
+    },
+    {
+      "title": "Dodging snipers, housing crisis forces Yemenis to live on front line",
+      "url": "https://www.aljazeera.com/news/2026/7/25/dodging-snipers-housing-crisis-forces-yemenis-to-live-on-front-line?traffic_source=rss",
+      "date": "July 25, 2026",
+      "description": "Living near Taiz&#039;s front line forces families to make difficult choices amid sniper threats and economic hardships."
+    },
+    {
+      "title": "Wildfires in Spain and France force evacuation of more than 250,000 people",
+      "url": "https://www.aljazeera.com/news/2026/7/25/wildfires-in-spain-and-france-force-evacuation-of-200000-people?traffic_source=rss",
+      "date": "July 25, 2026",
+      "description": "France has appealed for international help, while Spain has declared a national emergency."
+    },
+    {
+      "title": "Born too soon: Premature babies fight for survival in Gaza",
+      "url": "https://www.aljazeera.com/features/2026/7/25/born-too-soon-premature-babies-fighting-for-survival-in-gaza?traffic_source=rss",
+      "date": "July 25, 2026",
+      "description": "Israel&#039;s genocidal war on Gaza is causing a surge in premature births and endangering mothers&#039; health."
+    },
+    {
+      "title": "Trump: ‘I’m running for a fourth term as President of the United States’",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/25/trump-im-running-for-a-fourth-term-as-president-of-the-united?traffic_source=rss",
+      "date": "July 25, 2026",
+      "description": "During the White House Correspondents&#039; Association dinner, Trump joked about running for a fourth presidential term."
+    },
+    {
+      "title": "Commonwealth Games: Gymnast Langton’s headfirst crash leads to concussion",
+      "url": "https://www.aljazeera.com/sports/2026/7/25/commonwealth-games-gymnast-langtons-headfirst-crash-leads-to-concussion?traffic_source=rss",
+      "date": "July 25, 2026",
+      "description": "Gabriel Langton suffers concussion after headfirst crash off horizontal bar in the ⁠final rotation of the competition."
+    },
+    {
+      "title": "South Africa’s le Clos breaks Commonwealth Games record with 19th medal",
+      "url": "https://www.aljazeera.com/sports/2026/7/25/south-africas-le-clos-breaks-commonwealth-games-record-with-19th-medal?traffic_source=rss",
+      "date": "July 25, 2026",
+      "description": "A record 19th medal took South Africa&#039;s Chad le Clos past shooters Phil Adams of Australia and Mick Gault of England."
+    },
+    {
+      "title": "Funerals held for four Palestinians killed in deadly West Bank shooting",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/25/funerals-held-for-four-palestinians-killed-in-deadly-west-bank-shooting?traffic_source=rss",
+      "date": "July 25, 2026",
+      "description": "Overnight funerals were held for four Palestinians killed near Nablus."
+    },
+    {
+      "title": "‘The show must go on’: Trump returns to rescheduled White House press gala",
+      "url": "https://www.aljazeera.com/news/2026/7/25/the-show-must-go-on-trump-returns-to-rescheduled-white-house-press-gala?traffic_source=rss",
+      "date": "July 25, 2026",
+      "description": "US president makes jokes, mocks opponents at correspondents&#039; dinner that was halted by a shooting in April."
     },
     {
       "title": "Firefighters battle fire after fertiliser explosion in England",
@@ -3640,120 +3741,6 @@
       "url": "https://www.aljazeera.com/news/2026/7/25/sons-of-immigrant-killed-by-ice-in-texas-share-grief-demand-accountability?traffic_source=rss",
       "date": "July 25, 2026",
       "description": "Lorenzo Salgado Araujo&#039;s sons tell lawmakers their father worked hard &#039;to protect and provide&#039; for his family."
-    },
-    {
-      "title": "Trump threatens EU will pay ‘big price’ after Brussels fines Google $1bn",
-      "url": "https://www.aljazeera.com/news/2026/7/25/trump-threatens-eu-will-pay-big-price-after-brussels-fines-google-1bn?traffic_source=rss",
-      "date": "July 25, 2026",
-      "description": "EU accuses US tech giant of favouring its own services in search results, as Trump lashes out against bloc."
-    },
-    {
-      "title": "GLP-1s are changing US healthcare, should everyone be on them?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/25/glp-1s-are-changing-us-healthcare-should-everyone-be-on-them?traffic_source=rss",
-      "date": "July 25, 2026",
-      "description": "GLP-1 drugs, originally developed to treat diabetes and now widely used for obesity, are reshaping healthcare in the US."
-    },
-    {
-      "title": "Saudi-led coalition strikes Houthi-controlled Hodeidah",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/25/saudi-led-coalition-strikes-houthi-controlled-hodeidah?traffic_source=rss",
-      "date": "July 25, 2026",
-      "description": "The Saudi-led coalition strikes targeted Houthi-controlled Hodeidah governorate."
-    },
-    {
-      "title": "UN rights chief Turk wins second term despite US and Israeli opposition",
-      "url": "https://www.aljazeera.com/news/2026/7/25/un-rights-chief-turk-wins-second-term-despite-us-and-israeli-opposition?traffic_source=rss",
-      "date": "July 25, 2026",
-      "description": "Austrian lawyer Volker Turk set to become first UN rights chief to complete two four-year terms since post was created."
-    },
-    {
-      "title": "Trump says ‘it’s time’ for Saudi Arabia to normalise ties with Israel",
-      "url": "https://www.aljazeera.com/news/2026/7/24/trump-says-its-time-for-saudi-arabia-to-normalise-ties-with-israel?traffic_source=rss",
-      "date": "July 24, 2026",
-      "description": "US president reiterates that the nuclear deal with the kingdom is conditioned on Riyadh joining the &#039;Abraham Accords&#039;."
-    },
-    {
-      "title": "Which matches and tournaments can football fans watch after the World Cup?",
-      "url": "https://www.aljazeera.com/sports/2026/7/24/what-do-football-fans-have-in-store-to-beat-post-world-cup-blues?traffic_source=rss",
-      "date": "July 24, 2026",
-      "description": "Al Jazeera&#039;s guide to filling the football void with the Champions League, Premier League, La Liga, UEFA Super Cup and more."
-    },
-    {
-      "title": "IOC rejects human rights group’s complaint against Trump ally Infantino",
-      "url": "https://www.aljazeera.com/sports/2026/7/24/ioc-rejects-human-rights-groups-complaint-against-trump-ally-infantino?traffic_source=rss",
-      "date": "July 24, 2026",
-      "description": "IOC says the complaint against its member and FIFA chief Infantino fell outside its ethics committee’s jurisdiction."
-    },
-    {
-      "title": "China, Philippine coastguard vessels clash in South China Sea",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/24/china-philippine-coastguard-vessels-clash-in-south-china-sea?traffic_source=rss",
-      "date": "July 24, 2026",
-      "description": "China, Philippine coastguard vessels clash in South China Sea."
-    },
-    {
-      "title": "Paramount agrees to pause Warner Bros deal while court case plays out",
-      "url": "https://www.aljazeera.com/economy/2026/7/24/paramount-agrees-to-pause-warner-bros-deal-while-court-case-plays-out?traffic_source=rss",
-      "date": "July 24, 2026",
-      "description": "The delay, filed in court on Friday, can cost Paramount $1.7bn in fees if the deal is not closed by next June."
-    },
-    {
-      "title": "Fury dominates Wach in Thailand boxing bout ahead of Joshua showdown",
-      "url": "https://www.aljazeera.com/sports/2026/7/24/fury-dominates-wach-in-thailand-boxing-bout-ahead-of-joshua-showdown?traffic_source=rss",
-      "date": "July 24, 2026",
-      "description": "Tyson Fury forced his Polish opponent, Mariusz Wach, to retire in the fight at a Muay Thai stadium in Pattaya, Thailand."
-    },
-    {
-      "title": "Spanish police accuse tractor driver of sparking wildfire as blazes spread",
-      "url": "https://www.aljazeera.com/news/2026/7/24/spanish-police-accuse-tractor-driver-of-sparking-wildfire-as-blazes-spread?traffic_source=rss",
-      "date": "July 24, 2026",
-      "description": "The number of people forced to flee the heatwave-induced fires in Spain and France has now passed the 100,000 mark."
-    },
-    {
-      "title": "UNESCO places occupied West Bank, Lebanon sites on endangered heritage list",
-      "url": "https://www.aljazeera.com/news/2026/7/24/unesco-places-occupied-west-bank-lebanon-sites-on-endangered-heritage-list?traffic_source=rss",
-      "date": "July 24, 2026",
-      "description": "Sebastia in the occupied West Bank and five Lebanese castles get emergency listing despite Israeli objections."
-    },
-    {
-      "title": "US small businesses challenge Trump’s new forced labour tariffs",
-      "url": "https://www.aljazeera.com/economy/2026/7/24/us-small-businesses-challenge-trumps-new-forced-labor-tariffs?traffic_source=rss",
-      "date": "July 24, 2026",
-      "description": "In lawsuit on Friday, two small businesses said latest round of tariffs on 60 countries needs to be legally justified."
-    },
-    {
-      "title": "Israeli settlers escalate attacks on Palestinians near Nablus",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/24/israeli-settlers-escalate-attacks-on-palestinians-near-nablus?traffic_source=rss",
-      "date": "July 24, 2026",
-      "description": "Israeli settlers have set fire to Palestinian homes and vehicles in villages near Nablus"
-    },
-    {
-      "title": "Saudi Arabia strikes Houthi-held Hodeidah, Yemeni group says",
-      "url": "https://www.aljazeera.com/news/2026/7/24/saudis-strike-yemens-houthi-held-hodeida-rebel-media?traffic_source=rss",
-      "date": "July 24, 2026",
-      "description": "Houthi-controlled Foreign Ministry warns that the attack will trigger further escalation in the Yemeni conflict."
-    },
-    {
-      "title": "Canada marks Gordie Howe bridge opening without US after trade war deepens",
-      "url": "https://www.aljazeera.com/economy/2026/7/24/canada-marks-gordie-howe-bridge-opening-without-us-after-trade-war-deepens?traffic_source=rss",
-      "date": "July 24, 2026",
-      "description": "Canada cancelled planned cross-border ribbon-cutting ceremony and the milestone opening was only among Canadians."
-    },
-    {
-      "title": "Who is Afrah al-Zouba, Yemen’s first female foreign minister?",
-      "url": "https://www.aljazeera.com/news/2026/7/24/who-is-afrah-al-zouba-yemens-first-female-foreign-minister?traffic_source=rss",
-      "date": "July 24, 2026",
-      "description": "In a historic first, Afrah al-Zouba was appointed Yemeni foreign minister on July 23."
-    },
-    {
-      "title": "Wildfire survivors tell of narrow escape as Spain declares emergency",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/24/wildfire-survivors-tell-of-narrow-escape-as-spain-declares-emergency?traffic_source=rss",
-      "date": "July 24, 2026",
-      "description": "More than 10,000 people have been forced to evacuate as firefighters struggle to contain wildfires in central Spain."
-    },
-    {
-      "title": "Car bomb attack kills 27 in northwest Pakistan",
-      "url": "https://www.aljazeera.com/news/2026/7/24/car-bomb-attack-kills-27-in-northwest-pakistan?traffic_source=rss",
-      "date": "July 24, 2026",
-      "description": "The Pakistani Taliban said four suicide bombers carried out the assault in the country&#039;s northwest."
     }
   ]
 }
