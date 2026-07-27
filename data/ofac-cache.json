@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-07-27T16:10:17.551Z",
+  "updatedAt": "2026-07-27T17:10:10.938Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260727",
+      "code": "20260727",
+      "title": "Sanctions List Removals; Sanctions List Updates",
+      "date": "July 27, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260724",
       "code": "20260724",
@@ -53,12 +59,6 @@
       "url": "https://ofac.treasury.gov/recent-actions/20260710_33",
       "code": "20260710_33",
       "title": "Iran-related and Counter Terrorism Designations; Issuance of Iran-related General License",
-      "date": "July 10, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260710",
-      "code": "20260710",
-      "title": "Issuance of Democratic Republic of the Congo-related General License",
       "date": "July 10, 2026"
     }
   ],
@@ -3055,16 +3055,22 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "Oil price dives as US and Iran pause attacks",
-      "url": "https://www.bbc.co.uk/news/articles/clyj834jn5lo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Ukraine dismisses Iranian threats as Caspian Sea strike directly links wars",
+      "url": "https://www.bbc.co.uk/news/articles/cwyj7yl0xndo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 27, 2026",
-      "description": "The US says attacks on Iran have been halted to give \"talks some space\", raising hopes of a resolution to the conflict."
+      "description": "Iran has reacted with fury to the assault on the vessel, with Tehran's foreign minister saying it \"cannot go unanswered\"."
     },
     {
       "title": "More than 600 US military service members injured since Iran War began in February",
       "url": "https://www.bbc.co.uk/news/articles/c998pzd1e8xo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 27, 2026",
       "description": "The latest figure includes casualties from Operation Fury and a new category called \"Overseas Operations\"."
+    },
+    {
+      "title": "Oil price dives as US and Iran pause attacks",
+      "url": "https://www.bbc.co.uk/news/articles/clyj834jn5lo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 27, 2026",
+      "description": "The US says attacks on Iran have been halted to give \"talks some space\", raising hopes of a resolution to the conflict."
     },
     {
       "title": "Pirlo out of Italy football top job after backlash over Russian betting firm links",
@@ -3086,6 +3092,12 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Iran: Currently no negotiations with the US",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/27/iran-currently-no-negotiations-with-the-us?traffic_source=rss",
+      "date": "July 27, 2026",
+      "description": "Iranian Foreign Ministry Spokesperson, Esmaeil Baghaei, said on Monday that Iran is not seeking negotiations with US."
+    },
     {
       "title": "Why Venezuela is leaving the ICC",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/27/why-venezuela-is-leaving-the-icc?traffic_source=rss",
@@ -3227,10 +3239,22 @@
       "description": "A blaze near Bordeaux has torn through more than 162 sq miles (420 sq km) in less than four days, while the Madrid region is seeing its worst fires ever."
     },
     {
-      "title": "Anger, shock and grief - questions remain in the wake of the Berlin Pride attack",
+      "title": "Anger as Berlin Pride attacker revealed to have been freed weeks earlier",
       "url": "https://www.bbc.co.uk/news/articles/cy9wv74qje9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 27, 2026",
       "description": "As details emerge about the suspected Berlin Pride attacker's past, many are asking why he was not in prison."
+    },
+    {
+      "title": "Shots fired at US consulate in Toronto for a second time this year",
+      "url": "https://www.bbc.co.uk/news/articles/ckgvnw44rz9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 27, 2026",
+      "description": "Police said they engaged in a high-speed car chase but failed to arrest the suspect, who remains at large. Three people were arrested in June after a similar attack."
+    },
+    {
+      "title": "Carly Simon reveals Parkinson's diagnosis",
+      "url": "https://www.bbc.co.uk/news/articles/c5y3gymn6p6o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 27, 2026",
+      "description": "The singer also reveals she has received treatment for skin cancer, but vows to keep singing."
     },
     {
       "title": "Chile captures fugitive convicted of singer Victor Jara's murder under Pinochet",
@@ -3239,10 +3263,10 @@
       "description": "Nelson Haase was one of those convicted over the kidnap and murder of folk singer Victor Jara after Chile's military coup in 1973."
     },
     {
-      "title": "Carly Simon reveals Parkinson's diagnosis",
-      "url": "https://www.bbc.co.uk/news/articles/c5y3gymn6p6o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "South Africa investigates death of Nigerian who collapsed during arrest",
+      "url": "https://www.bbc.co.uk/news/articles/cn7nx3rz16jo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 27, 2026",
-      "description": "The singer also reveals she has received treatment for skin cancer, but vows to keep singing."
+      "description": "Initial reports from a post-mortem said he had \"abrasions on his back and chest\", investigators say."
     },
     {
       "title": "Bali bans Dutch expats whose run club allegedly excluded Indonesians",
@@ -3317,16 +3341,16 @@
       "description": "The company's shares soared by nearly 470% in its market debut, as the AI boom drives chip demand."
     },
     {
+      "title": "A Nigerian soldier is arrested for tipping off criminals - but does it go deeper?",
+      "url": "https://www.bbc.co.uk/news/articles/cr7k8y5272eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 27, 2026",
+      "description": "A private's detention reignites concerns that troops are contributing to the country's security challenges."
+    },
+    {
       "title": "How 'fire-generated thunderstorms' make wildfires more deadly",
       "url": "https://www.bbc.co.uk/news/articles/c2350xnl4j5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 27, 2026",
       "description": "Certain types of severe wildfire can create pyrocumulonimbus - something that Nasa calls the \"fire-breathing dragon of clouds\"."
-    },
-    {
-      "title": "Musk takes 'crusade' to Europe with Armie Hammer film",
-      "url": "https://www.bbc.co.uk/news/articles/c5y4w5nwk00o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 27, 2026",
-      "description": "Musk has backed a film called Citizen Vigilante featuring an American vigilante tearing across an unnamed European country."
     },
     {
       "title": "'This is just the start': India's Gen Z protesters force out a minister, but what next?",
@@ -3335,16 +3359,16 @@
       "description": "The education minister's resignation, a rare setback for the Modi government, brings hope to many young protesters that their voices will be heard."
     },
     {
+      "title": "Musk takes 'crusade' to Europe with Armie Hammer film",
+      "url": "https://www.bbc.co.uk/news/articles/c5y4w5nwk00o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 27, 2026",
+      "description": "Musk has backed a film called Citizen Vigilante featuring an American vigilante tearing across an unnamed European country."
+    },
+    {
       "title": "The Indian Army's first woman boxer is now chasing Commonwealth gold",
       "url": "https://www.bbc.co.uk/news/articles/c5y0m8z6de3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 26, 2026",
       "description": "World champion Jaismine Lamboria targets Commonwealth gold in Glasgow Games."
-    },
-    {
-      "title": "Biden, Carney and Oasis: How the world is celebrating Mayo's All-Ireland win",
-      "url": "https://www.bbc.co.uk/news/articles/cqx74qw9ggjo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 27, 2026",
-      "description": "Mayo finally ended a 75-year wait for the county's fourth All-Ireland Senior Football title on Sunday."
     },
     {
       "title": "Watch: Scaffolding tumbles from Hong Kong building as Typhoon Noul makes landfall",
@@ -3533,6 +3557,12 @@
       "description": "Energy grids and train services are among the vital services that are vulnerable to very hot weather."
     },
     {
+      "title": "Average income down in real terms, survey says",
+      "url": "https://www.bbc.co.uk/news/articles/cvgjqd9zz33o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 27, 2026",
+      "description": "The results of the 2023/24 Household Expenditure Survey have been published."
+    },
+    {
       "title": "How wildfires in France and Spain might affect your travel plans",
       "url": "https://www.bbc.co.uk/news/articles/ce3qv0ggndno?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 27, 2026",
@@ -3549,12 +3579,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cn0njd4e2evo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 26, 2026",
       "description": "The vast majority of people - particularly women - answer a survey saying they'd take the certainty over chance."
-    },
-    {
-      "title": "Last chance to apply for help with school costs",
-      "url": "https://www.bbc.co.uk/news/articles/cnvnzj41z21o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 26, 2026",
-      "description": "The bonus scheme offers a one-off payment of up to £150 towards school essentials."
     },
     {
       "title": "Why Gen Z are planning for life without a state pension",
@@ -3615,6 +3639,12 @@
       "url": "https://www.bbc.co.uk/news/videos/ce34n2lgkz0o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 23, 2026",
       "description": "Pubs, clubs and live music venues in England will get a 20% cut in business rates from April."
+    },
+    {
+      "title": "Israeli raid sparks fire at UN Palestinian refugee centre",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/27/israeli-raid-sparks-fire-at-un-palestinian-refugee-centre?traffic_source=rss",
+      "date": "July 27, 2026",
+      "description": "Israeli forces raided a United Nations Relief and Works Agency for Palestine Refugees training centre."
     },
     {
       "title": "Mapping Israeli settler violence in the West Bank",
@@ -3729,18 +3759,6 @@
       "url": "https://www.aljazeera.com/sports/2026/7/27/fifa-president-infantino-accuses-2026-world-cup-critics-of-spreading-hate-letter?traffic_source=rss",
       "date": "July 27, 2026",
       "description": "FIFA faced criticism over several issues during the tournament, including a debate over US visa restrictions for teams."
-    },
-    {
-      "title": "Macron holds crisis meeting of French Cabinet as blaze approaches Bordeaux",
-      "url": "https://www.aljazeera.com/news/2026/7/27/macron-calls-crisis-meeting-of-french-cabinet-as-blaze-approaches-bordeaux?traffic_source=rss",
-      "date": "July 27, 2026",
-      "description": "The situation in France is currently stable, authorities say, but another heatwave is on the way."
-    },
-    {
-      "title": "The Ban: A censorship loophole during the conflict in Northern Ireland",
-      "url": "https://www.aljazeera.com/video/witness/2026/7/27/the-ban-a-censorship-loophole-during-the-conflict-in-northern-ireland?traffic_source=rss",
-      "date": "July 27, 2026",
-      "description": "A censorship saga about how the voices of republican leaders in Northern Ireland were banned by the British government."
     }
   ]
 }
