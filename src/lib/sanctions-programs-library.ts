@@ -345,7 +345,8 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
     ],
     keyAdvisories: [
       // 10 advisories — exact titles, dates and media IDs from OFAC page — newest first
-      { title: "OFAC Alert: Sanctions Risks of Iranian Demands for Strait of Hormuz Passage", date: "May 1, 2026", url: "https://ofac.treasury.gov/media/935556/download?inline" },
+            { title: "Iran-related Designations", date: "July 29, 2026", url: "https://ofac.treasury.gov/recent-actions/20260729", addedDate: "July 29, 2026" },
+{ title: "OFAC Alert: Sanctions Risks of Iranian Demands for Strait of Hormuz Passage", date: "May 1, 2026", url: "https://ofac.treasury.gov/media/935556/download?inline" },
       { title: "OFAC Alert: Sanctions Risk of Dealing with Teapot Oil Refineries", date: "April 28, 2026", url: "https://ofac.treasury.gov/media/935546/download?inline" },
       { title: "Guidance for Shipping and Maritime Stakeholders on Detecting and Mitigating Iranian Oil Sanctions Evasion", date: "April 16, 2025", url: "https://ofac.treasury.gov/media/934236/download?inline" },
       { title: "Iran Ballistic Missile Procurement Advisory", date: "October 18, 2023", url: "https://ofac.treasury.gov/media/932206/download?inline" },
