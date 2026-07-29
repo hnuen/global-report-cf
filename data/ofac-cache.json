@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-07-29T13:40:13.478Z",
+  "updatedAt": "2026-07-29T14:10:12.973Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260729",
+      "code": "20260729",
+      "title": "Iran-related Designations",
+      "date": "July 29, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260727",
       "code": "20260727",
@@ -54,12 +60,6 @@
       "code": "20260713",
       "title": "Cyber-related Designations; Cuba Designations; Issuance of Cuba-related Frequently Asked Question",
       "date": "July 13, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260710_33",
-      "code": "20260710_33",
-      "title": "Iran-related and Counter Terrorism Designations; Issuance of Iran-related General License",
-      "date": "July 10, 2026"
     }
   ],
   "civilPenalties": [
@@ -1004,7 +1004,7 @@
     "iran-sanctions": {
       "name": "Iran Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions",
-      "lastUpdated": "Jul 24, 2026",
+      "lastUpdated": "Jul 29, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -3246,16 +3246,16 @@
       "description": "People are being urged to stay alert, with earthquake aftershocks potentially reaching magnitude 7, officials say"
     },
     {
-      "title": "Japan in a ‘race against time’ to rescue people trapped beneath rubble after quake",
-      "url": "https://www.bbc.co.uk/news/videos/c3r0pg0dgrgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 29, 2026",
-      "description": "At least 13 people have been killed after the earthquake struck the island of Kyushu on Tuesday."
-    },
-    {
       "title": "Thousands in Spain return home but new heatwave raises wildfire fears",
       "url": "https://www.bbc.co.uk/news/articles/cwyjgwg8jddo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 29, 2026",
       "description": "Spain and France are both braced for the start of the fourth heatwave so far this summer and some fires have continued to burn."
+    },
+    {
+      "title": "Anthony Fauci refuses to answer questions during US Senate hearing about Covid origins",
+      "url": "https://www.bbc.co.uk/news/articles/cdx85vkk0gko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 29, 2026",
+      "description": "The former top US health official is invoking his right to remain silent as senators grill him under oath about the pandemic."
     },
     {
       "title": "Four women accuse Jared Leto of criminal sexual conduct",
@@ -3300,28 +3300,10 @@
       "description": "The US and China are locked in a race to the lead the world in robotics and artificial intelligence."
     },
     {
-      "title": "Wildfires in south-west France flare up as region braces for new 40C heatwave",
-      "url": "https://www.bbc.co.uk/news/articles/c5yd8gly1ydo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Japan in a ‘race against time’ to rescue people trapped beneath rubble after quake",
+      "url": "https://www.bbc.co.uk/news/videos/c3r0pg0dgrgo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 29, 2026",
-      "description": "Firefighters are braced for a sharp rise in temperatures on Wednesday, which could complicate the containment of wildfires in Gironde."
-    },
-    {
-      "title": "Ghana mourns its tallest man - a 'generous and popular giant'",
-      "url": "https://www.bbc.co.uk/news/articles/crk52jk0131o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 28, 2026",
-      "description": "Sulemana Abdul Samed, who was diagnosed with gigantism several years ago, has died at the age of 33."
-    },
-    {
-      "title": "'A lover of life' - Seattle pays tribute to food festival shooting victims",
-      "url": "https://www.bbc.co.uk/news/articles/cvgv7m5z4n0o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 28, 2026",
-      "description": "Families grieved on Monday as they remembered the three people killed in a shooting at a food festival."
-    },
-    {
-      "title": "Fifa offers $40m if nations back controversial plan",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cvg7vglq9wpo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 29, 2026",
-      "description": "Fifa has set a deadline of 19 September for member associations to access cash as FA voice disapproval of world governing body's funding plan ahead of emergency Uefa meeting."
+      "description": "At least 13 people have been killed after the earthquake struck the island of Kyushu on Tuesday."
     },
     {
       "title": "How Mexican drug cartels have outsourced meth labs to Nigeria",
@@ -3394,6 +3376,12 @@
       "url": "https://www.bbc.co.uk/news/videos/cy745x171rjo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 28, 2026",
       "description": "The body of 14-year-old Celeste Rivas Hernandez was found last September inside the trunk of a Tesla registered to singer D4vd."
+    },
+    {
+      "title": "Is AI facing a big financial reckoning?",
+      "url": "https://www.bbc.co.uk/news/articles/cevm09wkgz0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 29, 2026",
+      "description": "Sharp falls in the value of chip makers have stoked investor concerns that the euphoria around AI related companies is fading."
     },
     {
       "title": "Ticket prices set to rise by 15p as Heathrow able to recover runway project money",
