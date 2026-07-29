@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-29T18:40:16.346Z",
+  "updatedAt": "2026-07-29T19:10:09.027Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260729",
@@ -3068,16 +3068,22 @@
   ],
   "bbcNews": [
     {
-      "title": "Saudi Arabia joins US in strikes on Iran-backed militias in Iraq",
-      "url": "https://www.bbc.co.uk/news/articles/c70g6y24d76o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Saudi Arabia's dilemma as it tries to stay out of US-Iran war",
+      "url": "https://www.bbc.co.uk/news/articles/clyx83l8jv8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 29, 2026",
-      "description": "US Central Command says proxy groups launched attacks against US bases and Saudi energy infrastructure."
+      "description": "The kingdom faces a choice of whether to keep hitting back as a deterrent or to try to de-escalate the situation."
     },
     {
       "title": "Russia charges Telegram founder Durov with facilitating terrorism",
       "url": "https://www.bbc.co.uk/news/articles/cj4kexqkpzno?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 29, 2026",
       "description": "The FSB claims the messenger app, created by Pavel Durov, has failed to remove accounts and channels used for recruitment by Ukraine's secret service."
+    },
+    {
+      "title": "Saudi Arabia joins US in strikes on Iran-backed militias in Iraq",
+      "url": "https://www.bbc.co.uk/news/articles/c70g6y24d76o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 29, 2026",
+      "description": "US Central Command says proxy groups launched attacks against US bases and Saudi energy infrastructure."
     },
     {
       "title": "Zelensky and Netanyahu meet Trump as wars in Ukraine and Iran drag on",
@@ -3122,12 +3128,6 @@
       "url": "https://www.aljazeera.com/features/2026/7/29/fragile-peace-in-syrias-set-zaynab-as-sectarian-challenges-persist?traffic_source=rss",
       "date": "July 29, 2026",
       "description": "Locals in southern Damascus town await safer times as fears rooted in a decade of war still loom over daily life."
-    },
-    {
-      "title": "F1 season to end in Europe if Qatar, Abu Dhabi unable to host due to war",
-      "url": "https://www.aljazeera.com/sports/2026/7/29/f1-season-to-end-in-europe-if-qatar-abu-dhabi-unable-to-host-due-to-us-iran-war?traffic_source=rss",
-      "date": "July 29, 2026",
-      "description": "F1 sets a mid-September deadline to decide whether final rounds in Middle East can be held due to US-Israel war on Iran."
     }
   ],
   "occNews": [
@@ -3667,6 +3667,18 @@
       "description": "You've been invited by the happy couple, but they've asked for cash - not presents. North Londoners tell us what they would do."
     },
     {
+      "title": "Hindus take holy dip in India’s rivers on sacred holiday",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/29/hindus-take-holy-dip-in-indias-rivers-on-sacred-holiday?traffic_source=rss",
+      "date": "July 29, 2026",
+      "description": "Footage shows tens of thousands of Hindu devotees bathing in India’s Ganga and Saryu rivers to mark Guru Purnima."
+    },
+    {
+      "title": "Bordeaux wildfire battle continues amid extreme heat",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/29/bordeaux-wildfire-battle-continues-amid-extreme-heat?traffic_source=rss",
+      "date": "July 29, 2026",
+      "description": "Firefighters are on high alert in France as scorching temperatures and winds threaten to fuel wildfire west of Bordeaux"
+    },
+    {
       "title": "Dr Anthony Fauci pleads the Fifth at Covid hearing",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/29/dr-anthony-fauci-pleads-the-fifth-at-covid-hearing?traffic_source=rss",
       "date": "July 29, 2026",
@@ -3767,12 +3779,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/29/bjp-politicians-daughter-explains-why-she-supports-indias-youth-protests?traffic_source=rss",
       "date": "July 29, 2026",
       "description": "Daughter of a BJP politician, Yashaswinee Raje Singh, tells Al Jazeera why she supports India’s student-led protests."
-    },
-    {
-      "title": "Tunisia’s body politic is in crisis",
-      "url": "https://www.aljazeera.com/opinions/2026/7/29/tunisias-body-politic-is-in-crisis?traffic_source=rss",
-      "date": "July 29, 2026",
-      "description": "Public-service failures and uncertainty over Kais Saied’s health are deepening the country’s political malaise."
     }
   ]
 }
