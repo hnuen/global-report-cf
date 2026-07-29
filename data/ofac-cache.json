@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-29T17:40:13.282Z",
+  "updatedAt": "2026-07-29T18:10:02.934Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260729",
@@ -3088,6 +3088,12 @@
   ],
   "ajNews": [
     {
+      "title": "Iran pushes back against US as regional attacks heat up",
+      "url": "https://www.aljazeera.com/news/2026/7/29/iran-pushes-back-against-us-as-regional-attacks-heat-up?traffic_source=rss",
+      "date": "July 29, 2026",
+      "description": "New round of strikes raises fears of further escalation as Iran rejects Omani proposal for joint Hormuz oversight."
+    },
+    {
       "title": "Fuel prices soar on back of Iran war, leaving Yemeni labourers with no work",
       "url": "https://www.aljazeera.com/news/2026/7/29/yemen-construction-fuel-iran?traffic_source=rss",
       "date": "July 29, 2026",
@@ -3134,12 +3140,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/29/iran-attacks-now-to-send-message-as-us-assets-build-up-in?traffic_source=rss",
       "date": "July 29, 2026",
       "description": "‘Iran attacks now to send message as US assets build up in Israel’"
-    },
-    {
-      "title": "Russia charges Telegram founder Pavel Durov with ‘aiding terrorism’",
-      "url": "https://www.aljazeera.com/news/2026/7/29/russia-charges-telegram-founder-pavel-durov-with-aiding-terrorism?traffic_source=rss",
-      "date": "July 29, 2026",
-      "description": "Russia&#039;s FSB says Telegram has not pulled content used by Ukrainian intelligence and &#039;terrorist&#039; groups to plan attacks."
     }
   ],
   "occNews": [
@@ -3151,6 +3151,13 @@
     }
   ],
   "economicsNews": [
+    {
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+      "date": "July 29, 2026",
+      "description": "Federal Reserve issues FOMC statement",
+      "category": "Monetary Policy"
+    },
     {
       "title": "Minutes of the Board&#39;s discount rate meetings on June 8 and June 17, 2026",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260714a.htm",
@@ -3261,7 +3268,7 @@
       "title": "France fire crews face searing heat in battle to contain flames",
       "url": "https://www.bbc.co.uk/news/articles/c62q5we799ro?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 29, 2026",
-      "description": "One volunteer fighting the fire in the Gironde region told the BBC \"it's our forest\", as some locals refuse to heed evacuations."
+      "description": "\"It's our forest,\" one volunteer fighting the fire in the Gironde region told the BBC, as other locals have refused to heed evacuations."
     },
     {
       "title": "More than 100 aftershocks hit Japan after powerful quake that killed 13",
@@ -3270,7 +3277,7 @@
       "description": "People are being urged to stay alert, with earthquake aftershocks potentially reaching magnitude 7, officials say"
     },
     {
-      "title": "Anthony Fauci refuses to answer questions during US Senate hearing discussing Covid origins",
+      "title": "Anthony Fauci refuses to answer questions during tense US Senate hearing about Covid origins",
       "url": "https://www.bbc.co.uk/news/articles/cdx85vkk0gko?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 29, 2026",
       "description": "The former top US health official said he feared Republicans could try to trip him up and use his testimony to prosecute him for perjury."
@@ -3390,6 +3397,12 @@
       "description": "Orla Guerin speaks to a gang leader about violence, drugs and infiltrating the police."
     },
     {
+      "title": "US interest rates held for fifth time in a row",
+      "url": "https://www.bbc.co.uk/news/articles/cy07wgqjv08o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 29, 2026",
+      "description": "The Federal Reserve's decision, which was broadly expected, means rates remain between the 3.5% and 3.75%."
+    },
+    {
       "title": "Some tech shares are plunging - what does that mean for the AI revolution?",
       "url": "https://www.bbc.co.uk/news/articles/cevm09wkgz0o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 29, 2026",
@@ -3414,16 +3427,16 @@
       "description": "With Andy Burnham saying he wants to bring \"substantial change\" to social care in England, BBC Verify looks at what could be done."
     },
     {
-      "title": "Data centres could pay hundreds of millions in deposits for power demands",
-      "url": "https://www.bbc.co.uk/news/articles/c9q90q9qnn2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 29, 2026",
-      "description": "The regulator said a fee of between £237,500 to £712,500 per megawatt should be charged for upcoming projects."
-    },
-    {
       "title": "'Don't wait until you want revenge' - why prenups are on the rise",
       "url": "https://www.bbc.co.uk/news/articles/cgmkgvy3lv4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 28, 2026",
       "description": "More young couples are now signing prenups to set out who gets what in the event of divorce."
+    },
+    {
+      "title": "Data centres could pay hundreds of millions in deposits for power demands",
+      "url": "https://www.bbc.co.uk/news/articles/c9q90q9qnn2o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 29, 2026",
+      "description": "The regulator said a fee of between £237,500 to £712,500 per megawatt should be charged for upcoming projects."
     },
     {
       "title": "Brits urged to avoid dangerous plug adaptors this summer - what to watch out for",
@@ -3666,6 +3679,24 @@
       "description": "You've been invited by the happy couple, but they've asked for cash - not presents. North Londoners tell us what they would do."
     },
     {
+      "title": "South Korea’s stock market plunges as AI-driven boom fades",
+      "url": "https://www.aljazeera.com/economy/2026/7/29/south-koreas-stock-market-plunges-as-ai-driven-boom-fades?traffic_source=rss",
+      "date": "July 29, 2026",
+      "description": "The benchmark KOSPI .KS11 sees steep decline as interest in chipmakers falls."
+    },
+    {
+      "title": "Democrat senators ask US SEC to probe Trump Media’s fast feed sale",
+      "url": "https://www.aljazeera.com/economy/2026/7/29/democrat-senators-ask-us-sec-to-probe-trump-medias-fast-feed-sale?traffic_source=rss",
+      "date": "July 29, 2026",
+      "description": "Trump Media has discussed charging as much as $100,000 a month for the Truth API product for buyers to get first access."
+    },
+    {
+      "title": "Fauci invokes Fifth Amendment in heated COVID-19 Senate hearing",
+      "url": "https://www.aljazeera.com/news/2026/7/29/fauci-invokes-fifth-amendment-in-heated-covid-19-senate-hearing?traffic_source=rss",
+      "date": "July 29, 2026",
+      "description": "Physician declines to answer Senate questions as Republicans like Rand Paul accuse him of covering up COVID&#039;s origins."
+    },
+    {
       "title": "Is the world at risk of another energy shock?",
       "url": "https://www.aljazeera.com/video/counting-the-cost/2026/7/29/is-the-world-at-risk-of-another-energy-shock?traffic_source=rss",
       "date": "July 29, 2026",
@@ -3742,24 +3773,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/29/29-07-sv-guatemala-couple-ice-gl?traffic_source=rss",
       "date": "July 29, 2026",
       "description": "Nixon Giovanni Paz, deported by ICE last year was bound and shot dead alongside his wife in Guatemala."
-    },
-    {
-      "title": "Wildfires spread in Greece and Turkiye as EU chief urges climate action",
-      "url": "https://www.aljazeera.com/news/2026/7/29/eu-crisis-chief-urges-tougher-climate-action-amid-france-spain-wildfires?traffic_source=rss",
-      "date": "July 29, 2026",
-      "description": "Heatwaves intensify deadly fires across Europe, killing two firefighters on the Greek island of Crete."
-    },
-    {
-      "title": "How has the Indian government responded to ‘Cockroach’ protests?",
-      "url": "https://www.aljazeera.com/news/2026/7/29/how-has-the-indian-government-responded-to-cockroach-protests?traffic_source=rss",
-      "date": "July 29, 2026",
-      "description": "The BJP government&#039;s response so far has been a measured crackdown as it also attempts to woo the youth."
-    },
-    {
-      "title": "A safe space for Gaza women: A sanctuary to speak, heal and share amid war",
-      "url": "https://www.aljazeera.com/news/2026/7/29/a-safe-space-for-gaza-women-a-sanctuary-to-speak-heal-and-share-amid-war?traffic_source=rss",
-      "date": "July 29, 2026",
-      "description": "A women’s safe spaces initiative in Gaza offers psychological support and awareness sessions."
     }
   ]
 }
