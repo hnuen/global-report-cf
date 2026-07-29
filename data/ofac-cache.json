@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-29T17:10:01.394Z",
+  "updatedAt": "2026-07-29T17:40:13.282Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260729",
@@ -3054,6 +3054,12 @@
   ],
   "unNotices": [
     {
+      "title": "Security Council Extends Sanctions Regime Targeting Non-State Armed Groups, Individuals in Central African Republic for One Year, Unanimously Adopting Resolution 2827 (2026)",
+      "url": "https://press.un.org/en/2026/sc16424.doc.htm",
+      "date": "July 29, 2026",
+      "description": "The Security Council today renewed the sanctions regime targeting non-State armed groups and individuals operating in the Central African Republic for another year."
+    },
+    {
       "title": "Security Council, 10204th Meeting (AM) Central African Republic",
       "url": "https://press.un.org/en/blog/sc16424",
       "date": "July 29, 2026",
@@ -3081,6 +3087,12 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Fuel prices soar on back of Iran war, leaving Yemeni labourers with no work",
+      "url": "https://www.aljazeera.com/news/2026/7/29/yemen-construction-fuel-iran?traffic_source=rss",
+      "date": "July 29, 2026",
+      "description": "Construction projects in Yemen are paused as rising fuel prices trigger a domino effect on building material costs."
+    },
     {
       "title": "Trump says US to deliver ‘beating’ to Iran after bases again targeted",
       "url": "https://www.aljazeera.com/news/2026/7/29/trump-says-us-to-deliver-beating-to-iran-after-bases-again-targeted?traffic_source=rss",
@@ -3128,15 +3140,16 @@
       "url": "https://www.aljazeera.com/news/2026/7/29/russia-charges-telegram-founder-pavel-durov-with-aiding-terrorism?traffic_source=rss",
       "date": "July 29, 2026",
       "description": "Russia&#039;s FSB says Telegram has not pulled content used by Ukrainian intelligence and &#039;terrorist&#039; groups to plan attacks."
-    },
-    {
-      "title": "US and Saudi Arabia strike ‘Iran-aligned’ groups in Iraq",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/29/us-and-saudi-arabia-strike-iran-aligned-groups-in-iraq?traffic_source=rss",
-      "date": "July 29, 2026",
-      "description": "The US and Saudi Arabia launched joint air strikes on Iraq, targeting ‘Iran-aligned’ groups."
     }
   ],
-  "occNews": [],
+  "occNews": [
+    {
+      "title": "OCC Announces Enforcement Actions for July 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-59.html",
+      "date": "July 16, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for July 2026."
+    }
+  ],
   "economicsNews": [
     {
       "title": "Minutes of the Board&#39;s discount rate meetings on June 8 and June 17, 2026",
@@ -3248,7 +3261,7 @@
       "title": "France fire crews face searing heat in battle to contain flames",
       "url": "https://www.bbc.co.uk/news/articles/c62q5we799ro?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 29, 2026",
-      "description": "Firefighters are battling flare-ups in 40C heat, as some locals have refused to heed evacuations in the Gironde region."
+      "description": "One volunteer fighting the fire in the Gironde region told the BBC \"it's our forest\", as some locals refuse to heed evacuations."
     },
     {
       "title": "More than 100 aftershocks hit Japan after powerful quake that killed 13",
