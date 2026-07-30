@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-07-30T17:09:37.050Z",
+  "updatedAt": "2026-07-30T17:39:55.961Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260730",
+      "code": "20260730",
+      "title": "Counter Terrorism Designations; Non-Proliferation Designation Update",
+      "date": "July 30, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260729",
       "code": "20260729",
@@ -54,12 +60,6 @@
       "code": "20260714",
       "title": "Iran-related Designations; Iran-related and Counter Terrorism Designation Update; Issuance of Iran-related General License",
       "date": "July 14, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260713",
-      "code": "20260713",
-      "title": "Cyber-related Designations; Cuba Designations; Issuance of Cuba-related Frequently Asked Question",
-      "date": "July 13, 2026"
     }
   ],
   "civilPenalties": [
@@ -1159,7 +1159,8 @@
           "date": "July 29, 2016",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7971/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "L",
@@ -1167,15 +1168,17 @@
           "date": "October 8, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48626/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "8A",
-          "title": "Iran General License 8A",
+          "title": "Authorizing Certain Humanitarian Trade Transactions Involving the Central Bank of Iran or the National Iranian Oil Company",
           "date": "February 27, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48841/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "Q",
@@ -1183,7 +1186,8 @@
           "date": "May 20, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934291/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "T",
@@ -2321,7 +2325,8 @@
           "date": "December 20, 2016",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/8781/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "18",
@@ -2329,23 +2334,26 @@
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918686/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "19",
-          "title": "Ukraine General License 19",
+          "title": "Authorizing Transactions Related to Telecommunications and Mail",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918691/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "20",
-          "title": "Ukraine General License 20",
+          "title": "Official Business of Certain International Organizations and Entities",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918696/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "21",
@@ -2357,43 +2365,48 @@
         },
         {
           "number": "22",
-          "title": "Ukraine General License 22",
+          "title": "Authorizing the Exportation of Certain Services and Software Incident to Internet-Based Communications",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918706/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "23",
-          "title": "Ukraine General License 23",
+          "title": "Certain Transactions in Support of Nongovernmental Organizations’ Activities",
           "date": "March 11, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919151/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "24",
-          "title": "Ukraine General License 24",
+          "title": "Transactions Related to the Provision of Maritime Services",
           "date": "March 18, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919801/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "25",
-          "title": "Ukraine General License 25",
+          "title": "Journalistic Activities and Establishment of News Bureaus in Certain Regions of Ukraine",
           "date": "March 24, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/920276/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "26A",
-          "title": "Ukraine General License 26A",
+          "title": "Transactions Authorized Pursuant to the Russian Harmful Foreign Activities Sanctions Regulations",
           "date": "January 10, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/933911/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "134C",
@@ -3060,10 +3073,10 @@
       "description": "After a short period of relative calm when hostilities were paused, both sides have now restarted missile attacks."
     },
     {
-      "title": "Saudi Arabia's dilemma as it tries to stay out of US-Iran war",
-      "url": "https://www.bbc.co.uk/news/articles/clyx83l8jv8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 29, 2026",
-      "description": "The kingdom faces a choice of whether to keep hitting back as a deterrent or to try to de-escalate the situation."
+      "title": "Why limited war with the US may suit Iran better than peace",
+      "url": "https://www.bbc.co.uk/news/articles/c78gnyq3wvdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 30, 2026",
+      "description": "Iran may believe it can control its conflict carefully enough to keep pressure on the US while avoiding an all-out war."
     },
     {
       "title": "Missile that left crater deep inside Poland was probably Russian - Polish PM",
@@ -3076,6 +3089,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cy8mk59l5jzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 30, 2026",
       "description": "A six-year-old girl and two boys, aged 11 and 17, were among six killed in a village near the central city of Kryvyi Rih."
+    },
+    {
+      "title": "Saudi Arabia's dilemma as it tries to stay out of US-Iran war",
+      "url": "https://www.bbc.co.uk/news/articles/clyx83l8jv8o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 29, 2026",
+      "description": "The kingdom faces a choice of whether to keep hitting back as a deterrent or to try to de-escalate the situation."
     },
     {
       "title": "Bank holds interest rates but says it is ready to raise them if Iran war escalates",
@@ -3225,10 +3244,10 @@
   ],
   "regionsNews": [
     {
-      "title": "Thousands evacuated in Crete as wildfires threaten tourist resorts",
-      "url": "https://www.bbc.co.uk/news/articles/c9w01781981o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Hundreds of migrants swim from Morocco to Spanish enclave of Ceuta",
+      "url": "https://www.bbc.co.uk/news/articles/cg4drwzkrkxo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 30, 2026",
-      "description": "Strong winds have fanned the flames in the Rethymno region as wildfires continue to ravage the Greek island."
+      "description": "The territory's leader said the influx is overwhelming resources and urged the Spanish government to intervene."
     },
     {
       "title": "Nicaraguan leader proposes extending presidential term by another year",
@@ -3241,6 +3260,18 @@
       "url": "https://www.bbc.co.uk/news/articles/cp9e0v5xmdyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 30, 2026",
       "description": "Foul play is ruled out in the record number of elephant deaths for decades in this area of southern Kenya."
+    },
+    {
+      "title": "Father of teen school shooter sentenced to 15 years in prison",
+      "url": "https://www.bbc.co.uk/news/articles/c78g4y18rxgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 30, 2026",
+      "description": "\"It is clear you failed as a parent,\" the judge told Colin Gray, who was found guilty earlier this year on charges stemming from the deadly 2024 school attack."
+    },
+    {
+      "title": "Thousands evacuated in Crete as wildfires threaten tourist resorts",
+      "url": "https://www.bbc.co.uk/news/articles/c9w01781981o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 30, 2026",
+      "description": "Strong winds have fanned the flames in the Rethymno region as wildfires continue to ravage the Greek island."
     },
     {
       "title": "Trump considering AI controls after OpenAI hacking incidents",
@@ -3327,12 +3358,6 @@
       "description": "Can computer-based testing stop NEET paper leaks? Experts say governance matters as much as tech."
     },
     {
-      "title": "How Mexican drug cartels have outsourced meth labs to Nigeria",
-      "url": "https://www.bbc.co.uk/news/articles/crmrnxp4nllo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 28, 2026",
-      "description": "West Africa is becoming increasingly attractive to those who want to make and export illicit drugs."
-    },
-    {
       "title": "Man impaled by a hiking pole treks 10 miles down mountain",
       "url": "https://www.bbc.co.uk/news/videos/cvg0nlkmzewo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 30, 2026",
@@ -3357,6 +3382,12 @@
       "description": "Authorities have been trying to contain the wildfires, which have been burning for days."
     },
     {
+      "title": "British Airways flight called mayday on approach to Heathrow",
+      "url": "https://www.bbc.co.uk/news/articles/cn8n1knkkz9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 30, 2026",
+      "description": "The call was made on an Airbus A320 flying from Dusseldorf airport in Germany on 6 July following two stall warnings."
+    },
+    {
       "title": "US economic growth sees surprise slowdown in second quarter",
       "url": "https://www.bbc.co.uk/news/articles/cd0xvrmlx2eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 30, 2026",
@@ -3375,16 +3406,16 @@
       "description": "The car giant says it expects fewer than 300 people will lose their jobs."
     },
     {
-      "title": "The Chinese robot army transforming the UK's retail industry",
-      "url": "https://www.bbc.co.uk/news/articles/c0jl8v23qwgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 29, 2026",
-      "description": "Britain's weak productivity growth and labour shortages are creating an opportunity for China's robotics firms."
-    },
-    {
       "title": "Beauty Pie founder on how she dropped out of university and built five beauty businesses",
       "url": "https://www.bbc.co.uk/news/articles/c8jngmk93p9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 29, 2026",
       "description": "Marcia Kilgore, founder of Beauty Pie, shares her top tips on how to create a successful business."
+    },
+    {
+      "title": "The Chinese robot army transforming the UK's retail industry",
+      "url": "https://www.bbc.co.uk/news/articles/c0jl8v23qwgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 29, 2026",
+      "description": "Britain's weak productivity growth and labour shortages are creating an opportunity for China's robotics firms."
     },
     {
       "title": "What happens here has a big impact on your money",
@@ -3499,12 +3530,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cn8ngxw5195o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 29, 2026",
       "description": "Customers says they returned from their holidays to find their cars damaged and dirty."
-    },
-    {
-      "title": "eBay agrees $56m settlement with bloggers over harassment case",
-      "url": "https://www.bbc.co.uk/news/articles/cj039p238r5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 28, 2026",
-      "description": "Former eBay executives carried out \"unprecedented\" harassment over a critical newsletter."
     },
     {
       "title": "How cow showers and fans help farmers keep cattle cool",
@@ -3690,7 +3715,7 @@
       "title": "Police arrest dozens at London rally supporting Palestine Action",
       "url": "https://www.aljazeera.com/news/2026/7/30/police-arrest-dozens-at-london-rally-supporting-palestine-action?traffic_source=rss",
       "date": "July 30, 2026",
-      "description": "The first protest supporting group since Andy Burnham became PM comes as Supreme Court opens way for appeal."
+      "description": "The protest is the first in support of the proscribed group since Andy Burnham became prime minister."
     },
     {
       "title": "El Salvador sentences gang members to 1,000 years in prison",
