@@ -704,7 +704,12 @@ archive: {
       // russia-hfa, sdgt, and non-prolif. GL 134C's and GL X's real entries
       // live in the russia-hfa and iran blocks respectively — neither
       // belongs in russia-ukraine.
-                        { number: "GL 18", title: "Ukraine General License 18", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/918686/download?inline", addedDate: "July 24, 2026" },
+                                                { number: "GL 19", title: "Ukraine General License 19", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/918691/download?inline", addedDate: "July 30, 2026" },
+                        { number: "GL 20", title: "Ukraine General License 20", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/918696/download?inline", addedDate: "July 30, 2026" },
+                        { number: "GL 22", title: "Ukraine General License 22", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/918706/download?inline", addedDate: "July 30, 2026" },
+                        { number: "GL 23", title: "Ukraine General License 23", date: "March 11, 2022", url: "https://ofac.treasury.gov/media/919151/download?inline", addedDate: "July 30, 2026" },
+                        { number: "GL 24", title: "Ukraine General License 24", date: "March 18, 2022", url: "https://ofac.treasury.gov/media/919801/download?inline", addedDate: "July 30, 2026" },
+{ number: "GL 18", title: "Ukraine General License 18", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/918686/download?inline", addedDate: "July 24, 2026" },
             { number: "GL 25", title: "Journalistic Activities and Establishment of News Bureaus in Certain Regions of Ukraine", date: "March 24, 2022", url: "https://ofac.treasury.gov/media/920276/download?inline", addedDate: "July 24, 2026" },
             { number: "GL 26A", title: "Transactions Authorized Pursuant to the Russian Harmful Foreign Activities Sanctions Regulations", date: "January 10, 2025", url: "https://ofac.treasury.gov/media/933911/download?inline", addedDate: "July 24, 2026" },
 { number: "GL 11", title: "Ukraine General License 11", date: "December 20, 2016", url: "https://ofac.treasury.gov/media/8781/download?inline", addedDate: "June 27, 2026" },
@@ -1028,7 +1033,7 @@ archive: {
     id: "non-prolif",
     name: "Non-Proliferation Sanctions",
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/non-proliferation-sanctions",
-    region: "Global", category: "thematic", lastUpdated: "Jul 15, 2026", status: "active",
+    region: "Global", category: "thematic", lastUpdated: "Jul 30, 2026", status: "active",
     executiveOrders: [
       // Added 13883/13608 2026-06-26: were missing — OFAC's live page lists 5
       // EOs, library only had 3. Verified via direct fetch of the live page
@@ -1045,7 +1050,8 @@ archive: {
       // "Recent Actions" widget mis-scrape as the duplicates found in Iran,
       // russia-hfa, russia-ukraine, and sdgt. Their real entries live in the
       // russia-hfa and iran blocks respectively.
-      { number: "GL 1", title: "Revocation of Non-Proliferation General License No. 1", date: "", url: "https://ofac.treasury.gov/media/8591/download?inline" },
+            { number: "GL 6", title: "Non-Proliferation General License 6", date: "February 06, 2012", url: "https://ofac.treasury.gov/media/8616/download?inline", expires: "January 31, 2014", addedDate: "July 30, 2026" },
+{ number: "GL 1", title: "Revocation of Non-Proliferation General License No. 1", date: "", url: "https://ofac.treasury.gov/media/8591/download?inline" },
       { number: "GL 2", title: "Non-Proliferation General License No. 2", date: "", url: "https://ofac.treasury.gov/media/8596/download?inline" },
       { number: "GL 3", title: "Revocation of Non-Proliferation General License No. 3", date: "December 21, 2010", url: "https://ofac.treasury.gov/media/8601/download?inline" },
       { number: "GL 4", title: "Non-Proliferation General License No. 4", date: "June 23, 2011", url: "https://ofac.treasury.gov/media/8606/download?inline" , expires: "June 23, 2011"},
