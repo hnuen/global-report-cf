@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-30T16:09:17.306Z",
+  "updatedAt": "2026-07-30T17:09:37.050Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260729",
@@ -409,7 +409,7 @@
     "counter-terrorism-sanctions": {
       "name": "Counter Terrorism Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-terrorism-sanctions",
-      "lastUpdated": "Jul 23, 2026",
+      "lastUpdated": "Jul 30, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -542,8 +542,7 @@
           "date": "October 23, 2007",
           "expires": "October 23, 2007",
           "url": "https://ofac.treasury.gov/media/4816/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "7A",
@@ -1160,8 +1159,7 @@
           "date": "July 29, 2016",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7971/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "L",
@@ -1169,17 +1167,15 @@
           "date": "October 8, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48626/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "8A",
-          "title": "Authorizing Certain Humanitarian Trade Transactions Involving the Central Bank of Iran or the National Iranian Oil Company",
+          "title": "Iran General License 8A",
           "date": "February 27, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48841/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "Q",
@@ -1187,8 +1183,7 @@
           "date": "May 20, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934291/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "T",
@@ -1404,7 +1399,7 @@
     "non-proliferation-sanctions": {
       "name": "Non-Proliferation Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/non-proliferation-sanctions",
-      "lastUpdated": "Jul 15, 2026",
+      "lastUpdated": "Jul 30, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -1471,7 +1466,7 @@
         },
         {
           "number": "6",
-          "title": "Specified transactions involving certain blocked property authorized",
+          "title": "Non-Proliferation General License 6",
           "date": "February 06, 2012",
           "expires": "January 31, 2014",
           "url": "https://ofac.treasury.gov/media/8616/download?inline"
@@ -2326,8 +2321,7 @@
           "date": "December 20, 2016",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/8781/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "18",
@@ -2335,26 +2329,23 @@
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918686/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "19",
-          "title": "Authorizing Transactions Related to Telecommunications and Mail",
+          "title": "Ukraine General License 19",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918691/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "20",
-          "title": "Official Business of Certain International Organizations and Entities",
+          "title": "Ukraine General License 20",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918696/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "21",
@@ -2366,48 +2357,43 @@
         },
         {
           "number": "22",
-          "title": "Authorizing the Exportation of Certain Services and Software Incident to Internet-Based Communications",
+          "title": "Ukraine General License 22",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918706/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "23",
-          "title": "Certain Transactions in Support of Nongovernmental Organizations’ Activities",
+          "title": "Ukraine General License 23",
           "date": "March 11, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919151/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "24",
-          "title": "Transactions Related to the Provision of Maritime Services",
+          "title": "Ukraine General License 24",
           "date": "March 18, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919801/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "25",
-          "title": "Journalistic Activities and Establishment of News Bureaus in Certain Regions of Ukraine",
+          "title": "Ukraine General License 25",
           "date": "March 24, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/920276/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "26A",
-          "title": "Transactions Authorized Pursuant to the Russian Harmful Foreign Activities Sanctions Regulations",
+          "title": "Ukraine General License 26A",
           "date": "January 10, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/933911/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "134C",
@@ -3112,6 +3098,18 @@
   ],
   "ajNews": [
     {
+      "title": "‘To play God’: Cuba’s healthcare system collapses under US pressure",
+      "url": "https://www.aljazeera.com/news/longform/2026/7/30/to-play-god-cubas-healthcare-system-collapses-under-us-pressure?traffic_source=rss",
+      "date": "July 30, 2026",
+      "description": "As the Trump administration tightens US sanctions, Cuba&#039;s healthcare sector struggles with fuel and supply shortages."
+    },
+    {
+      "title": "NATO jets scramble as Russian missile detonates in Poland",
+      "url": "https://www.aljazeera.com/news/2026/7/30/nato-jets-scramble-as-russian-missile-detonates-in-poland?traffic_source=rss",
+      "date": "July 30, 2026",
+      "description": "The growing series of NATO airspace violations is raising concern that Russia&#039;s war on Ukraine could escalate."
+    },
+    {
       "title": "Smoke rises over southern Iran after renewed US attacks",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/30/smoke-rises-over-southern-iran-after-renewed-us-attacks?traffic_source=rss",
       "date": "July 30, 2026",
@@ -3122,30 +3120,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/30/war-on-iran-phase-ii-day-19?traffic_source=rss",
       "date": "July 30, 2026",
       "description": "The US resumes bombing Iran, with a family of three killed in Qeshm Island."
-    },
-    {
-      "title": "Why is Saudi Arabia forming a coalition to protect the Red Sea?",
-      "url": "https://www.aljazeera.com/news/2026/7/30/why-is-saudi-arabia-forming-a-coalition-to-protect-the-red-sea?traffic_source=rss",
-      "date": "July 30, 2026",
-      "description": "The alliance aims to defend shipping from attacks by Iran-backed Houthis in Yemen."
-    },
-    {
-      "title": "Poland says Russian missile breaches NATO airspace",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/30/30-07-sv-lublin-air-sirens-pl?traffic_source=rss",
-      "date": "July 30, 2026",
-      "description": "Poland says a Russian missile landed inside Polish territory, breaching NATO airspace during a Russian attack on Ukraine"
-    },
-    {
-      "title": "US hits multiple targets in Iran as IRGC pledges retaliation: What we know",
-      "url": "https://www.aljazeera.com/news/2026/7/30/us-hits-multiple-targets-in-iran-as-irgc-pledges-retaliation-what-we-know?traffic_source=rss",
-      "date": "July 30, 2026",
-      "description": "Jordan said it intercepted missiles shortly after the US struck Iranian sites including Qeshm and Bushehr."
-    },
-    {
-      "title": "From Toronto to Damascus: Syrians return home aiming to rebuild country",
-      "url": "https://www.aljazeera.com/news/2026/7/30/from-toronto-damascus-syria-return-home?traffic_source=rss",
-      "date": "July 30, 2026",
-      "description": "Families like the Tasabehjis aim to rebuild Syria, fostering community and hope despite economic and social challenges."
     }
   ],
   "occNews": [
@@ -3671,6 +3645,24 @@
       "description": "You've been invited by the happy couple, but they've asked for cash - not presents. North Londoners tell us what they would do."
     },
     {
+      "title": "In Their Own Hands: Ghana’s Drug Vigilantes",
+      "url": "https://www.aljazeera.com/video/people-power/2026/7/30/in-their-own-hands-ghanas-drug-vigilantes?traffic_source=rss",
+      "date": "July 30, 2026",
+      "description": "Citizen vigilantes patrol Ghana&#039;s streets, fighting an opioid crisis. We meet those taking the law into their own hands."
+    },
+    {
+      "title": "IRGC video of retaliatory strikes on US targets in Jordan",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/30/irgc-video-of-retaliatory-strikes-on-us-targets-in-jordan?traffic_source=rss",
+      "date": "July 30, 2026",
+      "description": "The IRGC released a video of what they say were missiles launched by their naval forces targeting US aircraft in Jordan."
+    },
+    {
+      "title": "US GDP growth dips as inflation and trade deficits pressure economy",
+      "url": "https://www.aljazeera.com/economy/2026/7/30/us-gdp-growth-dips-as-inflation-and-trade-deficits-pressure-economy?traffic_source=rss",
+      "date": "July 30, 2026",
+      "description": "GDP grew by 1.5 percent in the second quarter following a 2.1 percent increase in the first quarter."
+    },
+    {
       "title": "Spain’s enclave Ceuta raises alarm as thousands cross border from Morocco",
       "url": "https://www.aljazeera.com/news/2026/7/30/spanish-enclave-of-ceuta-raises-alarm-as-thousands-cross-morocco-border?traffic_source=rss",
       "date": "July 30, 2026",
@@ -3683,10 +3675,10 @@
       "description": "Senate committee postpones vote as key Republican says he has not received information on &#039;anti-weaponisation&#039; fund."
     },
     {
-      "title": "UEFA members agree FIFA boycott if World Cup plans pursued",
+      "title": "UEFA members vote to boycott FIFA if Infantino’s World Cup plans pursued",
       "url": "https://www.aljazeera.com/sports/2026/7/30/uefa-members-agree-fifa-boycott-if-world-cup-plans-pursued?traffic_source=rss",
       "date": "July 30, 2026",
-      "description": "UEFA member countries agree to boycott FIFA competitions in protest at private equity plan for World Cup."
+      "description": "European nations agree in virtual meeting to boycott FIFA competitions in protest at the private equity plan for World Cup."
     },
     {
       "title": "Is Pakistan ‘using India’s playbook’ in Kashmir?",
@@ -3698,7 +3690,7 @@
       "title": "Police arrest dozens at London rally supporting Palestine Action",
       "url": "https://www.aljazeera.com/news/2026/7/30/police-arrest-dozens-at-london-rally-supporting-palestine-action?traffic_source=rss",
       "date": "July 30, 2026",
-      "description": "The protest is the first in support of the proscribed group since Andy Burnham became prime minister."
+      "description": "The first protest supporting group since Andy Burnham became PM comes as Supreme Court opens way for appeal."
     },
     {
       "title": "El Salvador sentences gang members to 1,000 years in prison",
@@ -3777,12 +3769,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/30/several-children-killed-and-wounded-in-israeli-attacks-across-gaza?traffic_source=rss",
       "date": "July 30, 2026",
       "description": "Israeli strikes hit multiple areas across Gaza overnight, including tents sheltering displaced families in al-Mawasi."
-    },
-    {
-      "title": "Howe exits Newcastle on Premier League season eve, with Al-Ahli boss touted",
-      "url": "https://www.aljazeera.com/sports/2026/7/30/howe-exits-newcastle-on-premier-league-season-eve-with-al-ahli-boss-touted?traffic_source=rss",
-      "date": "July 30, 2026",
-      "description": "Eddie Howe has left Newcastle on the eve of Premier League season, with Matthias Jaissle touted as new manager."
     }
   ]
 }
