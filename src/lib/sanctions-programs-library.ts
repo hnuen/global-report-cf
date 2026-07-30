@@ -704,11 +704,6 @@ archive: {
       // russia-hfa, sdgt, and non-prolif. GL 134C's and GL X's real entries
       // live in the russia-hfa and iran blocks respectively — neither
       // belongs in russia-ukraine.
-                                                { number: "GL 19", title: "Authorizing Transactions Related to Telecommunications and Mail", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/918691/download?inline", addedDate: "July 30, 2026" },
-                        { number: "GL 20", title: "Official Business of Certain International Organizations and Entities", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/918696/download?inline", addedDate: "July 30, 2026" },
-                        { number: "GL 22", title: "Authorizing the Exportation of Certain Services and Software Incident to Internet-Based Communications", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/918706/download?inline", addedDate: "July 30, 2026" },
-                        { number: "GL 23", title: "Certain Transactions in Support of Nongovernmental Organizations’ Activities", date: "March 11, 2022", url: "https://ofac.treasury.gov/media/919151/download?inline", addedDate: "July 30, 2026" },
-                        { number: "GL 24", title: "Transactions Related to the Provision of Maritime Services", date: "March 18, 2022", url: "https://ofac.treasury.gov/media/919801/download?inline", addedDate: "July 30, 2026" },
 { number: "GL 18", title: "Ukraine General License 18", date: "February 21, 2022", url: "https://ofac.treasury.gov/media/918686/download?inline", addedDate: "July 24, 2026" },
             { number: "GL 25", title: "Journalistic Activities and Establishment of News Bureaus in Certain Regions of Ukraine", date: "March 24, 2022", url: "https://ofac.treasury.gov/media/920276/download?inline", addedDate: "July 24, 2026" },
             { number: "GL 26A", title: "Transactions Authorized Pursuant to the Russian Harmful Foreign Activities Sanctions Regulations", date: "January 10, 2025", url: "https://ofac.treasury.gov/media/933911/download?inline", addedDate: "July 24, 2026" },
