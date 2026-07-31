@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-31T13:09:31.364Z",
+  "updatedAt": "2026-07-31T13:39:23.085Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260730",
@@ -3129,6 +3129,12 @@
   ],
   "ajNews": [
     {
+      "title": "Russia appears to infiltrate first ‘fortress city’ as Ukraine changes guard",
+      "url": "https://www.aljazeera.com/features/2026/7/31/russia-appears-to-infiltrate-first-fortress-city-as-ukraine-changes-guard?traffic_source=rss",
+      "date": "July 31, 2026",
+      "description": "Reports emerge from the front that Russia has infiltrated most of Kostiantynivka as it tries to regain the offensive."
+    },
+    {
       "title": "Russia’s Africa Corps killed Mali civilians in air strike: HRW",
       "url": "https://www.aljazeera.com/news/2026/7/31/russias-africa-corps-killed-mali-civilians-in-air-strike-hrw?traffic_source=rss",
       "date": "July 31, 2026",
@@ -3141,7 +3147,14 @@
       "description": "Iran says it struck Kuwait in retaliation for US strikes on multiple locations in Iran, including Qeshm island."
     }
   ],
-  "occNews": [],
+  "occNews": [
+    {
+      "title": "OCC Announces Enforcement Actions for July 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-59.html",
+      "date": "July 16, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for July 2026."
+    }
+  ],
   "economicsNews": [
     {
       "title": "Federal Reserve issues FOMC statement",
@@ -3717,6 +3730,12 @@
       "description": "What might the new team at the top of government mean for your money?"
     },
     {
+      "title": "FIFA World Cup plan: Infantino tackles UEFA and global game – all to know",
+      "url": "https://www.aljazeera.com/sports/2026/7/31/fifas-infantino-and-uefa-divided-on-world-cup-investment-plan-what-next?traffic_source=rss",
+      "date": "July 31, 2026",
+      "description": "Al Jazeera looks at the growing global opposition to FIFA President Gianni Infantino&#039;s private investment plan."
+    },
+    {
       "title": "Palestinians in Gaza react to latest ceasefire deal",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/7/31/31-07-sv-gazans-react-to-latest-deal-ps?traffic_source=rss",
       "date": "July 31, 2026",
@@ -3841,18 +3860,6 @@
       "url": "https://www.aljazeera.com/opinions/2026/7/31/latin-america-is-becoming-a-laboratory-for-tech-supremacism?traffic_source=rss",
       "date": "July 31, 2026",
       "description": "Trumpism, corporate deregulation and biometric surveillance are converging into a new model of control in the region."
-    },
-    {
-      "title": "How Netanyahu lost America",
-      "url": "https://www.aljazeera.com/opinions/2026/7/31/how-netanyahu-lost-america?traffic_source=rss",
-      "date": "July 31, 2026",
-      "description": "By tying Israel to the Republican right, he shattered bipartisan consensus that sustained its most important alliance."
-    },
-    {
-      "title": "Pakistan’s attacks on Afghanistan are about more than the TTP",
-      "url": "https://www.aljazeera.com/opinions/2026/7/31/pakistans-attacks-on-afghanistan-are-about-more-than-the-ttp?traffic_source=rss",
-      "date": "July 31, 2026",
-      "description": "Islamabad is using a domestic insurgency to justify its broader pursuit of strategic dominance."
     }
   ]
 }
