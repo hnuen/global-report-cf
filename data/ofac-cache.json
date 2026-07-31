@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-31T15:39:42.716Z",
+  "updatedAt": "2026-07-31T16:09:38.362Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260730",
@@ -3145,15 +3145,16 @@
       "url": "https://www.aljazeera.com/news/2026/7/31/russias-africa-corps-killed-mali-civilians-in-air-strike-hrw?traffic_source=rss",
       "date": "July 31, 2026",
       "description": "Russian paramilitaries fight alongside Malian soldiers battling multiple armed groups linked to al-Qaeda and ISIL."
-    },
-    {
-      "title": "IRGC strikes US targets in Kuwait a day after US hits Iran: Latest events",
-      "url": "https://www.aljazeera.com/news/2026/7/31/irgc-strikes-us-targets-in-kuwait-a-day-after-us-hits-iran-latest-events?traffic_source=rss",
-      "date": "July 31, 2026",
-      "description": "Iran says it struck Kuwait in retaliation for US strikes on multiple locations in Iran, including Qeshm island."
     }
   ],
-  "occNews": [],
+  "occNews": [
+    {
+      "title": "OCC Announces Enforcement Actions for July 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-59.html",
+      "date": "July 16, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for July 2026."
+    }
+  ],
   "economicsNews": [
     {
       "title": "Federal Reserve issues FOMC statement",
@@ -3387,6 +3388,12 @@
       "description": "Hansard, who was 56, won the best song Oscar for the 2007 low-budget musical film Once."
     },
     {
+      "title": "What's in the Gaza peace deal roadmap?",
+      "url": "https://www.bbc.co.uk/news/articles/c20e94k2ex5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "July 31, 2026",
+      "description": "Hamas says it has accepted a disarmament plan for Gaza which will see it lay down its arms and Israeli troops withdraw from the territory."
+    },
+    {
       "title": "India wants to join the strawberry superpowers",
       "url": "https://www.bbc.co.uk/news/articles/c8x274xxxpwo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 30, 2026",
@@ -3423,10 +3430,10 @@
       "description": "Can computer-based testing stop NEET paper leaks? Experts say governance matters as much as tech."
     },
     {
-      "title": "Migrants seen swimming around border fence of Spanish enclave Ceuta",
+      "title": "Watch: Tens of thousands of migrants enter Spain's Ceuta from Morocco",
       "url": "https://www.bbc.co.uk/news/videos/cnvnml1pen6o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 30, 2026",
-      "description": "The North African enclave's leader said resources were being overwhelmed after so many people entered by sea from Morocco."
+      "date": "July 31, 2026",
+      "description": "Spain's North African territory of Ceuta from Morocco, though more than 25,000 have returned voluntarily, officials said."
     },
     {
       "title": "Dashcam captures tornado toppling power lines onto car",
@@ -3721,6 +3728,12 @@
       "url": "https://www.bbc.co.uk/sounds/play/m002zg12?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 25, 2026",
       "description": "What might the new team at the top of government mean for your money?"
+    },
+    {
+      "title": "The promise I made to Ismail al-Ghoul",
+      "url": "https://www.aljazeera.com/opinions/2026/7/31/the-promise-i-made-to-ismail-al-ghoul?traffic_source=rss",
+      "date": "July 31, 2026",
+      "description": "He asked me to keep telling Gaza’s story. Two years after Israel killed him, I have not stopped."
     },
     {
       "title": "World Cup: FIFA studying impact of expanding to 64 teams for 2030 edition",
