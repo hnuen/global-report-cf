@@ -9,8 +9,9 @@ import type { Briefing, Section } from "./types";
 import { enrichArticlesWithBriefs } from "./brief-generator";
 import { loadArticleLibrary, saveArticlesToLibrary } from "./article-library";
 import { fetchOfacCache, recentActionsToArticles, civilPenaltiesToArticles, programsToArticles, ofsiNoticesToArticles, europaNewsToArticles, unNoticesToArticles, bbcNewsToArticles, ajNewsToArticles, occNewsToArticles, economicsNewsToArticles, bisNewsToArticles, regionsNewsToArticles } from "./ofac-github-cache";
+import { mergeDirectWithAiSupplement } from "./source-merge";
 
-// No module-level singletons — always read env vars fresh on each invocation
+// No module-level singletons â€” always read env vars fresh on each invocation
 export async function loadBriefing(): Promise<Briefing | null> {
   const storage = await buildStorageManager();
   return storage.load();
@@ -24,12 +25,12 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
 }> {
   const storage = await buildStorageManager();
 
-  // Load persisted article library (Redis-backed — built up across refresh runs)
+  // Load persisted article library (Redis-backed â€” built up across refresh runs)
   // Skip in skipLLM path to conserve CF Workers subrequest budget (stay under 50 limit)
   const libraryArticles = opts?.skipLLM ? [] : await loadArticleLibrary();
   console.log(`[orchestrator] Loaded ${libraryArticles.length} articles from library (skipLLM=${opts?.skipLLM ?? false})`);
 
-  // Always fetch official sources first — fast and free
+  // Always fetch official sources first â€” fast and free
   // group=1 (manual refresh, batch 1): OFAC date news + Treasury SBs (~11 sources)
   // group=undefined (scheduled runs): fetch all sources
   console.log("[orchestrator] Fetching official government sources...");
@@ -40,13 +41,13 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
   let briefing: Briefing;
   let usedProvider: string;
 
-  // Even 1 successful source is enough — fall through to historical/library backfill
+  // Even 1 successful source is enough â€” fall through to historical/library backfill
   // if most sources timed out. Only hard-fail if absolutely nothing came back.
   if (officialSources.length === 0) {
     throw new Error("No official sources fetched successfully");
   }
 
-  // ── Step 1: build structured briefing immediately (fast, ~0s) ───────────────
+  // â”€â”€ Step 1: build structured briefing immediately (fast, ~0s) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   // This is always done first so we can pre-save a valid briefing with today's
   // timestamp BEFORE attempting the slow LLM call.  That guarantees Redis is
   // updated even if the LLM / enrichment steps are killed by CF's wall-clock limit.
@@ -72,7 +73,7 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
     }
   }
 
-  // ── GitHub OFAC cache — inject fresh scraped data committed by GH Actions ──
+  // â”€â”€ GitHub OFAC cache â€” inject fresh scraped data committed by GH Actions â”€â”€
   // CF Workers can't reach ofac.treasury.gov (IP blocked). GH Actions scrapes it
   // and commits data/ofac-cache.json; we read it via raw.githubusercontent.com.
   // Only inject entries not already covered by Gemini/official sources (dedup by sourceUrl).
@@ -88,7 +89,7 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
       const programArticles = ofacCache.programs
         ? programsToArticles(ofacCache.programs, 9200, existingUrls)
         : [];
-      // UK OFSI / EU Commission — same idea as the OFAC injection above: these
+      // UK OFSI / EU Commission â€” same idea as the OFAC injection above: these
       // are scraped and committed to the cache file by refresh-briefing.mjs
       // already, but previously had no converter here, so they sat unused and
       // never reached the live briefing or alert pipeline.
@@ -100,7 +101,7 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
         .length > 0
         ? europaNewsToArticles(ofacCache.europaNews!).filter(a => !existingUrls.has(a.sourceUrl!))
         : [];
-      // Remaining direct-scrape feeds — same gap as OFSI/EU above: scraped and
+      // Remaining direct-scrape feeds â€” same gap as OFSI/EU above: scraped and
       // committed by refresh-briefing.mjs already, but no converter here meant
       // none of this ever reached the live briefing or alert pipeline.
       const unArticles = (ofacCache.unNotices ?? [])
@@ -145,7 +146,7 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
     console.warn("[orchestrator] GitHub OFAC cache fetch failed (non-fatal):", String(e).slice(0, 80));
   }
 
-  // ── Library accumulation — persist articles across refreshes (up to 50/section, 6 months) ─────
+  // â”€â”€ Library accumulation â€” persist articles across refreshes (up to 50/section, 6 months) â”€â”€â”€â”€â”€
   // Merge ALL library articles (not just backfill-to-8) so each section accumulates
   // up to 50 articles. The UI shows 15 by default with a "show more" toggle.
   if (libraryArticles.length > 0) {
@@ -184,7 +185,7 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
     if (totalAdded > 0) console.log(`[orchestrator] Added ${totalAdded} library articles for retention display`);
   }
 
-  // ── Per-source official backfill ─────────────────────────────────────────
+  // â”€â”€ Per-source official backfill â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   // For each key official source, if ZERO live articles came from that source
   // (e.g. the scraper was blocked or the site had no new content today), inject
   // the most recent 5-7 historical articles so the relevant tab always shows
@@ -209,15 +210,15 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
     }
   }
 
-  // ── 3-tier source priority system ──────────────────────────────────────────
-  // Tier 1 (official — always fetched first & always shown): OFAC, FinCEN, BIS,
+  // â”€â”€ 3-tier source priority system â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // Tier 1 (official â€” always fetched first & always shown): OFAC, FinCEN, BIS,
   //         OCC, Federal Reserve, UK OFSI, EU
-  // Tier 2 (Google News / general outlets — only kept if <= 30 days old)
-  // Tier 3 (Al Jazeera, UN News, India MEA — always shown)
+  // Tier 2 (Google News / general outlets â€” only kept if <= 30 days old)
+  // Tier 3 (Al Jazeera, UN News, India MEA â€” always shown)
   //
   // Matching is done via keyword/substring rather than exact-name equality
   // because display names produced upstream are often compound, e.g.
-  // "U.S. Treasury / OFAC", "OFAC / Iran", "EU Council — Sanctions RSS".
+  // "U.S. Treasury / OFAC", "OFAC / Iran", "EU Council â€” Sanctions RSS".
   const officialKeywords = [
     "OFAC", "FinCEN", "BIS", "OCC", "Federal Reserve", "Fed Reserve",
     "UK OFSI", "OFSI", "EU Council", "EU Commission", "European Commission",
@@ -246,11 +247,11 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
   briefing.articles = briefing.articles.filter(a => {
     if (isOfficialSource(a.source) || isTier3Source(a.source)) return true;
     const t = Date.parse(a.date || "");
-    if (isNaN(t)) return true; // unparseable date — don't drop, just don't filter on it
+    if (isNaN(t)) return true; // unparseable date â€” don't drop, just don't filter on it
     return t >= cutoff;
   });
 
-  // Sort: Tier 1 first, then Tier 2, then Tier 3 — newest first within each tier
+  // Sort: Tier 1 first, then Tier 2, then Tier 3 â€” newest first within each tier
   briefing.articles = briefing.articles.sort((a, b) => {
     const aPriority = getPriority(a.source);
     const bPriority = getPriority(b.source);
@@ -258,7 +259,7 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
     return (b.date || "").localeCompare(a.date || "");
   });
 
-  // ── Apply enriched briefs from previous runs (library → live articles) ───────
+  // â”€â”€ Apply enriched briefs from previous runs (library â†’ live articles) â”€â”€â”€â”€â”€â”€â”€
   // Must happen BEFORE storage.save so the Redis copy has real briefs, not generics.
   if (libraryArticles.length > 0) {
     const libraryBriefMap = new Map<string, string>();
@@ -277,19 +278,19 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
         "treasury action","treasury department","new designations","general license issued",
         "regulatory guidance","dprk-related","counter-terrorism",
       ].some(g => cur.includes(g));
-      if (!isGeneric) return a; // already has a real brief — keep it
+      if (!isGeneric) return a; // already has a real brief â€” keep it
       appliedCount++;
       return { ...a, body: [lib, ...a.body.slice(1)] };
     });
     if (appliedCount > 0) console.log(`[orchestrator] Applied ${appliedCount} enriched briefs from library`);
   }
 
-  // ── Step 2: attempt LLM upgrade (best-effort, timeout varies) ───────────────
+  // â”€â”€ Step 2: attempt LLM upgrade (best-effort, timeout varies) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   // Runs AFTER the pre-save-ready structured briefing is built but BEFORE the
   // actual save.  If the LLM responds in time, its richer articles replace the
   // structured ones.  If it times out or errors, briefing stays as structured.
   // skipLLM=true (in-process trigger-refresh) bypasses this entirely.
-  // Sanctions always runs LLM — OFAC date-URL search requires Gemini grounding
+  // Sanctions always runs LLM â€” OFAC date-URL search requires Gemini grounding
   const needsLLM = !opts?.skipLLM || opts?.section === "sanctions";
   if (needsLLM) {
     // Manual refresh: shorter timeout so the user gets a response quickly.
@@ -303,31 +304,30 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
           setTimeout(() => reject(new Error(`LLM timeout after ${LLM_TIMEOUT_MS / 1000}s`)), LLM_TIMEOUT_MS)
         ),
       ]);
-      briefing = result.briefing;
+      briefing = mergeDirectWithAiSupplement(briefing, result.briefing);
       // Mark every Gemini article so the alert pipeline can exclude them.
       // LLM-generated articles have plausible-looking source/URL strings but the
-      // URLs are often hallucinated — a broken-link alert is worse than no alert.
-      briefing.articles = briefing.articles.map(a => ({ ...a, aiGenerated: true }));
+      // URLs are often hallucinated â€” a broken-link alert is worse than no alert.
       usedProvider = result.usedProvider;
       console.log(`[orchestrator] LLM succeeded (${usedProvider})`);
-      // NOTE: Gemini articles are NOT saved to the library — they can contain
+      // NOTE: Gemini articles are NOT saved to the library â€” they can contain
       // hallucinated URLs/sources.  Only real RSS/scrape articles (injected
       // below from the OFAC cache) are persisted for future use.
     } catch (llmError) {
       const reason = String(llmError).slice(0, 120);
-      console.log("[orchestrator] LLM unavailable — keeping structured briefing:", reason);
-      // briefing / usedProvider already set to structured above — no change needed
+      console.log("[orchestrator] LLM unavailable â€” keeping structured briefing:", reason);
+      // briefing / usedProvider already set to structured above â€” no change needed
     }
   }
 
-  // ── "No news" / non-event filler guard ─────────────────────────────────────
+  // â”€â”€ "No news" / non-event filler guard â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   // Same pattern as alert-scorer.ts's NO_NEWS_PATTERN veto and
   // refresh-briefing.mjs's save-time filter. This function is a THIRD,
-  // independent Gemini-call-and-save path (hit directly by /api/refresh —
+  // independent Gemini-call-and-save path (hit directly by /api/refresh â€”
   // ~15x/day via the GitHub Actions "fast path" step, and by the in-app
   // "Refresh Now" button) that saves straight to Redis and was not covered by
   // either of those other two fixes. Without this, a filler article from
-  // THIS path's own Gemini call could still display on the live site —
+  // THIS path's own Gemini call could still display on the live site â€”
   // alert-scorer.ts's veto only blocks the Telegram alert, not the page.
   // Regex-only, deliberately no network calls: a per-article link-existence
   // check would add ~20+ fetches on top of the enrichment calls below, which
@@ -349,10 +349,10 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
     console.log(`[orchestrator] Filtered ${beforeNoNewsFilter - briefing.articles.length} no-news filler article(s)`);
   }
 
-  // ── Group-mode additive merge ─────────────────────────────────────────────
-  // When fetching a specific group (11-26 sources each — safely under CF's
+  // â”€â”€ Group-mode additive merge â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // When fetching a specific group (11-26 sources each â€” safely under CF's
   // 50-subrequest limit), merge new articles INTO the existing Redis briefing
-  // instead of overwriting it. Each refresh.yml cycle calls /api/refresh 4×
+  // instead of overwriting it. Each refresh.yml cycle calls /api/refresh 4Ã—
   // (group 1, 2, 3, 4 sequentially); without this, group 4's save would wipe
   // everything written by groups 1, 2, 3.
   if (opts?.group !== undefined) {
@@ -375,7 +375,7 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
             if (pb !== pa) return pb - pa;
             return (b.date || "").localeCompare(a.date || "");
           });
-          console.log(`[orchestrator] Group ${opts.group} additive merge: +${fromExisting.length} from existing → ${briefing.articles.length} total`);
+          console.log(`[orchestrator] Group ${opts.group} additive merge: +${fromExisting.length} from existing â†’ ${briefing.articles.length} total`);
         }
       }
     } catch (e) {
@@ -383,7 +383,7 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
     }
   }
 
-  // ── Section-scoped merge: don't overwrite other sections ──────────────────
+  // â”€â”€ Section-scoped merge: don't overwrite other sections â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   // When a specific section is refreshed (e.g. BIS), only replace that section's
   // articles in Redis. Without this, refreshing BIS would overwrite sanctions,
   // penalties, etc. with 2025 historical backfill articles.
@@ -404,13 +404,13 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
     }
   }
 
-  // ── Save the core briefing FIRST ───────────────────────────────────────────
+  // â”€â”€ Save the core briefing FIRST â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   // Cloudflare Workers caps subrequests per invocation. Brief enrichment below
   // does per-article Redis cache lookups + article fetches + Gemini calls,
-  // which can exhaust that budget — causing the *real* Upstash save to throw
+  // which can exhaust that budget â€” causing the *real* Upstash save to throw
   // "Too many subrequests by single Worker invocation" while the in-memory
   // fallback silently "succeeds," masking the failure (refresh still reports
-  // ok:true, but Redis never gets the fresh data — lastUpdated stays frozen).
+  // ok:true, but Redis never gets the fresh data â€” lastUpdated stays frozen).
   // Saving here guarantees the correctly-dated official-source articles and
   // Eastern-time lastUpdated persist before enrichment can starve the budget.
   let preSaveSuccess = false;
@@ -449,7 +449,7 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
         });
         console.log(`[orchestrator] Enriched ${enriched.size} article briefs`);
 
-        // Save enriched articles to the persistent library — real RSS/scrape only,
+        // Save enriched articles to the persistent library â€” real RSS/scrape only,
         // never AI-generated articles (those have hallucinated URLs).
         const enrichedArticles = briefing.articles.filter(a =>
           a.sourceUrl && enriched.has(a.sourceUrl) && !(a as any).aiGenerated
@@ -459,7 +459,7 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
         );
 
         // Re-save briefing with enriched briefs so users see Gemini summaries immediately.
-        // This save is best-effort — if it fails (subrequest limit), the pre-save copy
+        // This save is best-effort â€” if it fails (subrequest limit), the pre-save copy
         // (with generic briefs) is already in Redis and the library will propagate
         // enriched briefs on the next refresh cycle.
         try {
@@ -505,3 +505,4 @@ export async function getSystemHealth() {
     timestamp: new Date().toISOString(),
   };
 }
+

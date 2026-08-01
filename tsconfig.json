@@ -3,6 +3,7 @@
     "target": "es2017",
     "lib": ["dom","dom.iterable","esnext"],
     "allowJs": true,
+    "allowImportingTsExtensions": true,
     "skipLibCheck": true,
     "strict": false,
     "noEmit": true,
@@ -19,3 +20,4 @@
   "include": ["next-env.d.ts","**/*.ts","**/*.tsx",".next/types/**/*.ts"],
   "exclude": ["node_modules","cf-worker.ts","cron-worker"]
 }
+

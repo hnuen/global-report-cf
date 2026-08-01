@@ -1,4 +1,4 @@
-// ── Briefing data types ───────────────────────────────────────────────────────
+// â”€â”€ Briefing data types â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 export type Section = "sanctions" | "economics" | "regions" | "occ" | "penalties" | "bis";
 export type Impact  = "high" | "medium" | "low";
@@ -18,6 +18,7 @@ export interface Article {
   // These are display-only and must never trigger push/Telegram alerts because
   // the LLM can hallucinate plausible-looking URLs that are 404s on real sites.
   aiGenerated?: boolean;
+  discoveryMethod?: "direct" | "ai";
 }
 
 export interface WatchItem  { entity: string; type: string; note: string; }
@@ -31,11 +32,11 @@ export interface Briefing {
   // local-analyzer.ts, background-refresh route, refresh-briefing.mjs). The
   // free-form `lastUpdated` string is built independently by each of those
   // paths in whatever timezone/format that path happened to use (some UTC,
-  // some America/New_York) — which is why the displayed banner used to
+  // some America/New_York) â€” which is why the displayed banner used to
   // visibly change format/timezone depending on which path last wrote the
   // briefing. This field is the single unambiguous source of truth the
   // client formats in the *viewer's own* local timezone via
-  // toLocaleString() — correct for any visitor, not just one hardcoded zone.
+  // toLocaleString() â€” correct for any visitor, not just one hardcoded zone.
   // Optional for backward compatibility with already-cached briefings saved
   // before this field existed.
   lastUpdatedIso?: string;
@@ -43,7 +44,7 @@ export interface Briefing {
   sidebar: Record<Section, SidebarSection>;
 }
 
-// ── Platform health / failover types ─────────────────────────────────────────
+// â”€â”€ Platform health / failover types â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 export type PlatformId = "upstash" | "cloudflare-kv" | "memory";
 
@@ -73,3 +74,4 @@ export interface LLMProvider {
   dailyLimit: number;        // requests per day, 0 = unlimited
   fetch(topic?: string, officialContext?: string): Promise<Briefing>;
 }
+

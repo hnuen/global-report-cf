@@ -5,13 +5,13 @@
  * Rules are configurable via environment variables so you can tune
  * sensitivity without redeploying.
  *
- * Environment variables (all optional — sensible defaults built in):
+ * Environment variables (all optional â€” sensible defaults built in):
  *   ALERT_SCORE_THRESHOLD   number 0-100, default 75
  *   ALERT_KEYWORDS          comma-separated list added on top of built-ins
  *   ALERT_SECTIONS          comma-separated sections to watch, default "all"
  *   ALERT_COOLDOWN_MINUTES  minimum minutes before the same article (by sourceUrl)
  *                           can alert again, default 10080 (7 days). This is
- *                           dedup, not a "remind me later" snooze — official
+ *                           dedup, not a "remind me later" snooze â€” official
  *                           source articles (OFAC, Treasury, FR, etc.) are
  *                           force-scored 100 below regardless of age, and the
  *                           cached penalty/program feeds always carry the last
@@ -21,8 +21,8 @@
  *   ALERT_MAX_AGE_HOURS     if set, switches the recency gate back to a rolling
  *                           hours window (legacy behaviour) instead of the
  *                           default "today only" calendar-day check. Default:
- *                           unset — only news dated today (America/New_York)
- *                           is alert-eligible. Independent of score — stops
+ *                           unset â€” only news dated today (America/New_York)
+ *                           is alert-eligible. Independent of score â€” stops
  *                           old cached articles (e.g. a penalty from weeks
  *                           ago) from ever qualifying, even on a fresh
  *                           cooldown. Changed 2026-06-27: a 48h rolling
@@ -43,10 +43,10 @@ export interface ScoredArticle {
   shouldAlert: boolean;
 }
 
-// ── Built-in keyword weights ───────────────────────────────────────────────────
+// â”€â”€ Built-in keyword weights â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // Each entry: [keyword, score_boost, human_reason]
 const KEYWORD_RULES: [string, number, string][] = [
-  // Highest urgency — action required
+  // Highest urgency â€” action required
   ["SDN",               20, "SDN designation"],
   ["OFAC",              15, "OFAC action"],
   ["designated",        12, "new designation"],
@@ -110,14 +110,14 @@ const KEYWORD_RULES: [string, number, string][] = [
   ["privacy coin",      10, "privacy coin activity"],
 ];
 
-// ── Impact weight ──────────────────────────────────────────────────────────────
+// â”€â”€ Impact weight â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const IMPACT_SCORES: Record<string, number> = {
   high:   30,
   medium: 15,
   low:     5,
 };
 
-// ── Category weight ────────────────────────────────────────────────────────────
+// â”€â”€ Category weight â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const CATEGORY_BOOSTS: Record<string, number> = {
   "OFAC":             10,
   "Enforcement":      10,
@@ -129,7 +129,7 @@ const CATEGORY_BOOSTS: Record<string, number> = {
   "AML / BSA":         8,
 };
 
-// ── Recency gate ──────────────────────────────────────────────────────────────
+// â”€â”€ Recency gate â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // GOV_SOURCES_100 below force-scores ANY official .gov sourceUrl to 100
 // regardless of how old the underlying article is, and the cached penalty/
 // program feeds (ofac-github-cache.ts) always carry the last ~10 entries on
@@ -138,7 +138,7 @@ const CATEGORY_BOOSTS: Record<string, number> = {
 // this morning and re-qualifies as an alert candidate on every single hourly
 // monitor run. This gate is checked separately from score so it can't be
 // bypassed by a high score.
-// undefined → default "today only" calendar-day gate (see header comment).
+// undefined â†’ default "today only" calendar-day gate (see header comment).
 // Set ALERT_MAX_AGE_HOURS to opt back into the old rolling-hours behaviour.
 // Default 48h rolling window: an action alerts if it's dated within the last
 // 48 hours, not just today. Closes the "discovered a day late" gap where an
@@ -157,7 +157,7 @@ const MONTH_NUM: Record<string, number> = {
 
 /** Extract a {y,m,d} calendar date from the date-string formats this codebase's
  *  feeds actually use (ISO "2026-06-27...", "June 27, 2026", "06/27/2026").
- *  Returns null if the string doesn't match any of them — deliberately
+ *  Returns null if the string doesn't match any of them â€” deliberately
  *  conservative, since callers treat "can't parse" as "can't confirm it's
  *  today" under the default gate. */
 function parseCalendarDate(trimmed: string): { y: string; m: string; d: string } | null {
@@ -176,7 +176,7 @@ function parseCalendarDate(trimmed: string): { y: string; m: string; d: string }
   return null;
 }
 
-/** Today's calendar date in America/New_York — matches the timezone
+/** Today's calendar date in America/New_York â€” matches the timezone
  *  convention used elsewhere in this project (e.g. sync-programs-library.mjs). */
 function todayNY(): { y: string; m: string; d: string } {
   const parts = new Intl.DateTimeFormat("en-US", {
@@ -187,7 +187,7 @@ function todayNY(): { y: string; m: string; d: string } {
 }
 
 export function isRecentEnough(dateStr: string, maxAgeHours: number | undefined = ALERT_MAX_AGE_HOURS): boolean {
-  // Treat missing/empty date as NOT recent — "we don't know when this was published"
+  // Treat missing/empty date as NOT recent â€” "we don't know when this was published"
   // is not a reason to alert.  OFAC cache entries with no scraped date would otherwise
   // pass the recency gate (empty string is falsy) and fire alerts every cooldown cycle.
   if (!dateStr) return false;
@@ -203,24 +203,24 @@ export function isRecentEnough(dateStr: string, maxAgeHours: number | undefined 
   }
 
   if (maxAgeHours === undefined) {
-    // Default: today only, calendar-day match in America/New_York — not a
+    // Default: today only, calendar-day match in America/New_York â€” not a
     // rolling window, so it can't be fooled by time-of-day edge cases.
     const parsed = parseCalendarDate(trimmed);
-    if (!parsed) return false; // can't confirm it's today — don't alert
+    if (!parsed) return false; // can't confirm it's today â€” don't alert
     const today = todayNY();
     return parsed.y === today.y && parsed.m === today.m && parsed.d === today.d;
   }
 
   // Explicit rolling-hours override (legacy behaviour).
   const t = Date.parse(trimmed);
-  if (isNaN(t)) return true; // unparseable — don't block, just can't filter on it
+  if (isNaN(t)) return true; // unparseable â€” don't block, just can't filter on it
   const ageMs = Date.now() - t;
   const FUTURE_SLOP_MS = 24 * 60 * 60 * 1000; // tolerate clock/timezone skew
-  if (ageMs < -FUTURE_SLOP_MS) return false; // implausibly far in the future — bad data, don't alert
+  if (ageMs < -FUTURE_SLOP_MS) return false; // implausibly far in the future â€” bad data, don't alert
   return ageMs <= maxAgeHours * 60 * 60 * 1000;
 }
 
-// ── Scorer ─────────────────────────────────────────────────────────────────────
+// â”€â”€ Scorer â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 export function scoreArticle(article: Article): ScoredArticle {
   const reasons: string[] = [];
@@ -240,7 +240,7 @@ export function scoreArticle(article: Article): ScoredArticle {
     reasons.push(`${article.category} category (+${catBoost})`);
   }
 
-  // 3. Built-in keyword matches — search the headline + the FULL body, not just
+  // 3. Built-in keyword matches â€” search the headline + the FULL body, not just
   // the first paragraph. Media articles often bury the sanctions-relevant term
   // (e.g. "designated", "export ban", "OFAC") below the lede, so a title-and-
   // first-line-only scan under-scored genuinely relevant coverage.
@@ -280,19 +280,19 @@ export function scoreArticle(article: Article): ScoredArticle {
   const sectionOk = watchSections.includes("all") || watchSections.includes(article.section);
 
   // 6. Authoritative gov enforcement sources = always 100
-  // All official government enforcement/sanctions source domains → force score 100
+  // All official government enforcement/sanctions source domains â†’ force score 100
   const GOV_SOURCES_100 = [
-    // OFAC / Treasury — match any treasury.gov URL (press releases, policy pages, OFAC actions)
+    // OFAC / Treasury â€” match any treasury.gov URL (press releases, policy pages, OFAC actions)
     "ofac.treasury.gov",
     "home.treasury.gov",
     "treasury.gov",
     // Federal Register
     "federalregister.gov",
-    // FinCEN — deliberately NOT bare "fincen.gov": that domain also hosts
+    // FinCEN â€” deliberately NOT bare "fincen.gov": that domain also hosts
     // proposed rules, press releases, and guidance notices, which were
     // wrongly force-scored 100 and alerted as "enforcement". FinCEN items now
     // only force-100 when the text actually signals enforcement or a FINAL
-    // rule — see the fincenActionable check below.
+    // rule â€” see the fincenActionable check below.
     // OCC enforcement
     "occ.gov/news-events",
     // Federal Reserve enforcement
@@ -300,7 +300,7 @@ export function scoreArticle(article: Article): ScoredArticle {
     "federalreserve.gov/apps/enforcementactions",
     // BIS export enforcement
     "bis.gov",
-    // UK OFSI — match both publications page and org page
+    // UK OFSI â€” match both publications page and org page
     "gov.uk/government/publications/ofsi",
     "gov.uk/government/collections",
     "gov.uk/government/organisations/office-of-financial-sanctions",
@@ -316,21 +316,21 @@ export function scoreArticle(article: Article): ScoredArticle {
   // ec.europa.eu / press.un.org / occ.gov URLs, but those URLs don't always
   // match the narrow path patterns in GOV_SOURCES_100 above (e.g. a notice
   // lives at gov.uk/government/news/..., not .../publications/ofsi). Trust
-  // the source label directly instead — it's already curated/official by
+  // the source label directly instead â€” it's already curated/official by
   // construction (each one passed through its own keyword filter in
   // refresh-briefing.mjs before ever landing in this cache).
   //
   // Deliberately NOT included here: "BBC News", "Al Jazeera", "World News"
-  // (regions), and "Federal Reserve — Press Releases" — these are general
+  // (regions), and "Federal Reserve â€” Press Releases" â€” these are general
   // news/press feeds, not enforcement-specific, and force-scoring them to
   // 100 would reintroduce the alert-noise problem the user originally
   // reported. They still alert normally via keyword/impact scoring below.
   // BIS Federal Register items are already covered by the "federalregister.gov"
   // entry in GOV_SOURCES_100, so no special case is needed for those either.
   const isCuratedOfficialSource = article.source === "UK OFSI" || article.source === "EU Commission" ||
-    article.source === "United Nations — Press Releases" || article.source === "OCC News Releases";
+    article.source === "United Nations â€” Press Releases" || article.source === "OCC News Releases";
 
-  // ── Regulatory event classification ─────────────────────────────────────────
+  // â”€â”€ Regulatory event classification â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   // Distinguishes actionable events (enforcement, finalized rules) from
   // non-events (proposals, guidance, comment requests). Used both to decide
   // whether FinCEN items force-100, and as a cross-source alert gate below.
@@ -342,15 +342,20 @@ export function scoreArticle(article: Article): ScoredArticle {
   const looksFinalRule   = FINAL_RULE_PATTERN.test(searchText);
   // FinCEN force-100 ONLY when the item is real enforcement or a final rule.
   const fincenActionable = !!article.sourceUrl?.includes("fincen.gov") && (looksEnforcement || looksFinalRule);
+  // DHS publishes UFLPA Entity List additions and related forced-labor
+  // enforcement notices on dhs.gov. These are authoritative sanctions/trade
+  // compliance actions, but the generic DHS news feed must not be force-scored.
+  const isDhsUflpa = !!article.sourceUrl?.includes("dhs.gov") &&
+    /\buflpa\b|uyghur forced labor prevention act|forced labor entity list/i.test(searchText);
 
-  if (GOV_SOURCES_100.some(s => article.sourceUrl?.includes(s)) || isCuratedOfficialSource || fincenActionable) {
+  if (GOV_SOURCES_100.some(s => article.sourceUrl?.includes(s)) || isCuratedOfficialSource || fincenActionable || isDhsUflpa) {
     score = 100;
-    reasons.push(`Official enforcement source (100): ${article.source} — ${article.sourceUrl}`);
+    reasons.push(`Official enforcement source (100): ${article.source} â€” ${article.sourceUrl}`);
   } else if (isEuCommission && euHasKeyword) {
     score = 100;
-    reasons.push("EU Commission press corner — sanctions/fines keyword match (100)");
+    reasons.push("EU Commission press corner â€” sanctions/fines keyword match (100)");
   }
-  // Section boost — sanctions articles get extra weight
+  // Section boost â€” sanctions articles get extra weight
   else if (article.section === "sanctions") {
     score = Math.min(100, score + 10);
     reasons.push("sanctions section (+10)");
@@ -358,43 +363,43 @@ export function scoreArticle(article: Article): ScoredArticle {
 
   // 7. Threshold check
   const threshold = Number(process.env.ALERT_SCORE_THRESHOLD ?? 65);
-  // 8. Recency check — independent of score, see isRecentEnough() above.
+  // 8. Recency check â€” independent of score, see isRecentEnough() above.
   const recentEnough = isRecentEnough(article.date);
   if (!recentEnough) reasons.push(`too old to alert (date: "${article.date}")`);
 
-  // 9. "No news" / non-event guard — independent of score, same pattern as
+  // 9. "No news" / non-event guard â€” independent of score, same pattern as
   // the recency gate. Gemini is prompted to write 3-4 articles per section
   // even when there's no genuine new development, which produces filler
-  // like "Federal Register Shows No New Entity List Additions" — a
+  // like "Federal Register Shows No New Entity List Additions" â€” a
   // non-event that still scores 100 (forced by the federalregister.gov
   // GOV_SOURCES_100 rule above) and, because LLM phrasing isn't identical
-  // run to run, evades the sourceUrl/headline dedup key — so it re-alerts
+  // run to run, evades the sourceUrl/headline dedup key â€” so it re-alerts
   // on every Gemini call that touches that section instead of once. Catch
   // it by content rather than relying on the prompt alone (reported
   // 2026-06-28: this exact BIS filler was firing daily).
   const NO_NEWS_PATTERN = /\bno new\b|\bshows no\b|\breports? no\b|\bno additions?\b|\bno changes?\b|\bnothing new\b|\bremains? unchanged\b|\bdid not add\b|\bno entries (?:were |have been )?added\b|\bno updates? (?:were |have been )?(?:made|reported)\b|\bno actions? (?:were |have been )?(?:taken|reported)\b/i;
   const isNoNewsFiller = NO_NEWS_PATTERN.test(searchText);
-  if (isNoNewsFiller) reasons.push(`non-event / "no news" content — never alerts regardless of score`);
+  if (isNoNewsFiller) reasons.push(`non-event / "no news" content â€” never alerts regardless of score`);
 
-  // 9b. Regulatory non-event gate — proposed rules, guidance, and comment
+  // 9b. Regulatory non-event gate â€” proposed rules, guidance, and comment
   //     requests are not enforcement and should not page anyone, even from a
   //     .gov domain (this is what fired the June/July FinCEN false positives:
   //     "Propose Rule to Implement GENIUS Act CIP", "Issues Guidance to Help
   //     ... Eliminate Fraud"). Actual enforcement and FINALIZED rules still
-  //     alert — the user opted to keep those. See REG_NONEVENT_PATTERN above.
+  //     alert â€” the user opted to keep those. See REG_NONEVENT_PATTERN above.
   const isRegulatoryNonEvent =
     REG_NONEVENT_PATTERN.test(searchText) && !looksEnforcement && !looksFinalRule;
   if (isRegulatoryNonEvent) {
-    reasons.push("regulatory proposal/guidance (not enforcement or a final rule) — never alerts");
+    reasons.push("regulatory proposal/guidance (not enforcement or a final rule) â€” never alerts");
   }
 
-  // 10. AI-generated article gate — Gemini can hallucinate URLs that look
+  // 10. AI-generated article gate â€” Gemini can hallucinate URLs that look
   //     real but return 404s.  Any article produced by the LLM path is
   //     display-only; only verified RSS/scrape articles should trigger alerts.
   const isAiGenerated = !!(article as any).aiGenerated;
-  if (isAiGenerated) reasons.push("AI-generated article — display only, never alerts");
+  if (isAiGenerated) reasons.push("AI-generated article â€” display only, never alerts");
 
-  // 11. Trusted-source gate — an alert must carry a direct link to an
+  // 11. Trusted-source gate â€” an alert must carry a direct link to an
   //     official government or well-known media domain. This is the backstop
   //     for the hallucinated-alert problem: even if an LLM article slips
   //     past the aiGenerated flag (e.g. a pipeline that forgets to set it),
@@ -403,7 +408,7 @@ export function scoreArticle(article: Article): ScoredArticle {
   //     checked separately in /api/monitor before sending.
   const hasTrustedSource = isTrustedAlertUrl(article.sourceUrl);
 
-  // 11b. Direct-link gate — a bare listing/index page (e.g.
+  // 11b. Direct-link gate â€” a bare listing/index page (e.g.
   //      home.treasury.gov/news/press-releases) is a trusted domain but NOT a
   //      direct link to the specific action, so it must not alert. The app's
   //      own Treasury fetch can occasionally emit the generic listing URL;
@@ -411,13 +416,13 @@ export function scoreArticle(article: Article): ScoredArticle {
   //      Treasury scraper resolves the per-release .../sbNNNN URL).
   const hasDirectLink = !isGenericListingUrl(article.sourceUrl);
   if (!hasDirectLink) {
-    reasons.push(`generic listing/index URL — not a direct article link, never alerts (${article.sourceUrl})`);
+    reasons.push(`generic listing/index URL â€” not a direct article link, never alerts (${article.sourceUrl})`);
   }
   if (!hasTrustedSource) {
     reasons.push(
       article.sourceUrl
-        ? `sourceUrl domain not on trusted gov/media list — never alerts (${article.sourceUrl.slice(0, 80)})`
-        : "no sourceUrl — alerts require a direct link to a gov/major-media source"
+        ? `sourceUrl domain not on trusted gov/media list â€” never alerts (${article.sourceUrl.slice(0, 80)})`
+        : "no sourceUrl â€” alerts require a direct link to a gov/major-media source"
     );
   }
 
@@ -426,7 +431,7 @@ export function scoreArticle(article: Article): ScoredArticle {
   return { article, score, reasons, shouldAlert };
 }
 
-// ── Trusted alert sources ──────────────────────────────────────────────────────
+// â”€â”€ Trusted alert sources â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // Well-known media outlets whose links may appear via the RSS/Google News
 // feeds. Extend without redeploying via ALERT_TRUSTED_DOMAINS (comma-separated).
 // NOTE: keep this list identical to TRUSTED_MEDIA_DOMAINS in
@@ -453,7 +458,7 @@ const TRUSTED_MEDIA_DOMAINS = [
   "law360.com", "globalinvestigationsreview.com", "complianceweek.com",
   "occrp.org", "icij.org", "foreignpolicy.com", "foreignaffairs.com",
   "lawfaremedia.org", "justsecurity.org",
-  // Aggregator — Google News item links redirect to the real outlet
+  // Aggregator â€” Google News item links redirect to the real outlet
   "news.google.com",
 ];
 
@@ -467,7 +472,7 @@ export function isTrustedAlertUrl(url?: string): boolean {
 
   // Official government / intergovernmental domains
   if (
-    host.endsWith(".gov") ||                                  // treasury.gov, occ.gov, state.gov, war.gov, …
+    host.endsWith(".gov") ||                                  // treasury.gov, occ.gov, state.gov, war.gov, â€¦
     host === "gov.uk" || host.endsWith(".gov.uk") ||          // UK OFSI et al.
     host === "europa.eu" || host.endsWith(".europa.eu") ||    // EU Commission
     host === "un.org" || host.endsWith(".un.org") ||          // UN press
@@ -481,7 +486,7 @@ export function isTrustedAlertUrl(url?: string): boolean {
 
 // Bare listing/index pages: trusted domains, but NOT a direct link to a
 // specific action. An alert must point at the actual release/notice, not the
-// section landing page — so these never qualify. Specific article URLs (e.g.
+// section landing page â€” so these never qualify. Specific article URLs (e.g.
 // ofac.treasury.gov/recent-actions/20260720, home.treasury.gov/news/press-releases/sb0569)
 // are longer than these and are NOT matched.
 const GENERIC_LISTING_PATHS = new Set([
@@ -512,13 +517,13 @@ export function scoreAll(articles: Article[]): ScoredArticle[] {
     .sort((a, b) => b.score - a.score);
 }
 
-// ── Deduplication — track what we've already alerted on ───────────────────────
+// â”€â”€ Deduplication â€” track what we've already alerted on â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 export function buildAlertKey(article: Article): string {
   // Prefer sourceUrl: it's the actual link to the official action/PDF/notice
   // and never changes between runs. The previous headline-only key broke
   // dedup for Gemini-enriched articles, whose headline wording can shift
-  // slightly run-to-run (paraphrasing) for the *same* underlying article —
+  // slightly run-to-run (paraphrasing) for the *same* underlying article â€”
   // a different key meant the cooldown/already-alerted check never matched,
   // so the same news could resend under a "new" key. sourceUrl doesn't have
   // that problem for official sources, which is exactly the class of article
@@ -533,3 +538,4 @@ export function buildAlertKey(article: Article): string {
     .trim()
     .slice(0, 60);
 }
+
