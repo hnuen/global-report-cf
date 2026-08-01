@@ -301,6 +301,29 @@ function parseRssItems(xml) {
   return entries;
 }
 
+const DHS_RELEVANT_KEYWORDS = /\buflpa\b|uyghur forced labor|forced labor|entity list|withhold release order|customs enforcement|import ban/i;
+
+function parseDhsRelevant(xml, html = "") {
+  const combined = [...parseRssItems(xml)];
+  const seen = new Set(combined.map(entry => entry.url));
+  const linkRe = /<a\b[^>]*\bhref\s*=\s*(["'])(\/news\/20\d{2}\/\d{2}\/\d{2}\/[^"']+)\1[^>]*>([\s\S]*?)<\/a>/gi;
+  let match;
+  while ((match = linkRe.exec(html)) !== null) {
+    const url = new URL(match[2], "https://www.dhs.gov").href;
+    if (seen.has(url)) continue;
+    const title = stripHtml(match[3]).trim();
+    const dateParts = match[2].match(/\/news\/(20\d{2})\/(\d{2})\/(\d{2})\//);
+    const date = dateParts
+      ? new Date(`${dateParts[1]}-${dateParts[2]}-${dateParts[3]}T12:00:00Z`).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" })
+      : "";
+    seen.add(url);
+    combined.push({ title, url, date, description: "" });
+  }
+  return combined.filter(entry =>
+    DHS_RELEVANT_KEYWORDS.test(`${entry.title} ${entry.description}`)
+  );
+}
+
 // General-purpose sanctions keyword filter â€” used for any feed that isn't
 // sanctions-specific on its own (EU finance news, BBC world/business, Al
 // Jazeera all-news) so only relevant items get surfaced.
@@ -796,6 +819,15 @@ console.log("[refresh-briefing] Fetching U.S. Treasury press releases...");
 const treasuryHtml = await fetchOfac("https://home.treasury.gov/news/press-releases");
 const treasuryNews = parseTreasuryNews(treasuryHtml);
 console.log(`[refresh-briefing] Treasury press releases parsed: ${treasuryNews.length} entries`);
+
+console.log("[refresh-briefing] Fetching DHS RSS and news index...");
+const [dhsXml, dhsHtml] = await Promise.all([
+  fetchOfac("https://www.dhs.gov/news/rss.xml"),
+  fetchOfac("https://www.dhs.gov/news"),
+]);
+const dhsNews = parseDhsRelevant(dhsXml, dhsHtml);
+console.log(`[refresh-briefing] DHS UFLPA/enforcement news parsed: ${dhsNews.length} entries`);
+dhsNews.slice(0, 8).forEach(e => console.log(`  ${e.date} - ${e.title} (${e.url})`));
 treasuryNews.slice(0, 5).forEach(e => console.log(`  ${e.date} â€” ${e.title} (${e.url})`));
 
 console.log("[refresh-briefing] Fetching EU (Europa/DG FISMA) finance news feed...");
@@ -1616,11 +1648,19 @@ try {
   // legitimate OFAC alerts (e.g. the July 17 Hong Kong designations) whose
   // Gemini write-up carried a genuine ofac.treasury.gov/recent-actions URL.
   const normUrl = (u) => (u || "").trim().replace(/\/+$/, "").toLowerCase();
-  const verifiedUrls = new Set((recentActions ?? []).map((e) => normUrl(e.url)).filter(Boolean));
+  const directSourceEntries = [
+    ...(recentActions ?? []), ...(ofsiNotices ?? []), ...(treasuryNews ?? []),
+    ...(dhsNews ?? []), ...(europaNews ?? []), ...(unNotices ?? []),
+    ...(bbcNews ?? []), ...(ajNews ?? []), ...(occNews ?? []),
+    ...(economicsNews ?? []), ...(bisNews ?? []), ...(regionsNews ?? []),
+    ...(politicalItems ?? []),
+  ];
+  const verifiedUrls = new Set(directSourceEntries.map((entry) => normUrl(entry.url)).filter(Boolean));
   briefing.articles = briefing.articles.map(a => ({
     ...a,
     body: Array.isArray(a.body) ? a.body : String(a.body).split("\n").filter(Boolean),
     aiGenerated: !verifiedUrls.has(normUrl(a.sourceUrl)),
+    discoveryMethod: verifiedUrls.has(normUrl(a.sourceUrl)) ? "direct" : "ai",
   }));
 
   // Drop "nothing happened" filler articles before they're ever saved â€” not
@@ -1739,6 +1779,22 @@ const ofsiInjected = injectExtra(ofsiNotices, entry => ({
   ],
   source: "OFSI (GOV.UK)",
   sourceUrl: entry.url,
+}));
+
+const dhsInjected = injectExtra(dhsNews, entry => ({
+  section: "bis",
+  category: "Entity List",
+  region: "China",
+  impact: "high",
+  date: entry.date || "",
+  headline: entry.title,
+  body: [
+    entry.description || `The U.S. Department of Homeland Security published: "${entry.title}". Full details are available on dhs.gov.`,
+  ],
+  source: "U.S. Department of Homeland Security",
+  sourceUrl: entry.url,
+  aiGenerated: false,
+  discoveryMethod: "direct",
 }));
 
 const europaInjected = injectExtra(europaNews, entry => ({
@@ -1920,7 +1976,7 @@ const politicalInjected = injectExtra(politicalItems, entry => ({
   sourceUrl: entry.url,
 }));
 
-const extraInjected = [...ofsiInjected, ...europaInjected, ...unInjected, ...bbcInjected, ...ajInjected, ...occInjected, ...economicsInjected, ...bisInjected, ...regionsInjected, ...treasuryInjected, ...politicalInjected];
+const extraInjected = [...ofsiInjected, ...dhsInjected, ...europaInjected, ...unInjected, ...bbcInjected, ...ajInjected, ...occInjected, ...economicsInjected, ...bisInjected, ...regionsInjected, ...treasuryInjected, ...politicalInjected];
 if (extraInjected.length > 0) {
   const baseId2 = (briefing.articles?.length ?? 0) + 1;
   extraInjected.forEach((a, i) => { a.id = baseId2 + i; });
