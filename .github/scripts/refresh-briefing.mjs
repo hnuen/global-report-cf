@@ -324,6 +324,36 @@ function parseDhsRelevant(xml, html = "") {
   );
 }
 
+const FEDERAL_POLICY_KEYWORDS = /sanction|export control|entity list|forced labor|uflpa|national emergency|blocking property|tariff|trade act|foreign policy|defen[sc]e supply|financial system|banking|monetary policy|enforcement|money laundering|terrorist financ|illicit financ/i;
+
+function parseTrustedNewsIndex(html, baseUrl) {
+  if (!html) return [];
+  const entries = [];
+  const seen = new Set();
+  const baseHost = new URL(baseUrl).hostname.replace(/^www\./, "");
+  const linkRe = /<a\b[^>]*\bhref\s*=\s*(["'])([^"']+)\1[^>]*>([\s\S]*?)<\/a>/gi;
+  let match;
+  while ((match = linkRe.exec(html)) !== null) {
+    let url;
+    try { url = new URL(match[2], baseUrl); } catch { continue; }
+    const host = url.hostname.replace(/^www\./, "");
+    if (host !== baseHost && !host.endsWith(`.${baseHost}`)) continue;
+    url.hash = "";
+    const title = stripHtml(match[3]).replace(/\s+/g, " ").trim();
+    if (title.length < 15 || seen.has(url.href)) continue;
+    const nearby = stripHtml(html.slice(Math.max(0, match.index - 240), match.index + match[0].length + 240));
+    if (!FEDERAL_POLICY_KEYWORDS.test(`${title} ${nearby}`)) continue;
+    const textDate = nearby.match(/\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+20\d{2}\b/i)?.[0];
+    const pathDate = url.pathname.match(/\/(20\d{2})\/(\d{2})\/(\d{2})\//);
+    const date = textDate || (pathDate
+      ? new Date(`${pathDate[1]}-${pathDate[2]}-${pathDate[3]}T12:00:00Z`).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" })
+      : "");
+    seen.add(url.href);
+    entries.push({ title, url: url.href, date, description: nearby.slice(0, 500) });
+  }
+  return entries.slice(0, 20);
+}
+
 // General-purpose sanctions keyword filter â€” used for any feed that isn't
 // sanctions-specific on its own (EU finance news, BBC world/business, Al
 // Jazeera all-news) so only relevant items get surfaced.
@@ -829,6 +859,21 @@ const dhsNews = parseDhsRelevant(dhsXml, dhsHtml);
 console.log(`[refresh-briefing] DHS UFLPA/enforcement news parsed: ${dhsNews.length} entries`);
 dhsNews.slice(0, 8).forEach(e => console.log(`  ${e.date} - ${e.title} (${e.url})`));
 treasuryNews.slice(0, 5).forEach(e => console.log(`  ${e.date} â€” ${e.title} (${e.url})`));
+
+console.log("[refresh-briefing] Fetching additional U.S. government sources directly...");
+const [whiteHouseHtml, congressHtml, usaGovHtml, stateXml, warXml] = await Promise.all([
+  fetchOfac("https://www.whitehouse.gov/presidential-actions/"),
+  fetchOfac("https://www.congress.gov/search?q=%7B%22source%22%3A%22legislation%22%2C%22search%22%3A%22sanctions%20export%20controls%22%7D&pageSort=dateOfIntroduction%3Adesc"),
+  fetchOfac("https://www.usa.gov/blog"),
+  fetchOfac("https://www.state.gov/rss-feeds/press-releases/"),
+  fetchOfac("https://www.war.gov/DesktopModules/ArticleCS/RSS.ashx?ContentType=9&Site=945&max=20"),
+]);
+const whiteHouseNews = parseTrustedNewsIndex(whiteHouseHtml, "https://www.whitehouse.gov");
+const congressNews = parseTrustedNewsIndex(congressHtml, "https://www.congress.gov");
+const usaGovNews = parseTrustedNewsIndex(usaGovHtml, "https://www.usa.gov");
+const stateNews = parseRssItems(stateXml).filter(entry => FEDERAL_POLICY_KEYWORDS.test(`${entry.title} ${entry.description}`));
+const warNews = parseRssItems(warXml).filter(entry => FEDERAL_POLICY_KEYWORDS.test(`${entry.title} ${entry.description}`));
+console.log(`[refresh-briefing] Direct U.S. sources parsed: ${whiteHouseNews.length} White House + ${congressNews.length} Congress.gov + ${usaGovNews.length} USA.gov + ${stateNews.length} State + ${warNews.length} War`);
 
 console.log("[refresh-briefing] Fetching EU (Europa/DG FISMA) finance news feed...");
 const europaXml = await fetchOfac("https://finance.ec.europa.eu/node/1408/rss_en");
@@ -1651,6 +1696,8 @@ try {
   const directSourceEntries = [
     ...(recentActions ?? []), ...(ofsiNotices ?? []), ...(treasuryNews ?? []),
     ...(dhsNews ?? []), ...(europaNews ?? []), ...(unNotices ?? []),
+    ...(whiteHouseNews ?? []), ...(congressNews ?? []), ...(usaGovNews ?? []),
+    ...(stateNews ?? []), ...(warNews ?? []),
     ...(bbcNews ?? []), ...(ajNews ?? []), ...(occNews ?? []),
     ...(economicsNews ?? []), ...(bisNews ?? []), ...(regionsNews ?? []),
     ...(politicalItems ?? []),
@@ -1796,6 +1843,33 @@ const dhsInjected = injectExtra(dhsNews, entry => ({
   aiGenerated: false,
   discoveryMethod: "direct",
 }));
+
+function directGovernmentArticle(entry, source, section, category, impact = "medium") {
+  return {
+    section,
+    category,
+    region: detectRegion(`${entry.title} ${entry.description}`),
+    impact,
+    date: entry.date || "",
+    headline: entry.title,
+    body: [entry.description || `${source} published: "${entry.title}".`],
+    source,
+    sourceUrl: entry.url,
+    aiGenerated: false,
+    discoveryMethod: "direct",
+  };
+}
+
+const whiteHouseInjected = injectExtra(whiteHouseNews, entry =>
+  directGovernmentArticle(entry, "White House — Presidential Actions", "sanctions", "Presidential Action", "high"));
+const congressInjected = injectExtra(congressNews, entry =>
+  directGovernmentArticle(entry, "Congress.gov", "sanctions", "Legislation"));
+const usaGovInjected = injectExtra(usaGovNews, entry =>
+  directGovernmentArticle(entry, "USA.gov", "economics", "Government Update"));
+const stateInjected = injectExtra(stateNews, entry =>
+  directGovernmentArticle(entry, "U.S. Department of State", "sanctions", "Foreign Policy", "high"));
+const warInjected = injectExtra(warNews, entry =>
+  directGovernmentArticle(entry, "U.S. Department of War", "bis", "Defense Policy", "high"));
 
 const europaInjected = injectExtra(europaNews, entry => ({
   section: "sanctions",
@@ -1976,7 +2050,7 @@ const politicalInjected = injectExtra(politicalItems, entry => ({
   sourceUrl: entry.url,
 }));
 
-const extraInjected = [...ofsiInjected, ...dhsInjected, ...europaInjected, ...unInjected, ...bbcInjected, ...ajInjected, ...occInjected, ...economicsInjected, ...bisInjected, ...regionsInjected, ...treasuryInjected, ...politicalInjected];
+const extraInjected = [...ofsiInjected, ...dhsInjected, ...whiteHouseInjected, ...congressInjected, ...usaGovInjected, ...stateInjected, ...warInjected, ...europaInjected, ...unInjected, ...bbcInjected, ...ajInjected, ...occInjected, ...economicsInjected, ...bisInjected, ...regionsInjected, ...treasuryInjected, ...politicalInjected];
 if (extraInjected.length > 0) {
   const baseId2 = (briefing.articles?.length ?? 0) + 1;
   extraInjected.forEach((a, i) => { a.id = baseId2 + i; });
