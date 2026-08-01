@@ -112,6 +112,25 @@ test("direct records remain canonical when AI returns the same source URL", () =
   assert.equal(merged.articles[0].aiGenerated, false);
 });
 
+test("a directly verified trusted-source discovery replaces the AI provenance", () => {
+  const direct = testArticle(
+    1,
+    "DHS adds companies to the UFLPA Entity List",
+    "https://www.dhs.gov/news/2026/07/31/dhs-announces-addition-43-companies-uflpa-entity-list",
+  );
+  direct.category = "Entity List";
+  direct.body = ["DHS announced new UFLPA Entity List additions."];
+  const ai = { ...direct, id: 2, headline: "AI summary of the DHS action", aiGenerated: true };
+
+  const merged = mergeDirectWithAiSupplement(briefing([direct]), briefing([ai]));
+  const promoted = merged.articles[0];
+
+  assert.equal(merged.articles.length, 1);
+  assert.equal(promoted.aiGenerated, false);
+  assert.equal(promoted.discoveryMethod, "direct");
+  assert.equal(scoreArticle(promoted).shouldAlert, true);
+});
+
 test("Gemini only appends new discoveries and marks them display-only", () => {
   const direct = testArticle(1, "Direct article", "https://agency.gov/news/direct");
   const discovered = testArticle(1, "Additional report", "https://reuters.com/world/additional-report");
