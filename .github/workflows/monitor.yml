@@ -1,23 +1,15 @@
 name: Monitor and Alert
 
 on:
-  # Timing moved 2026-06-27 to the same dedicated Cloudflare Worker
-  # (../cron-worker) that already drives refresh.yml, with its own native
-  # Cron Trigger calling workflow_dispatch below on an hourly schedule. This
-  # workflow previously used GitHub Actions' own `schedule:` trigger, which
-  # is the exact mechanism documented in cron-worker/wrangler.toml as
-  # silently delaying/dropping runs under platform load with no SLA â€” for
-  # an alerting pipeline, a delayed run meant a backlog of articles aging
-  # past the alert-eligibility window before they were ever evaluated, then
-  # several qualifying at once on whatever run finally fired (the root cause
-  # of a multi-day alert burst reported 2026-06-25). This workflow is now
-  # dispatch-only; do not re-add a `schedule:` block here, or both
-  # schedulers will fire and double-send alerts.
   workflow_dispatch:
     inputs:
       topic:
-        description: 'Optional focus topic for this monitor run'
+        description: Optional focus topic for this monitor run
         required: false
+        type: string
+
+permissions:
+  contents: read
 
 jobs:
   monitor:
@@ -25,130 +17,165 @@ jobs:
     timeout-minutes: 5
     steps:
       - name: Run monitor
+        id: monitor
+        env:
+          APP_URL: ${{ secrets.APP_URL }}
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+          VERCEL_BYPASS_TOKEN: ${{ secrets.VERCEL_BYPASS_TOKEN }}
+          TOPIC: ${{ inputs.topic }}
         run: |
-          BODY="{}"
-          if [ -n "${{ github.event.inputs.topic }}" ]; then
-            BODY="{\"topic\":\"${{ github.event.inputs.topic }}\"}"
-          fi
-
-          # Strip any trailing slash from APP_URL to avoid a double-slash URL
-          # (Cloudflare 308-redirects that, and curl won't follow it without -L).
-          APP_URL="${{ secrets.APP_URL }}"
+          set -euo pipefail
           APP_URL="${APP_URL%/}"
+          BODY=$(TOPIC="$TOPIC" python3 -c 'import json, os; topic=os.environ.get("TOPIC", ""); print(json.dumps({"topic": topic}) if topic else "{}")')
 
-          HTTP=$(curl -s -L -o /tmp/resp.json -w "%{http_code}" \
-            -X POST "$APP_URL/api/monitor" \
-            -H "Content-Type: application/json" \
-            -H "x-cron-secret: ${{ secrets.CRON_SECRET }}" \
-            -H "x-vercel-protection-bypass: ${{ secrets.VERCEL_BYPASS_TOKEN }}" \
-            -d "$BODY" \
+          HTTP=$(curl --silent --show-error --location \
+            --output /tmp/resp.json \
+            --write-out "%{http_code}" \
+            --request POST "$APP_URL/api/monitor" \
+            --header "Content-Type: application/json" \
+            --header "x-cron-secret: $CRON_SECRET" \
+            --header "x-vercel-protection-bypass: $VERCEL_BYPASS_TOKEN" \
+            --data "$BODY" \
             --max-time 120)
 
-          echo "HTTP: $HTTP"
+          echo "Monitor HTTP: $HTTP"
           cat /tmp/resp.json
-
           if [ "$HTTP" != "200" ]; then
-            echo "Failed with HTTP $HTTP"
             exit 1
           fi
-          echo "Success"
 
-          # Expose alerting count for the ntfy step below
-          ALERTING=$(python3 -c "import json,sys; d=json.load(open('/tmp/resp.json')); print(d.get('alerting',0))" 2>/dev/null || echo "0")
+          ALERTING=$(python3 -c 'import json; print(json.load(open("/tmp/resp.json")).get("alerting", 0))')
           echo "alerting=$ALERTING" >> "$GITHUB_OUTPUT"
-        id: monitor
 
-      - name: Send ntfy alerts (direct from GitHub â€” bypasses Cloudflare IP block)
-        if: ${{ steps.monitor.outputs.alerting > 0 }}
+      - name: Send ntfy alerts
+        if: steps.monitor.outputs.alerting != '0'
         env:
+          ALERTING: ${{ steps.monitor.outputs.alerting }}
+          APP_URL: ${{ secrets.APP_URL }}
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
-          APP_URL:    ${{ secrets.APP_URL }}
         run: |
-          ALERTING="${{ steps.monitor.outputs.alerting }}"
+          set -euo pipefail
+          APP_URL="${APP_URL%/}"
 
-          # Build a rich ntfy body matching the Telegram alert format:
-          # section | region | score, headline, body excerpt, source, article URL.
-          # Click header opens the top article; URL also appears in the body
-          # so it's visible without tapping.
-          NTFY_INFO=$(python3 -c "
+          python3 <<'PY' > /tmp/ntfy_info.txt
           import json
-          d = json.load(open('/tmp/resp.json'))
-          app_url = '${APP_URL%/}'
-          arts = d.get('alertedArticles') or [a for a in d.get('topScored', []) if a.get('shouldAlert')]
-          click = next((a.get('sourceUrl','') for a in arts if a.get('sourceUrl') and a.get('sourceUrl') != '#'), app_url)
-          def emoji(score):
-              s = int(score) if str(score).isdigit() else 0
-              return 'ðŸš¨' if s >= 90 else 'âš ï¸' if s >= 80 else 'ðŸ“Œ'
-          def fmt(a):
-              sec     = a.get('section','').upper()
-              region  = a.get('region','')
-              cat     = a.get('category','')
-              score   = a.get('score','?')
-              tag     = ' | '.join(filter(None,[sec, cat, region]))
-              e       = emoji(score)
-              headline = a.get('headline','')
-              body    = (a.get('body') or [''])[0][:250]
-              if body and len((a.get('body') or [''])[0]) > 250: body += 'â€¦'
-              src     = a.get('source','')
-              url     = a.get('sourceUrl','')
-              url     = '' if url == '#' else url
-              parts   = [f'{e} {tag} | Score: {score}/100', headline]
-              if body: parts.append(body)
-              if src:  parts.append(f'Source: {src}')
-              if url:  parts.append(url)
-              return '\\n'.join(parts)
-          blocks = [fmt(a) for a in arts[:5]]
-          sep = '\\n\\n' + '-'*30 + '\\n\\n'
-          body = sep.join(blocks) if blocks else 'See app for details'
-          if app_url: body += f'\\n\\nðŸŒ {app_url}'
-          print(click)
+          import os
+
+          with open("/tmp/resp.json", encoding="utf-8") as response_file:
+              data = json.load(response_file)
+
+          app_url = os.environ.get("APP_URL", "").rstrip("/")
+          articles = data.get("alertedArticles") or [
+              article
+              for article in data.get("topScored", [])
+              if article.get("shouldAlert")
+          ]
+          click_url = next(
+              (
+                  article.get("sourceUrl", "")
+                  for article in articles
+                  if article.get("sourceUrl") not in (None, "", "#")
+              ),
+              app_url,
+          )
+
+          def format_article(article):
+              labels = [
+                  str(article.get("section", "")).upper(),
+                  str(article.get("category", "")),
+                  str(article.get("region", "")),
+              ]
+              tag = " | ".join(label for label in labels if label)
+              score = article.get("score", "?")
+              body_items = article.get("body") or [""]
+              excerpt = str(body_items[0])[:250]
+              if len(str(body_items[0])) > 250:
+                  excerpt += "..."
+              source_url = article.get("sourceUrl", "")
+              if source_url == "#":
+                  source_url = ""
+              parts = [
+                  f"{tag} | Score: {score}/100",
+                  str(article.get("headline", "")),
+                  excerpt,
+                  f"Source: {article.get('source', '')}" if article.get("source") else "",
+                  source_url,
+              ]
+              return "\n".join(part for part in parts if part)
+
+          body = ("\n\n" + "-" * 30 + "\n\n").join(
+              format_article(article) for article in articles[:5]
+          ) or "See app for details"
+          if app_url:
+              body += f"\n\n{app_url}"
+
+          print(click_url)
           print(body)
-          " 2>/dev/null)
+          PY
 
-          CLICK_URL=$(echo "$NTFY_INFO" | head -1)
-          BODY=$(echo "$NTFY_INFO" | tail -n +2)
-          [ -z "$CLICK_URL" ] && CLICK_URL="${APP_URL%/}"
+          CLICK_URL=$(head -n 1 /tmp/ntfy_info.txt)
+          tail -n +2 /tmp/ntfy_info.txt > /tmp/ntfy_body.txt
+          if [ -z "$CLICK_URL" ]; then
+            CLICK_URL="$APP_URL"
+          fi
 
-          # Pluralize without a nested-quote command substitution â€” the old
-          # $([ "$ALERTING" -eq 1 ] || echo s) form was fragile under stray
-          # CR characters / minimal shells and could break this step.
-          if [ "$ALERTING" = "1" ]; then PLURAL=""; else PLURAL="s"; fi
-          TITLE="ðŸš¨ Global Report â€” ${ALERTING} alert${PLURAL}"
+          if [ "$ALERTING" = "1" ]; then
+            TITLE="Global Report - 1 alert"
+          else
+            TITLE="Global Report - $ALERTING alerts"
+          fi
 
           AUTH_ARGS=()
           if [ -n "$NTFY_TOKEN" ]; then
-            AUTH_ARGS+=(-H "Authorization: Bearer $NTFY_TOKEN")
+            AUTH_ARGS+=(--header "Authorization: Bearer $NTFY_TOKEN")
           fi
 
-          HTTP_NTFY=$(curl -s -o /tmp/ntfy_resp.txt -w "%{http_code}" \
-            -X POST "https://ntfy.sh/${NTFY_TOPIC}" \
-            -H "Title: ${TITLE}" \
-            -H "Priority: high" \
-            -H "Tags: rotating_light" \
-            -H "Click: ${CLICK_URL}" \
+          HTTP_NTFY=$(curl --silent --show-error \
+            --output /tmp/ntfy_resp.txt \
+            --write-out "%{http_code}" \
+            --request POST "https://ntfy.sh/$NTFY_TOPIC" \
+            --header "Title: $TITLE" \
+            --header "Priority: high" \
+            --header "Tags: rotating_light" \
+            --header "Click: $CLICK_URL" \
             "${AUTH_ARGS[@]}" \
-            -d "$BODY" \
+            --data-binary @/tmp/ntfy_body.txt \
             --max-time 15)
 
           echo "ntfy HTTP: $HTTP_NTFY"
           cat /tmp/ntfy_resp.txt || true
-          if [ "$HTTP_NTFY" = "200" ] || [ "$HTTP_NTFY" = "201" ]; then
-            # Record cooldown only after the GitHub fallback really delivered.
-            ALERT_KEYS=$(python3 -c "import json; d=json.load(open('/tmp/resp.json')); print(json.dumps({'alertKeys':[a['alertKey'] for a in d.get('alertedArticles',[]) if a.get('alertKey')]}))")
-            HTTP_MARK=$(curl -s -L -o /tmp/mark_resp.json -w "%{http_code}" \
-              -X POST "${APP_URL%/}/api/monitor/delivered" \
-              -H "Content-Type: application/json" \
-              -H "x-cron-secret: ${{ secrets.CRON_SECRET }}" \
-              -d "$ALERT_KEYS" \
-              --max-time 15)
-            echo "cooldown callback HTTP: $HTTP_MARK"
-            if [ "$HTTP_MARK" != "200" ]; then
-              cat /tmp/mark_resp.json || true
-              exit 1
-            fi
-            echo "âœ… ntfy sent"
-          else
-            echo "âš ï¸ ntfy failed (HTTP $HTTP_NTFY) â€” non-fatal"
+          if [ "$HTTP_NTFY" != "200" ] && [ "$HTTP_NTFY" != "201" ]; then
+            echo "ntfy delivery failed; cooldown was not recorded"
+            exit 0
           fi
 
+          python3 <<'PY' > /tmp/alert_keys.json
+          import json
+
+          with open("/tmp/resp.json", encoding="utf-8") as response_file:
+              data = json.load(response_file)
+          alert_keys = [
+              article["alertKey"]
+              for article in data.get("alertedArticles", [])
+              if article.get("alertKey")
+          ]
+          print(json.dumps({"alertKeys": alert_keys}))
+          PY
+
+          HTTP_MARK=$(curl --silent --show-error --location \
+            --output /tmp/mark_resp.json \
+            --write-out "%{http_code}" \
+            --request POST "$APP_URL/api/monitor/delivered" \
+            --header "Content-Type: application/json" \
+            --header "x-cron-secret: $CRON_SECRET" \
+            --data-binary @/tmp/alert_keys.json \
+            --max-time 15)
+
+          echo "Cooldown callback HTTP: $HTTP_MARK"
+          if [ "$HTTP_MARK" != "200" ]; then
+            cat /tmp/mark_resp.json || true
+            exit 1
+          fi
+          echo "ntfy delivered and cooldown recorded"
