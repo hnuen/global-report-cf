@@ -1,18 +1,18 @@
 /**
- * Telegram Bot Notifier — completely free, no limits
+ * Telegram Bot Notifier â€” completely free, no limits
  *
  * Setup (5 minutes):
- *   1. Open Telegram → search @BotFather → send /newbot
- *   2. Follow prompts → BotFather gives you a BOT_TOKEN
- *   3. Open your new bot → send it any message (e.g. "hello")
+ *   1. Open Telegram â†’ search @BotFather â†’ send /newbot
+ *   2. Follow prompts â†’ BotFather gives you a BOT_TOKEN
+ *   3. Open your new bot â†’ send it any message (e.g. "hello")
  *   4. Visit: https://api.telegram.org/bot<BOT_TOKEN>/getUpdates
- *      Copy the "id" from result[0].message.chat.id — that's your CHAT_ID
+ *      Copy the "id" from result[0].message.chat.id â€” that's your CHAT_ID
  *   5. For group alerts: add bot to a group, send a message, repeat step 4
  *
  * Environment variables:
- *   TELEGRAM_BOT_TOKEN   — from BotFather, e.g. 123456:ABC-DEF...
- *   TELEGRAM_CHAT_IDS    — comma-separated chat/user IDs, e.g. 123456789,-987654321
- *   TELEGRAM_DIGEST_MODE — "true" = one message per run instead of one per article
+ *   TELEGRAM_BOT_TOKEN   â€” from BotFather, e.g. 123456:ABC-DEF...
+ *   TELEGRAM_CHAT_IDS    â€” comma-separated chat/user IDs, e.g. 123456789,-987654321
+ *   TELEGRAM_DIGEST_MODE â€” "true" = one message per run instead of one per article
  */
 
 import type { Notifier, NotifyResult } from "./types";
@@ -26,7 +26,7 @@ export class TelegramNotifier implements Notifier {
   name = "Telegram Bot";
 
   isConfigured(): boolean {
-    // TELEGRAM_CHAT_IDS is no longer required on its own — the public
+    // TELEGRAM_CHAT_IDS is no longer required on its own â€” the public
     // /subscribe registration flow can supply chat IDs dynamically via
     // Redis (see listApprovedByChannel below), so a bot token alone is
     // enough to be "configured." Static TELEGRAM_CHAT_IDS still works and
@@ -52,6 +52,16 @@ export class TelegramNotifier implements Notifier {
 
     const url = `https://api.telegram.org/bot${token}/sendMessage`;
     let sent = 0;
+    const errors: string[] = [];
+
+    if (recipients.length === 0) {
+      return {
+        channel: this.name,
+        success: false,
+        recipients: 0,
+        error: "No Telegram recipients â€” set TELEGRAM_CHAT_IDS or link an approved subscriber",
+      };
+    }
 
     for (const recipient of recipients) {
       const mine = articlesForSections(articles, recipient.sections);
@@ -68,7 +78,9 @@ export class TelegramNotifier implements Notifier {
             body: JSON.stringify({
               chat_id:    chatId,
               text,
-              parse_mode: "Markdown",
+              // Telegram's legacy Markdown parser rejects ordinary news text
+              // containing unmatched formatting characters. Plain text keeps
+              // URLs clickable and prevents one headline from blocking delivery.
               disable_web_page_preview: false,
             }),
           });
@@ -77,9 +89,11 @@ export class TelegramNotifier implements Notifier {
             sent++;
           } else {
             console.error(`[telegram] chat ${chatId}: ${data.description}`);
+            errors.push(data.description ?? `Telegram rejected chat ${chatId}`);
           }
         } catch (e) {
           console.error(`[telegram] chat ${chatId} error:`, e);
+          errors.push(String(e));
         }
       }
     }
@@ -88,7 +102,8 @@ export class TelegramNotifier implements Notifier {
       channel: this.name,
       success: sent > 0,
       recipients: sent,
-      error: sent === 0 ? "No messages delivered" : undefined,
+      error: sent === 0 ? (errors[0] ?? "No messages delivered") : undefined,
     };
   }
 }
+
