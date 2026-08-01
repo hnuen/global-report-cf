@@ -1,5 +1,5 @@
 /**
- * /api/background-refresh — Multi-batch background source fetcher
+ * /api/background-refresh â€” Multi-batch background source fetcher
  *
  * Called by the client at t=+3min (group 2), +6min (group 3), and +9min (group 4)
  * after a manual REFRESH NOW. Group 1 (OFAC date news + Treasury SBs) was already
@@ -9,9 +9,9 @@
  * Redis briefing without overwriting prior groups.
  *
  * Subrequest budgets per group (incl. 2 Redis calls):
- *   group 2: ~8  + 2 = 10  ✅
- *   group 3: ~11 + 2 = 13  ✅
- *   group 4: ~26 + 2 = 28  ✅  (all << 50 CF Workers limit)
+ *   group 2: ~8  + 2 = 10  âœ…
+ *   group 3: ~11 + 2 = 13  âœ…
+ *   group 4: ~26 + 2 = 28  âœ…  (all << 50 CF Workers limit)
  */
 
 import { NextRequest, NextResponse } from "next/server";
@@ -20,27 +20,32 @@ import { fetchOfficialSources } from "@/src/lib/official-sources";
 import { buildBriefingFromSources } from "@/src/lib/official-briefing";
 import { buildStorageManager } from "@/src/lib/storage-manager";
 import { checkRateLimit, getClientIp } from "@/src/lib/rate-limit";
+import { validateBackgroundRefreshBody } from "@/src/lib/request-validation";
+import { acquireDistributedLock } from "@/src/lib/distributed-lock";
 
 export const dynamic = "force-dynamic";
 
 export async function POST(request: NextRequest) {
   // Public (called by the client 3x after a manual refresh), so rate-limit
-  // per IP — 20/hour covers ~6 full manual refreshes.
+  // per IP â€” 20/hour covers ~6 full manual refreshes.
   const ip = getClientIp(request);
-  const allowed = await checkRateLimit(`background_refresh_rl:${ip}`, 20, 60 * 60);
+  const allowed = await checkRateLimit(`background_refresh_rl:${ip}`, 20, 60 * 60, { failClosed: true });
   if (!allowed) {
     return NextResponse.json(
-      { ok: false, error: "Too many refreshes from this network — please try again later." },
+      { ok: false, error: "Too many refreshes from this network â€” please try again later." },
       { status: 429 }
     );
   }
   const startTime = Date.now();
+  let lock: Awaited<ReturnType<typeof acquireDistributedLock>> = null;
   try {
-    const body = await request.json().catch(() => ({}));
-    const group: 2|3|4 = body.group ?? 2;
-    const section: string | undefined = body.section && body.section !== "all" ? body.section : undefined;
+    const body = validateBackgroundRefreshBody(await request.json().catch(() => null));
+    if (!body) return NextResponse.json({ ok: false, error: "Invalid request body." }, { status: 400, headers: { "Cache-Control": "no-store" } });
+    const { group, section } = body;
+    lock = await acquireDistributedLock("background-refresh-lock", 120);
+    if (!lock) return NextResponse.json({ ok: false, error: "Another background refresh is already running." }, { status: 409, headers: { "Cache-Control": "no-store" } });
 
-    console.log(`[background-refresh] Group ${group} starting — section: ${section ?? "all"}`);
+    console.log(`[background-refresh] Group ${group} starting â€” section: ${section ?? "all"}`);
 
     // 1. Load the existing briefing from Redis (accumulated from prior groups)
     const existing = await loadBriefing();
@@ -78,7 +83,7 @@ export async function POST(request: NextRequest) {
       });
     }
 
-    // 4. Deduplicate — only keep articles not already in the briefing
+    // 4. Deduplicate â€” only keep articles not already in the briefing
     const existingHeadlines = new Set(
       (existing?.articles ?? []).map(a =>
         (a.headline || "").slice(0, 70).toLowerCase().replace(/\s+/g, " ").trim()
@@ -101,7 +106,7 @@ export async function POST(request: NextRequest) {
       });
     }
 
-    // 5. Merge earlier groups' articles + new group's articles → save
+    // 5. Merge earlier groups' articles + new group's articles â†’ save
     // Prior groups' articles always come first (higher priority)
     const now = new Date().toLocaleString("en-US", {
       month: "long", day: "numeric", year: "numeric",
@@ -112,7 +117,7 @@ export async function POST(request: NextRequest) {
     const merged = {
       ...(existing ?? {}),
       articles: [...(existing?.articles ?? []), ...newArticles],
-      lastUpdated: `${now} — Official government sources`,
+      lastUpdated: `${now} â€” Official government sources`,
       lastUpdatedIso: new Date().toISOString(),
       sidebar: existing?.sidebar ?? groupBriefing.sidebar,
     };
@@ -120,7 +125,7 @@ export async function POST(request: NextRequest) {
     const storage = await buildStorageManager();
     await storage.save(merged as any);
 
-    console.log(`[background-refresh] ✅ Group ${group}: merged ${newArticles.length} articles — total now ${totalCount} (${Date.now() - startTime}ms)`);
+    console.log(`[background-refresh] âœ… Group ${group}: merged ${newArticles.length} articles â€” total now ${totalCount} (${Date.now() - startTime}ms)`);
 
     return NextResponse.json({
       ok: true,
@@ -136,9 +141,8 @@ export async function POST(request: NextRequest) {
       { ok: false, error: String(e), elapsed: Date.now() - startTime },
       { status: 500 }
     );
+  } finally {
+    await lock?.release().catch(error => console.warn("[background-refresh] lock release failed:", String(error).slice(0, 100)));
   }
 }
 
-export async function GET(request: NextRequest) {
-  return POST(request);
-}

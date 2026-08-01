@@ -5,16 +5,19 @@
  */
 
 import { NextRequest, NextResponse } from "next/server";
+import { checkRateLimit, getClientIp } from "@/src/lib/rate-limit";
+import { validateSearchQuery } from "@/src/lib/request-validation";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 60;
 
 export async function POST(request: NextRequest) {
   try {
-    const { query } = await request.json();
-    if (!query?.trim()) {
-      return NextResponse.json({ error: "Query is required" }, { status: 400 });
-    }
+    const allowed = await checkRateLimit(`search_rl:${getClientIp(request)}`, 10, 60 * 60, { failClosed: true });
+    if (!allowed) return NextResponse.json({ error: "Search limit reached. Please try again later." }, { status: 429, headers: { "Cache-Control": "no-store" } });
+    const body = await request.json().catch(() => null) as { query?: unknown } | null;
+    const query = validateSearchQuery(body?.query);
+    if (!query) return NextResponse.json({ error: "Query must be between 1 and 300 characters." }, { status: 400, headers: { "Cache-Control": "no-store" } });
 
     const apiKey = process.env.ANTHROPIC_API_KEY;
     const geminiKey = process.env.GEMINI_API_KEY;
@@ -27,10 +30,11 @@ export async function POST(request: NextRequest) {
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
+            signal: AbortSignal.timeout(20_000),
             body: JSON.stringify({
               system_instruction: {
                 parts: [{
-                  text: `You are a financial intelligence researcher. Search the web and return results as a JSON array only — no markdown, no explanation:
+                  text: `You are a financial intelligence researcher. Search the web and return results as a JSON array only â€” no markdown, no explanation:
 [{"title":"...","source":"...","url":"https://...","date":"...","brief":"2-3 sentence summary","relevance":"high|medium|low","tags":["..."]}]
 Return 5-10 results. Focus on official sources and reputable news. Prioritise: treasury.gov, ofac.treasury.gov, fincen.gov, bis.gov, reuters.com, ft.com, wsj.com, bloomberg.com, occ.gov, federalreserve.gov, ec.europa.eu, gov.uk, aljazeera.com`
                 }]
@@ -77,13 +81,14 @@ Return JSON array only.` }] }],
             "anthropic-version": "2023-06-01",
             "anthropic-beta": "web-search-2025-03-05",
           },
+          signal: AbortSignal.timeout(20_000),
           body: JSON.stringify({
             model: "claude-sonnet-4-5",
             max_tokens: 4000,
             tools: [{ type: "web_search_20250305", name: "web_search" }],
             system: `You are a financial intelligence researcher. When given a search query, search the web and return a JSON array of the most relevant results. 
 
-Return ONLY a JSON array — no markdown, no explanation, just the array:
+Return ONLY a JSON array â€” no markdown, no explanation, just the array:
 [
   {
     "title": "Full article headline",
@@ -130,10 +135,11 @@ Prioritise results from: treasury.gov, ofac.gov, fincen.gov, bis.gov, reuters.co
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
+            signal: AbortSignal.timeout(20_000),
             body: JSON.stringify({
               system_instruction: {
                 parts: [{
-                  text: `You are a financial intelligence researcher. Search the web and return results as a JSON array only — no markdown, no explanation:
+                  text: `You are a financial intelligence researcher. Search the web and return results as a JSON array only â€” no markdown, no explanation:
 [{"title":"...","source":"...","url":"https://...","date":"...","brief":"2-3 sentence summary","relevance":"high|medium|low","tags":["..."]}]
 Return 5-10 results. Focus on official sources and reputable news.`
                 }]
@@ -170,3 +176,4 @@ Return 5-10 results. Focus on official sources and reputable news.`
     return NextResponse.json({ error: String(e) }, { status: 500 });
   }
 }
+

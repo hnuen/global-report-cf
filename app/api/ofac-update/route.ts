@@ -3,15 +3,23 @@ export const dynamic = "force-dynamic";
  * /api/ofac-update  POST
  * Accepts a diff result and applies it to the program's library snapshot in Redis.
  * New items are added, removed items are marked archived (not deleted).
- * The static library .ts file is NOT modified — changes live in Redis as overrides.
+ * The static library .ts file is NOT modified â€” changes live in Redis as overrides.
  *
- * GET /api/ofac-update?id=iran  — returns the Redis override for a program (if any)
- * POST /api/ofac-update         — applies a diff { programId, newGLs, newEOs, removedGLs, removedEOs, checkedAt }
+ * GET /api/ofac-update?id=iran  â€” returns the Redis override for a program (if any)
+ * POST /api/ofac-update         â€” applies a diff { programId, newGLs, newEOs, removedGLs, removedEOs, checkedAt }
  */
 import { NextRequest, NextResponse } from "next/server";
+import { SANCTIONS_PROGRAMS } from "@/src/lib/sanctions-programs-library";
+import { validateOfacUpdateBody } from "@/src/lib/request-validation";
+import { hasSecret } from "@/src/lib/request-auth";
 
 const OVERRIDE_PFX = "ofac-override-v1:";
 const HISTORY_PFX  = "ofac-history-v1:";
+const PROGRAM_IDS = new Set(SANCTIONS_PROGRAMS.map(program => program.id));
+
+function isAuthorised(req: NextRequest): boolean {
+  return hasSecret(req, process.env.OFAC_UPDATE_SECRET, "x-ofac-update-secret");
+}
 
 async function redisGet(key: string) {
   const u = process.env.UPSTASH_REDIS_REST_URL;
@@ -28,34 +36,37 @@ async function redisGet(key: string) {
 async function redisSet(key: string, value: any, ex?: number) {
   const u = process.env.UPSTASH_REDIS_REST_URL;
   const t = process.env.UPSTASH_REDIS_REST_TOKEN;
-  if (!u || !t) return;
-  try {
+  if (!u || !t) throw new Error("Redis is not configured");
+  {
     const body: any = { value: JSON.stringify(value) };
     if (ex) body.ex = ex;
-    await fetch(`${u}/set/${encodeURIComponent(key)}`, {
+    const response = await fetch(`${u}/set/${encodeURIComponent(key)}`, {
       method: "POST",
       headers: { Authorization: `Bearer ${t}`, "Content-Type": "application/json" },
       body: JSON.stringify(body),
     });
-  } catch {}
+    if (!response.ok) throw new Error(`Redis SET failed (${response.status})`);
+  }
 }
 
 async function redisLpush(key: string, value: any) {
   const u = process.env.UPSTASH_REDIS_REST_URL;
   const t = process.env.UPSTASH_REDIS_REST_TOKEN;
-  if (!u || !t) return;
-  try {
-    await fetch(`${u}/lpush/${encodeURIComponent(key)}`, {
+  if (!u || !t) throw new Error("Redis is not configured");
+  {
+    const pushed = await fetch(`${u}/lpush/${encodeURIComponent(key)}`, {
       method: "POST",
       headers: { Authorization: `Bearer ${t}`, "Content-Type": "application/json" },
       body: JSON.stringify([JSON.stringify(value)]),
     });
+    if (!pushed.ok) throw new Error(`Redis LPUSH failed (${pushed.status})`);
     // Keep only last 50 history entries
-    await fetch(`${u}/ltrim/${encodeURIComponent(key)}/0/49`, {
+    const trimmed = await fetch(`${u}/ltrim/${encodeURIComponent(key)}/0/49`, {
       method: "POST",
       headers: { Authorization: `Bearer ${t}` },
     });
-  } catch {}
+    if (!trimmed.ok) throw new Error(`Redis LTRIM failed (${trimmed.status})`);
+  }
 }
 
 async function redisLrange(key: string, start = 0, end = 19) {
@@ -70,11 +81,11 @@ async function redisLrange(key: string, start = 0, end = 19) {
   } catch { return []; }
 }
 
-// GET — fetch current override + history for a program
+// GET â€” fetch current override + history for a program
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
   const id = searchParams.get("id");
-  if (!id) return NextResponse.json({ error: "Missing id" }, { status: 400 });
+  if (!id || !PROGRAM_IDS.has(id)) return NextResponse.json({ error: "Invalid program id" }, { status: 400, headers: { "Cache-Control": "no-store" } });
 
   const override = await redisGet(OVERRIDE_PFX + id);
   const history  = await redisLrange(HISTORY_PFX + id);
@@ -82,21 +93,21 @@ export async function GET(req: NextRequest) {
   return NextResponse.json({ programId: id, override, history });
 }
 
-// POST — apply diff to stored override
+// POST â€” apply diff to stored override
 export async function POST(req: NextRequest) {
   try {
-  const body = await req.json().catch(() => ({})) as Record<string, any>;
+  if (!isAuthorised(req)) return NextResponse.json({ error: "Unauthorized" }, { status: 401, headers: { "Cache-Control": "no-store" } });
+  const body = validateOfacUpdateBody(await req.json().catch(() => null), PROGRAM_IDS) as Record<string, any> | null;
+  if (!body) return NextResponse.json({ error: "Invalid request body" }, { status: 400, headers: { "Cache-Control": "no-store" } });
   const { programId, newGLs = [], newEOs = [], removedGLs = [], removedEOs = [],
           newAdvisories = [], removedAdvisories = [], checkedAt } = body ?? {};
-
-  if (!programId) return NextResponse.json({ error: "Missing programId" }, { status: 400 });
 
   const now = checkedAt || new Date().toISOString();
   const dateStr = new Date(now).toLocaleDateString("en-US", {
     month: "long", day: "numeric", year: "numeric"
   });
 
-  // Load existing override (or empty) — also backfills any fields missing from
+  // Load existing override (or empty) â€” also backfills any fields missing from
   // an older/partial stored shape, so a schema change here can't crash a
   // later run's .find()/.filter() calls on a previously-saved override.
   const loaded = await redisGet(OVERRIDE_PFX + programId);
@@ -116,13 +127,13 @@ export async function POST(req: NextRequest) {
   // Track what changed this run
   const changes: string[] = [];
 
-  // New GLs — add to addedGLs list
+  // New GLs â€” add to addedGLs list
   for (const gl of newGLs) {
     const num = typeof gl === "string" ? gl : gl.number;
     if (!existing.addedGLs.find((g: any) => g.number === num)) {
       existing.addedGLs.push({
         number: num,
-        title: gl.title || `GL ${num} — pending title update`,
+        title: gl.title || `GL ${num} â€” pending title update`,
         date: dateStr,
         addedDate: dateStr,
         url: gl.url || null,
@@ -131,7 +142,7 @@ export async function POST(req: NextRequest) {
     }
   }
 
-  // Removed GLs — move to archivedGLs
+  // Removed GLs â€” move to archivedGLs
   for (const gl of removedGLs) {
     const num = typeof gl === "string" ? gl : gl.number;
     if (!existing.archivedGLs.find((g: any) => g.number === num)) {
@@ -153,7 +164,7 @@ export async function POST(req: NextRequest) {
     if (!existing.addedEOs.find((e: any) => e.number === num)) {
       existing.addedEOs.push({
         number: num,
-        title: eo.title || `EO ${num} — pending title update`,
+        title: eo.title || `EO ${num} â€” pending title update`,
         date: dateStr,
         addedDate: dateStr,
         url: eo.url || null,
@@ -233,10 +244,11 @@ export async function POST(req: NextRequest) {
     override: existing,
     message: changes.length > 0
       ? `Applied ${changes.length} change(s) to library`
-      : "No changes — library already up to date",
+      : "No changes â€” library already up to date",
   });
   } catch (e) {
     console.error("[ofac-update]", String(e));
     return NextResponse.json({ error: String(e) }, { status: 500 });
   }
 }
+
