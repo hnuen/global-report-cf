@@ -7,6 +7,7 @@ import type { Article } from "../src/lib/types.ts";
 import { mergeDirectWithAiSupplement } from "../src/lib/source-merge.ts";
 import type { Briefing } from "../src/lib/types.ts";
 import { articleMatchesAlertTopic, alertSourceLabel, cleanAlertText } from "../src/lib/alert-topic.ts";
+import { mergeMonitorArticles } from "../src/lib/monitor-articles.ts";
 
 function briefing(articles: Article[]): Briefing {
   return { lastUpdated: "test", articles, sidebar: {} as Briefing["sidebar"] };
@@ -51,6 +52,25 @@ test("a DHS UFLPA monitor excludes unrelated Treasury sanctions news", () => {
     testArticle(3, "DHS announces an unrelated preparedness grant", "https://www.dhs.gov/news/2026/07/31/grant"),
     "DHS UFLPA",
   ), false);
+});
+
+test("monitor includes current articles that are visible through the persistent library", () => {
+  const cachedPenalty = testArticle(1, "Old cached penalty", "https://ofac.treasury.gov/old");
+  cachedPenalty.date = "May 18, 2026";
+  const currentDhs = testArticle(
+    2,
+    "DHS Adds 43 Chinese Companies to UFLPA Entity List",
+    "https://www.dhs.gov/news/2026/07/31/dhs-announces-addition-43-companies-uflpa-entity-list",
+  );
+  currentDhs.date = new Date().toISOString();
+  currentDhs.category = "Entity List";
+  currentDhs.body = ["DHS announced UFLPA Entity List additions over forced labor concerns."];
+
+  const merged = mergeMonitorArticles([cachedPenalty], [currentDhs]);
+  const result = merged.map(scoreArticle).find(item => item.article.sourceUrl === currentDhs.sourceUrl);
+
+  assert.equal(merged.length, 2);
+  assert.equal(result?.shouldAlert, true);
 });
 
 test("ntfy presentation uses the article agency and repairs corrupted punctuation", () => {
