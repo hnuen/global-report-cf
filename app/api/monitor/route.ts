@@ -9,6 +9,7 @@ import { refreshBriefing, loadBriefing } from "@/src/lib/orchestrator";
 import { scoreAll }                   from "@/src/lib/alert-scorer";
 import { getNotifierManager }         from "@/src/notifiers/manager";
 import { applySuccessfulDeliveryCooldowns } from "@/src/lib/alert-delivery";
+import { articleMatchesAlertTopic, alertSourceLabel, cleanAlertText } from "@/src/lib/alert-topic";
 
 export const maxDuration = 120;
 
@@ -151,7 +152,11 @@ async function runMonitor(topic?: string, force = false) {
 
   // 2. Score all articles
   const scored = scoreAll(briefing.articles);
-  const candidates = scored.filter(s => s.shouldAlert);
+  // A topic is a hard alert filter, not merely a hint to the refresh provider.
+  // This prevents a DHS/UFLPA dispatch from paging unrelated Treasury/BIS news.
+  const candidates = scored.filter(s =>
+    s.shouldAlert && articleMatchesAlertTopic(s.article, topic)
+  );
 
   // 3. Deduplicate
   const { buildAlertKey } = await import("@/src/lib/alert-scorer");
@@ -210,12 +215,13 @@ async function runMonitor(topic?: string, force = false) {
     alertedArticles: verifiedAlerts.map(s => ({
       score:     s.score,
       section:   s.article.section,
-      category:  s.article.category,
+      category:  alertSourceLabel(s.article),
       region:    s.article.region,
       sourceUrl: s.article.sourceUrl?.slice(0, 200),
-      source:    s.article.source,
-      headline:  s.article.headline,
-      body:      s.article.body?.slice(0, 2),
+      source:    alertSourceLabel(s.article),
+      headline:  cleanAlertText(s.article.headline),
+      body:      s.article.body?.slice(0, 2).map(cleanAlertText),
+      alertKey:  buildAlertKey(s.article),
       reasons:   s.reasons,
     })),
     topScored: scored.slice(0, 5).map(s => ({
