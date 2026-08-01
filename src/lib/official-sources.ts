@@ -270,6 +270,8 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean; group: 2|3
   // Ã¢â€â‚¬Ã¢â€â‚¬ Group 3 Ã¢â‚¬â€ UK, EU, BIS, OCC, Fed official pages Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
   { name: "OCC Enforcement Actions 2026",          url: "https://www.occ.gov/news-events/newsroom/news-issuances-by-year/news-releases/2026-news-releases.html", official: true, group: 3, sections: ["occ"] },
   { name: "Federal Reserve Ã¢â‚¬â€ Press Releases",      url: "https://www.federalreserve.gov/feeds/press_all.xml", official: true, group: 3, sections: ["economics","occ","penalties"] },
+  { name: "White House — Presidential Actions",   url: "https://www.whitehouse.gov/presidential-actions/", official: true, group: 3, sections: ["sanctions","economics","bis","regions"] },
+  { name: "Congress.gov — Sanctions Legislation", url: "https://www.congress.gov/search?q=%7B%22source%22%3A%22legislation%22%2C%22search%22%3A%22sanctions%20export%20controls%22%7D&pageSort=dateOfIntroduction%3Adesc", official: true, group: 3, sections: ["sanctions","bis"] },
   { name: "Federal Register Ã¢â‚¬â€ BIS Export Controls", url: "https://www.federalregister.gov/documents/search.rss?conditions%5Bagencies%5D%5B%5D=bureau-of-industry-and-security&conditions%5Bterm%5D=export+controls+entity+list", official: true, group: 3, sections: ["bis"] },
   { name: "Federal Register Ã¢â‚¬â€ BIS Actions",        url: "https://www.federalregister.gov/documents/search.rss?conditions%5Bagencies%5D%5B%5D=bureau-of-industry-and-security", official: true, group: 3, sections: ["bis"] },
   { name: "Federal Reserve Enforcement Actions",   url: "https://www.federalreserve.gov/supervisionreg/enforcement-actions-about.htm", official: true, group: 3, sections: ["occ","penalties"] },
@@ -287,6 +289,7 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean; group: 2|3
   { name: "FinCEN Enforcement Actions",            url: "https://www.fincen.gov/news", official: true, group: 4, sections: ["penalties"] },
   { name: "FinCEN News Releases",                  url: "https://www.fincen.gov/news/news-releases", official: true, group: 4, sections: ["penalties"] },
   { name: "DHS Ã¢â‚¬â€ News",                            url: "https://www.dhs.gov/news/rss.xml", official: true, group: 4, sections: ["sanctions","bis","regions"] },
+  { name: "USA.gov — Government Updates",          url: "https://www.usa.gov/blog", official: true, group: 4, sections: ["economics","regions"] },
   { name: "Al Jazeera Ã¢â‚¬â€ Latest News",              url: "https://www.aljazeera.com/xml/rss/all.xml", group: 4, sections: ["sanctions","economics","regions"] },
   { name: "NPR Ã¢â‚¬â€ World",                           url: "https://feeds.npr.org/1004/rss.xml", group: 4, sections: ["sanctions","economics","regions"] },
   { name: "Google News Ã¢â‚¬â€ China Export Controls",   url: "https://news.google.com/rss/search?q=China+MOFCOM+export+controls+rare+earth+sanctions+2026&hl=en-US&gl=US&ceid=US:en", group: 4, sections: ["bis","sanctions"] },
