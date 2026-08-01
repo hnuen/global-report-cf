@@ -6,7 +6,7 @@ on:
   # Cron Trigger calling workflow_dispatch below on an hourly schedule. This
   # workflow previously used GitHub Actions' own `schedule:` trigger, which
   # is the exact mechanism documented in cron-worker/wrangler.toml as
-  # silently delaying/dropping runs under platform load with no SLA — for
+  # silently delaying/dropping runs under platform load with no SLA â€” for
   # an alerting pipeline, a delayed run meant a backlog of articles aging
   # past the alert-eligibility window before they were ever evaluated, then
   # several qualifying at once on whatever run finally fired (the root cause
@@ -58,7 +58,7 @@ jobs:
           echo "alerting=$ALERTING" >> "$GITHUB_OUTPUT"
         id: monitor
 
-      - name: Send ntfy alerts (direct from GitHub — bypasses Cloudflare IP block)
+      - name: Send ntfy alerts (direct from GitHub â€” bypasses Cloudflare IP block)
         if: ${{ steps.monitor.outputs.alerting > 0 }}
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
@@ -79,7 +79,7 @@ jobs:
           click = next((a.get('sourceUrl','') for a in arts if a.get('sourceUrl') and a.get('sourceUrl') != '#'), app_url)
           def emoji(score):
               s = int(score) if str(score).isdigit() else 0
-              return '🚨' if s >= 90 else '⚠️' if s >= 80 else '📌'
+              return 'ðŸš¨' if s >= 90 else 'âš ï¸' if s >= 80 else 'ðŸ“Œ'
           def fmt(a):
               sec     = a.get('section','').upper()
               region  = a.get('region','')
@@ -89,7 +89,7 @@ jobs:
               e       = emoji(score)
               headline = a.get('headline','')
               body    = (a.get('body') or [''])[0][:250]
-              if body and len((a.get('body') or [''])[0]) > 250: body += '…'
+              if body and len((a.get('body') or [''])[0]) > 250: body += 'â€¦'
               src     = a.get('source','')
               url     = a.get('sourceUrl','')
               url     = '' if url == '#' else url
@@ -101,7 +101,7 @@ jobs:
           blocks = [fmt(a) for a in arts[:5]]
           sep = '\\n\\n' + '-'*30 + '\\n\\n'
           body = sep.join(blocks) if blocks else 'See app for details'
-          if app_url: body += f'\\n\\n🌐 {app_url}'
+          if app_url: body += f'\\n\\nðŸŒ {app_url}'
           print(click)
           print(body)
           " 2>/dev/null)
@@ -110,11 +110,11 @@ jobs:
           BODY=$(echo "$NTFY_INFO" | tail -n +2)
           [ -z "$CLICK_URL" ] && CLICK_URL="${APP_URL%/}"
 
-          # Pluralize without a nested-quote command substitution — the old
+          # Pluralize without a nested-quote command substitution â€” the old
           # $([ "$ALERTING" -eq 1 ] || echo s) form was fragile under stray
           # CR characters / minimal shells and could break this step.
           if [ "$ALERTING" = "1" ]; then PLURAL=""; else PLURAL="s"; fi
-          TITLE="🚨 Global Report — ${ALERTING} alert${PLURAL}"
+          TITLE="ðŸš¨ Global Report â€” ${ALERTING} alert${PLURAL}"
 
           AUTH_ARGS=()
           if [ -n "$NTFY_TOKEN" ]; then
@@ -134,7 +134,21 @@ jobs:
           echo "ntfy HTTP: $HTTP_NTFY"
           cat /tmp/ntfy_resp.txt || true
           if [ "$HTTP_NTFY" = "200" ] || [ "$HTTP_NTFY" = "201" ]; then
-            echo "✅ ntfy sent"
+            # Record cooldown only after the GitHub fallback really delivered.
+            ALERT_KEYS=$(python3 -c "import json; d=json.load(open('/tmp/resp.json')); print(json.dumps({'alertKeys':[a['alertKey'] for a in d.get('alertedArticles',[]) if a.get('alertKey')]}))")
+            HTTP_MARK=$(curl -s -L -o /tmp/mark_resp.json -w "%{http_code}" \
+              -X POST "${APP_URL%/}/api/monitor/delivered" \
+              -H "Content-Type: application/json" \
+              -H "x-cron-secret: ${{ secrets.CRON_SECRET }}" \
+              -d "$ALERT_KEYS" \
+              --max-time 15)
+            echo "cooldown callback HTTP: $HTTP_MARK"
+            if [ "$HTTP_MARK" != "200" ]; then
+              cat /tmp/mark_resp.json || true
+              exit 1
+            fi
+            echo "âœ… ntfy sent"
           else
-            echo "⚠️ ntfy failed (HTTP $HTTP_NTFY) — non-fatal"
+            echo "âš ï¸ ntfy failed (HTTP $HTTP_NTFY) â€” non-fatal"
           fi
+
