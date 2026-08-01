@@ -10,6 +10,8 @@ import { scoreAll }                   from "@/src/lib/alert-scorer";
 import { getNotifierManager }         from "@/src/notifiers/manager";
 import { applySuccessfulDeliveryCooldowns } from "@/src/lib/alert-delivery";
 import { articleMatchesAlertTopic, alertSourceLabel, cleanAlertText } from "@/src/lib/alert-topic";
+import { loadArticleLibrary } from "@/src/lib/article-library";
+import { mergeMonitorArticles } from "@/src/lib/monitor-articles";
 
 export const maxDuration = 120;
 
@@ -150,8 +152,12 @@ async function runMonitor(topic?: string, force = false) {
     }
   }
 
-  // 2. Score all articles
-  const scored = scoreAll(briefing.articles);
+  // 2. Score the same article union shown by /api/news. Previously the web
+  // page merged the persistent library while monitoring only inspected the
+  // briefing, so current DHS/UFLPA articles could be visible but never alert.
+  const libraryArticles = await loadArticleLibrary().catch(() => []);
+  const monitorArticles = mergeMonitorArticles(briefing.articles, libraryArticles);
+  const scored = scoreAll(monitorArticles);
   // A topic is a hard alert filter, not merely a hint to the refresh provider.
   // This prevents a DHS/UFLPA dispatch from paging unrelated Treasury/BIS news.
   const candidates = scored.filter(s =>
@@ -174,7 +180,7 @@ async function runMonitor(topic?: string, force = false) {
     if (newAlerts.length >= maxAlertsPerRun) break;
   }
 
-  console.log(`[monitor] ${briefing.articles.length} articles - ${candidates.length} above threshold - ${newAlerts.length} new - ${blockedKeys.length} cooldown blocked${forceSend?" (FORCED)":""}`);
+  console.log(`[monitor] ${monitorArticles.length} articles - ${candidates.length} above threshold - ${newAlerts.length} new - ${blockedKeys.length} cooldown blocked${forceSend?" (FORCED)":""}`);
 
   // 4a. Pre-flight URL check - DROP alerts with missing/unreachable sourceUrls
   const verifiedAlerts = newAlerts.length > 0 ? await verifyAlertUrls(newAlerts) : [];
@@ -199,7 +205,7 @@ async function runMonitor(topic?: string, force = false) {
 
   return {
     ok:           true,
-    articles:     briefing.articles.length,
+    articles:     monitorArticles.length,
     alerting:     verifiedAlerts.length,
     droppedNoLink,
     notified:     notifyResult.sent,
