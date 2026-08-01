@@ -12,8 +12,8 @@
  *   Example: NOTIFIER_ORDER=ntfy,telegram,discord
  *
  * Strategy (NOTIFIER_STRATEGY env var):
- *   "first-success" â€” send via first working channel, stop (default)
- *   "all"           â€” send via ALL configured channels simultaneously
+ *   "first-success" Ã¢â‚¬â€ send via first working channel, stop (default)
+ *   "all"           Ã¢â‚¬â€ send via ALL configured channels simultaneously
  */
 
 import type { Notifier, NotifyResult } from "./types";
@@ -38,7 +38,7 @@ const SUBSCRIBER_CHANNEL_BY_NOTIFIER_ID: Record<string, SubscriberChannel> = {
   ntfy:     "ntfy",
 };
 
-// â”€â”€ Cooldown store (in-memory + persisted to KV) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Ã¢â€â‚¬Ã¢â€â‚¬ Cooldown store (in-memory + persisted to KV) Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 
 const COOLDOWN_KEY = "alert_cooldowns_v2";
 let _cooldowns: Record<string, number> = {};
@@ -78,7 +78,7 @@ async function saveCooldowns(c: Record<string, number>): Promise<void> {
   }
 }
 
-// â”€â”€ Manager â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Ã¢â€â‚¬Ã¢â€â‚¬ Manager Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 
 export interface AlertRunSummary {
   totalAlerts: number;
@@ -119,7 +119,7 @@ export class NotifierManager {
   }
 
   /**
-   * Main entry point â€” called by /api/monitor
+   * Main entry point Ã¢â‚¬â€ called by /api/monitor
    * Applies cooldown, limits, and failover strategy.
    */
   async notify(scored: ScoredArticle[], appUrl = ""): Promise<AlertRunSummary> {
@@ -135,7 +135,7 @@ export class NotifierManager {
     const channels   = this.configured();
     const strategy   = process.env.NOTIFIER_STRATEGY ?? "all";
     const maxPerRun  = Number(process.env.ALERT_MAX_PER_RUN ?? 3);
-    // Default raised from 360 (6h) to 10080 (7 days) â€” kept in sync with the
+    // Default raised from 360 (6h) to 10080 (7 days) Ã¢â‚¬â€ kept in sync with the
     // same env var's default in app/api/monitor/route.ts. See the comment
     // there: a short cooldown let the same old cached article re-alert every
     // few hours indefinitely.
@@ -143,7 +143,7 @@ export class NotifierManager {
     const now        = Date.now();
 
     if (channels.length === 0) {
-      console.warn("[notifier] No channels configured â€” set at least one notifier env var");
+      console.warn("[notifier] No channels configured Ã¢â‚¬â€ set at least one notifier env var");
       return summary;
     }
 
@@ -158,7 +158,7 @@ export class NotifierManager {
       }
       const key = buildAlertKey(sa.article);
       if (now - (cooldowns[key] ?? 0) < cooldownMs) {
-        console.log(`[notifier] Cooldown: "${sa.article.headline.slice(0, 50)}â€¦"`);
+        console.log(`[notifier] Cooldown: "${sa.article.headline.slice(0, 50)}Ã¢â‚¬Â¦"`);
         summary.skipped++;
         continue;
       }
@@ -185,7 +185,7 @@ export class NotifierManager {
       });
     } else {
       // "first-success" was designed for redundant fallback delivery to the
-      // SAME person (the site owner) across multiple methods â€” stop once
+      // SAME person (the site owner) across multiple methods Ã¢â‚¬â€ stop once
       // one works. But telegram/twilio/whatsapp can now also carry
       // dynamically self-registered subscribers (app/subscribe) who are
       // genuinely different people, not fallback paths for each other. If
@@ -211,7 +211,7 @@ export class NotifierManager {
           const result = await ch.send(toSend, appUrl);
           summary.results.push(result);
           if (result.success) {
-            console.log(`[notifier] âœ… Delivered via ${ch.name}`);
+            console.log(`[notifier] Ã¢Å“â€¦ Delivered via ${ch.name}`);
             summary.channels.push(ch.name);
             break;
           } else {
@@ -279,4 +279,5 @@ export function getNotifierManager(): NotifierManager {
   if (!_manager) _manager = new NotifierManager();
   return _manager;
 }
+
 
