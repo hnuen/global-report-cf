@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import test from "node:test";
 
 import { applySuccessfulDeliveryCooldowns } from "../src/lib/alert-delivery.ts";
@@ -143,3 +144,17 @@ test("Gemini only appends new discoveries and marks them display-only", () => {
 });
 
 
+
+test("direct trusted-source registry includes the requested U.S. government publishers", () => {
+  const registry = readFileSync(new URL("../src/lib/official-sources.ts", import.meta.url), "utf8");
+  for (const expected of [
+    "https://www.usa.gov/blog",
+    "https://www.whitehouse.gov/presidential-actions/",
+    "https://www.congress.gov/search",
+    "https://www.state.gov/rss-feeds/press-releases/",
+    "https://www.war.gov/DesktopModules/ArticleCS/RSS.ashx",
+    "https://www.federalreserve.gov/feeds/press_all.xml",
+  ]) {
+    assert.ok(registry.includes(expected), `missing trusted source: ${expected}`);
+  }
+});
