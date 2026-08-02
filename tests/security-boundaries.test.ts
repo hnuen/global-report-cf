@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { checkRateLimit, getClientIp } from "../src/lib/rate-limit.ts";
 import { validateBackgroundRefreshBody, validateOfacUpdateBody, validateSearchQuery } from "../src/lib/request-validation.ts";
-import { hasSecret } from "../src/lib/request-auth.ts";
+import { hasAnySecret, hasSecret } from "../src/lib/request-auth.ts";
 
 test("protected mutations fail closed and accept only the configured secret", () => {
   const unauthorised = new Request("https://example.test", { headers: { "x-ofac-update-secret": "wrong" } });
@@ -10,6 +10,14 @@ test("protected mutations fail closed and accept only the configured secret", ()
   assert.equal(hasSecret(authorised, undefined, "x-ofac-update-secret"), false);
   assert.equal(hasSecret(unauthorised, "correct", "x-ofac-update-secret"), false);
   assert.equal(hasSecret(authorised, "correct", "x-ofac-update-secret"), true);
+});
+
+test("save authentication accepts either dedicated or cron secret and still fails closed", () => {
+  const cron = new Request("https://example.test", { headers: { "x-save-secret": "cron-correct" } });
+  const wrong = new Request("https://example.test", { headers: { "x-save-secret": "wrong" } });
+  assert.equal(hasAnySecret(cron, [undefined, "cron-correct"], "x-save-secret"), true);
+  assert.equal(hasAnySecret(wrong, [undefined, "cron-correct"], "x-save-secret"), false);
+  assert.equal(hasAnySecret(cron, [undefined, undefined], "x-save-secret"), false);
 });
 
 test("expensive rate limits fail closed when Redis is unavailable", async () => {
@@ -47,4 +55,3 @@ test("OFAC updates require known programs and bounded change arrays", () => {
   assert.equal(validateOfacUpdateBody({ programId: "iran", newGLs: Array(51).fill("GL") }, ids), null);
   assert.equal(validateOfacUpdateBody({ programId: "iran", newGLs: [{ number: "1", url: "javascript:alert(1)" }] }, ids), null);
 });
-

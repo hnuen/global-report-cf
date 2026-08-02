@@ -6,7 +6,7 @@ on:
   # the same schedule the old `schedule:` block used. Cloudflare's scheduler
   # runs independent of GitHub Actions' own queue, which was observed
   # silently delaying/dropping `schedule:`-triggered runs by hours under
-  # platform load (no SLA on GitHub's side â€” see cron-worker/wrangler.toml
+  # platform load (no SLA on GitHub's side — see cron-worker/wrangler.toml
   # for the current cron slots and rationale). This workflow is now
   # dispatch-only; do not re-add a `schedule:` block here, or both
   # schedulers will fire and double the daily Gemini call count.
@@ -34,24 +34,39 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Verify Cloudflare can accept the briefing
+        env:
+          APP_URL: ${{ secrets.APP_URL }}
+          SAVE_SECRET: ${{ secrets.CRON_SECRET }}
+        run: |
+          APP_URL="${APP_URL%/}"
+          HTTP=$(curl -s -L -o /tmp/save-preflight.json -w "%{http_code}" \
+            -X POST "$APP_URL/api/save-briefing" \
+            -H "Content-Type: application/json" \
+            -H "x-save-secret: $SAVE_SECRET" \
+            -d '{}' --max-time 20 || echo "000")
+          echo "Save preflight HTTP: $HTTP"
+          cat /tmp/save-preflight.json 2>/dev/null || true
+          test "$HTTP" = "400"
+
       - name: Install PDF parser (for GL expiry extraction)
         # refresh-briefing.mjs reads each GL's own PDF to find expiration
         # dates OFAC states only in the PDF body, never on the program
-        # webpage (e.g. Venezuela GL 60 â€” "authorized through ... October
+        # webpage (e.g. Venezuela GL 60 — "authorized through ... October
         # 23, 2026" appears only in the PDF). This job otherwise runs with
         # no `npm ci`/install step at all, so install just this one small
         # package standalone (--no-save: doesn't touch package.json/lock).
         # continue-on-error: a registry hiccup here must not break the rest
-        # of the refresh â€” the script's pdf-parse import is wrapped in a
+        # of the refresh — the script's pdf-parse import is wrapped in a
         # try/catch and degrades to "skip PDF expiry extraction" if missing.
         continue-on-error: true
         run: npm install pdf-parse@1.1.1 --no-save --no-audit --no-fund
 
-      - name: Fetch official sources â€” 4 groups (each under CF 50-subrequest limit)
+      - name: Fetch official sources — 4 groups (each under CF 50-subrequest limit)
         run: |
           # CF Workers hard-caps subrequests at 50 per invocation. Fetching all
           # 62 RSS sources in one call exceeds that. Instead we call /api/refresh
-          # 4Ã— with group=1..4 (11/8/12/26 sources respectively â€” each well under
+          # 4× with group=1..4 (11/8/12/26 sources respectively — each well under
           # the limit). Each call additively merges into Redis so no group's
           # articles are lost when the next group saves.
           # group 1 (~11): OFAC date news + Treasury SB probes
@@ -74,14 +89,14 @@ jobs:
           done
 
       - name: Call Gemini + save enriched briefing
-        # Gemini with Google Search grounding takes 30-90s â€” too slow for CF's 30s wall-clock limit.
+        # Gemini with Google Search grounding takes 30-90s — too slow for CF's 30s wall-clock limit.
         # We run it here (8-min GitHub Actions timeout) and POST the result to /api/save-briefing.
         # GITHUB_TOKEN commits scraped OFAC data to data/ofac-cache.json so the CF app
         # can read it via raw.githubusercontent.com (ofac.treasury.gov blocks CF IPs).
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           APP_URL: ${{ secrets.APP_URL }}
-          SAVE_BRIEFING_SECRET: ${{ secrets.SAVE_BRIEFING_SECRET }}
+          SAVE_BRIEFING_SECRET: ${{ secrets.CRON_SECRET }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
           FORCE_RESCRAPE_ALL: ${{ github.event.inputs.force_rescrape == 'true' && '1' || '' }}
@@ -109,4 +124,3 @@ jobs:
             -d "{}" --max-time 60 || echo "000")
           echo "Monitor HTTP: $HTTP"
           cat /tmp/resp.json 2>/dev/null || true
-

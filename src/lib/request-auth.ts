@@ -3,3 +3,6 @@ export function hasSecret(request: Request, secret: string | undefined, headerNa
   return request.headers.get(headerName) === secret || request.headers.get("authorization") === `Bearer ${secret}`;
 }
 
+export function hasAnySecret(request: Request, secrets: Array<string | undefined>, headerName: string): boolean {
+  return secrets.some(secret => hasSecret(request, secret, headerName));
+}
