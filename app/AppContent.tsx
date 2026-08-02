@@ -1319,7 +1319,7 @@ export default function GlobalMonitor() {
         <div className="ctrl-main">
           <div style={{display:"flex",alignItems:"center",gap:5,flexShrink:0,flexWrap:"wrap"}}>
             {refreshing ? <><span className="spin-dot"/><span className="upd-text">{refreshQueued?"Queued…":"Refreshing…"}</span></>
-              : <><span className="live-dot"/><span className="upd-text">{formatLastUpdated(data.lastUpdated.replace(/\s*·\s*\d+\s*stories/i, ""), data.lastUpdatedIso)} · {allFiltered.length} stories</span></>}
+              : <><span className="live-dot"/><span className="upd-text">{formatLastUpdated(data.lastUpdated.replace(/\s*\[Gemini\/Actions\]\s*/gi, " ").replace(/\s*·\s*\d+\s*stories/i, ""), data.lastUpdatedIso)} · {allFiltered.length} stories</span></>}
 
             {error && <span className="err-msg">{error}</span>}
           </div>
