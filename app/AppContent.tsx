@@ -425,6 +425,7 @@ const isOFACArticle = (a: Article) =>
 const decodeEntities = (s: string): string => {
   if (!s) return s;
   return s
+    .replace(/Federal Reserve\s+[^\x00-\x7F]\S*\s+Press Releases/g, "Federal Reserve — Press Releases")
     // Repair legacy Redis records saved with UTF-8 punctuation decoded as
     // Windows-1252. New records are clean; old cached stories may retain it.
     .replace(/Ã¢â‚¬Â¢|â€¢/g, "•")
