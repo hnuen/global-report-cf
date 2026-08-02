@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T15:10:50.880Z",
+  "updatedAt": "2026-08-02T17:10:26.087Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260730",
@@ -3079,6 +3079,18 @@
       "description": "The US president claims Iran and other Middle Eastern countries asked Washington to hold off on any attack as the \"perimeters\" of a deal had been agreed."
     },
     {
+      "title": "Ukraine says major Russian oil refinery and airfield hit, as Moscow reports eight deaths",
+      "url": "https://www.bbc.co.uk/news/articles/c998gg5pe09o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 2, 2026",
+      "description": "Russia's military says it attacked Ukraine's ports and vessels in the Black Sea overnight."
+    },
+    {
+      "title": "At the scene of deadly Moscow bomb blast",
+      "url": "https://www.bbc.co.uk/news/videos/c1719pk0xq8o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 2, 2026",
+      "description": "Three people have been killed and 21 injured after an explosive device detonated at an Italian restaurant, Russian media reports."
+    },
+    {
       "title": "UK petrol prices hit highest level since Iran war began",
       "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 31, 2026",
@@ -3111,16 +3123,22 @@
   ],
   "ajNews": [
     {
+      "title": "Saudi Crown Prince MBS urges Trump to ‘prioritise dialogue’ in US-Iran war",
+      "url": "https://www.aljazeera.com/news/2026/8/2/saudi-crown-prince-mbs-urges-trump-to-prioritise-dialogue-in-us-iran-war?traffic_source=rss",
+      "date": "August 2, 2026",
+      "description": "US president halted strikes after earlier threatening Iran with unprecedented force."
+    },
+    {
+      "title": "Ukrainian farmers use temporary storage to revive grain exports",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/2/ukrainian-farmers-use-temporary-storage-to-revive-grain-exports?traffic_source=rss",
+      "date": "August 2, 2026",
+      "description": "Russian attacks disrupt Black Sea exports, forcing Ukrainian farmers to use temporary grain storage."
+    },
+    {
       "title": "No breakthrough on Strait of Hormuz as Trump halts attack on Iran",
       "url": "https://www.aljazeera.com/news/2026/8/2/no-breakthrough-on-strait-of-hormuz-as-trump-halts-attack-on-iran?traffic_source=rss",
       "date": "August 2, 2026",
       "description": "Iran says Trump&#039;s comment on pullback from threatened strikes made &#039;within the context of psychological operations&#039;."
-    },
-    {
-      "title": "Why has Trump halted Iran attacks, and what is the deal he is hinting at?",
-      "url": "https://www.aljazeera.com/news/2026/8/2/why-has-trump-halted-iran-attacks-and-what-is-the-deal-he-is-hinting-at?traffic_source=rss",
-      "date": "August 2, 2026",
-      "description": "Trump says &#039;perimeters of a deal has been agreed to&#039; as he pauses attacks. But is there any substance to his claim?"
     }
   ],
   "occNews": [
@@ -3226,7 +3244,13 @@
   ],
   "regionsNews": [
     {
-      "title": "At least eight killed in Israeli strikes on Gaza after Hamas agree disarmament deal",
+      "title": "Helicopters fighting Greece wildfires collide in mid-air",
+      "url": "https://www.bbc.co.uk/news/articles/c1417713ve6o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 2, 2026",
+      "description": "Video of the incident shows one of the helicopters hitting the propellers of the other, which bursts into flames."
+    },
+    {
+      "title": "At least 13 killed in Israeli strikes on Gaza after Hamas agree disarmament deal",
       "url": "https://www.bbc.co.uk/news/articles/czjlvvkzj20o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 2, 2026",
       "description": "Israel says it was targeting military operatives in the strikes on Gaza City, Khan Younis and Deir el-Balah."
@@ -3250,10 +3274,10 @@
       "description": "The Foxtrot Network is thought to be responsible for about 35 murders in Europe, and uses violence-as-a-service tactics."
     },
     {
-      "title": "A bruising 24 hours - what next for Fifa and under-pressure Infantino?",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c9w0djx2g92o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 1, 2026",
-      "description": "Pressure is building on Gianni Infantino. Can he survive as Fifa president after the implosion of the controversial World Cup investment plan?"
+      "title": "Uganda unveils statue of Israel PM's brother who died in Entebbe rescue mission",
+      "url": "https://www.bbc.co.uk/news/articles/c9v471x89m3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 2, 2026",
+      "description": "Yonatan Netanyahu was the only Israeli soldier to die as he led a mission to free more than 100 hostages."
     },
     {
       "title": "Tourist plane crashes in Peru, killing 13",
@@ -3268,13 +3292,7 @@
       "description": "Some 19 major Italian cities - including Rome, Milan and Naples - are already on red alert, and by Monday all but two will be."
     },
     {
-      "title": "The Sopranos star Vincent Pastore dies aged 80",
-      "url": "https://www.bbc.co.uk/news/articles/cm2gz0epljgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 1, 2026",
-      "description": "Pastore, who played Salvatore \"Big Pussy\" Bonpensiero in the hit US show, was found at his home in New York City, US media report."
-    },
-    {
-      "title": "Why Uganda seems to be winning the battle against Ebola as virus spreads in DR Congo",
+      "title": "Why Uganda is winning the battle against Ebola as virus spreads in DR Congo",
       "url": "https://www.bbc.co.uk/news/articles/clyemjn44qqo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 1, 2026",
       "description": "Uganda discharged its last Ebola patient from hospital roughly two weeks ago."
@@ -3290,6 +3308,12 @@
       "url": "https://www.bbc.co.uk/news/articles/clyljq79kdko?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 2, 2026",
       "description": "The renowned climber was known for scaling the world's 14 highest peaks in just over six months in 2019."
+    },
+    {
+      "title": "A bruising 24 hours - what next for Fifa and under-pressure Infantino?",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c9w0djx2g92o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 1, 2026",
+      "description": "Pressure is building on Gianni Infantino. Can he survive as Fifa president after the implosion of the controversial World Cup investment plan?"
     },
     {
       "title": "How Australia combines modern tech and Indigenous knowledge to fight wildfires",
@@ -3322,12 +3346,6 @@
       "description": "Fifa president Gianni Infantino is in the eye of a storm after scrapping his attempt to sell stakes in the World Cup. If he goes, who comes in?"
     },
     {
-      "title": "Bowen: Plan for Hamas to disarm faces big obstacles, yet it offers rare hope for Gaza",
-      "url": "https://www.bbc.co.uk/news/articles/c2dkje4p4klo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 31, 2026",
-      "description": "The realities of politics, war, zero trust, the deaths of thousands and the destruction of Gaza will make any agreement very complicated."
-    },
-    {
       "title": "Fastest runner to cross the Alps says it was an incredible experience",
       "url": "https://www.bbc.co.uk/news/videos/crk5j6g8lmko?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 2, 2026",
@@ -3350,12 +3368,6 @@
       "url": "https://www.bbc.co.uk/news/videos/cvgj0vldr1mo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 1, 2026",
       "description": "The BBC's Shaimaa Khalil explains why Gianni Infantino has backed down on his controversial investment proposal."
-    },
-    {
-      "title": "Watch: Tens of thousands of migrants enter Spain's Ceuta from Morocco",
-      "url": "https://www.bbc.co.uk/news/videos/cnvnml1pen6o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 1, 2026",
-      "description": "Most migrants who reached Spain's North African territory of Ceuta from Morocco have returned, officials said."
     },
     {
       "title": "Faisal Islam: Four reasons why Fifa's World Cup plan never stacked up",
@@ -3634,6 +3646,30 @@
       "description": "Shabaz Ali turns author to see if the internet's favourite villains deserve the hate."
     },
     {
+      "title": "Suicide bomber kills 14 outside police station in Pakistan’s Swat",
+      "url": "https://www.aljazeera.com/news/2026/8/2/suicide-bomber-kills-14-outside-police-station-in-pakistans-swat?traffic_source=rss",
+      "date": "August 2, 2026",
+      "description": "Explosion took place near crowd rallying against a surge in violence in northwestern Pakistan."
+    },
+    {
+      "title": "Capital One cites anti-money laundering concerns in Trump Organization case",
+      "url": "https://www.aljazeera.com/economy/2026/8/2/capital-one-cites-anti-money-laundering-concerns-in-trump-organization-case?traffic_source=rss",
+      "date": "August 2, 2026",
+      "description": "Capital One says Trump Organization account closures in 2021 followed review by anti-money-laundering team."
+    },
+    {
+      "title": "Israeli settlers shoot Palestinian child during farm raid",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/2/israeli-settlers-shoot-palestinian-child-during-farm-raid?traffic_source=rss",
+      "date": "August 2, 2026",
+      "description": "CCTV captured the moment a nine-year-old Palestinian boy was shot in the back by Israeli settlers."
+    },
+    {
+      "title": "How to end the ‘Hormuz war’",
+      "url": "https://www.aljazeera.com/opinions/2026/8/2/how-to-end-the-hormuz?traffic_source=rss",
+      "date": "August 2, 2026",
+      "description": "The least bad option for the US is to let the MoU Article 5 play out."
+    },
+    {
       "title": "Heatwave forces nuclear shutdown in Hungary",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/2/08-02-2026-hungary-nuclear-plant-sv?traffic_source=rss",
       "date": "August 2, 2026",
@@ -3652,7 +3688,7 @@
       "description": "Marc Lamont Hill speaks to CIA whistleblower John Kiriakou about the agency and US intelligence today."
     },
     {
-      "title": "Greek firefighting helicopters in mid-air collision, four crew missing",
+      "title": "Firefighting helicopters collide, killing two, as Greece battles wildfires",
       "url": "https://www.aljazeera.com/news/2026/8/2/firefighting-helicopters-collide-near-athens-as-greece-battles-wildfires?traffic_source=rss",
       "date": "August 2, 2026",
       "description": "Europe struggles with record-breaking summer heat as wildfires ravage Greece, France and Spain causing mass evacuations."
@@ -3740,36 +3776,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/2/ben-gvir-mocks-palestinian-detainee-over-prison-conditions?traffic_source=rss",
       "date": "August 2, 2026",
       "description": "Ben-Gvir mocks Palestinian detainee over prison conditions"
-    },
-    {
-      "title": "From Sudan to Spain: Between war and home | Al Jazeera Originals",
-      "url": "https://www.aljazeera.com/video/al-jazeera-documentaries/2026/8/2/aje-onl-aj_or_sdn_war-020826?traffic_source=rss",
-      "date": "August 2, 2026",
-      "description": "A young Sudanese refugee rebuilds his life in Spain while war keeps him from the family he left behind."
-    },
-    {
-      "title": "Israeli soldiers jailed over Sde Teiman walkout",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/2/israeli-soldiers-jailed-over-sde-teiman-walkout?traffic_source=rss",
-      "date": "August 2, 2026",
-      "description": "Fourteen Israeli soldiers have been sentenced to military prison after leading an unauthorised walkout from Sde Teiman."
-    },
-    {
-      "title": "FIFA boss Infantino’s position looks unacceptable: European Leagues head",
-      "url": "https://www.aljazeera.com/sports/2026/8/2/fifa-boss-infantinos-position-looks-unacceptable-head-of-european-league?traffic_source=rss",
-      "date": "August 2, 2026",
-      "description": "Claudius Schafer says there can be &#039;only one consequence&#039; to Infantino&#039;s actions over his World Cup privatisation plan."
-    },
-    {
-      "title": "Residents of Spain’s Ceuta shut down far-right anti-migrant rally",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/2/2-08-sv-ceuta-cancel-farright-protests-es?traffic_source=rss",
-      "date": "August 2, 2026",
-      "description": "Hundreds of residents in Spain&#039;s North African enclave of Ceuta gathered to oppose a planned far-right rally."
-    },
-    {
-      "title": "A quiet day in Harare after Zimbabwe’s shutdown call",
-      "url": "https://www.aljazeera.com/news/2026/8/2/a-quiet-day-in-harare-after-zimbabwes-shutdown-call?traffic_source=rss",
-      "date": "August 2, 2026",
-      "description": "A heavy security presence and cautious businesses reflected tensions over constitutional changes."
     }
   ]
 }
