@@ -423,8 +423,17 @@ const isOFACArticle = (a: Article) =>
 
 // Decode HTML entities (&#39; → ', &amp; → &, etc.)
 const decodeEntities = (s: string): string => {
-  if (!s || !s.includes("&")) return s;
+  if (!s) return s;
   return s
+    // Repair legacy Redis records saved with UTF-8 punctuation decoded as
+    // Windows-1252. New records are clean; old cached stories may retain it.
+    .replace(/Ã¢â‚¬Â¢|â€¢/g, "•")
+    .replace(/Ã¢â‚¬â€|â€”/g, "—")
+    .replace(/Ã¢â‚¬â€œ|â€“/g, "–")
+    .replace(/Ã¢â€ â€™|â†’/g, "→")
+    .replace(/Ã¢â€ â€˜|â†‘/g, "↑")
+    .replace(/Ã¢â€ â€œ|â†“/g, "↓")
+    .replace(/Â·/g, "·")
     .replace(/&#39;/g, "\'")
     .replace(/&quot;/g, "\"")
     .replace(/&amp;/g, "&")
@@ -981,7 +990,7 @@ export default function GlobalMonitor() {
         <span className="art-region">{decodeEntities(a.region)}</span>
         <span className="art-date">{formatDisplayDate(a.date)}</span>
       </div>
-      <h2 className="art-hl">{decodeEntities(a.headline)}</h2>
+      <h2 className="art-hl">{decodeEntities(a.headline).replace(/^•\s*/, "")}</h2>
       {renderBody(a, key??a.id)}
     </article>
   );
@@ -1209,7 +1218,7 @@ export default function GlobalMonitor() {
               </div>
               <a href={a.sourceUrl} target="_blank" rel="noopener noreferrer"
                 style={{textDecoration:"none",color:"inherit"}}>
-                <span className="m-art-hl">{decodeEntities(a.headline)}</span>
+                <span className="m-art-hl">{decodeEntities(a.headline).replace(/^•\s*/, "")}</span>
               </a>
               <div className="m-art-src">{sd.name}</div>
             </div>
