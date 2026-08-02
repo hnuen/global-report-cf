@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T21:10:20.222Z",
+  "updatedAt": "2026-08-02T22:10:24.050Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260730",
@@ -3141,10 +3141,10 @@
       "description": "Tehran&#039;s announcement comes after Trump said US would hold off on new Iran attack in hope of quick deal."
     },
     {
-      "title": "Ukrainian drone attacks kill eight in response to Russian missiles",
+      "title": "Russian and Ukrainian strikes kill 14 on both sides",
       "url": "https://www.aljazeera.com/news/2026/8/2/ukrainian-drone-attacks-kill-eight-in-response-to-russian-missiles?traffic_source=rss",
       "date": "August 2, 2026",
-      "description": "Ukrainian strikes target Russian oil hubs and high-rises as Zelenskyy warns of critical Patriot interceptor shortages."
+      "description": "Ukrainian strikes target Russian oil hubs and high-rises as Zelenskyy warns of critical Patriot interceptor shortages"
     },
     {
       "title": "‘Iron fist’ doesn’t work with Iran: Former US hostage in Tehran",
@@ -3171,7 +3171,14 @@
       "description": "Russian attacks disrupt Black Sea exports, forcing Ukrainian farmers to use temporary grain storage."
     }
   ],
-  "occNews": [],
+  "occNews": [
+    {
+      "title": "OCC Announces Enforcement Actions for July 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-59.html",
+      "date": "July 16, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for July 2026."
+    }
+  ],
   "economicsNews": [
     {
       "title": "Federal Reserve issues FOMC statement",
@@ -3669,6 +3676,24 @@
       "description": "Shabaz Ali turns author to see if the internet's favourite villains deserve the hate."
     },
     {
+      "title": "Wildfires force mass evacuations across the Pacific Northwest",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/2/aje-onl-nf_wildfires-force-evacuations-acrosspacific-northwest-020826?traffic_source=rss",
+      "date": "August 2, 2026",
+      "description": "Fast-moving wildfires are forcing evacuations across Washington State, US and nearby British Columbia, Canada."
+    },
+    {
+      "title": "Local volunteers help rebuild destroyed Christian monastery in Lebanon",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/2/local-volunteers-help-rebuild-destroyed-christian-monastery-in-lebanon?traffic_source=rss",
+      "date": "August 2, 2026",
+      "description": "Interfaith volunteers rebuild war-damaged Catholic monastery in Lebanon’s Zawtar al-Gharbiyeh."
+    },
+    {
+      "title": "UK PM Burnham vows to be ‘relentless’ on Channel migrant crossings",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/2/uk-pm-burnham-vows-to-be-relentless-on-channel-migrant-crossings?traffic_source=rss",
+      "date": "August 2, 2026",
+      "description": "UK Prime Minister Andy Burnham said his government will be &quot;relentless&quot; in tackling small boat crossings the Channel."
+    },
+    {
       "title": "How much has AIPAC spent against Michigan’s Abdul El-Sayed? And why?",
       "url": "https://www.aljazeera.com/news/2026/8/2/how-much-has-aipac-spent-against-michigans-abdul-el-sayed-and-why?traffic_source=rss",
       "date": "August 2, 2026",
@@ -3732,7 +3757,7 @@
       "title": "Capital One cites anti-money laundering concerns in Trump Organization case",
       "url": "https://www.aljazeera.com/economy/2026/8/2/capital-one-cites-anti-money-laundering-concerns-in-trump-organization-case?traffic_source=rss",
       "date": "August 2, 2026",
-      "description": "Capital One says Trump Organization account closures in 2021 followed review by anti-money-laundering team."
+      "description": "Capital One says Trump Organization account closures in 2021 followed review by anti-money laundering team."
     },
     {
       "title": "Israeli settlers shoot Palestinian child during farm raid",
@@ -3751,24 +3776,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/2/08-02-2026-hungary-nuclear-plant-sv?traffic_source=rss",
       "date": "August 2, 2026",
       "description": "Hungary says a heatwave has forced the shutdown of its largest nuclear plant as low Danube levels disrupt cooling."
-    },
-    {
-      "title": "Tanks, troops and space",
-      "url": "https://www.aljazeera.com/video/talk-to-al-jazeera/2026/8/2/tanks-troops-and-space?traffic_source=rss",
-      "date": "August 2, 2026",
-      "description": "Andrius Kubilius on the lessons from Ukraine and why drones and space are transforming Europe&#039;s security strategy."
-    },
-    {
-      "title": "CIA whistleblower John Kiriakou on accountability and CIA’s history",
-      "url": "https://www.aljazeera.com/video/upfront/2026/8/2/cia-whistleblower-john-kiriakou-on-accountability-and-cias-history?traffic_source=rss",
-      "date": "August 2, 2026",
-      "description": "Marc Lamont Hill speaks to CIA whistleblower John Kiriakou about the agency and US intelligence today."
-    },
-    {
-      "title": "Firefighting helicopters collide, killing two, as Greece battles wildfires",
-      "url": "https://www.aljazeera.com/news/2026/8/2/firefighting-helicopters-collide-near-athens-as-greece-battles-wildfires?traffic_source=rss",
-      "date": "August 2, 2026",
-      "description": "Europe struggles with record-breaking summer heat as wildfires ravage Greece, France and Spain and spur mass evacuation."
     }
   ]
 }
