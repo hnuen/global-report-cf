@@ -203,3 +203,16 @@ test("direct trusted-source registry includes the requested U.S. government publ
   }
 });
 
+test("the frequent monitor refreshes direct sources without invoking Gemini", () => {
+  const workflow = readFileSync(new URL("../.github/workflows/monitor.yml", import.meta.url), "utf8");
+  const refreshStep = workflow.indexOf("Refresh direct trusted sources");
+  const monitorStep = workflow.indexOf("Run monitor");
+  assert.ok(refreshStep >= 0 && refreshStep < monitorStep);
+  assert.ok(workflow.includes("for GROUP in 1 2 3 4"));
+  assert.ok(workflow.includes("$APP_URL/api/refresh"));
+  assert.equal(workflow.includes("GEMINI_API_KEY"), false);
+
+  const cronWorker = readFileSync(new URL("../cron-worker/src/index.js", import.meta.url), "utf8");
+  assert.ok(cronWorker.includes('\"17,47 * * * *\": \"monitor.yml\"'));
+});
+

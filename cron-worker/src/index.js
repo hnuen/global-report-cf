@@ -32,7 +32,7 @@ const GITHUB_REF = "main";
 // Anything not listed here falls back to DEFAULT_WORKFLOW_FILE, which keeps
 // the original 4 refresh.yml slots working without needing an entry each.
 const CRON_WORKFLOW_MAP = {
-  "17 * * * *": "monitor.yml",
+  "17,47 * * * *": "monitor.yml",
 };
 const DEFAULT_WORKFLOW_FILE = "refresh.yml";
 

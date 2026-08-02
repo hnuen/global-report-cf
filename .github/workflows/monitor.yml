@@ -14,8 +14,42 @@ permissions:
 jobs:
   monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 7
     steps:
+      - name: Refresh direct trusted sources
+        env:
+          APP_URL: ${{ secrets.APP_URL }}
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+          VERCEL_BYPASS_TOKEN: ${{ secrets.VERCEL_BYPASS_TOKEN }}
+        run: |
+          set -euo pipefail
+          APP_URL="${APP_URL%/}"
+
+          # Separate Worker invocations keep each group below the free-plan
+          # external-subrequest limit. This path never calls Gemini.
+          FAILED=0
+          for GROUP in 1 2 3 4; do
+            HTTP=$(curl --silent --show-error --location \
+              --output "/tmp/direct_group_${GROUP}.json" \
+              --write-out "%{http_code}" \
+              --request POST "$APP_URL/api/refresh" \
+              --header "Content-Type: application/json" \
+              --header "x-cron-secret: $CRON_SECRET" \
+              --header "x-vercel-protection-bypass: $VERCEL_BYPASS_TOKEN" \
+              --data "{\"group\":$GROUP}" \
+              --max-time 40 || echo "000")
+            echo "Direct source group $GROUP HTTP: $HTTP"
+            cat "/tmp/direct_group_${GROUP}.json" 2>/dev/null || true
+            if [ "$HTTP" != "200" ]; then FAILED=$((FAILED + 1)); fi
+          done
+
+          # A single unavailable publisher group must not suppress alerts from
+          # the healthy groups. Stop only when no group refreshed successfully.
+          if [ "$FAILED" = "4" ]; then
+            echo "All direct source groups failed"
+            exit 1
+          fi
+
       - name: Run monitor
         id: monitor
         env:
