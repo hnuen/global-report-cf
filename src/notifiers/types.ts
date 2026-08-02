@@ -11,5 +11,5 @@ export interface Notifier {
   id: string;
   name: string;
   isConfigured(): boolean;
-  send(articles: ScoredArticle[], appUrl: string): Promise<NotifyResult>;
+  send(articles: ScoredArticle[], appUrl: string, options?: { defaultMinScore: number; maxAlertsPerRun: number }): Promise<NotifyResult>;
 }

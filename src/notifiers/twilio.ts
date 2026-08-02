@@ -14,7 +14,8 @@ import type { Notifier, NotifyResult } from "./types";
 import type { ScoredArticle }          from "../lib/alert-scorer";
 import { formatAlert }                 from "./format";
 import { listApprovedByChannel }       from "../lib/subscribers";
-import { mergeRecipients, articlesForSections } from "../lib/alert-categories";
+import { mergeRecipients } from "../lib/alert-categories";
+import { articlesForSubscriber } from "../lib/alert-sources";
 
 export class TwilioNotifier implements Notifier {
   id   = "twilio";
@@ -32,7 +33,7 @@ export class TwilioNotifier implements Notifier {
     );
   }
 
-  async send(articles: ScoredArticle[], appUrl: string): Promise<NotifyResult> {
+  async send(articles: ScoredArticle[], appUrl: string, options = { defaultMinScore: 65, maxAlertsPerRun: 5 }): Promise<NotifyResult> {
     const sid       = process.env.TWILIO_ACCOUNT_SID!;
     const token     = process.env.TWILIO_AUTH_TOKEN!;
     const from      = process.env.TWILIO_FROM_NUMBER!;
@@ -41,10 +42,10 @@ export class TwilioNotifier implements Notifier {
     const approved = await listApprovedByChannel("sms").catch(() => []);
     const dynamic = approved
       .filter(s => !!s.phone)
-      .map(s => ({ to: s.phone as string, sections: s.sections }));
+      .map(s => ({ to: s.phone as string, sections: s.sections, sourceGroups: s.sourceGroups, minAlertScore: s.minAlertScore }));
     // Each recipient carries the sections they subscribed to (env-var numbers
     // get everything). Below, each is sent only articles in their categories.
-    const recipients = mergeRecipients(staticNumbers, dynamic);
+    const recipients = mergeRecipients(staticNumbers, dynamic, options.defaultMinScore);
 
     // No point calling Twilio if there's nobody to text — surface that
     // explicitly instead of the ambiguous "No messages delivered".
@@ -63,7 +64,7 @@ export class TwilioNotifier implements Notifier {
     let lastError = "";
 
     for (const recipient of recipients) {
-      const mine = articlesForSections(articles, recipient.sections);
+      const mine = articlesForSubscriber(articles, recipient).slice(0, options.maxAlertsPerRun);
       if (mine.length === 0) continue; // nothing in this recipient's categories
       const to = recipient.to;
 

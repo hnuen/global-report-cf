@@ -41,6 +41,8 @@ export interface Subscriber {
   sections?: string[];       // internal sections this subscriber wants alerts for
                              // (expanded from their chosen categories). Empty/
                              // undefined = all (legacy subs predate categories).
+  sourceGroups?: string[];   // admin-selected publisher groups; empty/undefined = all
+  minAlertScore?: number;    // per-subscriber delivery threshold, 0-100
   status: SubscriberStatus;
   token: string;             // unguessable — used in the approve/deny email links
   createdAt: number;
@@ -240,6 +242,20 @@ export async function updateSubscriberSections(id: string, sections: string[]): 
   const sub = await getSubscriber(id);
   if (!sub) return null;
   sub.sections = sections;
+  await saveSubscriber(sub);
+  return sub;
+}
+
+/** Admin-only delivery policy. Mandatory alert safety gates are evaluated before this filter. */
+export async function updateSubscriberAlertPolicy(
+  id: string,
+  policy: { sections: string[]; sourceGroups: string[]; minAlertScore: number },
+): Promise<Subscriber | null> {
+  const sub = await getSubscriber(id);
+  if (!sub) return null;
+  sub.sections = policy.sections;
+  sub.sourceGroups = policy.sourceGroups;
+  sub.minAlertScore = policy.minAlertScore;
   await saveSubscriber(sub);
   return sub;
 }

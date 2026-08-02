@@ -29,6 +29,9 @@
 import type { Notifier, NotifyResult } from "./types";
 import type { ScoredArticle }          from "../lib/alert-scorer";
 import { formatAlert }                 from "./format";
+import { listApprovedByChannel }       from "../lib/subscribers";
+import { mergeRecipients }             from "../lib/alert-categories";
+import { articlesForSubscriber }       from "../lib/alert-sources";
 
 const PRIORITY_MAP: Record<number, string> = {
   90: "urgent",
@@ -80,19 +83,26 @@ export class NtfyNotifier implements Notifier {
   name = "Ntfy.sh";
 
   isConfigured(): boolean {
-    return !!process.env.NTFY_TOPIC;
+    return !!process.env.NTFY_TOPIC || !!(process.env.UPSTASH_REDIS_REST_URL || process.env.KV_REST_API_URL);
   }
 
-  async send(articles: ScoredArticle[], appUrl: string): Promise<NotifyResult> {
-    const topic  = process.env.NTFY_TOPIC!;
+  async send(articles: ScoredArticle[], appUrl: string, options = { defaultMinScore: 65, maxAlertsPerRun: 5 }): Promise<NotifyResult> {
+    const topic  = process.env.NTFY_TOPIC ?? "";
     const server = (process.env.NTFY_SERVER ?? "https://ntfy.sh").replace(/\/$/, "");
     const token  = process.env.NTFY_TOKEN;
-    const url    = `${server}/${topic}`;
+    const approved = await listApprovedByChannel("ntfy").catch(() => []);
+    const dynamic = approved.filter(s => !!s.ntfyTopic).map(s => ({
+      to: s.ntfyTopic as string, sections: s.sections, sourceGroups: s.sourceGroups, minAlertScore: s.minAlertScore,
+    }));
+    const recipients = mergeRecipients(topic ? [topic] : [], dynamic, options.defaultMinScore);
 
     let sent = 0;
     const errors: string[] = [];
 
-    for (const sa of articles) {
+    for (const recipient of recipients) {
+      const mine = articlesForSubscriber(articles, recipient).slice(0, options.maxAlertsPerRun);
+      for (const sa of mine) {
+      const url = `${server}/${recipient.to}`;
       const { subject, plain, emoji } = formatAlert(sa, appUrl);
       const priority = ntfyPriority(sa.score);
 
@@ -114,7 +124,7 @@ export class NtfyNotifier implements Notifier {
         if (res.ok) {
           sent++;
         } else {
-          const err = `HTTP ${res.status} for topic ${topic}: ${await res.text()}`;
+          const err = `HTTP ${res.status} for topic ${recipient.to}: ${await res.text()}`;
           console.error(`[ntfy] Error: ${err}`);
           errors.push(err);
         }
@@ -122,6 +132,7 @@ export class NtfyNotifier implements Notifier {
         const msg = e instanceof Error ? e.message : String(e);
         console.error("[ntfy] Failed after retries:", msg);
         errors.push(msg);
+      }
       }
     }
 

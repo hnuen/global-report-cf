@@ -9,8 +9,9 @@
  *   ADMIN_SECRET — required; sent by the admin page as the x-admin-secret header
  */
 import { NextRequest, NextResponse } from "next/server";
-import { listAllSubscribers, revokeSubscriber, deleteSubscriber, updateSubscriberSections } from "@/src/lib/subscribers";
+import { listAllSubscribers, revokeSubscriber, deleteSubscriber, updateSubscriberAlertPolicy } from "@/src/lib/subscribers";
 import { validateCategoryKeys, categoriesToSections } from "@/src/lib/alert-categories";
+import { validateSourceGroups } from "@/src/lib/alert-sources";
 
 export const dynamic = "force-dynamic";
 
@@ -70,7 +71,7 @@ export async function PATCH(req: NextRequest) {
   if (!isAuthorised(req)) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
-  const body = await req.json().catch(() => ({})) as { id?: string; categories?: string[] };
+  const body = await req.json().catch(() => ({})) as { id?: string; categories?: string[]; sourceGroups?: string[]; minAlertScore?: number };
   if (!body.id) {
     return NextResponse.json({ error: "Missing id" }, { status: 400 });
   }
@@ -79,7 +80,12 @@ export async function PATCH(req: NextRequest) {
     return NextResponse.json({ error: "Select at least one category" }, { status: 400 });
   }
   const sections = categoriesToSections(categories);
-  const sub = await updateSubscriberSections(body.id, sections);
+  const sourceGroups = validateSourceGroups(body.sourceGroups);
+  const minAlertScore = Number(body.minAlertScore);
+  if (!Number.isInteger(minAlertScore) || minAlertScore < 0 || minAlertScore > 100) {
+    return NextResponse.json({ error: "Minimum alert score must be a whole number from 0 to 100" }, { status: 400 });
+  }
+  const sub = await updateSubscriberAlertPolicy(body.id, { sections, sourceGroups, minAlertScore });
   if (!sub) {
     return NextResponse.json({ error: "Not found" }, { status: 404 });
   }

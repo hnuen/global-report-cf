@@ -25,7 +25,8 @@ import type { Notifier, NotifyResult } from "./types";
 import type { ScoredArticle }          from "../lib/alert-scorer";
 import { formatAlert }                 from "./format";
 import { listApprovedByChannel }       from "../lib/subscribers";
-import { mergeRecipients, articlesForSections } from "../lib/alert-categories";
+import { mergeRecipients } from "../lib/alert-categories";
+import { articlesForSubscriber } from "../lib/alert-sources";
 
 export class WhatsAppNotifier implements Notifier {
   id   = "whatsapp";
@@ -39,7 +40,7 @@ export class WhatsAppNotifier implements Notifier {
     );
   }
 
-  async send(articles: ScoredArticle[], appUrl: string): Promise<NotifyResult> {
+  async send(articles: ScoredArticle[], appUrl: string, options = { defaultMinScore: 65, maxAlertsPerRun: 5 }): Promise<NotifyResult> {
     const sid  = process.env.TWILIO_ACCOUNT_SID!;
     const token = process.env.TWILIO_AUTH_TOKEN!;
     const from = `whatsapp:${process.env.TWILIO_WHATSAPP_FROM!}`;
@@ -49,8 +50,8 @@ export class WhatsAppNotifier implements Notifier {
     const approved = await listApprovedByChannel("whatsapp").catch(() => []);
     const dynamic = approved
       .filter(s => !!s.phone)
-      .map(s => ({ to: s.phone as string, sections: s.sections }));
-    const recipients = mergeRecipients(staticNumbers, dynamic);
+      .map(s => ({ to: s.phone as string, sections: s.sections, sourceGroups: s.sourceGroups, minAlertScore: s.minAlertScore }));
+    const recipients = mergeRecipients(staticNumbers, dynamic, options.defaultMinScore);
 
     if (recipients.length === 0) {
       return {
@@ -67,7 +68,7 @@ export class WhatsAppNotifier implements Notifier {
     let lastError = "";
 
     for (const recipient of recipients) {
-      const mine = articlesForSections(articles, recipient.sections);
+      const mine = articlesForSubscriber(articles, recipient).slice(0, options.maxAlertsPerRun);
       if (mine.length === 0) continue; // nothing in this recipient's categories
       const to = recipient.to;
 

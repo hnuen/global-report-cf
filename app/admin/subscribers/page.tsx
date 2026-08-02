@@ -2,6 +2,7 @@
 
 import { useState, Fragment } from "react";
 import { ALERT_CATEGORIES, describeSections, sectionsToCategoryKeys } from "@/src/lib/alert-categories";
+import { ALERT_SOURCE_GROUPS } from "@/src/lib/alert-sources";
 
 type SubscriberStatus =
   | "pending_telegram_link"
@@ -19,6 +20,8 @@ interface Subscriber {
   telegramChatId?: string;
   ntfyTopic?: string;
   sections?: string[];
+  sourceGroups?: string[];
+  minAlertScore?: number;
   status: SubscriberStatus;
   createdAt: number;
   approvedAt?: number;
@@ -54,15 +57,21 @@ export default function AdminSubscribersPage() {
   const [removingId, setRemovingId] = useState<string | null>(null);
   const [editingId, setEditingId] = useState<string | null>(null);
   const [editCats, setEditCats] = useState<string[]>([]);
+  const [editSources, setEditSources] = useState<string[]>([]);
+  const [editScore, setEditScore] = useState(65);
   const [savingId, setSavingId] = useState<string | null>(null);
 
   function startEdit(s: Subscriber) {
     setEditingId(s.id);
     setEditCats(sectionsToCategoryKeys(s.sections));
+    setEditSources(s.sourceGroups ?? []);
+    setEditScore(s.minAlertScore ?? 65);
     setError(null);
   }
   const toggleEditCat = (key: string) =>
     setEditCats(prev => (prev.includes(key) ? prev.filter(k => k !== key) : [...prev, key]));
+  const toggleEditSource = (key: string) =>
+    setEditSources(prev => (prev.includes(key) ? prev.filter(k => k !== key) : [...prev, key]));
 
   async function saveCats(id: string) {
     setSavingId(id);
@@ -70,7 +79,7 @@ export default function AdminSubscribersPage() {
       const res = await fetch("/api/admin/subscribers", {
         method: "PATCH",
         headers: { "Content-Type": "application/json", "x-admin-secret": secret },
-        body: JSON.stringify({ id, categories: editCats }),
+        body: JSON.stringify({ id, categories: editCats, sourceGroups: editSources, minAlertScore: editScore }),
       });
       if (res.ok) {
         setEditingId(null);
@@ -337,8 +346,9 @@ export default function AdminSubscribersPage() {
                     {editingId === s.id && (
                       <tr style={{ borderBottom: "1px solid #ddd" }}>
                         <td colSpan={7} style={{ padding: "4px 6px 16px", background: "#faf7f2" }}>
-                          <div style={{ display: "flex", flexWrap: "wrap", gap: 14, alignItems: "center" }}>
-                            <span style={{ fontSize: 13, color: "#555", fontWeight: 500 }}>Authorize:</span>
+                          <div style={{ display: "grid", gap: 14 }}>
+                            <div style={{ display: "flex", flexWrap: "wrap", gap: 14, alignItems: "center" }}>
+                            <span style={{ fontSize: 13, color: "#555", fontWeight: 500 }}>Categories:</span>
                             {ALERT_CATEGORIES.map(c => (
                               <label key={c.key} style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 13, cursor: "pointer" }}>
                                 <input
@@ -349,6 +359,21 @@ export default function AdminSubscribersPage() {
                                 {c.label}
                               </label>
                             ))}
+                            </div>
+                            <div style={{ display: "flex", flexWrap: "wrap", gap: 14, alignItems: "center" }}>
+                              <span style={{ fontSize: 13, color: "#555", fontWeight: 500 }}>Sources:</span>
+                              {ALERT_SOURCE_GROUPS.map(source => (
+                                <label key={source.key} style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 13, cursor: "pointer" }}>
+                                  <input type="checkbox" checked={editSources.includes(source.key)} onChange={() => toggleEditSource(source.key)} />
+                                  {source.label}
+                                </label>
+                              ))}
+                              <span style={{ fontSize: 12, color: "#777" }}>{editSources.length === 0 ? "All sources" : ""}</span>
+                            </div>
+                            <div style={{ display: "flex", flexWrap: "wrap", gap: 12, alignItems: "center" }}>
+                              <label style={{ fontSize: 13, fontWeight: 500 }}>Minimum score:&nbsp;
+                                <input type="number" min={0} max={100} value={editScore} onChange={e => setEditScore(Number(e.target.value))} style={{ width: 70, padding: "6px 8px" }} />
+                              </label>
                             <button
                               onClick={() => saveCats(s.id)}
                               disabled={savingId === s.id || editCats.length === 0}
@@ -365,6 +390,7 @@ export default function AdminSubscribersPage() {
                             >
                               {savingId === s.id ? "Saving…" : "Save"}
                             </button>
+                            </div>
                           </div>
                         </td>
                       </tr>

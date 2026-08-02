@@ -12,8 +12,8 @@
  *   Example: NOTIFIER_ORDER=ntfy,telegram,discord
  *
  * Strategy (NOTIFIER_STRATEGY env var):
- *   "first-success" — send via first working channel, stop (default)
- *   "all"           — send via ALL configured channels simultaneously
+ *   "first-success" â€” send via first working channel, stop (default)
+ *   "all"           â€” send via ALL configured channels simultaneously
  */
 
 import type { Notifier, NotifyResult } from "./types";
@@ -38,7 +38,7 @@ const SUBSCRIBER_CHANNEL_BY_NOTIFIER_ID: Record<string, SubscriberChannel> = {
   ntfy:     "ntfy",
 };
 
-// ── Cooldown store (in-memory + persisted to KV) ──────────────────────────────
+// â”€â”€ Cooldown store (in-memory + persisted to KV) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const COOLDOWN_KEY = "alert_cooldowns_v2";
 let _cooldowns: Record<string, number> = {};
@@ -78,7 +78,7 @@ async function saveCooldowns(c: Record<string, number>): Promise<void> {
   }
 }
 
-// ── Manager ───────────────────────────────────────────────────────────────────
+// â”€â”€ Manager â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 export interface AlertRunSummary {
   totalAlerts: number;
@@ -119,10 +119,10 @@ export class NotifierManager {
   }
 
   /**
-   * Main entry point — called by /api/monitor
+   * Main entry point â€” called by /api/monitor
    * Applies cooldown, limits, and failover strategy.
    */
-  async notify(scored: ScoredArticle[], appUrl = ""): Promise<AlertRunSummary> {
+  async notify(scored: ScoredArticle[], appUrl = "", defaultMinScore = 65, maxPerRun = 5): Promise<AlertRunSummary> {
     const summary: AlertRunSummary = {
       totalAlerts: scored.length,
       sent: 0,
@@ -134,8 +134,7 @@ export class NotifierManager {
 
     const channels   = this.configured();
     const strategy   = process.env.NOTIFIER_STRATEGY ?? "all";
-    const maxPerRun  = Number(process.env.ALERT_MAX_PER_RUN ?? 3);
-    // Default raised from 360 (6h) to 10080 (7 days) — kept in sync with the
+    // Default raised from 360 (6h) to 10080 (7 days) â€” kept in sync with the
     // same env var's default in app/api/monitor/route.ts. See the comment
     // there: a short cooldown let the same old cached article re-alert every
     // few hours indefinitely.
@@ -143,7 +142,7 @@ export class NotifierManager {
     const now        = Date.now();
 
     if (channels.length === 0) {
-      console.warn("[notifier] No channels configured — set at least one notifier env var");
+      console.warn("[notifier] No channels configured â€” set at least one notifier env var");
       return summary;
     }
 
@@ -152,13 +151,9 @@ export class NotifierManager {
     const toSend: ScoredArticle[] = [];
 
     for (const sa of scored) {
-      if (toSend.length >= maxPerRun) {
-        summary.skipped++;
-        continue;
-      }
       const key = buildAlertKey(sa.article);
       if (now - (cooldowns[key] ?? 0) < cooldownMs) {
-        console.log(`[notifier] Cooldown: "${sa.article.headline.slice(0, 50)}…"`);
+        console.log(`[notifier] Cooldown: "${sa.article.headline.slice(0, 50)}â€¦"`);
         summary.skipped++;
         continue;
       }
@@ -170,22 +165,31 @@ export class NotifierManager {
       return summary;
     }
 
+    const articlesForChannel = (channel: Notifier) =>
+      SUBSCRIBER_CHANNEL_BY_NOTIFIER_ID[channel.id]
+        ? toSend
+        : toSend.filter(article => article.score >= defaultMinScore).slice(0, maxPerRun);
+    const deliveredKeys = new Set<string>();
+
     // Send via channels
     if (strategy === "all") {
       // Send to ALL configured channels in parallel
       const results = await Promise.allSettled(
-        channels.map(ch => ch.send(toSend, appUrl))
+        channels.map(ch => ch.send(articlesForChannel(ch), appUrl, { defaultMinScore, maxAlertsPerRun: maxPerRun }))
       );
       results.forEach((r, i) => {
         const result = r.status === "fulfilled"
           ? r.value
           : { channel: channels[i].name, success: false, recipients: 0, error: String((r as PromiseRejectedResult).reason) };
         summary.results.push(result);
-        if (result.success) summary.channels.push(result.channel);
+        if (result.success) {
+          summary.channels.push(result.channel);
+          articlesForChannel(channels[i]).forEach(article => deliveredKeys.add(buildAlertKey(article.article)));
+        }
       });
     } else {
       // "first-success" was designed for redundant fallback delivery to the
-      // SAME person (the site owner) across multiple methods — stop once
+      // SAME person (the site owner) across multiple methods â€” stop once
       // one works. But telegram/twilio/whatsapp can now also carry
       // dynamically self-registered subscribers (app/subscribe) who are
       // genuinely different people, not fallback paths for each other. If
@@ -208,11 +212,12 @@ export class NotifierManager {
       for (const ch of fallbackChannels) {
         try {
           console.log(`[notifier] Trying: ${ch.name}`);
-          const result = await ch.send(toSend, appUrl);
+          const result = await ch.send(articlesForChannel(ch), appUrl, { defaultMinScore, maxAlertsPerRun: maxPerRun });
           summary.results.push(result);
           if (result.success) {
-            console.log(`[notifier] ✅ Delivered via ${ch.name}`);
+            console.log(`[notifier] âœ… Delivered via ${ch.name}`);
             summary.channels.push(ch.name);
+            articlesForChannel(ch).forEach(article => deliveredKeys.add(buildAlertKey(article.article)));
             break;
           } else {
             console.warn(`[notifier] ${ch.name} returned failure: ${result.error}`);
@@ -228,10 +233,11 @@ export class NotifierManager {
       for (const ch of alwaysSendChannels) {
         try {
           console.log(`[notifier] Sending to subscriber channel: ${ch.name}`);
-          const result = await ch.send(toSend, appUrl);
+          const result = await ch.send(articlesForChannel(ch), appUrl, { defaultMinScore, maxAlertsPerRun: maxPerRun });
           summary.results.push(result);
           if (result.success) {
             summary.channels.push(ch.name);
+            articlesForChannel(ch).forEach(article => deliveredKeys.add(buildAlertKey(article.article)));
           } else {
             console.warn(`[notifier] ${ch.name} returned failure: ${result.error}`);
           }
@@ -247,13 +253,12 @@ export class NotifierManager {
     // Mark alerts as sent (update cooldowns)
     const delivered = summary.channels.length > 0;
     if (delivered) {
-      toSend.forEach(sa => {
-        const key = buildAlertKey(sa.article);
+      deliveredKeys.forEach(key => {
         cooldowns[key] = now;
         summary.deliveredAlertKeys.push(key);
       });
       await saveCooldowns(cooldowns);
-      summary.sent = toSend.length;
+      summary.sent = deliveredKeys.size;
     }
 
     // Clean up old cooldown entries (older than 7 days)
@@ -279,5 +284,4 @@ export function getNotifierManager(): NotifierManager {
   if (!_manager) _manager = new NotifierManager();
   return _manager;
 }
-
 

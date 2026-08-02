@@ -159,7 +159,7 @@ async function runMonitor(topic?: string, force = false) {
   // briefing, so current DHS/UFLPA articles could be visible but never alert.
   const libraryArticles = await loadArticleLibrary().catch(() => []);
   const monitorArticles = mergeMonitorArticles(briefing.articles, libraryArticles);
-  const scored = scoreAll(monitorArticles, alertSettings);
+  const scored = scoreAll(monitorArticles, { ...alertSettings, threshold: 0 });
   // A topic is a hard alert filter, not merely a hint to the refresh provider.
   // This prevents a DHS/UFLPA dispatch from paging unrelated Treasury/BIS news.
   const candidates = scored.filter(s =>
@@ -179,7 +179,6 @@ async function runMonitor(topic?: string, force = false) {
     } else {
       blockedKeys.push(key);
     }
-    if (newAlerts.length >= maxAlertsPerRun) break;
   }
 
   console.log(`[monitor] ${monitorArticles.length} articles - ${candidates.length} above threshold - ${newAlerts.length} new - ${blockedKeys.length} cooldown blocked${forceSend?" (FORCED)":""}`);
@@ -194,7 +193,7 @@ async function runMonitor(topic?: string, force = false) {
   // 4. Fire notifications only for new, link-verified alerts
   const manager = getNotifierManager();
   const notifyResult = verifiedAlerts.length > 0
-    ? await manager.notify(verifiedAlerts, appUrl)
+    ? await manager.notify(verifiedAlerts, appUrl, alertSettings.threshold, maxAlertsPerRun)
     : { sent: 0, skipped: 0, channels: [], results: [], totalAlerts: 0, deliveredAlertKeys: [] };
 
   // 5. Start cooldown only for articles a notification channel actually

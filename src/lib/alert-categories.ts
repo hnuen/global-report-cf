@@ -84,6 +84,8 @@ export function articlesForSections<T extends { article: { section?: string } }>
 export interface SectionRecipient {
   to: string;
   sections: string[] | null;
+  sourceGroups: string[] | null;
+  minAlertScore: number;
 }
 
 /**
@@ -94,17 +96,22 @@ export interface SectionRecipient {
  */
 export function mergeRecipients(
   staticTos: string[],
-  dynamic: { to: string; sections?: string[] }[]
+  dynamic: { to: string; sections?: string[]; sourceGroups?: string[]; minAlertScore?: number }[],
+  staticMinAlertScore = 0,
 ): SectionRecipient[] {
   const byTo = new Map<string, SectionRecipient>();
-  const add = (to: string, sections: string[] | null) => {
+  const add = (to: string, sections: string[] | null, sourceGroups: string[] | null = null, minAlertScore = staticMinAlertScore) => {
     if (!to) return;
     const existing = byTo.get(to);
-    if (!existing) { byTo.set(to, { to, sections }); return; }
-    if (existing.sections === null || sections === null) { byTo.set(to, { to, sections: null }); return; }
-    byTo.set(to, { to, sections: Array.from(new Set([...existing.sections, ...sections])) });
+    if (!existing) { byTo.set(to, { to, sections, sourceGroups, minAlertScore }); return; }
+    byTo.set(to, {
+      to,
+      sections: existing.sections === null || sections === null ? null : Array.from(new Set([...existing.sections, ...sections])),
+      sourceGroups: existing.sourceGroups === null || sourceGroups === null ? null : Array.from(new Set([...existing.sourceGroups, ...sourceGroups])),
+      minAlertScore: Math.min(existing.minAlertScore, minAlertScore),
+    });
   };
   for (const to of staticTos) add(to, null); // env-var recipients → all categories
-  for (const d of dynamic) add(d.to, d.sections && d.sections.length ? d.sections : null);
+  for (const d of dynamic) add(d.to, d.sections?.length ? d.sections : null, d.sourceGroups?.length ? d.sourceGroups : null, Number.isFinite(d.minAlertScore) ? Number(d.minAlertScore) : 0);
   return Array.from(byTo.values());
 }

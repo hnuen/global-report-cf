@@ -10,6 +10,7 @@ import { mergeDirectWithAiSupplement } from "../src/lib/source-merge.ts";
 import type { Briefing } from "../src/lib/types.ts";
 import { articleMatchesAlertTopic, alertSourceLabel, cleanAlertText } from "../src/lib/alert-topic.ts";
 import { mergeMonitorArticles } from "../src/lib/monitor-articles.ts";
+import { articlesForSubscriber, sourceGroupForArticle, validateSourceGroups } from "../src/lib/alert-sources.ts";
 
 function briefing(articles: Article[]): Briefing {
   return { lastUpdated: "test", articles, sidebar: {} as Briefing["sidebar"] };
@@ -166,6 +167,15 @@ test("admin alert settings are strictly bounded", () => {
   });
   assert.throws(() => validateAlertSettings({ threshold: -1, maxAgeHours: 48, maxAlertsPerRun: 4 }));
   assert.throws(() => validateAlertSettings({ threshold: 70, maxAgeHours: 999, maxAlertsPerRun: 4 }));
+});
+
+test("subscriber policy independently filters source groups and score", () => {
+  const treasury = scoreArticle({ ...testArticle(201, "Treasury sanctions action", "https://home.treasury.gov/news/press-releases/sb0600"), date: new Date().toISOString() }, { threshold: 0, maxAgeHours: null });
+  const dhs = scoreArticle({ ...testArticle(202, "DHS UFLPA Entity List action", "https://www.dhs.gov/news/2026/08/01/uflpa-action"), date: new Date().toISOString(), category: "Entity List" }, { threshold: 0, maxAgeHours: null });
+  const selected = articlesForSubscriber([treasury, dhs], { sections: ["sanctions"], sourceGroups: ["dhs"], minAlertScore: 90 });
+  assert.deepEqual(selected.map(item => item.article.id), [202]);
+  assert.equal(sourceGroupForArticle(treasury.article), "treasury");
+  assert.deepEqual(validateSourceGroups(["dhs", "unknown", "dhs"]), ["dhs"]);
 });
 
 test("Gemini only appends new discoveries and marks them display-only", () => {
