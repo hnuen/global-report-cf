@@ -3,7 +3,8 @@ import { readFileSync } from "node:fs";
 import test from "node:test";
 
 import { applySuccessfulDeliveryCooldowns } from "../src/lib/alert-delivery.ts";
-import { scoreArticle } from "../src/lib/alert-scorer.ts";
+import { isRecentEnough, scoreArticle } from "../src/lib/alert-scorer.ts";
+import { validateAlertSettings } from "../src/lib/alert-settings.ts";
 import type { Article } from "../src/lib/types.ts";
 import { mergeDirectWithAiSupplement } from "../src/lib/source-merge.ts";
 import type { Briefing } from "../src/lib/types.ts";
@@ -68,14 +69,14 @@ test("monitor includes current articles that are visible through the persistent 
   currentDhs.body = ["DHS announced UFLPA Entity List additions over forced labor concerns."];
 
   const merged = mergeMonitorArticles([cachedPenalty], [currentDhs]);
-  const result = merged.map(scoreArticle).find(item => item.article.sourceUrl === currentDhs.sourceUrl);
+  const result = merged.map(article => scoreArticle(article)).find(item => item.article.sourceUrl === currentDhs.sourceUrl);
 
   assert.equal(merged.length, 2);
   assert.equal(result?.shouldAlert, true);
 });
 
 test("ntfy presentation uses the article agency and repairs corrupted punctuation", () => {
-  const treasury = testArticle(2, "• Treasury action", "https://home.treasury.gov/news/press-releases/sb0583");
+  const treasury = testArticle(2, "Ã¢â‚¬Â¢ Treasury action", "https://home.treasury.gov/news/press-releases/sb0583");
   treasury.source = "Treasury Press Release SB0536";
 
   assert.equal(alertSourceLabel(treasury), "U.S. Treasury / News");
@@ -128,6 +129,7 @@ test("a directly verified trusted-source discovery replaces the AI provenance", 
     "https://www.dhs.gov/news/2026/07/31/dhs-announces-addition-43-companies-uflpa-entity-list",
   );
   direct.category = "Entity List";
+  direct.date = new Date().toISOString();
   direct.body = ["DHS announced new UFLPA Entity List additions."];
   const ai = { ...direct, id: 2, headline: "AI summary of the DHS action", aiGenerated: true };
 
@@ -140,6 +142,32 @@ test("a directly verified trusted-source discovery replaces the AI provenance", 
   assert.equal(scoreArticle(promoted).shouldAlert, true);
 });
 
+test("old and unparseable publication dates fail the recency gate", () => {
+  assert.equal(isRecentEnough(new Date(Date.now() - 72 * 60 * 60 * 1000).toISOString(), 48), false);
+  assert.equal(isRecentEnough("date unavailable", 48), false);
+});
+
+test("admin threshold changes sensitivity but cannot bypass safety gates", () => {
+  const current = testArticle(88, "Sanctions update", "https://www.reuters.com/world/sanctions-update");
+  current.date = new Date().toISOString();
+  current.impact = "low";
+  const strict = scoreArticle(current, { threshold: 90, maxAgeHours: null });
+  const flexible = scoreArticle(current, { threshold: 0, maxAgeHours: null });
+  assert.equal(strict.shouldAlert, false);
+  assert.equal(flexible.shouldAlert, true);
+
+  current.aiGenerated = true;
+  assert.equal(scoreArticle(current, { threshold: 0, maxAgeHours: 168 }).shouldAlert, false);
+});
+
+test("admin alert settings are strictly bounded", () => {
+  assert.deepEqual(validateAlertSettings({ threshold: 70, maxAgeHours: null, maxAlertsPerRun: 4 }), {
+    threshold: 70, maxAgeHours: null, maxAlertsPerRun: 4,
+  });
+  assert.throws(() => validateAlertSettings({ threshold: -1, maxAgeHours: 48, maxAlertsPerRun: 4 }));
+  assert.throws(() => validateAlertSettings({ threshold: 70, maxAgeHours: 999, maxAlertsPerRun: 4 }));
+});
+
 test("Gemini only appends new discoveries and marks them display-only", () => {
   const direct = testArticle(1, "Direct article", "https://agency.gov/news/direct");
   const discovered = testArticle(1, "Additional report", "https://reuters.com/world/additional-report");
@@ -150,8 +178,6 @@ test("Gemini only appends new discoveries and marks them display-only", () => {
   assert.equal(merged.articles[1].aiGenerated, true);
   assert.notEqual(merged.articles[1].id, direct.id);
 });
-
-
 
 test("direct trusted-source registry includes the requested U.S. government publishers", () => {
   const registry = readFileSync(new URL("../src/lib/official-sources.ts", import.meta.url), "utf8");
@@ -166,3 +192,4 @@ test("direct trusted-source registry includes the requested U.S. government publ
     assert.ok(registry.includes(expected), `missing trusted source: ${expected}`);
   }
 });
+
