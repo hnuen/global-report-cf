@@ -1,6 +1,6 @@
 export const dynamic = "force-dynamic";
 /**
- * /api/monitor Ã¢â‚¬â€ hourly monitor endpoint
+ * /api/monitor — hourly monitor endpoint
  * Fetches fresh news, scores articles, fires alerts via all configured channels.
  */
 
@@ -26,7 +26,7 @@ function isAuthorised(req: NextRequest): boolean {
   );
 }
 
-// Ã¢â€â‚¬Ã¢â€â‚¬ Redis helpers for alert deduplication Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
+// ── Redis helpers for alert deduplication ─────────────────────────────────────
 async function wasAlerted(key: string): Promise<boolean> {
   const u = process.env.UPSTASH_REDIS_REST_URL;
   const t = process.env.UPSTASH_REDIS_REST_TOKEN;
@@ -52,16 +52,16 @@ async function markAlerted(key: string, cooldownMinutes: number): Promise<void> 
   } catch {}
 }
 
-// Ã¢â€â‚¬Ã¢â€â‚¬ URL pre-flight check Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
+// ── URL pre-flight check ──────────────────────────────────────────────────────
 // Domains where HEAD checks are blocked at the network level (not domain trust).
-// Government and major news domains are NOT skipped Ã¢â‚¬â€ we still HEAD-check their
+// Government and major news domains are NOT skipped — we still HEAD-check their
 // URLs so that AI-hallucinated paths on real domains (e.g. bis.doc.gov/fake)
 // get caught as 404s. Only domains that actively block HEAD/GET from cloud IPs
 // (causing false-negative drops) go here.
 const HEAD_BLOCKED_DOMAINS = [
-  "aljazeera.com",   // AJ blocks cloud-origin HEAD checks Ã¢â‚¬â€ returns 403/timeout
+  "aljazeera.com",   // AJ blocks cloud-origin HEAD checks — returns 403/timeout
   "treasury.gov",    // ofac.treasury.gov / home.treasury.gov block Cloudflare IPs
-                     // (the whole reason OFAC data is read from a GitHub cache) Ã¢â‚¬â€
+                     // (the whole reason OFAC data is read from a GitHub cache) —
                      // a HEAD from the CF Worker always fails, which would wrongly
                      // drop every OFAC alert now that unreachable alerts are dropped.
 ];
@@ -72,7 +72,7 @@ function isHeadBlocked(url: string): boolean {
     if (HEAD_BLOCKED_DOMAINS.some(d => host === d || host.endsWith("." + d))) return true;
     // Government / intergovernmental domains are authoritative and several
     // block cloud-origin requests. A HEAD failure from the CF Worker is a
-    // false negative, not evidence the notice is fake Ã¢â‚¬â€ never drop these.
+    // false negative, not evidence the notice is fake — never drop these.
     // (LLM-hallucinated gov URLs are already excluded upstream: aiGenerated
     // articles never alert, per alert-scorer.ts.)
     return (
@@ -87,7 +87,7 @@ function isHeadBlocked(url: string): boolean {
 async function isUrlReachable(url: string): Promise<boolean> {
   if (!url || url === "#") return false;
   // Skip check only for domains that block cloud-origin requests (not domain trust).
-  // All other domains Ã¢â‚¬â€ including .gov Ã¢â‚¬â€ are checked so fake paths are caught.
+  // All other domains — including .gov — are checked so fake paths are caught.
   if (isHeadBlocked(url)) return true;
   try {
     const controller = new AbortController();
@@ -105,7 +105,7 @@ async function isUrlReachable(url: string): Promise<boolean> {
 
 /**
  * DROP alert candidates whose sourceUrl is missing or unreachable.
- * Previously this only STRIPPED the broken URL and still sent the alert Ã¢â‚¬â€
+ * Previously this only STRIPPED the broken URL and still sent the alert —
  * which is exactly how hallucinated articles reached subscribers as alerts
  * with no link to a government or media source. An alert we can't back with
  * a working, trusted link should not be sent at all: the article stays

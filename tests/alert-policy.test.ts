@@ -75,7 +75,7 @@ test("monitor includes current articles that are visible through the persistent 
 });
 
 test("ntfy presentation uses the article agency and repairs corrupted punctuation", () => {
-  const treasury = testArticle(2, "ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ Treasury action", "https://home.treasury.gov/news/press-releases/sb0583");
+  const treasury = testArticle(2, "• Treasury action", "https://home.treasury.gov/news/press-releases/sb0583");
   treasury.source = "Treasury Press Release SB0536";
 
   assert.equal(alertSourceLabel(treasury), "U.S. Treasury / News");

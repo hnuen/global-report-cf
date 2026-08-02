@@ -26,10 +26,10 @@ export function articleMatchesAlertTopic(article: Article, topic?: string): bool
 
 export function cleanAlertText(value: string): string {
   return value
-    .replaceAll("ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â", "â€”")
-    .replaceAll("ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢", "â€¢")
-    .replaceAll("ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦", "â€¦")
-    .replace(/^\s*[â€¢*-]\s*/, "")
+    .replaceAll("Ã¢â‚¬â€", "—")
+    .replaceAll("Ã¢â‚¬Â¢", "•")
+    .replaceAll("Ã¢â‚¬Â¦", "…")
+    .replace(/^\s*[•*-]\s*/, "")
     .trim();
 }
 

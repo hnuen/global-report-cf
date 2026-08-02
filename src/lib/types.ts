@@ -1,4 +1,4 @@
-// Ã¢â€â‚¬Ã¢â€â‚¬ Briefing data types Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
+// ── Briefing data types ───────────────────────────────────────────────────────
 
 export type Section = "sanctions" | "economics" | "regions" | "occ" | "penalties" | "bis";
 export type Impact  = "high" | "medium" | "low";
@@ -32,11 +32,11 @@ export interface Briefing {
   // local-analyzer.ts, background-refresh route, refresh-briefing.mjs). The
   // free-form `lastUpdated` string is built independently by each of those
   // paths in whatever timezone/format that path happened to use (some UTC,
-  // some America/New_York) Ã¢â‚¬â€ which is why the displayed banner used to
+  // some America/New_York) — which is why the displayed banner used to
   // visibly change format/timezone depending on which path last wrote the
   // briefing. This field is the single unambiguous source of truth the
   // client formats in the *viewer's own* local timezone via
-  // toLocaleString() Ã¢â‚¬â€ correct for any visitor, not just one hardcoded zone.
+  // toLocaleString() — correct for any visitor, not just one hardcoded zone.
   // Optional for backward compatibility with already-cached briefings saved
   // before this field existed.
   lastUpdatedIso?: string;
@@ -44,7 +44,7 @@ export interface Briefing {
   sidebar: Record<Section, SidebarSection>;
 }
 
-// Ã¢â€â‚¬Ã¢â€â‚¬ Platform health / failover types Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
+// ── Platform health / failover types ─────────────────────────────────────────
 
 export type PlatformId = "upstash" | "cloudflare-kv" | "memory";
 

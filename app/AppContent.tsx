@@ -226,7 +226,7 @@ body{background:#ffffff;overflow-x:hidden}
 .fincen-stats{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:14px;padding:10px 14px;background:#f9fafb;border-radius:6px;border:1px solid #e5e7eb}
 .fincen-stat{font-size:12px;color:#6b7280;font-family:var(--font-mono)}
 .fincen-stat b{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:#cc0000;display:block}
-/* Key-figures compact strip â€” mobile only, hidden on desktop */
+/* Key-figures compact strip — mobile only, hidden on desktop */
 .kf-strip{display:none;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;
   gap:0;border-bottom:1px solid #e5e7eb;background:#fafafa;padding:0 4px;margin-bottom:10px}
 .kf-strip::-webkit-scrollbar{display:none}
@@ -253,10 +253,10 @@ interface Briefing {
 
 // The backend has several independent code paths that each stamp
 // `lastUpdated` in whatever format/timezone that path happens to use (UTC,
-// US Eastern, etc â€” see src/lib/types.ts's lastUpdatedIso comment for the
+// US Eastern, etc — see src/lib/types.ts's lastUpdatedIso comment for the
 // full story). That's why the displayed banner used to visibly change
 // format/timezone from refresh to refresh. `lastUpdatedIso`, when present,
-// is an unambiguous UTC instant â€” render it in *this browser's* local
+// is an unambiguous UTC instant — render it in *this browser's* local
 // timezone so the display is always correct for whoever is looking at it,
 // and always consistent regardless of which backend path produced it.
 // Falls back to the raw legacy string for already-cached briefings saved
@@ -264,8 +264,8 @@ interface Briefing {
 function extractUpdatedTag(raw: string): string {
   const bracket = raw.match(/\[(Gemini\/Actions|Gemini|Structured\/Actions)\]\s*$/);
   const official = /Official government sources/i.test(raw);
-  if (official && bracket) return `â€” Official government sources ${bracket[0]}`;
-  if (official) return "â€” Official government sources";
+  if (official && bracket) return `— Official government sources ${bracket[0]}`;
+  if (official) return "— Official government sources";
   if (bracket) return bracket[0];
   return "";
 }
@@ -276,7 +276,7 @@ function formatLastUpdated(raw: string, iso?: string): string {
   const datePart = d.toLocaleDateString(undefined, { month: "long", day: "numeric", year: "numeric" });
   const timePart = d.toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit" });
   const tag = extractUpdatedTag(raw);
-  return tag ? `${datePart} â€” ${timePart} ${tag}` : `${datePart} â€” ${timePart}`;
+  return tag ? `${datePart} — ${timePart} ${tag}` : `${datePart} — ${timePart}`;
 }
 interface PenaltyRecord {
   id: string; year: number; date: string; institution: string; type: string;
@@ -291,7 +291,7 @@ interface FinCENPenalty {
 
 export const SECTIONS = ["all","sanctions","economics","regions","occ","penalties","bis"];
 
-// Static sidebar data â€” always shown regardless of LLM status
+// Static sidebar data — always shown regardless of LLM status
 const STATIC_SIDEBAR: Record<string, { watchlist: {entity:string;type:string;note:string;url?:string}[]; keyFigures: {label:string;value:string}[] }> = {
   sanctions: {
     keyFigures: [
@@ -301,10 +301,10 @@ const STATIC_SIDEBAR: Record<string, { watchlist: {entity:string;type:string;not
       {label:"Economic Fury Iran actions since Feb 2025", value:"1,000+"},
     ],
     watchlist: [
-      {entity:"EU Council Sanctions (consilium.europa.eu)", type:"EU Official Source", note:"All EU restrictive measures â€” press releases + RSS", url:"https://www.consilium.europa.eu/en/press/press-releases/?keyword=sanctions"},
-      {entity:"UK OFSI â€” Financial Sanctions", type:"UK Official Source", note:"OFSI enforcement, penalties, guidance", url:"https://www.gov.uk/government/organisations/office-of-financial-sanctions-implementation"},
-      {entity:"Russia GL 134C Wind-Down", type:"General Licence", note:"Expires June 17 â€” OFAC general licences page", url:"https://ofac.treasury.gov/recent-actions/general-licenses"},
-      {entity:"Adani $275M Settlement", type:"OFAC Enforcement", note:"Iran LPG â€” largest non-US company OFAC penalty 2026", url:"https://ofac.treasury.gov/recent-actions/20260518"},
+      {entity:"EU Council Sanctions (consilium.europa.eu)", type:"EU Official Source", note:"All EU restrictive measures — press releases + RSS", url:"https://www.consilium.europa.eu/en/press/press-releases/?keyword=sanctions"},
+      {entity:"UK OFSI — Financial Sanctions", type:"UK Official Source", note:"OFSI enforcement, penalties, guidance", url:"https://www.gov.uk/government/organisations/office-of-financial-sanctions-implementation"},
+      {entity:"Russia GL 134C Wind-Down", type:"General Licence", note:"Expires June 17 — OFAC general licences page", url:"https://ofac.treasury.gov/recent-actions/general-licenses"},
+      {entity:"Adani $275M Settlement", type:"OFAC Enforcement", note:"Iran LPG — largest non-US company OFAC penalty 2026", url:"https://ofac.treasury.gov/recent-actions/20260518"},
       {entity:"UN SC Sanctions Committees", type:"UN Official", note:"All active UN sanctions regimes", url:"https://www.un.org/securitycouncil/sanctions/information"},
     ]
   },
@@ -316,9 +316,9 @@ const STATIC_SIDEBAR: Record<string, { watchlist: {entity:string;type:string;not
       {label:"IEA Q2 demand contraction", value:"1.5 mbpd"},
     ],
     watchlist: [
-      {entity:"Kevin Warsh â€” Fed Chair", type:"Leadership", note:"Confirmed â€” Powell term expired May 15, 2026", url:"https://www.federalreserve.gov/newsevents/pressreleases.htm"},
+      {entity:"Kevin Warsh — Fed Chair", type:"Leadership", note:"Confirmed — Powell term expired May 15, 2026", url:"https://www.federalreserve.gov/newsevents/pressreleases.htm"},
       {entity:"Strait of Hormuz", type:"Geopolitics", note:"Effective closure driving global energy price shock", url:"https://www.iea.org/topics/oil-market-report"},
-      {entity:"Germany Sanctions Act", type:"Regulatory", note:"In force Feb 6 â€” fines up to â‚¬40M, circumvention criminal", url:"https://www.nortonrosefulbright.com/en/knowledge/publications/70ad8666/spotlight-on-sanctions"},
+      {entity:"Germany Sanctions Act", type:"Regulatory", note:"In force Feb 6 — fines up to €40M, circumvention criminal", url:"https://www.nortonrosefulbright.com/en/knowledge/publications/70ad8666/spotlight-on-sanctions"},
     ]
   },
   regions: {
@@ -327,7 +327,7 @@ const STATIC_SIDEBAR: Record<string, { watchlist: {entity:string;type:string;not
       {label:"U.S. Christians (Pew 2026)", value:"62%"},
     ],
     watchlist: [
-      {entity:"Magnifica Humanitas", type:"Encyclical", note:"Leo XIV first encyclical â€” AI + social doctrine", url:"https://www.vaticannews.va/en/pope.html"},
+      {entity:"Magnifica Humanitas", type:"Encyclical", note:"Leo XIV first encyclical — AI + social doctrine", url:"https://www.vaticannews.va/en/pope.html"},
       {entity:"Lebanon Sectarian Tensions", type:"Security", note:"Hizballah designations reignite fault lines May 2026", url:"https://home.treasury.gov/news/press-releases/sb0505"},
     ]
   },
@@ -339,7 +339,7 @@ const STATIC_SIDEBAR: Record<string, { watchlist: {entity:string;type:string;not
     watchlist: [
       {entity:"Federal Savings Bank Chicago", type:"Consent Order", note:"Restitution consultant required within 90 days", url:"https://www.occ.gov/news-events/newsroom/news-issuances-by-year/news-releases/2026-news-releases.html"},
       {entity:"AI Model Risk", type:"Supervisory Priority", note:"OCC top examination priority for 2026", url:"https://www.occ.gov/news-events/newsroom/news-issuances-by-year/news-releases/2026-news-releases.html"},
-      {entity:"GENIUS Act Stablecoin Rule", type:"Proposed Rule", note:"OCC rulemaking â€” comment period open", url:"https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-9.html"},
+      {entity:"GENIUS Act Stablecoin Rule", type:"Proposed Rule", note:"OCC rulemaking — comment period open", url:"https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-9.html"},
     ]
   },
   penalties: {
@@ -352,10 +352,10 @@ const STATIC_SIDEBAR: Record<string, { watchlist: {entity:string;type:string;not
       {label:"Total OFAC 2023 (Binance)", value:"$968.6M"},
     ],
     watchlist: [
-      {entity:"OFAC Self-Disclosure Portal", type:"Process Change", note:"Launched Feb 6, 2026 â€” now required for all VSDs", url:"https://ofac.treasury.gov/civil-penalties-and-enforcement-information"},
+      {entity:"OFAC Self-Disclosure Portal", type:"Process Change", note:"Launched Feb 6, 2026 — now required for all VSDs", url:"https://ofac.treasury.gov/civil-penalties-and-enforcement-information"},
       {entity:"Adani Enterprises $275M", type:"2026 Settlement", note:"Iran LPG via shadow fleet, EGREGIOUS, non-VSD", url:"https://ofac.treasury.gov/recent-actions/20260518"},
       {entity:"Canaccord Genuity $80M", type:"2026 BSA Record", note:"Largest broker-dealer BSA penalty ever", url:"https://www.fincen.gov/news/news-releases"},
-      {entity:"OFAC Civil Penalties", type:"Official Source", note:"All years: 2003â€“2026", url:"https://ofac.treasury.gov/civil-penalties-and-enforcement-information"},
+      {entity:"OFAC Civil Penalties", type:"Official Source", note:"All years: 2003–2026", url:"https://ofac.treasury.gov/civil-penalties-and-enforcement-information"},
       {entity:"FinCEN Enforcement Actions", type:"Official Source", note:"fincen.gov/news/enforcement-actions", url:"https://www.fincen.gov/news/enforcement-actions"},
     ]
   },
@@ -367,8 +367,8 @@ const STATIC_SIDEBAR: Record<string, { watchlist: {entity:string;type:string;not
     ],
     watchlist: [
       {entity:"Applied Materials $252.5M", type:"BIS Enforcement", note:"Routing via Korea no defence; 2-yr annual audits", url:"https://www.bis.gov/press-releases"},
-      {entity:"50% Affiliates Rule", type:"BIS Policy", note:"Entity List subsidiaries auto-restricted â€” strict liability", url:"https://www.bis.gov/licensing/policy-guidance"},
-      {entity:"Semiconductor Export Controls", type:"Priority", note:"AI chips, quantum, dual-use â€” enhanced diversion scrutiny", url:"https://www.bis.gov/export-controls"},
+      {entity:"50% Affiliates Rule", type:"BIS Policy", note:"Entity List subsidiaries auto-restricted — strict liability", url:"https://www.bis.gov/licensing/policy-guidance"},
+      {entity:"Semiconductor Export Controls", type:"Priority", note:"AI chips, quantum, dual-use — enhanced diversion scrutiny", url:"https://www.bis.gov/export-controls"},
     ]
   },
 };
@@ -404,7 +404,7 @@ const parseDate = (d:string): number => {
     if (mdy && M[mdy[1].toLowerCase()] !== undefined)
       return new Date(+mdy[3], M[mdy[1].toLowerCase()], +mdy[2]).getTime();
     // "March 6, 2026" format already handled above
-    // "May 2026" â€” month year only
+    // "May 2026" — month year only
     const my = d.match(/^(\w+)\s+(\d{4})$/i);
     if (my && M[my[1].toLowerCase()] !== undefined)
       return new Date(+my[2], M[my[1].toLowerCase()], 1).getTime();
@@ -421,7 +421,7 @@ const isOFACArticle = (a: Article) =>
     (a.source||"" ).includes(p) || (a.sourceUrl||"").includes("ofac.treasury.gov") || (a.sourceUrl||"").includes("home.treasury.gov")
   );
 
-// Decode HTML entities (&#39; â†’ ', &amp; â†’ &, etc.)
+// Decode HTML entities (&#39; → ', &amp; → &, etc.)
 const decodeEntities = (s: string): string => {
   if (!s || !s.includes("&")) return s;
   return s
@@ -437,7 +437,7 @@ const decodeEntities = (s: string): string => {
 
 // Explicit keyword sets for each sanctions region tab.
 // Match is checked against BOTH article.region (from server) AND article.headline.
-// Keep region lists TIGHT â€” only keywords that unambiguously belong to that region.
+// Keep region lists TIGHT — only keywords that unambiguously belong to that region.
 const REGION_MATCH: Record<string, string[]> = {
   // US program / country-specific OFAC programs
   "Iran":             ["iran", "irgc", "economic fury", "tehran", "persian"],
@@ -445,25 +445,25 @@ const REGION_MATCH: Record<string, string[]> = {
   "Russia":           ["russia", "ukraine", "rosneft", "lukoil", "kremlin", "moscow", "zelensky", "zelenskyy"],
   "Cuba":             ["cuba", "gaesa", "havana", "cuban"],
   "Venezuela":        ["venezuela", "maduro", "pdvsa", "caracas", "venezuelan", "venezuela sanctions"],
-  // European bodies â€” exclude UK (not in EU post-Brexit)
+  // European bodies — exclude UK (not in EU post-Brexit)
   "EU / Europe":      ["eu / europe", "eu council", "consilium.europa.eu", "european commission",
                        "european union", "eu sanctions", "eu restrictive", "balkans", "eu external action"],
   // UK bodies only
   "UK":               ["uk", " / uk", "united kingdom", "ofsi", "hm treasury", "british",
                        "britain", "london", "gov.uk"],
-  // China / Hong Kong â€” specific programs & keywords
+  // China / Hong Kong — specific programs & keywords
   "China / HK":       ["china / hk", "china / hong kong", "hong kong", "xinjiang", "ccmc",
                        "uyghur", "chinese military", "caatsa china", "cmic", "prc export",
                        "beijing chip", "huawei", "smic", "byd sanction", "china sanction"],
-  // Middle East & Africa â€” explicit country list, no Iran (has own tab)
+  // Middle East & Africa — explicit country list, no Iran (has own tab)
   "MEA":              ["mea", "middle east", "iraq", "syria", "lebanon", "israel", "gaza",
                        "west bank", "yemen", "sudan", "somalia", "libya", "mali", "ethiopia",
                        "congo", "drc", "south sudan", "caf", "central african",
                        "hizballah", "hezbollah", "hamas", "al-shabaab"],
-  // India & Pakistan â€” bilateral + regional
+  // India & Pakistan — bilateral + regional
   "India / Pakistan": ["india", "pakistan", "india / pakistan", "new delhi", "islamabad",
                        "karachi", "lahore", "balochistan", "kashmir"],
-  // Southeast Asia â€” explicit country list
+  // Southeast Asia — explicit country list
   "SEA":              ["sea", "southeast asia", "myanmar", "burma", "vietnam", "thailand",
                        "singapore", "malaysia", "philippines", "indonesia", "cambodia",
                        "laos", "brunei", "timor"],
@@ -508,7 +508,7 @@ const articleMatchesRegion = (a: Article, reg: string): boolean => {
 
   const keywords = REGION_MATCH[reg] || [reg.toLowerCase()];
 
-  // For China / HK: require at least one specific China/HK keyword â€” exclude Russia/Iran hits
+  // For China / HK: require at least one specific China/HK keyword — exclude Russia/Iran hits
   if (reg === "China / HK") {
     const chinaSpecific = ["china", "hong kong", "hk", "xinjiang", "ccmc", "uyghur",
                            "chinese", "prc", "huawei", "smic", "cmic", "beijing"];
@@ -527,7 +527,7 @@ const filterArticles = (articles:Article[], sec:string, reg:string) => {
   let result = reg === "All" ? pool : pool.filter(a => articleMatchesRegion(a, reg));
   // Sort newest first
   result.sort((a,b) => parseDate(b.date) - parseDate(a.date));
-  // Pin top 3 OFAC/Treasury articles at the top (for any region â€” US sanctions are always relevant)
+  // Pin top 3 OFAC/Treasury articles at the top (for any region — US sanctions are always relevant)
   const ofacPin = result.filter(isOFACArticle).slice(0, 3);
   if (ofacPin.length > 0) {
     const ofacIds = new Set(ofacPin.map(a => a.sourceUrl || a.headline));
@@ -543,7 +543,7 @@ const filterArticlesBySearch = (articles:Article[], sec:string, q:string, dateFr
 
     // Date range filter
     if (dateFrom || dateTo) {
-      // Parse article date â€” try to extract a date from the string
+      // Parse article date — try to extract a date from the string
       const articleDateStr = a.date;
       const articleDate = new Date(articleDateStr);
       if (!isNaN(articleDate.getTime())) {
@@ -599,7 +599,7 @@ export default function GlobalMonitor() {
   const [globalSearching, setGlobalSearching] = useState(false);
   const [globalError, setGlobalError]   = useState("");
   const [showGlobalSearch, setShowGlobalSearch] = useState(false);
-  // Tab search fallback â€” live web search when no local results found
+  // Tab search fallback — live web search when no local results found
   const [ofacProgram, setOfacProgram] = useState<string>("");
   const [ofacProgramChecking, setOfacProgramChecking] = useState(false);
   const [ofacProgramUpdate, setOfacProgramUpdate] = useState<{found:boolean;results:any[];checkedAt:string}|null>(null);
@@ -608,7 +608,7 @@ export default function GlobalMonitor() {
   const [ofacOverride, setOfacOverride] = useState<any>(null);
   const [ofacApplying, setOfacApplying] = useState(false);
 
-  // Multi-batch background refresh â€” groups 2/3/4 fire at t=+3min/+6min/+9min
+  // Multi-batch background refresh — groups 2/3/4 fire at t=+3min/+6min/+9min
   const [bgRefreshCountdown, setBgRefreshCountdown] = useState(0); // seconds to NEXT batch
   const [bgRefreshNextGroup, setBgRefreshNextGroup] = useState(0); // 0 = none pending
   const bgTimerIdsRef  = useRef<ReturnType<typeof setTimeout>[]>([]);
@@ -625,7 +625,7 @@ export default function GlobalMonitor() {
     setMobileVisibleCount(15);
   }, [section, region, sanQ, sanOn, data?.lastUpdated]);
 
-  // Silent background auto-refresh â€” re-fetches briefing every 30 min.
+  // Silent background auto-refresh — re-fetches briefing every 30 min.
   // Only updates if new data has more articles (> 50) and a newer timestamp.
   const AUTO_REFRESH_MS = 30 * 60 * 1000; // 30 minutes
 
@@ -637,7 +637,7 @@ export default function GlobalMonitor() {
           if (!prev) return fresh;
           const freshCount = fresh?.articles?.length ?? 0;
           if (freshCount >= 5 && fresh.lastUpdated !== prev.lastUpdated) {
-            console.log(`[auto-refresh] New briefing detected â€” ${freshCount} articles`);
+            console.log(`[auto-refresh] New briefing detected — ${freshCount} articles`);
             return fresh;
           }
           return prev;
@@ -688,7 +688,7 @@ export default function GlobalMonitor() {
     const previousUpdated = data?.lastUpdated;
     try {
       // Fire GitHub Actions workflow in background (Gemini + full OFAC scrape, ~2-3 min)
-      // Don't await â€” it runs async while trigger-refresh handles the immediate fast path
+      // Don't await — it runs async while trigger-refresh handles the immediate fast path
       fetch("/api/trigger-github-refresh", { method: "POST" }).catch(() => {});
 
       const res = await fetch("/api/trigger-refresh", {
@@ -699,7 +699,7 @@ export default function GlobalMonitor() {
       const result = await res.json().catch(() => ({}));
       if (!res.ok || !result.ok) throw new Error(result.error || `HTTP ${res.status}`);
       setRefreshQueued(true);
-      // Poll for the new briefing â€” trigger-refresh already saved to Redis before returning,
+      // Poll for the new briefing — trigger-refresh already saved to Redis before returning,
       // so first check is immediate (1s), then every 3s for up to 45s.
       let detected = false;
       for (let i = 0; i < 15; i++) {
@@ -715,7 +715,7 @@ export default function GlobalMonitor() {
         } catch { /* keep polling */ }
       }
       // If lastUpdated didn't change (same-minute refresh), force one final fetch.
-      // DO NOT window.location.reload() â€” that resets the active section to "all".
+      // DO NOT window.location.reload() — that resets the active section to "all".
       if (!detected) {
         try {
           const finalRes = await fetch(`/api/news?t=${Date.now()}`, { cache: "no-store" });
@@ -723,7 +723,7 @@ export default function GlobalMonitor() {
           if (finalData?.articles?.length) { setData(finalData); setExpanded({}); }
         } catch { /* ignore */ }
       }
-      // Multi-batch background refresh â€” groups 2/3/4 at t=+3min, +6min, +9min
+      // Multi-batch background refresh — groups 2/3/4 at t=+3min, +6min, +9min
       // Each group fetches its own source slice and merges into Redis without overwriting.
       bgTimerIdsRef.current.forEach(clearTimeout);
       bgTimerIdsRef.current = [];
@@ -765,7 +765,7 @@ export default function GlobalMonitor() {
             body: JSON.stringify({ group: groupNum, section }),
           });
           const bgData = await bgRes.json().catch(() => ({}));
-          console.log(`[bg-refresh] Group ${groupNum} done â€” ${bgData.newArticles ?? 0} new articles`);
+          console.log(`[bg-refresh] Group ${groupNum} done — ${bgData.newArticles ?? 0} new articles`);
           if ((bgData.newArticles ?? 0) > 0) {
             const fresh = await fetch(`/api/news?t=${Date.now()}`, { cache: "no-store" });
             const freshData = await fresh.json().catch(() => null);
@@ -782,13 +782,13 @@ export default function GlobalMonitor() {
       bgTimerIdsRef.current = [t2, t3, t4];
 
     } catch(e){
-      setError("Refresh failed â€” please try again in a moment.");
+      setError("Refresh failed — please try again in a moment.");
       console.error(e);
     }
     setRefreshing(false); setRefreshQueued(false);
   }, [refreshTopic, data, section]);
 
-  // Live web fallback â€” called when tab date/keyword search returns 0 local results
+  // Live web fallback — called when tab date/keyword search returns 0 local results
   const doTabLiveSearch = async (q: string, from: string, to: string, sec: string) => {
     setTabLiveSearching(true);
     setTabLiveError("");
@@ -871,7 +871,7 @@ export default function GlobalMonitor() {
       const res = await fetch(`/api/ofac-program?id=${programId}${force ? "&force=1" : ""}`);
       const d = await res.json();
       setOfacDiff(d);
-    } catch { setOfacDiff({ error: "Check failed â€” try again" }); }
+    } catch { setOfacDiff({ error: "Check failed — try again" }); }
     setOfacDiffLoading(false);
   };
 
@@ -914,7 +914,7 @@ export default function GlobalMonitor() {
   const doSearch = () => setSanOn(true);
   const clearSearch = () => { setSanOn(false); setSanQ(""); setDateFrom(""); setDateTo(""); };
 
-  if (!data) return (<><style>{css}</style><div className="page-loading">{error||"Loading briefingâ€¦"}</div></>);
+  if (!data) return (<><style>{css}</style><div className="page-loading">{error||"Loading briefing…"}</div></>);
 
   const allFiltered = data?.articles ? filterArticles(data.articles, section, region) : [];
   const sanResults  = (sanOn && data?.articles) ? filterArticlesBySearch(data.articles, section, sanQ, dateFrom, dateTo) : null;
@@ -925,14 +925,14 @@ export default function GlobalMonitor() {
     const name = (source||"")
       .replace("OFAC Sanctions List Updates","OFAC")
       .replace("OFAC Recent Actions","OFAC")
-      .replace("U.S. Treasury â€” OFAC Sanctions","U.S. Treasury / OFAC")
-      .replace("U.S. Treasury â€” Press Releases","U.S. Treasury")
-      .replace("U.S. Treasury â€” Enforcement","U.S. Treasury")
-      .replace("U.S. Treasury â€” News","U.S. Treasury")
-      .replace("Federal Reserve â€” Press Releases","Federal Reserve")
-      .replace("U.S. State Department â€” News","State Dept")
-      .replace(/^Google News â€” /,"")
-      .replace(/^OFAC â€” /,"OFAC / ");
+      .replace("U.S. Treasury — OFAC Sanctions","U.S. Treasury / OFAC")
+      .replace("U.S. Treasury — Press Releases","U.S. Treasury")
+      .replace("U.S. Treasury — Enforcement","U.S. Treasury")
+      .replace("U.S. Treasury — News","U.S. Treasury")
+      .replace("Federal Reserve — Press Releases","Federal Reserve")
+      .replace("U.S. State Department — News","State Dept")
+      .replace(/^Google News — /,"")
+      .replace(/^OFAC — /,"OFAC / ");
     let href = sourceUrl || "#";
     let pathLabel = "";
     try {
@@ -944,7 +944,7 @@ export default function GlobalMonitor() {
         u.pathname.includes(p) && u.pathname.split("/").filter(Boolean).length <= 2);
       const isSpecific = !isFeed && !isIndex && u.pathname.split("/").filter(Boolean).length > 1;
       if (isFeed) href = u.protocol + "//" + u.hostname;
-      if (isSpecific) pathLabel = u.hostname.replace("www.","") + u.pathname.slice(0,40) + (u.pathname.length>40?"â€¦":"");
+      if (isSpecific) pathLabel = u.hostname.replace("www.","") + u.pathname.slice(0,40) + (u.pathname.length>40?"…":"");
     } catch {}
     return { name, href, pathLabel };
   };
@@ -954,7 +954,7 @@ export default function GlobalMonitor() {
       <div className="art-body">
         <p>{a.body[0]}</p>
         {expanded[key] && a.body.slice(1).map((p,i)=><p key={i}>{p}</p>)}
-        {a.body.length>1 && <button className="more-btn" onClick={()=>toggle(key)}>{expanded[key]?"â–² Show less":"â–¼ Continue reading"}</button>}
+        {a.body.length>1 && <button className="more-btn" onClick={()=>toggle(key)}>{expanded[key]?"▲ Show less":"▼ Continue reading"}</button>}
       </div>
       <div className="art-source" suppressHydrationWarning>
         <span className="src-lbl">Source:</span>
@@ -964,7 +964,7 @@ export default function GlobalMonitor() {
             <a className="src-link" href={sd.href} target="_blank" rel="noopener noreferrer">{sd.name}</a>
             {sd.pathLabel && <a href={a.sourceUrl} target="_blank" rel="noopener noreferrer" className="src-path"
               style={{fontFamily:"var(--mono)",fontSize:".55rem",color:"#1a56db",textDecoration:"none",marginLeft:"6px",letterSpacing:".04em"}}>
-              â†— {sd.pathLabel}
+              ↗ {sd.pathLabel}
             </a>}
           </>);
         })()}
@@ -986,7 +986,7 @@ export default function GlobalMonitor() {
     </article>
   );
 
-  // â”€â”€ MOBILE VIEW â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── MOBILE VIEW ──────────────────────────────────────────────
   if (isMobile) {
     const mSecs = SECTIONS;
     const mArticles = allFiltered.slice(0, mobileVisibleCount);
@@ -1075,10 +1075,10 @@ export default function GlobalMonitor() {
       {/* Status bar */}
       <div className="m-bar">
         <span className="m-dot"/>
-        <span className="m-txt">{data.lastUpdatedIso ? new Date(data.lastUpdatedIso).toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"})+" â€” "+new Date(data.lastUpdatedIso).toLocaleTimeString(undefined,{hour:"2-digit",minute:"2-digit"}) : data.lastUpdated.split(" â€” ")[0].trim()}</span>
+        <span className="m-txt">{data.lastUpdatedIso ? new Date(data.lastUpdatedIso).toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"})+" — "+new Date(data.lastUpdatedIso).toLocaleTimeString(undefined,{hour:"2-digit",minute:"2-digit"}) : data.lastUpdated.split(" — ")[0].trim()}</span>
         {section !== "penalties" && (
           <button className={`m-btn ${searchBarOpen||sanOn?"on":""}`}
-            onClick={()=>setSearchBarOpen(v=>!v)}>âŠ˜ {sanOn?"Filtered":"Filter"}</button>
+            onClick={()=>setSearchBarOpen(v=>!v)}>⊘ {sanOn?"Filtered":"Filter"}</button>
         )}
         {mRegions.length>1 && (
           <select className="m-region-sel" value={region} onChange={e=>setRegion(e.target.value)}>
@@ -1088,28 +1088,28 @@ export default function GlobalMonitor() {
         {section==="sanctions" && (
           <button className={`m-btn ${ofacProgram?"on":""}`}
             onClick={()=>{setOfacProgram(ofacProgram?"":"iran");setOfacProgramUpdate(null);setOfacDiff(null);setOfacOverride(null);if(!ofacProgram)loadOfacOverride("iran");}}>
-            âš– Programs
+            ⚖ Programs
           </button>
         )}
         <button className="m-btn" onClick={handleRefresh} disabled={refreshing}>
-          {refreshing?"â€¦":"â†»"}
+          {refreshing?"…":"↻"}
         </button>
       </div>
       {/* Filter panel */}
-      {(refreshing || error) && <div className="m-refresh-status">{error || (refreshQueued ? "Update queued â€” checking for new storiesâ€¦" : "Updating storiesâ€¦")}</div>}
+      {(refreshing || error) && <div className="m-refresh-status">{error || (refreshQueued ? "Update queued — checking for new stories…" : "Updating stories…")}</div>}
       {section !== "penalties" && searchBarOpen && (
         <div className="m-filter">
-          <input placeholder='Keyword â€” "Iran oil", "EU 20th"' value={sanQ}
+          <input placeholder='Keyword — "Iran oil", "EU 20th"' value={sanQ}
             onChange={e=>setSanQ(e.target.value)} onKeyDown={e=>e.key==="Enter"&&doSearch()} autoFocus/>
           <div className="m-filter-row">
             <input type="date" value={dateFrom} onChange={e=>setDateFrom(e.target.value)} style={{flex:1}}/>
-            <span style={{fontFamily:"var(--mono)",fontSize:".6rem",color:"#9ca3af"}}>â†’</span>
+            <span style={{fontFamily:"var(--mono)",fontSize:".6rem",color:"#9ca3af"}}>→</span>
             <input type="date" value={dateTo} onChange={e=>setDateTo(e.target.value)} style={{flex:1}}/>
           </div>
           <div className="m-filter-row">
             <button className="m-btn on" onClick={doSearch} style={{flex:1}}>Search</button>
-            {sanOn && <button className="m-btn" onClick={()=>{clearSearch();setSearchBarOpen(false);}} style={{flex:1}}>âœ• Clear</button>}
-            <button className="m-btn" onClick={()=>setSearchBarOpen(false)}>âœ•</button>
+            {sanOn && <button className="m-btn" onClick={()=>{clearSearch();setSearchBarOpen(false);}} style={{flex:1}}>✕ Clear</button>}
+            <button className="m-btn" onClick={()=>setSearchBarOpen(false)}>✕</button>
           </div>
         </div>
       )}
@@ -1133,25 +1133,25 @@ export default function GlobalMonitor() {
                 </optgroup>
               </select>
               <span style={{fontFamily:"var(--mono)",fontSize:".5rem",fontWeight:700,padding:"2px 6px",borderRadius:3,background:prog.status==="active"?"#dcfce7":"#f3f4f6",color:prog.status==="active"?"#166534":"#6b7280",flexShrink:0,textTransform:"uppercase"}}>{prog.status}</span>
-              <button className="m-btn" onClick={()=>setOfacProgram("")} style={{flexShrink:0}}>âœ•</button>
+              <button className="m-btn" onClick={()=>setOfacProgram("")} style={{flexShrink:0}}>✕</button>
             </div>
             {/* Action row */}
             <div style={{display:"flex",gap:6,marginBottom:10,flexWrap:"wrap"}}>
               <a href={prog.url} target="_blank" rel="noopener noreferrer"
                 style={{fontFamily:"var(--mono)",fontSize:".58rem",padding:"4px 10px",border:"1.5px solid #1a56db",borderRadius:3,background:"#1a56db",color:"#fff",textDecoration:"none",whiteSpace:"nowrap"}}>
-                OFAC.gov â†—
+                OFAC.gov ↗
               </a>
               <button onClick={()=>checkOfacDiff(ofacProgram)} disabled={ofacDiffLoading}
                 style={{fontFamily:"var(--mono)",fontSize:".58rem",padding:"4px 10px",border:"1.5px solid #166534",borderRadius:3,background:ofacDiffLoading?"#f9fafb":"#166534",color:ofacDiffLoading?"#6b7280":"#fff",cursor:ofacDiffLoading?"wait":"pointer",whiteSpace:"nowrap"}}>
-                {ofacDiffLoading?"Checkingâ€¦":"Check for Updates"}
+                {ofacDiffLoading?"Checking…":"Check for Updates"}
               </button>
             </div>
             {/* Diff result */}
             {ofacDiff && !ofacDiff.error && (
               <div style={{fontFamily:"var(--mono)",fontSize:".58rem",padding:"6px 10px",borderRadius:3,background:"#fff",border:"1px solid #e5e7eb",marginBottom:8}}>
                 {ofacDiff.generalLicenses?.length||ofacDiff.executiveOrders?.length
-                  ? <span style={{color:"#854d0e"}}>âš  Live page has changes â€” check desktop view to review & accept</span>
-                  : <span style={{color:"#166534"}}>âœ“ Library matches OFAC page</span>}
+                  ? <span style={{color:"#854d0e"}}>⚠ Live page has changes — check desktop view to review & accept</span>
+                  : <span style={{color:"#166534"}}>✓ Library matches OFAC page</span>}
               </div>
             )}
             {/* General Licenses */}
@@ -1217,12 +1217,12 @@ export default function GlobalMonitor() {
         })}
         {mRemaining > 0 && (
           <button className="m-more" onClick={()=>setMobileVisibleCount(c=>c+15)}>
-            â†“ Show {Math.min(15, mRemaining)} more stories
+            ↓ Show {Math.min(15, mRemaining)} more stories
           </button>
         )}
         {mobileVisibleCount > 15 && (
           <button className="m-more" onClick={()=>setMobileVisibleCount(15)}>
-            â†‘ Show fewer stories
+            ↑ Show fewer stories
           </button>
         )}
       </>)}
@@ -1276,7 +1276,7 @@ export default function GlobalMonitor() {
     </div>
     </>);
   }
-  // â”€â”€ END MOBILE VIEW â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── END MOBILE VIEW ───────────────────────────────────────────
 
   return (
     <><style>{css}</style>
@@ -1294,22 +1294,22 @@ export default function GlobalMonitor() {
       </div></div>
       {section !== "penalties" && searchBarOpen && (
         <div className="san-search" style={{background: section==="bis"?"#f0f9ff":section==="economics"?"#f0fdf4":section==="occ"?"#fffbeb":section==="regions"?"#faf5ff":"#fef2f2", borderBottomColor: section==="bis"?"#7dd3fc":section==="economics"?"#86efac":section==="occ"?"#fcd34d":section==="regions"?"#d8b4fe":"#fca5a5"}}><div className="san-inner">
-          <span className="san-lbl" style={{color: section==="bis"?"#0369a1":section==="economics"?"#15803d":section==="occ"?"#b45309":section==="regions"?"#6d28d9":"#cc0000"}}>âŠ˜ Search {section==="all"?"All":section.toUpperCase()}</span>
-          <input className="san-q" placeholder='Keyword â€” "Iran oil", "EU 20th", "OFSI"' value={sanQ} onChange={e=>setSanQ(e.target.value)} onKeyDown={e=>e.key==="Enter"&&doSearch()} autoFocus/>
+          <span className="san-lbl" style={{color: section==="bis"?"#0369a1":section==="economics"?"#15803d":section==="occ"?"#b45309":section==="regions"?"#6d28d9":"#cc0000"}}>⊘ Search {section==="all"?"All":section.toUpperCase()}</span>
+          <input className="san-q" placeholder='Keyword — "Iran oil", "EU 20th", "OFSI"' value={sanQ} onChange={e=>setSanQ(e.target.value)} onKeyDown={e=>e.key==="Enter"&&doSearch()} autoFocus/>
           <input className="date-in" type="date" value={dateFrom} onChange={e=>{setDateFrom(e.target.value);if(e.target.value||dateTo)setSanOn(true);}} title="From date"/>
-          <span style={{color:"#5a3020",fontFamily:"var(--mono)",fontSize:".65rem"}}>â†’</span>
+          <span style={{color:"#5a3020",fontFamily:"var(--mono)",fontSize:".65rem"}}>→</span>
           <input className="date-in" type="date" value={dateTo} onChange={e=>{setDateTo(e.target.value);if(e.target.value||dateFrom)setSanOn(true);}} title="To date"/>
           <button className="san-go" onClick={doSearch}>Search</button>
-          {sanOn && <button className="san-x" onClick={()=>{clearSearch();setSearchBarOpen(false);}}>âœ• Clear</button>}
-          <button className="san-x" onClick={()=>setSearchBarOpen(false)} style={{marginLeft:"auto"}}>âœ•</button>
+          {sanOn && <button className="san-x" onClick={()=>{clearSearch();setSearchBarOpen(false);}}>✕ Clear</button>}
+          <button className="san-x" onClick={()=>setSearchBarOpen(false)} style={{marginLeft:"auto"}}>✕</button>
         </div></div>
       )}
       <div className="ctrl-bar"><div className="ctrl-inner">
-        {/* Row 1: status Â· filter Â· search Â· OFAC Â· refresh */}
+        {/* Row 1: status · filter · search · OFAC · refresh */}
         <div className="ctrl-main">
           <div style={{display:"flex",alignItems:"center",gap:5,flexShrink:0,flexWrap:"wrap"}}>
-            {refreshing ? <><span className="spin-dot"/><span className="upd-text">{refreshQueued?"Queuedâ€¦":"Refreshingâ€¦"}</span></>
-              : <><span className="live-dot"/><span className="upd-text">{formatLastUpdated(data.lastUpdated.replace(/\s*Â·\s*\d+\s*stories/i, ""), data.lastUpdatedIso)} Â· {allFiltered.length} stories</span></>}
+            {refreshing ? <><span className="spin-dot"/><span className="upd-text">{refreshQueued?"Queued…":"Refreshing…"}</span></>
+              : <><span className="live-dot"/><span className="upd-text">{formatLastUpdated(data.lastUpdated.replace(/\s*·\s*\d+\s*stories/i, ""), data.lastUpdatedIso)} · {allFiltered.length} stories</span></>}
 
             {error && <span className="err-msg">{error}</span>}
           </div>
@@ -1318,39 +1318,39 @@ export default function GlobalMonitor() {
             <button className={`pill ${searchBarOpen||sanOn?"on":""}`}
               onClick={()=>setSearchBarOpen(v=>!v)}
               style={{fontFamily:"var(--mono)",fontSize:".58rem"}}
-            >âŠ˜ {sanOn?"Filtered":"Filter"}</button>
+            >⊘ {sanOn?"Filtered":"Filter"}</button>
           )}
           {showGlobalSearch ? (
             <>
-              <input className="gs-inline" placeholder="Search webâ€¦" value={globalQ}
+              <input className="gs-inline" placeholder="Search web…" value={globalQ}
                 onChange={e=>setGlobalQ(e.target.value)}
                 onKeyDown={e=>{if(e.key==="Enter"&&!globalSearching)doGlobalSearch();}}
                 autoFocus
               />
               <button className="pill on" onClick={()=>doGlobalSearch()} disabled={globalSearching}
                 style={{fontFamily:"var(--mono)",fontSize:".58rem",flexShrink:0}}>
-                {globalSearching?"â€¦":"ðŸ” Go"}
+                {globalSearching?"…":"🔍 Go"}
               </button>
-              <button className="san-x" onClick={()=>{setShowGlobalSearch(false);setGlobalResults([]);setGlobalQ("");}}>âœ•</button>
+              <button className="san-x" onClick={()=>{setShowGlobalSearch(false);setGlobalResults([]);setGlobalQ("");}}>✕</button>
             </>
           ) : (
             <button className="pill" onClick={()=>setShowGlobalSearch(true)}
-              style={{fontFamily:"var(--mono)",fontSize:".58rem"}}>ðŸ” Search</button>
+              style={{fontFamily:"var(--mono)",fontSize:".58rem"}}>🔍 Search</button>
           )}
           {section==="sanctions" && (
             <button className={`pill ${ofacProgram?"on":""}`}
               style={{fontFamily:"var(--mono)",fontSize:".6rem"}}
               onClick={()=>setOfacProgram(ofacProgram?"":"iran")}
-            >âš– OFAC Programs</button>
+            >⚖ OFAC Programs</button>
           )}
           <div style={{marginLeft:"auto",display:"flex",alignItems:"center",gap:6,flexShrink:0}}>
-            <input className="topic-input" placeholder="Focus topicâ€¦" value={refreshTopic} onChange={e=>setRefreshTopic(e.target.value)} onKeyDown={e=>e.key==="Enter"&&!refreshing&&handleRefresh()}/>
+            <input className="topic-input" placeholder="Focus topic…" value={refreshTopic} onChange={e=>setRefreshTopic(e.target.value)} onKeyDown={e=>e.key==="Enter"&&!refreshing&&handleRefresh()}/>
             <button className="refresh-btn" onClick={handleRefresh} disabled={refreshing}>
-              {refreshing ? <><span className="spin">â†»</span>Refreshingâ€¦</> : "â†» Refresh Now"}
+              {refreshing ? <><span className="spin">↻</span>Refreshing…</> : "↻ Refresh Now"}
             </button>
           </div>
         </div>
-        {/* Row 2: region pills â€” only when regions exist */}
+        {/* Row 2: region pills — only when regions exist */}
         {(REGIONS[section]?.length||0)>1 && (
           <div className="ctrl-regions">
             <span className="tlbl">Region:</span>
@@ -1369,7 +1369,7 @@ export default function GlobalMonitor() {
               </div>
               {globalResults.length > 0 && <span style={{fontFamily:"var(--mono)",fontSize:".62rem",color:"#6b7280"}}>{globalResults.length} results</span>}
             </div>
-            {globalSearching && <div className="gs-empty">Searching the webâ€¦ (~15s)</div>}
+            {globalSearching && <div className="gs-empty">Searching the web… (~15s)</div>}
             {globalError && <div className="gs-empty" style={{color:"#cc0000"}}>{globalError}</div>}
             {!globalSearching && !globalError && globalResults.length === 0 && showGlobalSearch && <div className="gs-empty">No results found. Try a different query.</div>}
             {globalResults.map((r:any, i:number) => (
@@ -1381,7 +1381,7 @@ export default function GlobalMonitor() {
                   <span className="gs-rsource">{r.source}</span>
                   {r.date && <span className="gs-rdate">{r.date}</span>}
                   <span className={`gs-rrel gs-rrel-${r.relevance==="high"?"high":r.relevance==="medium"?"med":"low"}`}>{r.relevance}</span>
-                  <a href={r.url} target="_blank" rel="noopener" style={{fontFamily:"var(--mono)",fontSize:".58rem",color:"#1a56db",textDecoration:"none",marginLeft:"auto"}}>â†— {(() => { try { return new URL(r.url).hostname.replace("www.",""); } catch { return "link"; } })()}</a>
+                  <a href={r.url} target="_blank" rel="noopener" style={{fontFamily:"var(--mono)",fontSize:".58rem",color:"#1a56db",textDecoration:"none",marginLeft:"auto"}}>↗ {(() => { try { return new URL(r.url).hostname.replace("www.",""); } catch { return "link"; } })()}</a>
                 </div>
                 {r.brief && <div className="gs-rbrief">{r.brief}</div>}
                 {r.tags?.length > 0 && (
@@ -1425,17 +1425,17 @@ export default function GlobalMonitor() {
 
             {ofacDiff && !ofacDiff.error && !ofacDiff.blocked && (()=>{
               // ofacDiff.executiveOrders/generalLicenses are now full {number,title,date,url}
-              // objects sourced from the GitHub Actions scrape cache (see app/api/ofac-program/route.ts) â€”
+              // objects sourced from the GitHub Actions scrape cache (see app/api/ofac-program/route.ts) —
               // carry the real metadata through instead of just bare numbers, so accepted
               // changes get real titles/dates/urls rather than "pending title update" placeholders.
               //
-              // Fixed 2026-06-26 â€” two false-positive sources confirmed live against Iran:
-              // 1. This never checked prog.archive â€” anything deliberately archived (e.g. a
+              // Fixed 2026-06-26 — two false-positive sources confirmed live against Iran:
+              // 1. This never checked prog.archive — anything deliberately archived (e.g. a
               //    confirmed-expired GL whose PDF link OFAC still hosts on the page) was
               //    re-flagged as "new" every time. Now known numbers include the archive.
               // 2. OFAC's sitewide "Recent Actions" widget bleeds headline GLs from OTHER
               //    programs onto this program's page (e.g. Russia-HFA's GL 134C showing up
-              //    on Iran's page) â€” same cross-listing bug already guarded against in
+              //    on Iran's page) — same cross-listing bug already guarded against in
               //    sync-programs-library.mjs's crossProgramMismatch(). Port the same
               //    title-vs-program-name heuristic here so the live diff doesn't surface them.
               const STOPWORDS=new Set(["sanctions","related","general","license","licenses","program","programs","the","and","of","for","on","in","to","with"]);
@@ -1505,12 +1505,12 @@ export default function GlobalMonitor() {
               </div>
               {(() => {
                 // GLs carry an optional `expires` date (parsed from OFAC's own
-                // "...through <date>" authorization text â€” see refresh-briefing.mjs).
+                // "...through <date>" authorization text — see refresh-briefing.mjs).
                 // Once that date has passed, treat it as expired in the UI even if
                 // the curated library hasn't been explicitly updated with
                 // archived:true yet (that only happens once a successor GL is
                 // detected during a sync run). This is purely a display-layer
-                // partition â€” it does not mutate the underlying data.
+                // partition — it does not mutate the underlying data.
                 const now = Date.now();
                 const isPastExpiry = (gl: typeof prog.generalLicenses[number]) =>
                   !!gl.expires && parseDate(gl.expires) < now;
@@ -1527,7 +1527,7 @@ export default function GlobalMonitor() {
                         :<table className="ofac-prog-table"><thead><tr><th>License</th><th>Title / Authorization</th><th>Date</th><th>Expires</th><th>Document</th></tr></thead><tbody>
                           {[...liveGLs].sort((a,b)=>parseDate(b.date)-parseDate(a.date)).map((gl,i)=>(
                             <tr key={i}><td>{gl.number}</td><td>{gl.title}</td><td>{gl.date}</td>
-                              <td style={{whiteSpace:"nowrap"}}>{gl.expires||"â€”"}</td>
+                              <td style={{whiteSpace:"nowrap"}}>{gl.expires||"—"}</td>
                               <td>{gl.url?<a href={gl.url} target="_blank" rel="noopener" style={{display:"inline-flex",alignItems:"center",gap:"4px",fontFamily:"var(--mono)",fontSize:".62rem",color:"#fff",background:"#166534",padding:"3px 8px",borderRadius:"3px",textDecoration:"none"}}>View PDF</a>:<a href={`${prog.url}#general-licenses`} target="_blank" rel="noopener" style={{display:"inline-flex",alignItems:"center",gap:"4px",fontFamily:"var(--mono)",fontSize:".62rem",color:"#1a56db",background:"#eff6ff",padding:"3px 8px",borderRadius:"3px",textDecoration:"none",border:"1px solid #bfdbfe"}}>OFAC Page</a>}</td>
                             </tr>
                           ))}
@@ -1536,7 +1536,7 @@ export default function GlobalMonitor() {
                     {autoExpiredGLs.length>0 && (
                       <div className="ofac-prog-section" style={{opacity:.7}}>
                         <div className="ofac-prog-section-title" style={{color:"#9ca3af"}}>
-                          Expired â€” Pending Archive
+                          Expired — Pending Archive
                           <span style={{background:"#9ca3af",color:"#fff",fontFamily:"var(--mono)",fontSize:".55rem",padding:"2px 7px",borderRadius:"10px",fontWeight:600}}>{autoExpiredGLs.length} Items</span>
                         </div>
                         <table className="ofac-prog-table" style={{opacity:.8}}><thead><tr><th>License</th><th>Title / Authorization</th><th>Expired</th><th>Document</th></tr></thead><tbody>
@@ -1545,7 +1545,7 @@ export default function GlobalMonitor() {
                               <td style={{textDecoration:"line-through",color:"#9ca3af",fontFamily:"var(--mono)",fontSize:".65rem"}}>{gl.number}</td>
                               <td style={{color:"#9ca3af"}}>{gl.title}</td>
                               <td style={{fontFamily:"var(--mono)",fontSize:".6rem",color:"#cc0000",whiteSpace:"nowrap"}}>{gl.expires}</td>
-                              <td>{gl.url?<a href={gl.url} target="_blank" rel="noopener" style={{display:"inline-flex",alignItems:"center",gap:"4px",fontFamily:"var(--mono)",fontSize:".62rem",color:"#9ca3af",background:"#f3f4f6",padding:"3px 8px",borderRadius:"3px",textDecoration:"none"}}>View PDF</a>:"â€”"}</td>
+                              <td>{gl.url?<a href={gl.url} target="_blank" rel="noopener" style={{display:"inline-flex",alignItems:"center",gap:"4px",fontFamily:"var(--mono)",fontSize:".62rem",color:"#9ca3af",background:"#f3f4f6",padding:"3px 8px",borderRadius:"3px",textDecoration:"none"}}>View PDF</a>:"—"}</td>
                             </tr>
                           ))}
                         </tbody></table>
@@ -1572,7 +1572,7 @@ export default function GlobalMonitor() {
               {prog.archive && ((prog.archive.generalLicenses?.length??0) + (prog.archive.executiveOrders?.length??0) + (prog.archive.advisories?.length??0) > 0) && (
                 <div className="ofac-prog-section" style={{opacity:.7}}>
                   <div className="ofac-prog-section-title" style={{color:"#9ca3af"}}>
-                    Archive â€” Expired / Superseded
+                    Archive — Expired / Superseded
                     <span style={{background:"#9ca3af",color:"#fff",fontFamily:"var(--mono)",fontSize:".55rem",padding:"2px 7px",borderRadius:"10px",fontWeight:600}}>
                       {(prog.archive.generalLicenses?.length??0)+(prog.archive.executiveOrders?.length??0)+(prog.archive.advisories?.length??0)} Items
                     </span>
@@ -1585,14 +1585,14 @@ export default function GlobalMonitor() {
                         .map((item,i)=>{
                           // Expired Date: prefer the explicit archivedDate field; older entries
                           // that predate that field only have it embedded as text in archivedNote
-                          // (e.g. "Expired June 22, 2021") â€” fall back to extracting it from there
+                          // (e.g. "Expired June 22, 2021") — fall back to extracting it from there
                           // rather than showing blank.
-                          const expiredDate = item.archivedDate || item.archivedNote?.match(/([A-Z][a-z]+ \d{1,2},? \d{4})/)?.[1] || "â€”";
+                          const expiredDate = item.archivedDate || item.archivedNote?.match(/([A-Z][a-z]+ \d{1,2},? \d{4})/)?.[1] || "—";
                           return (
                             <tr key={i} style={{background:"#f9fafb"}}>
                               <td style={{textDecoration:"line-through",color:"#9ca3af",fontFamily:"var(--mono)",fontSize:".65rem"}}>{item.number||"Advisory"}</td>
                               <td style={{color:"#9ca3af"}}>{item.title}</td>
-                              <td style={{fontFamily:"var(--mono)",fontSize:".6rem",color:"#9ca3af",whiteSpace:"nowrap"}}>{item.date||"â€”"}</td>
+                              <td style={{fontFamily:"var(--mono)",fontSize:".6rem",color:"#9ca3af",whiteSpace:"nowrap"}}>{item.date||"—"}</td>
                               <td style={{fontFamily:"var(--mono)",fontSize:".6rem",color:"#9ca3af",whiteSpace:"nowrap"}}>{expiredDate}</td>
                             </tr>
                           );
@@ -1641,7 +1641,7 @@ export default function GlobalMonitor() {
           </div>
         </div>
       )}
-          {/* Mobile-only compact key-figures strip â€” scrollable horizontal chips */}
+          {/* Mobile-only compact key-figures strip — scrollable horizontal chips */}
           {(() => {
             const kfAll = sidebarSecs.flatMap(s => {
               const kf = ((data.sidebar?.[s]?.keyFigures ?? []).length > 0
@@ -1664,12 +1664,12 @@ export default function GlobalMonitor() {
           {sanOn && section !== "penalties" && (
             <div style={{marginBottom:24}}>
               <div className="sec-banner"><div className={`sec-stripe stripe-${section==="all"?"sanctions":section}`}/><span className="sec-title">{section==="all"?"All":"" } Search Results</span><span className="sec-count">{sanQ&&`"${sanQ}"`}</span></div>
-              {sanResults?.length===0 && <div className="empty-s">No matching articles. Try a different keyword or click â†» Refresh Now with a specific topic.</div>}
+              {sanResults?.length===0 && <div className="empty-s">No matching articles. Try a different keyword or click ↻ Refresh Now with a specific topic.</div>}
               {sanResults?.map((a,i)=>renderArticle(a,i,`sr${i}`))}
             </div>
           )}
           {groups.map(g=>{
-            if (g==="penalties") return null; // penalties section uses dedicated table UI below â€” not article cards
+            if (g==="penalties") return null; // penalties section uses dedicated table UI below — not article cards
             if (g==="sanctions"&&sanOn) return null;
             if (g==="sanctions"&&ofacProgram&&section==="sanctions") return null;
             const arts = allFiltered.filter(a=>a.section===g);
@@ -1685,12 +1685,12 @@ export default function GlobalMonitor() {
               {visible.map((a,i)=>renderArticle(a,i))}
               {remaining > 0 && (
                 <button className="show-more-btn" onClick={()=>setTabShowAll(p=>({...p,[g]:(p[g]??0)+PAGE}))}>
-                  â†“ Show {Math.min(PAGE, remaining)} more {LABELS[g]?.toLowerCase()||g} stories
+                  ↓ Show {Math.min(PAGE, remaining)} more {LABELS[g]?.toLowerCase()||g} stories
                 </button>
               )}
               {extra > 0 && (
                 <button className="show-more-btn" onClick={()=>setTabShowAll(p=>({...p,[g]:0}))}>
-                  â†‘ Show less
+                  ↑ Show less
                 </button>
               )}
             </div>;
@@ -1719,7 +1719,7 @@ export default function GlobalMonitor() {
                     >
                       {(penTab==="ofac"?penaltyYears:fincenYears).slice(5).includes((penTab==="ofac"?penaltyYear:fincenYear)??0)
                         ? (penTab==="ofac"?penaltyYear:fincenYear)
-                        : "Older"} â–¾
+                        : "Older"} ▾
                     </button>
                     {yearDropdownOpen && (
                       <div style={{position:"absolute",top:"calc(100% + 4px)",left:0,background:"#fff",border:"1.5px solid #111",borderRadius:"4px",boxShadow:"0 4px 12px rgba(0,0,0,.12)",zIndex:100,minWidth:80}}>
@@ -1734,25 +1734,25 @@ export default function GlobalMonitor() {
                   </div>
                 )}
               </div>
-              {penaltiesLoading && <div style={{fontFamily:"var(--mono)",fontSize:".65rem",color:"#6b7280",padding:"12px 0"}}>Loading penalty recordsâ€¦</div>}
-              {penaltiesError && <div style={{fontFamily:"var(--mono)",fontSize:".65rem",color:"#cc0000",padding:"12px 0"}}>âš  {penaltiesError}</div>}
+              {penaltiesLoading && <div style={{fontFamily:"var(--mono)",fontSize:".65rem",color:"#6b7280",padding:"12px 0"}}>Loading penalty records…</div>}
+              {penaltiesError && <div style={{fontFamily:"var(--mono)",fontSize:".65rem",color:"#cc0000",padding:"12px 0"}}>⚠ {penaltiesError}</div>}
               {penTab==="ofac" && (
                 <>
                 <div style={{fontSize:".65rem",color:"#6b7280",fontFamily:"var(--mono)",marginBottom:"8px"}}>
-                  Source: <a href={(!penaltyYear || penaltyYear === 2026) ? "https://ofac.treasury.gov/civil-penalties-and-enforcement-information" : `https://ofac.treasury.gov/civil-penalties-and-enforcement-information/${penaltyYear}-enforcement-information`} target="_blank" rel="noopener" style={{color:"#1a56db"}}>OFAC {penaltyYear||"All Years"} Civil Penalties â†—</a>
+                  Source: <a href={(!penaltyYear || penaltyYear === 2026) ? "https://ofac.treasury.gov/civil-penalties-and-enforcement-information" : `https://ofac.treasury.gov/civil-penalties-and-enforcement-information/${penaltyYear}-enforcement-information`} target="_blank" rel="noopener" style={{color:"#1a56db"}}>OFAC {penaltyYear||"All Years"} Civil Penalties ↗</a>
                 </div>
                 <div className="pen-wrap"><table className="pen-table">
                   <thead><tr>
-                    <th onClick={()=>setPenaltySort("date")} style={{width:110}}>Date {penaltySort==="date"?"â†“":""}</th>
+                    <th onClick={()=>setPenaltySort("date")} style={{width:110}}>Date {penaltySort==="date"?"↓":""}</th>
                     <th>Name / Institution</th>
-                    <th onClick={()=>setPenaltySort("amount")} style={{width:150}}>Amount {penaltySort==="amount"?"â†“":""}</th>
-                    <th onClick={()=>setPenaltySort("regulator")} style={{width:130}}>Regulator {penaltySort==="regulator"?"â†“":""}</th>
+                    <th onClick={()=>setPenaltySort("amount")} style={{width:150}}>Amount {penaltySort==="amount"?"↓":""}</th>
+                    <th onClick={()=>setPenaltySort("regulator")} style={{width:130}}>Regulator {penaltySort==="regulator"?"↓":""}</th>
                     <th style={{width:60}}>Source</th>
                   </tr></thead>
                   <tbody>
                     <tr style={{background:"#f0f5ff",fontWeight:600,borderBottom:"2px solid #1a56db"}}>
                       <td style={{fontFamily:"var(--mono)",fontSize:".65rem",letterSpacing:".08em",textTransform:"uppercase",padding:"9px 10px",color:"#1a56db"}} colSpan={2}>
-                        TOTAL {penaltyYear||"ALL"} â€” {penalties.length} actions
+                        TOTAL {penaltyYear||"ALL"} — {penalties.length} actions
                       </td>
                       <td style={{padding:"9px 10px"}}><span suppressHydrationWarning style={{fontFamily:"'Playfair Display',serif",fontSize:"1rem",fontWeight:700,color:"#cc0000"}}>{penalties.filter(p=>p.amount>0).reduce((s,p)=>s+p.amount,0).toLocaleString()}</span></td>
                       <td colSpan={2} style={{color:"#6b7280",padding:"9px 10px",fontSize:".65rem",fontFamily:"var(--mono)"}}>{penalties.filter(p=>p.amount===0).length} settlements (undisclosed)</td>
@@ -1768,7 +1768,7 @@ export default function GlobalMonitor() {
                         <td><div className="pen-inst">{p.institution}</div><div className="pen-viol">{p.violation}</div></td>
                         <td><div className="pen-amount">{p.amountDisplay}</div></td>
                         <td><span className={`pen-badge ${regCls}`}>{p.regulator}</span></td>
-                        <td><a href={p.sourceUrl} target="_blank" rel="noopener" style={{fontFamily:"var(--mono)",fontSize:".6rem",color:"#1a56db",textDecoration:"none"}}>â†— View</a></td>
+                        <td><a href={p.sourceUrl} target="_blank" rel="noopener" style={{fontFamily:"var(--mono)",fontSize:".6rem",color:"#1a56db",textDecoration:"none"}}>↗ View</a></td>
                       </tr>;
                     })}
                   </tbody>
@@ -1778,7 +1778,7 @@ export default function GlobalMonitor() {
               {penTab==="fincen" && (
                 <>
                 <div style={{fontSize:".65rem",color:"#6b7280",fontFamily:"var(--mono)",marginBottom:"8px"}}>
-                  Source: <a href="https://www.fincen.gov/news/enforcement-actions" target="_blank" rel="noopener" style={{color:"#1a56db"}}>FinCEN Enforcement Actions â†—</a>
+                  Source: <a href="https://www.fincen.gov/news/enforcement-actions" target="_blank" rel="noopener" style={{color:"#1a56db"}}>FinCEN Enforcement Actions ↗</a>
                 </div>
                 <div className="pen-wrap"><table className="pen-table">
                   <thead><tr>
@@ -1792,10 +1792,10 @@ export default function GlobalMonitor() {
                   <tbody>
                     <tr style={{background:"#f0f5ff",fontWeight:600,borderBottom:"2px solid #1a56db"}}>
                       <td style={{fontFamily:"var(--mono)",fontSize:".65rem",letterSpacing:".08em",textTransform:"uppercase",padding:"9px 10px",color:"#1a56db"}} colSpan={2}>
-                        TOTAL {fincenYear||"ALL"} â€” {fincenPenalties.length} actions
+                        TOTAL {fincenYear||"ALL"} — {fincenPenalties.length} actions
                       </td>
                       <td style={{padding:"9px 10px"}}><span style={{fontFamily:"'Playfair Display',serif",fontSize:"1rem",fontWeight:700,color:"#cc0000"}}>${(fincenPenalties.reduce((s,p)=>s+p.penalty,0)/1e9).toFixed(2)}B</span></td>
-                      <td colSpan={3} style={{color:"#6b7280",padding:"9px 10px",fontSize:".65rem",fontFamily:"var(--mono)"}}>{fincenPenalties.filter(p=>p.egregious).length} egregious Â· {fincenPenalties.filter(p=>p.voluntaryDisclosure).length} VSD</td>
+                      <td colSpan={3} style={{color:"#6b7280",padding:"9px 10px",fontSize:".65rem",fontFamily:"var(--mono)"}}>{fincenPenalties.filter(p=>p.egregious).length} egregious · {fincenPenalties.filter(p=>p.voluntaryDisclosure).length} VSD</td>
                     </tr>
                     {[...fincenPenalties].sort((a,b)=>b.date.localeCompare(a.date)||b.penalty-a.penalty).map(p=>(
                       <tr key={p.id}>
@@ -1810,7 +1810,7 @@ export default function GlobalMonitor() {
                         <td>
                           {p.egregious&&<span className="b-egregious">EGREGIOUS</span>}<br/>
                           {p.voluntaryDisclosure&&<span className="b-vsd">VSD</span>}
-                          <a href={p.sourceUrl} target="_blank" rel="noopener" style={{fontFamily:"var(--mono)",fontSize:".6rem",color:"#1a56db",textDecoration:"none",display:"block",marginTop:2}}>â†— Source</a>
+                          <a href={p.sourceUrl} target="_blank" rel="noopener" style={{fontFamily:"var(--mono)",fontSize:".6rem",color:"#1a56db",textDecoration:"none",display:"block",marginTop:2}}>↗ Source</a>
                         </td>
                       </tr>
                     ))}
