@@ -931,7 +931,7 @@ export default function GlobalMonitor() {
   const sidebarSecs = section==="all" ? ["sanctions","economics","regions","occ","penalties","bis"] : [section];
 
   const getSourceDisplay = (source: string, sourceUrl: string) => {
-    const name = (source||"")
+    const name = decodeEntities(source||"")
       .replace("OFAC Sanctions List Updates","OFAC")
       .replace("OFAC Recent Actions","OFAC")
       .replace("U.S. Treasury — OFAC Sanctions","U.S. Treasury / OFAC")
@@ -961,8 +961,8 @@ export default function GlobalMonitor() {
   const renderBody = (a:Article, key:string|number) => (
     <>
       <div className="art-body">
-        <p>{a.body[0]}</p>
-        {expanded[key] && a.body.slice(1).map((p,i)=><p key={i}>{p}</p>)}
+        <p>{decodeEntities(a.body[0])}</p>
+        {expanded[key] && a.body.slice(1).map((p,i)=><p key={i}>{decodeEntities(p)}</p>)}
         {a.body.length>1 && <button className="more-btn" onClick={()=>toggle(key)}>{expanded[key]?"▲ Show less":"▼ Continue reading"}</button>}
       </div>
       <div className="art-source" suppressHydrationWarning>
@@ -986,7 +986,7 @@ export default function GlobalMonitor() {
       <div className="art-meta">
         <div className={`idot d-${a.impact??"medium"}`}/>
         {section==="all" && <span className={`stag stag-${a.section}`}>{a.section==="bis"?"BIS":a.section}</span>}
-        <span className={`art-tag ${tagCls(a.section)}`}>{a.category}</span>
+        <span className={`art-tag ${tagCls(a.section)}`}>{decodeEntities(a.category)}</span>
         <span className="art-region">{decodeEntities(a.region)}</span>
         <span className="art-date">{formatDisplayDate(a.date)}</span>
       </div>
