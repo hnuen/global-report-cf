@@ -1,6 +1,9 @@
 name: Monitor and Alert
 
 on:
+  schedule:
+    # Direct-source refresh and alerting every 30 minutes. Gemini is not used here.
+    - cron: "17,47 * * * *"
   workflow_dispatch:
     inputs:
       topic:
@@ -213,3 +216,4 @@ jobs:
             exit 1
           fi
           echo "ntfy delivered and cooldown recorded"
+
