@@ -26,9 +26,13 @@ export function articleMatchesAlertTopic(article: Article, topic?: string): bool
 
 export function cleanAlertText(value: string): string {
   return value
+    .replace(/Federal Reserve\s+[^\x00-\x7F]\S*\s+Press Releases/g, "Federal Reserve — Press Releases")
     .replaceAll("Ã¢â‚¬â€", "—")
     .replaceAll("Ã¢â‚¬Â¢", "•")
     .replaceAll("Ã¢â‚¬Â¦", "…")
+    .replaceAll("â€”", "—")
+    .replaceAll("â€¢", "•")
+    .replaceAll("Â·", "·")
     .replace(/^\s*[•*-]\s*/, "")
     .trim();
 }

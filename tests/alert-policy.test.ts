@@ -82,6 +82,14 @@ test("ntfy presentation uses the article agency and repairs corrupted punctuatio
   assert.equal(cleanAlertText(treasury.headline), "Treasury action");
 });
 
+test("shared Telegram and ntfy formatter cleans every cached article field", () => {
+  const formatter = readFileSync(new URL("../src/notifiers/format.ts", import.meta.url), "utf8");
+  for (const field of ["article.headline", "article.category", "article.region", "article.body[0]"]) {
+    assert.ok(formatter.includes(`cleanAlertText(${field}`), `formatter does not clean ${field}`);
+  }
+  assert.ok(formatter.includes("alertSourceLabel(article)"));
+});
+
 test("a failed notification attempt does not start cooldown", async () => {
   const marked: string[] = [];
 
