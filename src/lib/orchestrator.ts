@@ -11,6 +11,7 @@ import { loadArticleLibrary, saveArticlesToLibrary } from "./article-library";
 import { fetchOfacCache, recentActionsToArticles, civilPenaltiesToArticles, programsToArticles, ofsiNoticesToArticles, europaNewsToArticles, unNoticesToArticles, bbcNewsToArticles, ajNewsToArticles, occNewsToArticles, economicsNewsToArticles, bisNewsToArticles, regionsNewsToArticles } from "./ofac-github-cache";
 import { mergeDirectWithAiSupplement } from "./source-merge";
 import { commitSourceItemCheckpoints } from "./source-item-checkpoints";
+import { hasUsableArticleText } from "./text-quality";
 
 // No module-level singletons Ã¢â‚¬â€ always read env vars fresh on each invocation
 export async function loadBriefing(): Promise<Briefing | null> {
@@ -348,6 +349,12 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
   });
   if (briefing.articles.length < beforeNoNewsFilter) {
     console.log(`[orchestrator] Filtered ${beforeNoNewsFilter - briefing.articles.length} no-news filler article(s)`);
+  }
+
+  const beforeCorruptFilter = briefing.articles.length;
+  briefing.articles = briefing.articles.filter(hasUsableArticleText);
+  if (briefing.articles.length < beforeCorruptFilter) {
+    console.log(`[orchestrator] Removed ${beforeCorruptFilter - briefing.articles.length} corrupted/binary article(s)`);
   }
 
   // Ã¢â€â‚¬Ã¢â€â‚¬ Group-mode additive merge Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
