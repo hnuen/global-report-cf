@@ -77,7 +77,7 @@ test("monitor includes current articles that are visible through the persistent 
 });
 
 test("ntfy presentation uses the article agency and repairs corrupted punctuation", () => {
-  const treasury = testArticle(2, "Ã¢â‚¬Â¢ Treasury action", "https://home.treasury.gov/news/press-releases/sb0583");
+  const treasury = testArticle(2, "ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ Treasury action", "https://home.treasury.gov/news/press-releases/sb0583");
   treasury.source = "Treasury Press Release SB0536";
 
   assert.equal(alertSourceLabel(treasury), "U.S. Treasury / News");
@@ -212,7 +212,16 @@ test("the frequent monitor refreshes direct sources without invoking Gemini", ()
   assert.ok(workflow.includes("$APP_URL/api/refresh"));
   assert.equal(workflow.includes("GEMINI_API_KEY"), false);
 
-  const cronWorker = readFileSync(new URL("../cron-worker/src/index.js", import.meta.url), "utf8");
-  assert.ok(cronWorker.includes('\"17,47 * * * *\": \"monitor.yml\"'));
+  assert.match(workflow, /schedule:[\s\S]*17,47 \* \* \* \*/);
 });
+
+test("the Gemini refresh avoids duplicate Cloudflare source work and bounds final saves", () => {
+  const workflow = readFileSync(new URL("../.github/workflows/refresh.yml", import.meta.url), "utf8");
+  const script = readFileSync(new URL("../.github/scripts/refresh-briefing.mjs", import.meta.url), "utf8");
+
+  assert.equal(workflow.includes("Fetch official sources"), false);
+  assert.ok(script.includes("regionsNews.slice(0, 20)"));
+  assert.ok(script.includes("const delays = [0, 5000, 15000, 30000]"));
+});
+
 
