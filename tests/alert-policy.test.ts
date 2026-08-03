@@ -239,4 +239,10 @@ test("direct sources use stable newest-item checkpoints and commit them only aft
   assert.match(orchestrator, /if \(preSaveSuccess\)[\s\S]*commitSourceItemCheckpoints/);
 });
 
+test("OFAC pinning cannot displace newer Economics or Regions stories", () => {
+  const app = readFileSync(new URL("../app/AppContent.tsx", import.meta.url), "utf8");
+  assert.ok(app.includes('const shouldPinOFAC = sec === "sanctions" || sec === "all"'));
+  assert.ok(app.includes("const ofacPin = shouldPinOFAC ?"));
+});
+
 
