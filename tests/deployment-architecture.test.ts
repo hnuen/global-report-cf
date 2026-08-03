@@ -15,11 +15,13 @@ test("Cloudflare cron is the sole monitor scheduler and exposes no public trigge
   assert.doesNotMatch(githubMonitor, /^\s*schedule:/m);
 });
 
-test("Cloudflare configuration uses the supported subrequests key and observability", async () => {
+test("Pages configuration uses only supported limits and Worker observability stays separate", async () => {
   const config = await read("wrangler.toml");
+  const workerConfig = await read("cron-worker/wrangler.toml");
   assert.match(config, /^subrequests\s*=\s*500$/m);
   assert.doesNotMatch(config, /subrequest_limit/);
-  assert.match(config, /\[observability\]/);
+  assert.doesNotMatch(config, /\[observability\]/);
+  assert.match(workerConfig, /\[observability\]/);
 });
 
 test("subscription links require POST before approval or denial mutates state", async () => {

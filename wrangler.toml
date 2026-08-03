@@ -15,7 +15,3 @@ pages_build_output_dir = ".open-next"
 # resource limits". Raised to 30000ms (30s) so those requests can complete.
 cpu_ms = 30000
 subrequests = 500
-
-[observability]
-enabled = true
-head_sampling_rate = 0.1
