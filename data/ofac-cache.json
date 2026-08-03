@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T15:08:38.690Z",
+  "updatedAt": "2026-08-03T17:09:54.323Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260803",
@@ -2750,12 +2750,11 @@
         },
         {
           "number": "35",
-          "title": "Authorizing Certain Administrative Transactions with the Government of Venezuela",
+          "title": "Venezuela General License 35",
           "date": "November 5, 2019",
           "expires": "February 3, 2020",
           "url": "https://ofac.treasury.gov/media/25961/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "42",
@@ -2795,10 +2794,12 @@
         },
         {
           "number": "48B",
-          "title": "Venezuela General License 48B",
-          "date": "June 10, 2026",
+          "title": "Authorizing the Supply of Certain Items and Services to Venezuela",
+          "date": "March 13, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/935671/download?inline"
+          "url": "https://ofac.treasury.gov/media/935671/download?inline",
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "49A",
@@ -3080,7 +3081,19 @@
       "title": "Iran says it is in talks with Oman but not the US after Trump says negotiations to resume",
       "url": "https://www.bbc.co.uk/news/articles/c23579jzv08o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 3, 2026",
-      "description": "Tehran has repeatedly closed off the strait since the US and Israel attacked the country in February."
+      "description": "Iran's remarks that there were no talks with the US prompts Donald Trump to issue a strong condemnation of its leadership."
+    },
+    {
+      "title": "Threat to oil tankers in Middle East worst since start of Iran war, analysts say",
+      "url": "https://www.bbc.co.uk/news/articles/cjrv0dy2e90o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 3, 2026",
+      "description": "Fresh attacks on alternative shipping routes have left tankers facing an increasingly complex situation, analysts say."
+    },
+    {
+      "title": "Russian anti-war politician says he has fled the country",
+      "url": "https://www.bbc.co.uk/news/articles/c70gjw60033o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 3, 2026",
+      "description": "Boris Nadezhdin, who was recently designated as a foreign agent, posted a video in front of the Eiffel Tower."
     },
     {
       "title": "Aung San Suu Kyi appears healthy in first confirmed outside contact for 2.5 years",
@@ -3099,6 +3112,12 @@
       "url": "https://www.bbc.co.uk/news/videos/c1719pk0xq8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 2, 2026",
       "description": "Three people have been killed and 21 injured after an explosive device detonated at an Italian restaurant, Russian media reports."
+    },
+    {
+      "title": "Threat to oil tankers in Middle East worst since start of Iran war, analysts say",
+      "url": "https://www.bbc.co.uk/news/articles/cjrv0dy2e90o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 3, 2026",
+      "description": "Fresh attacks on alternative shipping routes have left tankers facing an increasingly complex situation, analysts say."
     },
     {
       "title": "Almost £200,000 of fuel stolen from UK forecourts every day since Iran war began",
@@ -3127,7 +3146,13 @@
   ],
   "ajNews": [
     {
-      "title": "More than 10 killed as Russia and Ukraine trade heavy attacks",
+      "title": "Iraqi Kurdish regional leader meets Syrian president in Damascus",
+      "url": "https://www.aljazeera.com/news/2026/8/3/iraqi-kurdish-regional-leader-meets-syrian-president-in-damascus?traffic_source=rss",
+      "date": "August 3, 2026",
+      "description": "Barzani meets Syria&#039;s al-Sharaa in Damascus to discuss SDF integration and Kurdish rights in post-Assad Syria."
+    },
+    {
+      "title": "More than 17 killed as Russia and Ukraine trade heavy attacks",
       "url": "https://www.aljazeera.com/news/2026/8/3/more-than-10-killed-as-russia-and-ukraine-trade-heavy-attacks?traffic_source=rss",
       "date": "August 3, 2026",
       "description": "Exchange of fire intensifies as the war, now in its fifth year, shows no signs of slowing down."
@@ -3143,71 +3168,10 @@
       "url": "https://www.aljazeera.com/opinions/2026/8/3/who-will-shape-post-war-iran?traffic_source=rss",
       "date": "August 3, 2026",
       "description": "There are competing narratives in Tehran for its post-war recovery."
-    },
-    {
-      "title": "Ukraine strikes Russia’s biggest retailer again",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/3/08-03-2026-ukraine-strikes-wildberies-russia?traffic_source=rss",
-      "date": "August 3, 2026",
-      "description": "Ukraine has struck another warehouse belonging to Russian e-commerce giant Wildberries in a long-range drone attack."
-    },
-    {
-      "title": "North Koreans flood new ‘tourist zone’ beach amid heatwave",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/3/north-koreans-flood-new-tourist-zone-beach-amid-heatwave?traffic_source=rss",
-      "date": "August 3, 2026",
-      "description": "North Koreans flood new ‘tourist zone’ beach amid heatwave"
-    },
-    {
-      "title": "Trump says new Iran negotiations starting: What we know",
-      "url": "https://www.aljazeera.com/news/2026/8/3/trump-says-new-iran-negotiations-starting-what-we-know?traffic_source=rss",
-      "date": "August 3, 2026",
-      "description": "Analysts say deal on Hormuz might be achievable but lasting peace agreement still far off."
     }
   ],
-  "occNews": [
-    {
-      "title": "OCC Announces Enforcement Actions for July 2026",
-      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-59.html",
-      "date": "July 16, 2026",
-      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for July 2026."
-    }
-  ],
-  "economicsNews": [
-    {
-      "title": "Federal Reserve issues FOMC statement",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
-      "date": "July 29, 2026",
-      "description": "Federal Reserve issues FOMC statement",
-      "category": "Monetary Policy"
-    },
-    {
-      "title": "Minutes of the Board&#39;s discount rate meetings on June 8 and June 17, 2026",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260714a.htm",
-      "date": "July 14, 2026",
-      "description": "Minutes of the Board&#39;s discount rate meetings on June 8 and June 17, 2026",
-      "category": "Monetary Policy"
-    },
-    {
-      "title": "Federal Reserve announces the leadership and objectives of its task forces to advance the conduct of monetary policy",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260709a.htm",
-      "date": "July 9, 2026",
-      "description": "Federal Reserve announces the leadership and objectives of its task forces to advance the conduct of monetary policy",
-      "category": "Monetary Policy"
-    },
-    {
-      "title": "Minutes of the Federal Open Market Committee, June 16-17, 2026",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260708a.htm",
-      "date": "July 8, 2026",
-      "description": "Minutes of the Federal Open Market Committee, June 16-17, 2026",
-      "category": "Monetary Policy"
-    },
-    {
-      "title": "Federal Reserve Board&#39;s annual bank stress test confirms that large banks are well positioned to weather a severe recession and able to continue to lend to households and businesses",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260624a.htm",
-      "date": "June 24, 2026",
-      "description": "Federal Reserve Board&#39;s annual bank stress test confirms that large banks are well positioned to weather a severe recession and able to continue to lend to households and businesses",
-      "category": "Banking and Consumer Regulatory Policy"
-    }
-  ],
+  "occNews": [],
+  "economicsNews": [],
   "bisNews": [
     {
       "title": "Implementation of EAR Export Controls on Silencers, Mufflers, and Sound Suppressors; and Other Firearms Related Changes",
@@ -3266,6 +3230,12 @@
   ],
   "regionsNews": [
     {
+      "title": "Rhine falls to record low levels as drought strains Europe's rivers",
+      "url": "https://www.bbc.co.uk/news/articles/c78gn8zvrx4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 3, 2026",
+      "description": "Low water levels in the Rhine, Danube and Po have curtailed the transport of goods and reduced electricity output."
+    },
+    {
       "title": "'My only son was shot standing up for justice' - inside city gripped by deadly protests in Pakistan-administered Kashmir",
       "url": "https://www.bbc.co.uk/news/articles/c5yvqk69enko?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 3, 2026",
@@ -3276,18 +3246,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c24mr09r99eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 3, 2026",
       "description": "The two women's employer has apologised for sending them back to Aeon Mall to secure cash."
-    },
-    {
-      "title": "Ariana Grande to take a break from public life amid 'endless' scrutiny",
-      "url": "https://www.bbc.co.uk/news/articles/c80ngjjvevyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 3, 2026",
-      "description": "The US singer, 33, will \"step back from visibility\" at the end of her world tour next month, her representative says."
-    },
-    {
-      "title": "Moroccan king's letter confirms naming of major highway in honour of Trump",
-      "url": "https://www.bbc.co.uk/news/articles/c3r0vg88zr2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 3, 2026",
-      "description": "The highway enters Western Sahara, a disputed territory that Morocco claims sovereignty over."
     },
     {
       "title": "US and Japan take action to prop up yen in rare joint move",
@@ -3306,6 +3264,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cr59qe86yj4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 3, 2026",
       "description": "The UK band says they are \"surprised and disappointed\" by their treatment over shouting \"free Palestine\" at a concert there."
+    },
+    {
+      "title": "Moroccan king's letter confirms naming of major highway in honour of Trump",
+      "url": "https://www.bbc.co.uk/news/articles/c3r0vg88zr2o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 3, 2026",
+      "description": "The highway enters Western Sahara, a disputed territory that Morocco claims sovereignty over."
     },
     {
       "title": "Hundreds flee fighting in northern Ethiopia as fears rise of return to civil war",
@@ -3336,18 +3300,6 @@
       "url": "https://www.bbc.co.uk/news/articles/czjlvvkzj20o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 2, 2026",
       "description": "Israel says it was targeting military operatives in the strikes on Gaza City, Khan Younis and Deir el-Balah."
-    },
-    {
-      "title": "Uganda unveils statue of Israel PM's brother who died in Entebbe rescue mission",
-      "url": "https://www.bbc.co.uk/news/articles/c9v471x89m3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 2, 2026",
-      "description": "Yonatan Netanyahu was the only Israeli soldier to die as he led a mission to free more than 100 hostages."
-    },
-    {
-      "title": "Tourist plane crashes in Peru, killing 13",
-      "url": "https://www.bbc.co.uk/news/articles/c70g132erlko?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 2, 2026",
-      "description": "The small plane was flying over the Nazca Lines ​archaeological site when it crashed, according to local reports."
     },
     {
       "title": "'What was my fault?': How India's exam paper leak ended young lives",
@@ -3632,6 +3584,12 @@
       "description": "What impact might shortages have on our summer holidays - and what could be done about it?"
     },
     {
+      "title": "Derelict former BHS site a 'continuing nightmare'",
+      "url": "https://www.bbc.co.uk/news/videos/cwympl4021lo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 3, 2026",
+      "description": "The former department store closed in 2016."
+    },
+    {
       "title": "'I will miss my shop tremendously after six decades'",
       "url": "https://www.bbc.co.uk/news/videos/ce345lq0xlvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "July 31, 2026",
@@ -3650,10 +3608,46 @@
       "description": "A London shop selling goods designed for left-handed people was doing a brisk trade."
     },
     {
-      "title": "Shabaz Asks: Are Billionaires Bad?",
-      "url": "https://www.bbc.co.uk/iplayer/episode/m002ydrr?at_medium=RSS&amp;at_campaign=rss",
-      "date": "July 28, 2026",
-      "description": "Shabaz Ali turns author to see if the internet's favourite villains deserve the hate."
+      "title": "Uncertainty on Iranians’ minds as Trump fluctuates on war and talk",
+      "url": "https://www.aljazeera.com/news/2026/8/3/uncertainty-on-iranians-minds-as-trump-fluctuates-on-war-and-talk?traffic_source=rss",
+      "date": "August 3, 2026",
+      "description": "Iranians feeling pressure amid US president&#039;s on-again, off-again comments on conflict and negotiations."
+    },
+    {
+      "title": "Inside the Palestine Action protests",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/3/inside-the-palestine-action-protests?traffic_source=rss",
+      "date": "August 3, 2026",
+      "description": "After the UK proscribed Palestine Action as a terrorist organisation, thousands were arrested or investigated."
+    },
+    {
+      "title": "Romanian navy blasts riverbed to protect nuclear plant",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/3/romanian-navy-blasts-riverbed-to-protect-nuclear-plant?traffic_source=rss",
+      "date": "August 3, 2026",
+      "description": "Romania&#039;s military detonated part of the Danube riverbed to redirect water towards the Cernavoda Nuclear Power Plant."
+    },
+    {
+      "title": "Indian court acquits ex-wrestling chief in sexual harassment case",
+      "url": "https://www.aljazeera.com/news/2026/8/3/indian-court-acquits-ex-wrestling-chief-in-sexual-harassment-case?traffic_source=rss",
+      "date": "August 3, 2026",
+      "description": "Top female wrestlers vow to appeal following the controversial acquittal."
+    },
+    {
+      "title": "How Israel and the European far right tried to exploit Ceuta",
+      "url": "https://www.aljazeera.com/opinions/2026/8/3/how-israel-and-the-european-far-right-tried-to-exploit-ceuta?traffic_source=rss",
+      "date": "August 3, 2026",
+      "description": "A potent narrative is emerging linking migration to anti-Semitism in an effort to undermine pro-Palestinian solidarity."
+    },
+    {
+      "title": "Australia’s under-16 social media ban failing, study shows: What it means",
+      "url": "https://www.aljazeera.com/news/2026/8/3/australias-under-16-social-media-ban-failing-study-shows-what-it-means?traffic_source=rss",
+      "date": "August 3, 2026",
+      "description": "Australia&#039;s internet regulator revealed in a recent study that teenagers are continuing to use social media despite ban."
+    },
+    {
+      "title": "Tigray refugees flee into Sudan after deadly violence on Ethiopia border",
+      "url": "https://www.aljazeera.com/news/2026/8/3/tigray-refugees-flee-into-sudan-after-deadly-violence-on-ethiopia-border?traffic_source=rss",
+      "date": "August 3, 2026",
+      "description": "Ethiopian army accused of attacking Tigray forces in Shererina amid escalating tensions at the Sudan-Ethiopia border."
     },
     {
       "title": "Pentagon boosts Patriot, THAAD interceptor output amid stockpile strain",
@@ -3738,36 +3732,6 @@
       "url": "https://www.aljazeera.com/news/2026/8/3/pakistan-administered-kashmir-elections-and-protests-all-you-need-to-know?traffic_source=rss",
       "date": "August 3, 2026",
       "description": "Protests over refugee seats turn deadly, forcing staggered elections under internet blackout and calls for a boycott."
-    },
-    {
-      "title": "Israel defies Trump’s peace plan as it escalates deadly attacks on Gaza",
-      "url": "https://www.aljazeera.com/news/2026/8/3/israel-defies-trumps-peace-plan-as-it-escalates-deadly-attacks-on-gaza?traffic_source=rss",
-      "date": "August 3, 2026",
-      "description": "Israel escalates Gaza attacks and pushes hardline demands, threatening the US-backed peace roadmap."
-    },
-    {
-      "title": "US cricket player Reddy receives eight-year ban for match-fixing",
-      "url": "https://www.aljazeera.com/sports/2026/8/3/us-cricket-player-reddy-receives-eight-year-ban-for-match-fixing?traffic_source=rss",
-      "date": "August 3, 2026",
-      "description": "ICC Anti-Corruption Tribunal says Akhilesh Reddy guilty of three offences during Abu Dhabi T10 competition in November."
-    },
-    {
-      "title": "First moments of Egypt earthquake caught during livestream",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/3/first-moments-of-egypt-earthquake-caught-during-livestream?traffic_source=rss",
-      "date": "August 3, 2026",
-      "description": "A magnitude 5.4 earthquake struck Egypt, north of Suez early on Monday, startling a content creator during a livestream."
-    },
-    {
-      "title": "Vozinha gets hero’s welcome in Chile after Cape Verde’s historic World Cup",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/3/vozinha-gets-heros-welcome-in-chile-after-cape-verdes-historic-world-cup?traffic_source=rss",
-      "date": "August 3, 2026",
-      "description": "Vozinha gets hero&#039;s welcome in Chile after Cape Verde’s historic World Cup."
-    },
-    {
-      "title": "Wildfires still burning in France and Spain amid fears of more to come",
-      "url": "https://www.aljazeera.com/gallery/2026/8/3/wildfires-still-burning-in-france-and-spain-amid-fears-of-more-to-come?traffic_source=rss",
-      "date": "August 3, 2026",
-      "description": "Europe&#039;s warming climate intensifies fires in France and Spain, scorching forests and threatening more communities."
     }
   ]
 }
