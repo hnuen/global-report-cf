@@ -2,6 +2,7 @@
 // v6 cache bust CF
 import { useState, useEffect, useCallback, useRef } from "react";
 import { SANCTIONS_PROGRAMS } from "@/src/lib/sanctions-programs-library";
+import { hasUsableArticleText } from "@/src/lib/text-quality";
 
 
 export const css = `
@@ -530,7 +531,7 @@ const articleMatchesRegion = (a: Article, reg: string): boolean => {
 
 const filterArticles = (articles:Article[], sec:string, reg:string) => {
   if (!articles || !Array.isArray(articles)) return [];
-  let pool = [...articles];
+  let pool = articles.filter(hasUsableArticleText);
   // Filter by section
   if (sec && sec !== "all") pool = pool.filter(a => a.section === sec);
   // Filter by region using explicit keyword matching
