@@ -373,6 +373,7 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
           )
         );
         const fromExisting = existing.articles.filter(a =>
+          hasUsableArticleText(a) &&
           !currentKeys.has(a.headline.slice(0, 80).toLowerCase().replace(/\s+/g, " ").trim())
         );
         if (fromExisting.length > 0) {
