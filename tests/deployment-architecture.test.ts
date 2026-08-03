@@ -21,6 +21,7 @@ test("Pages configuration uses only supported limits and Worker observability st
   assert.match(config, /^subrequests\s*=\s*500$/m);
   assert.doesNotMatch(config, /subrequest_limit/);
   assert.doesNotMatch(config, /\[observability\]/);
+  assert.match(config, /SKIP_DEPENDENCY_INSTALL\s*=\s*"1"/);
   assert.match(workerConfig, /\[observability\]/);
 });
 

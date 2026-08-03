@@ -3,6 +3,11 @@ compatibility_date = "2026-08-01"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".open-next"
 
+[vars]
+# The checked-in lockfile was stale and blocked Cloudflare before the build
+# command ran. Install the pinned top-level toolchain inside build:pages.
+SKIP_DEPENDENCY_INSTALL = "1"
+
 [limits]
 # Default CF Workers limit is 50 subrequests/invocation. The refresh route
 # fetches 60+ RSS feeds + Redis ops in a single invocation, which exceeds
