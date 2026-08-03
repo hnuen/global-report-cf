@@ -16,4 +16,3 @@ test("Treasury direct-link extraction accepts single-quoted absolute URLs", () =
   assert.ok(match);
   assert.equal(normalizeTreasuryPressReleaseUrl(match[2]), "https://home.treasury.gov/news/press-releases/sb0583");
 });
-

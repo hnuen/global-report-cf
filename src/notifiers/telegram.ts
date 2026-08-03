@@ -15,8 +15,8 @@
  *   TELEGRAM_DIGEST_MODE — "true" = one message per run instead of one per article
  */
 
-import type { Notifier, NotifyResult } from "./types";
-import type { ScoredArticle }          from "../lib/alert-scorer";
+import type { Notifier, NotifyResult, NotifyOptions } from "./types";
+import { buildAlertKey, type ScoredArticle } from "../lib/alert-scorer";
 import { formatAlert, formatDigest }   from "./format";
 import { listApprovedByChannel }       from "../lib/subscribers";
 import { mergeRecipients } from "../lib/alert-categories";
@@ -35,7 +35,7 @@ export class TelegramNotifier implements Notifier {
     return !!process.env.TELEGRAM_BOT_TOKEN;
   }
 
-  async send(articles: ScoredArticle[], appUrl: string, options = { defaultMinScore: 65, maxAlertsPerRun: 5 }): Promise<NotifyResult> {
+  async send(articles: ScoredArticle[], appUrl: string, options: NotifyOptions = { defaultMinScore: 65, maxAlertsPerRun: 5 }): Promise<NotifyResult> {
     const token = process.env.TELEGRAM_BOT_TOKEN!;
     const staticChatIds = (process.env.TELEGRAM_CHAT_IDS ?? "")
       .split(",").map(s => s.trim()).filter(Boolean);
@@ -54,6 +54,7 @@ export class TelegramNotifier implements Notifier {
     const url = `https://api.telegram.org/bot${token}/sendMessage`;
     let sent = 0;
     const errors: string[] = [];
+    const deliveries: { recipient: string; alertKeys: string[] }[] = [];
 
     if (recipients.length === 0) {
       return {
@@ -65,13 +66,17 @@ export class TelegramNotifier implements Notifier {
     }
 
     for (const recipient of recipients) {
-      const mine = articlesForSubscriber(articles, recipient).slice(0, options.maxAlertsPerRun);
+      const mine = articlesForSubscriber(articles, recipient)
+        .filter(article => options.shouldSend?.(this.id, recipient.to, buildAlertKey(article.article)) ?? true)
+        .slice(0, options.maxAlertsPerRun);
       if (mine.length === 0) continue; // nothing in this recipient's categories
       const chatId = recipient.to;
       const messages: string[] = digest
         ? [formatDigest(mine, appUrl).markdown]
         : mine.map(a => formatAlert(a, appUrl).markdown);
-      for (const text of messages) {
+      const deliveredKeys: string[] = [];
+      for (let messageIndex = 0; messageIndex < messages.length; messageIndex++) {
+        const text = messages[messageIndex];
         try {
           const res = await fetch(url, {
             method: "POST",
@@ -88,6 +93,8 @@ export class TelegramNotifier implements Notifier {
           const data = await res.json() as { ok: boolean; description?: string };
           if (data.ok) {
             sent++;
+            if (digest) deliveredKeys.push(...mine.map(article => buildAlertKey(article.article)));
+            else deliveredKeys.push(buildAlertKey(mine[messageIndex].article));
           } else {
             console.error(`[telegram] chat ${chatId}: ${data.description}`);
             errors.push(data.description ?? `Telegram rejected chat ${chatId}`);
@@ -97,12 +104,14 @@ export class TelegramNotifier implements Notifier {
           errors.push(String(e));
         }
       }
+      if (deliveredKeys.length > 0) deliveries.push({ recipient: chatId, alertKeys: deliveredKeys });
     }
 
     return {
       channel: this.name,
       success: sent > 0,
       recipients: sent,
+      deliveries,
       error: sent === 0 ? (errors[0] ?? "No messages delivered") : undefined,
     };
   }

@@ -426,9 +426,9 @@ const isOFACArticle = (a: Article) =>
 const decodeEntities = (s: string): string => {
   if (!s) return s;
   return s
-    .replace(/Federal Reserve\s+[^\x00-\x7F]\S*\s+Press Releases/g, "Federal Reserve — Press Releases")
-    // Repair legacy Redis records saved with UTF-8 punctuation decoded as
-    // Windows-1252. New records are clean; old cached stories may retain it.
+    // Repair legacy records saved after UTF-8 punctuation was decoded as
+    // Windows-1252. New records are clean, but cached Redis articles may
+    // retain these sequences until they age out.
     .replace(/Ã¢â‚¬Â¢|â€¢/g, "•")
     .replace(/Ã¢â‚¬â€|â€”/g, "—")
     .replace(/Ã¢â‚¬â€œ|â€“/g, "–")
@@ -538,7 +538,9 @@ const filterArticles = (articles:Article[], sec:string, reg:string) => {
   let result = reg === "All" ? pool : pool.filter(a => articleMatchesRegion(a, reg));
   // Sort newest first
   result.sort((a,b) => parseDate(b.date) - parseDate(a.date));
-  // Pin top 3 OFAC/Treasury articles at the top (for any region — US sanctions are always relevant)
+  // Pin top OFAC/Treasury actions only where sanctions ranking is expected.
+  // Other tabs must remain strictly newest-first; cross-section pinning made
+  // fresh Economics and Regions stories appear older than they really were.
   const shouldPinOFAC = sec === "sanctions" || sec === "all";
   const ofacPin = shouldPinOFAC ? result.filter(isOFACArticle).slice(0, 3) : [];
   if (ofacPin.length > 0) {
@@ -934,7 +936,7 @@ export default function GlobalMonitor() {
   const sidebarSecs = section==="all" ? ["sanctions","economics","regions","occ","penalties","bis"] : [section];
 
   const getSourceDisplay = (source: string, sourceUrl: string) => {
-    const name = decodeEntities(source||"")
+    const name = (source||"")
       .replace("OFAC Sanctions List Updates","OFAC")
       .replace("OFAC Recent Actions","OFAC")
       .replace("U.S. Treasury — OFAC Sanctions","U.S. Treasury / OFAC")
@@ -964,8 +966,8 @@ export default function GlobalMonitor() {
   const renderBody = (a:Article, key:string|number) => (
     <>
       <div className="art-body">
-        <p>{decodeEntities(a.body[0])}</p>
-        {expanded[key] && a.body.slice(1).map((p,i)=><p key={i}>{decodeEntities(p)}</p>)}
+        <p>{a.body[0]}</p>
+        {expanded[key] && a.body.slice(1).map((p,i)=><p key={i}>{p}</p>)}
         {a.body.length>1 && <button className="more-btn" onClick={()=>toggle(key)}>{expanded[key]?"▲ Show less":"▼ Continue reading"}</button>}
       </div>
       <div className="art-source" suppressHydrationWarning>
@@ -989,7 +991,7 @@ export default function GlobalMonitor() {
       <div className="art-meta">
         <div className={`idot d-${a.impact??"medium"}`}/>
         {section==="all" && <span className={`stag stag-${a.section}`}>{a.section==="bis"?"BIS":a.section}</span>}
-        <span className={`art-tag ${tagCls(a.section)}`}>{decodeEntities(a.category)}</span>
+        <span className={`art-tag ${tagCls(a.section)}`}>{a.category}</span>
         <span className="art-region">{decodeEntities(a.region)}</span>
         <span className="art-date">{formatDisplayDate(a.date)}</span>
       </div>
@@ -1875,4 +1877,3 @@ export default function GlobalMonitor() {
     </div></>
   );
 }
-

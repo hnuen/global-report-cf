@@ -1,5 +1,5 @@
 /**
- * /api/background-refresh â€” Multi-batch background source fetcher
+ * /api/background-refresh — Multi-batch background source fetcher
  *
  * Called by the client at t=+3min (group 2), +6min (group 3), and +9min (group 4)
  * after a manual REFRESH NOW. Group 1 (OFAC date news + Treasury SBs) was already
@@ -9,9 +9,9 @@
  * Redis briefing without overwriting prior groups.
  *
  * Subrequest budgets per group (incl. 2 Redis calls):
- *   group 2: ~8  + 2 = 10  âœ…
- *   group 3: ~11 + 2 = 13  âœ…
- *   group 4: ~26 + 2 = 28  âœ…  (all << 50 CF Workers limit)
+ *   group 2: ~8  + 2 = 10  ✅
+ *   group 3: ~11 + 2 = 13  ✅
+ *   group 4: ~26 + 2 = 28  ✅  (all << 50 CF Workers limit)
  */
 
 import { NextRequest, NextResponse } from "next/server";
@@ -27,12 +27,12 @@ export const dynamic = "force-dynamic";
 
 export async function POST(request: NextRequest) {
   // Public (called by the client 3x after a manual refresh), so rate-limit
-  // per IP â€” 20/hour covers ~6 full manual refreshes.
+  // per IP — 20/hour covers ~6 full manual refreshes.
   const ip = getClientIp(request);
   const allowed = await checkRateLimit(`background_refresh_rl:${ip}`, 20, 60 * 60, { failClosed: true });
   if (!allowed) {
     return NextResponse.json(
-      { ok: false, error: "Too many refreshes from this network â€” please try again later." },
+      { ok: false, error: "Too many refreshes from this network — please try again later." },
       { status: 429 }
     );
   }
@@ -45,7 +45,7 @@ export async function POST(request: NextRequest) {
     lock = await acquireDistributedLock("background-refresh-lock", 120);
     if (!lock) return NextResponse.json({ ok: false, error: "Another background refresh is already running." }, { status: 409, headers: { "Cache-Control": "no-store" } });
 
-    console.log(`[background-refresh] Group ${group} starting â€” section: ${section ?? "all"}`);
+    console.log(`[background-refresh] Group ${group} starting — section: ${section ?? "all"}`);
 
     // 1. Load the existing briefing from Redis (accumulated from prior groups)
     const existing = await loadBriefing();
@@ -83,7 +83,7 @@ export async function POST(request: NextRequest) {
       });
     }
 
-    // 4. Deduplicate â€” only keep articles not already in the briefing
+    // 4. Deduplicate — only keep articles not already in the briefing
     const existingHeadlines = new Set(
       (existing?.articles ?? []).map(a =>
         (a.headline || "").slice(0, 70).toLowerCase().replace(/\s+/g, " ").trim()
@@ -106,7 +106,7 @@ export async function POST(request: NextRequest) {
       });
     }
 
-    // 5. Merge earlier groups' articles + new group's articles â†’ save
+    // 5. Merge earlier groups' articles + new group's articles → save
     // Prior groups' articles always come first (higher priority)
     const now = new Date().toLocaleString("en-US", {
       month: "long", day: "numeric", year: "numeric",
@@ -117,15 +117,15 @@ export async function POST(request: NextRequest) {
     const merged = {
       ...(existing ?? {}),
       articles: [...(existing?.articles ?? []), ...newArticles],
-      lastUpdated: `${now} â€” Official government sources`,
+      lastUpdated: `${now} — Official government sources`,
       lastUpdatedIso: new Date().toISOString(),
       sidebar: existing?.sidebar ?? groupBriefing.sidebar,
     };
 
     const storage = await buildStorageManager();
-    await storage.save(merged as any);
+    await storage.save(merged as any, { requirePersistent: true });
 
-    console.log(`[background-refresh] âœ… Group ${group}: merged ${newArticles.length} articles â€” total now ${totalCount} (${Date.now() - startTime}ms)`);
+    console.log(`[background-refresh] ✅ Group ${group}: merged ${newArticles.length} articles — total now ${totalCount} (${Date.now() - startTime}ms)`);
 
     return NextResponse.json({
       ok: true,
@@ -145,4 +145,3 @@ export async function POST(request: NextRequest) {
     await lock?.release().catch(error => console.warn("[background-refresh] lock release failed:", String(error).slice(0, 100)));
   }
 }
-

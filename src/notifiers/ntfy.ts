@@ -26,8 +26,8 @@
  *   dropped at the edge. Retries cover transient 5xx failures.
  */
 
-import type { Notifier, NotifyResult } from "./types";
-import type { ScoredArticle }          from "../lib/alert-scorer";
+import type { Notifier, NotifyResult, NotifyOptions } from "./types";
+import { buildAlertKey, type ScoredArticle } from "../lib/alert-scorer";
 import { formatAlert }                 from "./format";
 import { listApprovedByChannel }       from "../lib/subscribers";
 import { mergeRecipients }             from "../lib/alert-categories";
@@ -86,7 +86,7 @@ export class NtfyNotifier implements Notifier {
     return !!process.env.NTFY_TOPIC || !!(process.env.UPSTASH_REDIS_REST_URL || process.env.KV_REST_API_URL);
   }
 
-  async send(articles: ScoredArticle[], appUrl: string, options = { defaultMinScore: 65, maxAlertsPerRun: 5 }): Promise<NotifyResult> {
+  async send(articles: ScoredArticle[], appUrl: string, options: NotifyOptions = { defaultMinScore: 65, maxAlertsPerRun: 5 }): Promise<NotifyResult> {
     const topic  = process.env.NTFY_TOPIC ?? "";
     const server = (process.env.NTFY_SERVER ?? "https://ntfy.sh").replace(/\/$/, "");
     const token  = process.env.NTFY_TOKEN;
@@ -98,9 +98,13 @@ export class NtfyNotifier implements Notifier {
 
     let sent = 0;
     const errors: string[] = [];
+    const deliveries: { recipient: string; alertKeys: string[] }[] = [];
 
     for (const recipient of recipients) {
-      const mine = articlesForSubscriber(articles, recipient).slice(0, options.maxAlertsPerRun);
+      const mine = articlesForSubscriber(articles, recipient)
+        .filter(article => options.shouldSend?.(this.id, recipient.to, buildAlertKey(article.article)) ?? true)
+        .slice(0, options.maxAlertsPerRun);
+      const deliveredKeys: string[] = [];
       for (const sa of mine) {
       const url = `${server}/${recipient.to}`;
       const { subject, plain, emoji } = formatAlert(sa, appUrl);
@@ -123,6 +127,7 @@ export class NtfyNotifier implements Notifier {
         const res = await fetchWithRetry(url, { method: "POST", headers, body: plain });
         if (res.ok) {
           sent++;
+          deliveredKeys.push(buildAlertKey(sa.article));
         } else {
           const err = `HTTP ${res.status} for topic ${recipient.to}: ${await res.text()}`;
           console.error(`[ntfy] Error: ${err}`);
@@ -133,6 +138,7 @@ export class NtfyNotifier implements Notifier {
         console.error("[ntfy] Failed after retries:", msg);
         errors.push(msg);
       }
+      if (deliveredKeys.length > 0) deliveries.push({ recipient: recipient.to, alertKeys: deliveredKeys });
       }
     }
 
@@ -140,6 +146,7 @@ export class NtfyNotifier implements Notifier {
       channel:    this.name,
       success:    sent > 0,
       recipients: sent,
+      deliveries,
       error:      sent === 0 ? (errors[0] ?? "No messages delivered to ntfy") : undefined,
     };
   }

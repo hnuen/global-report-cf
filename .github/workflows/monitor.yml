@@ -1,9 +1,8 @@
 name: Monitor and Alert
 
 on:
-  schedule:
-    # Direct-source refresh and alerting every 30 minutes. Gemini is not used here.
-    - cron: "17,47 * * * *"
+  # The dedicated Cloudflare cron Worker is the sole scheduler. Keeping a
+  # GitHub schedule here as well creates overlapping monitor runs at :17.
   workflow_dispatch:
     inputs:
       topic:
@@ -216,4 +215,3 @@ jobs:
             exit 1
           fi
           echo "ntfy delivered and cooldown recorded"
-

@@ -10,4 +10,3 @@ export async function acquireDistributedLock(key: string, ttlSeconds: number): P
   if (acquired !== "OK") return null;
   return { release: async () => { await redis.eval("if redis.call('get', KEYS[1]) == ARGV[1] then return redis.call('del', KEYS[1]) else return 0 end", [key], [owner]); } };
 }
-

@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 import { loadBriefing }  from "@/src/lib/orchestrator";
 import { loadArticleLibrary } from "@/src/lib/article-library";
 import { SEED_DATA }     from "@/src/lib/seed";
+import { hasUsableArticleText } from "@/src/lib/text-quality";
 
 export const revalidate = 0;
 export const dynamic = "force-dynamic";
@@ -28,7 +29,8 @@ const NO_CACHE = { "Cache-Control": "no-store, no-cache, must-revalidate", "Prag
 export async function GET() {
   try {
     const briefing = await loadBriefing();
-    const data = briefing ?? SEED_DATA;
+    const source = briefing ?? SEED_DATA;
+    const data = { ...source, articles: [...(source.articles ?? [])] };
     // Merge 6-month article library so historical articles survive full
     // briefing replacements (merge=false Gemini runs wipe current articles).
     try {
@@ -50,6 +52,7 @@ export async function GET() {
     // Sort newest first, reassign sequential IDs
     if (data.articles) {
       data.articles = [...data.articles]
+        .filter(hasUsableArticleText)
         .sort((a, b) => parseDate(b.date) - parseDate(a.date))
         .map((a, i) => ({ ...a, id: i + 1 }));
     }

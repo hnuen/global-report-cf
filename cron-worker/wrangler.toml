@@ -1,6 +1,10 @@
 name = "global-report-cron-trigger"
 main = "src/index.js"
-compatibility_date = "2025-04-01"
+compatibility_date = "2026-08-01"
+
+[observability]
+enabled = true
+head_sampling_rate = 0.1
 
 # Standalone Cloudflare Worker — separate from the main Pages app (Pages
 # projects can't have Cron Triggers; only Workers can). Its only job is to
@@ -21,5 +25,5 @@ compatibility_date = "2025-04-01"
 [triggers]
 crons = [
   "7 13,15,17,19,21,22 * * *", # six refreshes during U.S. business hours
-  "17,47 * * * *",            # every 30 minutes — direct refresh + monitor.yml
+  "17,47 * * * *",            # monitor every 30 minutes; sole monitor scheduler
 ]

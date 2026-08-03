@@ -1,16 +1,16 @@
 /**
- * /api/test-notify â€” sends a test alert to all configured notification channels.
+ * /api/test-notify — sends a test alert to all configured notification channels.
  * Bypasses cooldown and article scoring. Useful for verifying ntfy, SMS, WhatsApp, Telegram.
  *
- * GET or POST /api/test-notify â€” requires ADMIN_SECRET header
+ * GET or POST /api/test-notify — requires ADMIN_SECRET header
  * (x-admin-secret). This sends REAL SMS/WhatsApp/Telegram messages to all
- * configured recipients, so it must never be callable anonymously â€” an
+ * configured recipients, so it must never be callable anonymously — an
  * attacker looping it would drain the Twilio balance and spam every
  * subscriber.
  *
  * Category-aware: pass ?category=economics (GET, repeatable or comma-separated)
  * or { category: "economics" | ["economics","bis"] } (POST) to send a test in
- * specific categories. With no category, one test per category is sent â€” so
+ * specific categories. With no category, one test per category is sent — so
  * each subscriber receives a test for exactly the categories they're
  * subscribed to, which verifies category routing end-to-end.
  *
@@ -43,7 +43,7 @@ function makeTestArticle(cat: AlertCategory): ScoredArticle {
       date: new Date().toLocaleDateString("en-US", {
         month: "long", day: "numeric", year: "numeric",
       }),
-      headline: `Test Alert â€” ${cat.label}`,
+      headline: `Test Alert — ${cat.label}`,
       body: [
         `This is a test notification for the "${cat.label}" category.`,
         "If you received this, your alert channel and category routing are working.",
@@ -78,7 +78,7 @@ async function handler(categoryKeys: string[]) {
     new WhatsAppNotifier(),
   ];
 
-  // No category filter â†’ test every category (one article each), so each
+  // No category filter → test every category (one article each), so each
   // subscriber gets a test for exactly the categories they subscribed to.
   const cats = categoryKeys.length
     ? ALERT_CATEGORIES.filter(c => categoryKeys.includes(c.key))
@@ -101,4 +101,3 @@ async function handler(categoryKeys: string[]) {
 
   return NextResponse.json({ ok: true, testedCategories: cats.map(c => c.key), results });
 }
-

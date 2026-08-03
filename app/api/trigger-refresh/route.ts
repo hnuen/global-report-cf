@@ -16,13 +16,13 @@ import { checkRateLimit, getClientIp } from "@/src/lib/rate-limit";
 export const dynamic = "force-dynamic";
 
 export async function POST(request: NextRequest) {
-  // Public (the in-app Refresh Now button), so rate-limit per IP â€” each call
+  // Public (the in-app Refresh Now button), so rate-limit per IP — each call
   // burns RSS subrequests and, for the sanctions section, Gemini quota.
   const ip = getClientIp(request);
   const allowed = await checkRateLimit(`trigger_refresh_rl:${ip}`, 6, 60 * 60, { failClosed: true });
   if (!allowed) {
     return NextResponse.json(
-      { ok: false, error: "Too many refreshes from this network â€” please try again later." },
+      { ok: false, error: "Too many refreshes from this network — please try again later." },
       { status: 429 }
     );
   }
@@ -30,10 +30,10 @@ export async function POST(request: NextRequest) {
     const body = await request.json().catch(() => ({}));
     const section: string | undefined = body.section && body.section !== "all" ? body.section : undefined;
 
-    // Sanctions always uses LLM â€” needs Gemini to search OFAC date URLs via Google grounding
+    // Sanctions always uses LLM — needs Gemini to search OFAC date URLs via Google grounding
     const skipLLM = section !== "sanctions";
 
-    // group:1 only applies to sanctions/all â€” those have OFAC/Treasury as group-1 sources.
+    // group:1 only applies to sanctions/all — those have OFAC/Treasury as group-1 sources.
     // Other sections (bis, occ, penalties, etc.) have NO group-1 sources, so passing group:1
     // would return 0 sources and throw. Let them fetch all sources for their section instead.
     const group: 1 | undefined = (!section || section === "sanctions") ? 1 : undefined;
@@ -41,7 +41,7 @@ export async function POST(request: NextRequest) {
     const { usedProvider, savedTo } = await refreshBriefing(body.topic, { skipLLM, section, manualRefresh: true, group });
 
     // Clicking "Refresh Now" on the Penalties tab (or a global refresh) should also sync the
-    // dedicated OFAC/FinCEN penalty tables â€” these previously only synced via /api/cron, which
+    // dedicated OFAC/FinCEN penalty tables — these previously only synced via /api/cron, which
     // nothing in production calls. Self-throttled to once per 24h, so cheap to call here.
     let penaltySync, fincenSync;
     if (!section || section === "penalties") {
@@ -58,7 +58,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({
       ok: true,
       queued: false,
-      message: `Refresh complete${section ? ` (${section})` : ""} â€” new articles available now.`,
+      message: `Refresh complete${section ? ` (${section})` : ""} — new articles available now.`,
       usedProvider,
       savedTo,
       penaltySync,
@@ -68,4 +68,3 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ ok: false, error: String(e) }, { status: 500 });
   }
 }
-

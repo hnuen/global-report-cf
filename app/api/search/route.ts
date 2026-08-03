@@ -34,7 +34,7 @@ export async function POST(request: NextRequest) {
             body: JSON.stringify({
               system_instruction: {
                 parts: [{
-                  text: `You are a financial intelligence researcher. Search the web and return results as a JSON array only â€” no markdown, no explanation:
+                  text: `You are a financial intelligence researcher. Search the web and return results as a JSON array only — no markdown, no explanation:
 [{"title":"...","source":"...","url":"https://...","date":"...","brief":"2-3 sentence summary","relevance":"high|medium|low","tags":["..."]}]
 Return 5-10 results. Focus on official sources and reputable news. Prioritise: treasury.gov, ofac.treasury.gov, fincen.gov, bis.gov, reuters.com, ft.com, wsj.com, bloomberg.com, occ.gov, federalreserve.gov, ec.europa.eu, gov.uk, aljazeera.com`
                 }]
@@ -88,7 +88,7 @@ Return JSON array only.` }] }],
             tools: [{ type: "web_search_20250305", name: "web_search" }],
             system: `You are a financial intelligence researcher. When given a search query, search the web and return a JSON array of the most relevant results. 
 
-Return ONLY a JSON array â€” no markdown, no explanation, just the array:
+Return ONLY a JSON array — no markdown, no explanation, just the array:
 [
   {
     "title": "Full article headline",
@@ -139,7 +139,7 @@ Prioritise results from: treasury.gov, ofac.gov, fincen.gov, bis.gov, reuters.co
             body: JSON.stringify({
               system_instruction: {
                 parts: [{
-                  text: `You are a financial intelligence researcher. Search the web and return results as a JSON array only â€” no markdown, no explanation:
+                  text: `You are a financial intelligence researcher. Search the web and return results as a JSON array only — no markdown, no explanation:
 [{"title":"...","source":"...","url":"https://...","date":"...","brief":"2-3 sentence summary","relevance":"high|medium|low","tags":["..."]}]
 Return 5-10 results. Focus on official sources and reputable news.`
                 }]
@@ -176,4 +176,3 @@ Return 5-10 results. Focus on official sources and reputable news.`
     return NextResponse.json({ error: String(e) }, { status: 500 });
   }
 }
-

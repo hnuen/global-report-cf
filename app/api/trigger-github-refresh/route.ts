@@ -1,12 +1,12 @@
 /**
  * /api/trigger-github-refresh
  * Fires a workflow_dispatch on the GitHub Actions "Refresh Global Report" workflow.
- * Called by the app when the user clicks Refresh â€” the workflow runs in the background
+ * Called by the app when the user clicks Refresh — the workflow runs in the background
  * (~2-3 min) and saves a full Gemini+OFAC briefing to Redis when done.
  *
  * Required env vars (Cloudflare Pages):
- *   GITHUB_PAT        â€” Personal Access Token with "workflow" scope
- *   GITHUB_REPO       â€” e.g. "hnuen/global-report-cf"
+ *   GITHUB_PAT        — Personal Access Token with "workflow" scope
+ *   GITHUB_REPO       — e.g. "hnuen/global-report-cf"
  */
 
 import { NextRequest, NextResponse } from "next/server";
@@ -19,13 +19,13 @@ const GITHUB_REPO = process.env.GITHUB_REPO || "hnuen/global-report-cf";
 const WORKFLOW    = "refresh.yml";
 
 export async function POST(request: NextRequest) {
-  // Public (called by the Refresh button), so rate-limit per IP â€” each call
+  // Public (called by the Refresh button), so rate-limit per IP — each call
   // burns GitHub Actions minutes and Gemini quota.
   const ip = getClientIp(request);
   const allowed = await checkRateLimit(`gh_refresh_rl:${ip}`, 4, 60 * 60, { failClosed: true });
   if (!allowed) {
     return NextResponse.json(
-      { ok: false, error: "Too many refreshes from this network â€” please try again later." },
+      { ok: false, error: "Too many refreshes from this network — please try again later." },
       { status: 429 }
     );
   }
@@ -50,8 +50,8 @@ export async function POST(request: NextRequest) {
 
     // GitHub returns 204 No Content on success
     if (res.status === 204) {
-      console.log("[trigger-github-refresh] âœ… Workflow dispatched");
-      return NextResponse.json({ ok: true, message: "GitHub refresh triggered â€” enriched briefing in ~2-3 min" });
+      console.log("[trigger-github-refresh] ✅ Workflow dispatched");
+      return NextResponse.json({ ok: true, message: "GitHub refresh triggered — enriched briefing in ~2-3 min" });
     }
 
     const err = await res.text().catch(() => "");
@@ -62,4 +62,3 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ ok: false, error: String(e) }, { status: 500 });
   }
 }
-

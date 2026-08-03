@@ -44,4 +44,3 @@ export function alertSourceLabel(article: Article): string {
   }
   return cleanAlertText(article.source);
 }
-

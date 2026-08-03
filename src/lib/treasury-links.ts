@@ -7,4 +7,3 @@ export function treasuryPressReleasePattern(): RegExp {
 export function normalizeTreasuryPressReleaseUrl(href: string): string {
   return new URL(href, "https://home.treasury.gov").href;
 }
-

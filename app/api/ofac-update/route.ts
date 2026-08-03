@@ -3,10 +3,10 @@ export const dynamic = "force-dynamic";
  * /api/ofac-update  POST
  * Accepts a diff result and applies it to the program's library snapshot in Redis.
  * New items are added, removed items are marked archived (not deleted).
- * The static library .ts file is NOT modified â€” changes live in Redis as overrides.
+ * The static library .ts file is NOT modified — changes live in Redis as overrides.
  *
- * GET /api/ofac-update?id=iran  â€” returns the Redis override for a program (if any)
- * POST /api/ofac-update         â€” applies a diff { programId, newGLs, newEOs, removedGLs, removedEOs, checkedAt }
+ * GET /api/ofac-update?id=iran  — returns the Redis override for a program (if any)
+ * POST /api/ofac-update         — applies a diff { programId, newGLs, newEOs, removedGLs, removedEOs, checkedAt }
  */
 import { NextRequest, NextResponse } from "next/server";
 import { SANCTIONS_PROGRAMS } from "@/src/lib/sanctions-programs-library";
@@ -81,7 +81,7 @@ async function redisLrange(key: string, start = 0, end = 19) {
   } catch { return []; }
 }
 
-// GET â€” fetch current override + history for a program
+// GET — fetch current override + history for a program
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
   const id = searchParams.get("id");
@@ -93,7 +93,7 @@ export async function GET(req: NextRequest) {
   return NextResponse.json({ programId: id, override, history });
 }
 
-// POST â€” apply diff to stored override
+// POST — apply diff to stored override
 export async function POST(req: NextRequest) {
   try {
   if (!isAuthorised(req)) return NextResponse.json({ error: "Unauthorized" }, { status: 401, headers: { "Cache-Control": "no-store" } });
@@ -107,7 +107,7 @@ export async function POST(req: NextRequest) {
     month: "long", day: "numeric", year: "numeric"
   });
 
-  // Load existing override (or empty) â€” also backfills any fields missing from
+  // Load existing override (or empty) — also backfills any fields missing from
   // an older/partial stored shape, so a schema change here can't crash a
   // later run's .find()/.filter() calls on a previously-saved override.
   const loaded = await redisGet(OVERRIDE_PFX + programId);
@@ -127,13 +127,13 @@ export async function POST(req: NextRequest) {
   // Track what changed this run
   const changes: string[] = [];
 
-  // New GLs â€” add to addedGLs list
+  // New GLs — add to addedGLs list
   for (const gl of newGLs) {
     const num = typeof gl === "string" ? gl : gl.number;
     if (!existing.addedGLs.find((g: any) => g.number === num)) {
       existing.addedGLs.push({
         number: num,
-        title: gl.title || `GL ${num} â€” pending title update`,
+        title: gl.title || `GL ${num} — pending title update`,
         date: dateStr,
         addedDate: dateStr,
         url: gl.url || null,
@@ -142,7 +142,7 @@ export async function POST(req: NextRequest) {
     }
   }
 
-  // Removed GLs â€” move to archivedGLs
+  // Removed GLs — move to archivedGLs
   for (const gl of removedGLs) {
     const num = typeof gl === "string" ? gl : gl.number;
     if (!existing.archivedGLs.find((g: any) => g.number === num)) {
@@ -164,7 +164,7 @@ export async function POST(req: NextRequest) {
     if (!existing.addedEOs.find((e: any) => e.number === num)) {
       existing.addedEOs.push({
         number: num,
-        title: eo.title || `EO ${num} â€” pending title update`,
+        title: eo.title || `EO ${num} — pending title update`,
         date: dateStr,
         addedDate: dateStr,
         url: eo.url || null,
@@ -244,11 +244,10 @@ export async function POST(req: NextRequest) {
     override: existing,
     message: changes.length > 0
       ? `Applied ${changes.length} change(s) to library`
-      : "No changes â€” library already up to date",
+      : "No changes — library already up to date",
   });
   } catch (e) {
     console.error("[ofac-update]", String(e));
     return NextResponse.json({ error: String(e) }, { status: 500 });
   }
 }
-

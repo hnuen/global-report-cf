@@ -59,4 +59,3 @@ export async function commitSourceItemCheckpoints(updates: Array<{ url: string; 
     // Optimization only: reprocessing is safer than losing a notice.
   }
 }
-

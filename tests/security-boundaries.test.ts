@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { checkRateLimit, getClientIp } from "../src/lib/rate-limit.ts";
-import { validateBackgroundRefreshBody, validateOfacUpdateBody, validateSearchQuery } from "../src/lib/request-validation.ts";
+import { validateBackgroundRefreshBody, validateBriefingPayload, validateOfacUpdateBody, validateSearchQuery } from "../src/lib/request-validation.ts";
 import { hasAnySecret, hasSecret } from "../src/lib/request-auth.ts";
 
 test("protected mutations fail closed and accept only the configured secret", () => {
@@ -54,4 +54,22 @@ test("OFAC updates require known programs and bounded change arrays", () => {
   assert.equal(validateOfacUpdateBody({ programId: "fake", newGLs: [] }, ids), null);
   assert.equal(validateOfacUpdateBody({ programId: "iran", newGLs: Array(51).fill("GL") }, ids), null);
   assert.equal(validateOfacUpdateBody({ programId: "iran", newGLs: [{ number: "1", url: "javascript:alert(1)" }] }, ids), null);
+});
+
+test("briefing saves reject oversized, unknown, and corrupted article data", () => {
+  const valid = {
+    lastUpdated: "August 2, 2026",
+    lastUpdatedIso: "2026-08-02T12:00:00.000Z",
+    articles: [{
+      id: 1, section: "sanctions", category: "DHS", region: "China", impact: "high",
+      date: "August 2, 2026", headline: "DHS expands the UFLPA Entity List",
+      body: ["The department added entities after a forced-labor review."], source: "DHS",
+      sourceUrl: "https://www.dhs.gov/news/example", aiGenerated: false, discoveryMethod: "direct",
+    }],
+    sidebar: {},
+  };
+  assert.ok(validateBriefingPayload(valid));
+  assert.equal(validateBriefingPayload({ ...valid, unexpected: true }), null);
+  assert.equal(validateBriefingPayload({ ...valid, articles: Array(1501).fill(valid.articles[0]) }), null);
+  assert.equal(validateBriefingPayload({ ...valid, articles: [{ ...valid.articles[0], headline: "����" }] }), null);
 });

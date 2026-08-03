@@ -94,7 +94,7 @@ export async function createPhoneSubscriber(
     createdAt: Date.now(),
   };
   await redis.set(`subscriber:${sub.id}`, JSON.stringify(sub));
-  await redis.set(`subscriber_token:${sub.token}`, sub.id);
+  await redis.set(`subscriber_token:${sub.token}`, sub.id, { ex: 7 * 24 * 3600 });
   await redis.sadd("subscribers_index", sub.id);
   return sub;
 }
@@ -120,7 +120,7 @@ export async function createNtfySubscriber(
     createdAt: Date.now(),
   };
   await redis.set(`subscriber:${sub.id}`, JSON.stringify(sub));
-  await redis.set(`subscriber_token:${sub.token}`, sub.id);
+  await redis.set(`subscriber_token:${sub.token}`, sub.id, { ex: 7 * 24 * 3600 });
   await redis.sadd("subscribers_index", sub.id);
   return sub;
 }
@@ -148,8 +148,8 @@ export async function createTelegramSubscriber(name?: string, email?: string, se
     createdAt: Date.now(),
   };
   await redis.set(`subscriber:${sub.id}`, JSON.stringify(sub));
-  await redis.set(`subscriber_token:${sub.token}`, sub.id);
-  await redis.set(`subscriber_telegram_link:${linkCode}`, sub.id);
+  await redis.set(`subscriber_token:${sub.token}`, sub.id, { ex: 7 * 24 * 3600 });
+  await redis.set(`subscriber_telegram_link:${linkCode}`, sub.id, { ex: 24 * 3600 });
   await redis.sadd("subscribers_index", sub.id);
   return sub;
 }
@@ -202,19 +202,35 @@ export async function linkTelegramChat(linkCode: string, chatId: string): Promis
 
 /** Returns null if the token doesn't match a pending record (already acted on, or invalid). */
 export async function approveSubscriber(token: string): Promise<Subscriber | null> {
+  const redis = await getRedis();
+  const claimed = await redis.set(`subscriber_token_claim:${token}`, "1", { nx: true, ex: 60 });
+  if (claimed !== "OK") return null;
   const sub = await getSubscriberByToken(token);
-  if (!sub || sub.status !== "pending_approval") return null;
+  if (!sub || sub.status !== "pending_approval") {
+    await redis.del(`subscriber_token_claim:${token}`);
+    return null;
+  }
   sub.status = "approved";
   sub.approvedAt = Date.now();
   await saveSubscriber(sub);
+  await redis.del(`subscriber_token:${token}`);
+  await redis.del(`subscriber_token_claim:${token}`);
   return sub;
 }
 
 export async function denySubscriber(token: string): Promise<Subscriber | null> {
+  const redis = await getRedis();
+  const claimed = await redis.set(`subscriber_token_claim:${token}`, "1", { nx: true, ex: 60 });
+  if (claimed !== "OK") return null;
   const sub = await getSubscriberByToken(token);
-  if (!sub || sub.status !== "pending_approval") return null;
+  if (!sub || sub.status !== "pending_approval") {
+    await redis.del(`subscriber_token_claim:${token}`);
+    return null;
+  }
   sub.status = "denied";
   await saveSubscriber(sub);
+  await redis.del(`subscriber_token:${token}`);
+  await redis.del(`subscriber_token_claim:${token}`);
   return sub;
 }
 

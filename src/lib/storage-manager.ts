@@ -45,7 +45,7 @@ export class StorageManager {
    * Save briefing — writes to ALL available adapters (for redundancy).
    * Logs but does not throw if some fail.
    */
-  async save(briefing: Briefing): Promise<void> {
+  async save(briefing: Briefing, options: { requirePersistent?: boolean } = {}): Promise<void> {
     const writable = this.adapters.filter(a => !this.isSkippable(a, "write"));
     const results = await Promise.allSettled(
       writable.map(async a => {
@@ -64,6 +64,14 @@ export class StorageManager {
     });
 
     const failures = results.filter(r => r.status === "rejected");
+
+    if (options.requirePersistent) {
+      const persistentIndex = writable.findIndex(adapter => adapter.id === "upstash");
+      if (persistentIndex < 0) throw new Error("Persistent Upstash storage is not configured");
+      if (results[persistentIndex]?.status !== "fulfilled") {
+        throw new Error("Persistent Upstash storage failed to save briefing");
+      }
+    }
 
     if (failures.length === results.length) {
       throw new Error("All storage adapters failed to save briefing");

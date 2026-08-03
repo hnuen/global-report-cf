@@ -29,4 +29,3 @@ export async function checkRateLimit(
 export function getClientIp(req: Request): string {
   return req.headers.get("cf-connecting-ip") ?? "unknown";
 }
-

@@ -6,6 +6,7 @@ import { buildStorageManager } from "@/src/lib/storage-manager";
 import { saveArticlesToLibrary } from "@/src/lib/article-library";
 import type { Briefing } from "@/src/lib/types";
 import { hasAnySecret } from "@/src/lib/request-auth";
+import { validateBriefingPayload } from "@/src/lib/request-validation";
 
 export const dynamic = "force-dynamic";
 
@@ -22,8 +23,13 @@ export async function POST(request: NextRequest) {
   }
 
   try {
-    const body = await request.json() as Briefing & { merge?: boolean };
-    const { merge, ...briefing } = body as any;
+    const contentLength = Number(request.headers.get("content-length") ?? 0);
+    if (Number.isFinite(contentLength) && contentLength > 5 * 1024 * 1024) {
+      return NextResponse.json({ error: "Briefing payload too large" }, { status: 413 });
+    }
+    const body = validateBriefingPayload(await request.json().catch(() => null));
+    if (!body) return NextResponse.json({ error: "Invalid briefing payload" }, { status: 400 });
+    const { merge, ...briefing } = body;
     if (!briefing?.articles?.length) {
       return NextResponse.json({ error: "Invalid briefing — no articles" }, { status: 400 });
     }
@@ -86,11 +92,9 @@ export async function POST(request: NextRequest) {
       }
     }
 
-    await storage.save(toSave);
+    await storage.save(toSave, { requirePersistent: true });
     // Accumulate into the 6-month article library (fire-and-forget — non-fatal)
-    saveArticlesToLibrary(toSave.articles).catch(e =>
-      console.warn("[save-briefing] Library save failed (non-fatal):", String(e).slice(0, 80))
-    );
+    await saveArticlesToLibrary(toSave.articles);
     const health = storage.getHealth();
     console.log(`[save-briefing] Saved ${toSave.articles.length} articles, lastUpdated: ${toSave.lastUpdated}`);
     return NextResponse.json({ ok: true, articleCount: toSave.articles.length, lastUpdated: toSave.lastUpdated, health });

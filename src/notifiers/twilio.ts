@@ -10,8 +10,8 @@
  *   ALERT_TO_NUMBERS     — comma-separated recipients, e.g. +14155559999
  */
 
-import type { Notifier, NotifyResult } from "./types";
-import type { ScoredArticle }          from "../lib/alert-scorer";
+import type { Notifier, NotifyResult, NotifyOptions } from "./types";
+import { buildAlertKey, type ScoredArticle } from "../lib/alert-scorer";
 import { formatAlert }                 from "./format";
 import { listApprovedByChannel }       from "../lib/subscribers";
 import { mergeRecipients } from "../lib/alert-categories";
@@ -33,7 +33,7 @@ export class TwilioNotifier implements Notifier {
     );
   }
 
-  async send(articles: ScoredArticle[], appUrl: string, options = { defaultMinScore: 65, maxAlertsPerRun: 5 }): Promise<NotifyResult> {
+  async send(articles: ScoredArticle[], appUrl: string, options: NotifyOptions = { defaultMinScore: 65, maxAlertsPerRun: 5 }): Promise<NotifyResult> {
     const sid       = process.env.TWILIO_ACCOUNT_SID!;
     const token     = process.env.TWILIO_AUTH_TOKEN!;
     const from      = process.env.TWILIO_FROM_NUMBER!;
@@ -62,11 +62,15 @@ export class TwilioNotifier implements Notifier {
     const auth = btoa(`${sid}:${token}`);
     let sent   = 0;
     let lastError = "";
+    const deliveries: { recipient: string; alertKeys: string[] }[] = [];
 
     for (const recipient of recipients) {
-      const mine = articlesForSubscriber(articles, recipient).slice(0, options.maxAlertsPerRun);
+      const mine = articlesForSubscriber(articles, recipient)
+        .filter(article => options.shouldSend?.(this.id, recipient.to, buildAlertKey(article.article)) ?? true)
+        .slice(0, options.maxAlertsPerRun);
       if (mine.length === 0) continue; // nothing in this recipient's categories
       const to = recipient.to;
+      const deliveredKeys: string[] = [];
 
       for (const sa of mine) {
         const { plain } = formatAlert(sa, appUrl);
@@ -83,6 +87,7 @@ export class TwilioNotifier implements Notifier {
           const data = await res.json() as { sid?: string; message?: string; code?: number };
           if (res.ok && data.sid) {
             sent++;
+            deliveredKeys.push(buildAlertKey(sa.article));
             console.log(`[twilio] Sent to ${to}: ${data.sid}`);
           } else {
             // Twilio returns a numeric error code + human message — keep both
@@ -95,12 +100,14 @@ export class TwilioNotifier implements Notifier {
           console.error(`[twilio] Fetch error to ${to}:`, e);
         }
       }
+      if (deliveredKeys.length > 0) deliveries.push({ recipient: to, alertKeys: deliveredKeys });
     }
 
     return {
       channel: this.name,
       success: sent > 0,
       recipients: sent,
+      deliveries,
       error: sent === 0
         ? `0 delivered — last Twilio error: ${lastError || "no articles matched any recipient's categories"}`
         : undefined,

@@ -8,11 +8,11 @@ import { NextRequest, NextResponse }  from "next/server";
 import { refreshBriefing, loadBriefing } from "@/src/lib/orchestrator";
 import { scoreAll }                   from "@/src/lib/alert-scorer";
 import { getNotifierManager }         from "@/src/notifiers/manager";
-import { applySuccessfulDeliveryCooldowns } from "@/src/lib/alert-delivery";
 import { articleMatchesAlertTopic, alertSourceLabel, cleanAlertText } from "@/src/lib/alert-topic";
 import { loadArticleLibrary } from "@/src/lib/article-library";
 import { mergeMonitorArticles } from "@/src/lib/monitor-articles";
 import { loadAlertSettings } from "@/src/lib/alert-settings";
+import { acquireDistributedLock } from "@/src/lib/distributed-lock";
 
 export const maxDuration = 120;
 
@@ -38,19 +38,6 @@ async function wasAlerted(key: string): Promise<boolean> {
     const d = await r.json();
     return !!d.result;
   } catch { return false; }
-}
-
-async function markAlerted(key: string, cooldownMinutes: number): Promise<void> {
-  const u = process.env.UPSTASH_REDIS_REST_URL;
-  const t = process.env.UPSTASH_REDIS_REST_TOKEN;
-  if (!u || !t) return;
-  try {
-    await fetch(`${u}/set/${encodeURIComponent("alert:"+key)}`, {
-      method: "POST",
-      headers: { Authorization: `Bearer ${t}`, "Content-Type": "application/json" },
-      body: JSON.stringify({ value: "1", ex: cooldownMinutes * 60 }),
-    });
-  } catch {}
 }
 
 // â”€â”€ URL pre-flight check â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -133,7 +120,6 @@ async function verifyAlertUrls(
 
 async function runMonitor(topic?: string, force = false) {
   const appUrl = process.env.APP_URL ?? "";
-  const cooldownMinutes = Number(process.env.ALERT_COOLDOWN_MINUTES ?? 10080);
   const alertSettings = await loadAlertSettings();
   const maxAlertsPerRun = alertSettings.maxAlertsPerRun;
 
@@ -165,6 +151,9 @@ async function runMonitor(topic?: string, force = false) {
   const candidates = scored.filter(s =>
     s.shouldAlert && articleMatchesAlertTopic(s.article, topic)
   );
+  // Internal notifiers use per-recipient cooldowns. Verify every candidate so
+  // a failed recipient can retry without being suppressed by another channel.
+  const managerCandidates = candidates.length > 0 ? await verifyAlertUrls(candidates) : [];
 
   // 3. Deduplicate
   const { buildAlertKey } = await import("@/src/lib/alert-scorer");
@@ -192,17 +181,15 @@ async function runMonitor(topic?: string, force = false) {
 
   // 4. Fire notifications only for new, link-verified alerts
   const manager = getNotifierManager();
-  const notifyResult = verifiedAlerts.length > 0
-    ? await manager.notify(verifiedAlerts, appUrl, alertSettings.threshold, maxAlertsPerRun)
+  const notifyResult = managerCandidates.length > 0
+    ? await manager.notify(managerCandidates, appUrl, alertSettings.threshold, maxAlertsPerRun)
     : { sent: 0, skipped: 0, channels: [], results: [], totalAlerts: 0, deliveredAlertKeys: [] };
 
   // 5. Start cooldown only for articles a notification channel actually
   // delivered. Failed attempts remain eligible for the next monitor run.
-  await applySuccessfulDeliveryCooldowns(
-    notifyResult.deliveredAlertKeys,
-    cooldownMinutes,
-    markAlerted,
-  );
+  // The global cooldown is reserved for the workflow's external ntfy send and
+  // is recorded by /api/monitor/delivered. Internal channels persist their
+  // own per-recipient cooldowns in NotifierManager.
 
   return {
     ok:           true,
@@ -246,9 +233,21 @@ export async function POST(req: NextRequest) {
   if (!isAuthorised(req)) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
+  let lock: Awaited<ReturnType<typeof acquireDistributedLock>> = null;
   try {
+    lock = await acquireDistributedLock("monitor-delivery-lock", 180);
+    if (!lock) {
+      return NextResponse.json(
+        { error: "Another monitor run is already active" },
+        { status: 409, headers: { "Cache-Control": "no-store" } },
+      );
+    }
     const body = await req.json().catch(() => ({})) as { topic?: string; force?: boolean };
     return NextResponse.json(await runMonitor(body.topic, body.force ?? false));
-  } catch (e) { return NextResponse.json({ error: String(e) }, { status: 500 }); }
+  } catch (e) {
+    return NextResponse.json({ error: String(e) }, { status: 500 });
+  } finally {
+    await lock?.release().catch(error => console.warn("[monitor] lock release failed:", String(error).slice(0, 100)));
+  }
 }
 

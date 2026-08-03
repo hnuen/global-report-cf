@@ -82,27 +82,4 @@ export default {
   // No HTTP traffic expected — this exists only so the Worker has a `fetch`
   // handler (required) and so you can manually hit the URL to test dispatch
   // without waiting for the next cron tick.
-  async fetch(request, env, ctx) {
-    const url = new URL(request.url);
-    if (url.pathname === "/trigger") {
-      try {
-        const result = await triggerWorkflow(env, DEFAULT_WORKFLOW_FILE, inputsFor(DEFAULT_WORKFLOW_FILE));
-        return new Response(`Dispatched ${DEFAULT_WORKFLOW_FILE} ok (HTTP ${result.status})`, { status: 200 });
-      } catch (err) {
-        return new Response(`Failed: ${err.message}`, { status: 500 });
-      }
-    }
-    if (url.pathname === "/trigger-monitor") {
-      try {
-        const result = await triggerWorkflow(env, "monitor.yml", inputsFor("monitor.yml"));
-        return new Response(`Dispatched monitor.yml ok (HTTP ${result.status})`, { status: 200 });
-      } catch (err) {
-        return new Response(`Failed: ${err.message}`, { status: 500 });
-      }
-    }
-    return new Response(
-      "global-report-cron-trigger: cron-only worker. Visit /trigger to manually fire refresh.yml, or /trigger-monitor for monitor.yml.",
-      { status: 200 }
-    );
-  },
 };

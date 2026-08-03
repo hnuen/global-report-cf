@@ -146,36 +146,53 @@ export class NotifierManager {
       return summary;
     }
 
-    // Apply cooldown filter
+    // Recipient-capable channels apply cooldowns inside each notifier, after
+    // the recipient's own score/source preferences have been evaluated.
     const cooldowns = await loadCooldowns();
-    const toSend: ScoredArticle[] = [];
-
-    for (const sa of scored) {
-      const key = buildAlertKey(sa.article);
-      if (now - (cooldowns[key] ?? 0) < cooldownMs) {
-        console.log(`[notifier] Cooldown: "${sa.article.headline.slice(0, 50)}â€¦"`);
-        summary.skipped++;
-        continue;
-      }
-      toSend.push(sa);
-    }
-
+    const toSend: ScoredArticle[] = [...scored];
     if (toSend.length === 0) {
       console.log("[notifier] All articles on cooldown or over limit");
       return summary;
     }
 
-    const articlesForChannel = (channel: Notifier) =>
-      SUBSCRIBER_CHANNEL_BY_NOTIFIER_ID[channel.id]
-        ? toSend
-        : toSend.filter(article => article.score >= defaultMinScore).slice(0, maxPerRun);
+    const articlesForChannel = (channel: Notifier) => {
+      if (SUBSCRIBER_CHANNEL_BY_NOTIFIER_ID[channel.id]) return toSend;
+      return toSend
+        .filter(article => article.score >= defaultMinScore)
+        .filter(article => now - (cooldowns[`static:${buildAlertKey(article.article)}`] ?? 0) >= cooldownMs)
+        .slice(0, maxPerRun);
+    };
     const deliveredKeys = new Set<string>();
+    const notifyOptions = {
+      defaultMinScore,
+      maxAlertsPerRun: maxPerRun,
+      shouldSend: (notifierId: string, recipient: string, alertKey: string) =>
+        now - (cooldowns[`recipient:${notifierId}:${recipient}:${alertKey}`] ?? 0) >= cooldownMs,
+    };
+    const recordDeliveries = (result: NotifyResult, channel: Notifier) => {
+      if (result.deliveries?.length) {
+        for (const delivery of result.deliveries) {
+          for (const key of delivery.alertKeys) {
+            cooldowns[`recipient:${channel.id}:${delivery.recipient}:${key}`] = now;
+            deliveredKeys.add(key);
+          }
+        }
+        return;
+      }
+      if (result.success) {
+        for (const article of articlesForChannel(channel)) {
+          const key = buildAlertKey(article.article);
+          cooldowns[`static:${key}`] = now;
+          deliveredKeys.add(key);
+        }
+      }
+    };
 
     // Send via channels
     if (strategy === "all") {
       // Send to ALL configured channels in parallel
       const results = await Promise.allSettled(
-        channels.map(ch => ch.send(articlesForChannel(ch), appUrl, { defaultMinScore, maxAlertsPerRun: maxPerRun }))
+        channels.map(ch => ch.send(articlesForChannel(ch), appUrl, notifyOptions))
       );
       results.forEach((r, i) => {
         const result = r.status === "fulfilled"
@@ -184,7 +201,7 @@ export class NotifierManager {
         summary.results.push(result);
         if (result.success) {
           summary.channels.push(result.channel);
-          articlesForChannel(channels[i]).forEach(article => deliveredKeys.add(buildAlertKey(article.article)));
+          recordDeliveries(result, channels[i]);
         }
       });
     } else {
@@ -212,12 +229,12 @@ export class NotifierManager {
       for (const ch of fallbackChannels) {
         try {
           console.log(`[notifier] Trying: ${ch.name}`);
-          const result = await ch.send(articlesForChannel(ch), appUrl, { defaultMinScore, maxAlertsPerRun: maxPerRun });
+          const result = await ch.send(articlesForChannel(ch), appUrl, notifyOptions);
           summary.results.push(result);
           if (result.success) {
             console.log(`[notifier] âœ… Delivered via ${ch.name}`);
             summary.channels.push(ch.name);
-            articlesForChannel(ch).forEach(article => deliveredKeys.add(buildAlertKey(article.article)));
+            recordDeliveries(result, ch);
             break;
           } else {
             console.warn(`[notifier] ${ch.name} returned failure: ${result.error}`);
@@ -233,11 +250,11 @@ export class NotifierManager {
       for (const ch of alwaysSendChannels) {
         try {
           console.log(`[notifier] Sending to subscriber channel: ${ch.name}`);
-          const result = await ch.send(articlesForChannel(ch), appUrl, { defaultMinScore, maxAlertsPerRun: maxPerRun });
+          const result = await ch.send(articlesForChannel(ch), appUrl, notifyOptions);
           summary.results.push(result);
           if (result.success) {
             summary.channels.push(ch.name);
-            articlesForChannel(ch).forEach(article => deliveredKeys.add(buildAlertKey(article.article)));
+            recordDeliveries(result, ch);
           } else {
             console.warn(`[notifier] ${ch.name} returned failure: ${result.error}`);
           }
@@ -253,10 +270,7 @@ export class NotifierManager {
     // Mark alerts as sent (update cooldowns)
     const delivered = summary.channels.length > 0;
     if (delivered) {
-      deliveredKeys.forEach(key => {
-        cooldowns[key] = now;
-        summary.deliveredAlertKeys.push(key);
-      });
+      deliveredKeys.forEach(key => summary.deliveredAlertKeys.push(key));
       await saveCooldowns(cooldowns);
       summary.sent = deliveredKeys.size;
     }

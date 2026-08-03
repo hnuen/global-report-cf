@@ -1,5 +1,5 @@
 name = "global-report-cf"
-compatibility_date = "2025-04-01"
+compatibility_date = "2026-08-01"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".open-next"
 
@@ -14,4 +14,8 @@ pages_build_output_dir = ".open-next"
 # that and Cloudflare killed them with HTTP 503 "error 1102: Worker exceeded
 # resource limits". Raised to 30000ms (30s) so those requests can complete.
 cpu_ms = 30000
-subrequest_limit = 500
+subrequests = 500
+
+[observability]
+enabled = true
+head_sampling_rate = 0.1
