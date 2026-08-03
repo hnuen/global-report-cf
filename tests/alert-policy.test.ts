@@ -11,6 +11,7 @@ import type { Briefing } from "../src/lib/types.ts";
 import { articleMatchesAlertTopic, alertSourceLabel, cleanAlertText } from "../src/lib/alert-topic.ts";
 import { mergeMonitorArticles } from "../src/lib/monitor-articles.ts";
 import { articlesForSubscriber, sourceGroupForArticle, validateSourceGroups } from "../src/lib/alert-sources.ts";
+import { itemCheckpointKey, sourceCheckpointKey } from "../src/lib/source-item-checkpoints.ts";
 
 function briefing(articles: Article[]): Briefing {
   return { lastUpdated: "test", articles, sidebar: {} as Briefing["sidebar"] };
@@ -222,6 +223,20 @@ test("the Gemini refresh avoids duplicate Cloudflare source work and bounds fina
   assert.equal(workflow.includes("Fetch official sources"), false);
   assert.ok(script.includes("regionsNews.slice(0, 20)"));
   assert.ok(script.includes("const delays = [0, 5000, 15000, 30000]"));
+});
+
+test("direct sources use stable newest-item checkpoints and commit them only after saving", () => {
+  assert.equal(
+    itemCheckpointKey("Notice title ||| https://agency.gov/news/1 ||| DATE:2026-08-02"),
+    itemCheckpointKey("Notice title   ||| https://agency.gov/news/1 ||| DATE:2026-08-01"),
+  );
+  assert.equal(sourceCheckpointKey("https://agency.gov/feed"), sourceCheckpointKey("https://agency.gov/feed"));
+
+  const fetcher = readFileSync(new URL("../src/lib/official-sources.ts", import.meta.url), "utf8");
+  const orchestrator = readFileSync(new URL("../src/lib/orchestrator.ts", import.meta.url), "utf8");
+  assert.ok(fetcher.includes("previous?.newest === itemKeys[0]"));
+  assert.ok(fetcher.includes("firstSeen + 3"));
+  assert.match(orchestrator, /if \(preSaveSuccess\)[\s\S]*commitSourceItemCheckpoints/);
 });
 
 
