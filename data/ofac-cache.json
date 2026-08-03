@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T17:09:54.323Z",
+  "updatedAt": "2026-08-03T19:08:59.685Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260803",
@@ -3078,6 +3078,12 @@
   ],
   "bbcNews": [
     {
+      "title": "Russia says seven killed and 40 injured by Ukrainian drone hitting busy beach",
+      "url": "https://www.bbc.co.uk/news/articles/cr7kmnyrdn7o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 3, 2026",
+      "description": "Three children were killed when the drone crashed at a popular resort on the Black Sea."
+    },
+    {
       "title": "Iran says it is in talks with Oman but not the US after Trump says negotiations to resume",
       "url": "https://www.bbc.co.uk/news/articles/c23579jzv08o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 3, 2026",
@@ -3146,32 +3152,75 @@
   ],
   "ajNews": [
     {
+      "title": "Drone slams into Russian beach, killing at least 7 people",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/3/drone-slams-into-russian-beach-killing-at-least-7-people?traffic_source=rss",
+      "date": "August 3, 2026",
+      "description": "Video shows the moment a drone struck a crowded beach near the Russian Black Sea resort of Gelendzhik."
+    },
+    {
+      "title": "Trump blasts ‘duplicitous’ Iran after Tehran denies it is in talks with the US",
+      "url": "https://www.aljazeera.com/news/2026/8/3/trump-blasts-duplicitous-iran-after-tehran-denies-it-is-in-talks-with-the-us?traffic_source=rss",
+      "date": "August 3, 2026",
+      "description": "US president demands &#039;Total Surrender&#039; amid escalating naval blockade in the crucial Strait of Hormuz."
+    },
+    {
       "title": "Iraqi Kurdish regional leader meets Syrian president in Damascus",
       "url": "https://www.aljazeera.com/news/2026/8/3/iraqi-kurdish-regional-leader-meets-syrian-president-in-damascus?traffic_source=rss",
       "date": "August 3, 2026",
       "description": "Barzani meets Syria&#039;s al-Sharaa in Damascus to discuss SDF integration and Kurdish rights in post-Assad Syria."
     },
     {
-      "title": "More than 17 killed as Russia and Ukraine trade heavy attacks",
+      "title": "At least 17 killed as Russia and Ukraine trade heavy attacks",
       "url": "https://www.aljazeera.com/news/2026/8/3/more-than-10-killed-as-russia-and-ukraine-trade-heavy-attacks?traffic_source=rss",
       "date": "August 3, 2026",
       "description": "Exchange of fire intensifies as the war, now in its fifth year, shows no signs of slowing down."
-    },
-    {
-      "title": "Detained Myanmar leader Suu Kyi has first foreign visitor in five years",
-      "url": "https://www.aljazeera.com/news/2026/8/3/detained-myanmar-leader-suu-kyi-has-first-foreign-visitor-in-five-years?traffic_source=rss",
-      "date": "August 3, 2026",
-      "description": "Aung San Suu Kyi has met a Red Cross representative in her first confirmed contact with a foreign official since 2021."
-    },
-    {
-      "title": "Who will shape post-war Iran?",
-      "url": "https://www.aljazeera.com/opinions/2026/8/3/who-will-shape-post-war-iran?traffic_source=rss",
-      "date": "August 3, 2026",
-      "description": "There are competing narratives in Tehran for its post-war recovery."
     }
   ],
-  "occNews": [],
-  "economicsNews": [],
+  "occNews": [
+    {
+      "title": "OCC Announces Enforcement Actions for July 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-59.html",
+      "date": "July 16, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for July 2026."
+    }
+  ],
+  "economicsNews": [
+    {
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+      "date": "July 29, 2026",
+      "description": "Federal Reserve issues FOMC statement",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Minutes of the Board&#39;s discount rate meetings on June 8 and June 17, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260714a.htm",
+      "date": "July 14, 2026",
+      "description": "Minutes of the Board&#39;s discount rate meetings on June 8 and June 17, 2026",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Federal Reserve announces the leadership and objectives of its task forces to advance the conduct of monetary policy",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260709a.htm",
+      "date": "July 9, 2026",
+      "description": "Federal Reserve announces the leadership and objectives of its task forces to advance the conduct of monetary policy",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Minutes of the Federal Open Market Committee, June 16-17, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260708a.htm",
+      "date": "July 8, 2026",
+      "description": "Minutes of the Federal Open Market Committee, June 16-17, 2026",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Federal Reserve Board&#39;s annual bank stress test confirms that large banks are well positioned to weather a severe recession and able to continue to lend to households and businesses",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260624a.htm",
+      "date": "June 24, 2026",
+      "description": "Federal Reserve Board&#39;s annual bank stress test confirms that large banks are well positioned to weather a severe recession and able to continue to lend to households and businesses",
+      "category": "Banking and Consumer Regulatory Policy"
+    }
+  ],
   "bisNews": [
     {
       "title": "Implementation of EAR Export Controls on Silencers, Mufflers, and Sound Suppressors; and Other Firearms Related Changes",
@@ -3281,7 +3330,7 @@
       "title": "Todd Blanche formally withdraws Trump's 'anti-weaponisation' fund plan",
       "url": "https://www.bbc.co.uk/news/articles/c3w05gx32d4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 3, 2026",
-      "description": "Two Republican senators wanted a written guarantee that Trump would not revive a controversial proposal."
+      "description": "Trump's controversial $1.8bn \"anti-weaponisation\" fund could have been used to compensate people prosecuted over the US Capitol riot."
     },
     {
       "title": "Malaysian boy on trial for allegedly murdering girl in school",
@@ -3608,6 +3657,36 @@
       "description": "A London shop selling goods designed for left-handed people was doing a brisk trade."
     },
     {
+      "title": "US announces first two deaths from cyclospora outbreak",
+      "url": "https://www.aljazeera.com/news/2026/8/3/us-announces-first-two-deaths-from-cyclospora-outbreak?traffic_source=rss",
+      "date": "August 3, 2026",
+      "description": "Authorities in the Midwestern state of Michigan say that two people who died had underlying conditions."
+    },
+    {
+      "title": "Can Netanyahu survive Israel’s most consequential election?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/3/can-netanyahu-survive-israels-most-consequential-election?traffic_source=rss",
+      "date": "August 3, 2026",
+      "description": "Israelis head to the polls in October for the country&#039;s first election since the war on Gaza began."
+    },
+    {
+      "title": "Israel top court hears challenge to UNRWA ban",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/3/israel-top-court-hears-challenge-to-unrwa-ban?traffic_source=rss",
+      "date": "August 3, 2026",
+      "description": "Israel&#039;s highest court heard a constitutional challenge to legislation banning UNRWA&#039;s operations in Israel."
+    },
+    {
+      "title": "Republicans say they will back Blanche after US Justice Department order",
+      "url": "https://www.aljazeera.com/news/2026/8/3/republicans-say-they-will-back-blanche-after-us-justice-department-order?traffic_source=rss",
+      "date": "August 3, 2026",
+      "description": "Two Republican senators say they will end their opposition after order cancelling controversial $1.8bn fund."
+    },
+    {
+      "title": "New illegal Israeli outpost spotted in occupied West Bank",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/3/new-illegal-israeli-outpost-spotted-in-occupied-west-bank?traffic_source=rss",
+      "date": "August 3, 2026",
+      "description": "Palestinians say settlers are establishing a new illegal outpost near Arabuna, Deir Ghazala and Faqqua."
+    },
+    {
       "title": "Uncertainty on Iranians’ minds as Trump fluctuates on war and talk",
       "url": "https://www.aljazeera.com/news/2026/8/3/uncertainty-on-iranians-minds-as-trump-fluctuates-on-war-and-talk?traffic_source=rss",
       "date": "August 3, 2026",
@@ -3702,36 +3781,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/3/08-03-2026-india-landslide-clip?traffic_source=rss",
       "date": "August 3, 2026",
       "description": "Heavy rain triggered a landslide in India&#039;s Kerala state, sending part of a hillside crashing onto a highway as people f"
-    },
-    {
-      "title": "Massive Attack says members held after pro-Palestine display in Singapore",
-      "url": "https://www.aljazeera.com/news/2026/8/3/massive-attack-says-members-held-after-pro-palestine-display-in-singapore?traffic_source=rss",
-      "date": "August 3, 2026",
-      "description": "Music group says &#039;proud&#039; to have made &#039;impromptu expression&#039; of support for Palestine by unfurling flag during concert."
-    },
-    {
-      "title": "Why genocide keeps repeating in Sudan",
-      "url": "https://www.aljazeera.com/opinions/2026/8/3/why-genocide-keeps-repeating-in-sudan?traffic_source=rss",
-      "date": "August 3, 2026",
-      "description": "The lack of international action after the atrocities in el-Geneina and el-Fasher has doomed el-Obeid."
-    },
-    {
-      "title": "Protests, boycott cast shadow on Pakistan-administered Kashmir election",
-      "url": "https://www.aljazeera.com/news/2026/8/3/protests-boycott-cast-shadow-on-pakistan-administered-kashmir-election?traffic_source=rss",
-      "date": "August 3, 2026",
-      "description": "Second round in regional elections held amid deadly clashes and heightened tensions over demands for electoral reforms."
-    },
-    {
-      "title": "Palestine’s new ambassador to Spain calls for deeper friendship",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/3/palestines-new-ambassador-to-spain-calls-for-deeper-friendship?traffic_source=rss",
-      "date": "August 3, 2026",
-      "description": "Palestine&#039;s new ambassador to Spain, Fadi Elhusseini, has shared his first message since taking office."
-    },
-    {
-      "title": "Pakistan-administered Kashmir elections and protests – all you need to know",
-      "url": "https://www.aljazeera.com/news/2026/8/3/pakistan-administered-kashmir-elections-and-protests-all-you-need-to-know?traffic_source=rss",
-      "date": "August 3, 2026",
-      "description": "Protests over refugee seats turn deadly, forcing staggered elections under internet blackout and calls for a boycott."
     }
   ]
 }
