@@ -821,11 +821,10 @@ archive: {
       // GL 58/59 are unconfirmed (not on the live active page at fetch time, but URLs look genuine) — left as-is pending a direct PDF check.
                         { number: "GL 5Y", title: "Authorizing Certain Transactions Related to the Petróleos de Venezuela, S.A. 2020 8.5 Percent Bond on or After September 17, 2026", date: "June 18, 2026", url: "https://ofac.treasury.gov/media/936651/download?inline", addedDate: "August 3, 2026" },
 { number: "GL 4C", title: "Venezuela General License 4C", date: "April 17, 2019", url: "https://ofac.treasury.gov/media/31741/download?inline", addedDate: "June 27, 2026" },
-            { number: "GL 30B", title: "Authorizing Certain Transactions Necessary to Port and Airport Operations", date: "February 2, 2021", url: "https://ofac.treasury.gov/media/934996/download?inline", addedDate: "June 27, 2026" },
       { number: "GL 24A", title: "Certain Transactions Involving the Government of Venezuela Related to Telecommunications and Mail Authorized", date: "August 5, 2019", url: "https://ofac.treasury.gov/media/935731/download?inline", addedDate: "June 26, 2026" },
       { number: "GL 46C", title: "Authorizing Certain Activities Involving Venezuelan- Origin Oil or Petrochemical Products", date: "March 13, 2026", url: "https://ofac.treasury.gov/media/935661/download?inline", addedDate: "June 26, 2026" },
       { number: "GL 47A", title: "Authorizing the Sale of U.S.-Origin Diluents to Venezuela", date: "February 3, 2026", url: "https://ofac.treasury.gov/media/935666/download?inline", addedDate: "June 26, 2026" },
-      { number: "GL 48B", title: "Venezuela General License 48B", date: "June 10, 2026", url: "https://ofac.treasury.gov/media/935671/download?inline", addedDate: "June 26, 2026" },
+      { number: "GL 48B", title: "Authorizing the Supply of Certain Items and Services to Venezuela", date: "March 13, 2026", url: "https://ofac.treasury.gov/media/935671/download?inline", addedDate: "June 26, 2026" },
       { number: "GL 50B", title: "Venezuela General License 50B", date: "June 10, 2026", url: "https://ofac.treasury.gov/media/935676/download?inline", addedDate: "June 26, 2026" },
       { number: "GL 51B", title: "Venezuela General License 51B", date: "June 10, 2026", url: "https://ofac.treasury.gov/media/935681/download?inline", addedDate: "June 26, 2026" },
       { number: "GL 52A", title: "Venezuela General License 52A", date: "June 10, 2026", url: "https://ofac.treasury.gov/media/935686/download?inline", addedDate: "June 26, 2026" },
