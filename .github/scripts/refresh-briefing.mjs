@@ -1,8 +1,11 @@
+Warning: truncated output (original token count: 30500)
+Total output lines: 2187
+
 /**
  * refresh-briefing.mjs
- * Runs from GitHub Actions — no CF 30s wall-clock limit here.
+ * Runs from GitHub Actions â€” no CF 30s wall-clock limit here.
  * 1. Direct-scrapes official RSS/Atom/JSON feeds (OFAC, OFSI, EU, UN, BBC,
- *    Al Jazeera, OCC, Federal Reserve, BIS, Regions) — no LLM involved.
+ *    Al Jazeera, OCC, Federal Reserve, BIS, Regions) â€” no LLM involved.
  * 2. Calls Gemini 2.0 Flash with Google Search grounding for the full
  *    six-section briefing, and merges the direct-scrape articles in
  *    (deduped by sourceUrl) so live feed data always shows up even if
@@ -10,9 +13,9 @@
  * 3. POSTs the merged briefing JSON to /api/save-briefing on the CF app.
  *
  * Required env vars (GitHub secrets):
- *   GEMINI_API_KEY      — same key used in CF env vars
- *   APP_URL             — e.g. https://global-report-cf.pages.dev
- *   SAVE_BRIEFING_SECRET — shared secret, must match CF env var
+ *   GEMINI_API_KEY      â€” same key used in CF env vars
+ *   APP_URL             â€” e.g. https://global-report-cf.pages.dev
+ *   SAVE_BRIEFING_SECRET â€” shared secret, must match CF env var
  */
 
 import { syncProgramsLibrary } from "./sync-programs-library.mjs";
@@ -26,14 +29,14 @@ const GITHUB_REPO    = process.env.GITHUB_REPOSITORY || ""; // auto-set by Actio
 if (!GEMINI_API_KEY) { console.error("Missing GEMINI_API_KEY"); process.exit(1); }
 if (!APP_URL)        { console.error("Missing APP_URL");        process.exit(1); }
 
-// ── Scrape OFAC pages directly (GitHub Actions IPs not blocked by ofac.treasury.gov) ─
+// â”€â”€ Scrape OFAC pages directly (GitHub Actions IPs not blocked by ofac.treasury.gov) â”€
 function stripHtml(html) {
   return html
     .replace(/<script[\s\S]*?<\/script>/gi, " ")
     .replace(/<style[\s\S]*?<\/style>/gi, " ")
     // Decode entities BEFORE stripping tags: Drupal RSS <description> fields
     // (used by the EU finance-news feed) HTML-escape their markup, e.g.
-    // "&lt;p&gt;text&lt;/p&gt;" — decoding first turns that into real tags
+    // "&lt;p&gt;text&lt;/p&gt;" â€” decoding first turns that into real tags
     // so the tag-strip pass below removes them instead of leaking literal
     // "<p>" text into the parsed description.
     .replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&nbsp;/g, " ")
@@ -60,7 +63,7 @@ async function fetchOfac(url) {
   }
 }
 
-// 1. Parse recent-actions listing — global scan, no dependency on HTML structure
+// 1. Parse recent-actions listing â€” global scan, no dependency on HTML structure
 function parseRecentActions(html) {
   const entries = [];
   const dateRe = /(\w+ \d+, \d{4})/;
@@ -70,7 +73,7 @@ function parseRecentActions(html) {
   let m;
   while ((m = linkRe.exec(html)) !== null) {
     const path = m[1], code = m[2], title = m[3].trim();
-    // Skip navigation/category links — those have non-date paths like /recent-actions/sanctions-list-updates
+    // Skip navigation/category links â€” those have non-date paths like /recent-actions/sanctions-list-updates
     if (!/^\d{8}/.test(code)) continue;
     const url = `https://ofac.treasury.gov${path}`;
     // Find nearest date in surrounding 300 chars
@@ -81,25 +84,25 @@ function parseRecentActions(html) {
   return entries;
 }
 
-// 3. Parse any OFAC sanctions program page — EOs, FR GL notices, GL PDF links
+// 3. Parse any OFAC sanctions program page â€” EOs, FR GL notices, GL PDF links
 function parseSanctionsProgram(html) {
   const text = stripHtml(html);
 
-  // ── Executive Orders (5-digit EO numbers) ────────────────────────────────
+  // â”€â”€ Executive Orders (5-digit EO numbers) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const executiveOrders = [];
-  const eoRe = /\b(1[34]\d{3})\s*[-–]\s*([^\n(]{10,200?}?)(?:\s*\(([^)]{4,30})\))?(?=\s*(?:\d{5}|\n|Executive|Federal|Code|$))/g;
+  const eoRe = /\b(1[34]\d{3})\s*[-â€“]\s*([^\n(]{10,200?}?)(?:\s*\(([^)]{4,30})\))?(?=\s*(?:\d{5}|\n|Executive|Federal|Code|$))/g;
   let em;
   while ((em = eoRe.exec(text)) !== null) {
     const num = em[1], title = em[2].trim().replace(/\s+/g, " "), date = em[3]?.trim() ?? "";
     if (title.length > 10)
-      executiveOrders.push({ number: num, title: `Executive Order ${num} — ${title}`, date,
+      executiveOrders.push({ number: num, title: `Executive Order ${num} â€” ${title}`, date,
         url: `https://www.federalregister.gov/executive-order/${num}` });
   }
 
-  // ── Federal Register GL notices ───────────────────────────────────────────
+  // â”€â”€ Federal Register GL notices â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   // Format: "89 FR 20116-24 - Publication of ... Web General Licenses 83A, 88, ..."
   const frNotices = [];
-  const frRe = /(\d{2,3}\s+FR\s+[\d-]+)\s*[-–]\s*([^\n]{10,300})/g;
+  const frRe = /(\d{2,3}\s+FR\s+[\d-]+)\s*[-â€“]\s*([^\n]{10,300})/g;
   let fm;
   while ((fm = frRe.exec(text)) !== null) {
     const citation = fm[1].replace(/\s+/g, " ").trim();
@@ -111,7 +114,7 @@ function parseSanctionsProgram(html) {
     frNotices.push({ citation, description, year, glNumbers: glNums });
   }
 
-  // ── GL PDF links (/media/XXXXXX/download) ────────────────────────────────
+  // â”€â”€ GL PDF links (/media/XXXXXX/download) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const generalLicenses = [];
   const mediaRe = /href="(\/media\/[\w/-]+\/download[^"]*)"\s*[^>]*>([^<]{3,200})<\/a>/gi;
   let mm;
@@ -119,7 +122,7 @@ function parseSanctionsProgram(html) {
     const url = `https://ofac.treasury.gov${mm[1]}`;
     const linkText = stripHtml(mm[2]).trim();
     // Letter-hyphen-digit designators (e.g. Iran's "General License J-1",
-    // "General License D-1") FIRST, before the numeric regex below — the numeric
+    // "General License D-1") FIRST, before the numeric regex below â€” the numeric
     // regex's `[^#\d]*` skip happily consumes a leading letter+hyphen like "J-"
     // (neither character is a digit or "#"), then matches the trailing digit
     // alone, mangling "GL J-1" into "GL 1". That actually happened in production:
@@ -129,7 +132,7 @@ function parseSanctionsProgram(html) {
     //
     // Confirmed live 2026-06-26: this STILL happened for Iran's GL J-1 even
     // with this guard in place, because OFAC's page doesn't always use a
-    // plain ASCII hyphen between the letter and digit — it can render as an
+    // plain ASCII hyphen between the letter and digit â€” it can render as an
     // en dash/em dash/minus sign depending on how the link text was authored.
     // A literal "-" in the character class doesn't match those, so the regex
     // silently failed and fell through to the numeric regex below, which
@@ -142,14 +145,14 @@ function parseSanctionsProgram(html) {
     let designator = numMatch ? `${numMatch[1]}-${numMatch[2]}` : null;
     if (!designator) {
       // Letter-immediately-followed-by-digit (e.g. "General License X1", "GL D2").
-      // MUST be tried before the generic numeric regex below — that regex uses
+      // MUST be tried before the generic numeric regex below â€” that regex uses
       // [^#\d]* which eats the leading letter and then captures only the trailing
       // digit, turning "X1" into "1". This step catches [A-Z]\d+ patterns first.
       numMatch = /(?:General\s+License|GL)\s+(?:No\.?\s*)?([A-Z]\d+)\b/i.exec(linkText);
       designator = numMatch ? numMatch[1].toUpperCase() : null;
     }
     if (!designator) {
-      // Numeric-style designators (e.g. "General License 8M") — this is the
+      // Numeric-style designators (e.g. "General License 8M") â€” this is the
       // common case across most programs.
       numMatch = /(?:General\s+License|GL)[^#\d]*#?\s*(?:No\.?\s*)?(\d+[A-Z]?)/i.exec(linkText);
       designator = numMatch ? numMatch[1] : null;
@@ -157,7 +160,7 @@ function parseSanctionsProgram(html) {
     if (!designator) {
       // Letter/Roman-numeral-style designators (e.g. Iran's "General License X",
       // "General License K") have NO leading digit, so the numeric regex above
-      // never matches them — this is the concrete reason Iran's GL X (and
+      // never matches them â€” this is the concrete reason Iran's GL X (and
       // similar Iran GLs) never showed up at all, even after the programs-index
       // and per-run-cap fixes landed.
       numMatch = new RegExp(`(?:General\\s+License|GL)\\s+(?:No\\.?\\s*)?([A-Z]+(?:[${DASH}]\\d+)?)\\b`, "i").exec(linkText);
@@ -166,7 +169,7 @@ function parseSanctionsProgram(html) {
     if (!designator) continue;
     const surrounding = stripHtml(html.slice(Math.max(0, mm.index - 300), mm.index + mm[0].length + 300));
     const dateMatch = /(\w+ \d{1,2},? \d{4})/i.exec(surrounding);
-    // Expiration date — OFAC's rolling Iran petroleum GLs (and similar time-limited
+    // Expiration date â€” OFAC's rolling Iran petroleum GLs (and similar time-limited
     // licenses) state their own end date inline, e.g. "...through August 21, 2026".
     // Check the link text itself first, then the surrounding page text.
     const expiresMatch = /\b(?:through|until|expir(?:es|ing|ation)?(?:\s+on)?)\s+(\w+ \d{1,2},? \d{4})/i.exec(`${linkText} ${surrounding}`);
@@ -184,7 +187,7 @@ function parseSanctionsProgram(html) {
   return { executiveOrders, frNotices: frNotices.slice(0, 20), generalLicenses: uniqueGLs };
 }
 
-// 4. Parse programs index — extract all program slugs, names, URLs, lastUpdated dates
+// 4. Parse programs index â€” extract all program slugs, names, URLs, lastUpdated dates
 function parseProgramsIndex(html) {
   const programs = [];
   const rowRe = /<tr[^>]*>([\s\S]*?)<\/tr>/gi;
@@ -194,14 +197,14 @@ function parseProgramsIndex(html) {
     // Two bugs stacked here, both confirmed via committed debug instrumentation
     // (_debugProgIdx snippet from a live production fetch, removed below):
     // 1. OFAC's table links render as absolute URLs (https://ofac.treasury.gov/...),
-    //    not relative — fixed by the optional absolute-prefix group on the href.
+    //    not relative â€” fixed by the optional absolute-prefix group on the href.
     // 2. The link TEXT is wrapped in a <span>, e.g.
     //      <a href="/sanctions-programs-and-country-information/iran-sanctions">
     //        <span>Iran Sanctions</span>
     //      </a>
     //    The old capture group `([^<]{3,200})` cannot cross the `<span>` tag, so
     //    the whole regex failed to match (no `</a>` immediately after consuming
-    //    only whitespace) — `programs` stayed {} on every run since the start,
+    //    only whitespace) â€” `programs` stayed {} on every run since the start,
     //    even after fix #1 shipped. Using `([\s\S]{0,300}?)` lets the capture
     //    span inner tags; stripHtml() (already applied below) then removes them.
     const progMatch = /href="(?:https:\/\/ofac\.treasury\.gov)?(\/sanctions-programs-and-country-information\/([^"?#]+))"[^>]*>([\s\S]{0,300}?)<\/a>/i.exec(rowHtml);
@@ -219,7 +222,7 @@ function parseProgramsIndex(html) {
   return programs;
 }
 
-// ── OFSI (UK) notices — direct scrape, no Gemini ───────────────────────────
+// â”€â”€ OFSI (UK) notices â€” direct scrape, no Gemini â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // gov.uk publishes an official Atom feed of all OFSI news/notices. Plain
 // fetch + regex parse, mirrors the OFAC pattern above. No LLM involved.
 function parseOfsiNotices(xml) {
@@ -244,7 +247,7 @@ function parseOfsiNotices(xml) {
   return entries;
 }
 
-// ── U.S. Treasury press releases — direct scrape ───────────────────────────
+// â”€â”€ U.S. Treasury press releases â€” direct scrape â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // home.treasury.gov is reachable from GitHub Actions IPs. The listing wraps
 // each item's title in <a href=".../news/press-releases/sbNNNN">, so we get
 // the DIRECT per-release link. Without this scrape, Gemini writes Treasury
@@ -274,7 +277,7 @@ function parseTreasuryNews(html) {
   return out.slice(0, 12);
 }
 
-// ── Generic RSS 2.0 <item> parser — shared by EU, UN, BBC, and Al Jazeera ──
+// â”€â”€ Generic RSS 2.0 <item> parser â€” shared by EU, UN, BBC, and Al Jazeera â”€â”€
 // feeds below. All four are standard RSS, so one parser + a keyword filter
 // covers them; only OFSI (Atom, above) needs its own <entry> format.
 function parseRssItems(xml) {
@@ -354,7 +357,7 @@ function parseTrustedNewsIndex(html, baseUrl) {
   return entries.slice(0, 20);
 }
 
-// General-purpose sanctions keyword filter — used for any feed that isn't
+// General-purpose sanctions keyword filter â€” used for any feed that isn't
 // sanctions-specific on its own (EU finance news, BBC world/business, Al
 // Jazeera all-news) so only relevant items get surfaced.
 const SANCTIONS_KEYWORDS = /sanction|restrictive measure|asset freeze|designat|embargo|export control|russia|belarus|\biran\b|syria|venezuela|north korea|\bdprk\b|myanmar/i;
@@ -363,7 +366,7 @@ function filterSanctionsRelevant(entries) {
   return entries.filter(e => SANCTIONS_KEYWORDS.test(e.title) || SANCTIONS_KEYWORDS.test(e.description));
 }
 
-// ── EU (Europa/DG FISMA) finance news — direct scrape, no Gemini ───────────
+// â”€â”€ EU (Europa/DG FISMA) finance news â€” direct scrape, no Gemini â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // finance.ec.europa.eu publishes an official RSS feed of all finance news.
 // It isn't sanctions-only, so entries are filtered by keyword before being
 // treated as a "sanctions" article. Plain fetch + regex parse, no LLM.
@@ -371,11 +374,11 @@ function parseEuropaSanctions(xml) {
   return filterSanctionsRelevant(parseRssItems(xml));
 }
 
-// ── UN Security Council sanctions press releases — direct scrape, no Gemini ─
+// â”€â”€ UN Security Council sanctions press releases â€” direct scrape, no Gemini â”€
 // press.un.org publishes an official RSS feed of all UN press releases
 // (Security Council, General Assembly, Secretary-General, etc. all mixed
 // together), so entries are filtered for Security Council sanctions-committee
-// language specifically — narrower than SANCTIONS_KEYWORDS to avoid pulling
+// language specifically â€” narrower than SANCTIONS_KEYWORDS to avoid pulling
 // in unrelated GA/SG releases that merely mention a country name. Plain
 // fetch + regex parse, no LLM.
 const UN_SANCTIONS_KEYWORDS = /sanctions committee|security council.*sanctions|sanctions list|asset freeze|travel ban|arms embargo|de-?listing|designat/i;
@@ -384,14 +387,14 @@ function parseUnSanctions(xml) {
   return parseRssItems(xml).filter(e => UN_SANCTIONS_KEYWORDS.test(e.title) || UN_SANCTIONS_KEYWORDS.test(e.description));
 }
 
-// ── BBC News — direct scrape, no Gemini ─────────────────────────────────────
+// â”€â”€ BBC News â€” direct scrape, no Gemini â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // feeds.bbci.co.uk publishes official RSS for World and Business news. Not
 // sanctions-specific, so filtered the same way as the EU feed.
 function parseBbcSanctions(xml) {
   return filterSanctionsRelevant(parseRssItems(xml));
 }
 
-// ── Al Jazeera — direct scrape, no Gemini ───────────────────────────────────
+// â”€â”€ Al Jazeera â€” direct scrape, no Gemini â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // aljazeera.com publishes an official all-news RSS feed. Not sanctions-
 // specific, so filtered the same way as the EU/BBC feeds.
 //
@@ -404,26 +407,26 @@ function parseAlJazeeraSanctions(xml) {
   return filterSanctionsRelevant(parseRssItems(xml));
 }
 
-// ── Regions (general world/regional news) — direct scrape, no Gemini ──────
+// â”€â”€ Regions (general world/regional news) â€” direct scrape, no Gemini â”€â”€â”€â”€â”€â”€
 // Reuses the same BBC World/Business and Al Jazeera RSS feeds above, but
-// keeps the COMPLEMENT of the sanctions filter — general world/regional
+// keeps the COMPLEMENT of the sanctions filter â€” general world/regional
 // news items that do NOT match SANCTIONS_KEYWORDS. Previously this content
 // was simply discarded by filterSanctionsRelevant; now it's surfaced in the
 // "regions" section so non-government world news (AP/BBC/Al Jazeera/Reuters
 // coverage of world events generally, not just sanctions-relevant items)
-// actually shows up there. Added 2026-06-19 — renaming "Religion" to
+// actually shows up there. Added 2026-06-19 â€” renaming "Religion" to
 // "Regions" alone didn't produce new content because the old section only
 // ever got historical backfill articles; this gives it a live source.
 function parseRegionsNews(xml) {
   return parseRssItems(xml).filter(e => !SANCTIONS_KEYWORDS.test(e.title) && !SANCTIONS_KEYWORDS.test(e.description));
 }
 
-// ── OCC (Comptroller of the Currency) news — direct scrape, no Gemini ──────
+// â”€â”€ OCC (Comptroller of the Currency) news â€” direct scrape, no Gemini â”€â”€â”€â”€â”€â”€
 // occ.gov publishes an official RSS feed of ALL news releases (testimony,
 // CRA evaluations, personnel announcements, final rules, enforcement
 // actions, etc. all mixed together). The "occ" section is scoped to
 // enforcement actions / consent orders / prohibition orders PLUS key
-// advisories on AML/BSA, sanctions, and banking-industry/country risk —
+// advisories on AML/BSA, sanctions, and banking-industry/country risk â€”
 // broadened 2026-06-19 because the strict enforcement-only filter went
 // quiet for weeks between OCC's monthly enforcement batches even though
 // occ.gov was actively publishing relevant advisories in the meantime.
@@ -435,12 +438,12 @@ function parseOccNews(xml) {
   return parseRssItems(xml).filter(e => OCC_KEYWORDS.test(e.title) || OCC_KEYWORDS.test(e.description));
 }
 
-// ── Federal Reserve press releases — direct scrape, no Gemini ─────────────
+// â”€â”€ Federal Reserve press releases â€” direct scrape, no Gemini â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // federalreserve.gov publishes an official RSS feed of ALL press releases
 // (monetary policy, enforcement actions, banking applications, other
 // announcements, all mixed together). The "economics" section is scoped to
 // markets/inflation/central banks/trade/energy, which maps most closely to
-// items tagged <category>Monetary Policy</category> — enforcement/banking-
+// items tagged <category>Monetary Policy</category> â€” enforcement/banking-
 // application items overlap with the occ/penalties sections instead, so
 // this needs its own parser (parseRssItems doesn't capture <category>) plus
 // a keyword fallback for economics-relevant items that lack that category
@@ -484,13 +487,13 @@ function parseFedEconomics(xml) {
   );
 }
 
-// ── BIS (Bureau of Industry and Security) actions — direct scrape, no Gemini ─
+// â”€â”€ BIS (Bureau of Industry and Security) actions â€” direct scrape, no Gemini â”€
 // federalregister.gov publishes an official JSON API of every Federal
 // Register document (no API key required). Querying by agency returns all
 // BIS filings, but most are routine procedural notices (OMB collection
 // requests, individual "denied export privileges" personnel orders) rather
 // than "export controls, Entity List, EAR enforcement, semiconductor policy"
-// per the bis section's scope — so results are filtered the same way the
+// per the bis section's scope â€” so results are filtered the same way the
 // OCC/sanctions feeds are: keyword match on title + abstract. No LLM involved.
 const BIS_KEYWORDS = /entity list|export control|denied person|export administration regulation|\bear\b|semiconductor|antiboycott|export privilege|embargo|end.?use|deemed export/i;
 
@@ -511,16 +514,16 @@ function parseBisNews(json) {
     }));
 }
 
-// ── Optional: pdf-parse for extracting GL expiry dates from PDF body text ──
+// â”€â”€ Optional: pdf-parse for extracting GL expiry dates from PDF body text â”€â”€
 // OFAC's recent-actions/program-index HTML rarely states a GL's expiration
-// inline — for many programs (e.g. Venezuela GL 60, "authorized through
+// inline â€” for many programs (e.g. Venezuela GL 60, "authorized through
 // 12:01 a.m. eastern daylight time, October 23, 2026") the expiry is stated
 // ONLY inside the GL's own PDF body, which the HTML-only expiresMatch regex
 // in parseSanctionsProgram() can never see. Installed via a separate
 // `npm install pdf-parse --no-save` workflow step (see refresh.yml) rather
 // than added to package.json, since this script runs standalone with no
 // `npm ci` step. Entirely optional/non-fatal: if the install step failed or
-// this import throws for any reason, PDF expiry extraction is just skipped —
+// this import throws for any reason, PDF expiry extraction is just skipped â€”
 // everything else in the script (cache commit, programs sync, Gemini call)
 // runs exactly as before.
 let pdfParse = null;
@@ -528,19 +531,19 @@ try {
   // Import the inner lib file, NOT the package's top-level "pdf-parse" entry.
   // pdf-parse's index.js has a debug-mode footgun: `let isDebugMode =
   // !module.parent;` is meant to detect "was I required by another module,
-  // or run directly as the main script" — but under ESM dynamic import()
+  // or run directly as the main script" â€” but under ESM dynamic import()
   // there's no CJS parent chain, so module.parent is always undefined and
   // isDebugMode is always (incorrectly) true. That branch then tries to
   // read a test fixture that only exists in the package's own dev repo
   // (./test/data/05-versions-space.pdf) and throws ENOENT, crashing this
   // import on every run. Confirmed via local repro: `import("pdf-parse")`
-  // throws ENOENT immediately; `import("pdf-parse/lib/pdf-parse.js")` — the
-  // actual implementation index.js just re-exports — loads cleanly with the
+  // throws ENOENT immediately; `import("pdf-parse/lib/pdf-parse.js")` â€” the
+  // actual implementation index.js just re-exports â€” loads cleanly with the
   // debug code never executing.
   pdfParse = (await import("pdf-parse/lib/pdf-parse.js")).default;
-  console.log("[pdf-expiry] pdf-parse loaded — PDF expiry extraction enabled");
+  console.log("[pdf-expiry] pdf-parse loaded â€” PDF expiry extraction enabled");
 } catch (e) {
-  console.warn("[pdf-expiry] pdf-parse unavailable — PDF expiry extraction disabled:", e.message);
+  console.warn("[pdf-expiry] pdf-parse unavailable â€” PDF expiry extraction disabled:", e.message);
 }
 
 // Extract a GL's ISSUANCE date from its PDF body. The webpage proximity grab
@@ -549,12 +552,12 @@ try {
 // gl-dates-audit). The PDF is authoritative. Heuristic: the issuance date is
 // the most recent "Month DD, YYYY" that is (a) not the expiry, (b) not a
 // backward reference to an Executive Order / statute ("...Order 14024 of April
-// 15, 2021"), and (c) within the last ~3 years and not in the future — which
+// 15, 2021"), and (c) within the last ~3 years and not in the future â€” which
 // excludes old EO references and future expiry/deadline dates, leaving the
 // actual issuance/amendment date.
 function extractIssuedDate(text, expires) {
   const DATE = "([A-Z][a-z]+ \\d{1,2},? \\d{4})";
-  // 1. HIGH CONFIDENCE — the issuance date is printed on the signed page: OFAC
+  // 1. HIGH CONFIDENCE â€” the issuance date is printed on the signed page: OFAC
   //    GLs end with a "Dated: <date>" line above the Director's signature.
   let m = new RegExp(`\\bDated\\s*:?\\s*${DATE}`, "i").exec(text);
   if (m) return { date: m[1], confident: true };
@@ -565,7 +568,7 @@ function extractIssuedDate(text, expires) {
     const ds = win.match(new RegExp(DATE, "g"));
     if (ds && ds.length) return { date: ds[ds.length - 1], confident: true };
   }
-  // 2. LOW CONFIDENCE fallback — latest plausible date that isn't the expiry or
+  // 2. LOW CONFIDENCE fallback â€” latest plausible date that isn't the expiry or
   //    an EO/statute reference. For display only; never overwrites an existing
   //    date (a mis-picked reference date must not spread across the library).
   const now = Date.now();
@@ -595,7 +598,7 @@ function extractPdfTitle(text, number) {
   const re = new RegExp(`GENERAL LICENSE\\s+(?:NO\\.?\\s*)?${num}\\b[\\s:.\\u2013\\u2014-]*([\\s\\S]{8,220}?)\\s*(?:\\(a\\)|\\(1\\)|\\bExcept as\\b|\\bAll transactions\\b|$)`, "i");
   const m = re.exec(text);
   if (!m) return "";
-  let t = m[1].replace(/\s+/g, " ").replace(/[\s.,;:–—-]+$/, "").trim();
+  let t = m[1].replace(/\s+/g, " ").replace(/[\s.,;:â€“â€”-]+$/, "").trim();
   // Reject non-titles: too short/long, or just a date/number fragment.
   if (t.length < 10 || t.length > 200) return "";
   if (/^\W|general license|^\d/i.test(t)) return "";
@@ -614,7 +617,7 @@ async function fetchPdfMeta(pdfUrl, number) {
     const data = await pdfParse(buf);
     const text = (data.text || "").replace(/\s+/g, " ");
     // Expiry: PDFs word this as "...authorized through 12:01 a.m. eastern
-    // daylight time, October 23, 2026" — keyword and date aren't adjacent, so
+    // daylight time, October 23, 2026" â€” keyword and date aren't adjacent, so
     // scan a window after each keyword hit for the first "Month DD, YYYY".
     const KEYWORD_RE = /\b(?:through|until|expir(?:es|ing|ation)?(?:\s+on)?)\b/gi;
     const DATE_RE = /([A-Z][a-z]+ \d{1,2},? \d{4})/;
@@ -677,7 +680,7 @@ function parseCivilPenalties(html) {
   return rows;
 }
 
-// Load existing cache FIRST — used for change detection on all three sources
+// Load existing cache FIRST â€” used for change detection on all three sources
 const existingCache = await loadExistingCache();
 const cachedPrograms = existingCache?.programs ?? {};
 
@@ -685,27 +688,27 @@ console.log("[refresh-briefing] Fetching OFAC recent-actions listing...");
 const recentActionsHtml = await fetchOfac("https://ofac.treasury.gov/recent-actions");
 const recentActions = recentActionsHtml ? parseRecentActions(recentActionsHtml) : [];
 console.log(`[refresh-briefing] Recent actions parsed: ${recentActions.length} entries`);
-recentActions.slice(0, 10).forEach(e => console.log(`  ${e.date} — ${e.title} (${e.url})`));
+recentActions.slice(0, 10).forEach(e => console.log(`  ${e.date} â€” ${e.title} (${e.url})`));
 
 console.log("[refresh-briefing] Fetching OFAC civil penalties page...");
 const penaltiesHtml = await fetchOfac("https://ofac.treasury.gov/civil-penalties-and-enforcement-information");
 const civilPenalties = penaltiesHtml ? parseCivilPenalties(penaltiesHtml) : [];
 console.log(`[refresh-briefing] Civil penalties parsed: ${civilPenalties.length} rows`);
-civilPenalties.forEach(r => console.log(`  ${r.date} — ${r.name}: $${r.amount}`));
+civilPenalties.forEach(r => console.log(`  ${r.date} â€” ${r.name}: $${r.amount}`));
 
-// ── Scrape all OFAC program pages (change-detection via index) ────────────
+// â”€â”€ Scrape all OFAC program pages (change-detection via index) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 console.log("[refresh-briefing] Fetching OFAC programs index...");
 const programsIndexHtml = await fetchOfac("https://ofac.treasury.gov/sanctions-programs-and-country-information");
 const programsList = programsIndexHtml ? parseProgramsIndex(programsIndexHtml) : [];
 console.log(`[refresh-briefing] Programs index: ${programsList.length} programs found`);
 
-// Fetch only programs whose lastUpdated date changed (cap at 50 per run —
+// Fetch only programs whose lastUpdated date changed (cap at 50 per run â€”
 // OFAC has ~30-40 total programs, so this covers a full cold-cache backfill
 // in a single run instead of needing several runs to alphabetically work
 // through the list. Once the cache is warm, "changed" will only ever be a
 // handful per run anyway, so the higher cap costs nothing day-to-day.)
 // FORCE_RESCRAPE_ALL=1 (set on a manual workflow_dispatch run) re-scrapes every
-// program regardless of change detection — used for a one-time backfill that
+// program regardless of change detection â€” used for a one-time backfill that
 // pulls authoritative titles/dates/expiry from every GL's PDF (e.g. to correct
 // generic placeholder titles across the whole library in one pass).
 const FORCE_ALL = process.env.FORCE_RESCRAPE_ALL === "1";
@@ -715,13 +718,13 @@ const changedPrograms = FORCE_ALL
       p.lastUpdated && p.lastUpdated !== (cachedPrograms[p.slug]?.lastUpdated ?? "")
     ).slice(0, 50);
 
-if (FORCE_ALL) console.log(`[refresh-briefing] FORCE_RESCRAPE_ALL — re-scraping all ${changedPrograms.length} programs (one-time PDF backfill)`);
+if (FORCE_ALL) console.log(`[refresh-briefing] FORCE_RESCRAPE_ALL â€” re-scraping all ${changedPrograms.length} programs (one-time PDF backfill)`);
 console.log(`[refresh-briefing] Programs with changes: ${changedPrograms.length} (of ${programsList.length} total)`);
 changedPrograms.forEach(p =>
-  console.log(`  ${p.slug}: ${cachedPrograms[p.slug]?.lastUpdated ?? "(new)"} → ${p.lastUpdated}`)
+  console.log(`  ${p.slug}: ${cachedPrograms[p.slug]?.lastUpdated ?? "(new)"} â†’ ${p.lastUpdated}`)
 );
 
-// ── Fallback: catch programs whose change the index page's "last updated" ──
+// â”€â”€ Fallback: catch programs whose change the index page's "last updated" â”€â”€
 // column missed entirely. Confirmed live 2026-06-25: OFAC issued Venezuela
 // General License 60 (recent-actions entry dated June 25, 2026), but the
 // programs-index date column for Venezuela never flipped, so the date-diff
@@ -729,7 +732,7 @@ changedPrograms.forEach(p =>
 // synced into the curated library. Cross-reference recentActions titles
 // (filtered to GL/EO/designation-signal language) against programsList names
 // using the same single-match-only token-overlap rule already used for
-// keyAdvisories matching in sync-programs-library.mjs's syncAdvisories() —
+// keyAdvisories matching in sync-programs-library.mjs's syncAdvisories() â€”
 // only force a program in when exactly one program name matches, so an
 // ambiguous/multi-program title (e.g. one mentioning two countries) is
 // skipped rather than guessed.
@@ -751,10 +754,10 @@ for (const action of recentActions || []) {
     const toks = nameTokens(p.name);
     return toks.length > 0 && toks.some(t => titleLower.includes(t));
   });
-  if (matches.length !== 1) continue; // ambiguous or no match — skip, don't guess
+  if (matches.length !== 1) continue; // ambiguous or no match â€” skip, don't guess
   const p = matches[0];
   if (changedSlugs.has(p.slug)) continue; // already picked up by the date check
-  console.log(`[refresh-briefing] Forcing re-scrape of "${p.slug}" — index date didn't flip, but recent-actions title matched: "${action.title}"`);
+  console.log(`[refresh-briefing] Forcing re-scrape of "${p.slug}" â€” index date didn't flip, but recent-actions title matched: "${action.title}"`);
   changedPrograms.push(p);
   changedSlugs.add(p.slug);
   forcedCount++;
@@ -766,7 +769,7 @@ if (forcedCount > 0) {
 // Fetch and parse each changed program, carry over unchanged from existing cache
 const programs = { ...cachedPrograms };
 // Bounds worst-case PDF-fetch time across this whole run (8-min Actions
-// timeout) — shared budget across all changed programs, not per-program.
+// timeout) â€” shared budget across all changed programs, not per-program.
 // Raise the per-run PDF-fetch budget for a forced full backfill (needs to reach
 // every GL's PDF in one pass); normal runs stay conservative.
 const PDF_EXPIRY_FETCH_CAP = FORCE_ALL ? 120 : 25;
@@ -778,8 +781,8 @@ for (const prog of changedPrograms) {
   const parsed = parseSanctionsProgram(html);
 
   // Backfill the issuance date + expiry from each GL's own PDF (authoritative)
-  // — see fetchPdfMeta above. Carry forward an already-known value from the
-  // existing cache first — no refetch needed —
+  // â€” see fetchPdfMeta above. Carry forward an already-known value from the
+  // existing cache first â€” no refetch needed â€”
   // and only spend the per-run PDF-fetch budget on GLs whose expiry is
   // genuinely still unknown.
   const cachedGLs = cachedPrograms[prog.slug]?.generalLicenses ?? [];
@@ -787,7 +790,7 @@ for (const prog of changedPrograms) {
     const cachedMatch = cachedGLs.find(c => c.number === gl.number);
     // Same underlying PDF (same URL) = same document; its issuance/expiry can't
     // have changed, so carry forward PDF-verified values and skip the refetch.
-    // An amended GL (e.g. 131G → 131H) has a NEW PDF URL, so sameDoc is false
+    // An amended GL (e.g. 131G â†’ 131H) has a NEW PDF URL, so sameDoc is false
     // and we refetch to get the amendment's real date.
     const sameDoc = cachedMatch && cachedMatch.url === gl.url;
     if (sameDoc) {
@@ -812,11 +815,11 @@ for (const prog of changedPrograms) {
         console.log(`  [pdf] GL ${gl.number}: expires "${meta.expires}"`);
       }
       // Replace a generic placeholder title (e.g. "Venezuela General License 42")
-      // with the real title from the PDF. Only overwrite generics — never clobber
+      // with the real title from the PDF. Only overwrite generics â€” never clobber
       // a descriptive title we already have.
       const isGenericTitle = /^[A-Za-z .\/-]+ General Licens\w* (?:\(GL\) )?[A-Z]?\d+[A-Z]?$/i.test(gl.title || "");
       if (meta.title && (isGenericTitle || !gl.title)) {
-        console.log(`  [pdf] GL ${gl.number}: title "${gl.title}" → "${meta.title}"`);
+        console.log(`  [pdf] GL ${gl.number}: title "${gl.title}" â†’ "${meta.title}"`);
         gl.title = meta.title;
       }
     }
@@ -830,25 +833,26 @@ for (const prog of changedPrograms) {
     frNotices: parsed.frNotices,
     generalLicenses: parsed.generalLicenses,
   };
-  console.log(`  → ${parsed.executiveOrders.length} EOs, ${parsed.frNotices.length} FR notices, ${parsed.generalLicenses.length} GL PDFs`);
+  console.log(`  â†’ ${parsed.executiveOrders.length} EOs, ${parsed.frNotices.length} FR notices, ${parsed.generalLicenses.length} GL PDFs`);
 }
 if (pdfExpiryFetchCount > 0) {
   console.log(`[refresh-briefing] PDF-expiry fallback: fetched ${pdfExpiryFetchCount} PDF(s) this run`);
 }
 
-// ── OFSI (UK) + EU direct scrapes — run every time, independent of the ─────
+// â”€â”€ OFSI (UK) + EU direct scrapes â€” run every time, independent of the â”€â”€â”€â”€â”€
 // OFAC-only early-exit/Gemini-trigger logic below. Plain HTTP fetch only,
-// no Gemini/LLM call — keeps these additive without touching RPD quota.
+// no Gemini/LLM call â€” keeps these additive without touching RPD quota.
 console.log("[refresh-briefing] Fetching OFSI (UK) notices feed...");
 const ofsiXml = await fetchOfac("https://www.gov.uk/search/news-and-communications.atom?organisations%5B%5D=office-of-financial-sanctions-implementation");
 const ofsiNotices = parseOfsiNotices(ofsiXml);
 console.log(`[refresh-briefing] OFSI notices parsed: ${ofsiNotices.length} entries`);
-ofsiNotices.slice(0, 5).forEach(e => console.log(`  ${e.date} — ${e.title} (${e.url})`));
+ofsiNotices.slice(0, 5).forEach(e => console.log(`  ${e.date} â€” ${e.title} (${e.url})`));
 
 console.log("[refresh-briefing] Fetching U.S. Treasury press releases...");
 const treasuryHtml = await fetchOfac("https://home.treasury.gov/news/press-releases");
 const treasuryNews = parseTreasuryNews(treasuryHtml);
 console.log(`[refresh-briefing] Treasury press releases parsed: ${treasuryNews.length} entries`);
+treasuryNews.slice(0, 5).forEach(e => console.log(`  ${e.date} â€” ${e.title} (${e.url})`));
 
 console.log("[refresh-briefing] Fetching DHS RSS and news index...");
 const [dhsXml, dhsHtml] = await Promise.all([
@@ -857,8 +861,7 @@ const [dhsXml, dhsHtml] = await Promise.all([
 ]);
 const dhsNews = parseDhsRelevant(dhsXml, dhsHtml);
 console.log(`[refresh-briefing] DHS UFLPA/enforcement news parsed: ${dhsNews.length} entries`);
-dhsNews.slice(0, 8).forEach(e => console.log(`  ${e.date} - ${e.title} (${e.url})`));
-treasuryNews.slice(0, 5).forEach(e => console.log(`  ${e.date} — ${e.title} (${e.url})`));
+dhsNews.slice(0, 8).forEach(e => console.log(`  ${e.date} â€” ${e.title} (${e.url})`));
 
 console.log("[refresh-briefing] Fetching additional U.S. government sources directly...");
 const [whiteHouseHtml, congressHtml, usaGovHtml, stateXml, warXml] = await Promise.all([
@@ -879,13 +882,13 @@ console.log("[refresh-briefing] Fetching EU (Europa/DG FISMA) finance news feed.
 const europaXml = await fetchOfac("https://finance.ec.europa.eu/node/1408/rss_en");
 const europaNews = parseEuropaSanctions(europaXml);
 console.log(`[refresh-briefing] EU sanctions-relevant news parsed: ${europaNews.length} entries`);
-europaNews.slice(0, 5).forEach(e => console.log(`  ${e.date} — ${e.title} (${e.url})`));
+europaNews.slice(0, 5).forEach(e => console.log(`  ${e.date} â€” ${e.title} (${e.url})`));
 
 console.log("[refresh-briefing] Fetching UN Security Council press releases feed...");
 const unXml = await fetchOfac("https://press.un.org/en/rss.xml");
 const unNotices = parseUnSanctions(unXml);
 console.log(`[refresh-briefing] UN sanctions-relevant press releases parsed: ${unNotices.length} entries`);
-unNotices.slice(0, 5).forEach(e => console.log(`  ${e.date} — ${e.title} (${e.url})`));
+unNotices.slice(0, 5).forEach(e => console.log(`  ${e.date} â€” ${e.title} (${e.url})`));
 
 console.log("[refresh-briefing] Fetching BBC News World + Business feeds...");
 const [bbcWorldXml, bbcBusinessXml] = await Promise.all([
@@ -894,15 +897,15 @@ const [bbcWorldXml, bbcBusinessXml] = await Promise.all([
 ]);
 const bbcNews = [...parseBbcSanctions(bbcWorldXml), ...parseBbcSanctions(bbcBusinessXml)];
 console.log(`[refresh-briefing] BBC sanctions-relevant news parsed: ${bbcNews.length} entries`);
-bbcNews.slice(0, 5).forEach(e => console.log(`  ${e.date} — ${e.title} (${e.url})`));
+bbcNews.slice(0, 5).forEach(e => console.log(`  ${e.date} â€” ${e.title} (${e.url})`));
 
 console.log("[refresh-briefing] Fetching Al Jazeera news feed...");
 const ajXml = await fetchOfac("https://www.aljazeera.com/xml/rss/all.xml");
 const ajNews = parseAlJazeeraSanctions(ajXml);
 console.log(`[refresh-briefing] Al Jazeera sanctions-relevant news parsed: ${ajNews.length} entries`);
-ajNews.slice(0, 5).forEach(e => console.log(`  ${e.date} — ${e.title} (${e.url})`));
+ajNews.slice(0, 5).forEach(e => console.log(`  ${e.date} â€” ${e.title} (${e.url})`));
 
-// Regions: complement of the sanctions filter on the same BBC/AJ feeds —
+// Regions: complement of the sanctions filter on the same BBC/AJ feeds â€”
 // general world/regional news that isn't sanctions-relevant, for the
 // "regions" section instead of being discarded.
 const regionsNews = [
@@ -911,13 +914,13 @@ const regionsNews = [
   ...parseRegionsNews(ajXml),
 ];
 console.log(`[refresh-briefing] Regions (general world news) parsed: ${regionsNews.length} entries`);
-regionsNews.slice(0, 5).forEach(e => console.log(`  ${e.date} — ${e.title} (${e.url})`));
+regionsNews.slice(0, 5).forEach(e => console.log(`  ${e.date} â€” ${e.title} (${e.url})`));
 
 console.log("[refresh-briefing] Fetching OCC news releases feed...");
 const occXml = await fetchOfac("https://www.occ.gov/rss/occ_news.xml");
 const occNews = parseOccNews(occXml);
 console.log(`[refresh-briefing] OCC enforcement-relevant news parsed: ${occNews.length} entries`);
-occNews.slice(0, 5).forEach(e => console.log(`  ${e.date} — ${e.title} (${e.url})`));
+occNews.slice(0, 5).forEach(e => console.log(`  ${e.date} â€” ${e.title} (${e.url})`));
 
 console.log("[refresh-briefing] Fetching Federal Reserve press releases feed...");
 const fedXml = await fetchOfac("https://www.federalreserve.gov/feeds/press_all.xml");
@@ -925,30 +928,30 @@ console.log(`[refresh-briefing] Fed feed raw response: ${fedXml ? `${fedXml.leng
 if (fedXml) console.log(`[refresh-briefing] Fed feed snippet: ${fedXml.slice(0, 300).replace(/\s+/g, " ")}`);
 const allFedItems = parseFedPressItems(fedXml);
 console.log(`[refresh-briefing] Fed feed items parsed (pre-filter): ${allFedItems.length}`);
-allFedItems.slice(0, 3).forEach(e => console.log(`  [pre-filter] ${e.date} — [${e.category}] ${e.title}`));
+allFedItems.slice(0, 3).forEach(e => console.log(`  [pre-filter] ${e.date} â€” [${e.category}] ${e.title}`));
 const economicsNews = parseFedEconomics(fedXml);
 console.log(`[refresh-briefing] Fed economics-relevant news parsed: ${economicsNews.length} entries`);
-economicsNews.slice(0, 5).forEach(e => console.log(`  ${e.date} — ${e.title} (${e.url})`));
+economicsNews.slice(0, 5).forEach(e => console.log(`  ${e.date} â€” ${e.title} (${e.url})`));
 
 console.log("[refresh-briefing] Fetching Federal Register BIS documents...");
 const bisJson = await fetchOfac("https://www.federalregister.gov/api/v1/documents.json?conditions%5Bagencies%5D%5B%5D=industry-and-security-bureau&order=newest&per_page=20");
 const bisNews = parseBisNews(bisJson);
 console.log(`[refresh-briefing] BIS export-control-relevant documents parsed: ${bisNews.length} entries`);
-bisNews.slice(0, 5).forEach(e => console.log(`  ${e.date} — ${e.title} (${e.url})`));
+bisNews.slice(0, 5).forEach(e => console.log(`  ${e.date} â€” ${e.title} (${e.url})`));
 
-// ── U.S. political / policy sources that can drive sanctions ────────────────
+// â”€â”€ U.S. political / policy sources that can drive sanctions â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // Executive Orders establish sanctions authorities; DOJ prosecutes evasion;
 // Commerce/BIS set export-control policy; Congress writes sanctions statutes.
 // Standard RSS, so parseRssItems handles them; keyword-filter to keep only
 // sanctions-relevant items so routine political news doesn't flood the feed.
-// All link to trusted domains (federalregister.gov / news.google.com → outlet),
+// All link to trusted domains (federalregister.gov / news.google.com â†’ outlet),
 // and are scored + gated like everything else, so they only ALERT when the
 // headline is genuinely sanctions-relevant.
 const POLITICAL_FEEDS = [
-  { url: "https://www.federalregister.gov/documents/search.rss?conditions%5Btype%5D%5B%5D=PRESDOCU&conditions%5Bterm%5D=sanctions+national+emergency+blocking+property", source: "White House — Presidential Actions" },
+  { url: "https://www.federalregister.gov/documents/search.rss?conditions%5Btype%5D%5B%5D=PRESDOCU&conditions%5Bterm%5D=sanctions+national+emergency+blocking+property", source: "White House â€” Presidential Actions" },
   { url: "https://news.google.com/rss/search?q=site:justice.gov+(sanctions+OR+%22export+control%22+OR+FARA+OR+%22national+security%22)+2026&hl=en-US&gl=US&ceid=US:en", source: "U.S. Department of Justice" },
   { url: "https://news.google.com/rss/search?q=(site:bis.doc.gov+OR+site:commerce.gov)+(%22export+control%22+OR+%22entity+list%22+OR+sanctions)+2026&hl=en-US&gl=US&ceid=US:en", source: "U.S. Commerce / BIS" },
-  { url: "https://news.google.com/rss/search?q=Congress+(%22sanctions+act%22+OR+%22sanctions+bill%22+OR+%22sanctions+legislation%22)+2026&hl=en-US&gl=US&ceid=US:en", source: "U.S. Congress — Sanctions Legislation" },
+  { url: "https://news.google.com/rss/search?q=Congress+(%22sanctions+act%22+OR+%22sanctions+bill%22+OR+%22sanctions+legislation%22)+2026&hl=en-US&gl=US&ceid=US:en", source: "U.S. Congress â€” Sanctions Legislation" },
 ];
 const politicalItems = [];
 for (const feed of POLITICAL_FEEDS) {
@@ -963,12 +966,12 @@ for (const feed of POLITICAL_FEEDS) {
   }
 }
 console.log(`[refresh-briefing] U.S. political/policy sources parsed: ${politicalItems.length} entries`);
-politicalItems.slice(0, 5).forEach(e => console.log(`  ${e.date} — [${e.source}] ${e.title} (${e.url})`));
+politicalItems.slice(0, 5).forEach(e => console.log(`  ${e.date} â€” [${e.source}] ${e.title} (${e.url})`));
 
-// ── Early-exit: skip Gemini if nothing changed since last run ─────────────
+// â”€â”€ Early-exit: skip Gemini if nothing changed since last run â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // Compare first recent-action URL (most recent = most likely to change),
 // first civil-penalty row (date + name), and whether any programs updated.
-// If all three match the cache, no new data was published — save RPD quota.
+// If all three match the cache, no new data was published â€” save RPD quota.
 const cachedActions  = existingCache?.recentActions  ?? [];
 const cachedPenalties = existingCache?.civilPenalties ?? [];
 
@@ -980,85 +983,34 @@ const noNewPenalties = civilPenalties.length > 0 && cachedPenalties.length > 0
 const noNewPrograms  = changedPrograms.length === 0;
 
 if (noNewActions && noNewPenalties && noNewPrograms) {
-  console.log("[refresh-briefing] ✅ No new OFAC data — skipping Gemini to preserve RPD quota");
+  console.log("[refresh-briefing] âœ… No new OFAC data â€” skipping Gemini to preserve RPD quota");
   // Re-commit cache to refresh updatedAt (app reads this to know last scrape time)
   await commitOfacCache(recentActions, civilPenalties, programs, ofsiNotices, europaNews, unNotices, bbcNews, ajNews, occNews, economicsNews, bisNews, regionsNews);
   await syncPrograms(programs, recentActions);
 
   // Still touch the saved briefing's lastUpdated so the app shows a fresh
   // "checked at" time on every run, not just runs that found new OFAC data.
-  // Zero Gemini calls — reuses the scrape we already did above. merge:true
+  // Zero Gemini calls â€” reuses the scrape we already did above. merge:true
   // keeps the regions section from the last Gemini run (no direct source).
   // OFSI/EU/UN/BBC/Al Jazeera/OCC/Fed/BIS entries are included unconditionally
   // so they show up in their sections on every run, regardless of the OFAC
-  // early-exit outcome — this is what fixes OCC/economics/bis staleness.
+  // early-exit outcome â€” this is what fixes OCC/economics/bis staleness.
   const touch = buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices, europaNews, unNotices, bbcNews, ajNews, occNews, economicsNews, bisNews, regionsNews);
   if (touch.articles.length > 0) {
     await saveBriefingWithRetry(touch, true);
   }
   process.exit(0);
 }
-console.log(`[refresh-briefing] New data detected — actions:${!noNewActions} penalties:${!noNewPenalties} programs:${!noNewPrograms} — calling Gemini`);
+console.log(`[refresh-briefing] New data detected â€” actions:${!noNewActions} penalties:${!noNewPenalties} programs:${!noNewPrograms} â€” calling Gemini`);
 
-// ── Commit scraped OFAC data to repo as a cache file ──────────────────────
+// â”€â”€ Commit scraped OFAC data to repo as a cache file â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // The app (CF Workers) can't reach ofac.treasury.gov directly (IP blocked).
 // Committing to the repo lets the app read fresh OFAC data via raw.githubusercontent.com.
-async function commitOfacCache(recentActions, civilPenalties, programs, ofsiNotices = [], europaNews = [], unNotices = [], bbcNews = [], ajNews = [], occNews = [], economicsNews = [], bisNews = [], regionsNews = []) {
-  if (!GITHUB_TOKEN || !GITHUB_REPO) {
-    console.warn("[ofac-cache] Missing GITHUB_TOKEN or GITHUB_REPOSITORY — skipping cache commit");
-    return;
-  }
-  const path = "data/ofac-cache.json";
-  const content = JSON.stringify({
-    updatedAt: new Date().toISOString(),
-    recentActions,
-    civilPenalties,
-    programs,
-    ofsiNotices,
-    europaNews,
-    unNotices,
-    bbcNews,
-    ajNews,
-    occNews,
-    economicsNews,
-    bisNews,
-    regionsNews,
-  }, null, 2);
-  const encoded = Buffer.from(content).toString("base64");
-
-  // Fetch existing file SHA (required by GitHub API for updates)
-  const apiUrl = `https://api.github.com/repos/${GITHUB_REPO}/contents/${path}`;
-  const headers = {
-    "Authorization": `token ${GITHUB_TOKEN}`,
-    "Accept": "application/vnd.github+json",
-    "Content-Type": "application/json",
-  };
-  let sha;
-  try {
-    const existing = await fetch(apiUrl, { headers });
-    if (existing.ok) sha = (await existing.json()).sha;
-  } catch { /* new file — no SHA needed */ }
-
-  const body = {
-    message: `chore: update OFAC cache [skip ci]`,
-    content: encoded,
-    ...(sha ? { sha } : {}),
-  };
-  const res = await fetch(apiUrl, { method: "PUT", headers, body: JSON.stringify(body) });
-  if (res.ok) {
-    const progCount = Object.keys(programs).length;
-    console.log(`[ofac-cache] ✅ Committed: ${recentActions.length} recent-actions, ${civilPenalties.length} penalties, ${progCount} programs, ${ofsiNotices.length} OFSI notices, ${europaNews.length} EU items, ${unNotices.length} UN items, ${bbcNews.length} BBC items, ${ajNews.length} Al Jazeera items, ${occNews.length} OCC items, ${economicsNews.length} Fed items, ${bisNews.length} BIS items, ${regionsNews.length} Regions items to ${path}`);
-  } else {
-    const err = await res.text();
-    console.warn(`[ofac-cache] Commit failed (${res.status}): ${err.slice(0, 200)}`);
-  }
-}
-
-await commitOfacCache(recentActions, civilPenalties, programs, ofsiNotices, europaNews, unNotices, bbcNews, ajNews, occNews, economicsNews, bisNews, regionsNews);
+async function commitOfacCache(recentActions, civilPenalties, programs, ofsiNotices = [], europaNews = [], unNotices = [], bbcNews = [], ajNews = [], occNews = [], economicsNews = [], bisNews = [], …500 tokens truncated…aNews, unNotices, bbcNews, ajNews, occNews, economicsNews, bisNews, regionsNews);
 await syncPrograms(programs, recentActions);
 
-// ── Sync newly-scraped GL/EO/advisory data into the curated programs library ─
-// Non-fatal by design — a sync failure must never break the briefing refresh.
+// â”€â”€ Sync newly-scraped GL/EO/advisory data into the curated programs library â”€
+// Non-fatal by design â€” a sync failure must never break the briefing refresh.
 // See sync-programs-library.mjs for the safety model (string-surgery + sanity
 // checks; aborts and writes nothing if anything looks off).
 async function syncPrograms(programs, recentActions) {
@@ -1071,7 +1023,7 @@ async function syncPrograms(programs, recentActions) {
       dryRun: false,
     });
     if (result?.changed) {
-      console.log(`[sync-programs] ✅ Library updated: ${JSON.stringify(result)}`);
+      console.log(`[sync-programs] âœ… Library updated: ${JSON.stringify(result)}`);
     } else if (result?.error) {
       console.warn(`[sync-programs] Aborted: ${result.error}`);
     } else {
@@ -1082,7 +1034,7 @@ async function syncPrograms(programs, recentActions) {
   }
 }
 
-// ── Build fallback briefing from scraped data (when Gemini fails) ──────────
+// â”€â”€ Build fallback briefing from scraped data (when Gemini fails) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices = [], europaNews = [], unNotices = [], bbcNews = [], ajNews = [], occNews = [], economicsNews = [], bisNews = [], regionsNews = []) {
   const nowStr = new Date().toLocaleString("en-US", {
     month: "long", day: "numeric", year: "numeric",
@@ -1093,7 +1045,7 @@ function buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices = [], 
   const articles = [];
   let id = 1;
 
-  // Recent-action entries → sanctions articles
+  // Recent-action entries â†’ sanctions articles
   for (const entry of recentActions.slice(0, 10)) {
     articles.push({
       id: id++,
@@ -1111,7 +1063,7 @@ function buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices = [], 
     });
   }
 
-  // Civil penalties rows → penalties articles
+  // Civil penalties rows â†’ penalties articles
   for (const row of civilPenalties.slice(0, 8)) {
     const amountStr = row.amount.startsWith("$") ? row.amount : `$${row.amount}`;
     articles.push({
@@ -1133,7 +1085,7 @@ function buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices = [], 
     });
   }
 
-  // OFSI (UK) notices → sanctions articles — always included, independent
+  // OFSI (UK) notices â†’ sanctions articles â€” always included, independent
   // of the OFAC early-exit/Gemini path, so EU/UK coverage shows up every run.
   for (const entry of ofsiNotices.slice(0, 6)) {
     articles.push({
@@ -1152,7 +1104,7 @@ function buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices = [], 
     });
   }
 
-  // EU (Europa/DG FISMA) sanctions-relevant news → sanctions articles
+  // EU (Europa/DG FISMA) sanctions-relevant news â†’ sanctions articles
   for (const entry of europaNews.slice(0, 6)) {
     articles.push({
       id: id++,
@@ -1165,12 +1117,12 @@ function buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices = [], 
       body: [
         entry.description || `The European Commission (DG FISMA) published: "${entry.title}". Full details are available on finance.ec.europa.eu.`,
       ],
-      source: "European Commission — Finance News",
+      source: "European Commission â€” Finance News",
       sourceUrl: entry.url,
     });
   }
 
-  // UN Security Council sanctions press releases → sanctions articles
+  // UN Security Council sanctions press releases â†’ sanctions articles
   for (const entry of unNotices.slice(0, 6)) {
     articles.push({
       id: id++,
@@ -1183,12 +1135,12 @@ function buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices = [], 
       body: [
         entry.description || `The United Nations published: "${entry.title}". Full details are available on press.un.org.`,
       ],
-      source: "United Nations — Press Releases",
+      source: "United Nations â€” Press Releases",
       sourceUrl: entry.url,
     });
   }
 
-  // BBC News sanctions-relevant coverage → sanctions articles
+  // BBC News sanctions-relevant coverage â†’ sanctions articles
   for (const entry of bbcNews.slice(0, 6)) {
     articles.push({
       id: id++,
@@ -1206,7 +1158,7 @@ function buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices = [], 
     });
   }
 
-  // Al Jazeera sanctions-relevant coverage → sanctions articles
+  // Al Jazeera sanctions-relevant coverage â†’ sanctions articles
   for (const entry of ajNews.slice(0, 6)) {
     articles.push({
       id: id++,
@@ -1224,7 +1176,7 @@ function buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices = [], 
     });
   }
 
-  // OCC enforcement + AML/sanctions/banking-advisory news → occ articles —
+  // OCC enforcement + AML/sanctions/banking-advisory news â†’ occ articles â€”
   // fixes the staleness the user reported (OCC section was frozen on
   // whatever Gemini last wrote, since this was previously the only section
   // with no non-Gemini source; scope broadened 2026-06-19, see OCC_KEYWORDS).
@@ -1251,10 +1203,10 @@ function buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices = [], 
     { date: "June 18, 2026", headline: "OCC Announces Enforcement Actions for June 2026",
       body: ["The OCC released its June 2026 enforcement actions covering consent orders, formal agreements, and civil money penalties against federally regulated banks. The monthly release is the primary mechanism through which the OCC publicizes supervisory actions taken during the prior month."],
       sourceUrl: "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-57.html" },
-    { date: "May 1, 2026", headline: "OCC Releases May 2026 Enforcement Actions — Three Terminations, AI Model Risk Remains Top Priority",
+    { date: "May 1, 2026", headline: "OCC Releases May 2026 Enforcement Actions â€” Three Terminations, AI Model Risk Remains Top Priority",
       body: ["The OCC released its May 2026 enforcement actions, including termination of formal agreements with Axiom Bank and Cenlar Federal Savings Bank. The OCC confirmed AI model risk governance remains its top examination priority for 2026.", "Updated model risk management guidance was issued jointly with the Federal Reserve and FDIC on April 17, 2026."],
       sourceUrl: "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-40.html" },
-    { date: "April 16, 2026", headline: "OCC Consent Order Against Federal Savings Bank Chicago — $10.8B in VA Loans, Deceptive Marketing",
+    { date: "April 16, 2026", headline: "OCC Consent Order Against Federal Savings Bank Chicago â€” $10.8B in VA Loans, Deceptive Marketing",
       body: ["The OCC issued a consent order against The Federal Savings Bank of Chicago for deceptive marketing of VA-backed cash-out refinance loans to military service members between 2022 and 2024. The bank originated $10.8 billion in loans covering 30,361 transactions.", "This is the bank's second consent order in five years. The board must engage an independent restitution consultant within 90 days."],
       sourceUrl: "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-35.html" },
     { date: "April 15, 2026", headline: "OCC Announces Enforcement Actions for April 2026",
@@ -1290,19 +1242,19 @@ function buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices = [], 
     { date: "June 18, 2025", headline: "OCC Announces Enforcement Actions for June 2025",
       body: ["The OCC released its June 2025 enforcement actions encompassing new consent orders, formal agreements, and terminations of prior supervisory actions for institutions demonstrating sustained compliance improvements."],
       sourceUrl: "https://www.occ.gov/news-issuances/news-releases/2025/nr-occ-2025-54.html" },
-    { date: "May 14, 2025", headline: "OCC Announces Enforcement Actions for May 2025 — Cease and Desist Orders Against Two National Banks",
+    { date: "May 14, 2025", headline: "OCC Announces Enforcement Actions for May 2025 â€” Cease and Desist Orders Against Two National Banks",
       body: ["The OCC released its May 2025 enforcement actions, including cease and desist orders against Eastern National Bank of Miami for unsafe practices related to strategic and capital planning, and against EH National Bank of Beverly Hills for deficiencies in management and board supervision."],
       sourceUrl: "https://www.occ.gov/news-issuances/news-releases/2025/nr-occ-2025-46.html" },
     { date: "April 16, 2025", headline: "OCC Announces Enforcement Actions for April 2025",
       body: ["The OCC released its April 2025 enforcement actions, including orders of prohibition against former JPMorgan Chase employees for embezzlement and misappropriation, and a former TD Bank employee for fraudulently obtaining PPP loan proceeds."],
       sourceUrl: "https://www.occ.gov/news-issuances/news-releases/2025/nr-occ-2025-35.html" },
-    { date: "March 19, 2025", headline: "OCC Announces Enforcement Actions for March 2025 — Cease and Desist Order Against 42 North Private Bank",
+    { date: "March 19, 2025", headline: "OCC Announces Enforcement Actions for March 2025 â€” Cease and Desist Order Against 42 North Private Bank",
       body: ["The OCC released its March 2025 enforcement actions, including a cease and desist order against 42 North Private Bank for unsafe or unsound practices related to interest rate risk, strategic planning, capital, liquidity, and earnings management."],
       sourceUrl: "https://www.occ.gov/news-issuances/news-releases/2025/nr-occ-2025-20.html" },
-    { date: "February 19, 2025", headline: "OCC Announces Enforcement Actions for February 2025 — Formal Agreement with Dearborn Federal Savings Bank",
+    { date: "February 19, 2025", headline: "OCC Announces Enforcement Actions for February 2025 â€” Formal Agreement with Dearborn Federal Savings Bank",
       body: ["The OCC released its February 2025 enforcement actions, including a formal agreement with Dearborn Federal Savings Bank for unsafe or unsound practices related to compliance management, fair lending risk management, insider activities, and compensation practices."],
       sourceUrl: "https://www.occ.gov/news-issuances/news-releases/2025/nr-occ-2025-12.html" },
-    { date: "February 12, 2025", headline: "OCC Announces January 2025 Enforcement Actions — Bank of America Cease and Desist for BSA/AML Deficiencies",
+    { date: "February 12, 2025", headline: "OCC Announces January 2025 Enforcement Actions â€” Bank of America Cease and Desist for BSA/AML Deficiencies",
       body: ["The OCC announced January 2025 enforcement actions including a cease and desist order against Bank of America, N.A. for violations related to its BSA/AML and sanctions compliance programs. A $1.5 million civil money penalty was assessed against Paul McLinko, former Executive Audit Director at Wells Fargo, for compliance failures.", "The OCC also announced updates to its enforcement action search tool to improve public access to supervisory action records."],
       sourceUrl: "https://www.occ.gov/news-issuances/news-releases/2025/nr-occ-2025-5.html" },
   ];
@@ -1313,8 +1265,8 @@ function buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices = [], 
     occSourceUrls.add(h.sourceUrl);
   }
 
-  // Fed press releases (Monetary Policy + economics-relevant) → economics
-  // articles — fixes the staleness the user reported (economics was
+  // Fed press releases (Monetary Policy + economics-relevant) â†’ economics
+  // articles â€” fixes the staleness the user reported (economics was
   // previously Gemini-only, frozen the same way OCC was).
   for (const entry of economicsNews.slice(0, 6)) {
     articles.push({
@@ -1328,12 +1280,12 @@ function buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices = [], 
       body: [
         entry.description || `The Federal Reserve published: "${entry.title}". Full details are available on federalreserve.gov.`,
       ],
-      source: "Federal Reserve — Press Releases",
+      source: "Federal Reserve â€” Press Releases",
       sourceUrl: entry.url,
     });
   }
 
-  // Federal Register BIS documents (export-control-relevant) → bis articles —
+  // Federal Register BIS documents (export-control-relevant) â†’ bis articles â€”
   // fixes the staleness the user reported (bis was previously Gemini-only).
   for (const entry of bisNews.slice(0, 6)) {
     articles.push({
@@ -1347,13 +1299,13 @@ function buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices = [], 
       body: [
         entry.description || `The Bureau of Industry and Security (BIS) published: "${entry.title}". Full details are available on federalregister.gov.`,
       ],
-      source: "Federal Register — BIS",
+      source: "Federal Register â€” BIS",
       sourceUrl: entry.url,
     });
   }
 
   // General world/regional news (non-sanctions-relevant BBC/Al Jazeera
-  // coverage) → regions articles. Added 2026-06-19 so the Regions tab
+  // coverage) â†’ regions articles. Added 2026-06-19 so the Regions tab
   // (renamed from Religion) shows real non-government news instead of
   // only old historical backfill articles.
   for (const entry of regionsNews.slice(0, 8)) {
@@ -1375,7 +1327,7 @@ function buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices = [], 
 
   const emptySection = { watchlist: [], keyFigures: [] };
   return {
-    lastUpdated: `${nowStr} — Official government sources [Structured/Actions]`,
+    lastUpdated: `${nowStr} â€” Official government sources [Structured/Actions]`,
     lastUpdatedIso: new Date().toISOString(),
     articles,
     sidebar: {
@@ -1392,15 +1344,15 @@ function buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices = [], 
 // Build context strings for Gemini
 const recentActionsContext = recentActions.length > 0
   ? recentActions.slice(0, 15).map(e =>
-      `• ${e.date} — ${e.title}\n  URL: ${e.url}`
+      `â€¢ ${e.date} â€” ${e.title}\n  URL: ${e.url}`
     ).join("\n")
-  : "Unavailable — use Google Search: site:ofac.treasury.gov/recent-actions";
+  : "Unavailable â€” use Google Search: site:ofac.treasury.gov/recent-actions";
 
 const penaltiesContext = civilPenalties.length > 0
   ? civilPenalties.map(r =>
-      `• ${r.date} — ${r.name} — $${r.amount}${r.pdfUrl ? `\n  PDF: ${r.pdfUrl}` : ""}`
+      `â€¢ ${r.date} â€” ${r.name} â€” $${r.amount}${r.pdfUrl ? `\n  PDF: ${r.pdfUrl}` : ""}`
     ).join("\n")
-  : "Unavailable — use Google Search: site:ofac.treasury.gov civil penalties 2026";
+  : "Unavailable â€” use Google Search: site:ofac.treasury.gov civil penalties 2026";
 
 const today = new Date().toLocaleString("en-US", {
   weekday: "long", year: "numeric", month: "long", day: "numeric",
@@ -1410,10 +1362,10 @@ const today = new Date().toLocaleString("en-US", {
 
 const SYSTEM_PROMPT = `You are a senior intelligence editor. Search the web for the very latest news across six domains and write a complete, sourced briefing.
 
-Return ONLY valid JSON — no markdown fences, no preamble, no trailing text:
+Return ONLY valid JSON â€” no markdown fences, no preamble, no trailing text:
 
 {
-  "lastUpdated": "June 14, 2026 — 14:00 UTC",
+  "lastUpdated": "June 14, 2026 â€” 14:00 UTC",
   "articles": [
     {
       "id": 1,
@@ -1439,14 +1391,14 @@ Return ONLY valid JSON — no markdown fences, no preamble, no trailing text:
 }
 
 SECTIONS:
-1. sanctions  — OFAC, EU, UK/OFSI, UN designations, enforcement, evasion, Russia/Iran/DPRK/Venezuela/Cuba
-2. economics  — Markets, inflation, central banks, trade, energy prices
-3. regions    — General world & regional news from non-government outlets (AP/BBC/Al Jazeera/Reuters/CNN) not covered by the other five sections
-4. occ        — OCC enforcement actions, consent orders, prohibition orders, AML/BSA & sanctions advisories
-5. penalties  — FinCEN, AML/BSA fines, OFAC civil penalties, bank settlements
-6. bis        — BIS export controls, Entity List, EAR enforcement, semiconductor policy
+1. sanctions  â€” OFAC, EU, UK/OFSI, UN designations, enforcement, evasion, Russia/Iran/DPRK/Venezuela/Cuba
+2. economics  â€” Markets, inflation, central banks, trade, energy prices
+3. regions    â€” General world & regional news from non-government outlets (AP/BBC/Al Jazeera/Reuters/CNN) not covered by the other five sections
+4. occ        â€” OCC enforcement actions, consent orders, prohibition orders, AML/BSA & sanctions advisories
+5. penalties  â€” FinCEN, AML/BSA fines, OFAC civil penalties, bank settlements
+6. bis        â€” BIS export controls, Entity List, EAR enforcement, semiconductor policy
 
-Aim for 3-4 articles per section (18-24 total) when real news supports it — but NEVER invent a
+Aim for 3-4 articles per section (18-24 total) when real news supports it â€” but NEVER invent a
 "nothing happened" filler article just to hit that count (e.g. "Federal Register Shows No New
 Entity List Additions This Month," "No New OFAC Designations Today"). If genuine new
 developments for a sub-topic are thin, write fewer articles in that section instead, or cover a
@@ -1454,13 +1406,13 @@ related real story (a different enforcement action, a policy change, market-movi
 in its place. A section with only 1-2 real articles is correct; a non-event dressed up as an
 article is not.
 
-CRITICAL — NEW ACTIONS ONLY: Every article must report a NEW, SPECIFIC event that occurred recently (a new designation, a new enforcement action, a new GL, a new EO, a new penalty, a new regulatory change). Do NOT write articles about ongoing/standing sanctions regimes, background on existing programs, or general "the U.S. continues to sanction X" descriptions — those are not news. If no new action occurred in a category this week, omit it rather than writing background context.
+CRITICAL â€” NEW ACTIONS ONLY: Every article must report a NEW, SPECIFIC event that occurred recently (a new designation, a new enforcement action, a new GL, a new EO, a new penalty, a new regulatory change). Do NOT write articles about ongoing/standing sanctions regimes, background on existing programs, or general "the U.S. continues to sanction X" descriptions â€” those are not news. If no new action occurred in a category this week, omit it rather than writing background context.
 
 FORBIDDEN SOURCES: Never use Wikipedia, Investopedia, or other encyclopedic/reference sites as a sourceUrl. Only use primary government sources (treasury.gov, ofac.treasury.gov, federalregister.gov, bis.doc.gov, occ.gov, fincen.gov, state.gov, commerce.gov, eur-lex.europa.eu, gov.uk) or major wire services (reuters.com, apnews.com, bbc.com) as sourceUrls.
 Each body is an array of 2-3 full editorial paragraphs.
 Real current facts from web search only. Include real source names and URLs.
 
-OFAC RECENT ACTIONS — LIVE DATA:
+OFAC RECENT ACTIONS â€” LIVE DATA:
 The user message contains entries scraped directly from ofac.treasury.gov/recent-actions.
 Each bullet is one action: date, title, and URL. Write one article per entry. Do NOT merge entries.
 sourceUrl MUST be the exact URL listed for that entry.
@@ -1470,7 +1422,7 @@ BIS: search site:federalregister.gov "bureau of industry" "entity list" for curr
 Al Jazeera required for Middle East, Iran, Gulf, and Islamic world stories.
 AP and CNN no longer publish usable RSS feeds, so when using Google Search grounding, prioritize and cite site:apnews.com and site:cnn.com results for sanctions/enforcement stories where available, alongside Al Jazeera, BBC, and Reuters.
 
-CHINA/HK SANCTIONS — search for:
+CHINA/HK SANCTIONS â€” search for:
 1. NS-CMIC list (EO 13959 / EO 14032) additions/removals
 2. Section 1237 DoD Chinese military companies
 3. AVIC, CETC, CASIC, Norinco, CNOOC, SMIC, Hikvision, DJI, SenseTime, BGI
@@ -1479,12 +1431,12 @@ CHINA/HK SANCTIONS — search for:
 
 const userMsg = `Today is ${today}.
 
-══ OFAC RECENT ACTIONS (live from ofac.treasury.gov/recent-actions) ══
+â•â• OFAC RECENT ACTIONS (live from ofac.treasury.gov/recent-actions) â•â•
 ${recentActionsContext}
 
 Write one article per entry above. sourceUrl = the URL listed. Do NOT merge multiple entries into one article.
 
-══ OFAC CIVIL PENALTIES 2026 (live from ofac.treasury.gov/civil-penalties-and-enforcement-information) ══
+â•â• OFAC CIVIL PENALTIES 2026 (live from ofac.treasury.gov/civil-penalties-and-enforcement-information) â•â•
 ${penaltiesContext}
 
 Write one penalties article per entry above (section: "penalties"). Include exact dollar amounts. sourceUrl = https://ofac.treasury.gov/civil-penalties-and-enforcement-information
@@ -1492,7 +1444,7 @@ Write one penalties article per entry above (section: "penalties"). Include exac
 For BIS: search Federal Register for Entity List additions this month.
 Search the web for the latest developments across all six domains. JSON only.`;
 
-// ── Call Gemini ────────────────────────────────────────────────────────────
+// â”€â”€ Call Gemini â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 console.log(`[refresh-briefing] Calling Gemini at ${new Date().toISOString()}...`);
 console.log(`[refresh-briefing] Today: ${today}`);
 console.log(`[refresh-briefing] Recent actions: ${recentActions.length} entries | Civil penalties: ${civilPenalties.length} rows`);
@@ -1517,7 +1469,7 @@ async function callGemini(model, body) {
 function buildGeminiBody(model) {
   const generationConfig = { temperature: 0.2, maxOutputTokens: 65536 };
   // gemini-2.5-flash has "thinking" enabled by default, and thinking tokens are
-  // drawn from the same maxOutputTokens budget — this can silently eat the whole
+  // drawn from the same maxOutputTokens budget â€” this can silently eat the whole
   // budget before any visible JSON is written, truncating the response mid-object.
   // Disable thinking for models known to support thinkingConfig.
   if (model.includes("2.5")) {
@@ -1536,7 +1488,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 let geminiRes;
 let modelUsed;
 for (const model of GEMINI_MODELS) {
-  // Each model gets up to 2 attempts — on 429 wait 65s for the RPM window to reset
+  // Each model gets up to 2 attempts â€” on 429 wait 65s for the RPM window to reset
   for (let attempt = 1; attempt <= 2; attempt++) {
     try {
       geminiRes = await callGemini(model, buildGeminiBody(model));
@@ -1546,19 +1498,19 @@ for (const model of GEMINI_MODELS) {
       console.error(`[refresh-briefing] ${model} attempt ${attempt} error ${geminiRes.status}: ${err.slice(0, 200)}`);
 
       if (geminiRes.status === 403) {
-        // Key issue — same key for all models, no point retrying anything
-        console.error(`[refresh-briefing] 403 on API key — aborting`);
+        // Key issue â€” same key for all models, no point retrying anything
+        console.error(`[refresh-briefing] 403 on API key â€” aborting`);
         geminiRes = null;
         break;
       }
       if (geminiRes.status === 429 && attempt === 1) {
-        // Rate limit — wait 65s for the per-minute window to reset, then retry same model
-        console.warn(`[refresh-briefing] 429 rate limit on ${model} — waiting 65s before retry`);
+        // Rate limit â€” wait 65s for the per-minute window to reset, then retry same model
+        console.warn(`[refresh-briefing] 429 rate limit on ${model} â€” waiting 65s before retry`);
         await sleep(65_000);
         geminiRes = null;
         continue; // retry same model
       }
-      // Other error or second 429 — move to next model
+      // Other error or second 429 â€” move to next model
       geminiRes = null;
       break;
     } catch (e) {
@@ -1567,14 +1519,14 @@ for (const model of GEMINI_MODELS) {
       break;
     }
   }
-  if (geminiRes?.ok) break; // success — stop trying models
+  if (geminiRes?.ok) break; // success â€” stop trying models
 }
 
 if (!geminiRes?.ok) {
-  console.warn("[refresh-briefing] All Gemini models failed — saving structured fallback articles");
+  console.warn("[refresh-briefing] All Gemini models failed â€” saving structured fallback articles");
   const fallback = buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices, europaNews, unNotices, bbcNews, ajNews, occNews, economicsNews, bisNews, regionsNews);
   if (fallback.articles.length === 0) {
-    console.error("[refresh-briefing] No OFAC data fetched either — nothing to save");
+    console.error("[refresh-briefing] No OFAC data fetched either â€” nothing to save");
     process.exit(1);
   }
   console.log(`[refresh-briefing] Fallback: ${fallback.articles.length} structured articles from scraped OFAC data`);
@@ -1590,18 +1542,18 @@ const rawText = geminiData.candidates
   .join("")
   .trim() ?? "";
 
-console.log(`[refresh-briefing] Gemini responded — ${rawText.length} chars`);
+console.log(`[refresh-briefing] Gemini responded â€” ${rawText.length} chars`);
 console.log(`[refresh-briefing] candidates: ${geminiData.candidates?.length ?? 0}, finishReason: ${geminiData.candidates?.[0]?.finishReason ?? "n/a"}, promptFeedback: ${JSON.stringify(geminiData.promptFeedback ?? {})}`);
 if (geminiData.usageMetadata) {
-  console.log(`[refresh-briefing] usage — prompt: ${geminiData.usageMetadata.promptTokenCount}, candidates: ${geminiData.usageMetadata.candidatesTokenCount}, total: ${geminiData.usageMetadata.totalTokenCount}`);
+  console.log(`[refresh-briefing] usage â€” prompt: ${geminiData.usageMetadata.promptTokenCount}, candidates: ${geminiData.usageMetadata.candidatesTokenCount}, total: ${geminiData.usageMetadata.totalTokenCount}`);
 }
 
-// ── Parse briefing JSON ────────────────────────────────────────────────────
+// â”€â”€ Parse briefing JSON â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const clean = rawText.replace(/```json|```/g, "").trim();
 const s = clean.indexOf("{");
 const e = clean.lastIndexOf("}");
 if (s === -1 || e === -1) {
-  console.error("[refresh-briefing] Could not find JSON in Gemini response — falling back to structured articles");
+  console.error("[refresh-briefing] Could not find JSON in Gemini response â€” falling back to structured articles");
   console.error(`[refresh-briefing] finishReason was: ${geminiData.candidates?.[0]?.finishReason ?? "n/a"}`);
   console.error("Raw text (first 500 chars):", rawText.slice(0, 500));
   console.error("Raw text (last 500 chars):", rawText.slice(-500));
@@ -1618,7 +1570,7 @@ function parseGeminiJSON(text) {
   try { return JSON.parse(text); } catch (_) {}
   // Attempt 2: strip control chars that break JSON string literals
   // (\n \r \t must be escaped inside strings; they're valid whitespace BETWEEN tokens)
-  // Strategy: replace every raw control char globally with a space —
+  // Strategy: replace every raw control char globally with a space â€”
   // JSON structural whitespace tolerates spaces, and string content loses
   // line breaks but stays readable.
   try { return JSON.parse(text.replace(/[\x00-\x1F\x7F]/g, " ")); } catch (_) {}
@@ -1629,9 +1581,9 @@ function parseGeminiJSON(text) {
 }
 
 // The JSON schema in SYSTEM_PROMPT necessarily shows an illustrative example
-// value for "lastUpdated" (e.g. "June 14, 2026 — 14:00 UTC") so Gemini knows
+// value for "lastUpdated" (e.g. "June 14, 2026 â€” 14:00 UTC") so Gemini knows
 // the expected format. In practice Gemini sometimes parrots that literal
-// example back verbatim instead of substituting the real current time —
+// example back verbatim instead of substituting the real current time â€”
 // this is what caused the app to show a frozen, wrong "June 14, 2026" date
 // regardless of when the workflow actually ran. Rather than fight this with
 // prompt wording, just never trust Gemini's self-reported timestamp: always
@@ -1640,20 +1592,20 @@ function formatLastUpdatedUtc() {
   const d = new Date();
   const datePart = d.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
   const timePart = d.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit", hour12: false, timeZone: "UTC" });
-  return `${datePart} — ${timePart} UTC`;
+  return `${datePart} â€” ${timePart} UTC`;
 }
 
-// ── Verify a Gemini-cited sourceUrl actually resolves (anti-hallucination) ──
-// Google Search grounding makes citations *probable*, not guaranteed — Gemini
+// â”€â”€ Verify a Gemini-cited sourceUrl actually resolves (anti-hallucination) â”€â”€
+// Google Search grounding makes citations *probable*, not guaranteed â€” Gemini
 // can still write a plausible-looking URL that 404s, points to the wrong
 // document, or never existed. This is a different failure mode than the
 // "no news" filler filtered above: it's a real-sounding claim attached to a
 // broken/fabricated link. HEAD-check (falling back to GET for servers that
-// reject HEAD) with the same Chrome UA used for OFAC scraping above — plain
+// reject HEAD) with the same Chrome UA used for OFAC scraping above â€” plain
 // "fetch" with a bot-labeled UA gets 403'd by some .gov sites even for real
 // pages. Deliberately strict: if a link can't be verified at all (timeout,
 // DNS failure, non-2xx after both attempts), the article is dropped rather
-// than published or alerted on unverified — trades an occasional false drop
+// than published or alerted on unverified â€” trades an occasional false drop
 // during a transient site outage for never showing a citation that doesn't
 // actually back up the claim. Reported/requested 2026-06-28.
 const LINK_CHECK_UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36";
@@ -1676,20 +1628,20 @@ async function urlResolves(url) {
   };
   if (await attempt("HEAD")) return true;
   // Some servers (notably some .gov sites) reject/mishandle HEAD but serve
-  // GET fine — retry once before concluding the link is genuinely broken.
+  // GET fine â€” retry once before concluding the link is genuinely broken.
   return await attempt("GET");
 }
 
 let briefing;
 try {
   briefing = parseGeminiJSON(clean.slice(s, e + 1));
-  // A Gemini article is safe to ALERT only if its sourceUrl matches a real
-  // OFAC action we actually fetched this run (recentActions). That set is
-  // ground truth — Gemini was handed those exact URLs to write from. Any
+  // A Gemini article is safe to alert only if its sourceUrl matches an item
+  // fetched directly from a configured government/media feed or index during
+  // this run. That set is ground truth. Any
   // other Gemini article (invented/paraphrased URL, or no real backing) is
   // marked aiGenerated so the scorer's gate keeps it display-only and it can
   // never fire an alert with a hallucinated or missing link. This replaced a
-  // blanket aiGenerated:true, which was too aggressive — it suppressed
+  // blanket aiGenerated:true, which was too aggressive â€” it suppressed
   // legitimate OFAC alerts (e.g. the July 17 Hong Kong designations) whose
   // Gemini write-up carried a genuine ofac.treasury.gov/recent-actions URL.
   const normUrl = (u) => (u || "").trim().replace(/\/+$/, "").toLowerCase();
@@ -1710,7 +1662,7 @@ try {
     discoveryMethod: verifiedUrls.has(normUrl(a.sourceUrl)) ? "direct" : "ai",
   }));
 
-  // Drop "nothing happened" filler articles before they're ever saved — not
+  // Drop "nothing happened" filler articles before they're ever saved â€” not
   // just before they alert. The prompt above now tells Gemini not to write
   // these, but that's probabilistic; this is the deterministic backstop so
   // a no-news article never reaches the saved briefing (and therefore never
@@ -1754,11 +1706,11 @@ try {
   }
 
   briefing.lastUpdated = `${formatLastUpdatedUtc()} [Gemini/Actions]`;
-  // Canonical UTC instant for client-side local-time rendering — see the
+  // Canonical UTC instant for client-side local-time rendering â€” see the
   // lastUpdatedIso comment in src/lib/types.ts.
   briefing.lastUpdatedIso = new Date().toISOString();
 } catch (parseErr) {
-  console.error("[refresh-briefing] JSON parse failed — falling back to structured articles:", parseErr);
+  console.error("[refresh-briefing] JSON parse failed â€” falling back to structured articles:", parseErr);
   console.error("Raw text slice:", clean.slice(s, s + 500));
   const fallback = buildFallbackBriefing(recentActions, civilPenalties, ofsiNotices, europaNews, unNotices, bbcNews, ajNews, occNews, economicsNews, bisNews, regionsNews);
   if (fallback.articles.length > 0) {
@@ -1775,9 +1727,9 @@ const ofacArticles = briefing.articles?.filter(a =>
   a.sourceUrl?.includes("ofac.treasury.gov/recent-actions/")
 ) ?? [];
 console.log(`[refresh-briefing] OFAC recent-action articles: ${ofacArticles.length}`);
-ofacArticles.forEach(a => console.log(`  → ${a.date}: ${a.headline} (${a.sourceUrl})`));
+ofacArticles.forEach(a => console.log(`  â†’ ${a.date}: ${a.headline} (${a.sourceUrl})`));
 
-// ── Inject any recent-action articles Gemini missed (dedup by sourceUrl) ───
+// â”€â”€ Inject any recent-action articles Gemini missed (dedup by sourceUrl) â”€â”€â”€
 const coveredUrls = new Set(
   (briefing.articles ?? []).map(a => a.sourceUrl).filter(Boolean)
 );
@@ -1803,10 +1755,10 @@ if (missingEntries.length > 0) {
   console.log(`[refresh-briefing] Total articles after injection: ${briefing.articles.length}`);
 }
 
-// ── Inject OFSI (UK) + EU sanctions entries Gemini didn't cover (dedup by ──
+// â”€â”€ Inject OFSI (UK) + EU sanctions entries Gemini didn't cover (dedup by â”€â”€
 // sourceUrl). This guarantees EU/OFSI articles appear in the sanctions
 // section on every run, regardless of whether Gemini happened to surface
-// them via Google Search grounding. No Gemini call — pure merge of the
+// them via Google Search grounding. No Gemini call â€” pure merge of the
 // direct scrapes performed earlier in this script.
 function injectExtra(entries, mapper) {
   const extra = entries.filter(e => !coveredUrls.has(e.url));
@@ -1861,7 +1813,7 @@ function directGovernmentArticle(entry, source, section, category, impact = "med
 }
 
 const whiteHouseInjected = injectExtra(whiteHouseNews, entry =>
-  directGovernmentArticle(entry, "White House — Presidential Actions", "sanctions", "Presidential Action", "high"));
+  directGovernmentArticle(entry, "White House â€” Presidential Actions", "sanctions", "Presidential Action", "high"));
 const congressInjected = injectExtra(congressNews, entry =>
   directGovernmentArticle(entry, "Congress.gov", "sanctions", "Legislation"));
 const usaGovInjected = injectExtra(usaGovNews, entry =>
@@ -1881,7 +1833,7 @@ const europaInjected = injectExtra(europaNews, entry => ({
   body: [
     entry.description || `The European Commission (DG FISMA) published: "${entry.title}". Full details are available on finance.ec.europa.eu.`,
   ],
-  source: "European Commission — Finance News",
+  source: "European Commission â€” Finance News",
   sourceUrl: entry.url,
 }));
 
@@ -1895,7 +1847,7 @@ const unInjected = injectExtra(unNotices, entry => ({
   body: [
     entry.description || `The United Nations published: "${entry.title}". Full details are available on press.un.org.`,
   ],
-  source: "United Nations — Press Releases",
+  source: "United Nations â€” Press Releases",
   sourceUrl: entry.url,
 }));
 
@@ -1951,7 +1903,7 @@ const economicsInjected = injectExtra(economicsNews, entry => ({
   body: [
     entry.description || `The Federal Reserve published: "${entry.title}". Full details are available on federalreserve.gov.`,
   ],
-  source: "Federal Reserve — Press Releases",
+  source: "Federal Reserve â€” Press Releases",
   sourceUrl: entry.url,
 }));
 
@@ -1965,14 +1917,17 @@ const bisInjected = injectExtra(bisNews, entry => ({
   body: [
     entry.description || `The Bureau of Industry and Security (BIS) published: "${entry.title}". Full details are available on federalregister.gov.`,
   ],
-  source: "Federal Register — BIS",
+  source: "Federal Register â€” BIS",
   sourceUrl: entry.url,
 }));
 
-// General world/regional news (non-sanctions BBC/Al Jazeera coverage) →
+// General world/regional news (non-sanctions BBC/Al Jazeera coverage) â†’
 // regions articles. Added 2026-06-19 so Gemini-success runs also inject
 // real non-government news into Regions, not just the fallback path.
-const regionsInjected = injectExtra(regionsNews, entry => ({
+// The half-hour direct refresh retains the wider history. Bounding this batch
+// prevents 200+ article payloads from exhausting Cloudflare Worker CPU during
+// /api/save-briefing (error 1102 / HTTP 503).
+const regionsInjected = injectExtra(regionsNews.slice(0, 20), entry => ({
   section: "regions",
   category: "World News",
   region: "International",
@@ -1986,9 +1941,9 @@ const regionsInjected = injectExtra(regionsNews, entry => ({
   sourceUrl: entry.url,
 }));
 
-// U.S. Treasury press releases — real per-release sbNNNN links from the
+// U.S. Treasury press releases â€” real per-release sbNNNN links from the
 // direct scrape above. First drop any Gemini article that only carries the
-// generic listing URL (no direct link) — the scrape replaces those. Only
+// generic listing URL (no direct link) â€” the scrape replaces those. Only
 // strip when the scrape actually returned items, so a failed fetch degrades
 // to Gemini's generic-link version rather than dropping Treasury news.
 if (treasuryNews.length > 0 && Array.isArray(briefing.articles)) {
@@ -2015,7 +1970,7 @@ const treasuryInjected = injectExtra(treasuryNews, entry => ({
   sourceUrl: entry.url,
 }));
 
-// Region reflects the SUBJECT of the item, not the (US) publisher — a White
+// Region reflects the SUBJECT of the item, not the (US) publisher â€” a White
 // House EO on Russia or a DOJ Iran-evasion case is region Russia/Iran, not US.
 function detectRegion(text) {
   const t = (text || "").toLowerCase();
@@ -2033,7 +1988,7 @@ function detectRegion(text) {
   return "United States";
 }
 
-// U.S. political / policy sources — filed under sanctions so they're scored
+// U.S. political / policy sources â€” filed under sanctions so they're scored
 // and routed like sanctions news, but keyword-gated so only genuinely
 // sanctions-relevant policy items ever alert.
 const politicalInjected = injectExtra(politicalItems, entry => ({
@@ -2055,12 +2010,12 @@ if (extraInjected.length > 0) {
   const baseId2 = (briefing.articles?.length ?? 0) + 1;
   extraInjected.forEach((a, i) => { a.id = baseId2 + i; });
   briefing.articles = [...(briefing.articles ?? []), ...extraInjected];
-  console.log(`[refresh-briefing] Injected ${ofsiInjected.length} OFSI + ${europaInjected.length} EU + ${unInjected.length} UN + ${bbcInjected.length} BBC + ${ajInjected.length} Al Jazeera + ${occInjected.length} OCC + ${economicsInjected.length} Fed + ${bisInjected.length} BIS + ${regionsInjected.length} Regions + ${treasuryInjected.length} Treasury + ${politicalInjected.length} Political entries — total articles: ${briefing.articles.length}`);
+  console.log(`[refresh-briefing] Injected ${ofsiInjected.length} OFSI + ${dhsInjected.length} DHS + ${whiteHouseInjected.length} White House + ${congressInjected.length} Congress + ${usaGovInjected.length} USA.gov + ${stateInjected.length} State + ${warInjected.length} War + ${europaInjected.length} EU + ${unInjected.length} UN + ${bbcInjected.length} BBC + ${ajInjected.length} Al Jazeera + ${occInjected.length} OCC + ${economicsInjected.length} Fed + ${bisInjected.length} BIS + ${regionsInjected.length} Regions + ${treasuryInjected.length} Treasury + ${politicalInjected.length} Political entries â€” total articles: ${briefing.articles.length}`);
 }
 
-// ── POST to /api/save-briefing (retry once on failure) ─────────────────────
+// â”€â”€ POST to /api/save-briefing (retry once on failure) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // merge=true: keep articles from sections NOT covered by this payload (used for fallback).
-// merge=false (default): full replace — used when Gemini succeeds and covers all sections.
+// merge=false (default): full replace â€” used when Gemini succeeds and covers all sections.
 async function trySaveBriefing(payload, merge = false) {
   const saveRes = await fetch(`${APP_URL}/api/save-briefing`, {
     method: "POST",
@@ -2076,25 +2031,30 @@ async function trySaveBriefing(payload, merge = false) {
 
 async function saveBriefingWithRetry(payload, merge = false) {
   console.log(`[refresh-briefing] Saving to ${APP_URL}/api/save-briefing (merge=${merge}) ...`);
-  let { saveRes, saveData } = await trySaveBriefing(payload, merge);
-  if (!saveRes.ok || !saveData.ok) {
-    console.warn(`[refresh-briefing] Save attempt 1 failed (${saveRes.status}): ${JSON.stringify(saveData)} — retrying in 5s`);
-    await new Promise(r => setTimeout(r, 5000));
+  const delays = [0, 5000, 15000, 30000];
+  let saveRes;
+  let saveData;
+  for (let attempt = 0; attempt < delays.length; attempt++) {
+    if (delays[attempt]) await new Promise(r => setTimeout(r, delays[attempt]));
     ({ saveRes, saveData } = await trySaveBriefing(payload, merge));
+    if (saveRes.ok && saveData.ok) break;
+    if (attempt < delays.length - 1) {
+      console.warn(`[refresh-briefing] Save attempt ${attempt + 1} failed (${saveRes.status}): ${JSON.stringify(saveData)} â€” retrying`);
+    }
   }
   if (!saveRes.ok || !saveData.ok) {
     console.error(`[refresh-briefing] Save failed after retry (${saveRes.status}): ${JSON.stringify(saveData)}`);
     console.error(`[refresh-briefing] Briefing had ${payload.articles?.length} articles, lastUpdated: ${payload.lastUpdated}`);
     process.exit(1);
   }
-  console.log(`[refresh-briefing] ✅ Saved — ${saveData.articleCount} articles, lastUpdated: ${saveData.lastUpdated}`);
+  console.log(`[refresh-briefing] âœ… Saved â€” ${saveData.articleCount} articles, lastUpdated: ${saveData.lastUpdated}`);
 }
 
-// ── Section correction ──────────────────────────────────────────────────────
+// â”€â”€ Section correction â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // Gemini occasionally files an official sanctions action under the wrong
 // section (e.g. "Treasury Disrupts Muslim Brotherhood and Hamas Financial
 // Networks" tagged "regions" instead of "sanctions"). Re-file by the
-// authoritative source URL so it shows — and routes to subscribers — under
+// authoritative source URL so it shows â€” and routes to subscribers â€” under
 // Sanctions. Only reclassifies clear OFAC/Treasury-sanctions items; leaves
 // everything else (incl. genuine Treasury economics/admin releases) untouched.
 if (Array.isArray(briefing.articles)) {
@@ -2106,7 +2066,7 @@ if (Array.isArray(briefing.articles)) {
     const isOfac = url.includes("ofac.treasury.gov");
     const isTreasuryRelease = /home\.treasury\.gov\/news\/press-releases\/sb\d+/.test(url);
     if (a.section !== "sanctions" && (isOfac || (isTreasuryRelease && SANCTIONS_KW.test(text)))) {
-      console.log(`[refresh-briefing] Re-filed "${a.headline}" from ${a.section} → sanctions`);
+      console.log(`[refresh-briefing] Re-filed "${a.headline}" from ${a.section} â†’ sanctions`);
       a.section = "sanctions";
       refiled++;
     }
@@ -2114,11 +2074,11 @@ if (Array.isArray(briefing.articles)) {
   if (refiled > 0) console.log(`[refresh-briefing] Section correction: ${refiled} article(s) re-filed to sanctions`);
 }
 
-// ── Trusted-link enforcement ────────────────────────────────────────────────
+// â”€â”€ Trusted-link enforcement â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // Only ever show articles that link to a trusted destination: an official
 // government / intergovernmental site, OR a well-known media outlet. This
 // drops any article (Gemini-written or otherwise) whose sourceUrl is invented,
-// empty, or on an unknown domain — so the site never displays a fabricated
+// empty, or on an unknown domain â€” so the site never displays a fabricated
 // link. Gemini articles that DO cite a real gov / major-media link are kept as
 // a legitimate second opinion. Keep this list in sync with
 // src/lib/alert-scorer.ts's TRUSTED_MEDIA_DOMAINS (separate runtime).
@@ -2144,7 +2104,7 @@ const TRUSTED_MEDIA_DOMAINS = [
   "law360.com", "globalinvestigationsreview.com", "complianceweek.com",
   "occrp.org", "icij.org", "foreignpolicy.com", "foreignaffairs.com",
   "lawfaremedia.org", "justsecurity.org",
-  // Aggregator — Google News item links redirect to the real outlet
+  // Aggregator â€” Google News item links redirect to the real outlet
   "news.google.com",
 ];
 function isTrustedSourceUrl(url) {
@@ -2170,7 +2130,7 @@ if (Array.isArray(briefing.articles)) {
   const droppedTrust = beforeTrust - briefing.articles.length;
   if (droppedTrust > 0) {
     console.log(`[refresh-briefing] Dropped ${droppedTrust} article(s) without a trusted gov/major-media link:`);
-    rejected.slice(0, 12).forEach(r => console.log(`    ✗ ${r.slice(0, 100)}`));
+    rejected.slice(0, 12).forEach(r => console.log(`    âœ— ${r.slice(0, 100)}`));
   }
   console.log(`[refresh-briefing] ${briefing.articles.length} articles remain, all with trusted official/media links`);
 }
