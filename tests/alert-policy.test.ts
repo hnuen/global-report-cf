@@ -12,6 +12,7 @@ import { articleMatchesAlertTopic, alertSourceLabel, cleanAlertText } from "../s
 import { mergeMonitorArticles } from "../src/lib/monitor-articles.ts";
 import { articlesForSubscriber, sourceGroupForArticle, validateSourceGroups } from "../src/lib/alert-sources.ts";
 import { itemCheckpointKey, sourceCheckpointKey } from "../src/lib/source-item-checkpoints.ts";
+import { isLikelyCorruptedText } from "../src/lib/text-quality.ts";
 
 function briefing(articles: Article[]): Briefing {
   return { lastUpdated: "test", articles, sidebar: {} as Briefing["sidebar"] };
@@ -243,6 +244,19 @@ test("OFAC pinning cannot displace newer Economics or Regions stories", () => {
   const app = readFileSync(new URL("../app/AppContent.tsx", import.meta.url), "utf8");
   assert.ok(app.includes('const shouldPinOFAC = sec === "sanctions" || sec === "all"'));
   assert.ok(app.includes("const ofacPin = shouldPinOFAC ?"));
+});
+
+test("binary or corrupted government responses never display or alert", () => {
+  const damaged = "IHDRï¿½ï¿½ï¿½ï¿½\u0001\u0002State Department ï¿½ï¿½ï¿½ï¿½ payload";
+  assert.equal(isLikelyCorruptedText(damaged), true);
+  const article = testArticle(999, damaged, "https://www.state.gov/press-releases/example");
+  const scored = scoreArticle(article);
+  assert.equal(scored.shouldAlert, false);
+  assert.ok(scored.reasons.some(reason => reason.includes("corrupted/binary")));
+
+  const sourceFetcher = readFileSync(new URL("../src/lib/official-sources.ts", import.meta.url), "utf8");
+  assert.ok(sourceFetcher.includes("Unsupported non-text content-type"));
+  assert.ok(sourceFetcher.includes("Response decoded as binary/corrupted text"));
 });
 
 
