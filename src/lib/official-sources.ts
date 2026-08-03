@@ -17,6 +17,7 @@
 import { loadETagStore, flushETagStore, getConditionalHeaders, recordETagResponse, type ETagStore } from "./source-etag-cache";
 import { normalizeTreasuryPressReleaseUrl, treasuryPressReleasePattern } from "./treasury-links";
 import { itemCheckpointKey, loadSourceItemCheckpoints, sourceCheckpointKey } from "./source-item-checkpoints";
+import { isLikelyCorruptedText } from "./text-quality";
 
 export interface OfficialSource {
   name: string;
@@ -51,9 +52,15 @@ async function fetchWithTimeout(
     // 304 Not Modified Ã¢â‚¬â€ source unchanged since last fetch
     if (res.status === 304) return null;
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const contentType = (res.headers.get("content-type") ?? "").toLowerCase();
+    if (contentType && !/(?:text\/|html|xml|json|rss|atom|javascript)/.test(contentType)) {
+      throw new Error(`Unsupported non-text content-type: ${contentType.slice(0, 80)}`);
+    }
     // Record ETag/Last-Modified for next run
     if (etagStore) recordETagResponse(url, res, etagStore);
-    return await res.text();
+    const text = await res.text();
+    if (isLikelyCorruptedText(text)) throw new Error("Response decoded as binary/corrupted text");
+    return text;
   } finally {
     clearTimeout(timer);
   }
