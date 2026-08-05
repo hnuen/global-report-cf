@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-08-05T13:07:51.457Z",
+  "updatedAt": "2026-08-05T15:07:45.399Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260805",
+      "code": "20260805",
+      "title": "Counter Terrorism Designations Removals and Update",
+      "date": "August 05, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260803",
       "code": "20260803",
@@ -54,12 +60,6 @@
       "code": "20260717",
       "title": "Hong Kong-related Designations Updates and Removals",
       "date": "July 17, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260715",
-      "code": "20260715",
-      "title": "Non-Proliferation Designations; Counter Terrorism Designations",
-      "date": "July 15, 2026"
     }
   ],
   "civilPenalties": [
@@ -409,7 +409,7 @@
     "counter-terrorism-sanctions": {
       "name": "Counter Terrorism Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-terrorism-sanctions",
-      "lastUpdated": "Jul 30, 2026",
+      "lastUpdated": "Aug 05, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -2624,129 +2624,115 @@
         },
         {
           "number": "18A",
-          "title": "Authorizing Certain Transactions Involving Integraci6n Administradora de Fondos de Ahorro Previsional, S.A",
+          "title": "Venezuela General License 18A",
           "date": "March 22, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34126/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "21",
-          "title": "Entries in Certain Accounts for Normal Service Charges and Payments and Transfers to Blocked Accounts in U.S. Financial Institutions Authorized",
+          "title": "Venezuela General License 21",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/46421/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "22",
-          "title": "Venezuela's Mission to the United Nations",
+          "title": "Venezuela General License 22",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/30601/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "23",
-          "title": "Third-country Diplomatic and Consular Funds Transfers Authorized",
+          "title": "Venezuela General License 23",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34116/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "24A",
-          "title": "Certain Transactions Involving the Government of Venezuela Related to Telecommunications and Mail Authorized",
+          "title": "Venezuela General License 24A",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935731/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "25",
-          "title": "Exportation of Certain Services, Software, Hardware, and Technology Incident to the Exchange of Communications over the Internet Authorized",
+          "title": "Venezuela General License 25",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31761/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "26",
-          "title": "Emergency and Certain Other Medical Services Authorized",
+          "title": "Venezuela General License 26",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31766/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "27",
-          "title": "Certain Transactions Related to Patents, Trademarks, and Copyrights Authorized ( a)",
+          "title": "Venezuela General License 27",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34111/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "29",
-          "title": "Certain Transactions Involving the Government of Venezuela in Support of Certain Nongovernmental Organizations' Activities Authorized",
+          "title": "Venezuela General License 29",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31771/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "30B",
-          "title": "Authorizing Certain Transactions Necessary to Port and Airport Operations",
+          "title": "Venezuela General License 30B",
           "date": "February 2, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934996/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "31B",
-          "title": "Certain Transactions Involving the IV Venezuelan National Assembly and Certain Other Persons",
+          "title": "Venezuela General License 31B",
           "date": "January 4, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/930241/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "32",
-          "title": "Authorizing Certain Transactions Related to Personal Maintenance of Individuals Who Are U.S. Persons Residing in Venezuela",
+          "title": "Venezuela General License 32",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34101/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "33",
-          "title": "Authorizing Overflight Payments, Emergency Landings, and Air Ambulance Services",
+          "title": "Venezuela General License 33",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34096/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "34A",
-          "title": "Authorizing Transactions Involving Certain Government of Venezuela Persons",
+          "title": "Venezuela General License 34A",
           "date": "September 9, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/25966/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "35",
@@ -2758,48 +2744,43 @@
         },
         {
           "number": "42",
-          "title": "Authorizing Certain Transactions Related to the Negotiation of Certain Settlement Agreements with the IV Venezuelan National Assembly and Certain Other Persons",
+          "title": "Venezuela General License 42",
           "date": "May 1, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/931696/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "45B",
-          "title": "Authorizing Certain Repatriation Transactions Involving Consorcio Venezolano de Industrias Aeronáuticas y Servicios Aéreos, S.A",
+          "title": "Venezuela General License 45B",
           "date": "November 16, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/932686/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "46C",
-          "title": "Authorizing Certain Activities Involving Venezuelan- Origin Oil or Petrochemical Products",
+          "title": "Venezuela General License 46C",
           "date": "March 13, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935661/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "47A",
-          "title": "Authorizing the Sale of U.S.-Origin Diluents to Venezuela",
+          "title": "Venezuela General License 47A",
           "date": "February 3, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935666/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "48B",
-          "title": "Authorizing the Supply of Certain Items and Services to Venezuela",
+          "title": "Venezuela General License 48B",
           "date": "March 13, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935671/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "49A",
@@ -3068,12 +3049,6 @@
       "url": "https://press.un.org/en/2026/sc16424.doc.htm",
       "date": "July 29, 2026",
       "description": "The Security Council today renewed the sanctions regime targeting non-State armed groups and individuals operating in the Central African Republic for another year."
-    },
-    {
-      "title": "Security Council, 10204th Meeting (AM) Central African Republic",
-      "url": "https://press.un.org/en/blog/sc16424",
-      "date": "July 29, 2026",
-      "description": "The Security Council will vote on a draft resolution to extend the 2745 sanctions regime related to the Central African Republic, which expires at the end of the month, and renew the mandate of the Panel of Experts supporting the 2745 Sanctions Committee, which expires on 31 August. The sanctions regime covers an asset freeze and prevention of the supply, sale or transfer of weapons and military vehicles and equipment to armed groups and associated individuals operating in the Central African Republic as well as the entry or transit of individuals designated by the Committee."
     }
   ],
   "bbcNews": [
@@ -3082,6 +3057,12 @@
       "url": "https://www.bbc.co.uk/news/articles/c330pxyvzzyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 5, 2026",
       "description": "The Russia defence ministry said it had struck logistics hubs and supply centres in Kyiv and the surrounding region."
+    },
+    {
+      "title": "UN rights chief alarmed by rise in Iran executions since March",
+      "url": "https://www.bbc.co.uk/news/articles/c75gvzxrz49o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 5, 2026",
+      "description": "Volker Türk says 56 people have been executed on national security-related charges, including 27 in cases linked to January's protests."
     },
     {
       "title": "Trump says Iran will be 'hit very hard' if Hormuz Strait not open soon as oil prices fall",
@@ -3128,6 +3109,24 @@
   ],
   "ajNews": [
     {
+      "title": "Demolition complicates the search for bodies after Venezuela’s earthquakes",
+      "url": "https://www.aljazeera.com/news/longform/2026/8/5/demolition-complicates-the-search-for-bodies-after-venezuelas-earthquakes?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "Venezuela has begun tearing down unstable buildings after its deadly earthquakes. But what is the cost to survivors?"
+    },
+    {
+      "title": "Why are US Republicans losing faith in War Secretary Pete Hegseth?",
+      "url": "https://www.aljazeera.com/news/2026/8/5/why-are-us-republicans-losing-faith-in-war-secretary-pete-hegseth?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "The reasons for dissent are not unanimous, ranging from the war in Iran to an overhaul of military leadership."
+    },
+    {
+      "title": "UN rights chief says Iran executed at least 56 people since March",
+      "url": "https://www.aljazeera.com/news/2026/8/5/un-rights-chief-says-iran-executed-at-least-56-people-since-march?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "Volker Turk warns of surge in Iran executions to suppress dissent after January uprising."
+    },
+    {
       "title": "Iran, Oman, US ‘close’ to Hormuz deal: What do they all want?",
       "url": "https://www.aljazeera.com/news/2026/8/5/iran-oman-us-close-to-hormuz-deal-what-do-they-all-want?traffic_source=rss",
       "date": "August 5, 2026",
@@ -3138,18 +3137,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/08-05-2026-drone-attacks-turkish-ship-sv?traffic_source=rss",
       "date": "August 5, 2026",
       "description": "A Turkish cargo ship caught fire after a drone attack near Russia’s Black Sea port of Novorossiysk."
-    },
-    {
-      "title": "Russian attacks kill 17, exploiting Ukraine’s lack of missile interceptors",
-      "url": "https://www.aljazeera.com/news/2026/8/5/russian-attacks-kill-17-exploiting-ukraines-lack-of-missile-interceptors?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "Ukrainian President Volodymyr Zelenskyy says Russian forces used 29 missiles and 115 drones during the assault."
-    },
-    {
-      "title": "Trump hails progress but warned Iran of ‘hard hit’ if no deal reached",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/08-05-2026-clip-trump-iran-talks-sot?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "US President Donald Trump says progress with Iran has been made, but warned Iran of &#039;hard hit&#039; if no deal reached."
     }
   ],
   "occNews": [
@@ -3248,16 +3235,22 @@
   ],
   "regionsNews": [
     {
+      "title": "Left-wing political outsider wins Democratic Senate primary in Michigan",
+      "url": "https://www.bbc.co.uk/news/articles/ckgdkpz07kvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 5, 2026",
+      "description": "Abdul El-Sayed, the son of Egyptian immigrants, would be the first Muslim US senator if elected in November."
+    },
+    {
       "title": "Drone carrying explosives found at German airport, police say",
       "url": "https://www.bbc.co.uk/news/articles/cyvlg4q48l3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 5, 2026",
-      "description": "The drone was found in the cargo area near a Ukrainian aircraft before another suspected object collided with a cargo aircraft in mid-air."
+      "description": "The drone was found near Ukrainian cargo planes before another object collided with a cargo aircraft in mid-air."
     },
     {
-      "title": "Pakistan restricts international media reporting",
-      "url": "https://www.bbc.co.uk/news/articles/cn0n9w95n70o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "What can scientists learn from a stray SpaceX rocket hitting the Moon?",
+      "url": "https://www.bbc.co.uk/news/articles/c62q0xerzrno?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 5, 2026",
-      "description": "Anyone working for foreign media, including Pakistanis, will now need permission to report from anywhere outside three major cities."
+      "description": "While the collision was an accident, it is a unique scientific gift for planetary geologists that could provide important data for future space missions."
     },
     {
       "title": "Waste workers help winner find binned €1m lottery ticket in Italy",
@@ -3272,10 +3265,16 @@
       "description": "César Gastélum, who was known for comedy and lifestyle posts, was killed at close range by a man on a motorbike."
     },
     {
-      "title": "Record heatwave in South Korea as temperatures soar to 42.5C",
-      "url": "https://www.bbc.co.uk/news/videos/c935ng9n2klo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "South Africa plans new rules on ex-leaders' foreign trips after Zuma's visit to India",
+      "url": "https://www.bbc.co.uk/news/articles/c1e14lj7vg7o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 5, 2026",
-      "description": "There have been at least 19 deaths related to the heatwave which has brought the country's hottest day since records began."
+      "description": "Jacob Zuma was pictured with a businessmen allegedly at the heart of a corruption scandal in South Africa"
+    },
+    {
+      "title": "Pakistan restricts international media reporting",
+      "url": "https://www.bbc.co.uk/news/articles/cn0n9w95n70o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 5, 2026",
+      "description": "Anyone working for foreign media, including Pakistanis, will now need permission to report from anywhere outside three major cities."
     },
     {
       "title": "Perez Hilton recovering in hospital after reports he self-harmed during livestream",
@@ -3306,6 +3305,12 @@
       "url": "https://www.bbc.co.uk/news/articles/c20jp3mp7lyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 5, 2026",
       "description": "The arrest happened shortly before President Trump was due to host a fundraising dinner at the coastal golf course in California."
+    },
+    {
+      "title": "El-Sayed's victory sends tremors through Democratic Party",
+      "url": "https://www.bbc.co.uk/news/articles/cp309ng0xq1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 5, 2026",
+      "description": "El-Sayed's win sets up a high-stakes contest in November, testing a left-wing candidate's popularity in a swing state."
     },
     {
       "title": "'My grandmother subjected my baby to female genital mutilation behind my back'",
@@ -3342,6 +3347,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cx27p32jzj2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 4, 2026",
       "description": "A wave of Kenyan elephant deaths has been blamed on pesticides, but experts tell the BBC they are doubtful."
+    },
+    {
+      "title": "Record heatwave in South Korea as temperatures soar to 42.5C",
+      "url": "https://www.bbc.co.uk/news/videos/c935ng9n2klo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 5, 2026",
+      "description": "There have been at least 19 deaths related to the heatwave which has brought the country's hottest day since records began."
     },
     {
       "title": "Watch: Evacuations as Guatemala volcano erupts",
@@ -3410,7 +3421,7 @@
       "description": "People have filed complaints against Starbucks for allegedly making light of the deadly Gwangju Uprising."
     },
     {
-      "title": "Anthropic AI created fake profiles and impersonated people in attempted hack",
+      "title": "Anthropic AI used fake profiles to target people in hack then hid the evidence",
       "url": "https://www.bbc.co.uk/news/articles/c1w1lvn7d9go?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 5, 2026",
       "description": "The UK's AI Safety Institute said recent behaviour from Anthropic and OpenAI models was malicious and unprecedented."
@@ -3650,6 +3661,42 @@
       "description": "The former department store closed in 2016."
     },
     {
+      "title": "Gaza father opens play center to restore childhood amid Israeli attacks",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/08-05-2026-gaza-jump-city-children-sv-mp4?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "A Palestinian father opened a Gaza play center offering children free escape and joy amid near daily Israeli attacks."
+    },
+    {
+      "title": "Boxer Chapman recovering after emergency surgery for brain bleed",
+      "url": "https://www.aljazeera.com/sports/2026/8/5/boxer-chapman-recovering-after-emergency-surgery-for-brain-bleed?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "Featherweight Raven Chapman collapsed while sparring on July 24 and was rushed to surgery, her team says."
+    },
+    {
+      "title": "Ex-PM Sheikh Hasina announces plan to return to Bangladesh",
+      "url": "https://www.aljazeera.com/news/2026/8/5/ex-pm-sheikh-hasina-announces-her-plan-to-return-to-bangladesh?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "The decision of the 78-year-old ousted leader comes despite her facing the death penalty in Bangladesh."
+    },
+    {
+      "title": "Iraq faces crisis as Shia armed groups defy disarmament",
+      "url": "https://www.aljazeera.com/news/2026/8/5/iraq-faces-crisis-as-shia-armed-groups-defy-disarmament?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "Iraqi PM faces a serious crisis as powerful Shia paramilitaries refuse to disarm as September 30 deadline looms."
+    },
+    {
+      "title": "Former heavyweight champ ⁠Parker cleared to fight again after doping ban",
+      "url": "https://www.aljazeera.com/sports/2026/8/5/former-heavyweight-champ-%e2%81%a0parker-cleared-to-fight-again-after-doping-ban?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "Joseph Parker was suspended in October after failing a voluntary drug test, but denied taking any prohibited substance."
+    },
+    {
+      "title": "Pakistan’s Khan in jail for 3 years: PTI rallies over ‘arbitrary detention’",
+      "url": "https://www.aljazeera.com/news/2026/8/5/pakistans-khan-in-jail-for-3-years-pti-amnesty-slam-solitary-confinement?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "Thousands of supporters of former PM Imran Khan&#039;s party demonstrate across country to call for his immediate release."
+    },
+    {
       "title": "SpaceX rocket segment to crash into the moon: What happened?",
       "url": "https://www.aljazeera.com/news/2026/8/5/spacex-rocket-segment-to-crash-into-the-moon-what-happened?traffic_source=rss",
       "date": "August 5, 2026",
@@ -3732,48 +3779,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/08-05-2026-mo-salah-trabzon-clip?traffic_source=rss",
       "date": "August 5, 2026",
       "description": "Egyptian football star Mohamed Salah has addressed Trabzonspor supporters for the first time."
-    },
-    {
-      "title": "South Africa’s le Clos says home destroyed during Commonwealth record run",
-      "url": "https://www.aljazeera.com/sports/2026/8/5/south-africas-le-clos-says-home-destroyed-during-commonwealth-record-run?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "Olympic swimming champion Chad le Clos says his home was destroyed in a fire while he was at the Commonwealth Games."
-    },
-    {
-      "title": "Government is ‘for the people’ says Michigan primary candidate",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/government-is-for-the-people-says-michigan-primary-candidate?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "Government is ‘for the people’ says Michigan primary candidate"
-    },
-    {
-      "title": "Toppled Bangladesh leader Sheikh Hasina to speak today: What we can expect",
-      "url": "https://www.aljazeera.com/news/2026/8/5/toppled-bangladesh-leader-sheikh-hasina-to-speak-today-what-we-can-expect?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "Former Bangladeshi prime minister is likely to announce her return from exile in India despite facing the death penalty."
-    },
-    {
-      "title": "Michigan, Missouri, Washington primary elections: Key takeaways",
-      "url": "https://www.aljazeera.com/news/2026/8/5/michigan-missouri-washington-primary-elections-key-takeaways?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "Recent US primaries have revealed Democratic Party rift between progressives and centrists over US support for Israel."
-    },
-    {
-      "title": "Cape Verde’s World Cup hero, social media sensation Vozinha joins Colo-Colo",
-      "url": "https://www.aljazeera.com/sports/2026/8/5/cape-verdes-world-cup-hero-social-media-sensation-vozinha-joins-colo-colo?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "Vozinha says he always believed he was a &#039;big club&#039; player after his move to Colo-Colo in Chile."
-    },
-    {
-      "title": "Inside the Air India Phuket-Delhi flight that dropped 300 feet mid-air",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/inside-the-air-india-phuket-delhi-flight-that-dropped-300-feet-mid-air?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "Seventeen people were injured when an Air India flight from Phuket to Delhi encountered severe turbulence."
-    },
-    {
-      "title": "Japan tests US-Tomahawk missile as it moves away from Post-WWII status",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/japan-tests-us-tomahawk-missile-as-it-moves-away-from-post-wwii-status?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "Japan tested a US-Tomahawk cruise missile, launching from their Chokai warship in the Pacific Ocean on July 29."
     }
   ]
 }
