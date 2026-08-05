@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05T19:07:52.698Z",
+  "updatedAt": "2026-08-05T21:07:45.418Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260805",
@@ -3066,6 +3066,12 @@
   ],
   "bbcNews": [
     {
+      "title": "Iran says it has agreed Strait of Hormuz shipping route with Oman",
+      "url": "https://www.bbc.co.uk/news/articles/ckg9d3eyeggo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 5, 2026",
+      "description": "A foreign ministry spokesman did not give details but said an agreement with the Gulf nation was \"in the final stages\"."
+    },
+    {
       "title": "After deadly Kyiv strike, Ukraine warns interceptor shortage is costing lives",
       "url": "https://www.bbc.co.uk/news/articles/cyvlgq2gp2eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 5, 2026",
@@ -3076,12 +3082,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c75gvzxrz49o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 5, 2026",
       "description": "Volker Türk says 56 people have been executed on national security-related charges, including 27 in cases linked to January's protests."
-    },
-    {
-      "title": "Trump says Iran will be 'hit very hard' if Hormuz Strait not open soon as oil prices fall",
-      "url": "https://www.bbc.co.uk/news/articles/cpw9v0gnzxwo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 5, 2026",
-      "description": "US Secretary of State Marco Rubio and Treasury Secretary Scott Bessent both announced talks had progressed to allow shipments to resume."
     },
     {
       "title": "Watch: 'Scariest night' as Ukraine fails to intercept Russian attack",
@@ -3156,18 +3156,6 @@
       "url": "https://www.aljazeera.com/news/longform/2026/8/5/demolition-complicates-the-search-for-bodies-after-venezuelas-earthquakes?traffic_source=rss",
       "date": "August 5, 2026",
       "description": "Venezuela has begun tearing down unstable buildings after its deadly earthquakes. But what is the cost to survivors?"
-    },
-    {
-      "title": "Why are US Republicans losing faith in War Secretary Pete Hegseth?",
-      "url": "https://www.aljazeera.com/news/2026/8/5/why-are-us-republicans-losing-faith-in-war-secretary-pete-hegseth?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "The reasons for dissent are not unanimous, ranging from the war in Iran to an overhaul of military leadership."
-    },
-    {
-      "title": "UN rights chief says Iran executed at least 56 people since March",
-      "url": "https://www.aljazeera.com/news/2026/8/5/un-rights-chief-says-iran-executed-at-least-56-people-since-march?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "Volker Turk warns of surge in Iran executions to suppress dissent after January uprising."
     }
   ],
   "occNews": [
@@ -3266,16 +3254,16 @@
   ],
   "regionsNews": [
     {
-      "title": "Left-wing political outsider wins Democratic Senate primary in Michigan",
-      "url": "https://www.bbc.co.uk/news/articles/ckgdkpz07kvo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 5, 2026",
-      "description": "Abdul El-Sayed, the son of Egyptian immigrants, would be the first Muslim US senator if elected in November."
-    },
-    {
       "title": "Drone carrying explosives found at German airport, police say",
       "url": "https://www.bbc.co.uk/news/articles/cyvlg4q48l3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 5, 2026",
       "description": "The drone was found near Ukrainian cargo planes before another object collided with a cargo aircraft in mid-air."
+    },
+    {
+      "title": "Israel strikes south Lebanon after first evacuation warning in weeks",
+      "url": "https://www.bbc.co.uk/news/articles/c998711dyjvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 5, 2026",
+      "description": "Lebanon's health ministry says one person was killed in the strikes, which the Israeli military says were a response to a Hezbollah ceasefire violation."
     },
     {
       "title": "Why some scientists are thrilled that a SpaceX rocket has crashed into the Moon",
@@ -3290,10 +3278,16 @@
       "description": "The player only realised they binned the life-changing ticket after family told them the numbers he played for years had been drawn."
     },
     {
-      "title": "Mexican influencer shot dead during livestream",
-      "url": "https://www.bbc.co.uk/news/articles/cx2kg709qd9o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Ex-leader Hasina gambles on return to Bangladesh despite death penalty",
+      "url": "https://www.bbc.co.uk/news/articles/cvg9j8820v6o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 5, 2026",
-      "description": "César Gastélum, who was known for comedy and lifestyle posts, was killed at close range by a man on a motorbike."
+      "description": "The 78-year-old has been convicted of crimes against humanity over a deadly crackdown on a 2024 uprising."
+    },
+    {
+      "title": "Youth protests have weakened Modi, Indian activist who went on hunger strike tells BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cn7nkyr1j7ro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 5, 2026",
+      "description": "The \"cockroach\" movement was one of the biggest public displays of dissent against India's prime minister in years."
     },
     {
       "title": "South Africa plans new rules on ex-leaders' foreign trips after Zuma's visit to India",
@@ -3308,34 +3302,10 @@
       "description": "Anyone working for foreign media, including Pakistanis, will now need permission to report from anywhere outside three major cities."
     },
     {
-      "title": "Perez Hilton recovering in hospital after reports he self-harmed during livestream",
-      "url": "https://www.bbc.co.uk/news/articles/cly5kvdkyjro?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Mexican influencer shot dead during livestream",
+      "url": "https://www.bbc.co.uk/news/articles/cx2kg709qd9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 5, 2026",
-      "description": "Miami police told US media outlets the celebrity blogger had been \"safely recovered\" from his home."
-    },
-    {
-      "title": "Nigeria's president orders 80% salary increase for junior soldiers",
-      "url": "https://www.bbc.co.uk/news/articles/cj031jp3g6jo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 5, 2026",
-      "description": "The announcement comes as Nigeria's security forces struggle to contain multiple threats."
-    },
-    {
-      "title": "Police raid Starbucks Korea headquarters over 'Tank Day' fiasco",
-      "url": "https://www.bbc.co.uk/news/articles/c0kmd4xpr46o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 5, 2026",
-      "description": "People have filed complaints against Starbucks for allegedly making light of the deadly Gwangju Uprising."
-    },
-    {
-      "title": "Afghan boxer appears in court in connection with death of Scottish woman",
-      "url": "https://www.bbc.co.uk/news/articles/cq56qejll6vo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 5, 2026",
-      "description": "Sharif Ahmadzai, 26, is being held in connection with the death of Elisabeth Ross from Edinburgh."
-    },
-    {
-      "title": "Armed man arrested near Trump's golf course ahead of president's visit",
-      "url": "https://www.bbc.co.uk/news/articles/c20jp3mp7lyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 5, 2026",
-      "description": "The arrest happened shortly before President Trump was due to host a fundraising dinner at the coastal golf course in California."
+      "description": "César Gastélum, who was known for comedy and lifestyle posts, was killed at close range by a man on a motorbike."
     },
     {
       "title": "El-Sayed's victory sends tremors through Democratic Party",
@@ -3368,18 +3338,6 @@
       "description": "Women tell the BBC how they were harassed for participating in the CJP protest and posting about it online."
     },
     {
-      "title": "How to avoid the worst of the Italian heat",
-      "url": "https://www.bbc.co.uk/news/articles/c05q1gz0p1yo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 4, 2026",
-      "description": "From supermarkets to night-time tours, experts share how to make the most of Italy during this latest heatwave."
-    },
-    {
-      "title": "Mysterious elephant deaths in Kenya raise questions around pesticides",
-      "url": "https://www.bbc.co.uk/news/articles/cx27p32jzj2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 4, 2026",
-      "description": "A wave of Kenyan elephant deaths has been blamed on pesticides, but experts tell the BBC they are doubtful."
-    },
-    {
       "title": "Record heatwave in South Korea as temperatures soar to 42.5C",
       "url": "https://www.bbc.co.uk/news/videos/c935ng9n2klo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 5, 2026",
@@ -3404,10 +3362,10 @@
       "description": "The changes are part of government efforts to tackle the youth unemployment crisis."
     },
     {
-      "title": "Trump's 'Liberation Day' tariff refunds hit $100bn",
+      "title": "Trump administration pays back $100bn in 'Liberation Day' tariffs to businesses",
       "url": "https://www.bbc.co.uk/news/articles/cwyewn5wexvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 5, 2026",
-      "description": "The repayments represent roughly 60% of all tariff revenue collected by the US government under the policy,"
+      "description": "It represents roughly 60% of all tariff revenue collected under the policy, with billions still to be repaid."
     },
     {
       "title": "Vegetables to get smaller and more expensive due to hot weather, farmers warn",
@@ -3416,22 +3374,28 @@
       "description": "This year's harvest could be the worst on record due to the exceptionally dry spring and summer."
     },
     {
+      "title": "Student loan repayment rates an 'unsustainable burden', chancellor told",
+      "url": "https://www.bbc.co.uk/news/articles/c5yed780epqo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 5, 2026",
+      "description": "More than 120 MPs and peers have asked John Healey to carry out an \"urgent review\" of repayments."
+    },
+    {
       "title": "The cost of being single – and how friends are teaming up to beat it",
       "url": "https://www.bbc.co.uk/news/articles/cly7dqprlnvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 4, 2026",
       "description": "Many singles face extra costs for housing, bills, food and holidays but there are ways to ease the burden."
     },
     {
-      "title": "SpaceX shares sink after first earnings report reveals huge AI spending plans",
-      "url": "https://www.bbc.co.uk/news/articles/c0qvpveg20vo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 5, 2026",
-      "description": "Elon Musk told investors that people were \"underestimating\" his company."
-    },
-    {
       "title": "How tech is helping in the battle against wildfires",
       "url": "https://www.bbc.co.uk/news/articles/c62enveg1dpo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 4, 2026",
       "description": "Tech is being used to watch for wildfires but firefighters are still needed to put them out."
+    },
+    {
+      "title": "SpaceX shares sink after first earnings report reveals huge AI spending plans",
+      "url": "https://www.bbc.co.uk/news/articles/c0qvpveg20vo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 5, 2026",
+      "description": "Elon Musk told investors that people were \"underestimating\" his company."
     },
     {
       "title": "'I feel like I dug my own grave': The workers caught in the AI transition",
@@ -3528,12 +3492,6 @@
       "url": "https://www.bbc.co.uk/news/articles/czjlvrd9e43o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 3, 2026",
       "description": "Xbox consoles now cost significantly more in the UK, with one model increasing in price by 43%."
-    },
-    {
-      "title": "New Spider-Man film sees second-biggest ever global opening weekend",
-      "url": "https://www.bbc.co.uk/news/articles/c3w052le2elo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 3, 2026",
-      "description": "The strong box office performance gives a boost to Disney ahead of the much-anticipated Avengers: Doomsday."
     },
     {
       "title": "Zinc dresses and ice creams - how to survive a heatwave wedding",
@@ -3686,10 +3644,40 @@
       "description": "The former department store closed in 2016."
     },
     {
-      "title": "US law enforcement reports deadly mass shooting in North Carolina",
+      "title": "SpaceX shares slide on the heels of first quarterly report",
+      "url": "https://www.aljazeera.com/economy/2026/8/5/spacex-shares-slide-on-the-heels-of-first-quarterly-report?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "The stock was down more than 13 percent as investors were spooked by the company&#039;s heavy investments."
+    },
+    {
+      "title": "Sheikh Hasina says she will return to Bangladesh in December",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/05-08-sv-hasina-returns-bangladesh-bn?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "Deposed Bangladesh Prime Minister Sheikh Hasina says she will return in December."
+    },
+    {
+      "title": "New Mexico sues US Justice Department for impeding Epstein probe",
+      "url": "https://www.aljazeera.com/news/2026/8/5/new-mexico-sues-us-justice-department-for-impeding-epstein-probe?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "The southwestern US state&#039;s attorney general argues that the federal government is withholding key unredacted documents."
+    },
+    {
+      "title": "Young pilot makes daring emergency landing on Florida interstate",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/aje-onl-nf_young-pilot-makes-emergency-landing-on-florida-i10-050826?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "A 21-year-old flight instructor safely landed her small aircraft on a US freeway near Pensacola, Florida."
+    },
+    {
+      "title": "Brazil’s Flavio Bolsonaro names Alfredo Gaspar as running mate",
+      "url": "https://www.aljazeera.com/news/2026/8/5/brazils-flavio-bolsonaro-names-alfredo-gaspar-as-running-mate?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "The announcement comes as Lula warns of foreign interference and polls show a tightening presidential race."
+    },
+    {
+      "title": "US authorities say 3 killed in shooting in Prospect Hill, North Carolina",
       "url": "https://www.aljazeera.com/news/2026/8/5/us-law-enforcement-reports-deadly-mass-shooting-in-north-carolina?traffic_source=rss",
       "date": "August 5, 2026",
-      "description": "This is a breaking news story."
+      "description": "Law enforcement says at least three people were killed in shooting at a home, with those involved part of same family."
     },
     {
       "title": "Photos: Israeli forces raid occupied West Bank’s Qalandiya refugee camp",
@@ -3774,24 +3762,6 @@
       "url": "https://www.aljazeera.com/news/2026/8/5/ex-pm-sheikh-hasina-announces-her-plan-to-return-to-bangladesh?traffic_source=rss",
       "date": "August 5, 2026",
       "description": "The decision of the 78-year-old ousted leader comes despite her facing the death penalty in Bangladesh."
-    },
-    {
-      "title": "Iraq faces crisis as Shia armed groups defy disarmament",
-      "url": "https://www.aljazeera.com/news/2026/8/5/iraq-faces-crisis-as-shia-armed-groups-defy-disarmament?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "Iraqi PM faces a serious crisis as powerful Shia paramilitaries refuse to disarm as September 30 deadline looms."
-    },
-    {
-      "title": "Former heavyweight champ ⁠Parker cleared to fight again after doping ban",
-      "url": "https://www.aljazeera.com/sports/2026/8/5/former-heavyweight-champ-%e2%81%a0parker-cleared-to-fight-again-after-doping-ban?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "Joseph Parker was suspended in October after failing a voluntary drug test, but denied taking any prohibited substance."
-    },
-    {
-      "title": "Pakistan’s Khan in jail for 3 years: PTI rallies over ‘arbitrary detention’",
-      "url": "https://www.aljazeera.com/news/2026/8/5/pakistans-khan-in-jail-for-3-years-pti-amnesty-slam-solitary-confinement?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "Thousands of supporters of former PM Imran Khan&#039;s party demonstrate across country to call for his immediate release."
     }
   ]
 }
