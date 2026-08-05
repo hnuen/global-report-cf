@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05T15:07:45.399Z",
+  "updatedAt": "2026-08-05T17:07:53.329Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260805",
@@ -2624,115 +2624,129 @@
         },
         {
           "number": "18A",
-          "title": "Venezuela General License 18A",
+          "title": "Authorizing Certain Transactions Involving Integraci6n Administradora de Fondos de Ahorro Previsional, S.A",
           "date": "March 22, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34126/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "21",
-          "title": "Venezuela General License 21",
+          "title": "Entries in Certain Accounts for Normal Service Charges and Payments and Transfers to Blocked Accounts in U.S. Financial Institutions Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/46421/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "22",
-          "title": "Venezuela General License 22",
+          "title": "Venezuela's Mission to the United Nations",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/30601/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "23",
-          "title": "Venezuela General License 23",
+          "title": "Third-country Diplomatic and Consular Funds Transfers Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34116/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "24A",
-          "title": "Venezuela General License 24A",
+          "title": "Certain Transactions Involving the Government of Venezuela Related to Telecommunications and Mail Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935731/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "25",
-          "title": "Venezuela General License 25",
+          "title": "Exportation of Certain Services, Software, Hardware, and Technology Incident to the Exchange of Communications over the Internet Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31761/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "26",
-          "title": "Venezuela General License 26",
+          "title": "Emergency and Certain Other Medical Services Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31766/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "27",
-          "title": "Venezuela General License 27",
+          "title": "Certain Transactions Related to Patents, Trademarks, and Copyrights Authorized ( a)",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34111/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "29",
-          "title": "Venezuela General License 29",
+          "title": "Certain Transactions Involving the Government of Venezuela in Support of Certain Nongovernmental Organizations' Activities Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31771/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "30B",
-          "title": "Venezuela General License 30B",
+          "title": "Authorizing Certain Transactions Necessary to Port and Airport Operations",
           "date": "February 2, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934996/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "31B",
-          "title": "Venezuela General License 31B",
+          "title": "Certain Transactions Involving the IV Venezuelan National Assembly and Certain Other Persons",
           "date": "January 4, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/930241/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "32",
-          "title": "Venezuela General License 32",
+          "title": "Authorizing Certain Transactions Related to Personal Maintenance of Individuals Who Are U.S. Persons Residing in Venezuela",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34101/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "33",
-          "title": "Venezuela General License 33",
+          "title": "Authorizing Overflight Payments, Emergency Landings, and Air Ambulance Services",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34096/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "34A",
-          "title": "Venezuela General License 34A",
+          "title": "Authorizing Transactions Involving Certain Government of Venezuela Persons",
           "date": "September 9, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/25966/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "35",
@@ -2744,43 +2758,48 @@
         },
         {
           "number": "42",
-          "title": "Venezuela General License 42",
+          "title": "Authorizing Certain Transactions Related to the Negotiation of Certain Settlement Agreements with the IV Venezuelan National Assembly and Certain Other Persons",
           "date": "May 1, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/931696/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "45B",
-          "title": "Venezuela General License 45B",
+          "title": "Authorizing Certain Repatriation Transactions Involving Consorcio Venezolano de Industrias Aeronáuticas y Servicios Aéreos, S.A",
           "date": "November 16, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/932686/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "46C",
-          "title": "Venezuela General License 46C",
+          "title": "Authorizing Certain Activities Involving Venezuelan- Origin Oil or Petrochemical Products",
           "date": "March 13, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935661/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "47A",
-          "title": "Venezuela General License 47A",
+          "title": "Authorizing the Sale of U.S.-Origin Diluents to Venezuela",
           "date": "February 3, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935666/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "48B",
-          "title": "Venezuela General License 48B",
+          "title": "Authorizing the Supply of Certain Items and Services to Venezuela",
           "date": "March 13, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935671/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "49A",
@@ -3109,6 +3128,18 @@
   ],
   "ajNews": [
     {
+      "title": "Russia kills 17 in ballistic missile attacks around Kyiv",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/5-8-sv-russia-attacks-kyiv-ua?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "At least 17 people were killed after Russia launched an overnight ballistic missile and drone attack on Kyiv."
+    },
+    {
+      "title": "War on Iran: US-Iran deal edges closer",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/war-on-iran-us-iran-deal-edges-closer?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "A deal between the US and Iran could be signed within 48 hours, according to US officials."
+    },
+    {
       "title": "Demolition complicates the search for bodies after Venezuela’s earthquakes",
       "url": "https://www.aljazeera.com/news/longform/2026/8/5/demolition-complicates-the-search-for-bodies-after-venezuelas-earthquakes?traffic_source=rss",
       "date": "August 5, 2026",
@@ -3247,7 +3278,7 @@
       "description": "The drone was found near Ukrainian cargo planes before another object collided with a cargo aircraft in mid-air."
     },
     {
-      "title": "What can scientists learn from a stray SpaceX rocket hitting the Moon?",
+      "title": "Why some scientists are thrilled that a SpaceX rocket has crashed into the Moon",
       "url": "https://www.bbc.co.uk/news/articles/c62q0xerzrno?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 5, 2026",
       "description": "While the collision was an accident, it is a unique scientific gift for planetary geologists that could provide important data for future space missions."
@@ -3256,7 +3287,7 @@
       "title": "Waste workers help winner find binned €1m lottery ticket in Italy",
       "url": "https://www.bbc.co.uk/news/articles/c62qvll0z94o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 5, 2026",
-      "description": "The player only realised he binned the life-changing ticket after family told him the numbers he played for years had been drawn."
+      "description": "The player only realised they binned the life-changing ticket after family told them the numbers he played for years had been drawn."
     },
     {
       "title": "Mexican influencer shot dead during livestream",
@@ -3310,7 +3341,7 @@
       "title": "El-Sayed's victory sends tremors through Democratic Party",
       "url": "https://www.bbc.co.uk/news/articles/cp309ng0xq1o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 5, 2026",
-      "description": "El-Sayed's win sets up a high-stakes contest in November, testing a left-wing candidate's popularity in a swing state."
+      "description": "His win in Michigan sets up a high-stakes contest in November, testing a left-wing candidate's popularity in a swing state."
     },
     {
       "title": "'My grandmother subjected my baby to female genital mutilation behind my back'",
@@ -3661,6 +3692,42 @@
       "description": "The former department store closed in 2016."
     },
     {
+      "title": "Pope Leo XIV to visit Peru, Argentina and Uruguay in November",
+      "url": "https://www.aljazeera.com/news/2026/8/5/pope-leo-xiv-to-visit-peru-argentina-and-uruguay-in-november?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "The pontiff’s first Latin America trip will take him back to Peru, where he spent decades as a missionary and bishop."
+    },
+    {
+      "title": "Puerto Rican cities hit with water rationing measures during record drought",
+      "url": "https://www.aljazeera.com/news/2026/8/5/puerto-rican-cities-hit-with-water-rationing-measures-during-record-drought?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "Governor Jenniffer Gonzalez says she does not know how long the rationing measures will remain in place."
+    },
+    {
+      "title": "Arab officials call for action over Jerusalem tensions",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/arab-officials-call-for-action-over-jerusalem-tensions?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "Arab officials call for action over Jerusalem tensions"
+    },
+    {
+      "title": "Top Arab, Muslim diplomats launch plan to protect Jerusalem religious sites",
+      "url": "https://www.aljazeera.com/news/2026/8/5/arab-and-muslim-ministers-launch-plan-to-protect-jerusalem-religious-sites?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "Foreign ministers warn Christian and Islamic holy sites &#039;threatened&#039; by Israel &#039;as never before&#039;."
+    },
+    {
+      "title": "UK tribunal confirms professor’s anti-Zionism is legally protected belief",
+      "url": "https://www.aljazeera.com/news/2026/8/5/uk-tribunal-confirms-professors-anti-zionism-is-legally-protected-belief?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "David Miller has told Al Jazeera the ruling is a victory that will encourage others to speak out against Zionism."
+    },
+    {
+      "title": "Germany investigates explosive device attached to drone at Leipzig airport",
+      "url": "https://www.aljazeera.com/news/2026/8/5/germany-investigates-explosive-device-attached-to-drone-at-leipzig-airport?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "An airport employee spotted the object carrying what authorities described as &#039;an unknown explosive device&#039;."
+    },
+    {
       "title": "Gaza father opens play center to restore childhood amid Israeli attacks",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/08-05-2026-gaza-jump-city-children-sv-mp4?traffic_source=rss",
       "date": "August 5, 2026",
@@ -3731,54 +3798,6 @@
       "url": "https://www.aljazeera.com/sports/2026/8/5/ex-liverpool-star-salah-arrives-in-turkiye-ahead-of-move-to-trabzonspor?traffic_source=rss",
       "date": "August 5, 2026",
       "description": "Egypt forward Mohamed Salah landed in Istanbul on Wednesday to complete his move to Turkiye club Trabzonspor."
-    },
-    {
-      "title": "Israeli forces detain Palestinians during raid in occupied West Bank",
-      "url": "https://www.aljazeera.com/news/2026/8/5/israeli-forces-detain-palestinians-during-raid-in-occupied-west-bank?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "A journalist covering events was severely beaten by Israeli soldiers, while locals were also attacked."
-    },
-    {
-      "title": "Lebanon and Israel still split over disarming Hezbollah at Rome talks",
-      "url": "https://www.aljazeera.com/news/2026/8/5/lebanon-and-israel-still-split-over-disarming-hezbollah-at-rome-talks?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "Disagreements remain in second day of resumed talks over disarming Hezbollah and Israeli withdrawal from South Lebanon."
-    },
-    {
-      "title": "Vozinha moves on from World Cup, says ‘Colo-Colo is the best moment’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/vozinha-moves-on-from-world-cup-says-colo-colo-is-the-best?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "Cape Verde&#039;s World Cup goalkeeper Vozinha has been officially unveiled as the newest signing for Chilean club Colo-Colo."
-    },
-    {
-      "title": "Israeli raid deepens fears across West Bank refugee camps",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/israeli-raid-deepens-fears-across-west-bank-refugee-camps?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "Israeli raid deepens fears across West Bank refugee camps"
-    },
-    {
-      "title": "India’s severe monsoon season causes more than 100 deaths since July",
-      "url": "https://www.aljazeera.com/news/2026/8/5/indias-severe-monsoon-season-causes-more-than-100-deaths-since-july?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "Monsoon downpours cause floods and landslides as climate change and El Nino disrupt rainfall patterns."
-    },
-    {
-      "title": "How Israeli restrictions on Palestinians’ movement break up the West Bank",
-      "url": "https://www.aljazeera.com/opinions/2026/8/5/how-israeli-restrictions-on-palestinians-movement-break-up-the-west-bank?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "While barriers to free movement make the lives of Palestinians extremely difficult, they do not make Israel more secure."
-    },
-    {
-      "title": "Reform UK plan to return asylum seekers using navy ‘dangerous in practice’",
-      "url": "https://www.aljazeera.com/news/2026/8/5/reform-uk-plan-to-return-asylum-seekers-using-navy-dangerous-in-practice?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "Nigel Farage&#039;s party says &#039;Operation Fortress&#039; would stop migrants &#039;invading&#039;, but experts slam proposal as unrealistic."
-    },
-    {
-      "title": "Football star Mohamed Salah sends first message to Trabzonspor fans",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/08-05-2026-mo-salah-trabzon-clip?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "Egyptian football star Mohamed Salah has addressed Trabzonspor supporters for the first time."
     }
   ]
 }
