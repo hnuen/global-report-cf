@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05T17:07:53.329Z",
+  "updatedAt": "2026-08-05T19:07:52.698Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260805",
@@ -3062,20 +3062,14 @@
       "url": "https://press.un.org/en/2026/sc16425.doc.htm",
       "date": "July 30, 2026",
       "description": "On 30 July 2026, the Security Council Committee established pursuant to resolution 1988 (2011) enacted the amendments specified with strikethrough and/or underline in the entries below on its 1988 List of individuals and entities subject to the assets freeze, travel ban and arms embargo set out in paragraph 1 of Security Council resolution 2816 (2026), and adopted under Chapter VII of the Charter of the United Nations."
-    },
-    {
-      "title": "Security Council Extends Sanctions Regime Targeting Non-State Armed Groups, Individuals in Central African Republic for One Year, Unanimously Adopting Resolution 2827 (2026)",
-      "url": "https://press.un.org/en/2026/sc16424.doc.htm",
-      "date": "July 29, 2026",
-      "description": "The Security Council today renewed the sanctions regime targeting non-State armed groups and individuals operating in the Central African Republic for another year."
     }
   ],
   "bbcNews": [
     {
-      "title": "Russia strike kills 21 as Ukraine says it needs more missile interceptors",
-      "url": "https://www.bbc.co.uk/news/articles/c330pxyvzzyo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "After deadly Kyiv strike, Ukraine warns interceptor shortage is costing lives",
+      "url": "https://www.bbc.co.uk/news/articles/cyvlgq2gp2eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 5, 2026",
-      "description": "The Russia defence ministry said it had struck logistics hubs and supply centres in Kyiv and the surrounding region."
+      "description": "Without Patriot interceptors, Ukraine's skies are wide open and people are fully exposed to Russia's missile barrages."
     },
     {
       "title": "UN rights chief alarmed by rise in Iran executions since March",
@@ -3088,6 +3082,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cpw9v0gnzxwo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 5, 2026",
       "description": "US Secretary of State Marco Rubio and Treasury Secretary Scott Bessent both announced talks had progressed to allow shipments to resume."
+    },
+    {
+      "title": "Watch: 'Scariest night' as Ukraine fails to intercept Russian attack",
+      "url": "https://www.bbc.co.uk/news/videos/clyxdgx7m8no?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 5, 2026",
+      "description": "Kyiv's depleted air defences meant many of the missiles were not intercepted - like the one that hit Anastasiia's home."
     },
     {
       "title": "Ukrainian vegetable seller targeted in 'human safari' drone attack",
@@ -3128,6 +3128,18 @@
   ],
   "ajNews": [
     {
+      "title": "Malaysia vows not to return Rohingya refugees to Myanmar if lives at risk",
+      "url": "https://www.aljazeera.com/news/2026/8/5/malaysia-will-not-return-rohingya-refugees-to-myanmar-if-lives-are-at-risk?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "Authorities are screening 5,000 refugees as rights groups warn they remain at risk of persecution in Myanmar."
+    },
+    {
+      "title": "Is the conflict between Russia and Ukraine deepening?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/8/5/is-the-conflict-between-russia-and-ukraine-deepening?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "The war sees a surge in attacks by both sides with little diplomatic movement."
+    },
+    {
       "title": "Russia kills 17 in ballistic missile attacks around Kyiv",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/5-8-sv-russia-attacks-kyiv-ua?traffic_source=rss",
       "date": "August 5, 2026",
@@ -3156,18 +3168,6 @@
       "url": "https://www.aljazeera.com/news/2026/8/5/un-rights-chief-says-iran-executed-at-least-56-people-since-march?traffic_source=rss",
       "date": "August 5, 2026",
       "description": "Volker Turk warns of surge in Iran executions to suppress dissent after January uprising."
-    },
-    {
-      "title": "Iran, Oman, US ‘close’ to Hormuz deal: What do they all want?",
-      "url": "https://www.aljazeera.com/news/2026/8/5/iran-oman-us-close-to-hormuz-deal-what-do-they-all-want?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "An agreement could restore shipping through crucial waterway, paving way for peace talks between Tehran and Washington."
-    },
-    {
-      "title": "Turkish cargo ship catches fire after Black Sea drone attack",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/08-05-2026-drone-attacks-turkish-ship-sv?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "A Turkish cargo ship caught fire after a drone attack near Russia’s Black Sea port of Novorossiysk."
     }
   ],
   "occNews": [
@@ -3314,7 +3314,7 @@
       "description": "Miami police told US media outlets the celebrity blogger had been \"safely recovered\" from his home."
     },
     {
-      "title": "Nigeria's president orders a 80% salary increase for junior soldiers",
+      "title": "Nigeria's president orders 80% salary increase for junior soldiers",
       "url": "https://www.bbc.co.uk/news/articles/cj031jp3g6jo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 5, 2026",
       "description": "The announcement comes as Nigeria's security forces struggle to contain multiple threats."
@@ -3398,16 +3398,16 @@
       "description": "A Malaysian pilot was arrested at Jakarta airport after being found with around four stone (26kg) of drugs hidden in his luggage."
     },
     {
-      "title": "Watch: Wild police chase in Queensland, Australia ends in two arrests",
-      "url": "https://www.bbc.co.uk/news/videos/c5y0d96qgg3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 4, 2026",
-      "description": "A police pursuit in Queensland has ended in two arrests, with authorities taken on a high-speed car chase across Ipswich and Brisbane."
-    },
-    {
       "title": "Prioritise new jobs over green targets to win public contracts, firms told",
       "url": "https://www.bbc.co.uk/news/articles/ckgdmv7elg8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 5, 2026",
       "description": "The changes are part of government efforts to tackle the youth unemployment crisis."
+    },
+    {
+      "title": "Trump's 'Liberation Day' tariff refunds hit $100bn",
+      "url": "https://www.bbc.co.uk/news/articles/cwyewn5wexvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 5, 2026",
+      "description": "The repayments represent roughly 60% of all tariff revenue collected by the US government under the policy,"
     },
     {
       "title": "Vegetables to get smaller and more expensive due to hot weather, farmers warn",
@@ -3428,16 +3428,16 @@
       "description": "Elon Musk told investors that people were \"underestimating\" his company."
     },
     {
-      "title": "'I feel like I dug my own grave': The workers caught in the AI transition",
-      "url": "https://www.bbc.co.uk/news/articles/cgr7nxve05go?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 4, 2026",
-      "description": "AI is reshaping the Philippines' outsourcing industry, raising questions over the future of the industry."
-    },
-    {
       "title": "How tech is helping in the battle against wildfires",
       "url": "https://www.bbc.co.uk/news/articles/c62enveg1dpo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 4, 2026",
       "description": "Tech is being used to watch for wildfires but firefighters are still needed to put them out."
+    },
+    {
+      "title": "'I feel like I dug my own grave': The workers caught in the AI transition",
+      "url": "https://www.bbc.co.uk/news/articles/cgr7nxve05go?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 4, 2026",
+      "description": "AI is reshaping the Philippines' outsourcing industry, raising questions over the future of the industry."
     },
     {
       "title": "Fashion brand Jaded has ad banned for 'glamorising smoking'",
@@ -3534,12 +3534,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c3w052le2elo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 3, 2026",
       "description": "The strong box office performance gives a boost to Disney ahead of the much-anticipated Avengers: Doomsday."
-    },
-    {
-      "title": "US and Japan take action to prop up yen in rare joint move",
-      "url": "https://www.bbc.co.uk/news/articles/cglj1pr0wjwo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 3, 2026",
-      "description": "Both countries have said that they will not hesitate to conduct joint interventions in the future."
     },
     {
       "title": "Zinc dresses and ice creams - how to survive a heatwave wedding",
@@ -3692,6 +3686,42 @@
       "description": "The former department store closed in 2016."
     },
     {
+      "title": "US law enforcement reports deadly mass shooting in North Carolina",
+      "url": "https://www.aljazeera.com/news/2026/8/5/us-law-enforcement-reports-deadly-mass-shooting-in-north-carolina?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "This is a breaking news story."
+    },
+    {
+      "title": "Photos: Israeli forces raid occupied West Bank’s Qalandiya refugee camp",
+      "url": "https://www.aljazeera.com/gallery/2026/8/5/photos-israeli-forces-raid-occupied-west-banks-qalandiya-refugee-camp?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "Eight Palestinian people injured after Israeli forces enter homes, shops in Qalandiya, issuing demolition threats."
+    },
+    {
+      "title": "El-Sayed wins Michigan Democratic Senate primary",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/el-sayed-wins-michigan-democratic-senate-primary?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "Abdul El-Sayed won Michigan&#039;s Democratic primary for US Senate, narrowly defeating Rep. Haley Stevens."
+    },
+    {
+      "title": "Puntland forces seize government-held camp in Somalia’s Galkayo",
+      "url": "https://www.aljazeera.com/news/2026/8/5/puntland-forces-seize-government-held-camp-in-somalias-galkayo?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "Puntland says it has taken control of Galkayo camp as rival federal-aligned forces retreat following intense clashes."
+    },
+    {
+      "title": "At least one Lebanese person, two Israeli soldiers killed in south Lebanon",
+      "url": "https://www.aljazeera.com/news/2026/8/5/at-least-one-lebanese-person-two-israeli-soldiers-killed-in-south-lebanon?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "The violence comes amid talks between Lebanon and Israel as Beirut pushes for a phased Israeli troop withdrawal."
+    },
+    {
+      "title": "LIV Golf secures ‘lead’ investor for player-driven future after Saudi exit",
+      "url": "https://www.aljazeera.com/sports/2026/8/5/liv-golf-secures-lead-investor-for-player-driven-life-after-saudi-future?traffic_source=rss",
+      "date": "August 5, 2026",
+      "description": "An agreement with an unnamed investor is approved by the LIV Golf board to replace Saudi Arabia deal."
+    },
+    {
       "title": "Pope Leo XIV to visit Peru, Argentina and Uruguay in November",
       "url": "https://www.aljazeera.com/news/2026/8/5/pope-leo-xiv-to-visit-peru-argentina-and-uruguay-in-november?traffic_source=rss",
       "date": "August 5, 2026",
@@ -3762,42 +3792,6 @@
       "url": "https://www.aljazeera.com/news/2026/8/5/pakistans-khan-in-jail-for-3-years-pti-amnesty-slam-solitary-confinement?traffic_source=rss",
       "date": "August 5, 2026",
       "description": "Thousands of supporters of former PM Imran Khan&#039;s party demonstrate across country to call for his immediate release."
-    },
-    {
-      "title": "SpaceX rocket segment to crash into the moon: What happened?",
-      "url": "https://www.aljazeera.com/news/2026/8/5/spacex-rocket-segment-to-crash-into-the-moon-what-happened?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "A piece of the SpaceX Falcon 9 rocket is believed to have crashed into the moon after floating in space since last year."
-    },
-    {
-      "title": "Mohamed Salah lands in Turkiye to fan frenzy ahead of Trabzonspor move",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/mohamed-salah-lands-in-turkiye-to-fan-frenzy-ahead-of-trabzonspor-move?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "Mohamed Salah lands in Turkiye to fan frenzy ahead of Trabzonspor move."
-    },
-    {
-      "title": "In Bandar Abbas, the ceasefire never came",
-      "url": "https://www.aljazeera.com/features/2026/8/5/in-bandar-abbas-the-ceasefire-never-came?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "A single mother from Bandar Abbas reflects on the fear and resilience of living through repeated attacks."
-    },
-    {
-      "title": "Protesters stage sit-in against settler violence-linked Smotrich funds",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/5/protesters-stage-sit-in-against-settler-violence-linked-smotrich-funds?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "Palestinian and Israeli protesters staged a sit-in at the Religious Zionist Party’s headquarters in Shoham on Wednesday."
-    },
-    {
-      "title": "How a social media campaign triggered huge migrant surge on Ceuta",
-      "url": "https://www.aljazeera.com/features/2026/8/5/how-a-social-media-campaign-triggered-huge-migrant-surge-on-ceuta?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "Following a court ruling protecting migrants swimming to Ceuta the previous week, accounts called on thousands to go."
-    },
-    {
-      "title": "Ex-Liverpool star Salah arrives in Turkiye before move to Trabzonspor",
-      "url": "https://www.aljazeera.com/sports/2026/8/5/ex-liverpool-star-salah-arrives-in-turkiye-ahead-of-move-to-trabzonspor?traffic_source=rss",
-      "date": "August 5, 2026",
-      "description": "Egypt forward Mohamed Salah landed in Istanbul on Wednesday to complete his move to Turkiye club Trabzonspor."
     }
   ]
 }
