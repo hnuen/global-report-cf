@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-08-06T15:08:43.954Z",
+  "updatedAt": "2026-08-06T19:08:49.440Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260806",
+      "code": "20260806",
+      "title": "Cuba-related Designations; Issuance of Cuba-related Frequently Asked Question",
+      "date": "August 06, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260805",
       "code": "20260805",
@@ -53,12 +59,6 @@
       "url": "https://ofac.treasury.gov/recent-actions/20260717_33",
       "code": "20260717_33",
       "title": "Issuance of Venezuela-related Frequently Asked Question",
-      "date": "July 17, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260717",
-      "code": "20260717",
-      "title": "Hong Kong-related Designations Updates and Removals",
       "date": "July 17, 2026"
     }
   ],
@@ -689,7 +689,7 @@
     "cuba-sanctions": {
       "name": "Cuba Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/cuba-sanctions",
-      "lastUpdated": "Jul 23, 2026",
+      "lastUpdated": "Aug 06, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -736,7 +736,7 @@
         },
         {
           "citation": "66 FR 36683-01",
-          "description": "2001 Exports of Agricultural Products, Medicines, and Medical Devices to Cuba, Sudan, Libya, and Iran; Cuba Travel-Related Transactions 65 FR 70382-00 - 2000 Payments to Persons Who Hold Certain Categories of Judgments Against Cuba or Iran Recent Actions regarding Cuba Sanctions Counter Terrorism De",
+          "description": "2001 Exports of Agricultural Products, Medicines, and Medical Devices to Cuba, Sudan, Libya, and Iran; Cuba Travel-Related Transactions 65 FR 70382-00 - 2000 Payments to Persons Who Hold Certain Categories of Judgments Against Cuba or Iran Recent Actions regarding Cuba Sanctions Cuba-related Designa",
           "year": "2001",
           "glNumbers": []
         }
@@ -2785,21 +2785,19 @@
         },
         {
           "number": "47A",
-          "title": "Authorizing the Sale of U.S.-Origin Diluents to Venezuela",
+          "title": "Venezuela General License 47A",
           "date": "February 3, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935666/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "48B",
-          "title": "Authorizing the Supply of Certain Items and Services to Venezuela",
+          "title": "Venezuela General License 48B",
           "date": "March 13, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935671/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "49A",
@@ -3090,28 +3088,22 @@
       "description": "Without Patriot interceptors, Ukraine's skies are wide open and people are fully exposed to Russia's missile barrages."
     },
     {
-      "title": "UN rights chief alarmed by rise in Iran executions since March",
-      "url": "https://www.bbc.co.uk/news/articles/c75gvzxrz49o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 5, 2026",
-      "description": "Volker Türk says 56 people have been executed on national security-related charges, including 27 in cases linked to January's protests."
-    },
-    {
       "title": "In Odesa, no-one is safe from Russia's new Black Sea strikes",
       "url": "https://www.bbc.co.uk/news/articles/cy8ev4y172yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 6, 2026",
       "description": "Blackened ships and smashed docks mark Russia's recent surge of attacks on Ukraine's coastline."
     },
     {
+      "title": "How Ukraine is taking the war 'deeper' into Russia",
+      "url": "https://www.bbc.co.uk/news/videos/ce8l6x3r9gjo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 6, 2026",
+      "description": "Ukrainian strikes have targeted key economic and military supply chains in recent weeks."
+    },
+    {
       "title": "Watch: 'Scariest night' as Ukraine fails to intercept Russian attack",
       "url": "https://www.bbc.co.uk/news/videos/clyxdgx7m8no?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 5, 2026",
       "description": "Kyiv's depleted air defences meant many of the missiles were not intercepted - like the one that hit Anastasiia's home."
-    },
-    {
-      "title": "Ukrainian vegetable seller targeted in 'human safari' drone attack",
-      "url": "https://www.bbc.co.uk/news/videos/clye173d533o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 4, 2026",
-      "description": "A video shows a Russian drone pursuing a street vendor in the Kherson region before exploding."
     },
     {
       "title": "Iran says deal with Oman on Strait of Hormuz is in final stages",
@@ -3126,12 +3118,6 @@
       "description": "US Secretary of State Marco Rubio and Treasury Secretary Scott Bessent both announced talks had progressed to allow shipments to resume."
     },
     {
-      "title": "BP's $5.7bn profit highest since 2022 as Iran war pushes up oil price",
-      "url": "https://www.bbc.co.uk/news/articles/cg5l11m02j3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 4, 2026",
-      "description": "Higher oil prices boost the energy giant's results while environmental groups accuse it of profiteering."
-    },
-    {
       "title": "UK petrol prices hit highest level since Iran war began",
       "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 5, 2026",
@@ -3140,28 +3126,28 @@
   ],
   "ajNews": [
     {
+      "title": "People killed and injured as blast hits vehicle near Syria’s Damascus",
+      "url": "https://www.aljazeera.com/news/2026/8/6/blast-hits-vehicle-on-outskirts-of-syrias-damascus-state-media?traffic_source=rss",
+      "date": "August 6, 2026",
+      "description": "Body parts found at the scene and at least seven wounded after explosion on minibus in town of Jaramana."
+    },
+    {
+      "title": "Is Israel’s Netanyahu preparing to fight Iran alone?",
+      "url": "https://www.aljazeera.com/news/2026/8/6/is-israels-netanyahu-preparing-to-fight-iran-alone?traffic_source=rss",
+      "date": "August 6, 2026",
+      "description": "Experts question Netanyahu&#039;s strategy, labelling US war on Iran a strategic failure with global economic impacts."
+    },
+    {
+      "title": "Trump vows to find ‘leakers’ after reports of depleted Iran war munitions",
+      "url": "https://www.aljazeera.com/news/2026/8/6/trump-vows-to-find-leakers-after-reports-of-depleted-iran-war-munitions?traffic_source=rss",
+      "date": "August 6, 2026",
+      "description": "US President defends Pentagon chief Hegseth following report of confrontation over dwindling weapons supply."
+    },
+    {
       "title": "War on Iran: Iran and Oman agree on Strait of Hormuz deal",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/6/aje-onl-nf_aje-onl-nf-iran-omar-hormuz-deal-060826?traffic_source=rss",
       "date": "August 6, 2026",
       "description": "Iran and Oman agree on new coordinates for ships to pass through the Strait of Hormuz."
-    },
-    {
-      "title": "Iran tightens security grip at home as war conditions with US linger",
-      "url": "https://www.aljazeera.com/news/2026/8/6/iran-tightens-security-grip-at-home-as-war-conditions-with-us-linger?traffic_source=rss",
-      "date": "August 6, 2026",
-      "description": "Executions, arrests and closure of public gathering spaces have raised concerns among Iranians and rights groups."
-    },
-    {
-      "title": "Will the US-Iran war and Hormuz deadlock last for months?",
-      "url": "https://www.aljazeera.com/news/2026/8/6/will-the-us-iran-war-and-hormuz-deadlock-last-for-months?traffic_source=rss",
-      "date": "August 6, 2026",
-      "description": "Will the war on Iran and Hormuz deadlock last for months? Experts analyse the obstacles blocking a lasting deal."
-    },
-    {
-      "title": "Myanmar leader visits Thailand in bid to bolster international legitimacy",
-      "url": "https://www.aljazeera.com/news/2026/8/6/myanmar-leader-visits-thailand-in-bid-to-bolster-international-legitimacy?traffic_source=rss",
-      "date": "August 6, 2026",
-      "description": "Min Aung Hlaing stressed that his government was focused on ending the civil war and restoring peace."
     }
   ],
   "occNews": [
@@ -3254,6 +3240,54 @@
       "description": "While precise data is classified, publicly available information suggests the US has used up many difficult-to-manufacture weapons."
     },
     {
+      "title": "Uefa says boycott may still go ahead as FA withdraws Infantino support",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c2k74yevgzwo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 6, 2026",
+      "description": "Fifa's backing of president Gianni Infantino at a meeting on Wednesday \"changes nothing\", says European governing body Uefa."
+    },
+    {
+      "title": "South Korea space agency shares Moon images after SpaceX rocket debris crash",
+      "url": "https://www.bbc.co.uk/news/articles/cqjxgx5y51lo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 6, 2026",
+      "description": "Seoul's lunar orbiter captured images of the Moon before and after part of SpaceX's rocket hit its surface on Wednesday."
+    },
+    {
+      "title": "Thousands of migrants still in Ceuta after border crisis, local leader says",
+      "url": "https://www.bbc.co.uk/news/articles/c0ejdj22zq9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 6, 2026",
+      "description": "The Spanish territory's mayor-president also says 100 deaths occurred as a result of 78,000 migrants crossing from neighbouring Morocco."
+    },
+    {
+      "title": "Israel charges settler over killing of Palestinian involved in Oscar-winning West Bank film",
+      "url": "https://www.bbc.co.uk/news/articles/cn4n1e8159yo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 6, 2026",
+      "description": "Yinon Levy is charged with reckless manslaughter over the July 2025 shooting of Odeh Hathaleen."
+    },
+    {
+      "title": "Rights groups say Israeli attack that killed Lebanese journalist an apparent war crime",
+      "url": "https://www.bbc.co.uk/news/articles/cx2md67y3nlo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 6, 2026",
+      "description": "Amal Khalil was killed and her colleague Zeinab Faraj wounded in an Israeli attack in April; Israel denied targeting the journalists."
+    },
+    {
+      "title": "TikTok star Sydney Towle, who shared her cancer journey online, dies aged 26",
+      "url": "https://www.bbc.co.uk/news/articles/cn4n1eyze05o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 6, 2026",
+      "description": "Towle was known for chronicling her hopes and struggles as a young person living with cancer."
+    },
+    {
+      "title": "Artificial Intelligence used to design brand new viruses",
+      "url": "https://www.bbc.co.uk/news/articles/c5y3j3ngevmo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 6, 2026",
+      "description": "Scientists made 16 successful viruses that had their genetic code designed by artificial intelligence."
+    },
+    {
+      "title": "Houthi attacks reportedly kill at least 30 Yemeni government forces",
+      "url": "https://www.bbc.co.uk/news/articles/ckgdmdr0lmgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 6, 2026",
+      "description": "The Houthis say they launched missiles and drones at \"Saudi military build-ups\" in the central provinces of Marib and Hadramawt."
+    },
+    {
       "title": "US Senate committee votes to hold Fauci in contempt over Covid hearing",
       "url": "https://www.bbc.co.uk/news/articles/c1m18158my9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 6, 2026",
@@ -3270,18 +3304,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cjejzjpy98wo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 6, 2026",
       "description": "The no-frills carrier agrees to be bought by US firm Apollo after a rival suitor drops out."
-    },
-    {
-      "title": "Livestreamer's murder raises questions over relations between Mexico's creators and cartels",
-      "url": "https://www.bbc.co.uk/news/articles/ckg9dwz8p30o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 6, 2026",
-      "description": "The murder of content creator César Gastélum on Tuesday raises questions about why influencers are coming under attack."
-    },
-    {
-      "title": "Houthi attacks reportedly kill at least 30 Yemeni government forces",
-      "url": "https://www.bbc.co.uk/news/articles/ckgdmdr0lmgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 6, 2026",
-      "description": "The Houthis say they launched missiles and drones at \"Saudi military build-ups\" in the central provinces of Marib and Hadramawt."
     },
     {
       "title": "Indian journalist Tarun Tejpal sentenced to 10 years in jail for rape",
@@ -3302,7 +3324,7 @@
       "description": "The 27-year-old was killed by suspected robbers after resisting an attempt to rob him, police say."
     },
     {
-      "title": "Man charged with killing Scottish aid worker in Greece",
+      "title": "Boxer charged with killing aid worker in Athens after his wife gave police 'key' details",
       "url": "https://www.bbc.co.uk/news/articles/cj6390k0e26o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 6, 2026",
       "description": "Sharif Ahmadzai, who is 26 and from Afghanistan, faces charges of homicide with intent, robbery and weapons offences."
@@ -3350,22 +3372,16 @@
       "description": "The \"cockroach\" movement was one of the biggest public displays of dissent against India's prime minister in years."
     },
     {
-      "title": "Why some scientists are thrilled that a SpaceX rocket has crashed into the Moon",
-      "url": "https://www.bbc.co.uk/news/articles/c62q0xerzrno?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 5, 2026",
-      "description": "While the collision was an accident, it is a unique scientific gift for planetary geologists that could provide important data for future space missions."
+      "title": "Does Africa still back Infantino as Fifa president?",
+      "url": "https://www.bbc.co.uk/news/articles/c78g3glpl8wo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 6, 2026",
+      "description": "The African confederation has yet to take an official stance, but where do the key African footballing nations stand on the Infantino saga?"
     },
     {
-      "title": "Waste workers help winner find binned €1m lottery ticket in Italy",
-      "url": "https://www.bbc.co.uk/news/articles/c62qvll0z94o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 5, 2026",
-      "description": "The player only realised they binned the life-changing ticket after family told them the numbers he played for years had been drawn."
-    },
-    {
-      "title": "South Africa plans new rules on ex-leaders' foreign trips after Zuma's visit to India",
-      "url": "https://www.bbc.co.uk/news/articles/c1e14lj7vg7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 5, 2026",
-      "description": "Jacob Zuma was pictured with a businessmen allegedly at the heart of a corruption scandal in South Africa"
+      "title": "Livestreamer's murder raises questions over relations between Mexico's creators and cartels",
+      "url": "https://www.bbc.co.uk/news/articles/ckg9dwz8p30o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 6, 2026",
+      "description": "The murder of content creator César Gastélum on Tuesday raises questions about why influencers are coming under attack."
     },
     {
       "title": "Banned from football at home, Afghan women's team reunite 8,000 miles away",
@@ -3422,16 +3438,16 @@
       "description": "As weather events become more extreme, fake videos are being shared rapidly online, and it’s causing real world problems in China."
     },
     {
-      "title": "Record heatwave in South Korea as temperatures soar to 42.5C",
-      "url": "https://www.bbc.co.uk/news/videos/c935ng9n2klo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 5, 2026",
-      "description": "There have been at least 19 deaths related to the heatwave which has brought the country's hottest day since records began."
-    },
-    {
       "title": "EasyJet agrees to £5.7bn takeover by US firm",
       "url": "https://www.bbc.co.uk/news/articles/cjejzjpy98wo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 6, 2026",
       "description": "The no-frills carrier agrees to be bought by US firm Apollo after a rival suitor drops out."
+    },
+    {
+      "title": "First OpenAI, now Meta - why do AI hacks keep happening?",
+      "url": "https://www.bbc.co.uk/news/articles/cp30989ee1wo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 6, 2026",
+      "description": "A flood of companies are revealing AI models gained access to the internet - with real consequences."
     },
     {
       "title": "Cashing in on SpaceX: 'Every chance I get, I'll sell a little more'",
@@ -3452,16 +3468,16 @@
       "description": "The rules were tightened in July 2025 to restrict the scheme mostly to graduate-level employees who would be earning at least £41,700."
     },
     {
-      "title": "Meta becomes latest firm to say its AI hacked another company",
-      "url": "https://www.bbc.co.uk/news/articles/cx2kgdnyk2po?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 6, 2026",
-      "description": "Meta is the latest company to disclose an AI agent breach, raising cyber-security concerns."
-    },
-    {
       "title": "Owner of bike maker Raleigh files for insolvency",
       "url": "https://www.bbc.co.uk/news/articles/c4gv45w4j8eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 6, 2026",
       "description": "Accell, based in the Netherlands, has owned the famous bike brand since 2012."
+    },
+    {
+      "title": "Meta becomes latest firm to say its AI hacked another company",
+      "url": "https://www.bbc.co.uk/news/articles/cx2kgdnyk2po?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 6, 2026",
+      "description": "Meta is the latest company to disclose an AI agent breach, raising cyber-security concerns."
     },
     {
       "title": "US beef prices have soared but farmers aren't making more money",
@@ -3716,6 +3732,72 @@
       "description": "The former department store closed in 2016."
     },
     {
+      "title": "Ceuta’s leader says 100 died in border rush as up to 5,000 still in enclave",
+      "url": "https://www.aljazeera.com/news/2026/8/6/ceutas-leader-says-100-died-in-border-rush-as-up-to-5000-still-in-enclave?traffic_source=rss",
+      "date": "August 6, 2026",
+      "description": "After migrant surge from Morocco, EU says Spain assured Schengen is safe but warns Europe&#039;s borders are &#039;vulnerable&#039;."
+    },
+    {
+      "title": "Poll suggests US adults are facing increased strain from extreme heat",
+      "url": "https://www.aljazeera.com/news/2026/8/6/poll-suggests-us-adults-are-facing-increased-strain-from-extreme-heat?traffic_source=rss",
+      "date": "August 6, 2026",
+      "description": "More than half of Americans told the AP-NORC poll that climate change is happening, a slight decline from last year."
+    },
+    {
+      "title": "Women expose rape as a weapon of war in Sudan",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/6/women-expose-rape-as-a-weapon-of-war-in-sudan?traffic_source=rss",
+      "date": "August 6, 2026",
+      "description": "Women displaced by Sudan&#039;s war are speaking publicly about surviving rape by Rapid Support Forces fighters."
+    },
+    {
+      "title": "Houthis launch deadly attacks on Saudi-led coalition forces in Yemen",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/6/06-08-reported-ansarallah-yemen-yn?traffic_source=rss",
+      "date": "August 6, 2026",
+      "description": "Yemen&#039;s Houthis say they launched drones and ballistic missiles in Marib and Hadramout."
+    },
+    {
+      "title": "Parker’s positive cocaine test caused by nutritionist, doping body says",
+      "url": "https://www.aljazeera.com/sports/2026/8/6/parkers-positive-cocaine-test-caused-by-nutritionist-doping-body-says?traffic_source=rss",
+      "date": "August 6, 2026",
+      "description": "The 34-year-old boxer tested positive for cocaine on day of shock loss to Fabio Wardley in London in October."
+    },
+    {
+      "title": "Eight countries ‘strongly denounce’ ongoing Israeli violations in Gaza",
+      "url": "https://www.aljazeera.com/news/2026/8/6/eight-countries-strongly-denounce-ongoing-israeli-violations-in-gaza?traffic_source=rss",
+      "date": "August 6, 2026",
+      "description": "Foreign ministers of Arab and Muslim nations slam Israel targeting Gaza&#039;s hospitals, demand action to protect medics."
+    },
+    {
+      "title": "Argentina won’t retaliate after Brazil downgrades diplomatic ties",
+      "url": "https://www.aljazeera.com/news/2026/8/6/argentina-wont-retaliate-after-brazil-downgrades-diplomatic-ties?traffic_source=rss",
+      "date": "August 6, 2026",
+      "description": "Buenos Aires says it will not respond after Brasilia reduced diplomatic ties over Milei’s latest attacks on Lula."
+    },
+    {
+      "title": "US seeks extradition of Filipino church leader accused of fraud, sex crimes",
+      "url": "https://www.aljazeera.com/news/2026/8/6/us-seeks-extradition-of-filipino-church-leader-accused-of-fraud-sex-crimes?traffic_source=rss",
+      "date": "August 6, 2026",
+      "description": "Apollo Quiboloy leads the Kingdom of Jesus Christ church, which was founded in 1985 in Davao and has branches in US."
+    },
+    {
+      "title": "Israel indicts settler in rare charge over Palestinian activist’s killing",
+      "url": "https://www.aljazeera.com/news/2026/8/6/israel-indicts-settler-in-rare-charge-over-palestinian-activists-killing?traffic_source=rss",
+      "date": "August 6, 2026",
+      "description": "Awdah Hathaleen, who worked on the Oscar-winning documentary No Other Land, was killed last July in occupied West Bank."
+    },
+    {
+      "title": "Saudi Arabia names commander for maritime defence coalition",
+      "url": "https://www.aljazeera.com/news/2026/8/6/saudi-arabia-names-commander-for-maritime-defence-coalition?traffic_source=rss",
+      "date": "August 6, 2026",
+      "description": "Rear Admiral Abdullah bin Salem Al-Shehri will lead multinational coalition&#039;s naval defence to secure vital waterways."
+    },
+    {
+      "title": "UNICEF says one child killed per day in Gaza since ‘ceasefire’",
+      "url": "https://www.aljazeera.com/news/2026/8/6/unicef-says-one-child-killed-per-day-in-gaza-since-ceasefire-2?traffic_source=rss",
+      "date": "August 6, 2026",
+      "description": "At least 300 children reported killed in Gaza in 300 days since October 2025 truce between Israel and Hamas was agreed."
+    },
+    {
       "title": "Real Madrid sign Ivory Coast’s Yan Diomande from RB Leipzig",
       "url": "https://www.aljazeera.com/sports/2026/8/6/real-madrid-sign-ivory-coasts-yan-diomande-for-record-fee-from-rp-leipzig?traffic_source=rss",
       "date": "August 6, 2026",
@@ -3752,10 +3834,10 @@
       "description": "Rich countries spend 41 times more on each child&#039;s education. AJLabs looks at the classroom inequality around the world."
     },
     {
-      "title": "Houthi attacks on Yemeni government forces reportedly kills at least 30",
+      "title": "Houthi attacks on Yemeni government forces kill at least 30",
       "url": "https://www.aljazeera.com/news/2026/8/6/houthis-claim-to-have-killed-45-in-attacks-on-yemeni-government-forces?traffic_source=rss",
       "date": "August 6, 2026",
-      "description": "Attacks are deadliest in Yemen&#039;s conflict between Houthis and government forces in years."
+      "description": "Attacks are deadliest in years in Yemen&#039;s conflict between Houthis and government forces."
     },
     {
       "title": "When atrocities return: The cost of failed accountability in Tigray",
@@ -3774,72 +3856,6 @@
       "url": "https://www.aljazeera.com/news/2026/8/6/indian-court-sentences-high-profile-journalist-to-10-years-for-rape?traffic_source=rss",
       "date": "August 6, 2026",
       "description": "Tarun Tejpal, 63, says that he will appeal the conviction at the Supreme Court."
-    },
-    {
-      "title": "US Senate panel votes to hold former official Fauci in contempt of Congress",
-      "url": "https://www.aljazeera.com/news/2026/8/6/senate-panel-votes-to-hold-former-official-fauci-in-contempt-of-congress?traffic_source=rss",
-      "date": "August 6, 2026",
-      "description": "Move comes after the infectious diseases chief during the COVID-19 pandemic refused to answer committee&#039;s questions."
-    },
-    {
-      "title": "‘There is no money’: Is Iraq entering a phase of lean years?",
-      "url": "https://www.aljazeera.com/news/2026/8/6/there-is-no-money-is-iraq-entering-a-phase-of-lean-years?traffic_source=rss",
-      "date": "August 6, 2026",
-      "description": "Iraqi government needs approximately $8.24bn a month to pay state salaries and cover basic obligations."
-    },
-    {
-      "title": "UEFA vice president seeks ‘custodian of ⁠sport’ after FIFA-Infantino furore",
-      "url": "https://www.aljazeera.com/sports/2026/8/6/uefa-vice-president-makes-custodian-of-%e2%81%a0the-sport-slant-against-infantino?traffic_source=rss",
-      "date": "August 6, 2026",
-      "description": "UEFA continues to lead criticism of FIFA President Gianni Infantino despite global body&#039;s defiant stance."
-    },
-    {
-      "title": "Mohamed Salah signs two-year deal with Trabzonspor after Liverpool exit",
-      "url": "https://www.aljazeera.com/sports/2026/8/6/mohamed-salah-signs-two-year-deal-with-trabzonspor-after-liverpool-exit?traffic_source=rss",
-      "date": "August 6, 2026",
-      "description": "Egypt&#039;s Mohamed Salah, who left Liverpool last season after nine years with Premier League club, signs for Trabzonspor."
-    },
-    {
-      "title": "DR Congo Ebola health workers protest unpaid wages as deaths surpass 1,800",
-      "url": "https://www.aljazeera.com/news/2026/8/6/dr-congo-ebola-health-workers-protest-unpaid-wages-as-deaths-surpass-1800?traffic_source=rss",
-      "date": "August 6, 2026",
-      "description": "Aid workers say the virus is spreading at an &#039;alarming and unprecedented rate&#039; as virus spreads to remote areas."
-    },
-    {
-      "title": "The old pact between Israel’s government and military has broken down",
-      "url": "https://www.aljazeera.com/opinions/2026/8/6/the-old-pact-between-israels-government-and-military-has-broken-down?traffic_source=rss",
-      "date": "August 6, 2026",
-      "description": "Prolonged conflict has upended the relationship between political authority and military judgement in Israel."
-    },
-    {
-      "title": "Infantino, FIFA try to move beyond botched World Cup sell-off: What we know",
-      "url": "https://www.aljazeera.com/sports/2026/8/6/fifa-and-infantino-debate-set-to-outlive-morocco-truce-what-to-know?traffic_source=rss",
-      "date": "August 6, 2026",
-      "description": "FIFA President Gianni Infantino survives crisis meeting over his leadership. What&#039;s next for him, and will UEFA react?"
-    },
-    {
-      "title": "What came into force with the EU’s AI Act this week – and what didn’t",
-      "url": "https://www.aljazeera.com/news/2026/8/6/what-came-into-force-with-the-eus-ai-act-this-week-and-what-didnt?traffic_source=rss",
-      "date": "August 6, 2026",
-      "description": "The European Union has launched the world&#039;s first comprehensive law on artificial intelligence."
-    },
-    {
-      "title": "Deadliest form of malnutrition has reached critical levels in Afghanistan",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/6/deadliest-form-of-child-malnutrition-has-reached-critical-levels-in-afghani?traffic_source=rss",
-      "date": "August 6, 2026",
-      "description": "Child wasting, the deadliest form of malnutrition, has reached critical levels in a third of Afghanistan&#039;s provinces."
-    },
-    {
-      "title": "Why is Pakistan PM Shehbaz Sharif visiting Saudi Arabia amid Gulf tensions?",
-      "url": "https://www.aljazeera.com/news/2026/8/6/why-is-pakistan-pm-shehbaz-sharif-visiting-saudi-arabia-amid-gulf-tensions?traffic_source=rss",
-      "date": "August 6, 2026",
-      "description": "Islamabad seeks economic backing while balancing new defence commitments and a volatile regional security landscape."
-    },
-    {
-      "title": "Video: Wildfires in Washington state force thousands to evacuate homes",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/6/video-wildfires-in-washington-state-force-thousands-to-evacuate-homes?traffic_source=rss",
-      "date": "August 6, 2026",
-      "description": "Wildfires in Washington state and California have damaged over a thousand structures."
     }
   ]
 }
