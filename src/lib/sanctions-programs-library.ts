@@ -175,7 +175,7 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
     id: "cuba",
     name: "Cuba Sanctions",
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/cuba-sanctions",
-    region: "Cuba", category: "country", lastUpdated: "Jul 23, 2026", status: "active",
+    region: "Cuba", category: "country", lastUpdated: "Aug 06, 2026", status: "active",
     executiveOrders: [
       // 3 EOs — sorted newest first.
       // Added 14380 2026-06-27: was missing entirely — confirmed real via
@@ -199,7 +199,8 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
       { number: "13799", title: "Strengthening the Policy of the United States Toward Cuba (National Security Presidential Memorandum-5 implementation; reinstated Cuba Restricted List)", date: "November 8, 2017", url: "https://ofac.treasury.gov/media/10651/download?inline" },
     ],
     generalLicenses: [
-            { number: "GL 2", title: "Cuba General License 2", date: "July 23, 2026", url: "https://ofac.treasury.gov/media/936436/download?inline", expires: "August 22, 2026", addedDate: "July 24, 2026" },
+                        { number: "GL 1", title: "Cuba General License 1", date: "May 7, 2026", url: "https://ofac.treasury.gov/media/935571/download?inline", addedDate: "August 7, 2026" },
+{ number: "GL 2", title: "Cuba General License 2", date: "July 23, 2026", url: "https://ofac.treasury.gov/media/936436/download?inline", expires: "August 22, 2026", addedDate: "July 24, 2026" },
       { number: "GL 3", title: "Cuba General License 3", date: "July 23, 2026", url: "https://ofac.treasury.gov/media/936621/download?inline", expires: "August 22, 2026", addedDate: "July 24, 2026" },
 { number: "GL 4", title: "Authorizing Transactions for Third-Country Diplomatic and Consular Missions in Cuba", date: "July 23, 2026", url: "https://ofac.treasury.gov/media/936626/download?inline", addedDate: "July 23, 2026" },
     ],
@@ -819,6 +820,14 @@ archive: {
     generalLicenses: [
       // All dates, titles, and URLs verified directly against OFAC's live Venezuela page on June 25, 2026.
       // GL 58/59 are unconfirmed (not on the live active page at fetch time, but URLs look genuine) — left as-is pending a direct PDF check.
+{ number: "GL 2A", title: "Venezuela General License 2A", date: "August 25, 2017", url: "https://ofac.treasury.gov/media/34121/download?inline", addedDate: "August 7, 2026" },
+{ number: "GL 15C", title: "Venezuela General License 15C", date: "August 5, 2019", url: "https://ofac.treasury.gov/media/33126/download?inline", addedDate: "August 7, 2026" },
+{ number: "GL 18A", title: "Venezuela General License 18A", date: "March 22, 2019", url: "https://ofac.treasury.gov/media/34126/download?inline", addedDate: "August 7, 2026" },
+{ number: "GL 21", title: "Venezuela General License 21", date: "August 5, 2019", url: "https://ofac.treasury.gov/media/46421/download?inline", addedDate: "August 7, 2026" },
+{ number: "GL 23", title: "Venezuela General License 23", date: "August 5, 2019", url: "https://ofac.treasury.gov/media/34116/download?inline", addedDate: "August 7, 2026" },
+{ number: "GL 25", title: "Venezuela General License 25", date: "August 5, 2019", url: "https://ofac.treasury.gov/media/31761/download?inline", addedDate: "August 7, 2026" },
+{ number: "GL 27", title: "Venezuela General License 27", date: "August 5, 2019", url: "https://ofac.treasury.gov/media/34111/download?inline", addedDate: "August 7, 2026" },
+{ number: "GL 30B", title: "Venezuela General License 30B", date: "February 2, 2021", url: "https://ofac.treasury.gov/media/934996/download?inline", addedDate: "August 7, 2026" },
 { number: "GL 5Y", title: "Authorizing Certain Transactions Related to the Petróleos de Venezuela, S.A. 2020 8.5 Percent Bond on or After September 17, 2026", date: "June 18, 2026", url: "https://ofac.treasury.gov/media/936651/download?inline", addedDate: "August 3, 2026" },
 { number: "GL 4C", title: "Venezuela General License 4C", date: "April 17, 2019", url: "https://ofac.treasury.gov/media/31741/download?inline", addedDate: "June 27, 2026" },
       { number: "GL 24A", title: "Certain Transactions Involving the Government of Venezuela Related to Telecommunications and Mail Authorized", date: "August 5, 2019", url: "https://ofac.treasury.gov/media/935731/download?inline", addedDate: "June 26, 2026" },
