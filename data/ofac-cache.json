@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-07T19:08:37.582Z",
+  "updatedAt": "2026-08-07T21:08:37.159Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260807",
@@ -744,11 +744,12 @@
       "generalLicenses": [
         {
           "number": "1",
-          "title": "Cuba General License 1",
+          "title": "Transactions Authorized Pursuant to the Cuban Assets Control Regulations",
           "date": "May 7, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935571/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "2",
@@ -768,11 +769,12 @@
         },
         {
           "number": "4",
-          "title": "Cuba General License 4",
+          "title": "Authorizing Transactions for Third-Country Diplomatic and Consular Missions in Cuba",
           "date": "July 23, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936626/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         }
       ]
     },
@@ -1157,8 +1159,7 @@
           "date": "July 29, 2016",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7971/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "L",
@@ -1166,17 +1167,15 @@
           "date": "October 8, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48626/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "8A",
-          "title": "Authorizing Certain Humanitarian Trade Transactions Involving the Central Bank of Iran or the National Iranian Oil Company",
+          "title": "Iran General License 8A",
           "date": "February 27, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48841/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "Q",
@@ -2547,11 +2546,12 @@
       "generalLicenses": [
         {
           "number": "2A",
-          "title": "Venezuela General License 2A",
+          "title": "Authorizing Certain New Debt, New Equity, and Securities Transactions Involving PDV Holding, Inc. and CITGO Holding, Inc. ( a)",
           "date": "August 25, 2017",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34121/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "3I",
@@ -2567,15 +2567,17 @@
           "date": "April 17, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31741/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "5Y",
-          "title": "Venezuela General License 5Y",
+          "title": "Authorizing Certain Transactions Related to the Petróleos de Venezuela, S.A. 2020 8.5 Percent Bond on or After September 17, 2026",
           "date": "June 18, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936651/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "7C",
@@ -2599,135 +2601,152 @@
           "date": "January 28, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34131/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "15C",
-          "title": "Venezuela General License 15C",
+          "title": "Authorizing Transactions Involving Certain Banks for Certain Entities ( a)",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/33126/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "16C",
-          "title": "Venezuela General License 16C",
+          "title": "Authorizing Maintenance of U.S. Person Accounts and Noncommercial, Personal Remittances Involving Certain Banks",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/33121/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "18A",
-          "title": "Venezuela General License 18A",
+          "title": "Authorizing Certain Transactions Involving Integraci6n Administradora de Fondos de Ahorro Previsional, S.A",
           "date": "March 22, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34126/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "21",
-          "title": "Venezuela General License 21",
+          "title": "Entries in Certain Accounts for Normal Service Charges and Payments and Transfers to Blocked Accounts in U.S. Financial Institutions Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/46421/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "22",
-          "title": "Venezuela General License 22",
+          "title": "Venezuela's Mission to the United Nations",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/30601/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "23",
-          "title": "Venezuela General License 23",
+          "title": "Third-country Diplomatic and Consular Funds Transfers Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34116/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "24A",
-          "title": "Venezuela General License 24A",
+          "title": "Certain Transactions Involving the Government of Venezuela Related to Telecommunications and Mail Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935731/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "25",
-          "title": "Venezuela General License 25",
+          "title": "Exportation of Certain Services, Software, Hardware, and Technology Incident to the Exchange of Communications over the Internet Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31761/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "26",
-          "title": "Venezuela General License 26",
+          "title": "Emergency and Certain Other Medical Services Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31766/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "27",
-          "title": "Venezuela General License 27",
+          "title": "Certain Transactions Related to Patents, Trademarks, and Copyrights Authorized ( a)",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34111/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "29",
-          "title": "Venezuela General License 29",
+          "title": "Certain Transactions Involving the Government of Venezuela in Support of Certain Nongovernmental Organizations' Activities Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31771/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "30B",
-          "title": "Venezuela General License 30B",
+          "title": "Authorizing Certain Transactions Necessary to Port and Airport Operations",
           "date": "February 2, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934996/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "31B",
-          "title": "Venezuela General License 31B",
+          "title": "Certain Transactions Involving the IV Venezuelan National Assembly and Certain Other Persons",
           "date": "January 4, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/930241/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "32",
-          "title": "Venezuela General License 32",
+          "title": "Authorizing Certain Transactions Related to Personal Maintenance of Individuals Who Are U.S. Persons Residing in Venezuela",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34101/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "33",
-          "title": "Venezuela General License 33",
+          "title": "Authorizing Overflight Payments, Emergency Landings, and Air Ambulance Services",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34096/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "34A",
-          "title": "Venezuela General License 34A",
+          "title": "Authorizing Transactions Involving Certain Government of Venezuela Persons",
           "date": "September 9, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/25966/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "35",
@@ -2739,27 +2758,30 @@
         },
         {
           "number": "42",
-          "title": "Venezuela General License 42",
+          "title": "Authorizing Certain Transactions Related to the Negotiation of Certain Settlement Agreements with the IV Venezuelan National Assembly and Certain Other Persons",
           "date": "May 1, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/931696/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "45B",
-          "title": "Venezuela General License 45B",
+          "title": "Authorizing Certain Repatriation Transactions Involving Consorcio Venezolano de Industrias Aeronáuticas y Servicios Aéreos, S.A",
           "date": "November 16, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/932686/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "46C",
-          "title": "Venezuela General License 46C",
+          "title": "Authorizing Certain Activities Involving Venezuelan- Origin Oil or Petrochemical Products",
           "date": "March 13, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935661/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "47A",
@@ -3175,10 +3197,10 @@
       "description": "Authorities say the 14-year-old killed his grandparents before gunning down five teachers at his school."
     },
     {
-      "title": "Spain threatens retaliation if Italy fails to lift border controls after Ceuta crossings",
+      "title": "Spain to impose border controls against Italy as row over Ceuta migrant influx intensifies",
       "url": "https://www.bbc.co.uk/news/articles/c5yv5l6yr5ko?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 7, 2026",
-      "description": "Italy has said it will not accept \"ultimatums or impositions\" after the mass crossing of migrants from Morocco to Ceuta last week."
+      "description": "Italy introduced border controls following an influx of about 78,000 migrants from neighbouring Morocco into the Spanish exclave of Ceuta."
     },
     {
       "title": "Saudi Arabia, Turkey and Pakistan sign defence pact",
@@ -3187,22 +3209,28 @@
       "description": "Pakistan says an attack on any of the three will amount to an attack against all, amid conflict in the Middle East."
     },
     {
-      "title": "Meta fined $567m in largest child safety ruling against social media giant",
-      "url": "https://www.bbc.co.uk/news/articles/cd7lz3wr2rlo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 7, 2026",
-      "description": "The ruling is in addition to $375m in fines Meta was already ordered to pay in the case, for a total of $942m."
-    },
-    {
       "title": "Spanish police arrest 78 people in bust of 'one of largest' smuggling networks",
       "url": "https://www.bbc.co.uk/news/articles/clylejzkkx4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 7, 2026",
       "description": "The group moved synthetic drugs from Spain to Algeria, then used the return journey to smuggle migrants and weapons."
     },
     {
+      "title": "Kidnapped rare Serbian eagle freed into wild after rescue",
+      "url": "https://www.bbc.co.uk/news/articles/cdewxgw69exo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 7, 2026",
+      "description": "Feliks the eagle was abducted as he first flew the nest in Serbia and wound up in the Middle East with poachers who demanded a ransom."
+    },
+    {
       "title": "Mexico and Peru restore diplomatic relations after asylum row",
       "url": "https://www.bbc.co.uk/news/articles/cz7dy1l3e77o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 7, 2026",
       "description": "Relations broke down after former Peruvian Prime Minister Betssy Chávez sought asylum in the Mexican embassy in November 2025."
+    },
+    {
+      "title": "Meta fined $567m in largest child safety ruling against social media giant",
+      "url": "https://www.bbc.co.uk/news/articles/cd7lz3wr2rlo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 7, 2026",
+      "description": "The ruling is in addition to $375m in fines Meta was already ordered to pay in the case, for a total of $942m."
     },
     {
       "title": "Trump again tries to limit US birthright citizenship with new executive orders",
@@ -3311,6 +3339,12 @@
       "url": "https://www.bbc.co.uk/news/articles/c3r0vp7n0pro?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 4, 2026",
       "description": "In Colombia, where FGM is still practised by some members of an indigenous group, a landmark bill banning the practice has been enacted."
+    },
+    {
+      "title": "Watch: BBC questions Infantino over backing as Fifa president",
+      "url": "https://www.bbc.co.uk/news/videos/c0ejrdzx98wo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 7, 2026",
+      "description": "The head of the football governing body has faced multiple calls to quit after his aborted attempt to sell private stakes in the World Cup."
     },
     {
       "title": "Moment earthquake shakes hospital operating room in Japan",
@@ -3655,6 +3689,36 @@
       "description": "The former department store closed in 2016."
     },
     {
+      "title": "Ebola cases top 4,000 in DRC as WHO urges Ervebo vaccine trial",
+      "url": "https://www.aljazeera.com/news/2026/8/7/ebola-cases-top-4000-in-drc-as-who-urges-ervebo-vaccine-trial?traffic_source=rss",
+      "date": "August 7, 2026",
+      "description": "The Bundibugyo epidemic, ​the world&#039;s second-largest, has been described as the ⁠fastest-spreading on record."
+    },
+    {
+      "title": "Can diplomacy end the conflict in Libya?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/8/7/can-diplomacy-end-the-conflict-in-libya?traffic_source=rss",
+      "date": "August 7, 2026",
+      "description": "The country has been divided since 2014, with rival governments in the east and west."
+    },
+    {
+      "title": "US appeals court upholds injunction pausing Trump’s White House ballroom",
+      "url": "https://www.aljazeera.com/news/2026/8/7/us-appeals-court-upholds-injunction-pausing-trumps-white-house-ballroom?traffic_source=rss",
+      "date": "August 7, 2026",
+      "description": "The two-judge majority underscored that the president needed congressional authority to move forward with his plans."
+    },
+    {
+      "title": "Contaminated water putting Gaza families at risk",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/7/contaminated-water-putting-gaza-families-at-risk?traffic_source=rss",
+      "date": "August 7, 2026",
+      "description": "Gaza’s damaged water infrastructure is leaving families struggling to access safe drinking water."
+    },
+    {
+      "title": "DR Congo releases 15 prisoners to M23 rebels as part of Doha peace process",
+      "url": "https://www.aljazeera.com/news/2026/8/7/dr-congo-releases-15-prisoners-to-m23-rebels-as-part-of-doha-peace-process?traffic_source=rss",
+      "date": "August 7, 2026",
+      "description": "ICRC facilitates first known transfer of detainees between Congolese government and M23 rebels in North Kivu."
+    },
+    {
       "title": "Inside the results: How redistricting shaped Tennessee’s primary election",
       "url": "https://www.aljazeera.com/news/2026/8/7/inside-the-results-how-redistricting-shaped-tennessees-primary-election?traffic_source=rss",
       "date": "August 7, 2026",
@@ -3743,36 +3807,6 @@
       "url": "https://www.aljazeera.com/sports/2026/8/7/fifas-infantino-backed-by-argentina-and-mexico-deepening-world-cup-divide?traffic_source=rss",
       "date": "August 7, 2026",
       "description": "How does FIFA presidency stand? Norway wants resignation, but Argentina and Mexico join Africa in Gianni Infantino camp."
-    },
-    {
-      "title": "First school for robots opens in China",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/7/first-school-for-robots-opens-in-china?traffic_source=rss",
-      "date": "August 7, 2026",
-      "description": "&quot;Our main goal is to empower robots&#039; brains.&quot; China has launched its first robot school."
-    },
-    {
-      "title": "Bangladesh cricket’s Shakib, an Hasina ally, will face trial if he is safe",
-      "url": "https://www.aljazeera.com/sports/2026/8/7/crickets-shakib-an-hasani-ally-will-face-trial-in-bangladesh-if-secure?traffic_source=rss",
-      "date": "August 7, 2026",
-      "description": "Sheikh ⁠Hasina ally Shakib Al Hasan will face Bangladesh trial if safety assured, with Cricket World Cup return eyed."
-    },
-    {
-      "title": "Northern Ethiopia’s shifting alliances explained",
-      "url": "https://www.aljazeera.com/news/2026/8/7/northern-ethiopias-shifting-alliances-explained?traffic_source=rss",
-      "date": "August 7, 2026",
-      "description": "The TPLF, Fano militias and Eritrea are redrawing the battle lines in Ethiopia’s north."
-    },
-    {
-      "title": "Trump says war ‘can’t go much longer’ – what’s the latest on talks?",
-      "url": "https://www.aljazeera.com/news/2026/8/7/trump-says-war-cant-go-much-longer-whats-the-latest-on?traffic_source=rss",
-      "date": "August 7, 2026",
-      "description": "Reports suggest that Tehran is discussing a bill barring US and Israeli vessels from passing the Strait of Hormuz."
-    },
-    {
-      "title": "Houthi attacks on gov’t forces hint that a major battle in Yemen is brewing",
-      "url": "https://www.aljazeera.com/news/2026/8/7/houthi-attacks-on-govt-forces-hint-that-a-major-battle-in-yemen-is-brewing?traffic_source=rss",
-      "date": "August 7, 2026",
-      "description": "Houthis&#039; expansion of cross-border attacks means an even bloodier war may be imminent, analysts say."
     }
   ]
 }
