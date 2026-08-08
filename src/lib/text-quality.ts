@@ -9,3 +9,4 @@ export function isLikelyCorruptedText(value: string): boolean {
 export function hasUsableArticleText(article: { headline?: string; body?: string[] }): boolean {
   return !isLikelyCorruptedText(`${article.headline ?? ""} ${(article.body ?? []).join(" ")}`);
 }
+
