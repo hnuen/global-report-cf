@@ -16,71 +16,25 @@
 
 import type { Notifier, NotifyResult } from "./types";
 import type { ScoredArticle } from "../lib/alert-scorer";
-import { formatAlert } from "./format";
 
 export class EmailSMSNotifier implements Notifier {
   id   = "email-sms";
   name = "Email-to-SMS";
 
   isConfigured(): boolean {
-    return !!(
-      process.env.SMTP_HOST &&
-      process.env.SMTP_USER &&
-      process.env.SMTP_PASS &&
-      process.env.EMAIL_SMS_RECIPIENTS
-    );
+    // Cloudflare Workers cannot establish the raw SMTP socket Nodemailer
+    // requires. Keep this legacy channel inert instead of shipping a
+    // vulnerable dependency that can never deliver in production.
+    return false;
   }
 
-  async send(articles: ScoredArticle[], appUrl: string): Promise<NotifyResult> {
-    const host       = process.env.SMTP_HOST!;
-    const port       = Number(process.env.SMTP_PORT ?? 587);
-    const user       = process.env.SMTP_USER!;
-    const pass       = process.env.SMTP_PASS!;
-    const from       = process.env.EMAIL_FROM ?? user;
-    const recipients = process.env.EMAIL_SMS_RECIPIENTS!
-      .split(",").map(s => s.trim()).filter(Boolean);
-
-    // nodemailer not supported in Cloudflare edge runtime
-    let nodemailer: any = null;
-    try {
-      nodemailer = await import("nodemailer");
-    } catch {
-      return {
-        channel: this.name, success: false, recipients: 0,
-        error: "nodemailer not installed. Run: npm install nodemailer",
-      };
-    }
-
-    const transporter = nodemailer.default.createTransport({
-      host, port, secure: port === 465,
-      auth: { user, pass },
-    });
-
-    let sent = 0;
-    const errors: string[] = [];
-
-    for (const sa of articles) {
-      const { subject, plain } = formatAlert(sa, appUrl);
-      const body = plain.slice(0, 300);
-
-      for (const to of recipients) {
-        try {
-          await transporter.sendMail({ from, to, subject, text: body });
-          sent++;
-          console.log(`[email-sms] Sent to ${to}`);
-        } catch (e) {
-          const msg = String(e);
-          console.error(`[email-sms] Failed to ${to}: ${msg}`);
-          errors.push(msg);
-        }
-      }
-    }
-
+  async send(_articles: ScoredArticle[], _appUrl: string): Promise<NotifyResult> {
     return {
       channel: this.name,
-      success: sent > 0,
-      recipients: sent,
-      error: errors.length > 0 ? errors[0] : undefined,
+      success: false,
+      recipients: 0,
+      error: "Email-to-SMS is unavailable on Cloudflare; use Telegram or ntfy",
     };
   }
 }
+
