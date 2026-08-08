@@ -1,3 +1,4 @@
+
 name: Monitor and Alert
 
 on:
@@ -9,6 +10,14 @@ on:
         description: Optional focus topic for this monitor run
         required: false
         type: string
+      backfill_hours:
+        description: Optional catch-up window (1-168 hours); delivered items remain deduplicated
+        required: false
+        type: string
+
+concurrency:
+  group: production-alert-monitor
+  cancel-in-progress: false
 
 permissions:
   contents: read
@@ -19,6 +28,7 @@ jobs:
     timeout-minutes: 7
     steps:
       - name: Refresh direct trusted sources
+        continue-on-error: true
         env:
           APP_URL: ${{ secrets.APP_URL }}
           CRON_SECRET: ${{ secrets.CRON_SECRET }}
@@ -45,10 +55,11 @@ jobs:
             if [ "$HTTP" != "200" ]; then FAILED=$((FAILED + 1)); fi
           done
 
-          # A single unavailable publisher group must not suppress alerts from
-          # the healthy groups. Stop only when no group refreshed successfully.
+          # Never suppress alert delivery because publishers are temporarily
+          # unavailable. The monitor step below falls back to the last healthy
+          # briefing/library already stored in Redis.
           if [ "$FAILED" = "4" ]; then
-            echo "All direct source groups failed"
+            echo "All direct source groups failed; continuing with last healthy snapshot"
             exit 1
           fi
 
@@ -59,12 +70,13 @@ jobs:
           CRON_SECRET: ${{ secrets.CRON_SECRET }}
           VERCEL_BYPASS_TOKEN: ${{ secrets.VERCEL_BYPASS_TOKEN }}
           TOPIC: ${{ inputs.topic }}
+          BACKFILL_HOURS: ${{ inputs.backfill_hours }}
         run: |
           set -euo pipefail
           APP_URL="${APP_URL%/}"
-          BODY=$(TOPIC="$TOPIC" python3 -c 'import json, os; topic=os.environ.get("TOPIC", ""); print(json.dumps({"topic": topic}) if topic else "{}")')
+          BODY=$(TOPIC="$TOPIC" BACKFILL_HOURS="$BACKFILL_HOURS" python3 -c 'import json, os; body={}; topic=os.environ.get("TOPIC", "").strip(); hours=os.environ.get("BACKFILL_HOURS", "").strip(); body.update({"topic": topic} if topic else {}); body.update({"backfillHours": int(hours)} if hours else {}); print(json.dumps(body))')
 
-          HTTP=$(curl --silent --show-error --location \
+          HTTP=$(curl --silent --show-error --location --retry 3 --retry-all-errors --retry-delay 5 \
             --output /tmp/resp.json \
             --write-out "%{http_code}" \
             --request POST "$APP_URL/api/monitor" \
@@ -215,3 +227,4 @@ jobs:
             exit 1
           fi
           echo "ntfy delivered and cooldown recorded"
+

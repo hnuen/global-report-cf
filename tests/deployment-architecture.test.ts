@@ -1,3 +1,4 @@
+
 import assert from "node:assert/strict";
 import test from "node:test";
 import { readFile } from "node:fs/promises";
@@ -13,6 +14,20 @@ test("Cloudflare cron is the sole monitor scheduler and exposes no public trigge
   assert.doesNotMatch(worker, /async fetch\s*\(/);
   assert.match(workerConfig, /"17,47 \* \* \* \*"/);
   assert.doesNotMatch(githubMonitor, /^\s*schedule:/m);
+});
+
+test("monitor delivery survives source-refresh outages and supports bounded catch-up", async () => {
+  const [workflow, monitor] = await Promise.all([
+    read(".github/workflows/monitor.yml"),
+    read("app/api/monitor/route.ts"),
+  ]);
+  assert.match(workflow, /continue-on-error:\s*true/);
+  assert.match(workflow, /last healthy snapshot/);
+  assert.match(workflow, /--retry 3 --retry-all-errors/);
+  assert.match(workflow, /backfill_hours:/);
+  assert.match(monitor, /parsed < 1 \|\| parsed > 168/);
+  assert.match(monitor, /manager\.notify\(verifiedAlerts/);
+  assert.doesNotMatch(monitor, /manager\.notify\(managerCandidates/);
 });
 
 test("Pages configuration uses only supported limits and Worker observability stays separate", async () => {
@@ -46,3 +61,4 @@ test("persistent mutations cannot silently fall back to process memory", async (
   ]);
   for (const source of [save, refresh, orchestrator]) assert.match(source, /requirePersistent:\s*true/);
 });
+
