@@ -19,7 +19,6 @@ on:
         description: Optional catch-up window (1-168 hours); delivered items remain deduplicated
         required: false
         type: string
-        default: "144"
 
 concurrency:
   group: production-alert-monitor
@@ -81,7 +80,7 @@ jobs:
           CRON_SECRET: ${{ secrets.CRON_SECRET }}
           VERCEL_BYPASS_TOKEN: ${{ secrets.VERCEL_BYPASS_TOKEN }}
           TOPIC: ${{ inputs.topic }}
-          BACKFILL_HOURS: ${{ github.event_name == 'push' && '144' || inputs.backfill_hours }}
+          BACKFILL_HOURS: ${{ inputs.backfill_hours }}
         run: |
           set -euo pipefail
           APP_URL="${APP_URL%/}"

@@ -206,6 +206,25 @@ test("subscriber policy independently filters source groups and score", () => {
   assert.deepEqual(validateSourceGroups(["dhs", "unknown", "dhs"]), ["dhs"]);
 });
 
+test("media that cites a government agency remains classified as media", () => {
+  const media = testArticle(203, "Treasury sanctions update", "https://www.reuters.com/world/treasury-sanctions-update");
+  media.source = "Reuters / U.S. Treasury";
+  assert.equal(sourceGroupForArticle(media), "media");
+});
+
+test("subscribers without an explicit source selection default to government sources only", () => {
+  const government = scoreArticle({ ...testArticle(204, "Treasury sanctions action", "https://home.treasury.gov/news/press-releases/sb0601"), date: new Date().toISOString() }, { threshold: 0, maxAgeHours: null });
+  const media = scoreArticle({ ...testArticle(205, "Treasury sanctions coverage", "https://www.reuters.com/world/treasury-sanctions-coverage"), date: new Date().toISOString() }, { threshold: 0, maxAgeHours: null });
+  const selected = articlesForSubscriber([government, media], { sections: null, sourceGroups: null, minAlertScore: 0 });
+  assert.deepEqual(selected.map(item => item.article.id), [204]);
+});
+
+test("manual and workflow-change monitor runs do not backfill old news by default", () => {
+  const workflow = readFileSync(new URL("../.github/workflows/monitor.yml", import.meta.url), "utf8");
+  assert.doesNotMatch(workflow, /default:\s*["']144["']/);
+  assert.doesNotMatch(workflow, /github\.event_name\s*==\s*["']push["'][^\n]*144/);
+});
+
 test("Gemini only appends new discoveries and marks them display-only", () => {
   const direct = testArticle(1, "Direct article", "https://agency.gov/news/direct");
   const discovered = testArticle(1, "Additional report", "https://reuters.com/world/additional-report");
