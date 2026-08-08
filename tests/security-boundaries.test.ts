@@ -80,6 +80,5 @@ test("briefing saves reject oversized, unknown, and corrupted article data", () 
   assert.ok(validateBriefingPayload(valid));
   assert.equal(validateBriefingPayload({ ...valid, unexpected: true }), null);
   assert.equal(validateBriefingPayload({ ...valid, articles: Array(1501).fill(valid.articles[0]) }), null);
-  assert.equal(validateBriefingPayload({ ...valid, articles: [{ ...valid.articles[0], headline: "ï¿½ï¿½ï¿½ï¿½" }] }), null);
+  assert.equal(validateBriefingPayload({ ...valid, articles: [{ ...valid.articles[0], headline: "����" }] }), null);
 });
-
