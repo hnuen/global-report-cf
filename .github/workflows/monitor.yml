@@ -204,9 +204,11 @@ jobs:
 
           with open("/tmp/resp.json", encoding="utf-8") as response_file:
               data = json.load(response_file)
+          # The notification body contains only the first five articles, so
+          # record cooldown for exactly those delivered items and no others.
           alert_keys = [
               article["alertKey"]
-              for article in data.get("alertedArticles", [])
+              for article in data.get("alertedArticles", [])[:5]
               if article.get("alertKey")
           ]
           print(json.dumps({"alertKeys": alert_keys}))

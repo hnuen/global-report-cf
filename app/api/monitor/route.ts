@@ -1,5 +1,5 @@
 Exit code: 0
-Wall time: 0.4 seconds
+Wall time: 0.5 seconds
 Output:
 export const dynamic = "force-dynamic";
 /**
@@ -31,16 +31,19 @@ function isAuthorised(req: NextRequest): boolean {
 }
 
 // Ã¢â€â‚¬Ã¢â€â‚¬ Redis helpers for alert deduplication Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
-async function wasAlerted(key: string): Promise<boolean> {
+async function alertedKeys(keys: string[]): Promise<Set<string>> {
   const u = process.env.UPSTASH_REDIS_REST_URL;
   const t = process.env.UPSTASH_REDIS_REST_TOKEN;
-  if (!u || !t) return false;
+  if (!u || !t || keys.length === 0) return new Set();
   try {
-    const r = await fetch(`${u}/get/${encodeURIComponent("alert:"+key)}`,
-      { headers: { Authorization: `Bearer ${t}` } });
-    const d = await r.json();
-    return !!d.result;
-  } catch { return false; }
+    const { Redis } = await import("@upstash/redis");
+    const values = await new Redis({ url: u, token: t }).mget<unknown[]>(...keys.map(key => `alert:${key}`));
+    return new Set(keys.filter((_, index) => !!values[index]));
+  } catch {
+    // A cooldown outage must not falsely mark anything delivered. Recipient
+    // cooldowns in NotifierManager still prevent duplicates where available.
+    return new Set();
+  }
 }
 
 // Ã¢â€â‚¬Ã¢â€â‚¬ URL pre-flight check Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
@@ -164,31 +167,36 @@ async function runMonitor(topic?: string, force = false, backfillHours?: number)
   // 3. Deduplicate
   const { buildAlertKey } = await import("@/src/lib/alert-scorer");
   const forceSend = force;
-  const newAlerts = [];
-  const blockedKeys: string[] = [];
-  for (const s of candidates) {
-    const key = buildAlertKey(s.article);
-    const already = forceSend ? false : await wasAlerted(key);
-    if (!already) {
-      newAlerts.push(s);
-    } else {
-      blockedKeys.push(key);
-    }
-  }
+  // Bound URL checks and notification work. This is a Cloudflare Worker, so
+  // an unbounded candidate set can consume the invocation's subrequest budget
+  // before Telegram/ntfy are called. Keep a wider verification pool, then
+  // deliver at most the configured batch size.
+  const candidatePool = candidates.slice(0, Math.max(maxAlertsPerRun * 3, maxAlertsPerRun));
+  const verifiedCandidates = candidatePool.length > 0 ? await verifyAlertUrls(candidatePool) : [];
+  const keys = verifiedCandidates.map(s => buildAlertKey(s.article));
+  const alreadyAlerted = forceSend ? new Set<string>() : await alertedKeys(keys);
+  const blockedKeys = keys.filter(key => alreadyAlerted.has(key));
+  const newAlerts = verifiedCandidates
+    .filter(s => !alreadyAlerted.has(buildAlertKey(s.article)))
+    .slice(0, maxAlertsPerRun);
 
   console.log(`[monitor] ${monitorArticles.length} articles - ${candidates.length} above threshold - ${newAlerts.length} new - ${blockedKeys.length} cooldown blocked${forceSend?" (FORCED)":""}`);
 
   // 4a. Pre-flight URL check - DROP alerts with missing/unreachable sourceUrls
-  const verifiedAlerts = newAlerts.length > 0 ? await verifyAlertUrls(newAlerts) : [];
-  const droppedNoLink = newAlerts.length - verifiedAlerts.length;
+  const verifiedAlerts = newAlerts;
+  const droppedNoLink = candidatePool.length - verifiedCandidates.length;
   if (droppedNoLink > 0) {
     console.warn(`[monitor] dropped ${droppedNoLink} alert(s) lacking a working source link`);
   }
 
   // 4. Fire notifications only for new, link-verified alerts
   const manager = getNotifierManager();
-  const notifyResult = verifiedAlerts.length > 0
-    ? await manager.notify(verifiedAlerts, appUrl, alertSettings.threshold, maxAlertsPerRun)
+  // Internal recipient channels have their own per-recipient cooldowns. They
+  // must see verified candidates even if the workflow's global ntfy fallback
+  // already delivered an item; otherwise a successful ntfy send suppresses a
+  // Telegram subscriber who has not received it.
+  const notifyResult = verifiedCandidates.length > 0
+    ? await manager.notify(verifiedCandidates, appUrl, alertSettings.threshold, maxAlertsPerRun)
     : { sent: 0, skipped: 0, channels: [], results: [], totalAlerts: 0, deliveredAlertKeys: [] };
 
   // 5. Start cooldown only for articles a notification channel actually

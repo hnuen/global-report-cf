@@ -26,8 +26,9 @@ test("monitor delivery survives source-refresh outages and supports bounded catc
   assert.match(workflow, /--retry 3 --retry-all-errors/);
   assert.match(workflow, /backfill_hours:/);
   assert.match(monitor, /parsed < 1 \|\| parsed > 168/);
-  assert.match(monitor, /manager\.notify\(verifiedAlerts/);
-  assert.doesNotMatch(monitor, /manager\.notify\(managerCandidates/);
+  assert.match(monitor, /\.mget<unknown\[]>/);
+  assert.match(monitor, /manager\.notify\(verifiedCandidates/);
+  assert.match(workflow, /get\("alertedArticles", \[\]\)\[:5\]/);
 });
 
 test("Pages configuration uses only supported limits and Worker observability stays separate", async () => {
