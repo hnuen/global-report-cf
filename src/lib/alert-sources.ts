@@ -22,13 +22,17 @@ export function validateSourceGroups(value: unknown): AlertSourceGroup[] {
 export function sourceGroupForArticle(article: ScoredArticle["article"]): AlertSourceGroup {
   let host = "";
   try { host = new URL(article.sourceUrl ?? "").hostname.replace(/^www\./, "").toLowerCase(); } catch {}
-  const text = `${article.source ?? ""} ${article.sourceUrl ?? ""}`.toLowerCase();
-  if (/treasury\.gov|ofac|fincen/.test(text)) return "treasury";
-  if (/dhs\.gov|homeland security|uflpa/.test(text)) return "dhs";
-  if (/commerce\.gov|bis\.gov|bis\.doc\.gov|bureau of industry/.test(text)) return "commerce";
-  if (/state\.gov|war\.gov|defense\.gov|\.mil\b/.test(text)) return "state-defense";
-  if (/federalreserve\.gov|occ\.gov|federal reserve|comptroller/.test(text)) return "financial";
-  if (/whitehouse\.gov|congress\.gov|usa\.gov/.test(text)) return "executive-legislative";
+
+  // Classify a linked article by the publisher that will actually receive the
+  // click. A media story may cite Treasury or OFAC in its source label; that
+  // does not turn reuters.com/aljazeera.com into a government source.
+  if (/^(?:.*\.)?(?:home\.)?treasury\.gov$/.test(host) || host === "ofac.treasury.gov" || host === "fincen.gov") return "treasury";
+  if (host === "dhs.gov" || host.endsWith(".dhs.gov")) return "dhs";
+  if (host === "commerce.gov" || host.endsWith(".commerce.gov") || host === "bis.gov" || host.endsWith(".bis.gov") || host === "bis.doc.gov") return "commerce";
+  if (host === "state.gov" || host.endsWith(".state.gov") || host === "war.gov" || host.endsWith(".war.gov") || host === "defense.gov" || host.endsWith(".defense.gov") || host.endsWith(".mil")) return "state-defense";
+  if (host === "federalreserve.gov" || host.endsWith(".federalreserve.gov") || host === "occ.gov" || host.endsWith(".occ.gov")) return "financial";
+  if (host === "whitehouse.gov" || host.endsWith(".whitehouse.gov") || host === "congress.gov" || host.endsWith(".congress.gov") || host === "usa.gov" || host.endsWith(".usa.gov")) return "executive-legislative";
+
   const usGov = host.endsWith(".gov") || host.endsWith(".mil");
   const internationalGov = host.endsWith(".gov.uk") || host === "gov.uk" || host.endsWith(".europa.eu") || host === "europa.eu" || host.endsWith(".un.org") || host === "un.org";
   return internationalGov || usGov ? "international-government" : "media";
@@ -39,7 +43,12 @@ export function articlesForSubscriber(
   policy: { sections?: string[] | null; sourceGroups?: string[] | null; minAlertScore?: number | null },
 ): ScoredArticle[] {
   const sections = policy.sections?.length ? new Set(policy.sections) : null;
-  const sources = policy.sourceGroups?.length ? new Set(policy.sourceGroups) : null;
+  // Media is opt-in. Existing subscribers without a saved source selection
+  // retain all government groups but no longer inherit every media publisher.
+  const defaultSources = ALERT_SOURCE_GROUPS
+    .map(group => group.key)
+    .filter((key): key is AlertSourceGroup => key !== "media");
+  const sources = new Set(policy.sourceGroups?.length ? policy.sourceGroups : defaultSources);
   const minimum = Number.isFinite(policy.minAlertScore) ? Number(policy.minAlertScore) : 0;
   return articles.filter(item =>
     (!sections || sections.has(item.article.section)) &&
