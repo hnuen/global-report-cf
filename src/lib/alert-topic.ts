@@ -34,6 +34,9 @@ export function cleanAlertText(value: string): string {
     .replaceAll("â€¢", "•")
     .replaceAll("Â·", "·")
     .replace(/^\s*[•*-]\s*/, "")
+    // Strip any remaining mojibake punctuation prefix regardless of how many
+    // times an old cached value was incorrectly transcoded.
+    .replace(/^[^A-Za-z0-9]+(?=[A-Za-z0-9])/, "")
     .trim();
 }
 
