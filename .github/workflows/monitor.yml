@@ -82,15 +82,22 @@ jobs:
           APP_URL="${APP_URL%/}"
           BODY=$(TOPIC="$TOPIC" BACKFILL_HOURS="$BACKFILL_HOURS" python3 -c 'import json, os; body={}; topic=os.environ.get("TOPIC", "").strip(); hours=os.environ.get("BACKFILL_HOURS", "").strip(); body.update({"topic": topic} if topic else {}); body.update({"backfillHours": int(hours)} if hours else {}); print(json.dumps(body))')
 
-          HTTP=$(curl --silent --show-error --location --retry 3 --retry-all-errors --retry-delay 5 \
-            --output /tmp/resp.json \
-            --write-out "%{http_code}" \
-            --request POST "$APP_URL/api/monitor" \
-            --header "Content-Type: application/json" \
-            --header "x-cron-secret: $CRON_SECRET" \
-            --header "x-vercel-protection-bypass: $VERCEL_BYPASS_TOKEN" \
-            --data "$BODY" \
-            --max-time 120)
+          HTTP="000"
+          for ATTEMPT in 1 2 3; do
+            HTTP=$(curl --silent --show-error --location --retry 2 --retry-all-errors --retry-delay 5 \
+              --output /tmp/resp.json \
+              --write-out "%{http_code}" \
+              --request POST "$APP_URL/api/monitor" \
+              --header "Content-Type: application/json" \
+              --header "x-cron-secret: $CRON_SECRET" \
+              --header "x-vercel-protection-bypass: $VERCEL_BYPASS_TOKEN" \
+              --data "$BODY" \
+              --max-time 120)
+            if [ "$HTTP" = "200" ]; then break; fi
+            if [ "$HTTP" != "409" ]; then break; fi
+            echo "Another monitor owns the delivery lock; retrying in 25 seconds ($ATTEMPT/3)"
+            sleep 25
+          done
 
           echo "Monitor HTTP: $HTTP"
           cat /tmp/resp.json
@@ -101,8 +108,11 @@ jobs:
           ALERTING=$(python3 -c 'import json; print(json.load(open("/tmp/resp.json")).get("alerting", 0))')
           echo "alerting=$ALERTING" >> "$GITHUB_OUTPUT"
 
-      - name: Send ntfy alerts
-        if: steps.monitor.outputs.alerting != '0'
+      # Disabled: /api/monitor already sends ntfy with recipient-aware
+      # cooldowns. A second workflow sender duplicated messages and exhausted
+      # the ntfy daily quota.
+      - name: Legacy workflow ntfy sender (disabled)
+        if: ${{ false }}
         env:
           ALERTING: ${{ steps.monitor.outputs.alerting }}
           APP_URL: ${{ secrets.APP_URL }}

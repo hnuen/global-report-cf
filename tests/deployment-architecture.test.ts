@@ -1,4 +1,3 @@
-
 import assert from "node:assert/strict";
 import test from "node:test";
 import { readFile } from "node:fs/promises";
@@ -23,13 +22,16 @@ test("monitor delivery survives source-refresh outages and supports bounded catc
   ]);
   assert.match(workflow, /continue-on-error:\s*true/);
   assert.match(workflow, /last healthy snapshot/);
-  assert.match(workflow, /--retry 3 --retry-all-errors/);
+  assert.match(workflow, /--retry 2 --retry-all-errors/);
   assert.match(workflow, /backfill_hours:/);
   assert.match(workflow, /default: "144"/);
   assert.match(monitor, /parsed < 1 \|\| parsed > 168/);
   assert.match(monitor, /\.mget<unknown\[]>/);
   assert.match(monitor, /manager\.notify\(verifiedCandidates/);
   assert.match(workflow, /get\("alertedArticles", \[\]\)\[:5\]/);
+  assert.match(workflow, /HTTP" != "409"/);
+  assert.match(workflow, /Legacy workflow ntfy sender \(disabled\)/);
+  assert.match(workflow, /if: \$\{\{ false \}\}/);
 });
 
 test("Pages configuration uses only supported limits and Worker observability stays separate", async () => {
