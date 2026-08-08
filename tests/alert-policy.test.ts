@@ -105,7 +105,7 @@ test("monitor scoring is bounded to the catch-up window without deleting the arc
 });
 
 test("ntfy presentation uses the article agency and repairs corrupted punctuation", () => {
-  const treasury = testArticle(2, "ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ Treasury action", "https://home.treasury.gov/news/press-releases/sb0583");
+  const treasury = testArticle(2, "Ã¢â‚¬Â¢ Treasury action", "https://home.treasury.gov/news/press-releases/sb0583");
   treasury.source = "Treasury Press Release SB0536";
 
   assert.equal(alertSourceLabel(treasury), "U.S. Treasury / News");
@@ -275,7 +275,7 @@ test("OFAC pinning cannot displace newer Economics or Regions stories", () => {
 });
 
 test("binary or corrupted government responses never display or alert", () => {
-  const damaged = "IHDRï¿½ï¿½ï¿½ï¿½\u0001\u0002State Department ï¿½ï¿½ï¿½ï¿½ payload";
+  const damaged = "IHDR����\u0001\u0002State Department ���� payload";
   assert.equal(isLikelyCorruptedText(damaged), true);
   const article = testArticle(999, damaged, "https://www.state.gov/press-releases/example");
   const scored = scoreArticle(article);
@@ -286,5 +286,4 @@ test("binary or corrupted government responses never display or alert", () => {
   assert.ok(sourceFetcher.includes("Unsupported non-text content-type"));
   assert.ok(sourceFetcher.includes("Response decoded as binary/corrupted text"));
 });
-
 

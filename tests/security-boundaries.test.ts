@@ -1,8 +1,17 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import { readFileSync } from "node:fs";
 import { checkRateLimit, getClientIp } from "../src/lib/rate-limit.ts";
 import { validateBackgroundRefreshBody, validateBriefingPayload, validateOfacUpdateBody, validateSearchQuery } from "../src/lib/request-validation.ts";
 import { hasAnySecret, hasSecret } from "../src/lib/request-auth.ts";
+
+test("Cloudflare build does not ship the unsupported Nodemailer SMTP dependency", () => {
+  const manifest = readFileSync(new URL("../package.json", import.meta.url), "utf8");
+  const emailSms = readFileSync(new URL("../src/notifiers/email-sms.ts", import.meta.url), "utf8");
+  assert.doesNotMatch(manifest, /\"nodemailer\"/);
+  assert.doesNotMatch(emailSms, /import\(\"nodemailer\"\)/);
+  assert.match(emailSms, /isConfigured\(\): boolean \{[\s\S]*return false/);
+});
 
 test("protected mutations fail closed and accept only the configured secret", () => {
   const unauthorised = new Request("https://example.test", { headers: { "x-ofac-update-secret": "wrong" } });
