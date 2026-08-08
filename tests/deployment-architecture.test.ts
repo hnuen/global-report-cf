@@ -25,6 +25,7 @@ test("monitor delivery survives source-refresh outages and supports bounded catc
   assert.match(workflow, /last healthy snapshot/);
   assert.match(workflow, /--retry 3 --retry-all-errors/);
   assert.match(workflow, /backfill_hours:/);
+  assert.match(workflow, /default: "144"/);
   assert.match(monitor, /parsed < 1 \|\| parsed > 168/);
   assert.match(monitor, /\.mget<unknown\[]>/);
   assert.match(monitor, /manager\.notify\(verifiedCandidates/);

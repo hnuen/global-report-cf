@@ -1,4 +1,6 @@
-
+Exit code: 0
+Wall time: 0.4 seconds
+Output:
 name: Monitor and Alert
 
 on:
@@ -14,6 +16,7 @@ on:
         description: Optional catch-up window (1-168 hours); delivered items remain deduplicated
         required: false
         type: string
+        default: "144"
 
 concurrency:
   group: production-alert-monitor
