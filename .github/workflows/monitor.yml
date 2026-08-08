@@ -4,6 +4,12 @@ Output:
 name: Monitor and Alert
 
 on:
+  # A change to this alert workflow validates and exercises only the alert
+  # component immediately. Ordinary application commits do not create an
+  # extra monitor run.
+  push:
+    branches: [main]
+    paths: [.github/workflows/monitor.yml]
   # The dedicated Cloudflare cron Worker is the sole scheduler. Keeping a
   # GitHub schedule here as well creates overlapping monitor runs at :17.
   workflow_dispatch:
@@ -73,7 +79,7 @@ jobs:
           CRON_SECRET: ${{ secrets.CRON_SECRET }}
           VERCEL_BYPASS_TOKEN: ${{ secrets.VERCEL_BYPASS_TOKEN }}
           TOPIC: ${{ inputs.topic }}
-          BACKFILL_HOURS: ${{ inputs.backfill_hours }}
+          BACKFILL_HOURS: ${{ github.event_name == 'push' && '144' || inputs.backfill_hours }}
         run: |
           set -euo pipefail
           APP_URL="${APP_URL%/}"
