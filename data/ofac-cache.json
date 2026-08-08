@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-08T19:08:39.168Z",
+  "updatedAt": "2026-08-08T21:08:35.829Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260807",
@@ -3057,6 +3057,12 @@
   "unNotices": [],
   "bbcNews": [
     {
+      "title": "Hormuz talks positive, Oman says, as Iran warns deal would not open strait",
+      "url": "https://www.bbc.co.uk/news/articles/c934j5y2lq9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 8, 2026",
+      "description": "Both sides suggest progress in talks to agree a new shipping route through the strait, but a breakthrough remains unclear."
+    },
+    {
       "title": "Child among three killed in Russian missile attacks near Kyiv",
       "url": "https://www.bbc.co.uk/news/articles/cz7dy8gq99eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 8, 2026",
@@ -3131,7 +3137,14 @@
       "description": "Drone incidents in Europe igniting fears that Moscow&#039;s war on Kyiv is entangling NATO nations."
     }
   ],
-  "occNews": [],
+  "occNews": [
+    {
+      "title": "OCC Announces Enforcement Actions for July 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-59.html",
+      "date": "July 16, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for July 2026."
+    }
+  ],
   "economicsNews": [
     {
       "title": "Federal Reserve issues FOMC statement",
@@ -3226,12 +3239,6 @@
       "description": "Lionel Messi's father and agent Jorge dies at the age of 68 following a long illness."
     },
     {
-      "title": "Spain imposes border controls against Italy as row over Ceuta migrant influx intensifies",
-      "url": "https://www.bbc.co.uk/news/articles/c5yv5l6yr5ko?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 8, 2026",
-      "description": "Italy introduced border controls following an influx of about 78,000 migrants from Morocco into the neighbouring Spanish exclave of Ceuta."
-    },
-    {
       "title": "Madonna pays tribute to 'genius, otherworldly' producer William Orbit",
       "url": "https://www.bbc.co.uk/news/articles/cewr8wel4z8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 8, 2026",
@@ -3242,6 +3249,18 @@
       "url": "https://www.bbc.co.uk/news/videos/cvg8je12xxeo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 8, 2026",
       "description": "Lawmakers and police officers had to intervene after Alliance party MP Time Kadrijaj hurled at least four eggs towards Kosovo's acting prime minister Albin Kurti."
+    },
+    {
+      "title": "Paris tells e-scooter riders to wear safety gear or face fines",
+      "url": "https://www.bbc.co.uk/news/articles/c89nkln7w7ko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 8, 2026",
+      "description": "Police in the French capital tighten rules for riders after a sharp increase in fatal accidents."
+    },
+    {
+      "title": "Spain imposes border controls against Italy as row over Ceuta migrant influx intensifies",
+      "url": "https://www.bbc.co.uk/news/articles/c5yv5l6yr5ko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 8, 2026",
+      "description": "Italy introduced border controls following an influx of about 78,000 migrants from Morocco into the neighbouring Spanish exclave of Ceuta."
     },
     {
       "title": "Typhoon Dolphin batters Japan's Okinawa before bearing down on China",
@@ -3328,16 +3347,16 @@
       "description": "Babies born as a result of rape are often unable to get a birth certificate, meaning a life-time of problems."
     },
     {
-      "title": "Watch: BBC asks Infantino if he will resign as Fifa president",
-      "url": "https://www.bbc.co.uk/news/videos/c0ejrdzx98wo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 7, 2026",
-      "description": "The head of the football governing body has faced multiple calls to quit after his aborted attempt to sell private stakes in the World Cup."
-    },
-    {
       "title": "Watch: Moment opposition MP throws eggs at Kosovo's acting PM",
       "url": "https://www.bbc.co.uk/news/videos/cvg8je12xxeo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 8, 2026",
       "description": "Lawmakers and police officers had to intervene after Alliance party MP Time Kadrijaj hurled at least four eggs towards Kosovo's acting prime minister Albin Kurti."
+    },
+    {
+      "title": "Watch: BBC asks Infantino if he will resign as Fifa president",
+      "url": "https://www.bbc.co.uk/news/videos/c0ejrdzx98wo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 7, 2026",
+      "description": "The head of the football governing body has faced multiple calls to quit after his aborted attempt to sell private stakes in the World Cup."
     },
     {
       "title": "What we know so far about the deadly Thailand shooting",
@@ -3664,6 +3683,30 @@
       "description": "How amid the tents and the rubble Gaza is developing once again as an unlikely tech hub"
     },
     {
+      "title": "What are the challenges facing the Mecca agreement?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/8/8/challenges-facing-mecca-agreement?traffic_source=rss",
+      "date": "August 8, 2026",
+      "description": "Saudi Arabia turns to Turkiye and Pakistan for defence ties, raising questions overreliance on the US."
+    },
+    {
+      "title": "At least 200 people evacuated as wildfire rages near Lake Garda",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/8/at-least-200-people-evacuated-as-wildfire-rages-near-lake-garda?traffic_source=rss",
+      "date": "August 8, 2026",
+      "description": "At least 200 people have been evacuated after a wildfire broke out near Italy’s Lake Garda."
+    },
+    {
+      "title": "Lebanese soldiers injured while Israeli troops intrude on southern town",
+      "url": "https://www.aljazeera.com/news/2026/8/8/lebanese-soldiers-injured-while-israeli-troops-intrude-on-southern-town?traffic_source=rss",
+      "date": "August 8, 2026",
+      "description": "Soldiers disarm unexploded ordnance in Zawtar al-Gharbiyah, near where Israeli forces reportedly built an earth barrier."
+    },
+    {
+      "title": "US slams Chinese ‘nature reserve’ as effort to claim South China Sea",
+      "url": "https://www.aljazeera.com/news/2026/8/8/us-slams-chinese-nature-reserve-as-effort-to-claim-south-china-sea?traffic_source=rss",
+      "date": "August 8, 2026",
+      "description": "US State Department accuses China of attempting to deny Filipino vessels access to fishing grounds in contested area."
+    },
+    {
       "title": "‘Debilitating’: Hunter Biden speaks out about father Joe Biden’s cancer",
       "url": "https://www.aljazeera.com/news/2026/8/8/debilitating-hunter-biden-speaks-out-about-father-joe-bidens-cancer?traffic_source=rss",
       "date": "August 8, 2026",
@@ -3746,30 +3789,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/8/police-bodycam-and-cctv-catches-idaho-mall-shooting-as-it-unfolds?traffic_source=rss",
       "date": "August 8, 2026",
       "description": "Police bodycam and CCTV catches Idaho mall shooting as it unfolds"
-    },
-    {
-      "title": "Atletico Madrid will not sell Alvarez amid Barcelona interest, says Simeone",
-      "url": "https://www.aljazeera.com/sports/2026/8/8/atletico-madrid-will-not-sell-alvarez-amid-barcelona-interest-says-simeone?traffic_source=rss",
-      "date": "August 8, 2026",
-      "description": "Last month, Atletico filed a complaint to FIFA over Barcelona allegedly tapping up the 26-year-old forward."
-    },
-    {
-      "title": "Arsenal complete signing of Newcastle midfielder Bruno Guimaraes",
-      "url": "https://www.aljazeera.com/sports/2026/8/8/arsenal-complete-signing-of-newcastle-midfielder-bruno-guimaraes?traffic_source=rss",
-      "date": "August 8, 2026",
-      "description": "Brazil international signed on a four-year contract with further one-year option for reported fee of about $101m."
-    },
-    {
-      "title": "‘Hi friends’: Modi’s curious campaign to win over Gen Z",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/8/hi-friends-modis-curious-campaign-to-win-over-gen-z?traffic_source=rss",
-      "date": "August 8, 2026",
-      "description": "For Gen Z in India, PM Narendra Modi is trying to become an unlikely friend through late-night Instagram reels."
-    },
-    {
-      "title": "The post-American Middle East is beginning to take shape",
-      "url": "https://www.aljazeera.com/opinions/2026/8/8/the-post-american-middle-east-is-beginning-to-take-shape?traffic_source=rss",
-      "date": "August 8, 2026",
-      "description": "The pact between Saudi Arabia, Pakistan and Turkiye is yet another step towards a new regional security architecture."
     }
   ]
 }
