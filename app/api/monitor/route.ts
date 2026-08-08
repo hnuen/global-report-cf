@@ -1,6 +1,3 @@
-Exit code: 0
-Wall time: 0.5 seconds
-Output:
 export const dynamic = "force-dynamic";
 /**
  * /api/monitor Ã¢â‚¬â€ hourly monitor endpoint
