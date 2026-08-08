@@ -26,3 +26,22 @@ export function mergeMonitorArticles(
   }
   return [...merged.values()];
 }
+
+/** Bound alert scoring to records that can still pass its recency gate. */
+export function selectMonitorArticles(
+  articles: Article[],
+  maxAgeHours: number | null | undefined,
+  now = Date.now(),
+  limit = 600,
+): Article[] {
+  const hours = maxAgeHours ?? 48;
+  const oldest = now - hours * 60 * 60 * 1000;
+  const newest = now + 6 * 60 * 60 * 1000;
+  return articles
+    .map(article => ({ article, published: Date.parse(article.date) }))
+    .filter(item => Number.isFinite(item.published) && item.published >= oldest && item.published <= newest)
+    .sort((a, b) => b.published - a.published)
+    .slice(0, limit)
+    .map(item => item.article);
+}
+

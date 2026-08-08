@@ -9,7 +9,7 @@ import type { Article } from "../src/lib/types.ts";
 import { mergeDirectWithAiSupplement } from "../src/lib/source-merge.ts";
 import type { Briefing } from "../src/lib/types.ts";
 import { articleMatchesAlertTopic, alertSourceLabel, cleanAlertText } from "../src/lib/alert-topic.ts";
-import { mergeMonitorArticles } from "../src/lib/monitor-articles.ts";
+import { mergeMonitorArticles, selectMonitorArticles } from "../src/lib/monitor-articles.ts";
 import { articlesForSubscriber, sourceGroupForArticle, validateSourceGroups } from "../src/lib/alert-sources.ts";
 import { itemCheckpointKey, sourceCheckpointKey } from "../src/lib/source-item-checkpoints.ts";
 import { isLikelyCorruptedText } from "../src/lib/text-quality.ts";
@@ -89,6 +89,19 @@ test("monitor includes current articles that are visible through the persistent 
 
   assert.equal(merged.length, 2);
   assert.equal(result?.shouldAlert, true);
+});
+
+test("monitor scoring is bounded to the catch-up window without deleting the archive", () => {
+  const now = Date.parse("2026-08-08T12:00:00Z");
+  const recent = testArticle(1, "Recent action", "https://agency.gov/recent");
+  recent.date = "2026-08-08T10:00:00Z";
+  const old = testArticle(2, "Old action", "https://agency.gov/old");
+  old.date = "2026-07-01T10:00:00Z";
+  const malformed = testArticle(3, "Unknown date", "https://agency.gov/unknown");
+  malformed.date = "date unavailable";
+  const archive = [old, recent, malformed];
+  assert.deepEqual(selectMonitorArticles(archive, 144, now).map(article => article.id), [1]);
+  assert.equal(archive.length, 3);
 });
 
 test("ntfy presentation uses the article agency and repairs corrupted punctuation", () => {
@@ -223,7 +236,7 @@ test("the frequent monitor refreshes direct sources without invoking Gemini", ()
   const refreshStep = workflow.indexOf("Refresh direct trusted sources");
   const monitorStep = workflow.indexOf("Run monitor");
   assert.ok(refreshStep >= 0 && refreshStep < monitorStep);
-  assert.ok(workflow.includes("for GROUP in 1 2 3 4"));
+  assert.ok(workflow.includes("for BATCH in 1 2 3:1 3:2 4:1 4:2"));
   assert.ok(workflow.includes("$APP_URL/api/refresh"));
   assert.equal(workflow.includes("GEMINI_API_KEY"), false);
 

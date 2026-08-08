@@ -10,7 +10,7 @@ import { scoreAll }                   from "@/src/lib/alert-scorer";
 import { getNotifierManager }         from "@/src/notifiers/manager";
 import { articleMatchesAlertTopic, alertSourceLabel, cleanAlertText } from "@/src/lib/alert-topic";
 import { loadArticleLibrary } from "@/src/lib/article-library";
-import { mergeMonitorArticles } from "@/src/lib/monitor-articles";
+import { mergeMonitorArticles, selectMonitorArticles } from "@/src/lib/monitor-articles";
 import { loadAlertSettings } from "@/src/lib/alert-settings";
 import { acquireDistributedLock } from "@/src/lib/distributed-lock";
 
@@ -147,11 +147,13 @@ async function runMonitor(topic?: string, force = false, backfillHours?: number)
   // page merged the persistent library while monitoring only inspected the
   // briefing, so current DHS/UFLPA articles could be visible but never alert.
   const libraryArticles = await loadArticleLibrary().catch(() => []);
-  const monitorArticles = mergeMonitorArticles(briefing.articles, libraryArticles);
+  const archivedArticles = mergeMonitorArticles(briefing.articles, libraryArticles);
+  const effectiveMaxAgeHours = backfillHours ?? alertSettings.maxAgeHours;
+  const monitorArticles = selectMonitorArticles(archivedArticles, effectiveMaxAgeHours);
   const scoringSettings = {
     ...alertSettings,
     threshold: 0,
-    maxAgeHours: backfillHours ?? alertSettings.maxAgeHours,
+    maxAgeHours: effectiveMaxAgeHours,
   };
   const scored = scoreAll(monitorArticles, scoringSettings);
   // A topic is a hard alert filter, not merely a hint to the refresh provider.
@@ -177,7 +179,7 @@ async function runMonitor(topic?: string, force = false, backfillHours?: number)
     .filter(s => !alreadyAlerted.has(buildAlertKey(s.article)))
     .slice(0, maxAlertsPerRun);
 
-  console.log(`[monitor] ${monitorArticles.length} articles - ${candidates.length} above threshold - ${newAlerts.length} new - ${blockedKeys.length} cooldown blocked${forceSend?" (FORCED)":""}`);
+  console.log(`[monitor] ${monitorArticles.length}/${archivedArticles.length} recent/archive articles - ${candidates.length} above threshold - ${newAlerts.length} new - ${blockedKeys.length} cooldown blocked${forceSend?" (FORCED)":""}`);
 
   // 4a. Pre-flight URL check - DROP alerts with missing/unreachable sourceUrls
   const verifiedAlerts = newAlerts;
@@ -205,6 +207,7 @@ async function runMonitor(topic?: string, force = false, backfillHours?: number)
   return {
     ok:           true,
     articles:     monitorArticles.length,
+    archivedArticles: archivedArticles.length,
     alerting:     verifiedAlerts.length,
     droppedNoLink,
     notified:     notifyResult.sent,

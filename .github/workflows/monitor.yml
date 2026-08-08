@@ -46,25 +46,30 @@ jobs:
           # Separate Worker invocations keep each group below the free-plan
           # external-subrequest limit. This path never calls Gemini.
           FAILED=0
-          for GROUP in 1 2 3 4; do
+          for BATCH in 1 2 3:1 3:2 4:1 4:2; do
+            GROUP="${BATCH%%:*}"
+            PART=""
+            if [[ "$BATCH" == *:* ]]; then PART="${BATCH##*:}"; fi
+            BODY="{\"group\":$GROUP}"
+            if [ -n "$PART" ]; then BODY="{\"group\":$GROUP,\"groupPart\":$PART}"; fi
             HTTP=$(curl --silent --show-error --location \
-              --output "/tmp/direct_group_${GROUP}.json" \
+              --output "/tmp/direct_group_${BATCH//:/_}.json" \
               --write-out "%{http_code}" \
               --request POST "$APP_URL/api/refresh" \
               --header "Content-Type: application/json" \
               --header "x-cron-secret: $CRON_SECRET" \
               --header "x-vercel-protection-bypass: $VERCEL_BYPASS_TOKEN" \
-              --data "{\"group\":$GROUP}" \
+              --data "$BODY" \
               --max-time 40 || echo "000")
-            echo "Direct source group $GROUP HTTP: $HTTP"
-            cat "/tmp/direct_group_${GROUP}.json" 2>/dev/null || true
+            echo "Direct source batch $BATCH HTTP: $HTTP"
+            cat "/tmp/direct_group_${BATCH//:/_}.json" 2>/dev/null || true
             if [ "$HTTP" != "200" ]; then FAILED=$((FAILED + 1)); fi
           done
 
           # Never suppress alert delivery because publishers are temporarily
           # unavailable. The monitor step below falls back to the last healthy
           # briefing/library already stored in Redis.
-          if [ "$FAILED" = "4" ]; then
+          if [ "$FAILED" = "6" ]; then
             echo "All direct source groups failed; continuing with last healthy snapshot"
             exit 1
           fi
@@ -94,8 +99,8 @@ jobs:
               --data "$BODY" \
               --max-time 120)
             if [ "$HTTP" = "200" ]; then break; fi
-            if [ "$HTTP" != "409" ]; then break; fi
-            echo "Another monitor owns the delivery lock; retrying in 25 seconds ($ATTEMPT/3)"
+            if [ "$HTTP" != "409" ] && [ "$HTTP" != "500" ] && [ "$HTTP" != "502" ] && [ "$HTTP" != "503" ] && [ "$HTTP" != "504" ]; then break; fi
+            echo "Monitor temporarily unavailable (HTTP $HTTP); retrying in 25 seconds ($ATTEMPT/3)"
             sleep 25
           done
 
