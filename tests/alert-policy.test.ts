@@ -47,6 +47,19 @@ test("a current DHS UFLPA notice is eligible as an authoritative alert", () => {
   assert.ok(result.reasons.some(reason => reason.includes("Official enforcement source (100)")));
 });
 
+test("trusted government provenance does not make routine press material alert-worthy", () => {
+  const article: Article = {
+    id: 2, date: new Date().toISOString(), section: "economics", category: "News",
+    region: "United States", impact: "low", source: "U.S. Treasury",
+    headline: "Media Credentialing Opens for Finance Ministerial",
+    body: ["Credentialing information for attending media."],
+    sourceUrl: "https://home.treasury.gov/news/press-releases/example",
+  };
+  const result = scoreArticle(article);
+  assert.equal(result.shouldAlert, false);
+  assert.ok(result.score < 65);
+});
+
 test("a DHS UFLPA monitor excludes unrelated Treasury sanctions news", () => {
   const dhs = testArticle(1, "DHS adds entities to the UFLPA Entity List", "https://www.dhs.gov/news/2026/07/31/uflpa-update");
   const treasury = testArticle(2, "Treasury targets an Iran network", "https://home.treasury.gov/news/press-releases/sb0582");
@@ -79,7 +92,7 @@ test("monitor includes current articles that are visible through the persistent 
 });
 
 test("ntfy presentation uses the article agency and repairs corrupted punctuation", () => {
-  const treasury = testArticle(2, "Ã¢â‚¬Â¢ Treasury action", "https://home.treasury.gov/news/press-releases/sb0583");
+  const treasury = testArticle(2, "ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ Treasury action", "https://home.treasury.gov/news/press-releases/sb0583");
   treasury.source = "Treasury Press Release SB0536";
 
   assert.equal(alertSourceLabel(treasury), "U.S. Treasury / News");
@@ -249,7 +262,7 @@ test("OFAC pinning cannot displace newer Economics or Regions stories", () => {
 });
 
 test("binary or corrupted government responses never display or alert", () => {
-  const damaged = "IHDR����\u0001\u0002State Department ���� payload";
+  const damaged = "IHDRï¿½ï¿½ï¿½ï¿½\u0001\u0002State Department ï¿½ï¿½ï¿½ï¿½ payload";
   assert.equal(isLikelyCorruptedText(damaged), true);
   const article = testArticle(999, damaged, "https://www.state.gov/press-releases/example");
   const scored = scoreArticle(article);
@@ -260,4 +273,5 @@ test("binary or corrupted government responses never display or alert", () => {
   assert.ok(sourceFetcher.includes("Unsupported non-text content-type"));
   assert.ok(sourceFetcher.includes("Response decoded as binary/corrupted text"));
 });
+
 
