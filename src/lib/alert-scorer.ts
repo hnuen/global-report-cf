@@ -524,6 +524,7 @@ const GENERIC_LISTING_PATHS = new Set([
   "fincen.gov/news/news-releases",
   "fincen.gov/news/press-releases",
   "gov.uk/government/news",
+  "gov.uk/government/publications/the-uk-sanctions-list",
   "occ.gov/news-issuances/news-releases",
   "federalreserve.gov/supervisionreg/enforcement-actions-about.htm",
   "federalreserve.gov/supervisionreg/enforcement-actions.htm",
