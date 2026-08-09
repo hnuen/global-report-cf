@@ -321,10 +321,10 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean; group: 2|3
   { name: "U.S. Department of War â€” News Releases", url: "https://www.war.gov/DesktopModules/ArticleCS/RSS.ashx?ContentType=9&Site=945&max=10", official: true, group: 3, sections: ["sanctions","bis"] },
 
   // â”€â”€ Group 4 â€” FinCEN, China/HK, regional, media sources â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-  { name: "FinCEN Enforcement Actions",            url: "https://www.fincen.gov/news", official: true, group: 4, sections: ["penalties"] },
-  { name: "FinCEN News Releases",                  url: "https://www.fincen.gov/news/news-releases", official: true, group: 4, sections: ["penalties"] },
-  { name: "DHS â€” News",                            url: "https://www.dhs.gov/news/rss.xml", official: true, group: 4, sections: ["sanctions","bis","regions"] },
-  { name: "USA.gov â€” Government Updates",          url: "https://www.usa.gov/blog", official: true, group: 4, sections: ["economics","regions"] },
+  { name: "FinCEN Enforcement Actions",            url: "https://www.fincen.gov/news", official: true, group: 3, sections: ["penalties"] },
+  { name: "FinCEN News Releases",                  url: "https://www.fincen.gov/news/news-releases", official: true, group: 3, sections: ["penalties"] },
+  { name: "DHS â€” News",                            url: "https://www.dhs.gov/news/rss.xml", official: true, group: 3, sections: ["sanctions","bis","regions"] },
+  { name: "USA.gov â€” Government Updates",          url: "https://www.usa.gov/blog", official: true, group: 3, sections: ["economics","regions"] },
   { name: "Al Jazeera â€” Latest News",              url: "https://www.aljazeera.com/xml/rss/all.xml", group: 4, sections: ["sanctions","economics","regions"] },
   { name: "NPR â€” World",                           url: "https://feeds.npr.org/1004/rss.xml", group: 4, sections: ["sanctions","economics","regions"] },
   { name: "Google News â€” China Export Controls",   url: "https://news.google.com/rss/search?q=China+MOFCOM+export+controls+rare+earth+sanctions+2026&hl=en-US&gl=US&ceid=US:en", group: 4, sections: ["bis","sanctions"] },
@@ -467,7 +467,7 @@ export function checkSubrequestBudget(sources: Array<unknown>, label = "fetchOff
 // Each group runs in its own CF Worker invocation, well under the 50-subrequest limit.
 export async function fetchOfficialSources(
   section?: string,
-  opts?: { group?: 1|2|3|4; groupPart?: 1|2 }
+  opts?: { group?: 1|2|3|4; groupPart?: 1|2|3|4 }
 ): Promise<OfficialSource[]> {
   const now = new Date().toISOString();
   const treasurySources = getTreasurySources(); // 6 entries, group 1
@@ -484,7 +484,7 @@ export async function fetchOfficialSources(
   if (opts?.group !== undefined) {
     allSources = allSources.filter(s => (s as any).group === opts.group);
     if (opts.groupPart !== undefined) {
-      allSources = allSources.filter((_, index) => index % 2 === opts.groupPart! - 1);
+      allSources = allSources.filter((_, index) => index % 4 === opts.groupPart! - 1);
     }
     console.log(`[official] Group ${opts.group}: ${allSources.length} sources (section: ${section ?? "all"})`);
   }
