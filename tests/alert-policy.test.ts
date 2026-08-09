@@ -255,7 +255,8 @@ test("the frequent monitor refreshes direct sources without invoking Gemini", ()
   const refreshStep = workflow.indexOf("Refresh direct trusted sources");
   const monitorStep = workflow.indexOf("Run monitor");
   assert.ok(refreshStep >= 0 && refreshStep < monitorStep);
-  assert.ok(workflow.includes("for BATCH in 1 2 3:1 3:2 4:1 4:2"));
+  assert.ok(workflow.includes("for BATCH in ${BATCHES//,/ }"));
+  assert.ok(workflow.includes("BATCHES_INPUT"));
   assert.ok(workflow.includes("$APP_URL/api/refresh"));
   assert.equal(workflow.includes("GEMINI_API_KEY"), false);
 
