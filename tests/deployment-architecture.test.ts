@@ -11,7 +11,11 @@ test("Cloudflare cron is the sole monitor scheduler and exposes no public trigge
     read(".github/workflows/monitor.yml"),
   ]);
   assert.doesNotMatch(worker, /async fetch\s*\(/);
-  assert.match(workerConfig, /"17,47 \* \* \* \*"/);
+  assert.ok(workerConfig.includes('"2,17,32,47 * * * *"'));
+  assert.ok(worker.includes("America/New_York"));
+  assert.ok(worker.includes("priority-15m"));
+  assert.ok(worker.includes("daytime-30m"));
+  assert.ok(worker.includes("overnight-60m"));
   assert.doesNotMatch(githubMonitor, /^\s*schedule:/m);
 });
 
@@ -31,7 +35,8 @@ test("monitor delivery survives source-refresh outages and supports bounded catc
   assert.match(monitor, /manager\.notify\(verifiedCandidates/);
   assert.match(workflow, /get\("alertedArticles", \[\]\)\[:5\]/);
   assert.match(workflow, /HTTP" != "409".*HTTP" != "500"/);
-  assert.match(workflow, /3:1 3:2 4:1 4:2/);
+  assert.match(workflow, /BATCHES_INPUT/);
+  assert.ok(workflow.includes("^[1-4]:[1-4]$"));
   assert.match(monitor, /selectMonitorArticles\(archivedArticles/);
   assert.match(workflow, /Legacy workflow ntfy sender \(disabled\)/);
   assert.match(workflow, /if: \$\{\{ false \}\}/);
