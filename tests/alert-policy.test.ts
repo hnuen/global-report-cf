@@ -12,7 +12,7 @@ import { articleMatchesAlertTopic, alertSourceLabel, cleanAlertText } from "../s
 import { mergeMonitorArticles, selectMonitorArticles } from "../src/lib/monitor-articles.ts";
 import { articlesForSubscriber, sourceGroupForArticle, validateSourceGroups } from "../src/lib/alert-sources.ts";
 import { itemCheckpointKey, sourceCheckpointKey } from "../src/lib/source-item-checkpoints.ts";
-import { isLikelyCorruptedText } from "../src/lib/text-quality.ts";
+import { isLikelyCorruptedText, isLikelyHeadlineFragment, repairMojibake } from "../src/lib/text-quality.ts";
 
 function briefing(articles: Article[]): Briefing {
   return { lastUpdated: "test", articles, sidebar: {} as Briefing["sidebar"] };
@@ -320,4 +320,33 @@ test("monitor workflow refreshes only scheduler-selected small batches", () => {
   assert.match(workflow, /inputs\.batches/);
   assert.match(workflow, /BATCHES_INPUT/);
   assert.doesNotMatch(workflow, /for BATCH in 1 2 3:1/);
+});
+
+
+test("alert text repair handles the mojibake observed in monitor logs", () => {
+  assert.equal(repairMojibake("â€¢ Treasury action Ã¢â‚¬â€ update"), "• Treasury action — update");
+});
+
+test("navigation copy and scraped sentence fragments never alert", () => {
+  for (const headline of [
+    "Click here for more information on the persons designated today.",
+    "Formal enforcement actions are made public and are searchable in the database.",
+    "Golchin, Meng, and Solos are being designated pursuant to E.O.",
+  ]) {
+    assert.equal(isLikelyHeadlineFragment(headline), true);
+    const article = { ...testArticle(700, headline, "https://home.treasury.gov/news/press-releases/sb0700"), date: new Date().toISOString() };
+    assert.equal(scoreArticle(article, { threshold: 0, maxAgeHours: null }).shouldAlert, false);
+  }
+});
+
+test("OCC yearly and Federal Reserve enforcement landing pages are not direct alert links", async () => {
+  const { isGenericListingUrl } = await import("../src/lib/alert-scorer.ts");
+  assert.equal(isGenericListingUrl("https://www.occ.gov/news-events/newsroom/news-issuances-by-year/news-releases/2026-news-releases.html"), true);
+  assert.equal(isGenericListingUrl("https://www.federalreserve.gov/supervisionreg/enforcement-actions-about.htm"), true);
+});
+
+test("Telegram reports whether subscribers were excluded by policy or cooldown", () => {
+  const telegram = readFileSync(new URL("../src/notifiers/telegram.ts", import.meta.url), "utf8");
+  assert.ok(telegram.includes("policyMatchedRecipients"));
+  assert.ok(telegram.includes("blocked by recipient cooldown"));
 });
