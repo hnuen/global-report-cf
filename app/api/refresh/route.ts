@@ -54,11 +54,11 @@ export async function POST(request: NextRequest) {
     // Accept optional group (1-4) to fetch only that group of sources.
     // Each group has 11-26 RSS sources â€” well under CF's 50-subrequest limit.
     // Group-mode is always skipLLM=true (LLM step runs in GitHub Actions instead).
-    const body = await request.json().catch(() => ({})) as { group?: 1|2|3|4; groupPart?: 1|2 };
+    const body = await request.json().catch(() => ({})) as { group?: 1|2|3|4; groupPart?: 1|2|3|4 };
     const group = ([1,2,3,4] as const).find(g => g === body.group);
-    const groupPart = ([1,2] as const).find(part => part === body.groupPart);
+    const groupPart = ([1,2,3,4] as const).find(part => part === body.groupPart);
     if (body.groupPart !== undefined && (group === undefined || groupPart === undefined)) {
-      return NextResponse.json({ error: "groupPart requires a valid group and must be 1 or 2" }, { status: 400 });
+      return NextResponse.json({ error: "groupPart requires a valid group and must be from 1 to 4" }, { status: 400 });
     }
     const { briefing, usedProvider, savedTo, storageErrors } = await refreshBriefing(undefined, {
       skipLLM: group !== undefined ? true : undefined,
