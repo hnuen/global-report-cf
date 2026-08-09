@@ -5,13 +5,30 @@ import { fetchOfficialSources, formatSourcesForPrompt } from "./official-sources
 import { buildBriefingFromSources } from "./official-briefing";
 import { buildAnalyzedBriefing } from "./local-analyzer";
 import { getHistoricalForSection, getRecentBySource } from "./historical-articles";
-import type { Briefing, Section } from "./types";
+import type { Article, Briefing, Section } from "./types";
 import { enrichArticlesWithBriefs } from "./brief-generator";
 import { loadArticleLibrary, saveArticlesToLibrary } from "./article-library";
 import { fetchOfacCache, recentActionsToArticles, civilPenaltiesToArticles, programsToArticles, ofsiNoticesToArticles, europaNewsToArticles, unNoticesToArticles, bbcNewsToArticles, ajNewsToArticles, occNewsToArticles, economicsNewsToArticles, bisNewsToArticles, regionsNewsToArticles } from "./ofac-github-cache";
 import { mergeDirectWithAiSupplement } from "./source-merge";
 import { commitSourceItemCheckpoints } from "./source-item-checkpoints";
 import { hasUsableArticleText } from "./text-quality";
+
+const HOT_ARTICLES_PER_SECTION = 60;
+
+function capHotBriefingArticles(articles: Article[]): Article[] {
+  const bySection = new Map<string, Article[]>();
+  for (const article of articles) {
+    const section = article.section ?? "sanctions";
+    const list = bySection.get(section) ?? [];
+    list.push(article);
+    bySection.set(section, list);
+  }
+  return [...bySection.values()].flatMap(list =>
+    list
+      .sort((a, b) => (b.date || "").localeCompare(a.date || ""))
+      .slice(0, HOT_ARTICLES_PER_SECTION)
+  );
+}
 
 // No module-level singletons Ã¢â‚¬â€ always read env vars fresh on each invocation
 export async function loadBriefing(): Promise<Briefing | null> {
@@ -411,6 +428,12 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
           : {}),
       };
     }
+  }
+
+  const beforeHotCap = briefing.articles.length;
+  briefing.articles = capHotBriefingArticles(briefing.articles);
+  if (briefing.articles.length < beforeHotCap) {
+    console.log(`[orchestrator] Capped hot briefing from ${beforeHotCap} to ${briefing.articles.length}; full history remains in the article library`);
   }
 
   // Ã¢â€â‚¬Ã¢â€â‚¬ Save the core briefing FIRST Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
