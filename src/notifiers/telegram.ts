@@ -55,6 +55,8 @@ export class TelegramNotifier implements Notifier {
     let sent = 0;
     const errors: string[] = [];
     const deliveries: { recipient: string; alertKeys: string[] }[] = [];
+    let policyMatchedRecipients = 0;
+    let cooldownBlockedRecipients = 0;
 
     if (recipients.length === 0) {
       return {
@@ -66,10 +68,15 @@ export class TelegramNotifier implements Notifier {
     }
 
     for (const recipient of recipients) {
-      const mine = articlesForSubscriber(articles, recipient)
+      const policyMatches = articlesForSubscriber(articles, recipient);
+      if (policyMatches.length > 0) policyMatchedRecipients++;
+      const mine = policyMatches
         .filter(article => options.shouldSend?.(this.id, recipient.to, buildAlertKey(article.article)) ?? true)
         .slice(0, options.maxAlertsPerRun);
-      if (mine.length === 0) continue; // nothing in this recipient's categories
+      if (mine.length === 0) {
+        if (policyMatches.length > 0) cooldownBlockedRecipients++;
+        continue;
+      }
       const chatId = recipient.to;
       const messages: string[] = digest
         ? [formatDigest(mine, appUrl).markdown]
@@ -112,7 +119,9 @@ export class TelegramNotifier implements Notifier {
       success: sent > 0,
       recipients: sent,
       deliveries,
-      error: sent === 0 ? (errors[0] ?? "No messages delivered") : undefined,
+      error: sent === 0
+        ? (errors[0] ?? `No messages delivered — ${recipients.length} recipient(s); ${policyMatchedRecipients} matched source/section/score; ${cooldownBlockedRecipients} blocked by recipient cooldown`)
+        : undefined,
     };
   }
 }
