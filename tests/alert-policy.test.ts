@@ -262,7 +262,7 @@ test("the frequent monitor refreshes direct sources without invoking Gemini", ()
 
   assert.doesNotMatch(workflow, /^\s*schedule:/m);
   const cronConfig = readFileSync(new URL("../cron-worker/wrangler.toml", import.meta.url), "utf8");
-  assert.match(cronConfig, /"17,47 \* \* \* \*"/);
+  assert.ok(cronConfig.includes('"2,17,32,47 * * * *"'));
 });
 
 test("the Gemini refresh avoids duplicate Cloudflare source work and bounds final saves", () => {
