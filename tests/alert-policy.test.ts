@@ -306,3 +306,17 @@ test("binary or corrupted government responses never display or alert", () => {
   assert.ok(sourceFetcher.includes("Response decoded as binary/corrupted text"));
 });
 
+
+test("official source partitions support four small CPU-safe parts", () => {
+  const route = readFileSync(new URL("../app/api/refresh/route.ts", import.meta.url), "utf8");
+  const fetcher = readFileSync(new URL("../src/lib/official-sources.ts", import.meta.url), "utf8");
+  assert.match(route, /\[1,2,3,4\] as const/);
+  assert.match(fetcher, /index % 4 === opts\.groupPart! - 1/);
+});
+
+test("monitor workflow refreshes only scheduler-selected small batches", () => {
+  const workflow = readFileSync(new URL("../.github/workflows/monitor.yml", import.meta.url), "utf8");
+  assert.match(workflow, /inputs\.batches/);
+  assert.match(workflow, /BATCHES_INPUT/);
+  assert.doesNotMatch(workflow, /for BATCH in 1 2 3:1/);
+});
