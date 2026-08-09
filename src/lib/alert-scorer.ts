@@ -33,7 +33,7 @@
  *                           multi-day backlog of alerts at once instead of
  *                           same-day news only.
  */
-import { hasUsableArticleText } from "./text-quality.ts";
+import { hasUsableArticleText, isLikelyHeadlineFragment } from "./text-quality.ts";
 
 import type { Article } from "./types";
 
@@ -245,6 +245,8 @@ export function scoreArticle(article: Article, settings?: AlertScoringSettings):
   let score = 0;
   const hasUsableText = hasUsableArticleText(article);
   if (!hasUsableText) reasons.push("corrupted/binary article text â€” never alerts");
+  const hasArticleHeadline = !isLikelyHeadlineFragment(article.headline);
+  if (!hasArticleHeadline) reasons.push("navigation copy or scraped sentence fragment — never alerts");
 
   // 1. Impact
   const impactScore = IMPACT_SCORES[article.impact] ?? 0;
@@ -449,7 +451,7 @@ export function scoreArticle(article: Article, settings?: AlertScoringSettings):
     );
   }
 
-  const shouldAlert = hasUsableText && sectionOk && score >= threshold && recentEnough && !isNoNewsFiller && !isRegulatoryNonEvent && !isAiGenerated && hasTrustedSource && hasDirectLink;
+  const shouldAlert = hasUsableText && hasArticleHeadline && sectionOk && score >= threshold && recentEnough && !isNoNewsFiller && !isRegulatoryNonEvent && !isAiGenerated && hasTrustedSource && hasDirectLink;
 
   return { article, score, reasons, shouldAlert };
 }
@@ -523,6 +525,8 @@ const GENERIC_LISTING_PATHS = new Set([
   "fincen.gov/news/press-releases",
   "gov.uk/government/news",
   "occ.gov/news-issuances/news-releases",
+  "federalreserve.gov/supervisionreg/enforcement-actions-about.htm",
+  "federalreserve.gov/supervisionreg/enforcement-actions.htm",
 ]);
 /** True if the URL is a bare listing/index page rather than a specific article. */
 export function isGenericListingUrl(url?: string): boolean {
@@ -530,7 +534,8 @@ export function isGenericListingUrl(url?: string): boolean {
   try {
     const u = new URL(url);
     const key = u.hostname.replace(/^www\./, "").toLowerCase() + u.pathname.replace(/\/+$/, "").toLowerCase();
-    return GENERIC_LISTING_PATHS.has(key);
+    return GENERIC_LISTING_PATHS.has(key) ||
+      /occ\.gov\/news-events\/newsroom\/news-issuances-by-year\/news-releases\/\d{4}-news-releases\.html$/.test(key);
   } catch { return false; }
 }
 
