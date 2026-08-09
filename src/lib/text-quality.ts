@@ -26,7 +26,7 @@ export function isLikelyCorruptedText(value: string): boolean {
 /** Block navigation copy, database descriptions, and scraped sentence fragments. */
 export function isLikelyHeadlineFragment(value?: string): boolean {
   const headline = repairMojibake(value ?? "").replace(/^\s*[•*\-–—]+\s*/, "").trim();
-  if (headline.length < 20 || headline.length > 240) return true;
+  if (headline.length < 12 || headline.length > 240) return true;
   return /^(?:click here|for more information|learn more|read more|see source link|published by|amounts? mentioned|formal enforcement actions? (?:are|is)|this page (?:contains|provides)|the following (?:is|are)|[A-Z][A-Za-z'’-]+,\s+[A-Z][A-Za-z'’-]+,\s+and\s+[A-Z][A-Za-z'’-]+\s+are being designated\b)/i.test(headline);
 }
 
