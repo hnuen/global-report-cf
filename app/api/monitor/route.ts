@@ -231,7 +231,7 @@ async function runMonitor(topic?: string, force = false, backfillHours?: number)
       headline:  cleanAlertText(s.article.headline),
       body:      s.article.body?.slice(0, 2).map(cleanAlertText),
       alertKey:  buildAlertKey(s.article),
-      reasons:   s.reasons,
+      reasons:   s.reasons.map(cleanAlertText),
     })),
     topScored: scored.slice(0, 5).map(s => ({
       score:       s.score,
@@ -239,7 +239,7 @@ async function runMonitor(topic?: string, force = false, backfillHours?: number)
       section:     s.article.section,
       sourceUrl:   s.article.sourceUrl?.slice(0, 60),
       headline:    cleanAlertText(s.article.headline ?? "").slice(0, 80),
-      reasons:     s.reasons,
+      reasons:   s.reasons.map(cleanAlertText),
     })),
   };
 }
