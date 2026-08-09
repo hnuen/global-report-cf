@@ -350,3 +350,20 @@ test("Telegram reports whether subscribers were excluded by policy or cooldown",
   assert.ok(telegram.includes("policyMatchedRecipients"));
   assert.ok(telegram.includes("blocked by recipient cooldown"));
 });
+
+
+test("only Telegram and ntfy are enabled by default", () => {
+  const manager = readFileSync(new URL("../src/notifiers/manager.ts", import.meta.url), "utf8");
+  assert.ok(manager.includes('NOTIFIER_ENABLED ?? "telegram,ntfy"'));
+  assert.ok(manager.includes("enabled.includes(n.id) && n.isConfigured()"));
+});
+
+test("the UK Sanctions List landing page cannot alert as a direct article", async () => {
+  const { isGenericListingUrl } = await import("../src/lib/alert-scorer.ts");
+  assert.equal(isGenericListingUrl("https://www.gov.uk/government/publications/the-uk-sanctions-list"), true);
+});
+
+test("monitor diagnostics normalize scoring explanation text", () => {
+  const monitor = readFileSync(new URL("../app/api/monitor/route.ts", import.meta.url), "utf8");
+  assert.equal((monitor.match(/reasons:\s+s\.reasons\.map\(cleanAlertText\)/g) ?? []).length, 2);
+});
