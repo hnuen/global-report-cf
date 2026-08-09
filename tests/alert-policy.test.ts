@@ -394,3 +394,21 @@ test("patched transitive build dependencies are pinned", () => {
   assert.equal(pkg.overrides.postcss, "8.5.23");
   assert.equal(pkg.overrides.sharp, "0.35.3");
 });
+
+
+test("monitor and refresh use bounded hot article working sets", () => {
+  const monitor = readFileSync(new URL("../app/api/monitor/route.ts", import.meta.url), "utf8");
+  const orchestrator = readFileSync(new URL("../src/lib/orchestrator.ts", import.meta.url), "utf8");
+  const library = readFileSync(new URL("../src/lib/article-library.ts", import.meta.url), "utf8");
+  assert.ok(monitor.includes("limitPerSection: 100"));
+  assert.ok(orchestrator.includes("HOT_ARTICLES_PER_SECTION = 60"));
+  assert.ok(orchestrator.includes("capHotBriefingArticles(briefing.articles)"));
+  assert.ok(library.includes("opts?.limitPerSection"));
+});
+
+test("monitor workflow bounds transient retries", () => {
+  const workflow = readFileSync(new URL("../.github/workflows/monitor.yml", import.meta.url), "utf8");
+  assert.ok(workflow.includes("for ATTEMPT in 1 2; do"));
+  assert.ok(workflow.includes("sleep 10"));
+  assert.doesNotMatch(workflow, /sleep 25/);
+});

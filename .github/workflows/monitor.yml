@@ -98,7 +98,7 @@ jobs:
           BODY=$(TOPIC="$TOPIC" BACKFILL_HOURS="$BACKFILL_HOURS" python3 -c 'import json, os; body={}; topic=os.environ.get("TOPIC", "").strip(); hours=os.environ.get("BACKFILL_HOURS", "").strip(); body.update({"topic": topic} if topic else {}); body.update({"backfillHours": int(hours)} if hours else {}); print(json.dumps(body))')
 
           HTTP="000"
-          for ATTEMPT in 1 2 3; do
+          for ATTEMPT in 1 2; do
             HTTP=$(curl --silent --show-error --location --retry 2 --retry-all-errors --retry-delay 5 \
               --output /tmp/resp.json \
               --write-out "%{http_code}" \
@@ -110,8 +110,8 @@ jobs:
               --max-time 120)
             if [ "$HTTP" = "200" ]; then break; fi
             if [ "$HTTP" != "409" ] && [ "$HTTP" != "500" ] && [ "$HTTP" != "502" ] && [ "$HTTP" != "503" ] && [ "$HTTP" != "504" ]; then break; fi
-            echo "Monitor temporarily unavailable (HTTP $HTTP); retrying in 25 seconds ($ATTEMPT/3)"
-            sleep 25
+            echo "Monitor temporarily unavailable (HTTP $HTTP); retrying in 10 seconds ($ATTEMPT/2)"
+            sleep 10
           done
 
           echo "Monitor HTTP: $HTTP"

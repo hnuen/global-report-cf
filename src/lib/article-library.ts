@@ -154,7 +154,7 @@ function headlineKey(headline: string): string {
   return headline.slice(0, 80).toLowerCase().replace(/\s+/g, " ").trim();
 }
 
-export async function loadArticleLibrary(): Promise<Article[]> {
+export async function loadArticleLibrary(opts?: { limitPerSection?: number }): Promise<Article[]> {
   // Batch-load all section keys in ONE pipeline request (saves 5 subrequests vs
   // 6 individual GETs — critical for CF Workers' 50-subrequest-per-invocation limit).
   const keys = SECTIONS.map(sectionKey);
@@ -163,7 +163,8 @@ export async function loadArticleLibrary(): Promise<Article[]> {
     try {
       if (!raw) return [] as Article[];
       const parsed = JSON.parse(raw);
-      return Array.isArray(parsed) ? (parsed as Article[]) : [];
+      const articles = Array.isArray(parsed) ? (parsed as Article[]) : [];
+      return opts?.limitPerSection ? articles.slice(0, opts.limitPerSection) : articles;
     } catch { return [] as Article[]; }
   });
   const all = results.flat();
