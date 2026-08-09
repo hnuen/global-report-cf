@@ -103,8 +103,14 @@ export class NotifierManager {
     ];
   }
 
-  /** Returns only the notifiers that are actually configured */
+  private enabledIds(): string[] {
+    return (process.env.NOTIFIER_ENABLED ?? "telegram,ntfy")
+      .split(",").map(id => id.trim()).filter(Boolean);
+  }
+
+  /** Returns only explicitly enabled notifiers that are configured. */
   private configured(): Notifier[] {
+    const enabled = this.enabledIds();
     const orderEnv = process.env.NOTIFIER_ORDER ?? "";
     const order    = orderEnv
       ? orderEnv.split(",").map(s => s.trim()).filter(Boolean)
@@ -115,7 +121,7 @@ export class NotifierManager {
       ...this.all.filter(n => !order.includes(n.id)),
     ];
 
-    return sorted.filter(n => n.isConfigured());
+    return sorted.filter(n => enabled.includes(n.id) && n.isConfigured());
   }
 
   /**
@@ -286,8 +292,9 @@ export class NotifierManager {
 
   /** List which channels are configured (for /api/health) */
   status(): { id: string; name: string; configured: boolean }[] {
+    const enabled = this.enabledIds();
     return this.all.map(n => ({
-      id: n.id, name: n.name, configured: n.isConfigured(),
+      id: n.id, name: n.name, configured: enabled.includes(n.id) && n.isConfigured(),
     }));
   }
 }
