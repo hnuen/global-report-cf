@@ -1,4 +1,4 @@
-import { repairMojibake } from "./text-quality";
+import { repairMojibake } from "./text-quality.ts";
 import type { Article } from "./types";
 
 const TOPIC_ALIASES: Record<string, string[]> = {
