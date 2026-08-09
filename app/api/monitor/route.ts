@@ -146,7 +146,7 @@ async function runMonitor(topic?: string, force = false, backfillHours?: number)
   // 2. Score the same article union shown by /api/news. Previously the web
   // page merged the persistent library while monitoring only inspected the
   // briefing, so current DHS/UFLPA articles could be visible but never alert.
-  const libraryArticles = await loadArticleLibrary().catch(() => []);
+  const libraryArticles = await loadArticleLibrary({ limitPerSection: 100 }).catch(() => []);
   const archivedArticles = mergeMonitorArticles(briefing.articles, libraryArticles);
   const effectiveMaxAgeHours = backfillHours ?? alertSettings.maxAgeHours;
   const monitorArticles = selectMonitorArticles(archivedArticles, effectiveMaxAgeHours);
