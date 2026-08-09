@@ -238,7 +238,7 @@ async function runMonitor(topic?: string, force = false, backfillHours?: number)
       shouldAlert: s.shouldAlert,
       section:     s.article.section,
       sourceUrl:   s.article.sourceUrl?.slice(0, 60),
-      headline:    s.article.headline?.slice(0, 80),
+      headline:    cleanAlertText(s.article.headline ?? "").slice(0, 80),
       reasons:     s.reasons,
     })),
   };
