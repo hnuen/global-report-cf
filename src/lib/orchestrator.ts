@@ -19,7 +19,7 @@ export async function loadBriefing(): Promise<Briefing | null> {
   return storage.load();
 }
 
-export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean; section?: string; manualRefresh?: boolean; group?: 1|2|3|4; groupPart?: 1|2 }): Promise<{
+export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean; section?: string; manualRefresh?: boolean; group?: 1|2|3|4; groupPart?: 1|2|3|4 }): Promise<{
   briefing: Briefing;
   usedProvider: string;
   savedTo: string[];

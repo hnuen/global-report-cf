@@ -255,13 +255,14 @@ test("the frequent monitor refreshes direct sources without invoking Gemini", ()
   const refreshStep = workflow.indexOf("Refresh direct trusted sources");
   const monitorStep = workflow.indexOf("Run monitor");
   assert.ok(refreshStep >= 0 && refreshStep < monitorStep);
-  assert.ok(workflow.includes("for BATCH in 1 2 3:1 3:2 4:1 4:2"));
+  assert.ok(workflow.includes("for BATCH in ${BATCHES//,/ }"));
+  assert.ok(workflow.includes("BATCHES_INPUT"));
   assert.ok(workflow.includes("$APP_URL/api/refresh"));
   assert.equal(workflow.includes("GEMINI_API_KEY"), false);
 
   assert.doesNotMatch(workflow, /^\s*schedule:/m);
   const cronConfig = readFileSync(new URL("../cron-worker/wrangler.toml", import.meta.url), "utf8");
-  assert.match(cronConfig, /"17,47 \* \* \* \*"/);
+  assert.ok(cronConfig.includes('"2,17,32,47 * * * *"'));
 });
 
 test("the Gemini refresh avoids duplicate Cloudflare source work and bounds final saves", () => {
@@ -306,3 +307,17 @@ test("binary or corrupted government responses never display or alert", () => {
   assert.ok(sourceFetcher.includes("Response decoded as binary/corrupted text"));
 });
 
+
+test("official source partitions support four small CPU-safe parts", () => {
+  const route = readFileSync(new URL("../app/api/refresh/route.ts", import.meta.url), "utf8");
+  const fetcher = readFileSync(new URL("../src/lib/official-sources.ts", import.meta.url), "utf8");
+  assert.match(route, /\[1,2,3,4\] as const/);
+  assert.match(fetcher, /index % 4 === opts\.groupPart! - 1/);
+});
+
+test("monitor workflow refreshes only scheduler-selected small batches", () => {
+  const workflow = readFileSync(new URL("../.github/workflows/monitor.yml", import.meta.url), "utf8");
+  assert.match(workflow, /inputs\.batches/);
+  assert.match(workflow, /BATCHES_INPUT/);
+  assert.doesNotMatch(workflow, /for BATCH in 1 2 3:1/);
+});

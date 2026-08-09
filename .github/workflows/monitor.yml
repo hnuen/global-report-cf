@@ -15,6 +15,11 @@ on:
         description: Optional focus topic for this monitor run
         required: false
         type: string
+      batches:
+        description: Comma-separated small source batches (for example 1:1,3:1)
+        required: false
+        type: string
+        default: "1:1,2:1"
       backfill_hours:
         description: Optional catch-up window (1-168 hours); delivered items remain deduplicated
         required: false
@@ -38,6 +43,7 @@ jobs:
           APP_URL: ${{ secrets.APP_URL }}
           CRON_SECRET: ${{ secrets.CRON_SECRET }}
           VERCEL_BYPASS_TOKEN: ${{ secrets.VERCEL_BYPASS_TOKEN }}
+          BATCHES_INPUT: ${{ inputs.batches }}
         run: |
           set -euo pipefail
           APP_URL="${APP_URL%/}"
@@ -45,12 +51,17 @@ jobs:
           # Separate Worker invocations keep each group below the free-plan
           # external-subrequest limit. This path never calls Gemini.
           FAILED=0
-          for BATCH in 1 2 3:1 3:2 4:1 4:2; do
+          TOTAL=0
+          BATCHES="${BATCHES_INPUT:-1:1,2:1}"
+          for BATCH in ${BATCHES//,/ }; do
+            if [[ ! "$BATCH" =~ ^[1-4]:[1-4]$ ]]; then
+              echo "Invalid source batch: $BATCH"
+              exit 1
+            fi
+            TOTAL=$((TOTAL + 1))
             GROUP="${BATCH%%:*}"
-            PART=""
-            if [[ "$BATCH" == *:* ]]; then PART="${BATCH##*:}"; fi
-            BODY="{\"group\":$GROUP}"
-            if [ -n "$PART" ]; then BODY="{\"group\":$GROUP,\"groupPart\":$PART}"; fi
+            PART="${BATCH##*:}"
+            BODY="{\"group\":$GROUP,\"groupPart\":$PART}"
             HTTP=$(curl --silent --show-error --location \
               --output "/tmp/direct_group_${BATCH//:/_}.json" \
               --write-out "%{http_code}" \
@@ -68,7 +79,7 @@ jobs:
           # Never suppress alert delivery because publishers are temporarily
           # unavailable. The monitor step below falls back to the last healthy
           # briefing/library already stored in Redis.
-          if [ "$FAILED" = "6" ]; then
+          if [ "$FAILED" = "$TOTAL" ]; then
             echo "All direct source groups failed; continuing with last healthy snapshot"
             exit 1
           fi
