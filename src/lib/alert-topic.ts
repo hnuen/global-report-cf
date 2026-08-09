@@ -1,3 +1,4 @@
+import { repairMojibake } from "./text-quality.ts";
 import type { Article } from "./types";
 
 const TOPIC_ALIASES: Record<string, string[]> = {
@@ -25,7 +26,7 @@ export function articleMatchesAlertTopic(article: Article, topic?: string): bool
 }
 
 export function cleanAlertText(value: string): string {
-  return value
+  return repairMojibake(value)
     .replace(/Federal Reserve\s+[^\x00-\x7F]\S*\s+Press Releases/g, "Federal Reserve — Press Releases")
     .replaceAll("Ã¢â‚¬â€", "—")
     .replaceAll("Ã¢â‚¬Â¢", "•")
