@@ -367,3 +367,30 @@ test("monitor diagnostics normalize scoring explanation text", () => {
   const monitor = readFileSync(new URL("../app/api/monitor/route.ts", import.meta.url), "utf8");
   assert.equal((monitor.match(/reasons:\s+s\.reasons\.map\(cleanAlertText\)/g) ?? []).length, 2);
 });
+
+
+test("valid quoted scoring reasons retain their opening quote", () => {
+  assert.equal(cleanAlertText('"enforcement action" (+10)'), '"enforcement action" (+10)');
+});
+
+test("historical cached article fields are repaired at display time", () => {
+  const app = readFileSync(new URL("../app/AppContent.tsx", import.meta.url), "utf8");
+  assert.ok(app.includes("normalizeArticleForDisplay"));
+  assert.ok(app.includes("map(normalizeArticleForDisplay)"));
+  assert.ok(app.includes("repairMojibake(article.headline)"));
+});
+
+test("cooldown-only Telegram and ntfy checks are reported as skipped", () => {
+  const telegram = readFileSync(new URL("../src/notifiers/telegram.ts", import.meta.url), "utf8");
+  const ntfy = readFileSync(new URL("../src/notifiers/ntfy.ts", import.meta.url), "utf8");
+  const monitor = readFileSync(new URL("../app/api/monitor/route.ts", import.meta.url), "utf8");
+  assert.ok(telegram.includes("No eligible Telegram alerts"));
+  assert.ok(ntfy.includes("No eligible ntfy alerts"));
+  assert.ok(monitor.includes('"skipped"'));
+});
+
+test("patched transitive build dependencies are pinned", () => {
+  const pkg = JSON.parse(readFileSync(new URL("../package.json", import.meta.url), "utf8"));
+  assert.equal(pkg.overrides.postcss, "8.5.23");
+  assert.equal(pkg.overrides.sharp, "0.35.3");
+});

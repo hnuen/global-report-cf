@@ -2,7 +2,7 @@
 // v6 cache bust CF
 import { useState, useEffect, useCallback, useRef } from "react";
 import { SANCTIONS_PROGRAMS } from "@/src/lib/sanctions-programs-library";
-import { hasUsableArticleText } from "@/src/lib/text-quality";
+import { hasUsableArticleText, repairMojibake } from "@/src/lib/text-quality";
 
 
 export const css = `
@@ -529,9 +529,18 @@ const articleMatchesRegion = (a: Article, reg: string): boolean => {
   return keywords.some(kw => ar.includes(kw) || hl.includes(kw));
 };
 
+const normalizeArticleForDisplay = (article: Article): Article => ({
+  ...article,
+  headline: repairMojibake(article.headline),
+  body: (article.body ?? []).map(repairMojibake),
+  category: repairMojibake(article.category),
+  region: repairMojibake(article.region),
+  source: repairMojibake(article.source),
+});
+
 const filterArticles = (articles:Article[], sec:string, reg:string) => {
   if (!articles || !Array.isArray(articles)) return [];
-  let pool = articles.filter(hasUsableArticleText);
+  let pool = articles.filter(hasUsableArticleText).map(normalizeArticleForDisplay);
   // Filter by section
   if (sec && sec !== "all") pool = pool.filter(a => a.section === sec);
   // Filter by region using explicit keyword matching
@@ -552,7 +561,7 @@ const filterArticles = (articles:Article[], sec:string, reg:string) => {
 };
 
 const filterArticlesBySearch = (articles:Article[], sec:string, q:string, dateFrom:string, dateTo:string) =>
-  [...articles].sort((a,b) => parseDate(b.date) - parseDate(a.date)).filter(a => {
+  [...articles].filter(hasUsableArticleText).map(normalizeArticleForDisplay).sort((a,b) => parseDate(b.date) - parseDate(a.date)).filter(a => {
     if (sec !== "all" && a.section !== sec) return false;
 
     // Date range filter

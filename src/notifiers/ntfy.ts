@@ -99,11 +99,16 @@ export class NtfyNotifier implements Notifier {
     let sent = 0;
     const errors: string[] = [];
     const deliveries: { recipient: string; alertKeys: string[] }[] = [];
+    let policyMatchedRecipients = 0;
+    let cooldownBlockedRecipients = 0;
 
     for (const recipient of recipients) {
-      const mine = articlesForSubscriber(articles, recipient)
+      const policyMatches = articlesForSubscriber(articles, recipient);
+      if (policyMatches.length > 0) policyMatchedRecipients++;
+      const mine = policyMatches
         .filter(article => options.shouldSend?.(this.id, recipient.to, buildAlertKey(article.article)) ?? true)
         .slice(0, options.maxAlertsPerRun);
+      if (mine.length === 0 && policyMatches.length > 0) cooldownBlockedRecipients++;
       const deliveredKeys: string[] = [];
       for (const sa of mine) {
       const url = `${server}/${recipient.to}`;
@@ -147,7 +152,7 @@ export class NtfyNotifier implements Notifier {
       success:    sent > 0,
       recipients: sent,
       deliveries,
-      error:      sent === 0 ? (errors[0] ?? "No messages delivered to ntfy") : undefined,
+      error:      sent === 0 ? (errors[0] ?? `No eligible ntfy alerts — ${recipients.length} recipient(s); ${policyMatchedRecipients} matched source/section/score; ${cooldownBlockedRecipients} blocked by recipient cooldown`) : undefined,
     };
   }
 }

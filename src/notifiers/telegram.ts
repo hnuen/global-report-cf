@@ -120,7 +120,7 @@ export class TelegramNotifier implements Notifier {
       recipients: sent,
       deliveries,
       error: sent === 0
-        ? (errors[0] ?? `No messages delivered — ${recipients.length} recipient(s); ${policyMatchedRecipients} matched source/section/score; ${cooldownBlockedRecipients} blocked by recipient cooldown`)
+        ? (errors[0] ?? `No eligible Telegram alerts — ${recipients.length} recipient(s); ${policyMatchedRecipients} matched source/section/score; ${cooldownBlockedRecipients} blocked by recipient cooldown`)
         : undefined,
     };
   }

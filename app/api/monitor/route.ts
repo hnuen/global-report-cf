@@ -214,7 +214,10 @@ async function runMonitor(topic?: string, force = false, backfillHours?: number)
     skipped:      notifyResult.skipped,
     channels:     notifyResult.channels,
     channelResults: notifyResult.results.map(r => ({
-      channel: r.channel, success: r.success, error: r.error,
+      channel: r.channel,
+      success: r.success,
+      status: r.success ? "delivered" : r.error?.startsWith("No eligible ") ? "skipped" : "failed",
+      error: r.error,
     })),
     usedProvider,
     forceSend,
