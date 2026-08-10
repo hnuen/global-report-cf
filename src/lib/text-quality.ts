@@ -33,3 +33,42 @@ export function isLikelyHeadlineFragment(value?: string): boolean {
 export function hasUsableArticleText(article: { headline?: string; body?: string[] }): boolean {
   return !isLikelyCorruptedText(`${article.headline ?? ""} ${(article.body ?? []).join(" ")}`);
 }
+
+const GENERIC_NEWS_PATHS = new Set([
+  "home.treasury.gov/news",
+  "home.treasury.gov/news/press-releases",
+  "ofac.treasury.gov/recent-actions",
+  "fincen.gov/news",
+  "fincen.gov/news/news-releases",
+  "fincen.gov/news/press-releases",
+  "gov.uk/government/news",
+  "gov.uk/government/publications/the-uk-sanctions-list",
+  "federalreserve.gov/supervisionreg/enforcement-actions-about.htm",
+  "federalreserve.gov/supervisionreg/enforcement-actions.htm",
+]);
+
+/** Require a specific article, notice, action, or document URL for the news feed. */
+export function hasDirectArticleUrl(url?: string): boolean {
+  if (!url || url === "#") return false;
+  try {
+    const parsed = new URL(url);
+    if (parsed.protocol !== "https:" && parsed.protocol !== "http:") return false;
+    const host = parsed.hostname.replace(/^www\./, "").toLowerCase();
+    const path = parsed.pathname.replace(/\/+$/, "").toLowerCase();
+    const key = host + path;
+    if (GENERIC_NEWS_PATHS.has(key)) return false;
+    if (/occ\.gov\/news-events\/newsroom\/news-issuances-by-year\/news-releases\/\d{4}-news-releases\.html$/.test(key)) return false;
+    if (host === "news.google.com") return /^\/(?:rss\/)?articles\//.test(path);
+    if (/\/(?:rss|feed|feeds)(?:\/|$)/.test(path) || path.endsWith(".xml")) return false;
+    if (/\/(?:search)(?:\/|$)/.test(path)) return false;
+    return path.length > 1;
+  } catch {
+    return false;
+  }
+}
+
+export function isDisplayableNewsArticle(article: { headline?: string; body?: string[]; sourceUrl?: string }): boolean {
+  return hasUsableArticleText(article) &&
+    !isLikelyHeadlineFragment(article.headline) &&
+    hasDirectArticleUrl(article.sourceUrl);
+}

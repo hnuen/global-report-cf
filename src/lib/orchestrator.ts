@@ -11,7 +11,7 @@ import { loadArticleLibrary, saveArticlesToLibrary } from "./article-library";
 import { fetchOfacCache, recentActionsToArticles, civilPenaltiesToArticles, programsToArticles, ofsiNoticesToArticles, europaNewsToArticles, unNoticesToArticles, bbcNewsToArticles, ajNewsToArticles, occNewsToArticles, economicsNewsToArticles, bisNewsToArticles, regionsNewsToArticles } from "./ofac-github-cache";
 import { mergeDirectWithAiSupplement } from "./source-merge";
 import { commitSourceItemCheckpoints } from "./source-item-checkpoints";
-import { hasUsableArticleText } from "./text-quality";
+import { hasUsableArticleText, isDisplayableNewsArticle } from "./text-quality";
 
 const HOT_ARTICLES_PER_SECTION = 60;
 
@@ -239,307 +239,657 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
   // because display names produced upstream are often compound, e.g.
   // "U.S. Treasury / OFAC", "OFAC / Iran", "EU Council ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Sanctions RSS".
   const officialKeywords = [
-    "OFAC", "FinCEN", "BIS", "OCC", "Federal Reserve", "Fed Reserve",
-    "UK OFSI", "OFSI", "EU Council", "EU Commission", "European Commission",
-    "U.S. Treasury", "UK HM Treasury", "Wassenaar", "UK Strategic Export",
-    "U.S. State Department", "State Dept",
-  ];
-  const tier3Keywords = ["Al Jazeera", "UN News", "India MEA"];
-
-  const isOfficialSource = (source: string) =>
-    officialKeywords.some(k => source.includes(k));
-  const isTier3Source = (source: string) =>
-    tier3Keywords.some(k => source.includes(k));
-
-  // Priority: 2 = Tier 1 (official gov), 1 = Tier 2 (Google News/general), 0 = Tier 3
-  const getPriority = (source: string) => {
-    if (isOfficialSource(source)) return 2;
-    if (isTier3Source(source)) return 0;
-    return 1;
-  };
-
-  // Tier 2 spec: Google News / general articles only count if <= 30 days old.
-  // Tier 1 (official) and Tier 3 (Al Jazeera/UN News/India MEA) are always shown
-  // regardless of age.
-  const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
-  const cutoff = Date.now() - THIRTY_DAYS_MS;
-  briefing.articles = briefing.articles.filter(a => {
-    if (isOfficialSource(a.source) || isTier3Source(a.source)) return true;
-    const t = Date.parse(a.date || "");
-    if (isNaN(t)) return true; // unparseable date ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â don't drop, just don't filter on it
-    return t >= cutoff;
-  });
-
-  // Sort: Tier 1 first, then Tier 2, then Tier 3 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â newest first within each tier
-  briefing.articles = briefing.articles.sort((a, b) => {
-    const aPriority = getPriority(a.source);
-    const bPriority = getPriority(b.source);
-    if (bPriority !== aPriority) return bPriority - aPriority;
-    return (b.date || "").localeCompare(a.date || "");
-  });
-
-  // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Apply enriched briefs from previous runs (library ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ live articles) ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
-  // Must happen BEFORE storage.save so the Redis copy has real briefs, not generics.
-  if (libraryArticles.length > 0) {
-    const libraryBriefMap = new Map<string, string>();
-    for (const la of libraryArticles) {
-      const key = la.headline.slice(0, 80).toLowerCase().replace(/\s+/g, " ").trim();
-      if ((la.body[0] || "").length > 50) libraryBriefMap.set(key, la.body[0]);
-    }
-    let appliedCount = 0;
-    briefing.articles = briefing.articles.map(a => {
-      const key = a.headline.slice(0, 80).toLowerCase().replace(/\s+/g, " ").trim();
-      const lib = libraryBriefMap.get(key);
-      if (!lib) return a;
-      const cur = (a.body[0] || "").toLowerCase();
-      const isGeneric = cur.length < 60 || [
-        "official action","see source link","targeting iran","targeting russia",
-        "treasury action","treasury department","new designations","general license issued",
-        "regulatory guidance","dprk-related","counter-terrorism",
-      ].some(g => cur.includes(g));
-      if (!isGeneric) return a; // already has a real brief ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â keep it
-      appliedCount++;
-      return { ...a, body: [lib, ...a.body.slice(1)] };
-    });
-    if (appliedCount > 0) console.log(`[orchestrator] Applied ${appliedCount} enriched briefs from library`);
-  }
-
-  // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Step 2: attempt LLM upgrade (best-effort, timeout varies) ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
-  // Runs AFTER the pre-save-ready structured briefing is built but BEFORE the
-  // actual save.  If the LLM responds in time, its richer articles replace the
-  // structured ones.  If it times out or errors, briefing stays as structured.
-  // skipLLM=true (in-process trigger-refresh) bypasses this entirely.
-  // Sanctions always runs LLM ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â OFAC date-URL search requires Gemini grounding
-  const needsLLM = !opts?.skipLLM || opts?.section === "sanctions";
-  if (needsLLM) {
-    // Manual refresh: shorter timeout so the user gets a response quickly.
-    // Scheduled runs (manualRefresh=false) get more time since they run in GitHub Actions.
-    const LLM_TIMEOUT_MS = opts?.manualRefresh ? 12_000 : 17_000;
-    try {
-      const llm = buildLLMManager();
-      const result = await Promise.race([
-        llm.fetch(topic, officialContext),
-        new Promise<never>((_, reject) =>
-          setTimeout(() => reject(new Error(`LLM timeout after ${LLM_TIMEOUT_MS / 1000}s`)), LLM_TIMEOUT_MS)
-        ),
-      ]);
-      briefing = mergeDirectWithAiSupplement(briefing, result.briefing);
-      // Mark every Gemini article so the alert pipeline can exclude them.
-      // LLM-generated articles have plausible-looking source/URL strings but the
-      // URLs are often hallucinated ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â a broken-link alert is worse than no alert.
-      usedProvider = result.usedProvider;
-      console.log(`[orchestrator] LLM succeeded (${usedProvider})`);
-      // NOTE: Gemini articles are NOT saved to the library ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â they can contain
-      // hallucinated URLs/sources.  Only real RSS/scrape articles (injected
-      // below from the OFAC cache) are persisted for future use.
-    } catch (llmError) {
-      const reason = String(llmError).slice(0, 120);
-      console.log("[orchestrator] LLM unavailable ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â keeping structured briefing:", reason);
-      // briefing / usedProvider already set to structured above ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â no change needed
-    }
-  }
-
-  // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ "No news" / non-event filler guard ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
-  // Same pattern as alert-scorer.ts's NO_NEWS_PATTERN veto and
-  // refresh-briefing.mjs's save-time filter. This function is a THIRD,
-  // independent Gemini-call-and-save path (hit directly by /api/refresh ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â
-  // ~15x/day via the GitHub Actions "fast path" step, and by the in-app
-  // "Refresh Now" button) that saves straight to Redis and was not covered by
-  // either of those other two fixes. Without this, a filler article from
-  // THIS path's own Gemini call could still display on the live site ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â
-  // alert-scorer.ts's veto only blocks the Telegram alert, not the page.
-  // Regex-only, deliberately no network calls: a per-article link-existence
-  // check would add ~20+ fetches on top of the enrichment calls below, which
-  // risks tripping Cloudflare Workers' per-invocation subrequest cap (see the
-  // "Save the core briefing FIRST" comment further down for why that budget
-  // is already tight here). Link verification instead lives only in
-  // refresh-briefing.mjs, which runs in GitHub Actions with no such cap.
-  // Added 2026-06-28 after the same gap was found and closed in the other two
-  // pipelines.
-  const NO_NEWS_PATTERN = /\bno new\b|\bshows no\b|\breports? no\b|\bno additions?\b|\bno changes?\b|\bnothing new\b|\bremains? unchanged\b|\bdid not add\b|\bno entries (?:were |have been )?added\b|\bno updates? (?:were |have been )?(?:made|reported)\b|\bno actions? (?:were |have been )?(?:taken|reported)\b/i;
-  const beforeNoNewsFilter = briefing.articles.length;
-  briefing.articles = briefing.articles.filter(a => {
-    const text = `${a.headline ?? ""} ${(a.body ?? [])[0] ?? ""}`;
-    const isFiller = NO_NEWS_PATTERN.test(text);
-    if (isFiller) console.log(`[orchestrator] Dropped no-news filler article: "${a.headline}"`);
-    return !isFiller;
-  });
-  if (briefing.articles.length < beforeNoNewsFilter) {
-    console.log(`[orchestrator] Filtered ${beforeNoNewsFilter - briefing.articles.length} no-news filler article(s)`);
-  }
-
-  const beforeCorruptFilter = briefing.articles.length;
-  briefing.articles = briefing.articles.filter(hasUsableArticleText);
-  if (briefing.articles.length < beforeCorruptFilter) {
-    console.log(`[orchestrator] Removed ${beforeCorruptFilter - briefing.articles.length} corrupted/binary article(s)`);
-  }
-
-  // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Group-mode additive merge ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
-  // When fetching a specific group (11-26 sources each ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â safely under CF's
-  // 50-subrequest limit), merge new articles INTO the existing Redis briefing
-  // instead of overwriting it. Each refresh.yml cycle calls /api/refresh 4ÃƒÆ’Ã¢â‚¬â€
-  // (group 1, 2, 3, 4 sequentially); without this, group 4's save would wipe
-  // everything written by groups 1, 2, 3.
-  if (opts?.group !== undefined) {
-    try {
-      const existing = await storage.load();
-      if (existing?.articles?.length) {
-        const currentKeys = new Set(
-          briefing.articles.map(a =>
-            a.headline.slice(0, 80).toLowerCase().replace(/\s+/g, " ").trim()
-          )
-        );
-        const fromExisting = existing.articles.filter(a =>
-          hasUsableArticleText(a) &&
-          !currentKeys.has(a.headline.slice(0, 80).toLowerCase().replace(/\s+/g, " ").trim())
-        );
-        if (fromExisting.length > 0) {
-          briefing.articles = [...briefing.articles, ...fromExisting];
-          // Re-sort to keep tier order consistent after merge
-          briefing.articles = briefing.articles.sort((a, b) => {
-            const pa = getPriority(a.source), pb = getPriority(b.source);
-            if (pb !== pa) return pb - pa;
-            return (b.date || "").localeCompare(a.date || "");
-          });
-          console.log(`[orchestrator] Group ${opts.group} additive merge: +${fromExisting.length} from existing ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ ${briefing.articles.length} total`);
-        }
-      }
-    } catch (e) {
-      console.log("[orchestrator] Additive merge failed (non-fatal):", String(e).slice(0, 80));
-    }
-  }
-
-  // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Section-scoped merge: don't overwrite other sections ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
-  // When a specific section is refreshed (e.g. BIS), only replace that section's
-  // articles in Redis. Without this, refreshing BIS would overwrite sanctions,
-  // penalties, etc. with 2025 historical backfill articles.
-  if (opts?.section && opts.section !== "all") {
-    const existing = await storage.load();
-    if (existing?.articles?.length) {
-      const otherArticles = existing.articles.filter(a => a.section !== opts.section);
-      const newSectionArticles = briefing.articles.filter(a => a.section === opts.section);
-      console.log(`[orchestrator] Section merge: ${newSectionArticles.length} new ${opts.section} articles + ${otherArticles.length} kept from existing`);
-      briefing.articles = [...newSectionArticles, ...otherArticles];
-      // Preserve existing sidebar for other sections
-      briefing.sidebar = {
-        ...existing.sidebar,
-        ...(briefing.sidebar?.[opts.section as keyof typeof briefing.sidebar]
-          ? { [opts.section]: briefing.sidebar[opts.section as keyof typeof briefing.sidebar] }
-          : {}),
-      };
-    }
-  }
-
-  const beforeHotCap = briefing.articles.length;
-  briefing.articles = capHotBriefingArticles(briefing.articles);
-  if (briefing.articles.length < beforeHotCap) {
-    console.log(`[orchestrator] Capped hot briefing from ${beforeHotCap} to ${briefing.articles.length}; full history remains in the article library`);
-  }
-
-  // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Save the core briefing FIRST ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
-  // Cloudflare Workers caps subrequests per invocation. Brief enrichment below
-  // does per-article Redis cache lookups + article fetches + Gemini calls,
-  // which can exhaust that budget ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â causing the *real* Upstash save to throw
-  // "Too many subrequests by single Worker invocation" while the in-memory
-  // fallback silently "succeeds," masking the failure (refresh still reports
-  // ok:true, but Redis never gets the fresh data ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â lastUpdated stays frozen).
-  // Saving here guarantees the correctly-dated official-source articles and
-  // Eastern-time lastUpdated persist before enrichment can starve the budget.
-  let preSaveSuccess = false;
-  try {
-    await storage.save(briefing, { requirePersistent: true });
-    preSaveSuccess = storage.getHealth().some(h => h.id === "upstash" && h.healthy);
-    console.log("[orchestrator] Saved core briefing (pre-enrichment), upstash:", preSaveSuccess);
-    if (preSaveSuccess) {
-      const checkpointUpdates = officialSources
-        .map(source => source.checkpoint)
-        .filter((checkpoint): checkpoint is { url: string; itemKeys: string[] } => !!checkpoint);
-      await commitSourceItemCheckpoints(checkpointUpdates);
-      console.log(`[orchestrator] Committed ${checkpointUpdates.length} source checkpoints after successful save`);
-    }
-  } catch (e) {
-    console.log("[orchestrator] Pre-save failed:", String(e).slice(0, 100));
-  }
-
-  // Group refreshes intentionally stop after persisting the bounded live
-  // briefing. Merging the same articles into the unbounded historical library
-  // requires loading and serializing the full archive and was the main source
-  // of Cloudflare 1102 CPU failures. Full/enrichment refreshes below continue
-  // to maintain the historical library outside this time-critical alert path.
-
-  // Enrich articles with AI-generated briefs (cached in Redis, runs async)
-  // Skipped on manual refresh (too slow for interactive use) and when skipLLM=true.
-  // Best-effort: failure here does not lose data, since the core briefing is already saved above.
-  if (needsLLM && !opts?.manualRefresh && (usedProvider.includes("Official Sources") || usedProvider.includes("Local Analysis"))) {
-    try {
-      console.log("[orchestrator] Enriching article briefs...");
-      const sanctionsArticles = briefing.articles
-        .filter(a => a.sourceUrl)
-        .map(a => ({ sourceUrl: a.sourceUrl!, headline: a.headline, body: a.body }));
-
-      const enriched = await enrichArticlesWithBriefs(sanctionsArticles);
-      if (enriched.size > 0) {
-        briefing.articles = briefing.articles.map(a => {
-          const newBrief = a.sourceUrl ? enriched.get(a.sourceUrl) : undefined;
-          return newBrief ? { ...a, body: [newBrief, ...a.body.slice(1)] } : a;
-        });
-        console.log(`[orchestrator] Enriched ${enriched.size} article briefs`);
-
-        // Save enriched articles to the persistent library ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â real RSS/scrape only,
-        // never AI-generated articles (those have hallucinated URLs).
-        const enrichedArticles = briefing.articles.filter(a =>
-          a.sourceUrl && enriched.has(a.sourceUrl) && !(a as any).aiGenerated
-        );
-        saveArticlesToLibrary(enrichedArticles).catch(e =>
-          console.log("[orchestrator] Library save failed (non-fatal):", String(e).slice(0, 80))
-        );
-
-        // Re-save briefing with enriched briefs so users see Gemini summaries immediately.
-        // This save is best-effort ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â if it fails (subrequest limit), the pre-save copy
-        // (with generic briefs) is already in Redis and the library will propagate
-        // enriched briefs on the next refresh cycle.
-        try {
-          await storage.save(briefing, { requirePersistent: true });
-          console.log("[orchestrator] Re-saved briefing with enriched briefs");
-        } catch (saveErr) {
-          console.log("[orchestrator] Re-save failed (non-fatal, pre-save intact):", String(saveErr).slice(0, 80));
-        }
-      }
-    } catch (e) {
-      console.log("[orchestrator] Brief enrichment failed (non-fatal):", String(e).slice(0, 100));
-    }
-  }
-
-  // Build savedTo from pre-save result so enrichment save failures don't
-  // incorrectly report Upstash as missing even when the core briefing was saved.
-  const health = storage.getHealth();
-  const savedTo = [
-    ...(preSaveSuccess ? ["upstash"] : []),
-    "memory",
-  ];
-  const storageErrors = health.filter(h => !h.healthy).map(h => ({ id: h.id, error: h.lastError }));
-
-  return { briefing, usedProvider, savedTo, storageErrors };
-}
-
-export async function getSystemHealth() {
-  const storage = await buildStorageManager();
-  const tracker = getTracker();
-
-  return {
-    storage: storage.getHealth(),
-    llm: {
-      primary:   { id: "anthropic-primary",   calls: tracker.get("anthropic-primary:llm"),   limit: Number(process.env.ANTHROPIC_PRIMARY_DAILY_LIMIT   ?? 0) },
-      secondary: { id: "anthropic-secondary", calls: tracker.get("anthropic-secondary:llm"), limit: Number(process.env.ANTHROPIC_SECONDARY_DAILY_LIMIT ?? 0) },
-      tertiary:  { id: "anthropic-tertiary",  calls: tracker.get("anthropic-tertiary:llm"),  limit: Number(process.env.ANTHROPIC_TERTIARY_DAILY_LIMIT  ?? 0) },
-      gemini:    { id: "gemini",              calls: tracker.get("gemini:llm"),              limit: Number(process.env.GEMINI_DAILY_LIMIT ?? 1500) },
-    },
-    hasAnthropicKey: !!process.env.ANTHROPIC_API_KEY,
-    hasGeminiKey:    !!process.env.GEMINI_API_KEY,
-    hasUpstash:      !!process.env.UPSTASH_REDIS_REST_URL,
-    hasTelegram:     !!process.env.TELEGRAM_BOT_TOKEN,
-    timestamp: new Date().toISOString(),
-  };
-}
-
-
+    "OFAC", "FinCEN", "BIS", "OCC", "Federal Reserve", "Fed Reserve×=¶‰ËkºwµçQ•È€‘í115}Q%5=UQ}5L€¼€ÄÀÀÁõÍ€¤¤°115}Q%5=UQ}5L¤(€€€€€€€€¤°(€€€€€t¤ì(€€€€€‰É¥•™¥¹œ€ôµ•É•¥É•Ñ]¥Ñ¡¥MÕÁÁ±•µ•¹Ğ¡‰É¥•™¥¹œ°É•ÍÕ±Ğ¹‰É¥•™¥¹œ¤ì(€€€€€€¼¼5…É¬•Ù•Éä•µ¥¹¤…ÉÑ¥±”Í¼Ñ¡”…±•ÉĞÁ¥Á•±¥¹”…¸•á±Õ‘”Ñ¡•´¸(€€€€€€¼¼114µ•¹•É…Ñ•…ÉÑ¥±•Ì¡…Ù”Á±…ÕÍ¥‰±”µ±½½­¥¹œÍ½ÕÉ”½UI0ÍÑÉ¥¹Ì‰ÕĞÑ¡”(€€€€€€¼¼UI1Ì…É”½™Ñ•¸¡…±±Õ¥¹…Ñ•ƒ
+‹‹Šk
+³‹Š
+³
+t„‰É½­•¸µ±¥¹¬…±•ÉĞ¥Ìİ½ÉÍ”Ñ¡…¸¹¼…±•ÉĞ¸(€€€€€ÕÍ•‘AÉ½Ù¥‘•È€ôÉ•ÍÕ±Ğ¹ÕÍ•‘AÉ½Ù¥‘•Èì(€€€€€½¹Í½±”¹±½œ¡m½É¡•ÍÑÉ…Ñ½Ét114ÍÕ••‘•€ ‘íÕÍ•‘AÉ½Ù¥‘•Éô¥€¤ì(€€€€€€¼¼9=Qè•µ¥¹¤…ÉÑ¥±•Ì…É”9=PÍ…Ù•Ñ¼Ñ¡”±¥‰É…Éäƒ
+‹‹Šk
+³‹Š
+³
+tÑ¡•ä…¸½¹Ñ…¥¸(€€€€€€¼¼¡…±±Õ¥¹…Ñ•UI1Ì½Í½ÕÉ•Ì¸€=¹±äÉ•…°IML½ÍÉ…Á”…ÉÑ¥±•Ì€¡¥¹©•Ñ•(€€€€€€¼¼‰•±½Ü™É½´Ñ¡”=…¡”¤…É”Á•ÉÍ¥ÍÑ•™½È™ÕÑÕÉ”ÕÍ”¸(€€€ô…Ñ €¡±±µÉÉ½È¤ì(€€€€€½¹ÍĞÉ•…Í½¸€ôMÑÉ¥¹œ¡±±µÉÉ½È¤¹Í±¥” À°€ÄÈÀ¤ì(€€€€€½¹Í½±”¹±½œ ‰m½É¡•ÍÑÉ…Ñ½Ét114Õ¹…Ù…¥±…‰±”ƒ
+‹‹Šk
+³‹Š
+³
+t­••Á¥¹œÍÑÉÕÑÕÉ•‰É¥•™¥¹œèˆ°É•…Í½¸¤ì(€€€€€€¼¼‰É¥•™¥¹œ€¼ÕÍ•‘AÉ½Ù¥‘•È…±É•…‘äÍ•ĞÑ¼ÍÑÉÕÑÕÉ•…‰½Ù”ƒ
+‹‹Šk
+³‹Š
+³
+t¹¼¡…¹”¹••‘•(€€€ô(€ô((€€¼¼ƒ
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+°€‰9¼¹•İÌˆ€¼¹½¸µ•Ù•¹Ğ™¥±±•ÈÕ…Éƒ
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+°(€€¼¼M…µ”Á…ÑÑ•É¸…Ì…±•ÉĞµÍ½É•È¹ÑÌÌ9=}9]M}AQQI8Ù•Ñ¼…¹(€€¼¼É•™É•Í µ‰É¥•™¥¹œ¹µ©ÌÌÍ…Ù”µÑ¥µ”™¥±Ñ•È¸Q¡¥Ì™Õ¹Ñ¥½¸¥Ì„Q!%I°(€€¼¼¥¹‘•Á•¹‘•¹Ğ•µ¥¹¤µ…±°µ…¹µÍ…Ù”Á…Ñ €¡¡¥Ğ‘¥É•Ñ±ä‰ä€½…Á¤½É•™É•Í ƒ
+‹‹Šk
+³‹Š
+³
+t(€€¼¼øÄÕà½‘…äÙ¥„Ñ¡”¥Ñ!ÕˆÑ¥½¹Ì€‰™…ÍĞÁ…Ñ ˆÍÑ•À°…¹‰äÑ¡”¥¸µ…ÁÀ(€€¼¼€‰I•™É•Í 9½Üˆ‰ÕÑÑ½¸¤Ñ¡…ĞÍ…Ù•ÌÍÑÉ…¥¡ĞÑ¼I•‘¥Ì…¹İ…Ì¹½Ğ½Ù•É•‰ä(€€¼¼•¥Ñ¡•È½˜Ñ¡½Í”½Ñ¡•ÈÑİ¼™¥á•Ì¸]¥Ñ¡½ÕĞÑ¡¥Ì°„™¥±±•È…ÉÑ¥±”™É½´(€€¼¼Q!%LÁ…Ñ Ì½İ¸•µ¥¹¤…±°½Õ±ÍÑ¥±°‘¥ÍÁ±…ä½¸Ñ¡”±¥Ù”Í¥Ñ”ƒ
+‹‹Šk
+³‹Š
+³
+t(€€¼¼…±•ÉĞµÍ½É•È¹ÑÌÌÙ•Ñ¼½¹±ä‰±½­ÌÑ¡”Q•±•É…´…±•ÉĞ°¹½ĞÑ¡”Á…”¸(€€¼¼I••àµ½¹±ä°‘•±¥‰•É…Ñ•±ä¹¼¹•Ñİ½É¬…±±Ìè„Á•Èµ…ÉÑ¥±”±¥¹¬µ•á¥ÍÑ•¹”(€€¼¼¡•¬İ½Õ±…‘øÈÀ¬™•Ñ¡•Ì½¸Ñ½À½˜Ñ¡”•¹É¥¡µ•¹Ğ…±±Ì‰•±½Ü°İ¡¥ (€€¼¼É¥Í­ÌÑÉ¥ÁÁ¥¹œ±½Õ‘™±…É”]½É­•ÉÌœÁ•Èµ¥¹Ù½…Ñ¥½¸ÍÕ‰É•ÅÕ•ÍĞ…À€¡Í•”Ñ¡”(€€¼¼€‰M…Ù”Ñ¡”½É”‰É¥•™¥¹œ%IMPˆ½µµ•¹Ğ™ÕÉÑ¡•È‘½İ¸™½Èİ¡äÑ¡…Ğ‰Õ‘•Ğ(€€¼¼¥Ì…±É•…‘äÑ¥¡Ğ¡•É”¤¸1¥¹¬Ù•É¥™¥…Ñ¥½¸¥¹ÍÑ•…±¥Ù•Ì½¹±ä¥¸(€€¼¼É•™É•Í µ‰É¥•™¥¹œ¹µ©Ì°İ¡¥ ÉÕ¹Ì¥¸¥Ñ!ÕˆÑ¥½¹Ìİ¥Ñ ¹¼ÍÕ …À¸(€€¼¼‘‘•€ÈÀÈØ´ÀØ´Èà…™Ñ•ÈÑ¡”Í…µ”…Àİ…Ì™½Õ¹…¹±½Í•¥¸Ñ¡”½Ñ¡•ÈÑİ¼(€€¼¼Á¥Á•±¥¹•Ì¸(€½¹ÍĞ9=}9]M}AQQI8€ô€½q‰¹¼¹•İq‰ñq‰Í¡½İÌ¹½q‰ñq‰É•Á½ÉÑÌü¹½q‰ñq‰¹¼…‘‘¥Ñ¥½¹Ìıq‰ñq‰¹¼¡…¹•Ìıq‰ñq‰¹½Ñ¡¥¹œ¹•İq‰ñq‰É•µ…¥¹ÌüÕ¹¡…¹•‘q‰ñq‰‘¥¹½Ğ…‘‘q‰ñq‰¹¼•¹ÑÉ¥•Ì€ üéİ•É”ñ¡…Ù”‰••¸€¤ı…‘‘•‘q‰ñq‰¹¼ÕÁ‘…Ñ•Ìü€ üéİ•É”ñ¡…Ù”‰••¸€¤ü üéµ…‘•ñÉ•Á½ÉÑ•¥q‰ñq‰¹¼…Ñ¥½¹Ìü€ üéİ•É”ñ¡…Ù”‰••¸€¤ü üéÑ…­•¹ñÉ•Á½ÉÑ•¥qˆ½¤ì(€½¹ÍĞ‰•™½É•9½9•İÍ¥±Ñ•È€ô‰É¥•™¥¹œ¹…ÉÑ¥±•Ì¹±•¹Ñ ì(€‰É¥•™¥¹œ¹…ÉÑ¥±•Ì€ô‰É¥•™¥¹œ¹…ÉÑ¥±•Ì¹™¥±Ñ•È¡„€ôøì(€€€½¹ÍĞÑ•áĞ€ô€‘í„¹¡•…‘±¥¹”€üü€ˆ‰ô€‘ì¡„¹‰½‘ä€üümt¥lÁt€üü€ˆ‰õ€ì(€€€½¹ÍĞ¥Í¥±±•È€ô9=}9]M}AQQI8¹Ñ•ÍĞ¡Ñ•áĞ¤ì(€€€¥˜€¡¥Í¥±±•È¤½¹Í½±”¹±½œ¡m½É¡•ÍÑÉ…Ñ½ÉtÉ½ÁÁ•¹¼µ¹•İÌ™¥±±•È…ÉÑ¥±”è€ˆ‘í„¹¡•…‘±¥¹•ô‰€¤ì(€€€É•ÑÕÉ¸€…¥Í¥±±•Èì(€ô¤ì(€¥˜€¡‰É¥•™¥¹œ¹…ÉÑ¥±•Ì¹±•¹Ñ €ğ‰•™½É•9½9•İÍ¥±Ñ•È¤ì(€€€½¹Í½±”¹±½œ¡m½É¡•ÍÑÉ…Ñ½Ét¥±Ñ•É•€‘í‰•™½É•9½9•İÍ¥±Ñ•È€´‰É¥•™¥¹œ¹…ÉÑ¥±•Ì¹±•¹Ñ¡ô¹¼µ¹•İÌ™¥±±•È…ÉÑ¥±”¡Ì¥€¤ì(€ô((€½¹ÍĞ‰•™½É•½ÉÉÕÁÑ¥±Ñ•È€ô‰É¥•™¥¹œ¹…ÉÑ¥±•Ì¹±•¹Ñ ì(€‰É¥•™¥¹œ¹…ÉÑ¥±•Ì€ô‰É¥•™¥¹œ¹…ÉÑ¥±•Ì¹™¥±Ñ•È¡¥Í¥ÍÁ±…å…‰±•9•İÍÉÑ¥±”¤ì(€¥˜€¡‰É¥•™¥¹œ¹…ÉÑ¥±•Ì¹±•¹Ñ €ğ‰•™½É•½ÉÉÕÁÑ¥±Ñ•È¤ì(€€€½¹Í½±”¹±½œ¡m½É¡•ÍÑÉ…Ñ½ÉtI•µ½Ù•€‘í‰•™½É•½ÉÉÕÁÑ¥±Ñ•È€´‰É¥•™¥¹œ¹…ÉÑ¥±•Ì¹±•¹Ñ¡ô½ÉÉÕÁÑ•°™É…µ•¹Ğ°½È¹½¸µ‘¥É•Ğµ±¥¹¬…ÉÑ¥±”¡Ì¥€¤ì(€ô((€€¼¼ƒ
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+°É½ÕÀµµ½‘”…‘‘¥Ñ¥Ù”µ•É”ƒ
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+°(€€¼¼]¡•¸™•Ñ¡¥¹œ„ÍÁ•¥™¥ŒÉ½ÕÀ€ ÄÄ´ÈØÍ½ÕÉ•Ì•… ƒ
+‹‹Šk
+³‹Š
+³
+tÍ…™•±äÕ¹‘•ÈÌ(€€¼¼€ÔÀµÍÕ‰É•ÅÕ•ÍĞ±¥µ¥Ğ¤°µ•É”¹•Ü…ÉÑ¥±•Ì%9Q<Ñ¡”•á¥ÍÑ¥¹œI•‘¥Ì‰É¥•™¥¹œ(€€¼¼¥¹ÍÑ•…½˜½Ù•ÉİÉ¥Ñ¥¹œ¥Ğ¸… É•™É•Í ¹åµ°å±”…±±Ì€½…Á¤½É•™É•Í €ÓK‹Š
+³Št(€€¼¼€¡É½ÕÀ€Ä°€È°€Ì°€ĞÍ•ÅÕ•¹Ñ¥…±±ä¤ìİ¥Ñ¡½ÕĞÑ¡¥Ì°É½ÕÀ€ĞÌÍ…Ù”İ½Õ±İ¥Á”(€€¼¼•Ù•ÉåÑ¡¥¹œİÉ¥ÑÑ•¸‰äÉ½ÕÁÌ€Ä°€È°€Ì¸(€¥˜€¡½ÁÑÌü¹É½ÕÀ€„ôôÕ¹‘•™¥¹•¤ì(€€€ÑÉäì(€€€€€½¹ÍĞ•á¥ÍÑ¥¹œ€ô…İ…¥ĞÍÑ½É…”¹±½… ¤ì(€€€€€¥˜€¡•á¥ÍÑ¥¹œü¹…ÉÑ¥±•Ìü¹±•¹Ñ ¤ì(€€€€€€€½¹ÍĞÕÉÉ•¹Ñ-•åÌ€ô¹•ÜM•Ğ (€€€€€€€€€‰É¥•™¥¹œ¹…ÉÑ¥±•Ì¹µ…À¡„€ôø(€€€€€€€€€€€„¹¡•…‘±¥¹”¹Í±¥” À°€àÀ¤¹Ñ½1½İ•É…Í” ¤¹É•Á±…” ½qÌ¬½œ°€ˆ€ˆ¤¹ÑÉ¥´ ¤(€€€€€€€€€€¤(€€€€€€€€¤ì(€€€€€€€½¹ÍĞ™É½µá¥ÍÑ¥¹œ€ô•á¥ÍÑ¥¹œ¹…ÉÑ¥±•Ì¹™¥±Ñ•È¡„€ôø(€€€€€€€€€¡…ÍUÍ…‰±•ÉÑ¥±•Q•áĞ¡„¤€˜˜(€€€€€€€€€€…ÕÉÉ•¹Ñ-•åÌ¹¡…Ì¡„¹¡•…‘±¥¹”¹Í±¥” À°€àÀ¤¹Ñ½1½İ•É…Í” ¤¹É•Á±…” ½qÌ¬½œ°€ˆ€ˆ¤¹ÑÉ¥´ ¤¤(€€€€€€€€¤ì(€€€€€€€¥˜€¡™É½µá¥ÍÑ¥¹œ¹±•¹Ñ €ø€À¤ì(€€€€€€€€€‰É¥•™¥¹œ¹…ÉÑ¥±•Ì€ôl¸¸¹‰É¥•™¥¹œ¹…ÉÑ¥±•Ì°€¸¸¹™É½µá¥ÍÑ¥¹tì(€€€€€€€€€€¼¼I”µÍ½ÉĞÑ¼­••ÀÑ¥•È½É‘•È½¹Í¥ÍÑ•¹Ğ…™Ñ•Èµ•É”(€€€€€€€€€‰É¥•™¥¹œ¹…ÉÑ¥±•Ì€ô‰É¥•™¥¹œ¹…ÉÑ¥±•Ì¹Í½ÉĞ ¡„°ˆ¤€ôøì(€€€€€€€€€€€½¹ÍĞÁ„€ô•ÑAÉ¥½É¥Ñä¡„¹Í½ÕÉ”¤°Áˆ€ô•ÑAÉ¥½É¥Ñä¡ˆ¹Í½ÕÉ”¤ì(€€€€€€€€€€€¥˜€¡Áˆ€„ôôÁ„¤É•ÑÕÉ¸Áˆ€´Á„ì(€€€€€€€€€€€É•ÑÕÉ¸€¡ˆ¹‘…Ñ”ñğ€ˆˆ¤¹±½…±•½µÁ…É”¡„¹‘…Ñ”ñğ€ˆˆ¤ì(€€€€€€€€€ô¤ì(€€€€€€€€€½¹Í½±”¹±½œ¡m½É¡•ÍÑÉ…Ñ½ÉtÉ½ÕÀ€‘í½ÁÑÌ¹É½ÕÁô…‘‘¥Ñ¥Ù”µ•É”è€¬‘í™É½µá¥ÍÑ¥¹œ¹±•¹Ñ¡ô™É½´•á¥ÍÑ¥¹œƒ
+‹‹Š
+³
+ƒ‹Š
+³Šˆ€‘í‰É¥•™¥¹œ¹…ÉÑ¥±•Ì¹±•¹Ñ¡ôÑ½Ñ…±€¤ì(€€€€€€€ô(€€€€€ô(€€€ô…Ñ €¡”¤ì(€€€€€½¹Í½±”¹±½œ ‰m½É¡•ÍÑÉ…Ñ½Ét‘‘¥Ñ¥Ù”µ•É”™…¥±•€¡¹½¸µ™…Ñ…°¤èˆ°MÑÉ¥¹œ¡”¤¹Í±¥” À°€àÀ¤¤ì(€€€ô(€ô((€€¼¼ƒ
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+°M•Ñ¥½¸µÍ½Á•µ•É”è‘½¸Ğ½Ù•ÉİÉ¥Ñ”½Ñ¡•ÈÍ•Ñ¥½¹Ìƒ
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+°(€€¼¼]¡•¸„ÍÁ•¥™¥ŒÍ•Ñ¥½¸¥ÌÉ•™É•Í¡•€¡”¹œ¸	%L¤°½¹±äÉ•Á±…”Ñ¡…ĞÍ•Ñ¥½¸Ì(€€¼¼…ÉÑ¥±•Ì¥¸I•‘¥Ì¸]¥Ñ¡½ÕĞÑ¡¥Ì°É•™É•Í¡¥¹œ	%Lİ½Õ±½Ù•ÉİÉ¥Ñ”Í…¹Ñ¥½¹Ì°(€€¼¼Á•¹…±Ñ¥•Ì°•ÑŒ¸İ¥Ñ €ÈÀÈÔ¡¥ÍÑ½É¥…°‰…­™¥±°…ÉÑ¥±•Ì¸(€¥˜€¡½ÁÑÌü¹Í•Ñ¥½¸€˜˜½ÁÑÌ¹Í•Ñ¥½¸€„ôô€‰…±°ˆ¤ì(€€€½¹ÍĞ•á¥ÍÑ¥¹œ€ô…İ…¥ĞÍÑ½É…”¹±½… ¤ì(€€€¥˜€¡•á¥ÍÑ¥¹œü¹…ÉÑ¥±•Ìü¹±•¹Ñ ¤ì(€€€€€½¹ÍĞ½Ñ¡•ÉÉÑ¥±•Ì€ô•á¥ÍÑ¥¹œ¹…ÉÑ¥±•Ì¹™¥±Ñ•È¡„€ôø„¹Í•Ñ¥½¸€„ôô½ÁÑÌ¹Í•Ñ¥½¸¤ì(€€€€€½¹ÍĞ¹•İM•Ñ¥½¹ÉÑ¥±•Ì€ô‰É¥•™¥¹œ¹…ÉÑ¥±•Ì¹™¥±Ñ•È¡„€ôø„¹Í•Ñ¥½¸€ôôô½ÁÑÌ¹Í•Ñ¥½¸¤ì(€€€€€½¹Í½±”¹±½œ¡m½É¡•ÍÑÉ…Ñ½ÉtM•Ñ¥½¸µ•É”è€‘í¹•İM•Ñ¥½¹ÉÑ¥±•Ì¹±•¹Ñ¡ô¹•Ü€‘í½ÁÑÌ¹Í•Ñ¥½¹ô…ÉÑ¥±•Ì€¬€‘í½Ñ¡•ÉÉÑ¥±•Ì¹±•¹Ñ¡ô­•ÁĞ™É½´•á¥ÍÑ¥¹€¤ì(€€€€€‰É¥•™¥¹œ¹…ÉÑ¥±•Ì€ôl¸¸¹¹•İM•Ñ¥½¹ÉÑ¥±•Ì°€¸¸¹½Ñ¡•ÉÉÑ¥±•Ítì(€€€€€€¼¼AÉ•Í•ÉÙ”•á¥ÍÑ¥¹œÍ¥‘•‰…È™½È½Ñ¡•ÈÍ•Ñ¥½¹Ì(€€€€€‰É¥•™¥¹œ¹Í¥‘•‰…È€ôì(€€€€€€€€¸¸¹•á¥ÍÑ¥¹œ¹Í¥‘•‰…È°(€€€€€€€€¸¸¸¡‰É¥•™¥¹œ¹Í¥‘•‰…Èü¹m½ÁÑÌ¹Í•Ñ¥½¸…Ì­•å½˜ÑåÁ•½˜‰É¥•™¥¹œ¹Í¥‘•‰…Ét(€€€€€€€€€€üìm½ÁÑÌ¹Í•Ñ¥½¹tè‰É¥•™¥¹œ¹Í¥‘•‰…Ém½ÁÑÌ¹Í•Ñ¥½¸…Ì­•å½˜ÑåÁ•½˜‰É¥•™¥¹œ¹Í¥‘•‰…Étô(€€€€€€€€€€èíô¤°(€€€€€ôì(€€€ô(€ô((€½¹ÍĞ‰•™½É•!½Ñ…À€ô‰É¥•™¥¹œ¹…ÉÑ¥±•Ì¹±•¹Ñ ì(€‰É¥•™¥¹œ¹…ÉÑ¥±•Ì€ô…Á!½Ñ	É¥•™¥¹ÉÑ¥±•Ì¡‰É¥•™¥¹œ¹…ÉÑ¥±•Ì¤ì(€¥˜€¡‰É¥•™¥¹œ¹…ÉÑ¥±•Ì¹±•¹Ñ €ğ‰•™½É•!½Ñ…À¤ì(€€€½¹Í½±”¹±½œ¡m½É¡•ÍÑÉ…Ñ½Ét…ÁÁ•¡½Ğ‰É¥•™¥¹œ™É½´€‘í‰•™½É•!½Ñ…ÁôÑ¼€‘í‰É¥•™¥¹œ¹…ÉÑ¥±•Ì¹±•¹Ñ¡ôì™Õ±°¡¥ÍÑ½ÉäÉ•µ…¥¹Ì¥¸Ñ¡”…ÉÑ¥±”±¥‰É…Éå€¤ì(€ô((€€¼¼ƒ
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+°M…Ù”Ñ¡”½É”‰É¥•™¥¹œ%IMPƒ
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+³
+‹‹Š
+³
+w‹Šk
+°(€€¼¼±½Õ‘™±…É”]½É­•ÉÌ…ÁÌÍÕ‰É•ÅÕ•ÍÑÌÁ•È¥¹Ù½…Ñ¥½¸¸	É¥•˜•¹É¥¡µ•¹Ğ‰•±½Ü(€€¼¼‘½•ÌÁ•Èµ…ÉÑ¥±”I•‘¥Ì…¡”±½½­ÕÁÌ€¬…ÉÑ¥±”™•Ñ¡•Ì€¬•µ¥¹¤…±±Ì°(€€¼¼İ¡¥ …¸•á¡…ÕÍĞÑ¡…Ğ‰Õ‘•Ğƒ
+‹‹Šk
+³‹Š
+³
+t…ÕÍ¥¹œÑ¡”€©É•…°¨UÁÍÑ…Í Í…Ù”Ñ¼Ñ¡É½Ü(€€¼¼€‰Q½¼µ…¹äÍÕ‰É•ÅÕ•ÍÑÌ‰äÍ¥¹±”]½É­•È¥¹Ù½…Ñ¥½¸ˆİ¡¥±”Ñ¡”¥¸µµ•µ½Éä(€€¼¼™…±±‰…¬Í¥±•¹Ñ±ä€‰ÍÕ••‘Ì°ˆµ…Í­¥¹œÑ¡”™…¥±ÕÉ”€¡É•™É•Í ÍÑ¥±°É•Á½ÉÑÌ(€€¼¼½¬éÑÉÕ”°‰ÕĞI•‘¥Ì¹•Ù•È•ÑÌÑ¡”™É•Í ‘…Ñ„ƒ
+‹‹Šk
+³‹Š
+³
+t±…ÍÑUÁ‘…Ñ•ÍÑ…åÌ™É½é•¸¤¸(€€¼¼M…Ù¥¹œ¡•É”Õ…É…¹Ñ••ÌÑ¡”½ÉÉ•Ñ±äµ‘…Ñ•½™™¥¥…°µÍ½ÕÉ”…ÉÑ¥±•Ì…¹(€€¼¼…ÍÑ•É¸µÑ¥µ”±…ÍÑUÁ‘…Ñ•Á•ÉÍ¥ÍĞ‰•™½É”•¹É¥¡µ•¹Ğ…¸ÍÑ…ÉÙ”Ñ¡”‰Õ‘•Ğ¸(€±•ĞÁÉ•M…Ù•MÕ•ÍÌ€ô™…±Í”ì(€ÑÉäì(€€€…İ…¥ĞÍÑ½É…”¹Í…Ù”¡‰É¥•™¥¹œ°ìÉ•ÅÕ¥É•A•ÉÍ¥ÍÑ•¹ĞèÑÉÕ”ô¤ì(€€€ÁÉ•M…Ù•MÕ•ÍÌ€ôÍÑ½É…”¹•Ñ!•…±Ñ  ¤¹Í½µ”¡ €ôø ¹¥€ôôô€‰ÕÁÍÑ…Í ˆ€˜˜ ¹¡•…±Ñ¡ä¤ì(€€€½¹Í½±”¹±½œ ‰m½É¡•ÍÑÉ…Ñ½ÉtM…Ù•½É”‰É¥•™¥¹œ€¡ÁÉ”µ•¹É¥¡µ•¹Ğ¤°ÕÁÍÑ…Í èˆ°ÁÉ•M…Ù•MÕ•ÍÌ¤ì(€€€¥˜€¡ÁÉ•M…Ù•MÕ•ÍÌ¤ì(€€€€€½¹ÍĞ¡•­Á½¥¹ÑUÁ‘…Ñ•Ì€ô½™™¥¥…±M½ÕÉ•Ì(€€€€€€€€¹µ…À¡Í½ÕÉ”€ôøÍ½ÕÉ”¹¡•­Á½¥¹Ğ¤(€€€€€€€€¹™¥±Ñ•È ¡¡•­Á½¥¹Ğ¤è¡•­Á½¥¹Ğ¥ÌìÕÉ°èÍÑÉ¥¹œì¥Ñ•µ-•åÌèÍÑÉ¥¹mtô€ôø€„…¡•­Á½¥¹Ğ¤ì(€€€€€…İ…¥Ğ½µµ¥ÑM½ÕÉ•%Ñ•µ¡•­Á½¥¹ÑÌ¡¡•­Á½¥¹ÑUÁ‘…Ñ•Ì¤ì(€€€€€½¹Í½±”¹±½œ¡m½É¡•ÍÑÉ…Ñ½Ét½µµ¥ÑÑ•€‘í¡•­Á½¥¹ÑUÁ‘…Ñ•Ì¹±•¹Ñ¡ôÍ½ÕÉ”¡•­Á½¥¹ÑÌ…™Ñ•ÈÍÕ•ÍÍ™Õ°Í…Ù•€¤ì(€€€ô(€ô…Ñ €¡”¤ì(€€€½¹Í½±”¹±½œ ‰m½É¡•ÍÑÉ…Ñ½ÉtAÉ”µÍ…Ù”™…¥±•èˆ°MÑÉ¥¹œ¡”¤¹Í±¥” À°€ÄÀÀ¤¤ì(€ô((€€¼¼É½ÕÀÉ•™É•Í¡•Ì¥¹Ñ•¹Ñ¥½¹…±±äÍÑ½À…™Ñ•ÈÁ•ÉÍ¥ÍÑ¥¹œÑ¡”‰½Õ¹‘•±¥Ù”(€€¼¼‰É¥•™¥¹œ¸5•É¥¹œÑ¡”Í…µ”…ÉÑ¥±•Ì¥¹Ñ¼Ñ¡”Õ¹‰½Õ¹‘•¡¥ÍÑ½É¥…°±¥‰É…Éä(€€¼¼É•ÅÕ¥É•Ì±½…‘¥¹œ…¹Í•É¥…±¥é¥¹œÑ¡”™Õ±°…É¡¥Ù”…¹İ…ÌÑ¡”µ…¥¸Í½ÕÉ”(€€¼¼½˜±½Õ‘™±…É”€ÄÄÀÈAT™…¥±ÕÉ•Ì¸Õ±°½•¹É¥¡µ•¹ĞÉ•™É•Í¡•Ì‰•±½Ü½¹Ñ¥¹Õ”(€€¼¼Ñ¼µ…¥¹Ñ…¥¸Ñ¡”¡¥ÍÑ½É¥…°±¥‰É…Éä½ÕÑÍ¥‘”Ñ¡¥ÌÑ¥µ”µÉ¥Ñ¥…°…±•ÉĞÁ…Ñ ¸((€€¼¼¹É¥ …ÉÑ¥±•Ìİ¥Ñ $µ•¹•É…Ñ•‰É¥•™Ì€¡…¡•¥¸I•‘¥Ì°ÉÕ¹Ì…Íå¹Œ¤(€€¼¼M­¥ÁÁ•½¸µ…¹Õ…°É•™É•Í €¡Ñ½¼Í±½Ü™½È¥¹Ñ•É…Ñ¥Ù”ÕÍ”¤…¹İ¡•¸Í­¥Á114õÑÉÕ”¸(€€¼¼	•ÍĞµ•™™½ÉĞè™…¥±ÕÉ”¡•É”‘½•Ì¹½Ğ±½Í”‘…Ñ„°Í¥¹”Ñ¡”½É”‰É¥•™¥¹œ¥Ì…±É•…‘äÍ…Ù•…‰½Ù”¸(€¥˜€¡¹••‘Í114€˜˜€…½ÁÑÌü¹µ…¹Õ…±I•™É•Í €˜˜€¡ÕÍ•‘AÉ½Ù¥‘•È¹¥¹±Õ‘•Ì ‰=™™¥¥…°M½ÕÉ•Ìˆ¤ñğÕÍ•‘AÉ½Ù¥‘•È¹¥¹±Õ‘•Ì ‰1½…°¹…±åÍ¥Ìˆ¤¤¤ì(€€€ÑÉäì(€€€€€½¹Í½±”¹±½œ ‰m½É¡•ÍÑÉ…Ñ½Ét¹É¥¡¥¹œ…ÉÑ¥±”‰É¥•™Ì¸¸¸ˆ¤ì(€€€€€½¹ÍĞÍ…¹Ñ¥½¹ÍÉÑ¥±•Ì€ô‰É¥•™¥¹œ¹…ÉÑ¥±•Ì(€€€€€€€€¹™¥±Ñ•È¡„€ôø„¹Í½ÕÉ•UÉ°¤(€€€€€€€€¹µ…À¡„€ôø€¡ìÍ½ÕÉ•UÉ°è„¹Í½ÕÉ•UÉ°„°¡•…‘±¥¹”è„¹¡•…‘±¥¹”°‰½‘äè„¹‰½‘äô¤¤ì((€€€€€½¹ÍĞ•¹É¥¡•€ô…İ…¥Ğ•¹É¥¡ÉÑ¥±•Í]¥Ñ¡	É¥•™Ì¡Í…¹Ñ¥½¹ÍÉÑ¥±•Ì¤ì(€€€€€¥˜€¡•¹É¥¡•¹Í¥é”€ø€À¤ì(€€€€€€€‰É¥•™¥¹œ¹…ÉÑ¥±•Ì€ô‰É¥•™¥¹œ¹…ÉÑ¥±•Ì¹µ…À¡„€ôøì(€€€€€€€€€½¹ÍĞ¹•İ	É¥•˜€ô„¹Í½ÕÉ•UÉ°€ü•¹É¥¡•¹•Ğ¡„¹Í½ÕÉ•UÉ°¤€èÕ¹‘•™¥¹•ì(€€€€€€€€€É•ÑÕÉ¸¹•İ	É¥•˜€üì€¸¸¹„°‰½‘äèm¹•İ	É¥•˜°€¸¸¹„¹‰½‘ä¹Í±¥” Ä¥tô€è„ì(€€€€€€€ô¤ì(€€€€€€€½¹Í½±”¹±½œ¡m½É¡•ÍÑÉ…Ñ½Ét¹É¥¡•€‘í•¹É¥¡•¹Í¥é•ô…ÉÑ¥±”‰É¥•™Í€¤ì((€€€€€€€€¼¼M…Ù”•¹É¥¡•…ÉÑ¥±•ÌÑ¼Ñ¡”Á•ÉÍ¥ÍÑ•¹Ğ±¥‰É…Éäƒ
+‹‹Šk
+³‹Š
+³
+tÉ•…°IML½ÍÉ…Á”½¹±ä°(€€€€€€€€¼¼¹•Ù•È$µ•¹•É…Ñ•…ÉÑ¥±•Ì€¡Ñ¡½Í”¡…Ù”¡…±±Õ¥¹…Ñ•UI1Ì¤¸(€€€€€€€½¹ÍĞ•¹É¥¡•‘ÉÑ¥±•Ì€ô‰É¥•™¥¹œ¹…ÉÑ¥±•Ì¹™¥±Ñ•È¡„€ôø(€€€€€€€€€„¹Í½ÕÉ•UÉ°€˜˜•¹É¥¡•¹¡…Ì¡„¹Í½ÕÉ•UÉ°¤€˜˜€„¡„…Ì…¹ä¤¹…¥•¹•É…Ñ•(€€€€€€€€¤ì(€€€€€€€Í…Ù•ÉÑ¥±•ÍQ½1¥‰É…Éä¡•¹É¥¡•‘ÉÑ¥±•Ì¤¹…Ñ ¡”€ôø(€€€€€€€€€½¹Í½±”¹±½œ ‰m½É¡•ÍÑÉ…Ñ½Ét1¥‰É…ÉäÍ…Ù”™…¥±•€¡¹½¸µ™…Ñ…°¤èˆ°MÑÉ¥¹œ¡”¤¹Í±¥” À°€àÀ¤¤(€€€€€€€€¤ì((€€€€€€€€¼¼I”µÍ…Ù”‰É¥•™¥¹œİ¥Ñ •¹É¥¡•‰É¥•™ÌÍ¼ÕÍ•ÉÌÍ•”•µ¥¹¤ÍÕµµ…É¥•Ì¥µµ•‘¥…Ñ•±ä¸(€€€€€€€€¼¼Q¡¥ÌÍ…Ù”¥Ì‰•ÍĞµ•™™½ÉĞƒ
+‹‹Šk
+³‹Š
+³
+t¥˜¥Ğ™…¥±Ì€¡ÍÕ‰É•ÅÕ•ÍĞ±¥µ¥Ğ¤°Ñ¡”ÁÉ”µÍ…Ù”½Áä(€€€€€€€€¼¼€¡İ¥Ñ •¹•É¥Œ‰É¥•™Ì¤¥Ì…±É•…‘ä¥¸I•‘¥Ì…¹Ñ¡”±¥‰É…Éäİ¥±°ÁÉ½Á……Ñ”(€€€€€€€€¼¼•¹É¥¡•‰É¥•™Ì½¸Ñ¡”¹•áĞÉ•™É•Í å±”¸(€€€€€€€ÑÉäì(€€€€€€€€€…İ…¥ĞÍÑ½É…”¹Í…Ù”¡‰É¥•™¥¹œ°ìÉ•ÅÕ¥É•A•ÉÍ¥ÍÑ•¹ĞèÑÉÕ”ô¤ì(€€€€€€€€€½¹Í½±”¹±½œ ‰m½É¡•ÍÑÉ…Ñ½ÉtI”µÍ…Ù•‰É¥•™¥¹œİ¥Ñ •¹É¥¡•‰É¥•™Ìˆ¤ì(€€€€€€€ô…Ñ €¡Í…Ù•ÉÈ¤ì(€€€€€€€€€½¹Í½±”¹±½œ ‰m½É¡•ÍÑÉ…Ñ½ÉtI”µÍ…Ù”™…¥±•€¡¹½¸µ™…Ñ…°°ÁÉ”µÍ…Ù”¥¹Ñ…Ğ¤èˆ°MÑÉ¥¹œ¡Í…Ù•ÉÈ¤¹Í±¥” À°€àÀ¤¤ì(€€€€€€€ô(€€€€€ô(€€€ô…Ñ €¡”¤ì(€€€€€½¹Í½±”¹±½œ ‰m½É¡•ÍÑÉ…Ñ½Ét	É¥•˜•¹É¥¡µ•¹Ğ™…¥±•€¡¹½¸µ™…Ñ…°¤èˆ°MÑÉ¥¹œ¡”¤¹Í±¥” À°€ÄÀÀ¤¤ì(€€€ô(€ô((€€¼¼	Õ¥±Í…Ù•‘Q¼™É½´ÁÉ”µÍ…Ù”É•ÍÕ±ĞÍ¼•¹É¥¡µ•¹ĞÍ…Ù”™…¥±ÕÉ•Ì‘½¸Ğ(€€¼¼¥¹½ÉÉ•Ñ±äÉ•Á½ÉĞUÁÍÑ…Í …Ìµ¥ÍÍ¥¹œ•Ù•¸İ¡•¸Ñ¡”½É”‰É¥•™¥¹œİ…ÌÍ…Ù•¸(€½¹ÍĞ¡•…±Ñ €ôÍÑ½É…”¹•Ñ!•…±Ñ  ¤ì(€½¹ÍĞÍ…Ù•‘Q¼€ôl(€€€€¸¸¸¡ÁÉ•M…Ù•MÕ•ÍÌ€ül‰ÕÁÍÑ…Í ‰t€èmt¤°(€€€€‰µ•µ½Éäˆ°(€tì(€½¹ÍĞÍÑ½É…•ÉÉ½ÉÌ€ô¡•…±Ñ ¹™¥±Ñ•È¡ €ôø€… ¹¡•…±Ñ¡ä¤¹µ…À¡ €ôø€¡ì¥è ¹¥°•ÉÉ½Èè ¹±…ÍÑÉÉ½Èô¤¤ì((€É•ÑÕÉ¸ì‰É¥•™¥¹œ°ÕÍ•‘AÉ½Ù¥‘•È°Í…Ù•‘Q¼°ÍÑ½É…•ÉÉ½ÉÌôì)ô()•áÁ½ÉĞ…Íå¹Œ™Õ¹Ñ¥½¸•ÑMåÍÑ•µ!•…±Ñ  ¤ì(€½¹ÍĞÍÑ½É…”€ô…İ…¥Ğ‰Õ¥±‘MÑ½É…•5…¹…•È ¤ì(€½¹ÍĞÑÉ…­•È€ô•ÑQÉ…­•È ¤ì((€É•ÑÕÉ¸ì(€€€ÍÑ½É…”èÍÑ½É…”¹•Ñ!•…±Ñ  ¤°(€€€±±´èì(€€€€€ÁÉ¥µ…Éäè€€ì¥è€‰…¹Ñ¡É½Á¥ŒµÁÉ¥µ…Éäˆ°€€…±±ÌèÑÉ…­•È¹•Ğ ‰…¹Ñ¡É½Á¥ŒµÁÉ¥µ…Éäé±±´ˆ¤°€€±¥µ¥Ğè9Õµ‰•È¡ÁÉ½•ÍÌ¹•¹Ø¹9Q!I=A%}AI%5Ie}%1e}1%5%P€€€üü€À¤ô°(€€€€€Í•½¹‘…Éäèì¥è€‰…¹Ñ¡É½Á¥ŒµÍ•½¹‘…Éäˆ°…±±ÌèÑÉ…­•È¹•Ğ ‰…¹Ñ¡É½Á¥ŒµÍ•½¹‘…Éäé±±´ˆ¤°±¥µ¥Ğè9Õµ‰•È¡ÁÉ½•ÍÌ¹•¹Ø¹9Q!I=A%}M=9Ie}%1e}1%5%P€üü€À¤ô°(€€€€€Ñ•ÉÑ¥…Éäè€ì¥è€‰…¹Ñ¡É½Á¥ŒµÑ•ÉÑ¥…Éäˆ°€…±±ÌèÑÉ…­•È¹•Ğ ‰…¹Ñ¡É½Á¥ŒµÑ•ÉÑ¥…Éäé±±´ˆ¤°€±¥µ¥Ğè9Õµ‰•È¡ÁÉ½•ÍÌ¹•¹Ø¹9Q!I=A%}QIQ%Ie}%1e}1%5%P€€üü€À¤ô°(€€€€€•µ¥¹¤è€€€ì¥è€‰•µ¥¹¤ˆ°€€€€€€€€€€€€€…±±ÌèÑÉ…­•È¹•Ğ ‰•µ¥¹¤é±±´ˆ¤°€€€€€€€€€€€€€±¥µ¥Ğè9Õµ‰•È¡ÁÉ½•ÍÌ¹•¹Ø¹5%9%}%1e}1%5%P€üü€ÄÔÀÀ¤ô°(€€€ô°(€€€¡…Í¹Ñ¡É½Á¥-•äè€„…ÁÉ½•ÍÌ¹•¹Ø¹9Q!I=A%}A%}-d°(€€€¡…Í•µ¥¹¥-•äè€€€€„…ÁÉ½•ÍÌ¹•¹Ø¹5%9%}A%}-d°(€€€¡…ÍUÁÍÑ…Í è€€€€€€„…ÁÉ½•ÍÌ¹•¹Ø¹UAMQM!}I%M}IMQ}UI0°(€€€¡…ÍQ•±•É…´è€€€€€„…ÁÉ½•ÍÌ¹•¹Ø¹Q1I5}	=Q}Q=-8°(€€€Ñ¥µ•ÍÑ…µÀè¹•Ü…Ñ” ¤¹Ñ½%M=MÑÉ¥¹œ ¤°(€ôì)ô(4(4(

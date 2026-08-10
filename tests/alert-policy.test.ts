@@ -12,7 +12,7 @@ import { articleMatchesAlertTopic, alertSourceLabel, cleanAlertText } from "../s
 import { mergeMonitorArticles, selectMonitorArticles } from "../src/lib/monitor-articles.ts";
 import { articlesForSubscriber, sourceGroupForArticle, validateSourceGroups } from "../src/lib/alert-sources.ts";
 import { itemCheckpointKey, sourceCheckpointKey } from "../src/lib/source-item-checkpoints.ts";
-import { isLikelyCorruptedText, isLikelyHeadlineFragment, repairMojibake } from "../src/lib/text-quality.ts";
+import { hasDirectArticleUrl, isDisplayableNewsArticle, isLikelyCorruptedText, isLikelyHeadlineFragment, repairMojibake } from "../src/lib/text-quality.ts";
 
 function briefing(articles: Article[]): Briefing {
   return { lastUpdated: "test", articles, sidebar: {} as Briefing["sidebar"] };
@@ -337,6 +337,25 @@ test("navigation copy and scraped sentence fragments never alert", () => {
     const article = { ...testArticle(700, headline, "https://home.treasury.gov/news/press-releases/sb0700"), date: new Date().toISOString() };
     assert.equal(scoreArticle(article, { threshold: 0, maxAgeHours: null }).shouldAlert, false);
   }
+});
+
+test("website news requires a specific direct article URL", () => {
+  assert.equal(hasDirectArticleUrl("https://news.google.com/rss/search?q=OFAC"), false);
+  assert.equal(hasDirectArticleUrl("https://www.federalreserve.gov/supervisionreg/enforcement-actions-about.htm"), false);
+  assert.equal(hasDirectArticleUrl("https://home.treasury.gov/news/press-releases/sb0598"), true);
+  assert.equal(hasDirectArticleUrl("https://news.google.com/articles/example"), true);
+  assert.equal(isDisplayableNewsArticle({
+    headline: "An official website of the United States Government",
+    body: ["navigation copy"],
+    sourceUrl: "https://www.federalreserve.gov/supervisionreg/enforcement-actions-about.htm",
+  }), false);
+});
+
+test("FinCEN endpoint preserves static records when extra cache is unavailable", () => {
+  const route = readFileSync(new URL("../app/api/fincen/route.ts", import.meta.url), "utf8");
+  const fetcher = readFileSync(new URL("../src/lib/fincen-fetcher.ts", import.meta.url), "utf8");
+  assert.ok(route.includes("loadExtraFinCEN().catch(() => [])"));
+  assert.ok(fetcher.includes("Array.isArray(parsed)"));
 });
 
 test("OCC yearly and Federal Reserve enforcement landing pages are not direct alert links", async () => {

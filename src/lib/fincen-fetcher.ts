@@ -293,7 +293,10 @@ function isNewRelease(release: ParsedRelease, known: KnownSet): boolean {
 export async function loadExtraFinCEN(): Promise<FinCENPenalty[]> {
   const raw = await redisGet(FINCEN_EXTRA_KEY);
   if (!raw) return [];
-  try { return JSON.parse(raw) as FinCENPenalty[]; } catch { return []; }
+  try {
+    const parsed: unknown = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed as FinCENPenalty[] : [];
+  } catch { return []; }
 }
 
 /**

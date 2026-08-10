@@ -9,7 +9,9 @@ export async function GET(request: NextRequest) {
   const yearParam = url.searchParams.get("year");
 
   // Merge static database with any auto-synced entries stored in Redis
-  const extra = await loadExtraFinCEN();
+  // Keep the built-in enforcement database available even when Redis is
+  // unavailable or contains a malformed legacy value.
+  const extra = await loadExtraFinCEN().catch(() => []);
   const all: FinCENPenalty[] = [...FINCEN_PENALTIES, ...extra];
 
   const records = yearParam
