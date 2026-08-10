@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10T15:08:32.722Z",
+  "updatedAt": "2026-08-10T17:08:01.886Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260807",
@@ -3071,6 +3071,18 @@
   ],
   "ajNews": [
     {
+      "title": "Iran’s president says Khamenei is in ‘perfect health’",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/10/irans-president-says-khamenei-is-in-perfect?traffic_source=rss",
+      "date": "August 10, 2026",
+      "description": "Iran’s President Masoud Pezeshkian says Supreme Leader Ayatollah Mojtaba Khamenei had a message of “unity and cohesion”"
+    },
+    {
+      "title": "‘They need each other’: What’s behind the new Syria-Russia accord?",
+      "url": "https://www.aljazeera.com/news/2026/8/10/they-need-each-other-whats-behind-the-new-syria-russia-accord?traffic_source=rss",
+      "date": "August 10, 2026",
+      "description": "The Syrian-Russian agreement reflects a pragmatic approach redefining past alliances amid shifting geopolitics."
+    },
+    {
       "title": "War on Iran: Phase II: Day 30",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/10/war-on-iran-phase-ii-day-30?traffic_source=rss",
       "date": "August 10, 2026",
@@ -3081,40 +3093,9 @@
       "url": "https://www.aljazeera.com/opinions/2026/8/10/iran-changed-the-rules-in-hormuz-the-gulf-is-changing-the-rules-for-iran?traffic_source=rss",
       "date": "August 10, 2026",
       "description": "Iran gained leverage in Hormuz, but its neighbours are reshaping regional security to limit what Tehran can do with it."
-    },
-    {
-      "title": "‘Long-range sanctions’: Ukraine hopes strikes cause Russia fear and losses",
-      "url": "https://www.aljazeera.com/news/2026/8/10/long-range-sanctions-ukraine-hopes-strikes-cause-russia-fear-and-losses?traffic_source=rss",
-      "date": "August 10, 2026",
-      "description": "Al Jazeera is given rare access to one of Ukraine&#039;s long-range drone units tasked with targeting Russia."
-    },
-    {
-      "title": "What’s behind Trump’s shift to economic pressure on Iran? Will it work?",
-      "url": "https://www.aljazeera.com/news/2026/8/10/whats-behind-trumps-shift-to-economic-pressure-on-iran-will-it-work?traffic_source=rss",
-      "date": "August 10, 2026",
-      "description": "Months into the war, Trump is returning to squeezing Iran&#039;s economy rather than military offensive for now."
-    },
-    {
-      "title": "At least 13 killed in Ukrainian drone attack on Russia’s Nizhnekamsk",
-      "url": "https://www.aljazeera.com/news/2026/8/10/at-least-13-killed-in-ukrainian-drone-attack-on-russias-nizhnekamsk?traffic_source=rss",
-      "date": "August 10, 2026",
-      "description": "A day of mourning has been declared in the Russian republic of Tatarstan after the attack killed 13 people."
-    },
-    {
-      "title": "How significant is Mohsen Rezaee’s appointment as Iran’s security chief?",
-      "url": "https://www.aljazeera.com/news/2026/8/10/who-is-mohsen-rezaei-and-how-significant-is-his-appointment?traffic_source=rss",
-      "date": "August 10, 2026",
-      "description": "Former IRGC commander Rezaee will be taking over as secretary of Iran&#039;s top security body amid Hormuz talks."
     }
   ],
-  "occNews": [
-    {
-      "title": "OCC Announces Enforcement Actions for July 2026",
-      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-59.html",
-      "date": "July 16, 2026",
-      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for July 2026."
-    }
-  ],
+  "occNews": [],
   "economicsNews": [
     {
       "title": "Federal Reserve issues FOMC statement",
@@ -3201,6 +3182,12 @@
       "url": "https://www.bbc.co.uk/news/articles/ce3q5282ep3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 10, 2026",
       "description": "The Trump administration is said to be unbothered by the Israeli prime minister's rejection of the deal, viewing it as campaign rhetoric ahead of a general election."
+    },
+    {
+      "title": "'Total incinerated destruction': Canada wildfire evacuees wonder if they still have homes",
+      "url": "https://www.bbc.co.uk/news/articles/cx2lwv032j9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 10, 2026",
+      "description": "More than 12,000 people have been forced to evacuate over the weekend after a wildfire quickly tore through Canada's picturesque Okanagan region."
     },
     {
       "title": "Evidence that South African special forces murdered top detective shared with BBC",
@@ -3335,22 +3322,28 @@
       "description": "A group including Amazon founder Jeff Bezos advances its talks to buy about a 30% stake in Liverpool, BBC Sport has been told."
     },
     {
+      "title": "Taylor Farms recalls jalapeno products after salmonella outbreak",
+      "url": "https://www.bbc.co.uk/news/articles/cgljd9p6027o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 10, 2026",
+      "description": "Food producer Taylor Farms is recalling sandwiches, sauces and dips across 26 US states after a salmonella outbreak."
+    },
+    {
       "title": "Tech leaders say AI means less work - their staff say they work up to 90 hours a week",
       "url": "https://www.bbc.co.uk/news/articles/cvgx4yd1gl2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 10, 2026",
       "description": "Tech companies are not modelling their own claims of the technology giving people more free time."
     },
     {
-      "title": "You could be missing out on £150 off your energy bill - here's how to check",
-      "url": "https://www.bbc.co.uk/news/articles/czjlk8wx771o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 9, 2026",
-      "description": "Some people need to ensure they are named on their energy bill before the deadline to qualify for help."
-    },
-    {
       "title": "'You could smell someone' who worked at Raleigh",
       "url": "https://www.bbc.co.uk/news/articles/cx2kgwrv6gvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 10, 2026",
       "description": "The company was more than just a employer. For years, it was part of the fabric of Nottingham."
+    },
+    {
+      "title": "You could be missing out on £150 off your energy bill - here's how to check",
+      "url": "https://www.bbc.co.uk/news/articles/czjlk8wx771o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 9, 2026",
+      "description": "Some people need to ensure they are named on their energy bill before the deadline to qualify for help."
     },
     {
       "title": "Water outage forces Chessington theme park to close",
@@ -3465,12 +3458,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cdrv0k0j662o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 5, 2026",
       "description": "The meat has never been more expensive, due to supply shortages, but there's a big squeeze on profits."
-    },
-    {
-      "title": "Winemakers prosper but veg farms wilt in the drought",
-      "url": "https://www.bbc.co.uk/news/articles/c141vjlyjgko?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 6, 2026",
-      "description": "Growers in the West of England search for new crops to grow in a changing climate."
     },
     {
       "title": "Why airlines are warning over lithium-ion batteries",
@@ -3605,6 +3592,12 @@
       "description": "Coffees at some city centre outlets now cost £5. It's a story of tariffs, the climate, Gen Z cultural tastes, and savvy coffee farmers playing the market, writes Faisal Islam"
     },
     {
+      "title": "Jeff Bezos and Liverpool explained",
+      "url": "https://www.bbc.co.uk/sport/football/videos/cn0nw1j48pjo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 10, 2026",
+      "description": "BBC Sport's Sam Harris breaks down the potential new investment of Jeff Bezos into Liverpool."
+    },
+    {
       "title": "What do people want from Argos?",
       "url": "https://www.bbc.co.uk/news/videos/clyj57g4kkeo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 7, 2026",
@@ -3629,10 +3622,58 @@
       "description": "Tomos Morgan visits farm in Vale of Glamorgan to explain how the hot and dry spell affects crops."
     },
     {
-      "title": "Assignment",
-      "url": "https://www.bbc.co.uk/sounds/play/w3ct8h1h?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 4, 2026",
-      "description": "How amid the tents and the rubble Gaza is developing once again as an unlikely tech hub"
+      "title": "Colombia earthquake live: Magnitude 7.4 quake strikes near Bogota, 47 dead",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/8/10/colombia-earthquake-live-magnitude-7-4-quake-strikes-near-bogota-47-dead?traffic_source=rss",
+      "date": "August 10, 2026",
+      "description": "Officials say at least 47 people have been killed in the quake with some still trapped under rubble."
+    },
+    {
+      "title": "Photos: 7.4-magnitude earthquake rocks western Colombia",
+      "url": "https://www.aljazeera.com/gallery/2026/8/10/photos-7-4-magnitude-earthquake-rocks-western-colombia?traffic_source=rss",
+      "date": "August 10, 2026",
+      "description": "A powerful earthquake kills more than 47 people and topples buildings across western Colombia."
+    },
+    {
+      "title": "DRC’s Ebola outbreak began months before it was officially declared, says WHO",
+      "url": "https://www.aljazeera.com/news/2026/8/10/drcs-ebola-outbreak-began-months-before-officially-declared-says-who?traffic_source=rss",
+      "date": "August 10, 2026",
+      "description": "Earlier cases of the disease were wrongly attributed to malaria and typhoid, the WHO said."
+    },
+    {
+      "title": "‘We have no one’: Palestinians react to Israel’s rejection of Gaza plan",
+      "url": "https://www.aljazeera.com/features/2026/8/10/we-have-no-one-palestinians-react-to-israels-rejection-of-gaza-plan?traffic_source=rss",
+      "date": "August 10, 2026",
+      "description": "Netanyahu&#039;s declaration has reinforced doubts of lasting calm without Israeli withdrawal, reconstruction and guarantees."
+    },
+    {
+      "title": "Sudan’s army chief holds unannounced talks on national dialogue",
+      "url": "https://www.aljazeera.com/news/2026/8/10/sudans-army-chief-holds-unannounced-talks-on-national-dialogue?traffic_source=rss",
+      "date": "August 10, 2026",
+      "description": "Al-Burhan engaged in discreet consultations aiming to pave the way for a comprehensive Sudanese dialogue conference."
+    },
+    {
+      "title": "Anas al-Sharif: One year on from Israel’s killing of Al Jazeera reporter",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/10/anas-al-sharif-one-year-on-from-israels-killing-of-al-jazeera-reporter?traffic_source=rss",
+      "date": "August 10, 2026",
+      "description": "10 August marks one year on from Israel’s killing of Al Jazeera reporter Anas al-Sharif and fellow colleagues."
+    },
+    {
+      "title": "Oil prices, stocks surge as Hormuz closure drags on",
+      "url": "https://www.aljazeera.com/economy/2026/8/10/oil-prices-stocks-surge-as-hormuz-closure-drags-on?traffic_source=rss",
+      "date": "August 10, 2026",
+      "description": "US petrol prices dropped nine cents last week but could again surge if the strait closure continues, analysts warn."
+    },
+    {
+      "title": "Earthquake with 7.4 magnitude hits Colombia, killing at least 47",
+      "url": "https://www.aljazeera.com/news/2026/8/10/7-4-magnitude-earthquake-hits-colombia-killing-at-least-20?traffic_source=rss",
+      "date": "August 10, 2026",
+      "description": "Emergency teams are still assessing the impact of the quake that was felt across the region."
+    },
+    {
+      "title": "Indian police attack protesters seeking action over ‘exam irregularities’",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/10/indian-police-attack-protesters-seeking-action-over-exam?traffic_source=rss",
+      "date": "August 10, 2026",
+      "description": "Indian police attack protesters seeking action over ‘exam irregularities’ in Jharkhand."
     },
     {
       "title": "Ben-Gvir posts AI video of starving Palestinian ahead of elections",
@@ -3705,48 +3746,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/10/former-mp-opens-fire-in-thailands-second-shooting-within-days?traffic_source=rss",
       "date": "August 10, 2026",
       "description": "A second shooting has occurred in Thailand within days after a former MP opened fire outside a government office."
-    },
-    {
-      "title": "UEFA Super Cup – PSG vs Aston Villa: Prediction, start time, how to watch",
-      "url": "https://www.aljazeera.com/sports/2026/8/10/uefa-super-cup-psg-vs-aston-villa-prediction-start-time-how-to-watch?traffic_source=rss",
-      "date": "August 10, 2026",
-      "description": "As Champions League and Europa League winners face off, here is everything to know on the venue, history and more."
-    },
-    {
-      "title": "Protesters rally in India’s Jharkhand over alleged exam irregularities",
-      "url": "https://www.aljazeera.com/news/2026/8/10/protesters-rally-in-indias-jharkhand-over-alleged-exam-irregularities?traffic_source=rss",
-      "date": "August 10, 2026",
-      "description": "Demonstrators in Ranchi demand an overhaul of ‌the state&#039;s examination system."
-    },
-    {
-      "title": "Remembering Anas, Mohammed and Gaza’s other slain journalists",
-      "url": "https://www.aljazeera.com/opinions/2026/8/10/remembering-anas-mohammed-and-gazas-other-slain-journalists?traffic_source=rss",
-      "date": "August 10, 2026",
-      "description": "Our colleagues in Gaza have taken the journalism profession to an unseen level. In doing so, they&#039;ve paid a heavy price."
-    },
-    {
-      "title": "Powerful Typhoon Dolphin hits China, prompting flood and landslide warnings",
-      "url": "https://www.aljazeera.com/gallery/2026/8/10/powerful-typhoon-dolphin-hits-china-prompting-flood-and-landslide-warnings?traffic_source=rss",
-      "date": "August 10, 2026",
-      "description": "Typhoon Dolphin struck eastern China, affecting millions with strong winds, heavy rain, and massive waves."
-    },
-    {
-      "title": "June and July hottest on record in Western Europe, monitor says",
-      "url": "https://www.aljazeera.com/news/2026/8/10/june-and-july-hottest-on-record-in-western-europe-monitor-says?traffic_source=rss",
-      "date": "August 10, 2026",
-      "description": "The Copernicus Climate Change Service says historically low rainfall has worsened the situation in several countries."
-    },
-    {
-      "title": "UEFA, AFC, CONCACAF hit out at Infantino over World Cup privatisation plan",
-      "url": "https://www.aljazeera.com/sports/2026/8/10/uefa-afc-concacaf-hit-out-at-infantino-over-world-cup-privatisation-plan?traffic_source=rss",
-      "date": "August 10, 2026",
-      "description": "Three confederations release letter criticising FIFA&#039;s president over his proposal to sell off stakes in the World Cup."
-    },
-    {
-      "title": "One year on, Gaza mourns journalist Anas al-Sharif’s death",
-      "url": "https://www.aljazeera.com/gallery/2026/8/10/one-year-on-gaza-mourns-journalist-anas-al-sharifs-death?traffic_source=rss",
-      "date": "August 10, 2026",
-      "description": "Gaza remembers Anas al-Sharif, a journalist whose voice defined the impact of war on civilians&#039; lives."
     }
   ]
 }
