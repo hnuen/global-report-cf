@@ -278,7 +278,7 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
     id: "iran",
     name: "Iran Sanctions",
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions",
-    region: "Iran", category: "country", lastUpdated: "Jul 24, 2026", status: "active",
+    region: "Iran", category: "country", lastUpdated: "Aug 07, 2026", status: "active",
     executiveOrders: [
       // 26 EOs — newest first — all media IDs verified from OFAC page
       { number: "13949", title: "Blocking Property of Certain Persons with Respect to the Conventional Arms Activities of Iran", date: "September 21, 2020", url: "https://ofac.treasury.gov/media/48161/download?inline" },
@@ -325,7 +325,6 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
       // from the same kind of generic placeholder to its real text, verified
       // against the GL's own PDF (media/936206) — GL X does belong here.
                                                 { number: "GL Z", title: "Iran General License Z", date: "July 10, 2026", url: "https://ofac.treasury.gov/media/936551/download?inline", addedDate: "July 14, 2026" , expires: "September 12, 2026"},
-{ number: "GL Y", title: "Iran General License Y", date: "June 21, 2026", url: "https://ofac.treasury.gov/media/936546/download?inline", expires: "August 9, 2026", addedDate: "July 10, 2026" },
 { number: "GL L", title: "Iran General License L", date: "October 8, 2020", url: "https://ofac.treasury.gov/media/48626/download?inline", addedDate: "June 27, 2026" },
       { number: "GL Q", title: "Iran General License Q", date: "May 20, 2025", url: "https://ofac.treasury.gov/media/934291/download?inline", addedDate: "June 27, 2026" },
       // Removed 2026-06-26: GL W, GL V, GL T moved to archive below — each
@@ -359,7 +358,8 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
     ],
 archive: {
       generalLicenses: [
-                { number: "GL X1", title: "Revocation and Wind Down of June 21, 2026 Authorization for the Production, Delivery and Sale of Crude Oil, Petrochemical Products, and Petroleum Products of Iranian Origin", date: "July 7, 2026", archived: true, archivedNote: "Expired July 17, 2026 — no successor GL detected", archivedDate: "July 17, 2026" },
+                                { number: "GL Y", title: "Iran General License Y", date: "June 21, 2026", archived: true, archivedNote: "Expired August 9, 2026 — no successor GL detected", archivedDate: "August 9, 2026" },
+{ number: "GL X1", title: "Revocation and Wind Down of June 21, 2026 Authorization for the Production, Delivery and Sale of Crude Oil, Petrochemical Products, and Petroleum Products of Iranian Origin", date: "July 7, 2026", archived: true, archivedNote: "Expired July 17, 2026 — no successor GL detected", archivedDate: "July 17, 2026" },
 { number: "GL X", title: "Authorizing the Production, Delivery and Sale of Crude Oil, Petrochemical Products, and Petroleum Products of Iranian-Origin", date: "June 21, 2026", url: "https://ofac.treasury.gov/media/936206/download?inline", archived: true, archivedNote: "Revoked and superseded by GL X1 effective July 7, 2026" },
         { number: "GL 2 (unnamed)", title: "Authorizing U.S. persons who are employees or contractors of six international organizations to perform transactions for the conduct of the official business of those organizations in or involving Iran", archived: true, archivedNote: "Incorporated into 31 CFR Part 560" },
         { number: "GL (Personal Comms)", title: "Exportation of certain services and software over the internet", archived: true, archivedNote: "Incorporated into 31 CFR Part 560" },
