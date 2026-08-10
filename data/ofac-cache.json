@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10T17:08:01.886Z",
+  "updatedAt": "2026-08-10T19:08:16.250Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260807",
@@ -3063,6 +3063,12 @@
       "description": "Russian officials say another 75 people were injured by the attack - one of the deadliest Ukrainian drone attacks since Moscow's full-scale invasion."
     },
     {
+      "title": "Russian court bars only anti-war party from standing in parliamentary elections",
+      "url": "https://www.bbc.co.uk/news/articles/cy9w1l5jr7lo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 10, 2026",
+      "description": "Russia's only liberal, anti-war party will not be able to take part in next month's parliamentary elections, a Moscow court rules."
+    },
+    {
       "title": "Iran says deal with Oman on Strait of Hormuz is in final stages",
       "url": "https://www.bbc.co.uk/news/articles/ckg9d3eyeggo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 6, 2026",
@@ -3070,6 +3076,18 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Iran hierarchy consolidation as IRGC veteran tapped for key security role",
+      "url": "https://www.aljazeera.com/news/2026/8/10/iran-hierarchy-consolidation-as-irgc-veteran-tapped-for-key-security-role?traffic_source=rss",
+      "date": "August 10, 2026",
+      "description": "The office of the supreme leader has named a new security chief and established war commanders in influential roles."
+    },
+    {
+      "title": "Oman trying to contain extensive oil spill from stricken tanker",
+      "url": "https://www.aljazeera.com/news/2026/8/10/oman-trying-to-contain-extensive-oil-spill-from-stricken-tanker?traffic_source=rss",
+      "date": "August 10, 2026",
+      "description": "The Caroline Bezengi is believed to be part of Russia&#039;s &#039;shadow fleet&#039; that Moscow uses to circumvent Western sanctions."
+    },
     {
       "title": "Iran’s president says Khamenei is in ‘perfect health’",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/10/irans-president-says-khamenei-is-in-perfect?traffic_source=rss",
@@ -3095,7 +3113,14 @@
       "description": "Iran gained leverage in Hormuz, but its neighbours are reshaping regional security to limit what Tehran can do with it."
     }
   ],
-  "occNews": [],
+  "occNews": [
+    {
+      "title": "OCC Announces Enforcement Actions for July 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-59.html",
+      "date": "July 16, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for July 2026."
+    }
+  ],
   "economicsNews": [
     {
       "title": "Federal Reserve issues FOMC statement",
@@ -3190,6 +3215,18 @@
       "description": "More than 12,000 people have been forced to evacuate over the weekend after a wildfire quickly tore through Canada's picturesque Okanagan region."
     },
     {
+      "title": "We are chasing Ebola virus - it is ahead of us, WHO warns",
+      "url": "https://www.bbc.co.uk/news/articles/c5ydx7m8gzeo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 10, 2026",
+      "description": "Infection rates are high, adding to concern that authorities are struggling to get to grips with the disease."
+    },
+    {
+      "title": "New train service connects Finland and Sweden for first time in decades",
+      "url": "https://www.bbc.co.uk/news/articles/cx2lwpzz6qjo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 10, 2026",
+      "description": "The service will enable rail travel from Portugal to Lapland - what is believed to be the longest train journey in Europe."
+    },
+    {
       "title": "Evidence that South African special forces murdered top detective shared with BBC",
       "url": "https://www.bbc.co.uk/news/articles/cly8djwgem0o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 9, 2026",
@@ -3212,48 +3249,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cx2rgzyplg2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 10, 2026",
       "description": "Typhoon Dolphin has made landfall, bringing strong winds and heavy rain across eastern China including Shanghai."
-    },
-    {
-      "title": "'Body in suitcase' found in Australia turns out to be lifelike doll",
-      "url": "https://www.bbc.co.uk/news/articles/clyqg4w3gz9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 10, 2026",
-      "description": "Forensics revealed that the \"realistic\" looking body was in fact not human."
-    },
-    {
-      "title": "Battle for Mali base has killed dozens of militants, army says",
-      "url": "https://www.bbc.co.uk/news/articles/cly8j7ygwvlo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 10, 2026",
-      "description": "The army says it was involved in fierce fighting but disputes that Islamists took control of the garrison."
-    },
-    {
-      "title": "Israel rejects Trump's 15-point plan for Gaza, Netanyahu says",
-      "url": "https://www.bbc.co.uk/news/articles/c5yw4lpe0yeo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 9, 2026",
-      "description": "Israel's PM says its military will not pull out from Gaza until Hamas is \"genuinely\" disarmed."
-    },
-    {
-      "title": "Suspected crime boss Kinahan spends first night in custody in Ireland",
-      "url": "https://www.bbc.co.uk/news/articles/c62qd5plzp6o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 10, 2026",
-      "description": "The Irish Prison Service bought a bulletproof and bombproof van to transport the 49-year-old to court after his extradition from Dubai."
-    },
-    {
-      "title": "Drones spotted over German base days after Leipzig bomb incident",
-      "url": "https://www.bbc.co.uk/news/articles/cwyeg1ljp2eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 9, 2026",
-      "description": "Police are investigating a drone sighting over a miltary base reportedly used for housing Patriot missile system parts."
-    },
-    {
-      "title": "Ancient Roman shipwreck discovered off Sicily coast",
-      "url": "https://www.bbc.co.uk/news/articles/cvgx1kpz17go?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 9, 2026",
-      "description": "Italy's culture minister says it is one of the most important underwater archaeological finds in years."
-    },
-    {
-      "title": "Residents warned to brace for the worst as Canada wildfire rages out of control",
-      "url": "https://www.bbc.co.uk/news/articles/cx25dkwk3e3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 10, 2026",
-      "description": "One person has died in the Bald Range wildfire in British Columbia which has spread over 53 sq miles."
     },
     {
       "title": "Hundreds arrested over French wildfires, but who is to blame?",
@@ -3622,16 +3617,46 @@
       "description": "Tomos Morgan visits farm in Vale of Glamorgan to explain how the hot and dry spell affects crops."
     },
     {
-      "title": "Colombia earthquake live: Magnitude 7.4 quake strikes near Bogota, 47 dead",
+      "title": "111 dead after Colombia quakes leave trail of destruction",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/10/111-dead-after-colombia-quakes-leave-trail-of-destruction?traffic_source=rss",
+      "date": "August 10, 2026",
+      "description": "At least 111 people are dead after a destructive 7.4 magnitude earthquake hit western Colombia."
+    },
+    {
+      "title": "Lebanon ‘files new lawsuit against’ ex-central bank chief Riad Salameh",
+      "url": "https://www.aljazeera.com/news/2026/8/10/lebanon-files-new-lawsuit-against-ex-central-bank-chief-riad-salameh?traffic_source=rss",
+      "date": "August 10, 2026",
+      "description": "Reports citing judicial sources say former commercial banker also indicted over alleged financial crimes."
+    },
+    {
+      "title": "Netanyahu’s veto and the limits of American power",
+      "url": "https://www.aljazeera.com/opinions/2026/8/10/netanyahus-veto-and-the-limits-of-american-power?traffic_source=rss",
+      "date": "August 10, 2026",
+      "description": "Trump has the leverage to enforce his Gaza plan. Netanyahu is betting that he lacks the political will to use it."
+    },
+    {
+      "title": "Zuckerberg’s yacht crew did not hear call for help, says spokesperson",
+      "url": "https://www.aljazeera.com/news/2026/8/10/zuckerbergs-yacht-crew-did-not-hear-call-for-help-says-spokesperson?traffic_source=rss",
+      "date": "August 10, 2026",
+      "description": "A skiff off Alaska coast received help from a nearby cruise ship after Zuckerberg&#039;s yacht crew did not respond in time."
+    },
+    {
+      "title": "Palestinian club football to restart in September after Gaza war suspension",
+      "url": "https://www.aljazeera.com/sports/2026/8/10/palestinian-club-football-to-restart-in-september-after-gaza-war-suspension?traffic_source=rss",
+      "date": "August 10, 2026",
+      "description": "Palestinian sports leagues, including professional football, were halted due to Israel&#039;s genocidal war on Palestinians."
+    },
+    {
+      "title": "Death toll rises to 69",
       "url": "https://www.aljazeera.com/news/liveblog/2026/8/10/colombia-earthquake-live-magnitude-7-4-quake-strikes-near-bogota-47-dead?traffic_source=rss",
       "date": "August 10, 2026",
-      "description": "Officials say at least 47 people have been killed in the quake with some still trapped under rubble."
+      "description": "Officials say at least 111 people have been killed in the quake, with some still trapped under rubble."
     },
     {
       "title": "Photos: 7.4-magnitude earthquake rocks western Colombia",
       "url": "https://www.aljazeera.com/gallery/2026/8/10/photos-7-4-magnitude-earthquake-rocks-western-colombia?traffic_source=rss",
       "date": "August 10, 2026",
-      "description": "A powerful earthquake kills more than 47 people and topples buildings across western Colombia."
+      "description": "A powerful earthquake kills more than 69 people and topples buildings across western Colombia."
     },
     {
       "title": "DRC’s Ebola outbreak began months before it was officially declared, says WHO",
@@ -3664,7 +3689,7 @@
       "description": "US petrol prices dropped nine cents last week but could again surge if the strait closure continues, analysts warn."
     },
     {
-      "title": "Earthquake with 7.4 magnitude hits Colombia, killing at least 47",
+      "title": "Earthquake with 7.4 magnitude hits Colombia, killing at least 69",
       "url": "https://www.aljazeera.com/news/2026/8/10/7-4-magnitude-earthquake-hits-colombia-killing-at-least-20?traffic_source=rss",
       "date": "August 10, 2026",
       "description": "Emergency teams are still assessing the impact of the quake that was felt across the region."
@@ -3704,48 +3729,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/10/gaza-honours-al-jazeeras-anas-al-sharif-and-mohammed-qraiqea?traffic_source=rss",
       "date": "August 10, 2026",
       "description": "Gaza honours Al Jazeera’s Anas al-Sharif and Mohammed Qraiqea"
-    },
-    {
-      "title": "Why choosing low-fat dairy is not necessarily better for your health",
-      "url": "https://www.aljazeera.com/news/2026/8/10/why-choosing-low-fat-dairy-is-not-necessarily-better-for-your-health?traffic_source=rss",
-      "date": "August 10, 2026",
-      "description": "For years, we thought low-fat dairy was the way to manage obesity. New research is increasingly questioning this logic."
-    },
-    {
-      "title": "Nigel Farage vows to deport foreign criminals from UK prisons",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/10/nigel-farage-vows-to-deport-foreign-criminals-from-uk-prisons?traffic_source=rss",
-      "date": "August 10, 2026",
-      "description": "Nigel Farage vows to deport foreign criminals from UK prisons"
-    },
-    {
-      "title": "One million evacuated as Typhoon Dolphin pummels east China: What we know",
-      "url": "https://www.aljazeera.com/news/2026/8/10/one-million-evacuated-as-typhoon-dolphin-pummels-east-china-what-we-know?traffic_source=rss",
-      "date": "August 10, 2026",
-      "description": "Hundreds of flights have been grounded in China due to weather conditions caused by Dolphin."
-    },
-    {
-      "title": "Has the army turned the page on control of western Sudan?",
-      "url": "https://www.aljazeera.com/news/2026/8/10/has-the-sudanese-army-turned-the-page-on-control-of-western-sudan?traffic_source=rss",
-      "date": "August 10, 2026",
-      "description": "Sudan&#039;s military repels a series of offensives by the RSF paramilitary in a strategically significant region."
-    },
-    {
-      "title": "Jeff Bezos consortium nears deal to buy stake in Liverpool FC: Reports",
-      "url": "https://www.aljazeera.com/sports/2026/8/10/jeff-bezos-consortium-nears-deal-to-buy-stake-in-liverpool-fc-reports?traffic_source=rss",
-      "date": "August 10, 2026",
-      "description": "Investment reportedly values the club at about $5.9bn, making it one of the largest ever football club valuations."
-    },
-    {
-      "title": "Taiwan holds military drills to prepare for invasion by China",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/10/taiwan-holds-military-drills-to-prepare-for-invasion-by-china?traffic_source=rss",
-      "date": "August 10, 2026",
-      "description": "Taiwan holds military drills to prepare for invasion by China"
-    },
-    {
-      "title": "Former MP opens fire in Thailand’s second shooting within days",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/10/former-mp-opens-fire-in-thailands-second-shooting-within-days?traffic_source=rss",
-      "date": "August 10, 2026",
-      "description": "A second shooting has occurred in Thailand within days after a former MP opened fire outside a government office."
     }
   ]
 }
