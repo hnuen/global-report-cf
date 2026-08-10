@@ -24,6 +24,15 @@ export interface FinCENPenalty {
 
 export const FINCEN_PENALTIES: FinCENPenalty[] = [
   {
+    id:"F2026-02", date:"2026-08-03", year:2026,
+    institution:"UBS Financial Services Inc.", institutionType:"Securities",
+    penalty:125000000, penaltyDisplay:"$125M",
+    agencies:["FinCEN","SEC","CFTC","FINRA"], voluntaryDisclosure:false, egregious:true,
+    violation:"Willful BSA violations — persistent AML monitoring and suspicious-activity reporting failures after the 2018 consent order",
+    program:"BSA / AML / Securities", sourceUrl:"https://www.fincen.gov/system/files/2026-07/UBS-Consent-Order.pdf",
+    notes:"$48M credited for parallel SEC, CFTC, and FINRA payments; $62M payable to Treasury and up to $15M remaining subject to the order",
+  },
+  {
     id:"F2026-01", date:"2026-03-06", year:2026,
     institution:"Canaccord Genuity LLC", institutionType:"Securities",
     penalty:80000000, penaltyDisplay:"$80M",
@@ -34,7 +43,7 @@ export const FINCEN_PENALTIES: FinCENPenalty[] = [
   {
     id:"F2025-02", date:"2025-12-09", year:2025,
     institution:"Paxful, Inc. and Paxful USA, Inc.", institutionType:"MSB/Crypto",
-    penalty:7700000, penaltyDisplay:"$7.7M",
+    penalty:3500000, penaltyDisplay:"$3.5M",
     agencies:["FinCEN"], voluntaryDisclosure:false, egregious:false,
     violation:"BSA violations — failure to register as MSB; failure to implement effective AML program for P2P crypto marketplace",
     program:"BSA / AML / Crypto", sourceUrl:"https://www.fincen.gov/system/files/2025-12/PaxfulConsentOrder.pdf",

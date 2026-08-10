@@ -13,6 +13,8 @@ import { mergeMonitorArticles, selectMonitorArticles } from "../src/lib/monitor-
 import { articlesForSubscriber, sourceGroupForArticle, validateSourceGroups } from "../src/lib/alert-sources.ts";
 import { itemCheckpointKey, sourceCheckpointKey } from "../src/lib/source-item-checkpoints.ts";
 import { hasDirectArticleUrl, isDisplayableNewsArticle, isLikelyCorruptedText, isLikelyHeadlineFragment, repairMojibake } from "../src/lib/text-quality.ts";
+import { parseEnforcementActionsPage } from "../src/lib/fincen-fetcher.ts";
+import { FINCEN_PENALTIES } from "../src/lib/fincen-penalties.ts";
 
 function briefing(articles: Article[]): Briefing {
   return { lastUpdated: "test", articles, sidebar: {} as Briefing["sidebar"] };
@@ -343,7 +345,7 @@ test("website news requires a specific direct article URL", () => {
   assert.equal(hasDirectArticleUrl("https://news.google.com/rss/search?q=OFAC"), false);
   assert.equal(hasDirectArticleUrl("https://www.federalreserve.gov/supervisionreg/enforcement-actions-about.htm"), false);
   assert.equal(hasDirectArticleUrl("https://home.treasury.gov/news/press-releases/sb0598"), true);
-  assert.equal(hasDirectArticleUrl("https://news.google.com/articles/example"), true);
+  assert.equal(hasDirectArticleUrl("https://news.google.com/articles/example"), false);
   assert.equal(isDisplayableNewsArticle({
     headline: "An official website of the United States Government",
     body: ["navigation copy"],
@@ -356,6 +358,19 @@ test("FinCEN endpoint preserves static records when extra cache is unavailable",
   const fetcher = readFileSync(new URL("../src/lib/fincen-fetcher.ts", import.meta.url), "utf8");
   assert.ok(route.includes("loadExtraFinCEN().catch(() => [])"));
   assert.ok(fetcher.includes("Array.isArray(parsed)"));
+});
+
+test("FinCEN sync reads new actions from the authoritative enforcement table", () => {
+  const rows = parseEnforcementActionsPage(`<table><tbody><tr>
+    <td><a href="/system/files/2026-07/UBS-Consent-Order.pdf">In the Matter of UBS Financial Services Inc.</a></td>
+    <td>08/03/2026</td><td>2026-02</td><td>Securities and Futures</td>
+  </tr></tbody></table>`);
+  assert.equal(rows.length, 1);
+  assert.equal(rows[0].matterNumber, "2026-02");
+  assert.equal(rows[0].date, "2026-08-03");
+  assert.equal(rows[0].url, "https://www.fincen.gov/system/files/2026-07/UBS-Consent-Order.pdf");
+  const ubs = FINCEN_PENALTIES.find(item => item.id === "F2026-02");
+  assert.equal(ubs?.penalty, 125_000_000);
 });
 
 test("OCC yearly and Federal Reserve enforcement landing pages are not direct alert links", async () => {

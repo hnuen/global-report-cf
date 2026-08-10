@@ -2,7 +2,7 @@
 // v6 cache bust CF
 import { useState, useEffect, useCallback, useRef } from "react";
 import { SANCTIONS_PROGRAMS } from "@/src/lib/sanctions-programs-library";
-import { hasUsableArticleText, repairMojibake } from "@/src/lib/text-quality";
+import { isDisplayableNewsArticle, repairMojibake } from "@/src/lib/text-quality";
 
 
 export const css = `
@@ -540,7 +540,7 @@ const normalizeArticleForDisplay = (article: Article): Article => ({
 
 const filterArticles = (articles:Article[], sec:string, reg:string) => {
   if (!articles || !Array.isArray(articles)) return [];
-  let pool = articles.filter(hasUsableArticleText).map(normalizeArticleForDisplay);
+  let pool = articles.filter(isDisplayableNewsArticle).map(normalizeArticleForDisplay);
   // Filter by section
   if (sec && sec !== "all") pool = pool.filter(a => a.section === sec);
   // Filter by region using explicit keyword matching
@@ -561,7 +561,7 @@ const filterArticles = (articles:Article[], sec:string, reg:string) => {
 };
 
 const filterArticlesBySearch = (articles:Article[], sec:string, q:string, dateFrom:string, dateTo:string) =>
-  [...articles].filter(hasUsableArticleText).map(normalizeArticleForDisplay).sort((a,b) => parseDate(b.date) - parseDate(a.date)).filter(a => {
+  [...articles].filter(isDisplayableNewsArticle).map(normalizeArticleForDisplay).sort((a,b) => parseDate(b.date) - parseDate(a.date)).filter(a => {
     if (sec !== "all" && a.section !== sec) return false;
 
     // Date range filter

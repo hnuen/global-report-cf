@@ -58,7 +58,9 @@ export function hasDirectArticleUrl(url?: string): boolean {
     const key = host + path;
     if (GENERIC_NEWS_PATHS.has(key)) return false;
     if (/occ\.gov\/news-events\/newsroom\/news-issuances-by-year\/news-releases\/\d{4}-news-releases\.html$/.test(key)) return false;
-    if (host === "news.google.com") return /^\/(?:rss\/)?articles\//.test(path);
+    // Google News is an aggregator, not the original publisher. Even its
+    // item redirect URLs are not accepted as direct article links.
+    if (host === "news.google.com") return false;
     if (/\/(?:rss|feed|feeds)(?:\/|$)/.test(path) || path.endsWith(".xml")) return false;
     if (/\/(?:search)(?:\/|$)/.test(path)) return false;
     return path.length > 1;

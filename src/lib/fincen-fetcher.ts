@@ -18,9 +18,9 @@ import type { FinCENPenalty } from "./fincen-penalties";
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 
-const PRESS_RELEASES_URL = "https://www.fincen.gov/news/press-releases";
+const ENFORCEMENT_ACTIONS_URL = "https://www.fincen.gov/news/enforcement-actions";
 const FINCEN_EXTRA_KEY   = "app:fincen-extra:v1";
-const FINCEN_SYNC_TS     = "app:fincen-sync:ts";
+const FINCEN_SYNC_TS     = "app:fincen-enforcement-sync:ts";
 const EXTRA_TTL          = 365 * 24 * 3600;      // 1 year (seconds)
 const SYNC_INTERVAL      = 24 * 60 * 60 * 1000;  // 24 h (ms)
 
@@ -72,6 +72,37 @@ interface ParsedRelease {
   headline: string;   // link text, stripped of HTML tags
   date: string;       // "YYYY-MM-DD" if found, else "YYYY-01-01"
   year: number;
+  matterNumber?: string;
+  institutionType?: string;
+}
+
+/** Parse FinCEN's authoritative enforcement-actions table directly. */
+export function parseEnforcementActionsPage(html: string): ParsedRelease[] {
+  const releases: ParsedRelease[] = [];
+  const rowRe = /<tr\b[^>]*>([\s\S]*?)<\/tr>/gi;
+  let row: RegExpExecArray | null;
+  while ((row = rowRe.exec(html)) !== null) {
+    const cells = [...row[1].matchAll(/<td\b[^>]*>([\s\S]*?)<\/td>/gi)]
+      .map(match => match[1].replace(/<[^>]+>/g, " ").replace(/&nbsp;|&#160;/gi, " ").replace(/&amp;/gi, "&").replace(/\s+/g, " ").trim());
+    if (cells.length < 3) continue;
+    const link = row[1].match(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/i);
+    const dateMatch = cells.join(" | ").match(/\b(\d{1,2})\/(\d{1,2})\/(\d{4})\b/);
+    const matter = cells.join(" | ").match(/\b(20\d{2}-[A-Za-z0-9-]+)\b/);
+    if (!link || !dateMatch || !matter) continue;
+    const href = link[1].startsWith("http") ? link[1] : `https://www.fincen.gov${link[1]}`;
+    const headline = link[2].replace(/<[^>]+>/g, " ").replace(/&amp;/gi, "&").replace(/\s+/g, " ").trim();
+    const [, month, day, yearText] = dateMatch;
+    releases.push({
+      slug: matter[1].toLowerCase(),
+      url: href,
+      headline,
+      date: `${yearText}-${month.padStart(2, "0")}-${day.padStart(2, "0")}`,
+      year: Number(yearText),
+      matterNumber: matter[1],
+      institutionType: cells[cells.length - 1] || "Financial Institution",
+    });
+  }
+  return releases;
 }
 
 /**
@@ -201,6 +232,9 @@ function parseAmount(headline: string): { amount: number; display: string } {
  *   "FinCEN [verb] [INST] for …"
  */
 function parseInstitution(headline: string): string {
+  const matter = headline.match(/^In the Matter of\s+(.+)$/i);
+  if (matter) return matter[1].trim().replace(/[.,]+$/, "");
+
   // "Against [INST] for …" or "Against [INST]$"
   const against = headline.match(/\bAgainst\s+(.+?)(?:\s+for\b|\s+related\b|\s*$)/i);
   if (against) return against[1].trim().replace(/[.,]+$/, "");
@@ -237,11 +271,11 @@ function toFinCENRecord(release: ParsedRelease, existingCount: number): FinCENPe
   const institution = parseInstitution(release.headline);
   const seq = String(existingCount + ++_autoIdCounter).padStart(2, "0");
   return {
-    id:                  `F${release.year}-auto-${seq}`,
+    id:                  release.matterNumber ? `F${release.matterNumber}` : `F${release.year}-auto-${seq}`,
     date:                release.date,
     year:                release.year,
     institution,
-    institutionType:     guessType(release.headline),
+    institutionType:     release.institutionType || guessType(release.headline),
     penalty:             amount,
     penaltyDisplay:      display,
     agencies:            ["FinCEN"],
@@ -300,17 +334,17 @@ export async function loadExtraFinCEN(): Promise<FinCENPenalty[]> {
 }
 
 /**
- * Fetch the FinCEN press-releases page and persist any penalty entries not
+ * Fetch the authoritative FinCEN enforcement-actions table and persist entries not
  * already present in the static FINCEN_PENALTIES array or Redis extra store.
  */
 export async function fetchAndSyncFinCEN(
   existingPenalties: FinCENPenalty[]
 ): Promise<{ added: number; total: number }> {
-  console.log("[fincen-fetcher] Fetching FinCEN press-releases page...");
+  console.log("[fincen-fetcher] Fetching FinCEN enforcement-actions table...");
 
   let html: string;
   try {
-    const res = await fetch(PRESS_RELEASES_URL, {
+    const res = await fetch(ENFORCEMENT_ACTIONS_URL, {
       headers: { "User-Agent": "Mozilla/5.0 (compatible; GlobalReportBot/1.0)" },
       signal: AbortSignal.timeout(15_000),
     });
@@ -321,8 +355,8 @@ export async function fetchAndSyncFinCEN(
     return { added: 0, total: 0 };
   }
 
-  const parsed = parsePressReleasesPage(html);
-  console.log(`[fincen-fetcher] Parsed ${parsed.length} penalty entries from page`);
+  const parsed = parseEnforcementActionsPage(html);
+  console.log(`[fincen-fetcher] Parsed ${parsed.length} enforcement entries from table`);
 
   // Build known set from static array + current Redis extras
   const existingExtra = await loadExtraFinCEN();
