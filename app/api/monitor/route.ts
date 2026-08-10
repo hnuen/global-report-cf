@@ -9,8 +9,7 @@ import { refreshBriefing, loadBriefing } from "@/src/lib/orchestrator";
 import { scoreAll }                   from "@/src/lib/alert-scorer";
 import { getNotifierManager }         from "@/src/notifiers/manager";
 import { articleMatchesAlertTopic, alertSourceLabel, cleanAlertText } from "@/src/lib/alert-topic";
-import { loadArticleLibrary } from "@/src/lib/article-library";
-import { mergeMonitorArticles, selectMonitorArticles } from "@/src/lib/monitor-articles";
+import { selectMonitorArticles } from "@/src/lib/monitor-articles";
 import { loadAlertSettings } from "@/src/lib/alert-settings";
 import { acquireDistributedLock } from "@/src/lib/distributed-lock";
 
@@ -143,11 +142,12 @@ async function runMonitor(topic?: string, force = false, backfillHours?: number)
     }
   }
 
-  // 2. Score the same article union shown by /api/news. Previously the web
-  // page merged the persistent library while monitoring only inspected the
-  // briefing, so current DHS/UFLPA articles could be visible but never alert.
-  const libraryArticles = await loadArticleLibrary({ limitPerSection: 100 }).catch(() => []);
-  const archivedArticles = mergeMonitorArticles(briefing.articles, libraryArticles);
+  // 2. Score the bounded, current briefing. The briefing is additively merged
+  // across source batches and retains the newest 60 articles per section, so
+  // it contains current DHS/UFLPA and other direct-source candidates. Loading
+  // the historical library here parsed thousands of archived articles before
+  // slicing them and repeatedly exhausted the Cloudflare Worker CPU budget.
+  const archivedArticles = briefing.articles;
   const effectiveMaxAgeHours = backfillHours ?? alertSettings.maxAgeHours;
   const monitorArticles = selectMonitorArticles(archivedArticles, effectiveMaxAgeHours);
   const scoringSettings = {

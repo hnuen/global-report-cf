@@ -37,7 +37,9 @@ test("monitor delivery survives source-refresh outages and supports bounded catc
   assert.match(workflow, /HTTP" != "409".*HTTP" != "500"/);
   assert.match(workflow, /BATCHES_INPUT/);
   assert.ok(workflow.includes("^[1-4]:[1-4]$"));
+  assert.match(monitor, /const archivedArticles = briefing\.articles/);
   assert.match(monitor, /selectMonitorArticles\(archivedArticles/);
+  assert.doesNotMatch(monitor, /loadArticleLibrary/);
   assert.match(workflow, /Legacy workflow ntfy sender \(disabled\)/);
   assert.match(workflow, /if: \$\{\{ false \}\}/);
 });

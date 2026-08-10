@@ -28,7 +28,10 @@ export interface OfficialSource {
   checkpoint?: { url: string; itemKeys: string[] };
 }
 
-const MAX_SOURCE_BYTES = 2 * 1024 * 1024;
+// RSS feeds and listing pages needed by the alert pipeline are much smaller
+// than this. Reject unusually large responses before regex parsing so one
+// publisher page cannot consume the entire Worker CPU allowance.
+const MAX_SOURCE_BYTES = 512 * 1024;
 
 async function readTextBounded(res: Response, maxBytes = MAX_SOURCE_BYTES): Promise<string> {
   const declared = Number(res.headers.get("content-length") ?? 0);

@@ -461,14 +461,11 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
     console.log("[orchestrator] Pre-save failed:", String(e).slice(0, 100));
   }
 
-  // Save government-source articles to the library even in skipLLM (group) path.
-  // Without this, group-based refreshes never accumulate the article library,
-  // so library-based backfill stays empty after a purge.
-  if (opts?.skipLLM) {
-    saveArticlesToLibrary(briefing.articles).catch(e =>
-      console.log("[orchestrator] Library save (skipLLM, non-fatal):", String(e).slice(0, 80))
-    );
-  }
+  // Group refreshes intentionally stop after persisting the bounded live
+  // briefing. Merging the same articles into the unbounded historical library
+  // requires loading and serializing the full archive and was the main source
+  // of Cloudflare 1102 CPU failures. Full/enrichment refreshes below continue
+  // to maintain the historical library outside this time-critical alert path.
 
   // Enrich articles with AI-generated briefs (cached in Redis, runs async)
   // Skipped on manual refresh (too slow for interactive use) and when skipLLM=true.

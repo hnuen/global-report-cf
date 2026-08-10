@@ -399,11 +399,13 @@ test("patched transitive build dependencies are pinned", () => {
 test("monitor and refresh use bounded hot article working sets", () => {
   const monitor = readFileSync(new URL("../app/api/monitor/route.ts", import.meta.url), "utf8");
   const orchestrator = readFileSync(new URL("../src/lib/orchestrator.ts", import.meta.url), "utf8");
-  const library = readFileSync(new URL("../src/lib/article-library.ts", import.meta.url), "utf8");
-  assert.ok(monitor.includes("limitPerSection: 100"));
+  const sources = readFileSync(new URL("../src/lib/official-sources.ts", import.meta.url), "utf8");
+  assert.ok(monitor.includes("const archivedArticles = briefing.articles"));
+  assert.doesNotMatch(monitor, /loadArticleLibrary/);
   assert.ok(orchestrator.includes("HOT_ARTICLES_PER_SECTION = 60"));
   assert.ok(orchestrator.includes("capHotBriefingArticles(briefing.articles)"));
-  assert.ok(library.includes("opts?.limitPerSection"));
+  assert.doesNotMatch(orchestrator, /if \(opts\?\.skipLLM\) \{\s*saveArticlesToLibrary/);
+  assert.ok(sources.includes("MAX_SOURCE_BYTES = 512 * 1024"));
 });
 
 test("monitor workflow bounds transient retries", () => {
