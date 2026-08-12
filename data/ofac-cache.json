@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-08-12T17:08:43.124Z",
+  "updatedAt": "2026-08-12T19:08:39.996Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260812",
+      "code": "20260812",
+      "title": "Settlement Agreement between the U.S. Department of the Treasury&#039;s Office of Foreign Assets Control and Rice Lake Weighing Systems, Inc.",
+      "date": "August 12, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260807",
       "code": "20260807",
@@ -54,15 +60,16 @@
       "code": "20260723",
       "title": "Counter Terrorism Designations; Counter Narcotics Designations; Cuba Designations; Belarus-related Designation Removal; Issuance of Cuba-related General Licenses",
       "date": "July 23, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260720",
-      "code": "20260720",
-      "title": "Russia-related Designations Updates",
-      "date": "July 20, 2026"
     }
   ],
   "civilPenalties": [
+    {
+      "date": "08/12/2026",
+      "name": "Rice Lake Weighing Systems, Inc.",
+      "count": "1",
+      "amount": "60,764",
+      "pdfUrl": "https://ofac.treasury.gov/media/936706/download?inline"
+    },
     {
       "date": "06/01/2026",
       "name": "FTI Consulting, Inc.",
@@ -1191,14 +1198,6 @@
           "date": "January 23, 2026",
           "expires": "February 22, 2026",
           "url": "https://ofac.treasury.gov/media/934946/download?inline",
-          "datePdf": true
-        },
-        {
-          "number": "Y",
-          "title": "Iran General License Y",
-          "date": "July 10, 2026",
-          "expires": "August 9, 2026",
-          "url": "https://ofac.treasury.gov/media/936546/download?inline",
           "datePdf": true
         },
         {
@@ -3063,6 +3062,12 @@
       "description": "Trump boarded a different plane in Turkey during a Nato summit for security reasons involving Iran."
     },
     {
+      "title": "Major Russian grain export terminals hit in Ukraine Black Sea port attack",
+      "url": "https://www.bbc.co.uk/news/articles/c5y49xp2wrno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 12, 2026",
+      "description": "Grain exports from both Russia and Ukraine are falling as both countries attack each other's shipping facilities and ports."
+    },
+    {
       "title": "US says helicopter fired missiles to disable ship breaking Iran blockade",
       "url": "https://www.bbc.co.uk/news/articles/cvg8lyyyjedo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 11, 2026",
@@ -3105,18 +3110,6 @@
       "url": "https://www.aljazeera.com/news/2026/8/12/why-has-north-korea-fired-a-missile-ahead-of-us-south-korea-drills?traffic_source=rss",
       "date": "August 12, 2026",
       "description": "Pyongyang has repeatedly condemned US–South Korea military drills, claiming they are a &#039;rehearsal for invasion&#039;."
-    },
-    {
-      "title": "Putin warns of tit-for-tat seizures of European vessels",
-      "url": "https://www.aljazeera.com/news/2026/8/12/putin-warns-of-tit-for-tat-seizures-of-european-vessels?traffic_source=rss",
-      "date": "August 12, 2026",
-      "description": "If European states seize vessels with Russian cargo, Moscow will respond in kind &#039;wherever necessary&#039;, says Putin."
-    },
-    {
-      "title": "Iran rejects Trump’s claim to ‘control’ Hormuz: What’s the latest in talks?",
-      "url": "https://www.aljazeera.com/news/2026/8/12/iran-refutes-trumps-claim-to-control-hormuz-whats-the-latest-in-talks?traffic_source=rss",
-      "date": "August 12, 2026",
-      "description": "Iran says Hormuz stays closed until US meets its demands and changes its &#039;behaviour&#039; as global energy prices rise."
     }
   ],
   "occNews": [
@@ -3227,16 +3220,16 @@
       "description": "Annual US inflation dipped to 3.4% in July, with food costs slowing and housing keeping prices slightly higher."
     },
     {
-      "title": "Danube river's low water levels reveal remains of WWII soldiers and motorcycle",
-      "url": "https://www.bbc.co.uk/news/articles/cm2gp3zmkpmo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 12, 2026",
-      "description": "A remarkably well-preserved motorcycle and identification tags were found alongside the bodies."
-    },
-    {
       "title": "Thousands of Canadians call for US ambassador's expulsion",
       "url": "https://www.bbc.co.uk/news/articles/c9d83j4ql2xo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 12, 2026",
       "description": "An online petition accusing Pete Hoekstra of diplomatic interference in Canadian domestic affairs has garnered more than 60,000 signatures."
+    },
+    {
+      "title": "Danube river's low water levels reveal remains of WWII soldiers and motorcycle",
+      "url": "https://www.bbc.co.uk/news/articles/cm2gp3zmkpmo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 12, 2026",
+      "description": "A remarkably well-preserved motorcycle and identification tags were found alongside the bodies."
     },
     {
       "title": "Singapore and S Korea pull Trader Joe's seasoning over poppy seeds",
@@ -3353,6 +3346,12 @@
       "description": "The suit challenges Truth Social plan selling early access to Trump's market-moving posts."
     },
     {
+      "title": "Discord ordered to suspend livestreams in Brazil",
+      "url": "https://www.bbc.co.uk/news/articles/cgewpqxyrddo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 12, 2026",
+      "description": "Discord told the BBC it was \"thoughtfully reviewing\" the order by Brazil's data protection agency and it was \"committed to user safety\""
+    },
+    {
       "title": "US inflation eases as food and fuel costs cool",
       "url": "https://www.bbc.co.uk/news/articles/c0qv2nn1gpeo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 12, 2026",
@@ -3365,16 +3364,16 @@
       "description": "British shoppers should expect to see more wonky vegetables due to repeated heatwaves."
     },
     {
-      "title": "Bakery buys comedian's former sites after closure",
-      "url": "https://www.bbc.co.uk/news/articles/cr491p70dv5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 12, 2026",
-      "description": "Bakery business Janes Pantry confirms its plans to reopen at least 20 of the Coughlans shops."
-    },
-    {
       "title": "Tokenomics: Why making AI pay is tricky",
       "url": "https://www.bbc.co.uk/news/articles/c872r52x7jgo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 11, 2026",
       "description": "Buyers of AI services are struggling to control costs and sellers are not sure how much to charge."
+    },
+    {
+      "title": "Bakery buys comedian's former sites after closure",
+      "url": "https://www.bbc.co.uk/news/articles/cr491p70dv5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 12, 2026",
+      "description": "Bakery business Janes Pantry confirms its plans to reopen at least 20 of the Coughlans shops."
     },
     {
       "title": "Homes near pylons to get £250 a year off energy bills – first sites revealed",
@@ -3495,12 +3494,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cvgx4yd1gl2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 10, 2026",
       "description": "Tech companies are not modelling their own claims of the technology giving people more free time."
-    },
-    {
-      "title": "You could be missing out on £150 off your energy bill - here's how to check",
-      "url": "https://www.bbc.co.uk/news/articles/czjlk8wx771o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 9, 2026",
-      "description": "Some people need to ensure they are named on their energy bill before the deadline to qualify for help."
     },
     {
       "title": "'I started in my 20s and made £8,000': Why women are often better investors than men",
@@ -3647,6 +3640,42 @@
       "description": "Why is global trade proving so resilient despite the tariffs and trade restrictions?"
     },
     {
+      "title": "Paramount Skydance mulls CNN sale amid antitrust merger challenge",
+      "url": "https://www.aljazeera.com/economy/2026/8/12/paramount-skydance-mulls-cnn-sale-amid-antitrust-merger-challenge?traffic_source=rss",
+      "date": "August 12, 2026",
+      "description": "Paramount’s legal officer hints at CNN sale as 12 states, led by California, file lawsuit to block merger with WBD."
+    },
+    {
+      "title": "DR Congo Ebola outbreak set to become deadliest on record, WHO warns",
+      "url": "https://www.aljazeera.com/news/2026/8/12/dr-congo-ebola-outbreak-set-to-become-deadliest-on-record-who-warns?traffic_source=rss",
+      "date": "August 12, 2026",
+      "description": "Outbreak to eclipse West Africa&#039;s Ebola outbreak of 2014 to 2016 if it continues at current pace, WHO chief says."
+    },
+    {
+      "title": "Lebanese families demand release of detainees held by Israel",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/12/lebanese-families-demand-release-of-detainees-held-by-israel?traffic_source=rss",
+      "date": "August 12, 2026",
+      "description": "Lebanese families rallied in Beirut demanding answers about relatives detained by Israel."
+    },
+    {
+      "title": "Mount Etna eruption disrupts travel at Italy’s Catania airport",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/12/mount-etna-eruption-disrupts-travel-at-italys-catania-airport?traffic_source=rss",
+      "date": "August 12, 2026",
+      "description": "Hundreds of passengers have been left stranded at Italy’s Catania airport after Mount Etna erupted."
+    },
+    {
+      "title": "White House construction project to cost almost $1bn",
+      "url": "https://www.aljazeera.com/news/2026/8/12/white-house-construction-project-to-cost-almost-1bn?traffic_source=rss",
+      "date": "August 12, 2026",
+      "description": "The White House defended reports it planned to spend nearly $1bn on controversial construction projects."
+    },
+    {
+      "title": "Drought exposes Nazi-era warship wrecks beneath the Danube",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/12/drought-exposes-nazi-era-warship-wrecks-beneath-the-danube?traffic_source=rss",
+      "date": "August 12, 2026",
+      "description": "Record-low water levels on the Danube near Prahovo, Serbia, have exposed the wrecks of dozens of Nazi-era vessels"
+    },
+    {
       "title": "Trump remarks on diminishing impact of pro-Israel groups in Congress",
       "url": "https://www.aljazeera.com/news/2026/8/12/trump-remarks-on-diminishing-impact-of-pro-israel-groups-in-congress?traffic_source=rss",
       "date": "August 12, 2026",
@@ -3735,30 +3764,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/12/rare-solar-eclipse-to-sweep-across-europe-and-the-arctic?traffic_source=rss",
       "date": "August 12, 2026",
       "description": "Rare solar eclipse to sweep across Europe and the Arctic"
-    },
-    {
-      "title": "Lebanon ends executions: Where does the death penalty still exist in 2026?",
-      "url": "https://www.aljazeera.com/news/2026/8/12/lebanon-ends-executions-where-does-the-death-penalty-still-exist-in-2026?traffic_source=rss",
-      "date": "August 12, 2026",
-      "description": "Three-quarters of the world has abolished the death penalty in law or in practice, according to Amnesty International."
-    },
-    {
-      "title": "Woman rescued after 36 hours under rubble in Colombia",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/12/12-08-sv-colombia-earthquake-rescue-co?traffic_source=rss",
-      "date": "August 12, 2026",
-      "description": "A 32-year-old woman was rescued after 36 hours under rubble following a 7.4-magnitude earthquake in Colombia."
-    },
-    {
-      "title": "‘The hardest mission of my life’: A rescuer’s loss in the Lebanon War",
-      "url": "https://www.aljazeera.com/video/al-jazeera-originals/2026/8/12/aje-onl-or_leb_paramedics_teaser-120826?traffic_source=rss",
-      "date": "August 12, 2026",
-      "description": "A Lebanon rescuer’s work is shaped by the daughter he lost in an Israeli attack on his station."
-    },
-    {
-      "title": "More than 100 passengers rescued after Indonesia ferry fire",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/12/more-than-100-passengers-rescued-after-indonesia-ferry-fire?traffic_source=rss",
-      "date": "August 12, 2026",
-      "description": "More than 100 passengers rescued after Indonesia ferry fire"
     }
   ]
 }
