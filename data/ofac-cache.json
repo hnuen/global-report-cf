@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12T19:08:39.996Z",
+  "updatedAt": "2026-08-12T21:08:37.967Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260812",
@@ -3056,16 +3056,16 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "Members of Trump's cabinet remained on decoy plane, after president's quiet exit",
-      "url": "https://www.bbc.co.uk/news/articles/c4g306eln8wo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 12, 2026",
-      "description": "Trump boarded a different plane in Turkey during a Nato summit for security reasons involving Iran."
-    },
-    {
       "title": "Major Russian grain export terminals hit in Ukraine Black Sea port attack",
       "url": "https://www.bbc.co.uk/news/articles/c5y49xp2wrno?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 12, 2026",
       "description": "Grain exports from both Russia and Ukraine are falling as both countries attack each other's shipping facilities and ports."
+    },
+    {
+      "title": "Members of Trump's cabinet remained on decoy plane, after president's quiet exit",
+      "url": "https://www.bbc.co.uk/news/articles/c4g306eln8wo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 12, 2026",
+      "description": "Trump boarded a different plane in Turkey during a Nato summit for security reasons involving Iran."
     },
     {
       "title": "US says helicopter fired missiles to disable ship breaking Iran blockade",
@@ -3088,28 +3088,22 @@
   ],
   "ajNews": [
     {
+      "title": "Can Syria deliver transitional justice?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/8/12/can-syria-deliver-transitional-justice?traffic_source=rss",
+      "date": "August 12, 2026",
+      "description": "A court has sentenced ousted former leader Bashar al-Assad and others to death in absentia."
+    },
+    {
+      "title": "Israel vows to keep troops in Lebanon, Gaza and Syria",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/12/israel-vows-to-keep-troops-in-lebanon-gaza-and-syria?traffic_source=rss",
+      "date": "August 12, 2026",
+      "description": "Israeli defence minister Israel Katz has said that Israel “will under no circumstances” withdraw its troops."
+    },
+    {
       "title": "Is Russia’s economy cracking despite the Iran war windfall?",
       "url": "https://www.aljazeera.com/video/counting-the-cost/2026/8/12/is-russias-economy-cracking-despite-the-iran-war-windfall?traffic_source=rss",
       "date": "August 12, 2026",
       "description": "A widening deficit and Ukrainian strikes are testing Russia&#039;s economy, even as war in the Middle East lifts oil revenue."
-    },
-    {
-      "title": "Iran remains defiant as it vows to fight US until demands met",
-      "url": "https://www.aljazeera.com/news/2026/8/12/iran-remains-defiant-as-it-vows-to-fight-us-until-demands-met?traffic_source=rss",
-      "date": "August 12, 2026",
-      "description": "IRGC advisers say Iran has replaced more missiles and drones than it used, and cite falling US munition stocks."
-    },
-    {
-      "title": "Iran is not anti-imperialist. It is a state calculating survival",
-      "url": "https://www.aljazeera.com/opinions/2026/8/12/iran-is-not-anti-imperialist-it-is-a-state-calculating-survival?traffic_source=rss",
-      "date": "August 12, 2026",
-      "description": "Regardless of its current hostile rhetoric, the Islamic Republic will likely reach a settlement with the US and Israel."
-    },
-    {
-      "title": "Why has North Korea fired a missile ahead of US-South Korea drills?",
-      "url": "https://www.aljazeera.com/news/2026/8/12/why-has-north-korea-fired-a-missile-ahead-of-us-south-korea-drills?traffic_source=rss",
-      "date": "August 12, 2026",
-      "description": "Pyongyang has repeatedly condemned US–South Korea military drills, claiming they are a &#039;rehearsal for invasion&#039;."
     }
   ],
   "occNews": [
@@ -3202,6 +3196,18 @@
       "description": "Israeli security forces have reportedly withdrawn and about a dozen settlers are said to remain at the site where two families have been besieged since Sunday."
     },
     {
+      "title": "ICE plans to equip agents with gloves that can deliver electric shocks",
+      "url": "https://www.bbc.co.uk/news/articles/c20d292gdp4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 12, 2026",
+      "description": "The US immigration agency is spending $20m on gloves that deliver a sharp electric shock intended to compel subjects to comply."
+    },
+    {
+      "title": "Trump says White House press secretary Karoline Leavitt to leave post",
+      "url": "https://www.bbc.co.uk/news/articles/cvglzrvyrz3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 12, 2026",
+      "description": "Leavitt will depart from her role to spend time with her young children and family, the president says."
+    },
+    {
       "title": "Woman pulled alive from rubble 36 hours after Colombia quake",
       "url": "https://www.bbc.co.uk/news/articles/cz7d2e5wlgno?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 12, 2026",
@@ -3214,16 +3220,16 @@
       "description": "The Los Angeles Lakers is to be sold for a reported record $12.5bn - less than a year after Mark Walter took a majority stake in the NBA franchise."
     },
     {
-      "title": "US inflation eases as food and fuel costs cool",
-      "url": "https://www.bbc.co.uk/news/articles/c0qv2nn1gpeo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 12, 2026",
-      "description": "Annual US inflation dipped to 3.4% in July, with food costs slowing and housing keeping prices slightly higher."
-    },
-    {
       "title": "Thousands of Canadians call for US ambassador's expulsion",
       "url": "https://www.bbc.co.uk/news/articles/c9d83j4ql2xo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 12, 2026",
       "description": "An online petition accusing Pete Hoekstra of diplomatic interference in Canadian domestic affairs has garnered more than 60,000 signatures."
+    },
+    {
+      "title": "US inflation eases as food and fuel costs cool",
+      "url": "https://www.bbc.co.uk/news/articles/c0qv2nn1gpeo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 12, 2026",
+      "description": "Annual US inflation dipped to 3.4% in July, with food costs slowing and housing keeping prices slightly higher."
     },
     {
       "title": "Danube river's low water levels reveal remains of WWII soldiers and motorcycle",
@@ -3640,6 +3646,72 @@
       "description": "Why is global trade proving so resilient despite the tariffs and trade restrictions?"
     },
     {
+      "title": "Drone attacks on energy infrastructure deepen Libya’s energy crisis",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/12/drone-attacks-on-energy-infrastructure-deepen-libyas-energy-crisis?traffic_source=rss",
+      "date": "August 12, 2026",
+      "description": "Repeated drone strikes on oil and power infrastructure are deepening Libya&#039;s energy crisis."
+    },
+    {
+      "title": "Israeli air strike kills one in northern Gaza",
+      "url": "https://www.aljazeera.com/news/2026/8/12/israeli-air-strike-kills-one-in-northern-gaza?traffic_source=rss",
+      "date": "August 12, 2026",
+      "description": "Strike on a tuk-tuk in Beit Lahiya kills one, wounds five in first Israeli aerial bombardment in a week"
+    },
+    {
+      "title": "Deadly India landslide kills at least seven in Mumbai",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/12/deadly-india-landslide-kills-at-least-seven-in-mumbai?traffic_source=rss",
+      "date": "August 12, 2026",
+      "description": "Heavy rains triggered a landslide on Wednesday that killed at least seven people in India’s western Maharashtra state."
+    },
+    {
+      "title": "Photos: Solar eclipse plunges parts of Europe into darkness",
+      "url": "https://www.aljazeera.com/gallery/2026/8/12/photos-solar-eclipse-plunges-parts-of-europe-into-darkness?traffic_source=rss",
+      "date": "August 12, 2026",
+      "description": "A total solar eclipse crossed Iceland, Britain and parts of the European continent, drawing crowds to watch the event."
+    },
+    {
+      "title": "‘Platformicide’ of Palestine: Activists struggle to be heard on Meta",
+      "url": "https://www.aljazeera.com/news/2026/8/12/platformicide-of-palestine-activists-struggle-to-be-heard-on-meta?traffic_source=rss",
+      "date": "August 12, 2026",
+      "description": "Report by NGO 7amleh, Utrecht University analyses 3,520 cases of digital rights violations against Palestinians."
+    },
+    {
+      "title": "Trump reveals Karoline Leavitt to step down as White House press secretary",
+      "url": "https://www.aljazeera.com/news/2026/8/12/trump-reveals-karoline-leavitt-to-step-down-as-white-house-press-secretary?traffic_source=rss",
+      "date": "August 12, 2026",
+      "description": "Leavitt is departing her role to spend more time with family after giving birth to a second child, according to Trump."
+    },
+    {
+      "title": "Josh Kushner, Bob Iger, buying Los Angeles Lakers for record $12.5bn",
+      "url": "https://www.aljazeera.com/sports/2026/8/12/josh-kushner-bob-iger-buying-los-angeles-lakers-for-record-12-5bn?traffic_source=rss",
+      "date": "August 12, 2026",
+      "description": "Billionaire Mark Walter&#039;s sale of the NBA&#039;s Lakers is a record-breaking valuation for a North American sports franchise."
+    },
+    {
+      "title": "Iceland and Spain plunged into darkness during total solar eclipse",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/12/iceland-and-spain-plunged-into-darkness-during-total-solar-eclipse?traffic_source=rss",
+      "date": "August 12, 2026",
+      "description": "A total solar eclipse took place in Iceland and Spain as crowds gathered to watch."
+    },
+    {
+      "title": "Brazil orders Discord to suspend livestreams after teen’s death",
+      "url": "https://www.aljazeera.com/news/2026/8/12/brazil-orders-discord-to-suspend-livestreams-after-teens-death?traffic_source=rss",
+      "date": "August 12, 2026",
+      "description": "Regulator says Discord failed to protect minors from violence, self-harm, and suicide content."
+    },
+    {
+      "title": "Iraq says September 30 withdrawal deadline for US-led coalition ‘final’",
+      "url": "https://www.aljazeera.com/news/2026/8/12/iraq-says-sept-30-deadline-to-end-us-led-military-coalition-final?traffic_source=rss",
+      "date": "August 12, 2026",
+      "description": "A US official confirmed that the United States expects to complete its pullout by September 30."
+    },
+    {
+      "title": "Thousands flee drought in Somalia amid sharp aid decline",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/12/thousands-flee-drought-in-somalia-amid-sharp-aid-decline?traffic_source=rss",
+      "date": "August 12, 2026",
+      "description": "Thousands of hunger-stricken families have lost their livestock and farms due to a yearslong drought in Somalia."
+    },
+    {
       "title": "Paramount Skydance mulls CNN sale amid antitrust merger challenge",
       "url": "https://www.aljazeera.com/economy/2026/8/12/paramount-skydance-mulls-cnn-sale-amid-antitrust-merger-challenge?traffic_source=rss",
       "date": "August 12, 2026",
@@ -3682,7 +3754,7 @@
       "description": "Trump claims pro-Israel lobbying no longer wields the power it had decades ago, reflecting changes in US politics."
     },
     {
-      "title": "PSG vs Aston Villa LIVE: UEFA Super Cup 2026",
+      "title": "LIVE: PSG vs Aston Villa – UEFA Super Cup 2026",
       "url": "https://www.aljazeera.com/sports/liveblog/2026/8/12/psg-vs-aston-villa-live-uefa-super-cup-2026?traffic_source=rss",
       "date": "August 12, 2026",
       "description": "Live coverage and text updates from our commentary stream as PSG&#039;s Dembele, Doue and Barcola target more trophies."
@@ -3704,66 +3776,6 @@
       "url": "https://www.aljazeera.com/news/2026/8/12/who-chief-says-trump-vaccine-push-goes-against-decades-of-evidence?traffic_source=rss",
       "date": "August 12, 2026",
       "description": "The US health secretary has spent years saying the MMR vaccine caused autism despite no medical evidence."
-    },
-    {
-      "title": "US consumer inflation slows in July as energy prices briefly retreat",
-      "url": "https://www.aljazeera.com/economy/2026/8/12/us-consumer-inflation-slows-in-july-as-energy-prices-briefly-retreat?traffic_source=rss",
-      "date": "August 12, 2026",
-      "description": "Energy prices declined 1.5 percent in July but remain 14.7 percent higher compared with a year ago."
-    },
-    {
-      "title": "As Strait of Hormuz transit drops, Trump again says US has ‘control’",
-      "url": "https://www.aljazeera.com/news/2026/8/12/as-strait-of-hormuz-transit-drops-trump-again-says-us-has-control?traffic_source=rss",
-      "date": "August 12, 2026",
-      "description": "Just eight vessels crossed strait on Tuesday, down from 130 to 140 prior to the war as peace talks stall."
-    },
-    {
-      "title": "Lebanon passes long-sought amnesty law, a day after death penalty repeal",
-      "url": "https://www.aljazeera.com/news/2026/8/12/lebanon-passes-long-sought-amnesty-law-a-day-after-death-penalty-repeal?traffic_source=rss",
-      "date": "August 12, 2026",
-      "description": "The legislation will &#039;exceptionally&#039; reduce certain prison terms, says Lebanon&#039;s parliament speaker."
-    },
-    {
-      "title": "Why the UK faces a prisons crisis amid row over release of cop killers",
-      "url": "https://www.aljazeera.com/news/2026/8/12/why-the-uk-faces-a-prisons-crisis-amid-row-over-release-of-cop-killers?traffic_source=rss",
-      "date": "August 12, 2026",
-      "description": "The killers of PC Andrew Harper had been set to partake in early release scheme as prison system on verge of collapse."
-    },
-    {
-      "title": "Lionel Messi not certain to play ‘much longer’ after father’s death",
-      "url": "https://www.aljazeera.com/sports/2026/8/12/argentina-star-messi-not-certain-to-play-much-longer-after-fathers-death?traffic_source=rss",
-      "date": "August 12, 2026",
-      "description": "Former Barcelona and PSG star Lionel Messi, who won the 2022 World Cup, hints at retirement from football."
-    },
-    {
-      "title": "‘Burn in hell’: Israeli settlers spread hate through graffiti, attacks",
-      "url": "https://www.aljazeera.com/features/2026/8/12/burn-in-hell-israeli-settlers-spread-hate-through-graffiti-attacks?traffic_source=rss",
-      "date": "August 12, 2026",
-      "description": "Racist settler graffiti on West Bank homes and schools reveals a brazen ideological drive for Palestinian displacement."
-    },
-    {
-      "title": "Sudanese army intercepts RSF drones over el-Obeid",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/12/12-08-sv-sudan-intercepts-rsf-drones-su?traffic_source=rss",
-      "date": "August 12, 2026",
-      "description": "Sudanese army air defenses reportedly intercepted drones launched by the Rapid Support Forces (RSF) over el-Obeid."
-    },
-    {
-      "title": "Egyptian student livestreams his kidnapping",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/12/egyptian-student-livestreams-his-kidnapping?traffic_source=rss",
-      "date": "August 12, 2026",
-      "description": "Egyptian student livestreams his kidnapping"
-    },
-    {
-      "title": "Top Iranian commander visited Iraq to discuss disarmament plan: Source",
-      "url": "https://www.aljazeera.com/news/2026/8/12/top-iranian-commander-visited-iraq-to-discuss-disarmament-plan-source?traffic_source=rss",
-      "date": "August 12, 2026",
-      "description": "Esmail Qaani held meetings over Iraqi government&#039;s plan to disarm armed groups and bring weapons under state control."
-    },
-    {
-      "title": "Rare solar eclipse to sweep across Europe and the Arctic",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/12/rare-solar-eclipse-to-sweep-across-europe-and-the-arctic?traffic_source=rss",
-      "date": "August 12, 2026",
-      "description": "Rare solar eclipse to sweep across Europe and the Arctic"
     }
   ]
 }
