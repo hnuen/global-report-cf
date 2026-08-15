@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-15T17:08:54.880Z",
+  "updatedAt": "2026-08-15T19:08:50.231Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260812",
@@ -3083,6 +3083,18 @@
   ],
   "ajNews": [
     {
+      "title": "Cleanup underway as Russian oil spill reaches Oman’s coastline",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/15/15-08-sv-oil-spill-oman-on?traffic_source=rss",
+      "date": "August 15, 2026",
+      "description": "Cleanup crews are responding along 12 kilometres of Omani coastline following an oil spill from the grounded tanker."
+    },
+    {
+      "title": "US aircraft carrier expected to relieve USS Lincoln in Middle East",
+      "url": "https://www.aljazeera.com/news/2026/8/15/us-aircraft-carrier-expected-to-relieve-uss-lincoln-in-middle-east?traffic_source=rss",
+      "date": "August 15, 2026",
+      "description": "The USS Washington&#039;s movement comes amid reports of dire conditions on the USS Lincoln amid the ongoing Iran war."
+    },
+    {
       "title": "Ukraine hits Russian Starlink-style network, Moscow tracks arms package",
       "url": "https://www.aljazeera.com/news/2026/8/15/ukraine-hits-russian-starlink-style-network-moscow-tracks-arms-package?traffic_source=rss",
       "date": "August 15, 2026",
@@ -3095,20 +3107,7 @@
       "description": "Taiwan has long prepared for a Chinese military invasion but wars in Iran and Ukraine expose new potential threats."
     }
   ],
-  "occNews": [
-    {
-      "title": "Bank Accounting Advisory Series Updated",
-      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-68.html",
-      "date": "August 14, 2026",
-      "description": "The Office of the Comptroller of the Currency (OCC) today released its annual update to the Bank Accounting Advisory Series (BAAS)."
-    },
-    {
-      "title": "OCC Announces Enforcement Actions for July 2026",
-      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-59.html",
-      "date": "July 16, 2026",
-      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for July 2026."
-    }
-  ],
+  "occNews": [],
   "economicsNews": [
     {
       "title": "Federal Reserve issues FOMC statement",
@@ -3227,10 +3226,16 @@
       "description": "A father and his two young sons spent a night adrift before being rescued off the coast of the island of Koh Samui."
     },
     {
-      "title": "Five injured, one critically, in shooting at Virginia State University",
+      "title": "Multiple suspects at large after five shot at Virginia State University, police say",
       "url": "https://www.bbc.co.uk/news/articles/c0l5583903yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 15, 2026",
-      "description": "Multiple suspects were involved in the incident in the early hours of Saturday, the university said."
+      "description": "Police responded to reports of a shooting outside a residence halls at about 01:28 local time (05:28 GMT) on Saturday."
+    },
+    {
+      "title": "Firefighters battle wildfire tearing through Belgian nature reserve",
+      "url": "https://www.bbc.co.uk/news/articles/cp8eex1nmpvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 15, 2026",
+      "description": "The fire burning through the major park was described as the country's worst in recent years."
     },
     {
       "title": "France's top court blocks social media ban for under-15s",
@@ -3249,12 +3254,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c1w1ylw0p3no?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 14, 2026",
       "description": "Two families have been trapped in their homes in the occupied West Bank for several days."
-    },
-    {
-      "title": "Dozens injured and thousands evacuated in Croatia wildfire",
-      "url": "https://www.bbc.co.uk/news/articles/c9342wn2x27o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 14, 2026",
-      "description": "Officials say the blaze, near the port town of Omis, is one of the worst in Croatia's history."
     },
     {
       "title": "Builders unearth €9m gold stash sealed in walls of Belgian property",
@@ -3665,6 +3664,36 @@
       "description": "BBC Sport's Sam Harris breaks down the potential new investment of Jeff Bezos into Liverpool."
     },
     {
+      "title": "La Liga: Real Madrid key talking points heading into new 2026-27 season",
+      "url": "https://www.aljazeera.com/sports/2026/8/15/la-liga-real-madrid-key-talking-points-heading-into-new-2026-27-season?traffic_source=rss",
+      "date": "August 15, 2026",
+      "description": "Real Madrid welcome back Jose Mourinho as manager as they attempt to stop a three-peat by Barcelona in La Liga."
+    },
+    {
+      "title": "Inter Milan sign England’s Djed Spence from Tottenham Hotspur",
+      "url": "https://www.aljazeera.com/sports/2026/8/15/inter-milan-sign-englands-djed-spence-from-tottenham-hotspur?traffic_source=rss",
+      "date": "August 15, 2026",
+      "description": "The 26-year-old, who has signed a five-year deal, cost the Italian champions about $40m, according to media reports."
+    },
+    {
+      "title": "Tropical Storm Lala expected to strengthen as it nears Hawaii",
+      "url": "https://www.aljazeera.com/news/2026/8/15/tropical-storm-lala-expected-to-strengthen-as-it-nears-hawaii?traffic_source=rss",
+      "date": "August 15, 2026",
+      "description": "Authorities warn residents to take precautions as storm expected to bring rain and strong winds to the island chain."
+    },
+    {
+      "title": "UK PM Burnham reacts to death of former Cambridge professor",
+      "url": "https://www.aljazeera.com/news/2026/8/15/uk-pm-burnham-reacts-to-death-of-former-cambridge-professor?traffic_source=rss",
+      "date": "August 15, 2026",
+      "description": "Jason Arday was found dead on Friday, just days after resigning amid intense scrutiny over his academic work."
+    },
+    {
+      "title": "Erdogan says Egypt could join Turkiye-Saudi-Pakistan defence pact",
+      "url": "https://www.aljazeera.com/news/2026/8/15/erdogan-says-egypt-could-join-turkiye-saudi-pakistan-defence-pact?traffic_source=rss",
+      "date": "August 15, 2026",
+      "description": "Turkish president tells Al Jazeera that the recently signed agreement is open to new members as he pledges continued support."
+    },
+    {
       "title": "One killed, dozens injured after wildfire hits Croatian coast",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/15/one-killed-dozens-injured-after-wildfire-hits-croatian-coast?traffic_source=rss",
       "date": "August 15, 2026",
@@ -3759,48 +3788,6 @@
       "url": "https://www.aljazeera.com/opinions/2026/8/15/what-the-taliban-achieved-and-failed-to-achieve-in-five-years?traffic_source=rss",
       "date": "August 15, 2026",
       "description": "The Taliban government brought security and stability but is facing increasing alienation of the general population."
-    },
-    {
-      "title": "World Cup winner Ferran Torres joins Paris Saint-Germain from Barcelona",
-      "url": "https://www.aljazeera.com/sports/2026/8/15/world-cup-winner-ferran-torres-joins-paris-saint-germain-from-barcelona?traffic_source=rss",
-      "date": "August 15, 2026",
-      "description": "The 26-year-old striker cost the Ligue 1 champions a reported 50 million euros ($58m) and has signed a five-year deal."
-    },
-    {
-      "title": "Arsenal vs Manchester City: Community Shield – prediction, lineups, teams",
-      "url": "https://www.aljazeera.com/sports/2026/8/15/arsenal-vs-manchester-city-community-shield-prediction-lineups-teams?traffic_source=rss",
-      "date": "August 15, 2026",
-      "description": "Premier League winners Arsenal and FA Cup holders Man City prepare to trade blows as English top-flight season nears."
-    },
-    {
-      "title": "At scene of deadly Israeli strike on Lebanon home",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/15/at-scene-of-deadly-israeli-strike-on-lebanon-home?traffic_source=rss",
-      "date": "August 15, 2026",
-      "description": "An overnight Israeli strike on a family home in Ansar, southern Lebanon, killed at least seven people."
-    },
-    {
-      "title": "Bangladesh rock Australia as historic Test win in sight",
-      "url": "https://www.aljazeera.com/sports/2026/8/15/bangladesh-rock-australia-as-historic-test-win-in-sight?traffic_source=rss",
-      "date": "August 15, 2026",
-      "description": "Australia close Day Three of the first Test against Bangladesh on 161-4, trailing the record-chasing tourists by 67."
-    },
-    {
-      "title": "FIFA World Cup and Olympics cited as Coe warns of politicians near sport",
-      "url": "https://www.aljazeera.com/sports/2026/8/15/coe-cites-olympics-and-fifa-world-cup-in-warning-on-interference-in-sport?traffic_source=rss",
-      "date": "August 15, 2026",
-      "description": "World Athletics&#039; president says political influence in sport must be kept in check with LA Olympics on horizon."
-    },
-    {
-      "title": "Venus Williams hits 13-game tennis losing streak with Cincinnati Open exit",
-      "url": "https://www.aljazeera.com/sports/2026/8/15/venus-williams-hits-13-game-tennis-losing-streak-with-cincinnati-open-exit?traffic_source=rss",
-      "date": "August 15, 2026",
-      "description": "Seven-time Grand Slam winner Venus Williams defeated 6-2, 6-2 by Emiliana Arango in the first round of Cincinnati Open."
-    },
-    {
-      "title": "The women India’s biggest river project forgot",
-      "url": "https://www.aljazeera.com/features/longform/2026/8/15/the-women-indias-biggest-river-project-forgot?traffic_source=rss",
-      "date": "August 15, 2026",
-      "description": "As the Ken-Betwa dam displaces thousands, legal protections on compensation are being ignored."
     }
   ]
 }
