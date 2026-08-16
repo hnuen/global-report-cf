@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-16T19:08:46.323Z",
+  "updatedAt": "2026-08-16T21:08:42.727Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260812",
@@ -3101,16 +3101,16 @@
   ],
   "ajNews": [
     {
+      "title": "US-Iran MoU is set to expire: What to know",
+      "url": "https://www.aljazeera.com/news/2026/8/16/us-iran-mou-is-set-to-expire-what-to-know?traffic_source=rss",
+      "date": "August 16, 2026",
+      "description": "Both sides accused the other of violating the June agreement shortly after it was signed."
+    },
+    {
       "title": "Largest Ukrainian drone attack on Russia, Moscow says 822 drones shot down",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/16/16-08-sv-ukraine-largest-drone-attack-russia-ua?traffic_source=rss",
       "date": "August 16, 2026",
       "description": "Ukraine launched hundreds of drones across Russia, killing at least six people and striking a Wildberries logistics hub."
-    },
-    {
-      "title": "Trump threatens to make the Strait of Hormuz a US territory: Can he?",
-      "url": "https://www.aljazeera.com/news/2026/8/16/trump-threatens-to-make-the-strait-of-hormuz-a-us-territory-can-he?traffic_source=rss",
-      "date": "August 16, 2026",
-      "description": "US president has yet another outlandish threat for Iran, with no end to war in sight."
     }
   ],
   "occNews": [
@@ -3209,10 +3209,22 @@
   ],
   "regionsNews": [
     {
-      "title": "Thousands displaced by deadly Indonesia earthquake as rescue efforts continue",
-      "url": "https://www.bbc.co.uk/news/articles/c3v00w5ylw9o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Trump envoy Kushner meets Hamas leader to push Gaza peace plan",
+      "url": "https://www.bbc.co.uk/news/articles/c77gg5vn44yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 16, 2026",
-      "description": "Hundreds of homes and public buildings have been severely damaged with at least 53 people killed."
+      "description": "The rare meeting comes a week after Israel rejected Donald Trump's peace plan for Gaza."
+    },
+    {
+      "title": "Two dead and hundreds evacuated after twin fires break out on Greek island",
+      "url": "https://www.bbc.co.uk/news/articles/c87nnwlpe5no?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 16, 2026",
+      "description": "About 200 firefighters worked to keep the fires from converging on Salamina, with one now under control."
+    },
+    {
+      "title": "Teen suspect in Virginia campus shooting found hiding in closet",
+      "url": "https://www.bbc.co.uk/news/articles/c0l5583903yo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 16, 2026",
+      "description": "The attack left five injured outside a halls of residence, and the suspect was not a student there, say police."
     },
     {
       "title": "One dead, homes swept away after Hurricane Lala lashes Hawaii",
@@ -3221,16 +3233,10 @@
       "description": "A search-and-rescue operation is under way after properties were uprooted from their foundations."
     },
     {
-      "title": "Twelve killed as Polish bus veers off Hungarian motorway",
-      "url": "https://www.bbc.co.uk/news/articles/ckg4424zd7go?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Thousands displaced by deadly Indonesia earthquake as rescue efforts continue",
+      "url": "https://www.bbc.co.uk/news/articles/c3v00w5ylw9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 16, 2026",
-      "description": "Dozens more are seriously injured after the tourist bus overturned in the early hours of Sunday morning."
-    },
-    {
-      "title": "Two dead and hundreds evacuated as twin fires break out on Greek island",
-      "url": "https://www.bbc.co.uk/news/articles/c87nnwlpe5no?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 16, 2026",
-      "description": "Nearly 200 firefighters are trying to keep the two fires apart on Salamina, Greek media report."
+      "description": "Hundreds of homes and public buildings have been severely damaged with at least 53 people killed."
     },
     {
       "title": "Europe's tallest Virgin Mary statue unveiled in rural Poland",
@@ -3239,16 +3245,22 @@
       "description": "The 55.6-metre (182ft) concrete figure is head-and-shoulders above Rio de Jaineiro's Christ the Redeemer."
     },
     {
-      "title": "Belgian wildfire doubles in size on third day tearing through nature reserve",
-      "url": "https://www.bbc.co.uk/news/articles/cp8eex1nmpvo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Twelve killed as Polish bus veers off Hungarian motorway",
+      "url": "https://www.bbc.co.uk/news/articles/ckg4424zd7go?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 16, 2026",
-      "description": "Hundreds of firefighters are trying to contain the flames consuming the major park."
+      "description": "Dozens more are seriously injured after the tourist bus overturned in the early hours of Sunday morning."
     },
     {
       "title": "Four 'extraordinary' Renaissance paintings stolen from Italian museum",
       "url": "https://www.bbc.co.uk/news/articles/cqjxx2gzd9qo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 16, 2026",
       "description": "The works were taken overnight without alarms being triggered, raising suspicion of a professional hit."
+    },
+    {
+      "title": "Belgian wildfire doubles in size on third day tearing through nature reserve",
+      "url": "https://www.bbc.co.uk/news/articles/cp8eex1nmpvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 16, 2026",
+      "description": "Hundreds of firefighters are trying to contain the flames consuming the major park."
     },
     {
       "title": "Morocco detains dozens of migrants trying to cross into Ceuta, reports say",
@@ -3261,12 +3273,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cn9nnxrxg4qo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 15, 2026",
       "description": "The declaration was made on the national day of the central European country, which has a population of just 44,000."
-    },
-    {
-      "title": "Teen suspect in Virginia campus shooting found hiding in closet",
-      "url": "https://www.bbc.co.uk/news/articles/c0l5583903yo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 16, 2026",
-      "description": "The attack left five injured outside a halls of residence, and the suspect was not a student there, say police."
     },
     {
       "title": "Eleven killed in Israeli strikes on southern Lebanon, authorities say",
@@ -3683,6 +3689,48 @@
       "description": "BBC Sport's Sam Harris breaks down the potential new investment of Jeff Bezos into Liverpool."
     },
     {
+      "title": "US admiral praises USS Lincoln crew amid reported mental health concerns",
+      "url": "https://www.aljazeera.com/news/2026/8/16/us-admiral-praises-uss-lincoln-crew-amid-reported-mental-health-concerns?traffic_source=rss",
+      "date": "August 16, 2026",
+      "description": "Politicians voiced alarm over mental health struggles on carrier, with reports of sailors attempting to jump overboard."
+    },
+    {
+      "title": "Brazil: Lula, Bolsonaro return to strongholds to launch runs for president",
+      "url": "https://www.aljazeera.com/news/2026/8/16/brazil-lula-bolsonaro-return-to-strongholds-to-launch-runs-for-president?traffic_source=rss",
+      "date": "August 16, 2026",
+      "description": "Lula and Bolsonaro appeal to Brazil’s women voters with promises to combat rising femicide and gender violence."
+    },
+    {
+      "title": "Senegal’s Saint-Louis Regatta keeps centuries of tradition alive",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/16/16-08-sv-senegal-boat-tradition-sn?traffic_source=rss",
+      "date": "August 16, 2026",
+      "description": "Thousands gathered in Saint-Louis, Senegal, for the annual regatta."
+    },
+    {
+      "title": "Anti-corruption raids in Baghdad as dozens of officials arrested",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/16/anti-corruption-raids-in-baghdad-as-dozens-of-officials-arrested?traffic_source=rss",
+      "date": "August 16, 2026",
+      "description": "Iraq’s Integrity Commission seized of millions in cash and jewelry said to be linked to corruption charges."
+    },
+    {
+      "title": "Erdogan says Israeli attacks on Lebanon are a serious concern for Türkiye",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/16/erdogan-says-israeli-attacks-on-lebanon-are-a-serious-concern-for-turkiye?traffic_source=rss",
+      "date": "August 16, 2026",
+      "description": "Turkish President Recep Tayyip Erdogan said continued Israeli attacks on Lebanon are a source of serious concern."
+    },
+    {
+      "title": "Kushner meets Hamas leaders in Egypt to push Trump’s Gaza plan",
+      "url": "https://www.aljazeera.com/news/2026/8/16/kushner-meets-hamas-in-egypt-to-push-trumps-gaza-plan?traffic_source=rss",
+      "date": "August 16, 2026",
+      "description": "Trump envoy has pushed for disarmament to end any future Hamas role in running Gaza, diplomatic sources tell AFP."
+    },
+    {
+      "title": "Erdogan calls for Strait of Hormuz reopening amid oil disruption",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/16/16-08-clip-erdogan-hormuz-tr?traffic_source=rss",
+      "date": "August 16, 2026",
+      "description": "Turkish President Recep Tayyip Erdogan has called for the Strait of Hormuz to reopen."
+    },
+    {
       "title": "Former Israeli captive asks Ben-Gvir to let him execute Palestinian prisone",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/16/former-israeli-captive-asks-ben-gvir-to-let-him-execute-palestinian-prisone?traffic_source=rss",
       "date": "August 16, 2026",
@@ -3777,48 +3825,6 @@
       "url": "https://www.aljazeera.com/news/2026/8/16/belgiums-largest-wildfire-on-record-spreads-towards-german-border?traffic_source=rss",
       "date": "August 16, 2026",
       "description": "Largest recorded wildfire in Belgium forces 600 residents to evacuate as blaze spreads towards German border towns."
-    },
-    {
-      "title": "‘Spearhead of annexation’: Israel hands West Bank rule to civilian police",
-      "url": "https://www.aljazeera.com/news/2026/8/16/spearhead-of-annexation-israel-hands-west-bank-rule-to-civilian-police?traffic_source=rss",
-      "date": "August 16, 2026",
-      "description": "Israel&#039;s transfer of West Bank policing to civilian forces cements de facto annexation and empowers settler militias."
-    },
-    {
-      "title": "‘Limited options’ for many Iranians as war with US chokes economy",
-      "url": "https://www.aljazeera.com/news/2026/8/16/limited-options-for-many-iranians-as-war-with-us-chokes-economy?traffic_source=rss",
-      "date": "August 16, 2026",
-      "description": "Millions of Iranians struggle to make ends meet as war with US devastates the economy and sends prices soaring."
-    },
-    {
-      "title": "Arsenal 3-0 Manchester City: Community Shield – as it happened",
-      "url": "https://www.aljazeera.com/sports/liveblog/2026/8/16/arsenal-vs-manchester-city-live-fa-community-shield?traffic_source=rss",
-      "date": "August 16, 2026",
-      "description": "All the updates as Arsenal cruise to a 3-0 win over a lacklustre City led by new boss Maresca for the first time."
-    },
-    {
-      "title": "Why has Israel escalated attacks in southern Lebanon despite ceasefire?",
-      "url": "https://www.aljazeera.com/news/2026/8/16/why-has-israel-escalated-attacks-in-southern-lebanon-despite-ceasefire?traffic_source=rss",
-      "date": "August 16, 2026",
-      "description": "At least 11 people killed in one day of Israeli attacks despite truce extension brokered by US in June."
-    },
-    {
-      "title": "Premier League: Key talking points heading into the new 2026-27 season",
-      "url": "https://www.aljazeera.com/sports/2026/8/16/premier-league-key-talking-points-heading-into-the-new-2026-27-season?traffic_source=rss",
-      "date": "August 16, 2026",
-      "description": "City, Liverpool and Chelsea have new faces in the dugout as Arsenal attempt to defend title for first time in 90 years."
-    },
-    {
-      "title": "Doctor describes amputating girl’s leg in Gaza without anaesthesia",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/16/doctor-describes-amputating-girls-leg-in-gaza-without-anaesthesia?traffic_source=rss",
-      "date": "August 16, 2026",
-      "description": "‘We were praying for her to faint’."
-    },
-    {
-      "title": "The post-Hormuz era offers Africa a great opportunity",
-      "url": "https://www.aljazeera.com/opinions/2026/8/16/the-post-hormuz-era-offers-africa-a-great-opportunity?traffic_source=rss",
-      "date": "August 16, 2026",
-      "description": "But to capture its benefits, the continent needs to develop an effective, common maritime policy."
     }
   ]
 }
