@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-17T21:08:39.743Z",
+  "updatedAt": "2026-08-17T22:08:44.372Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260812",
@@ -3159,15 +3159,22 @@
       "url": "https://www.aljazeera.com/opinions/2026/8/17/how-russian-dissidents-are-being-punished-by-both-russia-and-europe?traffic_source=rss",
       "date": "August 17, 2026",
       "description": "While Moscow is stripping citizenship rights, European states are curbing access to legal status for Russian emigres."
-    },
-    {
-      "title": "Trump says US in contact with IRGC and calls on Iran to surrender",
-      "url": "https://www.aljazeera.com/news/2026/8/17/trump-demands-iran-put-up-the-white-flag-of-surrender-as-mou-expires?traffic_source=rss",
-      "date": "August 17, 2026",
-      "description": "President denies a rush to end conflict ahead of November&#039;s US midterms as he calls for Iran to &#039;raise white flag&#039;."
     }
   ],
-  "occNews": [],
+  "occNews": [
+    {
+      "title": "Bank Accounting Advisory Series Updated",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-68.html",
+      "date": "August 14, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released its annual update to the Bank Accounting Advisory Series (BAAS)."
+    },
+    {
+      "title": "OCC Announces Enforcement Actions for July 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-59.html",
+      "date": "July 16, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for July 2026."
+    }
+  ],
   "economicsNews": [
     {
       "title": "Federal Reserve issues FOMC statement",
@@ -3274,10 +3281,10 @@
       "description": "The 30-year-old was on the active volcano when a thunderstorm developed, local media report."
     },
     {
-      "title": "Trump envoy hails 'very good' meeting with Netanyahu after Hamas talks on peace plan",
+      "title": "Kushner hails 'very good' meeting with Netanyahu after Hamas talks on Gaza peace plan",
       "url": "https://www.bbc.co.uk/news/articles/c77gg5vn44yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 17, 2026",
-      "description": "US President Trump's son-in-law Jared Kushner is seeking to gain Israeli backing for the US-backed Gaza peace plan."
+      "description": "Donald Trump's Middle East envoy and son-in-law, Jared Kushner, is seeking to gain Israeli backing for the US-backed Gaza peace plan."
     },
     {
       "title": "Aid shortages and fears of starvation as Indonesia reels from deadly earthquake",
@@ -3694,6 +3701,24 @@
       "description": "Are we entering the Chinese Century, or is the Chinese Dream already fading for some?"
     },
     {
+      "title": "‘Truth or fiction’: US trial of Tupac Shakur’s accused killer begins",
+      "url": "https://www.aljazeera.com/news/2026/8/17/truth-or-fiction-us-trial-of-tupac-shakurs-accused-killer-begins?traffic_source=rss",
+      "date": "August 17, 2026",
+      "description": "Prosecutors claim Duane Davis was ‘on-site commander’ in murder of Shakur, who died after drive-by shooting in 1996."
+    },
+    {
+      "title": "Palestinian American reunites with family under siege in West Bank",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/17/palestinian-american-reunites-with-family-under-siege-in-west-bank?traffic_source=rss",
+      "date": "August 17, 2026",
+      "description": "Videos show the first moments Palestinian-American Loui Ridi arrived at his home in Qusra."
+    },
+    {
+      "title": "Civilians paying price as Israeli military raises stakes in Lebanon: UNIFIL",
+      "url": "https://www.aljazeera.com/news/2026/8/17/civilians-pay-price-as-israeli-military-activity-rises-in-lebanon-unifil?traffic_source=rss",
+      "date": "August 17, 2026",
+      "description": "UN peacekeeping force recorded an average of 137 projectiles fired daily in the region over the last two weeks."
+    },
+    {
       "title": "Trump loses second Supreme Court bid over E Jean Carroll sex abuse case",
       "url": "https://www.aljazeera.com/news/2026/8/17/trump-loses-second-supreme-court-bid-over-e-jean-carroll-sex-abuse-case?traffic_source=rss",
       "date": "August 17, 2026",
@@ -3770,18 +3795,6 @@
       "url": "https://www.aljazeera.com/news/2026/8/17/somali-army-clashes-with-rebel-forces-for-control-of-key-city-baidoa?traffic_source=rss",
       "date": "August 17, 2026",
       "description": "Somali forces repel rebel fighters in Baidoa after intense fighting involving explosives and dozens of casualties."
-    },
-    {
-      "title": "Rights group urges FIFA to block Infantino re-election bid over term limits",
-      "url": "https://www.aljazeera.com/sports/2026/8/17/rights-group-urges-fifa-to-block-infantino-re-election-bid-over-term-limits?traffic_source=rss",
-      "date": "August 17, 2026",
-      "description": "FairSquare says the FIFA president should not be able to run again under the world football organisation&#039;s statutes."
-    },
-    {
-      "title": "Police execute controlled World War II–era Mine explosion",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/17/police-execute-controlled-world-war-ii-era-mine?traffic_source=rss",
-      "date": "August 17, 2026",
-      "description": "Video footage released by police on Sunday shows Slovak bomb disposal experts executing a mine detonation."
     }
   ]
 }
