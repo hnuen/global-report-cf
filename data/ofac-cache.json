@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-17T15:08:48.952Z",
+  "updatedAt": "2026-08-17T17:08:41.838Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260812",
@@ -3069,10 +3069,16 @@
   ],
   "bbcNews": [
     {
-      "title": "Trump threatens to bomb Oman if it 'gets in the way' over Iran issue",
+      "title": "Trump threatens to bomb US ally Oman if it 'gets in the way' over Iran deal",
       "url": "https://www.bbc.co.uk/news/articles/cy5dzk0ryzdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 17, 2026",
-      "description": "The president also told Fox News the US had a direct backchannel with the Islamic Revolutionary Guard Corps - something it denies."
+      "description": "The US and Oman have been working separately to reopen the Strait of Hormuz, one of the world's busiest oil shipping routes."
+    },
+    {
+      "title": "Russia and Ukraine trade more deadly strikes",
+      "url": "https://www.bbc.co.uk/news/articles/cn7n4lm11vro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 17, 2026",
+      "description": "Moscow says nine people have been killed in the past 24 hours, while Kyiv reports four deaths."
     },
     {
       "title": "Trump says US to reduce military drills with South Korea after it stayed out of Iran war",
@@ -3081,10 +3087,10 @@
       "description": "Trump cites his \"very good relationship\" with North Korea's leader in deciding to downsize the exercises."
     },
     {
-      "title": "Russia and Ukraine trade more deadly strikes",
-      "url": "https://www.bbc.co.uk/news/articles/cn7n4lm11vro?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Russia's prominent anti-war politician jailed for 11 years",
+      "url": "https://www.bbc.co.uk/news/articles/cj4kjnle2neo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 17, 2026",
-      "description": "Moscow says nine people have been killed in the past 24 hours, while Kyiv reports four deaths."
+      "description": "Lev Schlosberg is found guilty of \"discrediting\" Russia's army - a verdict he condemns as punishment for his political position."
     },
     {
       "title": "BBC visits smouldering Kyiv market after Russian strikes",
@@ -3100,6 +3106,30 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "War on Iran: Phase II, Day 37",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/17/war-on-iran-phase-ii-day-37?traffic_source=rss",
+      "date": "August 17, 2026",
+      "description": "Iran is offering $30,000 for captured or killed US soldiers. Trump cuts back South Korea drills."
+    },
+    {
+      "title": "Democrats rebuke Trump over scaling back military drills with South Korea",
+      "url": "https://www.aljazeera.com/news/2026/8/17/democrats-rebuke-trump-over-scaling-back-military-drills-with-south-korea?traffic_source=rss",
+      "date": "August 17, 2026",
+      "description": "Republican Senator Thom Tillis says the decision allows North Korea to provide more support to Russia in Ukraine."
+    },
+    {
+      "title": "How Russian dissidents are being punished by both Russia and Europe",
+      "url": "https://www.aljazeera.com/opinions/2026/8/17/how-russian-dissidents-are-being-punished-by-both-russia-and-europe?traffic_source=rss",
+      "date": "August 17, 2026",
+      "description": "While Moscow is stripping citizenship rights, European states are curbing access to legal status for Russian emigres."
+    },
+    {
+      "title": "Trump says US in contact with IRGC and calls on Iran to surrender",
+      "url": "https://www.aljazeera.com/news/2026/8/17/trump-demands-iran-put-up-the-white-flag-of-surrender-as-mou-expires?traffic_source=rss",
+      "date": "August 17, 2026",
+      "description": "President also claims US is in direct contact with IRGC, denies a rush to end conflict ahead of November&#039;s US midterms."
+    },
     {
       "title": "Iran signals readiness for ‘US ground operations’ as MoU expires",
       "url": "https://www.aljazeera.com/news/2026/8/17/iran-signals-readiness-for-us-ground-operations-as-mou-expires?traffic_source=rss",
@@ -3221,12 +3251,6 @@
   ],
   "regionsNews": [
     {
-      "title": "Aid shortages and fears of starvation as Indonesia reels from deadly earthquake",
-      "url": "https://www.bbc.co.uk/news/articles/crl7686r71yo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 17, 2026",
-      "description": "Some 53 people were killed and thousands displaced by the earthquake, which struck early on Saturday."
-    },
-    {
       "title": "US hiker dies after being struck by lightning on Mount Etna",
       "url": "https://www.bbc.co.uk/news/articles/ce34rlkw6q7o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 17, 2026",
@@ -3237,6 +3261,18 @@
       "url": "https://www.bbc.co.uk/news/articles/c77gg5vn44yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 17, 2026",
       "description": "US President Trump's son-in-law Jared Kushner is seeking to gain Israeli backing for the US-backed Gaza peace plan."
+    },
+    {
+      "title": "Aid shortages and fears of starvation as Indonesia reels from deadly earthquake",
+      "url": "https://www.bbc.co.uk/news/articles/crl7686r71yo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 17, 2026",
+      "description": "Some 53 people were killed and thousands displaced by the earthquake, which struck early on Saturday."
+    },
+    {
+      "title": "Supreme Court again rejects Trump's bid to overturn E Jean Carroll sex abuse case",
+      "url": "https://www.bbc.co.uk/news/articles/c74gekjgrllo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 17, 2026",
+      "description": "The US president has already paid the writer over $5m in damages in the assault and defamation case."
     },
     {
       "title": "Ebola outbreak in DR Congo becomes deadliest in its history",
@@ -3257,16 +3293,16 @@
       "description": "The Luce's launch drew backlash from some commentators who said it broke from the brand's signature dramatic styling."
     },
     {
-      "title": "Record rains drench South Korean city as landslide kills one",
-      "url": "https://www.bbc.co.uk/news/articles/cvgww971nn2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 17, 2026",
-      "description": "It comes as large swathes of East and South East Asia have been pummelled by dats of heavy rain."
-    },
-    {
       "title": "Movie that went viral for terrible animation becomes China box office hit",
       "url": "https://www.bbc.co.uk/news/articles/c4g4r0mrmlpo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 17, 2026",
       "description": "Niu Lai's confusing plot and laughable animation quality has won ironic fans on the internet."
+    },
+    {
+      "title": "Record rains drench South Korean city as landslide kills one",
+      "url": "https://www.bbc.co.uk/news/articles/cvgww971nn2o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 17, 2026",
+      "description": "It comes as large swathes of East and South East Asia have been pummelled by dats of heavy rain."
     },
     {
       "title": "Aussie rules footy players under investigation as police probe sexual assault claim",
@@ -3279,24 +3315,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c87nnwlpe5no?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 16, 2026",
       "description": "About 200 firefighters worked to keep the fires from converging on Salamina, with one now under control."
-    },
-    {
-      "title": "Four 'extraordinary' Renaissance paintings stolen from Italian museum",
-      "url": "https://www.bbc.co.uk/news/articles/cqjxx2gzd9qo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 16, 2026",
-      "description": "The works were taken overnight without alarms being triggered, raising suspicion of a professional hit."
-    },
-    {
-      "title": "Teen suspect in Virginia campus shooting found hiding in closet",
-      "url": "https://www.bbc.co.uk/news/articles/c0l5583903yo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 16, 2026",
-      "description": "The attack left five injured outside a halls of residence, and the suspect was not a student there, say police."
-    },
-    {
-      "title": "Twelve killed as Polish bus veers off Hungarian motorway",
-      "url": "https://www.bbc.co.uk/news/articles/ckg4424zd7go?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 16, 2026",
-      "description": "Dozens more are seriously injured after the tourist bus overturned in the early hours of Sunday morning."
     },
     {
       "title": "'Ghana was the crime scene': The country leading the demand for slavery reparations",
@@ -3635,12 +3653,6 @@
       "description": "Parents have told BBC Panorama the agency tasked with helping to secure financial support for children after separation or divorce is driving them to breaking point."
     },
     {
-      "title": "Business Daily",
-      "url": "https://www.bbc.co.uk/sounds/play/w3ct8gg6?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 16, 2026",
-      "description": "Amid economic uncertainty, workers are more cautious about taking their next career step"
-    },
-    {
       "title": "Why is Selena Gomez being sued?",
       "url": "https://www.bbc.co.uk/news/videos/cly58dnde5yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 14, 2026",
@@ -3659,10 +3671,28 @@
       "description": "Are we entering the Chinese Century, or is the Chinese Dream already fading for some?"
     },
     {
+      "title": "Somali army clashes with rebel forces for control of key city Baidoa",
+      "url": "https://www.aljazeera.com/news/2026/8/17/somali-army-clashes-with-rebel-forces-for-control-of-key-city-baidoa?traffic_source=rss",
+      "date": "August 17, 2026",
+      "description": "Somali forces repel rebel fighters in Baidoa after intense fighting involving explosives and dozens of casualties."
+    },
+    {
+      "title": "Rights group urges FIFA to block Infantino re-election bid over term limits",
+      "url": "https://www.aljazeera.com/sports/2026/8/17/rights-group-urges-fifa-to-block-infantino-re-election-bid-over-term-limits?traffic_source=rss",
+      "date": "August 17, 2026",
+      "description": "FairSquare says the FIFA president should not be able to run again under the world football organisation&#039;s statutes."
+    },
+    {
+      "title": "Police execute controlled World War II–era Mine explosion",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/17/police-execute-controlled-world-war-ii-era-mine?traffic_source=rss",
+      "date": "August 17, 2026",
+      "description": "Video footage released by police on Sunday shows Slovak bomb disposal experts executing a mine detonation."
+    },
+    {
       "title": "Boat sets sail from Bristol, aiming to break Israel’s siege of Gaza",
       "url": "https://www.aljazeera.com/news/2026/8/17/boat-sets-sail-from-bristol-aiming-to-break-israels-siege-of-gaza?traffic_source=rss",
       "date": "August 17, 2026",
-      "description": "Twelve people including the captain are on board the vessel named Kate, in the latest attempt to deliver aid."
+      "description": "Twelve people including the captain are on board &#039;Kate&#039;, the latest vessel attempting to deliver aid."
     },
     {
       "title": "Lula and Bolsonaro’s son launch rival bids for Brazil presidency",
@@ -3741,48 +3771,6 @@
       "url": "https://www.aljazeera.com/news/2026/8/17/uss-lincoln-crisis-how-it-compares-to-past-aircraft-carrier-deployments?traffic_source=rss",
       "date": "August 17, 2026",
       "description": "The USS Abraham Lincoln crisis highlights the toll of lengthy deployments on crew morale and operational readiness."
-    },
-    {
-      "title": "Iraqi Kurdish PM Barzani’s office targeted in drone attack",
-      "url": "https://www.aljazeera.com/news/2026/8/17/iraqi-kurdish-pm-barzanis-office-targeted-in-drone-attack?traffic_source=rss",
-      "date": "August 17, 2026",
-      "description": "Explosive drones target Iraqi Kurdish PM&#039;s office and security chief&#039;s residence; no casualties reported."
-    },
-    {
-      "title": "Indian temple stampede kills seven people and injures dozens",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/17/indian-temple-stampede-kills-seven-people-and-injures-dozens?traffic_source=rss",
-      "date": "August 17, 2026",
-      "description": "A stampede at a Hindu temple in eastern India kills seven people and injures nineteen more."
-    },
-    {
-      "title": "How China-India border tensions are rising again over encroachment claims",
-      "url": "https://www.aljazeera.com/news/2026/8/17/is-china-encroaching-upon-indian-territory-in-arunachal-pradesh-2?traffic_source=rss",
-      "date": "August 17, 2026",
-      "description": "India and China are tangled in yet another border dispute, angering locals in the eastern state of Arunachal Pradesh."
-    },
-    {
-      "title": "Watch: Young chef, 16, cooking up gourmet meals in Gaza",
-      "url": "https://www.aljazeera.com/features/2026/8/17/watch-young-chef-16-cooking-up-gourmet-meals-in-gaza?traffic_source=rss",
-      "date": "August 17, 2026",
-      "description": "Yasser Ayad, 16, has become a culinary star on social media as he cooks traiditional Palestinain dishes in Gaza."
-    },
-    {
-      "title": "Thousands await aid after deadly Indonesia quake as rescue work under way",
-      "url": "https://www.aljazeera.com/news/2026/8/17/thousands-await-aid-after-deadly-indonesia-quake-as-rescue-work-conducted?traffic_source=rss",
-      "date": "August 17, 2026",
-      "description": "Thousands remain displaced after a magnitude 7.7 earthquake struck East Nusa Tenggara province on Saturday."
-    },
-    {
-      "title": "Inside the UK’s ‘stressful’ cost of living crisis Burnham hopes to tackle",
-      "url": "https://www.aljazeera.com/news/2026/8/17/who-can-live-on-340-a-month-inside-the-uks-cost-of-living-crisis?traffic_source=rss",
-      "date": "August 17, 2026",
-      "description": "Britain&#039;s new premier has promised to ease the suffering of millions of families unable to afford basic items."
-    },
-    {
-      "title": "Will India’s ‘Cockroach’ movement force Modi’s BJP to rethink its politics?",
-      "url": "https://www.aljazeera.com/news/2026/8/17/has-indias-cockroach-movement-forced-modis-bjp-to-recalibrate-agenda?traffic_source=rss",
-      "date": "August 17, 2026",
-      "description": "Modi&#039;s BJP once controlled media narratives in India, but this might be changing with the &#039;Cockroach&#039; movement."
     }
   ]
 }
