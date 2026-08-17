@@ -31,7 +31,7 @@ export interface OfficialSource {
 // RSS feeds and listing pages needed by the alert pipeline are much smaller
 // than this. Reject unusually large responses before regex parsing so one
 // publisher page cannot consume the entire Worker CPU allowance.
-const MAX_SOURCE_BYTES = 512 * 1024;
+const MAX_SOURCE_BYTES = 256 * 1024;
 
 async function readTextBounded(res: Response, maxBytes = MAX_SOURCE_BYTES): Promise<string> {
   const declared = Number(res.headers.get("content-length") ?? 0);
@@ -525,6 +525,9 @@ export async function fetchOfficialSources(
         console.log(`[official] âš¡ ${source.name} â€” 304 unchanged`);
         return { name: source.name, url: source.url, content: "", fetchedAt: now, notModified: true };
       }
+      // Keep this immediately before parsing so the last emitted source name
+      // identifies a CPU-heavy response if the Worker is terminated.
+      console.log(`[official] Parsing ${source.name} (${html.length} chars)`);
       const content = stripHTML(html);
       const itemLines = content.split("\n").map(line => line.trim()).filter(Boolean);
       const itemKeys = itemLines.map(itemCheckpointKey);
