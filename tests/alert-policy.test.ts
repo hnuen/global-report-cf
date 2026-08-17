@@ -439,7 +439,8 @@ test("monitor and refresh use bounded hot article working sets", () => {
   assert.ok(orchestrator.includes("HOT_ARTICLES_PER_SECTION = 60"));
   assert.ok(orchestrator.includes("capHotBriefingArticles(briefing.articles)"));
   assert.doesNotMatch(orchestrator, /if \(opts\?\.skipLLM\) \{\s*saveArticlesToLibrary/);
-  assert.ok(sources.includes("MAX_SOURCE_BYTES = 512 * 1024"));
+  assert.ok(sources.includes("MAX_SOURCE_BYTES = 256 * 1024"));
+  assert.ok(sources.includes("Parsing ${source.name}"));
 });
 
 test("monitor workflow bounds transient retries", () => {
@@ -447,4 +448,11 @@ test("monitor workflow bounds transient retries", () => {
   assert.ok(workflow.includes("for ATTEMPT in 1 2; do"));
   assert.ok(workflow.includes("sleep 10"));
   assert.doesNotMatch(workflow, /sleep 25/);
+});
+
+test("monitor workflow treats an active delivery lock as a successful no-op", () => {
+  const workflow = readFileSync(new URL("../.github/workflows/monitor.yml", import.meta.url), "utf8");
+  assert.ok(workflow.includes('if [ "$HTTP" = "409" ]; then'));
+  assert.ok(workflow.includes("Another monitor run is already handling delivery"));
+  assert.ok(workflow.includes('echo "alerting=0" >> "$GITHUB_OUTPUT"'));
 });
