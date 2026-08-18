@@ -15,6 +15,7 @@ import { itemCheckpointKey, sourceCheckpointKey } from "../src/lib/source-item-c
 import { hasDirectArticleUrl, isDisplayableNewsArticle, isLikelyCorruptedText, isLikelyHeadlineFragment, repairMojibake } from "../src/lib/text-quality.ts";
 import { parseEnforcementActionsPage } from "../src/lib/fincen-fetcher.ts";
 import { FINCEN_PENALTIES } from "../src/lib/fincen-penalties.ts";
+import { buildBriefingFromSources } from "../src/lib/official-briefing.ts";
 
 function briefing(articles: Article[]): Briefing {
   return { lastUpdated: "test", articles, sidebar: {} as Briefing["sidebar"] };
@@ -176,6 +177,32 @@ test("a directly verified trusted-source discovery replaces the AI provenance", 
 test("old and unparseable publication dates fail the recency gate", () => {
   assert.equal(isRecentEnough(new Date(Date.now() - 72 * 60 * 60 * 1000).toISOString(), 48), false);
   assert.equal(isRecentEnough("date unavailable", 48), false);
+});
+
+test("Treasury releases cannot inherit the fetch date", () => {
+  const undated = buildBriefingFromSources([{
+    name: "Treasury Press Release SB0536",
+    url: "https://home.treasury.gov/news/press-releases/sb0536",
+    content: "• Treasury Sanctions an Iran-Linked Procurement Network ||| https://home.treasury.gov/news/press-releases/sb0536",
+    fetchedAt: new Date().toISOString(),
+  }]).articles[0];
+  assert.equal(undated?.date, "");
+  assert.equal(scoreArticle(undated, { threshold: 0, maxAgeHours: null }).shouldAlert, false);
+
+  const june = buildBriefingFromSources([{
+    name: "U.S. Treasury â€” News",
+    url: "https://home.treasury.gov/news/press-releases",
+    content: "• Treasury Sanctions an Iran-Linked Procurement Network ||| https://home.treasury.gov/news/press-releases/sb0536 ||| DATE:June 20, 2026",
+    fetchedAt: new Date().toISOString(),
+  }]).articles[0];
+  assert.equal(june?.date, "2026-06-20");
+  assert.equal(scoreArticle(june, { threshold: 0, maxAgeHours: 168 }).shouldAlert, false);
+});
+
+test("Treasury source discovery uses the newest listing, not stale SB probes", () => {
+  const sources = readFileSync(new URL("../src/lib/official-sources.ts", import.meta.url), "utf8");
+  assert.doesNotMatch(sources, /SB_BASELINE_NUM|SB_PROBE_ABOVE/);
+  assert.ok(sources.includes('url: "https://home.treasury.gov/news/press-releases"'));
 });
 
 test("admin threshold changes sensitivity but cannot bypass safety gates", () => {
