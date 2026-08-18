@@ -199,7 +199,7 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
       { number: "13799", title: "Strengthening the Policy of the United States Toward Cuba (National Security Presidential Memorandum-5 implementation; reinstated Cuba Restricted List)", date: "November 8, 2017", url: "https://ofac.treasury.gov/media/10651/download?inline" },
     ],
     generalLicenses: [
-{ number: "GL 1", title: "Cuba General License 1", date: "May 7, 2026", url: "https://ofac.treasury.gov/media/935571/download?inline", addedDate: "August 18, 2026" },
+{ number: "GL 1", title: "Transactions Authorized Pursuant to the Cuban Assets Control Regulations", date: "May 7, 2026", url: "https://ofac.treasury.gov/media/935571/download?inline", addedDate: "August 18, 2026" },
 { number: "GL 2", title: "Cuba General License 2", date: "July 23, 2026", url: "https://ofac.treasury.gov/media/936436/download?inline", expires: "August 22, 2026", addedDate: "July 24, 2026" },
       { number: "GL 3", title: "Cuba General License 3", date: "July 23, 2026", url: "https://ofac.treasury.gov/media/936621/download?inline", expires: "August 22, 2026", addedDate: "July 24, 2026" },
 { number: "GL 4", title: "Authorizing Transactions for Third-Country Diplomatic and Consular Missions in Cuba", date: "July 23, 2026", url: "https://ofac.treasury.gov/media/936626/download?inline", addedDate: "July 23, 2026" },
