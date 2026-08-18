@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-08-18T17:08:47.388Z",
+  "updatedAt": "2026-08-18T19:08:47.714Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260818",
       "code": "20260818",
-      "title": "International Criminal Court-related Designations; Venezuela-related Designation; Issuance of General License",
+      "title": "International Criminal Court-related Designations; Venezuela-related Designation; Issuance of International Criminal Court-related General License",
       "date": "August 18, 2026"
     },
     {
@@ -751,11 +751,12 @@
       "generalLicenses": [
         {
           "number": "1",
-          "title": "Cuba General License 1",
+          "title": "Transactions Authorized Pursuant to the Cuban Assets Control Regulations",
           "date": "May 7, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935571/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "2",
@@ -775,11 +776,12 @@
         },
         {
           "number": "4",
-          "title": "Cuba General License 4",
+          "title": "Authorizing Transactions for Third-Country Diplomatic and Consular Missions in Cuba",
           "date": "July 23, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936626/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         }
       ]
     },
@@ -2792,12 +2794,11 @@
         },
         {
           "number": "47A",
-          "title": "Authorizing the Sale of U.S.-Origin Diluents to Venezuela",
+          "title": "Venezuela General License 47A",
           "date": "February 3, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935666/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "48B",
@@ -3064,6 +3065,12 @@
   ],
   "unNotices": [
     {
+      "title": "Security Council ISIL (Da’esh) and Al-Qaida Sanctions Committee Amends 21 Entries on Its Sanctions List",
+      "url": "https://press.un.org/en/2026/sc16435.doc.htm",
+      "date": "August 18, 2026",
+      "description": "On 18 August 2026, the Security Council Committee pursuant to resolutions 1267 (1999), 1989 (2011) and 2253 (2015) concerning ISIL (Da’esh), Al‑Qaida and associated individuals, groups, undertakings and entities enacted the amendments specified with strikethrough and underline in the entries below on its ISIL (Da’esh) and Al-Qaida Sanctions List of individuals and entities subject to the assets freeze, travel ban and arms embargo set out in paragraph 1 of Security Council resolution 2734 (2024), and adopted under Chapter VII of the Charter of the United Nations.."
+    },
+    {
       "title": "Security Council ISIL (Da’esh) and Al-Qaida Sanctions Committee Amends Four Entries on Its Sanctions List",
       "url": "https://press.un.org/en/2026/sc16433.doc.htm",
       "date": "August 14, 2026",
@@ -3084,6 +3091,12 @@
       "description": "Russia accuses the UK of escalating the Ukraine war by supplying British-made drones as the prime minister vows to support Kyiv in its \"hour of need\"."
     },
     {
+      "title": "US announces new sanctions on top ICC figures",
+      "url": "https://www.bbc.co.uk/news/articles/cnvnl0elz47o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 18, 2026",
+      "description": "The Trump administration has vowed to dismantle the international court \"brick by brick\"."
+    },
+    {
       "title": "Watch: Why has Trump shifted on North Korea?",
       "url": "https://www.bbc.co.uk/news/videos/cy45zjw424xo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 17, 2026",
@@ -3097,6 +3110,12 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Analysis: Syrian airbase attack is an Israeli message to Damascus, Ankara",
+      "url": "https://www.aljazeera.com/features/2026/8/18/analysis-syrian-airbase-attack-is-an-israeli-message-to-damascus-ankara?traffic_source=rss",
+      "date": "August 18, 2026",
+      "description": "Analysts say the attack on Abu al-Duhur was likely an Israeli message warning to not rebuild Syria's air force."
+    },
     {
       "title": "Iran prepares to keep economy alive as US threatens further sanctions",
       "url": "https://www.aljazeera.com/news/2026/8/18/iran-prepares-to-keep-economy-alive-as-us-threatens-further-sanctions?traffic_source=rss",
@@ -3126,36 +3145,6 @@
       "url": "https://www.aljazeera.com/news/2026/8/18/who-is-wassim-al-assad-sentenced-to-death-for-syria-war-atrocities?traffic_source=rss",
       "date": "August 18, 2026",
       "description": "The latest sentence against Wassim al-Assad comes a week after ousted President Bashar al-Assad was sentenced to death"
-    },
-    {
-      "title": "Bashar al-Assad’s cousin Wassim sentenced to death in Syria",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/18/bashar-al-assads-cousin-wassim-sentenced-to-death-in-syria?traffic_source=rss",
-      "date": "August 18, 2026",
-      "description": "A Syrian court has sentenced Wassim al-Assad, cousin of Bashar al-Assad, to death for murder, torture and war crimes."
-    },
-    {
-      "title": "Qatar rejects Iran’s ‘false’ claims about missing pilots",
-      "url": "https://www.aljazeera.com/news/2026/8/18/qatar-rejects-irans-false-claims-about-missing-pilots?traffic_source=rss",
-      "date": "August 18, 2026",
-      "description": "Majed al-Ansari says the Iranian planes 'violated Qatar’s sovereignty' and were dealt with in accordance with the law."
-    },
-    {
-      "title": "Myanmar: The Architecture of Statelessness",
-      "url": "https://www.aljazeera.com/video/aljazeerauntangles/2026/8/18/myanmar-the-architecture-of-statelessness?traffic_source=rss",
-      "date": "August 18, 2026",
-      "description": "How Myanmar stripped the Rohingya of citizenship, leading to mass expulsions and a genocide case at the ICJ."
-    },
-    {
-      "title": "Russia protests Japan PM’s comments after Putin’s Kuril visit",
-      "url": "https://www.aljazeera.com/news/2026/8/18/russia-protests-japan-pms-comments-after-putins-kuril-visit?traffic_source=rss",
-      "date": "August 18, 2026",
-      "description": "Russia summons Japan's ambassador to Moscow over Prime Minister Sanae ⁠Takaichi's 'anti-Russian' remarks."
-    },
-    {
-      "title": "Why has Trump threatened to bomb Oman – for a second time?",
-      "url": "https://www.aljazeera.com/news/2026/8/18/why-has-trump-threatened-to-bomb-oman-for-a-second-time?traffic_source=rss",
-      "date": "August 18, 2026",
-      "description": "The US president threatened to bomb Oman over Hormuz, with US-Iran peace negotiations in a deadlock."
     }
   ],
   "occNews": [
@@ -3254,10 +3243,10 @@
   ],
   "regionsNews": [
     {
-      "title": "Inside secret police warehouse as Germany targets small boats gangs",
-      "url": "https://www.bbc.co.uk/news/articles/cpq809zrvqdo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Earthquake rocks Spain's historic Granada, injuring three",
+      "url": "https://www.bbc.co.uk/news/articles/cdx755dyy1yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 18, 2026",
-      "description": "German authorities seize dinghies and life jackets during their first raids under a new law that cracks down on smuggling."
+      "description": "A number of buildings and cars are damaged in the historic city, and the world famous Alhambra palace has temporarily closed."
     },
     {
       "title": "Brazil's President Lula hails oil discovery near Amazon river",
@@ -3266,10 +3255,10 @@
       "description": "Environmentalists have heavily criticised the exploratory drilling in the sea off the mouth of the Amazon."
     },
     {
-      "title": "Hayden Panettiere's ex Wladimir Klitschko says family in 'profound shock and grief'",
-      "url": "https://www.bbc.co.uk/news/articles/c5ywe951z80o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Lindsay Clancy begged for help before her children's killings, mother-in-law testifies",
+      "url": "https://www.bbc.co.uk/news/articles/c62emm4yp8go?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 18, 2026",
-      "description": "The former heavyweight boxing champion shares a child with the Heroes actress, who died on Sunday."
+      "description": "Lindsay Clancy has admitted killing her daughter and two sons but has pleaded not guilty to murder, saying she was experiencing postpartum psychosis."
     },
     {
       "title": "Kariba ferry death toll rises to 93, making it Zimbabwe's deadliest transport disaster",
@@ -3282,6 +3271,18 @@
       "url": "https://www.bbc.co.uk/news/articles/cy4kzzlydrro?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 18, 2026",
       "description": "Imran Khan has been imprisoned since 2023 on corruption charges which he says were politically motivated."
+    },
+    {
+      "title": "Hayden Panettiere's ex Wladimir Klitschko says family in 'profound shock and grief'",
+      "url": "https://www.bbc.co.uk/news/articles/c5ywe951z80o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 18, 2026",
+      "description": "The former heavyweight boxing champion shares a child with the Heroes actress, who died on Sunday."
+    },
+    {
+      "title": "Inside secret police warehouse as Germany targets small boats gangs",
+      "url": "https://www.bbc.co.uk/news/articles/cpq809zrvqdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 18, 2026",
+      "description": "German authorities seize dinghies and life jackets during their first raids under a new law that cracks down on smuggling."
     },
     {
       "title": "Disney and ABC sue Trump's media regulator to stop early licence renewal",
@@ -3449,7 +3450,7 @@
       "title": "Ferguson shipyard to cut a quarter of its workforce",
       "url": "https://www.bbc.co.uk/news/articles/c20e2qe1lqpo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 18, 2026",
-      "description": "The state-owned yard on the Clyde will lose 70 of its 283 staff through a voluntary redundancy process."
+      "description": "The state-owned yard on the Clyde will lose 70 of its 283 staff through a voluntary redundancy process as it awaits confirmation of promised new orders."
     },
     {
       "title": "Disabled people in England to get 24-hour free bus travel",
@@ -3710,6 +3711,48 @@
       "description": "Are we entering the Chinese Century, or is the Chinese Dream already fading for some?"
     },
     {
+      "title": "Landmark trial on Meta’s impact on children’s mental health begins in US",
+      "url": "https://www.aljazeera.com/economy/2026/8/18/landmark-trial-on-metas-impact-on-childrens-mental-health-begins-in-us?traffic_source=rss",
+      "date": "August 18, 2026",
+      "description": "Case follows whistleblower’s 2021 claims about Meta’s profit-driven disregard for young people’s mental health and user safety."
+    },
+    {
+      "title": "Israeli strike on Gaza City cafe kills six, including child",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/18/israeli-strike-on-gaza-city-cafe-kills-six-including-child?traffic_source=rss",
+      "date": "August 18, 2026",
+      "description": "An Israeli strike hit a cafe in the port area west of Gaza City, killing six Palestinians, including a child."
+    },
+    {
+      "title": "Police attack Indonesian student protesters, arresting at least 21",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/18/police-attack-indonesian-student-protesters-arresting-at-least-21?traffic_source=rss",
+      "date": "August 18, 2026",
+      "description": "Hundreds of university students in Indonesia took to the streets of Jakarta on Tuesday."
+    },
+    {
+      "title": "Barcelona seal deal for World Cup winner Rodri from Manchester City",
+      "url": "https://www.aljazeera.com/sports/2026/8/18/barcelona-seal-deal-for-world-cup-winner-rodri-from-manchester-city?traffic_source=rss",
+      "date": "August 18, 2026",
+      "description": "Rodri won the player of the World Cup award while helping Spain beat Argentina, and now completes his Barcelona move."
+    },
+    {
+      "title": "Nigeria hospital collapses after rain washed away its foundations",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/18/nigeria-hospital-collapses-after-rain-washed-away-its-foundations?traffic_source=rss",
+      "date": "August 18, 2026",
+      "description": "A hospital in Nigeria has collapsed after rainwater triggered a landslide, washing away the foundational infrastructure."
+    },
+    {
+      "title": "The British state has recast protest as terrorism",
+      "url": "https://www.aljazeera.com/opinions/2026/8/18/the-british-state-has-recast-protest-as-terrorism?traffic_source=rss",
+      "date": "August 18, 2026",
+      "description": "Britain’s ever-broader terrorism laws are erasing the line between political violence, protest and dissent."
+    },
+    {
+      "title": "Tropical Storm Lala leaves Hawaii flooded and without power",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/18/tropical-storm-lala-leaves-hawaii-flooded-and-without-power?traffic_source=rss",
+      "date": "August 18, 2026",
+      "description": "Tropical Storm Lala leaves Hawaii flooded and without power"
+    },
+    {
       "title": "Disney sues US regulator, claiming political retaliation over ABC stations",
       "url": "https://www.aljazeera.com/economy/2026/8/18/disney-sues-us-regulator-claiming-political-retaliation-over-abc-stations?traffic_source=rss",
       "date": "August 18, 2026",
@@ -3764,7 +3807,7 @@
       "description": "Hakainde Hichilema’s second term will test whether economic recovery can deliver real change for Zambians."
     },
     {
-      "title": "What to know about Gaza working groups and their mandate?",
+      "title": "Disarmament, humanitarian aid at centre of new Gaza ‘working groups’",
       "url": "https://www.aljazeera.com/news/2026/8/18/what-to-know-about-gaza-working-groups-and-their-mandate?traffic_source=rss",
       "date": "August 18, 2026",
       "description": "What to know about the new Gaza working groups conditioning reconstruction on immediate disarmament."
@@ -3780,24 +3823,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/18/palestinian-american-confronts-israeli-settler-at-his-besieged-home?traffic_source=rss",
       "date": "August 18, 2026",
       "description": "Palestinian-American Loui Abu Ridi confronted an Israeli settler at his home in Qusra, south of Nablus."
-    },
-    {
-      "title": "Japanese activist keeps protesting against Israel’s genocide in Gaza",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/18/japanese-activist-keeps-protesting-against-israels-genocide-in-gaza?traffic_source=rss",
-      "date": "August 18, 2026",
-      "description": "Japanese activist keeps protesting against Israel’s genocide in Gaza"
-    },
-    {
-      "title": "Premier League preview: Match schedule, prediction, transfers and more",
-      "url": "https://www.aljazeera.com/sports/2026/8/18/premier-league-football-what-to-know-schedule-prediction-transfers-2026-27-season?traffic_source=rss",
-      "date": "August 18, 2026",
-      "description": "Matchday 1 fixtures, title predictions, where to watch and latest transfer news ahead of the new Premier League season."
-    },
-    {
-      "title": "What to know about California’s special election to replace Eric Swalwell",
-      "url": "https://www.aljazeera.com/news/2026/8/18/what-to-know-about-californias-special-election-to-replace-eric-swalwell?traffic_source=rss",
-      "date": "August 18, 2026",
-      "description": "A race that once received little attention has seen outside spending from the American Israel Public Affairs Committee."
     }
   ]
 }
