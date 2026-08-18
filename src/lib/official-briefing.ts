@@ -839,7 +839,11 @@ function buildArticlesFromSource(source: OfficialSource): Article[] {
     // Prefer the actual RSS/feed-supplied publish date (pubDate/published/updated/dc:date)
     // over "today" — this was previously parsed and then discarded, causing every
     // article to be stamped with the fetch date instead of its real publish date.
-    let articleDateRaw = today;
+    // Treasury alerts must have a publication date supplied by the source.
+    // Never turn an undated historical release into "today" merely because it
+    // was fetched today. Other lower-risk display sources retain the legacy
+    // fetch-date fallback.
+    let articleDateRaw = isTreasuryPR ? "" : today;
     if (item.pubDate) {
       const parsedPub = new Date(item.pubDate);
       if (!isNaN(parsedPub.getTime())) articleDateRaw = item.pubDate;
@@ -854,21 +858,21 @@ function buildArticlesFromSource(source: OfficialSource): Article[] {
     }
     // 2. From source URL (for date-specific pages the source itself has the date)
     const dateFromSource = source.url.match(/recent-actions\/(202\d)(\d{2})(\d{2})/);
-    if (dateFromSource && articleDateRaw === today) {
+    if (dateFromSource && !articleDateRaw) {
       const mo = parseInt(dateFromSource[2]);
       const dy = parseInt(dateFromSource[3]);
       if (mo >= 1 && mo <= 12) articleDateRaw = `${months[mo]} ${dy}, ${parseInt(dateFromSource[1])}`;
     }
     // 3. From "Release Date" field in content
     const releaseDateMatch = source.content.match(/Release Date[^\n]*?\n([^\n]{5,30})/);
-    if (releaseDateMatch && articleDateRaw === today) {
+    if (releaseDateMatch && !articleDateRaw) {
       const parsed = new Date(releaseDateMatch[1].trim());
       if (!isNaN(parsed.getTime())) articleDateRaw = releaseDateMatch[1].trim();
     }
     // 4. From date pattern anywhere near top of content
     const topContent = source.content.slice(0, 500);
     const dateInTop = topContent.match(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),?\s+(20\d{2})\b/);
-    if (dateInTop && articleDateRaw === today) articleDateRaw = `${dateInTop[1]} ${dateInTop[2]}, ${dateInTop[3]}`;
+    if (dateInTop && !articleDateRaw) articleDateRaw = `${dateInTop[1]} ${dateInTop[2]}, ${dateInTop[3]}`;
     const articleDate = toISODate(articleDateRaw);
 
     // Build body — use description if available, otherwise generate a contextual brief
