@@ -37,6 +37,9 @@ function stripHtml(html) {
     // so the tag-strip pass below removes them instead of leaking literal
     // "<p>" text into the parsed description.
     .replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&nbsp;/g, " ")
+    .replace(/&quot;/g, '"').replace(/&apos;|&#39;|&#039;|&#x27;/gi, "'")
+    .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)))
+    .replace(/&#([0-9]+);/g, (_, n) => String.fromCodePoint(Number(n)))
     .replace(/<[^>]+>/g, " ")
     .replace(/\s+/g, " ")
     .trim();
