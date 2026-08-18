@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-08-18T15:08:45.404Z",
+  "updatedAt": "2026-08-18T17:08:47.388Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260818",
+      "code": "20260818",
+      "title": "International Criminal Court-related Designations; Venezuela-related Designation; Issuance of General License",
+      "date": "August 18, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260812",
       "code": "20260812",
@@ -54,12 +60,6 @@
       "code": "20260724",
       "title": "Iran-related Designations; Issuance of Amended Russia-related General License and Frequently Asked Questions; Issuance of Amended Venezuela-related Frequently Asked Question; Publication of Regulatory Amendments",
       "date": "July 24, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260723",
-      "code": "20260723",
-      "title": "Counter Terrorism Designations; Counter Narcotics Designations; Cuba Designations; Belarus-related Designation Removal; Issuance of Cuba-related General Licenses",
-      "date": "July 23, 2026"
     }
   ],
   "civilPenalties": [
@@ -751,12 +751,11 @@
       "generalLicenses": [
         {
           "number": "1",
-          "title": "Transactions Authorized Pursuant to the Cuban Assets Control Regulations",
+          "title": "Cuba General License 1",
           "date": "May 7, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935571/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "2",
@@ -776,12 +775,11 @@
         },
         {
           "number": "4",
-          "title": "Authorizing Transactions for Third-Country Diplomatic and Consular Missions in Cuba",
+          "title": "Cuba General License 4",
           "date": "July 23, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936626/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         }
       ]
     },
@@ -983,7 +981,7 @@
     "international-criminal-court-related-sanctions": {
       "name": "International Criminal Court-Related Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/international-criminal-court-related-sanctions",
-      "lastUpdated": "May 27, 2026",
+      "lastUpdated": "Aug 18, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -1005,7 +1003,17 @@
           ]
         }
       ],
-      "generalLicenses": []
+      "generalLicenses": [
+        {
+          "number": "12",
+          "title": "Authorizing the Wind Down of Transactions Involving Certain Persons Blocked on August 18, 2026",
+          "date": "August 18, 2026",
+          "expires": "September 17, 2026",
+          "url": "https://ofac.treasury.gov/media/936716/download?inline",
+          "datePdf": true,
+          "dateConfident": true
+        }
+      ]
     },
     "iran-sanctions": {
       "name": "Iran Sanctions",
@@ -2407,7 +2415,7 @@
     "venezuela-related-sanctions": {
       "name": "Venezuela-Related Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/venezuela-related-sanctions",
-      "lastUpdated": "Aug 03, 2026",
+      "lastUpdated": "Aug 18, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -2784,11 +2792,12 @@
         },
         {
           "number": "47A",
-          "title": "Venezuela General License 47A",
+          "title": "Authorizing the Sale of U.S.-Origin Diluents to Venezuela",
           "date": "February 3, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935666/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "48B",
@@ -3075,18 +3084,6 @@
       "description": "Russia accuses the UK of escalating the Ukraine war by supplying British-made drones as the prime minister vows to support Kyiv in its \"hour of need\"."
     },
     {
-      "title": "Trump threatens to bomb US ally Oman if it 'gets in the way' over Iran deal",
-      "url": "https://www.bbc.co.uk/news/articles/cy5dzk0ryzdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 17, 2026",
-      "description": "Trump's threat on Oman, which has been holding its own talks with Iran to reopen the Strait of Hormuz, comes as a 60-day window for peace negotiations expires."
-    },
-    {
-      "title": "Russia's prominent anti-war politician jailed for 11 years",
-      "url": "https://www.bbc.co.uk/news/articles/cj4kjnle2neo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 17, 2026",
-      "description": "Lev Schlosberg is found guilty of \"discrediting\" Russia's army - a verdict he condemns as punishment for his political position."
-    },
-    {
       "title": "Watch: Why has Trump shifted on North Korea?",
       "url": "https://www.bbc.co.uk/news/videos/cy45zjw424xo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 17, 2026",
@@ -3100,6 +3097,24 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Iran prepares to keep economy alive as US threatens further sanctions",
+      "url": "https://www.aljazeera.com/news/2026/8/18/iran-prepares-to-keep-economy-alive-as-us-threatens-further-sanctions?traffic_source=rss",
+      "date": "August 18, 2026",
+      "description": "Iran’s authorities say they could shift to offensive operations as Washington considers further sanctions."
+    },
+    {
+      "title": "Iran clubs face Qatar and UAE sides at neutral venues in Champions League",
+      "url": "https://www.aljazeera.com/sports/2026/8/18/iran-clubs-to-play-qatar-and-uae-champions-league-games-at-neutral-venues?traffic_source=rss",
+      "date": "August 18, 2026",
+      "description": "Following the start of the US-Israel war on Iran, the first match of the Iranian league was played last week."
+    },
+    {
+      "title": "Why is Russia threatening UK with ‘consequences’ over Ukraine drones?",
+      "url": "https://www.aljazeera.com/news/2026/8/18/why-is-russia-threatening-uk-with-consequences-over-ukraine-drones?traffic_source=rss",
+      "date": "August 18, 2026",
+      "description": "Russia is suffering attacks inside its own territory as long-range drones strike its strategic assets."
+    },
     {
       "title": "Qatar: Iran’s claim that Doha is holding missing pilots is a ‘media ploy’",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/18/qatar-irans-claim-that-doha-is-holding-missing-pilots-is-a-media-ploy?traffic_source=rss",
@@ -3122,7 +3137,7 @@
       "title": "Qatar rejects Iran’s ‘false’ claims about missing pilots",
       "url": "https://www.aljazeera.com/news/2026/8/18/qatar-rejects-irans-false-claims-about-missing-pilots?traffic_source=rss",
       "date": "August 18, 2026",
-      "description": "Majed al-Ansari says the Iranian planes &#039;violated Qatar’s sovereignty&#039; and were dealt with in accordance with the law."
+      "description": "Majed al-Ansari says the Iranian planes 'violated Qatar’s sovereignty' and were dealt with in accordance with the law."
     },
     {
       "title": "Myanmar: The Architecture of Statelessness",
@@ -3134,31 +3149,13 @@
       "title": "Russia protests Japan PM’s comments after Putin’s Kuril visit",
       "url": "https://www.aljazeera.com/news/2026/8/18/russia-protests-japan-pms-comments-after-putins-kuril-visit?traffic_source=rss",
       "date": "August 18, 2026",
-      "description": "Russia summons Japan&#039;s ambassador to Moscow over Prime Minister Sanae ⁠Takaichi&#039;s &#039;anti-Russian&#039; remarks."
+      "description": "Russia summons Japan's ambassador to Moscow over Prime Minister Sanae ⁠Takaichi's 'anti-Russian' remarks."
     },
     {
       "title": "Why has Trump threatened to bomb Oman – for a second time?",
       "url": "https://www.aljazeera.com/news/2026/8/18/why-has-trump-threatened-to-bomb-oman-for-a-second-time?traffic_source=rss",
       "date": "August 18, 2026",
       "description": "The US president threatened to bomb Oman over Hormuz, with US-Iran peace negotiations in a deadlock."
-    },
-    {
-      "title": "Putin’s ‘illusion of victory:’ Russia ramps up missile attacks on Ukraine",
-      "url": "https://www.aljazeera.com/news/2026/8/18/putins-illusion-of-victory-russia-ramps-up-missile-attacks-on-ukraine?traffic_source=rss",
-      "date": "August 18, 2026",
-      "description": "Deaths mount as Russia ramps up missile attacks on Ukraine, while Washington&#039;s promises of support remain elusive."
-    },
-    {
-      "title": "Syria, US say Israel attacks airbase in Idlib",
-      "url": "https://www.aljazeera.com/news/2026/8/18/eight-air-strikes-hit-airbase-in-syrias-idlib?traffic_source=rss",
-      "date": "August 18, 2026",
-      "description": "Eight air strikes hit the Abu al-Duhur military base in Idlib&#039;s eastern countryside."
-    },
-    {
-      "title": "Syrian man dies in custody after alleged abuse by security officers",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/18/syrian-man-dies-in-custody-after-alleged-abuse-by-security-officers?traffic_source=rss",
-      "date": "August 18, 2026",
-      "description": "A Syrian man died in police custody after his family alleged he was severely beaten."
     }
   ],
   "occNews": [
@@ -3184,10 +3181,10 @@
       "category": "Monetary Policy"
     },
     {
-      "title": "Minutes of the Board&#39;s discount rate meetings on June 8 and June 17, 2026",
+      "title": "Minutes of the Board's discount rate meetings on June 8 and June 17, 2026",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260714a.htm",
       "date": "July 14, 2026",
-      "description": "Minutes of the Board&#39;s discount rate meetings on June 8 and June 17, 2026",
+      "description": "Minutes of the Board's discount rate meetings on June 8 and June 17, 2026",
       "category": "Monetary Policy"
     },
     {
@@ -3269,28 +3266,10 @@
       "description": "Environmentalists have heavily criticised the exploratory drilling in the sea off the mouth of the Amazon."
     },
     {
-      "title": "IVF staff accused of misleading UK parents about sperm and egg donors in northern Cyprus",
-      "url": "https://www.bbc.co.uk/news/articles/c75gv9xnr3po?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 18, 2026",
-      "description": "Multiple children are feared to have been conceived using sperm and egg donors which were not the ones selected by the parents."
-    },
-    {
       "title": "Hayden Panettiere's ex Wladimir Klitschko says family in 'profound shock and grief'",
       "url": "https://www.bbc.co.uk/news/articles/c5ywe951z80o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 18, 2026",
       "description": "The former heavyweight boxing champion shares a child with the Heroes actress, who died on Sunday."
-    },
-    {
-      "title": "China censors public mourning as it holds former premier's funeral",
-      "url": "https://www.bbc.co.uk/news/articles/c8dn3rqlyrgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 18, 2026",
-      "description": "While hailing Zhu’s legacy, authorities are wary that the nostalgia could lead to criticisms of Xi’s rule."
-    },
-    {
-      "title": "Student killed in Philippines Catholic school shooting",
-      "url": "https://www.bbc.co.uk/news/articles/c1e154qjw96o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 18, 2026",
-      "description": "The alleged shooter, also a student, later took his own life."
     },
     {
       "title": "Kariba ferry death toll rises to 93, making it Zimbabwe's deadliest transport disaster",
@@ -3299,16 +3278,46 @@
       "description": "Recovery efforts continue in what is the country's deadliest transport disaster."
     },
     {
-      "title": "Tupac murder trial: 'All hell broke loose' night of rapper's shooting, witness says",
-      "url": "https://www.bbc.co.uk/news/articles/cp3r0kz775ko?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Pakistan top court orders ex-PM Imran Khan be moved to hospital from jail",
+      "url": "https://www.bbc.co.uk/news/articles/cy4kzzlydrro?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 18, 2026",
-      "description": "After he was shot multiple times, Tupac Shakur refused to cooperate with police and told an officer \"we'll take care of it\", an officer testified."
+      "description": "Imran Khan has been imprisoned since 2023 on corruption charges which he says were politically motivated."
+    },
+    {
+      "title": "Disney and ABC sue Trump's media regulator to stop early licence renewal",
+      "url": "https://www.bbc.co.uk/news/articles/cx2rzr49vr2o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 18, 2026",
+      "description": "The network accuses the administration of retaliating against ABC because it \"disapproves of what ABC broadcasts\"."
+    },
+    {
+      "title": "Nigeria influencer arrested after seizure of cocaine worth $28m destined for the UK",
+      "url": "https://www.bbc.co.uk/news/articles/c1e155428qyo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 18, 2026",
+      "description": "Afolabi Kazeem Micheal has not commented on allegations he is linked to a global drug trafficking network."
+    },
+    {
+      "title": "IVF staff accused of misleading UK parents about sperm and egg donors in northern Cyprus",
+      "url": "https://www.bbc.co.uk/news/articles/c75gv9xnr3po?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 18, 2026",
+      "description": "Multiple children are feared to have been conceived using sperm and egg donors which were not the ones selected by the parents."
+    },
+    {
+      "title": "China censors public mourning as it holds former premier's funeral",
+      "url": "https://www.bbc.co.uk/news/articles/c8dn3rqlyrgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 18, 2026",
+      "description": "While hailing Zhu’s legacy, authorities are wary that the nostalgia could lead to criticisms of Xi’s rule."
     },
     {
       "title": "Indian student leader ends hunger strike after 16 days",
       "url": "https://www.bbc.co.uk/news/articles/cly8m31nvmgo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 18, 2026",
       "description": "Devendra Nath Mahto was part of a larger protest which began weeks ago, demanding exam reforms in Jharkhand state."
+    },
+    {
+      "title": "Student killed in Philippines Catholic school shooting",
+      "url": "https://www.bbc.co.uk/news/articles/c1e154qjw96o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 18, 2026",
+      "description": "The alleged shooter, also a student, later took his own life."
     },
     {
       "title": "Zambia's Hichilema re-elected president as main rival in hiding over alleged threats",
@@ -3329,13 +3338,13 @@
       "description": "The bladder stone, which weighs as much as a full-term baby, is believed to be the largest on record."
     },
     {
-      "title": "French PM heckled over wildfire response as blazes continue across Europe",
-      "url": "https://www.bbc.co.uk/news/articles/cx2rzx5g5yro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 17, 2026",
-      "description": "The prime minister announced on Monday €12m worth of aid to French regions that had been worst affected by the fires."
+      "title": "Tupac murder trial: 'All hell broke loose' night of rapper's shooting, witness says",
+      "url": "https://www.bbc.co.uk/news/articles/cp3r0kz775ko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 18, 2026",
+      "description": "After he was shot multiple times, Tupac Shakur refused to cooperate with police and told an officer \"we'll take care of it\", an officer testified."
     },
     {
-      "title": "What it's like to be on a warship like the USS Abraham Lincoln",
+      "title": "'A floating prison' - sailors describe life on warships like USS Abraham Lincoln",
       "url": "https://www.bbc.co.uk/news/articles/c5y6z4krrx3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 18, 2026",
       "description": "Concerns have mounted about conditions aboard the USS Abraham Lincoln, which has been deployed since 11 December."
@@ -3383,6 +3392,12 @@
       "description": "The BBC’s Katy Watson explains why triple-murderer Erin Patterson is back in court this week trying to overturn her conviction."
     },
     {
+      "title": "Global borrowing costs hit fresh highs on oil, AI and inflation",
+      "url": "https://www.bbc.co.uk/news/articles/c1k1x1zdywdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 18, 2026",
+      "description": "Interest rates on long-term US, UK, German and Japanese government debt have soared."
+    },
+    {
       "title": "Job vacancies at five-year low as smaller firms scale back recruitment",
       "url": "https://www.bbc.co.uk/news/articles/cn9nwx090v9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 18, 2026",
@@ -3413,16 +3428,22 @@
       "description": "Negotiators want a deal to avoid fresh US tariffs - though Canadians are not in the mood to offer many concessions."
     },
     {
-      "title": "US states call for big changes to Instagram and Facebook as Meta child privacy trial begins",
-      "url": "https://www.bbc.co.uk/news/articles/clyqpx6xk69o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Disney and ABC sue Trump's media regulator to stop early licence renewal",
+      "url": "https://www.bbc.co.uk/news/articles/cx2rzr49vr2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 18, 2026",
-      "description": "US states are suing the social media giant to force an overhaul of its platforms for young users."
+      "description": "The network accuses the administration of retaliating against ABC because it \"disapproves of what ABC broadcasts\"."
     },
     {
       "title": "AI to help planes avoid climate-warming 'sky graffiti'",
       "url": "https://www.bbc.co.uk/news/articles/c62em5lpvnjo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 18, 2026",
       "description": "A new UK trial hopes to reduce the condensation trails from planes, which can trap heat in the Earth's atmosphere."
+    },
+    {
+      "title": "US states call for big changes to Instagram and Facebook as Meta child privacy trial begins",
+      "url": "https://www.bbc.co.uk/news/articles/clyqpx6xk69o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 18, 2026",
+      "description": "US states are suing the social media giant to force an overhaul of its platforms for young users."
     },
     {
       "title": "Ferguson shipyard to cut a quarter of its workforce",
@@ -3527,24 +3548,6 @@
       "description": "The government says it is considering cutting the new electric car sales target from 80% to 50% by 2030."
     },
     {
-      "title": "US says dozens of countries helped China dodge Trump's tariffs",
-      "url": "https://www.bbc.co.uk/news/articles/c78gy6ep3n5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 14, 2026",
-      "description": "A new US report said China had moved goods through nations with lower tariffs to dodge higher levies."
-    },
-    {
-      "title": "Engine parts smashed Ryanair window that man's head was sucked out of, report says",
-      "url": "https://www.bbc.co.uk/news/articles/cr59j4z3vl8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 13, 2026",
-      "description": "A preliminary report by US investigators says an engine fan blade broke on last month's flight from Greece to Germany."
-    },
-    {
-      "title": "'I lost $14,000 in a month': Investors hit by Korean stock market's wild swings",
-      "url": "https://www.bbc.co.uk/news/articles/c2k7zj4knwlo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 13, 2026",
-      "description": "Some traders are reeling from heavy losses after a brutal correction in South Korea's stock market."
-    },
-    {
       "title": "Protein or pickled garlic? What's new in ice cream",
       "url": "https://www.bbc.co.uk/news/articles/c9826zl0945o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 14, 2026",
@@ -3617,6 +3620,12 @@
       "description": "Tech is being used to watch for wildfires but firefighters are still needed to put them out."
     },
     {
+      "title": "Global borrowing costs hit fresh highs on oil, AI and inflation",
+      "url": "https://www.bbc.co.uk/news/articles/c1k1x1zdywdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 18, 2026",
+      "description": "Interest rates on long-term US, UK, German and Japanese government debt have soared."
+    },
+    {
       "title": "Demand for school uniform bank 'has never been higher'",
       "url": "https://www.bbc.co.uk/news/articles/c330k0gdkkyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 18, 2026",
@@ -3639,12 +3648,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cjd4p33yem1o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 18, 2026",
       "description": "Pet food banks says donations of food have dipped over the summer."
-    },
-    {
-      "title": "'I used food banks while my ex owed thousands in child maintenance'",
-      "url": "https://www.bbc.co.uk/news/videos/c5yvdeen2z2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 17, 2026",
-      "description": "Parents have told BBC Panorama the agency tasked with helping to secure financial support for children after separation or divorce is driving them to breaking point."
     },
     {
       "title": "Why the UK is dithering over what to do about e-scooters",
@@ -3707,6 +3710,48 @@
       "description": "Are we entering the Chinese Century, or is the Chinese Dream already fading for some?"
     },
     {
+      "title": "Disney sues US regulator, claiming political retaliation over ABC stations",
+      "url": "https://www.aljazeera.com/economy/2026/8/18/disney-sues-us-regulator-claiming-political-retaliation-over-abc-stations?traffic_source=rss",
+      "date": "August 18, 2026",
+      "description": "FCC faces scrutiny as Disney claims licence renewal order is tied to political motives against ABC's coverage."
+    },
+    {
+      "title": "Real Madrid officially present Mourinho in bizarre closed-door ceremony",
+      "url": "https://www.aljazeera.com/sports/2026/8/18/real-madrid-officially-presents-mourinho-in-bizarre-closed-door-ceremony?traffic_source=rss",
+      "date": "August 18, 2026",
+      "description": "Jose Mourinho makes first official Real Madrid statements since returning as manager in unusually low-key ceremony."
+    },
+    {
+      "title": "Spain builds tent cities for the thousands stuck in Ceuta",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/18/spain-builds-tent-cities-for-the-thousands-stuck-in-ceuta?traffic_source=rss",
+      "date": "August 18, 2026",
+      "description": "Spain is building four temporary reception sites with 1,500 places as an estimated 5,000 migrants remain in Ceuta."
+    },
+    {
+      "title": "Palestinian living in caves older than Israel",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/18/palestinian-living-in-caves-older-than-israel?traffic_source=rss",
+      "date": "August 18, 2026",
+      "description": "Farhan al Rashaydeh lives in a cave in the occupied West Bank with his family."
+    },
+    {
+      "title": "“I fear for my family’s lives” says Loui Ridi as settlers besiege home",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/18/i-fear-for-my-familys-lives-says-loui-ridi-as-settlers-besiege-home?traffic_source=rss",
+      "date": "August 18, 2026",
+      "description": "Palestinian-American Loui Ridi expressed distress over how Israeli settlers have roamed around Qusra unchallenged."
+    },
+    {
+      "title": "US cites India on voter IDs, but are elections under Modi clean?",
+      "url": "https://www.aljazeera.com/news/2026/8/18/us-cites-india-on-voter-ids-but-are-elections-under-modi-clean?traffic_source=rss",
+      "date": "August 18, 2026",
+      "description": "Trump highlights India's voter ID rules to bolster his case for stricter US election laws."
+    },
+    {
+      "title": "Patrick Vieira appointed Senegal head coach with AFCON qualifiers looming",
+      "url": "https://www.aljazeera.com/sports/2026/8/18/patrick-vieira-appointed-senegal-head-coach-with-afcon-qualifiers-looming?traffic_source=rss",
+      "date": "August 18, 2026",
+      "description": "Former France, Arsenal and Manchester City midfielder Patrick Vieira replaces Pape Thiaw as Senegal coach."
+    },
+    {
       "title": "What to watch in the Alaska and Wyoming primary elections",
       "url": "https://www.aljazeera.com/news/2026/8/18/what-to-watch-in-the-alaska-and-wyoming-primary-elections?traffic_source=rss",
       "date": "August 18, 2026",
@@ -3753,48 +3798,6 @@
       "url": "https://www.aljazeera.com/news/2026/8/18/what-to-know-about-californias-special-election-to-replace-eric-swalwell?traffic_source=rss",
       "date": "August 18, 2026",
       "description": "A race that once received little attention has seen outside spending from the American Israel Public Affairs Committee."
-    },
-    {
-      "title": "Tupac Shakur murder trial begins thirty years after his death",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/18/tupac-shakur-murder-trial-begins-thirty-years-after-his-death?traffic_source=rss",
-      "date": "August 18, 2026",
-      "description": "Former gang boss Duane ‘Keffe D’ Davis stands trial over Tupac Shakur’s 1996 murder, the first prosecution in the case."
-    },
-    {
-      "title": "India’s ‘Cockroach’ movement makes schools next battleground against Modi",
-      "url": "https://www.aljazeera.com/features/2026/8/18/indias-cockroach-movement-makes-schools-next-battleground-against-modi?traffic_source=rss",
-      "date": "August 18, 2026",
-      "description": "Cockroach leaders asked supporters to audit their nearest government-run schools. But it has started with a killing."
-    },
-    {
-      "title": "Asian Champions League draw: Holders Al-Ahli to face former winners Al Ain",
-      "url": "https://www.aljazeera.com/sports/2026/8/18/asian-champions-league-draw-holders-al-ahli-to-face-former-winners-al-ain?traffic_source=rss",
-      "date": "August 18, 2026",
-      "description": "Al-Ahli and Al Ain, who will also face Cristiano Ronaldo&#039;s Al-Nassr, are the pick of the match-ups in AFC&#039;s Elite draw."
-    },
-    {
-      "title": "Brazil’s president says Amazon oil is ‘passport to the future’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/18/brazils-president-says-amazon-oil-is-passport-to-the?traffic_source=rss",
-      "date": "August 18, 2026",
-      "description": "Brazil&#039;s president says Amazon oil is ‘passport to the future’"
-    },
-    {
-      "title": "Meta lawsuits: Is social media facing a global legal reckoning?",
-      "url": "https://www.aljazeera.com/news/2026/8/18/meta-lawsuits-is-social-media-facing-a-global-legal-reckoning?traffic_source=rss",
-      "date": "August 18, 2026",
-      "description": "Meta battles legal challenges in the US, Europe and beyond over platform design and its impact on younger users."
-    },
-    {
-      "title": "Infantino’s FIFA World Cup fallout: Lamour exits after criticism of plan",
-      "url": "https://www.aljazeera.com/sports/2026/8/18/infantinos-fifa-world-cup-fallout-lamour-exits-after-criticism-of-plan?traffic_source=rss",
-      "date": "August 18, 2026",
-      "description": "Kevin Lamour had publicly criticised Infantino&#039;s proposal last month, saying FIFA staff had been &#039;deceived&#039; over plan."
-    },
-    {
-      "title": "Videos show deadly school shooting in Philippines",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/18/videos-show-deadly-school-shooting-in-philippines?traffic_source=rss",
-      "date": "August 18, 2026",
-      "description": "A ninth-grade student opened fire at a high school in Zamboanga, Philippines, killing a fellow student and himself."
     }
   ]
 }
