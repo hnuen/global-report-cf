@@ -16,6 +16,7 @@ import { hasDirectArticleUrl, isDisplayableNewsArticle, isLikelyCorruptedText, i
 import { parseEnforcementActionsPage } from "../src/lib/fincen-fetcher.ts";
 import { FINCEN_PENALTIES } from "../src/lib/fincen-penalties.ts";
 import { buildBriefingFromSources } from "../src/lib/official-briefing.ts";
+import { extractPublisherUrl, MAX_LINK_RESOLUTIONS_PER_BATCH, resolveGoogleNewsPublisherUrl, resolveMediaSourceLinks } from "../src/lib/news-link-resolver.ts";
 
 function briefing(articles: Article[]): Briefing {
   return { lastUpdated: "test", articles, sidebar: {} as Briefing["sidebar"] };
@@ -203,6 +204,52 @@ test("Treasury source discovery uses the newest listing, not stale SB probes", (
   const sources = readFileSync(new URL("../src/lib/official-sources.ts", import.meta.url), "utf8");
   assert.doesNotMatch(sources, /SB_BASELINE_NUM|SB_PROBE_ABOVE/);
   assert.ok(sources.includes('url: "https://home.treasury.gov/news/press-releases"'));
+});
+
+test("AP and CNN links are extracted or safely resolved before direct-link filtering", async () => {
+  assert.equal(
+    extractPublisherUrl('<a href="https://apnews.com/article/example-story?x=1&amp;y=2">AP</a>', ["apnews.com"]),
+    "https://apnews.com/article/example-story?x=1&y=2",
+  );
+  const resolved = await resolveGoogleNewsPublisherUrl(
+    "https://news.google.com/rss/articles/example",
+    ["cnn.com"],
+    async () => new Response(null, { status: 302, headers: { location: "https://www.cnn.com/2026/08/18/world/example" } }),
+  );
+  assert.equal(resolved, "https://www.cnn.com/2026/08/18/world/example");
+  assert.equal(MAX_LINK_RESOLUTIONS_PER_BATCH, 5);
+});
+
+test("unresolved Google media links are omitted while cached direct links retain their dates", async () => {
+  const google = "https://news.google.com/rss/articles/ap-example";
+  const source = {
+    name: "AP News — World & Regional",
+    url: "https://news.google.com/rss/search?q=site:apnews.com",
+    content: `• Regional development ||| ${google} ||| DATE:2026-08-18 ||| Details`,
+    fetchedAt: "2026-08-18T12:00:00Z",
+  };
+  const cached = await resolveMediaSourceLinks([source], {
+    [google]: { url: "https://apnews.com/article/regional-development", resolvedAt: "2026-08-18T12:00:00Z" },
+  });
+  assert.match(cached.sources[0].content, /apnews\.com\/article\/regional-development \|\|\| DATE:2026-08-18/);
+  const unresolved = await resolveMediaSourceLinks([source], {}, 0);
+  assert.equal(unresolved.sources[0].content, "");
+});
+
+test("AP and CNN source families map to their intended sections", () => {
+  const briefing = buildBriefingFromSources([{
+    name: "AP News — World & Regional",
+    url: "https://news.google.com/rss/search?q=site:apnews.com",
+    content: "• Regional leaders announce a new cross-border agreement ||| https://apnews.com/article/cross-border-agreement ||| DATE:2026-08-18",
+    fetchedAt: "2026-08-18T12:00:00Z",
+  }, {
+    name: "CNN — Business & Trade",
+    url: "https://news.google.com/rss/search?q=site:cnn.com",
+    content: "• Global trade policy changes affect major exporters ||| https://cnn.com/2026/08/18/business/trade-policy ||| DATE:2026-08-18",
+    fetchedAt: "2026-08-18T12:00:00Z",
+  }]);
+  assert.equal(briefing.articles.find(article => article.source === "Associated Press")?.section, "regions");
+  assert.equal(briefing.articles.find(article => article.source === "CNN")?.section, "economics");
 });
 
 test("admin threshold changes sensitivity but cannot bypass safety gates", () => {
