@@ -287,7 +287,7 @@ function stripHTML(html: string): string {
 }
 
 // â”€â”€ Source definitions â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-// group 1 (t=0, immediate)  â€” OFAC date news + Treasury SB probes (defined in generator fns below)
+// group 1 (t=0, immediate)  â€” OFAC date news + Treasury's newest-release listing
 // group 2 (t=+3 min)        â€” Federal Register OFAC/Treasury + Treasury News + State Dept + priority Google News OFAC
 // group 3 (t=+6 min)        â€” UK, EU, BIS, OCC, Fed official government pages
 // group 4 (t=+9 min)        â€” China, DPRK, regional, AP, BBC, CNN, FinCEN news
@@ -298,7 +298,6 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean; group: 2|3
   { name: "Federal Register â€” OFAC Actions",       url: "https://www.federalregister.gov/documents/search.rss?conditions%5Bagencies%5D%5B%5D=office-of-foreign-assets-control", official: true, group: 2, sections: ["sanctions","penalties"] },
   { name: "Federal Register â€” Treasury Sanctions", url: "https://www.federalregister.gov/documents/search.rss?conditions%5Bagencies%5D%5B%5D=department-of-the-treasury&conditions%5Bterm%5D=OFAC+sanctions+designations", official: true, group: 2, sections: ["sanctions"] },
   // home.treasury.gov is accessible from Cloudflare IPs (unlike ofac.treasury.gov)
-  { name: "U.S. Treasury â€” News",                  url: "https://home.treasury.gov/news/press-releases", official: true, group: 2, sections: ["sanctions","economics","penalties"] },
   { name: "U.S. State Department â€” News",          url: "https://www.state.gov/rss-feeds/press-releases/", official: true, group: 2, sections: ["sanctions","economics"] },
   { name: "Google News â€” OFAC Broad",              url: "https://news.google.com/rss/search?q=OFAC+sanctions+SDN+designations+treasury+2026&hl=en-US&gl=US&ceid=US:en", official: true, group: 2, sections: ["sanctions"] },
   { name: "Google News â€” Iran Sanctions",          url: "https://news.google.com/rss/search?q=Iran+sanctions+OFAC+2026&hl=en-US&gl=US&ceid=US:en", group: 2, sections: ["sanctions"] },
@@ -393,28 +392,18 @@ function getOFACDateNewsRSS(): Array<{ name: string; url: string; group: 1; sect
 }
 
 // â”€â”€ Main function: fetch all sources in parallel â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-// Generate Treasury press release URLs (sequential SB numbers)
-// Confirmed latest: SB0498 = May 11, 2026 (verified from home.treasury.gov/news/press-releases).
-// OFAC designation-only actions (not full sanctions campaigns) do NOT get SB press releases â€”
-// they appear only on ofac.treasury.gov/recent-actions (JS-rendered, inaccessible from CF Workers).
-// Strategy: probe SB_BASELINE Â± BUFFER to catch the known latest plus any new releases.
-const SB_BASELINE_NUM  = 528;  // SB0528 = Jun 12, 2026 (last confirmed Treasury press release)
-const SB_PROBE_ABOVE   = 8;    // probe up to 8 above baseline for new releases (~1 new SB/day)
-function getTreasurySources(): Array<{ name: string; url: string; group: 1; sections: string[] }> {
-  const sources = [];
-  // Probe from (baseline + PROBE_ABOVE) down to baseline â€” ensures we always hit the known latest
-  // and catch any new releases above it. E.g.: 503, 502, 501, 500, 499, 498
-  // group: 1 â€” Treasury SB press releases are authoritative for OFAC enforcement actions, fetched first
-  for (let num = SB_BASELINE_NUM + SB_PROBE_ABOVE; num >= SB_BASELINE_NUM; num--) {
-    const padded = "sb" + String(num).padStart(4, "0");
-    sources.push({
-      name: `Treasury Press Release ${padded.toUpperCase()}`,
-      url: `https://home.treasury.gov/news/press-releases/${padded}`,
-      group: 1 as const,
-      sections: ["sanctions","economics","penalties"],
-    });
-  }
-  return sources; // returns SB_PROBE_ABOVE + 1 = 6 entries
+// Fetch Treasury's newest-first listing instead of probing a hard-coded block
+// of SB numbers. A fixed baseline eventually becomes historical and caused old
+// releases to be re-fetched indefinitely. stripHTML resolves every listing row
+// to its direct /news/press-releases/sbNNNN URL and preserves the row date.
+function getTreasurySources(): Array<{ name: string; url: string; official: true; group: 1; sections: string[] }> {
+  return [{
+    name: "U.S. Treasury â€” News",
+    url: "https://home.treasury.gov/news/press-releases",
+    official: true,
+    group: 1,
+    sections: ["sanctions", "economics", "penalties"],
+  }];
 }
 
 // Generate OFAC date-specific URLs for last 14 days
@@ -462,7 +451,7 @@ export function checkSubrequestBudget(sources: Array<unknown>, label = "fetchOff
 }
 
 // Multi-batch fetch strategy â€” 4 groups fetched at t=0, +3min, +6min, +9min:
-// group 1 (t=0)    â€” OFAC date news + Treasury SBs               (~11 sources)
+// group 1 (t=0)    â€” OFAC date news + Treasury newest listing
 // group 2 (t=+3m)  â€” Federal Register OFAC/Treasury + OFAC news  (~8 sources)
 // group 3 (t=+6m)  â€” UK, EU, BIS, OCC, Fed, DoW official pages    (~12 sources)
 // group 4 (t=+9m)  â€” China/regional/FinCEN/AP/BBC/CNN            (~26 sources)
@@ -473,7 +462,7 @@ export async function fetchOfficialSources(
   opts?: { group?: 1|2|3|4; groupPart?: 1|2|3|4 }
 ): Promise<OfficialSource[]> {
   const now = new Date().toISOString();
-  const treasurySources = getTreasurySources(); // 6 entries, group 1
+  const treasurySources = getTreasurySources(); // one newest-first listing, group 1
   const ofacDateNews = getOFACDateNewsRSS();     // 5 entries, group 1
   // Order: group-1 sources first so they survive the MAX_SOURCES cap in full-fetch mode
   const allSourcesUnfiltered = [...ofacDateNews, ...treasurySources, ...SOURCES];
