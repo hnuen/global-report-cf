@@ -17,6 +17,7 @@
 import { loadETagStore, flushETagStore, getConditionalHeaders, recordETagResponse, type ETagStore } from "./source-etag-cache";
 import { normalizeTreasuryPressReleaseUrl, treasuryPressReleasePattern } from "./treasury-links";
 import { itemCheckpointKey, loadSourceItemCheckpoints, sourceCheckpointKey } from "./source-item-checkpoints";
+import { extractPublisherUrl, loadPublisherLinkCache, publisherDomainsForSource, resolveMediaSourceLinks, savePublisherLinkCache } from "./news-link-resolver";
 import { isLikelyCorruptedText } from "./text-quality";
 
 export interface OfficialSource {
@@ -132,7 +133,9 @@ function stripHTML(html: string): string {
       // (using it produces broken relative links like https://<this-app>/CBMi...).
       // <source url="..."> is just the publisher homepage â€” don't use it as article URL
       const guidLooksLikeUrl = !!guidMatch?.[1] && /^https?:\/\//i.test(guidMatch[1].trim());
-      let link = (linkMatch?.[1] || (guidLooksLikeUrl ? guidMatch![1] : "") || "").trim();
+      const rawDescription = descMatch?.[1] || descMatch?.[2] || "";
+      const directPublisherUrl = extractPublisherUrl(rawDescription);
+      let link = (directPublisherUrl || linkMatch?.[1] || (guidLooksLikeUrl ? guidMatch![1] : "") || "").trim();
 
       // Google News descriptions contain HTML inside CDATA â€” strip all of it
       // First strip real tags, then decode entities, then strip any decoded tags
@@ -349,13 +352,13 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean; group: 2|3
   { name: "Google News â€” India Sanctions",         url: "https://news.google.com/rss/search?q=India+Pakistan+sanctions+OFAC+export+controls+2026&hl=en-US&gl=US&ceid=US:en", group: 4, sections: ["sanctions"] },
   { name: "Google News â€” Venezuela Sanctions",     url: "https://news.google.com/rss/search?q=Venezuela+OFAC+Maduro+sanctions+designations+2026&hl=en-US&gl=US&ceid=US:en", group: 4, sections: ["sanctions"] },
   { name: "Google News â€” Al Jazeera Pakistan Iran", url: "https://news.google.com/rss/search?q=site:aljazeera.com+Pakistan+Iran+India+sanctions+nuclear+2026&hl=en-US&gl=US&ceid=US:en", group: 4, sections: ["sanctions","regions"] },
-  { name: "AP News â€” Sanctions & Finance",         url: "https://news.google.com/rss/search?q=site:apnews.com+sanctions+treasury+OFAC+2026&hl=en-US&gl=US&ceid=US:en", group: 4, sections: ["sanctions","penalties"] },
-  { name: "AP News â€” World & Economics",           url: "https://news.google.com/rss/search?q=site:apnews.com+economy+trade+export+controls+2026&hl=en-US&gl=US&ceid=US:en", group: 4, sections: ["economics","bis"] },
-  { name: "AP News â€” World & Regional",            url: "https://news.google.com/rss/search?q=site:apnews.com+world+regional+news+2026&hl=en-US&gl=US&ceid=US:en", group: 4, sections: ["regions"] },
+  { name: "AP News — Sanctions & Finance",         url: "https://news.google.com/rss/search?q=site:apnews.com+sanctions+treasury+OFAC+2026&hl=en-US&gl=US&ceid=US:en", group: 4, sections: ["sanctions","penalties"] },
+  { name: "AP News — World & Economics",           url: "https://news.google.com/rss/search?q=site:apnews.com+economy+trade+export+controls+2026&hl=en-US&gl=US&ceid=US:en", group: 4, sections: ["economics","bis"] },
+  { name: "AP News — World & Regional",            url: "https://news.google.com/rss/search?q=site:apnews.com+world+regional+news+2026&hl=en-US&gl=US&ceid=US:en", group: 4, sections: ["regions"] },
   { name: "BBC News â€” World",                      url: "https://feeds.bbci.co.uk/news/world/rss.xml", group: 4, sections: ["sanctions","economics","regions"] },
   { name: "BBC News â€” Business",                   url: "https://feeds.bbci.co.uk/news/business/rss.xml", group: 4, sections: ["economics","penalties","occ"] },
-  { name: "CNN â€” World & Sanctions",               url: "https://news.google.com/rss/search?q=site:cnn.com+sanctions+OFAC+treasury+designations+2026&hl=en-US&gl=US&ceid=US:en", group: 4, sections: ["sanctions","economics"] },
-  { name: "CNN â€” Business & Trade",                url: "https://news.google.com/rss/search?q=site:cnn.com+business+trade+export+controls+economy+2026&hl=en-US&gl=US&ceid=US:en", group: 4, sections: ["economics","bis"] },
+  { name: "CNN — World & Sanctions",               url: "https://news.google.com/rss/search?q=site:cnn.com+sanctions+OFAC+treasury+designations+2026&hl=en-US&gl=US&ceid=US:en", group: 4, sections: ["sanctions","economics"] },
+  { name: "CNN — Business & Trade",                url: "https://news.google.com/rss/search?q=site:cnn.com+business+trade+export+controls+economy+2026&hl=en-US&gl=US&ceid=US:en", group: 4, sections: ["economics","bis"] },
   ];
 
 // â”€â”€ OFAC date-specific Google News queries (last 5 days) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
@@ -496,6 +499,8 @@ export async function fetchOfficialSources(
 
   // Load ETag store once (1 Redis GET) â€” shared across all parallel fetches
   const etagStore = await loadETagStore();
+  const needsPublisherResolution = allSources.some(source => publisherDomainsForSource(source.name).length > 0);
+  const publisherLinkCache = needsPublisherResolution ? await loadPublisherLinkCache() : {};
   const itemCheckpoints = await loadSourceItemCheckpoints();
   let notModifiedCount = 0;
   let newestSeenCount = 0;
@@ -558,7 +563,7 @@ export async function fetchOfficialSources(
   flushETagStore(etagStore).catch(() => {});
   console.log(`[official] Change summary: ${notModifiedCount} unchanged (304), ${newestSeenCount} newest-item matches, ${allSources.length - notModifiedCount - newestSeenCount} changed`);
 
-  return results.map((r, i) =>
+  const fetchedSources = results.map((r, i) =>
     r.status === "fulfilled"
       ? r.value
       : {
@@ -569,6 +574,11 @@ export async function fetchOfficialSources(
           error: String((r as PromiseRejectedResult).reason),
         }
   );
+  if (!needsPublisherResolution) return fetchedSources;
+  const resolved = await resolveMediaSourceLinks(fetchedSources, publisherLinkCache);
+  if (resolved.changed) await savePublisherLinkCache(publisherLinkCache);
+  console.log(`[official] Resolved ${resolved.resolved} AP/CNN publisher link(s)`);
+  return resolved.sources;
 }
 
 // â”€â”€ Format sources for injection into LLM prompt â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
