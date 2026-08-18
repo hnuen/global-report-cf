@@ -10,6 +10,16 @@ export function repairMojibake(value: string): string {
   for (let pass = 0; pass < 2; pass++) {
     const before = repaired;
     for (const [bad, good] of replacements) repaired = repaired.split(bad).join(good);
+    // Decode text entities at the shared display/notification boundary so
+    // already-cached records are repaired as well as newly fetched records.
+    // Two passes also handle double-encoded values such as &amp;#039;.
+    repaired = repaired
+      .replace(/&amp;/gi, "&")
+      .replace(/&quot;/gi, '"')
+      .replace(/&apos;/gi, "'")
+      .replace(/&nbsp;/gi, " ")
+      .replace(/&#x([0-9a-f]+);/gi, (_, hex) => String.fromCodePoint(parseInt(hex, 16)))
+      .replace(/&#([0-9]+);/g, (_, decimal) => String.fromCodePoint(Number(decimal)));
     if (repaired === before) break;
   }
   return repaired;
