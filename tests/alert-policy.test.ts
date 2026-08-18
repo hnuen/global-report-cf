@@ -401,6 +401,8 @@ test("monitor workflow refreshes only scheduler-selected small batches", () => {
 
 test("alert text repair handles the mojibake observed in monitor logs", () => {
   assert.equal(repairMojibake("â€¢ Treasury action Ã¢â‚¬â€ update"), "• Treasury action — update");
+  assert.equal(repairMojibake("Idlib&#039;s eastern countryside"), "Idlib's eastern countryside");
+  assert.equal(repairMojibake("Syria &amp;amp; Lebanon &amp;#039;update&amp;#039;"), "Syria & Lebanon 'update'");
 });
 
 test("navigation copy and scraped sentence fragments never alert", () => {
