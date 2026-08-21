@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-08-21T17:07:59.518Z",
+  "updatedAt": "2026-08-21T19:07:51.392Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260821",
+      "code": "20260821",
+      "title": "Issuance of Venezuela-related General Licenses and Associated Frequently Asked Question",
+      "date": "August 21, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260820",
       "code": "20260820",
@@ -54,12 +60,6 @@
       "code": "20260729",
       "title": "Iran-related Designations",
       "date": "July 29, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260727",
-      "code": "20260727",
-      "title": "Sanctions List Removals; Sanctions List Updates",
-      "date": "July 27, 2026"
     }
   ],
   "civilPenalties": [
@@ -751,12 +751,11 @@
       "generalLicenses": [
         {
           "number": "1",
-          "title": "Transactions Authorized Pursuant to the Cuban Assets Control Regulations",
+          "title": "Cuba General License 1",
           "date": "May 7, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935571/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "2",
@@ -776,12 +775,11 @@
         },
         {
           "number": "4",
-          "title": "Authorizing Transactions for Third-Country Diplomatic and Consular Missions in Cuba",
+          "title": "Cuba General License 4",
           "date": "July 23, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936626/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         }
       ]
     },
@@ -2385,7 +2383,7 @@
     "venezuela-related-sanctions": {
       "name": "Venezuela-Related Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/venezuela-related-sanctions",
-      "lastUpdated": "Aug 18, 2026",
+      "lastUpdated": "Aug 21, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -2523,12 +2521,11 @@
       "generalLicenses": [
         {
           "number": "2A",
-          "title": "Authorizing Certain New Debt, New Equity, and Securities Transactions Involving PDV Holding, Inc. and CITGO Holding, Inc. ( a)",
+          "title": "Venezuela General License 2A",
           "date": "August 25, 2017",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34121/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "3I",
@@ -2544,17 +2541,15 @@
           "date": "April 17, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31741/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "5Y",
-          "title": "Authorizing Certain Transactions Related to the Petróleos de Venezuela, S.A. 2020 8.5 Percent Bond on or After September 17, 2026",
+          "title": "Venezuela General License 5Y",
           "date": "June 18, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936651/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "7C",
@@ -2578,152 +2573,135 @@
           "date": "January 28, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34131/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "15C",
-          "title": "Authorizing Transactions Involving Certain Banks for Certain Entities ( a)",
+          "title": "Venezuela General License 15C",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/33126/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "16C",
-          "title": "Authorizing Maintenance of U.S. Person Accounts and Noncommercial, Personal Remittances Involving Certain Banks",
+          "title": "Venezuela General License 16C",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/33121/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "18A",
-          "title": "Authorizing Certain Transactions Involving Integraci6n Administradora de Fondos de Ahorro Previsional, S.A",
+          "title": "Venezuela General License 18A",
           "date": "March 22, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34126/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "21",
-          "title": "Entries in Certain Accounts for Normal Service Charges and Payments and Transfers to Blocked Accounts in U.S. Financial Institutions Authorized",
+          "title": "Venezuela General License 21",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/46421/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "22",
-          "title": "Venezuela's Mission to the United Nations",
+          "title": "Venezuela General License 22",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/30601/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "23",
-          "title": "Third-country Diplomatic and Consular Funds Transfers Authorized",
+          "title": "Venezuela General License 23",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34116/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "24A",
-          "title": "Certain Transactions Involving the Government of Venezuela Related to Telecommunications and Mail Authorized",
+          "title": "Venezuela General License 24A",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935731/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "25",
-          "title": "Exportation of Certain Services, Software, Hardware, and Technology Incident to the Exchange of Communications over the Internet Authorized",
+          "title": "Venezuela General License 25",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31761/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "26",
-          "title": "Emergency and Certain Other Medical Services Authorized",
+          "title": "Venezuela General License 26",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31766/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "27",
-          "title": "Certain Transactions Related to Patents, Trademarks, and Copyrights Authorized ( a)",
+          "title": "Venezuela General License 27",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34111/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "29",
-          "title": "Certain Transactions Involving the Government of Venezuela in Support of Certain Nongovernmental Organizations' Activities Authorized",
+          "title": "Venezuela General License 29",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31771/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "30B",
-          "title": "Authorizing Certain Transactions Necessary to Port and Airport Operations",
+          "title": "Venezuela General License 30B",
           "date": "February 2, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934996/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "31B",
-          "title": "Certain Transactions Involving the IV Venezuelan National Assembly and Certain Other Persons",
+          "title": "Venezuela General License 31B",
           "date": "January 4, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/930241/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "32",
-          "title": "Authorizing Certain Transactions Related to Personal Maintenance of Individuals Who Are U.S. Persons Residing in Venezuela",
+          "title": "Venezuela General License 32",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34101/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "33",
-          "title": "Authorizing Overflight Payments, Emergency Landings, and Air Ambulance Services",
+          "title": "Venezuela General License 33",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34096/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "34A",
-          "title": "Authorizing Transactions Involving Certain Government of Venezuela Persons",
+          "title": "Venezuela General License 34A",
           "date": "September 9, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/25966/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "35",
@@ -2735,30 +2713,27 @@
         },
         {
           "number": "42",
-          "title": "Authorizing Certain Transactions Related to the Negotiation of Certain Settlement Agreements with the IV Venezuelan National Assembly and Certain Other Persons",
+          "title": "Venezuela General License 42",
           "date": "May 1, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/931696/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "45B",
-          "title": "Authorizing Certain Repatriation Transactions Involving Consorcio Venezolano de Industrias Aeronáuticas y Servicios Aéreos, S.A",
+          "title": "Venezuela General License 45B",
           "date": "November 16, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/932686/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "46C",
-          "title": "Authorizing Certain Activities Involving Venezuelan- Origin Oil or Petrochemical Products",
+          "title": "Venezuela General License 46C",
           "date": "March 13, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935661/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "47A",
@@ -2859,6 +2834,20 @@
           "date": "June 18, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936396/download?inline"
+        },
+        {
+          "number": "61",
+          "title": "Venezuela General License 61",
+          "date": "June 25, 2026",
+          "expires": "",
+          "url": "https://ofac.treasury.gov/media/936736/download?inline"
+        },
+        {
+          "number": "62",
+          "title": "Venezuela General License 62",
+          "date": "August 21, 2026",
+          "expires": "",
+          "url": "https://ofac.treasury.gov/media/936741/download?inline"
         }
       ]
     },
@@ -3041,6 +3030,18 @@
   ],
   "bbcNews": [
     {
+      "title": "Russian double-tap drone strike kills 15 in Ukrainian mall, officials say",
+      "url": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 21, 2026",
+      "description": "Another 130 people, including 23 children, were injured when the shopping centre was hit, according to the regional head."
+    },
+    {
+      "title": "Germany investigates Russia links to weapons cache discovered in woods, reports say",
+      "url": "https://www.bbc.co.uk/news/articles/cp9edjpvplpo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 21, 2026",
+      "description": "German intelligence believes guns found last year were for carrying out assassinations on behalf of Moscow, reports say."
+    },
+    {
       "title": "Rosenberg: Shortage of petrol but not patriotism as Russians feel growing impact of war",
       "url": "https://www.bbc.co.uk/news/articles/c4gknzgje7go?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 21, 2026",
@@ -3073,6 +3074,18 @@
   ],
   "ajNews": [
     {
+      "title": "Russian drone attack on busy shopping centre kills 14 in Ukraine",
+      "url": "https://www.aljazeera.com/news/2026/8/21/russian-drone-attack-on-busy-shopping-centre-kills-14-in-ukraine?traffic_source=rss",
+      "date": "August 21, 2026",
+      "description": "Ukraine's Volodymyr Zelenskyy slams 'cynical and despicable' attack on his hometown Kryvyi Rih that injured over 120."
+    },
+    {
+      "title": "Why Iran is threatening Europe’s ‘strategically important’ southeast",
+      "url": "https://www.aljazeera.com/news/2026/8/21/iran-southeastern-europe-threats?traffic_source=rss",
+      "date": "August 21, 2026",
+      "description": "Tehran has threatened Bulgaria, home to a US air base, but how credible is that threat?"
+    },
+    {
       "title": "Ukraine’s Shakhtar to use ex-Russian-owned Chelsea as Champions League home",
       "url": "https://www.aljazeera.com/sports/2026/8/21/ukraines-shakhtar-donetsk-to-play-champions-league-home-games-at-chelsea?traffic_source=rss",
       "date": "August 21, 2026",
@@ -3101,18 +3114,6 @@
       "url": "https://www.aljazeera.com/news/2026/8/21/trumps-economic-d-day-claims-first-victim-not-iran-but-us-markets?traffic_source=rss",
       "date": "August 21, 2026",
       "description": "The US and Israel's war on Iran has upended global financial and energy markets."
-    },
-    {
-      "title": "China rejects US claim that Myanmar analyst wrongfully detained",
-      "url": "https://www.aljazeera.com/news/2026/8/21/china-rejects-us-claim-that-myanmar-analyst-wrongfully-detained?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "Min Zin was arrested on June 3 after the Chinese government invited him to attend a conference."
-    },
-    {
-      "title": "US allies in Asia wary as Trump moves military assets for Iran war",
-      "url": "https://www.aljazeera.com/news/2026/8/21/us-allies-in-asia-wary-as-trump-moves-military-assets-for-iran-war?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "Allies worry about the US ability to deter China, even if the bulk of US forces remain in the region."
     }
   ],
   "occNews": [
@@ -3224,10 +3225,16 @@
       "description": "Three activists were accused of inciting others to subvert state power under the China-introduced law."
     },
     {
-      "title": "Two teenagers seriously injured after sword attack at Swedish school",
-      "url": "https://www.bbc.co.uk/news/articles/c3r0g7gj2n3o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "UK, Canada and Australia condemn Israel for refusing criminal probe into aid worker killings in Gaza",
+      "url": "https://www.bbc.co.uk/news/articles/cvgl2pe09eno?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 21, 2026",
-      "description": "Police say one man has been arrested, while several other local schools were locked down."
+      "description": "Seven World Central Kitchen workers were killed in the Israeli strike on their convoy in 2024."
+    },
+    {
+      "title": "Two injured in stabbing attack at Canada Sikh temple",
+      "url": "https://www.bbc.co.uk/news/articles/ce8l7w0n0jeo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 21, 2026",
+      "description": "One suspect is in custody, but police have not disclosed a possible motive."
     },
     {
       "title": "Ebola vaccine trial to start in DR Congo as warning issued over speed of infections",
@@ -3236,16 +3243,34 @@
       "description": "About half of the 2,500 recorded deaths from Ebola happened in the last 20 days, the WHO says."
     },
     {
-      "title": "Five missing after fire in Swiss Alpine town",
-      "url": "https://www.bbc.co.uk/news/articles/cy8e6g13497o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Two teenagers seriously injured after sword attack at Swedish school",
+      "url": "https://www.bbc.co.uk/news/articles/c3r0g7gj2n3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 21, 2026",
-      "description": "Eight others were injured, local police say, with the cause of the fire still being investigated."
+      "description": "Police say one man has been arrested, while several other local schools were locked down."
+    },
+    {
+      "title": "Tupac murder accused told police in 2008 his nephew fired fatal shots",
+      "url": "https://www.bbc.co.uk/news/articles/cly57kzgr0ko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 21, 2026",
+      "description": "A recording of the interview Duane Davis conducted with detectives was played to the jury."
+    },
+    {
+      "title": "Meghan in talks for role in Netflix series The Gentlemen, BBC understands",
+      "url": "https://www.bbc.co.uk/news/articles/cwye9g9r58zo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 21, 2026",
+      "description": "This would be Meghan's first significant acting role since her marriage to Prince Harry."
     },
     {
       "title": "Peru earthquake damages buildings and causes power cuts",
       "url": "https://www.bbc.co.uk/news/articles/c0km6n3ng7ko?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 21, 2026",
       "description": "A magnitude 6.7 earthquake struck the Ayacucho region on Thursday, the US Geological Survey says."
+    },
+    {
+      "title": "Five missing after fire in Swiss Alpine town",
+      "url": "https://www.bbc.co.uk/news/articles/cy8e6g13497o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 21, 2026",
+      "description": "Eight others were injured, local police say, with the cause of the fire still being investigated."
     },
     {
       "title": "Ethiopia's Virgin Mary festival in Tigray cancelled over drone strike fears",
@@ -3264,54 +3289,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c80n8d4xz1eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 21, 2026",
       "description": "The overnight raid of the multi-million dollar drug operation took place near the border with Zimbabwe."
-    },
-    {
-      "title": "Corruption charges dropped against South Africa's police intelligence boss",
-      "url": "https://www.bbc.co.uk/news/articles/c0rd1pkdky8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 21, 2026",
-      "description": "Officials had faced charges over the appointment of a civilian to a top post within crime intelligence."
-    },
-    {
-      "title": "Bodies of two hikers missing for decades found after Swiss glacier melts",
-      "url": "https://www.bbc.co.uk/news/articles/cd9w1jwdkkjo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 21, 2026",
-      "description": "Officials say the bodies of the two Belgians, who went missing in 1992, were discovered after the Trift Glacier receded."
-    },
-    {
-      "title": "'We are devastated' - Nigerian villagers bury bodies after overloaded boat capsizes",
-      "url": "https://www.bbc.co.uk/news/articles/cj035jg256no?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 21, 2026",
-      "description": "The overloaded boat was taking people, including many children, to farms to harvest rice."
-    },
-    {
-      "title": "Ex-Abercrombie & Fitch chief fit to stand trial in sex trafficking case, judge says",
-      "url": "https://www.bbc.co.uk/news/articles/cdx81edn9g4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 21, 2026",
-      "description": "Jeffries was declared \"mentally incompetent\" by a court last year and said to be suffering with dementia and late onset of Alzheimer's disease."
-    },
-    {
-      "title": "Panama Canal to cut number of ships passing through due to El Niño",
-      "url": "https://www.bbc.co.uk/news/articles/cwyl0jkxxryo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 21, 2026",
-      "description": "The crucial waterway's operator says low rainfall caused by the ocean pattern had led to the decision."
-    },
-    {
-      "title": "Eight killed in plane crash at remote Alaskan military site, air force says",
-      "url": "https://www.bbc.co.uk/news/articles/cj9dmw8183wo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 21, 2026",
-      "description": "It is unclear why the civilian-contracted plane was at the radar site on Alaska's south-west coast."
-    },
-    {
-      "title": "Bali jails Swiss tourist for insulting sacred Day of Silence",
-      "url": "https://www.bbc.co.uk/news/articles/cj4kr59r28ko?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 21, 2026",
-      "description": "The 26-year-old was jailed for a year after he sparked anger with an expletive-laden post about the sacred holiday."
-    },
-    {
-      "title": "Japan executes man who killed five in Pachinko parlour fire",
-      "url": "https://www.bbc.co.uk/news/articles/cly8k232mn7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 21, 2026",
-      "description": "This is the first time since June 2025 that the country has enacted capital punishment."
     },
     {
       "title": "Broken toilets, leaking roofs: Why India's 'cockroach' party wants to fix schools",
@@ -3342,12 +3319,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cj364klz857o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 20, 2026",
       "description": "Once a giant of African politics, the PDP is in danger of being wiped out after January's elections."
-    },
-    {
-      "title": "Sparks fly over Mamdani's 'hit list' against New York's rich home owners",
-      "url": "https://www.bbc.co.uk/news/articles/c75gp1ppk6no?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 21, 2026",
-      "description": "A list of expensive New York homes has sparked a controversy as Mamdani implements a second home tax."
     },
     {
       "title": "Tornadoes touch down in New York and Delaware",
@@ -3398,10 +3369,10 @@
       "description": "Premier Wab Kinew's comments signal a tough battle for Prime Minister Mark Carney to get buy-in from Canadians on a possible trade deal with the US."
     },
     {
-      "title": "Why the US economy is ringing alarm bells",
-      "url": "https://www.bbc.co.uk/news/articles/c9d8z72nn02o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "US borrowing costs rise as attempts to ease rates prove short-lived",
+      "url": "https://www.bbc.co.uk/news/articles/cvg92p3ez17o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 21, 2026",
-      "description": "The US hit a debt milestone this week, but just how worried should we be about the world's largest economy?"
+      "description": "Economists said there were ongoing concerns over the level of borrowing as national debt passed $40tn."
     },
     {
       "title": "Millennials have found it hard to buy homes – but things may be turning a corner",
@@ -3426,6 +3397,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cly8kzkyvwgo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 21, 2026",
       "description": "Chancellor John Healey said the government is 'committed to meeting our fiscal rules'"
+    },
+    {
+      "title": "Why the US economy is ringing alarm bells",
+      "url": "https://www.bbc.co.uk/news/articles/c9d8z72nn02o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 21, 2026",
+      "description": "The US hit a debt milestone this week, but just how worried should we be about the world's largest economy?"
     },
     {
       "title": "Panama Canal to cut number of ships passing through due to El Niño",
@@ -3522,12 +3499,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cx2kwnrn5zpo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 18, 2026",
       "description": "Several thousands of Vinted users say they have been wrongly suspended or permanently banned from the preloved app."
-    },
-    {
-      "title": "Track defect found near derailment site - report",
-      "url": "https://www.bbc.co.uk/news/articles/c4gx12v8z51o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 19, 2026",
-      "description": "Initial findings from an RAIB investigation show an \"irregularity\" at the site near Lewes."
     },
     {
       "title": "The critical tech staying safe by going underground",
@@ -3668,6 +3639,36 @@
       "description": "BBC journalist Ana Guerra-Moore looks at why investors who backed Wondermind Global are claiming the pop star failed to fulfil promises."
     },
     {
+      "title": "Former Pakistan PM Imran Khan taken back to prison after hospital check-up",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/21/former-pakistan-pm-imran-khan-taken-back-to-prison-after-hospital-check-up?traffic_source=rss",
+      "date": "August 21, 2026",
+      "description": "Relatives of former Pakistani Prime Minister Imran Khan say he’s being tortured in prison."
+    },
+    {
+      "title": "How is drought hitting UK farming?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/21/how-is-drought-hitting-uk-farming?traffic_source=rss",
+      "date": "August 21, 2026",
+      "description": "After months of heatwaves and unusually dry weather, officials say as much as two-thirds of England is in drought."
+    },
+    {
+      "title": "Arsenal sign Konsa from Villa as Premier League holders bolster defence",
+      "url": "https://www.aljazeera.com/sports/2026/8/21/arsenal-sign-konsa-from-villa-as-premier-league-holders-bolster-defence?traffic_source=rss",
+      "date": "August 21, 2026",
+      "description": "England defender Ezri Konsa joins Arsenal from Aston Villa in a deal understood to be worth £51m ($69m)."
+    },
+    {
+      "title": "Israeli army, settlers kill 2 Palestinians in separate West Bank incidents",
+      "url": "https://www.aljazeera.com/news/2026/8/21/israeli-army-settlers-kill-2-palestinians-in-separate-west-bank-incidents?traffic_source=rss",
+      "date": "August 21, 2026",
+      "description": "Israeli settlers fatally shot 17-year-old Karim Sanad Shalaldeh while Israeli forces killed 58-year-old Fathi Khazem."
+    },
+    {
+      "title": "Migrants clash with French police as they attempt to cross the Channel",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/21/migrants-clash-with-french-police-as-they-attempt-to-cross-the-channel?traffic_source=rss",
+      "date": "August 21, 2026",
+      "description": "French border police clashed with migrants in northern France on Friday, as they intercepted a small boat."
+    },
+    {
       "title": "What to know about the Freedom 250 Grand Prix, Trump’s capital car race",
       "url": "https://www.aljazeera.com/news/2026/8/21/what-to-know-about-the-freedom-250-grand-prix-trumps-capital-car-race?traffic_source=rss",
       "date": "August 21, 2026",
@@ -3680,7 +3681,7 @@
       "description": "Joe Root's return as England captain results in a thumping win inside three days against Pakistan in first Test."
     },
     {
-      "title": "Arsenal vs Coventry LIVE: Premier League",
+      "title": "LIVE: Arsenal vs Coventry: Premier League",
       "url": "https://www.aljazeera.com/sports/liveblog/2026/8/21/arsenal-vs-coventry-live-premier-league?traffic_source=rss",
       "date": "August 21, 2026",
       "description": "Follow updates from the opening match of the season - including the build-up, analysis and live text commentary."
@@ -3728,7 +3729,7 @@
       "description": "FIFA and CAF provides more than $1m a year to Djibouti's federation, which faces corruption allegations over misuse."
     },
     {
-      "title": "Several people injured in sword attack at school in Sweden",
+      "title": "At least three injured in sword attack at school in Sweden",
       "url": "https://www.aljazeera.com/news/2026/8/21/several-people-injured-in-sword-attack-at-swedish-school?traffic_source=rss",
       "date": "August 21, 2026",
       "description": "One person has been taken into custody after the attack at a high school in Fagersta, local authorities said."
@@ -3744,36 +3745,6 @@
       "url": "https://www.aljazeera.com/sports/2026/8/21/liverpool-preview-five-key-questions-heading-into-2026-27-season?traffic_source=rss",
       "date": "August 21, 2026",
       "description": "Liverpool's new Spanish boss is tasked with making the club title challengers again, but he faces a number of issues."
-    },
-    {
-      "title": "Weddings in Gaza offer rare moments of joy amid genocide",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/21/21-08-reported-gaza-weddings-hany-mahmoud-ps?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "In Gaza, weddings offer Palestinian families a brief escape from Israel’s genocidal war."
-    },
-    {
-      "title": "El Nino set to be most intense ‘for over a century’: UK forecasters",
-      "url": "https://www.aljazeera.com/news/2026/8/21/el-nino-set-to-be-most-intense-for-over-a-century-uk-forecasters?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "Met Office predicts 'unprecedented' sea surface temperature rise of 3C (5.4F) plus will heighten extreme weather risks."
-    },
-    {
-      "title": "South Korea footballers urge safety after extreme heat statistics",
-      "url": "https://www.aljazeera.com/sports/2026/8/21/south-korea-footballers-urge-safety-after-worrying-extreme-heat-health-stat?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "South Korea professional football association urges stronger heat protections in face of rising temperatures."
-    },
-    {
-      "title": "Israeli soldiers throw belongings from besieged Palestinian home",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/21/israeli-soldiers-throw-belongings-from-besieged-palestinian-home?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "Israeli soldiers were filmed throwing belongings from Palestinian homes in Qusra."
-    },
-    {
-      "title": "Why are Hong Kong’s Tiananmen vigil organisers facing prison?",
-      "url": "https://www.aljazeera.com/news/2026/8/21/why-are-hong-kongs-tiananmen-vigil-organisers-facing-prison?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "Amnesty International said they ‘must be released immediately and unconditionally’."
     }
   ]
 }
