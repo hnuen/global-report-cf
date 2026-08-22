@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T17:08:03.498Z",
+  "updatedAt": "2026-08-22T19:08:13.113Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260821",
@@ -3098,6 +3098,12 @@
   ],
   "ajNews": [
     {
+      "title": "Israel, Turkiye and the new regional reordering",
+      "url": "https://www.aljazeera.com/opinions/2026/8/22/israel-turkiye-and-the-new-regional-reordering?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "In Syria, Israel is not only at odds with Turkiye but also with the regional and international consensus."
+    },
+    {
       "title": "Sanctioned by EU, Israeli settler steals and kills Palestinian donkey",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/22-08-clip-palestinian-donkey-killed-by-setllers-ps?traffic_source=rss",
       "date": "August 22, 2026",
@@ -3120,12 +3126,6 @@
       "url": "https://www.aljazeera.com/news/2026/8/22/what-did-war-with-the-us-reveal-about-irans-weapons-capabilities?traffic_source=rss",
       "date": "August 22, 2026",
       "description": "Iran says production is ongoing, but details will not be revealed during war conditions."
-    },
-    {
-      "title": "Russian strikes kill 6 people in Ukraine, day after shopping complex attack",
-      "url": "https://www.aljazeera.com/news/2026/8/22/russian-strikes-kill-6-people-in-ukraine-day-after-shopping-complex-attack?traffic_source=rss",
-      "date": "August 22, 2026",
-      "description": "Meanwhile, Ukrainian drone hits home in southern Russia, killing two children and injuring their parents, officials say."
     }
   ],
   "occNews": [
@@ -3240,7 +3240,7 @@
       "title": "Carney faces crucial test after walking away from Trump's deal",
       "url": "https://www.bbc.co.uk/news/articles/c3040pn8lmmo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 22, 2026",
-      "description": "The Canadian prime minister will have the sell his gamble that walking away from talks with the White House will be worth the consequences."
+      "description": "The Canadian prime minister will have to sell his gamble that walking away from talks with the White House will be worth the consequences."
     },
     {
       "title": "TikTok to pay $400m to US in one of largest child privacy settlements",
@@ -3669,7 +3669,49 @@
       "description": "Amid economic uncertainty, workers are more cautious about taking their next career step"
     },
     {
-      "title": "Espanyol vs Real Madrid LIVE: La Liga",
+      "title": "Swedish police identify 17-year-old girl as victim in school sword attack",
+      "url": "https://www.aljazeera.com/news/2026/8/22/swedish-police-identify-17-year-old-girl-as-victim-in-school-sword-attack?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "Brinell School's principal says 18-year-old suspected of carrying out Friday's deadly sword attack was a student there."
+    },
+    {
+      "title": "Armed men kidnap dozens in attacks on Nigerian villages",
+      "url": "https://www.aljazeera.com/news/2026/8/22/armed-men-kidnap-dozens-in-attacks-on-nigerian-villages?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "Police say three villages and a mosque were attacked, and worshippers kidnapped in central Niger State."
+    },
+    {
+      "title": "Israel’s Chief Rabbi says Palestinians are not a people and have no rights",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/08-22-26-israel-rabbi-palestinians-clip?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "Israel’s Chief Rabbi denied Palestinians are a people, claimed Gaza for Jews and called for its destruction and return."
+    },
+    {
+      "title": "Trump seeks to block the BBC’s attempt to subpoena Ivanka Trump, Trump Jr",
+      "url": "https://www.aljazeera.com/news/2026/8/22/trump-seeks-to-block-the-bbcs-attempt-to-subpoena-ivanka-trump-trump-jr?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "While lawyers for the US president argue the subpoenas are 'cynical', the BBC says they could help shine light on case."
+    },
+    {
+      "title": "‘Not a small issue’: People deported by US to Liberia face uncertain future",
+      "url": "https://www.aljazeera.com/news/2026/8/22/not-a-small-issue-people-deported-by-us-to-liberia-face-uncertain-future?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "Liberia's government announced the move on Tuesday, two days before the flight. Politicians say they were not consulted."
+    },
+    {
+      "title": "Seven killed, including two police officers, in UK ‘wrong-side’ car crash",
+      "url": "https://www.aljazeera.com/news/2026/8/22/seven-killed-including-two-police-officers-in-uk-wrong-side-car-crash?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "Accident follows similar crashes in Ireland where police highlighted social media trend driving in opposite direction."
+    },
+    {
+      "title": "South Korea sending first container ship through Arctic route",
+      "url": "https://www.aljazeera.com/news/2026/8/22/south-korea-sending-first-container-ship-through-arctic-route?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "PanStar Acro, bound for Europe via Arctic, is testing whether a route opened by melting sea ice is commercially viable."
+    },
+    {
+      "title": "LIVE: Espanyol vs Real Madrid: La Liga",
       "url": "https://www.aljazeera.com/sports/liveblog/2026/8/22/espanyol-vs-real-madrid-live-la-liga?traffic_source=rss",
       "date": "August 22, 2026",
       "description": "Follow updates as Jose Mourinho returns to lead Madrid - including the build-up, analysis and live text commentary."
@@ -3745,48 +3787,6 @@
       "url": "https://www.aljazeera.com/sports/2026/8/22/concacaf-ask-infantino-to-skip-youth-tournament-amid-fifa-governance-crisis?traffic_source=rss",
       "date": "August 22, 2026",
       "description": "The pressure on Gianni Infantino has led CONCACAF to reportedly ask the FIFA president to skip upcoming tournament."
-    },
-    {
-      "title": "The Berlin Wall separated his family. Its legacy still endures",
-      "url": "https://www.aljazeera.com/features/longform/2026/8/22/the-berlin-wall-separated-his-family-its-legacy-still-endures?traffic_source=rss",
-      "date": "August 22, 2026",
-      "description": "When Germany was divided, the Guetingers were among the 70 million people split between two opposing nations."
-    },
-    {
-      "title": "Hundreds of children take part in swimming class on Gaza’s shore",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/hundreds-of-children-take-part-in-swimming-class-on-gazas-shore?traffic_source=rss",
-      "date": "August 22, 2026",
-      "description": "On Gaza’s shore, 1,300 Palestinian children joined a swimming class to cope with the trauma of Israel’s genocidal war."
-    },
-    {
-      "title": "Usain Bolt’s 100m record broken at World Humanoid Robot Games",
-      "url": "https://www.aljazeera.com/sports/2026/8/22/usain-bolts-100m-record-broken-at-world-humanoid-robot-games?traffic_source=rss",
-      "date": "August 22, 2026",
-      "description": "Chinese robot reaches peak ​speed of 14.5 metres per second to beat Bolt's 100m record in Beijing, says state media."
-    },
-    {
-      "title": "Ebola continues to spread in the DRC as 16,000 vaccine doses arrive",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/ebola-continues-to-spread-in-the-drc-as-16000-vaccine-doses-arrive?traffic_source=rss",
-      "date": "August 22, 2026",
-      "description": "Health authorities are warning that ‘approximately one person has been dying from Ebola every thirty minutes’."
-    },
-    {
-      "title": "More than 16,000 doses of Ervebo vaccine arrive in Ebola-hit DR Congo",
-      "url": "https://www.aljazeera.com/news/2026/8/22/more-than-16000-doses-of-ervebo-vaccine-arrive-in-ebola-hit-dr-congo?traffic_source=rss",
-      "date": "August 22, 2026",
-      "description": "The doses are the first of 70,000 allocated for Kinshasa as experts warn of the virus's exponential spread."
-    },
-    {
-      "title": "Pakistan’s PTI seeks contempt action over jailed Imran Khan’s hospital move",
-      "url": "https://www.aljazeera.com/news/2026/8/22/pakistans-pti-seeks-contempt-action-over-jailed-imran-khans-hospital?traffic_source=rss",
-      "date": "August 22, 2026",
-      "description": "Party launches legal action after authorities take ex-PM to ⁠state hospital for check-up ⁠before returning him to jail."
-    },
-    {
-      "title": "Manchester City preview: Five key questions heading into 2026-27 season",
-      "url": "https://www.aljazeera.com/sports/2026/8/22/manchester-city-preview-five-key-questions-heading-into-2026-27-season?traffic_source=rss",
-      "date": "August 22, 2026",
-      "description": "Enzo Maresca faces the formidable challenge of following the legendary manager Pep Guardiola as new season starts."
     }
   ]
 }
