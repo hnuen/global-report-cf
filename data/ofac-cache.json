@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T22:08:02.119Z",
+  "updatedAt": "2026-08-22T13:08:03.064Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260821",
@@ -3048,10 +3048,10 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "Russian double-tap drone strike kills 15 in Ukrainian mall, officials say",
+      "title": "Rescuers dig through Ukraine mall wreckage as Zelensky condemns 'despicable' Russian strike",
       "url": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 21, 2026",
-      "description": "At least 130 people, including 23 children, were also injured when the shopping centre was hit, according to the regional head."
+      "date": "August 22, 2026",
+      "description": "Four people are still missing after Friday's attack which killed 16 and left 130 injured, including a number of children."
     },
     {
       "title": "Germany investigates Russia links to weapons cache discovered in woods, reports say",
@@ -3092,28 +3092,16 @@
   ],
   "ajNews": [
     {
-      "title": "Secret tunnel becomes museum for Syria chemical attack and siege of Ghouta",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/21/08-21-26-ghouta-chemical-attack-anniversary-sv?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "A Ghouta tunnel used during Assad’s siege is now a museum, 13 years after government forces’ deadly sarin gas attack."
+      "title": "Russian strikes kill 6 people in Ukraine, day after shopping complex attack",
+      "url": "https://www.aljazeera.com/news/2026/8/22/russian-strikes-kill-6-people-in-ukraine-day-after-shopping-complex-attack?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "Meanwhile, Ukrainian drone hits home in southern Russia, killing two children and injuring their parents, officials say."
     },
     {
-      "title": "Drone strike on Ukraine shopping centre kills 14, over 100 injured",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/21/drone-strike-on-ukraine-shopping-centre-kills-six-injures-103?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "A Russian drone strike hit a major shopping centre in Kryvyi Rih, Ukraine, killing 14 people and injuring over 100"
-    },
-    {
-      "title": "Russian drone attack on busy shopping centre kills 15 in Ukraine",
-      "url": "https://www.aljazeera.com/news/2026/8/21/russian-drone-attack-on-busy-shopping-centre-kills-14-in-ukraine?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "Ukraine's Volodymyr Zelenskyy slams 'cynical and despicable' attack on his hometown Kryvyi Rih that injured over 130."
-    },
-    {
-      "title": "Why Iran is threatening Europe’s ‘strategically important’ southeast",
-      "url": "https://www.aljazeera.com/news/2026/8/21/iran-southeastern-europe-threats?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "Tehran has threatened Bulgaria, home to a US air base, but how credible is that threat?"
+      "title": "Iran says new US sanctions violate sovereignty of other states",
+      "url": "https://www.aljazeera.com/news/2026/8/22/iran-says-new-us-sanctions-violate-sovereignty-of-other-states?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "Foreign Ministry spokesman Esmaeil Baghaei slams Trump's latest threat as a return to 'full-scale classic colonialism'."
     }
   ],
   "occNews": [
@@ -3163,6 +3151,18 @@
   ],
   "bisNews": [
     {
+      "title": "Revisions to the Entity List",
+      "url": "https://www.federalregister.gov/documents/2026/08/24/2026-17231/revisions-to-the-entity-list",
+      "date": "August 24, 2026",
+      "description": "In this rule, the Bureau of Industry and Security (BIS) revises the Export Administration Regulations (EAR) by removing two addresses associated with Arrow Electronics (Hong Kong) Co., Ltd. from the Entity List under the destination of China, People's Republic of (China). This determination follows the removal from the Entity List of Arrow China Electronics Trading Co., Ltd., and the removal of six aliases for Arrow Electronics (Hong Kong) Co., Ltd. in November 2025."
+    },
+    {
+      "title": "Removal From the Entity List",
+      "url": "https://www.federalregister.gov/documents/2026/08/24/2026-17230/removal-from-the-entity-list",
+      "date": "August 24, 2026",
+      "description": "In this rule, the Bureau of Industry and Security (BIS) amends the Export Administration Regulations (EAR) by removing one entity from the Entity List under the destination of Turkey."
+    },
+    {
       "title": "Streamlining Export Controls for Drone Exports",
       "url": "https://www.federalregister.gov/documents/2026/08/14/2026-16628/streamlining-export-controls-for-drone-exports",
       "date": "August 14, 2026",
@@ -3203,15 +3203,21 @@
       "url": "https://www.federalregister.gov/documents/2026/05/14/2026-09580/emerging-technology-technical-advisory-committee",
       "date": "May 14, 2026",
       "description": "The Emerging Technology Technical Advisory Committee (ETTAC) advises and assists the Department of Commerce on matters related to export control policies. The ETTAC will meet on June 2, 2026, to review and discuss these matters. This meeting will be partially closed to the public pursuant to the exemptions under the Federal Advisory Committee Act (FACA) and the Government in the Sunshine Act. The meeting will be held in person, with no option for virtual attendance."
-    },
-    {
-      "title": "Agency Information Collection Activities; Submission to the Office of Management and Budget (OMB) for Review and Approval; Comment Request; Voluntary Self-Disclosure of Antiboycott Violations",
-      "url": "https://www.federalregister.gov/documents/2026/04/09/2026-06901/agency-information-collection-activities-submission-to-the-office-of-management-and-budget-omb-for",
-      "date": "April 9, 2026",
-      "description": "The Department of Commerce, in accordance with the Paperwork Reduction Act of 1995 (PRA), invites the general public and other Federal agencies to comment on proposed, and continuing information collections, which helps us assess the impact of our information collection requirements and minimize the public's reporting burden. The purpose of this notice is to allow for 60 days of public comment preceding submission of the collection to OMB."
     }
   ],
   "regionsNews": [
+    {
+      "title": "Canada says it will match US tariffs 'dollar for dollar' as trade talks break down",
+      "url": "https://www.bbc.co.uk/news/articles/cvgvyy4x2mvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 22, 2026",
+      "description": "A new 50% levy on $20bn of Canadian imports comes into force after a last-minute breakdown in trade talks."
+    },
+    {
+      "title": "TikTok to pay $400m to US in one of largest child privacy settlements",
+      "url": "https://www.bbc.co.uk/news/articles/cwyr0l45xjro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 21, 2026",
+      "description": "The deal stems from a 2024 lawsuit alleging TikTok and its parent company ByteDance collected \"vast amounts of data\" on millions of users under the age of 13."
+    },
     {
       "title": "Israel re-establishes closed West Bank settlement, defying growing international protests",
       "url": "https://www.bbc.co.uk/news/articles/cn7n0l4p0kzo?at_medium=RSS&amp;at_campaign=rss",
@@ -3225,10 +3231,16 @@
       "description": "Officials say another three people were injured, and an 18-year-old male suspect shot and arrested."
     },
     {
-      "title": "Hong Kong's Tiananmen activists guilty in national security trial",
-      "url": "https://www.bbc.co.uk/news/articles/c1l10mdrld5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 21, 2026",
-      "description": "Three activists were accused of inciting others to subvert state power under the China-introduced law."
+      "title": "Father leaves 7-year-old son alone on Mount Fuji to continue hike, reports say",
+      "url": "https://www.bbc.co.uk/news/articles/c93403wg288o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 22, 2026",
+      "description": "The man had taken his two boys on the trip but is said to have left one behind when he got tired."
+    },
+    {
+      "title": "Lindsay Clancy suffering 'command hallucination' when she killed children, court hears",
+      "url": "https://www.bbc.co.uk/news/articles/c62xpre63j2o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 22, 2026",
+      "description": "The defence brought their final witness - a forensic psychiatrist - to the stand to testify about the effects of postpartum psychosis."
     },
     {
       "title": "UK, Canada and Australia condemn Israel for refusing criminal probe into aid worker killings in Gaza",
@@ -3237,22 +3249,40 @@
       "description": "Seven World Central Kitchen workers were killed in the Israeli strike on their convoy in 2024."
     },
     {
+      "title": "Sydney Marathon medal mistakenly depicts Munich stadium",
+      "url": "https://www.bbc.co.uk/news/articles/cvg92y1wzn8o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 22, 2026",
+      "description": "Online sleuths detected the error after Sydney Marathon unveiled the double-sided medal."
+    },
+    {
       "title": "Two injured in stabbing attack at Canada Sikh temple",
       "url": "https://www.bbc.co.uk/news/articles/ce8l7w0n0jeo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 21, 2026",
-      "description": "One suspect is in custody, but police have not disclosed a possible motive."
+      "description": "One suspect is in custody, and police have said they are still investigating if the attack was motivated by hate."
     },
     {
-      "title": "Ebola vaccine trial to start in DR Congo as warning issued over speed of infections",
-      "url": "https://www.bbc.co.uk/news/articles/czxe9n0vxzdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 21, 2026",
-      "description": "About half of the 2,500 recorded deaths from Ebola happened in the last 20 days, the WHO says."
+      "title": "As they return to the UK, Harry and Meghan search for a brand that sticks",
+      "url": "https://www.bbc.co.uk/news/articles/c0l5d387j18o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 22, 2026",
+      "description": "They will not be working royals when they come back. So what could they be doing instead?"
     },
     {
       "title": "Tupac murder accused told police in 2008 his nephew fired fatal shots",
       "url": "https://www.bbc.co.uk/news/articles/cly57kzgr0ko?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 21, 2026",
       "description": "A recording of the interview Duane Davis conducted with detectives was played to the jury."
+    },
+    {
+      "title": "Hong Kong's Tiananmen activists guilty in national security trial",
+      "url": "https://www.bbc.co.uk/news/articles/c1l10mdrld5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 21, 2026",
+      "description": "Three activists were accused of inciting others to subvert state power under the China-introduced law."
+    },
+    {
+      "title": "Ebola vaccine trial to start in DR Congo as warning issued over speed of infections",
+      "url": "https://www.bbc.co.uk/news/articles/czxe9n0vxzdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 21, 2026",
+      "description": "About half of the 2,500 recorded deaths from Ebola happened in the last 20 days, the WHO says."
     },
     {
       "title": "Meghan in talks for role in Netflix series The Gentlemen, BBC understands",
@@ -3285,22 +3315,40 @@
       "description": "It comes as the court had earlier this week ordered that he had to be taken for a hospital examination."
     },
     {
+      "title": "These bookshops let Chinese readers question their country - now the doors are closing",
+      "url": "https://www.bbc.co.uk/news/articles/cj0338l6yg4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 21, 2026",
+      "description": "For some mainlanders, Hong Kong's independent bookstores are a window into a different, freer world."
+    },
+    {
+      "title": "Drugs at their fingertips, intense pressure: Why child stars fall into addiction",
+      "url": "https://www.bbc.co.uk/news/articles/cq56x3910jwo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 21, 2026",
+      "description": "Experts told the BBC the pressures of childhood stardom can put actors at an unusually higher risk of substance abuse issues."
+    },
+    {
       "title": "How Israel is expanding settlements in drive to reshape West Bank",
       "url": "https://www.bbc.co.uk/news/articles/c2lq5g4dedpo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 21, 2026",
       "description": "There has been a significant expansion of building and road construction on Palestinian land occupied by Israel in recent years."
     },
     {
-      "title": "Broken toilets, leaking roofs: Why India's 'cockroach' party wants to fix schools",
-      "url": "https://www.bbc.co.uk/news/articles/ckg4q8kyxp7o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Modi spent years building his strong image - why is he making Gen Z reels now?",
+      "url": "https://www.bbc.co.uk/news/articles/cnvn0n1nld6o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 21, 2026",
-      "description": "The poor state of government schools is the focus of a new campaign by India's Cockroach Janta Party (CJP)."
+      "description": "Narendra Modi's new, more casual online persona is drawing attention from young Indians - but also plenty of scepticism."
     },
     {
-      "title": "What happened to Harry and Meghan's American dream?",
-      "url": "https://www.bbc.co.uk/news/articles/c935rk91vg5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 21, 2026",
-      "description": "Harry and Meghan enjoyed some showbusiness success, but their Hollywood reign proved short-lived."
+      "title": "Robot horse and rider steal the spotlight at Chinese conference",
+      "url": "https://www.bbc.co.uk/news/videos/c0qvqzzdd02o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 22, 2026",
+      "description": "More than 300 companies are showcasing the latest advances in robotics at the five-day event in Beijing, China, organisers say."
+    },
+    {
+      "title": "'Quiet, quiet, quiet!' - What triggers Trump to shut down reporters?",
+      "url": "https://www.bbc.co.uk/news/videos/c235j22d85ro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 22, 2026",
+      "description": "As the US president insults a journalist again, the BBC looks at the questions he does not like to answer."
     },
     {
       "title": "Tornadoes touch down in New York and Delaware",
@@ -3321,34 +3369,16 @@
       "description": "The men, aged 53 and 32, lost contact with their fishing cooperative on 14 August, 75 miles off the coast of Mexico."
     },
     {
-      "title": "Watch: What does Harry's return mean for his fractured relationship with William?",
-      "url": "https://www.bbc.co.uk/news/videos/cgljr2wlr1no?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 20, 2026",
-      "description": "The brothers have had a fractured relationship for a number of years."
-    },
-    {
-      "title": "Multiple deadly Israeli strikes in Gaza in under 24 hours",
-      "url": "https://www.bbc.co.uk/news/videos/cp3rgxzk5x2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 19, 2026",
-      "description": "BBC Verify looks at footage from two deadly strikes in under 24 hours in Gaza."
-    },
-    {
-      "title": "Why is Ukraine's ex-defence minister calling for wartime elections?",
-      "url": "https://www.bbc.co.uk/news/videos/c62eyn5ggnzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 19, 2026",
-      "description": "Mykhailo Fedorov has called for elections, without addressing concerns over how they could be held while at war."
-    },
-    {
       "title": "Royal Mail misses delivery targets again but hails 'encouraging' signs",
       "url": "https://www.bbc.co.uk/news/articles/c1w1rg208xdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 21, 2026",
       "description": "The struggling firm said it had improved its performance but missed regulator-set delivery targets."
     },
     {
-      "title": "Canada 'should fight' as US trade deadline looms, Manitoba premier says",
+      "title": "'We have more work to do', says Canada negotiator as US trade deadline looms",
       "url": "https://www.bbc.co.uk/news/articles/czjlr0evy0do?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 21, 2026",
-      "description": "Premier Wab Kinew's comments signal a tough battle for Prime Minister Mark Carney to get buy-in from Canadians on a possible trade deal with the US."
+      "date": "August 22, 2026",
+      "description": "Negotiations to finalise a deal between the US and Canada are going down to the wire ahead of a Friday night deadline."
     },
     {
       "title": "US borrowing costs rise as attempts to ease rates prove short-lived",
@@ -3531,6 +3561,18 @@
       "description": "The retailer has been around for 50 years but struggled to compete with newer rivals such as Amazon. Can its new owners turn it around?"
     },
     {
+      "title": "Taxi drivers urge council to agree 8% fare hike",
+      "url": "https://www.bbc.co.uk/news/articles/cn0nlyxrz51o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 22, 2026",
+      "description": "Taxi fares could rise by 8% to help drivers combat rising fuel prices and the cost of living."
+    },
+    {
+      "title": "Not 'poor enough': Do people use London's pay-it-forward schemes?",
+      "url": "https://www.bbc.co.uk/news/articles/cewrv4wqvw2o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 22, 2026",
+      "description": "The schemes are in place to help people who are struggling with the cost of living."
+    },
+    {
       "title": "Millennials have found it hard to buy homes – but things may be turning a corner",
       "url": "https://www.bbc.co.uk/news/articles/cgewlld498xo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 21, 2026",
@@ -3547,18 +3589,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cpq8rjy7vxlo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 20, 2026",
       "description": "High gas prices and weaker pharmacy sales pushed Walmart's growth to its slowest pace in six years"
-    },
-    {
-      "title": "Thousands helped with back to school costs",
-      "url": "https://www.bbc.co.uk/news/articles/cqjxn547vgpo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 20, 2026",
-      "description": "More than £310,000 has been given to help families with back to school costs, the government says."
-    },
-    {
-      "title": "Illegal 'drip pricing' could add thousands to the cost of your holiday",
-      "url": "https://www.bbc.co.uk/news/videos/cn8ndd8eklmo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 20, 2026",
-      "description": "The UK's consumer watchdog has opened an investigation into Trainline, RED Driving School, and Virgin Holidays."
     },
     {
       "title": "Why the UK is dithering over what to do about e-scooters",
@@ -3621,130 +3651,142 @@
       "description": "Amid economic uncertainty, workers are more cautious about taking their next career step"
     },
     {
-      "title": "Mexico Governor Ruben Rocha returns to office despite US criminal charges",
-      "url": "https://www.aljazeera.com/news/2026/8/21/mexico-governor-ruben-rocha-returns-to-office-despite-us-criminal-charges?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "The governor, who leads the state of Sinaloa, has been accused by the Trump administration of partnering with a cartel."
+      "title": "Jewish activists push back against Israeli settlers",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/jewish-activists-push-back-against-israeli-settlers?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "Jewish activists provide a ‘protective presence’ to deter settler violence in parts of the Occupied West Bank."
     },
     {
-      "title": "One killed, three wounded in sword attack at Swedish high school",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/21/08-21-2026-sweden-sword-attack-clip?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "One person has been killed and three others wounded in an attack by a sword-wielding man at a Swedish high school."
+      "title": "CONCACAF asks Infantino to skip youth event amid FIFA governance crisis",
+      "url": "https://www.aljazeera.com/sports/2026/8/22/concacaf-ask-infantino-to-skip-youth-tournament-amid-fifa-governance-crisis?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "The pressure on Gianni Infantino has led CONCACAF to reportedly ask the FIFA president to skip upcoming tournament."
     },
     {
-      "title": "Arsenal rout Coventry 3-0 to begin Premier League title defence in style",
-      "url": "https://www.aljazeera.com/sports/2026/8/21/arsenal-rout-coventry-3-0-to-begin-premier-league-title-defence-in-style?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "Kai Havertz struck early, Bukayo Saka doubled the lead, before Martin Odegaard netted after the break."
+      "title": "The Berlin Wall separated his family. Its legacy still endures",
+      "url": "https://www.aljazeera.com/features/longform/2026/8/22/the-berlin-wall-separated-his-family-its-legacy-still-endures?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "When Germany was divided, the Guetingers were among the 70 million people split between two opposing nations."
     },
     {
-      "title": "Global Sumud Flotilla joins Albania’s anti-resort protest",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/21/global-sumud-flotilla-joins-albanias-anti-resort-protest?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "Three boats from the Global Sumud Flotilla arrived in Albania’s Vlore on Friday to support the “Flamingo Revolution\""
+      "title": "Hundreds of children take part in swimming class on Gaza’s shore",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/hundreds-of-children-take-part-in-swimming-class-on-gazas-shore?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "On Gaza’s shore, 1,300 Palestinian children joined a swimming class to cope with the trauma of Israel’s genocidal war."
     },
     {
-      "title": "Tunisian protesters call for President Kais Saied to step down",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/21/tunisian-protesters-call-for-president-kais-saied-to-step-down?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "Hundreds of Tunisians took to the streets of the capital Tunis on Thursday, calling for president Kais Saied to leave."
+      "title": "Usain Bolt’s 100m record broken at World Humanoid Robot Games",
+      "url": "https://www.aljazeera.com/sports/2026/8/22/usain-bolts-100m-record-broken-at-world-humanoid-robot-games?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "Chinese robot reaches peak ​speed of 14.5 metres per second to beat Bolt's 100m record in Beijing, says state media."
     },
     {
-      "title": "Can a humanitarian disaster be averted in Somalia?",
-      "url": "https://www.aljazeera.com/video/inside-story/2026/8/21/can-a-humanitarian-disaster-be-averted-in-somalia-2?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "The UN warns of another hunger crisis, with starvation threatening millions."
+      "title": "Ebola continues to spread in the DRC as 16,000 vaccine doses arrive",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/ebola-continues-to-spread-in-the-drc-as-16000-vaccine-doses-arrive?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "Health authorities are warning that ‘approximately one person has been dying from Ebola every thirty minutes’."
     },
     {
-      "title": "Pope Leo urges the world to ‘help begin reconstruction’ of Gaza",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/21/pope-leo-urges-the-world-to-help-begin-reconstruction-of-gaza?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "Pope Leo XIV is appealing to authorities around the world to support the people of Gaza who are ‘still suffering'."
+      "title": "More than 16,000 doses of Ervebo vaccine arrive in Ebola-hit DR Congo",
+      "url": "https://www.aljazeera.com/news/2026/8/22/more-than-16000-doses-of-ervebo-vaccine-arrive-in-ebola-hit-dr-congo?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "The doses are the first of 70,000 allocated for Kinshasa as experts warn of the virus's exponential spread."
     },
     {
-      "title": "Bolivia’s President Rodrigo Paz fires economy minister amid unrest",
-      "url": "https://www.aljazeera.com/news/2026/8/21/bolivias-president-rodrigo-paz-nixes-economy-minister-amid-unrest?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "Jose Gabriel Espinoza removed from post days after he was censured by the legislature amid tumult over economic reform."
+      "title": "Pakistan’s PTI seeks contempt action over jailed Imran Khan’s hospital move",
+      "url": "https://www.aljazeera.com/news/2026/8/22/pakistans-pti-seeks-contempt-action-over-jailed-imran-khans-hospital?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "Party launches legal action after authorities take ex-PM to ⁠state hospital for check-up ⁠before returning him to jail."
     },
     {
-      "title": "Western allies slam Israel for ending World Central Kitchen strike probe",
-      "url": "https://www.aljazeera.com/news/2026/8/21/western-allies-slam-israel-for-ending-world-central-kitchen-strike-probe?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "UK, Australia and Canada call Israel’s decision not to investigate deadly 2024 strike on a Gaza aid convoy 'shameful'."
+      "title": "Manchester City preview: Five key questions heading into 2026-27 season",
+      "url": "https://www.aljazeera.com/sports/2026/8/22/manchester-city-preview-five-key-questions-heading-into-2026-27-season?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "Enzo Maresca faces the formidable challenge of following the legendary manager Pep Guardiola as new season starts."
     },
     {
-      "title": "US Supreme Court allows Trump’s ballroom project to continue for now",
-      "url": "https://www.aljazeera.com/news/2026/8/21/us-supreme-court-allows-trumps-ballroom-project-to-continue-for-now?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "The Trump administration has argued the $400m White House ballroom is needed for national security purposes."
+      "title": "Former world champion boxer Zolani Tete shot and killed in South Africa",
+      "url": "https://www.aljazeera.com/sports/2026/8/22/former-world-champion-boxer-zolani-tete-shot-and-killed-in-south-africa?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "Zolani Tete, who held WBF flyweight and WBO bantamweight world titles, killed at his home in Eastern Cape, South Africa."
     },
     {
-      "title": "Trump waives ‘out-of-quota’ beef tariffs for 90 days to lower prices",
-      "url": "https://www.aljazeera.com/news/2026/8/21/trump-waives-out-of-quota-beef-tariffs-for-90-days-to-lower-prices?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "The president did not mention with whom he made the deal or where the imported ground beef is coming from."
+      "title": "Australia bite back as 18 wickets fall on day one of second Bangladesh Test",
+      "url": "https://www.aljazeera.com/sports/2026/8/22/australia-bite-back-as-18-wickets-fall-on-day-one-of-second-bangladesh-test?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "Left-armers star in wicket bonanza as Australia take 101-run lead over Bangladesh on first day of the second Test."
     },
     {
-      "title": "US court slashes Alex Jones fines for Sandy Hook school shooting case",
-      "url": "https://www.aljazeera.com/news/2026/8/21/us-court-slashes-alex-jones-fines-for-sandy-hook-school-shooting-case?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "Court cuts Infowars founder's penalty for false claims that school shooting was a 'hoax' from $50m to $1.5m."
+      "title": "Nakashima pounds Fritz, Bejlek beats Keys in Cincinnati upsets",
+      "url": "https://www.aljazeera.com/sports/2026/8/22/nakashima-pounds-fritz-bejlek-beats-keys-in-cincinnati-upsets?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "Frances Tiafoe and Brandon Nakashima set up one all-American men's semifinal, Coco Gauff and Jessica Pegula also win."
     },
     {
-      "title": "Libya rivals test a new path towards unity, 15 years after Gadaffi downfall",
-      "url": "https://www.aljazeera.com/economy/2026/8/21/libya-rivals-test-a-new-path-towards-unity-15-years-after-gadaffi-overthrow?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "Fifteen years since Tripoli fell, Libyan parties are finally working towards unity."
+      "title": "How will Trump’s tariffs affect Canada’s economy?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/how-will-trumps-tariffs-affect-canadas-economy?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "US imposes 50% tariffs on key Canadian sectors after talks collapse, but unlikely to cripple Canada's economy."
     },
     {
-      "title": "US, Canada negotiators race to ink a deal as Trump’s tariff deadline looms",
-      "url": "https://www.aljazeera.com/economy/2026/8/21/us-canada-negotiators-race-to-ink-a-deal-as-trumps-tariff-deadline-looms?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "Experts say even a last-minute breakthrough will not result in the US lifting all its tariffs on Canadian goods."
+      "title": "Panama Canal to reduce shipping as ‘extreme’ El Nino approaches",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/panama-canal-to-reduce-shipping-as-extreme-el-nino-approaches?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "Panama Canal will cut daily transits from 40 to 32 vessels by September 15, risking slower shipping and higher costs."
     },
     {
-      "title": "Palestinian victims of Israeli settler attacks face battle for justice",
-      "url": "https://www.aljazeera.com/features/2026/8/21/palestinian-victims-of-israeli-settlers-face-painful-battle-for-justice?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "Palestinians with missing relatives are marking International Day of Remembrance and Tribute to Victims of Terrorism."
+      "title": "Lionel Messi fined for striking opponent in Inter Miami MLS game",
+      "url": "https://www.aljazeera.com/sports/2026/8/22/messi-fined-for-striking-opponent-in-inter-miami-mls-game?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "MLS fine Inter Miami's Lionel Messi and Ian Fray for separate incidents in match against Philadelphia Union."
     },
     {
-      "title": "Turkiye accuses Israel’s Netanyahu of ‘genocide’, seeks Interpol warrant",
-      "url": "https://www.aljazeera.com/news/2026/8/21/turkiye-accuses-israels-netanyahu-of-genocide-seeks-interpol-warrant?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "Netanyahu and Erdogan trade insults as Ankara seeks warrant for Israel's attacks on Global Sumud Flotilla activists."
+      "title": "Libya’s brain drain, 15 years after Tripoli fell",
+      "url": "https://www.aljazeera.com/news/2026/8/22/young-want-to-leave-libyas-brain-drain-15-years-after-tripoli-fell?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "Professionals who left a country in turmoil say they are unlikely to return as more in Libya could be planning to leave."
     },
     {
-      "title": "Espanyol vs Real Madrid: La Liga – prediction, lineups, teams",
-      "url": "https://www.aljazeera.com/sports/2026/8/21/espanyol-vs-real-madrid-la-liga-prediction-lineups-teams?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "Real Madrid kickoff their campaign at Espanyol in Barcelona as Jose Mourinho's targets winning La Liga return."
+      "title": "World Bank projects war-hit Lebanon’s economy to contract by 6.4 percent",
+      "url": "https://www.aljazeera.com/news/2026/8/22/world-bank-projects-war-hit-lebanons-economy-to-contract-by-6-4-percent?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "Conflict with Israel derails Lebanon's economic recovery as inflation and consumer prices rise, the global lender says."
     },
     {
-      "title": "Former Pakistan PM Imran Khan taken back to prison after hospital check-up",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/21/former-pakistan-pm-imran-khan-taken-back-to-prison-after-hospital-check-up?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "Relatives of former Pakistani Prime Minister Imran Khan say he’s being tortured in prison."
+      "title": "Somalia child hunger crisis deepens after aid cuts, UNICEF says",
+      "url": "https://www.aljazeera.com/news/2026/8/22/somalia-child-hunger-crisis-deepens-after-aid-cuts-unicef-says?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "The drought-stricken country has recorded a 32 percent jump in the number of children treated for severe malnutrition."
     },
     {
-      "title": "How is drought hitting UK farming?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/21/how-is-drought-hitting-uk-farming?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "After months of heatwaves and unusually dry weather, officials say as much as two-thirds of England is in drought."
+      "title": "China’s new moon mission could unlock secret of lunar ice: Why that matters",
+      "url": "https://www.aljazeera.com/news/2026/8/22/chinas-new-moon-mission-could-unlock-secret-of-lunar-ice-why-that-matters?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "The Chang'e-7 seeks to find out more about the water trapped within the moon's shadowed craters."
     },
     {
-      "title": "Arsenal sign Konsa from Villa as Premier League holders bolster defence",
-      "url": "https://www.aljazeera.com/sports/2026/8/21/arsenal-sign-konsa-from-villa-as-premier-league-holders-bolster-defence?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "England defender Ezri Konsa joins Arsenal from Aston Villa in a deal understood to be worth £51m ($69m)."
+      "title": "‘It was a tsunami’: Floods leave death trail in India’s Assam",
+      "url": "https://www.aljazeera.com/news/2026/8/22/it-was-a-tsunami-floods-leave-death-trail-in-indias-assam?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "From father searching for his daughter's body to man who drowned trying to save a friend, floods take devastating toll."
     },
     {
-      "title": "Israeli army, settlers kill 2 Palestinians in separate West Bank incidents",
-      "url": "https://www.aljazeera.com/news/2026/8/21/israeli-army-settlers-kill-2-palestinians-in-separate-west-bank-incidents?traffic_source=rss",
-      "date": "August 21, 2026",
-      "description": "Israeli settlers fatally shot 17-year-old Karim Sanad Shalaldeh while Israeli forces killed 58-year-old Fathi Khazem."
+      "title": "Inundated Philippine communities seek answers over flood control funds",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/inundated-philippine-communities-seek-answers-over-flood-control-funds?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "Al Jazeera’s Jamela Alindogan reports from Northern Philippines where inundated communities are demanding answers."
+    },
+    {
+      "title": "Palestinian teen shot and killed in West Bank attack, UN responds",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/palestinian-teen-shot-and-killed-in-west-bank-attack-un-responds?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "A 17-year-old Palestinian was killed and another person critically injured in a settler attack in the occupied West Bank"
+    },
+    {
+      "title": "Nigeria and the Sahel: A growing security divide",
+      "url": "https://www.aljazeera.com/news/2026/8/22/nigeria-and-the-sahel-a-growing-security-divide?traffic_source=rss",
+      "date": "August 22, 2026",
+      "description": "A widening diplomatic rift is complicating efforts to confront a shared cross-border security threat."
     }
   ]
 }
