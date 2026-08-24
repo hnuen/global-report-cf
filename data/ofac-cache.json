@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T13:08:35.792Z",
+  "updatedAt": "2026-08-24T15:08:02.972Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260821",
@@ -3048,16 +3048,16 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "Russia's second-biggest online retailer targeted in Ukrainian strikes",
-      "url": "https://www.bbc.co.uk/news/articles/cg598yvrzpro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 24, 2026",
-      "description": "Ozon says its warehouses across southern Russia, including in Dagestan and Krasnodar, were hit in the overnight strikes."
-    },
-    {
       "title": "Iran faces 'greatest financial offensive ever', says US treasury secretary",
       "url": "https://www.bbc.co.uk/news/articles/c0qxew81y83o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 24, 2026",
       "description": "Scott Bessent says the US will sever all economic ties with the country and that any nation partnering with Iran financially will also be isolated."
+    },
+    {
+      "title": "Russia's second-biggest online retailer targeted in Ukrainian strikes",
+      "url": "https://www.bbc.co.uk/news/articles/cg598yvrzpro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 24, 2026",
+      "description": "Ozon says its warehouses across southern Russia, including in Dagestan and Krasnodar, were hit in the overnight strikes."
     },
     {
       "title": "Iran faces 'greatest financial offensive ever', says US treasury secretary",
@@ -3108,12 +3108,6 @@
       "url": "https://www.aljazeera.com/economy/2026/8/24/us-threat-of-economic-d-day-for-iran-tests-trumps-china-detente?traffic_source=rss",
       "date": "August 24, 2026",
       "description": "Exerting maximum economic pressure on Tehran would risk blowback from Beijing."
-    },
-    {
-      "title": "‘Barrel bomb mufti’ Ahmad Hassoun handed life sentence in Syria trial",
-      "url": "https://www.aljazeera.com/news/2026/8/24/hold-ahmad-hassoun-assads-barrel-bomb-mufti-faces-death-penalty?traffic_source=rss",
-      "date": "August 24, 2026",
-      "description": "Judge Fakhr al-Din al-Aryan sentenced Hassoun to life in prison for crimes including inciting violence."
     }
   ],
   "occNews": [
@@ -3225,6 +3219,12 @@
   ],
   "regionsNews": [
     {
+      "title": "Israel warns of 'forceful' response to kites flown from Gaza",
+      "url": "https://www.bbc.co.uk/news/articles/c5y58g2dp3xo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 24, 2026",
+      "description": "Hamas says the kites found in Israeli border communities in recent days were launched by children in Gaza."
+    },
+    {
       "title": "King of Norway's health has worsened, palace says",
       "url": "https://www.bbc.co.uk/news/articles/c36lnekj659o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 24, 2026",
@@ -3235,6 +3235,12 @@
       "url": "https://www.bbc.co.uk/news/articles/c4g6ggdg030o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 24, 2026",
       "description": "Other brands affected by the recall include Chinese carmakers XPeng, Xiaomi and Geely."
+    },
+    {
+      "title": "Sonya Massey's killer Sean Grayson dies in US prison",
+      "url": "https://www.bbc.co.uk/news/articles/cgrvj28wrxgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 24, 2026",
+      "description": "The former police officer, whose crime reignited the debate about US police brutality, was undergoing treatment for cancer."
     },
     {
       "title": "Access to Zambian courts prevented as election petition deadline looms",
@@ -3261,28 +3267,10 @@
       "description": "The government faces opposition to its proposals from MPs who believe a ban will not work."
     },
     {
-      "title": "Ex-cricket captains urge 'proper medical care' for Imran Khan",
-      "url": "https://www.bbc.co.uk/news/articles/cx2z889l0dxo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 24, 2026",
-      "description": "The former skippers say it is \"basic decency\" for Pakistan to comply with a court-ordered medical assessment."
-    },
-    {
       "title": "Guinea rubbish landfill collapse kills 31",
       "url": "https://www.bbc.co.uk/news/articles/c4g3g36z7p6o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 24, 2026",
       "description": "A mound of rubbish at a major waste site buried several homes in the capital, the government says."
-    },
-    {
-      "title": "Maradona's 'Hand of God' ball sells for £2.5m",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cqxvj8j7gy8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 24, 2026",
-      "description": "The football with which Diego Maradona scored his famous 'hand of God' goal in the 1986 World Cup quarter-final victory over England is sold at auction."
-    },
-    {
-      "title": "Trump says Canada wants 'benefits' of being US state after trade talks collapse",
-      "url": "https://www.bbc.co.uk/news/articles/cx272np7vgyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 23, 2026",
-      "description": "Canada's PM said he was \"reluctantly\" announcing retaliatory tariffs and accused the US of starting a trade war."
     },
     {
       "title": "Four arrested over boxing champion's murder in South Africa",
@@ -3291,16 +3279,22 @@
       "description": "One of the suspects is due in court on Monday to be charged with murder and attempted murder."
     },
     {
-      "title": "Shein aims for almost $27bn valuation in stock market debut",
-      "url": "https://www.bbc.co.uk/news/articles/cdeweewjdxno?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Maradona's 'Hand of God' ball sells for £2.5m",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cqxvj8j7gy8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 24, 2026",
-      "description": "The fast-fashion giant's shares are due to start trading in Hong Kong on 1 September."
+      "description": "The football with which Diego Maradona scored his famous 'hand of God' goal in the 1986 World Cup quarter-final victory over England is sold at auction."
     },
     {
-      "title": "France links sharp rise in drownings to heatwaves",
-      "url": "https://www.bbc.co.uk/news/articles/cqlxlp4lx9yo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Ex-cricket captains urge 'proper medical care' for Imran Khan",
+      "url": "https://www.bbc.co.uk/news/articles/cx2z889l0dxo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 24, 2026",
+      "description": "The former skippers say it is \"basic decency\" for Pakistan to comply with a court-ordered medical assessment."
+    },
+    {
+      "title": "Trump says Canada wants 'benefits' of being US state after trade talks collapse",
+      "url": "https://www.bbc.co.uk/news/articles/cx272np7vgyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 23, 2026",
-      "description": "A government minister says people have been taking risks by going into the water, with 301 deaths since 19 June."
+      "description": "Canada's PM said he was \"reluctantly\" announcing retaliatory tariffs and accused the US of starting a trade war."
     },
     {
       "title": "Divorce, smartphones and control - BBC sees how Taliban run Afghanistan",
@@ -3561,6 +3555,12 @@
       "description": "The retailer has been around for 50 years but struggled to compete with newer rivals such as Amazon. Can its new owners turn it around?"
     },
     {
+      "title": "Demand soars for free school uniform, says charity",
+      "url": "https://www.bbc.co.uk/news/articles/cvgy4pve4v8o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 24, 2026",
+      "description": "Doreen's repurposes old uniforms and gives them to families in Hull and East Yorkshire for free."
+    },
+    {
       "title": "Kids food scheme set to grow after 'crazy' support",
       "url": "https://www.bbc.co.uk/news/articles/cgr7v78zqp5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 24, 2026",
@@ -3583,12 +3583,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cewrv4wqvw2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 22, 2026",
       "description": "The schemes are in place to help people who are struggling with the cost of living."
-    },
-    {
-      "title": "Millennials have found it hard to buy homes – but things may be turning a corner",
-      "url": "https://www.bbc.co.uk/news/articles/cgewlld498xo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 21, 2026",
-      "description": "Twenty-somethings are much less likely to own a home than previous generations. But data suggests things may be improving."
     },
     {
       "title": "Why the UK is dithering over what to do about e-scooters",
@@ -3621,6 +3615,12 @@
       "description": "Coffees at some city centre outlets now cost £5. It's a story of tariffs, the climate, Gen Z cultural tastes, and savvy coffee farmers playing the market, writes Faisal Islam"
     },
     {
+      "title": "Coin hidden in 1971 earns finder free pint of beer",
+      "url": "https://www.bbc.co.uk/news/videos/cx2zg9xzkzyo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 24, 2026",
+      "description": "The card, discovered by Ellie Mead in Bicester, promised \"one pint best beer if penny returned\"."
+    },
+    {
       "title": "Business Daily",
       "url": "https://www.bbc.co.uk/sounds/play/w3ct8gg7?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 23, 2026",
@@ -3645,10 +3645,22 @@
       "description": "The mochi ice cream company co-founder shares her top tips, job highs and lows, and what a perfect Sunday looks like."
     },
     {
-      "title": "'I used food banks while my ex owed thousands in child maintenance'",
-      "url": "https://www.bbc.co.uk/news/videos/c5yvdeen2z2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 17, 2026",
-      "description": "Parents have told BBC Panorama the agency tasked with helping to secure financial support for children after separation or divorce is driving them to breaking point."
+      "title": "Houses set on fire as fresh violence erupts in India’s Manipur",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/24/houses-set-on-fire-as-fresh-violence-erupts-in-indias-manipur?traffic_source=rss",
+      "date": "August 24, 2026",
+      "description": "Several houses were set ablaze in India’s Manipur state, followed by gunfire between two groups."
+    },
+    {
+      "title": "Algeria’s schools put Shakespeare before Molière in break from France",
+      "url": "https://www.aljazeera.com/features/2026/8/24/algerias-schools-put-shakespeare-before-molire-in-break-from-france?traffic_source=rss",
+      "date": "August 24, 2026",
+      "description": "Algerian primary schools will begin teaching English before French for the first time, signalling a drift from France."
+    },
+    {
+      "title": "Rain and flooding from Typhoon Narra hits China and Vietnam",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/24/rain-and-flooding-from-typhoon-narra-hits-china-and-vietnam?traffic_source=rss",
+      "date": "August 24, 2026",
+      "description": "Rain and flooding from Typhoon Narra hits China and Vietnam"
     },
     {
       "title": "Saudi Arabia’s MBS visits Macron in France: What to expect",
@@ -3751,18 +3763,6 @@
       "url": "https://www.aljazeera.com/news/2026/8/24/e1-settlement-why-netanyahu-israels-right-might-not-mind-global-outrage?traffic_source=rss",
       "date": "August 24, 2026",
       "description": "The settlement threatens Palestinian statehood. But it could help Israel's PM, other far-right leaders before elections."
-    },
-    {
-      "title": "Kazakhstan’s newly formed pro-government party wins parliamentary election",
-      "url": "https://www.aljazeera.com/news/2026/8/24/kazakhstans-newly-formed-pro-government-party-wins-parliamentary-election?traffic_source=rss",
-      "date": "August 24, 2026",
-      "description": "The victory of Adilet, founded earlier this year, is likely to consolidate the power of President Kassym-Jomart Tokayev."
-    },
-    {
-      "title": "Trabzonspor president reacts to Salah disallowed hat-trick goal",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/24/trabzonspor-president-reacts-to-salah-disallowed-hat-trick-goal?traffic_source=rss",
-      "date": "August 24, 2026",
-      "description": "Trabzonspor’s president reacted in disbelief after Mohamed Salah had a goal disallowed in his first start for the club."
     }
   ]
 }
