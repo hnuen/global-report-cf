@@ -841,14 +841,14 @@ archive: {
     generalLicenses: [
       // All dates, titles, and URLs verified directly against OFAC's live Venezuela page on June 25, 2026.
       // GL 58/59 are unconfirmed (not on the live active page at fetch time, but URLs look genuine) — left as-is pending a direct PDF check.
-{ number: "GL 2A", title: "Venezuela General License 2A", date: "August 25, 2017", url: "https://ofac.treasury.gov/media/34121/download?inline", addedDate: "August 24, 2026" },
-{ number: "GL 15C", title: "Venezuela General License 15C", date: "August 5, 2019", url: "https://ofac.treasury.gov/media/33126/download?inline", addedDate: "August 24, 2026" },
-{ number: "GL 18A", title: "Venezuela General License 18A", date: "March 22, 2019", url: "https://ofac.treasury.gov/media/34126/download?inline", addedDate: "August 24, 2026" },
-{ number: "GL 21", title: "Venezuela General License 21", date: "August 5, 2019", url: "https://ofac.treasury.gov/media/46421/download?inline", addedDate: "August 24, 2026" },
-{ number: "GL 23", title: "Venezuela General License 23", date: "August 5, 2019", url: "https://ofac.treasury.gov/media/34116/download?inline", addedDate: "August 24, 2026" },
-{ number: "GL 25", title: "Venezuela General License 25", date: "August 5, 2019", url: "https://ofac.treasury.gov/media/31761/download?inline", addedDate: "August 24, 2026" },
-{ number: "GL 27", title: "Venezuela General License 27", date: "August 5, 2019", url: "https://ofac.treasury.gov/media/34111/download?inline", addedDate: "August 24, 2026" },
-{ number: "GL 30B", title: "Venezuela General License 30B", date: "February 2, 2021", url: "https://ofac.treasury.gov/media/934996/download?inline", addedDate: "August 24, 2026" },
+{ number: "GL 2A", title: "Authorizing Certain New Debt, New Equity, and Securities Transactions Involving PDV Holding, Inc. and CITGO Holding, Inc. ( a)", date: "August 25, 2017", url: "https://ofac.treasury.gov/media/34121/download?inline", addedDate: "August 24, 2026" },
+{ number: "GL 15C", title: "Authorizing Transactions Involving Certain Banks for Certain Entities ( a)", date: "August 5, 2019", url: "https://ofac.treasury.gov/media/33126/download?inline", addedDate: "August 24, 2026" },
+{ number: "GL 18A", title: "Authorizing Certain Transactions Involving Integraci6n Administradora de Fondos de Ahorro Previsional, S.A", date: "March 22, 2019", url: "https://ofac.treasury.gov/media/34126/download?inline", addedDate: "August 24, 2026" },
+{ number: "GL 21", title: "Entries in Certain Accounts for Normal Service Charges and Payments and Transfers to Blocked Accounts in U.S. Financial Institutions Authorized", date: "August 5, 2019", url: "https://ofac.treasury.gov/media/46421/download?inline", addedDate: "August 24, 2026" },
+{ number: "GL 23", title: "Third-country Diplomatic and Consular Funds Transfers Authorized", date: "August 5, 2019", url: "https://ofac.treasury.gov/media/34116/download?inline", addedDate: "August 24, 2026" },
+{ number: "GL 25", title: "Exportation of Certain Services, Software, Hardware, and Technology Incident to the Exchange of Communications over the Internet Authorized", date: "August 5, 2019", url: "https://ofac.treasury.gov/media/31761/download?inline", addedDate: "August 24, 2026" },
+{ number: "GL 27", title: "Certain Transactions Related to Patents, Trademarks, and Copyrights Authorized ( a)", date: "August 5, 2019", url: "https://ofac.treasury.gov/media/34111/download?inline", addedDate: "August 24, 2026" },
+{ number: "GL 30B", title: "Authorizing Certain Transactions Necessary to Port and Airport Operations", date: "February 2, 2021", url: "https://ofac.treasury.gov/media/934996/download?inline", addedDate: "August 24, 2026" },
 { number: "GL 61", title: "Venezuela General License 61", date: "June 25, 2026", url: "https://ofac.treasury.gov/media/936736/download?inline", addedDate: "August 21, 2026" },
 { number: "GL 62", title: "Venezuela General License 62", date: "August 21, 2026", url: "https://ofac.treasury.gov/media/936741/download?inline", addedDate: "August 21, 2026" },
 { number: "GL 5Y", title: "Authorizing Certain Transactions Related to the Petróleos de Venezuela, S.A. 2020 8.5 Percent Bond on or After September 17, 2026", date: "June 18, 2026", url: "https://ofac.treasury.gov/media/936651/download?inline", addedDate: "August 3, 2026" },
