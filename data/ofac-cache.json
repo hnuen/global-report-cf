@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T19:08:11.507Z",
+  "updatedAt": "2026-08-24T21:08:16.720Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260824",
@@ -2523,11 +2523,12 @@
       "generalLicenses": [
         {
           "number": "2A",
-          "title": "Venezuela General License 2A",
+          "title": "Authorizing Certain New Debt, New Equity, and Securities Transactions Involving PDV Holding, Inc. and CITGO Holding, Inc. ( a)",
           "date": "August 25, 2017",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34121/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "3I",
@@ -2543,15 +2544,17 @@
           "date": "April 17, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31741/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "5Y",
-          "title": "Venezuela General License 5Y",
+          "title": "Authorizing Certain Transactions Related to the Petróleos de Venezuela, S.A. 2020 8.5 Percent Bond on or After September 17, 2026",
           "date": "June 18, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936651/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "7C",
@@ -2575,135 +2578,152 @@
           "date": "January 28, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34131/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "15C",
-          "title": "Venezuela General License 15C",
+          "title": "Authorizing Transactions Involving Certain Banks for Certain Entities ( a)",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/33126/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "16C",
-          "title": "Venezuela General License 16C",
+          "title": "Authorizing Maintenance of U.S. Person Accounts and Noncommercial, Personal Remittances Involving Certain Banks",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/33121/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "18A",
-          "title": "Venezuela General License 18A",
+          "title": "Authorizing Certain Transactions Involving Integraci6n Administradora de Fondos de Ahorro Previsional, S.A",
           "date": "March 22, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34126/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "21",
-          "title": "Venezuela General License 21",
+          "title": "Entries in Certain Accounts for Normal Service Charges and Payments and Transfers to Blocked Accounts in U.S. Financial Institutions Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/46421/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "22",
-          "title": "Venezuela General License 22",
+          "title": "Venezuela's Mission to the United Nations",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/30601/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "23",
-          "title": "Venezuela General License 23",
+          "title": "Third-country Diplomatic and Consular Funds Transfers Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34116/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "24A",
-          "title": "Venezuela General License 24A",
+          "title": "Certain Transactions Involving the Government of Venezuela Related to Telecommunications and Mail Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935731/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "25",
-          "title": "Venezuela General License 25",
+          "title": "Exportation of Certain Services, Software, Hardware, and Technology Incident to the Exchange of Communications over the Internet Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31761/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "26",
-          "title": "Venezuela General License 26",
+          "title": "Emergency and Certain Other Medical Services Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31766/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "27",
-          "title": "Venezuela General License 27",
+          "title": "Certain Transactions Related to Patents, Trademarks, and Copyrights Authorized ( a)",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34111/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "29",
-          "title": "Venezuela General License 29",
+          "title": "Certain Transactions Involving the Government of Venezuela in Support of Certain Nongovernmental Organizations' Activities Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31771/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "30B",
-          "title": "Venezuela General License 30B",
+          "title": "Authorizing Certain Transactions Necessary to Port and Airport Operations",
           "date": "February 2, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934996/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "31B",
-          "title": "Venezuela General License 31B",
+          "title": "Certain Transactions Involving the IV Venezuelan National Assembly and Certain Other Persons",
           "date": "January 4, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/930241/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "32",
-          "title": "Venezuela General License 32",
+          "title": "Authorizing Certain Transactions Related to Personal Maintenance of Individuals Who Are U.S. Persons Residing in Venezuela",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34101/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "33",
-          "title": "Venezuela General License 33",
+          "title": "Authorizing Overflight Payments, Emergency Landings, and Air Ambulance Services",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34096/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "34A",
-          "title": "Venezuela General License 34A",
+          "title": "Authorizing Transactions Involving Certain Government of Venezuela Persons",
           "date": "September 9, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/25966/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "35",
@@ -2715,43 +2735,48 @@
         },
         {
           "number": "42",
-          "title": "Venezuela General License 42",
+          "title": "Authorizing Certain Transactions Related to the Negotiation of Certain Settlement Agreements with the IV Venezuelan National Assembly and Certain Other Persons",
           "date": "May 1, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/931696/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "45B",
-          "title": "Venezuela General License 45B",
+          "title": "Authorizing Certain Repatriation Transactions Involving Consorcio Venezolano de Industrias Aeronáuticas y Servicios Aéreos, S.A",
           "date": "November 16, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/932686/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "46C",
-          "title": "Venezuela General License 46C",
+          "title": "Authorizing Certain Activities Involving Venezuelan- Origin Oil or Petrochemical Products",
           "date": "March 13, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935661/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "47A",
-          "title": "Venezuela General License 47A",
+          "title": "Authorizing the Sale of U.S.-Origin Diluents to Venezuela",
           "date": "February 3, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935666/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "48B",
-          "title": "Venezuela General License 48B",
+          "title": "Authorizing the Supply of Certain Items and Services to Venezuela",
           "date": "March 13, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935671/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "49A",
@@ -3059,12 +3084,6 @@
       "url": "https://www.bbc.co.uk/news/articles/ce9793g34yvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 23, 2026",
       "description": "The government says at no point was there a risk to the UK's energy system during the attack in July."
-    },
-    {
-      "title": "How much could Trump's 'economic D-Day' hurt Iran?",
-      "url": "https://www.bbc.co.uk/news/articles/cre4gdvlj9ro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 20, 2026",
-      "description": "Iran has so far proved adept at finding ways around years of already punishing sanctions on its economy."
     }
   ],
   "ajNews": [
@@ -3097,12 +3116,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/24/video-russia-launches-rocket-into-space-with-military-satellite?traffic_source=rss",
       "date": "August 24, 2026",
       "description": "Russia says it has launched a military satellite into space on the back of a Soyuz-2.1 rocket from Arkhangelsk."
-    },
-    {
-      "title": "‘Barrel bomb mufti’ sentenced to life in Syria",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/24/barrel-bomb-mufti-sentenced-to-life-in-syria?traffic_source=rss",
-      "date": "August 24, 2026",
-      "description": "‘Barrel bomb mufti’ sentenced to life in Syria"
     }
   ],
   "occNews": [
@@ -3376,22 +3389,28 @@
       "description": "The fast-fashion giant's shares are due to start trading in Hong Kong on 1 September."
     },
     {
-      "title": "Pubs and hotels could see business rates reformed after review",
-      "url": "https://www.bbc.co.uk/news/articles/c8xnxy89gv7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 24, 2026",
-      "description": "The review of how rates are calculated in England and Wales could lead to reform of the system."
-    },
-    {
       "title": "'I didn't speak the Queen's English': Why people worry about their accents",
       "url": "https://www.bbc.co.uk/news/articles/c05q318501yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 23, 2026",
       "description": "A survey on attitudes towards accents suggests that so-called \"accent bias\" is still an issue in many workplaces."
     },
     {
+      "title": "Manga-inspired theme park to be built near Paris",
+      "url": "https://www.bbc.co.uk/news/articles/c8r6xy3ryndo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 24, 2026",
+      "description": "The construction of three new parks was given the green light after a €6bn investment from Saudi Arabia."
+    },
+    {
       "title": "Rail companies sued for £5m over oil spill caused by derailment",
       "url": "https://www.bbc.co.uk/news/articles/cwyz37zzp22o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 24, 2026",
       "description": "More than 400,000 litres of fuel spilled in the area causing an \"environmental disaster\"."
+    },
+    {
+      "title": "Pubs and hotels could see business rates reformed after review",
+      "url": "https://www.bbc.co.uk/news/articles/c8xnxy89gv7o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 24, 2026",
+      "description": "The review of how rates are calculated in England and Wales could lead to reform of the system."
     },
     {
       "title": "How to get £2,000 to play computer games at university",
@@ -3646,6 +3665,60 @@
       "description": "The mochi ice cream company co-founder shares her top tips, job highs and lows, and what a perfect Sunday looks like."
     },
     {
+      "title": "Violence flares in Haiti as gang attack kills 30 people",
+      "url": "https://www.aljazeera.com/news/2026/8/24/violence-flares-in-haiti-as-gang-attack-kills-30-people?traffic_source=rss",
+      "date": "August 24, 2026",
+      "description": "Island nation grapples with violence as it seeks to hold first elections in more than a decade."
+    },
+    {
+      "title": "Ex-Liverpool star Fabinho reunited with Mohamed Salah at Trabzonspor",
+      "url": "https://www.aljazeera.com/sports/2026/8/24/ex-liverpool-star-fabinho-reunited-with-mohamed-salah-at-trabzonspor?traffic_source=rss",
+      "date": "August 24, 2026",
+      "description": "Fabinho joined ​Saudi Arabia's Al-Ittihad in 2023, where he won the ​league after his five-year stint at Liverpool."
+    },
+    {
+      "title": "Washington Post ordered to rehire Karen Attiah after Charlie Kirk posts",
+      "url": "https://www.aljazeera.com/news/2026/8/24/washington-post-ordered-to-rehire-columnist-fired-over-charlie-kirk-posts?traffic_source=rss",
+      "date": "August 24, 2026",
+      "description": "Karen Attiah was fired for posts about Charlie Kirk’s assassination that the Post said violated its social media policy."
+    },
+    {
+      "title": "Mexico’s Sheinbaum condemns governor’s return amid US drug charges",
+      "url": "https://www.aljazeera.com/news/2026/8/24/mexicos-president-condemns-governor-brief-return-to-office?traffic_source=rss",
+      "date": "August 24, 2026",
+      "description": "President Sheinbaum criticises Governor Rocha's return amid US drug charges, calling it 'reckless' and 'inappropriate'."
+    },
+    {
+      "title": "Yemen’s Houthis report attack on Saudi oil tanker in Red Sea",
+      "url": "https://www.aljazeera.com/news/2026/8/24/yemens-houthis-report-attack-on-saudi-ship?traffic_source=rss",
+      "date": "August 24, 2026",
+      "description": "Saudi shipping company Bahri confirmed its vessel was struck, all crew members safe."
+    },
+    {
+      "title": "Video: Israel attacks desalination plant and mosque in Gaza",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/24/video-israel-attacks-desalination-plant-and-mosque-in-gaza?traffic_source=rss",
+      "date": "August 24, 2026",
+      "description": "Israel has attacked a critical water desalination plant and a mosque in Gaza as it intensifies attacks on the enclave."
+    },
+    {
+      "title": "Israeli restrictions cause fuel shortage in occupied West Bank",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/24/israeli-restrictions-cause-fuel-shortage-in-occupied-west-bank?traffic_source=rss",
+      "date": "August 24, 2026",
+      "description": "Israeli restrictions are disrupting fuel supplies across the occupied West Bank."
+    },
+    {
+      "title": "Why ‘pogrom’ best describes what’s happening in the occupied West Bank",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/24/why-pogrom-best-describes-whats-happening-in-the-occupied-west-bank?traffic_source=rss",
+      "date": "August 24, 2026",
+      "description": "Israeli settler attacks in the occupied West Bank aren’t just ‘clashes’, they fit the definition of pogroms."
+    },
+    {
+      "title": "Israel threatens attacks in Gaza over children’s kites",
+      "url": "https://www.aljazeera.com/video/2026/8/24/israel-threatens-attacks-in-gaza-over-childrens-kites?traffic_source=rss",
+      "date": "August 24, 2026",
+      "description": "Israel has threatened intensified attacks and forced displacement in Gaza over children’s kites"
+    },
+    {
       "title": "Trump administration seeks to formalise H-1B fee of more than $100,000",
       "url": "https://www.aljazeera.com/economy/2026/8/24/trump-administration-seeks-to-formalise-h-1b-fee-of-more-than-100000?traffic_source=rss",
       "date": "August 24, 2026",
@@ -3710,54 +3783,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/24/are-humanoid-robots-the-future-of-warfare?traffic_source=rss",
       "date": "August 24, 2026",
       "description": "Humanoid robots are breaking world records in sports, and are increasingly being developed and tested for military use."
-    },
-    {
-      "title": "UK to help Ukraine build Storm Shadow long-range missiles: Why it matters",
-      "url": "https://www.aljazeera.com/news/2026/8/24/uk-to-help-ukraine-build-storm-shadow-long-range-missiles-why-it-matters?traffic_source=rss",
-      "date": "August 24, 2026",
-      "description": "The UK's willingness to share classified missile-production knowledge sets a potentially important precedent."
-    },
-    {
-      "title": "Samuel Eto’o urges support for embattled FIFA President Gianni Infantino",
-      "url": "https://www.aljazeera.com/sports/2026/8/24/samuel-etoo-urges-support-for-embattled-fifa-president-gianni-infantino?traffic_source=rss",
-      "date": "August 24, 2026",
-      "description": "Former star striker, now head of Cameroon's FA, backs Infantino despite mounting pressure on him to resign."
-    },
-    {
-      "title": "Why Israeli settler attacks on Palestinians in West Bank are pogroms",
-      "url": "https://www.aljazeera.com/features/2026/8/24/why-israeli-settler-attacks-on-palestinians-in-west-bank-are-pogroms?traffic_source=rss",
-      "date": "August 24, 2026",
-      "description": "Waves of settler attacks, aided by Israel's military, increasingly fit the definition of a pogrom."
-    },
-    {
-      "title": "Houses set on fire as fresh violence erupts in India’s Manipur",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/24/houses-set-on-fire-as-fresh-violence-erupts-in-indias-manipur?traffic_source=rss",
-      "date": "August 24, 2026",
-      "description": "Several houses were set ablaze in India’s Manipur state, followed by gunfire between two groups."
-    },
-    {
-      "title": "Algeria’s schools put Shakespeare before Molière in break from France",
-      "url": "https://www.aljazeera.com/features/2026/8/24/algerias-schools-put-shakespeare-before-molire-in-break-from-france?traffic_source=rss",
-      "date": "August 24, 2026",
-      "description": "Algerian primary schools will begin teaching English before French for the first time, signalling a drift from France."
-    },
-    {
-      "title": "Rain and flooding from Typhoon Narra hits China and Vietnam",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/24/rain-and-flooding-from-typhoon-narra-hits-china-and-vietnam?traffic_source=rss",
-      "date": "August 24, 2026",
-      "description": "Rain and flooding from Typhoon Narra hits China and Vietnam"
-    },
-    {
-      "title": "Saudi Arabia’s MBS visits Macron in France: What to expect",
-      "url": "https://www.aljazeera.com/news/2026/8/24/saudi-arabias-mbs-visits-macron-in-france-what-to-expect?traffic_source=rss",
-      "date": "August 24, 2026",
-      "description": "Saudi crown prince and French president are set to sign several agreements on health, transport and energy."
-    },
-    {
-      "title": "Four arrested over fatal shooting of South African boxer Zolani Tete",
-      "url": "https://www.aljazeera.com/sports/2026/8/24/four-arrested-over-fatal-shooting-of-south-african-boxer-zolani-tete?traffic_source=rss",
-      "date": "August 24, 2026",
-      "description": "Tete, who won world WBF flyweight and WBO bantamweight titles, was killed outside his home in Eastern Cape last week."
     }
   ]
 }
