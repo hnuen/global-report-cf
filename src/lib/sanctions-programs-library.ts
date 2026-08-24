@@ -279,7 +279,7 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
     id: "iran",
     name: "Iran Sanctions",
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions",
-    region: "Iran", category: "country", lastUpdated: "Aug 07, 2026", status: "active",
+    region: "Iran", category: "country", lastUpdated: "Aug 24, 2026", status: "active",
     executiveOrders: [
       // 26 EOs — newest first — all media IDs verified from OFAC page
       { number: "13949", title: "Blocking Property of Certain Persons with Respect to the Conventional Arms Activities of Iran", date: "September 21, 2020", url: "https://ofac.treasury.gov/media/48161/download?inline" },
@@ -325,7 +325,9 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
       // titled entry lives in the russia-hfa block. Fixed GL X's title below
       // from the same kind of generic placeholder to its real text, verified
       // against the GL's own PDF (media/936206) — GL X does belong here.
-                                                { number: "GL Z", title: "Iran General License Z", date: "July 10, 2026", url: "https://ofac.treasury.gov/media/936551/download?inline", addedDate: "July 14, 2026" , expires: "September 12, 2026"},
+                                                                                                { number: "GL AA", title: "Iran General License AA", date: "August 24, 2026", url: "https://ofac.treasury.gov/media/936771/download?inline", expires: "October 23, 2026", addedDate: "August 24, 2026" },
+                                                { number: "GL BB", title: "Iran General License BB", date: "August 24, 2026", url: "https://ofac.treasury.gov/media/936776/download?inline", expires: "September 8, 2026", addedDate: "August 24, 2026" },
+{ number: "GL Z", title: "Iran General License Z", date: "July 10, 2026", url: "https://ofac.treasury.gov/media/936551/download?inline", addedDate: "July 14, 2026" , expires: "September 12, 2026"},
 { number: "GL L", title: "Iran General License L", date: "October 8, 2020", url: "https://ofac.treasury.gov/media/48626/download?inline", addedDate: "June 27, 2026" },
       { number: "GL Q", title: "Iran General License Q", date: "May 20, 2025", url: "https://ofac.treasury.gov/media/934291/download?inline", addedDate: "June 27, 2026" },
       // Removed 2026-06-26: GL W, GL V, GL T moved to archive below — each
@@ -839,6 +841,14 @@ archive: {
     generalLicenses: [
       // All dates, titles, and URLs verified directly against OFAC's live Venezuela page on June 25, 2026.
       // GL 58/59 are unconfirmed (not on the live active page at fetch time, but URLs look genuine) — left as-is pending a direct PDF check.
+{ number: "GL 2A", title: "Venezuela General License 2A", date: "August 25, 2017", url: "https://ofac.treasury.gov/media/34121/download?inline", addedDate: "August 24, 2026" },
+{ number: "GL 15C", title: "Venezuela General License 15C", date: "August 5, 2019", url: "https://ofac.treasury.gov/media/33126/download?inline", addedDate: "August 24, 2026" },
+{ number: "GL 18A", title: "Venezuela General License 18A", date: "March 22, 2019", url: "https://ofac.treasury.gov/media/34126/download?inline", addedDate: "August 24, 2026" },
+{ number: "GL 21", title: "Venezuela General License 21", date: "August 5, 2019", url: "https://ofac.treasury.gov/media/46421/download?inline", addedDate: "August 24, 2026" },
+{ number: "GL 23", title: "Venezuela General License 23", date: "August 5, 2019", url: "https://ofac.treasury.gov/media/34116/download?inline", addedDate: "August 24, 2026" },
+{ number: "GL 25", title: "Venezuela General License 25", date: "August 5, 2019", url: "https://ofac.treasury.gov/media/31761/download?inline", addedDate: "August 24, 2026" },
+{ number: "GL 27", title: "Venezuela General License 27", date: "August 5, 2019", url: "https://ofac.treasury.gov/media/34111/download?inline", addedDate: "August 24, 2026" },
+{ number: "GL 30B", title: "Venezuela General License 30B", date: "February 2, 2021", url: "https://ofac.treasury.gov/media/934996/download?inline", addedDate: "August 24, 2026" },
 { number: "GL 61", title: "Venezuela General License 61", date: "June 25, 2026", url: "https://ofac.treasury.gov/media/936736/download?inline", addedDate: "August 21, 2026" },
 { number: "GL 62", title: "Venezuela General License 62", date: "August 21, 2026", url: "https://ofac.treasury.gov/media/936741/download?inline", addedDate: "August 21, 2026" },
 { number: "GL 5Y", title: "Authorizing Certain Transactions Related to the Petróleos de Venezuela, S.A. 2020 8.5 Percent Bond on or After September 17, 2026", date: "June 18, 2026", url: "https://ofac.treasury.gov/media/936651/download?inline", addedDate: "August 3, 2026" },
