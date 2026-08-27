@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-08-27T19:08:08.172Z",
+  "updatedAt": "2026-08-27T21:07:58.307Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260827",
+      "code": "20260827",
+      "title": "Issuance of Amended Venezuela-related General Licenses and Associated Frequently Asked Questions",
+      "date": "August 27, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260826",
       "code": "20260826",
@@ -54,12 +60,6 @@
       "code": "20260805",
       "title": "Counter Terrorism Designations Removals and Update",
       "date": "August 05, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260803",
-      "code": "20260803",
-      "title": "Issuance of Amended Venezuela-related General License and Frequently Asked Question",
-      "date": "August 03, 2026"
     }
   ],
   "civilPenalties": [
@@ -2382,7 +2382,7 @@
     "venezuela-related-sanctions": {
       "name": "Venezuela-Related Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/venezuela-related-sanctions",
-      "lastUpdated": "Aug 21, 2026",
+      "lastUpdated": "Aug 27, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -2749,78 +2749,78 @@
           "dateConfident": true
         },
         {
-          "number": "46C",
-          "title": "Authorizing Certain Activities Involving Venezuelan- Origin Oil or Petrochemical Products",
-          "date": "March 13, 2026",
+          "number": "46D",
+          "title": "Authorizing Certain Activities Involving Venezuelan-Origin Oil or Petrochemical Products",
+          "date": "June 10, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/935661/download?inline",
+          "url": "https://ofac.treasury.gov/media/936806/download?inline",
           "datePdf": true,
           "dateConfident": true
         },
         {
-          "number": "47A",
+          "number": "47B",
           "title": "Authorizing the Sale of U.S.-Origin Diluents to Venezuela",
-          "date": "February 3, 2026",
+          "date": "June 10, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/935666/download?inline",
+          "url": "https://ofac.treasury.gov/media/936811/download?inline",
           "datePdf": true,
           "dateConfident": true
         },
         {
-          "number": "48B",
+          "number": "48C",
           "title": "Authorizing the Supply of Certain Items and Services to Venezuela",
-          "date": "March 13, 2026",
+          "date": "June 10, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/935671/download?inline",
+          "url": "https://ofac.treasury.gov/media/936816/download?inline",
           "datePdf": true,
           "dateConfident": true
         },
         {
           "number": "49A",
           "title": "Venezuela General License 49A",
-          "date": "June 10, 2026",
+          "date": "August 27, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935206/download?inline"
         },
         {
-          "number": "50B",
-          "title": "Venezuela General License 50B",
-          "date": "June 10, 2026",
+          "number": "50C",
+          "title": "Venezuela General License 50C",
+          "date": "August 27, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/935676/download?inline"
+          "url": "https://ofac.treasury.gov/media/936821/download?inline"
         },
         {
-          "number": "51B",
-          "title": "Venezuela General License 51B",
-          "date": "June 10, 2026",
+          "number": "51C",
+          "title": "Venezuela General License 51C",
+          "date": "August 27, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/935681/download?inline"
+          "url": "https://ofac.treasury.gov/media/936826/download?inline"
         },
         {
-          "number": "52A",
-          "title": "Venezuela General License 52A",
-          "date": "June 10, 2026",
+          "number": "52B",
+          "title": "Venezuela General License 52B",
+          "date": "August 27, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/935686/download?inline"
+          "url": "https://ofac.treasury.gov/media/936831/download?inline"
         },
         {
           "number": "53",
           "title": "Venezuela General License 53",
-          "date": "June 10, 2026",
+          "date": "August 27, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935386/download?inline"
         },
         {
-          "number": "54A",
-          "title": "Venezuela General License 54A",
+          "number": "54B",
+          "title": "Venezuela General License 54B",
           "date": "March 24, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/935691/download?inline"
+          "url": "https://ofac.treasury.gov/media/936836/download?inline"
         },
         {
           "number": "55",
           "title": "Venezuela General License 55",
-          "date": "June 10, 2026",
+          "date": "August 27, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935396/download?inline"
         },
@@ -2860,16 +2860,16 @@
           "url": "https://ofac.treasury.gov/media/936396/download?inline"
         },
         {
-          "number": "61",
-          "title": "Venezuela General License 61",
+          "number": "61A",
+          "title": "Venezuela General License 61A",
           "date": "June 25, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/936736/download?inline"
+          "url": "https://ofac.treasury.gov/media/936841/download?inline"
         },
         {
           "number": "62",
           "title": "Venezuela General License 62",
-          "date": "August 21, 2026",
+          "date": "August 27, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936741/download?inline"
         }
@@ -3044,7 +3044,14 @@
       "description": "These new measures aim at further increasing the pressure on Russia and Belarus and supporting EU's goal of achieving a just and lasting peace for Ukraine."
     }
   ],
-  "unNotices": [],
+  "unNotices": [
+    {
+      "title": "Security Council Sanctions Committee Established Pursuant to Resolution 1988 (2011) Amends One Name on Its Sanctions List",
+      "url": "https://press.un.org/en/2026/sc16443.doc.htm",
+      "date": "August 27, 2026",
+      "description": "On 27 August 2026, the Security Council Committee established pursuant to resolution 1988 (2011) enacted the amendments specified with strikethrough and/or underline in the entry below on its 1988 List of individuals and entities subject to the assets freeze, travel ban and arms embargo set out in paragraph 1 of Security Council resolution 2816 (2026), and adopted under Chapter VII of the Charter of the United Nations."
+    }
+  ],
   "bbcNews": [
     {
       "title": "Iran says it is 'fully prepared' to counter widened US economic sanctions",
@@ -3083,39 +3090,15 @@
       "url": "https://www.aljazeera.com/news/2026/8/27/israeli-strike-kills-newlywed-woman-in-south-lebanon-wounds-others?traffic_source=rss",
       "date": "August 27, 2026",
       "description": "Violence has eased since the US-Iran MoU and Israel-Lebanon framework, but Beirut still reports strikes and demolitions."
-    },
-    {
-      "title": "Burnham’s expected UK ban on Israeli settlement goods draws broad support",
-      "url": "https://www.aljazeera.com/news/2026/8/27/do-more-than-just-condemn?traffic_source=rss",
-      "date": "August 27, 2026",
-      "description": "A Labour lawmaker tells Al Jazeera sanctions would uphold British morals and legal obligations."
-    },
-    {
-      "title": "War on Iran: Diplomacy intensifies",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/27/war-on-iran-diplomacy-intensifies?traffic_source=rss",
-      "date": "August 27, 2026",
-      "description": "Trump talks to Al Jazeera, Qatar’s Prime Minister visits Tehran and a temporary route is agreed in the Strait of Hormuz."
-    },
-    {
-      "title": "Qatar PM visits Tehran as Iran faces mounting US economic pressure",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/27/qatar-pm-visits-tehran-as-iran-faces-mounting-us-economic-pressure?traffic_source=rss",
-      "date": "August 27, 2026",
-      "description": "Qatar’s Prime Minister met Iran’s foreign minister in Tehran as the US vowed to intensify economic pressure on Iran."
-    },
-    {
-      "title": "Six months after US strike on Iran school, parents still grieve",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/27/six-months-after-us-strike-on-iran-school-parents-still-grieve?traffic_source=rss",
-      "date": "August 27, 2026",
-      "description": "Six months after a US missile strike on an Iranian school killed at least 170 people, most of them children."
-    },
-    {
-      "title": "Russia warns it could target UK in response to Kyiv firing British missiles",
-      "url": "https://www.aljazeera.com/news/2026/8/27/russia-warns-it-could-target-uk-in-response-to-kyiv-firing-british-missiles?traffic_source=rss",
-      "date": "August 27, 2026",
-      "description": "Foreign ministry warns against 'terrorism' of firing long-range British cruise missiles at targets in Russia."
     }
   ],
   "occNews": [
+    {
+      "title": "OCC Acts to Improve Transparency and Consistency to Bank Enforcement and Supervisory Standards",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-72.html",
+      "date": "August 27, 2026",
+      "description": "OCC Acts to Improve Transparency and Consistency to Bank Enforcement and Supervisory Standards OCC issues two revised policies and procedures manuals; proposes amendments to Violations of Laws and Regulations framework WASHINGTON-The Office of the Comptroller of the Currency (OCC) today announced additional actions to focus supervisory attention on the most significant risks and violations and to provide banks greater clarity, consistency and certainty in how Matters Requiring Attention (MRA) and enforcement actions are issued."
+    },
     {
       "title": "OCC Announces Enforcement Actions for August 2026",
       "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-70.html",
@@ -3233,13 +3216,19 @@
       "title": "What we know about deadly Nepal-Tibet floods",
       "url": "https://www.bbc.co.uk/news/articles/cd948kn02e5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 27, 2026",
-      "description": "Hundreds have died in flooding and landslides on the border of Nepal and Tibet."
+      "description": "Hundreds have died or are missing in Wednesday's flooding and landslides on the border of Nepal and Tibet."
     },
     {
       "title": "Convicted Bosnian Serb war criminal Mladić dies aged 84",
       "url": "https://www.bbc.co.uk/news/articles/c5ywxpryj95o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 27, 2026",
       "description": "He was jailed for life in 2017 for genocide, war crimes and crimes against humanity during the wars in the ex-Yugoslavia in 1992-95."
+    },
+    {
+      "title": "Jury deliberating in trial of Lindsay Clancy, US woman accused of killing her children",
+      "url": "https://www.bbc.co.uk/news/articles/c33keeyyv70o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 27, 2026",
+      "description": "Prosecutors argued Clancy made a calculated decision to murder the children, while the defence argued that she was suffering from postpartum psychosis."
     },
     {
       "title": "Norwegians lay flowers at palace as King Harald's condition worsens",
@@ -3266,22 +3255,22 @@
       "description": "A Jerusalem court said the Jewish attacker was having a psychotic episode when he assaulted the nun, in an incident which caused outrage."
     },
     {
-      "title": "Thieves steal Bronze Age artifacts from Spanish museum in four-minute heist",
+      "title": "Thieves steal Bronze Age artefacts from Spanish museum in four-minute heist",
       "url": "https://www.bbc.co.uk/news/articles/ckgw9gw34yqo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 27, 2026",
       "description": "The Treasure of Villena is a unique trove of almost ten kilos of gold, bowls, bottles and bracelets dating back to the Bronze Age."
+    },
+    {
+      "title": "Trump signs order to rename Lake Ontario as Lake America",
+      "url": "https://www.bbc.co.uk/news/articles/ckgwdn1g58yo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 27, 2026",
+      "description": "Trump's order comes after the trade talks between the US and Canada collapsed late last week."
     },
     {
       "title": "Optimus Prime and Eeyore voice actor Peter Cullen dies",
       "url": "https://www.bbc.co.uk/news/articles/c15844gwe0wo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 27, 2026",
       "description": "Cullen voiced the heroic Optimus Prime in the Transformers TV series and then the Hollywood films."
-    },
-    {
-      "title": "'Silence is complicity' - top footballer hits out over Cameroon femicides",
-      "url": "https://www.bbc.co.uk/news/articles/cgjq49g8wwqo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 27, 2026",
-      "description": "The killing of at least eight women in a week has sparked outrage in Cameroon."
     },
     {
       "title": "Jellyfish force partial shutdown of French nuclear plant",
@@ -3338,6 +3327,12 @@
       "description": "This video has been edited by the BBC with white flashes, due to the distressing content."
     },
     {
+      "title": "Sports Direct founder attacks Burnham's 'populist' High Street plans",
+      "url": "https://www.bbc.co.uk/news/articles/cn74mm2jz8jo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 27, 2026",
+      "description": "In a letter, the entrepreneur accuses the prime minister of \"jumping on 'everyday fixes' or bandwagons\" with his latest cost of living and retail policies."
+    },
+    {
       "title": "Hackers steal data from millions of airport customers",
       "url": "https://www.bbc.co.uk/news/articles/c7v4353rry7o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 27, 2026",
@@ -3362,16 +3357,16 @@
       "description": "Just under one million young people in the UK are not in education, employment or training (Neet)."
     },
     {
-      "title": "From lighting to vintage gems: Five ways to spruce up your rental",
-      "url": "https://www.bbc.co.uk/news/articles/c3w0972z5d8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 26, 2026",
-      "description": "Experts share tips on how to make a flat or house feel like your own without annoying the landlord."
-    },
-    {
       "title": "How Dolly Parton's business savvy helped her succeed far beyond the charts",
       "url": "https://www.bbc.co.uk/news/articles/c0klj72p66lo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 26, 2026",
       "description": "While country music and films brought her fame, her entrepreneurial zeal brought her fortune."
+    },
+    {
+      "title": "From lighting to vintage gems: Five ways to spruce up your rental",
+      "url": "https://www.bbc.co.uk/news/articles/c3w0972z5d8o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 26, 2026",
+      "description": "Experts share tips on how to make a flat or house feel like your own without annoying the landlord."
     },
     {
       "title": "Nvidia revenue doubles on continued AI demand",
@@ -3480,12 +3475,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cnvly73jrrdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 25, 2026",
       "description": "Funding has been granted to Greater Manchester, the West Midlands and West Yorkshire as well as £6bn for London."
-    },
-    {
-      "title": "US-Canada trade war escalates as Trump threatens tariff hike on vehicles",
-      "url": "https://www.bbc.co.uk/news/articles/c93vpd60654o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 25, 2026",
-      "description": "Mark Carney accused Trump of wanting to \"destroy\" Canada's auto industry, and said he would only resume trade talks if the US comes with the \"right attitude\"."
     },
     {
       "title": "Firms scramble for battery power in Spain and Portugal",
@@ -3650,6 +3639,96 @@
       "description": "European governments and businesses are taking a tougher line on trade with China"
     },
     {
+      "title": "US Postal Service says mail-in ballot restrictions now in effect",
+      "url": "https://www.aljazeera.com/news/2026/8/27/us-postal-service-says-mail-in-ballot-restrictions-now-in-effect?traffic_source=rss",
+      "date": "August 27, 2026",
+      "description": "The US Supreme Court ruled in favor of changes backed by President Donald Trump, but new challenges have been filed."
+    },
+    {
+      "title": "‘Everything is covered in ash’: Indonesia wildfires leave people in crisis",
+      "url": "https://www.aljazeera.com/news/2026/8/27/everything-is-covered-in-ash-indonesia-wildfires-leave-people-in-crisis?traffic_source=rss",
+      "date": "August 27, 2026",
+      "description": "Fires severely impacting people's health in West Kalimantan, with pregnant women and children particularly vulnerable."
+    },
+    {
+      "title": "Belugas and dolphins rescued from Canada’s Marineland arrive in Spain",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/27/belugas-and-dolphins-rescued-from-canadas-marineland-arrive-in-spain?traffic_source=rss",
+      "date": "August 27, 2026",
+      "description": "Two belugas and four dolphins from Canada’s Marineland were relocated to an aquarium in Spain."
+    },
+    {
+      "title": "Al Jazeera reporter witnesses wildfire smoke toll on kids inside Indonesia",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/27/08-27-26-jess-wt-kalimantan-fires-reported?traffic_source=rss",
+      "date": "August 27, 2026",
+      "description": "Al Jazeera’s Jessica Washington reports from an Indonesian clinic treating children struggling to breathe amid wildfires"
+    },
+    {
+      "title": "Trump executive order bans some foreign equipment in US energy grid",
+      "url": "https://www.aljazeera.com/news/2026/8/27/trump-executive-order-bans-some-foreign-equipment-in-us-energy-grid?traffic_source=rss",
+      "date": "August 27, 2026",
+      "description": "Order declares a national emergency over an 'unusual and extraordinary foreign threat' to the grid."
+    },
+    {
+      "title": "Zambia opposition leader questioned over ‘treason’ amid election fallout",
+      "url": "https://www.aljazeera.com/news/2026/8/27/zambia-opposition-leader-questioned-over-treason-amid-election-fallout?traffic_source=rss",
+      "date": "August 27, 2026",
+      "description": "Zambia's entire judiciary closed on Monday on the last valid day to file a court challenge against Hichilema's victory."
+    },
+    {
+      "title": "Video: Israeli strike kills newlywed woman in south Lebanon",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/27/video-israeli-strike-kills-newlywed-woman-in-south-lebanon?traffic_source=rss",
+      "date": "August 27, 2026",
+      "description": "A Lebanese woman has been killed, and several other people injured by Israeli strikes on Nabatieh, southern Lebanon."
+    },
+    {
+      "title": "US President Trump signs order renaming Lake Ontario to ‘Lake America’",
+      "url": "https://www.aljazeera.com/news/2026/8/27/us-president-trump-signs-order-renaming-lake-ontario-to-lake?traffic_source=rss",
+      "date": "August 27, 2026",
+      "description": "The rebrand comes as the US and Canada engage in a cross-border trade war after Trump increased tariffs last week."
+    },
+    {
+      "title": "Trade war between US and Canada could cost 90,000 jobs",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/27/trade-war-between-us-and-canada-could-cost-90000-jobs?traffic_source=rss",
+      "date": "August 27, 2026",
+      "description": "Trump’s new 50% tariffs could put nearly 90,000 Canadian jobs at risk."
+    },
+    {
+      "title": "Nigeria’s football federation chief resigns amid corruption allegations",
+      "url": "https://www.aljazeera.com/sports/2026/8/27/nigerias-football-federation-chief-resigns-amid-corruption-allegations?traffic_source=rss",
+      "date": "August 27, 2026",
+      "description": "President Bola Tinubu's office says he has ordered 'comprehensive reform' of the country's football administration."
+    },
+    {
+      "title": "How a glacial collapse caused Nepal’s catastrophic floods",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/27/how-a-glacial-collapse-caused-nepals-catastrophic-floods?traffic_source=rss",
+      "date": "August 27, 2026",
+      "description": "Scientists believe a glacier and rock collapse near the Nepal-China border triggered a massive flood."
+    },
+    {
+      "title": "People in Bosnia react to the death of Ratko Mladic, ‘butcher of Bosnia’",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/27/people-in-bosnia-react-to-the-death-of-ratko-mladic-butcher-of?traffic_source=rss",
+      "date": "August 27, 2026",
+      "description": "‘Even his own family should not be mourning him.’"
+    },
+    {
+      "title": "Why are kidnappings recurrent in Nigeria?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/8/27/why-are-kidnappings-recurrent-in-nigeria?traffic_source=rss",
+      "date": "August 27, 2026",
+      "description": "Growing anger in Nigeria after another mass abduction."
+    },
+    {
+      "title": "Parents who lost children to social media harms question Meta settlement",
+      "url": "https://www.aljazeera.com/economy/2026/8/27/parents-who-lost-children-to-social-media-harms-question-meta?traffic_source=rss",
+      "date": "August 27, 2026",
+      "description": "US parents say they were ‘robbed’ of seeing evidence of Meta’s awareness of the harm caused by its products."
+    },
+    {
+      "title": "Abbas gives Pakistan edge with four wickets against England in second Test",
+      "url": "https://www.aljazeera.com/sports/2026/8/27/abbas-gives-pakistan-edge-with-four-wickets-against-england-in-second-test?traffic_source=rss",
+      "date": "August 27, 2026",
+      "description": "England battled back from 80-4 at lunch to 248-9 by the end of the rain-shortened first day at Lord's."
+    },
+    {
       "title": "Three killed in strikes on Gaza as Israel renews threats over kite-flying",
       "url": "https://www.aljazeera.com/news/2026/8/27/three-killed-in-strikes-on-gaza-as-israel-renews-threats-over-kite-flying?traffic_source=rss",
       "date": "August 27, 2026",
@@ -3684,66 +3763,6 @@
       "url": "https://www.aljazeera.com/sports/liveblog/2026/8/27/live-barcelona-vs-athletic-club-la-liga?traffic_source=rss",
       "date": "August 27, 2026",
       "description": "Live coverage and text updates from our commentary stream as Yamal and Raphinha look to lead Barca to consecutive wins."
-    },
-    {
-      "title": "Ratko Mladic, ‘Butcher of Bosnia’, dies aged 84",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/27/ratko-mladic-butcher-of-bosnia-dies-aged-84?traffic_source=rss",
-      "date": "August 27, 2026",
-      "description": "Ratko Mladic, the Bosnian Serb general known as the ‘Butcher of Bosnia’, has died."
-    },
-    {
-      "title": "UEFA asks US court for FIFA documents for criminal case against Infantino",
-      "url": "https://www.aljazeera.com/sports/2026/8/27/uefa-asks-us-court-for-fifa-documents-for-criminal-case-against-infantino?traffic_source=rss",
-      "date": "August 27, 2026",
-      "description": "UEFA considers ‌criminal complaint ​against Infantino over failed World Cup sell-off plans but suspends boycott threat."
-    },
-    {
-      "title": "Tottenham sign Man City’s Egypt forward Omar Marmoush on season-long loan",
-      "url": "https://www.aljazeera.com/sports/2026/8/27/tottenham-sign-man-citys-egypt-forward-omar-marmoush-on-season-long-loan?traffic_source=rss",
-      "date": "August 27, 2026",
-      "description": "Deal includes an obligation to make the move permanent next year, reportedly for a ⁠guaranteed $68m."
-    },
-    {
-      "title": "Meta’s $18bn settlement: How social platforms will change for child users",
-      "url": "https://www.aljazeera.com/features/2026/8/27/metas-18bn-settlement-how-social-platforms-will-change-for-child-users?traffic_source=rss",
-      "date": "August 27, 2026",
-      "description": "From night curfew to two-hour limit, Instagram and Facebook will introduce new features for children in the US."
-    },
-    {
-      "title": "UEFA Champions League draw: 2026-27 league phase fixtures – as it happened",
-      "url": "https://www.aljazeera.com/sports/liveblog/2026/8/27/champions-league-draw-live-2026-27-league-phase-fixtures-schedule?traffic_source=rss",
-      "date": "August 27, 2026",
-      "description": "All our updates as teams across Europe discovered their opponents at the 2026-27 UEFA Champions League draw in Monaco."
-    },
-    {
-      "title": "Israeli settlers targeting Palestinian factories to force workers off land",
-      "url": "https://www.aljazeera.com/economy/2026/8/27/israeli-settlers-targeting-palestinian-factories-to-force-workers-off-land?traffic_source=rss",
-      "date": "August 27, 2026",
-      "description": "Settler violence threatens to collapse the fragile Palestinian economy."
-    },
-    {
-      "title": "World Cup 2034 hosts Saudi Arabia back Infantino amid FIFA crisis",
-      "url": "https://www.aljazeera.com/sports/2026/8/27/world-cup-2034-hosts-saudi-arabia-back-infantino-amid-fifa-crisis?traffic_source=rss",
-      "date": "August 27, 2026",
-      "description": "Saudi football federation says it supports Infantino's ​'efforts' as he garners support to remain in power as president."
-    },
-    {
-      "title": "Convicted Bosnian Serb war criminal Ratko Mladic dies",
-      "url": "https://www.aljazeera.com/news/2026/8/27/bosnian-serb-general-ratko-mladic-has-died-un-official-says?traffic_source=rss",
-      "date": "August 27, 2026",
-      "description": "The 'butcher of Bosnia' died age 84 in a UN prison hospital in the Netherlands, the UN tribunal in The Hague confirmed."
-    },
-    {
-      "title": "Sri Lanka salvage draw in second Test after battling Dinusha denies India",
-      "url": "https://www.aljazeera.com/sports/2026/8/27/sri-lanka-salvage-draw-in-second-test-after-battling-dinusha-denies-india?traffic_source=rss",
-      "date": "August 27, 2026",
-      "description": "Dinusha's 133 not out, his second century of the match and third in four innings, helps the hosts avoid defeat."
-    },
-    {
-      "title": "Thieves raid bronze age collection in ‘super-fast’ Spain museum heist",
-      "url": "https://www.aljazeera.com/news/2026/8/27/thieves-raid-bronze-age-collection-in-super-fast-spain-museum-heist?traffic_source=rss",
-      "date": "August 27, 2026",
-      "description": "It is not immediately known how many of the 50-plus mainly gold objects from the Treasure of Villena were taken."
     }
   ]
 }
