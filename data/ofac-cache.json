@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T19:08:12.221Z",
+  "updatedAt": "2026-08-28T21:08:03.652Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260828",
@@ -3044,16 +3044,22 @@
       "description": "These new measures aim at further increasing the pressure on Russia and Belarus and supporting EU's goal of achieving a just and lasting peace for Ukraine."
     }
   ],
-  "unNotices": [
+  "unNotices": [],
+  "bbcNews": [
     {
-      "title": "Security Council Sanctions Committee Established Pursuant to Resolution 1988 (2011) Amends One Name on Its Sanctions List",
-      "url": "https://press.un.org/en/2026/sc16443.doc.htm",
-      "date": "August 27, 2026",
-      "description": "On 27 August 2026, the Security Council Committee established pursuant to resolution 1988 (2011) enacted the amendments specified with strikethrough and/or underline in the entry below on its 1988 List of individuals and entities subject to the assets freeze, travel ban and arms embargo set out in paragraph 1 of Security Council resolution 2816 (2026), and adopted under Chapter VII of the Charter of the United Nations."
+      "title": "Russia ramps up rhetoric but wants to avoid war with Nato, Western officials say",
+      "url": "https://www.bbc.co.uk/news/articles/cz0zm2j7ld1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 28, 2026",
+      "description": "But they say Moscow will likely continue its \"hybrid activity\" against Nato members, short of direct military action."
     }
   ],
-  "bbcNews": [],
   "ajNews": [
+    {
+      "title": "Ukraine’s Zelenskyy plans to hit Russia with ‘1,000 drones’ a day",
+      "url": "https://www.aljazeera.com/news/2026/8/28/ukraines-zelenskyy-plans-to-hit-russia-with-1000-drones-a-day?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "Ongoing Russian attacks have killed several people and wounded dozens across Ukraine."
+    },
     {
       "title": "Deadly Russian strikes hit civilian targets in Ukraine",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/28/deadly-russian-strikes-hit-civilian-targets-in-ukraine?traffic_source=rss",
@@ -3071,12 +3077,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/28/6-months-of-war-on-iran?traffic_source=rss",
       "date": "August 28, 2026",
       "description": "The US-Israeli war on Iran has reached the six-month mark, with no sign of slowing down."
-    },
-    {
-      "title": "Narrow escape for woman as Russian drone hits residential area",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/28/narrow-escape-for-woman-as-russian-drone-hits-residential-area?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "Video shows the moment a Russian attack hit a parking lot near Ukraine’s capital."
     }
   ],
   "occNews": [
@@ -3194,12 +3194,6 @@
   ],
   "regionsNews": [
     {
-      "title": "Watch: Why rescuers fear new barrier lake could cause another Nepal-Tibet flood",
-      "url": "https://www.bbc.co.uk/news/videos/cj06j16vpr5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 28, 2026",
-      "description": "Laura Bicker explains how a lake which formed after the recent landslide near the Nepal-Tibet border is raising fears of a second flood."
-    },
-    {
       "title": "Norway mourns King Harald as Haakon VIII ascends throne",
       "url": "https://www.bbc.co.uk/news/articles/cm2rzxrdr71o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 28, 2026",
@@ -3212,16 +3206,28 @@
       "description": "Anne Lindboe, the mayor of Norway's capital, had planned to marry her fiance on Friday."
     },
     {
-      "title": "Violence breaks out in Ceuta as migrant crisis continues",
-      "url": "https://www.bbc.co.uk/news/articles/cy9zj11gwzxo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Right-wing commentator Milo Yiannopoulos detained by ICE",
+      "url": "https://www.bbc.co.uk/news/articles/cj06jgq62v9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 28, 2026",
-      "description": "A group of migrants is accused of throwing stones at a military vehicle, while some locals set fire to their camps on the beach."
+      "description": "The British citizen, who lives and works in the US, has supported Trump and ICE agents in the past."
     },
     {
       "title": "Thieves steal 600-diamond necklace from Vienna museum in broad daylight",
       "url": "https://www.bbc.co.uk/news/articles/cqxvwpe0plro?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 28, 2026",
       "description": "Police are hunting two suspects they believe bought a ticket for the exhibition to get at the jewellery."
+    },
+    {
+      "title": "Greenland says findings on genocide allegation not final",
+      "url": "https://www.bbc.co.uk/news/articles/czxzv29p12lo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 28, 2026",
+      "description": "Experts examined the use of forced contraception on the Inuit community during the 1960s and 70s."
+    },
+    {
+      "title": "Violence breaks out in Ceuta as migrant crisis continues",
+      "url": "https://www.bbc.co.uk/news/articles/cy9zj11gwzxo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 28, 2026",
+      "description": "A group of migrants is accused of throwing stones at a military vehicle, while some locals set fire to their camps on the beach."
     },
     {
       "title": "World's youngest reigning traditional monarch dies aged 34",
@@ -3248,16 +3254,16 @@
       "description": "This year alone there have been more than 65 shootings in the Belgian capital, as drug crime soars."
     },
     {
-      "title": "Tate brothers blast US jail conditions as they seek bail in UK extradition fight",
-      "url": "https://www.bbc.co.uk/news/articles/c9v9nndjznvo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 28, 2026",
-      "description": "Andrew and Tristan Tate's legal team argued in a Miami court that the two were not a flight risk."
-    },
-    {
       "title": "Dutch court sentences man to life over Rwanda genocide",
       "url": "https://www.bbc.co.uk/news/articles/ce8x96rw79ro?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 28, 2026",
       "description": "The court in The Hague convicted the 66-year-old of war crimes and the crime of genocide."
+    },
+    {
+      "title": "Tate brothers blast US jail conditions as they seek bail in UK extradition fight",
+      "url": "https://www.bbc.co.uk/news/articles/c9v9nndjznvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 28, 2026",
+      "description": "Andrew and Tristan Tate's legal team argued in a Miami court that the two were not a flight risk."
     },
     {
       "title": "Trump administration illegally retaliated against Anthropic, judge rules",
@@ -3342,6 +3348,12 @@
       "url": "https://www.bbc.co.uk/news/videos/c3wjq1188g9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 28, 2026",
       "description": "The BBC's Lucy Williamson reports on settler attacks on Palestinians, which have been observed over the last week alone."
+    },
+    {
+      "title": "Watch: Why rescuers fear new barrier lake could cause another Nepal-Tibet flood",
+      "url": "https://www.bbc.co.uk/news/videos/cj06j16vpr5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 28, 2026",
+      "description": "Laura Bicker explains how a lake which formed after the recent landslide near the Nepal-Tibet border is raising fears of a second flood."
     },
     {
       "title": "Watch: Stargazers around the world glimpse 'Blood Moon' lunar eclipse",
@@ -3543,7 +3555,7 @@
     },
     {
       "title": "The Interview",
-      "url": "https://www.bbc.co.uk/sounds/play/w3ct98kl?at_medium=RSS&amp;at_campaign=rss",
+      "url": "https://www.bbc.co.uk/sounds/play/live:bbc_world_service?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 27, 2026",
       "description": "Kristina Wilfore on how a ‘Male Grievance Industry’ is defrauding men on social media"
     },
@@ -3564,6 +3576,36 @@
       "url": "https://www.bbc.co.uk/sounds/play/w3ct8glr?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 26, 2026",
       "description": "Evergrande was at the heart of China’s property boom, and its dramatic collapse"
+    },
+    {
+      "title": "Timeline: Life of Ratko Mladic, general turned ‘Butcher of Bosnia’",
+      "url": "https://www.aljazeera.com/news/2026/8/28/timeline-life-of-ratko-mladic-general-turned-butcher-of-bosnia?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "Mladic died in prison in The Hague after failed requests by Serbian authorities to secure early release to home country."
+    },
+    {
+      "title": "Colombia’s new president faces backlash over ‘inhumane’ deportation policy",
+      "url": "https://www.aljazeera.com/news/2026/8/28/colombias-new-president-faces-backlash-over-inhumane-deportation-policy?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "Less than a month into his presidency, Abelardo de la Espriella has announced effort to expel undocumented immigrants."
+    },
+    {
+      "title": "President Donald Trump signs order creating US Space Academy",
+      "url": "https://www.aljazeera.com/news/2026/8/28/president-donald-trump-signs-order-creating-us-space-academy?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "The president said graduates of the new academy would serve the US Space Force, NASA and the civilian flight industry."
+    },
+    {
+      "title": "Police fire teargas at Kenyan traders protesting higher taxes on imports",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/28/police-fire-teargas-at-kenyan-traders-protesting-higher-taxes-on-imports?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "Kenyan police fired teargas at traders in the capital Nairobi on Friday, during a protest against higher taxes."
+    },
+    {
+      "title": "Yemen’s divided education system leaves students’ futures in limbo",
+      "url": "https://www.aljazeera.com/features/2026/8/28/yemens-divided-education-system-leaves-students-futures-in-limbo?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "Students in Houthi areas fear lost opportunities after government decision not to authenticate some certificates."
     },
     {
       "title": "Israeli strike kills three Palestinians in West Bank’s Jenin",
@@ -3638,7 +3680,7 @@
       "description": "Israeli settlement expansion in the occupied West Bank isn’t just driven by ideology, but also by economic incentives."
     },
     {
-      "title": "Crystal Palace vs Manchester City: LIVE Premier League",
+      "title": "LIVE: Crystal Palace vs Manchester City – Premier League",
       "url": "https://www.aljazeera.com/sports/liveblog/2026/8/28/live-crystal-palace-vs-man-city-premier-league?traffic_source=rss",
       "date": "August 28, 2026",
       "description": "Live coverage and text updates from our commentary stream as Erling Haaland will look to fire City to consecutive wins."
@@ -3660,36 +3702,6 @@
       "url": "https://www.aljazeera.com/news/2026/8/28/oneness-or-hindu-supremacy-rss-chief-bhagwats-secretive-new-york-hosts?traffic_source=rss",
       "date": "August 28, 2026",
       "description": "RSS chief Mohan Bhagwat is scheduled to speak at an event in New York on Saturday."
-    },
-    {
-      "title": "UK has billions in contracts with firms tied to illegal Israeli settlements",
-      "url": "https://www.aljazeera.com/news/2026/8/28/uk-has-billions-in-contracts-with-firms-tied-to-illegal-israeli-settlements?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "Al Jazeera investigation reveals UK public money flowing to companies linked to Israeli settlements in occupied land."
-    },
-    {
-      "title": "Europa League draw: Bournemouth, Sunderland get glamour ties with AC Milan",
-      "url": "https://www.aljazeera.com/sports/2026/8/28/europa-league-draw-bournemouth-sunderland-get-glamour-ties-with-ac-milan?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "Teams playing in UEFA's Europa League and Conference League find out their opponents as league phase draws made."
-    },
-    {
-      "title": "Qatar pledges support for efforts to end Libya’s political division",
-      "url": "https://www.aljazeera.com/news/2026/8/28/qatar-pledges-support-for-efforts-to-end-libyas-political-division?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "Qatari minister meets army chief amid efforts to bridge longstanding political divisions in Libya."
-    },
-    {
-      "title": "Dutch court hands life sentence to Rwandan man for genocide role",
-      "url": "https://www.aljazeera.com/news/2026/8/28/dutch-court-hands-life-sentence-to-rwandan-man-for-genocide-role?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "Eugene N. was convicted for his part in a massacre at a stadium in which 3,000 Tutsis were slaughtered."
-    },
-    {
-      "title": "US ICE agency to spend $16.7m on electric shock gloves",
-      "url": "https://www.aljazeera.com/news/2026/8/28/us-ice-agency-to-spend-16-7m-on-electric-shock-gloves?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "The much-criticised immigration agency has agreed a contract for 6,000 pairs of gloves that will deliver painful shocks."
     }
   ]
 }
