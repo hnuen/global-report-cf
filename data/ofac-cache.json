@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-08-28T13:08:04.538Z",
+  "updatedAt": "2026-08-28T15:08:27.067Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260828",
+      "code": "20260828",
+      "title": "Iran-related and Counter Terrorism Designations",
+      "date": "August 28, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260827",
       "code": "20260827",
@@ -54,12 +60,6 @@
       "code": "20260806",
       "title": "Cuba-related Designations; Issuance of Cuba-related Frequently Asked Question",
       "date": "August 06, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260805",
-      "code": "20260805",
-      "title": "Counter Terrorism Designations Removals and Update",
-      "date": "August 05, 2026"
     }
   ],
   "civilPenalties": [
@@ -416,7 +416,7 @@
     "counter-terrorism-sanctions": {
       "name": "Counter Terrorism Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-terrorism-sanctions",
-      "lastUpdated": "Aug 26, 2026",
+      "lastUpdated": "Aug 28, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -669,12 +669,11 @@
         },
         {
           "number": "36",
-          "title": "Authorizing the Wind Down of Transactions Involving Autistici Inventati",
+          "title": "Counter Terrorism General License 36",
           "date": "August 26, 2026",
           "expires": "September 25, 2026",
           "url": "https://ofac.treasury.gov/media/936791/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "134C",
@@ -1003,27 +1002,31 @@
     "iran-sanctions": {
       "name": "Iran Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions",
-      "lastUpdated": "Aug 24, 2026",
+      "lastUpdated": "Aug 28, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
-          "citation": "91 FR 35141-26",
-          "description": "Publication of Iran-Related Web General Licenses U and V 91 FR 24722-26 - Iranian Transactions and Sanctions Regulations Web General Licenses 90 FR 47230-25 - Publication of Iranian Transactions and Sanctions Regulations Web General License R 90 FR 47229-25 - Publication of an Iran-Related Determina",
+          "citation": "91 FR 55265-26",
+          "description": "Publication of a Determination Issued Pursuant to Executive Order 13902. 91 FR 55265-26 - Publication of Iran-Related Web General Licenses AA and BB 91 FR 54957-26 - Amended Iranian Transactions and Sanctions Regulations 91 FR 35141-26 - Publication of Iran-Related Web General Licenses U and V 91 FR",
           "year": "2026",
-          "glNumbers": [
-            "90"
-          ]
+          "glNumbers": []
         },
         {
-          "citation": "90 FR 43559-25",
-          "description": "Publication of Iranian Transactions and Sanctions Regulations Web General License Q 89 FR 91262-24 - Publication of an Iran-Related Determination 89 FR 91261-24 - Publication of Covid-Related Web General License Related to Iranian Transactions and Sanctions Regulations and Global Terrorism Sanctions",
+          "citation": "90 FR 47230-25",
+          "description": "Publication of Iranian Transactions and Sanctions Regulations Web General License R 90 FR 47229-25 - Publication of an Iran-Related Determination 90 FR 43559-25 - Publication of Iranian Transactions and Sanctions Regulations Web General License Q 89 FR 91262-24 - Publication of an Iran-Related Deter",
           "year": "2025",
           "glNumbers": []
         },
         {
-          "citation": "89 FR 43512-24",
-          "description": "Publication of the List of Services, Software, and Hardware Incident to Communications 89 FR 43311-24 - Final Rule Amending the Iranian Transactions and Sanctions Regulations 88 FR 46688-23 - Publication of Iranian Transactions and Sanctions Regulations Web General License P 88 FR 45816-23 - Publica",
+          "citation": "89 FR 91261-24",
+          "description": "Publication of Covid-Related Web General License Related to Iranian Transactions and Sanctions Regulations and Global Terrorism Sanctions Regulations 89 FR 43512-24 - Publication of the List of Services, Software, and Hardware Incident to Communications 89 FR 43311-24 - Final Rule Amending the Irani",
           "year": "2024",
+          "glNumbers": []
+        },
+        {
+          "citation": "88 FR 46688-23",
+          "description": "Publication of Iranian Transactions and Sanctions Regulations Web General License P 88 FR 45816-23 - Publication of Covid-Related Web General Licenses Related to Syria Sanctions Regulations, Iranian Transactions and Sanctions Regulations, Global Terrorism Sanctions Regulations, and Venezuela Sanctio",
+          "year": "2023",
           "glNumbers": []
         },
         {
@@ -1123,12 +1126,6 @@
           "description": "Administrative Collection of Civil Penalties 70 FR 15583-05 - Broker-dealer amendment to ITR 69 FR 75468-04 - General License for Publishing Activities 69 FR 46090-04 - Implementation of Executive Order 13315 with Respect to Iraq; General License No. 1 68 FR 11741-03 - Authorization of Certain Human",
           "year": "2005",
           "glNumbers": []
-        },
-        {
-          "citation": "68 FR 9744-03",
-          "description": "Correction to 68 FR 8077 - Payments to Persons Who Hold Certain Categories of Judgments Against Cuba or Iran 68 FR 8077-03 - Payments to Persons Who Hold Certain Categories of Judgments Against Cuba or Iran 67 FR 75897-02 - Payments to Persons Who Hold Certain Categories of Judgments Against Cuba or",
-          "year": "2003",
-          "glNumbers": []
         }
       ],
       "generalLicenses": [
@@ -1138,8 +1135,7 @@
           "date": "August 24, 2026",
           "expires": "October 23, 2026",
           "url": "https://ofac.treasury.gov/media/936771/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "BB",
@@ -1147,8 +1143,7 @@
           "date": "August 24, 2026",
           "expires": "September 8, 2026",
           "url": "https://ofac.treasury.gov/media/936776/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "E",
@@ -1171,7 +1166,9 @@
           "title": "Iran General License G",
           "date": "August 24, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/7966/download?inline"
+          "url": "https://ofac.treasury.gov/media/7966/download?inline",
+          "datePdf": true,
+          "dateConfident": false
         },
         {
           "number": "J-1",
@@ -1179,7 +1176,8 @@
           "date": "July 29, 2016",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7971/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "L",
@@ -1187,15 +1185,17 @@
           "date": "October 8, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48626/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "8A",
-          "title": "Iran General License 8A",
+          "title": "Authorizing Certain Humanitarian Trade Transactions Involving the Central Bank of Iran or the National Iranian Oil Company",
           "date": "February 27, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48841/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "Q",
@@ -2520,12 +2520,11 @@
       "generalLicenses": [
         {
           "number": "2A",
-          "title": "Authorizing Certain New Debt, New Equity, and Securities Transactions Involving PDV Holding, Inc. and CITGO Holding, Inc. ( a)",
+          "title": "Venezuela General License 2A",
           "date": "August 25, 2017",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34121/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "3I",
@@ -2541,17 +2540,15 @@
           "date": "April 17, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31741/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "5Y",
-          "title": "Authorizing Certain Transactions Related to the Petróleos de Venezuela, S.A. 2020 8.5 Percent Bond on or After September 17, 2026",
+          "title": "Venezuela General License 5Y",
           "date": "June 18, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936651/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "7C",
@@ -2575,152 +2572,135 @@
           "date": "January 28, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34131/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "15C",
-          "title": "Authorizing Transactions Involving Certain Banks for Certain Entities ( a)",
+          "title": "Venezuela General License 15C",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/33126/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "16C",
-          "title": "Authorizing Maintenance of U.S. Person Accounts and Noncommercial, Personal Remittances Involving Certain Banks",
+          "title": "Venezuela General License 16C",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/33121/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "18A",
-          "title": "Authorizing Certain Transactions Involving Integraci6n Administradora de Fondos de Ahorro Previsional, S.A",
+          "title": "Venezuela General License 18A",
           "date": "March 22, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34126/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "21",
-          "title": "Entries in Certain Accounts for Normal Service Charges and Payments and Transfers to Blocked Accounts in U.S. Financial Institutions Authorized",
+          "title": "Venezuela General License 21",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/46421/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "22",
-          "title": "Venezuela's Mission to the United Nations",
+          "title": "Venezuela General License 22",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/30601/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "23",
-          "title": "Third-country Diplomatic and Consular Funds Transfers Authorized",
+          "title": "Venezuela General License 23",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34116/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "24A",
-          "title": "Certain Transactions Involving the Government of Venezuela Related to Telecommunications and Mail Authorized",
+          "title": "Venezuela General License 24A",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935731/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "25",
-          "title": "Exportation of Certain Services, Software, Hardware, and Technology Incident to the Exchange of Communications over the Internet Authorized",
+          "title": "Venezuela General License 25",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31761/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "26",
-          "title": "Emergency and Certain Other Medical Services Authorized",
+          "title": "Venezuela General License 26",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31766/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "27",
-          "title": "Certain Transactions Related to Patents, Trademarks, and Copyrights Authorized ( a)",
+          "title": "Venezuela General License 27",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34111/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "29",
-          "title": "Certain Transactions Involving the Government of Venezuela in Support of Certain Nongovernmental Organizations' Activities Authorized",
+          "title": "Venezuela General License 29",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31771/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "30B",
-          "title": "Authorizing Certain Transactions Necessary to Port and Airport Operations",
+          "title": "Venezuela General License 30B",
           "date": "February 2, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934996/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "31B",
-          "title": "Certain Transactions Involving the IV Venezuelan National Assembly and Certain Other Persons",
+          "title": "Venezuela General License 31B",
           "date": "January 4, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/930241/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "32",
-          "title": "Authorizing Certain Transactions Related to Personal Maintenance of Individuals Who Are U.S. Persons Residing in Venezuela",
+          "title": "Venezuela General License 32",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34101/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "33",
-          "title": "Authorizing Overflight Payments, Emergency Landings, and Air Ambulance Services",
+          "title": "Venezuela General License 33",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34096/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "34A",
-          "title": "Authorizing Transactions Involving Certain Government of Venezuela Persons",
+          "title": "Venezuela General License 34A",
           "date": "September 9, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/25966/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "35",
@@ -2732,48 +2712,43 @@
         },
         {
           "number": "42",
-          "title": "Authorizing Certain Transactions Related to the Negotiation of Certain Settlement Agreements with the IV Venezuelan National Assembly and Certain Other Persons",
+          "title": "Venezuela General License 42",
           "date": "May 1, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/931696/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "45B",
-          "title": "Authorizing Certain Repatriation Transactions Involving Consorcio Venezolano de Industrias Aeronáuticas y Servicios Aéreos, S.A",
+          "title": "Venezuela General License 45B",
           "date": "November 16, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/932686/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "46D",
-          "title": "Authorizing Certain Activities Involving Venezuelan-Origin Oil or Petrochemical Products",
+          "title": "Venezuela General License 46D",
           "date": "June 10, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936806/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "47B",
-          "title": "Authorizing the Sale of U.S.-Origin Diluents to Venezuela",
+          "title": "Venezuela General License 47B",
           "date": "June 10, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936811/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "48C",
-          "title": "Authorizing the Supply of Certain Items and Services to Venezuela",
+          "title": "Venezuela General License 48C",
           "date": "June 10, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936816/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "49A",
@@ -3055,6 +3030,12 @@
   "bbcNews": [],
   "ajNews": [
     {
+      "title": "Narrow escape for woman as Russian drone hits residential area",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/28/narrow-escape-for-woman-as-russian-drone-hits-residential-area?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "Video shows the moment a Russian attack hit a parking lot near Ukraine’s capital."
+    },
+    {
       "title": "After six months of war, what have US, Iran gained and lost?",
       "url": "https://www.aljazeera.com/news/2026/8/28/after-six-months-of-war-what-have-us-iran-gained-and-lost?traffic_source=rss",
       "date": "August 28, 2026",
@@ -3065,18 +3046,6 @@
       "url": "https://www.aljazeera.com/news/2026/8/28/us-israel-war-on-iran-six-months-down-the-line-in-numbers?traffic_source=rss",
       "date": "August 28, 2026",
       "description": "Al Jazeera tracks six months of the Iran war, from the dead and displaced to the shock delivered to the global economy."
-    },
-    {
-      "title": "Six months on, Iran is still standing, but survival is becoming more costly",
-      "url": "https://www.aljazeera.com/opinions/2026/8/28/six-months-on-iran-is-still-standing-but-survival-is-becoming-more-costly?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "Economic pressure is testing Iran where it is weakest and sharpening divisions within its leadership."
-    },
-    {
-      "title": "Six months on, Trump’s Iran strategy is starting to pay off",
-      "url": "https://www.aljazeera.com/opinions/2026/8/28/six-months-on-trumps-iran-strategy-is-starting-to-pay-off?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "The US has not won the war, but sustained pressure is weakening Tehran and giving Washington a stronger hand."
     }
   ],
   "occNews": [
@@ -3200,16 +3169,10 @@
       "description": "Laura Bicker explains how a lake which formed after the recent landslide near the Nepal-Tibet border is raising fears of a second flood."
     },
     {
-      "title": "Who is Norway's new King Haakon VIII?",
-      "url": "https://www.bbc.co.uk/news/articles/cp841114eg6o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Oslo mayor calls off wedding ceremony after death of Norway's king",
+      "url": "https://www.bbc.co.uk/news/articles/c5ydgk3v60eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 28, 2026",
-      "description": "Haakon becomes the king at a turbulent time for Norway's monarchy."
-    },
-    {
-      "title": "'Not far enough' - US parents and teens on Meta's new limits for young users",
-      "url": "https://www.bbc.co.uk/news/articles/cx2zn9zj361o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 28, 2026",
-      "description": "As part of an $18bn settlement in a child-safety lawsuit, Meta announced new restrictions on its apps. We asked families what they thought."
+      "description": "Anne Lindboe, the mayor of Norway's capital, had planned to marry her fiance on Friday."
     },
     {
       "title": "Trump signs order to rename Lake Ontario as Lake America",
@@ -3230,6 +3193,12 @@
       "description": "The court in The Hague convicted the 66-year-old of war crimes and the crime of genocide."
     },
     {
+      "title": "Shootings surge as drug gangs torment Brussels",
+      "url": "https://www.bbc.co.uk/news/articles/c9w4r7e7z4ko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 28, 2026",
+      "description": "This year alone there have been more than 65 shootings in the Belgian capital, as drug crime soars."
+    },
+    {
       "title": "Tate brothers blast US jail conditions as they seek bail in UK extradition fight",
       "url": "https://www.bbc.co.uk/news/articles/c9v9nndjznvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 28, 2026",
@@ -3242,22 +3211,16 @@
       "description": "The AI startup has been at loggerheads with the Pentagon over the use of AI by the US military."
     },
     {
-      "title": "Jury deliberating in trial of Lindsay Clancy, US woman accused of killing her children",
-      "url": "https://www.bbc.co.uk/news/articles/c33keeyyv70o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Optimus Prime and Eeyore voice actor Peter Cullen dies",
+      "url": "https://www.bbc.co.uk/news/articles/c15844gwe0wo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 27, 2026",
-      "description": "Prosecutors argued Clancy made a calculated decision to murder the children, while the defence argued that she was suffering from postpartum psychosis."
+      "description": "Cullen voiced the heroic Optimus Prime in the Transformers TV series and then the Hollywood films."
     },
     {
       "title": "Two killed in 'domestic violence incident' at school near Berlin",
       "url": "https://www.bbc.co.uk/news/articles/cgqdy8g2zlgo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 27, 2026",
       "description": "Police have arrested a 19-year-old male suspect after an incident in which two people were killed near the German capital."
-    },
-    {
-      "title": "Optimus Prime and Eeyore voice actor Peter Cullen dies",
-      "url": "https://www.bbc.co.uk/news/articles/c15844gwe0wo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 27, 2026",
-      "description": "Cullen voiced the heroic Optimus Prime in the Transformers TV series and then the Hollywood films."
     },
     {
       "title": "Man who attacked nun on CCTV in Jerusalem acquitted on grounds of mental health",
@@ -3278,6 +3241,18 @@
       "description": "The late king, who reigned for 35 years, broke with tradition by marrying a commoner and was widely loved by Norwegians."
     },
     {
+      "title": "Norway's King Haakon begins reign after turbulent year",
+      "url": "https://www.bbc.co.uk/news/articles/cp841114eg6o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 28, 2026",
+      "description": "Haakon becomes the king at a turbulent time for Norway's monarchy."
+    },
+    {
+      "title": "'Not far enough' - US parents and teens on Meta's new limits for young users",
+      "url": "https://www.bbc.co.uk/news/articles/cx2zn9zj361o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 28, 2026",
+      "description": "As part of an $18bn settlement in a child-safety lawsuit, Meta announced new restrictions on its apps. We asked families what they thought."
+    },
+    {
       "title": "This Indian pilgrim was about to enter Tibet for her dream tour - then her WhatsApp messages stopped",
       "url": "https://www.bbc.co.uk/news/articles/c70d41g40njo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 28, 2026",
@@ -3296,10 +3271,10 @@
       "description": "Hundreds have died or are missing in Wednesday's flooding and landslides on the border of Nepal and Tibet."
     },
     {
-      "title": "Selena Gomez pushes back against 'frivolous' fraud claims",
-      "url": "https://www.bbc.co.uk/news/articles/cz0z4k28804o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "BBC tracks one week of Israeli settler violence in occupied West Bank",
+      "url": "https://www.bbc.co.uk/news/videos/c3wjq1188g9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 28, 2026",
-      "description": "Selena Gomez's lawyer says the fraud case is \"absurd\" - but it is far from unusual for celebrity family business relationships to go wrong."
+      "description": "The BBC's Lucy Williamson reports on settler attacks on Palestinians, which have been observed over the last week alone."
     },
     {
       "title": "Watch: Stargazers around the world glimpse 'Blood Moon' lunar eclipse",
@@ -3326,10 +3301,10 @@
       "description": "Norway's King Harald V has died aged 89 after being treated for a bacterial infection in his blood."
     },
     {
-      "title": "Military veterans told they owe thousands of pounds over clerical error",
-      "url": "https://www.bbc.co.uk/news/articles/c5y4512mlxdo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "I was spending £700 a month: How I beat my late-night shopping addiction",
+      "url": "https://www.bbc.co.uk/news/articles/czxqk1gwxn7o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 27, 2026",
-      "description": "Hundreds of former UK service personnel have had their pensions cut after being overpaid."
+      "description": "Younger generations are thought to be more susceptible to impulse spending. The BBC looks at ways to get it under control."
     },
     {
       "title": "Trump administration illegally retaliated against Anthropic, judge rules",
@@ -3338,16 +3313,16 @@
       "description": "The AI startup has been at loggerheads with the Pentagon over the use of AI by the US military."
     },
     {
-      "title": "'Cowboy builders' targeted in new government clampdown",
-      "url": "https://www.bbc.co.uk/news/articles/cx2z44982e4o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Selena Gomez pushes back against 'frivolous' fraud claims",
+      "url": "https://www.bbc.co.uk/news/articles/cz0z4k28804o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 28, 2026",
-      "description": "A database of trusted tradespeople and a system to protect customers' money is being launched by the government next month."
+      "description": "Selena Gomez's lawyer says the fraud case is \"absurd\" - but it is far from unusual for celebrity family business relationships to go wrong."
     },
     {
-      "title": "Sports Direct founder attacks Burnham's 'populist' High Street plans",
-      "url": "https://www.bbc.co.uk/news/articles/cn74mm2jz8jo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 28, 2026",
-      "description": "In a letter, the entrepreneur accuses the prime minister of \"jumping on 'everyday fixes' or bandwagons\" with his latest cost of living and retail policies."
+      "title": "Military veterans told they owe thousands of pounds over clerical error",
+      "url": "https://www.bbc.co.uk/news/articles/c5y4512mlxdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 27, 2026",
+      "description": "Hundreds of former UK service personnel have had their pensions cut after being overpaid."
     },
     {
       "title": "'Not far enough' - US parents and teens on Meta's new limits for young users",
@@ -3362,22 +3337,22 @@
       "description": "A string of failures has sapped confidence that robots will take over production at pizza restaurants."
     },
     {
-      "title": "I was spending £700 a month: How I beat my late-night shopping addiction",
-      "url": "https://www.bbc.co.uk/news/articles/czxqk1gwxn7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 27, 2026",
-      "description": "Younger generations are thought to be more susceptible to impulse spending. The BBC looks at ways to get it under control."
+      "title": "Gatwick Airport facing water outage after main burst",
+      "url": "https://www.bbc.co.uk/news/articles/cjdvl93e10jo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 28, 2026",
+      "description": "SES Water says it is working to repair a burst main which is affecting supply to the airport."
     },
     {
-      "title": "Selena Gomez pushes back against 'frivolous' fraud claims",
-      "url": "https://www.bbc.co.uk/news/articles/cz0z4k28804o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "'Cowboy builders' targeted in new government clampdown",
+      "url": "https://www.bbc.co.uk/news/articles/cx2z44982e4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 28, 2026",
-      "description": "Selena Gomez's lawyer says the fraud case is \"absurd\" - but it is far from unusual for celebrity family business relationships to go wrong."
+      "description": "A database of trusted tradespeople and a system to protect customers' money is being launched by the government next month."
     },
     {
-      "title": "Colman's Mustard put up for sale ahead of merger",
-      "url": "https://www.bbc.co.uk/news/articles/cd08g4pjkymo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Sports Direct founder attacks Burnham's 'populist' High Street plans",
+      "url": "https://www.bbc.co.uk/news/articles/cn74mm2jz8jo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 28, 2026",
-      "description": "The sale comes before a proposed merger between parent company Unilever and McCormick."
+      "description": "In a letter, the entrepreneur accuses the prime minister of \"jumping on 'everyday fixes' or bandwagons\" with his latest cost of living and retail policies."
     },
     {
       "title": "Matt Lucas and Hugh Bonneville among actors calling for law on AI voice cloning",
@@ -3386,106 +3361,16 @@
       "description": "The performers are asking the government to give every person in the UK a legal right to own their voice."
     },
     {
+      "title": "Colman's Mustard put up for sale ahead of merger",
+      "url": "https://www.bbc.co.uk/news/articles/cd08g4pjkymo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 28, 2026",
+      "description": "The sale comes before a proposed merger between parent company Unilever and McCormick."
+    },
+    {
       "title": "I used to live in a quiet area - now a data centre overlooks my garden",
       "url": "https://www.bbc.co.uk/news/articles/c39e7lpyekno?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 28, 2026",
       "description": "With the number of UK data centres set to rise, some communities are concerned about their impact."
-    },
-    {
-      "title": "Time is running out for cyber security, warn top tech firms",
-      "url": "https://www.bbc.co.uk/news/articles/cwyz11475l1o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 27, 2026",
-      "description": "The letter warns cyber-attacks which use AI will become more sophisticated in a matter of months."
-    },
-    {
-      "title": "Hackers steal data from millions of airport customers",
-      "url": "https://www.bbc.co.uk/news/articles/c7v4353rry7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 27, 2026",
-      "description": "About 8.7 million customers had their data accessed and a ransom was demanded."
-    },
-    {
-      "title": "What the Meta settlement means for the UK, and other questions after the deal",
-      "url": "https://www.bbc.co.uk/news/articles/cg49q4xydq0o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 27, 2026",
-      "description": "Other social media firms are yet to respond, while the debate from campaigners is far from over."
-    },
-    {
-      "title": "Plug-in solar panels are coming to a shop near you - here's what to know",
-      "url": "https://www.bbc.co.uk/news/articles/c4g3y6398nwo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 27, 2026",
-      "description": "The UK government claimes panels could help homes \"significantly cut\" energy bills."
-    },
-    {
-      "title": "One in eight young people still out of work or education ahead of major review",
-      "url": "https://www.bbc.co.uk/news/articles/c93epy2yev0o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 27, 2026",
-      "description": "Just under one million young people in the UK are not in education, employment or training (Neet)."
-    },
-    {
-      "title": "From lighting to vintage gems: Five ways to spruce up your rental",
-      "url": "https://www.bbc.co.uk/news/articles/c3w0972z5d8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 26, 2026",
-      "description": "Experts share tips on how to make a flat or house feel like your own without annoying the landlord."
-    },
-    {
-      "title": "Nvidia revenue doubles on continued AI demand",
-      "url": "https://www.bbc.co.uk/news/articles/ce871n7lyvlo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 26, 2026",
-      "description": "Chipmaker's $96bn quarter beat forecasts as demand for AI hardware continues to accelerate."
-    },
-    {
-      "title": "Meta's $18bn settlement may hasten reckoning for social media on child safety",
-      "url": "https://www.bbc.co.uk/news/articles/clyq4gxwe7go?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 26, 2026",
-      "description": "Perhaps our days of doomscrolling are numbered, writes the BBC's technology editor Zoe Kleinman."
-    },
-    {
-      "title": "Unexpected chat between OpenAI agents led to Hugging Face hack",
-      "url": "https://www.bbc.co.uk/news/articles/cj9xj89dk40o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 26, 2026",
-      "description": "OpenAI's cyber agents banded together to perform a hack during a security test."
-    },
-    {
-      "title": "Want your job application to stand out? Employers say they look for these skills",
-      "url": "https://www.bbc.co.uk/news/articles/cn9n9n5p9eqo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 27, 2026",
-      "description": "Experts have identified six key skills that will count as much as qualifications in getting and keeping a job in the coming decade."
-    },
-    {
-      "title": "Meta to pay up to $18bn to settle claims its platforms harm children",
-      "url": "https://www.bbc.co.uk/news/articles/cd68q3wynnqo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 26, 2026",
-      "description": "The deal has been reached during a California federal court trial over claims brought by US states."
-    },
-    {
-      "title": "Household energy bills to hit three-year high as Ofgem announces 4% rise from October",
-      "url": "https://www.bbc.co.uk/news/articles/cqjkl1xvgw5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 26, 2026",
-      "description": "A household using a typical amount of gas and electricity will pay £60 a year more, regulator Ofgem says."
-    },
-    {
-      "title": "Back to school: How parents can save on uniform costs",
-      "url": "https://www.bbc.co.uk/news/articles/cedjqx6zdl0o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 25, 2026",
-      "description": "From baby banks to supermarket deals, there are many ways parents can ease the back-to-school burden."
-    },
-    {
-      "title": "Reform proposes £30 tax rebate for HMRC phone delays",
-      "url": "https://www.bbc.co.uk/news/articles/c804rd7leppo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 26, 2026",
-      "description": "People on hold to HMRC for more than 30 minutes would get a tax credit under plans announced by Robert Jenrick."
-    },
-    {
-      "title": "Why Tesla has been caught up in a massive car recall in China",
-      "url": "https://www.bbc.co.uk/news/articles/c9w4jx2rvgro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 26, 2026",
-      "description": "The country's biggest ever car recall affects more than four million vehicles made by Tesla, XPeng, Xiaomi and other firms."
-    },
-    {
-      "title": "Musk's rocket firm SpaceX to build $100bn launch facility",
-      "url": "https://www.bbc.co.uk/news/articles/cq5xel4v642o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 26, 2026",
-      "description": "It will be the firm's biggest site yet and aims to send rockets to space in 2029."
     },
     {
       "title": "How Dolly Parton's business savvy helped her succeed far beyond the charts",
@@ -3516,54 +3401,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cpq3w3v19veo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 20, 2026",
       "description": "The switch to quieter electric equipment is not going as fast as some would like."
-    },
-    {
-      "title": "The critical tech staying safe by going underground",
-      "url": "https://www.bbc.co.uk/news/articles/c20ydrndr0wo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 18, 2026",
-      "description": "The war in Ukraine has spurred people to consider putting vital infrastructure underground."
-    },
-    {
-      "title": "Protein or pickled garlic? What's new in ice cream",
-      "url": "https://www.bbc.co.uk/news/articles/c9826zl0945o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 14, 2026",
-      "description": "There's a constant battle in ice cream to come up with new flavours and to keep costs down."
-    },
-    {
-      "title": "Why Japanese firms are being so slow to use AI",
-      "url": "https://www.bbc.co.uk/news/articles/cwymw4434v7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 12, 2026",
-      "description": "Japanese risk aversion and conservatism blamed for slow AI take-up by the country's business sector."
-    },
-    {
-      "title": "Tokenomics: Why making AI pay is tricky",
-      "url": "https://www.bbc.co.uk/news/articles/c872r52x7jgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 11, 2026",
-      "description": "Buyers of AI services are struggling to control costs and sellers are not sure how much to charge."
-    },
-    {
-      "title": "'I started in my 20s and made £8,000': Why women are often better investors than men",
-      "url": "https://www.bbc.co.uk/news/articles/czdmgmzll1ro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 10, 2026",
-      "description": "Women can make higher returns but only about a quarter of UK women have investments, compared with about 40% of men."
-    },
-    {
-      "title": "'You could smell someone' who worked at Raleigh",
-      "url": "https://www.bbc.co.uk/news/articles/cx2kgwrv6gvo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 10, 2026",
-      "description": "The company was more than just a employer. For years, it was part of the fabric of Nottingham."
-    },
-    {
-      "title": "Why airlines are warning over lithium-ion batteries",
-      "url": "https://www.bbc.co.uk/news/articles/cwyl6yz719jo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 6, 2026",
-      "description": "The airline industry wants passengers to be careful when travelling with lithium ion batteries."
-    },
-    {
-      "title": "Argos is getting a makeover - but can it attract new shoppers?",
-      "url": "https://www.bbc.co.uk/news/articles/c2lqvwewgp2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 6, 2026",
-      "description": "The retailer has been around for 50 years but struggled to compete with newer rivals such as Amazon. Can its new owners turn it around?"
     },
     {
       "title": "SSE Airtricity to increase gas prices by 19% from October",
@@ -3656,6 +3493,48 @@
       "description": "Evergrande was at the heart of China’s property boom, and its dramatic collapse"
     },
     {
+      "title": "Can Trump really rename Lake Ontario, ‘Lake America’?",
+      "url": "https://www.aljazeera.com/news/2026/8/28/can-trump-really-rename-lake-ontario-lake-america?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "Amid tariff war with Canada, Trump has signed an executive order renaming the shared lake."
+    },
+    {
+      "title": "Oneness or Hindu supremacy? RSS chief Bhagwat’s secretive New York hosts",
+      "url": "https://www.aljazeera.com/news/2026/8/28/oneness-or-hindu-supremacy-rss-chief-bhagwats-secretive-new-york-hosts?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "RSS chief Mohan Bhagwat is scheduled to speak at an event in New York on Saturday."
+    },
+    {
+      "title": "UK has billions in contracts with firms tied to illegal Israeli settlements",
+      "url": "https://www.aljazeera.com/news/2026/8/28/uk-has-billions-in-contracts-with-firms-tied-to-illegal-israeli-settlements?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "Al Jazeera investigation reveals UK public money flowing to companies linked to Israeli settlements in occupied land."
+    },
+    {
+      "title": "Europa League draw: Bournemouth, Sunderland get glamour ties with AC Milan",
+      "url": "https://www.aljazeera.com/sports/2026/8/28/europa-league-draw-bournemouth-sunderland-get-glamour-ties-with-ac-milan?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "Teams playing in UEFA's Europa League and Conference League find out their opponents as league phase draws made."
+    },
+    {
+      "title": "Qatar pledges support for efforts to end Libya’s political division",
+      "url": "https://www.aljazeera.com/news/2026/8/28/qatar-pledges-support-for-efforts-to-end-libyas-political-division?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "Qatari minister meets army chief amid efforts to bridge longstanding political divisions in Libya."
+    },
+    {
+      "title": "Dutch court hands life sentence to Rwandan man for genocide role",
+      "url": "https://www.aljazeera.com/news/2026/8/28/dutch-court-hands-life-sentence-to-rwandan-man-for-genocide-role?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "Eugene N. was convicted for his part in a massacre at a stadium in which 3,000 Tutsis were slaughtered."
+    },
+    {
+      "title": "US ICE agency to spend $16.7m on electric shock gloves",
+      "url": "https://www.aljazeera.com/news/2026/8/28/us-ice-agency-to-spend-16-7m-on-electric-shock-gloves?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "The much-criticised immigration agency has agreed a contract for 6,000 pairs of gloves that will deliver painful shocks."
+    },
+    {
       "title": "Nepal-Tibet flood: Families of missing people endure agonising wait",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/28/nepal-tibet-flood-families-of-missing-people-endure-agonising-wait?traffic_source=rss",
       "date": "August 28, 2026",
@@ -3722,10 +3601,10 @@
       "description": "Liverpool struggled to 2-2 draw at Newcastle in first league game of season, while Forest lost to Leeds twice this week."
     },
     {
-      "title": "Nepal and China halt rescue efforts as border barrier lake overflows",
+      "title": "Nepal and China briefly halt rescue efforts as barrier lake overflows",
       "url": "https://www.aljazeera.com/news/2026/8/28/nepal-and-china-halt-rescue-efforts-as-border-barrier-lake-overflows?traffic_source=rss",
       "date": "August 28, 2026",
-      "description": "The death toll from the disaster that struck on Wednesday has already surpassed 470."
+      "description": "More than 580 people dead and more than 2,400 missing after the flash flood disaster that struck on Wednesday."
     },
     {
       "title": "Children take cover behind shopping cart during Israeli drone fire",
@@ -3744,42 +3623,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/28/typical-trump-silly-joke-lake-america-has-canadians-laughing?traffic_source=rss",
       "date": "August 28, 2026",
       "description": "Canadians are reacting to US President Donald Trump’s executive order to rename Lake Ontario as ‘Lake America’."
-    },
-    {
-      "title": "Nearly 470 killed in Nepal floods: What we know about rescue efforts",
-      "url": "https://www.aljazeera.com/news/2026/8/28/nearly-470-killed-in-nepal-floods-what-we-know-about-rescue-efforts?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "The devastating Bhotekoshi flood struck the mountainous Nepal-Tibet border region on Wednesday morning."
-    },
-    {
-      "title": "Dos Santos and Russell set world records in ‘crazy’ Zurich Diamond League",
-      "url": "https://www.aljazeera.com/sports/2026/8/28/dos-santos-and-russell-set-world-records-in-crazy-zurich-diamond-league?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "Dos Santos stormed to victory to set new men's 400m hurdles time, while Russell broke women's 100m hurdles record."
-    },
-    {
-      "title": "US judge blocks Pentagon blacklisting of AI firm Anthropic",
-      "url": "https://www.aljazeera.com/news/2026/8/28/us-judge-blocks-pentagon-blacklisting-of-ai-firm-anthropic?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "Court order rules that Pentagon acted illegally, punishing AI company for criticism of government."
-    },
-    {
-      "title": "Armed with a whistle, Gaza’s lifeguards do what they can to save swimmers",
-      "url": "https://www.aljazeera.com/features/2026/8/28/armed-with-a-whistle-gazas-lifeguards-do-what-they-can-to-save-swimmers?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "Shortages leave Gaza's lifeguards without essential rescue equipment, as Palestinians flock to the beaches."
-    },
-    {
-      "title": "Singapore’s plans to clear forest for homes lead to rare public protests",
-      "url": "https://www.aljazeera.com/news/2026/8/28/singapores-plans-to-clear-forest-for-homes-lead-to-rare-public-protests?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "Bid to rezone forested areas for housing prompts unusual public opposition in Southeast Asian city-state."
-    },
-    {
-      "title": "Death toll from Nepal-Tibet flood surpasses 470 as barrier lake threatens",
-      "url": "https://www.aljazeera.com/news/2026/8/28/death-toll-from-nepal-tibet-flood-passes-470-as-barrier-lake-threatens?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "Over 1,500 people remain missing as rescue paused near the Nepal-China border amid fears of further flooding."
     }
   ]
 }
