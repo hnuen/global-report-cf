@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T15:08:27.067Z",
+  "updatedAt": "2026-08-28T19:08:12.221Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260828",
@@ -2520,11 +2520,12 @@
       "generalLicenses": [
         {
           "number": "2A",
-          "title": "Venezuela General License 2A",
+          "title": "Authorizing Certain New Debt, New Equity, and Securities Transactions Involving PDV Holding, Inc. and CITGO Holding, Inc. ( a)",
           "date": "August 25, 2017",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34121/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "3I",
@@ -2540,15 +2541,17 @@
           "date": "April 17, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31741/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "5Y",
-          "title": "Venezuela General License 5Y",
+          "title": "Authorizing Certain Transactions Related to the Petróleos de Venezuela, S.A. 2020 8.5 Percent Bond on or After September 17, 2026",
           "date": "June 18, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936651/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "7C",
@@ -2572,135 +2575,152 @@
           "date": "January 28, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34131/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "15C",
-          "title": "Venezuela General License 15C",
+          "title": "Authorizing Transactions Involving Certain Banks for Certain Entities ( a)",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/33126/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "16C",
-          "title": "Venezuela General License 16C",
+          "title": "Authorizing Maintenance of U.S. Person Accounts and Noncommercial, Personal Remittances Involving Certain Banks",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/33121/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "18A",
-          "title": "Venezuela General License 18A",
+          "title": "Authorizing Certain Transactions Involving Integraci6n Administradora de Fondos de Ahorro Previsional, S.A",
           "date": "March 22, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34126/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "21",
-          "title": "Venezuela General License 21",
+          "title": "Entries in Certain Accounts for Normal Service Charges and Payments and Transfers to Blocked Accounts in U.S. Financial Institutions Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/46421/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "22",
-          "title": "Venezuela General License 22",
+          "title": "Venezuela's Mission to the United Nations",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/30601/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "23",
-          "title": "Venezuela General License 23",
+          "title": "Third-country Diplomatic and Consular Funds Transfers Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34116/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "24A",
-          "title": "Venezuela General License 24A",
+          "title": "Certain Transactions Involving the Government of Venezuela Related to Telecommunications and Mail Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935731/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "25",
-          "title": "Venezuela General License 25",
+          "title": "Exportation of Certain Services, Software, Hardware, and Technology Incident to the Exchange of Communications over the Internet Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31761/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "26",
-          "title": "Venezuela General License 26",
+          "title": "Emergency and Certain Other Medical Services Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31766/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "27",
-          "title": "Venezuela General License 27",
+          "title": "Certain Transactions Related to Patents, Trademarks, and Copyrights Authorized ( a)",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34111/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "29",
-          "title": "Venezuela General License 29",
+          "title": "Certain Transactions Involving the Government of Venezuela in Support of Certain Nongovernmental Organizations' Activities Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31771/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "30B",
-          "title": "Venezuela General License 30B",
+          "title": "Authorizing Certain Transactions Necessary to Port and Airport Operations",
           "date": "February 2, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934996/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "31B",
-          "title": "Venezuela General License 31B",
+          "title": "Certain Transactions Involving the IV Venezuelan National Assembly and Certain Other Persons",
           "date": "January 4, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/930241/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "32",
-          "title": "Venezuela General License 32",
+          "title": "Authorizing Certain Transactions Related to Personal Maintenance of Individuals Who Are U.S. Persons Residing in Venezuela",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34101/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "33",
-          "title": "Venezuela General License 33",
+          "title": "Authorizing Overflight Payments, Emergency Landings, and Air Ambulance Services",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34096/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "34A",
-          "title": "Venezuela General License 34A",
+          "title": "Authorizing Transactions Involving Certain Government of Venezuela Persons",
           "date": "September 9, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/25966/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "35",
@@ -2712,43 +2732,48 @@
         },
         {
           "number": "42",
-          "title": "Venezuela General License 42",
+          "title": "Authorizing Certain Transactions Related to the Negotiation of Certain Settlement Agreements with the IV Venezuelan National Assembly and Certain Other Persons",
           "date": "May 1, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/931696/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "45B",
-          "title": "Venezuela General License 45B",
+          "title": "Authorizing Certain Repatriation Transactions Involving Consorcio Venezolano de Industrias Aeronáuticas y Servicios Aéreos, S.A",
           "date": "November 16, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/932686/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "46D",
-          "title": "Venezuela General License 46D",
+          "title": "Authorizing Certain Activities Involving Venezuelan-Origin Oil or Petrochemical Products",
           "date": "June 10, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936806/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "47B",
-          "title": "Venezuela General License 47B",
+          "title": "Authorizing the Sale of U.S.-Origin Diluents to Venezuela",
           "date": "June 10, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936811/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "48C",
-          "title": "Venezuela General License 48C",
+          "title": "Authorizing the Supply of Certain Items and Services to Venezuela",
           "date": "June 10, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936816/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "49A",
@@ -3030,22 +3055,28 @@
   "bbcNews": [],
   "ajNews": [
     {
+      "title": "Deadly Russian strikes hit civilian targets in Ukraine",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/28/deadly-russian-strikes-hit-civilian-targets-in-ukraine?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "Russia intensified attacks across Ukraine, killing civilians and damaging homes and warehouses near Kyiv"
+    },
+    {
+      "title": "Ukraine reinforces Donetsk as it seeks to disrupt Russia’s weapons flow",
+      "url": "https://www.aljazeera.com/news/2026/8/28/ukraine-reinforces-donetsk-as-it-seeks-to-disrupt-russias-weapons-flow?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "After repeated disappointments over US Patriots, Kyiv switches to attacking Russia using European weapons."
+    },
+    {
+      "title": "6 months of war on Iran",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/28/6-months-of-war-on-iran?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "The US-Israeli war on Iran has reached the six-month mark, with no sign of slowing down."
+    },
+    {
       "title": "Narrow escape for woman as Russian drone hits residential area",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/28/narrow-escape-for-woman-as-russian-drone-hits-residential-area?traffic_source=rss",
       "date": "August 28, 2026",
       "description": "Video shows the moment a Russian attack hit a parking lot near Ukraine’s capital."
-    },
-    {
-      "title": "After six months of war, what have US, Iran gained and lost?",
-      "url": "https://www.aljazeera.com/news/2026/8/28/after-six-months-of-war-what-have-us-iran-gained-and-lost?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "Many of the US president's goals remain unfulfilled, despite claims of victory."
-    },
-    {
-      "title": "US-Israel war on Iran, six months down the line: In numbers",
-      "url": "https://www.aljazeera.com/news/2026/8/28/us-israel-war-on-iran-six-months-down-the-line-in-numbers?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "Al Jazeera tracks six months of the Iran war, from the dead and displaced to the shock delivered to the global economy."
     }
   ],
   "occNews": [
@@ -3169,16 +3200,28 @@
       "description": "Laura Bicker explains how a lake which formed after the recent landslide near the Nepal-Tibet border is raising fears of a second flood."
     },
     {
+      "title": "Norway mourns King Harald as Haakon VIII ascends throne",
+      "url": "https://www.bbc.co.uk/news/articles/cm2rzxrdr71o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 28, 2026",
+      "description": "Mourners gather outside the palace as royals, politicians and citizens remember a beloved king, whose son has adopted the family motto \"all for norway\"."
+    },
+    {
       "title": "Oslo mayor calls off wedding ceremony after death of Norway's king",
       "url": "https://www.bbc.co.uk/news/articles/c5ydgk3v60eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 28, 2026",
       "description": "Anne Lindboe, the mayor of Norway's capital, had planned to marry her fiance on Friday."
     },
     {
-      "title": "Trump signs order to rename Lake Ontario as Lake America",
-      "url": "https://www.bbc.co.uk/news/articles/ckgwdn1g58yo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Violence breaks out in Ceuta as migrant crisis continues",
+      "url": "https://www.bbc.co.uk/news/articles/cy9zj11gwzxo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 28, 2026",
-      "description": "Canada has rejected the new name of the lake, which straddles both countries, as their row deepens."
+      "description": "A group of migrants is accused of throwing stones at a military vehicle, while some locals set fire to their camps on the beach."
+    },
+    {
+      "title": "Thieves steal 600-diamond necklace from Vienna museum in broad daylight",
+      "url": "https://www.bbc.co.uk/news/articles/cqxvwpe0plro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 28, 2026",
+      "description": "Police are hunting two suspects they believe bought a ticket for the exhibition to get at the jewellery."
     },
     {
       "title": "World's youngest reigning traditional monarch dies aged 34",
@@ -3187,10 +3230,16 @@
       "description": "King Oyo ascended to the throne of Uganda's Tooro kingdom when he was just three years old."
     },
     {
-      "title": "Dutch court sentences man to life over Rwanda genocide",
-      "url": "https://www.bbc.co.uk/news/articles/ce8x96rw79ro?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Trump signs order to rename Lake Ontario as Lake America",
+      "url": "https://www.bbc.co.uk/news/articles/ckgwdn1g58yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 28, 2026",
-      "description": "The court in The Hague convicted the 66-year-old of war crimes and the crime of genocide."
+      "description": "Canada has rejected the new name of the lake, which straddles both countries, as their row deepens."
+    },
+    {
+      "title": "Two-year curfew lifted in Sudan's capital",
+      "url": "https://www.bbc.co.uk/news/articles/c2076gxr0llo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 28, 2026",
+      "description": "The military authorities retook control of the city 18 months ago, but the conflict continues elsewhere."
     },
     {
       "title": "Shootings surge as drug gangs torment Brussels",
@@ -3203,6 +3252,12 @@
       "url": "https://www.bbc.co.uk/news/articles/c9v9nndjznvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 28, 2026",
       "description": "Andrew and Tristan Tate's legal team argued in a Miami court that the two were not a flight risk."
+    },
+    {
+      "title": "Dutch court sentences man to life over Rwanda genocide",
+      "url": "https://www.bbc.co.uk/news/articles/ce8x96rw79ro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 28, 2026",
+      "description": "The court in The Hague convicted the 66-year-old of war crimes and the crime of genocide."
     },
     {
       "title": "Trump administration illegally retaliated against Anthropic, judge rules",
@@ -3223,6 +3278,12 @@
       "description": "Police have arrested a 19-year-old male suspect after an incident in which two people were killed near the German capital."
     },
     {
+      "title": "Fed has 'work to do' if price rises don't ease for Americans, Warsh says",
+      "url": "https://www.bbc.co.uk/news/articles/cy9zjgv9lgdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 28, 2026",
+      "description": "Kevin Warsh remarks suggest interest rates could be increased if policymakers think inflation is running too high."
+    },
+    {
       "title": "Man who attacked nun on CCTV in Jerusalem acquitted on grounds of mental health",
       "url": "https://www.bbc.co.uk/news/articles/cpwl54kddeko?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 27, 2026",
@@ -3235,13 +3296,19 @@
       "description": "Nickolay Mladenov warns that a collapse of last October's ceasefire would be \"a point of no return\" for the region."
     },
     {
+      "title": "Satellite images reveal scale of flood devastation in Nepal villages",
+      "url": "https://www.bbc.co.uk/news/articles/cd68vpjv21do?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 28, 2026",
+      "description": "Before-and-after images show villages, bridges and a key Nepal-Tibet border crossing washed away by devastating floodwaters."
+    },
+    {
       "title": "Norway's King Harald dies aged 89: A beloved monarch buffeted by family crises",
       "url": "https://www.bbc.co.uk/news/articles/clykn5p5172o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 28, 2026",
       "description": "The late king, who reigned for 35 years, broke with tradition by marrying a commoner and was widely loved by Norwegians."
     },
     {
-      "title": "Norway's King Haakon begins reign after turbulent year",
+      "title": "King Haakon begins reign after turbulent year for Norwegian monarchy",
       "url": "https://www.bbc.co.uk/news/articles/cp841114eg6o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 28, 2026",
       "description": "Haakon becomes the king at a turbulent time for Norway's monarchy."
@@ -3268,7 +3335,7 @@
       "title": "What we know about deadly Nepal-Tibet floods",
       "url": "https://www.bbc.co.uk/news/articles/cd948kn02e5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 28, 2026",
-      "description": "Hundreds have died or are missing in Wednesday's flooding and landslides on the border of Nepal and Tibet."
+      "description": "Hundreds have died and thousands are missing after Wednesday's flooding and landslides on the border of Nepal and Tibet."
     },
     {
       "title": "BBC tracks one week of Israeli settler violence in occupied West Bank",
@@ -3307,6 +3374,12 @@
       "description": "Younger generations are thought to be more susceptible to impulse spending. The BBC looks at ways to get it under control."
     },
     {
+      "title": "Fed has 'work to do' if price rises don't ease for Americans, Warsh says",
+      "url": "https://www.bbc.co.uk/news/articles/cy9zjgv9lgdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 28, 2026",
+      "description": "Kevin Warsh remarks suggest interest rates could be increased if policymakers think inflation is running too high."
+    },
+    {
       "title": "Trump administration illegally retaliated against Anthropic, judge rules",
       "url": "https://www.bbc.co.uk/news/articles/cm2q7z5mlrmo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 28, 2026",
@@ -3325,22 +3398,22 @@
       "description": "Hundreds of former UK service personnel have had their pensions cut after being overpaid."
     },
     {
-      "title": "'Not far enough' - US parents and teens on Meta's new limits for young users",
-      "url": "https://www.bbc.co.uk/news/articles/cx2zn9zj361o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 28, 2026",
-      "description": "As part of an $18bn settlement in a child-safety lawsuit, Meta announced new restrictions on its apps. We asked families what they thought."
-    },
-    {
       "title": "Overcooked? Why robotic pizza makers are failing",
       "url": "https://www.bbc.co.uk/news/articles/czxq0wgkkdjo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 27, 2026",
       "description": "A string of failures has sapped confidence that robots will take over production at pizza restaurants."
     },
     {
-      "title": "Gatwick Airport facing water outage after main burst",
+      "title": "'Not far enough' - US parents and teens on Meta's new limits for young users",
+      "url": "https://www.bbc.co.uk/news/articles/cx2zn9zj361o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 28, 2026",
+      "description": "As part of an $18bn settlement in a child-safety lawsuit, Meta announced new restrictions on its apps. We asked families what they thought."
+    },
+    {
+      "title": "Gatwick Airport faced water outage after main burst",
       "url": "https://www.bbc.co.uk/news/articles/cjdvl93e10jo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 28, 2026",
-      "description": "SES Water says it is working to repair a burst main which is affecting supply to the airport."
+      "description": "SES Water says it has repaired a burst main which was affecting supply to the airport."
     },
     {
       "title": "'Cowboy builders' targeted in new government clampdown",
@@ -3403,7 +3476,7 @@
       "description": "The switch to quieter electric equipment is not going as fast as some would like."
     },
     {
-      "title": "SSE Airtricity to increase gas prices by 19% from October",
+      "title": "'A lot of pressure' - SSE Airtricity to increase gas prices by 19%",
       "url": "https://www.bbc.co.uk/news/articles/cvgyxky1m4wo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 28, 2026",
       "description": "The annual gas bill of a typical household in the greater Belfast and west gas network areas will increase by almost £172."
@@ -3493,6 +3566,90 @@
       "description": "Evergrande was at the heart of China’s property boom, and its dramatic collapse"
     },
     {
+      "title": "Israeli strike kills three Palestinians in West Bank’s Jenin",
+      "url": "https://www.aljazeera.com/news/2026/8/28/israeli-strike-kills-three-palestinians-in-west-banks-jenin?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "Israel's prime minister and defence minister praise the attack as Hamas calls for Israeli 'crimes' to stop."
+    },
+    {
+      "title": "‘Terrorist connection’ alleged in Trump’s Scotland golf course damage case",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/28/28-08-sv-trump-golf-course-terror-charges-fm?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "Seven people have been charged in connection with damage to Donald Trump’s Turnberry golf resort in Scotland in 2025."
+    },
+    {
+      "title": "US judge denies injunction against Trump’s new birthright citizenship order",
+      "url": "https://www.aljazeera.com/news/2026/8/28/us-judge-denies-injunction-against-trumps-new-birthright-citizenship-order?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "The rejection is a temporary setback for immigrant rights advocates, who have been instructed to revise their petition."
+    },
+    {
+      "title": "US Fed chair warns inflation progress insufficient, hints at rate hikes",
+      "url": "https://www.aljazeera.com/economy/2026/8/28/us-fed-chair-warns-inflation-progress-insufficient-hints-at-rate-hikes?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "Kevin Warsh in speech underscores Fed's commitment to tackling inflation, with rate hikes possibly on horizon."
+    },
+    {
+      "title": "Canadian economy recovers sharply in Q2 but shadow of US tariffs in future",
+      "url": "https://www.aljazeera.com/economy/2026/8/28/canadian-economy-recovers-sharply-in-q2-but-shadow-of-us-tariffs-in-future?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "Healthy domestic demand, led by consumer spending and business investment, shows Canada was brushing off past tariffs."
+    },
+    {
+      "title": "Al Jazeera reports from Nepal as flood survivors flee new threat",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/28/08-28-26-barnaby-lo-wt-reported?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "Al Jazeera reports from flood-hit Bidur, Nepal, as residents flee towards higher ground amid threats of another flood."
+    },
+    {
+      "title": "Board of Peace envoy Mladenov warns Gaza ceasefire risks ‘collapse’",
+      "url": "https://www.aljazeera.com/news/2026/8/28/board-of-peace-envoy-mladenov-warns-gaza-ceasefire-risks-collapse?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "In an interview with Al Jazeera, Nicolay Mladenov says that a return to war would be 'devastating'."
+    },
+    {
+      "title": "Gaza forced to use unreliable online payments amid ‘cash famine’",
+      "url": "https://www.aljazeera.com/news/2026/8/28/gaza-forced-to-use-unreliable-online-payments-amid-cash-famine?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "Israeli restrictions and war damage have created a liquidity crisis, crippling Gaza's banking system and daily commerce."
+    },
+    {
+      "title": "Israeli strikes kill five people, including three from one family, in Gaza",
+      "url": "https://www.aljazeera.com/news/2026/8/28/israeli-strikes-kill-five-people-including-three-from-one-family-in-gaza?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "The latest round of attacks comes as Palestinians across the strip continue to face severe food insecurity."
+    },
+    {
+      "title": "Why is India’s nationalist RSS holding an event in New York?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/28/why-is-indias-nationalist-rss-holding-an-event-in-new-york?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "The head of India’s controversial Hindu nationalist RSS is due to speak in New York."
+    },
+    {
+      "title": "Kenyan police fire tear gas at Nairobi protest against import duty hike",
+      "url": "https://www.aljazeera.com/news/2026/8/28/kenyan-police-fire-tear-gas-at-nairobi-protest-against-import-duty-hike?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "Traders frustrated by more than $5,000 duty hike they say will hurt small businesses."
+    },
+    {
+      "title": "The two types of Israeli settlers",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/28/the-two-types-of-israeli-settlers?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "Israeli settlement expansion in the occupied West Bank isn’t just driven by ideology, but also by economic incentives."
+    },
+    {
+      "title": "Crystal Palace vs Manchester City: LIVE Premier League",
+      "url": "https://www.aljazeera.com/sports/liveblog/2026/8/28/live-crystal-palace-vs-man-city-premier-league?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "Live coverage and text updates from our commentary stream as Erling Haaland will look to fire City to consecutive wins."
+    },
+    {
+      "title": "Nepali families pray for miracles with relatives missing after flood",
+      "url": "https://www.aljazeera.com/features/2026/8/28/nepali-families-pray-for-miracles-with-relatives-missing-after-flood?traffic_source=rss",
+      "date": "August 28, 2026",
+      "description": "At a Kathmandu hospital, families peer at lists of those who are critical, dead — or have been released."
+    },
+    {
       "title": "Can Trump really rename Lake Ontario, ‘Lake America’?",
       "url": "https://www.aljazeera.com/news/2026/8/28/can-trump-really-rename-lake-ontario-lake-america?traffic_source=rss",
       "date": "August 28, 2026",
@@ -3533,96 +3690,6 @@
       "url": "https://www.aljazeera.com/news/2026/8/28/us-ice-agency-to-spend-16-7m-on-electric-shock-gloves?traffic_source=rss",
       "date": "August 28, 2026",
       "description": "The much-criticised immigration agency has agreed a contract for 6,000 pairs of gloves that will deliver painful shocks."
-    },
-    {
-      "title": "Nepal-Tibet flood: Families of missing people endure agonising wait",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/28/nepal-tibet-flood-families-of-missing-people-endure-agonising-wait?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "Families are waiting for news of their loved ones as rescue teams race to reach survivors of the Nepal-Tibet flash flood"
-    },
-    {
-      "title": "Armed raid on cattle camp kills at least 49 in South Sudan",
-      "url": "https://www.aljazeera.com/news/2026/8/28/armed-raid-on-cattle-camp-kills-at-least-49-in-south-sudan?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "Thirty-three people were also wounded as gunmen raided village and seasonal cattle camp in northwest of the country."
-    },
-    {
-      "title": "US Open 2026: All to know about the schedule, top seeds and favourites",
-      "url": "https://www.aljazeera.com/sports/2026/8/28/us-open-2026-all-to-know-about-the-schedule-top-seeds-and-favourites?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "Carlos Alcaraz and Aryna Sabalenka look to defend their titles as the year's final Grand Slam begins on Sunday."
-    },
-    {
-      "title": "‘Barrier lake’ triggers fresh floods, halts rescue at Nepal-China border",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/28/barrier-lake-triggers-fresh-floods-halts-rescue-at-nepal-china-border?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "A lake formed after floods and mudslides on the China-Nepal border burst its banks on Friday, halting rescue operations."
-    },
-    {
-      "title": "Qatar pushes for united Libya with visit to country’s east",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/28/qatar-pushes-for-united-libya-with-visit-to-countrys-east?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "Qatar’s Minister of State for Foreign Affairs has visited eastern Libya for the first time in 14 years."
-    },
-    {
-      "title": "With Kuwait deal, Pakistan expands defence umbrella across Middle East",
-      "url": "https://www.aljazeera.com/news/2026/8/28/with-kuwait-deal-pakistan-expands-defence-umbrella-across-middle-east?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "From Kuwait to Saudi Arabia, Gulf states are deepening defence ties with Pakistan, but its own gains remain unclear."
-    },
-    {
-      "title": "PA activists face ‘terror’ charges over Trump golf resort protest: Report",
-      "url": "https://www.aljazeera.com/news/2026/8/28/pa-activists-face-terror-charges-over-trump-golf-resort-protest-report?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "Protesters targeted Trump’s Ayrshire resort with red paint and slogans saying 'Gaza is not 4 sale'."
-    },
-    {
-      "title": "Why Nepal faces another flood threat from a new lake on China border",
-      "url": "https://www.aljazeera.com/news/2026/8/28/is-nepal-facing-another-devastating-flood-from-a-new-lake?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "Glacier collapse in Nepal triggered flash floods, mudslides and a barrier lake where a landslide dammed the river."
-    },
-    {
-      "title": "US judge repeats block on Trump’s bid to limit voting by mail",
-      "url": "https://www.aljazeera.com/news/2026/8/28/us-judge-repeats-block-on-trumps-bid-to-limit-voting-by-mail?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "Order comes days before ballots go out for the midterms."
-    },
-    {
-      "title": "‘Where’s the humanity?’: Imran Khan’s sons fear for jailed ex-Pakistan PM",
-      "url": "https://www.aljazeera.com/news/2026/8/28/wheres-the-humanity-imran-khans-sons-fear-for-jailed-ex-pakistan-pm?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "Sulaiman and Kasim Khan are increasingly worried after hearing their father is 'agitated' and suffering from anxiety."
-    },
-    {
-      "title": "Liverpool vs Nottingham Forest: Premier League – preview, teams, prediction",
-      "url": "https://www.aljazeera.com/sports/2026/8/28/liverpool-vs-nottingham-forest-premier-league-preview-team-news?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "Liverpool struggled to 2-2 draw at Newcastle in first league game of season, while Forest lost to Leeds twice this week."
-    },
-    {
-      "title": "Nepal and China briefly halt rescue efforts as barrier lake overflows",
-      "url": "https://www.aljazeera.com/news/2026/8/28/nepal-and-china-halt-rescue-efforts-as-border-barrier-lake-overflows?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "More than 580 people dead and more than 2,400 missing after the flash flood disaster that struck on Wednesday."
-    },
-    {
-      "title": "Children take cover behind shopping cart during Israeli drone fire",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/28/children-take-cover-behind-shopping-cart-during-israeli-drone-fire?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "Video shows children in Gaza taking cover behind a shopping cart during a reported gun attack by an Israeli drone."
-    },
-    {
-      "title": "Norway’s King Harald V dies, succeeded by son",
-      "url": "https://www.aljazeera.com/news/2026/8/28/norways-king-harald-v-dies-succeeded-by-son?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "Harald V, who was Europe's oldest reigning monarch, has died at the age of 89. His son will reign as King Haakon VIII."
-    },
-    {
-      "title": "‘Typical Trump, silly joke’: ‘Lake America’ has Canadians laughing",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/28/typical-trump-silly-joke-lake-america-has-canadians-laughing?traffic_source=rss",
-      "date": "August 28, 2026",
-      "description": "Canadians are reacting to US President Donald Trump’s executive order to rename Lake Ontario as ‘Lake America’."
     }
   ]
 }
