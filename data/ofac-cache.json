@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T15:08:41.725Z",
+  "updatedAt": "2026-08-30T17:08:47.033Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260828",
@@ -3047,16 +3047,16 @@
   "unNotices": [],
   "bbcNews": [
     {
+      "title": "Russia says it helped to repel Niger attempted coup",
+      "url": "https://www.bbc.co.uk/news/articles/c5ye8egg596o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 30, 2026",
+      "description": "Soldiers tried to attack a key military base early on Saturday morning, authorities say, but were thwarted."
+    },
+    {
       "title": "Trump hails 'historic' deal for US to control 65bn barrels of Venezuela's oil",
       "url": "https://www.bbc.co.uk/news/articles/cx2zlwe7qj1o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 30, 2026",
       "description": "Venezuelan interim president says the unusual agreement will help revive her country's economy."
-    },
-    {
-      "title": "Russia ramps up rhetoric but wants to avoid war with Nato, Western officials say",
-      "url": "https://www.bbc.co.uk/news/articles/cz0zm2j7ld1o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 28, 2026",
-      "description": "But they say Moscow will likely continue its \"hybrid activity\" against Nato members, short of direct military action."
     },
     {
       "title": "Somali piracy surges as the impact of the US-Iran war ripples outwards",
@@ -3073,6 +3073,12 @@
   ],
   "ajNews": [
     {
+      "title": "Trump says US will refill its petroleum reserves using Venezuelan oil",
+      "url": "https://www.aljazeera.com/news/2026/8/30/trump-says-us-will-refill-its-petroleum-reserves-using-venezuelan-oil?traffic_source=rss",
+      "date": "August 30, 2026",
+      "description": "President Donald Trump says in a post that the 'topping out' process will ‌begin shortly."
+    },
+    {
       "title": "Banque Misr, Egypt’s second-largest, hit by US sanctions: What to know",
       "url": "https://www.aljazeera.com/news/2026/8/30/banque-misr-egypts-second-largest-hit-by-us-sanctions-what-to-know?traffic_source=rss",
       "date": "August 30, 2026",
@@ -3083,18 +3089,6 @@
       "url": "https://www.aljazeera.com/news/2026/8/30/death-toll-from-russian-strike-on-ukrainian-arms-depot-rises-to-38?traffic_source=rss",
       "date": "August 30, 2026",
       "description": "Russia's Defence Ministry announces plans to launch 'massive strikes' against Ukraine's infrastructure before winter."
-    },
-    {
-      "title": "Six months on, what did the strikes on Iran achieve?",
-      "url": "https://www.aljazeera.com/video/by-the-numbers-3/2026/8/30/six-months-on-what-did-the-strikes-on-iran-achieve?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "The US-Israeli bombing of Iran became a fight for the Strait of Hormuz. AJLabs counts the cost of the war."
-    },
-    {
-      "title": "Iran’s Khamenei calls for Gulf unity as Hormuz tensions persist",
-      "url": "https://www.aljazeera.com/news/2026/8/30/irans-khamenei-calls-for-gulf-unity-as-hormuz-tensions-persist?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Khamenei urges Gulf rulers to confront their 'real enemy' as Iran keeps Hormuz restricted amid stalled diplomacy."
     }
   ],
   "occNews": [
@@ -3236,28 +3230,22 @@
       "description": "The WhatsApp money launderers arranged cash transfers in the UK and around the world with no paper trail."
     },
     {
-      "title": "At least 37 dead and hundreds evacuated after strike on Kyiv weapons depot",
-      "url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 29, 2026",
-      "description": "An investigation has begun into the storage of weapons for Ukraine's military near a residential area."
-    },
-    {
       "title": "Zambian opposition leader charged with treason",
       "url": "https://www.bbc.co.uk/news/articles/c20lwqpx70qo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 30, 2026",
       "description": "Mundubile had previously gone into hiding at a United Nations building in Zambia's capital."
     },
     {
+      "title": "At least 37 dead and hundreds evacuated after strike on Kyiv weapons depot",
+      "url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 29, 2026",
+      "description": "An investigation has begun into the storage of weapons for Ukraine's military near a residential area."
+    },
+    {
       "title": "Right-wing commentator Milo Yiannopoulos deported from US to UK",
       "url": "https://www.bbc.co.uk/news/articles/cqlw52vr0dwo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 29, 2026",
       "description": "The self-styled provocateur had been detained by Immigration and Customs Enforcement (ICE)."
-    },
-    {
-      "title": "Footage of Tibet floods isn't being shown in China - and we know little about victims there",
-      "url": "https://www.bbc.co.uk/news/articles/cx2z415w2gpo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 29, 2026",
-      "description": "Some of the most dramatic footage from the deadly flash flooding is hidden from public view in China."
     },
     {
       "title": "Norway's new king remembers 'my dear father' in first speech",
@@ -3272,12 +3260,6 @@
       "description": "Lenín Moreno denies taking bribes from a Chinese firm to secure a contract to build a hydroelectric plant."
     },
     {
-      "title": "Landlady to 9/11 hijackers reveals their links to alleged Saudi spy",
-      "url": "https://www.bbc.co.uk/news/articles/c99dvm39mreo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 29, 2026",
-      "description": "A woman who rented out homes to two al-Qaeda members speaks publicly for the first time - to the BBC."
-    },
-    {
       "title": "Ex-White House teleprompter operator ordered to pay $172,000 for Trump speech bets",
       "url": "https://www.bbc.co.uk/news/articles/c4gj2dl4x52o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 29, 2026",
@@ -3288,18 +3270,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cy8z9084d00o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 29, 2026",
       "description": "The drugs have a delayed effect which \"increases the risk of overdose\", the health institute says."
-    },
-    {
-      "title": "Oslo mayor calls off wedding ceremony after death of Norway's king",
-      "url": "https://www.bbc.co.uk/news/articles/c5ydgk3v60eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 28, 2026",
-      "description": "Anne Lindboe, the mayor of Norway's capital, had planned to marry her fiance on Friday."
-    },
-    {
-      "title": "Canada poaches dozens of top US researchers for its universities",
-      "url": "https://www.bbc.co.uk/news/articles/c209gd5jnq1o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 28, 2026",
-      "description": "Researchers in fields like climate and medicine are being lured north by new research funding."
     },
     {
       "title": "Berlin is being blackmailed by hackers, mayor says",
@@ -3314,22 +3284,10 @@
       "description": "Police are hunting two suspects they believe bought a ticket for the exhibition to get at the jewellery."
     },
     {
-      "title": "Greenland says findings on genocide allegation not final",
-      "url": "https://www.bbc.co.uk/news/articles/czxzv29p12lo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 28, 2026",
-      "description": "Experts examined the use of forced contraception on the Inuit community during the 1960s and 70s."
-    },
-    {
-      "title": "Violence breaks out in Ceuta as migrant crisis continues",
-      "url": "https://www.bbc.co.uk/news/articles/cy9zj11gwzxo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 28, 2026",
-      "description": "A group of migrants is accused of throwing stones at a military vehicle, while some locals set fire to their camps on the beach."
-    },
-    {
-      "title": "World's youngest reigning traditional monarch dies aged 34",
-      "url": "https://www.bbc.co.uk/news/articles/c0j38d9v40po?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 28, 2026",
-      "description": "King Oyo ascended to the throne of Uganda's Tooro kingdom when he was just three years old."
+      "title": "Head teacher evacuated 900 children minutes before Nepal floods hit school",
+      "url": "https://www.bbc.co.uk/news/articles/c5ymvdm5520o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 30, 2026",
+      "description": "Rajendra Dawadi leapt into action after receiving warnings over waters heading towards his school."
     },
     {
       "title": "They fell in love - then had to check they weren't brother and sister",
@@ -3350,6 +3308,12 @@
       "description": "Families across the globe share how free books from Parton's Imagination Library helped their children."
     },
     {
+      "title": "Footage of Tibet floods isn't being shown in China - and we know little about victims there",
+      "url": "https://www.bbc.co.uk/news/articles/cx2z415w2gpo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 29, 2026",
+      "description": "Some of the most dramatic footage from the deadly flash flooding is hidden from public view in China."
+    },
+    {
       "title": "Forget Starbucks coffee - Gen Z like their drinks ice cold",
       "url": "https://www.bbc.co.uk/news/articles/cm2r9n2mrp8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 29, 2026",
@@ -3366,18 +3330,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cd68vpjv21do?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 28, 2026",
       "description": "Before-and-after images show villages, bridges and a key Nepal-Tibet border crossing washed away by devastating floodwaters."
-    },
-    {
-      "title": "Norway's King Harald dies aged 89: A beloved monarch buffeted by family crises",
-      "url": "https://www.bbc.co.uk/news/articles/clykn5p5172o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 28, 2026",
-      "description": "The late king, who reigned for 35 years, broke with tradition by marrying a commoner and was widely loved by Norwegians."
-    },
-    {
-      "title": "King Haakon begins reign after turbulent year for Norwegian monarchy",
-      "url": "https://www.bbc.co.uk/news/articles/cp841114eg6o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 28, 2026",
-      "description": "Haakon becomes the king at a turbulent time for Norway's monarchy."
     },
     {
       "title": "Deadly strike on Kyiv warehouse prompts evacuations",
@@ -3614,6 +3566,48 @@
       "description": "Evergrande was at the heart of China’s property boom, and its dramatic collapse"
     },
     {
+      "title": "Israeli soldiers participate in Sydney Marathon despite protests",
+      "url": "https://www.aljazeera.com/sports/2026/8/30/israeli-soldiers-participate-in-sydney-marathon-despite-protests?traffic_source=rss",
+      "date": "August 30, 2026",
+      "description": "Protesters waved Palestinian flags and criticised the Australian government for issuing visas to 40 Israeli soldiers."
+    },
+    {
+      "title": "What’s behind Netanyahu’s condemnation of this weekend’s settler pogroms?",
+      "url": "https://www.aljazeera.com/news/2026/8/30/whats-behind-netanyahus-condemnation-of-this-weekends-settler-pogroms?traffic_source=rss",
+      "date": "August 30, 2026",
+      "description": "Israel's rhetorical outrage masks a calculated, well-funded campaign to permanently erase Palestinian statehood."
+    },
+    {
+      "title": "Educated? Skilled? Ambitious? Traffickers are looking for you",
+      "url": "https://www.aljazeera.com/opinions/2026/8/30/educated-skilled-ambitious-traffickers-are-looking-for-you?traffic_source=rss",
+      "date": "August 30, 2026",
+      "description": "Young jobseekers are being recruited into scam compounds. Urgent action is needed to disrupt these trafficking schemes."
+    },
+    {
+      "title": "Rohingya crisis: Aid falls and hope fades",
+      "url": "https://www.aljazeera.com/video/talk-to-al-jazeera/2026/8/30/rohingya-crisis-aid-falls-and-hope-fades?traffic_source=rss",
+      "date": "August 30, 2026",
+      "description": "UNHCR's Bangladesh representative, Ivo Freisen, warns that dwindling aid is driving hope down among Rohingya refugees."
+    },
+    {
+      "title": "Nepal flood victims fear more bodies are buried under mud",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/30-08-sv-nepal-dispatch-dhading-jessica-fm?traffic_source=rss",
+      "date": "August 30, 2026",
+      "description": "Residents in Dhading, Nepal devastated by flooding say they believe more bodies remain buried beneath thick mud."
+    },
+    {
+      "title": "Chelsea beat Brighton 4-3 to extend perfect start under Xabi Alonso",
+      "url": "https://www.aljazeera.com/sports/2026/8/30/chelsea-beat-brighton-4-3-to-extend-perfect-start-under-xabi-alonso?traffic_source=rss",
+      "date": "August 30, 2026",
+      "description": "Alonso has presided over two wins in the Premier League and one in the League Cup since taking charge of the Blues."
+    },
+    {
+      "title": "At least seven dead and 23 missing after boat capsizes off northern Cyprus",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/at-least-seven-dead-and-23-missing-after-boat-capsizes-off-northern-cyprus?traffic_source=rss",
+      "date": "August 30, 2026",
+      "description": "Videos show rescue after a ferry capsized off northern Cyprus, with officials reporting several dead."
+    },
+    {
       "title": "Why did Australia give visas to Israeli soldiers but not Bassem Youssef?",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/30-08-sydney-marathon-israeli-soldiers-idf-fm?traffic_source=rss",
       "date": "August 30, 2026",
@@ -3698,46 +3692,10 @@
       "description": "Palestinian groups condemn prison footage as humiliation and intimidation."
     },
     {
-      "title": "At least seven dead after ferry capsizes off Northern Cyprus",
+      "title": "At least seven people dead after ferry capsizes off Northern Cyprus",
       "url": "https://www.aljazeera.com/news/2026/8/30/ferry-carrying-260-people-capsizes-off-northern-cyprus-coast?traffic_source=rss",
       "date": "August 30, 2026",
       "description": "Northern Cyprus Prime Minister Unal Ustel says 237 people rescued and 23 people remain missing."
-    },
-    {
-      "title": "Protesters in Argentina urge tech billionaire Peter Thiel to leave",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/protesters-in-argentina-urge-tech-billionaire-peter-thiel-to-leave?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Dozens of protesters in Argentina have demonstrated against Palantir co-founder Peter Thiel, outside his new mansion."
-    },
-    {
-      "title": "Tearful Roger Federer inducted into Tennis Hall of Fame",
-      "url": "https://www.aljazeera.com/sports/2026/8/30/tearful-roger-federer-inducted-into-tennis-hall-of-fame?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "'I'm still writing my love letter to tennis,' Swiss legend says as he is applauded by former tennis rivals and friends."
-    },
-    {
-      "title": "Chelsea signs Argentinian goalkeeper Emiliano Martinez from Aston Villa",
-      "url": "https://www.aljazeera.com/sports/2026/8/30/chelsea-sign-argentina-goalkeeper-emiliano-martinez-from-aston-villa?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Martinez joins the London club on a reported three-year deal worth $10m after spending five years at Villa."
-    },
-    {
-      "title": "LIVE: Chelsea vs Brighton – Premier League",
-      "url": "https://www.aljazeera.com/sports/liveblog/2026/8/30/live-chelsea-vs-brighton-premier-league?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Follow updates from the Premier League clash - including the build-up, analysis and live text commentary of the game."
-    },
-    {
-      "title": "Photos: Nepal issues alerts as region’s flash flood death toll nears 800",
-      "url": "https://www.aljazeera.com/gallery/2026/8/30/photos-nepal-issues-fresh-flood-alerts-as-regional-death-toll-hits-750?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Nepal warns of more flooding as the death toll rises to 797, with more than 3,000 people still missing in the region."
-    },
-    {
-      "title": "Israel says Netanyahu’s son ‘urgently evacuated’ from the US after threat",
-      "url": "https://www.aljazeera.com/news/2026/8/30/israel-says-netanyahus-son-urgently-evacuated-from-the-us-after-threat?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Right-wing activist and podcaster Yair Netanyahu lived in the US for several years before his hasty departure."
     }
   ]
 }
