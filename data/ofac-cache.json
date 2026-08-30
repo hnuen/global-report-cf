@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T17:08:47.033Z",
+  "updatedAt": "2026-08-30T19:08:51.122Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260828",
@@ -3073,6 +3073,12 @@
   ],
   "ajNews": [
     {
+      "title": "First images of Maduro in US custody released since his abduction",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/first-images-of-maduro-in-us-custody-released-since-his-abduction?traffic_source=rss",
+      "date": "August 30, 2026",
+      "description": "Former Venezuelan President Nicolas Maduro has appeared in the first photos from US custody since his January abduction."
+    },
+    {
       "title": "Trump says US will refill its petroleum reserves using Venezuelan oil",
       "url": "https://www.aljazeera.com/news/2026/8/30/trump-says-us-will-refill-its-petroleum-reserves-using-venezuelan-oil?traffic_source=rss",
       "date": "August 30, 2026",
@@ -3083,12 +3089,6 @@
       "url": "https://www.aljazeera.com/news/2026/8/30/banque-misr-egypts-second-largest-hit-by-us-sanctions-what-to-know?traffic_source=rss",
       "date": "August 30, 2026",
       "description": "Move comes as Washington steps up its efforts to economically pressure Iran amid deadlock in truce talks."
-    },
-    {
-      "title": "Death toll from Russian strike on Ukrainian arms depot rises to 38",
-      "url": "https://www.aljazeera.com/news/2026/8/30/death-toll-from-russian-strike-on-ukrainian-arms-depot-rises-to-38?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Russia's Defence Ministry announces plans to launch 'massive strikes' against Ukraine's infrastructure before winter."
     }
   ],
   "occNews": [
@@ -3206,6 +3206,12 @@
   ],
   "regionsNews": [
     {
+      "title": "Eight killed and others missing after ferry capsizes off northern Cyprus",
+      "url": "https://www.bbc.co.uk/news/articles/c770jyd4l7lo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 30, 2026",
+      "description": "A search and rescue operation is under way after a ferry carrying nearly 270 people turns over after leaving port."
+    },
+    {
       "title": "Iceland votes against restarting EU membership talks",
       "url": "https://www.bbc.co.uk/news/articles/c70le8ed1plo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 30, 2026",
@@ -3218,16 +3224,16 @@
       "description": "Five others in their twenties were injured after shots were fired at a techno event near Zurich."
     },
     {
+      "title": "Nasa launches new space telescope able to see 100 times more than Hubble",
+      "url": "https://www.bbc.co.uk/news/articles/ce87e55vgpjo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 30, 2026",
+      "description": "The US space agency's telescope is starting a multi-year mission to create a new map of the universe and learn more about dark energy and dark matter."
+    },
+    {
       "title": "Canada installs large Lake Ontario sign in latest jab at US",
       "url": "https://www.bbc.co.uk/news/articles/cpq09594vw7o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 30, 2026",
       "description": "Ontario Premier Doug Ford unveiled a billboard on Canada's shoreline with the message: \"Lake Ontario. Now and Always.\""
-    },
-    {
-      "title": "WhatsApp chat used to send cash for crime and extremism",
-      "url": "https://www.bbc.co.uk/news/articles/cgk57lg7566o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 30, 2026",
-      "description": "The WhatsApp money launderers arranged cash transfers in the UK and around the world with no paper trail."
     },
     {
       "title": "Zambian opposition leader charged with treason",
@@ -3294,6 +3300,12 @@
       "url": "https://www.bbc.co.uk/news/articles/c8en3n29wdro?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 29, 2026",
       "description": "A French couple - both conceived by sperm donors - wanted children. But with home DNA tests illegal, how could they be sure they were not related?"
+    },
+    {
+      "title": "WhatsApp chat used to launder cash for crime and extremism",
+      "url": "https://www.bbc.co.uk/news/articles/cgk57lg7566o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 30, 2026",
+      "description": "The WhatsApp money launderers arranged cash transfers in the UK and around the world with no paper trail."
     },
     {
       "title": "Australia usually hosts the world's biggest cuttlefish mating event - not this year",
@@ -3476,6 +3488,12 @@
       "description": "The switch to quieter electric equipment is not going as fast as some would like."
     },
     {
+      "title": "School uniform swap shop 'saves money and tackles second hand clothes stigma'",
+      "url": "https://www.bbc.co.uk/news/articles/crr452d45nyo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 30, 2026",
+      "description": "A free initiative which started with one school four years ago now has more than 200 involved."
+    },
+    {
       "title": "Fundraiser launched to secure crafting shop future",
       "url": "https://www.bbc.co.uk/news/articles/cz0zr3577glo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 29, 2026",
@@ -3498,12 +3516,6 @@
       "url": "https://www.bbc.co.uk/news/videos/cx2znnn4574o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 28, 2026",
       "description": "Central London shoppers reveal what they love to splash out on - and share their tips for not overspending."
-    },
-    {
-      "title": "Military veterans told they owe thousands of pounds over clerical error",
-      "url": "https://www.bbc.co.uk/news/articles/c5y4512mlxdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 27, 2026",
-      "description": "Hundreds of former UK service personnel have had their pensions cut after being overpaid."
     },
     {
       "title": "Why the UK is dithering over what to do about e-scooters",
@@ -3564,6 +3576,72 @@
       "url": "https://www.bbc.co.uk/sounds/play/w3ct8glr?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 26, 2026",
       "description": "Evergrande was at the heart of China’s property boom, and its dramatic collapse"
+    },
+    {
+      "title": "‘Do you miss Mogadishu?’ Inside Sweden’s far-right campaign",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/do-you-miss-mogadishu-inside-swedens-far-right-campaign?traffic_source=rss",
+      "date": "August 30, 2026",
+      "description": "How a far-right party with neo-Nazi roots bought every ad surface in Sweden's biggest train station."
+    },
+    {
+      "title": "Photos: Devastation from the Nepal-China floods",
+      "url": "https://www.aljazeera.com/gallery/2026/8/30/in-pictures-devastation-from-the-nepal-china-floods?traffic_source=rss",
+      "date": "August 30, 2026",
+      "description": "More than 3,000 people missing after glacier collapse unleashes destruction in Himalayas."
+    },
+    {
+      "title": "Fernandes hat-trick fires Man Utd in seven-goal thriller with Ipswich",
+      "url": "https://www.aljazeera.com/sports/2026/8/30/fernandes-hat-trick-fires-man-utd-in-seven-goal-thriller-with-ipswich?traffic_source=rss",
+      "date": "August 30, 2026",
+      "description": "Bruno Fernandes's hat-trick inspires Manchester United's comeback 5-2 win against Ipswich Town in the Premier League."
+    },
+    {
+      "title": "Top officials from Turkiye, Saudi Arabia, Pakistan to meet in Istanbul",
+      "url": "https://www.aljazeera.com/news/2026/8/30/top-officials-from-turkiye-saudi-arabia-pakistan-to-meet-in-istanbul?traffic_source=rss",
+      "date": "August 30, 2026",
+      "description": "Foreign, defence ministers and military chiefs from three countries to meet for first time since signing Mecca pact."
+    },
+    {
+      "title": "Nepal’s flood survivors search for missing loved ones",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/nepals-flood-survivors-search-for-missing-loved-ones?traffic_source=rss",
+      "date": "August 30, 2026",
+      "description": "A young girl is pulled alive from the rubble as rescuers search for survivors and families for missing loved ones."
+    },
+    {
+      "title": "NASA launches $4.3bn Roman Telescope to uncover universe’s hidden secrets",
+      "url": "https://www.aljazeera.com/news/2026/8/30/nasa-launches-4-3bn-roman-telescope-to-uncover-universes-hidden-secrets?traffic_source=rss",
+      "date": "August 30, 2026",
+      "description": "SpaceX Falcon Heavy propels telescope on cosmic quest to investigate dark energy and matter."
+    },
+    {
+      "title": "Trump threatens to report journalist Kristen Welker to broadcast regulator",
+      "url": "https://www.aljazeera.com/news/2026/8/30/trump-threatens-to-report-journalist-kristen-welker-to-broadcast-regulator?traffic_source=rss",
+      "date": "August 30, 2026",
+      "description": "The Federal Communications Commission under Trump has tried to target news outlets for spreading 'fake' news."
+    },
+    {
+      "title": "Zambia opposition leader Brian Mundubile charged with treason",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/zambia-opposition-leader-brian-mundubile-charged-with-treason?traffic_source=rss",
+      "date": "August 30, 2026",
+      "description": "Zambian opposition leader Brian Mundubile and his running mate, Makebi Zulu, have been charged with treason."
+    },
+    {
+      "title": "Death toll nears 800 after Himalayan glacier collapse",
+      "url": "https://www.aljazeera.com/news/2026/8/30/death-toll-nears-800-after-himalayan-glacier-collapse?traffic_source=rss",
+      "date": "August 30, 2026",
+      "description": "Specialised search-and-rescue teams join recovery operations in Nepal and China."
+    },
+    {
+      "title": "Google Maps renames Lake Ontario after Trump’s decree on ‘Lake America’",
+      "url": "https://www.aljazeera.com/news/2026/8/30/google-maps-renames-lake-ontario-after-trumps-decree-on-lake-america?traffic_source=rss",
+      "date": "August 30, 2026",
+      "description": "Tech giant says name to remain Lake Ontario for Canadian users, change reflects decision by US government agency."
+    },
+    {
+      "title": "Rival Libya factions sign deal to hold national elections within two years",
+      "url": "https://www.aljazeera.com/news/2026/8/30/rival-libya-factions-sign-deal-to-hold-national-elections-within-two-years?traffic_source=rss",
+      "date": "August 30, 2026",
+      "description": "Signing takes place at UN mission in Tripoli after initial draft inked by UN-backed committee in Tunis on August 20."
     },
     {
       "title": "Israeli soldiers participate in Sydney Marathon despite protests",
@@ -3630,72 +3708,6 @@
       "url": "https://www.aljazeera.com/sports/2026/8/30/van-dijk-wants-cody-gakpo-to-stay-at-liverpool-despite-man-city-interest?traffic_source=rss",
       "date": "August 30, 2026",
       "description": "Liverpool's Dutch forward Gakpo is a transfer target for Premier League rivals Manchester City."
-    },
-    {
-      "title": "Dozens of soldiers arrested after apparent coup attempt in Niger’s capital",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/dozens-of-soldiers-arrested-after-apparent-coup-attempt-in-nigers-capital?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Dozens of soldiers arrested after apparent coup attempt in Niger’s capital"
-    },
-    {
-      "title": "Niger’s military-led government says it contained mutiny: What next?",
-      "url": "https://www.aljazeera.com/news/2026/8/30/nigers-military-led-government-says-it-contained-mutiny-what-next?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Mutiny began at a military base in Niamey and spread to area near the presidential palace and state broadcaster."
-    },
-    {
-      "title": "Alvarez returns to Atletico training amid Barcelona, Arsenal transfer links",
-      "url": "https://www.aljazeera.com/sports/2026/8/30/alvarez-returns-to-atletico-training-amid-barcelona-arsenal-transfer-links?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Atletico Madrid forward missed two earlier training sessions amid ongoing speculation about his future at the club."
-    },
-    {
-      "title": "Ben-Gvir taunts Palestinian women prisoners over prison conditions",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/ben-gvir-taunts-palestinian-women-prisoners-over-prison-conditions?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Ben-Gvir taunts Palestinian women prisoners over prison conditions"
-    },
-    {
-      "title": "LIVE: Manchester United vs Ipswich Town – Premier League",
-      "url": "https://www.aljazeera.com/sports/liveblog/2026/8/30/live-manchester-united-vs-ipswich-town-premier-league?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Live text updates from our commentary stream coverage as Bruno Fernandes will hope to help United recover from defeat."
-    },
-    {
-      "title": "Palestinian mother in agony as Israeli attack kills her son",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/palestinian-mother-in-agony-as-israeli-attack-kills-her-son?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Palestinian mother in agony as Israeli attack kills her son"
-    },
-    {
-      "title": "Road collapses in Nepal landslide four days after floods",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/road-collapses-in-nepal-landslide-four-days-after-floods?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "A vital highway weakened by Nepal’s floodwaters has collapsed four days after the catastrophic glacial outburst."
-    },
-    {
-      "title": "How has life changed for Iranians six months into the war?",
-      "url": "https://www.aljazeera.com/economy/2026/8/30/how-has-life-changed-for-iranians-six-months-into-the-war?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Common Iranians are under increasing pressure, with no relief expected in the short term."
-    },
-    {
-      "title": "Infantino must go by 2027 in FIFA overhaul, Dutch football body says",
-      "url": "https://www.aljazeera.com/sports/2026/8/30/infantino-must-go-by-2027-in-fifa-overhaul-dutch-football-body-says?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "KNVB invites associations and confederations to a summit to discuss the overhaul of FIFA and how it runs football."
-    },
-    {
-      "title": "Israel’s Ben-Gvir lauds harsh conditions for Palestinian female prisoners",
-      "url": "https://www.aljazeera.com/news/2026/8/30/israels-ben-gvir-lauds-harsh-conditions-for-palestinian-female-prisoners?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Palestinian groups condemn prison footage as humiliation and intimidation."
-    },
-    {
-      "title": "At least seven people dead after ferry capsizes off Northern Cyprus",
-      "url": "https://www.aljazeera.com/news/2026/8/30/ferry-carrying-260-people-capsizes-off-northern-cyprus-coast?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Northern Cyprus Prime Minister Unal Ustel says 237 people rescued and 23 people remain missing."
     }
   ]
 }
