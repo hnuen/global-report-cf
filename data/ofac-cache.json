@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T22:08:45.571Z",
+  "updatedAt": "2026-08-31T13:08:42.378Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260828",
@@ -3047,10 +3047,10 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "US strikes Iranian launchers on Larak Island in first known attack in weeks",
+      "title": "US and Iran trade strikes for first time in weeks",
       "url": "https://www.bbc.co.uk/news/articles/cx2z72x5z1po?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 30, 2026",
-      "description": "Iran says the attack killed some civilians and is the first known US strike on Iran since late July."
+      "date": "August 31, 2026",
+      "description": "The attack on Larak Island in the Strait of Hormuz - the first known US strike since late July - has killed two people and injured two others."
     },
     {
       "title": "Russia says it helped to repel Niger attempted coup",
@@ -3065,12 +3065,6 @@
       "description": "Venezuelan interim president says the unusual agreement will help revive her country's economy."
     },
     {
-      "title": "Somali piracy surges as the impact of the US-Iran war ripples outwards",
-      "url": "https://www.bbc.co.uk/news/articles/cr4vx4pneydo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 29, 2026",
-      "description": "Two ships were seized within four days last week raising to at least 13 the number attacked since January."
-    },
-    {
       "title": "Trump hails 'historic' deal to control 65 billion barrels of Venezuelan oil",
       "url": "https://www.bbc.co.uk/news/articles/cx2zlwe7qj1o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 30, 2026",
@@ -3079,22 +3073,58 @@
   ],
   "ajNews": [
     {
-      "title": "‘Opening a new chapter’: Syria reopens embassy in Libya after talks",
-      "url": "https://www.aljazeera.com/news/2026/8/30/opening-a-new-chapter-syria-to-reopen-embassy-in-libya-after-talks?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Syrian foreign minister and Libyan PM agree to cooperation committee and reopening of diplomatic missions."
+      "title": "Pakistan, Saudi Arabia, Turkiye meet: What’s next for their defence pact?",
+      "url": "https://www.aljazeera.com/news/2026/8/31/pakistan-saudi-arabia-turkiye-meet-whats-next-for-their-defence-pact?traffic_source=rss",
+      "date": "August 31, 2026",
+      "description": "As US-Iran strikes resume, Pakistan, Saudi Arabia and Turkiye test their pact's substance, and who might join next."
     },
     {
-      "title": "US strikes Iran’s Larak Island in first attack in weeks",
-      "url": "https://www.aljazeera.com/news/2026/8/30/us-strikes-irans-lark-island-in-first-attack-in-weeks?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "IRGC says attack in southern Iran killed and injured several soldiers."
+      "title": "More value in Cairo’s trash, but less for those who collect it",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/31/more-value-in-cairos-trash-but-less-for-those-who-collect-it?traffic_source=rss",
+      "date": "August 31, 2026",
+      "description": "War on Iran disrupts imports, driving demand for Cairo’s recycled waste, but rising costs squeeze recyclers."
     },
     {
-      "title": "First images of Maduro in US custody released since his abduction",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/first-images-of-maduro-in-us-custody-released-since-his-abduction?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Former Venezuelan President Nicolas Maduro has appeared in the first photos from US custody since his January abduction."
+      "title": "Who are the economic winners and losers of the US-Israel war on Iran?",
+      "url": "https://www.aljazeera.com/economy/2026/8/31/who-are-the-economic-winners-and-losers-of-the-us-israel-war-on-iran?traffic_source=rss",
+      "date": "August 31, 2026",
+      "description": "Airlines and automakers have taken a hit, while banks and energy firms have raked in big profits."
+    },
+    {
+      "title": "UAE intercepts drone after US and Iran exchange attacks",
+      "url": "https://www.aljazeera.com/news/2026/8/31/uae-intercepts-drone-after-us-and-iran-exchange-attacks?traffic_source=rss",
+      "date": "August 31, 2026",
+      "description": "The UAE says it intercepted a drone coming from Iran and rejected 'false' reports of an attack on its Al Menhad airbase."
+    },
+    {
+      "title": "The looming failure of Operation Economic Outcast",
+      "url": "https://www.aljazeera.com/opinions/2026/8/31/the-looming-failure-of-operation-economic-outcast?traffic_source=rss",
+      "date": "August 31, 2026",
+      "description": "The latest package of US sanctions on Iran is unlikely to achieve Washington’s objectives."
+    },
+    {
+      "title": "Spain’s Sanchez says Russia, Israel spread disinformation on Ceuta crisis",
+      "url": "https://www.aljazeera.com/news/2026/8/31/spains-sanchez-condemns-russia-israel-disinformation-during-ceuta-crisis?traffic_source=rss",
+      "date": "August 31, 2026",
+      "description": "Sanchez cited EU research which had found that Russia ⁠and ⁠Israel both spread disinformation during the crisis."
+    },
+    {
+      "title": "Iran attacks Jordan, UAE after US bombs Larak Island: What’s the latest?",
+      "url": "https://www.aljazeera.com/news/2026/8/31/iran-attacks-jordan-uae-after-us-bombs-larak-island-whats-the-latest?traffic_source=rss",
+      "date": "August 31, 2026",
+      "description": "The retaliatory attacks came after the US targeted two Iranian launchers on Larak Island in the Strait of Hormuz."
+    },
+    {
+      "title": "Syria is choosing diplomacy with Israel, but can its approach last?",
+      "url": "https://www.aljazeera.com/features/2026/8/31/syria-is-choosing-diplomacy-with-israel-but-can-its-approach-last?traffic_source=rss",
+      "date": "August 31, 2026",
+      "description": "Israel has attacked Syria, occupied its south since the al-Assad regime's ouster, testing Syria's diplomatic outreach."
+    },
+    {
+      "title": "Nord Stream bombings put Ukraine’s ties with Germany under pressure",
+      "url": "https://www.aljazeera.com/news/2026/8/31/why-the-2022-nord-stream-bombings-muddle-berlin-kyiv-ties?traffic_source=rss",
+      "date": "August 31, 2026",
+      "description": "The blasts strain ties with Ukraine and have exposed the risks of relying on Russian gas, analysts say."
     }
   ],
   "occNews": [
@@ -3212,10 +3242,58 @@
   ],
   "regionsNews": [
     {
-      "title": "Eight killed and others missing after ferry capsizes off northern Cyprus",
-      "url": "https://www.bbc.co.uk/news/articles/c770jyd4l7lo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 30, 2026",
-      "description": "A search and rescue operation is under way after a ferry carrying nearly 270 people turns over after leaving port."
+      "title": "Man arrested after Swiss rave shooting that killed woman",
+      "url": "https://www.bbc.co.uk/news/articles/cddv92n194vo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 31, 2026",
+      "description": "A 22-year-old Italian woman was killed and several injured at a techno rave in Aarau."
+    },
+    {
+      "title": "South African airline defends low-altitude aerial stunt over packed stadium",
+      "url": "https://www.bbc.co.uk/news/articles/c3rew8jqny5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 31, 2026",
+      "description": "Airlink says the manoeuvre with two planes in close formation involved careful and precise planning."
+    },
+    {
+      "title": "The jury's options in Lindsay Clancy's murder trial",
+      "url": "https://www.bbc.co.uk/news/articles/c93vgv4kr49o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 31, 2026",
+      "description": "Jurors have five options before them as they decide the fate of the former nurse charged with killing her three children."
+    },
+    {
+      "title": "Search continues for 18 passengers after ferry capsized in northern Cyprus",
+      "url": "https://www.bbc.co.uk/news/articles/c1mv5ggg1l8o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 31, 2026",
+      "description": "Eight people have died after the ferry started taking on water shortly after setting off for Turkey."
+    },
+    {
+      "title": "Dolly Parton laid to rest alongside husband in Nashville",
+      "url": "https://www.bbc.co.uk/news/articles/cew95ke74l7o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 31, 2026",
+      "description": "A private family funeral is held for the singer who died on Tuesday at the age of 80."
+    },
+    {
+      "title": "'Moonies' church leader jailed for two years over bribery offences",
+      "url": "https://www.bbc.co.uk/news/articles/c8xkqjdk142o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 31, 2026",
+      "description": "Han Hak-ja, 83, gave South Korea's former first lady two Chanel bags and a diamond necklace, a court found."
+    },
+    {
+      "title": "One dead and more than a dozen missing after 'terrifying' flash flood hits Grand Canyon",
+      "url": "https://www.bbc.co.uk/news/articles/clylkjyez1do?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 31, 2026",
+      "description": "\"It was a beautiful day - and then people were screaming,\" one hiker tells the BBC, as 15 people are missing."
+    },
+    {
+      "title": "Algeria president seeks death penalty for arsonists after deadly forest fires",
+      "url": "https://www.bbc.co.uk/news/articles/cvgy41lwe0jo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 31, 2026",
+      "description": "President Abdelmadjid Tebboune says he is not ruling out foul play after 100 wildfires were recorded."
+    },
+    {
+      "title": "Passengers stranded as strike disrupts flights at Kenya's main airport",
+      "url": "https://www.bbc.co.uk/news/articles/c783x05nnlko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 31, 2026",
+      "description": "Kenya Airways says the strike has caused delays of more than six hours, with some flights cancelled."
     },
     {
       "title": "Iceland votes against restarting EU membership talks",
@@ -3224,22 +3302,22 @@
       "description": "Broadcaster RUV reports that 52.8% of voters rejected the government's proposal to resume accession talks."
     },
     {
-      "title": "Manhunt after shooting at Swiss rave kills woman, 22, and injures five",
-      "url": "https://www.bbc.co.uk/news/articles/c9qr750je1go?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Head teacher evacuated 900 children minutes before Nepal floods hit school",
+      "url": "https://www.bbc.co.uk/news/articles/c5ymvdm5520o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 30, 2026",
-      "description": "Five others in their twenties were injured after shots were fired at a techno event near Zurich."
-    },
-    {
-      "title": "Hikers feared missing after flash flooding hits Grand Canyon",
-      "url": "https://www.bbc.co.uk/news/articles/clylkjyez1do?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 30, 2026",
-      "description": "More than 20 people are thought to be unaccounted for after flash flooding on Saturday."
+      "description": "Rajendra Dawadi leapt into action after receiving warnings over waters heading towards his school."
     },
     {
       "title": "'A giant leap forward': Nasa launches powerful new space telescope",
       "url": "https://www.bbc.co.uk/news/articles/ce87e55vgpjo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 30, 2026",
       "description": "The US space agency's telescope is starting a multi-year mission to create a new map of the universe and learn more about dark energy and dark matter."
+    },
+    {
+      "title": "Manhunt after shooting at Swiss rave kills woman, 22, and injures five",
+      "url": "https://www.bbc.co.uk/news/articles/c9qr750je1go?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 30, 2026",
+      "description": "Five others in their twenties were injured after shots were fired at a techno event near Zurich."
     },
     {
       "title": "Zambian opposition leader charged with treason",
@@ -3254,40 +3332,16 @@
       "description": "A 27-year-old German man was arrested immediately after the incident in Rosenheim, Bavaria."
     },
     {
-      "title": "At least 37 dead and hundreds evacuated after strike on Kyiv weapons depot",
-      "url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 29, 2026",
-      "description": "An investigation has begun into the storage of weapons for Ukraine's military near a residential area."
+      "title": "How the US-Canada trade war is being felt on both sides of the border",
+      "url": "https://www.bbc.co.uk/news/articles/c4g4r4lxx25o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 31, 2026",
+      "description": "The US-Canada trade war is being felt on both sides of the border."
     },
     {
-      "title": "Right-wing commentator Milo Yiannopoulos deported from US to UK",
-      "url": "https://www.bbc.co.uk/news/articles/cqlw52vr0dwo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 29, 2026",
-      "description": "The self-styled provocateur had been detained by Immigration and Customs Enforcement (ICE)."
-    },
-    {
-      "title": "Norway's new king remembers 'my dear father' in first speech",
-      "url": "https://www.bbc.co.uk/news/articles/cvgy79wmv4jo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 29, 2026",
-      "description": "Haakon VIII pays emotional tribute to his late father, Harald V, before outlining how he wishes to reign."
-    },
-    {
-      "title": "Former Ecuadorian president imprisoned for corruption",
-      "url": "https://www.bbc.co.uk/news/articles/cvgym9rz07zo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 29, 2026",
-      "description": "Lenín Moreno denies taking bribes from a Chinese firm to secure a contract to build a hydroelectric plant."
-    },
-    {
-      "title": "Ex-White House teleprompter operator ordered to pay $172,000 for Trump speech bets",
-      "url": "https://www.bbc.co.uk/news/articles/c4gj2dl4x52o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 29, 2026",
-      "description": "The staffer was found to have used his prior knowledge of the president's speeches to place lucrative bets."
-    },
-    {
-      "title": "Head teacher evacuated 900 children minutes before Nepal floods hit school",
-      "url": "https://www.bbc.co.uk/news/articles/c5ymvdm5520o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 30, 2026",
-      "description": "Rajendra Dawadi leapt into action after receiving warnings over waters heading towards his school."
+      "title": "Monza memories - Italian GP in pictures through the years",
+      "url": "https://www.bbc.co.uk/sport/formula1/articles/ckg8w8qj5z9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 31, 2026",
+      "description": "A selection of images from the Italian Grand Prix at Monza, which has hosted more Formula 1 races than any other circuit."
     },
     {
       "title": "They fell in love - then had to check they weren't brother and sister",
@@ -3302,40 +3356,10 @@
       "description": "The WhatsApp money launderers arranged cash transfers in the UK and around the world with no paper trail."
     },
     {
-      "title": "Australia usually hosts the world's biggest cuttlefish mating event - not this year",
-      "url": "https://www.bbc.co.uk/news/articles/c75gyw0nkzno?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 29, 2026",
-      "description": "According to official figures only 1,811 cuttlefish turned up to mate this year, down 97% on last year."
-    },
-    {
       "title": "Dolly Parton's dad couldn't read - it inspired her to send books to millions of children",
       "url": "https://www.bbc.co.uk/news/articles/cpwlrrzp8eeo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 29, 2026",
       "description": "Families across the globe share how free books from Parton's Imagination Library helped their children."
-    },
-    {
-      "title": "Footage of Tibet floods isn't being shown in China - and we know little about victims there",
-      "url": "https://www.bbc.co.uk/news/articles/cx2z415w2gpo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 29, 2026",
-      "description": "Some of the most dramatic footage from the deadly flash flooding is hidden from public view in China."
-    },
-    {
-      "title": "Forget Starbucks coffee - Gen Z like their drinks ice cold",
-      "url": "https://www.bbc.co.uk/news/articles/cm2r9n2mrp8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 29, 2026",
-      "description": "Young consumers are choosing cold, customisable drinks and coffee chains are racing to catch up."
-    },
-    {
-      "title": "What tariffs will really cost Canadians and Americans",
-      "url": "https://www.bbc.co.uk/news/articles/cx2z4dv6vn2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 29, 2026",
-      "description": "Households and businesses have become used to tariffs impacting the cost of living for more than year now, so what will change now?"
-    },
-    {
-      "title": "Satellite images reveal scale of flood devastation in Nepal villages",
-      "url": "https://www.bbc.co.uk/news/articles/cd68vpjv21do?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 28, 2026",
-      "description": "Before-and-after images show villages, bridges and a key Nepal-Tibet border crossing washed away by devastating floodwaters."
     },
     {
       "title": "Nepal flood relief vehicles trapped as heavy rain turns roads to mud",
@@ -3362,6 +3386,18 @@
       "description": "The BBC's Lucy Williamson reports on settler attacks on Palestinians, which have been observed over the last week alone."
     },
     {
+      "title": "'My parents won't lend me £10k but helped my brother': When families play financial favourites",
+      "url": "https://www.bbc.co.uk/news/articles/cx279dml00ro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 30, 2026",
+      "description": "So-called financial favouritism can cause jealousy and resentment long into adulthood. Here is how experts say you can avoid it"
+    },
+    {
+      "title": "How the US-Canada trade war is being felt on both sides of the border",
+      "url": "https://www.bbc.co.uk/news/articles/c4g4r4lxx25o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 31, 2026",
+      "description": "The US-Canada trade war is being felt on both sides of the border."
+    },
+    {
       "title": "Fed has 'work to do' if price rises don't ease for Americans, Warsh says",
       "url": "https://www.bbc.co.uk/news/articles/cy9zjgv9lgdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 28, 2026",
@@ -3384,12 +3420,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cm2q7z5mlrmo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 28, 2026",
       "description": "The AI startup has been at loggerheads with the Pentagon over the use of AI by the US military."
-    },
-    {
-      "title": "Overcooked? Why robotic pizza makers are failing",
-      "url": "https://www.bbc.co.uk/news/articles/czxq0wgkkdjo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 27, 2026",
-      "description": "A string of failures has sapped confidence that robots will take over production at pizza restaurants."
     },
     {
       "title": "Selena Gomez pushes back against 'frivolous' fraud claims",
@@ -3446,6 +3476,12 @@
       "description": "With the number of UK data centres set to rise, some communities are concerned about their impact."
     },
     {
+      "title": "Overcooked? Why robotic pizza makers are failing",
+      "url": "https://www.bbc.co.uk/news/articles/czxq0wgkkdjo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 27, 2026",
+      "description": "A string of failures has sapped confidence that robots will take over production at pizza restaurants."
+    },
+    {
       "title": "How Dolly Parton's business savvy helped her succeed far beyond the charts",
       "url": "https://www.bbc.co.uk/news/articles/c0klj72p66lo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 26, 2026",
@@ -3476,6 +3512,18 @@
       "description": "The switch to quieter electric equipment is not going as fast as some would like."
     },
     {
+      "title": "Business groups urge Swinney to scrap 'ineffective' food price cap plan",
+      "url": "https://www.bbc.co.uk/news/articles/c2l80j2rdlxo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 31, 2026",
+      "description": "More than 20 organisations have written a joint letter to John Swinney urging him to scrap his plan for a legal cap on some food and drink prices."
+    },
+    {
+      "title": "'My parents won't lend me £10k but helped my brother': When families play financial favourites",
+      "url": "https://www.bbc.co.uk/news/articles/cx279dml00ro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "August 30, 2026",
+      "description": "So-called financial favouritism can cause jealousy and resentment long into adulthood. Here is how experts say you can avoid it"
+    },
+    {
       "title": "School uniform swap shop 'saves money and tackles second hand clothes stigma'",
       "url": "https://www.bbc.co.uk/news/articles/crr452d45nyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 30, 2026",
@@ -3492,18 +3540,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c3eq38dzpe5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 29, 2026",
       "description": "Guildford barber Sid Gumbrell says he wants to give back and help parents with the cost of living."
-    },
-    {
-      "title": "'A lot of pressure' - SSE Airtricity to increase gas prices by 19%",
-      "url": "https://www.bbc.co.uk/news/articles/cvgyxky1m4wo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 28, 2026",
-      "description": "The annual gas bill of a typical household in the greater Belfast and west gas network areas will increase by almost £172."
-    },
-    {
-      "title": "What do you spend too much on?",
-      "url": "https://www.bbc.co.uk/news/videos/cx2znnn4574o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 28, 2026",
-      "description": "Central London shoppers reveal what they love to splash out on - and share their tips for not overspending."
     },
     {
       "title": "Why the UK is dithering over what to do about e-scooters",
@@ -3566,136 +3602,100 @@
       "description": "Evergrande was at the heart of China’s property boom, and its dramatic collapse"
     },
     {
-      "title": "Lamine Yamal getting back to ‘top level’, Barcelona coach Flick says",
-      "url": "https://www.aljazeera.com/sports/2026/8/30/lamine-yamal-getting-back-to-top-level-barcelona-coach-flick-says?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Teenager struggled in Barca's La Liga start at Elche but improves against Athletic Bilbao, according to Hansi Flick."
+      "title": "Rescuers search for 18 missing after boat capsizes off Northern Cyprus",
+      "url": "https://www.aljazeera.com/news/2026/8/31/rescue-teams-continue-search-for-missing-after-north-cyprus-ferry-sinking?traffic_source=rss",
+      "date": "August 31, 2026",
+      "description": "The captain and crew of the ferry have been brought before a judge and placed under formal arrest."
     },
     {
-      "title": "Israeli strike kills 3-year-old child in Gaza",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/israeli-strike-kills-3-year-old-child-in-gaza?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "A deadly Israeli strike on Deir el-Balah killed two Palestinians including a 3-year-old child."
+      "title": "Fire breaks out after unidentified explosions at oil refinery in Baghdad",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/31/fire-breaks-out-after-unidentified-explosions-at-oil-refinery-in-baghdad-2?traffic_source=rss",
+      "date": "August 31, 2026",
+      "description": "A fire broke out following unidentified explosions at the Al-Dora power plant south of the Iraqi capital, Baghdad."
     },
     {
-      "title": "Jose Andres renews call for investigation into WCK Gaza staff killings",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/jose-andres-renews-call-for-investigation-into-wck-gaza-staff-killings?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "World Central Kitchen founder José Andrés is renewing his call for an independent investigation into Israeli strikes."
+      "title": "Turkiye, Saudi Arabia, Pakistan hold first Mecca defence pact meeting",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/31/turkiye-saudi-arabia-pakistan-hold-first-mecca-defence-pact-meeting?traffic_source=rss",
+      "date": "August 31, 2026",
+      "description": "Turkiye, Saudi Arabia, Pakistan hold first Mecca defence pact meeting"
     },
     {
-      "title": "Video: Raging floodwaters sweep away lorry in the Philippines",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/video-raging-floodwaters-sweep-away-lorry-in-the-philippines?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Video shows a lorry being swept away by raging floodwaters in Rodriguez as torrential rains batter the Philippines."
+      "title": "Nepal tunnel traps hinder flood rescue: How many are dead or missing?",
+      "url": "https://www.aljazeera.com/news/2026/8/31/nepal-tunnel-traps-hinder-flood-rescue-how-many-are-dead-or-missing?traffic_source=rss",
+      "date": "August 31, 2026",
+      "description": "Flash floods on the Nepal-Tibet border have left nearly 5,000 people missing, many trapped in hydropower tunnels."
     },
     {
-      "title": "Butcher of Bosnia Ratko Mladic still hailed as a hero by some Serbs",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/30-08-sv-mladic-serbs-tributes-bosnia-fm?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Hundreds of Bosnian Serbs gathered to pay tribute to former Bosnian Serb commander Ratko Mladić."
+      "title": "After the flash flood disaster, here is what Nepal really needs",
+      "url": "https://www.aljazeera.com/opinions/2026/8/31/after-the-flash-flood-disaster-here-is-what-nepal-really-needs?traffic_source=rss",
+      "date": "August 31, 2026",
+      "description": "The country urgently needs to set up early warning systems, monitoring and safe shelters."
     },
     {
-      "title": "Real Madrid cruise past Malaga 4-0 to maintain Mourinho’s perfect start",
-      "url": "https://www.aljazeera.com/sports/2026/8/30/real-madrid-cruise-past-malaga-4-0-to-maintain-mourinhos-perfect-start?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Jude Bellingham and Kylian Mbappe on the scoresheet as Jose Mourinho's Real Madrid continues to move at pace in La Liga."
+      "title": "Fire breaks out after unidentified explosions at oil refinery in Baghdad",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/31/fire-breaks-out-after-unidentified-explosions-at-oil-refinery-in-baghdad?traffic_source=rss",
+      "date": "August 31, 2026",
+      "description": "A fire broke out following unidentified explosions at the Al-Dora power plant south of the Iraqi capital, Baghdad."
     },
     {
-      "title": "Israeli settler rabbi says Palestinians should leave the occupied West Bank",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/israeli-settler-rabbi-says-palestinians-should-leave-the-occupied-west-bank?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Video shows an Israeli settler rabbi telling peace activists that non-Jews in Israel have no national rights."
+      "title": "Venus Williams bows out of US Open with straight-sets defeat to Sofia Kenin",
+      "url": "https://www.aljazeera.com/sports/2026/8/31/venus-williams-bows-out-of-us-open-with-straight-sets-defeat-to-sofia-kenin?traffic_source=rss",
+      "date": "August 31, 2026",
+      "description": "The 46-year-old US veteran loses to wildcard compatriot but will play in women's doubles with sister Serena Williams."
     },
     {
-      "title": "Former Israeli soldiers pose as Pro-Palestinian supporters in the US",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/former-israeli-soldiers-pose-as-pro-palestinian-supporters-in-the-us?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Former Israeli soldiers posed as pro-Palestinian supporters in New York City to deceive people into engaging with them."
+      "title": "Kazakhstan’s Tokayev appoints longtime adviser as vice president",
+      "url": "https://www.aljazeera.com/news/2026/8/31/kazakhstans-president-taps-longtime-adviser-for-vice-president-role?traffic_source=rss",
+      "date": "August 31, 2026",
+      "description": "Erlan Karin has served as a top ⁠⁠aide to Tokayev since he took over the presidency in 2019."
     },
     {
-      "title": "‘Do you miss Mogadishu?’ Inside Sweden’s far-right campaign",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/do-you-miss-mogadishu-inside-swedens-far-right-campaign?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "How a far-right party with neo-Nazi roots bought every ad surface in Sweden's biggest train station."
+      "title": "Xi, Modi and Putin attend SCO summit: What’s on the agenda?",
+      "url": "https://www.aljazeera.com/news/2026/8/31/xi-modi-and-putin-set-to-meet-for-sco-summit-whats-on-the-agenda?traffic_source=rss",
+      "date": "August 31, 2026",
+      "description": "The two-day summit aims to promote a vision of a multipolar world and mutual trade ties amid Trump's unilateralism."
     },
     {
-      "title": "Devastation from the Nepal-China Floods in 30 photos",
-      "url": "https://www.aljazeera.com/gallery/2026/8/30/in-pictures-devastation-from-the-nepal-china-floods?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "More than 3,000 people missing after glacier collapse unleashes destruction in Himalayas."
+      "title": "England vs Pakistan second Test: Three talking points from cricket series",
+      "url": "https://www.aljazeera.com/sports/2026/8/31/england-vs-pakistan-second-test-three-talking-points-from-cricket-series?traffic_source=rss",
+      "date": "August 31, 2026",
+      "description": "Pakistan’s batting collapses, concerns over the Lord’s pitch and Ollie Robinson’s rampant form highlight the series."
     },
     {
-      "title": "Fernandes hat-trick fires Man Utd in seven-goal thriller with Ipswich",
-      "url": "https://www.aljazeera.com/sports/2026/8/30/fernandes-hat-trick-fires-man-utd-in-seven-goal-thriller-with-ipswich?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Bruno Fernandes's hat-trick inspires Manchester United's comeback 5-2 win against Ipswich Town in the Premier League."
+      "title": "‘An act of resistance’: Raja Shehadeh’s Palestinian diaries find a new home",
+      "url": "https://www.aljazeera.com/news/2026/8/31/an-act-of-resistance-raja-shehadehs-palestinian-diaries-find-a-new-home?traffic_source=rss",
+      "date": "August 31, 2026",
+      "description": "Al Jazeera interviews the leading writer and lawyer, 75, in Edinburgh, where his daily documentation is being archived."
     },
     {
-      "title": "Top officials from Turkiye, Saudi Arabia, Pakistan to meet in Istanbul",
-      "url": "https://www.aljazeera.com/news/2026/8/30/top-officials-from-turkiye-saudi-arabia-pakistan-to-meet-in-istanbul?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Foreign, defence ministers and military chiefs from three countries to meet for first time since signing Mecca pact."
+      "title": "Nepal races to rescue trapped workers, as flood death toll surpasses 900",
+      "url": "https://www.aljazeera.com/news/2026/8/31/nepal-races-to-rescue-hydropower-workers-as-flood-death-toll-reaches-903?traffic_source=rss",
+      "date": "August 31, 2026",
+      "description": "Nepal officials say rescuers focusing on reaching workers in hydropower project tunnels in flood-stricken region."
     },
     {
-      "title": "Nepal’s flood survivors search for missing loved ones",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/nepals-flood-survivors-search-for-missing-loved-ones?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "A young girl is pulled alive from the rubble as rescuers search for survivors and families for missing loved ones."
+      "title": "FIFA president Infantino ‘must go’, says former UEFA boss Platini",
+      "url": "https://www.aljazeera.com/sports/2026/8/31/fifa-president-infantino-must-go-says-former-uefa-boss-platini?traffic_source=rss",
+      "date": "August 31, 2026",
+      "description": "In a scathing interview, French great Michel Platini accuses Infantino of always loving 'money and power'."
     },
     {
-      "title": "NASA launches $4.3bn Roman Telescope to uncover universe’s hidden secrets",
-      "url": "https://www.aljazeera.com/news/2026/8/30/nasa-launches-4-3bn-roman-telescope-to-uncover-universes-hidden-secrets?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "SpaceX Falcon Heavy propels telescope on cosmic quest to investigate dark energy and matter."
+      "title": "Aston Villa vs Arsenal: Premier League – prediction, team news, lineups",
+      "url": "https://www.aljazeera.com/sports/2026/8/31/aston-villa-vs-arsenal-premier-league-prediction-team-news-lineups?traffic_source=rss",
+      "date": "August 31, 2026",
+      "description": "Declan Rice continues to star for Arsenal, who may add Julian Alvarez to ranks, but hosts Villa are sore from sales."
     },
     {
-      "title": "Trump threatens to report journalist Kristen Welker to broadcast regulator",
-      "url": "https://www.aljazeera.com/news/2026/8/30/trump-threatens-to-report-journalist-kristen-welker-to-broadcast-regulator?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "The Federal Communications Commission under Trump has tried to target news outlets for spreading 'fake' news."
+      "title": "Tennis great Djokovic exits US Open in first round amid tears and pain",
+      "url": "https://www.aljazeera.com/sports/2026/8/31/tennis-great-djokovic-exits-us-open-in-first-round-amid-tears-and-pain?traffic_source=rss",
+      "date": "August 31, 2026",
+      "description": "Novak Djokovic's pursuit of a 25th Grand Slam ends in a five-set defeat to unseeded Argentinian player Mariano Navone."
     },
     {
-      "title": "Zambia opposition leader Brian Mundubile charged with treason",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/zambia-opposition-leader-brian-mundubile-charged-with-treason?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Zambian opposition leader Brian Mundubile and his running mate, Makebi Zulu, have been charged with treason."
-    },
-    {
-      "title": "Death toll nears 800 after Himalayan glacier collapse",
-      "url": "https://www.aljazeera.com/news/2026/8/30/death-toll-nears-800-after-himalayan-glacier-collapse?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Specialised search-and-rescue teams join recovery operations in Nepal and China."
-    },
-    {
-      "title": "Google Maps renames Lake Ontario after Trump’s decree on ‘Lake America’",
-      "url": "https://www.aljazeera.com/news/2026/8/30/google-maps-renames-lake-ontario-after-trumps-decree-on-lake-america?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Tech giant says name to remain Lake Ontario for Canadian users, change reflects decision by US government agency."
-    },
-    {
-      "title": "Rival Libya factions sign deal to hold national elections within two years",
-      "url": "https://www.aljazeera.com/news/2026/8/30/rival-libya-factions-sign-deal-to-hold-national-elections-within-two-years?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Signing takes place at UN mission in Tripoli after initial draft inked by UN-backed committee in Tunis on August 20."
-    },
-    {
-      "title": "Israeli soldiers participate in Sydney Marathon despite protests",
-      "url": "https://www.aljazeera.com/sports/2026/8/30/israeli-soldiers-participate-in-sydney-marathon-despite-protests?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Protesters waved Palestinian flags and criticised the Australian government for issuing visas to 40 Israeli soldiers."
-    },
-    {
-      "title": "What’s behind Netanyahu’s condemnation of this weekend’s settler pogroms?",
-      "url": "https://www.aljazeera.com/news/2026/8/30/whats-behind-netanyahus-condemnation-of-this-weekends-settler-pogroms?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Israel's rhetorical outrage masks a calculated, well-funded campaign to permanently erase Palestinian statehood."
-    },
-    {
-      "title": "Educated? Skilled? Ambitious? Traffickers are looking for you",
-      "url": "https://www.aljazeera.com/opinions/2026/8/30/educated-skilled-ambitious-traffickers-are-looking-for-you?traffic_source=rss",
-      "date": "August 30, 2026",
-      "description": "Young jobseekers are being recruited into scam compounds. Urgent action is needed to disrupt these trafficking schemes."
+      "title": "Global coral reef coverage risks irreversible decline, new report warns",
+      "url": "https://www.aljazeera.com/news/2026/8/31/global-coral-reef-coverage-risks-irreversible-decline-new-report-warns?traffic_source=rss",
+      "date": "August 31, 2026",
+      "description": "Coral reefs make up just 1 percent of ocean coverage, but host a quarter of all life in the sea."
     }
   ]
 }
