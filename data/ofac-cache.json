@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T17:08:48.990Z",
+  "updatedAt": "2026-09-01T19:08:56.625Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260828",
@@ -2994,7 +2994,56 @@
       "date": "March 31, 2016"
     }
   ],
-  "europaNews": [],
+  "europaNews": [
+    {
+      "title": "EU adopts 21th package of sanctions against Russia",
+      "url": "https://finance.ec.europa.eu/news/eu-adopts-21th-package-sanctions-against-russia-2026-07-23_en",
+      "date": "July 27, 2026",
+      "description": "The Commission welcomes the Council's adoption of the 21th Russia sanctions package, that further restricts Russia's ability to fund its illegal war and to carry out attacks on Ukrainian civilians and civilian infrastructure."
+    },
+    {
+      "title": "Statement on the seventh Sanctions Coordinators Forum",
+      "url": "https://finance.ec.europa.eu/news/statement-seventh-sanctions-coordinators-forum-2026-04-30_en",
+      "date": "April 30, 2026",
+      "description": "Today, EU Sanctions Envoy, David O’Sullivan, convened the sixth Sanctions Coordinators Forum, gathering high‑level representatives from all EU Member States and a broad coalition of international partners. Representatives of the Government of Ukraine joined for a dedicated session."
+    },
+    {
+      "title": "Statement by Commissioner Albuquerque on the outcomes of the ninth high-level meeting on sanctions implementation",
+      "url": "https://finance.ec.europa.eu/news/statement-commissioner-albuquerque-outcomes-ninth-high-level-meeting-sanctions-implementation-2026-04-30_en",
+      "date": "April 30, 2026",
+      "description": "High‑level representatives from Member States, alongside the Commission and the European External Action Service, came together to share best practices and success stories, and discuss challenges."
+    },
+    {
+      "title": "EU adopts 20th package of sanctions against Russia",
+      "url": "https://finance.ec.europa.eu/news/eu-adopts-20th-package-sanctions-against-russia-2026-04-23_en",
+      "date": "April 24, 2026",
+      "description": "The Commission welcomes the Council's adoption of the 20th Russia sanctions package, that puts further pressure on Russia to engage in negotiations and do so on terms acceptable for Ukraine."
+    },
+    {
+      "title": "Commission welcomes new sanctions against Iran",
+      "url": "https://finance.ec.europa.eu/news/commission-welcomes-new-sanctions-against-iran-2026-01-30_en",
+      "date": "January 30, 2026",
+      "description": "The restrictive measures consist of an asset freeze, travel bans to the EU, and a prohibition to make funds or economic resources available to those listed."
+    },
+    {
+      "title": "New dynamic mechanism to lower price cap for Russian crude oil to $44,10 per barrel",
+      "url": "https://finance.ec.europa.eu/news/new-dynamic-mechanism-lower-price-cap-russian-crude-oil-4410-barrel-2026-01-15_en",
+      "date": "January 30, 2026",
+      "description": "Today, the new automatic and dynamic mechanism for price adaptation of the oil price cap for Russian crude will be applied for the first time."
+    },
+    {
+      "title": "Sanctions: Member States designate 41 additional vessels in Russia's shadow fleet",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_25_3129",
+      "date": "December 18, 2025",
+      "description": "With these new listings, a total of 597 vessels are now listed by the EU."
+    },
+    {
+      "title": "Sanctions: The EU adopts new measures against the Russian shadow fleet ecosystem and Belarus",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_25_3070",
+      "date": "December 15, 2025",
+      "description": "These new measures aim at further increasing the pressure on Russia and Belarus and supporting EU's goal of achieving a just and lasting peace for Ukraine."
+    }
+  ],
   "unNotices": [],
   "bbcNews": [
     {
@@ -3002,6 +3051,12 @@
       "url": "https://www.bbc.co.uk/news/articles/c5ylm3m67n2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 1, 2026",
       "description": "A drone carrying an explosive device was discovered at the airport close to Ukrainian cargo planes on 4 August."
+    },
+    {
+      "title": "US launches more strikes on Iran as state media reports explosions",
+      "url": "https://www.bbc.co.uk/news/articles/cj06q4ynpmjo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 1, 2026",
+      "description": "US Central Command accused Iran of targeting commercial shipping and American service members deployed in the region."
     },
     {
       "title": "'I've never been to Afghanistan': Six million deportees forced to start over under the Taliban",
@@ -3042,16 +3097,22 @@
   ],
   "ajNews": [
     {
-      "title": "US launches new strikes against Iran as war escalates",
+      "title": "The US military began striking targets in Iran, CENTCOM says",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/1/the-us-military-began-striking-targets-in-iran-centcom-says?traffic_source=rss",
+      "date": "September 1, 2026",
+      "description": "The US military said it has begun striking targets in Iran."
+    },
+    {
+      "title": "Iran promises to respond to new wave of US strikes despite Trump’s threats",
       "url": "https://www.aljazeera.com/news/2026/9/1/us-military-says-launching-new-attacks-on-iran?traffic_source=rss",
       "date": "September 1, 2026",
-      "description": "This is a breaking news story."
+      "description": "Trump says the US attacks were 'large and powerful' and warns that Iran would be hit 'much harder' if it retaliates."
     },
     {
       "title": "Germany accuses Russia of drone attack on Leipzig airport",
       "url": "https://www.aljazeera.com/news/2026/9/1/germany-accuses-russia-of-drone-attack-on-leipzig-airport?traffic_source=rss",
       "date": "September 1, 2026",
-      "description": "This is a breaking news story."
+      "description": "Findings announced as European countries report an increase in sabotage attacks and attempts that they blame on Russia."
     },
     {
       "title": "Iran and Russia vow to stand against US ‘unilateralism’",
@@ -3076,30 +3137,6 @@
       "url": "https://www.aljazeera.com/news/2026/9/1/is-trump-wooing-russia-again-and-why?traffic_source=rss",
       "date": "September 1, 2026",
       "description": "CIA chief's Moscow visit and Russian finance minister attending a G20 meeting in the US signal renewed dialogue."
-    },
-    {
-      "title": "Who is Alejandro Betancourt, ex-Chavez ally now Trump’s Venezuela oil man?",
-      "url": "https://www.aljazeera.com/news/2026/9/1/who-is-alejandro-betancourt-ex-chavez-ally-now-trumps-venezuela-oil-man?traffic_source=rss",
-      "date": "September 1, 2026",
-      "description": "The controversial tycoon will lead the joint oil venture as the Trump administration seeks to reshape energy markets."
-    },
-    {
-      "title": "SCO slams attacks, sanctions on Iran: Key takeaways from Bishkek summit",
-      "url": "https://www.aljazeera.com/news/2026/9/1/sco-slams-attacks-sanctions-on-iran-key-takeaways-from-bishkek-summit?traffic_source=rss",
-      "date": "September 1, 2026",
-      "description": "The SCO started in 1996 and accounts for 43 percent of the world’s population and 23 percent of the global economy."
-    },
-    {
-      "title": "Video: SCO summit leaders meet in aftermath of US war on Iran",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/1/video-sco-summit-leaders-meet-in-aftermath-of-us-war-on-iran?traffic_source=rss",
-      "date": "September 1, 2026",
-      "description": "Leaders are meeting in Kyrgyzstan for the annual Shanghai Cooperation Organisation Summit."
-    },
-    {
-      "title": "Why China will not comply with US sanctions on Iran",
-      "url": "https://www.aljazeera.com/opinions/2026/9/1/why-china-will-not-comply-with-us-sanctions-on-iran?traffic_source=rss",
-      "date": "September 1, 2026",
-      "description": "Beijing will not comply with US measures because it can and because it’s in its interest not to."
     }
   ],
   "occNews": [
@@ -3229,16 +3266,22 @@
       "description": "Most migrants have returned to neighbouring Morocco, but as many as 5,000 remain in the Spanish exclave."
     },
     {
-      "title": "Vance calls Michigan Senate candidate El-Sayed 'evil' at campaign rally",
-      "url": "https://www.bbc.co.uk/news/articles/cn9w39py48xo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Jurors in Lindsay Clancy trial deadlocked but judge asks them to keep trying",
+      "url": "https://www.bbc.co.uk/news/articles/c9qr4gp8qy9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 1, 2026",
-      "description": "El-Sayed faces Trump ally Mike Rogers in what has quickly become a senate race characterised by personal attacks and insults between the two."
+      "description": "The Massachusetts mother is facing murder charges for killing her three children at their family home in 2023."
     },
     {
       "title": "Pistol in a lake gives hope for French cold case",
       "url": "https://www.bbc.co.uk/news/articles/c74eklrm344o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 1, 2026",
       "description": "Saad al-Hilli was shot dead with his wife and mother-in-law while holidaying in eastern France in September 2012."
+    },
+    {
+      "title": "As Michigan Senate race heats up, Vance calls El-Sayed 'evil'",
+      "url": "https://www.bbc.co.uk/news/articles/cn9w39py48xo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 1, 2026",
+      "description": "El-Sayed faces Trump ally Mike Rogers in what has quickly become a senate race characterised by personal attacks and insults between the two."
     },
     {
       "title": "France targets Shein and Temu with fast fashion fees",
@@ -3341,12 +3384,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cddv92n194vo?at_medium=RSS&amp;at_campaign=rss",
       "date": "August 31, 2026",
       "description": "A 22-year-old Italian woman was killed and several injured at a techno rave in Aarau."
-    },
-    {
-      "title": "Ex-congressman George Santos banned from betting platform for life",
-      "url": "https://www.bbc.co.uk/news/articles/cpwlxy49225o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "August 31, 2026",
-      "description": "The prediction market operator Kalshi says Santos made barred trades and misleading comments that influenced prices."
     },
     {
       "title": "The final minutes before floodwater crashed through Nepal-China border",
@@ -3685,6 +3722,66 @@
       "description": "Central London shoppers reveal what they love to splash out on - and share their tips for not overspending."
     },
     {
+      "title": "UN food agency cuts aid in West Bank amid funding crisis",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/1/un-food-agency-cuts-aid-in-west-bank-amid-funding-crisis?traffic_source=rss",
+      "date": "September 1, 2026",
+      "description": "UN food agency cuts aid in West Bank amid funding crisis"
+    },
+    {
+      "title": "Health crisis looming as Gaza heads towards rainy season, warns WHO",
+      "url": "https://www.aljazeera.com/news/2026/9/1/health-crisis-looming-as-gaza-heads-towards-rainy-season-warns-who?traffic_source=rss",
+      "date": "September 1, 2026",
+      "description": "Water quality in embattled Palestinian enclave already poor; flooding will exacerbate threat to health, says UN agency."
+    },
+    {
+      "title": "Vanuatu pushes France to accept ICJ jurisdiction in Pacific islands dispute",
+      "url": "https://www.aljazeera.com/news/2026/9/1/vanuatu-pushes-france-to-accept-icj-jurisdiction-in-pacific-islands-dispute?traffic_source=rss",
+      "date": "September 1, 2026",
+      "description": "Vanuatu says French control of islands is relic of colonial past, as France’s far right uses case as a political weapon."
+    },
+    {
+      "title": "Nepal rescuers race to reach 900 missing hydropower workers",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/1/nepal-rescuers-race-to-reach-900-missing-hydropower-workers?traffic_source=rss",
+      "date": "September 1, 2026",
+      "description": "Rescuers in Nepal are prioritising the search for at least 900 workers missing from 12 hydropower projects."
+    },
+    {
+      "title": "Deep-sea search begins for 20 people missing in Cyprus ferry disaster",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/1/deep-sea-search-begins-for-20-people-missing-in-cyprus-ferry-disaster?traffic_source=rss",
+      "date": "September 1, 2026",
+      "description": "A deep-sea vessel from Turkiye joined the search on Tuesday for 20 people missing for two days."
+    },
+    {
+      "title": "US health authorities contradict state officials on measles-related deaths",
+      "url": "https://www.aljazeera.com/news/2026/9/1/us-health-authorities-contradict-state-officials-on-measles-related-deaths?traffic_source=rss",
+      "date": "September 1, 2026",
+      "description": "Clash with Pennsylvania comes as US records highest number of measles cases in decades."
+    },
+    {
+      "title": "John Ternus succeeds Tim Cook as Apple CEO after 15 years",
+      "url": "https://www.aljazeera.com/economy/2026/9/1/john-ternus-succeeds-tim-cook-as-apple-ceo-after-15-years?traffic_source=rss",
+      "date": "September 1, 2026",
+      "description": "Apple gears up for innovation under Ternus before a new product launch event that could include foldable phones."
+    },
+    {
+      "title": "Pitso Mosimane appointed by South Africa ahead of AFCON qualifiers",
+      "url": "https://www.aljazeera.com/sports/2026/9/1/pitso-mosimane-appointed-by-south-africa-ahead-of-afcon-qualifiers?traffic_source=rss",
+      "date": "September 1, 2026",
+      "description": "Pitso Mosimane replaces Hugo Broos as manager of the South Africa national football team following World Cup exit."
+    },
+    {
+      "title": "China’s Xi makes first visit to Egypt in a decade, amid regional turmoil",
+      "url": "https://www.aljazeera.com/economy/2026/9/1/chinas-xi-makes-first-visit-to-egypt-in-a-decade-amid-regional-turmoil?traffic_source=rss",
+      "date": "September 1, 2026",
+      "description": "Chinese President Xi visits Egypt to deepen economic ties and align strategies amid Middle East crises."
+    },
+    {
+      "title": "Ousted UK Prime Minister Keir Starmer to quit domestic politics",
+      "url": "https://www.aljazeera.com/news/2026/9/1/ousted-uk-prime-minister-keir-starmer-to-quit-domestic-politics?traffic_source=rss",
+      "date": "September 1, 2026",
+      "description": "Departed Labour Party leader now plans to focus on international affairs."
+    },
+    {
       "title": "Destroyed desalination plant worsens Gaza’s drinking water crisis",
       "url": "https://www.aljazeera.com/features/2026/9/1/destroyed-desalination-plant-worsens-gazas-drinking-water-crisis?traffic_source=rss",
       "date": "September 1, 2026",
@@ -3703,7 +3800,7 @@
       "description": "Residents of Buenos Aires say they will miss the football legend who won the 2022 World Cup for Argentina."
     },
     {
-      "title": "Bank of America vice president identified as victim in Times Square attack",
+      "title": "Bank of America VP identified as victim in Times Square stabbing",
       "url": "https://www.aljazeera.com/news/2026/9/1/bank-of-america-vice-president-identified-as-killed-in-times-square-attack?traffic_source=rss",
       "date": "September 1, 2026",
       "description": "Erin Piacenti identified as one of two victims in daytime stabbing on New York City thoroughfare."
@@ -3731,48 +3828,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/1/palestinian-farmers-inspect-olive-trees-bulldozed-by-israeli-forces?traffic_source=rss",
       "date": "September 1, 2026",
       "description": "Palestinian farmers inspect olive trees bulldozed by Israeli forces"
-    },
-    {
-      "title": "Football Fandom: Who owns your loyalty?",
-      "url": "https://www.aljazeera.com/video/doha-debates/2026/9/1/football-fandom-who-owns-your-loyalty?traffic_source=rss",
-      "date": "September 1, 2026",
-      "description": "How is money changing football?"
-    },
-    {
-      "title": "Barcelona sign Gabriel Jesus from Arsenal for a reported $11.6m",
-      "url": "https://www.aljazeera.com/sports/2026/9/1/barcelona-sign-gabriel-jesus-from-arsenal-for-a-reported-11-5m?traffic_source=rss",
-      "date": "September 1, 2026",
-      "description": "Brazil's Gabriel Jesus transfers from Premier League champions Arsenal to La Liga holders Barcelona on deadline day."
-    },
-    {
-      "title": "Napoli’s ex Man Utd star McTominay needs surgery for irregular heartbeat",
-      "url": "https://www.aljazeera.com/sports/2026/9/1/napolis-ex-man-utd-star-mctominay-needs-surgery-for-irregular-heartbeat?traffic_source=rss",
-      "date": "September 1, 2026",
-      "description": "Scotland international Scott McTominay, who joined Napoli from Manchester United, to undergo heart surgery."
-    },
-    {
-      "title": "How wildfires are scorching France’s wine industry",
-      "url": "https://www.aljazeera.com/news/2026/9/1/how-wildfires-are-scorching-frances-wine-industry?traffic_source=rss",
-      "date": "September 1, 2026",
-      "description": "Europe's largest wine exporter is already battling a cocktail of crisis from heatwaves to lower sales."
-    },
-    {
-      "title": "Irish minister calls for EU action in banning Israeli settlement trade",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/1/irish-minister-calls-for-eu-action-in-banning-israeli-settlement-trade?traffic_source=rss",
-      "date": "September 1, 2026",
-      "description": "Ireland’s defence minister has called on EU member states to take more action to ban trade with Israeli settlements."
-    },
-    {
-      "title": "UN sounds climate alarm as China-Taiwan row threatens to overshadow forum",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/1/un-sounds-climate-alarm-as-china-taiwan-row-threatens-to-overshadow-forum?traffic_source=rss",
-      "date": "September 1, 2026",
-      "description": "The UN has raised fresh alarm over the climate crisis at the Pacific Islands Forum in Palau, amid China-Taiwan tensions."
-    },
-    {
-      "title": "Lionel Messi retires: What records and titles does Argentina legend hold?",
-      "url": "https://www.aljazeera.com/sports/2026/9/1/lionel-messi-records-argentina-international-retirement-football?traffic_source=rss",
-      "date": "September 1, 2026",
-      "description": "A by-the-numbers look at Messi’s international career with Argentina, including his individual and team honours."
     }
   ]
 }
