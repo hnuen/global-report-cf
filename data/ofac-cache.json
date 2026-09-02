@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-02T17:08:29.584Z",
+  "updatedAt": "2026-09-02T19:08:32.995Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260902",
+      "code": "20260902",
+      "title": "Reminder to file the 2026 Annual Report of Blocked Property; Issuance of Amended Venezuela-related General Licenses and Frequently Asked Question",
+      "date": "September 02, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260828",
       "code": "20260828",
@@ -54,12 +60,6 @@
       "code": "20260807",
       "title": "Counter Terrorism and Iran-related Designations; Counter Narcotics Designations Removals; Issuance of Amended Iran-related Frequently Asked Question",
       "date": "August 07, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260806",
-      "code": "20260806",
-      "title": "Cuba-related Designations; Issuance of Cuba-related Frequently Asked Question",
-      "date": "August 06, 2026"
     }
   ],
   "civilPenalties": [
@@ -2382,7 +2382,7 @@
     "venezuela-related-sanctions": {
       "name": "Venezuela-Related Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/venezuela-related-sanctions",
-      "lastUpdated": "Aug 27, 2026",
+      "lastUpdated": "Sep 02, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -2790,16 +2790,16 @@
           "url": "https://ofac.treasury.gov/media/936821/download?inline"
         },
         {
-          "number": "51C",
-          "title": "Venezuela General License 51C",
+          "number": "51D",
+          "title": "Venezuela General License 51D",
           "date": "August 27, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/936826/download?inline"
+          "url": "https://ofac.treasury.gov/media/936856/download?inline"
         },
         {
           "number": "52B",
           "title": "Venezuela General License 52B",
-          "date": "August 27, 2026",
+          "date": "September 02, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936831/download?inline"
         },
@@ -2811,23 +2811,23 @@
           "url": "https://ofac.treasury.gov/media/935386/download?inline"
         },
         {
-          "number": "54B",
-          "title": "Venezuela General License 54B",
+          "number": "54C",
+          "title": "Venezuela General License 54C",
           "date": "March 24, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/936836/download?inline"
+          "url": "https://ofac.treasury.gov/media/936861/download?inline"
         },
         {
-          "number": "55",
-          "title": "Venezuela General License 55",
-          "date": "August 27, 2026",
+          "number": "55A",
+          "title": "Venezuela General License 55A",
+          "date": "September 02, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/935396/download?inline"
+          "url": "https://ofac.treasury.gov/media/936866/download?inline"
         },
         {
           "number": "56",
           "title": "Venezuela General License 56",
-          "date": "March 27, 2026",
+          "date": "September 02, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935401/download?inline"
         },
@@ -3103,6 +3103,24 @@
   ],
   "ajNews": [
     {
+      "title": "Signing ceremony as US to control a fifth of Venezuela’s oil reserves",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/2/signing-ceremony-as-us-to-control-a-fifth-of-venezuelas-oil-reserves?traffic_source=rss",
+      "date": "September 2, 2026",
+      "description": "Signing ceremony as US to control a fifth of Venezuela’s oil reserves."
+    },
+    {
+      "title": "EU ministers in Ireland tackle Israeli settlement trade and Ukraine defence",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/2/09-02-26-reported-ireland-talks?traffic_source=rss",
+      "date": "September 2, 2026",
+      "description": "EU ministers in Ireland have announced a mission to support Lebanon’s army but remain divided on sanctions on Israel."
+    },
+    {
+      "title": "US oil giant Chevron to expand Venezuela operations",
+      "url": "https://www.aljazeera.com/economy/2026/9/2/us-oil-giant-chevron-to-expand-venezuela-operations?traffic_source=rss",
+      "date": "September 2, 2026",
+      "description": "Chevron, the only US oil firm with major presence in Venezuela, said it has got extra acreage and will double output."
+    },
+    {
       "title": "China’s Xi urges new Middle East security framework during rare Egypt visit",
       "url": "https://www.aljazeera.com/news/2026/9/2/chinas-xi-urges-new-middle-east-security-framework-during-rare-egypt-visit?traffic_source=rss",
       "date": "September 2, 2026",
@@ -3113,30 +3131,6 @@
       "url": "https://www.aljazeera.com/features/2026/9/2/can-ukraines-drones-shut-russian-airspace-what-that-means-for-airlines?traffic_source=rss",
       "date": "September 2, 2026",
       "description": "What happens if the airspace of the world's largest country by land mass is out of bounds because of Ukrainian drones?"
-    },
-    {
-      "title": "EU or Eurasia: Why Putin sparred with Armenia’s PM",
-      "url": "https://www.aljazeera.com/news/2026/9/2/eu-or-eeu-why-putin-sparred-with-armenias-pm?traffic_source=rss",
-      "date": "September 2, 2026",
-      "description": "Relations between Russia and Armenia have reached historic lows as Yerevan pivots towards the West."
-    },
-    {
-      "title": "Putin and Zelenskyy issue threats as strikes rock Ukraine, Russia",
-      "url": "https://www.aljazeera.com/news/2026/9/2/putin-and-zelenskyy-issue-threats-as-strikes-rock-ukraine-russia?traffic_source=rss",
-      "date": "September 2, 2026",
-      "description": "Putin accuses Zelenskyy of 'terrorism', while Ukraine warns foreign airlines against using Russian airspace."
-    },
-    {
-      "title": "What is Iran’s Castle Breaker missile, used against US bases?",
-      "url": "https://www.aljazeera.com/news/2026/9/2/what-is-irans-castle-breaker-missile-used-against-us-bases?traffic_source=rss",
-      "date": "September 2, 2026",
-      "description": "Kheibar Shekan, Iran's medium-range missile, is said to play a pivotal role in escalating US-Israel tensions."
-    },
-    {
-      "title": "The US is gobbling up Venezuelan oil, but will it lower fuel prices?",
-      "url": "https://www.aljazeera.com/news/2026/9/2/the-us-is-gobbling-up-venezuelan-oil-but-will-it-lower-fuel-prices?traffic_source=rss",
-      "date": "September 2, 2026",
-      "description": "Analysts say Venezuelan crude is hard to extract and refine, and likely can't replace oil stuck in the Strait of Hormuz."
     }
   ],
   "occNews": [
@@ -3254,6 +3248,12 @@
   ],
   "regionsNews": [
     {
+      "title": "Iranian attack on Saudi tanker killed two Filipino sailors, Saudi Arabia says",
+      "url": "https://www.bbc.co.uk/news/articles/cx2zxgg4mx9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 2, 2026",
+      "description": "The kingdom condemns the targeting of Sidr, which was reportedly hit by unknown projectiles in the Strait of Hormuz on Monday."
+    },
+    {
       "title": "US sailors arrive in Thailand's Pattaya after record 250 days at sea",
       "url": "https://www.bbc.co.uk/news/articles/cg7k09z4lj9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 2, 2026",
@@ -3300,18 +3300,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cn8mr1myy2ko?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 2, 2026",
       "description": "Reports say Jordanian nationals are among those killed in the accident in the South Sinai governorate."
-    },
-    {
-      "title": "Madagascar ex-Senate chief sentenced to hard labour over deadly Gen Z protest crackdown",
-      "url": "https://www.bbc.co.uk/news/articles/cz0z3x4n9ypo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 2, 2026",
-      "description": "At least 22 people were killed and more than 100 injured during last year's unrest, according to the UN."
-    },
-    {
-      "title": "Charlie Kirk murder suspect pleads not guilty as judge clears way for death penalty trial",
-      "url": "https://www.bbc.co.uk/news/articles/cj4jn9q7evpo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 2, 2026",
-      "description": "The 23-year-old is charged with aggravated murder, a capital offence in Utah, and six other counts."
     },
     {
       "title": "Ariana Grande makes emotional tour exit and steps back from public life",
@@ -3621,7 +3609,7 @@
     },
     {
       "title": "The Interview",
-      "url": "https://www.bbc.co.uk/sounds/play/live:bbc_world_service_west_africa?at_medium=RSS&amp;at_campaign=rss",
+      "url": "https://www.bbc.co.uk/sounds/play/w3ct98hc?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 1, 2026",
       "description": "Economist Daron Acemoglu on liberal democracy in crisis and how AI could make it worse"
     },
@@ -3636,6 +3624,66 @@
       "url": "https://www.bbc.co.uk/news/videos/cp84ynl2j05o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 1, 2026",
       "description": "Consumer expert Harry Kind explains how you can get your money back."
+    },
+    {
+      "title": "USS Abraham Lincoln reaches Thailand after 9 months at sea",
+      "url": "https://www.aljazeera.com/news/2026/9/2/uss-abraham-lincoln-reaches-thailand-after-9-months-at-sea?traffic_source=rss",
+      "date": "September 2, 2026",
+      "description": "The port visit comes amid reports of severe emotional strain and poor conditions on board following nine months at sea."
+    },
+    {
+      "title": "Will the EU take action against Israel?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/9/2/will-the-eu-take-action-against-israel?traffic_source=rss",
+      "date": "September 2, 2026",
+      "description": "Surge in Israeli settler attacks against Palestinians"
+    },
+    {
+      "title": "Israel kills or injures 7 children a day in Lebanon invasion, report says",
+      "url": "https://www.aljazeera.com/news/2026/9/2/israel-kills-or-injures-7-children-a-day-in-lebanon-invasion-report-says?traffic_source=rss",
+      "date": "September 2, 2026",
+      "description": "Save the Children data shows toll on children in Lebanon, despite government agreement with Israel to halt fighting."
+    },
+    {
+      "title": "UK’s Burnham faces first parliament grilling, vows to ‘bring back hope’",
+      "url": "https://www.aljazeera.com/economy/2026/9/2/uks-burnham-faces-first-parliament-grilling-vows-to-bring-back-hope?traffic_source=rss",
+      "date": "September 2, 2026",
+      "description": "Newly appointed leader takes first Prime Minister’s Questions, pledges to fulfill defence, social spending goals."
+    },
+    {
+      "title": "Gunman in deadly Swiss rave attack ‘lone perpetrator’, police say",
+      "url": "https://www.aljazeera.com/news/2026/9/2/gunman-in-deadly-swiss-rave-attack-lone-perpetrator-police-say?traffic_source=rss",
+      "date": "September 2, 2026",
+      "description": "Police say no indication anyone ​else involved in attack that killed 22-year-old Italian woman."
+    },
+    {
+      "title": "Over 500 students hospitalised after eating state-supplied meals in Indones",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/2/over-500-students-hospitalised-after-eating-state-supplied-meals-in-indones?traffic_source=rss",
+      "date": "September 2, 2026",
+      "description": "More than 500 students in Indonesia were hospitalised with food poisoning on Tuesday."
+    },
+    {
+      "title": "A year into Trump’s boat strike campaign, families search for answers",
+      "url": "https://www.aljazeera.com/news/2026/9/2/a-year-into-trumps-boat-strike-campaign-families-search-for-answers?traffic_source=rss",
+      "date": "September 2, 2026",
+      "description": "While the Trump administration claims it has killed 'narcoterrorists', families fear fishermen are among the victims."
+    },
+    {
+      "title": "Brazilian activist demands Tunisia release Sumud Flotilla organisers",
+      "url": "https://www.aljazeera.com/news/2026/9/2/brazilian-activist-demands-tunisia-release-sumud-flotilla-organisers?traffic_source=rss",
+      "date": "September 2, 2026",
+      "description": "Activists say four organisers of flotilla that sought to break Gaza blockade have been held in Tunisia since March."
+    },
+    {
+      "title": "Uber lays off 3,300 employees in largest cuts since the pandemic",
+      "url": "https://www.aljazeera.com/economy/2026/9/2/uber-lays-off-3300-employees-in-largest-cuts-since-the-pandemic?traffic_source=rss",
+      "date": "September 2, 2026",
+      "description": "The layoffs aim to streamline management layers and simplify team structures, says Uber’s CEO Dara Khosrowshahi."
+    },
+    {
+      "title": "Deadly bus crash in Egypt’s Sinai kills 22, injures 28",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/2/deadly-bus-crash-in-egypts-sinai-kills-22-injures-28?traffic_source=rss",
+      "date": "September 2, 2026",
+      "description": "A deadly bus crash in Egypt’s South Sinai killed 22 people and injured 28"
     },
     {
       "title": "Zambia’s Hichilema begins second term amid disputed vote and arrests",
@@ -3696,60 +3744,6 @@
       "url": "https://www.aljazeera.com/opinions/2026/9/2/how-trumpism-is-changing-the-world?traffic_source=rss",
       "date": "September 2, 2026",
       "description": "This US presidency is rewriting the rules of global governance and ushering the world into a new era."
-    },
-    {
-      "title": "Palestinians in fear as Israeli forces mount pogroms on West Bank mosques",
-      "url": "https://www.aljazeera.com/features/2026/9/2/palestinians-in-fear-as-israeli-forces-mount-pogroms-on-west-bank-mosques?traffic_source=rss",
-      "date": "September 2, 2026",
-      "description": "Palestinian witnesses recount the coordinated Israeli army and settler attacks on mosques in the occupied West Bank."
-    },
-    {
-      "title": "Summer transfers 2026: All to know as Premier League signings break records",
-      "url": "https://www.aljazeera.com/sports/2026/9/2/summer-transfers-2026-all-to-know-as-premier-league-signings-break-records?traffic_source=rss",
-      "date": "September 2, 2026",
-      "description": "Premier League breaks its own record as four of its 11 most expensive signings have arrived this transfer window."
-    },
-    {
-      "title": "Argentina serves up a Messi-shaped schnitzel as fans say goodbye",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/2/argentina-serves-up-a-messi-shaped-schnitzel-as-fans-say-goodbye?traffic_source=rss",
-      "date": "September 2, 2026",
-      "description": "A Messi-shaped schnitzel is on the menu in Buenos Aires, as fans across Argentina pay tribute."
-    },
-    {
-      "title": "Tiger Woods pleads guilty to reckless driving, forfeits driving licence",
-      "url": "https://www.aljazeera.com/sports/2026/9/2/tiger-woods-pleads-guilty-to-reckless-driving-in-florida-car-crash?traffic_source=rss",
-      "date": "September 2, 2026",
-      "description": "Golfer's driving licence will be suspended for five years under the terms of a plea agreement that dropped DUI charges."
-    },
-    {
-      "title": "In Yemen, dates provide lifeline for farmers with few economic options",
-      "url": "https://www.aljazeera.com/features/2026/9/2/in-yemen-dates-provide-lifeline-for-farmers-with-few-economic-options?traffic_source=rss",
-      "date": "September 2, 2026",
-      "description": "Hindered by poor infrastructure and climate challenges, farmers in Yemen cling to traditional methods to harvest dates."
-    },
-    {
-      "title": "Charlie Kirk murder suspect pleads not guilty to murder charge",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/2/charlie-kirk-murder-suspect-pleads-not-guilty-to-murder-charge?traffic_source=rss",
-      "date": "September 2, 2026",
-      "description": "Charlie Kirk murder suspect pleads not guilty to murder charge"
-    },
-    {
-      "title": "Bodies excavated from worst flood-hit district near Nepal-China border",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/2/bodies-excavated-from-worst-flood-hit-district-near-nepal-china-border?traffic_source=rss",
-      "date": "September 2, 2026",
-      "description": "Bodies are being excavated from the mud in Nepal's Rusawa district, which was devastated by the glacial flood."
-    },
-    {
-      "title": "Palestinian landowners confront bulldozers using their hands",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/2/palestinian-landowners-confront-bulldozers-using-their-hands?traffic_source=rss",
-      "date": "September 2, 2026",
-      "description": "Palestinian landowners confront bulldozers using their hands"
-    },
-    {
-      "title": "Killing at Sea",
-      "url": "https://www.aljazeera.com/video/fault-lines/2026/9/2/killing-at-sea?traffic_source=rss",
-      "date": "September 2, 2026",
-      "description": "Three families, two bombings and a hidden war: uncovering the lives behind Operation Southern Spear's dead."
     }
   ]
 }
