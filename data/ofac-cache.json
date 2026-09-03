@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03T19:08:00.028Z",
+  "updatedAt": "2026-09-03T21:07:55.308Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260903",
@@ -2540,11 +2540,12 @@
       "generalLicenses": [
         {
           "number": "2A",
-          "title": "Venezuela General License 2A",
+          "title": "Authorizing Certain New Debt, New Equity, and Securities Transactions Involving PDV Holding, Inc. and CITGO Holding, Inc. ( a)",
           "date": "August 25, 2017",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34121/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "3I",
@@ -2560,15 +2561,17 @@
           "date": "April 17, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31741/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "5Y",
-          "title": "Venezuela General License 5Y",
+          "title": "Authorizing Certain Transactions Related to the Petróleos de Venezuela, S.A. 2020 8.5 Percent Bond on or After September 17, 2026",
           "date": "June 18, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936651/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "7C",
@@ -2592,135 +2595,152 @@
           "date": "January 28, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34131/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "15C",
-          "title": "Venezuela General License 15C",
+          "title": "Authorizing Transactions Involving Certain Banks for Certain Entities ( a)",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/33126/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "16C",
-          "title": "Venezuela General License 16C",
+          "title": "Authorizing Maintenance of U.S. Person Accounts and Noncommercial, Personal Remittances Involving Certain Banks",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/33121/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "18A",
-          "title": "Venezuela General License 18A",
+          "title": "Authorizing Certain Transactions Involving Integraci6n Administradora de Fondos de Ahorro Previsional, S.A",
           "date": "March 22, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34126/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "21",
-          "title": "Venezuela General License 21",
+          "title": "Entries in Certain Accounts for Normal Service Charges and Payments and Transfers to Blocked Accounts in U.S. Financial Institutions Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/46421/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "22",
-          "title": "Venezuela General License 22",
+          "title": "Venezuela's Mission to the United Nations",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/30601/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "23",
-          "title": "Venezuela General License 23",
+          "title": "Third-country Diplomatic and Consular Funds Transfers Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34116/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "24A",
-          "title": "Venezuela General License 24A",
+          "title": "Certain Transactions Involving the Government of Venezuela Related to Telecommunications and Mail Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935731/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "25",
-          "title": "Venezuela General License 25",
+          "title": "Exportation of Certain Services, Software, Hardware, and Technology Incident to the Exchange of Communications over the Internet Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31761/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "26",
-          "title": "Venezuela General License 26",
+          "title": "Emergency and Certain Other Medical Services Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31766/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "27",
-          "title": "Venezuela General License 27",
+          "title": "Certain Transactions Related to Patents, Trademarks, and Copyrights Authorized ( a)",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34111/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "29",
-          "title": "Venezuela General License 29",
+          "title": "Certain Transactions Involving the Government of Venezuela in Support of Certain Nongovernmental Organizations' Activities Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31771/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "30B",
-          "title": "Venezuela General License 30B",
+          "title": "Authorizing Certain Transactions Necessary to Port and Airport Operations",
           "date": "February 2, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934996/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "31B",
-          "title": "Venezuela General License 31B",
+          "title": "Certain Transactions Involving the IV Venezuelan National Assembly and Certain Other Persons",
           "date": "January 4, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/930241/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "32",
-          "title": "Venezuela General License 32",
+          "title": "Authorizing Certain Transactions Related to Personal Maintenance of Individuals Who Are U.S. Persons Residing in Venezuela",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34101/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "33",
-          "title": "Venezuela General License 33",
+          "title": "Authorizing Overflight Payments, Emergency Landings, and Air Ambulance Services",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34096/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "34A",
-          "title": "Venezuela General License 34A",
+          "title": "Authorizing Transactions Involving Certain Government of Venezuela Persons",
           "date": "September 9, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/25966/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "35",
@@ -2732,43 +2752,48 @@
         },
         {
           "number": "42",
-          "title": "Venezuela General License 42",
+          "title": "Authorizing Certain Transactions Related to the Negotiation of Certain Settlement Agreements with the IV Venezuelan National Assembly and Certain Other Persons",
           "date": "May 1, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/931696/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "45B",
-          "title": "Venezuela General License 45B",
+          "title": "Authorizing Certain Repatriation Transactions Involving Consorcio Venezolano de Industrias Aeronáuticas y Servicios Aéreos, S.A",
           "date": "November 16, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/932686/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "46D",
-          "title": "Venezuela General License 46D",
+          "title": "Authorizing Certain Activities Involving Venezuelan-Origin Oil or Petrochemical Products",
           "date": "June 10, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936806/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "47B",
-          "title": "Venezuela General License 47B",
+          "title": "Authorizing the Sale of U.S.-Origin Diluents to Venezuela",
           "date": "June 10, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936811/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "48C",
-          "title": "Venezuela General License 48C",
+          "title": "Authorizing the Supply of Certain Items and Services to Venezuela",
           "date": "June 10, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936816/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "49A",
@@ -3042,6 +3067,12 @@
   "unNotices": [],
   "bbcNews": [
     {
+      "title": "ICE agent charged with lying about shooting Venezuelan man during crackdown",
+      "url": "https://www.bbc.co.uk/news/articles/c70dzzkwgg5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 3, 2026",
+      "description": "The ICE officer faces federal charges related to the January shooting in Minnesota."
+    },
+    {
       "title": "EU and Nato vow to step up pressure on Russia after 'new escalation' in Germany",
       "url": "https://www.bbc.co.uk/news/articles/ce9e810pg7ko?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 3, 2026",
@@ -3052,12 +3083,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cyvze0n4vy1o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 2, 2026",
       "description": "The 46-year-old figure of international intrigue has an apparent knack for being in the right place at the right time."
-    },
-    {
-      "title": "Rosenberg: Putin's veiled threat to UK part of Russia's campaign against West",
-      "url": "https://www.bbc.co.uk/news/articles/c62j50n131mo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 2, 2026",
-      "description": "The Russian president wants to keep Britain guessing - and stressing - over Moscow's real intentions."
     },
     {
       "title": "Who is Alejandro Betancourt, colourful oil baron behind US-Venezuela oil deal?",
@@ -3073,6 +3098,12 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Ten injured in Ukraine as Kyiv expects talks with US envoys in coming days",
+      "url": "https://www.aljazeera.com/news/2026/9/3/ten-injured-in-ukraine-as-kyiv-expects-talks-with-us-envoys-in-coming-days?traffic_source=rss",
+      "date": "September 3, 2026",
+      "description": "Separately, one person killed and five injured after Ukrainian drone struck bus in Russian-controlled part of Horlivka."
+    },
     {
       "title": "Kurdish women who fought ISIL seek place in Syria’s new security forces",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/3/09-03-ypj-syrian-army-sv?traffic_source=rss",
@@ -3225,52 +3256,10 @@
       "description": "Her foundation said she \"passed away peacefully\" at her home in New York City, \"surrounded by many who loved her\"."
     },
     {
-      "title": "Channel smuggling gangs resort to 'mega-dinghies' as crackdown limits small boat supply",
-      "url": "https://www.bbc.co.uk/news/articles/ce3rn93de9eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 3, 2026",
-      "description": "Once-rival criminal groups are being forced to work together because of a shortage of small boats, a BBC investigation has found."
-    },
-    {
       "title": "Palestinian teens killed during settler attack on West Bank village, officials say",
       "url": "https://www.bbc.co.uk/news/articles/cj6482r6yl4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 3, 2026",
       "description": "Al-Mughayyir's council says they were trying to stop settlers stealing sheep, but the Israeli military says they threw stones at its troops."
-    },
-    {
-      "title": "Anthony Joshua's driver attempted overtake before fatal crash, trial hears",
-      "url": "https://www.bbc.co.uk/news/articles/cd68jv9d21zo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 3, 2026",
-      "description": "Adeniyi Mobolaji Kayode is charged in Nigeria with offences including causing death by dangerous driving."
-    },
-    {
-      "title": "Trump $1 coin makes him first living president on US currency in a century",
-      "url": "https://www.bbc.co.uk/news/articles/c7507g9v992o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 3, 2026",
-      "description": "The US Mint special edition is stamped with a portrait of Trump alongside the words \"LIBERTY\" and \"IN GOD WE TRUST\""
-    },
-    {
-      "title": "More than 80 migrants feared dead after boat rescued off Canary Islands",
-      "url": "https://www.bbc.co.uk/news/articles/c33kzv7kly4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 3, 2026",
-      "description": "Rescuers found 44 survivors on board the vessel but bad weather meant they had to leave five bodies behind."
-    },
-    {
-      "title": "Vance's Antichrist comments are a 'common belief', his friend tells BBC",
-      "url": "https://www.bbc.co.uk/news/articles/cn4kwzr8gd9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 3, 2026",
-      "description": "The US vice-president recently mused with a Christian podcast host on whether the end of the world was nigh."
-    },
-    {
-      "title": "Liechtenstein MPs vote to legalise abortion despite threat of veto",
-      "url": "https://www.bbc.co.uk/news/articles/c9dwedep38po?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 3, 2026",
-      "description": "Organisers of the citizens' initiative say they have popular support, even though the all-powerful monarch has said he will veto the legislation."
-    },
-    {
-      "title": "Kenyan president orders crackdown on foreigners operating small businesses",
-      "url": "https://www.bbc.co.uk/news/articles/c9861x5pzgxo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 3, 2026",
-      "description": "It comes amid concerns over the growing number of traders from neighbouring countries."
     },
     {
       "title": "'Beautiful, vibrant' Disney star Carla Jeffery dies aged 33",
@@ -3279,10 +3268,40 @@
       "description": "Jeffery was known for playing cheerleader Bree in 2018 Disney Channel movie Zombies and two sequels."
     },
     {
+      "title": "More than 80 migrants feared dead after boat rescued off Canary Islands",
+      "url": "https://www.bbc.co.uk/news/articles/c33kzv7kly4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 3, 2026",
+      "description": "Rescuers found 44 survivors on board the vessel but bad weather meant they had to leave five bodies behind."
+    },
+    {
+      "title": "Anthony Joshua's driver attempted overtake before fatal crash, trial hears",
+      "url": "https://www.bbc.co.uk/news/articles/cd68jv9d21zo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 3, 2026",
+      "description": "Adeniyi Mobolaji Kayode is charged in Nigeria with offences including causing death by dangerous driving."
+    },
+    {
       "title": "Embattled Spanish PM insists there were no prior warnings before Ceuta crisis",
       "url": "https://www.bbc.co.uk/news/articles/c07lz7rn2mjo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 3, 2026",
       "description": "Pedro Sánchez tells parliament it is absurd to think the government knew and did nothing, after thousands join protests in Spanish cities."
+    },
+    {
+      "title": "Trump $1 coin makes him first living president on US currency in a century",
+      "url": "https://www.bbc.co.uk/news/articles/c7507g9v992o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 3, 2026",
+      "description": "The US Mint special edition is stamped with a portrait of Trump alongside the words \"LIBERTY\" and \"IN GOD WE TRUST\""
+    },
+    {
+      "title": "Vance's Antichrist comments are a 'common belief', his friend tells BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cn4kwzr8gd9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 3, 2026",
+      "description": "The US vice-president recently mused with a Christian podcast host on whether the end of the world was nigh."
+    },
+    {
+      "title": "Kenyan president orders crackdown on foreigners operating small businesses",
+      "url": "https://www.bbc.co.uk/news/articles/c9861x5pzgxo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 3, 2026",
+      "description": "It comes amid concerns over the growing number of traders from neighbouring countries."
     },
     {
       "title": "Sydney police investigate second possible mistaken identity killing in two days",
@@ -3297,28 +3316,16 @@
       "description": "The British actor had significant conditions, cited on his death certificate in Los Angeles County."
     },
     {
-      "title": "Maltese tycoon acquitted of orchestrating murder of renowned journalist",
-      "url": "https://www.bbc.co.uk/news/articles/c5ye295pxgxo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 2, 2026",
-      "description": "Daphne Caruana Galizia exposed corruption and money laundering schemes in Malta before she was killed by a car bomb in 2017."
-    },
-    {
-      "title": "LA Clippers fined $30m over Leonard pay scandal",
-      "url": "https://www.bbc.co.uk/sport/basketball/articles/czjze2jj8dro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 3, 2026",
-      "description": "The LA Clippers are fined $30m by the NBA for violating salary rules in order to funnel millions of dollars to star player Kawhi Leonard."
-    },
-    {
       "title": "How Gloria Steinem changed the lives of generations of women",
       "url": "https://www.bbc.co.uk/news/articles/cqv5wxyp5xwo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 3, 2026",
       "description": "The trailblazing feminist spoke out for the legalisation of abortion, same-sex marriage and equal pay for women - but her activism was not without backlash."
     },
     {
-      "title": "Could Lindsay Clancy trial end in a mistrial? Here are the jury's options",
-      "url": "https://www.bbc.co.uk/news/articles/c93vgv4kr49o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 2, 2026",
-      "description": "Jurors have five options before them as they decide the fate of the former nurse charged with murdering her three children."
+      "title": "Data centres are booming in Australia - but at what cost?",
+      "url": "https://www.bbc.co.uk/news/articles/cgl3we7wdr3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 3, 2026",
+      "description": "Advocates say data centres will bring jobs but others worry they will suck up resources while providing little advantage."
     },
     {
       "title": "Why Nepal floods should worry India",
@@ -3351,6 +3358,18 @@
       "description": "Office whip-rounds are a staple of working life but they can raise a lot of awkward questions."
     },
     {
+      "title": "Nepal tunnel rescuers hunt for survivors with rafts and drone",
+      "url": "https://www.bbc.co.uk/news/videos/ckg0eerml02o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 3, 2026",
+      "description": "South Asian correspondent Azadeh Moshiri is at the site of a tunnel where rescuers still hope to find survivors following the Nepal-Tibet floods."
+    },
+    {
+      "title": "Watch: Gloria Steinem dedicated her life to fight for women's equality",
+      "url": "https://www.bbc.co.uk/news/videos/c9865l26097o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 3, 2026",
+      "description": "The feminist icon who became leader of the women's liberation movement in the US died on Wednesday at the age of 92, according to her foundation."
+    },
+    {
       "title": "US man struck by lightning describes 'horrific' experience",
       "url": "https://www.bbc.co.uk/news/videos/cz7z93zde3po?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 3, 2026",
@@ -3363,34 +3382,10 @@
       "description": "The facility will be the first of its kind at the White House - though critics feel it alters the property's historic grounds."
     },
     {
-      "title": "'Nothing but mud and silt' - the village swept away by deadly floods in Nepal",
-      "url": "https://www.bbc.co.uk/news/videos/cn0j4k45z32o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 2, 2026",
-      "description": "BBC South Asia correspondent Azadeh Moshiri spoke to a local, who is still waiting for his his wife's body to be retrieved, as rescue efforts continue."
-    },
-    {
       "title": "Why US troops have a history in this raucous Thai city",
       "url": "https://www.bbc.co.uk/news/videos/c5yw03jr892o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 2, 2026",
       "description": "The BBC's Jonathan Head looks at the historical echoes of US troops arriving in Pattaya, a beach resort famous for its racy bars."
-    },
-    {
-      "title": "Cup noodles made with cold water? BBC tries Japan's viral snack",
-      "url": "https://www.bbc.co.uk/news/videos/ce30lqln299o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 1, 2026",
-      "description": "The BBC's Tokyo correspondent Kurumi Mori tries Japan's latest food trend, instant noodles made using cold water."
-    },
-    {
-      "title": "Norway's new king takes oath as mourners pay respects to his late father",
-      "url": "https://www.bbc.co.uk/news/videos/ceq8945e71ro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 1, 2026",
-      "description": "Norway's new King takes the first major step of his reign as his father, the late King Harald V, lies in state at the Royal Palace."
-    },
-    {
-      "title": "Watch: Moment Duane 'Keffe D' Davis is found guilty of Tupac Shakur's murder",
-      "url": "https://www.bbc.co.uk/news/videos/ckg7yrwp70qo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 1, 2026",
-      "description": "The rapper's killing became one of popular culture's great mysteries, with countless theories but no arrests until 2023."
     },
     {
       "title": "Households warned gas price spike could pile fresh pressure on energy bills",
@@ -3597,6 +3592,12 @@
       "description": "Coffees at some city centre outlets now cost £5. It's a story of tariffs, the climate, Gen Z cultural tastes, and savvy coffee farmers playing the market, writes Faisal Islam"
     },
     {
+      "title": "Watch: Trump $1 commemorative coin goes on sale",
+      "url": "https://www.bbc.co.uk/news/videos/cx2z0jn7450o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 3, 2026",
+      "description": "The US Mint began selling gold-coloured $1(£0.74) coins featuring President Donald Trump's likeness to mark the country's 250th anniversary."
+    },
+    {
       "title": "How much should you give towards a leaving gift?",
       "url": "https://www.bbc.co.uk/news/videos/c33k7pl2pj2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 3, 2026",
@@ -3621,10 +3622,94 @@
       "description": "Poppi founder Allison Ellsworth: Cider vinegar, Shark Tank and riding the 'wellness wave'"
     },
     {
-      "title": "The Interview",
-      "url": "https://www.bbc.co.uk/sounds/play/w3ct98hc?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 1, 2026",
-      "description": "Economist Daron Acemoglu on liberal democracy in crisis and how AI could make it worse"
+      "title": "France records ‘hottest summer ever’ in 2026",
+      "url": "https://www.aljazeera.com/news/2026/9/3/france-records-hottest-summer-ever-in-2026?traffic_source=rss",
+      "date": "September 3, 2026",
+      "description": "France joins other European countries in recording its hottest summer since measurements began."
+    },
+    {
+      "title": "Ipswich Town vs Liverpool: Premier League – prediction, team news, lineups",
+      "url": "https://www.aljazeera.com/sports/2026/9/3/ipswich-town-vs-liverpool-premier-league-prediction-team-news-lineups?traffic_source=rss",
+      "date": "September 3, 2026",
+      "description": "Andoni Iraola is still searching for his first win as Liverpool manager but has Bradley Barcola onboard for Ipswich tie."
+    },
+    {
+      "title": "ICE agent charged with lying under oath about Minnesota shooting",
+      "url": "https://www.aljazeera.com/news/2026/9/3/ice-agent-charged-with-lying-under-oath-about-minnesota-shooting?traffic_source=rss",
+      "date": "September 3, 2026",
+      "description": "Authorities say agent fired into home with people inside, lied about circumstances."
+    },
+    {
+      "title": "India rejects court ruling on Indus Waters Treaty",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/3/03-09-sv-india-rejects-iwt-ruling-in-fm?traffic_source=rss",
+      "date": "September 3, 2026",
+      "description": "India has rejected a Hague-based arbitration court’s ruling that the Indus Waters Treaty remains in force."
+    },
+    {
+      "title": "Israel kills 3 in Gaza as far-right minister plans for Palestinian removals",
+      "url": "https://www.aljazeera.com/news/2026/9/3/israel-kills-3-in-gaza-as-far-right-minister-plans-for-palestinian-removals?traffic_source=rss",
+      "date": "September 3, 2026",
+      "description": "Israeli drone strike and gunfire kills and injures people across the Gaza Strip despite 'ceasefire'."
+    },
+    {
+      "title": "Train crashes into truck at railway crossing in Gdansk, Poland",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/3/train-crashes-into-truck-at-railway-crossing-in-gdansk-poland?traffic_source=rss",
+      "date": "September 3, 2026",
+      "description": "CCTV footage shows the moment a train collided with a truck at a railway crossing in northern Poland."
+    },
+    {
+      "title": "Funeral held for child killed in US strike on Iranian wedding",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/3/09-03-iran-child-funeral-minisv?traffic_source=rss",
+      "date": "September 3, 2026",
+      "description": "Mourners carried the coffin of a child killed in a US strike on a wedding in Kuhestak, along the Strait of Hormuz."
+    },
+    {
+      "title": "Leaders of Thailand and Singapore perform Beatles song, “Let It Be”",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/3/leaders-of-thailand-and-singapore-perform-beatles-song-let-it?traffic_source=rss",
+      "date": "September 3, 2026",
+      "description": "Thai Prime Minister Anutin Charnvirakul and Singapore’s Prime Minister Lawrence Wong performed the Beatles song."
+    },
+    {
+      "title": "FIFA accuses UEFA of ‘smear campaign’ over Infantino, World Cup plan",
+      "url": "https://www.aljazeera.com/sports/2026/9/3/fifa-blasts-uefa-smear-campaign-fights-world-cup-plan-disclosures?traffic_source=rss",
+      "date": "September 3, 2026",
+      "description": "UEFA seeks US testimony, documents for possible lawsuit; FIFA asks US court to defer or let it oppose UEFA's request."
+    },
+    {
+      "title": "Serbia welcomes return of war criminal Mladic’s body with military honours",
+      "url": "https://www.aljazeera.com/news/2026/9/3/serbia-welcomes-return-of-war-criminal-mladics-body-with-military-honours?traffic_source=rss",
+      "date": "September 3, 2026",
+      "description": "Ratko Mladic received a life sentence from a UN court for committing atrocities during the 1992-1995 Bosnian War."
+    },
+    {
+      "title": "Advocates decry US House vote to defund universities that boycott Israel",
+      "url": "https://www.aljazeera.com/news/2026/9/3/advocates-decry-us-house-vote-to-defund-universities-that-boycott-israel?traffic_source=rss",
+      "date": "September 3, 2026",
+      "description": "Rights groups say the measure infringes on the freedom of speech of Americans for the benefit of a foreign nation."
+    },
+    {
+      "title": "Is Nepal leading the battle for climate justice?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/9/3/is-nepal-leading-the-battle-for-climate-justice?traffic_source=rss",
+      "date": "September 3, 2026",
+      "description": "Foreign minister demands top three polluting nations compensate Nepal for recent disaster."
+    },
+    {
+      "title": "Four imprisoned Palestine Action activists appeal ‘terrorism’ sentences",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/3/four-imprisoned-palestine-action-activists-appeal-terrorism-sentences-2?traffic_source=rss",
+      "date": "September 3, 2026",
+      "description": "Palestine Action activists convicted of criminal damage “with a terrorist connection” are appealing their convictions."
+    },
+    {
+      "title": "Foreign fighters and external support fuel Sudan’s war: UN-backed probe",
+      "url": "https://www.aljazeera.com/news/2026/9/3/foreign-fighters-and-external-support-fuel-sudans-war-un-backed-probe?traffic_source=rss",
+      "date": "September 3, 2026",
+      "description": "Investigation says support for warring parties strengthens military capabilities, intensifies humanitarian crisis."
+    },
+    {
+      "title": "5 dead, dozens missing after migrant boat found after weeks at sea",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/3/5-dead-dozens-missing-after-migrant-boat-found-after-weeks-at-sea?traffic_source=rss",
+      "date": "September 3, 2026",
+      "description": "Authorities say at least 5 people have died as they attempted to reach Spain’s Canary Islands on a wooden vessel."
     },
     {
       "title": "Stranded survivors in Nepal cross raging Trishuli River using zip line",
@@ -3661,102 +3746,6 @@
       "url": "https://www.aljazeera.com/news/2026/9/3/whats-behind-the-vote-by-mail-controversy-in-the-us?traffic_source=rss",
       "date": "September 3, 2026",
       "description": "As midterm elections approach in November, a legal battle is ensuing over attempts to regulate mail-in voting."
-    },
-    {
-      "title": "Israeli bombing seen behind journalist reporting from Lebanese village",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/3/israeli-bombing-seen-behind-journalist-reporting-from-lebanese-village?traffic_source=rss",
-      "date": "September 3, 2026",
-      "description": "Israeli bombing seen behind journalist reporting from Lebanese village"
-    },
-    {
-      "title": "Israel’s siege on Gaza is forcing dentists to operate in the streets",
-      "url": "https://www.aljazeera.com/features/2026/9/3/gaza-housing-dentists?traffic_source=rss",
-      "date": "September 3, 2026",
-      "description": "Scarce resources and office space mean that dental work is a luxury for most people in Gaza."
-    },
-    {
-      "title": "Real Madrid’s Raul Asencio acquitted in sex-tape sharing case",
-      "url": "https://www.aljazeera.com/sports/2026/9/3/real-madrids-raul-asencio-acquitted-in-sex-tape-sharing-case?traffic_source=rss",
-      "date": "September 3, 2026",
-      "description": "In an unrelated incident, Madrid have opened disciplinary proceedings against Asencio over a drink driving conviction."
-    },
-    {
-      "title": "Houthi fighters clash with Yemeni government forces in country’s southwest",
-      "url": "https://www.aljazeera.com/news/2026/9/3/houthi-fighters-clash-with-yemeni-government-forces-in-countrys-southwest?traffic_source=rss",
-      "date": "September 3, 2026",
-      "description": "Houthis attempt to cut road linking Taiz to al-Makha in apparent bid to sever government's strategic supply route."
-    },
-    {
-      "title": "Deadpool-Wolverine derby in the offing as Hugh Jackman targets Norwich City",
-      "url": "https://www.aljazeera.com/sports/2026/9/3/deadpool-wolverine-derby-in-the-offing-as-hugh-jackman-targets-norwich-city?traffic_source=rss",
-      "date": "September 3, 2026",
-      "description": "After Deadpool actor Ryan Reynolds's purchase of Wrexham, his Wolverine costar could land Championship rivals Norwich."
-    },
-    {
-      "title": "20 million children a year face online sexual abuse, UNICEF says",
-      "url": "https://www.aljazeera.com/news/2026/9/3/20-million-children-a-year-face-online-sexual-abuse-unicef-says?traffic_source=rss",
-      "date": "September 3, 2026",
-      "description": "More than one in five children aged 12 to 17 were targeted on digital platforms, the UN children’s agency reports."
-    },
-    {
-      "title": "Billionaire Leon Black sues US congressional panel over Epstein subpoena",
-      "url": "https://www.aljazeera.com/news/2026/9/3/billionaire-leon-black-sues-us-congressional-panel-over-epstein-subpoena?traffic_source=rss",
-      "date": "September 3, 2026",
-      "description": "Lawyer accuses House panel investigating sex offender of 'fishing expedition' as lawmaker calls for contempt charges."
-    },
-    {
-      "title": "How much oil is going through Hormuz? Why data doesn’t match US claims",
-      "url": "https://www.aljazeera.com/news/2026/9/3/how-much-oil-is-going-through-hormuz-how-data-doesnt-match-us-claims?traffic_source=rss",
-      "date": "September 3, 2026",
-      "description": "Trump says the US is helping around 30 ships cross the waterway daily, but ship-tracking data suggests it's fewer."
-    },
-    {
-      "title": "Panama Canal restricts traffic amid Hormuz crisis: Why this matters",
-      "url": "https://www.aljazeera.com/news/2026/9/3/panama-canal-restricts-traffic-amid-hormuz-crisis-why-this-matters?traffic_source=rss",
-      "date": "September 3, 2026",
-      "description": "Limits on the number of vessels in the canal could create shipping delays and increase freight costs."
-    },
-    {
-      "title": "Jerusalem Daily: Students sing ‘Erase Palestine’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/3/jerusalem-daily-students-sing-erase?traffic_source=rss",
-      "date": "September 3, 2026",
-      "description": "Two Palestinian teens were killed in the occupied West Bank as Israeli settlers and snipers surround a village."
-    },
-    {
-      "title": "Four imprisoned Palestine Action activists appeal ‘terrorism’ sentences",
-      "url": "https://www.aljazeera.com/news/2026/9/3/four-imprisoned-palestine-action-activists-appeal-terrorism-sentences?traffic_source=rss",
-      "date": "September 3, 2026",
-      "description": "Supporters of those who participated in a raid on an Israeli weapons maker say the sentences set a dangerous precedent."
-    },
-    {
-      "title": "Five killed, dozens more feared dead in boat adrift off Canary Islands",
-      "url": "https://www.aljazeera.com/news/2026/9/3/five-killed-dozens-more-feared-dead-in-boat-adrift-off-canary-islands?traffic_source=rss",
-      "date": "September 3, 2026",
-      "description": "Spanish migrant NGO says more than 80 people likely perished on the boat that left The Gambia 27 days ago."
-    },
-    {
-      "title": "Iranian drone damages residential building in Kuwait City",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/3/03-09-iranian-drone-kuwait-building-clip?traffic_source=rss",
-      "date": "September 3, 2026",
-      "description": "An Iranian drone attack damaged a residential building in Kuwait, authorities say, with no casualties reported."
-    },
-    {
-      "title": "Ukrainian intel agencies in Kyiv firefight: What happened and why?",
-      "url": "https://www.aljazeera.com/news/2026/9/3/ukrainian-intel-agencies-in-kyiv-firefight-what-happened-and-why?traffic_source=rss",
-      "date": "September 3, 2026",
-      "description": "Three intelligence officers were wounded in shootout that Zelenskyy has described as 'absolutely disgraceful'."
-    },
-    {
-      "title": "Who are the ‘Hilltop Girls’ behind Israel’s ‘soft settlement’ strategy?",
-      "url": "https://www.aljazeera.com/news/2026/9/3/who-are-the-hilltop-girls-behind-israels-soft-settlement-strategy?traffic_source=rss",
-      "date": "September 3, 2026",
-      "description": "They're not carrying out pogroms, but are nonetheless setting the stage for land grabs by Israeli settlers."
-    },
-    {
-      "title": "Somalia repels armed assault on Baidoa amid regional political tensions",
-      "url": "https://www.aljazeera.com/news/2026/9/3/somalia-repels-armed-assault-on-baidoa-amid-regional-political-tensions?traffic_source=rss",
-      "date": "September 3, 2026",
-      "description": "Explosions and gunfire rock Baidoa as armed groups strike during South West State's political tensions."
     }
   ]
 }
