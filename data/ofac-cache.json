@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-04T13:08:27.554Z",
+  "updatedAt": "2026-09-04T15:08:20.177Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260904",
+      "code": "20260904",
+      "title": "Iran-related Designations; Issuance of Iran-related General License",
+      "date": "September 04, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260903",
       "code": "20260903",
@@ -54,12 +60,6 @@
       "code": "20260818",
       "title": "International Criminal Court-related Designations; Venezuela-related Designation; Issuance of International Criminal Court-related General License",
       "date": "August 18, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260812",
-      "code": "20260812",
-      "title": "Settlement Agreement between the U.S. Department of the Treasury&#039;s Office of Foreign Assets Control and Rice Lake Weighing Systems, Inc.",
-      "date": "August 12, 2026"
     }
   ],
   "civilPenalties": [
@@ -1004,7 +1004,7 @@
     "iran-sanctions": {
       "name": "Iran Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions",
-      "lastUpdated": "Aug 28, 2026",
+      "lastUpdated": "Sep 04, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -1132,25 +1132,9 @@
       ],
       "generalLicenses": [
         {
-          "number": "AA",
-          "title": "Iran General License AA",
-          "date": "August 24, 2026",
-          "expires": "October 23, 2026",
-          "url": "https://ofac.treasury.gov/media/936771/download?inline",
-          "datePdf": true
-        },
-        {
-          "number": "BB",
-          "title": "Iran General License BB",
-          "date": "August 24, 2026",
-          "expires": "September 8, 2026",
-          "url": "https://ofac.treasury.gov/media/936776/download?inline",
-          "datePdf": true
-        },
-        {
           "number": "E",
           "title": "Iran General License E",
-          "date": "August 24, 2026",
+          "date": "September 10, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7996/download?inline"
         },
@@ -1205,7 +1189,8 @@
           "date": "May 20, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934291/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "T",
@@ -1222,6 +1207,31 @@
           "expires": "September 12, 2026",
           "url": "https://ofac.treasury.gov/media/936551/download?inline",
           "datePdf": true
+        },
+        {
+          "number": "AA",
+          "title": "Iran General License AA",
+          "date": "August 24, 2026",
+          "expires": "October 23, 2026",
+          "url": "https://ofac.treasury.gov/media/936771/download?inline",
+          "datePdf": true
+        },
+        {
+          "number": "BB",
+          "title": "Iran General License BB",
+          "date": "August 24, 2026",
+          "expires": "September 8, 2026",
+          "url": "https://ofac.treasury.gov/media/936776/download?inline",
+          "datePdf": true
+        },
+        {
+          "number": "CC",
+          "title": "Iran General License CC",
+          "date": "September 4, 2026",
+          "expires": "September 19, 2026",
+          "url": "https://ofac.treasury.gov/media/936881/download?inline",
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "134C",
@@ -2717,30 +2727,27 @@
         },
         {
           "number": "32",
-          "title": "Authorizing Certain Transactions Related to Personal Maintenance of Individuals Who Are U.S. Persons Residing in Venezuela",
+          "title": "Venezuela General License 32",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34101/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "33",
-          "title": "Authorizing Overflight Payments, Emergency Landings, and Air Ambulance Services",
+          "title": "Venezuela General License 33",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34096/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "34A",
-          "title": "Authorizing Transactions Involving Certain Government of Venezuela Persons",
+          "title": "Venezuela General License 34A",
           "date": "September 9, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/25966/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "35",
@@ -2752,48 +2759,43 @@
         },
         {
           "number": "42",
-          "title": "Authorizing Certain Transactions Related to the Negotiation of Certain Settlement Agreements with the IV Venezuelan National Assembly and Certain Other Persons",
+          "title": "Venezuela General License 42",
           "date": "May 1, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/931696/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "45B",
-          "title": "Authorizing Certain Repatriation Transactions Involving Consorcio Venezolano de Industrias Aeronáuticas y Servicios Aéreos, S.A",
+          "title": "Venezuela General License 45B",
           "date": "November 16, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/932686/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "46D",
-          "title": "Authorizing Certain Activities Involving Venezuelan-Origin Oil or Petrochemical Products",
+          "title": "Venezuela General License 46D",
           "date": "June 10, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936806/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "47B",
-          "title": "Authorizing the Sale of U.S.-Origin Diluents to Venezuela",
+          "title": "Venezuela General License 47B",
           "date": "June 10, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936811/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "48C",
-          "title": "Authorizing the Supply of Certain Items and Services to Venezuela",
+          "title": "Venezuela General License 48C",
           "date": "June 10, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936816/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "49A",
@@ -3067,10 +3069,16 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "Europe targeted by spiralling campaign of sabotage and Russia is the chief suspect",
+      "title": "Europe targeted by spiralling campaign of sabotage - and Russia is the chief suspect",
       "url": "https://www.bbc.co.uk/news/articles/c5y4g6meekro?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 4, 2026",
       "description": "Germany has blamed Russia for an attack on Leipzig airport but there has been a series of suspicious incidents elsewhere."
+    },
+    {
+      "title": "Trump's peace envoys to visit Moscow and Kyiv over weekend, reports say",
+      "url": "https://www.bbc.co.uk/news/articles/c23x0z48x0no?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 4, 2026",
+      "description": "Steve Witkoff and Jared Kushner have led President Donald Trump's efforts to end the Russia-Ukraine war - but talks have stalled."
     },
     {
       "title": "US diesel prices hit an all-time-high",
@@ -3135,6 +3143,24 @@
   ],
   "ajNews": [
     {
+      "title": "‘Things happen’: How Vance’s comment on Iran wedding strike fits US pattern",
+      "url": "https://www.aljazeera.com/news/2026/9/4/things-happen-how-vances-comment-on-iran-wedding-strike-fits-us-pattern?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "From My Lai to civilian killings in Afghanistan, Iraq, the US has often denied role before later quietly acknowledging."
+    },
+    {
+      "title": "At least 100 killed as Yemen’s Houthis push towards key strait",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/at-least-100-killed-as-yemens-houthis-push-towards-key-strait?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "Fighting has intensified between Iran-backed Houthi rebels and Yemeni government forces since Thursday."
+    },
+    {
+      "title": "US envoys headed to Russia and Ukraine to relaunch mediation",
+      "url": "https://www.aljazeera.com/news/2026/9/4/us-envoys-headed-to-russia-and-ukraine-to-relaunch-mediation?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "The return of Washington's negotiators raises hope of progress towards a settlement to end Moscow's war on Ukraine."
+    },
+    {
       "title": "South Korea mulls ‘contributions’ in Strait of Hormuz",
       "url": "https://www.aljazeera.com/news/2026/9/4/south-korea-mulls-contributions-in-strait-of-hormuz?traffic_source=rss",
       "date": "September 4, 2026",
@@ -3157,12 +3183,6 @@
       "url": "https://www.aljazeera.com/economy/2026/9/4/why-has-the-philippines-peso-plunged-to-a-record-low?traffic_source=rss",
       "date": "September 4, 2026",
       "description": "The Southeast Asian country's currency has plummeted amid the fallout of the Iran war and economic challenges at home."
-    },
-    {
-      "title": "Argentina’s Milei threatens sanctions over Falklands oil drilling",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/argentinas-milei-threatens-sanctions-over-falklands-oil-drilling?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Argentina’s President Javier Milei has threatened sanctions against oil companies operating off the Falklands."
     }
   ],
   "occNews": [
@@ -3388,6 +3408,12 @@
       "description": "At least 69 people were shot dead in 1960 but no-one has been prosecuted and victims want restitution."
     },
     {
+      "title": "'A rare moment of joy': Nepal tunnel rescues give hope for more flood survivors",
+      "url": "https://www.bbc.co.uk/news/videos/cd79vp91321o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 4, 2026",
+      "description": "Two people have been rescued more than a week after more than 1,300 people were killed in flash floods on the Nepal-Tibet border."
+    },
+    {
       "title": "'We expect our sons to be killed,' father of teen shot dead in West Bank tells BBC",
       "url": "https://www.bbc.co.uk/news/videos/cn8evz26eyqo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 4, 2026",
@@ -3412,19 +3438,13 @@
       "description": "The jury now faces a seventh day of deliberations in the triple-murder trial."
     },
     {
-      "title": "Could robots be the future of theme parks?",
-      "url": "https://www.bbc.co.uk/news/videos/cdr7g3vdl58o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 4, 2026",
-      "description": "Galaxy Robot Park is a 16,500-square-meter venue in South Korea, with attractions including humanoid robots dancing to K-pop hits."
-    },
-    {
       "title": "Stock up on food to prepare for extreme weather, minister says",
       "url": "https://www.bbc.co.uk/news/articles/cp931m8n3p5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 4, 2026",
       "description": "Dame Angela Eagle warns the weather event could lead to extreme storms this winter."
     },
     {
-      "title": "Hospitality and education boosts US job creation in August",
+      "title": "Surprisingly strong US jobs figures fuel rate rise bets",
       "url": "https://www.bbc.co.uk/news/articles/cy0zx2pkpx9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 4, 2026",
       "description": "The number of roles added to the US economy increased by 162,000 in August, almost triple the 56,000 forecast."
@@ -3452,6 +3472,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cx2z0kvy4n4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 4, 2026",
       "description": "The group - which includes Audi, Porsche, Skoda as well as the VW brand - plans to cut a total of 100,000 posts by 2030."
+    },
+    {
+      "title": "Xbox caps cloud gaming at 15 hours a month for Game Pass subscribers",
+      "url": "https://www.bbc.co.uk/news/articles/cj06zd4l99lo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 4, 2026",
+      "description": "Xbox said the limits were due to the rising cost of cloud gaming, and would allow it to invest more in its performance"
     },
     {
       "title": "'I lost my savings after a job interview scam'",
@@ -3652,16 +3678,64 @@
       "description": "We ask workers in London how much they'd contribute."
     },
     {
+      "title": "Israel frees four more Lebanese prisoners in Red Cross-mediated handover",
+      "url": "https://www.aljazeera.com/news/2026/9/4/israel-frees-four-more-lebanese-prisoners-in-red-cross-mediated-handover?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "Lebanese President Joseph Aoun praises the release and thanks US President Donald Trump for his efforts."
+    },
+    {
+      "title": "Why is Farage’s Reform accused of violating the UK’s foreign funding rules?",
+      "url": "https://www.aljazeera.com/news/2026/9/4/why-is-farages-reform-accused-of-violating-the-uks-foreign-funding-rules?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "Undercover footage allegedly shows top Reform officials discussing ways to evade foreign funding laws."
+    },
+    {
+      "title": "Can the Green Party’s Polanski take on Labour and win Starmer’s old seat?",
+      "url": "https://www.aljazeera.com/news/2026/9/4/can-green-leader-polanski-take-on-labour-and-win-starmers-old-seat?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "Analysts say although Polanski has gained popularity, toppling Labour in its traditional stronghold may be difficult."
+    },
+    {
+      "title": "Two Muslim women journalists allege police assault in India",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/two-muslim-women-journalists-allege-police-assault-in-india?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "Two Muslim female journalists allege they were detained and brutally assaulted by police in India’s capital, Delhi."
+    },
+    {
+      "title": "Philippine court orders arrest of VP Duterte over President Marcos threats",
+      "url": "https://www.aljazeera.com/news/2026/9/4/philippine-court-orders-arrest-of-vp-duterte-over-president-marcos-threats?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "Warrant follows charge she threatened to have Marcos, his wife and a cousin killed by a hitman."
+    },
+    {
+      "title": "Ireland’s Katie Taylor eyes fairytale finish to trailblazing boxing career",
+      "url": "https://www.aljazeera.com/sports/2026/9/4/irelands-katie-taylor-eyes-fairytale-finish-to-trailblazing-boxing-career?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "Unbeaten French challenger Flora Pili stands in the way of Taylor becoming undisputed world champion for a third time."
+    },
+    {
+      "title": "Conflicts and extreme weather pushing global food prices higher, warns UN",
+      "url": "https://www.aljazeera.com/news/2026/9/4/conflicts-and-extreme-weather-pushing-global-food-prices-higher-warns-un?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "UN food price index rises to four-year high, illustrating impact of war and weather."
+    },
+    {
+      "title": "Jerusalem Daily: Israel’s plan to expel Gaza’s population",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/jerusalem-daily-israels-plan-to-expel-gazas-population?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "Ben-Gvir sets out a plan for the illegal forced expulsion of all Palestinians from the Gaza Strip"
+    },
+    {
       "title": "As the China-US AI race reaches Cairo, Egypt faces a strategic decision",
       "url": "https://www.aljazeera.com/news/2026/9/4/as-the-china-us-ai-race-reaches-cairo-egypt-faces-a-strategic-decision?traffic_source=rss",
       "date": "September 4, 2026",
       "description": "Egypt walks a tightrope as China and the US vie for dominance in AI data centre development."
     },
     {
-      "title": "Germany’s far right eyes election breakthrough as AfD surges in Saxony",
-      "url": "https://www.aljazeera.com/news/2026/9/4/germanys-far-right-eyes-election-breakthrough-as-afd-surges-in-saxony?traffic_source=rss",
+      "title": "Germany’s far right AfD eyes election breakthrough in Saxony-Anhalt",
+      "url": "https://www.aljazeera.com/news/2026/9/4/germanys-far-right-eyes-election-breakthrough-as-afd-surges-in-saxony-anhalt?traffic_source=rss",
       "date": "September 4, 2026",
-      "description": "The nationalist party that promises to strip back asylum rights is poised to win a state election for the first time."
+      "description": "The nationalist party is poised to win more than 40 percent of the votes in the state."
     },
     {
       "title": "India’s Smriti Mandhana becomes top run-scorer in women’s cricket",
@@ -3710,66 +3784,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/video-workers-rescued-from-hydro-tunnel-nine-days-after-nepal-flooding?traffic_source=rss",
       "date": "September 4, 2026",
       "description": "Two workers have been pulled alive from a hydropower tunnel nine days after deadly flash flooding hit Nepal."
-    },
-    {
-      "title": "Why Pakistan overhauled its military command structure after five decades",
-      "url": "https://www.aljazeera.com/news/2026/9/4/why-pakistan-overhauled-its-military-command-structure-after-five-decades?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "New legislation gives Pakistan's military chief sweeping command powers, raising questions about oversight."
-    },
-    {
-      "title": "Zverev goes distance to scrape into third round as upsets rock US Open",
-      "url": "https://www.aljazeera.com/sports/2026/9/4/zverev-goes-distance-to-scrape-into-third-round-as-upsets-rock-us-open?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Men's third seed Felix Auger-Aliassime goes out, along with sixth-seed Alex de Minaur and 13th-seed Lorenzo Musetti."
-    },
-    {
-      "title": "Nepal floods: How DNA identification of bodies works",
-      "url": "https://www.aljazeera.com/news/2026/9/4/nepal-floods-how-does-dna-identification-of-bodies-work?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "DNA testing helps identify bodies that may be unrecognisable due to mutilation and decomposition."
-    },
-    {
-      "title": "In southern Lebanon, Israeli demolitions continue ‘day and night’",
-      "url": "https://www.aljazeera.com/features/2026/9/4/in-southern-lebanon-israeli-demolitions-continue-day-and-night?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Explosions shake the ground in Froun as Israeli operations persist, disrupting daily life in southern Lebanon."
-    },
-    {
-      "title": "Houthi attacks on Yemen’s Taiz escalate, triggering new displacement wave",
-      "url": "https://www.aljazeera.com/news/2026/9/4/houthi-attacks-on-yemens-taiz-escalate-triggering-new-displacement-wave?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Government-Houthi clashes in Taiz intensify, displacing thousands and threatening vital roadways to the Red Sea coast."
-    },
-    {
-      "title": "After Gen Z, India’s Gen Alpha rises, demanding education reforms",
-      "url": "https://www.aljazeera.com/news/2026/9/4/after-gen-z-indias-gen-alpha-rises-demanding-education-reforms?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "School students across multiple states have held protests in recent weeks, seeking better conditions."
-    },
-    {
-      "title": "No shelter or water, yet Lebanese return home, defying Israel.",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/aje-onl-nf_south-lebanon-residents-return-to-devastated-villages-040926?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Residents are returning to villages in southern Lebanon devastated by Israel’s invasion."
-    },
-    {
-      "title": "Arsenal sell Martinelli to Al-Hilal in post-transfer deadline day deal",
-      "url": "https://www.aljazeera.com/sports/2026/9/4/arsenal-sell-martinelli-to-al-hilal-in-post-transfer-deadline-day-deal?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Brazil forward Gabriel Martinelli transfers to Saudi Pro League side Al-Hilal from Premier League champions Arsenal."
-    },
-    {
-      "title": "Mladic’s body arrives to full military honours in Serbia",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/mladics-body-arrives-to-full-military-honours-in-serbia?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "The body of war criminal Ratko Mladic has arrived in Belgrade, where he received a full military guard."
-    },
-    {
-      "title": "Entertainment over policy? White House arcade games ignite backlash",
-      "url": "https://www.aljazeera.com/economy/2026/9/4/entertainment-over-policy-white-house-arcade-games-ignite-backlash?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "White House arcade games spark criticism for prioritising entertainment amid rising living costs and war concerns."
     }
   ]
 }
