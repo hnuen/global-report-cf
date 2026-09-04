@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T15:08:20.177Z",
+  "updatedAt": "2026-09-04T17:08:19.960Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260904",
@@ -1230,8 +1230,7 @@
           "date": "September 4, 2026",
           "expires": "September 19, 2026",
           "url": "https://ofac.treasury.gov/media/936881/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "134C",
@@ -2727,11 +2726,12 @@
         },
         {
           "number": "32",
-          "title": "Venezuela General License 32",
+          "title": "Authorizing Certain Transactions Related to Personal Maintenance of Individuals Who Are U.S. Persons Residing in Venezuela",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34101/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "33",
@@ -3075,7 +3075,13 @@
       "description": "Germany has blamed Russia for an attack on Leipzig airport but there has been a series of suspicious incidents elsewhere."
     },
     {
-      "title": "Trump's peace envoys to visit Moscow and Kyiv over weekend, reports say",
+      "title": "Russia hits Ukrainian security headquarters in drone attack, Zelensky says",
+      "url": "https://www.bbc.co.uk/news/articles/c5yep7y48x2o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 4, 2026",
+      "description": "The unmanned aerial vehicle struck without warning in the heart of the Ukrainian capital."
+    },
+    {
+      "title": "Trump's peace envoys to visit Moscow and Kyiv over weekend",
       "url": "https://www.bbc.co.uk/news/articles/c23x0z48x0no?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 4, 2026",
       "description": "Steve Witkoff and Jared Kushner have led President Donald Trump's efforts to end the Russia-Ukraine war - but talks have stalled."
@@ -3143,6 +3149,24 @@
   ],
   "ajNews": [
     {
+      "title": "Russian drone strikes Ukraine’s security service headquarters",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/09-04-russia-targets-ukraine-security-hq-clip-mp4?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "A Russian drone has struck Ukraine’s domestic intelligence headquarters in central Kyiv, injuring five people."
+    },
+    {
+      "title": "Russia’s jet-powered drones overwhelm Ukraine, killing dozens",
+      "url": "https://www.aljazeera.com/news/2026/9/4/russias-jet-powered-drones-overwhelm-ukraine-killing-dozens?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "As Ukrainian civilians suffer from air attacks, Russian ground forces struggle to advance."
+    },
+    {
+      "title": "Diesel price hits all-time high in US amid Iran war woes",
+      "url": "https://www.aljazeera.com/economy/2026/9/4/diesel-price-hits-all-time-high-in-us-amid-iran-war-woes?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "Price of gasoline also sets new record for Labor Day weekend ahead of crucial midterm elections in November."
+    },
+    {
       "title": "‘Things happen’: How Vance’s comment on Iran wedding strike fits US pattern",
       "url": "https://www.aljazeera.com/news/2026/9/4/things-happen-how-vances-comment-on-iran-wedding-strike-fits-us-pattern?traffic_source=rss",
       "date": "September 4, 2026",
@@ -3158,31 +3182,7 @@
       "title": "US envoys headed to Russia and Ukraine to relaunch mediation",
       "url": "https://www.aljazeera.com/news/2026/9/4/us-envoys-headed-to-russia-and-ukraine-to-relaunch-mediation?traffic_source=rss",
       "date": "September 4, 2026",
-      "description": "The return of Washington's negotiators raises hope of progress towards a settlement to end Moscow's war on Ukraine."
-    },
-    {
-      "title": "South Korea mulls ‘contributions’ in Strait of Hormuz",
-      "url": "https://www.aljazeera.com/news/2026/9/4/south-korea-mulls-contributions-in-strait-of-hormuz?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Seoul heavily affected by closure of strategic waterway and under heavy US pressure for participation against Iran."
-    },
-    {
-      "title": "Iran war: Why US midterms could be a pivotal moment",
-      "url": "https://www.aljazeera.com/news/2026/9/4/iran-war-why-us-midterms-could-be-a-pivotal-moment?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Rising prices and opposition to war may pressure Trump to de-escalate until after the midterms, analysts say."
-    },
-    {
-      "title": "Argentina’s Milei threatens sanctions as he refocuses on Falklands",
-      "url": "https://www.aljazeera.com/news/2026/9/4/argentinas-milei-threatens-sanctions-as-he-refocuses-on-falklands?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Argentina's president accused of political machinations as he eyes shifting US stance on Las Malvinas."
-    },
-    {
-      "title": "Why has the Philippine peso plunged to a record low?",
-      "url": "https://www.aljazeera.com/economy/2026/9/4/why-has-the-philippines-peso-plunged-to-a-record-low?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "The Southeast Asian country's currency has plummeted amid the fallout of the Iran war and economic challenges at home."
+      "description": "Amid hopes for diplomacy, a Russian strike hits the headquarters of Ukraine's SBU security service in Kyiv."
     }
   ],
   "occNews": [
@@ -3300,10 +3300,10 @@
   ],
   "regionsNews": [
     {
-      "title": "'Layer upon layer of miracles': How Nepal flood survivors were rescued from tunnel",
-      "url": "https://www.bbc.co.uk/news/articles/c9dwjv96qyqo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "'A rare moment of joy': Nepal tunnel rescues bring hope for more flood survivors",
+      "url": "https://www.bbc.co.uk/news/videos/cd79vp91321o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 4, 2026",
-      "description": "From searching for a buried tunnel entrance to blowing up rocks the size of cars, rescuers had to surmount multiple challenges to reach survivors."
+      "description": "There are still hundreds of workers trapped in a network of tunnels that run along the Trishuli river."
     },
     {
       "title": "UK support for Falkland Islands 'unwavering' after Argentina restates claims, No 10 says",
@@ -3366,10 +3366,10 @@
       "description": "Her foundation said she \"passed away peacefully\" at her home in New York City, \"surrounded by many who loved her\"."
     },
     {
-      "title": "Girl group Katseye are missing two members, but their tour still dazzles",
-      "url": "https://www.bbc.co.uk/news/articles/cqxv49z84ppo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "'Layer upon layer of miracles' to find tunnel survivors, Nepal rescue adviser tells BBC",
+      "url": "https://www.bbc.co.uk/news/articles/c9dwjv96qyqo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 4, 2026",
-      "description": "Reduced but resilient, girl group Katseye received a hero's welcome in London."
+      "description": "From searching for a buried tunnel entrance to blowing up rocks the size of cars, rescuers had to surmount multiple challenges to reach survivors."
     },
     {
       "title": "AI data centres are booming in Australia - but at what cost?",
@@ -3382,6 +3382,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cgqd9ldegjqo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 4, 2026",
       "description": "Supermarket shelves are emptying, sellers are rationing supplies and prices are rising."
+    },
+    {
+      "title": "Girl group Katseye are missing two members, but their tour still dazzles",
+      "url": "https://www.bbc.co.uk/news/articles/cqxv49z84ppo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 4, 2026",
+      "description": "Reduced but resilient, girl group Katseye received a hero's welcome in London."
     },
     {
       "title": "How Gloria Steinem changed the lives of generations of women",
@@ -3406,12 +3412,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c1mvll11ll5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 3, 2026",
       "description": "At least 69 people were shot dead in 1960 but no-one has been prosecuted and victims want restitution."
-    },
-    {
-      "title": "'A rare moment of joy': Nepal tunnel rescues give hope for more flood survivors",
-      "url": "https://www.bbc.co.uk/news/videos/cd79vp91321o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 4, 2026",
-      "description": "Two people have been rescued more than a week after more than 1,300 people were killed in flash floods on the Nepal-Tibet border."
     },
     {
       "title": "'We expect our sons to be killed,' father of teen shot dead in West Bank tells BBC",
@@ -3654,6 +3654,12 @@
       "description": "Coffees at some city centre outlets now cost £5. It's a story of tariffs, the climate, Gen Z cultural tastes, and savvy coffee farmers playing the market, writes Faisal Islam"
     },
     {
+      "title": "1986: Manchester's second-hand fashion mecca",
+      "url": "https://www.bbc.co.uk/videos/cj9x1kejd4lo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 4, 2026",
+      "description": "Designer Jeff Banks visited Affleck’s Palace, an indoor emporium selling vintage clothing."
+    },
+    {
       "title": "Would you lie to get a birthday freebie?",
       "url": "https://www.bbc.co.uk/news/videos/cq637lp0q3zo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 4, 2026",
@@ -3672,10 +3678,58 @@
       "description": "The US Mint began selling gold-coloured $1(£0.74) coins featuring President Donald Trump's likeness to mark the country's 250th anniversary."
     },
     {
-      "title": "How much should you give towards a leaving gift?",
-      "url": "https://www.bbc.co.uk/news/videos/c33k7pl2pj2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 3, 2026",
-      "description": "We ask workers in London how much they'd contribute."
+      "title": "US adds jobs in August, beating economic forecasts",
+      "url": "https://www.aljazeera.com/economy/2026/9/4/us-adds-jobs-in-august-beating-economic-forecasts?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "Unemployment rate steady as public schools and food services lead the surge in US job growth for August."
+    },
+    {
+      "title": "The number 10 shirt must not retire with Messi",
+      "url": "https://www.aljazeera.com/opinions/2026/9/4/the-number-10-shirt-must-not-retire-with-messi?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "Maradona and Messi each made the shirt their own. The next great Argentinian player should have that chance, too."
+    },
+    {
+      "title": "Bride walks down the aisle despite waist-deep flooding",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/bride-walks-down-the-aisle-despite-waist-deep-flooding?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "A couple chose to get married in the middle of severe flooding in the Philippines."
+    },
+    {
+      "title": "October 7 attack shapes Israel’s elections and fuels political blame",
+      "url": "https://www.aljazeera.com/news/2026/9/4/october-7-attack-shapes-israels-elections-and-fuels-political-blame?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "Three years on, October 7 is central to Israeli politics as Netanyahu faces pressure and deflects blame for his failures"
+    },
+    {
+      "title": "‘Winds of change’: How Milei is stirring Falklands claim amid Trump-UK spat",
+      "url": "https://www.aljazeera.com/news/2026/9/4/winds-of-change-how-milei-is-stirring-falklands-claim-amid-trump-uk-spat?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "Analysts say Argentina's president sees an opportunity to exploit Trump’s growing tensions with London."
+    },
+    {
+      "title": "LIVE: Ipswich Town vs Liverpool – Premier League",
+      "url": "https://www.aljazeera.com/sports/liveblog/2026/9/4/live-ipswich-town-vs-liverpool-premier-league?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "All the build-up alongside our live text commentary stream coverage as Bradley Barcola is set to make his Liverpool bow."
+    },
+    {
+      "title": "UN raises ‘ethnic cleansing’ concerns over Israeli West Bank operation",
+      "url": "https://www.aljazeera.com/news/2026/9/4/un-raises-ethnic-cleansing-concerns-over-israeli-west-bank-operation?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "More than 33,000 Palestinian refugees remain displaced since Israel launched Operation Iron Wall."
+    },
+    {
+      "title": "US rejects Israeli suggestions of removing Palestinians from Gaza",
+      "url": "https://www.aljazeera.com/news/2026/9/4/us-rejects-israeli-suggestions-of-removing-palestinians-from-gaza?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "US State Department tells Al Jazeera Washington 'does not support any plan' for the expulsion of Palestinians."
+    },
+    {
+      "title": "Israel releases five detainees to Lebanon after US-mediated negotiations",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/09-04-israel-lebanon-detainees-minisv-mp4?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "Israel has released five people to Lebanon after US-mediated negotiations. Dozens of Lebanese remain detained by Israel."
     },
     {
       "title": "Israel frees four more Lebanese prisoners in Red Cross-mediated handover",
@@ -3736,54 +3790,6 @@
       "url": "https://www.aljazeera.com/news/2026/9/4/germanys-far-right-eyes-election-breakthrough-as-afd-surges-in-saxony-anhalt?traffic_source=rss",
       "date": "September 4, 2026",
       "description": "The nationalist party is poised to win more than 40 percent of the votes in the state."
-    },
-    {
-      "title": "India’s Smriti Mandhana becomes top run-scorer in women’s cricket",
-      "url": "https://www.aljazeera.com/sports/2026/9/4/indias-smriti-mandhana-becomes-top-run-scorer-in-womens-cricket?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Mandhana overtook former India captain Mithali Raj, who had been the top international scorer with 10,868 runs."
-    },
-    {
-      "title": "Reform UK officials step down as new funding scandal hits far-right party",
-      "url": "https://www.aljazeera.com/news/2026/9/4/reform-uk-officials-step-down-as-new-funding-scandal-hits-far-right-party?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Resignations come after documentary alleges party arranged for overseas company to fund polling."
-    },
-    {
-      "title": "‘Build The Wall’: White House arcade games face backlash",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/build-the-wall-white-house-arcade-games-face-backlash?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "The White House has unveiled five arcade-style games to promote Trump's 'MAGA' agenda."
-    },
-    {
-      "title": "Meloni sets a record, leading Italy’s longest-serving government since WWII",
-      "url": "https://www.aljazeera.com/news/2026/9/4/meloni-sets-a-record-leading-italys-longest-serving-government-since-wwii?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "As supporters celebrate the milestone, analysts warn longevity is not tantamount to stability."
-    },
-    {
-      "title": "Israel takes its war on Palestine into the AI age",
-      "url": "https://www.aljazeera.com/opinions/2026/9/4/israel-takes-its-war-on-palestine-into-the-ai-age?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "The Hanover affair exposes a new front in Israel’s long-running effort to shape how Palestinians are understood."
-    },
-    {
-      "title": "Moment three-storey building collapses amid flooding in China",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/moment-three-storey-building-collapses-amid-flooding-in-china?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Severe flooding in China’s Fujian province has caused a three-storey building to collapse."
-    },
-    {
-      "title": "Nepal search teams rescue two workers from hydropower tunnel",
-      "url": "https://www.aljazeera.com/news/2026/9/4/nepal-search-teams-rescue-two-workers-from-hydropower-tunnel?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "'Miracle' rescue nine days after devastating flood raises hope that more people could still be found alive."
-    },
-    {
-      "title": "Video: Workers rescued from hydro tunnel nine days after Nepal flooding",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/video-workers-rescued-from-hydro-tunnel-nine-days-after-nepal-flooding?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Two workers have been pulled alive from a hydropower tunnel nine days after deadly flash flooding hit Nepal."
     }
   ]
 }
