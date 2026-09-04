@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T19:08:18.591Z",
+  "updatedAt": "2026-09-04T21:08:18.744Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260904",
@@ -3066,7 +3066,14 @@
       "description": "These new measures aim at further increasing the pressure on Russia and Belarus and supporting EU's goal of achieving a just and lasting peace for Ukraine."
     }
   ],
-  "unNotices": [],
+  "unNotices": [
+    {
+      "title": "Security Council ISIL (Da’esh) and Al-Qaida Sanctions Committee Amends Two Entries on Its Sanctions List",
+      "url": "https://press.un.org/en/2026/sc16446.doc.htm",
+      "date": "September 4, 2026",
+      "description": "On 4 September 2026, the Security Council Committee pursuant to resolutions 1267 (1999), 1989 (2011) and 2253 (2015) concerning ISIL (Da’esh), Al‑Qaida and associated individuals, groups, undertakings and entities enacted the amendments specified with strikethrough and underline in the entries below on its ISIL (Da’esh) and Al-Qaida Sanctions List of individuals and entities subject to the assets freeze, travel ban and arms embargo set out in paragraph 1 of Security Council resolution 2734 (2024), and adopted under Chapter VII of the Charter of the United Nations."
+    }
+  ],
   "bbcNews": [
     {
       "title": "Europe targeted by spiralling campaign of sabotage - and Russia is the chief suspect",
@@ -3149,6 +3156,12 @@
   ],
   "ajNews": [
     {
+      "title": "Trump calls Iran war ‘small potatoes’, compares US deaths with Vietnam war",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/09-04-trump-iran-war-small-potatoes-clip?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "US President Donald Trump called the Iran war small potatoes, saying only 18 Americans had been killed."
+    },
+    {
       "title": "Russian drone strikes Ukraine’s security service headquarters",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/09-04-russia-targets-ukraine-security-hq-clip-mp4?traffic_source=rss",
       "date": "September 4, 2026",
@@ -3159,18 +3172,6 @@
       "url": "https://www.aljazeera.com/news/2026/9/4/russias-jet-powered-drones-overwhelm-ukraine-killing-dozens?traffic_source=rss",
       "date": "September 4, 2026",
       "description": "As Ukrainian civilians suffer from air attacks, Russian ground forces struggle to advance."
-    },
-    {
-      "title": "Diesel price hits all-time high in US amid Iran war woes",
-      "url": "https://www.aljazeera.com/economy/2026/9/4/diesel-price-hits-all-time-high-in-us-amid-iran-war-woes?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Price of gasoline also sets new record for Labor Day weekend ahead of crucial midterm elections in November."
-    },
-    {
-      "title": "‘Things happen’: How Vance’s comment on Iran wedding strike fits US pattern",
-      "url": "https://www.aljazeera.com/news/2026/9/4/things-happen-how-vances-comment-on-iran-wedding-strike-fits-us-pattern?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "From My Lai to civilian killings in Afghanistan, Iraq, the US has often denied role before later quietly acknowledging."
     }
   ],
   "occNews": [
@@ -3678,6 +3679,66 @@
       "description": "The US Mint began selling gold-coloured $1(£0.74) coins featuring President Donald Trump's likeness to mark the country's 250th anniversary."
     },
     {
+      "title": "Nigel Farage heckled as he denies Reform UK took illegal funding",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/nigel-farage-heckled-as-he-denies-reform-uk-took-illegal-funding?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "Reform UK leader Nigel Farage was heckled by protesters on Friday, as he addressed the party’s conference in Birmingham."
+    },
+    {
+      "title": "Will Europe pay the US to provide military aid to Ukraine?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/9/4/will-europe-pay-the-us-to-provide-military-aid-to-ukraine?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "US President Donald Trump laments past financial support for Ukraine's war effort and has vowed to claw the money back."
+    },
+    {
+      "title": "Mexico seizes 17 tonnes of meth in $347 million drug bust",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/mexico-seizes-17-tonnes-of-meth-in-347-million-drug-bust?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "Mexican authorities seized nearly 17 tonnes of methamphetamine from three clandestine laboratories in Sinaloa"
+    },
+    {
+      "title": "Watchdog report alleges misconduct by Trump’s former labour secretary",
+      "url": "https://www.aljazeera.com/news/2026/9/4/watchdog-report-alleges-misconduct-by-trumps-former-labour-secretary?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "Lori Chavez-DeRemer reportedly used staff for personal tasks, drank at work and violated ethics regulations."
+    },
+    {
+      "title": "Israeli drones drop bombs on southern Lebanon’s Mansouri",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/04-09-sv-israel-drone-bombs-mansouri-lb-fm?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "Several explosions rocked the southern Lebanese town of Mansouri after Israeli military drones dropped explosives in the"
+    },
+    {
+      "title": "Israeli strike kills two in southern Lebanon amid ongoing escalation",
+      "url": "https://www.aljazeera.com/news/2026/9/4/israeli-strike-kills-two-in-southern-lebanon-amid-ongoing-escalation?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "Israeli attacks against villages and towns in southern Lebanon continue despite truce agreements and diplomacy."
+    },
+    {
+      "title": "Andrew Tate indicted in Romania for trafficking minors, money laundering",
+      "url": "https://www.aljazeera.com/news/2026/9/4/andrew-tate-indicted-in-romania-for-trafficking-minors-money-laundering?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "The influencer and his brother are in a Miami prison pending potential extradition to the UK on rape charges"
+    },
+    {
+      "title": "UN votes to adopt new world map that reflects Africa’s true size",
+      "url": "https://www.aljazeera.com/news/2026/9/4/un-votes-to-adopt-new-world-map-that-reflects-africas-true-size?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "The widely-used Mercator map is often criticised for visually exaggerating and centralising Western nations."
+    },
+    {
+      "title": "Five EU nations inch towards deal on migrant ‘return hubs’ by 2027",
+      "url": "https://www.aljazeera.com/news/2026/9/4/five-eu-nations-inch-towards-deal-on-migrant-return-hubs-by-2027?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "Germany, Austria, ⁠Greece, Denmark and the Netherlands did not outline where the centres would be located."
+    },
+    {
+      "title": "Brazilian Supreme Court roiled by dispute between justices",
+      "url": "https://www.aljazeera.com/news/2026/9/4/brazilian-supreme-court-roiled-by-dispute-between-justices?traffic_source=rss",
+      "date": "September 4, 2026",
+      "description": "The country's highest court is considering investigations into two judges who have accused each other of wrongdoing."
+    },
+    {
       "title": "Villagers vow to rebuild despite devastating mass demolition in West Bank",
       "url": "https://www.aljazeera.com/news/2026/9/4/villagers-vow-rebuild-despite-devastating-mass-demolition-west-bank?traffic_source=rss",
       "date": "September 4, 2026",
@@ -3748,60 +3809,6 @@
       "url": "https://www.aljazeera.com/news/2026/9/4/un-raises-ethnic-cleansing-concerns-over-israeli-west-bank-operation?traffic_source=rss",
       "date": "September 4, 2026",
       "description": "More than 33,000 Palestinian refugees remain displaced since Israel launched Operation Iron Wall."
-    },
-    {
-      "title": "US rejects Israeli suggestions of removing Palestinians from Gaza",
-      "url": "https://www.aljazeera.com/news/2026/9/4/us-rejects-israeli-suggestions-of-removing-palestinians-from-gaza?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "US State Department tells Al Jazeera that Washington 'does not support any plan' for expulsion of Palestinians."
-    },
-    {
-      "title": "Israel releases five detainees to Lebanon after US-mediated negotiations",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/09-04-israel-lebanon-detainees-minisv-mp4?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Israel has released five people to Lebanon after US-mediated negotiations. Dozens of Lebanese remain detained by Israel."
-    },
-    {
-      "title": "Israel frees four more Lebanese prisoners in Red Cross-mediated handover",
-      "url": "https://www.aljazeera.com/news/2026/9/4/israel-frees-four-more-lebanese-prisoners-in-red-cross-mediated-handover?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Lebanese President Joseph Aoun praises the release and thanks US President Donald Trump for his efforts."
-    },
-    {
-      "title": "Why is Farage’s Reform accused of violating the UK’s foreign funding rules?",
-      "url": "https://www.aljazeera.com/news/2026/9/4/why-is-farages-reform-accused-of-violating-the-uks-foreign-funding-rules?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Undercover footage allegedly shows top Reform officials discussing ways to evade foreign funding laws."
-    },
-    {
-      "title": "Can the Green Party’s Polanski take on Labour and win Starmer’s old seat?",
-      "url": "https://www.aljazeera.com/news/2026/9/4/can-green-leader-polanski-take-on-labour-and-win-starmers-old-seat?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Analysts say although Polanski has gained popularity, toppling Labour in its traditional stronghold may be difficult."
-    },
-    {
-      "title": "Two Muslim women journalists allege police assault in India",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/two-muslim-women-journalists-allege-police-assault-in-india?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Two Muslim female journalists allege they were detained and brutally assaulted by police in India’s capital, Delhi."
-    },
-    {
-      "title": "Philippine court orders arrest of VP Duterte over President Marcos threats",
-      "url": "https://www.aljazeera.com/news/2026/9/4/philippine-court-orders-arrest-of-vp-duterte-over-president-marcos-threats?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Warrant follows charge she threatened to have Marcos, his wife and a cousin killed by a hitman."
-    },
-    {
-      "title": "Ireland’s Katie Taylor eyes fairytale finish to trailblazing boxing career",
-      "url": "https://www.aljazeera.com/sports/2026/9/4/irelands-katie-taylor-eyes-fairytale-finish-to-trailblazing-boxing-career?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Unbeaten French challenger Flora Pili stands in the way of Taylor becoming undisputed world champion for a third time."
-    },
-    {
-      "title": "Conflicts and extreme weather pushing global food prices higher, warns UN",
-      "url": "https://www.aljazeera.com/news/2026/9/4/conflicts-and-extreme-weather-pushing-global-food-prices-higher-warns-un?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "UN food price index rises to four-year high, illustrating impact of war and weather."
     }
   ]
 }
