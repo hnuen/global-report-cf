@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T13:09:28.812Z",
+  "updatedAt": "2026-09-05T15:08:45.760Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260904",
@@ -3076,6 +3076,12 @@
   ],
   "bbcNews": [
     {
+      "title": "US hits three Iranian oil tankers after saying its warships were targeted",
+      "url": "https://www.bbc.co.uk/news/articles/cj64rrne643o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 5, 2026",
+      "description": "US Central Command says the attacks came after Iran launched ballistic missiles at two of its Navy warships."
+    },
+    {
       "title": "US envoys arrive in Moscow ahead of Ukraine talks",
       "url": "https://www.bbc.co.uk/news/articles/cx2zqp46g8eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 5, 2026",
@@ -3150,10 +3156,22 @@
   ],
   "ajNews": [
     {
+      "title": "US says it hit Iran oil tankers helping finance ‘regional proxies’",
+      "url": "https://www.aljazeera.com/news/2026/9/5/us-says-it-hit-iran-oil-tankers-helping-finance-regional-proxies?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "US strikes hit Iranian oil tankers in the Gulf of Oman and near Iran’s Kharg Island."
+    },
+    {
+      "title": "Iran President Pezeshkian calls for unity as US ramps up economic pressure",
+      "url": "https://www.aljazeera.com/economy/2026/9/5/iran-president-pezeshkian-calls-for-unity-as-us-ramps-up-economic-pressure?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "Amid rising public discontent, Iranian authorities say adversaries are focused on encouraging domestic unrest."
+    },
+    {
       "title": "At least 5 killed in Russian attacks on Ukraine as US envoys visit Moscow",
       "url": "https://www.aljazeera.com/news/2026/9/5/at-least-5-killed-in-russian-attacks-on-ukraine-as-us-envoys-visit-moscow?traffic_source=rss",
       "date": "September 5, 2026",
-      "description": "Ukraine and Russia announce a three-day limited ceasefire as US envoys visit Moscow, before trip to Kyiv."
+      "description": "Ukraine and Russia announce a three-day limited ceasefire as Steve Witkoff and Jared Kushner visit Moscow and Kyiv."
     },
     {
       "title": "Why is Trump threatening to strike Iran’s Pickaxe Mountain again, now?",
@@ -3166,12 +3184,6 @@
       "url": "https://www.aljazeera.com/features/2026/9/5/oil-and-politics-what-trumps-historic-deal-means-for?traffic_source=rss",
       "date": "September 5, 2026",
       "description": "Venezuelans are hoping for free and fair elections, but the US may prioritise oil production."
-    },
-    {
-      "title": "US imposes sanctions on Turkish bank, prompting legal threat",
-      "url": "https://www.aljazeera.com/news/2026/9/5/us-imposes-sanctions-on-turkish-bank-prompting-legal-threat?traffic_source=rss",
-      "date": "September 5, 2026",
-      "description": "US sanctions Turkish bank over alleged IRGC ties, accusing it of facilitating millions in transactions for Iran."
     }
   ],
   "occNews": [
@@ -3295,10 +3307,16 @@
       "description": "The mistrial now puts the murder case - and Clancy's future - in limbo as to whether she will be held criminally liable in the deaths of her three kids."
     },
     {
-      "title": "Nepal rescuers try to reach dozens trapped in tunnel after two found alive",
-      "url": "https://www.bbc.co.uk/news/articles/c7903j1vpe5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 4, 2026",
-      "description": "More than 1,300 people have died and thousands are missing, but rescuers' hopes have risen after finding survivors in a tunnel."
+      "title": "At least two dead in blast at Bolivia military barracks",
+      "url": "https://www.bbc.co.uk/news/articles/c3v45xy67g5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 5, 2026",
+      "description": "Authorities fear the death toll in Viacha will rise and warn people to stay away from the barracks due to a risk of further explosions."
+    },
+    {
+      "title": "What different world maps get right - and what they get wrong",
+      "url": "https://www.bbc.co.uk/news/articles/cly5r60v4mro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 5, 2026",
+      "description": "As the UN adopts a new world map to reflect Africa's true size, let's take a closer look at what different maps get right and wrong."
     },
     {
       "title": "Trump signs order to remove endangered species protection for grey wolves",
@@ -3307,10 +3325,10 @@
       "description": "The US president says the move will help ranchers, but conservationists say it could derail efforts to recover populations."
     },
     {
-      "title": "UN votes to adopt new world map to reflect Africa's true size",
-      "url": "https://www.bbc.co.uk/news/articles/ce30vp55dnlo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 5, 2026",
-      "description": "The Togo-sponsored resolution was backed by 164 nations - with the US as the only nation to vote against it."
+      "title": "Nepal rescuers try to reach dozens trapped in tunnel after two found alive",
+      "url": "https://www.bbc.co.uk/news/articles/c7903j1vpe5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 4, 2026",
+      "description": "More than 1,300 people have died and thousands are missing, but rescuers' hopes have risen after finding survivors in a tunnel."
     },
     {
       "title": "Germany's far-right AfD bids for first taste of power in eastern vote",
@@ -3319,10 +3337,10 @@
       "description": "If it wins an outright majority in Saxony-Anhalt, it would be the first time a far-right party has held state-level power in Germany since World War Two."
     },
     {
-      "title": "At least two dead in blast at Bolivia military barracks",
-      "url": "https://www.bbc.co.uk/news/articles/c3v45xy67g5o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "UN votes to adopt new world map to reflect Africa's true size",
+      "url": "https://www.bbc.co.uk/news/articles/ce30vp55dnlo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 5, 2026",
-      "description": "Authorities fear the death toll in Viacha will rise and warn people to stay away from the barracks due to a risk of further explosions."
+      "description": "The Togo-sponsored resolution was backed by 164 nations - with the US as the only nation to vote against it."
     },
     {
       "title": "'A rare moment of joy': Nepal tunnel rescues bring hope for more flood survivors",
@@ -3369,7 +3387,7 @@
     {
       "title": "Nepal bet nearly everything on hydropower - the floods show why that's a problem",
       "url": "https://www.bbc.co.uk/news/articles/cy0zx368prno?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 4, 2026",
+      "date": "September 5, 2026",
       "description": "More than 10% of Nepal's energy generation capacity was knocked out by last week's floods."
     },
     {
@@ -3679,6 +3697,48 @@
       "description": "Rising bonds yields and growing government debt could see interest rates start to rise"
     },
     {
+      "title": "Multipolarity gives middle powers more choices, but fewer guarantees",
+      "url": "https://www.aljazeera.com/opinions/2026/9/5/multipolarity-gives-middle-powers-more-choices-but-fewer-guarantees?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "BRICS, SCO and other organisations can offer relief from great power pressure but do not provide collective defence."
+    },
+    {
+      "title": "Relatives hold cremations without bodies for Nepal’s missing flood victims",
+      "url": "https://www.aljazeera.com/features/2026/9/5/relatives-hold-cremations-without-bodies-for-nepals-missing-flood-victims?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "Fewer than one in 10 recovered bodies of people killed in deadly floods has been formally identified."
+    },
+    {
+      "title": "Coach Luis Enrique unconcerned by PSG’s poor start to French league season",
+      "url": "https://www.aljazeera.com/sports/2026/9/5/coach-luis-enrique-unconcerned-by-psgs-poor-start-to-french-league-season?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "Two points from three matches is ⁠their worst start since the ​2007-08 season, when PSG came close to relegation."
+    },
+    {
+      "title": "Why has the Trump administration ordered staff to take polygraph tests?",
+      "url": "https://www.aljazeera.com/news/2026/9/5/why-has-the-trump-administration-ordered-staff-to-take-polygraph-tests?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "Reports of dwindling US weapons stocks have triggered an unusually sweeping hunt for leakers inside the Pentagon."
+    },
+    {
+      "title": "UK gov’t condemns masked anti-immigrant protesters blocking Dover port",
+      "url": "https://www.aljazeera.com/news/2026/9/5/uk-govt-condemns-masked-anti-immigrant-protesters-blocking-dover-port?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "Traffic at Britain's largest international port briefly halted as 'stop the boats' protesters blocked approaching roads."
+    },
+    {
+      "title": "Arsenal vs Chelsea: Premier League – prediction, teams, lineups",
+      "url": "https://www.aljazeera.com/sports/2026/9/5/arsenal-vs-chelsea-premier-league-prediction-teams-lineups?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "Arsenal manager Mikel Arteta and Chelsea boss Xabi Alonso do battle in the Premier League for the first time on Sunday."
+    },
+    {
+      "title": "‘Stop the boats’ masked protesters block England’s Port of Dover",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/stop-the-boats-masked-protesters-block-englands-port-of-dover?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "Masked protesters blocked major roads around England’s Port of Dover on Saturday."
+    },
+    {
       "title": "At least four civilians killed in Houthi missile strike near Yemen’s Taiz",
       "url": "https://www.aljazeera.com/news/2026/9/5/at-least-four-killed-in-houthi-missile-strike-near-yemens-taiz?traffic_source=rss",
       "date": "September 5, 2026",
@@ -3755,54 +3815,6 @@
       "url": "https://www.aljazeera.com/opinions/2026/9/5/mansour-abbas-is-betting-on-a-zionist-to-make-arab-votes-count?traffic_source=rss",
       "date": "September 5, 2026",
       "description": "By allying with Segalovich in the Israeli vote, Abbas is hoping for greater acceptance in Israeli coalition politics."
-    },
-    {
-      "title": "Pentagon polygraphs dozens of US military staff over media leaks",
-      "url": "https://www.aljazeera.com/news/2026/9/5/pentagon-polygraphs-military-staff-over-media-leaks-report?traffic_source=rss",
-      "date": "September 5, 2026",
-      "description": "About 50 officers on the US Joint Staff were interrogated over reports detailing depleted weapons stockpiles, NYT says."
-    },
-    {
-      "title": "UAE pardons Egyptian dissident-poet al-Qaradawi facing 10 years in prison",
-      "url": "https://www.aljazeera.com/news/2026/9/5/uae-pardons-egyptian-dissident-poet-al-qaradawi-facing-10-years-in-prison?traffic_source=rss",
-      "date": "September 5, 2026",
-      "description": "Egyptian activist Abdul Rahman al-Qaradawi was held due to an arrest warrant by the Arab Interior Ministers Council."
-    },
-    {
-      "title": "UK art show explores Muslim life, Europe’s Islamic history and Islamophobia",
-      "url": "https://www.aljazeera.com/news/2026/9/5/i-was-born-here-london-exhibition?traffic_source=rss",
-      "date": "September 5, 2026",
-      "description": "Shahed Saleem's exhibition presents colourful tapestries depicting fateful moments for British and European Muslims."
-    },
-    {
-      "title": "Niger accuses France of orchestrating failed military mutiny",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/niger-accuses-france-of-orchestrating-failed-military-mutiny?traffic_source=rss",
-      "date": "September 5, 2026",
-      "description": "Niger has blamed France for inciting an attack on a key military airbase by mutinous soldiers last week."
-    },
-    {
-      "title": "Alcaraz, Sabalenka into US Open last 16 as Williams sisters lose on return",
-      "url": "https://www.aljazeera.com/sports/2026/9/5/alcaraz-sabalenka-into-us-open-last-16-as-williams-sisters-lose-on-return?traffic_source=rss",
-      "date": "September 5, 2026",
-      "description": "Alcaraz beat China's Wu Yibing 6-3, 6-4, 6-1, while Sabalenka defeated Kamilla Rakhimova 6-3, 6-4."
-    },
-    {
-      "title": "Have scientists discovered a dark matter particle?",
-      "url": "https://www.aljazeera.com/features/2026/9/5/have-scientists-discovered-a-dark-matter-particle?traffic_source=rss",
-      "date": "September 5, 2026",
-      "description": "Dark matter is an invisible substance that is said to bind the universe; scientists may have found new signs of it."
-    },
-    {
-      "title": "At least five killed in Sudan’s South Kordofan in attack by rebel group",
-      "url": "https://www.aljazeera.com/news/2026/9/5/five-killed-in-sudans-kordofan-in-attack-by-rebel-group?traffic_source=rss",
-      "date": "September 5, 2026",
-      "description": "Sudan Doctors Network says SPLM-N forces shelled residential areas in the town of Dilling."
-    },
-    {
-      "title": "Bolivian military barracks explosion kills at least 10",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/bolivian-military-barracks-explosion-kills-at-least-10?traffic_source=rss",
-      "date": "September 5, 2026",
-      "description": "An explosion at a military barracks in Viacha, Bolivia, has killed at least 10 people and injured dozens."
     }
   ]
 }
