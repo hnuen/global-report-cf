@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T22:08:13.623Z",
+  "updatedAt": "2026-09-05T13:09:28.812Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260904",
@@ -3076,6 +3076,12 @@
   ],
   "bbcNews": [
     {
+      "title": "US envoys arrive in Moscow ahead of Ukraine talks",
+      "url": "https://www.bbc.co.uk/news/articles/cx2zqp46g8eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 5, 2026",
+      "description": "Steve Witkoff and Jared Kushner are due to hold talks with Russia before travelling to Ukraine on Sunday."
+    },
+    {
       "title": "Europe targeted by spiralling campaign of sabotage - and Russia is the chief suspect",
       "url": "https://www.bbc.co.uk/news/articles/c5y4g6meekro?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 4, 2026",
@@ -3088,22 +3094,10 @@
       "description": "The unmanned aerial vehicle struck without warning in the heart of the Ukrainian capital."
     },
     {
-      "title": "Trump's peace envoys to visit Moscow and Kyiv over weekend",
-      "url": "https://www.bbc.co.uk/news/articles/c23x0z48x0no?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 4, 2026",
-      "description": "Steve Witkoff and Jared Kushner have led President Donald Trump's efforts to end the Russia-Ukraine war - but talks have stalled."
-    },
-    {
-      "title": "US diesel prices hit an all-time-high",
-      "url": "https://www.bbc.co.uk/news/articles/c7903r0grx0o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 4, 2026",
-      "description": "Fuel prices have soared since the Iran conflict began at the end of February, mirroring the surge in wholesale oil prices."
-    },
-    {
-      "title": "US investigating if missile hit Iran wedding, Vance says",
-      "url": "https://www.bbc.co.uk/news/articles/cy4zvk3z2k1o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 3, 2026",
-      "description": "The Iranian Red Crescent Society (IRCS) said shrapnel from a missile hit the ceremony and killed four people on Tuesday."
+      "title": "Is Russia proving better at protecting friends than fighting enemies in West Africa?",
+      "url": "https://www.bbc.co.uk/news/articles/cx2z75keq58o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 5, 2026",
+      "description": "Russian forces were brought in to help defeat jihadists but they also defend the military leadership in Niger."
     },
     {
       "title": "How could US-Iran conflict end? Three experts give their views",
@@ -3156,16 +3150,28 @@
   ],
   "ajNews": [
     {
-      "title": "Witkoff and Kushner will travel to ‘end’ Russia’s war in Ukraine: Trump",
-      "url": "https://www.aljazeera.com/news/2026/9/4/witkoff-and-kushner-will-travel-to-end-russias-war-in-ukraine-trump?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Steve Witkoff and Jared Kushner will travel to Ukraine and Russia this weekend to help restart peace negotiations."
+      "title": "At least 5 killed in Russian attacks on Ukraine as US envoys visit Moscow",
+      "url": "https://www.aljazeera.com/news/2026/9/5/at-least-5-killed-in-russian-attacks-on-ukraine-as-us-envoys-visit-moscow?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "Ukraine and Russia announce a three-day limited ceasefire as US envoys visit Moscow, before trip to Kyiv."
     },
     {
-      "title": "Trump calls Iran war ‘small potatoes’, compares US deaths with Vietnam war",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/09-04-trump-iran-war-small-potatoes-clip?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "US President Donald Trump called the Iran war small potatoes, saying only 18 Americans had been killed."
+      "title": "Why is Trump threatening to strike Iran’s Pickaxe Mountain again, now?",
+      "url": "https://www.aljazeera.com/news/2026/9/5/why-is-trump-threatening-to-strike-irans-pickaxe-mountain-again-now?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "As oil tanker struck off Kharg island, Trump threatens one of the remaining parts of Iran’s nuclear complex."
+    },
+    {
+      "title": "Oil and politics: What Trump’s ‘historic’ deal means for Venezuela",
+      "url": "https://www.aljazeera.com/features/2026/9/5/oil-and-politics-what-trumps-historic-deal-means-for?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "Venezuelans are hoping for free and fair elections, but the US may prioritise oil production."
+    },
+    {
+      "title": "US imposes sanctions on Turkish bank, prompting legal threat",
+      "url": "https://www.aljazeera.com/news/2026/9/5/us-imposes-sanctions-on-turkish-bank-prompting-legal-threat?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "US sanctions Turkish bank over alleged IRGC ties, accusing it of facilitating millions in transactions for Iran."
     }
   ],
   "occNews": [
@@ -3283,22 +3289,52 @@
   ],
   "regionsNews": [
     {
+      "title": "Mistrial declared in Lindsay Clancy murder case, after jury deadlocks",
+      "url": "https://www.bbc.co.uk/news/articles/cpwlrj2je1po?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 4, 2026",
+      "description": "The mistrial now puts the murder case - and Clancy's future - in limbo as to whether she will be held criminally liable in the deaths of her three kids."
+    },
+    {
+      "title": "Nepal rescuers try to reach dozens trapped in tunnel after two found alive",
+      "url": "https://www.bbc.co.uk/news/articles/c7903j1vpe5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 4, 2026",
+      "description": "More than 1,300 people have died and thousands are missing, but rescuers' hopes have risen after finding survivors in a tunnel."
+    },
+    {
+      "title": "Trump signs order to remove endangered species protection for grey wolves",
+      "url": "https://www.bbc.co.uk/news/articles/c62k677d4lzo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 5, 2026",
+      "description": "The US president says the move will help ranchers, but conservationists say it could derail efforts to recover populations."
+    },
+    {
+      "title": "UN votes to adopt new world map to reflect Africa's true size",
+      "url": "https://www.bbc.co.uk/news/articles/ce30vp55dnlo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 5, 2026",
+      "description": "The Togo-sponsored resolution was backed by 164 nations - with the US as the only nation to vote against it."
+    },
+    {
+      "title": "Germany's far-right AfD bids for first taste of power in eastern vote",
+      "url": "https://www.bbc.co.uk/news/articles/cvgypkzgy4wo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 4, 2026",
+      "description": "If it wins an outright majority in Saxony-Anhalt, it would be the first time a far-right party has held state-level power in Germany since World War Two."
+    },
+    {
+      "title": "At least two dead in blast at Bolivia military barracks",
+      "url": "https://www.bbc.co.uk/news/articles/c3v45xy67g5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 5, 2026",
+      "description": "Authorities fear the death toll in Viacha will rise and warn people to stay away from the barracks due to a risk of further explosions."
+    },
+    {
       "title": "'A rare moment of joy': Nepal tunnel rescues bring hope for more flood survivors",
       "url": "https://www.bbc.co.uk/news/videos/cd79vp91321o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 4, 2026",
       "description": "There are still hundreds of workers trapped in a network of tunnels that run along the Trishuli river."
     },
     {
-      "title": "UK support for Falkland Islands 'unwavering' after Argentina restates claims, No 10 says",
-      "url": "https://www.bbc.co.uk/news/articles/cn45jg3zlz4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 4, 2026",
-      "description": "The comments come as Argentinian president Javier Milei says the \"winds of change\" favoured his country's claim on the British overseas territory."
-    },
-    {
-      "title": "Steve Irwin's family celebrates 'superhero' dad, 20 years after shock death",
-      "url": "https://www.bbc.co.uk/news/articles/cjrx75ldydwo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 4, 2026",
-      "description": "The Australian icon was killed in 2006, after a stingray's barb pierced his chest during filming."
+      "title": "Tate brothers officially indicted with trafficking and sex crimes in Romania",
+      "url": "https://www.bbc.co.uk/news/articles/c7v4npv1m22o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 5, 2026",
+      "description": "Andrew and Tristan Tate are currently in a Miami jail fighting extradition to the UK over separate charges and deny all the allegations."
     },
     {
       "title": "Argentine couple to return Nazi-looted painting to rightful owner",
@@ -3307,10 +3343,10 @@
       "description": "The late-baroque Portrait of a Lady was lost for 80 years until it was spotted in photographs of a house for sale near Buenos Aires."
     },
     {
-      "title": "UN votes to adopt new world map to reflect Africa's true size",
-      "url": "https://www.bbc.co.uk/news/articles/ce30vp55dnlo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "UK support for Falkland Islands 'unwavering' after Argentina restates claims, No 10 says",
+      "url": "https://www.bbc.co.uk/news/articles/cn45jg3zlz4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 4, 2026",
-      "description": "The Togo-sponsored resolution was backed by 164 nations - the US the only nation to vote against it."
+      "description": "The comments come as Argentinian president Javier Milei says the \"winds of change\" favoured his country's claim on the British overseas territory."
     },
     {
       "title": "Body of world's youngest traditional king returns home to Uganda amid succession row",
@@ -3319,46 +3355,28 @@
       "description": "King Oyo died in the US last week aged 34 after receiving treatment for an aggressive form of cancer."
     },
     {
-      "title": "100 influencers invited to US Open spark debate on 'tennis etiquette'",
-      "url": "https://www.bbc.co.uk/sport/tennis/articles/cy8zqd4zg14o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Lindsay Clancy murder trial has divided US on whether she's victim or criminal",
+      "url": "https://www.bbc.co.uk/news/articles/cx2z0xnw2d6o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 5, 2026",
+      "description": "Some say the case shed light on the mental health struggles of mothers, while others argue it's no excuse for murder."
+    },
+    {
+      "title": "Why are European countries moving their gold out of North America?",
+      "url": "https://www.bbc.co.uk/news/articles/cvgyn8q8gqxo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 5, 2026",
+      "description": "The Netherlands has relocated 86 tonnes of the shiny stuff - what's going on?"
+    },
+    {
+      "title": "Nepal bet nearly everything on hydropower - the floods show why that's a problem",
+      "url": "https://www.bbc.co.uk/news/articles/cy0zx368prno?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 4, 2026",
-      "description": "The behaviour of influencers and content creators has become a major talking point at this year's US Open amid incidents of matches being disrupted."
+      "description": "More than 10% of Nepal's energy generation capacity was knocked out by last week's floods."
     },
     {
-      "title": "Transplanted pig kidney works in US man's body for record 271 days",
-      "url": "https://www.bbc.co.uk/news/articles/c305qn2jeggo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 3, 2026",
-      "description": "A man has lived for a record nine months with a transplanted pig kidney while waiting for a human transplant."
-    },
-    {
-      "title": "Volkswagen board approves plan to cut another 50,000 jobs",
-      "url": "https://www.bbc.co.uk/news/articles/cx2z0kvy4n4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 4, 2026",
-      "description": "The group - which includes Audi, Porsche, Skoda as well as the VW brand - plans to cut a total of 100,000 posts by 2030."
-    },
-    {
-      "title": "UN warns of 'supersized' El Niño as countries prepare for impact",
-      "url": "https://www.bbc.co.uk/news/articles/c17jqp0xzpzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 3, 2026",
-      "description": "The WMO has warned that the natural weather phenomenon could bring disruption to global economies."
-    },
-    {
-      "title": "Around 2,000 fall ill in Indonesia after eating free school meals",
-      "url": "https://www.bbc.co.uk/news/articles/cx2z7lz7777o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 3, 2026",
-      "description": "Authorities are investigating several suspected outbreaks amid growing criticism of the scheme."
-    },
-    {
-      "title": "US billionaire Leon Black defies summons and sues Epstein panel",
-      "url": "https://www.bbc.co.uk/news/articles/cddve618plzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 3, 2026",
-      "description": "The lawsuit calls the House Oversight Committee's subpoenas, which ordered him to share nondisclosure agreements, \"invalid\"."
-    },
-    {
-      "title": "Feminist activist and journalist Gloria Steinem dies, aged 92",
-      "url": "https://www.bbc.co.uk/news/articles/clyeq3ngwe4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 3, 2026",
-      "description": "Her foundation said she \"passed away peacefully\" at her home in New York City, \"surrounded by many who loved her\"."
+      "title": "Flock says its cameras make US safer - so why are they being sabotaged?",
+      "url": "https://www.bbc.co.uk/news/articles/cew9kz1kxpvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 5, 2026",
+      "description": "The AI-powered cameras have been vandalised across the US, as citizens object to the growing surveillance network."
     },
     {
       "title": "'Layer upon layer of miracles' to find tunnel survivors, Nepal rescue adviser tells BBC",
@@ -3367,52 +3385,40 @@
       "description": "From searching for a buried tunnel entrance to blowing up rocks the size of cars, rescuers had to surmount multiple challenges to reach survivors."
     },
     {
-      "title": "AI data centres are booming in Australia - but at what cost?",
-      "url": "https://www.bbc.co.uk/news/articles/cgl3we7wdr3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 3, 2026",
-      "description": "Advocates say data centres will bring jobs but others worry they will suck up resources while providing little advantage."
-    },
-    {
       "title": "Kenya's chai lovers are not happy as the nation's cows run dry",
       "url": "https://www.bbc.co.uk/news/articles/cgqd9ldegjqo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 4, 2026",
       "description": "Supermarket shelves are emptying, sellers are rationing supplies and prices are rising."
     },
     {
-      "title": "Girl group Katseye are missing two members, but their tour still dazzles",
-      "url": "https://www.bbc.co.uk/news/articles/cqxv49z84ppo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 4, 2026",
-      "description": "Reduced but resilient, girl group Katseye received a hero's welcome in London."
+      "title": "How might Lindsay Clancy’s case have unfolded in another country?",
+      "url": "https://www.bbc.co.uk/news/videos/cqlw6q0xv4zo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 5, 2026",
+      "description": "The US mother was on trial for strangling her three children. In other western countries, there’s a specific law for mums who kill their young children."
     },
     {
-      "title": "How Gloria Steinem changed the lives of generations of women",
-      "url": "https://www.bbc.co.uk/news/articles/cqv5wxyp5xwo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 3, 2026",
-      "description": "The trailblazing feminist spoke out for the legalisation of abortion, same-sex marriage and equal pay for women - but her activism was not without backlash."
+      "title": "How the Lindsay Clancy trial gripped America - and ultimately fell apart",
+      "url": "https://www.bbc.co.uk/news/videos/cr7dzr2e789o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 5, 2026",
+      "description": "A Massachusetts judge has declared a mistrial in the murder case against the US mother after jurors were unable to reach a unanimous verdict."
     },
     {
-      "title": "Why Nepal floods should worry India",
-      "url": "https://www.bbc.co.uk/news/articles/cn8e940gz10o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 3, 2026",
-      "description": "The disaster comes as a warning as climate change raises shared Himalayan risks."
-    },
-    {
-      "title": "'The crowd shouted that we'd stolen someone's genitals' - deadly rumours spread on social media",
-      "url": "https://www.bbc.co.uk/news/articles/ckg8lw7n2ddo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 3, 2026",
-      "description": "More than 80 people have been killed in the mob violence, the BBC finds after gathering data from six African nations."
-    },
-    {
-      "title": "Sharpeville massacre survivors start legal fight for justice in South Africa",
-      "url": "https://www.bbc.co.uk/news/articles/c1mvll11ll5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 3, 2026",
-      "description": "At least 69 people were shot dead in 1960 but no-one has been prosecuted and victims want restitution."
+      "title": "Why did USS Lincoln turn up in Thailand looking so rusty?",
+      "url": "https://www.bbc.co.uk/news/videos/c4gr9y1ny3xo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 5, 2026",
+      "description": "When the USS Abraham Lincoln docked in Thailand this week some people were quick to criticise the condition it was in."
     },
     {
       "title": "'We expect our sons to be killed,' father of teen shot dead in West Bank tells BBC",
       "url": "https://www.bbc.co.uk/news/videos/cn8evz26eyqo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 4, 2026",
       "description": "Palestinian teenagers Omar al-Naasan and Khalil Abu Alia were shot dead when Israeli settlers and soldiers entered a village in the occupied West Bank."
+    },
+    {
+      "title": "How much can Canada fight back in its trade war with the US?",
+      "url": "https://www.bbc.co.uk/news/videos/c74knp7y04eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 5, 2026",
+      "description": "The US may be the bigger trading partner, but Canada shouldn't be counted out quite yet in the escalating trade fight."
     },
     {
       "title": "Watch: Moment workers are rescued from Nepal tunnel",
@@ -3601,22 +3607,22 @@
       "description": "The switch to quieter electric equipment is not going as fast as some would like."
     },
     {
+      "title": "Live music to raise cash for Christmas dinners",
+      "url": "https://www.bbc.co.uk/news/articles/crl6dw4pzexo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 5, 2026",
+      "description": "Proceeds from the event help fund Christmas for families struggling financially in the South East."
+    },
+    {
+      "title": "Flight price rises due to 'foolish leaders' starting wars, Virgin's Branson says",
+      "url": "https://www.bbc.co.uk/news/articles/cje8wx2qw9vo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 5, 2026",
+      "description": "Middle East tensions have choked the production and transportation of oil, causing a surge in the price of car and jet fuels."
+    },
+    {
       "title": "Firmus Energy customers face price increase",
       "url": "https://www.bbc.co.uk/news/articles/cqlw6g2x1lko?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 4, 2026",
       "description": "Customers in the Ten Towns area will see a 8.98% increase and 12.5% for Greater Belfast."
-    },
-    {
-      "title": "Mum says 'no fat left to trim' on household costs amid 42% rise in water bills",
-      "url": "https://www.bbc.co.uk/news/articles/c62qyzdv721o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 4, 2026",
-      "description": "Water companies were given the green light to increase bills for customers earlier this month."
-    },
-    {
-      "title": "Prosecco, cakes and beauty products - how to get birthday freebies and why there's a catch",
-      "url": "https://www.bbc.co.uk/news/articles/c5y4jr4yr2eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 4, 2026",
-      "description": "Cake, coffee, make-up and burgers are just some of the free things you can get on your birthday."
     },
     {
       "title": "Why the UK is dithering over what to do about e-scooters",
@@ -3649,6 +3655,12 @@
       "description": "Coffees at some city centre outlets now cost £5. It's a story of tariffs, the climate, Gen Z cultural tastes, and savvy coffee farmers playing the market, writes Faisal Islam"
     },
     {
+      "title": "How much can Canada fight back in its trade war with the US?",
+      "url": "https://www.bbc.co.uk/news/videos/c74knp7y04eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 5, 2026",
+      "description": "The US may be the bigger trading partner, but Canada shouldn't be counted out quite yet in the escalating trade fight."
+    },
+    {
       "title": "1986: Manchester's second-hand fashion mecca",
       "url": "https://www.bbc.co.uk/videos/cj9x1kejd4lo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 4, 2026",
@@ -3667,148 +3679,130 @@
       "description": "Rising bonds yields and growing government debt could see interest rates start to rise"
     },
     {
-      "title": "Watch: Trump $1 commemorative coin goes on sale",
-      "url": "https://www.bbc.co.uk/news/videos/cx2z0jn7450o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 3, 2026",
-      "description": "The US Mint began selling gold-coloured $1(£0.74) coins featuring President Donald Trump's likeness to mark the country's 250th anniversary."
+      "title": "At least four civilians killed in Houthi missile strike near Yemen’s Taiz",
+      "url": "https://www.aljazeera.com/news/2026/9/5/at-least-four-killed-in-houthi-missile-strike-near-yemens-taiz?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "The attack on a crowded road comes amid fierce clashes across Taiz and Hodeidah and rapid civilian displacement."
     },
     {
-      "title": "Costa Rican president signals openness to domestic US military operations",
-      "url": "https://www.aljazeera.com/news/2026/9/4/costa-rican-president-signals-openness-to-domestic-us-military-operations?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "President Laura Fernandez notes that Congress would need to approve any US military operations within the country."
+      "title": "How big is Africa really? Why the UN voted to change the world map",
+      "url": "https://www.aljazeera.com/news/2026/9/5/how-big-is-africa-really-why-the-un-voted-to-change-the-world-map?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "The new map makes Africa, Latin America, South Asia and Oceania larger than the traditional Mercator projection."
     },
     {
-      "title": "Betis beat Real Madrid as Mbappe misses penalty in first La Liga defeat",
-      "url": "https://www.aljazeera.com/sports/2026/9/4/real-madrid-beaten-by-betis-as-mourinho-suffers-first-defeat-on-return?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Jose Mourinho's winning start to his second spell at Real Madrid ends with a 1-0 La Liga defeat at Real Betis."
+      "title": "Yemen government launches own air attacks on Houthis: What that means",
+      "url": "https://www.aljazeera.com/news/2026/9/5/yemen-government-launches-own-air-attacks-on-houthis-what-that-means?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "A major Houthi offensive towards Bab al-Mandeb has triggered some of Yemen’s worst fighting in years."
     },
     {
-      "title": "US regulator opens safety investigation as Tesla launches driverless taxis",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/us-regulator-opens-safety-investigation-as-tesla-launches-driverless-taxis?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "The US National Highway Traffic Safety Administration has opened up an investigation into Tesla’s new self-driving car."
+      "title": "Costa Rica’s president says US ground forces would boost national security",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/costa-ricas-president-says-us-ground-forces-would-boost-national-security?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "Costa Rican President Laura Fernandez said US ground operations could boost national security."
     },
     {
-      "title": "Sabalenka interrupts US Open match against Rakhimova over cannabis smell",
-      "url": "https://www.aljazeera.com/sports/2026/9/4/sabalenka-interrupts-us-open-match-against-rakhimova-over-cannabis-smell?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "World number one Aryna Sabalenka's straight-sets US Open win against Kamilla Rakhimova stopped by smell of cannabis."
+      "title": "Israel must protect West Bank’s Palestinians amid settler pogroms: US envoy",
+      "url": "https://www.aljazeera.com/news/2026/9/5/israel-must-guarantee-safety-of-west-bank-population-ambassador?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "Huckabee labels some of the settlers committing violence as 'terrorists' though analysts say his visit is 'symbolic'."
     },
     {
-      "title": "Liverpool beat Ipswich as Isak goals hand Iraola first Premier League win",
-      "url": "https://www.aljazeera.com/sports/2026/9/4/liverpool-beat-ipswich-as-isak-goals-hand-iraola-first-premier-league-win?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Bradley Barcola makes his debut as Alexander Isak scores both Liverpool goals in 2-0 win at Ipswich Town."
+      "title": "Pickleball and dining: Why courts are the new food destinations",
+      "url": "https://www.aljazeera.com/features/longform/2026/9/5/pickleball-and-dining-why-courts-are-the-new-food-destinations?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "The fastest-growing sport in the US is the 'eatertainment' trend’s new darling. How long will it last?"
     },
     {
-      "title": "Nigel Farage heckled as he denies Reform UK took illegal funding",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/nigel-farage-heckled-as-he-denies-reform-uk-took-illegal-funding?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Reform UK leader Nigel Farage was heckled by protesters on Friday, as he addressed the party’s conference in Birmingham."
+      "title": "LIVE: India vs Pakistan – Women’s T20 Asia Cup",
+      "url": "https://www.aljazeera.com/sports/liveblog/2026/9/5/live-india-vs-pakistan-womens-t20-asia-cup?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "Follow the updates from our live build-up to our text commentary stream coverage of the Group A match in Dubai."
     },
     {
-      "title": "Will Europe pay the US to provide military aid to Ukraine?",
-      "url": "https://www.aljazeera.com/video/inside-story/2026/9/4/will-europe-pay-the-us-to-provide-military-aid-to-ukraine?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "US President Donald Trump laments past financial support for Ukraine's war effort and has vowed to claw the money back."
+      "title": "Mudslide in eastern China kills one, leaves 11 missing",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/mudslide-in-eastern-china-kills-one-leaves-11-missing?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "A mudslide triggered by days of heavy rain in Jiangxi province, China, has killed one person and left 11 missing."
     },
     {
-      "title": "Mexico seizes 17 tonnes of meth in $347 million drug bust",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/mexico-seizes-17-tonnes-of-meth-in-347-million-drug-bust?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Mexican authorities seized nearly 17 tonnes of methamphetamine from three clandestine laboratories in Sinaloa"
+      "title": "US ambassador to Israel meets Palestinian-Americans in occupied West Bank",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/us-ambassador-to-israel-meets-palestinian-americans-in-occupied-west-bank?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "US Ambassador to Israel Mike Huckabee has visited Turmus Ayya in the occupied West Bank."
     },
     {
-      "title": "Watchdog report alleges misconduct by Trump’s former labour secretary",
-      "url": "https://www.aljazeera.com/news/2026/9/4/watchdog-report-alleges-misconduct-by-trumps-former-labour-secretary?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Lori Chavez-DeRemer reportedly used staff for personal tasks, drank at work and violated ethics regulations."
+      "title": "Qatar removed from Fitch’s negative watch list as risks to LNG sites ease",
+      "url": "https://www.aljazeera.com/economy/2026/9/5/fitch-removes-qatar-from-rating-watch-as-lng-risks-ease?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "The global ratings agency has also maintained the country’s sovereign rating at AA."
     },
     {
-      "title": "Israeli drones drop bombs on southern Lebanon’s Mansouri",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/04-09-sv-israel-drone-bombs-mansouri-lb-fm?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Several explosions rocked the southern Lebanese town of Mansouri after Israeli military drones dropped explosives in the"
+      "title": "Fenerbahce’s Greenwood, Guendouzi handed fines and bans after brawl at Lyon",
+      "url": "https://www.aljazeera.com/sports/2026/9/5/fenerbahces-greenwood-guendouzi-handed-fines-and-bans-after-brawl-at-lyon?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "Fights between players and coaching staff broke out after the Turkish side won the Champions League playoff second leg."
     },
     {
-      "title": "Israeli strike kills two in southern Lebanon amid ongoing escalation",
-      "url": "https://www.aljazeera.com/news/2026/9/4/israeli-strike-kills-two-in-southern-lebanon-amid-ongoing-escalation?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Israeli attacks against villages and towns in southern Lebanon continue despite truce agreements and diplomacy."
+      "title": "Orangutan mother and infant rescued from wildfire-hit forest in Indonesia",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/orangutan-mother-and-infant-rescued-from-wildfire-hit-forest-in-indonesia?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "A mother orangutan and her infant have been rescued from a shrinking patch of forest threatened by wildfires."
     },
     {
-      "title": "Andrew Tate indicted in Romania for trafficking minors, money laundering",
-      "url": "https://www.aljazeera.com/news/2026/9/4/andrew-tate-indicted-in-romania-for-trafficking-minors-money-laundering?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "The influencer and his brother are in a Miami prison pending potential extradition to the UK on rape charges"
+      "title": "Mansour Abbas is betting on a Zionist to make Palestinian votes count",
+      "url": "https://www.aljazeera.com/opinions/2026/9/5/mansour-abbas-is-betting-on-a-zionist-to-make-arab-votes-count?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "By allying with Segalovich in the Israeli vote, Abbas is hoping for greater acceptance in Israeli coalition politics."
     },
     {
-      "title": "UN votes to adopt new world map that reflects Africa’s true size",
-      "url": "https://www.aljazeera.com/news/2026/9/4/un-votes-to-adopt-new-world-map-that-reflects-africas-true-size?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "The widely-used Mercator map is often criticised for visually exaggerating and centralising Western nations."
+      "title": "Pentagon polygraphs dozens of US military staff over media leaks",
+      "url": "https://www.aljazeera.com/news/2026/9/5/pentagon-polygraphs-military-staff-over-media-leaks-report?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "About 50 officers on the US Joint Staff were interrogated over reports detailing depleted weapons stockpiles, NYT says."
     },
     {
-      "title": "Five EU nations inch towards deal on migrant ‘return hubs’ by 2027",
-      "url": "https://www.aljazeera.com/news/2026/9/4/five-eu-nations-inch-towards-deal-on-migrant-return-hubs-by-2027?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Germany, Austria, ⁠Greece, Denmark and the Netherlands did not outline where the centres would be located."
+      "title": "UAE pardons Egyptian dissident-poet al-Qaradawi facing 10 years in prison",
+      "url": "https://www.aljazeera.com/news/2026/9/5/uae-pardons-egyptian-dissident-poet-al-qaradawi-facing-10-years-in-prison?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "Egyptian activist Abdul Rahman al-Qaradawi was held due to an arrest warrant by the Arab Interior Ministers Council."
     },
     {
-      "title": "Brazilian Supreme Court roiled by dispute between justices",
-      "url": "https://www.aljazeera.com/news/2026/9/4/brazilian-supreme-court-roiled-by-dispute-between-justices?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "The country's highest court is considering investigations into two judges who have accused each other of wrongdoing."
+      "title": "UK art show explores Muslim life, Europe’s Islamic history and Islamophobia",
+      "url": "https://www.aljazeera.com/news/2026/9/5/i-was-born-here-london-exhibition?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "Shahed Saleem's exhibition presents colourful tapestries depicting fateful moments for British and European Muslims."
     },
     {
-      "title": "Villagers vow to rebuild despite devastating mass demolition in West Bank",
-      "url": "https://www.aljazeera.com/news/2026/9/4/villagers-vow-rebuild-despite-devastating-mass-demolition-west-bank?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Israeli forces' demolition of 12 homes in Khirbet al-Tabban leaves villagers determined to stand firm on their land."
+      "title": "Niger accuses France of orchestrating failed military mutiny",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/niger-accuses-france-of-orchestrating-failed-military-mutiny?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "Niger has blamed France for inciting an attack on a key military airbase by mutinous soldiers last week."
     },
     {
-      "title": "Moment two workers are pulled alive from Nepal tunnel",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/moment-two-workers-are-pulled-alive-from-nepal-tunnel?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Rescuers pulled two workers alive from a hydropower tunnel in Nepal"
+      "title": "Alcaraz, Sabalenka into US Open last 16 as Williams sisters lose on return",
+      "url": "https://www.aljazeera.com/sports/2026/9/5/alcaraz-sabalenka-into-us-open-last-16-as-williams-sisters-lose-on-return?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "Alcaraz beat China's Wu Yibing 6-3, 6-4, 6-1, while Sabalenka defeated Kamilla Rakhimova 6-3, 6-4."
     },
     {
-      "title": "Indonesia wildfires send toxic haze across Southeast Asia",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/04-09-sv-indonesia-kalimantan-haze-borneo-wildfires-haze-id?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Indonesia’s Kalimantan province, sending smoke and toxic haze across Southeast Asia."
+      "title": "Have scientists discovered a dark matter particle?",
+      "url": "https://www.aljazeera.com/features/2026/9/5/have-scientists-discovered-a-dark-matter-particle?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "Dark matter is an invisible substance that is said to bind the universe; scientists may have found new signs of it."
     },
     {
-      "title": "Yemen’s army says recaptured key territory as clashes with Houthis continue",
-      "url": "https://www.aljazeera.com/news/2026/9/4/yemens-army-says-recaptured-key-territory-as-clashes-with-houthis-continue?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Two days of fighting between government forces and Houthi fighters has left dozens dead on both sides, sources say."
+      "title": "At least five killed in Sudan’s South Kordofan in attack by rebel group",
+      "url": "https://www.aljazeera.com/news/2026/9/5/five-killed-in-sudans-kordofan-in-attack-by-rebel-group?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "Sudan Doctors Network says SPLM-N forces shelled residential areas in the town of Dilling."
     },
     {
-      "title": "Rescuers race to save 10-year-old Algerian boy trapped in deep well",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/rescuers-race-to-save10-year-old-algerian-boy-trapped-in-deep-well?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Rescue teams in Algeria are racing against time to save a 10-year-old boy named Ayoub, after he fell into an deep well."
-    },
-    {
-      "title": "US adds 162,000 jobs in August, raising Fed rate hike expectations",
-      "url": "https://www.aljazeera.com/economy/2026/9/4/us-adds-jobs-in-august-beating-economic-forecasts?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Unemployment rate steady as public schools and food services lead the surge in US job growth for August."
-    },
-    {
-      "title": "The number 10 shirt must not retire with Messi",
-      "url": "https://www.aljazeera.com/opinions/2026/9/4/the-number-10-shirt-must-not-retire-with-messi?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "Maradona and Messi each made the shirt their own. The next great Argentinian player should have that chance, too."
-    },
-    {
-      "title": "Bride walks down the aisle despite waist-deep flooding",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/4/bride-walks-down-the-aisle-despite-waist-deep-flooding?traffic_source=rss",
-      "date": "September 4, 2026",
-      "description": "A couple chose to get married in the middle of severe flooding in the Philippines."
+      "title": "Bolivian military barracks explosion kills at least 10",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/5/bolivian-military-barracks-explosion-kills-at-least-10?traffic_source=rss",
+      "date": "September 5, 2026",
+      "description": "An explosion at a military barracks in Viacha, Bolivia, has killed at least 10 people and injured dozens."
     }
   ]
 }
