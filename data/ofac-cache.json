@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T19:07:56.217Z",
+  "updatedAt": "2026-09-06T21:07:59.224Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260904",
@@ -3076,6 +3076,12 @@
   ],
   "bbcNews": [
     {
+      "title": "Peace talks rich in symbolism but fundamental differences between Russia and Ukraine remain",
+      "url": "https://www.bbc.co.uk/news/articles/c980j5m8mpro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 6, 2026",
+      "description": "Despite talks between US envoys and both Putin and Zelensky, the expectation in Kyiv is the fighting will continue, writes James Landale."
+    },
+    {
       "title": "Iran warns of 'faster, heavier, more painful response' to US attacks",
       "url": "https://www.bbc.co.uk/news/articles/cp8d56w7d9po?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 6, 2026",
@@ -3154,12 +3160,6 @@
       "url": "https://www.aljazeera.com/news/2026/9/6/us-envoys-hold-substantive-talks-with-zelenskyy-in-first-visit-to-kyiv?traffic_source=rss",
       "date": "September 6, 2026",
       "description": "Meeting comes a day after US envoys Jared Kushner and Steve Witkoff met Russian President Vladimir Putin in Moscow."
-    },
-    {
-      "title": "US envoys meet Putin: What’s behind latest diplomacy on Russia-Ukraine war?",
-      "url": "https://www.aljazeera.com/news/2026/9/6/putin-meets-us-envoys-whats-behind-latest-diplomacy-on-russia-ukraine-war?traffic_source=rss",
-      "date": "September 6, 2026",
-      "description": "Steve Witkoff and Jared Kushner met Putin and headed to Kyiv as part of Trump's new efforts to broker agreement."
     }
   ],
   "occNews": [
@@ -3277,16 +3277,16 @@
   ],
   "regionsNews": [
     {
-      "title": "Zelensky says he expects war to continue into winter after talks with US envoys",
-      "url": "https://www.bbc.co.uk/news/articles/c6248nvqy8po?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 6, 2026",
-      "description": "Talks finished without an announcement of a major breakthrough, after Steve Witkoff and Jared Kushner travelled to Kyiv."
-    },
-    {
       "title": "German far-right set for big win in eastern state, projections show",
       "url": "https://www.bbc.co.uk/news/articles/cy4zejgz3z9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 6, 2026",
       "description": "Germany's AfD has hailed a \"historic result\" and is projected to win more than 44% of the vote, far ahead of the conservative CDU on 18.4%."
+    },
+    {
+      "title": "Zelensky says he expects war to continue into winter after talks with US envoys",
+      "url": "https://www.bbc.co.uk/news/articles/c6248nvqy8po?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 6, 2026",
+      "description": "There was no announcement of a major breakthrough, after Steve Witkoff and Jared Kushner travelled to Kyiv."
     },
     {
       "title": "Volcano eruption leaves 170,000 passengers stranded in Indonesia",
@@ -3397,6 +3397,18 @@
       "description": "The AI-powered cameras have been vandalised across the US, as citizens object to the growing surveillance network."
     },
     {
+      "title": "Video shows damaged Amazon cargo plane after crash",
+      "url": "https://www.bbc.co.uk/news/videos/c62k8dz8r4lo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 6, 2026",
+      "description": "An Amazon Air cargo plane has overshot the runway while attempting to land at Miami International Airport."
+    },
+    {
+      "title": "Germany's far-right AfD celebrate projected win in state election",
+      "url": "https://www.bbc.co.uk/news/videos/c5yegd6ldy6o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 6, 2026",
+      "description": "AfD leaders celebrated tonight as exit polls projected a big lead in the Saxony-Anhalt vote."
+    },
+    {
       "title": "Watch: Moment 64-year-old Nepali woman is found alive in mud-buried home",
       "url": "https://www.bbc.co.uk/news/videos/c4gd24d1d0do?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 6, 2026",
@@ -3413,24 +3425,6 @@
       "url": "https://www.bbc.co.uk/news/videos/cqlw6q0xv4zo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 5, 2026",
       "description": "The US mother was on trial for strangling her three children. In other western countries, there’s a specific law for mums who kill their young children."
-    },
-    {
-      "title": "How the Lindsay Clancy trial gripped America - and ultimately fell apart",
-      "url": "https://www.bbc.co.uk/news/videos/cr7dzr2e789o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 5, 2026",
-      "description": "A Massachusetts judge has declared a mistrial in the murder case against the US mother after jurors were unable to reach a unanimous verdict."
-    },
-    {
-      "title": "Why did USS Lincoln turn up in Thailand looking so rusty?",
-      "url": "https://www.bbc.co.uk/news/videos/c4gr9y1ny3xo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 5, 2026",
-      "description": "When the USS Abraham Lincoln docked in Thailand this week some people were quick to criticise the condition it was in."
-    },
-    {
-      "title": "'We expect our sons to be killed,' father of teen shot dead in West Bank tells BBC",
-      "url": "https://www.bbc.co.uk/news/videos/cn8evz26eyqo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 4, 2026",
-      "description": "Palestinian teenagers Omar al-Naasan and Khalil Abu Alia were shot dead when Israeli settlers and soldiers entered a village in the occupied West Bank."
     },
     {
       "title": "Minister to meet Jaguar Land Rover boss as thousands of job cuts expected",
@@ -3697,6 +3691,48 @@
       "description": "We ask people in London if they would fib about their birthday to get a free treat from a shop or restaurant."
     },
     {
+      "title": "Susan Sarandon says she still loses film roles over support for Palestine",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/susan-sarandon-says-she-still-loses-film-roles-over-support-for-palestine?traffic_source=rss",
+      "date": "September 6, 2026",
+      "description": "Susan Sarandon says she still loses film roles over support for Palestine"
+    },
+    {
+      "title": "Will Israelis re-elect Benjamin Netanyahu?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/9/6/will-israelis-re-elect-benjamin-netanyahu?traffic_source=rss",
+      "date": "September 6, 2026",
+      "description": "Recent opinion polls suggest opposition bloc is ahead of PM's coalition."
+    },
+    {
+      "title": "At least five killed in New Delhi building collapse",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/at-least-five-killed-in-new-delhi-building-collapse?traffic_source=rss",
+      "date": "September 6, 2026",
+      "description": "At least five people have been killed and nine rescued after a building housing mostly students collapsed in New Delhi."
+    },
+    {
+      "title": "Abdul El-Sayed uses speech to talk about Muslim faith and American identity",
+      "url": "https://www.aljazeera.com/news/2026/9/6/abdul-el-sayed-uses-speech-to-talk-about-muslim-faith-and-american-identity?traffic_source=rss",
+      "date": "September 6, 2026",
+      "description": "Michigan Senate hopeful spoke about his faith and the experiences of Muslim Americans."
+    },
+    {
+      "title": "Indonesia volcano eruption disrupts hundreds of flights",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/indonesia-volcano-eruption-disrupts-hundreds-of-flights?traffic_source=rss",
+      "date": "September 6, 2026",
+      "description": "Two new eruptions were recorded as Indonesia’s Anak Krakatau continued to spew volcanic ash."
+    },
+    {
+      "title": "Adidas faces boycott calls over campaign featuring former Israeli soldier",
+      "url": "https://www.aljazeera.com/sports/2026/9/6/adidas-faces-boycott-calls-over-campaign-featuring-former-israeli-soldier?traffic_source=rss",
+      "date": "September 6, 2026",
+      "description": "Activists slam campaign showing soldier while over 5,000 Palestinians faced amputations due to Israeli attacks in Gaza."
+    },
+    {
+      "title": "Trump administration appeals again to US Supreme Court over mail-in voting",
+      "url": "https://www.aljazeera.com/news/2026/9/6/trump-administration-appeals-again-to-us-supreme-court-over-mail-in-voting?traffic_source=rss",
+      "date": "September 6, 2026",
+      "description": "How the nation's highest court rules could have major implications in this year’s midterm elections."
+    },
+    {
       "title": "Why is Argentina reviving the Falklands dispute?",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/why-is-argentina-reviving-the-falklands-dispute?traffic_source=rss",
       "date": "September 6, 2026",
@@ -3785,42 +3821,6 @@
       "url": "https://www.aljazeera.com/sports/2026/9/6/embattled-fifa-president-gianni-infantino-to-stand-for-re-election?traffic_source=rss",
       "date": "September 6, 2026",
       "description": "FIFA says its chief has not changed his stance on re-election as Infantino faces widespread criticism."
-    },
-    {
-      "title": "Bosnian Serbs strengthen ties with Israel amid tensions",
-      "url": "https://www.aljazeera.com/news/2026/9/6/bosnian-serbs-strengthen-ties-with-israel-amid-tensions?traffic_source=rss",
-      "date": "September 6, 2026",
-      "description": "Opening of Israeli commerce office deepens ties between Republika Srpska and Israel."
-    },
-    {
-      "title": "Nepal rescuers search hydropower tunnels for survivors",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/nepal-rescuers-search-hydropower-tunnels-for-survivors?traffic_source=rss",
-      "date": "September 6, 2026",
-      "description": "Rescue teams are searching for survivors trapped inside tunnels at Nepal’s Chilime hydropower plant."
-    },
-    {
-      "title": "Why potluck parties are making a big comeback in America",
-      "url": "https://www.aljazeera.com/features/longform/2026/9/6/why-potluck-parties-are-making-a-big-comeback-in-america?traffic_source=rss",
-      "date": "September 6, 2026",
-      "description": "As Americans spend less time socialising, communities are rediscovering an old way of bringing people together."
-    },
-    {
-      "title": "China, Nepal race to find thousands still missing 12 days after floods",
-      "url": "https://www.aljazeera.com/news/2026/9/6/china-nepal-race-to-find-thousands-still-missing-12-days-after-floods?traffic_source=rss",
-      "date": "September 6, 2026",
-      "description": "More than 5,500 people are still missing in China and Nepal after catastrophic floods across the two countries."
-    },
-    {
-      "title": "What the US militarisation of Latin America could look like",
-      "url": "https://www.aljazeera.com/opinions/2026/9/6/what-the-us-militarisation-of-latin-america-could-look-like?traffic_source=rss",
-      "date": "September 6, 2026",
-      "description": "More US military involvement and larger regional defence budgets mean less social spending and worse democracy outcomes."
-    },
-    {
-      "title": "Reform UK says Britain is broken. Birmingham tells another story",
-      "url": "https://www.aljazeera.com/opinions/2026/9/6/reform-uk-says-britain-is-broken-birmingham-tells-another-story?traffic_source=rss",
-      "date": "September 6, 2026",
-      "description": "The party's gains in Britain's most diverse major city are real, but they are not a verdict against multiculturalism."
     }
   ]
 }
