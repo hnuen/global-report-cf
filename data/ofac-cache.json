@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07T17:08:29.453Z",
+  "updatedAt": "2026-09-07T19:08:29.456Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260904",
@@ -3016,7 +3016,56 @@
       "date": "March 31, 2016"
     }
   ],
-  "europaNews": [],
+  "europaNews": [
+    {
+      "title": "EU adopts 21th package of sanctions against Russia",
+      "url": "https://finance.ec.europa.eu/news/eu-adopts-21th-package-sanctions-against-russia-2026-07-23_en",
+      "date": "July 27, 2026",
+      "description": "The Commission welcomes the Council's adoption of the 21th Russia sanctions package, that further restricts Russia's ability to fund its illegal war and to carry out attacks on Ukrainian civilians and civilian infrastructure."
+    },
+    {
+      "title": "Statement on the seventh Sanctions Coordinators Forum",
+      "url": "https://finance.ec.europa.eu/news/statement-seventh-sanctions-coordinators-forum-2026-04-30_en",
+      "date": "April 30, 2026",
+      "description": "Today, EU Sanctions Envoy, David O’Sullivan, convened the sixth Sanctions Coordinators Forum, gathering high‑level representatives from all EU Member States and a broad coalition of international partners. Representatives of the Government of Ukraine joined for a dedicated session."
+    },
+    {
+      "title": "Statement by Commissioner Albuquerque on the outcomes of the ninth high-level meeting on sanctions implementation",
+      "url": "https://finance.ec.europa.eu/news/statement-commissioner-albuquerque-outcomes-ninth-high-level-meeting-sanctions-implementation-2026-04-30_en",
+      "date": "April 30, 2026",
+      "description": "High‑level representatives from Member States, alongside the Commission and the European External Action Service, came together to share best practices and success stories, and discuss challenges."
+    },
+    {
+      "title": "EU adopts 20th package of sanctions against Russia",
+      "url": "https://finance.ec.europa.eu/news/eu-adopts-20th-package-sanctions-against-russia-2026-04-23_en",
+      "date": "April 24, 2026",
+      "description": "The Commission welcomes the Council's adoption of the 20th Russia sanctions package, that puts further pressure on Russia to engage in negotiations and do so on terms acceptable for Ukraine."
+    },
+    {
+      "title": "Commission welcomes new sanctions against Iran",
+      "url": "https://finance.ec.europa.eu/news/commission-welcomes-new-sanctions-against-iran-2026-01-30_en",
+      "date": "January 30, 2026",
+      "description": "The restrictive measures consist of an asset freeze, travel bans to the EU, and a prohibition to make funds or economic resources available to those listed."
+    },
+    {
+      "title": "New dynamic mechanism to lower price cap for Russian crude oil to $44,10 per barrel",
+      "url": "https://finance.ec.europa.eu/news/new-dynamic-mechanism-lower-price-cap-russian-crude-oil-4410-barrel-2026-01-15_en",
+      "date": "January 30, 2026",
+      "description": "Today, the new automatic and dynamic mechanism for price adaptation of the oil price cap for Russian crude will be applied for the first time."
+    },
+    {
+      "title": "Sanctions: Member States designate 41 additional vessels in Russia's shadow fleet",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_25_3129",
+      "date": "December 18, 2025",
+      "description": "With these new listings, a total of 597 vessels are now listed by the EU."
+    },
+    {
+      "title": "Sanctions: The EU adopts new measures against the Russian shadow fleet ecosystem and Belarus",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_25_3070",
+      "date": "December 15, 2025",
+      "description": "These new measures aim at further increasing the pressure on Russia and Belarus and supporting EU's goal of achieving a just and lasting peace for Ukraine."
+    }
+  ],
   "unNotices": [
     {
       "title": "Security Council ISIL (Da’esh) and Al-Qaida Sanctions Committee Amends Two Entries on Its Sanctions List",
@@ -3059,22 +3108,22 @@
   ],
   "ajNews": [
     {
+      "title": "Syria detains Assad-era general accused of bloody crackdown on protests",
+      "url": "https://www.aljazeera.com/news/2026/9/7/syria-detains-assad-era-general-accused-of-bloody-crackdown-on-protests?traffic_source=rss",
+      "date": "September 7, 2026",
+      "description": "Major-General Mohammed Ali Durgham is accused of links to 1982 Hama massacre and 2011 protest crackdown."
+    },
+    {
+      "title": "Russia shutters German consulate as diplomatic freeze deepens",
+      "url": "https://www.aljazeera.com/news/2026/9/7/russia-shutters-german-consulate-as-diplomatic-freeze-deepens?traffic_source=rss",
+      "date": "September 7, 2026",
+      "description": "Moscow retaliates after similar move from Berlin last week citing failed drone attack on airport."
+    },
+    {
       "title": "Russia and North Korea deepen relations with symbolic road bridge",
       "url": "https://www.aljazeera.com/news/2026/9/7/russia-and-north-korea-deepen-relations-with-symbolic-road-bridge?traffic_source=rss",
       "date": "September 7, 2026",
       "description": "Ties between Moscow and Pyongyang have grown extensively amid Russia's invasion of Ukraine."
-    },
-    {
-      "title": "Will Trump succeed in restarting Russia-Ukraine peace talks?",
-      "url": "https://www.aljazeera.com/opinions/2026/9/7/will-trump-succeed-in-restarting-russia-ukraine-peace-talks?traffic_source=rss",
-      "date": "September 7, 2026",
-      "description": "The Witkoff-Kushner visit to Moscow and Kyiv did not produce a breakthrough, but it can help begin a new process."
-    },
-    {
-      "title": "Could Trump’s Iran trade war threaten Spain’s saffron-infused paella?",
-      "url": "https://www.aljazeera.com/news/2026/9/7/could-trumps-iran-trade-war-threaten-spains-saffron-infused-paella?traffic_source=rss",
-      "date": "September 7, 2026",
-      "description": "US threats to punish Iran’s trade partners could disrupt Spain’s saffron supply, pressuring paella chefs and exporters."
     }
   ],
   "occNews": [
@@ -3210,7 +3259,7 @@
       "description": "Lebanon says a recent Israeli escalation is jeopardising a US-brokered ceasefire meant to end the conflict between Israel and Hezbollah."
     },
     {
-      "title": "Probe begins into why cargo plane overran Miami runway",
+      "title": "Investigators begin work on why cargo plane overran Miami runway",
       "url": "https://www.bbc.co.uk/news/articles/c0e3p1j7n3ro?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 7, 2026",
       "description": "Five people died and five others were injured as the Amazon plane overshot the runway after landing at Miami International Airport."
@@ -3384,7 +3433,7 @@
       "description": "It comes as Beijing is aiming to reshape its economy in the face of a number of challenges."
     },
     {
-      "title": "Probe begins into why cargo plane overran Miami runway",
+      "title": "Investigators begin work on why cargo plane overran Miami runway",
       "url": "https://www.bbc.co.uk/news/articles/c0e3p1j7n3ro?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 7, 2026",
       "description": "Five people died and five others were injured as the Amazon plane overshot the runway after landing at Miami International Airport."
@@ -3630,6 +3679,72 @@
       "description": "Designer Jeff Banks visited Affleck’s Palace, an indoor emporium selling vintage clothing."
     },
     {
+      "title": "Trump threatens to block Canada’s Bombardier sales unless planes made in US",
+      "url": "https://www.aljazeera.com/news/2026/9/7/trump-threatens-to-block-canadas-bombardier-sales-unless-planes-made-in-us?traffic_source=rss",
+      "date": "September 7, 2026",
+      "description": "Trump targets aeroplane maker again, accusing Canada of unfair practices and threatening to block sales in the US."
+    },
+    {
+      "title": "Israel’s plan to split the West Bank",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/7/israels-plan-to-split-the-west-bank?traffic_source=rss",
+      "date": "September 7, 2026",
+      "description": "Israel's E1 plan risks splitting the West Bank in two."
+    },
+    {
+      "title": "Thousands attend funeral of war criminal Ratko Mladic in Serbia",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/7/thousands-attend-funeral-of-war-criminal-ratko-mladic-in-serbia?traffic_source=rss",
+      "date": "September 7, 2026",
+      "description": "Thousands attend funeral of war criminal Ratko Mladic in Serbia"
+    },
+    {
+      "title": "Board of Peace touts progress as Palestinians’ situation worsens",
+      "url": "https://www.aljazeera.com/video/the-bottom-line/2026/9/7/board-of-peace-touts-progress-as-palestinians-situation-worsens?traffic_source=rss",
+      "date": "September 7, 2026",
+      "description": "Humanitarian official Athena Rayburn dissects the Israeli tactics making life ‘untenable’ for millions of Palestinians."
+    },
+    {
+      "title": "Egyptian wrestlers keep vanishing abroad amid a sport in crisis",
+      "url": "https://www.aljazeera.com/sports/2026/9/7/egypts-vanishing-wrestlers-and-a-sport-in-crisis?traffic_source=rss",
+      "date": "September 7, 2026",
+      "description": "Two wrestlers have become the latest to flee while abroad, drawing a wave of sympathy as well as legal threats."
+    },
+    {
+      "title": "Nauru opens embassy in Jerusalem",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/7/nauru-opens-embassy-in-jerusalem?traffic_source=rss",
+      "date": "September 7, 2026",
+      "description": "Pacific island nation Nauru has opened its embassy in Jerusalem, becoming the ninth country to do so."
+    },
+    {
+      "title": "Bolivian blast death toll rises to 7, rescuers search for missing soldiers",
+      "url": "https://www.aljazeera.com/news/2026/9/7/bolivian-military-base-blast-leaves-seven-dead-seven-missing?traffic_source=rss",
+      "date": "September 7, 2026",
+      "description": "President Rodrigo Paz declares national mourning, urges unity after deadly military base explosions near La Paz."
+    },
+    {
+      "title": "Gaza: Genocide in Real Time?",
+      "url": "https://www.aljazeera.com/video/aljazeerauntangles/2026/9/7/gaza-genocide-in-real-time?traffic_source=rss",
+      "date": "September 7, 2026",
+      "description": "Gaza examined through occupation, blockade, mass killing and the genocide case before the ICJ."
+    },
+    {
+      "title": "Serbian government sets up snap vote with call to dissolve parliament",
+      "url": "https://www.aljazeera.com/news/2026/9/7/serbian-government-opens-route-to-snap-vote-with-call-to-dissolve-parliament?traffic_source=rss",
+      "date": "September 7, 2026",
+      "description": "Upcoming election viewed as bid to tighten President Vucic's rule after months of mass street protests."
+    },
+    {
+      "title": "When does a family meal become a luxury in Nigeria?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/7/when-does-a-family-meal-become-a-luxury-in-nigeria?traffic_source=rss",
+      "date": "September 7, 2026",
+      "description": "‘5,000 naira used to make a pot of soup, now 10,000 naira isn't enough.’"
+    },
+    {
+      "title": "Kosovo signs up to US-led Gaza stabilisation force",
+      "url": "https://www.aljazeera.com/news/2026/9/7/kosovo-signs-up-to-us-led-gaza-stabilisation-force?traffic_source=rss",
+      "date": "September 7, 2026",
+      "description": "Balkan state joins short list of countries agreeing to send peacekeepers to Palestinian enclave."
+    },
+    {
       "title": "Claimed Israeli capture of Lebanese ridge reshapes negotiation dynamics",
       "url": "https://www.aljazeera.com/features/2026/9/7/claimed-israeli-capture-of-lebanese-ridge-reshapes-negotiation-dynamics?traffic_source=rss",
       "date": "September 7, 2026",
@@ -3694,72 +3809,6 @@
       "url": "https://www.aljazeera.com/features/2026/9/7/direction-potocari-from-srebrenica-genocide-to-a-belgrade-football-match?traffic_source=rss",
       "date": "September 7, 2026",
       "description": "Red Star fans honoured convicted war criminal Ratko Mladic. Analysts say that's nothing new - and that's the problem."
-    },
-    {
-      "title": "Israeli attacks on Gaza kill five Palestinians, including two children",
-      "url": "https://www.aljazeera.com/news/2026/9/7/israeli-attacks-on-gaza-kill-five-palestinians-including-two-children?traffic_source=rss",
-      "date": "September 7, 2026",
-      "description": "Seven-year-old Wafaa Aqila and her father killed by Israeli strike while returning home with school supplies."
-    },
-    {
-      "title": "‘Breaks my heart’: Yemen jab shortages spark fears for millions of children",
-      "url": "https://www.aljazeera.com/features/2026/9/7/breaks-my-heart-yemen-jab-shortages-spark-fears-for-millions-of-children?traffic_source=rss",
-      "date": "September 7, 2026",
-      "description": "Some five million Yemeni children are deprived of essential routine vaccinations amid disputes."
-    },
-    {
-      "title": "Iraq faces sovereignty test as US-led military coalition exit nears",
-      "url": "https://www.aljazeera.com/news/2026/9/7/iraq-faces-sovereignty-test-as-us-led-military-coalition-exit-nears?traffic_source=rss",
-      "date": "September 7, 2026",
-      "description": "Analysts warn Iraq faces severe security and political tests as the US-led coalition withdrawal deadline approaches."
-    },
-    {
-      "title": "Why has Nicaragua taken Germany to the ICJ over Gaza genocide?",
-      "url": "https://www.aljazeera.com/news/2026/9/7/why-has-nicaragua-taken-germany-to-the-icj-over-gaza-genocide?traffic_source=rss",
-      "date": "September 7, 2026",
-      "description": "Nicaragua accuses Germany of violating the Genocide Convention by supporting Israel amid its onslaught on Gaza."
-    },
-    {
-      "title": "Why Jamaica is seeking $10bn in reparations from the UK",
-      "url": "https://www.aljazeera.com/news/2026/9/7/why-jamaica-is-seeking-10bn-in-reparations-from-the-uk?traffic_source=rss",
-      "date": "September 7, 2026",
-      "description": "Hundreds of thousands of enslaved Africans toiled in Jamaica under more than 300 years of British rule."
-    },
-    {
-      "title": "Moment Israeli strike hits next to Lebanese reporter",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/7/moment-israeli-strike-hits-next-to-lebanese-reporter?traffic_source=rss",
-      "date": "September 7, 2026",
-      "description": "Moment Israeli strike hits next to Lebanese reporter"
-    },
-    {
-      "title": "Yemen gov’t forces launch air strikes on Houthi targets",
-      "url": "https://www.aljazeera.com/news/2026/9/7/yemen-govt-forces-launch-air-strikes-on-houthi-targets?traffic_source=rss",
-      "date": "September 7, 2026",
-      "description": "The Houthis and Yemeni government forces are battling for control of the critical Bab al-Mandeb Strait."
-    },
-    {
-      "title": "Serbia holds funeral for convicted war criminal Ratko Mladic",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/7/serbia-holds-funeral-for-convicted-war-criminal-ratko-mladic?traffic_source=rss",
-      "date": "September 7, 2026",
-      "description": "The funeral of convicted war criminal Ratko Mladic has been held in Serbia’s capital with state honours."
-    },
-    {
-      "title": "Trial opens in Paris over murder of Argentina rugby star Federico Aramburu",
-      "url": "https://www.aljazeera.com/sports/2026/9/7/trial-opens-in-paris-over-murder-of-argentina-rugby-star-federico-aramburu?traffic_source=rss",
-      "date": "September 7, 2026",
-      "description": "Two ⁠former members of a violent far-right group will face trial on murder and ​attempted murder charges."
-    },
-    {
-      "title": "Moment Amazon plane crash lands in Miami",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/7/moment-amazon-plane-crash-lands-in-miami?traffic_source=rss",
-      "date": "September 7, 2026",
-      "description": "Moment Amazon plane crash lands in Miami"
-    },
-    {
-      "title": "Balogun red card U-turn prompts Belgium to withdraw support for Infantino",
-      "url": "https://www.aljazeera.com/sports/2026/9/7/balogun-red-card-u-turn-prompts-belgium-to-withdraw-support-for-infantino?traffic_source=rss",
-      "date": "September 7, 2026",
-      "description": "Belgian football association says it will not back Infantino's bid for re-election, citing the World Cup controversy."
     }
   ]
 }
