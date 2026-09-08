@@ -1,3 +1,5 @@
+import { federalRegisterDocumentNumber, isFederalRegisterUrl } from "./federal-register-links.ts";
+
 /** Repair common UTF-8-as-Windows-1252 artifacts without damaging valid Unicode. */
 export function repairMojibake(value: string): string {
   if (!value) return value;
@@ -73,6 +75,7 @@ export function hasDirectArticleUrl(url?: string): boolean {
     if (host === "news.google.com") return false;
     if (/\/(?:rss|feed|feeds)(?:\/|$)/.test(path) || path.endsWith(".xml")) return false;
     if (/\/(?:search)(?:\/|$)/.test(path)) return false;
+    if (isFederalRegisterUrl(url) && !federalRegisterDocumentNumber(url)) return false;
     return path.length > 1;
   } catch {
     return false;

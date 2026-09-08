@@ -135,7 +135,10 @@ function stripHTML(html: string): string {
       const guidLooksLikeUrl = !!guidMatch?.[1] && /^https?:\/\//i.test(guidMatch[1].trim());
       const rawDescription = descMatch?.[1] || descMatch?.[2] || "";
       const directPublisherUrl = extractPublisherUrl(rawDescription);
-      let link = (directPublisherUrl || linkMatch?.[1] || (guidLooksLikeUrl ? guidMatch![1] : "") || "").trim();
+      let link = (directPublisherUrl || linkMatch?.[1] || (guidLooksLikeUrl ? guidMatch![1] : "") || "")
+        .replace(/&amp;/gi, "&")
+        .replace(/&#38;/g, "&")
+        .trim();
 
       // Google News descriptions contain HTML inside CDATA â€” strip all of it
       // First strip real tags, then decode entities, then strip any decoded tags

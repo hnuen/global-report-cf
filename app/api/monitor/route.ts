@@ -12,6 +12,7 @@ import { articleMatchesAlertTopic, alertSourceLabel, cleanAlertText } from "@/sr
 import { selectMonitorArticles } from "@/src/lib/monitor-articles";
 import { loadAlertSettings } from "@/src/lib/alert-settings";
 import { acquireDistributedLock } from "@/src/lib/distributed-lock";
+import { isFederalRegisterUrl, resolveFederalRegisterUrl } from "@/src/lib/federal-register-links";
 
 export const maxDuration = 120;
 
@@ -109,6 +110,14 @@ async function verifyAlertUrls(
     if (!url || url === "#") {
       console.warn(`[monitor] no sourceUrl - dropping alert: "${sa.article.headline?.slice(0, 80)}"`);
       return null;
+    }
+    if (isFederalRegisterUrl(url)) {
+      const canonicalUrl = await resolveFederalRegisterUrl(url);
+      if (!canonicalUrl) {
+        console.warn(`[monitor] invalid Federal Register document - dropping alert: ${url.slice(0, 100)}`);
+        return null;
+      }
+      return { ...sa, article: { ...sa.article, sourceUrl: canonicalUrl } };
     }
     const ok = await isUrlReachable(url);
     if (!ok) {
