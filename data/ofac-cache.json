@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T21:08:36.963Z",
+  "updatedAt": "2026-09-08T22:08:00.808Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260908",
@@ -3138,18 +3138,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/women-and-children-remain-trapped-in-syrias-roj-camp?traffic_source=rss",
       "date": "September 8, 2026",
       "description": "Women and children remain trapped in Syria’s Roj camp"
-    },
-    {
-      "title": "US won’t join UK ban on trade with illegal Israeli settlements",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/09-08-rubio-comments-uk-sanctions-clip-mp4?traffic_source=rss",
-      "date": "September 8, 2026",
-      "description": "Secretary of State Marco Rubio says the US will ‘obviously not’ follow the UK in sanctioning illegal Israeli settlements"
-    },
-    {
-      "title": "UK sanctions on Israeli settlements a ‘seismic’ shift says Albanese",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/09-08-israel-sanctions-albanese-qt-mp4?traffic_source=rss",
-      "date": "September 8, 2026",
-      "description": "UN expert Francesca Albanese calls UK sanctions on Israeli settlements a ‘seismic shift’ after years of UK ‘complicity’."
     }
   ],
   "occNews": [
@@ -3209,8 +3197,69 @@
       "category": "Monetary Policy"
     }
   ],
-  "bisNews": [],
+  "bisNews": [
+    {
+      "title": "Streamlining Export Controls for Drone Exports",
+      "url": "https://www.federalregister.gov/documents/2026/08/28/C1-2026-16628/streamlining-export-controls-for-drone-exports",
+      "date": "August 28, 2026",
+      "description": ""
+    },
+    {
+      "title": "Revisions to the Entity List",
+      "url": "https://www.federalregister.gov/documents/2026/08/24/2026-17231/revisions-to-the-entity-list",
+      "date": "August 24, 2026",
+      "description": "In this rule, the Bureau of Industry and Security (BIS) revises the Export Administration Regulations (EAR) by removing two addresses associated with Arrow Electronics (Hong Kong) Co., Ltd. from the Entity List under the destination of China, People's Republic of (China). This determination follows the removal from the Entity List of Arrow China Electronics Trading Co., Ltd., and the removal of six aliases for Arrow Electronics (Hong Kong) Co., Ltd. in November 2025."
+    },
+    {
+      "title": "Removal From the Entity List",
+      "url": "https://www.federalregister.gov/documents/2026/08/24/2026-17230/removal-from-the-entity-list",
+      "date": "August 24, 2026",
+      "description": "In this rule, the Bureau of Industry and Security (BIS) amends the Export Administration Regulations (EAR) by removing one entity from the Entity List under the destination of Turkey."
+    },
+    {
+      "title": "Streamlining Export Controls for Drone Exports",
+      "url": "https://www.federalregister.gov/documents/2026/08/14/2026-16628/streamlining-export-controls-for-drone-exports",
+      "date": "August 14, 2026",
+      "description": "The Bureau of Industry and Security (BIS) is easing export controls on certain Unmanned Aerial Vehicles (UAVs or drones) and related parts, components, accessories, attachments, technology, and software under the Export Administration Regulations (EAR). Specifically, this rule: eliminates wind gust tolerance as a parameter for determining UAV controls under the EAR; increases the threshold for national security controls on certain UAVs from an endurance of 30 minutes to an endurance of 3 hours; makes conforming changes to remove national security controls on software and technology associated with UAVs with an endurance less than 3 hours; maintains military end-use and end-user controls on those lower endurance drones and associated software and technology; clarifies Commerce Control List (CCL) controls for certain UAVs specially designed for military use; and removes national security controls on certain specially designed parts, components, accessories, and attachments for such UAVs as they do not provide any significant military or intelligence capabilities."
+    },
+    {
+      "title": "Implementation of EAR Export Controls on Silencers, Mufflers, and Sound Suppressors; and Other Firearms Related Changes",
+      "url": "https://www.federalregister.gov/documents/2026/07/23/2026-14942/implementation-of-ear-export-controls-on-silencers-mufflers-and-sound-suppressors-and-other-firearms",
+      "date": "July 23, 2026",
+      "description": "The Department of Commerce (Commerce), Bureau of Industry and Security (BIS) is revising the Export Administration Regulations (EAR) and the Commerce Control List (CCL) to appropriately control certain silencers, mufflers, and sound suppressors (sound suppressors) that will no longer be described on the International Traffic in Arms Regulations U.S. Munitions List (USML). This interim final rule (IFR) complements a Department of State interim final rule published elsewhere in this issue of the Federal Register (International Traffic in Arms Regulations: USML Category I Firearm Suppressors (1400-AG11) (State IFR)). This transfer of jurisdiction will reduce the regulatory burden on exports of sound suppressors. This IFR also revises the EAR to allow firearms and related items to be temporarily exported and reexported under a license exception as tools of trade, thereby relieving exporters of the regulatory burden of applying for authorization. Finally, this IFR clarifies which items fall within the scope of the EAR's entry clearance requirements for a temporary import."
+    },
+    {
+      "title": "Enhanced Favorable Treatment for the United Arab Emirates Under the Export Administration Regulations",
+      "url": "https://www.federalregister.gov/documents/2026/07/14/2026-14132/enhanced-favorable-treatment-for-the-united-arab-emirates-under-the-export-administration",
+      "date": "July 14, 2026",
+      "description": "In this final rule, the Bureau of Industry and Security (BIS) amends the Export Administration Regulations (EAR) to provide enhanced favorable treatment for the United Arab Emirates (UAE). Specifically, BIS is removing the UAE from Country Groups D:3 and D:4 and adding the UAE to Country Group A:5. More license exceptions will now be available, including Strategic Trade Authorization (STA) for the UAE Government and approved commercial entities in the UAE. STA will authorize the export, reexport, or transfer (in-country) of military items; certain commercial satellites and spacecraft; and dual-use items useful in, inter alia, oil and gas production, desalination, and civil nuclear power generation. The UAE Government and approved commercial entities will also have license-free access to advanced computing items, consistent with the May 2025 U.S.-UAE Artificial Intelligence Cooperation framework, without compromising U.S. digital infrastructure buildout."
+    },
+    {
+      "title": "Agency Information Collection Activities; Submission to the Office of Management and Budget (OMB) for Review and Approval; Comment Request; Voluntary Self-Disclosure of Antiboycott Violations",
+      "url": "https://www.federalregister.gov/documents/2026/06/24/2026-12728/agency-information-collection-activities-submission-to-the-office-of-management-and-budget-omb-for",
+      "date": "June 24, 2026",
+      "description": ""
+    },
+    {
+      "title": "Agency Information Collection Activities; Submission to the Office of Management and Budget (OMB) for Review and Approval; Comment Request; Reporting of Violations of the Export Administration Regulations",
+      "url": "https://www.federalregister.gov/documents/2026/05/21/2026-10217/agency-information-collection-activities-submission-to-the-office-of-management-and-budget-omb-for",
+      "date": "May 21, 2026",
+      "description": ""
+    },
+    {
+      "title": "Agency Information Collection Activities; Submission to the Office of Management and Budget (OMB) for Review and Approval; Comment Request; Entity List and Unverified List Requests",
+      "url": "https://www.federalregister.gov/documents/2026/05/21/2026-10216/agency-information-collection-activities-submission-to-the-office-of-management-and-budget-omb-for",
+      "date": "May 21, 2026",
+      "description": ""
+    }
+  ],
   "regionsNews": [
+    {
+      "title": "Paul Adams: British-Israeli relations at lowest ebb in decades",
+      "url": "https://www.bbc.co.uk/news/articles/c5ydlex9yn3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 8, 2026",
+      "description": "Israel's response to London's trade ban with Israeli settlements in the occupied West Bank shows how important this moment is."
+    },
     {
       "title": "Carney says US trade war 'will come at a cost' as Canada strikes back on tariffs",
       "url": "https://www.bbc.co.uk/news/articles/c8jdev0422jo?at_medium=RSS&amp;at_campaign=rss",
@@ -3248,10 +3297,10 @@
       "description": "Newly released documents show toxins lingered for months after the attacks, but officials told people it was safe."
     },
     {
-      "title": "LIV players will have option to leave after bankruptcy case filing",
+      "title": "LIV files for bankruptcy protection with $45m owed to players",
       "url": "https://www.bbc.co.uk/sport/golf/articles/ce8x39wj5p1o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 8, 2026",
-      "description": "LIV Golf intends to starts its new league early next year after filing for bankruptcy protection in the United States."
+      "description": "LIV Golf still intends to start its new league early next year after filing for bankruptcy protection in the United States."
     },
     {
       "title": "Sudan's healthcare system on brink of collapse after cuts, medical charity warns",
@@ -3368,10 +3417,10 @@
       "description": "Major lenders have raised rates on new deals in recent days, leaving many borrowers needing to make a decision."
     },
     {
-      "title": "Major UK airports hit by air traffic control problems",
+      "title": "More flight delays expected after hundreds cancelled by air traffic control glitch",
       "url": "https://www.bbc.co.uk/news/articles/ce8x3dp1zpxo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 8, 2026",
-      "description": "Departures from a number of airports have been affected by a technical problem affecting air traffic control provider Nats."
+      "description": "Departures from a number of airports are affected by a technical problem affecting air traffic control provider Nats."
     },
     {
       "title": "'Tirana teeth': Albania hopes to be the new Turkey for dental work",
@@ -3656,6 +3705,48 @@
       "description": "Designer Jeff Banks visited Affleck’s Palace, an indoor emporium selling vintage clothing."
     },
     {
+      "title": "Haaland to the double as Manchester City beat Porto in Champions League",
+      "url": "https://www.aljazeera.com/sports/2026/9/8/haaland-to-the-double-as-manchester-city-beat-porto-in-champions-league?traffic_source=rss",
+      "date": "September 8, 2026",
+      "description": "Ayyoub Bouaddi debuts for Manchester City, but Erling Haaland stars in a 2-0 win in Porto."
+    },
+    {
+      "title": "What the UK ban on goods from illegal Israeli settlements really means",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/what-the-uk-ban-on-goods-from-illegal-israeli-settlements-really-means?traffic_source=rss",
+      "date": "September 8, 2026",
+      "description": "Israel has announced that it’s shutting down the UK Consulate in occupied East Jerusalem after a new ban on its goods."
+    },
+    {
+      "title": "US warns Ford over ties with Chinese firms amid tensions",
+      "url": "https://www.aljazeera.com/economy/2026/9/8/us-warns-ford-over-ties-with-chinese-firms-amid-tensions?traffic_source=rss",
+      "date": "September 8, 2026",
+      "description": "US officials criticise Ford’s partnerships with Chinese firms CATL, Geely, and BYD over security risks."
+    },
+    {
+      "title": "Real Madrid beat Inter Milan as Mbappe goal sets Mourinho’s men on way",
+      "url": "https://www.aljazeera.com/sports/2026/9/8/real-madrid-beat-inter-milan-as-mbappe-goal-sets-mourinhos-men-on-way?traffic_source=rss",
+      "date": "September 8, 2026",
+      "description": "Kylian Mbappe opens the scoring but Real Madrid fail to convince in 2-1 Champions League win against Inter Milan."
+    },
+    {
+      "title": "Hundreds of flights delayed, cancelled after UK air traffic control glitch",
+      "url": "https://www.aljazeera.com/news/2026/9/8/hundreds-of-flights-delayed-cancelled-after-uk-air-traffic-control-glitch?traffic_source=rss",
+      "date": "September 8, 2026",
+      "description": "Air traffic control provider NATS under scrutiny after technical fault disrupts UK air traffic."
+    },
+    {
+      "title": "US forces sink vessel ‘linked to Ecuador criminal gang’",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/us-forces-sink-vessel-linked-to-ecuador-criminal?traffic_source=rss",
+      "date": "September 8, 2026",
+      "description": "The US military says it intercepted and sank a floating refueling station in the eastern Pacific."
+    },
+    {
+      "title": "Dembele, Mbappe, Kane and Yamal top Ballon d’Or shortlist",
+      "url": "https://www.aljazeera.com/sports/2026/9/8/dembele-mbappe-kane-and-yamal-top-ballon-dor-shortlist?traffic_source=rss",
+      "date": "September 8, 2026",
+      "description": "Ballon d'Or Ousmane Dembele among favourites, with Kylian Mbappe, Lamine Yamal and Harry Kane, as 2026 shortlist named."
+    },
+    {
       "title": "Brazil Supreme Court rift deepens as justice suspends federal police chief",
       "url": "https://www.aljazeera.com/news/2026/9/8/brazil-supreme-court-rift-deepens-as-justice-suspends-federal-police-chief?traffic_source=rss",
       "date": "September 8, 2026",
@@ -3732,36 +3823,6 @@
       "url": "https://www.aljazeera.com/gallery/2026/9/8/photos-palestinians-rebuild-gazas-ruins-with-mud-bricks-and-scrap?traffic_source=rss",
       "date": "September 8, 2026",
       "description": "Over 90 percent of Gaza lies in ruins, forcing thousands to rebuild homes with limited resources like mud and rubble."
-    },
-    {
-      "title": "Nicaragua urges ICJ to reject Germany’s bid to throw out Gaza genocide case",
-      "url": "https://www.aljazeera.com/news/2026/9/8/nicaragua-urges-icj-to-reject-germanys-bid-to-throw-out-gaza-genocide-case?traffic_source=rss",
-      "date": "September 8, 2026",
-      "description": "Nicaragua maintains that German arms exports to Israel facilitated Gaza genocide as Germany's tries to halt the case."
-    },
-    {
-      "title": "‘A bit too late, but important’: UK bans goods from Israeli settlements",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/a-bit-too-late-but-important-uk-bans-goods-from-israeli-settlements?traffic_source=rss",
-      "date": "September 8, 2026",
-      "description": "The UK has announced a ban on the import of all goods produced by illegal Israeli settlements in the occupied West Bank."
-    },
-    {
-      "title": "Israeli strikes devastate homes, displace families across Gaza",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/israeli-strikes-devastate-homes-displace-families-across-gaza?traffic_source=rss",
-      "date": "September 8, 2026",
-      "description": "Israeli strikes hit several areas across Gaza, destroying homes in Khan Younis and sending thick smoke over Bureij camp."
-    },
-    {
-      "title": "Bombardier defends US manufacturing amid Trump’s aviation sales threat",
-      "url": "https://www.aljazeera.com/economy/2026/9/8/bombardier-defends-us-manufacturing-amid-trumps-aviation-sales-threat?traffic_source=rss",
-      "date": "September 8, 2026",
-      "description": "Bombardier defends its US presence, stating its planes already feature components made in Texas and California."
-    },
-    {
-      "title": "Israeli strikes transform Lebanese city into ghost town",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/israeli-strikes-transform-lebanese-city-into-ghost-town?traffic_source=rss",
-      "date": "September 8, 2026",
-      "description": "Nabatieh, once southern Lebanon’s economic centre, is now a ghost town as Israel intensifies attacks."
     }
   ]
 }
