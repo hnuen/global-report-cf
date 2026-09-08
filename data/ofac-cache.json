@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T19:08:49.218Z",
+  "updatedAt": "2026-09-08T21:08:36.963Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260908",
@@ -3075,14 +3075,7 @@
       "description": "These new measures aim at further increasing the pressure on Russia and Belarus and supporting EU's goal of achieving a just and lasting peace for Ukraine."
     }
   ],
-  "unNotices": [
-    {
-      "title": "Security Council ISIL (Da’esh) and Al-Qaida Sanctions Committee Amends Two Entries on Its Sanctions List",
-      "url": "https://press.un.org/en/2026/sc16446.doc.htm",
-      "date": "September 4, 2026",
-      "description": "On 4 September 2026, the Security Council Committee pursuant to resolutions 1267 (1999), 1989 (2011) and 2253 (2015) concerning ISIL (Da’esh), Al‑Qaida and associated individuals, groups, undertakings and entities enacted the amendments specified with strikethrough and underline in the entries below on its ISIL (Da’esh) and Al-Qaida Sanctions List of individuals and entities subject to the assets freeze, travel ban and arms embargo set out in paragraph 1 of Security Council resolution 2734 (2024), and adopted under Chapter VII of the Charter of the United Nations."
-    }
-  ],
+  "unNotices": [],
   "bbcNews": [
     {
       "title": "UK announces sanctions on West Bank settlements prompting furious Israeli response",
@@ -3117,13 +3110,25 @@
   ],
   "ajNews": [
     {
+      "title": "Police bodycam captures Russian missile strike on Kyiv",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/police-bodycam-captures-russian-missile-strike-on-kyiv?traffic_source=rss",
+      "date": "September 8, 2026",
+      "description": "Bodycam video has captured the moment a Russian missile struck near police in Ukraine’s capital Kiev"
+    },
+    {
+      "title": "What’s happening in the Yemen war?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/09-08-hosted-yemen-explainer?traffic_source=rss",
+      "date": "September 8, 2026",
+      "description": "Fighting between government forces and Iran-backed Houthis is raising fears Yemen could return to full-scale war."
+    },
+    {
       "title": "China and Qatar are strengthening bilateral ties: What that really means",
       "url": "https://www.aljazeera.com/features/2026/9/8/china-and-qatar-are-strengthening-bilateral-ties-what-that-really-means?traffic_source=rss",
       "date": "September 8, 2026",
       "description": "Beijing says it will increase coordination with Doha to help de-escalate regional tensions amid the ongoing war on Iran."
     },
     {
-      "title": "Trump, Putin hold ‘frank’ phone call as US restarts Ukraine deal efforts",
+      "title": "Trump, Putin hold ‘frank’ phone call as US revives Ukraine peace efforts",
       "url": "https://www.aljazeera.com/news/2026/9/8/trump-putin-hold-frank-phone-call-as-us-restarts-ukraine-deal-efforts?traffic_source=rss",
       "date": "September 8, 2026",
       "description": "The phone call comes after US special envoys travelled to Russia and Ukraine to discuss 'a proposal to end the war'."
@@ -3145,18 +3150,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/09-08-israel-sanctions-albanese-qt-mp4?traffic_source=rss",
       "date": "September 8, 2026",
       "description": "UN expert Francesca Albanese calls UK sanctions on Israeli settlements a ‘seismic shift’ after years of UK ‘complicity’."
-    },
-    {
-      "title": "Hungary expels 10 Russian diplomats, Moscow promises harsh response",
-      "url": "https://www.aljazeera.com/news/2026/9/8/hungary-expels-russian-diplomats-over-unacceptable-activities?traffic_source=rss",
-      "date": "September 8, 2026",
-      "description": "Russia promises 'harsh and painful' response following Hungary's expulsion of its diplomats."
-    },
-    {
-      "title": "Jerusalem Daily: UK announces sanctions on Israeli settlement goods",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/jerusalem-daily-uk-announces-sanctions-on-israeli-settlement-goods?traffic_source=rss",
-      "date": "September 8, 2026",
-      "description": "The UK’s foreign secretary has announced a ban on trade with goods from Israeli settlements in the occupied West Bank."
     }
   ],
   "occNews": [
@@ -3216,62 +3209,7 @@
       "category": "Monetary Policy"
     }
   ],
-  "bisNews": [
-    {
-      "title": "Streamlining Export Controls for Drone Exports",
-      "url": "https://www.federalregister.gov/documents/2026/08/28/C1-2026-16628/streamlining-export-controls-for-drone-exports",
-      "date": "August 28, 2026",
-      "description": ""
-    },
-    {
-      "title": "Revisions to the Entity List",
-      "url": "https://www.federalregister.gov/documents/2026/08/24/2026-17231/revisions-to-the-entity-list",
-      "date": "August 24, 2026",
-      "description": "In this rule, the Bureau of Industry and Security (BIS) revises the Export Administration Regulations (EAR) by removing two addresses associated with Arrow Electronics (Hong Kong) Co., Ltd. from the Entity List under the destination of China, People's Republic of (China). This determination follows the removal from the Entity List of Arrow China Electronics Trading Co., Ltd., and the removal of six aliases for Arrow Electronics (Hong Kong) Co., Ltd. in November 2025."
-    },
-    {
-      "title": "Removal From the Entity List",
-      "url": "https://www.federalregister.gov/documents/2026/08/24/2026-17230/removal-from-the-entity-list",
-      "date": "August 24, 2026",
-      "description": "In this rule, the Bureau of Industry and Security (BIS) amends the Export Administration Regulations (EAR) by removing one entity from the Entity List under the destination of Turkey."
-    },
-    {
-      "title": "Streamlining Export Controls for Drone Exports",
-      "url": "https://www.federalregister.gov/documents/2026/08/14/2026-16628/streamlining-export-controls-for-drone-exports",
-      "date": "August 14, 2026",
-      "description": "The Bureau of Industry and Security (BIS) is easing export controls on certain Unmanned Aerial Vehicles (UAVs or drones) and related parts, components, accessories, attachments, technology, and software under the Export Administration Regulations (EAR). Specifically, this rule: eliminates wind gust tolerance as a parameter for determining UAV controls under the EAR; increases the threshold for national security controls on certain UAVs from an endurance of 30 minutes to an endurance of 3 hours; makes conforming changes to remove national security controls on software and technology associated with UAVs with an endurance less than 3 hours; maintains military end-use and end-user controls on those lower endurance drones and associated software and technology; clarifies Commerce Control List (CCL) controls for certain UAVs specially designed for military use; and removes national security controls on certain specially designed parts, components, accessories, and attachments for such UAVs as they do not provide any significant military or intelligence capabilities."
-    },
-    {
-      "title": "Implementation of EAR Export Controls on Silencers, Mufflers, and Sound Suppressors; and Other Firearms Related Changes",
-      "url": "https://www.federalregister.gov/documents/2026/07/23/2026-14942/implementation-of-ear-export-controls-on-silencers-mufflers-and-sound-suppressors-and-other-firearms",
-      "date": "July 23, 2026",
-      "description": "The Department of Commerce (Commerce), Bureau of Industry and Security (BIS) is revising the Export Administration Regulations (EAR) and the Commerce Control List (CCL) to appropriately control certain silencers, mufflers, and sound suppressors (sound suppressors) that will no longer be described on the International Traffic in Arms Regulations U.S. Munitions List (USML). This interim final rule (IFR) complements a Department of State interim final rule published elsewhere in this issue of the Federal Register (International Traffic in Arms Regulations: USML Category I Firearm Suppressors (1400-AG11) (State IFR)). This transfer of jurisdiction will reduce the regulatory burden on exports of sound suppressors. This IFR also revises the EAR to allow firearms and related items to be temporarily exported and reexported under a license exception as tools of trade, thereby relieving exporters of the regulatory burden of applying for authorization. Finally, this IFR clarifies which items fall within the scope of the EAR's entry clearance requirements for a temporary import."
-    },
-    {
-      "title": "Enhanced Favorable Treatment for the United Arab Emirates Under the Export Administration Regulations",
-      "url": "https://www.federalregister.gov/documents/2026/07/14/2026-14132/enhanced-favorable-treatment-for-the-united-arab-emirates-under-the-export-administration",
-      "date": "July 14, 2026",
-      "description": "In this final rule, the Bureau of Industry and Security (BIS) amends the Export Administration Regulations (EAR) to provide enhanced favorable treatment for the United Arab Emirates (UAE). Specifically, BIS is removing the UAE from Country Groups D:3 and D:4 and adding the UAE to Country Group A:5. More license exceptions will now be available, including Strategic Trade Authorization (STA) for the UAE Government and approved commercial entities in the UAE. STA will authorize the export, reexport, or transfer (in-country) of military items; certain commercial satellites and spacecraft; and dual-use items useful in, inter alia, oil and gas production, desalination, and civil nuclear power generation. The UAE Government and approved commercial entities will also have license-free access to advanced computing items, consistent with the May 2025 U.S.-UAE Artificial Intelligence Cooperation framework, without compromising U.S. digital infrastructure buildout."
-    },
-    {
-      "title": "Agency Information Collection Activities; Submission to the Office of Management and Budget (OMB) for Review and Approval; Comment Request; Voluntary Self-Disclosure of Antiboycott Violations",
-      "url": "https://www.federalregister.gov/documents/2026/06/24/2026-12728/agency-information-collection-activities-submission-to-the-office-of-management-and-budget-omb-for",
-      "date": "June 24, 2026",
-      "description": ""
-    },
-    {
-      "title": "Agency Information Collection Activities; Submission to the Office of Management and Budget (OMB) for Review and Approval; Comment Request; Reporting of Violations of the Export Administration Regulations",
-      "url": "https://www.federalregister.gov/documents/2026/05/21/2026-10217/agency-information-collection-activities-submission-to-the-office-of-management-and-budget-omb-for",
-      "date": "May 21, 2026",
-      "description": ""
-    },
-    {
-      "title": "Agency Information Collection Activities; Submission to the Office of Management and Budget (OMB) for Review and Approval; Comment Request; Entity List and Unverified List Requests",
-      "url": "https://www.federalregister.gov/documents/2026/05/21/2026-10216/agency-information-collection-activities-submission-to-the-office-of-management-and-budget-omb-for",
-      "date": "May 21, 2026",
-      "description": ""
-    }
-  ],
+  "bisNews": [],
   "regionsNews": [
     {
       "title": "Carney says US trade war 'will come at a cost' as Canada strikes back on tariffs",
@@ -3310,10 +3248,10 @@
       "description": "Newly released documents show toxins lingered for months after the attacks, but officials told people it was safe."
     },
     {
-      "title": "Highest paid world leader to get salary increase of $1 million",
-      "url": "https://www.bbc.co.uk/news/articles/c5y5kn143d1o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "LIV players will have option to leave after bankruptcy case filing",
+      "url": "https://www.bbc.co.uk/sport/golf/articles/ce8x39wj5p1o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 8, 2026",
-      "description": "Singapore's prime minister Lawrence Wong will see his annual pay rise to 3.6 million Singapore dollars ($2.8m; £2.1m)."
+      "description": "LIV Golf intends to starts its new league early next year after filing for bankruptcy protection in the United States."
     },
     {
       "title": "Sudan's healthcare system on brink of collapse after cuts, medical charity warns",
@@ -3412,6 +3350,12 @@
       "description": "Chandika Shrestha was airlifted to hospital after spending more than 10 days in her partially buried house."
     },
     {
+      "title": "OpenAI says it cracked 90-year-old maths problem in 88 hours",
+      "url": "https://www.bbc.co.uk/news/articles/cy7zygy3rl2o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 8, 2026",
+      "description": "OpenAI's claim that it solved parts of Navier-Stokes equations has quickly stirred controversy."
+    },
+    {
       "title": "Sapporo to move some beer production from Canada to US after tariffs",
       "url": "https://www.bbc.co.uk/news/articles/c87ve09pgqzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 8, 2026",
@@ -3424,22 +3368,22 @@
       "description": "Major lenders have raised rates on new deals in recent days, leaving many borrowers needing to make a decision."
     },
     {
-      "title": "Heathrow and Gatwick among airports hit by air traffic control problems",
+      "title": "Major UK airports hit by air traffic control problems",
       "url": "https://www.bbc.co.uk/news/articles/ce8x3dp1zpxo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 8, 2026",
       "description": "Departures from a number of airports have been affected by a technical problem affecting air traffic control provider Nats."
-    },
-    {
-      "title": "AI will cure cancer in our lifetime, claims boss of UK chip giant",
-      "url": "https://www.bbc.co.uk/news/articles/c0m39g7xzevo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 8, 2026",
-      "description": "Arm Holding's chief executive Rene Haas says artificial intelligence will find a solution to the disease."
     },
     {
       "title": "'Tirana teeth': Albania hopes to be the new Turkey for dental work",
       "url": "https://www.bbc.co.uk/news/articles/cq63m88ymqro?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 8, 2026",
       "description": "The Balkan nation is aiming to become a new centre for medical tourism."
+    },
+    {
+      "title": "AI will cure cancer in our lifetime, claims boss of UK chip giant",
+      "url": "https://www.bbc.co.uk/news/articles/c0m39g7xzevo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 8, 2026",
+      "description": "Arm Holding's chief executive Rene Haas says artificial intelligence will find a solution to the disease."
     },
     {
       "title": "UK's third-biggest taxpayer to leave for Greece",
@@ -3560,12 +3504,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cwyzd53rq9jo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 7, 2026",
       "description": "Recent analysis showed the construction sector needs an extra 2,200 workers a year to meet demand."
-    },
-    {
-      "title": "Australians will be able to switch off social media algorithms under planned legislation",
-      "url": "https://www.bbc.co.uk/news/articles/cn9wyvxn95vo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 7, 2026",
-      "description": "Firms like Meta, Google and TikTok should face \"substantial\" penalties if they don't give the option, minister says."
     },
     {
       "title": "From 'dog fruit' to darling: India's avocado boom",
@@ -3718,6 +3656,54 @@
       "description": "Designer Jeff Banks visited Affleck’s Palace, an indoor emporium selling vintage clothing."
     },
     {
+      "title": "Brazil Supreme Court rift deepens as justice suspends federal police chief",
+      "url": "https://www.aljazeera.com/news/2026/9/8/brazil-supreme-court-rift-deepens-as-justice-suspends-federal-police-chief?traffic_source=rss",
+      "date": "September 8, 2026",
+      "description": "Allegations of misconduct between two justices threaten to pull court into political battles ahead of upcoming election."
+    },
+    {
+      "title": "Head of Smithsonian museums announces he will be stepping down",
+      "url": "https://www.aljazeera.com/news/2026/9/8/head-of-smithsonian-museums-announces-he-will-be-stepping-down?traffic_source=rss",
+      "date": "September 8, 2026",
+      "description": "The US institution is under pressure from the Trump administration to change how it portrays the country's history."
+    },
+    {
+      "title": "Hundreds of UK flights disrupted by air traffic control glitch",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/hundreds-of-uk-flights-disrupted-by-air-traffic-control-glitch?traffic_source=rss",
+      "date": "September 8, 2026",
+      "description": "A technical issue in the UK’s air traffic control system disrupted flights at major airports."
+    },
+    {
+      "title": "Mamdani says 9/11 illnesses killed more than attacks did",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/mamdani-says-9-11-illnesses-killed-more-than-attacks?traffic_source=rss",
+      "date": "September 8, 2026",
+      "description": "Mamdani says 9/11 illnesses killed more than attacks did"
+    },
+    {
+      "title": "Fourteen on trial over deadliest English Channel crossing on record",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/fourteen-on-trial-over-deadliest-english-channel-crossing-on-record?traffic_source=rss",
+      "date": "September 8, 2026",
+      "description": "Fourteen men are on trial over the 2021 deaths of 31 migrants while attempting to cross the English Channel."
+    },
+    {
+      "title": "Spain’s FA to fund IVF, egg freezing for female football players, referees",
+      "url": "https://www.aljazeera.com/sports/2026/9/8/spanish-fa-launches-fertility-support-for-female-players-and-referees?traffic_source=rss",
+      "date": "September 8, 2026",
+      "description": "Spain FA offers fertility support to female players and referees, including costs for internationals called up twice."
+    },
+    {
+      "title": "Aryna Sabalenka beats Linda Noskova to reach US Open semifinals",
+      "url": "https://www.aljazeera.com/sports/2026/9/8/sabalenka-holds-off-noskova-to-keep-us-open-three-peat-bid-alive?traffic_source=rss",
+      "date": "September 8, 2026",
+      "description": "Aryna Sabalenka edges Linda Noskova to keep alive hopes of a third straight US Open title."
+    },
+    {
+      "title": "Philippine defence chief calls out China over note handed to him mid-panel",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/09-08-philippine-defence-min-denounces-china-clip?traffic_source=rss",
+      "date": "September 8, 2026",
+      "description": "Philippine Defence Secretary accused China of coercion, bullying and aggression after being handed a note mid-panel."
+    },
+    {
       "title": "Does the UK have a legal obligation to redress the harms of slavery?",
       "url": "https://www.aljazeera.com/video/inside-story/2026/9/8/does-the-uk-have-a-legal-obligation-to-redress-the-harms-of-slavery?traffic_source=rss",
       "date": "September 8, 2026",
@@ -3776,54 +3762,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/israeli-strikes-transform-lebanese-city-into-ghost-town?traffic_source=rss",
       "date": "September 8, 2026",
       "description": "Nabatieh, once southern Lebanon’s economic centre, is now a ghost town as Israel intensifies attacks."
-    },
-    {
-      "title": "Israeli academia accused of systemic apartheid against Palestinians",
-      "url": "https://www.aljazeera.com/news/2026/9/8/israeli-academia-accused-of-systemic-apartheid-against-palestinians?traffic_source=rss",
-      "date": "September 8, 2026",
-      "description": "A legal report exposes how Israeli universities use a dual-track disciplinary system to target Palestinian students."
-    },
-    {
-      "title": "LIVE: Real Madrid vs Inter Milan – UEFA Champions League",
-      "url": "https://www.aljazeera.com/sports/liveblog/2026/9/8/live-real-madrid-vs-inter-milan-uefa-champions-league?traffic_source=rss",
-      "date": "September 8, 2026",
-      "description": "Follow our live build-up and text commentary stream coverage as Kylian Mbappe and Jude Bellingham star for Real."
-    },
-    {
-      "title": "Maldives asks UK to reopen sovereignty talks over Chagos Islands",
-      "url": "https://www.aljazeera.com/news/2026/9/8/maldives-muizzu-asks-uk-to-reopen-sovereignty-talks-over-chagos-islands?traffic_source=rss",
-      "date": "September 8, 2026",
-      "description": "Chagos Islands should not be handed over to Mauritius, president of Maldives says in letter to UK's prime minister."
-    },
-    {
-      "title": "What is BAPS, the Hindu group whose demands led to Eiffel Tower closure?",
-      "url": "https://www.aljazeera.com/news/2026/9/8/what-is-baps-the-hindu-group-whose-demands-led-to-eiffel-tower-closure?traffic_source=rss",
-      "date": "September 8, 2026",
-      "description": "The Eiffel Tower closed after workers protested the sidelining of women during the BAPS visit."
-    },
-    {
-      "title": "The shift in British policy on Israel is palpable",
-      "url": "https://www.aljazeera.com/opinions/2026/9/8/the-shift-in-british-policy-on-israel-is-palpable?traffic_source=rss",
-      "date": "September 8, 2026",
-      "description": "But progress could be threatened if there is a new more diplomatic government in Israel."
-    },
-    {
-      "title": "EU condemns Serbia’s ministers for attending funeral of war criminal Mladic",
-      "url": "https://www.aljazeera.com/news/2026/9/8/eu-condemns-serbias-ministers-for-attending-funeral-of-war-criminal-mladic?traffic_source=rss",
-      "date": "September 8, 2026",
-      "description": "EU leaders condemn Serbian officials' presence at Ratko Mladic's funeral as a failure to confront past war crimes."
-    },
-    {
-      "title": "UK imposes ban on goods from Israeli settlements in occupied West Bank",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/uk-imposes-ban-on-goods-from-israeli-settlements-in-occupied-west-bank?traffic_source=rss",
-      "date": "September 8, 2026",
-      "description": "The UK has announced a trade ban on goods made in illegal Israeli settlements in the occupied West Bank."
-    },
-    {
-      "title": "UK bans goods from Israeli West Bank settlements: What that really means",
-      "url": "https://www.aljazeera.com/news/2026/9/8/uk-bans-goods-from-israeli-west-bank-settlements-what-that-really-means?traffic_source=rss",
-      "date": "September 8, 2026",
-      "description": "Foreign Minister Ed Miliband said the ban represents a 'comprehensive reset' of the UK's policy on Israel."
     }
   ]
 }
