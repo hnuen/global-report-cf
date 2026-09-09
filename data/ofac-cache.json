@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-09T13:08:21.075Z",
+  "updatedAt": "2026-09-09T15:08:46.095Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260909",
+      "code": "20260909",
+      "title": "Transnational Criminal Organizations Designations; Counter Terrorism Designation; Issuance of New and Amended Frequently Asked Questions",
+      "date": "September 09, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260908",
       "code": "20260908",
@@ -54,12 +60,6 @@
       "code": "20260821",
       "title": "Issuance of Venezuela-related General Licenses and Associated Frequently Asked Question",
       "date": "August 21, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260820",
-      "code": "20260820",
-      "title": "Counter Narcotics, Counter Terrorism, Cuba-related, and Iran-related Designations; Issuance of Russia-related General License; Issuance of Associated Frequently Asked Questions",
-      "date": "August 20, 2026"
     }
   ],
   "civilPenalties": [
@@ -416,7 +416,7 @@
     "counter-terrorism-sanctions": {
       "name": "Counter Terrorism Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-terrorism-sanctions",
-      "lastUpdated": "Sep 08, 2026",
+      "lastUpdated": "Sep 09, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -677,12 +677,11 @@
         },
         {
           "number": "37",
-          "title": "Authorizing the Wind Down of Transactions Involving Certain Persons Blocked on September 8, 2026",
+          "title": "Counter Terrorism General License 37",
           "date": "September 8, 2026",
           "expires": "September 23, 2026",
           "url": "https://ofac.treasury.gov/media/936876/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "134C",
@@ -1198,8 +1197,7 @@
           "date": "May 20, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934291/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "T",
@@ -2247,7 +2245,7 @@
     "transnational-criminal-organizations": {
       "name": "Transnational Criminal Organizations",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/transnational-criminal-organizations",
-      "lastUpdated": "Jun 23, 2026",
+      "lastUpdated": "Sep 09, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -2558,12 +2556,11 @@
       "generalLicenses": [
         {
           "number": "2A",
-          "title": "Authorizing Certain New Debt, New Equity, and Securities Transactions Involving PDV Holding, Inc. and CITGO Holding, Inc. ( a)",
+          "title": "Venezuela General License 2A",
           "date": "August 25, 2017",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34121/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "3I",
@@ -2579,17 +2576,15 @@
           "date": "April 17, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31741/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "5Y",
-          "title": "Authorizing Certain Transactions Related to the Petróleos de Venezuela, S.A. 2020 8.5 Percent Bond on or After September 17, 2026",
+          "title": "Venezuela General License 5Y",
           "date": "June 18, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936651/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "7C",
@@ -2613,134 +2608,119 @@
           "date": "January 28, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34131/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "15C",
-          "title": "Authorizing Transactions Involving Certain Banks for Certain Entities ( a)",
+          "title": "Venezuela General License 15C",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/33126/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "16C",
-          "title": "Authorizing Maintenance of U.S. Person Accounts and Noncommercial, Personal Remittances Involving Certain Banks",
+          "title": "Venezuela General License 16C",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/33121/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "18A",
-          "title": "Authorizing Certain Transactions Involving Integraci6n Administradora de Fondos de Ahorro Previsional, S.A",
+          "title": "Venezuela General License 18A",
           "date": "March 22, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34126/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "21",
-          "title": "Entries in Certain Accounts for Normal Service Charges and Payments and Transfers to Blocked Accounts in U.S. Financial Institutions Authorized",
+          "title": "Venezuela General License 21",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/46421/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "22",
-          "title": "Venezuela's Mission to the United Nations",
+          "title": "Venezuela General License 22",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/30601/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "23",
-          "title": "Third-country Diplomatic and Consular Funds Transfers Authorized",
+          "title": "Venezuela General License 23",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34116/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "24A",
-          "title": "Certain Transactions Involving the Government of Venezuela Related to Telecommunications and Mail Authorized",
+          "title": "Venezuela General License 24A",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935731/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "25",
-          "title": "Exportation of Certain Services, Software, Hardware, and Technology Incident to the Exchange of Communications over the Internet Authorized",
+          "title": "Venezuela General License 25",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31761/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "26",
-          "title": "Emergency and Certain Other Medical Services Authorized",
+          "title": "Venezuela General License 26",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31766/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "27",
-          "title": "Certain Transactions Related to Patents, Trademarks, and Copyrights Authorized ( a)",
+          "title": "Venezuela General License 27",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34111/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "29",
-          "title": "Certain Transactions Involving the Government of Venezuela in Support of Certain Nongovernmental Organizations' Activities Authorized",
+          "title": "Venezuela General License 29",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31771/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "30B",
-          "title": "Authorizing Certain Transactions Necessary to Port and Airport Operations",
+          "title": "Venezuela General License 30B",
           "date": "February 2, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934996/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "31B",
-          "title": "Certain Transactions Involving the IV Venezuelan National Assembly and Certain Other Persons",
+          "title": "Venezuela General License 31B",
           "date": "January 4, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/930241/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "32",
-          "title": "Authorizing Certain Transactions Related to Personal Maintenance of Individuals Who Are U.S. Persons Residing in Venezuela",
+          "title": "Venezuela General License 32",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34101/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "33",
@@ -3084,12 +3064,6 @@
       "description": "Meanwhile, four people, including a child, were killed in the southern Russian city of Novorossiysk."
     },
     {
-      "title": "Ukrainian TV channel building hit by Russian drone as five killed in Kyiv",
-      "url": "https://www.bbc.co.uk/news/articles/cn8m1k7p3v7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 8, 2026",
-      "description": "President Zelensky describes the daytime drone attack in Ukraine's capital as a \"new page in Russian degradation\""
-    },
-    {
       "title": "Petrol prices rise by 5p over a week as Iran war sends oil higher",
       "url": "https://www.bbc.co.uk/news/articles/cj4jwlx77lro?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 9, 2026",
@@ -3109,6 +3083,18 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "What is Jordan’s Al-Azraq base and why is Iran targeting it?",
+      "url": "https://www.aljazeera.com/news/2026/9/9/what-is-jordans-al-azraq-base-and-why-is-iran-targeting-it?traffic_source=rss",
+      "date": "September 9, 2026",
+      "description": "Tehran appears to be increasingly targeting Jordanian assets in the latest round of escalation with the US."
+    },
+    {
+      "title": "At least 14 killed in weapons depot blast in Syria’s Idlib, state TV says",
+      "url": "https://www.aljazeera.com/news/2026/9/9/at-least-14-killed-in-weapons-depot-blast-in-syrias-idlib-state-tv-says?traffic_source=rss",
+      "date": "September 9, 2026",
+      "description": "Authorities have not clarified what caused the explosion near the city of Sarmada."
+    },
     {
       "title": "Brent crude surpasses $100 a barrel as Iran, US escalate attacks",
       "url": "https://www.aljazeera.com/news/2026/9/9/global-stocks-slide-as-brent-crude-surpasses-100-a-barrel?traffic_source=rss",
@@ -3138,12 +3124,6 @@
       "url": "https://www.aljazeera.com/opinions/2026/9/9/the-war-in-the-gulf-will-have-to-end-in-compromise?traffic_source=rss",
       "date": "September 9, 2026",
       "description": "Iran has not surrendered, and the war’s original aims remain unmet."
-    },
-    {
-      "title": "In maps and charts: Russian and Ukrainian attacks on civilian targets",
-      "url": "https://www.aljazeera.com/news/2026/9/9/in-maps-and-charts-russian-and-ukrainian-attacks-on-civilian-targets?traffic_source=rss",
-      "date": "September 9, 2026",
-      "description": "Al Jazeera visualises how attacks on civilian infrastructure have more than doubled during the course of the war."
     }
   ],
   "occNews": [
@@ -3261,6 +3241,12 @@
   ],
   "regionsNews": [
     {
+      "title": "Germany's Merz attacks AfD in stormy debate after far-right election win",
+      "url": "https://www.bbc.co.uk/news/articles/c98679wr78do?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 9, 2026",
+      "description": "Germany's chancellor clashes with AfD leader Alice Weidel, saying her migration policy amounts to \"ethnic cleansing\" for skilled workers."
+    },
+    {
       "title": "Oil hits $100 a barrel for first time since July after US and Houthi strikes",
       "url": "https://www.bbc.co.uk/news/articles/cyvznqypz0yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 9, 2026",
@@ -3273,16 +3259,22 @@
       "description": "It is the latest strike in a long trade war, and comes after Canadian counter-tariffs on US goods come into force."
     },
     {
-      "title": "Germany's Merz attacks AfD in stormy debate after far-right election win",
-      "url": "https://www.bbc.co.uk/news/articles/c98679wr78do?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 9, 2026",
-      "description": "Germany's chancellor clashes with AfD leader Alice Weidel, saying her migration policy amounts to \"ethnic cleansing\" for skilled workers."
-    },
-    {
       "title": "N Korea has built two-storey uranium enrichment facility, says watchdog",
       "url": "https://www.bbc.co.uk/news/articles/cy0zqk2w92lo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 9, 2026",
       "description": "The International Atomic Energy Agency's says the facility is cause for \"serious concern\"."
+    },
+    {
+      "title": "Colombia's new president loosens gun control rules",
+      "url": "https://www.bbc.co.uk/news/articles/cqlwekrl3dqo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 9, 2026",
+      "description": "President Abelardo de la Espriella has lifted a decade-long suspension on permits to carry legal firearms."
+    },
+    {
+      "title": "White House pulls Tetris-style 'Build The Wall' game after copyright concern",
+      "url": "https://www.bbc.co.uk/news/articles/c9v9djj4m3do?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 9, 2026",
+      "description": "The Tetris Company says it takes \"copyright infringement very seriously\" and is not involved with the game."
     },
     {
       "title": "Family of killed teen call for death penalty in D4vd trial",
@@ -3459,7 +3451,7 @@
       "description": "OpenAI's claim that it solved parts of Navier-Stokes equations has quickly stirred controversy."
     },
     {
-      "title": "More flights delayed after hundreds cancelled by air traffic control glitch",
+      "title": "More flight cancellations as fallout from air traffic control glitch continues",
       "url": "https://www.bbc.co.uk/news/articles/ce8x3dp1zpxo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 9, 2026",
       "description": "Departures from a number of airports are affected by a technical problem affecting air traffic control provider Nats."
@@ -3473,7 +3465,7 @@
     {
       "title": "Sapporo to move some beer production from Canada to US after tariffs",
       "url": "https://www.bbc.co.uk/news/articles/c87ve09pgqzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 8, 2026",
+      "date": "September 9, 2026",
       "description": "The Japanese brewer plans to shift non-alcoholic beer brewing to the US from Canada as tariffs bite"
     },
     {
@@ -3705,6 +3697,36 @@
       "description": "Designer Jeff Banks visited Affleck’s Palace, an indoor emporium selling vintage clothing."
     },
     {
+      "title": "Torrential rains, winds from Hurricane Lowell leaves 30,000 without power",
+      "url": "https://www.aljazeera.com/news/2026/9/9/torrential-rains-winds-from-hurricane-lowell-leaves-30000-without-power?traffic_source=rss",
+      "date": "September 9, 2026",
+      "description": "Kauai grapples with flooding and dangerous debris as Hurricane Lowell batters Hawaii’s western coastline overnight."
+    },
+    {
+      "title": "Hutu and Tutsi: The history behind the divide",
+      "url": "https://www.aljazeera.com/news/2026/9/9/hutu-and-tutsi-the-history-behind-the-divide?traffic_source=rss",
+      "date": "September 9, 2026",
+      "description": "How a colonial legacy continues to shape conflict and identity."
+    },
+    {
+      "title": "Pakistan all out for 133 in third Test vs England after squad changes",
+      "url": "https://www.aljazeera.com/sports/2026/9/9/pakistan-all-out-for-133-in-third-test-vs-england-after-squad-changes?traffic_source=rss",
+      "date": "September 9, 2026",
+      "description": "England's pacers cleaned up Pakistan in 34 overs after the visitors' top five batters failed to score double figures."
+    },
+    {
+      "title": "Dortmund’s Karetsas hospitalised after collapsing in Champions League match",
+      "url": "https://www.aljazeera.com/sports/2026/9/9/dortmunds-karetsas-hospitalised-after-collapsing-in-champions-league-match?traffic_source=rss",
+      "date": "September 9, 2026",
+      "description": "Greek teenage star Konstantinos Karetsas faced 'circulatory problems' and was stretchered off during the match against Villarreal."
+    },
+    {
+      "title": "Nigeria, Boko Haram reportedly reach secret three-month ceasefire",
+      "url": "https://www.aljazeera.com/news/2026/9/9/nigeria-boko-haram-reportedly-reach-secret-three-month-ceasefire?traffic_source=rss",
+      "date": "September 9, 2026",
+      "description": "The reported truce follows the release of 360 villagers abducted during a Boko Haram attack in northeastern Nigeria."
+    },
+    {
       "title": "Journalists missing after Indonesian volcanic eruption",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/9/journalists-missing-after-indonesian-volcanic-eruption?traffic_source=rss",
       "date": "September 9, 2026",
@@ -3753,7 +3775,7 @@
       "description": "LIV Golf says it intends to restructure its business with a $49.6m bankruptcy loan provided by the Saudi PIF."
     },
     {
-      "title": "How the UK’s ban on Israeli settlement goods has holes",
+      "title": "How the UK’s ban on Israeli settlement goods has limits",
       "url": "https://www.aljazeera.com/news/2026/9/9/what-are-the-holes-in-the-uks-ban-on-imports-from-israeli-settlements?traffic_source=rss",
       "date": "September 9, 2026",
       "description": "Over a year, the UK imported just £6m ($8.1m) in goods recorded as Palestinian, including Israeli settlement goods."
@@ -3781,42 +3803,6 @@
       "url": "https://www.aljazeera.com/news/2026/9/9/yemen-war-escalates-who-are-the-key-actors-involved?traffic_source=rss",
       "date": "September 9, 2026",
       "description": "Here is a look at the main actors currently involved in the conflict."
-    },
-    {
-      "title": "Turkish jets perform dramatic flyover above Egypt’s pyramids",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/9/turkish-jets-perform-dramatic-flyover-above-egypts-pyramids?traffic_source=rss",
-      "date": "September 9, 2026",
-      "description": "The Turkish Air Force's aerobatic team, performed this spectacular demonstration flight over Egypt’s Pyramids of Gaza."
-    },
-    {
-      "title": "Which countries banned goods from settlements but trade with Israel?",
-      "url": "https://www.aljazeera.com/news/2026/9/9/which-countries-banned-goods-from-settlements-but-trade-with-israel?traffic_source=rss",
-      "date": "September 9, 2026",
-      "description": "More European countries calling to ban products from illegal settlements, despite sizable overall trade with Israel."
-    },
-    {
-      "title": "Israeli parties submit slates for October Knesset elections",
-      "url": "https://www.aljazeera.com/news/2026/9/9/israeli-parties-submit-slates-for-october-knesset-elections?traffic_source=rss",
-      "date": "September 9, 2026",
-      "description": "Israeli political parties submitted their lists for the October 27 Knesset elections before Tuesday's deadline."
-    },
-    {
-      "title": "Authorities in India rescue baby orangutans dumped in forest",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/9/authorities-in-india-rescue-baby-orangutans-dumped-in-forest?traffic_source=rss",
-      "date": "September 9, 2026",
-      "description": "Authorities in India rescue baby orangutans dumped in forest"
-    },
-    {
-      "title": "Pakistan faces new frontier against attacks: Balochistan’s Pashtun areas",
-      "url": "https://www.aljazeera.com/news/2026/9/9/pakistan-faces-new-frontier-against-attacks-balochistans-pashtun-areas?traffic_source=rss",
-      "date": "September 9, 2026",
-      "description": "A surge in attacks in Balochistan’s Pashtun-majority districts is raising questions about a widening rebellion."
-    },
-    {
-      "title": "Flash floods surge through Morocco’s Atlas Mountains",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/9/flash-floods-surge-through-moroccos-atlas-mountains?traffic_source=rss",
-      "date": "September 9, 2026",
-      "description": "Video shows floodwaters sweeping through Morocco’s Atlas Mountains after heavy rain in Khenifra."
     }
   ]
 }
