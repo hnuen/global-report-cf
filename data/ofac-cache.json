@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T19:09:11.032Z",
+  "updatedAt": "2026-09-10T21:08:40.245Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260910",
@@ -1206,7 +1206,8 @@
           "date": "May 20, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934291/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "T",
@@ -2565,11 +2566,12 @@
       "generalLicenses": [
         {
           "number": "2A",
-          "title": "Venezuela General License 2A",
+          "title": "Authorizing Certain New Debt, New Equity, and Securities Transactions Involving PDV Holding, Inc. and CITGO Holding, Inc. ( a)",
           "date": "August 25, 2017",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34121/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "3I",
@@ -2585,15 +2587,17 @@
           "date": "April 17, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31741/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "5Y",
-          "title": "Venezuela General License 5Y",
+          "title": "Authorizing Certain Transactions Related to the Petróleos de Venezuela, S.A. 2020 8.5 Percent Bond on or After September 17, 2026",
           "date": "June 18, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936651/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "7C",
@@ -2617,119 +2621,134 @@
           "date": "January 28, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34131/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "15C",
-          "title": "Venezuela General License 15C",
+          "title": "Authorizing Transactions Involving Certain Banks for Certain Entities ( a)",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/33126/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "16C",
-          "title": "Venezuela General License 16C",
+          "title": "Authorizing Maintenance of U.S. Person Accounts and Noncommercial, Personal Remittances Involving Certain Banks",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/33121/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "18A",
-          "title": "Venezuela General License 18A",
+          "title": "Authorizing Certain Transactions Involving Integraci6n Administradora de Fondos de Ahorro Previsional, S.A",
           "date": "March 22, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34126/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "21",
-          "title": "Venezuela General License 21",
+          "title": "Entries in Certain Accounts for Normal Service Charges and Payments and Transfers to Blocked Accounts in U.S. Financial Institutions Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/46421/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "22",
-          "title": "Venezuela General License 22",
+          "title": "Venezuela's Mission to the United Nations",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/30601/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "23",
-          "title": "Venezuela General License 23",
+          "title": "Third-country Diplomatic and Consular Funds Transfers Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34116/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "24A",
-          "title": "Venezuela General License 24A",
+          "title": "Certain Transactions Involving the Government of Venezuela Related to Telecommunications and Mail Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935731/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "25",
-          "title": "Venezuela General License 25",
+          "title": "Exportation of Certain Services, Software, Hardware, and Technology Incident to the Exchange of Communications over the Internet Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31761/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "26",
-          "title": "Venezuela General License 26",
+          "title": "Emergency and Certain Other Medical Services Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31766/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "27",
-          "title": "Venezuela General License 27",
+          "title": "Certain Transactions Related to Patents, Trademarks, and Copyrights Authorized ( a)",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34111/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "29",
-          "title": "Venezuela General License 29",
+          "title": "Certain Transactions Involving the Government of Venezuela in Support of Certain Nongovernmental Organizations' Activities Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31771/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "30B",
-          "title": "Venezuela General License 30B",
+          "title": "Authorizing Certain Transactions Necessary to Port and Airport Operations",
           "date": "February 2, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934996/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "31B",
-          "title": "Venezuela General License 31B",
+          "title": "Certain Transactions Involving the IV Venezuelan National Assembly and Certain Other Persons",
           "date": "January 4, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/930241/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "32",
-          "title": "Venezuela General License 32",
+          "title": "Authorizing Certain Transactions Related to Personal Maintenance of Individuals Who Are U.S. Persons Residing in Venezuela",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34101/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "33",
@@ -3066,6 +3085,12 @@
   ],
   "unNotices": [
     {
+      "title": "Security Council, Surmounting Procedural Vote, Debates Work of 1737 Iran Sanctions Committee, with Divisions Lingering over ‘Snapback’, Nuclear Escalation Risks",
+      "url": "https://press.un.org/en/2026/sc16448.doc.htm",
+      "date": "September 10, 2026",
+      "description": "With Security Council members locked into disagreement on whether sanctions concerning Iran’s nuclear programme have snapped back or not, some speakers stressed the need to appoint experts to support that sanctions committee even as others insisted that the Council stop considering this agenda item at all."
+    },
+    {
       "title": "Security Council, 10218th Meeting (AM) Iran",
       "url": "https://press.un.org/en/blog/sc16448",
       "date": "September 10, 2026",
@@ -3084,12 +3109,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c5ydld0gykpo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 10, 2026",
       "description": "The president also said oil prices won't come down until after the November races, claiming without evidence that Iran wants to impact the election."
-    },
-    {
-      "title": "Muted US response to UK's West Bank sanctions may reflect simmering frustration",
-      "url": "https://www.bbc.co.uk/news/articles/cevw2lxnwk9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 9, 2026",
-      "description": "The UK accuses Israel's government of turning a blind eye to the \"ethnic cleansing\" of Palestinians by settlers."
     },
     {
       "title": "Russia's new jet-powered drones outpacing Ukraine's air defences with daily launches",
@@ -3123,6 +3142,12 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Amnesty accuses Russia of trafficking foreigners to fight in Ukraine",
+      "url": "https://www.aljazeera.com/news/2026/9/10/amnesty-accuses-russia-of-trafficking-foreigners-to-fight-in-ukraine?traffic_source=rss",
+      "date": "September 10, 2026",
+      "description": "Report reveals foreign nationals were misled with job offers, then forced into Russia's army upon arrival."
+    },
     {
       "title": "Kurdish YPJ women fighters face exclusion from Syria’s new army",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/09-10-reported-bernard-smith-ypj-fighters-mp4?traffic_source=rss",
@@ -3189,13 +3214,6 @@
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260714a.htm",
       "date": "July 14, 2026",
       "description": "Minutes of the Board's discount rate meetings on June 8 and June 17, 2026",
-      "category": "Monetary Policy"
-    },
-    {
-      "title": "Federal Reserve announces the leadership and objectives of its task forces to advance the conduct of monetary policy",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260709a.htm",
-      "date": "July 9, 2026",
-      "description": "Federal Reserve announces the leadership and objectives of its task forces to advance the conduct of monetary policy",
       "category": "Monetary Policy"
     }
   ],
@@ -3275,16 +3293,22 @@
       "description": "The paper said it stood by its reporting, after publishing extracts from a book where the claim appears."
     },
     {
-      "title": "Twenty-five dead after fire on cargo ship in eastern China",
-      "url": "https://www.bbc.co.uk/news/articles/cj4jyv7l92eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 10, 2026",
-      "description": "Of the 42 people on board, 17 were were evacuated, CCTV reports."
-    },
-    {
-      "title": "More than 20 children feared dead in DR Congo school fire",
+      "title": "More than 20 children killed in DR Congo school fire",
       "url": "https://www.bbc.co.uk/news/articles/cgjq15j7318o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 10, 2026",
       "description": "Officials say there was a stampede as they fled a fire that engulfed two schools in the eastern rebel-held city of Bukavu."
+    },
+    {
+      "title": "Man jailed after threatening to kill son's teacher in French village",
+      "url": "https://www.bbc.co.uk/news/articles/c62jln7n2vvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 10, 2026",
+      "description": "The father had threatened to behead a female primary school teacher near Toulouse."
+    },
+    {
+      "title": "Coach crash kills several people in Swiss Alps",
+      "url": "https://www.bbc.co.uk/news/articles/cx2z70xr0y3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 10, 2026",
+      "description": "A coach carrying 48 Dutch passengers overturns, leaving several people dead."
     },
     {
       "title": "Royal family rift after popular TV news presenter chosen to succeed Ugandan king",
@@ -3299,16 +3323,16 @@
       "description": "Apple showed off at an event the first major design change to the iPhone in almost 20 years."
     },
     {
+      "title": "Twenty-five dead after fire on cargo ship in eastern China",
+      "url": "https://www.bbc.co.uk/news/articles/cj4jyv7l92eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 10, 2026",
+      "description": "Of the 42 people on board, 17 were were evacuated, CCTV reports."
+    },
+    {
       "title": "Spanish intelligence warned of Ceuta mass crossing plans before surge",
       "url": "https://www.bbc.co.uk/news/articles/ced7vj2gv82o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 9, 2026",
       "description": "Declassified documents show Spanish and Moroccan authorities were alerted to social media calls for a mass migrant crossing the day before tens of thousands entered Ceuta."
-    },
-    {
-      "title": "Five dead and 86 missing as 'heartbreaking' fire breaks out on Philippines ferry",
-      "url": "https://www.bbc.co.uk/news/articles/cy4zd4dn9n9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 10, 2026",
-      "description": "The fire broke out as the vessel nearing its destination at the tourist hotspot of Coron in Palawan."
     },
     {
       "title": "'We never recovered him': Quest to identify remains from Ground Zero continues",
@@ -3671,6 +3695,54 @@
       "description": "Rejected for PIP? Most tribunal appeals succeed. We ask why."
     },
     {
+      "title": "Morocco denies involvement in migrant surge into Spain’s Ceuta",
+      "url": "https://www.aljazeera.com/news/2026/9/10/morocco-denies-involvement-in-migrant-surge-into-spains-ceuta?traffic_source=rss",
+      "date": "September 10, 2026",
+      "description": "Over 70,000 migrants entered Ceuta, sparking a humanitarian crisis and political tensions between Spain and Morocco."
+    },
+    {
+      "title": "Will foreign workers leave South Africa?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/9/10/will-foreign-workers-leave-south-africa?traffic_source=rss",
+      "date": "September 10, 2026",
+      "description": "Anti-immigrant protests in the country are back."
+    },
+    {
+      "title": "What’s happening in Yemen and how did we get here?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/whats-happening-in-yemen-and-how-did-we-get-here-3?traffic_source=rss",
+      "date": "September 10, 2026",
+      "description": "Fighting has reignited in Yemen as Houthi forces push south towards the strategic Bab al-Mandab Strait."
+    },
+    {
+      "title": "US appeals court rejects Trump bid to implement new vote-by-mail rules",
+      "url": "https://www.aljazeera.com/news/2026/9/10/us-appeals-court-rejects-trump-bid-to-implement-new-vote-by-mail-rules?traffic_source=rss",
+      "date": "September 10, 2026",
+      "description": "The ruling is a blow to Trump administration's efforts to change how mail-in voting works ahead of November elections."
+    },
+    {
+      "title": "Could Pakistan enter Yemen conflict under Mecca agreement?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/10-09-sv-pakistan-yemen-mecca-pk?traffic_source=rss",
+      "date": "September 10, 2026",
+      "description": "Pakistan says no military response has been discussed under its new defence pact with Saudi Arabia and Turkiye."
+    },
+    {
+      "title": "Algeria cuts diplomatic ties with UAE: What we know",
+      "url": "https://www.aljazeera.com/news/2026/9/10/algeria-cuts-diplomatic-ties-with-uae-what-we-know?traffic_source=rss",
+      "date": "September 10, 2026",
+      "description": "Algiers ends relations with Gulf state over 'provocative and hostile' actions, after years of tensions."
+    },
+    {
+      "title": "Jimmy Kimmel moves Senate interview to YouTube in latest collision with FCC",
+      "url": "https://www.aljazeera.com/news/2026/9/10/jimmy-kimmel-moves-senate-interview-to-youtube-in-latest-collision-with-fcc?traffic_source=rss",
+      "date": "September 10, 2026",
+      "description": "The decision follows a year of surging regulatory hurdles over candidate appearances on the Disney-owned network."
+    },
+    {
+      "title": "Fire onboard ship at Chinese shipyard kills 25 people",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/09-10-china-shipyard-fire-clip-mp4?traffic_source=rss",
+      "date": "September 10, 2026",
+      "description": "At least 25 people were killed after a fire broke out aboard a ship at a shipyard in China."
+    },
+    {
       "title": "England close in on Pakistan whitewash in third Test as Robinson shines",
       "url": "https://www.aljazeera.com/sports/2026/9/10/england-close-in-on-pakistan-whitewash-in-third-test-as-robinson-shines?traffic_source=rss",
       "date": "September 10, 2026",
@@ -3731,10 +3803,10 @@
       "description": "Protesters in Rome and UN Special Rapporteur Francesca Albanese, warn proposed law could silence criticism of Israel."
     },
     {
-      "title": "At least 20 killed in school fire in rebel-held DR Congo city",
+      "title": "At least 24 killed in school fire in rebel-held DR Congo city",
       "url": "https://www.aljazeera.com/news/2026/9/10/at-least-20-killed-in-school-fire-in-rebel-held-dr-congo-city?traffic_source=rss",
       "date": "September 10, 2026",
-      "description": "Victims from the fire in AFC/M23-held Bukavu include primary school students, say officials and media reports."
+      "description": "Victims of the fire in AFC/M23-held Bukavu include primary school students, say officials and media reports."
     },
     {
       "title": "Houthis capture Yemeni town of Mocha: Why it’s important",
@@ -3747,60 +3819,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/protests-outside-israeli-embassy-in-bangkok-over-badly-behaved-tourists?traffic_source=rss",
       "date": "September 10, 2026",
       "description": "Protests outside Israeli embassy in Bangkok over badly behaved tourists"
-    },
-    {
-      "title": "Who is Trump trying to exclude from 2030 US census and why does it matter?",
-      "url": "https://www.aljazeera.com/news/2026/9/10/who-is-trump-trying-to-exclude-from-2030-us-census-and-why-does-it-matter?traffic_source=rss",
-      "date": "September 10, 2026",
-      "description": "Census plan would exclude undocumented immigrants and non-green-card holders, deeming them not 'true inhabitants'."
-    },
-    {
-      "title": "Yemen’s Houthis seize strategic Red Sea city of Mocha",
-      "url": "https://www.aljazeera.com/news/2026/9/10/yemens-houthis-seize-strategic-red-sea-city-of-mocha?traffic_source=rss",
-      "date": "September 10, 2026",
-      "description": "Houthis deliver 'significant blow' to the Yemeni government, expand control over Bab al-Mandeb, analysts say."
-    },
-    {
-      "title": "Trump promises $5,000 payouts if GOP wins midterms: Can the US afford it?",
-      "url": "https://www.aljazeera.com/news/2026/9/10/trump-promises-5000-payouts-if-gop-wins-midterms-can-the-us-afford-it?traffic_source=rss",
-      "date": "September 10, 2026",
-      "description": "Trump's $1.3 trillion promise would heavily increase national debt, already at a historic $40 trillion."
-    },
-    {
-      "title": "French Football Federation withdraws support for FIFA President Infantino",
-      "url": "https://www.aljazeera.com/sports/2026/9/10/french-football-federation-withdraws-support-for-fifa-president-infantino?traffic_source=rss",
-      "date": "September 10, 2026",
-      "description": "FFF aligns position with of other European federations, such as Belgium, England, Italy, Scotland, and Sweden."
-    },
-    {
-      "title": "Multicultural Malmo: Swedish city loathed by far right braces for election",
-      "url": "https://www.aljazeera.com/features/2026/9/10/from-migration-to-wallet-politics-malmo-votes-in-a-knife-edge-election?traffic_source=rss",
-      "date": "September 10, 2026",
-      "description": "Al Jazeera speaks to voters in Malmo, a city the far right often singles out, ahead of Sweden's vote."
-    },
-    {
-      "title": "Pakistan U19 cricketers mistaken for asylum seekers by protesters in UK",
-      "url": "https://www.aljazeera.com/sports/2026/9/10/pakistan-u19-cricketers-mistaken-for-asylum-seekers-by-protesters-in-uk?traffic_source=rss",
-      "date": "September 10, 2026",
-      "description": "The English cricket board confirms it is reviewing the team’s security for the remainder of the tour."
-    },
-    {
-      "title": "Houthis advance along Yemen’s southern Red Sea coast",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/houthis-advance-along-yemens-southern-red-sea-coast?traffic_source=rss",
-      "date": "September 10, 2026",
-      "description": "Yemen’s Houthi rebels are advancing along the Red Sea coast, to gain more leverage over the Bab el-Mandeb Strait."
-    },
-    {
-      "title": "Manchester United scouted Mbappe but didn’t sign him, says Ryan Giggs",
-      "url": "https://www.aljazeera.com/sports/2026/9/10/manchester-united-scouted-mbappe-but-didnt-sign-him-says-ryan-giggs?traffic_source=rss",
-      "date": "September 10, 2026",
-      "description": "Former United assistant coach reveals his pursuit of a teenage Mbappe after a tip-off from a French scout."
-    },
-    {
-      "title": "The Trump loyalty test: Will his supporters ever disagree with him?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/the-trump-loyalty-test-will-his-supporters-ever-disagree-with-him?traffic_source=rss",
-      "date": "September 10, 2026",
-      "description": "The Trump loyalty test: Will his supporters ever disagree with him?"
     }
   ]
 }
