@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T13:09:28.387Z",
+  "updatedAt": "2026-09-10T15:08:47.018Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260909",
@@ -3108,6 +3108,12 @@
       "description": "Middle East Correspondent Lucy Williamson visits the Palestinian community of Khan al Ahmar, and the neighbouring Israeli settlement of Maale Admumim."
     },
     {
+      "title": "Oil, gas and borrowing costs surge as fears over Middle East escalate",
+      "url": "https://www.bbc.co.uk/news/articles/c5y48rz2nddo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 10, 2026",
+      "description": "Energy prices rise sharply as markets fear the Iran war will not be resolved quickly."
+    },
+    {
       "title": "Petrol prices rise by 5p over a week as Iran war sends oil higher",
       "url": "https://www.bbc.co.uk/news/articles/cj4jwlx77lro?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 9, 2026",
@@ -3118,12 +3124,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c86x0v4ey5yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 9, 2026",
       "description": "The supplier said the industry has faced \"exceptional volatility\" following Russia's invasion of Ukraine and instability in the Middle East."
-    },
-    {
-      "title": "Petrol prices rise by 5p over a week as Iran war sends oil higher",
-      "url": "https://www.bbc.co.uk/news/articles/cj4jwlx77lro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 9, 2026",
-      "description": "A litre of unleaded now costs 167.17p which is the biggest weekly increase since April, data shows."
     }
   ],
   "ajNews": [
@@ -3150,24 +3150,6 @@
       "url": "https://www.aljazeera.com/sports/2026/9/10/qatar-beat-iran-in-mens-basketball-as-asian-games-begin-in-japan?traffic_source=rss",
       "date": "September 10, 2026",
       "description": "The continental games will officially open on September 19, but several team competitions will get under way earlier."
-    },
-    {
-      "title": "Russian attacks kill 7 in Ukraine as Kyiv targets gas plants deep in Arctic",
-      "url": "https://www.aljazeera.com/news/2026/9/10/russian-attacks-kill-7-in-ukraine-as-kyiv-targets-gas-plants-deep-in-arctic?traffic_source=rss",
-      "date": "September 10, 2026",
-      "description": "Ukraine launches one of its deepest strikes to date, targeting natural gas plants in Russia's Arctic region."
-    },
-    {
-      "title": "Europe’s far right: Putin’s best friend?",
-      "url": "https://www.aljazeera.com/opinions/2026/9/10/europes-far-right-putins-best-friend?traffic_source=rss",
-      "date": "September 10, 2026",
-      "description": "Its gains threaten to deepen Europe’s divisions over Ukraine and Russia."
-    },
-    {
-      "title": "Zverev defeats Van de Zandschulp in straight sets to enter US Open semis",
-      "url": "https://www.aljazeera.com/sports/2026/9/10/zverev-defeats-van-de-zandschulp-in-straight-sets-to-enter-us-open-semis?traffic_source=rss",
-      "date": "September 10, 2026",
-      "description": "The German, who faces Russia’s Karen Khachanov, is the only Grand Slam winner left standing in the men's draw."
     }
   ],
   "occNews": [
@@ -3393,6 +3375,12 @@
       "description": "The driveway of the beach-front house collapsed on Tuesday morning, according to local authorities."
     },
     {
+      "title": "Air traffic chaos and compensation: 'Shutdown cost us more than £1,000'",
+      "url": "https://www.bbc.co.uk/news/articles/cy9znljypnjo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 10, 2026",
+      "description": "Flight disruption has ruined holidays and left passengers sleeping on airport floors - so what are their rights?"
+    },
+    {
       "title": "Primark finally set to launch home deliveries",
       "url": "https://www.bbc.co.uk/news/articles/c89jdl0j5x4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 10, 2026",
@@ -3405,16 +3393,16 @@
       "description": "What makes someone stand out in a crowded workplace? Six business leaders tell us what they look for."
     },
     {
-      "title": "Air traffic failure was avoidable, says transport secretary",
-      "url": "https://www.bbc.co.uk/news/articles/c5y42v5n05do?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 9, 2026",
-      "description": "Heidi Alexander orders an investigation into the glitch that caused more than 2,000 flight cancellations."
-    },
-    {
       "title": "Apple's new boss starts with big gamble on £1,999 first folding iPhone",
       "url": "https://www.bbc.co.uk/news/articles/clyjd1jnd03o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 10, 2026",
       "description": "Apple showed off at an event the first major design change to the iPhone in almost 20 years."
+    },
+    {
+      "title": "Why some experts increasingly fear AI will take over",
+      "url": "https://www.bbc.co.uk/news/articles/c74edv9887eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 9, 2026",
+      "description": "AI agents went on an uncontrolled hacking spree, leaving some in the industry worried"
     },
     {
       "title": "England's mayors to get power to impose tourist tax",
@@ -3423,10 +3411,10 @@
       "description": "Hospitality leaders warn the uncapped levy would risk jobs and push prices up for families holidaying in England."
     },
     {
-      "title": "Why some experts increasingly fear AI will take over",
-      "url": "https://www.bbc.co.uk/news/articles/c74edv9887eo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Air traffic failure was avoidable, says transport secretary",
+      "url": "https://www.bbc.co.uk/news/articles/c5y42v5n05do?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 9, 2026",
-      "description": "AI agents went on an uncontrolled hacking spree, leaving some in the industry worried"
+      "description": "Heidi Alexander orders an investigation into the glitch that caused more than 2,000 flight cancellations."
     },
     {
       "title": "Tax banks to cut energy bills, unions tell Burnham",
@@ -3537,18 +3525,6 @@
       "description": "Users say they are losing money or risk having their accounts suspended because Meta struggles to identify scammers."
     },
     {
-      "title": "What tariffs will really cost Canadians and Americans",
-      "url": "https://www.bbc.co.uk/news/articles/cx2z4dv6vn2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 9, 2026",
-      "description": "Households and businesses have become used to tariffs impacting the cost of living for more than year now, so what will change now?"
-    },
-    {
-      "title": "'JLR job cuts a cause for uncertainty and worry'",
-      "url": "https://www.bbc.co.uk/news/articles/cq5x30003zdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 8, 2026",
-      "description": "Experts say they worry it could limit the company's ability to innovate in the future."
-    },
-    {
       "title": "Should promotion depend on how workers use AI?",
       "url": "https://www.bbc.co.uk/news/articles/c1j1896e973o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 8, 2026",
@@ -3621,6 +3597,12 @@
       "description": "The switch to quieter electric equipment is not going as fast as some would like."
     },
     {
+      "title": "Air traffic chaos and compensation: 'Shutdown cost us more than £1,000'",
+      "url": "https://www.bbc.co.uk/news/articles/cy9znljypnjo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 10, 2026",
+      "description": "Flight disruption has ruined holidays and left passengers sleeping on airport floors - so what are their rights?"
+    },
+    {
       "title": "Buy now or wait and hope? Families face gamble on heating oil",
       "url": "https://www.bbc.co.uk/news/articles/crk36z3rmnzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 10, 2026",
@@ -3669,6 +3651,12 @@
       "description": "High Streets have declined in recent years. What does this tell us about the UK?"
     },
     {
+      "title": "Primark introduces home delivery",
+      "url": "https://www.bbc.co.uk/news/videos/cn0jr4zndrro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 10, 2026",
+      "description": "Primark has said it plans to launch a home delivery service in Britain, four years after it made its first foray into e-commerce."
+    },
+    {
       "title": "Why a famous Montreal sandwich shop has been forced to swap its soda",
       "url": "https://www.bbc.co.uk/news/videos/c99dpd083v9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 6, 2026",
@@ -3693,10 +3681,64 @@
       "description": "What can we expect from a major review of financial literacy?"
     },
     {
-      "title": "1986: Manchester's second-hand fashion mecca",
-      "url": "https://www.bbc.co.uk/videos/cj9x1kejd4lo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 4, 2026",
-      "description": "Designer Jeff Banks visited Affleck’s Palace, an indoor emporium selling vintage clothing."
+      "title": "Protests outside Israeli embassy in Bangkok over badly behaved tourists",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/protests-outside-israeli-embassy-in-bangkok-over-badly-behaved-tourists?traffic_source=rss",
+      "date": "September 10, 2026",
+      "description": "Protests outside Israeli embassy in Bangkok over badly behaved tourists"
+    },
+    {
+      "title": "Who is Trump trying to exclude from 2030 US census and why does it matter?",
+      "url": "https://www.aljazeera.com/news/2026/9/10/who-is-trump-trying-to-exclude-from-2030-us-census-and-why-does-it-matter?traffic_source=rss",
+      "date": "September 10, 2026",
+      "description": "Census plan would exclude undocumented immigrants and non-green-card holders, deeming them not 'true inhabitants'."
+    },
+    {
+      "title": "Yemen’s Houthis seize strategic Red Sea city of Mocha",
+      "url": "https://www.aljazeera.com/news/2026/9/10/yemens-houthis-seize-strategic-red-sea-city-of-mocha?traffic_source=rss",
+      "date": "September 10, 2026",
+      "description": "Houthis deliver 'significant blow' to the Yemeni government, expand control over Bab al-Mandeb, analysts say."
+    },
+    {
+      "title": "Trump promises $5,000 payouts if GOP wins midterms: Can the US afford it?",
+      "url": "https://www.aljazeera.com/news/2026/9/10/trump-promises-5000-payouts-if-gop-wins-midterms-can-the-us-afford-it?traffic_source=rss",
+      "date": "September 10, 2026",
+      "description": "Trump's $1.3 trillion promise would heavily increase national debt, already at a historic $40 trillion."
+    },
+    {
+      "title": "French Football Federation withdraws support for FIFA President Infantino",
+      "url": "https://www.aljazeera.com/sports/2026/9/10/french-football-federation-withdraws-support-for-fifa-president-infantino?traffic_source=rss",
+      "date": "September 10, 2026",
+      "description": "FFF aligns position with of other European federations, such as Belgium, England, Italy, Scotland, and Sweden."
+    },
+    {
+      "title": "Multicultural Malmo: Swedish city loathed by far right braces for election",
+      "url": "https://www.aljazeera.com/features/2026/9/10/from-migration-to-wallet-politics-malmo-votes-in-a-knife-edge-election?traffic_source=rss",
+      "date": "September 10, 2026",
+      "description": "Al Jazeera speaks to voters in Malmo, a city the far right often singles out for its diversity, ahead of Sweden's vote."
+    },
+    {
+      "title": "Pakistan U19 cricketers mistaken for asylum seekers by protesters in UK",
+      "url": "https://www.aljazeera.com/sports/2026/9/10/pakistan-u19-cricketers-mistaken-for-asylum-seekers-by-protesters-in-uk?traffic_source=rss",
+      "date": "September 10, 2026",
+      "description": "The English cricket board confirms it is reviewing the team’s security for the remainder of the tour."
+    },
+    {
+      "title": "Houthis advance along Yemen’s southern Red Sea coast",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/houthis-advance-along-yemens-southern-red-sea-coast?traffic_source=rss",
+      "date": "September 10, 2026",
+      "description": "Yemen’s Houthi rebels are advancing along the Red Sea coast, to gain more leverage over the Bab el-Mandeb Strait."
+    },
+    {
+      "title": "Manchester United scouted Mbappe but didn’t sign him, says Ryan Giggs",
+      "url": "https://www.aljazeera.com/sports/2026/9/10/manchester-united-scouted-mbappe-but-didnt-sign-him-says-ryan-giggs?traffic_source=rss",
+      "date": "September 10, 2026",
+      "description": "Former United assistant coach reveals his pursuit of a teenage Mbappe after a tip-off from a French scout."
+    },
+    {
+      "title": "The Trump loyalty test: Will his supporters ever disagree with him?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/the-trump-loyalty-test-will-his-supporters-ever-disagree-with-him?traffic_source=rss",
+      "date": "September 10, 2026",
+      "description": "The Trump loyalty test: Will his supporters ever disagree with him?"
     },
     {
       "title": "Hundreds of thousands lack adequate shelter at Sudan’s Tawila camp",
@@ -3714,7 +3756,7 @@
       "title": "Algeria says cutting diplomatic ties with UAE",
       "url": "https://www.aljazeera.com/news/2026/9/10/algeria-says-cutting-diplomatic-ties-with-uae?traffic_source=rss",
       "date": "September 10, 2026",
-      "description": "This is a breaking news story."
+      "description": "Relations have been strained for years, as the two countries took differing positions on several regional issues."
     },
     {
       "title": "Is Egypt’s Hamza Abdelkarim set to be Barcelona’s next breakout star?",
@@ -3763,48 +3805,6 @@
       "url": "https://www.aljazeera.com/sports/2026/9/10/roma-to-support-nepal-flood-victims-through-champions-league-match-shirt?traffic_source=rss",
       "date": "September 10, 2026",
       "description": "Italian club to auction special 'Together for Nepal' shirts to be worn in the match against Fenerbahce."
-    },
-    {
-      "title": "Israeli checkpoints in the West Bank are choking the Palestinian economy",
-      "url": "https://www.aljazeera.com/economy/2026/9/10/israeli-checkpoints-in-the-west-bank-are-choking-the-palestinian-economy?traffic_source=rss",
-      "date": "September 10, 2026",
-      "description": "Israeli military checkpoints are choking the West Bank economy, devastating local businesses and daily life."
-    },
-    {
-      "title": "Benjamin Netanyahu has overseen a genocide: In his telling, he’s a victim",
-      "url": "https://www.aljazeera.com/news/2026/9/10/benjamin-netanyahu-has-overseen-a-genocide-in-his-telling-hes-a-victim?traffic_source=rss",
-      "date": "September 10, 2026",
-      "description": "Ahead of Israel's national elections, Netanyahu reaches for an old playbook: grievance, blame-shifting and victimhood."
-    },
-    {
-      "title": "Houthis, Yemeni forces engaged in fierce battles: Why each front matters",
-      "url": "https://www.aljazeera.com/news/2026/9/10/houthis-yemeni-forces-engaged-in-fierce-battles-why-each-front-matters?traffic_source=rss",
-      "date": "September 10, 2026",
-      "description": "Forces loyal to the UN-recognised government and Houthis fight on multiple fronts in an effort to expand their control."
-    },
-    {
-      "title": "‘Gone in a blink’: Nepal floods sweep away Indian workers who built hotels",
-      "url": "https://www.aljazeera.com/features/2026/9/10/gone-in-a-blink-nepal-floods-sweep-away-indian-workers-who-built-hotels?traffic_source=rss",
-      "date": "September 10, 2026",
-      "description": "The migrants were at work, building homes and hotels, when the floods hit, sweeping three of them away."
-    },
-    {
-      "title": "Enrique hails Dembele, praises Toure after PSG’s win over Bratislava",
-      "url": "https://www.aljazeera.com/sports/2026/9/10/enrique-hails-dembele-praises-toure-after-psgs-win-over-bratislava?traffic_source=rss",
-      "date": "September 10, 2026",
-      "description": "PSG coach hails 'marvellous' Dembele after the French forward scored two goals in PSG's 6–1 win over Toure's side."
-    },
-    {
-      "title": "Israeli attacks kill at least four Palestinians in northern Gaza",
-      "url": "https://www.aljazeera.com/news/2026/9/10/israeli-attacks-kill-at-least-four-palestinians-in-northern-gaza?traffic_source=rss",
-      "date": "September 10, 2026",
-      "description": "Israeli attacks on the occupied Palestinian territory continue despite a 'ceasefire' brokered in October."
-    },
-    {
-      "title": "Japan baseball great and atomic bomb survivor Isao Harimoto dies aged 86",
-      "url": "https://www.aljazeera.com/sports/2026/9/10/japan-baseball-great-and-atomic-bomb-survivor-isao-harimoto-dies-aged-86?traffic_source=rss",
-      "date": "September 10, 2026",
-      "description": "Harimoto, whose record 3,085 career hits still stands, was inducted into the Japanese Baseball Hall of Fame in 1990."
     }
   ]
 }
