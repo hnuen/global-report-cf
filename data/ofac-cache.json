@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-10T17:08:35.108Z",
+  "updatedAt": "2026-09-10T19:09:11.032Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260910",
+      "code": "20260910",
+      "title": "Iran-related and Counter Terrorism Designations; Licensing Policy Update under Operation Economic Outcast; Settlement Agreement between OFAC and an Individual",
+      "date": "September 10, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260909",
       "code": "20260909",
@@ -54,15 +60,16 @@
       "code": "20260824",
       "title": "Removal of Syria&#039;s designation as a State Sponsor of Terrorism and Associated Sanctions List Updates; Iran-related Designations; Updates to Iran-related General Licenses",
       "date": "August 24, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260821",
-      "code": "20260821",
-      "title": "Issuance of Venezuela-related General Licenses and Associated Frequently Asked Question",
-      "date": "August 21, 2026"
     }
   ],
   "civilPenalties": [
+    {
+      "date": "09/10/2026",
+      "name": "An Individual",
+      "count": "1",
+      "amount": "1,427,230",
+      "pdfUrl": "https://ofac.treasury.gov/media/936911/download?inline"
+    },
     {
       "date": "08/12/2026",
       "name": "Rice Lake Weighing Systems, Inc.",
@@ -416,7 +423,7 @@
     "counter-terrorism-sanctions": {
       "name": "Counter Terrorism Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-terrorism-sanctions",
-      "lastUpdated": "Sep 09, 2026",
+      "lastUpdated": "Sep 10, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -1012,31 +1019,33 @@
     "iran-sanctions": {
       "name": "Iran Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions",
-      "lastUpdated": "Sep 08, 2026",
+      "lastUpdated": "Sep 10, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
-          "citation": "91 FR 55265-26",
-          "description": "Publication of a Determination Issued Pursuant to Executive Order 13902. 91 FR 55265-26 - Publication of Iran-Related Web General Licenses AA and BB 91 FR 54957-26 - Amended Iranian Transactions and Sanctions Regulations 91 FR 35141-26 - Publication of Iran-Related Web General Licenses U and V 91 FR",
+          "citation": "91 FR 57511-26",
+          "description": "Iranian Transactions and Sanctions Regulations: Final Rule for General License Stay of Effectiveness 91 FR 55265-26 - Publication of a Determination Issued Pursuant to Executive Order 13902. 91 FR 55265-26 - Publication of Iran-Related Web General Licenses AA and BB 91 FR 54957-26 - Amended Iranian",
           "year": "2026",
           "glNumbers": []
         },
         {
-          "citation": "90 FR 47230-25",
-          "description": "Publication of Iranian Transactions and Sanctions Regulations Web General License R 90 FR 47229-25 - Publication of an Iran-Related Determination 90 FR 43559-25 - Publication of Iranian Transactions and Sanctions Regulations Web General License Q 89 FR 91262-24 - Publication of an Iran-Related Deter",
+          "citation": "91 FR 35141-26",
+          "description": "Publication of Iran-Related Web General Licenses U and V 91 FR 24722-26 - Iranian Transactions and Sanctions Regulations Web General Licenses 90 FR 47230-25 - Publication of Iranian Transactions and Sanctions Regulations Web General License R 90 FR 47229-25 - Publication of an Iran-Related Determina",
+          "year": "2026",
+          "glNumbers": [
+            "90"
+          ]
+        },
+        {
+          "citation": "90 FR 43559-25",
+          "description": "Publication of Iranian Transactions and Sanctions Regulations Web General License Q 89 FR 91262-24 - Publication of an Iran-Related Determination 89 FR 91261-24 - Publication of Covid-Related Web General License Related to Iranian Transactions and Sanctions Regulations and Global Terrorism Sanctions",
           "year": "2025",
           "glNumbers": []
         },
         {
-          "citation": "89 FR 91261-24",
-          "description": "Publication of Covid-Related Web General License Related to Iranian Transactions and Sanctions Regulations and Global Terrorism Sanctions Regulations 89 FR 43512-24 - Publication of the List of Services, Software, and Hardware Incident to Communications 89 FR 43311-24 - Final Rule Amending the Irani",
+          "citation": "89 FR 43512-24",
+          "description": "Publication of the List of Services, Software, and Hardware Incident to Communications 89 FR 43311-24 - Final Rule Amending the Iranian Transactions and Sanctions Regulations 88 FR 46688-23 - Publication of Iranian Transactions and Sanctions Regulations Web General License P 88 FR 45816-23 - Publica",
           "year": "2024",
-          "glNumbers": []
-        },
-        {
-          "citation": "88 FR 46688-23",
-          "description": "Publication of Iranian Transactions and Sanctions Regulations Web General License P 88 FR 45816-23 - Publication of Covid-Related Web General Licenses Related to Syria Sanctions Regulations, Iranian Transactions and Sanctions Regulations, Global Terrorism Sanctions Regulations, and Venezuela Sanctio",
-          "year": "2023",
           "glNumbers": []
         },
         {
@@ -1197,8 +1206,7 @@
           "date": "May 20, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934291/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "T",
@@ -2557,12 +2565,11 @@
       "generalLicenses": [
         {
           "number": "2A",
-          "title": "Authorizing Certain New Debt, New Equity, and Securities Transactions Involving PDV Holding, Inc. and CITGO Holding, Inc. ( a)",
+          "title": "Venezuela General License 2A",
           "date": "August 25, 2017",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34121/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "3I",
@@ -2578,17 +2585,15 @@
           "date": "April 17, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31741/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "5Y",
-          "title": "Authorizing Certain Transactions Related to the Petróleos de Venezuela, S.A. 2020 8.5 Percent Bond on or After September 17, 2026",
+          "title": "Venezuela General License 5Y",
           "date": "June 18, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936651/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "7C",
@@ -2612,134 +2617,119 @@
           "date": "January 28, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34131/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "15C",
-          "title": "Authorizing Transactions Involving Certain Banks for Certain Entities ( a)",
+          "title": "Venezuela General License 15C",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/33126/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "16C",
-          "title": "Authorizing Maintenance of U.S. Person Accounts and Noncommercial, Personal Remittances Involving Certain Banks",
+          "title": "Venezuela General License 16C",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/33121/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "18A",
-          "title": "Authorizing Certain Transactions Involving Integraci6n Administradora de Fondos de Ahorro Previsional, S.A",
+          "title": "Venezuela General License 18A",
           "date": "March 22, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34126/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "21",
-          "title": "Entries in Certain Accounts for Normal Service Charges and Payments and Transfers to Blocked Accounts in U.S. Financial Institutions Authorized",
+          "title": "Venezuela General License 21",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/46421/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "22",
-          "title": "Venezuela's Mission to the United Nations",
+          "title": "Venezuela General License 22",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/30601/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "23",
-          "title": "Third-country Diplomatic and Consular Funds Transfers Authorized",
+          "title": "Venezuela General License 23",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34116/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "24A",
-          "title": "Certain Transactions Involving the Government of Venezuela Related to Telecommunications and Mail Authorized",
+          "title": "Venezuela General License 24A",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935731/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "25",
-          "title": "Exportation of Certain Services, Software, Hardware, and Technology Incident to the Exchange of Communications over the Internet Authorized",
+          "title": "Venezuela General License 25",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31761/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "26",
-          "title": "Emergency and Certain Other Medical Services Authorized",
+          "title": "Venezuela General License 26",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31766/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "27",
-          "title": "Certain Transactions Related to Patents, Trademarks, and Copyrights Authorized ( a)",
+          "title": "Venezuela General License 27",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34111/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "29",
-          "title": "Certain Transactions Involving the Government of Venezuela in Support of Certain Nongovernmental Organizations' Activities Authorized",
+          "title": "Venezuela General License 29",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31771/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "30B",
-          "title": "Authorizing Certain Transactions Necessary to Port and Airport Operations",
+          "title": "Venezuela General License 30B",
           "date": "February 2, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934996/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "31B",
-          "title": "Certain Transactions Involving the IV Venezuelan National Assembly and Certain Other Persons",
+          "title": "Venezuela General License 31B",
           "date": "January 4, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/930241/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "32",
-          "title": "Authorizing Certain Transactions Related to Personal Maintenance of Individuals Who Are U.S. Persons Residing in Venezuela",
+          "title": "Venezuela General License 32",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34101/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "33",
@@ -3134,10 +3124,22 @@
   ],
   "ajNews": [
     {
+      "title": "Kurdish YPJ women fighters face exclusion from Syria’s new army",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/09-10-reported-bernard-smith-ypj-fighters-mp4?traffic_source=rss",
+      "date": "September 10, 2026",
+      "description": "Syria’s Kurdish women fighters in northeast Syria as pushing to join the country’s new army."
+    },
+    {
       "title": "Trump’s Iran war now has a midterm election problem",
       "url": "https://www.aljazeera.com/news/2026/9/10/trumps-iran-war-now-has-a-midterm-election-problem?traffic_source=rss",
       "date": "September 10, 2026",
       "description": "Trump has tied the end of his war on Iran to the midterms. But with Iran holding firm, the political cost is mounting."
+    },
+    {
+      "title": "Oil jumps to $105, pushing up chances of a US interest rate increase",
+      "url": "https://www.aljazeera.com/economy/2026/9/10/oil-jumps-to-105-pushing-up-chances-of-a-us-interest-rate-increase?traffic_source=rss",
+      "date": "September 10, 2026",
+      "description": "Prices spiked as attacks on oil tankers escalated amid the US-Iran war."
     }
   ],
   "occNews": [
@@ -3255,16 +3257,16 @@
   ],
   "regionsNews": [
     {
+      "title": "Can Trump really pay $5,000 to every American adult?",
+      "url": "https://www.bbc.co.uk/news/articles/c8r6vj7r8rko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 10, 2026",
+      "description": "Analysts question if the US president's election year offer is workable, legal or affordable."
+    },
+    {
       "title": "Pilot warned Amazon cargo plane going too fast before deadly crash, data shows",
       "url": "https://www.bbc.co.uk/news/articles/cj4jynv59ddo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 10, 2026",
       "description": "One pilot told the other about the aircraft's \"excessive speed\" but received an uneven response even as alarms sounded."
-    },
-    {
-      "title": "Trump says every adult American will get $5,000 if Republicans win midterms",
-      "url": "https://www.bbc.co.uk/news/articles/c62kzr1jg0jo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 10, 2026",
-      "description": "Speaking at a party convention, the US president gave no details on how the plan would work or where the money would come from."
     },
     {
       "title": "Israel's Netanyahu to sue newspaper over claim UAE warned him of 7 October attack",
@@ -3309,6 +3311,12 @@
       "description": "The fire broke out as the vessel nearing its destination at the tourist hotspot of Coron in Palawan."
     },
     {
+      "title": "'We never recovered him': Quest to identify remains from Ground Zero continues",
+      "url": "https://www.bbc.co.uk/news/articles/c8d37gq1jnlo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 10, 2026",
+      "description": "Since the attacks, New York officials are working with new, complex technology to find traces of more than 1,000 victims."
+    },
+    {
       "title": "Four key takeaways from Republican midterms convention",
       "url": "https://www.bbc.co.uk/news/articles/cg7kjlzlev1o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 10, 2026",
@@ -3325,12 +3333,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c74edv9887eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 9, 2026",
       "description": "AI agents went on an uncontrolled hacking spree, leaving some in the industry worried"
-    },
-    {
-      "title": "American football is coming to Australia - can it succeed?",
-      "url": "https://www.bbc.co.uk/news/articles/crerv93pv9yo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 9, 2026",
-      "description": "The LA Rams will face the San Francisco 49ers in the first regular season American football game to be played Down Under."
     },
     {
       "title": "Watch: Is Trump's $5,000 election pledge legal?",
@@ -3669,7 +3671,43 @@
       "description": "Rejected for PIP? Most tribunal appeals succeed. We ask why."
     },
     {
-      "title": "US Supreme Court blocks Republican-drawn congressional map in Missouri",
+      "title": "England close in on Pakistan whitewash in third Test as Robinson shines",
+      "url": "https://www.aljazeera.com/sports/2026/9/10/england-close-in-on-pakistan-whitewash-in-third-test-as-robinson-shines?traffic_source=rss",
+      "date": "September 10, 2026",
+      "description": "Demoralised tourists reach 52-2 before rain ends play early on day two, needing 268 runs to make England bat again."
+    },
+    {
+      "title": "More than a dozen children killed in fire in eastern DR Congo schools",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/more-than-a-dozen-children-killed-in-fire-in-eastern-dr-congo-schools?traffic_source=rss",
+      "date": "September 10, 2026",
+      "description": "Authorities say at least 14 school children have been killed after fire ravaged schools in the DR Congo."
+    },
+    {
+      "title": "Climate hazards disrupted school for 1 in 10 students in 2025: UNICEF",
+      "url": "https://www.aljazeera.com/news/2026/9/10/climate-hazards-disrupted-school-for-1-in-10-students-in-2025-unicef?traffic_source=rss",
+      "date": "September 10, 2026",
+      "description": "More than 171 million students affected globally with girls disproportionately impacted."
+    },
+    {
+      "title": "Family of four killed as they slept in Israeli strike on Gaza",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/family-of-four-killed-as-they-slept-in-israeli-strike-on-gaza?traffic_source=rss",
+      "date": "September 10, 2026",
+      "description": "Four members of a Palestinian family, including girls aged 8 and 12, were killed in an Israeli air attack as they slept"
+    },
+    {
+      "title": "The Trump-to-Mamdani voter is real. How does the trend affect the midterms?",
+      "url": "https://www.aljazeera.com/features/longform/2026/9/10/the-trump-to-mamdani-voter-is-real-how-does-the-trend-affect-the-midterms?traffic_source=rss",
+      "date": "September 10, 2026",
+      "description": "Exit polls suggest 9 percent of Trump voters backed New York City Mayor Zohran Mamdani, despite ideological differences."
+    },
+    {
+      "title": "Israel arrests 100 Palestinians in a week as West Bank pogroms continue",
+      "url": "https://www.aljazeera.com/news/2026/9/10/israel-arrests-100-palestinians-in-a-week-as-west-bank-pogroms-continue?traffic_source=rss",
+      "date": "September 10, 2026",
+      "description": "Palestinian Prisoner’s Society says detained include children, journalists and ex-prisoner freed in recent exchange deal"
+    },
+    {
+      "title": "US Supreme Court blocks Trump-backed congressional map in Missouri",
       "url": "https://www.aljazeera.com/news/2026/9/10/us-supreme-court-blocks-republican-drawn-congressional-map-in-missouri?traffic_source=rss",
       "date": "September 10, 2026",
       "description": "Rejection comes as Republican official in Missouri faces contempt charges for ignoring a lower court ruling."
@@ -3679,12 +3717,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/jerusalem-daily-israeli-strikes-devastate-gaza?traffic_source=rss",
       "date": "September 10, 2026",
       "description": "Israeli air strikes have killed and injured dozens across Gaza."
-    },
-    {
-      "title": "Oil jumps to $105, pushing up chances of a US interest rate increase",
-      "url": "https://www.aljazeera.com/economy/2026/9/10/oil-jumps-to-105-pushing-up-chances-of-a-us-interest-rate-increase?traffic_source=rss",
-      "date": "September 10, 2026",
-      "description": "Prices spiked as attacks on oil tankers escalated in the Middle East."
     },
     {
       "title": "LIVE: Manchester United vs Sabah – UEFA Champions League",
@@ -3769,48 +3801,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/the-trump-loyalty-test-will-his-supporters-ever-disagree-with-him?traffic_source=rss",
       "date": "September 10, 2026",
       "description": "The Trump loyalty test: Will his supporters ever disagree with him?"
-    },
-    {
-      "title": "Hundreds of thousands lack adequate shelter at Sudan’s Tawila camp",
-      "url": "https://www.aljazeera.com/features/2026/9/10/hundreds-of-thousands-lack-adequate-shelter-at-sudans-tawila-camp?traffic_source=rss",
-      "date": "September 10, 2026",
-      "description": "Insufficient aid and shelter increase hardship for displaced in Tawila, as malnutrition and disease spread rapidly."
-    },
-    {
-      "title": "At least 25 dead after cargo ship catches fire in China",
-      "url": "https://www.aljazeera.com/news/2026/9/10/at-least-25-dead-after-cargo-ship-catches-fire-in-china?traffic_source=rss",
-      "date": "September 10, 2026",
-      "description": "Fire breaks out on ship being repaired in the port of Qingdao, eastern China."
-    },
-    {
-      "title": "Algeria says cutting diplomatic ties with UAE",
-      "url": "https://www.aljazeera.com/news/2026/9/10/algeria-says-cutting-diplomatic-ties-with-uae?traffic_source=rss",
-      "date": "September 10, 2026",
-      "description": "Relations have been strained for years, as the two countries took differing positions on several regional issues."
-    },
-    {
-      "title": "Is Egypt’s Hamza Abdelkarim set to be Barcelona’s next breakout star?",
-      "url": "https://www.aljazeera.com/sports/2026/9/10/is-egypts-hamza-abdelkarim-set-to-be-barcelonas-next-breakout-star?traffic_source=rss",
-      "date": "September 10, 2026",
-      "description": "Four goals in five games made the 18-year-old striker Barcelona's top scorer during preseason."
-    },
-    {
-      "title": "Israel will never stop me speaking up for Palestine",
-      "url": "https://www.aljazeera.com/opinions/2026/9/10/israel-will-never-stop-me-speaking-up-for-palestine?traffic_source=rss",
-      "date": "September 10, 2026",
-      "description": "Israel’s decision to bar British MPs exposes how far it will go to avoid scrutiny over its treatment of Palestinians."
-    },
-    {
-      "title": "Calls grow for investigation after ICE attacks protesters",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/calls-grow-for-investigation-after-ice-attacks-protesters?traffic_source=rss",
-      "date": "September 10, 2026",
-      "description": "Calls grow for investigation after ICE attacks protesters"
-    },
-    {
-      "title": "The Houthis are testing the limits of Saudi restraint",
-      "url": "https://www.aljazeera.com/opinions/2026/9/10/the-houthis-are-testing-the-limits-of-saudi-restraint?traffic_source=rss",
-      "date": "September 10, 2026",
-      "description": "Riyadh needs to restore deterrence without being pulled back into a prolonged Yemen war."
     }
   ]
 }
