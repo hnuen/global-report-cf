@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T17:08:08.906Z",
+  "updatedAt": "2026-09-11T19:08:13.730Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260910",
@@ -2838,16 +2838,16 @@
           "url": "https://ofac.treasury.gov/media/936856/download?inline"
         },
         {
-          "number": "52C",
-          "title": "Venezuela General License 52C",
+          "number": "52B",
+          "title": "Venezuela General License 52B",
           "date": "September 02, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/936926/download?inline"
+          "url": "https://ofac.treasury.gov/media/936831/download?inline"
         },
         {
           "number": "53",
           "title": "Venezuela General License 53",
-          "date": "September 14, 2026",
+          "date": "August 27, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935386/download?inline"
         },
@@ -3113,6 +3113,12 @@
   ],
   "bbcNews": [
     {
+      "title": "Houthis claim major advance in Yemen and tighten grip on Red Sea shipping lane",
+      "url": "https://www.bbc.co.uk/news/articles/c23x72yx2rvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 11, 2026",
+      "description": "The Iran-backed Houthis are also reported to have seized Perim - a strategic island on the major shipping route."
+    },
+    {
       "title": "Civilians told to flee Ukraine's fortress cities as Russia bids to control Donbas",
       "url": "https://www.bbc.co.uk/news/articles/cwyz89w59l3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 10, 2026",
@@ -3139,6 +3145,12 @@
   ],
   "ajNews": [
     {
+      "title": "Iran says will discuss Strait of Hormuz with Gulf states on Monday",
+      "url": "https://www.aljazeera.com/news/2026/9/11/iran-says-will-discuss-strait-of-hormuz-with-gulf-states-on-monday?traffic_source=rss",
+      "date": "September 11, 2026",
+      "description": "Iran's Foreign Ministry says the meeting in Oman is to 'promote better understanding among the countries of the region'."
+    },
+    {
       "title": "US diplomacy under fire as Russia escalates attacks on Ukrainian officials",
       "url": "https://www.aljazeera.com/news/2026/9/11/us-diplomacy-under-fire-as-moscow-escalates-attacks-on-ukrainian-officials?traffic_source=rss",
       "date": "September 11, 2026",
@@ -3155,18 +3167,6 @@
       "url": "https://www.aljazeera.com/news-analysis/2026/9/11/why-pakistan-is-talking-to-iran-as-the-houthi-saudi-fight-escalates?traffic_source=rss",
       "date": "September 11, 2026",
       "description": "Pakistan faces growing pressure to honour its Saudi defence commitments while keeping diplomatic channels to Iran open."
-    },
-    {
-      "title": "Russian strikes kill two in Kyiv as Moscow targets capital’s fuel stations",
-      "url": "https://www.aljazeera.com/news/2026/9/11/russian-strikes-kill-two-in-kyiv-as-moscow-targets-capitals-fuel-stations?traffic_source=rss",
-      "date": "September 11, 2026",
-      "description": "Second day of strikes on fuel stations suggest a new campaign focused on civilian areas in the Ukrainian capital."
-    },
-    {
-      "title": "Myanmar airport closed following reported drone attack",
-      "url": "https://www.aljazeera.com/news/2026/9/11/myanmar-airport-closed-following-reported-drone-attack?traffic_source=rss",
-      "date": "September 11, 2026",
-      "description": "Military government pins attack on pro-democracy rebels it has been battling since seizing power in 2021."
     }
   ],
   "occNews": [
@@ -3264,10 +3264,10 @@
   ],
   "regionsNews": [
     {
-      "title": "Anthropic blocks possible attempt to use AI to make biological weapons",
-      "url": "https://www.bbc.co.uk/news/articles/cx2zrrpkx20o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Norway's Princess Astrid dies two days after attending brother King Harald's funeral",
+      "url": "https://www.bbc.co.uk/news/articles/cgjq1qy98vjo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 11, 2026",
-      "description": "The revelations in Anthropic's threat intelligence report come after a former top researcher at the company warned of the risks of AI to humanity."
+      "description": "Princess Astrid \"represented the Royal House in a warm and dutiful manner\", the new king, Haakon VIII, said in a tribute to his aunt."
     },
     {
       "title": "Israel says it has destroyed major underground Hezbollah base",
@@ -3276,22 +3276,22 @@
       "description": "The powerful blast registered as the equivalent of a magnitude 4.1 earthquake, according to the US Geological Survey."
     },
     {
-      "title": "Buddhist monk arrested in suspected $3m embezzlement scandal",
-      "url": "https://www.bbc.co.uk/news/articles/c5yjkxlngjyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 11, 2026",
-      "description": "Thai police also arrested a suspected female accomplice with whom the monk, who had taken a vow of celibacy, was filmed having sex."
-    },
-    {
       "title": "Princess Diana's 'revenge dress' goes up for auction",
       "url": "https://www.bbc.co.uk/news/articles/c0lrk7d7j0no?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 11, 2026",
       "description": "Auction house Sotheby's expects the dress to sell for up to $300,000 (£220,000) when it goes under the hammer on 9 December."
     },
     {
-      "title": "Norway's Princess Astrid dies two days after attending brother King Harald's funeral",
-      "url": "https://www.bbc.co.uk/news/articles/cgjq1qy98vjo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Buddhist monk arrested in suspected $3m embezzlement scandal",
+      "url": "https://www.bbc.co.uk/news/articles/c5yjkxlngjyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 11, 2026",
-      "description": "Princess Astrid \"represented the Royal House in a warm and dutiful manner\", the new king, Haakon VIII, said in a tribute to his aunt."
+      "description": "Thai police also arrested a suspected female accomplice with whom the monk, who had taken a vow of celibacy, was filmed having sex."
+    },
+    {
+      "title": "Anthropic blocks possible attempt to use AI to make biological weapons",
+      "url": "https://www.bbc.co.uk/news/articles/cx2zrrpkx20o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 11, 2026",
+      "description": "The revelations in Anthropic's threat intelligence report come after a former top researcher at the company warned of the risks of AI to humanity."
     },
     {
       "title": "Hong Kong's Tiananmen activists sentenced to up to seven years in prison",
@@ -3420,6 +3420,12 @@
       "description": "Prices in the US rose 3.4% in the 12 months to August, according to the latest official report on inflation."
     },
     {
+      "title": "Interest rates could rise again across the world – here's why",
+      "url": "https://www.bbc.co.uk/news/articles/cew9nkx7v9eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 11, 2026",
+      "description": "As countries grapple with energy costs pushing up inflation, this month will see how central banks respond."
+    },
+    {
       "title": "AI boom helps drive surprise UK growth in July",
       "url": "https://www.bbc.co.uk/news/articles/cq5xjlvn71lo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 11, 2026",
@@ -3436,12 +3442,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cjeg8ly0qd3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 10, 2026",
       "description": "Europe has some promising battery tech, but can it make up ground lost to Chinese battery giants?"
-    },
-    {
-      "title": "Interest rates could rise again across the world – here's why",
-      "url": "https://www.bbc.co.uk/news/articles/cew9nkx7v9eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 11, 2026",
-      "description": "As countries grapple with energy costs pushing up inflation, this month will see how central banks respond."
     },
     {
       "title": "Alstom to build new battery-electric train fleet",
@@ -3550,6 +3550,12 @@
       "url": "https://www.bbc.co.uk/news/articles/c87ve09pgqzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 9, 2026",
       "description": "The Japanese brewer plans to shift non-alcoholic beer brewing to the US from Canada as tariffs bite"
+    },
+    {
+      "title": "Borrowers expecting mortgage rates to drop have hopes dashed",
+      "url": "https://www.bbc.co.uk/news/articles/c770v7y63r0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 8, 2026",
+      "description": "Major lenders have raised rates on new deals in recent days, leaving many borrowers needing to make a decision."
     },
     {
       "title": "Why some experts increasingly fear AI will take over",
@@ -3720,6 +3726,48 @@
       "description": "The US may be the bigger trading partner, but Canada shouldn't be counted out quite yet in the escalating trade fight."
     },
     {
+      "title": "At least 46,000 displaced by escalating Yemen fighting: UN",
+      "url": "https://www.aljazeera.com/news/2026/9/11/at-least-46000-displaced-by-escalating-yemen-fighting-un?traffic_source=rss",
+      "date": "September 11, 2026",
+      "description": "The International Organisation for Migration (IOM) warns that the figure is rising 'by the hour'."
+    },
+    {
+      "title": "US holds memorials for the 9/11 attacks, 25 years later",
+      "url": "https://www.aljazeera.com/gallery/2026/9/11/us-holds-memorials-for-the-9-11-attacks-25-years?traffic_source=rss",
+      "date": "September 11, 2026",
+      "description": "In New York, Virginia and Pennsylvania, mourners gathered to remember nearly 3,000 people killed during the hijackings."
+    },
+    {
+      "title": "US declares end of largest recorded cyclosporiasis outbreak",
+      "url": "https://www.aljazeera.com/news/2026/9/11/us-declares-end-of-largest-recorded-cyclosporiasis-outbreak?traffic_source=rss",
+      "date": "September 11, 2026",
+      "description": "The FDA says contaminated lettuce has been removed from the market after nearly 13,000 linked cases."
+    },
+    {
+      "title": "UK lawmakers vote against bill to legalise assisted dying",
+      "url": "https://www.aljazeera.com/news/2026/9/11/uk-lawmakers-vote-against-bill-to-legalise-assisted-dying?traffic_source=rss",
+      "date": "September 11, 2026",
+      "description": "Parliament's lower ⁠chamber, the House of Commons, rejected the legislation by 286 votes to 270."
+    },
+    {
+      "title": "Rising petrol costs drive sharp inflation increase in US in August",
+      "url": "https://www.aljazeera.com/economy/2026/9/11/rising-petrol-costs-drive-sharp-inflation-increase-in-us-in-august?traffic_source=rss",
+      "date": "September 11, 2026",
+      "description": "Petrol prices jumped 3.9 percent month-to-month, accounting for one-third of the overall inflation increase in August."
+    },
+    {
+      "title": "‘Handcuffed and blindfolded’: Is the US targeting Ecuadorian fishermen?",
+      "url": "https://www.aljazeera.com/news/2026/9/11/handcuffed-and-blindfolded-is-the-us-targeting-ecuadorian-fishermen?traffic_source=rss",
+      "date": "September 11, 2026",
+      "description": "A growing number of fishermen say their boats have been struck by US forces as Trump expands his anti-drug campaign."
+    },
+    {
+      "title": "Morocco PM takes aim at federation chief over 2030 World Cup final boast",
+      "url": "https://www.aljazeera.com/sports/2026/9/11/morocco-pm-slams-federation-chief-over-2030-world-cup-final-boast?traffic_source=rss",
+      "date": "September 11, 2026",
+      "description": "Prime Minister Aziz Akhannouch slams his country's football chief after claim Morocco will host 2030 World Cup final."
+    },
+    {
       "title": "Houthis declare Red Sea shipping safe except for Saudi vessels",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/11/houthis-declare-red-sea-shipping-safe-except-for-saudi-vessels?traffic_source=rss",
       "date": "September 11, 2026",
@@ -3802,42 +3850,6 @@
       "url": "https://www.aljazeera.com/opinions/2026/9/11/the-dystopian-legal-architecture-of-the-war-on-terror-must-be-dismantled?traffic_source=rss",
       "date": "September 11, 2026",
       "description": "A quarter-century after 9/11, we are still living under the security order it unleashed."
-    },
-    {
-      "title": "Arsenal manager Arteta ‘very surprised’ at Jesus blast over Barcelona move",
-      "url": "https://www.aljazeera.com/sports/2026/9/11/arsenal-manager-arteta-very-surprised-at-jesus-blast-over-barcelona-move?traffic_source=rss",
-      "date": "September 11, 2026",
-      "description": "Gabriel Jesus claims he was forced to train alone before Barcelona move, but Arsenal 'surprised' by criticism."
-    },
-    {
-      "title": "From hunger crisis to ‘obesity’: how Gaza’s UN data is being twisted",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/11/from-hunger-crisis-to-obesity-how-gazas-un-data-is-being-twisted?traffic_source=rss",
-      "date": "September 11, 2026",
-      "description": "US and Israeli officials are using a drop in acute malnutrition cases to claim Gaza has no hunger."
-    },
-    {
-      "title": "‘A historic day’: Spain moves closer to citizenship for Western Saharans",
-      "url": "https://www.aljazeera.com/news/2026/9/11/a-historic-day-spain-moves-closer-to-citizenship-for-western-saharans?traffic_source=rss",
-      "date": "September 11, 2026",
-      "description": "Spain’s parliament backs citizenship for Sahrawis amid tense relations with Morocco after the Ceuta crossing."
-    },
-    {
-      "title": "FIFA rebukes Morocco’s claim it will host 2030 World Cup final",
-      "url": "https://www.aljazeera.com/sports/2026/9/11/fifa-rebukes-morocco-claim-they-will-host-2030-world-cup-final?traffic_source=rss",
-      "date": "September 11, 2026",
-      "description": "Morocco to co-host 2030 ​tournament with Spain and Portugal, but FIFA denies final will be in North Africa."
-    },
-    {
-      "title": "Swiss police report five killed in Dutch tour bus crash",
-      "url": "https://www.aljazeera.com/news/2026/9/11/swiss-police-report-five-killed-in-dutch-tour-bus-crash?traffic_source=rss",
-      "date": "September 11, 2026",
-      "description": "Bus carrying 45 Dutch tourists overturned and landed in a construction zone near an Alpine village."
-    },
-    {
-      "title": "Republican midterm message: Democrats are the threat",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/11/republican-midterm-message-democrats-are-the-threat?traffic_source=rss",
-      "date": "September 11, 2026",
-      "description": "Republican speakers portrayed Democrats as a threat to America on night two of their midterm convention in Dallas."
     }
   ]
 }
