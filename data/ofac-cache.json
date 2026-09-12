@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T19:08:26.420Z",
+  "updatedAt": "2026-09-12T21:08:47.100Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260910",
@@ -3113,6 +3113,12 @@
       "description": "A senior UN official tells the BBC there is a race against the clock to ensure access to power and water through winter."
     },
     {
+      "title": "Only Roland Garros towel left, says Ukraine tennis player after Russian strike hits flat",
+      "url": "https://www.bbc.co.uk/news/articles/c4gr33g3evlo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 12, 2026",
+      "description": "Dayana Yastremska says her flat took a \"direct hit\" by a Russian missile in Odesa, and all that left was her Roland Garros towel."
+    },
+    {
       "title": "Lightning Houthi advance in Yemen may bring dangerous new dimension to Iran war",
       "url": "https://www.bbc.co.uk/news/articles/c3v4zgzr1kxo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 11, 2026",
@@ -3132,6 +3138,18 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Bahrain says it will not participate in Iran’s proposed Hormuz meeting",
+      "url": "https://www.aljazeera.com/news/2026/9/12/bahrain-says-it-will-not-participate-in-irans-proposed-hormuz-meeting?traffic_source=rss",
+      "date": "September 12, 2026",
+      "description": "Iran tells Al Jazeera that Monday's meeting is a sign of 'good intentions' towards neighbouring countries."
+    },
+    {
+      "title": "Will Houthi advances in Yemen give Iran leverage in its war with the US?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/9/12/will-houthi-advances-in-yemen-give-iran-leverage-in-its-war-with-the-us?traffic_source=rss",
+      "date": "September 12, 2026",
+      "description": "The Iranian ally seizes Yemen's Red Sea coast, cementing their hold on the Bab al-Mandeb strait."
+    },
     {
       "title": "Iraq probes drone strikes on Saudi Arabia, shuts three crossings to Iran",
       "url": "https://www.aljazeera.com/news/2026/9/12/iraq-probes-drone-strikes-on-saudi-arabia-shuts-three-crossings-to-iran?traffic_source=rss",
@@ -3155,30 +3173,6 @@
       "url": "https://www.aljazeera.com/news/2026/9/12/at-least-seven-killed-in-fire-at-prison-in-northern-syria?traffic_source=rss",
       "date": "September 12, 2026",
       "description": "Inmates rioted following protests in the city of Kobane over the killing of former Kurdish fighter, state media reports."
-    },
-    {
-      "title": "Iran-backed Houthis seize strategic Mayun Island: Can they hold it?",
-      "url": "https://www.aljazeera.com/news/2026/9/12/iran-backed-houthis-seize-strategic-mayun-island-can-they-hold-it?traffic_source=rss",
-      "date": "September 12, 2026",
-      "description": "The takeover solidifies the group's position in the Bab al-Mandeb, but holding it long-term could be difficult."
-    },
-    {
-      "title": "‘Divine triumph’: Iran celebrates Houthis’ capture of Yemen’s Red Sea coast",
-      "url": "https://www.aljazeera.com/news/2026/9/12/divine-triumph-iran-celebrates-houthis-capture-of-yemens-red-sea-coast?traffic_source=rss",
-      "date": "September 12, 2026",
-      "description": "Iranian officials have praised the Houthis' victories but have not spoken about any imminent closure of Bab al-Mandeb."
-    },
-    {
-      "title": "Trump: Iran probably ‘behind’ Saudi oil pipeline attack",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/12/trump-iran-probably-behind-saudi-oil-pipeline-attack?traffic_source=rss",
-      "date": "September 12, 2026",
-      "description": "Trump: Iran probably ‘behind’ Saudi oil pipeline attack"
-    },
-    {
-      "title": "Houthis celebrate seizing control of Yemen’s Red Sea coast",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/12/houthis-celebrate-seizing-control-of-yemens-red-sea-coast?traffic_source=rss",
-      "date": "September 12, 2026",
-      "description": "Yemen’s Iran-aligned Houthis have been celebrating after seizing control of the Red Sea coast in a rapid offensive."
     }
   ],
   "occNews": [
@@ -3195,7 +3189,29 @@
       "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for August 2026."
     }
   ],
-  "economicsNews": [],
+  "economicsNews": [
+    {
+      "title": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260825a.htm",
+      "date": "August 25, 2026",
+      "description": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Minutes of the Federal Open Market Committee, July 28–29, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260819a.htm",
+      "date": "August 19, 2026",
+      "description": "Minutes of the Federal Open Market Committee, July 28–29, 2026",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+      "date": "July 29, 2026",
+      "description": "Federal Reserve issues FOMC statement",
+      "category": "Monetary Policy"
+    }
+  ],
   "bisNews": [
     {
       "title": "Streamlining Export Controls for Drone Exports",
@@ -3266,6 +3282,12 @@
       "description": "Trump made the comments during a meeting with Irish leader Micheál Martin, but Downing Street says it will \"stick to the Good Friday Agreement\"."
     },
     {
+      "title": "Fire at nursing home in Chile kills 16 residents",
+      "url": "https://www.bbc.co.uk/news/articles/cy4zpp20w77o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 12, 2026",
+      "description": "Ten people were evacuated from the home in Araucanía region in central Chile."
+    },
+    {
       "title": "French officials investigate if malicious act caused train derailment",
       "url": "https://www.bbc.co.uk/news/articles/c33kp533nn6o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 12, 2026",
@@ -3276,12 +3298,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c0lr7k4k4zyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 12, 2026",
       "description": "A TV news presenter has been named as the traditional kingdom of Tooro's new monarch but the late king's family claim he chose an heir."
-    },
-    {
-      "title": "'It's like a dog set loose on us' - fear over Kenya's crackdown on foreign traders",
-      "url": "https://www.bbc.co.uk/news/articles/c4g5kxw4wd7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 12, 2026",
-      "description": "The authorities have struggled to contain the fallout, as frightened migrants flee the country."
     },
     {
       "title": "Death toll from Philippines ferry fire rises to 76, with more still missing",
@@ -3320,10 +3336,10 @@
       "description": "Denise Cosco testified against the powerful 'Ndrangheta clan and her own father over the murder of her mother in Italy."
     },
     {
-      "title": "'Never, ever forget' - America marks 25th anniversary of 9/11 attacks",
-      "url": "https://www.bbc.co.uk/news/articles/clyjqvjzlwno?at_medium=RSS&amp;at_campaign=rss",
+      "title": "'It's like a dog set loose on us' - fear over Kenya's crackdown on foreign traders",
+      "url": "https://www.bbc.co.uk/news/articles/c4g5kxw4wd7o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 12, 2026",
-      "description": "In New York, the Pentagon and Pennsylvania, solemn ceremonies commemorate the landmark anniversary."
+      "description": "The authorities have struggled to contain the fallout, as frightened migrants flee the country."
     },
     {
       "title": "Five minutes to steal a Renoir: Why museum thefts are becoming bolder across Europe",
@@ -3342,12 +3358,6 @@
       "url": "https://www.bbc.co.uk/news/articles/crk3n5z60pvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 12, 2026",
       "description": "Glutathione, an antioxidant, has been offered as a treatment at some of the largest US wildfires in recent years."
-    },
-    {
-      "title": "Gen Zs recall first learning of 'deeply harrowing, terrifying' 9/11",
-      "url": "https://www.bbc.co.uk/news/articles/cgmrzzkjywlo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 11, 2026",
-      "description": "They carry distinct memories not from the day itself, but from the moment - years later - they learned about the attacks."
     },
     {
       "title": "Céline Dion fans prepare for comeback concert in Paris",
@@ -3710,6 +3720,48 @@
       "description": "The US may be the bigger trading partner, but Canada shouldn't be counted out quite yet in the escalating trade fight."
     },
     {
+      "title": "Ebola spreads to seventh DRC province as gov’t insists cases are declining",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/12/09-12-drc-ebola-spread-clip-mp4?traffic_source=rss",
+      "date": "September 12, 2026",
+      "description": "Ebola has reached a seventh DR Congo province after an infected man travelled through Rwanda and Uganda."
+    },
+    {
+      "title": "Second crypto billionaire donates record $49m to far-right Reform UK",
+      "url": "https://www.aljazeera.com/news/2026/9/12/second-crypto-billionaire-donates-record-49m-to-far-right-reform-uk?traffic_source=rss",
+      "date": "September 12, 2026",
+      "description": "The two donations increase the total sum of money pledged to Reform since Friday to $97m."
+    },
+    {
+      "title": "Fire at nursing home in Chile kills 16 elderly residents",
+      "url": "https://www.aljazeera.com/news/2026/9/12/fire-at-nursing-home-in-chile-kills-16-elderly-residents?traffic_source=rss",
+      "date": "September 12, 2026",
+      "description": "The facility had faced fines and enforcement proceedings over regulatory violations since 2019."
+    },
+    {
+      "title": "Israel bombs southern Lebanon as talks postponed",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/12/israel-bombs-southern-lebanon-as-talks-postponed?traffic_source=rss",
+      "date": "September 12, 2026",
+      "description": "The next round of talks between Israel and Lebanon, mediated by the US, has been postponed."
+    },
+    {
+      "title": "Gaza genocide documentary ‘NAZA’ wins Special Jury Prize at Venice",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/12/09-12-naza-venice-clip-mp4?traffic_source=rss",
+      "date": "September 12, 2026",
+      "description": "‘NAZA’, a documentary about Israel’s genocide in Gaza, has won the Special Jury Prize at the Venice Film Festival."
+    },
+    {
+      "title": "US court blocks Trump administration plan to cut disaster agency workforce",
+      "url": "https://www.aljazeera.com/news/2026/9/12/us-court-blocks-trump-administration-plan-to-cut-disaster-agency-workforce?traffic_source=rss",
+      "date": "September 12, 2026",
+      "description": "US President Donald Trump has said he would like to abolish the agency."
+    },
+    {
+      "title": "Afghan woman deported in first use of US Alien Terrorist Removal Court",
+      "url": "https://www.aljazeera.com/news/2026/9/12/afghan-woman-deported-in-first-use-of-us-alien-terrorist-removal-court?traffic_source=rss",
+      "date": "September 12, 2026",
+      "description": "Court was created in 1996, but had never been used before Nazira Haji Zada’s case."
+    },
+    {
       "title": "India vs Sri Lanka: Women’s T20 Asia Cup 2026 final – schedule, teams, form",
       "url": "https://www.aljazeera.com/sports/2026/9/12/india-sri-lanka-womens-t20-asia-cup-2026-final-schedule-form-teams?traffic_source=rss",
       "date": "September 12, 2026",
@@ -3780,36 +3832,6 @@
       "url": "https://www.aljazeera.com/sports/2026/9/12/england-pakistan-third-test-edgbaston-joe-root-razaullah-cricket?traffic_source=rss",
       "date": "September 12, 2026",
       "description": "England overcome early tremors to win ⁠third Test against Pakistan by eight wickets, clinching a series whitewash."
-    },
-    {
-      "title": "Trump says a unified Ireland would be ‘fantastic’ during Irish visit",
-      "url": "https://www.aljazeera.com/news/2026/9/12/trump-says-a-unified-ireland-would-be-fantastic-during-irish-visit?traffic_source=rss",
-      "date": "September 12, 2026",
-      "description": "British Prime Minister Andy Burnham maintains there is not enough popular support for Northern Ireland to leave the UK."
-    },
-    {
-      "title": "India’s Modi calls for empowerment of Global South at BRICS Summit",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/12/indias-modi-calls-for-empowerment-of-global-south-at-brics-summit?traffic_source=rss",
-      "date": "September 12, 2026",
-      "description": "India’s Prime Minister Narendra Modi has called for an overhaul of global governance."
-    },
-    {
-      "title": "Manchester United vs Man City: Premier League – predictions, teams, lineups",
-      "url": "https://www.aljazeera.com/sports/2026/9/12/man-united-vs-man-city-premier-league-predictions-schedule-team-news-lineups?traffic_source=rss",
-      "date": "September 12, 2026",
-      "description": "Premier League leaders Manchester City gear up for their first derby under new boss Enzo Maresca against rivals United."
-    },
-    {
-      "title": "Yemen government forces say Houthi ‘members, vehicles’ targeted in Mocha",
-      "url": "https://www.aljazeera.com/news/2026/9/12/yemen-government-forces-say-houthi-members-vehicles-targeted-in-mocha?traffic_source=rss",
-      "date": "September 12, 2026",
-      "description": "Yemeni government forces says they launched air strikes on Houthi fighters along the Red Sea coast."
-    },
-    {
-      "title": "Left with nothing, people in Gaza are forced to rent generators by the hour",
-      "url": "https://www.aljazeera.com/features/2026/9/12/left-with-nothing-people-in-gaza-are-forced-to-rent-generators-by-the-hour?traffic_source=rss",
-      "date": "September 12, 2026",
-      "description": "Israel's destruction of homes and infrastructure in Gaza has forced Palestinians to rent generators by the hour."
     }
   ]
 }
