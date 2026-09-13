@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T17:08:24.544Z",
+  "updatedAt": "2026-09-13T19:08:29.764Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260910",
@@ -3101,7 +3101,7 @@
   ],
   "bbcNews": [
     {
-      "title": "Russia struck train near Poland border shortly after Boris Johnson and top European officials passed through",
+      "title": "Russia hits Ukrainian train shortly after Boris Johnson and top European officials leave station",
       "url": "https://www.bbc.co.uk/news/articles/cy5zg41dkqwo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 13, 2026",
       "description": "The former UK PM said \"I don't know what warped logic drove Putin to blow up a stationary Ukrainian locomotive on the Polish border this morning\"."
@@ -3144,6 +3144,18 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Syrian child killed after roadside object explodes near Damascus",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/09-13-syrian-child-explosion-clip-mp4?traffic_source=rss",
+      "date": "September 13, 2026",
+      "description": "A child has been killed after an explosive object detonated when he touched it near Damascus."
+    },
+    {
+      "title": "Trump tells Zelenskyy to stop hitting Russian diesel supplies",
+      "url": "https://www.aljazeera.com/economy/2026/9/13/trump-tells-zelenskyy-to-stop-hitting-russian-diesel-supplies?traffic_source=rss",
+      "date": "September 13, 2026",
+      "description": "The US president says Ukraine's attacks on Russian diesel infrastructure are contributing to global fuel shortages."
+    },
     {
       "title": "Ukrainian drone evades Russian helicopter fire to strike oil tanker",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/09-12-ukraine-drone-russian-tanker-sv?traffic_source=rss",
@@ -3288,10 +3300,16 @@
   ],
   "regionsNews": [
     {
-      "title": "Trump downplays AI risks after dire expert warnings and calls to slow development down",
+      "title": "Trump downplays warnings of AI risks, citing rivalry with China",
       "url": "https://www.bbc.co.uk/news/articles/c7v48vp31mdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 13, 2026",
       "description": "The US President said \"negative forces\" were airing concerns about \"things that won't happen\"."
+    },
+    {
+      "title": "Questions mount over what an AI 'slowdown' would look like",
+      "url": "https://www.bbc.co.uk/news/articles/cwyzp47py48o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 13, 2026",
+      "description": "While pacing AI development might sound like a quick fix, it is far from an easy solution."
     },
     {
       "title": "Six dead, 130 missing after Indonesian ferry capsizes in Java Sea",
@@ -3330,16 +3348,16 @@
       "description": "Some people fired in the wake of Kirk's assassination have won big settlements from employers, others have had to start over from scratch."
     },
     {
-      "title": "Dramatic insider warnings over AI fall flat with some in Silicon Valley",
-      "url": "https://www.bbc.co.uk/news/articles/cq635037g18o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 13, 2026",
-      "description": "A recent spate of stark warnings about the dangers of AI has been met with scepticism by executives and investors."
-    },
-    {
       "title": "Afghan woman deported from US in first use of 'alien terrorist' court",
       "url": "https://www.bbc.co.uk/news/articles/c3eqpd9zgl9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 12, 2026",
       "description": "The legal US resident was never charged with a crime, but was deported due to her family links to terrorism."
+    },
+    {
+      "title": "Dramatic insider warnings over AI fall flat with some in Silicon Valley",
+      "url": "https://www.bbc.co.uk/news/articles/cq635037g18o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 13, 2026",
+      "description": "A recent spate of stark warnings about the dangers of AI has been met with scepticism by executives and investors."
     },
     {
       "title": "Best friends for decades - until a DNA test revealed they were sisters",
@@ -3720,6 +3738,24 @@
       "description": "The US may be the bigger trading partner, but Canada shouldn't be counted out quite yet in the escalating trade fight."
     },
     {
+      "title": "​Bangsamoro’s parliamentary election is a turning point",
+      "url": "https://www.aljazeera.com/opinions/2026/9/13/bangsamoros-parliamentary-election-is-a-turning-point?traffic_source=rss",
+      "date": "September 13, 2026",
+      "description": "It's a milestone of the self-determination fight in this region of the Philippines. It must be kept peaceful and fair."
+    },
+    {
+      "title": "Haaland goal sees 10-men City beat United in controversial Manchester derby",
+      "url": "https://www.aljazeera.com/sports/2026/9/13/haaland-goal-sees-10-men-city-beat-united-in-controversial-manchester-derby?traffic_source=rss",
+      "date": "September 13, 2026",
+      "description": "Phil Foden is sent off for City, but Erling Haaland's controversial goal settles Manchester derby 1-0 at United."
+    },
+    {
+      "title": "French TV programme pulled after actress speaks out on Gaza",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/french-tv-programme-pulled-after-actress-speaks-out-on-gaza?traffic_source=rss",
+      "date": "September 13, 2026",
+      "description": "France Televisions has removed the replay of a programme after actress Adèle Haenel denounced the Gaza genocide."
+    },
+    {
       "title": "Kosovo approves new government after months of political deadlock",
       "url": "https://www.aljazeera.com/news/2026/9/13/kosovo-approves-new-government-after-months-of-political-deadlock?traffic_source=rss",
       "date": "September 13, 2026",
@@ -3756,7 +3792,7 @@
       "description": "Escalating fighting along Yemen’s western coast has driven more than 2,000 Yemenis across the Red Sea to Djibouti."
     },
     {
-      "title": "US Open men’s singles final live: Zverev vs Shelton",
+      "title": "US Open men’s final live: Alexander Zverev vs Ben Shelton",
       "url": "https://www.aljazeera.com/sports/liveblog/2026/9/13/us-open-mens-singles-final-live-alexander-zverev-vs-ben-shelton?traffic_source=rss",
       "date": "September 13, 2026",
       "description": "Follow our live build-up, predictions, score, match photos and text commentary stream of the men's final in New York."
@@ -3780,46 +3816,16 @@
       "description": "With lost livelihoods, destroyed homes and little security, many displaced Lebanese are facing an entrenched reality."
     },
     {
-      "title": "LIVE: Manchester United vs Manchester City – Premier League",
+      "title": "LIVE: Manchester United 0-1 Manchester City – Premier League",
       "url": "https://www.aljazeera.com/sports/liveblog/2026/9/13/live-manchester-united-vs-manchester-city-premier-league-2?traffic_source=rss",
       "date": "September 13, 2026",
-      "description": "Follow updates from our live text commentary stream coverage as Bruno Fernandes and Erling Haaland star in the derby."
+      "description": "All the updates from our live text commentary stream coverage as Erling Haaland settles the controversial derby."
     },
     {
-      "title": "India vs Sri Lanka live: Asia Cup final",
+      "title": "Asia Cup final live: India defeat Sri Lanka by 72 runs",
       "url": "https://www.aljazeera.com/sports/liveblog/2026/9/13/india-vs-sri-lanka-live-asia-cup-final?traffic_source=rss",
       "date": "September 13, 2026",
-      "description": "Follow our live team score, photos and text commentary stream from the final in Dubai as Sri Lanka chase 184 to win."
-    },
-    {
-      "title": "A dignified life is a ‘distant dream’ for many Iranian families amid US war",
-      "url": "https://www.aljazeera.com/economy/2026/9/13/a-dignified-life-is-a-distant-dream-for-many-iranian-families-amid-us-war?traffic_source=rss",
-      "date": "September 13, 2026",
-      "description": "With constant degredation and no real prospects of improvement in the foreseeable future, Iranians are losing hope."
-    },
-    {
-      "title": "Philippines set for historic vote in Bangsamoro after decades of conflict",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/philippines-set-for-historic-vote-in-bangsamoro-after-decades-of-conflict?traffic_source=rss",
-      "date": "September 13, 2026",
-      "description": "Philippines set for historic vote in Bangsamoro after decades of conflict"
-    },
-    {
-      "title": "Fighting continues between Yemen gov’t forces, Houthis: What is the latest?",
-      "url": "https://www.aljazeera.com/news/2026/9/13/fighting-continues-between-yemen-govt-forces-houthis-what-is-the-latest?traffic_source=rss",
-      "date": "September 13, 2026",
-      "description": "Government forces and Saudi Arabia carry out air attacks to stop Houthis' advance as thousands displaced by conflict."
-    },
-    {
-      "title": "Israeli attack on Gaza kills two Palestinians",
-      "url": "https://www.aljazeera.com/news/2026/9/13/israeli-attack-on-gaza-kills-two-palestinians?traffic_source=rss",
-      "date": "September 13, 2026",
-      "description": "Israeli strikes on Palestinian territory persist despite a 'ceasefire' brokered by the United States."
-    },
-    {
-      "title": "A kingdom within a republic: Inside Uganda’s Buganda",
-      "url": "https://www.aljazeera.com/news/2026/9/13/a-kingdom-within-a-republic-inside-ugandas-buganda?traffic_source=rss",
-      "date": "September 13, 2026",
-      "description": "The kingdom’s traditions and institutions have endured through colonial rule, independence and decades of upheaval."
+      "description": "All our updates as India beat Sri Lanka to win the Women's Asia Cup 2026 in Dubai."
     }
   ]
 }
