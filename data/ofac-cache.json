@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T15:08:28.837Z",
+  "updatedAt": "2026-09-13T17:08:24.544Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260910",
@@ -3101,22 +3101,28 @@
   ],
   "bbcNews": [
     {
+      "title": "Russia struck train near Poland border shortly after Boris Johnson and top European officials passed through",
+      "url": "https://www.bbc.co.uk/news/articles/cy5zg41dkqwo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 13, 2026",
+      "description": "The former UK PM said \"I don't know what warped logic drove Putin to blow up a stationary Ukrainian locomotive on the Polish border this morning\"."
+    },
+    {
       "title": "Iran war reshapes Brics ties but also exposes divisions",
       "url": "https://www.bbc.co.uk/news/articles/ce8767g4jdpo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 13, 2026",
       "description": "Brics members agree they need a new global order but it's harder to answer what should replace it and how to get there."
     },
     {
-      "title": "Russians seek answers over hundreds missing after Ukraine's 2024 incursion",
-      "url": "https://www.bbc.co.uk/news/articles/c62ene9kr71o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 12, 2026",
-      "description": "Officials say more than 300 Russians remain missing after the 2024 Kursk offensive, but no-one really knows the true figure."
-    },
-    {
       "title": "Only Roland Garros towel left, says Ukraine tennis player after Russian strike hits flat",
       "url": "https://www.bbc.co.uk/news/articles/c4gr33g3evlo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 12, 2026",
       "description": "Dayana Yastremska says her flat took a \"direct hit\" by a Russian missile in Odesa, and all that left was her Roland Garros towel."
+    },
+    {
+      "title": "Russians seek answers over hundreds missing after Ukraine's 2024 incursion",
+      "url": "https://www.bbc.co.uk/news/articles/c62ene9kr71o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 12, 2026",
+      "description": "Officials say more than 300 Russians remain missing after the 2024 Kursk offensive, but no-one really knows the true figure."
     },
     {
       "title": "Oil, gas and borrowing costs surge as fears over Middle East escalate",
@@ -3138,6 +3144,24 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Ukrainian drone evades Russian helicopter fire to strike oil tanker",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/09-12-ukraine-drone-russian-tanker-sv?traffic_source=rss",
+      "date": "September 13, 2026",
+      "description": "Ukraine has released footage showing a drone evading fire from a Russian helicopter before striking a Russian oil tanker"
+    },
+    {
+      "title": "World leaders gather in New Delhi for final day of BRICS summit",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/world-leaders-gather-in-new-delhi-for-final-day-of-brics-summit?traffic_source=rss",
+      "date": "September 13, 2026",
+      "description": "BRICS leaders gathered in New Delhi for the final day of the summit amid divisions over the wars in Iran and Ukraine."
+    },
+    {
+      "title": "As Chavez and Maduro images disappear, is Venezuela entering a new chapter?",
+      "url": "https://www.aljazeera.com/features/longform/2026/9/13/as-chavez-and-maduro-images-disappear-is-venezuela-entering-a-new-chapter?traffic_source=rss",
+      "date": "September 13, 2026",
+      "description": "As part of Delcy Rodriguez's 'Venezuela reborn' campaign, murals of leaders like Hugo Chavez are being removed."
+    },
     {
       "title": "Iran-GCC summit: What’s behind the meeting, why is Bahrain not attending?",
       "url": "https://www.aljazeera.com/news/2026/9/13/iran-gcc-summit-whats-behind-the-meeting-why-is-bahrain-not-attending?traffic_source=rss",
@@ -3264,10 +3288,10 @@
   ],
   "regionsNews": [
     {
-      "title": "AI staff 'genuinely frightened' for humanity's future, ex-Anthropic researcher tells BBC",
-      "url": "https://www.bbc.co.uk/news/articles/c1kx0gyje9wo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Trump downplays AI risks after dire expert warnings and calls to slow development down",
+      "url": "https://www.bbc.co.uk/news/articles/c7v48vp31mdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 13, 2026",
-      "description": "It comes as the AI firm's boss has called for the technology's development to be slowed down, citing \"serious\" risks."
+      "description": "The US President said \"negative forces\" were airing concerns about \"things that won't happen\"."
     },
     {
       "title": "Six dead, 130 missing after Indonesian ferry capsizes in Java Sea",
@@ -3282,10 +3306,10 @@
       "description": "Human rights groups in Turkey have accused the government of using a family- values campaign to target the LGBTQ+ community."
     },
     {
-      "title": "They lost their jobs after posting about Charlie Kirk, but some have no regrets",
-      "url": "https://www.bbc.co.uk/news/articles/cj06jgl9qzlo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Trump doubles down on united Ireland comments on day two of visit",
+      "url": "https://www.bbc.co.uk/news/articles/cx2z79n0eeno?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 13, 2026",
-      "description": "Some people fired in the wake of Kirk's assassination have won big settlements from employers, others have had to start over from scratch."
+      "description": "The US president was speaking at the Irish Open on Sunday and said \"many people agree\" with his comments."
     },
     {
       "title": "Legendary Canadian boxer George Chuvalo dies aged 89",
@@ -3294,40 +3318,16 @@
       "description": "The heavyweight champion took on the likes of Muhammad Ali and Joe Frazier, and was known for never once getting knocked out or knocked down."
     },
     {
-      "title": "Trump's comments on a united Ireland may have targeted audience across the Atlantic",
-      "url": "https://www.bbc.co.uk/news/articles/cwyzppd1d5lo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 12, 2026",
-      "description": "Nobody could have predicted that today's main global headline would be Trump's desire to see a unified Ireland."
+      "title": "US congressman swims to safety after his plane is forced to land on a lake",
+      "url": "https://www.bbc.co.uk/news/articles/c5y5d87x72zo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 13, 2026",
+      "description": "The small plane carrying Rep Tom Tiffany had a mechanical issue that forced the pilot to make an emergency landing on a Wisconsin lake."
     },
     {
-      "title": "Afghan woman deported from US in first use of 'alien terrorist' court",
-      "url": "https://www.bbc.co.uk/news/articles/c3eqpd9zgl9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 12, 2026",
-      "description": "The legal US resident was never charged with a crime, but was deported due to her family links to terrorism."
-    },
-    {
-      "title": "Fire at nursing home in Chile kills 16 residents",
-      "url": "https://www.bbc.co.uk/news/articles/cy4zpp20w77o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 12, 2026",
-      "description": "Ten people were evacuated from the home in Araucanía region in central Chile."
-    },
-    {
-      "title": "Anthropic boss Dario Amodei calls for AI development to slow down",
-      "url": "https://www.bbc.co.uk/news/articles/c14dpgm0rg4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 12, 2026",
-      "description": "The call comes amid growing concerns that AI models may become able to inflict serious damage worldwide."
-    },
-    {
-      "title": "Death toll from Philippines ferry fire rises to 76, with more still missing",
-      "url": "https://www.bbc.co.uk/news/articles/cwyz755yeg9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 12, 2026",
-      "description": "Access to the burnt-out boat has been slowed by toxic fumes and lingering heat, the country's coast guard says."
-    },
-    {
-      "title": "Uganda's King Oyo buried amid calls for unity over his successor",
-      "url": "https://www.bbc.co.uk/news/articles/c0lr7k4k4zyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 12, 2026",
-      "description": "A TV news presenter has been named as the traditional kingdom of Tooro's new monarch but the late king's family claim he chose an heir."
+      "title": "They lost their jobs after posting about Charlie Kirk, but some have no regrets",
+      "url": "https://www.bbc.co.uk/news/articles/cj06jgl9qzlo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 13, 2026",
+      "description": "Some people fired in the wake of Kirk's assassination have won big settlements from employers, others have had to start over from scratch."
     },
     {
       "title": "Dramatic insider warnings over AI fall flat with some in Silicon Valley",
@@ -3336,10 +3336,10 @@
       "description": "A recent spate of stark warnings about the dangers of AI has been met with scepticism by executives and investors."
     },
     {
-      "title": "Critics celebrate Céline Dion's 'high-stakes' comeback show in Paris",
-      "url": "https://www.bbc.co.uk/news/articles/cj3dzy3n84no?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 13, 2026",
-      "description": "The iconic Canadian singer kicked off her long-awaited comeback show in Paris on Saturday, after a six-year hiatus due to health issues."
+      "title": "Afghan woman deported from US in first use of 'alien terrorist' court",
+      "url": "https://www.bbc.co.uk/news/articles/c3eqpd9zgl9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 12, 2026",
+      "description": "The legal US resident was never charged with a crime, but was deported due to her family links to terrorism."
     },
     {
       "title": "Best friends for decades - until a DNA test revealed they were sisters",
@@ -3348,10 +3348,16 @@
       "description": "Meena Geltink and Minal Tijssen were adopted from orphanages in Mumbai in the 1980s and grew up in the Netherlands."
     },
     {
-      "title": "Five minutes to steal a Renoir: Why museum thefts are becoming bolder across Europe",
-      "url": "https://www.bbc.co.uk/news/articles/c804dvky833o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Critics celebrate Céline Dion's 'high-stakes' comeback show in Paris",
+      "url": "https://www.bbc.co.uk/news/articles/cj3dzy3n84no?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 13, 2026",
+      "description": "The iconic Canadian singer kicked off her long-awaited comeback show in Paris on Saturday, after a six-year hiatus due to health issues."
+    },
+    {
+      "title": "Trump's comments on a united Ireland may have targeted audience across the Atlantic",
+      "url": "https://www.bbc.co.uk/news/articles/cwyzppd1d5lo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 12, 2026",
-      "description": "Art crime investigators and security experts say burglaries from galleries across Europe are becoming more brazen."
+      "description": "Nobody could have predicted that today's main global headline would be Trump's desire to see a unified Ireland."
     },
     {
       "title": "Céline Dion fans prepare for comeback concert in Paris",
@@ -3714,13 +3720,43 @@
       "description": "The US may be the bigger trading partner, but Canada shouldn't be counted out quite yet in the escalating trade fight."
     },
     {
+      "title": "Kosovo approves new government after months of political deadlock",
+      "url": "https://www.aljazeera.com/news/2026/9/13/kosovo-approves-new-government-after-months-of-political-deadlock?traffic_source=rss",
+      "date": "September 13, 2026",
+      "description": "A newly approved government offers Kosovo only brief respite before a contentious presidential vote."
+    },
+    {
+      "title": "F1 leader Antonelli wins Spanish Grand Prix as unlucky Norris misses out",
+      "url": "https://www.aljazeera.com/sports/2026/9/13/f1-leader-antonelli-wins-spanish-grand-prix-as-unlucky-norris-misses-out?traffic_source=rss",
+      "date": "September 13, 2026",
+      "description": "The 20-year-old Italian has extended his championship lead to 81 points after 14 rounds."
+    },
+    {
+      "title": "Six killed, 130 missing after Indonesian passenger ship capsizes",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/six-killed-130-missing-after-indonesian-passenger-ship-capsizes?traffic_source=rss",
+      "date": "September 13, 2026",
+      "description": "Six people have been killed and 130 remain missing after a passenger ship capsized in the Java Sea off Indonesia."
+    },
+    {
+      "title": "What are the five pros and cons of artificial intelligence?",
+      "url": "https://www.aljazeera.com/news/2026/9/13/what-are-the-five-pros-and-cons-of-artificial-intelligence?traffic_source=rss",
+      "date": "September 13, 2026",
+      "description": "AI creates new opportunities in programming and automation, but experts warn of risks to early-career workers."
+    },
+    {
+      "title": "Red Sea nations watch as Houthis seize Bab al-Mandeb strait",
+      "url": "https://www.aljazeera.com/economy/2026/9/13/red-sea-nations-watch-as-houthis-seize-bab-al-mandeb-strait?traffic_source=rss",
+      "date": "September 13, 2026",
+      "description": "Houthi control of Bab al-Mandeb chokes Suez Canal revenues, triggers refugee flows, and exposes regional security gaps."
+    },
+    {
       "title": "More than 2,000 Yemenis flee to Djibouti amid Houthi advances",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/more-than-2000-yemenis-flee-to-djibouti-amid-houthi-advances?traffic_source=rss",
       "date": "September 13, 2026",
       "description": "Escalating fighting along Yemen’s western coast has driven more than 2,000 Yemenis across the Red Sea to Djibouti."
     },
     {
-      "title": "US Open men’s singles final live: Alexander Zverev vs Ben Shelton",
+      "title": "US Open men’s singles final live: Zverev vs Shelton",
       "url": "https://www.aljazeera.com/sports/liveblog/2026/9/13/us-open-mens-singles-final-live-alexander-zverev-vs-ben-shelton?traffic_source=rss",
       "date": "September 13, 2026",
       "description": "Follow our live build-up, predictions, score, match photos and text commentary stream of the men's final in New York."
@@ -3753,7 +3789,7 @@
       "title": "India vs Sri Lanka live: Asia Cup final",
       "url": "https://www.aljazeera.com/sports/liveblog/2026/9/13/india-vs-sri-lanka-live-asia-cup-final?traffic_source=rss",
       "date": "September 13, 2026",
-      "description": "Follow our live team news, predictions, scores, photos and text commentary stream from the final in Dubai."
+      "description": "Follow our live team score, photos and text commentary stream from the final in Dubai as Sri Lanka chase 184 to win."
     },
     {
       "title": "A dignified life is a ‘distant dream’ for many Iranian families amid US war",
@@ -3784,54 +3820,6 @@
       "url": "https://www.aljazeera.com/news/2026/9/13/a-kingdom-within-a-republic-inside-ugandas-buganda?traffic_source=rss",
       "date": "September 13, 2026",
       "description": "The kingdom’s traditions and institutions have endured through colonial rule, independence and decades of upheaval."
-    },
-    {
-      "title": "Niger military government reshuffles army command weeks after deadly mutiny",
-      "url": "https://www.aljazeera.com/news/2026/9/13/niger-military-government-reshuffles-army-command-weeks-after-deadly-mutiny?traffic_source=rss",
-      "date": "September 13, 2026",
-      "description": "New chief of staff appointed after failed mutiny tested military rulers' grip on power."
-    },
-    {
-      "title": "Voting under way in Sweden election that could see far right in government",
-      "url": "https://www.aljazeera.com/news/2026/9/13/voting-under-way-in-sweden-election-that-could-see-far-right-enter-govt?traffic_source=rss",
-      "date": "September 13, 2026",
-      "description": "The far-right Sweden Democrats party could enter government for the first time if right-wing bloc wins."
-    },
-    {
-      "title": "Mosque and homes damaged in Saudi Arabia after alleged Houthi strike",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/mosque-and-homes-damaged-in-saudi-arabia-after-alleged-houthi-strike?traffic_source=rss",
-      "date": "September 13, 2026",
-      "description": "Mosque and homes damaged in Saudi Arabia after alleged Houthi strike"
-    },
-    {
-      "title": "Olympic flame arrives in Senegal for first ever Olympic event in Africa",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/olympic-flame-arrives-in-senegal-for-first-ever-olympic-event-in-africa?traffic_source=rss",
-      "date": "September 13, 2026",
-      "description": "Olympic flame arrives in Senegal for first ever Olympic event in Africa"
-    },
-    {
-      "title": "Mystery son and disputed heir: Uganda’s king buried amid succession dispute",
-      "url": "https://www.aljazeera.com/news/2026/9/13/mystery-son-and-disputed-heir-ugandas-king-buried-amid-succession-dispute?traffic_source=rss",
-      "date": "September 13, 2026",
-      "description": "The 34-year-old monarch’s death has opened a rare challenge to the traditional process of choosing Tooro’s next king."
-    },
-    {
-      "title": "Rescuers search for about 130 missing people after Indonesia ferry capsizes",
-      "url": "https://www.aljazeera.com/news/2026/9/13/one-dead-102-rescued-after-indonesian-ferry-goes-missing-in-java-sea?traffic_source=rss",
-      "date": "September 13, 2026",
-      "description": "Search and rescue ongoing after Virgo Transport 8, with 243 people on board, lost contact with its operator."
-    },
-    {
-      "title": "About 1,400 Yemenis flee to Djibouti within 24 hours",
-      "url": "https://www.aljazeera.com/news/2026/9/13/1400-yemenis-flee-to-djibouti-within-24-hours?traffic_source=rss",
-      "date": "September 13, 2026",
-      "description": "Refugees from Yemen arrive in Obock, Djibouti, as Houthis tighten their grip on the Bab al-Mandeb strait."
-    },
-    {
-      "title": "Wildfire rages on Croatia’s Dalmatian Coast island of Brac",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/13/wildfire-rages-on-croatias-dalmatian-coast-island-of-brac?traffic_source=rss",
-      "date": "September 13, 2026",
-      "description": "Croatian authorities have issued an emergency alert as a wildfire rages on Brac Island, off the Dalmatian coast."
     }
   ]
 }
