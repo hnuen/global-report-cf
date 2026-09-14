@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T21:08:27.832Z",
+  "updatedAt": "2026-09-14T22:08:25.274Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260914",
@@ -3077,7 +3077,20 @@
       "description": "These new measures aim at further increasing the pressure on Russia and Belarus and supporting EU's goal of achieving a just and lasting peace for Ukraine."
     }
   ],
-  "unNotices": [],
+  "unNotices": [
+    {
+      "title": "Security Council Unanimously Adopts Resolution 2828 (2026), Renewing Sudan Sanctions for One Month, Keeping Door Open for Continued Talks",
+      "url": "https://press.un.org/en/2026/sc16450.doc.htm",
+      "date": "September 11, 2026",
+      "description": "The Security Council today extended for one month the 1591 Sudan sanctions regime, including targeted sanctions and an arms embargo, in order to allow more time for negotiations on whether to expand the measures."
+    },
+    {
+      "title": "Security Council, 10220th Meeting (AM) Sudan, South Sudan",
+      "url": "https://press.un.org/en/blog/sc16450",
+      "date": "September 11, 2026",
+      "description": "At 10 a.m., the Security Council will to vote on a draft resolution renewing the 1591 Sudan sanctions regime - which includes asset freezes and travel bans, along with an arms embargo - for one month, until 9 October 2026. The draft was authored by the United States, the penholder."
+    }
+  ],
   "bbcNews": [
     {
       "title": "Russia hits Ukrainian train shortly after Boris Johnson and top European officials leave station",
@@ -3112,6 +3125,24 @@
   ],
   "ajNews": [
     {
+      "title": "Why talks in Oman between Iran and Gulf Arab states were postponed",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/14/why-talks-in-oman-between-iran-and-gulf-arab-states-were-postponed?traffic_source=rss",
+      "date": "September 14, 2026",
+      "description": "Hopes for a breakthrough on the Iran war have taken a hit after talks in Oman between Iran-Gulf nations were postponed."
+    },
+    {
+      "title": "US blocks Iran nuclear chief from attending key Vienna conference",
+      "url": "https://www.aljazeera.com/news/2026/9/14/us-blocks-iran-nuclear-chief-from-attending-key-vienna-conference?traffic_source=rss",
+      "date": "September 14, 2026",
+      "description": "Iran accuses US of pressuring Austria to revoke visa for Mohammad Eslami, calling it a violation of member state rights."
+    },
+    {
+      "title": "What could stop the Houthis’ advance across Yemen?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/9/14/what-could-stop-the-houthis-advance-across-yemen?traffic_source=rss",
+      "date": "September 14, 2026",
+      "description": "Iran-backed group seized areas on Red Sea coastline."
+    },
+    {
       "title": "Austria denies entry to Iranian official after UN ruling",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/14/austria-denies-entry-to-iranian-official-after-un-ruling?traffic_source=rss",
       "date": "September 14, 2026",
@@ -3124,34 +3155,10 @@
       "description": "Finland becomes 10th European state to sign up to military cooperation and nuclear deterrence initiative."
     },
     {
-      "title": "NATO pledges increased Ukraine support as Russia strikes near border",
+      "title": "NATO pledges more Ukraine support after Russia strikes near Poland",
       "url": "https://www.aljazeera.com/news/2026/9/14/nato-pledges-increased-support-for-ukraine-after-russia-strikes-warsaw-bound-train?traffic_source=rss",
       "date": "September 14, 2026",
       "description": "NATO chief Rutte insists Western allies will not be intimidated by Russian attacks meant to 'scare' them off."
-    },
-    {
-      "title": "EU states to raise game as Arctic becomes strategic geopolitical frontier",
-      "url": "https://www.aljazeera.com/news/2026/9/14/eu-states-to-raise-game-as-arctic-becomes-strategic-geopolitical-frontier?traffic_source=rss",
-      "date": "September 14, 2026",
-      "description": "Europe racing Russia, China and US to seize security and economic opportunities."
-    },
-    {
-      "title": "Syria fuel price hikes test public patience with economic recovery",
-      "url": "https://www.aljazeera.com/features/2026/9/14/syria-fuel-price-hikes-test-public-patience-with-economic-recovery?traffic_source=rss",
-      "date": "September 14, 2026",
-      "description": "Anger rises in Syrian cities as fuel price hikes burden struggling households amid an ongoing cost-of-living crisis."
-    },
-    {
-      "title": "Why Middle East tensions are pushing oil prices above $100",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/14/why-middle-east-tensions-are-pushing-oil-prices-above-100?traffic_source=rss",
-      "date": "September 14, 2026",
-      "description": "Brent crude has risen above $100 a barrel as war in Iran disrupts shipping through the Strait of Hormuz."
-    },
-    {
-      "title": "North Korea thrash Bangladesh 10-0 in Asian Games women’s football",
-      "url": "https://www.aljazeera.com/sports/2026/9/14/north-korea-thrash-bangladesh-10-0-in-asian-games-womens-football?traffic_source=rss",
-      "date": "September 14, 2026",
-      "description": "North Korea, enjoying support in the stands, were up 7-0 by half-time and are favourites for the gold."
     }
   ],
   "occNews": [
@@ -3273,10 +3280,10 @@
       "description": "Culiacán has seen violence skyrocket since a feud broke out between two rival factions of the Sinaloa cartel."
     },
     {
-      "title": "Body of missing runner found in South Africa",
-      "url": "https://www.bbc.co.uk/news/articles/cxyvzggzd5jgo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Legendary costume designer Bob Mackie dies aged 87",
+      "url": "https://www.bbc.co.uk/news/articles/cmpq04wx8l4eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 14, 2026",
-      "description": "A nationwide appeal was launched after Elizabeth Moselakgomo went missing last week. Four other women's bodies have been found nearby."
+      "description": "The \"Sultan of Sequins\" created iconic and dazzling costumes for stars including Cher, Tina Turner and Elton John."
     },
     {
       "title": "Malaysian boy acquitted for murder of schoolgirl on grounds of insanity",
@@ -3295,6 +3302,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cxly50gzldz9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 14, 2026",
       "description": "Nigerian billionaire Aliko Dangote says he wants ordinary people to share in the success of his oil refinery."
+    },
+    {
+      "title": "Body of missing runner found in South Africa",
+      "url": "https://www.bbc.co.uk/news/articles/cxyvzggzd5jgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 14, 2026",
+      "description": "A nationwide appeal was launched after Elizabeth Moselakgomo went missing last week. Four other women's bodies have been found nearby."
     },
     {
       "title": "Zambians warned not to eat dead wildlife after anthrax kills dozens of animals",
@@ -3753,6 +3766,48 @@
       "description": "The US may be the bigger trading partner, but Canada shouldn't be counted out quite yet in the escalating trade fight."
     },
     {
+      "title": "Landowners in Texas ask court to stop Trump border wall",
+      "url": "https://www.aljazeera.com/news/2026/9/14/landowners-in-texas-ask-court-to-stop-trump-border-wall?traffic_source=rss",
+      "date": "September 14, 2026",
+      "description": "Indigenous groups, environmentalists and locals oppose the wall; Big Bend sees about 1 percent of border arrests."
+    },
+    {
+      "title": "Israeli attack targets Gaza displacement camp",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/14/israeli-attack-targets-gaza-displacement-camp?traffic_source=rss",
+      "date": "September 14, 2026",
+      "description": "Israeli attack targets Gaza displacement camp"
+    },
+    {
+      "title": "US repeals rules limiting greenhouse gas emissions by power plants",
+      "url": "https://www.aljazeera.com/news/2026/9/14/us-repeals-rules-limiting-greenhouse-gas-emissions-by-power-plants?traffic_source=rss",
+      "date": "September 14, 2026",
+      "description": "The Trump administration says it could save power plants more than $300bn and 'unleash' American energy."
+    },
+    {
+      "title": "Macklemore cut from Ed Sheeran tour for pro-Palestine stance",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/14/macklemore-cut-from-ed-sheeran-tour-for-pro-palestine-stance?traffic_source=rss",
+      "date": "September 14, 2026",
+      "description": "Macklemore says he was dropped from Ed Sheeran’s US tour over his pro-Palestinian stance."
+    },
+    {
+      "title": "‘Columbia did not care’: Mahmoud Khalil files discrimination lawsuit",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/14/columbia-did-not-care-mahmoud-khalil-files-discrimination-lawsuit?traffic_source=rss",
+      "date": "September 14, 2026",
+      "description": "Activist and former Columbia University student Mahmoud Khalil is filing a lawsuit against the university and a dean."
+    },
+    {
+      "title": "Israel probing Naza film on Gaza for treason, inciting anti-Semitism",
+      "url": "https://www.aljazeera.com/news/2026/9/14/israel-probing-naza-film-on-gaza-for-inciting-antisemitism?traffic_source=rss",
+      "date": "September 14, 2026",
+      "description": "Film alleges mass ⁠civilian deaths routinely built into military decisions amid Israel's genocidal war on Gaza."
+    },
+    {
+      "title": "Manchester derby VAR officials stood down from weekend Premier League games",
+      "url": "https://www.aljazeera.com/sports/2026/9/14/manchester-derby-var-official-stood-down-from-weekend-premier-league-games?traffic_source=rss",
+      "date": "September 14, 2026",
+      "description": "The chief refereeing officer stands down two VAR officials involved in Man City's win at United from upcoming EPL games."
+    },
+    {
       "title": "Inside the Houthis’ expanding war economy in Yemen",
       "url": "https://www.aljazeera.com/economy/2026/9/14/inside-the-houthis-expanding-war-economy-in-yemen?traffic_source=rss",
       "date": "September 14, 2026",
@@ -3823,42 +3878,6 @@
       "url": "https://www.aljazeera.com/economy/2026/9/14/carney-pitches-canada-to-global-investors-amid-us-trade-war?traffic_source=rss",
       "date": "September 14, 2026",
       "description": "Hundreds of investors overseeing nearly $120 trillion in assets will gather in Toronto for the Canada Investment Summit."
-    },
-    {
-      "title": "Private schools become a costly choice for struggling parents in Gaza",
-      "url": "https://www.aljazeera.com/features/2026/9/14/private-schools-become-a-costly-choice-for-struggling-in-gaza?traffic_source=rss",
-      "date": "September 14, 2026",
-      "description": "Gaza families face difficult choices: send children to schools in tents with few resources to pay for private school."
-    },
-    {
-      "title": "JD Vance insists US is ‘on top of’ Houthi advance in Red Sea",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/14/jd-vance-insists-us-is-on-top-of-houthi-advance-in-red-sea?traffic_source=rss",
-      "date": "September 14, 2026",
-      "description": "US Vice President JD Vance says the Trump administration is “very much on top of” the Houthi advance in Yemen."
-    },
-    {
-      "title": "How Israel systematically dismantles Palestinian life in occupied West Bank",
-      "url": "https://www.aljazeera.com/news/2026/9/14/how-israel-systematically-dismantles-palestinian-life-in-occupied-west-bank?traffic_source=rss",
-      "date": "September 14, 2026",
-      "description": "B'Tselem says settlement expansion, displacement and curbs are not isolated abuses, but decades-old, coordinated system."
-    },
-    {
-      "title": "Man dies after French police officer throws him on the ground",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/14/man-dies-after-french-police-officer-throws-him-on-the-ground?traffic_source=rss",
-      "date": "September 14, 2026",
-      "description": "Video has emerged of a French police officer violently throwing a 29-year-old homeless man to the ground."
-    },
-    {
-      "title": "Leaders of Scotland, Wales, Northern Ireland unite for self-determination",
-      "url": "https://www.aljazeera.com/news/2026/9/14/leaders-of-scotland-wales-northern-ireland-unite-for-self-determination?traffic_source=rss",
-      "date": "September 14, 2026",
-      "description": "Leaders of nationalist parties in Scotland, Wales and Northern Ireland say London has 'no right' to block democracy."
-    },
-    {
-      "title": "Pakistan fined, docked 11 points in Edgbaston Test for slow over rate",
-      "url": "https://www.aljazeera.com/sports/2026/9/14/pakistan-fined-docked-11-points-in-edgbaston-test-for-slow-over-rate?traffic_source=rss",
-      "date": "September 14, 2026",
-      "description": "The visitors were 11 overs short of their target as England won the match by eight wickets to sweep the series 3-0."
     }
   ]
 }
