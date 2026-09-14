@@ -419,7 +419,9 @@ test("navigation copy and scraped sentence fragments never alert", () => {
 
 test("website news requires a specific direct article URL", () => {
   assert.equal(hasDirectArticleUrl("https://news.google.com/rss/search?q=OFAC"), false);
-  assert.equal(hasDirectArticleUrl("https://www.federalreserve.gov/supervisionreg/enforcement-actions-about.htm"), false);\n  assert.equal(hasDirectArticleUrl("https://ofac.treasury.gov/civil-penalties-and-enforcement-information"), false);\n  assert.equal(hasDirectArticleUrl("https://ofac.treasury.gov/media/936911/download?inline="), true);
+  assert.equal(hasDirectArticleUrl("https://www.federalreserve.gov/supervisionreg/enforcement-actions-about.htm"), false);
+  assert.equal(hasDirectArticleUrl("https://ofac.treasury.gov/civil-penalties-and-enforcement-information"), false);
+  assert.equal(hasDirectArticleUrl("https://ofac.treasury.gov/media/936911/download?inline="), true);
   assert.equal(hasDirectArticleUrl("https://home.treasury.gov/news/press-releases/sb0598"), true);
   assert.equal(hasDirectArticleUrl("https://news.google.com/articles/example"), false);
   assert.equal(isDisplayableNewsArticle({

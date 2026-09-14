@@ -49,7 +49,8 @@ export function hasUsableArticleText(article: { headline?: string; body?: string
 const GENERIC_NEWS_PATHS = new Set([
   "home.treasury.gov/news",
   "home.treasury.gov/news/press-releases",
-  "ofac.treasury.gov/recent-actions",\n  "ofac.treasury.gov/civil-penalties-and-enforcement-information",
+  "ofac.treasury.gov/recent-actions",
+  "ofac.treasury.gov/civil-penalties-and-enforcement-information",
   "fincen.gov/news",
   "fincen.gov/news/news-releases",
   "fincen.gov/news/press-releases",
