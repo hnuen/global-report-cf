@@ -1,5 +1,18 @@
 import { federalRegisterDocumentNumber, isFederalRegisterUrl } from "./federal-register-links.ts";
 
+/** Bound extracted feed text without ever cutting an article URL mid-record. */
+export function joinCompleteSourceItems(items: string[], maxChars = 8000, maxItems = 25): string {
+  const complete: string[] = [];
+  let length = 0;
+  for (const item of items.slice(0, maxItems)) {
+    const nextLength = length + (complete.length ? 1 : 0) + item.length;
+    if (nextLength > maxChars) break;
+    complete.push(item);
+    length = nextLength;
+  }
+  return complete.join("\n");
+}
+
 /** Repair common UTF-8-as-Windows-1252 artifacts without damaging valid Unicode. */
 export function repairMojibake(value: string): string {
   if (!value) return value;
@@ -74,6 +87,8 @@ export function hasDirectArticleUrl(url?: string): boolean {
     // Google News is an aggregator, not the original publisher. Even its
     // item redirect URLs are not accepted as direct article links.
     if (host === "news.google.com") return false;
+    // Never accept a one-segment publisher stub produced by a truncated feed record.
+    if (host === "aljazeera.com" && path.split("/").filter(Boolean).length < 3) return false;
     if (/\/(?:rss|feed|feeds)(?:\/|$)/.test(path) || path.endsWith(".xml")) return false;
     if (/\/(?:search)(?:\/|$)/.test(path)) return false;
     if (isFederalRegisterUrl(url) && !federalRegisterDocumentNumber(url)) return false;

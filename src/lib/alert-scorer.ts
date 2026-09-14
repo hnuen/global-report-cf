@@ -33,7 +33,7 @@
  *                           multi-day backlog of alerts at once instead of
  *                           same-day news only.
  */
-import { hasUsableArticleText, isLikelyHeadlineFragment } from "./text-quality.ts";
+import { hasDirectArticleUrl, hasUsableArticleText, isLikelyHeadlineFragment } from "./text-quality.ts";
 
 import type { Article } from "./types";
 
@@ -439,7 +439,7 @@ export function scoreArticle(article: Article, settings?: AlertScoringSettings):
   //      own Treasury fetch can occasionally emit the generic listing URL;
   //      block it here and wait for the direct-link version (the GitHub-Actions
   //      Treasury scraper resolves the per-release .../sbNNNN URL).
-  const hasDirectLink = !isGenericListingUrl(article.sourceUrl);
+  const hasDirectLink = hasDirectArticleUrl(article.sourceUrl);
   if (!hasDirectLink) {
     reasons.push(`generic listing/index URL Ã¢â‚¬â€ not a direct article link, never alerts (${article.sourceUrl})`);
   }

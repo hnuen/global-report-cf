@@ -12,7 +12,7 @@ import { articleMatchesAlertTopic, alertSourceLabel, cleanAlertText } from "../s
 import { mergeMonitorArticles, selectMonitorArticles } from "../src/lib/monitor-articles.ts";
 import { articlesForSubscriber, sourceGroupForArticle, validateSourceGroups } from "../src/lib/alert-sources.ts";
 import { itemCheckpointKey, sourceCheckpointKey } from "../src/lib/source-item-checkpoints.ts";
-import { hasDirectArticleUrl, isDisplayableNewsArticle, isLikelyCorruptedText, isLikelyHeadlineFragment, repairMojibake } from "../src/lib/text-quality.ts";
+import { hasDirectArticleUrl, isDisplayableNewsArticle, isLikelyCorruptedText, isLikelyHeadlineFragment, joinCompleteSourceItems, repairMojibake } from "../src/lib/text-quality.ts";
 import { parseEnforcementActionsPage } from "../src/lib/fincen-fetcher.ts";
 import { FINCEN_PENALTIES } from "../src/lib/fincen-penalties.ts";
 import { buildBriefingFromSources } from "../src/lib/official-briefing.ts";
@@ -424,11 +424,20 @@ test("website news requires a specific direct article URL", () => {
   assert.equal(hasDirectArticleUrl("https://ofac.treasury.gov/media/936911/download?inline="), true);
   assert.equal(hasDirectArticleUrl("https://home.treasury.gov/news/press-releases/sb0598"), true);
   assert.equal(hasDirectArticleUrl("https://news.google.com/articles/example"), false);
+  assert.equal(hasDirectArticleUrl("https://www.aljazeera.com/v"), false);
+  assert.equal(hasDirectArticleUrl("https://www.aljazeera.com/news/2026/9/14/specific-story"), true);
   assert.equal(isDisplayableNewsArticle({
     headline: "An official website of the United States Government",
     body: ["navigation copy"],
     sourceUrl: "https://www.federalreserve.gov/supervisionreg/enforcement-actions-about.htm",
   }), false);
+});
+
+test("RSS source bounds preserve complete article records", () => {
+  const first = `• First ||| https://www.aljazeera.com/news/2026/9/14/first ||| DATE:2026-09-14`;
+  const second = `• Second ||| https://www.aljazeera.com/video/2026/9/14/second ||| DATE:2026-09-14`;
+  assert.equal(joinCompleteSourceItems([first, second], first.length + 2), first);
+  assert.equal(joinCompleteSourceItems([first, second], 1000), `${first}\n${second}`);
 });
 
 test("FinCEN endpoint preserves static records when extra cache is unavailable", () => {

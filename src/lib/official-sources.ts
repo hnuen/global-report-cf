@@ -18,7 +18,7 @@ import { loadETagStore, flushETagStore, getConditionalHeaders, recordETagRespons
 import { normalizeTreasuryPressReleaseUrl, treasuryPressReleasePattern } from "./treasury-links";
 import { itemCheckpointKey, loadSourceItemCheckpoints, sourceCheckpointKey } from "./source-item-checkpoints";
 import { extractPublisherUrl, loadPublisherLinkCache, publisherDomainsForSource, resolveMediaSourceLinks, savePublisherLinkCache } from "./news-link-resolver";
-import { isLikelyCorruptedText } from "./text-quality";
+import { isLikelyCorruptedText, joinCompleteSourceItems } from "./text-quality";
 
 export interface OfficialSource {
   name: string;
@@ -167,7 +167,7 @@ function stripHTML(html: string): string {
         items.push(`â€¢ ${title} ||| ${link} ||| DATE:${pubDate}${descPart}`);
       }
     }
-    return items.slice(0, 25).join("\n").slice(0, 8000);
+    return joinCompleteSourceItems(items);
   }
 
   // HTML pages â€” extract headings and meaningful text
