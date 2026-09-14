@@ -8,7 +8,8 @@ export function federalRegisterDocumentNumber(value?: string): string | null {
     const path = decodeURIComponent(url.pathname);
     const match = path.match(/\/documents\/(?:full_text\/html\/)?\d{4}\/\d{2}\/\d{2}\/([A-Za-z0-9-]+)(?:\.html|\/|$)/i)
       ?? path.match(/\/d\/([A-Za-z0-9-]+)(?:\/|$)/i);
-    return match?.[1] ?? null;
+    const documentNumber = match?.[1] ?? "";
+    return /^(?:[A-Z]\\d-)?\\d{4}-\\d{4,6}$/i.test(documentNumber) ? documentNumber : null;
   } catch { return null; }
 }
 

@@ -424,6 +424,8 @@ test("website news requires a specific direct article URL", () => {
   assert.equal(hasDirectArticleUrl("https://ofac.treasury.gov/media/936911/download?inline="), true);
   assert.equal(hasDirectArticleUrl("https://home.treasury.gov/news/press-releases/sb0598"), true);
   assert.equal(hasDirectArticleUrl("https://news.google.com/articles/example"), false);
+  assert.equal(hasDirectArticleUrl("https://www.federalregister.gov/documents/2026/08/24/2026-XXXXX/fabricated-rule"), false);
+  assert.equal(hasDirectArticleUrl("https://www.federalregister.gov/documents/2026/08/28/C1-2026-16628/correction"), true);
   assert.equal(hasDirectArticleUrl("https://www.aljazeera.com/v"), false);
   assert.equal(hasDirectArticleUrl("https://www.aljazeera.com/news/2026/9/14/specific-story"), true);
   assert.equal(isDisplayableNewsArticle({
