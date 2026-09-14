@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T19:08:33.873Z",
+  "updatedAt": "2026-09-14T21:08:27.832Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260914",
@@ -3112,7 +3112,19 @@
   ],
   "ajNews": [
     {
-      "title": "NATO pledges increased Ukraine support as Russian strikes near border",
+      "title": "Austria denies entry to Iranian official after UN ruling",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/14/austria-denies-entry-to-iranian-official-after-un-ruling?traffic_source=rss",
+      "date": "September 14, 2026",
+      "description": "Iran accused Austria of reversing its approval of an Iranian delegation to the IAEA under external pressure."
+    },
+    {
+      "title": "Finland shelters under French nuclear umbrella amid Russian, US uncertainty",
+      "url": "https://www.aljazeera.com/news/2026/9/14/finland-shelters-under-french-nuclear-umbrella-amid-russian-us-uncertainty?traffic_source=rss",
+      "date": "September 14, 2026",
+      "description": "Finland becomes 10th European state to sign up to military cooperation and nuclear deterrence initiative."
+    },
+    {
+      "title": "NATO pledges increased Ukraine support as Russia strikes near border",
       "url": "https://www.aljazeera.com/news/2026/9/14/nato-pledges-increased-support-for-ukraine-after-russia-strikes-warsaw-bound-train?traffic_source=rss",
       "date": "September 14, 2026",
       "description": "NATO chief Rutte insists Western allies will not be intimidated by Russian attacks meant to 'scare' them off."
@@ -3140,24 +3152,6 @@
       "url": "https://www.aljazeera.com/sports/2026/9/14/north-korea-thrash-bangladesh-10-0-in-asian-games-womens-football?traffic_source=rss",
       "date": "September 14, 2026",
       "description": "North Korea, enjoying support in the stands, were up 7-0 by half-time and are favourites for the gold."
-    },
-    {
-      "title": "Fiscal pressure from Iran War clouds Gulf States’ US spending plans",
-      "url": "https://www.aljazeera.com/economy/2026/9/14/fiscal-pressure-from-iran-war-clouds-gulf-states-us-spending-plans?traffic_source=rss",
-      "date": "September 14, 2026",
-      "description": "Gulf nations may prioritise domestic investments over US commitments amid economic pressures, says new report."
-    },
-    {
-      "title": "Why is Trump warning Zelenskyy not to hit Russian diesel refineries?",
-      "url": "https://www.aljazeera.com/economy/2026/9/14/why-is-trump-warning-zelenskyy-not-to-hit-russian-diesel-refineries?traffic_source=rss",
-      "date": "September 14, 2026",
-      "description": "Trump blames Ukraine’s attacks for global diesel shortage, linking the crisis to Russia's war rather than US actions."
-    },
-    {
-      "title": "‘Attacks will be fully autonomous’: Russia, Ukraine race towards AI warfare",
-      "url": "https://www.aljazeera.com/news/2026/9/14/attacks-will-be-fully-autonomous-russia-ukraine-race-towards-ai-warfare?traffic_source=rss",
-      "date": "September 14, 2026",
-      "description": "Automated AI drones are just one component of an ultimate chain of destruction both sides are building."
     }
   ],
   "occNews": [
@@ -3423,6 +3417,12 @@
       "description": "The BBC asks people in Washington what they were doing on that day and how 11 September 2001 changed the country."
     },
     {
+      "title": "AI 'kill switch' may need to be mandatory, Anthropic co-founder says",
+      "url": "https://www.bbc.co.uk/news/articles/cqgk5e2j0gg8o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 14, 2026",
+      "description": "Jack Clark says \"most labs have different ways of being able to pull the plug\", but says this may need to be a requirement."
+    },
+    {
       "title": "Government set to nationalise troubled steel firm",
       "url": "https://www.bbc.co.uk/news/articles/cm9w47ngje9no?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 14, 2026",
@@ -3461,7 +3461,7 @@
     {
       "title": "Carney gambles on the world's biggest investors betting on Canada",
       "url": "https://www.bbc.co.uk/news/articles/c0m3neyyzm7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 13, 2026",
+      "date": "September 14, 2026",
       "description": "In the midst of a trade war with the US, the prime minister leveraged his connections in global finance to invite some of the world's biggest investors to Canada."
     },
     {
@@ -3753,6 +3753,60 @@
       "description": "The US may be the bigger trading partner, but Canada shouldn't be counted out quite yet in the escalating trade fight."
     },
     {
+      "title": "Inside the Houthis’ expanding war economy in Yemen",
+      "url": "https://www.aljazeera.com/economy/2026/9/14/inside-the-houthis-expanding-war-economy-in-yemen?traffic_source=rss",
+      "date": "September 14, 2026",
+      "description": "The Houthis have restructured Yemen's commercial sector, securing billions in revenue amid a humanitarian crisis."
+    },
+    {
+      "title": "Macklemore dropped from Ed Sheeran tour following Palestine advocacy",
+      "url": "https://www.aljazeera.com/news/2026/9/14/macklemore-dropped-from-ed-sheeran-tour-following-palestine-advocacy?traffic_source=rss",
+      "date": "September 14, 2026",
+      "description": "Gillette Stadium owner cites concerns over Macklemore's rhetoric as reason for barring him from performances."
+    },
+    {
+      "title": "Multiple vehicle road crash in South Africa kills 21",
+      "url": "https://www.aljazeera.com/news/2026/9/14/multiple-vehicle-road-crash-in-south-africa-kills-21?traffic_source=rss",
+      "date": "September 14, 2026",
+      "description": "Fatal traffic accidents are a recurring problem for South Africa."
+    },
+    {
+      "title": "Elon Musk’s X Corp and SpaceXAI drop antitrust lawsuit against Apple",
+      "url": "https://www.aljazeera.com/news/2026/9/14/elon-musks-x-corp-and-spacexai-drop-antitrust-lawsuit-against-apple?traffic_source=rss",
+      "date": "September 14, 2026",
+      "description": "The companies had accused Apple of favouring OpenAI’s ChatGPT over rival AI chatbots."
+    },
+    {
+      "title": "Sudan aid networks at risk of collapse, UN agencies warn",
+      "url": "https://www.aljazeera.com/news/2026/9/14/sudan-aid-networks-at-risk-of-collapse-un-agencies-warn?traffic_source=rss",
+      "date": "September 14, 2026",
+      "description": "Without immediate donations, shelter and aid relief supplies could be depleted by the end of the month, says IOM."
+    },
+    {
+      "title": "Funerals for children killed after fire spreads to school in DR Congo",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/14/funerals-for-children-killed-after-fire-spreads-to-school-in-dr-congo?traffic_source=rss",
+      "date": "September 14, 2026",
+      "description": "Memorial services were held for at least 28 children who were killed after a fire spread to their school in DR Congo."
+    },
+    {
+      "title": "What’s the VAR mistake controversy in Haaland’s Man City goal vs United?",
+      "url": "https://www.aljazeera.com/sports/2026/9/14/erling-haaland-goal-var-controversy-manchester-derby-referee?traffic_source=rss",
+      "date": "September 14, 2026",
+      "description": "Football players, fans, managers, and experts call for more accountability and less reliance on VAR for crucial calls."
+    },
+    {
+      "title": "Trump says calls for more control on AI are a ‘SICK conspiracy’",
+      "url": "https://www.aljazeera.com/news/2026/9/14/trump-says-calls-for-more-control-on-ai-are-a-sick-conspiracy?traffic_source=rss",
+      "date": "September 14, 2026",
+      "description": "US president says current oversight is adequate and regulations could allow China to win AI competition."
+    },
+    {
+      "title": "Djibouti humanitarian situation worsens as Yemenis seek refuge",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/14/djibouti-humanitarian-situation-worsens-as-yemenis-seek-refuge?traffic_source=rss",
+      "date": "September 14, 2026",
+      "description": "Djibouti humanitarian situation worsens as Yemenis seek refuge"
+    },
+    {
       "title": "Jerusalem Daily: A new report on the erosion of Palestinian life",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/14/jerusalem-daily-a-new-report-on-the-erosion-of-palestinian-life?traffic_source=rss",
       "date": "September 14, 2026",
@@ -3765,7 +3819,7 @@
       "description": "India to provide Nepal with 654 megawatts of electricity daily to meet urgent needs after devastating glacial floods."
     },
     {
-      "title": "Carney pitches Canada to global investors amid US trade war",
+      "title": "Mark Carney pitches Canada to global investors amid US trade war",
       "url": "https://www.aljazeera.com/economy/2026/9/14/carney-pitches-canada-to-global-investors-amid-us-trade-war?traffic_source=rss",
       "date": "September 14, 2026",
       "description": "Hundreds of investors overseeing nearly $120 trillion in assets will gather in Toronto for the Canada Investment Summit."
@@ -3805,54 +3859,6 @@
       "url": "https://www.aljazeera.com/sports/2026/9/14/pakistan-fined-docked-11-points-in-edgbaston-test-for-slow-over-rate?traffic_source=rss",
       "date": "September 14, 2026",
       "description": "The visitors were 11 overs short of their target as England won the match by eight wickets to sweep the series 3-0."
-    },
-    {
-      "title": "Eto’o faces allegations of embezzlement in Cameroon FA presidency role",
-      "url": "https://www.aljazeera.com/sports/2026/9/14/etoo-faces-allegations-of-embezzlement-in-cameroon-fa-presidency-role?traffic_source=rss",
-      "date": "September 14, 2026",
-      "description": "Ex-Chelsea and Barcelona striker Samuel Eto’o faces new allegations over Cameroon FA finances under his presidency."
-    },
-    {
-      "title": "Can a party be leftist and Zionist?",
-      "url": "https://www.aljazeera.com/opinions/2026/9/14/can-a-party-be-leftist-and-zionist?traffic_source=rss",
-      "date": "September 14, 2026",
-      "description": "No, it cannot. But the concept of leftist Zionism is still being pushed to cover up its racist, colonial nature."
-    },
-    {
-      "title": "Going to school under Israeli occupation",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/14/going-to-school-under-israeli-occupation?traffic_source=rss",
-      "date": "September 14, 2026",
-      "description": "In al-Mughayyir, a village north-east of Ramallah, going to school means passing soldiers just to get to class."
-    },
-    {
-      "title": "Burnham must establish an inquiry into Britain’s role in the Gaza genocide",
-      "url": "https://www.aljazeera.com/opinions/2026/9/14/burnham-must-establish-an-inquiry-into-britains-role-in-the-gaza-genocide?traffic_source=rss",
-      "date": "September 14, 2026",
-      "description": "Delaying scrutiny will not make questions about UK complicity in Gaza disappear."
-    },
-    {
-      "title": "China rejects AI ‘threat narratives’, urges global cooperation",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/14/china-rejects-ai-threat-narratives-urges-global-cooperation?traffic_source=rss",
-      "date": "September 14, 2026",
-      "description": "China called for international cooperation on artificial intelligence."
-    },
-    {
-      "title": "‘Silent Cold War’: Why calls to slow AI have sparked new US–China frontier",
-      "url": "https://www.aljazeera.com/news/2026/9/14/silent-cold-war-why-calls-to-slow-ai-have-sparked-new-us-china?traffic_source=rss",
-      "date": "September 14, 2026",
-      "description": "Anthropic CEO urges restricted China access to AI tech, sparking accusations of US technological dominance strategies."
-    },
-    {
-      "title": "How can the Islamic world challenge Western narratives about it?",
-      "url": "https://www.aljazeera.com/video/centre-stage/2026/9/14/how-can-the-islamic-world-challenge-western-narratives-about-it?traffic_source=rss",
-      "date": "September 14, 2026",
-      "description": "University of Cambridge visiting fellow and author Ahmed Paul Keeler on his life, the West, modernity and Islam"
-    },
-    {
-      "title": "Why Saudi Arabia’s East-West pipeline matters for global oil",
-      "url": "https://www.aljazeera.com/news/2026/9/14/why-saudi-arabias-east-west-pipeline-matters-for-global-oil?traffic_source=rss",
-      "date": "September 14, 2026",
-      "description": "The 1,200km (745-mile) pipeline has been temporarily closed, affecting up to 5 percent of global oil supply."
     }
   ]
 }
