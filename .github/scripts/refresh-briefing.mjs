@@ -1490,7 +1490,7 @@ Write one article per entry above. sourceUrl = the URL listed. Do NOT merge mult
 ══ OFAC CIVIL PENALTIES 2026 (live from ofac.treasury.gov/civil-penalties-and-enforcement-information) ══
 ${penaltiesContext}
 
-Write one penalties article per entry above (section: "penalties"). Include exact dollar amounts. sourceUrl = https://ofac.treasury.gov/civil-penalties-and-enforcement-information
+Write one penalties article per entry above (section: "penalties"). Include exact dollar amounts.\nsourceUrl MUST be the exact PDF URL printed for that entry. If an entry has no PDF URL, omit it.\nNever use the general civil-penalties-and-enforcement-information index as an article sourceUrl.
 
 For BIS: search Federal Register for Entity List additions this month.
 Search the web for the latest developments across all six domains. JSON only.`;
