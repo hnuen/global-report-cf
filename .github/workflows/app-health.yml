@@ -1,0 +1,40 @@
+name: App Health and Link Check
+
+on:
+  schedule:
+    - cron: "17 */6 * * 1-5"
+    - cron: "17 */12 * * 0,6"
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: read
+
+concurrency:
+  group: app-health-link-check
+  cancel-in-progress: true
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      APP_URL: ${{ secrets.APP_URL }}
+      LINK_CHECK_LIMIT: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check recent workflow failures
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          SINCE=$(date -u -d '13 hours ago' +%s)
+          FAILURES=$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs?status=failure&per_page=20" --jq "[.workflow_runs[] | select((.created_at | fromdateiso8601) >= $SINCE) | {name, created_at, html_url}] | length")
+          echo "Recent workflow failures: $FAILURES"
+          if [ "$FAILURES" -gt 0 ]; then
+            gh api "repos/${GITHUB_REPOSITORY}/actions/runs?status=failure&per_page=20" --jq ".workflow_runs[] | select((.created_at | fromdateiso8601) >= $SINCE) | [.name, .created_at, .html_url] | @tsv"
+          fi
+
+      - name: Validate deployed article links
+        run: node .github/scripts/check-app-health.mjs
+
