@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T17:07:46.464Z",
+  "updatedAt": "2026-09-16T19:07:54.814Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260916",
@@ -3088,12 +3088,6 @@
       "description": "The FBI says five men \"conspired to intimidate, threaten, or murder people on US soil and around the world\"."
     },
     {
-      "title": "Iran war has led to US munitions shortfalls, Pentagon inspector confirms",
-      "url": "https://www.bbc.co.uk/news/articles/c9gk58xgng0vo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 15, 2026",
-      "description": "The inspector also found a bottleneck in resupply, despite President Donald Trump's claims that US supplies are \"virtually limitless\"."
-    },
-    {
       "title": "Ukraine's postal workers deliver lifeline under Russian fire",
       "url": "https://www.bbc.co.uk/news/articles/c33kmred368o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 15, 2026",
@@ -3101,6 +3095,24 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "UK trade unions back motion to boycott and sanction Israel",
+      "url": "https://www.aljazeera.com/news/2026/9/16/uk-trade-unions-back-motion-to-boycott-and-sanction-israel?traffic_source=rss",
+      "date": "September 16, 2026",
+      "description": "Motion demands taking action to oppose the 'catastrophic destruction of Gaza' and Israeli settler violence."
+    },
+    {
+      "title": "Belarus frees 25 political prisoners in return for US sanctions relief",
+      "url": "https://www.aljazeera.com/news/2026/9/16/belarus-frees-25-political-prisoners-in-return-for-us-sanctions-relief?traffic_source=rss",
+      "date": "September 16, 2026",
+      "description": "The Trump administration said more releases would be secured soon amid improved US-Belarus relations."
+    },
+    {
+      "title": "South Africa slams planned US sanctions over alleged racial discrimination",
+      "url": "https://www.aljazeera.com/news/2026/9/16/south-africa-slam-planned-us-sanctions-over-alleged-racial-discrimination?traffic_source=rss",
+      "date": "September 16, 2026",
+      "description": "Trump administration falling for misinformation from 'fringe groups' alleging discrimination against white Afrikaners."
+    },
     {
       "title": "Malaysia offers to invite Myanmar leader in Rohingya repatriation push",
       "url": "https://www.aljazeera.com/news/2026/9/16/malaysia-offers-to-invite-myanmar-leader-in-rohingya-repatriation-push?traffic_source=rss",
@@ -3124,12 +3136,6 @@
       "url": "https://www.aljazeera.com/news/2026/9/16/iran-war-has-cost-the-us-38bn-how-is-it-impacting-us-economy-politics?traffic_source=rss",
       "date": "September 16, 2026",
       "description": "High energy costs at the pump and strategic setback for US in the Iran war will likely cost Trump in the midterms."
-    },
-    {
-      "title": "China willing to ‘safeguard Iran’s legitimate rights’, official says",
-      "url": "https://www.aljazeera.com/news/2026/9/16/china-willing-to-safeguard-irans-legitimate-rights-official-says?traffic_source=rss",
-      "date": "September 16, 2026",
-      "description": "China says the US-Israel war on Iran highlights flaws in the Middle East's 'existing security architecture'."
     }
   ],
   "occNews": [
@@ -3147,6 +3153,20 @@
     }
   ],
   "economicsNews": [
+    {
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "date": "September 16, 2026",
+      "description": "Federal Reserve issues FOMC statement",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm",
+      "date": "September 16, 2026",
+      "description": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
+      "category": "Monetary Policy"
+    },
     {
       "title": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260825a.htm",
@@ -3233,10 +3253,16 @@
       "description": "Canada is seeking closer ties with EU after a breakdown in relations with the US and its president Donald Trump."
     },
     {
+      "title": "Photos show widespread damage at US sites from Iranian attacks",
+      "url": "https://www.bbc.co.uk/news/articles/c8g49e0gwxeno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 16, 2026",
+      "description": "A wrecked air force plane and destroyed buildings are among the images obtained by the BBC's partner CBS News."
+    },
+    {
       "title": "Eight children among 21 killed after war-damaged Gaza building collapses, rescuers say",
       "url": "https://www.bbc.co.uk/news/articles/cvp8d00j9gg5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 16, 2026",
-      "description": "Dozens of people are missing beneath the rubble of a building hit by an Israeli strike last year, where some 10 families had been living."
+      "description": "Some 10 families had reportedly been living in the six-storey building in Gaza City that was hit by an Israeli strike last year."
     },
     {
       "title": "OpenAI boss says world 'right to be afraid' but should trust AI firms",
@@ -3267,12 +3293,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cw4gq0j5jg10o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 16, 2026",
       "description": "The NBCLA news helicopter was flying near the scene of a fatal bus crash."
-    },
-    {
-      "title": "South African president vows justice as more women's bodies found near Johannesburg",
-      "url": "https://www.bbc.co.uk/news/articles/crgqde1nex2vo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 16, 2026",
-      "description": "Police have not linked the deaths to a serial killer but are investigating this possibility."
     },
     {
       "title": "Colombia and Brazil deadliest countries for environmental activists, report says",
@@ -3653,6 +3673,48 @@
       "description": "Primark has said it plans to launch a home delivery service in Britain, four years after it made its first foray into e-commerce."
     },
     {
+      "title": "US Fed raises interest rates as inflation weighs on economy",
+      "url": "https://www.aljazeera.com/economy/2026/9/16/us-fed-raises-interest-rates-as-inflation-weighs-on-economy?traffic_source=rss",
+      "date": "September 16, 2026",
+      "description": "The 25 basis-point hike is the first raise in three years and comes ahead of critical midterm elections in the US."
+    },
+    {
+      "title": "Geopolitical divides fueling Security Council inaction, Guterres warns",
+      "url": "https://www.aljazeera.com/news/2026/9/16/geopolitical-divides-fueling-security-council-inaction-guterres-warns?traffic_source=rss",
+      "date": "September 16, 2026",
+      "description": "Guterres calls for urgent Security Council reform, says geopolitical divides hindering action on global crises."
+    },
+    {
+      "title": "Kosovo’s former president guilty of war crimes",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/16/kosovos-former-president-guilty-of-war-crimes?traffic_source=rss",
+      "date": "September 16, 2026",
+      "description": "Hashim Thaci, former President of Kosovo and KLA leader, has been found guilty of war crimes in the Hague."
+    },
+    {
+      "title": "Why has the response to Nepal’s floods been so muted?",
+      "url": "https://www.aljazeera.com/opinions/2026/9/16/why-has-the-response-to-nepals-floods-been-so-muted?traffic_source=rss",
+      "date": "September 16, 2026",
+      "description": "Because wealthy nations do not want to take responsibility for their role in the current climate crisis."
+    },
+    {
+      "title": "‘Nowhere to go’: Gaza’s damaged buildings turn deadly",
+      "url": "https://www.aljazeera.com/news/2026/9/16/nowhere-to-go-gazas-damaged-buildings-turn-deadly?traffic_source=rss",
+      "date": "September 16, 2026",
+      "description": "A war-damaged building collapses in Gaza City, killing at least 21 Palestinians and exposing fears of unsafe ruins."
+    },
+    {
+      "title": "Neturei Karta: Opposing Zionism",
+      "url": "https://www.aljazeera.com/video/al-jazeera-world/2026/9/16/neturei-karta-opposing-zionism?traffic_source=rss",
+      "date": "September 16, 2026",
+      "description": "Inside Neturei Karta, the ultra-Orthodox Jewish group that rejects Zionism, supports Palestinians fighting occupation."
+    },
+    {
+      "title": "Can the US government punish a university for boycotting Israel?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/16/can-the-us-government-punish-a-university-for-boycotting-israel?traffic_source=rss",
+      "date": "September 16, 2026",
+      "description": "The US House passed a bill that could cut universities off from federal student aid if they boycott Israel."
+    },
+    {
       "title": "Poll shows Americans are increasingly alarmed by AI’s ecological footprint",
       "url": "https://www.aljazeera.com/news/2026/9/16/poll-shows-americans-are-increasingly-alarmed-by-ais-ecological-footprint?traffic_source=rss",
       "date": "September 16, 2026",
@@ -3717,60 +3779,6 @@
       "url": "https://www.aljazeera.com/sports/2026/9/16/al-taawoun-face-stadium-closure-fine-over-jota-chants-by-fans?traffic_source=rss",
       "date": "September 16, 2026",
       "description": "Taawoun football fans chanted late Portugal player Jota's name at Al Hilal's Neves, prompting Ronaldo to call for a ban."
-    },
-    {
-      "title": "Why some countries fail while others prosper in the Middle East and Africa",
-      "url": "https://www.aljazeera.com/opinions/2026/9/16/why-some-countries-fail-while-others-prosper-in-the-middle-east-and-africa?traffic_source=rss",
-      "date": "September 16, 2026",
-      "description": "The answer lies less in geography or resources than in the institutions that shape power, legitimacy and opportunity."
-    },
-    {
-      "title": "Norway’s sovereign wealth fund profits from Israeli holdings amid genocide",
-      "url": "https://www.aljazeera.com/news/2026/9/16/norway-oil-fund-ethical-concerns?traffic_source=rss",
-      "date": "September 16, 2026",
-      "description": "As Gaza is being destroyed, the so-called oil fund enjoys robust returns from companies linked to Israel's military."
-    },
-    {
-      "title": "Which artists have pulled out of Ed Sheeran’s tour over Palestine?",
-      "url": "https://www.aljazeera.com/news/2026/9/16/the-artists-who-pulled-out-of-ed-sheerans-tour-over-palestine?traffic_source=rss",
-      "date": "September 16, 2026",
-      "description": "Supporting acts of Sheeran's US tour have quit in solidarity with Macklemore, banned for saying 'Free Palestine'."
-    },
-    {
-      "title": "Djibouti on alert as people flee Yemen after Houthi takeover of Mayyun",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/16/djibouti-on-alert-as-people-flee-yemen-after-houthi-takeover-of-mayyun?traffic_source=rss",
-      "date": "September 16, 2026",
-      "description": "From aboard a Djiboutian naval vessel in the Bab al-Mandeb Strait, an Al Jazeera team is monitoring the situation."
-    },
-    {
-      "title": "EU chief von der Leyen proposes ‘associate member’ status for Canada",
-      "url": "https://www.aljazeera.com/news/2026/9/16/eu-chief-von-der-leyen-proposes-associate-member-status-for-canada?traffic_source=rss",
-      "date": "September 16, 2026",
-      "description": "Prime Minister Mark Carney said earlier this week that Canada was seeking a 'unique alliance' with the European Union."
-    },
-    {
-      "title": "Gold mine collapse kills at least 70 people in Sudan’s West Kordofan",
-      "url": "https://www.aljazeera.com/news/2026/9/16/gold-mine-collapse-kills-at-least-70-people-in-sudans-west-kordofan?traffic_source=rss",
-      "date": "September 16, 2026",
-      "description": "Dozens of artisanal miners have been killed after a series of adjoining mining shafts collapsed."
-    },
-    {
-      "title": "FIFA to present review of Infantino’s shelved investment plan to Council",
-      "url": "https://www.aljazeera.com/sports/2026/9/16/fifa-to-present-review-of-infantinos-shelved-investment-plan-to-council?traffic_source=rss",
-      "date": "September 16, 2026",
-      "description": "A review of FIFA President Gianni Infantino's failed World Cup selloff to be presented to governing body's Council."
-    },
-    {
-      "title": "Duterte in person at ICC for first time over ‘war on drugs’ killings",
-      "url": "https://www.aljazeera.com/news/2026/9/16/duterte-in-person-at-icc-for-first-time-over-war-on-drugs-killings?traffic_source=rss",
-      "date": "September 16, 2026",
-      "description": "Former Philippine president accused of setting up death squads faces trial starting on November 30."
-    },
-    {
-      "title": "Photos: Gaza building collapse kills 20, including women and children",
-      "url": "https://www.aljazeera.com/gallery/2026/9/16/photos-gaza-building-collapse-kills-20-including-women-and-children?traffic_source=rss",
-      "date": "September 16, 2026",
-      "description": "Israel-hit building collapsed in Gaza City, killing 20 and leaving dozens trapped under the rubble."
     }
   ]
 }
