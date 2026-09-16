@@ -16,6 +16,7 @@
  */
 
 import { syncProgramsLibrary } from "./sync-programs-library.mjs";
+import { normalizeBriefingPayload } from "./normalize-briefing.mjs";
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const APP_URL        = (process.env.APP_URL || "").replace(/\/$/, "");
@@ -2081,6 +2082,16 @@ async function trySaveBriefing(payload, merge = false) {
 }
 
 async function saveBriefingWithRetry(payload, merge = false) {
+  const normalized = normalizeBriefingPayload(payload);
+  payload = normalized.payload;
+  if (normalized.dropped.length > 0) {
+    console.warn(`[refresh-briefing] Dropped ${normalized.dropped.length} article(s) that did not satisfy the save schema`);
+    normalized.dropped.slice(0, 10).forEach(item => console.warn(`    ✗ ${String(item).slice(0, 160)}`));
+  }
+  if (payload.articles.length === 0) {
+    console.error("[refresh-briefing] Refusing to save: no valid articles remained after normalization");
+    process.exit(1);
+  }
   console.log(`[refresh-briefing] Saving to ${APP_URL}/api/save-briefing (merge=${merge}) ...`);
   const delays = [0, 5000, 15000, 30000];
   let saveRes;
@@ -2089,6 +2100,10 @@ async function saveBriefingWithRetry(payload, merge = false) {
     if (delays[attempt]) await new Promise(r => setTimeout(r, delays[attempt]));
     ({ saveRes, saveData } = await trySaveBriefing(payload, merge));
     if (saveRes.ok && saveData.ok) break;
+    if (saveRes.status >= 400 && saveRes.status < 500 && saveRes.status !== 429) {
+      console.error(`[refresh-briefing] Permanent save rejection (${saveRes.status}); not retrying the same payload`);
+      break;
+    }
     if (attempt < delays.length - 1) {
       console.warn(`[refresh-briefing] Save attempt ${attempt + 1} failed (${saveRes.status}): ${JSON.stringify(saveData)} — retrying`);
     }
