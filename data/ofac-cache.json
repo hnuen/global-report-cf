@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-17T17:07:48.613Z",
+  "updatedAt": "2026-09-17T19:07:51.404Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260917",
+      "code": "20260917",
+      "title": "Iran-related Designations; Cuba Designations; Belarus-related Designations Removals",
+      "date": "September 17, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260916",
       "code": "20260916",
@@ -54,12 +60,6 @@
       "code": "20260828",
       "title": "Iran-related and Counter Terrorism Designations",
       "date": "August 28, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260827",
-      "code": "20260827",
-      "title": "Issuance of Amended Venezuela-related General Licenses and Associated Frequently Asked Questions",
-      "date": "August 27, 2026"
     }
   ],
   "civilPenalties": [
@@ -237,7 +237,7 @@
     "belarus-sanctions": {
       "name": "Belarus Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/belarus-sanctions",
-      "lastUpdated": "Jul 23, 2026",
+      "lastUpdated": "Sep 17, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -276,7 +276,7 @@
         },
         {
           "citation": "75 FR 73958",
-          "description": "10​ - Belarus Sanctions Regulations​ 75 FR 5502-10 - New regulations to implement Executive Order 13405 Recent Actions regarding Belarus Sanctions Counter Terrorism Designations; Counter Narcotics Designations; Cuba Designations; Belarus-related Designation Removal; Issuance of Cuba-related General",
+          "description": "10​ - Belarus Sanctions Regulations​ 75 FR 5502-10 - New regulations to implement Executive Order 13405 Recent Actions regarding Belarus Sanctions Iran-related Designations; Cuba Designations; Belarus-related Designations Removals Release Date: Sep 17, 2026 Counter Terrorism Designations; Counter Na",
           "year": "",
           "glNumbers": []
         }
@@ -711,7 +711,7 @@
     "cuba-sanctions": {
       "name": "Cuba Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/cuba-sanctions",
-      "lastUpdated": "Sep 03, 2026",
+      "lastUpdated": "Sep 17, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -758,7 +758,7 @@
         },
         {
           "citation": "66 FR 36683-01",
-          "description": "2001 Exports of Agricultural Products, Medicines, and Medical Devices to Cuba, Sudan, Libya, and Iran; Cuba Travel-Related Transactions 65 FR 70382-00 - 2000 Payments to Persons Who Hold Certain Categories of Judgments Against Cuba or Iran Recent Actions regarding Cuba Sanctions Cuba Designations; R",
+          "description": "2001 Exports of Agricultural Products, Medicines, and Medical Devices to Cuba, Sudan, Libya, and Iran; Cuba Travel-Related Transactions 65 FR 70382-00 - 2000 Payments to Persons Who Hold Certain Categories of Judgments Against Cuba or Iran Recent Actions regarding Cuba Sanctions Iran-related Designa",
           "year": "2001",
           "glNumbers": []
         }
@@ -1019,7 +1019,7 @@
     "iran-sanctions": {
       "name": "Iran Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions",
-      "lastUpdated": "Sep 14, 2026",
+      "lastUpdated": "Sep 17, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -2712,39 +2712,35 @@
         },
         {
           "number": "29",
-          "title": "Certain Transactions Involving the Government of Venezuela in Support of Certain Nongovernmental Organizations' Activities Authorized",
+          "title": "Venezuela General License 29",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31771/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "30B",
-          "title": "Authorizing Certain Transactions Necessary to Port and Airport Operations",
+          "title": "Venezuela General License 30B",
           "date": "February 2, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934996/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "31B",
-          "title": "Certain Transactions Involving the IV Venezuelan National Assembly and Certain Other Persons",
+          "title": "Venezuela General License 31B",
           "date": "January 4, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/930241/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "32",
-          "title": "Authorizing Certain Transactions Related to Personal Maintenance of Individuals Who Are U.S. Persons Residing in Venezuela",
+          "title": "Venezuela General License 32",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34101/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "33",
@@ -3082,6 +3078,12 @@
   "unNotices": [],
   "bbcNews": [
     {
+      "title": "UN experts say grounds to believe US committed war crimes in Iran strikes",
+      "url": "https://www.bbc.co.uk/news/articles/cm9w4n5nverdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 17, 2026",
+      "description": "The US has not acknowledged carrying out February's deadly strikes on a primary school in Minab and a sports complex in Lamerd."
+    },
+    {
       "title": "Assad regime planned US journalist's kidnap for weeks, BBC finds",
       "url": "https://www.bbc.co.uk/news/articles/cv0lrxw6ygl2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 17, 2026",
@@ -3092,12 +3094,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c3lyrn4p870yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 17, 2026",
       "description": "Trump’s tariff threat puts India’s Russian oil strategy- and its access to the US market - in a new bind."
-    },
-    {
-      "title": "US accuses Russia of trying to kill Ukrainian allies overseas",
-      "url": "https://www.bbc.co.uk/news/articles/cjp3077led9qo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 16, 2026",
-      "description": "The FBI says five men \"conspired to intimidate, threaten, or murder people on US soil and around the world\"."
     },
     {
       "title": "Rosenberg: Russia's elections will have few surprises, but for the Kremlin they matter",
@@ -3113,6 +3109,24 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "US secures release of detained citizen Adam Castillo in Myanmar",
+      "url": "https://www.aljazeera.com/news/2026/9/17/us-secures-release-of-detained-citizen-adam-castillo-in-myanmar?traffic_source=rss",
+      "date": "September 17, 2026",
+      "description": "Businessman Adam Castillo had been detained by authorities for three months on breach of trust allegations."
+    },
+    {
+      "title": "‘I’m Russian’: NHL star Ovechkin defends Putin ad appearance",
+      "url": "https://www.aljazeera.com/sports/2026/9/17/im-russian-nhl-star-ovechkin-defends-putin-ad-appearance?traffic_source=rss",
+      "date": "September 17, 2026",
+      "description": "Washington Capitals captain under fire for appearing in an election campaign video for Putin's United Russia party."
+    },
+    {
+      "title": "UN fact-finding mission says US committed possible war crimes in Iran",
+      "url": "https://www.aljazeera.com/news/2026/9/17/un-fact-finding-mission-says-us-committed-possible-war-crimes-in-iran?traffic_source=rss",
+      "date": "September 17, 2026",
+      "description": "The mission also said Iranian authorities committed crimes against humanity during their crackdown on recent protests."
+    },
     {
       "title": "What are all the sanctions Iran is under?",
       "url": "https://www.aljazeera.com/news/2026/9/17/what-are-all-the-sanctions-iran-is-under?traffic_source=rss",
@@ -3130,21 +3144,15 @@
       "url": "https://www.aljazeera.com/features/2026/9/17/us-tariffs-against-russian-oil-buyers-pass-what-it-means-for-china?traffic_source=rss",
       "date": "September 17, 2026",
       "description": "US sanctions aim to weaken Russian oil exports, heavily targeting China and India as Moscow's largest energy buyers."
-    },
-    {
-      "title": "Syrian court sentences three linked to coastal violence",
-      "url": "https://www.aljazeera.com/news/2026/9/17/syrian-court-sentences-three-linked-to-coastal-violence?traffic_source=rss",
-      "date": "September 17, 2026",
-      "description": "Former member of gov't forces sentenced to 20 years, as two Assad supporters receive death sentence and life in prison."
-    },
-    {
-      "title": "Trump claims direct talks with Iran: Is diplomacy picking up again?",
-      "url": "https://www.aljazeera.com/news/2026/9/17/trump-claims-direct-talks-with-iran-is-diplomacy-picking-up-again?traffic_source=rss",
-      "date": "September 17, 2026",
-      "description": "The US president says Washington is 'hopefully toward the end' of Iran war, as global energy prices remain high."
     }
   ],
   "occNews": [
+    {
+      "title": "OCC Announces Enforcement Actions for September 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-79.html",
+      "date": "September 17, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for September 2026."
+    },
     {
       "title": "OCC Acts to Improve Transparency and Consistency to Bank Enforcement and Supervisory Standards",
       "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-72.html",
@@ -3271,6 +3279,30 @@
       "description": "South Africa police have cautioned against assuming that all the killings are linked but many women are afraid."
     },
     {
+      "title": "Hyrox athlete apologises for continuing race after soiling herself",
+      "url": "https://www.bbc.co.uk/news/articles/ck0e35qyqlx0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 17, 2026",
+      "description": "Joanna Wietrzyk has also forfeited her win in the fitness competition after competing last week."
+    },
+    {
+      "title": "Wife of US scholar jailed in China asks Trump to raise arrest at Xi meeting",
+      "url": "https://www.bbc.co.uk/news/articles/c9j3d2rr6g24o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 17, 2026",
+      "description": "Sylvia Zin is among the family members of people imprisoned in China who are seeking Trump's help when he hosts the country's leader next week."
+    },
+    {
+      "title": "Aztec document goes on display in Mexico after 186 years abroad",
+      "url": "https://www.bbc.co.uk/news/articles/ck980qyy6d2zo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 17, 2026",
+      "description": "France's national library is lending the manuscript recounting the history of the Aztecs to Mexico."
+    },
+    {
+      "title": "EU announces plan to restrict social media access for under-15s",
+      "url": "https://www.bbc.co.uk/news/articles/c3j4jz8vpz1xo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 17, 2026",
+      "description": "Under the plans, only children over 15 would be able to set up their own social media accounts."
+    },
+    {
       "title": "Uncontrolled AI could lead to 'silicon species' rivalling humans, warns Microsoft",
       "url": "https://www.bbc.co.uk/news/articles/c6n07ypqz8kzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 17, 2026",
@@ -3281,18 +3313,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cxr50l3d762po?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 17, 2026",
       "description": "Left-wing opposition parties led by Magdalena Andersson look set to form the next government."
-    },
-    {
-      "title": "EU announces plan to restrict social media access for under-15s",
-      "url": "https://www.bbc.co.uk/news/articles/c3j4jz8vpz1xo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 17, 2026",
-      "description": "Under the plans, only children over 15 would be able to set up their own social media accounts."
-    },
-    {
-      "title": "Aztec document goes on display in Mexico after 186 years abroad",
-      "url": "https://www.bbc.co.uk/news/articles/ck980qyy6d2zo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 17, 2026",
-      "description": "France's national library is lending the manuscript recounting the history of the Aztecs to Mexico."
     },
     {
       "title": "Klopp wants to 'reclaim' flag amid German elections",
@@ -3391,16 +3411,16 @@
       "description": "The conservative activist was speaking to a crowd of thousands on the university campus when he was shot and killed by a gunman positioned on a roof."
     },
     {
-      "title": "Colombia and Brazil deadliest countries for environmental activists, report says",
-      "url": "https://www.bbc.co.uk/news/articles/c6kgxjl35822o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 16, 2026",
-      "description": "The two countries accounted for 52% of killings of environmental activists in 2025, according to Global Witness."
+      "title": "Warm words on Canada's EU 'associate membership' but no guarantees",
+      "url": "https://www.bbc.co.uk/news/articles/crlyqg1ekj4po?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 17, 2026",
+      "description": "There is no certainty that the idea will ever get off the ground, let alone become a blueprint for other countries, writes Katya Adler."
     },
     {
-      "title": "US limits visas for South African officials over alleged anti-white discrimination",
-      "url": "https://www.bbc.co.uk/news/articles/cqy0z5y7wnp2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 16, 2026",
-      "description": "Secretary of State Marco Rubio says South Africa has not addressed US concerns over racial inequality."
+      "title": "Verified video shows wreckage of Saudi fighter jet shot down over Yemen",
+      "url": "https://www.bbc.co.uk/news/articles/c8vgy3p6k3y9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 17, 2026",
+      "description": "BBC Verify tracks down the location of a Houthi video showing the wreckage of an F-15 they claim to have shot down."
     },
     {
       "title": "Why Trump is all-in on AI despite the warnings",
@@ -3676,7 +3696,7 @@
       "title": "Shop closures among concerns in ancient capital",
       "url": "https://www.bbc.co.uk/news/articles/c6n8m7588mxko?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 17, 2026",
-      "description": "Declining trade, parking and the cost of living at among concerns in Arbory, Castletown and Malew."
+      "description": "Declining trade, parking and the cost of living are among concerns in Arbory, Castletown and Malew."
     },
     {
       "title": "Low-cost food pantry awarded £272k lottery grant",
@@ -3722,7 +3742,7 @@
     },
     {
       "title": "The Documentary",
-      "url": "https://www.bbc.co.uk/sounds/play/w3ct9fh5?at_medium=RSS&amp;at_campaign=rss",
+      "url": "https://www.bbc.co.uk/sounds/play/live:bbc_world_service?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 17, 2026",
       "description": "Katy Watson explores Australia's relationship with China - partner, rival or 'frenemy'?"
     },
@@ -3743,6 +3763,54 @@
       "url": "https://www.bbc.co.uk/news/videos/c639m43070vpo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 16, 2026",
       "description": "The number of shoplifting offences recorded in England and Wales in 2025-26 is still above pre-pandemic levels."
+    },
+    {
+      "title": "Serbia opens factory to assemble Israeli-made drones",
+      "url": "https://www.aljazeera.com/news/2026/9/17/serbia-opens-factory-to-assemble-israeli-made-drones?traffic_source=rss",
+      "date": "September 17, 2026",
+      "description": "Critics say Serbia's military ties with Israel are rising significantly."
+    },
+    {
+      "title": "Jerusalem Daily: Israelis protest outside ‘NAZA’ filmmaker’s home",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/17/jerusalem-daily-israelis-protest-outside-naza-filmmakers-home?traffic_source=rss",
+      "date": "September 17, 2026",
+      "description": "Dozens of Israelis protested outside 'NAZA' filmmaker’s family home, chanting 'death to traitors'"
+    },
+    {
+      "title": "South Africa gender commissioner: women ‘hunted’ amid femicide crisis",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/17/09-17-26-south-africa-femicide-sv-mp4?traffic_source=rss",
+      "date": "September 17, 2026",
+      "description": "A ninth woman has been found dead amid a wave of killings in South Africa’s Ekurhuleni region, east of Johannesburg."
+    },
+    {
+      "title": "English FA calls for Infantino to release FIFA World Cup sell-off documents",
+      "url": "https://www.aljazeera.com/sports/2026/9/17/english-fa-calls-for-infantino-to-release-fifa-world-cup-sell-off-documents?traffic_source=rss",
+      "date": "September 17, 2026",
+      "description": "Gianni Infantino's World Cup selloff plan has faced global backlash with English FA latest to seek document release."
+    },
+    {
+      "title": "Brazil’s Lula announces welfare increases ahead of presidential election",
+      "url": "https://www.aljazeera.com/news/2026/9/17/brazils-lula-announces-welfare-increases-ahead-of-presidential-election?traffic_source=rss",
+      "date": "September 17, 2026",
+      "description": "Government says that increase represents an adjustment for inflation that has eaten away purchasing power since 2023."
+    },
+    {
+      "title": "Macron and Aoun discuss efforts to back Lebanon’s army, end Israeli attacks",
+      "url": "https://www.aljazeera.com/news/2026/9/17/macron-aoun-discuss-lebanese-sovereignty-efforts-to-end-israeli-attacks?traffic_source=rss",
+      "date": "September 17, 2026",
+      "description": "The French presidency said the aim of the Paris talks was to review a Lebanese armed forces deployment plan."
+    },
+    {
+      "title": "Abhishek Sharma hits record T20 ton as India beat Afghanistan by 127 runs",
+      "url": "https://www.aljazeera.com/sports/2026/9/17/abhishek-sharmas-30-ball-ton-leads-india-to-127-run-win-over-afghanistan?traffic_source=rss",
+      "date": "September 17, 2026",
+      "description": "India opener Abhishek Sharma hits nine fours and 11 sixes in total of 221-7 as India seal 3-0 T20 series sweep."
+    },
+    {
+      "title": "The UK’s King Charles warns AI leaders of ‘existential dangers’",
+      "url": "https://www.aljazeera.com/news/2026/9/17/the-uks-king-charles-warns-ai-leaders-of-existential-dangers?traffic_source=rss",
+      "date": "September 17, 2026",
+      "description": "British monarch highlights AI's potential darker capacities, urging safety and humanity-focused development."
     },
     {
       "title": "Xabi Alonso says Chelsea ambitions ‘very clear’ as Boehly era ends",
@@ -3809,60 +3877,6 @@
       "url": "https://www.aljazeera.com/news/2026/9/17/sweden-prime-minister-to-resign-as-left-wing-bloc-seals-narrow-election-win?traffic_source=rss",
       "date": "September 17, 2026",
       "description": "⁠Sweden's ⁠centre-right Prime Minister Ulf Kristersson said he will resign after losing the parliamentary elections."
-    },
-    {
-      "title": "Canada’s Carney welcomes EU’s associated membership proposal",
-      "url": "https://www.aljazeera.com/news/2026/9/17/canadas-carney-welcomes-eus-associated-membership-proposal?traffic_source=rss",
-      "date": "September 17, 2026",
-      "description": "In address to European parliament, Canadian Prime Minister Mark Carney listed areas where he wants to boost cooperation."
-    },
-    {
-      "title": "‘The drought has left its mark’: Slovenia’s potato lovers lament low yields",
-      "url": "https://www.aljazeera.com/news/2026/9/17/the-drought-has-left-its-mark-slovenias-potato-lovers-lament-low-yields?traffic_source=rss",
-      "date": "September 17, 2026",
-      "description": "Hundreds gather to share roast potatoes in northern Slovenia as think tank warns 'chips are down' across Europe."
-    },
-    {
-      "title": "LIVE: India vs Afghanistan – T20 international cricket series",
-      "url": "https://www.aljazeera.com/sports/liveblog/2026/9/17/live-india-vs-afghanistan-t20-international-cricket-series?traffic_source=rss",
-      "date": "September 17, 2026",
-      "description": "Follow the live build-up and coverage, with toss, team lineups and news, ahead of our text commentary steam updates."
-    },
-    {
-      "title": "What’s the Asian Games accommodation crisis, and where will athletes stay?",
-      "url": "https://www.aljazeera.com/sports/2026/9/17/whats-the-asian-games-accommodation-crisis-and-where-will-athletes-stay?traffic_source=rss",
-      "date": "September 17, 2026",
-      "description": "In a cost-cutting move, Japan decided against setting up a dedicated athletes' village but now faces a backlash."
-    },
-    {
-      "title": "Climate change had major role in triggering Nepal floods, scientists say",
-      "url": "https://www.aljazeera.com/news/2026/9/17/climate-change-had-major-role-in-triggering-nepal-floods-scientists-say?traffic_source=rss",
-      "date": "September 17, 2026",
-      "description": "The combined toll from the deadly incident now stands at 1,446 people dead and at least 6,669 missing."
-    },
-    {
-      "title": "India to impose controversial fee for UPI instant payments: Who benefits?",
-      "url": "https://www.aljazeera.com/features/2026/9/17/india-to-impose-controversial-fee-for-upi-instant-payments-who-benefits?traffic_source=rss",
-      "date": "September 17, 2026",
-      "description": "It's the end of an era for India's popular instant digital payments system, which has been free of charge until now."
-    },
-    {
-      "title": "Gaza repairman helps journalists to keep documenting genocide",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/17/gaza-repairman-helps-journalists-to-keep-documenting-genocide?traffic_source=rss",
-      "date": "September 17, 2026",
-      "description": "As journalists in Gaza continue documenting the war, camera repairman Mohammed Radwan keeps damaged equipment in use."
-    },
-    {
-      "title": "Why is inflation rising again around the world?",
-      "url": "https://www.aljazeera.com/video/counting-the-cost/2026/9/17/why-is-inflation-rising-again-around-the-world?traffic_source=rss",
-      "date": "September 17, 2026",
-      "description": "Rising energy prices are pushing inflation higher again, forcing major central banks to raise interest rates."
-    },
-    {
-      "title": "Lebanon security talks in Paris to focus on post-UNIFIL alternatives",
-      "url": "https://www.aljazeera.com/news/2026/9/17/lebanon-security-talks-in-paris-to-focus-on-post-unifil-alternatives?traffic_source=rss",
-      "date": "September 17, 2026",
-      "description": "The security talks come as Israeli forces continue attacks across southern Lebanon despite a \"ceasefire\"."
     }
   ]
 }
