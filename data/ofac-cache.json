@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T21:07:46.599Z",
+  "updatedAt": "2026-09-17T22:07:47.301Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260917",
@@ -3079,7 +3079,14 @@
       "description": "These new measures aim at further increasing the pressure on Russia and Belarus and supporting EU's goal of achieving a just and lasting peace for Ukraine."
     }
   ],
-  "unNotices": [],
+  "unNotices": [
+    {
+      "title": "Security Council Fails to Renew Iran Sanctions Panel amid Dispute over ‘Snapback’",
+      "url": "https://press.un.org/en/2026/sc16455.doc.htm",
+      "date": "September 17, 2026",
+      "description": "The Security Council today failed to adopt a resolution that would have extended the mandate of the Panel of Experts tasked with monitoring implementation of United Nations sanctions on Iran, as Council members continued to be divided on whether those sanctions are in force at all."
+    }
+  ],
   "bbcNews": [
     {
       "title": "UN experts say grounds to believe US committed war crimes in Iran strikes",
@@ -3120,6 +3127,18 @@
   ],
   "ajNews": [
     {
+      "title": "US approves visas for top Iranian leaders to attend UN General Assembly",
+      "url": "https://www.aljazeera.com/news/2026/9/17/us-approves-visas-for-top-iranian-leaders-to-attend-un-general-assembly?traffic_source=rss",
+      "date": "September 17, 2026",
+      "description": "Iran's delegation to UNGA will be smaller this year, with travel restrictions and limits on luxury goods purchases."
+    },
+    {
+      "title": "Russia, China veto UN mandate to monitor Iran sanctions",
+      "url": "https://www.aljazeera.com/news/2026/9/17/russia-china-veto-un-mandate-to-monitor-iran-sanctions?traffic_source=rss",
+      "date": "September 17, 2026",
+      "description": "Move ends the Security Council’s watchdog panel on Iran sanctions."
+    },
+    {
       "title": "Russia’s plans may include strikes against Ukraine’s allies, Poland says",
       "url": "https://www.aljazeera.com/news/2026/9/17/russian-plans-include-strikes-against-ukraines-allies-poland-says?traffic_source=rss",
       "date": "September 17, 2026",
@@ -3142,12 +3161,6 @@
       "url": "https://www.aljazeera.com/sports/2026/9/17/im-russian-nhl-star-ovechkin-defends-putin-ad-appearance?traffic_source=rss",
       "date": "September 17, 2026",
       "description": "Washington Capitals captain under fire for appearing in an election campaign video for Putin's United Russia party."
-    },
-    {
-      "title": "UN fact-finding mission says US committed possible war crimes in Iran",
-      "url": "https://www.aljazeera.com/news/2026/9/17/un-fact-finding-mission-says-us-committed-possible-war-crimes-in-iran?traffic_source=rss",
-      "date": "September 17, 2026",
-      "description": "The mission also said Iranian authorities committed crimes against humanity during their crackdown on recent protests."
     }
   ],
   "occNews": [
@@ -3283,16 +3296,16 @@
       "description": "South Africa police have cautioned against assuming that all the killings are linked but many women are afraid."
     },
     {
-      "title": "Hyrox athlete apologises for continuing race after soiling herself",
-      "url": "https://www.bbc.co.uk/news/articles/ck0e35qyqlx0o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 17, 2026",
-      "description": "Joanna Wietrzyk has also forfeited her win in the fitness competition after competing last week."
-    },
-    {
       "title": "Wife of US scholar jailed in China asks Trump to raise arrest at Xi meeting",
       "url": "https://www.bbc.co.uk/news/articles/c9j3d2rr6g24o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 17, 2026",
       "description": "Sylvia Zin is among the family members of people imprisoned in China who are seeking Trump's help when he hosts the country's leader next week."
+    },
+    {
+      "title": "Hyrox athlete apologises for continuing race after soiling herself",
+      "url": "https://www.bbc.co.uk/news/articles/ck0e35qyqlx0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 17, 2026",
+      "description": "Joanna Wietrzyk has also forfeited her win in the fitness competition after competing last week."
     },
     {
       "title": "Aztec document goes on display in Mexico after 186 years abroad",
@@ -3499,6 +3512,12 @@
       "description": "From coffee chats to LinkedIn messages, here's how to network your way to your next job."
     },
     {
+      "title": "Warm words on Canada's EU 'associate membership' but no guarantees",
+      "url": "https://www.bbc.co.uk/news/articles/crlyqg1ekj4po?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 17, 2026",
+      "description": "There is no certainty that the idea will ever get off the ground, let alone become a blueprint for other countries, writes Katya Adler."
+    },
+    {
       "title": "Uncontrolled AI could lead to 'silicon species' rivalling humans, warns Microsoft",
       "url": "https://www.bbc.co.uk/news/articles/c6n07ypqz8kzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 17, 2026",
@@ -3685,6 +3704,12 @@
       "description": "So-called financial favouritism can cause jealousy and resentment long into adulthood. Here is how experts say you can avoid it"
     },
     {
+      "title": "Councils to share £5m in 'emergency food aid' as living costs rise",
+      "url": "https://www.bbc.co.uk/news/articles/c8dx5gvyle49o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 17, 2026",
+      "description": "The money from the Welsh government will amount to around £200,000 to every council."
+    },
+    {
       "title": "Mixed feelings from consumers as electricity discount to be given to NI households",
       "url": "https://www.bbc.co.uk/news/articles/cjvgy5yqvpy2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 17, 2026",
@@ -3707,12 +3732,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c6n8m7588mxko?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 17, 2026",
       "description": "Declining trade, parking and the cost of living are among concerns in Arbory, Castletown and Malew."
-    },
-    {
-      "title": "Low-cost food pantry awarded £272k lottery grant",
-      "url": "https://www.bbc.co.uk/news/articles/ckgwep54wx2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 17, 2026",
-      "description": "Oasis Hub Bath said the funding will cover its main operating costs over the next three years."
     },
     {
       "title": "Aviation faces hotter, stormier skies – and passengers might have to accept more disruption",
@@ -3773,6 +3792,30 @@
       "url": "https://www.bbc.co.uk/news/videos/c639m43070vpo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 16, 2026",
       "description": "The number of shoplifting offences recorded in England and Wales in 2025-26 is still above pre-pandemic levels."
+    },
+    {
+      "title": "US judge orders 30-day notice prior to any Kennedy Center physical changes",
+      "url": "https://www.aljazeera.com/news/2026/9/17/us-judge-orders-30-day-notice-prior-to-any-kennedy-center-physical-changes?traffic_source=rss",
+      "date": "September 17, 2026",
+      "description": "The ruling comes amid legal battle over Trump’s changes to the Kennedy Center, including his effort to rename it."
+    },
+    {
+      "title": "Trump administration approves sale of F-35 jets to Saudi Arabia",
+      "url": "https://www.aljazeera.com/news/2026/9/17/trump-administration-approves-sale-of-f-35-jets-to-saudi-arabia?traffic_source=rss",
+      "date": "September 17, 2026",
+      "description": "The deal, which needs approval from Congress, comes as Riyadh seeks Washington's help in its war with Yemen's Houthis."
+    },
+    {
+      "title": "Yemenis recount journey to Djibouti as refugee arrivals surge",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/17/yemenis-recount-journey-to-djibouti-as-refugee-arrivals-surge?traffic_source=rss",
+      "date": "September 17, 2026",
+      "description": "Djibouti has appealed to the international community to help provide humanitarian assistance as thousand flee Yemen."
+    },
+    {
+      "title": "Pennsylvania seeks CDC help amid dispute over US measles deaths",
+      "url": "https://www.aljazeera.com/news/2026/9/17/pennsylvania-seeks-cdc-help-amid-dispute-over-us-measles-deaths?traffic_source=rss",
+      "date": "September 17, 2026",
+      "description": "The CDC and officials from the US state differ over how four deaths should be classified as cases continue to spread."
     },
     {
       "title": "At least 26 killed in clashes along Sudan-South Sudan border region",
@@ -3863,36 +3906,6 @@
       "url": "https://www.aljazeera.com/sports/2026/9/17/abhishek-sharmas-30-ball-ton-leads-india-to-127-run-win-over-afghanistan?traffic_source=rss",
       "date": "September 17, 2026",
       "description": "India opener Abhishek Sharma hits nine fours and 11 sixes in total of 221-7 as India seal 3-0 T20 series sweep."
-    },
-    {
-      "title": "The UK’s King Charles warns AI leaders of ‘existential dangers’",
-      "url": "https://www.aljazeera.com/news/2026/9/17/the-uks-king-charles-warns-ai-leaders-of-existential-dangers?traffic_source=rss",
-      "date": "September 17, 2026",
-      "description": "British monarch highlights AI's potential darker capacities, urging safety and humanity-focused development."
-    },
-    {
-      "title": "Xabi Alonso says Chelsea ambitions ‘very clear’ as Boehly era ends",
-      "url": "https://www.aljazeera.com/sports/2026/9/17/xabi-alonso-says-chelsea-ambitions-very-clear-as-boehly-era-ends?traffic_source=rss",
-      "date": "September 17, 2026",
-      "description": "Chelsea announce that Clearlake will acquire the stakes of Todd Boehly and director Mark Walter."
-    },
-    {
-      "title": "Five killed as Saudi Arabia and Yemen’s Houthis trade attacks",
-      "url": "https://www.aljazeera.com/news/2026/9/17/five-killed-as-saudi-arabia-and-yemens-houthis-trade-attacks?traffic_source=rss",
-      "date": "September 17, 2026",
-      "description": "Houthi leader Abdel-Malik al-Houthi says Saudi claims that the group targeted Mecca are a 'heinous lie'."
-    },
-    {
-      "title": "Rare Ethiopian manuscript stolen by British forces triggers restitution row",
-      "url": "https://www.aljazeera.com/news/2026/9/17/rare-ethiopian-manuscript-stolen-by-british-triggers-restitution-row?traffic_source=rss",
-      "date": "September 17, 2026",
-      "description": "The Gondar Gospel belonged to the library of Emperor Tewodros but was seized in a battle decades ago."
-    },
-    {
-      "title": "Ireland boycotts Eurovision for second year over Israel’s inclusion",
-      "url": "https://www.aljazeera.com/news/2026/9/17/ireland-boycotts-eurovision-for-second-year-over-israels-inclusion?traffic_source=rss",
-      "date": "September 17, 2026",
-      "description": "Public broadcaster says country's participation cannot be justified amid 'appalling and ongoing loss of lives in Gaza'."
     }
   ]
 }
