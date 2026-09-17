@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T13:07:46.689Z",
+  "updatedAt": "2026-09-17T15:07:58.402Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260916",
@@ -3088,12 +3088,6 @@
       "description": "Austin Tice’s abduction was approved by Syria’s former leader Bashar al-Assad, a source claims."
     },
     {
-      "title": "Rosenberg: Russia's elections will have few surprises, but for the Kremlin they matter",
-      "url": "https://www.bbc.co.uk/news/articles/ck62m0r4r1y3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 17, 2026",
-      "description": "There is no doubt over the outcome of this vote, but for the Kremlin they are still an important moment."
-    },
-    {
       "title": "India faces 100% tariff threat over Russian oil after US House vote",
       "url": "https://www.bbc.co.uk/news/articles/c3lyrn4p870yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 17, 2026",
@@ -3106,6 +3100,12 @@
       "description": "The FBI says five men \"conspired to intimidate, threaten, or murder people on US soil and around the world\"."
     },
     {
+      "title": "Rosenberg: Russia's elections will have few surprises, but for the Kremlin they matter",
+      "url": "https://www.bbc.co.uk/news/articles/ck62m0r4r1y3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 17, 2026",
+      "description": "There is no doubt over the outcome of this vote, but for the Kremlin they are still an important moment."
+    },
+    {
       "title": "Ukraine's postal workers deliver lifeline under Russian fire",
       "url": "https://www.bbc.co.uk/news/articles/c33kmred368o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 15, 2026",
@@ -3113,6 +3113,18 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Ghalibaf’s maths missile at Trump decoded: Is Iran fixing US interest rates?",
+      "url": "https://www.aljazeera.com/news/2026/9/17/ghalibafs-maths-missile-at-trump-decoded-is-iran-fixing-us-interest-rates?traffic_source=rss",
+      "date": "September 17, 2026",
+      "description": "Iran's speaker mocks US interest rates, citing the Taylor equation amidst rising global oil prices and inflation."
+    },
+    {
+      "title": "US tariffs against Russian oil buyers pass: What it means for China, India",
+      "url": "https://www.aljazeera.com/features/2026/9/17/us-tariffs-against-russian-oil-buyers-pass-what-it-means-for-china?traffic_source=rss",
+      "date": "September 17, 2026",
+      "description": "US sanctions aim to weaken Russian oil exports, heavily targeting China and India as Moscow's largest energy buyers."
+    },
     {
       "title": "Syrian court sentences three linked to coastal violence",
       "url": "https://www.aljazeera.com/news/2026/9/17/syrian-court-sentences-three-linked-to-coastal-violence?traffic_source=rss",
@@ -3136,18 +3148,6 @@
       "url": "https://www.aljazeera.com/news/2026/9/17/at-least-19-injured-in-russian-attacks-across-ukraine?traffic_source=rss",
       "date": "September 17, 2026",
       "description": "Missile and drone strikes targeted Ukraine's capital Kyiv as well as the Zaporizhzhia and Odesa regions."
-    },
-    {
-      "title": "Syrian man uncovers library hidden behind wall for 15 years",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/17/17-09-sv-syrian-man-finds-his-books-sy?traffic_source=rss",
-      "date": "September 17, 2026",
-      "description": "Abu Bilal built a secret wall in his home to protect his books from Syria’s former Assad regime."
-    },
-    {
-      "title": "India warns new US tariffs over Russian oil could impact ties",
-      "url": "https://www.aljazeera.com/news/2026/9/17/india-warns-new-us-tariffs-over-russian-oil-could-impact-ties?traffic_source=rss",
-      "date": "September 17, 2026",
-      "description": "New Delhi says it has 'made clear' its determination to 'protect its trade and economic interests'."
     }
   ],
   "occNews": [
@@ -3265,16 +3265,16 @@
   ],
   "regionsNews": [
     {
-      "title": "Uncontrolled AI could lead to 'silicon species' rivalling humans, warns Microsoft",
-      "url": "https://www.bbc.co.uk/news/articles/c6n07ypqz8kzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 17, 2026",
-      "description": "Mustafa Suleyman says he believes rival AI firm Anthropic is in effect teaching Claude it \"may be conscious\"."
-    },
-    {
       "title": "Ninth woman's body found as South African police investigate string of deaths",
       "url": "https://www.bbc.co.uk/news/articles/cqx2zgk8k8xvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 17, 2026",
       "description": "South Africa police have cautioned against assuming that all the killings are linked but many women are afraid."
+    },
+    {
+      "title": "Uncontrolled AI could lead to 'silicon species' rivalling humans, warns Microsoft",
+      "url": "https://www.bbc.co.uk/news/articles/c6n07ypqz8kzo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 17, 2026",
+      "description": "Mustafa Suleyman says he believes rival AI firm Anthropic is in effect teaching Claude it \"may be conscious\"."
     },
     {
       "title": "Swedish PM Kristersson resigns after election loss",
@@ -3293,6 +3293,12 @@
       "url": "https://www.bbc.co.uk/news/articles/ck980qyy6d2zo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 17, 2026",
       "description": "France's national library is lending the manuscript recounting the history of the Aztecs to Mexico."
+    },
+    {
+      "title": "Klopp wants to 'reclaim' flag amid German elections",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cmwyzk6xkrd0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 17, 2026",
+      "description": "New Germany coach Jurgen Klopp says his team can help ensure \"national pride is not entrusted to the wrong people\" after a recent far-right election victory."
     },
     {
       "title": "US interest rates raised for first time in three years",
@@ -3448,10 +3454,10 @@
       "title": "Interest rates held but Bank signals rise if energy prices stay high",
       "url": "https://www.bbc.co.uk/news/articles/cm4gjrxez1q0o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 17, 2026",
-      "description": "Rates are held for the sixth time in a row but the Bank says they are likely to rise if high energy prices continue."
+      "description": "Rates are held for the sixth time in a row but the Bank of England says high energy prices make a future rise more likely."
     },
     {
-      "title": "Barclays staff push back at plans to reduce work-from-home days",
+      "title": "Barclays workers ask for more money to return to the office",
       "url": "https://www.bbc.co.uk/news/articles/cqlym1n9kpyvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 17, 2026",
       "description": "Unite union, which represents 36,000 Barclays staff, calls for a one-off payment to offset increased travel and childcare costs."
@@ -3463,16 +3469,16 @@
       "description": "From coffee chats to LinkedIn messages, here's how to network your way to your next job."
     },
     {
-      "title": "Would you buy branded clothing from your favourite tech firm?",
-      "url": "https://www.bbc.co.uk/news/articles/cgqd9zkkvlyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 16, 2026",
-      "description": "Nvidia, OpenAI and Anthropic are all now selling their own limited edition fashion lines."
-    },
-    {
       "title": "Uncontrolled AI could lead to 'silicon species' rivalling humans, warns Microsoft",
       "url": "https://www.bbc.co.uk/news/articles/c6n07ypqz8kzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 17, 2026",
       "description": "Mustafa Suleyman says he believes rival AI firm Anthropic is in effect teaching Claude it \"may be conscious\"."
+    },
+    {
+      "title": "Would you buy branded clothing from your favourite tech firm?",
+      "url": "https://www.bbc.co.uk/news/articles/cgqd9zkkvlyo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 16, 2026",
+      "description": "Nvidia, OpenAI and Anthropic are all now selling their own limited edition fashion lines."
     },
     {
       "title": "OpenAI reveals six more safety issues and unveils plan to disclose incidents",
@@ -3652,7 +3658,7 @@
       "title": "Interest rates held but Bank signals rise if energy prices stay high",
       "url": "https://www.bbc.co.uk/news/articles/cm4gjrxez1q0o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 17, 2026",
-      "description": "Rates are held for the sixth time in a row but the Bank says they are likely to rise if high energy prices continue."
+      "description": "Rates are held for the sixth time in a row but the Bank of England says high energy prices make a future rise more likely."
     },
     {
       "title": "What's happening to UK interest rates and what does it mean for mortgages?",
@@ -3739,6 +3745,36 @@
       "description": "The number of shoplifting offences recorded in England and Wales in 2025-26 is still above pre-pandemic levels."
     },
     {
+      "title": "China faces oil challenge as prices soar and supply options narrow",
+      "url": "https://www.aljazeera.com/news/2026/9/17/china-faces-oil-challenge-as-prices-soar-and-supply-options-narrow?traffic_source=rss",
+      "date": "September 17, 2026",
+      "description": "Beijing is drawing on vast reserves and seeking alternative crude as shipping disruption continues."
+    },
+    {
+      "title": "India-Pakistan navy ship collision sparks alarm over unintended escalation",
+      "url": "https://www.aljazeera.com/news/2026/9/17/india-pakistan-navy-ship-collision-sparks-alarm-over-unintended-escalation?traffic_source=rss",
+      "date": "September 17, 2026",
+      "description": "Pakistan says an Indian warship entered its EEZ, while India says the collision occurred in international waters."
+    },
+    {
+      "title": "How far will Egypt go to help Saudi Arabia secure the Red Sea?",
+      "url": "https://www.aljazeera.com/news-analysis/2026/9/17/how-far-will-egypt-go-to-help-saudi-arabia-secure-the-red-sea?traffic_source=rss",
+      "date": "September 17, 2026",
+      "description": "Regional analysts highlight the growing security alignment between Cairo and Riyadh amid escalating Red Sea tensions."
+    },
+    {
+      "title": "Real Madrid fan group demands Mbappe apology for Ceuta shirt snub",
+      "url": "https://www.aljazeera.com/sports/2026/9/17/real-madrid-fan-group-demands-mbappe-apologies-over-ceuta-shirt-snub?traffic_source=rss",
+      "date": "September 17, 2026",
+      "description": "Mbappe, Vinicius Jr and Ibrahima Konate wore a tribute shirt partially rolled up ahead of Madrid's 3-2 win at Elche."
+    },
+    {
+      "title": "Sweden prime minister to resign as left-wing bloc seals narrow election win",
+      "url": "https://www.aljazeera.com/news/2026/9/17/sweden-prime-minister-to-resign-as-left-wing-bloc-seals-narrow-election-win?traffic_source=rss",
+      "date": "September 17, 2026",
+      "description": "⁠Sweden's ⁠centre-right Prime Minister Ulf Kristersson said he will resign after losing the parliamentary elections."
+    },
+    {
       "title": "Canada’s Carney welcomes EU’s associated membership proposal",
       "url": "https://www.aljazeera.com/news/2026/9/17/canadas-carney-welcomes-eus-associated-membership-proposal?traffic_source=rss",
       "date": "September 17, 2026",
@@ -3821,36 +3857,6 @@
       "url": "https://www.aljazeera.com/opinions/2026/9/17/pernicious-states-towards-a-new-grammar-of-international-relations?traffic_source=rss",
       "date": "September 17, 2026",
       "description": "We have names for weak and failing states. We need one for superpowers that cause global harm."
-    },
-    {
-      "title": "Netanyahu threatens to revoke Israeli citizenship of NAZA filmmakers",
-      "url": "https://www.aljazeera.com/news/2026/9/17/netanyahu-threatens-to-revoke-israeli-citizenship-of-naza-filmmakers?traffic_source=rss",
-      "date": "September 17, 2026",
-      "description": "Israeli prime minister pledges to advance two bills aimed at addressing the 'immense damage' done to Israeli soldiers."
-    },
-    {
-      "title": "Palestinians use radio to navigate Israeli occupation and pogroms",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/17/09-17-reported-nida-ibrahim-owb-violence-mp4?traffic_source=rss",
-      "date": "September 17, 2026",
-      "description": "Al Jazeera’s Nida Ibrahim explains how Palestinians use local radio to navigate Israel's occupation and settler pogroms."
-    },
-    {
-      "title": "‘Poor bear the impact’: Sugar prices soar in India, souring festive season",
-      "url": "https://www.aljazeera.com/features/2026/9/17/poor-bear-the-impact-sugar-prices-soar-in-india-souring-festive-season?traffic_source=rss",
-      "date": "September 17, 2026",
-      "description": "India is one of the world's largest sugar consumers, but usually produces much more."
-    },
-    {
-      "title": "Israel weaponises AI for West Bank demolitions",
-      "url": "https://www.aljazeera.com/news/2026/9/17/israel-weaponises-ai-for-west-bank-demolitions?traffic_source=rss",
-      "date": "September 17, 2026",
-      "description": "AI tools push forced evictions of Palestinians, automating demolitions in occupied territories under Israeli control."
-    },
-    {
-      "title": "OpenAI reports more incidents of models acting deceptively",
-      "url": "https://www.aljazeera.com/news/2026/9/17/openai-reports-more-incidents-of-models-acting-deceptively?traffic_source=rss",
-      "date": "September 17, 2026",
-      "description": "The ChatGPT creator says it is introducing a public reporting framework to share unexpected AI behaviour."
     }
   ]
 }
