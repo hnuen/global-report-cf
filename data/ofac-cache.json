@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-18T13:07:46.949Z",
+  "updatedAt": "2026-09-18T15:08:10.446Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260918",
+      "code": "20260918",
+      "title": "Expiration of Emergency With Respect to the Situation in Ethiopia; Ethiopia-related Designations Removals; Issuance of Amended Russia-related General License and Associated Frequently Asked Questions",
+      "date": "September 18, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260917",
       "code": "20260917",
@@ -54,12 +60,6 @@
       "code": "20260902",
       "title": "Reminder to file the 2026 Annual Report of Blocked Property; Issuance of Amended Venezuela-related General Licenses and Frequently Asked Question",
       "date": "September 02, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260828",
-      "code": "20260828",
-      "title": "Iran-related and Counter Terrorism Designations",
-      "date": "August 28, 2026"
     }
   ],
   "civilPenalties": [
@@ -1161,8 +1161,7 @@
           "date": "August 24, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7961/download?inline",
-          "datePdf": true,
-          "dateConfident": false
+          "datePdf": true
         },
         {
           "number": "G",
@@ -1170,8 +1169,7 @@
           "date": "August 24, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7966/download?inline",
-          "datePdf": true,
-          "dateConfident": false
+          "datePdf": true
         },
         {
           "number": "J-1",
@@ -1179,8 +1177,7 @@
           "date": "July 29, 2016",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7971/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "L",
@@ -1188,17 +1185,15 @@
           "date": "October 8, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48626/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "8A",
-          "title": "Authorizing Certain Humanitarian Trade Transactions Involving the Central Bank of Iran or the National Iranian Oil Company",
+          "title": "Iran General License 8A",
           "date": "February 27, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48841/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "Q",
@@ -1206,8 +1201,7 @@
           "date": "May 20, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934291/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "T",
@@ -1610,7 +1604,7 @@
     "russian-harmful-foreign-activities-sanctions": {
       "name": "Russian Harmful Foreign Activities Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions",
-      "lastUpdated": "Sep 16, 2026",
+      "lastUpdated": "Sep 18, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -2103,11 +2097,11 @@
           "datePdf": true
         },
         {
-          "number": "131I",
-          "title": "Russia-related General License 131I",
+          "number": "131J",
+          "title": "Russia-related General License 131J",
           "date": "April 14, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/936731/download?inline"
+          "url": "https://ofac.treasury.gov/media/936951/download?inline"
         },
         {
           "number": "132",
@@ -2562,12 +2556,11 @@
       "generalLicenses": [
         {
           "number": "2A",
-          "title": "Authorizing Certain New Debt, New Equity, and Securities Transactions Involving PDV Holding, Inc. and CITGO Holding, Inc. ( a)",
+          "title": "Venezuela General License 2A",
           "date": "August 25, 2017",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34121/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "3I",
@@ -2583,17 +2576,15 @@
           "date": "April 17, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31741/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "5Z",
-          "title": "Authorizing Certain Transactions Related to the Petróleos de Venezuela, S.A. 2020 8.5 Percent Bond on or After November 5, 2026",
+          "title": "Venezuela General License 5Z",
           "date": "August 3, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936946/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "7C",
@@ -2617,134 +2608,119 @@
           "date": "January 28, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34131/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "15C",
-          "title": "Authorizing Transactions Involving Certain Banks for Certain Entities ( a)",
+          "title": "Venezuela General License 15C",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/33126/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "16C",
-          "title": "Authorizing Maintenance of U.S. Person Accounts and Noncommercial, Personal Remittances Involving Certain Banks",
+          "title": "Venezuela General License 16C",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/33121/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "18A",
-          "title": "Authorizing Certain Transactions Involving Integraci6n Administradora de Fondos de Ahorro Previsional, S.A",
+          "title": "Venezuela General License 18A",
           "date": "March 22, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34126/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "21",
-          "title": "Entries in Certain Accounts for Normal Service Charges and Payments and Transfers to Blocked Accounts in U.S. Financial Institutions Authorized",
+          "title": "Venezuela General License 21",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/46421/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "22",
-          "title": "Venezuela's Mission to the United Nations",
+          "title": "Venezuela General License 22",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/30601/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "23",
-          "title": "Third-country Diplomatic and Consular Funds Transfers Authorized",
+          "title": "Venezuela General License 23",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34116/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "24A",
-          "title": "Certain Transactions Involving the Government of Venezuela Related to Telecommunications and Mail Authorized",
+          "title": "Venezuela General License 24A",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935731/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "25",
-          "title": "Exportation of Certain Services, Software, Hardware, and Technology Incident to the Exchange of Communications over the Internet Authorized",
+          "title": "Venezuela General License 25",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31761/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "26",
-          "title": "Emergency and Certain Other Medical Services Authorized",
+          "title": "Venezuela General License 26",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31766/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "27",
-          "title": "Certain Transactions Related to Patents, Trademarks, and Copyrights Authorized ( a)",
+          "title": "Venezuela General License 27",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34111/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "29",
-          "title": "Certain Transactions Involving the Government of Venezuela in Support of Certain Nongovernmental Organizations' Activities Authorized",
+          "title": "Venezuela General License 29",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31771/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "30B",
-          "title": "Authorizing Certain Transactions Necessary to Port and Airport Operations",
+          "title": "Venezuela General License 30B",
           "date": "February 2, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934996/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "31B",
-          "title": "Certain Transactions Involving the IV Venezuelan National Assembly and Certain Other Persons",
+          "title": "Venezuela General License 31B",
           "date": "January 4, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/930241/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "32",
-          "title": "Authorizing Certain Transactions Related to Personal Maintenance of Individuals Who Are U.S. Persons Residing in Venezuela",
+          "title": "Venezuela General License 32",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34101/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "33",
@@ -3089,6 +3065,12 @@
   ],
   "bbcNews": [
     {
+      "title": "Russian hybrid attacks against Europe intensifying, says Macron",
+      "url": "https://www.bbc.co.uk/news/articles/cm2dw1w9d3yjo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 18, 2026",
+      "description": "The French president says he has tasked the government with protecting critical infrastructure and defence industry sites."
+    },
+    {
       "title": "UN experts say grounds to believe US committed war crimes in Iran strikes",
       "url": "https://www.bbc.co.uk/news/articles/cm9w4n5nverdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 17, 2026",
@@ -3115,6 +3097,30 @@
   ],
   "ajNews": [
     {
+      "title": "Russia seizes assets of French firms, summons UK envoy over Ukraine support",
+      "url": "https://www.aljazeera.com/news/2026/9/18/russia-seizes-assets-of-french-firms-summons-uk-envoy-over-ukraine-support?traffic_source=rss",
+      "date": "September 18, 2026",
+      "description": "Kremlin calls UK's support for Ukraine an endorsement of 'terrorism' after recent escalation in weapons supply."
+    },
+    {
+      "title": "The cost of Iran’s regional leverage",
+      "url": "https://www.aljazeera.com/opinions/2026/9/18/the-cost-of-irans-regional-leverage?traffic_source=rss",
+      "date": "September 18, 2026",
+      "description": "Tehran’s use of pressure across the region is putting its rapprochement with Gulf states under increasing strain."
+    },
+    {
+      "title": "US voter opposition to war on Iran grows to new highs: Poll",
+      "url": "https://www.aljazeera.com/news/2026/9/18/us-voter-opposition-to-war-on-iran-grows-to-new-highs-poll?traffic_source=rss",
+      "date": "September 18, 2026",
+      "description": "Poll reveals 71 percent in US believe Trump's team lacks a clear strategy for resolving the conflict."
+    },
+    {
+      "title": "As Houthis grab Bab al-Mandeb, US appears willing to watch from sidelines",
+      "url": "https://www.aljazeera.com/news/2026/9/18/as-houthis-grab-bab-al-mandeb-us-appears-willing-to-watch-from-sidelines?traffic_source=rss",
+      "date": "September 18, 2026",
+      "description": "Stretched by its war with Iran, Washington may have little choice but to trust Houthi assurances on shipping."
+    },
+    {
       "title": "The view from Russia: ‘No party can be antiwar’ in parliamentary election",
       "url": "https://www.aljazeera.com/news/2026/9/18/the-view-from-russia-no-party-can-be-antiwar-in-parliamentary-election?traffic_source=rss",
       "date": "September 18, 2026",
@@ -3137,30 +3143,6 @@
       "url": "https://www.aljazeera.com/news/2026/9/18/my-children-did-not-attack-iran-2bn-south-asians-suffer-from-distant-war?traffic_source=rss",
       "date": "September 18, 2026",
       "description": "A quarter of the world’s population faces a surging cost of living crisis because of the wars in the Middle East."
-    },
-    {
-      "title": "Israel is killing the people who could end its wars",
-      "url": "https://www.aljazeera.com/opinions/2026/9/18/israel-is-killing-the-people-who-could-end-its-wars?traffic_source=rss",
-      "date": "September 18, 2026",
-      "description": "From Iran to Gaza and Lebanon, assassinations have repeatedly removed figures capable of negotiating an end to conflict."
-    },
-    {
-      "title": "Ukraine fires drone barrage as Russia launches elections",
-      "url": "https://www.aljazeera.com/news/2026/9/18/ukraine-fires-drone-barrage-as-russia-launches-elections?traffic_source=rss",
-      "date": "September 18, 2026",
-      "description": "Russia's first parliamentary election since the invasion opens with no antiwar party on the ballot."
-    },
-    {
-      "title": "Why the Kremlin fears even the ‘managed opposition’ in Russia",
-      "url": "https://www.aljazeera.com/opinions/2026/9/18/why-the-kremlin-fears-even-the-managed-opposition-in-russia?traffic_source=rss",
-      "date": "September 18, 2026",
-      "description": "The risk of a protest vote was too high at the Duma elections so a pre-election crackdown was carried out."
-    },
-    {
-      "title": "‘Outrageous lies’: How Israeli voters are shrugging off Western sanctions",
-      "url": "https://www.aljazeera.com/news/2026/9/18/outrageous-lies-how-israeli-voters-are-shrugging-off-western-sanctions?traffic_source=rss",
-      "date": "September 18, 2026",
-      "description": "New sanctions highlight Israel's isolation, yet analysts say they won't sway voters before October's elections."
     }
   ],
   "occNews": [
@@ -3210,13 +3192,6 @@
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260819a.htm",
       "date": "August 19, 2026",
       "description": "Minutes of the Federal Open Market Committee, July 28–29, 2026",
-      "category": "Monetary Policy"
-    },
-    {
-      "title": "Federal Reserve issues FOMC statement",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
-      "date": "July 29, 2026",
-      "description": "Federal Reserve issues FOMC statement",
       "category": "Monetary Policy"
     }
   ],
@@ -3428,7 +3403,7 @@
       "description": "The unharmed horse escaped from its owner before the start of a parade in New Mexico"
     },
     {
-      "title": "Flight chaos caused by software defect, says air traffic control body",
+      "title": "Flight chaos caused by 'millisecond' software defect, report says",
       "url": "https://www.bbc.co.uk/news/articles/cw0kl1571lpmo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 18, 2026",
       "description": "The failure led to more than 2,000 flights being cancelled and hundreds of thousands of passengers affected."
@@ -3440,10 +3415,10 @@
       "description": "The share of UK mortgages with smaller deposits is the highest it's been since 2008. The BBC spoke to borrowers about how they manage the risks."
     },
     {
-      "title": "Healey to ask EU finance ministers to let UK into Made in Europe scheme",
-      "url": "https://www.bbc.co.uk/news/articles/cr6240ej07ejo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "British Steel plan lacks credibility, MPs say",
+      "url": "https://www.bbc.co.uk/news/articles/cklyjzv4nl7wo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 18, 2026",
-      "description": "The chancellor wants the Made in Europe programme to deepen ties with the UK \"rather than erecting new barriers\"."
+      "description": "A committee report says the government has not set out how British Steel will become profitable."
     },
     {
       "title": "Thames Water rescue deal should be rejected - MPs",
@@ -3452,7 +3427,7 @@
       "description": "A report on the future of Thames Water, urging the government to take action, has been published."
     },
     {
-      "title": "Brewdog's unpaid workers to receive nothing after takeover deal",
+      "title": "'Insufficient funds' to pay Brewdog creditors after takeover deal",
       "url": "https://www.bbc.co.uk/news/articles/cw1mvjyv937eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 18, 2026",
       "description": "Administrators say about £489,000 was owed for staff wages and holiday pay and £2.4m was owed to HMRC for unpaid VAT."
@@ -3462,6 +3437,12 @@
       "url": "https://www.bbc.co.uk/news/articles/c79g0j3d4q9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 17, 2026",
       "description": "Training systems that allow robots to negotiate the real world are getting more sophisticated."
+    },
+    {
+      "title": "Healey to ask EU finance ministers to let UK into Made in Europe scheme",
+      "url": "https://www.bbc.co.uk/news/articles/cr6240ej07ejo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 18, 2026",
+      "description": "The chancellor wants the Made in Europe programme to deepen ties with the UK \"rather than erecting new barriers\"."
     },
     {
       "title": "Early Bowie music available to stream for first time",
@@ -3582,12 +3563,6 @@
       "url": "https://www.bbc.co.uk/news/videos/cwz0zpyzrlr1o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 16, 2026",
       "description": "The BBC’s Samira Hussain explains why some could see increased interest rates for mortgages and business loans."
-    },
-    {
-      "title": "Do you feel guilty when calling in sick at work? This might be why...",
-      "url": "https://www.bbc.co.uk/news/articles/ce8e70x3pjzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 15, 2026",
-      "description": "As many as half of people report working when sick. The reasons for this are complex, experts say."
     },
     {
       "title": "Would you buy branded clothing from your favourite tech firm?",
@@ -3716,6 +3691,12 @@
       "description": "High Streets have declined in recent years. What does this tell us about the UK?"
     },
     {
+      "title": "Dragon Deborah opens with a terrible negotiation tactic",
+      "url": "https://www.bbc.co.uk/news/videos/cwkgxlze1pr9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 18, 2026",
+      "description": "Deborah Meaden makes a bold opening move in response to a pitch."
+    },
+    {
       "title": "Former shoplifter ran 'steal-to-order' Whatsapp group",
       "url": "https://www.bbc.co.uk/news/videos/cqy0z3w9r17lo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 18, 2026",
@@ -3740,10 +3721,70 @@
       "description": "Katy Watson explores Australia's relationship with China - partner, rival or 'frenemy'?"
     },
     {
-      "title": "Watch: How will higher interest rates impact US consumers?",
-      "url": "https://www.bbc.co.uk/news/videos/cmx2zw08dvk9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 16, 2026",
-      "description": "The BBC's Samira Hussain looks at the factors considered in the increase by the Federal Reserve and what it could mean for the US economy."
+      "title": "Real Madrid President says Ceuta visit not related to ‘recent news’",
+      "url": "https://www.aljazeera.com/sports/2026/9/18/real-madrid-president-says-ceuta-visit-not-related-to-recent-news?traffic_source=rss",
+      "date": "September 18, 2026",
+      "description": "Real Madrid stars including Kylian Mbappe rolled up T-shirts showing support for Ceuta, but President trip 'unrelated'."
+    },
+    {
+      "title": "Real Madrid’s Kylian Mbappe ends Nike partnership to join Swiss brand On",
+      "url": "https://www.aljazeera.com/sports/2026/9/18/real-madrids-kylian-mbappe-ends-nike-partnership-to-join-swiss-brand-on?traffic_source=rss",
+      "date": "September 18, 2026",
+      "description": "On, which is set to launch its first football boots next year, also appointed Thierry Henry as its football director."
+    },
+    {
+      "title": "New Bolivian cat claws its way into species list: What we meow",
+      "url": "https://www.aljazeera.com/news/2026/9/18/new-bolivian-cat-claws-its-way-into-species-list-what-we-meow?traffic_source=rss",
+      "date": "September 18, 2026",
+      "description": "Purrfectly new to science: the first new wild cat found in over a century proves that cats do have nine (secret) lives."
+    },
+    {
+      "title": "Barcelona’s Lamine Yamal says he has experienced racism ‘a thousand times’",
+      "url": "https://www.aljazeera.com/sports/2026/9/18/barcelonas-lamine-yamal-says-he-has-experienced-racism-a-thousand-times?traffic_source=rss",
+      "date": "September 18, 2026",
+      "description": "Spain's Lamine Yamal says most racism he has suffered has come from people unaware of their own comments or behaviour."
+    },
+    {
+      "title": "Ronaldo keeps Portugal place for Nations League as Jesus names first squad",
+      "url": "https://www.aljazeera.com/sports/2026/9/18/ronaldo-keeps-portugal-place-for-nations-league-as-jesus-names-first-squad?traffic_source=rss",
+      "date": "September 18, 2026",
+      "description": "Ex-Manchester United and Real Madrid forward Cristiano Ronaldo named in Portugal squad to face ⁠Norway and Denmark."
+    },
+    {
+      "title": "Video: Students flee deadly school shooting in the Philippines",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/18/video-students-flee-deadly-school-shooting-in-the-philippines?traffic_source=rss",
+      "date": "September 18, 2026",
+      "description": "A 16-year-old suspected gunman has shot two students dead and injured several others at a school in the Philippines."
+    },
+    {
+      "title": "FIFA’s Infantino ‘must go, no ifs or buts’, blasts German FA vice president",
+      "url": "https://www.aljazeera.com/sports/2026/9/18/fifas-infantino-must-go-no-ifs-or-buts-says-german-fa-vice-president?traffic_source=rss",
+      "date": "September 18, 2026",
+      "description": "Hans-Joachim Watzke, one of German football's vice-presidents, adds to list calling for Gianni Infantino's resignation."
+    },
+    {
+      "title": "Chinese ship rams Philippines gov’t vessel in South China Sea: Coastguard",
+      "url": "https://www.aljazeera.com/news/2026/9/18/chinese-ship-rams-philippines-govt-vessel-in-south-china-sea-coastguard?traffic_source=rss",
+      "date": "September 18, 2026",
+      "description": "Philippine Coast Guard accuses China of dangerous military manoeuvres near Palawan province."
+    },
+    {
+      "title": "Pakistan pledges full committment to defence of Saudi Arabia",
+      "url": "https://www.aljazeera.com/news/2026/9/18/pakistan-pledges-full-committment-to-defence-of-saudi-arabia?traffic_source=rss",
+      "date": "September 18, 2026",
+      "description": "Assurance comes amid questions over Pakistan and Turkiye's stance on Riyadh's fight with Houthis following defence pact."
+    },
+    {
+      "title": "Asian Games 2026: Dates, venues, sports and a growing accommodation crisis",
+      "url": "https://www.aljazeera.com/sports/2026/9/18/asian-games-2026-dates-venues-sports-and-a-growing-accommodation-crisis?traffic_source=rss",
+      "date": "September 18, 2026",
+      "description": "More than 11,000 athletes from 45 countries will compete at world’s second-largest multisport event."
+    },
+    {
+      "title": "Why does Canada want to join the Europe-led JEF military partnership?",
+      "url": "https://www.aljazeera.com/news/2026/9/18/why-does-canada-want-to-join-the-europe-led-jef-military-partnership?traffic_source=rss",
+      "date": "September 18, 2026",
+      "description": "This is the latest step in Canada's bid to move closer to Europe amid bitter trade war with the US."
     },
     {
       "title": "How fantasy fans are keeping a Turkish blacksmithing tradition alive",
@@ -3780,72 +3821,6 @@
       "url": "https://www.aljazeera.com/sports/2026/9/18/palmer-and-alexander-arnold-recalled-after-england-world-cup-snub?traffic_source=rss",
       "date": "September 18, 2026",
       "description": "Cole Palmer and Trent Alexander-Arnold back for Thomas Tuchel in Nations League, but still no place for Phil Foden."
-    },
-    {
-      "title": "Bomb attack at Pakistan mosque kills at least 16 people, injures 56",
-      "url": "https://www.aljazeera.com/news/2026/9/18/bomb-attack-at-pakistan-mosque-kills-at-least-15-injures-50?traffic_source=rss",
-      "date": "September 18, 2026",
-      "description": "Attack not immediately claimed, but ISIL and Pakistan Taliban (TTP) active in the region and regularly target troops."
-    },
-    {
-      "title": "‘This is a war’: South Africa battles femicide as women’s bodies pile up",
-      "url": "https://www.aljazeera.com/news/2026/9/18/this-is-a-war-south-africa-battles-femicide-as-womens-bodies-pile-up?traffic_source=rss",
-      "date": "September 18, 2026",
-      "description": "Bodies of nine women have been found in a Johannesburg neighbourhood in two months, as worries grow over women's safety."
-    },
-    {
-      "title": "India star Sooryavanshi urged to be patient by coach Gambhir",
-      "url": "https://www.aljazeera.com/sports/2026/9/18/india-star-sooryavanshi-urged-to-be-patient-says-coach-gambhir?traffic_source=rss",
-      "date": "September 18, 2026",
-      "description": "Vaibhav Sooryavanshi told to be patient after playing back up to Abhishek Sharma and Sanju Samson in Sri Lanka series."
-    },
-    {
-      "title": "Bayern and England’s Kane not focused on Ballon d’Or despite 73-goal season",
-      "url": "https://www.aljazeera.com/sports/2026/9/18/kane-not-focused-on-ballon-dor-despite-73-goal-season?traffic_source=rss",
-      "date": "September 18, 2026",
-      "description": "Harry Kane could become first Ballon d'Or from England since 2001, but striker focused on Bayern Munich trophies."
-    },
-    {
-      "title": "Video: Influencers accused of exploiting Nepal flood survivors",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/18/video-influencers-accused-of-exploiting-nepal-flood-survivors?traffic_source=rss",
-      "date": "September 18, 2026",
-      "description": "‘Aid influencers’ are being accused of exploiting Nepal flood victims to boost social media followers."
-    },
-    {
-      "title": "Israel would rather not watch NAZA",
-      "url": "https://www.aljazeera.com/opinions/2026/9/18/israel-would-rather-not-watch-naza?traffic_source=rss",
-      "date": "September 18, 2026",
-      "description": "The backlash against the Gaza documentary is part of a broader refusal to confront the reality of the genocide."
-    },
-    {
-      "title": "‘Just ask Grok’: How ISIL is using Big Tech’s AI to build bombs",
-      "url": "https://www.aljazeera.com/news/2026/9/18/just-ask-grok-how-isil-is-using-big-techs-ai-to-build-bombs?traffic_source=rss",
-      "date": "September 18, 2026",
-      "description": "Evidence shared exclusively with Al Jazeera shows ISIL supporters sharing ways to bypass AI safeguards."
-    },
-    {
-      "title": "Indonesia acquires first aircraft carrier amid military upgrade",
-      "url": "https://www.aljazeera.com/news/2026/9/18/indonesia-acquires-first-aircraft-carrier-amid-military-upgrade?traffic_source=rss",
-      "date": "September 18, 2026",
-      "description": "Indonesia says vessel will be used to aid disaster relief across the archipelago."
-    },
-    {
-      "title": "Philippines school shooting leaves at least three dead, including gunman",
-      "url": "https://www.aljazeera.com/news/2026/9/18/philippines-school-shooting-kills-at-least-two?traffic_source=rss",
-      "date": "September 18, 2026",
-      "description": "At least eight people were also injured in the country's third deadly school shooting since June."
-    },
-    {
-      "title": "In Yemen, war at home and in the region drives up prices",
-      "url": "https://www.aljazeera.com/features/2026/9/18/in-yemen-war-at-home-and-in-the-region-drives-up-prices?traffic_source=rss",
-      "date": "September 18, 2026",
-      "description": "Families in Sanaa brace for higher food and transport costs after first fuel price increase in four years."
-    },
-    {
-      "title": "Nigerian police probe death in custody of 37 illegal mining suspects",
-      "url": "https://www.aljazeera.com/news/2026/9/18/nigerian-police-probe-death-in-custody-of-37-illegal-mining-suspects?traffic_source=rss",
-      "date": "September 18, 2026",
-      "description": "Officials blame disease outbreak for deaths as survivor suggests they suffocated."
     }
   ]
 }
