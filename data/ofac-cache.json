@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-19T13:07:47.350Z",
+  "updatedAt": "2026-09-19T15:07:51.773Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260918",
@@ -3114,6 +3114,12 @@
   ],
   "ajNews": [
     {
+      "title": "An unaffordable car market highlights Iran’s cost-of-living crisis",
+      "url": "https://www.aljazeera.com/economy/2026/9/19/an-unaffordable-car-market-highlights-irans-cost-of-living-crisis?traffic_source=rss",
+      "date": "September 19, 2026",
+      "description": "Some officials and state media have long openly described the industry as a ‘mafia’ system."
+    },
+    {
       "title": "US lifts sanctions on Eritrea ‘to advance US regional interests’ in Red Sea",
       "url": "https://www.aljazeera.com/news/2026/9/19/us-lifts-sanctions-on-eritrea-imposed-during-conflict-in-ethiopias-tigray?traffic_source=rss",
       "date": "September 19, 2026",
@@ -3136,12 +3142,6 @@
       "url": "https://www.aljazeera.com/economy/2026/9/19/turkiye-revokes-operating-licence-of-irans-bank-mellat?traffic_source=rss",
       "date": "September 19, 2026",
       "description": "The Iranian lender has faced years of Western sanctions over alleged ties to Tehran's nuclear programme."
-    },
-    {
-      "title": "Russia’s elections are more than political theatre",
-      "url": "https://www.aljazeera.com/opinions/2026/9/19/russias-elections-are-more-than-political-theatre?traffic_source=rss",
-      "date": "September 19, 2026",
-      "description": "For the Kremlin, parliamentary elections remain a mechanism for political participation, feedback and legitimacy."
     }
   ],
   "occNews": [
@@ -3258,10 +3258,10 @@
   ],
   "regionsNews": [
     {
-      "title": "US and Denmark reach deal over Greenland after Trump annexation threats",
+      "title": "Nato welcomes Greenland deal as Trump says it will give US 'permanent security control'",
       "url": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 19, 2026",
-      "description": "Denmark and Greenland have welcomed the deal, which Trump claims will give the US \"permanent control over security and all other needs\" in the Danish territory."
+      "description": "Denmark and the US have reached an agreement after months of threats from Donald Trump to annex the territory."
     },
     {
       "title": "Trump says he is banning CNN and Politico from White House",
@@ -3384,6 +3384,12 @@
       "description": "Queensland's Fitzroy River has been selected for the 2032 Games, despite concerns over the course - and its inhabitants."
     },
     {
+      "title": "'Enough is enough': Women protest after string of murders near Johannesburg",
+      "url": "https://www.bbc.co.uk/news/videos/cm4gjxq1dx2eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 19, 2026",
+      "description": "The police have since set up a task team to investigate the murders and have urged women in the Kempton Park area to avoid walking or running alone \"particularly in isolated areas\"."
+    },
+    {
       "title": "Is the Kennedy Center losing 'hundreds of millions of dollars'?",
       "url": "https://www.bbc.co.uk/news/videos/cqy4zw4xr717o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 18, 2026",
@@ -3400,12 +3406,6 @@
       "url": "https://www.bbc.co.uk/news/videos/c6wyz8kk2nepo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 17, 2026",
       "description": "Ties between Canada and the European Union have been getting closer as trade dispute with the US continue."
-    },
-    {
-      "title": "Inside Singapore's 'Fort Knox' for city's $2bn dirty money auction",
-      "url": "https://www.bbc.co.uk/news/videos/cmew984dq92lo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 16, 2026",
-      "description": "The BBC goes inside a fortified storage facility to view luxury goods seized by police that are now up for auction."
     },
     {
       "title": "Flight chaos caused by 'millisecond' software defect, report says",
@@ -3720,6 +3720,36 @@
       "description": "Katy Watson explores Australia's relationship with China - partner, rival or 'frenemy'?"
     },
     {
+      "title": "Aston Villa compound Tottenham’s misery despite Spurs ending goal drought",
+      "url": "https://www.aljazeera.com/sports/2026/9/19/aston-villa-compound-tottenhams-misery-despite-spurs-ending-goal-drought?traffic_source=rss",
+      "date": "September 19, 2026",
+      "description": "Unai Emery's side get first league win of season with goals from Johan Manzambi, Nicolas Jackson and Emi Buendia."
+    },
+    {
+      "title": "Atletico Madrid vs Real Madrid: La Liga – preview, team news, prediction",
+      "url": "https://www.aljazeera.com/sports/2026/9/19/atletico-madrid-vs-real-madrid-la-liga-preview-team-news?traffic_source=rss",
+      "date": "September 19, 2026",
+      "description": "Real Madrid coach Jose Mourinho admits his team does not know how to control matches before Sunday's La Liga clash."
+    },
+    {
+      "title": "Fear and anger in South Africa as bodies of nine women found: What we know",
+      "url": "https://www.aljazeera.com/news/2026/9/19/fear-and-anger-in-south-africa-as-bodies-of-nine-women-found-what-we-know?traffic_source=rss",
+      "date": "September 19, 2026",
+      "description": "Police examining 'all possibilities' as women in Ekurhuleni, Johannesburg, fear murders could be linked."
+    },
+    {
+      "title": "Taiwan flexes military capabilities ahead of Trump-Xi talks",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/19/09-19-taiwan-drills-minisv?traffic_source=rss",
+      "date": "September 19, 2026",
+      "description": "Taiwan has staged live-fire drills with missiles and attack drones as Donald Trump prepares to host China’s Xi Jinping."
+    },
+    {
+      "title": "Child among three Palestinians killed in Israeli attacks across Gaza",
+      "url": "https://www.aljazeera.com/news/2026/9/19/three-palestinians-killed-in-israeli-strikes-across-gaza?traffic_source=rss",
+      "date": "September 19, 2026",
+      "description": "Gaza’s Health Ministry says the son of its director general, Munir al-Bursh, is among those killed."
+    },
+    {
       "title": "What’s behind reports that the Israeli army is low on troops, equipment?",
       "url": "https://www.aljazeera.com/news/2026/9/19/whats-behind-reports-that-the-israeli-army-is-low-on-troops-equipment?traffic_source=rss",
       "date": "September 19, 2026",
@@ -3808,36 +3838,6 @@
       "url": "https://www.aljazeera.com/news/2026/9/19/naza-why-are-old-gaza-allegations-causing-new-fury-in-israel?traffic_source=rss",
       "date": "September 19, 2026",
       "description": "Israeli soldiers' Gaza testimony causes backlash across much of the country's political establishment."
-    },
-    {
-      "title": "Trump ‘settled for less’ with new US-Denmark Greenland security deal",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/19/trump-settled-for-less-with-new-us-denmark-greenland-security-deal?traffic_source=rss",
-      "date": "September 19, 2026",
-      "description": "The US-Denmark Greenland security deal gives Trump an agreement without delivering his ambition to annex the territory."
-    },
-    {
-      "title": "Ugo Ugochukwu: Road to F1",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/19/ugo-ugochukwu-road-to-f1?traffic_source=rss",
-      "date": "September 19, 2026",
-      "description": "Ugo Ugochukwu has become the first American driver to win the FIA Formula 3 Championship."
-    },
-    {
-      "title": "Could US pull one-third of troops from Europe? What that would mean",
-      "url": "https://www.aljazeera.com/news/2026/9/19/could-us-pull-one-third-of-troops-from-europe-what-that-would-mean?traffic_source=rss",
-      "date": "September 19, 2026",
-      "description": "US Pentagon is reportedly considering proposals for reducing military footprint across the Atlantic."
-    },
-    {
-      "title": "Brentford beat Chelsea 3-0 to shatter Alonso’s London honeymoon",
-      "url": "https://www.aljazeera.com/sports/2026/9/19/brentford-beat-chelsea-3-0-to-shatter-alonsos-london-honeymoon?traffic_source=rss",
-      "date": "September 19, 2026",
-      "description": "Chelsea left with one point from their last three Premier League games after a 3-0 defeat at neighbours Brentford."
-    },
-    {
-      "title": "Trump’s threats to demolish Kennedy Center sparks protest",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/19/trumps-threats-to-demolish-kennedy-center-sparks-protest?traffic_source=rss",
-      "date": "September 19, 2026",
-      "description": "Protestors gathered outside Washington’s Kennedy Center after President Trump’s plans to close the arts venue."
     }
   ]
 }
