@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-20T19:08:15.291Z",
+  "updatedAt": "2026-09-20T21:07:46.895Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260918",
@@ -3102,6 +3102,24 @@
   ],
   "ajNews": [
     {
+      "title": "Qatar PM urges Gulf security framework with Iran",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/20/qatar-pm-urges-gulf-security-framework-with-iran?traffic_source=rss",
+      "date": "September 20, 2026",
+      "description": "Qatar’s PM says, the Gulf won't be the same unless there's a framework ensuring no one is a threat to each other."
+    },
+    {
+      "title": "Qatar PM describes fallout of US-Israel war on Iran as ‘earthquake’",
+      "url": "https://www.aljazeera.com/news/2026/9/20/qatari-pm-warns-against-cycles-of-escalation-in-the-middle-east?traffic_source=rss",
+      "date": "September 20, 2026",
+      "description": "Speaking before the UN General Assembly, Sheikh Mohammed also announces a key shift in Qatar's investment strategy."
+    },
+    {
+      "title": "Qatar says it is working to revive Iran-US talks",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/20/qatar-says-it-is-working-to-revive-iran-us-talks?traffic_source=rss",
+      "date": "September 20, 2026",
+      "description": "Qatar’s Foreign Ministry spokesperson tells Bloomberg that mediators are shuttling between Iran and US to revive talks."
+    },
+    {
       "title": "Why have US prosecutors labelled China’s Huawei a criminal enterprise?",
       "url": "https://www.aljazeera.com/news/2026/9/20/why-have-us-prosecutors-labelled-chinas-huawei-a-criminal-enterprise?traffic_source=rss",
       "date": "September 20, 2026",
@@ -3118,18 +3136,6 @@
       "url": "https://www.aljazeera.com/economy/2026/9/20/whats-behind-iranian-authorities-push-for-a-mass-mobilisation-campaign?traffic_source=rss",
       "date": "September 20, 2026",
       "description": "Iran has launched a major mobilisation drive, sparking fears of renewed conflict with the US."
-    },
-    {
-      "title": "Iran win Asian Games basketball bronze amid emotional scenes",
-      "url": "https://www.aljazeera.com/sports/2026/9/20/iran-win-asian-games-basketball-bronze-amid-emotional-scenes?traffic_source=rss",
-      "date": "September 20, 2026",
-      "description": "Players celebrate podium finish that brings exemption from conscription, saying the pressure was 'out of this world'."
-    },
-    {
-      "title": "Postponing the future: War and inflation redraw marriage terms in Iran",
-      "url": "https://www.aljazeera.com/economy/2026/9/20/postponing-the-future-war-and-inflation-redraw-marriage-terms-in-iran?traffic_source=rss",
-      "date": "September 20, 2026",
-      "description": "Iran's cost of living crisis is affecting the dreams and everyday life choices of young Iranians."
     }
   ],
   "occNews": [
@@ -3288,16 +3294,16 @@
       "description": "Students spent years collecting evidence against their Indonesian principal, before falling in love."
     },
     {
+      "title": "Sister of Pakistan's ex-PM Imran Khan arrested",
+      "url": "https://www.bbc.co.uk/news/articles/cm36l2pye2kwo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 20, 2026",
+      "description": "Aleema Khanum is accused of mobilising her brother’s supporters ahead of country-wide protests."
+    },
+    {
       "title": "Nato welcomes Greenland deal as Trump says it will give US 'permanent security control'",
       "url": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 19, 2026",
       "description": "Denmark and the US have reached an agreement after months of threats from Donald Trump to annex the territory."
-    },
-    {
-      "title": "Journalists denied White House access after Trump banned some media outlets",
-      "url": "https://www.bbc.co.uk/news/articles/cj4gklz9dxplo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 19, 2026",
-      "description": "CNN, MS NOW and Politico reporters' White House press badges were confiscated, the outlets reported."
     },
     {
       "title": "Google's Gemini AI hacked three companies in security test",
@@ -3306,22 +3312,28 @@
       "description": "The AI model accessed the internet and guessed credentials to three websites, a Google official told the BBC."
     },
     {
-      "title": "Grim discoveries of murdered women spark fear in South Africa",
-      "url": "https://www.bbc.co.uk/news/articles/cjkg71e67k17o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 18, 2026",
-      "description": "Dineo Motapane is one of nine recent victims whose deaths have left a nation traumatised over the level of violence against women."
-    },
-    {
       "title": "Trump says US will form 'AI Force' and appoint an artificial intelligence tsar",
       "url": "https://www.bbc.co.uk/news/articles/cqlykr2vrv04o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 19, 2026",
       "description": "The president said his administration \"will not in any way hinder or stifle the growth\" amid amid warnings about the emergent technology."
     },
     {
+      "title": "Grim discoveries of murdered women spark fear in South Africa",
+      "url": "https://www.bbc.co.uk/news/articles/cjkg71e67k17o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 18, 2026",
+      "description": "Dineo Motapane is one of nine recent victims whose deaths have left a nation traumatised over the level of violence against women."
+    },
+    {
       "title": "Shark attack prompts rare kill order in Western Australia as victim named",
       "url": "https://www.bbc.co.uk/news/articles/cqwyzdnk442lo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 19, 2026",
       "description": "Greg O'Neill \"loved the ocean\", his family say, as police boats and helicopters patrol Perth's beaches in search of his body and the shark that attacked him."
+    },
+    {
+      "title": "Journalists denied White House access after Trump banned some media outlets",
+      "url": "https://www.bbc.co.uk/news/articles/cj4gklz9dxplo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 19, 2026",
+      "description": "CNN, MS NOW and Politico reporters' White House press badges were confiscated, the outlets reported."
     },
     {
       "title": "Millions without power as Cuba hit by latest major blackout",
@@ -3702,6 +3714,30 @@
       "description": "Katy Watson explores Australia's relationship with China - partner, rival or 'frenemy'?"
     },
     {
+      "title": "Argentina’s Left stages ‘March of Anger’ over Milei’s austerity measures",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/20/argentinas-left-stages-march-of-anger-over-mileis-austerity-measures?traffic_source=rss",
+      "date": "September 20, 2026",
+      "description": "Thousands of protesters took to the streets of Buenos Aires for the ‘March of Anger’."
+    },
+    {
+      "title": "Eighteen suspects extradited to US over Haitian president’s 2021 killing",
+      "url": "https://www.aljazeera.com/news/2026/9/20/eighteen-suspects-extradited-to-us-over-haitian-presidents-2021-killing?traffic_source=rss",
+      "date": "September 20, 2026",
+      "description": "Federal court in Florida to try men accused of orchestrating the transnational plot to kill Jovenel Moise from US soil."
+    },
+    {
+      "title": "US, China open high-level talks ahead of Trump-Xi summit",
+      "url": "https://www.aljazeera.com/economy/2026/9/20/us-china-open-high-level-talks-ahead-of-trump-xi-summit?traffic_source=rss",
+      "date": "September 20, 2026",
+      "description": "Scott Bessent and He Lifeng meet in New York for US-China talks ahead of the Trump-Xi meeting later this week."
+    },
+    {
+      "title": "France’s Macron and Canada’s Carney announce plans to build stronger ties",
+      "url": "https://www.aljazeera.com/news/2026/9/20/frances-macron-and-canadas-carney-announce-plans-to-build-stronger-ties?traffic_source=rss",
+      "date": "September 20, 2026",
+      "description": "Announcement comes as Canada seeks a closer relationship with the EU amid a trade war with the US."
+    },
+    {
       "title": "How will Saudi Arabia deal with the Houthis?",
       "url": "https://www.aljazeera.com/video/inside-story/2026/9/20/how-will-saudi-arabia-deal-with-the-houthis?traffic_source=rss",
       "date": "September 20, 2026",
@@ -3790,36 +3826,6 @@
       "url": "https://www.aljazeera.com/video/deja-vu-2/2026/9/20/jews-and-muslims-lived-together-for-centuries-did-zionism-tear-them-apart-2?traffic_source=rss",
       "date": "September 20, 2026",
       "description": "On Deja Vu, Rabbi Haim Sofer explores the history of the Neturei Karta movement’s opposition to Zionism."
-    },
-    {
-      "title": "Netanyahu tours tunnels underneath Al-Aqsa Mosque compound",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/20/netanyahu-tours-tunnels-underneath-al-aqsa-mosque-compound?traffic_source=rss",
-      "date": "September 20, 2026",
-      "description": "Israeli Prime Minister Benjamin Netanyahu and his wife, Sara, walked through tunnels beneath Al-Aqsa mosque compound."
-    },
-    {
-      "title": "Moscow attacked by more than 1,000 Ukrainian drones",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/20/moscow-attacked-by-more-than-1000-ukrainian-drones?traffic_source=rss",
-      "date": "September 20, 2026",
-      "description": "This is the moment a drone exploded as it hit an apartment building in Moscow."
-    },
-    {
-      "title": "Former Pakistan PM Imran Khan’s sister arrested before planned PTI march",
-      "url": "https://www.aljazeera.com/news/2026/9/20/former-pakistan-pm-imran-khans-sister-arrested-ahead-of-planned-pti-march?traffic_source=rss",
-      "date": "September 20, 2026",
-      "description": "Khan’s party condemns his sister’s arrest as an illegal attempt to silence her over PTI leader’s ongoing imprisonment."
-    },
-    {
-      "title": "Gaza’s children return to classrooms after years of Israeli attacks",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/20/gazas-children-return-to-classrooms-after-years-of-israeli-attacks?traffic_source=rss",
-      "date": "September 20, 2026",
-      "description": "Palestinian children have returned to classrooms after Israel destroyed Gaza’s schools."
-    },
-    {
-      "title": "Fulham 1-1 Manchester United: Premier League – as it happened",
-      "url": "https://www.aljazeera.com/sports/liveblog/2026/9/20/live-fulham-vs-manchester-united-premier-league?traffic_source=rss",
-      "date": "September 20, 2026",
-      "description": "All the updates, with build-up, predictions, team news and lineups, from our live text commentary stream coverage."
     }
   ]
 }
