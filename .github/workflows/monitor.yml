@@ -121,6 +121,11 @@ jobs:
             echo "alerting=0" >> "$GITHUB_OUTPUT"
             exit 0
           fi
+          if [ "$HTTP" = "503" ] && grep -q "error code: 1102" /tmp/resp.json; then
+            echo "::warning::Cloudflare temporarily exhausted the Worker runtime; delivery is deferred to the next scheduled run"
+            echo "alerting=0" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
           if [ "$HTTP" != "200" ]; then
             exit 1
           fi
