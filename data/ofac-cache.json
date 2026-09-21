@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T13:07:48.635Z",
+  "updatedAt": "2026-09-21T15:07:56.159Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260918",
@@ -3124,24 +3124,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/21/protests-in-texas-after-ice-agent-shoots-venezuelan-man?traffic_source=rss",
       "date": "September 21, 2026",
       "description": "Protesters gathered in the US state of Texas after an ICE agent shot a Venezuelan man during an immigration enforcement"
-    },
-    {
-      "title": "Russia election results show Putin’s party winning: What we know",
-      "url": "https://www.aljazeera.com/news/2026/9/21/russia-election-results-show-putins-party-winning-what-we-know?traffic_source=rss",
-      "date": "September 21, 2026",
-      "description": "With more than 90 percent votes counted, Putin's United Russia appears poised for a landslide win."
-    },
-    {
-      "title": "Iran’s military says US preparing to resume strikes",
-      "url": "https://www.aljazeera.com/news/2026/9/21/irans-military-says-us-preparing-to-resume-strikes?traffic_source=rss",
-      "date": "September 21, 2026",
-      "description": "Tehran threatens retaliation as Trump weighs military action while Qatar pushes to revive talks."
-    },
-    {
-      "title": "Massive explosions at Syrian army weapons depot near Aleppo",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/21/09-21-aleppo-depot-explosions-reported-mp4?traffic_source=rss",
-      "date": "September 21, 2026",
-      "description": "Explosions rocked a Syrian army ammunition depot south of Aleppo, injuring at least four people."
     }
   ],
   "occNews": [
@@ -3258,16 +3240,22 @@
   ],
   "regionsNews": [
     {
-      "title": "German Chancellor Merz calls state election a 'disaster' for his party but vows to stay on",
-      "url": "https://www.bbc.co.uk/news/articles/cvwyz29n0nn2o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Merz vows to keep coalition together for Germany's 'democratic future'",
+      "url": "https://www.bbc.co.uk/news/articles/cqm27p8enwmko?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 21, 2026",
-      "description": "Exit polls show damaging losses for Merz's centre-right CDU party in the state of Mecklenburg-Vorpommern and Berlin."
+      "description": "The chancellor has come under increasing pressure after resounding state election defeats, but says the results \"go far beyond my own person\""
     },
     {
       "title": "CNN, MS NOW and Politico to file lawsuit against Trump's White House ban",
       "url": "https://www.bbc.co.uk/news/articles/cm0e32rwvrryo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 21, 2026",
-      "description": "The US media outlets say they are defending \"the principle that the government does not decide what the press reports or publishes\"."
+      "description": "Major US networks later suspended White House TV coverage of Trump as he heads to New York for the UN summit."
+    },
+    {
+      "title": "Millions urged to evacuate as powerful Typhoon Dujuan hits Japan",
+      "url": "https://www.bbc.co.uk/news/articles/cm3wj2lexl97o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 21, 2026",
+      "description": "The country's meteorological agency had warned of an \"imminent threat to life,\" but this has now been downgraded in most areas."
     },
     {
       "title": "Seven Ethiopian rebel groups form new alliance",
@@ -3288,10 +3276,22 @@
       "description": "Switzerland captain Granit Xhaka is being investigated over an issue with his Covid-19 vaccination certificate."
     },
     {
-      "title": "Three arrested in South Africa over one of nine women's body finds",
+      "title": "Airlines criticise air traffic control as second glitch causes more disruption in UK",
+      "url": "https://www.bbc.co.uk/news/articles/cqp80p78mxx5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 21, 2026",
+      "description": "EasyJet says the latest incident \"once again calls into question the resilience\" of the system."
+    },
+    {
+      "title": "Three held over woman's murder as South Africa police investigate eight other body finds",
       "url": "https://www.bbc.co.uk/news/articles/c617j2x01epjo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 21, 2026",
       "description": "The body of Jabulile Ntimba was the ninth to be found recently in an area east of Johannesburg."
+    },
+    {
+      "title": "Google hit with €403m fine by Irish data watchdog over GDPR violations",
+      "url": "https://www.bbc.co.uk/news/articles/ck1e52v16ngxo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 21, 2026",
+      "description": "The penalty follows an inquiry launched into the tech giant six years ago, following complaints from several European consumer rights organisations."
     },
     {
       "title": "Jailed teacher convicted of sexual abuse secretly released early in Indonesia, BBC finds",
@@ -3360,22 +3360,22 @@
       "description": "Trump said the updated plans were at the request of the US military and for national security purposes."
     },
     {
-      "title": "Inside Djibouti refugee camp for thousands fleeing Houthi advance in Yemen",
-      "url": "https://www.bbc.co.uk/news/videos/c6z0z2nne11vo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Merz's political crisis threatens Germany's obsession with stability",
+      "url": "https://www.bbc.co.uk/news/articles/c6vgyz1n0v1xo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 21, 2026",
-      "description": "Fighting on Yemen's west coast has prompted thousands of people to flee by boat across the Bab al-Mandab Strait."
-    },
-    {
-      "title": "Workers came across human remains – and unearthed a mass grave of 572 people",
-      "url": "https://www.bbc.co.uk/news/articles/cm1j4kl80z56o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 20, 2026",
-      "description": "Workers in northern Sri Lanka accidentally uncovered the country's largest mass grave – and reopened wounds from its civil war."
+      "description": "Political shifts in Germany are being watched closely in Europe and beyond, Katya Adler writes."
     },
     {
       "title": "'Far from their best' to 'a joy to watch' - ranking Premier League teams' start to season",
       "url": "https://www.bbc.co.uk/sport/football/articles/cq70d74g4d8go?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 21, 2026",
       "description": "Five matches into the league season, which teams in the Premier League have impressed so far and who have disappointed?"
+    },
+    {
+      "title": "Workers came across human remains – and unearthed a mass grave of 572 people",
+      "url": "https://www.bbc.co.uk/news/articles/cm1j4kl80z56o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 20, 2026",
+      "description": "Workers in northern Sri Lanka accidentally uncovered the country's largest mass grave – and reopened wounds from its civil war."
     },
     {
       "title": "Cultural treasures are being destroyed worldwide - so why is no-one being punished?",
@@ -3388,36 +3388,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cg4d9vly636o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 19, 2026",
       "description": "Students spent years collecting evidence against their Indonesian principal, before falling in love."
-    },
-    {
-      "title": "'I don't even know if my parents are alive' - the war heroes jailed 25 years ago",
-      "url": "https://www.bbc.co.uk/news/articles/cx1l6762jeq4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 19, 2026",
-      "description": "The children of key politicians jailed 25 years ago without a trace in Eritrea want answers."
-    },
-    {
-      "title": "Trump escalates media fight after week of setbacks",
-      "url": "https://www.bbc.co.uk/news/articles/cmn8ed1xpxnyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 19, 2026",
-      "description": "An embattled Trump has injected his fight with the news media with new acrimony, writes the BBC's Anthony Zurcher."
-    },
-    {
-      "title": "Mum's viral barefoot race sparks debate over India's education crisis",
-      "url": "https://www.bbc.co.uk/news/articles/cw62m6z7m7zjo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 19, 2026",
-      "description": "The 47-year-old ran - and won - a 3km race where she hoped to win enough prize money to buy study books for her daughter."
-    },
-    {
-      "title": "Not all AI workers think the tech could kill everyone",
-      "url": "https://www.bbc.co.uk/news/articles/cm5y7qj54klpo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 19, 2026",
-      "description": "In text exchanges and conversations, multiple people who have worked for leading companies are sceptical of the warnings."
-    },
-    {
-      "title": "Tata Sons: India's corporate crown braces for upheaval amid boardroom revolt",
-      "url": "https://www.bbc.co.uk/news/articles/c670lkvdzkn2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 18, 2026",
-      "description": "The Tata boardroom battle has intensified over a re-appointment of its chairman and a diktat to go public."
     },
     {
       "title": "Inside Djibouti refugee camp for thousands fleeing Houthi advance in Yemen",
@@ -3454,6 +3424,12 @@
       "url": "https://www.bbc.co.uk/news/videos/cqy4zw4xr717o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 18, 2026",
       "description": "Records in 2024 show the venue had a surplus of millions of dollars once contributions and grants had been factored in."
+    },
+    {
+      "title": "Airlines criticise air traffic control as second glitch causes more disruption",
+      "url": "https://www.bbc.co.uk/news/articles/cqp80p78mxx5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 21, 2026",
+      "description": "EasyJet says the latest incident \"once again calls into question the resilience\" of the system."
     },
     {
       "title": "What are my rights if my flight is cancelled or delayed?",
@@ -3762,6 +3738,54 @@
       "description": "Katy Watson explores Australia's relationship with China - partner, rival or 'frenemy'?"
     },
     {
+      "title": "Is it a missile? Is it a drone? What’s the Pelican used by Ukraine?",
+      "url": "https://www.aljazeera.com/news/2026/9/21/is-it-a-missile-is-it-a-drone-whats-the-pelican-used-by-ukraine?traffic_source=rss",
+      "date": "September 21, 2026",
+      "description": "The use of the Pelican has provoked interest among military analysts as to whether it is a tactical ballistic missile."
+    },
+    {
+      "title": "Egypt’s Amina Orfi becomes youngest women’s squash world number one at 19",
+      "url": "https://www.aljazeera.com/sports/2026/9/21/egypts-amina-orfi-becomes-youngest-womens-squash-world-number-one-at-19?traffic_source=rss",
+      "date": "September 21, 2026",
+      "description": "Orfi, the reigning senior and junior world champion, topped the rankings with victory at the Qatar Classic last week."
+    },
+    {
+      "title": "What’s the US–China AI ‘hotline’ that Trump plans to pitch to Xi Jinping?",
+      "url": "https://www.aljazeera.com/news/2026/9/21/whats-the-us-china-ai-hotline-that-trump-plans-to-pitch-to-xi?traffic_source=rss",
+      "date": "September 21, 2026",
+      "description": "Washington and Beijing discuss AI hotline idea amid escalating competition and restrictions on advanced technologies."
+    },
+    {
+      "title": "Inside Kazakhstan’s push to become a regional AI centre",
+      "url": "https://www.aljazeera.com/news/2026/9/21/inside-kazakhstans-push-to-become-a-regional-ai-centre?traffic_source=rss",
+      "date": "September 21, 2026",
+      "description": "Kazakhstan accelerates AI development but experts warn of impact on the environment and human rights."
+    },
+    {
+      "title": "Swiss captain Xhaka sidelined over fake COVID-19 vaccination certificate",
+      "url": "https://www.aljazeera.com/sports/2026/9/21/swiss-captain-xhaka-sidelined-over-fake-covid-19-vaccination-certificate?traffic_source=rss",
+      "date": "September 21, 2026",
+      "description": "Switzerland's football association will reassess the situation with Xhaka after the international window closes."
+    },
+    {
+      "title": "Who is Yu Zidi, China’s 13-year-old swimming sensation?",
+      "url": "https://www.aljazeera.com/sports/2026/9/21/who-is-yu-zidi-chinas-13-year-old-swimming-sensation?traffic_source=rss",
+      "date": "September 21, 2026",
+      "description": "The teen phenomenon won her second gold medal in the 200m medley in 2:06.10 to set a new Games and Asian record."
+    },
+    {
+      "title": "Cargo ship crashes into Chinese fishing boat near Singapore",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/21/cargo-ship-crashes-into-chinese-fishing-boat-near-singapore?traffic_source=rss",
+      "date": "September 21, 2026",
+      "description": "Cargo ship crashes into Chinese fishing boat near Singapore"
+    },
+    {
+      "title": "CNN, Politico, MS NOW to sue Trump administration over White House ban",
+      "url": "https://www.aljazeera.com/news/2026/9/21/cnn-politico-ms-now-to-sue-trump-administration-over-white-house-ban?traffic_source=rss",
+      "date": "September 21, 2026",
+      "description": "Trump says ban targets ‘fake news’, which poses a ‘threat to our National Security’."
+    },
+    {
       "title": "Moroccan parties mobilise in markets and online for parliamentary elections",
       "url": "https://www.aljazeera.com/news/2026/9/21/moroccan-parties-mobilise-in-markets-and-online-for-parliamentary-elections?traffic_source=rss",
       "date": "September 21, 2026",
@@ -3844,36 +3868,6 @@
       "url": "https://www.aljazeera.com/economy/2026/9/21/australias-deaths-to-outnumber-births-by-2060s-report-says?traffic_source=rss",
       "date": "September 21, 2026",
       "description": "Number of Australians aged 85 or older projected to triple by 2065-66, according to government forecast."
-    },
-    {
-      "title": "Three South Korean military officers wounded in explosion near border",
-      "url": "https://www.aljazeera.com/news/2026/9/21/three-south-korean-officers-wounded-in-border-explosion?traffic_source=rss",
-      "date": "September 21, 2026",
-      "description": "South Korean officers injured in DMZ explosion, possibly caused by a landmine, according to local media reports."
-    },
-    {
-      "title": "Afghanistan says three killed in Pakistani air attacks",
-      "url": "https://www.aljazeera.com/news/2026/9/21/afghanistan-says-three-killed-in-pakistani-air-attacks?traffic_source=rss",
-      "date": "September 21, 2026",
-      "description": "Three members of one family killed in air raid on house in Kunar province, Afghan Taliban deputy spokesperson says."
-    },
-    {
-      "title": "Mourinho fumes at referees in news conference after Madrid derby defeat",
-      "url": "https://www.aljazeera.com/sports/2026/9/21/mourinho-fumes-at-referees-in-news-conference-after-madrid-derby-defeat?traffic_source=rss",
-      "date": "September 21, 2026",
-      "description": "Fuming Real Madrid manager waves printouts of what he believes were clear red-card tackles by Atletico Madrid players."
-    },
-    {
-      "title": "Why can’t the UN stop wars?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/21/who-actually-has-power-at-the-united-nations?traffic_source=rss",
-      "date": "September 21, 2026",
-      "description": "The UN was created to help save the world from war. More than 80 years later, conflicts and atrocities continue."
-    },
-    {
-      "title": "Meloni promises to ban burqas, niqabs in Italy’s schools",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/21/meloni-promises-to-ban-burqas-niqabs-in-italys-schools-2?traffic_source=rss",
-      "date": "September 21, 2026",
-      "description": "Italy is planning to ban the burqa and niqab in schools and cap the number of foreign students per class."
     }
   ]
 }
