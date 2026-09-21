@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T19:07:46.805Z",
+  "updatedAt": "2026-09-21T21:07:46.247Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260918",
@@ -3108,6 +3108,18 @@
   ],
   "ajNews": [
     {
+      "title": "Putin’s party wins supermajority in Russia’s parliamentary vote",
+      "url": "https://www.aljazeera.com/news/2026/9/21/pro-putin-party-wins-supermajority-amid-ramped-up-ukrainian-attacks?traffic_source=rss",
+      "date": "September 21, 2026",
+      "description": "Victory of United Russia party strengthens Putin's hand even as the war with Ukraine grows more unpopular."
+    },
+    {
+      "title": "Trump approval rating hits career low of 32% amid Iran war, high costs",
+      "url": "https://www.aljazeera.com/news/2026/9/21/trumps-approval-rating-hits-record-low-amid-iran-war-economy-fallout?traffic_source=rss",
+      "date": "September 21, 2026",
+      "description": "Republican support for Trump dips to 73 percent, down from 82 percent, as war and inflation concerns dominate polls."
+    },
+    {
       "title": "How is Europe dealing with ‘hybrid war’?",
       "url": "https://www.aljazeera.com/video/inside-story/2026/9/21/how-is-europe-dealing-with-hybrid-war?traffic_source=rss",
       "date": "September 21, 2026",
@@ -3126,7 +3138,26 @@
       "description": "Iran’s government is trying to change some work patterns to help save on fuel and energy amid struggles and shortages."
     }
   ],
-  "occNews": [],
+  "occNews": [
+    {
+      "title": "OCC Announces Enforcement Actions for September 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-79.html",
+      "date": "September 17, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for September 2026."
+    },
+    {
+      "title": "OCC Acts to Improve Transparency and Consistency to Bank Enforcement and Supervisory Standards",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-72.html",
+      "date": "August 27, 2026",
+      "description": "OCC Acts to Improve Transparency and Consistency to Bank Enforcement and Supervisory Standards OCC issues two revised policies and procedures manuals; proposes amendments to Violations of Laws and Regulations framework WASHINGTON-The Office of the Comptroller of the Currency (OCC) today announced additional actions to focus supervisory attention on the most significant risks and violations and to provide banks greater clarity, consistency and certainty in how Matters Requiring Attention (MRA) and enforcement actions are issued."
+    },
+    {
+      "title": "OCC Announces Enforcement Actions for August 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-70.html",
+      "date": "August 20, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for August 2026."
+    }
+  ],
   "economicsNews": [
     {
       "title": "Federal Reserve issues FOMC statement",
@@ -3227,7 +3258,7 @@
       "description": "The BBC's Frank Gardner speaks to some of those who have fled the war by crossing the Red Sea to Djibouti."
     },
     {
-      "title": "CNN, MS NOW and Politico file lawsuit against Trump's White House ban",
+      "title": "CNN, MS NOW and Politico to file lawsuit against Trump's White House ban",
       "url": "https://www.bbc.co.uk/news/articles/cm0e32rwvrryo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 21, 2026",
       "description": "Major US networks later suspended White House TV coverage of Trump as he heads to New York for the UN summit."
@@ -3272,7 +3303,7 @@
       "title": "Airlines criticise air traffic control as second glitch causes more disruption in UK",
       "url": "https://www.bbc.co.uk/news/articles/cqp80p78mxx5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 21, 2026",
-      "description": "Airlines are angry about the delays, with EasyJet saying the latest incident \"once again calls into question the resilience\" of the system."
+      "description": "Prime Minister Andy Burnham said further issues today \"cause even greater concern\" about the UK's air traffic control and the head of the organisation that runs it."
     },
     {
       "title": "Two charged with woman's murder as South Africa police investigate eight other body finds",
@@ -3407,16 +3438,16 @@
       "description": "The question is whether all of these incidents were isolated and unavoidable, or whether they point to something more systemic."
     },
     {
-      "title": "Paramount settles lawsuit with US states, helping clear way for $110bn merger with Warner Bros",
+      "title": "Paramount settles lawsuit with US states, clearing way for $110bn merger with Warner Bros",
       "url": "https://www.bbc.co.uk/news/articles/cm4gjr1qepr8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 21, 2026",
-      "description": "Paramount has reached a settlement with the US states in a lawsuit challenging its $110bn merger with Warner Bros"
+      "description": "The deal includes an agreement to produce 30 films a year, or Paramount will be forced to sell off parts of its company."
     },
     {
       "title": "Airlines criticise air traffic control as second glitch causes more disruption",
       "url": "https://www.bbc.co.uk/news/articles/cqp80p78mxx5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 21, 2026",
-      "description": "Airlines are angry about the delays, with EasyJet saying the latest incident \"once again calls into question the resilience\" of the system."
+      "description": "Prime Minister Andy Burnham said further issues today \"cause even greater concern\" about the UK's air traffic control and the head of the organisation that runs it."
     },
     {
       "title": "What are my rights if my flight is cancelled or delayed?",
@@ -3701,6 +3732,48 @@
       "description": "Katy Watson explores Australia's relationship with China - partner, rival or 'frenemy'?"
     },
     {
+      "title": "Trump speech inaudible as US networks boycott White House event",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/21/trump-speech-inaudible-as-us-networks-boycott-white-house-event?traffic_source=rss",
+      "date": "September 21, 2026",
+      "description": "US President Trump unveiled a new White House helicopter pad as major US TV networks stayed away in protest."
+    },
+    {
+      "title": "UN Chief Guterres calls for ban on ‘killer robots’",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/21/un-chief-guterres-calls-for-ban-on-killer?traffic_source=rss",
+      "date": "September 21, 2026",
+      "description": "In this episode of On the Record, UN Secretary-General António Guterres calls for ban on autonomous ‘killer robots’."
+    },
+    {
+      "title": "US man convicted in 2023 shooting of three Palestinian students in Vermont",
+      "url": "https://www.aljazeera.com/news/2026/9/21/us-man-convicted-in-2023-shooting-of-three-palestinian-students-in-vermont?traffic_source=rss",
+      "date": "September 21, 2026",
+      "description": "Jason Eaton faces up to life in prison after a jury rejected his insanity defence."
+    },
+    {
+      "title": "FAA halts flights to major US East Coast airports amid outage",
+      "url": "https://www.aljazeera.com/economy/2026/9/21/faa-halts-flights-to-major-us-east-coast-airports-amid-outage?traffic_source=rss",
+      "date": "September 21, 2026",
+      "description": "FAA halts East Coast flights due to equipment outage, affecting major US airports like JFK, Newark, and Philadelphia."
+    },
+    {
+      "title": "Embattled Gianni Infantino says he is open to talks over FIFA reform",
+      "url": "https://www.aljazeera.com/sports/2026/9/21/embattled-gianni-infantino-says-he-is-open-to-talks-over-fifa-reform?traffic_source=rss",
+      "date": "September 21, 2026",
+      "description": "FIFA president proposes 'consultation' with members to reform world football governing body's decision-making process."
+    },
+    {
+      "title": "UK prosecutors charge first person for Rwanda genocide",
+      "url": "https://www.aljazeera.com/news/2026/9/21/uk-prosecutors-charge-first-person-for-rwanda-genocide?traffic_source=rss",
+      "date": "September 21, 2026",
+      "description": "Vincent Brown is 'alleged to have directed and incited acts of murder and genocide carried out by others'."
+    },
+    {
+      "title": "Protesters blockade Elbit Systems factory over Israel weapons supply",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/21/protesters-blockade-elbit-systems-factory-over-israel-weapons-supply?traffic_source=rss",
+      "date": "September 21, 2026",
+      "description": "Nine protesters blocked access to Elbit Systems’ factory in Staffordshire by attaching themselves to five ‘lock-ons’."
+    },
+    {
       "title": "Photos: Gaza’s children return to class in tents and ruins",
       "url": "https://www.aljazeera.com/gallery/2026/9/21/photos-gazas-children-return-to-class-in-tents-and-ruins?traffic_source=rss",
       "date": "September 21, 2026",
@@ -3719,7 +3792,7 @@
       "description": "Football has been dragged into growing tensions over the influx of migrants from Morocco to the Spanish enclave Ceuta."
     },
     {
-      "title": "Paramount settles with US states in step towards merger with Warner Bros",
+      "title": "Paramount settles with US states, union to win Warner Bros takeover",
       "url": "https://www.aljazeera.com/economy/2026/9/21/paramount-settles-with-us-states-in-step-towards-merger-with-warner-bros?traffic_source=rss",
       "date": "September 21, 2026",
       "description": "Ellison-led Paramount will avoid daily $7m fee if the $110bn Warner Bros merger closes by September 30."
@@ -3777,60 +3850,6 @@
       "url": "https://www.aljazeera.com/news/2026/9/21/is-it-a-missile-is-it-a-drone-whats-the-pelican-used-by-ukraine?traffic_source=rss",
       "date": "September 21, 2026",
       "description": "The use of the Pelican has provoked interest among military analysts as to whether it is a tactical ballistic missile."
-    },
-    {
-      "title": "Egypt’s Amina Orfi becomes youngest women’s squash world number one at 19",
-      "url": "https://www.aljazeera.com/sports/2026/9/21/egypts-amina-orfi-becomes-youngest-womens-squash-world-number-one-at-19?traffic_source=rss",
-      "date": "September 21, 2026",
-      "description": "Orfi, the reigning senior and junior world champion, topped the rankings with victory at the Qatar Classic last week."
-    },
-    {
-      "title": "What’s the US–China AI ‘hotline’ that Trump plans to pitch to Xi Jinping?",
-      "url": "https://www.aljazeera.com/news/2026/9/21/whats-the-us-china-ai-hotline-that-trump-plans-to-pitch-to-xi?traffic_source=rss",
-      "date": "September 21, 2026",
-      "description": "Washington and Beijing discuss AI hotline idea amid escalating competition and restrictions on advanced technologies."
-    },
-    {
-      "title": "Inside Kazakhstan’s push to become a regional AI centre",
-      "url": "https://www.aljazeera.com/news/2026/9/21/inside-kazakhstans-push-to-become-a-regional-ai-centre?traffic_source=rss",
-      "date": "September 21, 2026",
-      "description": "Kazakhstan accelerates AI development but experts warn of impact on the environment and human rights."
-    },
-    {
-      "title": "Swiss captain Xhaka sidelined over fake COVID-19 vaccination certificate",
-      "url": "https://www.aljazeera.com/sports/2026/9/21/swiss-captain-xhaka-sidelined-over-fake-covid-19-vaccination-certificate?traffic_source=rss",
-      "date": "September 21, 2026",
-      "description": "Switzerland's football association will reassess the situation with Xhaka after the international window closes."
-    },
-    {
-      "title": "Who is Yu Zidi, China’s 13-year-old swimming sensation?",
-      "url": "https://www.aljazeera.com/sports/2026/9/21/who-is-yu-zidi-chinas-13-year-old-swimming-sensation?traffic_source=rss",
-      "date": "September 21, 2026",
-      "description": "The teen phenomenon won her second gold medal in the 200m medley in 2:06.10 to set a new Games and Asian record."
-    },
-    {
-      "title": "Cargo ship crashes into Chinese fishing boat near Singapore",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/21/cargo-ship-crashes-into-chinese-fishing-boat-near-singapore?traffic_source=rss",
-      "date": "September 21, 2026",
-      "description": "Cargo ship crashes into Chinese fishing boat near Singapore"
-    },
-    {
-      "title": "CNN, Politico, MS NOW sue Trump administration over White House ban",
-      "url": "https://www.aljazeera.com/news/2026/9/21/cnn-politico-ms-now-to-sue-trump-administration-over-white-house-ban?traffic_source=rss",
-      "date": "September 21, 2026",
-      "description": "Trump says ban targets ‘fake news’, which poses a ‘threat to our National Security’."
-    },
-    {
-      "title": "Moroccan parties mobilise in markets and online for parliamentary elections",
-      "url": "https://www.aljazeera.com/news/2026/9/21/moroccan-parties-mobilise-in-markets-and-online-for-parliamentary-elections?traffic_source=rss",
-      "date": "September 21, 2026",
-      "description": "Moroccan parties are pushing campaigns before the September 23 vote to secure 395 parliamentary seats."
-    },
-    {
-      "title": "NFL’s Azeez Al-Shaair honours another Palestinian girl killed by Israel",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/21/nfls-azeez-al-shaair-honours-another-palestinian-girl-killed-by-israel?traffic_source=rss",
-      "date": "September 21, 2026",
-      "description": "Azeez Al-Shaair has paid tribute to another Palestinian child killed by Israel, despite the NFL fine last week."
     }
   ]
 }
