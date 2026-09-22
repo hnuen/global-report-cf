@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T21:07:52.772Z",
+  "updatedAt": "2026-09-22T22:07:46.923Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260918",
@@ -3082,6 +3082,12 @@
   "unNotices": [],
   "bbcNews": [
     {
+      "title": "Trump threatens to 'annihilate' Iran in UN speech as officials meet on sidelines",
+      "url": "https://www.bbc.co.uk/news/articles/c52e0ywl9pr7o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 22, 2026",
+      "description": "In his speech, the US president pondered whether a peace deal would be agreed or whether he would have to take extreme action against Iran."
+    },
+    {
       "title": "Ukraine anger as EU removes Russian oligarchs from sanctions list",
       "url": "https://www.bbc.co.uk/news/articles/c6dj4k98107do?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 22, 2026",
@@ -3152,36 +3158,7 @@
       "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for August 2026."
     }
   ],
-  "economicsNews": [
-    {
-      "title": "Federal Reserve issues FOMC statement",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
-      "date": "September 16, 2026",
-      "description": "Federal Reserve issues FOMC statement",
-      "category": "Monetary Policy"
-    },
-    {
-      "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm",
-      "date": "September 16, 2026",
-      "description": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
-      "category": "Monetary Policy"
-    },
-    {
-      "title": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260825a.htm",
-      "date": "August 25, 2026",
-      "description": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
-      "category": "Monetary Policy"
-    },
-    {
-      "title": "Minutes of the Federal Open Market Committee, July 28–29, 2026",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260819a.htm",
-      "date": "August 19, 2026",
-      "description": "Minutes of the Federal Open Market Committee, July 28–29, 2026",
-      "category": "Monetary Policy"
-    }
-  ],
+  "economicsNews": [],
   "bisNews": [
     {
       "title": "Azur Air, Office 29, Vzletnaya St. 57, Krasnoyarsk, Russia 660020; Order Renewing Temporary Denial of Export Privileges",
@@ -3246,6 +3223,12 @@
   ],
   "regionsNews": [
     {
+      "title": "Burnham expects to find 'common ground' with Trump in first meeting",
+      "url": "https://www.bbc.co.uk/news/articles/cqevwpmvpekeo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 22, 2026",
+      "description": "In New York, the prime minister will also deliver a speech to the UN General Assembly expected to be focused on AI."
+    },
+    {
       "title": "US to build two military bases in Greenland under new deal with Denmark",
       "url": "https://www.bbc.co.uk/news/articles/c9dr74g32g8go?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 22, 2026",
@@ -3274,6 +3257,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cm4gvyw80dp2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 22, 2026",
       "description": "The attorney wants the court to look at the juror's mobile phone use and answers on questionnaires."
+    },
+    {
+      "title": "US judge blocks deportation of DoorDash driver shot by ICE",
+      "url": "https://www.bbc.co.uk/news/articles/cr6241825757o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 22, 2026",
+      "description": "The delivery driver was transferred from a hospital to a detention centre after the shooting on Sunday."
     },
     {
       "title": "Eleven injured in shooting outside Turkish school",
@@ -3306,12 +3295,6 @@
       "description": "Doyle was best known for reporting on African conflicts in the 1990s and 2000s, notably in Rwanda and Sierra Leone."
     },
     {
-      "title": "Four dead after powerful Typhoon Dujuan lashes Japan",
-      "url": "https://www.bbc.co.uk/news/articles/cm3wj2lexl97o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 22, 2026",
-      "description": "The storm pulled away from Japan after bringing heavy rains and strong winds to Tokyo and surrounding areas."
-    },
-    {
       "title": "'I have never felt heat like that' - a survivor on watching 33 cellmates die in Nigeria",
       "url": "https://www.bbc.co.uk/news/articles/cqm27jen9r23o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 22, 2026",
@@ -3336,6 +3319,12 @@
       "description": "Disha Salian's father insists her death was not suicide or an accident, but that she was gang-raped and murdered."
     },
     {
+      "title": "Burnham 'gets it' says Trump, as the two leaders meet for first time",
+      "url": "https://www.bbc.co.uk/news/videos/cxly57mv4767o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 22, 2026",
+      "description": "Donald Trump says he can do business with Andy Burnham at their first face-to-face meeting in New York, but criticises the \"terrible\" Chagos deal."
+    },
+    {
       "title": "Why is the Bab al-Mandab Strait so important?",
       "url": "https://www.bbc.co.uk/news/videos/c6kgw4xklvx3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 22, 2026",
@@ -3354,12 +3343,6 @@
       "description": "The typhoon is passing Japan's eastern coast, bringing major disruption and heavy rainfall in its wake."
     },
     {
-      "title": "Inside Djibouti refugee camp for thousands fleeing Houthi advance in Yemen",
-      "url": "https://www.bbc.co.uk/news/videos/c6z0z2nne11vo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 21, 2026",
-      "description": "Fighting on Yemen's west coast has prompted thousands of people to flee by boat across the Bab al-Mandab Strait."
-    },
-    {
       "title": "Sir Jim Ratcliffe suspends production at key UK plants blaming high gas prices",
       "url": "https://www.bbc.co.uk/news/articles/cw305ynd69n6o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 22, 2026",
@@ -3375,7 +3358,7 @@
       "title": "New EU industry rules would damage UK, warns Burnham",
       "url": "https://www.bbc.co.uk/news/articles/cv2dwylkl7weo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 22, 2026",
-      "description": "The prime minister says he will raise his concerns when he meets the European Commission President later."
+      "description": "The prime minister met the European Commission President during his visit to the United Nations General Assembly."
     },
     {
       "title": "'We screwed up': Doordash admits underpaying New York workers",
@@ -3678,6 +3661,30 @@
       "description": "The 0.25% increase comes despite fierce opposition from the US president, who has called for rates to be cut."
     },
     {
+      "title": "Palestinian Americans meet US lawmakers as Trump seeks $2.8bn for Israel",
+      "url": "https://www.aljazeera.com/news/2026/9/22/palestinian-americans-meet-us-lawmakers-as-trump-seeks-2-8bn-for-israel?traffic_source=rss",
+      "date": "September 22, 2026",
+      "description": "Organisers say more than 300 constituents met with House and Senate members from 26 states to demand US policy shift."
+    },
+    {
+      "title": "US signs ‘tremendous’ security deal with Denmark and Greenland",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/us-signs-tremendous-security-deal-with-denmark-and-greenland?traffic_source=rss",
+      "date": "September 22, 2026",
+      "description": "Trump and leaders of Greenland and Denmark have signed a deal allowing an expanded US military presence in Greenland."
+    },
+    {
+      "title": "Qatari Emir says country won’t ‘limit’ itself as Gulf ‘mediator’",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/qatari-emir-says-country-wont-limit-itself-as-gulf?traffic_source=rss",
+      "date": "September 22, 2026",
+      "description": "Qatari Emir Sheikh Tamim bin Hamad Al Thani told the UN General Assembly that Qatar is more than a mediator."
+    },
+    {
+      "title": "Macron: France won’t ‘yield an inch’ on Ukraine support",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/macron-france-wont-yield-an-inch-on-ukraine-support?traffic_source=rss",
+      "date": "September 22, 2026",
+      "description": "French President Emmanuel Macron says the “coalition of the willing\" will not back down in its support of Ukraine."
+    },
+    {
       "title": "Saudi Arabia’s King Salman slams targeting of Mecca by ‘terrorist’ Houthis",
       "url": "https://www.aljazeera.com/news/2026/9/22/saudi-king-slams-heinous-targeting-of-mecca-by-terrorist-houthis?traffic_source=rss",
       "date": "September 22, 2026",
@@ -3778,30 +3785,6 @@
       "url": "https://www.aljazeera.com/news/2026/9/22/erdogan-slams-israels-genocidal-mindset-in-blistering-un-address?traffic_source=rss",
       "date": "September 22, 2026",
       "description": "Turkish leader says UN has been forced into 'dysfunction' and was 'bleeding out' in Palestine, Lebanon, Sudan."
-    },
-    {
-      "title": "‘War crime’: Jordan’s king slams Israeli West Bank expansion",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/war-crime-jordans-king-slams-israeli-west-bank-expansion?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "Jordan's King Abdullah II decried Israeli settlements in the occupied West Bank as a strategy of ‘forced displacement.'"
-    },
-    {
-      "title": "Fifteen guilty in 2019 Sri Lanka Easter bombings: What the verdict says",
-      "url": "https://www.aljazeera.com/features/2026/9/22/fifteen-guilty-in-2019-sri-lanka-easter-bombings-what-the-verdict-says?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "The suicide bombings were the deadliest attacks in the country since the end of its civil war in 2009."
-    },
-    {
-      "title": "Trump: ‘My honour to settle eight wars’ including ‘war in Gaza’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/trump-my-honour-to-settle-eight-wars-including-war-in-gaza?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "Speaking at the UN General Assembly, US President Donald Trump claimed he helped end the war in Gaza."
-    },
-    {
-      "title": "UNGA 2026: Can the UN stop wars?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/unga-2026-can-the-un-stop-wars?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "Al Jazeera asked people in Bangladesh, Gaza and Nigeria what they think of the UN’s role in resolving conflicts."
     }
   ]
 }
