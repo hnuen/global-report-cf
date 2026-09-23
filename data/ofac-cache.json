@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T22:07:46.923Z",
+  "updatedAt": "2026-09-23T13:08:35.473Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260918",
@@ -3082,10 +3082,16 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "Trump threatens to 'annihilate' Iran in UN speech as officials meet on sidelines",
-      "url": "https://www.bbc.co.uk/news/articles/c52e0ywl9pr7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 22, 2026",
-      "description": "In his speech, the US president pondered whether a peace deal would be agreed or whether he would have to take extreme action against Iran."
+      "title": "US and Iran hold first talks since June after Trump's 'annihilation' threat",
+      "url": "https://www.bbc.co.uk/news/articles/ck62m1631d7po?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 23, 2026",
+      "description": "The talks are the first since a ceasefire collapsed in June, with the sides exchanging fire intermittently."
+    },
+    {
+      "title": "Trump meets US-backed Venezuelan president for first time since Maduro seized",
+      "url": "https://www.bbc.co.uk/news/articles/cj207y30wp0lo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 23, 2026",
+      "description": "Rodriguez was handpicked by Trump as leader of Venezuela was arrested and taken to the US"
     },
     {
       "title": "Ukraine anger as EU removes Russian oligarchs from sanctions list",
@@ -3094,16 +3100,16 @@
       "description": "Alisher Usmanov and Mikhail Fridman both have close ties to President Putin, and Kyiv said the move sent Moscow the wrong signals."
     },
     {
-      "title": "Iran must stop arming Houthis in Yemen, G7 says ahead of UN General Assembly",
-      "url": "https://www.bbc.co.uk/news/articles/cwm2qpmepmlzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 22, 2026",
-      "description": "The G7 also condemns \"in the strongest terms\" Houthi attacks on Saudi Arabia, saying that the escalation in fighting in Yemen jeopardises global energy security."
-    },
-    {
       "title": "Lithuania ready to 'fight back' but has evacuation plans in face of Russia threats, PM tells BBC",
       "url": "https://www.bbc.co.uk/news/articles/ck5yw8npxzrlo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 22, 2026",
       "description": "Sinkevičius told BBC Newsnight Lithuanians feel \"constantly threatened\" by Moscow, but the nation was prepared to \"fight back\" if attacked."
+    },
+    {
+      "title": "Watch: Key moments from Andy Burnham's first UN speech",
+      "url": "https://www.bbc.co.uk/news/videos/cq5y4zpn655ko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 23, 2026",
+      "description": "In his first speech to the UN as UK prime minister, Burnham highlighted the risks posed by Russian disinformation."
     },
     {
       "title": "Ed Davey calls for immediate 10p cut to fuel duty",
@@ -3114,28 +3120,34 @@
   ],
   "ajNews": [
     {
-      "title": "Trump: US-Iran meeting at UN was ‘very good’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/trump-us-iran-meeting-at-un-was-very?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "US President Donald Trump says he had a ‘very good’ three-hour meeting with Iranian officials at the UN."
+      "title": "UN General Assembly live: Iran’s Pezeshkian, Ukraine’s Zelenskyy to speak",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/9/23/un-general-assembly-live-irans-pezeshkian-ukraines-zelenskyy-to-speak?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "Second day of UN General Assembly kicks off with speeches from world leaders, including from Syria, Iran and Ukraine."
     },
     {
-      "title": "Qatar’s emir urges diplomacy as Gulf at ‘one of the most dangerous phases’",
-      "url": "https://www.aljazeera.com/news/2026/9/22/qatars-emir-urges-diplomacy-as-gulf-at-one-of-the-most-dangerous?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "Sheikh Tamim says years of delayed diplomacy led to the US-Israel war on Iran."
+      "title": "Qatar on mediation efforts: ‘We can’t let diplomacy fail’",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/23/qatar-on-mediation-efforts-we-cant-let-diplomacy?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "Qatar’s Majed al-Ansari says Doha is determined to make diplomacy work to end the US-Iran conflict."
     },
     {
-      "title": "US, Iran hold ‘very good’ talks, Trump says at UN meeting",
-      "url": "https://www.aljazeera.com/news/2026/9/22/trump-says-us-officials-met-with-iranian-delegation-for-three-hours-2?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "US President hints at possible deal with Iran, but warns of dire consequences if no agreement is reached."
+      "title": "‘Annihilate’ vs ‘crushing’ attacks: Why Iran, US up rhetoric amid talks",
+      "url": "https://www.aljazeera.com/news/2026/9/23/annihilate-vs-crushing-attacks-why-iran-us-up-rhetoric-amid-talks?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "Trump threatens to 'annihilate' Iran and then brags about diplomacy, provoking Tehran to warn of a response."
     },
     {
-      "title": "ECHR hears how 10 children went missing after Russia annexed Crimea",
-      "url": "https://www.aljazeera.com/news/2026/9/22/echr-hears-how-10-children-went-missing-after-russia-annexed-crimea?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "Ukrainians aged between one and five were taken from childcare institutions and put up for adoption, court hears."
+      "title": "Mirabai Chanu wins Asian Games silver as Ri breaks weightlifting record",
+      "url": "https://www.aljazeera.com/sports/2026/9/23/mirabai-chanu-wins-asian-games-silver-as-ri-breaks-weightlifting-record?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "Chanu finally clinches an elusive Asian Games medal in Japan and Ri Song-gum wins North Korea’s first gold."
+    },
+    {
+      "title": "Trump rallies Latin American allies against drug cartels",
+      "url": "https://www.aljazeera.com/news/2026/9/23/trump-rallies-shield-of-the-americas-coalition-against-drug-cartels?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "US-led Shield of the Americas coalition backs sanctions against crime groups after Trump urges stronger action."
     }
   ],
   "occNews": [
@@ -3158,7 +3170,36 @@
       "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for August 2026."
     }
   ],
-  "economicsNews": [],
+  "economicsNews": [
+    {
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "date": "September 16, 2026",
+      "description": "Federal Reserve issues FOMC statement",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm",
+      "date": "September 16, 2026",
+      "description": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260825a.htm",
+      "date": "August 25, 2026",
+      "description": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Minutes of the Federal Open Market Committee, July 28–29, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260819a.htm",
+      "date": "August 19, 2026",
+      "description": "Minutes of the Federal Open Market Committee, July 28–29, 2026",
+      "category": "Monetary Policy"
+    }
+  ],
   "bisNews": [
     {
       "title": "Azur Air, Office 29, Vzletnaya St. 57, Krasnoyarsk, Russia 660020; Order Renewing Temporary Denial of Export Privileges",
@@ -3223,10 +3264,64 @@
   ],
   "regionsNews": [
     {
-      "title": "Burnham expects to find 'common ground' with Trump in first meeting",
-      "url": "https://www.bbc.co.uk/news/articles/cqevwpmvpekeo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 22, 2026",
-      "description": "In New York, the prime minister will also deliver a speech to the UN General Assembly expected to be focused on AI."
+      "title": "Reports of violence against women in Gaza surge, UN agency finds",
+      "url": "https://www.bbc.co.uk/news/articles/c94gm7dp40y0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 23, 2026",
+      "description": "The UN Population Fund also says there has been a \"severe escalation\" in the number of early and forced marriages."
+    },
+    {
+      "title": "Tigray forces seize main airport in northern Ethiopia from police, residents tell the BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cry8zwwq21pxo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 23, 2026",
+      "description": "There are fears of a return to war in the northern region as tensions between the government and TPLF escalate."
+    },
+    {
+      "title": "Dramatic eviction of woman aged 87 highlights Spain's housing shortage",
+      "url": "https://www.bbc.co.uk/news/articles/c6vgy55lm8z1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 23, 2026",
+      "description": "The tenant of the flat in Madrid, Maricarmen, was unable to pay the rent set by the firm which recently bought it."
+    },
+    {
+      "title": "Trump administration accuses banned media outlets of 'falsehoods' ahead of court hearing",
+      "url": "https://www.bbc.co.uk/news/articles/c6790yrgzq25o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 23, 2026",
+      "description": "The US Justice Department's response to a lawsuit filed by CNN, Politico and MS NOW also cites national security."
+    },
+    {
+      "title": "Eleven killed in mass shooting at house in South Africa",
+      "url": "https://www.bbc.co.uk/news/articles/crgjqxzl097eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 23, 2026",
+      "description": "One of those killed is believed to be a pregnant woman, police said."
+    },
+    {
+      "title": "Dolly Parton's manager accuses her nephew of threats and intimidation",
+      "url": "https://www.bbc.co.uk/news/articles/c670lydl5wg5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 23, 2026",
+      "description": "Bryan Seaver, who announced Parton's death to the world, is accused of trying to extort her estate."
+    },
+    {
+      "title": "More than 170,000 respiratory cases recorded in haze-choked Indonesia",
+      "url": "https://www.bbc.co.uk/news/articles/cq62j13gnyrko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 23, 2026",
+      "description": "More than 40,000 of the cases – which range from mild coughs to pneumonia – involve toddlers."
+    },
+    {
+      "title": "Hurricane Polo downgraded but remains 'very powerful' off coast of Mexico",
+      "url": "https://www.bbc.co.uk/news/articles/ckddvlrlr5qeo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 23, 2026",
+      "description": "The large storm in the Pacific Ocean is being driven by warm waters caused by the El Niño weather phenomenon."
+    },
+    {
+      "title": "OpenAI gives cyber defence tools to Ukraine",
+      "url": "https://www.bbc.co.uk/news/articles/c90kly26d7pzo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 23, 2026",
+      "description": "Ukraine will get access to OpenAI's advanced GPT 5.6 Sol model under the deal - a rival to Anthropic's Mythos and Fable"
+    },
+    {
+      "title": "Angry Anderson, rock star who soundtracked Kylie's wedding in Neighbours, dies aged 79",
+      "url": "https://www.bbc.co.uk/news/articles/cqn745px55nno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 23, 2026",
+      "description": "He fronted the rock band Rose Tattoo, but became best known for his solo hit Suddenly."
     },
     {
       "title": "US to build two military bases in Greenland under new deal with Denmark",
@@ -3241,22 +3336,10 @@
       "description": "Young voters are being courted with football slogans, promises of jobs and anti-Israel rallying calls."
     },
     {
-      "title": "Sri Lanka court convicts 15 men over deadly Easter Sunday bombings",
-      "url": "https://www.bbc.co.uk/news/articles/cqy7z275yx65o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 22, 2026",
-      "description": "Three churches and three luxury hotels were targeted in the 2019 attacks which killed 270."
-    },
-    {
       "title": "Developing El Niño becomes strongest on record weeks before expected peak",
       "url": "https://www.bbc.co.uk/weather/articles/cmvgy4nv9d62o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 22, 2026",
       "description": "Scientists say the developing El Niño is now the strongest on record with weather impacts already being felt around the world."
-    },
-    {
-      "title": "Lindsay Clancy's lawyer asks judge to investigate juror and check his phone",
-      "url": "https://www.bbc.co.uk/news/articles/cm4gvyw80dp2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 22, 2026",
-      "description": "The attorney wants the court to look at the juror's mobile phone use and answers on questionnaires."
     },
     {
       "title": "US judge blocks deportation of DoorDash driver shot by ICE",
@@ -3265,16 +3348,16 @@
       "description": "The delivery driver was transferred from a hospital to a detention centre after the shooting on Sunday."
     },
     {
-      "title": "Eleven injured in shooting outside Turkish school",
-      "url": "https://www.bbc.co.uk/news/articles/c6y0z4gv0le4o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Lindsay Clancy's lawyer asks judge to investigate juror and check his phone",
+      "url": "https://www.bbc.co.uk/news/articles/cm4gvyw80dp2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 22, 2026",
-      "description": "Footage appears to show a male in the area carrying a firearm, while officials say the attacker has been captured."
+      "description": "The attorney wants the court to look at the juror's mobile phone use and answers on questionnaires."
     },
     {
-      "title": "Top South African policeman charged with sexual offences",
-      "url": "https://www.bbc.co.uk/news/articles/cwjdvgx77n0zo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Sri Lanka court convicts 15 men over deadly Easter Sunday bombings",
+      "url": "https://www.bbc.co.uk/news/articles/cqy7z275yx65o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 22, 2026",
-      "description": "Shadrack Sibiya, who has made no comment, is alleged to have groomed a 16-year-old and raped an 18-year-old."
+      "description": "Three churches and three luxury hotels were targeted in the 2019 attacks which killed 270."
     },
     {
       "title": "Autopsy shows Hayden Panettiere died from a drug overdose",
@@ -3283,16 +3366,16 @@
       "description": "The death of the child star - who had fentanyl, Xanax, a muscle relaxant and antipsychotic medication in her system - was ruled an accident."
     },
     {
-      "title": "Cyclist who dressed as man to avoid Taliban wins silver medal",
-      "url": "https://www.bbc.co.uk/sport/cycling/articles/c63eqyvdndwdo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Huge data centres rise at 'China speed' to power its AI ambitions",
+      "url": "https://www.bbc.co.uk/news/articles/cm5ydz4kl65ro?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 22, 2026",
-      "description": "Afghan cyclist Fariba Hashimi wins silver in the women's road race at the Asian Games, having fled oppression in her home country to pursue a sporting dream."
+      "description": "The BBC visits Inner Mongolia, an unlikely frontier in Beijing's AI race with Washington."
     },
     {
-      "title": "Veteran BBC Africa correspondent Mark Doyle dies aged 67",
-      "url": "https://www.bbc.co.uk/news/articles/cq986214den3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 22, 2026",
-      "description": "Doyle was best known for reporting on African conflicts in the 1990s and 2000s, notably in Rwanda and Sierra Leone."
+      "title": "Playing loud music on the bus? That will cost you hundreds of dollars in Singapore",
+      "url": "https://www.bbc.co.uk/news/articles/c3kg80ve7x0no?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 23, 2026",
+      "description": "Authorities are cracking down on \"disruptive behaviours\" including eating onboard and putting feet on seats."
     },
     {
       "title": "'I have never felt heat like that' - a survivor on watching 33 cellmates die in Nigeria",
@@ -3313,10 +3396,22 @@
       "description": "The White House press pool is at the centre of a major row between President Donald Trump and TV networks. What is it?"
     },
     {
-      "title": "Why a Bollywood celebrity manager's 2020 death case has been reopened",
-      "url": "https://www.bbc.co.uk/news/articles/cpwl1ejlgw9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 21, 2026",
-      "description": "Disha Salian's father insists her death was not suicide or an accident, but that she was gang-raped and murdered."
+      "title": "Watch: Trump and Xi are meeting on US soil - what's at stake?",
+      "url": "https://www.bbc.co.uk/news/videos/c38xk275jd21o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 23, 2026",
+      "description": "The BBC’s China correspondent and US editor explain everything you need to know ahead of the Trump-Xi meeting in Washington DC."
+    },
+    {
+      "title": "Rare look at the remote engine rooms fuelling China's AI boom",
+      "url": "https://www.bbc.co.uk/news/videos/cwe8ejvv0leno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 22, 2026",
+      "description": "The BBC is in Inner Mongolia where dozen of Chinese data centres are being constructed, as the country aims to lead the world in artificial intelligence."
+    },
+    {
+      "title": "Watch: Threats, deals and passionate speeches at UNGA event",
+      "url": "https://www.bbc.co.uk/news/videos/cqkgx8ynj8zko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 22, 2026",
+      "description": "Delegations from across the world attended the United Nations General Assembly in New York."
     },
     {
       "title": "Burnham 'gets it' says Trump, as the two leaders meet for first time",
@@ -3325,28 +3420,46 @@
       "description": "Donald Trump says he can do business with Andy Burnham at their first face-to-face meeting in New York, but criticises the \"terrible\" Chagos deal."
     },
     {
-      "title": "Why is the Bab al-Mandab Strait so important?",
-      "url": "https://www.bbc.co.uk/news/videos/c6kgw4xklvx3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 22, 2026",
-      "description": "The BBC's Frank Gardner explains why the narrow waterway is key to oil transportation and the world economy."
+      "title": "Off sick? You need to phone your boss, back-to-work adviser says",
+      "url": "https://www.bbc.co.uk/news/articles/cq0lry248y2zo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 23, 2026",
+      "description": "Relying on text and email means sick workers disengaged and were less likely to work again, says Sir Charlie Mayfield."
     },
     {
-      "title": "What to expect as world leaders descend on New York - and who won't be there",
-      "url": "https://www.bbc.co.uk/news/videos/cxe87p9d4198o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 22, 2026",
-      "description": "The BBC’s Sarah Smith outlines which world leaders Trump is set to meet and the key topics expected on the agenda."
+      "title": "UK warned over ballooning debt costs and slower growth ahead of Budget",
+      "url": "https://www.bbc.co.uk/news/articles/c607ly09y7rlo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 23, 2026",
+      "description": "Higher energy prices due to the conflict in the Middle East and climate change could hit growth."
     },
     {
-      "title": "Watch: Timelapse shows typhoon barrelling towards Japan",
-      "url": "https://www.bbc.co.uk/news/videos/cm0j3224p6j8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 21, 2026",
-      "description": "The typhoon is passing Japan's eastern coast, bringing major disruption and heavy rainfall in its wake."
+      "title": "Europe's car makers are in crisis. Will the threat of war rescue them?",
+      "url": "https://www.bbc.co.uk/news/articles/c6vgyq598k9po?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 22, 2026",
+      "description": "Auto executives across Europe hope rearmament can help them flex their industrial muscles once more."
     },
     {
-      "title": "Sir Jim Ratcliffe suspends production at key UK plants blaming high gas prices",
-      "url": "https://www.bbc.co.uk/news/articles/cw305ynd69n6o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Trump wants AI to be rebranded as super intelligence. Will it work?",
+      "url": "https://www.bbc.co.uk/news/articles/cqy4z9pv4w0po?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 23, 2026",
+      "description": "Some people close to the president have started to use the term but experts say it is unlikely to catch on."
+    },
+    {
+      "title": "UK and US warned to take action on spiralling debt costs by IMF",
+      "url": "https://www.bbc.co.uk/news/articles/cx305ymq4ldqo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 23, 2026",
+      "description": "In an interview with the BBC, Kristalina Georgieva says economic shocks had pushed \"debt levels up like a staircase not to heaven\"."
+    },
+    {
+      "title": "Will a switch to light speed cut power use at data centres?",
+      "url": "https://www.bbc.co.uk/news/articles/c2dwg3zexkpo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 22, 2026",
-      "description": "Ineos said natural gas in the UK is twelve times more expensive than in the US."
+      "description": "To save power and add capacity, data centres are switching from copper wires to tech using light."
+    },
+    {
+      "title": "'I don't have a buoyancy aid': Living without the Bank of Mum and Dad",
+      "url": "https://www.bbc.co.uk/news/articles/c8dx5p7gd4e9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 22, 2026",
+      "description": "Three 20-somethings tell BBC News how they are navigating life without parental support."
     },
     {
       "title": "Trump says he would back ban on diesel exports",
@@ -3355,10 +3468,10 @@
       "description": "Republicans lawmakers have put pressure on the president to curb exports as diesel prices soar to record highs in the US."
     },
     {
-      "title": "New EU industry rules would damage UK, warns Burnham",
-      "url": "https://www.bbc.co.uk/news/articles/cv2dwylkl7weo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Sir Jim Ratcliffe suspends production at key UK plants blaming high gas prices",
+      "url": "https://www.bbc.co.uk/news/articles/cw305ynd69n6o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 22, 2026",
-      "description": "The prime minister met the European Commission President during his visit to the United Nations General Assembly."
+      "description": "Ineos said natural gas in the UK is twelve times more expensive than in the US."
     },
     {
       "title": "'We screwed up': Doordash admits underpaying New York workers",
@@ -3367,16 +3480,16 @@
       "description": "The food delivery giant will pay a $131.5m settlement following a city probe into wage violations."
     },
     {
+      "title": "New EU industry rules would damage UK, warns Burnham",
+      "url": "https://www.bbc.co.uk/news/articles/cv2dwylkl7weo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 22, 2026",
+      "description": "The prime minister met the European Commission President during his visit to the United Nations General Assembly."
+    },
+    {
       "title": "Unexpected UK borrowing surge adds to pre-Budget pressure on chancellor",
       "url": "https://www.bbc.co.uk/news/articles/c68049m18435o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 22, 2026",
       "description": "Borrowing was higher than expected in August as inflation piles pressure on the government ahead of the Budget."
-    },
-    {
-      "title": "Spain battles climate change on several fronts",
-      "url": "https://www.bbc.co.uk/news/articles/cwg59g3vz564o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 22, 2026",
-      "description": "A summer of wildfires and heatwaves underlines the threats to the country's economy."
     },
     {
       "title": "Davey promises tax cuts for millions if UK rejoins EU single market",
@@ -3463,40 +3576,10 @@
       "description": "The billionaire businessman told the BBC he has lost confidence in the UK due to a combination of high taxes and high immigration."
     },
     {
-      "title": "Not all AI workers think the tech could kill everyone",
-      "url": "https://www.bbc.co.uk/news/articles/cm5y7qj54klpo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 19, 2026",
-      "description": "In text exchanges and conversations, multiple people who have worked for leading companies are sceptical of the warnings."
-    },
-    {
-      "title": "Chiltern Railways renationalised after 30 years",
-      "url": "https://www.bbc.co.uk/news/articles/c68xk701d975o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 20, 2026",
-      "description": "It joins Great British Railways as part of government plans to save money and improve services."
-    },
-    {
-      "title": "Lib Dems vow to end 'computer says no' economy to boost growth",
-      "url": "https://www.bbc.co.uk/news/articles/cqrk31k7pprlo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 20, 2026",
-      "description": "Deputy leader Daisy Cooper also proposes a Growth and Defence Partnership with the EU in a speech to her party conference."
-    },
-    {
-      "title": "Billionaire Man United owner says he has lost confidence in the UK",
-      "url": "https://www.bbc.co.uk/news/articles/cm0463619r1no?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 18, 2026",
-      "description": "Ineos founder Sir Jim Ratcliffe tells the BBC he thinks the country is \"on the slide\" and calls for more investment in the North Sea."
-    },
-    {
-      "title": "Nvidia boss rejects AI extinction fears as 'doomsday narratives'",
-      "url": "https://www.bbc.co.uk/news/articles/cr5ye7p13jg7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 21, 2026",
-      "description": "Jensen Huang's comments come after warnings from AI researchers that the technology could lead to human extinction."
-    },
-    {
-      "title": "Google's Gemini AI hacked three companies in security test",
-      "url": "https://www.bbc.co.uk/news/articles/c607l0k72rlvo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 19, 2026",
-      "description": "The AI model accessed the internet and guessed credentials to three websites, a Google official told the BBC."
+      "title": "Spain battles climate change on several fronts",
+      "url": "https://www.bbc.co.uk/news/articles/cwg59g3vz564o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 22, 2026",
+      "description": "A summer of wildfires and heatwaves underlines the threats to the country's economy."
     },
     {
       "title": "The virtual worlds where robots are trained",
@@ -3571,6 +3654,24 @@
       "description": "So-called financial favouritism can cause jealousy and resentment long into adulthood. Here is how experts say you can avoid it"
     },
     {
+      "title": "Concerns county will not benefit from £2 bus cap",
+      "url": "https://www.bbc.co.uk/news/articles/cqd08m30r2j9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 23, 2026",
+      "description": "Councillor Justine Peberdy says Yeomans Travel and Sargeants Brothers have not committed to the cap."
+    },
+    {
+      "title": "How much do you spend on a birthday present?",
+      "url": "https://www.bbc.co.uk/news/videos/cmj64g887zy9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 23, 2026",
+      "description": "Do you show you care through expensive presents? Or do you consider a drink in a pub a worthy birthday gift?"
+    },
+    {
+      "title": "'I don't have a buoyancy aid': Living without the Bank of Mum and Dad",
+      "url": "https://www.bbc.co.uk/news/articles/c8dx5p7gd4e9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 22, 2026",
+      "description": "Three 20-somethings tell BBC News how they are navigating life without parental support."
+    },
+    {
       "title": "'Nightmare' for taxi drivers as fuel prices soar",
       "url": "https://www.bbc.co.uk/news/articles/cr0qx2p587nxo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 22, 2026",
@@ -3583,22 +3684,10 @@
       "description": "Vets must also tell clients if cheaper medicine is available online as part of the rule updates which surgeries have the coming months to bring in."
     },
     {
-      "title": "Rising fuel prices 'cost tow truck business £10k'",
-      "url": "https://www.bbc.co.uk/news/articles/cxp845vnpv27o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Europe's car makers are in crisis. Will the threat of war rescue them?",
+      "url": "https://www.bbc.co.uk/news/articles/c6vgyq598k9po?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 22, 2026",
-      "description": "A business says fuel duty will need to be cut by 30p to 50p per litre to help."
-    },
-    {
-      "title": "Soaring fuel costs hit small businesses",
-      "url": "https://www.bbc.co.uk/news/articles/c8qlwp7q9662o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 22, 2026",
-      "description": "It comes as fuel prices reach their highest since 2022, driven by conflict in the Middle East."
-    },
-    {
-      "title": "Winter support planned for vulnerable residents",
-      "url": "https://www.bbc.co.uk/news/articles/c3lyrpxeepdgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 22, 2026",
-      "description": "People could be eligible for awards of between £150 to £250, depending on their circumstances."
+      "description": "Auto executives across Europe hope rearmament can help them flex their industrial muscles once more."
     },
     {
       "title": "Aviation faces hotter, stormier skies – and passengers might have to accept more disruption",
@@ -3625,10 +3714,16 @@
       "description": "The final conclusions of the investigation have yet to be published, although more could become apparent in the coming days."
     },
     {
-      "title": "How the High Street became a window on our political instability",
-      "url": "https://www.bbc.co.uk/news/articles/cq5p59286v5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "June 7, 2026",
-      "description": "High Streets have declined in recent years. What does this tell us about the UK?"
+      "title": "How much do you spend on a birthday present?",
+      "url": "https://www.bbc.co.uk/news/videos/cmj64g887zy9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 23, 2026",
+      "description": "Do you show you care through expensive presents? Or do you consider a drink in a pub a worthy birthday gift?"
+    },
+    {
+      "title": "Business Daily",
+      "url": "https://www.bbc.co.uk/sounds/play/w3ct98sh?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 22, 2026",
+      "description": "Jacob Rothman built a manufacturing business in China supplying major retailers"
     },
     {
       "title": "Are vet bills about to get cheaper?",
@@ -3649,142 +3744,124 @@
       "description": "Keeley Knowles ran a Whatsapp group with about 200 people asking her to steal specific designer items."
     },
     {
-      "title": "'I would tip up to 30% at a restaurant'",
-      "url": "https://www.bbc.co.uk/news/videos/ckgjqzl755j0o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 18, 2026",
-      "description": "New Yorkers and Londoners share what they usually tip in a restaurant - and whether tipping culture has gotten out of hand."
+      "title": "Pakistan must ‘catch up’ with India in T20 cricket, says coach Hesson",
+      "url": "https://www.aljazeera.com/sports/2026/9/23/pakistan-must-catch-up-with-india-in-t20-cricket-says-coach-hesson?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "Pakistan could face India in the knockouts of the Asian Games, where the world champions won gold in 2023."
     },
     {
-      "title": "Why Trump's hand-picked Fed chair defied him by raising interest rates",
-      "url": "https://www.bbc.co.uk/news/videos/c54g7wg1l3d3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 17, 2026",
-      "description": "The 0.25% increase comes despite fierce opposition from the US president, who has called for rates to be cut."
+      "title": "AFCON 2027 qualifiers: Teams, top players, schedule, format, matches",
+      "url": "https://www.aljazeera.com/sports/2026/9/23/africa-cup-of-nations-afcon-2027-teams-schedule-salah-hakimi-mane?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "The 2027 Africa Cup of Nations will be held in Kenya, Uganda and Tanzania, with 24 qualification spots up for grabs."
     },
     {
-      "title": "Palestinian Americans meet US lawmakers as Trump seeks $2.8bn for Israel",
-      "url": "https://www.aljazeera.com/news/2026/9/22/palestinian-americans-meet-us-lawmakers-as-trump-seeks-2-8bn-for-israel?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "Organisers say more than 300 constituents met with House and Senate members from 26 states to demand US policy shift."
+      "title": "As Xi meets Trump, who’s winning their trade war?",
+      "url": "https://www.aljazeera.com/features/2026/9/23/as-xi-meets-trump-whos-winning-their-trade-war?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "Trade war has been central to Trump's presidency, but it didn't slash US deficits. Meanwhile, China recorded a surplus."
     },
     {
-      "title": "US signs ‘tremendous’ security deal with Denmark and Greenland",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/us-signs-tremendous-security-deal-with-denmark-and-greenland?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "Trump and leaders of Greenland and Denmark have signed a deal allowing an expanded US military presence in Greenland."
+      "title": "UEFA’s Ceferin says FIFA trust still broken after Infantino investment row",
+      "url": "https://www.aljazeera.com/sports/2026/9/23/uefas-ceferin-says-fifa-trust-still-broken-after-infantino-investment-row?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "UEFA president speaks for the first time since FIFA said it would review its decision-making, says trust still broken."
     },
     {
-      "title": "Qatari Emir says country won’t ‘limit’ itself as Gulf ‘mediator’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/qatari-emir-says-country-wont-limit-itself-as-gulf?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "Qatari Emir Sheikh Tamim bin Hamad Al Thani told the UN General Assembly that Qatar is more than a mediator."
+      "title": "China’s swimming prodigy Yu Zidi bags third gold in Asian Games record",
+      "url": "https://www.aljazeera.com/sports/2026/9/23/chinas-swimming-prodigy-yu-zidi-bags-third-gold-in-asian-games-record?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "The 13-year-old beat the previous 400m Asian Games record, set by China’s Ye Shiwen in 2014, by about 4.5 seconds."
     },
     {
-      "title": "Macron: France won’t ‘yield an inch’ on Ukraine support",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/macron-france-wont-yield-an-inch-on-ukraine-support?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "French President Emmanuel Macron says the “coalition of the willing\" will not back down in its support of Ukraine."
+      "title": "Powerful El Nino could cause more than 450,000 deaths, scientists say",
+      "url": "https://www.aljazeera.com/news/2026/9/23/powerful-el-nino-could-cause-450000-deaths-scientists-say?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "Heaviest toll expected in poorer countries, already struggling with food insecurity and high energy costs, report says."
     },
     {
-      "title": "Saudi Arabia’s King Salman slams targeting of Mecca by ‘terrorist’ Houthis",
-      "url": "https://www.aljazeera.com/news/2026/9/22/saudi-king-slams-heinous-targeting-of-mecca-by-terrorist-houthis?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "Saudi monarch's rare condemnation hints at sense of urgency in the kingdom amid ramped-up attacks from Yemen."
+      "title": "As AI leaders warn of catastrophe, US and China shun slowdown calls",
+      "url": "https://www.aljazeera.com/economy/2026/9/23/as-ai-leaders-warn-of-catastrophe-us-and-china-shun-slowdown-calls?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "Presidents Donald Trump and Xi Jinping are expected to agree to only limited cooperation on AI safety at summit."
     },
     {
-      "title": "NYC Mayor Mamdani reaches record DoorDash settlement for underpaid workers",
-      "url": "https://www.aljazeera.com/economy/2026/9/22/nyc-mayor-mamdani-reaches-record-doordash-settlement-for-underpaid-workers?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "Settlement is largest of its kind in any US city and is set to affect 260,000 delivery drivers."
+      "title": "Yemen government forces claim control of Mount Qarfan in Taiz",
+      "url": "https://www.aljazeera.com/news/2026/9/23/yemen-government-forces-claim-control-of-mount-qarfan-in-taiz?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "Major General Abdulaziz al-Majidi says five Houthi fighters killed and 20 wounded after 'fierce battles'."
     },
     {
-      "title": "Brazil’s Lula: Gaza’s ‘pain and trauma’ will last generations",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/brazils-lula-gazas-pain-and-trauma-will-last-generations?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "Brazilian President Luiz Inacio Lula da Silva condemned the “pain and trauma” inflicted by Israel’s government in Gaza."
+      "title": "World leaders say UN Security Council failing to function",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/23/world-leaders-say-un-security-council-failing-to-function?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "World leaders say UN Security Council failing to function"
     },
     {
-      "title": "Djibouti minister appeals for aid for Yemeni refugees",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/djibouti-minister-appeals-for-aid-for-yemeni-refugees?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "Djibouti’s Minister of Social Affairs and Solidarity, Ouloufa Ismail Abdo, appeals for aid for Yemeni refugees"
+      "title": "Europe’s centrists are finally paying the price of their extremism",
+      "url": "https://www.aljazeera.com/opinions/2026/9/23/europes-centrists-are-finally-paying-the-price-of-their-extremism?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "The centre’s blind adherence to austerity has devastated European societies."
     },
     {
-      "title": "Trump admin asks top US court to reverse pro-Palestinian scholar’s release",
-      "url": "https://www.aljazeera.com/news/2026/9/22/trump-admin-asks-top-us-court-to-reverse-pro-palestinian-scholars-release?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "US solicitor general challenges lower court's ruling on Georgetown scholar's detention, sparking constitutional debates."
+      "title": "Ethiopian Airlines suspends flights to three northern Tigray airports",
+      "url": "https://www.aljazeera.com/news/2026/9/23/ethiopian-airlines-suspends-flights-to-three-northern-tigray-airports?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "The suspension comes after Tigrayan forces took control of Mekelle airport."
     },
     {
-      "title": "Qatar denounces Israeli aggression across the region",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/qatar-denounces-israeli-aggression-across-the-region?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "Qatari Emir Sheikh Tamim bin Hamad Al Thani has denounced Israeli aggression in neighbouring countries."
+      "title": "UN General Assembly quiz: Who said these 10 famous quotes?",
+      "url": "https://www.aljazeera.com/news/2026/9/23/un-general-assembly-quiz-who-said-these-10-famous-quotes?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "With world leaders at the UN General Assembly podium this week, play our quiz matching famous quotes to who said them."
     },
     {
-      "title": "What led to the 1994 Tutsi Genocide in Rwanda",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/what-led-to-the-1994-tutsi-genocide-in-rwanda?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "A British doctor accused of killing people during the 1994 genocide against the Tutsi in Rwanda has been charged."
+      "title": "Qatar’s Dakar Rally champ Nasser Al-Attiyah wins Asian Games shooting gold",
+      "url": "https://www.aljazeera.com/sports/2026/9/23/qatars-dakar-rally-champ-nasser-al-attiyah-wins-asian-games-shooting-gold?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "Al-Attiyah is the first person to win a gold medal at the Games in the same year as his Dakar Rally triumph."
     },
     {
-      "title": "Erdogan accuses Israel of ‘genocidal mindset’ at UNGA",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/erdogan-accuses-israel-of-genocidal-mindset-at-unga?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "Turkish President Recep Tayyip Erdogan accused Israel of a “genocidal mindset” at the UN General Assembly."
+      "title": "US senator condemns Netanyahu as a ‘chronic liar’ ahead of UNGA visit",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/23/us-senator-condemns-netanyahu-as-a-chronic-liar-ahead-of-unga-visit?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "US Democratic senator Chris Van Hollen has called Netanyahu a lying war criminal ahead of his visit to UNGA"
     },
     {
-      "title": "Is Ethiopia heading towards renewed civil war?",
-      "url": "https://www.aljazeera.com/video/inside-story/2026/9/22/is-ethiopia-heading-towards-renewed-civil-war?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "Seven armed groups announce alliance to topple government."
+      "title": "What Palestinian children endure in Israeli detention",
+      "url": "https://www.aljazeera.com/features/2026/9/23/inside-israels-prisons-what-palestinian-children-say-they-endure-in-deten?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "Every day, Fidaa Zalbani checks the room of her son, Mohammed, 17, tidying his bed and arranging untouched clothes."
     },
     {
-      "title": "UN Goodwill Ambassador: Millions of refugee children missing school",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/un-goodwill-ambassador-millions-of-refugee-children-missing-school?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "Mary Maker says education changed the course of her life and urges world leaders to invest in education for refugees."
+      "title": "Qatar says ‘no alternative to diplomacy’ as Belgium and Rwanda restore ties",
+      "url": "https://www.aljazeera.com/news/2026/9/23/qatar-says-no-alternative-to-diplomacy-as-belgium-and-rwanda-restore-ties?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "Doha lauded for mediating Brussels-Kigali rupture, showcasing its trusted role in international peace efforts."
     },
     {
-      "title": "US signs ‘tremendous’ Arctic security deal with Denmark, Greenland",
-      "url": "https://www.aljazeera.com/news/2026/9/22/us-signs-tremendous-arctic-security-deal-with-denmark-greenland?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "NATO and the European Union welcome accord that ends months-long standoff after Trump threatened to seize Greenland."
+      "title": "At least 11 people killed in South Africa township shooting",
+      "url": "https://www.aljazeera.com/news/2026/9/23/at-least-11-people-killed-in-south-africa-township-shooting?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "Armed men open fire at a house party in a Durban township, killing a pregnant woman and 10 others."
     },
     {
-      "title": "Qatar urges diplomacy, rejects Strait of Hormuz ‘bargaining’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/qatar-urges-diplomacy-rejects-strait-of-hormuz?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "Qatari Emir Sheikh Tamim bin Hamad Al Thani called for the reopening of the Strait of Hormuz while speaking at the UN."
+      "title": "Pakistan’s latest Trump bet is on drone firm already selling to India",
+      "url": "https://www.aljazeera.com/news/2026/9/23/pakistans-new-drone-deal-is-with-trump-backed-firm-also-selling-to-india?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "The company's cofounder is also an ex-Israeli soldier. Pakistan does not recognise Israel."
     },
     {
-      "title": "Indian MMA fighter refuses handshake after Asian Games ‘defeat’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/indian-mma-fighter-refuses-handshake-after-asian-games?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "India’s first MMA medal at the Asian Games was overshadowed by controversy over the result."
+      "title": "WHO’S FUTURE IS IT: CHINA OR THE WEST?",
+      "url": "https://www.aljazeera.com/video/doha-debates/2026/9/23/whos-future-is-it-china-or-the-west?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "As global power shifts, how different are these two visions, and does the future belong to just one?"
     },
     {
-      "title": "Lula warns against foreign interference in Brazil election at UN",
-      "url": "https://www.aljazeera.com/news/2026/9/22/lula-warns-against-foreign-interference-defends-brazils-sovereignty-at-un?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "Lula’s remarks come as Trump asserts US power in Latin America in his own UN address."
-    },
-    {
-      "title": "Sudan’s historical famine echoes through latest hunger crisis",
-      "url": "https://www.aljazeera.com/news/2026/9/22/sudans-historical-famine-echoes-through-latest-hunger-crisis?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "Sudan’s war-driven famine revives memories of past famines as war drives displacement and food shortages."
-    },
-    {
-      "title": "Turkiye school shooting leaves 11 pupils wounded",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/turkiye-school-shooting-leaves-11-pupils-wounded?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "Eleven pupils were wounded after a student opened fire near a secondary school in Manisa, western Turkiye"
-    },
-    {
-      "title": "Erdogan slams Israel’s ‘genocidal mindset’ in blistering UN address",
-      "url": "https://www.aljazeera.com/news/2026/9/22/erdogan-slams-israels-genocidal-mindset-in-blistering-un-address?traffic_source=rss",
-      "date": "September 22, 2026",
-      "description": "Turkish leader says UN has been forced into 'dysfunction' and was 'bleeding out' in Palestine, Lebanon, Sudan."
+      "title": "Pakistan seals roads to Islamabad before protests for Imran Khan’s release",
+      "url": "https://www.aljazeera.com/news/2026/9/23/pakistan-seals-islamabad-roads-before-protests-for-imran-khans-release?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "Police close major highways into Islamabad as supporters of jailed former prime minister plan to march into the capital."
     }
   ]
 }
