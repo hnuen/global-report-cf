@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23T17:08:23.800Z",
+  "updatedAt": "2026-09-23T19:09:04.618Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260923",
@@ -3107,6 +3107,18 @@
   ],
   "ajNews": [
     {
+      "title": "Iran’s Pezeshkian slams ‘terrorist’ US but extols diplomacy in UN speech",
+      "url": "https://www.aljazeera.com/news/2026/9/23/irans-president-slams-trumps-bullying-in-defiant-unga-speech?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "Pezeshkian leaves door open for negotiations, while calling out US blockade against Iran in Strait of Hormuz."
+    },
+    {
+      "title": "Azerbaijan pardons French national jailed for spying",
+      "url": "https://www.aljazeera.com/news/2026/9/23/azerbaijan-pardons-french-national-jailed-for-spying?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "The move comes after the EU lifts sanctions on oligarchs following what diplomats described as pressure from Baku."
+    },
+    {
       "title": "Syria’s al-Sharaa warns Israeli attacks endanger delicate post-war recovery",
       "url": "https://www.aljazeera.com/news/2026/9/23/syrias-al-sharaa-warns-israeli-attacks-endanger-delicate-post-war-recovery?traffic_source=rss",
       "date": "September 23, 2026",
@@ -3147,24 +3159,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/23/al-sharaa-occupied-golan-heights-to-remain-syrian?traffic_source=rss",
       "date": "September 23, 2026",
       "description": "Syrian President Ahmed al-Sharaa demanded the withdrawal of Israeli forces from Syrian territory."
-    },
-    {
-      "title": "How much is UK supporting Saudi Arabia in its war with Iran-backed Houthis?",
-      "url": "https://www.aljazeera.com/news/2026/9/23/how-much-is-uk-supporting-saudi-arabia-in-its-war-with-iran-backed-houthis?traffic_source=rss",
-      "date": "September 23, 2026",
-      "description": "UK to refuel Saudi fighter jets and France to secure energy infrastructure amid fighting with Yemen's Houthi group."
-    },
-    {
-      "title": "Can flurry of New York diplomacy lead to US-Iran diplomatic breakthrough?",
-      "url": "https://www.aljazeera.com/news/2026/9/23/flurry-of-diplomacy-trumps-fiery-threats-us-iran-war-deal-still-elusive?traffic_source=rss",
-      "date": "September 23, 2026",
-      "description": "Analysts say a deal this week is unlikely - core disagreements between Washington and Tehran remain unresolved."
-    },
-    {
-      "title": "Syria’s al-Sharaa answers questions on Israel’s violations in Syria",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/23/syrias-al-sharaa-answers-questions-on-israels-violations-in-syria?traffic_source=rss",
-      "date": "September 23, 2026",
-      "description": "Syria’s President Ahmed al-Sharaa says Donald Trump should give New Jersey to Israel, instead of the Golan Heights."
     }
   ],
   "occNews": [
@@ -3179,15 +3173,38 @@
       "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-72.html",
       "date": "August 27, 2026",
       "description": "OCC Acts to Improve Transparency and Consistency to Bank Enforcement and Supervisory Standards OCC issues two revised policies and procedures manuals; proposes amendments to Violations of Laws and Regulations framework WASHINGTON-The Office of the Comptroller of the Currency (OCC) today announced additional actions to focus supervisory attention on the most significant risks and violations and to provide banks greater clarity, consistency and certainty in how Matters Requiring Attention (MRA) and enforcement actions are issued."
-    },
-    {
-      "title": "OCC Announces Enforcement Actions for August 2026",
-      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-70.html",
-      "date": "August 20, 2026",
-      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for August 2026."
     }
   ],
-  "economicsNews": [],
+  "economicsNews": [
+    {
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "date": "September 16, 2026",
+      "description": "Federal Reserve issues FOMC statement",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm",
+      "date": "September 16, 2026",
+      "description": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260825a.htm",
+      "date": "August 25, 2026",
+      "description": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Minutes of the Federal Open Market Committee, July 28–29, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260819a.htm",
+      "date": "August 19, 2026",
+      "description": "Minutes of the Federal Open Market Committee, July 28–29, 2026",
+      "category": "Monetary Policy"
+    }
+  ],
   "bisNews": [
     {
       "title": "Azur Air, Office 29, Vzletnaya St. 57, Krasnoyarsk, Russia 660020; Order Renewing Temporary Denial of Export Privileges",
@@ -3279,7 +3296,7 @@
       "title": "Harvey Weinstein sentenced to 15 years in prison for sexual assault",
       "url": "https://www.bbc.co.uk/news/articles/cm98626n260yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 23, 2026",
-      "description": "In court, Miriam Haley said the assault had a \"devastating effect on my life and sense of security that may never go away\"."
+      "description": "Assault survivor Miriam Haley said the \"devastating effect on my life and sense of security that may never go away\"."
     },
     {
       "title": "Reports of violence against women in Gaza surge, UN agency finds",
@@ -3684,6 +3701,12 @@
       "description": "The final conclusions of the investigation have yet to be published, although more could become apparent in the coming days."
     },
     {
+      "title": "Why is the price of protein powder rising?",
+      "url": "https://www.bbc.co.uk/news/videos/cmq8j1nk2wnxo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 23, 2026",
+      "description": "Why is the price of protein powder rising?"
+    },
+    {
       "title": "How much do you spend on a birthday present?",
       "url": "https://www.bbc.co.uk/news/videos/cmj64g887zy9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 23, 2026",
@@ -3696,10 +3719,52 @@
       "description": "Jacob Rothman built a manufacturing business in China supplying major retailers"
     },
     {
-      "title": "Are vet bills about to get cheaper?",
-      "url": "https://www.bbc.co.uk/news/videos/cmn8eqg2v2xyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 22, 2026",
-      "description": "Written prescription fees from vets will be capped at £21 as part of a raft of changes that practices will be legally required to bring in over the coming months."
+      "title": "Why does Greenland matter to the US?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/9/23/why-does-greenland-matter-to-the-us-2?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "Donald Trump says a new deal gives the US complete control over the island's security."
+    },
+    {
+      "title": "US says it is open to talks with Cuba if it changes government",
+      "url": "https://www.aljazeera.com/news/2026/9/23/us-says-it-is-open-to-talks-with-cuba-if-it-changes-government?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "Marco Rubio made comments after Trump called Cuba a 'failed state' at the UN, prompting Cuban delegation to walk out."
+    },
+    {
+      "title": "Wolfsburg terminate Christian Eriksen’s football contract by mutual consent",
+      "url": "https://www.aljazeera.com/sports/2026/9/23/wolfsburg-terminate-christian-eriksens-contract-by-mutual-consent?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "The 34-year-old has been recovering from an on-pitch collapse in June during a friendly between Denmark and Ukraine."
+    },
+    {
+      "title": "Board of Peace plans $2.4bn Gaza reconstruction as Israel kills seven",
+      "url": "https://www.aljazeera.com/news/2026/9/23/board-of-peace-plans-2-4bn-gaza-reconstruction-as-israel-kills-seven?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "Violations against Palestinians in Gaza continue even as world leaders call on Israel to adhere to ceasefire deal."
+    },
+    {
+      "title": "Portugal vs Wales: UEFA Nations League – teams, start, lineups, Ronaldo",
+      "url": "https://www.aljazeera.com/sports/2026/9/23/portugal-vs-wales-uefa-nations-league-teams-start-lineups?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "Portugal bring their Nations League defence against Wales, with Cristiano Ronaldo eyeing 1,000 goals before retirement."
+    },
+    {
+      "title": "Jerusalem Daily: World leaders condemn Israel at UN",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/23/jerusalem-daily-world-leaders-condemn-israel-at-un?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "Palestinians protest Israel’s prison visit bans as settler pogroms continue across the occupied West Bank."
+    },
+    {
+      "title": "Mexico braces for Hurricane Polo gathering strength",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/23/23-09-sv-mexico-hurricane-polo-mx?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "Hurricane Polo, one of the strongest Pacific cyclones in decades, brought dangerous waves and heavy rain to Mexico."
+    },
+    {
+      "title": "Ethiopia faces renewed war as armed groups launch offensive",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/23/09-23-26-ethiopia-armed-groups-sv-mp4?traffic_source=rss",
+      "date": "September 23, 2026",
+      "description": "There are fears of a renewed war in Ethiopia after seven armed groups formed an alliance to overthrow the government."
     },
     {
       "title": "Israel’s destruction leaves Lebanon’s border villages in ruins",
@@ -3748,48 +3813,6 @@
       "url": "https://www.aljazeera.com/news/2026/9/23/can-ethiopias-seven-group-rebel-alliance-challenge-abiy-ahmed?traffic_source=rss",
       "date": "September 23, 2026",
       "description": "The alliance brings together movements with different enemies, claims and histories as tensions with Abiy rise."
-    },
-    {
-      "title": "Moroccans head to polls amid economic uncertainty to decide next parliament",
-      "url": "https://www.aljazeera.com/news/2026/9/23/moroccans-head-to-polls-amid-economic-uncertainty-to-decide-next-parliament?traffic_source=rss",
-      "date": "September 23, 2026",
-      "description": "Millions of Moroccans vote today for a 395-seat parliament amid new digital proxy and anti-fraud measures."
-    },
-    {
-      "title": "UN poverty goal faces reality check",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/23/un-poverty-goal-faces-reality-check?traffic_source=rss",
-      "date": "September 23, 2026",
-      "description": "The UN wants to accelerate progress to end poverty by 2030, but people over the world say millions are still struggling."
-    },
-    {
-      "title": "Priests Against Genocide hold shroud with names of children killed in Gaza",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/23/priests-against-genocide-hold-shroud-with-names-of-children-killed-in-gaza?traffic_source=rss",
-      "date": "September 23, 2026",
-      "description": "Priests Against Genocide hold shroud with names of 300 children killed in 'ceasefires' in Gaza, the occupied West Bank"
-    },
-    {
-      "title": "‘No legal grounds for fees on international strait’, says IOM chief",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/23/no-legal-grounds-for-fees-on-international-strait-says-iom-chief?traffic_source=rss",
-      "date": "September 23, 2026",
-      "description": "IMO's Arsenio Dominguez says it’s not legal for countries to charge ships fees to use international straits."
-    },
-    {
-      "title": "‘They told me to go back to my country’: Inside the UK’s wave of racism",
-      "url": "https://www.aljazeera.com/news/2026/9/23/they-told-me-to-go-back-to-my-country-inside-the-uks-wave-of-racism?traffic_source=rss",
-      "date": "September 23, 2026",
-      "description": "From street attacks to political rhetoric, xenophobia is becoming quotidian."
-    },
-    {
-      "title": "ICC convicts former Central African Republic militia leader",
-      "url": "https://www.aljazeera.com/news/2026/9/23/icc-convicts-central-african-militia-leader-of-crimes-against-humanity?traffic_source=rss",
-      "date": "September 23, 2026",
-      "description": "Mahamat Said Abdel Kani oversaw brutal detention tactics, including torture, at Bangui facility, ICC judges rule."
-    },
-    {
-      "title": "Has the US outgrown the two-party system?",
-      "url": "https://www.aljazeera.com/video/lets-focus/2026/9/23/has-the-us-outgrown-the-two-party-system?traffic_source=rss",
-      "date": "September 23, 2026",
-      "description": "Josh Rushing, Briahna Joy Gray and Robby Soave on the Democrats, Republicans and whether a third choice is possible."
     }
   ]
 }
