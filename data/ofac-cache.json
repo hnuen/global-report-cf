@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24T15:08:37.423Z",
+  "updatedAt": "2026-09-24T17:08:34.475Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260924",
@@ -1159,7 +1159,8 @@
           "date": "August 24, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7961/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": false
         },
         {
           "number": "G",
@@ -1167,7 +1168,8 @@
           "date": "August 24, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7966/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": false
         },
         {
           "number": "J-1",
@@ -1175,7 +1177,8 @@
           "date": "July 29, 2016",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7971/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "L",
@@ -1183,15 +1186,17 @@
           "date": "October 8, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48626/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "8A",
-          "title": "Iran General License 8A",
+          "title": "Authorizing Certain Humanitarian Trade Transactions Involving the Central Bank of Iran or the National Iranian Oil Company",
           "date": "February 27, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48841/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "Q",
@@ -1199,7 +1204,8 @@
           "date": "May 20, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934291/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "T",
@@ -2369,27 +2375,30 @@
         },
         {
           "number": "24",
-          "title": "Ukraine General License 24",
+          "title": "Transactions Related to the Provision of Maritime Services",
           "date": "March 18, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919801/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "25",
-          "title": "Ukraine General License 25",
+          "title": "Journalistic Activities and Establishment of News Bureaus in Certain Regions of Ukraine",
           "date": "March 24, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/920276/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "26A",
-          "title": "Ukraine General License 26A",
+          "title": "Transactions Authorized Pursuant to the Russian Harmful Foreign Activities Sanctions Regulations",
           "date": "January 10, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/933911/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "134C",
@@ -3085,18 +3094,6 @@
       "url": "https://www.aljazeera.com/news/liveblog/2026/9/24/trump-xi-summit-live-trade-ai-iran-and-taiwan-top-us-china-talks?traffic_source=rss",
       "date": "September 24, 2026",
       "description": "Xi’s first White House visit in more than a decade comes amid ongoing disputes over trade, AI, Taiwan and war in Iran."
-    },
-    {
-      "title": "Russia attacks Ukraine while Zelenskyy speaks at UNGA",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/24/russia-attacks-ukraine-while-zelenskyy-speaks-at-unga?traffic_source=rss",
-      "date": "September 24, 2026",
-      "description": "Russia attacks Ukraine while Zelenskyy speaks at UNGA"
-    },
-    {
-      "title": "Why is Iran threatening regional airports, and what could be the impact?",
-      "url": "https://www.aljazeera.com/news/2026/9/24/why-is-iran-threatening-regional-airports-and-what-could-be-the-impact?traffic_source=rss",
-      "date": "September 24, 2026",
-      "description": "Tehran hints retaliation as Georgia and Azerbaijan suspend Iranian flights amid mounting US sanctions on airlines."
     }
   ],
   "occNews": [
@@ -3207,10 +3204,10 @@
   ],
   "regionsNews": [
     {
-      "title": "White House 'repeatedly violated' court order to restore press access, say media outlets",
+      "title": "White House restores access to media outlets banned by Trump after judge's order",
       "url": "https://www.bbc.co.uk/news/articles/cqe8ek7608mlo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 24, 2026",
-      "description": "Employees from CNN, Politico and MS Now reported being denied entry, with some having passes confiscated."
+      "description": "CNN, Politico and MS NOW were allowed back into the White House after some of their staff were earlier turned away."
     },
     {
       "title": "Rogue OpenAI agent 'infiltrated' Australian government website in world first",
@@ -3235,6 +3232,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cwzrzjy3pynvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 24, 2026",
       "description": "The suspect is alleged to have been an accessory to murder at the Stalag 326 camp, where tens of thousands of Soviet PoWs died."
+    },
+    {
+      "title": "Greek PM urges UK PM to return Elgin Marbles permanently",
+      "url": "https://www.bbc.co.uk/news/articles/cqm2mgk6mlddo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 24, 2026",
+      "description": "Andy Burnham said in 2023 the sculptures should be returned to Greece with \"no strings attached\"."
     },
     {
       "title": "Teen rocker Nene Royal becomes first Thai to win America's Got Talent",
@@ -3627,6 +3630,48 @@
       "description": "Why is the price of protein powder rising?"
     },
     {
+      "title": "Media outlets still denied access to White House despite judge’s order",
+      "url": "https://www.aljazeera.com/economy/2026/9/24/media-outlets-still-denied-access-to-white-house-despite-judges-order?traffic_source=rss",
+      "date": "September 24, 2026",
+      "description": "A US federal judge had ordered the White House to 'immediately return, reinstate and restore' the three outlets' access."
+    },
+    {
+      "title": "Mahmoud Abbas: What will it take to ‘protect’ Palestine?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/24/mahmoud-abbas-what-will-it-take-to-protect-palestine?traffic_source=rss",
+      "date": "September 24, 2026",
+      "description": "Palestinian President Mahmoud Abbas questioned how long the world would “remain silent” on Israel's actions."
+    },
+    {
+      "title": "Trump invites Putin to Miami G20: Why that matters",
+      "url": "https://www.aljazeera.com/news/2026/9/24/trump-invites-putin-to-miami-g20-why-that-matters?traffic_source=rss",
+      "date": "September 24, 2026",
+      "description": "US Secretary of State Rubio said the summit would be an 'opportunity' for Putin to engage with other world leaders."
+    },
+    {
+      "title": "LIVE: Ivory Coast vs Ghana – AFCON qualifying",
+      "url": "https://www.aljazeera.com/sports/liveblog/2026/9/24/live-ivory-coast-vs-ghana-afcon-qualifying?traffic_source=rss",
+      "date": "September 24, 2026",
+      "description": "Follow updates, build-up, team news and lineups, from our live text commentary stream coverage as Yan Diomande stars."
+    },
+    {
+      "title": "NAZA, Israeli film on Gaza, to stream for free after theatrical run",
+      "url": "https://www.aljazeera.com/news/2026/9/24/naza-israeli-film-on-gaza-to-stream-for-free-after-theatrical-run?traffic_source=rss",
+      "date": "September 24, 2026",
+      "description": "Co-director Yuval Abraham says documentary exposing Israeli abuses will be available online in November."
+    },
+    {
+      "title": "LIVE: Portugal vs Wales – UEFA Nations League",
+      "url": "https://www.aljazeera.com/sports/liveblog/2026/9/24/live-portugal-vs-wales-uefa-nations-league?traffic_source=rss",
+      "date": "September 24, 2026",
+      "description": "Follow updates, with build-up, team news and lineups, from our live text commentary stream coverage as Ronaldo stars."
+    },
+    {
+      "title": "Trump welcomes China’s Xi Jinping to White House",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/24/trump-welcomes-chinas-xi-jinping-to-white-house?traffic_source=rss",
+      "date": "September 24, 2026",
+      "description": "Trump welcomes China’s Xi Jinping to White House"
+    },
+    {
       "title": "Saudi-led coalition says shot down 6 ballistic missiles launched by Houthis",
       "url": "https://www.aljazeera.com/news/2026/9/24/saudi-led-coalition-says-shot-down-6-ballistic-missiles-launched-by-houthis?traffic_source=rss",
       "date": "September 24, 2026",
@@ -3727,36 +3772,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/24/deadly-attack-on-indian-cargo-ship-off-coast-of-oman?traffic_source=rss",
       "date": "September 24, 2026",
       "description": "A crew member was killed in an attack on an Indian cargo vessel off the coast of Oman."
-    },
-    {
-      "title": "Belgium and Rwanda are talking again. Is DR Congo any closer to peace?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/24/belgium-and-rwanda-are-talking-again-is-dr-congo-any-closer-to-peace?traffic_source=rss",
-      "date": "September 24, 2026",
-      "description": "Belgium and Rwanda have restored diplomatic relations after an 18-month rupture over the war in eastern DR Congo."
-    },
-    {
-      "title": "India’s surfers look to make waves at the 2026 Asian Games",
-      "url": "https://www.aljazeera.com/sports/2026/9/24/indias-surfers-look-to-make-waves-at-the-2026-asian-games?traffic_source=rss",
-      "date": "September 24, 2026",
-      "description": "Indian surfers overcame huge challenges to reach the Asian Games and now dream of competing at the 2028 Olympics."
-    },
-    {
-      "title": "Could the oil shock push fuel prices even higher?",
-      "url": "https://www.aljazeera.com/video/counting-the-cost/2026/9/24/could-the-oil-shock-push-fuel-prices-even-higher?traffic_source=rss",
-      "date": "September 24, 2026",
-      "description": "From Hormuz to the Black Sea, pressure on main supply routes is testing the resilience of the global energy market."
-    },
-    {
-      "title": "OpenAI agents hack Australian government health data",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/24/openai-agents-hack-australian-government-health-data?traffic_source=rss",
-      "date": "September 24, 2026",
-      "description": "Rogue OpenAI agents accessed an Australian government health data website, obtaining non-public information."
-    },
-    {
-      "title": "Japan’s Ohashi breaks 200m breaststroke world record at Asian Games",
-      "url": "https://www.aljazeera.com/sports/2026/9/24/japans-ohashi-breaks-200m-breaststroke-world-record-at-asian-games?traffic_source=rss",
-      "date": "September 24, 2026",
-      "description": "Shin Ohashi, 17, claims his second Asian Games gold with his record-breaking effort in front of a thrilled home crowd."
     }
   ]
 }
