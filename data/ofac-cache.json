@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-24T13:08:23.417Z",
+  "updatedAt": "2026-09-24T15:08:37.423Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260924",
+      "code": "20260924",
+      "title": "Publication of Regulatory Amendments; Publication of Report for Licensing Activities Undertaken Pursuant to the Trade Sanctions Reform and Export Enhancement Act (TSRA)",
+      "date": "September 24, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260923",
       "code": "20260923",
@@ -54,12 +60,6 @@
       "code": "20260904",
       "title": "Iran-related Designations; Issuance of Iran-related General License",
       "date": "September 04, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260903",
-      "code": "20260903",
-      "title": "Cuba Designations; Russia-related Designation Removal; Issuance of Amended Cuba General License",
-      "date": "September 03, 2026"
     }
   ],
   "civilPenalties": [
@@ -423,56 +423,59 @@
     "counter-terrorism-sanctions": {
       "name": "Counter Terrorism Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-terrorism-sanctions",
-      "lastUpdated": "Sep 10, 2026",
+      "lastUpdated": "Sep 24, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
-          "citation": "91 FR 24722-26",
-          "description": "Publication of a Global Terrorism Sanctions Regulations and Illicit Drug Trade Sanctions Regulations Web General License 90 FR 38941-25 - Publication of Syrian Sanctions Regulations Web General License 25 90 FR 34600-25 - Publication of Global Terrorism Sanctions Regulations Web General License 33 9",
+          "citation": "91 FR 57794-26",
+          "description": "Publication of Global Terrorism Sanctions Regulations and Illicit Drug Trade Sanctions Regulations Web General License 35 91 FR 24722-26 - Publication of a Global Terrorism Sanctions Regulations and Illicit Drug Trade Sanctions Regulations Web General License 90 FR 38941-25 - Publication of Syrian S",
           "year": "2026",
           "glNumbers": [
-            "90",
-            "25",
-            "33"
+            "35",
+            "90"
           ]
         },
         {
-          "citation": "89 FR 91261-24",
-          "description": "Publication of Covid-Related Web General License Related to Iranian Transactions and Sanctions Regulations and Global Terrorism Sanctions Regulations 89 FR 84821-24 - Publication of Global Terrorism Sanctions Regulations Web General Licenses 30 and 31 89 FR 48842-24 - Publication of Global Terrorism",
-          "year": "2024",
+          "citation": "90 FR 34600-25",
+          "description": "Publication of Global Terrorism Sanctions Regulations Web General License 33 90 FR 30205-25 - Publication of Global Terrorism Sanctions Regulations and Foreign Terrorist Organizations Sanctions Regulations Web General Licenses 22A, 23A, 24A, 25A, 26A, and 28A 89 FR 91261-24 - Publication of Covid-Re",
+          "year": "2025",
           "glNumbers": [
-            "30"
+            "33",
+            "22A"
           ]
         },
         {
-          "citation": "89 FR 48841-24",
-          "description": "Publication of Global Terrorism Sanctions Regulations Web General License 28 89 FR 20120-24 - Publication of Global Terrorism Sanctions Regulations Web General License 29 89 FR 13271-24 - Publication of Global Terrorism Sanctions Regulations Web General Licenses 22, 23, 24, 25, 26, and 27 88 FR 9397",
+          "citation": "89 FR 84821-24",
+          "description": "Publication of Global Terrorism Sanctions Regulations Web General Licenses 30 and 31 89 FR 48842-24 - Publication of Global Terrorism Sanctions Regulations and Foreign Terrorist Organization Sanctions Regulations Web General Licenses 9, 10, 11, 12, and 13 89 FR 48841-24 - Publication of Global Terro",
           "year": "2024",
           "glNumbers": [
-            "28",
+            "30",
+            "9"
+          ]
+        },
+        {
+          "citation": "89 FR 20120-24",
+          "description": "Publication of Global Terrorism Sanctions Regulations Web General License 29 89 FR 13271-24 - Publication of Global Terrorism Sanctions Regulations Web General Licenses 22, 23, 24, 25, 26, and 27 88 FR 9397-23 - Publication of Global Terrorism Sanctions Regulations Web General Licenses 21A and 21B 8",
+          "year": "2024",
+          "glNumbers": [
             "29",
-            "22"
+            "22",
+            "21A"
           ]
         },
         {
-          "citation": "87 FR 78484-22",
-          "description": "Publication of Humanitarian Sanctions Regulations Amendment and General Licenses (Nongovernmental Organizations, Agricultural, and Medicine) 87 FR 78470-22 - Publication of United States Government and International Organizations Official Business Sanctions Regulations Amendment and General Licenses",
-          "year": "2022",
-          "glNumbers": []
-        },
-        {
-          "citation": "87 FR 76932-22",
-          "description": "Publication of Global Terrorism Sanctions Regulations Web General License 21 87 FR 58450-22 - Publication of Iranian Transactions and Sanctions Regulations and Global Terrorism Sanctions Regulations Web General Licenses 8 and 8A 87 FR 39337-22 - Amendment to the Global Terrorism Sanctions Regulation",
+          "citation": "87 FR 78470-22",
+          "description": "Publication of United States Government and International Organizations Official Business Sanctions Regulations Amendment and General Licenses 87 FR 76932-22 - Publication of Global Terrorism Sanctions Regulations Web General License 21 87 FR 58450-22 - Publication of Iranian Transactions and Sancti",
           "year": "2022",
           "glNumbers": [
-            "21",
-            "8"
+            "87",
+            "21"
           ]
         },
         {
-          "citation": "86 FR 27273-21",
-          "description": "Terrorism List Governments Sanctions Regulations: Amendment to implement the rescission of the designation of Sudan as a State Sponsor of Terrorism 85 FR 13746-20 - Removal of Terrorism Sanctions Regulations 84 FR 35307-19 - Amendments to the Global Terrorism Sanctions Regulations (GTSR); Transnatio",
-          "year": "2021",
+          "citation": "87 FR 39337-22",
+          "description": "Amendment to the Global Terrorism Sanctions Regulations 86 FR 27273-21 - Terrorism List Governments Sanctions Regulations: Amendment to implement the rescission of the designation of Sudan as a State Sponsor of Terrorism 85 FR 13746-20 - Removal of Terrorism Sanctions Regulations 84 FR 35307-19 - Am",
+          "year": "2022",
           "glNumbers": []
         },
         {
@@ -680,14 +683,6 @@
           "date": "August 26, 2026",
           "expires": "September 25, 2026",
           "url": "https://ofac.treasury.gov/media/936791/download?inline",
-          "datePdf": true
-        },
-        {
-          "number": "37",
-          "title": "Counter Terrorism General License 37",
-          "date": "September 8, 2026",
-          "expires": "September 23, 2026",
-          "url": "https://ofac.treasury.gov/media/936876/download?inline",
           "datePdf": true
         },
         {
@@ -1164,8 +1159,7 @@
           "date": "August 24, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7961/download?inline",
-          "datePdf": true,
-          "dateConfident": false
+          "datePdf": true
         },
         {
           "number": "G",
@@ -1173,8 +1167,7 @@
           "date": "August 24, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7966/download?inline",
-          "datePdf": true,
-          "dateConfident": false
+          "datePdf": true
         },
         {
           "number": "J-1",
@@ -1182,8 +1175,7 @@
           "date": "July 29, 2016",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7971/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "L",
@@ -1191,17 +1183,15 @@
           "date": "October 8, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48626/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "8A",
-          "title": "Authorizing Certain Humanitarian Trade Transactions Involving the Central Bank of Iran or the National Iranian Oil Company",
+          "title": "Iran General License 8A",
           "date": "February 27, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48841/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "Q",
@@ -1209,8 +1199,7 @@
           "date": "May 20, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934291/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "T",
@@ -1551,7 +1540,7 @@
     "paarss": {
       "name": "Promoting Accountability for Assad and Regional Stabilization Sanctions (PAARSS)",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/paarss",
-      "lastUpdated": "Aug 24, 2026",
+      "lastUpdated": "Sep 24, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -2380,30 +2369,27 @@
         },
         {
           "number": "24",
-          "title": "Transactions Related to the Provision of Maritime Services",
+          "title": "Ukraine General License 24",
           "date": "March 18, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919801/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "25",
-          "title": "Journalistic Activities and Establishment of News Bureaus in Certain Regions of Ukraine",
+          "title": "Ukraine General License 25",
           "date": "March 24, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/920276/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "26A",
-          "title": "Transactions Authorized Pursuant to the Russian Harmful Foreign Activities Sanctions Regulations",
+          "title": "Ukraine General License 26A",
           "date": "January 10, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/933911/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "134C",
@@ -3111,18 +3097,6 @@
       "url": "https://www.aljazeera.com/news/2026/9/24/why-is-iran-threatening-regional-airports-and-what-could-be-the-impact?traffic_source=rss",
       "date": "September 24, 2026",
       "description": "Tehran hints retaliation as Georgia and Azerbaijan suspend Iranian flights amid mounting US sanctions on airlines."
-    },
-    {
-      "title": "Russian attacks kill eight people across Ukraine as US steps up diplomacy",
-      "url": "https://www.aljazeera.com/news/2026/9/24/russian-attacks-kill-eight-people-across-ukraine-as-us-steps-up-diplomacy?traffic_source=rss",
-      "date": "September 24, 2026",
-      "description": "US and Russia engage in urgent talks to reduce war's impact on global energy during UN General Assembly."
-    },
-    {
-      "title": "To the victor belong Venezuela’s spoils: Delcy Rodriguez’s UNGA about-face",
-      "url": "https://www.aljazeera.com/opinions/2026/9/24/to-the-victor-belong-venezuelas-spoils-delcy-rodriguezs-unga-about-face?traffic_source=rss",
-      "date": "September 24, 2026",
-      "description": "Seven years after warning against US regime change, Venezuela’s interim president thanked the man who delivered it."
     }
   ],
   "occNews": [
@@ -3233,22 +3207,34 @@
   ],
   "regionsNews": [
     {
+      "title": "White House 'repeatedly violated' court order to restore press access, say media outlets",
+      "url": "https://www.bbc.co.uk/news/articles/cqe8ek7608mlo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 24, 2026",
+      "description": "Employees from CNN, Politico and MS Now reported being denied entry, with some having passes confiscated."
+    },
+    {
       "title": "Rogue OpenAI agent 'infiltrated' Australian government website in world first",
       "url": "https://www.bbc.co.uk/news/articles/c6vgy0333dppo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 24, 2026",
       "description": "Australia criticised OpenAI for taking \"too long\" to tell them about the breach which happened in June."
     },
     {
-      "title": "Judge temporarily overturns Trump's White House media ban",
-      "url": "https://www.bbc.co.uk/news/articles/cqm2mg34x2v7o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Why did an OpenAI system hack Australia's health system - and can it be stopped in the future?",
+      "url": "https://www.bbc.co.uk/news/articles/cw24jm9rryy3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 24, 2026",
-      "description": "A court has ordered the US government to reinstate access to the building for CNN, Politico and MS NOW."
+      "description": "News that an automated AI agent hacked a government IT system raises big questions about regulating the tech."
     },
     {
-      "title": "Ethiopia and Tigray accuse each of launching offensives, fuelling fears of new war",
-      "url": "https://www.bbc.co.uk/news/articles/cry8zwwq21pxo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Ethiopia's army says it has repelled attacks in first comment on fresh fighting",
+      "url": "https://www.bbc.co.uk/news/articles/cqevwm09w4xmo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 24, 2026",
-      "description": "The local authorities reportedly seize Tigray's airports following reports of recent drone strikes."
+      "description": "The military says its soldiers inflicted casualties as fears grow of a resumption of a full-blown civil war."
+    },
+    {
+      "title": "105-year-old investigated for crimes at Nazi PoW camp in Germany",
+      "url": "https://www.bbc.co.uk/news/articles/cwzrzjy3pynvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 24, 2026",
+      "description": "The suspect is alleged to have been an accessory to murder at the Stalag 326 camp, where tens of thousands of Soviet PoWs died."
     },
     {
       "title": "Teen rocker Nene Royal becomes first Thai to win America's Got Talent",
@@ -3297,12 +3283,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c94gm7dp40y0o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 23, 2026",
       "description": "The UN Population Fund also says there has been a \"severe escalation\" in the number of early and forced marriages."
-    },
-    {
-      "title": "Eleven killed in mass shooting at house in South Africa",
-      "url": "https://www.bbc.co.uk/news/articles/crgjqxzl097eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 23, 2026",
-      "description": "One of those killed is believed to be a pregnant woman, police said."
     },
     {
       "title": "Trump and Xi come face-to-face as US and China battle to win the AI race",
@@ -3647,6 +3627,66 @@
       "description": "Why is the price of protein powder rising?"
     },
     {
+      "title": "Saudi-led coalition says shot down 6 ballistic missiles launched by Houthis",
+      "url": "https://www.aljazeera.com/news/2026/9/24/saudi-led-coalition-says-shot-down-6-ballistic-missiles-launched-by-houthis?traffic_source=rss",
+      "date": "September 24, 2026",
+      "description": "No response by Yemen's Houthis to a claim by the coalition forces that its missiles targeted Taif and Yanbu."
+    },
+    {
+      "title": "Why are Ireland vs Israel football matches so controversial?",
+      "url": "https://www.aljazeera.com/sports/2026/9/24/ireland-vs-israel-football-match-nations-league-controversy-explained?traffic_source=rss",
+      "date": "September 24, 2026",
+      "description": "Ireland and Israel will play two football matches despite growing Irish calls for a boycott due to the genocide in Gaza."
+    },
+    {
+      "title": "Forever Chemicals: Ground Zero",
+      "url": "https://www.aljazeera.com/video/people-power/2026/9/24/forever-chemicals-ground-zero?traffic_source=rss",
+      "date": "September 24, 2026",
+      "description": "Pervasive, persistent and poisonous: How one US company helped pollute the world with forever chemicals."
+    },
+    {
+      "title": "‘Unstoppable’ Rumesh revives Sri Lanka’s glory, one javelin throw at a time",
+      "url": "https://www.aljazeera.com/sports/2026/9/24/unstoppable-rumesh-revives-sri-lankas-glory-one-javelin-throw-at-a-time?traffic_source=rss",
+      "date": "September 24, 2026",
+      "description": "A gold at the Asian Games will cap off an unprecedented season for the world number one."
+    },
+    {
+      "title": "Rubio warns of Iraq ‘Balkanisation’: Is that a real threat?",
+      "url": "https://www.aljazeera.com/news/2026/9/24/rubio-warns-of-iraq-balkanisation-is-that-a-real-threat?traffic_source=rss",
+      "date": "September 24, 2026",
+      "description": "US secretary of state's warning comes after he and Trump met the Iraqi PM on the sidelines of the UNGA."
+    },
+    {
+      "title": "Israel offers cash to firms hit by trade ban; Europe dithers on new rules",
+      "url": "https://www.aljazeera.com/news/2026/9/24/israel-offers-cash-to-firms-hit-by-trade-ban-europe-dithers-on-new-rules?traffic_source=rss",
+      "date": "September 24, 2026",
+      "description": "Israel hopes to redirect goods from illegal Israeli settlements towards markets in Asia and South America."
+    },
+    {
+      "title": "Has China received US F-35 parts by diverting an Australian shipment?",
+      "url": "https://www.aljazeera.com/news/2026/9/24/has-china-received-us-f-35-parts-by-diverting-an-australian-shipment?traffic_source=rss",
+      "date": "September 24, 2026",
+      "description": "Australia and US investigate F-35 parts mistakenly sent to Hong Kong amid concerns over sensitive military technology."
+    },
+    {
+      "title": "Netanyahu at UNGA over the years",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/24/24-09-sv-netanyahu-at-unga-over-the-years-il?traffic_source=rss",
+      "date": "September 24, 2026",
+      "description": "Benjamin Netanyahu says there will be surprises in his UN General Assembly address."
+    },
+    {
+      "title": "Hurricane Polo brings fears of heavy rain and landslides in Mexico",
+      "url": "https://www.aljazeera.com/news/2026/9/24/hurricane-polo-hits-mexicos-coast-as-tropical-storm-nolo-approaches-hawaii?traffic_source=rss",
+      "date": "September 24, 2026",
+      "description": "Heavy rains could cause life-threatening flooding and landslides in Mexico, the US National Hurricane Center warned."
+    },
+    {
+      "title": "Nine Kazakh soldiers die in Caspian Sea training incident",
+      "url": "https://www.aljazeera.com/news/2026/9/24/nine-kazakh-soldiers-die-in-caspian-sea-training-incident?traffic_source=rss",
+      "date": "September 24, 2026",
+      "description": "Nine confirmed dead after 19 Kazakh soldiers swept out to sea during naval training in western Mangystau region."
+    },
+    {
       "title": "Tunisia fuel strike highlights growing economic and political anger",
       "url": "https://www.aljazeera.com/economy/2026/9/24/tunisia-fuel-strike-highlights-growing-economic-and-political-anger?traffic_source=rss",
       "date": "September 24, 2026",
@@ -3659,7 +3699,7 @@
       "description": "The fight, one of the biggest in British boxing history, will be broadcast on streaming service Netflix."
     },
     {
-      "title": "Morocco’s elections: Fragmentation, disengagement and PJD’s major return",
+      "title": "Morocco’s elections: Fragmentation, disengagement and PJD’s major comeback",
       "url": "https://www.aljazeera.com/news/2026/9/24/moroccos-elections-fragmentation-disengagement-and-pjds-major-return?traffic_source=rss",
       "date": "September 24, 2026",
       "description": "PAM leads as the PJD quadruples its seats and turnout hits its second-lowest level under King Mohammed VI."
@@ -3717,54 +3757,6 @@
       "url": "https://www.aljazeera.com/sports/2026/9/24/japans-ohashi-breaks-200m-breaststroke-world-record-at-asian-games?traffic_source=rss",
       "date": "September 24, 2026",
       "description": "Shin Ohashi, 17, claims his second Asian Games gold with his record-breaking effort in front of a thrilled home crowd."
-    },
-    {
-      "title": "US Navy confirms ‘eight suicide attempts’ on USS Lincoln: What we know",
-      "url": "https://www.aljazeera.com/news/2026/9/24/us-navy-confirms-eight-suicide-attempts-on-uss-lincoln-what-we-know?traffic_source=rss",
-      "date": "September 24, 2026",
-      "description": "The roughly 5,000-strong crew on board the Lincoln were at sea for more than nine months with only one brief port stop."
-    },
-    {
-      "title": "How UK universities briefed BAE Systems on pro-Palestine campus protests",
-      "url": "https://www.aljazeera.com/news/2026/9/24/how-uk-universities-discussed-protests-with-bae-systems?traffic_source=rss",
-      "date": "September 24, 2026",
-      "description": "Several universities discussed protests with the weapons maker, raising concerns about influence and academic freedom."
-    },
-    {
-      "title": "How an OpenAI ‘agent’ hacked Australia’s Medicare and what that means",
-      "url": "https://www.aljazeera.com/news/2026/9/24/how-an-openai-agent-hacked-australias-medicare-and-what-that-means?traffic_source=rss",
-      "date": "September 24, 2026",
-      "description": "Incident highlights growing concerns about AI's impact on cybersecurity and AI disclosure procedures, say experts."
-    },
-    {
-      "title": "Yemeni forces say they repel Houthi attacks in Taiz as fighting rages",
-      "url": "https://www.aljazeera.com/news/2026/9/24/yemeni-forces-claim-repelling-houthi-attacks-in-taiz-as-fighting-rages-on?traffic_source=rss",
-      "date": "September 24, 2026",
-      "description": "Government forces say dozens of Houthis killed in southwestern governorate during battles for strategic highlands."
-    },
-    {
-      "title": "‘Partial satisfaction’: Sri Lankans hail 2019 bombings ruling with a caveat",
-      "url": "https://www.aljazeera.com/news/2026/9/24/partial-satisfaction-sri-lankans-hail-2019-bombings-ruling-with-a-caveat?traffic_source=rss",
-      "date": "September 24, 2026",
-      "description": "As 15 men are given long prison terms, a father who lost teen daughter wants to know if it was a political conspiracy."
-    },
-    {
-      "title": "‘Source of anxiety’: Pakistan cracks down before march to free Imran Khan",
-      "url": "https://www.aljazeera.com/news-analysis/2026/9/24/source-of-anxiety-pakistan-cracks-down-before-march-to-free-imran-khan?traffic_source=rss",
-      "date": "September 24, 2026",
-      "description": "The government has blocked highways to the capital and set up container barriers in preparation for the PTI protest."
-    },
-    {
-      "title": "Liberia is squandering the moral authority it claims at the UN",
-      "url": "https://www.aljazeera.com/opinions/2026/9/24/liberia-is-squandering-the-moral-authority-it-claims-at-the-un?traffic_source=rss",
-      "date": "September 24, 2026",
-      "description": "Its deal to take deportees is the latest in a long history of unequal agreements with the US."
-    },
-    {
-      "title": "Greenland’s delegation gets hero’s welcome after signing US-Denmark pact",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/24/greenlands-delegation-gets-heros-welcome-after-signing-us-denmark-pact?traffic_source=rss",
-      "date": "September 24, 2026",
-      "description": "Greenland’s delegation returned home to a hero’s welcome after signing a new pact with the US and Denmark."
     }
   ]
 }
