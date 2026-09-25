@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-25T15:08:24.986Z",
+  "updatedAt": "2026-09-25T17:08:38.150Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260924",
@@ -3094,12 +3094,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/25/rising-malnutrition-in-nigeria-as-us-war-on-iran-raises-food-costs?traffic_source=rss",
       "date": "September 25, 2026",
       "description": "The war on Iran is raising the cost of living in Nigeria."
-    },
-    {
-      "title": "Iran pitches seven-day roadmap to end conflict with US",
-      "url": "https://www.aljazeera.com/news/2026/9/25/iran-pitches-seven-day-roadmap-to-end-conflict-with-us?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "Tehran seeks rapid implementation failed ceasefire deal, offering to open Hormuz if regional conflicts halted."
     }
   ],
   "occNews": [
@@ -3210,16 +3204,16 @@
   ],
   "regionsNews": [
     {
+      "title": "Special agents' blood and urine test results stolen in FBI hack",
+      "url": "https://www.bbc.co.uk/news/articles/cw62me2vlj07o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 25, 2026",
+      "description": "Experts say the hack could leave agents vulnerable to scams, blackmail and targeted attacks."
+    },
+    {
       "title": "Pope warns against 'losing humanity' to AI machines",
       "url": "https://www.bbc.co.uk/news/articles/cmq8j904212po?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 25, 2026",
       "description": "The pontiff delivered the warning on the first day of his trip to France on Friday."
-    },
-    {
-      "title": "Trump and Xi exchange warm words at state dinner but little progress on key issues",
-      "url": "https://www.bbc.co.uk/news/articles/cxq63dqp93n1o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 25, 2026",
-      "description": "Despite diplomatic niceties and gifts, little was shared on substantial issues separating the leaders."
     },
     {
       "title": "Xi got Trump's red carpet welcome - but not everything he wanted",
@@ -3228,16 +3222,16 @@
       "description": "China wanted progress on trade, technology and Taiwan - but hasn't got as much as it would have hoped for."
     },
     {
-      "title": "Special agents' blood and urine test results stolen in FBI hack",
-      "url": "https://www.bbc.co.uk/news/articles/cw62me2vlj07o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Supreme Court revives controversial US data system for citizenship checks",
+      "url": "https://www.bbc.co.uk/news/articles/ck05rrj3jeylo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 25, 2026",
-      "description": "Experts say the hack could leave agents vulnerable to scams, blackmail and targeted attacks."
+      "description": "The system uses citizenship information and other sensitive data to filter alleged non-citizen voting."
     },
     {
-      "title": "Jay-Z rape accuser says her allegation was false",
-      "url": "https://www.bbc.co.uk/news/articles/cm4g53547wygo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Students strike across Germany in protest against military service",
+      "url": "https://www.bbc.co.uk/news/articles/cxnvlnve52qdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 25, 2026",
-      "description": "A woman who accused Jay-Z of raping her when she was 13 now says she has never met the rap superstar."
+      "description": "A law establishing voluntary military service came into effect in January, but protest organisers fear compulsory service could follow."
     },
     {
       "title": "Man shot during 2024 Trump campaign rally in Butler dies",
@@ -3246,10 +3240,16 @@
       "description": "A gunman shot Jim Copenhaver twice while also killing another man and grazing Trump's ear with a bullet."
     },
     {
-      "title": "Netanyahu defends Israeli military action as delegates walk out before UN speech",
-      "url": "https://www.bbc.co.uk/news/articles/c3y0z7kxlegdo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Senior Kazakh officials detained after 14 service members swept out to sea",
+      "url": "https://www.bbc.co.uk/news/articles/cm0reew1591zo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 25, 2026",
-      "description": "The Israeli leader labels those who left his speech at the UN General Assembly as \"moral cowards\"."
+      "description": "Seventeen service members were swept out to the Caspian Sea during military exercises."
+    },
+    {
+      "title": "Jay-Z rape accuser says her allegation was false",
+      "url": "https://www.bbc.co.uk/news/articles/cm4g53547wygo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 25, 2026",
+      "description": "A woman who accused Jay-Z of raping her when she was 13 now says she has never met the rap superstar."
     },
     {
       "title": "Internet restricted after fighting breaks out in Ethiopia's Tigray region",
@@ -3264,10 +3264,10 @@
       "description": "The EU had said X \"deceives users\" by selling blue ticks without \"meaningfully verifying\" accounts."
     },
     {
-      "title": "Why Australia chose the world's biggest political stage to reveal OpenAI hack",
-      "url": "https://www.bbc.co.uk/news/articles/cr3eqk15ld14o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 24, 2026",
-      "description": "Australia, which has strict social media restrictions and has proposed controls on algorithms and smart glasses, announced the breach at the UN."
+      "title": "Netanyahu defends Israeli military action as delegates walk out before UN speech",
+      "url": "https://www.bbc.co.uk/news/articles/c3y0z7kxlegdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 25, 2026",
+      "description": "The Israeli leader labels those who left his speech at the UN General Assembly as \"moral cowards\"."
     },
     {
       "title": "Africa's richest man helps fund $660m fuel pipeline between Ethiopia and Djibouti",
@@ -3318,10 +3318,10 @@
       "description": "After a major win at Toronto, Angh, a film from northeastern India, is now on a path towards the Oscars."
     },
     {
-      "title": "Why did an OpenAI system hack Australia's health system - and can it be stopped in the future?",
-      "url": "https://www.bbc.co.uk/news/articles/cw24jm9rryy3o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Why Australia chose the world's biggest political stage to reveal OpenAI hack",
+      "url": "https://www.bbc.co.uk/news/articles/cr3eqk15ld14o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 24, 2026",
-      "description": "News that an automated AI agent hacked a government IT system raises big questions about regulating the tech."
+      "description": "Australia, which has strict social media restrictions and has proposed controls on algorithms and smart glasses, announced the breach at the UN."
     },
     {
       "title": "Trump and Xi come face-to-face as US and China battle to win the AI race",
@@ -3346,12 +3346,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cn4klprmr0go?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 23, 2026",
       "description": "Campaigners hope the new words will lead to less body shaming and more sex positivity."
-    },
-    {
-      "title": "Indians are discovering the thrill of shopping without paying",
-      "url": "https://www.bbc.co.uk/news/articles/cwn741v5rdpxo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 23, 2026",
-      "description": "Dopamine sites mimic shopping’s thrill without the spending, turning the ritual of consumption into a digital game."
     },
     {
       "title": "Robbie Williams' surprise singalong after Peru gig cancelled",
@@ -3390,6 +3384,12 @@
       "description": "The UK has jammed satellites to defend itself from hostile threats, the BBC has been told."
     },
     {
+      "title": "Sir David Beckham nets £38.5m after World Cup ad deals",
+      "url": "https://www.bbc.co.uk/news/articles/crkgww5j0yzwo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 25, 2026",
+      "description": "His stake in DRJB Holdings has entitled him to almost half of its £85.5m in dividend payments."
+    },
+    {
       "title": "US backs Elon Musk's bid to overturn €120m EU fine against X",
       "url": "https://www.bbc.co.uk/news/articles/cq0m373ee0v0o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 25, 2026",
@@ -3414,16 +3414,16 @@
       "description": "What's the smallest amount of money you would ask a friend to pay you back?"
     },
     {
-      "title": "Farmers down 240 million litres of milk after heat",
-      "url": "https://www.bbc.co.uk/news/articles/cjvgy7qd20wgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 25, 2026",
-      "description": "Milk yield was affected by a series of extreme heatwaves which led to poor grazing conditions, researchers say."
-    },
-    {
       "title": "X-planes: Are they needed in the new era of drones?",
       "url": "https://www.bbc.co.uk/news/articles/c9q92x359xdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 24, 2026",
       "description": "Where do America's X-plane projects fit in an era of cheap drones?"
+    },
+    {
+      "title": "Farmers down 240 million litres of milk after heat",
+      "url": "https://www.bbc.co.uk/news/articles/cjvgy7qd20wgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 25, 2026",
+      "description": "Milk yield was affected by a series of extreme heatwaves which led to poor grazing conditions, researchers say."
     },
     {
       "title": "Trump and Xi exchange warm words at state dinner but little progress on key issues",
@@ -3544,12 +3544,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c6vgyq598k9po?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 25, 2026",
       "description": "Auto executives across Europe hope rearmament can help them flex their industrial muscles once more."
-    },
-    {
-      "title": "Trump wants AI to be rebranded as super intelligence. Will it work?",
-      "url": "https://www.bbc.co.uk/news/articles/cqy4z9pv4w0po?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 23, 2026",
-      "description": "Some people close to the president have started to use the term but experts say it is unlikely to catch on."
     },
     {
       "title": "How the oil capital of the US welcomed a solar power boom",
@@ -3696,6 +3690,48 @@
       "description": "What both want from the visit and how the leaders' relationship could shape its outcome"
     },
     {
+      "title": "Ethiopia’s new rebel alliance faces an old problem",
+      "url": "https://www.aljazeera.com/opinions/2026/9/25/ethiopias-new-rebel-alliance-faces-an-old-problem?traffic_source=rss",
+      "date": "September 25, 2026",
+      "description": "Former enemies have united against Abiy Ahmed, but disputes over territory, power and command could pull them apart."
+    },
+    {
+      "title": "More than 55,000 Sudanese refugees flee to Chad as UN calls for funding",
+      "url": "https://www.aljazeera.com/news/2026/9/25/more-than-55000-sudanese-refugees-flee-to-chad-as-un-calls-for-funding?traffic_source=rss",
+      "date": "September 25, 2026",
+      "description": "UN refugee agency says 400 people a day, about 20 times the previous daily rate, now cross from Sudan into eastern Chad."
+    },
+    {
+      "title": "LIVE: Turkiye vs France – UEFA Nations League",
+      "url": "https://www.aljazeera.com/sports/liveblog/2026/9/25/live-turkiye-vs-france-uefa-nations-league?traffic_source=rss",
+      "date": "September 25, 2026",
+      "description": "Follow the updates, with build-up, predictions, team news and lineups, from our live text commentary stream coverage."
+    },
+    {
+      "title": "What the Trump-Xi meeting revealed about global power",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/25/what-the-trump-xi-meeting-revealed-about-global-power?traffic_source=rss",
+      "date": "September 25, 2026",
+      "description": "Donald Trump and Xi Jinping met in Washington as world leaders gathered at the UN General Assembly in New York."
+    },
+    {
+      "title": "Trump hails ‘very productive’ talks with China’s Xi",
+      "url": "https://www.aljazeera.com/news/2026/9/25/trump-hails-very-productive-talks-with-chinas-xi?traffic_source=rss",
+      "date": "September 25, 2026",
+      "description": "Washington and Beijing to continue discussions on AI, technology transfer licensing after state visit by Chinese leader."
+    },
+    {
+      "title": "Lebanon PM calls for full Israeli withdrawal in UN address",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/25/lebanon-pm-calls-for-full-israeli-withdrawal-in-un-address?traffic_source=rss",
+      "date": "September 25, 2026",
+      "description": "Lebanon’s Prime Minister Nawaf Salam told the UN that his country will not be an ‘arena for the conflicts of others’."
+    },
+    {
+      "title": "Iraq calls for a ‘sovereign Palestinian state’ at UNGA",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/25/iraq-calls-for-a-sovereign-palestinian-state-at-unga?traffic_source=rss",
+      "date": "September 25, 2026",
+      "description": "Iraqi Prime Minister Ali Falih Al-Zaidi called for a sovereign state of Palestine at the 81st session of the UNGA."
+    },
+    {
       "title": "China swimmer makes Asian Games history as Thai sprinter wins track 100m",
       "url": "https://www.aljazeera.com/sports/2026/9/25/china-swimmer-makes-asian-games-history-as-thai-sprinter-wins-track-100m?traffic_source=rss",
       "date": "September 25, 2026",
@@ -3714,7 +3750,7 @@
       "description": "More than a quarter of the nearly 2,900 children screened by UNICEF in recent weeks were acutely malnourished."
     },
     {
-      "title": "Why Canada is not ruling out a possible war with the US",
+      "title": "Why is Canada’s PM Carney not ruling out a possible war with the US",
       "url": "https://www.aljazeera.com/news/2026/9/25/why-canada-is-not-ruling-out-a-possible-war-with-the-us?traffic_source=rss",
       "date": "September 25, 2026",
       "description": "Trump’s annexation threats have prompted Carney to examine even remote risks to Canada’s sovereignty."
@@ -3778,42 +3814,6 @@
       "url": "https://www.aljazeera.com/sports/2026/9/25/premier-league-and-la-liga-lead-fifa-reform-calls-after-infantino-plan?traffic_source=rss",
       "date": "September 25, 2026",
       "description": "Europe's top leagues, from England, Spain, Italy and Germany, add pressure on Gianni Infantino after World Cup plan."
-    },
-    {
-      "title": "From ‘cheats’ to ‘great friendship’: How Trump’s rhetoric on China changed",
-      "url": "https://www.aljazeera.com/news/2026/9/25/from-cheats-to-great-friendship-how-trumps-rhetoric-on-china-changed?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "Warmth on display in Washington contrasts significantly with the language Trump has used to characterise Beijing and Xi."
-    },
-    {
-      "title": "Switzerland’s neutrality vote is asking the wrong question",
-      "url": "https://www.aljazeera.com/opinions/2026/9/25/switzerlands-neutrality-vote-is-asking-the-wrong-question?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "The real question is what neutrality can still do for Switzerland."
-    },
-    {
-      "title": "Nepal PM says global order is broken in fighting climate crisis",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/25/25-09-sv-nepal-balendra-shah-climate-justice-speech-np?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "Nepal’s Prime Minister Balendra Shah was applauded at the UN General Assembly after his speech on climate crisis."
-    },
-    {
-      "title": "Saudi Arabia allies line up support as Houthi attacks mount",
-      "url": "https://www.aljazeera.com/news/2026/9/25/saudi-arabia-allies-line-up-support-as-houthi-attacks-mount?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "France is sending military to protect key Yanbu oil terminal; Pakistan and Turkiye to hold military talks with Riyadh."
-    },
-    {
-      "title": "Mamdani plants olive tree with Gaza families",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/25/mamdani-plants-olive-tree-with-gaza-families?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "New York Mayor Zohran Mamdani posted a video of himself planting an olive tree alongside Palestinian families from Gaza."
-    },
-    {
-      "title": "Pope Leo heads to France amid assisted dying, abuse debates",
-      "url": "https://www.aljazeera.com/news/2026/9/25/pope-leo-heads-to-france-amid-assisted-dying-abuse-debates?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "First papal state visit to country in 18 years comes as church confronts contentious issues."
     }
   ]
 }
