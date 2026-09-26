@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-26T19:08:22.672Z",
+  "updatedAt": "2026-09-26T21:08:26.083Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260924",
@@ -3078,6 +3078,18 @@
   ],
   "ajNews": [
     {
+      "title": "Saudi FM accuses Iran of ‘flagrant attacks’ and condemns Houthis at UNGA",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/26/saudi-fm-accuses-iran-of-flagrant-attacks-and-condemns-houthis-at-unga?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "At the UN, Saudi Arabia accused Iran of attacks across the region and called for action against the Houthis."
+    },
+    {
+      "title": "Lavrov: Russia’s war in Ukraine will continue ‘through to the end’",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/26/lavrov-russias-war-in-ukraine-will-continue-through-to-the?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "Russian Foreign Minister Sergey Lavrov vowed that the objectives of Moscow’s military operation will be achieved."
+    },
+    {
       "title": "Trump rejects Iranian offer to reopen Strait of Hormuz",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/26/trump-rejects-iranian-offer-to-reopen-strait-of-hormuz?traffic_source=rss",
       "date": "September 26, 2026",
@@ -3106,12 +3118,6 @@
       "url": "https://www.aljazeera.com/news/2026/9/26/trump-rejects-irans-seven-day-roadmap-to-reopen-strait-of-hormuz?traffic_source=rss",
       "date": "September 26, 2026",
       "description": "Tehran submitted a proposal via Qatar to reopen the strait and resume nuclear talks within a week if Washington agreed."
-    },
-    {
-      "title": "The intelligence war is turning against the Houthis",
-      "url": "https://www.aljazeera.com/opinions/2026/9/26/the-intelligence-war-is-turning-against-the-houthis?traffic_source=rss",
-      "date": "September 26, 2026",
-      "description": "Russian-Iranian intelligence helped the Houthis' offensive on the Red Sea coast. Now that system is under attack."
     }
   ],
   "occNews": [
@@ -3128,7 +3134,36 @@
       "description": "OCC Acts to Improve Transparency and Consistency to Bank Enforcement and Supervisory Standards OCC issues two revised policies and procedures manuals; proposes amendments to Violations of Laws and Regulations framework WASHINGTON-The Office of the Comptroller of the Currency (OCC) today announced additional actions to focus supervisory attention on the most significant risks and violations and to provide banks greater clarity, consistency and certainty in how Matters Requiring Attention (MRA) and enforcement actions are issued."
     }
   ],
-  "economicsNews": [],
+  "economicsNews": [
+    {
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "date": "September 16, 2026",
+      "description": "Federal Reserve issues FOMC statement",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm",
+      "date": "September 16, 2026",
+      "description": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260825a.htm",
+      "date": "August 25, 2026",
+      "description": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Minutes of the Federal Open Market Committee, July 28–29, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260819a.htm",
+      "date": "August 19, 2026",
+      "description": "Minutes of the Federal Open Market Committee, July 28–29, 2026",
+      "category": "Monetary Policy"
+    }
+  ],
   "bisNews": [
     {
       "title": "Azur Air, Office 29, Vzletnaya St. 57, Krasnoyarsk, Russia 660020; Order Renewing Temporary Denial of Export Privileges",
@@ -3565,6 +3600,12 @@
       "description": "Demand for avocados is booming in India and local growers hope to grab more of the market."
     },
     {
+      "title": "The ecstasy of buying our first home was short-lived after we found 150 faults",
+      "url": "https://www.bbc.co.uk/news/articles/c2dyxg0zkpko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 26, 2026",
+      "description": "Getting the keys to a new home felt like a dream come true, until this couple found 150 faults."
+    },
+    {
       "title": "Scottish drivers hit as diesel passes £2 a litre across the country",
       "url": "https://www.bbc.co.uk/news/articles/cr86xn04gxj9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 26, 2026",
@@ -3641,6 +3682,30 @@
       "url": "https://www.bbc.co.uk/news/videos/cm62k9jj7reyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 24, 2026",
       "description": "Consumer expert Harry Kind walks through what to do when buying travel insurance."
+    },
+    {
+      "title": "Hamas slams Board of Peace for refusal to work with UNRWA in Gaza",
+      "url": "https://www.aljazeera.com/news/2026/9/26/hamas-slams-board-of-peace-for-refusal-to-work-with-unrwa-in-gaza?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "Hamas accuses Board of Peace of aligning with Israel after excluding UN agency for Palestinians from Gaza operations."
+    },
+    {
+      "title": "Tens of thousands attend right-wing protest over Ceuta migrant crisis",
+      "url": "https://www.aljazeera.com/news/2026/9/26/tens-of-thousands-attend-right-wing-protest-over-ceuta-migrant-crisis?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "Demonstrators are demanding early elections and accuse Pedro Sanchez's government of negligence."
+    },
+    {
+      "title": "Ireland decide to play Israel in Nations League after squad vote",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/26/ireland-decide-to-play-israel-in-nations-league-after-squad-vote?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "Ireland's players have voted to proceed with their Nations League fixture against Israel on Sunday."
+    },
+    {
+      "title": "Colombia extradites leader of armed group to US in shift towards Washington",
+      "url": "https://www.aljazeera.com/news/2026/9/26/colombia-extradites-leader-of-armed-group-to-us-in-shift-towards-washington?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "Colombian President Abelardo De La Espriella has emerged as close ally the of Trump administration in South America."
     },
     {
       "title": "South African police discover body of 10th woman near Johannesburg",
@@ -3725,36 +3790,6 @@
       "url": "https://www.aljazeera.com/sports/2026/9/26/olympics-summer-games-germany-munich-host-candidate-bid?traffic_source=rss",
       "date": "September 26, 2026",
       "description": "Since the last time the Summer Games were on German soil in 1972, Germany has launched seven unsuccessful bids to host."
-    },
-    {
-      "title": "Israel-Ireland match to go ahead in Nations League after player vote",
-      "url": "https://www.aljazeera.com/sports/2026/9/26/republic-of-ireland-players-vote-for-israel-nations-league-game-to-go-ahead?traffic_source=rss",
-      "date": "September 26, 2026",
-      "description": "Ireland have delayed their pre-match media briefing and training as pressure grew, but player vote avoids game boycott."
-    },
-    {
-      "title": "Russell edges out Verstappen to win in Baku, Antonelli settles for fifth",
-      "url": "https://www.aljazeera.com/sports/2026/9/26/russell-edges-out-verstappen-to-win-in-baku-antonelli-settles-for-fifth?traffic_source=rss",
-      "date": "September 26, 2026",
-      "description": "George Russell wins Azerbaijan Grand Prix for eighth career F1 victory and first since the Austrian GP in June."
-    },
-    {
-      "title": "Is Ethiopia on the verge of another civil war as fighting erupts in Tigray?",
-      "url": "https://www.aljazeera.com/news/2026/9/26/is-ethiopia-on-the-verge-of-another-civil-war-as-fighting-erupts-in-tigray?traffic_source=rss",
-      "date": "September 26, 2026",
-      "description": "Seven armed groups have joined forces against Abiy Ahmed’s government, bringing former enemies into the same alliance."
-    },
-    {
-      "title": "Egypt to rest Salah in South Sudan AFCON qualifier over pitch concerns",
-      "url": "https://www.aljazeera.com/sports/2026/9/26/mohamed-salah-egypt-south-sudan-afcon-qualifier-artificial-turf-pitch?traffic_source=rss",
-      "date": "September 26, 2026",
-      "description": "Egyptian FA has decided to rest Salah to protect him from playing on artificial turf, which is likelier to cause injury."
-    },
-    {
-      "title": "Girl disabled by Israeli strike urges wheelchairs be let into Gaza",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/26/girl-disabled-by-israeli-strike-urges-wheelchairs-be-let-into-gaza?traffic_source=rss",
-      "date": "September 26, 2026",
-      "description": "Disabled and amputee children in Gaza are unable to get new wheelchairs as Israel refuses to allow them in"
     }
   ]
 }
