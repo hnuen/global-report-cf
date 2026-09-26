@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-25T22:08:28.951Z",
+  "updatedAt": "2026-09-26T13:08:28.754Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260924",
@@ -3064,36 +3064,60 @@
   "unNotices": [],
   "bbcNews": [
     {
+      "title": "Iran offers US deal to reopen Strait of Hormuz in seven days",
+      "url": "https://www.bbc.co.uk/news/articles/cqgmrr9ekr7ko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 26, 2026",
+      "description": "Asked about the Iranian proposal, a US official told the BBC \"constructive discussions\" were taking place through mediators."
+    },
+    {
       "title": "Russia targeting 'ordinary life' with attacks on Ukraine's data centres, Zelensky says",
       "url": "https://www.bbc.co.uk/news/articles/c84gkwgk7d06o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 25, 2026",
       "description": "Such strikes aim to disrupt \"people's ability to stay connected, study, work\", says Ukraine's president."
-    },
-    {
-      "title": "Eating garden weeds to survive in Russian-occupied city cut off from food and water",
-      "url": "https://www.bbc.co.uk/news/articles/c60qxywdx4vvo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 23, 2026",
-      "description": "The BBC has spoken to residents in the Russian-occupied Ukrainian town of Oleshky who say they are being \"constantly shelled\"."
     }
   ],
   "ajNews": [
     {
-      "title": "Iran threatens widespread disruption as Iraq halts Iran flights",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/25/iran-threatens-widespread-disruption-as-iraq-halts-iran-flights?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "Iraq has suspended Iranian flights at all four airports where they operated"
+      "title": "Pezeshkian says Iran ‘no longer trusts talks with Washington’",
+      "url": "https://www.aljazeera.com/news/2026/9/26/pezeshkian-says-iran-no-longer-trusts-talks-with-washington?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "In an interview with Al Jazeera, the Iranian president says Qatar and Pakistan are relaying Tehran's messages to the US."
     },
     {
-      "title": "Iraqi airports halt Iranian flights after new US aviation sanctions",
-      "url": "https://www.aljazeera.com/news/2026/9/25/iraqi-airports-halt-iranian-flights-after-new-us-aviation-sanctions?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "Baghdad, Najaf, Erbil and Sulaimaniyah airports suspend flights as US ramps up pressure on Iran's aviation sector."
+      "title": "An unexpected welcome: Syrian Kurds return to their homes in Afrin",
+      "url": "https://www.aljazeera.com/features/2026/9/26/an-unexpected-welcome-syrian-kurds-return-to-their-homes-in-afrin?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "Syrian Kurds are beginning to return to their homes in Afrin after years in exile, but have different experiences."
     },
     {
-      "title": "Poland boosts air defence after ‘Russian provocations’ amid Ukraine war",
-      "url": "https://www.aljazeera.com/news/2026/9/25/poland-boosts-air-defence-after-russian-provocations-amid-ukraine-war?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "Alleged incursions put NATO nations on alert as Ukraine launches strikes on Russia during parliamentary voting."
+      "title": "Israel bans Arab parties from election: Who they are, why it matters",
+      "url": "https://www.aljazeera.com/news/2026/9/26/israel-bans-arab-parties-from-election-who-they-are-why-it-matters?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "Israeli politicians subject to ICC arrest warrants or international sanctions remain eligible to run."
+    },
+    {
+      "title": "Trump ‘rejects’ Iran’s seven-day ceasefire proposal. What’s next?",
+      "url": "https://www.aljazeera.com/news/2026/9/26/trump-reportedly-rejects-irans-seven-day-ceasefire-proposal-whats-next?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "Analysts say Trump may opt to resume attacks on Iran after November midterm elections."
+    },
+    {
+      "title": "Iran war squeezes Iraq’s economy as oil revenues fall and prices rise",
+      "url": "https://www.aljazeera.com/news/2026/9/26/iran-war-squeezes-iraqs-economy-as-oil-revenues-fall-and-prices-rise?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "Disrupted oil exports, costlier imports, and a weaker dinar expose Iraq's economic dependence on oil, foreign goods."
+    },
+    {
+      "title": "US official claims Trump holds all the cards in Iran talks",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/26/us-official-claims-trump-holds-all-the-cards-in-iran-talks?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "US State Department Spokesman Tommy Pigott says President Donald Trump ‘holds all of the cards’ in talks with Tehran."
+    },
+    {
+      "title": "Iran pitches US a seven-day end to the war at UNGA",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/26/iran-pitches-us-a-seven-day-end-to-the-war-at-unga?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "Iran has pitched a proposal to open the Strait of Hormuz in seven days - if the US meets its conditions."
     }
   ],
   "occNews": [
@@ -3204,16 +3228,64 @@
   ],
   "regionsNews": [
     {
-      "title": "Special agents' blood and urine test results stolen in FBI hack",
-      "url": "https://www.bbc.co.uk/news/articles/cw62me2vlj07o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 25, 2026",
-      "description": "Experts say the hack could leave agents vulnerable to scams, blackmail and targeted attacks."
+      "title": "Huge crowds greet Pope in Paris ahead of open-air Mass",
+      "url": "https://www.bbc.co.uk/news/articles/cm4gjjwvvlzro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 26, 2026",
+      "description": "More than half a million people are expected to attend the event in the heart of the French capital."
     },
     {
-      "title": "Pope warns against 'losing humanity' to AI machines",
-      "url": "https://www.bbc.co.uk/news/articles/cmq8j904212po?at_medium=RSS&amp;at_campaign=rss",
+      "title": "British national among six dead in building explosion close to Acropolis in Athens",
+      "url": "https://www.bbc.co.uk/news/articles/c6p3kk78l4l1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 26, 2026",
+      "description": "Four Americans and a Greek national are among those killed in a suspected gas explosion, officials said."
+    },
+    {
+      "title": "Bangkok roads submerged as flood disaster declared",
+      "url": "https://www.bbc.co.uk/news/articles/ck1wxx8n2x3zo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 26, 2026",
+      "description": "An emergency has been declared across the capital of Thailand as days of heavy rain leave the city inundated."
+    },
+    {
+      "title": "South African white genocide does not exist, new ambassador to US tells BBC",
+      "url": "https://www.bbc.co.uk/news/articles/cm2l8qv7zppko?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 25, 2026",
-      "description": "The pontiff delivered the warning on the first day of his trip to France on Friday."
+      "description": "Roelf Meyer tells the BBC that being a white Afrikaner gives him legitimacy to challenge Trump's claim of a genocide."
+    },
+    {
+      "title": "OpenAI bots meddled with multiple US government agency sites",
+      "url": "https://www.bbc.co.uk/news/articles/cw62jje658dlo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 26, 2026",
+      "description": "OpenAI said its bots accessed public data from a range of institutions during test exercises."
+    },
+    {
+      "title": "Black woman found hanging from tree was dead before body was 'staged', police say",
+      "url": "https://www.bbc.co.uk/news/articles/cwp933nzpp9ro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 26, 2026",
+      "description": "Tasia Fortune's body was found hanging from a tree on the grounds of an abandoned home in Jackson in August."
+    },
+    {
+      "title": "White House bars CNN from travelling with Trump on Air Force One",
+      "url": "https://www.bbc.co.uk/news/articles/cxq633770y16o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 26, 2026",
+      "description": "CNN was scheduled to fly with US President Donald Trump for his trip to Tennessee on Saturday."
+    },
+    {
+      "title": "Brazil's Lula bans online gambling ahead of presidential election",
+      "url": "https://www.bbc.co.uk/news/articles/c914ddj21rzlo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 26, 2026",
+      "description": "Lula, who is currently in a tight presidential race against Flávio Bolsonaro, said the industry was a \"cancer\" that he must \"remove\"."
+    },
+    {
+      "title": "Republic of Ireland confirm rescheduled news conference before controversial Israel game",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c962jjl18g3ro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 26, 2026",
+      "description": "The Republic of Ireland will now hold their delayed news conference at 14:30 BST before they face Israel in tomorrow's Nations League fixture in Hungary - a fixture campaigners have called on them to boycott."
+    },
+    {
+      "title": "Inside the FBI hack: Agents fearful and angry after 'dangerous' data breach",
+      "url": "https://www.bbc.co.uk/news/articles/cm4gjjlgzdjgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 25, 2026",
+      "description": "Current and former agents speak to the BBC about the devastating impact of the FBI hack."
     },
     {
       "title": "Supreme Court allows Trump to use controversial database to check voter citizenship",
@@ -3222,136 +3294,52 @@
       "description": "Critics have questioned the reliability of the data, warning it could result in US citizens being wrongly removed from electoral rolls."
     },
     {
-      "title": "Trump's plans for massive arch move ahead",
-      "url": "https://www.bbc.co.uk/news/articles/cq0lrr8kxy0lo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Two arrested after people seen mysteriously emerging from various New York City sewers",
+      "url": "https://www.bbc.co.uk/news/articles/cwddvv44091vo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 25, 2026",
-      "description": "Opposition to building the 250-foot arch, and using it for military purposes, is growing with one Democrat blasting Trump's plans as \"foolhardy\"."
+      "description": "The city has seen a string of incidents in which people have climbed out of manholes late at night."
     },
     {
-      "title": "Students strike across Germany in protest against military service",
-      "url": "https://www.bbc.co.uk/news/articles/cxnvlnve52qdo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "The treasured 'eternal snow' on this tropical island is about to disappear forever",
+      "url": "https://www.bbc.co.uk/news/articles/cm5ydvww0erdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 25, 2026",
-      "description": "A law establishing voluntary military service came into effect in January, but protest organisers fear compulsory service could follow."
+      "description": "Climate change is transforming Papua's snowy peaks, which hold scientific value and spiritual significance."
     },
     {
-      "title": "Man shot during 2024 Trump campaign rally in Butler dies",
-      "url": "https://www.bbc.co.uk/news/articles/c5dj401d88l3o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "What is kratom, the 'gas station heroin' alarming officials in the US?",
+      "url": "https://www.bbc.co.uk/news/articles/cjn5ddzekwnro?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 25, 2026",
-      "description": "A gunman shot Jim Copenhaver twice while also killing another man and grazing Trump's ear with a bullet."
+      "description": "Kratom, found during an investigation into the deaths of two college students, has been sold in the US for around a decade."
     },
     {
-      "title": "Xi got Trump's red carpet welcome - but not everything he wanted",
-      "url": "https://www.bbc.co.uk/news/articles/cr93e4x7kdjjo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "As Merz scrambles for support, Germany's identity crisis is laid bare",
+      "url": "https://www.bbc.co.uk/news/articles/cmx2zlqeje9zo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 25, 2026",
-      "description": "China wanted progress on trade, technology and Taiwan - but hasn't got as much as it would have hoped for."
+      "description": "Voters are turning away from the centre in Germany as fears grow about the economy and migration."
     },
     {
-      "title": "Senior Kazakh officials detained after 14 service members swept out to sea",
-      "url": "https://www.bbc.co.uk/news/articles/cm0reew1591zo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "How fresh fighting in Tigray could spark wider conflict in Ethiopia",
+      "url": "https://www.bbc.co.uk/news/articles/c6d94wywx0ypo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 25, 2026",
-      "description": "Seventeen service members were swept out to the Caspian Sea during military exercises."
+      "description": "Exploring the issues behind the escalation of tensions between the TPLF and the national army."
     },
     {
-      "title": "Jay-Z rape accuser says her allegation was false",
-      "url": "https://www.bbc.co.uk/news/articles/cm4g53547wygo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Why an international arrest warrant didn't stop Netanyahu's US trip",
+      "url": "https://www.bbc.co.uk/news/videos/ckq633lm11jeo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 25, 2026",
-      "description": "A woman who accused Jay-Z of raping her when she was 13 now says she has never met the rap superstar."
+      "description": "The BBC's Nada Tawfik explains why Israel's Benjamin Netanyahu was not arrested after speaking at the UN, despite an ICC arrest warrant."
     },
     {
-      "title": "Internet restricted after fighting breaks out in Ethiopia's Tigray region",
-      "url": "https://www.bbc.co.uk/news/articles/cqp8dxxg325no?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Bangkok declares disaster as heavy rains spark flooding",
+      "url": "https://www.bbc.co.uk/news/videos/ck9800jdj1q0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 26, 2026",
+      "description": "Days of near continuous downpours have caused widespread flooding in the Thai capital."
+    },
+    {
+      "title": "Thousands turn out to greet Pope in France",
+      "url": "https://www.bbc.co.uk/news/videos/cq14d142p08do?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 25, 2026",
-      "description": "During the two-year civil war in Tigray, the region was totally cut off from the outside world."
-    },
-    {
-      "title": "US backs Elon Musk's bid to overturn €120m EU fine against X",
-      "url": "https://www.bbc.co.uk/news/articles/cq0m373ee0v0o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 25, 2026",
-      "description": "The EU had said X \"deceives users\" by selling blue ticks without \"meaningfully verifying\" accounts."
-    },
-    {
-      "title": "Netanyahu defends Israeli military action as delegates walk out before UN speech",
-      "url": "https://www.bbc.co.uk/news/articles/c3y0z7kxlegdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 25, 2026",
-      "description": "The Israeli leader labels those who left his speech at the UN General Assembly as \"moral cowards\"."
-    },
-    {
-      "title": "Africa's richest man helps fund $660m fuel pipeline between Ethiopia and Djibouti",
-      "url": "https://www.bbc.co.uk/news/articles/c6z9z7lv41wgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 25, 2026",
-      "description": "The pipeline would strengthen energy security in landlocked Ethiopia, while creating jobs at Djibouti's port."
-    },
-    {
-      "title": "Italy ministers agree to ban burqa and niqab in school and cap foreigners in class",
-      "url": "https://www.bbc.co.uk/news/articles/cw99d8g48873o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 24, 2026",
-      "description": "Prime Minister Giorgia Meloni described the measures as \"common-sense tools that do not divide but really help to integrate\"."
-    },
-    {
-      "title": "Media outlets banned by Trump resume White House coverage after judge's order",
-      "url": "https://www.bbc.co.uk/news/articles/cqe8ek7608mlo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 25, 2026",
-      "description": "US TV news coverage of the White House returns to normal after a judge lifted Trump's ban of three news outlets."
-    },
-    {
-      "title": "Four civilians killed in Pakistani strikes in Afghanistan, Taliban says",
-      "url": "https://www.bbc.co.uk/news/articles/cm86xn0nnw58o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 24, 2026",
-      "description": "Pakistan says it struck 10 targets, adding the strikes were \"strictly limited to identified military objectives\"."
-    },
-    {
-      "title": "Priest killed and four injured in knife attack at Polish abbey",
-      "url": "https://www.bbc.co.uk/news/articles/c607lrvm41l3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 24, 2026",
-      "description": "A male suspect from Ukraine was arrested after the stabbings in the town of Jarosław, police say."
-    },
-    {
-      "title": "Rapper Macklemore announces 'Free Palestine' tour after Ed Sheeran fallout",
-      "url": "https://www.bbc.co.uk/news/articles/cqzjzlve8jg7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 24, 2026",
-      "description": "Proceeds from the tour, which begins in Dublin next month, will go to organisations supporting Palestinians, he says."
-    },
-    {
-      "title": "105-year-old investigated for crimes at Nazi PoW camp in Germany",
-      "url": "https://www.bbc.co.uk/news/articles/cwzrzjy3pynvo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 24, 2026",
-      "description": "The suspect is alleged to have been an accessory to murder at the Stalag 326 camp, where tens of thousands of Soviet PoWs died."
-    },
-    {
-      "title": "From Nagaland to a path to the Oscars: Indian film brings a rarely seen world to global cinema",
-      "url": "https://www.bbc.co.uk/news/articles/cv2dwk3z7x5eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 24, 2026",
-      "description": "After a major win at Toronto, Angh, a film from northeastern India, is now on a path towards the Oscars."
-    },
-    {
-      "title": "Why Australia chose the world's biggest political stage to reveal OpenAI hack",
-      "url": "https://www.bbc.co.uk/news/articles/cr3eqk15ld14o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 24, 2026",
-      "description": "Australia, which has strict social media restrictions and has proposed controls on algorithms and smart glasses, announced the breach at the UN."
-    },
-    {
-      "title": "Trump and Xi come face-to-face as US and China battle to win the AI race",
-      "url": "https://www.bbc.co.uk/news/articles/c6gqdgg8w59xo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 23, 2026",
-      "description": "The US and China are vying for AI supremacy while seeking to keep it under human control."
-    },
-    {
-      "title": "In Amish country, nurses go door to door to stop deadly spread of measles",
-      "url": "https://www.bbc.co.uk/news/articles/ck3wjyjgj37po?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 24, 2026",
-      "description": "With four measles-related deaths in Pennsylvania, health officials are hoping to get people on board with vaccines in private."
-    },
-    {
-      "title": "They were labelled 'pervert glasses'. Will a camera-free version transform their image?",
-      "url": "https://www.bbc.co.uk/news/articles/cwp80l0my1x2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 24, 2026",
-      "description": "Meta has unveiled audio-only smart glasses, with some questioning whether it is a response to the backlash over privacy."
-    },
-    {
-      "title": "'Make women feel seen': Why the Dutch have a new word for labia",
-      "url": "https://www.bbc.co.uk/news/articles/cn4klprmr0go?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 23, 2026",
-      "description": "Campaigners hope the new words will lead to less body shaming and more sex positivity."
+      "description": "The BBC's Hugh Schofield looks at why the visit is met with enthusiasm the Church attributes to growing spirituality among the French."
     },
     {
       "title": "Robbie Williams' surprise singalong after Peru gig cancelled",
@@ -3372,34 +3360,34 @@
       "description": "The BBC’s China correspondent Laura Bicker unpacks how the trip panned out for Beijing and Washington."
     },
     {
-      "title": "Watch: UN delegates walk out of Netanyahu speech",
-      "url": "https://www.bbc.co.uk/news/videos/cqwyzmpm3pgdo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "OpenAI bots meddled with multiple US government agency sites",
+      "url": "https://www.bbc.co.uk/news/articles/cw62jje658dlo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 26, 2026",
+      "description": "OpenAI said its bots accessed public data from a range of institutions during test exercises."
+    },
+    {
+      "title": "Could an iced coffee freeze you out of the job market?",
+      "url": "https://www.bbc.co.uk/news/articles/cv62k9p1rz4do?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 26, 2026",
+      "description": "Employees and recruiters weigh into the online debate around interview etiquette."
+    },
+    {
+      "title": "Clubs seek legal advice over Man City charges compensation",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cr89jjwy4nqpo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 25, 2026",
+      "description": "Premier League clubs are seeking legal advice as to whether they would have a compensation claim over the Manchester City 115 charges case."
+    },
+    {
+      "title": "'We're all broke': Would you chase a friend for £5?",
+      "url": "https://www.bbc.co.uk/news/articles/cmly439q4y27o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 24, 2026",
-      "description": "The Israeli delegation cheered in support during Netanyahu's speech. Nada Tawfik in New York explains what happened."
-    },
-    {
-      "title": "A red carpet and military flyover - How Trump welcomed Xi",
-      "url": "https://www.bbc.co.uk/news/videos/c6804ne8knklo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 23, 2026",
-      "description": "The two B-1 bombers that flew overhead are a key part of the US's combat arsenal, and produce a notoriously loud roar when they pass by."
-    },
-    {
-      "title": "Watch: The arms race in space and how the UK is defending itself",
-      "url": "https://www.bbc.co.uk/news/videos/c34gdygn5lqpo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 23, 2026",
-      "description": "The UK has jammed satellites to defend itself from hostile threats, the BBC has been told."
+      "description": "What's the smallest amount of money you would ask a friend to pay you back?"
     },
     {
       "title": "Sir David Beckham nets £38.5m after World Cup ad deals",
       "url": "https://www.bbc.co.uk/news/articles/crkgww5j0yzwo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 25, 2026",
       "description": "His stake in DRJB Holdings has entitled him to almost half of its £85.5m in dividend payments."
-    },
-    {
-      "title": "Man City found guilty of breaking financial rules",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cw7v44ezry5go?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 25, 2026",
-      "description": "Manchester City have been found guilty of breaking the majority of the 115 financial rules they were accused of breaching."
     },
     {
       "title": "US backs Elon Musk's bid to overturn €120m EU fine against X",
@@ -3414,28 +3402,10 @@
       "description": "The average price of a litre of diesel at the pump stands at 198.32p, according to the RAC motoring body."
     },
     {
-      "title": "Special agents' blood and urine test results stolen in FBI hack",
-      "url": "https://www.bbc.co.uk/news/articles/cw62me2vlj07o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 25, 2026",
-      "description": "Experts say the hack could leave agents vulnerable to scams, blackmail and targeted attacks."
-    },
-    {
       "title": "X-planes: Are they needed in the new era of drones?",
       "url": "https://www.bbc.co.uk/news/articles/c9q92x359xdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 24, 2026",
       "description": "Where do America's X-plane projects fit in an era of cheap drones?"
-    },
-    {
-      "title": "'We're all broke': Would you chase a friend for £5?",
-      "url": "https://www.bbc.co.uk/news/articles/cmly439q4y27o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 24, 2026",
-      "description": "What's the smallest amount of money you would ask a friend to pay you back?"
-    },
-    {
-      "title": "Farmers down 240 million litres of milk after heat",
-      "url": "https://www.bbc.co.uk/news/articles/cjvgy7qd20wgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 25, 2026",
-      "description": "Milk yield was affected by a series of extreme heatwaves which led to poor grazing conditions, researchers say."
     },
     {
       "title": "Trump and Xi exchange warm words at state dinner but little progress on key issues",
@@ -3618,10 +3588,16 @@
       "description": "Demand for avocados is booming in India and local growers hope to grab more of the market."
     },
     {
-      "title": "Diesel prices exceed £2 a litre at hundreds of forecourts across Scotland",
+      "title": "Scottish drivers hit as diesel passes £2 a litre across the country",
       "url": "https://www.bbc.co.uk/news/articles/cr86xn04gxj9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 25, 2026",
+      "date": "September 26, 2026",
       "description": "Motoring organisation the RAC says it expects the average UK diesel price to hit a new record high over the weekend."
+    },
+    {
+      "title": "Fuel costs putting off meal delivery driver applicants",
+      "url": "https://www.bbc.co.uk/news/articles/c6wyzkwnd258o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 26, 2026",
+      "description": "Maureen Bougeard says some prospective volunteers do not respond after learning about expenses."
     },
     {
       "title": "UK diesel price close to all-time high",
@@ -3634,12 +3610,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cmly439q4y27o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 24, 2026",
       "description": "What's the smallest amount of money you would ask a friend to pay you back?"
-    },
-    {
-      "title": "Food banks 'in crisis' amid fears some may have to close",
-      "url": "https://www.bbc.co.uk/news/articles/ck62m1mzr4evo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 24, 2026",
-      "description": "According to the Trussell Trust, an anti-poverty charity, some food banks are having pay for 30-50% of the food they are supplying."
     },
     {
       "title": "Europe's car makers are in crisis. Will the threat of war rescue them?",
@@ -3696,136 +3666,112 @@
       "description": "Consumer expert Harry Kind walks through what to do when buying travel insurance."
     },
     {
-      "title": "Netanyahu calls Al Jazeera a ‘toxic media outlet’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/25/netanyahu-calls-al-jazeera-a-toxic-media?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "Israeli Prime Minister Benjamin Netanyahu called Al Jazeera a “toxic media outlet.”"
+      "title": "Pressure to boycott Israel game grows as Ireland preparations stall",
+      "url": "https://www.aljazeera.com/sports/2026/9/26/pressure-to-boycott-israel-game-grows-as-ireland-preparations-stall?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "Ireland are due to play Israel in the Nations League in Hungary on Sunday, but boycott pressure mounts on and off-field."
     },
     {
-      "title": "Mbappe goal overshadowed by knee injury to mar Zidane debut France win",
-      "url": "https://www.aljazeera.com/sports/2026/9/25/mbappe-goal-overshadowed-by-knee-injury-to-mar-zidane-debut-france-win?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "Kylian Mbappe scores the only goal of France's win in Turkiye, but Real Madrid striker immediately forced off by injury."
+      "title": "Suicide bombing in Pakistan’s Dera Ismail Khan kills several people",
+      "url": "https://www.aljazeera.com/news/2026/9/26/blast-in-pakistans-dera-ismail-khan-kills-several-people?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "Pakistan Taliban (TTP) claims responsibility for attack in Khyber Pakhtunkhwa province."
     },
     {
-      "title": "What would a US diesel export ban mean for global fuel prices?",
-      "url": "https://www.aljazeera.com/economy/2026/9/25/what-would-a-us-diesel-export-ban-mean-for-global-fuel-prices?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "Energy experts warn US diesel export ban could increase fuel costs domestically and internationally."
+      "title": "Ebola spreads in DR Congo, putting neighbouring nations at risk",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/26/26-09-sv-ebola-spreading-borders-drc-dr?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "The Ebola outbreak has spread to new areas in the Democratic Republic of the Congo, with 10 countries at high risk."
     },
     {
-      "title": "Italy crisis deepens as Belgium’s win stalls World Cup rebuild in Rome",
-      "url": "https://www.aljazeera.com/sports/2026/9/25/belgium-win-deepens-italy-crisis-as-latest-world-cup-rebuild-begins?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "Belgium win 2-0 in Italy as Nations League opener is played out in front of nearly half empty Stadio Olimpico."
+      "title": "Virat Kohli says he will retire from India cricket after 2027 World Cup",
+      "url": "https://www.aljazeera.com/sports/2026/9/26/india-cricket-great-virat-kohli-says-2027-world-cup-will-be-his-last?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "The leading century-maker in ODI cricket, Virat Kohli, announces 2027 World Cup will be his swansong for India."
     },
     {
-      "title": "Houthi attack on Mecca, Medina would cross ‘red line’, Pakistan PM tells UN",
-      "url": "https://www.aljazeera.com/news/2026/9/25/houthi-attack-on-mecca-medina-would-cross-red-line-pakistan-pm-tells-un?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "Shehbaz Sharif speaks as Islamabad, Riyadh and Ankara army chiefs meet to discuss Mecca pact, closer military ties."
+      "title": "England vs Spain: UEFA Nations League – Predictions, teams, head-to-head",
+      "url": "https://www.aljazeera.com/sports/2026/9/26/england-vs-spain-uefa-nations-league-prediction-team-news-head-to-head?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "World champions Spain meet heavyweights England in a rematch of the UEFA Euro 2024 final."
     },
     {
-      "title": "Manchester City reportedly found guilty of almost 115 financial charges",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/25/09-25-man-city-verdict-sv?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "Manchester City have reportedly been found guilty of almost all 115 financial misconduct charges they were facing."
+      "title": "Senegal draw in Vieira debut, Nigeria survive scare, but Cape Verde crash",
+      "url": "https://www.aljazeera.com/sports/2026/9/26/senegal-draw-in-vieira-debut-nigeria-survive-scare-but-cape-verde-crash?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "Senegal draw with Mozambique, Nigeria edge past Madagascar, but Cape Verde beaten by Mali in AFCON qualifying openers."
     },
     {
-      "title": "Huge fire on vehicle ferry off Mykonos prompts mass evacuation",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/25/huge-fire-on-vehicle-ferry-off-mykonos-prompts-mass-evacuation?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "A fire erupted aboard the vehicle ferry Blue Carrier 2 north of the Greek island of Mykonos, prompting a major emergency"
+      "title": "China, US to open AI ‘communication channel’ after summit, White House says",
+      "url": "https://www.aljazeera.com/news/2026/9/26/china-us-to-open-ai-communication-channel-after-summit-white-house-says?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "White House says the two countries agreed to open a 'bilateral communication channel' for AI incidents."
     },
     {
-      "title": "Afghan taxi drivers defy the Taliban’s music ban",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/25/afghan-taxi-drivers-defy-the-talibans-music-ban?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "Afghan taxi drivers are playing music in their cars despite it being banned by the Taliban."
+      "title": "Pro-Palestine Action group to rally at Labour conference led by Burnham",
+      "url": "https://www.aljazeera.com/news/2026/9/26/palestine-action-protest-labour-conference?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "Defend Our Juries say Sunday's action is an 'integrity test' for the UK's new premier."
     },
     {
-      "title": "Which countries walked out of Netanyahu’s UNGA speech?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/25/which-countries-walked-out-of-netanyahus-unga-speech?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "Which countries walked out of Netanyahu’s UNGA speech?"
+      "title": "Pochettino regrets limited role in Balogun red card decision at World Cup",
+      "url": "https://www.aljazeera.com/sports/2026/9/26/pochettino-regrets-limited-role-in-balogun-red-card-decision-at-world-cup?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "Mauricio Pochettino says controversial Folarin Balogun appeal 'changed the energy' around US team at World Cup 2026."
     },
     {
-      "title": "Jerusalem Daily: What was Netanyahu’s UNGA speech really about?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/25/jerusalem-daily-what-was-netanyahus-unga-speech-really-about?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "Dozens of countries’ delegations walked out of or were absent for Israeli PM Benjamin Netanyahu’s UNGA speech."
+      "title": "Disaster zone declared across Bangkok as heavy rain triggers flooding",
+      "url": "https://www.aljazeera.com/news/2026/9/26/disaster-zone-declared-across-bangkok-as-heavy-rain-triggers-flooding?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "Nonstop rain since Thursday has submerged Thai capital's roads and canals, sending water into homes and stores."
     },
     {
-      "title": "Pakistan PM calls Houthi threats to Saudi holy sites a ‘red line’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/25/pakistan-pm-calls-houthi-threats-to-saudi-holy-sites-a-red?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "Pakistan PM, a signatory to the Mecca Joint Defence Agreement, condemned Houthi attacks on Saudi Arabia at UNGA 81."
+      "title": "Could AI firms be held responsible for mass shootings?",
+      "url": "https://www.aljazeera.com/news/2026/9/26/could-ai-firms-be-held-responsible-for-mass-shootings?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "Canadian lawsuits against OpenAI raise questions about liability and duty to warn in the AI industry, say experts."
     },
     {
-      "title": "How Israel’s ‘Blue Line’ team seizes Palestinian land in the West Bank",
-      "url": "https://www.aljazeera.com/features/2026/9/25/how-israels-blue-line-team-seizes-palestinian-land-in-the-west-bank?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "Little-known Israeli map team is redrawing land boundaries as Palestinians face growing illegal settlement expansion."
+      "title": "Manchester City found guilty? What we know; what could the punishment be?",
+      "url": "https://www.aljazeera.com/sports/2026/9/26/manchester-city-found-guilty-what-we-know-what-could-the-punishment-be?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "The fallout begins as football and lawyers prepare for the next phase of 115 Premier League charges against Man City."
     },
     {
-      "title": "UN expands list of firms involved in illegal Israeli settlement activities",
-      "url": "https://www.aljazeera.com/news/2026/9/25/un-expands-list-of-firms-involved-in-illegal-israeli-settlement-activities?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "With addition of 61 more companies, the list now includes 214 businesses in 11 countries, most of them Israeli."
+      "title": "Yuki Kurihara, Japan’s 11-year-old e-sports prodigy, wins Asian Games gold",
+      "url": "https://www.aljazeera.com/sports/2026/9/26/yuki-kurihara-esports-gold-medal-japan-asian-games-2026-aichi-nagoya?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "Gold medallist Yuki Kurihara, a primary school student, is youngest athlete in host country Japan's Asian Games history."
     },
     {
-      "title": "Will Turkiye end its military presence in northern Iraq?",
-      "url": "https://www.aljazeera.com/video/inside-story/2026/9/25/will-turkiye-end-its-military-presence-in-northern-iraq?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "Ankara agrees to gradually hand over a base in Sinjar."
+      "title": "‘Nowhere else to go’: Gaza families shelter in buildings that may collapse",
+      "url": "https://www.aljazeera.com/features/2026/9/26/nowhere-else-to-go-gaza-families-shelter-in-buildings-that-may-collapse?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "Three years of Israel's war has left families in Gaza living in damaged buildings, with few safe alternatives available."
     },
     {
-      "title": "India’s Cockroach movement joins opposition push to oust election chief",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/25/09-25-india-election-chief-protests-sv?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "India’s youth-led Cockroach Janta Party has joined opposition calls for election chief Gyanesh Kumar to resign."
+      "title": "Huckabee blames ‘biblical illiteracy’ for waning support for Israel in US",
+      "url": "https://www.aljazeera.com/news/2026/9/26/huckabee-blames-biblical-illiteracy-for-declining-us-support-for-israel?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "A Pew Research poll in April indicated 60 percent of the US adult population held an unfavourable view of Israel."
     },
     {
-      "title": "Families fleeing Yemen’s war face displacement, hunger and water shortages",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/25/families-fleeing-yemens-war-face-displacement-hunger-and-water-shortages?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "Fighting between Houthi and government-aligned forces forces families out of their homes in Yemen."
+      "title": "‘Shaken faith’: Why are India’s elections under unprecedented scrutiny?",
+      "url": "https://www.aljazeera.com/news/2026/9/26/shaken-faith-why-are-indias-elections-under-unprecedented-scrutiny?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "India has long held up its elections as evidence of its democratic credentials. Now their legitimacy is under question."
     },
     {
-      "title": "US top court allows Trump to use controversial voter verification system",
-      "url": "https://www.aljazeera.com/news/2026/9/25/us-top-court-allows-trump-to-use-controversial-voter-verification-system?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "Voting rights groups have warned system may falsely identify voters as non-citizens, leading to disenfranchisement."
+      "title": "Bangkok on red alert as massive floods hit the city",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/26/bangkok-on-red-alert-as-massive-floods-hit-the-city?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "Persistent heavy downpours over a 48-hour period have triggered widespread flooding in Bangkok."
     },
     {
-      "title": "Lebanese in Brazil, Brazilian in Lebanon",
-      "url": "https://www.aljazeera.com/features/longform/2026/9/25/lebanese-in-brazil-brazilian-in-lebanon?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "Their families left Lebanon generations ago. For some Lebanese Brazilians, Lebanon’s pull never disappeared."
-    },
-    {
-      "title": "Al Jazeera rejects Netanyahu’s attack on journalists in UN speech",
-      "url": "https://www.aljazeera.com/news/2026/9/25/al-jazeera-rejects-netanyahus-attack-on-journalists-in-un-speech?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "Israeli PM's criticism of Al Jazeera during UNGA address threatens safety of journalists, the media network says."
-    },
-    {
-      "title": "Timeline: Man City’s Premier League financial charges to reported verdict",
-      "url": "https://www.aljazeera.com/sports/2026/9/25/timeline-man-citys-premier-league-financial-charges-to-reported-verdict?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "City reportedly found guilty of all but one of the 115 charges that were first brought in February 2023."
-    },
-    {
-      "title": "Ed Sheeran concerts at Robert Kraft stadiums cancelled over weather",
-      "url": "https://www.aljazeera.com/news/2026/9/25/ed-sheeran-concerts-at-robert-kraft-stadiums-cancelled-over-weather?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "Singer's tour has faced numerous setbacks after expulsion of rapper Macklemore over support for Palestine drew backlash."
-    },
-    {
-      "title": "US court upholds Pentagon’s blacklisting of Anthropic",
-      "url": "https://www.aljazeera.com/economy/2026/9/25/us-court-upholds-pentagons-blacklisting-of-anthropic?traffic_source=rss",
-      "date": "September 25, 2026",
-      "description": "Conflict began in February when Anthropic refused to remove restrictions on use of Claude for fully autonomous weapons."
+      "title": "White House bars CNN from Air Force One for Trump’s upcoming trip",
+      "url": "https://www.aljazeera.com/news/2026/9/26/white-house-bars-cnn-from-air-force-one-for-trumps-upcoming-trip?traffic_source=rss",
+      "date": "September 26, 2026",
+      "description": "Real America's Voice News replaces CNN on Air Force One amid escalating tensions between President Trump and US media."
     }
   ]
 }
