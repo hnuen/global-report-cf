@@ -32,7 +32,7 @@ test("monitor delivery survives source-refresh outages and supports bounded catc
   assert.doesNotMatch(workflow, /github\.event_name[^\n]*144/);
   assert.match(monitor, /parsed < 1 \|\| parsed > 168/);
   assert.match(monitor, /\.mget<unknown\[]>/);
-  assert.match(monitor, /manager\.notify\(verifiedCandidates/);
+  assert.match(monitor, /manager\.notify\(deliveryCandidates/);
   assert.match(workflow, /get\("alertedArticles", \[\]\)\[:5\]/);
   assert.match(workflow, /HTTP" != "409".*HTTP" != "500"/);
   assert.match(workflow, /BATCHES_INPUT/);

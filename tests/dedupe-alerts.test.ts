@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { dedupeByCanonicalKey } from "../src/lib/dedupe-alerts";
+import { dedupeByCanonicalKey } from "../src/lib/dedupe-alerts.ts";
 
 test("notification candidates are unique by canonical alert key", () => {
   const candidates = [
