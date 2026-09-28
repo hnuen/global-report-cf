@@ -13,6 +13,7 @@ import { selectMonitorArticles } from "@/src/lib/monitor-articles";
 import { loadAlertSettings } from "@/src/lib/alert-settings";
 import { acquireDistributedLock } from "@/src/lib/distributed-lock";
 import { isFederalRegisterUrl, resolveFederalRegisterUrl } from "@/src/lib/federal-register-links";
+import { dedupeByCanonicalKey } from "@/src/lib/dedupe-alerts";
 
 export const maxDuration = 120;
 
@@ -181,10 +182,18 @@ async function runMonitor(topic?: string, force = false, backfillHours?: number)
   // deliver at most the configured batch size.
   const candidatePool = candidates.slice(0, Math.max(maxAlertsPerRun * 3, maxAlertsPerRun));
   const verifiedCandidates = candidatePool.length > 0 ? await verifyAlertUrls(candidatePool) : [];
-  const keys = verifiedCandidates.map(s => buildAlertKey(s.article));
+  // Multiple ingestion paths can produce different headlines for the same
+  // official notice. Collapse them before any notifier evaluates recipients,
+  // otherwise both variants can be selected before delivery cooldown is saved.
+  const deliveryCandidates = dedupeByCanonicalKey(
+    verifiedCandidates,
+    scoredArticle => buildAlertKey(scoredArticle.article),
+  );
+  const deduplicated = verifiedCandidates.length - deliveryCandidates.length;
+  const keys = deliveryCandidates.map(s => buildAlertKey(s.article));
   const alreadyAlerted = forceSend ? new Set<string>() : await alertedKeys(keys);
   const blockedKeys = keys.filter(key => alreadyAlerted.has(key));
-  const newAlerts = verifiedCandidates
+  const newAlerts = deliveryCandidates
     .filter(s => !alreadyAlerted.has(buildAlertKey(s.article)))
     .slice(0, maxAlertsPerRun);
 
@@ -203,8 +212,8 @@ async function runMonitor(topic?: string, force = false, backfillHours?: number)
   // must see verified candidates even if the workflow's global ntfy fallback
   // already delivered an item; otherwise a successful ntfy send suppresses a
   // Telegram subscriber who has not received it.
-  const notifyResult = verifiedCandidates.length > 0
-    ? await manager.notify(verifiedCandidates, appUrl, alertSettings.threshold, maxAlertsPerRun)
+  const notifyResult = deliveryCandidates.length > 0
+    ? await manager.notify(deliveryCandidates, appUrl, alertSettings.threshold, maxAlertsPerRun)
     : { sent: 0, skipped: 0, channels: [], results: [], totalAlerts: 0, deliveredAlertKeys: [] };
 
   // 5. Start cooldown only for articles a notification channel actually
@@ -219,6 +228,7 @@ async function runMonitor(topic?: string, force = false, backfillHours?: number)
     archivedArticles: archivedArticles.length,
     alerting:     verifiedAlerts.length,
     droppedNoLink,
+    deduplicated,
     notified:     notifyResult.sent,
     skipped:      notifyResult.skipped,
     channels:     notifyResult.channels,
