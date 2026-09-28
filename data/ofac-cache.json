@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T19:08:28.339Z",
+  "updatedAt": "2026-09-28T21:08:32.226Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260928",
@@ -2317,7 +2317,8 @@
           "date": "December 20, 2016",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/8781/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "18",
@@ -2325,23 +2326,26 @@
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918686/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "19",
-          "title": "Ukraine General License 19",
+          "title": "Authorizing Transactions Related to Telecommunications and Mail",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918691/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "20",
-          "title": "Ukraine General License 20",
+          "title": "Official Business of Certain International Organizations and Entities",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918696/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "21",
@@ -2353,43 +2357,48 @@
         },
         {
           "number": "22",
-          "title": "Ukraine General License 22",
+          "title": "Authorizing the Exportation of Certain Services and Software Incident to Internet-Based Communications",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918706/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "23",
-          "title": "Ukraine General License 23",
+          "title": "Certain Transactions in Support of Nongovernmental Organizations’ Activities",
           "date": "March 11, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919151/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "24",
-          "title": "Ukraine General License 24",
+          "title": "Transactions Related to the Provision of Maritime Services",
           "date": "March 18, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919801/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "25",
-          "title": "Ukraine General License 25",
+          "title": "Journalistic Activities and Establishment of News Bureaus in Certain Regions of Ukraine",
           "date": "March 24, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/920276/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "26A",
-          "title": "Ukraine General License 26A",
+          "title": "Transactions Authorized Pursuant to the Russian Harmful Foreign Activities Sanctions Regulations",
           "date": "January 10, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/933911/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "134C",
@@ -3076,7 +3085,14 @@
       "description": "These new measures aim at further increasing the pressure on Russia and Belarus and supporting EU's goal of achieving a just and lasting peace for Ukraine."
     }
   ],
-  "unNotices": [],
+  "unNotices": [
+    {
+      "title": "Security Council ISIL (Da’esh) and Al-Qaida Sanctions Committee Amends One Entry to Its Sanctions List",
+      "url": "https://press.un.org/en/2026/sc16465.doc.htm",
+      "date": "September 28, 2026",
+      "description": "On 28 September 2026, the Security Council Committee pursuant to resolutions 1267 (1999), 1989 (2011) and 2253 (2015) concerning ISIL (Da’esh), Al‑Qaida and associated individuals, groups, undertakings and entities enacted the amendments specified with strikethrough and underline in the entry below on its ISIL (Da’esh) and Al-Qaida Sanctions List of individuals and entities subject to the assets freeze, travel ban and arms embargo set out in paragraph 1 of Security Council resolution 2734 (2024), and adopted under Chapter VII of the Charter of the United Nations."
+    }
+  ],
   "bbcNews": [
     {
       "title": "Seoul summons Ukraine envoy over North Korean prisoner-of-war row",
@@ -3129,6 +3145,24 @@
   ],
   "ajNews": [
     {
+      "title": "South Sudan calls for sanctions to be lifted at UNGA",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/28/south-sudan-calls-for-sanctions-to-be-lifted-at-unga?traffic_source=rss",
+      "date": "September 28, 2026",
+      "description": "Speaking at the UN General Assembly, South Sudan’s UN envoy Cecilia Adeng called for sanctions to be lifted"
+    },
+    {
+      "title": "Myanmar army air strike kills dozens in Rakhine state",
+      "url": "https://www.aljazeera.com/news/2026/9/28/myanmar-army-air-strike-kills-dozens-in-rakhine-state?traffic_source=rss",
+      "date": "September 28, 2026",
+      "description": "Nearly half a million people are displaced in Rakhine as a result of the conflict between the military and rebel groups."
+    },
+    {
+      "title": "Flights between Iraq’s Najaf and Iran resumed as Tehran protests US curbs",
+      "url": "https://www.aljazeera.com/news/2026/9/28/flights-between-iraqs-najaf-and-iran-resumed-as-tehran-protests-us-curbs?traffic_source=rss",
+      "date": "September 28, 2026",
+      "description": "Tehran filed a UN complaint against US sanctions forcing regional cancellations of Iran flights."
+    },
+    {
       "title": "Trump made the right decision to reject Iran’s offer",
       "url": "https://www.aljazeera.com/opinions/2026/9/28/trump-made-the-right-decision-to-reject-irans-offer?traffic_source=rss",
       "date": "September 28, 2026",
@@ -3151,24 +3185,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/28/russia-strike-sets-national-academy-of-sciences-of-ukraine-ablaze?traffic_source=rss",
       "date": "September 28, 2026",
       "description": "A Russian drone struck the National Academy of Sciences of Ukraine in central Kyiv, killing one person"
-    },
-    {
-      "title": "South Korea suspects North Korean mines behind DMZ blast",
-      "url": "https://www.aljazeera.com/news/2026/9/28/south-korea-suspects-north-korean-mines-behind-dmz-blast?traffic_source=rss",
-      "date": "September 28, 2026",
-      "description": "The report into the explosion in Demilitarized Zone threatens to provoke renewed tension between the two Koreas."
-    },
-    {
-      "title": "At least 33 killed after Myanmar military air strike hits market",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/28/at-least-33-killed-after-myanmar-military-air-strike-hits-market?traffic_source=rss",
-      "date": "September 28, 2026",
-      "description": "Dozens of people have been killed in a military air strike on an opposition-controlled area of Rakhine State, Myanmar."
-    },
-    {
-      "title": "Iran denies link to attack on airbase as UK minister warns of ‘proxies’",
-      "url": "https://www.aljazeera.com/news/2026/9/28/iran-denies-link-to-attack-on-airbase-as-uk-minister-warns-of-proxies?traffic_source=rss",
-      "date": "September 28, 2026",
-      "description": "Tehran condemns 'unfounded and malicious speculation'; British FM vows to 'act against the proxies of Iran'."
     }
   ],
   "occNews": [
@@ -3297,10 +3313,10 @@
       "description": "Crowds have gathered in Lagos to watch Ben Dancer, who says he will carry on dancing until Tuesday morning."
     },
     {
-      "title": "Stand-up comic set for release after being convicted of insulting Erdoğan",
+      "title": "Stand-up comic released after being convicted of insulting Erdoğan",
       "url": "https://www.bbc.co.uk/news/articles/c8zxzlqwzw0eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 28, 2026",
-      "description": "Turkish comedian Deniz Göktaş has been sentenced to almost 19 months, but is set to be released due to time served."
+      "description": "Turkish comedian Deniz Göktaş also faces a travel ban but has been released due to time served."
     },
     {
       "title": "Four bodies found after avalanche hits Himalayan climbing group",
@@ -3385,6 +3401,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cqm2mm4y5dkko?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 26, 2026",
       "description": "Germany's education minister has branded the ban on the small brass memorial plaques a \"scandal\"."
+    },
+    {
+      "title": "Stuck between superpowers: How Australia navigates the China-US rivalry",
+      "url": "https://www.bbc.co.uk/news/articles/c61wxyzr4rwyo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 28, 2026",
+      "description": "Australia is increasingly concerned about China's military might - but Beijing is also its biggest trade partner."
     },
     {
       "title": "Why some Indian civil servants become heroes for doing their jobs",
@@ -3735,6 +3757,84 @@
       "description": "Did trade frenemies find common ground at the White House?"
     },
     {
+      "title": "Olise scores late to grab France 1-0 Nations League win at Belgium",
+      "url": "https://www.aljazeera.com/sports/2026/9/28/olise-scores-late-to-grab-france-1-0-nations-league-win-at-belgium?traffic_source=rss",
+      "date": "September 28, 2026",
+      "description": "Bayern Munich star Olise set off from inside his own half to score the winner in the 88th minute."
+    },
+    {
+      "title": "‘Friendship pandas’ arrive in Atlanta, marking US-China relations moment",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/28/friendship-pandas-arrive-in-atlanta-marking-us-china-relations-moment?traffic_source=rss",
+      "date": "September 28, 2026",
+      "description": "Two giant pandas from China have landed in the United States and are heading to Zoo Atlanta."
+    },
+    {
+      "title": "French far-right leader Bardella refutes anti-Semitism allegations",
+      "url": "https://www.aljazeera.com/news/2026/9/28/french-far-right-leader-bardella-refutes-anti-semitism-allegations?traffic_source=rss",
+      "date": "September 28, 2026",
+      "description": "Mediapart's explosive report comes a day after France's National Rally party secures a record number of Senate seats."
+    },
+    {
+      "title": "Slovenia’s U-turn towards Israel",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/28/aje-onl-nf_slovenias-u-turn-towards-israel-280926?traffic_source=rss",
+      "date": "September 28, 2026",
+      "description": "Slovenia’s policy towards Palestine has changed sharply following a UNGA sideline meeting with Israeli PM Netanyahu."
+    },
+    {
+      "title": "Gaza’s young inventors build robots with what they have",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/28/gazas-young-inventors-build-robots-with-what-they-have?traffic_source=rss",
+      "date": "September 28, 2026",
+      "description": "At a youth hackathon in Gaza City, young inventors are developing robots."
+    },
+    {
+      "title": "Apple ordered to pay $5.7bn in patent infringement case",
+      "url": "https://www.aljazeera.com/economy/2026/9/28/apple-ordered-to-pay-5-7bn-in-patent-infringement-case?traffic_source=rss",
+      "date": "September 28, 2026",
+      "description": "California jury finds Apple infringed two Taction patents but did not wilfully violate them; Apple plans to appeal."
+    },
+    {
+      "title": "Trump announces $15bn steel mill project in Iowa before US midterms",
+      "url": "https://www.aljazeera.com/economy/2026/9/28/trump-announces-15bn-steel-mill-project-in-iowa-before-us-midterms?traffic_source=rss",
+      "date": "September 28, 2026",
+      "description": "Amid tight Iowa midterm races, US President Trump emphasises steel industry revival with a project announcement."
+    },
+    {
+      "title": "Nepal hit by deadly floods, landslides, and avalanche",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/28/aje-onl-nf_nepal-hit-by-deadly-floods-landslides-avalanche-280926?traffic_source=rss",
+      "date": "September 28, 2026",
+      "description": "Heavy rain triggered deadly floods and landslides across Nepal, while an avalanche left 12 workers missing."
+    },
+    {
+      "title": "NFL asks US Homeland Security to remove video with former star player",
+      "url": "https://www.aljazeera.com/news/2026/9/28/nfl-asks-us-homeland-security-to-remove-video-with-former-star-player?traffic_source=rss",
+      "date": "September 28, 2026",
+      "description": "Agency used video of Hall of Fame player Brian Dawkins to show readiness for border protection."
+    },
+    {
+      "title": "Italian court convicts three Egyptian agents for kidnap of Giulio Regeni",
+      "url": "https://www.aljazeera.com/news/2026/9/28/italian-court-convicts-three-egyptian-agents-for-kidnap-of-giulio-regeni?traffic_source=rss",
+      "date": "September 28, 2026",
+      "description": "Defendants were sentenced in absentia to 10 years in prison over the 2016 fatal abduction of the Cambridge scholar."
+    },
+    {
+      "title": "UAE confirms Israel PM Netanyahu’s visit to Abu Dhabi",
+      "url": "https://www.aljazeera.com/news/2026/9/28/uae-confirms-netanyahu-visit-to-abu-dhabi?traffic_source=rss",
+      "date": "September 28, 2026",
+      "description": "The visit took place as the Israeli prime minister battles domestic turmoil ahead of October's Knesset elections."
+    },
+    {
+      "title": "How can the UK’s Labour Party rebuild voter trust?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/9/28/how-can-the-uks-labour-party-rebuild-voter-trust?traffic_source=rss",
+      "date": "September 28, 2026",
+      "description": "Members at annual conference are optimistic about new PM"
+    },
+    {
+      "title": "American and six Ukrainians released by India after six months in jail",
+      "url": "https://www.aljazeera.com/news/2026/9/28/american-and-six-ukrainians-released-by-india-after-six-months-in-jail?traffic_source=rss",
+      "date": "September 28, 2026",
+      "description": "Matthew VanDyke and six Ukrainians were accused of smuggling weapons and drones to armed ethnic groups fighting India."
+    },
+    {
       "title": "Spain vs Croatia: UEFA Nations League – Yamal, Modric, teams, form",
       "url": "https://www.aljazeera.com/sports/2026/9/28/spain-croatia-uefa-nations-league-yamal-modric-teams-form?traffic_source=rss",
       "date": "September 28, 2026",
@@ -3763,84 +3863,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/28/09-28-nigerian-dancer-sv-mp4?traffic_source=rss",
       "date": "September 28, 2026",
       "description": "Nigerian dancer Benjamin Daniel Gabriel is trying to dance for 168 hours straight in a bid to set a world record."
-    },
-    {
-      "title": "Arming an adversary: Why Trump’s offer to sell China weapons belies US policy",
-      "url": "https://www.aljazeera.com/news-analysis/2026/9/28/arming-an-adversary-why-trump-offer-to-sell-china-weapons-belies-us-policy?traffic_source=rss",
-      "date": "September 28, 2026",
-      "description": "Analysts dismissed Trump's proposal as lacking any strategic logic – but said it revealed how he views Beijing."
-    },
-    {
-      "title": "Migrant children protest after police clear beach camp in Ceuta",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/28/migrant-children-protest-after-police-clear-beach-camp-in-ceuta?traffic_source=rss",
-      "date": "September 28, 2026",
-      "description": "Migrant children in Ceuta have protested for adequate shelter after heavy rain soaked their makeshift tents."
-    },
-    {
-      "title": "French police fire tear gas at migrants on beach",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/28/french-police-fire-tear-gas-at-migrants-on-beach?traffic_source=rss",
-      "date": "September 28, 2026",
-      "description": "French police have used tear gas to disperse migrants attempting to cross the English Channel to Britain from France."
-    },
-    {
-      "title": "Ebola cases surpass 8,000 as DRC struggles to control outbreak",
-      "url": "https://www.aljazeera.com/news/2026/9/28/ebola-cases-surpass-8000-as-drc-struggles-to-control-outbreak?traffic_source=rss",
-      "date": "September 28, 2026",
-      "description": "Fatalities near 4,000 across the DRC as health workers battle community anger and a vaccine-resistant strain."
-    },
-    {
-      "title": "Jerusalem Daily: Israeli incursions at Al-Aqsa Mosque",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/28/jerusalem-daily-israeli-incursions-at-al-aqsa-mosque?traffic_source=rss",
-      "date": "September 28, 2026",
-      "description": "Jerusalem Daily: Israeli incursions at Al-Aqsa Mosque"
-    },
-    {
-      "title": "Florida authorities ask court to block OpenAI’s ChatGPT over safety issues",
-      "url": "https://www.aljazeera.com/news/2026/9/28/florida-authorities-ask-court-to-block-openais-chatgpt-over-safety-issues?traffic_source=rss",
-      "date": "September 28, 2026",
-      "description": "The Republican-led US state says the AI should be blocked from development until safeguards are put in place."
-    },
-    {
-      "title": "LIVE: Belgium vs France – Nations League",
-      "url": "https://www.aljazeera.com/sports/liveblog/2026/9/28/live-belgium-vs-france-nations-league?traffic_source=rss",
-      "date": "September 28, 2026",
-      "description": "Follow updates from the Group A1 Nations League clash, including the build-up, analysis and live text commentary."
-    },
-    {
-      "title": "UK pledges tougher stance on Israeli actions in Gaza, West Bank",
-      "url": "https://www.aljazeera.com/news/2026/9/28/uk-pledges-tougher-stance-on-israeli-actions-in-gaza-west-bank?traffic_source=rss",
-      "date": "September 28, 2026",
-      "description": "British foreign minister vows to 'match word with action' when it comes to defending Palestinian rights."
-    },
-    {
-      "title": "SpaceX’s showpiece Starship rocket reaches orbit for first time",
-      "url": "https://www.aljazeera.com/news/2026/9/28/spacexs-showpiece-starship-rocket-reaches-orbit-for-first-time?traffic_source=rss",
-      "date": "September 28, 2026",
-      "description": "Founder Elon Musk's rocket, the largest ever built, is meant to carry NASA mission to moon and beyond."
-    },
-    {
-      "title": "Ben-Gvir joins hundreds of Israelis to storm Al-Aqsa Mosque compound",
-      "url": "https://www.aljazeera.com/news/2026/9/28/ben-gvir-joins-hundreds-of-israelis-to-storm-al-aqsa-mosque-compound?traffic_source=rss",
-      "date": "September 28, 2026",
-      "description": "Israeli national security minister declares 'we are the owners of the place in Al-Aqsa' amid heavily guarded incursion."
-    },
-    {
-      "title": "Athletes criticise organisational, logistical mishaps at ‘sad’ Asian Games",
-      "url": "https://www.aljazeera.com/sports/2026/9/28/athletes-criticise-organisational-logistical-mishaps-at-sad-asian-games?traffic_source=rss",
-      "date": "September 28, 2026",
-      "description": "Athletes transported to the wrong venues, three matches in 18 hours and an accommodation crisis add to organisers' woes."
-    },
-    {
-      "title": "Cattle to feed: Why a global meat crisis is looming",
-      "url": "https://www.aljazeera.com/news/2026/9/28/cattle-to-feed-why-a-global-meat-crisis-is-looming?traffic_source=rss",
-      "date": "September 28, 2026",
-      "description": "World's top three beef producers witness a decline in cattle stocks because of rising input costs, droughts and biology."
-    },
-    {
-      "title": "Iraq looks for oil export alternatives to the troubled Strait of Hormuz",
-      "url": "https://www.aljazeera.com/economy/2026/9/28/iraq-looks-for-oil-export-alternatives-to-the-troubled-strait-of-hormuz?traffic_source=rss",
-      "date": "September 28, 2026",
-      "description": "The continued blockade of the Strait of Hormuz has forced Iraq to look for alternatives to export its oil."
     }
   ]
 }
