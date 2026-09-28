@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-28T17:08:29.439Z",
+  "updatedAt": "2026-09-28T19:08:28.339Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260928",
+      "code": "20260928",
+      "title": "Issuance of Amended Venezuela General Licenses",
+      "date": "September 28, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260924",
       "code": "20260924",
@@ -54,12 +60,6 @@
       "code": "20260908",
       "title": "Iran-related Designations; Counter Terrorism Designations; Updates to Iran-related General Licenses; Issuance of Counter Terrorism General License",
       "date": "September 08, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260904",
-      "code": "20260904",
-      "title": "Iran-related Designations; Issuance of Iran-related General License",
-      "date": "September 04, 2026"
     }
   ],
   "civilPenalties": [
@@ -2317,8 +2317,7 @@
           "date": "December 20, 2016",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/8781/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "18",
@@ -2326,26 +2325,23 @@
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918686/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "19",
-          "title": "Authorizing Transactions Related to Telecommunications and Mail",
+          "title": "Ukraine General License 19",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918691/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "20",
-          "title": "Official Business of Certain International Organizations and Entities",
+          "title": "Ukraine General License 20",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918696/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "21",
@@ -2357,48 +2353,43 @@
         },
         {
           "number": "22",
-          "title": "Authorizing the Exportation of Certain Services and Software Incident to Internet-Based Communications",
+          "title": "Ukraine General License 22",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918706/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "23",
-          "title": "Certain Transactions in Support of Nongovernmental Organizations’ Activities",
+          "title": "Ukraine General License 23",
           "date": "March 11, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919151/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "24",
-          "title": "Transactions Related to the Provision of Maritime Services",
+          "title": "Ukraine General License 24",
           "date": "March 18, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919801/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "25",
-          "title": "Journalistic Activities and Establishment of News Bureaus in Certain Regions of Ukraine",
+          "title": "Ukraine General License 25",
           "date": "March 24, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/920276/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "26A",
-          "title": "Transactions Authorized Pursuant to the Russian Harmful Foreign Activities Sanctions Regulations",
+          "title": "Ukraine General License 26A",
           "date": "January 10, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/933911/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "134C",
@@ -2413,77 +2404,85 @@
     "venezuela-related-sanctions": {
       "name": "Venezuela-Related Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/venezuela-related-sanctions",
-      "lastUpdated": "Sep 16, 2026",
+      "lastUpdated": "Sep 28, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
-          "citation": "91 FR 57793-26",
-          "description": "Publication of Venezuela Sanctions Regulations Web General Licenses 30B and 51 91 FR 57791-26 - Publication of Venezuela Sanctions Regulations Web General Licenses 50A and 51A 91 FR 35143-26 - Publication of Venezuela Sanctions Regulations Web General Licenses 48A and 49A 91 FR 35142-26 - Publicatio",
+          "citation": "91 FR 60304-26",
+          "description": "Publication of Venezuela Sanctions Regulations Web General Licenses 5X and 5Y 91 FR 57793-26 - Publication of Venezuela Sanctions Regulations Web General Licenses 30B and 51 91 FR 57791-26 - Publication of Venezuela Sanctions Regulations Web General Licenses 50A and 51A 91 FR 35143-26 - Publication",
           "year": "2026",
           "glNumbers": [
+            "5X",
             "30B",
-            "50A",
-            "48A"
+            "50A"
           ]
         },
         {
-          "citation": "91 FR 24719-26",
-          "description": "Publication of Venezuela Sanctions Regulations Web General Licenses 46, 46A, and 46B 91 FR 24716-26 - Publication of Venezuela Sanctions Regulations Web General Licenses 47, 48, 49, and 50 91 FR 10008-26 - Publication of Venezuela Sanctions Regulations Web General License 5T 90 FR 43557-25 - Publica",
+          "citation": "91 FR 35142-26",
+          "description": "Publication of Venezuela Sanctions Regulations Web General Licenses 5U and 5V 91 FR 24719-26 - Publication of Venezuela Sanctions Regulations Web General Licenses 46, 46A, and 46B 91 FR 24716-26 - Publication of Venezuela Sanctions Regulations Web General Licenses 47, 48, 49, and 50 91 FR 10008-26 -",
           "year": "2026",
           "glNumbers": [
+            "5U",
             "46",
-            "47",
-            "5T"
+            "47"
           ]
         },
         {
-          "citation": "90 FR 43556-25",
-          "description": "Publication of Venezuela Sanctions Regulations Web General License 40D 90 FR 34598-25 - Publication of Venezuela Sanctions Regulations Web General Licenses 41A, 5R, and 41B 89 FR 103651-24 - Publication of Venezuela Sanctions Regulations Web General Licenses 5Q and 8O 89 FR 72986-24 - Publication of",
+          "citation": "90 FR 43557-25",
+          "description": "Publication of Venezuela Sanctions Regulations Web General License 5S 90 FR 43556-25 - Publication of Venezuela Sanctions Regulations Web General License 40D 90 FR 34598-25 - Publication of Venezuela Sanctions Regulations Web General Licenses 41A, 5R, and 41B 89 FR 103651-24 - Publication of Venezue",
           "year": "2025",
           "glNumbers": [
+            "5S",
             "40D",
-            "41A",
-            "5Q"
+            "41A"
           ]
         },
         {
-          "citation": "89 FR 67557-24",
-          "description": "Publication of Venezuela Sanctions Regulations Web General License 40C 89 FR 46802-24 - Publication of Venezuela Sanctions Regulations Web General License 8N 89 FR 35703-24 - Publication of Venezuela Sanctions Regulations Web General Licenses 5O, 8M, and 44A 89 FR 20120-24 - Publication of Venezuela",
+          "citation": "89 FR 72986-24",
+          "description": "Publication of Venezuela Sanctions Regulations Web General License 5P 89 FR 67557-24 - Publication of Venezuela Sanctions Regulations Web General License 40C 89 FR 46802-24 - Publication of Venezuela Sanctions Regulations Web General License 8N 89 FR 35703-24 - Publication of Venezuela Sanctions Reg",
           "year": "2024",
           "glNumbers": [
+            "5P",
             "40C",
-            "8N",
-            "5O"
+            "8N"
           ]
         },
         {
-          "citation": "89 FR 16452-24",
-          "description": "Publication of Venezuela Sanctions Regulations Web General License 43A 89 FR 13271-24 - Publication of Venezuela Sanctions Regulations Web General License 5N 89 FR 3353-24 - Publication of Venezuela Sanctions Regulations Web General License 45A 88 FR 76991-23 - Publication of Venezuela Sanctions Reg",
+          "citation": "89 FR 20120-24",
+          "description": "Publication of Venezuela Sanctions Regulations Web General License 45B 89 FR 16452-24 - Publication of Venezuela Sanctions Regulations Web General License 43A 89 FR 13271-24 - Publication of Venezuela Sanctions Regulations Web General License 5N 89 FR 3353-24 - Publication of Venezuela Sanctions Reg",
           "year": "2024",
           "glNumbers": [
+            "45B",
             "43A",
-            "5N",
-            "45A"
+            "5N"
           ]
         },
         {
-          "citation": "88 FR 65816-23",
-          "description": "Publication of Venezuela Sanctions Regulations Web General License 42 88 FR 52039-23 - Publication of Venezuela Sanctions Regulations Web General Licenses 5K and 5L 88 FR 52038-23 - Publication of Venezuela Sanctions Regulations Web General License 40B 88 FR 45816-23 - Publication of Covid-Related W",
+          "citation": "88 FR 76991-23",
+          "description": "Publication of Venezuela Sanctions Regulations Web General Licenses 3I, 5M, 9H, 43, 44, and 45 88 FR 65816-23 - Publication of Venezuela Sanctions Regulations Web General License 42 88 FR 52039-23 - Publication of Venezuela Sanctions Regulations Web General Licenses 5K and 5L 88 FR 52038-23 - Public",
           "year": "2023",
           "glNumbers": [
+            "3I",
             "42",
-            "5K",
-            "40B"
+            "5K"
           ]
         },
         {
-          "citation": "88 FR 40713-23",
-          "description": "Publication of Venezuela Sanctions Regulations Web General License 8L 88 FR 19842-23 - Publication of Venezuela Sanctions Regulations Web General Licenses 32, 33, 34, 34A, and 35 88 FR 19840-23 - Publication of Venezuela Sanctions Regulations Web General Licenses 29, 30, 30A, 31, and 31A 88 FR 13024",
+          "citation": "88 FR 45816-23",
+          "description": "Publication of Covid-Related Web General Licenses Related to Syria Sanctions Regulations, Iranian Transactions and Sanctions Regulations, Global Terrorism Sanctions Regulations, and Venezuela Sanctions Regulations 88 FR 40713-23 - Publication of Venezuela Sanctions Regulations Web General License 8L",
           "year": "2023",
           "glNumbers": [
-            "8L",
+            "8L"
+          ]
+        },
+        {
+          "citation": "88 FR 19842-23",
+          "description": "Publication of Venezuela Sanctions Regulations Web General Licenses 32, 33, 34, 34A, and 35 88 FR 19840-23 - Publication of Venezuela Sanctions Regulations Web General Licenses 29, 30, 30A, 31, and 31A 88 FR 13024-23 - Publication of Venezuela Sanctions Regulations Web General Licenses 19, 20, 21, 2",
+          "year": "2023",
+          "glNumbers": [
             "32",
-            "29"
+            "29",
+            "19"
           ]
         },
         {
@@ -2658,91 +2657,102 @@
         },
         {
           "number": "23",
-          "title": "Venezuela General License 23",
+          "title": "Third-country Diplomatic and Consular Funds Transfers Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34116/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "24A",
-          "title": "Venezuela General License 24A",
+          "title": "Certain Transactions Involving the Government of Venezuela Related to Telecommunications and Mail Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935731/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "25",
-          "title": "Venezuela General License 25",
+          "title": "Exportation of Certain Services, Software, Hardware, and Technology Incident to the Exchange of Communications over the Internet Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31761/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "26",
-          "title": "Venezuela General License 26",
+          "title": "Emergency and Certain Other Medical Services Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31766/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "27",
-          "title": "Venezuela General License 27",
+          "title": "Certain Transactions Related to Patents, Trademarks, and Copyrights Authorized ( a)",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34111/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "29",
-          "title": "Venezuela General License 29",
+          "title": "Certain Transactions Involving the Government of Venezuela in Support of Certain Nongovernmental Organizations' Activities Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31771/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "30B",
-          "title": "Venezuela General License 30B",
+          "title": "Authorizing Certain Transactions Necessary to Port and Airport Operations",
           "date": "February 2, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934996/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "31B",
-          "title": "Venezuela General License 31B",
+          "title": "Certain Transactions Involving the IV Venezuelan National Assembly and Certain Other Persons",
           "date": "January 4, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/930241/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "32",
-          "title": "Venezuela General License 32",
+          "title": "Authorizing Certain Transactions Related to Personal Maintenance of Individuals Who Are U.S. Persons Residing in Venezuela",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34101/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "33",
-          "title": "Venezuela General License 33",
+          "title": "Authorizing Overflight Payments, Emergency Landings, and Air Ambulance Services",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34096/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "34A",
-          "title": "Venezuela General License 34A",
+          "title": "Authorizing Transactions Involving Certain Government of Venezuela Persons",
           "date": "September 9, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/25966/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "35",
@@ -2754,55 +2764,60 @@
         },
         {
           "number": "42",
-          "title": "Venezuela General License 42",
+          "title": "Authorizing Certain Transactions Related to the Negotiation of Certain Settlement Agreements with the IV Venezuelan National Assembly and Certain Other Persons",
           "date": "May 1, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/931696/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "45B",
-          "title": "Venezuela General License 45B",
+          "title": "Authorizing Certain Repatriation Transactions Involving Consorcio Venezolano de Industrias Aeronáuticas y Servicios Aéreos, S.A",
           "date": "November 16, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/932686/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
-          "number": "46D",
-          "title": "Venezuela General License 46D",
-          "date": "June 10, 2026",
+          "number": "46E",
+          "title": "Authorizing Certain Activities Involving Venezuelan- Origin Oil or Petrochemical Products",
+          "date": "August 27, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/936806/download?inline",
-          "datePdf": true
+          "url": "https://ofac.treasury.gov/media/936996/download?inline",
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "47B",
-          "title": "Venezuela General License 47B",
+          "title": "Authorizing the Sale of U.S.-Origin Diluents to Venezuela",
           "date": "June 10, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936811/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
-          "number": "48C",
-          "title": "Venezuela General License 48C",
-          "date": "June 10, 2026",
-          "expires": "",
-          "url": "https://ofac.treasury.gov/media/936816/download?inline",
-          "datePdf": true
-        },
-        {
-          "number": "49A",
-          "title": "Venezuela General License 49A",
+          "number": "48D",
+          "title": "Authorizing the Supply of Certain Items and Services to Venezuela",
           "date": "August 27, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/935206/download?inline"
+          "url": "https://ofac.treasury.gov/media/937001/download?inline",
+          "datePdf": true,
+          "dateConfident": true
+        },
+        {
+          "number": "49B",
+          "title": "Venezuela General License 49B",
+          "date": "September 28, 2026",
+          "expires": "",
+          "url": "https://ofac.treasury.gov/media/937006/download?inline"
         },
         {
           "number": "50C",
           "title": "Venezuela General License 50C",
-          "date": "August 27, 2026",
+          "date": "September 28, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936821/download?inline"
         },
@@ -3070,6 +3085,12 @@
       "description": "Last week Zelensky revealed Ukraine had sent two captured North Koreans to South Korea - which Seoul says was meant to be a secret."
     },
     {
+      "title": "Iran court upholds lashes sentence for singer who performed without hijab",
+      "url": "https://www.bbc.co.uk/news/articles/crn45ed1kqqgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 28, 2026",
+      "description": "Parastoo Ahmadi was convicted of \"offending public decency\" after singing while wearing a sleeveless dress during a livestreamed concert."
+    },
+    {
       "title": "Venezuela releases dozens of political prisoners as election calls grow",
       "url": "https://www.bbc.co.uk/news/articles/c620lrw2xr12o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 27, 2026",
@@ -3080,6 +3101,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cm750plvwy9vo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 27, 2026",
       "description": "The initiative would have prevented the nation from imposing sanctions unless approved by the UN."
+    },
+    {
+      "title": "People escape historic Kyiv building hit by Russian drone",
+      "url": "https://www.bbc.co.uk/news/videos/cqj9xkdyrvgzo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 28, 2026",
+      "description": "The BBC's Paul Adams reports from the scene of the strike on Ukraine's National Academy of Sciences."
     },
     {
       "title": "UK diesel price hits all-time high, the RAC says",
@@ -3102,6 +3129,30 @@
   ],
   "ajNews": [
     {
+      "title": "Trump made the right decision to reject Iran’s offer",
+      "url": "https://www.aljazeera.com/opinions/2026/9/28/trump-made-the-right-decision-to-reject-irans-offer?traffic_source=rss",
+      "date": "September 28, 2026",
+      "description": "The US president has denied Tehran the opportunity to use the US midterm elections as a pressure point."
+    },
+    {
+      "title": "Iran touts Hormuz attacks as oil flows increase despite tensions",
+      "url": "https://www.aljazeera.com/news/2026/9/28/iran-touts-hormuz-attacks-as-oil-flows-increase-despite-tensions?traffic_source=rss",
+      "date": "September 28, 2026",
+      "description": "Mediators are trying to facilitate more talks, but Washington signals faith in its pressure tactics."
+    },
+    {
+      "title": "Photos: Russian drone strikes pound civilian targets across Kyiv",
+      "url": "https://www.aljazeera.com/gallery/2026/9/28/photos-aftermath-of-a-russian-drone-attack-in-kyiv?traffic_source=rss",
+      "date": "September 28, 2026",
+      "description": "Ukraine condemns Russian targeting of civilians as strikes kill seven and injure dozens across Kyiv."
+    },
+    {
+      "title": "Russia strike sets National Academy of Sciences of Ukraine ablaze",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/28/russia-strike-sets-national-academy-of-sciences-of-ukraine-ablaze?traffic_source=rss",
+      "date": "September 28, 2026",
+      "description": "A Russian drone struck the National Academy of Sciences of Ukraine in central Kyiv, killing one person"
+    },
+    {
       "title": "South Korea suspects North Korean mines behind DMZ blast",
       "url": "https://www.aljazeera.com/news/2026/9/28/south-korea-suspects-north-korean-mines-behind-dmz-blast?traffic_source=rss",
       "date": "September 28, 2026",
@@ -3118,12 +3169,6 @@
       "url": "https://www.aljazeera.com/news/2026/9/28/iran-denies-link-to-attack-on-airbase-as-uk-minister-warns-of-proxies?traffic_source=rss",
       "date": "September 28, 2026",
       "description": "Tehran condemns 'unfounded and malicious speculation'; British FM vows to 'act against the proxies of Iran'."
-    },
-    {
-      "title": "Why South Korea is demanding an apology from Ukraine over North Korean PoWs",
-      "url": "https://www.aljazeera.com/news/2026/9/28/why-south-korea-is-demanding-an-apology-from-ukraine-over-north-korean-pows?traffic_source=rss",
-      "date": "September 28, 2026",
-      "description": "Seoul says Kyiv agreed to a nondisclosure agreement over the prisoners but broke it."
     }
   ],
   "occNews": [
@@ -3240,16 +3285,28 @@
       "description": "In rare access to Yemen's conflict zone the BBC travels to the front line with pro-government soldiers."
     },
     {
-      "title": "Trump-Xi summit: What wasn't said might matter the most",
-      "url": "https://www.bbc.co.uk/news/articles/cxp84g2ly1mjo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Twelve women have been killed in one part of South Africa since July. Here's what we know so far",
+      "url": "https://www.bbc.co.uk/news/articles/c6m27dprvzv7o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 28, 2026",
-      "description": "The most revealing thing about the summit in Washington may be what the two leaders did not say - and what we still don't know."
+      "description": "South African President Cyril Ramaphosa says the murders are a \"stain on our national conscience\"."
     },
     {
-      "title": "Mexico's Pacific coast braces for Hurricane Polo",
-      "url": "https://www.bbc.co.uk/news/articles/cw8d3z5y7958o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Nigerian attempts to break world record by dancing non-stop for seven days",
+      "url": "https://www.bbc.co.uk/news/articles/cq8r6z2gjzd1o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 28, 2026",
-      "description": "The category-three storm is approaching the state of Baja California Sur, on Mexico's northern Pacific coast."
+      "description": "Crowds have gathered in Lagos to watch Ben Dancer, who says he will carry on dancing until Tuesday morning."
+    },
+    {
+      "title": "Stand-up comic set for release after being convicted of insulting Erdoğan",
+      "url": "https://www.bbc.co.uk/news/articles/c8zxzlqwzw0eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 28, 2026",
+      "description": "Turkish comedian Deniz Göktaş has been sentenced to almost 19 months, but is set to be released due to time served."
+    },
+    {
+      "title": "Four bodies found after avalanche hits Himalayan climbing group",
+      "url": "https://www.bbc.co.uk/news/articles/cwjdvml9e897o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 28, 2026",
+      "description": "Rescuers are still looking for 12 Nepalese cook staff who were preparing for climbers to ascend the Himlung Himal peak."
     },
     {
       "title": "Plan for controversial Sydney data centre scrapped after push-back",
@@ -3258,22 +3315,34 @@
       "description": "Goodman Group, the property giant behind the Project Mars data centre, says the decision is due to changes to the \"policy and regulatory environment\"."
     },
     {
-      "title": "Two mass shootings in South Africa leave 28 dead",
-      "url": "https://www.bbc.co.uk/news/articles/ck5ywnp075d1o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "US prosecutors reopen case of alleged gang rape at Cornell University",
+      "url": "https://www.bbc.co.uk/news/articles/c5wyzrm0n74ro?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 28, 2026",
-      "description": "The two attacks hours apart come as the country struggles to stop high levels of gang-related armed violence."
-    },
-    {
-      "title": "Embattled Serbian president resigns, paving way for early elections",
-      "url": "https://www.bbc.co.uk/news/articles/ckpq0g7z5pjjo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 27, 2026",
-      "description": "Aleksandar Vučić's administration has been dogged by prolonged protests over allegations of corruption."
+      "description": "It comes after the woman filed a civil lawsuit alleging she was drugged and raped at a fraternity house in 2024."
     },
     {
       "title": "Remains of dozens of suspected kidnap victims found in Nigerian forests",
       "url": "https://www.bbc.co.uk/news/articles/c6e30x757nx4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 28, 2026",
       "description": "Investigations are ongoing to establish the identities of at least 28 people whose remains were recovered by police."
+    },
+    {
+      "title": "Mexico's Pacific coast braces for Hurricane Polo",
+      "url": "https://www.bbc.co.uk/news/articles/cw8d3z5y7958o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 28, 2026",
+      "description": "The category-three storm is approaching the state of Baja California Sur, on Mexico's northern Pacific coast."
+    },
+    {
+      "title": "Trump-Xi summit: What wasn't said might matter the most",
+      "url": "https://www.bbc.co.uk/news/articles/cxp84g2ly1mjo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 28, 2026",
+      "description": "The most revealing thing about the summit in Washington may be what the two leaders did not say - and what we still don't know."
+    },
+    {
+      "title": "Embattled Serbian president resigns, paving way for early elections",
+      "url": "https://www.bbc.co.uk/news/articles/ckpq0g7z5pjjo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 27, 2026",
+      "description": "Aleksandar Vučić's administration has been dogged by prolonged protests over allegations of corruption."
     },
     {
       "title": "One dead as nor'easter storm pummels New York and New Jersey",
@@ -3292,12 +3361,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cm5y5nj8ejj8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 27, 2026",
       "description": "Pope Leo spoke to bishops before leading a service attended by thousands of worshippers in France."
-    },
-    {
-      "title": "Four bodies found after avalanche hits Himalayan climbing group",
-      "url": "https://www.bbc.co.uk/news/articles/cwjdvml9e897o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 28, 2026",
-      "description": "Rescuers are still looking for 12 Nepalese cook staff who were preparing for climbers to ascend the Himlung Himal peak."
     },
     {
       "title": "Iranian minister says only negotiation can end conflict after Trump rejects Hormuz deal",
@@ -3354,6 +3417,18 @@
       "description": "Climate change is transforming Papua's snowy peaks, which hold scientific value and spiritual significance."
     },
     {
+      "title": "Watch: From launch to fiery splashdown, SpaceX's Starship completes orbit test",
+      "url": "https://www.bbc.co.uk/news/videos/c6ge4lp442npo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 28, 2026",
+      "description": "A thunderous lift off, rapid satellite deployments and a fiery ending. That's how SpaceX's 14th launch of its Starship rocket panned out today."
+    },
+    {
+      "title": "Women protest in the streets of Delhi after string of sexual assaults",
+      "url": "https://www.bbc.co.uk/news/videos/cm70lpg5z45go?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 28, 2026",
+      "description": "BBC correspondent Azadeh Moshiri reports from Delhi, where hundreds of women are protesting."
+    },
+    {
       "title": "Watch: Madonna and Taylor Swift win big at the MTV VMAs",
       "url": "https://www.bbc.co.uk/news/videos/ckvgy6j4594yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 28, 2026",
@@ -3372,34 +3447,28 @@
       "description": "Celebrities posed for the cameras ahead of the 2026 MTV Video Music Awards in Los Angeles."
     },
     {
-      "title": "Shipwreck uncovered on Nantucket island during nor'easter storm",
-      "url": "https://www.bbc.co.uk/news/videos/cmg497x0p4x3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 28, 2026",
-      "description": "The so-called nor'easter storm has washed up what may be a shipwreck from the 19th century in Massachusetts, local media says."
-    },
-    {
       "title": "UK tries to stop Trump's diesel export ban",
       "url": "https://www.bbc.co.uk/news/articles/cmx2z3vgy5xwo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 28, 2026",
       "description": "John Healey said the government is in talks with the US over Donald Trump's threat to stop exports."
     },
     {
-      "title": "Best thing we can offer young people is a job, not benefits, says chancellor",
-      "url": "https://www.bbc.co.uk/news/articles/c3x2zw18ge59o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "What a US diesel export ban could mean for you",
+      "url": "https://www.bbc.co.uk/news/articles/cky9z3r00l9eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 28, 2026",
-      "description": "John Healey's speech comes ahead of next month's Budget, as he faces pressure to bring down government borrowing costs."
+      "description": "The threatened proposal aims to protect US consumers from rising costs, but it could trigger major economic waves if it were to happen."
+    },
+    {
+      "title": "Aldi boss says some of rivals' loyalty discounts 'dupe' customers",
+      "url": "https://www.bbc.co.uk/news/articles/c6dj4vkwg8j0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 28, 2026",
+      "description": "Aldi is the only major supermarket chain that doesn't operate a loyalty scheme, which are hugely popular and used by millions of shoppers."
     },
     {
       "title": "What is the Budget and what could be in it?",
       "url": "https://www.bbc.co.uk/news/articles/c6x2zrjl7kjno?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 28, 2026",
       "description": "Chancellor John Healey will set out his plans for UK taxes in October."
-    },
-    {
-      "title": "UK needs plan in case of 'unprecedented' AI job losses, says minister",
-      "url": "https://www.bbc.co.uk/news/articles/cvj64jg5prpgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 28, 2026",
-      "description": "Kanishka Narayan says one of his top priorities is to have a plan in place if job losses are as bad as some fear."
     },
     {
       "title": "Why UK diesel prices have hit an all-time high",
@@ -3412,6 +3481,18 @@
       "url": "https://www.bbc.co.uk/news/articles/c6jdvmy1287yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 28, 2026",
       "description": "Andy Burnham said that he would make tough decisions to fund a new national care service."
+    },
+    {
+      "title": "Best thing we can offer young people is a job, not benefits, says chancellor",
+      "url": "https://www.bbc.co.uk/news/articles/c3x2zw18ge59o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 28, 2026",
+      "description": "John Healey's speech comes ahead of next month's Budget, as he faces pressure to bring down government borrowing costs."
+    },
+    {
+      "title": "UK needs plan in case of 'unprecedented' AI job losses, says minister",
+      "url": "https://www.bbc.co.uk/news/articles/cvj64jg5prpgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 28, 2026",
+      "description": "Kanishka Narayan says one of his top priorities is to have a plan in place if job losses are as bad as some fear."
     },
     {
       "title": "Apple ordered to pay $5.7bn after losing vibration tech patent suit",
@@ -3576,6 +3657,12 @@
       "description": "Demand for avocados is booming in India and local growers hope to grab more of the market."
     },
     {
+      "title": "Why UK diesel prices have hit an all-time high",
+      "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 28, 2026",
+      "description": "The average price of a litre of diesel at the pump stands at 198.32p, according to the RAC motoring body."
+    },
+    {
       "title": "What will the energy cap changes mean for my bills?",
       "url": "https://www.bbc.co.uk/news/articles/cdd29v8mp9jo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 28, 2026",
@@ -3586,12 +3673,6 @@
       "url": "https://www.bbc.co.uk/news/articles/crm4rygl4m3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 28, 2026",
       "description": "Household energy bills are due to rise again in October but there are ways to keep a lid on your expenditure."
-    },
-    {
-      "title": "Why UK diesel prices have hit an all-time high",
-      "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 28, 2026",
-      "description": "The average price of a litre of diesel at the pump stands at 198.32p, according to the RAC motoring body."
     },
     {
       "title": "You need £17,000 for a first home - here's how to save it",
@@ -3652,6 +3733,36 @@
       "url": "https://www.bbc.co.uk/sounds/play/w3ct8g9v?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 25, 2026",
       "description": "Did trade frenemies find common ground at the White House?"
+    },
+    {
+      "title": "Spain vs Croatia: UEFA Nations League – Yamal, Modric, teams, form",
+      "url": "https://www.aljazeera.com/sports/2026/9/28/spain-croatia-uefa-nations-league-yamal-modric-teams-form?traffic_source=rss",
+      "date": "September 28, 2026",
+      "description": "World champions Spain host Croatia in matchday two of the UEFA Nations League, with Yamal facing Modric."
+    },
+    {
+      "title": "Somali army clashes with local forces for control of Baidoa",
+      "url": "https://www.aljazeera.com/news/2026/9/28/somali-army-clashes-with-local-forces-for-control-of-baidoa?traffic_source=rss",
+      "date": "September 28, 2026",
+      "description": "The latest outbreak of fighting in the South West State city stranded civilians unable to flee or reach hospitals."
+    },
+    {
+      "title": "UK police release suspects on bail after RAF arrests, investigation ongoing",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/28/uk-police-release-suspects-on-bail-after-raf-arrests-investigation-ongoing?traffic_source=rss",
+      "date": "September 28, 2026",
+      "description": "British police officials say that suspects arrested over a 'terror' incident at a RAF base were released on police bail."
+    },
+    {
+      "title": "Paris court finds Swiftair guilty over 2014 Mali crash that killed 116",
+      "url": "https://www.aljazeera.com/news/2026/9/28/paris-court-finds-swiftair-guilty-over-2014-mali-crash-that-killed-116?traffic_source=rss",
+      "date": "September 28, 2026",
+      "description": "Spain's Swiftair was fined 225,000 euros in France for corporate manslaughter over 2014 Air Algerie disaster in Mali."
+    },
+    {
+      "title": "168 hours on the dance floor: Nigerian dancer chases Guinness World Record",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/28/09-28-nigerian-dancer-sv-mp4?traffic_source=rss",
+      "date": "September 28, 2026",
+      "description": "Nigerian dancer Benjamin Daniel Gabriel is trying to dance for 168 hours straight in a bid to set a world record."
     },
     {
       "title": "Arming an adversary: Why Trump’s offer to sell China weapons belies US policy",
@@ -3730,54 +3841,6 @@
       "url": "https://www.aljazeera.com/economy/2026/9/28/iraq-looks-for-oil-export-alternatives-to-the-troubled-strait-of-hormuz?traffic_source=rss",
       "date": "September 28, 2026",
       "description": "The continued blockade of the Strait of Hormuz has forced Iraq to look for alternatives to export its oil."
-    },
-    {
-      "title": "Bandung: The Meeting That Terrified the Superpowers | Al Jazeera Originals",
-      "url": "https://www.aljazeera.com/video/al-jazeera-originals/2026/9/28/bandung-the-meeting-that-terrified-the-superpowers-al-jazeera-originals?traffic_source=rss",
-      "date": "September 28, 2026",
-      "description": "How 29 newly independent nations challenged the imperial order and awakened the power of the Global South."
-    },
-    {
-      "title": "UN commemoration of Durban Declaration: What’s on agenda, who will attend?",
-      "url": "https://www.aljazeera.com/news/2026/9/28/un-commemoration-of-durban-declaration-whats-on-agenda-who-will-attend?traffic_source=rss",
-      "date": "September 28, 2026",
-      "description": "UN General Assembly marks 25th anniversary of the 2011 Durban Declaration, which called for combating racism."
-    },
-    {
-      "title": "We need to talk about Bandung",
-      "url": "https://www.aljazeera.com/opinions/2026/9/28/we-need-to-talk-about-bandung?traffic_source=rss",
-      "date": "September 28, 2026",
-      "description": "In today’s turbulent times, the 1955 conference offers important lessons on global cooperation."
-    },
-    {
-      "title": "Sri Lanka’s Rumesh Pathirage wins Asian Games javelin gold",
-      "url": "https://www.aljazeera.com/sports/2026/9/28/sri-lankas-rumesh-pathirage-wins-asian-games-javelin-gold?traffic_source=rss",
-      "date": "September 28, 2026",
-      "description": "Sri Lankan star ends an incredible season with gold, while India's Yashvir Singh and Rohit Yadav take silver and bronze."
-    },
-    {
-      "title": "Heavy rain triggers landslide in Nepal’s Mustang District",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/28/heavy-rain-triggers-landslide-in-nepals-mustang-district?traffic_source=rss",
-      "date": "September 28, 2026",
-      "description": "Part of a mountain collapsed into a river in Nepal’s Mustang region, after heavy rains triggered flooding and landslides"
-    },
-    {
-      "title": "Thai police arrest jet skier after joyride through flooded Bangkok streets",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/28/thai-police-arrest-jet-skier-after-joyride-through-flooded-bangkok-streets?traffic_source=rss",
-      "date": "September 28, 2026",
-      "description": "Thai police arrest jet skier after joyride through flooded Bangkok streets"
-    },
-    {
-      "title": "Police clash with protesters over mosque demolitions in India",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/28/police-clash-with-protesters-over-mosque-demolitions-in-india?traffic_source=rss",
-      "date": "September 28, 2026",
-      "description": "Police clash with protesters over mosque demolitions in India"
-    },
-    {
-      "title": "Child among three killed off French coast in Channel crossing attempt",
-      "url": "https://www.aljazeera.com/news/2026/9/28/child-among-three-killed-off-french-coast-in-channel-crossing-attempt?traffic_source=rss",
-      "date": "September 28, 2026",
-      "description": "France's maritime police ‌‌said ​they received a distress ​call from an inflatable dinghy carrying 105 people."
     }
   ]
 }
