@@ -1,6 +1,18 @@
 {
-  "updatedAt": "2026-09-29T17:08:31.452Z",
+  "updatedAt": "2026-09-29T19:08:32.176Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260929",
+      "code": "20260929",
+      "title": "Counter Narcotics, Counter Terrorism, Iran-related, and Non-Proliferation Designations",
+      "date": "September 29, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260929_33",
+      "code": "20260929_33",
+      "title": "Publication of Regulatory Amendments; Publication of Cuba Sanctions Regulations; Issuance of New and Amended Cuba-related Frequently Asked Questions; Publication of Cuba-related OFAC Alert",
+      "date": "September 29, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260928",
       "code": "20260928",
@@ -48,18 +60,6 @@
       "code": "20260910",
       "title": "Iran-related and Counter Terrorism Designations; Licensing Policy Update under Operation Economic Outcast; Settlement Agreement between OFAC and an Individual",
       "date": "September 10, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260909",
-      "code": "20260909",
-      "title": "Transnational Criminal Organizations Designations; Counter Terrorism Designation; Issuance of New and Amended Frequently Asked Questions",
-      "date": "September 09, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260908",
-      "code": "20260908",
-      "title": "Iran-related Designations; Counter Terrorism Designations; Updates to Iran-related General Licenses; Issuance of Counter Terrorism General License",
-      "date": "September 08, 2026"
     }
   ],
   "civilPenalties": [
@@ -376,7 +376,7 @@
     "counter-narcotics-trafficking-sanctions": {
       "name": "Counter Narcotics Trafficking Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-narcotics-trafficking-sanctions",
-      "lastUpdated": "Sep 16, 2026",
+      "lastUpdated": "Sep 29, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -423,7 +423,7 @@
     "counter-terrorism-sanctions": {
       "name": "Counter Terrorism Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-terrorism-sanctions",
-      "lastUpdated": "Sep 24, 2026",
+      "lastUpdated": "Sep 29, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -678,14 +678,6 @@
           "dateConfident": true
         },
         {
-          "number": "36",
-          "title": "Counter Terrorism General License 36",
-          "date": "August 26, 2026",
-          "expires": "September 25, 2026",
-          "url": "https://ofac.treasury.gov/media/936791/download?inline",
-          "datePdf": true
-        },
-        {
           "number": "134C",
           "title": "Russia-related General License 134C",
           "date": "May 18, 2026",
@@ -706,7 +698,7 @@
     "cuba-sanctions": {
       "name": "Cuba Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/cuba-sanctions",
-      "lastUpdated": "Sep 17, 2026",
+      "lastUpdated": "Sep 29, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -753,7 +745,7 @@
         },
         {
           "citation": "66 FR 36683-01",
-          "description": "2001 Exports of Agricultural Products, Medicines, and Medical Devices to Cuba, Sudan, Libya, and Iran; Cuba Travel-Related Transactions 65 FR 70382-00 - 2000 Payments to Persons Who Hold Certain Categories of Judgments Against Cuba or Iran Recent Actions regarding Cuba Sanctions Iran-related Designa",
+          "description": "2001 Exports of Agricultural Products, Medicines, and Medical Devices to Cuba, Sudan, Libya, and Iran; Cuba Travel-Related Transactions 65 FR 70382-00 - 2000 Payments to Persons Who Hold Certain Categories of Judgments Against Cuba or Iran Recent Actions regarding Cuba Sanctions Publication of Regul",
           "year": "2001",
           "glNumbers": []
         }
@@ -1017,7 +1009,7 @@
     "iran-sanctions": {
       "name": "Iran Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions",
-      "lastUpdated": "Sep 17, 2026",
+      "lastUpdated": "Sep 29, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -1186,17 +1178,15 @@
           "date": "October 8, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48626/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "8A",
-          "title": "Authorizing Certain Humanitarian Trade Transactions Involving the Central Bank of Iran or the National Iranian Oil Company",
+          "title": "Iran General License 8A",
           "date": "February 27, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48841/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "Q",
@@ -1204,8 +1194,7 @@
           "date": "May 20, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934291/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "T",
@@ -1413,7 +1402,7 @@
     "non-proliferation-sanctions": {
       "name": "Non-Proliferation Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/non-proliferation-sanctions",
-      "lastUpdated": "Aug 24, 2026",
+      "lastUpdated": "Sep 29, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -2317,8 +2306,7 @@
           "date": "December 20, 2016",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/8781/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "18",
@@ -2326,26 +2314,23 @@
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918686/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "19",
-          "title": "Authorizing Transactions Related to Telecommunications and Mail",
+          "title": "Ukraine General License 19",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918691/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "20",
-          "title": "Official Business of Certain International Organizations and Entities",
+          "title": "Ukraine General License 20",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918696/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "21",
@@ -2357,48 +2342,43 @@
         },
         {
           "number": "22",
-          "title": "Authorizing the Exportation of Certain Services and Software Incident to Internet-Based Communications",
+          "title": "Ukraine General License 22",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918706/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "23",
-          "title": "Certain Transactions in Support of Nongovernmental Organizations’ Activities",
+          "title": "Ukraine General License 23",
           "date": "March 11, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919151/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "24",
-          "title": "Transactions Related to the Provision of Maritime Services",
+          "title": "Ukraine General License 24",
           "date": "March 18, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919801/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "25",
-          "title": "Journalistic Activities and Establishment of News Bureaus in Certain Regions of Ukraine",
+          "title": "Ukraine General License 25",
           "date": "March 24, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/920276/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "26A",
-          "title": "Transactions Authorized Pursuant to the Russian Harmful Foreign Activities Sanctions Regulations",
+          "title": "Ukraine General License 26A",
           "date": "January 10, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/933911/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "134C",
@@ -3133,7 +3113,13 @@
   ],
   "ajNews": [
     {
-      "title": "Russian nuclear-capable bomber plane crashes, killing six people",
+      "title": "Trump administration ‘must be changed’: Iran’s IRGC appeals to US voters",
+      "url": "https://www.aljazeera.com/news/2026/9/29/trump-administration-must-be-changed-irans-irgc-appeals-to-us-voters?traffic_source=rss",
+      "date": "September 29, 2026",
+      "description": "Iran's military has issued an open letter accusing Trump of lying to US citizens about the state of the ongoing war."
+    },
+    {
+      "title": "Russian Tu-95 nuclear-capable bomber plane crashes, killing six people",
       "url": "https://www.aljazeera.com/news/2026/9/29/russian-nuclear-capable-bomber-plane-crashes-killing-six-people?traffic_source=rss",
       "date": "September 29, 2026",
       "description": "Tu-95 plane crashed during training flight in uninhabited area of Amur region, Defence Ministry says."
@@ -3157,34 +3143,10 @@
       "description": "Russian cash helped Essar, the firm behind the steel factory, manage major debts. Now the group's investing in the US."
     },
     {
-      "title": "Estonia says Russia ordered August arson attack on defence company",
+      "title": "Estonia accuses Russia of arson attack on defence firm supplying Ukraine",
       "url": "https://www.aljazeera.com/news/2026/9/29/estonia-says-russia-ordered-august-arson-attack-on-defence?traffic_source=rss",
       "date": "September 29, 2026",
       "description": "Tallinn accuses Moscow of responsibility for the fire at Estonian company Milrem Robotics, a supplier of unmanned ground vehicles to Ukraine."
-    },
-    {
-      "title": "Iran downplays possible role in Houthis’ recent Yemen victories",
-      "url": "https://www.aljazeera.com/news-analysis/2026/9/29/iran-downplays-their-possible-role-in-houthis-recent-yemen-victories?traffic_source=rss",
-      "date": "September 29, 2026",
-      "description": "Iran has long been accused of links with the Houthis in Yemen, but how far do these links go?"
-    },
-    {
-      "title": "Man City’s Premier League charges: What’s the latest and what comes next?",
-      "url": "https://www.aljazeera.com/sports/2026/9/29/man-citys-premier-league-charges-whats-the-latest-and-what-comes-next?traffic_source=rss",
-      "date": "September 29, 2026",
-      "description": "Swingeing sanctions against City for breaching financial fair play rules would send shockwaves through English football."
-    },
-    {
-      "title": "Iranians stock up on food and medicine as fears of new US fighting grow",
-      "url": "https://www.aljazeera.com/economy/2026/9/29/iranians-stock-up-on-food-and-medicine-as-fears-of-new-us-fighting-grow?traffic_source=rss",
-      "date": "September 29, 2026",
-      "description": "Iran is struggling with shortages as sanctions and blockade strain food and medicine supply chains."
-    },
-    {
-      "title": "Malaysia sends Rohingya back to Myanmar despite safety warnings",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/29/malaysia-sends-rohingya-back-myanmar-despite-safety-warnings?traffic_source=rss",
-      "date": "September 29, 2026",
-      "description": "Malaysia sends Rohingya back to Myanmar despite safety warnings"
     }
   ],
   "occNews": [
@@ -3313,22 +3275,16 @@
       "description": "Two homes belonging to the al-Tubasi family were set on fire and Israeli security forces were also targeted by settlers."
     },
     {
-      "title": "Trump rules out joint US-China venture to develop AI",
-      "url": "https://www.bbc.co.uk/news/articles/cwly5lmvy38qo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 29, 2026",
-      "description": "The US president continues to push back on calls to establish guardrails around artificial intelligence, arguing it will stifle growth."
-    },
-    {
       "title": "Dutch police arrest suspected member of group that claimed FBI hack",
       "url": "https://www.bbc.co.uk/news/articles/cw5ym18znr0ro?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 29, 2026",
       "description": "The suspect, 24, was arrested before the alleged cyber attack took place."
     },
     {
-      "title": "Nigerian dances non-stop for seven days in world record bid",
-      "url": "https://www.bbc.co.uk/news/articles/cq8r6z2gjzd1o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "First female prime minister named in Morocco after winning elections",
+      "url": "https://www.bbc.co.uk/news/articles/c674kkjllw17o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 29, 2026",
-      "description": "Crowds cheered on Ben Dancer as completed his challenge and he has now gone to hospital for a check-up"
+      "description": "Her appointment by the king makes her only the second woman to lead a government in the Arab world."
     },
     {
       "title": "Eiffel Tower chief to quit after female staff replaced by men during religious visit",
@@ -3337,10 +3293,16 @@
       "description": "The company that runs the Eiffel Tower said the removal of female staff during the visit earlier this month was \"unacceptable\"."
     },
     {
-      "title": "French hard-right leader accuses opponents of 'total war' after claims of antisemitism",
-      "url": "https://www.bbc.co.uk/news/articles/cmn45k85gj34o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Lindsay Clancy appears in court as her lawyer pushes for murder case to be dismissed",
+      "url": "https://www.bbc.co.uk/news/articles/c8046wd93l44o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 29, 2026",
-      "description": "National Rally President Jordan Bardella says he will sue for libel over comments he is accused of making as a young activist."
+      "description": "Clancy's defence lawyer wants her to be cleared of murdering her three children in 2023 but prosecutors say the state proved guilt."
+    },
+    {
+      "title": "Nigerian dances non-stop for seven days in world record bid",
+      "url": "https://www.bbc.co.uk/news/articles/cq8r6z2gjzd1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 29, 2026",
+      "description": "Crowds cheered on Ben Dancer as completed his challenge and he has now gone to hospital for a check-up"
     },
     {
       "title": "US prosecutors reopen case of alleged gang rape at Cornell University",
@@ -3353,6 +3315,18 @@
       "url": "https://www.bbc.co.uk/news/articles/c6grveg7d9zro?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 29, 2026",
       "description": "The defendant could face jail or a fine after the image sparked a search operation in the city’s largest reservoir."
+    },
+    {
+      "title": "French hard-right leader accuses opponents of 'total war' after claims of antisemitism",
+      "url": "https://www.bbc.co.uk/news/articles/cmn45k85gj34o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 29, 2026",
+      "description": "National Rally President Jordan Bardella says he will sue for libel over comments he is accused of making as a young activist."
+    },
+    {
+      "title": "Trump rules out joint US-China venture to develop AI",
+      "url": "https://www.bbc.co.uk/news/articles/cwly5lmvy38qo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 29, 2026",
+      "description": "The US president continues to push back on calls to establish guardrails around artificial intelligence, arguing it will stifle growth."
     },
     {
       "title": "Argentina threatens legal action against UK over Falkland Islands oil exploration",
@@ -3443,6 +3417,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cwp93d078j8no?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 29, 2026",
       "description": "I had expected him to try to forge a political consensus on this thorny issue at this stage, but he has gone further than that."
+    },
+    {
+      "title": "Oura pulls $15bn stock market listing days after announcement",
+      "url": "https://www.bbc.co.uk/news/articles/cjwyz5v190qwo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 29, 2026",
+      "description": "The wearable technology company had been expected to list its shares in the US."
     },
     {
       "title": "What a US diesel export ban could mean for you",
@@ -3577,12 +3557,6 @@
       "description": "What's the smallest amount of money you would ask a friend to pay you back?"
     },
     {
-      "title": "Heathrow Airport warns third runway could be delayed by four years",
-      "url": "https://www.bbc.co.uk/news/articles/crx2zz401935o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 26, 2026",
-      "description": "The UK's busiest airport cautions it may miss the government target of 2035 as ministers say the deadline has \"always been ambitious\"."
-    },
-    {
       "title": "X-planes: Are they needed in the new era of drones?",
       "url": "https://www.bbc.co.uk/news/articles/c9q92x359xdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 24, 2026",
@@ -3655,6 +3629,12 @@
       "description": "Demand for avocados is booming in India and local growers hope to grab more of the market."
     },
     {
+      "title": "What is the triple lock and why are people talking about it?",
+      "url": "https://www.bbc.co.uk/news/articles/cq6m03ld7nvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 29, 2026",
+      "description": "The triple lock guarantees that the state pension is not overtaken by inflation or wage increases."
+    },
+    {
       "title": "Faisal Islam: Triple lock move is significant, but it's a gamble",
       "url": "https://www.bbc.co.uk/news/articles/cwp93d078j8no?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 29, 2026",
@@ -3665,12 +3645,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c699dz2v752lo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 29, 2026",
       "description": "The government releases its proposed budget with \"targeted measures\" to help families."
-    },
-    {
-      "title": "What is the triple lock and why are people talking about it?",
-      "url": "https://www.bbc.co.uk/news/articles/cq6m03ld7nvo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 29, 2026",
-      "description": "The triple lock guarantees that the state pension is not overtaken by inflation or wage increases."
     },
     {
       "title": "I paid £30,000 for an 'influencer' degree. Here's why",
@@ -3737,6 +3711,42 @@
       "url": "https://www.bbc.co.uk/sounds/play/w3ct8g9v?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 25, 2026",
       "description": "Did trade frenemies find common ground at the White House?"
+    },
+    {
+      "title": "Jerusalem Daily: Israeli worshippers attack Palestinian man",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/29/aje-onl-nf_j_daily_israeli-worshippers-attack-palestinian-man-290926?traffic_source=rss",
+      "date": "September 29, 2026",
+      "description": "Settler pogroms intensify as a total lockdown of the occupied West Bank enters its third day."
+    },
+    {
+      "title": "Trump unveils new site to simplify access to government services",
+      "url": "https://www.aljazeera.com/economy/2026/9/29/trump-unveils-new-site-to-simplify-access-to-government-services?traffic_source=rss",
+      "date": "September 29, 2026",
+      "description": "America.gov for now functions like a chatbot comparable to ChatGPT or Claude, pointing users to official gov't websites."
+    },
+    {
+      "title": "‘Truly historic’: Morocco’s king appoints first woman prime minister",
+      "url": "https://www.aljazeera.com/news/2026/9/29/truly-historic-moroccos-king-appoints-first-woman-prime-minister?traffic_source=rss",
+      "date": "September 29, 2026",
+      "description": "Fatima Ezzahra El Mansouri becomes the second woman to serve as prime minister in the Arab world."
+    },
+    {
+      "title": "Schoolboy kills teacher, injures two in Slovakia school stabbing",
+      "url": "https://www.aljazeera.com/news/2026/9/29/slovakia-teacher-killed-in-stabbing-by-student?traffic_source=rss",
+      "date": "September 29, 2026",
+      "description": "Police detain the 13-year-old in the northwestern village of Staskov, launch investigation into 'premeditated murder'."
+    },
+    {
+      "title": "Ethiopia blames regional rivals as risk of conflict spillover rises",
+      "url": "https://www.aljazeera.com/news/2026/9/29/ethiopia-blames-regional-rivals-as-risk-of-conflict-spillover-rises?traffic_source=rss",
+      "date": "September 29, 2026",
+      "description": "Ethiopia accuses Sudan and Egypt of backing armed groups, deepening tensions amid internal unrest."
+    },
+    {
+      "title": "Mourners in Gaza bury remains of loved ones killed in 2023 Israeli strike",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/29/mourners-in-gaza-bury-remains-of-loved-ones-killed-in-2023-israeli-strike?traffic_source=rss",
+      "date": "September 29, 2026",
+      "description": "Dozens of mourners in Gaza grieve the loss of their loved ones as they bury the fragmented remains of relatives killed."
     },
     {
       "title": "Man City guilty of all serious financial breach charges: Premier League",
@@ -3815,24 +3825,6 @@
       "url": "https://www.aljazeera.com/features/2026/9/29/are-houthis-using-new-modified-cruise-missiles-in-yemens-war?traffic_source=rss",
       "date": "September 29, 2026",
       "description": "Experts say use of modified Iranian defence system could alter the balance in the fight for the Red Sea."
-    },
-    {
-      "title": "Formula One’s Fernando Alonso to stay with Aston Martin next season",
-      "url": "https://www.aljazeera.com/sports/2026/9/29/fernando-alonso-f1-aston-martin-contract-extension?traffic_source=rss",
-      "date": "September 29, 2026",
-      "description": "Spain's Alonso, the oldest active F1 driver, joined Aston Martin in 2023 and has taken eight podiums with the team."
-    },
-    {
-      "title": "Walkouts, clashes and moments that defined UNGA 2026",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/29/walkouts-clashes-and-moments-that-defined-unga-2026?traffic_source=rss",
-      "date": "September 29, 2026",
-      "description": "From mass walkouts and heated exchanges to protests, this year’s UNGA produced no shortage of memorable moments."
-    },
-    {
-      "title": "Turkiye arrests president, six members of football refereeing body in probe",
-      "url": "https://www.aljazeera.com/sports/2026/9/29/turkiye-arrests-president-six-members-of-football-refereeing-body-in-probe?traffic_source=rss",
-      "date": "September 29, 2026",
-      "description": "Arrests were made over interference with refereeing procedures, among other accusations, Turkish justice minister says."
     }
   ]
 }
