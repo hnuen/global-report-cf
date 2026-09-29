@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T19:08:32.176Z",
+  "updatedAt": "2026-09-29T21:08:30.501Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260929",
@@ -2306,7 +2306,8 @@
           "date": "December 20, 2016",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/8781/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "18",
@@ -2314,23 +2315,26 @@
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918686/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "19",
-          "title": "Ukraine General License 19",
+          "title": "Authorizing Transactions Related to Telecommunications and Mail",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918691/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "20",
-          "title": "Ukraine General License 20",
+          "title": "Official Business of Certain International Organizations and Entities",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918696/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "21",
@@ -2342,43 +2346,48 @@
         },
         {
           "number": "22",
-          "title": "Ukraine General License 22",
+          "title": "Authorizing the Exportation of Certain Services and Software Incident to Internet-Based Communications",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918706/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "23",
-          "title": "Ukraine General License 23",
+          "title": "Certain Transactions in Support of Nongovernmental Organizations’ Activities",
           "date": "March 11, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919151/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "24",
-          "title": "Ukraine General License 24",
+          "title": "Transactions Related to the Provision of Maritime Services",
           "date": "March 18, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919801/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "25",
-          "title": "Ukraine General License 25",
+          "title": "Journalistic Activities and Establishment of News Bureaus in Certain Regions of Ukraine",
           "date": "March 24, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/920276/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "26A",
-          "title": "Ukraine General License 26A",
+          "title": "Transactions Authorized Pursuant to the Russian Harmful Foreign Activities Sanctions Regulations",
           "date": "January 10, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/933911/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "134C",
@@ -3059,14 +3068,7 @@
       "description": "With these new listings, a total of 597 vessels are now listed by the EU."
     }
   ],
-  "unNotices": [
-    {
-      "title": "Security Council ISIL (Da’esh) and Al-Qaida Sanctions Committee Amends One Entry to Its Sanctions List",
-      "url": "https://press.un.org/en/2026/sc16465.doc.htm",
-      "date": "September 28, 2026",
-      "description": "On 28 September 2026, the Security Council Committee pursuant to resolutions 1267 (1999), 1989 (2011) and 2253 (2015) concerning ISIL (Da’esh), Al‑Qaida and associated individuals, groups, undertakings and entities enacted the amendments specified with strikethrough and underline in the entry below on its ISIL (Da’esh) and Al-Qaida Sanctions List of individuals and entities subject to the assets freeze, travel ban and arms embargo set out in paragraph 1 of Security Council resolution 2734 (2024), and adopted under Chapter VII of the Charter of the United Nations."
-    }
-  ],
+  "unNotices": [],
   "bbcNews": [
     {
       "title": "'I was lured into a trap': Evan Gershkovich on moment that led to 16 months in Russian jail",
@@ -3103,15 +3105,15 @@
       "url": "https://www.bbc.co.uk/news/articles/c6n4k987k981o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 28, 2026",
       "description": "The US-Israel war with Iran has caused fuel prices to soar due to disruption of global oil supplies."
-    },
-    {
-      "title": "Faisal Islam: The two big decisions the chancellor must make",
-      "url": "https://www.bbc.co.uk/news/articles/cklye5e40531o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 26, 2026",
-      "description": "He must consider the longevity of Iran war economic pressures and how to sustain modest optimism, writes the BBC's Faisal Islam."
     }
   ],
   "ajNews": [
+    {
+      "title": "US sanctions 10 entities for allegedly supporting Iran’s military",
+      "url": "https://www.aljazeera.com/news/2026/9/29/us-sanctions-10-entities-for-allegedly-supporting-irans-military?traffic_source=rss",
+      "date": "September 29, 2026",
+      "description": "Individuals and firms in China, Pakistan, Turkiye, Iran and Saudi Arabia sanctioned as part of a pressure campaign."
+    },
     {
       "title": "Trump administration ‘must be changed’: Iran’s IRGC appeals to US voters",
       "url": "https://www.aljazeera.com/news/2026/9/29/trump-administration-must-be-changed-irans-irgc-appeals-to-us-voters?traffic_source=rss",
@@ -3141,12 +3143,6 @@
       "url": "https://www.aljazeera.com/news/2026/9/29/indian-firm-building-15bn-trump-announced-steel-mill-has-deep-russia-ties?traffic_source=rss",
       "date": "September 29, 2026",
       "description": "Russian cash helped Essar, the firm behind the steel factory, manage major debts. Now the group's investing in the US."
-    },
-    {
-      "title": "Estonia accuses Russia of arson attack on defence firm supplying Ukraine",
-      "url": "https://www.aljazeera.com/news/2026/9/29/estonia-says-russia-ordered-august-arson-attack-on-defence?traffic_source=rss",
-      "date": "September 29, 2026",
-      "description": "Tallinn accuses Moscow of responsibility for the fire at Estonian company Milrem Robotics, a supplier of unmanned ground vehicles to Ukraine."
     }
   ],
   "occNews": [
@@ -3155,12 +3151,6 @@
       "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-79.html",
       "date": "September 17, 2026",
       "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for September 2026."
-    },
-    {
-      "title": "OCC Acts to Improve Transparency and Consistency to Bank Enforcement and Supervisory Standards",
-      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-72.html",
-      "date": "August 27, 2026",
-      "description": "OCC Acts to Improve Transparency and Consistency to Bank Enforcement and Supervisory Standards OCC issues two revised policies and procedures manuals; proposes amendments to Violations of Laws and Regulations framework WASHINGTON-The Office of the Comptroller of the Currency (OCC) today announced additional actions to focus supervisory attention on the most significant risks and violations and to provide banks greater clarity, consistency and certainty in how Matters Requiring Attention (MRA) and enforcement actions are issued."
     }
   ],
   "economicsNews": [
@@ -3293,7 +3283,7 @@
       "description": "The company that runs the Eiffel Tower said the removal of female staff during the visit earlier this month was \"unacceptable\"."
     },
     {
-      "title": "Lindsay Clancy appears in court as her lawyer pushes for murder case to be dismissed",
+      "title": "Lindsay Clancy appears in court as her lawyer pushes for murder case dismissal",
       "url": "https://www.bbc.co.uk/news/articles/c8046wd93l44o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 29, 2026",
       "description": "Clancy's defence lawyer wants her to be cleared of murdering her three children in 2023 but prosecutors say the state proved guilt."
@@ -3315,6 +3305,12 @@
       "url": "https://www.bbc.co.uk/news/articles/c6grveg7d9zro?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 29, 2026",
       "description": "The defendant could face jail or a fine after the image sparked a search operation in the city’s largest reservoir."
+    },
+    {
+      "title": "Former American Idol contestant and pastor found guilty of murdering wife",
+      "url": "https://www.bbc.co.uk/news/articles/c5rm9gv7n07xo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 29, 2026",
+      "description": "Caleb Flynn weeps in court as he is convicted of shooting his wife, Ashley, dead in their Ohio home."
     },
     {
       "title": "French hard-right leader accuses opponents of 'total war' after claims of antisemitism",
@@ -3389,6 +3385,12 @@
       "description": "A new anti-conversion law in Maharashtra is raising questions about faith, choice and freedom."
     },
     {
+      "title": "The journalist who became king in Uganda",
+      "url": "https://www.bbc.co.uk/news/videos/cry4z9jw3wvlo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 29, 2026",
+      "description": "Edward Rukidi Nyabongo I has been crowned king of Tooro in a ceremony attended by Uganda's President Museveni."
+    },
+    {
       "title": "Close-up look at Turner's '£50m' Rome painting on show in the city",
       "url": "https://www.bbc.co.uk/news/videos/crkgwvqjk0g7o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 29, 2026",
@@ -3413,10 +3415,22 @@
       "description": "BBC correspondent Azadeh Moshiri reports from Delhi, where hundreds of women are protesting."
     },
     {
+      "title": "Burnham vows to end existing pension triple lock in 2030 to help fund care",
+      "url": "https://www.bbc.co.uk/news/articles/cve8x724e9ezo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 29, 2026",
+      "description": "The PM was at times emotional during his conference speech in which he outlined his long-term plan for the UK."
+    },
+    {
       "title": "Faisal Islam: Triple lock move is significant, but it's a gamble",
       "url": "https://www.bbc.co.uk/news/articles/cwp93d078j8no?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 29, 2026",
       "description": "I had expected him to try to forge a political consensus on this thorny issue at this stage, but he has gone further than that."
+    },
+    {
+      "title": "Soho House venue under investigation for food safety",
+      "url": "https://www.bbc.co.uk/news/articles/cjly4dn9r21qo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 29, 2026",
+      "description": "A former chef contacted Hackney Council after complaining to managers at the members' club."
     },
     {
       "title": "Oura pulls $15bn stock market listing days after announcement",
@@ -3425,16 +3439,28 @@
       "description": "The wearable technology company had been expected to list its shares in the US."
     },
     {
-      "title": "What a US diesel export ban could mean for you",
-      "url": "https://www.bbc.co.uk/news/articles/cky9z3r00l9eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 28, 2026",
-      "description": "The threatened proposal aims to protect US consumers from rising costs, but it could trigger major economic waves if it were to happen."
+      "title": "What is the triple lock and why are people talking about it?",
+      "url": "https://www.bbc.co.uk/news/articles/cq6m03ld7nvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 29, 2026",
+      "description": "The triple lock guarantees that the state pension is not overtaken by inflation or wage increases."
+    },
+    {
+      "title": "OpenAI agents get rebrand - as 'dots' - while safety worries delay new model",
+      "url": "https://www.bbc.co.uk/news/articles/cw7v42rp083eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 29, 2026",
+      "description": "Sam Altman spoke in San Francisco during OpenAI’s yearly event for tech developers."
     },
     {
       "title": "Warning more homes will be uninsurable due to flood risk",
       "url": "https://www.bbc.co.uk/news/articles/c60qxk288e57o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 29, 2026",
       "description": "Aviva boss Amanda Blanc said England was \"for sure\" building homes that might be uninsurable at some point in the future."
+    },
+    {
+      "title": "What a US diesel export ban could mean for you",
+      "url": "https://www.bbc.co.uk/news/articles/cky9z3r00l9eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 28, 2026",
+      "description": "The threatened proposal aims to protect US consumers from rising costs, but it could trigger major economic waves if it were to happen."
     },
     {
       "title": "OpenAI scraps rollout of new model over safety concerns",
@@ -3543,18 +3569,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cvrl6y8rx08wo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 27, 2026",
       "description": "Andy Burnham said he would wait for the results of a consultation on a scheme estimated to cost £33bn"
-    },
-    {
-      "title": "Could an iced coffee freeze you out of the job market?",
-      "url": "https://www.bbc.co.uk/news/articles/cv62k9p1rz4do?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 26, 2026",
-      "description": "Employees and recruiters weigh into the online debate around interview etiquette."
-    },
-    {
-      "title": "'We're all broke': Would you chase a friend for £5?",
-      "url": "https://www.bbc.co.uk/news/articles/cmly439q4y27o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 24, 2026",
-      "description": "What's the smallest amount of money you would ask a friend to pay you back?"
     },
     {
       "title": "X-planes: Are they needed in the new era of drones?",
@@ -3713,6 +3727,36 @@
       "description": "Did trade frenemies find common ground at the White House?"
     },
     {
+      "title": "US ban on $1bn of Canadian goods takes effect in Trump’s latest retaliation",
+      "url": "https://www.aljazeera.com/economy/2026/9/29/us-ban-on-1bn-of-canadian-goods-takes-effect-in-trumps-latest-retaliation?traffic_source=rss",
+      "date": "September 29, 2026",
+      "description": "Trump retaliated against Canada's counter-tariffs on $20bn worth of US imports by banning $1bn of Canadian goods."
+    },
+    {
+      "title": "Has Gaza broken the Israel consensus in the US?",
+      "url": "https://www.aljazeera.com/video/lets-focus/2026/9/29/has-gaza-broken-the-israel-consensus-in-the-us?traffic_source=rss",
+      "date": "September 29, 2026",
+      "description": "For decades, Israel was untouchable in Washington. Gaza changed that. Josh Rushing investigates how and what comes next."
+    },
+    {
+      "title": "US troops fully withdraw from Baghdad base after two decades",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/29/us-troops-fully-withdraw-from-baghdad-base-after-two-decades?traffic_source=rss",
+      "date": "September 29, 2026",
+      "description": "US Army soldiers have fully withdrawn from the US base in Baghdad."
+    },
+    {
+      "title": "Can Iraq handle future security challenges alone?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/9/29/can-iraq-handle-future-security-challenges-alone?traffic_source=rss",
+      "date": "September 29, 2026",
+      "description": "More than two decades of US military presence in Iraq comes to an end."
+    },
+    {
+      "title": "Madrid residents feel the impact of Spain’s housing crisis",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/29/madrid-residents-feel-the-impact-of-spains-housing-crisis?traffic_source=rss",
+      "date": "September 29, 2026",
+      "description": "Spain’s housing crisis is deepening as soaring rents and a shortage of homes put affordable housing out of reach."
+    },
+    {
       "title": "Jerusalem Daily: Israeli worshippers attack Palestinian man",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/29/aje-onl-nf_j_daily_israeli-worshippers-attack-palestinian-man-290926?traffic_source=rss",
       "date": "September 29, 2026",
@@ -3725,7 +3769,7 @@
       "description": "America.gov for now functions like a chatbot comparable to ChatGPT or Claude, pointing users to official gov't websites."
     },
     {
-      "title": "‘Truly historic’: Morocco’s king appoints first woman prime minister",
+      "title": "Morocco’s king names Fatima Ezzahra El Mansouri first woman PM",
       "url": "https://www.aljazeera.com/news/2026/9/29/truly-historic-moroccos-king-appoints-first-woman-prime-minister?traffic_source=rss",
       "date": "September 29, 2026",
       "description": "Fatima Ezzahra El Mansouri becomes the second woman to serve as prime minister in the Arab world."
@@ -3794,37 +3838,7 @@
       "title": "Photos: French students protest, public workers strike before budget cuts",
       "url": "https://www.aljazeera.com/gallery/2026/9/29/photos-french-studentspublic-workers-protest-macrons-planned-budget-cuts?traffic_source=rss",
       "date": "September 29, 2026",
-      "description": "About 40 people have been arrested and 10 injured as protesting students clash with police."
-    },
-    {
-      "title": "Sudan takes centre stage on final day of UNGA",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/29/aje-onl-nf_sudan-takes-centre-stage-on-final-day-of-unga-290926?traffic_source=rss",
-      "date": "September 29, 2026",
-      "description": "Sudan's foreign minister addressed the UNGA as his country faces war, mass displacement and a worsening aid shortfall."
-    },
-    {
-      "title": "Bail for RAF base suspects suggests no evidence of ‘terror’, say analysts",
-      "url": "https://www.aljazeera.com/features/2026/9/29/bail-for-raf-base-suspects-suggests-no-evidence-of-terror-say-analysts?traffic_source=rss",
-      "date": "September 29, 2026",
-      "description": "Police bail for the RAF Fairford suspects suggests no explosives were found, analysts tell Al Jazeera"
-    },
-    {
-      "title": "Does international law still matter?",
-      "url": "https://www.aljazeera.com/video/doha-debates/2026/9/29/does-international-law-still-matter?traffic_source=rss",
-      "date": "September 29, 2026",
-      "description": "Does international law still matter?"
-    },
-    {
-      "title": "Tourists face legal action over turtle-riding video in Oman",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/29/tourists-face-legal-action-over-turtle-riding-video-in-oman?traffic_source=rss",
-      "date": "September 29, 2026",
-      "description": "Tourists face legal action over turtle-riding video in Oman"
-    },
-    {
-      "title": "Are Houthis using new modified cruise missiles in Yemen’s war?",
-      "url": "https://www.aljazeera.com/features/2026/9/29/are-houthis-using-new-modified-cruise-missiles-in-yemens-war?traffic_source=rss",
-      "date": "September 29, 2026",
-      "description": "Experts say use of modified Iranian defence system could alter the balance in the fight for the Red Sea."
+      "description": "More than 400 people have been arrested as protesting students clash with police."
     }
   ]
 }
