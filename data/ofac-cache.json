@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T21:08:30.501Z",
+  "updatedAt": "2026-09-29T22:08:21.977Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260929",
@@ -3068,7 +3068,14 @@
       "description": "With these new listings, a total of 597 vessels are now listed by the EU."
     }
   ],
-  "unNotices": [],
+  "unNotices": [
+    {
+      "title": "Security Council ISIL (Da’esh) and Al-Qaida Sanctions Committee Amends One Entry to Its Sanctions List",
+      "url": "https://press.un.org/en/2026/sc16465.doc.htm",
+      "date": "September 28, 2026",
+      "description": "On 28 September 2026, the Security Council Committee pursuant to resolutions 1267 (1999), 1989 (2011) and 2253 (2015) concerning ISIL (Da’esh), Al‑Qaida and associated individuals, groups, undertakings and entities enacted the amendments specified with strikethrough and underline in the entry below on its ISIL (Da’esh) and Al-Qaida Sanctions List of individuals and entities subject to the assets freeze, travel ban and arms embargo set out in paragraph 1 of Security Council resolution 2734 (2024), and adopted under Chapter VII of the Charter of the United Nations."
+    }
+  ],
   "bbcNews": [
     {
       "title": "'I was lured into a trap': Evan Gershkovich on moment that led to 16 months in Russian jail",
@@ -3125,24 +3132,6 @@
       "url": "https://www.aljazeera.com/news/2026/9/29/russian-nuclear-capable-bomber-plane-crashes-killing-six-people?traffic_source=rss",
       "date": "September 29, 2026",
       "description": "Tu-95 plane crashed during training flight in uninhabited area of Amur region, Defence Ministry says."
-    },
-    {
-      "title": "US-Iran talks in New York: What’s the latest?",
-      "url": "https://www.aljazeera.com/news/2026/9/29/us-iran-talks-in-new-york-whats-the-latest?traffic_source=rss",
-      "date": "September 29, 2026",
-      "description": "Both sides remain interested in a diplomatic settlement but differ on how to achieve one."
-    },
-    {
-      "title": "Why has Putin added 15,000 new soldiers to Russia’s army?",
-      "url": "https://www.aljazeera.com/news/2026/9/29/why-has-putin-added-15000-new-soldiers-to-russias-army?traffic_source=rss",
-      "date": "September 29, 2026",
-      "description": "The move marks the fourth military expansion this year as Russia's war in Ukraine seemingly stalls."
-    },
-    {
-      "title": "Indian firm building $15bn Trump-announced steel mill has deep Russia ties",
-      "url": "https://www.aljazeera.com/news/2026/9/29/indian-firm-building-15bn-trump-announced-steel-mill-has-deep-russia-ties?traffic_source=rss",
-      "date": "September 29, 2026",
-      "description": "Russian cash helped Essar, the firm behind the steel factory, manage major debts. Now the group's investing in the US."
     }
   ],
   "occNews": [
@@ -3265,16 +3254,22 @@
       "description": "Two homes belonging to the al-Tubasi family were set on fire and Israeli security forces were also targeted by settlers."
     },
     {
-      "title": "Dutch police arrest suspected member of group that claimed FBI hack",
-      "url": "https://www.bbc.co.uk/news/articles/cw5ym18znr0ro?at_medium=RSS&amp;at_campaign=rss",
+      "title": "More than 400 detained as France student protests escalate",
+      "url": "https://www.bbc.co.uk/news/articles/c862epne7glyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 29, 2026",
-      "description": "The suspect, 24, was arrested before the alleged cyber attack took place."
+      "description": "Students have been protesting conditions and resources in high schools since last week."
     },
     {
       "title": "First female prime minister named in Morocco after winning elections",
       "url": "https://www.bbc.co.uk/news/articles/c674kkjllw17o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 29, 2026",
       "description": "Her appointment by the king makes her only the second woman to lead a government in the Arab world."
+    },
+    {
+      "title": "Dutch police arrest suspected member of group that claimed FBI hack",
+      "url": "https://www.bbc.co.uk/news/articles/cw5ym18znr0ro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 29, 2026",
+      "description": "The suspect, 24, was arrested before the alleged cyber attack took place."
     },
     {
       "title": "Eiffel Tower chief to quit after female staff replaced by men during religious visit",
@@ -3383,6 +3378,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cmj4jg2vxvpdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 29, 2026",
       "description": "A new anti-conversion law in Maharashtra is raising questions about faith, choice and freedom."
+    },
+    {
+      "title": "Fires and blockades as students stage school protests across France",
+      "url": "https://www.bbc.co.uk/news/videos/cmy0zey3ey2lo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 29, 2026",
+      "description": "More than 400 people, mainly minors, were arrested on Tuesday, the country's interior minister says."
     },
     {
       "title": "The journalist who became king in Uganda",
@@ -3727,6 +3728,42 @@
       "description": "Did trade frenemies find common ground at the White House?"
     },
     {
+      "title": "Yamal stars as Spain thrash Croatia",
+      "url": "https://www.aljazeera.com/sports/2026/9/29/yamal-stars-as-spain-thrash-croatia?traffic_source=rss",
+      "date": "September 29, 2026",
+      "description": "Lamine Yamal scores twice and assists another as Spain beat Croatia 4-1 in UEFA Nations League Group A3"
+    },
+    {
+      "title": "‘Netanyahu targets Qatar to deflect from Gaza war crimes’",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/29/netanyahu-targets-qatar-to-deflect-from-gaza-war?traffic_source=rss",
+      "date": "September 29, 2026",
+      "description": "In an interview with British broadcaster Piers Morgan, Qatar’s prime minister accused Israeli’s Netanyahu of war crimes"
+    },
+    {
+      "title": "French students clash with police as protests over education cuts spread",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/29/french-students-clash-with-police-as-protests-over-education-cuts-spread?traffic_source=rss",
+      "date": "September 29, 2026",
+      "description": "French school students have blocked schools across France, demanding better learning conditions."
+    },
+    {
+      "title": "What is white phosphorus, and why is Israel using it in Lebanon?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/29/what-is-white-phosphorus-and-why-is-israel-using-it-in-lebanon?traffic_source=rss",
+      "date": "September 29, 2026",
+      "description": "White phosphorus can cause severe burns, ignite repeatedly and produce intense heat and toxic smoke."
+    },
+    {
+      "title": "Spain protests: Evicted 87-year-old woman to return to Madrid home",
+      "url": "https://www.aljazeera.com/news/2026/9/29/spain-protests-evicted-87-year-old-woman-to-return-to-madrid-home?traffic_source=rss",
+      "date": "September 29, 2026",
+      "description": "The real estate firm backs down and restores her old rent after mass protests over Spain's housing crisis."
+    },
+    {
+      "title": "What we know about RAF Fairford ‘bomb plot’",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/29/what-we-know-about-raf-fairford-bomb?traffic_source=rss",
+      "date": "September 29, 2026",
+      "description": "A police alert turned into a potential Iranian “bomb plot” against a British military base used by the US."
+    },
+    {
       "title": "US ban on $1bn of Canadian goods takes effect in Trump’s latest retaliation",
       "url": "https://www.aljazeera.com/economy/2026/9/29/us-ban-on-1bn-of-canadian-goods-takes-effect-in-trumps-latest-retaliation?traffic_source=rss",
       "date": "September 29, 2026",
@@ -3805,10 +3842,10 @@
       "description": "UK prime minister tells his first Labour Party conference 'fundamental rethink' needed to set Britain on right course."
     },
     {
-      "title": "LIVE: Spain vs Croatia – Nations League",
+      "title": "Spain 4-1 Croatia – Nations League as it happened",
       "url": "https://www.aljazeera.com/sports/liveblog/2026/9/29/live-spain-vs-croatia-nations-league?traffic_source=rss",
       "date": "September 29, 2026",
-      "description": "Build-up, teams and live text coverage as World champions Spain host Croatia on matchday two of the UEFA Nations League"
+      "description": "Lamine Yamal scores twice as World champions Spain beat Croatia on matchday two of the UEFA Nations League"
     },
     {
       "title": "‘The emperor is naked’: UEFA’s Ceferin takes aim at FIFA boss Infantino",
@@ -3821,24 +3858,6 @@
       "url": "https://www.aljazeera.com/news/2026/9/29/yemens-war-disrupts-roads-and-ports-deepening-humanitarian-crisis?traffic_source=rss",
       "date": "September 29, 2026",
       "description": "Civilian displacement surges as key Yemen roads close, leaving thousands in camps amid dire humanitarian challenges."
-    },
-    {
-      "title": "Ireland undecided on approach for next game against Israel, coach says",
-      "url": "https://www.aljazeera.com/sports/2026/9/29/ireland-undecided-on-approach-for-next-game-against-israel-coach-says?traffic_source=rss",
-      "date": "September 29, 2026",
-      "description": "Ireland played the first Nations League game despite unease among some players over Israel's genocidal war in Gaza."
-    },
-    {
-      "title": "CDC reports two measles deaths in US as cases hit 35-year high",
-      "url": "https://www.aljazeera.com/news/2026/9/29/cdc-reports-two-measles-deaths-us-as-cases-hit-35-year-high?traffic_source=rss",
-      "date": "September 29, 2026",
-      "description": "Pennsylvania reports over 900 measles cases, leading a nationwide outbreak with the highest numbers in 35 years."
-    },
-    {
-      "title": "Photos: French students protest, public workers strike before budget cuts",
-      "url": "https://www.aljazeera.com/gallery/2026/9/29/photos-french-studentspublic-workers-protest-macrons-planned-budget-cuts?traffic_source=rss",
-      "date": "September 29, 2026",
-      "description": "More than 400 people have been arrested as protesting students clash with police."
     }
   ]
 }
