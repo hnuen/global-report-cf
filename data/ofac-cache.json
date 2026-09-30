@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-09-30T13:08:27.283Z",
+  "updatedAt": "2026-09-30T15:08:33.693Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20260930",
+      "code": "20260930",
+      "title": "Counter Terrorism and Transnational Criminal Organizations Designations; Belarus, Counter Narcotics, and Libya Designations Removals",
+      "date": "September 30, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260929",
       "code": "20260929",
@@ -54,12 +60,6 @@
       "code": "20260914",
       "title": "Iran-related Designation; Issuance of Amended Venezuela-related General License and Frequently Asked Question",
       "date": "September 14, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260910",
-      "code": "20260910",
-      "title": "Iran-related and Counter Terrorism Designations; Licensing Policy Update under Operation Economic Outcast; Settlement Agreement between OFAC and an Individual",
-      "date": "September 10, 2026"
     }
   ],
   "civilPenalties": [
@@ -237,7 +237,7 @@
     "belarus-sanctions": {
       "name": "Belarus Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/belarus-sanctions",
-      "lastUpdated": "Sep 17, 2026",
+      "lastUpdated": "Sep 30, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -276,7 +276,7 @@
         },
         {
           "citation": "75 FR 73958",
-          "description": "10​ - Belarus Sanctions Regulations​ 75 FR 5502-10 - New regulations to implement Executive Order 13405 Recent Actions regarding Belarus Sanctions Iran-related Designations; Cuba Designations; Belarus-related Designations Removals Release Date: Sep 17, 2026 Counter Terrorism Designations; Counter Na",
+          "description": "10​ - Belarus Sanctions Regulations​ 75 FR 5502-10 - New regulations to implement Executive Order 13405 Recent Actions regarding Belarus Sanctions Counter Terrorism and Transnational Criminal Organizations Designations; Belarus, Counter Narcotics, and Libya Designations Removals Release Date: Sep 30",
           "year": "",
           "glNumbers": []
         }
@@ -376,7 +376,7 @@
     "counter-narcotics-trafficking-sanctions": {
       "name": "Counter Narcotics Trafficking Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-narcotics-trafficking-sanctions",
-      "lastUpdated": "Sep 29, 2026",
+      "lastUpdated": "Sep 30, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -423,7 +423,7 @@
     "counter-terrorism-sanctions": {
       "name": "Counter Terrorism Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-terrorism-sanctions",
-      "lastUpdated": "Sep 29, 2026",
+      "lastUpdated": "Sep 30, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -1311,7 +1311,7 @@
     "libya-sanctions": {
       "name": "Libya Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/libya-sanctions",
-      "lastUpdated": "May 28, 2026",
+      "lastUpdated": "Sep 30, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -1324,7 +1324,7 @@
         },
         {
           "citation": "76 FR 37404-11",
-          "description": "Identification of Nine Entities Pursuant to Executive Order 13566 and Amendment of General License No. 1A Recent Actions regarding Libya Sanctions Designations Removals Release Date: May 28, 2026 Counter Narcotics Designations; Global Magnitsky Designation Removal; Libya Designation Removal and Liby",
+          "description": "Identification of Nine Entities Pursuant to Executive Order 13566 and Amendment of General License No. 1A Recent Actions regarding Libya Sanctions Counter Terrorism and Transnational Criminal Organizations Designations; Belarus, Counter Narcotics, and Libya Designations Removals Release Date: Sep 30",
           "year": "2011",
           "glNumbers": []
         }
@@ -2220,7 +2220,7 @@
     "transnational-criminal-organizations": {
       "name": "Transnational Criminal Organizations",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/transnational-criminal-organizations",
-      "lastUpdated": "Sep 09, 2026",
+      "lastUpdated": "Sep 30, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -2233,7 +2233,7 @@
         },
         {
           "citation": "84 FR 35307-19",
-          "description": "Amendments to the Global Terrorism Sanctions Regulations (GTSR); Transnational Criminal Organizations Sanctions Regulations (TCOSR); and Hizballah Financial Sanctions Regulations (HFSR) Recent Actions regarding Transnational Criminal Organizations Transnational Criminal Organizations Designations; C",
+          "description": "Amendments to the Global Terrorism Sanctions Regulations (GTSR); Transnational Criminal Organizations Sanctions Regulations (TCOSR); and Hizballah Financial Sanctions Regulations (HFSR) Recent Actions regarding Transnational Criminal Organizations Counter Terrorism and Transnational Criminal Organiz",
           "year": "2019",
           "glNumbers": []
         }
@@ -2320,21 +2320,19 @@
         },
         {
           "number": "19",
-          "title": "Authorizing Transactions Related to Telecommunications and Mail",
+          "title": "Ukraine General License 19",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918691/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "20",
-          "title": "Official Business of Certain International Organizations and Entities",
+          "title": "Ukraine General License 20",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918696/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "21",
@@ -2346,48 +2344,43 @@
         },
         {
           "number": "22",
-          "title": "Authorizing the Exportation of Certain Services and Software Incident to Internet-Based Communications",
+          "title": "Ukraine General License 22",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918706/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "23",
-          "title": "Certain Transactions in Support of Nongovernmental Organizations’ Activities",
+          "title": "Ukraine General License 23",
           "date": "March 11, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919151/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "24",
-          "title": "Transactions Related to the Provision of Maritime Services",
+          "title": "Ukraine General License 24",
           "date": "March 18, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919801/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "25",
-          "title": "Journalistic Activities and Establishment of News Bureaus in Certain Regions of Ukraine",
+          "title": "Ukraine General License 25",
           "date": "March 24, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/920276/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "26A",
-          "title": "Transactions Authorized Pursuant to the Russian Harmful Foreign Activities Sanctions Regulations",
+          "title": "Ukraine General License 26A",
           "date": "January 10, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/933911/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "134C",
@@ -3097,7 +3090,7 @@
   ],
   "ajNews": [
     {
-      "title": "‘Economic war’: Is Iran losing its leverage over the Strait of Hormuz?",
+      "title": "Is Iran losing its leverage over the Strait of Hormuz?",
       "url": "https://www.aljazeera.com/news/2026/9/30/economic-war-is-iran-losing-its-leverage-over-the-strait-of-hormuz?traffic_source=rss",
       "date": "September 30, 2026",
       "description": "Crude flows through Hormuz have recovered, but tanker insurance costs and geopolitical risks remain barriers to a return to normality."
@@ -3113,12 +3106,6 @@
       "url": "https://www.aljazeera.com/news/2026/9/30/i-wanted-to-live-a-ukrainian-orphans-journey-through-russian-occupation?traffic_source=rss",
       "date": "September 30, 2026",
       "description": "Denys Kostev says he was forcibly transferred in 2022 and coerced into pro-Russian campaigns before finally escaping."
-    },
-    {
-      "title": "S Korea demands apology over DMZ blasts as N Korea denies planting mines",
-      "url": "https://www.aljazeera.com/news/2026/9/30/south-korea-demands-apology-over-dmz-blasts-as-north-denies-planting-mines?traffic_source=rss",
-      "date": "September 30, 2026",
-      "description": "South Korea calls for a formal apology from North Korea over the DMZ explosion that injured three soldiers."
     }
   ],
   "occNews": [
@@ -3223,6 +3210,12 @@
   ],
   "regionsNews": [
     {
+      "title": "Execution of US murderer Christa Pike halted an hour before it was due to happen",
+      "url": "https://www.bbc.co.uk/news/articles/cw20vxxn876no?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 30, 2026",
+      "description": "Pike was convicted and sentenced to death in 1996 for the murder of Colleen Slemmer."
+    },
+    {
       "title": "Last UK and US troops leave Iraq as anti-Islamic State mission ends",
       "url": "https://www.bbc.co.uk/news/articles/c65ym1dyn92mo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 30, 2026",
@@ -3247,28 +3240,10 @@
       "description": "Lowe and his wife Kim Painter announce the death of their daughter, who \"was the light of our lives\"."
     },
     {
-      "title": "Six Flags shuts down X2 rollercoaster after more than 100 allege brain injuries",
-      "url": "https://www.bbc.co.uk/news/articles/cw14d37446d8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 29, 2026",
-      "description": "Hundreds of riders were allegedly injured on X2, which has seats that spin 360 degrees."
-    },
-    {
-      "title": "South Korea demands apology from Pyongyang for landmine blasts that injured three",
-      "url": "https://www.bbc.co.uk/news/articles/cwj3dkvpm4e7o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Singapore launches matchmaking service for government workers",
+      "url": "https://www.bbc.co.uk/news/articles/cqzjzr893yv4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 30, 2026",
-      "description": "Blasts in the Demilitarised Zone (DMZ) injured three South Korean personnel earlier this month."
-    },
-    {
-      "title": "Botswana condemned for slaughtering elephants for independence celebrations",
-      "url": "https://www.bbc.co.uk/news/articles/cxm2qmpy57ggo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 30, 2026",
-      "description": "The government authorises the hunting of 23 elephants and dozens of other wild animals for independence day feasts."
-    },
-    {
-      "title": "US Supreme Court denies Christa Pike's last-ditch bid to halt execution",
-      "url": "https://www.bbc.co.uk/news/articles/cwe879654mj7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 29, 2026",
-      "description": "The Tennessee inmate has been awaiting execution since she was sentenced to death in 1996 for the murder of a teenage classmate."
+      "description": "The launch of FirstDate comes as the ageing nation wrestles with a record-low fertility rate."
     },
     {
       "title": "Africa's richest man launches Kenya oil refinery despite land protests",
@@ -3283,10 +3258,16 @@
       "description": "In the emotional letter, the judge describes the survivor as \"the bravest little girl this court has ever seen\"."
     },
     {
-      "title": "Singapore launches matchmaking service for government workers",
-      "url": "https://www.bbc.co.uk/news/articles/cqzjzr893yv4o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Botswana condemned for slaughtering 23 elephants for independence celebrations",
+      "url": "https://www.bbc.co.uk/news/articles/cxm2qmpy57ggo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 30, 2026",
-      "description": "The launch of FirstDate comes as the ageing nation wrestles with a record-low fertility rate."
+      "description": "The government authorises the hunting of elephants and dozens of other wild animals for independence day feasts."
+    },
+    {
+      "title": "Six Flags shuts down X2 rollercoaster after more than 100 allege brain injuries",
+      "url": "https://www.bbc.co.uk/news/articles/cw14d37446d8o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 29, 2026",
+      "description": "Hundreds of riders were allegedly injured on X2, which has seats that spin 360 degrees."
     },
     {
       "title": "'Backpack' declared Alaska's Fat Bear Week winner",
@@ -3295,28 +3276,22 @@
       "description": "\"Backpack\" defeated a bear known only as \"910\" in the final round of the annual competition."
     },
     {
-      "title": "More than 400 detained as France student protests escalate",
+      "title": "South Korea demands apology from Pyongyang for landmine blasts that injured three",
+      "url": "https://www.bbc.co.uk/news/articles/cwj3dkvpm4e7o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 30, 2026",
+      "description": "Blasts in the Demilitarised Zone (DMZ) injured three South Korean personnel earlier this month."
+    },
+    {
+      "title": "Dozens hurt and hundreds arrested in wave of French school protests",
       "url": "https://www.bbc.co.uk/news/articles/c862epne7glyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 29, 2026",
-      "description": "Students have been protesting conditions and resources in high schools since last week."
+      "date": "September 30, 2026",
+      "description": "Students have been protesting against conditions and resources in secondary schools since last week."
     },
     {
       "title": "Restaurant named after Xi Jinping attacked by Chinese nationals in South Korea",
       "url": "https://www.bbc.co.uk/news/articles/c9kgvm275ev8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 30, 2026",
       "description": "The owner said he chose the name because he wanted to run the \"best Chinese restaurant\" in South Korea."
-    },
-    {
-      "title": "Somali pirates killed oil tanker crew before rescue, official tells BBC",
-      "url": "https://www.bbc.co.uk/news/articles/crjw5jp2de7go?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 30, 2026",
-      "description": "Piracy off the Somali coast has increased in recent years after dropping when international naval operations began in 2011."
-    },
-    {
-      "title": "Crackdown on South Africa's unsafe streets ordered by president to keep women safe",
-      "url": "https://www.bbc.co.uk/news/articles/c51kx9ze1mdzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 30, 2026",
-      "description": "The murders of 12 women near Johannesburg has caused a outcry about the scale of violence against women."
     },
     {
       "title": "Three takeaways from Trump's 'Super Intelligence' summit",
@@ -3601,6 +3576,12 @@
       "description": "A typical household faces an annual gas and electricity bill of £1,999 from January, based on a key forecast."
     },
     {
+      "title": "The volunteers baking birthday cakes for children",
+      "url": "https://www.bbc.co.uk/news/articles/cm74k2kkld3eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 30, 2026",
+      "description": "The Hampshire group says it has seen a rise in demand and it needs more volunteer bakers."
+    },
+    {
       "title": "Drop in donations puts community pantry at risk",
       "url": "https://www.bbc.co.uk/news/articles/cme30d4qkj3eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 30, 2026",
@@ -3617,12 +3598,6 @@
       "url": "https://www.bbc.co.uk/news/articles/ck7902ejw10vo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 30, 2026",
       "description": "Young people struggling to make ends meet respond to the government's Your First Home scheme."
-    },
-    {
-      "title": "What is the triple lock and why are people talking about it?",
-      "url": "https://www.bbc.co.uk/news/articles/cq6m03ld7nvo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 29, 2026",
-      "description": "The triple lock guarantees that the state pension is not overtaken by inflation or wage increases."
     },
     {
       "title": "My hometown shows that high streets have to change or die",
@@ -3677,6 +3652,42 @@
       "url": "https://www.bbc.co.uk/news/videos/c65y55j2dxepo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 25, 2026",
       "description": "Save or Overpay? What to do with your mortgage if interest rates rise"
+    },
+    {
+      "title": "Is Spain’s anti-eviction decree a fix for its housing crisis?",
+      "url": "https://www.aljazeera.com/news/2026/9/30/is-spains-anti-eviction-decree-a-fix-to-its-housing-crisis?traffic_source=rss",
+      "date": "September 30, 2026",
+      "description": "The government blames 'savage speculation' as critics say new measures leave small landlords 'out in the cold'."
+    },
+    {
+      "title": "Why is Hegseth cutting 20 percent of US general and admiral positions?",
+      "url": "https://www.aljazeera.com/news/2026/9/30/why-is-hegseth-cutting-20-percent-of-us-general-and-admiral-positions?traffic_source=rss",
+      "date": "September 30, 2026",
+      "description": "The overhaul could reshape the US military as Hegseth faces scrutiny over senior officers’ removal."
+    },
+    {
+      "title": "Pep Guardiola backs Man City after guilty verdict on financial charges",
+      "url": "https://www.aljazeera.com/sports/2026/9/30/pep-guardiola-backs-man-city-after-guilty-verdict-on-financial-charges?traffic_source=rss",
+      "date": "September 30, 2026",
+      "description": "The Spanish coach won 20 trophies during a glittering 10 years as City manager before departing in May."
+    },
+    {
+      "title": "Palestinian archaeologists race against time to save Gaza’s heritage",
+      "url": "https://www.aljazeera.com/features/2026/9/30/palestinian-archaeologists-race-against-time-to-save-gazas-heritage?traffic_source=rss",
+      "date": "September 30, 2026",
+      "description": "A Palestinian team rescued Gaza's artefacts. The question now is where to store them."
+    },
+    {
+      "title": "Why Israel is interfering in Palestinian education",
+      "url": "https://www.aljazeera.com/opinions/2026/9/30/why-israel-is-interfering-in-palestinian-education?traffic_source=rss",
+      "date": "September 30, 2026",
+      "description": "The occupation authorities are trying to censor Palestinian school curricula because they teach national consciousness."
+    },
+    {
+      "title": "Christa Pike seeks firing squad, not lethal injection: Inside US executions",
+      "url": "https://www.aljazeera.com/news/2026/9/30/christa-pike-seeks-firing-squad-not-lethal-injection-inside-us-executions?traffic_source=rss",
+      "date": "September 30, 2026",
+      "description": "Women make up about 1 percent of US executions. How do states put people to death, and why is it contested?"
     },
     {
       "title": "Israeli attacks on Gaza kill seven as ‘ceasefire’ violations continue",
@@ -3773,36 +3784,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/30/flydubai-flight-to-israel-diverted-to-saudi-arabia-after-emergency-alert-2?traffic_source=rss",
       "date": "September 30, 2026",
       "description": "A Flydubai plane travelling from Dubai to Israel made an emergency landing in Saudi Arabia."
-    },
-    {
-      "title": "Photos: A journalist is crowned king in Uganda",
-      "url": "https://www.aljazeera.com/gallery/2026/9/30/photos-a-journalist-is-crowned-king-in-uganda?traffic_source=rss",
-      "date": "September 30, 2026",
-      "description": "The death of King Oyo Nyimba in August triggered widespread grief and a succession dispute in Uganda’s Tooro Kingdom."
-    },
-    {
-      "title": "UK‘s PM Burnham sets out plans to reshape public services",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/30/uks-pm-burnham-sets-out-plans-to-reshape-public-services?traffic_source=rss",
-      "date": "September 30, 2026",
-      "description": "UK's PM Andy Burnham is promising a major improvement to public services including social care, housing and energy."
-    },
-    {
-      "title": "Hijabi students turned away from school in Azerbaijan",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/30/hijabi-students-turned-away-from-school-in-azerbaijan?traffic_source=rss",
-      "date": "September 30, 2026",
-      "description": "Female students leave a school in Azerbaijan after reportedly being denied entry for wearing headscarves."
-    },
-    {
-      "title": "Flydubai flight to Israel diverted to Saudi Arabia after emergency alert",
-      "url": "https://www.aljazeera.com/news/2026/9/30/flydubai-flight-to-israel-diverted-to-saudi-arabia-after-emergency-alert?traffic_source=rss",
-      "date": "September 30, 2026",
-      "description": "Airline says plane experiences an 'incident' en route from Dubai to Tel Aviv, lands safely at Tabuk airport in Saudi Arabia."
-    },
-    {
-      "title": "‘Dire situation’: Lebanese prisoners on hunger strike for 18 days",
-      "url": "https://www.aljazeera.com/news/2026/9/30/dire-situation-lebanese-prisoners-on-hunger-strike-for-18-days?traffic_source=rss",
-      "date": "September 30, 2026",
-      "description": "The medical condition of dozens of prisoners has deteriorated as inmates protest against suspension of amnesty law."
     }
   ]
 }
