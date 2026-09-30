@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30T19:08:22.097Z",
+  "updatedAt": "2026-09-30T21:08:21.382Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260930",
@@ -3097,7 +3097,13 @@
   ],
   "ajNews": [
     {
-      "title": "Strong indications’ Iran linked to suspected UK airbase plot",
+      "title": "Russia warns NATO of possible nuclear response if Kaliningrad is cut off",
+      "url": "https://www.aljazeera.com/news/2026/9/30/russia-warns-nato-of-possible-nuclear-response-if-kaliningrad-is-cut-off?traffic_source=rss",
+      "date": "September 30, 2026",
+      "description": "Moscow claims that NATO is preparing an air and naval blockade in the Baltic Sea."
+    },
+    {
+      "title": "‘Strong indications’ Iran linked to suspected UK airbase plot",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/9/30/aje-onl-nf_indications-iran-linked-suspected-uk-airbase-plot-300926?traffic_source=rss",
       "date": "September 30, 2026",
       "description": "UK Prime Minister says there are ‘strong indications’ Iran played a part in the suspected RAF Fairford airbase plot."
@@ -3213,12 +3219,6 @@
       "url": "https://www.federalregister.gov/documents/2026/07/14/2026-14132/enhanced-favorable-treatment-for-the-united-arab-emirates-under-the-export-administration",
       "date": "July 14, 2026",
       "description": "In this final rule, the Bureau of Industry and Security (BIS) amends the Export Administration Regulations (EAR) to provide enhanced favorable treatment for the United Arab Emirates (UAE). Specifically, BIS is removing the UAE from Country Groups D:3 and D:4 and adding the UAE to Country Group A:5. More license exceptions will now be available, including Strategic Trade Authorization (STA) for the UAE Government and approved commercial entities in the UAE. STA will authorize the export, reexport, or transfer (in-country) of military items; certain commercial satellites and spacecraft; and dual-use items useful in, inter alia, oil and gas production, desalination, and civil nuclear power generation. The UAE Government and approved commercial entities will also have license-free access to advanced computing items, consistent with the May 2025 U.S.-UAE Artificial Intelligence Cooperation framework, without compromising U.S. digital infrastructure buildout."
-    },
-    {
-      "title": "Agency Information Collection Activities; Submission to the Office of Management and Budget (OMB) for Review and Approval; Comment Request; Voluntary Self-Disclosure of Antiboycott Violations",
-      "url": "https://www.federalregister.gov/documents/2026/06/24/2026-12728/agency-information-collection-activities-submission-to-the-office-of-management-and-budget-omb-for",
-      "date": "June 24, 2026",
-      "description": ""
     }
   ],
   "regionsNews": [
@@ -3226,7 +3226,7 @@
       "title": "What we know about stabbing on Flydubai flight to Israel",
       "url": "https://www.bbc.co.uk/news/articles/cqjdv7pmj9dno?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 30, 2026",
-      "description": "The captain and first officer were injured, and one pilot has been arrested, officials say."
+      "description": "A pilot has been arrested and is being questioned after another pilot was stabbed, officials say."
     },
     {
       "title": "Six smugglers jailed for manslaughter over worst Channel small boats disaster",
@@ -3697,16 +3697,88 @@
       "description": "Save or Overpay? What to do with your mortgage if interest rates rise"
     },
     {
+      "title": "Israeli attacks across Gaza kill at least eight",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/30/israeli-attacks-across-gaza-kill-at-least-eight?traffic_source=rss",
+      "date": "September 30, 2026",
+      "description": "Israeli attacks on residential areas across Gaza killed at least eight civilians and wounded others on Wednesday"
+    },
+    {
+      "title": "US judge rules Wisconsin mosque leader Salah Sarsour can be deported",
+      "url": "https://www.aljazeera.com/news/2026/9/30/us-judge-rules-wisconsin-mosque-leader-salah-sarsour-can-be-deported?traffic_source=rss",
+      "date": "September 30, 2026",
+      "description": "Sarsour’s lawyers say the decision threatens free speech protections and plan to fight the ruling."
+    },
+    {
+      "title": "Netanyahu praises stabbed Indian pilot for saving lives on Flydubai flight",
+      "url": "https://www.aljazeera.com/news/2026/9/30/netanyahu-praises-indian-pilot-for-saving-lives-on-flydubai-flight?traffic_source=rss",
+      "date": "September 30, 2026",
+      "description": "The Israeli prime minister thanks 'true hero' Captain Smit Machchhar for 'extraordinary bravery'."
+    },
+    {
+      "title": "US regulator launches probe into AI companies",
+      "url": "https://www.aljazeera.com/economy/2026/9/30/us-regulator-launches-probe-into-ai-companies?traffic_source=rss",
+      "date": "September 30, 2026",
+      "description": "FTC investigates AI firms amid concerns over rogue agents and potential threats to humanity within the next decade."
+    },
+    {
+      "title": "How does Trump’s White House AI accord work?",
+      "url": "https://www.aljazeera.com/economy/2026/9/30/how-does-trumps-white-house-ai-accord-work?traffic_source=rss",
+      "date": "September 30, 2026",
+      "description": "Trump announces voluntary pact on AI, urging companies to self-police amid growing calls for strict safety regulations."
+    },
+    {
+      "title": "Displaced by war, young Sudanese turn to entrepeneurship to survive",
+      "url": "https://www.aljazeera.com/features/2026/9/30/displaced-by-war-young-sudanese-turn-to-entrepeneurship-to-survive?traffic_source=rss",
+      "date": "September 30, 2026",
+      "description": "Displaced by war and shut out of formal jobs, young Sudanese are turning to art, small businesses, and entrepeneurship."
+    },
+    {
+      "title": "French court sentences 13 men over deadliest small-boat crossing to UK",
+      "url": "https://www.aljazeera.com/news/2026/9/30/french-court-sentences-13-men-over-deadliest-small-boat-crossing-to-uk?traffic_source=rss",
+      "date": "September 30, 2026",
+      "description": "Six people smugglers are found guilty of involuntary homicide after 31 migrants died in the English Channel in 2021."
+    },
+    {
+      "title": "Flydubai FZ1073 timeline: How the Israel-bound flight emergency unfolded",
+      "url": "https://www.aljazeera.com/news/2026/9/30/flydubai-fz1073-timeline-how-the-israel-bound-flight-emergency-unfolded?traffic_source=rss",
+      "date": "September 30, 2026",
+      "description": "Flydubai flight diverts to Saudi Arabia after cockpit emergency, as Netanyahu alleges a crash attempt."
+    },
+    {
+      "title": "US Fed watchdog finds no criminal wrongdoing in Powell-era renovation costs",
+      "url": "https://www.aljazeera.com/news/2026/9/30/us-fed-watchdog-finds-no-criminal-wrongdoing-in-powell-era-renovation-costs?traffic_source=rss",
+      "date": "September 30, 2026",
+      "description": "Trump said former Fed chair Jerome Powell should resign anyway."
+    },
+    {
+      "title": "Saudi Arabia not to compromise on security as Houthis choose ‘chaos’: MBS",
+      "url": "https://www.aljazeera.com/news/2026/9/30/saudi-crown-prince-says-no-compromise-on-kingdoms-security-against-threats?traffic_source=rss",
+      "date": "September 30, 2026",
+      "description": "Crown Prince Mohammed bin Salman says the kingdom 'will not hesitate to respond firmly to any threat'."
+    },
+    {
+      "title": "Norway launches probe into 11 senior officials over US Epstein files links",
+      "url": "https://www.aljazeera.com/news/2026/9/30/norway-launches-probe-into-11-senior-officials-over-us-epstein-files-links?traffic_source=rss",
+      "date": "September 30, 2026",
+      "description": "Norway investigates over $13m in state grants linked to Epstein and top ministers."
+    },
+    {
+      "title": "US FCC head says controversial Trump ads do not raise concerns",
+      "url": "https://www.aljazeera.com/news/2026/9/30/us-fcc-head-says-controversial-trump-ads-do-not-raise-concerns?traffic_source=rss",
+      "date": "September 30, 2026",
+      "description": "Series of publicly-funded television spots have been criticised by Republicans and Democrats as self-promotion by Trump."
+    },
+    {
       "title": "A political dynasty? Why the Bolsonaro family dominates Brazil’s right wing",
       "url": "https://www.aljazeera.com/news/longform/2026/9/30/a-political-dynasty-why-the-bolsonaro-family-dominates-brazils-right-wing?traffic_source=rss",
       "date": "September 30, 2026",
       "description": "For a third election in a row, a Bolsonaro family member is the leading right-wing contender for Brazil's presidency."
     },
     {
-      "title": "Cristiano Ronaldo misses Portugal training as coach Jorge Jesus denies rift",
+      "title": "Ronaldo leaves Portugal camp amid reports of rift with coach Jorge Jesus",
       "url": "https://www.aljazeera.com/sports/2026/9/30/cristiano-ronaldo-misses-portugal-training-as-coach-jorge-jesus-denies-rift?traffic_source=rss",
       "date": "September 30, 2026",
-      "description": "Ronaldo did not play in Portugal’s 2-1 win over Norway ‌on Sunday and is now a doubt for the game against Denmark."
+      "description": "Ronaldo did not play in Portugal’s 2-1 win over Norway ‌on Sunday and will now miss the game against Denmark."
     },
     {
       "title": "Video: Bangladesh Dengue deaths surpass 233 in deadly outbreak",
@@ -3749,84 +3821,6 @@
       "url": "https://www.aljazeera.com/news/2026/9/30/us-appeals-court-halts-tennessee-execution-of-christa-pike?traffic_source=rss",
       "date": "September 30, 2026",
       "description": "Christa Pike was set to become the first woman executed by Tennessee in more than 200 years."
-    },
-    {
-      "title": "Swiss Football Association withdraws support for FIFA boss Gianni Infantino",
-      "url": "https://www.aljazeera.com/sports/2026/9/30/swiss-football-association-withdraws-support-for-fifa-boss-gianni-infantino?traffic_source=rss",
-      "date": "September 30, 2026",
-      "description": "Executive committee reverses its support ‌for the ​Swiss football administrator after endorsing his candidacy in June."
-    },
-    {
-      "title": "Jerusalem Daily: Flight carrying Israelis diverted after stabbing",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/30/jerusalem-daily-flight-carrying-israelis-diverted-after-stabbing?traffic_source=rss",
-      "date": "September 30, 2026",
-      "description": "A Flydubai flight to Tel Aviv was diverted after a stabbing, with Israeli officials calling it 'an act of terror'."
-    },
-    {
-      "title": "Pentagon says US troop withdrawal from Iraq is complete",
-      "url": "https://www.aljazeera.com/news/2026/9/30/pentagon-says-us-troop-withdrawal-from-iraq-is-complete?traffic_source=rss",
-      "date": "September 30, 2026",
-      "description": "Trump hails completion of 'very expensive excursion into Hell' as US-led coalition anti-ISIL mission ends."
-    },
-    {
-      "title": "Romania’s political crisis intensifies as Parliament rejects pro-EU PM",
-      "url": "https://www.aljazeera.com/news/2026/9/30/romanian-political-crisis-intensifies-as-parliament-rejects-pro-eu-pm?traffic_source=rss",
-      "date": "September 30, 2026",
-      "description": "Siegfried Muresan's loss of the confidence motion increases the prospect for snap elections."
-    },
-    {
-      "title": "What happened on diverted Flydubai flight from Dubai to Tel Aviv?",
-      "url": "https://www.aljazeera.com/news/2026/9/30/what-happened-on-diverted-flydubai-flight-from-dubai-to-tel-aviv?traffic_source=rss",
-      "date": "September 30, 2026",
-      "description": "Israel's prime minister said one of the pilots stabbed the other and then tried to crash the plane."
-    },
-    {
-      "title": "Photos: Kashmir’s 600-year-old Wazwan wedding feast adapts to modern life",
-      "url": "https://www.aljazeera.com/gallery/2026/9/30/photos-kashmirs-600-year-old-wazwan-wedding-feast-adapts-to-modern-life?traffic_source=rss",
-      "date": "September 30, 2026",
-      "description": "Wazwan, a multicourse mutton feast, reflects Kashmiri cultural roots with recipes dating back to the 14th century."
-    },
-    {
-      "title": "Garvaghy Road standoff brings Northern Ireland’s old wounds back to surface",
-      "url": "https://www.aljazeera.com/news/2026/9/30/garvaghy-road-standoff-brings-northern-irelands-old-wounds-back-to-surface?traffic_source=rss",
-      "date": "September 30, 2026",
-      "description": "Residents block an Orange Order parade in a standoff that has revived tensions, legal disputes and political conflict."
-    },
-    {
-      "title": "China extends 52-year unbeaten record as Asian Games organisers apologise",
-      "url": "https://www.aljazeera.com/sports/2026/9/30/china-extends-52-year-unbeaten-record-as-asian-games-organisers-apologise?traffic_source=rss",
-      "date": "September 30, 2026",
-      "description": "Chinese divers were unstoppable as the country's sizeable overall tally of gold medals swelled to 150."
-    },
-    {
-      "title": "Is Spain’s anti-eviction decree a fix for its housing crisis?",
-      "url": "https://www.aljazeera.com/news/2026/9/30/is-spains-anti-eviction-decree-a-fix-to-its-housing-crisis?traffic_source=rss",
-      "date": "September 30, 2026",
-      "description": "The government blames 'savage speculation' as critics say new measures leave small landlords 'out in the cold'."
-    },
-    {
-      "title": "Why is Hegseth cutting 20 percent of US general and admiral positions?",
-      "url": "https://www.aljazeera.com/news/2026/9/30/why-is-hegseth-cutting-20-percent-of-us-general-and-admiral-positions?traffic_source=rss",
-      "date": "September 30, 2026",
-      "description": "The overhaul could reshape the US military as Hegseth faces scrutiny over senior officers’ removal."
-    },
-    {
-      "title": "Pep Guardiola backs Man City after guilty verdict on financial charges",
-      "url": "https://www.aljazeera.com/sports/2026/9/30/pep-guardiola-backs-man-city-after-guilty-verdict-on-financial-charges?traffic_source=rss",
-      "date": "September 30, 2026",
-      "description": "The Spanish coach won 20 trophies during a glittering 10 years as City manager before departing in May."
-    },
-    {
-      "title": "Palestinian archaeologists race against time to save Gaza’s heritage",
-      "url": "https://www.aljazeera.com/features/2026/9/30/palestinian-archaeologists-race-against-time-to-save-gazas-heritage?traffic_source=rss",
-      "date": "September 30, 2026",
-      "description": "A Palestinian team rescued Gaza's artefacts. The question now is where to store them."
-    },
-    {
-      "title": "Why Israel is interfering in Palestinian education",
-      "url": "https://www.aljazeera.com/opinions/2026/9/30/why-israel-is-interfering-in-palestinian-education?traffic_source=rss",
-      "date": "September 30, 2026",
-      "description": "The occupation authorities are trying to censor Palestinian school curricula because they teach national consciousness."
     }
   ]
 }
