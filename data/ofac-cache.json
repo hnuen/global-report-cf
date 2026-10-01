@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T17:08:29.547Z",
+  "updatedAt": "2026-10-01T19:08:55.068Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261001",
@@ -3061,8 +3061,21 @@
       "description": "With these new listings, a total of 597 vessels are now listed by the EU."
     }
   ],
-  "unNotices": [],
+  "unNotices": [
+    {
+      "title": "Speakers in General Assembly Diverge over Veto Use in Security Council to Block Renewal of Iran Sanctions Panel amid Dispute over ‘Snapback’",
+      "url": "https://press.un.org/en/2026/ga12792.doc.htm",
+      "date": "October 1, 2026",
+      "description": "Pursuant to its veto initiative, speakers in the General Assembly today weighed in on the vetoes recently cast by China and the Russian Federation concerning a Security Council resolution that would have extended the mandate of the Panel of Experts tasked with monitoring implementation of United Nations sanctions on Iran."
+    }
+  ],
   "bbcNews": [
+    {
+      "title": "Putin warns West that Russia is ready to use every weapon to protect Kaliningrad",
+      "url": "https://www.bbc.co.uk/news/articles/cqg7k7v499jjo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 1, 2026",
+      "description": "Vladimir Putin insists Moscow is \"not threatening anyone\" and merely responding to statements by Western leaders."
+    },
     {
       "title": "Russian dissident Garry Kasparov says US warned him of danger to his life",
       "url": "https://www.bbc.co.uk/news/articles/c6y8z8kr5mk8o?at_medium=RSS&amp;at_campaign=rss",
@@ -3080,6 +3093,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cqx2ze420kpyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 30, 2026",
       "description": "A foreign policy speech by the Russian president will be keenly watched, but all signs point to the full-scale invasion continuing."
+    },
+    {
+      "title": "PM warned Rosebank oil field could breach West Bank sanctions",
+      "url": "https://www.bbc.co.uk/news/articles/cmrl6lz454lgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 1, 2026",
+      "description": "Campaigners and Green Party leader Zack Polanski raise concerns about Rosebank's ties to an Israeli firm."
     }
   ],
   "ajNews": [
@@ -3198,7 +3217,7 @@
   ],
   "regionsNews": [
     {
-      "title": "Tennessee halts executions after Christa Pike survives two lethal injection attempts",
+      "title": "Christa Pike is in 'critical condition' after failed execution, her lawyers say",
       "url": "https://www.bbc.co.uk/news/articles/cmn4540d4z87o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
       "description": "Pike had been on death row since she was convicted in 1996 for the murder of Colleen Slemmer."
@@ -3210,16 +3229,10 @@
       "description": "The convicted killer is in hospital in Tennessee after surviving two lethal injections, in a case that has raised many questions."
     },
     {
-      "title": "Netanyahu says flight attacker 'underwent Islamist radical indoctrination'",
+      "title": "Netanyahu says Flydubai attacker had 'Islamist radical indoctrination'",
       "url": "https://www.bbc.co.uk/news/articles/crje8edqyej9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
       "description": "Israel's prime minister says the pilot who tried to take over the Flydubai plane clearly intended to \"down the plane\"."
-    },
-    {
-      "title": "Japan raises permanent residency fee by 20 times",
-      "url": "https://www.bbc.co.uk/news/articles/c6y8z8xeg8j1o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 1, 2026",
-      "description": "The hikes are part of immigration policy changes introduced to manage Japan's growing foreign population."
     },
     {
       "title": "Trump's AI rebrand causes 'unprecedented' demand for Slovenian website names",
@@ -3234,6 +3247,12 @@
       "description": "Lawyers for Good's family say US officials created \"an unprecedented environment for state sponsored violence\" in Minneapolis."
     },
     {
+      "title": "Japan raises permanent residency fee by 20 times",
+      "url": "https://www.bbc.co.uk/news/articles/c6y8z8xeg8j1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 1, 2026",
+      "description": "The hikes are part of immigration policy changes introduced to manage Japan's growing foreign population."
+    },
+    {
       "title": "Fires break out at French schools as students protest nationwide",
       "url": "https://www.bbc.co.uk/news/articles/c6d080d1e3l4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
@@ -3246,16 +3265,16 @@
       "description": "It is estimated more than 200 people have died in blazes in the north-east of the country over the summer."
     },
     {
-      "title": "Swiss glaciers suffer 'disastrous' year of ice loss, threatening water supplies",
-      "url": "https://www.bbc.co.uk/news/articles/c6n9w0ypjwl9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 1, 2026",
-      "description": "Scientists say such rapid melting is no longer surprising given the pace of climate change."
-    },
-    {
       "title": "K-pop star convicted of violating military service law",
       "url": "https://www.bbc.co.uk/news/articles/cjn5d52d3lk5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
       "description": "The member of K-pop band Winner was given a suspended prison sentence for repeated absences from his national service work."
+    },
+    {
+      "title": "Swiss glaciers suffer 'disastrous' year of ice loss, threatening water supplies",
+      "url": "https://www.bbc.co.uk/news/articles/c6n9w0ypjwl9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 1, 2026",
+      "description": "Scientists say such rapid melting is no longer surprising given the pace of climate change."
     },
     {
       "title": "Explosions heard in Ethiopia's capital after drone flights banned",
@@ -3354,10 +3373,34 @@
       "description": "Indonesian lawmakers on Wednesday ordered the demolition of a controversial luxury compound inside a penitentiary near the capital."
     },
     {
+      "title": "UK in talks with EU partners to release strategic fuel reserves if needed, BBC understands",
+      "url": "https://www.bbc.co.uk/news/articles/c5zjzjgdeneeo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 1, 2026",
+      "description": "President Donald Trump has threatened to ban diesel exports in a bid to ease prices in the US."
+    },
+    {
+      "title": "HMRC urged to scrutinise tax implications of Man City case",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cjkg7g93y5yno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 1, 2026",
+      "description": "The Treasury Committee, which is responsible for overseeing HMRC, has urged the body to scrutinise tax implications of the Manchester City verdict."
+    },
+    {
+      "title": "Thames Water apologises after £145,000 customer billing mistake",
+      "url": "https://www.bbc.co.uk/news/articles/ck24j46424veo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 1, 2026",
+      "description": "The firm has apologised to the family."
+    },
+    {
       "title": "AI boom could trigger market shocks, Bank of England boss warns",
       "url": "https://www.bbc.co.uk/news/articles/cv8e30enrkxyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
       "description": "Andrew Bailey says the central bank is watching the waves of cash being invested in artificial intelligence \"very carefully\"."
+    },
+    {
+      "title": "The AI telling farmers when to harvest",
+      "url": "https://www.bbc.co.uk/news/articles/cgk53dkmyxko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "September 30, 2026",
+      "description": "Will farmers want AI tools to help judge when to pick fruit, or is their own intuition enough?"
     },
     {
       "title": "Trump's AI rebrand causes 'unprecedented' demand for Slovenian website names",
@@ -3366,28 +3409,22 @@
       "description": "The president wants AI to be called super intelligence - or SI - the same initials used by Slovenian domains."
     },
     {
-      "title": "Travelodge failed sex assault victim 'at every stage'",
-      "url": "https://www.bbc.co.uk/news/articles/c93429dg425o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 1, 2026",
-      "description": "Room intrusions were still being reported at one-in-10 Travelodge hotels this summer, a review finds."
-    },
-    {
       "title": "Vape tax comes into effect - but prices won't rise yet",
       "url": "https://www.bbc.co.uk/news/articles/c6j4jrjgv2j7o?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 30, 2026",
       "description": "Vaping is about to becoming more expensive due to a new tax on products."
     },
     {
+      "title": "Travelodge failed sex assault victim 'at every stage'",
+      "url": "https://www.bbc.co.uk/news/articles/c93429dg425o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 1, 2026",
+      "description": "Room intrusions were still being reported at one-in-10 Travelodge hotels this summer, a review finds."
+    },
+    {
       "title": "Employers should teach primary-age children about work, says Milburn",
       "url": "https://www.bbc.co.uk/news/articles/cr2kwlw0p3v9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
       "description": "The author of a major report into youth activity in the UK says children as young as four should be learning about careers."
-    },
-    {
-      "title": "The AI telling farmers when to harvest",
-      "url": "https://www.bbc.co.uk/news/articles/cgk53dkmyxko?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 30, 2026",
-      "description": "Will farmers want AI tools to help judge when to pick fruit, or is their own intuition enough?"
     },
     {
       "title": "Energy bills are rising by £60 a year - here's how you can bring that down",
@@ -3606,10 +3643,64 @@
       "description": "Chorley businessman, Paul Bowen received a reply from Prime Minister Andy Burnham, after posting a video on social media about the closure of one of his shops due to the state of the high street."
     },
     {
+      "title": "Canada to fast track oil pipeline meant to diversify economy away from US",
+      "url": "https://www.aljazeera.com/economy/2026/10/1/canada-to-fast-track-oil-pipeline-meant-to-diversify-economy-away-from-us?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "Carney declared the pipeline a project of national interest, smoothening its way to a single federal regulatory review."
+    },
+    {
+      "title": "School protests spread as fires, blockades deepen unrest in France",
+      "url": "https://www.aljazeera.com/news/2026/10/1/school-protests-spread-as-fires-blockades-deepen-unrest-in-france?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "Police have detained hundreds as students protest overcrowded classrooms, teacher shortages and crumbling facilities."
+    },
+    {
+      "title": "Palestinian children in Israeli military detention",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/1/palestinian-children-in-israeli-military-detention?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "Palestinian children in Israeli military detention"
+    },
+    {
+      "title": "US Supreme Court agrees to take up Trump’s ICE detention policy",
+      "url": "https://www.aljazeera.com/news/2026/10/1/us-supreme-court-agrees-to-take-up-trumps-ice-detention-policy?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "The case is the latest dispute over US President Donald Trump’s sweeping immigration crackdown."
+    },
+    {
+      "title": "Renee Good’s family sues Trump administration over fatal ICE shooting",
+      "url": "https://www.aljazeera.com/news/2026/10/1/renee-goods-family-sues-trump-administration-over-fatal-ice-shooting?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "Lawsuits accuse Trump officials of recklessness and civil rights violations in Renee Good's fatal Minneapolis shooting ."
+    },
+    {
+      "title": "Despite praise and White House visits, Trump avoids endorsing Netanyahu",
+      "url": "https://www.aljazeera.com/news/2026/10/1/despite-praise-and-white-house-visits-trump-avoids-endorsing-netanyahu?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "In a Time interview, Trump avoids directly endorsing Netanyahu but defends him over reported October 7 warnings."
+    },
+    {
+      "title": "Death penalty bill for forest arsonists clears Algeria lower house",
+      "url": "https://www.aljazeera.com/news/2026/10/1/death-penalty-bill-for-forest-arsonists-clears-algeria-lower-house?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "Human rights organisations accused Algiers of using the law to target political opposition groups."
+    },
+    {
+      "title": "How AI is reshaping everyday life in China",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/1/how-ai-is-reshaping-everyday-life-in-china?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "How AI is reshaping everyday life in China"
+    },
+    {
+      "title": "Israel’s Supreme Court advises Arab party leader to drop election bid",
+      "url": "https://www.aljazeera.com/news/2026/10/1/israels-supreme-court-advises-arab-party-leader-to-drop-election-bid?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "Central Elections Committee voted last week to bar both main Arab lists and two candidates from parliamentary election."
+    },
+    {
       "title": "British police arrest UK-Iranian national over airbase incident",
       "url": "https://www.aljazeera.com/news/2026/10/1/british-police-arrest-uk-iranian-national-over-airbase-incident?traffic_source=rss",
       "date": "October 1, 2026",
-      "description": "This is a breaking news story."
+      "description": "Counter Terrorism police also questioned a UK national, days after five others were arrested and released on bail."
     },
     {
       "title": "Photos: Palestinians mourn more than 100 loved ones in mass Gaza funeral",
@@ -3642,7 +3733,7 @@
       "description": "Motive behind Flydubai incident still unclear, but Israeli PM is framing it within his warnings of threats to Israelis."
     },
     {
-      "title": "LIVE: Denmark vs Portugal – UEFA Nations League",
+      "title": "Denmark vs Portugal: LIVE – UEFA Nations League",
       "url": "https://www.aljazeera.com/sports/liveblog/2026/10/1/live-denmark-vs-portugal-uefa-nations-league-ronaldo?traffic_source=rss",
       "date": "October 1, 2026",
       "description": "Follow our build-up, predictions, team news, Ronaldo latest, line-ups, score and live text commentary stream."
@@ -3654,10 +3745,10 @@
       "description": "Probe finds spyware, hidden microphones and infected phones used to surveil journalists, activists, rights defenders."
     },
     {
-      "title": "Flydubai stabbing: How safe are planes if a pilot turns violent?",
+      "title": "Flydubai stabbing: What happens when a pilot turns violent mid-flight?",
       "url": "https://www.aljazeera.com/features/2026/10/1/flydubai-stabbing-how-safe-are-planes-if-a-pilot-turns-violent?traffic_source=rss",
       "date": "October 1, 2026",
-      "description": "Civil aviation changed after 9/11 to keep attackers outside cockpits. The Flydubai scare flips the dilemma."
+      "description": "Flydubai FZ1073 raises questions about cockpit security, pilot vetting and threats from inside the flight deck."
     },
     {
       "title": "Western militaries are undermining Ukraine’s defence, experts say",
@@ -3688,60 +3779,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/1/30-09-sv-india-palestine-protesters-mumbai-in?traffic_source=rss",
       "date": "October 1, 2026",
       "description": "Pro-Palestinian activists protested in Mumbai after police raided the home of a volunteer who took part in Gaza event."
-    },
-    {
-      "title": "Botswana at 60 challenges the story of postcolonial African failure",
-      "url": "https://www.aljazeera.com/opinions/2026/10/1/botswana-at-60-challenges-the-story-of-postcolonial-african-failure?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "Botswana showed that resource wealth need not condemn a country to corruption and underdevelopment."
-    },
-    {
-      "title": "Nigeria charges man accused of faking government agency",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/1/nigeria-charges-man-accused-of-faking-government-agency?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "What if you could invent a government agency and get the government to fund it?"
-    },
-    {
-      "title": "Zimbabwe businessman Wicknell Chivayo killed in helicopter crash",
-      "url": "https://www.aljazeera.com/news/2026/10/1/zimbabwe-businessman-wicknell-chivayo-killed-in-helicopter-crash?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "The high-profile businessman known for his political connections was one of six people killed in the crash."
-    },
-    {
-      "title": "Funeral held for DR Congo politician killed after defending Ebola response",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/1/funeral-held-for-dr-congo-politician-killed-after-defending-ebola-response?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "A funeral has been held for the politician who was killed in the Democratic Republic of the Congo."
-    },
-    {
-      "title": "How was the Flydubai co-pilot who attacked his captain cleared to fly?",
-      "url": "https://www.aljazeera.com/news/2026/10/1/how-was-the-flydubai-pilot-who-attacked-his-co-pilot-cleared-to-fly?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "The Flydubai scare has raised several questions for Israel and the civil aviation industry."
-    },
-    {
-      "title": "UAE investigates possible ‘terrorist’ link in attack on flight to Israel",
-      "url": "https://www.aljazeera.com/news/2026/10/1/uae-investigates-possible-terrorist-link-in-attack-on-flight-to-israel?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "Investigators will probe whether incident was linked to any 'terrorist activity or intent', UAE state media reports."
-    },
-    {
-      "title": "Carlos Queiroz quits as Ghana coach after AFCON qualifying defeats",
-      "url": "https://www.aljazeera.com/sports/2026/10/1/carlos-queiroz-quits-as-ghana-coach-after-afcon-qualifying-defeats?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "The Portuguese oversaw two defeats in the qualifying round for AFCON 2027 since taking the job again on September 2."
-    },
-    {
-      "title": "Jewish human rights barrister, 94, arrested for supporting Palestine Action",
-      "url": "https://www.aljazeera.com/news/2026/10/1/jewish-human-rights-barrister-94-arrested-for-supporting-palestine-action?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "Margaret Owen OBE, a celebrated human rights lawyer and friend of Ed Miliband’s late mother, talks to Al Jazeera."
-    },
-    {
-      "title": "Minaret of Indian mosque collapses during controversial demolition",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/1/01-10-clip-shahi-mosque-demolition-minaret-in?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "Video shows the moment the minaret of India’s 600-year-old Ujjain mosque collapsed during demolition work."
     }
   ]
 }
