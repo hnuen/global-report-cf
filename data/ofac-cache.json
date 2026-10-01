@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-01T15:08:37.673Z",
+  "updatedAt": "2026-10-01T17:08:29.547Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261001",
+      "code": "20261001",
+      "title": "Iran-related Designations and Designations Updates; Transnational Criminal Organizations Designation; Publication of Iran-related Determination; Publication of Amended Iran-related Frequently Asked Question",
+      "date": "October 01, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20260930",
       "code": "20260930",
@@ -54,12 +60,6 @@
       "code": "20260916",
       "title": "Russia-related Designations Removals; Counter Narcotics Designation Removal; Issuance of Amended Venezuela General License and Frequently Asked Question",
       "date": "September 16, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260914",
-      "code": "20260914",
-      "title": "Iran-related Designation; Issuance of Amended Venezuela-related General License and Frequently Asked Question",
-      "date": "September 14, 2026"
     }
   ],
   "civilPenalties": [
@@ -1009,33 +1009,37 @@
     "iran-sanctions": {
       "name": "Iran Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions",
-      "lastUpdated": "Sep 29, 2026",
+      "lastUpdated": "Oct 01, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
-          "citation": "91 FR 60304-26",
-          "description": "Publication of Iran-Related Web General Licenses Y and Z 91 FR 57795-26 - Publication of Iran-Related Web General Licenses CC and DD 91 FR 57511-26 - Iranian Transactions and Sanctions Regulations: Final Rule for General License Stay of Effectiveness 91 FR 55265-26 - Publication of a Determination I",
+          "citation": "91 FR 61759-26",
+          "description": "Iranian Transactions and Sanctions Regulations 91 FR 61758-26 - Publication of Iran-Related Web General Licenses X and X1 91 FR 60304-26 - Publication of Iran-Related Web General Licenses Y and Z 91 FR 57795-26 - Publication of Iran-Related Web General Licenses CC and DD 91 FR 57511-26 - Iranian Tra",
           "year": "2026",
           "glNumbers": []
         },
         {
           "citation": "91 FR 55265-26",
-          "description": "Publication of Iran-Related Web General Licenses AA and BB 91 FR 54957-26 - Amended Iranian Transactions and Sanctions Regulations 91 FR 35141-26 - Publication of Iran-Related Web General Licenses U and V 91 FR 24722-26 - Iranian Transactions and Sanctions Regulations Web General Licenses 90 FR 4723",
+          "description": "Publication of a Determination Issued Pursuant to Executive Order 13902. 91 FR 55265-26 - Publication of Iran-Related Web General Licenses AA and BB 91 FR 54957-26 - Amended Iranian Transactions and Sanctions Regulations 91 FR 35141-26 - Publication of Iran-Related Web General Licenses U and V 91 FR",
           "year": "2026",
-          "glNumbers": [
-            "90"
-          ]
+          "glNumbers": []
         },
         {
-          "citation": "90 FR 47229-25",
-          "description": "Publication of an Iran-Related Determination 90 FR 43559-25 - Publication of Iranian Transactions and Sanctions Regulations Web General License Q 89 FR 91262-24 - Publication of an Iran-Related Determination 89 FR 91261-24 - Publication of Covid-Related Web General License Related to Iranian Transac",
+          "citation": "90 FR 47230-25",
+          "description": "Publication of Iranian Transactions and Sanctions Regulations Web General License R 90 FR 47229-25 - Publication of an Iran-Related Determination 90 FR 43559-25 - Publication of Iranian Transactions and Sanctions Regulations Web General License Q 89 FR 91262-24 - Publication of an Iran-Related Deter",
           "year": "2025",
           "glNumbers": []
         },
         {
-          "citation": "89 FR 43512-24",
-          "description": "Publication of the List of Services, Software, and Hardware Incident to Communications 89 FR 43311-24 - Final Rule Amending the Iranian Transactions and Sanctions Regulations 88 FR 46688-23 - Publication of Iranian Transactions and Sanctions Regulations Web General License P 88 FR 45816-23 - Publica",
+          "citation": "89 FR 91261-24",
+          "description": "Publication of Covid-Related Web General License Related to Iranian Transactions and Sanctions Regulations and Global Terrorism Sanctions Regulations 89 FR 43512-24 - Publication of the List of Services, Software, and Hardware Incident to Communications 89 FR 43311-24 - Final Rule Amending the Irani",
           "year": "2024",
+          "glNumbers": []
+        },
+        {
+          "citation": "88 FR 46688-23",
+          "description": "Publication of Iranian Transactions and Sanctions Regulations Web General License P 88 FR 45816-23 - Publication of Covid-Related Web General Licenses Related to Syria Sanctions Regulations, Iranian Transactions and Sanctions Regulations, Global Terrorism Sanctions Regulations, and Venezuela Sanctio",
+          "year": "2023",
           "glNumbers": []
         },
         {
@@ -1129,12 +1133,6 @@
           "description": "Clarification of Policy with Respect to the Process for Issuing Certain TSRA Licenses 71 FR 53569-06 - Treasury Cuts Iran's Bank Saderat Off From U.S. Financial System 71 FR 48795-06 - Official Activities of Certain U.S. Organizations 71 FR 29251-06 - Revisions to IEEPA made by the Combating Terrori",
           "year": "2007",
           "glNumbers": []
-        },
-        {
-          "citation": "70 FR 15761-05",
-          "description": "Administrative Collection of Civil Penalties 70 FR 15583-05 - Broker-dealer amendment to ITR 69 FR 75468-04 - General License for Publishing Activities 69 FR 46090-04 - Implementation of Executive Order 13315 with Respect to Iraq; General License No. 1 68 FR 11741-03 - Authorization of Certain Human",
-          "year": "2005",
-          "glNumbers": []
         }
       ],
       "generalLicenses": [
@@ -1178,15 +1176,17 @@
           "date": "October 8, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48626/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "8A",
-          "title": "Iran General License 8A",
+          "title": "Authorizing Certain Humanitarian Trade Transactions Involving the Central Bank of Iran or the National Iranian Oil Company",
           "date": "February 27, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48841/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "Q",
@@ -1194,7 +1194,8 @@
           "date": "May 20, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934291/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "T",
@@ -2220,34 +2221,26 @@
     "transnational-criminal-organizations": {
       "name": "Transnational Criminal Organizations",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/transnational-criminal-organizations",
-      "lastUpdated": "Sep 30, 2026",
+      "lastUpdated": "Oct 01, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
-          "citation": "91 FR 2303-26",
-          "description": "Publication of Transnational Criminal Organizations Sanctions Regulations Web General License 1 87 FR 78484-22 - Publication of Humanitarian Sanctions Regulations Amendment and General Licenses (Nongovernmental Organizations, Agricultural, and Medicine) 87 FR 3207-22 - Amended Transnational Criminal",
+          "citation": "91 FR 61763-26",
+          "description": "Publication of Transnational Criminal Organizations Sanctions Regulations Web General License 2 91 FR 2303-26 - Publication of Transnational Criminal Organizations Sanctions Regulations Web General License 1 87 FR 78484-22 - Publication of Humanitarian Sanctions Regulations Amendment and General Lic",
           "year": "2026",
           "glNumbers": [
+            "2",
             "1"
           ]
         },
         {
-          "citation": "84 FR 35307-19",
-          "description": "Amendments to the Global Terrorism Sanctions Regulations (GTSR); Transnational Criminal Organizations Sanctions Regulations (TCOSR); and Hizballah Financial Sanctions Regulations (HFSR) Recent Actions regarding Transnational Criminal Organizations Counter Terrorism and Transnational Criminal Organiz",
-          "year": "2019",
+          "citation": "87 FR 3207-22",
+          "description": "Amended Transnational Criminal Organizations Sanctions Regulations 84 FR 35307-19 - Amendments to the Global Terrorism Sanctions Regulations (GTSR); Transnational Criminal Organizations Sanctions Regulations (TCOSR); and Hizballah Financial Sanctions Regulations (HFSR) Recent Actions regarding Trans",
+          "year": "2022",
           "glNumbers": []
         }
       ],
-      "generalLicenses": [
-        {
-          "number": "2",
-          "title": "TCO General License 2",
-          "date": "June 23, 2026",
-          "expires": "July 23, 2026",
-          "url": "https://ofac.treasury.gov/media/936216/download?inline",
-          "datePdf": true
-        }
-      ]
+      "generalLicenses": []
     },
     "ukraine-russia-related-sanctions": {
       "name": "Ukraine-/Russia-related Sanctions",
@@ -3071,12 +3064,6 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "Too early to say if Iran involved in Dubai-Tel Aviv flight attack, Israeli PM says",
-      "url": "https://www.bbc.co.uk/news/articles/cqgmrm7xd8wyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 1, 2026",
-      "description": "A pilot who stabbed another pilot on an Israel-bound plane is being investigated in Saudi Arabia, Benjamin Netanyahu says."
-    },
-    {
       "title": "Russian dissident Garry Kasparov says US warned him of danger to his life",
       "url": "https://www.bbc.co.uk/news/articles/c6y8z8kr5mk8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
@@ -3087,12 +3074,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cm74k417wpjxo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
       "description": "Chaos has surrounded the St Petersburg shows since the stadium said it had not agreed to host the rapper."
-    },
-    {
-      "title": "Russia launches largest attack on Ukraine energy infrastructure since spring",
-      "url": "https://www.bbc.co.uk/news/articles/ckjw5jx2l393o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 30, 2026",
-      "description": "In total 11 regions of the country were attacked overnight, with residential buildings and railways also targeted, the Ukrainian PM says."
     },
     {
       "title": "Rosenberg: Putin shows no sign of stopping the war as Russia doubles down on Ukraine",
@@ -3217,16 +3198,22 @@
   ],
   "regionsNews": [
     {
-      "title": "US death row inmate survives execution attempt after two lethal injections",
-      "url": "https://www.bbc.co.uk/news/articles/cq8r6rjdvlx6o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Tennessee halts executions after Christa Pike survives two lethal injection attempts",
+      "url": "https://www.bbc.co.uk/news/articles/cmn4540d4z87o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
-      "description": "Killer Christa Pike's lawyer says she is being given \"life-saving measures\" in hospital after two syringes of pentobarbital."
+      "description": "Pike had been on death row since she was convicted in 1996 for the murder of Colleen Slemmer."
     },
     {
-      "title": "What happened in failed execution of Christa Pike - and what next?",
+      "title": "What happened in the failed execution of Christa Pike - and what next?",
       "url": "https://www.bbc.co.uk/news/articles/ckge4eql4q7eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
       "description": "The convicted killer is in hospital in Tennessee after surviving two lethal injections, in a case that has raised many questions."
+    },
+    {
+      "title": "Netanyahu says flight attacker 'underwent Islamist radical indoctrination'",
+      "url": "https://www.bbc.co.uk/news/articles/crje8edqyej9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 1, 2026",
+      "description": "Israel's prime minister says the pilot who tried to take over the Flydubai plane clearly intended to \"down the plane\"."
     },
     {
       "title": "Japan raises permanent residency fee by 20 times",
@@ -3241,16 +3228,22 @@
       "description": "The president wants AI to be called super intelligence - or SI - the same initials used by Slovenian domains."
     },
     {
-      "title": "Michael Jordan's 1998 NBA finals jersey sells for more than £9m",
-      "url": "https://www.bbc.co.uk/sport/basketball/articles/cx5yly6p2nyvo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Renee Good: Family of US woman killed by ICE agent sues Trump officials",
+      "url": "https://www.bbc.co.uk/news/articles/cwly7y5gvxlmo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
-      "description": "A Michael Jordan jersey from his 'Last Dance' season sells for $12.3m, a record for a piece of Jordan memorabilia."
+      "description": "Lawyers for Good's family say US officials created \"an unprecedented environment for state sponsored violence\" in Minneapolis."
     },
     {
-      "title": "Explosions heard in Ethiopia's capital after drone flights banned",
-      "url": "https://www.bbc.co.uk/news/articles/c3vgygpqky9zo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Fires break out at French schools as students protest nationwide",
+      "url": "https://www.bbc.co.uk/news/articles/c6d080d1e3l4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
-      "description": "It comes a week after fighting erupted north of the capital between the army and a new alliance of armed groups."
+      "description": "The French government holds a crisis meeting as demonstrations grow and become violent in places."
+    },
+    {
+      "title": "Algeria introduces death penalty for arsonists after deadly wildfires",
+      "url": "https://www.bbc.co.uk/news/articles/cmge4exg44v5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 1, 2026",
+      "description": "It is estimated more than 200 people have died in blazes in the north-east of the country over the summer."
     },
     {
       "title": "Swiss glaciers suffer 'disastrous' year of ice loss, threatening water supplies",
@@ -3265,10 +3258,10 @@
       "description": "The member of K-pop band Winner was given a suspended prison sentence for repeated absences from his national service work."
     },
     {
-      "title": "Zimbabwe tycoon Wicknell Chivayo and wife killed in helicopter crash",
-      "url": "https://www.bbc.co.uk/news/articles/cr4gvg0yenl4o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Explosions heard in Ethiopia's capital after drone flights banned",
+      "url": "https://www.bbc.co.uk/news/articles/c3vgygpqky9zo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
-      "description": "Chivayo was known for his lavish lifestyle, close ties to African presidents and lucrative government contracts."
+      "description": "It comes a week after fighting erupted north of the capital between the army and a new alliance of armed groups."
     },
     {
       "title": "Cornell case highlights 'draining' maze for victims to report campus sex assaults",
@@ -3287,36 +3280,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c6rm9mnn0w3eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
       "description": "Gov Gavin Newsom called it a \"long overdue measure to protect young Californians\"."
-    },
-    {
-      "title": "Trekkers helicoptered off mountains as more deadly landslides hit Nepal",
-      "url": "https://www.bbc.co.uk/news/articles/c607l4l3vn0eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 30, 2026",
-      "description": "A month after mass catastrophic flooding, around 30 people have died in landslides and heavy rain."
-    },
-    {
-      "title": "Six smugglers jailed for manslaughter over worst Channel small boats disaster",
-      "url": "https://www.bbc.co.uk/news/articles/c6n8m33pn9djo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 30, 2026",
-      "description": "Thirty-one migrants died when their boat went down in November 2021. The trial found that the guilty men were part of two smuggling networks."
-    },
-    {
-      "title": "Last UK and US troops leave Iraq as anti-Islamic State mission ends",
-      "url": "https://www.bbc.co.uk/news/articles/c65ym1dyn92mo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 30, 2026",
-      "description": "The withdrawal of coalition forces, under a deal agreed two years ago, was a key demand of the Iraqi government."
-    },
-    {
-      "title": "Ethiopia fighting escalates in Tigray killing 52 civilians, medic tells the BBC",
-      "url": "https://www.bbc.co.uk/news/articles/c6grveejg1e2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 30, 2026",
-      "description": "The deadly fighting has also spread to neighbouring regions, stranding tourists in Lalibela."
-    },
-    {
-      "title": "Girl has multiple surgeries to control infections after strike in Gaza",
-      "url": "https://www.bbc.co.uk/news/videos/c8n5d0e0n6wdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 30, 2026",
-      "description": "Witnesses say Raseel's tent was hit by an Israeli helicopter strike. Israel’s military says it has no record of the attack."
     },
     {
       "title": "Africa's richest man launches Kenya oil refinery despite land protests",
@@ -3559,6 +3522,18 @@
       "description": "Demand for avocados is booming in India and local growers hope to grab more of the market."
     },
     {
+      "title": "'We must keep going' says charity hit by fuel prices",
+      "url": "https://www.bbc.co.uk/news/articles/cw1l6lq41gm6o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 1, 2026",
+      "description": "Both petrol and diesel prices have risen by a third or more in just the past seven months."
+    },
+    {
+      "title": "Is it time to ditch premium bonds?",
+      "url": "https://www.bbc.co.uk/news/videos/cmy5z5qx19pwo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 1, 2026",
+      "description": "Martin Lewis says though they are the UK's most popular form of savings, not everybody benefits from them. Martin explains who premium bonds are best for, and who they aren’t so good for."
+    },
+    {
       "title": "Pension tops £16,000 a year after 4.7% increase",
       "url": "https://www.bbc.co.uk/news/articles/crd686gw2lgjo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
@@ -3575,18 +3550,6 @@
       "url": "https://www.bbc.co.uk/news/articles/crm4rygl4m3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
       "description": "Household energy bills have risen again but there are ways to keep a lid on your expenditure."
-    },
-    {
-      "title": "Fuel prices leave people asking 'what can we do?'",
-      "url": "https://www.bbc.co.uk/news/articles/ck1l603qngyyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 1, 2026",
-      "description": "Record fuel prices across the country have left people in the South looking for ways to cope."
-    },
-    {
-      "title": "'We're still cold paying £300 a month energy bills'",
-      "url": "https://www.bbc.co.uk/news/articles/c9gk5v25xk5jo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 1, 2026",
-      "description": "Redditch residents say they are worried they will not be able to afford heating."
     },
     {
       "title": "My hometown shows that high streets have to change or die",
@@ -3619,6 +3582,12 @@
       "description": "Many younger people do not believe the state pension will exist when they are older"
     },
     {
+      "title": "Is it time to ditch premium bonds?",
+      "url": "https://www.bbc.co.uk/news/videos/cmy5z5qx19pwo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 1, 2026",
+      "description": "Martin Lewis says though they are the UK's most popular form of savings, not everybody benefits from them. Martin explains who premium bonds are best for, and who they aren’t so good for."
+    },
+    {
       "title": "The Bottom Line",
       "url": "https://www.bbc.co.uk/sounds/play/m00325cs?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
@@ -3637,10 +3606,70 @@
       "description": "Chorley businessman, Paul Bowen received a reply from Prime Minister Andy Burnham, after posting a video on social media about the closure of one of his shops due to the state of the high street."
     },
     {
-      "title": "How much is in your savings account?",
-      "url": "https://www.bbc.co.uk/news/videos/cqrm99we3rjxo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 28, 2026",
-      "description": "From £65 to $60,000 - we talk savings with people in East London's Brick Lane."
+      "title": "British police arrest UK-Iranian national over airbase incident",
+      "url": "https://www.aljazeera.com/news/2026/10/1/british-police-arrest-uk-iranian-national-over-airbase-incident?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "This is a breaking news story."
+    },
+    {
+      "title": "Photos: Palestinians mourn more than 100 loved ones in mass Gaza funeral",
+      "url": "https://www.aljazeera.com/gallery/2026/10/1/photos-palestinians-mourn-more-than-100-loved-ones-in-mass-gaza-funeral?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "The remains of 105 people were buried in the Sheikh Radwan cemetery, northwest of Gaza City."
+    },
+    {
+      "title": "Chinese hackers impersonated AI experts to target US policy minds",
+      "url": "https://www.aljazeera.com/economy/2026/10/1/chinese-hackers-impersonated-ai-experts-to-target-us-policy-minds?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "TA419 hackers used deceptive tactics to impersonate real figures, such as a former White House AI official."
+    },
+    {
+      "title": "Jerusalem Daily: Netanyahu calls flight incident another 9/11",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/1/jerusalem-daily-netanyahu-calls-flight-incident-another-9?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "Israeli officials claimed the Flydubai incident as a \"terror attack\", despite the airline’s ongoing investigation."
+    },
+    {
+      "title": "Who is Man City whistleblower Rui Pinto and what has become of him?",
+      "url": "https://www.aljazeera.com/sports/2026/10/1/who-is-man-city-whistleblower-rui-pinto-and-whats-happening-to-him?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "A look into the Portuguese whistleblower who played a key role in the Premier League's probe into City's inquiry."
+    },
+    {
+      "title": "Flydubai attack gives Netanyahu new security message ahead of Israel vote",
+      "url": "https://www.aljazeera.com/news/2026/10/1/flydubai-attack-gives-netanyahu-new-security-message-ahead-of-israel-vote?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "Motive behind Flydubai incident still unclear, but Israeli PM is framing it within his warnings of threats to Israelis."
+    },
+    {
+      "title": "LIVE: Denmark vs Portugal – UEFA Nations League",
+      "url": "https://www.aljazeera.com/sports/liveblog/2026/10/1/live-denmark-vs-portugal-uefa-nations-league-ronaldo?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "Follow our build-up, predictions, team news, Ronaldo latest, line-ups, score and live text commentary stream."
+    },
+    {
+      "title": "Moroccan intelligence uses surveillance to ‘silence’ journalists: Amnesty",
+      "url": "https://www.aljazeera.com/news/2026/10/1/moroccan-intelligence-uses-surveillance-to-silence-journalists-amnesty?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "Probe finds spyware, hidden microphones and infected phones used to surveil journalists, activists, rights defenders."
+    },
+    {
+      "title": "Flydubai stabbing: How safe are planes if a pilot turns violent?",
+      "url": "https://www.aljazeera.com/features/2026/10/1/flydubai-stabbing-how-safe-are-planes-if-a-pilot-turns-violent?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "Civil aviation changed after 9/11 to keep attackers outside cockpits. The Flydubai scare flips the dilemma."
+    },
+    {
+      "title": "Western militaries are undermining Ukraine’s defence, experts say",
+      "url": "https://www.aljazeera.com/news/2026/10/1/western-militaries-are-undermining-ukraines-defence-experts-say?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "A combination of rigid Western military attitudes and Kyiv's regulatory paralysis leaves fewer weapons at the front."
+    },
+    {
+      "title": "Sunday in Japan: A Ugandan asylum seeker turns to filmmaking",
+      "url": "https://www.aljazeera.com/video/witness/2026/10/1/sunday-in-japan-a-ugandan-asylum-seeker-turns-to-filmmaking?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "Facing deportation from Japan, a Ugandan filmmaker makes a samurai film inspired by his own life."
     },
     {
       "title": "HIV prevention drug hailed as breakthrough, but who gets access?",
@@ -3685,7 +3714,7 @@
       "description": "A funeral has been held for the politician who was killed in the Democratic Republic of the Congo."
     },
     {
-      "title": "How was the Flydubai pilot who attacked his co-pilot cleared to fly?",
+      "title": "How was the Flydubai co-pilot who attacked his captain cleared to fly?",
       "url": "https://www.aljazeera.com/news/2026/10/1/how-was-the-flydubai-pilot-who-attacked-his-co-pilot-cleared-to-fly?traffic_source=rss",
       "date": "October 1, 2026",
       "description": "The Flydubai scare has raised several questions for Israel and the civil aviation industry."
@@ -3713,72 +3742,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/1/01-10-clip-shahi-mosque-demolition-minaret-in?traffic_source=rss",
       "date": "October 1, 2026",
       "description": "Video shows the moment the minaret of India’s 600-year-old Ujjain mosque collapsed during demolition work."
-    },
-    {
-      "title": "Afghanistan says Pakistani airstrikes killed women and children",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/1/afghanistan-says-pakistani-airstrikes-killed-women-and-children?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "Afghan officials say at least nine women and children were killed and 11 people wounded by Pakistani air attacks."
-    },
-    {
-      "title": "Alex Eala loses Asian Games semifinal to China’s Wang Xiyu",
-      "url": "https://www.aljazeera.com/sports/2026/10/1/alex-eala-loses-asian-games-semifinal-to-chinas-wang-xiyu?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "World number 18 Eala was beaten 3-6, 6-3, 6-2 by 85th-ranked Xiyu, who will face compatriot Zhang Shuai in the final."
-    },
-    {
-      "title": "Christa Pike execution fails: What next when a lethal injection is botched?",
-      "url": "https://www.aljazeera.com/news/2026/10/1/christa-pike-execution-fails-what-next-when-a-lethal-injection-is-botched?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "Only woman on Tennessee 'death row' is in hospital after two injections failed to kill her."
-    },
-    {
-      "title": "How will investigation into Flydubai flight attack unfold?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/1/how-will-investigation-into-flydubai-flight-attack-unfold?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "Investigators are examining what happened inside the cockpit of Flydubai flight FZ1073 to Israel."
-    },
-    {
-      "title": "Iraq’s Kurdish forces look to a new era after US withdrawal",
-      "url": "https://www.aljazeera.com/news/2026/10/1/iraqs-kurdish-forces-look-to-a-new-era-after-us-withdrawal?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "Peshmerga unification seeks stability, overcoming party disputes to build a national force in Iraq's Kurdish landscape."
-    },
-    {
-      "title": "Turkish fans show support for Palestine at friendly fixture",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/1/01-10-sv-konyaspor-palestine-tifo-tr?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "Turkish football fans displayed pro-Palestinian tifos and banners."
-    },
-    {
-      "title": "Can Europe still compete with the US and China?",
-      "url": "https://www.aljazeera.com/video/counting-the-cost/2026/10/1/can-europe-still-compete-with-the-us-and-china?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "Europe faces growing pressure from the US and China as it struggles to stay competitive."
-    },
-    {
-      "title": "India to face Pakistan in Asian Games men’s cricket final",
-      "url": "https://www.aljazeera.com/sports/2026/10/1/india-to-face-pakistan-in-asian-games-mens-cricket-final?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "India defeated Sri Lanka by 124 runs in the semifinal to book their spot in a first-ever games clash with Pakistan."
-    },
-    {
-      "title": "Portugal coach responds after Ronaldo leaves camp",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/1/portugal-coach-responds-after-ronaldo-leaves-camp?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "Portugal coach Jorge Jesus said he stands by his decision not to play Cristiano Ronaldo after he left the team camp."
-    },
-    {
-      "title": "Why did Ronaldo leave Portugal’s training camp, and will he play again?",
-      "url": "https://www.aljazeera.com/sports/2026/10/1/why-did-ronaldo-leave-portugals-training-camp-and-will-he-play-again?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "Cristiano Ronaldo left after Portugal head coach Jorge Jesus held a news conference. Al Jazeera explains what happened."
-    },
-    {
-      "title": "Photos: Kashmir’s Dal Lake faces environmental and climate challenges",
-      "url": "https://www.aljazeera.com/gallery/2026/10/1/photos-kashmirs-dal-lake-faces-environmental-and-climate-challenges?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "Dal Lake’s fragile ecosystem is deteriorating amid pollution, unregulated construction and climate change in Kashmir."
     }
   ]
 }
