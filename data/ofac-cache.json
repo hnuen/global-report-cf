@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T19:08:55.068Z",
+  "updatedAt": "2026-10-01T21:08:25.210Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261001",
@@ -3074,7 +3074,7 @@
       "title": "Putin warns West that Russia is ready to use every weapon to protect Kaliningrad",
       "url": "https://www.bbc.co.uk/news/articles/cqg7k7v499jjo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
-      "description": "Vladimir Putin insists Moscow is \"not threatening anyone\" and merely responding to statements by Western leaders."
+      "description": "The Russian leader insists Moscow is \"not threatening anyone\" and is merely responding to statements by Western leaders."
     },
     {
       "title": "Russian dissident Garry Kasparov says US warned him of danger to his life",
@@ -3103,16 +3103,22 @@
   ],
   "ajNews": [
     {
-      "title": "UK PM Burnham says Iran likely behind RAF base incident: Is there evidence?",
-      "url": "https://www.aljazeera.com/news/2026/10/1/uk-pm-burnham-says-iran-likely-behind-raf-base-incident-is-there-evidence?traffic_source=rss",
+      "title": "Most Americans say US-Israel war on Iran not worth fighting: Poll",
+      "url": "https://www.aljazeera.com/news/2026/10/1/most-americans-say-us-israel-war-on-iran-not-worth-fighting-poll?traffic_source=rss",
       "date": "October 1, 2026",
-      "description": "UK, US and Israeli officials point to Iranian involvement but remain tight-lipped on details."
+      "description": "Nearly 70 percent of Americans say the US-Israeli war is not worth fighting, marking a significant spike since July."
     },
     {
-      "title": "Russian drone hits school in Ukraine’s Kyiv as Moscow presses air assault",
-      "url": "https://www.aljazeera.com/news/2026/10/1/russian-drone-hits-school-in-ukraines-kyiv-as-moscow-presses-air-assault?traffic_source=rss",
+      "title": "ICC ends contract with French insurer amid US sanctions threat",
+      "url": "https://www.aljazeera.com/economy/2026/10/1/icc-ends-contract-with-french-insurer-amid-us-sanctions-threat?traffic_source=rss",
       "date": "October 1, 2026",
-      "description": "Russian drone strikes hit a school in Kyiv and the main bridge, disrupting transport in the latest wave of attacks."
+      "description": "ICC and Axa terminate agreement amid mounting US criticism and looming financial restrictions on the court, FT reports."
+    },
+    {
+      "title": "Syria denies officials held ‘secret’ talks with Hezbollah in Turkiye",
+      "url": "https://www.aljazeera.com/news/2026/10/1/syria-denies-officials-held-secret-talks-with-hezbollah-in-turkiye?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "Six sources from Syria, the US and Lebanon told Reuters news agency the reported meeting aimed to calm tensions."
     }
   ],
   "occNews": [
@@ -3217,10 +3223,10 @@
   ],
   "regionsNews": [
     {
-      "title": "Christa Pike is in 'critical condition' after failed execution, her lawyers say",
+      "title": "Christa Pike in critical condition after surviving two lethal injections, lawyer says",
       "url": "https://www.bbc.co.uk/news/articles/cmn4540d4z87o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
-      "description": "Pike had been on death row since she was convicted in 1996 for the murder of Colleen Slemmer."
+      "description": "Pike’s lawyers have asked for her death sentence to be commuted following the botched execution."
     },
     {
       "title": "What happened in the failed execution of Christa Pike - and what next?",
@@ -3373,6 +3379,12 @@
       "description": "Indonesian lawmakers on Wednesday ordered the demolition of a controversial luxury compound inside a penitentiary near the capital."
     },
     {
+      "title": "What's gone wrong at Nike? How the world's sportswear giant lost its mojo",
+      "url": "https://www.bbc.co.uk/news/articles/c6je85jzk9y7o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 1, 2026",
+      "description": "Several self-inflicted mistakes have cost the biggest sportswear brand on the planet in recent years."
+    },
+    {
       "title": "UK in talks with EU partners to release strategic fuel reserves if needed, BBC understands",
       "url": "https://www.bbc.co.uk/news/articles/c5zjzjgdeneeo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
@@ -3391,16 +3403,16 @@
       "description": "The firm has apologised to the family."
     },
     {
-      "title": "AI boom could trigger market shocks, Bank of England boss warns",
-      "url": "https://www.bbc.co.uk/news/articles/cv8e30enrkxyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 1, 2026",
-      "description": "Andrew Bailey says the central bank is watching the waves of cash being invested in artificial intelligence \"very carefully\"."
-    },
-    {
       "title": "The AI telling farmers when to harvest",
       "url": "https://www.bbc.co.uk/news/articles/cgk53dkmyxko?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 30, 2026",
       "description": "Will farmers want AI tools to help judge when to pick fruit, or is their own intuition enough?"
+    },
+    {
+      "title": "AI boom could trigger market shocks, Bank of England boss warns",
+      "url": "https://www.bbc.co.uk/news/articles/cv8e30enrkxyo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 1, 2026",
+      "description": "Andrew Bailey says the central bank is watching the waves of cash being invested in artificial intelligence \"very carefully\"."
     },
     {
       "title": "Trump's AI rebrand causes 'unprecedented' demand for Slovenian website names",
@@ -3643,6 +3655,60 @@
       "description": "Chorley businessman, Paul Bowen received a reply from Prime Minister Andy Burnham, after posting a video on social media about the closure of one of his shops due to the state of the high street."
     },
     {
+      "title": "Funeral held for Palestinian man killed in the occupied West Bank",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/1/funeral-held-for-palestinian-man-killed-in-the-occupied-west-bank?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "Funeral held for Palestinian man killed in the occupied West Bank"
+    },
+    {
+      "title": "The filmmaker taking on Kenya’s colonised tea plantations",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/1/the-filmmaker-taking-on-kenyas-colonised-tea-plantations?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "The filmmaker taking on Kenya’s colonised tea plantations"
+    },
+    {
+      "title": "Eritrea severs diplomatic ties with Ethiopia in tit-for-tat move",
+      "url": "https://www.aljazeera.com/news/2026/10/1/eritrea-severs-diplomatic-ties-with-ethiopia-in-tit-for-tat-move?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "Ethiopia says it will shut its embassy in Asmara, declares 10 Eritrean diplomats persona non grata."
+    },
+    {
+      "title": "UK Parliament told answers on tax implications are needed in Manchester City ruling",
+      "url": "https://www.aljazeera.com/sports/2026/10/1/uk-parliament-told-tax-implication-answers-needed-in-manchester-city-ruling?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "HM Revenue and Customs (HMRC) has been contacted in the United Kingdom about Man City's financial breaches."
+    },
+    {
+      "title": "Who is Capt. Smit, Machchhar, the pilot of the Flydubai flight?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/1/who-is-capt-smit-machchhar-the-pilot-of-the-flydubai-flight?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "Captain Smit Machchhar from India is recovering from stab wounds he suffered in a Flydubai flight altercation."
+    },
+    {
+      "title": "Cornell rape allegations renew push to change New York sexual assault law",
+      "url": "https://www.aljazeera.com/editorial/2026/10/1/cornell-rape-allegations-renew-push-to-change-new-york-sexual-assault-law?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "New York law treats intoxicated victims differently depending on whether they willingly consumed alcohol or drugs."
+    },
+    {
+      "title": "What’s driving Israeli settler violence in the occupied West Bank?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/10/1/whats-driving-israeli-settler-violence-in-the-occupied-west-bank?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "Attacks on Palestinians in the area are growing at unprecedented levels."
+    },
+    {
+      "title": "After Red Sea losses, Yemen’s government forces hold the line",
+      "url": "https://www.aljazeera.com/news/2026/10/1/after-red-sea-losses-yemens-government-forces-hold-the-line?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "Air strikes and difficult terrain have prevented the Houthis from turning coastal gains into a wider breakthrough."
+    },
+    {
+      "title": "Saudi-led coalition says power station attacked in Medina, blames Houthis",
+      "url": "https://www.aljazeera.com/news/2026/10/1/saudi-led-coalition-says-power-station-attacked-in-medina-blames-houthis?traffic_source=rss",
+      "date": "October 1, 2026",
+      "description": "At the same time in Yemen, the Saudi-backed government army says it is inflicting heavy losses on the Houthis in Taiz."
+    },
+    {
       "title": "Canada to fast track oil pipeline meant to diversify economy away from US",
       "url": "https://www.aljazeera.com/economy/2026/10/1/canada-to-fast-track-oil-pipeline-meant-to-diversify-economy-away-from-us?traffic_source=rss",
       "date": "October 1, 2026",
@@ -3719,66 +3785,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/1/jerusalem-daily-netanyahu-calls-flight-incident-another-9?traffic_source=rss",
       "date": "October 1, 2026",
       "description": "Israeli officials claimed the Flydubai incident as a \"terror attack\", despite the airline’s ongoing investigation."
-    },
-    {
-      "title": "Who is Man City whistleblower Rui Pinto and what has become of him?",
-      "url": "https://www.aljazeera.com/sports/2026/10/1/who-is-man-city-whistleblower-rui-pinto-and-whats-happening-to-him?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "A look into the Portuguese whistleblower who played a key role in the Premier League's probe into City's inquiry."
-    },
-    {
-      "title": "Flydubai attack gives Netanyahu new security message ahead of Israel vote",
-      "url": "https://www.aljazeera.com/news/2026/10/1/flydubai-attack-gives-netanyahu-new-security-message-ahead-of-israel-vote?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "Motive behind Flydubai incident still unclear, but Israeli PM is framing it within his warnings of threats to Israelis."
-    },
-    {
-      "title": "Denmark vs Portugal: LIVE – UEFA Nations League",
-      "url": "https://www.aljazeera.com/sports/liveblog/2026/10/1/live-denmark-vs-portugal-uefa-nations-league-ronaldo?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "Follow our build-up, predictions, team news, Ronaldo latest, line-ups, score and live text commentary stream."
-    },
-    {
-      "title": "Moroccan intelligence uses surveillance to ‘silence’ journalists: Amnesty",
-      "url": "https://www.aljazeera.com/news/2026/10/1/moroccan-intelligence-uses-surveillance-to-silence-journalists-amnesty?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "Probe finds spyware, hidden microphones and infected phones used to surveil journalists, activists, rights defenders."
-    },
-    {
-      "title": "Flydubai stabbing: What happens when a pilot turns violent mid-flight?",
-      "url": "https://www.aljazeera.com/features/2026/10/1/flydubai-stabbing-how-safe-are-planes-if-a-pilot-turns-violent?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "Flydubai FZ1073 raises questions about cockpit security, pilot vetting and threats from inside the flight deck."
-    },
-    {
-      "title": "Western militaries are undermining Ukraine’s defence, experts say",
-      "url": "https://www.aljazeera.com/news/2026/10/1/western-militaries-are-undermining-ukraines-defence-experts-say?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "A combination of rigid Western military attitudes and Kyiv's regulatory paralysis leaves fewer weapons at the front."
-    },
-    {
-      "title": "Sunday in Japan: A Ugandan asylum seeker turns to filmmaking",
-      "url": "https://www.aljazeera.com/video/witness/2026/10/1/sunday-in-japan-a-ugandan-asylum-seeker-turns-to-filmmaking?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "Facing deportation from Japan, a Ugandan filmmaker makes a samurai film inspired by his own life."
-    },
-    {
-      "title": "HIV prevention drug hailed as breakthrough, but who gets access?",
-      "url": "https://www.aljazeera.com/news/2026/10/1/hiv-prevention-drug-hailed-as-breakthrough-but-who-gets-access?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "Lenacapavir, a twice-a-year injection could transform HIV prevention, but it will not be available to all."
-    },
-    {
-      "title": "Blasts heard in Addis Ababa as Ethiopia conflict widens in the north",
-      "url": "https://www.aljazeera.com/news/2026/10/1/blasts-heard-in-addis-ababa-as-ethiopia-conflict-widens-in-the-north?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "Thousands flee Mekelle amid advancing troops and disrupted services as tensions rise in Ethiopia's northern territories."
-    },
-    {
-      "title": "Activists protest Indian police raid over kite-flying event for Palestine",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/1/30-09-sv-india-palestine-protesters-mumbai-in?traffic_source=rss",
-      "date": "October 1, 2026",
-      "description": "Pro-Palestinian activists protested in Mumbai after police raided the home of a volunteer who took part in Gaza event."
     }
   ]
 }
