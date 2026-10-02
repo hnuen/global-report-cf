@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T13:08:21.097Z",
+  "updatedAt": "2026-10-02T15:08:24.713Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261001",
@@ -3103,6 +3103,12 @@
   ],
   "ajNews": [
     {
+      "title": "Ukraine calls for tighter sanctions as Russian attacks spark Kyiv gridlock",
+      "url": "https://www.aljazeera.com/news/2026/10/2/ukraine-calls-for-tighter-sanctions-as-russian-attacks-spark-kyiv-gridlock?traffic_source=rss",
+      "date": "October 2, 2026",
+      "description": "Closure of bridges struck by drones in Ukrainian capital causes traffic chaos."
+    },
+    {
       "title": "Explosions reported near military airport in Syria’s Idlib province",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/2/10-2-syria-explosion-clip?traffic_source=rss",
       "date": "October 2, 2026",
@@ -3113,18 +3119,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/2/new-aircraft-carrier-10000-us-troops-is-the-iran-war-about-to-escalate?traffic_source=rss",
       "date": "October 2, 2026",
       "description": "By the end of November, three US aircraft carriers and two amphibious landing groups will be positioned near Iran."
-    },
-    {
-      "title": "‘They are crying’: Refugees in Malaysia in fear amid Myanmar deportation",
-      "url": "https://www.aljazeera.com/features/2026/10/2/they-are-crying-refugees-in-malaysia-in-fear-amid-myanmar-deportation?traffic_source=rss",
-      "date": "October 2, 2026",
-      "description": "Shrinking resources for refugee support groups in Malaysia collide with increasing hostility towards the Rohingya."
-    },
-    {
-      "title": "Russia tries to freeze Ukraine as it suffers record casualties and retreats",
-      "url": "https://www.aljazeera.com/news/2026/10/2/russia-tries-to-freeze-ukraine-as-it-suffers-record-casualties-and-retreats?traffic_source=rss",
-      "date": "October 2, 2026",
-      "description": "Moscow has suffered further losses of occupied territory, but is using new drones to beat Ukraine's defences."
     }
   ],
   "occNews": [
@@ -3235,16 +3229,16 @@
       "description": "Capt Smit Machchhar tells Indian Prime Minister Narendra Modi he opened the cockpit door to let others in during the attack."
     },
     {
-      "title": "Christa Pike in critical condition after surviving two lethal injections, lawyer says",
-      "url": "https://www.bbc.co.uk/news/articles/cmn4540d4z87o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 2, 2026",
-      "description": "Pike’s lawyers have asked for her death sentence to be commuted following the botched execution."
-    },
-    {
-      "title": "'Ashamed': Cornell students gather to voice anger over alleged gang rape",
+      "title": "Cornell students gather to voice anger over alleged gang rape",
       "url": "https://www.bbc.co.uk/news/articles/cm0e3ed1er1yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 2, 2026",
       "description": "Students tell the BBC that the tension on campus has become palpable since allegations from 2024 resurfaced."
+    },
+    {
+      "title": "I've seen nearly 500 executions - but never one like Christa Pike's",
+      "url": "https://www.bbc.co.uk/news/articles/c6d949gq47x9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 2, 2026",
+      "description": "Texas reporter Michael Graczyk has seen botched executions in his time, but not one in which an inmate survived."
     },
     {
       "title": "Seoul warns 'further action' if Ukraine does not apologise over prisoner-of-war row",
@@ -3319,6 +3313,12 @@
       "description": "The member of K-pop band Winner was given a suspended prison sentence for repeated absences from his national service work."
     },
     {
+      "title": "School protests send shivers down French government's spine",
+      "url": "https://www.bbc.co.uk/news/articles/c69wzjjxex8po?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 2, 2026",
+      "description": "A movement that started nearly two weeks ago has spread, and in France young people on the streets spells trouble, writes Hugh Schofield."
+    },
+    {
       "title": "What happened in the failed execution of Christa Pike - and what next?",
       "url": "https://www.bbc.co.uk/news/articles/ckge4eql4q7eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 2, 2026",
@@ -3385,6 +3385,12 @@
       "description": "An aeroplane flying to Israel fell 17,000ft (5,200m) in less than two minutes before it was diverted."
     },
     {
+      "title": "US jobs market sees sharp slowdown ahead of midterm elections",
+      "url": "https://www.bbc.co.uk/news/articles/cm2d6gg0642yo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 2, 2026",
+      "description": "Unemployment rose slightly as American employers paused hiring with midterm elections just a month away."
+    },
+    {
       "title": "'It could cost me £10k but I need the money now': Why Gen Z are opting out of pensions",
       "url": "https://www.bbc.co.uk/news/articles/c68xk0ndqz8jo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
@@ -3403,16 +3409,28 @@
       "description": "The RAC says diesel price rises are showing no signs of slowing, \"heaping more misery\" onto drivers."
     },
     {
-      "title": "Crypto thieves attack man in home and threaten to kill pregnant wife's baby in 'horrific' robbery",
-      "url": "https://www.bbc.co.uk/news/articles/c6eq84eygz0qo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 1, 2026",
-      "description": "The man was beaten with hammers until he transferred hundreds of thousands of pounds of cryptocurrency."
-    },
-    {
       "title": "The wealthy Cuban Americans ready and waiting for Havana to fall",
       "url": "https://www.bbc.co.uk/news/articles/ckrerylrlg9vo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
       "description": "Cuban exiles in Florida are increasingly hopeful that regime change in Cuba is now on the horizon."
+    },
+    {
+      "title": "No more cereal at the end of the aisle? New rules in Scotland's supermarkets",
+      "url": "https://www.bbc.co.uk/news/articles/cmwyzye21463o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 2, 2026",
+      "description": "Restrictions are being put on products with high sugar, fat and salt content, but the meal deal lives on."
+    },
+    {
+      "title": "Why UK diesel prices have breached the £2 per litre mark",
+      "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 2, 2026",
+      "description": "The average price of a litre of diesel at the pump stands at an all-time high of 200.01p, according to the RAC motoring body."
+    },
+    {
+      "title": "Crypto thieves attack man in home and threaten to kill pregnant wife's baby in 'horrific' robbery",
+      "url": "https://www.bbc.co.uk/news/articles/c6eq84eygz0qo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 1, 2026",
+      "description": "The man was beaten with hammers until he transferred hundreds of thousands of pounds of cryptocurrency."
     },
     {
       "title": "OpenAI fires workers for 'mishandling sensitive information'",
@@ -3433,10 +3451,10 @@
       "description": "President Donald Trump has threatened to ban diesel exports in a bid to ease prices in the US ahead of the November elections."
     },
     {
-      "title": "HMRC urged to scrutinise tax implications of Man City case",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cjkg7g93y5yno?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Trump's AI rebrand causes 'unprecedented' demand for Slovenian website names",
+      "url": "https://www.bbc.co.uk/news/articles/cqx2z23xj555o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
-      "description": "The Treasury Committee, which is responsible for overseeing HMRC, has urged the body to scrutinise tax implications of the Manchester City verdict."
+      "description": "The president wants AI to be called super intelligence - or SI - the same initials used by Slovenian domains."
     },
     {
       "title": "AI boom could trigger market shocks, Bank of England boss warns",
@@ -3445,10 +3463,10 @@
       "description": "Andrew Bailey says the central bank is watching the waves of cash being invested in artificial intelligence \"very carefully\"."
     },
     {
-      "title": "Trump's AI rebrand causes 'unprecedented' demand for Slovenian website names",
-      "url": "https://www.bbc.co.uk/news/articles/cqx2z23xj555o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "HMRC urged to scrutinise tax implications of Man City case",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cjkg7g93y5yno?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
-      "description": "The president wants AI to be called super intelligence - or SI - the same initials used by Slovenian domains."
+      "description": "The Treasury Committee, which is responsible for overseeing HMRC, has urged the body to scrutinise tax implications of the Manchester City verdict."
     },
     {
       "title": "Vape tax comes into effect - but prices won't rise yet",
@@ -3515,12 +3533,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cmkg8dpwy25po?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
       "description": "The Kenya refinery is part of Dangote's ambitious bid to expand and help industralise Africa by 2030."
-    },
-    {
-      "title": "Faisal Islam: Triple lock move is significant, but it's a gamble",
-      "url": "https://www.bbc.co.uk/news/articles/cwp93d078j8no?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 29, 2026",
-      "description": "I had expected him to try to forge a political consensus on this thorny issue at this stage, but he has gone further than that."
     },
     {
       "title": "The AI telling farmers when to harvest",
@@ -3607,6 +3619,12 @@
       "description": "Demand for avocados is booming in India and local growers hope to grab more of the market."
     },
     {
+      "title": "Why UK diesel prices have breached the £2 per litre mark",
+      "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 2, 2026",
+      "description": "The average price of a litre of diesel at the pump stands at an all-time high of 200.01p, according to the RAC motoring body."
+    },
+    {
       "title": "New free repair shop to launch in Oxford",
       "url": "https://www.bbc.co.uk/news/articles/c574e41mg770o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 2, 2026",
@@ -3617,12 +3635,6 @@
       "url": "https://www.bbc.co.uk/news/videos/cmwyv44wvre9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 2, 2026",
       "description": "Growing fuel costs are leading to an increase in costs for charities and other businesses."
-    },
-    {
-      "title": "Why are minimum alcohol prices going up?",
-      "url": "https://www.bbc.co.uk/news/videos/cm2dwd97repyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 2, 2026",
-      "description": "The minimum price of alcohol (MUP) in Wales has risen by 30%."
     },
     {
       "title": "My hometown shows that high streets have to change or die",
@@ -3671,6 +3683,60 @@
       "url": "https://www.bbc.co.uk/news/videos/cmy5z5qx19pwo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
       "description": "Martin Lewis says though they are the UK's most popular form of savings, not everybody benefits from them. Martin explains who premium bonds are best for, and who they aren’t so good for."
+    },
+    {
+      "title": "Trump says Europe agrees to release ‘massive amount’ diesel stockpile",
+      "url": "https://www.aljazeera.com/news/2026/10/2/trump-says-europe-agrees-to-release-massive-amount-diesel-stockpile?traffic_source=rss",
+      "date": "October 2, 2026",
+      "description": "This is a breaking news story."
+    },
+    {
+      "title": "Ethiopia, Eritrea break ties: Does the conflict risk becoming regional war?",
+      "url": "https://www.aljazeera.com/news/2026/10/2/ethiopia-eritrea-break-ties-does-the-conflict-risk-becoming-regional-war?traffic_source=rss",
+      "date": "October 2, 2026",
+      "description": "Analysts warn unrest is likely to spill into neighbouring states and could further destabilise war-torn Sudan."
+    },
+    {
+      "title": "Can India’s ‘cockroach’ movement oust Modi’s election chief?",
+      "url": "https://www.aljazeera.com/features/2026/10/2/can-indias-cockroach-movement-oust-modis-election-chief?traffic_source=rss",
+      "date": "October 2, 2026",
+      "description": "India's youth protests return to streets, eyeing PM Modi's prized bureaucrat who oversees the world's biggest elections."
+    },
+    {
+      "title": "Man City lodge appeal after guilty finding in financial breach scandal",
+      "url": "https://www.aljazeera.com/sports/2026/10/2/manchester-city-appeal-premier-league-financial-ruling-england-fa?traffic_source=rss",
+      "date": "October 2, 2026",
+      "description": "The Abu Dhabi-controlled club has protested its innocence throughout the long-running case, which dates back to 2018."
+    },
+    {
+      "title": "Trump vs Europe as US presses for release of emergency diesel stocks",
+      "url": "https://www.aljazeera.com/news/2026/10/2/trump-vs-europe-as-us-presses-for-release-of-emergency-diesel-stocks?traffic_source=rss",
+      "date": "October 2, 2026",
+      "description": "Europe's leaders are mulling proposals to respond to Trump's diesel demands."
+    },
+    {
+      "title": "Wolf encounter: A photographer on what humans have lost",
+      "url": "https://www.aljazeera.com/features/longform/2026/10/2/wolf-encounter-a-photographer-on-what-humans-have-lost?traffic_source=rss",
+      "date": "October 2, 2026",
+      "description": "How a brush with the wild can expose what modern life no longer asks of us."
+    },
+    {
+      "title": "Protests shutter hundreds of French schools as violence flares",
+      "url": "https://www.aljazeera.com/news/2026/10/2/protests-shutter-hundreds-of-french-schools-as-violence-flares?traffic_source=rss",
+      "date": "October 2, 2026",
+      "description": "Education minister declares students 'in danger' as hundreds of injuries reported across the country."
+    },
+    {
+      "title": "Ebola death toll surpasses 4,000 as DR Congo struggles to suppress outbreak",
+      "url": "https://www.aljazeera.com/news/2026/10/2/ebola-death-toll-surpasses-4000-as-dr-congo-struggles-to-suppress-outbreak?traffic_source=rss",
+      "date": "October 2, 2026",
+      "description": "Burning of a Ebola-hit transit camp sends 19,000 fleeing, illustrating the difficulties of controlling epidemic."
+    },
+    {
+      "title": "Sea off Thai island turns green",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/2/10-2-thailand-plankton-sv-mp4?traffic_source=rss",
+      "date": "October 2, 2026",
+      "description": "The water off Thailand's Ko Lan island has turned a vibrant shade of green thanks to a plankton bloom."
     },
     {
       "title": "Moment mother bear slams into car to protect cub",
@@ -3749,54 +3815,6 @@
       "url": "https://www.aljazeera.com/opinions/2026/10/2/how-can-jordan-respond-to-israels-escalation-across-the-west-bank?traffic_source=rss",
       "date": "October 2, 2026",
       "description": "Settlement expansion, displacement and growing Israeli control would have direct consequences for Jordan."
-    },
-    {
-      "title": "NBA closes sole Africa training academy in blow to young players",
-      "url": "https://www.aljazeera.com/sports/2026/10/2/nba-closes-sole-africa-training-academy-in-blow-to-young-players?traffic_source=rss",
-      "date": "October 2, 2026",
-      "description": "NBA says its focus is on new global academy opening in Abu Dhabi as Africa, Mexico and Australia hit by closures."
-    },
-    {
-      "title": "Arab party leader forced to withdraw from Israeli elections",
-      "url": "https://www.aljazeera.com/news/2026/10/2/arab-party-leader-forced-to-withdraw-from-israeli-elections?traffic_source=rss",
-      "date": "October 2, 2026",
-      "description": "Palestinian participation in upcoming Knesset vote continues to shrink with withdrawal of Sami Abu Shehadeh."
-    },
-    {
-      "title": "Manchester City to launch appeal as financial breach fallout grows",
-      "url": "https://www.aljazeera.com/sports/2026/10/2/manchester-city-to-launch-deadline-appeal-as-financial-breach-fallout-grows?traffic_source=rss",
-      "date": "October 2, 2026",
-      "description": "Friday deadline looms as the legal fallout widens beyond the Premier League case over the alleged breaches."
-    },
-    {
-      "title": "Israeli court ruling a ‘new threshold’ in Palestinian suppression",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/2/10-2-ziad-abu-rish-israel-politics-qt-mp4?traffic_source=rss",
-      "date": "October 2, 2026",
-      "description": "Israel’s top court told Palestinian politician Sami Abu Shehadeh to withdraw from the election or face disqualification."
-    },
-    {
-      "title": "UK arrests British-Iranian suspect over RAF ‘plot’: What we know",
-      "url": "https://www.aljazeera.com/news/2026/10/2/uk-arrests-british-iranian-suspect-over-raf-plot-what-we-know?traffic_source=rss",
-      "date": "October 2, 2026",
-      "description": "Police investigate 'possible foreign state involvement' as sixth man arrested over RAF Fairford incident."
-    },
-    {
-      "title": "US delivers F-16V fighter jets to Taiwan as island eyes threat from China",
-      "url": "https://www.aljazeera.com/news/2026/10/2/us-delivers-f-16v-fighter-jets-to-taiwan-as-island-eyes-threat-from-china?traffic_source=rss",
-      "date": "October 2, 2026",
-      "description": "Amid threats from China, Taipai is growing concerned about the Trump administration's commitment to arming the island."
-    },
-    {
-      "title": "Indian police detain politicians at protests over election chief",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/2/02-10-clip-india-protests-election-jantar-mantar-in-mp4?traffic_source=rss",
-      "date": "October 2, 2026",
-      "description": "Police in New Delhi have detained opposition politicians and demonstrators during protests."
-    },
-    {
-      "title": "Lawyers for US inmate who survived lethal injections demand release",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/2/clip-christia-pike-execution-mp4?traffic_source=rss",
-      "date": "October 2, 2026",
-      "description": "Christa Pike is in critical condition after two failed attempts to execute her by lethal injection, her lawyer says."
     }
   ]
 }
