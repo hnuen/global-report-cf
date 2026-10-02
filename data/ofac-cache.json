@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T17:08:26.578Z",
+  "updatedAt": "2026-10-02T19:08:26.094Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261002",
@@ -2339,43 +2339,48 @@
         },
         {
           "number": "22",
-          "title": "Ukraine General License 22",
+          "title": "Authorizing the Exportation of Certain Services and Software Incident to Internet-Based Communications",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918706/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "23",
-          "title": "Ukraine General License 23",
+          "title": "Certain Transactions in Support of Nongovernmental Organizations’ Activities",
           "date": "March 11, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919151/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "24",
-          "title": "Ukraine General License 24",
+          "title": "Transactions Related to the Provision of Maritime Services",
           "date": "March 18, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919801/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "25",
-          "title": "Ukraine General License 25",
+          "title": "Journalistic Activities and Establishment of News Bureaus in Certain Regions of Ukraine",
           "date": "March 24, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/920276/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "26A",
-          "title": "Ukraine General License 26A",
+          "title": "Transactions Authorized Pursuant to the Russian Harmful Foreign Activities Sanctions Regulations",
           "date": "January 10, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/933911/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "134C",
@@ -3386,6 +3391,18 @@
       "description": "An aeroplane flying to Israel fell 17,000ft (5,200m) in less than two minutes before it was diverted."
     },
     {
+      "title": "G7 to release 100 million barrels of oil and diesel after Trump export ban threat",
+      "url": "https://www.bbc.co.uk/news/articles/ck87zg8jnwngo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 2, 2026",
+      "description": "The coordinated release is aimed at heading off further price spikes and avoiding a ban on US diesel exports."
+    },
+    {
+      "title": "UK diesel prices top £2 a litre for first time, RAC says",
+      "url": "https://www.bbc.co.uk/news/articles/crn8e86y5n0zo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 2, 2026",
+      "description": "The rise in global oil prices has been pushing up the pump prices of petrol and diesel in the UK."
+    },
+    {
       "title": "US jobs market sees sharp slowdown ahead of midterm elections",
       "url": "https://www.bbc.co.uk/news/articles/cm2d6gg0642yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 2, 2026",
@@ -3402,12 +3419,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c6je85jzk9y7o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
       "description": "Several self-inflicted mistakes have cost the biggest sportswear brand on the planet in recent years."
-    },
-    {
-      "title": "UK diesel prices top £2 a litre for first time, RAC says",
-      "url": "https://www.bbc.co.uk/news/articles/crn8e86y5n0zo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 2, 2026",
-      "description": "The rise in global oil prices has been pushing up the pump prices of petrol and diesel in the UK."
     },
     {
       "title": "The wealthy Cuban Americans ready and waiting for Havana to fall",
@@ -3698,6 +3709,36 @@
       "description": "Martin Lewis says though they are the UK's most popular form of savings, not everybody benefits from them. Martin explains who premium bonds are best for, and who they aren’t so good for."
     },
     {
+      "title": "Sudan’s army says it captured RSF stronghold in North Kordofan",
+      "url": "https://www.aljazeera.com/news/2026/10/2/sudans-army-says-it-captured-rsf-stronghold-in-north-kordofan?traffic_source=rss",
+      "date": "October 2, 2026",
+      "description": "Sudanese Armed Forces reportedly retake al-Mazroub, advancing the army's goal of cutting the RSF’s supply lines."
+    },
+    {
+      "title": "Israeli barrier cuts off water to West Bank Palestinians before elections",
+      "url": "https://www.aljazeera.com/news/2026/10/2/israeli-barrier-cuts-off-water-to-west-bank-palestinians-before-elections?traffic_source=rss",
+      "date": "October 2, 2026",
+      "description": "Residents of Ras al-Ahmar say Israeli restrictions have cut access to water, animal feed, healthcare."
+    },
+    {
+      "title": "Israel’s Supreme Court overturns election panel ban on Arab parties",
+      "url": "https://www.aljazeera.com/news/2026/10/2/israels-supreme-court-overturns-election-panel-ban-on-arab-parties?traffic_source=rss",
+      "date": "October 2, 2026",
+      "description": "Court reinstates two Arab lists and Jewish Knesset member Ofer Cassif as Balad leader withdraws after pressure."
+    },
+    {
+      "title": "‘I want the truth’: NY governor appoints prosecutor in Cornell rape case",
+      "url": "https://www.aljazeera.com/news/2026/10/2/i-want-the-truth-ny-governor-appoints-prosecutor-in-cornell-rape-case?traffic_source=rss",
+      "date": "October 2, 2026",
+      "description": "New York Governor Kathy Hochul says local authorities failed to properly investigate the 2024 allegations."
+    },
+    {
+      "title": "Jerusalem Daily: Who gets to run in Israel’s elections?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/2/jerusalem-daily-who-gets-to-run-in-israels-elections?traffic_source=rss",
+      "date": "October 2, 2026",
+      "description": "Palestinians in Israel are asking whether they will have a fair say in the upcoming Israeli elections."
+    },
+    {
       "title": "How the Banco Master scandal injected chaos into Brazil’s presidential race",
       "url": "https://www.aljazeera.com/features/longform/2026/10/2/how-the-banco-master-scandal-injected-chaos-into-brazils-presidential-race?traffic_source=rss",
       "date": "October 2, 2026",
@@ -3710,7 +3751,7 @@
       "description": "Taiwan’s Coast Guard used a water cannon to drive two Chinese fishing boats away from waters near the Dongsha Islands."
     },
     {
-      "title": "US job growth slows as unemployment rises before midterm elections",
+      "title": "US adds just 29,000 jobs as unemployment rises before midterm elections",
       "url": "https://www.aljazeera.com/economy/2026/10/2/us-job-growth-slows-as-unemployment-rises-before-midterm-elections?traffic_source=rss",
       "date": "October 2, 2026",
       "description": "The US economy added 29,000 jobs in September, with unemployment rising to 4.2 percent, according to Labor Department."
@@ -3722,7 +3763,7 @@
       "description": "World Food Programme warns of 'devastating' impact as conflict displaces thousands and cuts off food supplies."
     },
     {
-      "title": "Trump to name intelligence chief Clayton as AI tsar: Reports",
+      "title": "Trump to name intelligence chief Jay Clayton as AI tsar: Reports",
       "url": "https://www.aljazeera.com/news/2026/10/2/reports-trump-to-name-intel-chief-clayton-as-ai-tsar?traffic_source=rss",
       "date": "October 2, 2026",
       "description": "The possible selection comes amid increasing calls for the government to intervene in the rapidly developing technology."
@@ -3746,7 +3787,7 @@
       "description": "Both decrees to tackle housing affordability crisis shot down as critics say measures would tighten the housing market."
     },
     {
-      "title": "G7 announces oil reserve release, as Trump hails Europe diesel deal",
+      "title": "G7 to release 100m oil barrels as Trump hails Europe diesel deal",
       "url": "https://www.aljazeera.com/news/2026/10/2/trump-says-europe-agrees-to-release-massive-amount-diesel-stockpile?traffic_source=rss",
       "date": "October 2, 2026",
       "description": "Macron says G7 will release 100 million barrels over four months; diesel release to be 'frontloaded'."
@@ -3810,36 +3851,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/2/12-minutes-of-madness-how-flydubai-pilot-passengers-saved-plane-midfall?traffic_source=rss",
       "date": "October 2, 2026",
       "description": "As it plunged 17,000ft in under two minutes, a quick-thinking captain and passengers saved plane from crashing."
-    },
-    {
-      "title": "Ethiopian gov’t-aligned group claims close to full control of Tigray region",
-      "url": "https://www.aljazeera.com/news/2026/10/2/ethiopian-govt-aligned-group-claims-close-to-full-control-of-tigray-region?traffic_source=rss",
-      "date": "October 2, 2026",
-      "description": "Claim comes as violence flares across northern Ethiopia, deteriorating diplomatic, humanitarian situations."
-    },
-    {
-      "title": "Tunisia softens its ‘false news’ penalty. What really changed, and why now?",
-      "url": "https://www.aljazeera.com/news/2026/10/2/tunisia-softens-its-false-news-penalty-what-really-changed-and-why-now?traffic_source=rss",
-      "date": "October 2, 2026",
-      "description": "Fines replace jail terms for first-time 'false news' offences under a decree rights groups say is still repressive."
-    },
-    {
-      "title": "What’s behind France’s school protests?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/2/2-10-reported-natascha-paris-school-fr?traffic_source=rss",
-      "date": "October 2, 2026",
-      "description": "Many French schools are still closed as protests over learning conditions continue across the country."
-    },
-    {
-      "title": "Washington’s diplomacy in Sudan has backfired",
-      "url": "https://www.aljazeera.com/opinions/2026/10/2/washingtons-diplomacy-in-sudan-has-backfired?traffic_source=rss",
-      "date": "October 2, 2026",
-      "description": "Pressure meant to isolate Sudan’s army has instead left Washington isolated and a ceasefire further out of reach."
-    },
-    {
-      "title": "Support for Merz plunges after CDU’s losses to Germany’s right and left",
-      "url": "https://www.aljazeera.com/news/2026/10/2/just-one-in-10-germans-thinks-merz-is-up-to-the-job-after-election-wipeout?traffic_source=rss",
-      "date": "October 2, 2026",
-      "description": "Chancellor Friedrich Merz hits a record low approval rating after his party suffered defeats in three state elections."
     }
   ]
 }
