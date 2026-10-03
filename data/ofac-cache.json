@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T15:08:25.202Z",
+  "updatedAt": "2026-10-03T17:08:21.294Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261002",
@@ -3094,18 +3094,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/3/five-killed-as-kyiv-and-moscow-trade-strikes-russia-hits-second-bridge?traffic_source=rss",
       "date": "October 3, 2026",
       "description": "Russia has also attacked another key bridge in Kyiv, the second such strike in two days."
-    },
-    {
-      "title": "G7 to release 100 million barrels of oil and diesel, will it curb prices?",
-      "url": "https://www.aljazeera.com/news/2026/10/3/g7-to-release-100-million-barrels-of-oil-and-diesel-will-it-curb-prices?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "Global energy prices have soared due to the US and Israel's war on Iran and Russia's war on Ukraine."
-    },
-    {
-      "title": "Polls open in Latvia against backdrop of perceived Russia threat",
-      "url": "https://www.aljazeera.com/news/2026/10/3/latvians-head-to-polls-with-security-and-cost-of-living-in-focus?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "Latvia is not expected to shift its pro-Europe and pro-Ukraine trajectory, but coalition negotiations could be complex."
     }
   ],
   "occNews": [
@@ -3203,13 +3191,19 @@
   ],
   "regionsNews": [
     {
+      "title": "Tennessee prison chief to resign after Christa Pike's failed execution, governor says",
+      "url": "https://www.bbc.co.uk/news/articles/c8zxl62yzxzxo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 3, 2026",
+      "description": "Pike survived two lethal injections on Wednesday and is currently in critical condition in hospital."
+    },
+    {
       "title": "Flydubai co-pilot attacked captain with axe, UAE official says",
       "url": "https://www.bbc.co.uk/news/articles/c61wv7lgex13o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 3, 2026",
       "description": "The man accused of trying to take over the Israel-bound jet is named as Hamam al-Hammami by several media outlets."
     },
     {
-      "title": "Protesters across Spain demand action over housing crisis",
+      "title": "'Anger in the streets': Tens of thousands protest in Spain over housing crisis",
       "url": "https://www.bbc.co.uk/news/articles/cm2kej47095no?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 3, 2026",
       "description": "More than 50 protests are taking place on Saturday after the government failed to get emergency legislation through parliament."
@@ -3219,6 +3213,12 @@
       "url": "https://www.bbc.co.uk/news/articles/ck87zg8jnwngo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 3, 2026",
       "description": "The co-ordinated release is aimed at heading off further price spikes and avoiding a ban on US diesel exports."
+    },
+    {
+      "title": "Medical plane with 6 on board missing off Massachusetts coast",
+      "url": "https://www.bbc.co.uk/news/articles/cme3x85013llo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 3, 2026",
+      "description": "The aircraft lost communication with flight controllers after significantly dropping in altitude, according to flight data."
     },
     {
       "title": "Women given shorts at Oktoberfest to prevent upskirting",
@@ -3231,18 +3231,6 @@
       "url": "https://www.bbc.co.uk/news/videos/c3eweld0nddeo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 3, 2026",
       "description": "The Latin American country will vote for its next president, as Lula da Silva and Bolsonaro clash over sovereignty, security and ties with Washington."
-    },
-    {
-      "title": "Kim wins Asian Games gold to secure military exemption",
-      "url": "https://www.bbc.co.uk/sport/golf/articles/cmy0rn425k4xo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 3, 2026",
-      "description": "Golfer Tom Kim wins gold at the Asian Games to secure an exemption from mandatory service in South Korea's military."
-    },
-    {
-      "title": "US murderer Christa Pike unconscious and on ventilator after failed execution, lawyers say",
-      "url": "https://www.bbc.co.uk/news/articles/c3kgqw7zvz47o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 2, 2026",
-      "description": "As of Thursday night, Pike remained critically ill and is being treated at a hospital in Nashville, Tennessee."
     },
     {
       "title": "UK-Iranian dual national bailed after RAF Fairford incident arrest",
@@ -3263,10 +3251,16 @@
       "description": "A lawyer for Jane Doe says she is \"not doing well\" amid attempts to uncover her identity."
     },
     {
-      "title": "US road rage killer's sentence quashed because AI video of victim was shown in court",
-      "url": "https://www.bbc.co.uk/news/articles/cwgkvygg5nzvo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Kim wins Asian Games gold to secure military exemption",
+      "url": "https://www.bbc.co.uk/sport/golf/articles/cmy0rn425k4xo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 3, 2026",
+      "description": "Golfer Tom Kim wins gold at the Asian Games to secure an exemption from mandatory service in South Korea's military."
+    },
+    {
+      "title": "Seoul warns 'further action' if Ukraine does not apologise over prisoner-of-war row",
+      "url": "https://www.bbc.co.uk/news/articles/cm1dld14weero?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 2, 2026",
-      "description": "The Arizona appeals court ruled that airing an AI message from the dead victim \"crossed that line\"."
+      "description": "President Lee Jae Myung also accused Kyiv of \"attempting to provoke a war on the Korean Peninsula\"."
     },
     {
       "title": "Hawaii's iconic 550-year-old Hōlei Sea Arch collapses",
@@ -3275,10 +3269,10 @@
       "description": "The lava rock formation protruding from the rocky cliffs of Volcanoes National Park crumbled some time last weekend."
     },
     {
-      "title": "Seoul warns 'further action' if Ukraine does not apologise over prisoner-of-war row",
-      "url": "https://www.bbc.co.uk/news/articles/cm1dld14weero?at_medium=RSS&amp;at_campaign=rss",
+      "title": "US road rage killer's sentence quashed because AI video of victim was shown in court",
+      "url": "https://www.bbc.co.uk/news/articles/cwgkvygg5nzvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 2, 2026",
-      "description": "President Lee Jae Myung also accused Kyiv of \"attempting to provoke a war on the Korean Peninsula\"."
+      "description": "The Arizona appeals court ruled that airing an AI message from the dead victim \"crossed that line\"."
     },
     {
       "title": "Japan's first mayor to take maternity leave lands on TIME100 Next list",
@@ -3339,12 +3333,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cqx2z23xj555o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
       "description": "The president wants AI to be called super intelligence - or SI - the same initials used by Slovenian domains."
-    },
-    {
-      "title": "Japan raises permanent residency fee by 20 times",
-      "url": "https://www.bbc.co.uk/news/articles/c6y8z8xeg8j1o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 1, 2026",
-      "description": "The hikes are part of immigration policy changes introduced to manage Japan's growing foreign population."
     },
     {
       "title": "Could El Niño mean there are no Atlantic hurricanes this year?",
@@ -3761,6 +3749,42 @@
       "description": "Martin Lewis says though they are the UK's most popular form of savings, not everybody benefits from them. Martin explains who premium bonds are best for, and who they aren’t so good for."
     },
     {
+      "title": "Somalia won’t accept Israeli presence ‘under any circumstances’: President",
+      "url": "https://www.aljazeera.com/news/2026/10/3/somalia-wont-accept-israeli-presence-under-any-circumstances-president?traffic_source=rss",
+      "date": "October 3, 2026",
+      "description": "In exclusive Al Jazeera interview, President Hassan Sheikh Mohamud says Israel planning a naval base in Berbera."
+    },
+    {
+      "title": "Jerusalem Daily: UAE says Flydubai co-pilot attempted ‘terrorist’ attack",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/3/jerusalem-daily-uae-says-flydubai-co-pilot-attempted-terrorist-attack?traffic_source=rss",
+      "date": "October 3, 2026",
+      "description": "Jerusalem Daily: UAE says Flydubai co-pilot attempted ‘terrorist’ attack"
+    },
+    {
+      "title": "Israeli reporters’ ‘verbal attack’ cuts short Ireland press conference",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/3/israeli-reporters-verbal-attack-cuts-short-ireland-press-conference?traffic_source=rss",
+      "date": "October 3, 2026",
+      "description": "Israeli reporters’ ‘verbal attack’ cuts short Ireland press conference"
+    },
+    {
+      "title": "What we know about the co-pilot accused in Flydubai attack",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/3/what-we-know-about-the-co-pilot-accused-in-flydubai-attack?traffic_source=rss",
+      "date": "October 3, 2026",
+      "description": "The co-pilot accused of attacking a Flydubai captain has reportedly been identified as Hamam al-Hammami."
+    },
+    {
+      "title": "‘Bordering on angry’: The state of play as US midterms enter final month",
+      "url": "https://www.aljazeera.com/news/2026/10/3/bordering-on-angry-the-state-of-play-as-us-midterms-enter-final-month?traffic_source=rss",
+      "date": "October 3, 2026",
+      "description": "Democrats enter final stretch with surprisingly positive outlook as Republican money seeks to stem damage."
+    },
+    {
+      "title": "Tens of thousands protest in Spain after failed housing reforms",
+      "url": "https://www.aljazeera.com/news/2026/10/3/tens-of-thousands-protest-in-spain-after-failed-housing-reforms?traffic_source=rss",
+      "date": "October 3, 2026",
+      "description": "Latest demonstrations deepen a days-long crisis after parliament struck down two affordable housing decrees."
+    },
+    {
       "title": "At least 17 people, mostly pilgrims, killed in Kenya road crash",
       "url": "https://www.aljazeera.com/news/2026/10/3/at-least-17-people-mostly-pilgrims-killed-in-kenya-road-crash?traffic_source=rss",
       "date": "October 3, 2026",
@@ -3785,7 +3809,7 @@
       "description": "Kenyan survivors are challenging the UK military over decades of alleged abuses — and the immunity that has shielded it."
     },
     {
-      "title": "LIVE: Croatia vs England – UEFA Nations League",
+      "title": "Croatia vs England live: UEFA Nations League",
       "url": "https://www.aljazeera.com/sports/liveblog/2026/10/3/live-croatia-vs-england-uefa-nations-league?traffic_source=rss",
       "date": "October 3, 2026",
       "description": "Follow the updates, with build-up, predictions, team news and full match coverage, from our live text commentary stream."
@@ -3867,30 +3891,6 @@
       "url": "https://www.aljazeera.com/sports/2026/10/3/what-is-fc-barcelonas-negreira-case-and-what-are-the-charges?traffic_source=rss",
       "date": "October 3, 2026",
       "description": "Real Madrid accuse Barcelona of paying former refereeing official Jose Maria Enriquez Negreira between 2001 and 2018."
-    },
-    {
-      "title": "Red Bull’s Verstappen grabs pole position for Bahrain GP in Malaysia",
-      "url": "https://www.aljazeera.com/sports/2026/10/3/red-bulls-verstappen-grabs-pole-position-for-bahrain-gp-in-malaysia?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "Lewis Hamilton of Ferrari to start second on the grid in Sepang with Red Bull's ⁠Isack Hadjar third."
-    },
-    {
-      "title": "Who is the mystery co-pilot behind the Flydubai attack?",
-      "url": "https://www.aljazeera.com/news/2026/10/3/who-is-the-mystery-co-pilot-behind-the-flydubai-attack?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "Accused pilot Hamam al-Hammami reportedly barred from flying in Oman due to concerns over extremist views."
-    },
-    {
-      "title": "Yemen’s army claims over 1,500 Houthi casualties, attacks Sanaa",
-      "url": "https://www.aljazeera.com/news/2026/10/3/over-1500-houthi-casualties-in-past-24-hours-yemeni-army-says?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "Government forces close a key crossing connecting Houthi-held al-Houban to government-held Taiz city."
-    },
-    {
-      "title": "Turkish court detains football refereeing chief pending corruption trial",
-      "url": "https://www.aljazeera.com/sports/2026/10/3/turkish-court-detains-football-refereeing-chief-pending-corruption-trial?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "Seven officials face an investigation over allegations of manipulation of the referee administration process."
     }
   ]
 }
