@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T22:08:21.311Z",
+  "updatedAt": "2026-10-04T13:08:26.522Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261002",
@@ -3064,22 +3064,10 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "Russia hits second major bridge in Ukraine's capital Kyiv",
-      "url": "https://www.bbc.co.uk/news/articles/c83vqxzdg1yko?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 3, 2026",
-      "description": "The strike on the Pivnichnyi (Northern) Bridge comes after repeat attacks on another major bridge in Ukraine's capital."
-    },
-    {
-      "title": "Putin warns West that Russia is ready to use every weapon to protect Kaliningrad",
-      "url": "https://www.bbc.co.uk/news/articles/cqg7k7v499jjo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 1, 2026",
-      "description": "The Russian leader insists Moscow is \"not threatening anyone\" and is merely responding to statements by Western leaders."
-    },
-    {
-      "title": "Russian dissident Garry Kasparov says US warned him of danger to his life",
-      "url": "https://www.bbc.co.uk/news/articles/c6y8z8kr5mk8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 1, 2026",
-      "description": "\"My family and I will not truly be safe as long as Putin is in power,\" says the former chess world champion."
+      "title": "Kyiv bridge hit in further Russian drone attack as German chancellor makes surprise visit",
+      "url": "https://www.bbc.co.uk/news/articles/ckreyjzzzywqo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 4, 2026",
+      "description": "Footage shows a drone hitting the Pivnichyi (Northern) Bridge as vehicles move across it, creating a large fireball."
     },
     {
       "title": "PM warned Rosebank oil field could breach West Bank sanctions",
@@ -3088,7 +3076,32 @@
       "description": "Campaigners and Green Party leader Zack Polanski raise concerns about Rosebank's ties to an Israeli firm."
     }
   ],
-  "ajNews": [],
+  "ajNews": [
+    {
+      "title": "Russia hits Kyiv bridge as Germany’s Merz visits Ukraine’s capital",
+      "url": "https://www.aljazeera.com/news/2026/10/4/russian-strike-hits-kyiv-bridge-as-german-chancellor-visits-ukraine?traffic_source=rss",
+      "date": "October 4, 2026",
+      "description": "German chancellor visits Kyiv amid air raid sirens, pledging strong support as Russian strikes disrupt the capital."
+    },
+    {
+      "title": "Iran says Hormuz to remain closed until US meets conditions",
+      "url": "https://www.aljazeera.com/news/2026/10/4/iran-says-strait-of-hormuz-to-remain-closed-until-us-meets-conditions?traffic_source=rss",
+      "date": "October 4, 2026",
+      "description": "Tehran says reopening Strait of Hormuz has been its main goal, while the US continues to focus on nuclear talks."
+    },
+    {
+      "title": "Russia’s nuclear plants are ageing. Who will pay to dismantle them?",
+      "url": "https://www.aljazeera.com/opinions/2026/10/4/russias-nuclear-plants-are-ageing-who-will-pay-to-dismantle-them?traffic_source=rss",
+      "date": "October 4, 2026",
+      "description": "Moscow faces a huge decommissioning bill at home even as it expands its nuclear industry abroad."
+    },
+    {
+      "title": "Sabalenka, Rybakina handed shock defeats at China Open tennis",
+      "url": "https://www.aljazeera.com/sports/2026/10/4/sabalenka-rybakina-handed-shock-defeats-at-china-open-tennis?traffic_source=rss",
+      "date": "October 4, 2026",
+      "description": "The Belarusian’s exit follows top seed Rybakina losing to unseeded Charaeva in her first match as world number one."
+    }
+  ],
   "occNews": [
     {
       "title": "OCC Announces Enforcement Actions for September 2026",
@@ -3184,46 +3197,46 @@
   ],
   "regionsNews": [
     {
+      "title": "Australia investigating Flydubai co-pilot's links to country",
+      "url": "https://www.bbc.co.uk/news/articles/cxly4nym57q9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 4, 2026",
+      "description": "State police and the country's security agency are looking into the co-pilot, who attempted to take control of a Flydubai plane travelling to Israel."
+    },
+    {
       "title": "Tennessee prison chief to resign after Christa Pike's failed execution",
       "url": "https://www.bbc.co.uk/news/articles/c8zxl62yzxzxo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 3, 2026",
       "description": "Pike's lawyers said the failure \"goes far beyond any one person\". Pike is in critical condition after surviving two lethal injections."
     },
     {
-      "title": "Flydubai co-pilot attacked captain with axe, UAE official says",
-      "url": "https://www.bbc.co.uk/news/articles/c61wv7lgex13o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 3, 2026",
-      "description": "The man accused of trying to take over the Israel-bound jet is named as Hamam al-Hammami by several media outlets."
+      "title": "Cornell president says university 'must do better' after frat house rape allegations",
+      "url": "https://www.bbc.co.uk/news/articles/ckly0leelnz4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 4, 2026",
+      "description": "Michael Kotlikoff described the allegations of a woman who says she was drugged and gang raped as \"deeply disturbing\"."
     },
     {
       "title": "'Anger in the streets': Tens of thousands protest in Spain over housing crisis",
       "url": "https://www.bbc.co.uk/news/articles/cm2kej47095no?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 3, 2026",
+      "date": "October 4, 2026",
       "description": "More than 50 protests took place on Saturday after the government failed to get emergency legislation through parliament."
     },
     {
-      "title": "G7 to release millions of barrels of oil and diesel after Trump threat",
-      "url": "https://www.bbc.co.uk/news/articles/ck87zg8jnwngo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 3, 2026",
-      "description": "The co-ordinated release is aimed at heading off further price spikes and avoiding a ban on US diesel exports."
+      "title": "What to know about Brazil's election pitting Lula against Flávio Bolsonaro",
+      "url": "https://www.bbc.co.uk/news/articles/c6wyz0r2n0djo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 4, 2026",
+      "description": "Polls suggest the election will be a closely run contest between the left-wing incumbent and his right-wing rival."
     },
     {
-      "title": "Medical plane with 6 on board missing off Massachusetts coast",
+      "title": "Debris found from plane that went missing off US coast",
       "url": "https://www.bbc.co.uk/news/articles/cme3x85013llo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 3, 2026",
+      "date": "October 4, 2026",
       "description": "The aircraft lost communication with flight controllers after significantly dropping in altitude, according to flight data."
     },
     {
-      "title": "Women given shorts at Oktoberfest to prevent upskirting",
-      "url": "https://www.bbc.co.uk/news/articles/cjwyzyqvx1zxo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 2, 2026",
-      "description": "The step at the Munich festival comes after thousands of voyeuristic videos emerged on social media."
-    },
-    {
-      "title": "Why has Brazil accused the US of election interference?",
-      "url": "https://www.bbc.co.uk/news/videos/c3eweld0nddeo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "US father and son arrested after 'gas station heroin' deaths",
+      "url": "https://www.bbc.co.uk/news/articles/c6qjnlk4r2jjo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 3, 2026",
-      "description": "The Latin American country will vote for its next president, as Lula da Silva and Bolsonaro clash over sovereignty, security and ties with Washington."
+      "description": "They are accused of selling at least one student derivatives of kratom, often called \"gas station heroin\" in the US."
     },
     {
       "title": "UK-Iranian dual national bailed after RAF Fairford incident arrest",
@@ -3232,16 +3245,16 @@
       "description": "The 25-year-old man was arrested in the London borough of Westminster on Thursday."
     },
     {
+      "title": "G7 to release millions of barrels of oil and diesel after Trump threat",
+      "url": "https://www.bbc.co.uk/news/articles/ck87zg8jnwngo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 3, 2026",
+      "description": "The co-ordinated release is aimed at heading off further price spikes and avoiding a ban on US diesel exports."
+    },
+    {
       "title": "Riot police clash with students as education protests rage in France",
       "url": "https://www.bbc.co.uk/news/articles/ck3r5dxxwqzpo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 2, 2026",
       "description": "About 735 schools have faced disruption as violent protests over standards and lack of teachers continue."
-    },
-    {
-      "title": "Cornell frat house rape accuser 'under siege' online, says lawyer",
-      "url": "https://www.bbc.co.uk/news/articles/c6ly0ljypzrdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 3, 2026",
-      "description": "A lawyer for Jane Doe says she is \"not doing well\" amid attempts to uncover her identity."
     },
     {
       "title": "Kim wins Asian Games gold to secure military exemption",
@@ -3250,82 +3263,16 @@
       "description": "Golfer Tom Kim wins gold at the Asian Games to secure an exemption from mandatory service in South Korea's military."
     },
     {
-      "title": "Seoul warns 'further action' if Ukraine does not apologise over prisoner-of-war row",
-      "url": "https://www.bbc.co.uk/news/articles/cm1dld14weero?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 2, 2026",
-      "description": "President Lee Jae Myung also accused Kyiv of \"attempting to provoke a war on the Korean Peninsula\"."
+      "title": "Why Canada is preparing for a (long shot) US invasion",
+      "url": "https://www.bbc.co.uk/news/articles/c9m2mjj3yvg4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 3, 2026",
+      "description": "Prime Minister Mark Carney has said the military is running scenarios in the unlikely case the US invades Canada."
     },
     {
-      "title": "Hawaii's iconic 550-year-old Hōlei Sea Arch collapses",
-      "url": "https://www.bbc.co.uk/news/articles/crd6dy4xepgyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 2, 2026",
-      "description": "The lava rock formation protruding from the rocky cliffs of Volcanoes National Park crumbled some time last weekend."
-    },
-    {
-      "title": "US road rage killer's sentence quashed because AI video of victim was shown in court",
-      "url": "https://www.bbc.co.uk/news/articles/cwgkvygg5nzvo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 2, 2026",
-      "description": "The Arizona appeals court ruled that airing an AI message from the dead victim \"crossed that line\"."
-    },
-    {
-      "title": "Japan's first mayor to take maternity leave lands on TIME100 Next list",
-      "url": "https://www.bbc.co.uk/news/articles/cqj3d3d37nxgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 2, 2026",
-      "description": "Shoko Kawata's maternity leave drew mixed reactions in Japan, a country struggling to lift birth rates."
-    },
-    {
-      "title": "'I was not going to let others die' - pilot of Flydubai flight describes cockpit attack by co-pilot",
-      "url": "https://www.bbc.co.uk/news/articles/c639m98gde00o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 2, 2026",
-      "description": "Capt Smit Machchhar tells Indian Prime Minister Narendra Modi he opened the cockpit door to let others in during the attack."
-    },
-    {
-      "title": "OpenAI fires workers for 'mishandling sensitive information'",
-      "url": "https://www.bbc.co.uk/news/articles/c6y9z9r4ejzwo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 2, 2026",
-      "description": "The former employees were investigated for sharing data with an outside AI evaluation group."
-    },
-    {
-      "title": "Netanyahu says Flydubai attacker had 'Islamist radical indoctrination'",
-      "url": "https://www.bbc.co.uk/news/articles/crje8edqyej9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 1, 2026",
-      "description": "Israel's prime minister says the pilot who tried to take over the Flydubai plane clearly intended to \"down the plane\"."
-    },
-    {
-      "title": "Ethiopia and Eritrea cut diplomatic ties as northern conflict escalates",
-      "url": "https://www.bbc.co.uk/news/articles/crpd0d0jl0y0o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 2, 2026",
-      "description": "The diplomatic fallout comes as Ethiopian forces battle rebel fighters across its northern region."
-    },
-    {
-      "title": "Australia says platforms like Steam and Roblox have 'significant' child safety gaps",
-      "url": "https://www.bbc.co.uk/news/articles/cjvgygzzy6lro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 2, 2026",
-      "description": "Fortnite and Minecraft also told to 'lift their game' by online safety regulator."
-    },
-    {
-      "title": "Algeria introduces death penalty for arsonists after deadly wildfires",
-      "url": "https://www.bbc.co.uk/news/articles/cmge4exg44v5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 1, 2026",
-      "description": "It is estimated more than 200 people have died in blazes in the north-east of the country over the summer."
-    },
-    {
-      "title": "Renee Good: Family of US woman killed by ICE agent sues Trump officials",
-      "url": "https://www.bbc.co.uk/news/articles/cwly7y5gvxlmo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 1, 2026",
-      "description": "Lawyers for Good's family say US officials created \"an unprecedented environment for state sponsored violence\" in Minneapolis."
-    },
-    {
-      "title": "Explosions heard in Ethiopia's capital after drone flights banned",
-      "url": "https://www.bbc.co.uk/news/articles/c3vgygpqky9zo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 1, 2026",
-      "description": "It comes a week after fighting erupted north of the capital between the army and a new alliance of armed groups."
-    },
-    {
-      "title": "Trump's AI rebrand causes 'unprecedented' demand for Slovenian website names",
-      "url": "https://www.bbc.co.uk/news/articles/cqx2z23xj555o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 1, 2026",
-      "description": "The president wants AI to be called super intelligence - or SI - the same initials used by Slovenian domains."
+      "title": "Why pastors may not be seen - or heard - preaching on Ghana's buses for much longer",
+      "url": "https://www.bbc.co.uk/news/articles/cwnvln99v2ygo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 3, 2026",
+      "description": "Ghana is a predominantly Christian country where preaching on public transport is widespread."
     },
     {
       "title": "Could El Niño mean there are no Atlantic hurricanes this year?",
@@ -3340,46 +3287,16 @@
       "description": "Wang Cong dismisses critics who say she is not deserving of facing Natalia Silva for the flyweight world title at UFC 332 on Saturday."
     },
     {
-      "title": "EV drivers love their cars, but some passengers feel sick - this could be why",
-      "url": "https://www.bbc.co.uk/news/articles/c3y0zx822wlzo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Rare tornado whips through small Australian town",
+      "url": "https://www.bbc.co.uk/news/videos/c69qzvggzppro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 4, 2026",
+      "description": "The twister was caught on camera in Ulladulla, New South Wales, damaging property and downing trees."
+    },
+    {
+      "title": "Why has Brazil accused the US of election interference?",
+      "url": "https://www.bbc.co.uk/news/videos/c3eweld0nddeo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 3, 2026",
-      "description": "Research shows there are several reasons people might experience motion sickness in electric vehicles."
-    },
-    {
-      "title": "The South African men trying to end violence against women: 'Every man needs to play a part'",
-      "url": "https://www.bbc.co.uk/news/articles/cm3eqegwpzl4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 2, 2026",
-      "description": "The discovery of 12 women's bodies near Johannesburg has again highlighted South Africa's problem with violence against women."
-    },
-    {
-      "title": "The vanishing world of India's street magicians",
-      "url": "https://www.bbc.co.uk/news/articles/ck7v4v8pmzdeo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 2, 2026",
-      "description": "India's street performers are struggling to survive as audiences shrink and public spaces become harder to access."
-    },
-    {
-      "title": "I've seen nearly 500 executions - but never one like Christa Pike's",
-      "url": "https://www.bbc.co.uk/news/articles/c6d949gq47x9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 2, 2026",
-      "description": "Texas reporter Michael Graczyk has seen botched executions in his time, but not one in which an inmate survived."
-    },
-    {
-      "title": "School protests send shivers down French government's spine",
-      "url": "https://www.bbc.co.uk/news/articles/c69wzjjxex8po?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 2, 2026",
-      "description": "A movement that started nearly two weeks ago has spread, and in France young people on the streets spells trouble, writes Hugh Schofield."
-    },
-    {
-      "title": "Spain and China are cosying up - to the anger of many in the EU",
-      "url": "https://www.bbc.co.uk/news/articles/c6vgyg824m02o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 1, 2026",
-      "description": "Amid global tumult, the two countries' alliance is not the only unlikely pairing."
-    },
-    {
-      "title": "The wealthy Cuban Americans ready and waiting for Havana to fall",
-      "url": "https://www.bbc.co.uk/news/articles/ckrerylrlg9vo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 1, 2026",
-      "description": "Cuban exiles in Florida are increasingly hopeful that regime change in Cuba is now on the horizon."
+      "description": "The Latin American country will vote for its next president, as Lula da Silva and Bolsonaro clash over sovereignty, security and ties with Washington."
     },
     {
       "title": "Will Spain's housing crisis lead to a snap election?",
@@ -3398,24 +3315,6 @@
       "url": "https://www.bbc.co.uk/news/videos/c54g1e3yxv0ko?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 2, 2026",
       "description": "The death penalty is back in the news after Christa Pike survived two lethal injection attempts in Tennessee - but how widely used is it in the US?"
-    },
-    {
-      "title": "Watch: Why students in France are protesting",
-      "url": "https://www.bbc.co.uk/news/videos/cr5ynddn318eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 2, 2026",
-      "description": "Demonstrations started in the French capital, then spread across the country in the days that followed."
-    },
-    {
-      "title": "Watch: Emotional pilot recounts moment of Flydubai attack",
-      "url": "https://www.bbc.co.uk/news/videos/c914d43y7xn4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 2, 2026",
-      "description": "He has been hailed a hero for opening the cockpit door, allowing passengers to overpower his co-pilot."
-    },
-    {
-      "title": "What we know about Christa Pike’s condition after failed execution",
-      "url": "https://www.bbc.co.uk/news/videos/cwe8e82jgm8po?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 1, 2026",
-      "description": "The BBC’s Ione Wells reports from outside the Tennessee hospital where Pike is said to have arrived Wednesday night after surviving two lethal injection attempts."
     },
     {
       "title": "G7 to release millions of barrels of oil and diesel after Trump threat",
@@ -3742,154 +3641,130 @@
       "description": "Martin Lewis says though they are the UK's most popular form of savings, not everybody benefits from them. Martin explains who premium bonds are best for, and who they aren’t so good for."
     },
     {
-      "title": "Israeli settlers attack Palestinian farmers during olive harvest",
-      "url": "https://www.aljazeera.com/video/2026/10/3/israeli-settlers-attack-palestinian-farmers-during-olive-harvest-2?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "Israeli settlers attack Palestinian farmers during olive harvest"
+      "title": "Did the fall of al-Andalus reshape Europe forever?",
+      "url": "https://www.aljazeera.com/video/deja-vu-2/2026/10/4/did-the-fall-of-al-andalus-reshape-europe-forever?traffic_source=rss",
+      "date": "October 4, 2026",
+      "description": "Deja Vu traces Europe’s Muslim history from Al-Andalus to today. Why are Muslims still treated as outsiders?"
     },
     {
-      "title": "Fernandes denies Portugal rift, hails Ronaldo after walk out",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/3/fernandes-denies-portugal-rift-hails-ronaldo-after-walk-out?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "Bruno Fernandes says he has spoken to Cristiano Ronaldo and denies a rift within Portugal’s squad."
+      "title": "Amid teen triumph and organisational chaos, Asian Games close in Japan",
+      "url": "https://www.aljazeera.com/sports/2026/10/4/amid-teen-triumph-and-organisational-chaos-asian-games-close-in-japan?traffic_source=rss",
+      "date": "October 4, 2026",
+      "description": "The continental competition hosted 17,000 athletes over two weeks in Aichi-Nagoya."
     },
     {
-      "title": "Trump ramps up pressure on US Republicans to end US clock switching",
-      "url": "https://www.aljazeera.com/news/2026/10/3/trump-ramps-up-pressure-on-us-republicans-to-end-us-clock-switching?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "The US president published a lawmaker's cell phone number as he called for the passage of a bill making DST permanent."
+      "title": "Yemen’s leader announces military operation to retake Houthi-held territory",
+      "url": "https://www.aljazeera.com/news/2026/10/4/yemens-leader-announces-military-operation-to-retake-houthi-held-territory?traffic_source=rss",
+      "date": "October 4, 2026",
+      "description": "Rashad al-Alimi says the campaign aims to restore state authority throughout Yemen."
     },
     {
-      "title": "Funeral held at Gaza church for mother and daughter killed in Gaza strike",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/3/funeral-held-at-gaza-church-for-mother-and-daughter-killed-in-gaza-strike?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "Funeral prayers were held at Gaza City’s Saint Porphyrius Greek Orthodox Church for a Palestinian mother and daughter."
+      "title": "Brazil votes in deeply polarised election pitting Lula against Bolsonaro",
+      "url": "https://www.aljazeera.com/news/2026/10/4/brazil-votes-in-deeply-polarised-election-pitting-lula-against-bolsonaro?traffic_source=rss",
+      "date": "October 4, 2026",
+      "description": "Close race expected as left-wing leader Lula seeks fourth nonconsecutive term against right-wing Flavio Bolsonaro."
     },
     {
-      "title": "Remains of Bulgaria’s Czar Samuel return ‘home’ after 1,000 years",
-      "url": "https://www.aljazeera.com/news/2026/10/3/remains-of-bulgarias-czar-samuel-return-home-after-1000-years?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "The emperor is a symbol of Bulgarian national identity whose repatriation stoked tensions with Greece."
+      "title": "Ethiopian government forces seize Tigray capital Mekelle as TPLF withdraws",
+      "url": "https://www.aljazeera.com/news/2026/10/4/government-forces-seize-capital-of-ethiopias-tigray-region-from-rebels?traffic_source=rss",
+      "date": "October 4, 2026",
+      "description": "Federal troops and allied fighters seen in control of the city after capturing main regional airport."
     },
     {
-      "title": "Is the CJP changing India’s political landscape?",
-      "url": "https://www.aljazeera.com/video/inside-story/2026/10/3/is-the-cjp-changing-indias-political-landscape?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "Youth-led movement demands resignation of chief election commissioner."
+      "title": "Red Bull’s Verstappen wins rain-delayed Bahrain GP F1 race in Sepang",
+      "url": "https://www.aljazeera.com/sports/2026/10/4/red-bulls-verstappen-wins-rain-delayed-bahrain-gp-f1-race-in-sepang?traffic_source=rss",
+      "date": "October 4, 2026",
+      "description": "Championship leader Kimi Antonelli of Mercedes and Ferrari's Lewis Hamilton finish second and third."
     },
     {
-      "title": "Al Jazeera speaks to Palestinian schoolboy from viral photograph",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/3/al-jazeera-speaks-to-palestinian-schoolboy-from-viral-photograph?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "A photo went viral of a Palestinian boy hiding from Israeli forces on his way home from class in the occupied West Bank."
+      "title": "Is the Sudanese army gaining momentum against the RSF?",
+      "url": "https://www.aljazeera.com/news/2026/10/4/is-the-sudanese-army-gaining-momentum-against-the-rsf?traffic_source=rss",
+      "date": "October 4, 2026",
+      "description": "The SAF claims victory in a vital North Kordofan town, weakening RSF’s access to fighters and supply routes."
     },
     {
-      "title": "Fernandes hails Ronaldo and calls for Portugal unity ahead of Norway game",
-      "url": "https://www.aljazeera.com/sports/2026/10/3/fernandes-hails-ronaldo-and-calls-for-portugal-unity-ahead-of-norway-game?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "Cristiano Ronaldo withdrew from the Portugal squad, but Bruno Fernandes says forward remains team's 'greatest symbol'."
+      "title": "Will Brazil’s Lula halt the right-wing wave sweeping Latin America?",
+      "url": "https://www.aljazeera.com/news/2026/10/4/will-brazils-lula-halt-the-right-wing-wave-sweeping-latin-america?traffic_source=rss",
+      "date": "October 4, 2026",
+      "description": "Lula has remained a symbol for much of the global left amid the rise of the far right in Latin America."
     },
     {
-      "title": "England trounce Croatia 7-0 in Nations League as Kane goal run continues",
-      "url": "https://www.aljazeera.com/sports/2026/10/3/england-trounce-croatia-7-0-in-nations-league-as-kane-goal-run-continues?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "Harry Kane scores in sixth successive away game for England as Bukayo Saka also scores twice in Nations League thumping."
+      "title": "Spain protests flare after housing bill rejected: Will it cause snap poll?",
+      "url": "https://www.aljazeera.com/news/2026/10/4/spain-protests-flare-after-housing-bill-rejected-will-it-cause-snap-poll?traffic_source=rss",
+      "date": "October 4, 2026",
+      "description": "Measures pushed by Spain's leftist government fail to pass parliament as the protests spread."
     },
     {
-      "title": "Portugal vs Norway: UEFA Nations League – Ronaldo latest, Haaland, teams",
-      "url": "https://www.aljazeera.com/sports/2026/10/3/portugal-vs-norway-uefa-nations-league-ronaldo-latest-haaland-teams?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "Nations League title holders Portugal hosts Erling Haaland's Norway, days after Cristiano Ronaldo's exit from the camp."
+      "title": "Netanyahu’s fight to own the election narrative",
+      "url": "https://www.aljazeera.com/video/the-listening-post/2026/10/4/netanyahus-fight-to-own-the-election-narrative?traffic_source=rss",
+      "date": "October 4, 2026",
+      "description": "What did Netanyahu know about October 7 before it happened?"
     },
     {
-      "title": "Algeria sent fighter jets to Niger to thwart ‘coup attempt’, president says",
-      "url": "https://www.aljazeera.com/news/2026/10/3/algeria-sent-fighter-jets-to-niger-to-thwart-coup-attempt-president-says?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "President Abdelmadjid Tebboune says Algiers deployed warplanes to Niamey in late August following an attack by mutineers."
+      "title": "Tributes as Bosnian football star Edin Dzeko retires",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/4/tributes-as-bosnian-football-star-edin-dzeko-retires?traffic_source=rss",
+      "date": "October 4, 2026",
+      "description": "Bosnia and Herzegovina's legendary striker Edin Dzeko has bid farewell to international football after a final match."
     },
     {
-      "title": "Tennessee prisons official resigns after Christa Pike’s failed US execution",
-      "url": "https://www.aljazeera.com/news/2026/10/3/tennessee-prisons-official-resigns-after-christa-pikes-failed-us-execution?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "The state's governor said Frank Strada would step down as an independent review examines what went wrong."
+      "title": "Brazil elections live: Lula faces Bolsonaro in close presidential race",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/10/4/brazil-elections-live-voters-head-to-polls-for-close-presidential-race?traffic_source=rss",
+      "date": "October 4, 2026",
+      "description": "Voting begins in Brazil as Lula seeks a historic fourth term, facing strong opposition from Flavio Bolsonaro."
     },
     {
-      "title": "Israeli reporter’s ‘verbal attack’ ends Ireland football news conference",
-      "url": "https://www.aljazeera.com/sports/2026/10/3/israeli-reporters-verbal-attack-ends-ireland-football-news-conference?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "Israeli journalists asked coach Hallgrimsson about the Flydubai attack and alleged racist abuse by Ireland's players."
+      "title": "Flydubai: What happens when a plane plunges 17,000 feet?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/4/flydubai-what-happens-when-a-plane-plunges-17000-feet?traffic_source=rss",
+      "date": "October 4, 2026",
+      "description": "A flight instructor recreates the Flydubai jet’s near-vertical 17,000 foot dive in a simulator."
     },
     {
-      "title": "Somalia won’t accept Israeli presence ‘under any circumstances’: President",
-      "url": "https://www.aljazeera.com/news/2026/10/3/somalia-wont-accept-israeli-presence-under-any-circumstances-president?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "In exclusive Al Jazeera interview, President Hassan Sheikh Mohamud says Israel planning a naval base in Berbera."
+      "title": "The story of a book in Gaza: A treasured possession given new lease of life",
+      "url": "https://www.aljazeera.com/features/2026/10/4/the-story-of-a-book-in-gaza-a-treasured-possession-given-new-lease-of-life?traffic_source=rss",
+      "date": "October 4, 2026",
+      "description": "With libraries, schools and homes destroyed in Gaza, surviving books have become treasured possessions."
     },
     {
-      "title": "Jerusalem Daily: UAE says Flydubai co-pilot attempted ‘terrorist’ attack",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/3/jerusalem-daily-uae-says-flydubai-co-pilot-attempted-terrorist-attack?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "Jerusalem Daily: UAE says Flydubai co-pilot attempted ‘terrorist’ attack"
+      "title": "Photos: Community unites in Senegal’s Dakar to clean dilapidated school",
+      "url": "https://www.aljazeera.com/gallery/2026/10/4/photos-dakar-community-unites-to-clean-school-ahead-of-academic-year?traffic_source=rss",
+      "date": "October 4, 2026",
+      "description": "Volunteers and students prepare safer, cleaner classrooms in advance of the academic year in Senegal's capital."
     },
     {
-      "title": "Israeli reporters’ ‘verbal attack’ cuts short Ireland press conference",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/3/israeli-reporters-verbal-attack-cuts-short-ireland-press-conference?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "Israeli reporters’ ‘verbal attack’ cuts short Ireland press conference"
+      "title": "Bosnia votes in one of world’s most complicated general elections",
+      "url": "https://www.aljazeera.com/news/2026/10/4/economic-woes-ethnic-rivalries-shape-bosnias-closely-watched-elections?traffic_source=rss",
+      "date": "October 4, 2026",
+      "description": "Voters cast their ballots for a dizzying number of officials across multiple tiers of government."
     },
     {
-      "title": "What we know about the co-pilot accused in Flydubai attack",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/3/what-we-know-about-the-co-pilot-accused-in-flydubai-attack?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "The co-pilot accused of attacking a Flydubai captain has reportedly been identified as Hamam al-Hammami."
+      "title": "Cornell president says university ‘must do better’ after rape allegations",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/4/cornell-president-says-university-must-do-better-after-rape-allegations?traffic_source=rss",
+      "date": "October 4, 2026",
+      "description": "Cornell president says university ‘must do better’ after rape allegations"
     },
     {
-      "title": "‘Bordering on angry’: The state of play as US midterms enter final month",
-      "url": "https://www.aljazeera.com/news/2026/10/3/bordering-on-angry-the-state-of-play-as-us-midterms-enter-final-month?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "Democrats enter final stretch with surprisingly positive outlook as Republican money seeks to stem damage."
+      "title": "Inside the ‘kill box’: The Yemenis who stayed behind in Houthi-held Mocha",
+      "url": "https://www.aljazeera.com/features/2026/10/4/inside-the-kill-box-the-yemenis-who-stayed-behind-in-houthi-held-mocha?traffic_source=rss",
+      "date": "October 4, 2026",
+      "description": "Yemenis trapped in the Red Sea port city speak of deteriorating conditions there."
     },
     {
-      "title": "Tens of thousands protest in Spain after failed housing reforms",
-      "url": "https://www.aljazeera.com/news/2026/10/3/tens-of-thousands-protest-in-spain-after-failed-housing-reforms?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "Latest demonstrations deepen a days-long crisis after parliament struck down two affordable housing decrees."
+      "title": "Gaza’s Christians mourn mother and daughter killed in Israeli attack",
+      "url": "https://www.aljazeera.com/news/2026/10/4/gazas-christians-mourn-mother-and-daughter-killed-in-israeli-attack?traffic_source=rss",
+      "date": "October 4, 2026",
+      "description": "Maysa Abu Daoud and her daughter Mary al-Najjar among five Palestinians killed in Gaza City attack."
     },
     {
-      "title": "At least 17 people, mostly pilgrims, killed in Kenya road crash",
-      "url": "https://www.aljazeera.com/news/2026/10/3/at-least-17-people-mostly-pilgrims-killed-in-kenya-road-crash?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "The multi-vehicle crash occurred in the Salama area, 90km southeast of Nairobi, killing mostly Catholic pilgrims."
+      "title": "Saudi-led coalition dismisses ‘misleading’ Houthi claim of Riyadh attack",
+      "url": "https://www.aljazeera.com/news/2026/10/4/houthi-claims-of-targeting-riyadh-are-misleading-saudi-led?traffic_source=rss",
+      "date": "October 4, 2026",
+      "description": "The Saudi-led coalition spokesman says the Yemeni armed group is 'attempting to divert attention' from its losses."
     },
     {
-      "title": "What to know about Brazil’s 2026 presidential election",
-      "url": "https://www.aljazeera.com/news/2026/10/3/what-to-know-about-brazils-2026-presidential-election?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "Polls show tight race between incumbent Lula and right-wing rival Flavio Bolsonaro amid concerns over crime and economy."
-    },
-    {
-      "title": "Israel election double standard: Arab leader forced out, far right cleared",
-      "url": "https://www.aljazeera.com/news/2026/10/3/israel-election-double-standard-arab-leader-forced-out-far-right-cleared?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "Palestinian Israeli leader forced to withdraw candidature while far-right Israeli leaders allowed to run in polls."
-    },
-    {
-      "title": "Britain’s military in Kenya: Allegations, immunity and a fight for justice",
-      "url": "https://www.aljazeera.com/features/longform/2026/10/3/britains-military-in-kenya-allegations-immunity-and-a-fight-for-justice?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "Kenyan survivors are challenging the UK military over decades of alleged abuses — and the immunity that has shielded it."
-    },
-    {
-      "title": "Croatia 0-7 England: UEFA Nations League – as it happened",
-      "url": "https://www.aljazeera.com/sports/liveblog/2026/10/3/live-croatia-vs-england-uefa-nations-league?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "All the updates from our live text commentary stream coverage as Harry Kane and Bukayo Saka both net twice."
-    },
-    {
-      "title": "Ethiopian gov’t forces advance in Tigray as rebels retreat: What to know",
-      "url": "https://www.aljazeera.com/news/2026/10/3/ethiopian-govt-forces-advance-in-tigray-as-rebels-retreat-what-to-know?traffic_source=rss",
-      "date": "October 3, 2026",
-      "description": "Military, pro-government forces recapture airport in Tigray's capital as fighting also rages in Amhara and Afar regions."
+      "title": "Fury to invite US President Trump to lead ring walk before Joshua fight",
+      "url": "https://www.aljazeera.com/sports/2026/10/4/fury-to-invite-us-president-trump-to-lead-ring-walk-before-joshua-fight?traffic_source=rss",
+      "date": "October 4, 2026",
+      "description": "Tyson Fury is keen for his 'old pal' to join his procession to the ring for the fight on December 11 in Cardiff."
     }
   ]
 }
