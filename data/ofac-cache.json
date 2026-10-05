@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-05T19:08:10.471Z",
+  "updatedAt": "2026-10-05T21:09:07.837Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261005",
+      "code": "20261005",
+      "title": "Designations Removals; Designations Updates; Publication of Iran-related OFAC Alert; Publication of Amended Iran-related Frequently Asked Question",
+      "date": "October 05, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261002",
       "code": "20261002",
@@ -54,12 +60,6 @@
       "code": "20260918",
       "title": "Expiration of Emergency With Respect to the Situation in Ethiopia; Ethiopia-related Designations Removals; Issuance of Amended Russia-related General License and Associated Frequently Asked Questions",
       "date": "September 18, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260917",
-      "code": "20260917",
-      "title": "Iran-related Designations; Cuba Designations; Belarus-related Designations Removals",
-      "date": "September 17, 2026"
     }
   ],
   "civilPenalties": [
@@ -237,7 +237,7 @@
     "belarus-sanctions": {
       "name": "Belarus Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/belarus-sanctions",
-      "lastUpdated": "Sep 30, 2026",
+      "lastUpdated": "Oct 05, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -276,7 +276,7 @@
         },
         {
           "citation": "75 FR 73958",
-          "description": "10​ - Belarus Sanctions Regulations​ 75 FR 5502-10 - New regulations to implement Executive Order 13405 Recent Actions regarding Belarus Sanctions Counter Terrorism and Transnational Criminal Organizations Designations; Belarus, Counter Narcotics, and Libya Designations Removals Release Date: Sep 30",
+          "description": "10​ - Belarus Sanctions Regulations​ 75 FR 5502-10 - New regulations to implement Executive Order 13405 Recent Actions regarding Belarus Sanctions Designations Removals; Designations Updates; Publication of Iran-related OFAC Alert; Publication of Amended Iran-related Frequently Asked Question Releas",
           "year": "",
           "glNumbers": []
         }
@@ -376,7 +376,7 @@
     "counter-narcotics-trafficking-sanctions": {
       "name": "Counter Narcotics Trafficking Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-narcotics-trafficking-sanctions",
-      "lastUpdated": "Sep 30, 2026",
+      "lastUpdated": "Oct 05, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -423,7 +423,7 @@
     "counter-terrorism-sanctions": {
       "name": "Counter Terrorism Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-terrorism-sanctions",
-      "lastUpdated": "Oct 02, 2026",
+      "lastUpdated": "Oct 05, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -753,21 +753,19 @@
       "generalLicenses": [
         {
           "number": "1",
-          "title": "Transactions Authorized Pursuant to the Cuban Assets Control Regulations",
+          "title": "Cuba General License 1",
           "date": "May 7, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935571/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "4A",
-          "title": "Authorizing Transactions for Third-Country Diplomatic and Consular Missions in Cuba",
+          "title": "Cuba General License 4A",
           "date": "July 23, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936871/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         }
       ]
     },
@@ -1009,7 +1007,7 @@
     "iran-sanctions": {
       "name": "Iran Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions",
-      "lastUpdated": "Oct 01, 2026",
+      "lastUpdated": "Oct 05, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -1176,17 +1174,15 @@
           "date": "October 8, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48626/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "8A",
-          "title": "Authorizing Certain Humanitarian Trade Transactions Involving the Central Bank of Iran or the National Iranian Oil Company",
+          "title": "Iran General License 8A",
           "date": "February 27, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48841/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "Q",
@@ -1194,8 +1190,7 @@
           "date": "May 20, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934291/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "T",
@@ -1226,7 +1221,7 @@
     "iraq-related-sanctions": {
       "name": "Iraq-Related Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iraq-related-sanctions",
-      "lastUpdated": "Jul 09, 2025",
+      "lastUpdated": "Oct 05, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -1249,44 +1244,18 @@
         },
         {
           "citation": "68 FR 61362-03",
-          "description": "Removal of Certain Provisions of the Iraqi Sanctions Regulations; Interpretive Guidance 68 FR 61359-03 - Reporting, Procedures and Penalties Regulations; Iraqi Sanctions Regulations; Foreign Terrorist Organizations Sanctions Regulations; Foreign Narcotics Kingpin Sanctions Regulations 68 FR 38188-03",
+          "description": "Removal of Certain Provisions of the Iraqi Sanctions Regulations; Interpretive Guidance 68 FR 61359-03 - Reporting, Procedures and Penalties Regulations; Iraqi Sanctions Regulations; Foreign Terrorist Organizations Sanctions Regulations; Foreign Narcotics Kingpin Sanctions Regulations 68 FR 60625-03",
           "year": "2003",
           "glNumbers": []
         },
         {
-          "citation": "68 FR 11741-03",
-          "description": "Authorization of Certain Humanitarian Activities by Nongovernmental Organizations in Iraq and Iran United Nations Security Council Resolutions 1546 - Reaffirming the independence, sovereignty, unity, and territorial integrity of Iraq; Reaffirming also the right of the Iraqi people freely to determin",
+          "citation": "68 FR 38188-03",
+          "description": "Authorization of Certain New Transactions 68 FR 11741-03 - Authorization of Certain Humanitarian Activities by Nongovernmental Organizations in Iraq and Iran United Nations Security Council Resolutions 1546 - Reaffirming the independence, sovereignty, unity, and territorial integrity of Iraq; Reaffi",
           "year": "2003",
           "glNumbers": []
         }
       ],
-      "generalLicenses": [
-        {
-          "number": "575",
-          "title": "Iraqi General License - Section 575.533",
-          "date": "March 16, 2004",
-          "expires": "",
-          "url": "https://ofac.treasury.gov/media/7356/download?inline",
-          "datePdf": true,
-          "dateConfident": true
-        },
-        {
-          "number": "6",
-          "title": "Iraqi General License (No. 6) - Section 575.534",
-          "date": "March 26, 2004",
-          "expires": "",
-          "url": "https://ofac.treasury.gov/media/7366/download?inline"
-        },
-        {
-          "number": "1",
-          "title": "Iraqi General License (No. 1 / 13315)",
-          "date": "March 16, 2004",
-          "expires": "",
-          "url": "https://ofac.treasury.gov/media/7361/download?inline",
-          "datePdf": true,
-          "dateConfident": true
-        }
-      ]
+      "generalLicenses": []
     },
     "lebanon-related-sanctions": {
       "name": "Lebanon-Related Sanctions",
@@ -1403,7 +1372,7 @@
     "non-proliferation-sanctions": {
       "name": "Non-Proliferation Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/non-proliferation-sanctions",
-      "lastUpdated": "Sep 29, 2026",
+      "lastUpdated": "Oct 05, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -2299,8 +2268,7 @@
           "date": "December 20, 2016",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/8781/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "18",
@@ -2308,26 +2276,23 @@
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918686/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "19",
-          "title": "Authorizing Transactions Related to Telecommunications and Mail",
+          "title": "Ukraine General License 19",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918691/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "20",
-          "title": "Official Business of Certain International Organizations and Entities",
+          "title": "Ukraine General License 20",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918696/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "21",
@@ -2339,48 +2304,43 @@
         },
         {
           "number": "22",
-          "title": "Authorizing the Exportation of Certain Services and Software Incident to Internet-Based Communications",
+          "title": "Ukraine General License 22",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918706/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "23",
-          "title": "Certain Transactions in Support of Nongovernmental Organizations’ Activities",
+          "title": "Ukraine General License 23",
           "date": "March 11, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919151/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "24",
-          "title": "Transactions Related to the Provision of Maritime Services",
+          "title": "Ukraine General License 24",
           "date": "March 18, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919801/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "25",
-          "title": "Journalistic Activities and Establishment of News Bureaus in Certain Regions of Ukraine",
+          "title": "Ukraine General License 25",
           "date": "March 24, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/920276/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "26A",
-          "title": "Transactions Authorized Pursuant to the Russian Harmful Foreign Activities Sanctions Regulations",
+          "title": "Ukraine General License 26A",
           "date": "January 10, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/933911/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "134C",
@@ -2395,85 +2355,95 @@
     "venezuela-related-sanctions": {
       "name": "Venezuela-Related Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/venezuela-related-sanctions",
-      "lastUpdated": "Sep 28, 2026",
+      "lastUpdated": "Oct 05, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
-          "citation": "91 FR 60304-26",
-          "description": "Publication of Venezuela Sanctions Regulations Web General Licenses 5X and 5Y 91 FR 57793-26 - Publication of Venezuela Sanctions Regulations Web General Licenses 30B and 51 91 FR 57791-26 - Publication of Venezuela Sanctions Regulations Web General Licenses 50A and 51A 91 FR 35143-26 - Publication",
+          "citation": "91 FR 61775-26",
+          "description": "Publication of Venezuela Sanctions Regulations Web General Licenses 46C, 47A, 48B, 50B, 51B, 52A, and 54A 91 FR 61771-26 - Publication of Venezuela Sanctions Regulations Web General Licenses 52, 53, 54, 55, 56, 57, and 58 91 FR 61771-26 - Publication of Venezuela Sanctions Regulations Web General Li",
           "year": "2026",
           "glNumbers": [
+            "46C",
+            "52"
+          ]
+        },
+        {
+          "citation": "91 FR 61764-26",
+          "description": "Publication of Venezuela Sanctions Regulations Web General Licenses 46D, 47B, 48C, 50C, 51C, 52B, 54B, and 61A 91 FR 60304-26 - Publication of Venezuela Sanctions Regulations Web General Licenses 5X and 5Y 91 FR 57793-26 - Publication of Venezuela Sanctions Regulations Web General Licenses 30B and 5",
+          "year": "2026",
+          "glNumbers": [
+            "46D",
             "5X",
-            "30B",
-            "50A"
+            "30B"
           ]
         },
         {
-          "citation": "91 FR 35142-26",
-          "description": "Publication of Venezuela Sanctions Regulations Web General Licenses 5U and 5V 91 FR 24719-26 - Publication of Venezuela Sanctions Regulations Web General Licenses 46, 46A, and 46B 91 FR 24716-26 - Publication of Venezuela Sanctions Regulations Web General Licenses 47, 48, 49, and 50 91 FR 10008-26 -",
+          "citation": "91 FR 57791-26",
+          "description": "Publication of Venezuela Sanctions Regulations Web General Licenses 50A and 51A 91 FR 35143-26 - Publication of Venezuela Sanctions Regulations Web General Licenses 48A and 49A 91 FR 35142-26 - Publication of Venezuela Sanctions Regulations Web General Licenses 5U and 5V 91 FR 24719-26 - Publication",
           "year": "2026",
           "glNumbers": [
-            "5U",
-            "46",
-            "47"
+            "50A",
+            "48A",
+            "5U"
           ]
         },
         {
-          "citation": "90 FR 43557-25",
-          "description": "Publication of Venezuela Sanctions Regulations Web General License 5S 90 FR 43556-25 - Publication of Venezuela Sanctions Regulations Web General License 40D 90 FR 34598-25 - Publication of Venezuela Sanctions Regulations Web General Licenses 41A, 5R, and 41B 89 FR 103651-24 - Publication of Venezue",
+          "citation": "91 FR 24716-26",
+          "description": "Publication of Venezuela Sanctions Regulations Web General Licenses 47, 48, 49, and 50 91 FR 10008-26 - Publication of Venezuela Sanctions Regulations Web General License 5T 90 FR 43557-25 - Publication of Venezuela Sanctions Regulations Web General License 5S 90 FR 43556-25 - Publication of Venezue",
+          "year": "2026",
+          "glNumbers": [
+            "47",
+            "5T",
+            "5S"
+          ]
+        },
+        {
+          "citation": "90 FR 34598-25",
+          "description": "Publication of Venezuela Sanctions Regulations Web General Licenses 41A, 5R, and 41B 89 FR 103651-24 - Publication of Venezuela Sanctions Regulations Web General Licenses 5Q and 8O 89 FR 72986-24 - Publication of Venezuela Sanctions Regulations Web General License 5P 89 FR 67557-24 - Publication of",
           "year": "2025",
           "glNumbers": [
-            "5S",
-            "40D",
-            "41A"
+            "41A",
+            "5Q",
+            "5P"
           ]
         },
         {
-          "citation": "89 FR 72986-24",
-          "description": "Publication of Venezuela Sanctions Regulations Web General License 5P 89 FR 67557-24 - Publication of Venezuela Sanctions Regulations Web General License 40C 89 FR 46802-24 - Publication of Venezuela Sanctions Regulations Web General License 8N 89 FR 35703-24 - Publication of Venezuela Sanctions Reg",
+          "citation": "89 FR 46802-24",
+          "description": "Publication of Venezuela Sanctions Regulations Web General License 8N 89 FR 35703-24 - Publication of Venezuela Sanctions Regulations Web General Licenses 5O, 8M, and 44A 89 FR 20120-24 - Publication of Venezuela Sanctions Regulations Web General License 45B 89 FR 16452-24 - Publication of Venezuela",
           "year": "2024",
           "glNumbers": [
-            "5P",
-            "40C",
-            "8N"
+            "8N",
+            "5O",
+            "45B"
           ]
         },
         {
-          "citation": "89 FR 20120-24",
-          "description": "Publication of Venezuela Sanctions Regulations Web General License 45B 89 FR 16452-24 - Publication of Venezuela Sanctions Regulations Web General License 43A 89 FR 13271-24 - Publication of Venezuela Sanctions Regulations Web General License 5N 89 FR 3353-24 - Publication of Venezuela Sanctions Reg",
+          "citation": "89 FR 13271-24",
+          "description": "Publication of Venezuela Sanctions Regulations Web General License 5N 89 FR 3353-24 - Publication of Venezuela Sanctions Regulations Web General License 45A 88 FR 76991-23 - Publication of Venezuela Sanctions Regulations Web General Licenses 3I, 5M, 9H, 43, 44, and 45 88 FR 65816-23 - Publication of",
           "year": "2024",
           "glNumbers": [
-            "45B",
-            "43A",
-            "5N"
+            "5N",
+            "45A",
+            "3I"
           ]
         },
         {
-          "citation": "88 FR 76991-23",
-          "description": "Publication of Venezuela Sanctions Regulations Web General Licenses 3I, 5M, 9H, 43, 44, and 45 88 FR 65816-23 - Publication of Venezuela Sanctions Regulations Web General License 42 88 FR 52039-23 - Publication of Venezuela Sanctions Regulations Web General Licenses 5K and 5L 88 FR 52038-23 - Public",
+          "citation": "88 FR 52039-23",
+          "description": "Publication of Venezuela Sanctions Regulations Web General Licenses 5K and 5L 88 FR 52038-23 - Publication of Venezuela Sanctions Regulations Web General License 40B 88 FR 45816-23 - Publication of Covid-Related Web General Licenses Related to Syria Sanctions Regulations, Iranian Transactions and Sa",
           "year": "2023",
           "glNumbers": [
-            "3I",
-            "42",
-            "5K"
+            "5K",
+            "40B"
           ]
         },
         {
-          "citation": "88 FR 45816-23",
-          "description": "Publication of Covid-Related Web General Licenses Related to Syria Sanctions Regulations, Iranian Transactions and Sanctions Regulations, Global Terrorism Sanctions Regulations, and Venezuela Sanctions Regulations 88 FR 40713-23 - Publication of Venezuela Sanctions Regulations Web General License 8L",
+          "citation": "88 FR 40713-23",
+          "description": "Publication of Venezuela Sanctions Regulations Web General License 8L 88 FR 19842-23 - Publication of Venezuela Sanctions Regulations Web General Licenses 32, 33, 34, 34A, and 35 88 FR 19840-23 - Publication of Venezuela Sanctions Regulations Web General Licenses 29, 30, 30A, 31, and 31A 88 FR 13024",
           "year": "2023",
           "glNumbers": [
-            "8L"
-          ]
-        },
-        {
-          "citation": "88 FR 19842-23",
-          "description": "Publication of Venezuela Sanctions Regulations Web General Licenses 32, 33, 34, 34A, and 35 88 FR 19840-23 - Publication of Venezuela Sanctions Regulations Web General Licenses 29, 30, 30A, 31, and 31A 88 FR 13024-23 - Publication of Venezuela Sanctions Regulations Web General Licenses 19, 20, 21, 2",
-          "year": "2023",
-          "glNumbers": [
+            "8L",
             "32",
-            "29",
-            "19"
+            "29"
           ]
         },
         {
@@ -2543,12 +2513,11 @@
       "generalLicenses": [
         {
           "number": "2A",
-          "title": "Authorizing Certain New Debt, New Equity, and Securities Transactions Involving PDV Holding, Inc. and CITGO Holding, Inc. ( a)",
+          "title": "Venezuela General License 2A",
           "date": "August 25, 2017",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34121/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "3I",
@@ -2564,17 +2533,15 @@
           "date": "April 17, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31741/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "5Z",
-          "title": "Authorizing Certain Transactions Related to the Petróleos de Venezuela, S.A. 2020 8.5 Percent Bond on or After November 5, 2026",
+          "title": "Venezuela General License 5Z",
           "date": "August 3, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936946/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "7C",
@@ -2598,152 +2565,135 @@
           "date": "January 28, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34131/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "15C",
-          "title": "Authorizing Transactions Involving Certain Banks for Certain Entities ( a)",
+          "title": "Venezuela General License 15C",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/33126/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "16C",
-          "title": "Authorizing Maintenance of U.S. Person Accounts and Noncommercial, Personal Remittances Involving Certain Banks",
+          "title": "Venezuela General License 16C",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/33121/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "18A",
-          "title": "Authorizing Certain Transactions Involving Integraci6n Administradora de Fondos de Ahorro Previsional, S.A",
+          "title": "Venezuela General License 18A",
           "date": "March 22, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34126/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "21",
-          "title": "Entries in Certain Accounts for Normal Service Charges and Payments and Transfers to Blocked Accounts in U.S. Financial Institutions Authorized",
+          "title": "Venezuela General License 21",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/46421/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "22",
-          "title": "Venezuela's Mission to the United Nations",
+          "title": "Venezuela General License 22",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/30601/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "23",
-          "title": "Third-country Diplomatic and Consular Funds Transfers Authorized",
+          "title": "Venezuela General License 23",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34116/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "24A",
-          "title": "Certain Transactions Involving the Government of Venezuela Related to Telecommunications and Mail Authorized",
+          "title": "Venezuela General License 24A",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935731/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "25",
-          "title": "Exportation of Certain Services, Software, Hardware, and Technology Incident to the Exchange of Communications over the Internet Authorized",
+          "title": "Venezuela General License 25",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31761/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "26",
-          "title": "Emergency and Certain Other Medical Services Authorized",
+          "title": "Venezuela General License 26",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31766/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "27",
-          "title": "Certain Transactions Related to Patents, Trademarks, and Copyrights Authorized ( a)",
+          "title": "Venezuela General License 27",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34111/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "29",
-          "title": "Certain Transactions Involving the Government of Venezuela in Support of Certain Nongovernmental Organizations' Activities Authorized",
+          "title": "Venezuela General License 29",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31771/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "30B",
-          "title": "Authorizing Certain Transactions Necessary to Port and Airport Operations",
+          "title": "Venezuela General License 30B",
           "date": "February 2, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934996/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "31B",
-          "title": "Certain Transactions Involving the IV Venezuelan National Assembly and Certain Other Persons",
+          "title": "Venezuela General License 31B",
           "date": "January 4, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/930241/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "32",
-          "title": "Authorizing Certain Transactions Related to Personal Maintenance of Individuals Who Are U.S. Persons Residing in Venezuela",
+          "title": "Venezuela General License 32",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34101/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "33",
-          "title": "Authorizing Overflight Payments, Emergency Landings, and Air Ambulance Services",
+          "title": "Venezuela General License 33",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34096/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "34A",
-          "title": "Authorizing Transactions Involving Certain Government of Venezuela Persons",
+          "title": "Venezuela General License 34A",
           "date": "September 9, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/25966/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "35",
@@ -2755,48 +2705,43 @@
         },
         {
           "number": "42",
-          "title": "Authorizing Certain Transactions Related to the Negotiation of Certain Settlement Agreements with the IV Venezuelan National Assembly and Certain Other Persons",
+          "title": "Venezuela General License 42",
           "date": "May 1, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/931696/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "45B",
-          "title": "Authorizing Certain Repatriation Transactions Involving Consorcio Venezolano de Industrias Aeronáuticas y Servicios Aéreos, S.A",
+          "title": "Venezuela General License 45B",
           "date": "November 16, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/932686/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "46E",
-          "title": "Authorizing Certain Activities Involving Venezuelan- Origin Oil or Petrochemical Products",
+          "title": "Venezuela General License 46E",
           "date": "August 27, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936996/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "47B",
-          "title": "Authorizing the Sale of U.S.-Origin Diluents to Venezuela",
+          "title": "Venezuela General License 47B",
           "date": "June 10, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936811/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "48D",
-          "title": "Authorizing the Supply of Certain Items and Services to Venezuela",
+          "title": "Venezuela General License 48D",
           "date": "August 27, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/937001/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "49B",
@@ -3070,6 +3015,12 @@
       "description": "The vessel's captain was killed and 11 crew members were rescued after the attack on the Turkish-owned ship, Ukraine's leader says."
     },
     {
+      "title": "US 'watching closely' after plague researcher dies in Russia, Rubio says",
+      "url": "https://www.bbc.co.uk/news/articles/cv5yn3nwp5n5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 5, 2026",
+      "description": "The US says it is monitoring the case of a lab technician who died at a plague research centre in Siberia."
+    },
+    {
       "title": "PM warned Rosebank oil field could breach West Bank sanctions",
       "url": "https://www.bbc.co.uk/news/articles/cmrl6lz454lgo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 1, 2026",
@@ -3077,6 +3028,24 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Ukraine says Russian drone attack sinks ship in Romanian waters",
+      "url": "https://www.aljazeera.com/news/2026/10/5/ukraine-says-russian-drone-attack-sinks-ship-in-romanian-waters?traffic_source=rss",
+      "date": "October 5, 2026",
+      "description": "The latest suspected incursion on NATO's eastern flank increases fears that the war in Ukraine threatens to spill over."
+    },
+    {
+      "title": "Freed Syrians recount torture in Israeli detention centre",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/5/freed-syrians-recount-torture-in-israeli-detention-centre?traffic_source=rss",
+      "date": "October 5, 2026",
+      "description": "Syrians released from Israeli detention have described abuse behind bars."
+    },
+    {
+      "title": "Trump blames Democrats and Ukraine for soaring US fuel prices, not Iran war",
+      "url": "https://www.aljazeera.com/economy/2026/10/5/trump-blames-democrats-and-ukraine-for-soaring-us-fuel-prices-not-iran-war?traffic_source=rss",
+      "date": "October 5, 2026",
+      "description": "Trump shifts blame for fuel price hikes to blue states like California and Ukraine strikes on Russian oil refineries."
+    },
     {
       "title": "UK ‘threatens to expel 27 Israeli diplomats’ over Jerusalem consulate",
       "url": "https://www.aljazeera.com/news/2026/10/5/uk-threatens-to-expel-27-israeli-diplomats-over-jerusalem-consulate?traffic_source=rss",
@@ -3094,18 +3063,6 @@
       "url": "https://www.aljazeera.com/sports/2026/10/5/medvedev-disqualified-from-china-open-for-hitting-fan-with-a-ball?traffic_source=rss",
       "date": "October 5, 2026",
       "description": "Russia's Daniil Medvedev disqualified from China Open for hitting spectator with ball during match with Novak Djokovic."
-    },
-    {
-      "title": "US pulls bombers from UK base: Is Iran manoeuvring Trump’s war plans?",
-      "url": "https://www.aljazeera.com/news-analysis/2026/10/5/us-pulls-bombers-from-uk-base-is-iran-maneouvering-trumps-war-plans?traffic_source=rss",
-      "date": "October 5, 2026",
-      "description": "The withdrawal means the US lost a convenient launchpad, not its underlying strike capability, said an expert."
-    },
-    {
-      "title": "Is Iran charging a toll to allow oil traffic through Hormuz?",
-      "url": "https://www.aljazeera.com/news/2026/10/5/is-iran-charging-a-toll-to-allow-oil-traffic-through-hormuz?traffic_source=rss",
-      "date": "October 5, 2026",
-      "description": "Crude exports bypassing Hormuz surged in September, yet oil prices remain high. Could a secret fee be the reason?"
     }
   ],
   "occNews": [
@@ -3203,10 +3160,10 @@
   ],
   "regionsNews": [
     {
-      "title": "No10 insists UK military base RAF Fairford is safe after US withdraws bombers",
-      "url": "https://www.bbc.co.uk/news/articles/cmy56yvv1kxxo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Trump says 'threat' led US to pull bombers from RAF Fairford",
+      "url": "https://www.bbc.co.uk/news/articles/cwj3413e5m1lo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 5, 2026",
-      "description": "US media reported a new threat led to the bombers being removed on Sunday, following an incident near the base last week."
+      "description": "The Pentagon confirmed on Sunday it had removed the B1 bombers from the base in England back to their home stations in America."
     },
     {
       "title": "Flydubai co-pilot planned to crash plane into Tel Aviv airport or building, reports say",
@@ -3221,22 +3178,22 @@
       "description": "The prefect of Pas-de-Calais says the 15-year-old's life is \"not in danger\" after the \"very serious\" incident."
     },
     {
-      "title": "Spanish PM Sánchez calls early election after housing protests",
-      "url": "https://www.bbc.co.uk/news/articles/cmdx39k49xw0o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Spain PM pins hopes on housing crisis to help win snap election",
+      "url": "https://www.bbc.co.uk/news/articles/ck5yn81qqde0o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 5, 2026",
-      "description": "Sánchez says Spain will head to the polls on 29 November after recent defeats on measures aimed at addressing the country's housing crisis."
-    },
-    {
-      "title": "Nobel Prize awarded for revealing inner workings of the brain",
-      "url": "https://www.bbc.co.uk/news/articles/c5ev3ypmzly8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 5, 2026",
-      "description": "US psychiatrist and neurologist Karl Deisseroth and his German colleagues Peter Hegemann and Georg Nagel have been awarded for their work."
+      "description": "Calling of a snap election was not a knee-jerk reaction from Pedro Sánchez but a carefully thought-out manoeuvre, Guy Hedgecoe reports from Madrid."
     },
     {
       "title": "Pentagon stops using Anthropic AI tools after blacklisting company, BBC told",
       "url": "https://www.bbc.co.uk/news/articles/c5j9x9pr0240o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 5, 2026",
       "description": "It labelled Anthropic a \"supply chain risk\" in February after the firm refused to remove safety guardrails from its tools."
+    },
+    {
+      "title": "Nobel Prize awarded for revealing inner workings of the brain",
+      "url": "https://www.bbc.co.uk/news/articles/c5ev3ypmzly8o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 5, 2026",
+      "description": "US psychiatrist and neurologist Karl Deisseroth and his German colleagues Peter Hegemann and Georg Nagel have been awarded for their work."
     },
     {
       "title": "'Not again': Arrest of US marine for murder reignites protests in Japan's Okinawa",
@@ -3273,12 +3230,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cmze4g8r6nr9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 5, 2026",
       "description": "The aircraft lost communication with flight controllers after significantly dropping in altitude, according to flight data."
-    },
-    {
-      "title": "Trump chooses top spy boss to run new AI taskforce",
-      "url": "https://www.bbc.co.uk/news/articles/cqj6jenp26zyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 5, 2026",
-      "description": "The US president said his national intelligence chief will lead the group as worries over AI grow."
     },
     {
       "title": "How India became dangerously addicted to Chinese imports",
@@ -3641,10 +3592,46 @@
       "description": "Protests about 87-year-old Mariacarmen Abascal's eviction reignited the housing debate"
     },
     {
-      "title": "Mecca alliance agrees to activate collective deterrence measures",
+      "title": "Can Yemen retake territory seized by Houthis?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/10/5/can-yemen-retake-territory-seized-by-houthis?traffic_source=rss",
+      "date": "October 5, 2026",
+      "description": "The group has taken control of much of the Red Sea coast."
+    },
+    {
+      "title": "Israeli forces kill one, injure several in occupied West Bank",
+      "url": "https://www.aljazeera.com/news/2026/10/5/israeli-forces-kill-one-injure-several-in-occupied-west-bank?traffic_source=rss",
+      "date": "October 5, 2026",
+      "description": "Palestinians in West Bank are suffering increasing Israeli violence and repression."
+    },
+    {
+      "title": "Turkiye, Pakistan agree to military deployment to Saudi Arabia",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/5/turkiye-pakistan-agree-to-military-deployment-to-saudi-arabia?traffic_source=rss",
+      "date": "October 5, 2026",
+      "description": "Turkiye, Saudi Arabia and Pakistan have agreed to trigger collective deterrence measures in response to Houthi attacks."
+    },
+    {
+      "title": "Premier League viewership in US up 20 percent among young Americans",
+      "url": "https://www.aljazeera.com/sports/2026/10/5/premier-league-viewership-in-us-up-20-percent-among-young-americans?traffic_source=rss",
+      "date": "October 5, 2026",
+      "description": "English Premier League viewership up 20 percent among young Americans following World Cup, Nielsen Sports data shows."
+    },
+    {
+      "title": "Medvedev disqualified after hitting spectator with ball",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/5/medvedev-disqualified-after-hitting-spectator-with-ball?traffic_source=rss",
+      "date": "October 5, 2026",
+      "description": "Medvedev disqualified after hitting spectator with ball"
+    },
+    {
+      "title": "Mexico seeks evidence of border shooting that prompted US troop deployment",
+      "url": "https://www.aljazeera.com/news/2026/10/5/mexico-seeks-evidence-of-border-shooting-that-prompted-us-troop-deployment?traffic_source=rss",
+      "date": "October 5, 2026",
+      "description": "Mexico's Sheinbaum has expressed concern about US officials overstepping norms on security cooperation."
+    },
+    {
+      "title": "Turkiye, Pakistan agree Saudi Arabia military deployment under Mecca pact",
       "url": "https://www.aljazeera.com/news/2026/10/5/mecca-alliance-agrees-to-activate-collective-deterrence-measures?traffic_source=rss",
       "date": "October 5, 2026",
-      "description": "This is a breaking news story."
+      "description": "The three countries agree to trigger collective deterrence measures in response to 'heinous attacks' by Yemen's Houthis."
     },
     {
       "title": "What is ‘Herod’s Pool’, and why is Israel developing it in the West Bank?",
@@ -3653,10 +3640,10 @@
       "description": "Israel is developing a reservoir on land in the occupied West Bank, with water syphoned off from Palestinians."
     },
     {
-      "title": "Rubio: No direct link between US bombers removal and UK base incident",
+      "title": "Rubio starts European tour in Iceland to boost security ties",
       "url": "https://www.aljazeera.com/news/2026/10/5/rubio-no-direct-link-between-us-bombers-removal-and-uk-base-incident?traffic_source=rss",
       "date": "October 5, 2026",
-      "description": "Rubio visits Iceland, says no direct link between the removal of US bombers and suspicions of a terrorist act in the UK"
+      "description": "Rubio stresses US base security, following the removal of B-1 bombers amid alleged threats targeting UK military assets."
     },
     {
       "title": "Spain calls snap election amid housing crisis",
@@ -3717,48 +3704,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/5/a-drive-through-the-west-bank?traffic_source=rss",
       "date": "October 5, 2026",
       "description": "Palestinians in the occupied West Bank are left asking world leaders: where exactly is our state meant to go?"
-    },
-    {
-      "title": "Latest US military strike on alleged drug boat kills four in Caribbean",
-      "url": "https://www.aljazeera.com/news/2026/10/5/latest-us-military-strike-on-alleged-drug-boat-kills-four-in-caribbean?traffic_source=rss",
-      "date": "October 5, 2026",
-      "description": "UN warns US boat strikes in the Caribbean counter-drug war may violate international law and human rights principles."
-    },
-    {
-      "title": "Murder in Okinawa: The US military’s history of alleged crime in Japan",
-      "url": "https://www.aljazeera.com/news/2026/10/5/murder-in-okinawa-the-us-militarys-history-of-alleged-crime-in-japan?traffic_source=rss",
-      "date": "October 5, 2026",
-      "description": "The murder of 39-year-old Anna Yagi is the latest in a string of crimes involving US personnel on Okinawa."
-    },
-    {
-      "title": "Nobel medicine prize honours US and German scientists for optogenetics work",
-      "url": "https://www.aljazeera.com/news/2026/10/5/nobel-medicine-prize-honours-us-and-german-scientists-for-optogenetics-work?traffic_source=rss",
-      "date": "October 5, 2026",
-      "description": "The winners of the Nobel Prizes in physics, chemistry, literature, peace and ‌economics will be announced in the week."
-    },
-    {
-      "title": "Samoa prime minister apologises after Nazi salute video surfaces",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/5/samoa-prime-minister-apologises-after-nazi-salute-video-surfaces?traffic_source=rss",
-      "date": "October 5, 2026",
-      "description": "Samoa PM has apologised after a video of him resurfaced, showing him leading a Nazi salute and saying ‘Heil Hitler'."
-    },
-    {
-      "title": "Before UK Greens, who else has equated Zionism with racism?",
-      "url": "https://www.aljazeera.com/news/2026/10/5/before-uk-greens-who-else-has-equated-zionism-with-racism?traffic_source=rss",
-      "date": "October 5, 2026",
-      "description": "Israel condemns the move as the party's vote causes an uproar, including among party members."
-    },
-    {
-      "title": "Bolsonaro favourite to win: What Brazil’s first round of elections tells us",
-      "url": "https://www.aljazeera.com/news/2026/10/5/bolsonaro-favourite-to-win-what-brazils-first-round-of-election-tells-us?traffic_source=rss",
-      "date": "October 5, 2026",
-      "description": "Analysts say Flavio Bolsonaro is projected to win the run-off vote on October 25 and become Brazil's next president."
-    },
-    {
-      "title": "Lionel Messi to join Argentina for farewell match against Benin",
-      "url": "https://www.aljazeera.com/sports/2026/10/5/lionel-messi-argentina-farewell-final-match-benin?traffic_source=rss",
-      "date": "October 5, 2026",
-      "description": "The friendly marks a symbolic passing of the torch for a player whose international legacy includes a World Cup title."
     }
   ]
 }
