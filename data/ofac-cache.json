@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05T21:09:07.837Z",
+  "updatedAt": "2026-10-05T22:08:12.578Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261005",
@@ -753,19 +753,21 @@
       "generalLicenses": [
         {
           "number": "1",
-          "title": "Cuba General License 1",
+          "title": "Transactions Authorized Pursuant to the Cuban Assets Control Regulations",
           "date": "May 7, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935571/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "4A",
-          "title": "Cuba General License 4A",
+          "title": "Authorizing Transactions for Third-Country Diplomatic and Consular Missions in Cuba",
           "date": "July 23, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936871/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         }
       ]
     },
@@ -1174,15 +1176,17 @@
           "date": "October 8, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48626/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "8A",
-          "title": "Iran General License 8A",
+          "title": "Authorizing Certain Humanitarian Trade Transactions Involving the Central Bank of Iran or the National Iranian Oil Company",
           "date": "February 27, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48841/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "Q",
@@ -1190,7 +1194,8 @@
           "date": "May 20, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934291/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "T",
@@ -2268,7 +2273,8 @@
           "date": "December 20, 2016",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/8781/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "18",
@@ -2276,23 +2282,26 @@
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918686/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "19",
-          "title": "Ukraine General License 19",
+          "title": "Authorizing Transactions Related to Telecommunications and Mail",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918691/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "20",
-          "title": "Ukraine General License 20",
+          "title": "Official Business of Certain International Organizations and Entities",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918696/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "21",
@@ -2304,43 +2313,48 @@
         },
         {
           "number": "22",
-          "title": "Ukraine General License 22",
+          "title": "Authorizing the Exportation of Certain Services and Software Incident to Internet-Based Communications",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918706/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "23",
-          "title": "Ukraine General License 23",
+          "title": "Certain Transactions in Support of Nongovernmental Organizations’ Activities",
           "date": "March 11, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919151/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "24",
-          "title": "Ukraine General License 24",
+          "title": "Transactions Related to the Provision of Maritime Services",
           "date": "March 18, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919801/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "25",
-          "title": "Ukraine General License 25",
+          "title": "Journalistic Activities and Establishment of News Bureaus in Certain Regions of Ukraine",
           "date": "March 24, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/920276/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "26A",
-          "title": "Ukraine General License 26A",
+          "title": "Transactions Authorized Pursuant to the Russian Harmful Foreign Activities Sanctions Regulations",
           "date": "January 10, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/933911/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "134C",
@@ -3015,10 +3029,10 @@
       "description": "The vessel's captain was killed and 11 crew members were rescued after the attack on the Turkish-owned ship, Ukraine's leader says."
     },
     {
-      "title": "US 'watching closely' after plague researcher dies in Russia, Rubio says",
+      "title": "US 'watching closely' after plague researcher dies in Russia",
       "url": "https://www.bbc.co.uk/news/articles/cv5yn3nwp5n5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 5, 2026",
-      "description": "The US says it is monitoring the case of a lab technician who died at a plague research centre in Siberia."
+      "description": "Donald Trump says the US was looking \"very strongly\" at the case of a lab technician who died at a research centre in Siberia."
     },
     {
       "title": "PM warned Rosebank oil field could breach West Bank sanctions",
@@ -3028,6 +3042,12 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Trump says US ready to aid Russia with plague outbreak in Siberia",
+      "url": "https://www.aljazeera.com/news/2026/10/5/trump-says-us-ready-to-aid-russia-with-plague-outbreak-in-siberia?traffic_source=rss",
+      "date": "October 5, 2026",
+      "description": "Russian authorities quarantine hospital, monitor 200 contacts after suspected pneumonic plague death in Siberia."
+    },
     {
       "title": "Ukraine says Russian drone attack sinks ship in Romanian waters",
       "url": "https://www.aljazeera.com/news/2026/10/5/ukraine-says-russian-drone-attack-sinks-ship-in-romanian-waters?traffic_source=rss",
@@ -3166,16 +3186,16 @@
       "description": "The Pentagon confirmed on Sunday it had removed the B1 bombers from the base in England back to their home stations in America."
     },
     {
+      "title": "France braces for national day of school protests after injuries and mass arrests",
+      "url": "https://www.bbc.co.uk/news/articles/cr4g1q1elxnjo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 5, 2026",
+      "description": "France prepares for a day of protests in support of students who’ve been demanding more investment in education."
+    },
+    {
       "title": "Flydubai co-pilot planned to crash plane into Tel Aviv airport or building, reports say",
       "url": "https://www.bbc.co.uk/news/articles/cm3691y79xp5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 5, 2026",
       "description": "The Omani national was a \"lone wolf\" extremist, according to the reports."
-    },
-    {
-      "title": "Teenager's hand blown off during confrontation between France school protesters and police",
-      "url": "https://www.bbc.co.uk/news/articles/c9zrdmxp4vy6o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 5, 2026",
-      "description": "The prefect of Pas-de-Calais says the 15-year-old's life is \"not in danger\" after the \"very serious\" incident."
     },
     {
       "title": "Spain PM pins hopes on housing crisis to help win snap election",
@@ -3592,6 +3612,30 @@
       "description": "Protests about 87-year-old Mariacarmen Abascal's eviction reignited the housing debate"
     },
     {
+      "title": "Super-subs help France demolish Belgium with late flurry",
+      "url": "https://www.aljazeera.com/sports/2026/10/5/super-subs-help-france-demolish-belgium-with-late-flurry?traffic_source=rss",
+      "date": "October 5, 2026",
+      "description": "Michael Olise scores twice and assists as France come from 1-0 with 13 minutes left to beat Belgium 4-1"
+    },
+    {
+      "title": "Ethiopia’s PM insists on access to Red Sea despite regional conflict threat",
+      "url": "https://www.aljazeera.com/news/2026/10/5/ethiopias-pm-insists-on-access-to-red-sea-despite-regional-conflict-threat?traffic_source=rss",
+      "date": "October 5, 2026",
+      "description": "Neighbouring countries say coastal states must govern Red Sea as fighting escalates in northern Ethiopia."
+    },
+    {
+      "title": "Brazil’s presidential race head for a tough runoff",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/5/brazils-presidential-race-head-for-a-tough-runoff?traffic_source=rss",
+      "date": "October 5, 2026",
+      "description": "Brazil is heading into a fiercely contested presidential runoff after the first round revealed major gains for Bolsonaro"
+    },
+    {
+      "title": "What’s next for Bosnia after elections?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/5/whats-next-for-bosnia-after-elections?traffic_source=rss",
+      "date": "October 5, 2026",
+      "description": "Bosnia and Herzegovina’s election strengthened nationalist parties."
+    },
+    {
       "title": "Can Yemen retake territory seized by Houthis?",
       "url": "https://www.aljazeera.com/video/inside-story/2026/10/5/can-yemen-retake-territory-seized-by-houthis?traffic_source=rss",
       "date": "October 5, 2026",
@@ -3674,36 +3718,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/5/nationalist-conservative-parties-enjoy-a-boost-in-bosnia-and-herzegovina?traffic_source=rss",
       "date": "October 5, 2026",
       "description": "Results raise the prospect of a new conservative alliance and further political polarisation, analysts say."
-    },
-    {
-      "title": "LIVE: France vs Belgium – UEFA Nations League",
-      "url": "https://www.aljazeera.com/sports/liveblog/2026/10/5/live-france-vs-belgium-uefa-nations-league?traffic_source=rss",
-      "date": "October 5, 2026",
-      "description": "Build-up. teams and live text commentary stream of France's Nations League Group A1 game against Belgium in Paris"
-    },
-    {
-      "title": "Nigeria launches rescue after military plane crashes with 32 aboard",
-      "url": "https://www.aljazeera.com/news/2026/10/5/nigeria-launches-rescue-after-military-plane-crashes-with-32-aboard?traffic_source=rss",
-      "date": "October 5, 2026",
-      "description": "Nigeria launches rescue operation after military aircraft carrying 32 people crashes in Ondo state."
-    },
-    {
-      "title": "Yemeni gov’t forces aim for Sanaa, but Houthi defeat will be a challenge",
-      "url": "https://www.aljazeera.com/news/2026/10/5/yemeni-govt-forces-aim-for-sanaa-but-houthi-defeat-will-be-a-challenge?traffic_source=rss",
-      "date": "October 5, 2026",
-      "description": "Yemeni government forces claim strategic advances near Bab al-Mandeb strait amid a major anti-Houthi offensive."
-    },
-    {
-      "title": "What happened between Ireland and Israel in their Nations League match?",
-      "url": "https://www.aljazeera.com/sports/2026/10/5/what-happened-between-ireland-and-israel-in-their-nations-league-match?traffic_source=rss",
-      "date": "October 5, 2026",
-      "description": "Spitting allegations, no handshakes, and bowed heads headlined the second Nations League fixture."
-    },
-    {
-      "title": "A drive through the West Bank",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/5/a-drive-through-the-west-bank?traffic_source=rss",
-      "date": "October 5, 2026",
-      "description": "Palestinians in the occupied West Bank are left asking world leaders: where exactly is our state meant to go?"
     }
   ]
 }
