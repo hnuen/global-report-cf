@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T15:08:15.250Z",
+  "updatedAt": "2026-10-06T17:08:08.863Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261005",
@@ -3020,7 +3020,14 @@
       "description": "With these new listings, a total of 597 vessels are now listed by the EU."
     }
   ],
-  "unNotices": [],
+  "unNotices": [
+    {
+      "title": "Security Council 1518 Sanctions Committee Removes One Entry from Its Sanctions List",
+      "url": "https://press.un.org/en/2026/sc16468.doc.htm",
+      "date": "October 6, 2026",
+      "description": "On 5 October 2026, the Security Council Committee established pursuant to resolution 1518 (2003) removed the following entry from its Sanctions List of individuals and entities:"
+    }
+  ],
   "bbcNews": [
     {
       "title": "Ship sinks and crew missing after Black Sea drone attack",
@@ -3029,10 +3036,10 @@
       "description": "It is not clear who is behind the attacks which come as Russia intensifies strikes in the Black Sea as part of its war against Ukraine."
     },
     {
-      "title": "US 'watching closely' after plague researcher dies in Russia",
-      "url": "https://www.bbc.co.uk/news/articles/cv5yn3nwp5n5o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "White House defends Trump comment to let Iran 'take out' LA and San Diego",
+      "url": "https://www.bbc.co.uk/news/articles/c6r7yn8pknyxo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 6, 2026",
-      "description": "Donald Trump says the US was looking \"very strongly\" at the case of a lab technician who died at a research centre in Siberia."
+      "description": "Gavin Newsom called the remarks \"deranged\", but the White House said Trump was warning of the risk of a nuclear Iran."
     },
     {
       "title": "Fear and disruption for Ukraine's rail passengers as Russia escalates drone attacks",
@@ -3048,6 +3055,18 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Is Europe preparing for a wider war with Russia?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/6/is-europe-preparing-for-a-wider-war-with-russia?traffic_source=rss",
+      "date": "October 6, 2026",
+      "description": "A British war-game show simulating a Russian attack has drawn a nuclear warning from Moscow."
+    },
+    {
+      "title": "‘Not the act of a friend’: Israel’s deadline to close UK consulate nears",
+      "url": "https://www.aljazeera.com/news/2026/10/6/its-not-the-act-of-a-friend-or-ally-israel-moves-to-shut-uk-consulate?traffic_source=rss",
+      "date": "October 6, 2026",
+      "description": "Former British consul Sir Vincent Fean says Israel is acting unlawfully in the wake of a new wave of sanctions."
+    },
     {
       "title": "What new measures is Iran taking to counter US economic pressure?",
       "url": "https://www.aljazeera.com/news/2026/10/6/what-new-measures-is-iran-taking-to-counter-us-economic-pressure?traffic_source=rss",
@@ -3071,12 +3090,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/6/mapping-where-us-bombers-are-based-around-the-world?traffic_source=rss",
       "date": "October 6, 2026",
       "description": "The US has pulled its B-1 bombers from RAF Fairford amid Iran fears. Here's where else they can fly from."
-    },
-    {
-      "title": "Russia plague quarantine following lab death: Should we be worried?",
-      "url": "https://www.aljazeera.com/news/2026/10/6/russia-plague-quarantine-following-lab-death-should-we-be-worried?traffic_source=rss",
-      "date": "October 6, 2026",
-      "description": "Plague is still endemic to Siberia, the location of the first known prehistoric human outbreak."
     }
   ],
   "occNews": [
@@ -3186,12 +3199,6 @@
       "description": "New York Attorney General Letitia James is investigating the rape allegations, but the lawyer says comments she made on the case should disqualify her."
     },
     {
-      "title": "Fort Hood shooter to be executed by firing squad - a first for US military since World War Two",
-      "url": "https://www.bbc.co.uk/news/articles/cq8ezkkkrpy1o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 6, 2026",
-      "description": "Nidal Malik Hasan killed 13 unarmed soldiers and injured another 32 in the deadliest ever non-combat attack on an American military base."
-    },
-    {
       "title": "'Ghost particles' from space telescope wins physics Nobel",
       "url": "https://www.bbc.co.uk/news/articles/cq203mymlvkeo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 6, 2026",
@@ -3202,6 +3209,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cqzrd7v1j163o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 6, 2026",
       "description": "The patient had been living in DR Congo, where more than 4,000 people have died from the disease this year."
+    },
+    {
+      "title": "Fort Hood shooter to be executed by firing squad - a first for US military since World War Two",
+      "url": "https://www.bbc.co.uk/news/articles/cq8ezkkkrpy1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 6, 2026",
+      "description": "Nidal Malik Hasan killed 13 unarmed soldiers and injured another 32 in the deadliest ever non-combat attack on an American military base."
     },
     {
       "title": "AfD candidate elected speaker of German regional parliament for first time",
@@ -3243,7 +3256,7 @@
       "title": "US televangelist Jim Bakker, disgraced from sex scandal and fraud, dies at 86",
       "url": "https://www.bbc.co.uk/news/articles/ckly02gd1xppo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 6, 2026",
-      "description": "US televangelist Jim Bakker co-founded The PTL Club with his then-wife Tammy Faye before being jailed for fraud and conspiracy."
+      "description": "Jim Bakker co-founded The PTL Club with his then-wife Tammy Faye before being jailed for fraud and conspiracy."
     },
     {
       "title": "Separatist party projected to win Quebec election, adding new test to Canada's unity",
@@ -3270,12 +3283,6 @@
       "description": "Police have said it is “strongly suspected” that the incident was caused by a gas leak."
     },
     {
-      "title": "Blue Planet and Gandhi composer George Fenton dies aged 76",
-      "url": "https://www.bbc.co.uk/news/articles/cwz0v40r98n9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 5, 2026",
-      "description": "The musician received five Oscar nominations, and soundtracked dozens of memorable nature films."
-    },
-    {
       "title": "The small African nation ready for Messi's big night",
       "url": "https://www.bbc.co.uk/sport/football/articles/cqly0lx461m8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 6, 2026",
@@ -3294,7 +3301,7 @@
       "description": "US voters will head to the polls on 3 November in a ballot that could have a major impact on Donald Trump’s presidency."
     },
     {
-      "title": "'There are now thousands of people': At the scene of student protests in Lille",
+      "title": "Watch: At the scene of student protests in Lille",
       "url": "https://www.bbc.co.uk/news/videos/cwzd650e2jqdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 6, 2026",
       "description": "The BBC's Europe correspondent Nick Beake reports from a large demonstration in northern France."
@@ -3310,6 +3317,12 @@
       "url": "https://www.bbc.co.uk/news/videos/cwp9g54v9xjlo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 5, 2026",
       "description": "Millions of Brazilians took to the polls on Sunday for the first round of the country's presidential elections."
+    },
+    {
+      "title": "NHS supply lorry drivers to strike in pay dispute",
+      "url": "https://www.bbc.co.uk/news/articles/ckqxnwev78dro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 6, 2026",
+      "description": "Drivers who deliver medical equipment to hospitals across England reject a 4% pay increase."
     },
     {
       "title": "Paramount takes over Warner Bros in $110bn Hollywood merger",
@@ -3468,12 +3481,6 @@
       "description": "The man was beaten with hammers until he transferred hundreds of thousands of pounds of cryptocurrency."
     },
     {
-      "title": "OpenAI fires workers for 'mishandling sensitive information'",
-      "url": "https://www.bbc.co.uk/news/articles/c6y9z9r4ejzwo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 2, 2026",
-      "description": "The former employees were investigated for sharing data with an outside AI evaluation group."
-    },
-    {
       "title": "The AI telling farmers when to harvest",
       "url": "https://www.bbc.co.uk/news/articles/cgk53dkmyxko?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 30, 2026",
@@ -3552,7 +3559,7 @@
       "description": "Why a growing number of parents are opening pensions for their children."
     },
     {
-      "title": "Irish budget to tackle childcare and energy costs",
+      "title": "Irish budget tackles childcare and energy costs",
       "url": "https://www.bbc.co.uk/news/articles/c9kgjn3zng1ko?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 6, 2026",
       "description": "The threshold at which people start paying the higher income tax rate is also expected to increase."
@@ -3630,6 +3637,42 @@
       "description": "Protests about 87-year-old Mariacarmen Abascal's eviction reignited the housing debate"
     },
     {
+      "title": "What would it take for the Yemen offensive to succeed?",
+      "url": "https://www.aljazeera.com/opinions/2026/10/6/what-would-it-take-for-the-yemen-offensive-to-succeed?traffic_source=rss",
+      "date": "October 6, 2026",
+      "description": "Territorial gains alone will not be enough to change the trajectory of the war."
+    },
+    {
+      "title": "FIFA chief Infantino’s ‘abuse of power’ questioned by Norway in complaints",
+      "url": "https://www.aljazeera.com/sports/2026/10/6/fifa-chief-infantinos-abuse-of-power-questioned-by-norway-in-complaints?traffic_source=rss",
+      "date": "October 6, 2026",
+      "description": "The three complaints filed by Norway's football body ask FIFA's Ethics Committee to examine Infantino's conduct."
+    },
+    {
+      "title": "LIVE: Croatia vs Spain – UEFA Nations League",
+      "url": "https://www.aljazeera.com/sports/liveblog/2026/10/6/live-crostia-vs-spain-uefa-nations-league?traffic_source=rss",
+      "date": "October 6, 2026",
+      "description": "Follow updates, with build-up and team news, from our live text commentary stream coverage as Lamine Yamal headlines."
+    },
+    {
+      "title": "Birzeit University memorial destruction aims to crush Palestinian memory",
+      "url": "https://www.aljazeera.com/features/2026/10/6/birzeit-university-memorial-destruction-aims-to-crush-palestinian-memory?traffic_source=rss",
+      "date": "October 6, 2026",
+      "description": "Israeli soldiers removed the monument to students and alumni killed by Israel and replaced it with a fig sapling."
+    },
+    {
+      "title": "Photos: School blockades, street protests grip France",
+      "url": "https://www.aljazeera.com/gallery/2026/10/6/photos-france-braces-for-day-of-school-blockades-and-street-protests?traffic_source=rss",
+      "date": "October 6, 2026",
+      "description": "Protesters increased pressure on the government of outgoing President Emmanuel Macron demanding more education funding."
+    },
+    {
+      "title": "Bulgaria searches for missing crew after drones hit two ships in Black Sea",
+      "url": "https://www.aljazeera.com/news/2026/10/6/bulgaria-says-two-commercial-vessels-were-hit-in-drone-attack-in-its-waters?traffic_source=rss",
+      "date": "October 6, 2026",
+      "description": "Bulgaria launches search operation after Togo-flagged Alfa Watan sinks at scene of attack."
+    },
+    {
       "title": "In Gaza, we cannot even begin to recover from trauma",
       "url": "https://www.aljazeera.com/opinions/2026/10/6/in-gaza-we-cannot-even-begin-to-recover-from-trauma?traffic_source=rss",
       "date": "October 6, 2026",
@@ -3660,16 +3703,16 @@
       "description": "Acclaimed Indian author talks to Al Jazeera on the Gen Z-led protests and allegations of vote theft by Modi government."
     },
     {
-      "title": "UK police arrest British national linked to airbase incident",
+      "title": "UK police arrest British national linked to RAF Fairford airbase incident",
       "url": "https://www.aljazeera.com/news/2026/10/6/uk-police-arrest-british-national-linked-to-airbase-incident?traffic_source=rss",
       "date": "October 6, 2026",
       "description": "22-year old British national arrested on suspicion of a terror offence after other suspects released on bail."
     },
     {
-      "title": "Demonstrators clash with riot police in France as education protests mount",
+      "title": "France suspends high school as protestors clash with police",
       "url": "https://www.aljazeera.com/news/2026/10/6/demonstrators-clash-with-riot-police-in-france-as-education-protests-mount?traffic_source=rss",
       "date": "October 6, 2026",
-      "description": "School blockades and clashes intensify in France as frustration rises over government education policy."
+      "description": "French Prime Minister warns there is “no room for tolerance for violence” and urged France to \"stand together\"."
     },
     {
       "title": "Former German spy chief arrested on suspicion of treason and espionage",
@@ -3706,48 +3749,6 @@
       "url": "https://www.aljazeera.com/sports/2026/10/6/tennis-world-number-one-sinner-will-not-play-in-2026-due-to-knee-injury?traffic_source=rss",
       "date": "October 6, 2026",
       "description": "Jannik Sinner has not competed in a tournament since winning at Wimbledon in July and will continue his recovery."
-    },
-    {
-      "title": "How Palestinian reporters defied Israel’s genocide to redefine journalism",
-      "url": "https://www.aljazeera.com/news/2026/10/6/how-palestinian-reporters-defied-israels-genocide-to-redefine-journalism?traffic_source=rss",
-      "date": "October 6, 2026",
-      "description": "Western media under scrutiny for promoting Israeli narrative rather than standing up for vulnerable journalists in Gaza."
-    },
-    {
-      "title": "India opposition leaders briefly arrested in protest against election chief",
-      "url": "https://www.aljazeera.com/news/2026/10/6/india-opposition-leaders-briefly-arrested-in-protest-against-election-chief?traffic_source=rss",
-      "date": "October 6, 2026",
-      "description": "Protesters are demanding the resignation of Chief Election Commissioner Gyanesh Kumar."
-    },
-    {
-      "title": "Pro-Palestine Greens challenge Labour’s grip on Starmer’s former seat",
-      "url": "https://www.aljazeera.com/news/2026/10/6/pro-palestine-greens-challenge-labours-grip-on-starmers-former-seat?traffic_source=rss",
-      "date": "October 6, 2026",
-      "description": "Green Party leader Zack Polanski hopes to shake Labour, which has held Holborn since the seat was created in 1983."
-    },
-    {
-      "title": "Singapore refers eight civil servants to police over property purchases",
-      "url": "https://www.aljazeera.com/economy/2026/10/6/singapore-refers-eight-civil-servants-to-police-over-property-purchases?traffic_source=rss",
-      "date": "October 6, 2026",
-      "description": "Minister announces referrals after think tank paper finds link between purchases and unannounced MRT stations."
-    },
-    {
-      "title": "Saudi Arabia says three wounded in attacks on airports near Yemen border",
-      "url": "https://www.aljazeera.com/news/2026/10/6/saudi-arabia-says-three-wounded-in-attacks-on-airports-near-yemen-border?traffic_source=rss",
-      "date": "October 6, 2026",
-      "description": "Saudi aviation authority reports severe injuries and damage following Houthi strikes on Jazan and Najran airports."
-    },
-    {
-      "title": "Fort Hood shooter to be executed by firing squad: All to know",
-      "url": "https://www.aljazeera.com/news/2026/10/6/fort-hood-shooter-to-be-executed-by-firing-squad-all-to-know?traffic_source=rss",
-      "date": "October 6, 2026",
-      "description": "The US Army is averse to capital punishment and has not carried out an execution in decades."
-    },
-    {
-      "title": "UEFA to investigate spitting incident at Ireland-Israel football match",
-      "url": "https://www.aljazeera.com/sports/2026/10/6/uefa-to-investigate-spitting-incident-at-ireland-israel-football?traffic_source=rss",
-      "date": "October 6, 2026",
-      "description": "An Israeli player is accused of spitting on an Irish coach as the teams returned to their dressing rooms at half-time."
     }
   ]
 }
