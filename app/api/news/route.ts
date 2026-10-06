@@ -4,6 +4,7 @@ import { loadBriefing }  from "@/src/lib/orchestrator";
 import { loadArticleLibrary } from "@/src/lib/article-library";
 import { SEED_DATA }     from "@/src/lib/seed";
 import { isDisplayableNewsArticle } from "@/src/lib/text-quality";
+import { hasSecret } from "@/src/lib/request-auth";
 
 export const revalidate = 0;
 export const dynamic = "force-dynamic";
@@ -24,17 +25,34 @@ function parseDate(d: string): number {
   } catch { return 0; }
 }
 
+const PUBLIC_CACHE = {
+  "Cache-Control": "public, max-age=60, s-maxage=300, stale-while-revalidate=900",
+};
 const NO_CACHE = { "Cache-Control": "no-store, no-cache, must-revalidate", "Pragma": "no-cache" };
+const PUBLIC_HISTORY_PER_SECTION = 100;
 
-export async function GET() {
+export async function GET(request: Request) {
   try {
+    const url = new URL(request.url);
+    const archiveRequested = url.searchParams.get("archive") === "1";
+    const forceFresh = url.searchParams.get("fresh") === "1";
+    if (archiveRequested && !hasSecret(request, process.env.CRON_SECRET, "x-cron-secret")) {
+      return NextResponse.json({ error: "Unauthorized" }, { status: 401, headers: NO_CACHE });
+    }
+
     const briefing = await loadBriefing();
     const source = briefing ?? SEED_DATA;
     const data = { ...source, articles: [...(source.articles ?? [])] };
     // Merge 6-month article library so historical articles survive full
     // briefing replacements (merge=false Gemini runs wipe current articles).
     try {
-      const library = await loadArticleLibrary();
+      // Normal page traffic only needs recent history. Loading the entire
+      // multi-megabyte archive on every browser poll exhausted Upstash
+      // bandwidth. The authenticated weekly backup remains able to request
+      // the complete library with ?archive=1.
+      const library = await loadArticleLibrary(
+        archiveRequested ? undefined : { limitPerSection: PUBLIC_HISTORY_PER_SECTION }
+      );
       if (library.length > 0 && data.articles?.length) {
         const seen = new Set<string>();
         for (const a of data.articles) {
@@ -56,8 +74,8 @@ export async function GET() {
         .sort((a, b) => parseDate(b.date) - parseDate(a.date))
         .map((a, i) => ({ ...a, id: i + 1 }));
     }
-    return NextResponse.json(data, { headers: NO_CACHE });
+    return NextResponse.json(data, { headers: archiveRequested || forceFresh ? NO_CACHE : PUBLIC_CACHE });
   } catch (e) {
-    return NextResponse.json(SEED_DATA, { headers: NO_CACHE });
+    return NextResponse.json(SEED_DATA, { headers: PUBLIC_CACHE });
   }
 }

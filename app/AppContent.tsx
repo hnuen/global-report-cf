@@ -653,9 +653,11 @@ export default function GlobalMonitor() {
   const AUTO_REFRESH_MS = 30 * 60 * 1000; // 30 minutes
 
   useEffect(() => {
-    const newsUrl = () => `/api/news?t=${Date.now()}`;
-    const loadNews = () =>
-      fetch(newsUrl(), { cache: "no-store" }).then(r=>r.json()).then((fresh: Briefing) => {
+    let loadingNews = false;
+    const loadNews = (initial = false) => {
+      if (loadingNews || (!initial && document.hidden)) return Promise.resolve();
+      loadingNews = true;
+      return fetch("/api/news").then(r=>r.json()).then((fresh: Briefing) => {
         setData(prev => {
           if (!prev) return fresh;
           const freshCount = fresh?.articles?.length ?? 0;
@@ -665,11 +667,14 @@ export default function GlobalMonitor() {
           }
           return prev;
         });
-      }).catch(() => {});
+      }).catch(() => {
+        if (initial) setError("Could not load briefing.");
+      }).finally(() => { loadingNews = false; });
+    };
 
-    loadNews(); // initial load
-    fetch(newsUrl(), { cache: "no-store" }).then(r=>r.json()).then(setData)
-      .catch(()=>setError("Could not load briefing."));
+    // One initial request. Previously this effect fetched the same multi-MB
+    // Redis-backed payload twice on every page opening.
+    loadNews(true);
     fetch("/api/penalties").then(r=>r.json())
       .then((d:{records:PenaltyRecord[];years:number[]})=>{ setPenalties(d.records); setPenaltyYears(d.years); setPenaltiesLoading(false); })
       .catch((e)=>{ setPenaltiesError("Failed to load: "+String(e)); setPenaltiesLoading(false); });
@@ -678,7 +683,14 @@ export default function GlobalMonitor() {
       .catch(()=>{});
 
     const timer = setInterval(loadNews, AUTO_REFRESH_MS);
-    return () => clearInterval(timer);
+    const refreshWhenVisible = () => {
+      if (!document.hidden) loadNews();
+    };
+    document.addEventListener("visibilitychange", refreshWhenVisible);
+    return () => {
+      clearInterval(timer);
+      document.removeEventListener("visibilitychange", refreshWhenVisible);
+    };
   }, []);
 
   const setPenYear = (y:number|null) => {
@@ -728,7 +740,7 @@ export default function GlobalMonitor() {
       for (let i = 0; i < 15; i++) {
         await new Promise(r => setTimeout(r, i === 0 ? 1000 : 3000));
         try {
-          const newsRes = await fetch(`/api/news?t=${Date.now()}`, { cache: "no-store" });
+          const newsRes = await fetch("/api/news?fresh=1", { cache: "no-store" });
           const newsData = await newsRes.json();
           if (newsData?.lastUpdated && newsData.lastUpdated !== previousUpdated) {
             setData(newsData); setExpanded({});
@@ -741,7 +753,7 @@ export default function GlobalMonitor() {
       // DO NOT window.location.reload() — that resets the active section to "all".
       if (!detected) {
         try {
-          const finalRes = await fetch(`/api/news?t=${Date.now()}`, { cache: "no-store" });
+          const finalRes = await fetch("/api/news?fresh=1", { cache: "no-store" });
           const finalData = await finalRes.json().catch(() => null);
           if (finalData?.articles?.length) { setData(finalData); setExpanded({}); }
         } catch { /* ignore */ }
@@ -790,7 +802,7 @@ export default function GlobalMonitor() {
           const bgData = await bgRes.json().catch(() => ({}));
           console.log(`[bg-refresh] Group ${groupNum} done — ${bgData.newArticles ?? 0} new articles`);
           if ((bgData.newArticles ?? 0) > 0) {
-            const fresh = await fetch(`/api/news?t=${Date.now()}`, { cache: "no-store" });
+            const fresh = await fetch("/api/news?fresh=1", { cache: "no-store" });
             const freshData = await fresh.json().catch(() => null);
             if (freshData?.articles?.length) setData(freshData);
           }

@@ -76,3 +76,20 @@ test("persistent mutations cannot silently fall back to process memory", async (
   for (const source of [save, refresh, orchestrator]) assert.match(source, /requirePersistent:\s*true/);
 });
 
+test("public news traffic cannot repeatedly download the full Redis archive", async () => {
+  const [news, app, backup] = await Promise.all([
+    read("app/api/news/route.ts"),
+    read("app/AppContent.tsx"),
+    read(".github/workflows/backup-articles.yml"),
+  ]);
+  assert.match(news, /PUBLIC_HISTORY_PER_SECTION\s*=\s*100/);
+  assert.match(news, /limitPerSection:\s*PUBLIC_HISTORY_PER_SECTION/);
+  assert.match(news, /s-maxage=300/);
+  assert.match(news, /archiveRequested[\s\S]*hasSecret/);
+  assert.doesNotMatch(app, /\/api\/news\?t=\$\{Date\.now\(\)\}/);
+  assert.match(app, /document\.hidden/);
+  assert.equal((app.match(/loadNews\(true\)/g) ?? []).length, 1);
+  assert.match(backup, /\/api\/news\?archive=1/);
+  assert.match(backup, /x-cron-secret/);
+});
+
