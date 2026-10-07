@@ -71,6 +71,10 @@ const SOURCE_SECTION_MAP: Record<string, Section> = {
   "Federal Reserve News":             "economics",
   "Federal Reserve — Press Releases":  "economics",
   "Federal Reserve Enforcement Actions": "penalties",
+  "Financial Times — Sanctions Evasion": "sanctions",
+  "New York Times — Sanctions Evasion": "sanctions",
+  "Financial Times — Military Tactics": "regions",
+  "New York Times — Military Tactics": "regions",
   "Google News — BIS Export Controls":        "bis",
   "Google News — BIS Entity List":            "bis",
   "Google News — China Export Controls":      "bis",
@@ -152,6 +156,10 @@ const SOURCE_SECTION_MAP: Record<string, Section> = {
 };
 
 const SOURCE_CATEGORY_MAP: Record<string, string> = {
+  "Financial Times — Sanctions Evasion": "Evasion Reporting",
+  "New York Times — Sanctions Evasion": "Evasion Reporting",
+  "Financial Times — Military Tactics": "Military Tactics Reporting",
+  "New York Times — Military Tactics": "Military Tactics Reporting",
   "OFAC Recent Actions":              "OFAC",
   "OFAC General Licenses":            "OFAC General Licence",
   "U.S. Treasury — News":             "U.S. Treasury",
@@ -237,6 +245,10 @@ let articleId = 1000;
 
 // Friendly short source labels
 const SOURCE_DISPLAY_NAMES: Record<string, string> = {
+  "Financial Times — Sanctions Evasion": "Financial Times",
+  "New York Times — Sanctions Evasion": "New York Times",
+  "Financial Times — Military Tactics": "Financial Times",
+  "New York Times — Military Tactics": "New York Times",
   "OFAC Sanctions List Updates":         "OFAC",
   "OFAC Recent Actions":                 "OFAC",
   "OFAC Press Releases":                 "OFAC",

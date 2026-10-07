@@ -16,6 +16,8 @@ function configuredRedis(): { url: string; token: string } | null {
 export function publisherDomainsForSource(sourceName: string): string[] {
   if (sourceName.startsWith("AP News ")) return ["apnews.com"];
   if (sourceName.startsWith("CNN ")) return ["cnn.com"];
+  if (sourceName.startsWith("Financial Times ")) return ["ft.com"];
+  if (sourceName.startsWith("New York Times ")) return ["nytimes.com"];
   return [];
 }
 
@@ -31,7 +33,7 @@ function isAllowedPublisherUrl(value: string, domains: string[]): boolean {
 }
 
 /** Extract a publisher URL before the RSS description HTML is stripped. */
-export function extractPublisherUrl(descriptionHtml: string, domains = ["apnews.com", "cnn.com"]): string | null {
+export function extractPublisherUrl(descriptionHtml: string, domains = ["apnews.com", "cnn.com", "ft.com", "nytimes.com"]): string | null {
   const decoded = descriptionHtml
     .replace(/&amp;/g, "&")
     .replace(/&#38;/g, "&")

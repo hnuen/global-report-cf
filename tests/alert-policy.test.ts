@@ -16,7 +16,7 @@ import { hasDirectArticleUrl, isDisplayableNewsArticle, isLikelyCorruptedText, i
 import { parseEnforcementActionsPage } from "../src/lib/fincen-fetcher.ts";
 import { FINCEN_PENALTIES } from "../src/lib/fincen-penalties.ts";
 import { buildBriefingFromSources } from "../src/lib/official-briefing.ts";
-import { extractPublisherUrl, MAX_LINK_RESOLUTIONS_PER_BATCH, resolveGoogleNewsPublisherUrl, resolveMediaSourceLinks } from "../src/lib/news-link-resolver.ts";
+import { extractPublisherUrl, MAX_LINK_RESOLUTIONS_PER_BATCH, publisherDomainsForSource, resolveGoogleNewsPublisherUrl, resolveMediaSourceLinks } from "../src/lib/news-link-resolver.ts";
 
 function briefing(articles: Article[]): Briefing {
   return { lastUpdated: "test", articles, sidebar: {} as Briefing["sidebar"] };
@@ -250,6 +250,25 @@ test("AP and CNN source families map to their intended sections", () => {
   }]);
   assert.equal(briefing.articles.find(article => article.source === "Associated Press")?.section, "regions");
   assert.equal(briefing.articles.find(article => article.source === "CNN")?.section, "economics");
+});
+
+test("FT and NYT discovery keeps media provenance and separates evasion from military tactics", () => {
+  const cases = [
+    ["Financial Times — Sanctions Evasion", "https://www.ft.com/content/evasion-story", "sanctions", "Financial Times"],
+    ["New York Times — Military Tactics", "https://www.nytimes.com/2026/09/29/world/military-tactics.html", "regions", "New York Times"],
+  ] as const;
+  for (const [name, url, section, publisher] of cases) {
+    assert.ok(publisherDomainsForSource(name).length > 0);
+    const result = buildBriefingFromSources([{
+      name, url: "https://news.google.com/rss/search?q=example",
+      content: `• Detailed reporting describes developments and their implications ||| ${url} ||| DATE:2026-09-29`,
+      fetchedAt: "2026-09-29T12:00:00Z",
+    }]);
+    const article = result.articles.find(item => item.sourceUrl === url);
+    assert.equal(article?.source, publisher);
+    assert.equal(article?.section, section);
+    assert.equal(article && sourceGroupForArticle(article), "media");
+  }
 });
 
 test("admin threshold changes sensitivity but cannot bypass safety gates", () => {

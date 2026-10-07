@@ -362,6 +362,11 @@ const SOURCES: Array<{ name: string; url: string; official?: boolean; group: 2|3
   { name: "BBC News â€” Business",                   url: "https://feeds.bbci.co.uk/news/business/rss.xml", group: 4, sections: ["economics","penalties","occ"] },
   { name: "CNN — World & Sanctions",               url: "https://news.google.com/rss/search?q=site:cnn.com+sanctions+OFAC+treasury+designations+2026&hl=en-US&gl=US&ceid=US:en", group: 4, sections: ["sanctions","economics"] },
   { name: "CNN — Business & Trade",                url: "https://news.google.com/rss/search?q=site:cnn.com+business+trade+export+controls+economy+2026&hl=en-US&gl=US&ceid=US:en", group: 4, sections: ["economics","bis"] },
+  // Publisher-scoped discovery only: retain headline, date and article link, never paywalled text.
+  { name: "Financial Times — Sanctions Evasion", url: "https://news.google.com/rss/search?q=site%3Aft.com+%28sanctions+OR+export+controls%29+%28evasion+OR+circumvention+OR+smuggling%29&hl=en-US&gl=US&ceid=US:en", group: 4, sections: ["sanctions","bis"] },
+  { name: "New York Times — Sanctions Evasion", url: "https://news.google.com/rss/search?q=site%3Anytimes.com+%28sanctions+OR+export+controls%29+%28evasion+OR+circumvention+OR+smuggling%29&hl=en-US&gl=US&ceid=US:en", group: 4, sections: ["sanctions","bis"] },
+  { name: "Financial Times — Military Tactics", url: "https://news.google.com/rss/search?q=site%3Aft.com+%28invasion+OR+war%29+%28tactics+OR+drones+OR+electronic+warfare%29&hl=en-US&gl=US&ceid=US:en", group: 4, sections: ["regions"] },
+  { name: "New York Times — Military Tactics", url: "https://news.google.com/rss/search?q=site%3Anytimes.com+%28invasion+OR+war%29+%28tactics+OR+drones+OR+electronic+warfare%29&hl=en-US&gl=US&ceid=US:en", group: 4, sections: ["regions"] },
   ];
 
 // â”€â”€ OFAC date-specific Google News queries (last 5 days) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
