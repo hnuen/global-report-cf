@@ -515,7 +515,7 @@ test("cooldown-only Telegram and ntfy checks are reported as skipped", () => {
 test("patched transitive build dependencies are pinned", () => {
   const pkg = JSON.parse(readFileSync(new URL("../package.json", import.meta.url), "utf8"));
   assert.equal(pkg.overrides.postcss, "8.5.23");
-  assert.equal(pkg.overrides.sharp, "0.35.4");
+  assert.equal(pkg.overrides.sharp, "0.35.5");
 });
 
 
