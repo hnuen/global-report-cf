@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T17:08:12.109Z",
+  "updatedAt": "2026-10-07T19:08:08.489Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261005",
@@ -3029,10 +3029,10 @@
       "description": "Fears that the death may have been caused by pneumonic plague has prompted calls for more transparency from Russia."
     },
     {
-      "title": "Zelensky condemns 'vile' large-scale Russian attacks that killed 24",
+      "title": "Children killed while they slept as Russian missile kills 19 in block of flats",
       "url": "https://www.bbc.co.uk/news/articles/ckr5ym098vdeo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 7, 2026",
-      "description": "Rescue workers are continuing a search for residents after an apartment building in Pryluky was destroyed."
+      "description": "Five children are among the victims of a strike that destroyed 30 flats in northern Ukraine as families slept."
     },
     {
       "title": "What is pneumonic plague and how does it spread?",
@@ -3047,7 +3047,14 @@
       "description": "The US and Russia have each offered to help each other tackling infectious diseases."
     }
   ],
-  "ajNews": [],
+  "ajNews": [
+    {
+      "title": "At least 24 killed as Russia launches massive attack on Ukraine",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/7/at-least-24-killed-as-russia-launches-massive-attack-on-ukraine?traffic_source=rss",
+      "date": "October 7, 2026",
+      "description": "Ukraine says Russia launched a massive overnight barrage of 130 drones, 48 cruise missiles and ballistic missiles"
+    }
+  ],
   "occNews": [
     {
       "title": "OCC Announces Enforcement Actions for September 2026",
@@ -3056,7 +3063,36 @@
       "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for September 2026."
     }
   ],
-  "economicsNews": [],
+  "economicsNews": [
+    {
+      "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
+      "date": "October 7, 2026",
+      "description": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "date": "September 16, 2026",
+      "description": "Federal Reserve issues FOMC statement",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm",
+      "date": "September 16, 2026",
+      "description": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260825a.htm",
+      "date": "August 25, 2026",
+      "description": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
+      "category": "Monetary Policy"
+    }
+  ],
   "bisNews": [
     {
       "title": "URAL Airlines JSC, Utrenniy Lane 1-g, Yekaterinburg, Russia 620025; Order Renewing Temporary Denial of Export Privileges",
@@ -3175,7 +3211,7 @@
       "description": "Guojun Xuan and Silvia Zhang were arrested at their Arcadia mansion after 21 children were removed from their custody last year."
     },
     {
-      "title": "How did Christa Pike survive two lethal injections - and what happens now?",
+      "title": "What happened in the failed execution of Christa Pike - and how did she survive?",
       "url": "https://www.bbc.co.uk/news/articles/ckge4eql4q7eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 7, 2026",
       "description": "The convicted killer of Colleen Slemmer is said to be awake and speaking in hospital in Tennessee after an execution attempt."
@@ -3457,7 +3493,7 @@
       "description": "More companies are tying career progression to AI use: is that fair?"
     },
     {
-      "title": "'Wear more clothes if it's cold,' schools told as energy bills rise",
+      "title": "No child should have to learn in a cold classroom - children's commissioner",
       "url": "https://www.bbc.co.uk/news/articles/cw0k08nnz07go?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 7, 2026",
       "description": "The EA suggests cost-saving measures as it warns school gas and electricity bills are set to rise."
@@ -3541,6 +3577,84 @@
       "description": "The minimum price of alcohol (MUP) in Wales has risen by 30%."
     },
     {
+      "title": "Ultra-Orthodox rabbi’s anti-Zionist remarks stir Israel election row",
+      "url": "https://www.aljazeera.com/news/2026/10/7/ultra-orthodox-rabbis-anti-zionist-remarks-stir-israel-election-row?traffic_source=rss",
+      "date": "October 7, 2026",
+      "description": "Rabbi Dov Lando's comments expose tensions over Zionism, conscription and Netanyahu's ultra-Orthodox allies."
+    },
+    {
+      "title": "Witnesses spot Eritrean troops inside northern Ethiopia as tensions flare",
+      "url": "https://www.aljazeera.com/news/2026/10/7/witnesses-spot-eritrean-troops-inside-northern-ethiopia-as-tensions-flare?traffic_source=rss",
+      "date": "October 7, 2026",
+      "description": "Eritrea dismisses allegation as Ethiopia's pretext for more war."
+    },
+    {
+      "title": "Kenya on high alert amid concern over screening after first Ebola death",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/7/kenya-on-high-alert-amid-concern-over-screening-after-first-ebola-death?traffic_source=rss",
+      "date": "October 7, 2026",
+      "description": "Kenya’s government has intensified Ebola preparedness efforts amid growing concern over lapses in border screening."
+    },
+    {
+      "title": "Saudi Arabia says Houthi attacks on airports killed three foreign nationals",
+      "url": "https://www.aljazeera.com/news/2026/10/7/saudi-arabia-says-three-foreign-nationals-killed-in-attacks-on-airports?traffic_source=rss",
+      "date": "October 7, 2026",
+      "description": "Moroccan, Algerian women killed in Abha, Sudanese national killed in Riyadh."
+    },
+    {
+      "title": "LSD – from counterculture to clinical trials",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/7/lsd-from-counterculture-to-clinical-trials?traffic_source=rss",
+      "date": "October 7, 2026",
+      "description": "From psychiatric research to counterculture and secret CIA mind-control experiments, LSD makes its way back to the lab."
+    },
+    {
+      "title": "Most Americans oppose Trump’s taxpayer-funded ‘golden age’ ads: Poll",
+      "url": "https://www.aljazeera.com/news/2026/10/7/most-americans-oppose-trumps-taxpayer-funded-golden-age-ads-poll?traffic_source=rss",
+      "date": "October 7, 2026",
+      "description": "Trump says he will pay for future ads, but the White House says taxpayers will not be reimbursed for past ones."
+    },
+    {
+      "title": "In El Salvador’s mass trials, lawyers struggle to defend hundreds",
+      "url": "https://www.aljazeera.com/news/2026/10/7/in-el-salvadors-mass-trials-lawyers-struggle-to-defend-hundreds?traffic_source=rss",
+      "date": "October 7, 2026",
+      "description": "Human Rights Watch says defendants face proceedings where lawyers have struggled to access case files."
+    },
+    {
+      "title": "How genocide in Gaza followed Bosnia’s painful pattern",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/7/how-genocide-in-gaza-followed-bosnias-painful-pattern?traffic_source=rss",
+      "date": "October 7, 2026",
+      "description": "Three years into Israel’s war on Gaza, we examine patterns that echo the Srebrenica genocide in Bosnia and Herzegovina."
+    },
+    {
+      "title": "US Supreme Court hears challenge to air force UXO detonations in Guam",
+      "url": "https://www.aljazeera.com/news/2026/10/7/us-supreme-court-hears-challenge-to-air-force-uxo-detonations-in-guam?traffic_source=rss",
+      "date": "October 7, 2026",
+      "description": "Advocacy group claims military sidestepped impact review, says case highlights lack of representation in US territories."
+    },
+    {
+      "title": "Jerusalem Daily: Gaza’s devastation, three years after October 7",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/7/jerusalem-daily-gazas-devastation-three-years-after-october-7?traffic_source=rss",
+      "date": "October 7, 2026",
+      "description": "Three years after the October 7 attacks, more than 74,000 people have been killed in Gaza."
+    },
+    {
+      "title": "Spanish unions call general strike over housing before snap election",
+      "url": "https://www.aljazeera.com/news/2026/10/7/spanish-unions-call-general-strike-over-housing-before-snap-election?traffic_source=rss",
+      "date": "October 7, 2026",
+      "description": "The general strike is the first to be jointly backed by Spain's two largest unions ‌in 14 years."
+    },
+    {
+      "title": "Over 100 arrested in Belgium student protests over education costs",
+      "url": "https://www.aljazeera.com/news/2026/10/7/over-100-arrested-in-belgium-student-protests-over-education-costs?traffic_source=rss",
+      "date": "October 7, 2026",
+      "description": "Protesting students have demanded education reforms in French-speaking areas of the country."
+    },
+    {
+      "title": "US mortgage rates hit their highest level in three years",
+      "url": "https://www.aljazeera.com/economy/2026/10/7/us-mortgage-rates-hit-their-highest-level-in-three-years?traffic_source=rss",
+      "date": "October 7, 2026",
+      "description": "Rising borrowing costs have pushed mortgage applications to their lowest level since February 2025."
+    },
+    {
       "title": "UEFA football leaders meet to shape strategy to oust FIFA’s Infantino",
       "url": "https://www.aljazeera.com/sports/2026/10/7/uefa-football-leaders-meet-to-shape-strategy-to-oust-fifas-infantino?traffic_source=rss",
       "date": "October 7, 2026",
@@ -3605,90 +3719,6 @@
       "url": "https://www.aljazeera.com/sports/2026/10/7/saudi-arabia-beat-uae-2-0-to-end-22-year-wait-for-arabian-gulf-cup-crown?traffic_source=rss",
       "date": "October 7, 2026",
       "description": "Goals from Hammam Al-Hammami and Firas al-Buraikan give the hosts their fourth Arabian Gulf Cup trophy."
-    },
-    {
-      "title": "Henri Kagan, Kenso Soai win Nobel chemistry prize for ‘mirror image’ work",
-      "url": "https://www.aljazeera.com/news/2026/10/7/henri-kagan-kenso-soai-win-chemistry-nobel-for-mirror-image-breakthrough?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "Scientists honoured for solving mystery of asymmetric molecules that has helped in manufacture of pharmaceuticals."
-    },
-    {
-      "title": "Coco Gauff says online racist abuse was ‘draining’ after China Open exit",
-      "url": "https://www.aljazeera.com/sports/2026/10/7/coco-gauff-says-online-racist-abuse-was-draining-after-china-open-exit?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "Coco Gauff admits the racism she suffered during China Open exhausted her after US tennis star missed out on quarters."
-    },
-    {
-      "title": "Israeli soldier assaults Palestinian woman in occupied West Bank",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/7/israeli-soldier-assaults-palestinian-woman-in-occupied-west-bank?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "An Israeli soldier was filmed assaulting a Palestinian woman during a raid on a family home in the occupied West Bank."
-    },
-    {
-      "title": "Palestinian killed, 16 wounded in Israeli pogrom in occupied West Bank",
-      "url": "https://www.aljazeera.com/news/2026/10/7/palestinian-killed-several-injured-in-israeli-pogrom-in-occupied-west-bank?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "A 44-year-old Palestinian man was killed during Israeli settler assaults on olive harvesters in the West Bank."
-    },
-    {
-      "title": "UK Greens are wrong – Zionism is not racism",
-      "url": "https://www.aljazeera.com/opinions/2026/10/7/the-uk-greens-are-wrong-zionism-is-not-racism?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "The party’s new policy reflects ignorance of Zionism and does nothing to advance Palestinian self-determination."
-    },
-    {
-      "title": "Yes, Zionism is racism",
-      "url": "https://www.aljazeera.com/opinions/2026/10/7/yes-zionism-is-racism?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "And there is nothing radical about declaring it. It is a fact of history."
-    },
-    {
-      "title": "South Korea’s military service exemption could be cut for athletes",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/7/south-koreas-military-service-exemption-could-be-cut-for-athletes?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "South Korea’s military service exemption could be cut for athletes after backlash"
-    },
-    {
-      "title": "German ex-spy chief arrested for treason: What we know",
-      "url": "https://www.aljazeera.com/news/2026/10/7/german-ex-spy-chief-arrested-for-treason-what-we-know?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "Former top spy August Hanning led the Federal Intelligence Service from 1998 to 2005."
-    },
-    {
-      "title": "Arsenal boss Mikel Arteta signs new contract with Premier League champions",
-      "url": "https://www.aljazeera.com/sports/2026/10/7/arsenal-boss-mikel-arteta-signs-new-contract-with-premier-league-champions?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "Following Arsenal's first Premier League win in 22 years, the London club has extended Mikel Arteta's contract to 2030."
-    },
-    {
-      "title": "Miles away from Argentina, Messi’s farewell hits home for his Indian fans",
-      "url": "https://www.aljazeera.com/sports/2026/10/7/lionel-messi-farewell-friendly-benin-india-fans-kerala-kolkata-mumbai?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "Almost 15,000km away from Argentina, Messi's magical presence on the field left a lasting mark on fans across India."
-    },
-    {
-      "title": "Justina Shiroka Pula: Kosovo’s new president, elected during a crisis",
-      "url": "https://www.aljazeera.com/news/2026/10/7/justina-shiroka-pula-kosovos-new-president-elected-during-a-crisis?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "An academic, former minister and a compromise choice, Pula was voted in by parliament amid protests."
-    },
-    {
-      "title": "US military aid to Israel continues three years into Gaza genocide",
-      "url": "https://www.aljazeera.com/news/2026/10/7/how-us-military-aid-to-israel-continues-three-years-into-gaza-genocide?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "US military aid and arms transfer continue unchanged, as US public sentiment shifts."
-    },
-    {
-      "title": "Doha Debates: Should We Trust the News?",
-      "url": "https://www.aljazeera.com/video/doha-debates/2026/10/7/doha-debates-should-we-trust-the-news?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "Is today’s news built to serve the truth?"
-    },
-    {
-      "title": "Israeli attacks across Gaza kill at least four Palestinians",
-      "url": "https://www.aljazeera.com/news/2026/10/7/israeli-attacks-across-gaza-kill-at-least-four-palestinians?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "Israeli air strike kills Palestinian Civil Defence rescue volunteer in northern Gaza."
     }
   ]
 }
