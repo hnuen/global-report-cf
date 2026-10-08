@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T17:08:15.590Z",
+  "updatedAt": "2026-10-08T19:08:06.393Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261008",
@@ -753,19 +753,21 @@
       "generalLicenses": [
         {
           "number": "1",
-          "title": "Cuba General License 1",
+          "title": "Transactions Authorized Pursuant to the Cuban Assets Control Regulations",
           "date": "May 7, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935571/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "4A",
-          "title": "Cuba General License 4A",
+          "title": "Authorizing Transactions for Third-Country Diplomatic and Consular Missions in Cuba",
           "date": "July 23, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936871/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         }
       ]
     },
@@ -1217,8 +1219,7 @@
           "date": "October 8, 2026",
           "expires": "October 23, 2026",
           "url": "https://ofac.treasury.gov/media/937096/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "134C",
@@ -3071,6 +3072,18 @@
   ],
   "ajNews": [
     {
+      "title": "Syria calls for independent probe into sinking of ship in Black Sea",
+      "url": "https://www.aljazeera.com/news/2026/10/8/syria-calls-for-independent-probe-into-sinking-of-ship-in-black-sea?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Syrian authorities questioned why search and rescue operations were called off before the fate of 10 sailors was known."
+    },
+    {
+      "title": "Dozens killed in Russian strike on civilian buses in eastern Ukraine",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/dozens-killed-in-russian-strike-on-civilian-buses-in-eastern-ukraine?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "At least 33 people were killed after a Russian strike hit two civilian buses in a city within the Donestsk region."
+    },
+    {
       "title": "Venezuela’s Nicolas Maduro and his wife charged over torture allegations",
       "url": "https://www.aljazeera.com/news/2026/10/8/venezuelas-nicolas-maduro-and-his-wife-charged-over-torture-allegations?traffic_source=rss",
       "date": "October 8, 2026",
@@ -3087,12 +3100,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/8/more-killed-in-kramatorsk-as-russia-targets-ukraines-transportation-system?traffic_source=rss",
       "date": "October 8, 2026",
       "description": "Russia’s attacks on trains, buses and ports are paralysing Ukraine’s transport network and endangering civilians."
-    },
-    {
-      "title": "South Korea to recall Ukraine envoy in diplomatic row over POWs",
-      "url": "https://www.aljazeera.com/news/2026/10/8/south-korea-recalls-envoy-to-kyiv-over-diplomatic-row-with-ukraine?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "Ukraine says it is open to 'constructive dialogue' over alleged transfer of North Korean soldiers to Seoul."
     }
   ],
   "occNews": [
@@ -3233,10 +3240,10 @@
       "description": "The US will provide $1.5bn (£1.1bn) under the deal that was negotiated after Trump cut USAID funding."
     },
     {
-      "title": "'Every day there is killing': Palestinians in Gaza face Israeli strikes despite ceasefire as peace deal stalls",
-      "url": "https://www.bbc.co.uk/news/articles/cmx2qlz7qrd4o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Adidas sues Australian label White Fox over four stripes design",
+      "url": "https://www.bbc.co.uk/news/articles/c9e8ld448km8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 8, 2026",
-      "description": "Many Palestinians are still living in cramped tent cities, with the US plan to end the war largely stalled."
+      "description": "The German sportswear brand wants the Sydney-based label to stop selling the clothes and pay damages."
     },
     {
       "title": "Tanker hit by multiple projectiles in Gulf off Qatar, maritime agency says",
@@ -3323,10 +3330,10 @@
       "description": "People with mental illness alone were to be eligible for assisted dying in Canada in March 2027, but that has now been paused indefinitely."
     },
     {
-      "title": "Israelis demand accountability over 7 October failures three years after attacks",
-      "url": "https://www.bbc.co.uk/news/articles/c5zjx7xx3487o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 7, 2026",
-      "description": "Prime Minister Benjamin Netanyahu has refused to take any personal responsibility for what happened or order a state inquiry."
+      "title": "'Every day there is killing': Palestinians in Gaza face Israeli strikes despite ceasefire as peace deal stalls",
+      "url": "https://www.bbc.co.uk/news/articles/cmx2qlz7qrd4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Many Palestinians are still living in cramped tent cities, with the US plan to end the war largely stalled."
     },
     {
       "title": "Why Zimbabwe tycoon 'Sir Wicknell' was loved and hated in Africa",
@@ -3341,10 +3348,10 @@
       "description": "The skipper who led India to the historic 2025 World Cup win has stepped down from her role in all three formats."
     },
     {
-      "title": "Many Nepalis swept away in the floods aren't officially dead, leaving families in limbo",
-      "url": "https://www.bbc.co.uk/news/articles/ck054zm1701qo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 6, 2026",
-      "description": "Relatives are finding themselves with no compensation and facing an administrative nightmare."
+      "title": "Israelis demand accountability over 7 October failures three years after attacks",
+      "url": "https://www.bbc.co.uk/news/articles/c5zjx7xx3487o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 7, 2026",
+      "description": "Prime Minister Benjamin Netanyahu has refused to take any personal responsibility for what happened or order a state inquiry."
     },
     {
       "title": "The Republican candidates walking a Trump tightrope",
@@ -3557,6 +3564,18 @@
       "description": "Nvidia, OpenAI and Anthropic are all now selling their own limited edition fashion lines."
     },
     {
+      "title": "How soon into dating do you talk about your salary?",
+      "url": "https://www.bbc.co.uk/news/videos/cry4x353vz2eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "You've met someone and it's going well so far. But bringing up how much you both earn can be a tricky conversation."
+    },
+    {
+      "title": "'I don't know what my partner earns': How soon into dating should you reveal your salary?",
+      "url": "https://www.bbc.co.uk/news/articles/c8wyz69r0nnpo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Talking about salary, spending habits and debt can be some of dating's trickier conversations."
+    },
+    {
       "title": "Residents win Curo service charge legal battle",
       "url": "https://www.bbc.co.uk/news/articles/cjx236dk9l13o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 8, 2026",
@@ -3573,18 +3592,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c9zrd7k38k8lo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 8, 2026",
       "description": "Local authorities in Hull and Lincolnshire have each been given £220,000."
-    },
-    {
-      "title": "Fuel prices added to Google Maps as petrol and diesel costs soar",
-      "url": "https://www.bbc.co.uk/news/articles/ckx2d4ddjn2eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 7, 2026",
-      "description": "A search for forecourts will now display their pricing, using the government's Fuel Finder scheme."
-    },
-    {
-      "title": "The wildlife winners set to appear on your banknotes revealed",
-      "url": "https://www.bbc.co.uk/news/articles/cwe8ld517ry3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 7, 2026",
-      "description": "The decision comes after nearly half a million people voted on a shortlist of 18 creatures."
     },
     {
       "title": "My hometown shows that high streets have to change or die",
@@ -3617,6 +3624,12 @@
       "description": "Many younger people do not believe the state pension will exist when they are older"
     },
     {
+      "title": "How soon into dating do you talk about your salary?",
+      "url": "https://www.bbc.co.uk/news/videos/cry4x353vz2eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "You've met someone and it's going well so far. But bringing up how much you both earn can be a tricky conversation."
+    },
+    {
       "title": "New vape tax made me swap e-cigs for dartboards",
       "url": "https://www.bbc.co.uk/news/videos/cmd6dv1446lno?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 8, 2026",
@@ -3641,16 +3654,64 @@
       "description": "And would you reveal it in a job interview?"
     },
     {
-      "title": "Watch: Why has UK diesel price hit an all time high?",
-      "url": "https://www.bbc.co.uk/news/videos/c6m2d3mpm7r8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 2, 2026",
-      "description": "Diesel has now hit an average of £2 a litre in the UK, the RAC motoring group says, with petrol prices also rising."
+      "title": "Israel opens first-ever pavilion at Morocco defence show",
+      "url": "https://www.aljazeera.com/news/2026/10/8/israel-opens-first-ever-pavilion-at-morocco-defence-show?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Israel opened its first national pavilion at Morocco's Marrakech Air Show, joined by Israel's top military contractors."
     },
     {
-      "title": "Man City must ‘stick together’ after Premier League charges, says Haaland",
+      "title": "Colombian embassy to open in Jerusalem, Israeli FM says",
+      "url": "https://www.aljazeera.com/news/2026/10/8/colombian-embassy-to-open-in-jerusalem-israeli-fm-says?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Colombian President Abelardo De la Espriella had promised closer ties with Israel on the campaign trail."
+    },
+    {
+      "title": "Two Latvian men arrested inside UK military base after breach",
+      "url": "https://www.aljazeera.com/news/2026/10/8/two-latvian-men-arrested-inside-uk-military-base-after-breach?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Police say nothing so far suggests the incident at RAF Molesworth linked ​to events surrounding RAF Fairford last month."
+    },
+    {
+      "title": "Hurricane Isaias charges towards the US Gulf Coast with dangerous winds",
+      "url": "https://www.aljazeera.com/news/2026/10/8/hurricane-isaias-charges-towards-the-us-gulf-coast-with-dangerous-winds?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "The storm is forecast to strike Florida, Alabama and Mississippi with up to 10 inches of rain this weekend."
+    },
+    {
+      "title": "US suspends Microsoft and Adobe from visa programme amid fraud claims",
+      "url": "https://www.aljazeera.com/economy/2026/10/8/us-suspends-microsoft-and-adobe-from-visa-programme-amid-fraud-claims?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Visa probe also targets universities for allegedly exploiting international students to reduce US wage costs."
+    },
+    {
+      "title": "Jerusalem Daily: Remembrance and mourning",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/jerusalem-daily-remembrance-and-mourning?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Thousands protest worldwide in solidarity with Gaza as Palestinians mourn those being killed in daily Israeli strikes."
+    },
+    {
+      "title": "Senegal-Morocco AFCON title decision within days, says CAS",
+      "url": "https://www.aljazeera.com/sports/2026/10/8/cas-promises-senegal-morocco-afcon-title-decision-within-days?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "The Court of Arbitration for Sport to rule within days on appeal against decision to strip Senegal of AFCON title."
+    },
+    {
+      "title": "Video shows dramatic eruption of volcano near Manila",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/video-shows-dramatic-eruption-of-volcano-near-manila?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Taal Volcano near the Philippine capital briefly erupted, sending a dark grey ash plume 4,000 metres above its crater."
+    },
+    {
+      "title": "UEFA details FIFA presidential candidate criteria in bid to oust Infantino",
+      "url": "https://www.aljazeera.com/sports/2026/10/8/uefa-details-fifa-presidential-candidate-criteria-in-bid-to-oust-infantino?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "UEFA draws up qualities required for a candidate to run against FIFA President Gianni Infantino in March's election."
+    },
+    {
+      "title": "Man City charges: Haaland says Premier League club must ‘stick together’",
       "url": "https://www.aljazeera.com/sports/2026/10/8/man-city-must-stick-together-after-premier-league-charges-says-haaland?traffic_source=rss",
       "date": "October 8, 2026",
-      "description": "Erling Haaland calls on Man City to unite as Premier League club appeals more than 100 charges of wrongdoing."
+      "description": "Erling Haaland calls on Manchester City to unite as Premier League club appeals more than 100 charges of wrongdoing."
     },
     {
       "title": "UK ex-prince Andrew search warrants quashed after police accept legal error",
@@ -3711,66 +3772,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/french-pm-vows-changes-as-students-keep-up-school-protests?traffic_source=rss",
       "date": "October 8, 2026",
       "description": "French PM Sebastien Lecornu has promised to address student concerns as protests force hundreds of schools to close."
-    },
-    {
-      "title": "Rubio praises nationalism and ties ‘America First’ values to ancient Greece",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/rubio-praises-nationalism-and-ties-america-first-values-to-ancient-greece?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "US Secretary of State Marco Rubio urged Western nations to prioritise their own interests in a speech in Athens."
-    },
-    {
-      "title": "Has Israel shut the UK consulate in East Jerusalem – or downgraded it?",
-      "url": "https://www.aljazeera.com/news/2026/10/8/has-israel-shut-the-uk-consulate-in-east-jerusalem-or-downgraded?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "British Foreign Secretary Miliband said the consulate building would remain but would be called 'UK Mission, Jerusalem'."
-    },
-    {
-      "title": "US scientist’s children erupt in joy after hearing he won Nobel",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/us-scientists-children-erupt-in-joy-after-hearing-he-won-nobel?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "Video shows US scientist Karl Deisseroth breaking the news to his son and two daughters that he won the Nobel Prize."
-    },
-    {
-      "title": "Two killed after building partially collapses in Turkiye’s Istanbul",
-      "url": "https://www.aljazeera.com/news/2026/10/8/two-killed-after-building-partially-collapses-in-turkiye-capital?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "Eight survivors rescued from the rubble as fears of further collapse slow operations in Istanbul’s Maltepe district."
-    },
-    {
-      "title": "UK’s Burnham ‘open’ to Germany joining GCAP fighter jet programme",
-      "url": "https://www.aljazeera.com/news/2026/10/8/uks-burnham-open-to-germany-joining-gcap-fighter-jet-programme?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "GCAP pact between the UK, Italy and Japan to build a new fighter jet welcomed Canada as an ‘observer' in July"
-    },
-    {
-      "title": "Italian law to give election winners bonus seats: Why that’s controversial",
-      "url": "https://www.aljazeera.com/news/2026/10/8/italian-law-to-give-election-winners-bonus-seats-why-thats-controversial?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "Critics say the proposed law is undemocratic, potentially granting a winning coalition outsized power in parliament."
-    },
-    {
-      "title": "Sri Lanka arrests ex-President Rajapaksa’s wife in graft case",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/sri-lanka-arrests-ex-president-rajapaksas-wife-in-graft-case?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "Sri Lanka’s former first lady Shiranthi Rajapaksa, wife of Mahinda Rajapaksa, has been arrested in a corruption case."
-    },
-    {
-      "title": "Iraq devalues its currency but some MPs oppose it",
-      "url": "https://www.aljazeera.com/economy/2026/10/8/why-has-iraq-devalued-its-currency-and-why-are-some-mps-against-it?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "MPs oppose dinar devaluation, citing increased living costs and financial strain on Iraq’s most vulnerable populations."
-    },
-    {
-      "title": "Can emergency reserves ease the diesel crisis?",
-      "url": "https://www.aljazeera.com/video/counting-the-cost/2026/10/8/can-emergency-reserves-ease-the-diesel-crisis?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "The G7 plans to release emergency fuel stocks as diesel shortages raise transport costs and squeeze household budgets."
-    },
-    {
-      "title": "Hegseth address sailors in pushup apology and Trump impression",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/hegseth-address-sailors-in-pushup-apology-and-trump-impression?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "US Secretary of Defense Pete Hegseth did a ‘two pushup’ forfeit after factual errors addressing US sailors."
     }
   ]
 }
