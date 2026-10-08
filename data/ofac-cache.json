@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T19:08:06.393Z",
+  "updatedAt": "2026-10-08T21:08:11.122Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261008",
@@ -3072,6 +3072,18 @@
   ],
   "ajNews": [
     {
+      "title": "US charges Venezuela’s Nicolas Maduro over torture allegations",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/us-charges-venezuelas-nicolas-maduro-over-torture-allegations?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Former Venezuelan President Nicolas Maduro and his wife, Cilia Flores face a new US charge over alleged torture."
+    },
+    {
+      "title": "At least 81 US aircraft worth up to $3.3bn lost or damaged in Iran war",
+      "url": "https://www.aljazeera.com/news/2026/10/8/at-least-81-us-aircraft-worth-up-to-3-3bn-lost-or-damaged-in-iran-war?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "The damage, documented in a Congressional Budget Office report, comes as Trump faces criticism over war's cost."
+    },
+    {
       "title": "Syria calls for independent probe into sinking of ship in Black Sea",
       "url": "https://www.aljazeera.com/news/2026/10/8/syria-calls-for-independent-probe-into-sinking-of-ship-in-black-sea?traffic_source=rss",
       "date": "October 8, 2026",
@@ -3082,27 +3094,15 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/dozens-killed-in-russian-strike-on-civilian-buses-in-eastern-ukraine?traffic_source=rss",
       "date": "October 8, 2026",
       "description": "At least 33 people were killed after a Russian strike hit two civilian buses in a city within the Donestsk region."
-    },
-    {
-      "title": "Venezuela’s Nicolas Maduro and his wife charged over torture allegations",
-      "url": "https://www.aljazeera.com/news/2026/10/8/venezuelas-nicolas-maduro-and-his-wife-charged-over-torture-allegations?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "The new US charge adds to the existing drug trafficking case against Venezuela’s former president and first lady."
-    },
-    {
-      "title": "What were Trump operatives doing for pro-Russian politician Dodik in Bosnia?",
-      "url": "https://www.aljazeera.com/features/2026/10/8/what-were-trump-operatives-doing-for-pro-russian-politician-dodik-in-bosnia?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "Reports that Trump aides were paid to advise Bosnian Serb leader ahead of parliamentary election raise alarm."
-    },
-    {
-      "title": "More killed in Kramatorsk as Russia targets Ukraine’s transportation system",
-      "url": "https://www.aljazeera.com/news/2026/10/8/more-killed-in-kramatorsk-as-russia-targets-ukraines-transportation-system?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "Russia’s attacks on trains, buses and ports are paralysing Ukraine’s transport network and endangering civilians."
     }
   ],
   "occNews": [
+    {
+      "title": "OCC Assesses $350 Million Civil Money Penalty Against American Express",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-87.html",
+      "date": "October 8, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today announced a cease-and-desist order and a $350 million civil money penalty against American Express National Bank, Sandy, Utah (bank), for deficiencies in the bank's Bank Secrecy Act (BSA) and anti-money laundering (AML) compliance program."
+    },
     {
       "title": "OCC Announces Enforcement Actions for September 2026",
       "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-79.html",
@@ -3130,13 +3130,6 @@
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm",
       "date": "September 16, 2026",
       "description": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
-      "category": "Monetary Policy"
-    },
-    {
-      "title": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260825a.htm",
-      "date": "August 25, 2026",
-      "description": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
       "category": "Monetary Policy"
     }
   ],
@@ -3210,10 +3203,10 @@
       "description": "A lawyer says the murderer of Colleen Slemmer is moving around her hospital room after surviving two lethal injections."
     },
     {
-      "title": "Residents airlifted to safety after flooding in central Chile",
-      "url": "https://www.bbc.co.uk/news/articles/ck5yn8jn677vo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Protesters blame 'vulture funds' for Spain's housing crisis",
+      "url": "https://www.bbc.co.uk/news/articles/c3j4790elkx7o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 8, 2026",
-      "description": "The Mapocho river has burst its banks after an unusually large amount of rain fell in recent days."
+      "description": "Hundreds have pitched their tents in central Madrid, while the Spanish prime minister has called a snap election."
     },
     {
       "title": "Italy approves elections overhaul as opposition accuse Meloni of 'scam'",
@@ -3232,6 +3225,12 @@
       "url": "https://www.bbc.co.uk/news/articles/ckgel9r341gdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 8, 2026",
       "description": "Mochamad Subchi Azal Tsani had been secretly released on parole in 2025, after serving less than half his sentence."
+    },
+    {
+      "title": "Residents airlifted to safety after flooding in central Chile",
+      "url": "https://www.bbc.co.uk/news/articles/ck5yn8jn677vo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "The Mapocho river has burst its banks after an unusually large amount of rain fell in recent days."
     },
     {
       "title": "Zambia signs US health deal after disputes over data-sharing",
@@ -3324,12 +3323,6 @@
       "description": "The Houthis have claimed responsibility for the attacks, which mark an escalation in the conflict."
     },
     {
-      "title": "Canada suspends plans to expand assisted dying to people with mental illness",
-      "url": "https://www.bbc.co.uk/news/articles/cqd09g0gj50ko?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 7, 2026",
-      "description": "People with mental illness alone were to be eligible for assisted dying in Canada in March 2027, but that has now been paused indefinitely."
-    },
-    {
       "title": "'Every day there is killing': Palestinians in Gaza face Israeli strikes despite ceasefire as peace deal stalls",
       "url": "https://www.bbc.co.uk/news/articles/cmx2qlz7qrd4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 8, 2026",
@@ -3396,22 +3389,22 @@
       "description": "Passengers have described their anger after their itineraries changed to involve hours spent on coach trips instead."
     },
     {
+      "title": "White House blocks Microsoft from foreign worker hiring program",
+      "url": "https://www.bbc.co.uk/news/articles/ck5yngl2y4gpo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "An international visa program has for years allowed US tech companies to hire highly skilled workers from abroad."
+    },
+    {
+      "title": "Adidas sues Australian label White Fox over four stripes design",
+      "url": "https://www.bbc.co.uk/news/articles/c9e8ld448km8o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "The German sportswear brand wants the Sydney-based label to stop selling the clothes and pay damages."
+    },
+    {
       "title": "Chrysler Building to get its crown restored after being sold",
       "url": "https://www.bbc.co.uk/news/articles/c8g47z3r4dzvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 8, 2026",
       "description": "The distinctive Manhattan skyscraper will undergo a major renovation and provide a new supply of offices."
-    },
-    {
-      "title": "'Come all the way' back to EU, French finance minister tells UK",
-      "url": "https://www.bbc.co.uk/news/articles/cqdjvg3xww2go?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "Roland Lescure tells the BBC that being in the bloc enables members to better address the challenges facing the world."
-    },
-    {
-      "title": "Plans to shut Marston's Brewery in Burton revealed",
-      "url": "https://www.bbc.co.uk/news/articles/ck8dzq095lj3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "Burton-upon-Trent's links with beer and brewing date back centuries."
     },
     {
       "title": "How oil-rich Alberta's economy might fare if it broke away from Canada",
@@ -3420,10 +3413,22 @@
       "description": "Albertans vote this month on staying in Canada or moving ahead to a binding independence referendum."
     },
     {
+      "title": "'Come all the way' back to EU, French finance minister tells UK",
+      "url": "https://www.bbc.co.uk/news/articles/cqdjvg3xww2go?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Roland Lescure tells the BBC that being in the bloc enables members to better address the challenges facing the world."
+    },
+    {
       "title": "'Stop throwing shade' - the woman trying to stop firms leaving the UK",
       "url": "https://www.bbc.co.uk/news/articles/cmgqwydpd4xwo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 7, 2026",
       "description": "British people need more incentives to invest in big firms listed in the UK, Dame Julia Hoggett, boss of the London Stock Exchange, says."
+    },
+    {
+      "title": "Plans to shut Marston's Brewery in Burton revealed",
+      "url": "https://www.bbc.co.uk/news/articles/ck8dzq095lj3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Burton-upon-Trent's links with beer and brewing date back centuries."
     },
     {
       "title": "The wildlife winners set to appear on your banknotes revealed",
@@ -3564,6 +3569,12 @@
       "description": "Nvidia, OpenAI and Anthropic are all now selling their own limited edition fashion lines."
     },
     {
+      "title": "Protesters blame 'vulture funds' for Spain's housing crisis",
+      "url": "https://www.bbc.co.uk/news/articles/c3j4790elkx7o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Hundreds have pitched their tents in central Madrid, while the Spanish prime minister has called a snap election."
+    },
+    {
       "title": "How soon into dating do you talk about your salary?",
       "url": "https://www.bbc.co.uk/news/videos/cry4x353vz2eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 8, 2026",
@@ -3586,12 +3597,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cmwyv502k441o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 8, 2026",
       "description": "The BBC hears people \"you would not expect\" can no longer afford items to be clean and healthy."
-    },
-    {
-      "title": "Funding to help more people access healthy food",
-      "url": "https://www.bbc.co.uk/news/articles/c9zrd7k38k8lo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "Local authorities in Hull and Lincolnshire have each been given £220,000."
     },
     {
       "title": "My hometown shows that high streets have to change or die",
@@ -3654,6 +3659,66 @@
       "description": "And would you reveal it in a job interview?"
     },
     {
+      "title": "South Africa protests turn violent amid rage over asylum ruling",
+      "url": "https://www.aljazeera.com/news/2026/10/8/south-africa-protests-turn-violent-amid-rage-over-asylum-ruling?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Several cars torched and foreign-run businesses forced to shut in Johannesburg's Soweto and coastal city of Durban."
+    },
+    {
+      "title": "Israel shuts down British consulate in occupied East Jerusalem",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/israel-shuts-down-british-consulate-in-occupied-east-jerusalem?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "The British government says it will retain its presence in occupied East Jerusalem after Israel removed its consulate."
+    },
+    {
+      "title": "How much worse can Yemen’s humanitarian crisis become?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/10/8/how-much-worse-can-yemens-humanitarian-crisis-become?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "UN says fighting has displaced more than 200,000 people in five weeks."
+    },
+    {
+      "title": "Israeli settlers take Palestinian olives, and their harvest traditions",
+      "url": "https://www.aljazeera.com/features/2026/10/8/israeli-settlers-take-palestinian-olives-and-their-harvest-traditions?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "As Israeli settlers harvest olives on Palestinian land, farmers face growing violence and loss of an ancient tradition."
+    },
+    {
+      "title": "Israeli settlers systematically target the Palestinian olive harvest",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/israeli-settlers-systematically-target-the-palestinian-olive-harvest?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Israeli settlers in the occupied West Bank are destroying olive trees."
+    },
+    {
+      "title": "India’s Cockroach movement says members detained as protests continue",
+      "url": "https://www.aljazeera.com/news/2026/10/8/indias-cockroach-movement-says-members-detained-as-protests-continue?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "India's opposition and student-led CJP movement demand election chief's resignation, plan mass demonstration Saturday."
+    },
+    {
+      "title": "Prosecutors in Maradona death trial seek sentences up to 12 years",
+      "url": "https://www.aljazeera.com/sports/2026/10/8/prosecutors-in-maradona-death-trial-seek-sentences-up-to-12-years?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Seven medical professionals face calls for 12-year prison sentences in trial over Argentina icon Diego Maradona's death."
+    },
+    {
+      "title": "Man City charges: Maresca says players focused on Liverpool test",
+      "url": "https://www.aljazeera.com/sports/2026/10/8/man-city-charges-maresca-says-players-focused-on-liverpool-test?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Manchester City manager Enzo Maresca claims players unfazed by financial breaches verdict ahead of Liverpool showdown."
+    },
+    {
+      "title": "‘War lives in me’: Gaza playwright Ali Abu Yasin wins English PEN award",
+      "url": "https://www.aljazeera.com/news/2026/10/8/gaza-playwright-award?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Honoured for his artistic resilience, Ali Abu Yasin continued writing for theatre amid the rubble."
+    },
+    {
+      "title": "Philippines ex-President Duterte fit to stand trial, ICC rules",
+      "url": "https://www.aljazeera.com/news/2026/10/8/philippines-ex-president-duterte-fit-to-stand-trial-icc-rules?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "The former president is able to understand the charges and follow the proceedings, panel of experts find."
+    },
+    {
       "title": "Israel opens first-ever pavilion at Morocco defence show",
       "url": "https://www.aljazeera.com/news/2026/10/8/israel-opens-first-ever-pavilion-at-morocco-defence-show?traffic_source=rss",
       "date": "October 8, 2026",
@@ -3702,7 +3767,7 @@
       "description": "Taal Volcano near the Philippine capital briefly erupted, sending a dark grey ash plume 4,000 metres above its crater."
     },
     {
-      "title": "UEFA details FIFA presidential candidate criteria in bid to oust Infantino",
+      "title": "FIFA President Infantino’s crisis: UEFA details new candidate criteria",
       "url": "https://www.aljazeera.com/sports/2026/10/8/uefa-details-fifa-presidential-candidate-criteria-in-bid-to-oust-infantino?traffic_source=rss",
       "date": "October 8, 2026",
       "description": "UEFA draws up qualities required for a candidate to run against FIFA President Gianni Infantino in March's election."
@@ -3718,60 +3783,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/8/uk-ex-prince-andrew-search-warrants-quashed-after-police-accept-legal-error?traffic_source=rss",
       "date": "October 8, 2026",
       "description": "London-based judge says error 'does not bring investigation to an end' as police probe disgraced former royal."
-    },
-    {
-      "title": "Video said to show Mali army in Kidal after retaking city",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/video-said-to-show-mali-army-in-kidal-after-retaking-city?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "Recently published video is said to show Mali’s armed forces in Kidal after retaking the strategic northern city."
-    },
-    {
-      "title": "London voters go to polls for Holborn and St Pancras by-election",
-      "url": "https://www.aljazeera.com/news/2026/10/8/london-voters-go-to-polls-for-holborn-and-st-pancras-by-election?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "The vote in London's Holborn and St Pancras parliamentary seat tests whether Burnham can restore faith in Labour."
-    },
-    {
-      "title": "Saudi-led coalition says it intercepts three Houthi ballistic missiles",
-      "url": "https://www.aljazeera.com/news/2026/10/8/saudi-led-coalition-says-it-intercepts-three-houthi-ballistic-missiles?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "Saudi Arabia says two of the missiles intercepted were headed towards the capital, Riyadh."
-    },
-    {
-      "title": "New York Mayor Mamdani under fire for attending October 7 vigil",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/new-york-mayor-mamdani-under-fire-for-attending-october-7-vigil?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "New York City’s Mayor Zohran Mamdani was met by crowds calling him a ‘traitor’ for attending a vigil for October 7."
-    },
-    {
-      "title": "Shoot the People: Global Activism through Misan Harriman’s Lens",
-      "url": "https://www.aljazeera.com/video/witness/2026/10/8/shoot-the-people-global-activism-through-misan-harrimans-lens?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "Influential British Nigerian photographer and activist Misan Harriman captures global protests that drive social change."
-    },
-    {
-      "title": "King David Hotel bombing to consulate row: A timeline of UK-Israel tension",
-      "url": "https://www.aljazeera.com/news/2026/10/8/king-david-hotel-bombing-to-consulate-row-a-timeline-of-uk-israel-tension?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "Israel's order to shut UK's Jerusalem consulate is the latest downturn in a relationship strained since before 1948."
-    },
-    {
-      "title": "‘This is a crisis of hope’: Echoes of 1968 as France’s students rise up",
-      "url": "https://www.aljazeera.com/news/2026/10/8/echoes-of-may-1968-frances-students-rise-up-again?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "As in 1968, when student protests triggered nationwide strikes, today’s crisis is about generational discontent."
-    },
-    {
-      "title": "Canadian Anne Carson wins 2026 Nobel Prize in Literature",
-      "url": "https://www.aljazeera.com/news/2026/10/8/canadian-anne-carson-wins-2026-nobel-prize-in-literature?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "The Swedish Academy praised the 76-year-old poet and essayist's work for being 'bold and inventive'."
-    },
-    {
-      "title": "French PM vows changes as students keep up school protests",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/french-pm-vows-changes-as-students-keep-up-school-protests?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "French PM Sebastien Lecornu has promised to address student concerns as protests force hundreds of schools to close."
     }
   ]
 }
