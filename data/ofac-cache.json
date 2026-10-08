@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T13:08:09.770Z",
+  "updatedAt": "2026-10-08T15:08:11.080Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261005",
@@ -3020,13 +3020,20 @@
       "description": "With these new listings, a total of 597 vessels are now listed by the EU."
     }
   ],
-  "unNotices": [],
+  "unNotices": [
+    {
+      "title": "Security Council, 10235th Meeting (AM) Sudan",
+      "url": "https://press.un.org/en/blog/sc16470",
+      "date": "October 8, 2026",
+      "description": "At 10 a.m., the Security Council is expected to vote on a draft resolution renewing the Sudan sanctions regime. Set up through resolution 1591 (2005), it includes an arms embargo. Focused on Darfur and targeted travel bans and asset freezes on individuals who threaten peace in the region. The current regimes expires on 9 October 2026."
+    }
+  ],
   "bbcNews": [
     {
       "title": "Russian strike on buses kills at least 30, say officials, as deadly attacks on Ukraine surge",
       "url": "https://www.bbc.co.uk/news/articles/c875pwq134l3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 8, 2026",
-      "description": "Ukraine accused Russia of targeting the crowded bus in the frontline city to kill as many civilians as possible."
+      "description": "Ukraine accused Russia of targeting the crowded vehicles in the front line city of Kramatorsk to kill as many civilians as possible."
     },
     {
       "title": "US and Lebanon protecting wanted Syrian general, BBC finds",
@@ -3050,10 +3057,16 @@
       "title": "Former Venezuelan President Nicolás Maduro expected to face more charges this week",
       "url": "https://www.bbc.co.uk/news/articles/cx62y37r1p8eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 7, 2026",
-      "description": "The new charges are expected to accuse Maduro and his wife of playing a role in the torture of Americans in Venezuelan prisons, US media reports."
+      "description": "Federal prosecutors in New York filed an updated indictment on Thursday"
     }
   ],
   "ajNews": [
+    {
+      "title": "South Korea to recall Ukraine envoy in diplomatic row over POWs",
+      "url": "https://www.aljazeera.com/news/2026/10/8/south-korea-recalls-envoy-to-kyiv-over-diplomatic-row-with-ukraine?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "South Korea recalls envoy from Kyiv amid diplomatic tensions over alleged transfer of North Korean soldiers to Seoul."
+    },
     {
       "title": "India to Turkiye, can new proposals to broker Russia-Ukraine truce succeed?",
       "url": "https://www.aljazeera.com/news/2026/10/8/india-to-turkiye-can-new-proposals-to-broker-russia-ukraine-truce-succeed?traffic_source=rss",
@@ -3187,16 +3200,16 @@
       "description": "A lawyer says the murderer of Colleen Slemmer is moving around her hospital room after surviving two lethal injections."
     },
     {
-      "title": "Italy overhauls electoral system after fiercely contested debate",
+      "title": "Italy approves elections overhaul as opposition accuse Meloni of 'scam'",
       "url": "https://www.bbc.co.uk/news/articles/c6zxjdw8rdl5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 8, 2026",
       "description": "Prime Minister Giorgia Meloni says the move will deliver more stable government, but opposition parties say her aim is to stay in power."
     },
     {
-      "title": "Tanker hit by multiple projectiles in Gulf off Qatar, maritime agency says",
-      "url": "https://www.bbc.co.uk/news/articles/cqlydk7796wdo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "'Every day there is killing': Palestinians in Gaza face Israeli strikes despite ceasefire as peace deal stalls",
+      "url": "https://www.bbc.co.uk/news/articles/cmx2qlz7qrd4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 8, 2026",
-      "description": "Casualties have been reported on the vessel, identified by a maritime intelligence firm as the oil and chemical tanker, Acers."
+      "description": "Many Palestinians are still living in cramped tent cities, with the US plan to end the war largely stalled."
     },
     {
       "title": "Teacher who sexually abused pupil back in Indonesia jail after BBC investigation",
@@ -3205,10 +3218,22 @@
       "description": "Mochamad Subchi Azal Tsani had been secretly released on parole in 2025, after serving less than half his sentence."
     },
     {
+      "title": "Tanker hit by multiple projectiles in Gulf off Qatar, maritime agency says",
+      "url": "https://www.bbc.co.uk/news/articles/cqlydk7796wdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Casualties have been reported on the vessel, identified by a maritime intelligence firm as the oil and chemical tanker, Acers."
+    },
+    {
       "title": "Residents airlifted to safety after flooding in central Chile",
       "url": "https://www.bbc.co.uk/news/articles/ck5yn8jn677vo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 8, 2026",
       "description": "The Mapocho river has burst its banks after an unusually large amount of rain fell in recent days."
+    },
+    {
+      "title": "Arizona congressional candidate says she was raped while repairing campaign sign",
+      "url": "https://www.bbc.co.uk/news/articles/c65yndpnk5qdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Bernadette Greene-Placentia says her memory of the attack is spotty and that she was knocked unconscious."
     },
     {
       "title": "Spanish pensioner whose eviction sparked nationwide protests dies",
@@ -3349,22 +3374,22 @@
       "description": "Passengers have described their anger after their itineraries changed to involve hours spent on coach trips instead."
     },
     {
+      "title": "Chrysler Building to get its crown restored after being sold",
+      "url": "https://www.bbc.co.uk/news/articles/c8g47z3r4dzvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "The distinctive Manhattan skyscraper will undergo a major renovation and provide a new supply of offices."
+    },
+    {
       "title": "'Come all the way' back to EU, French finance minister tells UK",
       "url": "https://www.bbc.co.uk/news/articles/cqdjvg3xww2go?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 8, 2026",
       "description": "Roland Lescure tells the BBC that being in the bloc enables members to better address the challenges facing the world."
     },
     {
-      "title": "Bid to run new trains on West Coast Mainline refused",
-      "url": "https://www.bbc.co.uk/news/articles/cm3wve9l057vo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Plans to shut Marston's Brewery in Burton revealed",
+      "url": "https://www.bbc.co.uk/news/articles/ck8dzq095lj3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 8, 2026",
-      "description": "Plans for more trains would “likely increase delays and cancelled trains\", the rail regulator says."
-    },
-    {
-      "title": "Chrysler Building to get its crown restored after being sold",
-      "url": "https://www.bbc.co.uk/news/articles/c8g47z3r4dzvo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "The distinctive Manhattan skyescraper will undergo a major renovation and provide a new supply of offices."
+      "description": "Burton-upon-Trent's links with beer and brewing date back centuries."
     },
     {
       "title": "How oil-rich Alberta's economy might fare if it broke away from Canada",
@@ -3383,6 +3408,18 @@
       "url": "https://www.bbc.co.uk/news/articles/cwe8ld517ry3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 7, 2026",
       "description": "The decision comes after nearly half a million people voted on a shortlist of 18 creatures."
+    },
+    {
+      "title": "Bid to run new trains on West Coast Mainline refused",
+      "url": "https://www.bbc.co.uk/news/articles/cm3wve9l057vo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Plans for more trains would “likely increase delays and cancelled trains\", the rail regulator says."
+    },
+    {
+      "title": "Derry firm becomes one of UK's biggest car park operators after buying NCP",
+      "url": "https://www.bbc.co.uk/news/articles/c693z8dz1kq4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "The Martin Group has become one of the UK's biggest car park operators after buying NCP out of administration."
     },
     {
       "title": "Fuel prices added to Google Maps as petrol and diesel costs soar",
@@ -3595,6 +3632,66 @@
       "description": "Diesel has now hit an average of £2 a litre in the UK, the RAC motoring group says, with petrol prices also rising."
     },
     {
+      "title": "New York Mayor Mamdani under fire for attending October 7 vigil",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/new-york-mayor-mamdani-under-fire-for-attending-october-7-vigil?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "New York City’s Mayor Zohran Mamdani was met by crowds calling him a ‘traitor’ for attending a vigil for October 7."
+    },
+    {
+      "title": "Shoot the People: Global Activism through Misan Harriman’s Lens",
+      "url": "https://www.aljazeera.com/video/witness/2026/10/8/shoot-the-people-global-activism-through-misan-harrimans-lens?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Influential British Nigerian photographer and activist Misan Harriman captures global protests that drive social change."
+    },
+    {
+      "title": "King David Hotel bombing to consulate row: A timeline of UK-Israel tension",
+      "url": "https://www.aljazeera.com/news/2026/10/8/king-david-hotel-bombing-to-consulate-row-a-timeline-of-uk-israel-tension?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Israel's order to shut UK's Jerusalem consulate is the latest downturn in a relationship strained since before 1948."
+    },
+    {
+      "title": "‘This is a crisis of hope’: Echoes of 1968 as France’s students rise up",
+      "url": "https://www.aljazeera.com/news/2026/10/8/echoes-of-may-1968-frances-students-rise-up-again?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "As in 1968, when student protests triggered nationwide strikes, today’s crisis is about generational discontent."
+    },
+    {
+      "title": "Canadian Anne Carson wins 2026 Nobel Prize in Literature",
+      "url": "https://www.aljazeera.com/news/2026/10/8/canadian-anne-carson-wins-2026-nobel-prize-in-literature?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "The Swedish Academy praised the 76-year-old poet and essayist's work for being 'bold and inventive'."
+    },
+    {
+      "title": "French PM vows changes as students keep up school protests",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/french-pm-vows-changes-as-students-keep-up-school-protests?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "French PM Sebastien Lecornu has promised to address student concerns as protests force hundreds of schools to close."
+    },
+    {
+      "title": "Rubio praises nationalism and ties ‘America First’ values to ancient Greece",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/rubio-praises-nationalism-and-ties-america-first-values-to-ancient-greece?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "US Secretary of State Marco Rubio urged Western nations to prioritise their own interests in a speech in Athens."
+    },
+    {
+      "title": "Has Israel shut the UK consulate in East Jerusalem – or downgraded it?",
+      "url": "https://www.aljazeera.com/news/2026/10/8/has-israel-shut-the-uk-consulate-in-east-jerusalem-or-downgraded?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "British Foreign Secretary Miliband said the consulate building would remain but would be called 'UK Mission, Jerusalem'."
+    },
+    {
+      "title": "US scientist’s children erupt in joy after hearing he won Nobel",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/us-scientists-children-erupt-in-joy-after-hearing-he-won-nobel?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Video shows US scientist Karl Deisseroth breaking the news to his son and two daughters that he won the Nobel Prize."
+    },
+    {
+      "title": "Two killed after building partially collapses in Turkiye’s Istanbul",
+      "url": "https://www.aljazeera.com/news/2026/10/8/two-killed-after-building-partially-collapses-in-turkiye-capital?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Eight survivors rescued from the rubble as fears of further collapse slow operations in Istanbul’s Maltepe district."
+    },
+    {
       "title": "UK’s Burnham ‘open’ to Germany joining GCAP fighter jet programme",
       "url": "https://www.aljazeera.com/news/2026/10/8/uks-burnham-open-to-germany-joining-gcap-fighter-jet-programme?traffic_source=rss",
       "date": "October 8, 2026",
@@ -3613,7 +3710,7 @@
       "description": "Sri Lanka’s former first lady Shiranthi Rajapaksa, wife of Mahinda Rajapaksa, has been arrested in a corruption case."
     },
     {
-      "title": "Why has Iraq devalued its currency, and why are some MPs against it?",
+      "title": "Iraq devalues its currency but some MPs oppose it",
       "url": "https://www.aljazeera.com/economy/2026/10/8/why-has-iraq-devalued-its-currency-and-why-are-some-mps-against-it?traffic_source=rss",
       "date": "October 8, 2026",
       "description": "MPs oppose dinar devaluation, citing increased living costs and financial strain on Iraq’s most vulnerable populations."
@@ -3653,72 +3750,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/8/uk-police-charge-royal-navy-member-accused-of-working-with-foreign-power?traffic_source=rss",
       "date": "October 8, 2026",
       "description": "Police say the incident is not connected to ongoing investigations at the RAF Fairford airbase."
-    },
-    {
-      "title": "Bosnia’s political future looks increasingly like its past",
-      "url": "https://www.aljazeera.com/opinions/2026/10/8/bosnias-political-future-looks-increasingly-like-its-past?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "Three nationalist parties are poised to dominate again, deepening fears of division and paralysis."
-    },
-    {
-      "title": "Jon Rahm to quit LIV Golf tour over ‘unacceptable’ terms",
-      "url": "https://www.aljazeera.com/sports/2026/10/8/jon-rahm-to-quit-liv-golf-tour-over-unacceptable-terms?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "'Rahm has reviewed the proposed terms of LIV 2.0 and has determined that they are unacceptable,' his lawyer said."
-    },
-    {
-      "title": "‘Nature can recover’: Inside the race to rescue world’s crisis-hit wildlife",
-      "url": "https://www.aljazeera.com/features/2026/10/8/nature-can-recover-inside-the-race-to-rescue-worlds-crisis-hit-wildlife?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "Spark of hope for a natural world beset by crisis, as conservation efforts succeed amid a 73 percent drop in wildlife."
-    },
-    {
-      "title": "Gaza war sped up India’s shift towards Israel under Modi",
-      "url": "https://www.aljazeera.com/news/2026/10/8/how-gaza-war-sped-up-indias-shift-towards-israel-under-modi?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "As even Israel's traditional allies are distancing themselves from Netanyahu, Modi's India has embraced the country."
-    },
-    {
-      "title": "Christa Pike almost taken off life support before she woke up",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/christa-pike-almost-taken-off-life-support-before-she-woke-up?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "Death row inmate Christa Pike has regained consciousness following a botched execution in Tennessee, her lawyer says."
-    },
-    {
-      "title": "Video: Signs removed from British consulate in occupied East Jerusalem",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/video-signs-removed-from-british-consulate-in-occupied-east-jerusalem?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "Signs from the British consulate in occupied East Jerusalem were removed overnight as a deadline for its closure loomed."
-    },
-    {
-      "title": "Why Israel loves skunk water",
-      "url": "https://www.aljazeera.com/opinions/2026/10/8/why-israel-loves-skunk-water?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "Israel’s foul-smelling weapon turns Palestinian repression into a sales pitch."
-    },
-    {
-      "title": "India defends satellite internet approval process after Elon Musk jab",
-      "url": "https://www.aljazeera.com/news/2026/10/8/india-defends-satellite-internet-approval-process-after-elon-musk-jab?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "Musk has claimed unnamed entities are blocking Starlink's launch to maintain their monopoly."
-    },
-    {
-      "title": "Southampton manager Eckert can stay on despite role in ‘spygate’ scandal",
-      "url": "https://www.aljazeera.com/sports/2026/10/8/southampton-manager-eckert-can-stay-on-despite-role-in-spygate-scandal?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "Tonda Eckert let off with fine and reprimand but avoids ban and will continue in his role with the club."
-    },
-    {
-      "title": "Cristiano Ronaldo pays tribute to Lionel Messi after Argentina farewell",
-      "url": "https://www.aljazeera.com/sports/2026/10/8/cristiano-ronaldo-pays-tribute-to-lionel-messi-after-argentina-farewell?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "'I have the utmost respect for what you've accomplished with Argentina,' Ronaldo writes in response to Messi's post."
-    },
-    {
-      "title": "Yemen’s government needs tribes to defeat the Houthis. Will they join?",
-      "url": "https://www.aljazeera.com/news/2026/10/8/yemens-government-needs-tribes-to-defeat-the-houthis-will-they-join?traffic_source=rss",
-      "date": "October 8, 2026",
-      "description": "Yemen's tribes could prove crucial to government's fight against the Houthis, but many may wait before choosing sides."
     }
   ]
 }
