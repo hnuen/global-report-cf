@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T22:08:06.367Z",
+  "updatedAt": "2026-10-08T13:08:09.770Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261005",
@@ -3023,36 +3023,60 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "Trump to speak to Putin about plague lab worker's death in Russia",
-      "url": "https://www.bbc.co.uk/news/articles/cqgm0vrl3xp7o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Russian strike on buses kills at least 30, say officials, as deadly attacks on Ukraine surge",
+      "url": "https://www.bbc.co.uk/news/articles/c875pwq134l3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Ukraine accused Russia of targeting the crowded bus in the frontline city to kill as many civilians as possible."
+    },
+    {
+      "title": "US and Lebanon protecting wanted Syrian general, BBC finds",
+      "url": "https://www.bbc.co.uk/news/articles/c81dldewl5gwo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Bassam al-Hassan is being sheltered in return for information - including about abducted US reporter Austin Tice."
+    },
+    {
+      "title": "Most UK diplomats to leave East Jerusalem consulate, Israel says, as Miliband says 'vital services' to remain",
+      "url": "https://www.bbc.co.uk/news/articles/cw33xd6vegnno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Israel said in September it would act in response to UK sanctions on illegal Israeli settlements in the West Bank."
+    },
+    {
+      "title": "South Korea recalls Ukraine envoy over prisoner-of-war row",
+      "url": "https://www.bbc.co.uk/news/articles/ckwy48rrz95vo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "It is the latest in a diplomatic spat after Kyiv disclosed that two North Korean prisoners were transferred to Seoul."
+    },
+    {
+      "title": "Former Venezuelan President Nicolás Maduro expected to face more charges this week",
+      "url": "https://www.bbc.co.uk/news/articles/cx62y37r1p8eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 7, 2026",
-      "description": "Fears that the death may have been caused by pneumonic plague has prompted calls for more transparency from Russia."
-    },
-    {
-      "title": "Children killed while they slept as Russian missile kills 19 in block of flats",
-      "url": "https://www.bbc.co.uk/news/articles/ckr5ym098vdeo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 7, 2026",
-      "description": "Five children are among the victims of a strike that destroyed 30 flats in northern Ukraine as families slept."
-    },
-    {
-      "title": "What is pneumonic plague and how does it spread?",
-      "url": "https://www.bbc.co.uk/news/articles/cxdd8035jzn3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 6, 2026",
-      "description": "The death of a worker from a Russian lab that researches plague has prompted questions about the disease."
-    },
-    {
-      "title": "Watch: How Russia responded to US after plague researcher death",
-      "url": "https://www.bbc.co.uk/news/videos/c8e36y796enno?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 6, 2026",
-      "description": "The US and Russia have each offered to help each other tackling infectious diseases."
+      "description": "The new charges are expected to accuse Maduro and his wife of playing a role in the torture of Americans in Venezuelan prisons, US media reports."
     }
   ],
   "ajNews": [
     {
-      "title": "At least 24 killed as Russia launches massive attack on Ukraine",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/7/at-least-24-killed-as-russia-launches-massive-attack-on-ukraine?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "Ukraine says Russia launched a massive overnight barrage of 130 drones, 48 cruise missiles and ballistic missiles"
+      "title": "India to Turkiye, can new proposals to broker Russia-Ukraine truce succeed?",
+      "url": "https://www.aljazeera.com/news/2026/10/8/india-to-turkiye-can-new-proposals-to-broker-russia-ukraine-truce-succeed?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "India, Turkiye, Egypt and the US have put forward proposals for ceasefires in bid to protect global energy and shipping."
+    },
+    {
+      "title": "The Hormuz bonus: Sailor salaries soar for transits amid Iran war",
+      "url": "https://www.aljazeera.com/news/2026/10/8/the-hormuz-bonus-sailor-salaries-soar-for-transits-amid-iran-war?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Reports have emerged that tanker captains are earning $100,000 plus a $50,000 per-trip bonus to transit the strait."
+    },
+    {
+      "title": "Malaysia PM says will work on Myanmar’s ASEAN reintegration",
+      "url": "https://www.aljazeera.com/news/2026/10/8/malaysia-to-help-myanmar-reintegrate-into-asean-despite-rights-concerns?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Myanmar leader Min Aung Hlaing in Malaysia for a two-day visit, his first since he became president in April."
+    },
+    {
+      "title": "Russian attack on buses in Ukraine’s Kramatorsk kills at least 30 people",
+      "url": "https://www.aljazeera.com/news/2026/10/8/russia-attack-in-ukraines-kramatorsk-kills-12?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Eighteen people were wounded in strike on the city in eastern Donetsk region, local authorities say."
     }
   ],
   "occNews": [
@@ -3157,28 +3181,100 @@
   ],
   "regionsNews": [
     {
-      "title": "Spanish pensioner whose eviction sparked nationwide protests dies, union says",
+      "title": "Christa Pike now walking after failed US execution, lawyer tells BBC",
+      "url": "https://www.bbc.co.uk/news/articles/c60rln74yzvxo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "A lawyer says the murderer of Colleen Slemmer is moving around her hospital room after surviving two lethal injections."
+    },
+    {
+      "title": "Italy overhauls electoral system after fiercely contested debate",
+      "url": "https://www.bbc.co.uk/news/articles/c6zxjdw8rdl5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Prime Minister Giorgia Meloni says the move will deliver more stable government, but opposition parties say her aim is to stay in power."
+    },
+    {
+      "title": "Tanker hit by multiple projectiles in Gulf off Qatar, maritime agency says",
+      "url": "https://www.bbc.co.uk/news/articles/cqlydk7796wdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Casualties have been reported on the vessel, identified by a maritime intelligence firm as the oil and chemical tanker, Acers."
+    },
+    {
+      "title": "Teacher who sexually abused pupil back in Indonesia jail after BBC investigation",
+      "url": "https://www.bbc.co.uk/news/articles/ckgel9r341gdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Mochamad Subchi Azal Tsani had been secretly released on parole in 2025, after serving less than half his sentence."
+    },
+    {
+      "title": "Residents airlifted to safety after flooding in central Chile",
+      "url": "https://www.bbc.co.uk/news/articles/ck5yn8jn677vo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "The Mapocho river has burst its banks after an unusually large amount of rain fell in recent days."
+    },
+    {
+      "title": "Spanish pensioner whose eviction sparked nationwide protests dies",
       "url": "https://www.bbc.co.uk/news/articles/c6e3x21ev9wwo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 7, 2026",
+      "date": "October 8, 2026",
       "description": "Maricarmen Abascal, 87, was forcibly removed on a stretcher from her apartment of more than 70 years in September."
     },
     {
-      "title": "Israelis mourn 7 October attack victims three years after deadly Hamas raid",
-      "url": "https://www.bbc.co.uk/news/articles/cwkgj0g30m5jo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 7, 2026",
-      "description": "Memorial events have taken place in Israel on the third anniversary of the Hamas-led attack that sparked the devastating Gaza war."
+      "title": "France's school protests: What lies behind the anger",
+      "url": "https://www.bbc.co.uk/news/articles/c6n9rgg80z94o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Students' blockades and marches spring from real grievances – and from France's habit of settling policy on the street."
     },
     {
-      "title": "Israelis demand accountability over 7 October failures three years after attacks",
-      "url": "https://www.bbc.co.uk/news/articles/c5zjx7xx3487o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 7, 2026",
-      "description": "Prime Minister Benjamin Netanyahu has refused to take any personal responsibility for what happened or order a state inquiry."
+      "title": "Outspoken Indian actor Nana Patekar suddenly dies at 75",
+      "url": "https://www.bbc.co.uk/news/articles/cj3vqr5rknpeo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Known for his intense performances, Patekar carved out a distinctive place in Indian cinema."
     },
     {
-      "title": "France halts use of stun grenades after boy's hand blown off in student protests",
-      "url": "https://www.bbc.co.uk/news/articles/cqzjx7z2r4gko?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Bear kills man in home attack near Mongolian capital",
+      "url": "https://www.bbc.co.uk/news/articles/ckvg79wz9v2yo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Police say the bear entered a traditional nomadic dwelling near Ulaanbaatar, killing a man and seriously injured a woman."
+    },
+    {
+      "title": "Texas carries out first US execution since Christa Pike's botched lethal injections",
+      "url": "https://www.bbc.co.uk/news/articles/cw4g1j2z5zvzo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Lawyers for Jamaal Howard had asked a judge to pause the execution after Christa Pike's botched lethal injections."
+    },
+    {
+      "title": "New York court hears arguments in ongoing 9/11 families' lawsuit against Saudi Arabia",
+      "url": "https://www.bbc.co.uk/news/articles/cwvgrxlylj72o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 7, 2026",
-      "description": "The step comes after several groups complained of police using disproportionate force towards teenagers."
+      "description": "The families allege that men with links to the Saudi government helped those who carried out the 2001 attacks, something the country denies."
+    },
+    {
+      "title": "Eritrean troops move deep into Ethiopia's Tigray region, residents tell BBC",
+      "url": "https://www.bbc.co.uk/news/articles/ckvgd63rj92lo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 7, 2026",
+      "description": "Residents of Adigrat tell the BBC they have seen truck loads of soldiers from Eritrea moving south."
+    },
+    {
+      "title": "Margaret Hamilton, whose software helped land Apollo 11 on the Moon, dies at 90",
+      "url": "https://www.bbc.co.uk/news/articles/cx5yn46j41zpo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Pioneering computer scientist led the development of the software for Nasa's Apollo mission and was awarded the Presidential Medal of Freedom."
+    },
+    {
+      "title": "Trump wants a new Camp David-like retreat at his Florida golf club",
+      "url": "https://www.bbc.co.uk/news/articles/c9gkvxjvl7v3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Trump's estate would stand in stark contrast to the rustic Camp David and mark another tradition transformed by Trump."
+    },
+    {
+      "title": "Asahi and Kirin among Japan beer giants raided over alleged price-fixing cartel",
+      "url": "https://www.bbc.co.uk/news/articles/cm5yn3592xk9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Japan's Fair Trade Commission conducted searches of the country's largest beer-makers."
+    },
+    {
+      "title": "Three people killed in Houthi attacks on Saudi Arabia airports, officials say",
+      "url": "https://www.bbc.co.uk/news/articles/cwn8d5rx22rdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "The Houthis have claimed responsibility for the attacks, which mark an escalation in the conflict."
     },
     {
       "title": "Canada suspends plans to expand assisted dying to people with mental illness",
@@ -3187,40 +3283,22 @@
       "description": "People with mental illness alone were to be eligible for assisted dying in Canada in March 2027, but that has now been paused indefinitely."
     },
     {
-      "title": "Sri Lanka's ex-first lady arrested over alleged misuse of children's hospital donations",
-      "url": "https://www.bbc.co.uk/news/articles/ck0e0n3xzvp4o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Israelis demand accountability over 7 October failures three years after attacks",
+      "url": "https://www.bbc.co.uk/news/articles/c5zjx7xx3487o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 7, 2026",
-      "description": "The 73-year-old has been arrested over allegations that a charity she is linked to misused donations."
+      "description": "Prime Minister Benjamin Netanyahu has refused to take any personal responsibility for what happened or order a state inquiry."
     },
     {
-      "title": "Chinese runner dropped by sponsor after riding bike during marathon",
-      "url": "https://www.bbc.co.uk/news/articles/c3y0enr9e078o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Why Zimbabwe tycoon 'Sir Wicknell' was loved and hated in Africa",
+      "url": "https://www.bbc.co.uk/news/articles/c3x2wlplnelxo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 7, 2026",
-      "description": "Sun Yuanyuan was seemingly pictured on the back of another person's bike during part of the Berlin Marathon."
+      "description": "Wicknell Chivayo divided opinion in life and continues to do so in death."
     },
     {
-      "title": "Chemistry Nobel awarded for solving mystery of life's asymmetry",
-      "url": "https://www.bbc.co.uk/news/articles/c6ly038jg0d4o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "She made India fall in love with women's cricket - now her era as captain is over",
+      "url": "https://www.bbc.co.uk/news/articles/cm4g1pjrd5ewo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 7, 2026",
-      "description": "The prize was given to the French and Japanese scientists for solving the mystery of life's asymmetry."
-    },
-    {
-      "title": "Ten people linked to Kenya's first-ever Ebola case quarantined as screening concerns grow",
-      "url": "https://www.bbc.co.uk/news/articles/c6eq3x3v11d5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 7, 2026",
-      "description": "The patient passed through multiple cities in DR Congo, drove to Uganda and eventually flew to Kenya."
-    },
-    {
-      "title": "Japan beer giants raided over alleged price-fixing cartel",
-      "url": "https://www.bbc.co.uk/news/articles/cm5yn3592xk9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 7, 2026",
-      "description": "Asahi, Kirin and Suntory confirmed their premises were searched by Japanese competition authorities."
-    },
-    {
-      "title": "What happened in the failed execution of Christa Pike - and how did she survive?",
-      "url": "https://www.bbc.co.uk/news/articles/ckge4eql4q7eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 7, 2026",
-      "description": "The convicted killer of Colleen Slemmer is said to be awake and speaking in hospital in Tennessee after an execution attempt."
+      "description": "The skipper who led India to the historic 2025 World Cup win has stepped down from her role in all three formats."
     },
     {
       "title": "Many Nepalis swept away in the floods aren't officially dead, leaving families in limbo",
@@ -3235,22 +3313,22 @@
       "description": "Some running in November's elections are deciding whether to distance themselves from an unpopular president who still dominates his party."
     },
     {
-      "title": "Drinking and consent - Cornell rape allegations expose 'loopholes' in laws",
-      "url": "https://www.bbc.co.uk/news/articles/c9e8l0ep8d1mo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 6, 2026",
-      "description": "The BBC speaks to experts about current US state sexual assault laws and why some believe changing them will help alleged victims."
+      "title": "Cornell rape case accuser has received ‘threats’, attorney tells BBC Newshour",
+      "url": "https://www.bbc.co.uk/news/videos/ckly0420q7ypo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Thomas Giuffra is representing a woman, known in legal documents as Jane Doe, who alleges she was raped at a frat house on campus in 2024."
     },
     {
-      "title": "From films to streaming prices - how the Warner Bros deal could affect you",
-      "url": "https://www.bbc.co.uk/news/articles/cm62ep294qxlo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 6, 2026",
-      "description": "The deal is expected to alter the entertainment and news industries but could it mean higher prices for consumers?"
+      "title": "'House of Horrors': California couple accused of abusing surrogate-born children",
+      "url": "https://www.bbc.co.uk/news/videos/cmx236yd1nr6o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 7, 2026",
+      "description": "The BBC's Madeline Gerber describes the conditions of the mansion where the children - some as young as two months old - were living."
     },
     {
-      "title": "What we know about Christa Pike’s ‘unprecedented' recovery after failed execution",
-      "url": "https://www.bbc.co.uk/news/videos/c5398nwe9lzlo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 6, 2026",
-      "description": "The BBC's Sarah Smith details the injuries sustained by the US death row inmate after two failed lethal injections, and what comes next."
+      "title": "How toxic haze is causing Singapore’s landmarks to disappear",
+      "url": "https://www.bbc.co.uk/news/videos/cmp8g7gel3xlo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 7, 2026",
+      "description": "The BBC’s Tessa Wong breaks down how one of Indonesia’s worst wildfire seasons is impacting countries around South East Asia."
     },
     {
       "title": "Watch: Riot police clash with school protesters and use tear gas in France",
@@ -3259,10 +3337,76 @@
       "description": "Hundreds of thousands of people have taken to the streets across France amid a wave of protests by high-school pupils."
     },
     {
-      "title": "Watch: How Spain's housing crisis has resulted in an early general election",
-      "url": "https://www.bbc.co.uk/news/videos/c83vqk2k2k20o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 5, 2026",
-      "description": "A series of measures to tackle the housing crisis were defeated in parliament on Friday"
+      "title": "Asos hackers took more personal details than first revealed, BBC finds",
+      "url": "https://www.bbc.co.uk/news/articles/c3zxjdw5ywgpo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Retailer issues update after BBC contacted by cyber criminals who said this week's breach went beyond \"basic contact details\""
+    },
+    {
+      "title": "We spent thousands on a Tui river cruise but ended up on coach trips",
+      "url": "https://www.bbc.co.uk/news/articles/cq62j2lzlnm8o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Passengers have described their anger after their itineraries changed to involve hours spent on coach trips instead."
+    },
+    {
+      "title": "'Come all the way' back to EU, French finance minister tells UK",
+      "url": "https://www.bbc.co.uk/news/articles/cqdjvg3xww2go?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Roland Lescure tells the BBC that being in the bloc enables members to better address the challenges facing the world."
+    },
+    {
+      "title": "Bid to run new trains on West Coast Mainline refused",
+      "url": "https://www.bbc.co.uk/news/articles/cm3wve9l057vo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Plans for more trains would “likely increase delays and cancelled trains\", the rail regulator says."
+    },
+    {
+      "title": "Chrysler Building to get its crown restored after being sold",
+      "url": "https://www.bbc.co.uk/news/articles/c8g47z3r4dzvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "The distinctive Manhattan skyescraper will undergo a major renovation and provide a new supply of offices."
+    },
+    {
+      "title": "How oil-rich Alberta's economy might fare if it broke away from Canada",
+      "url": "https://www.bbc.co.uk/news/articles/cy745jznvxpo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 7, 2026",
+      "description": "Albertans vote this month on staying in Canada or moving ahead to a binding independence referendum."
+    },
+    {
+      "title": "'Stop throwing shade' - the woman trying to stop firms leaving the UK",
+      "url": "https://www.bbc.co.uk/news/articles/cmgqwydpd4xwo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 7, 2026",
+      "description": "British people need more incentives to invest in big firms listed in the UK, Dame Julia Hoggett, boss of the London Stock Exchange, says."
+    },
+    {
+      "title": "The wildlife winners set to appear on your banknotes revealed",
+      "url": "https://www.bbc.co.uk/news/articles/cwe8ld517ry3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 7, 2026",
+      "description": "The decision comes after nearly half a million people voted on a shortlist of 18 creatures."
+    },
+    {
+      "title": "Fuel prices added to Google Maps as petrol and diesel costs soar",
+      "url": "https://www.bbc.co.uk/news/articles/ckx2d4ddjn2eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 7, 2026",
+      "description": "A search for forecourts will now display their pricing, using the government's Fuel Finder scheme."
+    },
+    {
+      "title": "New electric car 'make or break for Jaguar'",
+      "url": "https://www.bbc.co.uk/news/articles/cwvgrx5ner6go?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Prof David Bailey says there is a lot riding on the Type 01 in terms of jobs and investment."
+    },
+    {
+      "title": "AI chip boom pushes Samsung profits to record $80bn",
+      "url": "https://www.bbc.co.uk/news/articles/c687z8127302o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "The tech giant is also expected to get a boost from its latest folding devices that were launched in August."
+    },
+    {
+      "title": "OpenAI says teen ChatGPT use limited but research finds it an 'unacceptable risk'",
+      "url": "https://www.bbc.co.uk/news/articles/cwz0vrmxkvy4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 7, 2026",
+      "description": "The research found that important guardrails for teens using ChatGPT often failed."
     },
     {
       "title": "Boots sold in £7bn deal to Canadian billionaire family",
@@ -3271,10 +3415,22 @@
       "description": "The sale of the High Street chain was announced on Wednesday."
     },
     {
-      "title": "OpenAI says teen ChatGPT use limited but research finds it an 'unacceptable risk'",
-      "url": "https://www.bbc.co.uk/news/articles/cwz0vrmxkvy4o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Asahi and Kirin among Japan beer giants raided over alleged price-fixing cartel",
+      "url": "https://www.bbc.co.uk/news/articles/cm5yn3592xk9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Japan's Fair Trade Commission conducted searches of the country's largest beer-makers."
+    },
+    {
+      "title": "Badenoch says Tories would scrap inheritance tax on family homes",
+      "url": "https://www.bbc.co.uk/news/articles/cmn5vw05l0q3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 7, 2026",
-      "description": "The research found that important guardrails for teens using ChatGPT often failed."
+      "description": "Tory leader says her party is \"coming back\", as she aims to convince voters it has changed after 2024 election defeat."
+    },
+    {
+      "title": "Half the harvest, twice the bills: how drought hit farms",
+      "url": "https://www.bbc.co.uk/news/articles/c5rm9mdm79neo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 7, 2026",
+      "description": "Farmers gathered much less wheat in 2026 and dairy farmers' costs rose."
     },
     {
       "title": "Ex-bankers jailed for rigging rates have convictions quashed",
@@ -3295,136 +3451,16 @@
       "description": "Two years after JLR relaunched Jaguar into a blizzard of controversy, it has launched its new EV."
     },
     {
-      "title": "Rainmakers: The drones used to seed clouds",
-      "url": "https://www.bbc.co.uk/news/articles/c64g71j4lgyjo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 7, 2026",
-      "description": "Cloud seeding is gaining attention as countries look to boost rainfall - will drones help?"
-    },
-    {
-      "title": "Half the harvest, twice the bills: how drought hit farms",
-      "url": "https://www.bbc.co.uk/news/articles/c5rm9mdm79neo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 7, 2026",
-      "description": "Farmers gathered much less wheat in 2026 and dairy farmers' costs rose."
-    },
-    {
       "title": "Froyo's made a comeback. But at £12 a tub will it last?",
       "url": "https://www.bbc.co.uk/news/articles/cxly57v78yv7o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 6, 2026",
       "description": "Frozen yoghurt, which was a huge craze in the 2000s and 2010s, has made its return with multiple chains popping up across the wider UK."
     },
     {
-      "title": "Equinor says it may stop investing in UK if oil and gas fields do not get go-ahead",
-      "url": "https://www.bbc.co.uk/news/articles/c6zxjrekg29zo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 6, 2026",
-      "description": "The boss of the Norwegian state company says further investment in the UK could be at risk if Rosebank and Jackdaw are not approved."
-    },
-    {
-      "title": "Japan beer giants raided over alleged price-fixing cartel",
-      "url": "https://www.bbc.co.uk/news/articles/cm5yn3592xk9o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Rainmakers: The drones used to seed clouds",
+      "url": "https://www.bbc.co.uk/news/articles/c64g71j4lgyjo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 7, 2026",
-      "description": "Asahi, Kirin and Suntory confirmed their premises were searched by Japanese competition authorities."
-    },
-    {
-      "title": "Braid-creator Jonathan Blow on making the 'biggest puzzle game ever'",
-      "url": "https://www.bbc.co.uk/news/articles/cj3vqxldglepo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 6, 2026",
-      "description": "Order of the Sinking Star is due out on Thursday and has roughly 1,500 puzzles for players to try"
-    },
-    {
-      "title": "What can I do to protect myself after 'Asos hacked' message?",
-      "url": "https://www.bbc.co.uk/news/articles/ck1l3g8097rzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 7, 2026",
-      "description": "Asos says people should not engage with the unauthorised notification and says it'll provide further information."
-    },
-    {
-      "title": "Amazon wins global rights to stream Emmys in six-year deal",
-      "url": "https://www.bbc.co.uk/news/articles/cqd09g77mygko?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 6, 2026",
-      "description": "The gala is leaving traditional US broadcast networks for live worldwide streaming."
-    },
-    {
-      "title": "Asos confirms hackers sent 'unauthorised' notification to app users",
-      "url": "https://www.bbc.co.uk/news/articles/cj62ylzpr6d3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 6, 2026",
-      "description": "Asos confirmed an \"unauthorised customer notification\" was sent out via its app on Tuesday, after users raised alarm."
-    },
-    {
-      "title": "From films to streaming prices - how the Warner Bros deal could affect you",
-      "url": "https://www.bbc.co.uk/news/articles/cm62ep294qxlo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 6, 2026",
-      "description": "The deal is expected to alter the entertainment and news industries but could it mean higher prices for consumers?"
-    },
-    {
-      "title": "Paramount takes over Warner Bros in $110bn Hollywood merger",
-      "url": "https://www.bbc.co.uk/news/articles/cxj0604d33qzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 6, 2026",
-      "description": "The merger of two of Hollywood's biggest movie studios comes after months of legal disputes and concern over competition."
-    },
-    {
-      "title": "Roll-out begins for passport-free airport e-gates",
-      "url": "https://www.bbc.co.uk/news/articles/cmp3g5qg1gxzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 6, 2026",
-      "description": "The system uses facial technology to check travellers against immigration and passport information."
-    },
-    {
-      "title": "We're saving £100 a month for our kids but they won't get it until they're 57",
-      "url": "https://www.bbc.co.uk/news/articles/cme3r9eq2w0lo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 6, 2026",
-      "description": "Why a growing number of parents are opening pensions for their children."
-    },
-    {
-      "title": "NHS supply lorry drivers to strike in pay dispute",
-      "url": "https://www.bbc.co.uk/news/articles/ckqxnwev78dro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 6, 2026",
-      "description": "Drivers who deliver medical equipment to hospitals across England reject a 4% pay increase."
-    },
-    {
-      "title": "Lego fraudster among last year's most high-profile insurance scammers",
-      "url": "https://www.bbc.co.uk/news/articles/cm86z9npj5deo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 6, 2026",
-      "description": "The person was sentenced to 28 months in prison after an investigation found the claims were made up, the insurance trade body, the ABI said."
-    },
-    {
-      "title": "OpenAI admits response to Australian government hacks 'not good enough'",
-      "url": "https://www.bbc.co.uk/news/articles/cmx2qne2j88wo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 6, 2026",
-      "description": "Top executive Jason Kwon tells hearing company has added \"more precautions\" to its training environments."
-    },
-    {
-      "title": "Last call for the mall? How shopping centres are reinventing themselves",
-      "url": "https://www.bbc.co.uk/news/articles/ck9qrq1d19w4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 6, 2026",
-      "description": "In the internet age, medium-sized retail hubs are looking for new ways to survive and thrive."
-    },
-    {
-      "title": "Five reasons India's stock market is sinking even when its economy is growing",
-      "url": "https://www.bbc.co.uk/news/articles/cwp9g5p1gy7yo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 5, 2026",
-      "description": "The world's fastest growing major economy has one of the worst performing major equity markets in 2026."
-    },
-    {
-      "title": "Pentagon stops using Anthropic AI tools after blacklisting company, BBC told",
-      "url": "https://www.bbc.co.uk/news/articles/c5j9x9pr0240o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 5, 2026",
-      "description": "It labelled Anthropic a \"supply chain risk\" in February after the firm refused to remove safety guardrails from its tools."
-    },
-    {
-      "title": "Average five-year mortgage rate hits 6% for first time in three years",
-      "url": "https://www.bbc.co.uk/news/articles/c8r4yxpry5e9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 5, 2026",
-      "description": "The cost of a new fixed-rate mortgage has been rising in recent weeks as lenders face higher costs."
-    },
-    {
-      "title": "Shadow chancellor vows to cut at least one tax in every Tory budget",
-      "url": "https://www.bbc.co.uk/news/articles/cqj9kje82jm1o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 5, 2026",
-      "description": "Shadow ministers unveiled a series of policies on day two of the Conservative Party conference in Birmingham."
-    },
-    {
-      "title": "BT agrees rescue deal to buy broadband operator TalkTalk",
-      "url": "https://www.bbc.co.uk/news/articles/cvze4g06526ro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 5, 2026",
-      "description": "The takeover still needs to be approved by the regulator, but would give certainty to TalkTalk's millions of customers"
+      "description": "Cloud seeding is gaining attention as countries look to boost rainfall - will drones help?"
     },
     {
       "title": "The AI telling farmers when to harvest",
@@ -3469,64 +3505,34 @@
       "description": "Nvidia, OpenAI and Anthropic are all now selling their own limited edition fashion lines."
     },
     {
-      "title": "The extreme engineering of aircraft windows",
-      "url": "https://www.bbc.co.uk/news/articles/c0lr69zeyrwo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 15, 2026",
-      "description": "Few companies have the technology to make aircraft windows which are getting harder to make."
+      "title": "Hygiene poverty at tipping point, charity warns",
+      "url": "https://www.bbc.co.uk/news/articles/cmwyv502k441o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "The BBC hears people \"you would not expect\" can no longer afford items to be clean and healthy."
     },
     {
-      "title": "Can Europe recharge its battery industry?",
-      "url": "https://www.bbc.co.uk/news/articles/cjeg8ly0qd3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 10, 2026",
-      "description": "Europe has some promising battery tech, but can it make up ground lost to Chinese battery giants?"
+      "title": "Funding to help more people access healthy food",
+      "url": "https://www.bbc.co.uk/news/articles/c9zrd7k38k8lo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Local authorities in Hull and Lincolnshire have each been given £220,000."
     },
     {
-      "title": "I asked my husband to pay into my pension when we had a child - here's why",
-      "url": "https://www.bbc.co.uk/news/articles/cde02k65427o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 10, 2026",
-      "description": "Molly and Taylor Haylett explain the changes to how they managed their finances when they started a family."
+      "title": "Fuel prices added to Google Maps as petrol and diesel costs soar",
+      "url": "https://www.bbc.co.uk/news/articles/ckx2d4ddjn2eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 7, 2026",
+      "description": "A search for forecourts will now display their pricing, using the government's Fuel Finder scheme."
     },
     {
-      "title": "Why some experts increasingly fear AI will take over",
-      "url": "https://www.bbc.co.uk/news/articles/c74edv9887eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 9, 2026",
-      "description": "AI agents went on an uncontrolled hacking spree, leaving some in the industry worried"
-    },
-    {
-      "title": "Should promotion depend on how workers use AI?",
-      "url": "https://www.bbc.co.uk/news/articles/c1j1896e973o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "September 8, 2026",
-      "description": "More companies are tying career progression to AI use: is that fair?"
+      "title": "The wildlife winners set to appear on your banknotes revealed",
+      "url": "https://www.bbc.co.uk/news/articles/cwe8ld517ry3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 7, 2026",
+      "description": "The decision comes after nearly half a million people voted on a shortlist of 18 creatures."
     },
     {
       "title": "No child should have to learn in a cold classroom - children's commissioner",
       "url": "https://www.bbc.co.uk/news/articles/cw0k08nnz07go?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 7, 2026",
       "description": "The EA suggests cost-saving measures as it warns school gas and electricity bills are set to rise."
-    },
-    {
-      "title": "P&R's two-pronged budget approach under fire",
-      "url": "https://www.bbc.co.uk/news/articles/cw33xez6l2x4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 7, 2026",
-      "description": "Critics of P&R say it shows there is no commitment to making savings within the States."
-    },
-    {
-      "title": "Landlord's heartbreak as pub shuts down",
-      "url": "https://www.bbc.co.uk/news/articles/c6p3gnq1752po?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 7, 2026",
-      "description": "Jon Dean, who ran The Alma Tavern in Worcester, said he has been crippled by rising costs and has had to let 15 staff go."
-    },
-    {
-      "title": "We're saving £100 a month for our kids but they won't get it until they're 57",
-      "url": "https://www.bbc.co.uk/news/articles/cme3r9eq2w0lo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 6, 2026",
-      "description": "Why a growing number of parents are opening pensions for their children."
-    },
-    {
-      "title": "Irish budget tackles childcare and energy costs",
-      "url": "https://www.bbc.co.uk/news/articles/c9kgjn3zng1ko?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 6, 2026",
-      "description": "The threshold at which people start paying the higher income tax rate is also expected to increase."
     },
     {
       "title": "My hometown shows that high streets have to change or die",
@@ -3559,6 +3565,18 @@
       "description": "Many younger people do not believe the state pension will exist when they are older"
     },
     {
+      "title": "New vape tax made me swap e-cigs for dartboards",
+      "url": "https://www.bbc.co.uk/news/videos/cmd6dv1446lno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "The Vaping Product Duty will be imposed at a rate of £2.20 per 10ml of e-liquid from April 2027."
+    },
+    {
+      "title": "The Bottom Line",
+      "url": "https://www.bbc.co.uk/sounds/play/m0032fqq?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "What's going wrong with the largest economy in Europe?"
+    },
+    {
       "title": "Fears coastal town road closure could leave Watchet 'desolate'",
       "url": "https://www.bbc.co.uk/news/videos/c6rry9ed2gkeo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 7, 2026",
@@ -3577,154 +3595,130 @@
       "description": "Diesel has now hit an average of £2 a litre in the UK, the RAC motoring group says, with petrol prices also rising."
     },
     {
-      "title": "Why are minimum alcohol prices going up?",
-      "url": "https://www.bbc.co.uk/news/videos/cm2dwd97repyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 2, 2026",
-      "description": "The minimum price of alcohol (MUP) in Wales has risen by 30%."
+      "title": "UK’s Burnham ‘open’ to Germany joining GCAP fighter jet programme",
+      "url": "https://www.aljazeera.com/news/2026/10/8/uks-burnham-open-to-germany-joining-gcap-fighter-jet-programme?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "GCAP pact between the UK, Italy and Japan to build a new fighter jet welcomed Canada as an ‘observer' in July"
     },
     {
-      "title": "Pro-Palestine university groups march in London on October 7 anniversary",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/7/pro-palestine-university-groups-march-in-london-on-october-7-anniversary?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "Pro-Palestine students took to the streets of London on October 7, despite police calls to postpone the march."
+      "title": "Italian law to give election winners bonus seats: Why that’s controversial",
+      "url": "https://www.aljazeera.com/news/2026/10/8/italian-law-to-give-election-winners-bonus-seats-why-thats-controversial?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Critics say the proposed law is undemocratic, potentially granting a winning coalition outsized power in parliament."
     },
     {
-      "title": "Trump on why he thinks he deserves the Nobel Peace Prize",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/7/trump-on-why-he-thinks-he-deserves-the-nobel-peace-prize-2?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "US President Donald Trump said it would be a ‘great discredit’ to the Nobel Peace Prize committee."
+      "title": "Sri Lanka arrests ex-President Rajapaksa’s wife in graft case",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/sri-lanka-arrests-ex-president-rajapaksas-wife-in-graft-case?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Sri Lanka’s former first lady Shiranthi Rajapaksa, wife of Mahinda Rajapaksa, has been arrested in a corruption case."
     },
     {
-      "title": "South Africa host Australia who battle more than ‘Sandpapergate’ memories",
-      "url": "https://www.aljazeera.com/sports/2026/10/7/south-africa-host-an-australia-battling-more-than-sandpapergate-memories?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "WTC holders South Africa host Australia, who struggled against Bangladesh, in Tests for first time since 2018 scandal."
+      "title": "Why has Iraq devalued its currency, and why are some MPs against it?",
+      "url": "https://www.aljazeera.com/economy/2026/10/8/why-has-iraq-devalued-its-currency-and-why-are-some-mps-against-it?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "MPs oppose dinar devaluation, citing increased living costs and financial strain on Iraq’s most vulnerable populations."
     },
     {
-      "title": "Harmanpreet Kaur: The captain who changed how India’s women played cricket",
-      "url": "https://www.aljazeera.com/sports/2026/10/7/harmanpreet-kaur-the-captain-who-changed-how-indias-women-played-cricket?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "Kaur's magical innings instilled belief in the Indian women's cricket team before she led them to a first world title."
+      "title": "Can emergency reserves ease the diesel crisis?",
+      "url": "https://www.aljazeera.com/video/counting-the-cost/2026/10/8/can-emergency-reserves-ease-the-diesel-crisis?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "The G7 plans to release emergency fuel stocks as diesel shortages raise transport costs and squeeze household budgets."
     },
     {
-      "title": "Gaza child’s autoimmune condition triggered amid Israel’s war",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/7/gaza-childs-autoimmune-condition-triggered-amid-israels-war?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "Gaza child’s autoimmune condition triggered amid Israel’s war"
+      "title": "Hegseth address sailors in pushup apology and Trump impression",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/hegseth-address-sailors-in-pushup-apology-and-trump-impression?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "US Secretary of Defense Pete Hegseth did a ‘two pushup’ forfeit after factual errors addressing US sailors."
     },
     {
-      "title": "Inside SpaceX’s new look for AI data centres in orbit",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/7/inside-spacexs-new-look-for-ai-data-centres-in-orbit?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "Inside SpaceX’s new look for AI data centres in orbit"
+      "title": "School protests, blockades resume in France despite PM’s promise to act",
+      "url": "https://www.aljazeera.com/news/2026/10/8/school-protests-blockades-resume-in-france-despite-pms-promise-to-act?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Dozens of people have been injured in the protests, including students, teachers, and police officers."
     },
     {
-      "title": "US Republicans, independents express low trust in election integrity: Poll",
-      "url": "https://www.aljazeera.com/news/2026/10/7/us-republicans-independents-express-low-trust-in-election-integrity-poll?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "A Gallup survey highlights a deep – and historic – partisan divide over confidence in the country's elections."
+      "title": "Photos: Protests erupt after 87-year-old evicted woman dies in Madrid",
+      "url": "https://www.aljazeera.com/gallery/2026/10/8/photos-protests-erupt-after-87-year-old-evicted-woman-dies-in-madrid?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Nationwide outrage grows after the death of woman whose eviction sparked protests and political tensions."
     },
     {
-      "title": "Israel’s deadline to close UK consulate in East Jerusalem nears",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/7/israels-deadline-to-close-uk-consulate-in-east-jerusalem-nears?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "Former British consul Vincent Fean says Israel is acting unlawfully by demanding the UK close its consulate."
+      "title": "How much does France spend on education compared with the rest of Europe?",
+      "url": "https://www.aljazeera.com/news/2026/10/8/how-much-does-france-spend-on-education-compared-with-the-rest-of-europe?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Amid student protests, Al Jazeera visualises how French spending stacks up against defence and healthcare."
     },
     {
-      "title": "Democratic FCC member warns of AI robocall misinformation risks in US",
-      "url": "https://www.aljazeera.com/economy/2026/10/7/democratic-fcc-member-warns-of-ai-robocall-misinformation-risks-in-us?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "FCC commissioner warns against AI robocalls, citing risks of misinformation before crucial midterm elections."
+      "title": "UK police charge Royal Navy member accused of working with foreign power",
+      "url": "https://www.aljazeera.com/news/2026/10/8/uk-police-charge-royal-navy-member-accused-of-working-with-foreign-power?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Police say the incident is not connected to ongoing investigations at the RAF Fairford airbase."
     },
     {
-      "title": "Former Catholic bishop sentenced for abusing indigenous men in Australia",
-      "url": "https://www.aljazeera.com/news/2026/10/7/former-catholic-bishop-sentenced-for-abusing-indigenous-men-in-australia?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "The Catholic Church in Australia has been marred by abuse allegations in recent years."
+      "title": "Bosnia’s political future looks increasingly like its past",
+      "url": "https://www.aljazeera.com/opinions/2026/10/8/bosnias-political-future-looks-increasingly-like-its-past?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Three nationalist parties are poised to dominate again, deepening fears of division and paralysis."
     },
     {
-      "title": "Indian opposition leader Rahul Gandhi detained over election chief protest",
-      "url": "https://www.aljazeera.com/news/2026/10/7/indian-opposition-leader-rahul-gandhi-detained-over-election-chief-protest?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "Rahul Gandhi has been arrested several times at protests demanding the resignation of poll body chief."
+      "title": "Jon Rahm to quit LIV Golf tour over ‘unacceptable’ terms",
+      "url": "https://www.aljazeera.com/sports/2026/10/8/jon-rahm-to-quit-liv-golf-tour-over-unacceptable-terms?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "'Rahm has reviewed the proposed terms of LIV 2.0 and has determined that they are unacceptable,' his lawyer said."
     },
     {
-      "title": "Ultra-Orthodox rabbi’s anti-Zionist remarks stir Israel election row",
-      "url": "https://www.aljazeera.com/news/2026/10/7/ultra-orthodox-rabbis-anti-zionist-remarks-stir-israel-election-row?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "Rabbi Dov Lando's comments expose tensions over Zionism, conscription and Netanyahu's ultra-Orthodox allies."
+      "title": "‘Nature can recover’: Inside the race to rescue world’s crisis-hit wildlife",
+      "url": "https://www.aljazeera.com/features/2026/10/8/nature-can-recover-inside-the-race-to-rescue-worlds-crisis-hit-wildlife?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Spark of hope for a natural world beset by crisis, as conservation efforts succeed amid a 73 percent drop in wildlife."
     },
     {
-      "title": "Witnesses spot Eritrean troops inside northern Ethiopia as tensions flare",
-      "url": "https://www.aljazeera.com/news/2026/10/7/witnesses-spot-eritrean-troops-inside-northern-ethiopia-as-tensions-flare?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "Eritrea dismisses allegation as Ethiopia's pretext for more war."
+      "title": "Gaza war sped up India’s shift towards Israel under Modi",
+      "url": "https://www.aljazeera.com/news/2026/10/8/how-gaza-war-sped-up-indias-shift-towards-israel-under-modi?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "As even Israel's traditional allies are distancing themselves from Netanyahu, Modi's India has embraced the country."
     },
     {
-      "title": "Kenya on high alert amid concern over screening after first Ebola death",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/7/kenya-on-high-alert-amid-concern-over-screening-after-first-ebola-death?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "Kenya’s government has intensified Ebola preparedness efforts amid growing concern over lapses in border screening."
+      "title": "Christa Pike almost taken off life support before she woke up",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/christa-pike-almost-taken-off-life-support-before-she-woke-up?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Death row inmate Christa Pike has regained consciousness following a botched execution in Tennessee, her lawyer says."
     },
     {
-      "title": "Saudi Arabia says Houthi attacks on airports killed three foreign nationals",
-      "url": "https://www.aljazeera.com/news/2026/10/7/saudi-arabia-says-three-foreign-nationals-killed-in-attacks-on-airports?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "Moroccan, Algerian women killed in Abha, Sudanese national killed in Riyadh."
+      "title": "Video: Signs removed from British consulate in occupied East Jerusalem",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/8/video-signs-removed-from-british-consulate-in-occupied-east-jerusalem?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Signs from the British consulate in occupied East Jerusalem were removed overnight as a deadline for its closure loomed."
     },
     {
-      "title": "LSD – from counterculture to clinical trials",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/7/lsd-from-counterculture-to-clinical-trials?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "From psychiatric research to counterculture and secret CIA mind-control experiments, LSD makes its way back to the lab."
+      "title": "Why Israel loves skunk water",
+      "url": "https://www.aljazeera.com/opinions/2026/10/8/why-israel-loves-skunk-water?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Israel’s foul-smelling weapon turns Palestinian repression into a sales pitch."
     },
     {
-      "title": "Most Americans oppose Trump’s taxpayer-funded ‘golden age’ ads: Poll",
-      "url": "https://www.aljazeera.com/news/2026/10/7/most-americans-oppose-trumps-taxpayer-funded-golden-age-ads-poll?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "Trump says he will pay for future ads, but the White House says taxpayers will not be reimbursed for past ones."
+      "title": "India defends satellite internet approval process after Elon Musk jab",
+      "url": "https://www.aljazeera.com/news/2026/10/8/india-defends-satellite-internet-approval-process-after-elon-musk-jab?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Musk has claimed unnamed entities are blocking Starlink's launch to maintain their monopoly."
     },
     {
-      "title": "In El Salvador’s mass trials, lawyers struggle to defend hundreds",
-      "url": "https://www.aljazeera.com/news/2026/10/7/in-el-salvadors-mass-trials-lawyers-struggle-to-defend-hundreds?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "Human Rights Watch says defendants face proceedings where lawyers have struggled to access case files."
+      "title": "Southampton manager Eckert can stay on despite role in ‘spygate’ scandal",
+      "url": "https://www.aljazeera.com/sports/2026/10/8/southampton-manager-eckert-can-stay-on-despite-role-in-spygate-scandal?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Tonda Eckert let off with fine and reprimand but avoids ban and will continue in his role with the club."
     },
     {
-      "title": "How genocide in Gaza followed Bosnia’s painful pattern",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/7/how-genocide-in-gaza-followed-bosnias-painful-pattern?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "Three years into Israel’s war on Gaza, we examine patterns that echo the Srebrenica genocide in Bosnia and Herzegovina."
+      "title": "Cristiano Ronaldo pays tribute to Lionel Messi after Argentina farewell",
+      "url": "https://www.aljazeera.com/sports/2026/10/8/cristiano-ronaldo-pays-tribute-to-lionel-messi-after-argentina-farewell?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "'I have the utmost respect for what you've accomplished with Argentina,' Ronaldo writes in response to Messi's post."
     },
     {
-      "title": "US Supreme Court hears challenge to air force UXO detonations in Guam",
-      "url": "https://www.aljazeera.com/news/2026/10/7/us-supreme-court-hears-challenge-to-air-force-uxo-detonations-in-guam?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "Advocacy group claims military sidestepped impact review, says case highlights lack of representation in US territories."
-    },
-    {
-      "title": "Jerusalem Daily: Gaza’s devastation, three years after October 7",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/7/jerusalem-daily-gazas-devastation-three-years-after-october-7?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "Three years after the October 7 attacks, more than 74,000 people have been killed in Gaza."
-    },
-    {
-      "title": "Maricarmen dies at 87 after eviction sparked Spain housing protests",
-      "url": "https://www.aljazeera.com/news/2026/10/7/spanish-unions-call-general-strike-over-housing-before-snap-election?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "Maricarmen became the symbol of Spain's housing crisis after she was evicted on a stretcher in Madrid."
-    },
-    {
-      "title": "Over 100 arrested in Belgium student protests over education costs",
-      "url": "https://www.aljazeera.com/news/2026/10/7/over-100-arrested-in-belgium-student-protests-over-education-costs?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "Protesting students have demanded education reforms in French-speaking areas of the country."
-    },
-    {
-      "title": "US mortgage rates hit their highest level in three years",
-      "url": "https://www.aljazeera.com/economy/2026/10/7/us-mortgage-rates-hit-their-highest-level-in-three-years?traffic_source=rss",
-      "date": "October 7, 2026",
-      "description": "Rising borrowing costs have pushed mortgage applications to their lowest level since February 2025."
+      "title": "Yemen’s government needs tribes to defeat the Houthis. Will they join?",
+      "url": "https://www.aljazeera.com/news/2026/10/8/yemens-government-needs-tribes-to-defeat-the-houthis-will-they-join?traffic_source=rss",
+      "date": "October 8, 2026",
+      "description": "Yemen's tribes could prove crucial to government's fight against the Houthis, but many may wait before choosing sides."
     }
   ]
 }
