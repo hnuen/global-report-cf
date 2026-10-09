@@ -51,7 +51,9 @@ export async function GET(request: Request) {
       // bandwidth. The authenticated weekly backup remains able to request
       // the complete library with ?archive=1.
       const library = await loadArticleLibrary(
-        archiveRequested ? undefined : { limitPerSection: PUBLIC_HISTORY_PER_SECTION }
+        archiveRequested
+          ? { archive: true }
+          : { limitPerSection: PUBLIC_HISTORY_PER_SECTION }
       );
       if (library.length > 0 && data.articles?.length) {
         const seen = new Set<string>();

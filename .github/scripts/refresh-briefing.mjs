@@ -2081,6 +2081,46 @@ async function trySaveBriefing(payload, merge = false) {
   return { saveRes, saveData };
 }
 
+async function commitLiveSnapshot(payload) {
+  if (!GITHUB_TOKEN || !GITHUB_REPO) return;
+  const perSection = new Map();
+  for (const article of payload.articles ?? []) {
+    const section = article.section ?? "sanctions";
+    const list = perSection.get(section) ?? [];
+    if (list.length < 60) list.push(article);
+    perSection.set(section, list);
+  }
+  const snapshot = { ...payload, articles: [...perSection.values()].flat() };
+  const path = "data/live-briefing.json";
+  const apiUrl = `https://api.github.com/repos/${GITHUB_REPO}/contents/${path}`;
+  const headers = {
+    "Authorization": `token ${GITHUB_TOKEN}`,
+    "Accept": "application/vnd.github+json",
+    "Content-Type": "application/json",
+  };
+  try {
+    let sha;
+    const existing = await fetch(apiUrl, { headers });
+    if (existing.ok) sha = (await existing.json()).sha;
+    const response = await fetch(apiUrl, {
+      method: "PUT",
+      headers,
+      body: JSON.stringify({
+        message: "chore: update live briefing fallback [skip ci]",
+        content: Buffer.from(JSON.stringify(snapshot)).toString("base64"),
+        ...(sha ? { sha } : {}),
+      }),
+    });
+    if (!response.ok) {
+      console.warn(`[live-snapshot] Commit failed (${response.status}): ${(await response.text()).slice(0, 160)}`);
+    } else {
+      console.log(`[live-snapshot] Committed ${snapshot.articles.length} bounded fallback articles`);
+    }
+  } catch (error) {
+    console.warn("[live-snapshot] Commit failed:", String(error).slice(0, 160));
+  }
+}
+
 async function saveBriefingWithRetry(payload, merge = false) {
   const normalized = normalizeBriefingPayload(payload);
   payload = normalized.payload;
@@ -2092,6 +2132,9 @@ async function saveBriefingWithRetry(payload, merge = false) {
     console.error("[refresh-briefing] Refusing to save: no valid articles remained after normalization");
     process.exit(1);
   }
+  // Keep the application readable when Upstash is suspended. This snapshot is
+  // capped and read-only; notification cooldown/dedupe state still fails closed.
+  await commitLiveSnapshot(payload);
   console.log(`[refresh-briefing] Saving to ${APP_URL}/api/save-briefing (merge=${merge}) ...`);
   const delays = [0, 5000, 15000, 30000];
   let saveRes;

@@ -3,9 +3,9 @@
  *
  * A Redis-backed store of enriched articles that persists across refreshes.
  * After each refresh, newly-enriched articles (with real Gemini briefs) are
- * merged in.  The orchestrator loads the library at startup and uses it for
- * historical display, so the app shows accumulated articles across all sections
- * indefinitely.
+ * merged in. Routine app traffic uses a small, capped "hot" collection. The
+ * older v2 collections are retained as a read-only archive for the authenticated
+ * weekly backup, but are never downloaded by page views or refresh jobs.
  *
  * Storage: Upstash Redis — per-section keys "app:article-library:v2:{section}"
  *   (one key per section: sanctions, economics, regions, occ, penalties, bis).
@@ -18,10 +18,16 @@ import type { Article } from "./types";
 
 const LEGACY_KEY = "app:article-library:v1";
 const KEY_PREFIX = "app:article-library:v2:";
+const HOT_KEY_PREFIX = "app:article-library:hot:v1:";
+export const HOT_ARTICLES_PER_SECTION = 100;
 const SECTIONS   = ["sanctions","economics","regions","occ","penalties","bis"] as const;
 
 function sectionKey(sec: string): string {
   return `${KEY_PREFIX}${sec}`;
+}
+
+function hotSectionKey(sec: string): string {
+  return `${HOT_KEY_PREFIX}${sec}`;
 }
 
 // ── Upstash REST helpers (direct — StorageManager only exposes load/save Briefing) ──
@@ -70,6 +76,8 @@ async function redisMGet(keys: string[]): Promise<(string | null)[]> {
     });
     if (!res.ok) return keys.map(() => null);
     const data: { result: string | null }[] = await res.json();
+    const bytes = data.reduce((sum, item) => sum + (item.result ? item.result.length : 0), 0);
+    console.log(`[redis-bandwidth] article-library read keys=${keys.length} bytes~=${bytes}`);
     return data.map(r => r.result ?? null);
   } catch { return keys.map(() => null); }
 }
@@ -82,6 +90,8 @@ async function redisMSet(pairs: { key: string; value: string }[]): Promise<void>
   if (!url || !token || pairs.length === 0) return;
   try {
     const commands = pairs.map(({ key, value }) => ["SET", key, value]);
+    const bytes = pairs.reduce((sum, pair) => sum + pair.value.length, 0);
+    console.log(`[redis-bandwidth] article-library write keys=${pairs.length} bytes~=${bytes}`);
     await fetch(`${url}/pipeline`, {
       method: "POST",
       headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
@@ -154,10 +164,12 @@ function headlineKey(headline: string): string {
   return headline.slice(0, 80).toLowerCase().replace(/\s+/g, " ").trim();
 }
 
-export async function loadArticleLibrary(opts?: { limitPerSection?: number }): Promise<Article[]> {
-  // Batch-load all section keys in ONE pipeline request (saves 5 subrequests vs
-  // 6 individual GETs — critical for CF Workers' 50-subrequest-per-invocation limit).
-  const keys = SECTIONS.map(sectionKey);
+export async function loadArticleLibrary(opts?: { limitPerSection?: number; archive?: boolean }): Promise<Article[]> {
+  // Normal traffic reads only bounded hot keys. The large legacy v2 values are
+  // reserved for the authenticated weekly archive endpoint.
+  const keys = opts?.archive
+    ? [...SECTIONS.map(sectionKey), ...SECTIONS.map(hotSectionKey)]
+    : SECTIONS.map(hotSectionKey);
   const raws = await redisMGet(keys);
   const results = raws.map(raw => {
     try {
@@ -167,10 +179,17 @@ export async function loadArticleLibrary(opts?: { limitPerSection?: number }): P
       return opts?.limitPerSection ? articles.slice(0, opts.limitPerSection) : articles;
     } catch { return [] as Article[]; }
   });
-  const all = results.flat();
+  const loaded = results.flat();
+  const unique = new Map<string, Article>();
+  for (const article of loaded) {
+    const key = article.sourceUrl || headlineKey(article.headline);
+    if (!unique.has(key)) unique.set(key, article);
+  }
+  const all = [...unique.values()];
 
-  // Auto-migrate from legacy v1 key if v2 is empty
-  if (all.length === 0) {
+  // The one-time legacy migration is archive-only. A missing hot cache safely
+  // falls back to briefing_v7 instead of pulling megabytes from Redis.
+  if (opts?.archive && all.length === 0) {
     const legacy = await redisGetArticles(LEGACY_KEY);
     if (legacy.length > 0) {
       console.log(`[article-library] Migrating ${legacy.length} articles from v1 → v2 per-section keys`);
@@ -201,9 +220,10 @@ export async function saveArticlesToLibrary(newArticles: Article[]): Promise<voi
   // Determine all sections that need updating (standard + any extras in candidates)
   const allSections = new Set<string>([...SECTIONS, ...candidatesBySection.keys()]);
 
-  // Batch-load existing articles for all affected sections in ONE pipeline request.
+  // Only read the bounded hot collection. Never read/modify/write the full v2
+  // archive during refreshes; that pattern exhausted the monthly bandwidth.
   const affectedSections = [...allSections].filter(sec => (candidatesBySection.get(sec) ?? []).length > 0);
-  const existingRaws = await redisMGet(affectedSections.map(sectionKey));
+  const existingRaws = await redisMGet(affectedSections.map(hotSectionKey));
   const existingBySec = new Map<string, Article[]>();
   affectedSections.forEach((sec, i) => {
     try {
@@ -225,8 +245,10 @@ export async function saveArticlesToLibrary(newArticles: Article[]): Promise<voi
       const prev = map.get(k);
       if (!prev || (a.body[0] || "").length > (prev.body[0] || "").length) map.set(k, a);
     }
-    const merged = [...map.values()].sort((a, b) => (b.date || "").localeCompare(a.date || ""));
-    toSave.push({ key: sectionKey(sec), value: JSON.stringify(merged) });
+    const merged = [...map.values()]
+      .sort((a, b) => (b.date || "").localeCompare(a.date || ""))
+      .slice(0, HOT_ARTICLES_PER_SECTION);
+    toSave.push({ key: hotSectionKey(sec), value: JSON.stringify(merged) });
     console.log(`[article-library] Section "${sec}": ${merged.length} articles to save`);
   }
 

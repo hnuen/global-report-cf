@@ -84,6 +84,7 @@ test("public news traffic cannot repeatedly download the full Redis archive", as
   ]);
   assert.match(news, /PUBLIC_HISTORY_PER_SECTION\s*=\s*100/);
   assert.match(news, /limitPerSection:\s*PUBLIC_HISTORY_PER_SECTION/);
+  assert.match(news, /archive:\s*true/);
   assert.match(news, /s-maxage=300/);
   assert.match(news, /archiveRequested[\s\S]*hasSecret/);
   assert.doesNotMatch(app, /\/api\/news\?t=\$\{Date\.now\(\)\}/);
@@ -91,5 +92,27 @@ test("public news traffic cannot repeatedly download the full Redis archive", as
   assert.equal((app.match(/loadNews\(true\)/g) ?? []).length, 1);
   assert.match(backup, /\/api\/news\?archive=1/);
   assert.match(backup, /x-cron-secret/);
+});
+
+test("routine article-library traffic uses bounded hot keys", async () => {
+  const library = await read("src/lib/article-library.ts");
+  assert.match(library, /HOT_KEY_PREFIX\s*=\s*"app:article-library:hot:v1:"/);
+  assert.match(library, /HOT_ARTICLES_PER_SECTION\s*=\s*100/);
+  assert.match(library, /SECTIONS\.map\(hotSectionKey\)/);
+  assert.match(library, /slice\(0, HOT_ARTICLES_PER_SECTION\)/);
+  assert.doesNotMatch(library, /existingRaws\s*=\s*await redisMGet\(affectedSections\.map\(sectionKey\)\)/);
+});
+
+test("a bounded GitHub snapshot keeps reads available during an Upstash outage", async () => {
+  const [orchestrator, fallback, refresh] = await Promise.all([
+    read("src/lib/orchestrator.ts"),
+    read("src/lib/live-snapshot.ts"),
+    read(".github/scripts/refresh-briefing.mjs"),
+  ]);
+  assert.match(orchestrator, /if \(stored\) return stored;[\s\S]*loadLiveSnapshot\(\)/);
+  assert.match(fallback, /data\/live-briefing\.json/);
+  assert.match(refresh, /if \(list\.length < 60\) list\.push\(article\)/);
+  assert.match(refresh, /update live briefing fallback \[skip ci\]/);
+  assert.match(refresh, /await commitLiveSnapshot\(payload\)/);
 });
 

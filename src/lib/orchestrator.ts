@@ -12,6 +12,7 @@ import { fetchOfacCache, recentActionsToArticles, civilPenaltiesToArticles, prog
 import { mergeDirectWithAiSupplement } from "./source-merge";
 import { commitSourceItemCheckpoints } from "./source-item-checkpoints";
 import { hasUsableArticleText, isDisplayableNewsArticle } from "./text-quality";
+import { loadLiveSnapshot } from "./live-snapshot";
 
 const HOT_ARTICLES_PER_SECTION = 60;
 
@@ -33,7 +34,10 @@ function capHotBriefingArticles(articles: Article[]): Article[] {
 // No module-level singletons Ã¢â‚¬â€ always read env vars fresh on each invocation
 export async function loadBriefing(): Promise<Briefing | null> {
   const storage = await buildStorageManager();
-  return storage.load();
+  const stored = await storage.load();
+  if (stored) return stored;
+  console.warn("[orchestrator] Persistent briefing unavailable; using GitHub live snapshot");
+  return loadLiveSnapshot();
 }
 
 export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean; section?: string; manualRefresh?: boolean; group?: 1|2|3|4; groupPart?: 1|2|3|4 }): Promise<{
