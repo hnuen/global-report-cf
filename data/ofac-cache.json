@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09T15:08:11.423Z",
+  "updatedAt": "2026-10-09T17:08:24.535Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261009",
@@ -3058,32 +3058,19 @@
       "description": "With these new listings, a total of 597 vessels are now listed by the EU."
     }
   ],
-  "unNotices": [
-    {
-      "title": "Unanimously Adopting Resolution 2830 (2026), Security Council Renews Sudan Sanctions Regime for Two Months, Panel of Experts’ Mandate for Three",
-      "url": "https://press.un.org/en/2026/sc16470.doc.htm",
-      "date": "October 8, 2026",
-      "description": "The Security Council today extended until 11 December the 1591 Sudan sanctions regime, including targeted sanctions and an arms embargo, to permit additional time for negotiations on extending the measures."
-    }
-  ],
+  "unNotices": [],
   "bbcNews": [
+    {
+      "title": "US imposes sanctions on International Criminal Court",
+      "url": "https://www.bbc.co.uk/news/articles/cj20vkkx3rdvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 9, 2026",
+      "description": "The US says the measures are aimed at restricting the tribunal's resources and ability to operate."
+    },
     {
       "title": "Three Saudi nationals killed in Houthi attacks on Riyadh airport",
       "url": "https://www.bbc.co.uk/news/articles/cmz7xe37g5wro?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
       "description": "The missile attacks come amid an escalation in fighting between the Iran-backed group and Saudi Arabia, which backs Yemen's government."
-    },
-    {
-      "title": "Venezuela's ex-leader Nicolás Maduro charged with conspiracy to commit torture",
-      "url": "https://www.bbc.co.uk/news/articles/c5pvgn7xvxpzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "The new accusations relate to the alleged torture of US citizens held in Venezuela while Maduro was in power."
-    },
-    {
-      "title": "South Korea recalls Ukraine envoy over prisoner-of-war row",
-      "url": "https://www.bbc.co.uk/news/articles/ckwy48rrz95vo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "It is the latest in a diplomatic spat after Kyiv disclosed that two North Korean prisoners were transferred to Seoul."
     },
     {
       "title": "Russian strikes and approaching winter force some in Kyiv to pack bags and flee",
@@ -3102,15 +3089,27 @@
       "url": "https://www.bbc.co.uk/news/videos/cwp8gnp14xr2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 8, 2026",
       "description": "The US aircraft carrier was set to return in May but the war with Iran has kept it at sea on one of the longest deployments ever."
-    },
-    {
-      "title": "Watch: Why was the sign at the British consulate in East Jerusalem removed?",
-      "url": "https://www.bbc.co.uk/news/videos/c962yz01l7mmo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "The consulate, first established in 1838, was set to be closed by the Israeli government in retaliation for UK sanctions."
     }
   ],
   "ajNews": [
+    {
+      "title": "‘A Ceuta-style surge is possible’: Border tensions on NATO’s eastern flank",
+      "url": "https://www.aljazeera.com/news/2026/10/9/a-ceuta-style-surge-is-possible-border-tensions-on-natos-eastern-flank?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "Belarus-linked incidents trouble Latvia and Lithuania, where experts warn of security challenges."
+    },
+    {
+      "title": "‘Rogue court’: US sanctions ICC hours after ex-judge wins Nobel Prize",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/rogue-court-us-sanctions-icc-hours-after-ex-judge-wins-nobel-prize?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "US Secretary of State Marco Rubio announced sanctions against the International Criminal Court on Friday."
+    },
+    {
+      "title": "US sanctions International Criminal Court itself in major escalation",
+      "url": "https://www.aljazeera.com/news/2026/10/9/us-sanctions-international-criminal-court-itself-in-latest-escalation?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "Latest action seeks to stem resources to international tribunal Trump administration has vowed to dismantle."
+    },
     {
       "title": "Ukraine pushes Russia back in Donetsk as military, civilian casualties soar",
       "url": "https://www.aljazeera.com/news/2026/10/9/ukraine-pushes-russia-back-in-donetsk-as-military-civilian-casualties-soar?traffic_source=rss",
@@ -3122,12 +3121,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/9/ukraine-takes-aim-at-russias-ai-data-infrastructure?traffic_source=rss",
       "date": "October 9, 2026",
       "description": "Drone attacks target Russian digital giant Yandex, as well as continuing strikes on missile plants and oil refineries."
-    },
-    {
-      "title": "Is Trump signalling a return to war with Iran after the midterms?",
-      "url": "https://www.aljazeera.com/news/2026/10/9/is-trump-signalling-a-return-to-war-with-iran-after-the-midterms?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "US media reports suggest he may be weighing strikes before the vote, but the president has ruled that out."
     }
   ],
   "occNews": [
@@ -3249,10 +3242,16 @@
       "description": "Alonzo Lunsford tells the BBC the punishment befits the crime but he has some doubts whether the public should be able to watch it."
     },
     {
-      "title": "France promises 3,000 extra teachers in first step to calm student protests",
-      "url": "https://www.bbc.co.uk/news/articles/c6vg98lw017po?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Thieves steal 30,000 bottles of wine worth €5m in Italy, reports say",
+      "url": "https://www.bbc.co.uk/news/articles/cme3xl8ln2vko?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
-      "description": "Education minister Edouard Geffray makes the offer after another day of sometimes violent demonstrations by high-school students."
+      "description": "The heist at the Florence-based winery is believed to be one of the largest thefts of its kind in Italy."
+    },
+    {
+      "title": "Man named Hitler Mussolini elected mayor in Peru",
+      "url": "https://www.bbc.co.uk/news/articles/cmdxwn9dr42yo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 9, 2026",
+      "description": "The left-wing candidate won a narrow victory in a remote district in the Peruvian Andes, exit polls show."
     },
     {
       "title": "Ethiopia warns Eritrea it will defend itself after troops cross border",
@@ -3267,16 +3266,16 @@
       "description": "Vitalii Zhykovych gives his own account of the attempted assassination of Ukrainian-born businessman Vadym Yermolayev."
     },
     {
-      "title": "Thieves steal 30,000 bottles of wine worth €5m in Italy, reports say",
-      "url": "https://www.bbc.co.uk/news/articles/cme3xl8ln2vko?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "The heist at the Florence-based winery is believed to be one of the largest thefts of its kind in Italy."
-    },
-    {
       "title": "ICE agent shoots man in New York City",
       "url": "https://www.bbc.co.uk/news/articles/c59vzk9yypn3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
       "description": "The mayor of New York expressed outrage at the shooting which the Department of Homeland Security said happened during the arrest of a \"criminal illegal alien\"."
+    },
+    {
+      "title": "France promises 3,000 extra teachers in first step to calm student protests",
+      "url": "https://www.bbc.co.uk/news/articles/c6vg98lw017po?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 9, 2026",
+      "description": "Education minister Edouard Geffray makes the offer after another day of sometimes violent demonstrations by high-school students."
     },
     {
       "title": "Crazy Rich Asians to return as TV show with original film's stars",
@@ -3321,60 +3320,6 @@
       "description": "The German sportswear brand wants the Sydney-based label to stop selling the clothes and pay damages."
     },
     {
-      "title": "'Bold and inventive' Canadian poet Anne Carson wins Nobel Literature Prize",
-      "url": "https://www.bbc.co.uk/news/articles/cq4g1j54nepyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "Carson, 76, is celebrated for works that often cross boundaries between poetry, fiction and scholarship."
-    },
-    {
-      "title": "Teacher who sexually abused pupil back in Indonesia jail after BBC investigation",
-      "url": "https://www.bbc.co.uk/news/articles/ckgel9r341gdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "Mochamad Subchi Azal Tsani had been secretly released on parole in 2025, after serving less than half his sentence."
-    },
-    {
-      "title": "Italy approves elections overhaul as opposition accuse Meloni of 'scam'",
-      "url": "https://www.bbc.co.uk/news/articles/c6zxjdw8rdl5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "Prime Minister Giorgia Meloni says the move will deliver more stable government, but opposition parties say her aim is to stay in power."
-    },
-    {
-      "title": "US deportations to African countries unlawful and exploit suffering, rights group says",
-      "url": "https://www.bbc.co.uk/news/articles/c9p8gn55433jo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "More than 500 migrants have been expelled from the US to African countries, HRW says, citing US data."
-    },
-    {
-      "title": "Outspoken Indian actor Nana Patekar dies suddenly at 75",
-      "url": "https://www.bbc.co.uk/news/articles/cj3vqr5rknpeo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "Known for his intense performances, Patekar carved out a distinctive place in Indian cinema."
-    },
-    {
-      "title": "Residents airlifted to safety after flooding in central Chile",
-      "url": "https://www.bbc.co.uk/news/articles/ck5yn8jn677vo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "The Mapocho river has burst its banks after an unusually large amount of rain fell in recent days."
-    },
-    {
-      "title": "Zambia signs US health deal after disputes over data-sharing",
-      "url": "https://www.bbc.co.uk/news/articles/cqd09eyk0g8no?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "The US will provide $1.5bn (£1.1bn) under the deal that was negotiated after Trump cut USAID funding."
-    },
-    {
-      "title": "Tanker hit by multiple projectiles in Gulf off Qatar, maritime agency says",
-      "url": "https://www.bbc.co.uk/news/articles/cqlydk7796wdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "Casualties have been reported on the vessel, identified by a maritime intelligence firm as the oil and chemical tanker, Acers."
-    },
-    {
-      "title": "Arizona congressional candidate says she was raped while repairing campaign sign",
-      "url": "https://www.bbc.co.uk/news/articles/c65yndpnk5qdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "Bernadette Greene-Placentia says her memory of the attack is spotty and that she was knocked unconscious."
-    },
-    {
       "title": "Meet India's feisty Gen Z protester who is taking on Modi",
       "url": "https://www.bbc.co.uk/news/articles/c5n49xln3lz0o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
@@ -3391,6 +3336,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cvglw9ryjrylo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
       "description": "Musk has taken pot-shots at Reliance owner Mukesh Ambani as Starlink struggles to launch in India."
+    },
+    {
+      "title": "Watch: 'I am Jane Doe' protests across US call for end to sexual violence",
+      "url": "https://www.bbc.co.uk/news/videos/cmy83pp3904vo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 9, 2026",
+      "description": "Protests against sexual violence took place across more than 40 US states on 8 October."
     },
     {
       "title": "Why is it so hard to put out Indonesian fires shrouding the region in toxic smog?",
@@ -3693,6 +3644,54 @@
       "description": "The economy is high on the agenda for US voters this election."
     },
     {
+      "title": "Powerful tornado rips through western Sicily",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/powerful-tornado-rips-through-western-sicily?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "A powerful tornado tore through western Sicily, causing destruction across the cities of Marsala and Petrosino."
+    },
+    {
+      "title": "DHS defends ICE shooting in NYC, says officers believed they were in danger",
+      "url": "https://www.aljazeera.com/news/2026/10/9/dhs-defends-ice-shooting-in-nyc-says-officers-believed-they-were-in-danger?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "The shooting prompted protests in New York City and Mayor Zohran Mamdani condemned the incident."
+    },
+    {
+      "title": "Thousands rally for anti-austerity protest in Brussels amid clashes",
+      "url": "https://www.aljazeera.com/news/2026/10/9/thousands-rally-for-anti-austerity-protest-in-brussels-amid-clashes?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "Belgian police respond to 'troublemakers' on sidelines of main rally with tear gas, water cannon and baton charges."
+    },
+    {
+      "title": "Trump launches probe into Federal Reserve Governor Lisa Cook",
+      "url": "https://www.aljazeera.com/economy/2026/10/9/trump-launches-probe-into-federal-reserve-governor-lisa-cook?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "Trump began efforts to remove Cook as one of the governors on the US Fed Reserve Board in 2025 and litigation is on."
+    },
+    {
+      "title": "Israeli settler attacks target Palestinian olive harvest in West Bank",
+      "url": "https://www.aljazeera.com/news/2026/10/9/israeli-settler-attacks-target-palestinian-olive-harvest-in-west-bank?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "At least 19 settler attacks recorded across territory on Friday as Israeli forces separately detain 16 Palestinians."
+    },
+    {
+      "title": "Hurricane Isaias strengthens into Category 3 storm with US in its sights",
+      "url": "https://www.aljazeera.com/news/2026/10/9/hurricane-isaias-strengthens-into-category-3-storm-with-us-in-its-sights?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "The major storm is expected to make landfall along the US Gulf Coast later on Friday or early Saturday."
+    },
+    {
+      "title": "Man City charges: How Premier League reacted – United, Arsenal, Liverpool",
+      "url": "https://www.aljazeera.com/sports/2026/10/9/man-city-charges-how-premier-league-reacted-man-utd-arsenal-liverpool?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "After Manchester City were found guilty of Premier League breaches, rival managers give their reaction as games resume."
+    },
+    {
+      "title": "Trump’s planned DC arch faces new lawsuit",
+      "url": "https://www.aljazeera.com/news/2026/10/9/trumps-planned-dc-arch-faces-new-lawsuit?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "A Virginia county governing board filed the suit, claiming that planning for the monument near DC was rushed."
+    },
+    {
       "title": "Man City case causing ‘uncertainty’ for whole Premier League, says Iraola",
       "url": "https://www.aljazeera.com/sports/2026/10/9/man-city-case-causing-uncertainty-for-whole-premier-league-says-iraola?traffic_source=rss",
       "date": "October 9, 2026",
@@ -3763,66 +3762,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/9/saudi-arabia-reopens-riyadh-airport-after-houthi-attack-kills-three?traffic_source=rss",
       "date": "October 9, 2026",
       "description": "Saudi Arabia has seen several attacks by the Houthis in recent days, with airports appearing to be the primary target."
-    },
-    {
-      "title": "Real Madrid’s Mourinho lashes out at ‘ridiculous’ criticism of Mbappe",
-      "url": "https://www.aljazeera.com/sports/2026/10/9/real-madrids-mourinho-lashes-out-at-ridiculous-criticism-of-mbappe?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "Kylian Mbappe takes fire for how he has chosen to recover from knee injury as he prepares to return for Real Madrid."
-    },
-    {
-      "title": "Manchester City charges: Maresca says Premier League club will win appeal",
-      "url": "https://www.aljazeera.com/sports/2026/10/9/manchester-city-charges-maresca-says-premier-league-club-will-win-appeal?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "Coach says he has absolute faith in Man City despite guilty finding over breaches of Premier League financial rules."
-    },
-    {
-      "title": "‘Indentured servants’: US green card move will hit thousands of IT workers",
-      "url": "https://www.aljazeera.com/news/2026/10/9/indentured-servants-us-green-card-move-will-hit-thousands-of-it-workers?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "The US is suspending top tech firms, including Microsoft, from a key programme to sponsor foreign workers’ green cards."
-    },
-    {
-      "title": "‘Is it April fool’s?’ Navi Pillay reacts to Nobel Peace Prize news",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/is-it-april-fools-navi-pillay-reacts-to-nobel-peace-prize-news?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "International judge Navi Pillay was applauded by colleagues as she gave her first public reaction to her Peace Prize."
-    },
-    {
-      "title": "Labour fends off the Green party in closely watched UK by-election",
-      "url": "https://www.aljazeera.com/news/2026/10/9/labour-fends-off-the-green-party-in-closely-watched-uk-by-election?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "Sagal Abdi-Wali won by 3,300 votes in the London seat of Holborn and St Pancras."
-    },
-    {
-      "title": "Ex-OpenAI staff say they were fired for raising safety concerns",
-      "url": "https://www.aljazeera.com/economy/2026/10/9/ex-openai-staff-say-they-were-fired-for-raising-safety-concerns?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "Three former researchers pen open letter warning of 'chilling' effect on company culture."
-    },
-    {
-      "title": "The girls in the Gaza school photograph",
-      "url": "https://www.aljazeera.com/features/longform/2026/10/9/the-girls-in-the-gaza-school-photograph?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "Just before the genocide, 15 Gaza schoolgirls posed for a photograph. Three years on, Al Jazeera went looking for them."
-    },
-    {
-      "title": "Nobel chair admits they haven’t reached Peace Prize winner Pillay",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/nobel-chair-admits-they-havent-reached-peace-prize-winner-pillay?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "The Nobel Committee has admitted that it has been unable to reach the ICJ judge to tell her the news."
-    },
-    {
-      "title": "A’ja Wilson wins her third straight WNBA MVP and record fifth overall",
-      "url": "https://www.aljazeera.com/sports/2026/10/9/aja-wilson-wins-her-third-straight-wnba-mvp-and-record-fifth-overall?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "Former US Vice President Kamala Harris among those to hail Wilson as Las Vegas Aces centre continues record run."
-    },
-    {
-      "title": "Navi Pillay wins Nobel Peace Prize",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/navi-pillay-wins-nobel-peace-prize?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "International Court of Justice judge Navi Pillay has been awarded this year’s Nobel Peace Prize."
     }
   ]
 }
