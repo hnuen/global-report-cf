@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09T19:28:22.315Z",
+  "updatedAt": "2026-10-09T21:08:20.477Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261009",
@@ -3069,10 +3069,10 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "Trump announces deal with Putin to release Russian diesel",
+      "title": "Trump announces deal for Russian diesel as Zelensky criticises 'gift to Putin'",
       "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
-      "description": "Diesel prices in the US have doubled since the war with Iran began in February, putting pressure on Republicans ahead of the midterms."
+      "description": "Ukraine's president said allowing Russia to sell petroleum products would prolong a war that must be ended."
     },
     {
       "title": "US unveils sanctions on ICC in move court condemns as 'assault on rule of law'",
@@ -3111,13 +3111,31 @@
       "description": "A Kyiv resident told the BBC she has moved away from \"everything that can be a Russian target\" as Ukraine braces for another cold winter under intense attacks."
     },
     {
-      "title": "Trump announces deal with Putin to release Russian diesel",
+      "title": "Trump announces deal for Russian diesel as Zelensky criticises 'gift to Putin'",
       "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
-      "description": "Diesel prices in the US have doubled since the war with Iran began in February, putting pressure on Republicans ahead of the midterms."
+      "description": "Ukraine's president said allowing Russia to sell petroleum products would prolong a war that must be ended."
+    },
+    {
+      "title": "Trump announces deal for Russian diesel as Zelensky criticises 'gift to Putin'",
+      "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 9, 2026",
+      "description": "Ukraine's president said allowing Russia to sell petroleum products would prolong a war that must be ended."
     }
   ],
   "ajNews": [
+    {
+      "title": "Trump announces Russian diesel deal amid soaring US fuel prices",
+      "url": "https://www.aljazeera.com/economy/2026/10/9/trump-announces-russian-diesel-deal-amid-soaring-us-fuel-prices?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "Russia to supply 300,000 tonnes of diesel immediately, followed by 1.5 million more, as prices soar amid the Iran war."
+    },
+    {
+      "title": "European states, Canada, Japan and UN back ICC against US sanctions",
+      "url": "https://www.aljazeera.com/news/2026/10/9/european-states-canada-japan-and-un-back-icc-against-us-sanctions?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "Several US allies call to 'defend' and 'protect' the ICC following Washington's decision to sanction the judiciary body."
+    },
     {
       "title": "‘An attack against sovereign states’: ICC President slams US sanctions",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/an-attack-against-sovereign-states-icc-president-slams-us-sanctions?traffic_source=rss",
@@ -3135,12 +3153,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/rogue-court-us-sanctions-icc-hours-after-ex-judge-wins-nobel-prize?traffic_source=rss",
       "date": "October 9, 2026",
       "description": "US Secretary of State Marco Rubio announced sanctions against the International Criminal Court on Friday."
-    },
-    {
-      "title": "US sanctions International Criminal Court itself in major escalation",
-      "url": "https://www.aljazeera.com/news/2026/10/9/us-sanctions-international-criminal-court-itself-in-latest-escalation?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "Latest action seeks to stem resources to international tribunal Trump administration has vowed to dismantle."
     }
   ],
   "occNews": [
@@ -3244,22 +3256,28 @@
   ],
   "regionsNews": [
     {
-      "title": "Navi Pillay, former UN human rights chief, wins Nobel Peace Prize",
-      "url": "https://www.bbc.co.uk/news/articles/cm9wz5kng0x1o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "Pillay is recognised for her \"efforts to promote peace and international law\", the Norwegian Nobel Committee says."
-    },
-    {
       "title": "JD Vance casts doubt on firing squad execution and says he will not watch it",
       "url": "https://www.bbc.co.uk/news/articles/ck20r39nl3qzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
       "description": "The planned execution of Nidal Hasan by firing squad would be the first military execution in more than 60 years."
     },
     {
+      "title": "Powerful magnitude 7.7 earthquake hits Panama, damaging buildings",
+      "url": "https://www.bbc.co.uk/news/articles/c620r39zdp9wo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 9, 2026",
+      "description": "Tsunami warnings are issued for neighbouring countries as videos of destruction circulate online."
+    },
+    {
       "title": "Man named Hitler Mussolini elected mayor in Peru",
       "url": "https://www.bbc.co.uk/news/articles/cmdxwn9dr42yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
       "description": "The left-wing candidate won a narrow victory in a remote district in the Peruvian Andes, exit polls show."
+    },
+    {
+      "title": "Navi Pillay, former UN human rights chief, wins Nobel Peace Prize",
+      "url": "https://www.bbc.co.uk/news/articles/cm9wz5kng0x1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 9, 2026",
+      "description": "Pillay is recognised for her \"efforts to promote peace and international law\", the Norwegian Nobel Committee says."
     },
     {
       "title": "Ethiopia warns Eritrea it will defend itself after troops cross border",
@@ -3364,6 +3382,12 @@
       "description": "Musk has taken pot-shots at Reliance owner Mukesh Ambani as Starlink struggles to launch in India."
     },
     {
+      "title": "Thai Queen makes first solo flight in fighter jet",
+      "url": "https://www.bbc.co.uk/news/videos/cqm263x40y37o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 9, 2026",
+      "description": "Thailand’s Queen Suthida made her first solo flight in a fighter jet, according to the Thai Royal Household."
+    },
+    {
       "title": "Watch: 'I am Jane Doe' protests across US call for end to sexual violence",
       "url": "https://www.bbc.co.uk/news/videos/cmy83pp3904vo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
@@ -3400,16 +3424,16 @@
       "description": "Talking about salary, spending habits and debt can be some of dating's trickier conversations."
     },
     {
-      "title": "Anthropic bans users from being 'cruel' to its AI systems",
-      "url": "https://www.bbc.co.uk/news/articles/c6j9k1l72wkgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "The firm said users can no longer engage in \"sustained and needless\" abusive behaviour towards the tech."
-    },
-    {
       "title": "Why are more roofs not made of solar tiles?",
       "url": "https://www.bbc.co.uk/news/articles/cdr7n610rmzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 8, 2026",
       "description": "Solar tiles were touted as an attractive alternative to solar panels - why have they not taken off?"
+    },
+    {
+      "title": "Anthropic bans users from being 'cruel' to its AI systems",
+      "url": "https://www.bbc.co.uk/news/articles/c6j9k1l72wkgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 9, 2026",
+      "description": "The firm said users can no longer engage in \"sustained and needless\" abusive behaviour towards the tech."
     },
     {
       "title": "'Add me on WhatsApp' scam calls to be investigated",
@@ -3580,6 +3604,12 @@
       "description": "Nvidia, OpenAI and Anthropic are all now selling their own limited edition fashion lines."
     },
     {
+      "title": "Trump wants to reduce the cost of fuel as the midterms loom - will it work?",
+      "url": "https://www.bbc.co.uk/news/articles/cv2d6x749lwro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 9, 2026",
+      "description": "The price of fuel has soared as the cost of living emerges as a key issue for millions of Americans."
+    },
+    {
       "title": "I've been with my boyfriend for two years and don't know his salary",
       "url": "https://www.bbc.co.uk/news/articles/c8wyz69r0nnpo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
@@ -3590,12 +3620,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c6ly0vxd2v9eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
       "description": "More than 260 industry leaders met to discuss the role wealthy residents play in Jersey's economy."
-    },
-    {
-      "title": "Trump wants to reduce the cost of fuel as the midterms loom - will it work?",
-      "url": "https://www.bbc.co.uk/news/articles/cv2d6x749lwro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "The price of fuel has soared as the cost of living emerges as a key issue for millions of Americans."
     },
     {
       "title": "Protesters blame 'vulture funds' for Spain's housing crisis",
@@ -3662,6 +3686,42 @@
       "url": "https://www.bbc.co.uk/sounds/play/w3ct8gly?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 7, 2026",
       "description": "The economy is high on the agenda for US voters this election."
+    },
+    {
+      "title": "How will Spain’s housing crisis affect elections?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/10/9/how-will-spains-housing-crisis-impact-elections?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "Snap vote called after Parliament rejects measures to protect tenants and freeze rents."
+    },
+    {
+      "title": "Human rights veteran Navi Pillay wins 2026 Nobel Peace Prize",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/human-rights-veteran-navi-pillay-wins-2026-nobel-peace-prize?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "South African jurist Navanethem Pillay has been awarded the 2026 Nobel Peace Prize for her work to promote peace."
+    },
+    {
+      "title": "Rising fuel costs slashed Delta’s profit outlook despite strong demand",
+      "url": "https://www.aljazeera.com/economy/2026/10/9/rising-fuel-costs-slashed-deltas-profit-outlook-despite-strong-demand?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "Rising fuel prices push Delta's annual fuel expenses up by $6bn, affecting its profit outlook for 2026."
+    },
+    {
+      "title": "Flydubai co-pilot plotted ‘suicide’ attack on Israel, UAE says",
+      "url": "https://www.aljazeera.com/news/2026/10/9/flydubai-co-pilot-plotted-suicide-attack-on-israel-uae-says?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "Attorney General says suspect admitted he acted alone after preparing ‌‌psychologically ‌‌and physically for the attack."
+    },
+    {
+      "title": "Tsunami warnings across Latin America after 7.7 magnitude earthquake hits",
+      "url": "https://www.aljazeera.com/news/2026/10/9/tsunami-warnings-across-latin-america-after-7-7-magnitude-earthquake-hits?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "Countries including Colombia, Ecuador, Nicaragua, Guatemala and Chile have received warnings after the quake."
+    },
+    {
+      "title": "Injured Orangutan rescued from Indonesia wildfires",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/injured-orangutan-rescued-from-indonesia-wildfires?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "A young orangutan has been rescued from wildfires on Borneo Island in Indonesia."
     },
     {
       "title": "Katie Zacharia ‘offered’ position as White House press secretary",
@@ -3746,48 +3806,6 @@
       "url": "https://www.aljazeera.com/sports/2026/10/9/man-city-charges-how-premier-league-reacted-man-utd-arsenal-liverpool?traffic_source=rss",
       "date": "October 9, 2026",
       "description": "After Manchester City were found guilty of Premier League breaches, rival managers give their reaction as games resume."
-    },
-    {
-      "title": "Trump’s planned DC arch faces new lawsuit",
-      "url": "https://www.aljazeera.com/news/2026/10/9/trumps-planned-dc-arch-faces-new-lawsuit?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "A Virginia county governing board filed the suit, claiming that planning for the monument near DC was rushed."
-    },
-    {
-      "title": "Man City case causing ‘uncertainty’ for whole Premier League, says Iraola",
-      "url": "https://www.aljazeera.com/sports/2026/10/9/man-city-case-causing-uncertainty-for-whole-premier-league-says-iraola?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "Liverpool's Andoni Iraola looks to Manchester City clash and rival's appeal over guilty verdict for financial breaches."
-    },
-    {
-      "title": "US to livestream Fort Hood shooter’s execution: Is that legal?​",
-      "url": "https://www.aljazeera.com/news/2026/10/9/us-to-livestream-fort-hood-shooters-execution-is-that?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "Rights groups and legal experts say the move could endanger minors, who are usually barred from witnessing executions."
-    },
-    {
-      "title": "Man City face Liverpool after being found guilty of financial breaches",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/man-city-face-liverpool-after-being-found-guilty-of-financial-breaches?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "Manchester City face Liverpool at Anfield after being found guilty of financial breaches."
-    },
-    {
-      "title": "Driver films from inside vehicle as car swept away in Chile floods",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/driver-films-from-inside-vehicle-as-car-swept-away-in-chile-floods?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "Driver films from inside vehicle as car swept away in Chile floods"
-    },
-    {
-      "title": "Ethiopia and Eritrea accuse one another of launching war",
-      "url": "https://www.aljazeera.com/news/2026/10/9/ethiopia-and-eritrea-accuse-one-another-of-launching-war?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "Eritrea denies backing TPLF as Ethiopia alleges collusion, further straining their already volatile relationship."
-    },
-    {
-      "title": "Bangladesh’s mango diplomacy with India has reached its limits",
-      "url": "https://www.aljazeera.com/opinions/2026/10/9/bangladeshs-mango-diplomacy-with-india-has-reached-its-limits?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "Cultural gestures have kept relations from collapsing, but repairing ties with India will require tough negotiations."
     }
   ]
 }
