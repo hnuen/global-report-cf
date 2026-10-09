@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09T21:08:20.477Z",
+  "updatedAt": "2026-10-09T22:08:06.835Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261009",
@@ -2403,12 +2403,11 @@
         },
         {
           "number": "135",
-          "title": "Authorizing Transactions Related to the Sale, Delivery, Offloading, and Importation of Diesel Fuel of Russian Federation Origin",
+          "title": "Russia-related General License 135",
           "date": "October 9, 2026",
           "expires": "April 7, 2027",
           "url": "https://ofac.treasury.gov/media/937216/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         }
       ]
     },
@@ -3147,12 +3146,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/9/a-ceuta-style-surge-is-possible-border-tensions-on-natos-eastern-flank?traffic_source=rss",
       "date": "October 9, 2026",
       "description": "Belarus-linked incidents trouble Latvia and Lithuania, where experts warn of security challenges."
-    },
-    {
-      "title": "‘Rogue court’: US sanctions ICC hours after ex-judge wins Nobel Prize",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/rogue-court-us-sanctions-icc-hours-after-ex-judge-wins-nobel-prize?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "US Secretary of State Marco Rubio announced sanctions against the International Criminal Court on Friday."
     }
   ],
   "occNews": [
@@ -3278,6 +3271,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cm9wz5kng0x1o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
       "description": "Pillay is recognised for her \"efforts to promote peace and international law\", the Norwegian Nobel Committee says."
+    },
+    {
+      "title": "Three men found guilty of murdering two Australian surfer brothers and US friend",
+      "url": "https://www.bbc.co.uk/news/articles/cj5ynwnye009o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 9, 2026",
+      "description": "The bodies of Jake and Callum Robinson and their friend Carter Rhoad were found at the bottom of a well."
     },
     {
       "title": "Ethiopia warns Eritrea it will defend itself after troops cross border",
@@ -3688,6 +3687,30 @@
       "description": "The economy is high on the agenda for US voters this election."
     },
     {
+      "title": "US judge rules Trump administration’s use of voter data unlawful",
+      "url": "https://www.aljazeera.com/news/2026/10/9/us-judge-rules-trump-administrations-use-of-voter-data-unlawful?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "A federal judge ruled against the Justice Department's use of voter data to cross-reference an immigration database."
+    },
+    {
+      "title": "Africa Cup of Nations may stay as a biennial event, says CAF chief Motsepe",
+      "url": "https://www.aljazeera.com/sports/2026/10/9/afcon-may-stay-as-a-biennial-event-says-caf-chief-motsepe?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "CAF had declared the Africa Cup of Nations would be held every four years, but may reverse that decision."
+    },
+    {
+      "title": "Manchester United vs Tottenham: Premier League – teams, prediction, lineups",
+      "url": "https://www.aljazeera.com/sports/2026/10/9/manchester-united-vs-tottenham-premier-league-teams-prediction-lineups?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "Man United and Tottenham Hotspur managers under increasing pressure ahead of Premier League clash at Old Trafford."
+    },
+    {
+      "title": "UN envoy warns Yemen has returned to ‘full-scale war’, urges dialogue",
+      "url": "https://www.aljazeera.com/news/2026/10/9/un-envoy-warns-yemen-has-returned-to-full-scale-war-urges-dialogue?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "Saudi Arabia and Yemen's internationally recognised gov't urge UN Security Council action amid Houthi escalation."
+    },
+    {
       "title": "How will Spain’s housing crisis affect elections?",
       "url": "https://www.aljazeera.com/video/inside-story/2026/10/9/how-will-spains-housing-crisis-impact-elections?traffic_source=rss",
       "date": "October 9, 2026",
@@ -3712,7 +3735,7 @@
       "description": "Attorney General says suspect admitted he acted alone after preparing ‌‌psychologically ‌‌and physically for the attack."
     },
     {
-      "title": "Tsunami warnings across Latin America after 7.7 magnitude earthquake hits",
+      "title": "Panama earthquake: Tsunami warnings issued after magnitude 7.7 quake",
       "url": "https://www.aljazeera.com/news/2026/10/9/tsunami-warnings-across-latin-america-after-7-7-magnitude-earthquake-hits?traffic_source=rss",
       "date": "October 9, 2026",
       "description": "Countries including Colombia, Ecuador, Nicaragua, Guatemala and Chile have received warnings after the quake."
@@ -3724,10 +3747,10 @@
       "description": "A young orangutan has been rescued from wildfires on Borneo Island in Indonesia."
     },
     {
-      "title": "Katie Zacharia ‘offered’ position as White House press secretary",
+      "title": "Katie Zacharia selected to be next White House press secretary",
       "url": "https://www.aljazeera.com/news/2026/10/9/katie-zacharia-offered-position-as-white-house-press-secretary?traffic_source=rss",
       "date": "October 9, 2026",
-      "description": "The role has been vacant since former White House press secretary Karoline Leavitt left in August."
+      "description": "US President Donald Trump called the conservative commentator 'a devoted fan'."
     },
     {
       "title": "‘Barbaric’: US lawmakers condemn plan to livestream Nidal Hasan’s execution",
@@ -3788,24 +3811,6 @@
       "url": "https://www.aljazeera.com/economy/2026/10/9/trump-launches-probe-into-federal-reserve-governor-lisa-cook?traffic_source=rss",
       "date": "October 9, 2026",
       "description": "Trump began efforts to remove Cook as one of the governors on the US Fed Reserve Board in 2025 and litigation is on."
-    },
-    {
-      "title": "Israeli settler attacks target Palestinian olive harvest in West Bank",
-      "url": "https://www.aljazeera.com/news/2026/10/9/israeli-settler-attacks-target-palestinian-olive-harvest-in-west-bank?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "At least 19 settler attacks recorded across territory on Friday as Israeli forces separately detain 16 Palestinians."
-    },
-    {
-      "title": "Hurricane Isaias strengthens into Category 3 storm with US in its sights",
-      "url": "https://www.aljazeera.com/news/2026/10/9/hurricane-isaias-strengthens-into-category-3-storm-with-us-in-its-sights?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "The major storm is expected to make landfall along the US Gulf Coast later on Friday or early Saturday."
-    },
-    {
-      "title": "Man City charges: How Premier League reacted – United, Arsenal, Liverpool",
-      "url": "https://www.aljazeera.com/sports/2026/10/9/man-city-charges-how-premier-league-reacted-man-utd-arsenal-liverpool?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "After Manchester City were found guilty of Premier League breaches, rival managers give their reaction as games resume."
     }
   ]
 }
