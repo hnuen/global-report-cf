@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09T19:08:06.982Z",
+  "updatedAt": "2026-10-09T19:28:22.315Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261009",
@@ -760,19 +760,21 @@
       "generalLicenses": [
         {
           "number": "1",
-          "title": "Cuba General License 1",
+          "title": "Transactions Authorized Pursuant to the Cuban Assets Control Regulations",
           "date": "May 7, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935571/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "4A",
-          "title": "Cuba General License 4A",
+          "title": "Authorizing Transactions for Third-Country Diplomatic and Consular Missions in Cuba",
           "date": "July 23, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936871/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         }
       ]
     },
@@ -1187,7 +1189,8 @@
           "date": "August 24, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7961/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": false
         },
         {
           "number": "G",
@@ -1195,7 +1198,8 @@
           "date": "August 24, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7966/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": false
         },
         {
           "number": "J-1",
@@ -1203,7 +1207,8 @@
           "date": "July 29, 2016",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7971/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "L",
@@ -1211,15 +1216,17 @@
           "date": "October 8, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48626/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "8A",
-          "title": "Iran General License 8A",
+          "title": "Authorizing Certain Humanitarian Trade Transactions Involving the Central Bank of Iran or the National Iranian Oil Company",
           "date": "February 27, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48841/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "Q",
@@ -1227,7 +1234,8 @@
           "date": "May 20, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934291/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "T",
@@ -1251,14 +1259,6 @@
           "date": "October 8, 2026",
           "expires": "October 23, 2026",
           "url": "https://ofac.treasury.gov/media/937096/download?inline",
-          "datePdf": true
-        },
-        {
-          "number": "134C",
-          "title": "Russia-related General License 134C",
-          "date": "May 18, 2026",
-          "expires": "August 21, 2026",
-          "url": "https://ofac.treasury.gov/media/935641/download?inline",
           "datePdf": true
         }
       ]
@@ -2318,7 +2318,8 @@
           "date": "December 20, 2016",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/8781/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "18",
@@ -2326,23 +2327,26 @@
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918686/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "19",
-          "title": "Ukraine General License 19",
+          "title": "Authorizing Transactions Related to Telecommunications and Mail",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918691/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "20",
-          "title": "Ukraine General License 20",
+          "title": "Official Business of Certain International Organizations and Entities",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918696/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "21",
@@ -2354,58 +2358,57 @@
         },
         {
           "number": "22",
-          "title": "Ukraine General License 22",
+          "title": "Authorizing the Exportation of Certain Services and Software Incident to Internet-Based Communications",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918706/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "23",
-          "title": "Ukraine General License 23",
+          "title": "Certain Transactions in Support of Nongovernmental Organizations’ Activities",
           "date": "March 11, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919151/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "24",
-          "title": "Ukraine General License 24",
+          "title": "Transactions Related to the Provision of Maritime Services",
           "date": "March 18, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919801/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "25",
-          "title": "Ukraine General License 25",
+          "title": "Journalistic Activities and Establishment of News Bureaus in Certain Regions of Ukraine",
           "date": "March 24, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/920276/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "26A",
-          "title": "Ukraine General License 26A",
+          "title": "Transactions Authorized Pursuant to the Russian Harmful Foreign Activities Sanctions Regulations",
           "date": "January 10, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/933911/download?inline",
-          "datePdf": true
-        },
-        {
-          "number": "134C",
-          "title": "Russia-related General License 134C",
-          "date": "May 18, 2026",
-          "expires": "June 17, 2026",
-          "url": "https://ofac.treasury.gov/media/935641/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "135",
-          "title": "Russia-related General License 135",
-          "date": "April 17, 2026",
-          "expires": "",
-          "url": "https://ofac.treasury.gov/media/937216/download?inline"
+          "title": "Authorizing Transactions Related to the Sale, Delivery, Offloading, and Importation of Diesel Fuel of Russian Federation Origin",
+          "date": "October 9, 2026",
+          "expires": "April 7, 2027",
+          "url": "https://ofac.treasury.gov/media/937216/download?inline",
+          "datePdf": true,
+          "dateConfident": true
         }
       ]
     },
@@ -3066,6 +3069,12 @@
   "unNotices": [],
   "bbcNews": [
     {
+      "title": "Trump announces deal with Putin to release Russian diesel",
+      "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 9, 2026",
+      "description": "Diesel prices in the US have doubled since the war with Iran began in February, putting pressure on Republicans ahead of the midterms."
+    },
+    {
       "title": "US unveils sanctions on ICC in move court condemns as 'assault on rule of law'",
       "url": "https://www.bbc.co.uk/news/articles/cj20vkkx3rdvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
@@ -3100,6 +3109,12 @@
       "url": "https://www.bbc.co.uk/news/videos/cqe8rn83088zo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
       "description": "A Kyiv resident told the BBC she has moved away from \"everything that can be a Russian target\" as Ukraine braces for another cold winter under intense attacks."
+    },
+    {
+      "title": "Trump announces deal with Putin to release Russian diesel",
+      "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 9, 2026",
+      "description": "Diesel prices in the US have doubled since the war with Iran began in February, putting pressure on Republicans ahead of the midterms."
     }
   ],
   "ajNews": [
@@ -3241,12 +3256,6 @@
       "description": "The planned execution of Nidal Hasan by firing squad would be the first military execution in more than 60 years."
     },
     {
-      "title": "Thieves steal 30,000 bottles of wine worth €5m in Italy, reports say",
-      "url": "https://www.bbc.co.uk/news/articles/cme3xl8ln2vko?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "The heist at the Florence-based winery is believed to be one of the largest thefts of its kind in Italy."
-    },
-    {
       "title": "Man named Hitler Mussolini elected mayor in Peru",
       "url": "https://www.bbc.co.uk/news/articles/cmdxwn9dr42yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
@@ -3263,6 +3272,12 @@
       "url": "https://www.bbc.co.uk/news/articles/c5rmy73zr0rro?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
       "description": "The conservative commentator currently works as a communications adviser at Trump Media & Technology Group."
+    },
+    {
+      "title": "Thieves steal 30,000 bottles of wine worth €5m in Italy, reports say",
+      "url": "https://www.bbc.co.uk/news/articles/cme3xl8ln2vko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 9, 2026",
+      "description": "The heist at the Florence-based winery is believed to be one of the largest thefts of its kind in Italy."
     },
     {
       "title": "US immigration officials defend ICE agents who shot man in same car as child",
@@ -3589,12 +3604,6 @@
       "description": "Hundreds have pitched their tents in central Madrid, while the Spanish prime minister has called a snap election."
     },
     {
-      "title": "How soon into dating do you talk about your salary?",
-      "url": "https://www.bbc.co.uk/news/videos/cry4x353vz2eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "You've met someone and it's going well so far. But bringing up how much you both earn can be a tricky conversation."
-    },
-    {
       "title": "My hometown shows that high streets have to change or die",
       "url": "https://www.bbc.co.uk/news/articles/crd689de186jo?at_medium=RSS&amp;at_campaign=rss",
       "date": "September 27, 2026",
@@ -3653,6 +3662,12 @@
       "url": "https://www.bbc.co.uk/sounds/play/w3ct8gly?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 7, 2026",
       "description": "The economy is high on the agenda for US voters this election."
+    },
+    {
+      "title": "Katie Zacharia ‘offered’ position as White House press secretary",
+      "url": "https://www.aljazeera.com/news/2026/10/9/katie-zacharia-offered-position-as-white-house-press-secretary?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "The role has been vacant since former White House press secretary Karoline Leavitt left in August."
     },
     {
       "title": "‘Barbaric’: US lawmakers condemn plan to livestream Nidal Hasan’s execution",
@@ -3773,12 +3788,6 @@
       "url": "https://www.aljazeera.com/opinions/2026/10/9/bangladeshs-mango-diplomacy-with-india-has-reached-its-limits?traffic_source=rss",
       "date": "October 9, 2026",
       "description": "Cultural gestures have kept relations from collapsing, but repairing ties with India will require tough negotiations."
-    },
-    {
-      "title": "Who is Navi Pillay, winner of the 2026 Nobel Peace Prize?",
-      "url": "https://www.aljazeera.com/news/2026/10/9/who-is-navi-pillay-winner-of-the-2026-nobel-peace-prize?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "The 85-year-old South African judge has spent decades fighting apartheid and genocide."
     }
   ]
 }
