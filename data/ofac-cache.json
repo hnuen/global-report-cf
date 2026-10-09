@@ -1,10 +1,16 @@
 {
-  "updatedAt": "2026-10-09T17:08:24.535Z",
+  "updatedAt": "2026-10-09T19:08:06.982Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261009",
       "code": "20261009",
       "title": "Settlement Agreement between the U.S. Department of the Treasury&#039;s Office of Foreign Assets Control and Pegasus Worldwide Logistics; International Criminal Court Designation and General Licenses; Burma-related Designation Removal",
+      "date": "October 09, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261009_33",
+      "code": "20261009_33",
+      "title": "Issuance of Russia-related General License",
       "date": "October 09, 2026"
     },
     {
@@ -54,12 +60,6 @@
       "code": "20260928",
       "title": "Issuance of Amended Venezuela General Licenses",
       "date": "September 28, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260924",
-      "code": "20260924",
-      "title": "Publication of Regulatory Amendments; Publication of Report for Licensing Activities Undertaken Pursuant to the Trade Sanctions Reform and Export Enhancement Act (TSRA)",
-      "date": "September 24, 2026"
     }
   ],
   "civilPenalties": [
@@ -760,21 +760,19 @@
       "generalLicenses": [
         {
           "number": "1",
-          "title": "Transactions Authorized Pursuant to the Cuban Assets Control Regulations",
+          "title": "Cuba General License 1",
           "date": "May 7, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935571/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "4A",
-          "title": "Authorizing Transactions for Third-Country Diplomatic and Consular Missions in Cuba",
+          "title": "Cuba General License 4A",
           "date": "July 23, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936871/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         }
       ]
     },
@@ -1189,8 +1187,7 @@
           "date": "August 24, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7961/download?inline",
-          "datePdf": true,
-          "dateConfident": false
+          "datePdf": true
         },
         {
           "number": "G",
@@ -1198,8 +1195,7 @@
           "date": "August 24, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7966/download?inline",
-          "datePdf": true,
-          "dateConfident": false
+          "datePdf": true
         },
         {
           "number": "J-1",
@@ -1207,8 +1203,7 @@
           "date": "July 29, 2016",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7971/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "L",
@@ -1216,17 +1211,15 @@
           "date": "October 8, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48626/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "8A",
-          "title": "Authorizing Certain Humanitarian Trade Transactions Involving the Central Bank of Iran or the National Iranian Oil Company",
+          "title": "Iran General License 8A",
           "date": "February 27, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48841/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "Q",
@@ -1234,8 +1227,7 @@
           "date": "May 20, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934291/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "T",
@@ -1604,7 +1596,7 @@
     "russian-harmful-foreign-activities-sanctions": {
       "name": "Russian Harmful Foreign Activities Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions",
-      "lastUpdated": "Oct 08, 2026",
+      "lastUpdated": "Oct 09, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -1820,12 +1812,11 @@
         },
         {
           "number": "13S",
-          "title": "Authorizing Certain Administrative Transactions Prohibited by Directive 4 under Executive Order 14024",
+          "title": "Russia-related General License 13S",
           "date": "July 8, 2026",
           "expires": "January 9, 2027",
           "url": "https://ofac.treasury.gov/media/937101/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "14",
@@ -1937,35 +1928,39 @@
         },
         {
           "number": "50",
-          "title": "Russia-related General License 50",
+          "title": "Authorizing the Closing of Individual Accounts at Financial Institutions Blocked Pursuant to Executive Order 14024",
           "date": "August 19, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/925326/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "52",
-          "title": "Russia-related General License 52",
+          "title": "Journalistic Activities and Establishment of News Bureaus",
           "date": "September 15, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/926581/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "53A",
-          "title": "Russia-related General License 53A",
+          "title": "Authorizing Transactions for Diplomatic Missions of the Russian Federation Involving Gazprombank Joint Stock Company or Prohibited by Directive 4 under Executive Order 14024",
           "date": "November 10, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/933626/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "54A",
-          "title": "Russia-related General License 54A",
+          "title": "Authorizing Certain Transactions Involving VEON Ltd. or VEON Holdings B.V. Prohibited by Executive Order 14071",
           "date": "November 18, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/930441/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "55F",
@@ -1977,43 +1972,48 @@
         },
         {
           "number": "56A",
-          "title": "Russia-related General License 56A",
+          "title": "Authorizing Certain Services with Respect to the European Union",
           "date": "November 22, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/931011/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "57A",
-          "title": "Russia-related General License 57A",
+          "title": "Authorizing Certain Services Related to Vessel Emergencies",
           "date": "November 22, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/931016/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "64",
-          "title": "Russia-related General License 64",
+          "title": "Authorizing Certain Transactions Involving Kommersant",
           "date": "April 12, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/931616/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "65",
-          "title": "Russia-related General License 65",
+          "title": "Authorizing Transactions Related to Telecommunications and Certain Internet-based Communications Involving Megafon PAO or Digital Invest Limited Liability Company",
           "date": "April 12, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/931621/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "84",
-          "title": "Russia-related General License 84",
+          "title": "Authorizing Transactions Related to Closing a Correspondent or Payable-Through Account",
           "date": "December 22, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/932476/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "94",
@@ -2100,6 +2100,13 @@
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934776/download?inline",
           "datePdf": true
+        },
+        {
+          "number": "135",
+          "title": "Russia-related General License 135",
+          "date": "November 21, 2025",
+          "expires": "",
+          "url": "https://ofac.treasury.gov/media/937216/download?inline"
         }
       ]
     },
@@ -2257,7 +2264,7 @@
     "ukraine-russia-related-sanctions": {
       "name": "Ukraine-/Russia-related Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/ukraine-russia-related-sanctions",
-      "lastUpdated": "May 08, 2026",
+      "lastUpdated": "Oct 09, 2026",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -2311,8 +2318,7 @@
           "date": "December 20, 2016",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/8781/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "18",
@@ -2320,26 +2326,23 @@
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918686/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "19",
-          "title": "Authorizing Transactions Related to Telecommunications and Mail",
+          "title": "Ukraine General License 19",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918691/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "20",
-          "title": "Official Business of Certain International Organizations and Entities",
+          "title": "Ukraine General License 20",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918696/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "21",
@@ -2351,48 +2354,43 @@
         },
         {
           "number": "22",
-          "title": "Authorizing the Exportation of Certain Services and Software Incident to Internet-Based Communications",
+          "title": "Ukraine General License 22",
           "date": "February 21, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/918706/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "23",
-          "title": "Certain Transactions in Support of Nongovernmental Organizations’ Activities",
+          "title": "Ukraine General License 23",
           "date": "March 11, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919151/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "24",
-          "title": "Transactions Related to the Provision of Maritime Services",
+          "title": "Ukraine General License 24",
           "date": "March 18, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919801/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "25",
-          "title": "Journalistic Activities and Establishment of News Bureaus in Certain Regions of Ukraine",
+          "title": "Ukraine General License 25",
           "date": "March 24, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/920276/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "26A",
-          "title": "Transactions Authorized Pursuant to the Russian Harmful Foreign Activities Sanctions Regulations",
+          "title": "Ukraine General License 26A",
           "date": "January 10, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/933911/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "134C",
@@ -2401,6 +2399,13 @@
           "expires": "June 17, 2026",
           "url": "https://ofac.treasury.gov/media/935641/download?inline",
           "datePdf": true
+        },
+        {
+          "number": "135",
+          "title": "Russia-related General License 135",
+          "date": "April 17, 2026",
+          "expires": "",
+          "url": "https://ofac.treasury.gov/media/937216/download?inline"
         }
       ]
     },
@@ -3061,10 +3066,16 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "US imposes sanctions on International Criminal Court",
+      "title": "US unveils sanctions on ICC in move court condemns as 'assault on rule of law'",
       "url": "https://www.bbc.co.uk/news/articles/cj20vkkx3rdvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
-      "description": "The US says the measures are aimed at restricting the tribunal's resources and ability to operate."
+      "description": "Several member states of the international tribunal, including the UK, say they \"strongly disagree\" with the sanctions."
+    },
+    {
+      "title": "Russian search engine Yandex struggles after Ukrainian strikes on data centres",
+      "url": "https://www.bbc.co.uk/news/articles/c68xzqqn4ekro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 9, 2026",
+      "description": "Often dubbed \"Russia's Google\", the tech firm admits customers may experience disruption to digital services due to the attacks."
     },
     {
       "title": "Three Saudi nationals killed in Houthi attacks on Riyadh airport",
@@ -3079,19 +3090,25 @@
       "description": "A renewed Russian campaign of strikes on power and energy infrastructure has made some contemplate leaving Ukraine's capital."
     },
     {
+      "title": "Watch: Who is Nobel Peace Prize winner Navi Pillay?",
+      "url": "https://www.bbc.co.uk/news/videos/cq8ezdww6w0do?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 9, 2026",
+      "description": "BBC correspondent Joe Inwood explains how Pillay's childhood in South Africa led her to become a driving force in international law from Myanmar to Gaza."
+    },
+    {
       "title": "Fleeing Kyiv for the countryside ahead of winter",
       "url": "https://www.bbc.co.uk/news/videos/cqe8rn83088zo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
       "description": "A Kyiv resident told the BBC she has moved away from \"everything that can be a Russian target\" as Ukraine braces for another cold winter under intense attacks."
-    },
-    {
-      "title": "​​USS Lincoln finally docks in San Diego after 10-month mission",
-      "url": "https://www.bbc.co.uk/news/videos/cwp8gnp14xr2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "The US aircraft carrier was set to return in May but the war with Iran has kept it at sea on one of the longest deployments ever."
     }
   ],
   "ajNews": [
+    {
+      "title": "‘An attack against sovereign states’: ICC President slams US sanctions",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/an-attack-against-sovereign-states-icc-president-slams-us-sanctions?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "International Criminal Court President Tomoko Akane has responded to US sanctions imposed to ‘defend sovereignty’."
+    },
     {
       "title": "‘A Ceuta-style surge is possible’: Border tensions on NATO’s eastern flank",
       "url": "https://www.aljazeera.com/news/2026/10/9/a-ceuta-style-surge-is-possible-border-tensions-on-natos-eastern-flank?traffic_source=rss",
@@ -3109,18 +3126,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/9/us-sanctions-international-criminal-court-itself-in-latest-escalation?traffic_source=rss",
       "date": "October 9, 2026",
       "description": "Latest action seeks to stem resources to international tribunal Trump administration has vowed to dismantle."
-    },
-    {
-      "title": "Ukraine pushes Russia back in Donetsk as military, civilian casualties soar",
-      "url": "https://www.aljazeera.com/news/2026/10/9/ukraine-pushes-russia-back-in-donetsk-as-military-civilian-casualties-soar?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "Russia is fighting for settlements it once firmly held in Donetsk, and has retreated from many others."
-    },
-    {
-      "title": "Ukraine takes aim at Russia’s AI data infrastructure",
-      "url": "https://www.aljazeera.com/news/2026/10/9/ukraine-takes-aim-at-russias-ai-data-infrastructure?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "Drone attacks target Russian digital giant Yandex, as well as continuing strikes on missile plants and oil refineries."
     }
   ],
   "occNews": [
@@ -3230,16 +3235,10 @@
       "description": "Pillay is recognised for her \"efforts to promote peace and international law\", the Norwegian Nobel Committee says."
     },
     {
-      "title": "Firing squad execution to be livestreamed, Pentagon says",
-      "url": "https://www.bbc.co.uk/news/articles/cmy0r96xygx6o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "JD Vance casts doubt on firing squad execution and says he will not watch it",
+      "url": "https://www.bbc.co.uk/news/articles/ck20r39nl3qzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
-      "description": "Pete Hegseth says the execution will be public, but a legal expert says the \"unprecedented\" decision is on \"uncertain legal terrain\"."
-    },
-    {
-      "title": "Fort Hood survivor supports gunman's execution by firing squad but questions livestream",
-      "url": "https://www.bbc.co.uk/news/articles/ck1wvqw4lzdvo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "Alonzo Lunsford tells the BBC the punishment befits the crime but he has some doubts whether the public should be able to watch it."
+      "description": "The planned execution of Nidal Hasan by firing squad would be the first military execution in more than 60 years."
     },
     {
       "title": "Thieves steal 30,000 bottles of wine worth €5m in Italy, reports say",
@@ -3260,22 +3259,28 @@
       "description": "Truckloads of Eritrean soldiers have been seen driving into Ethiopia, which has reportedly responded with drone strikes."
     },
     {
-      "title": "Suspect linked to Monaco bomb attack on millionaire speaks to BBC",
-      "url": "https://www.bbc.co.uk/news/articles/ckgel9044vqeo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "Vitalii Zhykovych gives his own account of the attempted assassination of Ukrainian-born businessman Vadym Yermolayev."
+      "title": "Commentator Katie Zacharia picked as new White House press secretary",
+      "url": "https://www.bbc.co.uk/news/articles/c5rmy73zr0rro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 9, 2026",
+      "description": "The conservative commentator currently works as a communications adviser at Trump Media & Technology Group."
     },
     {
-      "title": "ICE agent shoots man in New York City",
-      "url": "https://www.bbc.co.uk/news/articles/c59vzk9yypn3o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "US immigration officials defend ICE agents who shot man in same car as child",
+      "url": "https://www.bbc.co.uk/news/articles/cq78px5y1zmzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
-      "description": "The mayor of New York expressed outrage at the shooting which the Department of Homeland Security said happened during the arrest of a \"criminal illegal alien\"."
+      "description": "Oscar Belgal, the 28-year-old man, survived the shooting and is now being held at a detention facility outside of New York, officials said."
     },
     {
       "title": "France promises 3,000 extra teachers in first step to calm student protests",
       "url": "https://www.bbc.co.uk/news/articles/c6vg98lw017po?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
       "description": "Education minister Edouard Geffray makes the offer after another day of sometimes violent demonstrations by high-school students."
+    },
+    {
+      "title": "Suspect linked to Monaco bomb attack on millionaire speaks to BBC",
+      "url": "https://www.bbc.co.uk/news/articles/ckgel9044vqeo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 8, 2026",
+      "description": "Vitalii Zhykovych gives his own account of the attempted assassination of Ukrainian-born businessman Vadym Yermolayev."
     },
     {
       "title": "Crazy Rich Asians to return as TV show with original film's stars",
@@ -3318,6 +3323,12 @@
       "url": "https://www.bbc.co.uk/news/articles/c9e8ld448km8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
       "description": "The German sportswear brand wants the Sydney-based label to stop selling the clothes and pay damages."
+    },
+    {
+      "title": "Fort Hood survivor supports gunman's execution by firing squad but questions livestream",
+      "url": "https://www.bbc.co.uk/news/articles/ck1wvqw4lzdvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 9, 2026",
+      "description": "Alonzo Lunsford tells the BBC the punishment befits the crime but he has some doubts whether the public should be able to watch it."
     },
     {
       "title": "Meet India's feisty Gen Z protester who is taking on Modi",
@@ -3644,6 +3655,42 @@
       "description": "The economy is high on the agenda for US voters this election."
     },
     {
+      "title": "‘Barbaric’: US lawmakers condemn plan to livestream Nidal Hasan’s execution",
+      "url": "https://www.aljazeera.com/news/2026/10/9/barbaric-us-lawmakers-condemn-plan-to-livestream-nidal-hasans-execution?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "Republican and Democratic lawmakers condemn Pentagon plan to livestream Fort Hood shooter's execution by firing squad."
+    },
+    {
+      "title": "AI deepfake ads grow more popular in US midterm campaigns, blurring truth",
+      "url": "https://www.aljazeera.com/economy/2026/10/9/ai-deepfake-ads-grow-more-popular-in-us-midterm-campaigns-blurring-truth?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "The US midterm election campaign has been filled with political ads featuring AI deepfakes that can mislead voters."
+    },
+    {
+      "title": "Gaza ceasefire ‘exists in name only’, more than 100 NGOs say",
+      "url": "https://www.aljazeera.com/news/2026/10/9/gaza-ceasefire-exists-in-name-only-more-than-100-ngos-say?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "Humanitarian and human rights groups call out Israel's continued killings and restrictions across the enclave."
+    },
+    {
+      "title": "Jerusalem Daily: US charity to use AI to monitor Gaza classrooms",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/jerusalem-daily-us-charity-to-use-ai-to-monitor-gaza-classrooms?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "A US charity announced it will use an AI-software to monitor Gaza classrooms for ‘anti-Semitism’ and ‘hate speech’."
+    },
+    {
+      "title": "Drone strike kills 30 people in Sudan’s Blue Nile region",
+      "url": "https://www.aljazeera.com/news/2026/10/9/drone-strike-kills-30-people-in-sudans-blue-nile-region?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "Drone reportedly linked to RSF targets Wad al-Mahi, killing dozens near displacement camp, including women and children."
+    },
+    {
+      "title": "Palestinians seek protection from violent settlers during olive harvest",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/palestinians-seek-protection-from-violent-settlers-during-olive-harvest?traffic_source=rss",
+      "date": "October 9, 2026",
+      "description": "Palestinian farmers harvesting olives in the occupied West Bank are calling on international activists to protect them."
+    },
+    {
       "title": "Powerful tornado rips through western Sicily",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/powerful-tornado-rips-through-western-sicily?traffic_source=rss",
       "date": "October 9, 2026",
@@ -3732,36 +3779,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/9/who-is-navi-pillay-winner-of-the-2026-nobel-peace-prize?traffic_source=rss",
       "date": "October 9, 2026",
       "description": "The 85-year-old South African judge has spent decades fighting apartheid and genocide."
-    },
-    {
-      "title": "Child flees as Israeli settlers hijack car during pogrom",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/child-flees-as-israeli-settlers-hijack-car-during-pogrom?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "A Palestinian boy was seen fleeing after Israeli settlers attacked his father and stole their car in Ramallah."
-    },
-    {
-      "title": "Malaysia shuts schools as haze from Indonesian fires chokes Southeast Asia",
-      "url": "https://www.aljazeera.com/news/2026/10/9/malaysia-shuts-schools-as-haze-from-indonesian-fires-chokes-southeast-asia?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "Kuala Lumpur's Air Pollutant Index says air quality at unhealthy levels amid smog from forest fires."
-    },
-    {
-      "title": "Satire silenced: Indian artists face censorship as anti-Modi protests grow",
-      "url": "https://www.aljazeera.com/news/2026/10/9/satire-silenced-indian-artists-face-censorship-as-anti-modi-protests-grow?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "New Delhi accused of silencing dissent as satirical content and online critiques are removed under new rules."
-    },
-    {
-      "title": "India’s Cockroach Party says members detained ahead of protest",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/indias-cockroach-party-says-members-detained-ahead-of-protest?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "India’s Cockroach Janta Party says thousands of its members have been detained ahead of Saturday’s protest in New Delhi."
-    },
-    {
-      "title": "Saudi Arabia reopens Riyadh airport after Houthi attack kills three",
-      "url": "https://www.aljazeera.com/news/2026/10/9/saudi-arabia-reopens-riyadh-airport-after-houthi-attack-kills-three?traffic_source=rss",
-      "date": "October 9, 2026",
-      "description": "Saudi Arabia has seen several attacks by the Houthis in recent days, with airports appearing to be the primary target."
     }
   ]
 }
