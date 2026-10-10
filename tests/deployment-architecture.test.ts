@@ -109,10 +109,16 @@ test("a bounded GitHub snapshot keeps reads available during an Upstash outage",
     read("src/lib/live-snapshot.ts"),
     read(".github/scripts/refresh-briefing.mjs"),
   ]);
-  assert.match(orchestrator, /if \(stored\) return stored;[\s\S]*loadLiveSnapshot\(\)/);
+  assert.match(orchestrator, /storedArticles\.length < 2/);
+  assert.match(orchestrator, /Welcome to The Global Report/);
+  assert.match(orchestrator, /const snapshot = await loadLiveSnapshot\(\)/);
+  assert.match(orchestrator, /return snapshot \?\? stored/);
   assert.match(fallback, /data\/live-briefing\.json/);
+  assert.match(fallback, /BLOCKED_SOURCE_URLS/);
+  assert.match(fallback, /news\.un\.org\/en\/story\/2026\/10\/1172026/);
   assert.match(refresh, /if \(list\.length < 60\) list\.push\(article\)/);
   assert.match(refresh, /update live briefing fallback \[skip ci\]/);
-  assert.match(refresh, /await commitLiveSnapshot\(payload\)/);
+  assert.match(refresh, /const snapshotSaved = await commitLiveSnapshot\(payload\)/);
+  assert.match(refresh, /if \(snapshotSaved\)[\s\S]*completed in degraded mode/);
 });
 

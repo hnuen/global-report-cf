@@ -35,9 +35,20 @@ function capHotBriefingArticles(articles: Article[]): Article[] {
 export async function loadBriefing(): Promise<Briefing | null> {
   const storage = await buildStorageManager();
   const stored = await storage.load();
-  if (stored) return stored;
-  console.warn("[orchestrator] Persistent briefing unavailable; using GitHub live snapshot");
-  return loadLiveSnapshot();
+  const storedArticles = stored?.articles ?? [];
+  const isPlaceholder =
+    storedArticles.length < 2 ||
+    storedArticles.some(article =>
+      article.headline?.includes("Welcome to The Global Report")
+    );
+
+  if (stored && !isPlaceholder) return stored;
+
+  console.warn(
+    `[orchestrator] Persistent briefing ${stored ? "is only a placeholder" : "is unavailable"}; using GitHub live snapshot`
+  );
+  const snapshot = await loadLiveSnapshot();
+  return snapshot ?? stored;
 }
 
 export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean; section?: string; manualRefresh?: boolean; group?: 1|2|3|4; groupPart?: 1|2|3|4 }): Promise<{

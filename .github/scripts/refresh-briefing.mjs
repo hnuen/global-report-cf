@@ -2082,7 +2082,7 @@ async function trySaveBriefing(payload, merge = false) {
 }
 
 async function commitLiveSnapshot(payload) {
-  if (!GITHUB_TOKEN || !GITHUB_REPO) return;
+  if (!GITHUB_TOKEN || !GITHUB_REPO) return false;
   const perSection = new Map();
   for (const article of payload.articles ?? []) {
     const section = article.section ?? "sanctions";
@@ -2113,11 +2113,14 @@ async function commitLiveSnapshot(payload) {
     });
     if (!response.ok) {
       console.warn(`[live-snapshot] Commit failed (${response.status}): ${(await response.text()).slice(0, 160)}`);
+      return false;
     } else {
       console.log(`[live-snapshot] Committed ${snapshot.articles.length} bounded fallback articles`);
+      return true;
     }
   } catch (error) {
     console.warn("[live-snapshot] Commit failed:", String(error).slice(0, 160));
+    return false;
   }
 }
 
@@ -2134,7 +2137,7 @@ async function saveBriefingWithRetry(payload, merge = false) {
   }
   // Keep the application readable when Upstash is suspended. This snapshot is
   // capped and read-only; notification cooldown/dedupe state still fails closed.
-  await commitLiveSnapshot(payload);
+  const snapshotSaved = await commitLiveSnapshot(payload);
   console.log(`[refresh-briefing] Saving to ${APP_URL}/api/save-briefing (merge=${merge}) ...`);
   const delays = [0, 5000, 15000, 30000];
   let saveRes;
@@ -2154,6 +2157,10 @@ async function saveBriefingWithRetry(payload, merge = false) {
   if (!saveRes.ok || !saveData.ok) {
     console.error(`[refresh-briefing] Save failed after retry (${saveRes.status}): ${JSON.stringify(saveData)}`);
     console.error(`[refresh-briefing] Briefing had ${payload.articles?.length} articles, lastUpdated: ${payload.lastUpdated}`);
+    if (snapshotSaved) {
+      console.warn("[refresh-briefing] Redis unavailable; bounded GitHub snapshot is live, so this refresh completed in degraded mode");
+      return;
+    }
     process.exit(1);
   }
   console.log(`[refresh-briefing] ✅ Saved — ${saveData.articleCount} articles, lastUpdated: ${saveData.lastUpdated}`);
