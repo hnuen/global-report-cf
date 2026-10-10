@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T17:08:12.688Z",
+  "updatedAt": "2026-10-10T19:08:11.270Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261009",
@@ -3068,10 +3068,10 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "Trump announces deal for Russian diesel as Zelensky calls it a gift to Putin",
-      "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&amp;at_campaign=rss",
+      "title": "'Time for Ukraine to get new president,' says Trump after Zelensky condemns diesel deal",
+      "url": "https://www.bbc.co.uk/news/articles/cqe8r5l7n92jo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 10, 2026",
-      "description": "Ukraine's president sharply criticised the move, calling it an \"investment in war that must be ended, not prolonged\"."
+      "description": "Ukraine's leader had said the deal with Russia to release diesel into the US would help Moscow fund the war."
     },
     {
       "title": "Russian glide bomb attack on Zaporizhzhia kills at least 15 people",
@@ -3134,18 +3134,6 @@
       "url": "https://www.aljazeera.com/news-analysis/2026/10/10/anachronism-rubios-civilisational-rhetoric-prompts-pushback-from-iran?traffic_source=rss",
       "date": "October 10, 2026",
       "description": "Rubio says threats to Western civilisation today 'every bit as real as they were on the dramatic stage of antiquity'."
-    },
-    {
-      "title": "Ukraine warns Trump-Putin diesel deal will bankroll Russia’s war",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/10/ukraine-warns-trump-putin-diesel-deal-will-bankroll-russias-war?traffic_source=rss",
-      "date": "October 10, 2026",
-      "description": "Donald Trump’s diesel deal with Putin gives Russia more money to continue attacking Ukraine, Zelenskyy says."
-    },
-    {
-      "title": "Why is US turning to Russia for diesel despite sanctions?",
-      "url": "https://www.aljazeera.com/news/2026/10/10/why-is-us-turning-to-russia-for-diesel-despite-sanctions?traffic_source=rss",
-      "date": "October 10, 2026",
-      "description": "President Donald Trump's deal with Putin comes amid surging fuel prices and looming US midterm elections."
     }
   ],
   "occNews": [
@@ -3249,16 +3237,16 @@
   ],
   "regionsNews": [
     {
-      "title": "US murderer Christa Pike discharged from hospital 10 days after failed execution",
-      "url": "https://www.bbc.co.uk/news/articles/cmlyle97pqd7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 10, 2026",
-      "description": "Pike's lawyers say she is \"grateful\" to the medical team who cared for her after she survived two lethal injections last month."
-    },
-    {
       "title": "Several injured in attack on airport in Saudi capital Riyadh",
       "url": "https://www.bbc.co.uk/news/articles/cw33x4y8k82no?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 10, 2026",
       "description": "The US embassy says it is \"aware of attacks on King Khalid International Airport\", which come days after Yemen's Houthis said they had struck it."
+    },
+    {
+      "title": "US murderer Christa Pike discharged from hospital 10 days after failed execution",
+      "url": "https://www.bbc.co.uk/news/articles/cmlyle97pqd7o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 10, 2026",
+      "description": "Pike's lawyers say she is \"grateful\" to the medical team who cared for her after she survived two lethal injections last month."
     },
     {
       "title": "'Cockroach' group leaders among hundreds detained in Delhi protest",
@@ -3271,6 +3259,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cv8ezd246z1wo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 10, 2026",
       "description": "Polish police had already deployed to schools after a female caretaker was killed and several others injured in two earlier attacks in two days."
+    },
+    {
+      "title": "Expedition hopes to find aviator Amelia Earhart's plane on remote island",
+      "url": "https://www.bbc.co.uk/news/articles/c3y0e871rk4vo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 10, 2026",
+      "description": "The team en route to the suspected crash site aim finally to solve the mystery of her 1937 disappearance."
     },
     {
       "title": "Rogue Anthropic AI agent gave police fake tip in unsolved murder case",
@@ -3681,6 +3675,48 @@
       "description": "The Vaping Product Duty will be imposed at a rate of £2.20 per 10ml of e-liquid from April 2027."
     },
     {
+      "title": "Photos: Thousands march across Europe to demand end to Israel’s war on Gaza",
+      "url": "https://www.aljazeera.com/gallery/2026/10/10/photos-thousands-march-across-europe-to-demand-end-to-israels-war-on-gaza?traffic_source=rss",
+      "date": "October 10, 2026",
+      "description": "Demonstrations in London, Berlin, and Rome denounce ongoing Israeli attacks on Gaza 'ceasefire' anniversary."
+    },
+    {
+      "title": "Attack on airport in Saudi capital, Riyadh, leaves several injured",
+      "url": "https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured?traffic_source=rss",
+      "date": "October 10, 2026",
+      "description": "Operations suspended at King Khalid International Airport after another attack this week, Civil Aviation Authority says."
+    },
+    {
+      "title": "Nine killed in shooting in US state of Pennsylvania, including two children",
+      "url": "https://www.aljazeera.com/news/2026/10/10/nine-killed-in-shooting-in-us-state-of-pennsylvania-including-two-children?traffic_source=rss",
+      "date": "October 10, 2026",
+      "description": "The shooting in Erie, Pennsylvania happened on Friday, according to state officials. The attacker is among the dead."
+    },
+    {
+      "title": "Pope says death penalty ‘inadmissible’ as US plans to livestream execution",
+      "url": "https://www.aljazeera.com/news/2026/10/10/pope-says-death-penalty-inadmissible-as-us-plans-to-livestream-execution?traffic_source=rss",
+      "date": "October 10, 2026",
+      "description": "Pope Leo XIV describes capital punishment as an 'attack on the inviolability and dignity of the person' in post on X."
+    },
+    {
+      "title": "Video shows rare albino Asian black bear",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/10/video-shows-rare-albino-asian-black-bear?traffic_source=rss",
+      "date": "October 10, 2026",
+      "description": "A rare albino Asian black bear was captured on camera in China’s Shennongjia National Park"
+    },
+    {
+      "title": "Christa Pike discharged from hospital and returned to Tennessee prison",
+      "url": "https://www.aljazeera.com/news/2026/10/10/christa-pike-discharged-from-hospital-and-returned-to-tennessee-prison?traffic_source=rss",
+      "date": "October 10, 2026",
+      "description": "Pike survived two doses of lethal-injection drugs on September 30, renewing scrutiny of capital punishment."
+    },
+    {
+      "title": "Celebrations in Ethiopian city after reported Eritrean ‘incursion’",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/10/celebrations-in-ethiopian-city-after-reported-eritrean?traffic_source=rss",
+      "date": "October 10, 2026",
+      "description": "People in northern Ethiopia are celebrating after a reported withdrawal of Eritrean forces accused of an incursion."
+    },
+    {
       "title": "Eritrea urges UN to intervene in standoff with Ethiopia",
       "url": "https://www.aljazeera.com/news/2026/10/10/eritrea-urges-un-to-intervene-in-standoff-with?traffic_source=rss",
       "date": "October 10, 2026",
@@ -3775,36 +3811,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/10/indias-cockroach-leaders-detained-new-delhi-in-lockdown?traffic_source=rss",
       "date": "October 10, 2026",
       "description": "Indian police crackdown appears to have prevented mass protests against the country's election chief from taking place."
-    },
-    {
-      "title": "Child among eight killed by Israel on Gaza ‘ceasefire’ anniversary",
-      "url": "https://www.aljazeera.com/news/2026/10/10/israeli-forces-kill-six-in-gaza-including-a-child?traffic_source=rss",
-      "date": "October 10, 2026",
-      "description": "At least 1,481 Palestinians killed in Israeli attacks since last year's 'ceasefire', Gaza's Health Ministry says."
-    },
-    {
-      "title": "England international Cole Palmer signs new Chelsea deal until 2034",
-      "url": "https://www.aljazeera.com/sports/2026/10/10/england-international-cole-palmer-signs-new-chelsea-deal-until-2034?traffic_source=rss",
-      "date": "October 10, 2026",
-      "description": "Attacking midfielder Palmer has become a key figure in Chelsea's squad since his arrival from Man City in 2023."
-    },
-    {
-      "title": "Graffiti artist honours Spain’s housing rights figure ‘Maricarmen’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/10/graffiti-artist-honours-spains-housing-rights-figure?traffic_source=rss",
-      "date": "October 10, 2026",
-      "description": "Graffiti artist honours Spain’s housing rights figure ‘Maricarmen’"
-    },
-    {
-      "title": "Manchester United vs Tottenham LIVE: Premier League",
-      "url": "https://www.aljazeera.com/sports/liveblog/2026/10/10/manchester-united-vs-tottenham-live-premier-league?traffic_source=rss",
-      "date": "October 10, 2026",
-      "description": "Follow updates with build-up and team news from our live text commentary as Bruno Fernandes headlines."
-    },
-    {
-      "title": "Exposing an alleged crime kingpin’s Cambodian empire",
-      "url": "https://www.aljazeera.com/video/101-east/2026/10/10/exposing-an-alleged-crime-kingpins-cambodian-empire?traffic_source=rss",
-      "date": "October 10, 2026",
-      "description": "In an exclusive investigation, 101 East goes undercover in Cambodia to expose the empire of an alleged crime kingpin."
     }
   ]
 }
