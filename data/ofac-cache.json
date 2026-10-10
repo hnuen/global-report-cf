@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T13:08:06.562Z",
+  "updatedAt": "2026-10-10T15:08:11.930Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261009",
@@ -3071,7 +3071,7 @@
       "title": "Russian glide bomb attack on Zaporizhzhia kills at least 15 people",
       "url": "https://www.bbc.co.uk/news/articles/cwvgdpv642g5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 10, 2026",
-      "description": "Children are among the victims, authorities say, and more victims could still be buried in the rubble of a large apartment block that was destroyed."
+      "description": "Volodymyr Zelensky says the attack, which left children dead, was Russia expressing its \"thanks\" for a US diesel deal."
     },
     {
       "title": "Trump announces deal for Russian diesel as Zelensky calls it a gift to Putin",
@@ -3084,12 +3084,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c5lye9z4xw4yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
       "description": "The US president hopes to ease his party's pain before next month's midterm elections, writes the BBC's North America correspondent."
-    },
-    {
-      "title": "US unveils sanctions on ICC in move court condemns as 'assault on rule of law'",
-      "url": "https://www.bbc.co.uk/news/articles/cj20vkkx3rdvo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "Several member states of the international tribunal, including the UK, say they \"strongly disagree\" with the sanctions."
     },
     {
       "title": "Russian search engine Yandex struggles after Ukrainian strikes on data centres",
@@ -3124,6 +3118,18 @@
   ],
   "ajNews": [
     {
+      "title": "Why is the US sanctioning the International Criminal Court?",
+      "url": "https://www.aljazeera.com/news/2026/10/10/why-is-the-us-sanctioning-the-international-criminal-court?traffic_source=rss",
+      "date": "October 10, 2026",
+      "description": "The sanctions targeting the ICC, which prosecutes humanitarian crimes, are the latest move by the US against the court."
+    },
+    {
+      "title": "‘Anachronism’: Rubio’s civilisational rhetoric prompts pushback from Iran",
+      "url": "https://www.aljazeera.com/news-analysis/2026/10/10/anachronism-rubios-civilisational-rhetoric-prompts-pushback-from-iran?traffic_source=rss",
+      "date": "October 10, 2026",
+      "description": "Rubio says threats to Western civilisation today 'every bit as real as they were on the dramatic stage of antiquity'."
+    },
+    {
       "title": "Ukraine warns Trump-Putin diesel deal will bankroll Russia’s war",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/10/ukraine-warns-trump-putin-diesel-deal-will-bankroll-russias-war?traffic_source=rss",
       "date": "October 10, 2026",
@@ -3134,12 +3140,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/10/why-is-us-turning-to-russia-for-diesel-despite-sanctions?traffic_source=rss",
       "date": "October 10, 2026",
       "description": "President Donald Trump's deal with Putin comes amid surging fuel prices and looming US midterm elections."
-    },
-    {
-      "title": "US lifts sanctions on daughter of military-linked Myanmar businessman",
-      "url": "https://www.aljazeera.com/news/2026/10/10/us-lifts-sanctions-on-daughter-of-military-linked-myanmar-tycoon?traffic_source=rss",
-      "date": "October 10, 2026",
-      "description": "Delisting comes days after Trump administration reportedly reopened talks with Myanmar's government."
     }
   ],
   "occNews": [
@@ -3156,7 +3156,29 @@
       "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for September 2026."
     }
   ],
-  "economicsNews": [],
+  "economicsNews": [
+    {
+      "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
+      "date": "October 7, 2026",
+      "description": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "date": "September 16, 2026",
+      "description": "Federal Reserve issues FOMC statement",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm",
+      "date": "September 16, 2026",
+      "description": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
+      "category": "Monetary Policy"
+    }
+  ],
   "bisNews": [
     {
       "title": "URAL Airlines JSC, Utrenniy Lane 1-g, Yekaterinburg, Russia 620025; Order Renewing Temporary Denial of Export Privileges",
@@ -3224,7 +3246,19 @@
       "title": "'Cockroach' group leaders among hundreds detained in Delhi protest",
       "url": "https://www.bbc.co.uk/news/articles/c65yn7xvde7vo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 10, 2026",
-      "description": "Tens of thousands of security personnel were deployed and roads barricaded ahead of the demonstration."
+      "description": "The group - who are not registered as a political party in India - want electoral reforms ahead of crucial state elections."
+    },
+    {
+      "title": "Woman injures three people in third Poland school knife attack in a week",
+      "url": "https://www.bbc.co.uk/news/articles/cv8ezd246z1wo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 10, 2026",
+      "description": "Polish police had already deployed to schools after a female caretaker was killed and several others injured in two earlier attacks in two days."
+    },
+    {
+      "title": "Rogue Anthropic AI agent gave police fake tip in unsolved murder case",
+      "url": "https://www.bbc.co.uk/news/articles/cqkg50j1yd5lo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 10, 2026",
+      "description": "Philadelphia police said the tip was \"flagged as spam\", but criticised the tech company for taking more than two months to detect and report the breach."
     },
     {
       "title": "Rogue Anthropic AI agent gave police fake tip in unsolved murder case",
@@ -3239,10 +3273,22 @@
       "description": "Former students launched their own investigation, spending years collecting evidence and testimonies from others who say they were abused by the headteacher."
     },
     {
-      "title": "Hurricane Isaias downgraded after making landfall in Florida",
-      "url": "https://www.bbc.co.uk/news/articles/c3vgx4450v2lo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Drone strike by Sudan paramilitary kills 41 near Ethiopian border, rights group says",
+      "url": "https://www.bbc.co.uk/news/articles/c8vgx9ew571wo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 10, 2026",
-      "description": "Hundreds of thousands of households are without power in Florida and Alabama as Isaias continues its path across south-eastern US."
+      "description": "Eight children are said to be among those killed by the strike, which hit a gathering of displaced people."
+    },
+    {
+      "title": "US country music star Ella Langley cancels show due to 'security threat'",
+      "url": "https://www.bbc.co.uk/news/articles/cm79pdlywqd4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 10, 2026",
+      "description": "Police say they checked the concert venue in Tulsa, Oklahoma but \"could not find any threat\"."
+    },
+    {
+      "title": "'Stain on the country': Trump criticises Norway over Nobel Peace Prize",
+      "url": "https://www.bbc.co.uk/news/articles/ckgj921e14jdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 10, 2026",
+      "description": "The US president told a rally he had \"never heard of\" the winner, former International Criminal Court judge Navi Pillay."
     },
     {
       "title": "Flydubai attacker began a 'drift towards extremism and terrorism' in Australia, UAE says",
@@ -3257,46 +3303,16 @@
       "description": "Jake and Callum Robinson and their friend Carter Rhoad were on a surf trip when they were killed in an apparent botched robbery."
     },
     {
-      "title": "'Stain on the country': Trump criticises Norway over Nobel Peace Prize",
-      "url": "https://www.bbc.co.uk/news/articles/ckgj921e14jdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 10, 2026",
-      "description": "The US president told a rally he had \"never heard of\" the winner, former International Criminal Court judge Navi Pillay."
-    },
-    {
-      "title": "US country music star Ella Langley cancels show due to 'security threat'",
-      "url": "https://www.bbc.co.uk/news/articles/cm79pdlywqd4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 10, 2026",
-      "description": "Police say they checked the concert venue in Tulsa, Oklahoma but \"could not find any threat\"."
-    },
-    {
       "title": "JD Vance casts doubt on firing squad execution and says he would not watch it",
       "url": "https://www.bbc.co.uk/news/articles/ck20r39nl3qzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
       "description": "The planned execution of Nidal Hasan by firing squad would be the first military execution in more than 60 years."
     },
     {
-      "title": "Powerful magnitude 7.7 earthquake hits Panama, damaging buildings",
-      "url": "https://www.bbc.co.uk/news/articles/c620r39zdp9wo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "Tsunami warnings are issued for neighbouring countries as videos of destruction circulate online."
-    },
-    {
       "title": "Man named Hitler Mussolini elected mayor in Peru",
       "url": "https://www.bbc.co.uk/news/articles/cmdxwn9dr42yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
       "description": "The left-wing candidate won a narrow victory in a remote district in the Peruvian Andes, exit polls show."
-    },
-    {
-      "title": "Ethiopia warns Eritrea it will defend itself after troops cross border",
-      "url": "https://www.bbc.co.uk/news/articles/c65ynvw250y1o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "Truckloads of Eritrean soldiers have been seen driving into Ethiopia, which has reportedly responded with drone strikes."
-    },
-    {
-      "title": "Commentator Katie Zacharia picked as new White House press secretary",
-      "url": "https://www.bbc.co.uk/news/articles/c5rmy73zr0rro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "The conservative commentator currently works as a communications adviser at Trump Media & Technology Group."
     },
     {
       "title": "Nord Stream trial: How German police followed the evidence - to Ukraine",
@@ -3659,6 +3675,60 @@
       "description": "The Vaping Product Duty will be imposed at a rate of £2.20 per 10ml of e-liquid from April 2027."
     },
     {
+      "title": "Arsenal beat Leeds 2-1 in comeback win to move level with Man City at top",
+      "url": "https://www.aljazeera.com/sports/2026/10/10/arsenal-beat-leeds-2-1-in-comeback-win-to-move-level-with-man-city-at-top?traffic_source=rss",
+      "date": "October 10, 2026",
+      "description": "Arsenal come from behind to beat Leeds United moving them joint top of the Premier League with Manchester City."
+    },
+    {
+      "title": "Jerusalem Daily: Israeli settlers attack olive farmers",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/10/jerusalem-daily-israeli-settlers-attack-olive-farmers?traffic_source=rss",
+      "date": "October 10, 2026",
+      "description": "Israeli settlers steal olives and attack Palestinian farmers during this year’s harvest."
+    },
+    {
+      "title": "Mexican judge sentences three men for murders of Australian, US surfers",
+      "url": "https://www.aljazeera.com/news/2026/10/10/mexican-judge-sentences-three-men-for-murders-of-australian-us-surfers?traffic_source=rss",
+      "date": "October 10, 2026",
+      "description": "The trial in Baja California had revealed chilling details of the triple homicide of the surfers."
+    },
+    {
+      "title": "Abbas postpones Palestinian legislative elections to September 2027",
+      "url": "https://www.aljazeera.com/news/2026/10/10/abbas-postpones-palestinian-legislative-elections-to-september-2027?traffic_source=rss",
+      "date": "October 10, 2026",
+      "description": "November 2026 vote delayed; joint presidential and legislative elections set for next year, president says in decree."
+    },
+    {
+      "title": "Has Yemen returned to ‘full-scale war’?",
+      "url": "https://www.aljazeera.com/news/2026/10/10/has-yemen-returned-to-full-scale-war?traffic_source=rss",
+      "date": "October 10, 2026",
+      "description": "Fighting is intensifying between Yemeni government forces and Houthi rebel group."
+    },
+    {
+      "title": "When streets become a workplace: Gaza workers convert tents into offices",
+      "url": "https://www.aljazeera.com/features/2026/10/10/when-streets-become-a-workplace-gaza-workers-convert-tents-into-offices?traffic_source=rss",
+      "date": "October 10, 2026",
+      "description": "A real estate crisis in Gaza has forced professionals to use tents as surgeries and offices."
+    },
+    {
+      "title": "High silver prices threaten Lucknow’s famed bridal nagra craft",
+      "url": "https://www.aljazeera.com/features/longform/2026/10/10/high-silver-prices-threaten-lucknows-famed-bridal-nagra-craft?traffic_source=rss",
+      "date": "October 10, 2026",
+      "description": "War-driven prices for silver are threatening nagra makers in northern India."
+    },
+    {
+      "title": "New Delhi police crack down on protesters ahead of anti-gov’t march",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/10/new-delhi-police-crack-down-on-protesters-ahead-of-anti-govt-march?traffic_source=rss",
+      "date": "October 10, 2026",
+      "description": "India’s police have detained dozens of protesters, including ‘Cockroach’ party leaders ahead of an anti-gov't march."
+    },
+    {
+      "title": "Verstappen wins chaotic Singapore GP F1 sprint after Russell crashes",
+      "url": "https://www.aljazeera.com/sports/2026/10/10/verstappen-singapore-gp-sprint-rain-russell-hamilton-leclerc?traffic_source=rss",
+      "date": "October 10, 2026",
+      "description": "Max Verstappen's sprint race win was ​Dutchman's first of any kind in Singapore as he finished ahead of Lewis Hamilton."
+    },
+    {
       "title": "India’s ‘Cockroach’ leaders detained; New Delhi in lockdown",
       "url": "https://www.aljazeera.com/news/2026/10/10/indias-cockroach-leaders-detained-new-delhi-in-lockdown?traffic_source=rss",
       "date": "October 10, 2026",
@@ -3729,66 +3799,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/10/journalist-killed-in-mexico-ninth-this-year-ngo?traffic_source=rss",
       "date": "October 10, 2026",
       "description": "Conflicting reports emerge on the circumstances of the killing, prompting calls for justice from advocacy groups."
-    },
-    {
-      "title": "Brazil police rescue 13 children taken hostage at kindergarten",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/10/brazil-police-rescue-13-children-taken-hostage-at-kindergarten?traffic_source=rss",
-      "date": "October 10, 2026",
-      "description": "Brazilian police have rescued 13 children held hostage for more than two hours at a daycare centre in Curitiba."
-    },
-    {
-      "title": "Isaias weakens after making landfall in US Gulf Coast as hurricane",
-      "url": "https://www.aljazeera.com/news/2026/10/10/isaias-weakens-after-making-landfall-in-us-gulf-coast-as-hurricane?traffic_source=rss",
-      "date": "October 10, 2026",
-      "description": "More than 664,000 customers in Florida and Alabama have been left without power as Isaias downs trees, power lines."
-    },
-    {
-      "title": "West Indies beat India as Hope’s hundred secures record T20 chase",
-      "url": "https://www.aljazeera.com/sports/2026/10/10/hopes-hundred-fires-west-indies-to-record-t20-win-over-india?traffic_source=rss",
-      "date": "October 10, 2026",
-      "description": "Shai Hope's hundred and Sherfane Rutherford's fifty lead West Indies in record 252 chase to level series 1-1."
-    },
-    {
-      "title": "A decade of Lajee Celtic: The Palestinian club whose fans include Cantona",
-      "url": "https://www.aljazeera.com/news/2026/10/10/a-decade-of-lajee-celtic-the-palestinian-club-whose-fans-include-cantona?traffic_source=rss",
-      "date": "October 10, 2026",
-      "description": "The football club founded in a West Bank refugee camp has built a global movement of solidarity."
-    },
-    {
-      "title": "Ronaldo returns after Portugal quarrel to score in Al-Nassr win",
-      "url": "https://www.aljazeera.com/sports/2026/10/10/ronaldo-returns-after-portugal-quarrel-and-back-in-the-goals-in-al-nassr-wi?traffic_source=rss",
-      "date": "October 10, 2026",
-      "description": "Cristiano Ronaldo opened the scoring for Al-Nassr in their 3-0 win over Diriyah, his first game since Portugal walkout."
-    },
-    {
-      "title": "Ireland Catholic residents react to UK ban on Protestant march",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/10/ireland-catholic-residents-react-to-uk-ban-on-protestant-march?traffic_source=rss",
-      "date": "October 10, 2026",
-      "description": "Ireland Catholic residents react to UK ban on Protestant march"
-    },
-    {
-      "title": "Saudi-led coalition says it’s carrying out operation in Yemen",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/10/saudi-led-coalition-says-its-carrying-out-operation-in-yemen?traffic_source=rss",
-      "date": "October 10, 2026",
-      "description": "The Saudi-led coalition says it’s carrying out a wide-ranging operation, targeting Yemen’s Houthis."
-    },
-    {
-      "title": "‘How can you stop these kids?’ Indian capital on lockdown before protests",
-      "url": "https://www.aljazeera.com/news/2026/10/10/how-can-you-stop-these-kids-indian-capital-on-lockdown-before-protests?traffic_source=rss",
-      "date": "October 10, 2026",
-      "description": "Indian Prime Minister Narendra Modi has pulled out all the stops to prevent Cockroach movement protests."
-    },
-    {
-      "title": "India’s Cockroach Party founder, top leaders detained ahead of protest",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/10/indias-cockroach-party-founder-top-leaders-detained-ahead-of-protest?traffic_source=rss",
-      "date": "October 10, 2026",
-      "description": "India’s Cockroach Janta Party leaders have allegedly been detained after landing in New Delhi to lead a mass protest."
-    },
-    {
-      "title": "Trump slams Norway for not awarding him Nobel Peace Prize",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/10/trump-slams-norway-for-not-awarding-him-nobel-peace-prize?traffic_source=rss",
-      "date": "October 10, 2026",
-      "description": "Trump slams Norway for not awarding him Nobel Peace Prize"
     }
   ]
 }
