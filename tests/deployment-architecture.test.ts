@@ -116,6 +116,8 @@ test("a bounded GitHub snapshot keeps reads available during an Upstash outage",
   assert.match(fallback, /data\/live-briefing\.json/);
   assert.match(fallback, /BLOCKED_SOURCE_URLS/);
   assert.match(fallback, /news\.un\.org\/en\/story\/2026\/10\/1172026/);
+  assert.match(fallback, /CORRECTED_SOURCE_URLS/);
+  assert.match(fallback, /nr-occ-2026-123\.html[\s\S]*nr-occ-2026-87\.html/);
   assert.match(refresh, /if \(list\.length < 60\) list\.push\(article\)/);
   assert.match(refresh, /update live briefing fallback \[skip ci\]/);
   assert.match(refresh, /const snapshotSaved = await commitLiveSnapshot\(payload\)/);
