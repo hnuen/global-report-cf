@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11T15:08:33.687Z",
+  "updatedAt": "2026-10-11T17:08:15.070Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261009",
@@ -3074,34 +3074,16 @@
       "description": "It is the third time this week that Ukraine has targeted Russian tech giant Yandex, forcing the company to suspend its operations."
     },
     {
-      "title": "Russian glide bomb attack on Zaporizhzhia kills at least 20 people",
-      "url": "https://www.bbc.co.uk/news/articles/cwvgdpv642g5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 10, 2026",
-      "description": "Volodymyr Zelensky says the attack, which left children dead, was Russia expressing its \"thanks\" for a US diesel deal."
-    },
-    {
       "title": "Nobel peace laureate says US sanctions on ICC 'unacceptable'",
       "url": "https://www.bbc.co.uk/news/articles/cqkgjrpmr47vo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 10, 2026",
       "description": "Navi Pillay says the Trump administrations' sweeping penalties on the international tribunal were \"unheard of\"."
     },
     {
-      "title": "Russian search engine Yandex struggles after Ukrainian strikes on data centres",
-      "url": "https://www.bbc.co.uk/news/articles/c68xzqqn4ekro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "Often dubbed \"Russia's Google\", the tech firm admits customers may experience disruption to digital services due to the attacks."
-    },
-    {
       "title": "Young men live in fear of being snatched off the streets and sold to Myanmar's army",
       "url": "https://www.bbc.co.uk/news/articles/c680zlny0gk4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 10, 2026",
       "description": "A desperate junta is in a war of attrition against ethnic militias and and civilian resistance."
-    },
-    {
-      "title": "Analysis: Trump's shock Russia deal highlights mounting pressure to curb fuel prices",
-      "url": "https://www.bbc.co.uk/news/articles/c5lye9z4xw4yo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "The US president hopes to ease his party's pain before next month's midterm elections, writes the BBC's North America correspondent."
     },
     {
       "title": "Trump announces deal for Russian diesel as Zelensky calls it a gift to Putin",
@@ -3114,6 +3096,12 @@
       "url": "https://www.bbc.co.uk/news/articles/c5lye9z4xw4yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
       "description": "The US president hopes to ease his party's pain before next month's midterm elections, writes the BBC's North America correspondent."
+    },
+    {
+      "title": "Ukraine strikes Yandex data centre in third attack on Russian tech giant",
+      "url": "https://www.bbc.co.uk/news/articles/cw0k0g57mk3zo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 11, 2026",
+      "description": "It is the third time this week that Ukraine has targeted Russian tech giant Yandex, forcing the company to suspend its operations."
     },
     {
       "title": "Trump announces deal for Russian diesel as Zelensky calls it a gift to Putin",
@@ -3123,6 +3111,18 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "How the ICC can be saved",
+      "url": "https://www.aljazeera.com/opinions/2026/10/11/how-the-icc-can-be-saved?traffic_source=rss",
+      "date": "October 11, 2026",
+      "description": "Hoping for ‘dialogue’ with the US over its sanctions on the ICC is meaningless. Action is needed to protect the court."
+    },
+    {
+      "title": "Trump says Ukraine and Russia agree to ‘energy ceasefire’",
+      "url": "https://www.aljazeera.com/news/2026/10/11/trump-says-ukraine-russia-agree-to-energy-ceasefire-2?traffic_source=rss",
+      "date": "October 11, 2026",
+      "description": "Ukrainian President Volodymyr Zelenskyy had pushed for a 60-day full ceasefire."
+    },
     {
       "title": "Hormuz attacks intensify as efforts to end war on Iran stall",
       "url": "https://www.aljazeera.com/news/2026/10/11/hormuz-attacks-intensify-as-efforts-to-end-war-on-iran-stall?traffic_source=rss",
@@ -3237,6 +3237,12 @@
   ],
   "regionsNews": [
     {
+      "title": "Saudi Arabia's Riyadh airport hit by second Houthi strike in two days",
+      "url": "https://www.bbc.co.uk/news/articles/cr93znyk44e1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 11, 2026",
+      "description": "The Yemeni group says it carried out attacks that killed 13 people over the weekend and targeted two airports and oil facilities."
+    },
+    {
       "title": "Pope Leo to have surgery after lump found on lung",
       "url": "https://www.bbc.co.uk/news/articles/c6m2dnngvw8xo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 11, 2026",
@@ -3249,16 +3255,22 @@
       "description": "Nepal is still trying to recover from catastrophic floods that hit less than two months ago, leaving thousands dead and missing."
     },
     {
+      "title": "Children among 139 dead after boat capsizes off Djibouti, UN says",
+      "url": "https://www.bbc.co.uk/news/articles/cwy7lxx60dg5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 11, 2026",
+      "description": "The boat was travelling from Djibouti to Yemen with 305 people on board, when it capsized near the port town of Obock on Thursday night."
+    },
+    {
+      "title": "Poland stabbings driven by online glorification of violence, Tusk says",
+      "url": "https://www.bbc.co.uk/news/articles/ckp8gyd65z2go?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 11, 2026",
+      "description": "The PM was speaking after violent attacks at Polish schools this week left one dead and others injured."
+    },
+    {
       "title": "US justice department investigates TV networks over Trump pool coverage",
       "url": "https://www.bbc.co.uk/news/articles/c9vgregzk6gro?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 11, 2026",
       "description": "The White House had blocked access for CNN, MS Now and Politico, leading them to restrict pool coverage."
-    },
-    {
-      "title": "Children among 109 dead after boat capsizes off Djibouti, UN says",
-      "url": "https://www.bbc.co.uk/news/articles/cwy7lxx60dg5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 11, 2026",
-      "description": "The boat was travelling from Djibouti to Yemen with 350 people on board, when it capsized near the port town of Obock on Thursday night."
     },
     {
       "title": "Expedition hopes to find aviator Amelia Earhart's plane on remote island",
@@ -3267,16 +3279,16 @@
       "description": "The team en route to the suspected crash site aim finally to solve the mystery of her 1937 disappearance."
     },
     {
-      "title": "US murderer Christa Pike discharged from hospital 10 days after failed execution",
-      "url": "https://www.bbc.co.uk/news/articles/cmlyle97pqd7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 10, 2026",
-      "description": "Pike's lawyers say she is \"grateful\" to the medical team who cared for her after she survived two lethal injections last month."
-    },
-    {
       "title": "Delhi sees more protests as freed 'cockroach' group's leaders vow to fight on",
       "url": "https://www.bbc.co.uk/news/articles/c84g179n2393o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 11, 2026",
       "description": "Hundreds of people who came out on the streets despite the police's restrictions were detained on Sunday."
+    },
+    {
+      "title": "US murderer Christa Pike discharged from hospital 10 days after failed execution",
+      "url": "https://www.bbc.co.uk/news/articles/cmlyle97pqd7o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 10, 2026",
+      "description": "Pike's lawyers say she is \"grateful\" to the medical team who cared for her after she survived two lethal injections last month."
     },
     {
       "title": "Headmaster detained after BBC investigation into alleged sexual abuse of students",
@@ -3291,49 +3303,7 @@
       "description": "Polish police had already deployed to schools after a female caretaker was killed and several others injured in two earlier attacks in two days."
     },
     {
-      "title": "Rogue Anthropic AI agent gave police fake tip in unsolved murder case",
-      "url": "https://www.bbc.co.uk/news/articles/cqkg50j1yd5lo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 10, 2026",
-      "description": "Philadelphia police said the tip was \"flagged as spam\", but criticised the tech company for taking more than two months to detect and report the breach."
-    },
-    {
-      "title": "Drone strike by Sudan paramilitary kills 41 near Ethiopian border, rights group says",
-      "url": "https://www.bbc.co.uk/news/articles/c8vgx9ew571wo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 10, 2026",
-      "description": "Eight children are said to be among those killed by the strike, which hit a gathering of displaced people."
-    },
-    {
-      "title": "US country music star Ella Langley cancels show due to 'security threat'",
-      "url": "https://www.bbc.co.uk/news/articles/cm79pdlywqd4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 10, 2026",
-      "description": "Police say they checked the concert venue in Tulsa, Oklahoma but \"could not find any threat\"."
-    },
-    {
-      "title": "Flydubai attacker began a 'drift towards extremism and terrorism' in Australia, UAE says",
-      "url": "https://www.bbc.co.uk/news/articles/cw3dj5n538jpo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 10, 2026",
-      "description": "The United Arab Emirates' attorney-general also alleges the co-pilot was trying to crash the plane into Tel Aviv's airport."
-    },
-    {
-      "title": "Three men found guilty of murdering Australian brothers and US friend in Mexico",
-      "url": "https://www.bbc.co.uk/news/articles/cj5ynwnye009o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "Jake and Callum Robinson and their friend Carter Rhoad were on a surf trip when they were killed in an apparent botched robbery."
-    },
-    {
-      "title": "JD Vance casts doubt on firing squad execution and says he would not watch it",
-      "url": "https://www.bbc.co.uk/news/articles/ck20r39nl3qzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "The planned execution of Nidal Hasan by firing squad would be the first military execution in more than 60 years."
-    },
-    {
-      "title": "Man named Hitler Mussolini elected mayor in Peru",
-      "url": "https://www.bbc.co.uk/news/articles/cmdxwn9dr42yo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "The left-wing candidate won a narrow victory in a remote district in the Peruvian Andes, exit polls show."
-    },
-    {
-      "title": "Riyadh airport attack another dangerous moment in already tense conflict",
+      "title": "Riyadh airport attacks another dangerous moment in already tense conflict",
       "url": "https://www.bbc.co.uk/news/articles/cr4g1pwxxlq1o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 11, 2026",
       "description": "The Houthis have stepped up their attacks on Saudi Arabian soil, and while the physical damage can be quickly repaired, its reputation for stability is taking a battering."
@@ -3355,30 +3325,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c317ke5ngrq7o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 10, 2026",
       "description": "After four years, a Ukrainian man is set to stand trial in Hamburg accused of sabotaging the Nord Stream pipelines."
-    },
-    {
-      "title": "'Everyone hates the police' – what France's school protests reveal about a divided nation",
-      "url": "https://www.bbc.co.uk/news/articles/crq5nlqnn184o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "Students taking to the streets have become a focal point in the country's increasingly polarised politics."
-    },
-    {
-      "title": "Questions remain over Ebola patient who travelled across three nations undetected",
-      "url": "https://www.bbc.co.uk/news/articles/cqp8gknl1njjo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 10, 2026",
-      "description": "Fresh details reveal how the 40-year-old businessman flew and crossed regional borders while seriously ill."
-    },
-    {
-      "title": "Fort Hood survivor supports gunman's execution by firing squad but questions livestream",
-      "url": "https://www.bbc.co.uk/news/articles/ck1wvqw4lzdvo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "Alonzo Lunsford tells the BBC the punishment befits the crime but he has some doubts whether the public should be able to watch it."
-    },
-    {
-      "title": "Meet India's feisty Gen Z protester who is taking on Modi",
-      "url": "https://www.bbc.co.uk/news/articles/c5n49xln3lz0o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "Neha Bora has emerged as one of the most recognisable faces from India's recent Gen Z-led protests."
     },
     {
       "title": "Buildings swept away as flash floods hit central Nepal",
@@ -3415,6 +3361,12 @@
       "url": "https://www.bbc.co.uk/news/videos/cqm263x40y37o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
       "description": "Thailand’s Queen Suthida made her first solo flight in a fighter jet, according to the Thai Royal Household."
+    },
+    {
+      "title": "Citroen revives the 2CV for an electric age",
+      "url": "https://www.bbc.co.uk/news/articles/c620r33plgppo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 11, 2026",
+      "description": "The French firm is reinventing the classic model as carmakers come under pressure from Chinese rivals."
     },
     {
       "title": "Boots has a new owner: Three ways it could affect you",
@@ -3553,18 +3505,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c693z8dz1kq4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 8, 2026",
       "description": "The Martin Group has become one of the UK's biggest car park operators after buying NCP out of administration."
-    },
-    {
-      "title": "Fuel prices added to Google Maps as petrol and diesel costs soar",
-      "url": "https://www.bbc.co.uk/news/articles/ckx2d4ddjn2eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 7, 2026",
-      "description": "A search for forecourts will now display their pricing, using the government's Fuel Finder scheme."
-    },
-    {
-      "title": "New electric car 'make or break for Jaguar'",
-      "url": "https://www.bbc.co.uk/news/articles/cwvgrx5ner6go?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "Prof David Bailey says there is a lot riding on the Type 01 in terms of jobs and investment."
     },
     {
       "title": "Why are more roofs not made of solar tiles?",
@@ -3711,6 +3651,42 @@
       "description": "The Vaping Product Duty will be imposed at a rate of £2.20 per 10ml of e-liquid from April 2027."
     },
     {
+      "title": "Football fans speak about City’s charges as they face Liverpool",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/football-fans-speak-about-citys-charges-as-they-face-liverpool?traffic_source=rss",
+      "date": "October 11, 2026",
+      "description": "Fans have been speaking to Al Jazeera as Liverpool face Manchester City at Anfield."
+    },
+    {
+      "title": "At least five people missing as flash floods in Nepal sweep away houses",
+      "url": "https://www.aljazeera.com/news/2026/10/11/at-least-five-people-missing-as-flash-floods-in-nepal-sweep-away-houses?traffic_source=rss",
+      "date": "October 11, 2026",
+      "description": "Authorities urge villagers to move to safer places after a river in the central part of the country bursts its banks."
+    },
+    {
+      "title": "Tour bus crash in Turkiye leaves at least 11 dead",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/tour-bus-crash-in-turkiye-leaves-at-least-11-dead?traffic_source=rss",
+      "date": "October 11, 2026",
+      "description": "At least eleven people have been killed and 27 injured after a tour bus collided with a truck near a motorway entrance"
+    },
+    {
+      "title": "Power bank fire forces plane to emergency land in India",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/power-bank-fire-forces-plane-to-emergency-land-in-india?traffic_source=rss",
+      "date": "October 11, 2026",
+      "description": "A plane flying from Delhi to Chennai made an emergency landing after a power bank reportedly caught fire on board."
+    },
+    {
+      "title": "Pope Leo XIV to undergo surgery after lump found in lung",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/pope-leo-xiv-to-undergo-surgery-after-lump-found-in-lung?traffic_source=rss",
+      "date": "October 11, 2026",
+      "description": "Pope Leo XIV has announced that he will undergo surgery this week, to remove a nodule in his lung."
+    },
+    {
+      "title": "Pope Leo to undergo surgery to remove lung nodule",
+      "url": "https://www.aljazeera.com/news/2026/10/11/pope-leo-to-undergo-surgery-to-remove-lung-nodule?traffic_source=rss",
+      "date": "October 11, 2026",
+      "description": "The 71-year-old spiritual leader informed pilgrims during his weekly Sunday blessing at St Peter's Square."
+    },
+    {
       "title": "Oval Office spat to public rebukes: A timeline of Trump-Zelenskyy ties",
       "url": "https://www.aljazeera.com/news/2026/10/11/oval-office-spat-to-public-rebukes-a-timeline-of-trump-zelenskyy-ties?traffic_source=rss",
       "date": "October 11, 2026",
@@ -3795,58 +3771,10 @@
       "description": "US President Donald Trump told his supporters they would applaud anything he says."
     },
     {
-      "title": "At least 109 dead, over 100 missing as migrant boat capsizes off Djibouti",
+      "title": "At least 139 dead, 84 missing as migrant boat capsizes off Djibouti",
       "url": "https://www.aljazeera.com/news/2026/10/11/at-least-109-dead-over-100-missing-as-migrant-boat-capsizes-off-djibouti?traffic_source=rss",
       "date": "October 11, 2026",
       "description": "Search and rescue operations conducted after vessel carrying more than 300 people capsizes near Guhere."
-    },
-    {
-      "title": "The scramble to rewrite Biden’s record on Gaza",
-      "url": "https://www.aljazeera.com/video/the-listening-post/2026/10/11/the-scramble-to-rewrite-bidens-record-on-gaza?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Former Biden officials are offering their accounts of the Gaza war. Is this a coming clean or revisionism?"
-    },
-    {
-      "title": "Mohamed Salah sets Turkish Super Lig record for Trabzonspor",
-      "url": "https://www.aljazeera.com/sports/2026/10/11/mohamed-salah-sets-turkish-super-lig-record-for-trabzonspor?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Salah becomes first player with 10 goal contributions, seven goals and three assists after Trabzonspor beat Samsunspor."
-    },
-    {
-      "title": "Yemen fighting expands as Houthis attack Saudi airport: What to know",
-      "url": "https://www.aljazeera.com/news/2026/10/11/yemen-fighting-expands-as-houthis-attack-saudi-airport-what-to-know?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Saudi coalition blames Houthi group for the missile attack on the main international airport in Riyadh."
-    },
-    {
-      "title": "Fear and uncertainty for civilians as Yemen’s capital comes under attack",
-      "url": "https://www.aljazeera.com/news-analysis/2026/10/11/fear-and-uncertainty-for-civilians-as-yemens-capital-comes-under-attack?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Sanaa has faced intense bombing since the Yemeni government announced a campaign to take the capital from the Houthis."
-    },
-    {
-      "title": "Modi is in trouble",
-      "url": "https://www.aljazeera.com/opinions/2026/10/11/modi-is-in-trouble?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "The CJP protests sweeping through the country have exposed India’s hollowed-out democracy."
-    },
-    {
-      "title": "Marco Bezzecchi wins in Indonesia as Martin takes MotoGP lead",
-      "url": "https://www.aljazeera.com/sports/2026/10/11/indonesia-gp-motogp-bezzecchi-martin-world-championship?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Bezzecchi's win, the 300th victory for an Italian in MotoGP, also kept his faint championship ​hopes alive."
-    },
-    {
-      "title": "Anti-ICE protests in New York after man shot in car with child",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/anti-ice-protests-in-new-york-after-man-shot-in-car-with-child?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Protesters in New York City are demanding the abolition of ICE after officers shot Oscar Belgal in the Bronx."
-    },
-    {
-      "title": "Photos: Thousands detained in police crackdown on India’s youth protest",
-      "url": "https://www.aljazeera.com/gallery/2026/10/11/photos-thousands-detained-as-new-delhi-cracks-down-on-youth-protest?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Demonstrators intercepted and detained as authorities crack down on 'cockroach' movement rally in central New Delhi."
     }
   ]
 }
