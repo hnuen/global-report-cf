@@ -11,12 +11,7 @@ export const DEFAULT_ALERT_SETTINGS: AlertSettings = {
 };
 
 const STORAGE_KEY = "admin:alert-settings";
-
-function redisConfig(): { url: string; token: string } | null {
-  const url = process.env.UPSTASH_REDIS_REST_URL || process.env.KV_REST_API_URL;
-  const token = process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN;
-  return url && token ? { url, token } : null;
-}
+import { alertStateGet, alertStateSet } from "./alert-state.ts";
 
 export function validateAlertSettings(value: unknown): AlertSettings {
   if (!value || typeof value !== "object" || Array.isArray(value)) {
@@ -40,12 +35,9 @@ export function validateAlertSettings(value: unknown): AlertSettings {
 }
 
 export async function loadAlertSettings(): Promise<AlertSettings> {
-  const cfg = redisConfig();
-  if (!cfg) return DEFAULT_ALERT_SETTINGS;
   try {
-    const { Redis } = await import("@upstash/redis");
-    const stored = await new Redis(cfg).get<unknown>(STORAGE_KEY);
-    return stored ? validateAlertSettings(stored) : DEFAULT_ALERT_SETTINGS;
+    const stored = await alertStateGet(STORAGE_KEY);
+    return stored ? validateAlertSettings(JSON.parse(stored)) : DEFAULT_ALERT_SETTINGS;
   } catch (error) {
     console.error("[alert-settings] Could not load settings; using safe defaults", error);
     return DEFAULT_ALERT_SETTINGS;
@@ -54,9 +46,6 @@ export async function loadAlertSettings(): Promise<AlertSettings> {
 
 export async function saveAlertSettings(value: unknown): Promise<AlertSettings> {
   const settings = validateAlertSettings(value);
-  const cfg = redisConfig();
-  if (!cfg) throw new Error("Redis is not configured");
-  const { Redis } = await import("@upstash/redis");
-  await new Redis(cfg).set(STORAGE_KEY, settings);
+  await alertStateSet(STORAGE_KEY, JSON.stringify(settings));
   return settings;
 }

@@ -14,6 +14,7 @@ import { loadAlertSettings } from "@/src/lib/alert-settings";
 import { acquireDistributedLock } from "@/src/lib/distributed-lock";
 import { isFederalRegisterUrl, resolveFederalRegisterUrl } from "@/src/lib/federal-register-links";
 import { dedupeByCanonicalKey } from "@/src/lib/dedupe-alerts";
+import { alertStateMGet } from "@/src/lib/alert-state";
 
 export const maxDuration = 120;
 
@@ -30,12 +31,9 @@ function isAuthorised(req: NextRequest): boolean {
 
 // Ã¢â€â‚¬Ã¢â€â‚¬ Redis helpers for alert deduplication Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
 async function alertedKeys(keys: string[]): Promise<Set<string>> {
-  const u = process.env.UPSTASH_REDIS_REST_URL;
-  const t = process.env.UPSTASH_REDIS_REST_TOKEN;
-  if (!u || !t || keys.length === 0) return new Set();
+  if (keys.length === 0) return new Set();
   try {
-    const { Redis } = await import("@upstash/redis");
-    const values = await new Redis({ url: u, token: t }).mget<unknown[]>(...keys.map(key => `alert:${key}`));
+    const values = await alertStateMGet(keys.map(key => `alert:${key}`));
     return new Set(keys.filter((_, index) => !!values[index]));
   } catch {
     // A cooldown outage must not falsely mark anything delivered. Recipient

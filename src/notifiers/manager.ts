@@ -26,6 +26,7 @@ import { EmailSMSNotifier }            from "./email-sms";
 import { TwilioNotifier }              from "./twilio";
 import { WhatsAppNotifier }            from "./whatsapp";
 import { listApprovedByChannel, type SubscriberChannel } from "../lib/subscribers";
+import { alertStateGet, alertStateSet } from "../lib/alert-state.ts";
 
 // Maps a notifier's `id` to the subscriber channel it can serve dynamic,
 // self-registered recipients for (app/subscribe). Channels not in this map
@@ -47,14 +48,8 @@ let _cooldownsLoaded = false;
 async function loadCooldowns(): Promise<Record<string, number>> {
   if (_cooldownsLoaded) return _cooldowns;
   try {
-    const url   = process.env.UPSTASH_REDIS_REST_URL || process.env.KV_REST_API_URL;
-    const token = process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN;
-    if (url && token) {
-      const { Redis } = await import("@upstash/redis");
-      const redis = new Redis({ url, token });
-      const raw = await redis.get<string>(COOLDOWN_KEY);
-      if (raw) _cooldowns = typeof raw === "string" ? JSON.parse(raw) : raw as Record<string, number>;
-    }
+    const raw = await alertStateGet(COOLDOWN_KEY);
+    if (raw) _cooldowns = JSON.parse(raw) as Record<string, number>;
   } catch (e) {
     console.warn("[notifier] Could not load cooldowns:", e);
   }
@@ -66,13 +61,7 @@ async function saveCooldowns(c: Record<string, number>): Promise<void> {
   _cooldowns = c;
   try {
     const payload = JSON.stringify(c);
-    const url   = process.env.UPSTASH_REDIS_REST_URL || process.env.KV_REST_API_URL;
-    const token = process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN;
-    if (url && token) {
-      const { Redis } = await import("@upstash/redis");
-      const redis = new Redis({ url, token });
-      await redis.set(COOLDOWN_KEY, payload);
-    }
+    await alertStateSet(COOLDOWN_KEY, payload);
   } catch (e) {
     console.warn("[notifier] Could not save cooldowns:", e);
   }

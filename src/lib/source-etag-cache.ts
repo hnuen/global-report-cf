@@ -14,6 +14,7 @@
 
 const ETAG_KEY = "source:etag:v1";
 const ETAG_TTL = 7 * 24 * 3600; // seconds
+import { alertStateGet, alertStateSet } from "./alert-state.ts";
 
 interface ETagEntry {
   etag?: string;
@@ -31,33 +32,12 @@ function urlHash(url: string): string {
 }
 
 // ── Upstash REST helpers ──────────────────────────────────────────────────
-function upstashUrl()   { return process.env.UPSTASH_REDIS_REST_URL  ?? ""; }
-function upstashToken() { return process.env.UPSTASH_REDIS_REST_TOKEN ?? ""; }
-
 async function redisGet(key: string): Promise<string | null> {
-  const url = upstashUrl(), token = upstashToken();
-  if (!url || !token) return null;
-  try {
-    const res = await fetch(`${url}/get/${encodeURIComponent(key)}`, {
-      headers: { Authorization: `Bearer ${token}` },
-      signal: AbortSignal.timeout(3000),
-    });
-    if (!res.ok) return null;
-    return (await res.json()).result ?? null;
-  } catch { return null; }
+  return alertStateGet(key);
 }
 
 async function redisSet(key: string, value: string, ttl: number): Promise<void> {
-  const url = upstashUrl(), token = upstashToken();
-  if (!url || !token) return;
-  try {
-    await fetch(`${url}/set/${encodeURIComponent(key)}`, {
-      method: "POST",
-      headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
-      body: JSON.stringify({ value, ex: ttl }),
-      signal: AbortSignal.timeout(3000),
-    });
-  } catch { /* non-fatal */ }
+  await alertStateSet(key, value, { ex: ttl });
 }
 
 // ── Public API ────────────────────────────────────────────────────────────

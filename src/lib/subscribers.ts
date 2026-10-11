@@ -19,6 +19,15 @@
  */
 
 import { randomUUID, randomBytes } from "crypto";
+import {
+  alertStateBackend,
+  alertStateDelete,
+  alertStateGet,
+  alertStateSet,
+  alertStateSetAdd,
+  alertStateSetMembers,
+  alertStateSetRemove,
+} from "./alert-state.ts";
 
 export type SubscriberChannel = "telegram" | "whatsapp" | "sms" | "ntfy";
 
@@ -49,18 +58,20 @@ export interface Subscriber {
   approvedAt?: number;
 }
 
-function getRedisConfig(): { url: string; token: string } | null {
-  const url   = process.env.UPSTASH_REDIS_REST_URL || process.env.KV_REST_API_URL;
-  const token = process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN;
-  if (!url || !token) return null;
-  return { url, token };
-}
-
-async function getRedis() {
-  const cfg = getRedisConfig();
-  if (!cfg) throw new Error("No Redis configured (UPSTASH_REDIS_REST_URL/TOKEN missing)");
-  const { Redis } = await import("@upstash/redis");
-  return new Redis({ url: cfg.url, token: cfg.token });
+async function getAlertStore() {
+  if (await alertStateBackend() === "none") throw new Error("Alert state storage is not configured");
+  return {
+    get: async <T>(key: string): Promise<T | null> => {
+      const raw = await alertStateGet(key);
+      return raw as T | null;
+    },
+    set: async (key: string, value: unknown, options: { ex?: number; nx?: boolean } = {}) =>
+      await alertStateSet(key, typeof value === "string" ? value : JSON.stringify(value), options) ? "OK" : null,
+    del: alertStateDelete,
+    sadd: alertStateSetAdd,
+    srem: alertStateSetRemove,
+    smembers: alertStateSetMembers,
+  };
 }
 
 function newToken(): string {
@@ -81,7 +92,7 @@ export async function createPhoneSubscriber(
   email?: string,
   sections?: string[],
 ): Promise<Subscriber> {
-  const redis = await getRedis();
+  const redis = await getAlertStore();
   const sub: Subscriber = {
     id: randomUUID(),
     channel,
@@ -105,7 +116,7 @@ export async function createNtfySubscriber(
   email?: string,
   sections?: string[],
 ): Promise<Subscriber> {
-  const redis = await getRedis();
+  const redis = await getAlertStore();
   // Generate a hard-to-guess topic — subscriber gets it emailed after approval
   const ntfyTopic = `gr-${randomBytes(10).toString("hex")}`;
   const sub: Subscriber = {
@@ -134,7 +145,7 @@ export async function createNtfySubscriber(
  * fires it once the chat_id is actually known.
  */
 export async function createTelegramSubscriber(name?: string, email?: string, sections?: string[]): Promise<Subscriber> {
-  const redis = await getRedis();
+  const redis = await getAlertStore();
   const linkCode = newLinkCode();
   const sub: Subscriber = {
     id: randomUUID(),
@@ -157,28 +168,28 @@ export async function createTelegramSubscriber(name?: string, email?: string, se
 // ── Lookup ──────────────────────────────────────────────────────────────────
 
 export async function getSubscriber(id: string): Promise<Subscriber | null> {
-  const redis = await getRedis();
+  const redis = await getAlertStore();
   const raw = await redis.get<string>(`subscriber:${id}`);
   if (!raw) return null;
   return typeof raw === "string" ? JSON.parse(raw) : (raw as unknown as Subscriber);
 }
 
 export async function getSubscriberByToken(token: string): Promise<Subscriber | null> {
-  const redis = await getRedis();
+  const redis = await getAlertStore();
   const id = await redis.get<string>(`subscriber_token:${token}`);
   if (!id) return null;
   return getSubscriber(id);
 }
 
 export async function getSubscriberByTelegramLinkCode(linkCode: string): Promise<Subscriber | null> {
-  const redis = await getRedis();
+  const redis = await getAlertStore();
   const id = await redis.get<string>(`subscriber_telegram_link:${linkCode}`);
   if (!id) return null;
   return getSubscriber(id);
 }
 
 async function saveSubscriber(sub: Subscriber): Promise<void> {
-  const redis = await getRedis();
+  const redis = await getAlertStore();
   await redis.set(`subscriber:${sub.id}`, JSON.stringify(sub));
 }
 
@@ -202,7 +213,7 @@ export async function linkTelegramChat(linkCode: string, chatId: string): Promis
 
 /** Returns null if the token doesn't match a pending record (already acted on, or invalid). */
 export async function approveSubscriber(token: string): Promise<Subscriber | null> {
-  const redis = await getRedis();
+  const redis = await getAlertStore();
   const claimed = await redis.set(`subscriber_token_claim:${token}`, "1", { nx: true, ex: 60 });
   if (claimed !== "OK") return null;
   const sub = await getSubscriberByToken(token);
@@ -219,7 +230,7 @@ export async function approveSubscriber(token: string): Promise<Subscriber | nul
 }
 
 export async function denySubscriber(token: string): Promise<Subscriber | null> {
-  const redis = await getRedis();
+  const redis = await getAlertStore();
   const claimed = await redis.set(`subscriber_token_claim:${token}`, "1", { nx: true, ex: 60 });
   if (claimed !== "OK") return null;
   const sub = await getSubscriberByToken(token);
@@ -286,7 +297,7 @@ export async function updateSubscriberAlertPolicy(
 export async function deleteSubscriber(id: string): Promise<boolean> {
   const sub = await getSubscriber(id);
   if (!sub) return false;
-  const redis = await getRedis();
+  const redis = await getAlertStore();
   await redis.del(`subscriber:${id}`);
   await redis.del(`subscriber_token:${sub.token}`);
   if (sub.telegramLinkCode) {
@@ -299,10 +310,9 @@ export async function deleteSubscriber(id: string): Promise<boolean> {
 // ── Listing (used by notifiers at send time, and by the admin page) ────────
 
 export async function listApprovedByChannel(channel: SubscriberChannel): Promise<Subscriber[]> {
-  const cfg = getRedisConfig();
-  if (!cfg) return []; // no Redis configured — dynamic subscribers simply unavailable
+  if (await alertStateBackend() === "none") return [];
   try {
-    const redis = await getRedis();
+    const redis = await getAlertStore();
     const ids = await redis.smembers("subscribers_index");
     if (!ids || ids.length === 0) return [];
     const all = await Promise.all(ids.map(id => getSubscriber(id)));
@@ -315,10 +325,9 @@ export async function listApprovedByChannel(channel: SubscriberChannel): Promise
 
 /** All subscribers regardless of status, newest first — for the admin page. */
 export async function listAllSubscribers(): Promise<Subscriber[]> {
-  const cfg = getRedisConfig();
-  if (!cfg) return [];
+  if (await alertStateBackend() === "none") return [];
   try {
-    const redis = await getRedis();
+    const redis = await getAlertStore();
     const ids = await redis.smembers("subscribers_index");
     if (!ids || ids.length === 0) return [];
     const all = await Promise.all(ids.map(id => getSubscriber(id)));

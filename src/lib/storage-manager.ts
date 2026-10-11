@@ -66,10 +66,12 @@ export class StorageManager {
     const failures = results.filter(r => r.status === "rejected");
 
     if (options.requirePersistent) {
-      const persistentIndex = writable.findIndex(adapter => adapter.id === "upstash");
-      if (persistentIndex < 0) throw new Error("Persistent Upstash storage is not configured");
+      const persistentIndex = writable.findIndex(adapter =>
+        adapter.id === "cloudflare-d1" || adapter.id === "upstash"
+      );
+      if (persistentIndex < 0) throw new Error("Persistent storage is not configured");
       if (results[persistentIndex]?.status !== "fulfilled") {
-        throw new Error("Persistent Upstash storage failed to save briefing");
+        throw new Error("Persistent storage failed to save briefing");
       }
     }
 
@@ -146,13 +148,19 @@ export class StorageManager {
 export async function buildStorageManager(): Promise<StorageManager> {
   const adapters: StorageAdapter[] = [];
 
+  if (process.env.USE_D1_STORAGE === "1") {
+    const { D1Adapter } = await import("../adapters/d1");
+    adapters.push(new D1Adapter());
+    console.log("[storage] Registered: Cloudflare D1");
+  }
+
   // Upstash Redis — the live store. Works on any platform (Vercel, Railway,
   // Cloudflare, etc.) via plain REST calls, which is also why it's the only
   // Redis adapter kept here: the old Vercel KV adapter (key "briefing_v1",
   // via the @upstash/redis SDK) was removed after it caused the app to get
   // stuck serving a stale snapshot — see git history for storage-manager.ts
   // around 2026-06-18 if you need the postmortem.
-  if (process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN) {
+  if (process.env.USE_D1_STORAGE !== "1" && process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN) {
     const { UpstashAdapter } = await import("../adapters/upstash");
     adapters.push(new UpstashAdapter());
     console.log("[storage] Registered: Upstash Redis");

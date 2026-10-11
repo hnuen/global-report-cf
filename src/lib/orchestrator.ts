@@ -463,8 +463,10 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
   let preSaveSuccess = false;
   try {
     await storage.save(briefing, { requirePersistent: true });
-    preSaveSuccess = storage.getHealth().some(h => h.id === "upstash" && h.healthy);
-    console.log("[orchestrator] Saved core briefing (pre-enrichment), upstash:", preSaveSuccess);
+    preSaveSuccess = storage.getHealth().some(h =>
+      (h.id === "cloudflare-d1" || h.id === "upstash") && h.healthy
+    );
+    console.log("[orchestrator] Saved core briefing (pre-enrichment), persistent:", preSaveSuccess);
     if (preSaveSuccess) {
       const checkpointUpdates = officialSources
         .map(source => source.checkpoint)
@@ -529,7 +531,7 @@ export async function refreshBriefing(topic?: string, opts?: { skipLLM?: boolean
   // incorrectly report Upstash as missing even when the core briefing was saved.
   const health = storage.getHealth();
   const savedTo = [
-    ...(preSaveSuccess ? ["upstash"] : []),
+    ...(preSaveSuccess ? [process.env.USE_D1_STORAGE === "1" ? "d1" : "upstash"] : []),
     "memory",
   ];
   const storageErrors = health.filter(h => !h.healthy).map(h => ({ id: h.id, error: h.lastError }));

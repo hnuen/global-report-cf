@@ -31,7 +31,7 @@ test("monitor delivery survives source-refresh outages and supports bounded catc
   assert.doesNotMatch(workflow, /default: "144"/);
   assert.doesNotMatch(workflow, /github\.event_name[^\n]*144/);
   assert.match(monitor, /parsed < 1 \|\| parsed > 168/);
-  assert.match(monitor, /\.mget<unknown\[]>/);
+  assert.match(monitor, /alertStateMGet\(keys\.map/);
   assert.match(monitor, /manager\.notify\(deliveryCandidates/);
   assert.match(workflow, /get\("alertedArticles", \[\]\)\[:5\]/);
   assert.match(workflow, /HTTP" != "409".*HTTP" != "500"/);
@@ -42,6 +42,31 @@ test("monitor delivery survives source-refresh outages and supports bounded catc
   assert.doesNotMatch(monitor, /loadArticleLibrary/);
   assert.match(workflow, /Legacy workflow ntfy sender \(disabled\)/);
   assert.match(workflow, /if: \$\{\{ false \}\}/);
+});
+
+test("alert-critical state uses the bound D1 database before suspended Upstash", async () => {
+  const [wrangler, state, lock, subscribers, manager, storage, d1Adapter] = await Promise.all([
+    read("wrangler.toml"),
+    read("src/lib/alert-state.ts"),
+    read("src/lib/distributed-lock.ts"),
+    read("src/lib/subscribers.ts"),
+    read("src/notifiers/manager.ts"),
+    read("src/lib/storage-manager.ts"),
+    read("src/adapters/d1.ts"),
+  ]);
+  assert.match(wrangler, /binding = "ALERT_DB"/);
+  assert.match(wrangler, /database_name = "global-report-alert-state"/);
+  assert.match(state, /getCloudflareContext\(\{ async: true \}\)/);
+  assert.match(state, /if \(db\)[\s\S]*alert_state/);
+  assert.match(state, /const fallback = await redis\(\)/);
+  assert.match(lock, /alertStateSet\(`lock:\$\{key\}`/);
+  assert.match(subscribers, /alertStateSetMembers/);
+  assert.match(manager, /alertStateSet\(COOLDOWN_KEY/);
+  assert.doesNotMatch(manager, /new Redis/);
+  assert.match(wrangler, /USE_D1_STORAGE = "1"/);
+  assert.match(storage, /process\.env\.USE_D1_STORAGE === "1"/);
+  assert.match(storage, /adapter\.id === "cloudflare-d1" \|\| adapter\.id === "upstash"/);
+  assert.match(d1Adapter, /briefing:live:v1/);
 });
 
 test("Pages configuration uses only supported limits and Worker observability stays separate", async () => {

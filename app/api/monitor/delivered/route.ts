@@ -2,6 +2,7 @@ export const dynamic = "force-dynamic";
 
 import { NextRequest, NextResponse } from "next/server";
 import { applySuccessfulDeliveryCooldowns } from "@/src/lib/alert-delivery";
+import { alertStateSet } from "@/src/lib/alert-state";
 
 function isAuthorised(req: NextRequest): boolean {
   const secret = process.env.CRON_SECRET;
@@ -12,15 +13,7 @@ function isAuthorised(req: NextRequest): boolean {
 }
 
 async function markAlerted(key: string, cooldownMinutes: number): Promise<void> {
-  const url = process.env.UPSTASH_REDIS_REST_URL;
-  const token = process.env.UPSTASH_REDIS_REST_TOKEN;
-  if (!url || !token) throw new Error("Redis is not configured");
-  const response = await fetch(`${url}/set/${encodeURIComponent("alert:" + key)}`, {
-    method: "POST",
-    headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
-    body: JSON.stringify({ value: "1", ex: cooldownMinutes * 60 }),
-  });
-  if (!response.ok) throw new Error(`Redis cooldown write failed (${response.status})`);
+  await alertStateSet(`alert:${key}`, "1", { ex: cooldownMinutes * 60 });
 }
 
 /** Called by GitHub only after its direct ntfy request returns 200/201. */

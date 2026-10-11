@@ -46,7 +46,7 @@ export interface Briefing {
 
 // â”€â”€ Platform health / failover types â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-export type PlatformId = "upstash" | "cloudflare-kv" | "memory";
+export type PlatformId = "upstash" | "cloudflare-d1" | "cloudflare-kv" | "memory";
 
 export interface PlatformHealth {
   id: PlatformId;

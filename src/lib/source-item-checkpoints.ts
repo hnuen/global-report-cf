@@ -1,5 +1,6 @@
 const CHECKPOINT_KEY = "source:item-checkpoints:v1";
 const CHECKPOINT_TTL = 30 * 24 * 3600;
+import { alertStateGet, alertStateSet } from "./alert-state.ts";
 
 export interface SourceItemCheckpoint {
   newest: string;
@@ -8,9 +9,6 @@ export interface SourceItemCheckpoint {
 }
 
 export type SourceItemCheckpointStore = Record<string, SourceItemCheckpoint>;
-
-function upstashUrl() { return process.env.UPSTASH_REDIS_REST_URL ?? ""; }
-function upstashToken() { return process.env.UPSTASH_REDIS_REST_TOKEN ?? ""; }
 
 export function sourceCheckpointKey(url: string): string {
   let hash = 0;
@@ -26,22 +24,14 @@ export function itemCheckpointKey(line: string): string {
 }
 
 export async function loadSourceItemCheckpoints(): Promise<SourceItemCheckpointStore> {
-  const url = upstashUrl(), token = upstashToken();
-  if (!url || !token) return {};
   try {
-    const response = await fetch(`${url}/get/${encodeURIComponent(CHECKPOINT_KEY)}`, {
-      headers: { Authorization: `Bearer ${token}` }, signal: AbortSignal.timeout(3000),
-    });
-    if (!response.ok) return {};
-    const raw = (await response.json() as { result?: string | null }).result;
+    const raw = await alertStateGet(CHECKPOINT_KEY);
     return raw ? JSON.parse(raw) : {};
   } catch { return {}; }
 }
 
 export async function commitSourceItemCheckpoints(updates: Array<{ url: string; itemKeys: string[] }>): Promise<void> {
   if (updates.length === 0) return;
-  const url = upstashUrl(), token = upstashToken();
-  if (!url || !token) return;
   const store = await loadSourceItemCheckpoints();
   const updatedAt = new Date().toISOString();
   for (const update of updates) {
@@ -49,12 +39,7 @@ export async function commitSourceItemCheckpoints(updates: Array<{ url: string; 
     store[sourceCheckpointKey(update.url)] = { newest: update.itemKeys[0], recent: update.itemKeys.slice(0, 12), updatedAt };
   }
   try {
-    await fetch(`${url}/set/${encodeURIComponent(CHECKPOINT_KEY)}`, {
-      method: "POST",
-      headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
-      body: JSON.stringify({ value: JSON.stringify(store), ex: CHECKPOINT_TTL }),
-      signal: AbortSignal.timeout(3000),
-    });
+    await alertStateSet(CHECKPOINT_KEY, JSON.stringify(store), { ex: CHECKPOINT_TTL });
   } catch {
     // Optimization only: reprocessing is safer than losing a notice.
   }

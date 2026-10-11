@@ -3,10 +3,17 @@ compatibility_date = "2026-08-01"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".open-next"
 
+[[d1_databases]]
+binding = "ALERT_DB"
+database_name = "global-report-alert-state"
+database_id = "038a1ea9-21b9-4a07-a345-40a7a55fe615"
+migrations_dir = "migrations"
+
 [vars]
 # The checked-in lockfile was stale and blocked Cloudflare before the build
 # command ran. Install the pinned top-level toolchain inside build:pages.
 SKIP_DEPENDENCY_INSTALL = "1"
+USE_D1_STORAGE = "1"
 
 [limits]
 # Default CF Workers limit is 50 subrequests/invocation. The refresh route
