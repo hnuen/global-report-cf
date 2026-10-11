@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11T17:08:15.070Z",
+  "updatedAt": "2026-10-11T19:08:07.254Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261009",
@@ -3112,6 +3112,12 @@
   ],
   "ajNews": [
     {
+      "title": "War and high debt to dominate IMF-World Bank meetings in Bangkok",
+      "url": "https://www.aljazeera.com/news/2026/10/11/war-and-high-debt-to-dominate-imf-world-bank-meetings-in-bangkok?traffic_source=rss",
+      "date": "October 11, 2026",
+      "description": "The US-Israel war on Iran and its inflationary impact will dominate the agenda."
+    },
+    {
       "title": "How the ICC can be saved",
       "url": "https://www.aljazeera.com/opinions/2026/10/11/how-the-icc-can-be-saved?traffic_source=rss",
       "date": "October 11, 2026",
@@ -3121,19 +3127,13 @@
       "title": "Trump says Ukraine and Russia agree to ‘energy ceasefire’",
       "url": "https://www.aljazeera.com/news/2026/10/11/trump-says-ukraine-russia-agree-to-energy-ceasefire-2?traffic_source=rss",
       "date": "October 11, 2026",
-      "description": "Ukrainian President Volodymyr Zelenskyy had pushed for a 60-day full ceasefire."
+      "description": "Ukrainian President Volodymyr Zelenskyy says he was unaware of the deal, but that Ukraine would back it."
     },
     {
       "title": "Hormuz attacks intensify as efforts to end war on Iran stall",
       "url": "https://www.aljazeera.com/news/2026/10/11/hormuz-attacks-intensify-as-efforts-to-end-war-on-iran-stall?traffic_source=rss",
       "date": "October 11, 2026",
       "description": "IRGC warns against ignoring waterway's 'security and rules' as CENTCOM says US disabled vessel trying to run blockade."
-    },
-    {
-      "title": "Sweet protein brazzein shows promise in reducing blood sugar spikes: Study",
-      "url": "https://www.aljazeera.com/news/2026/10/11/sweet-protein-brazzein-shows-promise-in-reducing-blood-sugar-spikes-study?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Russian research reveals that the protein brazzein could help reduce blood sugar spikes."
     }
   ],
   "occNews": [
@@ -3237,16 +3237,16 @@
   ],
   "regionsNews": [
     {
-      "title": "Saudi Arabia's Riyadh airport hit by second Houthi strike in two days",
+      "title": "Saudi capital airport hit by second Houthi strike in two days",
       "url": "https://www.bbc.co.uk/news/articles/cr93znyk44e1o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 11, 2026",
-      "description": "The Yemeni group says it carried out attacks that killed 13 people over the weekend and targeted two airports and oil facilities."
+      "description": "The Yemeni group says it carried out attacks that killed 13 people in Riyadh over the weekend and targeted two airports and oil facilities."
     },
     {
-      "title": "Pope Leo to have surgery after lump found on lung",
-      "url": "https://www.bbc.co.uk/news/articles/c6m2dnngvw8xo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Poland detains man suspected of planning assassination of PM Tusk",
+      "url": "https://www.bbc.co.uk/news/articles/c6n9rvynl5p5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 11, 2026",
-      "description": "The 71-year-old pontiff said the nodule was identified \"at a very early stage\"."
+      "description": "Police received credible information about possible attacks against Donald Tusk and his defence minister."
     },
     {
       "title": "Homes and bridges swept away as fresh floods hit Nepal",
@@ -3255,16 +3255,22 @@
       "description": "Nepal is still trying to recover from catastrophic floods that hit less than two months ago, leaving thousands dead and missing."
     },
     {
+      "title": "Poland stabbings driven by online glorification of violence, Tusk says",
+      "url": "https://www.bbc.co.uk/news/articles/ckp8gyd65z2go?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 11, 2026",
+      "description": "The PM was speaking after violent attacks at Polish schools this week left one dead and others injured."
+    },
+    {
       "title": "Children among 139 dead after boat capsizes off Djibouti, UN says",
       "url": "https://www.bbc.co.uk/news/articles/cwy7lxx60dg5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 11, 2026",
       "description": "The boat was travelling from Djibouti to Yemen with 305 people on board, when it capsized near the port town of Obock on Thursday night."
     },
     {
-      "title": "Poland stabbings driven by online glorification of violence, Tusk says",
-      "url": "https://www.bbc.co.uk/news/articles/ckp8gyd65z2go?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Pope Leo to have surgery after lump found on lung",
+      "url": "https://www.bbc.co.uk/news/articles/c6m2dnngvw8xo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 11, 2026",
-      "description": "The PM was speaking after violent attacks at Polish schools this week left one dead and others injured."
+      "description": "The 71-year-old pontiff said the nodule was identified \"at a very early stage\"."
     },
     {
       "title": "US justice department investigates TV networks over Trump pool coverage",
@@ -3306,7 +3312,7 @@
       "title": "Riyadh airport attacks another dangerous moment in already tense conflict",
       "url": "https://www.bbc.co.uk/news/articles/cr4g1pwxxlq1o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 11, 2026",
-      "description": "The Houthis have stepped up their attacks on Saudi Arabian soil, and while the physical damage can be quickly repaired, its reputation for stability is taking a battering."
+      "description": "While the physical damage from Houthi attacks can be quickly repaired, the Saudi reputation for stability is taking a battering."
     },
     {
       "title": "Inside the room: What it was like to be with Blackpink's Lisa as race scandal erupted",
@@ -3651,6 +3657,54 @@
       "description": "The Vaping Product Duty will be imposed at a rate of £2.20 per 10ml of e-liquid from April 2027."
     },
     {
+      "title": "Jerusalem Daily: Panicked Palestinians flee Israeli attacks on Gaza",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/jerusalem-daily-panicked-palestinians-flee-israeli-attacks-on-gaza?traffic_source=rss",
+      "date": "October 11, 2026",
+      "description": "Jerusalem Daily: Panicked Palestinians flee Israeli attacks on Gaza"
+    },
+    {
+      "title": "Lebanon’s first electric train hopes to revive railway system",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/lebanons-first-electric-train-hopes-to-revive-railway-system?traffic_source=rss",
+      "date": "October 11, 2026",
+      "description": "A new solar-powered model train has returned to a section of Lebanon’s historic railway."
+    },
+    {
+      "title": "Liverpool fans give Manchester City a fiery welcome at Anfield",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/liverpool-fans-give-manchester-city-a-fiery-welcome-at-anfield?traffic_source=rss",
+      "date": "October 11, 2026",
+      "description": "'Cheats cheats cheats' This is how Liverpool fans greeted Manchester City as they arrived at Anfield"
+    },
+    {
+      "title": "Man City beat 10-man Liverpool 3-0 in first game after guilty verdict",
+      "url": "https://www.aljazeera.com/sports/2026/10/11/man-city-beat-10-man-liverpool-3-0-in-first-game-after-guilty-verdict?traffic_source=rss",
+      "date": "October 11, 2026",
+      "description": "Erling Haaland, Jeremy Doku and Rayan Cherki score second half goals after Ryan Gravenberch sent off."
+    },
+    {
+      "title": "Is the Yemen war entering a new phase?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/is-the-yemen-war-entering-a-new-phase?traffic_source=rss",
+      "date": "October 11, 2026",
+      "description": "Saudi Arabia has accused Yemen’s Houthis of killing 12 people and injuring 300 in Saturday's attack on King Khalid Inter"
+    },
+    {
+      "title": "Israel pushes its ‘Yellow Line’ deeper into Gaza",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/israel-pushes-its-yellow-line-deeper-into-gaza?traffic_source=rss",
+      "date": "October 11, 2026",
+      "description": "Israel pushes its ‘Yellow Line’ deeper into Gaza"
+    },
+    {
+      "title": "‘Who will represent us?’ Palestinians react to election delay",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/who-will-represent-us-palestinians-react-to-election-delay?traffic_source=rss",
+      "date": "October 11, 2026",
+      "description": "Palestinians have reacted to President Mahmoud Abbas’ decision to postpone the Palestinian legislative elections."
+    },
+    {
+      "title": "Turkiye highway crash kills 11, injures 27 after tour bus hits truck",
+      "url": "https://www.aljazeera.com/news/2026/10/11/turkiye-highway-crash-kills-11-injures-27-after-tour-bus-hits-truck?traffic_source=rss",
+      "date": "October 11, 2026",
+      "description": "Police detain tour bus driver after highway collision in western Turkiye leaves 11 dead and 27 injured."
+    },
+    {
       "title": "Football fans speak about City’s charges as they face Liverpool",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/football-fans-speak-about-citys-charges-as-they-face-liverpool?traffic_source=rss",
       "date": "October 11, 2026",
@@ -3727,54 +3781,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/11/indias-crackdown-on-youth-protesters-what-next?traffic_source=rss",
       "date": "October 11, 2026",
       "description": "India's 'cockroach' movement and student groups have said protests will continue despite detentions."
-    },
-    {
-      "title": "Ceuta migrants allege beatings as camps cleared ahead of royal visit",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/ceuta-migrants-allege-beatings-as-camps-cleared-ahead-of-royal-visit?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "People in Ceuta allege they were mistreated by Spanish soldiers after authorities cleared migrant camps."
-    },
-    {
-      "title": "Meet the man helping India’s detained protesters get home",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/meet-the-man-helping-indias-detained-protesters-get-home?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Al Jazeera spoke to the 25-year-old man who built an AI-powered app to help India’s detained protesters get home safely."
-    },
-    {
-      "title": "Saudi Arabia vows response over Houthi ‘war crime’ attack on Riyadh airport",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/saudi-arabia-vows-response-over-houthi-war-crime-attack-on-riyadh-airport?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "A Houthi attack on Riyadh airport killed at least 12 people and injured more than 300."
-    },
-    {
-      "title": "Liverpool vs Man City live: Premier League",
-      "url": "https://www.aljazeera.com/sports/liveblog/2026/10/11/live-liverpool-vs-manchester-city-premier-league-football?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Follow updates from the clash at Anfield, including the build-up, analysis and live text commentary of the game."
-    },
-    {
-      "title": "Polish police probe alleged plot to assassinate PM Tusk, defence minister",
-      "url": "https://www.aljazeera.com/news/2026/10/11/poland-police-probe-alleged-plot-to-assassinate-pm-tusk-defence-minister?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Security officials hold emergency meeting after police receive information about potential attack."
-    },
-    {
-      "title": "Kenya’s Eliud Kipchoge wins his first marathon in three years in Melbourne",
-      "url": "https://www.aljazeera.com/sports/2026/10/11/kenyas-eliud-kipchoge-wins-his-first-marathon-in-three-years-in-melbourne?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Kipchoge is attempting ⁠⁠to run a marathon on all seven ​continents over two years as part of his 'World Tour' campaign."
-    },
-    {
-      "title": "Trump’s brash remarks entertain crowd at election rally in Tennessee",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/trumps-brash-remarks-entertain-crowd-at-election-rally-in-tennessee?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "US President Donald Trump told his supporters they would applaud anything he says."
-    },
-    {
-      "title": "At least 139 dead, 84 missing as migrant boat capsizes off Djibouti",
-      "url": "https://www.aljazeera.com/news/2026/10/11/at-least-109-dead-over-100-missing-as-migrant-boat-capsizes-off-djibouti?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Search and rescue operations conducted after vessel carrying more than 300 people capsizes near Guhere."
     }
   ]
 }
