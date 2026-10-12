@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11T22:08:20.263Z",
+  "updatedAt": "2026-10-12T13:08:16.362Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261009",
@@ -191,7 +191,11 @@
           "datePdf": true,
           "dateConfident": true
         }
-      ]
+      ],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "balkans-related-sanctions": {
       "name": "Balkans-Related Sanctions",
@@ -239,7 +243,11 @@
           "datePdf": true,
           "dateConfident": true
         }
-      ]
+      ],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "belarus-sanctions": {
       "name": "Belarus Sanctions",
@@ -307,7 +315,11 @@
           "datePdf": true,
           "dateConfident": true
         }
-      ]
+      ],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "burma": {
       "name": "Burma-Related Sanctions",
@@ -346,7 +358,11 @@
           "url": "https://ofac.treasury.gov/media/933281/download?inline",
           "datePdf": true
         }
-      ]
+      ],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "central-african-republic-sanctions": {
       "name": "Central African Republic Sanctions",
@@ -361,7 +377,11 @@
           "glNumbers": []
         }
       ],
-      "generalLicenses": []
+      "generalLicenses": [],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "chinese-military-companies-sanctions": {
       "name": "Chinese Military Companies Sanctions",
@@ -378,7 +398,11 @@
           ]
         }
       ],
-      "generalLicenses": []
+      "generalLicenses": [],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "counter-narcotics-trafficking-sanctions": {
       "name": "Counter Narcotics Trafficking Sanctions",
@@ -425,7 +449,11 @@
           "glNumbers": []
         }
       ],
-      "generalLicenses": []
+      "generalLicenses": [],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "counter-terrorism-sanctions": {
       "name": "Counter Terrorism Sanctions",
@@ -692,20 +720,32 @@
           "url": "https://ofac.treasury.gov/media/935641/download?inline",
           "datePdf": true
         }
-      ]
+      ],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "countering-americas-adversaries-through-sanctions-act-related-sanctions": {
-      "name": "Countering America&#039;s Adversaries Through Sanctions Act-Related Sanctions",
+      "name": "Countering America's Adversaries Through Sanctions Act-Related Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/countering-americas-adversaries-through-sanctions-act-related-sanctions",
       "lastUpdated": "Feb 24, 2026",
       "executiveOrders": [],
       "frNotices": [],
-      "generalLicenses": []
+      "generalLicenses": [],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "cuba-sanctions": {
       "name": "Cuba Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/cuba-sanctions",
       "lastUpdated": "Sep 29, 2026",
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -819,7 +859,11 @@
           "datePdf": true,
           "dateConfident": true
         }
-      ]
+      ],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "democratic-republic-of-the-congo-related-sanctions": {
       "name": "Democratic Republic of the Congo-Related Sanctions",
@@ -855,7 +899,11 @@
           "datePdf": true,
           "dateConfident": true
         }
-      ]
+      ],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "ethiopia": {
       "name": "Ethiopia-Related Sanctions",
@@ -872,7 +920,12 @@
           ]
         }
       ],
-      "generalLicenses": []
+      "generalLicenses": [],
+      "status": "inactive",
+      "statusLabel": "Inactive and Archived",
+      "inactiveDate": "October 12, 2026",
+      "statusReason": "OFAC no longer lists this program in its Active Sanctions Programs index.",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "foreign-interference-in-a-united-states-election-sanctions": {
       "name": "Foreign Interference in a United States Election Sanctions",
@@ -893,7 +946,11 @@
           "glNumbers": []
         }
       ],
-      "generalLicenses": []
+      "generalLicenses": [],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "global-magnitsky-sanctions": {
       "name": "Global Magnitsky Sanctions",
@@ -938,7 +995,11 @@
           "datePdf": true,
           "dateConfident": true
         }
-      ]
+      ],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "hong-kong-related-sanctions": {
       "name": "Hong Kong-Related Sanctions",
@@ -959,7 +1020,11 @@
           "glNumbers": []
         }
       ],
-      "generalLicenses": []
+      "generalLicenses": [],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "hostages-and-wrongfully-detained-us-nationals-sanctions": {
       "name": "Hostages and Wrongfully Detained U.S. Nationals Sanctions",
@@ -974,7 +1039,11 @@
           "glNumbers": []
         }
       ],
-      "generalLicenses": []
+      "generalLicenses": [],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "international-criminal-court-related-sanctions": {
       "name": "International Criminal Court-Related Sanctions",
@@ -1044,12 +1113,20 @@
           "datePdf": true,
           "dateConfident": true
         }
-      ]
+      ],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "iran-sanctions": {
       "name": "Iran Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions",
       "lastUpdated": "Oct 08, 2026",
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -1300,7 +1377,11 @@
           "glNumbers": []
         }
       ],
-      "generalLicenses": []
+      "generalLicenses": [],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "lebanon-related-sanctions": {
       "name": "Lebanon-Related Sanctions",
@@ -1321,7 +1402,11 @@
           "glNumbers": []
         }
       ],
-      "generalLicenses": []
+      "generalLicenses": [],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "libya-sanctions": {
       "name": "Libya Sanctions",
@@ -1344,7 +1429,11 @@
           "glNumbers": []
         }
       ],
-      "generalLicenses": []
+      "generalLicenses": [],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "the-magnitsky-sanctions": {
       "name": "Magnitsky Sanctions",
@@ -1365,7 +1454,11 @@
           "glNumbers": []
         }
       ],
-      "generalLicenses": []
+      "generalLicenses": [],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "mali-related-sanctions": {
       "name": "Mali-Related Sanctions",
@@ -1386,7 +1479,11 @@
           "glNumbers": []
         }
       ],
-      "generalLicenses": []
+      "generalLicenses": [],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "nicaragua-related-sanctions": {
       "name": "Nicaragua-related Sanctions",
@@ -1412,7 +1509,11 @@
           ]
         }
       ],
-      "generalLicenses": []
+      "generalLicenses": [],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "non-proliferation-sanctions": {
       "name": "Non-Proliferation Sanctions",
@@ -1518,7 +1619,11 @@
           "url": "https://ofac.treasury.gov/media/935641/download?inline",
           "datePdf": true
         }
-      ]
+      ],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "north-korea-sanctions": {
       "name": "North Korea Sanctions",
@@ -1545,29 +1650,41 @@
           "glNumbers": []
         }
       ],
-      "generalLicenses": []
+      "generalLicenses": [],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "paarss": {
       "name": "Promoting Accountability for Assad and Regional Stabilization Sanctions (PAARSS)",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/paarss",
       "lastUpdated": "Sep 24, 2026",
+      "status": "residual",
+      "statusLabel": "Residual",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information",
       "executiveOrders": [],
       "frNotices": [
         {
-          "citation": "90 FR 46056-25",
-          "description": "Final Rule to rename the Syria-Related Sanctions Regulations to the Promoting Accountability for Assad and Regional Stabilization Sanctions Regulations, and to implement regulatory amendments 88 FR 87715-23 - Publication of Syria-Related Sanctions Regulations Web General Licenses 1, 2, and 3 87 FR 7",
-          "year": "2025",
+          "citation": "91 FR 60825-26",
+          "description": "Publication of Terrorism List Governments Sanctions Regulations Amendment - Syria State Sponsor of Terrorism Recission 90 FR 46056-25 - Final Rule to rename the Syria-Related Sanctions Regulations to the Promoting Accountability for Assad and Regional Stabilization Sanctions Regulations, and to impl",
+          "year": "2026",
+          "glNumbers": []
+        },
+        {
+          "citation": "88 FR 87715-23",
+          "description": "Publication of Syria-Related Sanctions Regulations Web General Licenses 1, 2, and 3 87 FR 78484-22 - Publication of Humanitarian Sanctions Regulations Amendment and General Licenses (Nongovernmental Organizations, Agricultural, and Medicine) 87 FR 78470-22 - Publication of United States Government a",
+          "year": "2023",
           "glNumbers": [
             "1"
           ]
         },
         {
-          "citation": "87 FR 78470-22",
-          "description": "Publication of United States Government and International Organizations Official Business Sanctions Regulations Amendment and General Licenses 85 FR 34510-20 - Syria-related Sanctions Regulations Recent Actions regarding Promoting Accountability for Assad and Regional Stabilization Sanctions (PAARSS",
-          "year": "2022",
-          "glNumbers": [
-            "85"
-          ]
+          "citation": "85 FR 34510-20",
+          "description": "Syria-related Sanctions Regulations Recent Actions regarding Promoting Accountability for Assad and Regional Stabilization Sanctions (PAARSS) Publication of Regulatory Amendments; Publication of Report for Licensing Activities Undertaken Pursuant to the Trade Sanctions Reform and Export Enhancement",
+          "year": "2020",
+          "glNumbers": []
         }
       ],
       "generalLicenses": []
@@ -1591,7 +1708,11 @@
           "glNumbers": []
         }
       ],
-      "generalLicenses": []
+      "generalLicenses": [],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "russian-harmful-foreign-activities-sanctions": {
       "name": "Russian Harmful Foreign Activities Sanctions",
@@ -2108,7 +2229,11 @@
           "expires": "",
           "url": "https://ofac.treasury.gov/media/937216/download?inline"
         }
-      ]
+      ],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "somalia-sanctions": {
       "name": "Somalia Sanctions",
@@ -2129,7 +2254,11 @@
           "glNumbers": []
         }
       ],
-      "generalLicenses": []
+      "generalLicenses": [],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "south-sudan-related-sanctions": {
       "name": "South Sudan-Related Sanctions",
@@ -2150,7 +2279,11 @@
           "glNumbers": []
         }
       ],
-      "generalLicenses": []
+      "generalLicenses": [],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "sudan-and-darfur-sanctions": {
       "name": "Sudan and Darfur Sanctions",
@@ -2235,7 +2368,11 @@
           "datePdf": true,
           "dateConfident": true
         }
-      ]
+      ],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "transnational-criminal-organizations": {
       "name": "Transnational Criminal Organizations",
@@ -2259,12 +2396,20 @@
           "glNumbers": []
         }
       ],
-      "generalLicenses": []
+      "generalLicenses": [],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "ukraine-russia-related-sanctions": {
       "name": "Ukraine-/Russia-related Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/ukraine-russia-related-sanctions",
       "lastUpdated": "Oct 09, 2026",
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -2900,7 +3045,11 @@
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936741/download?inline"
         }
-      ]
+      ],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     },
     "yemen-related-sanctions": {
       "name": "Yemen-related Sanctions",
@@ -2921,7 +3070,11 @@
           "glNumbers": []
         }
       ],
-      "generalLicenses": []
+      "generalLicenses": [],
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
     }
   },
   "ofsiNotices": [
@@ -3068,10 +3221,16 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "Trump's 'energy ceasefire' claim welcomed by Zelensky but Russia silent",
-      "url": "https://www.bbc.co.uk/news/articles/c6pvg4jyz1m0o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Documents falsified to evade tax on Abramovich's wealth, BBC finds",
+      "url": "https://www.bbc.co.uk/news/articles/c64g1l5389kvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 12, 2026",
+      "description": "Backdated paperwork also made the Russian oligarch’s yachts and mansions disappear from accounts, investigation finds."
+    },
+    {
+      "title": "Trump faces growing backlash over plans to import diesel from Russia",
+      "url": "https://www.bbc.co.uk/news/articles/cjn5v21py07vo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 11, 2026",
-      "description": "Zelensky says Kyiv would support such a truce. Moscow has yet to comment."
+      "description": "Both Republican and Democratic lawmakers have criticised the deal, which was announced weeks before the US midterm elections."
     },
     {
       "title": "Ukraine strikes Yandex data centre in third attack on Russian tech giant",
@@ -3080,16 +3239,34 @@
       "description": "It is the third time this week that Ukraine has targeted Russian tech giant Yandex, forcing the company to suspend its operations."
     },
     {
-      "title": "Nobel peace laureate says US sanctions on ICC 'unacceptable'",
-      "url": "https://www.bbc.co.uk/news/articles/cqkgjrpmr47vo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 10, 2026",
-      "description": "Navi Pillay says the Trump administrations' sweeping penalties on the international tribunal were \"unheard of\"."
+      "title": "Who are the Houthis, and why are they so hard to fight?",
+      "url": "https://www.bbc.co.uk/news/videos/cmy56nzd6y69o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 12, 2026",
+      "description": "Security correspondent Frank Gardner explains how the Iran-backed Houthis' precision strikes and guerrilla tactics have made it difficult for Saudi forces to gain the upper hand."
     },
     {
-      "title": "Young men live in fear of being snatched off the streets and sold to Myanmar's army",
-      "url": "https://www.bbc.co.uk/news/articles/c680zlny0gk4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 10, 2026",
-      "description": "A desperate junta is in a war of attrition against ethnic militias and and civilian resistance."
+      "title": "Watch: How did Roman Abramovich's advisors help hide his wealth?",
+      "url": "https://www.bbc.co.uk/news/videos/c9rkynp1m01mo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 12, 2026",
+      "description": "Working with the Bureau of Investigative Journalism, BBC Panorama reveals how the Russian billionaire hid his wealth with the help of Deloitte."
+    },
+    {
+      "title": "Watch: What's behind Trump's energy ceasefire claim?",
+      "url": "https://www.bbc.co.uk/news/videos/cwvgde9vrdd9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 11, 2026",
+      "description": "The US president made the announcement in a social media post, which was an apparent surprise to Ukraine and Russia is yet to comment."
+    },
+    {
+      "title": "Trump faces growing backlash over plans to import diesel from Russia",
+      "url": "https://www.bbc.co.uk/news/articles/cjn5v21py07vo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 11, 2026",
+      "description": "Both Republican and Democratic lawmakers have criticised the deal, which was announced weeks before the US midterm elections."
+    },
+    {
+      "title": "Documents falsified to evade tax on Abramovich's wealth, BBC finds",
+      "url": "https://www.bbc.co.uk/news/articles/c64g1l5389kvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 12, 2026",
+      "description": "Backdated paperwork also made the Russian oligarch’s yachts and mansions disappear from accounts, investigation finds."
     },
     {
       "title": "Trump announces deal for Russian diesel as Zelensky calls it a gift to Putin",
@@ -3118,28 +3295,22 @@
   ],
   "ajNews": [
     {
-      "title": "Zelenskyy welcomes US-announced energy ceasefire",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/zelenskyy-welcomes-us-announced-energy-ceasefire?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "President Zelenskyy has responded to Donald Trump’s announcement that Russia and Ukraine agreed to an energy ceasefire"
+      "title": "‘Energy ceasefire’: What’s behind Trump’s love-hate ties to Russian oil?",
+      "url": "https://www.aljazeera.com/news/2026/10/12/energy-ceasefire-whats-behind-trumps-love-hate-ties-to-russian-oil?traffic_source=rss",
+      "date": "October 12, 2026",
+      "description": "Trump's energy truce sparks criticism over aiding Russia's war finances amid diesel shortages and rising consumer costs."
     },
     {
-      "title": "Syrian families demand release of detainees held by Israel",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/syrian-families-demand-release-of-detainees-held-by-israel?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Syrian families demand release of detainees held by Israel"
+      "title": "Ukraine’s Zelenskyy accuses Russia of violating Trump’s ‘energy ceasefire’",
+      "url": "https://www.aljazeera.com/news/2026/10/12/ukraines-zelenskyy-accuses-russia-of-violating-trumps-energy-ceasefire?traffic_source=rss",
+      "date": "October 12, 2026",
+      "description": "The EU also announced that it officially added almost 1,600 new sanctions on Russia's military industrial complex."
     },
     {
-      "title": "Republican senator says Trump diesel agreement with Russia may be illegal",
-      "url": "https://www.aljazeera.com/news/2026/10/11/republican-senator-says-trump-diesel-agreement-with-russia-may-be-illegal?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "US President Trump's bid to bring down diesel prices by easing sanctions on Russia prompts rare Republican criticism."
-    },
-    {
-      "title": "War and high debt to dominate IMF-World Bank meetings in Bangkok",
-      "url": "https://www.aljazeera.com/news/2026/10/11/war-and-high-debt-to-dominate-imf-world-bank-meetings-in-bangkok?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "The US-Israel war on Iran and its inflationary impact will dominate the agenda."
+      "title": "Russia introduces drone classes in public schools",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/12/russia-introduces-drone-classes-in-public-schools?traffic_source=rss",
+      "date": "October 12, 2026",
+      "description": "Russian public schools are teaching children to assemble and fly drones as part of changes to the national curriculum."
     }
   ],
   "occNews": [
@@ -3243,34 +3414,58 @@
   ],
   "regionsNews": [
     {
-      "title": "Saudi capital airport hit by second Houthi strike in two days",
-      "url": "https://www.bbc.co.uk/news/articles/cr93znyk44e1o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Saudi minister vows 'serious response' to Houthi attacks on airports",
+      "url": "https://www.bbc.co.uk/news/articles/cjly0zqq27e4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 12, 2026",
+      "description": "It comes after the armed group hit Riyadh's international airport and another facility, killing 13 people, in a significant escalation."
+    },
+    {
+      "title": "Indian opposition leaders march to top court to demand election chief resign",
+      "url": "https://www.bbc.co.uk/news/articles/cwr5y2lgr4gdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 12, 2026",
+      "description": "The march follows a chaotic weekend in Delhi which saw thousands of protesters being detained by police."
+    },
+    {
+      "title": "Pupil arrested after two teachers shot at French school",
+      "url": "https://www.bbc.co.uk/news/articles/cm2keg7910gvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 12, 2026",
+      "description": "A 14-year-old was detained after the middle-school principal and teacher were injured."
+    },
+    {
+      "title": "Tom Cruise film Digger forecast to lose $245m at box office",
+      "url": "https://www.bbc.co.uk/news/articles/cke8re5v1pgmo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 12, 2026",
+      "description": "The film dropped by around 60% in its second weekend, and could become one of Hollywood's biggest flops."
+    },
+    {
+      "title": "Mourners killed by Kenya police at ex-PM's national farewell not part of violence, BBC finds",
+      "url": "https://www.bbc.co.uk/news/articles/c962y4ld1d7do?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 11, 2026",
-      "description": "The Yemeni group says it carried out attacks that killed 13 people in Riyadh over the weekend and targeted two airports and oil facilities."
+      "description": "After analysing 1,500 videos and images of the Raila Odinga memorial, Africa Eye finds that those killed were far from the scuffles."
+    },
+    {
+      "title": "Watch: Endangered orangutans released back into the wild after Borneo fires",
+      "url": "https://www.bbc.co.uk/news/videos/c6073z5rvrk3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 11, 2026",
+      "description": "The critically endangered apes were rescued from intense wildfires that destroyed their habitat in August and September."
+    },
+    {
+      "title": "Iconic Australian band Powderfinger announce first tour in 17 years",
+      "url": "https://www.bbc.co.uk/news/articles/c680zyx8gkkjo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 11, 2026",
+      "description": "The band, who announced their reunion last week, say they are \"absolutely ecstatic\" to be playing together again."
+    },
+    {
+      "title": "Women's billion-dollar boom leaves players behind, says Fifpro",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cmd7qn1g0xrxo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 12, 2026",
+      "description": "Women's football is on course to become a billion-dollar industry, but many professional players are still earning low wages, working on insecure contracts and experiencing rising psychological stress, a Fifpro survey indicates."
     },
     {
       "title": "Poland detains man suspected of planning assassination of PM Tusk",
       "url": "https://www.bbc.co.uk/news/articles/c6n9rvynl5p5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 11, 2026",
       "description": "Police received credible information about possible attacks against Donald Tusk and his defence minister."
-    },
-    {
-      "title": "Dozens of gold prospectors killed in strikes on Egypt-Sudan border, rights group says",
-      "url": "https://www.bbc.co.uk/news/articles/cqy43vrk8wv8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 11, 2026",
-      "description": "Neither Egypt nor Sudan has commented on the alleged strikes on an artisanal mining camp on Saturday."
-    },
-    {
-      "title": "Homes and bridges swept away as fresh floods hit Nepal",
-      "url": "https://www.bbc.co.uk/news/articles/ck86zppejjw3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 11, 2026",
-      "description": "Nepal is still trying to recover from catastrophic floods that hit less than two months ago, leaving thousands dead and missing."
-    },
-    {
-      "title": "Orangutans released back into Borneo forest after devastating fires",
-      "url": "https://www.bbc.co.uk/news/articles/cwvgde0m2d73o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 11, 2026",
-      "description": "Rescuers moved the apes after their habitats were threatened by intense wildfires over the summer."
     },
     {
       "title": "Poland stabbings driven by online glorification of violence, Tusk says",
@@ -3291,40 +3486,16 @@
       "description": "The 71-year-old pontiff said the nodule was identified \"at a very early stage\"."
     },
     {
-      "title": "US justice department investigates TV networks over Trump pool coverage",
-      "url": "https://www.bbc.co.uk/news/articles/c9vgregzk6gro?at_medium=RSS&amp;at_campaign=rss",
+      "title": "American ranchers wrestle with soaring costs - and their loyalty to Trump",
+      "url": "https://www.bbc.co.uk/news/articles/c6d7q5z17gp5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 11, 2026",
-      "description": "The White House had blocked access for CNN, MS Now and Politico, leading them to restrict pool coverage."
+      "description": "Many farmers in states that backed the president say they are being hit from all sides, with the crucial midterm elections just weeks away."
     },
     {
-      "title": "Expedition hopes to find aviator Amelia Earhart's plane on remote island",
-      "url": "https://www.bbc.co.uk/news/articles/c3y0e871rk4vo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 10, 2026",
-      "description": "The team en route to the suspected crash site aim finally to solve the mystery of her 1937 disappearance."
-    },
-    {
-      "title": "Delhi sees more protests as freed 'cockroach' group's leaders vow to fight on",
-      "url": "https://www.bbc.co.uk/news/articles/c84g179n2393o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Robert Pattinson on new film Primetime and how hunting predators became hit TV",
+      "url": "https://www.bbc.co.uk/news/articles/cmn5d92423vyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 11, 2026",
-      "description": "Hundreds of people who came out on the streets despite the police's restrictions were detained on Sunday."
-    },
-    {
-      "title": "US murderer Christa Pike discharged from hospital 10 days after failed execution",
-      "url": "https://www.bbc.co.uk/news/articles/cmlyle97pqd7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 10, 2026",
-      "description": "Pike's lawyers say she is \"grateful\" to the medical team who cared for her after she survived two lethal injections last month."
-    },
-    {
-      "title": "Headmaster detained after BBC investigation into alleged sexual abuse of students",
-      "url": "https://www.bbc.co.uk/news/articles/cwy8lx1r2vrro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 10, 2026",
-      "description": "Former students launched their own investigation, spending years collecting evidence and testimonies from others who say they were abused by the headteacher."
-    },
-    {
-      "title": "Woman injures three people in third Poland school knife attack in a week",
-      "url": "https://www.bbc.co.uk/news/articles/cv8ezd246z1wo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 10, 2026",
-      "description": "Polish police had already deployed to schools after a female caretaker was killed and several others injured in two earlier attacks in two days."
+      "description": "The actor portrays the real-life host of American TV show, To Catch a Predator, in his latest film."
     },
     {
       "title": "Riyadh airport attacks another dangerous moment in already tense conflict",
@@ -3333,64 +3504,58 @@
       "description": "While the physical damage from Houthi attacks can be quickly repaired, the Saudi reputation for stability is taking a battering."
     },
     {
-      "title": "Inside the room: What it was like to be with Blackpink's Lisa as race scandal erupted",
-      "url": "https://www.bbc.co.uk/news/articles/cjzxl56q30k7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 10, 2026",
-      "description": "Film-maker Sue Kim talks about having unprecedented access to K-Pop idol Lisa Manobal at her most candid."
+      "title": "New rule, no change - has cricket missed a trick again with bad light?",
+      "url": "https://www.bbc.co.uk/sport/cricket/articles/c623d4pzy4n2o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 12, 2026",
+      "description": "More than 60 overs have been lost from the first Test between South Africa and Australia despite a change by the ICC. Has cricket missed a trick?"
     },
     {
-      "title": "Public executions in the US stopped nearly a century ago - why are they resuming now?",
-      "url": "https://www.bbc.co.uk/news/articles/c6kgq7rqdql7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 10, 2026",
-      "description": "The Pentagon says the execution of Fort Hood shooter Nidal Hasan will be livestreamed, but experts suggest officials are reading the country wrong."
+      "title": "Watch: CCTV shows people take cover as missile hits Riyadh airport",
+      "url": "https://www.bbc.co.uk/news/videos/cj4g17wz7gv0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 12, 2026",
+      "description": "Footage from inside the airport shows the moment the strike hit on Saturday."
     },
     {
-      "title": "Nord Stream trial: How German police followed the evidence - to Ukraine",
-      "url": "https://www.bbc.co.uk/news/articles/c317ke5ngrq7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 10, 2026",
-      "description": "After four years, a Ukrainian man is set to stand trial in Hamburg accused of sabotaging the Nord Stream pipelines."
+      "title": "Healey faces £35bn Budget challenge to meet spending pledges, says think tank",
+      "url": "https://www.bbc.co.uk/news/articles/cm78pwdp3n5qo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 12, 2026",
+      "description": "The Institute for Fiscal Studies says the government will need a \"top-up\" of billions of pounds if it wants to meet its spending plans."
     },
     {
-      "title": "Buildings swept away as flash floods hit central Nepal",
-      "url": "https://www.bbc.co.uk/news/videos/cwzrdnljedx0o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "How to avoid getting stung if you miss credit card payments",
+      "url": "https://www.bbc.co.uk/news/articles/c84g1xz1l9ddo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 12, 2026",
+      "description": "People are increasingly falling behind on credit card repayments, so here's the best way to get debt advice."
+    },
+    {
+      "title": "Roofing scammers con homeowners out of thousands of pounds",
+      "url": "https://www.bbc.co.uk/news/articles/c6x29kydnzv0o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 11, 2026",
-      "description": "A flash flood at the Budhi Gandaki River has swept away several buildings and bridges, two months after catastrophic floods hit the country."
+      "description": "One in 10 scams reported to Citizens Advice relate to fraudsters charging for work not done, or done badly."
     },
     {
-      "title": "Why have hundreds of 'cockroach' protesters been detained in Delhi",
-      "url": "https://www.bbc.co.uk/news/videos/cqwy7p2y20gxo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 10, 2026",
-      "description": "Thousands of security personnel were deployed in Delhi ahead of the Gen-Z led Cockroach Janta Party protest on Saturday calling for electoral reforms."
-    },
-    {
-      "title": "Watch: 'Time for Ukraine to get a new president', says Trump",
-      "url": "https://www.bbc.co.uk/news/videos/cwkg50dgpml7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 10, 2026",
-      "description": "The US president's said President Volodymyr Zelensky \"wants to make problems for the world\"."
-    },
-    {
-      "title": "BBC breaks down video of the aftermath of New York City ICE shooting",
-      "url": "https://www.bbc.co.uk/news/videos/cm36905w7zl4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "The BBC's Nada Tawfik goes through new dramatic body cam footage that shows the tense moments when police arrive on scene."
-    },
-    {
-      "title": "How the trial of murdered Australian brothers and US friend unfolded",
-      "url": "https://www.bbc.co.uk/news/videos/cr86z34vz95yo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 10, 2026",
-      "description": "The mother of two Australian surfers murdered in Mexico two years ago with their American friend said \"accountability matters\"."
-    },
-    {
-      "title": "Thai Queen makes first solo flight in fighter jet",
-      "url": "https://www.bbc.co.uk/news/videos/cqm263x40y37o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "Thailand’s Queen Suthida made her first solo flight in a fighter jet, according to the Thai Royal Household."
+      "title": "AI is less regulated than milk, says Microsoft president",
+      "url": "https://www.bbc.co.uk/news/articles/c6rmy7zmvx3lo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 12, 2026",
+      "description": "Brad Smith calls for global rules on AI, and says the UK is in the \"best position\" to lead the charge."
     },
     {
       "title": "Citroen revives the 2CV for an electric age",
       "url": "https://www.bbc.co.uk/news/articles/c620r33plgppo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 11, 2026",
       "description": "The French firm is reinventing the classic model as carmakers come under pressure from Chinese rivals."
+    },
+    {
+      "title": "HMV to close Oxford Street store after three years",
+      "url": "https://www.bbc.co.uk/news/articles/cjzxl7ee4e9xo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 12, 2026",
+      "description": "HMV says it is looking for a new site in London's West End, but its current site is \"unviable\"."
+    },
+    {
+      "title": "Why some have no choice but to pay costly oil prices",
+      "url": "https://www.bbc.co.uk/news/articles/cqgm09xvlvjeo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 12, 2026",
+      "description": "The rural communities vulnerable to heating oil prices rises as the weather gets colder."
     },
     {
       "title": "Boots has a new owner: Three ways it could affect you",
@@ -3421,114 +3586,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c6j9k1l72wkgo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 9, 2026",
       "description": "The firm said users can no longer engage in \"sustained and needless\" abusive behaviour towards the tech."
-    },
-    {
-      "title": "Trump wants to reduce the cost of fuel as the midterms loom - will it work?",
-      "url": "https://www.bbc.co.uk/news/articles/cv2d6x749lwro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "The price of fuel has soared as the cost of living emerges as a key issue for millions of Americans."
-    },
-    {
-      "title": "'Add me on WhatsApp' scam calls to be investigated",
-      "url": "https://www.bbc.co.uk/news/articles/cqd09g4l2k9yo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "The UK's data watchdog is investigating a spike in complaints about \"robo calls\" that appear to lead to a recruitment scam."
-    },
-    {
-      "title": "Fired OpenAI researchers say they were let go for 'prioritising safety'",
-      "url": "https://www.bbc.co.uk/news/articles/cvlydn8d3lkjo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "The AI firm instead claims the researchers were fired for mishandling sensitive information."
-    },
-    {
-      "title": "White House blocks Microsoft from foreign worker hiring programme",
-      "url": "https://www.bbc.co.uk/news/articles/ck5yngl2y4gpo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "An international visa programme has for years allowed US tech companies to hire highly skilled workers from abroad."
-    },
-    {
-      "title": "Mark Zuckerberg has an image problem - so why is Meta's business booming?",
-      "url": "https://www.bbc.co.uk/news/articles/cq8rzjv8g7ejo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "A new film paints the Meta founder as a villain. But the tech firm seems immune to bad publicity, writes our North America tech correspondent."
-    },
-    {
-      "title": "'You cannot build this car anywhere else in the world'",
-      "url": "https://www.bbc.co.uk/news/articles/cmx2q7rlxxw8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "Car maker Longbow, which hopes to build thousands of cars, says the region has the talent and know-how."
-    },
-    {
-      "title": "Everton owners consider selling club two years after takeover",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cmvg9pgg4keyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "Everton owners the Friedkin Group are exploring the sale of the club less than two years after taking control."
-    },
-    {
-      "title": "Nvidia-backed data centre firm scraps IPO as AI valuation concerns deepen",
-      "url": "https://www.bbc.co.uk/news/articles/ck9dzpw4ll8po?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "Firmus said it had made the decision due to \"recent market volatility and prevailing market conditions\"."
-    },
-    {
-      "title": "Adidas sues Australian label White Fox over four stripes design",
-      "url": "https://www.bbc.co.uk/news/articles/c9e8ld448km8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "The German sportswear brand wants the Sydney-based label to stop selling the clothes and pay damages."
-    },
-    {
-      "title": "Asos hackers took more personal details than first revealed, BBC finds",
-      "url": "https://www.bbc.co.uk/news/articles/c3zxjdw5ywgpo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "Retailer issues update after BBC contacted by cyber criminals who said this week's breach went beyond \"basic contact details\""
-    },
-    {
-      "title": "Plans to shut Marston's Brewery in Burton revealed",
-      "url": "https://www.bbc.co.uk/news/articles/ck8dzq095lj3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "Burton-upon-Trent's links with beer and brewing date back centuries."
-    },
-    {
-      "title": "We spent thousands on a Tui river cruise but ended up on coach trips",
-      "url": "https://www.bbc.co.uk/news/articles/cq62j2lzlnm8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "Passengers have described their anger after their itineraries changed to involve hours spent on coach trips instead."
-    },
-    {
-      "title": "Chrysler Building to get its crown restored after being sold",
-      "url": "https://www.bbc.co.uk/news/articles/c8g47z3r4dzvo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "The distinctive Manhattan skyscraper will undergo a major renovation and provide a new supply of offices."
-    },
-    {
-      "title": "'Come all the way' back to EU, French finance minister tells UK",
-      "url": "https://www.bbc.co.uk/news/articles/cqdjvg3xww2go?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "Roland Lescure tells the BBC that being in the bloc enables members to better address the challenges facing the world."
-    },
-    {
-      "title": "'Stop throwing shade' - the woman trying to stop firms leaving the UK",
-      "url": "https://www.bbc.co.uk/news/articles/cmgqwydpd4xwo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 7, 2026",
-      "description": "British people need more incentives to invest in big firms listed in the UK, Dame Julia Hoggett, boss of the London Stock Exchange, says."
-    },
-    {
-      "title": "The wildlife winners set to appear on your banknotes revealed",
-      "url": "https://www.bbc.co.uk/news/articles/cwe8ld517ry3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 7, 2026",
-      "description": "The decision comes after nearly half a million people voted on a shortlist of 18 creatures."
-    },
-    {
-      "title": "Bid to run new trains on West Coast Mainline refused",
-      "url": "https://www.bbc.co.uk/news/articles/cm3wve9l057vo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "Plans for more trains would “likely increase delays and cancelled trains\", the rail regulator says."
-    },
-    {
-      "title": "Derry firm becomes one of UK's biggest car park operators after buying NCP",
-      "url": "https://www.bbc.co.uk/news/articles/c693z8dz1kq4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "The Martin Group has become one of the UK's biggest car park operators after buying NCP out of administration."
     },
     {
       "title": "Why are more roofs not made of solar tiles?",
@@ -3591,28 +3648,28 @@
       "description": "Nvidia, OpenAI and Anthropic are all now selling their own limited edition fashion lines."
     },
     {
+      "title": "How to avoid getting stung if you miss credit card payments",
+      "url": "https://www.bbc.co.uk/news/articles/c84g1xz1l9ddo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 12, 2026",
+      "description": "People are increasingly falling behind on credit card repayments, so here's the best way to get debt advice."
+    },
+    {
+      "title": "Campaigners claim minister attempting to undermine 'Holiday Hunger Bill'",
+      "url": "https://www.bbc.co.uk/news/articles/crkg78q7yz41o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 12, 2026",
+      "description": "The education minister has warned it would immediately cost his department £20m a year at a time when it is already struggling to balance its budget."
+    },
+    {
+      "title": "Why some have no choice but to pay costly oil prices",
+      "url": "https://www.bbc.co.uk/news/articles/cqgm09xvlvjeo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 12, 2026",
+      "description": "The rural communities vulnerable to heating oil prices rises as the weather gets colder."
+    },
+    {
       "title": "Charities and businesses wrestle with diesel cost",
       "url": "https://www.bbc.co.uk/news/articles/c5x2vn4dzz08o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 11, 2026",
       "description": "Cancer charity Daft as a Brush and Teesside Minibus Hire say they are struggling with pump prices."
-    },
-    {
-      "title": "Trump wants to reduce the cost of fuel as the midterms loom - will it work?",
-      "url": "https://www.bbc.co.uk/news/articles/cv2d6x749lwro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "The price of fuel has soared as the cost of living emerges as a key issue for millions of Americans."
-    },
-    {
-      "title": "I've been with my boyfriend for two years and don't know his salary",
-      "url": "https://www.bbc.co.uk/news/articles/c8wyz69r0nnpo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "Talking about salary, spending habits and debt can be some of dating's trickier conversations."
-    },
-    {
-      "title": "Contribution of high value residents discussed",
-      "url": "https://www.bbc.co.uk/news/articles/c6ly0vxd2v9eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 9, 2026",
-      "description": "More than 260 industry leaders met to discuss the role wealthy residents play in Jersey's economy."
     },
     {
       "title": "My hometown shows that high streets have to change or die",
@@ -3675,130 +3732,136 @@
       "description": "The Vaping Product Duty will be imposed at a rate of £2.20 per 10ml of e-liquid from April 2027."
     },
     {
-      "title": "Waves crash into homes as excavators try to protect California properties",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/waves-crash-into-homes-as-excavators-try-to-protect-california-properties?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Construction crews were seen trying to block waves entering homes along California's coast"
+      "title": "Nobel economics prize awarded to Robert Hall and Michael ⁠Woodford",
+      "url": "https://www.aljazeera.com/news/2026/10/12/nobel-economics-prize-awarded-to-robert-hall-and-michael-%e2%81%a0woodford?traffic_source=rss",
+      "date": "October 12, 2026",
+      "description": "The Swedish academy says the academics' models are 'now used by central banks and ​governments around the world'."
     },
     {
-      "title": "UK Greens leader seeks rule change after party declares Zionism is racism",
-      "url": "https://www.aljazeera.com/news/2026/10/11/uk-greens-leader-seeks-rule-change-after-party-declares-zionism-is-racism?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Zack Polanski calls for internal rule reforms to give party leaders greater control over policy after Zionism vote."
+      "title": "Trump thinks Ukraine needs a new president. Who could replace Zelenskyy?",
+      "url": "https://www.aljazeera.com/news/2026/10/12/trump-thinks-ukraine-needs-a-new-president-who-could-replace-zelenskyy?traffic_source=rss",
+      "date": "October 12, 2026",
+      "description": "Popular former general Zaluzhnyi leads potential challengers, alongside intelligence chief Budanov and reformer Fedorov."
     },
     {
-      "title": "Two killed near Israeli-occupied area in south Lebanon",
-      "url": "https://www.aljazeera.com/news/2026/10/11/two-killed-near-israeli-occupied-area-in-south-lebanon?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Despite ceasefire reached between Israel and Lebanon in June, Israeli attacks continue."
+      "title": "Which banners did Liverpool fans display at Anfield against Man City?",
+      "url": "https://www.aljazeera.com/sports/2026/10/12/which-banners-did-liverpool-fans-display-at-anfield-against-man-city?traffic_source=rss",
+      "date": "October 12, 2026",
+      "description": "From creative wordplay on song lyrics to simply calling Man City 'cheats', the Reds fans went all out at Anfield."
     },
     {
-      "title": "Deadly air strike kills dozens at Sudan gold mine near Egypt border",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/deadly-air-strike-kills-dozens-at-sudan-gold-mine-near-egypt-border?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "An air strike hit a gold mine near Sudan’s border with Egypt, killing at least 72 people and injuring more than 50."
+      "title": "Far right surges as crises threaten Sanchez: Could Vox lead Spain?",
+      "url": "https://www.aljazeera.com/news/2026/10/12/far-right-surges-as-crises-threaten-sanchez-could-vox-lead-spain?traffic_source=rss",
+      "date": "October 12, 2026",
+      "description": "Snap vote could bring PP, Vox to power as polls show falling support for Sanchez, one of Europe's last leftist leaders."
     },
     {
-      "title": "How Man City beat Liverpool after guilty verdict",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/how-man-city-beat-liverpool-after-guilty-verdict?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Al Jazeera’s Rahul Pathak was at Anfield, where fans reminded City of their guilty verdict after the match."
+      "title": "Gaza: Still Reporting",
+      "url": "https://www.aljazeera.com/video/witness/2026/10/12/gaza-still-reporting?traffic_source=rss",
+      "date": "October 12, 2026",
+      "description": "When Israel orders an evacuation of Gaza City, a journalist documents the displacement while living it with her family."
     },
     {
-      "title": "Pakistan suspends Imran Khan’s party-led provincial government",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/pakistan-suspends-imran-khans-party-led-provincial-government?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Pakistan has suspended Khyber Pakhtunkhwa's PTI-led government after declaring a state of emergency in the province."
+      "title": "Azerbaijan’s school hijab ban: What’s behind it, and what’s next?",
+      "url": "https://www.aljazeera.com/news/2026/10/12/azerbaijans-school-hijab-ban-whats-behind-it-and-whats-next?traffic_source=rss",
+      "date": "October 12, 2026",
+      "description": "Protests have broken out as some schools begin preventing students and teachers from attending classes."
     },
     {
-      "title": "Saudi health minister visits survivors of deadly Riyadh airport attack",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/saudi-health-minister-visits-survivors-of-deadly-riyadh-airport-attack?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Saudi Arabia’s health minister Fahad Aljalajel has paid a visit to survivors of Saturday’s deadly attack."
+      "title": "Giants Brigades lead southern Yemen fightback against the Houthis",
+      "url": "https://www.aljazeera.com/news/2026/10/12/giants-brigades-leads-southern-yemen-fightback-against-the-houthis?traffic_source=rss",
+      "date": "October 12, 2026",
+      "description": "Yemen's Southern Giants Brigades have emerged as one of the leading forces against the Houthis."
     },
     {
-      "title": "Mexican president urges residents to shelter as Hurricane Simon approaches",
-      "url": "https://www.aljazeera.com/news/2026/10/11/mexican-president-urges-residents-to-shelter-as-hurricane-simon-approaches?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "The Mexican community of Cabo Corrientes faces the risk of a direct hit as the Category 4 storm churns off Jalisco."
+      "title": "Saudi Arabia vows resilience as Houthi strikes hit Riyadh airport",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/12/saudi-arabia-vows-resilience-as-houthi-strikes-hit-riyadh-airport?traffic_source=rss",
+      "date": "October 12, 2026",
+      "description": "New footage shows a Houthi strike on Riyadh’s airport as Saudi Arabia reaffirms its resilience."
     },
     {
-      "title": "Jerusalem Daily: Panicked Palestinians flee Israeli attacks on Gaza",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/jerusalem-daily-panicked-palestinians-flee-israeli-attacks-on-gaza?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Jerusalem Daily: Panicked Palestinians flee Israeli attacks on Gaza"
+      "title": "What we learned from ‘guilty’ Man City’s win over Liverpool at Anfield",
+      "url": "https://www.aljazeera.com/sports/2026/10/12/manchester-city-guilty-verdict-financial-charges-liverpool-anfield?traffic_source=rss",
+      "date": "October 12, 2026",
+      "description": "City beat Reds despite a hostile Anfield reception, but Premier League season still hangs in the balance."
     },
     {
-      "title": "Lebanon’s first electric train hopes to revive railway system",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/lebanons-first-electric-train-hopes-to-revive-railway-system?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "A new solar-powered model train has returned to a section of Lebanon’s historic railway."
+      "title": "Melbourne man ‘strongly rejects’ links to flydubai attack suspect",
+      "url": "https://www.aljazeera.com/news/2026/10/12/melbourne-man-linked-to-flydubai-attack-suspect-rejects-false-accusations?traffic_source=rss",
+      "date": "October 12, 2026",
+      "description": "Samir Mohtadi \"strongly rejects\" any attempt to associate him or Islamic centre in Melbourne with the alleged attacker."
     },
     {
-      "title": "Liverpool fans give Manchester City a fiery welcome at Anfield",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/liverpool-fans-give-manchester-city-a-fiery-welcome-at-anfield?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "'Cheats cheats cheats' This is how Liverpool fans greeted Manchester City as they arrived at Anfield"
+      "title": "Indian YouTuber Dhruv Rathee alleges abduction ahead of Delhi protests",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/12/10-12-dhruv-rathee-india-protests-sv?traffic_source=rss",
+      "date": "October 12, 2026",
+      "description": "Indian YouTube star Dhruv Rathee alleges he was abducted from home and held for nearly 24 hours without a lawyer."
     },
     {
-      "title": "Man City beat 10-man Liverpool 3-0 in first game after guilty verdict",
-      "url": "https://www.aljazeera.com/sports/2026/10/11/man-city-beat-10-man-liverpool-3-0-in-first-game-after-guilty-verdict?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Erling Haaland, Jeremy Doku and Rayan Cherki score second half goals after Ryan Gravenberch sent off."
+      "title": "Maps show how Israel’s ‘Yellow Line’ keeps squeezing Palestinians in Gaza",
+      "url": "https://www.aljazeera.com/news/2026/10/12/maps-show-how-israels-yellow-line-keeps-squeezing-palestinians-in-gaza?traffic_source=rss",
+      "date": "October 12, 2026",
+      "description": "A year into a 'ceasefire', Israel restricts access to 65 percent of Gaza and crams 2.1 million people into the rest."
     },
     {
-      "title": "Is the Yemen war entering a new phase?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/is-the-yemen-war-entering-a-new-phase?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Saudi Arabia has accused Yemen’s Houthis of killing 12 people and injuring 300 in Saturday's attack on King Khalid Inter"
+      "title": "Delhi braces for more protests against election chief amid crackdown",
+      "url": "https://www.aljazeera.com/features/2026/10/12/delhi-braces-for-more-protests-against-election-chief-amid-crackdown?traffic_source=rss",
+      "date": "October 12, 2026",
+      "description": "Opposition parties joined by student groups are back on the streets, disrupting New Delhi with flash marches."
     },
     {
-      "title": "Israel pushes its ‘Yellow Line’ deeper into Gaza",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/israel-pushes-its-yellow-line-deeper-into-gaza?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Israel pushes its ‘Yellow Line’ deeper into Gaza"
+      "title": "What do emergency and governor rule in Pakistan’s Khyber Pakhtunkhwa mean?",
+      "url": "https://www.aljazeera.com/news/2026/10/12/what-do-emergency-and-governor-rule-in-pakistans-khyber-pakhtunkhwa-mean?traffic_source=rss",
+      "date": "October 12, 2026",
+      "description": "Pakistan has taken control of a province governed by Imran Khan’s PTI. Here's what the move means and what happens next."
     },
     {
-      "title": "‘Who will represent us?’ Palestinians react to election delay",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/who-will-represent-us-palestinians-react-to-election-delay?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Palestinians have reacted to President Mahmoud Abbas’ decision to postpone the Palestinian legislative elections."
+      "title": "Photos: Gaza mothers endure endless lines as famine fears persist",
+      "url": "https://www.aljazeera.com/gallery/2026/10/12/photos-gaza-mothers-endure-endless-lines-as-famine-fears-persist?traffic_source=rss",
+      "date": "October 12, 2026",
+      "description": "Hunger grips Gaza, with over 1.4 million people acutely short of food as aid remains insufficient to meet basic needs."
     },
     {
-      "title": "Turkiye highway crash kills 11, injures 27 after tour bus hits truck",
-      "url": "https://www.aljazeera.com/news/2026/10/11/turkiye-highway-crash-kills-11-injures-27-after-tour-bus-hits-truck?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Police detain tour bus driver after highway collision in western Turkiye leaves 11 dead and 27 injured."
+      "title": "Steve Smith breaks Test fielding record as Australia dominate South Africa",
+      "url": "https://www.aljazeera.com/sports/2026/10/12/steve-smith-breaks-test-fielding-record-as-australia-dominate-south-africa?traffic_source=rss",
+      "date": "October 12, 2026",
+      "description": "Smith moves to 223 career catches, a record for fielders, as Australia bowl out South Africa for 284 in reply to 390."
     },
     {
-      "title": "Football fans speak about City’s charges as they face Liverpool",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/football-fans-speak-about-citys-charges-as-they-face-liverpool?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Fans have been speaking to Al Jazeera as Liverpool face Manchester City at Anfield."
+      "title": "India opposition plans New Delhi protest to demand election chief resign",
+      "url": "https://www.aljazeera.com/news/2026/10/12/india-opposition-plans-new-delhi-protest-to-demand-election-chief-resign?traffic_source=rss",
+      "date": "October 12, 2026",
+      "description": "Thousands of security personnel have been deployed before a protest rally calling for the election chief's removal."
     },
     {
-      "title": "At least five people missing as flash floods in Nepal sweep away houses",
-      "url": "https://www.aljazeera.com/news/2026/10/11/at-least-five-people-missing-as-flash-floods-in-nepal-sweep-away-houses?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Authorities urge villagers to move to safer places after a river in the central part of the country bursts its banks."
+      "title": "Alvarez vs M’billi boxing bout to go ahead despite Saudi airport attacks",
+      "url": "https://www.aljazeera.com/sports/2026/10/12/alvarez-vs-mbilli-boxing-bout-to-go-ahead-in-saudi-arabia-despite-attacks?traffic_source=rss",
+      "date": "October 12, 2026",
+      "description": "Mexican boxer tells Turki Al-Sheikh he 'fears nothing' and will face M'billi in Riyadh on October 31 'no matter what'."
     },
     {
-      "title": "Tour bus crash in Turkiye leaves at least 11 dead",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/tour-bus-crash-in-turkiye-leaves-at-least-11-dead?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "At least eleven people have been killed and 27 injured after a tour bus collided with a truck near a motorway entrance"
+      "title": "If Netanyahu goes, does anything really change for Palestinians?",
+      "url": "https://www.aljazeera.com/news/2026/10/12/if-netanyahu-goes-does-anything-really-change-for-palestinians?traffic_source=rss",
+      "date": "October 12, 2026",
+      "description": "Analysts say opposition win in polls may bring only marginal change and no fundamental shift on Gaza, West Bank."
     },
     {
-      "title": "Power bank fire forces plane to emergency land in India",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/power-bank-fire-forces-plane-to-emergency-land-in-india?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "A plane flying from Delhi to Chennai made an emergency landing after a power bank reportedly caught fire on board."
+      "title": "India opposition march live: Rally to Supreme Court against election chief",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/10/12/india-protest-live-opposition-to-march-to-supreme-court-over-vote-theft?traffic_source=rss",
+      "date": "October 12, 2026",
+      "description": "Main opposition Congress party leads rally to the top court to demand the removal of the chief election commissioner."
     },
     {
-      "title": "Pope Leo XIV to undergo surgery after lump found in lung",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/pope-leo-xiv-to-undergo-surgery-after-lump-found-in-lung?traffic_source=rss",
-      "date": "October 11, 2026",
-      "description": "Pope Leo XIV has announced that he will undergo surgery this week, to remove a nodule in his lung."
+      "title": "Countries warn against travel to Saudi Arabia following Houthi attacks",
+      "url": "https://www.aljazeera.com/economy/2026/10/12/countries-warn-against-travel-to-saudi-arabia-following-houthi-attacks?traffic_source=rss",
+      "date": "October 12, 2026",
+      "description": "US, Australia, Canada, Japan, South Korea and New Zealand among countries urging citizens to avoid travel to the kingdom."
+    },
+    {
+      "title": "Clashes reported in Yemen as Houthis advance towards Taiz",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/12/clashes-reported-in-yemen-as-houthis-advance-towards-taiz?traffic_source=rss",
+      "date": "October 12, 2026",
+      "description": "Heavy clashes have been reported between Houthi fighters and Yemeni- forces near the strategic southern city of Taiz."
     }
   ]
 }
