@@ -103,8 +103,14 @@ export async function GET(req: NextRequest) {
     programName: prog.name,
     url: prog.url,
     checkedAt: cache.updatedAt,
+    status: scraped.status ?? "active",
+    statusLabel: scraped.statusLabel ?? "Active",
+    statusReason: scraped.statusReason ?? "",
+    inactiveDate: scraped.inactiveDate ?? "",
+    statusSourceUrl: scraped.statusSourceUrl ?? "",
     executiveOrders: scraped.executiveOrders ?? [],
     generalLicenses: scraped.generalLicenses ?? [],
     cached: true,
   });
 }
+

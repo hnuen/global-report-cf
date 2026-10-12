@@ -1,3 +1,5 @@
+import { classifyOfacProgramStatus, reconcileRemovedOfacPrograms } from "./ofac-program-status.mjs";
+
 /**
  * refresh-briefing.mjs
  * Runs from GitHub Actions — no CF 30s wall-clock limit here.
@@ -189,7 +191,7 @@ function parseSanctionsProgram(html) {
 }
 
 // 4. Parse programs index — extract all program slugs, names, URLs, lastUpdated dates
-function parseProgramsIndex(html) {
+export function parseProgramsIndex(html) {
   const programs = [];
   const rowRe = /<tr[^>]*>([\s\S]*?)<\/tr>/gi;
   let rm;
@@ -213,11 +215,16 @@ function parseProgramsIndex(html) {
     const slug = progMatch[2];
     if (['where-is-ofac', 'archive', 'information'].some(s => slug.includes(s))) continue;
     const dateMatch = /href="(?:https:\/\/ofac\.treasury\.gov)?\/recent-actions\/\d{8}[^"]*"[^>]*>([\s\S]{0,300}?)<\/a>/i.exec(rowHtml);
+    const rowText = stripHtml(rowHtml).replace(/\s+/g, " ").trim();
+    const classified = classifyOfacProgramStatus(rowText);
     programs.push({
       slug,
       name: stripHtml(progMatch[3]).trim(),
       url: `https://ofac.treasury.gov${progMatch[1]}`,
       lastUpdated: dateMatch ? stripHtml(dateMatch[1]).trim() : "",
+      status: classified.status,
+      statusLabel: classified.statusLabel,
+      statusReason: classified.status === "inactive" ? rowText : "",
     });
   }
   return programs;
@@ -716,7 +723,8 @@ const FORCE_ALL = process.env.FORCE_RESCRAPE_ALL === "1";
 const changedPrograms = FORCE_ALL
   ? [...programsList]
   : programsList.filter(p =>
-      p.lastUpdated && p.lastUpdated !== (cachedPrograms[p.slug]?.lastUpdated ?? "")
+      (p.lastUpdated && p.lastUpdated !== (cachedPrograms[p.slug]?.lastUpdated ?? "")) ||
+      p.status !== (cachedPrograms[p.slug]?.status ?? "active")
     ).slice(0, 50);
 
 if (FORCE_ALL) console.log(`[refresh-briefing] FORCE_RESCRAPE_ALL — re-scraping all ${changedPrograms.length} programs (one-time PDF backfill)`);
@@ -769,6 +777,33 @@ if (forcedCount > 0) {
 
 // Fetch and parse each changed program, carry over unchanged from existing cache
 const programs = { ...cachedPrograms };
+// Program status is authoritative index metadata. Reconcile it on every
+// successful index fetch, even when a program page itself did not change.
+// This prevents a removed/archived OFAC program from staying active forever
+// merely because its cached EO/GL collection is still present.
+for (const prog of programsList) {
+  const cached = programs[prog.slug] ?? {};
+  programs[prog.slug] = {
+    ...cached,
+    name: prog.name || cached.name,
+    url: prog.url || cached.url,
+    lastUpdated: prog.lastUpdated || cached.lastUpdated || "",
+    status: prog.status,
+    statusLabel: prog.statusLabel,
+    statusReason: prog.statusReason,
+    statusSourceUrl: "https://ofac.treasury.gov/sanctions-programs-and-country-information",
+  };
+}
+// The current OFAC index contains active programs only. When a previously
+// cached program disappears from a healthy, complete index response, retain
+// its historical data but mark it inactive. The minimum-count guard prevents
+// a partial/blocked response from mass-deactivating the library.
+const inactiveDate = new Date().toLocaleDateString("en-US", {
+  month: "long", day: "numeric", year: "numeric", timeZone: "America/New_York",
+});
+for (const slug of reconcileRemovedOfacPrograms(programs, programsList, inactiveDate)) {
+  console.log(`[refresh-briefing] Program removed from active index; marking inactive: ${slug}`);
+}
 // Bounds worst-case PDF-fetch time across this whole run (8-min Actions
 // timeout) — shared budget across all changed programs, not per-program.
 // Raise the per-run PDF-fetch budget for a forced full backfill (needs to reach
@@ -830,6 +865,10 @@ for (const prog of changedPrograms) {
     name: prog.name,
     url: prog.url,
     lastUpdated: prog.lastUpdated,
+    status: prog.status,
+    statusLabel: prog.statusLabel,
+    statusReason: prog.statusReason,
+    statusSourceUrl: "https://ofac.treasury.gov/sanctions-programs-and-country-information",
     executiveOrders: parsed.executiveOrders,
     frNotices: parsed.frNotices,
     generalLicenses: parsed.generalLicenses,
@@ -2252,3 +2291,4 @@ if (Array.isArray(briefing.articles)) {
 }
 
 await saveBriefingWithRetry(briefing);
+

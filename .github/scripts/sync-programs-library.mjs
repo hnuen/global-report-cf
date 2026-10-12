@@ -340,14 +340,52 @@ function crossProgramMismatch(glTitle, ownMeta, allMetas) {
 }
 
 // ── Tier 1: sync GL / EO entries for one block against scraped program data ─
+export function syncProgramStatus(blockText, scraped) {
+  const desired = ["active", "residual", "inactive"].includes(scraped?.status)
+    ? scraped.status
+    : null;
+  if (!desired) return { text: blockText, changed: false };
+
+  let text = blockText;
+  const current = /status:\s*"(active|residual|inactive)"/.exec(text)?.[1];
+  if (current !== desired) {
+    text = text.replace(/status:\s*"(active|residual|inactive)"/, `status: "${desired}"`);
+  }
+
+  if (desired === "inactive") {
+    const date = esc(scraped.inactiveDate || scraped.lastUpdated || today());
+    const reason = esc(scraped.statusReason || "OFAC lists this program as inactive and archived.");
+    const source = esc(scraped.statusSourceUrl || "https://ofac.treasury.gov/sanctions-programs-and-country-information");
+    if (/inactiveDate:\s*"[^\"]*"/.test(text)) text = text.replace(/inactiveDate:\s*"[^\"]*"/, `inactiveDate: "${date}"`);
+    else text = text.replace(/status:\s*"inactive",?/, `status: "inactive",\n    inactiveDate: "${date}",`);
+    if (/inactiveReason:\s*"[^\"]*"/.test(text)) text = text.replace(/inactiveReason:\s*"[^\"]*"/, `inactiveReason: "${reason}"`);
+    else text = text.replace(/inactiveDate:\s*"[^\"]*"/, `$&,\n    inactiveReason: "${reason}"`);
+    if (/statusSourceUrl:\s*"[^\"]*"/.test(text)) text = text.replace(/statusSourceUrl:\s*"[^\"]*"/, `statusSourceUrl: "${source}"`);
+    else text = text.replace(/inactiveReason:\s*"[^\"]*"/, `$&,\n    statusSourceUrl: "${source}"`);
+  }
+
+  return { text, changed: text !== blockText };
+}
+
 function syncBlockEntries(blockText, scraped, log, ownMeta, allMetas) {
   const notes = [];
   if (!scraped) return { text: blockText, changed: false, notes };
 
+  const statusResult = syncProgramStatus(blockText, scraped);
+  blockText = statusResult.text;
+  if (statusResult.changed) notes.push(`Program status changed to ${scraped.status}`);
+  // Keep the historical authorities in the source for auditability, but do
+  // not add new "active" EO/GL entries once OFAC has archived the program.
+  // The UI and active-license helpers suppress all entries for inactive
+  // programs at the program level.
+  if (scraped.status === "inactive") {
+    return { text: blockText, changed: statusResult.changed, notes };
+  }
+
   const { beforeArchive, archiveText, afterArchive } = splitArchive(blockText);
   let before = beforeArchive;
   let archive = archiveText; // string or null — never reassign null → non-null (no archive creation)
-  let changed = false;
+  let changed = statusResult.changed;
 
   // ---- General Licenses (with supersession-aware archiving) ----
   const activeGL = findArray(before, "generalLicenses");
@@ -753,3 +791,4 @@ export async function syncProgramsLibrary({ programs, recentActions, githubToken
 
   return { changed: true, summary };
 }
+

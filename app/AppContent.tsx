@@ -1152,8 +1152,8 @@ export default function GlobalMonitor() {
       {section==="sanctions" && ofacProgram && (()=>{
         const prog=SANCTIONS_PROGRAMS.find(p=>p.id===ofacProgram);
         if(!prog) return null;
-        const activeGLs=prog.generalLicenses||[];
-        const activeEOs=prog.executiveOrders||[];
+        const activeGLs=prog.status==="inactive"?[]:(prog.generalLicenses||[]);
+        const activeEOs=prog.status==="inactive"?[]:(prog.executiveOrders||[]);
         return (
           <div style={{background:"#f9fafb",borderBottom:"2px solid #111",padding:"10px 12px"}}>
             {/* Selector row */}
@@ -1161,15 +1161,16 @@ export default function GlobalMonitor() {
               <select value={ofacProgram} onChange={e=>{const id=e.target.value;setOfacProgram(id);setOfacProgramUpdate(null);setOfacDiff(null);setOfacOverride(null);loadOfacOverride(id);}}
                 style={{fontFamily:"var(--mono)",fontSize:".58rem",padding:"3px 5px",border:"1px solid #d1d5db",borderRadius:3,background:"#fff",flex:1,minWidth:0}}>
                 <optgroup label="Country Programs">
-                  {SANCTIONS_PROGRAMS.filter(p=>p.category==="country").map(p=><option key={p.id} value={p.id}>{p.name}</option>)}
+                  {SANCTIONS_PROGRAMS.filter(p=>p.category==="country").map(p=><option key={p.id} value={p.id}>{p.name}{p.status==="inactive"?" (Inactive)":""}</option>)}
                 </optgroup>
                 <optgroup label="Thematic Programs">
-                  {SANCTIONS_PROGRAMS.filter(p=>p.category==="thematic").map(p=><option key={p.id} value={p.id}>{p.name}</option>)}
+                  {SANCTIONS_PROGRAMS.filter(p=>p.category==="thematic").map(p=><option key={p.id} value={p.id}>{p.name}{p.status==="inactive"?" (Inactive)":""}</option>)}
                 </optgroup>
               </select>
-              <span style={{fontFamily:"var(--mono)",fontSize:".5rem",fontWeight:700,padding:"2px 6px",borderRadius:3,background:prog.status==="active"?"#dcfce7":"#f3f4f6",color:prog.status==="active"?"#166534":"#6b7280",flexShrink:0,textTransform:"uppercase"}}>{prog.status}</span>
+              <span style={{fontFamily:"var(--mono)",fontSize:".5rem",fontWeight:700,padding:"2px 6px",borderRadius:3,background:prog.status==="active"?"#dcfce7":prog.status==="inactive"?"#fee2e2":"#f3f4f6",color:prog.status==="active"?"#166534":prog.status==="inactive"?"#991b1b":"#6b7280",flexShrink:0,textTransform:"uppercase"}}>{prog.status}</span>
               <button className="m-btn" onClick={()=>setOfacProgram("")} style={{flexShrink:0}}>✕</button>
             </div>
+            {prog.status==="inactive"&&<div style={{fontFamily:"var(--mono)",fontSize:".55rem",padding:"7px 9px",marginBottom:8,background:"#fff1f2",border:"1px solid #fecdd3",color:"#9f1239"}}>Inactive since {prog.inactiveDate||prog.lastUpdated}. No EOs or licenses from this program are counted as active.</div>}
             {/* Action row */}
             <div style={{display:"flex",gap:6,marginBottom:10,flexWrap:"wrap"}}>
               <a href={prog.url} target="_blank" rel="noopener noreferrer"
@@ -1432,16 +1433,18 @@ export default function GlobalMonitor() {
       {section==="sanctions" && ofacProgram && (()=>{
         const prog=SANCTIONS_PROGRAMS.find(p=>p.id===ofacProgram);
         if(!prog) return null;
+        const isInactive=prog.status==="inactive";
+        const activeEOs=isInactive?[]:prog.executiveOrders;
         return (<div style={{borderBottom:"2px solid #111",background:"#fff",padding:"0 0 0 0"}}>
           <div style={{maxWidth:900,margin:"0 auto",padding:"16px 24px 24px"}}>
             <div className="ofac-prog-header">
               <span style={{fontFamily:"'Playfair Display',serif",fontWeight:700,fontSize:"1.05rem"}}>OFAC Sanctions Programs</span>
               <select className="ofac-prog-select" value={ofacProgram} onChange={e=>{const id=e.target.value;setOfacProgram(id);setOfacProgramUpdate(null);setOfacDiff(null);setOfacOverride(null);loadOfacOverride(id);}}>
                 <optgroup label="Country / Geographic Programs">
-                  {SANCTIONS_PROGRAMS.filter(p=>p.category==="country").map(p=>(<option key={p.id} value={p.id}>{p.name}</option>))}
+                  {SANCTIONS_PROGRAMS.filter(p=>p.category==="country").map(p=>(<option key={p.id} value={p.id}>{p.name}{p.status==="inactive"?" (Inactive)":""}</option>))}
                 </optgroup>
                 <optgroup label="Thematic / Issue-Based Programs">
-                  {SANCTIONS_PROGRAMS.filter(p=>p.category==="thematic").map(p=>(<option key={p.id} value={p.id}>{p.name}</option>))}
+                  {SANCTIONS_PROGRAMS.filter(p=>p.category==="thematic").map(p=>(<option key={p.id} value={p.id}>{p.name}{p.status==="inactive"?" (Inactive)":""}</option>))}
                 </optgroup>
               </select>
               <span className={`ofac-prog-badge ${prog.status}`}>{prog.status.toUpperCase()}</span>
@@ -1457,6 +1460,9 @@ export default function GlobalMonitor() {
               </div>
             </div>
             {prog.notes && <div className="ofac-prog-note">note: {prog.notes}</div>}
+            {isInactive && <div className="ofac-prog-note" style={{borderColor:"#fda4af",background:"#fff1f2",color:"#9f1239"}}>
+              <strong>Inactive and archived.</strong> {prog.inactiveReason||"OFAC no longer lists this as an active sanctions program."} No EOs or general licenses below are treated as active. {prog.statusSourceUrl&&<a href={prog.statusSourceUrl} target="_blank" rel="noopener noreferrer" style={{marginLeft:6,color:"#9f1239"}}>OFAC status notice</a>}
+            </div>}
 
             {ofacDiff && !ofacDiff.error && !ofacDiff.blocked && (()=>{
               // ofacDiff.executiveOrders/generalLicenses are now full {number,title,date,url}
@@ -1526,12 +1532,12 @@ export default function GlobalMonitor() {
             <div className="ofac-prog-panel">
               <div className="ofac-prog-section">
                 <div className="ofac-prog-section-title">Executive Orders
-                  <span style={{background:"#111",color:"#fff",fontFamily:"var(--mono)",fontSize:".55rem",padding:"2px 7px",borderRadius:"10px",fontWeight:600}}>{prog.executiveOrders.length} Active</span>
+                  <span style={{background:isInactive?"#9ca3af":"#111",color:"#fff",fontFamily:"var(--mono)",fontSize:".55rem",padding:"2px 7px",borderRadius:"10px",fontWeight:600}}>{activeEOs.length} Active</span>
                 </div>
-                {prog.executiveOrders.length===0
-                  ?<div className="ofac-prog-empty">No executive orders - statute-based program.</div>
+                {activeEOs.length===0
+                  ?<div className="ofac-prog-empty">{isInactive?"No active executive orders — program is inactive and archived.":"No executive orders - statute-based program."}</div>
                   :<table className="ofac-prog-table"><thead><tr><th>EO Number</th><th>Title</th><th>Date</th><th>Document</th></tr></thead><tbody>
-                    {[...prog.executiveOrders].sort((a,b)=>parseDate(b.date)-parseDate(a.date)).map((eo,i)=>(
+                    {[...activeEOs].sort((a,b)=>parseDate(b.date)-parseDate(a.date)).map((eo,i)=>(
                       <tr key={i}><td>EO {eo.number}</td><td>{eo.title}</td><td>{eo.date}</td>
                         <td>{eo.url?<a href={eo.url} target="_blank" rel="noopener" style={{display:"inline-flex",alignItems:"center",gap:"4px",fontFamily:"var(--mono)",fontSize:".62rem",color:"#fff",background:"#111",padding:"3px 8px",borderRadius:"3px",textDecoration:"none"}}>View PDF</a>:<span style={{color:"#d1d5db"}}>-</span>}</td>
                       </tr>
@@ -1549,7 +1555,7 @@ export default function GlobalMonitor() {
                 const now = Date.now();
                 const isPastExpiry = (gl: typeof prog.generalLicenses[number]) =>
                   !!gl.expires && parseDate(gl.expires) < now;
-                const liveGLs = prog.generalLicenses.filter(gl => !isPastExpiry(gl));
+                const liveGLs = isInactive ? [] : prog.generalLicenses.filter(gl => !isPastExpiry(gl));
                 const autoExpiredGLs = prog.generalLicenses.filter(isPastExpiry);
                 return (
                   <>
@@ -1898,3 +1904,4 @@ export default function GlobalMonitor() {
     </div></>
   );
 }
+

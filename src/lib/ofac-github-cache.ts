@@ -36,6 +36,11 @@ export interface ProgramData {
   name: string;
   url: string;
   lastUpdated: string;
+  status?: "active" | "residual" | "inactive";
+  statusLabel?: string;
+  statusReason?: string;
+  inactiveDate?: string;
+  statusSourceUrl?: string;
   executiveOrders: ProgramEO[];
   frNotices: ProgramFRNotice[];
   generalLicenses: ProgramGL[];
@@ -505,3 +510,4 @@ export function programsToArticles(
 
   return articles;
 }
+

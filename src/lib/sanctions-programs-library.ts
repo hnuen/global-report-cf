@@ -39,7 +39,10 @@ export interface SanctionsProgram {
   category: "country" | "thematic";
   lastUpdated: string;
   lastChecked?: string;     // when ⟳ Check for Updates was last run
-  status: "active" | "residual";
+  status: "active" | "residual" | "inactive";
+  inactiveDate?: string;
+  inactiveReason?: string;
+  statusSourceUrl?: string;
   executiveOrders: SanctionsItem[];
   generalLicenses: SanctionsItem[];
   keyAdvisories?: SanctionsItem[];
@@ -233,16 +236,20 @@ export const SANCTIONS_PROGRAMS: SanctionsProgram[] = [
     id: "ethiopia",
     name: "Ethiopia-Related Sanctions",
     url: "https://ofac.treasury.gov/sanctions-programs-and-country-information/ethiopia",
-    region: "MEA", category: "country", lastUpdated: "Feb 8, 2022", status: "active",
-    executiveOrders: [
-      { number: "14046", title: "Imposing Sanctions on Certain Persons With Respect to the Humanitarian and Human Rights Crisis in Ethiopia", date: "September 17, 2021", url: "https://ofac.treasury.gov/media/913011/download?inline" },
-    ],
+    region: "MEA", category: "country", lastUpdated: "Sep 18, 2026", status: "inactive",
+    inactiveDate: "September 18, 2026",
+    inactiveReason: "The national emergency declared in Executive Order 14046 expired; OFAC removed the Ethiopia-related SDN entries and archived the program.",
+    statusSourceUrl: "https://ofac.treasury.gov/recent-actions/20260918",
+    executiveOrders: [],
     generalLicenses: [
       // Corrected 2026-06-26: confirmed via OFAC's live Ethiopia page that
       // none of GL 1/2/3 are listed as active general licenses anymore —
       // see archive block below for why (codified into 31 CFR Part 550).
     ],
     archive: {
+      executiveOrders: [
+        { number: "14046", title: "Imposing Sanctions on Certain Persons With Respect to the Humanitarian and Human Rights Crisis in Ethiopia", date: "September 17, 2021", url: "https://ofac.treasury.gov/media/913011/download?inline", archived: true, archivedDate: "September 18, 2026", archivedNote: "Program inactive after the national emergency expired" },
+      ],
       generalLicenses: [
         // Moved here 2026-06-26. Titles/dates/urls verified against OFAC
         // recent-actions/20210917 (original issuance notice, all three
@@ -1270,7 +1277,7 @@ export function getProgramsByRegion(region: string): SanctionsProgram[] {
 
 // Helper: get all active general licenses across all programs
 export function getAllActiveGeneralLicenses() {
-  return SANCTIONS_PROGRAMS.flatMap(p =>
+  return SANCTIONS_PROGRAMS.filter(p => p.status !== "inactive").flatMap(p =>
     p.generalLicenses.map(gl => ({ ...gl, program: p.name, programId: p.id, region: p.region }))
   );
 }
@@ -1284,3 +1291,4 @@ export function getRecentlyUpdatedPrograms(days = 90): SanctionsProgram[] {
     return !isNaN(d.getTime()) && d >= cutoff;
   });
 }
+
