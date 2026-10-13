@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-13T13:08:22.582Z",
+  "updatedAt": "2026-10-13T15:08:11.149Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261013",
+      "code": "20261013",
+      "title": "Counter Narcotics and Counter Terrorism Designations",
+      "date": "October 13, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261009",
       "code": "20261009",
@@ -54,12 +60,6 @@
       "code": "20260929_33",
       "title": "Publication of Regulatory Amendments; Publication of Cuba Sanctions Regulations; Issuance of New and Amended Cuba-related Frequently Asked Questions; Publication of Cuba-related OFAC Alert",
       "date": "September 29, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260928",
-      "code": "20260928",
-      "title": "Issuance of Amended Venezuela General Licenses",
-      "date": "September 28, 2026"
     }
   ],
   "civilPenalties": [
@@ -407,7 +407,11 @@
     "counter-narcotics-trafficking-sanctions": {
       "name": "Counter Narcotics Trafficking Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-narcotics-trafficking-sanctions",
-      "lastUpdated": "Oct 05, 2026",
+      "lastUpdated": "Oct 13, 2026",
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -449,16 +453,16 @@
           "glNumbers": []
         }
       ],
-      "generalLicenses": [],
-      "status": "active",
-      "statusLabel": "Active",
-      "statusReason": "",
-      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
+      "generalLicenses": []
     },
     "counter-terrorism-sanctions": {
       "name": "Counter Terrorism Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-terrorism-sanctions",
-      "lastUpdated": "Oct 05, 2026",
+      "lastUpdated": "Oct 13, 2026",
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -711,20 +715,8 @@
           "url": "https://ofac.treasury.gov/media/934056/download?inline",
           "datePdf": true,
           "dateConfident": true
-        },
-        {
-          "number": "134C",
-          "title": "Russia-related General License 134C",
-          "date": "May 18, 2026",
-          "expires": "June 17, 2026",
-          "url": "https://ofac.treasury.gov/media/935641/download?inline",
-          "datePdf": true
         }
-      ],
-      "status": "active",
-      "statusLabel": "Active",
-      "statusReason": "",
-      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
+      ]
     },
     "countering-americas-adversaries-through-sanctions-act-related-sanctions": {
       "name": "Countering America's Adversaries Through Sanctions Act-Related Sanctions",
@@ -800,21 +792,19 @@
       "generalLicenses": [
         {
           "number": "1",
-          "title": "Transactions Authorized Pursuant to the Cuban Assets Control Regulations",
+          "title": "Cuba General License 1",
           "date": "May 7, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935571/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "4A",
-          "title": "Authorizing Transactions for Third-Country Diplomatic and Consular Missions in Cuba",
+          "title": "Cuba General License 4A",
           "date": "July 23, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936871/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         }
       ]
     },
@@ -1130,33 +1120,35 @@
       "executiveOrders": [],
       "frNotices": [
         {
-          "citation": "91 FR 61759-26",
-          "description": "Iranian Transactions and Sanctions Regulations 91 FR 61758-26 - Publication of Iran-Related Web General Licenses X and X1 91 FR 60304-26 - Publication of Iran-Related Web General Licenses Y and Z 91 FR 57795-26 - Publication of Iran-Related Web General Licenses CC and DD 91 FR 57511-26 - Iranian Tra",
+          "citation": "91 FR 64758-26",
+          "description": "Publication of an Iran-Related Determination 91 FR 61759-26 - Iranian Transactions and Sanctions Regulations 91 FR 61758-26 - Publication of Iran-Related Web General Licenses X and X1 91 FR 60304-26 - Publication of Iran-Related Web General Licenses Y and Z 91 FR 57795-26 - Publication of Iran-Relat",
           "year": "2026",
           "glNumbers": []
         },
         {
-          "citation": "91 FR 55265-26",
-          "description": "Publication of a Determination Issued Pursuant to Executive Order 13902. 91 FR 55265-26 - Publication of Iran-Related Web General Licenses AA and BB 91 FR 54957-26 - Amended Iranian Transactions and Sanctions Regulations 91 FR 35141-26 - Publication of Iran-Related Web General Licenses U and V 91 FR",
+          "citation": "91 FR 57511-26",
+          "description": "Iranian Transactions and Sanctions Regulations: Final Rule for General License Stay of Effectiveness 91 FR 55265-26 - Publication of a Determination Issued Pursuant to Executive Order 13902. 91 FR 55265-26 - Publication of Iran-Related Web General Licenses AA and BB 91 FR 54957-26 - Amended Iranian",
           "year": "2026",
           "glNumbers": []
         },
         {
-          "citation": "90 FR 47230-25",
-          "description": "Publication of Iranian Transactions and Sanctions Regulations Web General License R 90 FR 47229-25 - Publication of an Iran-Related Determination 90 FR 43559-25 - Publication of Iranian Transactions and Sanctions Regulations Web General License Q 89 FR 91262-24 - Publication of an Iran-Related Deter",
+          "citation": "91 FR 35141-26",
+          "description": "Publication of Iran-Related Web General Licenses U and V 91 FR 24722-26 - Iranian Transactions and Sanctions Regulations Web General Licenses 90 FR 47230-25 - Publication of Iranian Transactions and Sanctions Regulations Web General License R 90 FR 47229-25 - Publication of an Iran-Related Determina",
+          "year": "2026",
+          "glNumbers": [
+            "90"
+          ]
+        },
+        {
+          "citation": "90 FR 43559-25",
+          "description": "Publication of Iranian Transactions and Sanctions Regulations Web General License Q 89 FR 91262-24 - Publication of an Iran-Related Determination 89 FR 91261-24 - Publication of Covid-Related Web General License Related to Iranian Transactions and Sanctions Regulations and Global Terrorism Sanctions",
           "year": "2025",
           "glNumbers": []
         },
         {
-          "citation": "89 FR 91261-24",
-          "description": "Publication of Covid-Related Web General License Related to Iranian Transactions and Sanctions Regulations and Global Terrorism Sanctions Regulations 89 FR 43512-24 - Publication of the List of Services, Software, and Hardware Incident to Communications 89 FR 43311-24 - Final Rule Amending the Irani",
+          "citation": "89 FR 43512-24",
+          "description": "Publication of the List of Services, Software, and Hardware Incident to Communications 89 FR 43311-24 - Final Rule Amending the Iranian Transactions and Sanctions Regulations 88 FR 46688-23 - Publication of Iranian Transactions and Sanctions Regulations Web General License P 88 FR 45816-23 - Publica",
           "year": "2024",
-          "glNumbers": []
-        },
-        {
-          "citation": "88 FR 46688-23",
-          "description": "Publication of Iranian Transactions and Sanctions Regulations Web General License P 88 FR 45816-23 - Publication of Covid-Related Web General Licenses Related to Syria Sanctions Regulations, Iranian Transactions and Sanctions Regulations, Global Terrorism Sanctions Regulations, and Venezuela Sanctio",
-          "year": "2023",
           "glNumbers": []
         },
         {
@@ -1266,8 +1258,7 @@
           "date": "August 24, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7961/download?inline",
-          "datePdf": true,
-          "dateConfident": false
+          "datePdf": true
         },
         {
           "number": "G",
@@ -1275,8 +1266,7 @@
           "date": "August 24, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7966/download?inline",
-          "datePdf": true,
-          "dateConfident": false
+          "datePdf": true
         },
         {
           "number": "J-1",
@@ -1284,8 +1274,7 @@
           "date": "July 29, 2016",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7971/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "L",
@@ -1293,17 +1282,15 @@
           "date": "October 8, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48626/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "8A",
-          "title": "Authorizing Certain Humanitarian Trade Transactions Involving the Central Bank of Iran or the National Iranian Oil Company",
+          "title": "Iran General License 8A",
           "date": "February 27, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48841/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "Q",
@@ -1311,8 +1298,7 @@
           "date": "May 20, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934291/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "T",
@@ -2521,30 +2507,27 @@
         },
         {
           "number": "24",
-          "title": "Transactions Related to the Provision of Maritime Services",
+          "title": "Ukraine General License 24",
           "date": "March 18, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919801/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "25",
-          "title": "Journalistic Activities and Establishment of News Bureaus in Certain Regions of Ukraine",
+          "title": "Ukraine General License 25",
           "date": "March 24, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/920276/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "26A",
-          "title": "Transactions Authorized Pursuant to the Russian Harmful Foreign Activities Sanctions Regulations",
+          "title": "Ukraine General License 26A",
           "date": "January 10, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/933911/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "135",
@@ -3176,6 +3159,12 @@
   ],
   "europaNews": [
     {
+      "title": "EU adopts largest-ever package of listings against Russia",
+      "url": "https://finance.ec.europa.eu/news/eu-adopts-largest-ever-package-listings-against-russia-2026-10-12_en",
+      "date": "October 13, 2026",
+      "description": "The package targets almost 1600 individuals and entities in Russia’s military‑industrial complex."
+    },
+    {
       "title": "EU adopts 21st package of sanctions against Russia",
       "url": "https://finance.ec.europa.eu/news/eu-adopts-21st-package-sanctions-against-russia-2026-07-23_en",
       "date": "September 10, 2026",
@@ -3210,12 +3199,6 @@
       "url": "https://finance.ec.europa.eu/news/new-dynamic-mechanism-lower-price-cap-russian-crude-oil-4410-barrel-2026-01-15_en",
       "date": "January 30, 2026",
       "description": "Today, the new automatic and dynamic mechanism for price adaptation of the oil price cap for Russian crude will be applied for the first time."
-    },
-    {
-      "title": "Sanctions: Member States designate 41 additional vessels in Russia's shadow fleet",
-      "url": "https://ec.europa.eu/commission/presscorner/detail/en/mex_25_3129",
-      "date": "December 18, 2025",
-      "description": "With these new listings, a total of 597 vessels are now listed by the EU."
     }
   ],
   "unNotices": [],
@@ -3230,7 +3213,7 @@
       "title": "Bulgaria summons Russian ambassador after ship sinks in Black Sea drone attack",
       "url": "https://www.bbc.co.uk/news/articles/cmn06w5x9g25o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 13, 2026",
-      "description": "Eleven crew members are missing after a merchant ship was sunk overnight, local officials say."
+      "description": "Six crew members are rescued but 10 are missing after a merchant ship was sunk overnight, Bulgaria says."
     },
     {
       "title": "Six Ukrainian energy sites hit by Russia since Trump announced ceasefire, Zelensky says",
@@ -3245,22 +3228,10 @@
       "description": "Backdated paperwork also made the Russian oligarch’s yachts and mansions disappear from accounts, investigation finds."
     },
     {
-      "title": "US detains man accused in multi-billion Venezuelan money laundering scheme",
-      "url": "https://www.bbc.co.uk/news/articles/crp3gy0x0dd1o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 12, 2026",
-      "description": "US officials had been offering a reward of $10m (£7.5m) for information leading to Álvaro Pulido's arrest."
-    },
-    {
-      "title": "Trump faces growing backlash over plans to import diesel from Russia",
-      "url": "https://www.bbc.co.uk/news/articles/cjn5v21py07vo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 11, 2026",
-      "description": "Both Republican and Democratic lawmakers have criticised the deal, which was announced weeks before the US midterm elections."
-    },
-    {
-      "title": "Why Moscow is staying tight-lipped on Trump's energy ceasefire",
-      "url": "https://www.bbc.co.uk/news/articles/cjx2359qekrdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 12, 2026",
-      "description": "While Ukraine's Volodymyr Zelensky suggests he would sign up to a ceasefire on energy infrastructure, Russia has said little."
+      "title": "Is Zelensky right to say data centre strikes have taken down Russian bots?",
+      "url": "https://www.bbc.co.uk/news/articles/c9y7l0pm8jkko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 13, 2026",
+      "description": "Experts say there is no evidence that Russian trolls have been affected by Ukraine’s Yandex attacks."
     },
     {
       "title": "Why is it so hard to fight the Houthis?",
@@ -3281,7 +3252,20 @@
       "description": "Both Republican and Democratic lawmakers have criticised the deal, which was announced weeks before the US midterm elections."
     }
   ],
-  "ajNews": [],
+  "ajNews": [
+    {
+      "title": "Iran sees ‘false flag’ operations after UK blames IRGC for airbase incident",
+      "url": "https://www.aljazeera.com/news/2026/10/13/iran-sees-false-flag-operations-after-uk-blames-irgc-for-airbase-incident?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Iran has been accused of being behind a plot against an airbase in the UK."
+    },
+    {
+      "title": "Iran threatens Gulf data centres: How exposed is the region’s internet?",
+      "url": "https://www.aljazeera.com/news/2026/10/13/iran-threatens-gulf-data-centres-how-exposed-is-the-regions-internet?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Iran has warned that cables and data centres in the region could be attacked, as Houthi allies hold internet chokepoint."
+    }
+  ],
   "occNews": [
     {
       "title": "OCC Assesses $350 Million Civil Money Penalty Against American Express",
@@ -3395,10 +3379,16 @@
       "description": "Aerial footage at the park after the incident shows a stuck rollercoaster with riders being helped off."
     },
     {
-      "title": "US emergency call records reveal confusion after failed execution of Christa Pike",
-      "url": "https://www.bbc.co.uk/news/articles/ck1exg6qjdz3o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Watch: Emergency calls from botched Christa Pike execution released",
+      "url": "https://www.bbc.co.uk/news/videos/cqpvgrkp0xpyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 13, 2026",
-      "description": "The killer of Colleen Slemmer was ultimately taken to hospital after two doses of lethal injection did not kill her."
+      "description": "A series of calls, obtained by the Associated Press, reveal emergency services were delayed in reaching Pike."
+    },
+    {
+      "title": "Hungarian MPs scrap Orbán's anti-LGBTQ measures",
+      "url": "https://www.bbc.co.uk/news/articles/c6vg9nj4l322o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 13, 2026",
+      "description": "LGBTQ and human rights activists warmly welcomed the move, but call for changes to other Orbán-era laws."
     },
     {
       "title": "Super El Niño sets another record as it strengthens to 'unprecedented levels'",
@@ -3437,78 +3427,6 @@
       "description": "Omar, an outspoken Trump critic, said the search was \"an attempt to target political enemies\" and she \"will not be silenced\"."
     },
     {
-      "title": "Dating app Bumble in $1bn takeover talks, say reports",
-      "url": "https://www.bbc.co.uk/news/articles/cm9qzwjgnjxlo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 13, 2026",
-      "description": "The dating app which recently ditched its \"women-first\" chat rule could be bought by an investment firm."
-    },
-    {
-      "title": "Qantas flight grounded after bedbug outbreak",
-      "url": "https://www.bbc.co.uk/news/articles/cr62yzypnw7no?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 12, 2026",
-      "description": "The flight from Italy to Australia was cancelled after passengers on the plane's previous journey complained of bug bites."
-    },
-    {
-      "title": "Saudi minister vows 'serious response' to Houthi attacks on airports",
-      "url": "https://www.bbc.co.uk/news/articles/cjly0zqq27e4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 13, 2026",
-      "description": "It comes after the armed group hit Riyadh's international airport and another facility, killing 13 people, in a significant escalation."
-    },
-    {
-      "title": "Fridges in French supermarkets hit by cyber attack",
-      "url": "https://www.bbc.co.uk/news/articles/crq5nzxv9q4yo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 12, 2026",
-      "description": "Hundreds of stores were targeted by the overnight hack, which spoiled fresh and frozen food estimated to be worth millions of euros."
-    },
-    {
-      "title": "Tom Cruise film Digger forecast to become one of Hollywood's biggest flops",
-      "url": "https://www.bbc.co.uk/news/articles/cke8re5v1pgmo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 12, 2026",
-      "description": "The film dropped by around 60% in its second weekend, and could become one of Hollywood's biggest flops."
-    },
-    {
-      "title": "Thousands march to Indian Supreme Court to demand election chief resign",
-      "url": "https://www.bbc.co.uk/news/articles/cwr5y2lgr4gdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 12, 2026",
-      "description": "The march follows a chaotic weekend in Delhi which saw thousands of protesters detained by police."
-    },
-    {
-      "title": "Pupil arrested after two teachers shot at French school",
-      "url": "https://www.bbc.co.uk/news/articles/cm2keg7910gvo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 12, 2026",
-      "description": "A 14-year-old was detained after the middle-school principal and teacher were injured."
-    },
-    {
-      "title": "Mourners killed by Kenya police at ex-PM's national farewell not part of violence, BBC finds",
-      "url": "https://www.bbc.co.uk/news/articles/c962y4ld1d7do?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 11, 2026",
-      "description": "After analysing 1,500 videos and images of the Raila Odinga memorial, Africa Eye finds that those killed were far from the scuffles."
-    },
-    {
-      "title": "Women's billion-dollar boom leaves players behind, says Fifpro",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cmd7qn1g0xrxo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 12, 2026",
-      "description": "Women's football is on course to become a billion-dollar industry, but many professional players are still earning low wages, working on insecure contracts and experiencing rising psychological stress, a Fifpro survey indicates."
-    },
-    {
-      "title": "Poland detains man suspected of planning assassination of PM Tusk",
-      "url": "https://www.bbc.co.uk/news/articles/c6n9rvynl5p5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 11, 2026",
-      "description": "Police received credible information about possible attacks against Donald Tusk and his defence minister."
-    },
-    {
-      "title": "Poland stabbings driven by online glorification of violence, Tusk says",
-      "url": "https://www.bbc.co.uk/news/articles/ckp8gyd65z2go?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 11, 2026",
-      "description": "The PM was speaking after violent attacks at Polish schools this week left one dead and others injured."
-    },
-    {
-      "title": "Children among 139 dead after boat capsizes off Djibouti, UN says",
-      "url": "https://www.bbc.co.uk/news/articles/cwy7lxx60dg5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 11, 2026",
-      "description": "The boat was travelling from Djibouti to Yemen with 305 people on board, when it capsized near the port town of Obock on Thursday night."
-    },
-    {
       "title": "The island where locals say data centres are taking their water",
       "url": "https://www.bbc.co.uk/news/articles/cqj6j7wlxd5eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 12, 2026",
@@ -3533,40 +3451,16 @@
       "description": "An in-depth look at the key polling, races and issues ahead of an election that will define Trump’s final two years as president."
     },
     {
-      "title": "Analysis: Trump's global headaches worsen weeks before crucial elections",
-      "url": "https://www.bbc.co.uk/news/articles/cqgm087rkze2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 12, 2026",
-      "description": "As election day looms, the president turns his eyes overseas for help with a pressing domestic problem."
-    },
-    {
-      "title": "Why the US is bringing back firing squads",
-      "url": "https://www.bbc.co.uk/news/articles/cmpwg28vrexzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 12, 2026",
-      "description": "The execution of Fort Hood gunman Nidal Hasan would be the first time the US Army had used a firing squad since 1945."
-    },
-    {
-      "title": "American ranchers wrestle with soaring costs - and their loyalty to Trump",
-      "url": "https://www.bbc.co.uk/news/articles/c6d7q5z17gp5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 11, 2026",
-      "description": "Many farmers in states that backed the president say they are being hit from all sides, with the crucial midterm elections just weeks away."
-    },
-    {
       "title": "BBC's Orla Guerin travels with Yemen's southern national security forces through desert battlefield",
       "url": "https://www.bbc.co.uk/news/videos/cqx298yx4k48o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 13, 2026",
       "description": "Orla Guerin travelled through Yemen, with forces loyal to its internationally recognised government, to a remote desert battlefield where Houthi rebels were dislodged just days ago."
     },
     {
-      "title": "Watch: What could Trump's energy ceasefire mean for Ukraine?",
+      "title": "What could Trump's energy ceasefire mean for Ukraine?",
       "url": "https://www.bbc.co.uk/news/videos/crd9321ygqw8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 12, 2026",
       "description": "The BBC's Dan Johnson reports from Kyiv, where Ukrainians face another winter with electricity outages."
-    },
-    {
-      "title": "Watch: CCTV shows people take cover as missile hits Riyadh airport",
-      "url": "https://www.bbc.co.uk/news/videos/cj4g17wz7gv0o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 12, 2026",
-      "description": "Footage from inside the airport shows the moment the strike hit on Saturday."
     },
     {
       "title": "Watch: Endangered orangutans released back into the wild after Borneo fires",
@@ -3579,6 +3473,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cmly05l1g15yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 13, 2026",
       "description": "The influential economics body has upgraded its UK growth forecast for this year, but risks remain."
+    },
+    {
+      "title": "Dating app Bumble bought for $1.3bn",
+      "url": "https://www.bbc.co.uk/news/articles/cm9qzwjgnjxlo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 13, 2026",
+      "description": "The dating app which recently ditched its \"women-first\" chat rule has been bought by an investment firm."
     },
     {
       "title": "Poundland in rescue talks as owners seek buyer",
@@ -3621,12 +3521,6 @@
       "url": "https://www.bbc.co.uk/news/articles/ck5yn0n14r8do?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 12, 2026",
       "description": "Meeting travellers' expectations could be challenging, experts warn."
-    },
-    {
-      "title": "Dating app Bumble in $1bn takeover talks, say reports",
-      "url": "https://www.bbc.co.uk/news/articles/cm9qzwjgnjxlo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 13, 2026",
-      "description": "The dating app which recently ditched its \"women-first\" chat rule could be bought by an investment firm."
     },
     {
       "title": "How to avoid getting stung if you miss credit card payments",
@@ -3821,10 +3715,64 @@
       "description": "Economic conditions around the world are making young people rise up in protest"
     },
     {
-      "title": "How soon into dating do you talk about your salary?",
-      "url": "https://www.bbc.co.uk/news/videos/cry4x353vz2eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "You've met someone and it's going well so far. But bringing up how much you both earn can be a tricky conversation."
+      "title": "Spain’s King Felipe makes first visit to Ceuta amid migrant crisis",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/spains-king-felipe-makes-first-visit-to-ceuta-amid-migrant-crisis?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Spain’s King Felipe is visiting Ceuta for the first time in his reign, amid an ongoing migration crisis there."
+    },
+    {
+      "title": "Why has search of Ilhan Omar’s home before US midterms caused controversy?",
+      "url": "https://www.aljazeera.com/news/2026/10/13/why-has-search-of-ilhan-omars-home-before-us-midterms-caused-controversy?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Federal agents searched Omar's home in what she described as an attempt to 'weaponise federal law enforcement'."
+    },
+    {
+      "title": "Palestinians dream of returning home after Israel raids West Bank camps",
+      "url": "https://www.aljazeera.com/features/2026/10/13/palestinians-dream-of-returning-home-after-israel-raids-west-bank-camps?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Palestinians have been displaced from their homes in Tulkarem refugee camp and dream of returning home."
+    },
+    {
+      "title": "Yemeni government launches air strikes on Houthi positions",
+      "url": "https://www.aljazeera.com/news/2026/10/13/yemeni-government-launches-air-strikes-on-houthi-positions?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Yemeni rights group accuses the Houthis of killing five civilians and injuring more than a dozen others."
+    },
+    {
+      "title": "F1 set to return to Africa for first time in three decades",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/f1-set-to-return-to-africa-for-first-time-in-three-decades?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Formula One has signed a 10-year agreement with Rwanda to bring the sport back to Africa for the first time since 1993."
+    },
+    {
+      "title": "French fridge fright: Why supermarkets have become target for hackers",
+      "url": "https://www.aljazeera.com/economy/2026/10/13/french-fridge-fright-why-supermarkets-have-become-target-for-hackers?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "More than 500 shops across France were hit in a major cyberattack on freezers, which caused tonnes of food to perish."
+    },
+    {
+      "title": "Trump’s diesel deal opens a new rift with Europe over Ukraine",
+      "url": "https://www.aljazeera.com/news/2026/10/13/trumps-diesel-deal-opens-a-new-rift-with-europe-over-ukraine?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Trump calls for Zelenskyy to be replaced, while Europe devotes summit to funding Ukraine."
+    },
+    {
+      "title": "Rwanda to host a Grand Prix in 2030s as Formula One returns to Africa",
+      "url": "https://www.aljazeera.com/sports/2026/10/13/rwanda-to-host-a-grand-prix-in-2030s-as-formula-one-returns-to-africa?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Rwanda has secured a 10-year deal to host F1 races at a purpose-built race track on the outskirts of the capital, Kigali."
+    },
+    {
+      "title": "Deadly Houthi attacks in Yemen’s Taiz as government forces advance in Marib",
+      "url": "https://www.aljazeera.com/news/2026/10/13/deadly-houthi-attacks-in-yemens-taiz-as-government-forces-advance-in-marib?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Government forces engage in intense clashes as Houthi shelling targets residential areas and hospitals in Taiz."
+    },
+    {
+      "title": "Greta Thunberg says French students are being “robbed” amid nationwide prot",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/greta-thunberg-says-french-students-are-being-robbed-amid-nationwide-prot?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Climate activist Greta Thunberg has joined demonstrating high school students in France as protests continue to grow."
     },
     {
       "title": "African Union holds Kigali talks as fighting continues in eastern DRC",
@@ -3833,7 +3781,7 @@
       "description": "Three former African presidents discussed security commitments, refugee protection and regional cooperation."
     },
     {
-      "title": "Australia bowl out South Africa to win first Test in Durban",
+      "title": "Australia bowl out South Africa to win first cricket Test in Durban",
       "url": "https://www.aljazeera.com/sports/2026/10/13/australia-bowl-out-south-africa-to-win-first-test-in-durban?traffic_source=rss",
       "date": "October 13, 2026",
       "description": "Hazlewood's 6-49 ⁠⁠helped the visitors clean up the South African batting, securing the win before tea on day five."
@@ -3903,78 +3851,6 @@
       "url": "https://www.aljazeera.com/video/money-works/2026/10/13/the-monetisation-of-mental-health?traffic_source=rss",
       "date": "October 13, 2026",
       "description": "The monetisation of mental health"
-    },
-    {
-      "title": "Air France says it will follow Israeli rule barring crew from some nations",
-      "url": "https://www.aljazeera.com/features/2026/10/13/air-france-risks-breaking-the-law-by-adopting-israels-nationality-policy?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Reported restrictions could put airlines that comply with Israel at odds with anti-discrimination laws in their nations."
-    },
-    {
-      "title": "Dozens of journalists in India detained while covering anti-gov’t protests",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/dozens-of-journalists-in-india-detained-while-covering-anti-govt-protests?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Police in India detained at least 35 media workers covering protests in New Delhi over a 48-hour period."
-    },
-    {
-      "title": "Qatar’s emir says Palestinian cause remains ‘highest priority’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/qatars-emir-says-palestinian-cause-remains-highest?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "While addressing the Shura Council, Sheikh Tamim bin Hamad Al Thani emphasised the importance of the Palestinian cause."
-    },
-    {
-      "title": "Former DR Congo President Kabila joins M23 rebels in a new coalition",
-      "url": "https://www.aljazeera.com/news/2026/10/13/former-dr-congo-president-kabila-joins-m23-rebels-in-a-new-coalition?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Alliance raises fears of more fighting and confrontation with President Tshisekedi's government."
-    },
-    {
-      "title": "The escalation in Yemen is a turning point",
-      "url": "https://www.aljazeera.com/opinions/2026/10/13/the-escalation-in-yemen-is-a-turning-point?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "The risk of a region-wide war is increasing, but if cooler heads prevail, a peaceful arrangement can still be reached."
-    },
-    {
-      "title": "Police detain leaders of India’s ‘cockroach’ movement at New Delhi protest",
-      "url": "https://www.aljazeera.com/news/2026/10/13/police-detain-leaders-of-indias-cockroach-movement-at-new-delhi-protest?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Cockroach Janta Party volunteers detained after entering a popular protest site authorities had declared off-limits."
-    },
-    {
-      "title": "Ronaldo scores, waves Saudi scarf in Al-Nassr’s win after security delay",
-      "url": "https://www.aljazeera.com/sports/2026/10/13/ronaldo-scores-waves-saudi-scarf-in-al-nassrs-win-after-security-delay?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Al-Nassr's AFC Champions League game in Riyadh was delayed for one hour due to a security warning amid Houthi attacks."
-    },
-    {
-      "title": "Mapping Africa’s energy wealth and 560 million who remain without power",
-      "url": "https://www.aljazeera.com/news/2026/10/13/mapping-africas-energy-wealth-and-560-million-who-remain-without-power?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Africa is rich in energy, yet hundreds of millions Africans still live without electricity, most of the world's total."
-    },
-    {
-      "title": "Emir of Qatar reiterates the need for safety and stability in the region",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/emir-of-qatar-reiterates-the-need-for-safety-and-stability-in-the-region?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Sheikh Tamim bin Hamad Al Thani addresses the Shura Council and emphasises the need for regional stability and safety."
-    },
-    {
-      "title": "Palestine weekly: Gaza marks year of ‘ceasefire’ with more Israeli killing",
-      "url": "https://www.aljazeera.com/news/2026/10/13/palestine-weekly-gaza-marks-year-of-ceasefire-with-more-israeli-killing?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "A year after Gaza's ceasefire, Israeli attacks persist as settler violence disrupts West Bank's oil harvest."
-    },
-    {
-      "title": "Drone attack sinks ship off Bulgaria’s Black Sea coast, PM says",
-      "url": "https://www.aljazeera.com/news/2026/10/13/drone-attack-sinks-ship-off-bulgarias-black-sea-coast-pm-says?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Two ships were hit in the attack, including the Ukrainian-owned Chelsea 3, which sustained damage."
-    },
-    {
-      "title": "Emir says Qatar has shown resilience in the face of ‘exceptional events’",
-      "url": "https://www.aljazeera.com/news/2026/10/13/qatari-emir-says-country-has-faced-exceptional-circumstances?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Sheikh Tamim bin Hamad Al Thani says Qatar's response has highlighted the strength of state institutions."
     }
   ]
 }
