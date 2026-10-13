@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-13T17:08:12.831Z",
+  "updatedAt": "2026-10-13T19:08:13.670Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261013",
@@ -3215,6 +3215,12 @@
   "unNotices": [],
   "bbcNews": [
     {
+      "title": "MI5 chief warns of threats to UK from Russia, Iran and AI",
+      "url": "https://www.bbc.co.uk/news/articles/c60rl5vwpk02o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 13, 2026",
+      "description": "Sir Ken McCallum says operations to tackle terrorism and state threats are now roughly of an \"equal scale\"."
+    },
+    {
       "title": "Russia's offensive ability is broken, Kyiv's former top general tells BBC",
       "url": "https://www.bbc.co.uk/news/articles/c9y7lgg2vdggo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 13, 2026",
@@ -3227,12 +3233,6 @@
       "description": "Six crew members are rescued but 10 are missing after a merchant ship was sunk overnight, Bulgaria says."
     },
     {
-      "title": "Six Ukrainian energy sites hit by Russia since Trump announced ceasefire, Zelensky says",
-      "url": "https://www.bbc.co.uk/news/articles/cvlyd4pdlwkxo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 12, 2026",
-      "description": "Despite the US president announcing energy infrastructure would not be targeted strikes have continued, Ukraine says."
-    },
-    {
       "title": "Documents falsified to evade tax on Abramovich's wealth, BBC finds",
       "url": "https://www.bbc.co.uk/news/articles/c64g1l5389kvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 12, 2026",
@@ -3243,12 +3243,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c9y7l0pm8jkko?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 13, 2026",
       "description": "Experts say there is no evidence that Russian trolls have been affected by Ukraine’s Yandex attacks."
-    },
-    {
-      "title": "Why is it so hard to fight the Houthis?",
-      "url": "https://www.bbc.co.uk/news/videos/cmy56nzd6y69o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 12, 2026",
-      "description": "Security correspondent Frank Gardner explains how the Iran-backed Houthis' precision strikes and guerrilla tactics have made it difficult for Saudi forces to gain the upper hand."
     },
     {
       "title": "Documents falsified to evade tax on Abramovich's wealth, BBC finds",
@@ -3264,6 +3258,24 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Trump says Putin and Zelenskyy both want to end Russia’s war on Ukraine",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/trump-says-putin-and-zelenskyy-both-want-to-end-russias-war-on-ukraine?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Trump says Putin and Zelenskyy both want to end Russia’s war on Ukraine"
+    },
+    {
+      "title": "Why Trump’s ‘energy ceasefire’ upset Europe",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/why-trumps-energy-ceasefire-upset-europe?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "The US and Europe can’t agree on how to end Russia’s war on Ukraine."
+    },
+    {
+      "title": "China sentences three people to death for running Myanmar scam centres",
+      "url": "https://www.aljazeera.com/news/2026/10/13/china-sentences-three-people-to-death-for-running-myanmar-scam-centres?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Dozens more were imprisoned for their involvement in telecommunications fraud, trafficking, prostitution and murder."
+    },
     {
       "title": "UK spy chief says Iran is stepping up targeting of military bases",
       "url": "https://www.aljazeera.com/news/2026/10/13/uk-spy-chief-says-iran-is-stepping-up-targeting-of-military-bases?traffic_source=rss",
@@ -3281,18 +3293,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/13/block-blunt-break-whats-in-natos-new-russia-war-plan?traffic_source=rss",
       "date": "October 13, 2026",
       "description": "NATO's top commander says he is revealing a plan to stop a Russian invasion of Europe."
-    },
-    {
-      "title": "Iran sees ‘false flag’ operations after UK blames IRGC for airbase incident",
-      "url": "https://www.aljazeera.com/news/2026/10/13/iran-sees-false-flag-operations-after-uk-blames-irgc-for-airbase-incident?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Iran has been accused of being behind a plot against an airbase in the UK."
-    },
-    {
-      "title": "Iran threatens Gulf data centres: How exposed is the region’s internet?",
-      "url": "https://www.aljazeera.com/news/2026/10/13/iran-threatens-gulf-data-centres-how-exposed-is-the-regions-internet?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Iran has warned that cables and data centres in the region could be attacked, as Houthi allies hold internet chokepoint."
     }
   ],
   "occNews": [
@@ -3310,6 +3310,13 @@
     }
   ],
   "economicsNews": [
+    {
+      "title": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
+      "date": "October 13, 2026",
+      "description": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
+      "category": "Monetary Policy"
+    },
     {
       "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
@@ -3396,16 +3403,34 @@
   ],
   "regionsNews": [
     {
+      "title": "Saudi coalition strikes fuel depot near Yemen's capital",
+      "url": "https://www.bbc.co.uk/news/articles/crx2d60y1py3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 13, 2026",
+      "description": "The Houthis have warned Saudi Arabia that they will retaliate by targeting the Saudi cities of Riyadh and Dammam."
+    },
+    {
       "title": "Horrified witnesses recount fatal rollercoaster incident at Six Flags",
       "url": "https://www.bbc.co.uk/news/articles/c6n4ejx8x1z7o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 13, 2026",
-      "description": "One person is dead and others were injured after an incident at the amusement park in the US state of Georgia."
+      "description": "Police say preliminary information suggests the man who died at the Georgia amusement park fell from a ride."
     },
     {
-      "title": "Breaking Bad actor RJ Mitte dies aged 34",
-      "url": "https://www.bbc.co.uk/news/articles/cmn045en7d88o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Cornell bans all fraternity parties over gang sex assault allegations",
+      "url": "https://www.bbc.co.uk/news/articles/cw8dzg094zd9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 13, 2026",
-      "description": "Mitte, who lived with cerebral palsy, starred as Walter White Jr in the Emmy-winning drama series."
+      "description": "The school has faced an uproar over how it handled assault allegations brought by a woman known as Jane Doe."
+    },
+    {
+      "title": "Trump ousts Kimberly Guilfoyle as US ambassador to Greece after corruption allegations",
+      "url": "https://www.bbc.co.uk/news/articles/cr5ynplvpg7lo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 13, 2026",
+      "description": "Guilfoyle the allegations of improper conduct are \"false\" and being ambassador was the \"honour of a lifetime\"."
+    },
+    {
+      "title": "Argentina targets UK in legal claim over Falklands oil exploration",
+      "url": "https://www.bbc.co.uk/news/articles/cmp3g14p3z2ko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 13, 2026",
+      "description": "The action filed with an international maritime tribunal is the latest development in an escalating row over the Falkland Islands."
     },
     {
       "title": "Watch: Emergency calls from botched Christa Pike execution released",
@@ -3414,7 +3439,13 @@
       "description": "A series of calls, obtained by the Associated Press, reveal emergency services were delayed in reaching Pike."
     },
     {
-      "title": "Pope admitted to hospital for surgery to remove lump on his lung",
+      "title": "Breaking Bad actor RJ Mitte dies aged 34",
+      "url": "https://www.bbc.co.uk/news/articles/cmn045en7d88o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 13, 2026",
+      "description": "Mitte, who lived with cerebral palsy, starred as Walter White Jr in the Emmy-winning drama series."
+    },
+    {
+      "title": "Pope's surgery to remove lump on lung 'concluded successfully', Vatican says",
       "url": "https://www.bbc.co.uk/news/articles/ck1wvd9dvv22o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 13, 2026",
       "description": "Pope Leo has said the growth is \"contained\" and had been found \"at a very early stage\"."
@@ -3444,30 +3475,6 @@
       "description": "Joseph Kabila had previously denied having links to the M23 rebels, which control much of eastern DR Congo."
     },
     {
-      "title": "India 'cockroach' leaders detained after entering barricaded protest site",
-      "url": "https://www.bbc.co.uk/news/articles/cqz0v11n2vj5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 13, 2026",
-      "description": "Protesters climbed over barricades in central Delhi to demand the election chief resign over revised voter lists."
-    },
-    {
-      "title": "Watch: US man eyes pumpkin world record after fifth contest win",
-      "url": "https://www.bbc.co.uk/news/videos/c80405zkgyqvo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 13, 2026",
-      "description": "Horticulture teacher Travis Gienger hauled his pumpkin from Minnesota to Half Moon Bay, California where he won the annual event."
-    },
-    {
-      "title": "South Africa's deputy police chief resigns after being charged with sexual offences",
-      "url": "https://www.bbc.co.uk/news/articles/c8wy9d940pyko?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 12, 2026",
-      "description": "Shadrack Sibiya had denied grooming a 16-year-old and raping an 18-year-old."
-    },
-    {
-      "title": "Immigration agents search congresswoman Ilhan Omar's home",
-      "url": "https://www.bbc.co.uk/news/articles/cvp8glg97393o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 13, 2026",
-      "description": "Omar, an outspoken Trump critic, said the search was \"an attempt to target political enemies\" and she \"will not be silenced\"."
-    },
-    {
       "title": "The island where locals say data centres are taking their water",
       "url": "https://www.bbc.co.uk/news/articles/cqj6j7wlxd5eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 12, 2026",
@@ -3492,6 +3499,18 @@
       "description": "An in-depth look at the key polling, races and issues ahead of an election that will define Trump’s final two years as president."
     },
     {
+      "title": "Inside Katie Zacharia's very brief White House briefing",
+      "url": "https://www.bbc.co.uk/news/videos/cxm235y4l54lo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 13, 2026",
+      "description": "The BBC's Sarah Smith was in the room and describes Zacharia's performance and the moment she broke news about Kimberly Guilfoyle being asked to resign."
+    },
+    {
+      "title": "'If we don't scream, they won't listen to us': Student protesters speak to BBC in Paris",
+      "url": "https://www.bbc.co.uk/news/videos/ckg5jqg1npd7o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 13, 2026",
+      "description": "Student protesters in France have told the BBC's James Waterhouse that they will continue to take action until change has been made. The protests have now entered their fourth week."
+    },
+    {
       "title": "BBC's Orla Guerin travels with Yemen's southern national security forces through desert battlefield",
       "url": "https://www.bbc.co.uk/news/videos/cqx298yx4k48o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 13, 2026",
@@ -3502,12 +3521,6 @@
       "url": "https://www.bbc.co.uk/news/videos/crd9321ygqw8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 12, 2026",
       "description": "The BBC's Dan Johnson reports from Kyiv, where Ukrainians face another winter with electricity outages."
-    },
-    {
-      "title": "Watch: Endangered orangutans released back into the wild after Borneo fires",
-      "url": "https://www.bbc.co.uk/news/videos/c6073z5rvrk3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 11, 2026",
-      "description": "The critically endangered apes were rescued from intense wildfires that destroyed their habitat in August and September."
     },
     {
       "title": "Three things we've learnt about the UK economy from the IMF",
@@ -3756,6 +3769,66 @@
       "description": "Pete Oliver of DAZN explains why the is a growing number of sports subscriptions and why they are getting more expensive."
     },
     {
+      "title": "Cornell suspends fraternity parties after alleged campus gang rape case",
+      "url": "https://www.aljazeera.com/news/2026/10/13/cornell-suspends-fraternity-parties-after-alleged-campus-gang-rape-case?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Fraternities face immediate emergency suspensions for violations amid sweeping ban tackling parties at US university."
+    },
+    {
+      "title": "Who killed Tupac?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/who-killed-tupac?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "For decades, Tupac Shakur’s murder remained unsolved. Now, Keffe D is being sentenced for his killing."
+    },
+    {
+      "title": "Gaza’s Yellow Line advances, leaving displaced families with nowhere to go",
+      "url": "https://www.aljazeera.com/news/2026/10/13/gazas-yellow-line-advances-leaving-displaced-families-with-nowhere-to-go?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "As Israel moves Gaza’s Yellow Line westward, displaced families in Shujayea face renewed danger."
+    },
+    {
+      "title": "US Supreme Court agrees to hear watchdog case on Elon Musk’s DOGE records",
+      "url": "https://www.aljazeera.com/news/2026/10/13/us-supreme-court-agrees-to-hear-watchdog-case-on-elon-musks-doge-records?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "The Trump administration argues that DOGE is exempt from freedom of information requirements."
+    },
+    {
+      "title": "Presidential hopeful Melenchon joins France school protest march",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/presidential-hopeful-melenchon-joins-france-school-protest-march?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Left-wing presidential hopeful Jean-Luc Melenchon has given his support to school protests in France"
+    },
+    {
+      "title": "Man City charges: Any political interference and I’ll quit, says regulator",
+      "url": "https://www.aljazeera.com/sports/2026/10/13/man-city-charges-any-political-interference-and-ill-quit-says-regulator?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "English football regulator insists there will be no political pressure in Manchester City's appeal over guilty verdict."
+    },
+    {
+      "title": "Man City charges: Ahead of PSG, Dias defends celebrations at Liverpool",
+      "url": "https://www.aljazeera.com/sports/2026/10/13/man-city-charges-ahead-of-psg-dias-defends-celebrations-at-liverpool?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Captain Ruben Dias says the Manchester City players trust the club and celebrations after win at Anfield were justified."
+    },
+    {
+      "title": "Photos: French protests over school conditions swell",
+      "url": "https://www.aljazeera.com/gallery/2026/10/13/photos-french-students-continue-to-protest-over-run-down-schools?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Mass rallies backing high school protests continue across France, piling pressure on President Emmanuel Macron."
+    },
+    {
+      "title": "Cholera cases surge in Yemen as conflict intensifies, WHO says",
+      "url": "https://www.aljazeera.com/news/2026/10/13/cholera-cases-surge-in-yemen-as-conflict-intensifies-who-says?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Yemen has reported 8,034 suspected cases and 27 deaths this year, with a quarter of the total coming in last four weeks."
+    },
+    {
+      "title": "New White House press secretary Katie Zacharia holds first briefing",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/new-white-house-press-secretary-katie-zacharia-holds-first-briefing?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Katie Zacharia has held her first briefing as White House press secretary after replacing Karoline Leavitt."
+    },
+    {
       "title": "Floods submerge cars, homes and hospitals in Libya’s Tripoli",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/floods-submerge-cars-homes-and-hospitals-in-libyas-tripoli?traffic_source=rss",
       "date": "October 13, 2026",
@@ -3792,7 +3865,7 @@
       "description": "Social Democratic leader Magdalena Andersson says 'conditions not in place' to form government, prolonging deadlock."
     },
     {
-      "title": "Houthis threaten Saudi Arabia’s Aramco facilities and airports",
+      "title": "Houthis threaten Saudi Aramco facilities, airports amid escalating conflict",
       "url": "https://www.aljazeera.com/news/2026/10/13/houthis-threaten-saudi-arabias-aramco-facilities-and-airports?traffic_source=rss",
       "date": "October 13, 2026",
       "description": "Explosions in Sanaa reported shortly after Saudi-led coalition's evacuation order as Houthis promise 'harsh' response."
@@ -3808,72 +3881,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/spains-king-felipe-makes-first-visit-to-ceuta-amid-migrant-crisis?traffic_source=rss",
       "date": "October 13, 2026",
       "description": "Spain’s King Felipe is visiting Ceuta for the first time in his reign, amid an ongoing migration crisis there."
-    },
-    {
-      "title": "Why has search of Ilhan Omar’s home before US midterms caused controversy?",
-      "url": "https://www.aljazeera.com/news/2026/10/13/why-has-search-of-ilhan-omars-home-before-us-midterms-caused-controversy?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Federal agents searched Omar's home in what she described as an attempt to 'weaponise federal law enforcement'."
-    },
-    {
-      "title": "Palestinians dream of returning home after Israel raids West Bank camps",
-      "url": "https://www.aljazeera.com/features/2026/10/13/palestinians-dream-of-returning-home-after-israel-raids-west-bank-camps?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Palestinians have been displaced from their homes in Tulkarem refugee camp and dream of returning home."
-    },
-    {
-      "title": "Yemeni government launches air strikes on Houthi positions",
-      "url": "https://www.aljazeera.com/news/2026/10/13/yemeni-government-launches-air-strikes-on-houthi-positions?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Yemeni rights group accuses the Houthis of killing five civilians and injuring more than a dozen others."
-    },
-    {
-      "title": "F1 set to return to Africa for first time in three decades",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/f1-set-to-return-to-africa-for-first-time-in-three-decades?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Formula One has signed a 10-year agreement with Rwanda to bring the sport back to Africa for the first time since 1993."
-    },
-    {
-      "title": "French fridge fright: Why supermarkets have become target for hackers",
-      "url": "https://www.aljazeera.com/economy/2026/10/13/french-fridge-fright-why-supermarkets-have-become-target-for-hackers?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "More than 500 shops across France were hit in a major cyberattack on freezers, which caused tonnes of food to perish."
-    },
-    {
-      "title": "Trump’s diesel deal opens a new rift with Europe over Ukraine",
-      "url": "https://www.aljazeera.com/news/2026/10/13/trumps-diesel-deal-opens-a-new-rift-with-europe-over-ukraine?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Trump calls for Zelenskyy to be replaced, while Europe devotes summit to funding Ukraine."
-    },
-    {
-      "title": "Rwanda to host a Grand Prix in 2030s as Formula One returns to Africa",
-      "url": "https://www.aljazeera.com/sports/2026/10/13/rwanda-to-host-a-grand-prix-in-2030s-as-formula-one-returns-to-africa?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Rwanda has secured a 10-year deal to host F1 races at a purpose-built race track on the outskirts of the capital, Kigali."
-    },
-    {
-      "title": "Deadly Houthi attacks in Yemen’s Taiz as government forces advance in Marib",
-      "url": "https://www.aljazeera.com/news/2026/10/13/deadly-houthi-attacks-in-yemens-taiz-as-government-forces-advance-in-marib?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Government forces engage in intense clashes as Houthi shelling targets residential areas and hospitals in Taiz."
-    },
-    {
-      "title": "Greta Thunberg says French students are being “robbed” amid nationwide prot",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/greta-thunberg-says-french-students-are-being-robbed-amid-nationwide-prot?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Climate activist Greta Thunberg has joined demonstrating high school students in France as protests continue to grow."
-    },
-    {
-      "title": "African Union holds Kigali talks as fighting continues in eastern DRC",
-      "url": "https://www.aljazeera.com/news/2026/10/13/african-union-holds-kigali-talks-as-fighting-continues-in-eastern-drc?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Three former African presidents discussed security commitments, refugee protection and regional cooperation."
-    },
-    {
-      "title": "Australia bowl out South Africa to win first cricket Test in Durban",
-      "url": "https://www.aljazeera.com/sports/2026/10/13/australia-bowl-out-south-africa-to-win-first-test-in-durban?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Hazlewood's 6-49 ⁠⁠helped the visitors clean up the South African batting, securing the win before tea on day five."
     }
   ]
 }
