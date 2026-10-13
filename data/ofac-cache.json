@@ -1,10 +1,16 @@
 {
-  "updatedAt": "2026-10-13T19:08:13.670Z",
+  "updatedAt": "2026-10-13T21:08:14.847Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261013",
       "code": "20261013",
       "title": "Counter Narcotics and Counter Terrorism Designations",
+      "date": "October 13, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261013_33",
+      "code": "20261013_33",
+      "title": "Settlement Agreement between the U.S. Department of the Treasury&#039;s Office of Foreign Assets Control and Bank of America, N.A.",
       "date": "October 13, 2026"
     },
     {
@@ -54,15 +60,16 @@
       "code": "20260929",
       "title": "Counter Narcotics, Counter Terrorism, Iran-related, and Non-Proliferation Designations",
       "date": "September 29, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20260929_33",
-      "code": "20260929_33",
-      "title": "Publication of Regulatory Amendments; Publication of Cuba Sanctions Regulations; Issuance of New and Amended Cuba-related Frequently Asked Questions; Publication of Cuba-related OFAC Alert",
-      "date": "September 29, 2026"
     }
   ],
   "civilPenalties": [
+    {
+      "date": "10/13/2026",
+      "name": "Bank of America, N.A.",
+      "count": "1",
+      "amount": "11,662,930",
+      "pdfUrl": "https://ofac.treasury.gov/media/937231/download?inline"
+    },
     {
       "date": "10/09/2026",
       "name": "Pegasus Worldwide Logistics",
@@ -3259,6 +3266,12 @@
   ],
   "ajNews": [
     {
+      "title": "Russia arrests Japanese reporter for alleged espionage",
+      "url": "https://www.aljazeera.com/news/2026/10/13/russia-arrests-japanese-reporter-for-alleged?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Suspect was arrested on Russia's far-eastern Sakhalin Island before being transferred to Moscow, says Russia's FSB."
+    },
+    {
       "title": "Trump says Putin and Zelenskyy both want to end Russia’s war on Ukraine",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/trump-says-putin-and-zelenskyy-both-want-to-end-russias-war-on-ukraine?traffic_source=rss",
       "date": "October 13, 2026",
@@ -3275,38 +3288,20 @@
       "url": "https://www.aljazeera.com/news/2026/10/13/china-sentences-three-people-to-death-for-running-myanmar-scam-centres?traffic_source=rss",
       "date": "October 13, 2026",
       "description": "Dozens more were imprisoned for their involvement in telecommunications fraud, trafficking, prostitution and murder."
-    },
-    {
-      "title": "UK spy chief says Iran is stepping up targeting of military bases",
-      "url": "https://www.aljazeera.com/news/2026/10/13/uk-spy-chief-says-iran-is-stepping-up-targeting-of-military-bases?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "MI5 chief says 50 arrests were made in past year to disrupt Iran-led operations."
-    },
-    {
-      "title": "France seizes tanker suspected of belonging to Russia’s shadow fleet",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/france-seizes-tanker-suspected-of-belonging-to-russias-shadow-fleet?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "France seizes tanker suspected of belonging to Russia’s shadow fleet"
-    },
-    {
-      "title": "‘Block, blunt, break’: What’s in NATO’s new Russia war plan?",
-      "url": "https://www.aljazeera.com/news/2026/10/13/block-blunt-break-whats-in-natos-new-russia-war-plan?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "NATO's top commander says he is revealing a plan to stop a Russian invasion of Europe."
     }
   ],
   "occNews": [
+    {
+      "title": "OCC Imposes $750 Million Assessment Against Bank of America for Deficient BSA/AML Compliance",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-89.html",
+      "date": "October 13, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today announced a $750 million civil money penalty against Bank of America, N.A. (bank), for violations of the Bank Secrecy Act and its implementing regulations, including 12 CFR 21.21 and 12 CFR 21.11. This amount is the largest in OCC history."
+    },
     {
       "title": "OCC Assesses $350 Million Civil Money Penalty Against American Express",
       "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-87.html",
       "date": "October 8, 2026",
       "description": "The Office of the Comptroller of the Currency (OCC) today announced a cease-and-desist order and a $350 million civil money penalty against American Express National Bank, Sandy, Utah (bank), for deficiencies in the bank's Bank Secrecy Act (BSA) and anti-money laundering (AML) compliance program."
-    },
-    {
-      "title": "OCC Announces Enforcement Actions for September 2026",
-      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-79.html",
-      "date": "September 17, 2026",
-      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for September 2026."
     }
   ],
   "economicsNews": [
@@ -3403,16 +3398,22 @@
   ],
   "regionsNews": [
     {
-      "title": "Saudi coalition strikes fuel depot near Yemen's capital",
-      "url": "https://www.bbc.co.uk/news/articles/crx2d60y1py3o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Pope diagnosed with lung cancer but had successful surgery, Vatican says",
+      "url": "https://www.bbc.co.uk/news/articles/ck1wvd9dvv22o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 13, 2026",
-      "description": "The Houthis have warned Saudi Arabia that they will retaliate by targeting the Saudi cities of Riyadh and Dammam."
+      "description": "Pope Leo had successful surgery to remove a lower lobe of his right lung, the Vatican said."
     },
     {
-      "title": "Horrified witnesses recount fatal rollercoaster incident at Six Flags",
-      "url": "https://www.bbc.co.uk/news/articles/c6n4ejx8x1z7o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Missiles intercepted near Riyadh after Saudi coalition hits Yemen fuel depot",
+      "url": "https://www.bbc.co.uk/news/articles/crx2d60y1py3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 13, 2026",
-      "description": "Police say preliminary information suggests the man who died at the Georgia amusement park fell from a ride."
+      "description": "The Saudi-led coalition fighting in Yemen struck a fuel depot near the Houthi-controlled capital, Sanaa."
+    },
+    {
+      "title": "Ex-gang boss sentenced to 40 years for orchestrating Tupac Shakur's murder",
+      "url": "https://www.bbc.co.uk/news/articles/c60rln2jvv2zo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 13, 2026",
+      "description": "Davis was found guilty last month over his role in the late rap superstar's death in a drive-by shooting in 1996."
     },
     {
       "title": "Cornell bans all fraternity parties over gang sex assault allegations",
@@ -3425,6 +3426,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cr5ynplvpg7lo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 13, 2026",
       "description": "Guilfoyle the allegations of improper conduct are \"false\" and being ambassador was the \"honour of a lifetime\"."
+    },
+    {
+      "title": "Horrified witnesses recount fatal rollercoaster incident at Six Flags",
+      "url": "https://www.bbc.co.uk/news/articles/c6n4ejx8x1z7o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 13, 2026",
+      "description": "Police say preliminary information suggests the man who died at the Georgia amusement park fell from a ride."
     },
     {
       "title": "Argentina targets UK in legal claim over Falklands oil exploration",
@@ -3443,12 +3450,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cmn045en7d88o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 13, 2026",
       "description": "Mitte, who lived with cerebral palsy, starred as Walter White Jr in the Emmy-winning drama series."
-    },
-    {
-      "title": "Pope's surgery to remove lump on lung 'concluded successfully', Vatican says",
-      "url": "https://www.bbc.co.uk/news/articles/ck1wvd9dvv22o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 13, 2026",
-      "description": "Pope Leo has said the growth is \"contained\" and had been found \"at a very early stage\"."
     },
     {
       "title": "BBC FM radio transmissions suspended in Afghanistan",
@@ -3769,6 +3770,66 @@
       "description": "Pete Oliver of DAZN explains why the is a growing number of sports subscriptions and why they are getting more expensive."
     },
     {
+      "title": "Tupac Shakur killer sentenced to 40 years in prison",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/tupac-shakur-killer-sentenced-to-40-years-in-prison?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Duane ‘Keffe D’ Davis was sentenced to 40 years to life in prison over the 1996 murder of rap icon Tupac Shakur."
+    },
+    {
+      "title": "Funeral for Egyptian flight attendant killed in Houthi attack on Riyadh",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/funeral-for-egyptian-flight-attendant-killed-in-houthi-attack-on-riyadh?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Funeral for Egyptian flight attendant killed in Houthi attack on Riyadh"
+    },
+    {
+      "title": "How podcasts became political powerhouses",
+      "url": "https://www.aljazeera.com/video/lets-focus/2026/10/13/how-podcasts-became-political-powerhouses?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Are podcasts remaking politics or just bypassing scrutiny?"
+    },
+    {
+      "title": "Scientists urge tighter AI controls to prevent global cyber risks",
+      "url": "https://www.aljazeera.com/economy/2026/10/13/scientists-urge-tighter-ai-controls-to-prevent-global-cyber-risks?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Call comes amid polls casting doubts on political leaders' ability to manage AI risks as US midterm elections near."
+    },
+    {
+      "title": "Iconic Iguazu Falls walkway dismantled amid record water levels",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/iconic-iguazu-falls-walkway-dismantled-amid-record-water-levels?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "The Devil’s Throat walkway at Iguazu Falls is dismantled as water surged to nearly eight times its average."
+    },
+    {
+      "title": "DR Congo Ebola cases pass 9,000 as efforts to curb transmission falter",
+      "url": "https://www.aljazeera.com/news/2026/10/13/dr-congo-ebola-cases-pass-9000-as-efforts-to-curb-transmission-falter?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "The Bundibugyo strain fuels deadliest Ebola outbreak in DRC’s history as health workers face mistrust from communities."
+    },
+    {
+      "title": "Trump says Houthis trying to increase oil prices before US elections",
+      "url": "https://www.aljazeera.com/news/2026/10/13/trump-says-houthis-trying-to-increase-oil-prices-before-us-elections?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "US president suggests that Yemen-based group are 'purposefully trying to drive up oil prices' before November vote."
+    },
+    {
+      "title": "Will NATO’s ‘theory of victory’ work?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/10/13/will-natos-theory-of-victory-work?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "The alliance presents a common vision to deter adversaries."
+    },
+    {
+      "title": "Eight orangutans find new forest home in Indonesia after wildfire rescue",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/10-13-orangutans-new-home-clip-mp4?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Eight endangered orangutans were released into a protected forest in Indonesia after wildfires destroyed their habitat."
+    },
+    {
+      "title": "EU watchdog urges smart glasses to clearly signal when recording",
+      "url": "https://www.aljazeera.com/news/2026/10/13/eu-watchdog-urges-smart-glasses-to-clearly-signal-when?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Advisory comes amid growing concern about the devices being used to secretly record girls and women."
+    },
+    {
       "title": "Cornell suspends fraternity parties after alleged campus gang rape case",
       "url": "https://www.aljazeera.com/news/2026/10/13/cornell-suspends-fraternity-parties-after-alleged-campus-gang-rape-case?traffic_source=rss",
       "date": "October 13, 2026",
@@ -3778,10 +3839,10 @@
       "title": "Who killed Tupac?",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/who-killed-tupac?traffic_source=rss",
       "date": "October 13, 2026",
-      "description": "For decades, Tupac Shakur’s murder remained unsolved. Now, Keffe D is being sentenced for his killing."
+      "description": "For decades, Tupac Shakur’s murder remained unsolved. Now, Duane Davis has been sentenced 40 years for his killing."
     },
     {
-      "title": "Gaza’s Yellow Line advances, leaving displaced families with nowhere to go",
+      "title": "Israel’s Yellow Line in Gaza advances, leaving displaced with nowhere to go",
       "url": "https://www.aljazeera.com/news/2026/10/13/gazas-yellow-line-advances-leaving-displaced-families-with-nowhere-to-go?traffic_source=rss",
       "date": "October 13, 2026",
       "description": "As Israel moves Gaza’s Yellow Line westward, displaced families in Shujayea face renewed danger."
@@ -3833,54 +3894,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/floods-submerge-cars-homes-and-hospitals-in-libyas-tripoli?traffic_source=rss",
       "date": "October 13, 2026",
       "description": "Heavy rainfall triggered flooding in Libya’s capital, Tripoli, submerging cars, trapping people inside buildings."
-    },
-    {
-      "title": "Jerusalem Daily: Israeli forces raid NGOs in Ramallah",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/jerusalem-daily-israeli-forces-raid-ngos-in-ramallah?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Jerusalem Daily: Israeli forces raid NGOs in Ramallah"
-    },
-    {
-      "title": "Drivers queue for hours in Bali amid fuel shortage",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/drivers-queue-for-hours-in-bali-amid-fuel-shortage?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Drivers in Bali face hours-long queues amid shortages of Indonesia’s subsidised Pertalite fuel."
-    },
-    {
-      "title": "Majority in US say Trump prioritises personal wealth over all else: Poll",
-      "url": "https://www.aljazeera.com/news/2026/10/13/majority-in-us-say-trump-prioritises-personal-wealth-over-all-else-poll?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "A majority of US adults say President Trump and his family have inappropriately profited from presidency."
-    },
-    {
-      "title": "US ambassador to Greece resigns amid misconduct allegations",
-      "url": "https://www.aljazeera.com/news/2026/10/13/trumps-ambassador-to-greece-asked-to-resign-amid-misconduct-allegations?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Kimberly Guilfoyle denies allegations that she offered access to Trump administration officials in exchange for money."
-    },
-    {
-      "title": "Sweden’s centre-left leader fails in second bid to form government",
-      "url": "https://www.aljazeera.com/news/2026/10/13/swedens-centre-left-leader-fails-in-second-bid-to-form-government?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Social Democratic leader Magdalena Andersson says 'conditions not in place' to form government, prolonging deadlock."
-    },
-    {
-      "title": "Houthis threaten Saudi Aramco facilities, airports amid escalating conflict",
-      "url": "https://www.aljazeera.com/news/2026/10/13/houthis-threaten-saudi-arabias-aramco-facilities-and-airports?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Explosions in Sanaa reported shortly after Saudi-led coalition's evacuation order as Houthis promise 'harsh' response."
-    },
-    {
-      "title": "Atletico Madrid vs Manchester United LIVE: Champions League",
-      "url": "https://www.aljazeera.com/sports/liveblog/2026/10/13/atletico-madrid-vs-manchester-united-live-champions-league?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Follow updates from the league stage clash, including the build-up, analysis and live text commentary of the game."
-    },
-    {
-      "title": "Spain’s King Felipe makes first visit to Ceuta amid migrant crisis",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/spains-king-felipe-makes-first-visit-to-ceuta-amid-migrant-crisis?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Spain’s King Felipe is visiting Ceuta for the first time in his reign, amid an ongoing migration crisis there."
     }
   ]
 }
