@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-13T15:08:11.149Z",
+  "updatedAt": "2026-10-13T17:08:12.831Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261013",
@@ -792,19 +792,21 @@
       "generalLicenses": [
         {
           "number": "1",
-          "title": "Cuba General License 1",
+          "title": "Transactions Authorized Pursuant to the Cuban Assets Control Regulations",
           "date": "May 7, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935571/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "4A",
-          "title": "Cuba General License 4A",
+          "title": "Authorizing Transactions for Third-Country Diplomatic and Consular Missions in Cuba",
           "date": "July 23, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936871/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         }
       ]
     },
@@ -1258,7 +1260,8 @@
           "date": "August 24, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7961/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": false
         },
         {
           "number": "G",
@@ -1266,7 +1269,8 @@
           "date": "August 24, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7966/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": false
         },
         {
           "number": "J-1",
@@ -1274,7 +1278,8 @@
           "date": "July 29, 2016",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7971/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "L",
@@ -1282,15 +1287,17 @@
           "date": "October 8, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48626/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "8A",
-          "title": "Iran General License 8A",
+          "title": "Authorizing Certain Humanitarian Trade Transactions Involving the Central Bank of Iran or the National Iranian Oil Company",
           "date": "February 27, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48841/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "Q",
@@ -1298,7 +1305,8 @@
           "date": "May 20, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934291/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "T",
@@ -2507,27 +2515,30 @@
         },
         {
           "number": "24",
-          "title": "Ukraine General License 24",
+          "title": "Transactions Related to the Provision of Maritime Services",
           "date": "March 18, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/919801/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "25",
-          "title": "Ukraine General License 25",
+          "title": "Journalistic Activities and Establishment of News Bureaus in Certain Regions of Ukraine",
           "date": "March 24, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/920276/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "26A",
-          "title": "Ukraine General License 26A",
+          "title": "Transactions Authorized Pursuant to the Russian Harmful Foreign Activities Sanctions Regulations",
           "date": "January 10, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/933911/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "135",
@@ -3254,6 +3265,24 @@
   ],
   "ajNews": [
     {
+      "title": "UK spy chief says Iran is stepping up targeting of military bases",
+      "url": "https://www.aljazeera.com/news/2026/10/13/uk-spy-chief-says-iran-is-stepping-up-targeting-of-military-bases?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "MI5 chief says 50 arrests were made in past year to disrupt Iran-led operations."
+    },
+    {
+      "title": "France seizes tanker suspected of belonging to Russia’s shadow fleet",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/france-seizes-tanker-suspected-of-belonging-to-russias-shadow-fleet?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "France seizes tanker suspected of belonging to Russia’s shadow fleet"
+    },
+    {
+      "title": "‘Block, blunt, break’: What’s in NATO’s new Russia war plan?",
+      "url": "https://www.aljazeera.com/news/2026/10/13/block-blunt-break-whats-in-natos-new-russia-war-plan?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "NATO's top commander says he is revealing a plan to stop a Russian invasion of Europe."
+    },
+    {
       "title": "Iran sees ‘false flag’ operations after UK blames IRGC for airbase incident",
       "url": "https://www.aljazeera.com/news/2026/10/13/iran-sees-false-flag-operations-after-uk-blames-irgc-for-airbase-incident?traffic_source=rss",
       "date": "October 13, 2026",
@@ -3367,22 +3396,34 @@
   ],
   "regionsNews": [
     {
+      "title": "Horrified witnesses recount fatal rollercoaster incident at Six Flags",
+      "url": "https://www.bbc.co.uk/news/articles/c6n4ejx8x1z7o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 13, 2026",
+      "description": "One person is dead and others were injured after an incident at the amusement park in the US state of Georgia."
+    },
+    {
       "title": "Breaking Bad actor RJ Mitte dies aged 34",
       "url": "https://www.bbc.co.uk/news/articles/cmn045en7d88o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 13, 2026",
       "description": "Mitte, who lived with cerebral palsy, starred as Walter White Jr in the Emmy-winning drama series."
     },
     {
-      "title": "One dead and several hurt after rollercoaster incident at Six Flags",
-      "url": "https://www.bbc.co.uk/news/articles/c6n4ejx8x1z7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 13, 2026",
-      "description": "Aerial footage at the park after the incident shows a stuck rollercoaster with riders being helped off."
-    },
-    {
       "title": "Watch: Emergency calls from botched Christa Pike execution released",
       "url": "https://www.bbc.co.uk/news/videos/cqpvgrkp0xpyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 13, 2026",
       "description": "A series of calls, obtained by the Associated Press, reveal emergency services were delayed in reaching Pike."
+    },
+    {
+      "title": "Pope admitted to hospital for surgery to remove lump on his lung",
+      "url": "https://www.bbc.co.uk/news/articles/ck1wvd9dvv22o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 13, 2026",
+      "description": "Pope Leo has said the growth is \"contained\" and had been found \"at a very early stage\"."
+    },
+    {
+      "title": "BBC FM radio transmissions suspended in Afghanistan",
+      "url": "https://www.bbc.co.uk/news/articles/cm8ezp4g7p6po?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 13, 2026",
+      "description": "BBC programming is still reaching audiences on shortwave, medium wave, via satellite and online."
     },
     {
       "title": "Hungarian MPs scrap Orbán's anti-LGBTQ measures",
@@ -3475,7 +3516,7 @@
       "description": "The influential economics body has upgraded its UK growth forecast for this year, but risks remain."
     },
     {
-      "title": "Dating app Bumble bought for $1.3bn",
+      "title": "Bumble bought for $1.3bn in 'bet on the future of humanity'",
       "url": "https://www.bbc.co.uk/news/articles/cm9qzwjgnjxlo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 13, 2026",
       "description": "The dating app which recently ditched its \"women-first\" chat rule has been bought by an investment firm."
@@ -3505,9 +3546,9 @@
       "description": "The prediction from the IMF comes as final preparations are being made for the first Budget under Prime Minister Andy Burnham."
     },
     {
-      "title": "I earn £120,000 a year making social media videos go viral",
+      "title": "The Sabrina Carpenter clip which helped a 22-year-old make £120,000 a year",
       "url": "https://www.bbc.co.uk/news/articles/c84g12v3lk20o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 12, 2026",
+      "date": "October 13, 2026",
       "description": "Social media \"clippers\" make short, vertical videos that appear on the likes of Instagram and TikTok."
     },
     {
@@ -3691,6 +3732,12 @@
       "description": "Many younger people do not believe the state pension will exist when they are older"
     },
     {
+      "title": "NI company in talks to save Poundland from administration",
+      "url": "https://www.bbc.co.uk/news/videos/c962yg36mk66o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 13, 2026",
+      "description": "Poundland says Martin Property Group from Londonderry is the management team's \"preferred partner\""
+    },
+    {
       "title": "What are your rights on auto-renew subscriptions?",
       "url": "https://www.bbc.co.uk/news/videos/c63dj8gx1jkno?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 12, 2026",
@@ -3709,10 +3756,52 @@
       "description": "Pete Oliver of DAZN explains why the is a growing number of sports subscriptions and why they are getting more expensive."
     },
     {
-      "title": "Business Daily",
-      "url": "https://www.bbc.co.uk/sounds/play/w3ct8g9x?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 8, 2026",
-      "description": "Economic conditions around the world are making young people rise up in protest"
+      "title": "Floods submerge cars, homes and hospitals in Libya’s Tripoli",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/floods-submerge-cars-homes-and-hospitals-in-libyas-tripoli?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Heavy rainfall triggered flooding in Libya’s capital, Tripoli, submerging cars, trapping people inside buildings."
+    },
+    {
+      "title": "Jerusalem Daily: Israeli forces raid NGOs in Ramallah",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/jerusalem-daily-israeli-forces-raid-ngos-in-ramallah?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Jerusalem Daily: Israeli forces raid NGOs in Ramallah"
+    },
+    {
+      "title": "Drivers queue for hours in Bali amid fuel shortage",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/drivers-queue-for-hours-in-bali-amid-fuel-shortage?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Drivers in Bali face hours-long queues amid shortages of Indonesia’s subsidised Pertalite fuel."
+    },
+    {
+      "title": "Majority in US say Trump prioritises personal wealth over all else: Poll",
+      "url": "https://www.aljazeera.com/news/2026/10/13/majority-in-us-say-trump-prioritises-personal-wealth-over-all-else-poll?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "A majority of US adults say President Trump and his family have inappropriately profited from presidency."
+    },
+    {
+      "title": "US ambassador to Greece resigns amid misconduct allegations",
+      "url": "https://www.aljazeera.com/news/2026/10/13/trumps-ambassador-to-greece-asked-to-resign-amid-misconduct-allegations?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Kimberly Guilfoyle denies allegations that she offered access to Trump administration officials in exchange for money."
+    },
+    {
+      "title": "Sweden’s centre-left leader fails in second bid to form government",
+      "url": "https://www.aljazeera.com/news/2026/10/13/swedens-centre-left-leader-fails-in-second-bid-to-form-government?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Social Democratic leader Magdalena Andersson says 'conditions not in place' to form government, prolonging deadlock."
+    },
+    {
+      "title": "Houthis threaten Saudi Arabia’s Aramco facilities and airports",
+      "url": "https://www.aljazeera.com/news/2026/10/13/houthis-threaten-saudi-arabias-aramco-facilities-and-airports?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Explosions in Sanaa reported shortly after Saudi-led coalition's evacuation order as Houthis promise 'harsh' response."
+    },
+    {
+      "title": "Atletico Madrid vs Manchester United LIVE: Champions League",
+      "url": "https://www.aljazeera.com/sports/liveblog/2026/10/13/atletico-madrid-vs-manchester-united-live-champions-league?traffic_source=rss",
+      "date": "October 13, 2026",
+      "description": "Follow updates from the league stage clash, including the build-up, analysis and live text commentary of the game."
     },
     {
       "title": "Spain’s King Felipe makes first visit to Ceuta amid migrant crisis",
@@ -3785,72 +3874,6 @@
       "url": "https://www.aljazeera.com/sports/2026/10/13/australia-bowl-out-south-africa-to-win-first-test-in-durban?traffic_source=rss",
       "date": "October 13, 2026",
       "description": "Hazlewood's 6-49 ⁠⁠helped the visitors clean up the South African batting, securing the win before tea on day five."
-    },
-    {
-      "title": "Yemeni families’ search for missing loved ones hindered by new fighting",
-      "url": "https://www.aljazeera.com/news/2026/10/13/yemens-families-search-for-missing-loved-ones-hindered-by-new-fighting?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Hundreds of people have gone missing in Yemen, with families not knowing whether they were killed in fighting or detained."
-    },
-    {
-      "title": "How protests have shaped India: From anti-Hindi agitation to farm laws",
-      "url": "https://www.aljazeera.com/news/2026/10/13/how-protests-have-shaped-india-from-anti-hindi-agitation-to-farm-laws?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Activists challenging India's government over electoral roll controversies have a long legacy of protest to draw on."
-    },
-    {
-      "title": "India’s $87bn river-linking plan leaves villagers fighting for their homes",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/indias-87bn-river-linking-plan-leaves-villagers-fighting-for-their-homes?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Villagers in India say they would rather die than leave their homes as they protest a billion dollar government project"
-    },
-    {
-      "title": "‘My son was killed’: France faces backlash over police firearms bill",
-      "url": "https://www.aljazeera.com/news/2026/10/13/my-son-was-killed-france-faces-backlash-over-proposed-police-firearms-law?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "As protests nationwide protests rage, activists warn proposed law could lead to more impunity."
-    },
-    {
-      "title": "Israel’s military raids NGO offices in Ramallah",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/israels-military-raids-ngo-offices-in-ramallah?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Al Jazeera’s Nida Ibrahim reports from Ramallah in the occupied West Bank where Israeli forces raided several NGOs."
-    },
-    {
-      "title": "A look at Qatar’s local, regional and global autism initiatives",
-      "url": "https://www.aljazeera.com/video/centre-stage/2026/10/13/a-look-at-the-countrys-local-regional-and-global-initiatives?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "In 2025, the Qatar Foundation launched a 10-year autism strategy to provide lifelong support for individuals with autism"
-    },
-    {
-      "title": "Trump Protester punched at Trump rally as they’re mocked by the president",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/trump-protester-punched-at-trump-rally-as-theyre-mocked-by-the-president?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "A protester wearing a ‘Release the Epstein files’ shirt was punched by Trump supporters at a Republican rally in Ohio."
-    },
-    {
-      "title": "Activist Greta Thunberg joins French student protests",
-      "url": "https://www.aljazeera.com/news/2026/10/13/activist-greta-thunberg-joins-french-student-protests?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Thunberg arrives at Paul Eluard high school in the heart of the movement in the Parisian suburb of Saint-Denis."
-    },
-    {
-      "title": "One killed, several injured in Georgia rollercoaster ‘incident’",
-      "url": "https://www.aljazeera.com/news/2026/10/13/one-dead-after-roller-coaster-incident-in-george-us?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Six Flags temporarily closes nine similar rollercoasters after a fatal accident at its Georgia amusement park."
-    },
-    {
-      "title": "Israeli forces raid Palestinian NGOs in occupied West Bank",
-      "url": "https://www.aljazeera.com/news/2026/10/13/israeli-forces-raid-palestinian-ngos-and-hospital-in-occupied-west-bank?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "Snipers deployed outside entrances to the Palestine Medical Complex, Wafa reported."
-    },
-    {
-      "title": "The monetisation of mental health",
-      "url": "https://www.aljazeera.com/video/money-works/2026/10/13/the-monetisation-of-mental-health?traffic_source=rss",
-      "date": "October 13, 2026",
-      "description": "The monetisation of mental health"
     }
   ]
 }
