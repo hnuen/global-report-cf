@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14T19:08:02.583Z",
+  "updatedAt": "2026-10-14T21:08:10.085Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261014",
@@ -3246,12 +3246,6 @@
   ],
   "bbcNews": [
     {
-      "title": "Starlink restrictions in Ukraine war linked to political situation, Zelensky aide says",
-      "url": "https://www.bbc.co.uk/news/articles/cm2d6e62p49do?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 14, 2026",
-      "description": "Elon Musk's system allows Kyiv to protect Ukrainian skies and effectively guide drones to Russian targets."
-    },
-    {
       "title": "Germany puts Ukrainian on trial accused of blowing up Nord Stream pipelines",
       "url": "https://www.bbc.co.uk/news/articles/cw99zpmnxzmjo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 14, 2026",
@@ -3266,34 +3260,28 @@
   ],
   "ajNews": [
     {
+      "title": "Russia attack hits Kyiv after reported intelligence lapse",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/14/russia-attack-hits-kyiv-after-reported-intelligence-lapse?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "Russia attack hits Kyiv after reported intelligence lapse"
+    },
+    {
+      "title": "US lifts sanctions on Venezuela’s top legislator",
+      "url": "https://www.aljazeera.com/news/2026/10/14/us-lifts-sanctions-on-venezuelas-top-legislator?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "Jorge Rodriguez has been removed from OFAC's sanctions list in latest US push for oil control and bilateral diplomacy."
+    },
+    {
       "title": "Bangladesh arrests two for luring locals to fight for Russia in Ukraine",
       "url": "https://www.aljazeera.com/news/2026/10/14/bangladesh-arrests-two-for-luring-locals-to-fight-for-russia-in-ukraine?traffic_source=rss",
       "date": "October 14, 2026",
-      "description": "Twenty Bangladeshi victims have been killed after being used by Russia as 'bait' to locate enemy positions, police say."
+      "description": "Twenty Bangladeshi citizens have been killed after being used by Russia as 'bait' to locate enemy positions, police say."
     },
     {
       "title": "How six Ukrainian divers could have blown up Russia’s $20bn pipelines",
       "url": "https://www.aljazeera.com/video/2026/10/14/aje-onl-pp-nord-stream-141125?traffic_source=rss",
       "date": "October 14, 2026",
       "description": "A Ukrainian military officer is on trial in Germany over an act of sabotage that remained unsolved for years."
-    },
-    {
-      "title": "Ukraine accuses Elon Musk’s SpaceX of throttling Starlink terminals",
-      "url": "https://www.aljazeera.com/news/2026/10/14/ukraine-accuses-elon-musks-spacex-of-throttling-starlink-terminals?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "Officials say ability to block Russian drones restricted as Kyiv reels from second night of ballistic missile attacks."
-    },
-    {
-      "title": "Suspected Israeli online operations cause alarm in Iran and Lebanon",
-      "url": "https://www.aljazeera.com/news/2026/10/14/suspected-israeli-online-operations-cause-alarm-in-iran-and-lebanon?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "Suspected online espionage triggers intense security crackdowns and counter-intelligence measures in Iran and Lebanon."
-    },
-    {
-      "title": "At least two security officials killed near Iran’s critical Chabahar port",
-      "url": "https://www.aljazeera.com/news/2026/10/14/at-least-two-security-officials-killed-near-irans-critical-chabahar-port?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "Iran says 'terrorist groups' supported from outside the country are targeting security forces."
     }
   ],
   "occNews": [
@@ -3404,6 +3392,18 @@
   ],
   "regionsNews": [
     {
+      "title": "Musk says any limits on Ukraine's Starlink access down to US, not his firm",
+      "url": "https://www.bbc.co.uk/news/articles/c8wy9veedgygo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 14, 2026",
+      "description": "Ukraine says Starlink access has improved but it is still facing speed limits which are disrupting its battlefield \"missions\"."
+    },
+    {
+      "title": "Student protesters attack government buildings in Tirana",
+      "url": "https://www.bbc.co.uk/news/articles/cq80zk5k2ep4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 14, 2026",
+      "description": "Thousands of students in Albania are calling for better university conditions and job prospects, but buildings have been set on fire in the unrest."
+    },
+    {
       "title": "Pope walking and recovering 'as expected' after surgery, doctors say",
       "url": "https://www.bbc.co.uk/news/articles/cwx28r0zvm6lo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 14, 2026",
@@ -3422,16 +3422,16 @@
       "description": "All of the spots are in South Australia, reportedly because the state government paid for incognito inspectors to visit."
     },
     {
-      "title": "Netflix to shed 1,000 jobs in steepest cuts since 2022",
-      "url": "https://www.bbc.co.uk/news/articles/c6zxj0gzk4x4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 14, 2026",
-      "description": "The cuts equate to around 6% of the streaming giant's total workforce worldwide."
-    },
-    {
       "title": "Kenya confirms second Ebola case - a relative of the first victim",
       "url": "https://www.bbc.co.uk/news/articles/cw5yn8rn04ljo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 14, 2026",
       "description": "It follows the death last week of a man who had arrived in Kenya after travelling from DR Congo."
+    },
+    {
+      "title": "Netflix to shed 1,000 jobs in steepest cuts since 2022",
+      "url": "https://www.bbc.co.uk/news/articles/c6zxj0gzk4x4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 14, 2026",
+      "description": "The cuts equate to around 6% of the streaming giant's total workforce worldwide."
     },
     {
       "title": "Hundreds of thousands of workers on strike across Republic of Ireland",
@@ -3474,6 +3474,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cq98z59xdny5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 14, 2026",
       "description": "It comes as the prime minister meets President Zelensky at Downing Street."
+    },
+    {
+      "title": "Why is Starlink internet so important on the battlefield in Ukraine?",
+      "url": "https://www.bbc.co.uk/news/articles/cqkgk4zg54reo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 14, 2026",
+      "description": "It is the \"backbone of military communications in Ukraine\" that provides vital high-speed internet to forces across the country."
     },
     {
       "title": "Toilet paper and secret recorders: What we know about the arrest of the Saudi OpenAI engineer",
@@ -3848,6 +3854,90 @@
       "description": "Pete Oliver of DAZN explains why the is a growing number of sports subscriptions and why they are getting more expensive."
     },
     {
+      "title": "West Indies beat India to level T20 series as Hope continues record run",
+      "url": "https://www.aljazeera.com/sports/2026/10/14/west-indies-beat-india-to-level-series-as-hope-continues-record-run?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "Shai Hope’s 102 gives West Indies a 24-run series-leveling win over India in fourth cricket T20 as another record falls."
+    },
+    {
+      "title": "Israeli quadcopter drone drops bomb in Lebanon",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/14/israeli-quadcopter-drone-drops-bomb-in-lebanon?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "An Israeli quadcopter drone was filmed dropping a bomb on the outskirts of the village of Zibqin in southern Lebanon."
+    },
+    {
+      "title": "Families of Trinidadian men killed in US boat strike demand accountability",
+      "url": "https://www.aljazeera.com/news/2026/10/14/families-of-trinidadian-men-killed-in-us-boat-strike-demand-accountability?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "The Trump administration has killed at least 239 people in boat strikes denounced as extrajudicial killings."
+    },
+    {
+      "title": "Sky turns orange as wildfires rage across Indonesia",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/14/sky-turns-orange-as-wildfires-rage-across-indonesia?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "An orange haze is blanketing Indonesia’s Central Kalimantan as wildfires rage across the province."
+    },
+    {
+      "title": "World’s oldest shipwreck found off coast of Turkiye",
+      "url": "https://www.aljazeera.com/news/2026/10/14/worlds-oldest-shipwreck-found-off-coast-of-turkiye?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "Clay analysis traces recovered storage jars to early history workshops operating across the Jordan Valley."
+    },
+    {
+      "title": "Woman rescued after being swept away by Istanbul flash flood",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/14/woman-rescued-after-being-swept-away-by-istanbul-flash-flood?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "A woman was rescued by passersby after being swept along by floodwaters in Istanbul’s Esenyurt district"
+    },
+    {
+      "title": "Mexico to force Meta, TikTok, and X to better protect minors on platform",
+      "url": "https://www.aljazeera.com/news/2026/10/14/mexico-to-force-meta-tiktok-and-x-to-better-protect-minors-on-platform?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "Mexico will require the digital platforms to protect minors from violent and sexual content."
+    },
+    {
+      "title": "Infantino faces FIFA rebels in Zurich after failed World Cup stake sale",
+      "url": "https://www.aljazeera.com/sports/2026/10/14/infantino-faces-fifa-rebels-in-zurich-after-failed-world-cup-stake-sale?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "Gianni Infantino faces FIFA rebels after failed World Cup sale, while members to be offered $6.35bn development fund."
+    },
+    {
+      "title": "Houthi attacks disrupt travel plans for Mecca pilgrims",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/14/houthi-attacks-disrupt-travel-plans-for-mecca-pilgrims?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "Muslim pilgrims headed to Mecca for Umrah are facing travel disruptions as Houthi attacks hit Saudi Arabia."
+    },
+    {
+      "title": "Barcola scores hat-trick as Liverpool hit LASK for six",
+      "url": "https://www.aljazeera.com/sports/2026/10/14/barcola-scores-hat-trick-as-liverpool-hit-lask-for-six?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "Following a move from Paris Saint-Germain, Bradley Barcola gets first Liverpool goals with Champions League hat-trick."
+    },
+    {
+      "title": "Spanish NGO halts Mediterranean rescue operations, citing fuel prices",
+      "url": "https://www.aljazeera.com/news/2026/10/14/spanish-ngo-halts-mediterranean-rescue-operations-citing-fuel-prices?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "SMH says it can no longer afford search-and-rescue work in one of the world's most dangerous migration routes."
+    },
+    {
+      "title": "How will a new alliance affect the conflict in eastern DRC?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/10/14/how-will-a-new-alliance-affect-the-conflict-in-eastern-drc?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "Former President Joseph Kabila has joined forces with M23 fighters."
+    },
+    {
+      "title": "Sally Rooney’s books pulled from UK over Palestine Action support",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/14/sally-rooneys-books-pulled-from-uk-over-palestine-action-support?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "Award-winning author Sally Rooney’s books are being withdrawn from the UK over her support for Palestine Action"
+    },
+    {
+      "title": "World’s oldest known shipwreck found in Turkiye",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/14/worlds-oldest-known-shipwreck-found-in-turkiye?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "The world’s oldest known shipwreck has been discovered off Turkiye’s coast, dating back nearly 5,000 years."
+    },
+    {
       "title": "Israel’s former security chief sues Netanyahu for October 7 defamation",
       "url": "https://www.aljazeera.com/news/2026/10/14/israels-former-security-chief-sues-netanyahu-for-october-7-defamation?traffic_source=rss",
       "date": "October 14, 2026",
@@ -3888,84 +3978,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/14/kenyas-health-ministry-confirms-second-ebola-case?traffic_source=rss",
       "date": "October 14, 2026",
       "description": "A relative of the first case, 39-year-old man's infection raises concerns of a cross-border spread."
-    },
-    {
-      "title": "AI in politics: Is Albania the EU’s testing ground?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/14/ai-in-politics-is-albania-the-eus-testing-ground?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "Albania is experimenting with artificial intelligence in politics."
-    },
-    {
-      "title": "Tehran municipality accused of ‘overstep’ after launching welfare projects",
-      "url": "https://www.aljazeera.com/economy/2026/10/14/tehran-municipality-accused-of-overstep-after-launching-welfare-projects?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "Tehran's new municipal welfare projects face intense criticism over funding sources, transparency, and inflation claims."
-    },
-    {
-      "title": "Fire erupts at Albania’s Education Ministry as protests enter third day",
-      "url": "https://www.aljazeera.com/news/2026/10/14/fire-erupts-at-albanias-education-ministry-as-protests-enter-third-day?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "At least 16 additional protesters have been arrested after clashing with riot police."
-    },
-    {
-      "title": "US Social Security benefits to rise by 3.6 percent in 2027",
-      "url": "https://www.aljazeera.com/news/2026/10/14/us-social-security-benefits-to-rise-by-3-6-percent-in-2027?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "Retired Americans will see a $75 boost in monthly cheques as benefits rise amid widespread inflation challenges."
-    },
-    {
-      "title": "UN official warns of looming food crisis as Hormuz fertiliser plan stalls",
-      "url": "https://www.aljazeera.com/news/2026/10/14/un-official-warns-of-looming-food-crisis-as-hormuz-fertiliser-plan-stalls?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "Without a quick deal to move fertiliser through the strait, agricultural productivity would 'significantly drop'."
-    },
-    {
-      "title": "Jerusalem Daily: UN demands Israel do more to stop settler violence",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/14/jerusalem-daily-un-demands-israel-do-more-to-stop-settler-violence?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "Netanyahu warns again of Israel’s ‘enemies’ planning an attack before elections."
-    },
-    {
-      "title": "Ronaldo’s among three Saudi Arabia games postponed due to Houthi attacks",
-      "url": "https://www.aljazeera.com/sports/2026/10/14/ronaldos-among-three-saudi-arabia-games-postponed-due-to-houthi-attacks?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "Saudi Pro League postpones three matches after Houthi attacks, including one involving Cristiano Ronaldo's Al Nassr."
-    },
-    {
-      "title": "US inflation rises before midterm elections, fuelling rate hike fears",
-      "url": "https://www.aljazeera.com/economy/2026/10/14/us-inflation-rises-before-midterm-elections-fuelling-rate-hike-fears?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "Economists divided on Fed rate hike as inflation creates uncertainty before US midterm elections in a tense market."
-    },
-    {
-      "title": "Why Martinez highlighted Manchester United’s woes in Madrid meltdown",
-      "url": "https://www.aljazeera.com/sports/2026/10/14/manchester-united-premier-league-carrick-ratcliffe?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "Amid Premier and Champions League woes, Man United players and fans ponder how preseason optimism has turned to despair."
-    },
-    {
-      "title": "Judge extends White House access for US media outlets amid Trump standoff",
-      "url": "https://www.aljazeera.com/news/2026/10/14/us-judge-extends-white-house-access-for-media-outlets-amid-trump-standoff?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "CNN, MS Now and Politico can continue to access White House as judge maintains Trump's ban likely illegal."
-    },
-    {
-      "title": "Pope Leo recovering well after cancer surgery, Vatican says",
-      "url": "https://www.aljazeera.com/news/2026/10/14/pope-leo-recovering-well-after-cancer-surgery-vatican-says?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "The 71-year-old pontiff is recovering in Rome’s Gemelli hospital after surgery to remove a cancerous growth on his lung."
-    },
-    {
-      "title": "Renewed fighting risks ‘humanitarian catastrophe’ in Yemen, aid groups warn",
-      "url": "https://www.aljazeera.com/news/2026/10/14/renewed-fighting-risks-humanitarian-catastrophe-in-yemen-aid-groups-warn?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "Almost one million people cut off from food aid as health infrastructure overwhelmed by war-wounded."
-    },
-    {
-      "title": "Manchester City vs PSG Live: Champions League",
-      "url": "https://www.aljazeera.com/sports/liveblog/2026/10/14/manchester-city-vs-psg-live-champions-league?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "Follow updates from the league stage clash, including the buildup, analysis and live text commentary of the game."
     }
   ]
 }
