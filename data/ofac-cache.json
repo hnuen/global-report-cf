@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14T15:08:02.642Z",
+  "updatedAt": "2026-10-14T17:08:14.409Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261014",
@@ -3252,25 +3252,19 @@
       "description": "Four years after the attacks, Serhii Kuznetsov appears in court accused of a plot to destroy Russia's gas pipelines to Germany."
     },
     {
-      "title": "Russia arrests Japanese journalist on spying charges",
-      "url": "https://www.bbc.co.uk/news/articles/cwp9g1el7x9zo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 14, 2026",
-      "description": "The Hokkaido Shimbun journalist is accused of collecting information on Moscow's defence capabilities for Tokyo."
-    },
-    {
       "title": "Watch: Block of flats destroyed in Russian strikes on Ukraine",
       "url": "https://www.bbc.co.uk/news/videos/cmx280x092x7o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 14, 2026",
       "description": "BBC Ukraine Correspondent Dan Johnson is in Kyiv, where at least three people were killed in overnight strikes."
-    },
-    {
-      "title": "Documents falsified to evade tax on Abramovich's wealth, BBC finds",
-      "url": "https://www.bbc.co.uk/news/articles/c64g1l5389kvo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 12, 2026",
-      "description": "Backdated paperwork also made the Russian oligarch’s yachts and mansions disappear from accounts, investigation finds."
     }
   ],
   "ajNews": [
+    {
+      "title": "At least two security officials killed near Iran’s critical Chabahar port",
+      "url": "https://www.aljazeera.com/news/2026/10/14/at-least-two-security-officials-killed-near-irans-critical-chabahar-port?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "Iran says 'terrorist groups' supported from outside the country are targeting security forces."
+    },
     {
       "title": "Law of the Sea comes to life in the hunt for sanctioned Russian oil",
       "url": "https://www.aljazeera.com/news/2026/10/14/law-of-the-sea-comes-to-life-in-the-hunt-for-sanctioned-russian-oil?traffic_source=rss",
@@ -3294,18 +3288,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/14/iran-targets-starlink-as-tool-of-war-with-hints-at-internet-restrictions?traffic_source=rss",
       "date": "October 14, 2026",
       "description": "One official claims satellite internet could erode online governance in Iran amid war with the US and Israel."
-    },
-    {
-      "title": "Iran steps up Hormuz surveillance: Attacks soar, oil flows crash again",
-      "url": "https://www.aljazeera.com/news/2026/10/14/iran-steps-up-hormuz-surveillance-attacks-soar-oil-flows-crash-again?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "Ships in the Strait of Hormuz have been experiencing the worst spate of attacks since the start of the war."
-    },
-    {
-      "title": "Russia’s arrest of Japanese journalist: Why are tensions rising?",
-      "url": "https://www.aljazeera.com/news/2026/10/14/russias-arrest-of-japanese-journalist-why-are-tensions-rising?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "Japanese journalist Imai Yuki arrested on Sakhalin for allegedly spying on Russian defence capabilities, says the FSB."
     }
   ],
   "occNews": [
@@ -3416,22 +3398,34 @@
   ],
   "regionsNews": [
     {
+      "title": "Pope walking and recovering 'as expected' after surgery, doctors say",
+      "url": "https://www.bbc.co.uk/news/articles/cwx28r0zvm6lo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 14, 2026",
+      "description": "The 71-year-old Pope was diagnosed with lung cancer after the 90-minute procedure on Tuesday."
+    },
+    {
       "title": "US inflation rises more than expected - here's what is happening with prices",
       "url": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 14, 2026",
       "description": "The pace of price rises increased to 3.7% in the year to September, driving by higher motor fuel costs."
     },
     {
-      "title": "Pope diagnosed with lung cancer but had successful surgery, Vatican says",
-      "url": "https://www.bbc.co.uk/news/articles/ck1wvd9dvv22o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Australia's first-ever Michelin stars go to 11 restaurants in one state",
+      "url": "https://www.bbc.co.uk/news/articles/crje5we583qwo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 14, 2026",
-      "description": "Pope Leo had a \"peaceful night\" in the hospital after the surgery to remove a lower lobe of his right lung, the Vatican says."
+      "description": "All of the spots are in South Australia, reportedly because the state government paid for incognito inspectors to visit."
     },
     {
-      "title": "Turkish police raid opposition TV station, halting live broadcasts",
-      "url": "https://www.bbc.co.uk/news/articles/crx23y3d970vo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Netflix to lay off 1,000 staff in steepest cuts since 2022",
+      "url": "https://www.bbc.co.uk/news/articles/c6zxj0gzk4x4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 14, 2026",
-      "description": "It is the latest in a series of crackdowns on media critical of the Turkish president and his government."
+      "description": "The cuts equate to around 6% of the streaming giant's total workforce worldwide."
+    },
+    {
+      "title": "Kenya confirms second Ebola case as relative of country's first victim",
+      "url": "https://www.bbc.co.uk/news/articles/cw5yn8rn04ljo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 14, 2026",
+      "description": "It follows the death last week of a man who had arrived in Kenya after travelling from DR Congo."
     },
     {
       "title": "Hundreds of thousands of workers on strike across Republic of Ireland",
@@ -3440,16 +3434,22 @@
       "description": "It comes amidst an an ongoing pay dispute between public sector workers and the Irish government."
     },
     {
+      "title": "Container ship hit by projectile sinks in Strait of Hormuz, Singapore says",
+      "url": "https://www.bbc.co.uk/news/articles/crkg7q97z078o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 14, 2026",
+      "description": "All 21 sailors on the Singapore-flagged GFS Pride were evacuated safely after it was hit by an projectile on Tuesday, maritime authorities say."
+    },
+    {
+      "title": "Turkish police raid opposition TV station, halting live broadcasts",
+      "url": "https://www.bbc.co.uk/news/articles/crx23y3d970vo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 14, 2026",
+      "description": "It is the latest in a series of crackdowns on media critical of the Turkish president and his government."
+    },
+    {
       "title": "World's oldest shipwreck found off coast of Turkey",
       "url": "https://www.bbc.co.uk/news/articles/c6gr80rk1yyko?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 14, 2026",
       "description": "Archaeologists say the wreck is up to 4,700 years old, dating to the Early Bronze Age."
-    },
-    {
-      "title": "Saudi employee charged with planting recording device in OpenAI office",
-      "url": "https://www.bbc.co.uk/news/articles/cwg5jq4vlddzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 13, 2026",
-      "description": "Prosecutors say the device, wrapped in toilet paper, was found inserted in a USB port on the back of a TV in an executive conference room."
     },
     {
       "title": "Mauritius reels from worst riots in decades after woman shot by police",
@@ -3458,52 +3458,28 @@
       "description": "Prime Minister Navin Ramgoolam imposed a curfew after days of unrest that first began over water shortages."
     },
     {
+      "title": "Saudi employee charged with planting recording device in OpenAI office",
+      "url": "https://www.bbc.co.uk/news/articles/cwg5jq4vlddzo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 13, 2026",
+      "description": "Prosecutors say the device, wrapped in toilet paper, was found inserted in a USB port on the back of a TV in an executive conference room."
+    },
+    {
       "title": "Burnham says he wants to 'repair bridges' between Ukraine and US",
       "url": "https://www.bbc.co.uk/news/articles/cq98z59xdny5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 14, 2026",
-      "description": "It comes ahead of a meeting between the prime minister and President Zelensky at Downing Street."
+      "description": "It comes as the prime minister meets President Zelensky at Downing Street."
     },
     {
-      "title": "Trump ousts Kimberly Guilfoyle as US ambassador to Greece after corruption allegations",
-      "url": "https://www.bbc.co.uk/news/articles/cr5ynplvpg7lo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 13, 2026",
-      "description": "Guilfoyle said the allegations of improper conduct were false and that being ambassador was the \"honour of a lifetime\"."
-    },
-    {
-      "title": "Ex-gang boss sentenced to 40 years for orchestrating Tupac Shakur's murder",
-      "url": "https://www.bbc.co.uk/news/articles/c60rln2jvv2zo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Toilet paper and secret recorders: What we know about the arrest of the Saudi OpenAI engineer",
+      "url": "https://www.bbc.co.uk/news/articles/cm04054ykqqqo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 14, 2026",
-      "description": "Davis was found guilty last month over his role in the late rap superstar's death in a drive-by shooting in 1996."
+      "description": "Abdulrahman Alfozan had worked for the AI giant for more than a year before he was arrested by the FBI."
     },
     {
-      "title": "Zimbabwean author denies using AI to write award-winning story",
-      "url": "https://www.bbc.co.uk/news/articles/cm4g1rekpgnjo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 13, 2026",
-      "description": "Simbarashe Kundizeza was responding to an accusation that has caused an uproar on social media."
-    },
-    {
-      "title": "Lena Dunham's Girls to return for limited HBO run",
-      "url": "https://www.bbc.co.uk/news/articles/c9m26xp4zp8jo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Are the European Women's World Cup play-offs working?",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cq0k0x1l8gndo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 14, 2026",
-      "description": "Ten years after the series finale, the \"Girls\" are getting back together to explore the \"milestone of turning forty\", HBO says."
-    },
-    {
-      "title": "Houthi missile hits Aramco building after Saudi-led coalition strike on Yemen fuel depot",
-      "url": "https://www.bbc.co.uk/news/articles/crx2d60y1py3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 14, 2026",
-      "description": "The Saudi energy ministry says the Houthi attack caused a \"limited fire\" at Aramco's headquarters complex in Dhahran."
-    },
-    {
-      "title": "Cornell bans all fraternity parties over gang sex assault allegations",
-      "url": "https://www.bbc.co.uk/news/articles/cw8dzg094zd9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 14, 2026",
-      "description": "The school has faced an uproar over how it handled assault allegations brought by a woman known as Jane Doe."
-    },
-    {
-      "title": "Horrified witnesses recount fatal rollercoaster incident at Six Flags",
-      "url": "https://www.bbc.co.uk/news/articles/c6n4ejx8x1z7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 13, 2026",
-      "description": "Police say preliminary information suggests the man who died at the Georgia amusement park fell from a ride."
+      "description": "The ease in which England saw off Greece in round one of the Women's World Cup qualifying play-offs showed just how inefficient the structure currently is."
     },
     {
       "title": "Pictured: Winning entries for Wildlife Photographer of the Year 2026",
@@ -3560,6 +3536,18 @@
       "description": "The BBC's Sarah Smith was in the room and describes Zacharia's performance and the moment she broke news about Kimberly Guilfoyle being asked to resign."
     },
     {
+      "title": "Netflix to lay off 1,000 staff in steepest cuts since 2022",
+      "url": "https://www.bbc.co.uk/news/articles/c6zxj0gzk4x4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 14, 2026",
+      "description": "The cuts equate to around 6% of the streaming giant's total workforce worldwide."
+    },
+    {
+      "title": "Toilet paper and secret recorders: What we know about the arrest of the Saudi OpenAI engineer",
+      "url": "https://www.bbc.co.uk/news/articles/cm04054ykqqqo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 14, 2026",
+      "description": "Abdulrahman Alfozan had worked for the AI giant for more than a year before he was arrested by the FBI."
+    },
+    {
       "title": "Faisal Islam: What surprise praise for UK economy tells us about the Budget",
       "url": "https://www.bbc.co.uk/news/articles/cx30eq0vyed4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 14, 2026",
@@ -3578,6 +3566,12 @@
       "description": "The pace of price rises increased to 3.7% in the year to September, driving by higher motor fuel costs."
     },
     {
+      "title": "How long will humans be needed for translation?",
+      "url": "https://www.bbc.co.uk/news/articles/c1wxdjx27ypo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 13, 2026",
+      "description": "AI dominates the translation business, but for high-stakes work, humans are still needed."
+    },
+    {
       "title": "Civil servant faked illness with make-up to juggle five jobs, court hears",
       "url": "https://www.bbc.co.uk/news/articles/cqgkvdyx5d6jo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 14, 2026",
@@ -3588,12 +3582,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cqx298e5rr3po?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 14, 2026",
       "description": "The Competition and Markets Authority has fined Wayfair, Appliances Direct, and Gold's Gym £6m in total."
-    },
-    {
-      "title": "How long will humans be needed for translation?",
-      "url": "https://www.bbc.co.uk/news/articles/c1wxdjx27ypo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 13, 2026",
-      "description": "AI dominates the translation business, but for high-stakes work, humans are still needed."
     },
     {
       "title": "'I applied for 200 jobs' - How 'spray and pray' AI job applications can backfire",
@@ -3710,12 +3698,6 @@
       "description": "One in 10 scams reported to Citizens Advice relate to fraudsters charging for work not done, or done badly."
     },
     {
-      "title": "AI is less regulated than milk, says Microsoft president",
-      "url": "https://www.bbc.co.uk/news/articles/c6rmy7zmvx3lo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 12, 2026",
-      "description": "Brad Smith calls for global rules on AI, and says the UK is in the \"best position\" to lead the charge."
-    },
-    {
       "title": "Why are more roofs not made of solar tiles?",
       "url": "https://www.bbc.co.uk/news/articles/cdr7n610rmzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 8, 2026",
@@ -3776,6 +3758,12 @@
       "description": "Nvidia, OpenAI and Anthropic are all now selling their own limited edition fashion lines."
     },
     {
+      "title": "'It's rough out here': Americans struggle with rising inflation",
+      "url": "https://www.bbc.co.uk/news/articles/c305649p2d6o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 14, 2026",
+      "description": "US inflation continues to rise, and this month the jump was above forecasts. Here's how some are surviving."
+    },
+    {
       "title": "US inflation rises more than expected - here's what is happening with prices",
       "url": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 14, 2026",
@@ -3798,12 +3786,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cv4g18we232ro?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 14, 2026",
       "description": "It comes as ministers say they will tighten up rules on heating oil and promote competition."
-    },
-    {
-      "title": "Car finance compensation payments delayed until next year",
-      "url": "https://www.bbc.co.uk/news/articles/c2l9vvj097lo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 13, 2026",
-      "description": "Millions could be entitled to compensation as a result of commission arrangements between lenders and dealers."
     },
     {
       "title": "My hometown shows that high streets have to change or die",
@@ -3860,6 +3842,78 @@
       "description": "Pete Oliver of DAZN explains why the is a growing number of sports subscriptions and why they are getting more expensive."
     },
     {
+      "title": "Tehran municipality accused of ‘overstep’ after launching welfare projects",
+      "url": "https://www.aljazeera.com/economy/2026/10/14/tehran-municipality-accused-of-overstep-after-launching-welfare-projects?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "Tehran's new municipal welfare projects face intense criticism over funding sources, transparency, and inflation claims."
+    },
+    {
+      "title": "Fire erupts at Albania’s Education Ministry as protests enter third day",
+      "url": "https://www.aljazeera.com/news/2026/10/14/fire-erupts-at-albanias-education-ministry-as-protests-enter-third-day?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "At least 16 additional protesters have been arrested after clashing with riot police."
+    },
+    {
+      "title": "US Social Security benefits to rise by 3.6 percent in 2027",
+      "url": "https://www.aljazeera.com/news/2026/10/14/us-social-security-benefits-to-rise-by-3-6-percent-in-2027?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "Retired Americans will see a $75 boost in monthly cheques as benefits rise amid widespread inflation challenges."
+    },
+    {
+      "title": "UN official warns of looming food crisis as Hormuz fertiliser plan stalls",
+      "url": "https://www.aljazeera.com/news/2026/10/14/un-official-warns-of-looming-food-crisis-as-hormuz-fertiliser-plan-stalls?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "Without a quick deal to move fertiliser through the strait, agricultural productivity would 'significantly drop'."
+    },
+    {
+      "title": "Jerusalem Daily: UN demands Israel do more to stop settler violence",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/14/jerusalem-daily-un-demands-israel-do-more-to-stop-settler-violence?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "Netanyahu warns again of Israel’s ‘enemies’ planning an attack before elections."
+    },
+    {
+      "title": "Ronaldo’s among three Saudi Arabia games postponed due to Houthi attacks",
+      "url": "https://www.aljazeera.com/sports/2026/10/14/ronaldos-among-three-saudi-arabia-games-postponed-due-to-houthi-attacks?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "Saudi Pro League postpones three matches after Houthi attacks, including one involving Cristiano Ronaldo's Al Nassr."
+    },
+    {
+      "title": "US inflation rises before midterm elections, fuelling rate hike fears",
+      "url": "https://www.aljazeera.com/economy/2026/10/14/us-inflation-rises-before-midterm-elections-fuelling-rate-hike-fears?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "Economists divided on Fed rate hike as inflation creates uncertainty before US midterm elections in a tense market."
+    },
+    {
+      "title": "Why Martinez highlighted Manchester United’s woes in Madrid meltdown",
+      "url": "https://www.aljazeera.com/sports/2026/10/14/manchester-united-premier-league-carrick-ratcliffe?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "Amid Premier and Champions League woes, Man United players and fans ponder how preseason optimism has turned to despair."
+    },
+    {
+      "title": "Judge extends White House access for US media outlets amid Trump standoff",
+      "url": "https://www.aljazeera.com/news/2026/10/14/us-judge-extends-white-house-access-for-media-outlets-amid-trump-standoff?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "CNN, MS Now and Politico can continue to access White House as judge maintains Trump's ban likely illegal."
+    },
+    {
+      "title": "Pope Leo recovering well after cancer surgery, Vatican says",
+      "url": "https://www.aljazeera.com/news/2026/10/14/pope-leo-recovering-well-after-cancer-surgery-vatican-says?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "The 71-year-old pontiff is recovering in Rome’s Gemelli hospital after surgery to remove a cancerous growth on his lung."
+    },
+    {
+      "title": "Renewed fighting risks ‘humanitarian catastrophe’ in Yemen, aid groups warn",
+      "url": "https://www.aljazeera.com/news/2026/10/14/renewed-fighting-risks-humanitarian-catastrophe-in-yemen-aid-groups-warn?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "Almost one million people cut off from food aid as health infrastructure overwhelmed by war-wounded."
+    },
+    {
+      "title": "Manchester City vs PSG Live: Champions League",
+      "url": "https://www.aljazeera.com/sports/liveblog/2026/10/14/manchester-city-vs-psg-live-champions-league?traffic_source=rss",
+      "date": "October 14, 2026",
+      "description": "Follow updates from the league stage clash, including the buildup, analysis and live text commentary of the game."
+    },
+    {
       "title": "Saudi national charged with planting a listening device at OpenAI offices",
       "url": "https://www.aljazeera.com/news/2026/10/14/saudi-national-charged-with-planting-a-listening-device-at-openai-offices?traffic_source=rss",
       "date": "October 14, 2026",
@@ -3906,72 +3960,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/14/iraq-pm-tells-saudi-crown-prince-iraqi-territory-wont-be-used-for-attacks?traffic_source=rss",
       "date": "October 14, 2026",
       "description": "Saudi Arabia's East-West oil pipeline was struck by drones last month in an attack that originated in Iraq."
-    },
-    {
-      "title": "Colombia opens embassy in Jerusalem and restores free trade with Israel",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/14/colombia-opens-embassy-in-jerusalem-and-restores-free-trade-with-israel?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "Colombia has opened an embassy in West Jerusalem under new far-right President Abelardo de la Espriella."
-    },
-    {
-      "title": "Fulham manager Arbeloa fined for Man Utd refereeing outburst",
-      "url": "https://www.aljazeera.com/sports/2026/10/14/fulham-manager-arbeloa-fined-for-man-utd-refereeing-outburst?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "Alvaro Arbeloa fined $33,000 for remarks made after Fulham's 1-1 draw against Manchester United in September."
-    },
-    {
-      "title": "Do any of these Israeli candidates support a Palestinian state?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/14/do-any-of-these-israeli-candidates-support-a-palestinian-state?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "Do any of these Israeli candidates support a Palestinian state?"
-    },
-    {
-      "title": "Saudi-led coalition intercepts Houthi missile launched towards Riyadh",
-      "url": "https://www.aljazeera.com/news/2026/10/14/saudi-led-coalition-intercepts-houthi-missile-launched-towards-riyadh?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "Saudi civil defence authority says danger passed after it issued alerts via its national early warning platform."
-    },
-    {
-      "title": "Trump plans for ‘massive’ resource exploration in Greenland",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/14/trump-plans-for-massive-resource-exploration-in-greenland?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "US President Donald Trump announces a plan on Truth Social for oil, gas and mineral exploration in Greenland."
-    },
-    {
-      "title": "Settlers set fire to mosque in West Bank as Israeli forces raid villages",
-      "url": "https://www.aljazeera.com/news/2026/10/14/settlers-set-fire-to-mosque-in-west-bank-as-israeli-forces-raid-villages?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "Settlers also attacked a boy in a separate incident in the town of Beita, south of Nablus."
-    },
-    {
-      "title": "Israeli plan to reopen settler ‘Route 463’ threatens to isolate Ramallah",
-      "url": "https://www.aljazeera.com/news/2026/10/14/israeli-plan-to-reopen-settler-route-463-threatens-to-isolate-ramallah?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "Israeli plans to reopen Route 463 for settlers threaten to isolate Palestinian villages and fragment Ramallah."
-    },
-    {
-      "title": "Albanian students clash with police as they protest over education and jobs",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/14/albanian-students-clash-with-police-as-they-protest-over-education-and-jobs?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "Albanian students clash with police as they protest education costs, poor university conditions and bleak job prospects."
-    },
-    {
-      "title": "Israeli air strike kills Palestinian woman in Gaza City",
-      "url": "https://www.aljazeera.com/news/2026/10/14/israeli-air-strike-kills-palestinian-woman-in-gaza-city?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "The woman's young daughter was rescued from a large fire inside the apartment, caused by the attack."
-    },
-    {
-      "title": "How a radio glitch triggered a false hijack alert in Germany",
-      "url": "https://www.aljazeera.com/news/2026/10/14/how-a-radio-glitch-triggered-a-false-hijack-alert-in-germany?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "Authorities scrambled fighter jets to escort a plane from Corfu to Nuremberg after a pilot sent a hijack alert."
-    },
-    {
-      "title": "Girl rescued from flaming apartment after Israeli attack on Gaza",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/14/girl-rescued-from-flaming-apartment-after-israeli-attack-on-gaza?traffic_source=rss",
-      "date": "October 14, 2026",
-      "description": "Civilians rushed to rescue a girl trapped in a burning apartment after an Israeli attack struck a building in Gaza City."
     }
   ]
 }
