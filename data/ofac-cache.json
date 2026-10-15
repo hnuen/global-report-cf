@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-15T19:07:59.330Z",
+  "updatedAt": "2026-10-15T21:08:00.820Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261015",
@@ -3226,7 +3226,14 @@
       "description": "Today, the new automatic and dynamic mechanism for price adaptation of the oil price cap for Russian crude will be applied for the first time."
     }
   ],
-  "unNotices": [],
+  "unNotices": [
+    {
+      "title": "Security Council ISIL (Da’esh) and Al-Qaida Sanctions Committee Amends Three Entries on Its Sanctions List",
+      "url": "https://press.un.org/en/2026/sc16480.doc.htm",
+      "date": "October 15, 2026",
+      "description": "On 15 October 2026, the Security Council Committee pursuant to resolutions 1267 (1999), 1989 (2011) and 2253 (2015) concerning ISIL (Da’esh), Al‑Qaida and associated individuals, groups, undertakings and entities enacted the amendments specified with strikethrough and underline in the entries below on its ISIL (Da’esh) and Al-Qaida Sanctions List of individuals and entities subject to the assets freeze, travel ban and arms embargo set out in paragraph 1 of Security Council resolution 2734 (2024), and adopted under Chapter VII of the Charter of the United Nations."
+    }
+  ],
   "bbcNews": [
     {
       "title": "Russia accuses Ukraine of attacking oil refinery after Zelensky says strikes to resume",
@@ -3259,18 +3266,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/15/what-is-the-mother-of-all-bombs-us-could-use-in-iran?traffic_source=rss",
       "date": "October 15, 2026",
       "description": "US media reports military considering plans to use GBU-43/B Massive Ordnance Air Blast Bomb (MOAB)"
-    },
-    {
-      "title": "Syrian court sentences two to death over 2025 coastal violence",
-      "url": "https://www.aljazeera.com/news/2026/10/15/syrian-court-sentences-two-to-death-over-2025-coastal-violence?traffic_source=rss",
-      "date": "October 15, 2026",
-      "description": "Court rulings concern violence and killings during March 2025 uprising by pro-Assad forces and retaliatory attacks."
-    },
-    {
-      "title": "Russian jet-powered drone hits supermarket in Ukraine’s Odesa",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/15/russian-jet-powered-drone-hits-supermarket-in-ukraines-odesa?traffic_source=rss",
-      "date": "October 15, 2026",
-      "description": "Ukrainian authorities say a Russian jet-powered drone struck a supermarket in its Odesa region on Thursday."
     }
   ],
   "occNews": [
@@ -3387,10 +3382,10 @@
       "description": "Trump said some would \"rather not watch\" the killing of Nidal Hasan, the first military execution in over 60 years."
     },
     {
-      "title": "Houthi missile attack on Yemeni presidential palace kills two, minister says",
-      "url": "https://www.bbc.co.uk/news/articles/cm62y6lp73zdo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Maduro pleads not guilty to new torture-related charges in New York",
+      "url": "https://www.bbc.co.uk/news/articles/cqwyrn1l74zro?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 15, 2026",
-      "description": "Yemen's information minister says the prime minister and other ministers were unhurt when ballistic missiles hit al-Maashiq Palace."
+      "description": "\"I reject this document entirely,\" Maduro said in court, responding to newly added torture-related charges."
     },
     {
       "title": "At least 33 pupils and teacher killed after school roof collapses in Pakistan",
@@ -3399,16 +3394,10 @@
       "description": "Children were buried under the debris after the roof crashed through three classrooms, police say."
     },
     {
-      "title": "Maduro pleads not guilty to new torture-related charges in New York",
-      "url": "https://www.bbc.co.uk/news/articles/cqwyrn1l74zro?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Houthi missile attack on Yemeni presidential palace kills two, minister says",
+      "url": "https://www.bbc.co.uk/news/articles/cm62y6lp73zdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 15, 2026",
-      "description": "\"I reject this document entirely,\" Maduro said in court, responding to newly added torture-related charges."
-    },
-    {
-      "title": "Two dead in Istanbul after heaviest rainfall in 84 years, governor says",
-      "url": "https://www.bbc.co.uk/news/articles/cq398x7j1lrwo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 15, 2026",
-      "description": "Residents have been told to avoid leaving their homes unless absolutely necessary."
+      "description": "Yemen's information minister says the prime minister and other ministers were unhurt when ballistic missiles hit al-Maashiq Palace."
     },
     {
       "title": "Was Neanderthal life violent? This wound suggests lethal fighting was more common",
@@ -3433,6 +3422,18 @@
       "url": "https://www.bbc.co.uk/news/articles/cwly0g2r4k3po?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 15, 2026",
       "description": "Protests have taken place over the rules which have seen pupils wearing hijabs turned away from schools."
+    },
+    {
+      "title": "Letters with 'suspicious substances' sent to US election offices",
+      "url": "https://www.bbc.co.uk/news/articles/cmq8n513x523o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 15, 2026",
+      "description": "A number of states have confirmed they were targeted by the mailings, including Oklahoma, Ohio and Louisiana."
+    },
+    {
+      "title": "Two dead in Istanbul after heaviest rainfall in 84 years, governor says",
+      "url": "https://www.bbc.co.uk/news/articles/cq398x7j1lrwo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 15, 2026",
+      "description": "Residents have been told to avoid leaving their homes unless absolutely necessary."
     },
     {
       "title": "Obama says drift towards extremism 'not inevitable'",
@@ -3801,6 +3802,60 @@
       "description": "What age will you get your state pension?"
     },
     {
+      "title": "ICE tactics spark debate before pivotal US midterm elections",
+      "url": "https://www.aljazeera.com/news/2026/10/15/ice-tactics-spark-debate-before-pivotal-us-midterm-elections?traffic_source=rss",
+      "date": "October 15, 2026",
+      "description": "Polls have found that Trump's hardline immigration enforcement effort has divided voters before the 2026 midterm race."
+    },
+    {
+      "title": "Robots dance the ‘Macarena’ at Japan tech expo",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/15/robots-dance-the-macarena-at-japan-tech-expo?traffic_source=rss",
+      "date": "October 15, 2026",
+      "description": "Humanoid robots were seen performing the “Macarena” at the annual CEATEC technology exhibition in Chiba, Japan."
+    },
+    {
+      "title": "At least 7 crew members missing after drone attacks on ships in Black Sea",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/15/at-least-7-crew-members-missing-after-drone-attacks-on-ships-in-black-sea?traffic_source=rss",
+      "date": "October 15, 2026",
+      "description": "Emergency teams are searching for 7 missing crew after two chemical tankers were attacked in the Black Sea."
+    },
+    {
+      "title": "Why are migrants risking their lives at sea to reach Yemen?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/15/why-are-migrants-risking-their-lives-at-sea-to-reach-yemen?traffic_source=rss",
+      "date": "October 15, 2026",
+      "description": "Al Jazeera’s Al Anoud Al Aqeedi explains why migrants are risking their lives to make the journey to Yemen."
+    },
+    {
+      "title": "Northern Ireland ex-DUP leader Donaldson sentenced to 15 years for child sex crimes",
+      "url": "https://www.aljazeera.com/news/2026/10/15/northern-ireland-ex-dup-leader-donaldson-sentenced-to-15-years-for-child-sex-crimes?traffic_source=rss",
+      "date": "October 15, 2026",
+      "description": "Judge says Jeffrey Donaldson never apologised to victims as politician seeks to appeal his convictions."
+    },
+    {
+      "title": "Poll shows Bolsonaro with slight lead over Lula ahead of Brazilian run-off",
+      "url": "https://www.aljazeera.com/news/2026/10/15/poll-shows-bolsonaro-with-slight-lead-over-lula-ahead-of-brazilian-run-off?traffic_source=rss",
+      "date": "October 15, 2026",
+      "description": "Poll shows right-wing candidate with two percent advantage over Lula going into second round of voting on October 25."
+    },
+    {
+      "title": "Somalia says it will hold elections in 2027",
+      "url": "https://www.aljazeera.com/news/2026/10/15/somalia-says-it-will-hold-elections-in-2027?traffic_source=rss",
+      "date": "October 15, 2026",
+      "description": "Critics say unilateral decision to call polls is a recipe for more conflict."
+    },
+    {
+      "title": "Will Israeli voters punish Benjamin Netanyahu?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/10/15/will-israeli-voters-punish-benjamin-netanyahu?traffic_source=rss",
+      "date": "October 15, 2026",
+      "description": "Netanyahu is reported to have received warnings before October 7, 2023, but failed to act on time."
+    },
+    {
+      "title": "Dying in ICE custody: Inside one family’s story of heartbreak",
+      "url": "https://www.aljazeera.com/news/longform/2026/10/15/dying-in-ice-custody-inside-one-familys-story-of-heartbreak?traffic_source=rss",
+      "date": "October 15, 2026",
+      "description": "Ismael Ayala-Uribe was one of 53 people to die in ICE custody during Trump’s first 500 days back in office."
+    },
+    {
       "title": "Ethiopian forces expand control in Tigray as militia claims Eritrean losses",
       "url": "https://www.aljazeera.com/news/2026/10/15/ethiopian-forces-expand-control-in-tigray-as-militia-claims-eritrean-losses?traffic_source=rss",
       "date": "October 15, 2026",
@@ -3843,7 +3898,7 @@
       "description": "Fault Lines investigates the soaring death rates in immigration detention centres following President Trump’s crackdown."
     },
     {
-      "title": "Houthis target Yemen’s presidential palace in Aden with missiles",
+      "title": "At least 5 killed in Houthi attack on Yemen’s presidential palace in Aden",
       "url": "https://www.aljazeera.com/news/2026/10/15/houthis-target-yemens-presidential-palace-in-aden-with-missiles?traffic_source=rss",
       "date": "October 15, 2026",
       "description": "Saudi-led coalition accuses Houthis of obtaining missile parts from regional states."
@@ -3883,48 +3938,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/15/jerusalem-daily-ultra-orthodox-jews-storm-israeli-army-base?traffic_source=rss",
       "date": "October 15, 2026",
       "description": "Jerusalem Daily: Ultra-Orthodox Jews storm Israeli army base"
-    },
-    {
-      "title": "French football body urges fans and students to keep politics out of stadiums",
-      "url": "https://www.aljazeera.com/sports/2026/10/15/french-football-body-urges-fans-and-students-to-keep-politics-out-of-stadia?traffic_source=rss",
-      "date": "October 15, 2026",
-      "description": "French Football Federation's ethics body calls for neutrality amid student protests."
-    },
-    {
-      "title": "Delegates walk out as Israeli president addresses summit",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/15/delegates-walk-out-as-israeli-president-addresses-summit?traffic_source=rss",
-      "date": "October 15, 2026",
-      "description": "Officials from more than 10 countries walked out during an address by Israeli President Isaac Herzog at a summit in Baku"
-    },
-    {
-      "title": "US teen held over Hindu temple attack plot: Is anti-Indian racism rising?",
-      "url": "https://www.aljazeera.com/news/2026/10/15/us-teen-held-over-hindu-temple-attack-plot-is-anti-indian-racism-rising?traffic_source=rss",
-      "date": "October 15, 2026",
-      "description": "Illinois teen who allegedly said he 'couldn’t wait' to kill Indians is arrested over a Hindu temple attack plot."
-    },
-    {
-      "title": "Trump says Fort Hood US shooter execution will not be livestreamed",
-      "url": "https://www.aljazeera.com/news/2026/10/15/trump-says-fort-hood-shooter-execution-will-not-be-livestreamed?traffic_source=rss",
-      "date": "October 15, 2026",
-      "description": "US president reverses Pentagon's plan to publicly stream execution of Nidal Malik Hasan after outcry."
-    },
-    {
-      "title": "‘Boiling point’: Why students are protesting against Albania’s Edi Rama",
-      "url": "https://www.aljazeera.com/news/2026/10/15/boiling-point-why-students-are-protesting-against-albanias-edi-rama?traffic_source=rss",
-      "date": "October 15, 2026",
-      "description": "Experts say Albania’s protests reflect ignored student grievances and growing frustration."
-    },
-    {
-      "title": "The Rebel Tours: Money or morals?",
-      "url": "https://www.aljazeera.com/video/game-theory/2026/10/15/aje-onl-gm_rebel_v8-151026?traffic_source=rss",
-      "date": "October 15, 2026",
-      "description": "Some West Indies cricketers toured apartheid South Africa in the 1980's, breaking one of the biggest sporting boycotts."
-    },
-    {
-      "title": "Al Jazeera probe exposes fake viewing numbers for Israeli counter-film",
-      "url": "https://www.aljazeera.com/news/2026/10/15/al-jazeera-probe-exposes-fake-viewing-numbers-for-israeli-counter-film?traffic_source=rss",
-      "date": "October 15, 2026",
-      "description": "Data investigation casts doubt on claims that Israeli counter-documentary to 'NAZA' received 40 million views."
     }
   ]
 }
