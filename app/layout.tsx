@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import PresenceBadge from "./components/PresenceBadge";
 
 export const metadata: Metadata = {
   title: "The Global Report",
@@ -21,6 +22,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body style={{ margin: 0, padding: 0, background: "#f5f0e8" }}>
         {children}
+        <footer style={{ textAlign: "center", padding: "18px 12px 24px", fontFamily: "'IBM Plex Mono',monospace", fontSize: ".58rem", color: "#9ca3af", letterSpacing: ".08em" }}>
+          <a href="/privacy" style={{ color: "#9ca3af", textDecoration: "none" }}>Privacy</a>
+          <span style={{ margin: "0 8px" }}>·</span>
+          <a href="/contact" style={{ color: "#9ca3af", textDecoration: "none" }}>Contact</a>
+        </footer>
+        <PresenceBadge />
       </body>
     </html>
   );
