@@ -1,5 +1,13 @@
 const DEFAULT_LIMIT = 40;
 const BROKEN_STATUSES = new Set([404, 410]);
+// External publisher links rot normally (articles get pulled, slugs change), so a
+// single dead third-party URL among ~40 live links is churn, not an app regression.
+// We only fail the health check when HTTP breakage is SYSTEMIC (many links dead at
+// once -> the feed or deploy is genuinely broken). Policy violations are different:
+// those are links the app itself served in a bad shape (aggregator / listing / feed /
+// truncated / malformed), fully within our control, so any of those still fails.
+const HTTP_BROKEN_FLOOR = 2;      // tolerate up to this many isolated dead links
+const HTTP_BROKEN_FRACTION = 0.1; // ...or 10% of what we checked, whichever is larger
 
 export function linkPolicyError(value) {
   if (!value || value === "#") return "missing URL";
@@ -46,8 +54,10 @@ export async function checkArticles(articles, limit = DEFAULT_LIMIT, fetcher = f
   const results = [];
   for (const article of selected) {
     const policy = linkPolicyError(article.sourceUrl);
-    if (policy) results.push({ state: "broken", detail: policy, headline: article.headline, url: article.sourceUrl });
-    else results.push({ ...(await probe(article.sourceUrl, fetcher)), headline: article.headline, url: article.sourceUrl });
+    // kind distinguishes data-quality defects (policy) from external link-rot (http),
+    // which are treated differently when deciding whether to fail the run.
+    if (policy) results.push({ state: "broken", kind: "policy", detail: policy, headline: article.headline, url: article.sourceUrl });
+    else results.push({ ...(await probe(article.sourceUrl, fetcher)), kind: "http", headline: article.headline, url: article.sourceUrl });
   }
   return results;
 }
@@ -62,14 +72,38 @@ async function main() {
   const results = await checkArticles(payload.articles, Number(process.env.LINK_CHECK_LIMIT ?? DEFAULT_LIMIT));
   const broken = results.filter(result => result.state === "broken");
   const warnings = results.filter(result => result.state === "warning");
-  console.log(JSON.stringify({ checked: results.length, broken, warnings }, null, 2));
+  const policyBroken = broken.filter(result => result.kind === "policy");
+  const httpBroken = broken.filter(result => result.kind === "http");
+
+  // Systemic threshold: isolated external 404/410s are tolerated; many at once are not.
+  const httpTolerance = Math.max(HTTP_BROKEN_FLOOR, Math.ceil(results.length * HTTP_BROKEN_FRACTION));
+  const httpSystemic = httpBroken.length > httpTolerance;
+  const fail = policyBroken.length > 0 || httpSystemic;
+
+  console.log(JSON.stringify({
+    checked: results.length,
+    policyBroken,
+    httpBroken,
+    warnings,
+    httpTolerance,
+    fail,
+  }, null, 2));
+
   if (process.env.GITHUB_STEP_SUMMARY) {
     const fs = await import("node:fs/promises");
-    const rows = broken.map(item => `| ${item.detail} | ${item.headline ?? "(untitled)"} | ${item.url} |`).join("\n") || "| None | — | — |";
-    await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, `## Deployed article-link health\n\nChecked ${results.length} recent links; found ${broken.length} broken and ${warnings.length} transient warning(s).\n\n| Result | Article | URL |\n|---|---|---|\n${rows}\n`);
+    const rows = broken.map(item => `| ${item.kind === "policy" ? "policy" : "dead link"} | ${item.detail} | ${item.headline ?? "(untitled)"} | ${item.url} |`).join("\n") || "| — | None | — | — |";
+    const verdict = fail
+      ? (policyBroken.length
+          ? `**FAIL** — ${policyBroken.length} policy violation(s): the app served ${policyBroken.length === 1 ? "a link" : "links"} in a disallowed shape.`
+          : `**FAIL** — ${httpBroken.length} dead links exceeds the systemic threshold of ${httpTolerance}.`)
+      : `**PASS** — ${httpBroken.length} isolated dead link(s) within tolerance (${httpTolerance}); ${warnings.length} transient warning(s).`;
+    await fs.appendFile(
+      process.env.GITHUB_STEP_SUMMARY,
+      `## Deployed article-link health\n\n${verdict}\n\nChecked ${results.length} recent links; ${policyBroken.length} policy violation(s), ${httpBroken.length} dead link(s), ${warnings.length} transient warning(s).\n\n| Type | Detail | Article | URL |\n|---|---|---|---|\n${rows}\n`
+    );
   }
-  if (broken.length) process.exitCode = 1;
+
+  if (fail) process.exitCode = 1;
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) main().catch(error => { console.error(error); process.exitCode = 1; });
-
