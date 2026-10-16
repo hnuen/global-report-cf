@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-16T13:08:24.907Z",
+  "updatedAt": "2026-10-16T15:08:32.812Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261016",
+      "code": "20261016",
+      "title": "Issuance of Amended Venezuela-related General License and Frequently Asked Question",
+      "date": "October 16, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261015",
       "code": "20261015",
@@ -54,12 +60,6 @@
       "code": "20261002",
       "title": "Counter Terrorism Designations",
       "date": "October 02, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20261001",
-      "code": "20261001",
-      "title": "Iran-related Designations and Designations Updates; Transnational Criminal Organizations Designation; Publication of Iran-related Determination; Publication of Amended Iran-related Frequently Asked Question",
-      "date": "October 01, 2026"
     }
   ],
   "civilPenalties": [
@@ -2541,7 +2541,7 @@
     "venezuela-related-sanctions": {
       "name": "Venezuela-Related Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/venezuela-related-sanctions",
-      "lastUpdated": "Oct 14, 2026",
+      "lastUpdated": "Oct 16, 2026",
       "status": "active",
       "statusLabel": "Active",
       "statusReason": "",
@@ -3037,16 +3037,16 @@
           "url": "https://ofac.treasury.gov/media/935736/download?inline"
         },
         {
-          "number": "60",
-          "title": "Venezuela General License 60",
+          "number": "60A",
+          "title": "Venezuela General License 60A",
           "date": "June 18, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/936396/download?inline"
+          "url": "https://ofac.treasury.gov/media/937251/download?inline"
         },
         {
           "number": "61A",
           "title": "Venezuela General License 61A",
-          "date": "June 25, 2026",
+          "date": "October 16, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936841/download?inline"
         },
@@ -3235,12 +3235,6 @@
       "description": "Ukraine's president says a pause on striking energy sites is over following fresh Russian attacks."
     },
     {
-      "title": "North Korea and China open new bridge after 12-year delay",
-      "url": "https://www.bbc.co.uk/news/articles/ck1exgw3j115o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 15, 2026",
-      "description": "China is the North's largest trading partner and a lifeline against the sanctions Pyongyang faces."
-    },
-    {
       "title": "They fled Russia, but the West sent them back",
       "url": "https://www.bbc.co.uk/news/articles/c6x23qpzjklwo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 16, 2026",
@@ -3254,6 +3248,18 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Can Russia help ease tensions between Pakistan and Afghanistan?",
+      "url": "https://www.aljazeera.com/news/2026/10/16/can-russia-help-ease-tensions-between-pakistan-and-afghanistan?traffic_source=rss",
+      "date": "October 16, 2026",
+      "description": "Russia has close ties with the Taliban and is courting Islamabad, but analysts say its leverage remains uncertain."
+    },
+    {
+      "title": "Spain punished by FIFA for Islamophobic chants during Egypt friendly",
+      "url": "https://www.aljazeera.com/sports/2026/10/16/spain-punished-by-fifa-for-islamophobic-chants-in-egypt-friendly?traffic_source=rss",
+      "date": "October 16, 2026",
+      "description": "Spain sanctioned by FIFA after incidents at Espanyol's stadium in Barcelona, which staged the friendly with Egypt."
+    },
     {
       "title": "US in ‘denuclearisation’ talks with Russia and China: Trump",
       "url": "https://www.aljazeera.com/news/2026/10/16/us-in-denuclearisation-talks-with-russia-and-china-trump?traffic_source=rss",
@@ -3271,12 +3277,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/16/trump-rules-out-using-a-nuclear-bomb-on-iran-why-that-matters?traffic_source=rss",
       "date": "October 16, 2026",
       "description": "It is the first time the president has addressed nuclear weapons, but he didn't deny US could use 'mother of all bombs'."
-    },
-    {
-      "title": "China-North Korea border bridge may do little to spur trade, experts say",
-      "url": "https://www.aljazeera.com/economy/2026/10/16/china-north-korea-border-bridge-may-do-little-to-spur-trade-experts-say?traffic_source=rss",
-      "date": "October 16, 2026",
-      "description": "Sanctions and a North Korean leadership that prioritises security dim prospects for trade, analysts say."
     }
   ],
   "occNews": [
@@ -3387,16 +3387,16 @@
   ],
   "regionsNews": [
     {
-      "title": "Children aged 5, 8 and 11 killed in US school shooting before suspect shot by bystander",
-      "url": "https://www.bbc.co.uk/news/articles/cm89zp48k4kzo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Zelensky says Ukraine has right to defend itself after Trump calls latest strikes a 'disgrace'",
+      "url": "https://www.bbc.co.uk/news/articles/c58jz174w89ro?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 16, 2026",
-      "description": "A teacher was also killed in the attack at the Silver Rail Elementary School in the city of Bend, Oregon, police say."
+      "description": "EU leaders rally around Ukraine's president after new criticism from Donald Trump, who says Zelensky is \"more difficult to work with than Putin\"."
     },
     {
-      "title": "'It's really hard to believe' - How Oregon primary school shooting unfolded",
-      "url": "https://www.bbc.co.uk/news/videos/cwe8r29mjd05o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Palestinians and US journalist injured by Israeli settlers in West Bank harvest attack",
+      "url": "https://www.bbc.co.uk/news/articles/c65ynk7212vqo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 16, 2026",
-      "description": "Three children aged 5, 8 and 11 and a teacher were killed after a 16-year-old suspect opened fire in the city of Bend, local police say."
+      "description": "The BBC sees masked settlers attack Palestinians trying to harvest olives, amid a surge in similar incidents."
     },
     {
       "title": "Ship attack reports near Hormuz reach record high as oil exports slow",
@@ -3405,16 +3405,10 @@
       "description": "BBC Verify analysis of data from a UK maritime agency shows 12 vessels were struck in a week."
     },
     {
-      "title": "Zelensky rallies EU support as Trump says Ukraine leader 'more difficult to deal with than Putin'",
-      "url": "https://www.bbc.co.uk/news/articles/c58jz174w89ro?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Pope pictured for first time since surgery and cancer diagnosis",
+      "url": "https://www.bbc.co.uk/news/articles/cw146ej00yn7o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 16, 2026",
-      "description": "The US president launches a new wave of blistering criticism at Volodymyr Zelensky ahead of a meeting of EU leaders in Brussels."
-    },
-    {
-      "title": "China tells Israel to stop 'forced establishment' of West Bank settlements",
-      "url": "https://www.bbc.co.uk/news/articles/cq1j3wdxy48ro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 16, 2026",
-      "description": "Chinese Foreign Minister Wang Yi spoke to Israeli President Isaac Herzog on the sidelines of a conference."
+      "description": "The pontiff was diagnosed with lung cancer after having surgery at Rome's Gemelli Hospital on Tuesday."
     },
     {
       "title": "Dad fined after son, 2, died in Cyprus hotel fall",
@@ -3427,6 +3421,24 @@
       "url": "https://www.bbc.co.uk/news/articles/cq398zl8jmvdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 16, 2026",
       "description": "Ukraine says temporary speed limits to the Starlink internet network disrupted its battlefield missions."
+    },
+    {
+      "title": "Albanian protests turn violent: What we know",
+      "url": "https://www.bbc.co.uk/news/articles/cqdjv90d1jpko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 16, 2026",
+      "description": "Albania's capital Tirana has seen months of protests from an anti-government \"Flamingo\" movement, but what started on Tuesday this week was on a different scale."
+    },
+    {
+      "title": "Patients in chains rescued from suspected illegal rehab centre in South Africa",
+      "url": "https://www.bbc.co.uk/news/articles/cmwyvxj49gpwo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 16, 2026",
+      "description": "Some of the 200 patients were found with \"sores all over their bodies\" and in overcrowded rooms."
+    },
+    {
+      "title": "China tells Israel to stop 'forced establishment' of West Bank settlements",
+      "url": "https://www.bbc.co.uk/news/articles/cq1j3wdxy48ro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 16, 2026",
+      "description": "Chinese Foreign Minister Wang Yi spoke to Israeli President Isaac Herzog on the sidelines of a conference."
     },
     {
       "title": "At least 33 pupils and teacher killed after school roof collapses in Pakistan",
@@ -3525,18 +3537,6 @@
       "description": "The alleged victim, who was in a relationship with the woman, had spotted bright green pellets in the meal."
     },
     {
-      "title": "Indian woman and boyfriend get death sentence in 'blue drum' murder case",
-      "url": "https://www.bbc.co.uk/news/articles/c6wy435gd311o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 15, 2026",
-      "description": "The body was recovered from a large blue plastic storage container - locally called a drum."
-    },
-    {
-      "title": "Student protesters attack government buildings in Albania",
-      "url": "https://www.bbc.co.uk/news/articles/cq80zk5k2ep4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 14, 2026",
-      "description": "Buildings were set alight on the second day of demonstrations from thousands of students who want better university conditions and job prospects."
-    },
-    {
       "title": "Are student protests being manipulated ahead of France's presidential election?",
       "url": "https://www.bbc.co.uk/news/articles/c8zxlyg965r3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 15, 2026",
@@ -3567,6 +3567,12 @@
       "description": "Tesla CEO Elon Musk showcased the vehicle at a facility owned by his SpaceX company, which helped develop the model."
     },
     {
+      "title": "'It's really hard to believe' - How Oregon primary school shooting unfolded",
+      "url": "https://www.bbc.co.uk/news/videos/cwe8r29mjd05o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 16, 2026",
+      "description": "Three children aged 5, 8 and 11 and a teacher were killed after a 16-year-old suspect opened fire in the city of Bend, local police say."
+    },
+    {
       "title": "Israeli settlers attack Palestinians in West Bank during olive harvest",
       "url": "https://www.bbc.co.uk/news/videos/cqn06zx2r15jo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 16, 2026",
@@ -3577,12 +3583,6 @@
       "url": "https://www.bbc.co.uk/news/videos/cmwyq62z0n19o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 15, 2026",
       "description": "CCTV video verified by the BBC shows the drone strike in the town of Mayaky in Ukraine's Odesa region."
-    },
-    {
-      "title": "At the scene of a school roof collapse in Pakistan",
-      "url": "https://www.bbc.co.uk/news/videos/cr5yn5wel153o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 15, 2026",
-      "description": "At least 33 pupils and a teacher were killed according to hospital officials, and more than a dozen were injured."
     },
     {
       "title": "Banks expect to be hit with higher taxes in Budget",
@@ -3879,7 +3879,67 @@
       "description": "What age will you get your state pension?"
     },
     {
-      "title": "Pro-Nazi chants before Ajax match slammed by Croatia leaders",
+      "title": "Qatar announces ‘massive’ solar plant project in Lebanon",
+      "url": "https://www.aljazeera.com/news/2026/10/16/qatar-announces-massive-solar-plant-project-in-lebanon?traffic_source=rss",
+      "date": "October 16, 2026",
+      "description": "Sheikh Mohammed also discussed Israeli 'violations' in Lebanese territory with Prime Minister Nawaf Salam."
+    },
+    {
+      "title": "How Israeli firm’s ‘zero-click’ malware attack poses global security risk",
+      "url": "https://www.aljazeera.com/news/2026/10/16/how-israeli-firms-zero-click-malware-attack-poses-global-security-risk?traffic_source=rss",
+      "date": "October 16, 2026",
+      "description": "A new ‘zero-click’ hack uses ads to target victims without any action needed on their part."
+    },
+    {
+      "title": "Qatar FM calls for Israeli withdrawal from Lebanon",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/16/qatar-fm-calls-for-israeli-withdrawal-from-lebanon?traffic_source=rss",
+      "date": "October 16, 2026",
+      "description": "Qatar’s prime minister and minister of foreign affairs has reaffirmed his country’s support for Lebanon."
+    },
+    {
+      "title": "Ethiopia announces instalment of interim government in Tigray",
+      "url": "https://www.aljazeera.com/news/2026/10/16/ethiopia-announces-instalment-of-interim-government-in-tigray?traffic_source=rss",
+      "date": "October 16, 2026",
+      "description": "After military pushed back TPLF uprising, PM Abiy Ahmed promises free elections within six months."
+    },
+    {
+      "title": "Jerusalem Daily: Israeli settlers burn Palestinian olive groves",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/16/jerusalem-daily-israeli-settlers-burn-palestinian-olive-groves?traffic_source=rss",
+      "date": "October 16, 2026",
+      "description": "Israeli settlers carry out violent pogroms on Palestinian olive groves in the towns of Abu Falah and Turmus Ayya."
+    },
+    {
+      "title": "Palestinians, US journalist attacked in West Bank pogrom: What we know",
+      "url": "https://www.aljazeera.com/news/2026/10/16/palestinians-us-journalist-attacked-in-west-bank-pogrom-what-we-know?traffic_source=rss",
+      "date": "October 16, 2026",
+      "description": "Israeli settlers attacked Palestinians harvesting olives and severely beat Washington Post photojournalist Heidi Levine."
+    },
+    {
+      "title": "India call up Bhuvneshwar for West Indies T20 finale with doubt over Singh",
+      "url": "https://www.aljazeera.com/sports/2026/10/16/india-call-up-bhuvneshwar-for-west-indies-t20-finale-with-doubt-over-singh?traffic_source=rss",
+      "date": "October 16, 2026",
+      "description": "Bhuvneshwar Kumar added to India squad for fifth and final T20 of series with West Indies, as Arshdeep Singh a doubt."
+    },
+    {
+      "title": "Israeli settlers continue pogrom amid olive harvest in occupied West Bank",
+      "url": "https://www.aljazeera.com/news/2026/10/16/israeli-settlers-continue-progrom-amid-olive-harvest-in-occupied-west-bank?traffic_source=rss",
+      "date": "October 16, 2026",
+      "description": "At least two people, including Washington Post journalist, injured as settlers armed with clubs and guns attack."
+    },
+    {
+      "title": "How UN chief Antonio Guterres tests the limits of quiet diplomacy",
+      "url": "https://www.aljazeera.com/features/longform/2026/10/16/how-un-chief-antonio-guterres-tests-the-limits-of-quiet-diplomacy?traffic_source=rss",
+      "date": "October 16, 2026",
+      "description": "Portugal's ex-PM seeks to resolve crises via patient negotiation, but success relies on leaders' willingness to act."
+    },
+    {
+      "title": "India police detain ‘Cockroach’ party founder ahead of protest",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/16/india-police-detain-cockroach-party-founder-ahead-of-protest?traffic_source=rss",
+      "date": "October 16, 2026",
+      "description": "Indian police detained Cockroach Janta Party founder Abhijeet Dipke ahead of a protest."
+    },
+    {
+      "title": "Pro-Nazi chants before Hajduk Split-Ajax UEFA Europa League match slammed",
       "url": "https://www.aljazeera.com/sports/2026/10/16/pro-nazi-chants-ahead-of-ajax-match-slammed-by-croatia-leaders?traffic_source=rss",
       "date": "October 16, 2026",
       "description": "Croatia's Hajduk Split hosted Ajax on Thursday, but chants for pre-World War II regime precede UEFA Europa League game."
@@ -3937,72 +3997,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/16/un-warns-nearly-1-million-in-gaza-face-flood-risks-as-winter-approaches?traffic_source=rss",
       "date": "October 16, 2026",
       "description": "The UN is warning that nearly one million displaced Palestinians face flooding risks as winter approaches."
-    },
-    {
-      "title": "India’s mass voter purge is hollowing out democracy",
-      "url": "https://www.aljazeera.com/opinions/2026/10/16/indias-mass-voter-purge-is-hollowing-out-democracy?traffic_source=rss",
-      "date": "October 16, 2026",
-      "description": "The SIR is disenfranchising marginalised communities and advancing the Hindu nationalist project."
-    },
-    {
-      "title": "Man Utd veering towards crisis as Man City cloud hangs over Premier League",
-      "url": "https://www.aljazeera.com/sports/2026/10/16/man-utd-veering-towards-crisis-as-man-city-cloud-hangs-over-premier-league?traffic_source=rss",
-      "date": "October 16, 2026",
-      "description": "Lisandro Martinez apologises for his criticism after on-field spotlight shifts to Manchester United from City."
-    },
-    {
-      "title": "Indian police launch New Delhi clampdown for Cockroach Party rally",
-      "url": "https://www.aljazeera.com/news/2026/10/16/indian-police-launch-new-delhi-clampdown-for-cockroach-party-rally?traffic_source=rss",
-      "date": "October 16, 2026",
-      "description": "Cockroach Janta Party standoff with government extended as youth-led movement calls protest over jailing of activists."
-    },
-    {
-      "title": "Asian Cup in Saudi Arabia still on, organisers say, but golf tour postponed",
-      "url": "https://www.aljazeera.com/sports/2026/10/16/asian-cup-in-saudi-arabia-still-on-say-organisers-but-golf-tour-postponed?traffic_source=rss",
-      "date": "October 16, 2026",
-      "description": "Asian Cup preparations continue for January, but Asian Tour delays golf's Saudi Invitational after Houthi attacks."
-    },
-    {
-      "title": "Norway wealth fund urged to ease nuclear arms ban after Gaza investment row",
-      "url": "https://www.aljazeera.com/news/2026/10/16/norway-wealth-fund-urged-to-ease-nuclear-arms-ban-after-gaza-investment-row?traffic_source=rss",
-      "date": "October 16, 2026",
-      "description": "The review called for Norway's sovereign wealth fund to lift ethical risk limitations on its investments."
-    },
-    {
-      "title": "Tesla unveils car that can drive upside down and jump through the air",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/16/10-16-tesla-flying-car-clip?traffic_source=rss",
-      "date": "October 16, 2026",
-      "description": "Tesla has unveiled an electric car that can drive upside down and use rocket-like thrusters to jump and turn mid-air."
-    },
-    {
-      "title": "How Israel’s elections will affect Palestinians",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/16/how-israels-elections-will-affect-palestinians?traffic_source=rss",
-      "date": "October 16, 2026",
-      "description": "How Israel votes this month will shape the future of over 5.5 million Palestinians who have no say in the election."
-    },
-    {
-      "title": "In Israel, Netanyahu’s ultimate legacy is the opposition he has forged",
-      "url": "https://www.aljazeera.com/news/2026/10/16/in-israel-netanyahus-ultimate-legacy-is-the-opposition-he-has-forged?traffic_source=rss",
-      "date": "October 16, 2026",
-      "description": "As Israel heads to the polls, PM Netanyahu’s most enduring domestic legacy may be the right-wing opposition he faces."
-    },
-    {
-      "title": "Which countries waste the most food, and how to reduce waste at home",
-      "url": "https://www.aljazeera.com/news/2026/10/16/which-countries-waste-the-most-food-and-how-to-reduce-waste-at-home?traffic_source=rss",
-      "date": "October 16, 2026",
-      "description": "This World Food Day, 645 million people are going hungry, yet more than a billion tonnes of food is wasted annually."
-    },
-    {
-      "title": "Vibe coding: Game-changer or risky business?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/16/vibe-coding-game-changer-or-risky-business?traffic_source=rss",
-      "date": "October 16, 2026",
-      "description": "Vibe coding lets users build software with AI, but free alternatives to popular programmes raise security concerns."
-    },
-    {
-      "title": "Alone in Gaza: Genocide leaves Palestinian man without family or a home",
-      "url": "https://www.aljazeera.com/features/2026/10/16/alone-in-gaza-genocide-leaves-palestinian-man-without-family-or-a-home?traffic_source=rss",
-      "date": "October 16, 2026",
-      "description": "One man wanders Gaza in search of somewhere to sleep, having lost his family in an Israeli strike."
     }
   ]
 }
