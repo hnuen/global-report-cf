@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T22:08:27.160Z",
+  "updatedAt": "2026-10-18T13:08:26.112Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261016",
@@ -3229,42 +3229,60 @@
   "unNotices": [],
   "bbcNews": [
     {
+      "title": "Oil facilities hit in deadly overnight attack on St Petersburg",
+      "url": "https://www.bbc.co.uk/news/articles/c3eweygrjzd7o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 18, 2026",
+      "description": "At least one person was killed in the strikes, which also hit a data centre used by Russia's equivalent of Facebook."
+    },
+    {
       "title": "Trump waives several Russia sanctions as row with Zelensky intensifies",
       "url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 17, 2026",
+      "date": "October 18, 2026",
       "description": "The US president temporarily ends many restrictions on Moscow recently passed by Congress over \"national security\" concerns."
     },
     {
-      "title": "Trump 'completely wrong' to restrict support for Ukraine, Italian minister tells BBC",
-      "url": "https://www.bbc.co.uk/news/articles/c64g18ljjd8do?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 16, 2026",
-      "description": "Defence Minister Guido Crosetto tells the BBC the US risks prolonging Russia's full-scale invasion rather than helping to end it."
+      "title": "Photos show luxury boat with 50m pool and water slides near Kim Jong Un's summer retreat",
+      "url": "https://www.bbc.co.uk/news/articles/cmy4xnyyg1lyo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 17, 2026",
+      "description": "Satellite images give clues about how Kim spends his holidays - something far out of reach for most North Koreans."
     },
     {
       "title": "Inside Ukrainian offensive pushing Russia back - with Starlink playing a key role",
       "url": "https://www.bbc.co.uk/news/articles/cvx284w16z1po?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 16, 2026",
       "description": "The BBC joins Ukraine's Operation Vivaldi as it regains crucial territory in the Donbas, but optimism has been dampened by souring relations with President Trump."
-    },
-    {
-      "title": "Watch: What does Starlink have to do with the Ukraine-Russia war?",
-      "url": "https://www.bbc.co.uk/news/videos/cqr7yzpxm083o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 15, 2026",
-      "description": "Ukraine's president has told Elon Musk that any restriction on the Starlink's system cost lives."
     }
   ],
   "ajNews": [
     {
-      "title": "Will the EU come to Ukraine’s rescue in war against Russia?",
-      "url": "https://www.aljazeera.com/video/inside-story/2026/10/17/will-the-eu-come-to-ukraines-rescue-in-war-against-russia?traffic_source=rss",
-      "date": "October 17, 2026",
-      "description": "US support at risk as Trump-Zelenskyy relations nosedive."
+      "title": "Who is Mehrdad Akhlaghi, Iran’s new tech-focused defence minister?",
+      "url": "https://www.aljazeera.com/news/2026/10/18/who-is-mehrdad-akhlagh-irans-new-tech-focused-defence-minister?traffic_source=rss",
+      "date": "October 18, 2026",
+      "description": "Akhlaghi's experience centres on ballistic missiles, aerospace technology and defence-industrial production."
     },
     {
-      "title": "Trump faces bipartisan backlash over Russia sanctions waiver",
-      "url": "https://www.aljazeera.com/news/2026/10/17/trump-faces-bipartisan-backlash-over-russia-sanctions-waiver?traffic_source=rss",
-      "date": "October 17, 2026",
-      "description": "Republicans and Democrats condemn Trump’s decision to suspend sanctions, saying it undermines support for Ukraine."
+      "title": "Ukrainian drone attack on Russia’s St Petersburg kills 1, hits energy sites",
+      "url": "https://www.aljazeera.com/news/2026/10/18/ukrainian-drone-attack-on-russias-st-petersburg-kills-1-hits-energy-sites?traffic_source=rss",
+      "date": "October 18, 2026",
+      "description": "Zelenskyy says Russian attacks on Ukraine overnight kill two people, adding that Moscow continues to break energy ceasefire."
+    },
+    {
+      "title": "Russia’s war in Ukraine puts Europe on edge",
+      "url": "https://www.aljazeera.com/video/talk-to-al-jazeera/2026/10/18/russias-war-in-ukraine-puts-europe-on-edge?traffic_source=rss",
+      "date": "October 18, 2026",
+      "description": "Poland’s FM addresses growing concerns that Russia’s war in Ukraine could spill over into neighbouring NATO countries."
+    },
+    {
+      "title": "Rubio says Ukraine without access to Starshield, future ‘under discussion’",
+      "url": "https://www.aljazeera.com/news/2026/10/18/rubio-says-ukraine-without-access-to-starshield-future-under-discussion?traffic_source=rss",
+      "date": "October 18, 2026",
+      "description": "Top US diplomat says Ukraine has requested access to military-grade version of Starlink for strikes deep inside Russia."
+    },
+    {
+      "title": "Haaland’s record scoring spree helps Man City to seventh Premier League win",
+      "url": "https://www.aljazeera.com/sports/2026/10/18/haalands-record-scoring-spree-helps-man-city-to-seventh-premier-league-win?traffic_source=rss",
+      "date": "October 18, 2026",
+      "description": "Manchester City continue their 100 percent start despite calls for sanctions after being found guilty of breaking rules."
     }
   ],
   "occNews": [
@@ -3375,16 +3393,28 @@
   ],
   "regionsNews": [
     {
-      "title": "Violent clashes, looting and buildings ablaze in France as over 1,000 arrested after protests",
-      "url": "https://www.bbc.co.uk/news/articles/c6d937wedj7jo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 17, 2026",
-      "description": "Disorder broke out in cities across the country on a day in which more than half a million joined cost of living protests."
+      "title": "Burnt out cars and shattered glass on Paris streets after protests turn to riots and looting",
+      "url": "https://www.bbc.co.uk/news/articles/c574pdzl0k4no?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 18, 2026",
+      "description": "Around 1,800 people were arrested after nationwide protests saw outbreaks of violence and vandalism."
+    },
+    {
+      "title": "A wave of homemade, synthetic drugs sweeps US and deepens crisis",
+      "url": "https://www.bbc.co.uk/news/articles/cmx2wvyv5j17o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 18, 2026",
+      "description": "BBC News hears from users, dealers, prison and recovery workers as the country battles with a deadly new drug epidemic."
     },
     {
       "title": "European diplomats attacked by Israeli settlers in West Bank",
       "url": "https://www.bbc.co.uk/news/articles/c962ydpmjm3zo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 17, 2026",
+      "date": "October 18, 2026",
       "description": "The Israeli military condemns the violence but the prime minister's office says it is part of a \"smear\" campaign."
+    },
+    {
+      "title": "Several dead or injured in major fire at Canada military base",
+      "url": "https://www.bbc.co.uk/news/articles/cr86z0w4lxdxo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 18, 2026",
+      "description": "Officials have not given a cause or death toll, citing the \"very active and delicate\" situation at Canadian Forces Base Wainwright."
     },
     {
       "title": "Anti-government protesters battle with police in Albania",
@@ -3405,22 +3435,10 @@
       "description": "The 16-year-old suspect previously attended the primary school and had targeted a special educational needs classroom, police say."
     },
     {
-      "title": "Three men jailed for 158 years each for murdering Australian and US surfers in Mexico",
-      "url": "https://www.bbc.co.uk/news/articles/c3kgqjkzw29wo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 17, 2026",
-      "description": "Brothers Jake and Callum Robinson and their friend Carter Rhoad were killed on a surfing trip in an apparent botched robbery."
-    },
-    {
       "title": "Nursery owner in China jailed for life after hundreds of children poisoned",
       "url": "https://www.bbc.co.uk/news/articles/cqe9lx54g7x9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 17, 2026",
       "description": "She and five staff members were found to have used the inedible paint in meals to make them look more appealing."
-    },
-    {
-      "title": "Brazil sees record fall in Amazon deforestation as key election looms",
-      "url": "https://www.bbc.co.uk/news/articles/cqe8rzg6zl00o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 17, 2026",
-      "description": "The Amazon rainforest is a crucial buffer against climate change - but deforestation had expanded under former president Jair Bolsonaro."
     },
     {
       "title": "Rare pink diamond goes on display in France 100 years after amateur heist",
@@ -3435,28 +3453,22 @@
       "description": "The pontiff will give the traditional Angelus prayer and blessing in St Peter's Square on Sunday."
     },
     {
+      "title": "Three men jailed for 158 years each for murdering Australian and US surfers in Mexico",
+      "url": "https://www.bbc.co.uk/news/articles/c3kgqjkzw29wo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 17, 2026",
+      "description": "Brothers Jake and Callum Robinson and their friend Carter Rhoad were killed on a surfing trip in an apparent botched robbery."
+    },
+    {
+      "title": "Brazil sees record fall in Amazon deforestation as key election looms",
+      "url": "https://www.bbc.co.uk/news/articles/cqe8rzg6zl00o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 17, 2026",
+      "description": "The Amazon rainforest is a crucial buffer against climate change - but deforestation had expanded under former president Jair Bolsonaro."
+    },
+    {
       "title": "Katie Zacharia leaving White House role less than five days into job",
       "url": "https://www.bbc.co.uk/news/articles/c32l4ekpvzl8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 17, 2026",
       "description": "Her public debut as press secretary ended with a flurry of media criticism about her credentials and preparedness."
-    },
-    {
-      "title": "Actress Selma Blair says she 'did not intend to harm anyone' in plane altercation",
-      "url": "https://www.bbc.co.uk/news/articles/cwly3zd1r45ro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 17, 2026",
-      "description": "A publicist for the actress said the incident stemmed from a \"medical emergency\" and said she has a neurological disorder that can cause out-of-control responses."
-    },
-    {
-      "title": "Judge throws out child sex abuse charges against actor Timothy Busfield",
-      "url": "https://www.bbc.co.uk/news/articles/c8vgxwq4q5r2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 17, 2026",
-      "description": "The judge in the case said on Friday that the prosecutor \"failed to act in a fair and impartial manner\"."
-    },
-    {
-      "title": "Palestinians and US journalist injured by Israeli settlers in West Bank harvest attack",
-      "url": "https://www.bbc.co.uk/news/articles/c65ynk7212vqo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 16, 2026",
-      "description": "The BBC sees masked settlers attack Palestinians trying to harvest olives, amid a surge in similar incidents."
     },
     {
       "title": "The uncertain future of Canada's 30 rescued belugas",
@@ -3489,6 +3501,24 @@
       "description": "As the 3 November election approaches and both parties fight for control of Congress, some clear themes have emerged."
     },
     {
+      "title": "Pope Leo XIV thanks wellwishers in first event after cancer surgery",
+      "url": "https://www.bbc.co.uk/news/videos/cq70px6pjkg5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 18, 2026",
+      "description": "The Pope's first event since his lung cancer diagnosis and surgery saw him recite the traditional Angelus prayer from the balcony of the Apostolic Palace."
+    },
+    {
+      "title": "Parisians wake up to protest damage and looted shops",
+      "url": "https://www.bbc.co.uk/news/videos/cmn5vey19q3go?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 18, 2026",
+      "description": "Violence broke out across France on Saturday during the latest day of demonstrations against conditions in schools and the cost of living."
+    },
+    {
+      "title": "How day of protests unfolded as disorder breaks out across France",
+      "url": "https://www.bbc.co.uk/news/videos/cwz0vy770gpzo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 17, 2026",
+      "description": "Demonstrations across the country turned violent, with cars and buildings set alight and shops ransacked."
+    },
+    {
       "title": "Watch: Will Ukraine get the support needed as tensions with US rise?",
       "url": "https://www.bbc.co.uk/news/videos/cm2ke1v8e4geo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 16, 2026",
@@ -3511,6 +3541,48 @@
       "url": "https://www.bbc.co.uk/news/videos/cqn06zx2r15jo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 16, 2026",
       "description": "Israeli settlers were seen attacking Palestinian farmers and setting fire to olive trees in the West Bank."
+    },
+    {
+      "title": "There's a crackdown on sports piracy - but is it already out of control?",
+      "url": "https://www.bbc.co.uk/news/articles/cmx2375zqwwwo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 18, 2026",
+      "description": "The sports industry's lucrative business model is being undermined by dodgy TV sticks and illegal streaming links, writes Theo Leggett."
+    },
+    {
+      "title": "Third runway at Heathrow Airport would drive growth, Healey says",
+      "url": "https://www.bbc.co.uk/news/articles/cw0k07d2nj43o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 17, 2026",
+      "description": "It comes after the prime minister refused to say whether he backed expansion."
+    },
+    {
+      "title": "Faisal Islam: Why China and AI are worrying global finance bosses",
+      "url": "https://www.bbc.co.uk/news/articles/cm4g189jvnxjo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 17, 2026",
+      "description": "At the IMF meeting in Bangkok this week finance and business leaders grappled with uncertainty."
+    },
+    {
+      "title": "What is the Budget and what could be in it?",
+      "url": "https://www.bbc.co.uk/news/articles/c6x2zrjl7kjno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 18, 2026",
+      "description": "Chancellor John Healey will set out his plans for UK taxes on 28 October."
+    },
+    {
+      "title": "Turning the tides: Could hidden sea power energise our coastal towns?",
+      "url": "https://www.bbc.co.uk/news/articles/c8y56y6xg9n9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 18, 2026",
+      "description": "Engineer David Mummery has developed a tidal energy generator that he says can change lives for people living in coastal communities."
+    },
+    {
+      "title": "Living with a stink? Technology might help",
+      "url": "https://www.bbc.co.uk/news/articles/cr6240q1w136o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 15, 2026",
+      "description": "Smells from rubbish dumps and industrial facilities are being more carefully monitored."
+    },
+    {
+      "title": "'I took a chance on the whisky industry and I haven't looked back'",
+      "url": "https://www.bbc.co.uk/news/articles/c6y8ln9831v3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 18, 2026",
+      "description": "Zoey Darnbrough had no idea there was a distillery near her home - now she has a top tourism role there."
     },
     {
       "title": "Banks expect to be hit with higher taxes in Budget",
@@ -3541,12 +3613,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cm79pe5yej7no?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 15, 2026",
       "description": "The culture secretary says the deal could affect free expression in the media and the variety of Britain's news landscape."
-    },
-    {
-      "title": "Living with a stink? Technology might help",
-      "url": "https://www.bbc.co.uk/news/articles/cr6240q1w136o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 15, 2026",
-      "description": "Smells from rubbish dumps and industrial facilities are being more carefully monitored."
     },
     {
       "title": "'I paid thousands to a company for jobs that never came'",
@@ -3639,18 +3705,6 @@
       "description": "The CWU says more posties are leaving since a new delivery system was brought in that it claims is not working in hundreds of offices."
     },
     {
-      "title": "Not building third runway would be 'huge missed opportunity', warns Heathrow boss",
-      "url": "https://www.bbc.co.uk/news/articles/ckdd8egder5ro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 14, 2026",
-      "description": "Thomas Woldbye tells the Today progamme it would be \"good to know\" the government's position on the project, after comments made by the prime minister."
-    },
-    {
-      "title": "Bank of America hit with $1.2bn fine for money laundering failings",
-      "url": "https://www.bbc.co.uk/news/articles/cm3wvxy6n3z8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 14, 2026",
-      "description": "The bank inadequately flagged transactions linked to potential Chinese money laundering networks, the Treasury said."
-    },
-    {
       "title": "As Christmas rush looms, how do China-made toys find their way to the US?",
       "url": "https://www.bbc.co.uk/news/articles/c5djvyde0y1jo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 14, 2026",
@@ -3723,6 +3777,18 @@
       "description": "Nvidia, OpenAI and Anthropic are all now selling their own limited edition fashion lines."
     },
     {
+      "title": "Gleaning group gives £1m of produce to food banks",
+      "url": "https://www.bbc.co.uk/news/articles/c6n49w1r2zxjo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 18, 2026",
+      "description": "Gleaning Cornwall warns that more funding is needed as costs rise sharply."
+    },
+    {
+      "title": "Heating oil customers face tough winter",
+      "url": "https://www.bbc.co.uk/news/articles/cq1j3x66e1rno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 18, 2026",
+      "description": "The government plans to regulate heating oil prices after increases."
+    },
+    {
       "title": "How day of protests unfolded as disorder breaks out across France",
       "url": "https://www.bbc.co.uk/news/videos/cwz0vy770gpzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 17, 2026",
@@ -3739,18 +3805,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cqde8zk6d916o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 17, 2026",
       "description": "Deputy Louise Doublet does not think the cost of living was considered in the ending of a trial."
-    },
-    {
-      "title": "Charity reflects on changing needs over 25 years",
-      "url": "https://www.bbc.co.uk/news/articles/c615jnxv7n45o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 17, 2026",
-      "description": "Help a Guernsey Child says it has provided in excess of £1.2m worth of essential support."
-    },
-    {
-      "title": "Nightclubs are disappearing - and it's affecting young people",
-      "url": "https://www.bbc.co.uk/news/articles/cm5yngn0pl2ro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 17, 2026",
-      "description": "One young person said with no nightlife in their town they cannot \"let loose and mess around\"."
     },
     {
       "title": "My hometown shows that high streets have to change or die",
@@ -3807,142 +3861,124 @@
       "description": "What age will you get your state pension?"
     },
     {
-      "title": "Photos: No Kings rallies in US urge midterm voters to cast ballots early",
-      "url": "https://www.aljazeera.com/gallery/2026/10/17/photos-no-kings-rallies-in-us-urge-midterm-voters-to-cast-ballots-early?traffic_source=rss",
-      "date": "October 17, 2026",
-      "description": "Thousands gathered at events throughout the country on Saturday, building on two years of No Kings marches."
+      "title": "Is FIFA scrapping its peace prize after awarding it to US President Trump?",
+      "url": "https://www.aljazeera.com/sports/2026/10/18/fifa-peace-prize-football-us-president-donald-trump?traffic_source=rss",
+      "date": "October 18, 2026",
+      "description": "FIFA committee to assess the merits of the award after several members demand its discontinuation."
     },
     {
-      "title": "Cost of living protests hit Belgium, Italy, Portugal and France",
-      "url": "https://www.aljazeera.com/news/2026/10/17/cost-of-living-protests-hit-belgium-italy-portugal-and-france?traffic_source=rss",
-      "date": "October 17, 2026",
-      "description": "Hundreds of thousands took to the streets for separate demonstrations putting pressure on governments across the EU."
+      "title": "Paris residents tell Al Jazeera they’re dismayed by protest damage",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/18/paris-residents-tell-al-jazeera-theyre-dismayed-by-protest-damage?traffic_source=rss",
+      "date": "October 18, 2026",
+      "description": "Paris residents tell Al Jazeera they’re dismayed by the level of damage caused when Saturday’s protests turned violent."
     },
     {
-      "title": "Ten killed in fire at beach resort in Bangladesh",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/17-10-sv-coxsbazaar-hotel-blaze-_-bd?traffic_source=rss",
-      "date": "October 17, 2026",
-      "description": "Ten people, including six members of the same family, were killed in a fire at a beach resort in Bangladesh."
+      "title": "Why have settler pogroms surged during olive harvest season in West Bank?",
+      "url": "https://www.aljazeera.com/news/2026/10/18/why-have-settler-pogroms-surged-during-olive-harvest-season-in-west-bank?traffic_source=rss",
+      "date": "October 18, 2026",
+      "description": "France and Belgium condemn settler attack on diplomats, but critics say EU needs to act beyond words of condemnation."
     },
     {
-      "title": "Protesters allege police brutality as violent clashes rage on in Albania",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/protesters-allege-police-brutality-as-violent-clashes-rage-on-in-albania?traffic_source=rss",
-      "date": "October 17, 2026",
-      "description": "Protesters in Albania accuse riot police of brutality as clashes turn violent outside the Education Ministry."
+      "title": "Nottingham Forest vs Arsenal LIVE: Premier League",
+      "url": "https://www.aljazeera.com/sports/liveblog/2026/10/18/nottingham-forest-vs-arsenal-live-premier-league?traffic_source=rss",
+      "date": "October 18, 2026",
+      "description": "Follow updates from the Premier League clash, including build-up, analysis and live text commentary of the game."
     },
     {
-      "title": "Al Jazeera reporter harassed, struck on head amid France protests, looting",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/al-jazeera-reporter-harassed-struck-on-head-amid-france-protests-looting?traffic_source=rss",
-      "date": "October 17, 2026",
-      "description": "Al Jazeera’s Rosie Rosie Birchard was harassed by protesters looting shops in Rennes, France."
+      "title": "There’s a ‘New Middle East’, but not the one Israel planned",
+      "url": "https://www.aljazeera.com/video/pinch-point/2026/10/18/pp-new-middle-east?traffic_source=rss",
+      "date": "October 18, 2026",
+      "description": "Instead of redrawing the region, Israel's wars of expasion pushed the region to work together against it."
     },
     {
-      "title": "Iranian TV airs video said to show tanker explosion in Hormuz",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/iranian-tv-airs-video-said-to-show-tanker-explosion-in-hormuz?traffic_source=rss",
-      "date": "October 17, 2026",
-      "description": "Iranian state TV aired footage claiming to show an oil tanker exploding after striking a naval mine in Hormuz"
+      "title": "Funeral held for 75 Palestinians after remains recovered from Gaza ruins",
+      "url": "https://www.aljazeera.com/news/2026/10/18/funeral-held-for-75-palestinians-after-remains-recovered-from-gaza-ruins?traffic_source=rss",
+      "date": "October 18, 2026",
+      "description": "Most of the victims were from the Daraj neighbourhood in Gaza City, the Health Ministry says."
     },
     {
-      "title": "At least 17 killed in stampede at religious gathering in India",
-      "url": "https://www.aljazeera.com/news/2026/10/17/at-least-17-killed-in-stampede-at-religious-gathering-in-india?traffic_source=rss",
-      "date": "October 17, 2026",
-      "description": "Incident took place at festival in north Kolkata, in India's West Bengal state, amid big crowds and rainfall, police said."
+      "title": "What help can Egypt offer Saudi Arabia in the war against the Houthis?",
+      "url": "https://www.aljazeera.com/news/2026/10/18/what-help-can-egypt-offer-saudi-arabia-in-the-war-against-the-houthis?traffic_source=rss",
+      "date": "October 18, 2026",
+      "description": "Analysts say that any move from Egypt will remain 'strictly defensive', as the conflict in Yemen intensifies."
     },
     {
-      "title": "Albanian police fire rubber bullets as protests against Rama escalate",
-      "url": "https://www.aljazeera.com/news/2026/10/17/albanian-police-fire-rubber-bullets-as-protests-against-rama-escalate?traffic_source=rss",
-      "date": "October 17, 2026",
-      "description": "Five days of clashes rock Tirana as students join a wider movement demanding Prime Minister Edi Rama's resignation."
+      "title": "Jordan-Israel border becomes new hotspot for sophisticated drug trade",
+      "url": "https://www.aljazeera.com/news/2026/10/18/jordans-israel-border-becomes-a-new-hotspot-for-a-sophisticated-drug-trade?traffic_source=rss",
+      "date": "October 18, 2026",
+      "description": "A surge in drug smuggling from Israel to Jordan using drones and balloons prompts accusations of border guard collusion."
     },
     {
-      "title": "Hundreds rally in Kyiv to demand the resignation of Mayor Vitali Klitschko",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/hundreds-rally-in-kyiv-to-demand-the-resignation-of-mayor-vitali-klitschko?traffic_source=rss",
-      "date": "October 17, 2026",
-      "description": "Hundreds of protesters rallied outside the office of Kyiv’s mayor Vitali Klitschko, demanding that he steps down."
+      "title": "Palestinian karate champion Maryam Bsharat wins second world title",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/18/palestinian-karate-champion-maryam-bsharat-wins-second-world-title?traffic_source=rss",
+      "date": "October 18, 2026",
+      "description": "Palestinian athlete Maryam Bsharat won gold at the World Karate Championships in Poland."
     },
     {
-      "title": "Is the US Embassy in Jerusalem for Israel or America?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/is-the-us-embassy-in-jerusalem-for-israel-or-america?traffic_source=rss",
-      "date": "October 17, 2026",
-      "description": "What led to the deaths of the nine Americans killed in the occupied West Bank since 2022?"
+      "title": "Gaza Family Reunion: Finding each other after the ‘ceasefire’",
+      "url": "https://www.aljazeera.com/video/witness/2026/10/18/gaza-family-reunion-finding-each-other-after-the-ceasefire?traffic_source=rss",
+      "date": "October 18, 2026",
+      "description": "Separated by war for more than a year, a captain in Gaza’s Civil Defence unit attempts to reunite with his family."
     },
     {
-      "title": "Israeli drone attacks kill six Palestinians across Gaza despite ‘ceasefire’",
-      "url": "https://www.aljazeera.com/news/2026/10/17/israeli-drone-attacks-kill-six-palestinians-across-gaza-despite-ceasefire?traffic_source=rss",
-      "date": "October 17, 2026",
-      "description": "Attacks hit several areas as UNICEF reports more than 340 children killed since 'ceasefire' began a year ago."
+      "title": "Egypt to provide ‘necessary’ support to Saudi Arabia amid Houthi attacks",
+      "url": "https://www.aljazeera.com/news/2026/10/18/egypt-to-provide-all-necessary-and-possible-support-to-saudi?traffic_source=rss",
+      "date": "October 18, 2026",
+      "description": "Presidency says Egypt will provide Saudi Arabia with support to defend its security and protect its resources."
     },
     {
-      "title": "India and West Indies denied a thrilling finale as rain hits final T20",
-      "url": "https://www.aljazeera.com/sports/2026/10/17/india-and-west-indies-denied-thrilling-finale-as-rain-hits-final-t20?traffic_source=rss",
-      "date": "October 17, 2026",
-      "description": "India reached 118-5 after seven overs with Naman Dhir hitting 24 off six balls before rain forced an end to the game."
+      "title": "Indian YouTuber Dhruv Rathee leads anti-BJP protest in London",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/18/indian-youtuber-dhruv-rathee-leads-anti-bjp-protest-in-london?traffic_source=rss",
+      "date": "October 18, 2026",
+      "description": "Dhruv Rathee led a ‘Stop vote theft’ protest in London, accusing Modi's government of electoral manipulation."
     },
     {
-      "title": "Pope Leo returns to Vatican after lung cancer surgery",
-      "url": "https://www.aljazeera.com/news/2026/10/17/pope-leo-returns-to-vatican-after-lung-cancer-surgery?traffic_source=rss",
-      "date": "October 17, 2026",
-      "description": "Doctors say they are seeing 'continued improvement' after the US-born pope had a lump removed from his lung on Tuesday."
+      "title": "South African rugby player Hyron Andrews paid emotional tribute in France",
+      "url": "https://www.aljazeera.com/sports/2026/10/18/south-african-rugby-player-hyron-andrews-paid-emotional-tribute-in-france?traffic_source=rss",
+      "date": "October 18, 2026",
+      "description": "Andrews died in France on Friday while on tour with the Johannesburg Lions during the Champions Cup rugby tournament."
     },
     {
-      "title": "Jerusalem Daily: Israeli settlers attack farmers and journalists",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/aje-onl-nf_yt-dnrbltn-261017-salehm-jerusalem_daily-171026?traffic_source=rss",
-      "date": "October 17, 2026",
-      "description": "After Israeli settlers beat and severely wounded Palestinian farmers, settler violence continues."
+      "title": "Food or medicine? The impossible choices facing Sudan’s chronically ill",
+      "url": "https://www.aljazeera.com/features/2026/10/18/food-or-medicine-the-impossible-choices-facing-sudans-chronically-ill?traffic_source=rss",
+      "date": "October 18, 2026",
+      "description": "Sudanese are facing growing costs of medicine caused by the country's civil war."
     },
     {
-      "title": "Al Jazeera reports from Paris as protests turn violent",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/al-jazeera-reports-from-paris-as-protests-turns-violent?traffic_source=rss",
-      "date": "October 17, 2026",
-      "description": "In Paris, thousands are protesting teacher shortages, poor school facilities and cuts to public services."
+      "title": "Fighting intensifies across Yemen as humanitarian crisis deepens",
+      "url": "https://www.aljazeera.com/news/2026/10/18/fighting-intensifies-across-yemen-as-humanitarian-crisis-deepens?traffic_source=rss",
+      "date": "October 18, 2026",
+      "description": "Clashes between Yemeni forces and Houthis cause casualties on both sides as aid agencies warn of humanitarian crisis."
     },
     {
-      "title": "Why are Latin American countries building closer ties with Israel?",
-      "url": "https://www.aljazeera.com/news/2026/10/17/why-are-latin-american-countries-building-closer-ties-with-israel?traffic_source=rss",
-      "date": "October 17, 2026",
-      "description": "A wave of new Latin American leaders reverses measures meant to isolate Israel after its genocidal war on Gaza."
+      "title": "LIVE: Leeds United vs Manchester United – Premier League",
+      "url": "https://www.aljazeera.com/sports/liveblog/2026/10/18/live-leeds-united-vs-manchester-united-premier-league?traffic_source=rss",
+      "date": "October 18, 2026",
+      "description": "Follow updates, including team news, from our live text commentary stream as Bruno Fernandes, Marcus Rashford headline."
     },
     {
-      "title": "Egypt’s el-Sisi vows to defend Saudi Arabia from Houthi attacks",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/10-17-egypt-saudi-houths-clip?traffic_source=rss",
-      "date": "October 17, 2026",
-      "description": "Egyptian President Abdel Fattah el-Sisi has vowed to take 'any measure' to defend Saudi Arabia amid Houthi attacks."
+      "title": "Chelsea’s injury-hit Emi Martinez will return to action ‘in a few weeks’",
+      "url": "https://www.aljazeera.com/sports/2026/10/18/chelseas-injury-hit-emi-martinez-will-return-to-action-in-a-few-weeks?traffic_source=rss",
+      "date": "October 18, 2026",
+      "description": "Argentinian goalkeeper stretchered off after a collision during Chelsea's visit to Everton and later undergoes surgery."
     },
     {
-      "title": "Kenya confirms four more Ebola cases, bringing total to seven",
-      "url": "https://www.aljazeera.com/news/2026/10/17/kenya-confirms-four-more-ebola-cases-bringing-total-to-seven?traffic_source=rss",
-      "date": "October 17, 2026",
-      "description": "⁠Three health workers who ⁠treated the country's first Ebola patient are among the latest confirmed cases."
+      "title": "‘No Kings’ protests spread across the US ahead of midterm elections",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/18/no-kings-protests-spread-across-the-us-ahead-of-midterm-elections?traffic_source=rss",
+      "date": "October 18, 2026",
+      "description": "Thousands rallied across the US against President Donald Trump in ‘No Kings’ demonstrations."
     },
     {
-      "title": "Buildings and cars set on fire as cost of living protests rock France",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/17-10-clip-france-clashes-protests-fr?traffic_source=rss",
-      "date": "October 17, 2026",
-      "description": "Protesters have set fire to cars and buildings in France as demonstrations escalate."
+      "title": "‘Young protesters across Europe share grievances and tactics’",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/18/young-protesters-across-europe-share-grievances-and?traffic_source=rss",
+      "date": "October 18, 2026",
+      "description": "‘Young protesters across Europe share grievances and tactics’"
     },
     {
-      "title": "Pope Leo leaves hospital after lung cancer surgery",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/17/pope-leo-leaves-hospital-after-lung-cancer-surgery?traffic_source=rss",
-      "date": "October 17, 2026",
-      "description": "Pope Leo left Rome's Gemelli Hospital on Saturday after successful lung cancer surgery"
-    },
-    {
-      "title": "Neto’s brace fires Chelsea past Everton but Martinez head injury mars win",
-      "url": "https://www.aljazeera.com/sports/2026/10/17/neto-brace-fires-chelsea-past-everton-but-martinez-head-injury-mars-win?traffic_source=rss",
-      "date": "October 17, 2026",
-      "description": "Argentinian international taken to hospital for precautionary tests after head clash with Everton's Jarrad Branthwaite."
-    },
-    {
-      "title": "Ilhan Omar’s lawyers demand the return of property seized in house raid",
-      "url": "https://www.aljazeera.com/news/2026/10/17/ilhan-omars-lawyers-demand-the-return-of-property-seized-in-house-raid?traffic_source=rss",
-      "date": "October 17, 2026",
-      "description": "Omar’s legal team says the search violated safeguards designed to protect constitutional rights of members of Congress."
-    },
-    {
-      "title": "Thousands rally for biggest protest in years against Tunisia’s Saied",
-      "url": "https://www.aljazeera.com/news/2026/10/17/thousands-rally-for-biggest-protest-in-years-against-tunisias-saied?traffic_source=rss",
-      "date": "October 17, 2026",
-      "description": "Unions, opposition groups unite to demonstrate against poor living conditions and restrictions on political freedoms."
+      "title": "Photos: Protests across France spiral into looting, blazes and clashes",
+      "url": "https://www.aljazeera.com/gallery/2026/10/18/photos-protests-across-france-spiral-into-looting-blazes-and-clashes?traffic_source=rss",
+      "date": "October 18, 2026",
+      "description": "Authorities report 1,200 arrests and 150 injured police officers as unrest erupts in multiple French cities."
     }
   ]
 }
