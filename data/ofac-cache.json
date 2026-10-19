@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-19T15:08:30.660Z",
+  "updatedAt": "2026-10-19T17:08:29.966Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261019",
@@ -2943,27 +2943,30 @@
         },
         {
           "number": "46E",
-          "title": "Venezuela General License 46E",
+          "title": "Authorizing Certain Activities Involving Venezuelan- Origin Oil or Petrochemical Products",
           "date": "August 27, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936996/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "47B",
-          "title": "Venezuela General License 47B",
+          "title": "Authorizing the Sale of U.S.-Origin Diluents to Venezuela",
           "date": "June 10, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936811/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "48D",
-          "title": "Venezuela General License 48D",
+          "title": "Authorizing the Supply of Certain Items and Services to Venezuela",
           "date": "August 27, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/937001/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "49B",
@@ -3245,15 +3248,21 @@
       "url": "https://www.bbc.co.uk/news/articles/c6pwgzkj8zzgo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 19, 2026",
       "description": "Two men tell of the work they say they have been doing to support Ukrainian intelligence during the war."
-    },
-    {
-      "title": "Photos show luxury boat with 50m pool and water slides near Kim Jong Un's summer retreat",
-      "url": "https://www.bbc.co.uk/news/articles/cmy4xnyyg1lyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 17, 2026",
-      "description": "Satellite images give clues about how Kim spends his holidays - something far out of reach for most North Koreans."
     }
   ],
   "ajNews": [
+    {
+      "title": "Iran War backlash threatens Republican control of Congress",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/19/aje-onl-nf_iran-war-fuels-anger-ahead-of-us-midterms-191026?traffic_source=rss",
+      "date": "October 19, 2026",
+      "description": "Public opposition to the Iran War could threaten Republican control of Congress, as economic fallout fuels voter anger."
+    },
+    {
+      "title": "Russia’s Lavrov discusses US war and regional security in Tehran visit",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/19/russias-lavrov-discusses-us-war-and-regional-security-in-tehran-visit?traffic_source=rss",
+      "date": "October 19, 2026",
+      "description": "Russia’s FM Sergey Lavrov is in Tehran for his first visit since the outbreak of the US-Israeli war on Iran."
+    },
     {
       "title": "Pakistan suspends Iran border trade, amid violence on both sides",
       "url": "https://www.aljazeera.com/news/2026/10/19/pakistan-suspends-iran-border-trade-amid-violence-on-both-sides?traffic_source=rss",
@@ -3271,24 +3280,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/19/on-iran-israels-opposition-is-even-more-hawkish-than-netanyahu?traffic_source=rss",
       "date": "October 19, 2026",
       "description": "In rest of the world, the Israeli PM is often blamed for the Iran war. His opponents say he hasn't been tough enough."
-    },
-    {
-      "title": "Iran support for Houthis probed as Yemen war re-erupts and Saudi cities hit",
-      "url": "https://www.aljazeera.com/news/2026/10/19/iran-support-for-houthis-probed-as-yemen-war-re-erupts-and-saudi-cities-hit?traffic_source=rss",
-      "date": "October 19, 2026",
-      "description": "There have been new reports of Iranian support for the Houthis in Yemen amid a wave of attacks on Saudi cities."
-    },
-    {
-      "title": "Qatar warns global energy shockwaves from Iran war have yet to peak",
-      "url": "https://www.aljazeera.com/news/2026/10/19/qatar-warns-global-energy-shockwaves-from-iran-war-have-yet-to-peak?traffic_source=rss",
-      "date": "October 19, 2026",
-      "description": "Deputy PM calls for dialogue with Tehran, highlights US defence ties and rejects Strait of Hormuz transit fees."
-    },
-    {
-      "title": "Rubio says there was no US pause in intelligence sharing with Ukraine",
-      "url": "https://www.aljazeera.com/news/2026/10/19/rubio-says-there-was-no-us-pause-in-intelligence-sharing-with?traffic_source=rss",
-      "date": "October 19, 2026",
-      "description": "Ukraine relies on US intel through Starshield to spot fast-moving ballistic missiles that Russia ​fires at its cities."
     }
   ],
   "occNews": [
@@ -3405,10 +3396,16 @@
       "description": "The independent politician is in hospital after what the prime minister says may have been a deliberate attack."
     },
     {
-      "title": "Kenya pastor accused of ordering parents to starve their children to death faces verdict",
+      "title": "Kenya cult leader who told parents to starve children guilty of 191 murders",
       "url": "https://www.bbc.co.uk/news/articles/ckd6d2l3dz4xo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 19, 2026",
-      "description": "Self-proclaimed pastor Paul Mackenzie faces 191 murder charges - all but one of them children."
+      "description": "Self-proclaimed pastor Paul Mackenzie was found guilty of 191 murder charges - all but one of them children."
+    },
+    {
+      "title": "Ex-OpenAI worker accused of planting device had Saudi support says court filing",
+      "url": "https://www.bbc.co.uk/news/articles/c6gel2dlyxvyo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 19, 2026",
+      "description": "The Saudi government did not immediately respond to BBC requests for comment."
     },
     {
       "title": "Alberta heads to polls to decide whether to hold vote on separation from Canada",
@@ -3423,6 +3420,24 @@
       "description": "Former army sergeant major Robert Kabera was a popular YouTuber and singer, who had sought asylum in Uganda."
     },
     {
+      "title": "Houthi missile strike on Yemen camp kills 50 security recruits, local authorities say",
+      "url": "https://www.bbc.co.uk/news/articles/cv0ld6lrr2zeo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 19, 2026",
+      "description": "Three missiles hit a camp in government-controlled Shabwa province that officials say was being used as a training centre for new recruits."
+    },
+    {
+      "title": "US airman dies as daredevil descent goes wrong before Texas college football game",
+      "url": "https://www.bbc.co.uk/news/articles/crd6dn63j2xwo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 19, 2026",
+      "description": "The game continued after the incident. The American Conference said the decision was made before his death was known."
+    },
+    {
+      "title": "Obama blasts federal probe of congresswoman Ilhan Omar as 'so appalling'",
+      "url": "https://www.bbc.co.uk/news/articles/cr15jl7dd42vo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 19, 2026",
+      "description": "Obama says federal agents' search of the Democrat's home was an effort to intimidate a Trump critic."
+    },
+    {
       "title": "Personal attacks fire up debate before Brazil's run-off vote",
       "url": "https://www.bbc.co.uk/news/articles/ck98zlzyqle3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 19, 2026",
@@ -3435,28 +3450,22 @@
       "description": "The blaze that killed four men and injured dozens of others spread with alarming speed, accounts suggest."
     },
     {
+      "title": "Possible wreckage of Amelia Earhart's plane likely to be trees, say researchers",
+      "url": "https://www.bbc.co.uk/news/articles/cmq5n8x106jdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 19, 2026",
+      "description": "Researchers travelled to a remote Pacific Island to confirm whether an object first spotted on satellite imagery in 2020 solved the mystery of the pilot's disappearance."
+    },
+    {
       "title": "Catalonia's former rebel president can return to Spain, court rules",
       "url": "https://www.bbc.co.uk/news/articles/cvp8gzg4e143o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 19, 2026",
       "description": "The court upholds a decision to lift an arrest warrant for Carles Puigdemont linked to the independence bid he led in 2017."
     },
     {
-      "title": "US airman dies as daredevil descent goes wrong before Texas college football game",
-      "url": "https://www.bbc.co.uk/news/articles/crd6dn63j2xwo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 19, 2026",
-      "description": "The game continued after the incident. The American Conference said the decision was made before his death was known."
-    },
-    {
       "title": "Meloni calls emergency meeting after weekend of violent clashes",
       "url": "https://www.bbc.co.uk/news/articles/c6j9kwxxmxydo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 19, 2026",
       "description": "More than 200 people were detained during two days of rioting in the city, Italian media reports."
-    },
-    {
-      "title": "Possible wreckage of Amelia Earhart's plane likely to be trees, say researchers",
-      "url": "https://www.bbc.co.uk/news/articles/cmq5n8x106jdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 19, 2026",
-      "description": "Researchers travelled to a remote Pacific Island to confirm whether an object first spotted on satellite imagery in 2020 solved the mystery of the pilot's disappearance."
     },
     {
       "title": "Bangladesh says it was not informed of its citizens' execution by Saudi Arabia",
@@ -3471,22 +3480,16 @@
       "description": "Videos showed gunmen firing shots at Shroff's car while it was moving slowly past a crowd."
     },
     {
-      "title": "Bomb threat forces Israel to Austria flight into emergency landing",
-      "url": "https://www.bbc.co.uk/news/articles/c680zdmn100lo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Warning signs over threats to Australian politicians were rising before MP hit by car",
+      "url": "https://www.bbc.co.uk/news/articles/cq398rk4p3exo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 19, 2026",
-      "description": "The Airbus jet landed safely in Bulgaria and all passengers and crew aboard were unharmed, officials said."
+      "description": "The apparent attack on MP Helen Haines suggests the worst fears of politicians and public figures appear to have been realised."
     },
     {
-      "title": "EU tariffs aimed at China hitting Ukraine, steel boss says",
-      "url": "https://www.bbc.co.uk/news/articles/cwdd8z6gyy96o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 18, 2026",
-      "description": "The boss of one of Ukraine's biggest steel companies says the country has been \"bundled together\" in measures aimed at curbing cheap imports."
-    },
-    {
-      "title": "Musk and Anthropic pledge public share giveaways",
-      "url": "https://www.bbc.co.uk/news/articles/cm2kez327gdko?at_medium=RSS&amp;at_campaign=rss",
+      "title": "In pictures: French landmarks damaged and destroyed by violent protesters",
+      "url": "https://www.bbc.co.uk/news/articles/cmq8n7l0le11o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 19, 2026",
-      "description": "Musk's announcement comes after Anthropic pledged to create a public benefit fund ahead of its blockbuster stock market listing."
+      "description": "France is used to protests but the violence and damage seen across the country is shocking many people."
     },
     {
       "title": "Funding shortages force World Food Programme to cut aid to Gaza",
@@ -3499,12 +3502,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cmx2wvyv5j17o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 18, 2026",
       "description": "BBC News hears from users, dealers, prison and recovery workers as the country battles with a deadly new drug epidemic."
-    },
-    {
-      "title": "The uncertain future of Canada's 30 rescued belugas",
-      "url": "https://www.bbc.co.uk/news/articles/c623dnn3xvpko?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 17, 2026",
-      "description": "An international rescue operation for the last 30 captive whales in Canada made headlines. Then five of them died."
     },
     {
       "title": "Inside Chicago's battle against the synthetic drugs flooding the US",
@@ -3537,6 +3534,18 @@
       "description": "Zelensky thanked the \"real leaders\" ahead of a meeting with the EU in Brussels."
     },
     {
+      "title": "Vinted blocks French looters listing stolen goods for sale",
+      "url": "https://www.bbc.co.uk/news/articles/cm8xzrljv72ro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 19, 2026",
+      "description": "The platform said since the weekend it had \"taken immediate action to idenitify and remove listings linked to looting\"."
+    },
+    {
+      "title": "Bikes 'not for jousting,' says Lime after duel video",
+      "url": "https://www.bbc.co.uk/news/articles/c9zrdpg7256yo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 19, 2026",
+      "description": "Footage emerged on social media of hundreds of people gathered in east London to watch a bike joust."
+    },
+    {
       "title": "Home sellers cut asking prices on 3,000 properties a day",
       "url": "https://www.bbc.co.uk/news/articles/c84g13z6xx4eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 19, 2026",
@@ -3561,16 +3570,16 @@
       "description": "Trading standards officers say AI is \"super-charging\" existing scams through clones and fake websites."
     },
     {
-      "title": "People playing loud music on buses could face £100 fine",
-      "url": "https://www.bbc.co.uk/news/articles/cm89z008x7xdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 19, 2026",
-      "description": "Antisocial behaviour on buses in England could lead to fines while a new campaign is also being launched for trains. A national campaign asking rail passengers \"share the carriage, not the noise\" is being launched."
-    },
-    {
       "title": "China's growth accelerates as AI boom helps boost exports",
       "url": "https://www.bbc.co.uk/news/articles/cm5yn098xz8lo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 19, 2026",
       "description": "Exports have helped offset weak spending at home, but trade tensions and AI doubts cloud its outlook."
+    },
+    {
+      "title": "People playing loud music on buses could face £100 fine",
+      "url": "https://www.bbc.co.uk/news/articles/cm89z008x7xdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 19, 2026",
+      "description": "Antisocial behaviour on buses in England could lead to fines while a new campaign is also being launched for trains. A national campaign asking rail passengers \"share the carriage, not the noise\" is being launched."
     },
     {
       "title": "EU tariffs aimed at China hitting Ukraine, steel boss says",
@@ -3807,6 +3816,60 @@
       "description": "Martin has advice for listeners caught out by auto-renewing subscriptions, explaining what rights consumers have and whether there's a way to challenge the renewal or cancel."
     },
     {
+      "title": "Search under way for four soldiers missing after gang attack in Haiti",
+      "url": "https://www.aljazeera.com/news/2026/10/19/search-under-way-for-four-soldiers-missing-after-gang-attack-in-haiti?traffic_source=rss",
+      "date": "October 19, 2026",
+      "description": "The UN Security Council holds a meeting on Haiti; the attack on UN-backed forces is expected to dominate the discussions."
+    },
+    {
+      "title": "Gaza faces worsening hunger as WFP announces food aid cuts",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/19/gaza-faces-worsening-hunger-as-wfp-announces-food-aid-cuts?traffic_source=rss",
+      "date": "October 19, 2026",
+      "description": "The World Food Programme has announced that funding shortages will force it to suspend food assistance in Gaza"
+    },
+    {
+      "title": "Trump endorses Netanyhu ahead of elections",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/19/jerusalem-daily-settlers-attack-eu-diplomats?traffic_source=rss",
+      "date": "October 19, 2026",
+      "description": "Trump endorses Netanyahu ahead of Israel’s election, Ben-Gvir faces student protesters."
+    },
+    {
+      "title": "Kenyan court convicts starvation cult leader for murder of 191 people",
+      "url": "https://www.aljazeera.com/news/2026/10/19/kenyan-court-convicts-starvation-cult-leader-for-murder-of-191-people?traffic_source=rss",
+      "date": "October 19, 2026",
+      "description": "Doomsdays cult leader Paul ⁠Mackenzie had denied ordering the victims to starve so they could 'meet Jesus'."
+    },
+    {
+      "title": "How has the cost of living changed in France, Italy, Spain and Portugal?",
+      "url": "https://www.aljazeera.com/news/2026/10/19/how-has-the-cost-of-living-changed-in-france-italy-spain-and-portugal?traffic_source=rss",
+      "date": "October 19, 2026",
+      "description": "Protesters across Europe have hit the streets amid anger over the cost of living."
+    },
+    {
+      "title": "Decision on Senegal’s AFCON final appeal to be made by end of November",
+      "url": "https://www.aljazeera.com/sports/2026/10/19/decision-on-senegals-afcon-final-appeal-to-be-made-by-end-of-november?traffic_source=rss",
+      "date": "October 19, 2026",
+      "description": "The Court of Arbitration for Sport will announce its verdict on the title, which was awarded to Morocco by CAF."
+    },
+    {
+      "title": "Man City’s Semenyo out for up to eight weeks due to knee injury",
+      "url": "https://www.aljazeera.com/sports/2026/10/19/man-citys-semenyo-out-for-up-to-eight-weeks-due-to-knee-injury?traffic_source=rss",
+      "date": "October 19, 2026",
+      "description": "City coach confirmed Semenyo's injury but said Haaland would be available for the Champions League match on Tuesday."
+    },
+    {
+      "title": "Famine fears as aid cuts and shipment restrictions coincide in Gaza",
+      "url": "https://www.aljazeera.com/news/2026/10/19/famine-fears-as-aid-cuts-and-shipment-restrictions-coincide-in-gaza?traffic_source=rss",
+      "date": "October 19, 2026",
+      "description": "Displaced families in Gaza fear worsening food insecurity as planned aid cuts coincide with continued restrictions."
+    },
+    {
+      "title": "Who is cult head Paul Mackenzie, convicted of convincing followers to die?",
+      "url": "https://www.aljazeera.com/news/2026/10/19/who-is-cult-leader-paul-mackenzie-accused-of-convincing-followers-to-die?traffic_source=rss",
+      "date": "October 19, 2026",
+      "description": "A Kenyan court has handed down the first judgement in the 'doomsday' cult case."
+    },
+    {
       "title": "Albania’s protests explained",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/19/aje-onl-nf_albanias-protests-explained-191026?traffic_source=rss",
       "date": "October 19, 2026",
@@ -3849,10 +3912,10 @@
       "description": "Al Jazeera correspondent shares his experience of covering the fighting between government forces and Tigray rebels."
     },
     {
-      "title": "Houthi attack on Yemen army camp in Shabwa reportedly kills at least 53",
+      "title": "Houthi attack on Yemen army camp in Shabwa kills at least 53: reports",
       "url": "https://www.aljazeera.com/news/2026/10/19/at-least-18-killed-in-houthi-attack-on-military-camp-in-yemens-shabwa?traffic_source=rss",
       "date": "October 19, 2026",
-      "description": "Rebel group reportedly launched ballistic missiles at camp in southern governorate during training exercise."
+      "description": "Local authorities say armed group launched ballistic missiles at camp in southern governorate during training exercise."
     },
     {
       "title": "The night watch: Palestinians protecting their homes from settler pogroms",
@@ -3871,54 +3934,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/19/qatar-to-unveil-regional-defence-partnership?traffic_source=rss",
       "date": "October 19, 2026",
       "description": "Qatar to unveil regional defence partnership"
-    },
-    {
-      "title": "Indonesia battles worst forest fires and toxic haze in 11 years",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/19/indonesia-battles-worst-forest-fires-and-toxic-haze-in-11-years?traffic_source=rss",
-      "date": "October 19, 2026",
-      "description": "Indonesia battles worst forest fires and toxic haze in 11 years"
-    },
-    {
-      "title": "Museum protesters in Colombia accuse gov’t of erasing history",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/19/museum-protesters-in-colombia-accuse-govt-of-erasing-history?traffic_source=rss",
-      "date": "October 19, 2026",
-      "description": "Police used tear gas and water cannon to disperse protesters outside Colombia’s National Museum in Bogota."
-    },
-    {
-      "title": "Israeli police arrest 10 after settler attacks on journalist, diplomats",
-      "url": "https://www.aljazeera.com/news/2026/10/19/israeli-police-arrest-10-after-settler-attacks-on-journalist-diplomats?traffic_source=rss",
-      "date": "October 19, 2026",
-      "description": "US Ambassador to Israel Mike Huckabee said on X that the arrests were 'a very positive development'."
-    },
-    {
-      "title": "Australian MP Helen Haines critically injured in ‘deliberate’ car ramming",
-      "url": "https://www.aljazeera.com/news/2026/10/19/australian-mp-helen-haines-critically-injured-in-deliberate-car-ramming?traffic_source=rss",
-      "date": "October 19, 2026",
-      "description": "Lawmaker was struck by a car outside her office in what Prime Minister ⁠Anthony Albanese called a 'deliberate act'."
-    },
-    {
-      "title": "What’s wrong with schools in France?",
-      "url": "https://www.aljazeera.com/video/by-the-numbers-3/2026/10/19/whats-wrong-with-schools-in-france?traffic_source=rss",
-      "date": "October 19, 2026",
-      "description": "Angry French students have blocked access to their schools for four weeks. AJLabs breaks down what they want and why."
-    },
-    {
-      "title": "WFP cuts aid to ‌500,000 Palestinians in Gaza amid funding shortages",
-      "url": "https://www.aljazeera.com/news/2026/10/19/wfp-cuts-aid-to-500000-palestinians-in-gaza-amid-funding-shortages?traffic_source=rss",
-      "date": "October 19, 2026",
-      "description": "The UN agency says funding shortages threaten to reverse 'modest and fragile' progress on food security."
-    },
-    {
-      "title": "Mexican protesters demanding clean water storm state congress",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/19/mexican-protesters-demanding-clean-water-storm-state-congress?traffic_source=rss",
-      "date": "October 19, 2026",
-      "description": "Mexican protesters demanding clean water storm state congress"
-    },
-    {
-      "title": "How a grass fire at a Canadian military base killed four soldiers",
-      "url": "https://www.aljazeera.com/news/2026/10/19/how-a-grass-fire-at-a-canadian-military-base-killed-four-soldiers?traffic_source=rss",
-      "date": "October 19, 2026",
-      "description": "Cause of grass fire remains unknown as PM Carney calls it one of the worst peacetime tragedies for Canadian military."
     }
   ]
 }
