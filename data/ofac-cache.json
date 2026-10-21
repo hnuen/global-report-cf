@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T13:08:40.515Z",
+  "updatedAt": "2026-10-21T15:08:30.614Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261019",
@@ -3241,7 +3241,7 @@
       "title": "US citizen Stephen Hubbard freed by Russia as Trump envoy meets Putin",
       "url": "https://www.bbc.co.uk/news/articles/c6m24l9v3745o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 21, 2026",
-      "description": "The 74-year-old former teacher has been released without any \"swap\" required, Trump says."
+      "description": "The 74-year-old former teacher, who was captured, has been released without any \"swap\" required, Trump says."
     },
     {
       "title": "North Korea publishes photos of Kim Jong Un - why do rumours of his death keep coming back?",
@@ -3252,16 +3252,22 @@
   ],
   "ajNews": [
     {
+      "title": "US envoy Witkoff calls Russia’s Putin a ‘humanitarian’",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/21/us-envoy-witkoff-calls-russias-putin-a?traffic_source=rss",
+      "date": "October 21, 2026",
+      "description": "US envoy Steve Witkoff praised Russian President Vladimir Putin as a ‘humanitarian’."
+    },
+    {
+      "title": "Russia releases American Stephen Hubbard after four years in prison",
+      "url": "https://www.aljazeera.com/news/2026/10/21/russia-releases-american-stephen-hubbard-after-four-years-in-prison?traffic_source=rss",
+      "date": "October 21, 2026",
+      "description": "Hubbard was jailed after being accused of fighting alongside Ukrainian forces against Russia."
+    },
+    {
       "title": "Iran’s enriched uranium re-emerges as point of contention in US talks",
       "url": "https://www.aljazeera.com/news/2026/10/21/irans-enriched-uranium-re-emerges-as-point-of-contention-in-us-talks?traffic_source=rss",
       "date": "October 21, 2026",
       "description": "Iran's nuclear enrichment has emerged as a major point of contention amid diplomatic push to end the war."
-    },
-    {
-      "title": "Trump envoy Witkoff meets Russia’s Putin for Ukraine war talks",
-      "url": "https://www.aljazeera.com/news/2026/10/21/witkoff-in-russia-for-putin-meeting-after-positive-talks-with-zelenskyy?traffic_source=rss",
-      "date": "October 21, 2026",
-      "description": "Witkoff tells Putin that he hoped to discuss the resumption of the trilateral talks between the US, Ukraine and Russia."
     }
   ],
   "occNews": [
@@ -3372,16 +3378,10 @@
   ],
   "regionsNews": [
     {
-      "title": "Trump and Zelensky at loggerheads despite new optimism",
-      "url": "https://www.bbc.co.uk/news/articles/ckrey51jrgnro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 20, 2026",
-      "description": "The Ukrainian leader's hug with Steve Witkoff in the Norwegian capital is unlikely to dispel misgivings about US policy towards his country, writes Paul Adams."
-    },
-    {
-      "title": "Katya Adler: France divided over who to blame for riots and what to learn from them",
-      "url": "https://www.bbc.co.uk/news/articles/cq0me4g9p970o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Macron accuses foreign leaders of exploiting French riots",
+      "url": "https://www.bbc.co.uk/news/articles/ckjrw044ggxgo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 21, 2026",
-      "description": "In France and beyond there is widespread disagreement over what led to some of the worst unrest seen in French cities in modern history."
+      "description": "The comment is an apparent swipe at Benjamin Netanyahu and Donald Trump, who both face elections in coming weeks."
     },
     {
       "title": "Australian MP loses both legs after alleged car attack, husband says",
@@ -3408,10 +3408,28 @@
       "description": "The Gambia has confirmed receiving $2.5m from the sale of the house in Maryland."
     },
     {
+      "title": "Family of prison officer killed by IRA receives state apology",
+      "url": "https://www.bbc.co.uk/news/articles/ck20rver1j31o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 21, 2026",
+      "description": "Brian Stack was crossing a street in Dublin in 1983 when he was shot in the back of the neck and died 18 months later."
+    },
+    {
+      "title": "Nigeria confirms Ebola case linked to East Africa",
+      "url": "https://www.bbc.co.uk/news/articles/cm2l4xw7xpjgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 21, 2026",
+      "description": "The female patient, who sources have told the BBC is not Nigerian, is in isolation and in an Abuja hospital."
+    },
+    {
       "title": "Sudan army drones hit mourners and fuel market killing more than 300 people, sources say",
       "url": "https://www.bbc.co.uk/news/articles/cr3el70jz1nqo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 20, 2026",
       "description": "A truck carrying people to a funeral and a market alleged to be supplying fuel to the RSF were targeted."
+    },
+    {
+      "title": "Trump and Zelensky at loggerheads despite new optimism",
+      "url": "https://www.bbc.co.uk/news/articles/ckrey51jrgnro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 20, 2026",
+      "description": "The Ukrainian leader's hug with Steve Witkoff in the Norwegian capital is unlikely to dispel misgivings about US policy towards his country, writes Paul Adams."
     },
     {
       "title": "Alberta's decisive decision to stay in Canada gives Carney backing to take on Trump",
@@ -3510,10 +3528,10 @@
       "description": "The game continued after the incident. The American Conference said the decision was made before his death was known."
     },
     {
-      "title": "Deadly fire at Canada military base moved a kilometre 'in 30 to 60 seconds'",
-      "url": "https://www.bbc.co.uk/news/articles/ckj0ly6qnp1lo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 20, 2026",
-      "description": "The blaze that killed four men and injured dozens of others spread with alarming speed, accounts suggest."
+      "title": "Katya Adler: France divided over who to blame for riots and what to learn from them",
+      "url": "https://www.bbc.co.uk/news/articles/cq0me4g9p970o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 21, 2026",
+      "description": "In France and beyond there is widespread disagreement over what led to some of the worst unrest seen in French cities in modern history."
     },
     {
       "title": "Why is Elon Musk plotting a mega-merger of SpaceX and Tesla?",
@@ -3546,7 +3564,7 @@
       "description": "The US has advised its citizens to reconsider travelling to Kenya but the government tries to reassure people."
     },
     {
-      "title": "Watch: Third attempt to save 'celebrity' shark stranded in South Korean canal",
+      "title": "Huge crowds watch attempt to rescue shark stranded in South Korean canal",
       "url": "https://www.bbc.co.uk/news/videos/ckq6n56e5qrqo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 21, 2026",
       "description": "A third attempt has been made to guide the 9ft 10in (3m) shark back to the open sea."
@@ -3594,10 +3612,10 @@
       "description": "Kashim Chowdhury was contracted for 183 hours a week, more than the number of hours in seven days."
     },
     {
-      "title": "Elon Musk confirms he is considering merging Tesla and SpaceX",
-      "url": "https://www.bbc.co.uk/news/articles/cmlyl09xjke4o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "What is happening to UK prices?",
+      "url": "https://www.bbc.co.uk/news/articles/c17rgd8e9gjo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 21, 2026",
-      "description": "Musk says special committees within both companies have been formed to look at a possible mega-merger."
+      "description": "UK inflation rose in September, pushed up by higher petrol and diesel prices."
     },
     {
       "title": "The tech helping crack decades-old cold cases",
@@ -3606,10 +3624,16 @@
       "description": "Investigative genetic genealogy can help hunt down criminals but raises worries over privacy."
     },
     {
-      "title": "What is happening to UK prices?",
-      "url": "https://www.bbc.co.uk/news/articles/c17rgd8e9gjo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "What is the Budget and what could be in it?",
+      "url": "https://www.bbc.co.uk/news/articles/c6x2zrjl7kjno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 20, 2026",
+      "description": "Chancellor John Healey will set out his plans for UK taxes on 28 October."
+    },
+    {
+      "title": "Elon Musk confirms he is considering merging Tesla and SpaceX",
+      "url": "https://www.bbc.co.uk/news/articles/cmlyl09xjke4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 21, 2026",
-      "description": "UK inflation rose in September, pushed up by higher petrol and diesel prices."
+      "description": "Musk says special committees within both companies have been formed to look at a possible mega-merger."
     },
     {
       "title": "Why is Elon Musk plotting a mega-merger of SpaceX and Tesla?",
@@ -3676,12 +3700,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cj62y9dnd6pwo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 20, 2026",
       "description": "The BBC hears from people who think dating events are better value for money than dating apps."
-    },
-    {
-      "title": "What is the Budget and what could be in it?",
-      "url": "https://www.bbc.co.uk/news/articles/c6x2zrjl7kjno?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 20, 2026",
-      "description": "Chancellor John Healey will set out his plans for UK taxes on 28 October."
     },
     {
       "title": "How is the US economy really doing under President Trump?",
@@ -3894,6 +3912,48 @@
       "description": "Poundland says Martin Property Group from Londonderry is the management team's \"preferred partner\""
     },
     {
+      "title": "Musk pledges $10bn in SpaceX shares for US children: Who really gains?",
+      "url": "https://www.aljazeera.com/news/2026/10/21/musk-pledges-10bn-in-spacex-shares-for-us-children-who-really-gains?traffic_source=rss",
+      "date": "October 21, 2026",
+      "description": "The pledge, which Trump says will go through tax-friendly 'Trump accounts', comes two weeks before the US midterms."
+    },
+    {
+      "title": "US congressional candidate Brad Lander freed after West Bank detention",
+      "url": "https://www.aljazeera.com/news/2026/10/21/us-congressional-candidate-brad-lander-freed-after-west-bank-detention?traffic_source=rss",
+      "date": "October 21, 2026",
+      "description": "Lander says dozens remain in Israeli custody after being detained while helping Palestinian farmers harvest olives."
+    },
+    {
+      "title": "How Qatar, Turkiye, Pakistan and Indonesia are deepening defence ties",
+      "url": "https://www.aljazeera.com/news/2026/10/21/how-qatar-turkiye-pakistan-and-indonesia-are-deepening-defence-ties?traffic_source=rss",
+      "date": "October 21, 2026",
+      "description": "Experts say conflicts and uncertainty are accelerating efforts to strengthen regional military capacity."
+    },
+    {
+      "title": "How Israel’s war on Lebanon has cost young people with autism and ADHD",
+      "url": "https://www.aljazeera.com/news/2026/10/21/how-cost-israels-war-on-lebanon-has-on-young-people-with-autism-and-adhd?traffic_source=rss",
+      "date": "October 21, 2026",
+      "description": "Experts warn that war takes a heavy toll on neurodivergent people, who often rely on routine."
+    },
+    {
+      "title": "Are the UK, France being pulled into the Saudi-Houthi conflict?",
+      "url": "https://www.aljazeera.com/news/2026/10/21/are-the-uk-france-being-pulled-into-the-saudi-houthi-conflict?traffic_source=rss",
+      "date": "October 21, 2026",
+      "description": "The European states say their support for Riyadh is 'defensive', but analysts warn Houthi reaction may complicate that."
+    },
+    {
+      "title": "From one house to villages: Israeli settlers have Palestinians surrounded",
+      "url": "https://www.aljazeera.com/features/2026/10/21/from-one-house-to-whole-villages-settlers-have-palestinians-surrounded?traffic_source=rss",
+      "date": "October 21, 2026",
+      "description": "A family in the South Hebron Hills has spent more than two weeks cut off by settlers camped outside."
+    },
+    {
+      "title": "Pakistani authorities arrest man accused in $126m US postage fraud",
+      "url": "https://www.aljazeera.com/news/2026/10/21/pakistani-authorities-arrest-man-accused-in-126m-us-postage-fraud?traffic_source=rss",
+      "date": "October 21, 2026",
+      "description": "Faheem Akram has been charged with several offences including conspiracy to defraud the United States."
+    },
+    {
       "title": "France’s Macron says protesters won’t be allowed to ‘cause chaos’",
       "url": "https://www.aljazeera.com/news/2026/10/21/frances-macron-says-protesters-wont-be-allowed-to-cause-chaos?traffic_source=rss",
       "date": "October 21, 2026",
@@ -3982,54 +4042,6 @@
       "url": "https://www.aljazeera.com/sports/2026/10/21/lebron-jamess-76ers-beat-ny-knicks-on-nbas-opening-night-at-msg?traffic_source=rss",
       "date": "October 21, 2026",
       "description": "The Philadelphia 76ers defeated NBA champions New York Knicks 106-100 as the new NBA season tipped off."
-    },
-    {
-      "title": "Trump snaps at reporter, ordering him to be quiet",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/21/trump-snaps-at-reporter-ordering-him-to-be-quiet?traffic_source=rss",
-      "date": "October 21, 2026",
-      "description": "US President Donald Trump became visibly angry as he berated a reporter who attempted to ask a question."
-    },
-    {
-      "title": "Drone attack in disputed Sudan-South Sudan border region kills at least 153",
-      "url": "https://www.aljazeera.com/news/2026/10/21/drone-attack-in-disputed-sudan-south-sudan-border-region-kills-at-least-153?traffic_source=rss",
-      "date": "October 21, 2026",
-      "description": "South Sudan authorities say Sudan's army launched drone attack on market, as MSF says it is treating 20 wounded people."
-    },
-    {
-      "title": "Bayern Munich vs Arsenal: Champions League – Predictions, Olise, lineups",
-      "url": "https://www.aljazeera.com/sports/2026/10/21/bayern-munich-arsenal-champions-league-predictions-saka-kane-olise?traffic_source=rss",
-      "date": "October 21, 2026",
-      "description": "Bayern Munich host Arsenal on Wednesday, as the teams clash for the 16th time in Europe's premier club competition."
-    },
-    {
-      "title": "Israeli soldiers mock Lebanese home they rigged with explosives",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/21/israeli-soldiers-mock-lebanese-home-they-rigged-with-explosives?traffic_source=rss",
-      "date": "October 21, 2026",
-      "description": "Israeli soldiers in Southern Lebanon are seen ‘jokingly’ giving a tour of a displaced family’s home."
-    },
-    {
-      "title": "Europe is in trouble, and it is blaming Muslims",
-      "url": "https://www.aljazeera.com/opinions/2026/10/21/europe-is-in-trouble-and-it-is-blaming-muslims?traffic_source=rss",
-      "date": "October 21, 2026",
-      "description": "A recent European Parliament resolution shows the European mainstream is fully embracing an Islamophobic agenda."
-    },
-    {
-      "title": "‘It’s hard for us’: Paris small businesses bear brunt of protest violence",
-      "url": "https://www.aljazeera.com/news/2026/10/21/its-hard-for-us-paris-small-businesses-bear-brunt-of-protest-violence?traffic_source=rss",
-      "date": "October 21, 2026",
-      "description": "Shopkeepers - including those from immigrant backgrounds - count losses from violence last weekend."
-    },
-    {
-      "title": "‘I am still traumatised’: French police accused of brutalising minors",
-      "url": "https://www.aljazeera.com/news/2026/10/21/i-am-still-traumatised-french-police-accused-of-brutalising-minors?traffic_source=rss",
-      "date": "October 21, 2026",
-      "description": "Police violence and use of crowd-control weapons deepen mistrust between French authorities and demonstrators."
-    },
-    {
-      "title": "The right to enforce civil rights is under attack in the US",
-      "url": "https://www.aljazeera.com/opinions/2026/10/21/the-right-to-enforce-civil-rights-is-under-attack-in-the-us?traffic_source=rss",
-      "date": "October 21, 2026",
-      "description": "The Trump administration and conservative courts are making it harder to challenge civil rights violations."
     }
   ]
 }
