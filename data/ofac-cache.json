@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T19:08:25.038Z",
+  "updatedAt": "2026-10-21T21:08:31.501Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261021",
@@ -2736,11 +2736,12 @@
       "generalLicenses": [
         {
           "number": "2A",
-          "title": "Venezuela General License 2A",
+          "title": "Authorizing Certain New Debt, New Equity, and Securities Transactions Involving PDV Holding, Inc. and CITGO Holding, Inc. ( a)",
           "date": "August 25, 2017",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34121/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "3I",
@@ -2756,15 +2757,17 @@
           "date": "April 17, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31741/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "5Z",
-          "title": "Venezuela General License 5Z",
+          "title": "Authorizing Certain Transactions Related to the Petróleos de Venezuela, S.A. 2020 8.5 Percent Bond on or After November 5, 2026",
           "date": "August 3, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936946/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "7C",
@@ -2788,135 +2791,152 @@
           "date": "January 28, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34131/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "15C",
-          "title": "Venezuela General License 15C",
+          "title": "Authorizing Transactions Involving Certain Banks for Certain Entities ( a)",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/33126/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "16C",
-          "title": "Venezuela General License 16C",
+          "title": "Authorizing Maintenance of U.S. Person Accounts and Noncommercial, Personal Remittances Involving Certain Banks",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/33121/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "18A",
-          "title": "Venezuela General License 18A",
+          "title": "Authorizing Certain Transactions Involving Integraci6n Administradora de Fondos de Ahorro Previsional, S.A",
           "date": "March 22, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34126/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "21",
-          "title": "Venezuela General License 21",
+          "title": "Entries in Certain Accounts for Normal Service Charges and Payments and Transfers to Blocked Accounts in U.S. Financial Institutions Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/46421/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "22",
-          "title": "Venezuela General License 22",
+          "title": "Venezuela's Mission to the United Nations",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/30601/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "23",
-          "title": "Venezuela General License 23",
+          "title": "Third-country Diplomatic and Consular Funds Transfers Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34116/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "24A",
-          "title": "Venezuela General License 24A",
+          "title": "Certain Transactions Involving the Government of Venezuela Related to Telecommunications and Mail Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/935731/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "25",
-          "title": "Venezuela General License 25",
+          "title": "Exportation of Certain Services, Software, Hardware, and Technology Incident to the Exchange of Communications over the Internet Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31761/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "26",
-          "title": "Venezuela General License 26",
+          "title": "Emergency and Certain Other Medical Services Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31766/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "27",
-          "title": "Venezuela General License 27",
+          "title": "Certain Transactions Related to Patents, Trademarks, and Copyrights Authorized ( a)",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34111/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "29",
-          "title": "Venezuela General License 29",
+          "title": "Certain Transactions Involving the Government of Venezuela in Support of Certain Nongovernmental Organizations' Activities Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31771/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "30B",
-          "title": "Venezuela General License 30B",
+          "title": "Authorizing Certain Transactions Necessary to Port and Airport Operations",
           "date": "February 2, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934996/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "31B",
-          "title": "Venezuela General License 31B",
+          "title": "Certain Transactions Involving the IV Venezuelan National Assembly and Certain Other Persons",
           "date": "January 4, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/930241/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "32",
-          "title": "Venezuela General License 32",
+          "title": "Authorizing Certain Transactions Related to Personal Maintenance of Individuals Who Are U.S. Persons Residing in Venezuela",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34101/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "33",
-          "title": "Venezuela General License 33",
+          "title": "Authorizing Overflight Payments, Emergency Landings, and Air Ambulance Services",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34096/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "34A",
-          "title": "Venezuela General License 34A",
+          "title": "Authorizing Transactions Involving Certain Government of Venezuela Persons",
           "date": "September 9, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/25966/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "35",
@@ -2928,43 +2948,48 @@
         },
         {
           "number": "42",
-          "title": "Venezuela General License 42",
+          "title": "Authorizing Certain Transactions Related to the Negotiation of Certain Settlement Agreements with the IV Venezuelan National Assembly and Certain Other Persons",
           "date": "May 1, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/931696/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "45B",
-          "title": "Venezuela General License 45B",
+          "title": "Authorizing Certain Repatriation Transactions Involving Consorcio Venezolano de Industrias Aeronáuticas y Servicios Aéreos, S.A",
           "date": "November 16, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/932686/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "46E",
-          "title": "Venezuela General License 46E",
+          "title": "Authorizing Certain Activities Involving Venezuelan- Origin Oil or Petrochemical Products",
           "date": "August 27, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936996/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "47B",
-          "title": "Venezuela General License 47B",
+          "title": "Authorizing the Sale of U.S.-Origin Diluents to Venezuela",
           "date": "June 10, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936811/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "48D",
-          "title": "Venezuela General License 48D",
+          "title": "Authorizing the Supply of Certain Items and Services to Venezuela",
           "date": "August 27, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/937001/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "49B",
@@ -3242,6 +3267,12 @@
       "description": "The announcement came after Russian President Vladimir Putin met US President Donald Trump's special envoy Steve Witkoff in St Petersburg."
     },
     {
+      "title": "Rosenberg: US diplomatic push offers little hope for imminent Ukraine peace",
+      "url": "https://www.bbc.co.uk/news/articles/cm98zn5j89kdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 21, 2026",
+      "description": "Russia's President Putin does not feel under pressure right now to end the war."
+    },
+    {
       "title": "North Korea publishes photos of Kim Jong Un - why do rumours of his death keep coming back?",
       "url": "https://www.bbc.co.uk/news/articles/cmvg6qv1jdydo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 20, 2026",
@@ -3250,22 +3281,28 @@
   ],
   "ajNews": [
     {
-      "title": "Russia to send first diesel tanker to the US amid Trump deal",
-      "url": "https://www.aljazeera.com/economy/2026/10/21/russia-to-send-first-diesel-tanker-to-the-us-amid-trump-deal?traffic_source=rss",
+      "title": "Will Russia’s diesel shipment to the US lower prices before midterms?",
+      "url": "https://www.aljazeera.com/economy/2026/10/21/will-russias-diesel-shipment-to-the-us-lower-prices-before-midterms?traffic_source=rss",
       "date": "October 21, 2026",
-      "description": "Russia will send on Thursday its first diesel tanker to the US to an undisclosed port."
+      "description": "Moscow dispatches its inaugural diesel shipment to the US, aiming to ease fuel shortages as midterm elections loom."
     },
     {
-      "title": "US envoy Witkoff calls Russia’s Putin a ‘humanitarian’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/21/us-envoy-witkoff-calls-russias-putin-a?traffic_source=rss",
+      "title": "Cuba accuses US of threatening countries ahead of UN embargo vote",
+      "url": "https://www.aljazeera.com/news/2026/10/21/cuba-accuses-us-of-threatening-countries-ahead-of-un-embargo-vote?traffic_source=rss",
       "date": "October 21, 2026",
-      "description": "US envoy Steve Witkoff praised Russian President Vladimir Putin as a ‘humanitarian’."
+      "description": "Havana says Washington is threatening countries with retaliation if they refuse to vote against condemning its embargo."
     },
     {
-      "title": "Russia releases American Stephen Hubbard after four years in prison",
-      "url": "https://www.aljazeera.com/news/2026/10/21/russia-releases-american-stephen-hubbard-after-four-years-in-prison?traffic_source=rss",
+      "title": "Russia willing to resume peace talks with Ukraine, US after Witkoff visit",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/21/russia-willing-to-resume-peace-talks-with-ukraine-us-after-witkoff-visit?traffic_source=rss",
       "date": "October 21, 2026",
-      "description": "Hubbard was jailed after being accused of fighting alongside Ukrainian forces against Russia."
+      "description": "Russian President Vladimir Putin has signalled Moscow is willing in principle to resume talks with Ukraine and the US."
+    },
+    {
+      "title": "Iran determined to keep uranium amid increased war odds, flurry of meetings",
+      "url": "https://www.aljazeera.com/news/2026/10/21/iran-determined-to-keep-uranium-amid-increased-war-odds-flurry-of-meetings?traffic_source=rss",
+      "date": "October 21, 2026",
+      "description": "Tehran had 'nothing new' to tell Washington after latest nuclear proposals reportedly offered by mediators."
     }
   ],
   "occNews": [
@@ -3382,16 +3419,16 @@
       "description": "The comment is an apparent swipe at Benjamin Netanyahu and Donald Trump, who both face elections in coming weeks."
     },
     {
+      "title": "Pope does not need further treatment after lung cancer surgery",
+      "url": "https://www.bbc.co.uk/news/articles/cqrly2dg5xzzo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 21, 2026",
+      "description": "Test results have confirmed his diagnosis as a lung adenocarcinoma that was localised."
+    },
+    {
       "title": "'Targeted' attack on much-loved MP leaves Australian town heartbroken",
       "url": "https://www.bbc.co.uk/news/articles/cmgr8q88r5eqo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 21, 2026",
       "description": "Locals describe the MP, who had to have both legs amputated, as a genuinely kind person who fought for the community."
-    },
-    {
-      "title": "Australian MP loses both legs after alleged car attack, husband says",
-      "url": "https://www.bbc.co.uk/news/articles/ckwyqdqxw6d0o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 21, 2026",
-      "description": "Her alleged attacker, 43-year-old Brendan Nugent, faces multiple charges and appeared in court for the first time on Wednesday."
     },
     {
       "title": "Family of prison officer killed by IRA receives state apology",
@@ -3400,16 +3437,28 @@
       "description": "Brian Stack was crossing a street in Dublin in 1983 when he was shot in the back of the neck and died 18 months later."
     },
     {
-      "title": "Meta fined $25bn for 'lies' over user data privacy",
-      "url": "https://www.bbc.co.uk/news/articles/cqdr8zxrr3dxo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Ex-prosecutor charged with treason in Mexico over US drug raid",
+      "url": "https://www.bbc.co.uk/news/articles/ckx2qpw4rjd7o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 21, 2026",
-      "description": "The fine is the largest to date against Facebook's owner, larger than an $18bn deal with California."
+      "description": "César Jáuregui Moreno is accused of allowing US agents to join a raid on a suspected drugs lab in April."
     },
     {
       "title": "Pakistan arrests man wanted by US over $126m postage fraud case",
       "url": "https://www.bbc.co.uk/news/articles/ckdd8m1z1z3yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 21, 2026",
       "description": "Faheem Akram allegedly sold more than 5 million fake postage labels for a fixed price of $2 a piece."
+    },
+    {
+      "title": "Meta fined $25bn for 'lies' over user data privacy",
+      "url": "https://www.bbc.co.uk/news/articles/cqdr8zxrr3dxo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 21, 2026",
+      "description": "The fine is the largest to date against Facebook's owner, larger than an $18bn deal with California."
+    },
+    {
+      "title": "Nigeria's first Ebola patient holidayed in Uganda, officials say",
+      "url": "https://www.bbc.co.uk/news/articles/c62kepvg2x9lo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 21, 2026",
+      "description": "The wife of a diplomat based in Abuja travelled to Kampala for a vacation."
     },
     {
       "title": "India 'cockroach' leaders who called on election chief to quit are freed from jail",
@@ -3428,12 +3477,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cmn8wx75l2n8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 21, 2026",
       "description": "The Gambia has confirmed receiving $2.5m from the sale of the house in Maryland."
-    },
-    {
-      "title": "Nigeria confirms Ebola case linked to East Africa",
-      "url": "https://www.bbc.co.uk/news/articles/cm2l4xw7xpjgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 21, 2026",
-      "description": "The female patient, who sources have told the BBC is not Nigerian, is in isolation and in an Abuja hospital."
     },
     {
       "title": "Sudan army drones hit mourners and fuel market killing more than 300 people, sources say",
@@ -3514,18 +3557,6 @@
       "description": "The platform said since the weekend it had \"taken immediate action to identify and remove listings linked to looting\"."
     },
     {
-      "title": "Ex-OpenAI worker accused of planting bug had Saudi support, claims prosecutors",
-      "url": "https://www.bbc.co.uk/news/articles/c6gel2dlyxvyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 19, 2026",
-      "description": "Abdulrahman Alfozan, who is accused of planting a recording device, has been denied bail."
-    },
-    {
-      "title": "Exiled critic of Rwandan president found beheaded",
-      "url": "https://www.bbc.co.uk/news/articles/c3lylj78777do?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 19, 2026",
-      "description": "Former army sergeant major Robert Kabera was a popular YouTuber and singer, who had sought asylum in Uganda."
-    },
-    {
       "title": "Katya Adler: France divided over who to blame for riots and what to learn from them",
       "url": "https://www.bbc.co.uk/news/articles/cq0me4g9p970o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 21, 2026",
@@ -3565,7 +3596,7 @@
       "title": "Huge crowds watch attempt to rescue shark stranded in South Korean canal",
       "url": "https://www.bbc.co.uk/news/videos/ckq6n56e5qrqo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 21, 2026",
-      "description": "A third attempt has been made to guide the 9ft 10in (3m) shark back to the open sea."
+      "description": "Early on Thursday morning local time, South Korea's oceans ministry said the shark had been successfully guided out of the canal."
     },
     {
       "title": "BBC inside Australian court as man charged with attacking MP stays silent in first hearing",
@@ -3916,6 +3947,66 @@
       "description": "Poundland says Martin Property Group from Londonderry is the management team's \"preferred partner\""
     },
     {
+      "title": "Colombia seizes 7.6 tonnes of cocaine in biggest haul in a decade",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/21/colombia-seizes-7-6-tonnes-of-cocaine-in-biggest-haul-in-a-decade?traffic_source=rss",
+      "date": "October 21, 2026",
+      "description": "Colombian authorities have seized 7.6 tonnes of cocaine at the Caribbean port of Cartagena"
+    },
+    {
+      "title": "Video shows Israeli settler assaulting Palestinian child",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/21/video-shows-israeli-settler-assaulting-palestinian-child?traffic_source=rss",
+      "date": "October 21, 2026",
+      "description": "An Israeli settler was filmed shouting at and assaulting a Palestinian child during an attack on a family east of Yatta."
+    },
+    {
+      "title": "Jason Alexander recalls Palestinian protection in Ramallah",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/21/jason-alexander-recalls-palestinian-protection-in-ramallah?traffic_source=rss",
+      "date": "October 21, 2026",
+      "description": "Seinfeld actor Jason Alexander recalls a visit to Ramallah that challenged his fears about visiting Palestinian cities."
+    },
+    {
+      "title": "What happened to Australian politician Helen Haines?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/21/what-happened-to-australian-politician-helen-haines?traffic_source=rss",
+      "date": "October 21, 2026",
+      "description": "Australian Lawmaker Helen Haines has lost both legs after a car rammed into her."
+    },
+    {
+      "title": "UK Conservative Party suspends ex-candidate after Al Jazeera investigation",
+      "url": "https://www.aljazeera.com/news/2026/10/21/conservative-party-suspends-ex-candidate-filmed-in-al-jazeera-investigation?traffic_source=rss",
+      "date": "October 21, 2026",
+      "description": "The UK's Conservatives suspend former candidate Jack Ross after he was filmed discussing hiring contract killers."
+    },
+    {
+      "title": "India’s ‘Cockroach’ leaders free after a week in jail",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/21/indias-cockroach-leaders-free-after-a-week-in-jail?traffic_source=rss",
+      "date": "October 21, 2026",
+      "description": "Two top leaders of India’s Cockroach Party, Ashutosh Ranka and Saurav Das, have been released after a week in jail."
+    },
+    {
+      "title": "Tunisia jails opposition politician for four years over social media posts",
+      "url": "https://www.aljazeera.com/news/2026/10/21/tunisia-jails-opposition-politician-for-four-years-over-social-media-posts?traffic_source=rss",
+      "date": "October 21, 2026",
+      "description": "Olfa ⁠Hamdi, a US-Tunisian national, was convicted of 'plotting' and 'inciting' military to disobey orders."
+    },
+    {
+      "title": "Steelers and Saints set for historic NFL clash in riot-hit Paris",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/21/steelers-and-saints-set-for-historic-nfl-clash-in-riot-hit-paris?traffic_source=rss",
+      "date": "October 21, 2026",
+      "description": "The NFL’s Steelers and Saints will play in Paris on Sunday despite the riots."
+    },
+    {
+      "title": "Farmers blocked from olive harvest in occ. West Bank, volunteers detained",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/21/farmers-blocked-from-olive-harvest-in-occ-west-bank-volunteers-detained?traffic_source=rss",
+      "date": "October 21, 2026",
+      "description": "Palestinian farmers are still being blocked from accessing their olive groves by Israeli settlers and the military"
+    },
+    {
+      "title": "Thousands march for school funding in Greece",
+      "url": "https://www.aljazeera.com/news/2026/10/21/thousands-march-for-school-funding-in-greece?traffic_source=rss",
+      "date": "October 21, 2026",
+      "description": "Teachers joined nationwide student protests amid growing youth-led demonstrations in Europe."
+    },
+    {
       "title": "Qatar, Turkiye, Pakistan and Indonesia sign ‘Badr’ defence pact",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/21/qatar-turkiye-pakistan-and-indonesia-sign-badr-defence-pact?traffic_source=rss",
       "date": "October 21, 2026",
@@ -3976,76 +4067,10 @@
       "description": "Follow updates, with team news, from our live text commentary stream coverage as Mbappe and Bellingham headline."
     },
     {
-      "title": "Bayern Munich vs Arsenal LIVE: Champions League",
+      "title": "Bayern Munich 2-2 Arsenal LIVE: Champions League",
       "url": "https://www.aljazeera.com/sports/liveblog/2026/10/21/bayern-munich-vs-arsenal-live-champions-league?traffic_source=rss",
       "date": "October 21, 2026",
       "description": "Follow updates on the league-phase clash, including the build-up, analysis and live text commentary of the game."
-    },
-    {
-      "title": "Canada wants to expand its LNG business. Critics raise red flags",
-      "url": "https://www.aljazeera.com/economy/longform/2026/10/21/canada-wants-to-expand-its-lng-business-critics-raise-red-flags-2?traffic_source=rss",
-      "date": "October 21, 2026",
-      "description": "As Canada’s LNG exports grow, critics raise concerns over human rights abuses linked to major corporate investors."
-    },
-    {
-      "title": "Catalonia’s new far right: How anti-Muslim sentiment is reshaping politics",
-      "url": "https://www.aljazeera.com/news/2026/10/21/catalonias-new-far-right-how-anti-muslim-sentiment-is-reshaping-politics?traffic_source=rss",
-      "date": "October 21, 2026",
-      "description": "The rise of Catalan Alliance is causing alarm among Muslims ahead of Spain's snap election in November."
-    },
-    {
-      "title": "What are Italy’s new measures against violent protests?",
-      "url": "https://www.aljazeera.com/news/2026/10/21/what-are-italys-new-measures-against-violent-protests?traffic_source=rss",
-      "date": "October 21, 2026",
-      "description": "The government has unveiled a new offence of 'violent participation in public demonstrations', among other measures."
-    },
-    {
-      "title": "Trump says AI data centres should pay ‘dividends’ in pre-midterm shift",
-      "url": "https://www.aljazeera.com/news/2026/10/21/trump-says-ai-data-centres-should-pay-dividends-in-pre-midterm-shift?traffic_source=rss",
-      "date": "October 21, 2026",
-      "description": "US president has continued to support data centres in advance of midterms, despite growing opposition from Republicans."
-    },
-    {
-      "title": "Musk pledges $10bn in SpaceX shares for US children: Who really gains?",
-      "url": "https://www.aljazeera.com/news/2026/10/21/musk-pledges-10bn-in-spacex-shares-for-us-children-who-really-gains?traffic_source=rss",
-      "date": "October 21, 2026",
-      "description": "The pledge, which Trump says will go through tax-friendly 'Trump accounts', comes two weeks before the US midterms."
-    },
-    {
-      "title": "US congressional candidate Brad Lander detained in West Bank",
-      "url": "https://www.aljazeera.com/news/2026/10/21/us-congressional-candidate-brad-lander-freed-after-west-bank-detention?traffic_source=rss",
-      "date": "October 21, 2026",
-      "description": "Lander was freed, but says dozens remain in Israeli custody."
-    },
-    {
-      "title": "How Qatar, Turkiye, Pakistan and Indonesia are deepening defence ties",
-      "url": "https://www.aljazeera.com/news/2026/10/21/how-qatar-turkiye-pakistan-and-indonesia-are-deepening-defence-ties?traffic_source=rss",
-      "date": "October 21, 2026",
-      "description": "Experts say conflicts and uncertainty are accelerating efforts to strengthen regional military capacity."
-    },
-    {
-      "title": "How war in Lebanon has cost young people with autism and ADHD",
-      "url": "https://www.aljazeera.com/news/2026/10/21/how-cost-israels-war-on-lebanon-has-on-young-people-with-autism-and-adhd?traffic_source=rss",
-      "date": "October 21, 2026",
-      "description": "Experts warn that war takes a heavy toll on neurodivergent people, who often rely on routine."
-    },
-    {
-      "title": "Are the UK, France being pulled into the Saudi-Houthi conflict?",
-      "url": "https://www.aljazeera.com/news/2026/10/21/are-the-uk-france-being-pulled-into-the-saudi-houthi-conflict?traffic_source=rss",
-      "date": "October 21, 2026",
-      "description": "The European states say their support for Riyadh is 'defensive', but analysts warn Houthi reaction may complicate that."
-    },
-    {
-      "title": "From one house to villages: Israeli settlers have Palestinians surrounded",
-      "url": "https://www.aljazeera.com/features/2026/10/21/from-one-house-to-whole-villages-settlers-have-palestinians-surrounded?traffic_source=rss",
-      "date": "October 21, 2026",
-      "description": "A family in the South Hebron Hills has spent more than two weeks cut off by settlers camped outside."
-    },
-    {
-      "title": "Pakistani authorities arrest man accused in $126m US postage fraud",
-      "url": "https://www.aljazeera.com/news/2026/10/21/pakistani-authorities-arrest-man-accused-in-126m-us-postage-fraud?traffic_source=rss",
-      "date": "October 21, 2026",
-      "description": "Faheem Akram has been charged with several offences including conspiracy to defraud the United States."
     }
   ]
 }
