@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-22T13:08:30.710Z",
+  "updatedAt": "2026-10-22T15:09:29.891Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261021",
@@ -3269,6 +3269,12 @@
   ],
   "ajNews": [
     {
+      "title": "Germany arrests Ukrainian man accused of spying for Russia",
+      "url": "https://www.aljazeera.com/news/2026/10/22/germany-arrests-ukrainian-man-accused-of-spying-for-russia?traffic_source=rss",
+      "date": "October 22, 2026",
+      "description": "Military has raised the threat level of ​Russian sabotage against German troops and facilities."
+    },
+    {
       "title": "Iran reveals ‘offensive’ doctrine, US issues alert: Is war imminent?",
       "url": "https://www.aljazeera.com/news/2026/10/22/iran-reveals-offensive-doctrine-us-issues-alert-is-war-imminent?traffic_source=rss",
       "date": "October 22, 2026",
@@ -3285,21 +3291,15 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/22/russia-and-ukraine-trade-attacks-despite-pledging-to-resume-peace-talks?traffic_source=rss",
       "date": "October 22, 2026",
       "description": "Overnight attacks on Kyiv injured 15 people, while two were injured in Moscow as Russia said it intercepted 163 drones."
-    },
-    {
-      "title": "Russian strikes hit Kyiv after Witkoff meets Putin",
-      "url": "https://www.aljazeera.com/news/2026/10/22/russian-strikes-hit-kyiv-after-witkoff-meets-putin?traffic_source=rss",
-      "date": "October 22, 2026",
-      "description": "Ukraine says 'appeasement' will not end war as Russian attacks kill 1, injure 22 in its capital."
-    },
-    {
-      "title": "Can Russia broker a new US-Iran deal?",
-      "url": "https://www.aljazeera.com/opinions/2026/10/22/can-russia-broker-a-new-us-iran-deal?traffic_source=rss",
-      "date": "October 22, 2026",
-      "description": "Russia’s nuclear expertise, close ties with Tehran and negotiation experience could give Moscow an edge as a mediator."
     }
   ],
   "occNews": [
+    {
+      "title": "OCC Announces Enforcement Actions for October 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-93.html",
+      "date": "October 22, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for October 2026."
+    },
     {
       "title": "OCC Imposes $750 Million Assessment Against Bank of America for Deficient BSA/AML Compliance",
       "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-89.html",
@@ -3419,16 +3419,34 @@
       "description": "The deaths include two women found drowned in a cellar in the Bouches-du-Rhône region."
     },
     {
-      "title": "El Salvador's president threatens Haitian gangs over military hostages",
-      "url": "https://www.bbc.co.uk/news/articles/cq33xpjekve4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 22, 2026",
-      "description": "Four members of the so-called Gang Suppression Force have been missing since Sunday."
-    },
-    {
       "title": "Two European women held captive for more than a year in Niger freed in Libya",
       "url": "https://www.bbc.co.uk/news/articles/cq62y0v7434yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 22, 2026",
       "description": "The Swiss government told the BBC that the freed national was on her way back to Switzerland."
+    },
+    {
+      "title": "Teacher in Oregon shooting said she pretended to be dead to survive",
+      "url": "https://www.bbc.co.uk/news/articles/cqvgrmzdzgr7o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 22, 2026",
+      "description": "The teacher said she could not help children because she was badly injured by the attacker."
+    },
+    {
+      "title": "Two killed in Houthi attack on airport in eastern Saudi Arabia, authorities say",
+      "url": "https://www.bbc.co.uk/news/articles/cqwy71ww156ro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 22, 2026",
+      "description": "It is the latest in a series of attacks by the Houthi movement targeting airports and other sites in the kingdom."
+    },
+    {
+      "title": "Ilhan Omar says 'bizarre' pre-dawn raid on her home is forcing her to move out",
+      "url": "https://www.bbc.co.uk/news/articles/cm75p1kxryl5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 22, 2026",
+      "description": "The congresswoman said federal agents seized over a dozen items, including cell phones and notebooks, as part of a federal investigation."
+    },
+    {
+      "title": "YouTuber arrested after popular Indian finance influencer's suicide",
+      "url": "https://www.bbc.co.uk/news/articles/ckx2d0ej7w7do?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 22, 2026",
+      "description": "V Harish, who ran the hugely popular Instagram account \"Finance with Harish\", was found dead on Tuesday."
     },
     {
       "title": "Celebrity shark guided out of South Korea canal refuses to swim out to sea",
@@ -3437,10 +3455,16 @@
       "description": "Bukangi the shark became an unlikely sensation after it was spotted in a canal in Busan weeks ago."
     },
     {
-      "title": "Two killed in attack on airport in eastern Saudi Arabia, authorities say",
-      "url": "https://www.bbc.co.uk/news/articles/cqwy71ww156ro?at_medium=RSS&amp;at_campaign=rss",
+      "title": "El Salvador's president threatens Haitian gangs over military hostages",
+      "url": "https://www.bbc.co.uk/news/articles/cq33xpjekve4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 22, 2026",
-      "description": "It is the latest in a series of attacks by the Houthi movement which have targeted airports and other sites in the kingdom."
+      "description": "Four members of the so-called Gang Suppression Force have been missing since Sunday."
+    },
+    {
+      "title": "Grandparent hugging consent ad pulled after criticism",
+      "url": "https://www.bbc.co.uk/news/articles/c83vqn6zwrx0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 22, 2026",
+      "description": "Jim O'Callaghan described the video as \"inappropriate and demeaning to grandparents\"."
     },
     {
       "title": "First human case of Shamonda virus detected in France, officials say",
@@ -3533,31 +3557,7 @@
       "description": "The wife of a diplomat based in Abuja travelled to Kampala for a vacation."
     },
     {
-      "title": "India 'cockroach' leaders who called on election chief to quit are freed from jail",
-      "url": "https://www.bbc.co.uk/news/articles/c674p0xepljeo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 21, 2026",
-      "description": "Saurav Das and Ashutosh Ranka were accused of breaking into an unauthorised protest venue in Delhi."
-    },
-    {
-      "title": "Elon Musk confirms he is considering merging Tesla and SpaceX",
-      "url": "https://www.bbc.co.uk/news/articles/cmlyl09xjke4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 21, 2026",
-      "description": "Musk says special committees within both companies have been formed to look at a possible mega-merger."
-    },
-    {
-      "title": "Gambia to pay victims of Yahya Jammeh's rule from proceeds of his seized US mansion",
-      "url": "https://www.bbc.co.uk/news/articles/cmn8wx75l2n8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 21, 2026",
-      "description": "The Gambia has confirmed receiving $2.5m from the sale of the house in Maryland."
-    },
-    {
-      "title": "Sudan army drones hit mourners and fuel market killing more than 300 people, sources say",
-      "url": "https://www.bbc.co.uk/news/articles/cr3el70jz1nqo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 20, 2026",
-      "description": "A truck carrying people to a funeral and a market alleged to be supplying fuel to the RSF were targeted."
-    },
-    {
-      "title": "How did AI discover the internet's massive cyber-security risk?",
+      "title": "AI discovered a massive cyber-security flaw - here's what happened",
       "url": "https://www.bbc.co.uk/news/videos/cq0ld7e0jg2eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 22, 2026",
       "description": "The BBC's technology correspondent Joe Tidy explains how it happened, and what it means for you."
@@ -3587,6 +3587,12 @@
       "description": "The serviceman was surrounded by landmines and enemy drones so a ground rescue was not possible, Ukraine's military says."
     },
     {
+      "title": "Why a student protest movement is challenging 12 years of Vučić rule in Serbia",
+      "url": "https://www.bbc.co.uk/news/articles/cmq8n3v94ql3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 22, 2026",
+      "description": "After two years of student protests, Serbians vote on Sunday in elections that could bring down the ruling party."
+    },
+    {
       "title": "How Arab parties could hold critical balance of power in Israeli election",
       "url": "https://www.bbc.co.uk/news/articles/cx8dzrp768j8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 22, 2026",
@@ -3599,7 +3605,7 @@
       "description": "No country for young men and women: why do older politicians seem to have such a tight grip on the US political system?"
     },
     {
-      "title": "Some New Yorkers back ban on horse-drawn carriages, but drivers fear for incomes",
+      "title": "New York City reconsiders a classic attraction: are horse-drawn carriages abuse?",
       "url": "https://www.bbc.co.uk/news/articles/c6qjnwd1pgjxo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 22, 2026",
       "description": "As councillors prepare to banish the vehicles, views in Central Park are divided over the 160-year-old tradition."
@@ -3615,12 +3621,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cqj34j7dk771o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 21, 2026",
       "description": "With immigration curbs and tech firms cutting foreign hiring, US residency is becoming a distant dream for many Indians."
-    },
-    {
-      "title": "Japan is known for world-class events - but the Asian Games were chaotic",
-      "url": "https://www.bbc.co.uk/news/articles/cvze414811jlo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 21, 2026",
-      "description": "Hotel chaos, transport mishaps and diplomatic blunders cast a spotlight on organisers and the firm hired to deliver the games."
     },
     {
       "title": "Barclays cutting 5,000 jobs as it increases reliance on AI",
@@ -3929,6 +3929,12 @@
       "description": "Many younger people do not believe the state pension will exist when they are older"
     },
     {
+      "title": "The Briefing Room",
+      "url": "https://www.bbc.co.uk/sounds/play/live:bbc_radio_fourfm?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 22, 2026",
+      "description": "After mass protests and violence, what will persuade the French to accept economic reform?"
+    },
+    {
       "title": "A warning to anyone with credit card debt...",
       "url": "https://www.bbc.co.uk/news/videos/c620reny4e1no?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 21, 2026",
@@ -3953,10 +3959,58 @@
       "description": "New Yorkers share how much they spend on a wedding gift - and how they decide."
     },
     {
-      "title": "NI company in talks to save Poundland from administration",
-      "url": "https://www.bbc.co.uk/news/videos/c962yg36mk66o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 13, 2026",
-      "description": "Poundland says Martin Property Group from Londonderry is the management team's \"preferred partner\""
+      "title": "Ilhan Omar home raid, Haines attack: Inside rise in violence on officials",
+      "url": "https://www.aljazeera.com/news-analysis/2026/10/22/ilhan-omar-home-raid-haines-attack-inside-rise-in-violence-on-officials?traffic_source=rss",
+      "date": "October 22, 2026",
+      "description": "US Congresswoman Ilhan Omar's home raided; Australian MP Helen Haines loses both legs following an attack."
+    },
+    {
+      "title": "FIFA’s Infantino made to wait on Asian support as chief coy at AFC session",
+      "url": "https://www.aljazeera.com/sports/2026/10/22/fifas-infantino-made-to-wait-on-asian-support-as-chief-coy-at-afc-session?traffic_source=rss",
+      "date": "October 22, 2026",
+      "description": "'We’re not against anyone and we’re not in favour of anyone,' says AFC President Sheikh Salman bin Ebrahim Al Khalifa."
+    },
+    {
+      "title": "India resist New Zealand fightback to win record-setting T20 cricket opener",
+      "url": "https://www.aljazeera.com/sports/2026/10/22/india-resist-new-zealand-fightback-to-win-record-setting-t20-cricket-opener?traffic_source=rss",
+      "date": "October 22, 2026",
+      "description": "New Zealand reach their highest home total against India, 225-4, but Sanju Samson hits fifty to top the record in chase."
+    },
+    {
+      "title": "Yemenis face severe shortages in Taiz amid Houthi blockade",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/22/yemenis-face-severe-shortages-in-taiz-amid-houthi-blockade?traffic_source=rss",
+      "date": "October 22, 2026",
+      "description": "Residents in Yemen’s Taiz are facing severe food and water shortages as a Houthi blockade cuts off a key supply route."
+    },
+    {
+      "title": "How Sudan’s shift to drone warfare is fuelling a civilian crisis",
+      "url": "https://www.aljazeera.com/news/2026/10/22/how-sudans-shift-to-drone-warfare-is-fuelling-a-civilian-crisis?traffic_source=rss",
+      "date": "October 22, 2026",
+      "description": "Drone attacks on supply lines and safe cities are taking a devastating toll on civilians."
+    },
+    {
+      "title": "Outposts, violence, impunity: The anatomy of Israeli settler land grabs",
+      "url": "https://www.aljazeera.com/features/2026/10/22/outposts-violence-impunity-the-anatomy-of-israeli-settler-land-grabs?traffic_source=rss",
+      "date": "October 22, 2026",
+      "description": "With government backing and little accountability, an ominous pattern casts a shadow over the Palestinian olive harvest."
+    },
+    {
+      "title": "Macron blames ‘seditious’ far left for unrest as France bans some protests",
+      "url": "https://www.aljazeera.com/news/2026/10/22/macron-blames-seditious-ultra-left-for-unrest-as-france-bans-protests?traffic_source=rss",
+      "date": "October 22, 2026",
+      "description": "Thursday's planned demonstrations are outlawed in parts of Paris, Lyon, Lille and Grenoble."
+    },
+    {
+      "title": "Maradona doctor was made ‘scapegoat’ for his death, Argentinian court told",
+      "url": "https://www.aljazeera.com/sports/2026/10/22/maradona-doctor-was-made-scapegoat-for-his-death-argentinian-court-told?traffic_source=rss",
+      "date": "October 22, 2026",
+      "description": "Prosecutors have requested a 12-year prison sentence for Leopoldo Luque, one of seven healthcare professionals on trial."
+    },
+    {
+      "title": "Shark returns to South Korea canal after failed rescue attempt",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/22/shark-returns-to-south-korea-canal-after-failed-rescue-attempt?traffic_source=rss",
+      "date": "October 22, 2026",
+      "description": "An endangered shark swam back into a canal in South Korea after rescuers had led it back out to sea."
     },
     {
       "title": "What’s the PHP coding flaw that could pull down 70 percent of the internet?",
@@ -3995,7 +4049,7 @@
       "description": "Tom Barrack says Washington's relationship with the Middle East needs to change from one of control to one of support."
     },
     {
-      "title": "Is Neha Bora, India’s new red star, Modi’s real Gen Z threat?",
+      "title": "Neha Bora can outwit the police. Can Indian youth leader outfox Modi?",
       "url": "https://www.aljazeera.com/features/2026/10/22/is-neha-bora-indias-new-red-star-modis-real-gen-z-threat?traffic_source=rss",
       "date": "October 22, 2026",
       "description": "Firebrand student leader has become face of the youth protest movement taking on Modi's Hindu majoritarian government."
@@ -4029,54 +4083,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/22/fighting-rages-in-yemens-taiz-as-un-warns-nearly-260000-now-displaced?traffic_source=rss",
       "date": "October 22, 2026",
       "description": "Yemen's government forces launched hundreds of strikes on Houthi locations, a spokesperson says."
-    },
-    {
-      "title": "Israeli elections: Is it just right wing versus right?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/22/israeli-elections-is-it-just-right-wing-versus-right?traffic_source=rss",
-      "date": "October 22, 2026",
-      "description": "Benjamin Netanyahu’s opponents are promising a change to Israeli politics, but are their policies really that different?"
-    },
-    {
-      "title": "Bill Clinton quotes Quran and condemns anti-Muslim rhetoric",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/22/bill-clinton-quotes-quran-and-condemns-anti-muslim-rhetoric?traffic_source=rss",
-      "date": "October 22, 2026",
-      "description": "Former US President Bill Clinton quoted the Quran during a speech in Florida condemning discrimination against Muslims."
-    },
-    {
-      "title": "Angel Reese shines again as Dream down Valkyries to lead WNBA Finals",
-      "url": "https://www.aljazeera.com/sports/2026/10/22/angel-reese-shines-again-as-dream-down-valkyries-to-lead-wnba-finals?traffic_source=rss",
-      "date": "October 22, 2026",
-      "description": "Atlanta's Reese has become the only woman in history to record consecutive double-doubles in three WNBA Finals games."
-    },
-    {
-      "title": "Meta faces Australian lawsuit over alleged social media harm to children",
-      "url": "https://www.aljazeera.com/news/2026/10/22/meta-faces-australian-lawsuit-over-alleged-social-media-harm-to-children?traffic_source=rss",
-      "date": "October 22, 2026",
-      "description": "Class action could be first in Australia to blame social media for harming its users."
-    },
-    {
-      "title": "Wrong national anthems played three times at Asian Para Games in Japan",
-      "url": "https://www.aljazeera.com/sports/2026/10/22/wrong-national-anthems-played-three-times-at-asian-para-games-in-japan?traffic_source=rss",
-      "date": "October 22, 2026",
-      "description": "The Iranian national anthem was played for athletes from Taiwan and Mongolia, prompting Nagoya's mayor to apologise."
-    },
-    {
-      "title": "In Israel election, Palestinian citizens weigh fear against disillusionment",
-      "url": "https://www.aljazeera.com/news/2026/10/22/in-israel-election-palestinian-citizens-weigh-fear-against-disillusionment?traffic_source=rss",
-      "date": "October 22, 2026",
-      "description": "With vote at knife’s edge, Palestinian citizens weigh principle against strategic voting in system stacked against them."
-    },
-    {
-      "title": "US universities are failing to protect victims of sexual assault",
-      "url": "https://www.aljazeera.com/opinions/2026/10/22/us-universities-are-failing-to-protect-victims-of-sexual-assault?traffic_source=rss",
-      "date": "October 22, 2026",
-      "description": "The Cornell case shows how university bureaucracy discourages complaints and shields institutions."
-    },
-    {
-      "title": "China edge USA to women’s team gold at Gymnastics World Championships",
-      "url": "https://www.aljazeera.com/sports/2026/10/22/china-edge-usa-to-womens-team-gold-at-gymnastics-world-championships?traffic_source=rss",
-      "date": "October 22, 2026",
-      "description": "China finished 0.233 points ahead of the Americans, denying them a chance to win an eighth consecutive team gold."
     }
   ]
 }
