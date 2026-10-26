@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T19:08:26.989Z",
+  "updatedAt": "2026-10-26T21:08:37.547Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261026",
@@ -3254,6 +3254,12 @@
   ],
   "unNotices": [
     {
+      "title": "Security Council ISIL (Da’esh) and Al-Qaida Sanctions Committee Amends Three Entries on Its Sanctions List",
+      "url": "https://press.un.org/en/2026/sc16490.doc.htm",
+      "date": "October 26, 2026",
+      "description": "On 26 October 2026, the Security Council Committee pursuant to resolutions 1267 (1999), 1989 (2011) and 2253 (2015) concerning ISIL (Da’esh), Al‑Qaida and associated individuals, groups, undertakings and entities enacted the amendments specified with strikethrough and underline in the entries below on its ISIL (Da’esh) and Al-Qaida Sanctions List of individuals and entities subject to the assets freeze, travel ban and arms embargo set out in paragraph 1 of Security Council resolution 2734 (2024), and adopted under Chapter VII of the Charter of the United Nations."
+    },
+    {
       "title": "Security Council ISIL (Da’esh) and Al-Qaida Sanctions Committee Removes Three Entries from Its Sanctions List",
       "url": "https://press.un.org/en/2026/sc16488.doc.htm",
       "date": "October 26, 2026",
@@ -3275,6 +3281,12 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Huge explosion at a weapons depot in Syria",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/huge-explosion-at-a-weapons-depot-in-syria?traffic_source=rss",
+      "date": "October 26, 2026",
+      "description": "Huge explosion at a weapons depot in Syria"
+    },
     {
       "title": "Zelenskyy says peace talks with Russia, US to restart",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/zelenskyy-says-peace-talks-with-russia-us-to-restart?traffic_source=rss",
@@ -3304,18 +3316,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/guterres-warns-iran-gulf-escalation-west-bank?traffic_source=rss",
       "date": "October 26, 2026",
       "description": "UN Chief Antonio Guterres has warned of devastating consequences from any military escalation in the Gulf region."
-    },
-    {
-      "title": "Mecca defence alliance members in Tehran to defuse Iran-US, Yemen tensions",
-      "url": "https://www.aljazeera.com/news/2026/10/26/mecca-defence-alliance-members-in-tehran-to-defuse-iran-us-yemen-tensions?traffic_source=rss",
-      "date": "October 26, 2026",
-      "description": "Countering Houthi advances in Yemen will be a major focus for Saudi Arabia and its allies in Tehran."
-    },
-    {
-      "title": "Iran’s anti-negotiation hardliners turn against President Pezeshkian",
-      "url": "https://www.aljazeera.com/news/2026/10/26/irans-anti-negotiation-hardliners-turn-against-president-pezeshkian?traffic_source=rss",
-      "date": "October 26, 2026",
-      "description": "Iran’s anti-negotiation hardliners turn against President Pezeshkian over negotiations with the US."
     }
   ],
   "occNews": [
@@ -3444,10 +3444,10 @@
       "description": "The populist right-wing leader of 12 years says it is \"clear\" his party has lost the vote billed as a referendum on the country's future."
     },
     {
-      "title": "Chris Brown given suspended eight-month prison sentence over nightclub attack",
-      "url": "https://www.bbc.co.uk/news/articles/cq3dje4g4d5jo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Trump administration illegally fired James Comey's daughter, judge rules",
+      "url": "https://www.bbc.co.uk/news/articles/ck78px6glw3lo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 26, 2026",
-      "description": "The R&B star previously pleaded guilty to affray, after attacking a music producer with a glass bottle."
+      "description": "Maurene Comey believes she was let go from her job as a federal prosecutor because her father is the former FBI director."
     },
     {
       "title": "Anthropic warns of 'catastrophic risk' to humankind ahead of blockbuster share listing",
@@ -3468,6 +3468,12 @@
       "description": "Prosecutors have indicted Devin Jacob Ballard for a killing that has caused outrage in Japan, local media reports."
     },
     {
+      "title": "'Maxxing' selected as Dictionary.com word of the year",
+      "url": "https://www.bbc.co.uk/news/articles/cmy4xwp22xyqo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 26, 2026",
+      "description": "\"Whatever we're doing, we want to push it further,\" said an expert on why Americans are embracing the term, which is short for maximising."
+    },
+    {
       "title": "Algeria to send troops to Niger in first foreign deployment since 1973",
       "url": "https://www.bbc.co.uk/news/articles/cm4g14n1e5wko?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 26, 2026",
@@ -3480,16 +3486,22 @@
       "description": "Local youths reportedly accused the health workers of contaminating water sources and spreading Ebola."
     },
     {
-      "title": "Police arrest teenager after shooting that injured 12, including children, in Florida",
-      "url": "https://www.bbc.co.uk/news/articles/ckpdg8vnv171o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 26, 2026",
-      "description": "The incident happened on Saturday night, close to an American football stadium where a game had just been played."
-    },
-    {
       "title": "More than 60 Christians killed in Ethiopia 'massacre', church official says",
       "url": "https://www.bbc.co.uk/news/articles/cm4g175dgdx2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 26, 2026",
       "description": "One resident, whose 75-year-old father was killed, described it as an ambush, saying they were surrounded."
+    },
+    {
+      "title": "Chris Brown given suspended eight-month prison sentence over nightclub attack",
+      "url": "https://www.bbc.co.uk/news/articles/cq3dje4g4d5jo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 26, 2026",
+      "description": "The R&B star previously pleaded guilty to affray, after attacking a music producer with a glass bottle."
+    },
+    {
+      "title": "Police arrest teenager after shooting that injured 12, including children, in Florida",
+      "url": "https://www.bbc.co.uk/news/articles/ckpdg8vnv171o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 26, 2026",
+      "description": "The incident happened on Saturday night, close to an American football stadium where a game had just been played."
     },
     {
       "title": "Australian murderer loses bid to eat Vegemite in prison",
@@ -3912,6 +3924,36 @@
       "description": "We ask people in the capital how much they pay for their homes."
     },
     {
+      "title": "What Vucic’s defeat means for Serbia’s foreign policy",
+      "url": "https://www.aljazeera.com/news/2026/10/26/what-vucics-defeat-means-for-serbias-foreign-policy?traffic_source=rss",
+      "date": "October 26, 2026",
+      "description": "Those expecting Belgrade to tilt towards the West may need patience while the new government deals with domestic issues."
+    },
+    {
+      "title": "How a WhatsApp channel helped Lula win Brazil’s election",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/brazil-lula-victory-whatsapp-campaign-janones?traffic_source=rss",
+      "date": "October 26, 2026",
+      "description": "Over 10 million Lula supporters joined a WhatsApp channel to help boost his campaign."
+    },
+    {
+      "title": "‘Deflections’: Abdul El-Sayed responds to Trump’s anti-Muslim attacks",
+      "url": "https://www.aljazeera.com/news/2026/10/26/deflections-abdul-el-sayed-responds-to-trumps-anti-muslim-attacks?traffic_source=rss",
+      "date": "October 26, 2026",
+      "description": "The Democratic candidate for the US Senate has been the subject of Islamophobic attacks from Trump."
+    },
+    {
+      "title": "80 injured after bus plunges down embankment near Barcelona",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/80-injured-after-bus-plunges-down-embankment-near-barcelona?traffic_source=rss",
+      "date": "October 26, 2026",
+      "description": "80 injured after bus plunges down embankment near Barcelona"
+    },
+    {
+      "title": "Jordan arrests three suspects over deadly church attack",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/jordan-arrests-three-suspects-over-deadly-church-attack?traffic_source=rss",
+      "date": "October 26, 2026",
+      "description": "Jordanian authorities have arrested three relatives over a church attack in Karak that killed eight people."
+    },
+    {
       "title": "Trump faces private citizens lawsuit over limiting White House media access",
       "url": "https://www.aljazeera.com/news/2026/10/26/trump-faces-private-citizens-lawsuit-over-limiting-white-house-media-access?traffic_source=rss",
       "date": "October 26, 2026",
@@ -3994,30 +4036,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/26/israel-committing-crimes-against-humanity-in-occupied-west-bank-un?traffic_source=rss",
       "date": "October 26, 2026",
       "description": "UN report highlights crimes including extermination, torture, rape and other forms of sexual violence."
-    },
-    {
-      "title": "Egyptian parliament authorises military aid for Saudi Arabia",
-      "url": "https://www.aljazeera.com/news/2026/10/26/egyptian-parliament-authorises-military-aid-for-saudi-arabia?traffic_source=rss",
-      "date": "October 26, 2026",
-      "description": "Legislators approve military support amid Houthi attacks on Saudi Arabia, but Cairo has ruled out strikes on Yemen."
-    },
-    {
-      "title": "What does the Israeli election mean for religious groups?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/what-does-the-israeli-election-mean-for-religious-groups?traffic_source=rss",
-      "date": "October 26, 2026",
-      "description": "What does the Israeli election mean for religious groups?"
-    },
-    {
-      "title": "Rohingya dismantle homes amid eviction threat in disputed Kashmir region",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/rohingya-deported-disputed-kashmir-region?traffic_source=rss",
-      "date": "October 26, 2026",
-      "description": "Rohingya refugees say they are being forced to dismantle their homes in Indian-administered Kashmir."
-    },
-    {
-      "title": "The Price of Protest",
-      "url": "https://www.aljazeera.com/video/game-theory/2026/10/26/the-price-of-protest?traffic_source=rss",
-      "date": "October 26, 2026",
-      "description": "What does it cost an athlete to take a stand?"
     }
   ]
 }
