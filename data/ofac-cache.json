@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-26T13:14:56.187Z",
+  "updatedAt": "2026-10-26T15:22:38.438Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261026",
+      "code": "20261026",
+      "title": "Issuance of Amended Frequently Asked Questions Regarding Blocking and Rejecting Transactions and Filing Reports with OFAC",
+      "date": "October 26, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261021",
       "code": "20261021",
@@ -54,12 +60,6 @@
       "code": "20261009_33",
       "title": "Issuance of Russia-related General License",
       "date": "October 09, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20261008",
-      "code": "20261008",
-      "title": "Iran-related Designations; Issuance of Iran-related General License; Issuance of Amended Russia-related General License",
-      "date": "October 08, 2026"
     }
   ],
   "civilPenalties": [
@@ -3275,6 +3275,24 @@
   ],
   "ajNews": [
     {
+      "title": "Mecca defence alliance members in Tehran to defuse Iran-US, Yemen tensions",
+      "url": "https://www.aljazeera.com/news/2026/10/26/mecca-defence-alliance-members-in-tehran-to-defuse-iran-us-yemen-tensions?traffic_source=rss",
+      "date": "October 26, 2026",
+      "description": "Countering Houthi advances in Yemen will be a major focus for Saudi Arabia and its allies in Tehran."
+    },
+    {
+      "title": "Iran’s anti-negotiation hardliners turn against President Pezeshkian",
+      "url": "https://www.aljazeera.com/news/2026/10/26/irans-anti-negotiation-hardliners-turn-against-president-pezeshkian?traffic_source=rss",
+      "date": "October 26, 2026",
+      "description": "Iran’s anti-negotiation hardliners turn against President Pezeshkian over negotiations with the US."
+    },
+    {
+      "title": "Has Pakistan reopened its border with Iran for trade?",
+      "url": "https://www.aljazeera.com/news/2026/10/26/has-pakistan-reopened-its-border-with-iran-for-trade?traffic_source=rss",
+      "date": "October 26, 2026",
+      "description": "Traders say some exports are crossing border after a weeklong halt, but Tehran says its cargo is not getting through."
+    },
+    {
       "title": "Suwayda remains in stasis as US signals differences with Israel on Syria",
       "url": "https://www.aljazeera.com/news/2026/10/26/suwayda-remains-in-deadlock-as-us-signals-differences-with-israel-on-syria?traffic_source=rss",
       "date": "October 26, 2026",
@@ -3285,12 +3303,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/thousands-greet-opposition-leader-maria-machado-upon-return-to-caracas?traffic_source=rss",
       "date": "October 26, 2026",
       "description": "Thousands lined the streets of Caracas to welcome opposition leader Maria Corina Machado back to Venezuela after exile."
-    },
-    {
-      "title": "Officials from Mecca pact states to hold talks in Iran amid regional tensions",
-      "url": "https://www.aljazeera.com/news/2026/10/26/officials-from-mecca-pact-states-to-hold-talks-in-iran-amid-regional-tensions?traffic_source=rss",
-      "date": "October 26, 2026",
-      "description": "Talks to be first high-level contact between Iran and the bloc since Houthi rebels escalated attacks on Saudi Arabia."
     }
   ],
   "occNews": [
@@ -3407,22 +3419,52 @@
   ],
   "regionsNews": [
     {
+      "title": "Lula wins fourth term in dramatic Brazil election comeback",
+      "url": "https://www.bbc.co.uk/news/articles/ckm23y3mg1yyo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 26, 2026",
+      "description": "The left-wing incumbent president had lost the first round to right-wing challenger Flávio Bolsonaro."
+    },
+    {
       "title": "Celebrations in Serbia after veteran ruler Vučić loses election to student-led protest movement",
       "url": "https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 26, 2026",
       "description": "The populist right-wing leader of 12 years says it is \"clear\" his party has lost the vote billed as a referendum on the country's future."
     },
     {
-      "title": "Australian murderer loses bid to eat Vegemite in prison",
-      "url": "https://www.bbc.co.uk/news/articles/cvwy7wz9x12go?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Anthropic warns of 'catastrophic risk' to humankind ahead of blockbuster share listing",
+      "url": "https://www.bbc.co.uk/news/articles/cq398p1wd1evo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 26, 2026",
-      "description": "Andre McKechnie, who murdered a property developer, argued it was his right to enjoy Australian culture."
+      "description": "The company will be the first true artificial intelligence company to go public as tech firms continue to invest heavily in AI."
+    },
+    {
+      "title": "Chris Brown given suspended eight-month prison sentence over nightclub attack",
+      "url": "https://www.bbc.co.uk/news/articles/cq3dje4g4d5jo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 26, 2026",
+      "description": "The R&B star previously pleaded guilty to affray, after attacking a music producer with a glass bottle."
+    },
+    {
+      "title": "US Marine indicted for murder and robbery of woman in Japan",
+      "url": "https://www.bbc.co.uk/news/articles/c3vgxjex1z9wo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 26, 2026",
+      "description": "Prosecutors have indicted Devin Jacob Ballard for a killing that has caused outrage in Japan, local media reports."
+    },
+    {
+      "title": "Algeria to send troops to Niger in first foreign deployment since 1973",
+      "url": "https://www.bbc.co.uk/news/articles/cm4g14n1e5wko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 26, 2026",
+      "description": "The troops are expected to protect energy facilities in northern Niger, near the Libyan border."
     },
     {
       "title": "Nurse killed in attack while responding to Ebola alert in DR Congo",
       "url": "https://www.bbc.co.uk/news/articles/crx2dyd24188o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 26, 2026",
       "description": "Local youths reportedly accused the health workers of contaminating water sources and spreading Ebola."
+    },
+    {
+      "title": "Australian murderer loses bid to eat Vegemite in prison",
+      "url": "https://www.bbc.co.uk/news/articles/cvwy7wz9x12go?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 26, 2026",
+      "description": "Andre McKechnie, who murdered a property developer, argued it was his right to enjoy Australian culture."
     },
     {
       "title": "Eric Bauza, voice of Bugs Bunny and Daffy Duck, dies aged 46",
@@ -3447,30 +3489,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c6e3xek2457wo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 25, 2026",
       "description": "He will be observed to evaluate whether his \"psychiatric health is compatible with pursuing his interrogation\", authorities said."
-    },
-    {
-      "title": "Mourinho keeps Clasico midas touch 13 years on as La Liga heats up",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cr3wvz20pglqo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 26, 2026",
-      "description": "Kylian Mbappe's two goals at Barcelona have opened up La Liga, as Jose Mourinho's Real Madrid leave Camp Nou with a victory."
-    },
-    {
-      "title": "Musk says SpaceX restricted Ukraine's Starlink connection as service restored",
-      "url": "https://www.bbc.co.uk/news/articles/cvx28ljp8n4xo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 25, 2026",
-      "description": "The tech billionaire accuses Ukraine of violating its terms of service by using the network for military activity."
-    },
-    {
-      "title": "Israel to close West Bank crossings on election day as crackdown escalates",
-      "url": "https://www.bbc.co.uk/news/articles/c6y93ylpl5p2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 25, 2026",
-      "description": "The Israeli Defense Forces announces restrictions on the movement of Palestinian workers in the run-up to Tuesday's election."
-    },
-    {
-      "title": "Gabon says access to social media restored after eight-month ban",
-      "url": "https://www.bbc.co.uk/news/articles/c6x2w0ngejneo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 25, 2026",
-      "description": "The authorities had justified the ban by saying online content was fuelling conflict, while the opposition had condemned it as an abuse of power."
     },
     {
       "title": "Watch: How President Lula turned it around to beat Flávio Bolsonaro",
@@ -3527,16 +3545,22 @@
       "description": "The highly secretive four-day Plenum starts Monday in Beijing."
     },
     {
+      "title": "All you need to know about the Dakar 2026 Youth Olympics",
+      "url": "https://www.bbc.co.uk/sport/olympics/articles/ck0546l2j4ppo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 26, 2026",
+      "description": "Senegal hosts Africa's first Olympic event as the Dakar 2026 Youth Games bring together 2,700 athletes from around the world."
+    },
+    {
       "title": "India's cartoonists built an audience online - now their posts are being restricted",
       "url": "https://www.bbc.co.uk/news/articles/cm3elp3v7jkdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 26, 2026",
       "description": "Indian cartoonists say online restrictions are making satire harder, but they aren't giving up."
     },
     {
-      "title": "Big, noisy and coming to a town near you - why the data centre backlash is growing",
-      "url": "https://www.bbc.co.uk/news/articles/cq2e9we7w2ejo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 25, 2026",
-      "description": "Data centres are the lifeblood of our digital world, but there are growing concerns about their environmental impact. The BBC explores their rise in charts."
+      "title": "Anthropic warns of 'catastrophic risk' to humankind ahead of blockbuster share listing",
+      "url": "https://www.bbc.co.uk/news/articles/cq398p1wd1evo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 26, 2026",
+      "description": "The company will be the first true artificial intelligence company to go public as tech firms continue to invest heavily in AI."
     },
     {
       "title": "Healey to shield low-income pensioners from income tax in the Budget",
@@ -3693,12 +3717,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cmly0lg3w5x2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 21, 2026",
       "description": "The vulnerabilities with PHP, a programming language widely used across the internet, have been described as the most significant ever found by AI."
-    },
-    {
-      "title": "Is an 'AI war' complicating your job search?",
-      "url": "https://www.bbc.co.uk/news/articles/cm9qzgg5z89no?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 22, 2026",
-      "description": "How fair are AI recruitment tools that help decide our future, and what happens when we click \"apply\"?"
     },
     {
       "title": "The Indian workers filming their work to train AI",
@@ -3875,6 +3893,48 @@
       "description": "We ask people in the capital how much they pay for their homes."
     },
     {
+      "title": "Rohingya dismantle homes amid eviction threat in disputed Kashmir region",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/rohingya-deported-disputed-kashmir-region?traffic_source=rss",
+      "date": "October 26, 2026",
+      "description": "Rohingya refugees say they are being forced to dismantle their homes in Indian-administered Kashmir."
+    },
+    {
+      "title": "The Price of Protest",
+      "url": "https://www.aljazeera.com/video/game-theory/2026/10/26/the-price-of-protest?traffic_source=rss",
+      "date": "October 26, 2026",
+      "description": "What does it cost an athlete to take a stand?"
+    },
+    {
+      "title": "US foreign aid to Israel highlighted in campaign ad in support of El-Sayed",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/us-foreign-aid-to-israel-highlighted-in-campaign-ad-in-support-of-el-sayed?traffic_source=rss",
+      "date": "October 26, 2026",
+      "description": "A new political campaign ad in support of US Senate candidate Abdul El-Sayed is generating conversation online."
+    },
+    {
+      "title": "Israel expands expulsions in occupied West Bank to cement control",
+      "url": "https://www.aljazeera.com/news/2026/10/26/israel-expands-occupied-west-bank-expulsions-to-cement-control?traffic_source=rss",
+      "date": "October 26, 2026",
+      "description": "Israel escalates forced expulsions and infrastructure destruction with the goal of imposing 'new reality', analysts say."
+    },
+    {
+      "title": "Who are the Israeli candidates trying to unseat Netanyahu?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/who-are-the-israeli-candidates-trying-to-unseat-netanyahu?traffic_source=rss",
+      "date": "October 26, 2026",
+      "description": "Who are the Israeli candidates trying to unseat Netanyahu?"
+    },
+    {
+      "title": "How did Lula beat Bolsonaro after losing Brazil’s first-round election?",
+      "url": "https://www.aljazeera.com/news/2026/10/26/how-did-lula-beat-bolsonaro-after-losing-brazils-first-round-election?traffic_source=rss",
+      "date": "October 26, 2026",
+      "description": "Brazil's president secured a historic fourth term after overturning a first-round defeat."
+    },
+    {
+      "title": "Intercepted Houthi missiles cause damage in Saudi Arabian city",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/intercepted-houthi-missiles-cause-damage-in-saudi-arabian-city?traffic_source=rss",
+      "date": "October 26, 2026",
+      "description": "Debris fell on the Saudi city of Khamis Mushait after Houthi-fired missiles were intercepted."
+    },
+    {
       "title": "Key takeaways from Real Madrid’s El Clasico win over Barcelona",
       "url": "https://www.aljazeera.com/sports/2026/10/26/real-madrid-barcelona-el-clasico-mourinho-mbappe-takeaways?traffic_source=rss",
       "date": "October 26, 2026",
@@ -3908,7 +3968,7 @@
       "title": "Jordan arrests three suspects over church attack in dawn raid: What to know",
       "url": "https://www.aljazeera.com/news/2026/10/26/jordan-arrests-three-suspects-over-church-attack-in-dawn-raid-what-to-know?traffic_source=rss",
       "date": "October 26, 2026",
-      "description": "Jordanian authorities have not named the individuals or any group involved in the 'terrorist incident'."
+      "description": "Jordanian authorities have named the individuals behind the 'terrorist incident'."
     },
     {
       "title": "Key European defence ministers meet in Paris to discuss Ukraine support",
@@ -3951,60 +4011,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/flavio-bolsonaro-will-not-give-up-after-brazil-election-results?traffic_source=rss",
       "date": "October 26, 2026",
       "description": "Flavio Bolsonaro is refusing to concede to Lula da Silva who won a historic 4th term in Sunday's election."
-    },
-    {
-      "title": "California’s billionaire tax faces a precarious road from rich opposition",
-      "url": "https://www.aljazeera.com/economy/2026/10/26/californias-billionaire-tax-faces-a-precarious-road-from-rich-opposition?traffic_source=rss",
-      "date": "October 26, 2026",
-      "description": "Tech billionaires have raised more than $300m to oppose the billionaire tax proposal."
-    },
-    {
-      "title": "Do Palestinians in Gaza expect anything to change after Israel’s election?",
-      "url": "https://www.aljazeera.com/news/2026/10/26/do-palestinians-in-gaza-expect-anything-to-change-after-israels-election?traffic_source=rss",
-      "date": "October 26, 2026",
-      "description": "After years of war, displacement and restrictions, Gazans ask whether Israel’s election will affect their future."
-    },
-    {
-      "title": "Lula’s victory may be a turning point for Latin America",
-      "url": "https://www.aljazeera.com/opinions/2026/10/26/lulas-victory-may-be-a-turning-point-for-latin-america?traffic_source=rss",
-      "date": "October 26, 2026",
-      "description": "The outcome of Brazil's presidential election demonstrates that the far-right tide in Latin America is not inevitable."
-    },
-    {
-      "title": "Kimi Antonelli wins US Grand Prix, closes in on F1 championship",
-      "url": "https://www.aljazeera.com/sports/2026/10/26/kimi-antonelli-wins-us-grand-prix-closes-in-on-f1-championship?traffic_source=rss",
-      "date": "October 26, 2026",
-      "description": "Mercedes's 20-year-old driver can win the championship in Mexico next week if his teammate Russell doesn't win the race."
-    },
-    {
-      "title": "Trump makes explicit remarks about Nicki Minaj at Michigan midterm rally",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/trump-makes-explicit-remarks-about-nicki-minaj-at-michigan-midterm-rally?traffic_source=rss",
-      "date": "October 26, 2026",
-      "description": "Donald Trump made sexually explicit remarks about musician Nicki Minaj who was speaking at a rally in Michigan."
-    },
-    {
-      "title": "Photos: Serbia celebrates as ruling party loses grip on power",
-      "url": "https://www.aljazeera.com/gallery/2026/10/26/photos-serbia-celebrates-as-ruling-party-loses-grip-on-power?traffic_source=rss",
-      "date": "October 26, 2026",
-      "description": "Two years of student-led protests against corruption and mismanagement culminate in election victory."
-    },
-    {
-      "title": "Photos: Lula supporters flood streets in celebration of historic win",
-      "url": "https://www.aljazeera.com/gallery/2026/10/26/photos-lula-supporters-flood-streets-in-celebration-of-historic-win?traffic_source=rss",
-      "date": "October 26, 2026",
-      "description": "Avenues and squares in Rio de Janeiro and Sao Paulo filled with crowds dressed in red, celebrating democracy."
-    },
-    {
-      "title": "Israel’s election: The main issues in the words of the leading candidates",
-      "url": "https://www.aljazeera.com/news/2026/10/26/israels-election-the-main-issues-in-the-words-of-the-leading-candidates?traffic_source=rss",
-      "date": "October 26, 2026",
-      "description": "From judicial reform to conscription, here's where candidates stand on the key issues dominating the campaign."
-    },
-    {
-      "title": "Jordan arrests three suspects in deadly church attack",
-      "url": "https://www.aljazeera.com/news/2026/10/26/jordan-arrests-three-suspects-in-deadly-church-attack?traffic_source=rss",
-      "date": "October 26, 2026",
-      "description": "Suspects refuse to surrender and attack security forces, who return fire, wound and arrest them, authorities say."
     }
   ]
 }
