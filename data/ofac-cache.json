@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T15:22:38.438Z",
+  "updatedAt": "2026-10-26T17:08:36.949Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261026",
@@ -3252,19 +3252,20 @@
       "description": "The restrictive measures consist of an asset freeze, travel bans to the EU, and a prohibition to make funds or economic resources available to those listed."
     }
   ],
-  "unNotices": [],
+  "unNotices": [
+    {
+      "title": "Security Council ISIL (Da’esh) and Al-Qaida Sanctions Committee Removes Three Entries from Its Sanctions List",
+      "url": "https://press.un.org/en/2026/sc16488.doc.htm",
+      "date": "October 26, 2026",
+      "description": "On 24 October 2026, the Security Council Committee pursuant to resolutions 1267 (1999), 1989 (2011) and 2253 (2015) concerning ISIL (Da’esh), Al‑Qaida and associated individuals, groups, undertakings and entities removed the entries below from the ISIL (Da’esh) and Al‑Qaida Sanctions List."
+    }
+  ],
   "bbcNews": [
     {
       "title": "Venezuelan opposition leader María Machado returns after months in exile",
       "url": "https://www.bbc.co.uk/news/articles/cq8ez592pp0eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 26, 2026",
       "description": "Machado had left the country just a month before the US government seized Venezuelan President Nicolás Maduro."
-    },
-    {
-      "title": "Russia to host first Olympic federation world event since Ukraine invasion",
-      "url": "https://www.bbc.co.uk/sport/olympics/articles/cmq5ny00gzy0o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 25, 2026",
-      "description": "The International Weightlifting Federation becomes the first Olympic federation to choose Russia to host a world championships since its invasion of Ukraine."
     },
     {
       "title": "Crowds welcome Venezuela's María Machado after months in exile",
@@ -3274,6 +3275,12 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Guterres warns of ‘unimaginable’ consequences of Iran-Gulf escalation",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/guterres-warns-iran-gulf-escalation-west-bank?traffic_source=rss",
+      "date": "October 26, 2026",
+      "description": "UN Chief Antonio Guterres has warned of devastating consequences from any military escalation in the Gulf region."
+    },
     {
       "title": "Mecca defence alliance members in Tehran to defuse Iran-US, Yemen tensions",
       "url": "https://www.aljazeera.com/news/2026/10/26/mecca-defence-alliance-members-in-tehran-to-defuse-iran-us-yemen-tensions?traffic_source=rss",
@@ -3291,18 +3298,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/26/has-pakistan-reopened-its-border-with-iran-for-trade?traffic_source=rss",
       "date": "October 26, 2026",
       "description": "Traders say some exports are crossing border after a weeklong halt, but Tehran says its cargo is not getting through."
-    },
-    {
-      "title": "Suwayda remains in stasis as US signals differences with Israel on Syria",
-      "url": "https://www.aljazeera.com/news/2026/10/26/suwayda-remains-in-deadlock-as-us-signals-differences-with-israel-on-syria?traffic_source=rss",
-      "date": "October 26, 2026",
-      "description": "Governorate's Druze majority in deadlock with Syrian government."
-    },
-    {
-      "title": "Thousands greet opposition leader Maria Machado upon return to Caracas",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/thousands-greet-opposition-leader-maria-machado-upon-return-to-caracas?traffic_source=rss",
-      "date": "October 26, 2026",
-      "description": "Thousands lined the streets of Caracas to welcome opposition leader Maria Corina Machado back to Venezuela after exile."
     }
   ],
   "occNews": [
@@ -3431,16 +3426,22 @@
       "description": "The populist right-wing leader of 12 years says it is \"clear\" his party has lost the vote billed as a referendum on the country's future."
     },
     {
+      "title": "Chris Brown given suspended eight-month prison sentence over nightclub attack",
+      "url": "https://www.bbc.co.uk/news/articles/cq3dje4g4d5jo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 26, 2026",
+      "description": "The R&B star previously pleaded guilty to affray, after attacking a music producer with a glass bottle."
+    },
+    {
       "title": "Anthropic warns of 'catastrophic risk' to humankind ahead of blockbuster share listing",
       "url": "https://www.bbc.co.uk/news/articles/cq398p1wd1evo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 26, 2026",
       "description": "The company will be the first true artificial intelligence company to go public as tech firms continue to invest heavily in AI."
     },
     {
-      "title": "Chris Brown given suspended eight-month prison sentence over nightclub attack",
-      "url": "https://www.bbc.co.uk/news/articles/cq3dje4g4d5jo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Catholic bishops apologise for 'exploited' Trump meeting",
+      "url": "https://www.bbc.co.uk/news/articles/cw8rz1d286v3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 26, 2026",
-      "description": "The R&B star previously pleaded guilty to affray, after attacking a music producer with a glass bottle."
+      "description": "Two bishops in images that show them praying with Trump have said they believed the meeting was private."
     },
     {
       "title": "US Marine indicted for murder and robbery of woman in Japan",
@@ -3461,6 +3462,18 @@
       "description": "Local youths reportedly accused the health workers of contaminating water sources and spreading Ebola."
     },
     {
+      "title": "Police arrest teenager after shooting that injured 12, including children, in Florida",
+      "url": "https://www.bbc.co.uk/news/articles/ckpdg8vnv171o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 26, 2026",
+      "description": "The incident happened on Saturday night, close to an American football stadium where a game had just been played."
+    },
+    {
+      "title": "More than 60 Christians killed in Ethiopia 'massacre', church official says",
+      "url": "https://www.bbc.co.uk/news/articles/cm4g175dgdx2o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 26, 2026",
+      "description": "One resident, whose 75-year-old father was killed, described it as an ambush, saying they were surrounded."
+    },
+    {
       "title": "Australian murderer loses bid to eat Vegemite in prison",
       "url": "https://www.bbc.co.uk/news/articles/cvwy7wz9x12go?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 26, 2026",
@@ -3473,22 +3486,10 @@
       "description": "Bauza had voiced a number of characters in this summer's animated hit Coyote vs. Acme."
     },
     {
-      "title": "Rapper Nicki Minaj joins Trump onstage at Michigan rally",
-      "url": "https://www.bbc.co.uk/news/articles/cqrmyl1mljppo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 25, 2026",
-      "description": "The Super Bass singer is the latest big name to campaign in Michigan, where a tight Senate race is playing out ahead of the 3 November midterms."
-    },
-    {
-      "title": "Deeply divided Israel braces for pivotal election",
-      "url": "https://www.bbc.co.uk/news/articles/ckpdgy6pl7xlo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 25, 2026",
-      "description": "After three years of regional war, this is a battle Israel always knew was coming, writes Lucy Williamson."
-    },
-    {
-      "title": "Suspect in deadly Paris suburb shooting sent for psychiatric observation",
-      "url": "https://www.bbc.co.uk/news/articles/c6e3xek2457wo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 25, 2026",
-      "description": "He will be observed to evaluate whether his \"psychiatric health is compatible with pursuing his interrogation\", authorities said."
+      "title": "Part of Antarctica named after former BBC science correspondent",
+      "url": "https://www.bbc.co.uk/news/articles/ckvg7w919x09o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 26, 2026",
+      "description": "A stretch of water in the west of the continent is now called the Amos Channel after the ex-BBC journalist."
     },
     {
       "title": "Watch: How President Lula turned it around to beat Flávio Bolsonaro",
@@ -3513,6 +3514,18 @@
       "url": "https://www.bbc.co.uk/news/videos/cq98z9xxy2n2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 24, 2026",
       "description": "Police in the southern German state of Bavaria have detained a 33-year-old German man following the fire."
+    },
+    {
+      "title": "Israel and the US are both going to the polls - the consequences will be global",
+      "url": "https://www.bbc.co.uk/news/articles/crlykey9jywqo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 26, 2026",
+      "description": "The next fortnight sees two elections on different continents. The outcomes will shape geopolitics and the global economy, writes James Landale"
+    },
+    {
+      "title": "How 'Lula's Army' WhatsApp channel helped turn Brazil election around",
+      "url": "https://www.bbc.co.uk/news/articles/cwz0vg4v3ndeo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 26, 2026",
+      "description": "Millions joined a 'Lula's Army' channel that helped to transform online enthusiasm into real-world mobilisation."
     },
     {
       "title": "Who is Lula? From ex-worker and prisoner to Brazil's president again",
@@ -3543,18 +3556,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c6n8djd1078ro?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 26, 2026",
       "description": "The highly secretive four-day Plenum starts Monday in Beijing."
-    },
-    {
-      "title": "All you need to know about the Dakar 2026 Youth Olympics",
-      "url": "https://www.bbc.co.uk/sport/olympics/articles/ck0546l2j4ppo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 26, 2026",
-      "description": "Senegal hosts Africa's first Olympic event as the Dakar 2026 Youth Games bring together 2,700 athletes from around the world."
-    },
-    {
-      "title": "India's cartoonists built an audience online - now their posts are being restricted",
-      "url": "https://www.bbc.co.uk/news/articles/cm3elp3v7jkdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 26, 2026",
-      "description": "Indian cartoonists say online restrictions are making satire harder, but they aren't giving up."
     },
     {
       "title": "Anthropic warns of 'catastrophic risk' to humankind ahead of blockbuster share listing",
@@ -3893,6 +3894,48 @@
       "description": "We ask people in the capital how much they pay for their homes."
     },
     {
+      "title": "Students topple Vucic’s government in Serbia",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/aje-onl-nf_music-dnrexp-261026-kopcicn-serbian_elections-261026?traffic_source=rss",
+      "date": "October 26, 2026",
+      "description": "A student-led list won Serbia’s elections by a convincing majority, ousting the most powerful politician in the country."
+    },
+    {
+      "title": "‘Everything destroyed’: Hebron businesses count cost of Israeli assault",
+      "url": "https://www.aljazeera.com/features/2026/10/26/everything-destroyed-hebron-businesses-count-cost-of-israeli-assault?traffic_source=rss",
+      "date": "October 26, 2026",
+      "description": "Israeli demolitions and road closures have devastated businesses in Hebron, leaving owners facing millions in losses."
+    },
+    {
+      "title": "Jerusalem Daily: Last minute efforts by Israeli politicians before election",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/jerusalem-daily-last-minute-efforts-by-israeli-politicians-before-election?traffic_source=rss",
+      "date": "October 26, 2026",
+      "description": "Israelis are about to vote in one of the most decisive elections in the country’s history."
+    },
+    {
+      "title": "Saddam Haftar is eyeing the throne in Libya",
+      "url": "https://www.aljazeera.com/opinions/2026/10/26/saddam-haftar-is-eyeing-the-throne-in-libya?traffic_source=rss",
+      "date": "October 26, 2026",
+      "description": "As the US looks to broker a unity deal, Saddam is trying to position himself as the main contender for the presidency."
+    },
+    {
+      "title": "Israel committing crimes against humanity in occupied West Bank: UN",
+      "url": "https://www.aljazeera.com/news/2026/10/26/israel-committing-crimes-against-humanity-in-occupied-west-bank-un?traffic_source=rss",
+      "date": "October 26, 2026",
+      "description": "UN report highlights crimes including extermination, torture, rape and other forms of sexual violence."
+    },
+    {
+      "title": "Egyptian parliament authorises military aid for Saudi Arabia",
+      "url": "https://www.aljazeera.com/news/2026/10/26/egyptian-parliament-authorises-military-aid-for-saudi-arabia?traffic_source=rss",
+      "date": "October 26, 2026",
+      "description": "Legislators approve military support amid Houthi attacks on Saudi Arabia, but Cairo has ruled out strikes on Yemen."
+    },
+    {
+      "title": "What does the Israeli election mean for religious groups?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/what-does-the-israeli-election-mean-for-religious-groups?traffic_source=rss",
+      "date": "October 26, 2026",
+      "description": "What does the Israeli election mean for religious groups?"
+    },
+    {
       "title": "Rohingya dismantle homes amid eviction threat in disputed Kashmir region",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/rohingya-deported-disputed-kashmir-region?traffic_source=rss",
       "date": "October 26, 2026",
@@ -3975,42 +4018,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/26/key-european-defence-ministers-meet-in-paris-to-discuss-ukraine-support?traffic_source=rss",
       "date": "October 26, 2026",
       "description": "Defence ministers from France, Germany, Italy, Poland and the UK to discuss increasing military assistance to Ukraine."
-    },
-    {
-      "title": "Saudi-led coalition says it struck Houthi missile facilities",
-      "url": "https://www.aljazeera.com/news/2026/10/26/saudi-led-coalition-says-it-struck-houthi-missile-facilities?traffic_source=rss",
-      "date": "October 26, 2026",
-      "description": "Coalition says it destroyed ballistic missile launchers as well as tunnels and a depot used to store missiles."
-    },
-    {
-      "title": "If Netanyahu loses, what changes for Palestinians?",
-      "url": "https://www.aljazeera.com/video/by-the-numbers-3/2026/10/26/if-netanyahu-loses-what-changes-for-palestinians?traffic_source=rss",
-      "date": "October 26, 2026",
-      "description": "AJLabs tracks how Israeli parties voted against eight Knesset bills that disfavoured Palestinians ahead of the election."
-    },
-    {
-      "title": "Saudi Arabia confirms January start for Asian Cup 2027 despite attacks",
-      "url": "https://www.aljazeera.com/sports/2026/10/26/saudi-arabia-confirms-january-start-for-asian-cup-2027-despite-attacks?traffic_source=rss",
-      "date": "October 26, 2026",
-      "description": "Asian Cup 2027 to kick off on January 7 with Saudi Arabia facing Palestine in Riyadh as the AFC announces the schedule."
-    },
-    {
-      "title": "Algeria’s military deployment to Niger: What’s behind the move?",
-      "url": "https://www.aljazeera.com/news/2026/10/26/algerias-military-deployment-to-niger-whats-behind-the-move?traffic_source=rss",
-      "date": "October 26, 2026",
-      "description": "This will be Algeria's first foreign troop deployment in 50 years as the country shifts its military doctrine."
-    },
-    {
-      "title": "Palestinians are opening their doors to the displaced of besieged Hebron",
-      "url": "https://www.aljazeera.com/news/2026/10/26/palestinians-are-opening-their-doors-to-the-displaced-of-besieged-hebron?traffic_source=rss",
-      "date": "October 26, 2026",
-      "description": "Israel's assault on the West Bank city has forced thousands of people to flee their homes."
-    },
-    {
-      "title": "Flavio Bolsonaro ‘will not give up’ after Brazil election results",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/flavio-bolsonaro-will-not-give-up-after-brazil-election-results?traffic_source=rss",
-      "date": "October 26, 2026",
-      "description": "Flavio Bolsonaro is refusing to concede to Lula da Silva who won a historic 4th term in Sunday's election."
     }
   ]
 }
