@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27T13:08:27.202Z",
+  "updatedAt": "2026-10-27T15:08:26.366Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261026",
@@ -3262,6 +3262,12 @@
   ],
   "bbcNews": [
     {
+      "title": "Norway and Finland leaders hold rare call with Putin",
+      "url": "https://www.bbc.co.uk/news/articles/c6vgj813mlelo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 27, 2026",
+      "description": "This is the first time European leaders have had direct communication with Russia's president in more than a year."
+    },
+    {
       "title": "Jordan carries out deadly strike in Syria in retaliation for church attack",
       "url": "https://www.bbc.co.uk/news/articles/cq8ezg6dy6xlo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 27, 2026",
@@ -3275,6 +3281,36 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Russia targets Kyiv as Finnish, Norwegian leaders hold rare call with Putin",
+      "url": "https://www.aljazeera.com/news/2026/10/27/russia-targets-kyiv-as-finnish-norwegian-leaders-hold-rare-call-with-putin?traffic_source=rss",
+      "date": "October 27, 2026",
+      "description": "Strikes hit a major bridge in the Ukrainian capital as leaders push for 'direct discussions' to end the war."
+    },
+    {
+      "title": "Melania or the pope: Who brokered Russia-Ukraine ceasefire in Oleshky?",
+      "url": "https://www.aljazeera.com/news/2026/10/27/melania-or-the-pope-who-brokered-russia-ukraine-ceasefire-in-oleshky?traffic_source=rss",
+      "date": "October 27, 2026",
+      "description": "Competing claims over the ceasefire mark the latest tensions between the White House and the Vatican."
+    },
+    {
+      "title": "Russia strikes Kyiv ahead of localised ceasefire in Oleshky",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/27/russia-strikes-kyiv-ahead-of-localised-ceasefire-in-oleshky?traffic_source=rss",
+      "date": "October 27, 2026",
+      "description": "Russia struck Kyiv multiple times on Monday night, hours before a humanitarian ceasefire in Oleshky took effect."
+    },
+    {
+      "title": "Qatar’s Emir meets Iran’s Pezeshkian in Moscow",
+      "url": "https://www.aljazeera.com/news/2026/10/27/qatars-emir-meets-irans-pezeshkian-in-moscow?traffic_source=rss",
+      "date": "October 27, 2026",
+      "description": "The pair discussed energy cooperation and ways to enhance bilateral relations, Iranian state media reported."
+    },
+    {
+      "title": "Iranians brace for renewed attacks after Israeli, US elections",
+      "url": "https://www.aljazeera.com/news/2026/10/27/iranians-will-their-eyes-on-the-sky-for-bomb-when-israeli-us-elections-end?traffic_source=rss",
+      "date": "October 27, 2026",
+      "description": "The US and Israel have teased strikes around their elections, particularly against Iran's civilian infrastructure."
+    },
     {
       "title": "Families of victims killed in Jordanian strike deny links to church attack",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/27/families-of-victims-killed-in-jordanian-strike-deny-links-to-church-attack?traffic_source=rss",
@@ -3298,12 +3334,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/27/north-korean-howitzer-guns-spotted-close-to-border-with-south-korea?traffic_source=rss",
       "date": "October 27, 2026",
       "description": "The sighting comes after a mine blast wounded three South Korean soldiers in September."
-    },
-    {
-      "title": "Israelis begin voting as Netanyahu fights for political survival",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/27/israelis-begin-voting-as-netanyahu-fights-for-political-survival?traffic_source=rss",
-      "date": "October 27, 2026",
-      "description": "Israelis vote as Netanyahu faces Gadi Eisenkot amid divisions over the wars in Gaza and Iran and growing isolation."
     }
   ],
   "occNews": [
@@ -3426,10 +3456,28 @@
   ],
   "regionsNews": [
     {
-      "title": "Turnout so far highest in decades as Israelis vote in pivotal election",
+      "title": "Turnout so far highest on record as Israelis vote in pivotal election",
       "url": "https://www.bbc.co.uk/news/articles/c3j47l4kdez4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 27, 2026",
       "description": "The elections - the first since the Hamas-led attacks on Israel and the wars which followed - are widely seen as a referendum on Benjamin Netanyahu."
+    },
+    {
+      "title": "Truce begins in Ukraine city where residents ate weeds to survive",
+      "url": "https://www.bbc.co.uk/news/articles/ck20wjnv3w0jo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 27, 2026",
+      "description": "The Oleshky ceasefire, which the White House said was secured by US First Lady Melania Trump, is meant to allow aid to get in and civilians to get out."
+    },
+    {
+      "title": "Ballon d'Or ceremony raises case of French sports journalist jailed in Algeria",
+      "url": "https://www.bbc.co.uk/news/articles/c6x2qgyqr79wo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 27, 2026",
+      "description": "He is in jail accused of supporting terrorism after travelling to the politically sensitive region Kabylie."
+    },
+    {
+      "title": "Mbappé sorry for 'ill-judged' Mao remark after backlash in China",
+      "url": "https://www.bbc.co.uk/news/articles/cv62yg0erp8zo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 27, 2026",
+      "description": "The France star had referred to the former Chinese leader as a \"dictator\" during an interview about memes."
     },
     {
       "title": "Lula's comeback in Brazil dents Trump's ambitions for Latin America",
@@ -3438,10 +3486,10 @@
       "description": "The Trump-Lula relationship may have thawed, but several issues could reignite tensions between the two leaders."
     },
     {
-      "title": "Truce begins in Ukraine city where residents ate weeds to survive",
-      "url": "https://www.bbc.co.uk/news/articles/ck20wjnv3w0jo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Nanotyrannus skeleton goes to auction in New York with £4.5m price tag",
+      "url": "https://www.bbc.co.uk/news/articles/cmx28de233r2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 27, 2026",
-      "description": "The Oleshky ceasefire, which the White House said was secured by US First Lady Melania Trump, is meant to allow aid to get in and civilians to get out."
+      "description": "The auction of the rare skeleton comes amid debate in the scientific community about whether dinosaur remains should end up in private hands or public view."
     },
     {
       "title": "Ex-FBI chief James Comey faces federal charges for third time",
@@ -3454,12 +3502,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cq8ezg4364epo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 27, 2026",
       "description": "The rapper has been involved with the show for years but has never before performed at the NFL championship game."
-    },
-    {
-      "title": "Mbappé sorry for 'ill-judged' Mao remark after backlash in China",
-      "url": "https://www.bbc.co.uk/news/articles/cv62yg0erp8zo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 27, 2026",
-      "description": "The France star had referred to the former Chinese leader as a \"dictator\" during an interview about memes."
     },
     {
       "title": "Netherlands pulls out of Eurovision again over Israel participation",
@@ -3484,24 +3526,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cmy4xwp22xyqo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 26, 2026",
       "description": "\"Whatever we're doing, we want to push it further,\" said an expert on why Americans are embracing the term, which is short for maximising."
-    },
-    {
-      "title": "Trump administration illegally fired James Comey's daughter, judge rules",
-      "url": "https://www.bbc.co.uk/news/articles/ck78px6glw3lo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 27, 2026",
-      "description": "Maurene Comey believes she was let go from her job as a federal prosecutor because her father is the former FBI director."
-    },
-    {
-      "title": "Celebrations in Serbia after veteran ruler Vučić loses election to student-led protest movement",
-      "url": "https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 26, 2026",
-      "description": "The populist right-wing leader of 12 years says it is \"clear\" his party has lost the vote billed as a referendum on the country's future."
-    },
-    {
-      "title": "Anthropic warns of 'catastrophic risk' to humankind ahead of blockbuster share listing",
-      "url": "https://www.bbc.co.uk/news/articles/cq398p1wd1evo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 26, 2026",
-      "description": "The company will be the first true artificial intelligence company to go public as tech firms continue to invest heavily in AI."
     },
     {
       "title": "What does Israel's election mean for Gaza and the wider world?",
@@ -3534,6 +3558,12 @@
       "description": "Brazil's left-wing President has been elected for a fourth term after narrowly beating right-wing Flávio Bolsonaro in a knife-edge vote."
     },
     {
+      "title": "How Kane defied doubters to become world's best",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cqvg01jyy84xo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 27, 2026",
+      "description": "Harry Kane is the humble 'anti-superstar' who defied doubters to achieve Ballon d'Or greatness, says chief football writer Phil McNulty."
+    },
+    {
       "title": "Israel and the US are both going to the polls - the consequences will be global",
       "url": "https://www.bbc.co.uk/news/articles/crlykey9jywqo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 26, 2026",
@@ -3552,19 +3582,13 @@
       "description": "The firebrand left-winger, who has at times been at odds with Trump, has won his fourth term as Brazil's president."
     },
     {
-      "title": "Five ways Trump has changed immigration in the US",
-      "url": "https://www.bbc.co.uk/news/articles/c9203k1jrmpvo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 26, 2026",
-      "description": "This is how his signature policy has played out after returning to power promising a closed border and mass deportations."
-    },
-    {
       "title": "I'm a single mum on £41,000 and limit my weekly shop to £40 - it's hard",
       "url": "https://www.bbc.co.uk/news/articles/cmx235r9wr3yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 27, 2026",
       "description": "People earning from £380 a month to £150,000 a year tell the BBC what they want to see in this year's Budget."
     },
     {
-      "title": "Minimum wage increase set to slow for 18-20 year-olds",
+      "title": "Minimum wage set to rise but 18-20 year-olds will not get bigger increase",
       "url": "https://www.bbc.co.uk/news/articles/c6d93gq1xdgno?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 27, 2026",
       "description": "Chancellor John Healey will reveal the new pay rates in the Budget, and has also announced measures to help households with the cost of living."
@@ -3756,16 +3780,16 @@
       "description": "Training systems that allow robots to negotiate the real world are getting more sophisticated."
     },
     {
-      "title": "First-time buyer wary of Budget housing loan scheme",
-      "url": "https://www.bbc.co.uk/news/articles/c3dxwznv4kyyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 27, 2026",
-      "description": "Luke Anstee has been saving for three years but says rising living costs make home ownership harder."
-    },
-    {
       "title": "I'm a single mum on £41,000 and limit my weekly shop to £40 - it's hard",
       "url": "https://www.bbc.co.uk/news/articles/cmx235r9wr3yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 27, 2026",
       "description": "People earning from £380 a month to £150,000 a year tell the BBC what they want to see in this year's Budget."
+    },
+    {
+      "title": "First-time buyer wary of Budget housing loan scheme",
+      "url": "https://www.bbc.co.uk/news/articles/c3dxwznv4kyyo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 27, 2026",
+      "description": "Luke Anstee has been saving for three years but says rising living costs make home ownership harder."
     },
     {
       "title": "Will the Budget pass Burnham's Makerfield test?",
@@ -3816,6 +3840,12 @@
       "description": "Many younger people do not believe the state pension will exist when they are older"
     },
     {
+      "title": "How the beauty industry is boosting High Streets",
+      "url": "https://www.bbc.co.uk/news/videos/cmr4y51lp5zko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 27, 2026",
+      "description": "Marie Camara believes beauty and personal care businesses play a key role in supporting high streets."
+    },
+    {
       "title": "Business Daily",
       "url": "https://www.bbc.co.uk/sounds/play/w3ct8grq?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 26, 2026",
@@ -3840,10 +3870,46 @@
       "description": "The little-known investment Martin Lewis wants you to understand"
     },
     {
+      "title": "Sudan’s war steals children’s future with school closures and displacement",
+      "url": "https://www.aljazeera.com/features/2026/10/27/sudans-war-steals-childrens-futures-with-school-closures-and-displacement?traffic_source=rss",
+      "date": "October 27, 2026",
+      "description": "The conflict in Sudan has left millions of children without education, as they work to help their families."
+    },
+    {
+      "title": "King Charles’s Caribbean tour: Will he discuss slavery reparations?",
+      "url": "https://www.aljazeera.com/news/2026/10/27/king-charless-caribbean-tour-will-he-discuss-slavery-reparations?traffic_source=rss",
+      "date": "October 27, 2026",
+      "description": "UK's King Charles launches nine-day Caribbean tour amid monarchy questions and growing demands for slavery reparations."
+    },
+    {
+      "title": "Lebanon’s lost olive season: harvesting olives under drones and warplanes",
+      "url": "https://www.aljazeera.com/features/2026/10/27/lebanons-lost-olive-season-harvesting-olives-under-drones-and-warplanes?traffic_source=rss",
+      "date": "October 27, 2026",
+      "description": "Lebanon's olive harvesters are facing dangerous conditions, with potential attacks and fear of cluster munitions."
+    },
+    {
+      "title": "The Netherlands pulls out of Eurovision 2027 due to Israel ‘sensitivities’",
+      "url": "https://www.aljazeera.com/news/2026/10/27/the-netherlands-pulls-out-of-eurovision-2027-due-to-israel-sensitivities?traffic_source=rss",
+      "date": "October 27, 2026",
+      "description": "Dutch withdrawal is the latest in a number of boycotts by countries unhappy about Israel's inclusion."
+    },
+    {
+      "title": "India-China border face-offs test Modi six years after deadly clash",
+      "url": "https://www.aljazeera.com/news/2026/10/27/india-china-border-face-offs-test-modi-six-years-after-deadly-clash?traffic_source=rss",
+      "date": "October 27, 2026",
+      "description": "Despite thaw in India-China ties, border tensions again challenge Modi's strongman image at home."
+    },
+    {
+      "title": "Al Jazeera meets iconic pro-Palestine Japanese activist",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/27/al-jazeera-meets-iconic-pro-palestine-japanese-activist?traffic_source=rss",
+      "date": "October 27, 2026",
+      "description": "Japanese activist Yusuke Furusawa speaks to Al Jazeera about why he keeps protesting Israel’s genocidal war on Gaza."
+    },
+    {
       "title": "Kylian Mbappe apologises after ‘dictator’ comment angers Chinese fans",
       "url": "https://www.aljazeera.com/sports/2026/10/27/kylian-mbappe-apologises-after-dictator-comment-angers-chinese-fans?traffic_source=rss",
       "date": "October 27, 2026",
-      "description": "'My comment was ill-judged and I now understand that it hurt many people,' Mbappe said after Chinese brands dropped him."
+      "description": "'My comment was ill-judged and I now understand that it hurt many people,' Mbappe says after Chinese brands dropped him."
     },
     {
       "title": "Ebola cases in DR Congo surpass 10,000 in fastest-growing outbreak",
@@ -3898,66 +3964,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/27/heavy-rains-trigger-massive-flooding-in-ecuadors-largest-city?traffic_source=rss",
       "date": "October 27, 2026",
       "description": "Parts of Ecuador’s largest city are underwater after severe rains battered the coast."
-    },
-    {
-      "title": "Kylian Mbappe loses Chinese sponsors for calling Mao ‘Chinese dictator’",
-      "url": "https://www.aljazeera.com/sports/2026/10/27/kylian-mbappe-loses-chinese-sponsors-for-calling-mao-chinese-dictator?traffic_source=rss",
-      "date": "October 27, 2026",
-      "description": "Mbappe appears to say that the funniest internet meme he'd seen was of his face imposed on that of 'a Chinese dictator'."
-    },
-    {
-      "title": "Israel election results 2026: When will we know who won and what’s next?",
-      "url": "https://www.aljazeera.com/news/2026/10/27/israel-election-results-2026-when-will-we-know-who-won-and-whats-next?traffic_source=rss",
-      "date": "October 27, 2026",
-      "description": "Exit polls are expected soon after voting closes late on Tuesday, but a final verdict might take days."
-    },
-    {
-      "title": "UK prosecutors charge two after RAF Fairford incident",
-      "url": "https://www.aljazeera.com/news/2026/10/27/uk-prosecutors-charge-two-after-raf-fairford-incident?traffic_source=rss",
-      "date": "October 27, 2026",
-      "description": "British Iranian Mohmed Abdulkarim and British citizen Nouman Essghir have been charged under the National Security Act."
-    },
-    {
-      "title": "Cruise ship crashes into two container ships during storm",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/27/cruise-ship-crashes-into-two-container-ships-during-storm?traffic_source=rss",
-      "date": "October 27, 2026",
-      "description": "A captain whose cruise liner collided with container ships in strong winds is being investigated by German police."
-    },
-    {
-      "title": "Drone strike in Sudan’s Nyala kills at least 21, injures 40",
-      "url": "https://www.aljazeera.com/news/2026/10/27/drone-strike-kills-at-least-21-and-injures-40-in-sudans-nyala?traffic_source=rss",
-      "date": "October 27, 2026",
-      "description": "Drone hit a market in the city that serves as the de facto capital of the paramilitary RSF in Darfur, resident says."
-    },
-    {
-      "title": "India evacuates tens of thousands as ‘very severe’ Cyclone Arnab nears",
-      "url": "https://www.aljazeera.com/news/2026/10/27/india-evacuates-tens-of-thousands-as-very-severe-cyclone-arnab-nears?traffic_source=rss",
-      "date": "October 27, 2026",
-      "description": "The cyclonic storm is set to make landfall on Wednesday, with 400,000 people in need of evacuation."
-    },
-    {
-      "title": "Qatar’s path to defence autonomy",
-      "url": "https://www.aljazeera.com/news-analysis/2026/10/27/qatars-path-to-defence-autonomy?traffic_source=rss",
-      "date": "October 27, 2026",
-      "description": "Qatar needs a strategy built on national resilience and diversified security guarantees."
-    },
-    {
-      "title": "Wales first minister : ‘We’re within a union that is not a union of equals’",
-      "url": "https://www.aljazeera.com/video/talk-to-al-jazeera/2026/10/27/wales-first-minister-were-within-a-union-that-is-not-a-union-of?traffic_source=rss",
-      "date": "October 27, 2026",
-      "description": "Rhun ap Iorwerth says his country’s relationship with the United Kingdom is unequal and needs to change."
-    },
-    {
-      "title": "US, EU and 30 countries warn of famine risk in Sudan, call for aid",
-      "url": "https://www.aljazeera.com/news/2026/10/27/us-eu-and-30-countries-warn-of-famine-risk-in-sudan-call-for-aid?traffic_source=rss",
-      "date": "October 27, 2026",
-      "description": "Countries also urge Sudan's warring parties to 'lift all impediments on humanitarian assistance'."
-    },
-    {
-      "title": "South Korea’s GDP growth beats forecasts amid AI boom",
-      "url": "https://www.aljazeera.com/economy/2026/10/27/south-koreas-gdp-growth-beats-forecasts-amid-ai-boom?traffic_source=rss",
-      "date": "October 27, 2026",
-      "description": "Asia's fourth-largest economy grows 3.4 percent year-on-year amid strong semiconductor demand."
     }
   ]
 }
