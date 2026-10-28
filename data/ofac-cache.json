@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-28T13:08:36.143Z",
+  "updatedAt": "2026-10-28T15:08:32.714Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261028",
+      "code": "20261028",
+      "title": "North Korea Designations; Democratic Republic of the Congo-related Designations",
+      "date": "October 28, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261027",
       "code": "20261027",
@@ -54,12 +60,6 @@
       "code": "20261013_33",
       "title": "Settlement Agreement between the U.S. Department of the Treasury&#039;s Office of Foreign Assets Control and Bank of America, N.A.",
       "date": "October 13, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20261009",
-      "code": "20261009",
-      "title": "Settlement Agreement between the U.S. Department of the Treasury&#039;s Office of Foreign Assets Control and Pegasus Worldwide Logistics; International Criminal Court Designation and General Licenses; Burma-related Designation Removal",
-      "date": "October 09, 2026"
     }
   ],
   "civilPenalties": [
@@ -883,7 +883,11 @@
     "democratic-republic-of-the-congo-related-sanctions": {
       "name": "Democratic Republic of the Congo-Related Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/democratic-republic-of-the-congo-related-sanctions",
-      "lastUpdated": "Sep 23, 2026",
+      "lastUpdated": "Oct 28, 2026",
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -914,11 +918,7 @@
           "datePdf": true,
           "dateConfident": true
         }
-      ],
-      "status": "active",
-      "statusLabel": "Active",
-      "statusReason": "",
-      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
+      ]
     },
     "ethiopia": {
       "name": "Ethiopia-Related Sanctions",
@@ -1671,7 +1671,7 @@
     "north-korea-sanctions": {
       "name": "North Korea Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/north-korea-sanctions",
-      "lastUpdated": "Oct 21, 2026",
+      "lastUpdated": "Oct 28, 2026",
       "status": "active",
       "statusLabel": "Active",
       "statusReason": "",
@@ -2991,12 +2991,11 @@
         },
         {
           "number": "48D",
-          "title": "Authorizing the Supply of Certain Items and Services to Venezuela",
+          "title": "Venezuela General License 48D",
           "date": "August 27, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/937001/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "49B",
@@ -3283,6 +3282,24 @@
   ],
   "ajNews": [
     {
+      "title": "Are GCC countries looking for a regional security pact with Iran?",
+      "url": "https://www.aljazeera.com/news/2026/10/28/are-gcc-countries-looking-for-a-regional-security-pact-with-iran?traffic_source=rss",
+      "date": "October 28, 2026",
+      "description": "Observers say diverging views are unlikely to turn current diplomatic efforts into a lasting infrastructure."
+    },
+    {
+      "title": "Espionage threats blur lines between security and dissent in Iran",
+      "url": "https://www.aljazeera.com/news/2026/10/28/iran-faces-espionage-attempts-but-using-threat-for-crackdown-on-opponents?traffic_source=rss",
+      "date": "October 28, 2026",
+      "description": "Iran is using the threat of spy networks to detain and execute political opponents, analysts say."
+    },
+    {
+      "title": "Iraqi PM Ali al-Zaidi meets Ahmed al-Sharaa in historic Syria visit",
+      "url": "https://www.aljazeera.com/news/2026/10/28/iraqi-pm-ali-al-zaidi-meets-ahmed-al-sharaa-in-historic-syria-visit?traffic_source=rss",
+      "date": "October 28, 2026",
+      "description": "Talks focused on enhancing trade, reviving Baniyas oil pipeline and achieving stability through cooperation."
+    },
+    {
       "title": "Pakistan’s Rauf sanctioned for conduct contrary to ‘spirit’ of cricket",
       "url": "https://www.aljazeera.com/sports/2026/10/28/haris-rauf-sanctioned-england-penalised-for-slow-over-rate-in-odi-thriller-pakistan?traffic_source=rss",
       "date": "October 28, 2026",
@@ -3299,12 +3316,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/28/russia-africa-summit-what-is-on-the-agenda-and-why-does-it-matter?traffic_source=rss",
       "date": "October 28, 2026",
       "description": "Moscow aims to strengthen economic and security ties with African leaders during the two-day gathering."
-    },
-    {
-      "title": "‘Russia is already part of who I am’: African students in Moscow",
-      "url": "https://www.aljazeera.com/news/2026/10/28/russia-is-already-part-of-who-i-am-african-students-in-moscow?traffic_source=rss",
-      "date": "October 28, 2026",
-      "description": "As the Russia-Africa Summit gets under way, students in the capital say education is helping to build ties."
     }
   ],
   "occNews": [
@@ -3445,10 +3456,10 @@
       "description": "The energy minister described it as a \"major milestone\" for the East African nation."
     },
     {
-      "title": "Kenyan family protest extradition hearing delay of ex-British soldier accused of murdering kin",
+      "title": "Anger in Kenya over extradition hearing delay for ex-British soldier accused of murdering woman",
       "url": "https://www.bbc.co.uk/news/articles/cmly073ql392o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 28, 2026",
-      "description": "No official reason has been given for postponing next month’s hearing to May 2027, family says."
+      "description": "No official reason has been given for postponing next month’s hearing to May 2027, the family says."
     },
     {
       "title": "King acknowledges 'suffering of the past' as Caribbean tour begins",
@@ -3481,16 +3492,10 @@
       "description": "Marry Mubaiwa had been held on remand for seven years after being charged in 2019 for her then husband's attempted murder."
     },
     {
-      "title": "Alexander brothers each sentenced to 30 years in prison in sex trafficking case",
-      "url": "https://www.bbc.co.uk/news/articles/cqn498mng08ro?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Israel's election result is messy - here's why",
+      "url": "https://www.bbc.co.uk/news/videos/c893zeknlvnno?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 28, 2026",
-      "description": "The trio - two of whom were high-profile US real estate moguls - were found guilty using their social status to lure women to parties and then raping them."
-    },
-    {
-      "title": "Watch: What happens now after close vote in Israeli election?",
-      "url": "https://www.bbc.co.uk/news/videos/cm79p5pxqey2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 28, 2026",
-      "description": "Polls have closed in the Israeli election, but there is no clear winner."
+      "description": "Despite having the highest voter turnout in nearly three decades, Israel's elections have had no clear winner. What does this mean for the country, asks the BBC's Yolande Knell."
     },
     {
       "title": "Watch: The Mbappé-Chairman Mao controversy explained",
@@ -3535,16 +3540,34 @@
       "description": "As the US president casts doubt on the security of the midterm elections, BBC Verify examines his claims."
     },
     {
+      "title": "Your pay, energy bills and savings: How the Budget affects you",
+      "url": "https://www.bbc.co.uk/news/articles/cr0j05vxlwjzo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 28, 2026",
+      "description": "Changes announced by Chancellor John Healey in his first Budget will affect your finances directly. Here's how."
+    },
+    {
       "title": "I get £4,062 a year and am trying my best - here's what I want from the Budget",
       "url": "https://www.bbc.co.uk/news/articles/cmx235r9wr3yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 28, 2026",
       "description": "People on a range of incomes from £4,062 to £150,000 a year tell the BBC what they want to see in this year's Budget."
     },
     {
-      "title": "Energy bill help, minimum wage rise and bank taxes - what could be in the Budget?",
+      "title": "Budget 2026: Key points at a glance",
       "url": "https://www.bbc.co.uk/news/articles/c6x2zrjl7kjno?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 28, 2026",
-      "description": "Chancellor John Healey will set out his plans for UK taxes on 28 October."
+      "description": "Here’s what you need to know from John Healey’s first Budget, as the chancellor sets out the government’s tax and spending plans."
+    },
+    {
+      "title": "How much is the minimum wage going up by?",
+      "url": "https://www.bbc.co.uk/news/articles/cy7e8mpdxpro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 28, 2026",
+      "description": "What are the National Minimum Wage and the National Living Wage, and how much are they worth?"
+    },
+    {
+      "title": "'An annoying buzz': The search for stealthier drones",
+      "url": "https://www.bbc.co.uk/news/articles/ck1exgejq3xvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 28, 2026",
+      "description": "As drone deliveries become more commonplace, their makers are looking for ways to make them quieter."
     },
     {
       "title": "You may get the right to find out what your colleagues earn - here's why",
@@ -3553,16 +3576,10 @@
       "description": "Employees should legally be able to find out what their co-workers are earning, the UK's equality watchdog says"
     },
     {
-      "title": "Minimum wage set to rise but 18-20 year-olds will not get bigger increase",
-      "url": "https://www.bbc.co.uk/news/articles/c6d93gq1xdgno?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Donald Trump's biggest economic problem looks strangely familiar",
+      "url": "https://www.bbc.co.uk/news/articles/cwvg0ddz1z77o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 27, 2026",
-      "description": "Chancellor John Healey will reveal the new pay rates in the Budget, and has also announced measures to help households with the cost of living."
-    },
-    {
-      "title": "'An annoying buzz': The search for stealthier drones",
-      "url": "https://www.bbc.co.uk/news/articles/ck1exgejq3xvo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 28, 2026",
-      "description": "As drone deliveries become more commonplace, their makers are looking for ways to make them quieter."
+      "description": "Donald Trump heads into the US midterm elections with an issue similar to his political foe Joe Biden."
     },
     {
       "title": "Luxury cruise passengers stranded in Cambodia due to soaring fuel costs",
@@ -3575,12 +3592,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cr20wzwyzl1qo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 27, 2026",
       "description": "The latest figures mark a major milestone as Beijing grapples with an ageing population."
-    },
-    {
-      "title": "Donald Trump's biggest economic problem looks strangely familiar",
-      "url": "https://www.bbc.co.uk/news/articles/cwvg0ddz1z77o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 27, 2026",
-      "description": "Donald Trump heads into the US midterm elections with an issue similar to his political foe Joe Biden."
     },
     {
       "title": "Rise in sales of radios and tinned foods, say retailers, after call to stock up",
@@ -3599,6 +3610,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cv62yg0erp8zo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 27, 2026",
       "description": "The France star had referred to the former Chinese leader as a \"dictator\" during an interview about memes."
+    },
+    {
+      "title": "Minimum wage set to rise but 18-20 year-olds will not get bigger increase",
+      "url": "https://www.bbc.co.uk/news/articles/c6d93gq1xdgno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 27, 2026",
+      "description": "Chancellor John Healey will reveal the new pay rates in the Budget, and has also announced measures to help households with the cost of living."
     },
     {
       "title": "Apple to replace iPhone Duos affected by screen problem",
@@ -3685,6 +3702,18 @@
       "description": "Will farmers want AI tools to help judge when to pick fruit, or is their own intuition enough?"
     },
     {
+      "title": "How much is the minimum wage going up by?",
+      "url": "https://www.bbc.co.uk/news/articles/cy7e8mpdxpro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 28, 2026",
+      "description": "What are the National Minimum Wage and the National Living Wage, and how much are they worth?"
+    },
+    {
+      "title": "Your pay, energy bills and savings: How the Budget affects you",
+      "url": "https://www.bbc.co.uk/news/articles/cr0j05vxlwjzo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 28, 2026",
+      "description": "Changes announced by Chancellor John Healey in his first Budget will affect your finances directly. Here's how."
+    },
+    {
       "title": "How will the tax cut on gherkins help restaurants?",
       "url": "https://www.bbc.co.uk/news/videos/c6y0e1812r1no?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 28, 2026",
@@ -3701,18 +3730,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cmx235r9wr3yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 28, 2026",
       "description": "People on a range of incomes from £4,062 to £150,000 a year tell the BBC what they want to see in this year's Budget."
-    },
-    {
-      "title": "Plaid demands more cash, but how could the Budget affect Wales?",
-      "url": "https://www.bbc.co.uk/news/articles/cr1ex97l1n7yo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 28, 2026",
-      "description": "Welsh Finance Minister Elin Jones has called for a spending plan that \"finally treats us fairly\"."
-    },
-    {
-      "title": "Free haircuts project aims to inspire other stylists",
-      "url": "https://www.bbc.co.uk/news/articles/cw8dz5578081o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 28, 2026",
-      "description": "Georgia Chappels runs free community haircuts to help those feeling the impact of rising costs."
     },
     {
       "title": "My hometown shows that high streets have to change or die",
@@ -3745,6 +3762,12 @@
       "description": "Many younger people do not believe the state pension will exist when they are older"
     },
     {
+      "title": "Chancellor begins to deliver his first Budget",
+      "url": "https://www.bbc.co.uk/news/videos/cqn49vy2jlx0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 28, 2026",
+      "description": "The chancellor begins his speech by calling it a Budget for the \"working people of Britain, for British businesses big and small.\""
+    },
+    {
       "title": "John Healey pays homage to predecessor Rachel Reeves",
       "url": "https://www.bbc.co.uk/news/videos/c95ynvr04vgdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 28, 2026",
@@ -3769,10 +3792,46 @@
       "description": "Helen Miller, director at the Institute for Fiscal Studies, speaks to the Today programme about challenges in the budget."
     },
     {
-      "title": "Octopus Energy boss on standing charges",
-      "url": "https://www.bbc.co.uk/news/videos/cqe9lmgdnz45o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Boxer Serrano to hang up gloves in Puerto Rico farewell on January 9",
+      "url": "https://www.aljazeera.com/sports/2026/10/28/boxer-serrano-to-hang-up-gloves-in-puerto-rico-farewell-on-january-9?traffic_source=rss",
       "date": "October 28, 2026",
-      "description": "CEO Greg Jackson spoke to BBC Breakfast after the chancellor announced cuts to gas bills for millions."
+      "description": "Amanda Serrano will defend her unified WBO and WBA featherweight world boxing titles against Australia's Skye ⁠Falzon."
+    },
+    {
+      "title": "Shadman Islam’s 99 leads Bangladesh to 213-3 vs West Indies in first Test",
+      "url": "https://www.aljazeera.com/sports/2026/10/28/shadman-islams-99-leads-bangladesh-to-213-3-in-first-west-indies-in-test?traffic_source=rss",
+      "date": "October 28, 2026",
+      "description": "Bad light prevents Shadman Islam from completing century against West Indies in opener of first cricket Test in Mirpur."
+    },
+    {
+      "title": "Flavio Bolsonaro lands in Miami after losing Brazil’s presidential election",
+      "url": "https://www.aljazeera.com/news/2026/10/28/flavio-bolsonaro-lands-in-miami-after-losing-brazils-presidential-election?traffic_source=rss",
+      "date": "October 28, 2026",
+      "description": "Bolsonaro and his family fled to the US amid a Brazilian Supreme Court order to surrender his passports."
+    },
+    {
+      "title": "Why Arab parties may not be the ‘kingmakers’ in this Israeli election",
+      "url": "https://www.aljazeera.com/news/2026/10/28/can-israeli-leader-eisenkot-ally-with-arab-parties-to-unseat-netanyahu?traffic_source=rss",
+      "date": "October 28, 2026",
+      "description": "Exit poll projections show that if Eisenkot’s bloc teamed up with Arab parties, they could potentially unseat Bibi."
+    },
+    {
+      "title": "Why are three of the UK’s four nuclear deterrent submarines at sea?",
+      "url": "https://www.aljazeera.com/news/2026/10/28/why-are-three-of-the-uks-four-nuclear-deterrent-submarines-at-sea?traffic_source=rss",
+      "date": "October 28, 2026",
+      "description": "The deployment marks the first time in years that three Vanguard-class vessels have been at sea at the same time."
+    },
+    {
+      "title": "Spanish football postpones 24 Copa del Rey games after train crash",
+      "url": "https://www.aljazeera.com/sports/2026/10/28/spanish-football-postpones-24-copa-del-rey-games-after-train-crash?traffic_source=rss",
+      "date": "October 28, 2026",
+      "description": "Real Madrid and Barcelona offer messages of support following train crash as Spanish football orders Copa postponement ."
+    },
+    {
+      "title": "Real Madrid apologise to Chinese people for Mbappe’s Mao ‘dictator’ remark",
+      "url": "https://www.aljazeera.com/sports/2026/10/28/real-madrid-apologise-to-chinese-people-for-mbappes-mao-dictator-remark?traffic_source=rss",
+      "date": "October 28, 2026",
+      "description": "Mocking Mao Zedong is taboo in China, which is a lucrative market for players and teams such as Kylian Mbappe's Real."
     },
     {
       "title": "Ballon d’Or win will help keep Kane at Bayern, says Germany’s Matthaus",
@@ -3835,7 +3894,7 @@
       "description": "A historic turnout among Palestinian citizens of Israel positions Arab parties as kingmakers against the far right."
     },
     {
-      "title": "Japan football association official resigns after AFC aligns with Infantino",
+      "title": "FIFA politics around Infantino re-election push Japanese official to resign",
       "url": "https://www.aljazeera.com/sports/2026/10/28/japan-football-association-official-resigns-after-afc-aligns-with-infantino?traffic_source=rss",
       "date": "October 28, 2026",
       "description": "Vice president Takeshi Okada said responses to several World Cup controversies did not align with his personal values."
@@ -3845,60 +3904,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/28/deadly-high-speed-train-collision-in-spain?traffic_source=rss",
       "date": "October 28, 2026",
       "description": "At least 30 people have been killed after two high-speed trains collided near Urda, Spain."
-    },
-    {
-      "title": "Palestinian activist Mahmoud Khalil returns to Columbia after US detention",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/28/palestinian-activist-mahmoud-khalil-returns-to-columbia-after-us-detention?traffic_source=rss",
-      "date": "October 28, 2026",
-      "description": "Pro-Palestinian activist Mahmoud Khalil returned to Columbia University for the first time since his US detention."
-    },
-    {
-      "title": "Burnham’s government unveils its first UK budget: What to expect",
-      "url": "https://www.aljazeera.com/news/2026/10/28/burnhams-government-unveils-its-first-uk-budget-what-to-expect?traffic_source=rss",
-      "date": "October 28, 2026",
-      "description": "UK chancellor to present an autumn budget amid rising living costs and energy bills."
-    },
-    {
-      "title": "Israeli forces continue West Bank raids as Hebron lockdown enters sixth day",
-      "url": "https://www.aljazeera.com/news/2026/10/28/israeli-forces-continue-west-bank-raids-as-hebron-lockdown-enters-sixth-day?traffic_source=rss",
-      "date": "October 28, 2026",
-      "description": "UN agency expresses 'grave concern' in Hebron and warns of echoes of 2025 'Iron Wall' operation."
-    },
-    {
-      "title": "US midterms: Six days left – who leads in the polls as Trump, Obama rally",
-      "url": "https://www.aljazeera.com/news/2026/10/28/us-midterms-six-days-left-who-leads-in-the-polls-as-trump-obama-rally?traffic_source=rss",
-      "date": "October 28, 2026",
-      "description": "Democrats lead national polls as Trump and Obama campaign in key states six days before the US midterm elections."
-    },
-    {
-      "title": "Norway and Finland hold rare phone call with Putin: What that means",
-      "url": "https://www.aljazeera.com/news/2026/10/28/norway-and-finland-hold-rare-phone-call-with-putin-what-that-means?traffic_source=rss",
-      "date": "October 28, 2026",
-      "description": "The two Nordic leaders are attempting to influence US-brokered talks in Abu Dhabi to end the war in Ukraine."
-    },
-    {
-      "title": "Hormuz oil spill forces closure of UAE beaches",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/28/hormuz-oil-spill-forces-closure-of-uae-beaches?traffic_source=rss",
-      "date": "October 28, 2026",
-      "description": "An oil spill from a damaged tanker in the Strait of Hormuz has reached the UAE’s beaches, forcing their closure."
-    },
-    {
-      "title": "Netanyahu or Eisenkot? Can you form Israel’s next coalition government?",
-      "url": "https://www.aljazeera.com/news/2026/10/28/netanyahu-or-eisenkot-can-you-form-israels-next-coalition-government?traffic_source=rss",
-      "date": "October 28, 2026",
-      "description": "Israel has only ever been governed by coalitions. Can you put one together that reaches 61 of the Knesset's 120 seats?"
-    },
-    {
-      "title": "Israel’s stock market drops as exit polls show no clear election winner",
-      "url": "https://www.aljazeera.com/economy/2026/10/28/israels-stock-market-drops-as-exit-polls-show-no-clear-election-winner?traffic_source=rss",
-      "date": "October 28, 2026",
-      "description": "Benchmark Tel Aviv 125 index falls more than 3 percent amid uncertainty over who will lead the next government."
-    },
-    {
-      "title": "Mapping the siege of Yemen’s Taiz, and the price families are paying",
-      "url": "https://www.aljazeera.com/news/2026/10/28/mapping-the-siege-of-yemens-taiz-and-the-price-families-are-paying?traffic_source=rss",
-      "date": "October 28, 2026",
-      "description": "Three weeks into the siege of Yemen’s third-largest city, prices have doubled, and families are down to the basics."
     }
   ]
 }
