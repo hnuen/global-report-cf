@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28T15:08:32.714Z",
+  "updatedAt": "2026-10-28T17:08:27.925Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261028",
@@ -2991,11 +2991,12 @@
         },
         {
           "number": "48D",
-          "title": "Venezuela General License 48D",
+          "title": "Authorizing the Supply of Certain Items and Services to Venezuela",
           "date": "August 27, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/937001/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "49B",
@@ -3282,6 +3283,12 @@
   ],
   "ajNews": [
     {
+      "title": "Ethiopia receives 12 Russian Su-35 jets, plans S-400 acquisition",
+      "url": "https://www.aljazeera.com/news/2026/10/28/ethiopia-receives-12-russian-su-35-jets-plans-s-400-acquisition?traffic_source=rss",
+      "date": "October 28, 2026",
+      "description": "PM Abiy Ahmed makes announcement during a Moscow summit as Ethiopia battles armed groups in Tigray and Amhara."
+    },
+    {
       "title": "Are GCC countries looking for a regional security pact with Iran?",
       "url": "https://www.aljazeera.com/news/2026/10/28/are-gcc-countries-looking-for-a-regional-security-pact-with-iran?traffic_source=rss",
       "date": "October 28, 2026",
@@ -3310,12 +3317,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/28/victims-of-jordans-air-strikes-in-syria?traffic_source=rss",
       "date": "October 28, 2026",
       "description": "Jordan’s air strikes in southern Syria killed at least seven people, including three children. Here are their stories."
-    },
-    {
-      "title": "Russia-Africa Summit: What is on the agenda, and why does it matter?",
-      "url": "https://www.aljazeera.com/news/2026/10/28/russia-africa-summit-what-is-on-the-agenda-and-why-does-it-matter?traffic_source=rss",
-      "date": "October 28, 2026",
-      "description": "Moscow aims to strengthen economic and security ties with African leaders during the two-day gathering."
     }
   ],
   "occNews": [
@@ -3438,6 +3439,12 @@
   ],
   "regionsNews": [
     {
+      "title": "How could Israel break election deadlock? Here are four scenarios",
+      "url": "https://www.bbc.co.uk/news/articles/cm62y46d97wwo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 28, 2026",
+      "description": "With 85% of votes counted, all signs point to an impasse. The most likely outcome may be new elections."
+    },
+    {
       "title": "Luxury cruise passengers stranded in Cambodia due to soaring fuel costs",
       "url": "https://www.bbc.co.uk/news/articles/cwj342k62exyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 28, 2026",
@@ -3492,6 +3499,12 @@
       "description": "Marry Mubaiwa had been held on remand for seven years after being charged in 2019 for her then husband's attempted murder."
     },
     {
+      "title": "Watch: At the scene of Spain's deadly train crash",
+      "url": "https://www.bbc.co.uk/news/videos/cw5ynjgy3vvgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 28, 2026",
+      "description": "People have been killed after a Spanish high-speed train collided with another train south of the capital Madrid, making this the country's worst disaster since 2013."
+    },
+    {
       "title": "Israel's election result is messy - here's why",
       "url": "https://www.bbc.co.uk/news/videos/c893zeknlvnno?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 28, 2026",
@@ -3502,12 +3515,6 @@
       "url": "https://www.bbc.co.uk/news/videos/cqy43w2wpy3vo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 27, 2026",
       "description": "Kylian Mbappé has apologised for \"ill-judged\" comments he made about late Chinese leader Mao Zedong."
-    },
-    {
-      "title": "What does Israel's election mean for Gaza and the wider world?",
-      "url": "https://www.bbc.co.uk/news/videos/ck240dg5n4gjo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 27, 2026",
-      "description": "The BBC's diplomatic correspondent James Landale reports from Jerusalem as ballots are cast."
     },
     {
       "title": "What we know so far about deadly Spain train crash",
@@ -3546,10 +3553,16 @@
       "description": "Changes announced by Chancellor John Healey in his first Budget will affect your finances directly. Here's how."
     },
     {
-      "title": "I get £4,062 a year and am trying my best - here's what I want from the Budget",
-      "url": "https://www.bbc.co.uk/news/articles/cmx235r9wr3yo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Will I get the £100 energy payment and when will I receive it?",
+      "url": "https://www.bbc.co.uk/news/articles/c35yn8x748e9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 28, 2026",
-      "description": "People on a range of incomes from £4,062 to £150,000 a year tell the BBC what they want to see in this year's Budget."
+      "description": "Here is what you need to know about the payment that millions will receive from January."
+    },
+    {
+      "title": "The one thing that didn't change that will affect your pay the most",
+      "url": "https://www.bbc.co.uk/news/articles/clydn7r5pn1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 28, 2026",
+      "description": "The point at which you start to pay tax, and the point where you tip into paying a higher rate of tax have been frozen for three more years."
     },
     {
       "title": "Budget 2026: Key points at a glance",
@@ -3558,16 +3571,16 @@
       "description": "Here’s what you need to know from John Healey’s first Budget, as the chancellor sets out the government’s tax and spending plans."
     },
     {
-      "title": "How much is the minimum wage going up by?",
-      "url": "https://www.bbc.co.uk/news/articles/cy7e8mpdxpro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 28, 2026",
-      "description": "What are the National Minimum Wage and the National Living Wage, and how much are they worth?"
-    },
-    {
       "title": "'An annoying buzz': The search for stealthier drones",
       "url": "https://www.bbc.co.uk/news/articles/ck1exgejq3xvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 28, 2026",
       "description": "As drone deliveries become more commonplace, their makers are looking for ways to make them quieter."
+    },
+    {
+      "title": "How much is the minimum wage going up by?",
+      "url": "https://www.bbc.co.uk/news/articles/cy7e8mpdxpro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 28, 2026",
+      "description": "What are the National Minimum Wage and the National Living Wage, and how much are they worth?"
     },
     {
       "title": "You may get the right to find out what your colleagues earn - here's why",
@@ -3702,16 +3715,22 @@
       "description": "Will farmers want AI tools to help judge when to pick fruit, or is their own intuition enough?"
     },
     {
-      "title": "How much is the minimum wage going up by?",
-      "url": "https://www.bbc.co.uk/news/articles/cy7e8mpdxpro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 28, 2026",
-      "description": "What are the National Minimum Wage and the National Living Wage, and how much are they worth?"
-    },
-    {
       "title": "Your pay, energy bills and savings: How the Budget affects you",
       "url": "https://www.bbc.co.uk/news/articles/cr0j05vxlwjzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 28, 2026",
       "description": "Changes announced by Chancellor John Healey in his first Budget will affect your finances directly. Here's how."
+    },
+    {
+      "title": "Will I get the £100 energy payment and when will I receive it?",
+      "url": "https://www.bbc.co.uk/news/articles/c35yn8x748e9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 28, 2026",
+      "description": "Here is what you need to know about the payment that millions will receive from January."
+    },
+    {
+      "title": "How much is the minimum wage going up by?",
+      "url": "https://www.bbc.co.uk/news/articles/cy7e8mpdxpro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 28, 2026",
+      "description": "What are the National Minimum Wage and the National Living Wage, and how much are they worth?"
     },
     {
       "title": "How will the tax cut on gherkins help restaurants?",
@@ -3724,12 +3743,6 @@
       "url": "https://www.bbc.co.uk/news/videos/cked3en749pyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 28, 2026",
       "description": "A shelter says it has looked after 150 more cats and kittens this summer than last year."
-    },
-    {
-      "title": "I get £4,062 a year and am trying my best - here's what I want from the Budget",
-      "url": "https://www.bbc.co.uk/news/articles/cmx235r9wr3yo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 28, 2026",
-      "description": "People on a range of incomes from £4,062 to £150,000 a year tell the BBC what they want to see in this year's Budget."
     },
     {
       "title": "My hometown shows that high streets have to change or die",
@@ -3790,6 +3803,48 @@
       "url": "https://www.bbc.co.uk/news/videos/cw1l39g2n8dyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 28, 2026",
       "description": "Helen Miller, director at the Institute for Fiscal Studies, speaks to the Today programme about challenges in the budget."
+    },
+    {
+      "title": "Bank of Canada raises interest rates for the first time in three years",
+      "url": "https://www.aljazeera.com/economy/2026/10/28/bank-of-canada-raises-interest-rates-for-the-first-time-in-three-years?traffic_source=rss",
+      "date": "October 28, 2026",
+      "description": "The central bank increased the key rate by a quarter point as soaring energy prices pushed up inflation."
+    },
+    {
+      "title": "Kremlin says European countries not included in next Ukraine talks",
+      "url": "https://www.aljazeera.com/news/2026/10/28/kremlin-says-european-countries-not-included-in-next-ukraine-talks?traffic_source=rss",
+      "date": "October 28, 2026",
+      "description": "The comment comes as UK and Netherlands pledge extra military support for Kyiv."
+    },
+    {
+      "title": "Israeli soldier visiting UK faces war crimes complaint",
+      "url": "https://www.aljazeera.com/news/2026/10/28/israeli-soldier-visiting-uk-faces-war-crimes-complaint?traffic_source=rss",
+      "date": "October 28, 2026",
+      "description": "New UK war crimes complaint against an Israeli soldier highlights a global legal campaign to end systemic impunity."
+    },
+    {
+      "title": "US Congresswoman Rashida Tlaib condemns anti-Muslim election rhetoric",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/28/us-congresswoman-rashida-tlaib-condemns-anti-muslim-election-rhetoric?traffic_source=rss",
+      "date": "October 28, 2026",
+      "description": "US Congresswoman Rashida Tlaib condemns anti-Muslim election rhetoric"
+    },
+    {
+      "title": "What is the controversy between Real Madrid’s Kylian Mbappe and China?",
+      "url": "https://www.aljazeera.com/sports/2026/10/28/kylian-mbappe-china-meme-mao-zedong-la-liga-real-madrid?traffic_source=rss",
+      "date": "October 28, 2026",
+      "description": "The French superstar's comments about Mao Zedong have drawn the ire of China, a lucrative market for sports teams."
+    },
+    {
+      "title": "Father grieving 6 children wants Pastor Mackenzie ‘locked away for life’",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/28/father-grieving-6-children-wants-pastor-mackenzie-locked-away?traffic_source=rss",
+      "date": "October 28, 2026",
+      "description": "All of Stephen Mwiti Joseph’s children are presumed dead after his wife abducted them to follow a self-declared pastor."
+    },
+    {
+      "title": "Bolsonaro turns up in Florida after vanishing from public view",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/28/aje-onl-nf_bolsonaro-in-florida-after-vanishing-from-public-281026?traffic_source=rss",
+      "date": "October 28, 2026",
+      "description": "Flavio Bolsonaro, Brazil’s defeated presidential candidate, landed in Florida after fleeing the country with his family."
     },
     {
       "title": "Boxer Serrano to hang up gloves in Puerto Rico farewell on January 9",
@@ -3862,48 +3917,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/28/israeli-voters-hope-and-despair-as-election-ballots-are-counted?traffic_source=rss",
       "date": "October 28, 2026",
       "description": "Israeli voters in Tel Aviv expressed mixed emotions as ballots were counted after the election."
-    },
-    {
-      "title": "Hackers target US campaign finance system days before midterm elections",
-      "url": "https://www.aljazeera.com/news/2026/10/28/hackers-target-us-campaign-finance-system-days-before-midterm-elections?traffic_source=rss",
-      "date": "October 28, 2026",
-      "description": "An FEC email said a 'bad actor' tried to breach its systems as the US prepares for its most expensive elections ever."
-    },
-    {
-      "title": "Nigerian artist reframes children with albinism as heroes",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/28/nigerian-artist-reframes-children-with-albinism-as-heroes?traffic_source=rss",
-      "date": "October 28, 2026",
-      "description": "Nigerian artist reframes children with albinism as heroes"
-    },
-    {
-      "title": "Cyclone leaves trail of destruction in India as thousands evacuated",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/28/cyclone-leaves-trail-of-destruction-in-india-as-thousands-evacuated?traffic_source=rss",
-      "date": "October 28, 2026",
-      "description": "Cyclone Arnab has left a trail of destruction along India’s eastern coast."
-    },
-    {
-      "title": "Families brace for a fourth winter of wind, rain and floods in Gaza’s camps",
-      "url": "https://www.aljazeera.com/features/2026/10/28/gaza-families-brace-for-a-fourth-winter-of-wind-rain-and-floods-in-camps?traffic_source=rss",
-      "date": "October 28, 2026",
-      "description": "Gaza's impending winter is likely to lead to further devastation for Palestinians."
-    },
-    {
-      "title": "High voter turnout among Palestinian citizens of Israel threatens Netanyahu",
-      "url": "https://www.aljazeera.com/news/2026/10/28/high-voter-turnout-from-palestinian-citizens-of-israel-threatens-netanyahu?traffic_source=rss",
-      "date": "October 28, 2026",
-      "description": "A historic turnout among Palestinian citizens of Israel positions Arab parties as kingmakers against the far right."
-    },
-    {
-      "title": "FIFA politics around Infantino re-election push Japanese official to resign",
-      "url": "https://www.aljazeera.com/sports/2026/10/28/japan-football-association-official-resigns-after-afc-aligns-with-infantino?traffic_source=rss",
-      "date": "October 28, 2026",
-      "description": "Vice president Takeshi Okada said responses to several World Cup controversies did not align with his personal values."
-    },
-    {
-      "title": "Deadly high-speed train collision in Spain",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/28/deadly-high-speed-train-collision-in-spain?traffic_source=rss",
-      "date": "October 28, 2026",
-      "description": "At least 30 people have been killed after two high-speed trains collided near Urda, Spain."
     }
   ]
 }
