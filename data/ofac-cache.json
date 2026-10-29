@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29T21:08:32.434Z",
+  "updatedAt": "2026-10-29T22:08:26.141Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261029",
@@ -3234,14 +3234,7 @@
       "description": "The restrictive measures consist of an asset freeze, travel bans to the EU, and a prohibition to make funds or economic resources available to those listed."
     }
   ],
-  "unNotices": [
-    {
-      "title": "Security Council Sanctions Committee Established Pursuant to Resolution 1988 (2011) Amends Five Names on Its Sanctions List",
-      "url": "https://press.un.org/en/2026/sc16494.doc.htm",
-      "date": "October 29, 2026",
-      "description": "On 29 October 2026, the Security Council Committee established pursuant to resolution 1988 (2011) enacted the amendments specified with strikethrough and/or underline in the entries below on its 1988 List of individuals and entities subject to the assets freeze, travel ban and arms embargo set out in paragraph 1 of Security Council resolution 2816 (2026) and adopted under Chapter VII of the Charter of the United Nations."
-    }
-  ],
+  "unNotices": [],
   "bbcNews": [
     {
       "title": "Russian drone attack on Ukrainian train station kills at least 14, officials say",
@@ -3420,10 +3413,22 @@
   ],
   "regionsNews": [
     {
+      "title": "Israeli opposition accuses Netanyahu of trying to 'delegitimise' election",
+      "url": "https://www.bbc.co.uk/news/articles/ckdd8qdl9e0eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 29, 2026",
+      "description": "The PM's Likud party has alleged foreign interference and said Arab-led parties \"stole\" the election after his coalition lost its majority."
+    },
+    {
       "title": "Audio reveals exchanges between Spain train operators and drivers moments before deadly crash",
       "url": "https://www.bbc.co.uk/news/articles/cmqxnl312v34o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 29, 2026",
       "description": "The leaked tapes appear to show one high-speed train was given clearance to move at normal speed, even though another up ahead had stalled."
+    },
+    {
+      "title": "'The city is alive': A brief peace in Kherson, but residents fear what comes next",
+      "url": "https://www.bbc.co.uk/news/articles/ck1l393pyrylo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 29, 2026",
+      "description": "A temporary ceasefire has brought rare quiet to Kherson, offering its residents a glimpse of normal life before fighting resumes."
     },
     {
       "title": "Flávio Bolsonaro calls himself 'leader of Brazil' after election loss",
@@ -3438,22 +3443,10 @@
       "description": "Images of child sexual abuse allegedly belonging to Meghan's father had reportedly been found in his former home in the Philippines."
     },
     {
-      "title": "'The city is alive': A brief peace in Kherson, but residents fear what comes next",
-      "url": "https://www.bbc.co.uk/news/articles/ck1l393pyrylo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 29, 2026",
-      "description": "A temporary ceasefire has brought rare quiet to Kherson, offering its residents a glimpse of normal life before fighting resumes."
-    },
-    {
       "title": "EU chief lays out vision for new Canada partnership at Montreal summit",
       "url": "https://www.bbc.co.uk/news/articles/cq8ezj7jylrzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 29, 2026",
       "description": "Ursula von der Leyen continued to use the term \"associate member\" for Canada despite some opposition of the bloc's members, including Germany."
-    },
-    {
-      "title": "Netanyahu's bloc leading Israel election but short of majority, partial results show",
-      "url": "https://www.bbc.co.uk/news/articles/cmdx3knq1xexo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 29, 2026",
-      "description": "With 99% of ballots counted, Netanyahu's Likud party and its allies are set to win 53 seats in the 120-seat Knesset."
     },
     {
       "title": "Rock collapse kills two in Turkey's Cappadocia, local media reports",
@@ -3516,6 +3509,12 @@
       "description": "Sanrio has apologised after its merchandise line with Japanese TV series Vivant drew criticism."
     },
     {
+      "title": "Watch: What leaked audio reveals about Spain train crash",
+      "url": "https://www.bbc.co.uk/news/videos/c6vgjeg0myzgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 29, 2026",
+      "description": "Recordings between a control centre and the train drivers appear to show one train was given clearance to move even though another train had stalled on the track."
+    },
+    {
       "title": "Watch: VHS tapes and computers handed to police as Thomas Markle is investigated",
       "url": "https://www.bbc.co.uk/news/videos/cm0rlxxpng5eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 29, 2026",
@@ -3528,22 +3527,16 @@
       "description": "The monarch is in the Bahamas as part of a tour of the Caribbean during which he addressed the \"great suffering of the past\"."
     },
     {
-      "title": "Watch: At the scene of Spain's deadly train crash",
-      "url": "https://www.bbc.co.uk/news/videos/cw5ynjgy3vvgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 28, 2026",
-      "description": "People have been killed after a Spanish high-speed train collided with another train south of the capital Madrid, making this the country's worst disaster since 2013."
+      "title": "Young athlete and former minister among victims of Spain train crash",
+      "url": "https://www.bbc.co.uk/news/articles/cr78plp1p9yvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 29, 2026",
+      "description": "As some of the victims' names are released publicly, an outpouring of grief and anger is sweeping across Spain."
     },
     {
       "title": "Europe's youth is on the march - but does anything actually unite them?",
       "url": "https://www.bbc.co.uk/news/articles/cm2ke80nd929o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 29, 2026",
       "description": "The last month has seen youth-driven demonstrations across Europe. What connects them?"
-    },
-    {
-      "title": "What we know so far about deadly Spain train crash",
-      "url": "https://www.bbc.co.uk/news/articles/cm8xz7pkd0jjo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 29, 2026",
-      "description": "More than 500 passengers were on board the trains when the crash occurred in the province of Toledo, south of Madrid."
     },
     {
       "title": "'I live with a ghost' - inside the haunted homes attracting bargain hunters",
@@ -3562,6 +3555,12 @@
       "url": "https://www.bbc.co.uk/news/articles/c574pj3zljvjo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 28, 2026",
       "description": "The construction of tourism facilities, housing, and infrastructure has surged in parts of Nepal and India's Uttarakhand."
+    },
+    {
+      "title": "Google value plunges by $500bn as AI fears rattle Wall Street",
+      "url": "https://www.bbc.co.uk/news/articles/cm9qzdqpxy48o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 29, 2026",
+      "description": "Google spooked investors so badly that its stock hit a six-month low, after it revealed its AI search summaries were affecting ad revenue."
     },
     {
       "title": "Burnham 'ready to support' Poundland staff as retailer faces collapse",
@@ -3588,16 +3587,16 @@
       "description": "Chancellor John Healey's plans fall short of radical action to create a promised new economic model."
     },
     {
-      "title": "Bereaved families will not face tax bill over pension delays under new rules",
-      "url": "https://www.bbc.co.uk/news/articles/cr5yn9zwnp3qo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 29, 2026",
-      "description": "Campaigners had warned some families could face an unfair financial penalty because of delays which were not their fault."
-    },
-    {
       "title": "'I live with a ghost' - inside the haunted homes attracting bargain hunters",
       "url": "https://www.bbc.co.uk/news/articles/cqwy78elyrlzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 29, 2026",
       "description": "Properties where someone has died in tragic circumstances can have big reductions in price."
+    },
+    {
+      "title": "Bereaved families will not face tax bill over pension delays under new rules",
+      "url": "https://www.bbc.co.uk/news/articles/cr5yn9zwnp3qo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 29, 2026",
+      "description": "Campaigners had warned some families could face an unfair financial penalty because of delays which were not their fault."
     },
     {
       "title": "I earn £30,000. I'm angry there was no fuel duty cut in the Budget",
@@ -3822,6 +3821,18 @@
       "description": "The chancellor begins his speech by calling it a Budget for the \"working people of Britain, for British businesses big and small.\""
     },
     {
+      "title": "Palestinians face growing bans from Al-Aqsa as Israel tightens control",
+      "url": "https://www.aljazeera.com/news/2026/10/29/palestinians-face-growing-bans-from-al-aqsa-as-israel-tightens-control?traffic_source=rss",
+      "date": "October 29, 2026",
+      "description": "As Israel renews a ban on Al-Aqsa imam, Islamic Waqf officials warn of shrinking authority at Muslim holy site."
+    },
+    {
+      "title": "Israel bans travel for Brad Lander after detention in occupied West Bank",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/29/israel-bans-travel-for-brad-lander-after-detention-in-occupied-west-bank?traffic_source=rss",
+      "date": "October 29, 2026",
+      "description": "Israel has revoked travel authorisation for US Democratic congressional candidate Brad Lander after he was detained."
+    },
+    {
       "title": "Real Madrid and FC Barcelona honour Spain train crash victims",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/29/real-madrid-and-fc-barcelona-honour-spain-train-crash-victims?traffic_source=rss",
       "date": "October 29, 2026",
@@ -3940,18 +3951,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/29/deadly-rock-collapse-at-famous-turkiye-tourist-site?traffic_source=rss",
       "date": "October 29, 2026",
       "description": "Deadly rock collapse at famous Turkiye tourist site"
-    },
-    {
-      "title": "Israel’s anti-Qatar campaign bleeds into elections",
-      "url": "https://www.aljazeera.com/news/2026/10/29/israels-anti-qatar-campaign-bleeds-into-elections?traffic_source=rss",
-      "date": "October 29, 2026",
-      "description": "Qatar's Foreign Ministry spokesman rejects 'disinformation' amid allegations by some Israelis of voting interference."
-    },
-    {
-      "title": "Spanish long jumper Julieta Gallego among victims of deadly train collision",
-      "url": "https://www.aljazeera.com/sports/2026/10/29/spanish-long-jumper-julieta-gallego-among-victims-of-deadly-train-collision?traffic_source=rss",
-      "date": "October 29, 2026",
-      "description": "Julieta Gallego, who competed for Madrid-based AD Sprint, among those killed in train crash in Spain."
     }
   ]
 }
