@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29T19:08:27.993Z",
+  "updatedAt": "2026-10-29T21:08:32.434Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261029",
@@ -1345,8 +1345,7 @@
           "date": "October 15, 2026",
           "expires": "December 1, 2026",
           "url": "https://ofac.treasury.gov/media/937311/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "GG",
@@ -2903,11 +2902,12 @@
         },
         {
           "number": "32",
-          "title": "Venezuela General License 32",
+          "title": "Authorizing Certain Transactions Related to Personal Maintenance of Individuals Who Are U.S. Persons Residing in Venezuela",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34101/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "33",
@@ -3234,7 +3234,14 @@
       "description": "The restrictive measures consist of an asset freeze, travel bans to the EU, and a prohibition to make funds or economic resources available to those listed."
     }
   ],
-  "unNotices": [],
+  "unNotices": [
+    {
+      "title": "Security Council Sanctions Committee Established Pursuant to Resolution 1988 (2011) Amends Five Names on Its Sanctions List",
+      "url": "https://press.un.org/en/2026/sc16494.doc.htm",
+      "date": "October 29, 2026",
+      "description": "On 29 October 2026, the Security Council Committee established pursuant to resolution 1988 (2011) enacted the amendments specified with strikethrough and/or underline in the entries below on its 1988 List of individuals and entities subject to the assets freeze, travel ban and arms embargo set out in paragraph 1 of Security Council resolution 2816 (2026) and adopted under Chapter VII of the Charter of the United Nations."
+    }
+  ],
   "bbcNews": [
     {
       "title": "Russian drone attack on Ukrainian train station kills at least 14, officials say",
@@ -3275,22 +3282,22 @@
   ],
   "ajNews": [
     {
+      "title": "Does Russia offer African countries an equal partnership?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/10/29/does-russia-offer-african-countries-an-equal-partnership?traffic_source=rss",
+      "date": "October 29, 2026",
+      "description": "President Vladimir Putin hosts African leaders at a summit in Moscow."
+    },
+    {
+      "title": "Pentagon fires general it says leaked classified information to media",
+      "url": "https://www.aljazeera.com/news/2026/10/29/pentagon-fires-general-it-says-leaked-classified-information-to-media?traffic_source=rss",
+      "date": "October 29, 2026",
+      "description": "Army Lieutenant General Brett Sylvia was subject of investigation into leaking information about Iran and Ukraine."
+    },
+    {
       "title": "At least 14 people killed in attack on Ukraine train station",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/29/aje-onl-nf_russian-drone-strike-at-dnipro-train-platform-291026?traffic_source=rss",
       "date": "October 29, 2026",
       "description": "A Russian drone strike killed at least 14 people at Dnipro’s main railway station in central Ukraine."
-    },
-    {
-      "title": "Damascus, Amman contradict each other on attack that killed civilians",
-      "url": "https://www.aljazeera.com/features/2026/10/29/damascus-amman-contradict-each-other-on-attack-that-killed-civilians?traffic_source=rss",
-      "date": "October 29, 2026",
-      "description": "Analysts say accountability is needed to quell public outrage over killing of family in southern Syria."
-    },
-    {
-      "title": "Men pulled from vehicle stranded by floods in Syria",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/29/men-pulled-from-vehicle-stranded-by-floods-in-syria?traffic_source=rss",
-      "date": "October 29, 2026",
-      "description": "This is the moment several men were rescued from their vehicle in Syria after becoming stranded by flash floods."
     }
   ],
   "occNews": [
@@ -3340,13 +3347,6 @@
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
       "date": "September 16, 2026",
       "description": "Federal Reserve issues FOMC statement",
-      "category": "Monetary Policy"
-    },
-    {
-      "title": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm",
-      "date": "September 16, 2026",
-      "description": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
       "category": "Monetary Policy"
     }
   ],
@@ -3438,10 +3438,10 @@
       "description": "Images of child sexual abuse allegedly belonging to Meghan's father had reportedly been found in his former home in the Philippines."
     },
     {
-      "title": "Rock collapse kills two in Turkey's Cappadocia, local media reports",
-      "url": "https://www.bbc.co.uk/news/articles/cknv08nvzld4o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "'The city is alive': A brief peace in Kherson, but residents fear what comes next",
+      "url": "https://www.bbc.co.uk/news/articles/ck1l393pyrylo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 29, 2026",
-      "description": "One of the region's famous rock formations, known as \"fairy chimneys\", reportedly collapsed outside an open-air museum."
+      "description": "A temporary ceasefire has brought rare quiet to Kherson, offering its residents a glimpse of normal life before fighting resumes."
     },
     {
       "title": "EU chief lays out vision for new Canada partnership at Montreal summit",
@@ -3454,6 +3454,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cmdx3knq1xexo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 29, 2026",
       "description": "With 99% of ballots counted, Netanyahu's Likud party and its allies are set to win 53 seats in the 120-seat Knesset."
+    },
+    {
+      "title": "Rock collapse kills two in Turkey's Cappadocia, local media reports",
+      "url": "https://www.bbc.co.uk/news/articles/cknv08nvzld4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 29, 2026",
+      "description": "One of the region's famous rock formations, known as \"fairy chimneys\", reportedly collapsed outside an open-air museum."
     },
     {
       "title": "Record number of purges as Xi emphasises 'party discipline' at China political gathering",
@@ -3558,10 +3564,16 @@
       "description": "The construction of tourism facilities, housing, and infrastructure has surged in parts of Nepal and India's Uttarakhand."
     },
     {
-      "title": "Poundland's future hangs in the balance as chain edges towards collapse",
+      "title": "Burnham 'ready to support' Poundland staff as retailer faces collapse",
       "url": "https://www.bbc.co.uk/news/articles/cqrky1p4dlm7o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 29, 2026",
-      "description": "Poundland's bosses is filing a notice of intention to appoint administrators to the business."
+      "description": "Poundland's bosses are filing a notice of intention to appoint administrators to the business."
+    },
+    {
+      "title": "US interest rates held steady and economy grows - what it means for you",
+      "url": "https://www.bbc.co.uk/news/articles/cr15jxzv4w24o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 29, 2026",
+      "description": "The Federal Reserve's interest rate decisions affect everything from mortgages to car loans"
     },
     {
       "title": "'Painful' years ahead, think tanks warn, as living standards set to fall",
@@ -3582,16 +3594,16 @@
       "description": "Campaigners had warned some families could face an unfair financial penalty because of delays which were not their fault."
     },
     {
-      "title": "I earn £30,000. I'm angry there was no fuel duty cut in the Budget",
-      "url": "https://www.bbc.co.uk/news/articles/cmx235r9wr3yo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 29, 2026",
-      "description": "People on a range of incomes from £4,062 to £150,000 a year tell the BBC what they made of this year's Budget."
-    },
-    {
       "title": "'I live with a ghost' - inside the haunted homes attracting bargain hunters",
       "url": "https://www.bbc.co.uk/news/articles/cqwy78elyrlzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 29, 2026",
       "description": "Properties where someone has died in tragic circumstances can have big reductions in price."
+    },
+    {
+      "title": "I earn £30,000. I'm angry there was no fuel duty cut in the Budget",
+      "url": "https://www.bbc.co.uk/news/articles/cmx235r9wr3yo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 29, 2026",
+      "description": "People on a range of incomes from £4,062 to £150,000 a year tell the BBC what they made of this year's Budget."
     },
     {
       "title": "DoorDash to buy Instacart in $17bn deal it says will expand customer options",
@@ -3810,6 +3822,54 @@
       "description": "The chancellor begins his speech by calling it a Budget for the \"working people of Britain, for British businesses big and small.\""
     },
     {
+      "title": "Real Madrid and FC Barcelona honour Spain train crash victims",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/29/real-madrid-and-fc-barcelona-honour-spain-train-crash-victims?traffic_source=rss",
+      "date": "October 29, 2026",
+      "description": "Spanish football clubs were among those to hold a minute’s silence for the victims of Wednesday’s train collision."
+    },
+    {
+      "title": "Palestinians injured, arrested in Israeli raids across West Bank",
+      "url": "https://www.aljazeera.com/news/2026/10/29/palestinians-injured-arrested-in-israeli-raids-across-west-bank?traffic_source=rss",
+      "date": "October 29, 2026",
+      "description": "This comes as more than 3,300 Palestinians are forced from homes in Hebron as Israel's military offensive continues."
+    },
+    {
+      "title": "Israel election result shows no overall majority as vote count complete",
+      "url": "https://www.aljazeera.com/news/2026/10/29/israel-election-result-shows-no-overall-majority-as-vote-count-complete?traffic_source=rss",
+      "date": "October 29, 2026",
+      "description": "Opposition explores options to form coalition as no party secures the 61 seats required for parliamentary majority."
+    },
+    {
+      "title": "Man targeted Muslims, Africans and North Africans, French prosecutors say",
+      "url": "https://www.aljazeera.com/news/2026/10/29/man-targeted-muslims-africans-and-north-africans-french-prosecutors-say?traffic_source=rss",
+      "date": "October 29, 2026",
+      "description": "Prosecutor Olivier Christen said suspect admitted that he chose the location because it was 'a hotbed for Islamists'."
+    },
+    {
+      "title": "Cornell begins no confidence vote over handling of alleged gang rape",
+      "url": "https://www.aljazeera.com/news/2026/10/29/cornell-begins-no-confidence-vote-over-handling-of-alleged-gang-rape?traffic_source=rss",
+      "date": "October 29, 2026",
+      "description": "Faculty vote will continue until next Friday and could send message that school's president has lost their confidence."
+    },
+    {
+      "title": "Trump says won’t ‘take sides’ in Brazil election, but calls it a ‘disgrace’",
+      "url": "https://www.aljazeera.com/news/2026/10/29/trump-says-wont-take-sides-in-brazil-election-but-calls-it-a-disgrace?traffic_source=rss",
+      "date": "October 29, 2026",
+      "description": "Comments come after Trump ally Flavio Bolsonaro fled to Miami in US and claimed, without evidence, that vote was stolen."
+    },
+    {
+      "title": "Netanyahu attacks Palestinian-Israeli parties as he falls short of majority",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/29/netanyahu-attacks-palestinian-israeli-parties-as-he-falls-short-of-majority?traffic_source=rss",
+      "date": "October 29, 2026",
+      "description": "With all votes now counted, opposition parties could join forces with Palestinian-Israeli parties to unseat Netanyahu."
+    },
+    {
+      "title": "‘Arab voice doesn’t count’: Jewish Israeli blocs reject Palestinian support",
+      "url": "https://www.aljazeera.com/news/2026/10/29/arab-voice-doesnt-count-jewish-israeli-blocs-reject-palestinian-support?traffic_source=rss",
+      "date": "October 29, 2026",
+      "description": "Palestinian voters could decide Israel’s future, but its political class refuses to accept their mandate"
+    },
+    {
       "title": "Texas Republican group seeks to block certification of state’s election",
       "url": "https://www.aljazeera.com/news/2026/10/29/texas-republican-group-seeks-to-block-certification-of-states-election?traffic_source=rss",
       "date": "October 29, 2026",
@@ -3892,54 +3952,6 @@
       "url": "https://www.aljazeera.com/sports/2026/10/29/spanish-long-jumper-julieta-gallego-among-victims-of-deadly-train-collision?traffic_source=rss",
       "date": "October 29, 2026",
       "description": "Julieta Gallego, who competed for Madrid-based AD Sprint, among those killed in train crash in Spain."
-    },
-    {
-      "title": "Israeli strikes hit Gaza as Health Ministry urges Rafah opening",
-      "url": "https://www.aljazeera.com/news/2026/10/29/israeli-strikes-hit-gaza-as-health-ministry-urges-rafah-opening?traffic_source=rss",
-      "date": "October 29, 2026",
-      "description": "Gaza's Health Ministry says dozens died awaiting treatment abroad as Israeli attacks continue despite a 'ceasefire'."
-    },
-    {
-      "title": "As US midterms approach, farmers decide what to plant and how to vote",
-      "url": "https://www.aljazeera.com/economy/2026/10/29/as-us-midterms-approach-farmers-decide-what-to-plant-and-how-to-vote?traffic_source=rss",
-      "date": "October 29, 2026",
-      "description": "In Arkansas, rising costs spurred farmer Hallie Shoffner’s long-shot Senate campaign. Will farmers back her?"
-    },
-    {
-      "title": "YouTube star Jake Paul returns to boxing after Joshua loss for Dubai fight",
-      "url": "https://www.aljazeera.com/sports/2026/10/29/youtube-star-jake-paul-returns-to-boxing-after-joshua-loss-for-dubai-fight?traffic_source=rss",
-      "date": "October 29, 2026",
-      "description": "American Jake Paul to headline Christmas Eve boxing event in Dubai, with his opponent yet to be announced."
-    },
-    {
-      "title": "Neville says managers need sacking ‘for own good’ as Man Utd retain Carrick",
-      "url": "https://www.aljazeera.com/sports/2026/10/29/neville-says-managers-need-sacking-for-own-good-as-man-utd-retain-carrick?traffic_source=rss",
-      "date": "October 29, 2026",
-      "description": "Former Manchester United captain Gary Neville believes root of team’s problems is Glazer family, urges them to sell up."
-    },
-    {
-      "title": "Indonesians share impact of haze on their livelihoods",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/29/indonesians-share-impact-of-haze-on-their-livelihoods?traffic_source=rss",
-      "date": "October 29, 2026",
-      "description": "Months of forest fires and toxic haze in Indonesia has severely disrupted daily life."
-    },
-    {
-      "title": "Rising fuel costs force passengers off cruise ship",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/29/rising-fuel-costs-force-passengers-off-cruise-ship?traffic_source=rss",
-      "date": "October 29, 2026",
-      "description": "203 passengers have been forced to disembark from a US cruise ship."
-    },
-    {
-      "title": "The megadonors financing the US midterms to influence policy",
-      "url": "https://www.aljazeera.com/video/money-works/2026/10/29/the-megadonors-financing-the-us-midterms-to-influence-policy?traffic_source=rss",
-      "date": "October 29, 2026",
-      "description": "Who are the groups funding the US midterm campaigns and what are they hoping to influence?"
-    },
-    {
-      "title": "Bangladesh’s Shadman Islam hits century, but West Indies force collapse",
-      "url": "https://www.aljazeera.com/sports/2026/10/29/bangladeshs-shadman-islam-hits-100-but-warrican-tops-west-indies-recovery?traffic_source=rss",
-      "date": "October 29, 2026",
-      "description": "Shadman Islam hits 100, but Jomel Warrican bags five wickets before West Indies end day two of first Test on 134-4."
     }
   ]
 }
