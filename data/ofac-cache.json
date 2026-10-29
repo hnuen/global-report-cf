@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-10-29T17:08:26.014Z",
+  "updatedAt": "2026-10-29T19:08:27.993Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261029",
+      "code": "20261029",
+      "title": "Issuance of Amended Iran-related General License",
+      "date": "October 29, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261028",
       "code": "20261028",
@@ -53,12 +59,6 @@
       "url": "https://ofac.treasury.gov/recent-actions/20261013",
       "code": "20261013",
       "title": "Counter Narcotics and Counter Terrorism Designations",
-      "date": "October 13, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20261013_33",
-      "code": "20261013_33",
-      "title": "Settlement Agreement between the U.S. Department of the Treasury&#039;s Office of Foreign Assets Control and Bank of America, N.A.",
       "date": "October 13, 2026"
     }
   ],
@@ -1137,7 +1137,7 @@
     "iran-sanctions": {
       "name": "Iran Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions",
-      "lastUpdated": "Oct 21, 2026",
+      "lastUpdated": "Oct 29, 2026",
       "status": "active",
       "statusLabel": "Active",
       "statusReason": "",
@@ -1340,28 +1340,13 @@
           "datePdf": true
         },
         {
-          "number": "AA",
-          "title": "Iran General License AA",
-          "date": "August 24, 2026",
-          "expires": "October 23, 2026",
-          "url": "https://ofac.treasury.gov/media/936771/download?inline",
-          "datePdf": true
-        },
-        {
-          "number": "EE",
-          "title": "Iran General License EE",
-          "date": "October 8, 2026",
-          "expires": "October 23, 2026",
-          "url": "https://ofac.treasury.gov/media/937096/download?inline",
-          "datePdf": true
-        },
-        {
-          "number": "FF",
-          "title": "Iran General License FF",
+          "number": "1",
+          "title": "Iran General License FF-1",
           "date": "October 15, 2026",
-          "expires": "October 30, 2026",
-          "url": "https://ofac.treasury.gov/media/937246/download?inline",
-          "datePdf": true
+          "expires": "December 1, 2026",
+          "url": "https://ofac.treasury.gov/media/937311/download?inline",
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "GG",
@@ -1369,8 +1354,7 @@
           "date": "October 21, 2026",
           "expires": "November 20, 2026",
           "url": "https://ofac.treasury.gov/media/937266/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "HH",
@@ -1378,8 +1362,7 @@
           "date": "October 21, 2026",
           "expires": "November 20, 2026",
           "url": "https://ofac.treasury.gov/media/937271/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         }
       ]
     },
@@ -2920,30 +2903,27 @@
         },
         {
           "number": "32",
-          "title": "Authorizing Certain Transactions Related to Personal Maintenance of Individuals Who Are U.S. Persons Residing in Venezuela",
+          "title": "Venezuela General License 32",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34101/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "33",
-          "title": "Authorizing Overflight Payments, Emergency Landings, and Air Ambulance Services",
+          "title": "Venezuela General License 33",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34096/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "34A",
-          "title": "Authorizing Transactions Involving Certain Government of Venezuela Persons",
+          "title": "Venezuela General License 34A",
           "date": "September 9, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/25966/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "35",
@@ -2955,48 +2935,43 @@
         },
         {
           "number": "42",
-          "title": "Authorizing Certain Transactions Related to the Negotiation of Certain Settlement Agreements with the IV Venezuelan National Assembly and Certain Other Persons",
+          "title": "Venezuela General License 42",
           "date": "May 1, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/931696/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "45B",
-          "title": "Authorizing Certain Repatriation Transactions Involving Consorcio Venezolano de Industrias Aeronáuticas y Servicios Aéreos, S.A",
+          "title": "Venezuela General License 45B",
           "date": "November 16, 2023",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/932686/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "46E",
-          "title": "Authorizing Certain Activities Involving Venezuelan- Origin Oil or Petrochemical Products",
+          "title": "Venezuela General License 46E",
           "date": "August 27, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936996/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "47B",
-          "title": "Authorizing the Sale of U.S.-Origin Diluents to Venezuela",
+          "title": "Venezuela General License 47B",
           "date": "June 10, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/936811/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "48D",
-          "title": "Authorizing the Supply of Certain Items and Services to Venezuela",
+          "title": "Venezuela General License 48D",
           "date": "August 27, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/937001/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "49B",
@@ -3300,6 +3275,12 @@
   ],
   "ajNews": [
     {
+      "title": "At least 14 people killed in attack on Ukraine train station",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/29/aje-onl-nf_russian-drone-strike-at-dnipro-train-platform-291026?traffic_source=rss",
+      "date": "October 29, 2026",
+      "description": "A Russian drone strike killed at least 14 people at Dnipro’s main railway station in central Ukraine."
+    },
+    {
       "title": "Damascus, Amman contradict each other on attack that killed civilians",
       "url": "https://www.aljazeera.com/features/2026/10/29/damascus-amman-contradict-each-other-on-attack-that-killed-civilians?traffic_source=rss",
       "date": "October 29, 2026",
@@ -3310,12 +3291,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/29/men-pulled-from-vehicle-stranded-by-floods-in-syria?traffic_source=rss",
       "date": "October 29, 2026",
       "description": "This is the moment several men were rescued from their vehicle in Syria after becoming stranded by flash floods."
-    },
-    {
-      "title": "Why is Russia sending fighter jets and air defences to Ethiopia?",
-      "url": "https://www.aljazeera.com/news/2026/10/29/why-is-russia-sending-fighter-jets-and-air-defences-to-ethiopia?traffic_source=rss",
-      "date": "October 29, 2026",
-      "description": "Experts say Moscow is seeking arms revenue and further diplomatic influence."
     }
   ],
   "occNews": [
@@ -3445,10 +3420,10 @@
   ],
   "regionsNews": [
     {
-      "title": "Audio reveals exchanges between control centre and drivers before deadly Spain train crash",
+      "title": "Audio reveals exchanges between Spain train operators and drivers moments before deadly crash",
       "url": "https://www.bbc.co.uk/news/articles/cmqxnl312v34o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 29, 2026",
-      "description": "The recordings appear to show one high-speed train was given clearance to move even though another up ahead had stalled."
+      "description": "The leaked tapes appear to show one high-speed train was given clearance to move at normal speed, even though another up ahead had stalled."
     },
     {
       "title": "Flávio Bolsonaro calls himself 'leader of Brazil' after election loss",
@@ -3533,12 +3508,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cry4x177jlnyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 29, 2026",
       "description": "Sanrio has apologised after its merchandise line with Japanese TV series Vivant drew criticism."
-    },
-    {
-      "title": "Watch: VHS tapes and computers handed to police as Thomas Markle is investigated",
-      "url": "https://www.bbc.co.uk/news/videos/cm0rlxxpng5eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 29, 2026",
-      "description": "The BBC's Jonathan Head is in Cebu, reporting from outside the home where Markle resided."
     },
     {
       "title": "Watch: VHS tapes and computers handed to police as Thomas Markle is investigated",
@@ -3751,16 +3720,16 @@
       "description": "Will farmers want AI tools to help judge when to pick fruit, or is their own intuition enough?"
     },
     {
-      "title": "Your pay, energy bills and savings: How the Budget affects you",
-      "url": "https://www.bbc.co.uk/news/articles/cr0j05vxlwjzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 29, 2026",
-      "description": "Changes announced by Chancellor John Healey in his first Budget will affect your finances directly. Here's how."
-    },
-    {
       "title": "The South West reacts to Budget announcements",
       "url": "https://www.bbc.co.uk/news/articles/cm62yle1g2wyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 29, 2026",
       "description": "Tourism and business leaders have been reacting to John Healey's first Budget as chancellor."
+    },
+    {
+      "title": "Your pay, energy bills and savings: How the Budget affects you",
+      "url": "https://www.bbc.co.uk/news/articles/cr0j05vxlwjzo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 29, 2026",
+      "description": "Changes announced by Chancellor John Healey in his first Budget will affect your finances directly. Here's how."
     },
     {
       "title": "Island Energy: No plans to remove gas standing charge",
@@ -3811,6 +3780,12 @@
       "description": "Many younger people do not believe the state pension will exist when they are older"
     },
     {
+      "title": "Watch: Hundreds queue for city's new Lego store",
+      "url": "https://www.bbc.co.uk/news/videos/cw1m4k1nx5r0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 29, 2026",
+      "description": "Fans queued for hours ahead of the opening of a new Lego Store in Norwich."
+    },
+    {
       "title": "Chancellor says government has 'moral duty' to help young people out of work",
       "url": "https://www.bbc.co.uk/news/videos/c3j47008yl7vo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 29, 2026",
@@ -3835,10 +3810,46 @@
       "description": "The chancellor begins his speech by calling it a Budget for the \"working people of Britain, for British businesses big and small.\""
     },
     {
-      "title": "John Healey pays homage to predecessor Rachel Reeves",
-      "url": "https://www.bbc.co.uk/news/videos/c95ynvr04vgdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 28, 2026",
-      "description": "The chancellor gave respects at the onset of his Autumn Budget speech."
+      "title": "Texas Republican group seeks to block certification of state’s election",
+      "url": "https://www.aljazeera.com/news/2026/10/29/texas-republican-group-seeks-to-block-certification-of-states-election?traffic_source=rss",
+      "date": "October 29, 2026",
+      "description": "Republicans in a Texas county have filed a lawsuit asking for ballots in the state's midterm races to be hand-counted."
+    },
+    {
+      "title": "US Muslims concerned but resilient as ‘hate’ attacks target Abdul El-Sayed",
+      "url": "https://www.aljazeera.com/news/2026/10/29/us-muslims-concerned-but-resilient-as-hate-attacks-target-abdul-el-sayed?traffic_source=rss",
+      "date": "October 29, 2026",
+      "description": "Muslim advocates say the best way to respond to hate is to elect the Democratic candidate in Michigan to US Senate."
+    },
+    {
+      "title": "Finland launches criminal probe of suspected environmental damage by Google",
+      "url": "https://www.aljazeera.com/economy/2026/10/29/finland-launches-criminal-probe-of-suspected-environmental-damage-by-google?traffic_source=rss",
+      "date": "October 29, 2026",
+      "description": "The US tech giant is investing $15bn in a huge new data centre project in northern Finland."
+    },
+    {
+      "title": "Al Jazeera marks 30th anniversary with network overhaul",
+      "url": "https://www.aljazeera.com/news/2026/10/29/al-jazeera-marks-30th-anniversary-with-network-overhaul?traffic_source=rss",
+      "date": "October 29, 2026",
+      "description": "Marking three decades, Al Jazeera unveils a new structure: three channels, 33 programmes, and tech-driven innovation."
+    },
+    {
+      "title": "Albanian opposition storms parliament, sets off flares and smoke bombs",
+      "url": "https://www.aljazeera.com/news/2026/10/29/albanian-opposition-storms-parliament-sets-off-flares-and-smoke-bombs?traffic_source=rss",
+      "date": "October 29, 2026",
+      "description": "Opposition lawmakers disrupt parliament session, accusing prime minister of downplaying ongoing antigovernment protests."
+    },
+    {
+      "title": "Pakistan rights activist Imaan Mazari and husband jailed for 10 years",
+      "url": "https://www.aljazeera.com/news/2026/10/29/pakistan-rights-activist-imaan-mazari-and-husband-jailed-for-10-years?traffic_source=rss",
+      "date": "October 29, 2026",
+      "description": "Couple say they are 'prisoners of conscience' being made an example of by Pakistan's military-backed authorities."
+    },
+    {
+      "title": "UAE sentences eight people to life over arms supplies to Sudan’s army",
+      "url": "https://www.aljazeera.com/news/2026/10/29/uae-sentences-eight-people-to-life-over-arms-supplies-to-sudans-army?traffic_source=rss",
+      "date": "October 29, 2026",
+      "description": "Defendants handed ⁠life sentences amid tensions between Khartoum and Abu Dhabi over Sudan's war and the RSF."
     },
     {
       "title": "France football chief backs Real Madrid’s Mbappe after China apology",
@@ -3929,48 +3940,6 @@
       "url": "https://www.aljazeera.com/sports/2026/10/29/bangladeshs-shadman-islam-hits-100-but-warrican-tops-west-indies-recovery?traffic_source=rss",
       "date": "October 29, 2026",
       "description": "Shadman Islam hits 100, but Jomel Warrican bags five wickets before West Indies end day two of first Test on 134-4."
-    },
-    {
-      "title": "Fighting rages near Yemen’s Taiz as UN urges humanitarian access",
-      "url": "https://www.aljazeera.com/news/2026/10/29/fighting-rages-near-yemens-taiz-as-un-urges-humanitarian-access?traffic_source=rss",
-      "date": "October 29, 2026",
-      "description": "Fighting has forced more than 281,000 people from their homes in Yemen since the beginning of August, the UN said."
-    },
-    {
-      "title": "Afghan farmers pushed to opium farming to make a living",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/29/title-afghan-farmers-pushed-to-opium-farming-to-make-a-living?traffic_source=rss",
-      "date": "October 29, 2026",
-      "description": "Farmers in Afghanistan say they're being pushed into poppy seed cultivation to make a living despite a ban."
-    },
-    {
-      "title": "South Korean prosecutors press for death sentence in Yoon martial law case",
-      "url": "https://www.aljazeera.com/news/2026/10/29/south-korean-prosecutors-press-for-death-sentence-in-yoon-martial-law-case?traffic_source=rss",
-      "date": "October 29, 2026",
-      "description": "Former president faces renewed death penalty demand as he appeals life sentence for insurrection."
-    },
-    {
-      "title": "A week of Israel’s lockdown in Hebron: What’s happened, when will it end?",
-      "url": "https://www.aljazeera.com/news/2026/10/29/a-week-of-israels-lockdown-in-hebron-whats-happened-when-will-it-end?traffic_source=rss",
-      "date": "October 29, 2026",
-      "description": "Israel is imposing a tight siege of Hebron amid raids, home demolitions and displacement."
-    },
-    {
-      "title": "England and Al-Ahli striker Ivan Toney pleads not guilty to club assault",
-      "url": "https://www.aljazeera.com/sports/2026/10/29/england-and-al-ahli-striker-ivan-toney-pleads-not-guilty-to-club-assault?traffic_source=rss",
-      "date": "October 29, 2026",
-      "description": "Footballer Ivan Toney pleads not guilty to allegations he headbutted and punched a man at a London nightclub."
-    },
-    {
-      "title": "King Charles on Caribbean tour as calls grow for slavery reparations",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/29/king-charles-on-caribbean-tour-as-calls-grow-for-slavery-reparations?traffic_source=rss",
-      "date": "October 29, 2026",
-      "description": "UK’s King Charles joined a Junkanoo street parade during a visit to the Bahamas ahead of the Commonwealth summit."
-    },
-    {
-      "title": "Olympic Games: South Africa bids to make Durban host city for 2036 or 2040",
-      "url": "https://www.aljazeera.com/sports/2026/10/29/olympic-games-south-africa-bid-to-make-durban-host-city-for-2036-or-2040?traffic_source=rss",
-      "date": "October 29, 2026",
-      "description": "South Africa names Durban as host city for its 2036 and 2040 bids to bring the Olympics to Africa for the first time."
     }
   ]
 }
