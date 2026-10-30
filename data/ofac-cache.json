@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30T17:08:29.062Z",
+  "updatedAt": "2026-10-30T19:08:25.499Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261029",
@@ -3237,16 +3237,28 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "Ceasefire allows evacuation from devastated Russian-occupied Oleshky",
+      "title": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
+      "url": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 30, 2026",
+      "description": "The cyber-attack, which the company describes as complex, is believed to be the largest ever of its kind."
+    },
+    {
+      "title": "Hundreds evacuated from Russian-occupied Oleshky during rare Ukraine ceasefire",
       "url": "https://www.bbc.co.uk/news/articles/c60me298k1yeo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 30, 2026",
-      "description": "But several hundred people are understood to have decided to stay in the frontline town, despite the lack of gas, electricity and running water."
+      "description": "Hundreds of people are also understood to have stayed in the front-line town, despite the dangers."
     },
     {
       "title": "Prominent Russian newspaper shuts down under pressure from authorities",
       "url": "https://www.bbc.co.uk/news/articles/cmewepdr109do?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 30, 2026",
       "description": "Novaya Gazeta has been one of the most high-profile independent news outlets in Russia over the last three decades."
+    },
+    {
+      "title": "G20 'family photo' cancelled after protests over presence of Russian minister",
+      "url": "https://www.bbc.co.uk/news/articles/cmd6dp2y576do?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 30, 2026",
+      "description": "European foreign ministers refused to be pictured with Sergei Lavrov at the summit being held in Atlanta."
     },
     {
       "title": "Syrians struggle with soaring prices as crisis challenges post-Assad recovery",
@@ -3259,6 +3271,12 @@
       "url": "https://www.bbc.co.uk/news/articles/ck054d5mnzreo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 29, 2026",
       "description": "Machado, who was in exile for nearly a year, said the transition in Venezuela's government would be \"irreversible, organised, pacific\"."
+    },
+    {
+      "title": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
+      "url": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 30, 2026",
+      "description": "The cyber-attack, which the company describes as complex, is believed to be the largest ever of its kind."
     },
     {
       "title": "Crypto giant Binance hit by $6.3bn hack suspected to be largest in history",
@@ -3274,6 +3292,18 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Oman rescues 25 from burning oil tanker in Strait of Hormuz",
+      "url": "https://www.aljazeera.com/news/2026/10/30/oman-rescues-25-from-burning-oil-tanker-in-strait-of-hormuz?traffic_source=rss",
+      "date": "October 30, 2026",
+      "description": "Incident comes as Iran says three oil tankers were halted while attempting to use 'unauthorised routes' to cross Hormuz."
+    },
+    {
+      "title": "Kim Jong Un calls for North Korea’s drone technology superiority",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/30/aje-onl-nf_north-korea-seeks-absolute-superiority-in-drone-301026?traffic_source=rss",
+      "date": "October 30, 2026",
+      "description": "North Korean leader Kim Jong Un calls for “absolute superiority” in drone capabilities."
+    },
     {
       "title": "Swiss foreign minister talks political ties on rare visit to North Korea",
       "url": "https://www.aljazeera.com/news/2026/10/30/swiss-foreign-minister-talks-political-ties-on-rare-visit-to-north-korea?traffic_source=rss",
@@ -3303,24 +3333,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/30/senators-briefed-on-trumps-insane-plan-to-restart-war-on-iran?traffic_source=rss",
       "date": "October 30, 2026",
       "description": "Senator Chris Murphy warns Trump’s reported plan to restart war with Iran could have devastating consequences."
-    },
-    {
-      "title": "Russia back in ice hockey world championships after sport court ruling",
-      "url": "https://www.aljazeera.com/sports/2026/10/30/russia-back-in-ice-hockey-world-championships-after-sport-court-ruling?traffic_source=rss",
-      "date": "October 30, 2026",
-      "description": "Court of Arbitration for Sport overturned IIHF decisions that excluded Russia from events in the 2026-27 season."
-    },
-    {
-      "title": "Binance says $6.3bn stolen in biggest crypto heist in history: What we know",
-      "url": "https://www.aljazeera.com/news/2026/10/30/binance-says-6-3bn-stolen-in-biggest-crypto-heist-in-history-what-we-know?traffic_source=rss",
-      "date": "October 30, 2026",
-      "description": "The world’s largest crypto exchange halts withdrawals as the theft is linked to North Korean hackers."
-    },
-    {
-      "title": "Qatari officials in Iran in bid to revive ceasefire deal with US",
-      "url": "https://www.aljazeera.com/news/2026/10/30/qatari-officials-in-iran-in-bid-to-revive-ceasefire-deal-with-us?traffic_source=rss",
-      "date": "October 30, 2026",
-      "description": "The mediation mission comes amid speculation about a potential resumption of hostilities."
     }
   ],
   "occNews": [
@@ -3461,7 +3473,7 @@
       "description": "The Chicago-born pontiff, who has a tense relationship with Trump, mailed in a ballot for the midterm elections that will decide control of the US Congress."
     },
     {
-      "title": "US tech stocks see sharp falls over AI cost fears",
+      "title": "US tech stocks see sharp falls as AI spending nears $1tn",
       "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 30, 2026",
       "description": "Shares in Intel continue to fall while the tech-heavy Nasdaq opens at its lowest level in more than two months."
@@ -3569,10 +3581,10 @@
       "description": "The defeated presidential candidate says he will lead the opposition from the US."
     },
     {
-      "title": "EU chief lays out vision for new Canada partnership at Montreal summit",
-      "url": "https://www.bbc.co.uk/news/articles/cq8ezj7jylrzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 29, 2026",
-      "description": "Ursula von der Leyen continued to use the term \"associate member\" for Canada despite some opposition of the bloc's members, including Germany."
+      "title": "What's at stake for Trump in the US midterms?",
+      "url": "https://www.bbc.co.uk/news/videos/cq77pm2jmmd5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 30, 2026",
+      "description": "Anthony Zurcher explains how the results of the midterm elections could reshape the rest of Trump's presidency."
     },
     {
       "title": "What we know about Binance's $6.3bn hack",
@@ -3599,18 +3611,6 @@
       "description": "As part of our Voter Voices series, the BBC asked Americans across the country what issue will influence how they vote."
     },
     {
-      "title": "Watch: What leaked audio reveals about Spain train crash",
-      "url": "https://www.bbc.co.uk/news/videos/c6vgjeg0myzgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 29, 2026",
-      "description": "Recordings between a control centre and the train drivers appear to show one train was given clearance to move even though another train had stalled on the track."
-    },
-    {
-      "title": "How Kenyans got caught in $130m US ghost student scam",
-      "url": "https://www.bbc.co.uk/news/articles/cxvgdzpy7241o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 30, 2026",
-      "description": "The alleged scheme used stolen identities to claim US student aid, with Kenyans among those charged."
-    },
-    {
       "title": "Democrats have an identity crisis - it won't be an easy fix",
       "url": "https://www.bbc.co.uk/news/articles/cknv08980d3vo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 30, 2026",
@@ -3621,6 +3621,12 @@
       "url": "https://www.bbc.co.uk/news/articles/ck1l393pyrylo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 29, 2026",
       "description": "A temporary ceasefire has brought rare quiet to Kherson, offering its residents a glimpse of normal life before fighting resumes."
+    },
+    {
+      "title": "How Kenyans got caught in $130m US ghost student scam",
+      "url": "https://www.bbc.co.uk/news/articles/cxvgdzpy7241o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 30, 2026",
+      "description": "The alleged scheme used stolen identities to claim US student aid, with Kenyans among those charged."
     },
     {
       "title": "Many Cubans voted for Trump - now they're turning on Republican immigration policies",
@@ -3635,7 +3641,7 @@
       "description": "Changing family structures in India are driving demand for start-ups offering services for eldercare."
     },
     {
-      "title": "US tech stocks see sharp falls over AI cost fears",
+      "title": "US tech stocks see sharp falls as AI spending nears $1tn",
       "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 30, 2026",
       "description": "Shares in Intel continue to fall while the tech-heavy Nasdaq opens at its lowest level in more than two months."
@@ -3647,22 +3653,28 @@
       "description": "Cyber correspondent Joe Tidy explains more about what is suspected to be the biggest hack in history."
     },
     {
+      "title": "City of London chief tops UK Black Powerlist",
+      "url": "https://www.bbc.co.uk/news/articles/c98rz4pxm4ymo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 30, 2026",
+      "description": "Ian Thomas, who heads the City of London Corporation, tops the Black Powerlist in its 21st year."
+    },
+    {
       "title": "From Levi's to Primark - the fashion chains selling mended clothes",
       "url": "https://www.bbc.co.uk/news/articles/cmwy9qe5r1z3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 30, 2026",
       "description": "A new generation is embracing eye-catching patching and visible mends."
     },
     {
-      "title": "Yorkshire Water boss resigns after firm downgraded",
-      "url": "https://www.bbc.co.uk/news/articles/ckzd623pldqgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 30, 2026",
-      "description": "Nicola Shaw, who has led the company since 2022, will step down in January, it is announced."
-    },
-    {
       "title": "How video game remakes tap the power of nostalgia",
       "url": "https://www.bbc.co.uk/news/articles/cm9qz428nnljo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 30, 2026",
       "description": "Video games are good at triggering nostalgia, a key reason why classic games keep getting remade."
+    },
+    {
+      "title": "Yorkshire Water boss resigns after firm downgraded",
+      "url": "https://www.bbc.co.uk/news/articles/ckzd623pldqgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 30, 2026",
+      "description": "Nicola Shaw, who has led the company since 2022, will step down in January, it is announced."
     },
     {
       "title": "Streeting denies 'kicking can down the road' in defence spending row",
@@ -3875,6 +3887,12 @@
       "description": "Many younger people do not believe the state pension will exist when they are older"
     },
     {
+      "title": "Binance's $6.3bn crypto hack biggest in history",
+      "url": "https://www.bbc.co.uk/news/videos/c6m2dpz0yxn8o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 30, 2026",
+      "description": "Cryptocurrency giant Binance said on Thursday that $6.3bn (£4.7bn) of digital assets have been impacted by what is thought to be the biggest crypto hack on record."
+    },
+    {
       "title": "Who should pay on the first date?",
       "url": "https://www.bbc.co.uk/news/videos/cmpq0g3g2r8zo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 30, 2026",
@@ -3899,10 +3917,34 @@
       "description": "How easy is it to build a business after serving time in jail?"
     },
     {
-      "title": "Three ways the Budget affects you",
-      "url": "https://www.bbc.co.uk/news/videos/cjkgern1yw0lo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 28, 2026",
-      "description": "The BBC's Esyllt Carr explains how the chancellor's spending plans impact young people."
+      "title": "Israel demolishes homes of Palestinians blamed for attack on soldiers",
+      "url": "https://www.aljazeera.com/news/2026/10/30/israel-demolishes-homes-of-palestinians-blamed-for-attack-on-soldiers?traffic_source=rss",
+      "date": "October 30, 2026",
+      "description": "Troops hold at least 12 Palestinians near demolished homes as nearly 5,000 remain displaced from Hebron neighbourhoods"
+    },
+    {
+      "title": "How cuts under Colombia’s de la Espriella threaten a key human rights court",
+      "url": "https://www.aljazeera.com/news/longform/2026/10/30/how-cuts-under-colombias-de-la-espriella-threaten-a-key-human-rights-court?traffic_source=rss",
+      "date": "October 30, 2026",
+      "description": "Colombia's president plans to slash spending on a transitional justice court. But war crimes victims fear the cost."
+    },
+    {
+      "title": "Report reveals campaign promoting racist, Islamophobic, anti-Qatar views",
+      "url": "https://www.aljazeera.com/news/2026/10/30/report-reveals-campaign-promoting-racist-islamophobic-anti-qatar-views?traffic_source=rss",
+      "date": "October 30, 2026",
+      "description": "Investigation finds that years-long operation sought to portray Qatar as driving force behind mass migration to Europe."
+    },
+    {
+      "title": "Barcelona’s Flick praises Yamal’s ‘mentality’ after missing out on Ballon d’Or",
+      "url": "https://www.aljazeera.com/sports/2026/10/30/barcelonas-flick-praises-yamal-mentality-in-missing-out-on-ballon-dor?traffic_source=rss",
+      "date": "October 30, 2026",
+      "description": "Lamine Yamal was tipped for the Golden Ball which went to Harry Kane, but his Barca boss 'proud' of teenager's reaction."
+    },
+    {
+      "title": "Chelsea vs Manchester United: Premier League – teams, prediction, lineups",
+      "url": "https://www.aljazeera.com/sports/2026/10/30/chelsea-vs-manchester-united-premier-league-teams-prediction-lineups?traffic_source=rss",
+      "date": "October 30, 2026",
+      "description": "Manchester United appeared set to sack Michael Carrick this week, but he may have one chance to save his job - at Chelsea."
     },
     {
       "title": "Police in Scotland launch Andrew and Epstein royal castle investigation",
@@ -3981,30 +4023,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/30/irish-government-to-assess-potential-for-united-ireland?traffic_source=rss",
       "date": "October 30, 2026",
       "description": "London has to call a referendum on Irish unity if it appears likely that most Northern Irish voters would ​back it."
-    },
-    {
-      "title": "Sudan RSF commander defects from Hemedti’s forces",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/30/sudan-rsf-commander-defects-from-hemedtis-forces?traffic_source=rss",
-      "date": "October 30, 2026",
-      "description": "Senior Rapid Support Forces commander Siddiq Ander says he has defected, in an exclusive video obtained by Al Jazeera."
-    },
-    {
-      "title": "World number one Rybakina withdraws from Pan Pacific Open with neck injury",
-      "url": "https://www.aljazeera.com/sports/2026/10/30/world-number-one-rybakina-withdraws-from-pan-pacific-open-with-neck-injury?traffic_source=rss",
-      "date": "October 30, 2026",
-      "description": "Elena Rybakina expects to return for next month's WTA Finals in Indian Wells after withdrawing from the Tokyo quarterfinals."
-    },
-    {
-      "title": "Spain’s deadly train crash redraws electoral battle lines",
-      "url": "https://www.aljazeera.com/news/2026/10/30/spains-train-crash-redraws-the-electoral-battle-ahead-of-the-elections?traffic_source=rss",
-      "date": "October 30, 2026",
-      "description": "The tragedy has upended the November 29 election campaign, shifting attention from housing to security."
-    },
-    {
-      "title": "Georgia midterm elections: Why this is a key US battleground",
-      "url": "https://www.aljazeera.com/news/2026/10/30/georgia-midterm-elections-why-this-is-a-key-us-battleground?traffic_source=rss",
-      "date": "October 30, 2026",
-      "description": "Obama and Trump campaign in key battleground state ahead of next week's midterm elections."
     }
   ]
 }
