@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30T15:08:32.577Z",
+  "updatedAt": "2026-10-30T17:08:29.062Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261029",
@@ -3237,10 +3237,10 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "Residents leave devastated Russian-occupied Oleshky as evacuation corridor opens",
+      "title": "Ceasefire allows evacuation from devastated Russian-occupied Oleshky",
       "url": "https://www.bbc.co.uk/news/articles/c60me298k1yeo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 30, 2026",
-      "description": "Several hundred people are understood to have decided to stay in the frontline town, despite the lack of gas, electricity and running water."
+      "description": "But several hundred people are understood to have decided to stay in the frontline town, despite the lack of gas, electricity and running water."
     },
     {
       "title": "Prominent Russian newspaper shuts down under pressure from authorities",
@@ -3261,12 +3261,6 @@
       "description": "Machado, who was in exile for nearly a year, said the transition in Venezuela's government would be \"irreversible, organised, pacific\"."
     },
     {
-      "title": "Russian drone attack on Ukrainian train station kills at least 14, officials say",
-      "url": "https://www.bbc.co.uk/news/articles/c9p8gdlz1p2ko?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 29, 2026",
-      "description": "At least 14 others were wounded in the attack in the central city of Dnipro, including an 11-year-old boy."
-    },
-    {
       "title": "Crypto giant Binance hit by $6.3bn hack suspected to be largest in history",
       "url": "https://www.bbc.co.uk/news/articles/cwg7xp8kx4v5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 30, 2026",
@@ -3280,6 +3274,12 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Swiss foreign minister talks political ties on rare visit to North Korea",
+      "url": "https://www.aljazeera.com/news/2026/10/30/swiss-foreign-minister-talks-political-ties-on-rare-visit-to-north-korea?traffic_source=rss",
+      "date": "October 30, 2026",
+      "description": "Switzerland formally reopens diplomatic office in North Korea after its closure in 2020."
+    },
     {
       "title": "Senators briefed on Trump’s ‘insane’ plan to restart war on Iran",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/10/30/senators-briefed-on-trumps-insane-plan-to-restart-war-on-iran-2?traffic_source=rss",
@@ -3321,18 +3321,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/30/qatari-officials-in-iran-in-bid-to-revive-ceasefire-deal-with-us?traffic_source=rss",
       "date": "October 30, 2026",
       "description": "The mediation mission comes amid speculation about a potential resumption of hostilities."
-    },
-    {
-      "title": "Russia ‘forces’ closure of investigative newspaper Novaya Gazeta",
-      "url": "https://www.aljazeera.com/news/2026/10/30/russia-forces-closure-of-investigative-newspaper-novaya-gazeta?traffic_source=rss",
-      "date": "October 30, 2026",
-      "description": "A symbol of independent journalism, Novaya Gazeta has been classed as a 'foreign agent' by Moscow."
-    },
-    {
-      "title": "US weighs new Iran strikes as Vance reaches out: Is war or a deal closer?",
-      "url": "https://www.aljazeera.com/news/2026/10/30/us-weighs-new-iran-strikes-as-vance-reaches-out-is-war-or-a-deal-closer?traffic_source=rss",
-      "date": "October 30, 2026",
-      "description": "As Washington and Tehran send mixed signals, analysts say trust remains a key obstacle to any deal."
     }
   ],
   "occNews": [
@@ -3467,16 +3455,34 @@
       "description": "Óscar Puente has been facing calls to resign after two high-speed trains collided earlier in the week, killing at least 69 people."
     },
     {
-      "title": "Mushroom murderer fails to overturn convictions in Australian court challenge",
-      "url": "https://www.bbc.co.uk/news/articles/ck8dz8j5n993o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 30, 2026",
-      "description": "Erin Patterson argued her trial was unfair due to seven grounds but three appeal judges dismissed them all."
-    },
-    {
       "title": "Pope Leo XIV becomes first pontiff to vote in a US election",
       "url": "https://www.bbc.co.uk/news/articles/ckwyq2509p7xo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 30, 2026",
       "description": "The Chicago-born pontiff, who has a tense relationship with Trump, mailed in a ballot for the midterm elections that will decide control of the US Congress."
+    },
+    {
+      "title": "US tech stocks see sharp falls over AI cost fears",
+      "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 30, 2026",
+      "description": "Shares in Intel continue to fall while the tech-heavy Nasdaq opens at its lowest level in more than two months."
+    },
+    {
+      "title": "Canada stops using 'avalanche dogs' for rescues in Rocky Mountains, stirring outrage",
+      "url": "https://www.bbc.co.uk/news/articles/cwdd8q8e9e9yo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 30, 2026",
+      "description": "A 55-year-old dog rescue programme that has found missing hikers and children in the Canadian wilderness was axed as part of government budget cuts."
+    },
+    {
+      "title": "Democratic senator blames Egypt press crackdown on US military aid decision",
+      "url": "https://www.bbc.co.uk/news/articles/c63r529wn2vzo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 30, 2026",
+      "description": "Chris Murphy said waiving a human rights condition on aid paved the way for arrests of journalists."
+    },
+    {
+      "title": "Mushroom murderer fails to overturn convictions in Australian court challenge",
+      "url": "https://www.bbc.co.uk/news/articles/ck8dz8j5n993o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 30, 2026",
+      "description": "Erin Patterson argued her trial was unfair due to seven grounds but three appeal judges dismissed them all."
     },
     {
       "title": "Alaska Senate candidate denies knowing about alleged plot to put two Dan Sullivans on ballot",
@@ -3547,7 +3553,7 @@
     {
       "title": "Israeli opposition accuses Netanyahu of trying to 'delegitimise' election",
       "url": "https://www.bbc.co.uk/news/articles/ckdd8qdl9e0eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 29, 2026",
+      "date": "October 30, 2026",
       "description": "The PM's Likud party has alleged foreign interference and said Arab-led parties \"stole\" the election after his coalition lost its majority."
     },
     {
@@ -3567,18 +3573,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cq8ezj7jylrzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 29, 2026",
       "description": "Ursula von der Leyen continued to use the term \"associate member\" for Canada despite some opposition of the bloc's members, including Germany."
-    },
-    {
-      "title": "Philippine police obtain warrant to search Thomas Markle's devices",
-      "url": "https://www.bbc.co.uk/news/articles/cm0j06y3pn75o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 29, 2026",
-      "description": "Images of child sexual abuse allegedly belonging to Meghan's father had reportedly been found in his former home in the Philippines."
-    },
-    {
-      "title": "Rock collapse kills two in Turkey's Cappadocia, local media reports",
-      "url": "https://www.bbc.co.uk/news/articles/cknv08nvzld4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 29, 2026",
-      "description": "One of the region's famous rock formations, known as \"fairy chimneys\", reportedly collapsed outside an open-air museum."
     },
     {
       "title": "What we know about Binance's $6.3bn hack",
@@ -3641,10 +3635,10 @@
       "description": "Changing family structures in India are driving demand for start-ups offering services for eldercare."
     },
     {
-      "title": "US tech stocks see sharp falls over AI cost concerns",
+      "title": "US tech stocks see sharp falls over AI cost fears",
       "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 30, 2026",
-      "description": "Shares in Intel have continued to fall while the tech-heavy Nasdaq opens at its lowest level in more than two months."
+      "description": "Shares in Intel continue to fall while the tech-heavy Nasdaq opens at its lowest level in more than two months."
     },
     {
       "title": "What we know about Binance's $6.3bn hack",
@@ -3911,6 +3905,42 @@
       "description": "The BBC's Esyllt Carr explains how the chancellor's spending plans impact young people."
     },
     {
+      "title": "Police in Scotland launch Andrew and Epstein royal castle investigation",
+      "url": "https://www.aljazeera.com/news/2026/10/30/police-in-scotland-launch-andrew-and-epstein-royal-castle-investigation?traffic_source=rss",
+      "date": "October 30, 2026",
+      "description": "Media reports say the inquiries are related to claims that women were trafficked to the king’s Balmoral estate."
+    },
+    {
+      "title": "Arsenal boss Arteta fires ‘Disneyland’ warning at Dowman after red card",
+      "url": "https://www.aljazeera.com/sports/2026/10/30/arsenal-boss-arteta-fires-disneyland-warning-at-dowman-after-red-card?traffic_source=rss",
+      "date": "October 30, 2026",
+      "description": "Arsenal manager Mikel Arteta says he blasted Max Dowman for red card in shock cup loss at Fleetwood."
+    },
+    {
+      "title": "Jerusalem Daily: Israel’s siege on Hebron displaces thousands",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/30/jerusalem-daily-israels-siege-on-hebron-displaces-thousands?traffic_source=rss",
+      "date": "October 30, 2026",
+      "description": "Israel has announced its final election results, tightened its siege on Hebron, and arrested people returning to Gaza."
+    },
+    {
+      "title": "Trump reverses course, reinstates cancelled campaign rallies",
+      "url": "https://www.aljazeera.com/news/2026/10/30/trump-reverses-course-reinstates-cancelled-campaign-rallies?traffic_source=rss",
+      "date": "October 30, 2026",
+      "description": "The decision marks a sharp reversal after the US president said he didn't feel like he had to hold the events."
+    },
+    {
+      "title": "‘Need a Plan B’: Yemenis in Aden prepare for another war as missiles fall",
+      "url": "https://www.aljazeera.com/news/2026/10/30/need-a-plan-b-yemenis-in-aden-prepare-for-another-war-as-missiles-fall?traffic_source=rss",
+      "date": "October 30, 2026",
+      "description": "As Houthi missiles strike Aden, residents stockpile food and prepare escape plans, fearing a return to all-out war."
+    },
+    {
+      "title": "Israeli forces blow up homes of Palestinians accused of killing soldiers",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/30/israeli-forces-blow-up-homes-of-palestinians-accused-of-killing-soldiers?traffic_source=rss",
+      "date": "October 30, 2026",
+      "description": "Israeli forces demolished the homes of two Palestinians accused of killing two Israeli soldiers in Hebron last week."
+    },
+    {
       "title": "Ethnic cleansing fears rise as Israel squeezes space in Gaza: UN",
       "url": "https://www.aljazeera.com/news/2026/10/30/ethnic-cleansing-fears-rise-as-israel-squeezes-space-in-gaza-un?traffic_source=rss",
       "date": "October 30, 2026",
@@ -3975,36 +4005,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/30/georgia-midterm-elections-why-this-is-a-key-us-battleground?traffic_source=rss",
       "date": "October 30, 2026",
       "description": "Obama and Trump campaign in key battleground state ahead of next week's midterm elections."
-    },
-    {
-      "title": "Palestinian voter turnout exposes Israel’s attitude towards Arab citizens",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/30/palestinian-turnout-exposes-israels-treatment-of-arab-citizens?traffic_source=rss",
-      "date": "October 30, 2026",
-      "description": "The strong Palestinian turnout has exposed how Arab citizens are treated within Israel's democracy, says Xavier Abu Eid."
-    },
-    {
-      "title": "Activists urge Eisenkot to form new Israeli gov’t with Arab parties",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/30/activists-urge-eisenkot-to-form-new-israeli-govt-with-arab-parties?traffic_source=rss",
-      "date": "October 30, 2026",
-      "description": "Israeli activists rally outside opposition leader Eisenkot’s home, urging him to join forces with Arab parties after ele"
-    },
-    {
-      "title": "How can Israel break its election deadlock?",
-      "url": "https://www.aljazeera.com/news/2026/10/30/how-can-israel-break-its-election-deadlock?traffic_source=rss",
-      "date": "October 30, 2026",
-      "description": "No political party has achieved the 61-seat majority required in the Knesset to form a government in Israel."
-    },
-    {
-      "title": "Aid convoy enters besieged Ukrainian town Oleshky",
-      "url": "https://www.aljazeera.com/news/2026/10/30/aid-convoy-enters-besieged-ukrainian-town-oleshky?traffic_source=rss",
-      "date": "October 30, 2026",
-      "description": "Moscow and Kyiv have so far observed the six-day truce as evacuations from Oleshky get under way."
-    },
-    {
-      "title": "On the US border in Texas, Trump deportation drive galvanises midterm vote",
-      "url": "https://www.aljazeera.com/news/2026/10/30/on-the-us-border-in-texas-trump-deportation-drive-galvanises-midterm-vote?traffic_source=rss",
-      "date": "October 30, 2026",
-      "description": "Border issues helped propel Trump in the Rio Grande Valley in 2024. His deportation policies could bury Republicans."
     }
   ]
 }
