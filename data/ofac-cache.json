@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-31T15:08:37.907Z",
+  "updatedAt": "2026-10-31T17:08:29.418Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261029",
@@ -3237,22 +3237,22 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "Evacuees from Russia-occupied city where residents ate weeds arrive in Ukraine",
+      "title": "Ukrainian evacuees reunite with family after years trapped in Russia-occupied city",
       "url": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 31, 2026",
-      "description": "Residents left the devastated city on Friday following a ceasefire brokered by US First Lady Melania Trump."
+      "description": "Oleshky residents had been without food, water and electricity, with many resorting to cooking garden weeds to survive."
+    },
+    {
+      "title": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
+      "url": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 31, 2026",
+      "description": "Two analytics firms say they have robust intelligence pointing to a North Korean state-backed group as the likely culprit."
     },
     {
       "title": "US approves sale of 500 Patriot missiles to Ukraine",
       "url": "https://www.bbc.co.uk/news/articles/c3vgxznlx7jzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 31, 2026",
       "description": "The American-made interceptors are the only effective weapon for downing Russia's ballistic missiles."
-    },
-    {
-      "title": "Why North Korea's 'elite' hackers are the prime suspect in major Binance hack",
-      "url": "https://www.bbc.co.uk/news/articles/ck9dz3v7z7v3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 31, 2026",
-      "description": "If the accusations are true, the record-making heist shows how powerful suspected North Korean hackers have become."
     },
     {
       "title": "G20 'family photo' cancelled after protests over presence of Russian minister",
@@ -3277,6 +3277,12 @@
       "url": "https://www.bbc.co.uk/news/videos/cmp3gp2vg078o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 30, 2026",
       "description": "Ukraine correspondent Dan Johnson explains the temporary ceasefire in the devastated town of Oleshky."
+    },
+    {
+      "title": "Why North Korea's 'elite' hackers are the prime suspect in major Binance hack",
+      "url": "https://www.bbc.co.uk/news/articles/ck9dz3v7z7v3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 31, 2026",
+      "description": "If the accusations are true, the record-making heist shows how powerful suspected North Korean hackers have become."
     },
     {
       "title": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
@@ -3333,12 +3339,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/31/hundreds-from-russian-occupied-oleshky-land-in-belarus-en-route-to-ukraine?traffic_source=rss",
       "date": "October 31, 2026",
       "description": "Four planes transporting evacuees from the war-ravaged city arrived in Belarus's Gomel earlier on Saturday."
-    },
-    {
-      "title": "Can Democrats win the US Senate? 10 key midterm races to watch",
-      "url": "https://www.aljazeera.com/news/2026/10/31/can-democrats-win-the-us-senate-10-key-midterm-races-to-watch?traffic_source=rss",
-      "date": "October 31, 2026",
-      "description": "From Texas to Maine, rising prices and the Iran war put key Senate races in play as Democrats fight for control."
     }
   ],
   "occNews": [],
@@ -3442,22 +3442,28 @@
   ],
   "regionsNews": [
     {
+      "title": "More than 5,000 die from Ebola in DR Congo's deadliest outbreak",
+      "url": "https://www.bbc.co.uk/news/articles/cj5ynryyep2yo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 31, 2026",
+      "description": "Government data shows that more than 10,000 people have contracted the rare virus."
+    },
+    {
       "title": "Police deployed during stand-off over control of top Poland court",
       "url": "https://www.bbc.co.uk/news/articles/crz9824d5e88o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 31, 2026",
       "description": "The escalation came after the government suspended two senior justices and moved to bring criminal charges against them."
     },
     {
-      "title": "Spain train disaster clouds Sánchez chances of re-election",
-      "url": "https://www.bbc.co.uk/news/articles/cmeweppr990qo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 31, 2026",
-      "description": "The Spanish PM is hit by a succession of crises just weeks before a snap general election."
-    },
-    {
       "title": "Ethiopian PM puts ministers through military training",
       "url": "https://www.bbc.co.uk/news/articles/cmwyv2y7g9l8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 31, 2026",
       "description": "The prime minister has previously emphasised military preparedness as central to his government's ambitions."
+    },
+    {
+      "title": "Spain train disaster clouds Sánchez chances of re-election",
+      "url": "https://www.bbc.co.uk/news/articles/cmeweppr990qo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 31, 2026",
+      "description": "The Spanish PM is hit by a succession of crises just weeks before a snap general election."
     },
     {
       "title": "Global nature talks reach deal but money remains an issue",
@@ -3572,12 +3578,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cknv08980d3vo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 30, 2026",
       "description": "Whatever the result of the midterm elections, the party is facing tough questions over what they stand for and who should represent them."
-    },
-    {
-      "title": "Many Cubans voted for Trump - now they're turning on Republican immigration policies",
-      "url": "https://www.bbc.co.uk/news/articles/c574p7z1xm8wo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 30, 2026",
-      "description": "President Trump's fellow Republicans might feel the brunt of frustration among Cubans at the ballot box, writes the BBC's Will Grant."
     },
     {
       "title": "US tech stocks see sharp falls as AI spending nears $1tn",
@@ -3862,6 +3862,24 @@
       "description": "How easy is it to build a business after serving time in jail?"
     },
     {
+      "title": "Thousands rally in Berlin as Gen Z plans protests in 30 German cities",
+      "url": "https://www.aljazeera.com/news/2026/10/31/thousands-rally-in-berlin-as-gen-z-plans-protests-in-30-german-cities?traffic_source=rss",
+      "date": "October 31, 2026",
+      "description": "Demonstrations sweeping Europe are inspiring young Germans frustrated by rising costs of living amid military spending."
+    },
+    {
+      "title": "South Africa hammer Australia as Harmer takes career best bowling of 6-16",
+      "url": "https://www.aljazeera.com/sports/2026/10/31/south-africa-hammer-australia-as-harmer-takes-career-best-bowling-of-6-16?traffic_source=rss",
+      "date": "October 31, 2026",
+      "description": "Simon Harmer picked a career-best 6-16 as South Africa beat Australia by 176 runs to clinch Test series 2-1."
+    },
+    {
+      "title": "Chelsea beat Man United as Martinez sent off to pile pressure on Carrick",
+      "url": "https://www.aljazeera.com/sports/2026/10/31/chelsea-beat-man-united-as-martinez-sees-red-for-crazy-moment-in-thriller?traffic_source=rss",
+      "date": "October 31, 2026",
+      "description": "Goals from Morgan Rogers and Cole Palmer give Chelsea a 2-0 win over Manchester United in the Premier League."
+    },
+    {
       "title": "Israel voted for Israel: Why Gaza wasn’t on the ballot",
       "url": "https://www.aljazeera.com/news/2026/10/31/israel-voted-for-israel-why-gaza-wasnt-on-the-ballot?traffic_source=rss",
       "date": "October 31, 2026",
@@ -3956,18 +3974,6 @@
       "url": "https://www.aljazeera.com/news/2026/10/31/how-ambanis-jio-became-indias-second-largest-company?traffic_source=rss",
       "date": "October 31, 2026",
       "description": "Jio makes India’s largest-ever stock market debut, raising $3.2bn in IPO."
-    },
-    {
-      "title": "‘Paycheck to paycheck’: Texas border voters shed parties amid economic woes",
-      "url": "https://www.aljazeera.com/news/2026/10/31/paycheck-to-paycheck-texas-border-voters-shed-parties-amid-economic-woes?traffic_source=rss",
-      "date": "October 31, 2026",
-      "description": "Voters reassess 2024 swing towards Trump as Republicans and Democrats grapple for Rio Grande Valley votes."
-    },
-    {
-      "title": "Education under fire: Gaza’s children face death on their way to school",
-      "url": "https://www.aljazeera.com/features/2026/10/31/education-under-fire-gazas-children-face-death-on-their-way-to-school?traffic_source=rss",
-      "date": "October 31, 2026",
-      "description": "Children have faced Israeli bombs and sniper fire since the academic year resumed in Gaza."
     }
   ]
 }
