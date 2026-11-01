@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T19:08:29.968Z",
+  "updatedAt": "2026-11-01T21:08:29.551Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261029",
@@ -3237,6 +3237,12 @@
   "unNotices": [],
   "bbcNews": [
     {
+      "title": "Russian strikes cut power to thousands in Ukraine as Kherson ceasefire expires",
+      "url": "https://www.bbc.co.uk/news/articles/c64g1y90p71eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 1, 2026",
+      "description": "A rare humanitarian ceasefire allowed civilians to evacuate the Russian-occupied city of Oleshky."
+    },
+    {
       "title": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
       "url": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 1, 2026",
@@ -3292,6 +3298,12 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "How will the Iran war shape the outcome of the US midterm vote?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/11/1/how-will-the-iran-war-shape-the-outcome-of-the-u-s-midterm-vote?traffic_source=rss",
+      "date": "November 1, 2026",
+      "description": "The conflict has become a central issue ahead of Tuesday's polls."
+    },
     {
       "title": "Russia detains minor over alleged Moscow attack plot after US warning",
       "url": "https://www.aljazeera.com/news/2026/11/1/russia-detains-minor-over-alleged-moscow-attack-plot-after-us-warning?traffic_source=rss",
@@ -3419,12 +3431,6 @@
   ],
   "regionsNews": [
     {
-      "title": "Shops looted as German cost-of-living protests turn violent",
-      "url": "https://www.bbc.co.uk/news/articles/cqj34gnd3n30o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 1, 2026",
-      "description": "The protests in cities across Germany - including Berlin, Hamburg and Frankfurt - came on the same day hundreds of thousands also protested in France."
-    },
-    {
       "title": "Israeli strikes in Gaza kill eight including child, hospitals say",
       "url": "https://www.bbc.co.uk/news/articles/cmqln14rrzxvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 1, 2026",
@@ -3437,6 +3443,12 @@
       "description": "Marta Shahbazi was an \"inspiring, talented and passionate scientist\", says the laboratory where she worked."
     },
     {
+      "title": "Shops looted as German cost-of-living protests turn violent",
+      "url": "https://www.bbc.co.uk/news/articles/cqj34gnd3n30o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 1, 2026",
+      "description": "The protests in cities across Germany - including Berlin, Hamburg and Frankfurt - came on the same day hundreds of thousands also protested in France."
+    },
+    {
       "title": "Armed police start patrols in Sydney after Bondi Beach attack",
       "url": "https://www.bbc.co.uk/news/articles/c9kgj7k7ry0ro?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 1, 2026",
@@ -3446,7 +3458,7 @@
       "title": "Democrat endorses Republican candidate in key Michigan Senate race as party spat escalates",
       "url": "https://www.bbc.co.uk/news/articles/c95ynzv88n68o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 1, 2026",
-      "description": "Haley Stevens, a former congresswomen who lost out on the Democratic nomination to Abdul El-Sayed, endorses his opponent days before the vote."
+      "description": "Haley Stevens, who lost out on the Democratic Senate nomination to Abdul El-Sayed, endorses his opponent days before the vote."
     },
     {
       "title": "India's opposition holds mega rally seeking election chief's resignation",
@@ -3857,6 +3869,42 @@
       "description": "How easy is it to build a business after serving time in jail?"
     },
     {
+      "title": "Al Jazeera Director General hails 30 years of groundbreaking news",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/al-jazeera-director-general-hails-30-years-of-groundbreaking-news?traffic_source=rss",
+      "date": "November 1, 2026",
+      "description": "Al Jazeera has marked 30 years since its first broadcast in 1996, with a ceremony in Doha attended by Qatar’s Emir."
+    },
+    {
+      "title": "Bulgaria’s acting President Iotova leads in run-off exit polls",
+      "url": "https://www.aljazeera.com/news/2026/11/1/bulgarian-president-yotova-leads-runoff-exit-polls-show?traffic_source=rss",
+      "date": "November 1, 2026",
+      "description": "Iliana Iotova would become the nation’s first elected female president if results confirm her win on Monday."
+    },
+    {
+      "title": "Police clash with housing crisis protesters in Portugal",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/police-clash-with-housing-crisis-protesters-in-portugal?traffic_source=rss",
+      "date": "November 1, 2026",
+      "description": "Police clash with housing crisis protesters in Portugal"
+    },
+    {
+      "title": "Al Jazeera celebrates 30th anniversary",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/al-jazeera-celebrates-30th-anniversary?traffic_source=rss",
+      "date": "November 1, 2026",
+      "description": "Since its first broadcast in 1996, Al Jazeera has spent three decades bringing stories to audiences worldwide."
+    },
+    {
+      "title": "Video captures house collapsing due to Ecuador floods",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/video-captures-house-collapsing-due-to-ecuador-floods?traffic_source=rss",
+      "date": "November 1, 2026",
+      "description": "Residents filmed as a house collapsed into a swollen river in Ecuador, where torrential rains and floods linked to El N"
+    },
+    {
+      "title": "Arsenal go top after narrow win at Liverpool",
+      "url": "https://www.aljazeera.com/sports/2026/11/1/arsenal-go-top-after-narrow-win-at-liverpool?traffic_source=rss",
+      "date": "November 1, 2026",
+      "description": "Arsenal pick up their first win at Anfield since 2012 to go three points clear of Man City"
+    },
+    {
       "title": "France opens ‘attempted murder’ probe into petrol bomb attacks on police",
       "url": "https://www.aljazeera.com/news/2026/11/1/france-opens-attempted-murder-probe-into-molotov-attacks-on-police?traffic_source=rss",
       "date": "November 1, 2026",
@@ -3957,48 +4005,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/1/why-is-morocco-celebrating-the-defeat-of-a-un-resolution-on-western-sahara?traffic_source=rss",
       "date": "November 1, 2026",
       "description": "Mandate expires for UN mission tasked to monitor 1991 truce and hold a referendum in the disputed territory."
-    },
-    {
-      "title": "Israel election: When will government be formed, who will lead it?",
-      "url": "https://www.aljazeera.com/news/2026/11/1/israel-election-when-will-government-be-formed-who-will-lead-it?traffic_source=rss",
-      "date": "November 1, 2026",
-      "description": "President Herzog must tap candidate to form new government by November 11, with fraught negotiations likely to follow."
-    },
-    {
-      "title": "Israeli attacks on Gaza kill at least nine people",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/israeli-attacks-on-gaza-kill-at-least-nine-people?traffic_source=rss",
-      "date": "November 1, 2026",
-      "description": "Israeli attacks on Gaza City and Khan Younis killed at least nine people on Sunday."
-    },
-    {
-      "title": "Macklemore concludes ‘Free Palestine’ tour with solidarity message",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/macklemore-concludes-free-palestine-tour-with-solidarity-message?traffic_source=rss",
-      "date": "November 1, 2026",
-      "description": "Macklemore’s ‘Free Palestine’ tour ended with a sold-out show in London."
-    },
-    {
-      "title": "Ireland’s European athletics champion Ciara Mageean dies aged 34",
-      "url": "https://www.aljazeera.com/sports/2026/11/1/irelands-european-athletics-champion-ciara-mageean-dies-aged-34?traffic_source=rss",
-      "date": "November 1, 2026",
-      "description": "Mageean, runner who competed at two Olympic Games, lost her battle with cancer a year after revealing her diagnosis."
-    },
-    {
-      "title": "US midterms live: Democrat Stevens endorses el-Sayed’s rival in Senate race",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/11/1/us-midterms-live-last-ditch-efforts-ahead-of-tuesdays-elections?traffic_source=rss",
-      "date": "November 1, 2026",
-      "description": "All 435 seats in the House of Representatives and 35 of the Senate’s 100 seats are being contested on Tuesday."
-    },
-    {
-      "title": "At least eight Palestinians killed in Israeli attacks across Gaza",
-      "url": "https://www.aljazeera.com/news/2026/11/1/at-least-eight-palestinians-killed-in-israeli-attacks-across-gaza?traffic_source=rss",
-      "date": "November 1, 2026",
-      "description": "Four-year-old among eight Palestinians killed in Israeli drone attacks across the Gaza Strip."
-    },
-    {
-      "title": "Liverpool vs Arsenal live: Premier League",
-      "url": "https://www.aljazeera.com/sports/liveblog/2026/11/1/liverpool-vs-arsenal-live-premier-league?traffic_source=rss",
-      "date": "November 1, 2026",
-      "description": "Follow updates, build-up and team news from our live text commentary stream, with Martin Odegaard headlining."
     }
   ]
 }
