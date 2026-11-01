@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T13:08:22.666Z",
+  "updatedAt": "2026-11-01T15:08:26.292Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261029",
@@ -3293,6 +3293,12 @@
   ],
   "ajNews": [
     {
+      "title": "Iran and US explore diplomacy amid rising threats of war",
+      "url": "https://www.aljazeera.com/news/2026/11/1/iran-and-us-explore-diplomacy-amid-rising-threats-of-war?traffic_source=rss",
+      "date": "November 1, 2026",
+      "description": "Iran says could reopen Hormuz in shorter period if conditions met, as Trump says US still has targets to 'take care of'."
+    },
+    {
       "title": "Binance restarts withdrawals after $6.3bn heist",
       "url": "https://www.aljazeera.com/news/2026/11/1/binance-restarts-withdrawals-after-6-3bn-heist?traffic_source=rss",
       "date": "November 1, 2026",
@@ -3303,18 +3309,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/1/mediators-continue-us-iran-negotiations-amid-war-rhetoric-what-we-know?traffic_source=rss",
       "date": "November 1, 2026",
       "description": "Trump says latest talks 'going fine'; Iranian leaders say they favour diplomacy but are ready to respond to US attacks."
-    },
-    {
-      "title": "Trump at Halloween party ‘as himself’ says he’s ‘in no hurry’ with Iran",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/trump-at-halloween-party-as-himself-says-hes-in-no-hurry-with-iran?traffic_source=rss",
-      "date": "November 1, 2026",
-      "description": "Trump, who came to his Halloween party dressed as himself, says US not in a hurry to make a decision on striking Iran."
-    },
-    {
-      "title": "Iran security chief says US letter signals ‘positive’ shift",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/iran-security-chief-says-us-letter-signals-positive-shift?traffic_source=rss",
-      "date": "November 1, 2026",
-      "description": "US Vice-President JD Vance has sent a letter to Iran’s security chief in a reported effort to revive talks."
     }
   ],
   "occNews": [
@@ -3337,7 +3331,36 @@
       "description": "The Office of the Comptroller of the Currency (OCC) today announced a cease-and-desist order and a $350 million civil money penalty against American Express National Bank, Sandy, Utah (bank), for deficiencies in the bank's Bank Secrecy Act (BSA) and anti-money laundering (AML) compliance program."
     }
   ],
-  "economicsNews": [],
+  "economicsNews": [
+    {
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "date": "October 28, 2026",
+      "description": "Federal Reserve issues FOMC statement",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
+      "date": "October 13, 2026",
+      "description": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
+      "date": "October 7, 2026",
+      "description": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "date": "September 16, 2026",
+      "description": "Federal Reserve issues FOMC statement",
+      "category": "Monetary Policy"
+    }
+  ],
   "bisNews": [
     {
       "title": "Order Renewing Order Temporarily Denying Export Privileges",
@@ -3408,7 +3431,7 @@
   ],
   "regionsNews": [
     {
-      "title": "Shops looted as German cost of living protests turn violent",
+      "title": "Shops looted as German cost-of-living protests turn violent",
       "url": "https://www.bbc.co.uk/news/articles/cqj34gnd3n30o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 1, 2026",
       "description": "The protests in cities across Germany - including Berlin, Hamburg and Frankfurt - came on the same day hundreds of thousands also protested in France."
@@ -3726,7 +3749,7 @@
       "description": "Will farmers want AI tools to help judge when to pick fruit, or is their own intuition enough?"
     },
     {
-      "title": "Shops looted as German cost of living protests turn violent",
+      "title": "Shops looted as German cost-of-living protests turn violent",
       "url": "https://www.bbc.co.uk/news/articles/cqj34gnd3n30o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 1, 2026",
       "description": "The protests in cities across Germany - including Berlin, Hamburg and Frankfurt - came on the same day hundreds of thousands also protested in France."
@@ -3816,6 +3839,78 @@
       "description": "How easy is it to build a business after serving time in jail?"
     },
     {
+      "title": "Why is Morocco celebrating the defeat of a UN resolution on Western Sahara?",
+      "url": "https://www.aljazeera.com/news/2026/11/1/why-is-morocco-celebrating-the-defeat-of-a-un-resolution-on-western-sahara?traffic_source=rss",
+      "date": "November 1, 2026",
+      "description": "Mandate expires for UN mission tasked to monitor 1991 truce and hold a referendum in the disputed territory."
+    },
+    {
+      "title": "Israel election: When will government be formed, who will lead it?",
+      "url": "https://www.aljazeera.com/news/2026/11/1/israel-election-when-will-government-be-formed-who-will-lead-it?traffic_source=rss",
+      "date": "November 1, 2026",
+      "description": "President Herzog must tap candidate to form new government by November 11, with fraught negotiations likely to follow."
+    },
+    {
+      "title": "Israeli attacks on Gaza kill at least nine people",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/israeli-attacks-on-gaza-kill-at-least-nine-people?traffic_source=rss",
+      "date": "November 1, 2026",
+      "description": "Israeli attacks on Gaza City and Khan Younis killed at least nine people on Sunday."
+    },
+    {
+      "title": "Macklemore concludes ‘Free Palestine’ tour with solidarity message",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/macklemore-concludes-free-palestine-tour-with-solidarity-message?traffic_source=rss",
+      "date": "November 1, 2026",
+      "description": "Macklemore’s ‘Free Palestine’ tour ended with a sold-out show in London."
+    },
+    {
+      "title": "Ireland’s European athletics champion Ciara Mageean dies aged 34",
+      "url": "https://www.aljazeera.com/sports/2026/11/1/irelands-european-athletics-champion-ciara-mageean-dies-aged-34?traffic_source=rss",
+      "date": "November 1, 2026",
+      "description": "Mageean, runner who competed at two Olympic Games, lost her battle with cancer a year after revealing her diagnosis."
+    },
+    {
+      "title": "US midterms live: Trump, Democrats in last-ditch efforts before polls",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/11/1/us-midterms-live-last-ditch-efforts-ahead-of-tuesdays-elections?traffic_source=rss",
+      "date": "November 1, 2026",
+      "description": "All 435 seats in the House of Representatives and 35 of the Senate’s 100 seats are being contested on Tuesday."
+    },
+    {
+      "title": "At least eight Palestinians killed in Israeli attacks across Gaza",
+      "url": "https://www.aljazeera.com/news/2026/11/1/at-least-eight-palestinians-killed-in-israeli-attacks-across-gaza?traffic_source=rss",
+      "date": "November 1, 2026",
+      "description": "Four-year-old among eight Palestinians killed in Israeli drone attacks across the Gaza Strip."
+    },
+    {
+      "title": "Liverpool vs Arsenal live: Premier League",
+      "url": "https://www.aljazeera.com/sports/liveblog/2026/11/1/liverpool-vs-arsenal-live-premier-league?traffic_source=rss",
+      "date": "November 1, 2026",
+      "description": "Follow updates, build-up and team news from our live text commentary stream, with Martin Odegaard headlining."
+    },
+    {
+      "title": "More than 50 million votes cast in US midterm elections: What does it mean?",
+      "url": "https://www.aljazeera.com/news/2026/11/1/more-than-50-million-votes-cast-in-us-midterm-elections-what-does-it-mean?traffic_source=rss",
+      "date": "November 1, 2026",
+      "description": "A record number of early votes is cast as both parties campaign before Tuesday's polls."
+    },
+    {
+      "title": "Palestinians in Lebanon suffering worsened by high energy prices, inflation",
+      "url": "https://www.aljazeera.com/features/2026/11/1/palestinians-in-lebanon-suffering-worsened-by-high-energy-prices-inflation?traffic_source=rss",
+      "date": "November 1, 2026",
+      "description": "As one of Lebanon's most vulnerable communities, Palestinians are struggling to make ends meet."
+    },
+    {
+      "title": "Qatar unveils countdown clock for 2027 Basketball World Cup",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/qatar-unveils-countdown-clock-for-2027-basketball-world-cup?traffic_source=rss",
+      "date": "November 1, 2026",
+      "description": "There's now fewer than 300 days until the 2027 FIBA Basketball World Cup in Qatar."
+    },
+    {
+      "title": "Michigan race: All you need to know about Abdul El-Sayed v Mike Rogers",
+      "url": "https://www.aljazeera.com/news/2026/11/1/michigan-race-all-you-need-to-know-about-abdul-el-sayed-v-mike-rogers?traffic_source=rss",
+      "date": "November 1, 2026",
+      "description": "Al Jazeera examines the crucial US Senate race in Michigan, including candidate positions and largest spenders."
+    },
+    {
       "title": "Senegal kicks off the Youth Games 2026",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/senegal-kicks-off-the-youth-games-2026?traffic_source=rss",
       "date": "November 1, 2026",
@@ -3825,7 +3920,7 @@
       "title": "Yamaha pulls out of Qatar MotoGP over ‘situation in the Middle East’",
       "url": "https://www.aljazeera.com/sports/2026/11/1/yamaha-pulls-out-of-qatar-motogp-over-situation-in-the-middle-east?traffic_source=rss",
       "date": "November 1, 2026",
-      "description": "MotoGP says Yamaha's non-participation at the November 6–8 event in Lusail 'carries sporting implications'."
+      "description": "MotoGP says Yamaha's lack of participation at next weekend's event in Lusail 'carries sporting implications'."
     },
     {
       "title": "Fire engulfs hotel in Nepal along Everest Base Camp route",
@@ -3874,72 +3969,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/1/yemeni-government-forces-seize-strategic-positions-in-al-jawf?traffic_source=rss",
       "date": "November 1, 2026",
       "description": "Weapons and ammunition depots are seized after a counteroffensive."
-    },
-    {
-      "title": "From railway tragedy to gov’t change: Serbia’s two-year fight for justice",
-      "url": "https://www.aljazeera.com/news/2026/11/1/from-railway-tragedy-to-govt-change-serbias-two-year-fight-for-justice?traffic_source=rss",
-      "date": "November 1, 2026",
-      "description": "A timeline of events since the deadly train station collapse in Novi Sad, which led to a change of government in Serbia."
-    },
-    {
-      "title": "Did a secret book fuel a witch-hunting frenzy in Europe?",
-      "url": "https://www.aljazeera.com/video/deja-vu-2/2026/11/1/did-a-secret-book-fuel-a-witch-hunting-frenzy-in-europe?traffic_source=rss",
-      "date": "November 1, 2026",
-      "description": "In the latest episode of Deja Vu, we trace how new media fuelled conspiracy theories, from European witch-hunts to AI."
-    },
-    {
-      "title": "Marquez wins Malaysian Grand Prix to close in on retaining championship",
-      "url": "https://www.aljazeera.com/sports/2026/11/1/marquez-wins-malaysian-grand-prix-to-close-in-on-retaining-championship?traffic_source=rss",
-      "date": "November 1, 2026",
-      "description": "Marc Marquez takes 44-point lead over Jorge Martin and can seal the MotoGP title in Qatar next weekend."
-    },
-    {
-      "title": "Israeli protesters urge Jewish-Arab coalition government",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/israeli-protesters-urge-jewish-arab-coalition-government?traffic_source=rss",
-      "date": "November 1, 2026",
-      "description": "Israeli protesters urge Jewish-Arab coalition government"
-    },
-    {
-      "title": "Malawi cattle farmers travel farther as El Nino worsens drought",
-      "url": "https://www.aljazeera.com/news/2026/11/1/malawi-cattle-farmers-travel-farther-as-el-nino-worsens-drought?traffic_source=rss",
-      "date": "November 1, 2026",
-      "description": "For many families, keeping cattle alive is becoming an increasingly costly struggle."
-    },
-    {
-      "title": "Lamine Yamal, Raphinha help Barcelona hammer Alaves to retain Liga top spot",
-      "url": "https://www.aljazeera.com/sports/2026/11/1/lamine-yamal-raphinha-help-barcelona-hammer-alaves-to-retain-liga-top-spot?traffic_source=rss",
-      "date": "November 1, 2026",
-      "description": "Yamal and Raphinha score two goals each as Barcelona recover from last week's loss in El Clasico to move back on top."
-    },
-    {
-      "title": "Where are the most expensive midterm races and who is funding them?",
-      "url": "https://www.aljazeera.com/economy/2026/11/1/where-are-the-most-expensive-midterm-races-and-who-is-funding-them?traffic_source=rss",
-      "date": "November 1, 2026",
-      "description": "Senate races in Texas, Michigan and Ohio rank among the most expensive in this year's midterm cycle."
-    },
-    {
-      "title": "F1: Hamilton takes first Ferrari pole; Antonelli starts fourth in Mexico",
-      "url": "https://www.aljazeera.com/sports/2026/11/1/f1-hamilton-takes-first-ferrari-pole-antonelli-starts-fourth-in-mexico?traffic_source=rss",
-      "date": "November 1, 2026",
-      "description": "George Russell is second fastest and Charles Leclerc third while reigning champion Lando Norris qualifies sixth."
-    },
-    {
-      "title": "US midterms: 2 days to go – Who leads in the polls as Trump rallies",
-      "url": "https://www.aljazeera.com/news/2026/11/1/us-midterms-2-days-to-go-what-polls-say-as-trump-el-sayed-hit-the-trail?traffic_source=rss",
-      "date": "November 1, 2026",
-      "description": "Democrats remain ahead in national polls as Trump and candidates make their final push in the days before polling day."
-    },
-    {
-      "title": "Mamdani says Trump to grant visa to mother of boy killed in Bronx shooting",
-      "url": "https://www.aljazeera.com/news/2026/11/1/mamdani-says-trump-to-grant-visa-to-mother-of-boy-killed-in-bronx-shooting?traffic_source=rss",
-      "date": "November 1, 2026",
-      "description": "New York City mayor says US president 'has agreed to grant her visa immediately'."
-    },
-    {
-      "title": "Bangladesh forms wage board as garment workers protest",
-      "url": "https://www.aljazeera.com/news/2026/11/1/bangladesh-forms-wage-board-amid-garment-worker-protests?traffic_source=rss",
-      "date": "November 1, 2026",
-      "description": "Demonstrations held in industrial cities as workers demand wage increase as cost of living rises."
     }
   ]
 }
