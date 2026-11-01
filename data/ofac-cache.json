@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T17:08:29.518Z",
+  "updatedAt": "2026-11-01T19:08:29.968Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261029",
@@ -3237,22 +3237,16 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "'We came back from hell', say Ukrainians after years in Russia-occupied front-line city",
-      "url": "https://www.bbc.co.uk/news/articles/cqglw3k7djp1o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 31, 2026",
-      "description": "One evacuated couple says they crossed minefields in Oleshky in search of food."
+      "title": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
+      "url": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 1, 2026",
+      "description": "The Federal Bureau of Investigation (FBI) says North Korea was responsible for the hack."
     },
     {
       "title": "Ukrainian evacuees reunite with family after years trapped in Russia-occupied city",
       "url": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 31, 2026",
       "description": "Oleshky residents had been without food, water and electricity, with many resorting to cooking garden weeds to survive."
-    },
-    {
-      "title": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
-      "url": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 1, 2026",
-      "description": "The Federal Bureau of Investigation (FBI) says North Korea was responsible for the hack."
     },
     {
       "title": "G20 'family photo' cancelled after protests over presence of Russian minister",
@@ -3265,6 +3259,12 @@
       "url": "https://www.bbc.co.uk/news/videos/cmy83w0jwznpo?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 31, 2026",
       "description": "The BBC's Dan Johnson travelled to the northern Ukrainian border with Belarus after evacuated Oleshky residents arrived in buses and ambulances following a temporary ceasefire."
+    },
+    {
+      "title": "'We came back from hell', say Ukrainians after years in Russia-occupied front-line city",
+      "url": "https://www.bbc.co.uk/news/articles/cqglw3k7djp1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "October 31, 2026",
+      "description": "One evacuated couple says they crossed minefields in Oleshky in search of food."
     },
     {
       "title": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
@@ -3297,18 +3297,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/1/russia-detains-minor-over-alleged-moscow-attack-plot-after-us-warning?traffic_source=rss",
       "date": "November 1, 2026",
       "description": "Russian authorities say a US tip-off helped them identify teenager suspected of planning attack at a Moscow park."
-    },
-    {
-      "title": "Iran and US explore diplomacy amid rising threats of war",
-      "url": "https://www.aljazeera.com/news/2026/11/1/iran-and-us-explore-diplomacy-amid-rising-threats-of-war?traffic_source=rss",
-      "date": "November 1, 2026",
-      "description": "Iran says could reopen Hormuz in shorter period if conditions met, as Trump says US still has targets to 'take care of'."
-    },
-    {
-      "title": "Binance restarts withdrawals after $6.3bn heist",
-      "url": "https://www.aljazeera.com/news/2026/11/1/binance-restarts-withdrawals-after-6-3bn-heist?traffic_source=rss",
-      "date": "November 1, 2026",
-      "description": "The FBI says hackers from North Korea are responsible for the theft."
     }
   ],
   "occNews": [
@@ -3443,10 +3431,22 @@
       "description": "Five officers from the Hamas-run police have been killed in Khan Younis and three people, including a child, killed in Gaza City, officials say."
     },
     {
-      "title": "Judge dismisses Trump's lawsuit against Wall Street Journal over Epstein birthday book",
-      "url": "https://www.bbc.co.uk/news/articles/cwr5yj2lj9myo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "University of Cambridge scientist among those who died in Spanish train crash",
+      "url": "https://www.bbc.co.uk/news/articles/cq5ynzvkn1d8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 1, 2026",
-      "description": "Trump had sued the media outlet after it published a letter to Epstein purportedly written and signed by the president as part of a birthday book."
+      "description": "Marta Shahbazi was an \"inspiring, talented and passionate scientist\", says the laboratory where she worked."
+    },
+    {
+      "title": "Armed police start patrols in Sydney after Bondi Beach attack",
+      "url": "https://www.bbc.co.uk/news/articles/c9kgj7k7ry0ro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 1, 2026",
+      "description": "The new police unit is a security measure in response to last year's deadly shooting attack at a Hanukkah festival."
+    },
+    {
+      "title": "Democrat endorses Republican candidate in key Michigan Senate race as party spat escalates",
+      "url": "https://www.bbc.co.uk/news/articles/c95ynzv88n68o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 1, 2026",
+      "description": "Haley Stevens, a former congresswomen who lost out on the Democratic nomination to Abdul El-Sayed, endorses his opponent days before the vote."
     },
     {
       "title": "India's opposition holds mega rally seeking election chief's resignation",
@@ -3455,10 +3455,10 @@
       "description": "Thousands gathered in the heart of delhi, calling for the chief election commissioner to step down."
     },
     {
-      "title": "How the downfall of Serbia's Vučiċ mirrored that of Hungary's Orbán",
-      "url": "https://www.bbc.co.uk/news/articles/c893z699q401o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Judge dismisses Trump's lawsuit against Wall Street Journal over Epstein birthday book",
+      "url": "https://www.bbc.co.uk/news/articles/cwr5yj2lj9myo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 1, 2026",
-      "description": "Defeat for Serbia's Aleksandar Vučiċ in last weekend's vote was a carbon copy of Viktor Orbán's fall in Hungary."
+      "description": "Trump had sued the media outlet after it published a letter to Epstein purportedly written and signed by the president as part of a birthday book."
     },
     {
       "title": "Judge orders Trump administration to stop threatening US election officials",
@@ -3503,6 +3503,12 @@
       "description": "The escalation came after the government suspended two senior justices and moved to bring criminal charges against them."
     },
     {
+      "title": "Peaceful protests in Germany spiral into violence and looting",
+      "url": "https://www.bbc.co.uk/news/videos/cqgm0der7zkmo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 1, 2026",
+      "description": "Thousands joined largely orderly demonstrations earlier in the day, before violence erupted in Frankfurt, Berlin, Cologne and Hamburg."
+    },
+    {
       "title": "Watch: Heidi Klum as giant severed hand for Halloween bash",
       "url": "https://www.bbc.co.uk/news/videos/cj040yd1xdrlo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 1, 2026",
@@ -3521,16 +3527,22 @@
       "description": "BBC Verify goes to an election centre to get a behind-the-scenes look at how mail-in ballots for the US midterm elections are processed."
     },
     {
-      "title": "What's at stake for Trump in the US midterms?",
-      "url": "https://www.bbc.co.uk/news/videos/cq77pm2jmmd5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 30, 2026",
-      "description": "Anthony Zurcher explains how the results of the midterm elections could reshape the rest of Trump's presidency."
+      "title": "Lindsay Clancy is back in court - where will her case go next?",
+      "url": "https://www.bbc.co.uk/news/articles/ck3r5z3pw928o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 1, 2026",
+      "description": "The Massachusetts mother, accused of murdering her three children, is expected back in court as she awaits a decision on whether her case will be retried."
     },
     {
       "title": "Democrats are used to heartbreak in Texas - could Talarico turn the tide?",
       "url": "https://www.bbc.co.uk/news/articles/cmy0r2y6zeddo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 1, 2026",
       "description": "The state's $500m Senate race may be the most closely watched in the US midterms, and is about far more than control of Congress."
+    },
+    {
+      "title": "How the downfall of Serbia's Vučiċ mirrored that of Hungary's Orbán",
+      "url": "https://www.bbc.co.uk/news/articles/c893z699q401o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 1, 2026",
+      "description": "Defeat for Serbia's Aleksandar Vučiċ in last weekend's vote was a carbon copy of Viktor Orbán's fall in Hungary."
     },
     {
       "title": "I've been stuck on a tiny Pacific island for years and can't get a transit visa to fly home",
@@ -3549,12 +3561,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cmly016ep243o?at_medium=RSS&amp;at_campaign=rss",
       "date": "October 31, 2026",
       "description": "A century-old paper mill in Témiscaming, Quebec is indefinitely closed after the US imposed 50% tariffs on its products, putting hundreds out of work."
-    },
-    {
-      "title": "He questioned Thailand's monarchy dressed as Harry Potter. Now he's in jail for 34 years",
-      "url": "https://www.bbc.co.uk/news/articles/cmjwepvd0qq9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 30, 2026",
-      "description": "Thailand has prosecuted 294 people since 2020 under its lèse majesté law, with sentences going up to 50 years."
     },
     {
       "title": "Thousands of jobs at Virgin Media O2 to be cut",
@@ -3851,6 +3857,48 @@
       "description": "How easy is it to build a business after serving time in jail?"
     },
     {
+      "title": "France opens ‘attempted murder’ probe into petrol bomb attacks on police",
+      "url": "https://www.aljazeera.com/news/2026/11/1/france-opens-attempted-murder-probe-into-molotov-attacks-on-police?traffic_source=rss",
+      "date": "November 1, 2026",
+      "description": "No arrests made after several security officers were reportedly injured during incidents at Saturday's protests."
+    },
+    {
+      "title": "Michigan Dem Haley Stevens endorses Republican Senate candidate Mike Rogers",
+      "url": "https://www.aljazeera.com/news/2026/11/1/michigan-dem-haley-stevens-endorses-republican-senate-candidate-mike-rogers?traffic_source=rss",
+      "date": "November 1, 2026",
+      "description": "US Rep Stevens lost Democratic primary to Abdul El-Sayed and now endorses his Republican opponent in the Senate race."
+    },
+    {
+      "title": "Sullivan vows to honour Alaska race outcome, US judge dismisses DOJ lawsuit",
+      "url": "https://www.aljazeera.com/news/2026/11/1/sullivan-vows-to-honour-alaska-race-outcome-us-judge-dismisses-doj-lawsuit?traffic_source=rss",
+      "date": "November 1, 2026",
+      "description": "Senator Sullivan's pledge contrasts with the Trump administration's effort to challenge Alaska's election certification."
+    },
+    {
+      "title": "Israel’s first ambassador to Somaliland presents credentials in Hargeisa",
+      "url": "https://www.aljazeera.com/news/2026/11/1/israels-first-ambassador-to-somaliland-presents-credentials-in-hargeisa?traffic_source=rss",
+      "date": "November 1, 2026",
+      "description": "Israel expands ties with the breakaway territory as Somalia challenges its motives and war intensifies in Yemen."
+    },
+    {
+      "title": "Hebron siege continues for 10th day as Israel threatens wider offensive",
+      "url": "https://www.aljazeera.com/news/2026/11/1/hebron-siege-continues-for-10th-day-as-israel-threatens-wider-offensive?traffic_source=rss",
+      "date": "November 1, 2026",
+      "description": "Hebron's economic losses surpass $3.8m as Israeli forces demolish West Bank homes and close hundreds of businesses."
+    },
+    {
+      "title": "Al Jazeera marks 30 years of transforming news in Middle East and beyond",
+      "url": "https://www.aljazeera.com/news/2026/11/1/al-jazeera-celebrates-30-years-of-transforming-news-in-region-and-beyond?traffic_source=rss",
+      "date": "November 1, 2026",
+      "description": "The anniversary coincides with a significant restructuring of Al Jazeera Media Network’s Arabic-language news services."
+    },
+    {
+      "title": "Bangladesh workers clash with police in protests over low pay",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/bangladesh-workers-clash-with-police-in-protests-over-low-pay?traffic_source=rss",
+      "date": "November 1, 2026",
+      "description": "Dozens of garment workers in Bangladesh clashed with police in the capital Dhaka."
+    },
+    {
       "title": "India protesters march with 1km banner of deleted voters’ names",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/india-protesters-march-with-1km-banner-of-deleted-voters-names?traffic_source=rss",
       "date": "November 1, 2026",
@@ -3935,7 +3983,7 @@
       "description": "Mageean, runner who competed at two Olympic Games, lost her battle with cancer a year after revealing her diagnosis."
     },
     {
-      "title": "US midterms live: Trump, Democrats in last-ditch efforts before polls",
+      "title": "US midterms live: Democrat Stevens endorses el-Sayed’s rival in Senate race",
       "url": "https://www.aljazeera.com/news/liveblog/2026/11/1/us-midterms-live-last-ditch-efforts-ahead-of-tuesdays-elections?traffic_source=rss",
       "date": "November 1, 2026",
       "description": "All 435 seats in the House of Representatives and 35 of the Senate’s 100 seats are being contested on Tuesday."
@@ -3951,36 +3999,6 @@
       "url": "https://www.aljazeera.com/sports/liveblog/2026/11/1/liverpool-vs-arsenal-live-premier-league?traffic_source=rss",
       "date": "November 1, 2026",
       "description": "Follow updates, build-up and team news from our live text commentary stream, with Martin Odegaard headlining."
-    },
-    {
-      "title": "More than 50 million votes cast in US midterm elections: What does it mean?",
-      "url": "https://www.aljazeera.com/news/2026/11/1/more-than-50-million-votes-cast-in-us-midterm-elections-what-does-it-mean?traffic_source=rss",
-      "date": "November 1, 2026",
-      "description": "A record number of early votes is cast as both parties campaign before Tuesday's polls."
-    },
-    {
-      "title": "Palestinians in Lebanon suffering worsened by high energy prices, inflation",
-      "url": "https://www.aljazeera.com/features/2026/11/1/palestinians-in-lebanon-suffering-worsened-by-high-energy-prices-inflation?traffic_source=rss",
-      "date": "November 1, 2026",
-      "description": "As one of Lebanon's most vulnerable communities, Palestinians are struggling to make ends meet."
-    },
-    {
-      "title": "Qatar unveils countdown clock for 2027 Basketball World Cup",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/qatar-unveils-countdown-clock-for-2027-basketball-world-cup?traffic_source=rss",
-      "date": "November 1, 2026",
-      "description": "There's now fewer than 300 days until the 2027 FIBA Basketball World Cup in Qatar."
-    },
-    {
-      "title": "Michigan race: All you need to know about Abdul El-Sayed v Mike Rogers",
-      "url": "https://www.aljazeera.com/news/2026/11/1/michigan-race-all-you-need-to-know-about-abdul-el-sayed-v-mike-rogers?traffic_source=rss",
-      "date": "November 1, 2026",
-      "description": "Al Jazeera examines the crucial US Senate race in Michigan, including candidate positions and largest spenders."
-    },
-    {
-      "title": "Senegal kicks off the Youth Games 2026",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/senegal-kicks-off-the-youth-games-2026?traffic_source=rss",
-      "date": "November 1, 2026",
-      "description": "Senegal kicks off the Youth Games 2026"
     }
   ]
 }
