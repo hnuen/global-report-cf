@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T13:08:30.065Z",
+  "updatedAt": "2026-11-02T15:08:23.643Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261029",
@@ -3237,10 +3237,10 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "Iran killed her teenage daughter - now she is facing up to the regime",
-      "url": "https://www.bbc.co.uk/news/articles/c3qjn8117kwjo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Fake nuclear warnings issued after Ukrainian and Russian air alert apps hacked",
+      "url": "https://www.bbc.co.uk/news/articles/c51kdy1ew7zvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 2, 2026",
-      "description": "Samira's 16-year-old daughter Sevda was shot dead as they took part in mass protests in January."
+      "description": "Neither government has confirmed who was responsible for the cyberattacks on Sunday evening."
     },
     {
       "title": "Ryanair says it may freeze workers' pay and raise airfares",
@@ -3259,6 +3259,18 @@
       "url": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 1, 2026",
       "description": "The Federal Bureau of Investigation (FBI) says North Korea was responsible for the hack."
+    },
+    {
+      "title": "What we know about the alert app hack in Ukraine and Russia",
+      "url": "https://www.bbc.co.uk/news/videos/crq5n6204g20o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 2, 2026",
+      "description": "Both Ukraine and Russia say their air raid alert apps were cyber-attacked - Joe Tidy explains what we know so far."
+    },
+    {
+      "title": "Iran killed her teenage daughter - now she is facing up to the regime",
+      "url": "https://www.bbc.co.uk/news/articles/c3qjn8117kwjo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 2, 2026",
+      "description": "Samira's 16-year-old daughter Sevda was shot dead as they took part in mass protests in January."
     },
     {
       "title": "Ryanair says it may freeze workers' pay and raise airfares",
@@ -3298,6 +3310,24 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "How US oil firms profit $130bn from Iran war as household bills surge",
+      "url": "https://www.aljazeera.com/news/2026/11/2/how-us-oil-firms-profit-130bn-from-iran-war-as-household-bills-surge?traffic_source=rss",
+      "date": "November 2, 2026",
+      "description": "As energy from the Gulf and Russia take a hit, American oil and gas firms are the big gainers."
+    },
+    {
+      "title": "How would Tehran respond if the US and Israel bomb Iran again?",
+      "url": "https://www.aljazeera.com/news/2026/11/2/how-would-tehran-respond-if-the-us-and-israel-bomb-iran?traffic_source=rss",
+      "date": "November 2, 2026",
+      "description": "Iran has retained significant offensive capability, but civilians and critical infrastructure remain largely exposed."
+    },
+    {
+      "title": "Iran says US talks could resume ‘within a short period’ if demands are met",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/2/iran-says-us-talks-could-resume-within-a-short-period-if-demands-are-met?traffic_source=rss",
+      "date": "November 2, 2026",
+      "description": "Esmaeil Baghaei said Qatar is facilitating indirect talks based on Iran’s seven-step peace plan."
+    },
     {
       "title": "Nuclear radiation in Russia, Ukraine? No, just hacked warning alerts",
       "url": "https://www.aljazeera.com/news/2026/11/2/nuclear-radiation-in-russia-ukraine-no-just-hacked-warning-alerts?traffic_source=rss",
@@ -3425,7 +3455,7 @@
   ],
   "regionsNews": [
     {
-      "title": "Shop freezers in six European countries hit by suspected cyber-attack",
+      "title": "Shop freezers in seven European countries hit by suspected cyber-attack",
       "url": "https://www.bbc.co.uk/news/articles/cq1kd1nee80eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 2, 2026",
       "description": "The temperature of freezers in several shops across Europe reportedly rose to as high as 50C."
@@ -3434,7 +3464,7 @@
       "title": "Nine killed as small jet crashes on Florida street",
       "url": "https://www.bbc.co.uk/news/articles/cm369yy7lw73o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 2, 2026",
-      "description": "Transportation Secretary Sean Duffy described the crash, which happened near President Trump's Mar-a-Lago resort, as a \"horrific tragedy\"."
+      "description": "In air traffic audio, a crew member can be heard shouting: \"We are going to crash into the ground.\""
     },
     {
       "title": "Five arrested after South African farmer shot and tortured",
@@ -3443,10 +3473,16 @@
       "description": "The attack on Donovan Marx, 50, comes as right-wing groups say there is a genocide of white people - a claim widely discredited."
     },
     {
+      "title": "Wizz Air flight from London in emergency landing after bomb threat",
+      "url": "https://www.bbc.co.uk/news/articles/c6rryvwre0p5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 2, 2026",
+      "description": "A Hungarian fighter jet escorted the aircraft to Budapest after the threat was received mid-air."
+    },
+    {
       "title": "Uganda begins withdrawing troops from Somalia after 20 years",
       "url": "https://www.bbc.co.uk/news/articles/c8zxlqxwed4do?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 2, 2026",
-      "description": "The country was the first to contribute troops to the AU mission established to stabilise Somalia in 2007."
+      "description": "Uganda has been helping Somalia battle an insurgency led by the al-Shabab militant group since 2007."
     },
     {
       "title": "China state broadcaster pulls La Liga matches following Mbappé joke",
@@ -3551,16 +3587,16 @@
       "description": "Polls have been predicting a Democratic surge, but last-minute deciders and sampling issues mean there's no guarantee."
     },
     {
+      "title": "A Paralympian vs a former TV news anchor - and other US Senate races to watch",
+      "url": "https://www.bbc.co.uk/news/articles/cqy7ljkprvjko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 2, 2026",
+      "description": "All eyes are on a handful of Senate races that will decide control of the prized upper chamber. Here's a quick guide."
+    },
+    {
       "title": "Antonelli - the boy 'born in a garage' who became world champion",
       "url": "https://www.bbc.co.uk/sport/formula1/articles/c0rdvxdwwwwo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 1, 2026",
       "description": "Kimi Antonelli was a natural driver at the age of three, according to his dad. Here's how he developed to become the F1 champion at the age of 20."
-    },
-    {
-      "title": "Lindsay Clancy is back in court - where will her case go next?",
-      "url": "https://www.bbc.co.uk/news/articles/ck3r5z3pw928o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 1, 2026",
-      "description": "The Massachusetts mother, accused of murdering her three children, is expected back in court as she awaits a decision on whether her case will be retried."
     },
     {
       "title": "How the downfall of Serbia's Vučiċ mirrored that of Hungary's Orbán",
@@ -3569,16 +3605,22 @@
       "description": "Defeat for Serbia's Aleksandar Vučiċ in last weekend's vote was a carbon copy of Viktor Orbán's fall in Hungary."
     },
     {
+      "title": "Shop freezers in seven European countries hit by suspected cyber-attack",
+      "url": "https://www.bbc.co.uk/news/articles/cq1kd1nee80eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 2, 2026",
+      "description": "The temperature of freezers in several shops across Europe reportedly rose to as high as 50C."
+    },
+    {
+      "title": "Poundland's former owner offers to invest as minister prepares to meet board",
+      "url": "https://www.bbc.co.uk/news/articles/ck1wv1j0xgywo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 2, 2026",
+      "description": "Wolverhampton's Steve Smith says he attempted to contact Gordon Brothers but did not get a reply."
+    },
+    {
       "title": "Don't get caught out by new Buy Now Pay Later rules",
       "url": "https://www.bbc.co.uk/news/articles/crpdgp4y017go?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 1, 2026",
       "description": "New affordability checks mean you could be blocked from using Buy Now Pay Later but here are ways to avoid it."
-    },
-    {
-      "title": "Shop freezers in six European countries hit by suspected cyber-attack",
-      "url": "https://www.bbc.co.uk/news/articles/cq1kd1nee80eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 2, 2026",
-      "description": "The temperature of freezers in several shops across Europe reportedly rose to as high as 50C."
     },
     {
       "title": "Virgin Media O2 set to cut thousands of jobs to reduce costs",
@@ -3821,6 +3863,24 @@
       "description": "How easy is it to build a business after serving time in jail?"
     },
     {
+      "title": "As Islamophobia ramps up in US midterms, Texas Muslims eye local stakes",
+      "url": "https://www.aljazeera.com/news/2026/11/2/as-islamophobia-ramps-up-in-us-midterms-texas-muslims-eye-local-stakes?traffic_source=rss",
+      "date": "November 2, 2026",
+      "description": "Texas Muslims grapple with a slate of policies they say stigmatise their community, push for change at the ballot box."
+    },
+    {
+      "title": "US midterms 2026 live: Trump, Democrats make final push amid Michigan rift",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/11/2/us-midterms-2026-live-trump-democrats-make-final-push-amid-michigan-rift?traffic_source=rss",
+      "date": "November 2, 2026",
+      "description": "Republicans and Democrats nationwide make their final pitch to voters on the eve of US midterm elections."
+    },
+    {
+      "title": "Police arrive at German university pro-Palestine protest",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/2/police-arrive-at-german-university-pro-palestine-protest?traffic_source=rss",
+      "date": "November 2, 2026",
+      "description": "Dozens of Pro-Palestine students protested at the University of Hamburg in Germany. Riot police arrested students."
+    },
+    {
       "title": "Jordan’s King Abdullah promises to confront ‘terrorists’ after Karak attack",
       "url": "https://www.aljazeera.com/news/2026/11/2/jordans-king-abdullah-promises-to-confront-terrorists-after-karak-attack?traffic_source=rss",
       "date": "November 2, 2026",
@@ -3839,10 +3899,10 @@
       "description": "Recent military advances by Yemeni government forces highlight the geographic and strategic significance of Al-Jawf."
     },
     {
-      "title": "Freezers in Sweden, Belgium overheat following possible cyberattacks",
+      "title": "Suspected cyberattacks trigger supermarket fridge failures across Europe",
       "url": "https://www.aljazeera.com/news/2026/11/2/freezers-in-sweden-belgium-overheat-following-possible-cyberattacks?traffic_source=rss",
       "date": "November 2, 2026",
-      "description": "Temperature increases have been reported in dozens of store cooling systems, weeks after a similar attack in France."
+      "description": "Temperature increases have been reported in dozens of store cooling systems , weeks after a similar attack in France."
     },
     {
       "title": "French school protests resume on small scale as students return from break",
@@ -3927,42 +3987,6 @@
       "url": "https://www.aljazeera.com/sports/2026/11/2/coventry-fan-14-hands-himself-in-after-bradley-lowery-taunt-in-sunderland?traffic_source=rss",
       "date": "November 2, 2026",
       "description": "Police investigate after an individual in Coventry section displayed an image of Lowery during Sunderland's 3-1 defeat."
-    },
-    {
-      "title": "Chinese state TV continues Real Madrid blackout after Mbappe-Mao meme row",
-      "url": "https://www.aljazeera.com/sports/2026/11/2/chinese-state-tv-continues-real-madrid-blackout-after-mbappe-mao-meme-row?traffic_source=rss",
-      "date": "November 2, 2026",
-      "description": "Real Madrid vs Racing Santander is not broadcast on CCTV despite apologies from Mbappe, Real and La Liga."
-    },
-    {
-      "title": "How the president’s party has fared in every US midterm election since 1946",
-      "url": "https://www.aljazeera.com/news/2026/11/2/how-the-presidents-party-has-fared-in-every-us-midterm-election-since-1946?traffic_source=rss",
-      "date": "November 2, 2026",
-      "description": "Only twice in the past 20 midterms has the president’s party gained House seats. Polls suggest 2026 won’t be the third."
-    },
-    {
-      "title": "RFK Jr is wrong about the Arab world",
-      "url": "https://www.aljazeera.com/opinions/2026/11/2/rfk-jr-is-wrong-about-the-arab-world?traffic_source=rss",
-      "date": "November 2, 2026",
-      "description": "Its challenges in knowledge production cannot be blamed on some kind of innate incompetence or a political group."
-    },
-    {
-      "title": "UN staffer’s death in custody exposes Houthi ‘political extortion’ in Yemen",
-      "url": "https://www.aljazeera.com/news/2026/11/2/un-staffers-death-in-custody-exposes-houthi-political-extortion-in-yemen?traffic_source=rss",
-      "date": "November 2, 2026",
-      "description": "Following a UN staffer's death, rights experts expose systematic abuses and demand international accountability in Yemen"
-    },
-    {
-      "title": "NBA: Yaxel Lendeborg scores 37 as Warriors defeat Clippers",
-      "url": "https://www.aljazeera.com/sports/2026/11/2/nba-yaxel-lendeborg-scores-37-as-warriors-defeat-clippers?traffic_source=rss",
-      "date": "November 2, 2026",
-      "description": "Golden State Warriors' rookie leads scoring in 124-112 win over Los Angeles Clippers, while Celtics beat Magic 108-97."
-    },
-    {
-      "title": "Hormuz shipping still faces major risks",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/2/hormuz-shipping-still-faces-major-risks?traffic_source=rss",
-      "date": "November 2, 2026",
-      "description": "The Strait of Hormuz remains dangerous and costly for shipping, despite US claims that it is open."
     }
   ]
 }
