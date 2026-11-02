@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T19:08:34.552Z",
+  "updatedAt": "2026-11-02T21:08:29.412Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261029",
@@ -3237,10 +3237,16 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "Russian bombing kills 24 people at Ukraine aid centre, Kyiv says",
+      "title": "Russian bombing kills 26 people at Ukraine aid centre, Kyiv says",
       "url": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 2, 2026",
-      "description": "Local officials say 27 people had been missing after at least nine 3,000kg aerial bombs hit a village in southern Ukraine."
+      "description": "Local officials say more had been missing after at least nine 3,000kg aerial bombs hit a village in southern Ukraine."
+    },
+    {
+      "title": "Trump to remove Rwanda and South Africa from US trade deal",
+      "url": "https://www.bbc.co.uk/news/articles/c9j346xg0mkvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 2, 2026",
+      "description": "The move comes barely a week after Rwanda's defence ministry was hit with sanctions by the US Treasury."
     },
     {
       "title": "Fake nuclear warning from hacked app sparks unease but not panic in Ukraine",
@@ -3317,34 +3323,22 @@
   ],
   "ajNews": [
     {
-      "title": "Russian bombing of Ukrainian aid centre kills 24 people: Zelenskyy",
+      "title": "Iran pushing accelerated plan for ceasefire talks with US",
+      "url": "https://www.aljazeera.com/news/2026/11/2/iran-pushing-accelerated-plan-for-ceasefire-talks-with-us?traffic_source=rss",
+      "date": "November 2, 2026",
+      "description": "Tehran says plan has been condensed and can be implemented within two days as it continues talks with mediators."
+    },
+    {
+      "title": "Russian bombing of Ukrainian aid centre kills 24 people",
       "url": "https://www.aljazeera.com/news/2026/11/2/russian-bombing-of-ukrainian-aid-centre-kills-24-people-zelenskyy?traffic_source=rss",
       "date": "November 2, 2026",
-      "description": "President called the attack further proof that Russia does not want any ‌kind of de-escalation or real justice."
+      "description": "Ukraine's president calls attack further proof that Russia does not want any ‌kind of de-escalation or real justice."
     },
     {
       "title": "China steps up Middle East diplomacy with Iran and Oman meetings",
       "url": "https://www.aljazeera.com/news/2026/11/2/china-steps-up-middle-east-diplomacy-with-iran-and-oman-meetings?traffic_source=rss",
       "date": "November 2, 2026",
       "description": "Beijing urges dialogue on US-Iran war, sends envoy to Gulf as Xi hosts first Omani head of state visit since 1978."
-    },
-    {
-      "title": "How US oil firms profit $130bn from Iran war as household bills surge",
-      "url": "https://www.aljazeera.com/news/2026/11/2/how-us-oil-firms-profit-130bn-from-iran-war-as-household-bills-surge?traffic_source=rss",
-      "date": "November 2, 2026",
-      "description": "As energy from the Gulf and Russia take a hit, American oil and gas firms are the big gainers."
-    },
-    {
-      "title": "How would Tehran respond if the US and Israel bomb Iran again?",
-      "url": "https://www.aljazeera.com/news/2026/11/2/how-would-tehran-respond-if-the-us-and-israel-bomb-iran?traffic_source=rss",
-      "date": "November 2, 2026",
-      "description": "Iran has retained significant offensive capability, but civilians and critical infrastructure remain largely exposed."
-    },
-    {
-      "title": "Iran says US talks could resume ‘within a short period’ if demands are met",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/2/iran-says-us-talks-could-resume-within-a-short-period-if-demands-are-met?traffic_source=rss",
-      "date": "November 2, 2026",
-      "description": "Esmaeil Baghaei said Qatar is facilitating indirect talks based on Iran’s seven-step peace plan."
     }
   ],
   "occNews": [
@@ -3467,6 +3461,12 @@
   ],
   "regionsNews": [
     {
+      "title": "Copilot in deadly Florida jet crash identified in reports as 20-year-old",
+      "url": "https://www.bbc.co.uk/news/articles/cm369yy7lw73o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 2, 2026",
+      "description": "In air traffic audio, a crew member can be heard shouting: \"We are going to crash into the ground!\""
+    },
+    {
       "title": "Shop freezers in seven European countries hit by cyber-attack",
       "url": "https://www.bbc.co.uk/news/articles/cq1kd1nee80eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 2, 2026",
@@ -3477,6 +3477,18 @@
       "url": "https://www.bbc.co.uk/news/articles/ckg5jlyp66jzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 2, 2026",
       "description": "Though unprecedented, the six-day truce has done little to alter the wider trajectory of a war that continues to grinds on."
+    },
+    {
+      "title": "Legal challenge to Australia's social media ban to start in High Court",
+      "url": "https://www.bbc.co.uk/news/articles/ck79py02p1jlo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 2, 2026",
+      "description": "A rights group will argue the world-leading policy robs under-16s of their right to free communication."
+    },
+    {
+      "title": "Man guilty of stealing cash from farm owned by South African president",
+      "url": "https://www.bbc.co.uk/news/articles/c9vgrvpk4l6eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 2, 2026",
+      "description": "The case, part of the \"Farmgate\" scandal, has left President Cyril Ramaphosa mired in an impeachment saga."
     },
     {
       "title": "Dutch police offer record €2m reward in hunt for drug lord",
@@ -3563,16 +3575,10 @@
       "description": "The order comes after election officials received letters demanding they set aside the ballots of possible non-citizen voters."
     },
     {
-      "title": "Alaska Senate candidate denies knowing about alleged plot to put two Dan Sullivans on ballot",
-      "url": "https://www.bbc.co.uk/news/articles/cmwyq2gg1yzzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 1, 2026",
-      "description": "The incumbent Republican running for re-election and allies have accused the Democrats of trying to confuse voters by recruiting a second Dan Sullivan to also stand in the race."
-    },
-    {
-      "title": "More than 5,000 die from Ebola in DR Congo's deadliest outbreak",
-      "url": "https://www.bbc.co.uk/news/articles/cj5ynryyep2yo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 31, 2026",
-      "description": "Government data shows that more than 10,000 people have contracted the rare virus."
+      "title": "What Florida jet audio and flight data tells us about its final moments",
+      "url": "https://www.bbc.co.uk/news/videos/c52e9lgxjz82o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 2, 2026",
+      "description": "A private jet crashed in Florida on Sunday, killing all nine people on board, according to US authorities."
     },
     {
       "title": "'All this food is now useless': Piles of rubbish after shop freezers hit by cyber-attack",
@@ -3599,6 +3605,12 @@
       "description": "Dozens of shops across European countries have been hit by a cyber-attack affecting their fridges."
     },
     {
+      "title": "US midterms campaign 'shattering' spending records to be most expensive ever",
+      "url": "https://www.bbc.co.uk/news/articles/cqkgk64z7p58o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 2, 2026",
+      "description": "The 2026 campaign is projected to cost nearly $12bn - BBC Verify looks into where all that money has come from."
+    },
+    {
       "title": "Democrats have high hopes for midterms - but are the polls right?",
       "url": "https://www.bbc.co.uk/news/articles/cmg47p3edv4do?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 2, 2026",
@@ -3609,18 +3621,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cqy7ljkprvjko?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 2, 2026",
       "description": "All eyes are on a handful of Senate races that will decide control of the prized upper chamber. Here's a quick guide."
-    },
-    {
-      "title": "Antonelli - the boy 'born in a garage' who became world champion",
-      "url": "https://www.bbc.co.uk/sport/formula1/articles/c0rdvxdwwwwo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 1, 2026",
-      "description": "Kimi Antonelli was a natural driver at the age of three, according to his dad. Here's how he developed to become the F1 champion at the age of 20."
-    },
-    {
-      "title": "How the downfall of Serbia's Vučiċ mirrored that of Hungary's Orbán",
-      "url": "https://www.bbc.co.uk/news/articles/c893z699q401o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 1, 2026",
-      "description": "Defeat for Serbia's Aleksandar Vučiċ in last weekend's vote was a carbon copy of Viktor Orbán's fall in Hungary."
     },
     {
       "title": "Shop freezers in seven European countries hit by cyber-attack",
@@ -3881,6 +3881,54 @@
       "description": "Chancellor John Healey says any cuts to welfare will be done \"in a Labour way\"."
     },
     {
+      "title": "UK bookshop helps meet demand for Sally Rooney novels",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/2/uk-bookshop-helps-meet-demand-for-sally-rooney-novels?traffic_source=rss",
+      "date": "November 2, 2026",
+      "description": "Novels by Irish author Sally Rooney are in high demand after her publisher, Faber, halted supplies in the United Kingdom"
+    },
+    {
+      "title": "Mamdani-endorsed progressives fight to join Congress",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/2/mamdani-endorsed-progressives-fight-to-join-congress?traffic_source=rss",
+      "date": "November 2, 2026",
+      "description": "Zohran Mamdani is championing a slate of Congressional candidates who want to take progressive policies national."
+    },
+    {
+      "title": "HRW calls on Zambia to halt post-election crackdown",
+      "url": "https://www.aljazeera.com/news/2026/11/2/hrw-calls-on-zambia-to-halt-post-election-crackdown?traffic_source=rss",
+      "date": "November 2, 2026",
+      "description": "Opposition figures arrested and disappeared since President Hakainde Hichilema claimed August victory."
+    },
+    {
+      "title": "Protester’s ‘I support genocide’ sign appears to face no police action",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/2/protesters-i-support-genocide-sign-appears-to-face-no-police-action?traffic_source=rss",
+      "date": "November 2, 2026",
+      "description": "Holding a sign expressing support for genocide is not, in itself, grounds for arrest under UK law."
+    },
+    {
+      "title": "Lindsay Clancy in court to drop child murder charges after mistrial",
+      "url": "https://www.aljazeera.com/news/2026/11/2/lindsay-clancy-in-court-to-drop-child-murder-charges-after-mistrial?traffic_source=rss",
+      "date": "November 2, 2026",
+      "description": "Defence argues juror misconduct and judge's questioning impacted Clancy's trial for strangling of her three children."
+    },
+    {
+      "title": "Trump asks Supreme Court to block 20,000 California ballots before midterms",
+      "url": "https://www.aljazeera.com/news/2026/11/2/trump-asks-supreme-court-to-block-20000-california-ballots-before-midterms?traffic_source=rss",
+      "date": "November 2, 2026",
+      "description": "California says any move to block ballots from suspected noncitizens could disenfranchise eligible voters."
+    },
+    {
+      "title": "Senegal hosts Africa’s first Olympics",
+      "url": "https://www.aljazeera.com/video/talk-to-al-jazeera/2026/11/2/senegal-hosts-africas-first-olympics?traffic_source=rss",
+      "date": "November 2, 2026",
+      "description": "The head of the International Olympic Committee discusses the significance of Africa hosting the Youth Olympic Games."
+    },
+    {
+      "title": "German unions launch wave of strikes over cost-of-living pressures",
+      "url": "https://www.aljazeera.com/news/2026/11/2/german-unions-launch-wave-of-strikes-over-cost-of-living-pressures?traffic_source=rss",
+      "date": "November 2, 2026",
+      "description": "The expanded industrial action comes amid a wave of strikes and protests that have sparked unrest across Europe."
+    },
+    {
       "title": "After Israel’s election: What’s next?",
       "url": "https://www.aljazeera.com/video/the-bottom-line/2026/11/2/after-israels-election-whats-next?traffic_source=rss",
       "date": "November 2, 2026",
@@ -3963,42 +4011,6 @@
       "url": "https://www.aljazeera.com/sports/2026/11/2/jake-paul-to-fight-mma-star-cedric-doumbe?traffic_source=rss",
       "date": "November 2, 2026",
       "description": "YouTuber-turned-boxer Jake Paul to face mixed martial arts star Cedric Doumbe in boxing bout in Dubai."
-    },
-    {
-      "title": "Al Jazeera condemns Israeli ban extension, calls for its immediate lifting",
-      "url": "https://www.aljazeera.com/news/2026/11/2/al-jazeera-condemns-israeli-ban-extension-calls-for-its-immediate-lifting?traffic_source=rss",
-      "date": "November 2, 2026",
-      "description": "Network calls move 'assault' on press freedom, warns of 'dangerous pattern' that undermines ability to report facts."
-    },
-    {
-      "title": "Arab parties back Eisenkot: What’s the latest in Israel’s coalition talks?",
-      "url": "https://www.aljazeera.com/news/2026/11/2/arab-parties-back-eisenkot-whats-the-latest-in-israels-coalition-talks?traffic_source=rss",
-      "date": "November 2, 2026",
-      "description": "Political wrangling is still ongoing as all blocs weigh potential paths to power."
-    },
-    {
-      "title": "Barcelona vs Aston Villa: Champions League – Predictions, news, lineups",
-      "url": "https://www.aljazeera.com/sports/2026/11/2/barcelona-vs-aston-villa-champions-league-predictions-news?traffic_source=rss",
-      "date": "November 2, 2026",
-      "description": "Aston Villa, second in the UEFA Champions League table after three wins from three, head to Barcelona, three points back"
-    },
-    {
-      "title": "As Islamophobia ramps up in US midterms, Texas Muslims eye local stakes",
-      "url": "https://www.aljazeera.com/news/2026/11/2/as-islamophobia-ramps-up-in-us-midterms-texas-muslims-eye-local-stakes?traffic_source=rss",
-      "date": "November 2, 2026",
-      "description": "Texas Muslims grapple with a slate of policies they say stigmatise their community, push for change at the ballot box."
-    },
-    {
-      "title": "US midterms 2026 live: Trump, Democrats make final push amid Michigan rift",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/11/2/us-midterms-2026-live-trump-democrats-make-final-push-amid-michigan-rift?traffic_source=rss",
-      "date": "November 2, 2026",
-      "description": "Republicans and Democrats nationwide make their final pitch to voters on the eve of US midterm elections."
-    },
-    {
-      "title": "Police arrive at German university pro-Palestine protest",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/2/police-arrive-at-german-university-pro-palestine-protest?traffic_source=rss",
-      "date": "November 2, 2026",
-      "description": "Dozens of Pro-Palestine students protested at the University of Hamburg in Germany. Riot police arrested students."
     }
   ]
 }
