@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T17:08:34.159Z",
+  "updatedAt": "2026-11-03T19:08:37.972Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261029",
@@ -3237,6 +3237,12 @@
   "unNotices": [],
   "bbcNews": [
     {
+      "title": "Death toll rises in Ukraine after Russia attacks aid centre, hospice and hospital",
+      "url": "https://www.bbc.co.uk/news/articles/c65ynez5y599o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 3, 2026",
+      "description": "At least 38 people are killed in 24 hours and Ukraine's Volodymyr Zelensky warns dozens more could be trapped under rubble."
+    },
+    {
       "title": "US urges Venezuela to release remaining political prisoners",
       "url": "https://www.bbc.co.uk/news/articles/cxg5jln586pno?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 3, 2026",
@@ -3299,6 +3305,12 @@
   ],
   "ajNews": [
     {
+      "title": "Russian strikes on Dnipro kill two, injure 20 others",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/3/russian-strikes-on-dnipro-kill-two-injure-20-others?traffic_source=rss",
+      "date": "November 3, 2026",
+      "description": "Russian strikes on Dnipro damaged residential areas and several medical facilities."
+    },
+    {
       "title": "Ukraine’s Zelenskyy hopes Abu Dhabi talks will open path to Putin meeting",
       "url": "https://www.aljazeera.com/news/2026/11/3/zelenskyy-hopes-abu-dhabi-talks-will-open-way-to-meeting-with-putin?traffic_source=rss",
       "date": "November 3, 2026",
@@ -3327,18 +3339,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/3/iran-commander-sets-out-five-conditions-for-regional-security?traffic_source=rss",
       "date": "November 3, 2026",
       "description": "Mediator Qatar says US and Iran are studying proposals to resume negotiations and that it was 'hopeful' of an agreement."
-    },
-    {
-      "title": "Qatar remains hopeful the US and Iran can reach a deal",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/3/qatar-remains-hopeful-the-us-and-iran-can-reach-a-deal?traffic_source=rss",
-      "date": "November 3, 2026",
-      "description": "Qatar’s foreign ministry spokesperson Majed al-Ansari says regional neighbours and international partners are working to"
-    },
-    {
-      "title": "Grain under fire: Russian, Ukrainian Black Sea attacks threaten food supply",
-      "url": "https://www.aljazeera.com/news/2026/11/3/disruptions-of-black-sea-grain-exports-spike-global-prices?traffic_source=rss",
-      "date": "November 3, 2026",
-      "description": "Renewed strikes on Black Sea shipping imperil grain exports, drive up food prices and deepen global food insecurity."
     }
   ],
   "occNews": [
@@ -3461,10 +3461,10 @@
   ],
   "regionsNews": [
     {
-      "title": "US strikes Iranian island ahead of midterm elections",
-      "url": "https://www.bbc.co.uk/news/articles/cx240mrm3g8vo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Seven flights across Europe targeted by suspected bomb threats",
+      "url": "https://www.bbc.co.uk/news/articles/c6x2wd4v04eeo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 3, 2026",
-      "description": "US officials described the attacks on Qeshm Island as limited and defensive, according to CBS, the BBC's US partner."
+      "description": "Planes in Poland, Spain, Bulgaria and Italy have been checked for explosives following separate threats."
     },
     {
       "title": "Tenerife striker De Miguel dies after on-field collision",
@@ -3473,16 +3473,16 @@
       "description": "Tenerife forward Jesus de Miguel dies aged 30 after an on-field collision during a Spanish second-division match."
     },
     {
+      "title": "Binance says fake job interviews used as part of $6.3bn crypto hack",
+      "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 3, 2026",
+      "description": "An engineer was contacted through a legitimate job-hunting platform and invited to bogus job interviews with fake company representatives, Binance says."
+    },
+    {
       "title": "Libya's top religious authority rules against wearing Nike clothes",
       "url": "https://www.bbc.co.uk/news/articles/c5djv0p0re2no?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 3, 2026",
       "description": "The US company was named after the Greek goddess of victory, so the Dar al-Ifta said displaying its logo was unIslamic."
-    },
-    {
-      "title": "Indian tourist killed after two helicopters collide near Everest base camp",
-      "url": "https://www.bbc.co.uk/news/articles/cmqlnx7z1549o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 3, 2026",
-      "description": "The two aircraft crashed just metres from the ground after trying to land at the same spot."
     },
     {
       "title": "Europe on alert after supermarket freezers hit by cyber-attacks in 10 countries",
@@ -3491,10 +3491,28 @@
       "description": "Supermarkets have reported problems from Estonia and Sweden to Portugal and Italy and many retainers have been forced to discard food."
     },
     {
+      "title": "US strikes Iranian island ahead of midterm elections",
+      "url": "https://www.bbc.co.uk/news/articles/cx240mrm3g8vo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 3, 2026",
+      "description": "US officials described the attacks on Qeshm Island as limited and defensive, according to CBS, the BBC's US partner."
+    },
+    {
+      "title": "Indian tourist killed after two helicopters collide near Everest base camp",
+      "url": "https://www.bbc.co.uk/news/articles/cmqlnx7z1549o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 3, 2026",
+      "description": "The two aircraft crashed just metres from the ground after trying to land at the same spot."
+    },
+    {
       "title": "Irish Olympian Ciara Mageean was a 'talented and inspirational human being'",
       "url": "https://www.bbc.co.uk/news/articles/cw62ye1030njo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 3, 2026",
       "description": "The former European champion and two-time Olympic runner had been diagnosed with stage four bowel cancer."
+    },
+    {
+      "title": "Mining giant joins fight to stop killer toad march across Australia",
+      "url": "https://www.bbc.co.uk/news/articles/c3dxw8p99ervo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 3, 2026",
+      "description": "Rio Tinto is jointly funding a A$28m \"toad containment zoe\" to protect the Pilbara region."
     },
     {
       "title": "Asian Cup postponed in wake of attacks on Saudi Arabia",
@@ -3845,6 +3863,48 @@
       "description": "Yasmin Rufo asks New Yorkers who picks up the bill on a first date, and how much they usually spend."
     },
     {
+      "title": "Palestinian Americans turn to US flags to protect West Bank homes",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/3/palestinian-americans-turn-to-us-flags-to-protect-west-bank-homes?traffic_source=rss",
+      "date": "November 3, 2026",
+      "description": "Palestinian Americans in the occupied West Bank are putting up US flags, to fend off pogroms by Israeli settlers."
+    },
+    {
+      "title": "UK’s King Charles expresses ‘sorrow’ in Antigua over slave trade",
+      "url": "https://www.aljazeera.com/news/2026/11/3/uks-king-charles-expresses-profound-sorrow-over-transatlantic-slave-era?traffic_source=rss",
+      "date": "November 3, 2026",
+      "description": "Caribbean nations call for reparations as King Charles stops short of issuing an apology for colonial-era slavery."
+    },
+    {
+      "title": "Greenland parliament approves security deal with US, Denmark",
+      "url": "https://www.aljazeera.com/news/2026/11/3/greenland-parliament-approves-security-deal-with-us-denmark?traffic_source=rss",
+      "date": "November 3, 2026",
+      "description": "Lawmakers vote 16-0 for trilateral agreement signed in September, while seven abstained."
+    },
+    {
+      "title": "Jerusalem Daily: Israel detains Al Jazeera journalist in Hebron raids",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/3/jerusalem-daily-israel-detains-al-jazeera-journalist-in-hebron-raids?traffic_source=rss",
+      "date": "November 3, 2026",
+      "description": "Al Jazeera journalist Montaser Nassar was detained in raids near Hebron."
+    },
+    {
+      "title": "South Carolina shrimpers weigh costs, vote in crucial US midterms",
+      "url": "https://www.aljazeera.com/news/2026/11/3/south-carolina-shrimpers-weigh-costs-vote-in-crucial-us-midterms?traffic_source=rss",
+      "date": "November 3, 2026",
+      "description": "Shrimpers worry about fuel costs, tariffs and Trump's proposed cuts to the agency that provides vital weather data."
+    },
+    {
+      "title": "Darfur survivors vow to tell story of those killed after Sudan camp attacks",
+      "url": "https://www.aljazeera.com/features/2026/11/3/darfur-survivors-vow-to-tell-story-of-those-killed-after-sudan-camp-attacks?traffic_source=rss",
+      "date": "November 3, 2026",
+      "description": "Survivors of attacks on displacement camps in Darfur recall the lives they built, and violence that forced them to flee."
+    },
+    {
+      "title": "Barcelona vs Aston Villa LIVE: Champions League",
+      "url": "https://www.aljazeera.com/sports/liveblog/2026/11/3/barcelona-vs-aston-villa-live-champions-league?traffic_source=rss",
+      "date": "November 3, 2026",
+      "description": "Follow updates from the league stage clash, including the build-up, analysis, and live text commentary of the game."
+    },
+    {
       "title": "Israel political deadlock leaves Netanyahu’s future hanging in the balance",
       "url": "https://www.aljazeera.com/news/2026/11/3/israel-political-deadlock-leaves-netanyahus-future-hanging-in-the-balance?traffic_source=rss",
       "date": "November 3, 2026",
@@ -3915,42 +3975,6 @@
       "url": "https://www.aljazeera.com/sports/2026/11/3/saudi-pro-league-postpones-matches-after-asian-cup-rescheduling?traffic_source=rss",
       "date": "November 3, 2026",
       "description": "League delays matches after revised Asian Cup dates create 'additional flexibility in the domestic football calendar'."
-    },
-    {
-      "title": "New bodycam video shows aftermath of fatal National Guard shooting",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/3/new-bodycam-video-shows-aftermath-of-fatal-national-guard-shooting?traffic_source=rss",
-      "date": "November 3, 2026",
-      "description": "Newly-released bodycam footage shows Tennessee National Guard members pointing their guns at 20-year-old Tyrin Johnson."
-    },
-    {
-      "title": "How Florida Governor Ron DeSantis will shape his state’s 2026 midterm race",
-      "url": "https://www.aljazeera.com/news/2026/11/3/how-florida-governor-ron-desantis-will-shape-his-states-2026-midterm-race?traffic_source=rss",
-      "date": "November 3, 2026",
-      "description": "The outgoing governor and former presidential candidate has transformed Florida into a conservative policy vanguard."
-    },
-    {
-      "title": "Cyberattack disrupts supermarkets across Europe",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/3/cyberattack-disrupts-supermarkets-across-europe?traffic_source=rss",
-      "date": "November 3, 2026",
-      "description": "Cyberattack disrupts supermarkets across Europe"
-    },
-    {
-      "title": "Two police officers protecting polio workers in Pakistan shot dead",
-      "url": "https://www.aljazeera.com/news/2026/11/3/two-police-officers-protecting-polio-workers-in-pakistan-shot-dead?traffic_source=rss",
-      "date": "November 3, 2026",
-      "description": "The attackers, travelling on a motorcycle, opened fire on a police car in Khyber Pakhtunkhwa province."
-    },
-    {
-      "title": "Al Jazeera journalist recounts arrest during Israeli raid on his home",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/3/al-jazeera-journalist-recounts-arrest-during-israeli-raid-on-his-home?traffic_source=rss",
-      "date": "November 3, 2026",
-      "description": "Released Al Jazeera Arabic correspondent Montaser Nassar describes how Israeli forces raided his home and arrested him."
-    },
-    {
-      "title": "How India pulled 500 million people out of poverty as inequality deepens",
-      "url": "https://www.aljazeera.com/news/2026/11/3/how-india-pulled-500-million-people-out-of-poverty-as-inequality-deepens?traffic_source=rss",
-      "date": "November 3, 2026",
-      "description": "India's extreme poverty declined from 27.1 percent to 2.6 percent between 2011 and 2023, according to the World Bank."
     }
   ]
 }
