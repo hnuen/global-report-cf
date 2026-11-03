@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T19:08:37.972Z",
+  "updatedAt": "2026-11-03T21:08:33.612Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261029",
@@ -3305,6 +3305,12 @@
   ],
   "ajNews": [
     {
+      "title": "Kyiv protest raises suspicions of possible Russian orchestration",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/3/kyiv-protest-raises-suspicions-of-possible-russian-orchestration?traffic_source=rss",
+      "date": "November 3, 2026",
+      "description": "Ukraine is investigating clashes between protesters and authorities at a military dormitory near Kyiv."
+    },
+    {
       "title": "Russian strikes on Dnipro kill two, injure 20 others",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/3/russian-strikes-on-dnipro-kill-two-injure-20-others?traffic_source=rss",
       "date": "November 3, 2026",
@@ -3333,12 +3339,6 @@
       "url": "https://www.aljazeera.com/news-analysis/2026/11/3/global-food-security-is-under-threat?traffic_source=rss",
       "date": "November 3, 2026",
       "description": "Attacks on grain shipments from Russia and Ukraine may drive up food prices, hitting import-dependent countries hardest."
-    },
-    {
-      "title": "Iran commander sets out five conditions for regional security",
-      "url": "https://www.aljazeera.com/news/2026/11/3/iran-commander-sets-out-five-conditions-for-regional-security?traffic_source=rss",
-      "date": "November 3, 2026",
-      "description": "Mediator Qatar says US and Iran are studying proposals to resume negotiations and that it was 'hopeful' of an agreement."
     }
   ],
   "occNews": [
@@ -3461,16 +3461,16 @@
   ],
   "regionsNews": [
     {
+      "title": "Spanish transport minister resigns days after deadly train crash",
+      "url": "https://www.bbc.co.uk/news/articles/c6wydqd4yxdyo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 3, 2026",
+      "description": "At least 69 people were killed and dozens injured in the collision south of the capital, Madrid."
+    },
+    {
       "title": "Seven flights across Europe targeted by suspected bomb threats",
       "url": "https://www.bbc.co.uk/news/articles/c6x2wd4v04eeo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 3, 2026",
       "description": "Planes in Poland, Spain, Bulgaria and Italy have been checked for explosives following separate threats."
-    },
-    {
-      "title": "Tenerife striker De Miguel dies after on-field collision",
-      "url": "https://www.bbc.co.uk/sport/football/articles/ck62yvz046pjo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 3, 2026",
-      "description": "Tenerife forward Jesus de Miguel dies aged 30 after an on-field collision during a Spanish second-division match."
     },
     {
       "title": "Binance says fake job interviews used as part of $6.3bn crypto hack",
@@ -3507,6 +3507,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cw62ye1030njo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 3, 2026",
       "description": "The former European champion and two-time Olympic runner had been diagnosed with stage four bowel cancer."
+    },
+    {
+      "title": "Tenerife striker De Miguel dies after on-field collision",
+      "url": "https://www.bbc.co.uk/sport/football/articles/ck62yvz046pjo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 3, 2026",
+      "description": "Tenerife forward Jesus de Miguel dies aged 30 after an on-field collision during a Spanish second-division match."
     },
     {
       "title": "Mining giant joins fight to stop killer toad march across Australia",
@@ -3557,7 +3563,7 @@
       "description": "The case, part of the \"Farmgate\" scandal, has left President Cyril Ramaphosa mired in an impeachment saga."
     },
     {
-      "title": "Bollywood film star Ranbir Kapoor on AI, movies and fatherhood",
+      "title": "Film star Ranbir Kapoor on AI, movies and fatherhood",
       "url": "https://www.bbc.co.uk/news/videos/cmvg9w5w2p1no?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 3, 2026",
       "description": "The film star plays the leading role in a major new adaptation of the Indian epic Ramayana."
@@ -3863,6 +3869,30 @@
       "description": "Yasmin Rufo asks New Yorkers who picks up the bill on a first date, and how much they usually spend."
     },
     {
+      "title": "Michigan voters face crucial choice as Trump’s grip on Congress is tested",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/3/michigan-voters-face-crucial-choice-as-trumps-grip-on-congress-is-tested?traffic_source=rss",
+      "date": "November 3, 2026",
+      "description": "Michigan’s closely contested Senate race and voter concerns over the economy are putting Trump’s control of Washington."
+    },
+    {
+      "title": "Michigan US Senate race: Rogers, El-Sayed urge turnout for critical race",
+      "url": "https://www.aljazeera.com/news/2026/11/3/michigan-us-senate-race-rogers-el-sayed-urge-turnout-for-critical-race?traffic_source=rss",
+      "date": "November 3, 2026",
+      "description": "Abdul El-Sayed hopes to become the first Muslim US senator as Michigan's Senate race reaches its critical final hours."
+    },
+    {
+      "title": "Severe weather disrupts election day across several US states",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/3/aje-onl-nf_severe-weather-disrupts-election-day-across-us-031126?traffic_source=rss",
+      "date": "November 3, 2026",
+      "description": "Flash floods, torrential rain and tornadoes have disrupted midterm election day in several US states."
+    },
+    {
+      "title": "Yemen gov’t accuses IRGC, Hezbollah of sending 21 experts to back Houthis",
+      "url": "https://www.aljazeera.com/news/2026/11/3/yemen-govt-accuses-irgc-hezbollah-of-sending-21-experts-to-back-houthis?traffic_source=rss",
+      "date": "November 3, 2026",
+      "description": "Yemeni interior minister says foreign involvement expanded beyond arms and training to directing military operations."
+    },
+    {
       "title": "Palestinian Americans turn to US flags to protect West Bank homes",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/3/palestinian-americans-turn-to-us-flags-to-protect-west-bank-homes?traffic_source=rss",
       "date": "November 3, 2026",
@@ -3951,30 +3981,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/3/from-italy-to-canada-how-the-uks-palestine-action-group-went-global?traffic_source=rss",
       "date": "November 3, 2026",
       "description": "The banned UK group, which targets Israel's war machine, has inspired activists in Europe and beyond."
-    },
-    {
-      "title": "Very cold war: Who’s attacking Europe’s supermarket freezers?",
-      "url": "https://www.aljazeera.com/news/2026/11/3/very-cold-war-whos-attacking-europes-supermarket-freezers?traffic_source=rss",
-      "date": "November 3, 2026",
-      "description": "Cold stores in supermarkets across Europe have been targeted in a cyberattack with no clear culprit."
-    },
-    {
-      "title": "Who is goalkeeper Owono and will he be punished after De Miguel’s death?",
-      "url": "https://www.aljazeera.com/sports/2026/11/3/who-is-goalkeeper-jesus-owono-and-will-he-be-punished-after-miguels-death?traffic_source=rss",
-      "date": "November 3, 2026",
-      "description": "Andorra goalkeeper Jesus Owono is at the centre of a social media storm after the death of Tenerife's Jesus de Miguel."
-    },
-    {
-      "title": "Trump says US will stop giving Israel aid after year-end",
-      "url": "https://www.aljazeera.com/news/2026/11/3/trump-announces-that-us-will-stop-paying-israel-after-year-end?traffic_source=rss",
-      "date": "November 3, 2026",
-      "description": "Military aid to Israel and campaign contributions from Israel’s backers to US candidates have animated political debate."
-    },
-    {
-      "title": "Saudi Pro League postpones matches after Asian Cup rescheduling",
-      "url": "https://www.aljazeera.com/sports/2026/11/3/saudi-pro-league-postpones-matches-after-asian-cup-rescheduling?traffic_source=rss",
-      "date": "November 3, 2026",
-      "description": "League delays matches after revised Asian Cup dates create 'additional flexibility in the domestic football calendar'."
     }
   ]
 }
