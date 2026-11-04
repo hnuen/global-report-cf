@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-04T17:08:34.788Z",
+  "updatedAt": "2026-11-04T19:08:22.230Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261104",
+      "code": "20261104",
+      "title": "Iran-related Designations; Updates to Certain Iran-related Listings; Publication of Iran-related OFAC Alert; Issuance of Amended Venezuela-related General License and Frequently Asked Question",
+      "date": "November 04, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261029",
       "code": "20261029",
@@ -54,12 +60,6 @@
       "code": "20261014",
       "title": "Venezuela-related Designation Removal",
       "date": "October 14, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20261013",
-      "code": "20261013",
-      "title": "Counter Narcotics and Counter Terrorism Designations",
-      "date": "October 13, 2026"
     }
   ],
   "civilPenalties": [
@@ -1137,7 +1137,7 @@
     "iran-sanctions": {
       "name": "Iran Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions",
-      "lastUpdated": "Oct 29, 2026",
+      "lastUpdated": "Nov 04, 2026",
       "status": "active",
       "statusLabel": "Active",
       "statusReason": "",
@@ -2562,7 +2562,7 @@
     "venezuela-related-sanctions": {
       "name": "Venezuela-Related Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/venezuela-related-sanctions",
-      "lastUpdated": "Oct 16, 2026",
+      "lastUpdated": "Nov 04, 2026",
       "status": "active",
       "statusLabel": "Active",
       "statusReason": "",
@@ -2717,7 +2717,7 @@
         },
         {
           "citation": "84 FR 64415-19",
-          "description": "Publication of Amended Venezuela Sanctions Regulations 80 FR 39676-15 - Final Rule Issuing the Venezuela Sanctions Regulations Recent Actions regarding Venezuela-Related Sanctions Issuance of Amended Venezuela-related General License and Frequently Asked Question Release Date: Oct 16, 2026 Venezuela",
+          "description": "Publication of Amended Venezuela Sanctions Regulations 80 FR 39676-15 - Final Rule Issuing the Venezuela Sanctions Regulations Recent Actions regarding Venezuela-Related Sanctions Iran-related Designations; Updates to Certain Iran-related Listings; Publication of Iran-related OFAC Alert; Issuance of",
           "year": "2019",
           "glNumbers": []
         }
@@ -2750,11 +2750,11 @@
           "dateConfident": true
         },
         {
-          "number": "5Z",
-          "title": "Authorizing Certain Transactions Related to the Petróleos de Venezuela, S.A. 2020 8.5 Percent Bond on or After November 5, 2026",
-          "date": "August 3, 2026",
+          "number": "5A",
+          "title": "Venezuela General License 5AA",
+          "date": "September 16, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/936946/download?inline",
+          "url": "https://ofac.treasury.gov/media/937321/download?inline",
           "datePdf": true,
           "dateConfident": true
         },
@@ -3237,10 +3237,10 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "Zelensky gives Melania Trump Ukraine's highest award after Oleshky ceasefire",
-      "url": "https://www.bbc.co.uk/news/articles/cm87zvpzwq0no?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Ukraine says bodycam video shows deadly Russian double-tap bombing",
+      "url": "https://www.bbc.co.uk/news/articles/c98rz6penv86o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 4, 2026",
-      "description": "Russian and Ukrainian delegations will meet the US first lady at the White House on Thursday."
+      "description": "At least 40 people were killed and another 30 may still be under the rubble after Monday's attack on a Ukrainian village, Kyiv says."
     },
     {
       "title": "Iran's chief negotiator says Americans voted 'no to war'",
@@ -3275,19 +3275,31 @@
   ],
   "ajNews": [
     {
+      "title": "Presidential hopeful Vance appears to question Iran war after polls debacle",
+      "url": "https://www.aljazeera.com/news/2026/11/4/presidential-hopeful-vance-appears-to-question-iran-war-after-polls-debacle?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "Vance cited trusted pollster saying Iran war, Israel ties were top of mind for Trump voters swinging to Democrats."
+    },
+    {
+      "title": "Photos: Iran marks US embassy takeover with rallies against US, Israel",
+      "url": "https://www.aljazeera.com/gallery/2026/11/4/photos-iran-marks-us-embassy-takeover-with-rallies-against-america-israel?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "Tehran rallies see slogans, flag burnings and claims of US-Israeli defeats amid historic embassy takeover anniversary."
+    },
+    {
       "title": "Ukrainian strikes kill three in Russia’s Belgorod region",
       "url": "https://www.aljazeera.com/news/2026/11/4/ukrainian-strikes-kill-three-in-russias-belgorod-region?traffic_source=rss",
       "date": "November 4, 2026",
       "description": "Russian strikes also cut power to Ukrainian cities as Moscow claims 700 Ukrainian drones downed across multiple regions."
     },
     {
-      "title": "No regrets: Trump says Iran war justified despite polls drubbing",
+      "title": "Trump says Iran war justified despite polls drubbing",
       "url": "https://www.aljazeera.com/news/2026/11/4/no-regrets-trump-says-iran-war-justified-despite-polls-drubbing?traffic_source=rss",
       "date": "November 4, 2026",
       "description": "Trump acknowledges Iran war played role in defeats but says he would launch it again."
     },
     {
-      "title": "Iranian leaders welcome US midterms, but Trump may still attack",
+      "title": "Iranian leaders welcome US midterm results, but Trump may still attack",
       "url": "https://www.aljazeera.com/news/2026/11/4/iranian-leaders-welcome-us-midterms-but-trump-may-still-attack?traffic_source=rss",
       "date": "November 4, 2026",
       "description": "Tehran views midterm results as a rejection of Trump's 'war on Iran', signalling US frustration with foreign policy."
@@ -3297,24 +3309,6 @@
       "url": "https://www.aljazeera.com/sports/2026/11/4/ice-hockey-federation-reiterates-opposition-to-reinstatement-of-russia?traffic_source=rss",
       "date": "November 4, 2026",
       "description": "The CAS ruled last week to overturn governing body's exclusion of ‌Russia over its 2022 invasion of Ukraine."
-    },
-    {
-      "title": "Iran’s Khamenei warns Trump loss at polls won’t end US hostility",
-      "url": "https://www.aljazeera.com/news/2026/11/4/iran-hails-us-voters-rejecting-war-while-khamenei-warns-hostility-wont-end?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Iranian supreme leader says US policy won't change amid Tehran 'Fight Against Global Arrogance' day rallies"
-    },
-    {
-      "title": "Can Democrats stop Iran war, reverse Trump’s tariffs after midterms win?",
-      "url": "https://www.aljazeera.com/news/2026/11/4/tariffs-to-iran-war-can-democrats-reverse-trump-policy-with-midterms-win?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Democrats can block Trump's legislative agenda, launch investigations but don't have the numbers to override his veto."
-    },
-    {
-      "title": "Trump admits Iran war hurt Republican vote, vows to veto ‘insane’ bills",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/trump-admits-iran-war-hurt-republican-vote-vows-to-veto-insane-bills?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "US President Donald Trump has admitted that the war on Iran contributed to Republican losses in the midterm elections."
     }
   ],
   "occNews": [
@@ -3437,16 +3431,22 @@
       "description": "Some Republicans tell the BBC the president's focus on his legacy and indifference to voter concerns cost them."
     },
     {
-      "title": "James Talarico becomes first Democrat to win Texas Senate seat since 1988",
-      "url": "https://www.bbc.co.uk/news/articles/c6n8dnn09jg7o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "US midterm results a 'victory' for Canadians hopeful of tariff relief",
+      "url": "https://www.bbc.co.uk/news/articles/cqev3mw3e0kdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 4, 2026",
-      "description": "\"This wasn't just a tsunami, not just a referendum, but this was a bloodbath,\" one expert told the BBC on Democrats' historic wins in Texas."
+      "description": "With Canada-US trade talks back on, Tuesday’s midterm Democratic wave puts pressure on the White House to come to a deal."
     },
     {
-      "title": "Left-wing Democrat Abdul El-Sayed wins in Michigan to become first Muslim senator",
-      "url": "https://www.bbc.co.uk/news/articles/c893z55pxrewo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "French blood storage impacted by freezer hacks as theories swirl about culprits",
+      "url": "https://www.bbc.co.uk/news/articles/c8vgxyvz6y9ro?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 4, 2026",
-      "description": "El-Sayed bested Republican Mike Rogers to become the first Muslim senator in US history."
+      "description": "The French Blood Establishment (EFS) said cold rooms storing blood were impacted by hackers."
+    },
+    {
+      "title": "'Most difficult days of my life' for keeper Owono",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c6zxjz40l280o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 4, 2026",
+      "description": "FC Andorra goalkeeper Jesus Owono puts out a statement through his club, expressing his sorrow and pain after Tenerife forward Jesus de Miguel's death."
     },
     {
       "title": "Israel's president begins consultations with parties after election deadlock",
@@ -3461,10 +3461,10 @@
       "description": "On Wednesday morning, Delhi's air quality index reading stood at 377, in the \"very poor\" category."
     },
     {
-      "title": "Nadal set to join Real Madrid board of directors",
-      "url": "https://www.bbc.co.uk/sport/articles/cmy56zekeneqo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Secret police files released in Hungary, 37 years after fall of communism",
+      "url": "https://www.bbc.co.uk/news/articles/c977p01kgmmko?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 4, 2026",
-      "description": "Tennis great Rafael Nadal is set to join the board of Spanish football giants Real Madrid."
+      "description": "Critics say the move comes too late, that the files themselves are incomplete, and the move risks sowing division and causing unnecessary anguish."
     },
     {
       "title": "ANC under pressure to reverse South Africa decline",
@@ -3473,22 +3473,16 @@
       "description": "As South Africans vote in local elections, residents tell the BBC they are tired of the poor quality of services they get."
     },
     {
+      "title": "Nadal set to join Real Madrid board of directors",
+      "url": "https://www.bbc.co.uk/sport/articles/cmy56zekeneqo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 4, 2026",
+      "description": "Tennis great Rafael Nadal is set to join the board of Spanish football giants Real Madrid."
+    },
+    {
       "title": "Sharp objects found in Halloween sweets in three European nations",
       "url": "https://www.bbc.co.uk/news/articles/cvglw7x239pwo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 4, 2026",
       "description": "Dozens of cases are reported in Austria, Germany and Hungary, including a nine-year-old girl hurting her tongue while eating chocolate containing a pin."
-    },
-    {
-      "title": "Secret police files released in Hungary, 47 years after fall of communism",
-      "url": "https://www.bbc.co.uk/news/articles/c977p01kgmmko?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 4, 2026",
-      "description": "Critics say the move comes too late, that the files themselves are incomplete, and the move risks sowing division and causing unnecessary anguish."
-    },
-    {
-      "title": "Mother of Ghanaian boy killed in US 'wants justice' as she flies for funeral",
-      "url": "https://www.bbc.co.uk/news/articles/cq62yjnmg4ego?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 4, 2026",
-      "description": "Police have not made any arrests and an investigation is ongoing as authorities search for three teenage boys."
     },
     {
       "title": "'I'm not a quitter': Kim Kardashian on retaking the bar exam",
@@ -3539,10 +3533,10 @@
       "description": "Democrats cheered as they picked up victories in Republican states. Tears were shed as Republican losses mounted."
     },
     {
-      "title": "Why Kim Kardashian came back to 'the worst TV drama ever'",
-      "url": "https://www.bbc.co.uk/news/articles/cxvgd4drmevro?at_medium=RSS&amp;at_campaign=rss",
+      "title": "The young politicians with African roots making history in the US midterms",
+      "url": "https://www.bbc.co.uk/news/articles/cmrly6j6lpydo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 4, 2026",
-      "description": "The media personality and businesswoman says she's worked on her acting for series two of All's Fair."
+      "description": "For some young Africans, these victories offer a glimpse of what a new generation of voters could do at home."
     },
     {
       "title": "Elon Musk's millions fail to deliver Texas for the Republicans in fierce midterms",
@@ -3803,6 +3797,48 @@
       "description": "Yasmin Rufo asks New Yorkers who picks up the bill on a first date, and how much they usually spend."
     },
     {
+      "title": "The biggest winners and losers of the 2026 US midterms",
+      "url": "https://www.aljazeera.com/news/2026/11/4/the-biggest-winners-and-losers-of-the-2026-us-midterms?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "Historic firsts, surprise victories and expensive defeats as Democrats take control of Congress."
+    },
+    {
+      "title": "Key moments as Democrats sweep to victories in US midterms",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/key-moments-as-democrats-sweep-to-victories-in-us-midterms?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "Democrats have been celebrating across the US after a series of victories saw them take control of both chambers."
+    },
+    {
+      "title": "Danish students join European protest wave against education funding cuts",
+      "url": "https://www.aljazeera.com/news/2026/11/4/danish-students-join-european-protest-wave-against-education-funding-cuts?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "Danish government proposes scrapping allowance scheme for students from wealthier families."
+    },
+    {
+      "title": "Netanyahu bet on Trump – but both lost",
+      "url": "https://www.aljazeera.com/news/2026/11/4/netanyahu-bet-on-trump-but-both-lost?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "Israel's political establishment grapples with US voter rejection of White House ally and own contribution towards it."
+    },
+    {
+      "title": "Palestinian citizens of Israel face intimidation after election success",
+      "url": "https://www.aljazeera.com/news/2026/11/4/palestinians-face-intimidation-after-election-success?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "After winning a record number of parliament seats, Palestinian-led parties face campaign against them."
+    },
+    {
+      "title": "Owono enduring ‘hardest days of my life’ after De Miguel death",
+      "url": "https://www.aljazeera.com/sports/2026/11/4/owono-enduring-hardest-days-of-my-life-after-de-miguel-death?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "Tenerife striker De Miguel died on Tuesday as a result of injuries from a collision with FC Andorra goalkeeper Owono."
+    },
+    {
+      "title": "The new Congress may struggle to push a progressive agenda",
+      "url": "https://www.aljazeera.com/opinions/2026/11/4/the-new-congress-may-struggle-to-push-a-progressive-agenda?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "Major change on key issues, such as Israel-Palestine, will be limited by the president and the Democratic establishment."
+    },
+    {
       "title": "Democratic voters celebrate El-Sayed’s Michigan win in election ‘blue wave’",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/democratic-voters-celebrate-el-sayeds-michigan-win-in-election-blue?traffic_source=rss",
       "date": "November 4, 2026",
@@ -3873,42 +3909,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/jerusalem-daily-mass-arrests-across-occupied-west-bank?traffic_source=rss",
       "date": "November 4, 2026",
       "description": "Israeli forces bomb Gaza displacement camps and arrest 45 people in the occupied West Bank."
-    },
-    {
-      "title": "Why are Europe’s governments struggling to respond to growing protests?",
-      "url": "https://www.aljazeera.com/news/2026/11/4/why-are-europes-governments-struggling-to-respond-to-growing-protests?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Protests intensify as governments prioritise security measures over addressing underlying social and economic concerns."
-    },
-    {
-      "title": "Tennis great Rafael Nadal set to join Real Madrid board",
-      "url": "https://www.aljazeera.com/sports/2026/11/4/tennis-great-rafael-nadal-set-to-join-real-madrid-board?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "The 22-time Grand Slam winner is to be ratified onto club's board of directors."
-    },
-    {
-      "title": "UK Supreme Court hears appeal against Palestine Action’s proscription",
-      "url": "https://www.aljazeera.com/news/2026/11/4/uk-supreme-court-hears-appeal-against-palestine-actions-proscription?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Rights activists say UK decision against Palestine Action is a 'misuse of terrorism powers'."
-    },
-    {
-      "title": "Tenerife’s Jesus de Miguel remembered in moving tributes by football world",
-      "url": "https://www.aljazeera.com/sports/2026/11/4/tenerifes-jesus-de-miguel-remembered-in-moving-tributes-by-football-world?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "The 30-year-old died on Tuesday following an on-pitch collision with Andorra goalkeeper Jesus Owono."
-    },
-    {
-      "title": "America is heading for two years of constitutional brinkmanship",
-      "url": "https://www.aljazeera.com/opinions/2026/11/4/america-is-heading-for-two-years-of-constitutional-brinkmanship?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "An unlikely mix of political bargains and constitutional confrontation will define the next two years."
-    },
-    {
-      "title": "Musk makes light of defeats after record spend on Republican candidates",
-      "url": "https://www.aljazeera.com/news/2026/11/4/musk-makes-light-of-defeats-after-record-spend-on-republican-candidates?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Tesla and SpaceX founder Elon Musk is the world's richest man and the largest individual donor in the US midterms."
     }
   ]
 }
