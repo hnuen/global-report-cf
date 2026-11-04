@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T19:08:22.230Z",
+  "updatedAt": "2026-11-04T21:08:35.199Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261104",
@@ -3200,37 +3200,37 @@
     {
       "title": "EU adopts largest-ever package of listings against Russia",
       "url": "https://finance.ec.europa.eu/news/eu-adopts-largest-ever-package-listings-against-russia-2026-10-12_en",
-      "date": "October 13, 2026",
+      "date": "October 11, 2026",
       "description": "The package targets almost 1600 individuals and entities in Russia’s military‑industrial complex."
     },
     {
       "title": "EU adopts 21st package of sanctions against Russia",
       "url": "https://finance.ec.europa.eu/news/eu-adopts-21st-package-sanctions-against-russia-2026-07-23_en",
-      "date": "September 10, 2026",
+      "date": "July 22, 2026",
       "description": "The Commission welcomes the Council's adoption of the 21st Russia sanctions package, that further restricts Russia's ability to fund its illegal war and to carry out attacks on Ukrainian civilians and civilian infrastructure."
     },
     {
       "title": "Statement on the seventh Sanctions Coordinators Forum",
       "url": "https://finance.ec.europa.eu/news/statement-seventh-sanctions-coordinators-forum-2026-04-30_en",
-      "date": "April 30, 2026",
+      "date": "April 29, 2026",
       "description": "Today, EU Sanctions Envoy, David O’Sullivan, convened the sixth Sanctions Coordinators Forum, gathering high‑level representatives from all EU Member States and a broad coalition of international partners. Representatives of the Government of Ukraine joined for a dedicated session."
     },
     {
       "title": "Statement by Commissioner Albuquerque on the outcomes of the ninth high-level meeting on sanctions implementation",
       "url": "https://finance.ec.europa.eu/news/statement-commissioner-albuquerque-outcomes-ninth-high-level-meeting-sanctions-implementation-2026-04-30_en",
-      "date": "April 30, 2026",
+      "date": "April 29, 2026",
       "description": "High‑level representatives from Member States, alongside the Commission and the European External Action Service, came together to share best practices and success stories, and discuss challenges."
     },
     {
       "title": "EU adopts 20th package of sanctions against Russia",
       "url": "https://finance.ec.europa.eu/news/eu-adopts-20th-package-sanctions-against-russia-2026-04-23_en",
-      "date": "April 24, 2026",
+      "date": "April 22, 2026",
       "description": "The Commission welcomes the Council's adoption of the 20th Russia sanctions package, that puts further pressure on Russia to engage in negotiations and do so on terms acceptable for Ukraine."
     },
     {
       "title": "Commission welcomes new sanctions against Iran",
       "url": "https://finance.ec.europa.eu/news/commission-welcomes-new-sanctions-against-iran-2026-01-30_en",
-      "date": "January 30, 2026",
+      "date": "January 29, 2026",
       "description": "The restrictive measures consist of an asset freeze, travel bans to the EU, and a prohibition to make funds or economic resources available to those listed."
     }
   ],
@@ -3274,6 +3274,24 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Ukraine raises death toll from Russian strike on Zaporizhia to 40 people",
+      "url": "https://www.aljazeera.com/news/2026/11/4/ukraine-raises-death-toll-from-russian-strike-on-zaporizhia-to-40-people?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "Dozens may still be under the rubble in Komyshuvakha. Rescue efforts ongoing despite interruptions by Russian drones."
+    },
+    {
+      "title": "Will the US resume its attacks on Iran?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/11/4/will-the-us-resume-its-attacks-on-iran?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "Tehran says it's ready with a maximum deterrence plan."
+    },
+    {
+      "title": "Iranians celebrate Democrat victory in US midterms",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/iranians-celebrate-democrat-victory-in-us-midterms?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "US President Donald Trump acknowledged the Republicans’ crushing defeat was partly due to the war on Iran."
+    },
     {
       "title": "Presidential hopeful Vance appears to question Iran war after polls debacle",
       "url": "https://www.aljazeera.com/news/2026/11/4/presidential-hopeful-vance-appears-to-question-iran-war-after-polls-debacle?traffic_source=rss",
@@ -3325,36 +3343,7 @@
       "description": "The Office of the Comptroller of the Currency (OCC) today announced a $750 million civil money penalty against Bank of America, N.A. (bank), for violations of the Bank Secrecy Act and its implementing regulations, including 12 CFR 21.21 and 12 CFR 21.11. This amount is the largest in OCC history."
     }
   ],
-  "economicsNews": [
-    {
-      "title": "Federal Reserve issues FOMC statement",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
-      "date": "October 28, 2026",
-      "description": "Federal Reserve issues FOMC statement",
-      "category": "Monetary Policy"
-    },
-    {
-      "title": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
-      "date": "October 13, 2026",
-      "description": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
-      "category": "Monetary Policy"
-    },
-    {
-      "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
-      "date": "October 7, 2026",
-      "description": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
-      "category": "Monetary Policy"
-    },
-    {
-      "title": "Federal Reserve issues FOMC statement",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
-      "date": "September 16, 2026",
-      "description": "Federal Reserve issues FOMC statement",
-      "category": "Monetary Policy"
-    }
-  ],
+  "economicsNews": [],
   "bisNews": [
     {
       "title": "Order Renewing Order Temporarily Denying Export Privileges",
@@ -3797,6 +3786,36 @@
       "description": "Yasmin Rufo asks New Yorkers who picks up the bill on a first date, and how much they usually spend."
     },
     {
+      "title": "Democratic progressive wing notches win in California Central Valley",
+      "url": "https://www.aljazeera.com/news/2026/11/4/democratic-progressive-wing-notches-win-in-california-central-valley?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "Campaign focused on cost of living issues and backlash over ICE raids pays dividends for progressive Randy Villegas."
+    },
+    {
+      "title": "Hakeem Jeffries promises ‘affordability’ focus after Democratic midterm win",
+      "url": "https://www.aljazeera.com/news/2026/11/4/hakeem-jeffries-promises-affordability-focus-after-democratic-midterm-win?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "Democratic leader says party expects at least 255 House seats and promises to deliver on affordability."
+    },
+    {
+      "title": "WHO approves trials for two new Ebola vaccines",
+      "url": "https://www.aljazeera.com/news/2026/11/4/who-approves-trials-for-two-new-ebola-vaccines?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "Two new vaccines were designed for the Bundibugyo virus that has killed more than 5,300 in the DR Congo."
+    },
+    {
+      "title": "US midterms 2026: What key races remain undecided?",
+      "url": "https://www.aljazeera.com/news/2026/11/4/us-midterms-2026-what-key-races-remain-undecided?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "Key races in Alaska, Mississippi, Kansas and California remain uncounted."
+    },
+    {
+      "title": "How US midterm results could reshape Trump’s foreign policy",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/aje-onl-nf_how-us-midterm-could-reshape-trumps-foreign-policy-041126?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "US midterm results could reshape Trump’s political landscape and increase congressional scrutiny of his foreign policy."
+    },
+    {
       "title": "The biggest winners and losers of the 2026 US midterms",
       "url": "https://www.aljazeera.com/news/2026/11/4/the-biggest-winners-and-losers-of-the-2026-us-midterms?traffic_source=rss",
       "date": "November 4, 2026",
@@ -3861,54 +3880,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/4/is-trump-really-a-lame-duck-after-losing-both-houses-of-us-congress?traffic_source=rss",
       "date": "November 4, 2026",
       "description": "Despite losing legislative control, the US president still has strong executive powers to push his agenda forward."
-    },
-    {
-      "title": "Trump loses control of Congress",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/trump-loses-control-of-congress?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Democrats have made historic gains in the US midterms, dealing a major setback to President Donald Trump."
-    },
-    {
-      "title": "Why is the western US still counting votes after election day?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/why-is-the-western-us-still-counting-votes-after-election-day?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Why is the western US still counting votes after election day?"
-    },
-    {
-      "title": "Yemeni government forces claim control of strategic al-Jawf mountain range",
-      "url": "https://www.aljazeera.com/news/2026/11/4/yemeni-government-forces-claim-control-of-strategic-al-jawf-mountain-range?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "The advance on al-Dahida heights, a strategic highland, comes as fighting escalates in al-Dhalea, Lahij and Taiz."
-    },
-    {
-      "title": "How big is the Republican midterms loss, and is there a silver lining?",
-      "url": "https://www.aljazeera.com/news/2026/11/4/how-big-is-the-republican-midterms-loss-and-is-there-a-silver-lining?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "The Republicans haven't been this weakened in Congress since 1990, but they did have some wins."
-    },
-    {
-      "title": "Spanish Transport Minister resigns over train crash disasters",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/spanish-transport-minister-resigns-over-train-crash-disasters?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Spanish Transport Minister resigns over train crash disasters"
-    },
-    {
-      "title": "Hebron’s Israeli rooftop settlers threaten the city’s Palestinian identity",
-      "url": "https://www.aljazeera.com/news/2026/11/4/hebrons-israeli-rooftop-settlers-threaten-the-citys-palestinian-identity?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Israeli settlers have expanded in Hebron's Old City, with Palestinian residents' presence under threat."
-    },
-    {
-      "title": "Gaza volunteer Adam Hamawy wins historic US Congress seat",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/gaza-volunteer-adam-hamawy-wins-historic-us-congress-seat?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Egyptian-American surgeon Adam Hamawy has won New Jersey’s 12th Congressional District."
-    },
-    {
-      "title": "Jerusalem Daily: Mass arrests across occupied West Bank",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/jerusalem-daily-mass-arrests-across-occupied-west-bank?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Israeli forces bomb Gaza displacement camps and arrest 45 people in the occupied West Bank."
     }
   ]
 }
