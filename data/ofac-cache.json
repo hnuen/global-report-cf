@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T21:08:35.199Z",
+  "updatedAt": "2026-11-04T22:08:27.358Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261104",
@@ -3275,6 +3275,12 @@
   ],
   "ajNews": [
     {
+      "title": "US midterm election results live: Trump blames Iran war after losses",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/11/4/us-midterm-election-results-live-trump-reacts-as-more-results-awaited?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "A Democratic romp has rocked the US political landscape, but several closely contested races remain too close to call."
+    },
+    {
       "title": "Ukraine raises death toll from Russian strike on Zaporizhia to 40 people",
       "url": "https://www.aljazeera.com/news/2026/11/4/ukraine-raises-death-toll-from-russian-strike-on-zaporizhia-to-40-people?traffic_source=rss",
       "date": "November 4, 2026",
@@ -3296,7 +3302,7 @@
       "title": "Presidential hopeful Vance appears to question Iran war after polls debacle",
       "url": "https://www.aljazeera.com/news/2026/11/4/presidential-hopeful-vance-appears-to-question-iran-war-after-polls-debacle?traffic_source=rss",
       "date": "November 4, 2026",
-      "description": "Vance cited trusted pollster saying Iran war, Israel ties were top of mind for Trump voters swinging to Democrats."
+      "description": "US VP Vance cites trusted pollster saying Iran war, Israel ties were top of mind for Trump voters swinging to Democrats."
     },
     {
       "title": "Photos: Iran marks US embassy takeover with rallies against US, Israel",
@@ -3309,24 +3315,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/4/ukrainian-strikes-kill-three-in-russias-belgorod-region?traffic_source=rss",
       "date": "November 4, 2026",
       "description": "Russian strikes also cut power to Ukrainian cities as Moscow claims 700 Ukrainian drones downed across multiple regions."
-    },
-    {
-      "title": "Trump says Iran war justified despite polls drubbing",
-      "url": "https://www.aljazeera.com/news/2026/11/4/no-regrets-trump-says-iran-war-justified-despite-polls-drubbing?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Trump acknowledges Iran war played role in defeats but says he would launch it again."
-    },
-    {
-      "title": "Iranian leaders welcome US midterm results, but Trump may still attack",
-      "url": "https://www.aljazeera.com/news/2026/11/4/iranian-leaders-welcome-us-midterms-but-trump-may-still-attack?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Tehran views midterm results as a rejection of Trump's 'war on Iran', signalling US frustration with foreign policy."
-    },
-    {
-      "title": "Ice hockey federation reiterates opposition to reinstatement of Russia",
-      "url": "https://www.aljazeera.com/sports/2026/11/4/ice-hockey-federation-reiterates-opposition-to-reinstatement-of-russia?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "The CAS ruled last week to overturn governing body's exclusion of ‌Russia over its 2022 invasion of Ukraine."
     }
   ],
   "occNews": [
@@ -3343,7 +3331,36 @@
       "description": "The Office of the Comptroller of the Currency (OCC) today announced a $750 million civil money penalty against Bank of America, N.A. (bank), for violations of the Bank Secrecy Act and its implementing regulations, including 12 CFR 21.21 and 12 CFR 21.11. This amount is the largest in OCC history."
     }
   ],
-  "economicsNews": [],
+  "economicsNews": [
+    {
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "date": "October 28, 2026",
+      "description": "Federal Reserve issues FOMC statement",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
+      "date": "October 13, 2026",
+      "description": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
+      "date": "October 7, 2026",
+      "description": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "date": "September 16, 2026",
+      "description": "Federal Reserve issues FOMC statement",
+      "category": "Monetary Policy"
+    }
+  ],
   "bisNews": [
     {
       "title": "Order Renewing Order Temporarily Denying Export Privileges",
@@ -3528,10 +3545,16 @@
       "description": "For some young Africans, these victories offer a glimpse of what a new generation of voters could do at home."
     },
     {
-      "title": "Elon Musk's millions fail to deliver Texas for the Republicans in fierce midterms",
+      "title": "Pound rises to its highest level since the Brexit referendum",
+      "url": "https://www.bbc.co.uk/news/articles/c6lykq2qjn2vo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 4, 2026",
+      "description": "Pound reaches highest level against a basket of currencies since the Brexit referendum a decade ago"
+    },
+    {
+      "title": "Elon Musk's millions failed to deliver Republican wins in fierce midterms",
       "url": "https://www.bbc.co.uk/news/articles/cv8ez3p3ge5ko?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 4, 2026",
-      "description": "The billionaire's political action committee (Pac) contributed $47m (£35m) to Ken Paxton's campaign."
+      "description": "Musk spent nearly $500m in the 2026 US midterm elections, an individual election spending record."
     },
     {
       "title": "Poundland owner in crunch talks as retailer's collapse looms",
@@ -3786,6 +3809,24 @@
       "description": "Yasmin Rufo asks New Yorkers who picks up the bill on a first date, and how much they usually spend."
     },
     {
+      "title": "Social media reacts to Democrats’ takeover of US Congress",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/social-media-reacts-to-democrats-takeover-of-us-congress?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "Social media is awash with reactions to Democrats’ sweeping midterm gains."
+    },
+    {
+      "title": "Israel restricting treatment for 1,100 child amputees in Gaza: NGO",
+      "url": "https://www.aljazeera.com/news/2026/11/4/israel-restricting-treatment-for-1100-child-amputees-in-gaza-ngo?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "Israeli restrictions on travel and medical evacuations prevent children in Gaza from being treated abroad."
+    },
+    {
+      "title": "Democrat leaders hail midterm election success",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/aje-onl-nf_democrat-leaders-hail-midterm-election-success-041126?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "The top Democrats in the two chambers of US Congress have been hailing their party’s resounding victory in the midterms."
+    },
+    {
       "title": "Democratic progressive wing notches win in California Central Valley",
       "url": "https://www.aljazeera.com/news/2026/11/4/democratic-progressive-wing-notches-win-in-california-central-valley?traffic_source=rss",
       "date": "November 4, 2026",
@@ -3874,12 +3915,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/we-are-still-red-floridas-first-black-governor-upon-win?traffic_source=rss",
       "date": "November 4, 2026",
       "description": "US Republican Byron Donalds reiterated his support for President Donald Trump."
-    },
-    {
-      "title": "Is Trump really a ‘lame duck’ after losing both houses of US Congress?",
-      "url": "https://www.aljazeera.com/news/2026/11/4/is-trump-really-a-lame-duck-after-losing-both-houses-of-us-congress?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Despite losing legislative control, the US president still has strong executive powers to push his agenda forward."
     }
   ]
 }
