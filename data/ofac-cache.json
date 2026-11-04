@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T15:08:31.685Z",
+  "updatedAt": "2026-11-04T17:08:34.788Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261029",
@@ -3237,6 +3237,12 @@
   "unNotices": [],
   "bbcNews": [
     {
+      "title": "Zelensky gives Melania Trump Ukraine's highest award after Oleshky ceasefire",
+      "url": "https://www.bbc.co.uk/news/articles/cm87zvpzwq0no?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 4, 2026",
+      "description": "Russian and Ukrainian delegations will meet the US first lady at the White House on Thursday."
+    },
+    {
       "title": "Iran's chief negotiator says Americans voted 'no to war'",
       "url": "https://www.bbc.co.uk/news/articles/c6d934npl9y8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 4, 2026",
@@ -3255,12 +3261,6 @@
       "description": "Both Ukraine and Russia say their air raid alert apps were cyber-attacked - Joe Tidy explains what we know so far."
     },
     {
-      "title": "Why a US-Russia showdown left Morocco celebrating",
-      "url": "https://www.bbc.co.uk/news/articles/cqp8genleg2ro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 3, 2026",
-      "description": "An impasse between the US and Russia at the UN means its peacekeeping mission in Western Sahara has ended after 35 years."
-    },
-    {
       "title": "North Korea denies being behind record $6.3bn Binance hack",
       "url": "https://www.bbc.co.uk/news/articles/c6rey4v53exgo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 3, 2026",
@@ -3275,10 +3275,34 @@
   ],
   "ajNews": [
     {
-      "title": "Iran hails US voters rejecting war while Khamenei warns hostility won’t end",
+      "title": "Ukrainian strikes kill three in Russia’s Belgorod region",
+      "url": "https://www.aljazeera.com/news/2026/11/4/ukrainian-strikes-kill-three-in-russias-belgorod-region?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "Russian strikes also cut power to Ukrainian cities as Moscow claims 700 Ukrainian drones downed across multiple regions."
+    },
+    {
+      "title": "No regrets: Trump says Iran war justified despite polls drubbing",
+      "url": "https://www.aljazeera.com/news/2026/11/4/no-regrets-trump-says-iran-war-justified-despite-polls-drubbing?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "Trump acknowledges Iran war played role in defeats but says he would launch it again."
+    },
+    {
+      "title": "Iranian leaders welcome US midterms, but Trump may still attack",
+      "url": "https://www.aljazeera.com/news/2026/11/4/iranian-leaders-welcome-us-midterms-but-trump-may-still-attack?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "Tehran views midterm results as a rejection of Trump's 'war on Iran', signalling US frustration with foreign policy."
+    },
+    {
+      "title": "Ice hockey federation reiterates opposition to reinstatement of Russia",
+      "url": "https://www.aljazeera.com/sports/2026/11/4/ice-hockey-federation-reiterates-opposition-to-reinstatement-of-russia?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "The CAS ruled last week to overturn governing body's exclusion of ‌Russia over its 2022 invasion of Ukraine."
+    },
+    {
+      "title": "Iran’s Khamenei warns Trump loss at polls won’t end US hostility",
       "url": "https://www.aljazeera.com/news/2026/11/4/iran-hails-us-voters-rejecting-war-while-khamenei-warns-hostility-wont-end?traffic_source=rss",
       "date": "November 4, 2026",
-      "description": "Iranian officials see Republican midterm losses in a positive light, but supreme leader says US policy will not shift."
+      "description": "Iranian supreme leader says US policy won't change amid Tehran 'Fight Against Global Arrogance' day rallies"
     },
     {
       "title": "Can Democrats stop Iran war, reverse Trump’s tariffs after midterms win?",
@@ -3291,18 +3315,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/trump-admits-iran-war-hurt-republican-vote-vows-to-veto-insane-bills?traffic_source=rss",
       "date": "November 4, 2026",
       "description": "US President Donald Trump has admitted that the war on Iran contributed to Republican losses in the midterm elections."
-    },
-    {
-      "title": "‘Seismic shift’: World reacts to US midterm election results",
-      "url": "https://www.aljazeera.com/news/2026/11/4/seismic-shift-world-reacts-to-us-midterm-election-results?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Iran's top negotiator says US voters sent a “NO TO WAR” message, as Trump's Democratic opponents take Congress."
-    },
-    {
-      "title": "Can Russia compete with the US, China and the EU in Africa?",
-      "url": "https://www.aljazeera.com/video/counting-the-cost/2026/11/4/can-russia-compete-with-the-us-china-and-the-eu-in-africa?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Moscow pledges more trade and investment in Africa, where leaders want local industries, technology and jobs."
     }
   ],
   "occNews": [
@@ -3437,10 +3449,10 @@
       "description": "El-Sayed bested Republican Mike Rogers to become the first Muslim senator in US history."
     },
     {
-      "title": "Florida Republicans fend off Democrats as state elects first black governor",
-      "url": "https://www.bbc.co.uk/news/articles/c9146d88pl32o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Israel's president begins consultations with parties after election deadlock",
+      "url": "https://www.bbc.co.uk/news/articles/c6z98z5z91ppo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 4, 2026",
-      "description": "Republican Byron Donalds, who was backed by President Donald Trump, will be the first black governor of Florida."
+      "description": "Herzog warns politicians that \"not every commitment and promise can be fulfilled\" if they want to avoid another election."
     },
     {
       "title": "Delhi air quality worsens ahead of Diwali as firework restrictions enter force",
@@ -3467,22 +3479,16 @@
       "description": "Dozens of cases are reported in Austria, Germany and Hungary, including a nine-year-old girl hurting her tongue while eating chocolate containing a pin."
     },
     {
+      "title": "Secret police files released in Hungary, 47 years after fall of communism",
+      "url": "https://www.bbc.co.uk/news/articles/c977p01kgmmko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 4, 2026",
+      "description": "Critics say the move comes too late, that the files themselves are incomplete, and the move risks sowing division and causing unnecessary anguish."
+    },
+    {
       "title": "Mother of Ghanaian boy killed in US 'wants justice' as she flies for funeral",
       "url": "https://www.bbc.co.uk/news/articles/cq62yjnmg4ego?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 4, 2026",
       "description": "Police have not made any arrests and an investigation is ongoing as authorities search for three teenage boys."
-    },
-    {
-      "title": "Killer who escaped Tennessee prison captured after week-long manhunt",
-      "url": "https://www.bbc.co.uk/news/articles/cmq8nj23v8qqo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 4, 2026",
-      "description": "Jacob Allen Morley was serving a life sentence for murder before he escaped over a prison fence."
-    },
-    {
-      "title": "Weapon or wine bottle? China disputes reports of artillery shell in Papua New Guinea",
-      "url": "https://www.bbc.co.uk/news/articles/cm0qkxzv3j99o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 4, 2026",
-      "description": "Papua New Guinea police had earlier dismissed speculation that the 32kg object was \"merely a dummy\"."
     },
     {
       "title": "'I'm not a quitter': Kim Kardashian on retaking the bar exam",
@@ -3537,12 +3543,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cxvgd4drmevro?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 4, 2026",
       "description": "The media personality and businesswoman says she's worked on her acting for series two of All's Fair."
-    },
-    {
-      "title": "How sporting events are being affected by Middle East conflict",
-      "url": "https://www.bbc.co.uk/sport/articles/ck0j0l65nzlvo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 3, 2026",
-      "description": "BBC Sport takes a look at how the ongoing conflict in the Middle East has affected sporting events in Saudi Arabia, Qatar, Bahrain and the wider area."
     },
     {
       "title": "Elon Musk's millions fail to deliver Texas for the Republicans in fierce midterms",
@@ -3803,6 +3803,36 @@
       "description": "Yasmin Rufo asks New Yorkers who picks up the bill on a first date, and how much they usually spend."
     },
     {
+      "title": "Democratic voters celebrate El-Sayed’s Michigan win in election ‘blue wave’",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/democratic-voters-celebrate-el-sayeds-michigan-win-in-election-blue?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "Democratic voters danced as they celebrated Abdul El-Sayed’s victory in Michigan."
+    },
+    {
+      "title": "US markets rise as Democrats sweep midterm elections",
+      "url": "https://www.aljazeera.com/economy/2026/11/4/us-markets-rise-as-democrats-sweep-midterm-elections?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "Nasdaq, Dow, and S&P 500 open higher after Democrats take control and Trump accepts results."
+    },
+    {
+      "title": "‘We are still red,’ Florida’s first Black governor upon win",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/we-are-still-red-floridas-first-black-governor-upon-win?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "US Republican Byron Donalds reiterated his support for President Donald Trump."
+    },
+    {
+      "title": "Is Trump really a ‘lame duck’ after losing both houses of US Congress?",
+      "url": "https://www.aljazeera.com/news/2026/11/4/is-trump-really-a-lame-duck-after-losing-both-houses-of-us-congress?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "Despite losing legislative control, the US president still has strong executive powers to push his agenda forward."
+    },
+    {
+      "title": "Trump loses control of Congress",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/trump-loses-control-of-congress?traffic_source=rss",
+      "date": "November 4, 2026",
+      "description": "Democrats have made historic gains in the US midterms, dealing a major setback to President Donald Trump."
+    },
+    {
       "title": "Why is the western US still counting votes after election day?",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/why-is-the-western-us-still-counting-votes-after-election-day?traffic_source=rss",
       "date": "November 4, 2026",
@@ -3879,48 +3909,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/4/musk-makes-light-of-defeats-after-record-spend-on-republican-candidates?traffic_source=rss",
       "date": "November 4, 2026",
       "description": "Tesla and SpaceX founder Elon Musk is the world's richest man and the largest individual donor in the US midterms."
-    },
-    {
-      "title": "‘Call me senator’: How Abdul El-Sayed beat Trump’s hate to create history",
-      "url": "https://www.aljazeera.com/news/2026/11/4/call-me-senator-how-abdul-el-sayed-beat-trumps-hate-to-create-history?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "The 42-year-old Democrat has defeated Republican Mike Rogers to become the first Muslim senator in the US."
-    },
-    {
-      "title": "Why Democrats may struggle to rein in Trump’s foreign policy",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/why-democrats-may-struggle-to-rein-in-trumps-foreign-policy?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "US President Donald Trump's foreign policy agenda faces new constraints after midterm losses."
-    },
-    {
-      "title": "Voters honour Renee Good and Alex Pretti at Minnesota memorials",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/voters-honour-renee-good-and-alex-pretti-at-minnesota-memorials?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Voters honour Renee Good and Alex Pretti at Minnesota memorials"
-    },
-    {
-      "title": "‘I will not delete my posts’: Inside Uganda’s crackdown on online critics",
-      "url": "https://www.aljazeera.com/news/2026/11/4/i-will-not-delete-my-posts-inside-ugandas-crackdown-on-online-critics?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Uganda’s online critics allege abductions and intimidation as families search for missing relatives."
-    },
-    {
-      "title": "Houthis’ monthlong siege on Taiz creating misery for trapped Yemenis",
-      "url": "https://www.aljazeera.com/news/2026/11/4/houthis-one-month-siege-on-taiz-is-creating-hell-for-yemenis-stuck-there?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Blockade prompts warnings of a 'catastrophe' as food, water, fuel and medical supplies are unable to reach city."
-    },
-    {
-      "title": "Who holds the power today? Governments or corporations?",
-      "url": "https://www.aljazeera.com/video/doha-debates/2026/11/4/who-holds-the-power-today-governments-or-corporations?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Who holds the power today? Governments or corporations?"
-    },
-    {
-      "title": "Democrats win control of House and Senate: Key US midterms takeaways",
-      "url": "https://www.aljazeera.com/news/2026/11/4/democrats-win-control-of-house-and-senate-key-us-midterms-takeaways?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "This is the first time in 20 years that a Republican president has lost both houses of US Congress."
     }
   ]
 }
