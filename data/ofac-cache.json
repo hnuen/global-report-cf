@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T22:08:27.358Z",
+  "updatedAt": "2026-11-05T13:08:20.838Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261104",
@@ -3234,8 +3234,21 @@
       "description": "The restrictive measures consist of an asset freeze, travel bans to the EU, and a prohibition to make funds or economic resources available to those listed."
     }
   ],
-  "unNotices": [],
+  "unNotices": [
+    {
+      "title": "Security Council, 10265th Meeting (AM) Yemen",
+      "url": "https://press.un.org/en/blog/sc16501",
+      "date": "November 5, 2026",
+      "description": "The Security Council will meet today at 10 a.m. for a briefing on the work of the Committee established pursuant to resolution 2140 (2014) concerning Yemen. The briefing is expected to focus on the implementation of sanctions, including an asset freeze, travel ban and targeted arms embargo, as well as the activities of the Committee's Panel of Experts. The meeting comes ahead of the 14 November expiry of the sanctions measures and the 15 December expiry of the Panel's mandate. Council members are expected to discuss sanctions implementation, including alleged violations of the arms embargo and threats to regional security."
+    }
+  ],
   "bbcNews": [
+    {
+      "title": "Vance walks Trump tightrope with scathing election critique blaming Iran war",
+      "url": "https://www.bbc.co.uk/news/articles/crz98zqkz7z0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 5, 2026",
+      "description": "The vice-president's blunt assessment of Republican election defeat marked one of the sharpest breaks with a sitting president in recent memory."
+    },
     {
       "title": "Ukraine says bodycam video shows deadly Russian double-tap bombing",
       "url": "https://www.bbc.co.uk/news/articles/c98rz6penv86o?at_medium=RSS&amp;at_campaign=rss",
@@ -3243,78 +3256,42 @@
       "description": "At least 40 people were killed and another 30 may still be under the rubble after Monday's attack on a Ukrainian village, Kyiv says."
     },
     {
-      "title": "Iran's chief negotiator says Americans voted 'no to war'",
-      "url": "https://www.bbc.co.uk/news/articles/c6d934npl9y8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 4, 2026",
-      "description": "\"We endorse this message,\" Mohammed Bagher Ghalibaf says, as Donald Trump acknowledges the conflict's role in the Republican Party's defeat."
-    },
-    {
-      "title": "Rwanda's army team removed from Africa league after US sanctions, NBA says",
-      "url": "https://www.bbc.co.uk/news/articles/c699zdx9knmpo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 4, 2026",
-      "description": "The US imposed sanctions on Rwanda's army over its role in the conflict in DR Congo."
-    },
-    {
       "title": "What we know about the alert app hack in Ukraine and Russia",
       "url": "https://www.bbc.co.uk/news/videos/crq5n6204g20o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 2, 2026",
       "description": "Both Ukraine and Russia say their air raid alert apps were cyber-attacked - Joe Tidy explains what we know so far."
-    },
-    {
-      "title": "North Korea denies being behind record $6.3bn Binance hack",
-      "url": "https://www.bbc.co.uk/news/articles/c6rey4v53exgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 3, 2026",
-      "description": "US government agencies and cyber analysts have blamed Pyongyang for the record-breaking heist."
-    },
-    {
-      "title": "Ryanair says it may freeze workers' pay and raise airfares",
-      "url": "https://www.bbc.co.uk/news/articles/cr0qkve1x224o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 2, 2026",
-      "description": "The airline says fuel prices may rise by €2bn in 2028 unless there is an end to the US-Israel war with Iran."
     }
   ],
   "ajNews": [
     {
-      "title": "US midterm election results live: Trump blames Iran war after losses",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/11/4/us-midterm-election-results-live-trump-reacts-as-more-results-awaited?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "A Democratic romp has rocked the US political landscape, but several closely contested races remain too close to call."
+      "title": "Iran, Gaza, Ukraine: What will US midterm results mean for these conflicts?",
+      "url": "https://www.aljazeera.com/news/2026/11/5/iran-gaza-ukraine-what-will-us-midterm-results-mean-for-these-conflicts?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Despite wins, Democrats lack the two-thirds majority needed to overturn a presidential veto and push through a law."
     },
     {
-      "title": "Ukraine raises death toll from Russian strike on Zaporizhia to 40 people",
-      "url": "https://www.aljazeera.com/news/2026/11/4/ukraine-raises-death-toll-from-russian-strike-on-zaporizhia-to-40-people?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Dozens may still be under the rubble in Komyshuvakha. Rescue efforts ongoing despite interruptions by Russian drones."
+      "title": "Congress defeat: How Trump’s allies are distancing themselves from Iran war",
+      "url": "https://www.aljazeera.com/news/2026/11/5/congress-defeat-how-trumps-allies-are-distancing-themselves-from-iran-war?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "US Vice President JD Vance blames the war for the midterm rout as Democrats prepare to use Congress to rein it in."
     },
     {
-      "title": "Will the US resume its attacks on Iran?",
-      "url": "https://www.aljazeera.com/video/inside-story/2026/11/4/will-the-us-resume-its-attacks-on-iran?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Tehran says it's ready with a maximum deterrence plan."
+      "title": "US sanctions Indian and Turkish firms accused of helping Iran",
+      "url": "https://www.aljazeera.com/news/2026/11/5/us-sanctions-indian-and-turkish-firms-accused-of-helping-iran?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "US Treasury says Indian couple faked ship registries for countries including Guyana and Laos to help Iranian tankers."
     },
     {
-      "title": "Iranians celebrate Democrat victory in US midterms",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/iranians-celebrate-democrat-victory-in-us-midterms?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "US President Donald Trump acknowledged the Republicans’ crushing defeat was partly due to the war on Iran."
+      "title": "Russia says it hit Ukrainian postal hub and ship as Ukraine strikes Ryazan",
+      "url": "https://www.aljazeera.com/news/2026/11/5/russia-says-it-hit-ukrainian-postal-hub-and-ship-as-ukraine-strikes-ryazan?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Injuries reported on both sides as Russia and Ukraine trade overnight drone strikes on energy and logistics sites."
     },
     {
-      "title": "Presidential hopeful Vance appears to question Iran war after polls debacle",
-      "url": "https://www.aljazeera.com/news/2026/11/4/presidential-hopeful-vance-appears-to-question-iran-war-after-polls-debacle?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "US VP Vance cites trusted pollster saying Iran war, Israel ties were top of mind for Trump voters swinging to Democrats."
-    },
-    {
-      "title": "Photos: Iran marks US embassy takeover with rallies against US, Israel",
-      "url": "https://www.aljazeera.com/gallery/2026/11/4/photos-iran-marks-us-embassy-takeover-with-rallies-against-america-israel?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Tehran rallies see slogans, flag burnings and claims of US-Israeli defeats amid historic embassy takeover anniversary."
-    },
-    {
-      "title": "Ukrainian strikes kill three in Russia’s Belgorod region",
-      "url": "https://www.aljazeera.com/news/2026/11/4/ukrainian-strikes-kill-three-in-russias-belgorod-region?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Russian strikes also cut power to Ukrainian cities as Moscow claims 700 Ukrainian drones downed across multiple regions."
+      "title": "South Korea plans to expand anti-piracy operations closer to Hormuz Strait",
+      "url": "https://www.aljazeera.com/news/2026/11/5/south-korea-plans-to-expand-anti-piracy-operations-closer-to-hormuz-strait?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Seoul proposes extending its Cheonghae unit’s patrols to waters near Oman’s Duqm amid US pressure over Iran war."
     }
   ],
   "occNews": [
@@ -3331,36 +3308,7 @@
       "description": "The Office of the Comptroller of the Currency (OCC) today announced a $750 million civil money penalty against Bank of America, N.A. (bank), for violations of the Bank Secrecy Act and its implementing regulations, including 12 CFR 21.21 and 12 CFR 21.11. This amount is the largest in OCC history."
     }
   ],
-  "economicsNews": [
-    {
-      "title": "Federal Reserve issues FOMC statement",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
-      "date": "October 28, 2026",
-      "description": "Federal Reserve issues FOMC statement",
-      "category": "Monetary Policy"
-    },
-    {
-      "title": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
-      "date": "October 13, 2026",
-      "description": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
-      "category": "Monetary Policy"
-    },
-    {
-      "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
-      "date": "October 7, 2026",
-      "description": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
-      "category": "Monetary Policy"
-    },
-    {
-      "title": "Federal Reserve issues FOMC statement",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
-      "date": "September 16, 2026",
-      "description": "Federal Reserve issues FOMC statement",
-      "category": "Monetary Policy"
-    }
-  ],
+  "economicsNews": [],
   "bisNews": [
     {
       "title": "Order Renewing Order Temporarily Denying Export Privileges",
@@ -3431,64 +3379,58 @@
   ],
   "regionsNews": [
     {
-      "title": "'This is a disaster': Angry Republicans blame Trump for midterms defeat",
-      "url": "https://www.bbc.co.uk/news/articles/c6x29rr8djy3o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "What Democrats can and can't do with their new power after taking Congress",
+      "url": "https://www.bbc.co.uk/news/articles/cq1kdgnn2xdeo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 4, 2026",
-      "description": "Some Republicans tell the BBC the president's focus on his legacy and indifference to voter concerns cost them."
+      "description": "Democrats can vote legislation through. But Trump still has veto power."
     },
     {
-      "title": "US midterm results a 'victory' for Canadians hopeful of tariff relief",
-      "url": "https://www.bbc.co.uk/news/articles/cqev3mw3e0kdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 4, 2026",
-      "description": "With Canada-US trade talks back on, Tuesday’s midterm Democratic wave puts pressure on the White House to come to a deal."
+      "title": "France holds new strikes and protests as unions demand immediate answers",
+      "url": "https://www.bbc.co.uk/news/articles/ckx2qzv835pgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 5, 2026",
+      "description": "Five of France's unions join a wave of strikes and protests in a national day of action."
     },
     {
-      "title": "French blood storage impacted by freezer hacks as theories swirl about culprits",
-      "url": "https://www.bbc.co.uk/news/articles/c8vgxyvz6y9ro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 4, 2026",
-      "description": "The French Blood Establishment (EFS) said cold rooms storing blood were impacted by hackers."
+      "title": "Ronaldo retires from Portugal duty",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cme8rxx2e1w9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 5, 2026",
+      "description": "Portugal legend Cristiano Ronaldo says \"the day has come for me to hand back the number seven shirt\"."
     },
     {
-      "title": "'Most difficult days of my life' for keeper Owono",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c6zxjz40l280o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 4, 2026",
-      "description": "FC Andorra goalkeeper Jesus Owono puts out a statement through his club, expressing his sorrow and pain after Tenerife forward Jesus de Miguel's death."
+      "title": "Joshua Wong, face of Hong Kong's pro-democracy protests, jailed for 10 years",
+      "url": "https://www.bbc.co.uk/news/articles/cwp9g3rlp8jlo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 5, 2026",
+      "description": "Wong, 30, is among hundreds of Hongkongers detained under the controversial national security law."
     },
     {
-      "title": "Israel's president begins consultations with parties after election deadlock",
-      "url": "https://www.bbc.co.uk/news/articles/c6z98z5z91ppo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Typhoons batter East Asia as El Niño makes Pacific 'burn with fever'",
+      "url": "https://www.bbc.co.uk/news/articles/cw33kgj7nkemo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 4, 2026",
-      "description": "Herzog warns politicians that \"not every commitment and promise can be fulfilled\" if they want to avoid another election."
+      "description": "Even for countries where typhoons are a way of life, the last few months have brought unusually wild weather."
     },
     {
-      "title": "Delhi air quality worsens ahead of Diwali as firework restrictions enter force",
-      "url": "https://www.bbc.co.uk/news/articles/c699z8792n7ro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 4, 2026",
-      "description": "On Wednesday morning, Delhi's air quality index reading stood at 377, in the \"very poor\" category."
+      "title": "Pope Leo hosts Bob Dylan at official residence in Rome",
+      "url": "https://www.bbc.co.uk/news/articles/cm0e035n13ylo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 5, 2026",
+      "description": "Pope Leo had previously quoted Dylan's work in the preface of a book warning against nuclear rearmament."
     },
     {
-      "title": "Secret police files released in Hungary, 37 years after fall of communism",
-      "url": "https://www.bbc.co.uk/news/articles/c977p01kgmmko?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 4, 2026",
-      "description": "Critics say the move comes too late, that the files themselves are incomplete, and the move risks sowing division and causing unnecessary anguish."
+      "title": "India's costliest film retells a beloved Hindu epic - but divides critics",
+      "url": "https://www.bbc.co.uk/news/articles/cm93zv62v1n7o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 5, 2026",
+      "description": "Easily the most anticipated Bollywood film of the year, Ramayana: Rise of a Legend is the first of two parts."
     },
     {
-      "title": "ANC under pressure to reverse South Africa decline",
-      "url": "https://www.bbc.co.uk/news/articles/cr4g1x6l77xyo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Mother and daughter die after suspected grizzly bear attack in Canada",
+      "url": "https://www.bbc.co.uk/news/articles/cqvgry8k5d01o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 4, 2026",
-      "description": "As South Africans vote in local elections, residents tell the BBC they are tired of the poor quality of services they get."
+      "description": "Authorities in British Columbia say evidence suggests an animal may have been involved in the women's deaths."
     },
     {
-      "title": "Nadal set to join Real Madrid board of directors",
-      "url": "https://www.bbc.co.uk/sport/articles/cmy56zekeneqo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 4, 2026",
-      "description": "Tennis great Rafael Nadal is set to join the board of Spanish football giants Real Madrid."
-    },
-    {
-      "title": "Sharp objects found in Halloween sweets in three European nations",
-      "url": "https://www.bbc.co.uk/news/articles/cvglw7x239pwo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 4, 2026",
-      "description": "Dozens of cases are reported in Austria, Germany and Hungary, including a nine-year-old girl hurting her tongue while eating chocolate containing a pin."
+      "title": "Was an Italian chef really fired over refusal to put pineapple on pizza?",
+      "url": "https://www.bbc.co.uk/news/videos/cmvg9yy8wpweo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 5, 2026",
+      "description": "The chef had stated that putting pineapple on pizza was \"offensive to his culture\"."
     },
     {
       "title": "'I'm not a quitter': Kim Kardashian on retaking the bar exam",
@@ -3503,28 +3445,28 @@
       "description": "The film star plays the leading role in a major new adaptation of the Indian epic Ramayana."
     },
     {
-      "title": "What Florida jet audio and flight data tells us about its final moments",
-      "url": "https://www.bbc.co.uk/news/videos/c52e9lgxjz82o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 2, 2026",
-      "description": "A private jet crashed in Florida on Sunday, killing all nine people on board, according to US authorities."
-    },
-    {
       "title": "'All this food is now useless': Piles of rubbish after shop freezers hit by cyber-attack",
       "url": "https://www.bbc.co.uk/news/videos/cmwyvrgk9p0ro?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 2, 2026",
       "description": "Dozens of supermarkets in seven European countries dumped huge quantities of food after refrigerators and freezers were targeted in a cyber-attack."
     },
     {
-      "title": "How America voted in maps and charts",
-      "url": "https://www.bbc.co.uk/news/articles/cm4g1j0n92qdo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 4, 2026",
-      "description": "See the maps and charts that show how America voted in the US midterm elections."
+      "title": "Why a US-funded vaccine trial on babies was cancelled in Guinea-Bissau",
+      "url": "https://www.bbc.co.uk/news/articles/cm0rlxq08ejko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 5, 2026",
+      "description": "The trial was condemned as \"unethical\" and \"neocolonial\" because half of the babies would not be given the vaccine."
     },
     {
-      "title": "Everything you need to know from the US midterm elections",
-      "url": "https://www.bbc.co.uk/news/articles/cmr4y92rgd9po?at_medium=RSS&amp;at_campaign=rss",
+      "title": "ANC under pressure to reverse South Africa decline",
+      "url": "https://www.bbc.co.uk/news/articles/cr4g1x6l77xyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 4, 2026",
-      "description": "Democrats secured some big wins - and a few historic firsts - earning congratulations from President Trump."
+      "description": "As South Africans vote in local elections, residents tell the BBC they are tired of the poor quality of services they get."
+    },
+    {
+      "title": "How America voted in maps and charts",
+      "url": "https://www.bbc.co.uk/news/articles/cm4g1j0n92qdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 5, 2026",
+      "description": "See the maps and charts that show how America voted in the US midterm elections."
     },
     {
       "title": "Anthony Zurcher: Democrats push deep into Trump heartland on historic night",
@@ -3533,22 +3475,64 @@
       "description": "Two Senate races that a year ago were thought to be battlegrounds turned out to be slam-dunks for the Democrats."
     },
     {
-      "title": "Tears, celebrations and selfies: US midterms in pictures",
-      "url": "https://www.bbc.co.uk/news/articles/cq74pexm44elo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Everything you need to know from the US midterm elections",
+      "url": "https://www.bbc.co.uk/news/articles/cmr4y92rgd9po?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 4, 2026",
-      "description": "Democrats cheered as they picked up victories in Republican states. Tears were shed as Republican losses mounted."
+      "description": "Democrats secured some big wins - and a few historic firsts - earning congratulations from President Trump."
     },
     {
-      "title": "The young politicians with African roots making history in the US midterms",
-      "url": "https://www.bbc.co.uk/news/articles/cmrly6j6lpydo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Faisal Islam: How high will interest rates go?",
+      "url": "https://www.bbc.co.uk/news/articles/ckr5y0y37gv3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 5, 2026",
+      "description": "The BBC's economics editor views one more interest rate as likely, but thinks that will be all."
+    },
+    {
+      "title": "Three ways the interest rate rise could affect you",
+      "url": "https://www.bbc.co.uk/news/articles/cx4g1q3vlp62o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 5, 2026",
+      "description": "Job, loans and savings are all affected by the rise in interest rates announced by the Bank of England."
+    },
+    {
+      "title": "Drunk and dangerous e-bike riders face on-the-spot fines under crackdown",
+      "url": "https://www.bbc.co.uk/news/articles/cmze4zk4d789o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 5, 2026",
+      "description": "A consultation will consider fines and other ways to clamp down on dangerous e-bike riders."
+    },
+    {
+      "title": "Second buyer makes rescue bid for Poundland as retailer faces collapse",
+      "url": "https://www.bbc.co.uk/news/articles/c6lykq0kqwn7o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 5, 2026",
+      "description": "A little-known investment group has made a bid to buy the business."
+    },
+    {
+      "title": "Graduates are managing AI - but are they learning much else?",
+      "url": "https://www.bbc.co.uk/news/articles/c820vz6wyp65o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 4, 2026",
-      "description": "For some young Africans, these victories offer a glimpse of what a new generation of voters could do at home."
+      "description": "Graduates are spending more time managing AI, but are they missing out on other work experience?"
+    },
+    {
+      "title": "Interest rates hiked to 4% in first increase in over three years",
+      "url": "https://www.bbc.co.uk/news/articles/ck5ynw45jrgqo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 5, 2026",
+      "description": "Most analysts expected the increase from 3.75% to 4%."
     },
     {
       "title": "Pound rises to its highest level since the Brexit referendum",
       "url": "https://www.bbc.co.uk/news/articles/c6lykq2qjn2vo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 4, 2026",
-      "description": "Pound reaches highest level against a basket of currencies since the Brexit referendum a decade ago"
+      "date": "November 5, 2026",
+      "description": "Pound reaches highest level against a basket of currencies since the Brexit referendum a decade ago."
+    },
+    {
+      "title": "Welsh aviation firm AerFin bought in £475m deal",
+      "url": "https://www.bbc.co.uk/news/articles/cq203vjxnln7o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 5, 2026",
+      "description": "The company, which was majority owned by a private equity firm, said it was beginning a \"new chapter\"."
+    },
+    {
+      "title": "Food, fuel and taxes – can the Democrats do anything to ease cost of living pressures?",
+      "url": "https://www.bbc.co.uk/news/articles/ck1ex50x5q46o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 5, 2026",
+      "description": "Democrats will hold Congress but President Donald Trump still has the power to block their plans."
     },
     {
       "title": "Elon Musk's millions failed to deliver Republican wins in fierce midterms",
@@ -3557,10 +3541,10 @@
       "description": "Musk spent nearly $500m in the 2026 US midterm elections, an individual election spending record."
     },
     {
-      "title": "Poundland owner in crunch talks as retailer's collapse looms",
-      "url": "https://www.bbc.co.uk/news/articles/ck240mm3e42do?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Kellogg's admits snap, crackle and pop is quieter after uproar over Rice Krispies recipe change",
+      "url": "https://www.bbc.co.uk/news/articles/cqvg0y44ym7vo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 4, 2026",
-      "description": "Gordon Brothers will meet Jonathan Reynolds on Wednesday as the investment firm faces scrutiny over Poundland."
+      "description": "The cereal giant has changed the recipes for Rice Krispies and Coco Pops, sparking a backlash online."
     },
     {
       "title": "UK and EU agree draft deal to scrap Brexit red tape over food exports",
@@ -3569,22 +3553,16 @@
       "description": "The food deal, ahead of a UK-EU summit later this month, is the most significant part of the so-called Brexit reset agreed so far."
     },
     {
-      "title": "Kellogg's admits snap, crackle and pop is quieter after uproar over Rice Krispies recipe change",
-      "url": "https://www.bbc.co.uk/news/articles/cqvg0y44ym7vo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 4, 2026",
-      "description": "The cereal giant has changed the recipes for Rice Krispies and Coco Pops, sparking a backlash online."
+      "title": "Australia's oldest department store David Jones folds after 188 years",
+      "url": "https://www.bbc.co.uk/news/articles/cky93z5y0171o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 5, 2026",
+      "description": "The brand's 38 physical stores and online site will continue to operate while receivers review its operations."
     },
     {
       "title": "Binance says fake job interviews used as part of $6.3bn crypto hack",
       "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 3, 2026",
       "description": "An engineer was contacted through a legitimate job-hunting platform and invited to bogus job interviews with fake company representatives, Binance says."
-    },
-    {
-      "title": "Graduates are managing AI - but are they learning much else?",
-      "url": "https://www.bbc.co.uk/news/articles/c820vz6wyp65o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 4, 2026",
-      "description": "Graduates are spending more time managing AI, but are they missing out on other work experience?"
     },
     {
       "title": "Canva announces major job cuts after 'our hardest year yet'",
@@ -3611,6 +3589,12 @@
       "description": "Rio Tinto is jointly funding a A$28m \"toad containment zone\" to protect the Pilbara region."
     },
     {
+      "title": "Poundland owner in crunch talks as retailer's collapse looms",
+      "url": "https://www.bbc.co.uk/news/articles/ck240mm3e42do?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 5, 2026",
+      "description": "Gordon Brothers will meet Jonathan Reynolds on Wednesday as the investment firm faces scrutiny over Poundland."
+    },
+    {
       "title": "From scooters to shampoo - the people saving hundreds from dumpster diving",
       "url": "https://www.bbc.co.uk/news/articles/cm86zdp2ygqno?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 3, 2026",
@@ -3621,24 +3605,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cw23d5z87drpo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 3, 2026",
       "description": "Britons have become less engaged with the jobs they do and are less willing to put in extra effort, a report has found."
-    },
-    {
-      "title": "Shop freezers in seven European countries hit by cyber-attack",
-      "url": "https://www.bbc.co.uk/news/articles/cq1kd1nee80eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 2, 2026",
-      "description": "The temperature of freezers in several shops across Europe reportedly rose to as high as 50C."
-    },
-    {
-      "title": "Apple unsure when it will get more foldable iPhones ahead of Christmas",
-      "url": "https://www.bbc.co.uk/news/articles/c6n8dn457ypko?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 3, 2026",
-      "description": "The tech giant reports strong sales but admits \"constraints\" are affecting supplies of the iPhone Duo."
-    },
-    {
-      "title": "Christmas 2026 stamps unveiled by Royal Mail",
-      "url": "https://www.bbc.co.uk/news/articles/cw62yeq7958ro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 3, 2026",
-      "description": "The annual Christmas collection of five stamps feature scenes from the Nativity."
     },
     {
       "title": "How video game remakes tap the power of nostalgia",
@@ -3719,6 +3685,24 @@
       "description": "Will farmers want AI tools to help judge when to pick fruit, or is their own intuition enough?"
     },
     {
+      "title": "Interest rates hiked to 4% in first increase in over three years",
+      "url": "https://www.bbc.co.uk/news/articles/ck5ynw45jrgqo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 5, 2026",
+      "description": "Most analysts expected the increase from 3.75% to 4%."
+    },
+    {
+      "title": "Three ways the interest rate rise could affect you",
+      "url": "https://www.bbc.co.uk/news/articles/cx4g1q3vlp62o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 5, 2026",
+      "description": "Job, loans and savings are all affected by the rise in interest rates announced by the Bank of England."
+    },
+    {
+      "title": "Why do veterinary fees and sausage rolls vary in price across London?",
+      "url": "https://www.bbc.co.uk/news/articles/cmgqw51gdnzyo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 5, 2026",
+      "description": "Location is not just the only factor on why prices differ across London, as Anna O'Neill finds out."
+    },
+    {
       "title": "What's happening to UK interest rates and what does it mean for mortgages?",
       "url": "https://www.bbc.co.uk/news/articles/c3dky111m40o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 4, 2026",
@@ -3729,24 +3713,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c6pvgw8gz1k4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 4, 2026",
       "description": "The rises would impact Perdiswell, St John's Sports Centre and Nunnery Wood Sports Complex."
-    },
-    {
-      "title": "Keeping mortgage interest relief approved",
-      "url": "https://www.bbc.co.uk/news/articles/c6vgj0ljx01jo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 3, 2026",
-      "description": "Homeowners can get tax relief of £3,500 on the money spent on the interstate of a mortgage."
-    },
-    {
-      "title": "Car finance compensation payments explained",
-      "url": "https://www.bbc.co.uk/news/articles/c2l9vvj097lo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 3, 2026",
-      "description": "Millions could be entitled to compensation as a result of commission arrangements between lenders and dealers."
-    },
-    {
-      "title": "Drivers may get compensation offers before car finance saga ends",
-      "url": "https://www.bbc.co.uk/news/articles/cqrky5nxxn4po?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 3, 2026",
-      "description": "The regulator says it supports lenders offering early compensation offers, as long as they are fair."
     },
     {
       "title": "My hometown shows that high streets have to change or die",
@@ -3803,118 +3769,124 @@
       "description": "Cryptocurrency giant Binance said on Thursday that $6.3bn (£4.7bn) of digital assets have been impacted by what is thought to be the biggest crypto hack on record."
     },
     {
-      "title": "Who should pay on the first date?",
-      "url": "https://www.bbc.co.uk/news/videos/cmpq0g3g2r8zo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 30, 2026",
-      "description": "Yasmin Rufo asks New Yorkers who picks up the bill on a first date, and how much they usually spend."
+      "title": "Cristiano Ronaldo announces international retirement",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/cristiano-ronaldo-announces-international-retirement?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Cristiano Ronaldo has announced his retirement from international football."
     },
     {
-      "title": "Social media reacts to Democrats’ takeover of US Congress",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/social-media-reacts-to-democrats-takeover-of-us-congress?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Social media is awash with reactions to Democrats’ sweeping midterm gains."
+      "title": "New Yorkers rally against gun violence after Ghanaian teen’s killing",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/new-yorkers-rally-against-gun-violence-after-ghanaian-teens-killing?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "New Yorkers marched to demand justice for Ghanaian boy Javits Frimpong, who was shot and killed in the Bronx last month."
     },
     {
-      "title": "Israel restricting treatment for 1,100 child amputees in Gaza: NGO",
-      "url": "https://www.aljazeera.com/news/2026/11/4/israel-restricting-treatment-for-1100-child-amputees-in-gaza-ngo?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Israeli restrictions on travel and medical evacuations prevent children in Gaza from being treated abroad."
+      "title": "Workers strike across France, hundreds of thousands expected to protest",
+      "url": "https://www.aljazeera.com/news/2026/11/5/workers-strike-across-france-hundreds-of-thousands-expected-to-protest?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Demonstrators are demanding an increase in the minimum wage and higher salaries for all workers, among other reforms."
     },
     {
-      "title": "Democrat leaders hail midterm election success",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/aje-onl-nf_democrat-leaders-hail-midterm-election-success-041126?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "The top Democrats in the two chambers of US Congress have been hailing their party’s resounding victory in the midterms."
+      "title": "Security ⁠officer killed in stabbing attack in Jordan’s capital",
+      "url": "https://www.aljazeera.com/news/2026/11/5/security-%e2%81%a0officer-killed-in-stabbing-attack-in-jordans-capital?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "This is a breaking news story."
     },
     {
-      "title": "Democratic progressive wing notches win in California Central Valley",
-      "url": "https://www.aljazeera.com/news/2026/11/4/democratic-progressive-wing-notches-win-in-california-central-valley?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Campaign focused on cost of living issues and backlash over ICE raids pays dividends for progressive Randy Villegas."
+      "title": "Why more investment is not making housing affordable in Ghana",
+      "url": "https://www.aljazeera.com/news/2026/11/5/why-more-investment-is-not-making-housing-affordable-in-ghana?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "High costs, limited financing and rising demand keep homes out of reach."
     },
     {
-      "title": "Hakeem Jeffries promises ‘affordability’ focus after Democratic midterm win",
-      "url": "https://www.aljazeera.com/news/2026/11/4/hakeem-jeffries-promises-affordability-focus-after-democratic-midterm-win?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Democratic leader says party expects at least 255 House seats and promises to deliver on affordability."
+      "title": "Palantir harvests battlefield data that Ukraine pays for ‘with blood’",
+      "url": "https://www.aljazeera.com/news/2026/11/5/palantir-mines-battlefield-intelligence-but-is-ukraine-paying-with-blood?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "The US company is using Kyiv’s unique war data to train its controversial technologies."
     },
     {
-      "title": "WHO approves trials for two new Ebola vaccines",
-      "url": "https://www.aljazeera.com/news/2026/11/4/who-approves-trials-for-two-new-ebola-vaccines?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Two new vaccines were designed for the Bundibugyo virus that has killed more than 5,300 in the DR Congo."
+      "title": "‘Knives out’: Will Congress impeach Pete Hegseth after GOP midterms loss?",
+      "url": "https://www.aljazeera.com/news/2026/11/5/knives-out-will-congress-impeach-pete-hegseth-after-gop-midterms-loss?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Democrats can adopt the impeachment articles in the House but will need Republican backing in the Senate."
     },
     {
-      "title": "US midterms 2026: What key races remain undecided?",
-      "url": "https://www.aljazeera.com/news/2026/11/4/us-midterms-2026-what-key-races-remain-undecided?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Key races in Alaska, Mississippi, Kansas and California remain uncounted."
+      "title": "Visualising how the US midterms turned the map blue",
+      "url": "https://www.aljazeera.com/news/2026/11/5/visualising-how-the-us-midterms-turned-the-map-blue?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Who voted, which seats flipped and who made history? A look at the numbers behind the 2026 US midterm elections."
     },
     {
-      "title": "How US midterm results could reshape Trump’s foreign policy",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/aje-onl-nf_how-us-midterm-could-reshape-trumps-foreign-policy-041126?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "US midterm results could reshape Trump’s political landscape and increase congressional scrutiny of his foreign policy."
+      "title": "Cristiano Ronaldo announces retirement from international football",
+      "url": "https://www.aljazeera.com/sports/2026/11/5/cristiano-ronaldo-announces-retirement-from-international-football?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "The 41-year-old Portuguese legend says he will 'hand back the number 7 shirt' in social media post."
     },
     {
-      "title": "The biggest winners and losers of the 2026 US midterms",
-      "url": "https://www.aljazeera.com/news/2026/11/4/the-biggest-winners-and-losers-of-the-2026-us-midterms?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Historic firsts, surprise victories and expensive defeats as Democrats take control of Congress."
+      "title": "Serbian officers arrested for using ‘excessive force’ against protesters",
+      "url": "https://www.aljazeera.com/news/2026/11/5/serbian-officers-arrested-for-using-excessive-force-against-protesters?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Ten suspects are accused of abusing and torturing several people in the garage of a government compound in Belgrade."
     },
     {
-      "title": "Key moments as Democrats sweep to victories in US midterms",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/key-moments-as-democrats-sweep-to-victories-in-us-midterms?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Democrats have been celebrating across the US after a series of victories saw them take control of both chambers."
+      "title": "‘Helpless’: The families facing winter in tents on the beach in Gaza",
+      "url": "https://www.aljazeera.com/features/2026/11/5/helpless-the-families-facing-winter-in-tents-on-the-beach-in-gaza?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "An innovative idea to turn damaged cooking pots into seawater barriers is providing families in Gaza with some relief."
     },
     {
-      "title": "Danish students join European protest wave against education funding cuts",
-      "url": "https://www.aljazeera.com/news/2026/11/4/danish-students-join-european-protest-wave-against-education-funding-cuts?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Danish government proposes scrapping allowance scheme for students from wealthier families."
+      "title": "England’s Harry Kane extends Bayern Munich contract until 2029",
+      "url": "https://www.aljazeera.com/sports/2026/11/5/englands-harry-kane-extends-bayern-munich-contract-until-2029?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "'I love the club, the fans and the city,' says the Ballon d'Or ‌winner after extending his stay with German champions."
     },
     {
-      "title": "Netanyahu bet on Trump – but both lost",
-      "url": "https://www.aljazeera.com/news/2026/11/4/netanyahu-bet-on-trump-but-both-lost?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Israel's political establishment grapples with US voter rejection of White House ally and own contribution towards it."
+      "title": "A month after Yemen government offensive began, war of attrition takes hold",
+      "url": "https://www.aljazeera.com/news/2026/11/5/a-month-after-yemen-government-offensive-began-war-of-attrition-takes-hold?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "The Houthis suffer losses but also inflict pain on government forces and Saudi Arabia."
     },
     {
-      "title": "Palestinian citizens of Israel face intimidation after election success",
-      "url": "https://www.aljazeera.com/news/2026/11/4/palestinians-face-intimidation-after-election-success?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "After winning a record number of parliament seats, Palestinian-led parties face campaign against them."
+      "title": "Israel extends detention of Palestinian journalist Abed Abou Shhadeh",
+      "url": "https://www.aljazeera.com/news/2026/11/5/israel-extends-detention-of-palestinian-journalist-abed-abou-shhadeh?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Rights group says the journalist's arrest over an interview with Azmi Bishara is an attempt to silence Palestinians."
     },
     {
-      "title": "Owono enduring ‘hardest days of my life’ after De Miguel death",
-      "url": "https://www.aljazeera.com/sports/2026/11/4/owono-enduring-hardest-days-of-my-life-after-de-miguel-death?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Tenerife striker De Miguel died on Tuesday as a result of injuries from a collision with FC Andorra goalkeeper Owono."
+      "title": "New bomb threats bring more disruption to flights across Europe",
+      "url": "https://www.aljazeera.com/news/2026/11/5/bomb-threat-diverts-dublin-rome-flight-to-france?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Flights make emergency landings in France, Italy and Bulgaria days after bomb threats disrupted air traffic."
     },
     {
-      "title": "The new Congress may struggle to push a progressive agenda",
-      "url": "https://www.aljazeera.com/opinions/2026/11/4/the-new-congress-may-struggle-to-push-a-progressive-agenda?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Major change on key issues, such as Israel-Palestine, will be limited by the president and the Democratic establishment."
+      "title": "It’s Gaza, stupid",
+      "url": "https://www.aljazeera.com/opinions/2026/11/5/its-gaza-stupid?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "The midterms sent a warning to both parties: Voters enraged by Gaza are rejecting politicians who back Israel’s wars."
     },
     {
-      "title": "Democratic voters celebrate El-Sayed’s Michigan win in election ‘blue wave’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/democratic-voters-celebrate-el-sayeds-michigan-win-in-election-blue?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Democratic voters danced as they celebrated Abdul El-Sayed’s victory in Michigan."
+      "title": "Wembanyama pours in career-high 52 points as Spurs edge Mavericks 112-111",
+      "url": "https://www.aljazeera.com/sports/2026/11/5/wembanyama-pours-in-career-high-52-points-as-spurs-edge-mavericks-112-111?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Victor Wembanyama had 24 rebounds and 52 points as the San Antonio Spurs recorded their sixth straight win in the NBA."
     },
     {
-      "title": "US markets rise as Democrats sweep midterm elections",
-      "url": "https://www.aljazeera.com/economy/2026/11/4/us-markets-rise-as-democrats-sweep-midterm-elections?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "Nasdaq, Dow, and S&P 500 open higher after Democrats take control and Trump accepts results."
+      "title": "Hong Kong democracy activist Joshua Wong sentenced to 10 years in jail",
+      "url": "https://www.aljazeera.com/news/2026/11/5/hong-kong-democracy-activist-joshua-wong-sentenced-to-10-years-in-jail?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Wong, in prison since 2020, was found guilty of colluding with foreign entities in violation of national security law."
     },
     {
-      "title": "‘We are still red,’ Florida’s first Black governor upon win",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/we-are-still-red-floridas-first-black-governor-upon-win?traffic_source=rss",
-      "date": "November 4, 2026",
-      "description": "US Republican Byron Donalds reiterated his support for President Donald Trump."
+      "title": "Ten years of the Paris Agreement: Has the world kept its climate promises?",
+      "url": "https://www.aljazeera.com/news/2026/11/5/ten-years-of-the-paris-agreement-has-the-world-kept-its-climate-promises?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Nearly 200 countries pledged to limit warming to 1.5C. We look at who has delivered and who has fallen short."
+    },
+    {
+      "title": "Germany’s Merz expects Trump to keep ignoring Congress",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/germanys-merz-expects-trump-to-keep-ignoring-congress?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "German Chancellor Friedrich Merz expects US President Donald Trump to keep bypassing Congress despite midterm losses."
     }
   ]
 }
