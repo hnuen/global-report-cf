@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-05T17:08:25.467Z",
+  "updatedAt": "2026-11-05T19:08:27.690Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261105",
+      "code": "20261105",
+      "title": "Cyber-related and Transnational Criminal Organizations Designations; Cuba Designations; Publication of Cuba-related Determination",
+      "date": "November 05, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261104",
       "code": "20261104",
@@ -54,12 +60,6 @@
       "code": "20261015",
       "title": "Iran-related Designations; Cuba Designation; Issuance of New and Amended General Licenses and Frequently Asked Questions",
       "date": "October 15, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20261014",
-      "code": "20261014",
-      "title": "Venezuela-related Designation Removal",
-      "date": "October 14, 2026"
     }
   ],
   "civilPenalties": [
@@ -747,7 +747,7 @@
     "cuba-sanctions": {
       "name": "Cuba Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/cuba-sanctions",
-      "lastUpdated": "Oct 15, 2026",
+      "lastUpdated": "Nov 05, 2026",
       "status": "active",
       "statusLabel": "Active",
       "statusReason": "",
@@ -827,7 +827,7 @@
     "sanctions-related-to-significant-malicious-cyber-enabled-activities": {
       "name": "Cyber-Related Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/sanctions-related-to-significant-malicious-cyber-enabled-activities",
-      "lastUpdated": "Oct 19, 2026",
+      "lastUpdated": "Nov 05, 2026",
       "status": "active",
       "statusLabel": "Active",
       "statusReason": "",
@@ -845,7 +845,7 @@
         },
         {
           "citation": "87 FR 54373-22",
-          "description": "Cyber-Related Sanctions Regulations 80 FR 81752-15 - Issuance of Cyber-Related Sanctions Regulations to implement Executive Order 13694 Recent Actions regarding Cyber-Related Sanctions Protecting American Intellectual Property Act of 2022 (PAIPA) Designations; Issuance of Associated General Licenses",
+          "description": "Cyber-Related Sanctions Regulations 80 FR 81752-15 - Issuance of Cyber-Related Sanctions Regulations to implement Executive Order 13694 Recent Actions regarding Cyber-Related Sanctions Cyber-related and Transnational Criminal Organizations Designations; Cuba Designations; Publication of Cuba-related",
           "year": "2022",
           "glNumbers": []
         }
@@ -2389,7 +2389,11 @@
     "transnational-criminal-organizations": {
       "name": "Transnational Criminal Organizations",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/transnational-criminal-organizations",
-      "lastUpdated": "Oct 01, 2026",
+      "lastUpdated": "Nov 05, 2026",
+      "status": "active",
+      "statusLabel": "Active",
+      "statusReason": "",
+      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information",
       "executiveOrders": [],
       "frNotices": [
         {
@@ -2408,11 +2412,7 @@
           "glNumbers": []
         }
       ],
-      "generalLicenses": [],
-      "status": "active",
-      "statusLabel": "Active",
-      "statusReason": "",
-      "statusSourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information"
+      "generalLicenses": []
     },
     "ukraine-russia-related-sanctions": {
       "name": "Ukraine-/Russia-related Sanctions",
@@ -2866,48 +2866,43 @@
         },
         {
           "number": "27",
-          "title": "Certain Transactions Related to Patents, Trademarks, and Copyrights Authorized ( a)",
+          "title": "Venezuela General License 27",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34111/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "29",
-          "title": "Certain Transactions Involving the Government of Venezuela in Support of Certain Nongovernmental Organizations' Activities Authorized",
+          "title": "Venezuela General License 29",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31771/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "30B",
-          "title": "Authorizing Certain Transactions Necessary to Port and Airport Operations",
+          "title": "Venezuela General License 30B",
           "date": "February 2, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934996/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "31B",
-          "title": "Certain Transactions Involving the IV Venezuelan National Assembly and Certain Other Persons",
+          "title": "Venezuela General License 31B",
           "date": "January 4, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/930241/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "32",
-          "title": "Authorizing Certain Transactions Related to Personal Maintenance of Individuals Who Are U.S. Persons Residing in Venezuela",
+          "title": "Venezuela General License 32",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34101/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "33",
@@ -3240,14 +3235,7 @@
       "description": "The restrictive measures consist of an asset freeze, travel bans to the EU, and a prohibition to make funds or economic resources available to those listed."
     }
   ],
-  "unNotices": [
-    {
-      "title": "Security Council, 10265th Meeting (AM) Yemen",
-      "url": "https://press.un.org/en/blog/sc16501",
-      "date": "November 5, 2026",
-      "description": "The Security Council will meet today at 10 a.m. for a briefing on the work of the Committee established pursuant to resolution 2140 (2014) concerning Yemen. The briefing is expected to focus on the implementation of sanctions, including an asset freeze, travel ban and targeted arms embargo, as well as the activities of the Committee's Panel of Experts. The meeting comes ahead of the 14 November expiry of the sanctions measures and the 15 December expiry of the Panel's mandate. Council members are expected to discuss sanctions implementation, including alleged violations of the arms embargo and threats to regional security."
-    }
-  ],
+  "unNotices": [],
   "bbcNews": [
     {
       "title": "Vance walks Trump tightrope with scathing election critique blaming Iran war",
@@ -3258,16 +3246,16 @@
   ],
   "ajNews": [
     {
+      "title": "Iran says tankers struck in Hormuz amid fears of new US attack",
+      "url": "https://www.aljazeera.com/news/2026/11/5/iran-says-tankers-struck-in-hormuz-amid-fears-of-new-us-attack?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Iranian forces say five oil tankers and a tugboat have caught fire in several incidents in the Strait of Hormuz."
+    },
+    {
       "title": "Can Iran’s new supreme leader make peace from behind the scenes?",
       "url": "https://www.aljazeera.com/opinions/2026/11/5/can-irans-new-supreme-leader-make-peace-from-behind-the-scenes?traffic_source=rss",
       "date": "November 5, 2026",
       "description": "Mojtaba Khamenei’s consultations suggest a new system of decision-making is taking shape."
-    },
-    {
-      "title": "Police bodycam captures moments before deadly Russian strike in Ukraine",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/police-bodycam-captures-moments-before-deadly-russian-strike-in-ukraine?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "Bodycam footage released by Ukraine’s National Police shows people rushing into an underground shelter."
     }
   ],
   "occNews": [
@@ -3377,22 +3365,28 @@
   ],
   "regionsNews": [
     {
-      "title": "France holds new strikes and protests as unions demand immediate answers",
-      "url": "https://www.bbc.co.uk/news/articles/ckx2qzv835pgo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Hoax bomb threats target European airlines and airports for second time in a week",
+      "url": "https://www.bbc.co.uk/news/articles/cmpqg08nz3pqo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 5, 2026",
-      "description": "Five of France's unions join a wave of strikes and protests in a national day of action."
+      "description": "At least 21 flights across Europe are affected in what the UK government calls a \"malicious hoax threat\"."
     },
     {
-      "title": "Paraguay President Santiago Peña resigns",
+      "title": "French protests see numbers surge as unions join strikes over high cost of living",
+      "url": "https://www.bbc.co.uk/news/articles/ckx2qzv835pgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 5, 2026",
+      "description": "The interior ministry estimates 600,000 people joined protests across France, while the unions say the number was far higher."
+    },
+    {
+      "title": "Paraguay President Santiago Peña resigns after bank collapse",
       "url": "https://www.bbc.co.uk/news/articles/c6p9g39vln3yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 5, 2026",
       "description": "The move follows a bank collapse and after the lower house of congress voted in favour of pursuing an impeachment trial against him."
     },
     {
-      "title": "Was an Italian chef really fired over refusal to put pineapple on pizza?",
-      "url": "https://www.bbc.co.uk/news/videos/cmvg9yy8wpweo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Manhunt in western Turkey after eight killed in series of shootings",
+      "url": "https://www.bbc.co.uk/news/articles/cvj6jj21pd2ko?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 5, 2026",
-      "description": "The chef had stated that putting pineapple on pizza was \"offensive to his culture\"."
+      "description": "Eight people have been killed and one seriously injured in a series of shootings in western Turkey."
     },
     {
       "title": "The Pitt and ER are similar enough for lawsuit to proceed, judge rules",
@@ -3785,6 +3779,54 @@
       "description": "Dozens of supermarkets in seven European countries dumped huge quantities of food after refrigerators and freezers were targeted in a cyber-attack."
     },
     {
+      "title": "Division among US Democrats over Schumer’s leadership role",
+      "url": "https://www.aljazeera.com/news/2026/11/5/division-among-us-democrats-over-schumers-leadership-role?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Some Democratic senators – and the very voters that swept them into power – are demanding new leadership."
+    },
+    {
+      "title": "Arab party backs Eisenkot in bid to form Israel’s next government",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/arab-party-backs-eisenkot-in-bid-to-form-israels-next-government?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Arab-majority party Ra’am and the Democrats have backed Gadi Eisenkot in a bid to form Israel’s next government."
+    },
+    {
+      "title": "Could Football Change After Jesus de Miguel’s Death?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/could-football-change-after-jesus-de-miguels-death?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Could football change after the death of Jesus de Miguel?"
+    },
+    {
+      "title": "AI stocks plunge after US election, driving down markets",
+      "url": "https://www.aljazeera.com/economy/2026/11/5/ai-stocks-plunge-after-election-driving-down-us-markets?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Tech stocks lead US market slide as investors weigh impact of midterm election results on AI industry."
+    },
+    {
+      "title": "Jordanian officer killed in stabbing attack in Amman",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/jordanian-officer-killed-in-stabbing-attack-in-amman?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "A Jordanian security officer has been killed and another one wounded near the Sri Lankan embassy in Amman."
+    },
+    {
+      "title": "Paraguay President Pena resigns in wake of bank collapse",
+      "url": "https://www.aljazeera.com/economy/2026/11/5/paraguay-president-pena-resigns-in-wake-of-bank-collapse?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "President Pena, a Trump ally, had faced an impeachment motion and protests after the collapse of digital lender ueno."
+    },
+    {
+      "title": "Bishara: US election deals a blow to warmongers",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/aje-onl-nf_us-election-deals-a-blow-to-warmongers-051126?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Al Jazeera's senior political analyst Marwan Bishara says the US election is a setback for warmongers."
+    },
+    {
+      "title": "Gaza holds final of tournament honouring more than 1,000 slain athletes",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/gaza-holds-final-of-tournament-honouring-more-than-1000-slain-athletes?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "The final of Gaza’s ‘Thousand Martyrs’ Cup marks the return of organised football after nearly three years of war."
+    },
+    {
       "title": "Photos: Spain mourns Jesus de Miguel, who died after on-pitch collision",
       "url": "https://www.aljazeera.com/gallery/2026/11/5/photos-spain-mourns-jesus-de-miguel-who-died-after-on-pitch-collision?traffic_source=rss",
       "date": "November 5, 2026",
@@ -3873,54 +3915,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/indonesia-rushes-thousands-of-troops-to-jakarta-amid-wiretap-scandal?traffic_source=rss",
       "date": "November 5, 2026",
       "description": "Indonesia is deploying thousands of troops in Jakarta amid an alleged wiretapping scandal targeting the president."
-    },
-    {
-      "title": "Padel’s Olympic ambition",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/padels-olympic-ambition?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "Padel is the fastest growing racket sport in the world, and is pushing to make its Olympic debut."
-    },
-    {
-      "title": "Four people, including a child, killed in Israeli attacks on Gaza",
-      "url": "https://www.aljazeera.com/news/2026/11/5/four-people-including-a-child-killed-in-israeli-attacks-on-gaza?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "Gaza officials say more than 1,600 Palestinians have been killed since the so-called 'ceasefire' took effect."
-    },
-    {
-      "title": "3,000 tarantulas hidden inside luggage seized at Peruvian airport",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/3000-tarantulas-hidden-inside-luggage-seized-at-peruvian-airport?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "In a peculiar failed smuggling attempt, 3,000 tarantulas were seized at a Peruvian airport."
-    },
-    {
-      "title": "Cristiano Ronaldo announces international retirement",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/cristiano-ronaldo-announces-international-retirement?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "Cristiano Ronaldo has announced his retirement from international football."
-    },
-    {
-      "title": "New Yorkers rally against gun violence after Ghanaian teen’s killing",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/new-yorkers-rally-against-gun-violence-after-ghanaian-teens-killing?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "New Yorkers marched to demand justice for Ghanaian boy Javits Frimpong, who was shot and killed in the Bronx last month."
-    },
-    {
-      "title": "Workers strike across France, hundreds of thousands expected to protest",
-      "url": "https://www.aljazeera.com/news/2026/11/5/workers-strike-across-france-hundreds-of-thousands-expected-to-protest?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "Demonstrators are demanding an increase in the minimum wage and higher salaries for all workers, among other reforms."
-    },
-    {
-      "title": "Security ⁠officer killed in stabbing attack in Jordan’s capital",
-      "url": "https://www.aljazeera.com/news/2026/11/5/security-%e2%81%a0officer-killed-in-stabbing-attack-in-jordans-capital?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "Assailant stabbed a corporal outside the Sri Lankan embassy in Amman, killing him and injuring another officer."
-    },
-    {
-      "title": "Why more investment is not making housing affordable in Ghana",
-      "url": "https://www.aljazeera.com/news/2026/11/5/why-more-investment-is-not-making-housing-affordable-in-ghana?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "High costs, limited financing and rising demand keep homes out of reach."
     }
   ]
 }
