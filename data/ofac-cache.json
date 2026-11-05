@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T21:08:23.355Z",
+  "updatedAt": "2026-11-05T22:08:19.857Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261105",
@@ -3240,7 +3240,14 @@
       "description": "The restrictive measures consist of an asset freeze, travel bans to the EU, and a prohibition to make funds or economic resources available to those listed."
     }
   ],
-  "unNotices": [],
+  "unNotices": [
+    {
+      "title": "Security Council, 10265th Meeting (AM) Yemen",
+      "url": "https://press.un.org/en/blog/sc16501",
+      "date": "November 5, 2026",
+      "description": "The Security Council will meet today at 10 a.m. for a briefing on the work of the Committee established pursuant to resolution 2140 (2014) concerning Yemen. The briefing is expected to focus on the implementation of sanctions, including an asset freeze, travel ban and targeted arms embargo, as well as the activities of the Committee's Panel of Experts. The meeting comes ahead of the 14 November expiry of the sanctions measures and the 15 December expiry of the Panel's mandate. Council members are expected to discuss sanctions implementation, including alleged violations of the arms embargo and threats to regional security."
+    }
+  ],
   "bbcNews": [
     {
       "title": "Who could be behind hoax bomb threats to European air travel?",
@@ -3279,12 +3286,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/5/iran-says-tankers-struck-in-hormuz-amid-fears-of-new-us-attack?traffic_source=rss",
       "date": "November 5, 2026",
       "description": "Iranian forces say five oil tankers and a tugboat have caught fire in several incidents in the Strait of Hormuz."
-    },
-    {
-      "title": "Can Iran’s new supreme leader make peace from behind the scenes?",
-      "url": "https://www.aljazeera.com/opinions/2026/11/5/can-irans-new-supreme-leader-make-peace-from-behind-the-scenes?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "Mojtaba Khamenei’s consultations suggest a new system of decision-making is taking shape."
     }
   ],
   "occNews": [
@@ -3400,10 +3401,10 @@
       "description": "At least 21 flights across Europe are affected in what the UK government calls a \"malicious hoax threat\"."
     },
     {
-      "title": "California governor commutes death sentences for all 548 people on death row",
+      "title": "California governor commutes sentences for state's 548 death row inmates",
       "url": "https://www.bbc.co.uk/news/articles/cqrkyyd2j8mvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 5, 2026",
-      "description": "California has historically had the largest population of death row inmates in the US."
+      "description": "California has historically had the largest population of people on death row in the US."
     },
     {
       "title": "French protests see numbers surge as unions join strikes over high cost of living",
@@ -3424,7 +3425,7 @@
       "description": "Victims are found in several locations in three separate vehicles, according to local reports."
     },
     {
-      "title": "Shares in Musk's SpaceX plunge as tech and AI stocks fall",
+      "title": "Major tech stocks plunge as US midterms add to fears of AI slowdown",
       "url": "https://www.bbc.co.uk/news/articles/cmn04705rd8jo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 5, 2026",
       "description": "The market has been reacting to possible tougher scrutiny of data centre construction and the AI industry following the US mid-terms"
@@ -3520,7 +3521,7 @@
       "description": "Job, loans and savings are all affected by the rise in interest rates announced by the Bank of England."
     },
     {
-      "title": "Shares in Musk's SpaceX plunge as tech and AI stocks fall",
+      "title": "Major tech stocks plunge as US midterms add to fears of AI slowdown",
       "url": "https://www.bbc.co.uk/news/articles/cmn04705rd8jo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 5, 2026",
       "description": "The market has been reacting to possible tougher scrutiny of data centre construction and the AI industry following the US mid-terms"
@@ -3796,6 +3797,42 @@
       "description": "Dozens of supermarkets in seven European countries dumped huge quantities of food after refrigerators and freezers were targeted in a cyber-attack."
     },
     {
+      "title": "Generation Z and diversity redefine US politics in groundbreaking election",
+      "url": "https://www.aljazeera.com/news/2026/11/5/generation-z-and-diversity-redefine-us-politics-in-groundbreaking-election?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Melat Kiros becomes the first Generation Z woman elected to Congress, embodying a new era of political representation."
+    },
+    {
+      "title": "South Africa’s ANC on track for new lows in local polls",
+      "url": "https://www.aljazeera.com/news/2026/11/5/south-africas-anc-on-track-for-new-lows-in-local-polls?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "The ANC was on about 32 percent of the vote with more than 60 percent of votes counted in municipal elections."
+    },
+    {
+      "title": "Spanish footballer Jesus de Miguel mourned by family and friends",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/spanish-footballer-jesus-de-miguel-mourned-by-family-and-friends?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "The 30-year-old striker suffered cardiac arrest following an on-field collision."
+    },
+    {
+      "title": "Israeli demolitions displace more than 100 Palestinians in Biddu",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/aje-onl-nf_israeli-demolitions-displace-palestinians-in-biddu-051126?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Israeli forces demolished five homes in Biddu, occupied West Bank, displacing more than 100 people."
+    },
+    {
+      "title": "Hoax bomb threats force emergency landings, evacuations across Europe",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/hoax-bomb-threats-force-emergency-landings-evacuations-across-europe?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Bomb threats are causing travel disruptions at airports across Europe, targeting at least 27 flights."
+    },
+    {
+      "title": "Saudi coalition intercepts missile fired towards Medina",
+      "url": "https://www.aljazeera.com/news/2026/11/5/saudi-coalition-intercepts-missile-fired-towards-medina?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Interception comes after Saudi civil defence agency warned of potential danger near the strategic port of Yanbu."
+    },
+    {
       "title": "Why are wealthy countries failing developing nations?",
       "url": "https://www.aljazeera.com/video/inside-story/2026/11/5/why-are-wealthy-countries-failing-developing-nations?traffic_source=rss",
       "date": "November 5, 2026",
@@ -3890,36 +3927,6 @@
       "url": "https://www.aljazeera.com/sports/2026/11/5/top-japan-fa-official-to-stand-against-infantino-for-fifa-presidency?traffic_source=rss",
       "date": "November 5, 2026",
       "description": "Kozo Tashima second person to declare he will challenge Infantino, after former Spurs defender Ramon Vega."
-    },
-    {
-      "title": "Why has Cristiano Ronaldo retired from international football?",
-      "url": "https://www.aljazeera.com/sports/2026/11/5/why-has-cristiano-ronaldo-retired-from-international-football?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "Portugal superstar Ronaldo calls time on international career after a falling-out with head coach Jorge Jesus."
-    },
-    {
-      "title": "Jerusalem Daily: Settler pogroms in Hebron",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/jerusalem-daily-settler-pogroms-in-hebron?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "Israel’s president consults party leaders on forming a government, as Israeli forces attack Palestinians in Gaza."
-    },
-    {
-      "title": "Ronaldo in records: International milestones from the football icon",
-      "url": "https://www.aljazeera.com/sports/2026/11/5/ronaldo-in-records-international-milestones-from-the-football-icon?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "Ronaldo, 41, ended an illustrious 23-year career that spanned six World Cups and six European Championships."
-    },
-    {
-      "title": "Why Guinea-Bissau halted a controversial hepatitis vaccine trial for babies",
-      "url": "https://www.aljazeera.com/news/2026/11/5/why-guinea-bissau-halted-a-controversial-hepatitis-vaccine-trial-for-babies?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "Experts have said the US-funded trial would deny critical vaccines to thousands of infants."
-    },
-    {
-      "title": "Russell Brand found guilty of rape and sexual assault by UK court",
-      "url": "https://www.aljazeera.com/news/2026/11/5/russell-brand-found-guilty-of-rape-and-sexual-assault-by-uk-court?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "British comedian was convicted by jury at London court of one count of rape and three counts of sexual assault."
     }
   ]
 }
