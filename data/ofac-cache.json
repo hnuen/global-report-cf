@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T13:08:20.838Z",
+  "updatedAt": "2026-11-05T15:08:24.654Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261104",
@@ -3198,6 +3198,12 @@
   ],
   "europaNews": [
     {
+      "title": "Commission meeting on sanctions implementation brings together Member States and international partners",
+      "url": "https://finance.ec.europa.eu/news/commission-meeting-sanctions-implementation-brings-together-member-states-and-international-partners-2026-11-05_en",
+      "date": "November 4, 2026",
+      "description": "The eighth meeting of the High‑Level Group on Union Restrictive Measures (sanctions) is being held today 5 November 2026."
+    },
+    {
       "title": "EU adopts largest-ever package of listings against Russia",
       "url": "https://finance.ec.europa.eu/news/eu-adopts-largest-ever-package-listings-against-russia-2026-10-12_en",
       "date": "October 11, 2026",
@@ -3254,15 +3260,21 @@
       "url": "https://www.bbc.co.uk/news/articles/c98rz6penv86o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 4, 2026",
       "description": "At least 40 people were killed and another 30 may still be under the rubble after Monday's attack on a Ukrainian village, Kyiv says."
-    },
-    {
-      "title": "What we know about the alert app hack in Ukraine and Russia",
-      "url": "https://www.bbc.co.uk/news/videos/crq5n6204g20o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 2, 2026",
-      "description": "Both Ukraine and Russia say their air raid alert apps were cyber-attacked - Joe Tidy explains what we know so far."
     }
   ],
   "ajNews": [
+    {
+      "title": "Can Iran’s new supreme leader make peace from behind the scenes?",
+      "url": "https://www.aljazeera.com/opinions/2026/11/5/can-irans-new-supreme-leader-make-peace-from-behind-the-scenes?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Mojtaba Khamenei’s consultations suggest a new system of decision-making is taking shape."
+    },
+    {
+      "title": "Police bodycam captures moments before deadly Russian strike in Ukraine",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/police-bodycam-captures-moments-before-deadly-russian-strike-in-ukraine?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Bodycam footage released by Ukraine’s National Police shows people rushing into an underground shelter."
+    },
     {
       "title": "Iran, Gaza, Ukraine: What will US midterm results mean for these conflicts?",
       "url": "https://www.aljazeera.com/news/2026/11/5/iran-gaza-ukraine-what-will-us-midterm-results-mean-for-these-conflicts?traffic_source=rss",
@@ -3274,24 +3286,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/5/congress-defeat-how-trumps-allies-are-distancing-themselves-from-iran-war?traffic_source=rss",
       "date": "November 5, 2026",
       "description": "US Vice President JD Vance blames the war for the midterm rout as Democrats prepare to use Congress to rein it in."
-    },
-    {
-      "title": "US sanctions Indian and Turkish firms accused of helping Iran",
-      "url": "https://www.aljazeera.com/news/2026/11/5/us-sanctions-indian-and-turkish-firms-accused-of-helping-iran?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "US Treasury says Indian couple faked ship registries for countries including Guyana and Laos to help Iranian tankers."
-    },
-    {
-      "title": "Russia says it hit Ukrainian postal hub and ship as Ukraine strikes Ryazan",
-      "url": "https://www.aljazeera.com/news/2026/11/5/russia-says-it-hit-ukrainian-postal-hub-and-ship-as-ukraine-strikes-ryazan?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "Injuries reported on both sides as Russia and Ukraine trade overnight drone strikes on energy and logistics sites."
-    },
-    {
-      "title": "South Korea plans to expand anti-piracy operations closer to Hormuz Strait",
-      "url": "https://www.aljazeera.com/news/2026/11/5/south-korea-plans-to-expand-anti-piracy-operations-closer-to-hormuz-strait?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "Seoul proposes extending its Cheonghae unit’s patrols to waters near Oman’s Duqm amid US pressure over Iran war."
     }
   ],
   "occNews": [
@@ -3308,7 +3302,36 @@
       "description": "The Office of the Comptroller of the Currency (OCC) today announced a $750 million civil money penalty against Bank of America, N.A. (bank), for violations of the Bank Secrecy Act and its implementing regulations, including 12 CFR 21.21 and 12 CFR 21.11. This amount is the largest in OCC history."
     }
   ],
-  "economicsNews": [],
+  "economicsNews": [
+    {
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "date": "October 28, 2026",
+      "description": "Federal Reserve issues FOMC statement",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
+      "date": "October 13, 2026",
+      "description": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
+      "date": "October 7, 2026",
+      "description": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+      "category": "Monetary Policy"
+    },
+    {
+      "title": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "date": "September 16, 2026",
+      "description": "Federal Reserve issues FOMC statement",
+      "category": "Monetary Policy"
+    }
+  ],
   "bisNews": [
     {
       "title": "Order Renewing Order Temporarily Denying Export Privileges",
@@ -3391,10 +3414,10 @@
       "description": "Five of France's unions join a wave of strikes and protests in a national day of action."
     },
     {
-      "title": "Ronaldo retires from Portugal duty",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cme8rxx2e1w9o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "A bitter end for Ronaldo - the icon who transformed Portugal",
+      "url": "https://www.bbc.co.uk/sport/football/articles/ckn9rwr2zzpvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 5, 2026",
-      "description": "Portugal legend Cristiano Ronaldo says \"the day has come for me to hand back the number seven shirt\"."
+      "description": "As Cristiano Ronaldo retires from international football, Guillem Balague looks at why and what is next for the Portugal legend."
     },
     {
       "title": "Joshua Wong, face of Hong Kong's pro-democracy protests, jailed for 10 years",
@@ -3425,6 +3448,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cqvgry8k5d01o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 4, 2026",
       "description": "Authorities in British Columbia say evidence suggests an animal may have been involved in the women's deaths."
+    },
+    {
+      "title": "Watch: How rapist Brand was never far from controversy",
+      "url": "https://www.bbc.co.uk/news/videos/c9dr8713zjgyo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 5, 2026",
+      "description": "BBC correspondent Sima Kotecha explains how the trial unfolded."
     },
     {
       "title": "Was an Italian chef really fired over refusal to put pineapple on pizza?",
@@ -3529,7 +3558,7 @@
       "description": "The company, which was majority owned by a private equity firm, said it was beginning a \"new chapter\"."
     },
     {
-      "title": "Food, fuel and taxes – can the Democrats do anything to ease cost of living pressures?",
+      "title": "Democrats won on affordability - how much can they actually deliver?",
       "url": "https://www.bbc.co.uk/news/articles/ck1ex50x5q46o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 5, 2026",
       "description": "Democrats will hold Congress but President Donald Trump still has the power to block their plans."
@@ -3745,6 +3774,12 @@
       "description": "Many younger people do not believe the state pension will exist when they are older"
     },
     {
+      "title": "What does the raise in interest rates mean?",
+      "url": "https://www.bbc.co.uk/news/videos/c9kgjvmn4vlno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 5, 2026",
+      "description": "The BBC's cost of living correspondent Kevin Peachey explains what the change could mean for those saving for a holiday or to buying a house."
+    },
+    {
       "title": "What in the World",
       "url": "https://www.bbc.co.uk/sounds/play/w3ct990m?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 3, 2026",
@@ -3763,10 +3798,64 @@
       "description": "Dozens of supermarkets in seven European countries dumped huge quantities of food after refrigerators and freezers were targeted in a cyber-attack."
     },
     {
-      "title": "Binance's $6.3bn crypto hack biggest in history",
-      "url": "https://www.bbc.co.uk/news/videos/c6m2dpz0yxn8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "October 30, 2026",
-      "description": "Cryptocurrency giant Binance said on Thursday that $6.3bn (£4.7bn) of digital assets have been impacted by what is thought to be the biggest crypto hack on record."
+      "title": "Russell Brand found guilty of rape and sexual assault by UK court",
+      "url": "https://www.aljazeera.com/news/2026/11/5/russell-brand-found-guilty-of-rape-and-sexual-assault-by-uk-court?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "British comedian was convicted by jury at London court of one count of rape and three counts of sexual assault."
+    },
+    {
+      "title": "‘Healthcare not bombs’: How Gaza shaped Adam Hamawy’s path to US Congress",
+      "url": "https://www.aljazeera.com/news/2026/11/5/healthcare-not-bombs-how-gaza-shaped-adam-hamawys-path-to-us-congress?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Former army surgeon and Gaza volunteer Hamawy is the first Muslim American elected to the US Congress from New Jersey."
+    },
+    {
+      "title": "Could the US midterms further isolate Israel in Washington?",
+      "url": "https://www.aljazeera.com/news/2026/11/5/could-the-us-midterms-further-isolate-israel-in-washington?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "The midterms showed that challenging support for Israel can win votes. But changing US foreign policy may be harder."
+    },
+    {
+      "title": "Burning rubbish chokes besieged Yemeni city of Taiz",
+      "url": "https://www.aljazeera.com/features/2026/11/5/burning-rubbish-chokes-besieged-yemeni-city-of-taiz?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Taiz residents face health risks as waste accumulates amid sniper fire, forcing people to burn it in the streets."
+    },
+    {
+      "title": "Joint List says it will back Eisenkot to form Israel’s next government",
+      "url": "https://www.aljazeera.com/news/2026/11/5/joint-list-says-it-will-back-eisenkot-to-form-israels-next-government?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Arab-led parties won a record 19 seats in Israel's 120-seat parliament in last week's general election."
+    },
+    {
+      "title": "What can Democrats do in Congress under President Trump?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/what-can-democrats-do-in-congress-under-president-trump?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "What can the Democratic party actually change when it comes to Donald Trump’s decisions, policies and presidency?"
+    },
+    {
+      "title": "Indonesia rushes thousands of troops to Jakarta amid wiretap scandal",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/indonesia-rushes-thousands-of-troops-to-jakarta-amid-wiretap-scandal?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Indonesia is deploying thousands of troops in Jakarta amid an alleged wiretapping scandal targeting the president."
+    },
+    {
+      "title": "Padel’s Olympic ambition",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/padels-olympic-ambition?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Padel is the fastest growing racket sport in the world, and is pushing to make its Olympic debut."
+    },
+    {
+      "title": "Four people, including a child, killed in Israeli attacks on Gaza",
+      "url": "https://www.aljazeera.com/news/2026/11/5/four-people-including-a-child-killed-in-israeli-attacks-on-gaza?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "Gaza officials say more than 1,600 Palestinians have been killed since the so-called 'ceasefire' took effect."
+    },
+    {
+      "title": "3,000 tarantulas hidden inside luggage seized at Peruvian airport",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/3000-tarantulas-hidden-inside-luggage-seized-at-peruvian-airport?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "In a peculiar failed smuggling attempt, 3,000 tarantulas were seized at a Peruvian airport."
     },
     {
       "title": "Cristiano Ronaldo announces international retirement",
@@ -3790,7 +3879,7 @@
       "title": "Security ⁠officer killed in stabbing attack in Jordan’s capital",
       "url": "https://www.aljazeera.com/news/2026/11/5/security-%e2%81%a0officer-killed-in-stabbing-attack-in-jordans-capital?traffic_source=rss",
       "date": "November 5, 2026",
-      "description": "This is a breaking news story."
+      "description": "Assailant stabbed a corporal outside the Sri Lankan embassy in Amman, killing him and injuring another officer."
     },
     {
       "title": "Why more investment is not making housing affordable in Ghana",
@@ -3833,60 +3922,6 @@
       "url": "https://www.aljazeera.com/features/2026/11/5/helpless-the-families-facing-winter-in-tents-on-the-beach-in-gaza?traffic_source=rss",
       "date": "November 5, 2026",
       "description": "An innovative idea to turn damaged cooking pots into seawater barriers is providing families in Gaza with some relief."
-    },
-    {
-      "title": "England’s Harry Kane extends Bayern Munich contract until 2029",
-      "url": "https://www.aljazeera.com/sports/2026/11/5/englands-harry-kane-extends-bayern-munich-contract-until-2029?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "'I love the club, the fans and the city,' says the Ballon d'Or ‌winner after extending his stay with German champions."
-    },
-    {
-      "title": "A month after Yemen government offensive began, war of attrition takes hold",
-      "url": "https://www.aljazeera.com/news/2026/11/5/a-month-after-yemen-government-offensive-began-war-of-attrition-takes-hold?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "The Houthis suffer losses but also inflict pain on government forces and Saudi Arabia."
-    },
-    {
-      "title": "Israel extends detention of Palestinian journalist Abed Abou Shhadeh",
-      "url": "https://www.aljazeera.com/news/2026/11/5/israel-extends-detention-of-palestinian-journalist-abed-abou-shhadeh?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "Rights group says the journalist's arrest over an interview with Azmi Bishara is an attempt to silence Palestinians."
-    },
-    {
-      "title": "New bomb threats bring more disruption to flights across Europe",
-      "url": "https://www.aljazeera.com/news/2026/11/5/bomb-threat-diverts-dublin-rome-flight-to-france?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "Flights make emergency landings in France, Italy and Bulgaria days after bomb threats disrupted air traffic."
-    },
-    {
-      "title": "It’s Gaza, stupid",
-      "url": "https://www.aljazeera.com/opinions/2026/11/5/its-gaza-stupid?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "The midterms sent a warning to both parties: Voters enraged by Gaza are rejecting politicians who back Israel’s wars."
-    },
-    {
-      "title": "Wembanyama pours in career-high 52 points as Spurs edge Mavericks 112-111",
-      "url": "https://www.aljazeera.com/sports/2026/11/5/wembanyama-pours-in-career-high-52-points-as-spurs-edge-mavericks-112-111?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "Victor Wembanyama had 24 rebounds and 52 points as the San Antonio Spurs recorded their sixth straight win in the NBA."
-    },
-    {
-      "title": "Hong Kong democracy activist Joshua Wong sentenced to 10 years in jail",
-      "url": "https://www.aljazeera.com/news/2026/11/5/hong-kong-democracy-activist-joshua-wong-sentenced-to-10-years-in-jail?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "Wong, in prison since 2020, was found guilty of colluding with foreign entities in violation of national security law."
-    },
-    {
-      "title": "Ten years of the Paris Agreement: Has the world kept its climate promises?",
-      "url": "https://www.aljazeera.com/news/2026/11/5/ten-years-of-the-paris-agreement-has-the-world-kept-its-climate-promises?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "Nearly 200 countries pledged to limit warming to 1.5C. We look at who has delivered and who has fallen short."
-    },
-    {
-      "title": "Germany’s Merz expects Trump to keep ignoring Congress",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/germanys-merz-expects-trump-to-keep-ignoring-congress?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "German Chancellor Friedrich Merz expects US President Donald Trump to keep bypassing Congress despite midterm losses."
     }
   ]
 }
