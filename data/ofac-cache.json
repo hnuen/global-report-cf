@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T19:08:27.690Z",
+  "updatedAt": "2026-11-05T21:08:23.355Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261105",
@@ -2866,43 +2866,48 @@
         },
         {
           "number": "27",
-          "title": "Venezuela General License 27",
+          "title": "Certain Transactions Related to Patents, Trademarks, and Copyrights Authorized ( a)",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34111/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "29",
-          "title": "Venezuela General License 29",
+          "title": "Certain Transactions Involving the Government of Venezuela in Support of Certain Nongovernmental Organizations' Activities Authorized",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/31771/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "30B",
-          "title": "Venezuela General License 30B",
+          "title": "Authorizing Certain Transactions Necessary to Port and Airport Operations",
           "date": "February 2, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934996/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "31B",
-          "title": "Venezuela General License 31B",
+          "title": "Certain Transactions Involving the IV Venezuelan National Assembly and Certain Other Persons",
           "date": "January 4, 2021",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/930241/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "32",
-          "title": "Venezuela General License 32",
+          "title": "Authorizing Certain Transactions Related to Personal Maintenance of Individuals Who Are U.S. Persons Residing in Venezuela",
           "date": "August 5, 2019",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/34101/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "33",
@@ -3238,6 +3243,18 @@
   "unNotices": [],
   "bbcNews": [
     {
+      "title": "Who could be behind hoax bomb threats to European air travel?",
+      "url": "https://www.bbc.co.uk/news/articles/cx8dzzjg3g9zo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 5, 2026",
+      "description": "There is no hard evidence so far linking airline bomb threats to Russia, Iran or any proxy groups."
+    },
+    {
+      "title": "Melania Trump calls for lasting Ukraine truce as she hosts Russian and Ukrainian officials",
+      "url": "https://www.bbc.co.uk/news/articles/c9p8g085mz07o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 5, 2026",
+      "description": "The US first lady was credited by all for playing a key though unspecified role in the ceasefire."
+    },
+    {
       "title": "Vance walks Trump tightrope with scathing election critique blaming Iran war",
       "url": "https://www.bbc.co.uk/news/articles/crz98zqkz7z0o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 5, 2026",
@@ -3245,6 +3262,18 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Melania Trump hosts Russia-Ukraine meeting after Oleshky ceasefire",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/melania-trump-hosts-russia-ukraine-meeting-after-oleshky-ceasefire?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "US First Lady Melania Trump has brought Russian and Ukrainian representatives together at the White House."
+    },
+    {
+      "title": "Melania Trump calls for peace at meeting with Russia, Ukraine officials",
+      "url": "https://www.aljazeera.com/news/2026/11/5/melania-trump-calls-for-peace-at-meeting-with-russia-ukraine-officials?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "US first lady hosts Russian, Ukrainian officials at the White House, urges two sides to build on recent local truce."
+    },
     {
       "title": "Iran says tankers struck in Hormuz amid fears of new US attack",
       "url": "https://www.aljazeera.com/news/2026/11/5/iran-says-tankers-struck-in-hormuz-amid-fears-of-new-us-attack?traffic_source=rss",
@@ -3371,6 +3400,12 @@
       "description": "At least 21 flights across Europe are affected in what the UK government calls a \"malicious hoax threat\"."
     },
     {
+      "title": "California governor commutes death sentences for all 548 people on death row",
+      "url": "https://www.bbc.co.uk/news/articles/cqrkyyd2j8mvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 5, 2026",
+      "description": "California has historically had the largest population of death row inmates in the US."
+    },
+    {
       "title": "French protests see numbers surge as unions join strikes over high cost of living",
       "url": "https://www.bbc.co.uk/news/articles/ckx2qzv835pgo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 5, 2026",
@@ -3383,16 +3418,16 @@
       "description": "The move follows a bank collapse and after the lower house of congress voted in favour of pursuing an impeachment trial against him."
     },
     {
-      "title": "Manhunt in western Turkey after eight killed in series of shootings",
+      "title": "Eight killed in series of shootings in western Turkey",
       "url": "https://www.bbc.co.uk/news/articles/cvj6jj21pd2ko?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 5, 2026",
-      "description": "Eight people have been killed and one seriously injured in a series of shootings in western Turkey."
+      "description": "Victims are found in several locations in three separate vehicles, according to local reports."
     },
     {
-      "title": "The Pitt and ER are similar enough for lawsuit to proceed, judge rules",
-      "url": "https://www.bbc.co.uk/news/articles/cq4g1r42jx00o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Shares in Musk's SpaceX plunge as tech and AI stocks fall",
+      "url": "https://www.bbc.co.uk/news/articles/cmn04705rd8jo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 5, 2026",
-      "description": "The widow of ER creator Michael Crichton argues The Pitt is effectively a reboot of the 1990s series."
+      "description": "The market has been reacting to possible tougher scrutiny of data centre construction and the AI industry following the US mid-terms"
     },
     {
       "title": "Russell Brand is being investigated over two new rape complaints, police say",
@@ -3401,28 +3436,16 @@
       "description": "Det Supt Andy Furphy said he hoped other potential victims would gain \"courage\" and \"confidence\" from the guilty verdicts."
     },
     {
-      "title": "Joshua Wong, face of Hong Kong's pro-democracy protests, jailed for 10 years",
-      "url": "https://www.bbc.co.uk/news/articles/cwp9g3rlp8jlo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "The Pitt and ER are similar enough for lawsuit to proceed, judge rules",
+      "url": "https://www.bbc.co.uk/news/articles/cq4g1r42jx00o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 5, 2026",
-      "description": "Wong, 30, is among hundreds of Hongkongers detained under the controversial national security law."
-    },
-    {
-      "title": "Typhoons batter East Asia as El Niño makes Pacific 'burn with fever'",
-      "url": "https://www.bbc.co.uk/news/articles/cw33kgj7nkemo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 4, 2026",
-      "description": "Even for countries where typhoons are a way of life, the last few months have brought unusually wild weather."
+      "description": "The widow of ER creator Michael Crichton argues The Pitt is effectively a reboot of the 1990s series."
     },
     {
       "title": "Pope Leo hosts Bob Dylan at official residence in Rome",
       "url": "https://www.bbc.co.uk/news/articles/cm0e035n13ylo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 5, 2026",
       "description": "Pope Leo had previously quoted Dylan's work in the preface of a book warning against nuclear rearmament."
-    },
-    {
-      "title": "India's costliest film retells a beloved Hindu epic - but divides critics",
-      "url": "https://www.bbc.co.uk/news/articles/cm93zv62v1n7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 5, 2026",
-      "description": "Easily the most anticipated Bollywood film of the year, Ramayana: Rise of a Legend is the first of two parts."
     },
     {
       "title": "Watch: How rapist Brand was never far from controversy",
@@ -3459,12 +3482,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cw62yq9vp7yyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 5, 2026",
       "description": "Laura Sides faced a dilemma of whether to find out if she would inherit her father's condition."
-    },
-    {
-      "title": "What Democrats can and can't do with their new power after taking Congress",
-      "url": "https://www.bbc.co.uk/news/articles/cq1kdgnn2xdeo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 4, 2026",
-      "description": "Democrats can vote legislation through. But Trump still has veto power."
     },
     {
       "title": "A bitter end for Ronaldo - the icon who transformed Portugal",
@@ -3779,6 +3796,30 @@
       "description": "Dozens of supermarkets in seven European countries dumped huge quantities of food after refrigerators and freezers were targeted in a cyber-attack."
     },
     {
+      "title": "Why are wealthy countries failing developing nations?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/11/5/why-are-wealthy-countries-failing-developing-nations?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "UN report warns climate adaptation funding is falling far short of needs."
+    },
+    {
+      "title": "Mass protests in France driven by nationwide strike action",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/mass-protests-in-france-driven-by-nationwide-strike-action?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "More than 250,000 people took to the streets across France on Thursday as five unions called a day of strike action."
+    },
+    {
+      "title": "The blame game: How the US midterm shock is shaping Israel’s race for PM",
+      "url": "https://www.aljazeera.com/news/2026/11/5/the-blame-game-how-the-us-midterm-shock-is-shaping-israels-race-for-pm?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "The Republican midterm rout is helping shape who leads Israel next, as Netanyahu’s US ties turn toxic."
+    },
+    {
+      "title": "Top US civil rights official resigns",
+      "url": "https://www.aljazeera.com/news/2026/11/5/top-us-civil-rights-official-resigns?traffic_source=rss",
+      "date": "November 5, 2026",
+      "description": "New Democratic Congress expected to probe Trump Justice Department office's handling of Epstein files and ICE killings."
+    },
+    {
       "title": "Division among US Democrats over Schumer’s leadership role",
       "url": "https://www.aljazeera.com/news/2026/11/5/division-among-us-democrats-over-schumers-leadership-role?traffic_source=rss",
       "date": "November 5, 2026",
@@ -3879,42 +3920,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/5/russell-brand-found-guilty-of-rape-and-sexual-assault-by-uk-court?traffic_source=rss",
       "date": "November 5, 2026",
       "description": "British comedian was convicted by jury at London court of one count of rape and three counts of sexual assault."
-    },
-    {
-      "title": "‘Healthcare not bombs’: How Gaza shaped Adam Hamawy’s path to US Congress",
-      "url": "https://www.aljazeera.com/news/2026/11/5/healthcare-not-bombs-how-gaza-shaped-adam-hamawys-path-to-us-congress?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "Former army surgeon and Gaza volunteer Hamawy is the first Muslim American elected to the US Congress from New Jersey."
-    },
-    {
-      "title": "Could the US midterms further isolate Israel in Washington?",
-      "url": "https://www.aljazeera.com/news/2026/11/5/could-the-us-midterms-further-isolate-israel-in-washington?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "The midterms showed that challenging support for Israel can win votes. But changing US foreign policy may be harder."
-    },
-    {
-      "title": "Burning rubbish chokes besieged Yemeni city of Taiz",
-      "url": "https://www.aljazeera.com/features/2026/11/5/burning-rubbish-chokes-besieged-yemeni-city-of-taiz?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "Taiz residents face health risks as waste accumulates amid sniper fire, forcing people to burn it in the streets."
-    },
-    {
-      "title": "Joint List says it will back Eisenkot to form Israel’s next government",
-      "url": "https://www.aljazeera.com/news/2026/11/5/joint-list-says-it-will-back-eisenkot-to-form-israels-next-government?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "Arab-led parties won a record 19 seats in Israel's 120-seat parliament in last week's general election."
-    },
-    {
-      "title": "What can Democrats do in Congress under President Trump?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/what-can-democrats-do-in-congress-under-president-trump?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "What can the Democratic party actually change when it comes to Donald Trump’s decisions, policies and presidency?"
-    },
-    {
-      "title": "Indonesia rushes thousands of troops to Jakarta amid wiretap scandal",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/indonesia-rushes-thousands-of-troops-to-jakarta-amid-wiretap-scandal?traffic_source=rss",
-      "date": "November 5, 2026",
-      "description": "Indonesia is deploying thousands of troops in Jakarta amid an alleged wiretapping scandal targeting the president."
     }
   ]
 }
