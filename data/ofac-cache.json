@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-06T19:08:23.896Z",
+  "updatedAt": "2026-11-06T21:08:21.641Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261106",
+      "code": "20261106",
+      "title": "Iran-related Designations",
+      "date": "November 06, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261105",
       "code": "20261105",
@@ -54,12 +60,6 @@
       "code": "20261016",
       "title": "Issuance of Amended Venezuela-related General License and Frequently Asked Question",
       "date": "October 16, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20261015",
-      "code": "20261015",
-      "title": "Iran-related Designations; Cuba Designation; Issuance of New and Amended General Licenses and Frequently Asked Questions",
-      "date": "October 15, 2026"
     }
   ],
   "civilPenalties": [
@@ -1137,7 +1137,7 @@
     "iran-sanctions": {
       "name": "Iran Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions",
-      "lastUpdated": "Nov 04, 2026",
+      "lastUpdated": "Nov 06, 2026",
       "status": "active",
       "statusLabel": "Active",
       "statusReason": "",
@@ -3527,22 +3527,28 @@
       "description": "Changes in the FTSE 100 and other indexes are not just for financial experts, they can affect our lives."
     },
     {
+      "title": "Why smoky bacon crisps threaten to reignite rows over EU rules",
+      "url": "https://www.bbc.co.uk/news/articles/cm1dwwqrr1kvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 6, 2026",
+      "description": "A post-Brexit deal on food standards has raised questions over the future naming of the classic British snack."
+    },
+    {
       "title": "Elon Musk appears to signal the end of the road for Cybertruck",
       "url": "https://www.bbc.co.uk/news/articles/cq1j33w7d232o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 6, 2026",
       "description": "Musk said it was to make room for production of its Cybercabs - autonomous taxis without a driver."
     },
     {
-      "title": "PM tells firms to publish salaries in job adverts ahead of new law",
-      "url": "https://www.bbc.co.uk/news/articles/cmd9343z3zw2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 6, 2026",
-      "description": "The government argues the change will help jobseekers and could help to prevent pay discrimination."
-    },
-    {
       "title": "The engine parts that 'fight the laws of the universe'",
       "url": "https://www.bbc.co.uk/news/articles/cwe9lmp1pyyxo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 6, 2026",
       "description": "Investment has surged into the making of jet turbine blades - an extremely difficult component to make."
+    },
+    {
+      "title": "PM tells firms to publish salaries in job adverts ahead of new law",
+      "url": "https://www.bbc.co.uk/news/articles/cmd9343z3zw2o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 6, 2026",
+      "description": "The government argues the change will help jobseekers and could help to prevent pay discrimination."
     },
     {
       "title": "'I was asked if I was a crier': Your worst job interviews revealed",
@@ -3663,12 +3669,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cm86zdp2ygqno?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 3, 2026",
       "description": "The men and women who rummage through commercial bins to take clothes and other items."
-    },
-    {
-      "title": "'Quiet quitting' could be hitting the economy - here's why",
-      "url": "https://www.bbc.co.uk/news/articles/cw23d5z87drpo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 3, 2026",
-      "description": "Britons have become less engaged with the jobs they do and are less willing to put in extra effort, a report has found."
     },
     {
       "title": "Graduates are managing AI - but are they learning much else?",
@@ -3833,6 +3833,72 @@
       "description": "Some employers create job ads with no intent to hire"
     },
     {
+      "title": "Trump promotes Stephen Miller to Chief of Staff ‘to run things well’",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/6/trump-promotes-stephen-miller-to-chief-of-staff-to-run-things?traffic_source=rss",
+      "date": "November 6, 2026",
+      "description": "President Donald Trump has promoted long-time aide Stephen Miller to Chief of Staff, replacing Susie Wiles."
+    },
+    {
+      "title": "Meghan Markle’s father arrested in US over alleged child sex abuse photos",
+      "url": "https://www.aljazeera.com/news/2026/11/6/meghan-markles-father-arrested-in-us-over-alleged-child-sex-abuse-photos?traffic_source=rss",
+      "date": "November 6, 2026",
+      "description": "US authorities found sexually explicit photos that appeared to show Thomas Markle with prepubescent girls."
+    },
+    {
+      "title": "Migrants arrive in Spain’s Canary Islands after being rescued at sea",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/6/6-11-sv-canaryislandsmigrantarrivalssurge-es?traffic_source=rss",
+      "date": "November 6, 2026",
+      "description": "More than 3,200 migrants were rescued in the first six days of November in Canary Islands, Spain."
+    },
+    {
+      "title": "Pope Leo arrives in Uruguay starting 12-day Latin America tour",
+      "url": "https://www.aljazeera.com/news/2026/11/6/pope-leo-arrives-in-uruguay-starting-12-day-latin-america-tour?traffic_source=rss",
+      "date": "November 6, 2026",
+      "description": "The 71-year-old pontiff is visiting three countries despite undergoing surgery to remove a tumour last month."
+    },
+    {
+      "title": "How ‘Street Medics’ protect French protesters",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/6/how-street-medics-protect-french-protesters?traffic_source=rss",
+      "date": "November 6, 2026",
+      "description": "French authorities are investigating more than a hundred cases of alleged police misconduct at cost of living protests."
+    },
+    {
+      "title": "Tanzanian opposition leader jailed in ‘politically motivated’ case",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/6/tanzanian-opposition-leader-jailed-in-politically-motivated-case?traffic_source=rss",
+      "date": "November 6, 2026",
+      "description": "Tanzanian opposition leader Tundu Lissu has been jailed in a case widely condemned as politically motivated."
+    },
+    {
+      "title": "Why is Britain refusing to pay slavery reparations?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/6/why-is-britain-refusing-to-pay-slavery-reparations?traffic_source=rss",
+      "date": "November 6, 2026",
+      "description": "Britain compensated slave owners, not the enslaved. Can an apology without reparations be enough?"
+    },
+    {
+      "title": "Could Trump’s veto stop the Democratic majority?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/6/us-congress-flipped-061126?traffic_source=rss",
+      "date": "November 6, 2026",
+      "description": "Democrats have won the House and Senate. AJLabs looks at the numbers and what their majority means for Trump."
+    },
+    {
+      "title": "Israel closes Hebron’s Ibrahimi Mosque to Palestinians for Jewish holiday",
+      "url": "https://www.aljazeera.com/news/2026/11/6/israel-closes-hebrons-ibrahimi-mosque-to-palestinians-for-jewish-holiday?traffic_source=rss",
+      "date": "November 6, 2026",
+      "description": "Contested West Bank holy site is reopened exclusively for Israelis, deepening tensions over control of the mosque."
+    },
+    {
+      "title": "Trump names Stephen Miller as new chief of staff, replacing Susie Wiles",
+      "url": "https://www.aljazeera.com/news/2026/11/6/trump-says-making-adviser-stephen-miller-white-house-chief-of-staff?traffic_source=rss",
+      "date": "November 6, 2026",
+      "description": "Susie Wiles steps down as White House chief of staff; Stephen Miller assumes the role amid post-election reshuffling."
+    },
+    {
+      "title": "Armed men kill at least 33 in village in Ebola-hit eastern DRC",
+      "url": "https://www.aljazeera.com/news/2026/11/6/armed-men-kill-at-least-33-in-village-in-ebola-hit-eastern-drc?traffic_source=rss",
+      "date": "November 6, 2026",
+      "description": "Locals blame ADF armed group, which pledged allegiance to ISIL in 2019, for the deadly raids on North Kivu villages."
+    },
+    {
       "title": "Why is Paraguay facing a banking and political crisis?",
       "url": "https://www.aljazeera.com/video/inside-story/2026/11/6/why-is-paraguay-facing-a-banking-and-political-crisis?traffic_source=rss",
       "date": "November 6, 2026",
@@ -3909,72 +3975,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/6/millions-fleeing-sudans-war-risk-losing-shelter-as-funds-run-low-un-warns?traffic_source=rss",
       "date": "November 6, 2026",
       "description": "Fewer than 1 million of the 15.4 million people in need emergency shelter in Sudan have received assistance."
-    },
-    {
-      "title": "European troops prepare for possible post-ceasefire deployment to Ukraine",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/6/france-ukraine-postwar-military-drills?traffic_source=rss",
-      "date": "November 6, 2026",
-      "description": "French- and British-led military drills in Poland will testing post-ceasefire deployment in Ukraine."
-    },
-    {
-      "title": "Protesters break into Microsoft AI data centre site in Amsterdam",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/6/protesters-break-into-microsoft-ai-data-centre-site-in-amsterdam?traffic_source=rss",
-      "date": "November 6, 2026",
-      "description": "More than 100 activists broke into a Microsoft data centre construction site in Amsterdam."
-    },
-    {
-      "title": "‘Clicky Ponting’ handed two-year suspension over cricket cheating scandal",
-      "url": "https://www.aljazeera.com/sports/2026/11/6/clicky-ponting-handed-two-year-suspension-over-cricket-cheating-scandal?traffic_source=rss",
-      "date": "November 6, 2026",
-      "description": "Amateur cricketer was clicking his fingers while fielding to trick umpire into thinking the batsman had edged the ball."
-    },
-    {
-      "title": "Why is Denmark separating ‘Western’ and ‘non-Western’ citizens?",
-      "url": "https://www.aljazeera.com/news/2026/11/6/why-is-denmark-separating-western-and-non-western-citizens?traffic_source=rss",
-      "date": "November 6, 2026",
-      "description": "Evicted families take Denmark’s controversial ‘ghetto law’ to the Supreme Court."
-    },
-    {
-      "title": "Republicans redrew this Texas district to win – it narrowly worked",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/6/republicans-redrew-this-texas-district-to-win-it-narrowly-worked?traffic_source=rss",
-      "date": "November 6, 2026",
-      "description": "Texas Republicans redrew Congressional District 32 to give themselves a winning edge in the midterms."
-    },
-    {
-      "title": "Musk says Tesla to wind down polarising Cybertruck production as sales lag",
-      "url": "https://www.aljazeera.com/news/2026/11/6/musk-says-tesla-to-wind-down-polarising-cybertruck-production-as-sales-lag?traffic_source=rss",
-      "date": "November 6, 2026",
-      "description": "Released in 2023, the truck has become a symbol to some of opposition to Musk amid foray into US politics."
-    },
-    {
-      "title": "New bomb threats target European broadcasters, air traffic",
-      "url": "https://www.aljazeera.com/news/2026/11/6/new-bomb-threats-target-european-broadcasters-air-traffic?traffic_source=rss",
-      "date": "November 6, 2026",
-      "description": "A string of hoax alerts causing flight diversions across Europe this week has broadened to include newsrooms."
-    },
-    {
-      "title": "Claims of a Ukrainian ‘torture chamber’ went viral. What really happened?",
-      "url": "https://www.aljazeera.com/news/2026/11/6/claims-of-a-ukrainian-torture-chamber-went-viral-what-really-happened?traffic_source=rss",
-      "date": "November 6, 2026",
-      "description": "A woman who claimed that men were being violently assaulted in a house for evading the draft has been arrested."
-    },
-    {
-      "title": "Veto or deals: Can Trump find a way to work with Democrats?",
-      "url": "https://www.aljazeera.com/news/2026/11/6/veto-or-deals-can-trump-find-a-way-to-work-with-democrats?traffic_source=rss",
-      "date": "November 6, 2026",
-      "description": "Trump has three options to affect legislation, say analysts: veto legislation, enforce executive orders or make deals."
-    },
-    {
-      "title": "What a Trump-Xi-Putin summit could mean – and what it wouldn’t",
-      "url": "https://www.aljazeera.com/news/2026/11/6/what-a-trump-xi-putin-summit-would-mean-and-what-it-wouldnt?traffic_source=rss",
-      "date": "November 6, 2026",
-      "description": "A Trump-Xi-Putin meeting at APEC would be a coup for Moscow, analysts say, but Beijing appears lukewarm."
-    },
-    {
-      "title": "Who is Kenya’s starvation cult leader?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/6/who-is-kenyas-starvation-cult-leader?traffic_source=rss",
-      "date": "November 6, 2026",
-      "description": "Who is Kenya’s starvation cult leader?"
     }
   ]
 }
