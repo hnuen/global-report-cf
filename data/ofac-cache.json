@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T15:08:27.793Z",
+  "updatedAt": "2026-11-07T17:08:26.380Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261106",
@@ -3250,19 +3250,25 @@
   ],
   "bbcNews": [
     {
+      "title": "Italian foreign minister says hackers leaked his personal data",
+      "url": "https://www.bbc.co.uk/news/articles/cr20wvge32j3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 7, 2026",
+      "description": "Prime Minister Giorgia Meloni has blamed pro-Russian hackers for publishing the details online."
+    },
+    {
       "title": "Russian strikes wound nine and damage Ukraine's power network ahead of talks",
       "url": "https://www.bbc.co.uk/news/articles/cm4g1nq8158po?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 7, 2026",
       "description": "The attacks come before Ukrainian and Russian delegations are due to take part in trilateral talks in Abu Dhabi next week."
-    },
-    {
-      "title": "Russian extremist group denies sending hoax bomb threats",
-      "url": "https://www.bbc.co.uk/news/articles/cm2d66n0lx1yo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 6, 2026",
-      "description": "Scores of flights across Europe have received bomb threats this week, but no explosives have been found so far."
     }
   ],
   "ajNews": [
+    {
+      "title": "Iran’s IRGC says building underground sites for weapons production, storage",
+      "url": "https://www.aljazeera.com/news/2026/11/7/irans-irgc-says-building-underground-sites-for-weapons-production-storage?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "IRGC says underground military complexes allow missile production to continue even under heavy bombardment."
+    },
     {
       "title": "‘They started bombing us with drones’: Russian attacks unnerve Zaporizhzhia",
       "url": "https://www.aljazeera.com/news/2026/11/7/they-started-bombing-us-with-drones-russian-attacks-unnerve-zaporizhzhia?traffic_source=rss",
@@ -3286,12 +3292,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/7/qeshm-island-and-hormuz-hit-as-mediators-try-to-prevent-us-iran-escalation?traffic_source=rss",
       "date": "November 7, 2026",
       "description": "US strikes have continued on Iran after more ships in the Strait of Hormuz were attacked."
-    },
-    {
-      "title": "Will Trump strike nuclear sites again as Iran engages ‘cognitive warfare’?",
-      "url": "https://www.aljazeera.com/news/2026/11/7/will-trump-strike-nuclear-sites-again-as-iran-engages-cognitive?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "The US president has been sending mixed messages after his party suffered a defeat at the midterm elections."
     }
   ],
   "occNews": [
@@ -3401,6 +3401,12 @@
       "description": "Weeks of coalition talks could follow after preliminary results pointed to a highly divided national parliament."
     },
     {
+      "title": "UK cannot 'cherry pick' EU single market deal, Barnier tells BBC",
+      "url": "https://www.bbc.co.uk/news/articles/c9kgjj206nzpo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 7, 2026",
+      "description": "The former Brexit negotiator says EU countries would reject any British attempts to follow economic rules \"a la carte\"."
+    },
+    {
       "title": "With Stephen Miller pick, Trump readies for a battle",
       "url": "https://www.bbc.co.uk/news/articles/crp3gg2z171go?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 6, 2026",
@@ -3417,6 +3423,18 @@
       "url": "https://www.bbc.co.uk/news/articles/c60e0001ve9wo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 7, 2026",
       "description": "Pope Leo travels to Uruguay just three weeks after having surgery for lung cancer."
+    },
+    {
+      "title": "Meghan's father Thomas Markle under house arrest after child sex abuse material charge",
+      "url": "https://www.bbc.co.uk/news/articles/cqgkvv8m8pgyo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 7, 2026",
+      "description": "The 82-year-old appeared in court in Florida after the FBI searched two Los Angeles-area storage units he rented."
+    },
+    {
+      "title": "Texas mayor instructs police to limit co-operation with ICE",
+      "url": "https://www.bbc.co.uk/news/articles/c8dx33d22zkro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 7, 2026",
+      "description": "There has been months of public outcry in Houston after an Immigration and Customs Enforcement (ICE) officer fatally shot a man who was driving to work."
     },
     {
       "title": "AI stocks climb after trillions wiped from market values",
@@ -3441,42 +3459,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cm5yne5984l0o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 6, 2026",
       "description": "Paul Mackenzie ordered his followers to starve their children to death in a forest so they could \"meet Jesus\"."
-    },
-    {
-      "title": "Two dead after bus crashes in France, officials say",
-      "url": "https://www.bbc.co.uk/news/articles/cmly00l4p3lwo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 6, 2026",
-      "description": "One child and one young adult were killed in the crash, local authorities say, with more injured."
-    },
-    {
-      "title": "Judge blocks construction of Trump's massive arch after federal agency approval",
-      "url": "https://www.bbc.co.uk/news/articles/cq99zd93ryvko?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 6, 2026",
-      "description": "The Trump administration had hoped the construction of the 250-foot arch could begin as early as this week."
-    },
-    {
-      "title": "Cornell faculty pass no-confidence vote over leadership's handling of Jane Doe allegations",
-      "url": "https://www.bbc.co.uk/news/articles/c933xxl8yv0go?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 6, 2026",
-      "description": "Friday's resolution by academic staff is largely symbolic as they do not have the power to remove those in charge of the university."
-    },
-    {
-      "title": "Dozens of Democrats eyeing 2028 presidential run, says former Obama aide",
-      "url": "https://www.bbc.co.uk/news/articles/cx8dzzy8n713o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 6, 2026",
-      "description": "Jim Messina tells the BBC that after Democrats' midterm victories he's talked to \"over two dozen campaigns\", with some already hiring staff."
-    },
-    {
-      "title": "Tanzanian opposition leader found guilty of inciting unrest but acquitted of treason",
-      "url": "https://www.bbc.co.uk/news/articles/ckp8g4pm0y4lo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 6, 2026",
-      "description": "The 58-year-old, who has been detained since April last year, says the charges are politically motivated."
-    },
-    {
-      "title": "Elon Musk appears to signal the end of the road for Cybertruck",
-      "url": "https://www.bbc.co.uk/news/articles/cq1j33w7d232o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 6, 2026",
-      "description": "Musk said it was to make room for production of its Cybercabs - autonomous taxis without a driver."
     },
     {
       "title": "Watch: Is it the end of the road for Tesla's Cybertruck?",
@@ -3773,7 +3755,7 @@
       "description": "Will farmers want AI tools to help judge when to pick fruit, or is their own intuition enough?"
     },
     {
-      "title": "'My mortgage is going up £200': How rising interest rates are hitting people's pockets",
+      "title": "'My mortgage is going up £200 a month': How rising interest rates are hitting people's pockets",
       "url": "https://www.bbc.co.uk/news/articles/c617kjqjvk12o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 7, 2026",
       "description": "With UK interest rates set to rise, mortgages, credit cards and loans could get more expensive for millions."
@@ -3849,6 +3831,42 @@
       "url": "https://www.bbc.co.uk/sounds/play/w3ct990m?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 3, 2026",
       "description": "Some employers create job ads with no intent to hire"
+    },
+    {
+      "title": "Israel builds 90km network of military roads across southern Lebanon",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/israel-builds-90km-network-of-military-roads-across-southern-lebanon?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "Israel is building roads and military outposts across southern Lebanon."
+    },
+    {
+      "title": "Guatemalan lawmaker and three police officers killed in armed attack",
+      "url": "https://www.aljazeera.com/news/2026/11/7/guatemalan-lawmaker-and-three-police-officers-killed-in-armed-attack?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "It happened in a region of the country known to have drug trafficking activity."
+    },
+    {
+      "title": "Hundreds march in Pau, France against high living costs",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/hundreds-march-in-pau-france-against-high-living-costs?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "Hundreds march in Pau, France against high living costs"
+    },
+    {
+      "title": "Five killed and at least 10 injured in Krakow shooting",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/7-11-clip-poland-krakow-shooting?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "Five people have been killed and at least 10 injured in a shooting near the main market square in Krakow, Poland."
+    },
+    {
+      "title": "Trump’s new chief of staff Stephen Miller says he ‘saved America’",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/7-11-sv-trump-stephen-miller-loyalty-pledge?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "Stephen Miller, US President Donald Trump’s incoming chief of staff praises him."
+    },
+    {
+      "title": "At least five people killed in shooting in Poland’s Krakow",
+      "url": "https://www.aljazeera.com/news/2026/11/7/casualties-reported-after-shooting-in-polands-krakow?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "Polish Prime Minister Donald Tusk says police are investigating after 'tragic shooting' in second-largest city."
     },
     {
       "title": "The Lions by the River Tigris: Restoring Mosul’s artefacts",
@@ -3933,42 +3951,6 @@
       "url": "https://www.aljazeera.com/sports/2026/11/7/india-new-zealand-second-odi-rain-dls-method-win-four-runs?traffic_source=rss",
       "date": "November 7, 2026",
       "description": "Put in to bat, New Zealand struggled to gain any momentum as ⁠India's pace attack dismantled their batting lineup."
-    },
-    {
-      "title": "Sudan war and climate change see parents struggle to feed their children",
-      "url": "https://www.aljazeera.com/features/2026/11/7/sudan-war-and-climate-change-sees-parents-struggle-to-feed-their-children?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "War, poverty and climate change are all affecting Sudanese, with increasing cases of child malnutrition."
-    },
-    {
-      "title": "Pakistani astronaut to join China’s next space station mission",
-      "url": "https://www.aljazeera.com/news/2026/11/7/pakistani-astronaut-to-join-chinas-next-space-station-mission?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "The unnamed individual will be the first foreign national to visit China's space station as part of Shenzhou-24 mission."
-    },
-    {
-      "title": "Palestinian citizens of Israel put to ‘loyalty test’ after election wins",
-      "url": "https://www.aljazeera.com/features/2026/11/7/palestinian-citizens-of-israel-put-to-loyalty-test-after-election-wins?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "Palestinian citizens of Israel say Arab parties' success in recent elections has led to growing pressure."
-    },
-    {
-      "title": "China’s e-bikes boom as fuel prices rise",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/chinas-e-bikes-boom-as-fuel-prices-rise?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "E-bikes manufacturers in China are are now looking to expand to markets abroad as fuel prices stay high."
-    },
-    {
-      "title": "US Senator Abdul El-Sayed launches ‘Habibi’ political action committee",
-      "url": "https://www.aljazeera.com/news/2026/11/7/el-sayed-launches-habibi-pac-days-after-historic-michigan-senate-win?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "The first Muslim senator's new committee will let him raise money for other candidates."
-    },
-    {
-      "title": "Doncic’s 53 points lift Lakers as Cavs top Sixers in LeBron James’s return",
-      "url": "https://www.aljazeera.com/sports/2026/11/7/doncic-lakers-lebron-cavaliers-sixers-nba-cup-basketball?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "LA Lakers star Doncic closed the first half with an astonishing shot from well beyond the half-court line."
     }
   ]
 }
