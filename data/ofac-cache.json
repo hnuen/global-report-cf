@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T17:08:26.380Z",
+  "updatedAt": "2026-11-07T19:08:24.306Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261106",
@@ -3250,6 +3250,12 @@
   ],
   "bbcNews": [
     {
+      "title": "US offers $20m reward for information about Iran's nuclear programme",
+      "url": "https://www.bbc.co.uk/news/articles/c6d091ev3p0jo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 7, 2026",
+      "description": "Donald Trump has repeatedly raised the prospecting of renewing strikes against Iran's nuclear facilities."
+    },
+    {
       "title": "Italian foreign minister says hackers leaked his personal data",
       "url": "https://www.bbc.co.uk/news/articles/cr20wvge32j3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 7, 2026",
@@ -3280,18 +3286,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/7/pro-russian-hackers-leak-italian-foreign-ministers-data-on-dark-web?traffic_source=rss",
       "date": "November 7, 2026",
       "description": "The prime minister blames pro-Russian hackers for the leak, as her top diplomat says the cyberthreat was ongoing."
-    },
-    {
-      "title": "Why are oil traders refusing to buy Russian diesel after Trump-Putin deal?",
-      "url": "https://www.aljazeera.com/news/2026/11/7/why-are-oil-traders-refusing-to-buy-russian-diesel-after-trump-putin-deal?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "Zero Russian diesel has reached the US as tankers divert and buyers fear legal action."
-    },
-    {
-      "title": "Qeshm island and Hormuz hit, as mediators try to prevent US-Iran escalation",
-      "url": "https://www.aljazeera.com/news/2026/11/7/qeshm-island-and-hormuz-hit-as-mediators-try-to-prevent-us-iran-escalation?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "US strikes have continued on Iran after more ships in the Strait of Hormuz were attacked."
     }
   ],
   "occNews": [
@@ -3395,10 +3389,22 @@
   ],
   "regionsNews": [
     {
+      "title": "What we know about Krakow mass shooting so far",
+      "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 7, 2026",
+      "description": "At least six people were killed by a gunman in military fatigues who opened fire in Poland's second largest city."
+    },
+    {
       "title": "No clear winner after tight New Zealand general election",
       "url": "https://www.bbc.co.uk/news/articles/c3ewev11g1e0o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 7, 2026",
       "description": "Weeks of coalition talks could follow after preliminary results pointed to a highly divided national parliament."
+    },
+    {
+      "title": "Houthis say at least 25 killed in Saudi air strike",
+      "url": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 7, 2026",
+      "description": "Saudi Arabia, which leads a coalition fighting the Houthis in Yemen, has not commented."
     },
     {
       "title": "UK cannot 'cherry pick' EU single market deal, Barnier tells BBC",
@@ -3461,6 +3467,12 @@
       "description": "Paul Mackenzie ordered his followers to starve their children to death in a forest so they could \"meet Jesus\"."
     },
     {
+      "title": "Gaza wedding festival sees 250 couples married at the same time",
+      "url": "https://www.bbc.co.uk/news/videos/ckr5ygm78j76o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 7, 2026",
+      "description": "A mass wedding for Palestinian brides and grooms has taken place in the rubble-strewn streets of Gaza."
+    },
+    {
       "title": "Watch: Is it the end of the road for Tesla's Cybertruck?",
       "url": "https://www.bbc.co.uk/news/videos/cv8ezz9ll7nyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 6, 2026",
@@ -3471,12 +3483,6 @@
       "url": "https://www.bbc.co.uk/news/videos/cq398m8w41lyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 5, 2026",
       "description": "BBC Verify has been analysing messages after flights across Europe were targeted by fake bomb threats - the second such incident this week."
-    },
-    {
-      "title": "Was an Italian chef really fired over refusal to put pineapple on pizza?",
-      "url": "https://www.bbc.co.uk/news/videos/cmvg9yy8wpweo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 5, 2026",
-      "description": "The chef had stated that putting pineapple on pizza was \"offensive to his culture\"."
     },
     {
       "title": "This man refused life-saving treatment because of his religion - days later the rules changed",
@@ -3833,6 +3839,48 @@
       "description": "Some employers create job ads with no intent to hire"
     },
     {
+      "title": "Houston mayor orders police to limit cooperation with ICE",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/houston-mayor-orders-police-to-limit-cooperation-with-ice?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "Houston Mayor John Whitmire has instructed police to limit contact with ICE, reversing the city’s previous approach."
+    },
+    {
+      "title": "Paraguay’s ousted president charged over banking scandal",
+      "url": "https://www.aljazeera.com/economy/2026/11/7/paraguays-ousted-president-charged-over-banking-scandal?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "Santiago Pena was impeached over the collapse of Ueno Bank, which left millions unable to access their accounts."
+    },
+    {
+      "title": "Pope Leo hold first mass in Uruguay, urges crowd to be ‘bridge builders’",
+      "url": "https://www.aljazeera.com/news/2026/11/7/pope-leo-hold-first-mass-in-uruguay-urges-crowd-to-be-bridge-builders?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "Vatican says some 40,000 people gathered to listen to the head of the Roman Catholic Church in western city of Paysandu."
+    },
+    {
+      "title": "Houthis report 25 killed in Yemen strikes",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/houthis-report-25-killed-in-yemen-strikes?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "Yemen’s Houthis say at least 25 people have been killed and 30 injured in air strikes."
+    },
+    {
+      "title": "Lebanese footballer refuses to give up after injuries from Israeli strike",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/lebanese-footballer-refuses-to-give-up-after-injuries-from-israeli-strike?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "After surviving an Israeli airstrike that left her in a coma, Celine Haidar is back on the pitch, coaching footballers."
+    },
+    {
+      "title": "Jerusalem Daily: Heavy rains flood Gaza",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/jerusalem-daily-heavy-rains-flood-gaza?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "Jerusalem Daily: Heavy rains flood Gaza"
+    },
+    {
+      "title": "Valencia vs Real Madrid LIVE: La Liga",
+      "url": "https://www.aljazeera.com/sports/liveblog/2026/11/7/valencia-vs-real-madrid-live-la-liga?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "Follow updates from the La Liga clash, including the build-up, analysis and live text commentary of the match."
+    },
+    {
       "title": "Israel builds 90km network of military roads across southern Lebanon",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/israel-builds-90km-network-of-military-roads-across-southern-lebanon?traffic_source=rss",
       "date": "November 7, 2026",
@@ -3863,7 +3911,7 @@
       "description": "Stephen Miller, US President Donald Trump’s incoming chief of staff praises him."
     },
     {
-      "title": "At least five people killed in shooting in Poland’s Krakow",
+      "title": "At least six people killed in shooting in Poland’s Krakow",
       "url": "https://www.aljazeera.com/news/2026/11/7/casualties-reported-after-shooting-in-polands-krakow?traffic_source=rss",
       "date": "November 7, 2026",
       "description": "Polish Prime Minister Donald Tusk says police are investigating after 'tragic shooting' in second-largest city."
@@ -3921,36 +3969,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/heavy-rains-flood-displacement-camps-across-gaza?traffic_source=rss",
       "date": "November 7, 2026",
       "description": "Heavy rains and strong winds have flooded and damaged displacement tents across Gaza."
-    },
-    {
-      "title": "Atletico Madrid vs Barcelona: La Liga – predictions, team news, lineups",
-      "url": "https://www.aljazeera.com/sports/2026/11/7/atletico-madrid-barcelona-la-liga-prediction-team-news-lineups-preview?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "Barcelona and Atletico clash on Sunday in a blockbuster encounter which could upend the La Liga title race this season."
-    },
-    {
-      "title": "Dozens killed as humanitarian crisis mounts in Yemen: What next for war?",
-      "url": "https://www.aljazeera.com/news/2026/11/7/dozens-killed-as-humanitarian-crisis-mounts-in-yemen-what-next-for-war?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "Government forces reclaim key territories in Taiz and Lahij but face setbacks under Houthi resistance in certain areas."
-    },
-    {
-      "title": "Nepal’s fight to rebuild after flood disaster",
-      "url": "https://www.aljazeera.com/video/101-east/2026/11/7/nepals-fight-to-rebuild-after-flood-disaster?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "101 East reveals Nepal's efforts to save lives and rebuild communities after a devastating natural disaster."
-    },
-    {
-      "title": "Rains flood 70,000 displaced families’ tents in Gaza",
-      "url": "https://www.aljazeera.com/news/2026/11/7/rains-flood-thousands-of-tents-in-gaza?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "Initial losses are estimated at about $3m, according to Gaza's Government Media Office."
-    },
-    {
-      "title": "India beat New Zealand by four runs via DLS in rain-hit second ODI",
-      "url": "https://www.aljazeera.com/sports/2026/11/7/india-new-zealand-second-odi-rain-dls-method-win-four-runs?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "Put in to bat, New Zealand struggled to gain any momentum as ⁠India's pace attack dismantled their batting lineup."
     }
   ]
 }
