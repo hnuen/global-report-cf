@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T19:08:24.306Z",
+  "updatedAt": "2026-11-07T21:08:26.314Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261106",
@@ -3198,6 +3198,18 @@
   ],
   "europaNews": [
     {
+      "title": "Statement by EU Sanctions Envoy, David O’Sullivan on the eighth Sanctions Coordinators Forum",
+      "url": "https://finance.ec.europa.eu/news/statement-eu-sanctions-envoy-david-osullivan-eighth-sanctions-coordinators-forum-2026-11-06_en",
+      "date": "November 5, 2026",
+      "description": "The Forum’s discussions centered on priority areas to keep sustained pressure on the Kremlin’s war effort as sanctions circumvention, safeguarding the international banking sector, and crypto‑lead evasion schemes."
+    },
+    {
+      "title": "Statement by Commissioner Albuquerque on the outcomes of the tenth meeting of the High‑Level Meeting on sanctions implementation",
+      "url": "https://finance.ec.europa.eu/news/statement-commissioner-albuquerque-outcomes-tenth-meeting-high-level-meeting-sanctions-2026-11-06_en",
+      "date": "November 5, 2026",
+      "description": "The meeting was an opportunity to to discuss key priorities for strengthening the implementation and enforcement of EU sanctions."
+    },
+    {
       "title": "Commission meeting on sanctions implementation brings together Member States and international partners",
       "url": "https://finance.ec.europa.eu/news/commission-meeting-sanctions-implementation-brings-together-member-states-and-international-partners-2026-11-05_en",
       "date": "November 4, 2026",
@@ -3232,12 +3244,6 @@
       "url": "https://finance.ec.europa.eu/news/eu-adopts-20th-package-sanctions-against-russia-2026-04-23_en",
       "date": "April 22, 2026",
       "description": "The Commission welcomes the Council's adoption of the 20th Russia sanctions package, that puts further pressure on Russia to engage in negotiations and do so on terms acceptable for Ukraine."
-    },
-    {
-      "title": "Commission welcomes new sanctions against Iran",
-      "url": "https://finance.ec.europa.eu/news/commission-welcomes-new-sanctions-against-iran-2026-01-30_en",
-      "date": "January 29, 2026",
-      "description": "The restrictive measures consist of an asset freeze, travel bans to the EU, and a prohibition to make funds or economic resources available to those listed."
     }
   ],
   "unNotices": [
@@ -3270,22 +3276,22 @@
   ],
   "ajNews": [
     {
+      "title": "Ukraine’s Zaporizhzhia faces threat as Russian drones close in",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/0711-reported-audrey-in-zaporizhzhia-071126?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "Ukraine’s Zaporizhzhia, once a refuge for those fleeing the war, is now facing growing danger."
+    },
+    {
+      "title": "Latvian farmers protest over ‘blood grain’ trade with Russia",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/7-11-sv-latvia-farmers-protest-russian-grain-transit?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "Latvian farmers are protesting Russian grain transit, arguing that it helps fund Moscow’s war in Ukraine."
+    },
+    {
       "title": "Iran’s IRGC says building underground sites for weapons production, storage",
       "url": "https://www.aljazeera.com/news/2026/11/7/irans-irgc-says-building-underground-sites-for-weapons-production-storage?traffic_source=rss",
       "date": "November 7, 2026",
       "description": "IRGC says underground military complexes allow missile production to continue even under heavy bombardment."
-    },
-    {
-      "title": "‘They started bombing us with drones’: Russian attacks unnerve Zaporizhzhia",
-      "url": "https://www.aljazeera.com/news/2026/11/7/they-started-bombing-us-with-drones-russian-attacks-unnerve-zaporizhzhia?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "A region once offering refuge becomes increasingly dangerous, as 50 people are killed in a single attack."
-    },
-    {
-      "title": "Pro-Russian hackers leak Italian foreign minister’s data on dark web",
-      "url": "https://www.aljazeera.com/news/2026/11/7/pro-russian-hackers-leak-italian-foreign-ministers-data-on-dark-web?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "The prime minister blames pro-Russian hackers for the leak, as her top diplomat says the cyberthreat was ongoing."
     }
   ],
   "occNews": [
@@ -3389,7 +3395,7 @@
   ],
   "regionsNews": [
     {
-      "title": "What we know about Krakow mass shooting so far",
+      "title": "What we know so far after Polish gunman opens fire in Krakow main square",
       "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 7, 2026",
       "description": "At least six people were killed by a gunman in military fatigues who opened fire in Poland's second largest city."
@@ -3419,7 +3425,7 @@
       "description": "The US president's promotion of Miller, a loyal partisan firebrand to be his new chief of staff sets up likely clashes with Congress."
     },
     {
-      "title": "Paraguay's president impeached and under house arrest after bank collapse",
+      "title": "Paraguay's former president charged after bank collapse",
       "url": "https://www.bbc.co.uk/news/articles/c68jzzvjgdy9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 7, 2026",
       "description": "Santiago Peña was ousted due to a banking crisis which left millions of people unable to access their money."
@@ -3839,6 +3845,60 @@
       "description": "Some employers create job ads with no intent to hire"
     },
     {
+      "title": "Israel’s president picks Eisenkot over Netanyahu to form next government",
+      "url": "https://www.aljazeera.com/news/2026/11/7/israels-president-picks-eisenkot-over-netanyahu-to-form-next-government?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "President Isaac Herzog formally assigns Eisenkot 28 days to secure 61 Knesset seats and replace Netanyahu as PM."
+    },
+    {
+      "title": "More than 140,000 rally as new protests against rising costs sweep France",
+      "url": "https://www.aljazeera.com/news/2026/11/7/more-than-140000-rally-as-new-protests-against-rising-costs-sweep-france?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "Tear gas fired in Paris and Lyon as interior minister warns authorities are 'ready and waiting' for rioters and looters."
+    },
+    {
+      "title": "Paraguay’s ousted president appears before prosecutors after impeachment",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/7-11-clip-paraguay-former-president-detained-appears?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "Former Paraguayan President Santiago Pena has appeared before prosecutors."
+    },
+    {
+      "title": "Masked protesters set off firecrackers and block roads in Albania",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/masked-protesters-set-off-firecrackers-and-block-roads-in-albania?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "Police used water cannons to disperse masked protesters in Albania’s capital, Tirana."
+    },
+    {
+      "title": "Trump orders DOJ to investigate Democrats for ‘threatening’ people",
+      "url": "https://www.aljazeera.com/news/2026/11/7/trump-orders-doj-to-investigate-democrats-for-threatening-people?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "Trump lashed out at Democrats on Truth Social days after the party won control of Congress."
+    },
+    {
+      "title": "How did AIPAC-backed candidates fare in the US midterm elections?",
+      "url": "https://www.aljazeera.com/news/2026/11/7/how-did-aipac-backed-candidates-fare-in-the-us-midterm-elections?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "Many candidates the pro-Israel group backed still won, but most of the money it spent went to candidates who lost."
+    },
+    {
+      "title": "Malaysian king warns against defying house arrest order for ex-PM Najib",
+      "url": "https://www.aljazeera.com/news/2026/11/7/malaysian-king-warns-against-defying-house-arrest-order-for-ex-pm-najib?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "Attorney general postponed Najib Razak’s transfer from jail after court cleared him for house arrest on Friday."
+    },
+    {
+      "title": "Yemeni gov’t forces report advances as Houthis say deadly strikes hit Sanaa",
+      "url": "https://www.aljazeera.com/news/2026/11/7/yemeni-govt-forces-report-advances-as-houthis-say-deadly-strikes-hit-sanaa?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "Civilians bear the brunt of fighting as 27 people reported killed in strikes on a village in Sanaa province."
+    },
+    {
+      "title": "Demonstration in Berlin calls for an end to arming Israel",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/demonstration-in-berlin-calls-for-an-end-to-arming-israel?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "Demonstration in Berlin calls for an end to arming Israel"
+    },
+    {
       "title": "Houston mayor orders police to limit cooperation with ICE",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/houston-mayor-orders-police-to-limit-cooperation-with-ice?traffic_source=rss",
       "date": "November 7, 2026",
@@ -3915,60 +3975,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/7/casualties-reported-after-shooting-in-polands-krakow?traffic_source=rss",
       "date": "November 7, 2026",
       "description": "Polish Prime Minister Donald Tusk says police are investigating after 'tragic shooting' in second-largest city."
-    },
-    {
-      "title": "The Lions by the River Tigris: Restoring Mosul’s artefacts",
-      "url": "https://www.aljazeera.com/video/witness/2026/11/7/the-lions-by-the-river-tigris-restoring-mosuls-artefacts?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "When the ancient Iraqi city of Mosul is devastated after liberation from ISIL, three men strive to revive its beauty."
-    },
-    {
-      "title": "Iraq’s FM says external parties using Iraqi soil to attack neighbours",
-      "url": "https://www.aljazeera.com/news/2026/11/7/iraqs-fm-says-external-parties-using-iraqi-soil-to-attack-neighbours?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "Iraqi foreign minister tells Al Jazeera that Baghdad is investigating attacks on the Gulf launched from its territory."
-    },
-    {
-      "title": "New Zealand’s prime minister says election is ‘too close to call’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/new-zealands-prime-minister-says-election-is-too-close-to?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "New Zealand prime minister Christopher Luxon says he has a pathway to form the next government."
-    },
-    {
-      "title": "Who is Hakeem Jeffries, the Democrat poised to become House speaker?",
-      "url": "https://www.aljazeera.com/news/2026/11/7/who-is-hakeem-jeffries-the-democrat-poised-to-become-house-speaker?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "Likely to become the first Black House speaker, Jeffries faces pressure from progressives over Trump and Israel."
-    },
-    {
-      "title": "‘Radical’ or ‘hero’?: France debates leftist candidate Jean-Luc Melenchon",
-      "url": "https://www.aljazeera.com/news/2026/11/7/radical-or-hero-france-debates-leftist-candidate-jean-luc-melenchon?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "The hard-left leader has transformed into a real contender in next year presidential elections."
-    },
-    {
-      "title": "Gaza displacement camps collapse under rainwater",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/gaza-displacement-camps-collapse-under-rainwater?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "Rainwater is inundating displacement camps across Gaza as makeshift shelters collapse. Al Jazeera’s Nour Khaled reports."
-    },
-    {
-      "title": "Buildings damaged in Israeli bombings risk collapse as rain inundates Gaza",
-      "url": "https://www.aljazeera.com/features/2026/11/7/buildings-damaged-in-israel-bombing-at-risk-of-collapse-as-rain-floods-gaza?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "Floods have swept through Gaza after heavy rain, endangering families and putting war-damaged buildings at risk."
-    },
-    {
-      "title": "Al Jazeera tries out martial art wushu at Youth Olympics",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/al-jazeera-tries-out-martial-art-wushu-at-youth-olympics?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "Al Jazeera tries out martial art wushu at Youth Olympics"
-    },
-    {
-      "title": "Heavy rains flood displacement camps across Gaza",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/heavy-rains-flood-displacement-camps-across-gaza?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "Heavy rains and strong winds have flooded and damaged displacement tents across Gaza."
     }
   ]
 }
