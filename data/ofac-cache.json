@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T13:08:25.421Z",
+  "updatedAt": "2026-11-07T15:08:27.793Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261106",
@@ -3250,7 +3250,7 @@
   ],
   "bbcNews": [
     {
-      "title": "Ukraine's power network suffers further damage after fresh Russian strikes",
+      "title": "Russian strikes wound nine and damage Ukraine's power network ahead of talks",
       "url": "https://www.bbc.co.uk/news/articles/cm4g1nq8158po?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 7, 2026",
       "description": "The attacks come before Ukrainian and Russian delegations are due to take part in trilateral talks in Abu Dhabi next week."
@@ -3263,6 +3263,12 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "‘They started bombing us with drones’: Russian attacks unnerve Zaporizhzhia",
+      "url": "https://www.aljazeera.com/news/2026/11/7/they-started-bombing-us-with-drones-russian-attacks-unnerve-zaporizhzhia?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "A region once offering refuge becomes increasingly dangerous, as 50 people are killed in a single attack."
+    },
     {
       "title": "Pro-Russian hackers leak Italian foreign minister’s data on dark web",
       "url": "https://www.aljazeera.com/news/2026/11/7/pro-russian-hackers-leak-italian-foreign-ministers-data-on-dark-web?traffic_source=rss",
@@ -3286,24 +3292,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/7/will-trump-strike-nuclear-sites-again-as-iran-engages-cognitive?traffic_source=rss",
       "date": "November 7, 2026",
       "description": "The US president has been sending mixed messages after his party suffered a defeat at the midterm elections."
-    },
-    {
-      "title": "Qatari PM says US willing to seek solution to war with Iran",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/qatari-pm-says-us-willing-to-seek-solution-to-war-with-iran?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "Qatari PM says US willing to seek solution to war with Iran"
-    },
-    {
-      "title": "Trump confirms US strikes in Iran, insists ‘it’s not a war’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/trump-confirms-us-strikes-in-iran-insists-its-not-a?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "US President Donald Trump said America has carried out ‘minor strikes’ on Iran’s Qeshm Island."
-    },
-    {
-      "title": "How the Iran war helped Democrats win the midterms",
-      "url": "https://www.aljazeera.com/opinions/2026/11/7/how-the-iran-war-helped-democrats-win-the-midterms?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "Tehran brought the costs of war into American homes, fuelling the backlash against Trump's party."
     }
   ],
   "occNews": [
@@ -3406,6 +3394,12 @@
     }
   ],
   "regionsNews": [
+    {
+      "title": "No clear winner after tight New Zealand general election",
+      "url": "https://www.bbc.co.uk/news/articles/c3ewev11g1e0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 7, 2026",
+      "description": "Weeks of coalition talks could follow after preliminary results pointed to a highly divided national parliament."
+    },
     {
       "title": "With Stephen Miller pick, Trump readies for a battle",
       "url": "https://www.bbc.co.uk/news/articles/crp3gg2z171go?at_medium=RSS&amp;at_campaign=rss",
@@ -3857,6 +3851,60 @@
       "description": "Some employers create job ads with no intent to hire"
     },
     {
+      "title": "The Lions by the River Tigris: Restoring Mosul’s artefacts",
+      "url": "https://www.aljazeera.com/video/witness/2026/11/7/the-lions-by-the-river-tigris-restoring-mosuls-artefacts?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "When the ancient Iraqi city of Mosul is devastated after liberation from ISIL, three men strive to revive its beauty."
+    },
+    {
+      "title": "Iraq’s FM says external parties using Iraqi soil to attack neighbours",
+      "url": "https://www.aljazeera.com/news/2026/11/7/iraqs-fm-says-external-parties-using-iraqi-soil-to-attack-neighbours?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "Iraqi foreign minister tells Al Jazeera that Baghdad is investigating attacks on the Gulf launched from its territory."
+    },
+    {
+      "title": "New Zealand’s prime minister says election is ‘too close to call’",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/new-zealands-prime-minister-says-election-is-too-close-to?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "New Zealand prime minister Christopher Luxon says he has a pathway to form the next government."
+    },
+    {
+      "title": "Who is Hakeem Jeffries, the Democrat poised to become House speaker?",
+      "url": "https://www.aljazeera.com/news/2026/11/7/who-is-hakeem-jeffries-the-democrat-poised-to-become-house-speaker?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "Likely to become the first Black House speaker, Jeffries faces pressure from progressives over Trump and Israel."
+    },
+    {
+      "title": "‘Radical’ or ‘hero’?: France debates leftist candidate Jean-Luc Melenchon",
+      "url": "https://www.aljazeera.com/news/2026/11/7/radical-or-hero-france-debates-leftist-candidate-jean-luc-melenchon?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "The hard-left leader has transformed into a real contender in next year presidential elections."
+    },
+    {
+      "title": "Gaza displacement camps collapse under rainwater",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/gaza-displacement-camps-collapse-under-rainwater?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "Rainwater is inundating displacement camps across Gaza as makeshift shelters collapse. Al Jazeera’s Nour Khaled reports."
+    },
+    {
+      "title": "Buildings damaged in Israeli bombings risk collapse as rain inundates Gaza",
+      "url": "https://www.aljazeera.com/features/2026/11/7/buildings-damaged-in-israel-bombing-at-risk-of-collapse-as-rain-floods-gaza?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "Floods have swept through Gaza after heavy rain, endangering families and putting war-damaged buildings at risk."
+    },
+    {
+      "title": "Al Jazeera tries out martial art wushu at Youth Olympics",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/al-jazeera-tries-out-martial-art-wushu-at-youth-olympics?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "Al Jazeera tries out martial art wushu at Youth Olympics"
+    },
+    {
+      "title": "Heavy rains flood displacement camps across Gaza",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/heavy-rains-flood-displacement-camps-across-gaza?traffic_source=rss",
+      "date": "November 7, 2026",
+      "description": "Heavy rains and strong winds have flooded and damaged displacement tents across Gaza."
+    },
+    {
       "title": "Atletico Madrid vs Barcelona: La Liga – predictions, team news, lineups",
       "url": "https://www.aljazeera.com/sports/2026/11/7/atletico-madrid-barcelona-la-liga-prediction-team-news-lineups-preview?traffic_source=rss",
       "date": "November 7, 2026",
@@ -3921,48 +3969,6 @@
       "url": "https://www.aljazeera.com/sports/2026/11/7/doncic-lakers-lebron-cavaliers-sixers-nba-cup-basketball?traffic_source=rss",
       "date": "November 7, 2026",
       "description": "LA Lakers star Doncic closed the first half with an astonishing shot from well beyond the half-court line."
-    },
-    {
-      "title": "Houston mayor curbs cooperation of US city’s police with ICE",
-      "url": "https://www.aljazeera.com/news/2026/11/7/houston-mayor-curbs-cooperation-of-us-citys-police-with-ice?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "People stopped for minor traffic violations will no longer be referred to US Immigration and Customs Enforcement."
-    },
-    {
-      "title": "WTA apologises to Pegula for broadcast of ‘diva’ comment about Andreeva",
-      "url": "https://www.aljazeera.com/sports/2026/11/7/jessica-pegula-mirra-andreeva-diva-comment-wta-finals-tennis?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "Pegula's conversation with her coach on a practice court at Indian Wells was broadcast on a WTA YouTube livestream."
-    },
-    {
-      "title": "‘Every person has their luck’: Morocco’s beach metal detectorists",
-      "url": "https://www.aljazeera.com/news/2026/11/7/beachcombers-in-morocco-hunt-for-hidden-treasure?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "For many, the search is driven less by profit than by the thrill of an unexpected discovery."
-    },
-    {
-      "title": "Do not investigate Trump’s corporate allies until he leaves office",
-      "url": "https://www.aljazeera.com/opinions/2026/11/7/do-not-investigate-trumps-corporate-allies-until-he-leaves-office?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "The US presidential pardon power has created a constitutional absurdity that can protect those accused of corruption."
-    },
-    {
-      "title": "Carlos Alcaraz saves match points to reach Paris Masters semifinals",
-      "url": "https://www.aljazeera.com/sports/2026/11/7/carlos-alcaraz-match-point-paris-masters-semifinals-tennis?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "Seven-time Grand Slam champion Alcaraz is through to the Paris Masters semifinals for the first time in his career."
-    },
-    {
-      "title": "Two main parties neck and neck after New Zealand vote, near complete count",
-      "url": "https://www.aljazeera.com/news/2026/11/7/governing-party-leads-in-new-zealands-knife-edge-vote-early-results?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "New Zealand's National and Labour parties secure just short of 30 percent of the popular vote."
-    },
-    {
-      "title": "‘Alien-cortical’ mice: Can human brain cells grow inside animals?",
-      "url": "https://www.aljazeera.com/news/2026/11/7/alien-cortical-mice-can-human-brain-cells-grow-inside-animals?traffic_source=rss",
-      "date": "November 7, 2026",
-      "description": "Modified mice with human brain cells ignite debates over neurohybrids and the future of cross-species medical research."
     }
   ]
 }
