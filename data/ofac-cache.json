@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T17:08:21.980Z",
+  "updatedAt": "2026-11-08T19:08:26.023Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261106",
@@ -3256,10 +3256,10 @@
   ],
   "bbcNews": [
     {
-      "title": "US offers $20m reward for information about Iran's nuclear programme",
-      "url": "https://www.bbc.co.uk/news/articles/c6d091ev3p0jo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 7, 2026",
-      "description": "Donald Trump has repeatedly raised the prospect of renewing strikes against Iran's nuclear facilities."
+      "title": "Iran executes three men for 'armed unrest' after January protests",
+      "url": "https://www.bbc.co.uk/news/articles/ckly0ex633ydo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 8, 2026",
+      "description": "It is claimed Hassan Dioband, Hamid Kazemi and Reza Zanganeh were part of anti-government protests earlier this year."
     },
     {
       "title": "Italian foreign minister says hackers leaked his personal data",
@@ -3272,6 +3272,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cm4g1nq8158po?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 7, 2026",
       "description": "The attacks come before Ukrainian and Russian delegations are due to take part in trilateral talks in Abu Dhabi next week."
+    },
+    {
+      "title": "US offers $20m reward for information about Iran's nuclear programme",
+      "url": "https://www.bbc.co.uk/news/articles/c6d091ev3p0jo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 7, 2026",
+      "description": "Donald Trump has repeatedly raised the prospect of renewing strikes against Iran's nuclear facilities."
     }
   ],
   "ajNews": [
@@ -3286,12 +3292,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/8/russian-strikes-on-ukraine-leave-hundreds-of-thousands-without-electricity?traffic_source=rss",
       "date": "November 8, 2026",
       "description": "About 850,000 people lose power after Russian attacks on energy infrastructure in Ukraine's Dnipropetrovsk and Kharkiv."
-    },
-    {
-      "title": "Democrats’ congressional win could strengthen Ukraine’s hand against Russia",
-      "url": "https://www.aljazeera.com/news/2026/11/8/democrats-congressional-win-could-strengthen-ukraines-hand-against-russia?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Ukraine hopes for more US support but faces uncertainty over Trump’s peace efforts and continued military aid."
     }
   ],
   "occNews": [
@@ -3395,10 +3395,22 @@
   ],
   "regionsNews": [
     {
-      "title": "What we know so far after Krakow gun attack",
-      "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Surgeon having lunch near Krakow shooting undoubtedly saved officer's life, colleague says",
+      "url": "https://www.bbc.co.uk/news/articles/c5x2vw4e1gx1o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 8, 2026",
-      "description": "Six people were killed in a random shooting in Krakow's main square, and three bodies were later found at the home of the attacker."
+      "description": "Further details have emerged about two police officers hailed for preventing a Polish gunman from killing more."
+    },
+    {
+      "title": "Seven dead and more than 100 injured after trains collide in Egypt",
+      "url": "https://www.bbc.co.uk/news/articles/cwvgr20mmmevo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 8, 2026",
+      "description": "Several carriages derailed after two trains travelling in the same direction crashed outside the city of Giza."
+    },
+    {
+      "title": "Homes and temples glow across India to mark Diwali",
+      "url": "https://www.bbc.co.uk/news/articles/cm70pdwz122ro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 8, 2026",
+      "description": "Millions of Indians are marking the festival of lights with glowing lamps, fireworks and traditional sweets."
     },
     {
       "title": "Houthis say at least 33 killed in Saudi air strike",
@@ -3411,18 +3423,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cxr5yyg2nj9eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 7, 2026",
       "description": "The national mood is low, and faith in politics even lower - with voters deserting the major parties at the polls."
-    },
-    {
-      "title": "Israel's president tasks opposition leader Eisenkot with forming government",
-      "url": "https://www.bbc.co.uk/news/articles/cmy8367lj5xlo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 7, 2026",
-      "description": "Neither PM Benjamin Netanyahu's bloc nor that of his rival secured a majority in last week's election."
-    },
-    {
-      "title": "UK cannot 'cherry pick' EU single market deal, Barnier tells BBC",
-      "url": "https://www.bbc.co.uk/news/articles/c9kgjj206nzpo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 7, 2026",
-      "description": "The former Brexit negotiator says EU countries would reject any British attempts to follow economic rules \"a la carte\"."
     },
     {
       "title": "Paraguay's former president charged after bank collapse",
@@ -3441,6 +3441,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cqgkvv8m8pgyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 7, 2026",
       "description": "The 82-year-old appeared in court in Florida after the FBI searched two Los Angeles-area storage units he rented."
+    },
+    {
+      "title": "UK cannot 'cherry pick' EU single market deal, Barnier tells BBC",
+      "url": "https://www.bbc.co.uk/news/articles/c9kgjj206nzpo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 7, 2026",
+      "description": "The former Brexit negotiator says EU countries would reject any British attempts to follow economic rules \"a la carte\"."
     },
     {
       "title": "Texas mayor instructs police to limit co-operation with ICE",
@@ -3473,6 +3479,12 @@
       "description": "Paul Mackenzie ordered his followers to starve their children to death in a forest so they could \"meet Jesus\"."
     },
     {
+      "title": "Footage shows derailed carriages after fatal train crash in Egypt",
+      "url": "https://www.bbc.co.uk/news/videos/cw78p2km7d94o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 8, 2026",
+      "description": "It is yet unclear what caused the accident but Egyptian President Abdel Fattah al-Sisi said an investigation is underway and will \"hold accountable anyone who proves their negligence\"."
+    },
+    {
       "title": "How the deadly shooting in Krakow unfolded",
       "url": "https://www.bbc.co.uk/news/videos/cq74p2zpwyjmo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 8, 2026",
@@ -3489,12 +3501,6 @@
       "url": "https://www.bbc.co.uk/news/videos/cv8ezz9ll7nyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 6, 2026",
       "description": "The car company's CEO Elon Musk has said production will halt in Texas, to focus on the firm's self-driving Cybercabs."
-    },
-    {
-      "title": "Bomb hoaxes: Messages reveal how threat was passed on by air traffic control",
-      "url": "https://www.bbc.co.uk/news/videos/cq398m8w41lyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 5, 2026",
-      "description": "BBC Verify has been analysing messages after flights across Europe were targeted by fake bomb threats - the second such incident this week."
     },
     {
       "title": "The Trump coalition is shattered - what will Republicans do now?",
@@ -3797,6 +3803,60 @@
       "description": "The BBC's cost of living correspondent Kevin Peachey explains what the change could mean for those saving for a holiday or to buying a house."
     },
     {
+      "title": "Carlos Alcaraz beats Ben Shelton to win Paris Masters tennis title",
+      "url": "https://www.aljazeera.com/sports/2026/11/8/carlos-alcaraz-beats-ben-shelton-to-win-paris-masters-tennis-title?traffic_source=rss",
+      "date": "November 8, 2026",
+      "description": "Alcaraz bagged a 7-6 (7/5), 7-5 straight sets for an elusive Paris crown before the year-end ATP Finals."
+    },
+    {
+      "title": "Eisenkot open to Netanyahu joining Israel’s next government",
+      "url": "https://www.aljazeera.com/news/2026/11/8/israels-president-tasks-eisenkot-to-form-new-coalition-government?traffic_source=rss",
+      "date": "November 8, 2026",
+      "description": "Israel's president officially tasks the opposition leader with forming a new government."
+    },
+    {
+      "title": "Infantino’s Japanese challenger claims he could unseat FIFA president",
+      "url": "https://www.aljazeera.com/sports/2026/11/8/infantinos-japanese-challenger-claims-he-could-unseat-fifa-president?traffic_source=rss",
+      "date": "November 8, 2026",
+      "description": "Kozo Tashima believes he has a '20 to 30 percent' chance of winning the FIFA presidency election against Infantino."
+    },
+    {
+      "title": "Hundreds of thousands join Amsterdam’s ‘Red Line’ protest against Israel",
+      "url": "https://www.aljazeera.com/news/2026/11/8/hundreds-of-thousands-protesters-storm-amsterdam?traffic_source=rss",
+      "date": "November 8, 2026",
+      "description": "Protesters seek stricter trade restrictions on Israel and a halt to all arms sales."
+    },
+    {
+      "title": "Jerusalem Daily: Eisenkot picked over Netanyahu to form government",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/dnrbltn-261108-hegazyn-jerusalem_daily-081126?traffic_source=rss",
+      "date": "November 8, 2026",
+      "description": "Israel's president picks Gadi Eisenkot to form the next government, passing over Benjamin Netanyahu."
+    },
+    {
+      "title": "Photos: Diwali celebrations light up India and its global diaspora",
+      "url": "https://www.aljazeera.com/gallery/2026/11/8/photos-diwali-celebrations-light-up-india-and-its-global-diaspora?traffic_source=rss",
+      "date": "November 8, 2026",
+      "description": "Celebrations feature fireworks, prayers, reunions, rangoli designs, feasting, and the sharing of sweets and gifts."
+    },
+    {
+      "title": "LIVE: Atletico Madrid vs Barcelona – La Liga",
+      "url": "https://www.aljazeera.com/sports/liveblog/2026/11/8/atletico-madrid-vs-barcelona-la-liga-live?traffic_source=rss",
+      "date": "November 8, 2026",
+      "description": "Previews, team news and live text updates from Atletico Madrid vs Barcelona in football's La Liga."
+    },
+    {
+      "title": "India’s ‘cockroach’ movement seeks to restore culture of accountability",
+      "url": "https://www.aljazeera.com/video/talk-to-al-jazeera/2026/11/8/indias-cockroach-movement-seeks-to-restore-culture-of-accountability?traffic_source=rss",
+      "date": "November 8, 2026",
+      "description": "India's Cockroach Janta Party is a youth movement demanding political accountability, employment and fair elections."
+    },
+    {
+      "title": "Fan hospitalised after falling through stand at Norwegian football match",
+      "url": "https://www.aljazeera.com/sports/2026/11/8/fan-hospitalised-after-falling-through-stand-at-norwegian-football-match?traffic_source=rss",
+      "date": "November 8, 2026",
+      "description": "A stand in the away end of Tromso's stadium gave way during a match against Bodo/Glimt, causing fans to fall through."
+    },
+    {
       "title": "Israeli opposition leader warns of ‘point of no return’ for democracy",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/8-11-clip-eisenkot-address-il?traffic_source=rss",
       "date": "November 8, 2026",
@@ -3809,10 +3869,10 @@
       "description": "The passenger train was travelling from Egypt's capital to Aswan in the south when it derailed, overturning carriages."
     },
     {
-      "title": "Four killed, 88 injured in train collision in Egypt",
+      "title": "Seven killed, 112 injured in train collision in Egypt",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/four-killed-88-injured-in-train-collision-in-egypt?traffic_source=rss",
       "date": "November 8, 2026",
-      "description": "Four killed, 88 injured in train collision in Egypt"
+      "description": "Seven killed, 112 injured in train collision in Egypt"
     },
     {
       "title": "Israeli forces release Palestinian journalist Abou Shhadeh",
@@ -3879,54 +3939,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/8/poland-mourns-six-killed-in-attack-as-authorities-launch-terrorism-probe?traffic_source=rss",
       "date": "November 8, 2026",
       "description": "'Terrorism' investigation launched after government officials say suspect likely influenced by far-right ideology."
-    },
-    {
-      "title": "South Africa’s ANC suffers setback in local elections",
-      "url": "https://www.aljazeera.com/news/2026/11/8/south-africas-anc-suffers-setback-in-local-elections?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "With 99 percent of votes counted, President Cyril Ramaphosa's party wins 31 percent nationally."
-    },
-    {
-      "title": "Could UFC boss Dana White be next White House press secretary?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/could-ufc-boss-dana-white-be-next-white-house-press-secretary?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "UFC chief Dana White says he’ll meet Trump after the US president urged him to become White House press secretary."
-    },
-    {
-      "title": "Will Eisenkot be able to form Israel’s next gov’t amid divided opposition?",
-      "url": "https://www.aljazeera.com/news/2026/11/8/will-eisenkot-be-able-to-form-israels-next-govt-amid-divided-opposition?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Former army chief has 28 days to cobble together a ruling coalition after President chose him over incumbent Netanyahu."
-    },
-    {
-      "title": "Messi becomes first player to win back-to-back MLS Golden Boot awards",
-      "url": "https://www.aljazeera.com/sports/2026/11/8/messi-becomes-first-player-to-win-back-to-back-mls-golden-boot-awards?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "The Argentinian scored 26 goals in regular season, topping the charts and leading Inter Miami to the MLS Cup playoffs."
-    },
-    {
-      "title": "After rebel offensive, efforts to push them back appear to have stalled",
-      "url": "https://www.aljazeera.com/video/project-force-2/2026/11/8/after-rebel-offensive-efforts-to-push-them-back-appear-to-have-stalled?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Saudi air power so far hasn't been enough for Yemen's government, and civilians are increasingly stuck in the middle"
-    },
-    {
-      "title": "Tennis world number one Rybakina withdraws from WTA Finals due to virus",
-      "url": "https://www.aljazeera.com/sports/2026/11/8/tennis-world-number-one-rybakina-withdraws-from-wta-finals-due-to-virus?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Rybakina pulled out on the eve of the Indian Wells tournament, with Ukraine's Marta Kostyuk replacing the top seed."
-    },
-    {
-      "title": "Floods in Gaza leave tens of thousands without shelter",
-      "url": "https://www.aljazeera.com/news/2026/11/8/floods-in-gaza-leave-tens-of-thousands-without-shelter?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Civil Defence reports over 1,500 emergency calls as thousands of tents and shelters destroyed after heavy rains."
-    },
-    {
-      "title": "Former Palestinian detainees at mercy of Israel amid perpetual detention",
-      "url": "https://www.aljazeera.com/features/2026/11/8/former-palestinian-detainees-at-mercy-of-israel-amid-perpetual-detention?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Former Palestinian detainees in the West Bank are being repeatedly detained by Israeli forces, affecting their families."
     }
   ]
 }
