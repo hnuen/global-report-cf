@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T15:08:17.296Z",
+  "updatedAt": "2026-11-08T17:08:21.980Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261106",
@@ -3333,6 +3333,12 @@
   ],
   "bisNews": [
     {
+      "title": "Extension of the Suspension of Expansion of End-User Controls for Affiliates of Certain Listed Entities",
+      "url": "https://www.federalregister.gov/documents/2026/11/09/2026-22793/extension-of-the-suspension-of-expansion-of-end-user-controls-for-affiliates-of-certain-listed",
+      "date": "November 9, 2026",
+      "description": "The Bureau of Industry and Security (BIS) is extending the suspension of the interim final rule (IFR), \"Expansion of End-User Controls to Cover Affiliates of Certain Listed Entities.\" The suspension was set to end November 9, 2026. This final rule extends the suspension through January 10, 2027."
+    },
+    {
       "title": "Order Renewing Order Temporarily Denying Export Privileges",
       "url": "https://www.federalregister.gov/documents/2026/10/27/2026-21840/order-renewing-order-temporarily-denying-export-privileges",
       "date": "October 27, 2026",
@@ -3385,12 +3391,6 @@
       "url": "https://www.federalregister.gov/documents/2026/08/14/2026-16628/streamlining-export-controls-for-drone-exports",
       "date": "August 14, 2026",
       "description": "The Bureau of Industry and Security (BIS) is easing export controls on certain Unmanned Aerial Vehicles (UAVs or drones) and related parts, components, accessories, attachments, technology, and software under the Export Administration Regulations (EAR). Specifically, this rule: eliminates wind gust tolerance as a parameter for determining UAV controls under the EAR; increases the threshold for national security controls on certain UAVs from an endurance of 30 minutes to an endurance of 3 hours; makes conforming changes to remove national security controls on software and technology associated with UAVs with an endurance less than 3 hours; maintains military end-use and end-user controls on those lower endurance drones and associated software and technology; clarifies Commerce Control List (CCL) controls for certain UAVs specially designed for military use; and removes national security controls on certain specially designed parts, components, accessories, and attachments for such UAVs as they do not provide any significant military or intelligence capabilities."
-    },
-    {
-      "title": "Implementation of EAR Export Controls on Silencers, Mufflers, and Sound Suppressors; and Other Firearms Related Changes",
-      "url": "https://www.federalregister.gov/documents/2026/07/23/2026-14942/implementation-of-ear-export-controls-on-silencers-mufflers-and-sound-suppressors-and-other-firearms",
-      "date": "July 23, 2026",
-      "description": "The Department of Commerce (Commerce), Bureau of Industry and Security (BIS) is revising the Export Administration Regulations (EAR) and the Commerce Control List (CCL) to appropriately control certain silencers, mufflers, and sound suppressors (sound suppressors) that will no longer be described on the International Traffic in Arms Regulations U.S. Munitions List (USML). This interim final rule (IFR) complements a Department of State interim final rule published elsewhere in this issue of the Federal Register (International Traffic in Arms Regulations: USML Category I Firearm Suppressors (1400-AG11) (State IFR)). This transfer of jurisdiction will reduce the regulatory burden on exports of sound suppressors. This IFR also revises the EAR to allow firearms and related items to be temporarily exported and reexported under a license exception as tools of trade, thereby relieving exporters of the regulatory burden of applying for authorization. Finally, this IFR clarifies which items fall within the scope of the EAR's entry clearance requirements for a temporary import."
     }
   ],
   "regionsNews": [
@@ -3797,6 +3797,48 @@
       "description": "The BBC's cost of living correspondent Kevin Peachey explains what the change could mean for those saving for a holiday or to buying a house."
     },
     {
+      "title": "Israeli opposition leader warns of ‘point of no return’ for democracy",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/8-11-clip-eisenkot-address-il?traffic_source=rss",
+      "date": "November 8, 2026",
+      "description": "Israeli opposition leader Gadi Eisenkot has been tasked by Israeli President Isaac Herzog with forming a new government."
+    },
+    {
+      "title": "Train crash kills seven, injures dozens near Egypt’s Cairo city",
+      "url": "https://www.aljazeera.com/news/2026/11/8/train-crash-kills-four-injures-dozens-near-egypts-cairo-city?traffic_source=rss",
+      "date": "November 8, 2026",
+      "description": "The passenger train was travelling from Egypt's capital to Aswan in the south when it derailed, overturning carriages."
+    },
+    {
+      "title": "Four killed, 88 injured in train collision in Egypt",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/four-killed-88-injured-in-train-collision-in-egypt?traffic_source=rss",
+      "date": "November 8, 2026",
+      "description": "Four killed, 88 injured in train collision in Egypt"
+    },
+    {
+      "title": "Israeli forces release Palestinian journalist Abou Shhadeh",
+      "url": "https://www.aljazeera.com/news/2026/11/8/israeli-forces-release-palestinian-journalist-abou-shhadeh?traffic_source=rss",
+      "date": "November 8, 2026",
+      "description": "Abed Abou Shhadeh says his detention was part of Israel's political measures 'to intimidate Arab society as a whole'."
+    },
+    {
+      "title": "Egyptian embassy reopens in Libya for the first time in 12 years",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/egyptian-embassy-reopens-in-libya-for-the-first-time-in-12-years?traffic_source=rss",
+      "date": "November 8, 2026",
+      "description": "Egypt has reopened its embassy in Libya’s capital, Tripoli, after a 12-year closure."
+    },
+    {
+      "title": "Tenerife’s Jesus De Miguel honoured in tearful tribute by teammates, fans",
+      "url": "https://www.aljazeera.com/sports/2026/11/8/tenerifes-jesus-de-miguel-honoured-in-tearful-tribute-by-teammates-fans?traffic_source=rss",
+      "date": "November 8, 2026",
+      "description": "Teammates choke back tears, fans chant his name and his family are promised support by the club at the memorial service."
+    },
+    {
+      "title": "Palestinian journalist Abed Abou Shhadeh released after 5 days in detention",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/palestinian-journalist-abed-abou-shhadeh-released-after-5-days-in-detention?traffic_source=rss",
+      "date": "November 8, 2026",
+      "description": "Palestinian journalist Abed Abou Shhadeh released after 5 days detention"
+    },
+    {
       "title": "Tearful Alex Eala loses Hong Kong Open final to Claire Liu in straight sets",
       "url": "https://www.aljazeera.com/sports/2026/11/8/tearful-alex-eala-loses-hong-kong-open-final-to-claire-liu-in-straight-sets?traffic_source=rss",
       "date": "November 8, 2026",
@@ -3885,48 +3927,6 @@
       "url": "https://www.aljazeera.com/features/2026/11/8/former-palestinian-detainees-at-mercy-of-israel-amid-perpetual-detention?traffic_source=rss",
       "date": "November 8, 2026",
       "description": "Former Palestinian detainees in the West Bank are being repeatedly detained by Israeli forces, affecting their families."
-    },
-    {
-      "title": "Rent-a-grandchild: Businesses offering companions to elderly grow in India",
-      "url": "https://www.aljazeera.com/news/2026/11/8/rent-a-grandchild-businesses-offering-companions-to-elderly-grow-in-india?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "A small but growing number of firms selling what families once took for granted: someone to take care of the seniors."
-    },
-    {
-      "title": "Khawaja denies throwing ‘anyone under the bus’ over Sandpapergate scandal",
-      "url": "https://www.aljazeera.com/sports/2026/11/8/khawaja-denies-throwing-anyone-under-the-bus-over-sandpapergate-scandal?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Australian cricketer defends waiting so long to place blame, denying it was a marketing ploy to sell his book."
-    },
-    {
-      "title": "‘Don’t bring your camera’: Filmmakers face extortion in Lagos",
-      "url": "https://www.aljazeera.com/news/2026/11/8/dont-bring-your-camera-filmmakers-face-extortion-in-lagos?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Filmmakers and journalists say threats on Lagos streets is making it harder to tell the city’s stories."
-    },
-    {
-      "title": "The anti-Netanyahu: Can Gadi Eisenkot give the world a different Israel?",
-      "url": "https://www.aljazeera.com/news/2026/11/8/the-anti-netanyahu-can-gadi-eisenkot-give-the-world-a-different-israel?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Unpolished and understated, Eisenkot offers a stark contrast to Netanyahu but risks continuing his legacy"
-    },
-    {
-      "title": "Hossam Hassan sacked as Egypt head coach over ex-wife scandal",
-      "url": "https://www.aljazeera.com/sports/2026/11/8/hossam-hassan-sacked-as-egypt-head-coach-over-ex-wife-scandal?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "A series of controversies surrounding Hassan's marital life left a 'negative impact' on the team, Egyptian FA says."
-    },
-    {
-      "title": "US military attacks cargo ship in the Gulf of Oman",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/us-military-attacks-cargo-ship-in-the-gulf-of-oman?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "The US military says it has fired on and disabled a St. Kitts-flagged cargo ship in the Gulf of Oman."
-    },
-    {
-      "title": "Mapping how France’s protest wave spread across Europe",
-      "url": "https://www.aljazeera.com/news/2026/11/8/mapping-how-frances-protest-wave-spread-across-europe?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "More than 1,700 cost-of-living demonstrations have hit 31 European countries since mid-September, led by France."
     }
   ]
 }
