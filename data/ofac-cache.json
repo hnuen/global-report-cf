@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T22:08:30.249Z",
+  "updatedAt": "2026-11-09T13:08:25.464Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261106",
@@ -3282,16 +3282,28 @@
   ],
   "ajNews": [
     {
-      "title": "Iran waiting to resume talks after US midterms ‘shock’Iranian Foreign Minis",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/iran-waiting-to-resume-talks-after-us-midterms-shockiranian-foreign-minis?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Iranian Foreign Minister Abbas Araghchi says there has been no progress in talks with the US."
+      "title": "At least four people killed as Russia and Ukraine trade strikes overnight",
+      "url": "https://www.aljazeera.com/news/2026/11/9/at-least-one-person-killed-as-russia-and-ukraine-trade-strikes-overnight?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "Russia's second-largest oil refinery is set on fire by drones while Russian strikes target Ukrainian energy sites."
     },
     {
-      "title": "Iran threatens to ‘rain down hell’ if US escalates war",
-      "url": "https://www.aljazeera.com/news/2026/11/8/iran-threatens-to-rain-down-hell-if-us-escalates-war?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "President Trump warns that US forces are 'locked and loaded' and ready to strike, if necessary."
+      "title": "Iran’s authorities harden domestic security controls amid US strike threats",
+      "url": "https://www.aljazeera.com/news/2026/11/9/irans-authorities-harden-domestic-security-controls-amid-us-strike-threats?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "Iran is cracking down on perceived security threats from alleged spies to crowds of youngsters."
+    },
+    {
+      "title": "Qatar PM to meet Trump: What’s the latest on US-Iran negotiations?",
+      "url": "https://www.aljazeera.com/news/2026/11/9/qatar-pm-to-meet-trump-whats-the-latest-on-us-iran-negotiations?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "Iran has put forward a two-day proposal developed with Qatari mediators that Washington is examining."
+    },
+    {
+      "title": "Who are the seafarers caught in the US-Israeli war on Iran?",
+      "url": "https://www.aljazeera.com/news/2026/11/9/who-are-the-seafarers-caught-in-the-us-israeli-war-on-iran?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "International Maritime Organization records at least 25 deaths since the conflict started on February 28."
     }
   ],
   "occNews": [
@@ -3395,10 +3407,52 @@
   ],
   "regionsNews": [
     {
-      "title": "Surgeon having lunch near Krakow shooting undoubtedly saved officer's life, colleague says",
-      "url": "https://www.bbc.co.uk/news/articles/c5x2vw4e1gx1o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 8, 2026",
-      "description": "Further details have emerged about two police officers hailed for preventing a Polish gunman from killing more."
+      "title": "Krakow shooting suspect has died in hospital, police say",
+      "url": "https://www.bbc.co.uk/news/articles/c6y434dw8319o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 9, 2026",
+      "description": "Six people were killed in the shooting, and three bodies of the suspect's family members were found at their home."
+    },
+    {
+      "title": "Inside the French drug gangs recruiting children to kill",
+      "url": "https://www.bbc.co.uk/news/articles/cq62y01r2313o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 9, 2026",
+      "description": "The BBC enters Marseille's dangerous underworld, where young people are trapped, brutalised and exploited."
+    },
+    {
+      "title": "Trump says he was 'kidding' about Dana White press secretary offer",
+      "url": "https://www.bbc.co.uk/news/articles/ck0j0j87959eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 9, 2026",
+      "description": "The president told the Ultimate Fighting Championship boss to \"please take the job\" in a Truth Social post on Saturday."
+    },
+    {
+      "title": "At least 34 dead after Europe-bound migrant boat sinks off Senegal",
+      "url": "https://www.bbc.co.uk/news/articles/cv2d6dpge65go?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 9, 2026",
+      "description": "The Atlantic crossing to Spain's Canary Islands remains dangerous for migrants seeking a better life"
+    },
+    {
+      "title": "Pope delivers veiled rebuke of Milei's austerity measures",
+      "url": "https://www.bbc.co.uk/news/articles/ckj0l082jqzvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 9, 2026",
+      "description": "Pope Leo made the comments as he arrived in Argentina on the second leg of his Latin America tour."
+    },
+    {
+      "title": "Cruise ship pianist rescued from sea after nine hours in Pacific Ocean",
+      "url": "https://www.bbc.co.uk/news/articles/ck1wvrrgln13o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 9, 2026",
+      "description": "Two US fishermen say they spotted the man treading water around 20 miles (32km) off the Californian coast."
+    },
+    {
+      "title": "Nine foreigners caught allegedly trying to leave South Africa to fight in Ukraine",
+      "url": "https://www.bbc.co.uk/news/articles/cm93z3lp5lnpo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 9, 2026",
+      "description": "Police declined to disclose their nationalities but said none of them lived in South Africa."
+    },
+    {
+      "title": "Four killed in Gaza after sand embankment collapses onto tents, health ministry says",
+      "url": "https://www.bbc.co.uk/news/articles/cqd090ee8px5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 9, 2026",
+      "description": "Three children are among those killed in the incident that came a day after heavy rain reportedly flooded tens of thousands of tents across Gaza."
     },
     {
       "title": "Seven dead and more than 100 injured after trains collide in Egypt",
@@ -3407,16 +3461,28 @@
       "description": "Several carriages derailed after two trains travelling in the same direction crashed outside the city of Giza."
     },
     {
+      "title": "'Devastating message' as ANC records worst-ever result in South Africa election",
+      "url": "https://www.bbc.co.uk/news/articles/cwrkygrxp11mo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 8, 2026",
+      "description": "President Cyril Ramaphosa says the verdict must be respected, while the party's secretary-general calls the outcome \"catastrophic\"."
+    },
+    {
+      "title": "Surgeon having lunch near Krakow shooting undoubtedly saved officer's life, colleague says",
+      "url": "https://www.bbc.co.uk/news/articles/c5x2vw4e1gx1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 8, 2026",
+      "description": "Further details have emerged about two police officers hailed for preventing a Polish gunman from killing more."
+    },
+    {
       "title": "Homes and temples glow across India to mark Diwali",
       "url": "https://www.bbc.co.uk/news/articles/cm70pdwz122ro?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 8, 2026",
       "description": "Millions of Indians are marking the festival of lights with glowing lamps, fireworks and traditional sweets."
     },
     {
-      "title": "Houthis say at least 33 killed in Saudi air strike",
-      "url": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Aramco Tower hit in heart of Saudi capital as Houthis launch fresh strikes",
+      "url": "https://www.bbc.co.uk/news/articles/c6ly3mjx958eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 8, 2026",
-      "description": "Saudi Arabia, which leads a coalition fighting the Houthis in Yemen, has not commented."
+      "description": "Footage authenticated by BBC Verify shows damage to the building in the capital's central financial district."
     },
     {
       "title": "'Flat', 'tired', 'cynical': Unusually gloomy Kiwis deliver New Zealand's tightest election in years",
@@ -3429,12 +3495,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c68jzzvjgdy9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 7, 2026",
       "description": "Santiago Peña was ousted due to a banking crisis which left millions of people unable to access their money."
-    },
-    {
-      "title": "Pope in 'pretty good health' as he starts Latin America tour",
-      "url": "https://www.bbc.co.uk/news/articles/c60e0001ve9wo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 7, 2026",
-      "description": "Pope Leo travels to Uruguay just three weeks after having surgery for lung cancer."
     },
     {
       "title": "Meghan's father Thomas Markle under house arrest after child sex abuse material charge",
@@ -3461,22 +3521,16 @@
       "description": "Investors had been selling off tech shares in part due to concerns the Democrat election victory would mean slower AI development."
     },
     {
-      "title": "New wave of bomb threats hit European airlines",
-      "url": "https://www.bbc.co.uk/news/articles/cq62yy064vjpo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 6, 2026",
-      "description": "No link has been established between the threats against the airlines and those against the media outlets."
+      "title": "What do we know about Nvidia CEO’s affair with a suspected Chinese spy?",
+      "url": "https://www.bbc.co.uk/news/videos/cq3989nkzn3ko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 9, 2026",
+      "description": "Adoration for the US tech giant’s CEO Jensen Huang has been labelled “Jensanity”, but can his reputation survive the news of his affair?"
     },
     {
-      "title": "Spain's rail authorities face European fraud probe after Urda rail disaster",
-      "url": "https://www.bbc.co.uk/news/articles/c6x2wwnz5445o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 6, 2026",
-      "description": "Prosecutors begin investigating EU funds meant for upgrading the Spanish railway line where a train crash killed 69 people."
-    },
-    {
-      "title": "Kenyan doomsday cult leader given life sentence for murdering 191 people",
-      "url": "https://www.bbc.co.uk/news/articles/cm5yne5984l0o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 6, 2026",
-      "description": "Paul Mackenzie ordered his followers to starve their children to death in a forest so they could \"meet Jesus\"."
+      "title": "'I treat all these people like they are victims', says doctor who treated Krakow shooting suspect",
+      "url": "https://www.bbc.co.uk/news/videos/c63elgqqz5y0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 8, 2026",
+      "description": "Two doctors were eating near the Polish city's Main Market Square when a gunman began firing at random."
     },
     {
       "title": "Footage shows derailed carriages after fatal train crash in Egypt",
@@ -3497,10 +3551,10 @@
       "description": "A mass wedding for Palestinian brides and grooms has taken place in the rubble-strewn streets of Gaza."
     },
     {
-      "title": "Watch: Is it the end of the road for Tesla's Cybertruck?",
-      "url": "https://www.bbc.co.uk/news/videos/cv8ezz9ll7nyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 6, 2026",
-      "description": "The car company's CEO Elon Musk has said production will halt in Texas, to focus on the firm's self-driving Cybercabs."
+      "title": "Jensen Huang: Why a personal scandal for the face of the AI boom has provoked a national security scare",
+      "url": "https://www.bbc.co.uk/news/articles/ckgel338xql3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 9, 2026",
+      "description": "Once lauded as the \"Taylor Swift of tech\", Huang is mired in scandal after an affair with a suspected Chinese spy."
     },
     {
       "title": "The Trump coalition is shattered - what will Republicans do now?",
@@ -3527,16 +3581,28 @@
       "description": "The US president's promotion of Miller, a loyal partisan firebrand to be his new chief of staff sets up likely clashes with Congress."
     },
     {
-      "title": "The young Somali woman changing how the world sees Mogadishu",
-      "url": "https://www.bbc.co.uk/news/articles/cq0k0lg48705o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 7, 2026",
-      "description": "For some tourists, the contrast between Somalia's reputation and what they experience on the ground can be striking."
+      "title": "Jensen Huang: Why a personal scandal for the face of the AI boom has provoked a national security scare",
+      "url": "https://www.bbc.co.uk/news/articles/ckgel338xql3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 9, 2026",
+      "description": "Once lauded as the \"Taylor Swift of tech\", Huang is mired in scandal after an affair with a suspected Chinese spy."
     },
     {
-      "title": "Government 'looking seriously' at banning under-16s from Vinted and eBay",
-      "url": "https://www.bbc.co.uk/news/articles/cmzxjvpqrjxro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 8, 2026",
-      "description": "The culture secretary confirms reports they could be in the list of platforms set to be banned next March."
+      "title": "What do we know about Nvidia CEO’s affair with a suspected Chinese spy?",
+      "url": "https://www.bbc.co.uk/news/videos/cq3989nkzn3ko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 9, 2026",
+      "description": "Adoration for the US tech giant’s CEO Jensen Huang has been labelled “Jensanity”, but can his reputation survive the news of his affair?"
+    },
+    {
+      "title": "Doing these things now will help you save money at Christmas",
+      "url": "https://www.bbc.co.uk/news/articles/ck7vppll151mo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 9, 2026",
+      "description": "Small decisions made now can make a big difference to your festive finances, charities say, so here are some tips."
+    },
+    {
+      "title": "Government's EV targets expected to be reduced this week",
+      "url": "https://www.bbc.co.uk/news/articles/cqkg5g2970epo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 9, 2026",
+      "description": "New petrol or diesel cars are due to be phased out by 2030 and by 2035 all new cars must be zero emission."
     },
     {
       "title": "'My mortgage is going up £200 a month': How rising interest rates are hitting people's pockets",
@@ -3545,16 +3611,22 @@
       "description": "With UK interest rates set to rise, mortgages, credit cards and loans could get more expensive for millions."
     },
     {
+      "title": "Nvidia launches investigation into CEO's affair with suspected Chinese spy",
+      "url": "https://www.bbc.co.uk/news/articles/c3dxw10rjn9no?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 9, 2026",
+      "description": "Jensen Huang also admitted to having been \"unfaithful\" to his wife and says he will cooperate with a security investigation."
+    },
+    {
+      "title": "Government 'looking seriously' at banning under-16s from Vinted and eBay",
+      "url": "https://www.bbc.co.uk/news/articles/cmzxjvpqrjxro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 8, 2026",
+      "description": "The culture secretary confirms reports they could be in the list of platforms set to be banned next March."
+    },
+    {
       "title": "He spent $50,000 on Labubus but now the craze is dying",
       "url": "https://www.bbc.co.uk/news/articles/cmvg652l927lo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 7, 2026",
       "description": "Parent company Pop Mart's revenue has fallen as appetite for the quirky collectible monsters wanes."
-    },
-    {
-      "title": "AI stocks climb after trillions wiped from market values",
-      "url": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 6, 2026",
-      "description": "Investors had been selling off tech shares in part due to concerns the Democrat election victory would mean slower AI development."
     },
     {
       "title": "Why the US midterms sparked an AI stock selloff",
@@ -3585,6 +3657,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cmd9343z3zw2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 6, 2026",
       "description": "The government argues the change will help jobseekers and could help to prevent pay discrimination."
+    },
+    {
+      "title": "AI stocks climb after trillions wiped from market values",
+      "url": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 6, 2026",
+      "description": "Investors had been selling off tech shares in part due to concerns the Democrat election victory would mean slower AI development."
     },
     {
       "title": "'I was asked if I was a crier': Your worst job interviews revealed",
@@ -3725,34 +3803,34 @@
       "description": "Will farmers want AI tools to help judge when to pick fruit, or is their own intuition enough?"
     },
     {
-      "title": "Traders 'priced out' of £12,000 Christmas market pitches",
-      "url": "https://www.bbc.co.uk/news/articles/ckn8wew92xw1o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 8, 2026",
-      "description": "Stall holders said they'd met the council leader to express their concerns at high costs since a new operator took over."
+      "title": "Is it the end of free school milk?",
+      "url": "https://www.bbc.co.uk/news/videos/c65ynnx2e7kko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 9, 2026",
+      "description": "Free school milk has been provided to children in Wales since the 1970s, but that could now change."
     },
     {
-      "title": "'Flat', 'tired', 'cynical': Unusually gloomy Kiwis deliver New Zealand's tightest election in years",
-      "url": "https://www.bbc.co.uk/news/articles/cxr5yyg2nj9eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 7, 2026",
-      "description": "The national mood is low, and faith in politics even lower - with voters deserting the major parties at the polls."
+      "title": "Hut owner wins battle to keep living in off-grid home he built",
+      "url": "https://www.bbc.co.uk/news/articles/c933x074xz58o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 9, 2026",
+      "description": "The man has lived in the self-built hut since 2020 - but never told authorities or asked for permission."
     },
     {
-      "title": "'My mortgage is going up £200 a month': How rising interest rates are hitting people's pockets",
-      "url": "https://www.bbc.co.uk/news/articles/c617kjqjvk12o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 7, 2026",
-      "description": "With UK interest rates set to rise, mortgages, credit cards and loans could get more expensive for millions."
+      "title": "How you can get council's £250 cost of living help",
+      "url": "https://www.bbc.co.uk/news/articles/cmd6dd3652zvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 9, 2026",
+      "description": "Applications for household grants of up to £250 are opening to some Surrey residents."
     },
     {
-      "title": "Food bank to close amid rising costs",
-      "url": "https://www.bbc.co.uk/news/articles/cqrkyyj6rx7ro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 6, 2026",
-      "description": "A food bank in Goole annouces it will close in January as costs rise and donations drop."
+      "title": "Hot summers and soaring bills putting soft play centres at risk",
+      "url": "https://www.bbc.co.uk/news/articles/cm4g11exqqwvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 9, 2026",
+      "description": "Jessica Harvey from Whitchurch said there were some days in the summer that no-one visited her centre."
     },
     {
-      "title": "Winter support for residents facing cost pressures",
-      "url": "https://www.bbc.co.uk/news/articles/cm20rrer25ezo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 6, 2026",
-      "description": "The plans aim to help more people access food, financial advice and help with heating costs."
+      "title": "Doing these things now will help you save money at Christmas",
+      "url": "https://www.bbc.co.uk/news/articles/ck7vppll151mo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 9, 2026",
+      "description": "Small decisions made now can make a big difference to your festive finances, charities say, so here are some tips."
     },
     {
       "title": "My hometown shows that high streets have to change or die",
@@ -3803,142 +3881,130 @@
       "description": "The BBC's cost of living correspondent Kevin Peachey explains what the change could mean for those saving for a holiday or to buying a house."
     },
     {
-      "title": "Deadly sand cliff collapses on displaced families in Gaza",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/deadly-sand-cliff-collapses-on-displaced-families-in-gaza?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Deadly sand cliff collapses on displaced families in Gaza"
+      "title": "Partial collapse of Pakistan’s Tarbela dam causes flood water surge",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/partial-collapse-of-pakistans-tarbela-dam-causes-flood-water-surge?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "A protective barrier collapsed at the partially-constructed Tarbela Dam T-5 hydropower project in Pakistan."
     },
     {
-      "title": "Why Abdul El-Sayed’s ‘JD, habibi’ is going viral online",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/why-abdul-el-sayeds-jd-habibi-is-going-viral-online?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "‘JD, habibi’ is going viral after Michigan Senator-elect Abdul El-Sayed used the phrase to mock JD Vance in a speech."
+      "title": "At least 21 migrants and refugees die trying to reach Greece’s Crete",
+      "url": "https://www.aljazeera.com/news/2026/11/9/at-least-21-migrants-and-refugees-die-trying-to-reach-greeces-crete?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "Greece's coastguard said more than 100 people rescued in several operations off the southern coast of Crete."
     },
     {
-      "title": "Pope Leo XIV delivers homily to thousands in Uruguay",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/pope-leo-xiv-delivers-homily-to-thousands-in-uruguay?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Pope Leo XIV delivers homily to thousands in Uruguay"
+      "title": "Paraguay former president’s mansion raided in ongoing investigation",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/paraguay-former-presidents-mansion-raided-in-ongoing-investigation?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "A hidden vault was found in Paraguay's former president's mansion amid ongoing banking scandal investigation."
     },
     {
-      "title": "Rangoli makers adapt to rising costs to preserve colourful Diwali tradition",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/_8-11-sv-rangoli-diwali-india-081126?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Rangoli makers in India are adapting to rising material costs by turning to organic alternatives."
+      "title": "Gaza authorities slam global ‘inaction’ after mudslide kills five people",
+      "url": "https://www.aljazeera.com/news/2026/11/9/gaza-authorities-slam-global-inaction-after-mudslide-kills-five-people?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "Four children and a woman were killed after heavy rain caused a sandbank to collapse on their tent."
     },
     {
-      "title": "Al Jazeera tries Baseball5 at Youth Olympics",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/al-jazeera-tries-baseball5-at-youth-olympics?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Al Jazeera tries Baseball5 at Youth Olympics"
+      "title": "Why is Nvidia’s Jensen Huang at the centre of a US-China spy scandal?",
+      "url": "https://www.aljazeera.com/news/2026/11/9/why-is-nvidias-jensen-huang-at-the-centre-of-a-us-china-spy-scandal?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "Allegations linking CEO to Chinese intelligence shake markets with chipmaker's shares falling more than 4 percent."
     },
     {
-      "title": "Man United earn 4-4 draw against Aston Villa but remain in relegation zone",
-      "url": "https://www.aljazeera.com/sports/2026/11/8/man-united-earn-4-4-draw-against-aston-villa-but-remain-in-relegation-zone?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Michael Carrick's team continue forgettable season with last-gasp draw at Old Trafford in front of angry home fans."
+      "title": "Usman Khawaja’s ‘Sandpapergate’ claims are ‘accurate’, says David Warner",
+      "url": "https://www.aljazeera.com/sports/2026/11/9/usman-khawajas-sandpapergate-claims-are-accurate-says-david-warner?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "'We're not here to point fingers and we're not opening old wounds,' Australia's Warner said of himself and Khawaja."
     },
     {
-      "title": "After the midterms, where does the Republican Party stand?",
-      "url": "https://www.aljazeera.com/opinions/2026/11/8/after-the-midterms-where-does-the-republican-party-stand?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "GOP suffered a loss, but it is hardly a historic one. A party in power has always been held to account in the midterms."
+      "title": "US deports Lebanese consul-general in Detroit over Hezbollah praise",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/us-deports-lebanese-consul-general-in-detroit-over-hezbollah-praise?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "US Secretary of State Marco Rubio has ordered Ibrahim Charara, Lebanon’s consul general in Detroit, to leave the country"
     },
     {
-      "title": "Carlos Alcaraz beats Ben Shelton to win Paris Masters tennis title",
-      "url": "https://www.aljazeera.com/sports/2026/11/8/carlos-alcaraz-beats-ben-shelton-to-win-paris-masters-tennis-title?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Alcaraz bagged a 7-6 (7/5), 7-5 straight sets for an elusive Paris crown before the year-end ATP Finals."
+      "title": "The DNA that Unmasked a Killer | True Crime Reports",
+      "url": "https://www.aljazeera.com/video/true-crime-reports/2026/11/9/the-dna-that-unmasked-a-killer-true-crime-reports?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "For 21 years, Leslie Preer’s murder went unsolved. Then new DNA tech led police to a suspect thousands of miles away."
     },
     {
-      "title": "Eisenkot open to Netanyahu joining Israel’s next government",
-      "url": "https://www.aljazeera.com/news/2026/11/8/israels-president-tasks-eisenkot-to-form-new-coalition-government?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Israel's president officially tasks the opposition leader with forming a new government."
+      "title": "Trump says his immigration policy ‘too tough’ for voters",
+      "url": "https://www.aljazeera.com/news/2026/11/9/trump-says-his-immigration-policy-too-tough-for-voters?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "Trump concedes some voters were unhappy with his administration's controversial deportation drive."
     },
     {
-      "title": "Infantino’s Japanese challenger claims he could unseat FIFA president",
-      "url": "https://www.aljazeera.com/sports/2026/11/8/infantinos-japanese-challenger-claims-he-could-unseat-fifa-president?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Kozo Tashima believes he has a '20 to 30 percent' chance of winning the FIFA presidency election against Infantino."
+      "title": "US top Democrat backs impeachment of Pete Hegseth",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/us-top-democrat-backs-impeachment-of-pete-hegseth?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "‘Hegseth has got to go’."
     },
     {
-      "title": "Hundreds of thousands join Amsterdam’s ‘Red Line’ protest against Israel",
-      "url": "https://www.aljazeera.com/news/2026/11/8/hundreds-of-thousands-protesters-storm-amsterdam?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Protesters seek stricter trade restrictions on Israel and a halt to all arms sales."
+      "title": "Trump ‘only kidding’ about Dana White press secretary role",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/trump-only-kidding-about-dana-white-press-secretary-role?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "Donald Trump says he was ‘only kidding’ about appointing UFC CEO Dana White as the White House press secretary."
     },
     {
-      "title": "Jerusalem Daily: Eisenkot picked over Netanyahu to form government",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/dnrbltn-261108-hegazyn-jerusalem_daily-081126?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Israel's president picks Gadi Eisenkot to form the next government, passing over Benjamin Netanyahu."
+      "title": "MotoGP: Bezzecchi denies Marquez world title as motorsport returns to Qatar",
+      "url": "https://www.aljazeera.com/sports/2026/11/9/motogp-bezzecchi-denies-marquez-world-title-as-motorsport-returns-to-qatar?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "Aprilia's Marco Bezzecchi wins Qatar Grand Prix as Ducati's Marc Marquez finishes second."
     },
     {
-      "title": "Photos: Diwali celebrations light up India and its global diaspora",
-      "url": "https://www.aljazeera.com/gallery/2026/11/8/photos-diwali-celebrations-light-up-india-and-its-global-diaspora?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Celebrations feature fireworks, prayers, reunions, rangoli designs, feasting, and the sharing of sweets and gifts."
+      "title": "Which countries and industries emit the most greenhouse gases?",
+      "url": "https://www.aljazeera.com/news/2026/11/9/which-countries-and-industries-emit-the-most-greenhouse-gases?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "The US has emitted the most CO2 in history; China is now the biggest emitter. Here’s who is driving global emissions."
     },
     {
-      "title": "LIVE: Atletico Madrid vs Barcelona – La Liga",
-      "url": "https://www.aljazeera.com/sports/liveblog/2026/11/8/atletico-madrid-vs-barcelona-la-liga-live?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Previews, team news and live text updates from Atletico Madrid vs Barcelona in football's La Liga."
+      "title": "Ousted PM Sheikh Hasina seeks passport in sign of Bangladesh return plan",
+      "url": "https://www.aljazeera.com/news/2026/11/9/ousted-pm-sheikh-hasina-seeks-passport-in-sign-of-bangladesh-return-plan?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "Hasina, who has been living in India for two years, has promised to return to Bangladesh in December."
     },
     {
-      "title": "India’s ‘cockroach’ movement seeks to restore culture of accountability",
-      "url": "https://www.aljazeera.com/video/talk-to-al-jazeera/2026/11/8/indias-cockroach-movement-seeks-to-restore-culture-of-accountability?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "India's Cockroach Janta Party is a youth movement demanding political accountability, employment and fair elections."
+      "title": "Poland mass shooting assailant dies in hospital, police say",
+      "url": "https://www.aljazeera.com/news/2026/11/9/poland-mass-shooting-assailant-dies-in-hospital-police-say?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "Suspect shot by police and arrested minutes ‌after gunfire opened on people in central Krakow."
     },
     {
-      "title": "Fan hospitalised after falling through stand at Norwegian football match",
-      "url": "https://www.aljazeera.com/sports/2026/11/8/fan-hospitalised-after-falling-through-stand-at-norwegian-football-match?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "A stand in the away end of Tromso's stadium gave way during a match against Bodo/Glimt, causing fans to fall through."
+      "title": "Why we disrupted Annalena Baerbock’s award speech",
+      "url": "https://www.aljazeera.com/opinions/2026/11/9/why-we-disrupted-annalena-baerbocks-award-speech?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "The former German foreign minister is no proponent of peace and justice. No award can wipe out her disastrous record."
     },
     {
-      "title": "Israeli opposition leader warns of ‘point of no return’ for democracy",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/8-11-clip-eisenkot-address-il?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Israeli opposition leader Gadi Eisenkot has been tasked by Israeli President Isaac Herzog with forming a new government."
+      "title": "What is next for Israel?",
+      "url": "https://www.aljazeera.com/opinions/2026/11/9/what-is-next-for-israel?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "The message of the vote is that the violent Israeli policies within occupied territory and the region will continue."
     },
     {
-      "title": "Train crash kills seven, injures dozens near Egypt’s Cairo city",
-      "url": "https://www.aljazeera.com/news/2026/11/8/train-crash-kills-four-injures-dozens-near-egypts-cairo-city?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "The passenger train was travelling from Egypt's capital to Aswan in the south when it derailed, overturning carriages."
+      "title": "How Israel’s separation wall compares with the Berlin Wall",
+      "url": "https://www.aljazeera.com/news/2026/11/9/how-israels-separation-wall-compares-with-the-berlin-wall?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "How Israel's wall, checkpoints and permits divide Palestinians in the occupied West Bank and cut farmers off from land."
     },
     {
-      "title": "Seven killed, 112 injured in train collision in Egypt",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/four-killed-88-injured-in-train-collision-in-egypt?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Seven killed, 112 injured in train collision in Egypt"
+      "title": "Lando Norris wins Sao Palo Grand Prix, but Mercedes seal constructors title",
+      "url": "https://www.aljazeera.com/sports/2026/11/9/lando-norris-wins-sao-palo-grand-prix-but-mercedes-seal-constructors-title?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "Norris wins from pole position on a rainy Sao Paulo track as Mercedes win team title for the first time since 2021."
     },
     {
-      "title": "Israeli forces release Palestinian journalist Abou Shhadeh",
-      "url": "https://www.aljazeera.com/news/2026/11/8/israeli-forces-release-palestinian-journalist-abou-shhadeh?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Abed Abou Shhadeh says his detention was part of Israel's political measures 'to intimidate Arab society as a whole'."
+      "title": "Smog blankets New Delhi as Diwali firecrackers worsen air quality",
+      "url": "https://www.aljazeera.com/news/2026/11/9/smog-blankets-new-delhi-as-diwali-firecrackers-worsen-air-quality?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "Air quality in Indian capital reaches severe levels, posing heightened health risks for more than 30 million residents."
     },
     {
-      "title": "Egyptian embassy reopens in Libya for the first time in 12 years",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/egyptian-embassy-reopens-in-libya-for-the-first-time-in-12-years?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Egypt has reopened its embassy in Libya’s capital, Tripoli, after a 12-year closure."
-    },
-    {
-      "title": "Tenerife’s Jesus De Miguel honoured in tearful tribute by teammates, fans",
-      "url": "https://www.aljazeera.com/sports/2026/11/8/tenerifes-jesus-de-miguel-honoured-in-tearful-tribute-by-teammates-fans?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Teammates choke back tears, fans chant his name and his family are promised support by the club at the memorial service."
-    },
-    {
-      "title": "Palestinian journalist Abed Abou Shhadeh released after 5 days in detention",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/palestinian-journalist-abed-abou-shhadeh-released-after-5-days-in-detention?traffic_source=rss",
-      "date": "November 8, 2026",
-      "description": "Palestinian journalist Abed Abou Shhadeh released after 5 days detention"
+      "title": "‘Tents don’t protect us’: Rains flood displaced Palestinians in Gaza",
+      "url": "https://www.aljazeera.com/features/2026/11/9/tents-dont-protect-us-rains-flood-displaced-palestinians-in-gaza?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "Hundreds of thousands of Palestinians are vulnerable to flooding as Israel continues to block entry of mobile homes."
     }
   ]
 }
