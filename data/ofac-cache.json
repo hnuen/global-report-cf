@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T15:08:19.557Z",
+  "updatedAt": "2026-11-09T17:08:25.438Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261106",
@@ -3256,6 +3256,18 @@
   ],
   "bbcNews": [
     {
+      "title": "France accuses Iran of supermarket fridge hacking",
+      "url": "https://www.bbc.co.uk/news/articles/cmg474vk6dyqo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 9, 2026",
+      "description": "The cyber-attack last month saw fridges and freezers in hundreds of supermarkets across France heated up."
+    },
+    {
+      "title": "Nine Zimbabweans caught allegedly trying to leave South Africa to fight in Ukraine",
+      "url": "https://www.bbc.co.uk/news/articles/cm93z3lp5lnpo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 9, 2026",
+      "description": "Hundreds of people from different African countries have been recruited to fight for Russia, according to Ukraine."
+    },
+    {
       "title": "Iran executes three men for 'armed unrest' after January protests",
       "url": "https://www.bbc.co.uk/news/articles/ckly0ex633ydo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 8, 2026",
@@ -3282,6 +3294,24 @@
   ],
   "ajNews": [
     {
+      "title": "France accuses Iran of cyberattack on European fridges",
+      "url": "https://www.aljazeera.com/news/2026/11/9/france-accuses-iran-of-cyberattack-on-european-fridges?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "This is a breaking news story."
+    },
+    {
+      "title": "Trump says Iran is sealed off. But can new US task force stop weapons flow?",
+      "url": "https://www.aljazeera.com/news-analysis/2026/11/9/trump-says-iran-is-sealed-off-but-can-new-us-task-force-stop-weapons-flow?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "Analysts say a small intelligence-focused unit cannot seal Iran’s borders, and others warn it could expand the war."
+    },
+    {
+      "title": "IRGC strikes three tankers near Hormuz over ‘US links’",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/irgc-strikes-three-tankers-near-hormuz-over-us?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "An oil tanker caught fire near the Strait of Hormuz after Iran’s IRGC said it had struck three tankers on Sunday,"
+    },
+    {
       "title": "Iran stands by demands to end the war as US ramps up military pressure",
       "url": "https://www.aljazeera.com/news/2026/11/9/iran-stands-by-demands-to-end-the-war-as-us-ramps-up-military-pressure?traffic_source=rss",
       "date": "November 9, 2026",
@@ -3298,24 +3328,6 @@
       "url": "https://www.aljazeera.com/features/2026/11/9/syria-confirms-sending-troops-to-saudi-arabia-amid-battle-against-houthis?traffic_source=rss",
       "date": "November 9, 2026",
       "description": "Syrian officials deny reports Damascus is sending troops to Yemen, but Syrian security integration appears under way"
-    },
-    {
-      "title": "At least four people killed as Russia and Ukraine trade strikes overnight",
-      "url": "https://www.aljazeera.com/news/2026/11/9/at-least-one-person-killed-as-russia-and-ukraine-trade-strikes-overnight?traffic_source=rss",
-      "date": "November 9, 2026",
-      "description": "Russia's second-largest oil refinery is set on fire by drones while Russian strikes target Ukrainian energy sites."
-    },
-    {
-      "title": "Iran’s authorities harden domestic security controls amid US strike threats",
-      "url": "https://www.aljazeera.com/news/2026/11/9/irans-authorities-harden-domestic-security-controls-amid-us-strike-threats?traffic_source=rss",
-      "date": "November 9, 2026",
-      "description": "Iran is cracking down on perceived security threats from alleged spies to crowds of youngsters."
-    },
-    {
-      "title": "Qatar PM to meet Trump: What’s the latest on US-Iran negotiations?",
-      "url": "https://www.aljazeera.com/news/2026/11/9/qatar-pm-to-meet-trump-whats-the-latest-on-us-iran-negotiations?traffic_source=rss",
-      "date": "November 9, 2026",
-      "description": "Iran has put forward a two-day proposal developed with Qatari mediators that Washington is examining."
     }
   ],
   "occNews": [
@@ -3431,22 +3443,16 @@
       "description": "The BBC enters Marseille's dangerous underworld, where young people are trapped, brutalised and exploited."
     },
     {
-      "title": "Trump says he was 'kidding' about Dana White press secretary offer",
-      "url": "https://www.bbc.co.uk/news/articles/ck0j0j87959eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 9, 2026",
-      "description": "The president told the Ultimate Fighting Championship boss to \"please take the job\" in a Truth Social post on Saturday."
-    },
-    {
       "title": "Cruise ship pianist rescued from sea after nine hours in Pacific Ocean",
       "url": "https://www.bbc.co.uk/news/articles/ck1wvrrgln13o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 9, 2026",
       "description": "Two US fishermen say they spotted the man treading water around 20 miles (32km) off the Californian coast."
     },
     {
-      "title": "Nine foreigners caught allegedly trying to leave South Africa to fight in Ukraine",
-      "url": "https://www.bbc.co.uk/news/articles/cm93z3lp5lnpo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Trump questions midterm elections integrity after previously accepting results",
+      "url": "https://www.bbc.co.uk/news/articles/ck79p9350zp9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 9, 2026",
-      "description": "Police declined to disclose their nationalities but said none of them lived in South Africa."
+      "description": "Trump made the claims, without evidence, on Truth Social on Monday."
     },
     {
       "title": "At least 39 die after Europe-bound migrant boat sinks off Senegal",
@@ -3471,6 +3477,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cqd090ee8px5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 9, 2026",
       "description": "Three children are among those killed in the incident that came a day after heavy rain reportedly flooded tens of thousands of tents across Gaza."
+    },
+    {
+      "title": "Trump says he was 'kidding' about Dana White press secretary offer",
+      "url": "https://www.bbc.co.uk/news/articles/ck0j0j87959eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 9, 2026",
+      "description": "The president told the Ultimate Fighting Championship boss to \"please take the job\" in a Truth Social post on Saturday."
     },
     {
       "title": "Seven dead and more than 100 injured after trains collide in Egypt",
@@ -3533,10 +3545,10 @@
       "description": "There has been months of public outcry in Houston after an Immigration and Customs Enforcement (ICE) officer fatally shot a man who was driving to work."
     },
     {
-      "title": "AI stocks climb after trillions wiped from market values",
-      "url": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 6, 2026",
-      "description": "Investors had been selling off tech shares in part due to concerns the Democrat election victory would mean slower AI development."
+      "title": "Men recruited to French gang as children to kill give rare insight into drug underworld",
+      "url": "https://www.bbc.co.uk/news/videos/cwe9l98l5n2po?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 9, 2026",
+      "description": "\"It destroys people, but we all make our own choices\" - Marseille drug-gang members spoke to the BBC."
     },
     {
       "title": "Who is the suspected Chinese spy at centre of the Nvidia investigation?",
@@ -3561,12 +3573,6 @@
       "url": "https://www.bbc.co.uk/news/videos/cw78p2km7d94o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 8, 2026",
       "description": "At least seven people died when two trains collided, causing several carriages to derail and fall down an embankment."
-    },
-    {
-      "title": "How the deadly shooting in Krakow unfolded",
-      "url": "https://www.bbc.co.uk/news/videos/cq74p2zpwyjmo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 8, 2026",
-      "description": "Video authenticated by BBC Verify shows the moment gunshots rang out in Krakow's main market square."
     },
     {
       "title": "What we know so far about Jensen Huang's affair with suspected Chinese spy",
@@ -3599,6 +3605,18 @@
       "description": "The US president's promotion of Miller, a loyal partisan firebrand to be his new chief of staff sets up likely clashes with Congress."
     },
     {
+      "title": "Civil servant who secretly held five jobs found guilty of fraud",
+      "url": "https://www.bbc.co.uk/news/articles/cm70pgnx891do?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 9, 2026",
+      "description": "Kashim Chowdhury had secretly held multiple public sector jobs on full-time salaries."
+    },
+    {
+      "title": "Poundland unable to buy new stock as fears over collapse grow",
+      "url": "https://www.bbc.co.uk/news/articles/cw1l3lmem165o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 9, 2026",
+      "description": "The discount chain is continuing to edge towards collapse and is said to be \"running on fumes\", according to one insider."
+    },
+    {
       "title": "What we know so far about Jensen Huang's affair with suspected Chinese spy",
       "url": "https://www.bbc.co.uk/news/articles/ckgel338xql3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 9, 2026",
@@ -3623,22 +3641,16 @@
       "description": "New petrol or diesel cars are due to be phased out by 2030 and by 2035 all new cars must be zero emission."
     },
     {
-      "title": "'My mortgage is going up £200 a month': How rising interest rates are hitting people's pockets",
-      "url": "https://www.bbc.co.uk/news/articles/c617kjqjvk12o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 7, 2026",
-      "description": "With UK interest rates set to rise, mortgages, credit cards and loans could get more expensive for millions."
-    },
-    {
-      "title": "Nvidia launches investigation into CEO's affair with suspected Chinese spy",
-      "url": "https://www.bbc.co.uk/news/articles/c3dxw10rjn9no?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 9, 2026",
-      "description": "Jensen Huang also admitted to having been \"unfaithful\" to his wife and says he will cooperate with a security investigation."
-    },
-    {
       "title": "Government 'looking seriously' at banning under-16s from Vinted and eBay",
       "url": "https://www.bbc.co.uk/news/articles/cmzxjvpqrjxro?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 8, 2026",
       "description": "The culture secretary confirms reports they could be in the list of platforms set to be banned next March."
+    },
+    {
+      "title": "'My mortgage is going up £200 a month': How rising interest rates are hitting people's pockets",
+      "url": "https://www.bbc.co.uk/news/articles/c617kjqjvk12o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 7, 2026",
+      "description": "With UK interest rates set to rise, mortgages, credit cards and loans could get more expensive for millions."
     },
     {
       "title": "He spent $50,000 on Labubus but now the craze is dying",
@@ -3821,6 +3833,12 @@
       "description": "Will farmers want AI tools to help judge when to pick fruit, or is their own intuition enough?"
     },
     {
+      "title": "Action on energy costs is my overriding aim, says Fahnbulleh",
+      "url": "https://www.bbc.co.uk/news/articles/cmz7x7q7q8vvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 9, 2026",
+      "description": "The energy secretary says reducing bills is key to maintaining public support for climate action."
+    },
+    {
       "title": "Rising cost of living tests UK's net zero ambitions",
       "url": "https://www.bbc.co.uk/news/videos/cm1dwd4e4ywvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 9, 2026",
@@ -3843,12 +3861,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cmd6dd3652zvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 9, 2026",
       "description": "Applications for household grants of up to £250 are opening to some Surrey residents."
-    },
-    {
-      "title": "Hot summers and soaring bills putting soft play centres at risk",
-      "url": "https://www.bbc.co.uk/news/articles/cm4g11exqqwvo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 9, 2026",
-      "description": "Jessica Harvey from Whitchurch said there were some days in the summer that no-one visited her centre."
     },
     {
       "title": "My hometown shows that high streets have to change or die",
@@ -3899,10 +3911,46 @@
       "description": "The BBC's cost of living correspondent Kevin Peachey explains what the change could mean for those saving for a holiday or to buying a house."
     },
     {
+      "title": "Israel’s Shin Bet finds no evidence of foreign election meddling: Report",
+      "url": "https://www.aljazeera.com/news/2026/11/9/israels-shin-bet-finds-no-evidence-of-foreign-election-meddling-report?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "Netanyahu and Zini's interference claims lack evidence, according to law enforcement officials quoted by Haaretz."
+    },
+    {
+      "title": "Man uses excavator to destroy Chinese government building",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/man-uses-excavator-to-destroy-chinese-government-building?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "A man has driven an excavator into a Chinese government affairs centre in Shaanxi"
+    },
+    {
+      "title": "Nvidia shares slump amid investigation into CEO Jensen Huang",
+      "url": "https://www.aljazeera.com/economy/2026/11/9/nvidia-shares-slump-amid-investigation-into-ceo-jensen-huang?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "Huang admits infidelity, denies compromising Nvidia security as China spy inquiry shakes $4.5 trillion AI firm."
+    },
+    {
+      "title": "More than 50,000 displaced by deadly Ethiopia border clashes",
+      "url": "https://www.aljazeera.com/news/2026/11/9/more-than-50000-displaced-by-deadly-ethiopia-border-clashes?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "Families arrive in Kenya with little food or shelter as host communities struggle to cope."
+    },
+    {
+      "title": "Senegal human rights group demands government action after deadly sinking",
+      "url": "https://www.aljazeera.com/news/2026/11/9/senegal-human-rights-group-demands-government-action-after-deadly-sinking?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "Thousands ⁠of people have ⁠died in recent years attempting to reach Spain’s Canary Islands from West Africa."
+    },
+    {
+      "title": "Los Angeles mayoral race points to growing sway of democratic socialists",
+      "url": "https://www.aljazeera.com/news/2026/11/9/los-angeles-mayoral-race-points-to-growing-sway-of-democratic-socialists?traffic_source=rss",
+      "date": "November 9, 2026",
+      "description": "Nithya Raman taps into frustration with economic and political status quo to become mayor of the second-largest US city."
+    },
+    {
       "title": "UK court hands comedian Russell Brand 10.5 years for rape, sexual assault",
       "url": "https://www.aljazeera.com/news/2026/11/9/uk-court-hands-comedian-russel-brand-10-5-years-for-rape-sexual-assault?traffic_source=rss",
       "date": "November 9, 2026",
-      "description": "This is a breaking news story."
+      "description": "Brand was convicted last week of raping one woman and sexually assaulting three more between 2004 ​and 2009."
     },
     {
       "title": "More than 100,000 sign petition for inquiry into UK role in Gaza genocide",
@@ -3975,42 +4023,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/9/why-is-nvidias-jensen-huang-at-the-centre-of-a-us-china-spy-scandal?traffic_source=rss",
       "date": "November 9, 2026",
       "description": "Allegations linking CEO to Chinese intelligence shake markets with chipmaker's shares falling more than 4 percent."
-    },
-    {
-      "title": "Usman Khawaja’s ‘Sandpapergate’ claims are ‘accurate’, says David Warner",
-      "url": "https://www.aljazeera.com/sports/2026/11/9/usman-khawajas-sandpapergate-claims-are-accurate-says-david-warner?traffic_source=rss",
-      "date": "November 9, 2026",
-      "description": "'We're not here to point fingers and we're not opening old wounds,' Australia's Warner said of himself and Khawaja."
-    },
-    {
-      "title": "US deports Lebanese consul-general in Detroit over Hezbollah praise",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/us-deports-lebanese-consul-general-in-detroit-over-hezbollah-praise?traffic_source=rss",
-      "date": "November 9, 2026",
-      "description": "US Secretary of State Marco Rubio has ordered Ibrahim Charara, Lebanon’s consul general in Detroit, to leave the country"
-    },
-    {
-      "title": "The DNA that Unmasked a Killer | True Crime Reports",
-      "url": "https://www.aljazeera.com/video/true-crime-reports/2026/11/9/the-dna-that-unmasked-a-killer-true-crime-reports?traffic_source=rss",
-      "date": "November 9, 2026",
-      "description": "For 21 years, Leslie Preer’s murder went unsolved. Then new DNA tech led police to a suspect thousands of miles away."
-    },
-    {
-      "title": "Trump says his immigration policy ‘too tough’ for voters",
-      "url": "https://www.aljazeera.com/news/2026/11/9/trump-says-his-immigration-policy-too-tough-for-voters?traffic_source=rss",
-      "date": "November 9, 2026",
-      "description": "Trump concedes some voters were unhappy with his administration's controversial deportation drive."
-    },
-    {
-      "title": "US top Democrat backs impeachment of Pete Hegseth",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/us-top-democrat-backs-impeachment-of-pete-hegseth?traffic_source=rss",
-      "date": "November 9, 2026",
-      "description": "‘Hegseth has got to go’."
-    },
-    {
-      "title": "Trump ‘only kidding’ about Dana White press secretary role",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/trump-only-kidding-about-dana-white-press-secretary-role?traffic_source=rss",
-      "date": "November 9, 2026",
-      "description": "Donald Trump says he was ‘only kidding’ about appointing UFC CEO Dana White as the White House press secretary."
     }
   ]
 }
