@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T19:08:20.945Z",
+  "updatedAt": "2026-11-11T21:08:25.671Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261109",
@@ -3275,7 +3275,19 @@
   ],
   "ajNews": [
     {
-      "title": "Ireland fears undersea cables face growing threat from ‘malign actors’",
+      "title": "Hormuz Strait will ‘never return’ to pre-war status, Iran’s Ghalibaf says",
+      "url": "https://www.aljazeera.com/news/2026/11/11/strait-of-hormuz-will-never-return-to-pre-war-status-ghalibaf?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "Iran's parliament speaker and top negotiator says Tehran is waiting for an official US response to its seven conditions."
+    },
+    {
+      "title": "Oil production nears pre-Iran war levels, OPEC says",
+      "url": "https://www.aljazeera.com/news/2026/11/11/oil-production-near-pre-iran-war-levels-opec-says?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "Saudi Arabia reports oil outputs soared to highest levels in months despite continued shipping disruptions."
+    },
+    {
+      "title": "‘Malign actors’: Ireland fears Russia could threaten undersea cables",
       "url": "https://www.aljazeera.com/news/2026/11/11/ireland-fears-undersea-cables-face-growing-threat-from-malign-actors?traffic_source=rss",
       "date": "November 11, 2026",
       "description": "Home to many US tech multinationals, Ireland raises alarm over Russia's so-called shadow fleet."
@@ -3291,30 +3303,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/11/russia-ukraine-talks-in-uae-secure-major-prisoner-exchange-deal?traffic_source=rss",
       "date": "November 11, 2026",
       "description": "Russia and Ukraine have agreed to a major prisoner exchange following two days of US-mediated talks in Abu Dhabi"
-    },
-    {
-      "title": "Russia bans two French lawmakers, two journalists in tit-for-tat move",
-      "url": "https://www.aljazeera.com/news/2026/11/11/russia-bans-two-french-lawmakers-two-journalists-in-tit-for-tat-move?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "Kremlin spokeswoman says ban responds to the expulsion of a Russian commentator who used to head RT France."
-    },
-    {
-      "title": "Can Tehran survive a ‘zero oil’ budget, if US blockade on Iran persists?",
-      "url": "https://www.aljazeera.com/economy/2026/11/11/can-tehran-survive-a-zero-oil-budget-if-us-blockade-on-iran-persists?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "The government is defiant and planning for the worst, but a US siege is expected to make most Iranians poorer."
-    },
-    {
-      "title": "Bessent’s relocation: From US to EU, is Iran bringing war to Western soil?",
-      "url": "https://www.aljazeera.com/news-analysis/2026/11/11/bessents-relocation-from-us-to-eu-is-iran-bringing-war-to-western-soil?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "A deliberate expansion of Iran’s campaign of retaliation beyond the Middle East could be taking place, said an expert."
-    },
-    {
-      "title": "Rubio backs blockade, Vance wants deal: Is Trump’s team split on Iran war?",
-      "url": "https://www.aljazeera.com/news/2026/11/11/is-trump-team-split-on-iran?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "Torn between military action and diplomacy, US appears to settle for drawn-out economic pressure campaign, blockade."
     }
   ],
   "occNews": [
@@ -3418,10 +3406,10 @@
   ],
   "regionsNews": [
     {
-      "title": "Spain sees widespread disruption in first general strike for 14 years",
+      "title": "Clashes erupt in Barcelona as thousands join Spain general strike",
       "url": "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 11, 2026",
-      "description": "Protests are also expected in the biggest cities less than three weeks before Spaniards vote in parliamentary elections."
+      "description": "Tens of thousands of people have been taking part in the strike, called by the country's main unions over housing and the high cost of living."
     },
     {
       "title": "US Treasury Secretary Scott Bessent relocated after alleged Iranian threats",
@@ -3464,6 +3452,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cwe9kzv0g0v7o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 11, 2026",
       "description": "The country begins a 42-day countdown to being declared Ebola-free, provided no new cases are recorded."
+    },
+    {
+      "title": "African writing award probe finds 'no evidence' winning story was AI generated",
+      "url": "https://www.bbc.co.uk/news/articles/cmglr260z7eko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 11, 2026",
+      "description": "Zimbabwean writer Simbarashe Kundizeza has also vehemently denied the allegation made in a US magazine."
     },
     {
       "title": "Egyptian journalist's retrial adjourned as UN warns of 'assaults on press freedom'",
@@ -3548,6 +3542,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cx5ynyg6j375o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 11, 2026",
       "description": "A bumper year so far for toy sales comes as debate intensifies over screen time and tech connectivity."
+    },
+    {
+      "title": "'Not the answer': Labour MPs speak out against Rosebank as decision looms",
+      "url": "https://www.bbc.co.uk/news/articles/cqp9dr79jkrzo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 11, 2026",
+      "description": "There is a growing expectation among senior Labour figures that drilling in the oil field will be given the green light."
     },
     {
       "title": "Nvidia hires major US law firm to investigate alleged Chinese spy affair",
@@ -3772,10 +3772,10 @@
       "description": "Will farmers want AI tools to help judge when to pick fruit, or is their own intuition enough?"
     },
     {
-      "title": "Spain sees widespread disruption in first general strike for 14 years",
+      "title": "Clashes erupt in Barcelona as thousands join Spain general strike",
       "url": "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 11, 2026",
-      "description": "Protests are also expected in the biggest cities less than three weeks before Spaniards vote in parliamentary elections."
+      "description": "Tens of thousands of people have been taking part in the strike, called by the country's main unions over housing and the high cost of living."
     },
     {
       "title": "Workers across Spain stage first general strike in 14 years",
@@ -3856,6 +3856,72 @@
       "description": "Business correspondent Emma Simpson tries out Sainsbury's facial recognition technology."
     },
     {
+      "title": "Thousands march to mark Poland’s Independence Day",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/11/thousands-march-to-mark-polands-independence-day?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "Thousands of people have taken to the streets of Warsaw for Poland's annual Independence Day march"
+    },
+    {
+      "title": "Hoax bomb threats target schools across Italy, UK and Ireland",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/11/hoax-bomb-threats-target-schools-across-italy-uk-and-ireland?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "Thousands of schools across Italy, the UK and Ireland received hoax bomb threat emails."
+    },
+    {
+      "title": "Gaza goalkeeper killed in Israeli attack",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/11/gaza-goalkeeper-killed-in-israeli-attack?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "Palestinian footballer Mahmoud Abdel-Malek was killed in an Israeli strike days after the Thousand Martyrs Cup."
+    },
+    {
+      "title": "Trump’s White House calls Democratic plans for congressional probes ‘abuse’",
+      "url": "https://www.aljazeera.com/news/2026/11/11/trumps-white-house-calls-democratic-plans-for-congressional-probes-abuse?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "Democratic lawmaker Robert Garcia denounced a White House letter as an unconstitutional attack on legislative branch."
+    },
+    {
+      "title": "Scenes show aftermath of horrific Israeli strike on Gaza tents",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/11/scenes-show-aftermath-of-horrific-israeli-strike-on-gaza-tents?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "Palestinian families have returned to the Sabra neighbourhood of Gaza City after an Israeli strike killed three people."
+    },
+    {
+      "title": "F1 champion Lewis Hamilton calls on Israel to open Gaza’s Rafah border",
+      "url": "https://www.aljazeera.com/news/2026/11/11/f1-champion-lewis-hamilton-calls-on-israel-to-open-rafah-border?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "Hamilton visited the Egypt-Gaza border as conditions worsened for Palestinians in Gaza after heavy rains."
+    },
+    {
+      "title": "First Palestinian American elected in New York talks to Al Jazeera",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/11/first-palestinian-american-elected-in-new-york-talks-to-al-jazeera?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "Palestinian American senator-elect Aber Kawas says Gaza and affordability in New York drove her into politics."
+    },
+    {
+      "title": "Uzbekistan: the crossroads of Central Asian cultures",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/11/uzbekistan-the-crossroads-of-central-asian-cultures?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "Showcased in Qatar’s Museum of Islamic Art lies an exhibition that expands on Uzbekistan’s intercultural artifacts."
+    },
+    {
+      "title": "Three women killed in LA crash as driver arrested",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/11/three-women-killed-in-la-crash-as-driver-arrested?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "Three women killed in LA crash as driver arrested"
+    },
+    {
+      "title": "How much did pro-Israel groups spend against Hasan Piker at midterms?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/11/how-much-did-pro-israel-groups-spend-against-hasan-piker-at-midterms?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "How much did pro-Israel groups spend against Hasan Piker at midterms?"
+    },
+    {
+      "title": "Which key races remain undecided one week after the US midterms?",
+      "url": "https://www.aljazeera.com/news/2026/11/11/which-key-races-remain-undecided-one-week-after-the-us-midterms?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "Democrats hope several races that are still too close to call will further expand their majorities in the US Congress."
+    },
+    {
       "title": "More than one million people in Lebanon face acute food shortages, UN says",
       "url": "https://www.aljazeera.com/news/2026/11/11/one-million-people-in-lebanon-facing-acute-food-insecurity-un-says?traffic_source=rss",
       "date": "November 11, 2026",
@@ -3904,64 +3970,10 @@
       "description": "The Republican ran unopposed, despite some GOP lawmaker demands to evaluate the party's stinging midterm losses to Democ"
     },
     {
-      "title": "Palestinian American activist refused UK entry for Gaza fundraiser",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/11/palestinian-american-activist-refused-uk-entry-for-gaza-fundraiser?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "A Palestinian American activist has been refused entry to the UK to attend his charity’s annual Gaza fundraiser."
-    },
-    {
       "title": "Israeli army kills Palestinian footballer Mahmoud Kamal Abdel-Malek in Gaza",
       "url": "https://www.aljazeera.com/sports/2026/11/11/israeli-army-kills-palestinian-footballer-mahmoud-kamal-abdel-malek-in-gaza?traffic_source=rss",
       "date": "November 11, 2026",
       "description": "Abdel-Malek, the captain and goalkeeper of Gaza Sports Club, recently played in the Thousand Martyrs Cup final."
-    },
-    {
-      "title": "‘It’s just too expensive’: Housing and wages at the heart of Spain’s strike",
-      "url": "https://www.aljazeera.com/news/2026/11/11/its-just-too-expensive-housing-and-wages-at-the-heart-of-spains-strike?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "Mass walkout across several cities marks first general strike in 14 years."
-    },
-    {
-      "title": "Israel is ‘disrupting entire ecosystems’, including Lebanon’s wheat crop",
-      "url": "https://www.aljazeera.com/news/2026/11/11/israel-is-disrupting-entire-ecosystems-including-lebanons-wheat-crop?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "Lebanese wheat production hit by war as farmlands face severe destruction in the south and Bekaa Valley."
-    },
-    {
-      "title": "Kenya discharges last Ebola patient, awaits disease-free status",
-      "url": "https://www.aljazeera.com/news/2026/11/11/kenya-discharges-last-ebola-patient?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "Health Minister Aden Duale says Kenya will continue to exercise prevention measures until December 23."
-    },
-    {
-      "title": "Inside the fight against Denmark’s ‘straight up racist’ housing law",
-      "url": "https://www.aljazeera.com/features/2026/11/11/they-see-me-as-non-western-top-court-to-rule-on-denmarks-housing-law?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "Residents say Denmark’s ‘ghetto law’ is breaking up strong communities, as the Supreme Court prepares to rule."
-    },
-    {
-      "title": "Qatar Grand Prix was ‘right decision’ despite regional tensions: MotoGP",
-      "url": "https://www.aljazeera.com/sports/2026/11/11/motogp-carlos-ezpeleta-deputy-ceo-qatar-grand-prix-yamaha-iran-war?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "MotoGP chief says 'it was normal that the riders showed their concerns' but was surprised at Yamaha's ⁠⁠⁠⁠withdrawal."
-    },
-    {
-      "title": "Italy vs France: UEFA Nations League – preview, team news, predictions",
-      "url": "https://www.aljazeera.com/sports/2026/11/11/italy-vs-france-uefa-nations-league-preview-team-news?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "Kylian Mbappe 'under treatment' as Group A1 leaders France travel to Italy for a game at the San Siro, Milan."
-    },
-    {
-      "title": "South Africans divided over Olympic swimmer’s switch to Netherlands",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/11/south-africans-divided-over-olympic-swimmers-switch-to-netherlands-2?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "South Africa’s most decorated Olympian is switching nations to swim for the Netherlands."
-    },
-    {
-      "title": "‘Our neighbours are gone’: Gaza survivors recount horrors of deadly floods",
-      "url": "https://www.aljazeera.com/features/2026/11/11/as-gaza-flood-waters-subside-palestinians-assess-human-and-material-damage?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "A deadly sandbank collapse buried families alive in Deir el-Balah, as survivors describe desperate rescue attempts."
     }
   ]
 }
