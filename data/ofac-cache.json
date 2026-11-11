@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T21:08:25.671Z",
+  "updatedAt": "2026-11-11T22:08:28.283Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261109",
@@ -3246,7 +3246,14 @@
       "description": "The Commission welcomes the Council's adoption of the 20th Russia sanctions package, that puts further pressure on Russia to engage in negotiations and do so on terms acceptable for Ukraine."
     }
   ],
-  "unNotices": [],
+  "unNotices": [
+    {
+      "title": "Security Council 1533 Sanctions Committee Amends One Entity on Its Sanctions List",
+      "url": "https://press.un.org/en/2026/sc16506.doc.htm",
+      "date": "November 11, 2026",
+      "description": "On 11 November 2026, the Security Council Committee established pursuant to resolution 1533 (2004) concerning the Democratic Republic of the Congo enacted the amendment specified by strikethrough and underline in the entry below on its Sanctions List of individuals and entities."
+    }
+  ],
   "bbcNews": [
     {
       "title": "Russia-Ukraine talks turn to post-war security but end without breakthrough",
@@ -3406,7 +3413,7 @@
   ],
   "regionsNews": [
     {
-      "title": "Clashes erupt in Barcelona as thousands join Spain general strike",
+      "title": "Clashes erupt in Barcelona after thousands join Spain general strike",
       "url": "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 11, 2026",
       "description": "Tens of thousands of people have been taking part in the strike, called by the country's main unions over housing and the high cost of living."
@@ -3421,7 +3428,7 @@
       "title": "Schools in Italy, Scotland and Northern Ireland hit by threats in suspected bomb hoax",
       "url": "https://www.bbc.co.uk/news/articles/cwz0k79pr8z2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 11, 2026",
-      "description": "More than 6,000 Italian schools received a threat. Authorities in all three countries say there appears to be no risk to the public. It is not known if the incidents are linked."
+      "description": "More than 6,000 Italian schools received a threat. Authorities in all three countries say there appears to be no risk to the public."
     },
     {
       "title": "Indonesia's vice president resigns amid signs ruling alliance is fraying",
@@ -3562,16 +3569,16 @@
       "description": "The AI company behind the Claude chatbot will offer its shares at between $70 and $78, which is lower than what was expected."
     },
     {
-      "title": "Sales of tinned food and bottled water jump after 'Be Ready' campaign launch",
-      "url": "https://www.bbc.co.uk/news/articles/cqev3vl4ek33o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 10, 2026",
-      "description": "Sales of essential goods such as hand sanitiser soar after the government called on households to be prepared for emergencies."
-    },
-    {
       "title": "Robot vessels take on the dangerous work of mine hunting",
       "url": "https://www.bbc.co.uk/news/articles/cj5yn24llxd6o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 11, 2026",
       "description": "The conflict in the Gulf is an opportunity for the US to test its autonomous mine-hunting systems."
+    },
+    {
+      "title": "Sales of tinned food and bottled water jump after 'Be Ready' campaign launch",
+      "url": "https://www.bbc.co.uk/news/articles/cqev3vl4ek33o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 10, 2026",
+      "description": "Sales of essential goods such as hand sanitiser soar after the government called on households to be prepared for emergencies."
     },
     {
       "title": "Kim Kardashian's Skims offers refunds for $148 advent calendar after backlash",
@@ -3772,7 +3779,7 @@
       "description": "Will farmers want AI tools to help judge when to pick fruit, or is their own intuition enough?"
     },
     {
-      "title": "Clashes erupt in Barcelona as thousands join Spain general strike",
+      "title": "Clashes erupt in Barcelona after thousands join Spain general strike",
       "url": "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 11, 2026",
       "description": "Tens of thousands of people have been taking part in the strike, called by the country's main unions over housing and the high cost of living."
