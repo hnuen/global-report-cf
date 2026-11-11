@@ -1,67 +1,6 @@
 {
-  "updatedAt": "2026-11-11T13:08:15.480Z",
-  "recentActions": [
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20261109",
-      "code": "20261109",
-      "title": "Iran Designation Update",
-      "date": "November 09, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20261106",
-      "code": "20261106",
-      "title": "Iran-related Designations",
-      "date": "November 06, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20261105",
-      "code": "20261105",
-      "title": "Cyber-related and Transnational Criminal Organizations Designations; Cuba Designations; Publication of Cuba-related Determination",
-      "date": "November 05, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20261104",
-      "code": "20261104",
-      "title": "Iran-related Designations; Updates to Certain Iran-related Listings; Publication of Iran-related OFAC Alert; Issuance of Amended Venezuela-related General License and Frequently Asked Question",
-      "date": "November 04, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20261029",
-      "code": "20261029",
-      "title": "Issuance of Amended Iran-related General License",
-      "date": "October 29, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20261028",
-      "code": "20261028",
-      "title": "North Korea Designations; Democratic Republic of the Congo-related Designations",
-      "date": "October 28, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20261027",
-      "code": "20261027",
-      "title": "Settlement Agreement between the U.S. Department of the Treasury&#039;s Office of Foreign Assets Control and Extreme Networks, Inc.",
-      "date": "October 27, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20261026",
-      "code": "20261026",
-      "title": "Issuance of Amended Frequently Asked Questions Regarding Blocking and Rejecting Transactions and Filing Reports with OFAC",
-      "date": "October 26, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20261021",
-      "code": "20261021",
-      "title": "Iran-related Designations; Belarus and North Korea Designations Removals; Issuance of Iran-related and Russia-related General Licenses and Amended Frequently Asked Questions",
-      "date": "October 21, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20261019",
-      "code": "20261019",
-      "title": "Protecting American Intellectual Property Act of 2022 (PAIPA) Designations; Issuance of Associated General Licenses",
-      "date": "October 19, 2026"
-    }
-  ],
+  "updatedAt": "2026-11-11T15:08:18.278Z",
+  "recentActions": [],
   "civilPenalties": [
     {
       "date": "10/27/2026",
@@ -3261,12 +3200,6 @@
       "description": "US general warns the Sahel model-like security deal with Russia could lead to greater instability in Africa."
     },
     {
-      "title": "US Army soldier suspected of spying for Russia arrested in UK",
-      "url": "https://www.bbc.co.uk/news/articles/c6d7q77xgw0vo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 10, 2026",
-      "description": "The 41-year-old senior soldier is accused of national security offences and is being questioned in London."
-    },
-    {
       "title": "'If I tell you to run, run': BBC joins a Ukrainian drone unit as it protects a front-line city",
       "url": "https://www.bbc.co.uk/news/videos/cm2l4l59gjp7o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 10, 2026",
@@ -3280,6 +3213,18 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Rubio backs blockade, Vance wants deal: Is Trump’s team split on Iran war?",
+      "url": "https://www.aljazeera.com/news/2026/11/11/is-trump-team-split-on-iran?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "Torn between military action and diplomacy, US appears to settle for drawn-out economic pressure campaign, blockade."
+    },
+    {
+      "title": "Russia-Ukraine talks in Abu Dhabi end with prisoner exchange agreement",
+      "url": "https://www.aljazeera.com/news/2026/11/11/russia-ukraine-talks-in-abu-dhabi-end-with-prisoner-exchange-agreement?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "The talks in the UAE capital were the first ⁠between the two warring sides since February."
+    },
     {
       "title": "US soldier arrested for Russia spying: What we know",
       "url": "https://www.aljazeera.com/news/2026/11/11/us-soldier-arrested-for-russia-spying-what-we-know?traffic_source=rss",
@@ -3297,30 +3242,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/11/us-treasury-chief-bessent-moved-to-military-base-after-iranian-threats?traffic_source=rss",
       "date": "November 11, 2026",
       "description": "Iran is said to have geo-located Bessent's $12.5m mansion in Washington, DC after a photo of it was published."
-    },
-    {
-      "title": "Gaza Grad: A Palestinian-Russian family’s longing for home",
-      "url": "https://www.aljazeera.com/video/al-jazeera-world/2026/11/11/gaza-grad-a-palestinian-russian-familys-longing-for-home?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "Forced from Gaza, a Palestinian-Russian family rebuilds their lives across Russia and Egypt, longing to return home."
-    },
-    {
-      "title": "What do Kyiv residents think about giving up territory to Russia?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/11/what-do-kyiv-residents-think-about-giving-up-territory-to-russia?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "US President Donald Trump says post-war Ukraine will have a 'different shape' ahead of peace talks in Abu Dhabi."
-    },
-    {
-      "title": "Putin is not ready to make peace in Abu Dhabi",
-      "url": "https://www.aljazeera.com/opinions/2026/11/11/putin-is-not-ready-to-make-peace-in-abu-dhabi?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "The Russian leader still believes he can outlast Western support for Ukraine."
-    },
-    {
-      "title": "Iran denies talks with US, says Hormuz will stay shut until demands are met",
-      "url": "https://www.aljazeera.com/news/2026/11/11/iran-denies-talks-with-us-says-hormuz-will-stay-shut-until-demands-are-met?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "Mohsen Rezaei's comments come as the IRGC said at least three ships had hit mines and caught fire in the Hormuz strait."
     }
   ],
   "occNews": [
@@ -3424,10 +3345,10 @@
   ],
   "regionsNews": [
     {
-      "title": "US House blocks bid to impeach Defence Secretary Pete Hegseth, for now",
-      "url": "https://www.bbc.co.uk/news/articles/cxly4y5jzl0qo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Spain sees widespread disruption in first general strike for 14 years",
+      "url": "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 11, 2026",
-      "description": "Trump welcomes the outcome, praising Hegseth as a \"Great American Patriot\", but Democrats can try again next year."
+      "description": "Protests are also expected in the biggest cities less than three weeks before Spaniards vote in parliamentary elections."
     },
     {
       "title": "Hundreds of Italian schools hit by threats in suspected bomb hoax",
@@ -3436,10 +3357,22 @@
       "description": "Emails containing the false warnings were sent to schools in Rome, Naples, Vicenza, Florence, Pisa, Trieste and other Italian cities, officials say."
     },
     {
-      "title": "Meghan's father Thomas Markle back in federal custody after allegedly removing ankle monitor",
-      "url": "https://www.bbc.co.uk/news/articles/c9j3433zy4vro?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Kidnapper, 74, escapes from house arrest in Argentina by abseiling from balcony",
+      "url": "https://www.bbc.co.uk/news/articles/c933gn6710lyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 11, 2026",
-      "description": "The 82-year-old was placed under house detention in Florida last week after being charged over possession of child sex abuse material."
+      "description": "Leonardo Bertulazzi, a former member of the Marxist guerrilla group the Red Brigades, was about to be extradited to his home country of Italy."
+    },
+    {
+      "title": "Four grizzly bears killed in Canada after fatal attack on mother and daughter",
+      "url": "https://www.bbc.co.uk/news/articles/cwg5r8zrm11mo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 11, 2026",
+      "description": "The sow and her three cubs were responsible for killing Jennifer Balcarras, 48, and her daughter Selah Reed, 20, earlier this month."
+    },
+    {
+      "title": "US House blocks bid to impeach Defence Secretary Pete Hegseth",
+      "url": "https://www.bbc.co.uk/news/articles/cxly4y5jzl0qo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 11, 2026",
+      "description": "Trump welcomes the outcome, praising Hegseth as a \"Great American Patriot\", but Democrats can try again next year."
     },
     {
       "title": "Vinícius Jr sends message to Sudan boy who received prosthetic legs after BBC report sparks appeal",
@@ -3448,16 +3381,22 @@
       "description": "Double amputee Zaher told the BBC last year about his favourite footballer and a dream of being able to walk again."
     },
     {
-      "title": "Haitian PM praises El Salvador after joint strike on alleged home of gang leader",
-      "url": "https://www.bbc.co.uk/news/articles/cmvg2xdwnwezo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 11, 2026",
-      "description": "The 400 Mawozo gang was targeted by El Salvador's military, which has deployed thousands of troops to combat Haiti's gang violence crisis."
-    },
-    {
       "title": "Kenya discharges last Ebola patient in major milestone towards virus-free status",
       "url": "https://www.bbc.co.uk/news/articles/cwe9kzv0g0v7o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 11, 2026",
       "description": "The country begins a 42-day countdown to being declared Ebola-free, provided no new cases are recorded."
+    },
+    {
+      "title": "Meghan's father Thomas Markle back in federal custody after allegedly removing ankle monitor",
+      "url": "https://www.bbc.co.uk/news/articles/c9j3433zy4vro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 11, 2026",
+      "description": "The 82-year-old was placed under house detention in Florida last week after being charged over possession of child sex abuse material."
+    },
+    {
+      "title": "Haitian PM praises El Salvador after joint strike on alleged home of gang leader",
+      "url": "https://www.bbc.co.uk/news/articles/cmvg2xdwnwezo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 11, 2026",
+      "description": "The 400 Mawozo gang was targeted by El Salvador's military, which has deployed thousands of troops to combat Haiti's gang violence crisis."
     },
     {
       "title": "Kennedys sue to block Trump's arch, arguing it would cast shadow on JFK's grave",
@@ -3472,12 +3411,6 @@
       "description": "Hundreds of bus and lorry drivers are blocking traffic along major highway routes across the country."
     },
     {
-      "title": "Judge allows Trump's $10bn defamation case against BBC to proceed",
-      "url": "https://www.bbc.co.uk/news/articles/cm93rpy6lx0do?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 11, 2026",
-      "description": "But the court dismisses the other part of Trump's lawsuit that alleged the BBC had violated a Florida law."
-    },
-    {
       "title": "Egyptian journalist's retrial adjourned as UN warns of 'assaults on press freedom'",
       "url": "https://www.bbc.co.uk/news/articles/cmkg5jr59835o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 11, 2026",
@@ -3488,12 +3421,6 @@
       "url": "https://www.bbc.co.uk/sport/swimming/articles/cmx27n60n3wno?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 11, 2026",
       "description": "Tatjana Smith, South Africa's most decorated Olympian, switches allegiance to the Netherlands."
-    },
-    {
-      "title": "Eswatini gives illegal foreign businesses 12 months to leave",
-      "url": "https://www.bbc.co.uk/news/articles/cm4gnq2pw2kro?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 11, 2026",
-      "description": "The law follows the growth of foreign-owned businesses in retail sector in rural areas."
     },
     {
       "title": "Watch: Vinícius Jr's surprise message to boy who received prosthetic legs after Sudan drone strike",
@@ -3772,6 +3699,12 @@
       "description": "Will farmers want AI tools to help judge when to pick fruit, or is their own intuition enough?"
     },
     {
+      "title": "Spain sees widespread disruption in first general strike for 14 years",
+      "url": "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 11, 2026",
+      "description": "Protests are also expected in the biggest cities less than three weeks before Spaniards vote in parliamentary elections."
+    },
+    {
       "title": "What are cold weather payments and who can get them?",
       "url": "https://www.bbc.co.uk/news/articles/c87470q4w21o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 11, 2026",
@@ -3794,12 +3727,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cmewewgvrwpqo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 10, 2026",
       "description": "A majority of 49 to 24 assembly members backed the legislation, which was proposed by Sinn Féin's Danny Baker and welcomed by some parents and charities."
-    },
-    {
-      "title": "Some pupils 'struggling just to get a hot meal'",
-      "url": "https://www.bbc.co.uk/news/articles/c9m262yv6yx8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 10, 2026",
-      "description": "Students speak out as school dinner prices are set to increase for the second time in a year."
     },
     {
       "title": "My hometown shows that high streets have to change or die",
@@ -3848,6 +3775,42 @@
       "url": "https://www.bbc.co.uk/news/videos/cxnv0455zq5jo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 7, 2026",
       "description": "Fans and players are delighted at the new \"activation space\" in the town centre."
+    },
+    {
+      "title": "South Africans divided over Olympic swimmer’s switch to Netherlands",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/11/south-africans-divided-over-olympic-swimmers-switch-to-netherlands-2?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "South Africa’s most decorated Olympian is switching nations to swim for the Netherlands."
+    },
+    {
+      "title": "‘Our neighbours are gone’: Gaza survivors recount horrors of deadly floods",
+      "url": "https://www.aljazeera.com/features/2026/11/11/as-gaza-flood-waters-subside-palestinians-assess-human-and-material-damage?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "A deadly sandbank collapse buried families alive in Deir el-Balah, as survivors describe desperate rescue attempts."
+    },
+    {
+      "title": "Why is Pochettino the favourite to replace Carrick at Manchester United?",
+      "url": "https://www.aljazeera.com/sports/2026/11/11/why-is-pochettino-the-favourite-to-replace-carrick-at-manchester-united?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "What would Mauricio Pochettino bring to the job if he replaces Michael Carrick in the Old Trafford hot seat?"
+    },
+    {
+      "title": "Trump ‘Foot Soldier’ statue mocks his Vietnam draft deferment",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/11/trump-foot-soldier-statue-mocks-his-vietnam-draft-deferment?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "An anonymous art collective called Secret Handshake has installed a golden statue of US President Donald Trump."
+    },
+    {
+      "title": "At least 300 schools evacuated in Italy after email bomb alerts",
+      "url": "https://www.aljazeera.com/news/2026/11/11/at-least-300-italian-schools-evacuated-after-email-bomb-alerts?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "Italian PM Meloni says there is no danger as UK and Northern Ireland authorities also report 'bogus' alerts."
+    },
+    {
+      "title": "US man convicted after admitting he dismembered wife but denies killing her",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/11/us-man-convicted-after-admitting-he-dismembered-wife-but-denies-killing-her?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "A Virginia man has been convicted of murdering his wife, more than two years after she went missing."
     },
     {
       "title": "‘Climate crisis is outrunning us,’ UN chief Guterres says at COP31",
@@ -3932,30 +3895,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/11/pakistans-pti-demands-access-to-jailed-khan-after-overnight-hospital-visit?traffic_source=rss",
       "date": "November 11, 2026",
       "description": "Former Prime Minister Imran Khan ⁠is taken ⁠to a government hospital in Islamabad for treatment and returned to prison."
-    },
-    {
-      "title": "US embassy refutes Houthis’ Yemen blockade claims, highlights siege on Taiz",
-      "url": "https://www.aljazeera.com/news/2026/11/11/us-embassy-refutes-houthis-yemen-blockade-claims-highlights-siege-on-taiz?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "US embassy says goods still flowing into Yemeni areas under Houthi control, while accusing the rebels of besieging Taiz."
-    },
-    {
-      "title": "How are Pakistan’s imports from India growing again despite tensions?",
-      "url": "https://www.aljazeera.com/news/2026/11/11/how-are-pakistans-imports-from-india-growing-again-despite-tensions?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "Formally, they're not trading at all. But Pakistan's imports from India are back to pre-war levels. Is a thaw next?"
-    },
-    {
-      "title": "Why China’s $1 trillion trade surplus isn’t all good news for its economy",
-      "url": "https://www.aljazeera.com/economy/2026/11/11/why-chinas-1-trillion-trade-surplus-isnt-all-good-news-for-its-economy?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "Booming exports mask a thriftiness among the Chinese that could undermine long-term growth."
-    },
-    {
-      "title": "Students run for safety after fireworks set off inside French school",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/11/students-run-for-safety-after-fireworks-set-off-inside-french-school?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "Video captures the moment students and staff ran for safety as fireworks were set off along a school corridor in France."
     }
   ]
 }
