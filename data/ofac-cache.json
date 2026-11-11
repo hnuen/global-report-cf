@@ -1,6 +1,67 @@
 {
-  "updatedAt": "2026-11-11T15:08:18.278Z",
-  "recentActions": [],
+  "updatedAt": "2026-11-11T17:08:18.837Z",
+  "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261109",
+      "code": "20261109",
+      "title": "Iran Designation Update",
+      "date": "November 09, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261106",
+      "code": "20261106",
+      "title": "Iran-related Designations",
+      "date": "November 06, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261105",
+      "code": "20261105",
+      "title": "Cyber-related and Transnational Criminal Organizations Designations; Cuba Designations; Publication of Cuba-related Determination",
+      "date": "November 05, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261104",
+      "code": "20261104",
+      "title": "Iran-related Designations; Updates to Certain Iran-related Listings; Publication of Iran-related OFAC Alert; Issuance of Amended Venezuela-related General License and Frequently Asked Question",
+      "date": "November 04, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261029",
+      "code": "20261029",
+      "title": "Issuance of Amended Iran-related General License",
+      "date": "October 29, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261028",
+      "code": "20261028",
+      "title": "North Korea Designations; Democratic Republic of the Congo-related Designations",
+      "date": "October 28, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261027",
+      "code": "20261027",
+      "title": "Settlement Agreement between the U.S. Department of the Treasury&#039;s Office of Foreign Assets Control and Extreme Networks, Inc.",
+      "date": "October 27, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261026",
+      "code": "20261026",
+      "title": "Issuance of Amended Frequently Asked Questions Regarding Blocking and Rejecting Transactions and Filing Reports with OFAC",
+      "date": "October 26, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261021",
+      "code": "20261021",
+      "title": "Iran-related Designations; Belarus and North Korea Designations Removals; Issuance of Iran-related and Russia-related General Licenses and Amended Frequently Asked Questions",
+      "date": "October 21, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261019",
+      "code": "20261019",
+      "title": "Protecting American Intellectual Property Act of 2022 (PAIPA) Designations; Issuance of Associated General Licenses",
+      "date": "October 19, 2026"
+    }
+  ],
   "civilPenalties": [
     {
       "date": "10/27/2026",
@@ -3188,16 +3249,16 @@
   "unNotices": [],
   "bbcNews": [
     {
+      "title": "Russia-Ukraine talks turn to post-war security but end without breakthrough",
+      "url": "https://www.bbc.co.uk/news/articles/ck792we7zrz4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 11, 2026",
+      "description": "Talks in Abu Dhabi centred around Europe's security framework, with US envoys due to meet Putin and Zelensky on Thursday."
+    },
+    {
       "title": "Three Iran-backed suspects plotted attacks including RAF Fairford incident, US says",
       "url": "https://www.bbc.co.uk/news/articles/c3rryrryk59zo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 11, 2026",
       "description": "The US Department of Justice says the men were involved in a string of plots, including a major incident near the UK airbase that is used by US armed forces."
-    },
-    {
-      "title": "US warns Madagascar over growing military ties with Russia",
-      "url": "https://www.bbc.co.uk/news/articles/crkgv58pknyeo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 11, 2026",
-      "description": "US general warns the Sahel model-like security deal with Russia could lead to greater instability in Africa."
     },
     {
       "title": "'If I tell you to run, run': BBC joins a Ukrainian drone unit as it protects a front-line city",
@@ -3213,6 +3274,30 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Russia-Ukraine talks in UAE secure major prisoner exchange deal",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/11/russia-ukraine-talks-in-uae-secure-major-prisoner-exchange-deal?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "Russia and Ukraine have agreed to a major prisoner exchange following two days of US-mediated talks in Abu Dhabi"
+    },
+    {
+      "title": "Russia bans two French lawmakers, two journalists in tit-for-tat move",
+      "url": "https://www.aljazeera.com/news/2026/11/11/russia-bans-two-french-lawmakers-two-journalists-in-tit-for-tat-move?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "Kremlin spokeswoman says ban responds to the expulsion of a Russian commentator who used to head RT France."
+    },
+    {
+      "title": "Can Tehran survive a ‘zero oil’ budget, if US blockade on Iran persists?",
+      "url": "https://www.aljazeera.com/economy/2026/11/11/can-tehran-survive-a-zero-oil-budget-if-us-blockade-on-iran-persists?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "The government is defiant and planning for the worst, but a US siege is expected to make most Iranians poorer."
+    },
+    {
+      "title": "Bessent’s relocation: From US to EU, is Iran bringing war to Western soil?",
+      "url": "https://www.aljazeera.com/news-analysis/2026/11/11/bessents-relocation-from-us-to-eu-is-iran-bringing-war-to-western-soil?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "A deliberate expansion of Iran’s campaign of retaliation beyond the Middle East could be taking place, said an expert."
+    },
     {
       "title": "Rubio backs blockade, Vance wants deal: Is Trump’s team split on Iran war?",
       "url": "https://www.aljazeera.com/news/2026/11/11/is-trump-team-split-on-iran?traffic_source=rss",
@@ -3236,12 +3321,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/11/whats-northern-europes-new-drones-and-warships-plan-to-counter-russia?traffic_source=rss",
       "date": "November 11, 2026",
       "description": "UK-led coalition of 10 Northern European nations announces joint defence framework amid rising threats from Moscow."
-    },
-    {
-      "title": "US Treasury chief Bessent moved to military base after ‘Iranian threats’",
-      "url": "https://www.aljazeera.com/news/2026/11/11/us-treasury-chief-bessent-moved-to-military-base-after-iranian-threats?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "Iran is said to have geo-located Bessent's $12.5m mansion in Washington, DC after a photo of it was published."
     }
   ],
   "occNews": [
@@ -3351,10 +3430,16 @@
       "description": "Protests are also expected in the biggest cities less than three weeks before Spaniards vote in parliamentary elections."
     },
     {
-      "title": "Hundreds of Italian schools hit by threats in suspected bomb hoax",
+      "title": "US Treasury Secretary Scott Bessent relocated after alleged Iranian threats",
+      "url": "https://www.bbc.co.uk/news/articles/cqr7gr0010r2o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 11, 2026",
+      "description": "Bessent is now one of several Trump administration officials to live on military bases due to safety concerns."
+    },
+    {
+      "title": "Schools in Italy, Scotland and Northern Ireland hit by threats in suspected bomb hoax",
       "url": "https://www.bbc.co.uk/news/articles/cwz0k79pr8z2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 11, 2026",
-      "description": "Emails containing the false warnings were sent to schools in Rome, Naples, Vicenza, Florence, Pisa, Trieste and other Italian cities, officials say."
+      "description": "More than 6,000 Italian schools received a threat. Authorities in all three countries say there appears to be no risk to the public. It is not known if the incidents are linked."
     },
     {
       "title": "Kidnapper, 74, escapes from house arrest in Argentina by abseiling from balcony",
@@ -3369,12 +3454,6 @@
       "description": "The sow and her three cubs were responsible for killing Jennifer Balcarras, 48, and her daughter Selah Reed, 20, earlier this month."
     },
     {
-      "title": "US House blocks bid to impeach Defence Secretary Pete Hegseth",
-      "url": "https://www.bbc.co.uk/news/articles/cxly4y5jzl0qo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 11, 2026",
-      "description": "Trump welcomes the outcome, praising Hegseth as a \"Great American Patriot\", but Democrats can try again next year."
-    },
-    {
       "title": "Vinícius Jr sends message to Sudan boy who received prosthetic legs after BBC report sparks appeal",
       "url": "https://www.bbc.co.uk/news/articles/cqm26mmpp2p1o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 11, 2026",
@@ -3387,22 +3466,10 @@
       "description": "The country begins a 42-day countdown to being declared Ebola-free, provided no new cases are recorded."
     },
     {
-      "title": "Meghan's father Thomas Markle back in federal custody after allegedly removing ankle monitor",
-      "url": "https://www.bbc.co.uk/news/articles/c9j3433zy4vro?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Egyptian journalist's retrial adjourned as UN warns of 'assaults on press freedom'",
+      "url": "https://www.bbc.co.uk/news/articles/cmkg5jr59835o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 11, 2026",
-      "description": "The 82-year-old was placed under house detention in Florida last week after being charged over possession of child sex abuse material."
-    },
-    {
-      "title": "Haitian PM praises El Salvador after joint strike on alleged home of gang leader",
-      "url": "https://www.bbc.co.uk/news/articles/cmvg2xdwnwezo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 11, 2026",
-      "description": "The 400 Mawozo gang was targeted by El Salvador's military, which has deployed thousands of troops to combat Haiti's gang violence crisis."
-    },
-    {
-      "title": "Kennedys sue to block Trump's arch, arguing it would cast shadow on JFK's grave",
-      "url": "https://www.bbc.co.uk/news/articles/cw8dvpmzp2p4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 11, 2026",
-      "description": "Nine members of the political dynasty say the 250ft structure would cast a shadow on gravesites."
+      "description": "Mada Masr editor-in-chief Lina Attalah is being tried on the charge of \"publishing false news\" and potentially faces imprisonment."
     },
     {
       "title": "Transport workers in Chile block highways in protest over surging fuel prices",
@@ -3411,16 +3478,22 @@
       "description": "Hundreds of bus and lorry drivers are blocking traffic along major highway routes across the country."
     },
     {
-      "title": "Egyptian journalist's retrial adjourned as UN warns of 'assaults on press freedom'",
-      "url": "https://www.bbc.co.uk/news/articles/cmkg5jr59835o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Indonesia's vice president resigns amid signs ruling alliance is fraying",
+      "url": "https://www.bbc.co.uk/news/articles/cmvgxgz87qqro?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 11, 2026",
-      "description": "Mada Masr editor-in-chief Lina Attalah is being tried on the charge of \"publishing false news\" and potentially faces imprisonment."
+      "description": "The news comes at a turbulent time for Prabowo, who faces a growing rift with his predecessor Joko Widodo."
     },
     {
-      "title": "Tearful Smith switches allegiance to Netherlands",
-      "url": "https://www.bbc.co.uk/sport/swimming/articles/cmx27n60n3wno?at_medium=RSS&amp;at_campaign=rss",
+      "title": "US House blocks bid to impeach Defence Secretary Pete Hegseth",
+      "url": "https://www.bbc.co.uk/news/articles/cxly4y5jzl0qo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 11, 2026",
-      "description": "Tatjana Smith, South Africa's most decorated Olympian, switches allegiance to the Netherlands."
+      "description": "Trump welcomes the outcome, praising Hegseth as a \"Great American Patriot\", but Democrats can try again next year."
+    },
+    {
+      "title": "Haitian PM praises El Salvador after joint strike on alleged home of gang leader",
+      "url": "https://www.bbc.co.uk/news/articles/cmvg2xdwnwezo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 11, 2026",
+      "description": "The 400 Mawozo gang was targeted by El Salvador's military, which has deployed thousands of troops to combat Haiti's gang violence crisis."
     },
     {
       "title": "Watch: Vinícius Jr's surprise message to boy who received prosthetic legs after Sudan drone strike",
@@ -3699,6 +3772,18 @@
       "description": "Will farmers want AI tools to help judge when to pick fruit, or is their own intuition enough?"
     },
     {
+      "title": "Workers across Spain stage first general strike in 14 years",
+      "url": "https://www.bbc.co.uk/news/videos/c920xlpdl28eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 11, 2026",
+      "description": "People across Spain are striking, primarily over housing costs."
+    },
+    {
+      "title": "Protesters gather in Spain for first general strike in 14 years",
+      "url": "https://www.bbc.co.uk/news/videos/cwj0587gde88o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 11, 2026",
+      "description": "Thousands are protesting across Spain over housing and the high cost of living."
+    },
+    {
       "title": "Spain sees widespread disruption in first general strike for 14 years",
       "url": "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 11, 2026",
@@ -3715,18 +3800,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cx5ynyg6j375o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 11, 2026",
       "description": "A bumper year so far for toy sales comes as debate intensifies over screen time and tech connectivity."
-    },
-    {
-      "title": "Electricity bills to rise by 2.5% from March",
-      "url": "https://www.bbc.co.uk/news/articles/c6x292elgnm5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 11, 2026",
-      "description": "The increase will add just over £1 per week for a typical all-electric home, Jersey Electricity says."
-    },
-    {
-      "title": "Law on 'holiday hunger' passed by Stormont assembly",
-      "url": "https://www.bbc.co.uk/news/articles/cmewewgvrwpqo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 10, 2026",
-      "description": "A majority of 49 to 24 assembly members backed the legislation, which was proposed by Sinn Féin's Danny Baker and welcomed by some parents and charities."
     },
     {
       "title": "My hometown shows that high streets have to change or die",
@@ -3759,6 +3832,12 @@
       "description": "Many younger people do not believe the state pension will exist when they are older"
     },
     {
+      "title": "Poundland founder writes to King for help",
+      "url": "https://www.bbc.co.uk/news/videos/cm4gndjd4nnno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 11, 2026",
+      "description": "Poundland has filed a notice of intention to appoint administrators, which protects it from creditors until Thursday."
+    },
+    {
       "title": "The Global Story",
       "url": "https://www.bbc.co.uk/sounds/play/w3ct8mlr?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 11, 2026",
@@ -3771,10 +3850,52 @@
       "description": "Business correspondent Emma Simpson tries out Sainsbury's facial recognition technology."
     },
     {
-      "title": "Ipswich Town's new club shop 'here to stay'",
-      "url": "https://www.bbc.co.uk/news/videos/cxnv0455zq5jo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 7, 2026",
-      "description": "Fans and players are delighted at the new \"activation space\" in the town centre."
+      "title": "Palestinian American activist refused UK entry for Gaza fundraiser",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/11/palestinian-american-activist-refused-uk-entry-for-gaza-fundraiser?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "A Palestinian American activist has been refused entry to the UK to attend his charity’s annual Gaza fundraiser."
+    },
+    {
+      "title": "Israeli army kills Palestinian footballer Mahmoud Kamal Abdel-Malek in Gaza",
+      "url": "https://www.aljazeera.com/sports/2026/11/11/israeli-army-kills-palestinian-footballer-mahmoud-kamal-abdel-malek-in-gaza?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "Abdel-Malek, the captain and goalkeeper of Gaza Sports Club, recently played in the Thousand Martyrs Cup final."
+    },
+    {
+      "title": "‘It’s just too expensive’: Housing and wages at the heart of Spain’s strike",
+      "url": "https://www.aljazeera.com/news/2026/11/11/its-just-too-expensive-housing-and-wages-at-the-heart-of-spains-strike?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "Mass walkout across several cities marks first general strike in 14 years."
+    },
+    {
+      "title": "Israel is ‘disrupting entire ecosystems’, including Lebanon’s wheat crop",
+      "url": "https://www.aljazeera.com/news/2026/11/11/israel-is-disrupting-entire-ecosystems-including-lebanons-wheat-crop?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "Lebanese wheat production hit by war as farmlands face severe destruction in the south and Bekaa Valley."
+    },
+    {
+      "title": "Kenya discharges last Ebola patient, awaits disease-free status",
+      "url": "https://www.aljazeera.com/news/2026/11/11/kenya-discharges-last-ebola-patient?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "Health Minister Aden Duale says Kenya will continue to exercise prevention measures until December 23."
+    },
+    {
+      "title": "Inside the fight against Denmark’s ‘straight up racist’ housing law",
+      "url": "https://www.aljazeera.com/features/2026/11/11/they-see-me-as-non-western-top-court-to-rule-on-denmarks-housing-law?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "Residents say Denmark’s ‘ghetto law’ is breaking up strong communities, as the Supreme Court prepares to rule."
+    },
+    {
+      "title": "Qatar Grand Prix was ‘right decision’ despite regional tensions: MotoGP",
+      "url": "https://www.aljazeera.com/sports/2026/11/11/motogp-carlos-ezpeleta-deputy-ceo-qatar-grand-prix-yamaha-iran-war?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "MotoGP chief says 'it was normal that the riders showed their concerns' but was surprised at Yamaha's ⁠⁠⁠⁠withdrawal."
+    },
+    {
+      "title": "Italy vs France: UEFA Nations League – preview, team news, predictions",
+      "url": "https://www.aljazeera.com/sports/2026/11/11/italy-vs-france-uefa-nations-league-preview-team-news?traffic_source=rss",
+      "date": "November 11, 2026",
+      "description": "Kylian Mbappe 'under treatment' as Group A1 leaders France travel to Italy for a game at the San Siro, Milan."
     },
     {
       "title": "South Africans divided over Olympic swimmer’s switch to Netherlands",
@@ -3795,13 +3916,7 @@
       "description": "What would Mauricio Pochettino bring to the job if he replaces Michael Carrick in the Old Trafford hot seat?"
     },
     {
-      "title": "Trump ‘Foot Soldier’ statue mocks his Vietnam draft deferment",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/11/trump-foot-soldier-statue-mocks-his-vietnam-draft-deferment?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "An anonymous art collective called Secret Handshake has installed a golden statue of US President Donald Trump."
-    },
-    {
-      "title": "At least 300 schools evacuated in Italy after email bomb alerts",
+      "title": "Schools across Italy evacuated after receiving email bomb alerts",
       "url": "https://www.aljazeera.com/news/2026/11/11/at-least-300-italian-schools-evacuated-after-email-bomb-alerts?traffic_source=rss",
       "date": "November 11, 2026",
       "description": "Italian PM Meloni says there is no danger as UK and Northern Ireland authorities also report 'bogus' alerts."
@@ -3835,66 +3950,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/11/rights-group-raises-concerns-about-jailed-dr-abu-safia-amid-strikes-on-gaza?traffic_source=rss",
       "date": "November 11, 2026",
       "description": "PHRI says the arbitrary detention of Gaza doctors violates individual rights and undermines healthcare system."
-    },
-    {
-      "title": "Passenger train derails in India, leaving several injured",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/11/passenger-train-derails-in-india-leaving-several-injured?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "Video from inside the driver’s cabin captured the moment a train derailed in India’s Assam state."
-    },
-    {
-      "title": "Man City whistleblower Rui Pinto could help UK uncover more sporting crime",
-      "url": "https://www.aljazeera.com/sports/2026/11/11/man-city-whistleblower-rui-pinto-could-help-uk-uncover-more-sporting-crime?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "Rui Pinto is 'in talks' with UK authorities to help uncover more crime in exchange for police protection, reports say."
-    },
-    {
-      "title": "Israel kills Gaza goalkeeper days after playing in cup for slain athletes",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/11/israel-kills-gaza-goalkeeper-days-after-playing-in-cup-for-slain-athletes?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "Mahmoud Abdel-Malek, a 20-year-old goalkeeper for Gaza Sports Club, was killed in an Israeli airstrike on Gaza City."
-    },
-    {
-      "title": "Did Democrats save Pete Hegseth from impeachment?",
-      "url": "https://www.aljazeera.com/news/2026/11/11/did-democrats-save-pete-hegseth-from-impeachment?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "Eleven Democrats are absent from procedural vote that narrowly shelves House impeachment vote against defence secretary."
-    },
-    {
-      "title": "AI boom or bubble?",
-      "url": "https://www.aljazeera.com/video/counting-the-cost/2026/11/11/ai-boom-or-bubble?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "A tech sell-off has raised questions about AI spending and the risks to jobs and growth across the global economy."
-    },
-    {
-      "title": "What’s the Falklands oil project at the heart of latest UK-Argentina spat?",
-      "url": "https://www.aljazeera.com/news/2026/11/11/whats-the-falklands-oil-project-at-the-heart-of-latest-uk-argentina-spat?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "UK says it will defend its interests at tribunal hearing, as Argentina seeks measures to block the offshore project."
-    },
-    {
-      "title": "Workers across Spain stage first general strike in 14 years",
-      "url": "https://www.aljazeera.com/news/2026/11/11/spains-first-general-strike-in-14-years-begins?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "Strike disrupts public transport and industries amid demands for housing reform ahead of November 29 elections."
-    },
-    {
-      "title": "Gaza’s infrastructure collapse leaves residents defenceless against floods",
-      "url": "https://www.aljazeera.com/news/2026/11/11/gaza-infrastructure-collapse-leaves-residents-defenceless-against-floods?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "Winter weather has continued to wreak havoc in Gaza, with flooding and strong winds."
-    },
-    {
-      "title": "Pakistan women’s captain Fatima Sana calls for gender equality in cricket",
-      "url": "https://www.aljazeera.com/sports/2026/11/11/fatima-sana-pakistan-cricket-equal-treatment-wbbl-perth-scorchers?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "Fatima Sana 'dreams of a time' when the men's and women's cricket teams are treated as equals."
-    },
-    {
-      "title": "Pakistan’s PTI demands access to jailed Khan after overnight hospital visit",
-      "url": "https://www.aljazeera.com/news/2026/11/11/pakistans-pti-demands-access-to-jailed-khan-after-overnight-hospital-visit?traffic_source=rss",
-      "date": "November 11, 2026",
-      "description": "Former Prime Minister Imran Khan ⁠is taken ⁠to a government hospital in Islamabad for treatment and returned to prison."
     }
   ]
 }
