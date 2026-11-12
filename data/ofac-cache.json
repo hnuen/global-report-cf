@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T19:08:20.196Z",
+  "updatedAt": "2026-11-12T21:08:20.149Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261109",
@@ -3248,6 +3248,12 @@
   ],
   "unNotices": [
     {
+      "title": "Security Council, 10270th Meeting (PM) Yemen Sanctions",
+      "url": "https://press.un.org/en/blog/sc16508",
+      "date": "November 12, 2026",
+      "description": "This afternoon, the Security Council will vote on a draft resolution renewing the 2140 Yemen sanctions regime for another year until 14 November 2027, also extending the mandate of the Panel of Experts supporting the 2140 Yemen Sanctions Committee until 15 December 2027."
+    },
+    {
       "title": "Security Council 1533 Sanctions Committee Amends One Entity on Its Sanctions List",
       "url": "https://press.un.org/en/2026/sc16506.doc.htm",
       "date": "November 11, 2026",
@@ -3256,10 +3262,10 @@
   ],
   "bbcNews": [
     {
-      "title": "'We've got to run': Inside ruined Ukraine power plant under constant drone threat",
-      "url": "https://www.bbc.co.uk/news/videos/cm93rp3gxn6qo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Russian warship hit by Ukrainian drone in Gulf of Finland",
+      "url": "https://www.bbc.co.uk/news/articles/cmn0d33zz34zo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 12, 2026",
-      "description": "Dan Johnson visits one of the country's largest power stations, barely left standing after a ballistic missile strike by Russia."
+      "description": "The attack is thought to be the first time Ukrainian drones have attacked a Russian ship in an open stretch of the Baltic Sea."
     },
     {
       "title": "'We've got to run': Inside ruined Ukraine power plant under constant drone threat",
@@ -3270,22 +3276,16 @@
   ],
   "ajNews": [
     {
+      "title": "US releases report on $12bn from Venezuelan oil, mineral resources",
+      "url": "https://www.aljazeera.com/news/2026/11/12/us-releases-report-on-12bn-from-venezuelan-oil-mineral-resources?traffic_source=rss",
+      "date": "November 12, 2026",
+      "description": "The report seeks to address concerns about the Trump administration's handling of revenue held in trust for Venezuela."
+    },
+    {
       "title": "BDS claims win as energy giants quit Israeli gas project off Gaza",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/bds-claims-win-as-energy-giants-quit-israeli-gas-project-off-gaza?traffic_source=rss",
       "date": "November 12, 2026",
       "description": "The Boycott, Divest and Sanctions movement is claiming victory after a company left an Israeli-led gas project off Gaza."
-    },
-    {
-      "title": "UK court finds two Iranian men guilty of spying for Iran",
-      "url": "https://www.aljazeera.com/news/2026/11/12/uk-court-finds-two-iranian-men-guilty-of-spying-for-iran?traffic_source=rss",
-      "date": "November 12, 2026",
-      "description": "The pair were promised rewards to send intelligence back to Iran, while one was prepared to commit a 'violent attack'."
-    },
-    {
-      "title": "‘No war, no peace’: Can Iran break the deadlock with the US?",
-      "url": "https://www.aljazeera.com/news/2026/11/12/no-war-no-peace-can-iran-break-the-deadlock-with-the-us?traffic_source=rss",
-      "date": "November 12, 2026",
-      "description": "Sustainable stalemate or slow-motion strangulation? The current 'equilibrium' is inherently unstable, experts say."
     }
   ],
   "occNews": [
@@ -3294,12 +3294,6 @@
       "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-93.html",
       "date": "October 22, 2026",
       "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for October 2026."
-    },
-    {
-      "title": "OCC Imposes $750 Million Assessment Against Bank of America for Deficient BSA/AML Compliance",
-      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-89.html",
-      "date": "October 13, 2026",
-      "description": "The Office of the Comptroller of the Currency (OCC) today announced a $750 million civil money penalty against Bank of America, N.A. (bank), for violations of the Bank Secrecy Act and its implementing regulations, including 12 CFR 21.21 and 12 CFR 21.11. This amount is the largest in OCC history."
     }
   ],
   "economicsNews": [
@@ -3516,18 +3510,6 @@
       "description": "The country begins a 42-day countdown to being declared Ebola-free, provided no new cases are recorded."
     },
     {
-      "title": "African writing award probe finds 'no evidence' winning story was AI generated",
-      "url": "https://www.bbc.co.uk/news/articles/cmglr260z7eko?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 11, 2026",
-      "description": "Zimbabwean writer Simbarashe Kundizeza has also vehemently denied the allegation made in a US magazine."
-    },
-    {
-      "title": "Egyptian journalist's retrial adjourned as UN warns of 'assaults on press freedom'",
-      "url": "https://www.bbc.co.uk/news/articles/cmkg5jr59835o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 11, 2026",
-      "description": "Mada Masr editor-in-chief Lina Attalah is being tried on the charge of \"publishing false news\" and potentially faces imprisonment."
-    },
-    {
       "title": "Hegseth and advisers reprimanded by guard at Tomb of the Unknown Soldier",
       "url": "https://www.bbc.co.uk/news/videos/ck5y132yq1ymo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 11, 2026",
@@ -3546,6 +3528,12 @@
       "description": "Within days, Huang's status as a seemingly untouchable figure leading the global tech race has crumbled."
     },
     {
+      "title": "Jensen Huang has resigned, what's next for Nvidia?",
+      "url": "https://www.bbc.co.uk/news/videos/cmdx1r99kp9wo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 12, 2026",
+      "description": "The BBC's Samira Hussain reports from Wall Street on what the fall of the tech superstar means for the company and AI."
+    },
+    {
       "title": "Before Scott Colom, these two men were the last black US senators from Mississippi",
       "url": "https://www.bbc.co.uk/news/articles/cmde1y19g19do?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 12, 2026",
@@ -3562,12 +3550,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c8wy9y37z30vo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 11, 2026",
       "description": "Forecasters warn that this year's El Niño could be one of the strongest on record, with heavy rain and flooding in Kenya."
-    },
-    {
-      "title": "New Indian mega library rocked by scandal over 'AI-generated books'",
-      "url": "https://www.bbc.co.uk/news/articles/c54gne3plvrxo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 11, 2026",
-      "description": "The Tamil Nadu government has ordered an internal audit of library collections across the state."
     },
     {
       "title": "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
@@ -3882,6 +3864,12 @@
       "description": "Many younger people do not believe the state pension will exist when they are older"
     },
     {
+      "title": "Jensen Huang has resigned, what's next for Nvidia?",
+      "url": "https://www.bbc.co.uk/news/videos/c6wy9l859r94o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 12, 2026",
+      "description": "Jensen Huang has resigned from Nvidia as chief financial officer Colette Kress replaces him as an interim boss."
+    },
+    {
       "title": "Are branded cold and flu tablets really worth the extra money?",
       "url": "https://www.bbc.co.uk/news/videos/cw4gnxm0y43po?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 12, 2026",
@@ -3906,10 +3894,70 @@
       "description": "New Shrewsbury Town sporting director Brad Friedel talks exclusively to BBC Radio Shropshire about the club's takeover."
     },
     {
-      "title": "The Global Story",
-      "url": "https://www.bbc.co.uk/sounds/play/w3ct8mlr?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 11, 2026",
-      "description": "Tracking down the men who have made serious money from internet porn."
+      "title": "Pope Leo calls for Church to make ‘amends’ to sex abuse victims",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/pope-leo-calls-for-church-to-make-amends-to-sex-abuse-victims?traffic_source=rss",
+      "date": "November 12, 2026",
+      "description": "Pope Leo XIV says the Catholic Church must confront sexual abuse committed by clergy with truth and justice."
+    },
+    {
+      "title": "What’s at stake in the renewed tensions over the Falkland Islands?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/11/12/whats-at-stake-in-the-renewed-tensions-over-the-falkland-islands?traffic_source=rss",
+      "date": "November 12, 2026",
+      "description": "Argentina and the UK are in a legal battle over an offshore oil-drilling project."
+    },
+    {
+      "title": "Qatar Under-17 World Cup is on despite US pull out",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/qatar-under-17-world-cup-is-on-despite-us-pull-out?traffic_source=rss",
+      "date": "November 12, 2026",
+      "description": "The Under-17 World Cup in Qatar will kick off as scheduled next week despite the United States’ decision to withdraw"
+    },
+    {
+      "title": "Regional security dominates European talks in Dublin amid hybrid attacks",
+      "url": "https://www.aljazeera.com/news/2026/11/12/regional-security-dominates-european-talks-in-dublin-amid-hybrid-attacks?traffic_source=rss",
+      "date": "November 12, 2026",
+      "description": "European nations discuss security collaboration and an envoy for Ukraine peace talks during the summit in Ireland."
+    },
+    {
+      "title": "Democrats gather in Denver to debate party’s future after US midterm wins",
+      "url": "https://www.aljazeera.com/news/2026/11/12/democrats-gather-in-denver-to-debate-partys-future-after-us-midterm-wins?traffic_source=rss",
+      "date": "November 12, 2026",
+      "description": "Majority Democrats’ What’s Next conference brings lawmakers and potential 2028 contenders to Denver."
+    },
+    {
+      "title": "Palestinian baby dies from cold in Gaza amid Israeli restrictions on aid",
+      "url": "https://www.aljazeera.com/news/2026/11/12/palestinian-baby-dies-from-cold-in-gaza-amid-israeli-restrictions-on-aid?traffic_source=rss",
+      "date": "November 12, 2026",
+      "description": "The baby's father said he died of hypothermia overnight in their family's tent in southern Gaza."
+    },
+    {
+      "title": "US nonprofits sue tech giants to halt AI development",
+      "url": "https://www.aljazeera.com/news/2026/11/12/us-nonprofits-sue-tech-giants-to-halt-ai-development?traffic_source=rss",
+      "date": "November 12, 2026",
+      "description": "California lawsuit demands freeze training on 'catastrophic' artificial intelligence models."
+    },
+    {
+      "title": "Why did Nvidia CEO Jensen Huang resign, and who is Colette Kress?",
+      "url": "https://www.aljazeera.com/news/2026/11/12/why-did-nvidia-ceo-jensen-huang-resign-and-who-is-colette-kress?traffic_source=rss",
+      "date": "November 12, 2026",
+      "description": "Huang has stepped down amid revelations about extramarital affairs and allegations of Chinese espionage."
+    },
+    {
+      "title": "Iranian men guilty of spying on British journalists",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/iranian-men-guilty-of-spying-on-british-journalists?traffic_source=rss",
+      "date": "November 12, 2026",
+      "description": "Two Iranian men were convicted under Britain's National Security Act for spying on dissident journalists."
+    },
+    {
+      "title": "Senegal’s wrestlers turn tradition into gold at Dakar Youth Olympics",
+      "url": "https://www.aljazeera.com/sports/2026/11/12/senegals-wrestlers-turn-tradition-into-gold-at-dakar-youth-olympics?traffic_source=rss",
+      "date": "November 12, 2026",
+      "description": "Senegal’s young wrestlers thrive as they adapt skills from their traditional sport to beach wrestling at Youth Olympics."
+    },
+    {
+      "title": "UK mosque rebukes comission’s ‘warning’ following Palestine comments",
+      "url": "https://www.aljazeera.com/news/2026/11/12/uk-mosque-rebukes-comissions-warning-following-palestine-comments?traffic_source=rss",
+      "date": "November 12, 2026",
+      "description": "The Lewisham Islamic Centre accused the charity watchdog of imposing disproportionate expectations on Muslim charities."
     },
     {
       "title": "Pro-Palestine philanthropist faces US extradition hearing in Spain",
@@ -3927,7 +3975,7 @@
       "title": "What to know about the Logan Circle shooting in Washington, DC",
       "url": "https://www.aljazeera.com/news/2026/11/12/what-to-know-about-the-logan-circle-shooting-in-washington-dc?traffic_source=rss",
       "date": "November 12, 2026",
-      "description": "Trump has showcased the capital city as an example of his tough on crime approach."
+      "description": "Trump has showcased the capital city as an example of his tough-on-crime approach."
     },
     {
       "title": "Al Jazeera reports from Gaza hospital attacked by Israel",
@@ -3982,66 +4030,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/four-people-shot-in-washington-dc?traffic_source=rss",
       "date": "November 12, 2026",
       "description": "A major police operation is underway in Washington DC where four people have reportedly been shot"
-    },
-    {
-      "title": "Manchester United sacked manager Michael Carrick",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/manchester-united-sacked-manager-michael-carrick?traffic_source=rss",
-      "date": "November 12, 2026",
-      "description": "Michael Carrick has become the third recent Manchester United manager to be sacked midway through the season."
-    },
-    {
-      "title": "Spain approves housing reforms after nationwide strike over costs",
-      "url": "https://www.aljazeera.com/news/2026/11/12/spain-approves-housing-reforms-after-nationwide-strike-over-costs?traffic_source=rss",
-      "date": "November 12, 2026",
-      "description": "Spanish parliament passes new laws limiting evictions but their duration depends on the upcoming snap election outcome."
-    },
-    {
-      "title": "Trump heads to China amid Nvidia scandal: Will he get tougher on Beijing?",
-      "url": "https://www.aljazeera.com/news/2026/11/12/trump-heads-to-china-amid-nvidia-scandal-will-he-get-tougher-on-beijing?traffic_source=rss",
-      "date": "November 12, 2026",
-      "description": "Outgoing Nvidia chief credited with easing US-China chip ties but personal scandal unlikely to upend next week's talks."
-    },
-    {
-      "title": "LIVE: Jensen Huang resigns as Nvidia CEO as affairs raise security concerns",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/11/12/live-jensen-huang-resigns-as-nvidia-ceo-as-affairs-raise-security-concerns?traffic_source=rss",
-      "date": "November 12, 2026",
-      "description": "Jensen Huang, 63, has resigned as chief executive of AI giant Nvidia, according to the company."
-    },
-    {
-      "title": "Nvidia CEO Jensen Huang resigns",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/nvidia-ceo-jensen-huang-resigns?traffic_source=rss",
-      "date": "November 12, 2026",
-      "description": "Nvidia CEO Jensen Huang has resigned amid reports of a second affair with an executive."
-    },
-    {
-      "title": "Migrant caravan sets out from southern Mexico bound for US after midterms",
-      "url": "https://www.aljazeera.com/news/2026/11/12/migrant-caravan-sets-out-from-southern-mexico-bound-for-us-after-midterms?traffic_source=rss",
-      "date": "November 12, 2026",
-      "description": "Many migrants stranded in southern Mexico say the Democrats' win in Congress has given them new hope of entering the US."
-    },
-    {
-      "title": "‘Horrific crime’: Gaza doctor killed as Israel expands war on healthcare",
-      "url": "https://www.aljazeera.com/news/2026/11/12/horrific-crime-gaza-doctor-killed-as-israel-expands-war-on-healthcare?traffic_source=rss",
-      "date": "November 12, 2026",
-      "description": "Israel's military campaign and mass detentions collapse Palestinian healthcare in Gaza and the West Bank."
-    },
-    {
-      "title": "At least five people shot, one killed, in central Washington, DC",
-      "url": "https://www.aljazeera.com/news/2026/11/12/police-say-at-least-five-people-shot-at-busy-thoroughfare-in-washington-dc?traffic_source=rss",
-      "date": "November 12, 2026",
-      "description": "Authorities say the suspected shooter has been apprehended, after he shot himself."
-    },
-    {
-      "title": "Nvidia CEO Jensen Huang resigns amid spy scandal and market loss",
-      "url": "https://www.aljazeera.com/news/2026/11/12/ai-titan-jensen-huang-out-as-nvidia-ceo?traffic_source=rss",
-      "date": "November 12, 2026",
-      "description": "Tech giant's market value drops below $4 trillion after Huang steps down following espionage and affair allegations."
-    },
-    {
-      "title": "Family of killed teen Javits Frimpong calls for justice",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/family-of-killed-teen-javits-frimpong-calls-for-justice?traffic_source=rss",
-      "date": "November 12, 2026",
-      "description": "The family of slain Ghanaian teen Javits Frimpong have reiterated demands for justice after police arrested a suspect."
     }
   ]
 }
