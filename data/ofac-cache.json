@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T17:08:19.370Z",
+  "updatedAt": "2026-11-12T19:08:20.196Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261109",
@@ -3286,12 +3286,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/12/no-war-no-peace-can-iran-break-the-deadlock-with-the-us?traffic_source=rss",
       "date": "November 12, 2026",
       "description": "Sustainable stalemate or slow-motion strangulation? The current 'equilibrium' is inherently unstable, experts say."
-    },
-    {
-      "title": "Canada won’t let Russian players enter for ice hockey junior championship",
-      "url": "https://www.aljazeera.com/sports/2026/11/12/canada-wont-let-russian-players-enter-for-ice-hockey-junior-championship?traffic_source=rss",
-      "date": "November 12, 2026",
-      "description": "Russian, Belarusian athletes and officials will be prevented from entering Canada regardless of their visa status."
     }
   ],
   "occNews": [
@@ -3309,6 +3303,13 @@
     }
   ],
   "economicsNews": [
+    {
+      "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
+      "date": "November 12, 2026",
+      "description": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+      "category": "Monetary Policy"
+    },
     {
       "title": "Federal Reserve issues FOMC statement",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
@@ -3395,10 +3396,10 @@
   ],
   "regionsNews": [
     {
-      "title": "Ukraine says military Starlink disrupted again as US envoys meet Putin in Moscow",
+      "title": "US envoys head to meet Zelensky after talks with Putin in Moscow",
       "url": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 12, 2026",
-      "description": "Later on Thursday, Jared Kushner and Steve Witkoff will travel to Dublin to meet Ukraine's Volodymyr Zelensky."
+      "description": "US envoy Steve Witkoff says President Putin has agreed to European negotiators joining the next round of Ukraine talks."
     },
     {
       "title": "Suspected bomb hoax threats force fresh evacuations of Italian schools",
@@ -3413,10 +3414,10 @@
       "description": "In a state Trump won two years ago by 22 points, Colom's victory extends a string of Democratic wins in the Senate."
     },
     {
-      "title": "Pentagon backs war memorial guard who reprimanded Hegseth's group",
+      "title": "Hegseth awards medal to war memorial guard who reprimanded him and group",
       "url": "https://www.bbc.co.uk/news/articles/cmvg2r3dq7xno?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 12, 2026",
-      "description": "The guard told the defence secretary and his companions to maintain an atmosphere of \"silence and respect\" during a Veterans Day visit."
+      "description": "Specialist Thomas Iglesias was given a Joint Service Commendation Medal for the execution of his duties after Wednesday's incident."
     },
     {
       "title": "Millions of Ebola dollars missing with staff unpaid while virus spreads, charity says",
@@ -3911,6 +3912,54 @@
       "description": "Tracking down the men who have made serious money from internet porn."
     },
     {
+      "title": "Pro-Palestine philanthropist faces US extradition hearing in Spain",
+      "url": "https://www.aljazeera.com/news/2026/11/12/james-fergie-chambers-extradition-hearing?traffic_source=rss",
+      "date": "November 12, 2026",
+      "description": "James 'Fergie' Chambers denies wrongdoing, while his wife urges PM Sanchez to grant him political asylum."
+    },
+    {
+      "title": "Home sales in the US are at their lowest level since 2016",
+      "url": "https://www.aljazeera.com/economy/2026/11/12/home-sales-in-the-us-are-at-their-lowest-level-since-2016?traffic_source=rss",
+      "date": "November 12, 2026",
+      "description": "The sale of previously owned homes dropped 5.5 percent in October, the lowest level since August 2010."
+    },
+    {
+      "title": "What to know about the Logan Circle shooting in Washington, DC",
+      "url": "https://www.aljazeera.com/news/2026/11/12/what-to-know-about-the-logan-circle-shooting-in-washington-dc?traffic_source=rss",
+      "date": "November 12, 2026",
+      "description": "Trump has showcased the capital city as an example of his tough on crime approach."
+    },
+    {
+      "title": "Al Jazeera reports from Gaza hospital attacked by Israel",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/al-jazeera-reports-from-gaza-hospital-attacked-by-israel?traffic_source=rss",
+      "date": "November 12, 2026",
+      "description": "Al Jazeera’s Tareq Abu Azzoum reports on the aftermath of an Israeli strike on Nasser Hospital"
+    },
+    {
+      "title": "Suspect turns gun on himself after deadly shooting in Washington DC",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/suspect-turns-gun-on-himself-after-deadly-shooting-in-washington-dc?traffic_source=rss",
+      "date": "November 12, 2026",
+      "description": "Police say the man suspected to have killed one person in a shooting in Washington DC appears to have shot himself."
+    },
+    {
+      "title": "Nvidia CEO Jensen Huang steps down, more affair details revealed",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/nvidia-ceo-jensen-huang-steps-down-more-affair-details-revealed?traffic_source=rss",
+      "date": "November 12, 2026",
+      "description": "Now that Huang has stepped down, Al Jazeera’s Kristen Saloomey looks at the questions ahead for the company."
+    },
+    {
+      "title": "‘Her hands are as cold as ice’: Gaza families struggle to keep warm",
+      "url": "https://www.aljazeera.com/features/2026/11/12/her-hands-are-as-cold-as-ice-gaza-families-struggle-to-keep-warm?traffic_source=rss",
+      "date": "November 12, 2026",
+      "description": "Flooded tents and high prices leave Gaza families struggling to keep children warm as winter approaches."
+    },
+    {
+      "title": "Jerusalem Daily: Gaza’s Nasser Hospital hit by Israeli air strike",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/jerusalem-daily-gazas-nasser-hospital-hit-by-israeli-air-strike?traffic_source=rss",
+      "date": "November 12, 2026",
+      "description": "For the seventh time, Israel has targeted Gaza’s Nasser Hospital in an air strike."
+    },
+    {
       "title": "Italy vs France LIVE: UEFA Nations League",
       "url": "https://www.aljazeera.com/sports/liveblog/2026/11/12/italy-vs-france-live-uefa-nations-league?traffic_source=rss",
       "date": "November 12, 2026",
@@ -3926,7 +3975,7 @@
       "title": "UAE says 14 killed, 30 injured in Fujairah traffic accident",
       "url": "https://www.aljazeera.com/news/2026/11/12/uae-says-14-killed-30-injured-in-fujairah-traffic-accident?traffic_source=rss",
       "date": "November 12, 2026",
-      "description": "Ministry says a driver lost control of his truck, causing a collision and fire involving 18 vehicles."
+      "description": "Officials say a driver lost control of his truck, causing a collision and fire involving 23 vehicles."
     },
     {
       "title": "Four people shot in Washington DC",
@@ -3993,48 +4042,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/family-of-killed-teen-javits-frimpong-calls-for-justice?traffic_source=rss",
       "date": "November 12, 2026",
       "description": "The family of slain Ghanaian teen Javits Frimpong have reiterated demands for justice after police arrested a suspect."
-    },
-    {
-      "title": "More than 1,800 Italian schools targeted by new hoax bomb alerts",
-      "url": "https://www.aljazeera.com/news/2026/11/12/more-than-1800-italian-schools-targeted-by-new-hoax-bomb-alerts?traffic_source=rss",
-      "date": "November 12, 2026",
-      "description": "The latest warnings come amid rising concerns ⁠⁠⁠⁠⁠⁠⁠⁠in Europe about hybrid warfare threats."
-    },
-    {
-      "title": "FIFA Under-17 World Cup to kick off in Qatar despite US withdrawal",
-      "url": "https://www.aljazeera.com/sports/2026/11/12/fifa-under-17-world-cup-to-kick-off-in-qatar-despite-us-withdrawal?traffic_source=rss",
-      "date": "November 12, 2026",
-      "description": "FIFA says its 'security assessments' for the 48-team tournament remain unchanged after US Soccer pulled out."
-    },
-    {
-      "title": "Greta Thunberg: The planet is being killed",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/greta-thunberg-the-planet-is-being-killed?traffic_source=rss",
-      "date": "November 12, 2026",
-      "description": "Climate activist Greta Thunberg delivers a stark warning at COP31."
-    },
-    {
-      "title": "Europe views US with ‘much less horror’ after Trump’s midterms defeat",
-      "url": "https://www.aljazeera.com/news/2026/11/12/europe-views-us-with-much-less-horror-after-trumps-midterms-defeat?traffic_source=rss",
-      "date": "November 12, 2026",
-      "description": "But experts say Washington’s shift away from Europe runs deeper than Trump and is unlikely to be reversed."
-    },
-    {
-      "title": "‘Greater Israel’: Christian Zionism’s role in US policy",
-      "url": "https://www.aljazeera.com/features/2026/11/12/greater-israel-how-christian-zionism-infiltrated-us-policy?traffic_source=rss",
-      "date": "November 12, 2026",
-      "description": "Israel, the US, Christian Zionism and the search for Armageddon."
-    },
-    {
-      "title": "Missing teenager found in bushland during aerial search in Australia",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/missing-teenager-found-in-bushland-during-aerial-search-in-australia?traffic_source=rss",
-      "date": "November 12, 2026",
-      "description": "A 17-year-old teenager has been found in dense bushland during an aerial search after being missing for six days."
-    },
-    {
-      "title": "England vs Croatia: UEFA Nations League – preview, team news, predictions",
-      "url": "https://www.aljazeera.com/sports/2026/11/12/england-vs-croatia-uefa-nations-league-preview-team-news?traffic_source=rss",
-      "date": "November 12, 2026",
-      "description": "Harry Kane set to become England’s most capped player while Jude Bellingham could be joined by younger brother, Jobe."
     }
   ]
 }
