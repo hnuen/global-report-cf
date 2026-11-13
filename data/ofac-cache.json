@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-13T15:08:28.687Z",
+  "updatedAt": "2026-11-13T17:08:25.592Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261113",
+      "code": "20261113",
+      "title": "Counter Narcotics and Counter Terrorism Designations",
+      "date": "November 13, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261109",
       "code": "20261109",
@@ -54,12 +60,6 @@
       "code": "20261021",
       "title": "Iran-related Designations; Belarus and North Korea Designations Removals; Issuance of Iran-related and Russia-related General Licenses and Amended Frequently Asked Questions",
       "date": "October 21, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20261019",
-      "code": "20261019",
-      "title": "Protecting American Intellectual Property Act of 2022 (PAIPA) Designations; Issuance of Associated General Licenses",
-      "date": "October 19, 2026"
     }
   ],
   "civilPenalties": [
@@ -421,7 +421,7 @@
     "counter-narcotics-trafficking-sanctions": {
       "name": "Counter Narcotics Trafficking Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-narcotics-trafficking-sanctions",
-      "lastUpdated": "Oct 13, 2026",
+      "lastUpdated": "Nov 13, 2026",
       "status": "active",
       "statusLabel": "Active",
       "statusReason": "",
@@ -472,7 +472,7 @@
     "counter-terrorism-sanctions": {
       "name": "Counter Terrorism Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-terrorism-sanctions",
-      "lastUpdated": "Oct 13, 2026",
+      "lastUpdated": "Nov 13, 2026",
       "status": "active",
       "statusLabel": "Active",
       "statusReason": "",
@@ -586,7 +586,7 @@
         },
         {
           "number": "5",
-          "title": "Concluding activities with the Palestinian Authority",
+          "title": "Counter Terrorism General License 5",
           "date": "April 12, 2006",
           "expires": "May 12, 2006",
           "url": "https://ofac.treasury.gov/media/8381/download?inline"
@@ -1328,8 +1328,7 @@
           "date": "May 20, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934291/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "T",
@@ -3294,6 +3293,18 @@
   ],
   "ajNews": [
     {
+      "title": "Car bombings in Russia kill military officer, injure ex-Ukraine PM adviser",
+      "url": "https://www.aljazeera.com/news/2026/11/13/car-bombings-in-russia-kill-military-officer-injure-ex-ukraine-pm-adviser?traffic_source=rss",
+      "date": "November 13, 2026",
+      "description": "Moscow blames Kyiv for a series of car bombings that have targeted people linked to the war with Ukraine."
+    },
+    {
+      "title": "US Treasury warns against rate hikes during US-Iran war energy ‘shock’",
+      "url": "https://www.aljazeera.com/economy/2026/11/13/us-treasury-warns-against-rate-hikes-during-us-iran-war-energy-shock?traffic_source=rss",
+      "date": "November 13, 2026",
+      "description": "Despite Treasury's Scott Bessent's remarks, financial tracker CME Fed Watch forecasts rate hike in December likely."
+    },
+    {
       "title": "Can Netanyahu launch a strike on Iran before he leaves?",
       "url": "https://www.aljazeera.com/news/2026/11/13/can-netanyahu-launch-a-strike-on-iran-before-he-leaves?traffic_source=rss",
       "date": "November 13, 2026",
@@ -3322,24 +3333,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/13/un-watchdog-calls-on-iran-to-reopen-nuclear-facilities-to-inspection?traffic_source=rss",
       "date": "November 13, 2026",
       "description": "IAEA says it cannot verify whether an underground Iranian enrichment plant contains nuclear material."
-    },
-    {
-      "title": "Iran threatens unlimited response over Strait of Hormuz after US attack",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/13-11-reported-resul-serdar-iran-basij?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "Iran’s Islamic Revolutionary Guard Corps says it destroyed a US early-warning radar in Bahrain."
-    },
-    {
-      "title": "Why is Trump saying ‘no deal necessary’ with Iran as he sidelines JD Vance?",
-      "url": "https://www.aljazeera.com/features/2026/11/13/why-is-trump-saying-no-deal-necessary-with-iran-as-he-sidelines-jd-vance?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "The US-Iran war is trapped in an ongoing 'no war, no peace' situation, analysts say."
-    },
-    {
-      "title": "Russia and Ukraine report overnight attacks amid US diplomatic push",
-      "url": "https://www.aljazeera.com/news/2026/11/13/russia-and-ukraine-report-overnight-attacks-amid-us-diplomatic-push?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "Russia and Ukraine continue attacks as US efforts to broker a ceasefire struggle to make progress."
     }
   ],
   "occNews": [
@@ -3444,10 +3437,10 @@
   ],
   "regionsNews": [
     {
-      "title": "What we know about the global Microsoft outage",
+      "title": "Why is the Microsoft outage lasting so long?",
       "url": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 13, 2026",
-      "description": "Microsoft has said the outage was not caused by a cyber-security incident, but efforts to fix the issues have so far been largely unsuccessful."
+      "description": "Microsoft says it is seeing \"improvements\" following a global outage but efforts to fully resume services are ongoing."
     },
     {
       "title": "Watch: How a server outage took down Microsoft Teams and Outlook",
@@ -3546,10 +3539,10 @@
       "description": "The Democratic candidate won in a southern state that had not seated a black senator since 1874."
     },
     {
-      "title": "What we know about the global Microsoft outage",
+      "title": "Why is the Microsoft outage lasting so long?",
       "url": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 13, 2026",
-      "description": "Microsoft has said the outage was not caused by a cyber-security incident, but efforts to fix the issues have so far been largely unsuccessful."
+      "description": "Microsoft says it is seeing \"improvements\" following a global outage but efforts to fully resume services are ongoing."
     },
     {
       "title": "How a sex scandal at Nvidia is putting pressure on the White House",
@@ -3846,6 +3839,12 @@
       "description": "Many younger people do not believe the state pension will exist when they are older"
     },
     {
+      "title": "What are people emergency stockpiling?",
+      "url": "https://www.bbc.co.uk/news/videos/c6zxvg79rr9yo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 13, 2026",
+      "description": "From cider to candy canes: What people are emergency stockpiling"
+    },
+    {
       "title": "Shoplifters 'stealing to order' in Scottish shops",
       "url": "https://www.bbc.co.uk/news/videos/cw772xkxjm37o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 13, 2026",
@@ -3870,10 +3869,34 @@
       "description": "Are branded cold and flu tablets REALLY worth the extra money?"
     },
     {
-      "title": "What in the World",
-      "url": "https://www.bbc.co.uk/sounds/play/w3ct9955?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 12, 2026",
-      "description": "What can you do to protect your personal date?"
+      "title": "Jerusalem Daily: Baby dies from cold in Gaza",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/jerusalem-daily-baby-dies-from-cold-in-gaza?traffic_source=rss",
+      "date": "November 13, 2026",
+      "description": "A baby dies from the cold in Gaza as 53 countries urge Israel to allow aid in."
+    },
+    {
+      "title": "Sixth victim confirmed in DC condo-related shooting in US, police say",
+      "url": "https://www.aljazeera.com/news/2026/11/13/sixth-victim-found-in-dc-condo-related-shooting-police-confirm?traffic_source=rss",
+      "date": "November 13, 2026",
+      "description": "Police confirm sixth victim in DC condo shooting; suspect dead after barricading himself and starting a fire."
+    },
+    {
+      "title": "Truck and bus crash in India’s Assam state kills at least 24 people",
+      "url": "https://www.aljazeera.com/news/2026/11/13/truck-and-bus-crash-in-indias-assam-state-kills-at-least-24-people?traffic_source=rss",
+      "date": "November 13, 2026",
+      "description": "Several children and the bus driver were among those killed, officials said, with the death toll expected to rise."
+    },
+    {
+      "title": "Turkiye and Qatar sign mutual defence agreement",
+      "url": "https://www.aljazeera.com/news/2026/11/13/turkiye-and-qatar-sign-mutual-defence-agreement?traffic_source=rss",
+      "date": "November 13, 2026",
+      "description": "The pact was signed after ​the President met Qatari Emir Sheikh Tamim ‌bin Hamad ​Al Thani in Istanbul on ⁠Friday."
+    },
+    {
+      "title": "Europe seeks seat at Ukraine peace talks but lacks unified voice",
+      "url": "https://www.aljazeera.com/news/2026/11/13/europe-seeks-seat-at-ukraine-peace-talks-but-lacks-unified-voice?traffic_source=rss",
+      "date": "November 13, 2026",
+      "description": "EU leaders believe a US-backed process will allow Moscow and Washington to decide the fate of a conflict."
     },
     {
       "title": "Will Democrats try to strip US-Israel initiative from Pentagon funding?",
@@ -3942,40 +3965,16 @@
       "description": "The Norwegian journalist who questioned PM Narendra Modi over press freedom has had her visa to India cancelled."
     },
     {
-      "title": "Microsoft outage live: Global users affected as services remain down",
+      "title": "Microsoft outage live: Outlook, Teams recover as disruptions continue",
       "url": "https://www.aljazeera.com/news/liveblog/2026/11/13/live-microsoft-struggles-to-restore-services-as-outage-hits-global-users?traffic_source=rss",
       "date": "November 13, 2026",
-      "description": "As disruption affects users worldwide, Microsoft admits fixes are not going 'as expected'."
+      "description": "After disruption affects users worldwide, Microsoft says some services are getting back to normal."
     },
     {
       "title": "El Salvador deploys armed robots to fight gangs in Haiti",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/el-salvador-deploys-armed-robots-to-fight-gangs-in-haiti?traffic_source=rss",
       "date": "November 13, 2026",
       "description": "El Salvador’s President Nayib Bukele has released a video showing armed robots during an operation against gangs."
-    },
-    {
-      "title": "Henry and Young shine as New Zealand thrash India by 244 runs",
-      "url": "https://www.aljazeera.com/sports/2026/11/13/matt-henry-will-young-new-zealand-india-fourth-odi?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "New Zealand trail India 2-1 and can no ​longer win the five-match series, but they can level it in Sunday's final game."
-    },
-    {
-      "title": "With every rainfall, Gaza risks losing access to power and healthcare",
-      "url": "https://www.aljazeera.com/news/2026/11/13/with-every-rainfall-gaza-risks-losing-access-to-power-and-healthcare?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "Heavy rains flood shelters, damage solar power systems and threaten essential healthcare services."
-    },
-    {
-      "title": "Microsoft hit by global outages: What happened and why?",
-      "url": "https://www.aljazeera.com/news/2026/11/13/microsoft-hit-by-global-outages-what-happened-and-why?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "Outlook, Teams and Copilot remain disrupted in 74 countries as Microsoft reports ‘marginal success’ in fixing outage."
-    },
-    {
-      "title": "Pope Leo XIV warns on pressures facing modern families",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/pope-leo-xiv-warns-on-pressures-facing-modern-families?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "Pope Leo XIV has warned that digital technology risks replacing genuine human interaction."
     }
   ]
 }
