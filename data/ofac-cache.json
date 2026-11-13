@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T17:08:25.592Z",
+  "updatedAt": "2026-11-13T19:08:31.870Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261113",
@@ -1328,7 +1328,8 @@
           "date": "May 20, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934291/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "T",
@@ -3261,10 +3262,10 @@
   ],
   "bbcNews": [
     {
-      "title": "Zelensky welcomes US bringing Europe into Russia-Ukraine peace talks",
-      "url": "https://www.bbc.co.uk/news/articles/ckn80j9jv3jxo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Rosenberg: Uncompromising Putin ups demands for peace with Ukraine",
+      "url": "https://www.bbc.co.uk/news/articles/cq39glwprknjo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 13, 2026",
-      "description": "The Ukrainian president says it makes sense for European leaders to be involved as Ukraine hopes to eventually join the EU."
+      "description": "The fact the question of European security now features in discussions is viewed in Moscow as a victory, BBC Russia Editor Steve Rosenberg says."
     },
     {
       "title": "UN watchdog 'increasingly concerned' over uninspected Iran nuclear site",
@@ -3279,12 +3280,6 @@
       "description": "More than 900 victims are thought to have fallen prey to the FaceStealer scheme in the last 18 months."
     },
     {
-      "title": "Russian warship hit by Ukrainian drone in Gulf of Finland",
-      "url": "https://www.bbc.co.uk/news/articles/cmn0d33zz34zo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 12, 2026",
-      "description": "The attack is thought to be the first time Ukrainian drones have attacked a Russian ship in an open stretch of the Baltic Sea."
-    },
-    {
       "title": "'We've got to run': Inside ruined Ukraine power plant under constant drone threat",
       "url": "https://www.bbc.co.uk/news/videos/cm93rp3gxn6qo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 12, 2026",
@@ -3292,6 +3287,12 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Iran honours fallen soldiers in Iran-Iraq war with missile display",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/iran-honours-fallen-soldiers-in-iran-iraq-war-with-missile-display?traffic_source=rss",
+      "date": "November 13, 2026",
+      "description": "Thousands gathered in Tehran for a mass funeral honouring 110 unidentified soldiers killed in the Iran-Iraq war."
+    },
     {
       "title": "Car bombings in Russia kill military officer, injure ex-Ukraine PM adviser",
       "url": "https://www.aljazeera.com/news/2026/11/13/car-bombings-in-russia-kill-military-officer-injure-ex-ukraine-pm-adviser?traffic_source=rss",
@@ -3327,12 +3328,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/13/why-is-ukraine-attacking-russian-warships-in-the-baltic-sea-amid-talks?traffic_source=rss",
       "date": "November 13, 2026",
       "description": "Finland says Ukraine struck a Russian warship near its coast as Kyiv and Moscow held US-brokered talks in Abu Dhabi."
-    },
-    {
-      "title": "UN watchdog calls on Iran to reopen nuclear facilities to inspection",
-      "url": "https://www.aljazeera.com/news/2026/11/13/un-watchdog-calls-on-iran-to-reopen-nuclear-facilities-to-inspection?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "IAEA says it cannot verify whether an underground Iranian enrichment plant contains nuclear material."
     }
   ],
   "occNews": [
@@ -3437,10 +3432,10 @@
   ],
   "regionsNews": [
     {
-      "title": "Why is the Microsoft outage lasting so long?",
+      "title": "Why is Microsoft's outage lasting so long and will emails be lost?",
       "url": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 13, 2026",
-      "description": "Microsoft says it is seeing \"improvements\" following a global outage but efforts to fully resume services are ongoing."
+      "description": "Microsoft says it is continuing to restore services including Outlook and Teams following a global outage."
     },
     {
       "title": "Watch: How a server outage took down Microsoft Teams and Outlook",
@@ -3449,10 +3444,34 @@
       "description": "A Microsoft outage is affecting services including Teams, Outlook and AI software Copilot."
     },
     {
-      "title": "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy",
-      "url": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Nvidia scandal fallout widens as Trump's treasury secretary blames cabinet colleague",
+      "url": "https://www.bbc.co.uk/news/articles/cqvg2d1eg7zro?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 13, 2026",
-      "description": "Huang abruptly quit on Thursday as head of one of the world's most valuable companies after revelations of alleged extramarital affairs."
+      "description": "Scott Bessent suggests Howard Lutnick’s commerce department failed to ban exports of Nvidia's chips to a firm thought to have links with China."
+    },
+    {
+      "title": "German spies handed new powers to tackle 'hybrid threats' from abroad",
+      "url": "https://www.bbc.co.uk/news/articles/c6jre3z03w4go?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 13, 2026",
+      "description": "German reforms mean foreign and domestic intelligence services will have greater powers to combat espionage, terrorism and sabotage."
+    },
+    {
+      "title": "The Peruvian city that has embraced Pope Leo as one of its own",
+      "url": "https://www.bbc.co.uk/news/articles/cwg7l8n7dx5mo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 13, 2026",
+      "description": "Pope Leo XIV is in Peru as part of his Latin America tour, just weeks after having surgery for lung cancer."
+    },
+    {
+      "title": "Democratic Senate leader Schumer set to face leadership challenge",
+      "url": "https://www.bbc.co.uk/news/articles/cmy4930jq749o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 13, 2026",
+      "description": "Maryland Senator Van Hollen says \"new leadership\" is needed for Democrats following the party's recent midterm successes."
+    },
+    {
+      "title": "Rosalía scoops historic third best album award at Latin Grammys",
+      "url": "https://www.bbc.co.uk/news/articles/cr3eg97eqde1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 13, 2026",
+      "description": "The Spanish singer is recognised for her fourth album Lux which was released last year to rave reviews."
     },
     {
       "title": "African Miss Universe beauty queens in limbo as US visa restrictions bite",
@@ -3467,16 +3486,16 @@
       "description": "The university has banned all parties, while investigations are underway to find the cause of the students' deaths."
     },
     {
-      "title": "Hegseth awards medal to war memorial guard who reprimanded him and group",
-      "url": "https://www.bbc.co.uk/news/articles/cmvg2r3dq7xno?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 12, 2026",
-      "description": "Specialist Thomas Iglesias had shouted at Hegseth's group to be quiet after they could be heard talking and laughing at the Tomb of the Unknown Soldier."
+      "title": "At least 24 killed after bus collides with truck in north-east India",
+      "url": "https://www.bbc.co.uk/news/articles/c6r7g5lp1zrxo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 13, 2026",
+      "description": "Several of the deceased are college students, according to local official Atul Bora, but they have not yet been publicly identified."
     },
     {
-      "title": "Australian footballers will not be charged after hotel incident, police say",
-      "url": "https://www.bbc.co.uk/news/articles/ckregjwr7njqo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Watch: Divers explore US ship sunk off Florida coast to create new reef",
+      "url": "https://www.bbc.co.uk/news/videos/ckqx5ryx905qo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 13, 2026",
-      "description": "Four Sydney Swans players had been under investigation after an alleged sexual assault after a game in Melbourne."
+      "description": "The ship was intentionally sunk off the coast of Florida in order to create the world's largest artificial ocean reef."
     },
     {
       "title": "Will the Eurovision Song Contest succeed in Asia?",
@@ -3539,10 +3558,10 @@
       "description": "The Democratic candidate won in a southern state that had not seated a black senator since 1874."
     },
     {
-      "title": "Why is the Microsoft outage lasting so long?",
+      "title": "Why is Microsoft's outage lasting so long and will emails be lost?",
       "url": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 13, 2026",
-      "description": "Microsoft says it is seeing \"improvements\" following a global outage but efforts to fully resume services are ongoing."
+      "description": "Microsoft says it is continuing to restore services including Outlook and Teams following a global outage."
     },
     {
       "title": "How a sex scandal at Nvidia is putting pressure on the White House",
@@ -3551,7 +3570,7 @@
       "description": "Jensen Huang's personal life may have triggered the crisis, but the questions now reach into the White House itself."
     },
     {
-      "title": "Bessent blames Lutnick's Commerce Department for failing to block Megaspeed",
+      "title": "Pressure grows on Trump's Commerce Secretary Lutnick in fallout from Nvidia scandal",
       "url": "https://www.bbc.co.uk/news/articles/cqvg2d1eg7zro?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 13, 2026",
       "description": "Scott Bessent told CNBC that several government agencies \"were in favour of putting Megaspeed on the entity list for months\"."
@@ -3839,6 +3858,12 @@
       "description": "Many younger people do not believe the state pension will exist when they are older"
     },
     {
+      "title": "Are board games making a comeback this Christmas?",
+      "url": "https://www.bbc.co.uk/news/videos/ckp80l667rdjo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 13, 2026",
+      "description": "Are board games making a comeback this Christmas?"
+    },
+    {
       "title": "What are people emergency stockpiling?",
       "url": "https://www.bbc.co.uk/news/videos/c6zxvg79rr9yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 13, 2026",
@@ -3863,10 +3888,28 @@
       "description": "Jensen Huang has resigned from Nvidia as chief financial officer Colette Kress replaces him as an interim boss."
     },
     {
-      "title": "Are branded cold and flu tablets really worth the extra money?",
-      "url": "https://www.bbc.co.uk/news/videos/cw4gnxm0y43po?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 12, 2026",
-      "description": "Are branded cold and flu tablets REALLY worth the extra money?"
+      "title": "Israel bars supplies needed to treat six-year-old Gaza burn victim",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/israel-bars-supplies-needed-to-treat-six-year-old-gaza-burn-victim?traffic_source=rss",
+      "date": "November 13, 2026",
+      "description": "Six-year-old burns victim Masa is one of the patients in Gaza whose recovery is under threat due to Israeli restrictions"
+    },
+    {
+      "title": "Eisenkot slams Netanyahu’s ‘racist’ campaign against Palestinian Israelis",
+      "url": "https://www.aljazeera.com/news/2026/11/13/eisenkot-slams-netanyahus-racist-campaign-against-palestinian-israelis?traffic_source=rss",
+      "date": "November 13, 2026",
+      "description": "Prime ministerial hopeful calls attempts to marginalise and smear Palestinian citizens of Israel 'an anti-state act'."
+    },
+    {
+      "title": "No emails, no problem? Workers joke about Microsoft outage",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/no-emails-no-problem-workers-joke-about-microsoft-outage?traffic_source=rss",
+      "date": "November 13, 2026",
+      "description": "Workers worldwide have been finding humour in a global Microsoft outage that disrupted Outlook, Teams and Copilot."
+    },
+    {
+      "title": "The fight over Canadian steelworker jobs",
+      "url": "https://www.aljazeera.com/economy/2026/11/13/the-fight-over-canadian-steelworker-jobs?traffic_source=rss",
+      "date": "November 13, 2026",
+      "description": "Stelco's US owner blames Trump's tariffs for layoffs, but its support for those same tariffs has raised questions."
     },
     {
       "title": "Jerusalem Daily: Baby dies from cold in Gaza",
@@ -3890,7 +3933,7 @@
       "title": "Turkiye and Qatar sign mutual defence agreement",
       "url": "https://www.aljazeera.com/news/2026/11/13/turkiye-and-qatar-sign-mutual-defence-agreement?traffic_source=rss",
       "date": "November 13, 2026",
-      "description": "The pact was signed after ​the President met Qatari Emir Sheikh Tamim ‌bin Hamad ​Al Thani in Istanbul on ⁠Friday."
+      "description": "The pact was signed after ​the President met Qatari Emir Sheikh Tamim ‌‌bin Hamad ​Al Thani in Istanbul on ⁠⁠Friday."
     },
     {
       "title": "Europe seeks seat at Ukraine peace talks but lacks unified voice",
@@ -3951,30 +3994,6 @@
       "url": "https://www.aljazeera.com/sports/2026/11/13/manchester-united-new-manager-mauricio-pochettino-usa-soccer?traffic_source=rss",
       "date": "November 13, 2026",
       "description": "Pochettino replaces Michael Carrick, who was sacked after United's disastrous start to the season."
-    },
-    {
-      "title": "Pakistan military reports it killed 74 ‘terrorists’ during raids",
-      "url": "https://www.aljazeera.com/news/2026/11/13/pakistan-military-reports-it-killed-74-terrorists-during-raids?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "Increased attacks on the border with Afghanistan have caused tensions between the neighbours."
-    },
-    {
-      "title": "India cancels visa of Norwegian journalist who questioned Modi",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/india-cancels-visa-of-norwegian-journalist-who-questioned-modi?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "The Norwegian journalist who questioned PM Narendra Modi over press freedom has had her visa to India cancelled."
-    },
-    {
-      "title": "Microsoft outage live: Outlook, Teams recover as disruptions continue",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/11/13/live-microsoft-struggles-to-restore-services-as-outage-hits-global-users?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "After disruption affects users worldwide, Microsoft says some services are getting back to normal."
-    },
-    {
-      "title": "El Salvador deploys armed robots to fight gangs in Haiti",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/el-salvador-deploys-armed-robots-to-fight-gangs-in-haiti?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "El Salvador’s President Nayib Bukele has released a video showing armed robots during an operation against gangs."
     }
   ]
 }
