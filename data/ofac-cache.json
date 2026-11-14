@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T22:08:21.331Z",
+  "updatedAt": "2026-11-14T13:08:17.471Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261113",
@@ -3246,21 +3246,14 @@
       "description": "The Commission welcomes the Council's adoption of the 20th Russia sanctions package, that puts further pressure on Russia to engage in negotiations and do so on terms acceptable for Ukraine."
     }
   ],
-  "unNotices": [
-    {
-      "title": "Security Council Updates Yemen Sanctions Regime to Address Evolving Houthi Threats through Resolution 2837 (2026)",
-      "url": "https://press.un.org/en/2026/sc16508.doc.htm",
-      "date": "November 12, 2026",
-      "description": "The Security Council today renewed for 12 months the targeted travel-ban and asset-freeze measures imposed on designated individuals and entities in Yemen, and extended for 13 months the mandate of the Panel of Experts tasked with assisting the Council’s Yemen Sanctions Committee — initially established through Council resolution 2140 (2014)."
-    },
-    {
-      "title": "Security Council, 10270th Meeting (PM) Yemen Sanctions",
-      "url": "https://press.un.org/en/blog/sc16508",
-      "date": "November 12, 2026",
-      "description": "This afternoon, the Security Council will vote on a draft resolution renewing the 2140 Yemen sanctions regime for another year until 14 November 2027, also extending the mandate of the Panel of Experts supporting the 2140 Yemen Sanctions Committee until 15 December 2027."
-    }
-  ],
+  "unNotices": [],
   "bbcNews": [
+    {
+      "title": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
+      "url": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 14, 2026",
+      "description": "The Ukrainian president says US envoys touted the exchange as part of efforts to end the war with Russia."
+    },
     {
       "title": "Rosenberg: Uncompromising Putin ups demands for peace with Ukraine",
       "url": "https://www.bbc.co.uk/news/articles/cq39glwprknjo?at_medium=RSS&amp;at_campaign=rss",
@@ -3268,10 +3261,10 @@
       "description": "The fact the question of European security now features in discussions is viewed in Moscow as a victory, BBC Russia Editor Steve Rosenberg says."
     },
     {
-      "title": "North Korean hackers used fake video calls in $400m crypto hack, says FBI",
-      "url": "https://www.bbc.co.uk/news/articles/cqdj1ellpd70o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Estonia bans Russian athletes as backlash intensifies",
+      "url": "https://www.bbc.co.uk/sport/articles/cm4gn9lvlgy2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 13, 2026",
-      "description": "More than 900 victims are thought to have fallen prey to the FaceStealer scheme in the last 18 months."
+      "description": "Estonia is the latest country to say it will not allow Russian or Belarusian athletes to compete on its territory as a result of the ongoing war in Ukraine."
     },
     {
       "title": "'We've got to run': Inside ruined Ukraine power plant under constant drone threat",
@@ -3282,22 +3275,40 @@
   ],
   "ajNews": [
     {
-      "title": "Iran honours fallen soldiers in Iran-Iraq war with missile display",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/iran-honours-fallen-soldiers-in-iran-iraq-war-with-missile-display?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "Thousands gathered in Tehran for a mass funeral honouring 110 unidentified soldiers killed in the Iran-Iraq war."
+      "title": "Trump-Xi-Putin trilateral meeting at APEC: What to expect",
+      "url": "https://www.aljazeera.com/news/2026/11/14/trump-xi-putin-trilateral-meeting-at-apec-what-to-expect?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "A nuclear treaty and the US's war on Iran are among priority topics for China, Russia and US leaders."
     },
     {
-      "title": "Car bombings in Russia kill military officer, injure ex-Ukraine PM adviser",
-      "url": "https://www.aljazeera.com/news/2026/11/13/car-bombings-in-russia-kill-military-officer-injure-ex-ukraine-pm-adviser?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "Moscow blames Kyiv for a series of car bombings that have targeted people linked to the war with Ukraine."
+      "title": "Three killed in Russia as Ukraine claims US floated NATO membership option",
+      "url": "https://www.aljazeera.com/news/2026/11/14/three-killed-in-russia-as-ukraine-claims-us-floated-nato-membership-option?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "Zelenskyy says the US asked for the first time whether Kyiv would cede land to Moscow in exchange for the NATO bid."
     },
     {
-      "title": "US Treasury warns against rate hikes during US-Iran war energy ‘shock’",
-      "url": "https://www.aljazeera.com/economy/2026/11/13/us-treasury-warns-against-rate-hikes-during-us-iran-war-energy-shock?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "Despite Treasury's Scott Bessent's remarks, financial tracker CME Fed Watch forecasts rate hike in December likely."
+      "title": "Ukraine, Russia race to build military satellite networks as war rages on",
+      "url": "https://www.aljazeera.com/news/2026/11/14/ukraine-russia-race-to-build-military-satellite-networks-as-war-rages-on?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "Kyiv seeks to break reliance on Starlink as Moscow develops its own satellite constellation for military communications."
+    },
+    {
+      "title": "Qatar and Turkiye sign a mutual defence pact: What do we know?",
+      "url": "https://www.aljazeera.com/news/2026/11/14/qatar-and-turkiye-sign-a-mutual-defence-pact-what-do-we-know?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "Analysts say the pact, agreed amid the US-Iran war, aims to deter attacks rather than build an offensive alliance."
+    },
+    {
+      "title": "UN says 25 seafarers killed in, around Hormuz since US-Israel war on Iran",
+      "url": "https://www.aljazeera.com/news/2026/11/14/un-says-25-seafarers-killed-in-around-hormuz-since-february?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "'Situation cannot become new normal', says UN's Khaled Khiari, as Iran reports three more vessels hitting mines."
+    },
+    {
+      "title": "Ukraine is running out of options, and Russia knows it",
+      "url": "https://www.aljazeera.com/opinions/2026/11/14/ukraine-is-running-out-of-options-and-russia-knows-it?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "The Abu Dhabi talks reveal Moscow’s growing leverage over Ukraine and a shifting Western approach to peace."
     }
   ],
   "occNews": [
@@ -3402,22 +3413,40 @@
   ],
   "regionsNews": [
     {
-      "title": "Microsoft 'deeply sorry' for global outage after almost 24 hours of disruption",
+      "title": "What we know about the ground stop and what to do if you're affected",
+      "url": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 14, 2026",
+      "description": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack."
+    },
+    {
+      "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
+      "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 14, 2026",
+      "description": "Trump will discuss the \"reduction of nuclear weapons\" during the unprecedented talks, a spokeswoman says."
+    },
+    {
+      "title": "'Miracle on Mississippi' - All passengers rescued after New Orleans cruise ship collision",
+      "url": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 13, 2026",
+      "description": "The collision leaves 32 people in hospital with non-critical injuries, but no-one unaccounted for."
+    },
+    {
+      "title": "Setback for SpaceX Starship rocket's double-catch test",
+      "url": "https://www.bbc.co.uk/news/articles/ckregdgnl0xpo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 14, 2026",
+      "description": "Elon Musk’s company aborted an attempted catch of the rocket’s booster - instead it came down in the ocean."
+    },
+    {
+      "title": "Microsoft says services fully restored after day-long global outage",
       "url": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 13, 2026",
-      "description": "Experts say the event is a \"stark reminder\" of how heavily the world relies on a small group of big tech providers."
+      "date": "November 14, 2026",
+      "description": "Efforts to address the underlying problem with Outlook, Teams and Copilot are complete, the tech firm says."
     },
     {
-      "title": "Why is Microsoft's outage lasting so long and will emails be lost?",
-      "url": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 13, 2026",
-      "description": "Microsoft says it is continuing to restore services including Outlook and Teams following a global outage."
-    },
-    {
-      "title": "Watch: How a server outage took down Microsoft Teams and Outlook",
-      "url": "https://www.bbc.co.uk/news/videos/cqzjr903n01po?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 13, 2026",
-      "description": "A Microsoft outage is affecting services including Teams, Outlook and AI software Copilot."
+      "title": "Hungarian authorities uncover $20m during probe of Orbán-era minister",
+      "url": "https://www.bbc.co.uk/news/articles/ckjwj03w4w0qo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 14, 2026",
+      "description": "Prime Minister Péter Magyar promised a sweeping anti-corruption drive after ousting Orbán in April."
     },
     {
       "title": "Nvidia scandal fallout widens as Trump's treasury secretary blames cabinet colleague",
@@ -3432,16 +3461,16 @@
       "description": "Pope Leo XIV is in Peru as part of his Latin America tour, just weeks after having surgery for lung cancer."
     },
     {
-      "title": "German spies handed new powers to tackle 'hybrid threats' from abroad",
-      "url": "https://www.bbc.co.uk/news/articles/c6jre3z03w4go?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 13, 2026",
-      "description": "German reforms mean foreign and domestic intelligence services will have greater powers to combat espionage, terrorism and sabotage."
-    },
-    {
       "title": "Democratic Senate leader Schumer set to face leadership challenge",
       "url": "https://www.bbc.co.uk/news/articles/cmy4930jq749o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 13, 2026",
       "description": "Maryland Senator Van Hollen says \"new leadership\" is needed for Democrats following the party's recent midterm successes."
+    },
+    {
+      "title": "German spies handed new powers to tackle 'hybrid threats' from abroad",
+      "url": "https://www.bbc.co.uk/news/articles/c6jre3z03w4go?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 13, 2026",
+      "description": "German reforms mean foreign and domestic intelligence services will have greater powers to combat espionage, terrorism and sabotage."
     },
     {
       "title": "Aide to fugitive Ukrainian ex-PM wounded in latest Moscow car bombing",
@@ -3462,16 +3491,16 @@
       "description": "Hall has been seeking a US visa in South Africa as other African beauty queens face similar hurdles."
     },
     {
-      "title": "At least 24 killed after bus collides with truck in north-east India",
-      "url": "https://www.bbc.co.uk/news/articles/c6r7g5lp1zrxo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 13, 2026",
-      "description": "Several of the deceased are college students, according to local official Atul Bora, but they have not yet been publicly identified."
+      "title": "'We'll get home one day' - US travellers impacted by nationwide ground stop",
+      "url": "https://www.bbc.co.uk/news/videos/c893ryz7lw33o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 14, 2026",
+      "description": "Passengers throughout the country were impacted over what the Federal Aviation Administration (FAA) describes as “safety and communication issues”."
     },
     {
-      "title": "Nigerian university in mourning after four students die at post-exam party",
-      "url": "https://www.bbc.co.uk/news/articles/cmvg2dvw0355o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 13, 2026",
-      "description": "The university has banned all parties, while investigations are underway to find the cause of the students' deaths."
+      "title": "Watch: Cruise ship overturns after collision with tanker in New Orleans",
+      "url": "https://www.bbc.co.uk/news/videos/ck4gn4y77m40o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 14, 2026",
+      "description": "Around 130 people were rescued from a cruise ship after it was struck by a tanker while docked in New Orleans, Louisiana on Friday."
     },
     {
       "title": "Watch: Divers explore US ship sunk off Florida coast to create new reef",
@@ -3492,58 +3521,40 @@
       "description": "BBC's Bernd Debusmann breaks down why Defence Secretary Hegseth's group was reprimanded at Arlington National Cemetery and the history behind its strict rules of conduct."
     },
     {
-      "title": "Hegseth and advisers reprimanded by guard at Tomb of the Unknown Soldier",
-      "url": "https://www.bbc.co.uk/news/videos/ck5y132yq1ymo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 11, 2026",
-      "description": "Following a ceremony marking Veterans Day, a group that included Defence Secretary Pete Hegseth was shouted at to be quiet."
+      "title": "Jojo the gorilla has spent his life alone. Can he finally find a companion?",
+      "url": "https://www.bbc.co.uk/news/articles/cwm2mn272nqlo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 14, 2026",
+      "description": "Jojo was poached as an infant and grew up in captivity. His keepers want to find him a friend - but it's not straightforward."
     },
     {
-      "title": "Watch: Vinícius Jr's surprise message to boy who received prosthetic legs after Sudan drone strike",
-      "url": "https://www.bbc.co.uk/news/videos/cm894wg251pzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 11, 2026",
-      "description": "Real Madrid player Vinícius Jr sent a surprise message to 13-year-old fan Zaher who lost both his legs after being hit by a drone in Khartoum, in 2024."
+      "title": "Arrested generals and a threatened VP: President's son fuels Ugandan succession fever",
+      "url": "https://www.bbc.co.uk/news/articles/cmlydy0xw45wo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 14, 2026",
+      "description": "The 52-year-old general’s provocative posts and military threats have fuelled rumours of a dynastic succession."
     },
     {
-      "title": "How a sex scandal at Nvidia is putting pressure on the White House",
-      "url": "https://www.bbc.co.uk/news/articles/c67429m3vem3o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "After a summer win, India's Gen Z protesters face a winter of uncertainty",
+      "url": "https://www.bbc.co.uk/news/articles/cq99e0z4vg1eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 13, 2026",
-      "description": "Jensen Huang's personal life may have triggered the crisis, but the questions now reach into the White House itself."
+      "description": "A new wave of youth dissent swept India this summer, fuelled by frustration and irreverent online satire."
     },
     {
-      "title": "Australian cricket's sandpapergate is back - and it cuts deep in a 'nation of good sports'",
-      "url": "https://www.bbc.co.uk/news/articles/c6702z750zvyo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "How the Jensen Huang scandal created a headache for business-friendly Singapore",
+      "url": "https://www.bbc.co.uk/news/articles/ck1exevgql4qo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 13, 2026",
-      "description": "Claims the entire Australian team knew of the 2018 sandpaper cheating plot are dividing the cricket world."
+      "description": "The scandal has cast a spotlight on Singapore's success as a chip hub - and a location for alleged illicit trade."
     },
     {
-      "title": "Why midterm vote-counting is taking so long in America's largest state",
-      "url": "https://www.bbc.co.uk/news/articles/cqly4ljvr4pjo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Eurovision is finally coming to Asia - meet the stars gearing up to take the stage",
+      "url": "https://www.bbc.co.uk/news/articles/cw4gn0ky2pgdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 13, 2026",
-      "description": "Alaskans are still waiting for the full results, including in the close Senate race between Republican Dan Sullivan and Democrat Mary Peltola."
+      "description": "On Saturday, the biggest and longest-running international song contest will make a leap into unknown territory."
     },
     {
-      "title": "Neither war nor peace in Tigray - is Ethiopia's latest conflict really over?",
-      "url": "https://www.bbc.co.uk/news/articles/cm3egjgvp794o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 13, 2026",
-      "description": "The army has taken control of most of Tigray's main towns - it is unclear if the TPLF is capable of fighting back."
-    },
-    {
-      "title": "Whatever happened to the $300,000 diamond that went missing in F1 crash?",
-      "url": "https://www.bbc.co.uk/sport/formula1/articles/c60735md0jrpo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 13, 2026",
-      "description": "Whatever happened to the diamond that went missing after the Formula 1 car it was attached to crashed?"
-    },
-    {
-      "title": "Before Scott Colom, these two men were the last black US senators from Mississippi",
-      "url": "https://www.bbc.co.uk/news/articles/cmde1y19g19do?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 12, 2026",
-      "description": "The Democratic candidate won in a southern state that had not seated a black senator since 1874."
-    },
-    {
-      "title": "Microsoft 'deeply sorry' for global outage after almost 24 hours of disruption",
+      "title": "Microsoft says services fully restored after day-long global outage",
       "url": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 13, 2026",
-      "description": "Experts say the event is a \"stark reminder\" of how heavily the world relies on a small group of big tech providers."
+      "date": "November 14, 2026",
+      "description": "Efforts to address the underlying problem with Outlook, Teams and Copilot are complete, the tech firm says."
     },
     {
       "title": "Why is Microsoft's outage lasting so long and will emails be lost?",
@@ -3786,6 +3797,24 @@
       "description": "Solar tiles were touted as an attractive alternative to solar panels - why have they not taken off?"
     },
     {
+      "title": "Football kit giveaway aims to boost participation",
+      "url": "https://www.bbc.co.uk/news/articles/ck20v651473qo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 14, 2026",
+      "description": "Millie Bright helps hand out free kit to young girls to help them keep playing in spite of costs."
+    },
+    {
+      "title": "What do Christmas market traders say about rising prices?",
+      "url": "https://www.bbc.co.uk/news/articles/c95y152k8erpo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 14, 2026",
+      "description": "From £8 bratwursts to £11 Yorkshire pudding wraps, why is the cost of the markets rising year on year?"
+    },
+    {
+      "title": "Food bank sees donations drop by 10% each year",
+      "url": "https://www.bbc.co.uk/news/articles/c6702j7e48eno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 14, 2026",
+      "description": "Staff fear the government stockpiling advice will have an impact on donations as Christmas looms."
+    },
+    {
       "title": "Politicians back focus on cost of living",
       "url": "https://www.bbc.co.uk/news/articles/cqj9mjl8jy4no?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 13, 2026",
@@ -3796,24 +3825,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c5zjxjzx2dpwo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 13, 2026",
       "description": "Producers claimed without more support, they could be forced to stop using British-grown apples."
-    },
-    {
-      "title": "'My window faces a brick wall': What's your rent in NYC?",
-      "url": "https://www.bbc.co.uk/news/videos/c6wy9j9v7nl7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 13, 2026",
-      "description": "We ask people in New York City how much they pay for their homes."
-    },
-    {
-      "title": "Gas bills to rise as Middle East turmoil persists",
-      "url": "https://www.bbc.co.uk/news/articles/ckregdvr2y3go?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 12, 2026",
-      "description": "Gas bills will increase by about 5% from 1 December, Island Energy announces."
-    },
-    {
-      "title": "Clashes erupt in Barcelona after thousands join Spain general strike",
-      "url": "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 11, 2026",
-      "description": "Tens of thousands of people have been taking part in the strike, called by the country's main unions over housing and the high cost of living."
     },
     {
       "title": "My hometown shows that high streets have to change or die",
@@ -3846,6 +3857,12 @@
       "description": "Many younger people do not believe the state pension will exist when they are older"
     },
     {
+      "title": "The rise of 'housefishing' by estate agents",
+      "url": "https://www.bbc.co.uk/news/videos/cmx295lz17wzo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 14, 2026",
+      "description": "The rise of 'housefishing' by estate agents."
+    },
+    {
       "title": "Are board games making a comeback this Christmas?",
       "url": "https://www.bbc.co.uk/news/videos/ckp80l667rdjo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 13, 2026",
@@ -3870,142 +3887,118 @@
       "description": "We ask people in New York City how much they pay for their homes."
     },
     {
-      "title": "Jensen Huang has resigned, what's next for Nvidia?",
-      "url": "https://www.bbc.co.uk/news/videos/c6wy9l859r94o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 12, 2026",
-      "description": "Jensen Huang has resigned from Nvidia as chief financial officer Colette Kress replaces him as an interim boss."
+      "title": "Ethiopia blames Egypt, Eritrea for Tigray attacks",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/ethiopia-blames-egypt-eritrea-for-tigray-attacks?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "Ethiopia accuses Eritrea of leading TPLF attacks in Tigray, with Egypt providing logistical support."
     },
     {
-      "title": "US grounds all flights after ‘communication issue’",
-      "url": "https://www.aljazeera.com/news/2026/11/13/us-grounds-all-flights-after-communication-issue?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "US Transportation Secretary Sean Duffy said the US aviation agency was investigating."
+      "title": "Eight sentenced to jail over Nurmagomedov-Dvalishvili Abu Dhabi hotel brawl",
+      "url": "https://www.aljazeera.com/sports/2026/11/14/usman-nurmagomedov-merab-dvalishvili-abu-dhabi-hotel-brawl-jail-sentence?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "A brawl broke out between the two MMA fighters and their teams inside a hotel before a wrestling event."
     },
     {
-      "title": "Pope Leo cheered on return to Peru city where he served as bishop",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/pope-leo-cheered-on-return-to-peru-city-where-he-served-as-bishop?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "An estimated 1.5 million people have welcomed Pope Leo XIV back to the city in Peru where he once served as bishop."
+      "title": "South Sudan postpones first-ever national elections until February",
+      "url": "https://www.aljazeera.com/news/2026/11/14/south-sudan-postpones-first-ever-national-elections-until-february?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "The vote, first expected in 2022, will now be held on February 11, according to the country's election commission."
     },
     {
-      "title": "Qatar and Turkiye send message of deterrence with new defence pact",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/qatar-and-turkiye-send-message-of-deterrence-with-new-defence-pact?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "Qatar and Turkiye have signed a mutual defence pact, deepening their partnership amid growing regional instability."
+      "title": "Sabalenka crashes out of season-ending WTA Finals after losing to Svitolina",
+      "url": "https://www.aljazeera.com/sports/2026/11/14/aryna-sabalenka-elina-svitolina-wta-finals-indian-wells-semifinals-tennis?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "World number two Sabalenka's season came to a disappointing end after she failed to reach the WTA Finals semifinals."
     },
     {
-      "title": "Australia captain Cummins denies involvement in ‘Sandpapergate’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/australia-captain-cummins-denies-involvement-in?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "Australia cricket captain Cummins has rejected claims by ex-teammate Usman Khawaja linking him to 2018 ball-tampering"
+      "title": "Migrant caravan heads to US from Mexico after Democrats’ midterm win",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/migrant-caravan-heads-to-us-from-mexico-after-democrats-midterm-win?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "A migrant caravan of more than a thousand people is heading towards the US border from southern Mexico."
     },
     {
-      "title": "Pope thanks crowds on emotional return to ‘second home’ in Peru’s Chiclayo",
-      "url": "https://www.aljazeera.com/news/2026/11/13/pope-thanks-crowds-on-emotional-return-to-second-home-in-perus-chiclayo?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "The Chicago-born pope was welcomed by huge crowds in the coastal city, on the final leg of his South America tour."
+      "title": "Netanyahu may fall, but his far-right legacy in Israel is going nowhere",
+      "url": "https://www.aljazeera.com/news/2026/11/14/netanyahu-may-fall-but-his-far-right-legacy-in-israel-is-going-nowhere?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "Israel’s far-right is accused of embedding a hardline agenda so deeply that reversing it may prove almost impossible."
     },
     {
-      "title": "Paraguay’s ex-president Pena faces new charge over Ueno bank collapse",
-      "url": "https://www.aljazeera.com/news/2026/11/13/paraguays-ex-president-pena-faces-new-charge-over-ueno-bank-collapse?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "The criminal association charge over his alleged role in the collapse of the bank comes a week after his removal."
+      "title": "Pochettino bids emotional farewell to US football ahead of Man Utd move",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/pochettino-bids-emotional-farewell-to-us-football-ahead-of-man-utd-move?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "Mauricio Pochettino has bid an emotional farewell to US football as he prepares to take charge of Manchester United."
     },
     {
-      "title": "Microsoft says services still returning amid widespread outage",
-      "url": "https://www.aljazeera.com/news/2026/11/13/microsoft-says-services-still-returning-amid-widespread-outage?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "Governments, businesses, individuals were disrupted globally as server failures stretch into second day."
+      "title": "Nearly $20m found in Hungary’s forests, buildings amid corruption probe",
+      "url": "https://www.aljazeera.com/news/2026/11/14/hungarian-investigators-uncover-19-5m-hidden-in-forests-and-buildings?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "An ex-minister faces a bribery probe as Hungary's new government investigates alleged corruption during Orban's rule."
     },
     {
-      "title": "Nigeria ends 21-day Ebola contact monitoring with no secondary transmission",
-      "url": "https://www.aljazeera.com/news/2026/11/13/nigeria-ends-21-day-ebola-contact-monitoring-with-no-secondary-transmission?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "None of the 62 contacts identified after the first case developed the disease, although 13 contacts reported fever."
+      "title": "Hungary seizes $18m cash tied to ex-Orban-era minister in probe",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/hungary-seizes-18m-cash-tied-to-ex-orban-era-minister-in-probe?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "Anti-corruption authorities in Hungary say they found around $18 million in hidden cash."
     },
     {
-      "title": "Migrants risk deadly route to Spain’s Canary Islands",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/migrants-risk-deadly-route-to-spains-canary-islands?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "More than 7,400 migrants arrived in Spain’s Canary Islands during the first 10 days of November."
+      "title": "Warner accuses Cricket Australia of ‘cover-up’ in ball-tampering scandal",
+      "url": "https://www.aljazeera.com/sports/2026/11/14/warner-cricket-australia-ball-tampering-sandpapergate-khawaja-cummins?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "Former opener Warner was banned for a year for his involvement in the 2018 'Sandpapergate' incident in South Africa."
     },
     {
-      "title": "IRGC says tanker caught fire after hitting mines in Strait of Hormuz",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/irgc-says-tanker-caught-fire-after-hitting-mines-in-strait-of-hormuz?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "A liquefied gas carrier caught fire in the Strait of Hormuz after hitting naval mines, according to the IRGC."
+      "title": "Pacers hold off Knicks in NBA Cup thriller, Spurs rout Warriors",
+      "url": "https://www.aljazeera.com/sports/2026/11/14/nba-cup-basketball-pacers-knicks-spurs-warriors?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "The New York Knicks look unlikely to advance to the NBA Cup knockout rounds after falling to the Indiana Pacers."
     },
     {
-      "title": "How will the US deal with Nvidia scandal?",
-      "url": "https://www.aljazeera.com/video/inside-story/2026/11/13/how-will-the-us-deal-with-nvidia-scandal?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "Tech giant CEO resigned and will testify before Congress."
+      "title": "Missing Australian teenager reunites with his mother",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/missing-australian-teenager-reunites-with-his-mother?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "A 17-year-old Australian teenager who went missing for six days has been reunited with his mother."
     },
     {
-      "title": "At least 10 killed in Guinea clashes over gold mining ban",
-      "url": "https://www.aljazeera.com/news/2026/11/13/at-least-10-killed-in-guinea-in-crackdown-on-gold-mining?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "Guinea banned artisanal gold mining in Siguiri on November 2 due to environmental degradation, causing mass exodus."
+      "title": "Reijnders’ hat-trick fires Dutch to 7-0 rout of Greece, Germany beat Serbia",
+      "url": "https://www.aljazeera.com/sports/2026/11/14/reijnders-hattrick-netherlands-germany-uefa-nations-league-football?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "Netherlands' 7-0 annihilation of Greece means the Germans will likely need to win on Monday to reach the quarterfinals."
     },
     {
-      "title": "Israel bars supplies needed to treat six-year-old Gaza burn victim",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/israel-bars-supplies-needed-to-treat-six-year-old-gaza-burn-victim?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "Six-year-old burns victim Masa is one of the patients in Gaza whose recovery is under threat due to Israeli restrictions"
+      "title": "Protesters heckle Hakeem Jeffries at Democratic conference",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/protesters-heckle-hakeem-jeffries-at-democratic-conference?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "US House Minority Leader Hakeem Jeffries faced repeated heckling at a Democratic conference in Denver."
     },
     {
-      "title": "Eisenkot slams Netanyahu’s ‘racist’ campaign against Palestinian Israelis",
-      "url": "https://www.aljazeera.com/news/2026/11/13/eisenkot-slams-netanyahus-racist-campaign-against-palestinian-israelis?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "Prime ministerial hopeful calls attempts to marginalise and smear Palestinian citizens of Israel 'an anti-state act'."
+      "title": "The ANC’s implosion was decades in the making",
+      "url": "https://www.aljazeera.com/opinions/2026/11/14/the-ancs-implosion-was-decades-in-the-making?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "Zuma squandered Mbeki’s gains, while Ramaphosa’s dithering turned the ANC’s promised renewal into a fight for survival."
     },
     {
-      "title": "No emails, no problem? Workers joke about Microsoft outage",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/no-emails-no-problem-workers-joke-about-microsoft-outage?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "Workers worldwide have been finding humour in a global Microsoft outage that disrupted Outlook, Teams and Copilot."
+      "title": "Southeast Asian leaders to meet as Trump visit highlights trade disruption",
+      "url": "https://www.aljazeera.com/economy/2026/11/14/southeast-asian-leaders-to-meet-as-trump-visit-highlights-trade-disruption?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "ASEAN summit comes as US president embarks on Asia trip that will see him meet China's Xi."
     },
     {
-      "title": "The fight over Canadian steelworker jobs",
-      "url": "https://www.aljazeera.com/economy/2026/11/13/the-fight-over-canadian-steelworker-jobs?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "Stelco's US owner blames Trump's tariffs for layoffs, but its support for those same tariffs has raised questions."
+      "title": "Salah breaks Egypt scoring record, Tunisia lose to Libya in AFCON qualifier",
+      "url": "https://www.aljazeera.com/sports/2026/11/14/mohamed-salah-egypt-goals-record-africa-cup-of-nations-afcon-2027-qualifiers?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "Salah scored twice to take his international tally to 70 ​and surpass former captain Hossam Hassan’s record."
     },
     {
-      "title": "Jerusalem Daily: Baby dies from cold in Gaza",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/jerusalem-daily-baby-dies-from-cold-in-gaza?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "A baby dies from the cold in Gaza as 53 countries urge Israel to allow aid in."
+      "title": "Philippine court orders arrest of jailed, US-wanted celebrity preacher",
+      "url": "https://www.aljazeera.com/news/2026/11/14/philippine-court-orders-arrest-of-jailed-us-wanted-celebrity-preacher?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "Palace denies timing of warrant is linked to Trump’s visit to Manila next week."
     },
     {
-      "title": "Sixth victim confirmed in DC condo-related shooting in US, police say",
-      "url": "https://www.aljazeera.com/news/2026/11/13/sixth-victim-found-in-dc-condo-related-shooting-police-confirm?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "Police confirm sixth victim in DC condo shooting; suspect dead after barricading himself and starting a fire."
-    },
-    {
-      "title": "Truck and bus crash in India’s Assam state kills at least 24 people",
-      "url": "https://www.aljazeera.com/news/2026/11/13/truck-and-bus-crash-in-indias-assam-state-kills-at-least-24-people?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "Several children and the bus driver were among those killed, officials said, with the death toll expected to rise."
-    },
-    {
-      "title": "Turkiye and Qatar sign mutual defence agreement",
-      "url": "https://www.aljazeera.com/news/2026/11/13/turkiye-and-qatar-sign-mutual-defence-agreement?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "The pact was signed after ​the President met Qatari Emir Sheikh Tamim ‌‌bin Hamad ​Al Thani in Istanbul on ⁠⁠Friday."
-    },
-    {
-      "title": "EU agrees on five countries to represent Europe in Ukraine peace talks",
-      "url": "https://www.aljazeera.com/news/2026/11/13/europe-seeks-seat-at-ukraine-peace-talks-but-lacks-unified-voice?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "European leaders believe a US-backed process will allow Moscow and Washington to decide the fate of the conflict."
-    },
-    {
-      "title": "Will Democrats try to strip US-Israel initiative from Pentagon funding?",
-      "url": "https://www.aljazeera.com/news/2026/11/13/will-democrats-try-to-strip-us-israel-initiative-from-pentagon-funding?traffic_source=rss",
-      "date": "November 13, 2026",
-      "description": "Midterm gains give party room to overhaul NDAA funding, including provision to integrate US-Israeli military industries."
+      "title": "Siege fuels disease fears in Yemen’s Taiz",
+      "url": "https://www.aljazeera.com/news/2026/11/14/siege-fuels-disease-fears-in-yemens-besieged-taiz?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "Health officials warn that falling numbers of recorded infections may conceal a worsening disease crisis in Taiz."
     }
   ]
 }
