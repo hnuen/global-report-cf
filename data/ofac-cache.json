@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T15:08:22.744Z",
+  "updatedAt": "2026-11-14T17:08:22.991Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261113",
@@ -3275,6 +3275,12 @@
   ],
   "ajNews": [
     {
+      "title": "Myanmar airstrike kills 12 at displacement camp in Rakhine state",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/myanmar-airstrike-displacement-camp-rakhine?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "A Myanmar military airstrike on a displacement camp in Rakhine state killed 12 people."
+    },
+    {
       "title": "How does Iran view shift in US approach after JD Vance ordered away?",
       "url": "https://www.aljazeera.com/news/2026/11/14/how-does-iran-view-shift-in-us-approach-after-vance-ordered-away?traffic_source=rss",
       "date": "November 14, 2026",
@@ -3303,18 +3309,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/14/ukraine-russia-race-to-build-military-satellite-networks-as-war-rages-on?traffic_source=rss",
       "date": "November 14, 2026",
       "description": "Kyiv seeks to break reliance on Starlink as Moscow develops its own satellite constellation for military communications."
-    },
-    {
-      "title": "Qatar and Turkiye sign a mutual defence pact: What do we know?",
-      "url": "https://www.aljazeera.com/news/2026/11/14/qatar-and-turkiye-sign-a-mutual-defence-pact-what-do-we-know?traffic_source=rss",
-      "date": "November 14, 2026",
-      "description": "Analysts say the pact, agreed amid the US-Iran war, aims to deter attacks rather than build an offensive alliance."
-    },
-    {
-      "title": "UN says 25 seafarers killed in, around Hormuz since US-Israel war on Iran",
-      "url": "https://www.aljazeera.com/news/2026/11/14/un-says-25-seafarers-killed-in-around-hormuz-since-february?traffic_source=rss",
-      "date": "November 14, 2026",
-      "description": "'Situation cannot become new normal', says UN's Khaled Khiari, as Iran reports three more vessels hitting mines."
     }
   ],
   "occNews": [
@@ -3425,16 +3419,22 @@
       "description": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack."
     },
     {
+      "title": "Italy fines Meta €805m over accessing users' photos",
+      "url": "https://www.bbc.co.uk/news/articles/cwn83gxemk35o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 14, 2026",
+      "description": "The social media giant is accused of not informing about 20 million users it had access to their photos."
+    },
+    {
+      "title": "Nigeria cautions against travel via Ethiopia's main airport due to altitude",
+      "url": "https://www.bbc.co.uk/news/articles/cmz6qjpdy2wqo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 14, 2026",
+      "description": "The foreign ministry in Abuja says 6 Nigerians with underlying health problems have died this year while transiting through Addis Ababa."
+    },
+    {
       "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
       "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 14, 2026",
       "description": "Trump will discuss the \"reduction of nuclear weapons\" during the unprecedented talks, a spokeswoman says."
-    },
-    {
-      "title": "'Miracle on Mississippi' - All passengers rescued after New Orleans cruise ship collision",
-      "url": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 13, 2026",
-      "description": "The collision leaves 32 people in hospital with non-critical injuries, but no-one unaccounted for."
     },
     {
       "title": "Second catch attempt for SpaceX Starship rocket",
@@ -3443,16 +3443,22 @@
       "description": "The attempt follows an unsuccessful effort to catch of the rocket’s booster which instead came down in the ocean."
     },
     {
-      "title": "Microsoft says services fully restored after day-long global outage",
-      "url": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 14, 2026",
-      "description": "Efforts to address the underlying problem with Outlook, Teams and Copilot are complete, the tech firm says."
-    },
-    {
       "title": "Hungarian authorities uncover $20m during probe of Orbán-era minister",
       "url": "https://www.bbc.co.uk/news/articles/ckjwj03w4w0qo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 14, 2026",
       "description": "Prime Minister Péter Magyar promised a sweeping anti-corruption drive after ousting Orbán in April."
+    },
+    {
+      "title": "'Miracle on Mississippi' - All passengers rescued after New Orleans cruise ship collision",
+      "url": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 13, 2026",
+      "description": "The collision leaves 32 people in hospital with non-critical injuries, but no-one unaccounted for."
+    },
+    {
+      "title": "Microsoft says services fully restored after day-long global outage",
+      "url": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 14, 2026",
+      "description": "Efforts to address the underlying problem with Outlook, Teams and Copilot are complete, the tech firm says."
     },
     {
       "title": "Nvidia scandal fallout widens as Trump's treasury secretary blames cabinet colleague",
@@ -3471,30 +3477,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cmy4930jq749o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 13, 2026",
       "description": "Maryland Senator Van Hollen says \"new leadership\" is needed for Democrats following the party's recent midterm successes."
-    },
-    {
-      "title": "German spies handed new powers to tackle 'hybrid threats' from abroad",
-      "url": "https://www.bbc.co.uk/news/articles/c6jre3z03w4go?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 13, 2026",
-      "description": "German reforms mean foreign and domestic intelligence services will have greater powers to combat espionage, terrorism and sabotage."
-    },
-    {
-      "title": "Aide to fugitive Ukrainian ex-PM wounded in latest Moscow car bombing",
-      "url": "https://www.bbc.co.uk/news/articles/c5gm3gnwl42eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 13, 2026",
-      "description": "Sergei Zavorotny, now a journalist and commentator, was previously an adviser to Ukrainian ex-prime minister Mykola Azarov."
-    },
-    {
-      "title": "Rosalía scoops historic third best album award at Latin Grammys",
-      "url": "https://www.bbc.co.uk/news/articles/cr3eg97eqde1o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 13, 2026",
-      "description": "The Spanish singer is recognised for her fourth album Lux which was released last year to rave reviews."
-    },
-    {
-      "title": "African Miss Universe beauty queens in limbo as US visa restrictions bite",
-      "url": "https://www.bbc.co.uk/news/articles/cklyw3neqg2wo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 13, 2026",
-      "description": "Hall has been seeking a US visa in South Africa as other African beauty queens face similar hurdles."
     },
     {
       "title": "'We'll get home one day' - US travellers impacted by nationwide ground stop",
@@ -3893,6 +3875,36 @@
       "description": "We ask people in New York City how much they pay for their homes."
     },
     {
+      "title": "Italy fines Meta $880m over photo privacy",
+      "url": "https://www.aljazeera.com/news/2026/11/14/italy-fines-meta-880m-over-photo-privacy?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "Regulator said Meta's 'lack of cooperation' and the large number of people affected contributed to size of the fine."
+    },
+    {
+      "title": "EU calls for immediate humanitarian access to Gaza",
+      "url": "https://www.aljazeera.com/news/2026/11/14/eu-calls-for-immediate-humanitarian-access-to-gaza?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "The EU said that “Israel must enable the work of the UN and its agencies\" after the group was blocked access into Gaza."
+    },
+    {
+      "title": "Jerusalem Daily: Israeli forces occupy Palestinian-American’s home",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/jerusalem-daily-israeli-forces-occupy-palestinian-americans-home?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "Israeli forces occupied a Palestinian-American’s home in the occupied West Bank for 17 days."
+    },
+    {
+      "title": "NASA’s Voyager 1 to hit new space distance record of one light-day",
+      "url": "https://www.aljazeera.com/news/2026/11/14/nasas-voyager-1-to-hit-new-space-distance-record-of-one-light-day?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "The probe was launched in 1977, and it continues to relay space-related data back to a team of NASA scientists."
+    },
+    {
+      "title": "Canada’s Stelco to recall 175 workers after government pressure",
+      "url": "https://www.aljazeera.com/economy/2026/11/14/canadas-stelco-to-recall-175-workers-after-government-pressure?traffic_source=rss",
+      "date": "November 14, 2026",
+      "description": "Steelmaker promises back pay for workers whose layoffs its US owner blamed on tariffs, weak demand and imports."
+    },
+    {
       "title": "Why US Democrats are expected to keep Schumer and Jeffries in power",
       "url": "https://www.aljazeera.com/news-analysis/2026/11/14/why-us-democrats-are-expected-to-keep-schumer-and-jeffries-in-power?traffic_source=rss",
       "date": "November 14, 2026",
@@ -3975,30 +3987,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/pochettino-bids-emotional-farewell-to-us-football-ahead-of-man-utd-move?traffic_source=rss",
       "date": "November 14, 2026",
       "description": "Mauricio Pochettino has bid an emotional farewell to US football as he prepares to take charge of Manchester United."
-    },
-    {
-      "title": "Nearly $20m found in Hungary’s forests, buildings amid corruption probe",
-      "url": "https://www.aljazeera.com/news/2026/11/14/hungarian-investigators-uncover-19-5m-hidden-in-forests-and-buildings?traffic_source=rss",
-      "date": "November 14, 2026",
-      "description": "An ex-minister faces a bribery probe as Hungary's new government investigates alleged corruption during Orban's rule."
-    },
-    {
-      "title": "Hungary seizes $18m cash tied to ex-Orban-era minister in probe",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/hungary-seizes-18m-cash-tied-to-ex-orban-era-minister-in-probe?traffic_source=rss",
-      "date": "November 14, 2026",
-      "description": "Anti-corruption authorities in Hungary say they found around $18 million in hidden cash."
-    },
-    {
-      "title": "Warner accuses Cricket Australia of ‘cover-up’ in ball-tampering scandal",
-      "url": "https://www.aljazeera.com/sports/2026/11/14/warner-cricket-australia-ball-tampering-sandpapergate-khawaja-cummins?traffic_source=rss",
-      "date": "November 14, 2026",
-      "description": "Former opener Warner was banned for a year for his involvement in the 2018 'Sandpapergate' incident in South Africa."
-    },
-    {
-      "title": "Pacers hold off Knicks in NBA Cup thriller, Spurs rout Warriors",
-      "url": "https://www.aljazeera.com/sports/2026/11/14/nba-cup-basketball-pacers-knicks-spurs-warriors?traffic_source=rss",
-      "date": "November 14, 2026",
-      "description": "The New York Knicks look unlikely to advance to the NBA Cup knockout rounds after falling to the Indiana Pacers."
     }
   ]
 }
