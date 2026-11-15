@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T17:08:42.859Z",
+  "updatedAt": "2026-11-15T19:08:21.968Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261113",
@@ -3249,6 +3249,12 @@
   "unNotices": [],
   "bbcNews": [
     {
+      "title": "Zelensky urges US and Musk to lift Starlink restrictions and be on 'right side of history'",
+      "url": "https://www.bbc.co.uk/news/articles/c6m25zg88k45o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 15, 2026",
+      "description": "The Ukrainian president says restrictions are still in place and making it difficult to stop Russian attacks."
+    },
+    {
       "title": "Iran targets US military base in Bahrain with drone attack",
       "url": "https://www.bbc.co.uk/news/articles/cqn4e2py48kwo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 15, 2026",
@@ -3256,6 +3262,12 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Estonia to close border crossings with Russia after attack on drone maker",
+      "url": "https://www.aljazeera.com/news/2026/11/15/estonia-to-close-border-crossings-with-russia-after-attack-on-drone-maker?traffic_source=rss",
+      "date": "November 15, 2026",
+      "description": "Eight arrests made in connection with an attempted arson, which Tallinn says was ordered by Russian intelligence."
+    },
     {
       "title": "Flames engulf Syrian refugee camp in eastern Lebanon",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/flames-engulf-syrian-refugee-camp-in-eastern-lebanon?traffic_source=rss",
@@ -3267,18 +3279,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/15/starshield-restrictions-help-russias-energy-attacks-on-ukraine-zelenskyy?traffic_source=rss",
       "date": "November 15, 2026",
       "description": "Starlink has recently denied restricting internet speeds, but Elon Musk suggested the US military could be behind it."
-    },
-    {
-      "title": "Bahrain accuses Iran of attacking its territory to ‘settle’ score with US",
-      "url": "https://www.aljazeera.com/news/2026/11/15/bahrain-accuses-iran-of-attacking-its-territory-to-settle-score-with-us?traffic_source=rss",
-      "date": "November 15, 2026",
-      "description": "Tehran says its air attacks on countries cooperating with the US are justified under international law."
-    },
-    {
-      "title": "Iran targets US military radar in Bahrain in ‘retaliatory’ drone strikes",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/iran-targets-us-military-radar-in-bahrain-in-retaliatory-drone-strikes?traffic_source=rss",
-      "date": "November 15, 2026",
-      "description": "Iran’s IRGC says six drones were launched at a US radar installation at an air base in Bahrain."
     }
   ],
   "occNews": [
@@ -3410,13 +3410,7 @@
       "title": "Czechs rally against plan to switch funding of public media",
       "url": "https://www.bbc.co.uk/news/articles/cm8e0knr7604o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 15, 2026",
-      "description": "Protesters say the move will stifle media freedom, while the coalition government insists broadcasters need to cut costs."
-    },
-    {
-      "title": "Fifth Canadian soldier dies from injuries caused by large fire at military base",
-      "url": "https://www.bbc.co.uk/news/articles/cmrlgn4x2xw8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 15, 2026",
-      "description": "Pte William Douglas Dal Bianco died from his injuries on Friday, a month after a fire that tore through CFB Wainwright."
+      "description": "Protesters say the move will stifle media freedom, while the government insists broadcasters need to cut costs."
     },
     {
       "title": "Judge blocks Trump closure of 'Trash Island' Washington DC golf course on Sunday",
@@ -3431,10 +3425,10 @@
       "description": "Santa Cruz de Succhabamba is part of the Diocese of Chiclayo, where the Pope served as bishop from 2015 to 2023."
     },
     {
-      "title": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
-      "url": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 14, 2026",
-      "description": "The US has not confirmed the Ukrainian president's comments - a US official told the BBC \"many ideas continue to be discussed\"."
+      "title": "Fifth Canadian soldier dies from injuries caused by large fire at military base",
+      "url": "https://www.bbc.co.uk/news/articles/cmrlgn4x2xw8o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 15, 2026",
+      "description": "Pte William Douglas Dal Bianco died from his injuries on Friday, a month after a fire that tore through CFB Wainwright."
     },
     {
       "title": "New Orleans port files $1m lawsuit over 'miracle on the Mississippi' tanker collision",
@@ -3875,6 +3869,54 @@
       "description": "We ask people in New York City how much they pay for their homes."
     },
     {
+      "title": "Prince Harry in Ukraine meeting Invictus 2027 hopefuls",
+      "url": "https://www.aljazeera.com/news/2026/11/15/prince-harry-in-ukraine-meeting-invictus-2027-hopefuls?traffic_source=rss",
+      "date": "November 15, 2026",
+      "description": "British royal says he's 'taken a risk' in his fourth surprise visit to Ukraine since 2022 to meet wounded veterans."
+    },
+    {
+      "title": "Christian priest says US denied him a visa for being Palestinian",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/christian-priest-says-us-denied-him-a-visa-for-being-palestinian?traffic_source=rss",
+      "date": "November 15, 2026",
+      "description": "A Christian priest from Bethlehem, the birthplace of Jesus, says the US denied him a visa because he is Palestinian."
+    },
+    {
+      "title": "Nearly 1,500 migrants reach Spain’s Canary Islands in one day",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/nearly-1500-migrants-reach-spains-canary-islands-in-one-day?traffic_source=rss",
+      "date": "November 15, 2026",
+      "description": "Nearly 1,500 migrants reach Spain’s Canary Islands in one day"
+    },
+    {
+      "title": "Morocco becomes first Arab nation in FIFA’s top five men’s rankings",
+      "url": "https://www.aljazeera.com/sports/2026/11/15/morocco-becomes-first-arab-nation-in-fifas-top-five-mens-rankings?traffic_source=rss",
+      "date": "November 15, 2026",
+      "description": "Morocco moved past former Euro champions Portugal and record World Cup winners Brazil to achieve its best FIFA ranking."
+    },
+    {
+      "title": "Yemeni government forces redeploy from Bab al-Mandeb to defend Aden",
+      "url": "https://www.aljazeera.com/news/2026/11/15/yemeni-government-forces-redeploy-from-bab-al-mandeb-to-defend-aden?traffic_source=rss",
+      "date": "November 15, 2026",
+      "description": "Spokesman for the Southern Armed Forces says group is repositioning from Dhubab airport and areas around Bab al-Mandeb."
+    },
+    {
+      "title": "The hidden costs of the US AI boom",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/the-hidden-costs-of-the-us-ai-boom?traffic_source=rss",
+      "date": "November 15, 2026",
+      "description": "The hidden costs of the US AI boom"
+    },
+    {
+      "title": "Somalia: We would not have recovered without the international community",
+      "url": "https://www.aljazeera.com/video/talk-to-al-jazeera/2026/11/15/somalia-we-would-not-have-recovered-without-the-international-community?traffic_source=rss",
+      "date": "November 15, 2026",
+      "description": "Somalia continues to face al-Shabab rebellion and political friction, leading officials to urge international support."
+    },
+    {
+      "title": "Spain vs England live: UEFA Nations League",
+      "url": "https://www.aljazeera.com/sports/liveblog/2026/11/15/live-spain-vs-england-uefa-nations-league?traffic_source=rss",
+      "date": "November 15, 2026",
+      "description": "Team news , score and live text commentary as England and Spain vie for top spot in final Nations League group game."
+    },
+    {
       "title": "Thousands rally in Czech Republic against state media funding changes",
       "url": "https://www.aljazeera.com/news/2026/11/15/thousands-rally-in-czech-republic-against-state-media-funding-changes?traffic_source=rss",
       "date": "November 15, 2026",
@@ -3957,48 +3999,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/explosive-attack-targets-investigative-journalists-home-in-panama?traffic_source=rss",
       "date": "November 15, 2026",
       "description": "An investigative journalist’s home in Panama was attacked in a suspected bombing."
-    },
-    {
-      "title": "Al Jazeera English celebrates 20 years on air",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/al-jazeera-english-celebrates-20-years-on-air?traffic_source=rss",
-      "date": "November 15, 2026",
-      "description": "For 20 years, Al Jazeera English has brought untold stories to the world, giving a voice to the voiceless."
-    },
-    {
-      "title": "Al Jazeera English marks 20 years: Stories that shaped the journey",
-      "url": "https://www.aljazeera.com/news/2026/11/15/al-jazeera-english-marks-20-years-stories-that-shaped-the-journey?traffic_source=rss",
-      "date": "November 15, 2026",
-      "description": "Here are some of the crucial events Al Jazeera English has covered over the past two decades."
-    },
-    {
-      "title": "Kayla ⁠⁠Harrison defeats Amanda Nunes to retain UFC bantamweight belt",
-      "url": "https://www.aljazeera.com/sports/2026/11/15/kayla-%e2%81%a0%e2%81%a0harrison-defeats-amanda-nunes-to-retain-ufc-bantamweight-belt?traffic_source=rss",
-      "date": "November 15, 2026",
-      "description": "Harrison won by a fourth-round submission against MMA legend Nunes, who made a comeback after a three-year absence."
-    },
-    {
-      "title": "Aid agencies struggle to help more than 50,000 Ethiopian refugees in Kenya",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/aid-agencies-struggle-to-help-more-than-50000-ethiopian-refugees-in-kenya?traffic_source=rss",
-      "date": "November 15, 2026",
-      "description": "Aid agencies are struggling to provide food, medical care and shelter to more than 50,000 Ethiopian refugees in Kenya."
-    },
-    {
-      "title": "Australia crush New Zealand to win fourth Women’s Rugby League World Cup",
-      "url": "https://www.aljazeera.com/sports/2026/11/15/australia-crush-new-zealand-to-win-fourth-womens-rugby-league-world-cup?traffic_source=rss",
-      "date": "November 15, 2026",
-      "description": "Australia dominated the first half and capitalised on the Kiwi Ferns’ errors to win 34-10 and clinch the trophy."
-    },
-    {
-      "title": "Siege on Hebron’s Beit Ula industrial zone threatens Palestinian economy",
-      "url": "https://www.aljazeera.com/economy/2026/11/15/siege-on-hebrons-beit-ula-industrial-zone-threatens-palestinian-economy?traffic_source=rss",
-      "date": "November 15, 2026",
-      "description": "Israel takes measures to crush Palestinian business in the occupied West Bank."
-    },
-    {
-      "title": "Israel coalition talks put Arab party leader under pressure over Hamas",
-      "url": "https://www.aljazeera.com/news/2026/11/15/israel-coalition-talks-put-arab-party-leader-under-pressure-over-hamas?traffic_source=rss",
-      "date": "November 15, 2026",
-      "description": "Mansour Abbas faces mounting pressure from Israel’s change bloc to denounce Hamas as a prerequisite for coalition role."
     }
   ]
 }
