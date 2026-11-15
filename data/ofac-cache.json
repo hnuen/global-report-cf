@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T21:08:22.675Z",
+  "updatedAt": "2026-11-15T22:08:19.703Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261113",
@@ -3252,7 +3252,7 @@
       "title": "Zelensky urges US and Musk to lift Starlink restrictions and be on 'right side of history'",
       "url": "https://www.bbc.co.uk/news/articles/c6m25zg88k45o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 15, 2026",
-      "description": "The Ukrainian president says restrictions are still in place and making it difficult to stop Russian attacks."
+      "description": "The Ukrainian president says the slowed-down internet is making it difficult to stop Russian attacks."
     },
     {
       "title": "Iran targets US military base in Bahrain with drone attack",
@@ -3262,6 +3262,12 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "US Treasury chief calls for outsider to lead embattled tech firm Nvidia",
+      "url": "https://www.aljazeera.com/news/2026/11/15/us-treasury-chief-calls-for-outsider-to-lead-embattled-tech-firm-nvidia?traffic_source=rss",
+      "date": "November 15, 2026",
+      "description": "Scott Bessent gives Nvidia's board 10 days to show the company's compliance with US export controls."
+    },
     {
       "title": "Estonia to close border crossings with Russia after alleged arson attack",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/estonia-to-close-border-crossings-with-russia-after-alleged-arson-attack?traffic_source=rss",
@@ -3273,12 +3279,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/15/estonia-to-close-border-crossings-with-russia-after-attack-on-drone-maker?traffic_source=rss",
       "date": "November 15, 2026",
       "description": "Eight arrests made in connection with an attempted arson, which Tallinn says was ordered by Russian intelligence."
-    },
-    {
-      "title": "Flames engulf Syrian refugee camp in eastern Lebanon",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/flames-engulf-syrian-refugee-camp-in-eastern-lebanon?traffic_source=rss",
-      "date": "November 15, 2026",
-      "description": "A fire tore through a Syrian refugee camp in Bar Elias, eastern Lebanon."
     }
   ],
   "occNews": [
@@ -3833,6 +3833,18 @@
       "description": "We ask people in New York City how much they pay for their homes."
     },
     {
+      "title": "Yemen’s Houthis unilaterally release 600 war detainees",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/yemens-houthis-unilaterally-release-600-war-detainees?traffic_source=rss",
+      "date": "November 15, 2026",
+      "description": "Yemen’s Houthis have released 600 people imprisoned during the country’s civil war."
+    },
+    {
+      "title": "Photos: Pope Leo visits Peru’s Amazon and Andean regions during 12-day tour",
+      "url": "https://www.aljazeera.com/gallery/2026/11/15/photos-pope-leo-visits-perus-amazon-and-andean-regions-during-12-day-tour?traffic_source=rss",
+      "date": "November 15, 2026",
+      "description": "The pope has called for the preservation of Indigenous traditions in Peru as he wraps up a 12-day tour of Latin America."
+    },
+    {
       "title": "Palestinians reclaim Gaza’s shores with a swim for hope",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/palestinians-reclaim-gazas-shores-with-a-swim-for-hope?traffic_source=rss",
       "date": "November 15, 2026",
@@ -3951,18 +3963,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/jerusalem-daily-mass-funeral-in-gaza-as-netanyahu-clings-to-power?traffic_source=rss",
       "date": "November 15, 2026",
       "description": "A mass funeral was held in Gaza for 70 Palestinians whose bodies were trapped under the rubble."
-    },
-    {
-      "title": "Fascism built the AI bubble. What will burst it?",
-      "url": "https://www.aljazeera.com/video/deja-vu-2/2026/11/15/fascism-built-the-ai-bubble-what-will-burst-it?traffic_source=rss",
-      "date": "November 15, 2026",
-      "description": "In the latest episode of Deja Vu, Naomi Klein and Astra Taylor examine the latest model of disaster capitalism."
-    },
-    {
-      "title": "20 Years of Al Jazeera English: The Counter Narrative",
-      "url": "https://www.aljazeera.com/video/featured-documentaries/2026/11/15/twenty-years-of-al-jazeera-english-the?traffic_source=rss",
-      "date": "November 15, 2026",
-      "description": "Two decades of AJE: Shaping media, amplifying unheard voices and driving global conversations."
     }
   ]
 }
