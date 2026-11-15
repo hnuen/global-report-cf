@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T13:08:23.113Z",
+  "updatedAt": "2026-11-15T15:08:20.353Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261113",
@@ -3247,8 +3247,27 @@
     }
   ],
   "unNotices": [],
-  "bbcNews": [],
+  "bbcNews": [
+    {
+      "title": "Iran targets US military base in Bahrain with drone attack",
+      "url": "https://www.bbc.co.uk/news/articles/cqn4e2py48kwo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 15, 2026",
+      "description": "It marks the second attack on the country in three days and comes as the US and Iran remain locked in a stand-off over the Strait of Hormuz."
+    }
+  ],
   "ajNews": [
+    {
+      "title": "Flames engulf Syrian refugee camp in eastern Lebanon",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/flames-engulf-syrian-refugee-camp-in-eastern-lebanon?traffic_source=rss",
+      "date": "November 15, 2026",
+      "description": "A fire tore through a Syrian refugee camp in Bar Elias, eastern Lebanon."
+    },
+    {
+      "title": "Starshield restrictions help Russia’s energy attacks on Ukraine: Zelenskyy",
+      "url": "https://www.aljazeera.com/news/2026/11/15/starshield-restrictions-help-russias-energy-attacks-on-ukraine-zelenskyy?traffic_source=rss",
+      "date": "November 15, 2026",
+      "description": "Starlink has recently denied restricting internet speeds, but Elon Musk suggested the US military could be behind it."
+    },
     {
       "title": "Bahrain accuses Iran of attacking its territory to ‘settle’ score with US",
       "url": "https://www.aljazeera.com/news/2026/11/15/bahrain-accuses-iran-of-attacking-its-territory-to-settle-score-with-us?traffic_source=rss",
@@ -3266,18 +3285,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/15/give-donbas-take-nato-seat-could-new-us-pitch-work-for-ukraine-russia?traffic_source=rss",
       "date": "November 15, 2026",
       "description": "Ukraine's NATO ambition has always been a red line for the Kremlin. Giving up territory has been a no-no for Ukraine."
-    },
-    {
-      "title": "Iran says it targets US radar in Bahrain. What do we know?",
-      "url": "https://www.aljazeera.com/news/2026/11/15/iran-says-it-targets-us-radar-in-bahrain-what-do-we-know?traffic_source=rss",
-      "date": "November 15, 2026",
-      "description": "Bahrain Defence Force says its air defence systems thwart several Iranian 'aerial attacks'."
-    },
-    {
-      "title": "ASEAN summit: Who’s attending and what’s at stake?",
-      "url": "https://www.aljazeera.com/news/2026/11/15/asean-summit-whos-attending-and-whats-at-stake?traffic_source=rss",
-      "date": "November 15, 2026",
-      "description": "Energy disruptions as a result of the US-Israel war on Iran is a key issue for the import-dependent bloc."
     }
   ],
   "occNews": [
@@ -3382,16 +3389,22 @@
   ],
   "regionsNews": [
     {
-      "title": "New Orleans port files $1m lawsuit over 'miracle on the Mississippi' tanker collision",
-      "url": "https://www.bbc.co.uk/news/articles/cwe89y2r5j20o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 14, 2026",
-      "description": "The lawsuit filed by New Orleans officials also requests that the tanker involved in the collision with the cruise ship be seized and sold to pay for damages."
-    },
-    {
       "title": "Three men sentenced to death in Jordan over fatal church mass shooting",
       "url": "https://www.bbc.co.uk/news/articles/c3rrg9xgqlwpo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 15, 2026",
       "description": "The attack on funeral at a Greek Orthodox church killed nine and injured 34 others last month."
+    },
+    {
+      "title": "South Korea's top scorer in tax accountancy exam admits cheating",
+      "url": "https://www.bbc.co.uk/news/articles/ckvg2ezvpe08o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 15, 2026",
+      "description": "Han Won-seok, 34, confessed to using a hidden camera and AI to get a near-perfect mark on the significant test."
+    },
+    {
+      "title": "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says",
+      "url": "https://www.bbc.co.uk/news/articles/cmdx1vpprk9vo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 15, 2026",
+      "description": "The Nvidia scandal has raised questions over whether advanced AI chips ended up in China, despite US restrictions."
     },
     {
       "title": "Israel kills Hamas commander in strike on Gaza camp, officials say",
@@ -3400,16 +3413,16 @@
       "description": "Both Hamas and IDF officials confirm the death of Samir Abu Younis, commander of the Rafah Brigade."
     },
     {
+      "title": "New Orleans port files $1m lawsuit over 'miracle on the Mississippi' tanker collision",
+      "url": "https://www.bbc.co.uk/news/articles/cwe89y2r5j20o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 15, 2026",
+      "description": "The lawsuit filed by New Orleans officials also requests that the tanker involved in the collision with the cruise ship be seized and sold to pay for damages."
+    },
+    {
       "title": "Fifth Canadian soldier dies from injuries caused by large fire at military base",
       "url": "https://www.bbc.co.uk/news/articles/cmrlgn4x2xw8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 15, 2026",
       "description": "Pte William Douglas Dal Bianco died from his injuries on Friday, a month after a fire that tore through CFB Wainwright."
-    },
-    {
-      "title": "Copper wire upgrade behind US flight suspension, transport secretary says",
-      "url": "https://www.bbc.co.uk/news/articles/c6wy9lynq4qno?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 15, 2026",
-      "description": "The US government is trying to find out whether the chaos was caused by \"incompetence\" or faulty equipment."
     },
     {
       "title": "Judge temporarily blocks Trump from closing Washington DC golf course for renovation",
@@ -3434,6 +3447,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cqrlgnx9dx6eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 14, 2026",
       "description": "Front-runner Carmelle emerges victorious with her women's empowerment anthem Sobra-Sobra."
+    },
+    {
+      "title": "Copper wire upgrade behind US flight suspension, transport secretary says",
+      "url": "https://www.bbc.co.uk/news/articles/c6wy9lynq4qno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 15, 2026",
+      "description": "The US government is trying to find out whether the chaos was caused by \"incompetence\" or faulty equipment."
     },
     {
       "title": "Italy fines Meta €805m over accessing users' photos",
@@ -3498,7 +3517,7 @@
     {
       "title": "How telecoms upgrade work sparked US flight chaos",
       "url": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 14, 2026",
+      "date": "November 15, 2026",
       "description": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack."
     },
     {
@@ -3512,6 +3531,18 @@
       "url": "https://www.bbc.co.uk/news/articles/cq99e0z4vg1eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 13, 2026",
       "description": "A new wave of youth dissent swept India this summer, fuelled by frustration and irreverent online satire."
+    },
+    {
+      "title": "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says",
+      "url": "https://www.bbc.co.uk/news/articles/cmdx1vpprk9vo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 15, 2026",
+      "description": "The Nvidia scandal has raised questions over whether advanced AI chips ended up in China, despite US restrictions."
+    },
+    {
+      "title": "Minister backs legal right to job support for young people",
+      "url": "https://www.bbc.co.uk/news/articles/cqr7gn1zmlj1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 15, 2026",
+      "description": "The work and pensions secretary said the level of support currently on offer was too vague."
     },
     {
       "title": "Beauty advent calendars can cost hundreds but are they value for money?",
@@ -3532,6 +3563,18 @@
       "description": "Efforts to address the underlying problem with Outlook, Teams and Copilot are complete, the tech firm says."
     },
     {
+      "title": "Heat pumps: How much heat does your home really need?",
+      "url": "https://www.bbc.co.uk/news/articles/cqy43zk3kk04o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 13, 2026",
+      "description": "Knowing how much heat your home loses is important before installing a new heating system."
+    },
+    {
+      "title": "The rise of 'housefishing' - when does using AI go from enhancing to misleading?",
+      "url": "https://www.bbc.co.uk/news/articles/cm62y0wrnz9zo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 13, 2026",
+      "description": "Experts warn that using AI to enhance property images can go too far and mislead prospective buyers."
+    },
+    {
       "title": "Why is Microsoft's outage lasting so long and will emails be lost?",
       "url": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 13, 2026",
@@ -3542,18 +3585,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cqvg2d1eg7zro?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 13, 2026",
       "description": "Scott Bessent told CNBC that several government agencies \"were in favour of putting Megaspeed on the entity list for months\"."
-    },
-    {
-      "title": "The rise of 'housefishing' - when does using AI go from enhancing to misleading?",
-      "url": "https://www.bbc.co.uk/news/articles/cm62y0wrnz9zo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 13, 2026",
-      "description": "Experts warn that using AI to enhance property images can go too far and mislead prospective buyers."
-    },
-    {
-      "title": "Heat pumps: How much heat does your home really need?",
-      "url": "https://www.bbc.co.uk/news/articles/cqy43zk3kk04o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 13, 2026",
-      "description": "Knowing how much heat your home loses is important before installing a new heating system."
     },
     {
       "title": "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy",
@@ -3662,18 +3693,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cw1m4d8vjvppo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 9, 2026",
       "description": "Kashim Chowdhury has been convicted of fraud after pocketing £284,000 of taxpayers' money over three years."
-    },
-    {
-      "title": "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
-      "url": "https://www.bbc.co.uk/news/articles/c6zxjx01vyleo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 9, 2026",
-      "description": "The share price dropped wiped hundreds of billions of dollars from the value of Nvidia."
-    },
-    {
-      "title": "Zoe Kleinman: Nvidia CEO's affair will cause ripples across US and beyond",
-      "url": "https://www.bbc.co.uk/news/articles/cj3vqv3nee72o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 9, 2026",
-      "description": "Jensen Huang is being investigated by his own company over an extramarital affair with a woman alleged to be a Chinese spy."
     },
     {
       "title": "How a sex scandal at Nvidia is putting pressure on the White House",
@@ -3856,6 +3875,72 @@
       "description": "We ask people in New York City how much they pay for their homes."
     },
     {
+      "title": "Fascism built the AI bubble. What will burst it?",
+      "url": "https://www.aljazeera.com/video/deja-vu-2/2026/11/15/fascism-built-the-ai-bubble-what-will-burst-it?traffic_source=rss",
+      "date": "November 15, 2026",
+      "description": "In the latest episode of Deja Vu, Naomi Klein and Astra Taylor examine the latest model of disaster capitalism."
+    },
+    {
+      "title": "Twenty Years of Al Jazeera English: The Counternarrative",
+      "url": "https://www.aljazeera.com/video/featured-documentaries/2026/11/15/twenty-years-of-al-jazeera-english-the?traffic_source=rss",
+      "date": "November 15, 2026",
+      "description": "Two decades of AJE: Shaping media, amplifying unheard voices and driving global conversations."
+    },
+    {
+      "title": "‘Almost magic’ as SpaceX craft caught mid-air: Why it matters",
+      "url": "https://www.aljazeera.com/news/2026/11/15/almost-magic-as-spacex-craft-caught-mid-air-why-it-matters?traffic_source=rss",
+      "date": "November 15, 2026",
+      "description": "SpaceX's Starship successfully returned to its launchpad after orbiting in space."
+    },
+    {
+      "title": "Can Netanyahu and Eisenkot form a ‘unity’ government in Israel?",
+      "url": "https://www.aljazeera.com/news/2026/11/15/can-netanyahu-and-eisenkot-form-a-unity-government-in-israel?traffic_source=rss",
+      "date": "November 15, 2026",
+      "description": "Yashar and Likud are scheduled to hold talks on Sunday, but will need to overcome major differences to work together."
+    },
+    {
+      "title": "Germany vs Netherlands: Nations League – preview, team news, predictions",
+      "url": "https://www.aljazeera.com/sports/2026/11/15/germany-vs-netherlands-nations-league-preview-team-news-predictions?traffic_source=rss",
+      "date": "November 15, 2026",
+      "description": "Germany will likely need to win on Monday to reach the quarterfinals unless Serbia beat Greece away from home."
+    },
+    {
+      "title": "Gaza families bury bodies of loved ones trapped for years under rubble",
+      "url": "https://www.aljazeera.com/features/2026/11/15/gaza-families-bury-bodies-of-loved-ones-trapped-for-years-under-rubble?traffic_source=rss",
+      "date": "November 15, 2026",
+      "description": "The remains of 69 Palestinians have been recovered in northern Gaza, allowing families to bury them."
+    },
+    {
+      "title": "Explosive attack targets investigative journalist’s home in Panama",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/explosive-attack-targets-investigative-journalists-home-in-panama?traffic_source=rss",
+      "date": "November 15, 2026",
+      "description": "An investigative journalist’s home in Panama was attacked in a suspected bombing."
+    },
+    {
+      "title": "Al Jazeera English celebrates 20 years on air",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/al-jazeera-english-celebrates-20-years-on-air?traffic_source=rss",
+      "date": "November 15, 2026",
+      "description": "For 20 years, Al Jazeera English has brought untold stories to the world, giving a voice to the voiceless."
+    },
+    {
+      "title": "Al Jazeera English marks 20 years: Stories that shaped the journey",
+      "url": "https://www.aljazeera.com/news/2026/11/15/al-jazeera-english-marks-20-years-stories-that-shaped-the-journey?traffic_source=rss",
+      "date": "November 15, 2026",
+      "description": "Here are some of the crucial events Al Jazeera English has covered over the past two decades."
+    },
+    {
+      "title": "Kayla ⁠⁠Harrison defeats Amanda Nunes to retain UFC bantamweight belt",
+      "url": "https://www.aljazeera.com/sports/2026/11/15/kayla-%e2%81%a0%e2%81%a0harrison-defeats-amanda-nunes-to-retain-ufc-bantamweight-belt?traffic_source=rss",
+      "date": "November 15, 2026",
+      "description": "Harrison won by a fourth-round submission against MMA legend Nunes, who made a comeback after a three-year absence."
+    },
+    {
+      "title": "Aid agencies struggle to help more than 50,000 Ethiopian refugees in Kenya",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/aid-agencies-struggle-to-help-more-than-50000-ethiopian-refugees-in-kenya?traffic_source=rss",
+      "date": "November 15, 2026",
+      "description": "Aid agencies are struggling to provide food, medical care and shelter to more than 50,000 Ethiopian refugees in Kenya."
+    },
+    {
       "title": "Australia crush New Zealand to win fourth Women’s Rugby League World Cup",
       "url": "https://www.aljazeera.com/sports/2026/11/15/australia-crush-new-zealand-to-win-fourth-womens-rugby-league-world-cup?traffic_source=rss",
       "date": "November 15, 2026",
@@ -3908,72 +3993,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/15/polls-open-in-cape-verde-in-race-with-first-female-presidential-candidate?traffic_source=rss",
       "date": "November 15, 2026",
       "description": "Joana Rosa and four other opposition candidates face off against President Jose Maria Neves, who wants a second term."
-    },
-    {
-      "title": "Drone attacks on power stations plunge Sudan’s cities into darkness",
-      "url": "https://www.aljazeera.com/features/2026/11/15/drone-strikes-on-power-stations-plunges-sudans-cities-into-darkness?traffic_source=rss",
-      "date": "November 15, 2026",
-      "description": "Sudan's power stations are being targeted in waves of drone attacks, resulting in power outages."
-    },
-    {
-      "title": "Protesters condemn US policies as ASEAN summit begins in Manila",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/protesters-condemn-us-policies-as-asean-summit-begins-in-manila?traffic_source=rss",
-      "date": "November 15, 2026",
-      "description": "Southeast Asian leaders arriving in the Philippines for the ASEAN summit have been met with protests."
-    },
-    {
-      "title": "What forced the US to ground all planes? A router switch, we now know",
-      "url": "https://www.aljazeera.com/news/2026/11/15/what-forced-the-us-to-ground-all-planes-a-router-switch-we-now-know?traffic_source=rss",
-      "date": "November 15, 2026",
-      "description": "US officials say a routine upgrade that went awry caused the mass disruption of air travel."
-    },
-    {
-      "title": "India pulled 500m people out of poverty. Many of them still barely survive",
-      "url": "https://www.aljazeera.com/features/2026/11/15/india-pulled-500m-people-out-of-poverty-since-2011-why-doesnt-it-feel-so?traffic_source=rss",
-      "date": "November 15, 2026",
-      "description": "World Bank says India pulled a record number of citizens out of poverty, but millions of them still live on the edge."
-    },
-    {
-      "title": "Thousands in Portugal protest against surging rental prices",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/thousands-in-portugal-protest-against-surging-rental-prices?traffic_source=rss",
-      "date": "November 15, 2026",
-      "description": "Thousands of people across Portugal are angry about rising rental prices, demanding action to end the housing crisis."
-    },
-    {
-      "title": "De la Fuente denies racism in Spain despite Yamal, Vinicius avowals",
-      "url": "https://www.aljazeera.com/sports/2026/11/15/de-la-fuente-denies-racism-in-spain-despite-yamal-vinicius-avowals?traffic_source=rss",
-      "date": "November 15, 2026",
-      "description": "Yamal and Vinicius have publicly said they face racist abuse in Spain, which has faced FIFA punishment over the issue."
-    },
-    {
-      "title": "Jordan sentences three men to death by hanging after deadly church attack",
-      "url": "https://www.aljazeera.com/news/2026/11/15/jordan-sentences-three-men-to-death-by-hanging-after-deadly-church-attack?traffic_source=rss",
-      "date": "November 15, 2026",
-      "description": "Three men have been convicted of carrying out an attack on a church in the Karak governorate that killed nine people."
-    },
-    {
-      "title": "Pact on South China Sea code of conduct unlikely, as ASEAN leaders gather",
-      "url": "https://www.aljazeera.com/economy/2026/11/15/pact-on-south-china-sea-code-of-conduct-unlikely-as-asean-leaders-gather?traffic_source=rss",
-      "date": "November 15, 2026",
-      "description": "Finishing negotiations for disputed South China Sea agreement will be a 'tall order', analysts say."
-    },
-    {
-      "title": "Japan stun Brazil 3-2 in stoppage time as Ancelotti, Raphinha sent off",
-      "url": "https://www.aljazeera.com/sports/2026/11/15/japan-stun-brazil-3-2-in-stoppage-time-as-ancelotti-raphinha-sent-off?traffic_source=rss",
-      "date": "November 15, 2026",
-      "description": "Substitute Tatsuhiro Sakamoto’s late goal helps Japan avenge their defeat by Brazil in the World Cup round of 32."
-    },
-    {
-      "title": "Israel: Making the Holy Land burn",
-      "url": "https://www.aljazeera.com/opinions/2026/11/15/israel-making-the-holy-land-burn?traffic_source=rss",
-      "date": "November 15, 2026",
-      "description": "For all its greenwashing, the Zionist state has ecologically devastated Palestine more than anyone else."
-    },
-    {
-      "title": "The French Republic’s forgotten promise of equality",
-      "url": "https://www.aljazeera.com/opinions/2026/11/15/the-french-republics-forgotten-promise-of-equality?traffic_source=rss",
-      "date": "November 15, 2026",
-      "description": "French youth learn in school about the Revolution’s values but they do not see them reflected in their own reality."
     }
   ]
 }
