@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T15:08:41.574Z",
+  "updatedAt": "2026-11-16T17:08:22.144Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261113",
@@ -3238,8 +3238,21 @@
       "description": "The Commission welcomes the Council's adoption of the 20th Russia sanctions package, that puts further pressure on Russia to engage in negotiations and do so on terms acceptable for Ukraine."
     }
   ],
-  "unNotices": [],
+  "unNotices": [
+    {
+      "title": "Security Council 1718 Sanctions Committee Updates One Entry on Its Sanctions List",
+      "url": "https://press.un.org/en/2026/sc16512.doc.htm",
+      "date": "November 16, 2026",
+      "description": "On 13 November 2026, the Security Council Committee established pursuant to resolution 1718 (2006) enacted the amendments, specified with strikethrough and underline, in the entry below on its Sanctions List of individuals and entities."
+    }
+  ],
   "bbcNews": [
+    {
+      "title": "Landmark Crimea bridge hit as Russia reports biggest Ukrainian drone attack of war",
+      "url": "https://www.bbc.co.uk/news/articles/ckx27v6dpjz0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 16, 2026",
+      "description": "Russia said Ukraine had launched over 2,000 drones over the course of a day, while Kyiv came under a record 17 air raid alerts."
+    },
     {
       "title": "Estonia to close Russia border crossings after attempted drone factory arson attack",
       "url": "https://www.bbc.co.uk/news/articles/cqp83nk673reo?at_medium=RSS&amp;at_campaign=rss",
@@ -3254,6 +3267,12 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Why Starshield limits are hurting Ukraine against jet-powered drones",
+      "url": "https://www.aljazeera.com/news/2026/11/16/why-starshield-limits-are-hurting-ukraine-against-jet-powered-drones?traffic_source=rss",
+      "date": "November 16, 2026",
+      "description": "Ukraine's military has been relying on the internet service since December 2024 to intercept Russian drones."
+    },
     {
       "title": "Russian attacks kill three in Ukraine, EU accuses Moscow of prolonging war",
       "url": "https://www.aljazeera.com/news/2026/11/16/russian-attacks-kill-three-in-ukraine-eu-accuses-moscow-of-prolonging-war?traffic_source=rss",
@@ -3271,18 +3290,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/16/nato-will-collapse-russia-stalls-ukraine-talks-seeks-to-divide-europe?traffic_source=rss",
       "date": "November 16, 2026",
       "description": "Russia has proposed nonaggression pacts with individual nations, which could shatter collective defence against Moscow."
-    },
-    {
-      "title": "Third US aircraft carrier arrives in Middle East amid tensions with Iran",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/16/third-us-aircraft-carrier-arrives-in-middle-east-amid-tensions-with-iran?traffic_source=rss",
-      "date": "November 16, 2026",
-      "description": "Trump shares a message saying: ‘May God protect our troops’ as the USS Theodore Roosevelt arrives in the Middle East."
-    },
-    {
-      "title": "Kachin: where Myanmar’s rare earth minerals are in tight grip",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/16/kachin-where-myanmars-rare-earth-minerals-are-in-tight-grip?traffic_source=rss",
-      "date": "November 16, 2026",
-      "description": "In Myanmar’s northern state of Kachin lies millions of dollars worth of rare earth minerals."
     }
   ],
   "occNews": [
@@ -3387,22 +3394,22 @@
   ],
   "regionsNews": [
     {
+      "title": "Five EU countries announce migrant deportation centre in Rwanda",
+      "url": "https://www.bbc.co.uk/news/articles/cw987343352go?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 16, 2026",
+      "description": "Germany, Denmark, Austria, Greece and the Netherlands have announced a \"return hub\" for failed asylum seekers."
+    },
+    {
       "title": "Yemeni forces retreat to defend port city from Houthis",
       "url": "https://www.bbc.co.uk/news/articles/cqvg2xgyvnjpo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 16, 2026",
       "description": "Saudi-backed forces say they are moving troops from the Bab al-Mandab Strait to protect the interim capital, Aden."
     },
     {
-      "title": "Elon Musk joins 'Bring Jensen Back' campaign to reinstate the ex-Nvidia boss",
+      "title": "Trump backs return of ex-Nvidia boss after 'Bring Jensen Back' campaign launched",
       "url": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 16, 2026",
       "description": "A number of tech figures want the board of the AI chip giant to give Jensen Huang his job back."
-    },
-    {
-      "title": "Five EU countries expected to announce migrant deportation centre in Rwanda",
-      "url": "https://www.bbc.co.uk/news/articles/cw987343352go?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 16, 2026",
-      "description": "Germany, Denmark, Austria, Greece and the Netherlands are expected to announce a \"return hub\" for failed asylum seekers."
     },
     {
       "title": "Man sentenced over 'horrific' attempted murder of three children",
@@ -3459,12 +3466,6 @@
       "description": "Workers are striking over demands for a minimum wage of 30,000 taka (£182) a month."
     },
     {
-      "title": "US basketball player arrested with 34kg of cannabis at Nigerian airport",
-      "url": "https://www.bbc.co.uk/news/articles/cj93rggenq4xo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 16, 2026",
-      "description": "The anti-drugs agency says the American attempted to leave the airport, abandoning his luggage with the drugs."
-    },
-    {
       "title": "Watch: New York teen reunites with cat missing after building collapse",
       "url": "https://www.bbc.co.uk/news/videos/cm3wgeqnppljo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 16, 2026",
@@ -3513,7 +3514,7 @@
       "description": "US officials say the disruption was caused by old equipment overloading and not a cyber-attack."
     },
     {
-      "title": "Elon Musk joins 'Bring Jensen Back' campaign to reinstate the ex-Nvidia boss",
+      "title": "Trump backs return of ex-Nvidia boss after 'Bring Jensen Back' campaign",
       "url": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 16, 2026",
       "description": "A number of tech figures want the board of the AI chip giant to give Jensen Huang his job back."
@@ -3525,16 +3526,16 @@
       "description": "Some parents are so desperate for their children to find a job that they've offered to pay their wages, one hairdresser has told the BBC."
     },
     {
+      "title": "Faisal Islam: What's in the Brexit reset food deal and are there trade-offs?",
+      "url": "https://www.bbc.co.uk/news/articles/c6wy4l8nl42wo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 16, 2026",
+      "description": "EU minister Hamish Falconer insists Britain would have some influence on policy as part of a new deal."
+    },
+    {
       "title": "Intel sued by investors after PC sales slump hits share price",
       "url": "https://www.bbc.co.uk/news/articles/cw62p42p288do?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 16, 2026",
       "description": "A proposed class action claims the firm hid the impact of slowing PC sales from shareholders."
-    },
-    {
-      "title": "UK will have 'voice' but no vote on EU food rules in Brexit reset",
-      "url": "https://www.bbc.co.uk/news/articles/c6wy4l8nl42wo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 15, 2026",
-      "description": "EU minister Hamish Falconer insists Britain would have some influence on policy as part of a new deal."
     },
     {
       "title": "Gas starts flowing from Jackdaw after government green light",
@@ -3849,7 +3850,31 @@
       "description": "Shopworkers in Scotland say they're facing rising levels of violence, including attacks with harpoon guns and machetes, as reports of shoplifting rise dramatically."
     },
     {
-      "title": "Infantino made things worse at FIFA than Blatter , says Jurgen Klopp",
+      "title": "UEFA backs France’s Philippe Diallo to challenge Infantino in FIFA election",
+      "url": "https://www.aljazeera.com/sports/2026/11/16/uefa-backs-frances-philippe-diallo-to-challenge-infantino-in-fifa-election?traffic_source=rss",
+      "date": "November 16, 2026",
+      "description": "French Football Federation chief Diallo emerges as a strong challenger in FIFA's presidential election before deadline."
+    },
+    {
+      "title": "Oil tankers hit sea mines in the Strait of Hormuz",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/16/oil-tankers-hit-sea-mines-in-the-strait-of-hormuz?traffic_source=rss",
+      "date": "November 16, 2026",
+      "description": "Oil tankers hit sea mines in the Strait of Hormuz"
+    },
+    {
+      "title": "Students protest as air pollution chokes New Delhi",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/16/students-protest-as-air-pollution-chokes-new-delhi?traffic_source=rss",
+      "date": "November 16, 2026",
+      "description": "Students have taken to the streets to demand accountability from authorities over toxic air pollution in New Delhi."
+    },
+    {
+      "title": "At least 17 killed in two South Africa mass shootings",
+      "url": "https://www.aljazeera.com/news/2026/11/16/at-least-17-killed-in-two-south-africa-mass-shootings?traffic_source=rss",
+      "date": "November 16, 2026",
+      "description": "Eight men killed in shooting near Pietermaritzburg while six men and three women shot dead near Pretoria."
+    },
+    {
+      "title": "Infantino made things worse at FIFA than Blatter, says Jurgen Klopp",
       "url": "https://www.aljazeera.com/sports/2026/11/16/infantino-made-things-worse-at-fifa-than-blatter-says-jurgen-klopp?traffic_source=rss",
       "date": "November 16, 2026",
       "description": "The Germany coach believes anyone who replaces the FIFA president should care deeply about the future of football."
@@ -3945,28 +3970,10 @@
       "description": "The establishment of a second airport in Lebanon gives the war-devastated country more options for air travel."
     },
     {
-      "title": "Jordan bans Telegram over national security concerns",
+      "title": "Jordan and Iraq block Telegram over national security concerns",
       "url": "https://www.aljazeera.com/news/2026/11/16/jordan-bans-telegram-messing-app-over-national-security-concerns?traffic_source=rss",
       "date": "November 16, 2026",
-      "description": "The measure comes amid a security crackdown after last month's deadly attack on a Greek Orthodox church."
-    },
-    {
-      "title": "Antimicrobial resistance could kill 39 million people over 25 years: WHO",
-      "url": "https://www.aljazeera.com/news/2026/11/16/un-health-agency-sounds-alarm-on-antimicrobial-resistance-threat?traffic_source=rss",
-      "date": "November 16, 2026",
-      "description": "UN's health agency says growing resistance to antibiotics and other medicines threatens 'future of modern medicine'."
-    },
-    {
-      "title": "Sadiq Khan: Global North must take responsibility for climate change",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/16/sadiq-khan-global-north-must-take-responsibility-for-climate-change?traffic_source=rss",
-      "date": "November 16, 2026",
-      "description": "At COP31, Sadiq Khan urges wealthy nations to support the Global South, which bears the brunt of climate change."
-    },
-    {
-      "title": "Ronaldinho comes out retirement for 45 mins in Italy’s third division",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/16/ronaldinho-comes-out-retirement-for-45-mins-in-italys-third-division?traffic_source=rss",
-      "date": "November 16, 2026",
-      "description": "Football legend Ronaldinho came out of retirement to play 45 minutes of a match in Italy’s third division."
+      "description": "Jordan says wants to stop 'attempts to ‌spread extremism' as Iraq says ⁠app failed to 'address non-compliant ⁠content'."
     }
   ]
 }
