@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T15:08:27.378Z",
+  "updatedAt": "2026-11-17T17:08:26.285Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261113",
@@ -3241,31 +3241,61 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "Putin's Crimea bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
+      "title": "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
       "url": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 17, 2026",
       "description": "Ukraine says the missile and drone attack on the strategic bridge in the Russian-annexed Crimea took weeks to plan."
     },
     {
-      "title": "Ukraine accuses Russia of targeting rescue operation after 'double-tap' strike kills 72",
-      "url": "https://www.bbc.co.uk/news/articles/c30rk8x5g80qo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "How the attack on Crimean Bridge unfolded",
+      "url": "https://www.bbc.co.uk/news/articles/crz9dgz28zwdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 17, 2026",
-      "description": "Efforts to recover bodies after a “double-tap” attack in southern Ukraine are being hampered by continuing Russian strikes, officials say."
+      "description": "One of the key symbols of Russia's occupation of Ukraine has suffered major damage after a seven-stage attack by Kyiv."
     },
     {
-      "title": "Japan sends up jets after alleged Russian incursion of its airspace",
-      "url": "https://www.bbc.co.uk/news/articles/c60evw20qe47o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "BBC reports from Kyiv bridge hit by Russian attack",
+      "url": "https://www.bbc.co.uk/news/videos/cmlywvww3pzlo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 17, 2026",
-      "description": "Taiwan and South Korea also responded to Russian military aircraft detected near their airspaces."
+      "description": "The BBC's Sarah Rainsford spoke to residents near the site of the overnight strike."
+    },
+    {
+      "title": "UK sanctions firms over Israeli West Bank settlements",
+      "url": "https://www.bbc.co.uk/news/articles/cvglr977x3z0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 17, 2026",
+      "description": "It marks the first sanctions since the UK announced a tougher approach to Israeli actions in the territory."
     },
     {
       "title": "Will President Trump meet Kim Jong Un?",
       "url": "https://www.bbc.co.uk/news/videos/c6grew79p7qdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 17, 2026",
       "description": "President Trump says he would be keen to meet the North Korea leader in China."
+    },
+    {
+      "title": "Ukraine accuses Russia of targeting rescue operation after 'double-tap' strike kills 72",
+      "url": "https://www.bbc.co.uk/news/articles/c30rk8x5g80qo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 17, 2026",
+      "description": "Efforts to recover bodies after a “double-tap” attack in southern Ukraine are being hampered by continuing Russian strikes, officials say."
     }
   ],
   "ajNews": [
+    {
+      "title": "Trump warns Iran over reported ‘dirty bomb’ threat plans against Washington",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/trump-warns-iran-over-reported-dirty-bomb-threat-plans-against-washington?traffic_source=rss",
+      "date": "November 17, 2026",
+      "description": "President Donald Trump responded to a CNN report that Iran was working on plans to attack Washington, DC"
+    },
+    {
+      "title": "Is Iran plotting a ‘dirty bomb’ attack in the US? What we know",
+      "url": "https://www.aljazeera.com/news/2026/11/17/is-iran-plotting-a-dirty-bomb-attack-in-the-us-what-we-know?traffic_source=rss",
+      "date": "November 17, 2026",
+      "description": "A CNN report quoting unnamed US officials alleges Tehran is developing plans for an attack on officials in Washington."
+    },
+    {
+      "title": "Bessent vs Lutnick: Who is winning the China chip debate?",
+      "url": "https://www.aljazeera.com/economy/2026/11/17/bessent-vs-lutnick-who-is-winning-the-china-chip-debate?traffic_source=rss",
+      "date": "November 17, 2026",
+      "description": "A rift has emerged in Trump’s cabinet over China’s access to advanced AI chips as export controls tighten."
+    },
     {
       "title": "UK sanctions eight Israeli construction firms over West Bank settlements",
       "url": "https://www.aljazeera.com/news/2026/11/17/uk-sanctions-8-israeli-firms-over-occupied-west-bank-settlements-gaza-aid?traffic_source=rss",
@@ -3289,12 +3319,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
       "date": "November 17, 2026",
       "description": "Trump says Washington doesn't need a deal with Tehran, while Iran rejects 'no war, no peace'. Is the war at an impasse?"
-    },
-    {
-      "title": "Vessels on fire after naval mine hit in Hormuz Strait, Iran says",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/vessels-on-fire-after-naval-mine-hit-in-hormuz-strait-iran-says?traffic_source=rss",
-      "date": "November 17, 2026",
-      "description": "Two vessels have caught fire after hitting a naval mine in the Strait of Hormuz."
     }
   ],
   "occNews": [
@@ -3399,16 +3423,22 @@
   ],
   "regionsNews": [
     {
+      "title": "Jensen Huang says he would return as Nvidia boss if asked by the board",
+      "url": "https://www.bbc.co.uk/news/articles/cwx2en2vrxmdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 17, 2026",
+      "description": "Huang says he has had an \"outpouring\" of calls from investors and others calling for him to return."
+    },
+    {
+      "title": "US loses measles elimination status after 26 years amid record case numbers",
+      "url": "https://www.bbc.co.uk/news/articles/c977p71jx0xxo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 17, 2026",
+      "description": "States have reported over 5,400 cases and 10 measles-related deaths for the first time since the early 1990s."
+    },
+    {
       "title": "Palestinian woman, 72, shot dead by Israeli settlers in West Bank, health ministry says",
       "url": "https://www.bbc.co.uk/news/articles/cqrlg377638yo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 17, 2026",
       "description": "Palestinians say there was an attack by settlers in al-Duyuk al-Tahta, while the Israeli military says the settlers fired after being attacked."
-    },
-    {
-      "title": "Nvidia partner Megaspeed being investigated by US government over chip exports",
-      "url": "https://www.bbc.co.uk/news/articles/cmn504nq5033o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 17, 2026",
-      "description": "The Singapore-based company is suspected of helping to ship high-end AI chips from tech giant Nvidia to China, violating US export rules."
     },
     {
       "title": "Indian woman gang-raped while pregnant in 2002 'heartbroken' after two perpetrators bailed",
@@ -3417,34 +3447,28 @@
       "description": "Bilkis Bano has spoken of her \"pain, shock and disbelief\" at the top court order and vowed to fight back."
     },
     {
-      "title": "Imran Khan seeks urgent medical care fearing he 'may not return alive'",
-      "url": "https://www.bbc.co.uk/news/articles/cr894xq5yeyko?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Nvidia partner Megaspeed being investigated by US government over chip exports",
+      "url": "https://www.bbc.co.uk/news/articles/cmn504nq5033o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 17, 2026",
-      "description": "Pakistan's ex-prime minister, who has been in prison since August 2023, says he has been denied justice."
+      "description": "The Singapore-based company is suspected of helping to ship high-end AI chips from tech giant Nvidia to China, violating US export rules."
+    },
+    {
+      "title": "Trump says US taking 'very seriously' any Iranian plot against Washington",
+      "url": "https://www.bbc.co.uk/news/articles/cq808vzd3nnpo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 17, 2026",
+      "description": "Tehran rejects any suggestion it was plotting a so-called dirty bomb attack on the US capital as \"baseless\"."
+    },
+    {
+      "title": "Carney eyes 'other options' for embattled Canadian auto sector on China trip",
+      "url": "https://www.bbc.co.uk/news/articles/cq98xlz09ye0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 17, 2026",
+      "description": "The PM has suggested Chinese automakers could replace American ones in Canada - but some say that would not be easy."
     },
     {
       "title": "Gunmen kill Costa Rican journalist who reported on drugs trade",
       "url": "https://www.bbc.co.uk/news/articles/c6ly7g5lx7gyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 17, 2026",
       "description": "Rodríguez had denounced alleged links between criminal organisations and powerful figures in Costa Rica."
-    },
-    {
-      "title": "Body of Melbourne Cup horse found dumped in Sydney skip",
-      "url": "https://www.bbc.co.uk/news/articles/ck1ewl2zjqgzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 17, 2026",
-      "description": "The remains of a top Australian racehorse that died of colic on Monday were found at a public rubbish tip."
-    },
-    {
-      "title": "Mozambique opposition leader faces trial over deadly 2024 election unrest",
-      "url": "https://www.bbc.co.uk/news/articles/crq5vl1l6z2po?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 17, 2026",
-      "description": "Venâncio Mondlane faces several charges over 2024 post-election protests that left hundreds of people dead."
-    },
-    {
-      "title": "Nigerians among 12 suspects arrested in $4.5m Canada luxury car theft syndicate",
-      "url": "https://www.bbc.co.uk/news/articles/cm5y1wr1535ko?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 17, 2026",
-      "description": "Canadian authorities say they have recovered 96 luxury vehicles destined for West Africa."
     },
     {
       "title": "Inside the Chinese 'AI wonderland' where Xi will host Trump",
@@ -3495,16 +3519,16 @@
       "description": "The new show brings English, maths and science lessons to children via TV, radio and social media."
     },
     {
-      "title": "Taking Korea's toughest exam from behind bars",
-      "url": "https://www.bbc.co.uk/news/articles/cmewvxg855yno?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 16, 2026",
-      "description": "Eleven convicts at the Mandela Boys' School will be among the thousands of young Koreans taking the country's hardest exam, the Suneung."
+      "title": "Jensen Huang says he would return as Nvidia boss if asked by the board",
+      "url": "https://www.bbc.co.uk/news/articles/cwx2en2vrxmdo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 17, 2026",
+      "description": "Huang says he has had an \"outpouring\" of calls from investors and others calling for him to return."
     },
     {
-      "title": "Speed camera fault may have allowed drivers to escape fines",
-      "url": "https://www.bbc.co.uk/news/articles/c5y4j7z373kzo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "We can't afford to hire under-25s, say firms. Will Milburn plans help?",
+      "url": "https://www.bbc.co.uk/news/articles/c6d01e8m15mko?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 17, 2026",
-      "description": "The Home Office has revoked approval that allowed footage from speed cameras to be used in evidence."
+      "description": "The proposal to cut employers' National Insurance costs is \"essential\" to tackling the Neet problem, one business group says."
     },
     {
       "title": "Where are the most jobs for 18-24 year-olds?",
@@ -3513,10 +3537,16 @@
       "description": "How many jobs are there where you live and in which sectors are you most likely to find an opening?"
     },
     {
-      "title": "Government must act now or lose Royal Mail, former minister warns",
-      "url": "https://www.bbc.co.uk/news/articles/cjvg26p3z2gdo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Speed camera fault may have allowed drivers to escape fines",
+      "url": "https://www.bbc.co.uk/news/articles/c5y4j7z373kzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 17, 2026",
-      "description": "The former business secretary says \"undercutting\" by rivals will make Royal Mail \"unviable\"."
+      "description": "The Home Office has revoked approval that allowed footage from speed cameras to be used in evidence."
+    },
+    {
+      "title": "We couldn't afford a house alone, so we bought one with strangers",
+      "url": "https://www.bbc.co.uk/news/articles/c5742lwdyzglo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 17, 2026",
+      "description": "People who can't afford to get on the housing ladder are buying homes with someone they don't know."
     },
     {
       "title": "How new US chip restrictions on South East Asia will hit China",
@@ -3531,10 +3561,10 @@
       "description": "The Singapore-based company is suspected of helping to ship high-end AI chips from tech giant Nvidia to China, violating US export rules."
     },
     {
-      "title": "We couldn't afford a house alone, so we bought one with strangers",
-      "url": "https://www.bbc.co.uk/news/articles/c5742lwdyzglo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Government must act now or lose Royal Mail, former minister warns",
+      "url": "https://www.bbc.co.uk/news/articles/cjvg26p3z2gdo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 17, 2026",
-      "description": "People who can't afford to get on the housing ladder are buying homes with someone they don't know."
+      "description": "The former business secretary says \"undercutting\" by rivals will make Royal Mail \"unviable\"."
     },
     {
       "title": "OpenAI sued by California over Hugging Face attack",
@@ -3643,18 +3673,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cm62y0wrnz9zo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 13, 2026",
       "description": "Experts warn that using AI to enhance property images can go too far and mislead prospective buyers."
-    },
-    {
-      "title": "Heat pumps: How much heat does your home really need?",
-      "url": "https://www.bbc.co.uk/news/articles/cqy43zk3kk04o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 13, 2026",
-      "description": "Knowing how much heat your home loses is important before installing a new heating system."
-    },
-    {
-      "title": "Who is Nvidia's interim CEO Colette Kress - and who could take over permanently?",
-      "url": "https://www.bbc.co.uk/news/articles/cqgm37dv20e8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 12, 2026",
-      "description": "Chief financial officer Colette Kress in in charge of Nvidia for now, but several others are in the frame as potential successors."
     },
     {
       "title": "How a sex scandal at Nvidia is putting pressure on the White House",
@@ -3831,6 +3849,60 @@
       "description": "Black Friday promises huge savings, but are the deals really as good as they seem?"
     },
     {
+      "title": "Photos: Tens of thousands rally in France over living standards and wages",
+      "url": "https://www.aljazeera.com/gallery/2026/11/17/photos-tens-of-thousands-rally-in-france-over-living-standards-and-wages?traffic_source=rss",
+      "date": "November 17, 2026",
+      "description": "France witnesses its third major public sector strike since September, as protests highlight wage and service concerns."
+    },
+    {
+      "title": "Thousands demand cancellation of Nathan Cofnas talk at Oxford University",
+      "url": "https://www.aljazeera.com/news/2026/11/17/thousands-demand-cancellation-of-nathan-cofnas-talk-at-oxford-university?traffic_source=rss",
+      "date": "November 17, 2026",
+      "description": "Online petition with more than 32,000 signatures demands the university 'cancel Nathan Cofnas's invitation to speak'."
+    },
+    {
+      "title": "Election-winning student movement enters Serbia’s new parliament",
+      "url": "https://www.aljazeera.com/news/2026/11/17/election-winning-student-movement-enters-serbias-new-parliament?traffic_source=rss",
+      "date": "November 17, 2026",
+      "description": "Hundreds hail Student List lawmakers as the new parliament meets for the first time."
+    },
+    {
+      "title": "US officially loses measles-free status after 26 years amid outbreak",
+      "url": "https://www.aljazeera.com/news/2026/11/17/us-officially-loses-measles-free-status-after-26-years-amid-outbreak?traffic_source=rss",
+      "date": "November 17, 2026",
+      "description": "A major health organisation declared measles endemic in US for first time since 2000, reversing decades of progress."
+    },
+    {
+      "title": "Trump announces critical minerals agreements at Quad meeting in Manila",
+      "url": "https://www.aljazeera.com/news/2026/11/17/trump-announces-critical-minerals-agreements-at-quad-meeting-in-manila?traffic_source=rss",
+      "date": "November 17, 2026",
+      "description": "US President Trump says the deals will prevent 'coercion by any single foreign supplier'."
+    },
+    {
+      "title": "Jerusalem Daily: Deadly settler pogroms persist",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/jerusalem-daily-deadly-settler-pogroms-persist?traffic_source=rss",
+      "date": "November 17, 2026",
+      "description": "A Palestinian woman was killed in a settler shooting near Jericho, while Arab MPs in Israel seek Netanyahu probe."
+    },
+    {
+      "title": "Serbian actress and former MP doused with yoghurt outside parliament",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/serbian-actress-and-former-mp-doused-with-yoghurt-outside-parliament?traffic_source=rss",
+      "date": "November 17, 2026",
+      "description": "Serbian actress and former MP Lidija Vukicevic, who is backing the ruling SNS party, had yoghurt poured over her as."
+    },
+    {
+      "title": "Houthi advance on Aden may spur resurgence of Yemen’s southern separatists",
+      "url": "https://www.aljazeera.com/news/2026/11/17/houthi-advance-on-aden-sparks-resurgence-of-yemens-southern-separatists?traffic_source=rss",
+      "date": "November 17, 2026",
+      "description": "Southern separatists try to regain power to defend Aden as Saudi Arabia reshuffles its military command against Houthis."
+    },
+    {
+      "title": "US senators demand FAA pause upgrades linked to nationwide ground stop",
+      "url": "https://www.aljazeera.com/news/2026/11/17/us-senators-demand-faa-pause-upgrades-linked-to-nationwide-ground-stop?traffic_source=rss",
+      "date": "November 17, 2026",
+      "description": "Thousands of routers used in communications systems are slated to be replaced, raising the risk of more problems."
+    },
+    {
       "title": "Ghost Towns of Afghanistan: The Environmental Toll of Decades of War",
       "url": "https://www.aljazeera.com/video/witness/2026/11/17/ghost-towns-of-afghanistan-the-environmental-toll-of-decades-of-war?traffic_source=rss",
       "date": "November 17, 2026",
@@ -3883,72 +3955,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/trump-addresses-quad-leaders-at-first-summit-since-2024?traffic_source=rss",
       "date": "November 17, 2026",
       "description": "US President Donald Trump spoke to leaders of the Quad security bloc at their first summit since 2024."
-    },
-    {
-      "title": "Mozambique’s opposition leader stands trial over deadly 2024 protests",
-      "url": "https://www.aljazeera.com/news/2026/11/17/mozambiques-opposition-leader-stands-trial-over-deadly-2024-protests?traffic_source=rss",
-      "date": "November 17, 2026",
-      "description": "Venancio Mondlane faces five charges, the most serious being instigating 'terrorism'."
-    },
-    {
-      "title": "India vs Pakistan LIVE: SAFF Championship final",
-      "url": "https://www.aljazeera.com/sports/liveblog/2026/11/17/india-vs-pakistan-live-saff-championship-final?traffic_source=rss",
-      "date": "November 17, 2026",
-      "description": "Follow updates from the match, including the build-up, analysis and text commentary."
-    },
-    {
-      "title": "Rebeca Grynspan could be the UN’s first woman boss, if she can sway Trump",
-      "url": "https://www.aljazeera.com/features/2026/11/17/rebeca-grynspans-quest-for-uns-first-woman-chief-amid-trump-sized-hurdle?traffic_source=rss",
-      "date": "November 17, 2026",
-      "description": "Swaying the US could test Grynspan but she likes taking risks - and wants UN to take more, she tells Al Jazeera."
-    },
-    {
-      "title": "Ukrainian breaks world record for deepest competitive freedive",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/ukrainian-breaks-world-record-for-deepest-competitive-freedive?traffic_source=rss",
-      "date": "November 17, 2026",
-      "description": "Ukrainian freediver Nataliia Zharkova has broken the world record, reaching 124 metres in constant weight."
-    },
-    {
-      "title": "Is Pakistan about to carve out new provinces? Inside the controversial plan",
-      "url": "https://www.aljazeera.com/news/2026/11/17/is-pakistan-about-to-carve-out-new-provinces-inside-the-controversial-plan?traffic_source=rss",
-      "date": "November 17, 2026",
-      "description": "Talk of new provinces has gathered pace, but there is no formal proposal or agreement among governing parties."
-    },
-    {
-      "title": "Bangladesh police clash with garment workers amid protests over wages",
-      "url": "https://www.aljazeera.com/news/2026/11/17/bangladesh-garment-workers-clash-with-police-in-fresh-protests-over-wages?traffic_source=rss",
-      "date": "November 17, 2026",
-      "description": "Protesters hurl bricks, torch vehicles and block the main highway between Dhaka and Mymensingh."
-    },
-    {
-      "title": "Who is behind Habibi UK, an X account that targeted critics of Israel?",
-      "url": "https://www.aljazeera.com/news/2026/11/17/who-is-behind-habibi-uk-an-x-account-that-targeted-critics-of-israel?traffic_source=rss",
-      "date": "November 17, 2026",
-      "description": "A former US Foreign Service officer ran a company that funded election adverts attacking Jeremy Corbyn’s Labour."
-    },
-    {
-      "title": "Fomula One champion Fernando Alonso to race at Dakar Rally 2027",
-      "url": "https://www.aljazeera.com/sports/2026/11/17/fomula-one-champion-fernando-alonso-to-race-at-dakar-rally-2027?traffic_source=rss",
-      "date": "November 17, 2026",
-      "description": "Fernando Alonso will make his return to the Dakar Rally 2027 in Morocco with the Leob and Aston Martin team."
-    },
-    {
-      "title": "Why are five EU countries reviving plans to deport migrants to Rwanda?",
-      "url": "https://www.aljazeera.com/news/2026/11/17/why-are-five-eu-countries-reviving-plans-to-deport-migrants-to-rwanda?traffic_source=rss",
-      "date": "November 17, 2026",
-      "description": "Rwanda again proposed as a 'return hub' for deported migrants, but critics warn of potential human rights abuses."
-    },
-    {
-      "title": "US President Trump arrives in Manila ahead of ASEAN summit",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/us-president-trump-arrives-in-manila-ahead-of-asean-summit?traffic_source=rss",
-      "date": "November 17, 2026",
-      "description": "US President Donald Trump has landed in Manila ahead of a special ASEAN-US meeting."
-    },
-    {
-      "title": "Afghanistan women defy Taliban ban to pursue their ambitions in secret",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/afghanistan-women-defy-taliban-ban-to-pursue-their-ambitions-in-secret?traffic_source=rss",
-      "date": "November 17, 2026",
-      "description": "Afghan women risk their lives to pursue their dreams, despite strict Taliban restrictions."
     }
   ]
 }
