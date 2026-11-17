@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T13:08:21.472Z",
+  "updatedAt": "2026-11-17T15:08:27.378Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261113",
@@ -3241,6 +3241,12 @@
   "unNotices": [],
   "bbcNews": [
     {
+      "title": "Putin's Crimea bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
+      "url": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 17, 2026",
+      "description": "Ukraine says the missile and drone attack on the strategic bridge in the Russian-annexed Crimea took weeks to plan."
+    },
+    {
       "title": "Ukraine accuses Russia of targeting rescue operation after 'double-tap' strike kills 72",
       "url": "https://www.bbc.co.uk/news/articles/c30rk8x5g80qo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 17, 2026",
@@ -3261,6 +3267,24 @@
   ],
   "ajNews": [
     {
+      "title": "UK sanctions eight Israeli construction firms over West Bank settlements",
+      "url": "https://www.aljazeera.com/news/2026/11/17/uk-sanctions-8-israeli-firms-over-occupied-west-bank-settlements-gaza-aid?traffic_source=rss",
+      "date": "November 17, 2026",
+      "description": "Settler group also sanctioned for blocking Gaza aid as foreign secretary calls for 'protecting the two-state solution'."
+    },
+    {
+      "title": "‘Unprecedented’ Ukraine attack on Crimean bridge",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/unprecedented-ukraine-attack-on-crimean-bridge?traffic_source=rss",
+      "date": "November 17, 2026",
+      "description": "Ukraine has struck the Kerch Bridge linking Russia to Russian-annexed Crimea for a second day."
+    },
+    {
+      "title": "Usman Nurmagomedov released from UAE prison after hotel brawl arrest",
+      "url": "https://www.aljazeera.com/sports/2026/11/17/usman-nurmagomedov-released-from-uae-prison-after-hotel-brawl-arrest?traffic_source=rss",
+      "date": "November 17, 2026",
+      "description": "Russian MMA fighter and seven associates still face deportation after a hotel fight with other MMA fighters."
+    },
+    {
       "title": "Is the US-Israel war on Iran turning into a ‘frozen conflict’?",
       "url": "https://www.aljazeera.com/news/2026/11/17/is-the-us-israel-war-on-iran-turning-into-a-frozen-conflict?traffic_source=rss",
       "date": "November 17, 2026",
@@ -3271,24 +3295,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/vessels-on-fire-after-naval-mine-hit-in-hormuz-strait-iran-says?traffic_source=rss",
       "date": "November 17, 2026",
       "description": "Two vessels have caught fire after hitting a naval mine in the Strait of Hormuz."
-    },
-    {
-      "title": "Kim Jong Un tours North Korea ski resort with daughter Ju Ae",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/kim-jong-un-tours-north-korea-ski-resort-with-daughter-ju-ae?traffic_source=rss",
-      "date": "November 17, 2026",
-      "description": "Kim Jong Un toured a ski resort under development in a tourist district in Samjiyon with his daughter Ju Ae."
-    },
-    {
-      "title": "Vance calls out ‘neoconservatives’ over Iran war",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/vance-calls-out-neoconservatives-over-iran-war?traffic_source=rss",
-      "date": "November 17, 2026",
-      "description": "US Vice President JD Vance told Fox News that ‘neoconservatives’ want the Iran war to become a forever war."
-    },
-    {
-      "title": "Ukraine drone attack kills two in Crimea as Kyiv targets bridge to Russia",
-      "url": "https://www.aljazeera.com/news/2026/11/17/ukrainian-drone-attack-kills-two-in-crimea-as-kyiv-targets-kerch-bridge?traffic_source=rss",
-      "date": "November 17, 2026",
-      "description": "Moscow-installed governor says traffic suspended after second attack on bridge in two days."
     }
   ],
   "occNews": [
@@ -3392,12 +3398,6 @@
     }
   ],
   "regionsNews": [
-    {
-      "title": "Putin's Crimea bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
-      "url": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 17, 2026",
-      "description": "Ukraine says the attack took weeks to plan, while the Kremlin vows to rebuild the strategic bridge."
-    },
     {
       "title": "Palestinian woman, 72, shot dead by Israeli settlers in West Bank, health ministry says",
       "url": "https://www.bbc.co.uk/news/articles/cqrlg377638yo?at_medium=RSS&amp;at_campaign=rss",
@@ -3519,22 +3519,28 @@
       "description": "The former business secretary says \"undercutting\" by rivals will make Royal Mail \"unviable\"."
     },
     {
+      "title": "How new US chip restrictions on South East Asia will hit China",
+      "url": "https://www.bbc.co.uk/news/articles/cwq6e2qgvmlgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 17, 2026",
+      "description": "The new rules restrict chip exports and also access to their computing power, which China relies on heavily."
+    },
+    {
       "title": "US government confirms investigation into tech firm Megaspeed",
       "url": "https://www.bbc.co.uk/news/articles/cmn504nq5033o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 17, 2026",
       "description": "The Singapore-based company is suspected of helping to ship high-end AI chips from tech giant Nvidia to China, violating US export rules."
     },
     {
-      "title": "OpenAI sued by California over Hugging Face attack",
-      "url": "https://www.bbc.co.uk/news/articles/c6wy4xv2mxglo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 16, 2026",
-      "description": "Attorney General Rob Bonta alleges that the artificial intelligence misled and endangered the public."
-    },
-    {
       "title": "We couldn't afford a house alone, so we bought one with strangers",
       "url": "https://www.bbc.co.uk/news/articles/c5742lwdyzglo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 17, 2026",
       "description": "People who can't afford to get on the housing ladder are buying homes with someone they don't know."
+    },
+    {
+      "title": "OpenAI sued by California over Hugging Face attack",
+      "url": "https://www.bbc.co.uk/news/articles/c6wy4xv2mxglo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 16, 2026",
+      "description": "Attorney General Rob Bonta alleges that the artificial intelligence misled and endangered the public."
     },
     {
       "title": "Nvidia dismisses 'Bring Jensen Back' campaign as Trump backs effort to reinstate ex boss",
@@ -3549,7 +3555,7 @@
       "description": "Some parents are so desperate for their children to find a job that they've offered to pay their wages, one hairdresser has told the BBC."
     },
     {
-      "title": "Customers report service outages at major US banks",
+      "title": "US bank services returning to normal after major outage",
       "url": "https://www.bbc.co.uk/news/articles/cj752wvqneq6o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 17, 2026",
       "description": "Chase Bank, the largest US bank, said a software bug might be causing the issue, but that it was not \"systemic'\" or \"cyber-related\"."
@@ -3649,12 +3655,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cqgm37dv20e8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 12, 2026",
       "description": "Chief financial officer Colette Kress in in charge of Nvidia for now, but several others are in the frame as potential successors."
-    },
-    {
-      "title": "Faisal Islam: Why the UK economy is surprisingly resilient",
-      "url": "https://www.bbc.co.uk/news/articles/cj62p32k90wyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 12, 2026",
-      "description": "The UK is seeing impressive growth, but will it last?"
     },
     {
       "title": "How a sex scandal at Nvidia is putting pressure on the White House",
@@ -3831,6 +3831,54 @@
       "description": "Black Friday promises huge savings, but are the deals really as good as they seem?"
     },
     {
+      "title": "Ghost Towns of Afghanistan: The Environmental Toll of Decades of War",
+      "url": "https://www.aljazeera.com/video/witness/2026/11/17/ghost-towns-of-afghanistan-the-environmental-toll-of-decades-of-war?traffic_source=rss",
+      "date": "November 17, 2026",
+      "description": "A father confronts the aftermath of environmental damage from years of war in Afghanistan."
+    },
+    {
+      "title": "Rep. Thomas Massie Forces a New Fight for Epstein Survivors",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/rep-thomas-massie-forces-a-new-fight-for-epstein-survivors?traffic_source=rss",
+      "date": "November 17, 2026",
+      "description": "Kentucky Republican Rep. Thomas Massie is pushing for justice for victims of the Epstein files."
+    },
+    {
+      "title": "At the origin of France’s education protests, students refuse to give up",
+      "url": "https://www.aljazeera.com/news/2026/11/17/at-the-origin-of-frances-education-protests-students-refuse-to-give-up?traffic_source=rss",
+      "date": "November 17, 2026",
+      "description": "Blockades continue at some schools in the Parisian suburbs as students and teachers say little has improved."
+    },
+    {
+      "title": "Infantino’s FIFA challenger Diallo claims to have support beyond Europe",
+      "url": "https://www.aljazeera.com/sports/2026/11/17/infantinos-fifa-challenger-diallo-claims-to-have-support-beyond-europe?traffic_source=rss",
+      "date": "November 17, 2026",
+      "description": "French football chief Philippe Diallo says he has received 'spontaneous signs of strong support' against Infantino."
+    },
+    {
+      "title": "Why do governments switch off the internet?",
+      "url": "https://www.aljazeera.com/video/by-the-numbers-3/2026/11/17/why-do-governments-switch-off-the-internet?traffic_source=rss",
+      "date": "November 17, 2026",
+      "description": "The internet went dark somewhere every day in 2025. AJLabs explains why authorities switch it off."
+    },
+    {
+      "title": "Brazil defeat Singapore 7-0 as Vinicius scores first-half hat-trick",
+      "url": "https://www.aljazeera.com/sports/2026/11/17/brazil-defeat-singapore-7-0-as-vinicius-scores-first-half-hat-trick?traffic_source=rss",
+      "date": "November 17, 2026",
+      "description": "Brazil's star forward scored a 12-minute hat-trick in the record world champions' thumping of the hosts in a friendly."
+    },
+    {
+      "title": "Iranians fear more civilian infrastructure could be targeted in new US war",
+      "url": "https://www.aljazeera.com/news/2026/11/17/iranians-fear-more-civilian-infrastructure-could-be-targeted-in-new-us-war?traffic_source=rss",
+      "date": "November 17, 2026",
+      "description": "Energy facilities, industrial units, ports and bridges, schools, hospitals and apartment buildings have already been hit"
+    },
+    {
+      "title": "How is US Senate majority leader chosen?",
+      "url": "https://www.aljazeera.com/news/2026/11/17/how-is-us-senate-majority-leader-chosen?traffic_source=rss",
+      "date": "November 17, 2026",
+      "description": "Chris Van Hollen set to challenge Chuck Schumer for the post as the Democrats prepare to take control of Congress."
+    },
+    {
       "title": "Trump addresses Quad leaders at first summit since 2024",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/trump-addresses-quad-leaders-at-first-summit-since-2024?traffic_source=rss",
       "date": "November 17, 2026",
@@ -3843,13 +3891,13 @@
       "description": "Venancio Mondlane faces five charges, the most serious being instigating 'terrorism'."
     },
     {
-      "title": "India vs Pakistan live: SAFF Championship final",
+      "title": "India vs Pakistan LIVE: SAFF Championship final",
       "url": "https://www.aljazeera.com/sports/liveblog/2026/11/17/india-vs-pakistan-live-saff-championship-final?traffic_source=rss",
       "date": "November 17, 2026",
       "description": "Follow updates from the match, including the build-up, analysis and text commentary."
     },
     {
-      "title": "Rebecca Grynspan could be the UN’s first woman boss, if she can sway Trump",
+      "title": "Rebeca Grynspan could be the UN’s first woman boss, if she can sway Trump",
       "url": "https://www.aljazeera.com/features/2026/11/17/rebeca-grynspans-quest-for-uns-first-woman-chief-amid-trump-sized-hurdle?traffic_source=rss",
       "date": "November 17, 2026",
       "description": "Swaying the US could test Grynspan but she likes taking risks - and wants UN to take more, she tells Al Jazeera."
@@ -3901,54 +3949,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/afghanistan-women-defy-taliban-ban-to-pursue-their-ambitions-in-secret?traffic_source=rss",
       "date": "November 17, 2026",
       "description": "Afghan women risk their lives to pursue their dreams, despite strict Taliban restrictions."
-    },
-    {
-      "title": "Powering towns on pig manure: How Denmark has transformed energy generation",
-      "url": "https://www.aljazeera.com/economy/2026/11/17/powering-towns-on-pig-manure-how-denmark-has-transformed-energy-generation?traffic_source=rss",
-      "date": "November 17, 2026",
-      "description": "Pigs are big business in Denmark. Now their waste is being turned into biogas, which powers the national grid."
-    },
-    {
-      "title": "As Knesset readies for new speaker, Israeli opposition holds powerful role",
-      "url": "https://www.aljazeera.com/news/2026/11/17/as-knesset-readies-for-new-speaker-israeli-opposition-holds-powerful-role?traffic_source=rss",
-      "date": "November 17, 2026",
-      "description": "The anti-Netanyahu bloc holds the keys to electing a new parliamentary speaker, setting the momentum for change."
-    },
-    {
-      "title": "Journalist who exposed alleged drug links shot dead in Costa Rica",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/journalist-who-exposed-alleged-drug-links-shot-dead-in-costa-rica?traffic_source=rss",
-      "date": "November 17, 2026",
-      "description": "Costa Rican journalist Camilo Rodriguez has been shot dead near the capital San Jose."
-    },
-    {
-      "title": "Irish ‌‌‌‌boxer Lee Reeves, 31, dies three months after sustaining injuries",
-      "url": "https://www.aljazeera.com/sports/2026/11/17/irish-boxer-lee-reeves-31-dies-three-months-after-sustaining-injuries?traffic_source=rss",
-      "date": "November 17, 2026",
-      "description": "Lee Reeves died in Limerick three months after sustaining serious injuries in his bout against Gary Cully in Dublin."
-    },
-    {
-      "title": "South Korea cheating scandal: Are AI smart glasses a threat to exams?",
-      "url": "https://www.aljazeera.com/news/2026/11/17/south-korea-cheating-scandal-are-ai-smart-glasses-a-threat-to-exams?traffic_source=rss",
-      "date": "November 17, 2026",
-      "description": "A student with near-perfect scores on two tests has confessed to using artificial intelligence."
-    },
-    {
-      "title": "AI models abandon climate facts to please users, UNESCO report finds",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/ai-models-abandon-climate-facts-to-please-users-unesco-report-finds?traffic_source=rss",
-      "date": "November 17, 2026",
-      "description": "AI models abandon climate facts to agree with users in eight out of 10 tests."
-    },
-    {
-      "title": "Andy Burnham says Brexit is what the UK’s ‘enemies’ wanted",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/andy-burnham-says-brexit-is-what-the-uks-enemies-wanted?traffic_source=rss",
-      "date": "November 17, 2026",
-      "description": "UK Prime Minister Andy Burnham slammed Brexit in a speech at the Lord Mayor’s Banquet."
-    },
-    {
-      "title": "How women scavenge scraps from lithium to earn a living in Nigeria",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/how-women-scavenge-scraps-from-lithium-to-earn-a-living-in-nigeria?traffic_source=rss",
-      "date": "November 17, 2026",
-      "description": "Dozens of women sift through the waste left behind by lithium miners in Nigeria, digging for traces of ore to resell."
     }
   ]
 }
