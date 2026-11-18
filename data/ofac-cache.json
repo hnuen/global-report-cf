@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-18T17:08:20.754Z",
+  "updatedAt": "2026-11-18T19:08:27.160Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261118",
+      "code": "20261118",
+      "title": "Counter Terrorism Designations",
+      "date": "November 18, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261113",
       "code": "20261113",
@@ -54,12 +60,6 @@
       "code": "20261026",
       "title": "Issuance of Amended Frequently Asked Questions Regarding Blocking and Rejecting Transactions and Filing Reports with OFAC",
       "date": "October 26, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20261021",
-      "code": "20261021",
-      "title": "Iran-related Designations; Belarus and North Korea Designations Removals; Issuance of Iran-related and Russia-related General Licenses and Amended Frequently Asked Questions",
-      "date": "October 21, 2026"
     }
   ],
   "civilPenalties": [
@@ -472,7 +472,7 @@
     "counter-terrorism-sanctions": {
       "name": "Counter Terrorism Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-terrorism-sanctions",
-      "lastUpdated": "Nov 13, 2026",
+      "lastUpdated": "Nov 18, 2026",
       "status": "active",
       "statusLabel": "Active",
       "statusReason": "",
@@ -586,14 +586,14 @@
         },
         {
           "number": "5",
-          "title": "Counter Terrorism General License 5",
+          "title": "Concluding activities with the Palestinian Authority",
           "date": "April 12, 2006",
           "expires": "May 12, 2006",
           "url": "https://ofac.treasury.gov/media/8381/download?inline"
         },
         {
           "number": "6",
-          "title": "In-kind donations of medicine, medical devices, and medical services",
+          "title": "Counter Terrorism General License 6",
           "date": "April 12, 2006",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/8391/download?inline"
@@ -1328,8 +1328,7 @@
           "date": "May 20, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934291/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "T",
@@ -3244,7 +3243,7 @@
       "title": "Inside the old gas pipeline where Ukraine is fighting an underground war with Russia",
       "url": "https://www.bbc.co.uk/news/videos/c8p3vw4q6nzzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 18, 2026",
-      "description": "Watch: The BBC's Jonathan Beale joins Ukrainian forces who have taken the battle below ground and out of sight of Russian drones."
+      "description": "Watch: The BBC's Jonathan Beale joins Ukrainian forces taking the battle below ground and out of sight of Russian drones."
     },
     {
       "title": "'The drones don't fly here' - BBC reports from Ukraine's new front line",
@@ -3285,6 +3284,12 @@
   ],
   "ajNews": [
     {
+      "title": "Kuwait, Bahrain face new Iran attacks after US strike on Qeshm Island",
+      "url": "https://www.aljazeera.com/news/2026/11/18/kuwait-bahrain-face-new-iran-attacks-after-us-strike-on-qeshm-island?traffic_source=rss",
+      "date": "November 18, 2026",
+      "description": "Iranian attacks on the Gulf countries draw condemnation from across the region."
+    },
+    {
       "title": "Canada’s PM calls out ‘lying’ Putin for downplaying sanctions",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/18/canadas-pm-calls-out-lying-putin-for-downplaying-sanctions?traffic_source=rss",
       "date": "November 18, 2026",
@@ -3307,18 +3312,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/18/can-the-us-and-iran-sustain-a-frozen?traffic_source=rss",
       "date": "November 18, 2026",
       "description": "Tehran may eventually decide that 'escalating confrontation' is preferable to status quo, says analyst Hamidreza Azizi."
-    },
-    {
-      "title": "What is the ‘endgame’ in Syria, as Israeli rivals look for new government?",
-      "url": "https://www.aljazeera.com/features/2026/11/18/what-is-the-end-game-in-syria-as-israeli-rivals-look-for-new-government?traffic_source=rss",
-      "date": "November 18, 2026",
-      "description": "As Israel intensifies its incursions into southern Syria, analysts say there will be little change in the future."
-    },
-    {
-      "title": "Ukraine mourns mother, athlete and drone operator killed in Russian strike",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/18/ukraine-mourns-mother-athlete-and-drone-operator-killed-in-russian-strike?traffic_source=rss",
-      "date": "November 18, 2026",
-      "description": "Rayana joined Ukraine’s army in 2024 to protect her son from Russia’s invasion. She was killed in Russian air strike."
     }
   ],
   "occNews": [
@@ -3330,6 +3323,13 @@
     }
   ],
   "economicsNews": [
+    {
+      "title": "Minutes of the Federal Open Market Committee, October 27-28, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm",
+      "date": "November 18, 2026",
+      "description": "Minutes of the Federal Open Market Committee, October 27-28, 2026",
+      "category": "Monetary Policy"
+    },
     {
       "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
@@ -3531,6 +3531,12 @@
       "description": "The Prince and Princess of Wales were joined by sporting and acting stars for the annual environmental awards ceremony."
     },
     {
+      "title": "New video shows explosions moments before part of Crimea Bridge collapses",
+      "url": "https://www.bbc.co.uk/news/videos/ckvg28jy77z5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 18, 2026",
+      "description": "BBC Verify analyses footage showing the final moments before part of the bridge fell and videos showing the scale of destruction."
+    },
+    {
       "title": "Fiona the hippo undergoing care after swallowing a hat at Cincinnati Zoo",
       "url": "https://www.bbc.co.uk/news/articles/cm2d93z0e9gjo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 18, 2026",
@@ -3603,6 +3609,12 @@
       "description": "The former Nvidia chief executive has been at the centre of the artificial intelligence boom."
     },
     {
+      "title": "Europe plans to catch the next computer chip wave",
+      "url": "https://www.bbc.co.uk/news/articles/cqglwjd450k0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 18, 2026",
+      "description": "Europe hopes to be a leader in a new generation of computer chips which use light to process data."
+    },
+    {
       "title": "Jeff Bezos says he was 'heavily involved' in casting Robert Pattinson as new Bond",
       "url": "https://www.bbc.co.uk/news/articles/cm5y1eejk292o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 18, 2026",
@@ -3613,12 +3625,6 @@
       "url": "https://www.bbc.co.uk/news/articles/ck79210y125xo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 17, 2026",
       "description": "Ex-minister Alan Milburn has set out plans to divert spending from benefits towards job support."
-    },
-    {
-      "title": "Europe plans to catch the next computer chip wave",
-      "url": "https://www.bbc.co.uk/news/articles/cqglwjd450k0o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 18, 2026",
-      "description": "Europe hopes to be a leader in a new generation of computer chips which use light to process data."
     },
     {
       "title": "Speed camera fault may have allowed drivers to escape fines",
@@ -3849,6 +3855,36 @@
       "description": "Black Friday promises huge savings, but are the deals really as good as they seem?"
     },
     {
+      "title": "Israeli court extends Gaza doctor Abu Safia’s detention without charge",
+      "url": "https://www.aljazeera.com/news/2026/11/18/israeli-court-extends-gaza-doctor-abu-safias-detention-without-charge?traffic_source=rss",
+      "date": "November 18, 2026",
+      "description": "An Israeli court extended the detention of Abu Safia nearly two years after Israel's army detained him."
+    },
+    {
+      "title": "Israeli forces launch new military operation in central Gaza",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/18/israeli-forces-launch-new-military-operation-in-central-gaza?traffic_source=rss",
+      "date": "November 18, 2026",
+      "description": "Israeli forces have launched a new military operation in central Gaza, advancing west of the Yellow Line"
+    },
+    {
+      "title": "Donald Trump meets ‘longtime friend’ Imelda Marcos during Philippines visit",
+      "url": "https://www.aljazeera.com/news/2026/11/18/donald-trump-meets-longtime-friend-imelda-marcos-during-philippines-visit?traffic_source=rss",
+      "date": "November 18, 2026",
+      "description": "Trump told Philippine President Marcos he knew his parents 'very well'."
+    },
+    {
+      "title": "Far-right influencer Jake Lang kicked out of Dearborn council meeting",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/18/far-right-influencer-jake-lang-kicked-out-of-dearborn-council-meeting?traffic_source=rss",
+      "date": "November 18, 2026",
+      "description": "Far-right influencer Jake Lang was removed from a Dearborn City Council meeting after disrupting proceedings."
+    },
+    {
+      "title": "What has happened to the $18bn pledged to Trump’s Board of Peace for Gaza?",
+      "url": "https://www.aljazeera.com/news/2026/11/18/what-has-happened-to-the-18bn-pledged-to-trumps-board-of-peace-for-gaza?traffic_source=rss",
+      "date": "November 18, 2026",
+      "description": "Billions have been pledged for Gaza since a 2025 'ceasefire', but rebuilding hasn’t begun and Israeli attacks continue."
+    },
+    {
       "title": "World Bank official says Lebanon reconstruction making slow progress",
       "url": "https://www.aljazeera.com/news/2026/11/18/world-bank-official-says-lebanon-reconstruction-making-slow-progress?traffic_source=rss",
       "date": "November 18, 2026",
@@ -3915,10 +3951,10 @@
       "description": "Hung Cao says shipping insurance costs have soared to $64m for a single transit, challenging claims the strait is open."
     },
     {
-      "title": "Palestinians flee refugee camp as Israel begins operation in central Gaza",
+      "title": "Three killed as Israel launches first ground push since ‘ceasefire’ began",
       "url": "https://www.aljazeera.com/news/2026/11/18/palestinians-flee-refugee-camp-as-israel-begins-operation-in-central-gaza?traffic_source=rss",
       "date": "November 18, 2026",
-      "description": "At least three Palestinians were killed as Israeli forces launched strikes near a refugee camp."
+      "description": "Many Palestinians started to flee refugee camps as the Israeli offensive got underway."
     },
     {
       "title": "‘Crimea is turning into an island’: How Ukraine hit Putin’s prized bridge",
@@ -3937,30 +3973,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/18/aje-onl-nf_lina-attalah-of-mada-masr-on-trial-181126?traffic_source=rss",
       "date": "November 18, 2026",
       "description": "Mada Masr Editor-in-Chief Lina Attalah is set to face a retrial before an Egyptian criminal court."
-    },
-    {
-      "title": "How the US House of Representatives chooses its leaders: A visual guide",
-      "url": "https://www.aljazeera.com/news/2026/11/18/how-the-us-house-of-representatives-chooses-its-leaders-a-visual-guide?traffic_source=rss",
-      "date": "November 18, 2026",
-      "description": "After their midterm win, Democrats will lead the House from January 3. Here’s how its speaker and leaders are chosen."
-    },
-    {
-      "title": "GTA 6: Everything you need to know about the highly anticipated game",
-      "url": "https://www.aljazeera.com/economy/2026/11/18/gta-6-everything-you-need-to-know-about-the-highly-anticipated-game?traffic_source=rss",
-      "date": "November 18, 2026",
-      "description": "Economists predict GTA 6 could cost US up to $1bn in lost productivity, with the game set for release at midnight."
-    },
-    {
-      "title": "How data centres are turning AI-generated heat into energy",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/18/how-data-centres-are-turning-ai-generated-heat-into-energy?traffic_source=rss",
-      "date": "November 18, 2026",
-      "description": "How data centres are turning AI-generated heat into energy"
-    },
-    {
-      "title": "Rwanda and DRC: What is holding up the Washington peace process?",
-      "url": "https://www.aljazeera.com/news/2026/11/18/rwanda-and-drc-what-is-holding-up-the-washington-peace-process?traffic_source=rss",
-      "date": "November 18, 2026",
-      "description": "The two sides remain divided over key security commitments under the Washington Accords."
     }
   ]
 }
