@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T15:08:27.170Z",
+  "updatedAt": "2026-11-19T17:08:24.359Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261119",
@@ -1293,7 +1293,8 @@
           "date": "August 24, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7961/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": false
         },
         {
           "number": "G",
@@ -1301,7 +1302,8 @@
           "date": "August 24, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7966/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": false
         },
         {
           "number": "J-1",
@@ -1309,7 +1311,8 @@
           "date": "July 29, 2016",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7971/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "L",
@@ -1317,15 +1320,17 @@
           "date": "October 8, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48626/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "8A",
-          "title": "Iran General License 8A",
+          "title": "Authorizing Certain Humanitarian Trade Transactions Involving the Central Bank of Iran or the National Iranian Oil Company",
           "date": "February 27, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48841/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "Q",
@@ -1333,7 +1338,8 @@
           "date": "May 20, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934291/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "T",
@@ -3268,16 +3274,22 @@
   ],
   "bbcNews": [
     {
-      "title": "Putin vows 'far more painful' response to Ukraine's strikes on Crimean Bridge",
-      "url": "https://www.bbc.co.uk/news/articles/cm879dqn3e1jo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Myanmar committed genocide against Rohingya minority, top UN court rules",
+      "url": "https://www.bbc.co.uk/news/articles/c804wzp20ddvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 19, 2026",
-      "description": "The Russian president said the Crimean Bridge was civilian infrastructure, which Kyiv disputes."
+      "description": "The unprecedented International Court of Justice verdict concerns a 2017 military crackdown that killed thousands."
     },
     {
       "title": "Venezuela signs military deal with US less than a year after Maduro's removal",
       "url": "https://www.bbc.co.uk/news/articles/cmwy8pyqlq5vo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 19, 2026",
       "description": "The US Secretary of Defence says Venezuela has \"gone from our most aggressive regional threat to a compliant security partner\"."
+    },
+    {
+      "title": "Putin vows 'far more painful' response to Ukraine's strikes on Crimean Bridge",
+      "url": "https://www.bbc.co.uk/news/articles/cm879dqn3e1jo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 19, 2026",
+      "description": "The bridge - a symbol of Russia's occupation of the Crimean Peninsula - suffered major damaged following a combined attack by Ukraine earlier this week."
     },
     {
       "title": "Inside the old gas pipeline where Ukraine is fighting an underground war with Russia",
@@ -3439,16 +3451,28 @@
   ],
   "regionsNews": [
     {
-      "title": "Dozens missing after boat carrying 100 migrants sinks off Senegal's coast",
+      "title": "Trump, Putin and Xi release 'peace declaration' after historic meeting",
+      "url": "https://www.bbc.co.uk/news/articles/c623j4ln97x7o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 19, 2026",
+      "description": "While the presidents have previously met for one-on-one meetings, this is their first trilateral discussion."
+    },
+    {
+      "title": "Dozens missing after boat carrying migrants sinks off Senegal's coast",
       "url": "https://www.bbc.co.uk/news/articles/c58j484089ewo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 19, 2026",
-      "description": "Some local media report that at least four bodies have been recovered."
+      "description": "At least four bodies have been recovered from the boat which was reportedly carrying between 50 and 100 people."
     },
     {
       "title": "Van Gogh painting sells for record $190.4m after row over its Nazi history",
       "url": "https://www.bbc.co.uk/news/articles/c5dj1dkwzvzwo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 19, 2026",
       "description": "Châtaigniers en fleurs was painted in 1890 in the final two months of Vincent van Gogh's life."
+    },
+    {
+      "title": "Susan Smith denied parole again 32 years after drowning her two sons",
+      "url": "https://www.bbc.co.uk/news/articles/ckdd1y09eqjmo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 19, 2026",
+      "description": "This is the second time Smith has requested to be released from prison for killing the two boys, who were both under the age of four at the time."
     },
     {
       "title": "US consortium wins huge Kenya mining deal, beating Chinese rivals",
@@ -3595,10 +3619,10 @@
       "description": "DJ lag, one of South Africa's best-known electronic music producers, is among several African stars to feature on Grand Theft Auto 6."
     },
     {
-      "title": "Simon Jack: Can Anthropic's record-breaking IPO stop the AI bubble bursting?",
-      "url": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 18, 2026",
-      "description": "Anthropic's hotly anticipated IPO is expected to put it in the top 10 most valuable US companies, but the future is uncertain."
+      "title": "'Frustrated' - Democrats remain a divided party despite winning big in midterms",
+      "url": "https://www.bbc.co.uk/news/articles/c6174edpp5e8o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 19, 2026",
+      "description": "After winning power in Congress, a Democratic conference in Denver was animated with talk on the best way forward."
     },
     {
       "title": "The seven Anthropic founders who are about to become multi-billionaires",
@@ -3829,10 +3853,16 @@
       "description": "Solar tiles were touted as an attractive alternative to solar panels - why have they not taken off?"
     },
     {
+      "title": "More support for households reliant on heating oil",
+      "url": "https://www.bbc.co.uk/news/articles/cwm2mj7vezr3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 19, 2026",
+      "description": "North Northamptonshire Council is encouraging eligible residents to apply for more support."
+    },
+    {
       "title": "Increase in direct cremations since pandemic",
       "url": "https://www.bbc.co.uk/news/articles/ck5ywnr59z85o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 19, 2026",
-      "description": "A 2026 Cost of Dying Report found direct cremation was now chosen for around one in five funerals."
+      "description": "A 2026 Cost of Dying Report found direct cremation was now chosen for about one in five funerals."
     },
     {
       "title": "Leftover pumpkins help deliver 1,000th free meal",
@@ -3851,12 +3881,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c6kgr03jlv4ro?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 18, 2026",
       "description": "Gloucester Cathedral has been going through a restructure due to \"significant financial pressure\"."
-    },
-    {
-      "title": "Typical energy bill forecast to go up by £443 a year from January as inflation rate rises again",
-      "url": "https://www.bbc.co.uk/news/articles/cmy498kdkx3xo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 18, 2026",
-      "description": "Energy bills are expected to jump by 26% a year for a typical household as UK inflation hits its highest rate for a year."
     },
     {
       "title": "My hometown shows that high streets have to change or die",
@@ -3917,6 +3941,18 @@
       "url": "https://www.bbc.co.uk/news/videos/cm3eg3q758gjo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 17, 2026",
       "description": "Eighteen people were arrested for a range of suspected crimes including modern slavery, police say."
+    },
+    {
+      "title": "As Burnham heads to Brussels, are new Brexit wars about to begin?",
+      "url": "https://www.aljazeera.com/news/2026/11/19/as-burnham-heads-to-brussels-are-new-brexit-wars-about-to-begin?traffic_source=rss",
+      "date": "November 19, 2026",
+      "description": "The UK premier is heading to Brussels for the second round of EU talks aimed at deepening post-Brexit cooperation."
+    },
+    {
+      "title": "Putin pitches Arctic route, calls for investment: Will it work?",
+      "url": "https://www.aljazeera.com/news/2026/11/19/putin-pitches-arctic-route-calls-for-investment-will-it-work?traffic_source=rss",
+      "date": "November 19, 2026",
+      "description": "Analysts say some Asian investors may show interest, but the route is unlikely to be a viable global shipping lane."
     },
     {
       "title": "A geography of hearts: Turkiye and Lebanon, building the Levant together",
@@ -4031,18 +4067,6 @@
       "url": "https://www.aljazeera.com/sports/2026/11/19/fifa-confirms-diallo-tashima-as-infantinos-challengers-at-2027-election?traffic_source=rss",
       "date": "November 19, 2026",
       "description": "French football chief Philippe Diallo and Japan's Kozo Tashima will be the only candidates to run for FIFA presidency."
-    },
-    {
-      "title": "‘Displacement by design’: Trump’s Gaza peace plan a failure, aid groups say",
-      "url": "https://www.aljazeera.com/news/2026/11/19/displacement-by-design-trumps-gaza-peace-plan-a-failure-aid-groups-say?traffic_source=rss",
-      "date": "November 19, 2026",
-      "description": "With two million Palestinians confined to an area of less than 130sq km, UN-backed Gaza peace plan has collapsed."
-    },
-    {
-      "title": "Trump calls for nuclear arms reduction at APEC summit",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/19/trump-calls-for-nuclear-arms-reduction-at-apec-summit?traffic_source=rss",
-      "date": "November 19, 2026",
-      "description": "Trump calls for nuclear arms reduction at APEC summit"
     }
   ]
 }
