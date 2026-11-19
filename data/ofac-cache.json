@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-19T13:08:25.890Z",
+  "updatedAt": "2026-11-19T15:08:27.170Z",
   "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261119",
+      "code": "20261119",
+      "title": "Counter Narcotics Designations; Cyber-related Designations; Issuance of Illicit Drugs General License; Issuance of Amended Russia-related General License and Frequently Asked Questions",
+      "date": "November 19, 2026"
+    },
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261118",
       "code": "20261118",
@@ -54,12 +60,6 @@
       "code": "20261027",
       "title": "Settlement Agreement between the U.S. Department of the Treasury&#039;s Office of Foreign Assets Control and Extreme Networks, Inc.",
       "date": "October 27, 2026"
-    },
-    {
-      "url": "https://ofac.treasury.gov/recent-actions/20261026",
-      "code": "20261026",
-      "title": "Issuance of Amended Frequently Asked Questions Regarding Blocking and Rejecting Transactions and Filing Reports with OFAC",
-      "date": "October 26, 2026"
     }
   ],
   "civilPenalties": [
@@ -421,7 +421,7 @@
     "counter-narcotics-trafficking-sanctions": {
       "name": "Counter Narcotics Trafficking Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/counter-narcotics-trafficking-sanctions",
-      "lastUpdated": "Nov 13, 2026",
+      "lastUpdated": "Nov 19, 2026",
       "status": "active",
       "statusLabel": "Active",
       "statusReason": "",
@@ -467,7 +467,17 @@
           "glNumbers": []
         }
       ],
-      "generalLicenses": []
+      "generalLicenses": [
+        {
+          "number": "1",
+          "title": "Authorizing the Wind Down of Transactions Involving Certain Persons Blocked on November 19, 2026",
+          "date": "November 19, 2026",
+          "expires": "December 18, 2026",
+          "url": "https://ofac.treasury.gov/media/937331/download?inline",
+          "datePdf": true,
+          "dateConfident": true
+        }
+      ]
     },
     "counter-terrorism-sanctions": {
       "name": "Counter Terrorism Sanctions",
@@ -827,7 +837,7 @@
     "sanctions-related-to-significant-malicious-cyber-enabled-activities": {
       "name": "Cyber-Related Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/sanctions-related-to-significant-malicious-cyber-enabled-activities",
-      "lastUpdated": "Nov 05, 2026",
+      "lastUpdated": "Nov 19, 2026",
       "status": "active",
       "statusLabel": "Active",
       "statusReason": "",
@@ -845,7 +855,7 @@
         },
         {
           "citation": "87 FR 54373-22",
-          "description": "Cyber-Related Sanctions Regulations 80 FR 81752-15 - Issuance of Cyber-Related Sanctions Regulations to implement Executive Order 13694 Recent Actions regarding Cyber-Related Sanctions Cyber-related and Transnational Criminal Organizations Designations; Cuba Designations; Publication of Cuba-related",
+          "description": "Cyber-Related Sanctions Regulations 80 FR 81752-15 - Issuance of Cyber-Related Sanctions Regulations to implement Executive Order 13694 Recent Actions regarding Cyber-Related Sanctions Counter Narcotics Designations; Cyber-related Designations; Issuance of Illicit Drugs General License; Issuance of",
           "year": "2022",
           "glNumbers": []
         }
@@ -1283,8 +1293,7 @@
           "date": "August 24, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7961/download?inline",
-          "datePdf": true,
-          "dateConfident": false
+          "datePdf": true
         },
         {
           "number": "G",
@@ -1292,8 +1301,7 @@
           "date": "August 24, 2026",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7966/download?inline",
-          "datePdf": true,
-          "dateConfident": false
+          "datePdf": true
         },
         {
           "number": "J-1",
@@ -1301,8 +1309,7 @@
           "date": "July 29, 2016",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/7971/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "L",
@@ -1310,17 +1317,15 @@
           "date": "October 8, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48626/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "8A",
-          "title": "Authorizing Certain Humanitarian Trade Transactions Involving the Central Bank of Iran or the National Iranian Oil Company",
+          "title": "Iran General License 8A",
           "date": "February 27, 2020",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/48841/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "Q",
@@ -1328,8 +1333,7 @@
           "date": "May 20, 2025",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/934291/download?inline",
-          "datePdf": true,
-          "dateConfident": true
+          "datePdf": true
         },
         {
           "number": "T",
@@ -1734,7 +1738,7 @@
     "russian-harmful-foreign-activities-sanctions": {
       "name": "Russian Harmful Foreign Activities Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/russian-harmful-foreign-activities-sanctions",
-      "lastUpdated": "Oct 21, 2026",
+      "lastUpdated": "Nov 19, 2026",
       "status": "active",
       "statusLabel": "Active",
       "statusReason": "",
@@ -1742,176 +1746,179 @@
       "executiveOrders": [],
       "frNotices": [
         {
-          "citation": "91 FR 61762-26",
-          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 131E, 131F, and 131G 91 FR 24715-26 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 55E, 115C, 13P, and 131C 91 FR 10007-26 - Publication of Russian Harmful For",
+          "citation": "91 FR 73140-26",
+          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 55F and 115D 91 FR 61762-26 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 131E, 131F, and 131G 91 FR 24715-26 - Publication of Russian Harmful Foreign Activit",
           "year": "2026",
           "glNumbers": [
-            "131E",
-            "55E"
+            "55F",
+            "131E"
           ]
         },
         {
           "citation": "91 FR 10007-26",
-          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 128B 91 FR 10006-26 - Publication of Russian Harmful Foreign Activities Sanctions Regulations and Web General License 131A 91 FR 10004-26 - Publication of Russian Harmful Foreign Activities Sanctions Regulati",
+          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 131B 91 FR 10007-26 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 128B 91 FR 10006-26 - Publication of Russian Harmful Foreign Activities Sanctions Regulations",
           "year": "2026",
           "glNumbers": [
-            "128B",
-            "131A"
+            "131B",
+            "128B"
           ]
         },
         {
-          "citation": "91 FR 10003-26",
-          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 124B, 128A, 130, and 131 91 FR 2302-26 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 132 91 FR 2302-26 - Publication of Russian Harmful Foreign Activities Sanc",
+          "citation": "91 FR 10004-26",
+          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 124A, 126, 127, and 128 91 FR 10003-26 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 124B, 128A, 130, and 131 91 FR 2302-26 - Publication of Russian Harmful F",
           "year": "2026",
           "glNumbers": [
-            "124B",
-            "132"
+            "124A",
+            "124B"
           ]
         },
         {
-          "citation": "91 FR 2301-26",
-          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 129 90 FR 57696-25 - Publication of Russian Harmful Foreign Activities Sanctions Regulations and Ukraine-/Russia-Related Sanctions Regulations Web General License 125 90 FR 47230-25 - Publication of Russian H",
+          "citation": "91 FR 2302-26",
+          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 13O 91 FR 2301-26 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 129 90 FR 57696-25 - Publication of Russian Harmful Foreign Activities Sanctions Regulations and",
           "year": "2026",
           "glNumbers": [
-            "129",
-            "125"
+            "13O",
+            "129"
           ]
         },
         {
-          "citation": "90 FR 34597-25",
-          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 55D and 115B 90 FR 34597-25 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 13M 90 FR 34596-25 - Publication of Russian Harmful Foreign Activities Sanctions Regu",
+          "citation": "90 FR 47230-25",
+          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 104A 90 FR 34597-25 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 55D and 115B 90 FR 34597-25 - Publication of Russian Harmful Foreign Activities Sanctions Reg",
           "year": "2025",
           "glNumbers": [
-            "55D",
-            "13M"
+            "104A",
+            "55D"
           ]
         },
         {
-          "citation": "89 FR 102742-24",
-          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 53A, 55C, 113, and 114 89 FR 89926-24 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 8K, 25G, 110, 111, and 112 89 FR 84820-24 - Publication of Russian Harmful",
-          "year": "2024",
+          "citation": "90 FR 34596-25",
+          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 13N 89 FR 102742-24 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 53A, 55C, 113, and 114 89 FR 89926-24 - Publication of Russian Harmful Foreign Activities San",
+          "year": "2025",
           "glNumbers": [
-            "53A",
-            "8K"
+            "13N",
+            "53A"
           ]
         },
         {
-          "citation": "89 FR 80742-24",
-          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 76A 89 FR 80741-24 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 8H 89 FR 80740-24 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web",
+          "citation": "89 FR 84820-24",
+          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 13K 89 FR 80742-24 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 76A 89 FR 80741-24 - Publication of Russian Harmful Foreign Activities Sanctions Regulations We",
           "year": "2024",
           "glNumbers": [
-            "76A",
-            "8H"
+            "13K",
+            "76A"
           ]
         },
         {
-          "citation": "89 FR 78247-24",
-          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 25E, 25F, 108, and 109 89 FR 78245-24 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Determinations 89 FR 72719-24 - Publication of Russian Harmful Foreign Activities Sanctions Reg",
+          "citation": "89 FR 80740-24",
+          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 79 and 80 89 FR 78247-24 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 25E, 25F, 108, and 109 89 FR 78245-24 - Publication of Russian Harmful Foreign Activiti",
           "year": "2024",
           "glNumbers": [
+            "79",
             "25E"
           ]
         },
         {
-          "citation": "89 FR 72718-24",
-          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 103, 104, 105, 106, and 107 89 FR 72717-24 - Publication of Belarus Sanctions Regulations and Russian Harmful Foreign Activities Sanctions Regulations Web General License 101 89 FR 67860-24 - Publication of",
+          "citation": "89 FR 72719-24",
+          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 99A, 100A, and 102 89 FR 72718-24 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 103, 104, 105, 106, and 107 89 FR 72717-24 - Publication of Belarus Sanctions",
           "year": "2024",
           "glNumbers": [
-            "103",
-            "101"
+            "99A",
+            "103"
           ]
         },
         {
-          "citation": "89 FR 65994-24",
-          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 6D, 8J, 25D, 98, 99, and 100 89 FR 58286-24 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Determinations 89 FR 48840-24 - Publication of Russian Harmful Foreign Activities Sanctio",
+          "citation": "89 FR 67860-24",
+          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 13J and 55B 89 FR 65994-24 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 6D, 8J, 25D, 98, 99, and 100 89 FR 58286-24 - Publication of Russian Harmful Foreign",
           "year": "2024",
           "glNumbers": [
+            "13J",
             "6D"
           ]
         },
         {
-          "citation": "89 FR 48838-24",
-          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 95, 96, and 97 89 FR 48324-24 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Determinations 89 FR 20116-24 - Publication of Russian Harmful Foreign Activities Sanctions Regulations",
+          "citation": "89 FR 48840-24",
+          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 8I, 13I, and 94 89 FR 48838-24 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 95, 96, and 97 89 FR 48324-24 - Publication of Russian Harmful Foreign Activities",
           "year": "2024",
           "glNumbers": [
+            "8I",
             "95"
           ]
         },
         {
-          "citation": "89 FR 16450-24",
-          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Determinations 89 FR 13270-24 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 13H and 86 89 FR 13269-24 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web",
+          "citation": "89 FR 20116-24",
+          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 83A, 88, 88A, 89, 90, 91, 91A, 92, and 93 89 FR 16450-24 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Determinations 89 FR 13270-24 - Publication of Russian Harmful Foreign Activ",
           "year": "2024",
           "glNumbers": [
-            "13H"
+            "83A"
           ]
         },
         {
-          "citation": "89 FR 2880-24",
-          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 81, 82, 83, 84, and 85 88 FR 89574-23 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 78 88 FR 80984-23 - Publication of Russian Harmful Foreign Activities Sanct",
+          "citation": "89 FR 13269-24",
+          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 87 89 FR 2880-24 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 81, 82, 83, 84, and 85 88 FR 89574-23 - Publication of Russian Harmful Foreign Activities Sancti",
           "year": "2024",
           "glNumbers": [
-            "81",
-            "78"
+            "87",
+            "81"
           ]
         },
         {
-          "citation": "88 FR 76665-23",
-          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 73 88 FR 67089-23 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 55A and 72 88 FR 65620-23 - Publication of Determination Pursuant to Section 1(a)(i) of Executi",
+          "citation": "88 FR 80984-23",
+          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 13G, 74, 75, and 76 88 FR 76665-23 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 73 88 FR 67089-23 - Publication of Russian Harmful Foreign Activities Sanction",
           "year": "2023",
           "glNumbers": [
-            "73",
-            "55A"
+            "13G",
+            "73"
           ]
         },
         {
-          "citation": "88 FR 61963-23",
-          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 13F 88 FR 52038-23 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 70 and 71 88 FR 40095-23 - Publication of Russian Harmful Foreign Activities Sanctions Regulat",
+          "citation": "88 FR 65620-23",
+          "description": "Publication of Determination Pursuant to Section 1(a)(i) of Executive Order 14014 88 FR 61963-23 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 13F 88 FR 52038-23 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Lice",
           "year": "2023",
           "glNumbers": [
-            "13F",
-            "70"
+            "13F"
           ]
         },
         {
-          "citation": "88 FR 36645-23",
-          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Determinations 88 FR 36475-23 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 13E, 66, 67, and 68 88 FR 34748-23 - Publication of Russian Harmful Foreign Activities Sanctions Regula",
+          "citation": "88 FR 40095-23",
+          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 69 88 FR 36645-23 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Determinations 88 FR 36475-23 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General",
           "year": "2023",
           "glNumbers": [
-            "13E"
+            "69"
           ]
         },
         {
-          "citation": "88 FR 25279-23",
-          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 62, 63, 64, and 65 88 FR 16889-23 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 8F, 13D, 60, and 61 88 FR 16887-23 - Publication of Russian Harmful Foreign Ac",
+          "citation": "88 FR 34748-23",
+          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 8G 88 FR 25279-23 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 62, 63, 64, and 65 88 FR 16889-23 - Publication of Russian Harmful Foreign Activities Sanction",
           "year": "2023",
           "glNumbers": [
-            "62",
-            "8F"
+            "8G",
+            "62"
           ]
         },
         {
           "citation": "88 FR 16887-23",
-          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Determination 88 FR 13316-23 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 56A and 57A 88 FR 9752-23 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web",
+          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 8E, 58, and 59 88 FR 16887-23 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Determination 88 FR 13316-23 - Publication of Russian Harmful Foreign Activities Sanctions Regulations",
           "year": "2023",
           "glNumbers": [
-            "56A"
+            "8E"
           ]
         },
         {
-          "citation": "87 FR 79803-22",
-          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 8D and 40C 87 FR 79255-22 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Determination - Price Cap on Crude Oil of Russian Federation Origin 87 FR 76931-22 - Publication of Russian",
-          "year": "2022",
+          "citation": "88 FR 9752-23",
+          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 6C, 28B, and 54A 87 FR 79803-22 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General Licenses 8D and 40C 87 FR 79255-22 - Publication of Russian Harmful Foreign Activities Sa",
+          "year": "2023",
           "glNumbers": [
+            "6C",
             "8D"
           ]
         },
         {
-          "citation": "87 FR 76930-22",
-          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 54 87 FR 76930-22 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 13C 87 FR 73637-22 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web",
+          "citation": "87 FR 76931-22",
+          "description": "Publication of Russian Harmful Foreign Activities Sanctions Regulations Determination and Web General Licenses 55, 56, and 57 87 FR 76930-22 - Publication of Russian Harmful Foreign Activities Sanctions Regulations Web General License 54 87 FR 76930-22 - Publication of Russian Harmful Foreign Activi",
           "year": "2022",
           "glNumbers": [
-            "54",
-            "13C"
+            "55",
+            "54"
           ]
         }
       ],
@@ -2052,51 +2059,57 @@
         },
         {
           "number": "44",
-          "title": "Russia-related General License 44",
+          "title": "Authorizing the Export or Reexport of Certain Accounting Services to U.S. Individuals Located in the Russian Federation",
           "date": "July 14, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/924336/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "46",
-          "title": "Russia-related General License 46",
+          "title": "Authorizing Transactions in Support of an Auction Process to Settle Certain Credit Derivative Transactions Prohibited by Executive Order 14071",
           "date": "July 22, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/924546/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "50",
-          "title": "Russia-related General License 50",
+          "title": "Authorizing the Closing of Individual Accounts at Financial Institutions Blocked Pursuant to Executive Order 14024",
           "date": "August 19, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/925326/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "52",
-          "title": "Russia-related General License 52",
+          "title": "Journalistic Activities and Establishment of News Bureaus",
           "date": "September 15, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/926581/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "53A",
-          "title": "Russia-related General License 53A",
+          "title": "Authorizing Transactions for Diplomatic Missions of the Russian Federation Involving Gazprombank Joint Stock Company or Prohibited by Directive 4 under Executive Order 14024",
           "date": "November 10, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/933626/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "54A",
-          "title": "Russia-related General License 54A",
+          "title": "Authorizing Certain Transactions Involving VEON Ltd. or VEON Holdings B.V. Prohibited by Executive Order 14071",
           "date": "November 18, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/930441/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "55F",
@@ -2108,11 +2121,12 @@
         },
         {
           "number": "56A",
-          "title": "Russia-related General License 56A",
+          "title": "Authorizing Certain Services with Respect to the European Union",
           "date": "November 22, 2022",
           "expires": "",
           "url": "https://ofac.treasury.gov/media/931011/download?inline",
-          "datePdf": true
+          "datePdf": true,
+          "dateConfident": true
         },
         {
           "number": "57A",
@@ -2216,11 +2230,11 @@
           "url": "https://ofac.treasury.gov/media/937241/download?inline"
         },
         {
-          "number": "131K",
-          "title": "Russia-related General License 131K",
+          "number": "131L",
+          "title": "Russia-related General License 131L",
           "date": "October 15, 2026",
           "expires": "",
-          "url": "https://ofac.treasury.gov/media/937276/download?inline"
+          "url": "https://ofac.treasury.gov/media/937386/download?inline"
         },
         {
           "number": "132",
@@ -3260,6 +3274,12 @@
       "description": "The Russian president said the Crimean Bridge was civilian infrastructure, which Kyiv disputes."
     },
     {
+      "title": "Venezuela signs military deal with US less than a year after Maduro's removal",
+      "url": "https://www.bbc.co.uk/news/articles/cmwy8pyqlq5vo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 19, 2026",
+      "description": "The US Secretary of Defence says Venezuela has \"gone from our most aggressive regional threat to a compliant security partner\"."
+    },
+    {
       "title": "Inside the old gas pipeline where Ukraine is fighting an underground war with Russia",
       "url": "https://www.bbc.co.uk/news/videos/c8p3vw4q6nzzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 18, 2026",
@@ -3276,18 +3296,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cw4gn9jeqjq7o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 18, 2026",
       "description": "Bahrain says it was also attacked by Iran following a US air strike on the Iranian island of Qeshm in the Gulf on Tuesday."
-    },
-    {
-      "title": "Pakistani man sentenced to 27 years for Iran-backed plot to kill Trump",
-      "url": "https://www.bbc.co.uk/news/articles/cm15ezz8n394o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 18, 2026",
-      "description": "Asif Merchant was found guilty in March of trying to hire undercover FBI agents as hitmen to assassinate US officials, including the president."
-    },
-    {
-      "title": "'The drones don't fly here' - BBC reports from Ukraine's new front line",
-      "url": "https://www.bbc.co.uk/news/articles/c32l507ev4v4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 18, 2026",
-      "description": "Ukrainian forces are fighting Russian troops in an old Soviet tunnel in the Kharkiv region."
     }
   ],
   "ajNews": [
@@ -3313,31 +3321,7 @@
       "title": "UN’s top court finds Myanmar guilty of genocide against Rohingya",
       "url": "https://www.aljazeera.com/news/2026/11/19/un-top-court-finds-myanmar-killed-10000-rohingya-as-it-rules-on-genocide?traffic_source=rss",
       "date": "November 19, 2026",
-      "description": "It is the first time a state has been found responsible for genocide at the International Court of Justice."
-    },
-    {
-      "title": "North Korea expanding uranium enrichment facility, UN nuclear watchdog says",
-      "url": "https://www.aljazeera.com/news/2026/11/19/north-korea-expanding-uranium-enrichment-facility-un-nuclear-watchdog-says?traffic_source=rss",
-      "date": "November 19, 2026",
-      "description": "North Korea can produce both highly enriched uranium and weapons-grade plutonium at its facilities, according to IAEA."
-    },
-    {
-      "title": "Trump meets Putin and Xi for trilateral US, Russia, China talks at APEC",
-      "url": "https://www.aljazeera.com/news/2026/11/19/trump-meets-putin-and-xi-ahead-of-us-russia-china-trilateral-talks?traffic_source=rss",
-      "date": "November 19, 2026",
-      "description": "US president calls both Putin and Xi a 'friend' in separate meetings ahead of rare three-way talks in China."
-    },
-    {
-      "title": "Why is Pete Hegseth strengthening US military ties with Venezuela?",
-      "url": "https://www.aljazeera.com/news/2026/11/19/why-is-pete-hegseth-strengthening-us-military-ties-with-venezuela?traffic_source=rss",
-      "date": "November 19, 2026",
-      "description": "Hegseth's new military deal with Venezuela raises questions about US influence, regional security and Maduro's removal."
-    },
-    {
-      "title": "‘Too early’ to determine impact of US blockade on Iran, with Tehran defiant",
-      "url": "https://www.aljazeera.com/economy/2026/11/19/too-early-to-determine-impact-of-us-siege-on-iran-with-tehran-defiant?traffic_source=rss",
-      "date": "November 19, 2026",
-      "description": "The US blockade of Iranian ports has a crippling effect on the economy, but Tehran insists its economy can survive."
+      "description": "The ruling marks the first time a state has been found responsible for genocide by the International Court of Justice."
     }
   ],
   "occNews": [
@@ -3455,22 +3439,10 @@
   ],
   "regionsNews": [
     {
-      "title": "This is a remarkable diplomatic moment for China's Xi - but it comes with pitfalls",
-      "url": "https://www.bbc.co.uk/news/articles/cr9d75we51j1o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 19, 2026",
-      "description": "The meeting comes with challenges as there are things Xi does not appear keen to discuss with Putin and Trump."
-    },
-    {
       "title": "Dozens missing after boat carrying 100 migrants sinks off Senegal's coast",
       "url": "https://www.bbc.co.uk/news/articles/c58j484089ewo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 19, 2026",
       "description": "Some local media report that at least four bodies have been recovered."
-    },
-    {
-      "title": "Anthropic raises $81bn in record-breaking stock market debut",
-      "url": "https://www.bbc.co.uk/news/articles/c6742m39xgzxo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 19, 2026",
-      "description": "The company behind the Claude chatbot will become one of the most valuable firms in the world."
     },
     {
       "title": "Van Gogh painting sells for record $190.4m after row over its Nazi history",
@@ -3479,16 +3451,22 @@
       "description": "Châtaigniers en fleurs was painted in 1890 in the final two months of Vincent van Gogh's life."
     },
     {
+      "title": "US consortium wins huge Kenya mining deal, beating Chinese rivals",
+      "url": "https://www.bbc.co.uk/news/articles/cm9q84gp0gr3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 19, 2026",
+      "description": "The Mrima Hill site is estimated to hold deposits of critical minerals worth more than $60bn (£45bn)."
+    },
+    {
       "title": "Survivors of Uganda's deadly landslide seek justice at the UN",
       "url": "https://www.bbc.co.uk/news/articles/c920xgxp5785o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 19, 2026",
-      "description": "Survivors reject relocation plans they say ignore their safety, land rights and livelihoods"
+      "description": "Survivors reject relocation plans they say ignore their safety, land rights and livelihoods."
     },
     {
-      "title": "'It's a dream come true' – South African DJ celebrates featuring in GTA 6",
-      "url": "https://www.bbc.co.uk/news/articles/crx20q3qy0vxo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Florida pastor found guilty over role in assassination of Haitian president",
+      "url": "https://www.bbc.co.uk/news/articles/cm702q0lg50po?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 19, 2026",
-      "description": "DJ lag, one of South Africa's best-known electronic music producers, is among several African stars to feature on Grand Theft Auto 6."
+      "description": "Christian Emmanuel Sanon is convicted of involvement in the plot that resulted in the killing of Jovenel Moïse."
     },
     {
       "title": "Israeli military completes ground operation in Gaza beyond Yellow Line",
@@ -3563,10 +3541,16 @@
       "description": "The decision comes after California banned Waymo's driverless vehicles from operating on the state's highways following a series of traffic incidents."
     },
     {
-      "title": "Rubio says US not 'under systemic attack' after series of tech outages",
-      "url": "https://www.bbc.co.uk/news/articles/crkgvxxwpwz2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 18, 2026",
-      "description": "Secretary of State Marco Rubio said there was \"zero evidence\" supporting theories online that recent disruptions affecting Microsoft, banks and flights are connected."
+      "title": "Indian driver wins $1.3m in life-changing lottery prize",
+      "url": "https://www.bbc.co.uk/news/videos/cke89vdn75gyo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 19, 2026",
+      "description": "A truck driver's fortunes have changed overnight after he won a Diwali lottery in the northern Indian state of Punjab."
+    },
+    {
+      "title": "Trump greets 'my friend' Putin as pair shake hands",
+      "url": "https://www.bbc.co.uk/news/videos/c6j9m19llmv3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 19, 2026",
+      "description": "The pair met ahead of a trilateral meeting later with Chinese leader Xi Jinping."
     },
     {
       "title": "Why has Waymo pulled all its driverless cars from US freeways?",
@@ -3599,6 +3583,18 @@
       "description": "The BBC’s Laura Bicker, Steve Rosenberg and Nada Tawfik explain everything you need to know ahead of the unprecedented trilateral meeting."
     },
     {
+      "title": "This is a remarkable diplomatic moment for China's Xi - but it comes with pitfalls",
+      "url": "https://www.bbc.co.uk/news/articles/cr9d75we51j1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 19, 2026",
+      "description": "The meeting comes with challenges as there are things Xi does not appear keen to discuss with Putin and Trump."
+    },
+    {
+      "title": "'It's a dream come true' – South African DJ celebrates featuring in GTA 6",
+      "url": "https://www.bbc.co.uk/news/articles/crx20q3qy0vxo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 19, 2026",
+      "description": "DJ lag, one of South Africa's best-known electronic music producers, is among several African stars to feature on Grand Theft Auto 6."
+    },
+    {
       "title": "Simon Jack: Can Anthropic's record-breaking IPO stop the AI bubble bursting?",
       "url": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 18, 2026",
@@ -3617,24 +3613,6 @@
       "description": "India will remain predominantly Hindu, though its Muslim population is projected to grow faster, according to a new survey."
     },
     {
-      "title": "Can a US-backed mineral highway bring peace and prosperity to DR Congo?",
-      "url": "https://www.bbc.co.uk/news/articles/cx053jrv9rz9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 18, 2026",
-      "description": "The Lobito Corridor is at the centre of a US-backed effort to secure access to Africa's critical minerals."
-    },
-    {
-      "title": "Anthropic raises $81bn in record-breaking stock market debut",
-      "url": "https://www.bbc.co.uk/news/articles/c6742m39xgzxo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 19, 2026",
-      "description": "The company behind the Claude chatbot will become one of the most valuable firms in the world."
-    },
-    {
-      "title": "McDonald's sex abuse: 'They were waiting for the younger girls to turn 18'",
-      "url": "https://www.bbc.co.uk/news/articles/c6x2eve321jno?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 19, 2026",
-      "description": "A former McDonald's worker calls on the firm to “change the way they treat younger employees” as a judge rules a legal case against the chain can go ahead."
-    },
-    {
       "title": "Simon Jack: Can Anthropic's record-breaking IPO stop the AI bubble bursting?",
       "url": "https://www.bbc.co.uk/news/articles/cj4gnpzll020o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 18, 2026",
@@ -3645,6 +3623,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cmd7159vlr85o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 18, 2026",
       "description": "The AI company behind Claude is about to sell its shares on the US stock market - making its founders very rich."
+    },
+    {
+      "title": "McDonald's sex abuse: 'They were waiting for the younger girls to turn 18'",
+      "url": "https://www.bbc.co.uk/news/articles/c6x2eve321jno?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 19, 2026",
+      "description": "A former McDonald's worker calls on the firm to “change the way they treat younger employees” as a judge rules a legal case against the chain can go ahead."
     },
     {
       "title": "Viagogo may have broken law on hidden fees, watchdog provisionally finds",
@@ -3687,6 +3671,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cmy498kdkx3xo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 18, 2026",
       "description": "Energy bills are expected to jump by 26% a year for a typical household as UK inflation hits its highest rate for a year."
+    },
+    {
+      "title": "Anthropic raises $81bn in record-breaking stock market debut",
+      "url": "https://www.bbc.co.uk/news/articles/c6742m39xgzxo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 19, 2026",
+      "description": "The company behind the Claude chatbot will become one of the most valuable firms in the world."
     },
     {
       "title": "Heating bills, chocolate and cat food: What the inflation figures mean for you",
@@ -3929,6 +3919,78 @@
       "description": "Eighteen people were arrested for a range of suspected crimes including modern slavery, police say."
     },
     {
+      "title": "A geography of hearts: Turkiye and Lebanon, building the Levant together",
+      "url": "https://www.aljazeera.com/opinions/2026/11/19/a-geography-of-hearts-turkiye-and-lebanon-building-the-levant-together?traffic_source=rss",
+      "date": "November 19, 2026",
+      "description": "Turkiye and Lebanon can build a stronger Levant through partnership, sovereignty and mutual respect."
+    },
+    {
+      "title": "Somalia expels UAE ambassador, accuses Abu Dhabi of violating sovereignty",
+      "url": "https://www.aljazeera.com/news/2026/11/19/somalia-expels-uae-ambassador-accuses-abu-dhabi-of-violating-sovereignty?traffic_source=rss",
+      "date": "November 19, 2026",
+      "description": "Somalia says the UAE is interfering in its internal affairs with actions that amount to an 'open invasion'."
+    },
+    {
+      "title": "What the ICJ genocide ruling means for the Rohingya people",
+      "url": "https://www.aljazeera.com/news/2026/11/19/what-the-icj-ruling-means-for-the-rohingya?traffic_source=rss",
+      "date": "November 19, 2026",
+      "description": "This is the first time the court has ruled that a state committed genocide."
+    },
+    {
+      "title": "‘Gaza Syndrome’: Israel’s Soldiers Haunted by Genocide – Cost of War",
+      "url": "https://www.aljazeera.com/video/al-jazeera-originals/2026/11/19/gaza-syndrome-israels-soldiers-haunted-by-genocide-cost-of-war?traffic_source=rss",
+      "date": "November 19, 2026",
+      "description": "The trauma Israeli soldiers bring home — and the consequences of Israel’s genocide in Gaza."
+    },
+    {
+      "title": "Canada’s beloved Tim Hortons brews ire over ‘excessive’ Israeli data deal",
+      "url": "https://www.aljazeera.com/features/2026/11/19/canadas-beloved-tim-hortons-brews-ire-over-excessive-israeli-data-deal?traffic_source=rss",
+      "date": "November 19, 2026",
+      "description": "Advocates raised concerns about consumer privacy and data-sharing, involving a firm with ties to Israel's military."
+    },
+    {
+      "title": "FIFA Under-17 World Cup 2026 gets under way in Qatar despite USA withdrawal",
+      "url": "https://www.aljazeera.com/sports/2026/11/19/fifa-under-17-world-cup-2026-gets-under-way-in-qatar-despite-usa-withdrawal?traffic_source=rss",
+      "date": "November 19, 2026",
+      "description": "The 25-day tournament will feature 48 teams, with Dominican Republic replacing USA as FIFA plays down security concerns."
+    },
+    {
+      "title": "Where Roots Lie: Surviving Child Grooming and Exploitation",
+      "url": "https://www.aljazeera.com/video/witness/2026/11/19/where-roots-lie-surviving-child-grooming-and-exploitation?traffic_source=rss",
+      "date": "November 19, 2026",
+      "description": "Sosa, a survivor of trafficking and gang exploitation in the UK, returns to Nigeria to search for his missing mother."
+    },
+    {
+      "title": "Mosque set on fire in Israel, politicians blame Netanyahu’s ‘incitement’",
+      "url": "https://www.aljazeera.com/news/2026/11/19/mosque-set-on-fire-in-israel-politicians-blame-netanyahus-incitement?traffic_source=rss",
+      "date": "November 19, 2026",
+      "description": "Knesset MPs call the incident 'a hate crime' while Hamas blames Israeli 'settler gangs'."
+    },
+    {
+      "title": "South Korean court orders retrial for ex-PM Han over martial law attempt",
+      "url": "https://www.aljazeera.com/news/2026/11/19/south-korean-court-orders-retrial-for-ex-pm-han-over-martial-law-attempt?traffic_source=rss",
+      "date": "November 19, 2026",
+      "description": "The lower Seoul High Court will now retry the case based on the Supreme Court's legal interpretation of insurrection."
+    },
+    {
+      "title": "‘Groundbreaking’ Trump-Xi-Putin summit: Five key takeaways",
+      "url": "https://www.aljazeera.com/news/2026/11/19/groundbreaking-trump-xi-putin-summit-five-key-takeaways?traffic_source=rss",
+      "date": "November 19, 2026",
+      "description": "Leaders hailed the unprecedented meeting as historic, with discussions spanning nuclear risks to energy flows."
+    },
+    {
+      "title": "Two years in, Dutch church’s nonstop service shields family seeking asylum",
+      "url": "https://www.aljazeera.com/news/2026/11/19/two-years-in-dutch-churchs-nonstop-service-shields-family-seeking-asylum?traffic_source=rss",
+      "date": "November 19, 2026",
+      "description": "Under Dutch law, police cannot enter a church as long as a religious service is taking place."
+    },
+    {
+      "title": "Pakistan’s footballers show India sportsmanship after SAFF final defeat",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/19/pakistans-footballers-show-india-sportsmanship-after-saff-final-defeat?traffic_source=rss",
+      "date": "November 19, 2026",
+      "description": "Pakistan’s football team formed a guard of honour for India after losing the SAFF Championship final 2-1 in Bangladesh."
+    },
+    {
       "title": "Can Anthropic afford to put AI safety first?",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/19/can-anthropic-afford-to-put-ai-safety-first?traffic_source=rss",
       "date": "November 19, 2026",
@@ -3981,54 +4043,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/19/trump-calls-for-nuclear-arms-reduction-at-apec-summit?traffic_source=rss",
       "date": "November 19, 2026",
       "description": "Trump calls for nuclear arms reduction at APEC summit"
-    },
-    {
-      "title": "Malaysian weightlifting champion Roslin loses arm after motorbike crash",
-      "url": "https://www.aljazeera.com/sports/2026/11/19/malaysian-weightlifting-champion-hafizuddin-loses-arm-after-motorbike-crash?traffic_source=rss",
-      "date": "November 19, 2026",
-      "description": "Muhammad Hafizuddin Roslin, who won a gold medal at the Commonwealth Games 2026, had his arm amputated after accident."
-    },
-    {
-      "title": "Kenya’s marathon champion Peres Jepchirchir gets three-year ban for doping",
-      "url": "https://www.aljazeera.com/sports/2026/11/19/kenyas-marathon-champion-peres-jepchirchir-gets-three-year-ban-for-doping?traffic_source=rss",
-      "date": "November 19, 2026",
-      "description": "Jepchirchir breached anti-doping rules by testing positive for banned substance EPO, Athletics Integrity Unit says."
-    },
-    {
-      "title": "Is Trump helping rehabilitate Putin on the world stage?",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/19/is-trump-helping-rehabilitate-putin-on-the-world-stage?traffic_source=rss",
-      "date": "November 19, 2026",
-      "description": "Is Trump helping rehabilitate Putin on the world stage?"
-    },
-    {
-      "title": "Saudi-led coalition intercepts Houthi missiles targeting Riyadh and south",
-      "url": "https://www.aljazeera.com/news/2026/11/19/saudi-led-coalition-intercepts-houthi-missiles-targeting-riyadh-and-south?traffic_source=rss",
-      "date": "November 19, 2026",
-      "description": "Material damage was reported after ​debris fell following the latest Houthi strikes launched towards Saudi Arabia."
-    },
-    {
-      "title": "Gaza Syndrome: Why Israeli soldiers’ trauma erases Palestinian victims",
-      "url": "https://www.aljazeera.com/features/2026/11/19/gaza-syndrome-why-israeli-soldiers-trauma-erases-palestinian-victims?traffic_source=rss",
-      "date": "November 19, 2026",
-      "description": "Israeli soldiers describe the psychological toll of the genocide in Gaza, yet many express no remorse."
-    },
-    {
-      "title": "Charting the world’s biggest IPOs as Anthropic overtakes SpaceX",
-      "url": "https://www.aljazeera.com/news/2026/11/19/charting-the-worlds-biggest-ipos-as-anthropic-overtakes-spacex?traffic_source=rss",
-      "date": "November 19, 2026",
-      "description": "The AI company behind Claude raised $81.3bn in the largest initial public offering ever, at a $1.5 trillion valuation."
-    },
-    {
-      "title": "Netanyahu’s last stand and the dangerous politics of survival",
-      "url": "https://www.aljazeera.com/news/2026/11/19/netanyahus-last-stand-and-the-dangerous-politics-of-survival?traffic_source=rss",
-      "date": "November 19, 2026",
-      "description": "Facing political oblivion, Netanyahu is playing a high-stakes game that could push Israel towards violence and chaos."
-    },
-    {
-      "title": "‘It’s my friend’: Moment Trump greets Putin at China summit",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/19/its-my-friend-moment-trump-greets-putin-at-china-summit?traffic_source=rss",
-      "date": "November 19, 2026",
-      "description": "‘It’s my friend’: Moment Trump greets Putin at China summit"
     }
   ]
 }
