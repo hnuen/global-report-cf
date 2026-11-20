@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T17:08:25.644Z",
+  "updatedAt": "2026-11-20T19:08:21.281Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261119",
@@ -1347,22 +1347,6 @@
           "date": "January 23, 2026",
           "expires": "February 22, 2026",
           "url": "https://ofac.treasury.gov/media/934946/download?inline",
-          "datePdf": true
-        },
-        {
-          "number": "GG",
-          "title": "Iran General License GG",
-          "date": "October 21, 2026",
-          "expires": "November 20, 2026",
-          "url": "https://ofac.treasury.gov/media/937266/download?inline",
-          "datePdf": true
-        },
-        {
-          "number": "HH",
-          "title": "Iran General License HH",
-          "date": "October 21, 2026",
-          "expires": "November 20, 2026",
-          "url": "https://ofac.treasury.gov/media/937271/download?inline",
           "datePdf": true
         }
       ]
@@ -3445,7 +3429,13 @@
   ],
   "regionsNews": [
     {
-      "title": "Anthropic shares fall a day after blockbuster opening",
+      "title": "UK to explore even closer ties with EU after agreeing deal, says Burnham",
+      "url": "https://www.bbc.co.uk/news/articles/c6jreyqgw4e9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 20, 2026",
+      "description": "The UK-EU deal agreed on Friday covers British food exports, emissions trading and a youth experience scheme."
+    },
+    {
+      "title": "Anthropic shares fall after blockbuster opening as wider tech sell-off continues",
       "url": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 20, 2026",
       "description": "Other tech companies have also taken a hit as share markets broadly slump."
@@ -3463,6 +3453,12 @@
       "description": "This prolonged execution comes weeks after Christa Pike survived the lethal injection of the same drug."
     },
     {
+      "title": "Indian man sentenced to 19-plus years in plot to assassinate US-based Sikh separatist leader",
+      "url": "https://www.bbc.co.uk/news/articles/cq702ez8d4lwo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 20, 2026",
+      "description": "Nikhil Gupta pleaded guilty to murder-for-hire, conspiracy to commit murder-for-hire, and conspiracy to commit money laundering in February."
+    },
+    {
       "title": "Catherine Zeta-Jones' daughter says parents warned her about 'nepo baby' label",
       "url": "https://www.bbc.co.uk/news/articles/cmgj35zvjyp9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 20, 2026",
@@ -3478,7 +3474,7 @@
       "title": "White House removes cyber-security chief after series of tech outages",
       "url": "https://www.bbc.co.uk/news/articles/cwz0k3nn5p5mo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 20, 2026",
-      "description": "CBS is reporting he has been fired after losing the confidence of White House chief of staff Stephen Miller."
+      "description": "He has been fired after losing the confidence of new White House chief of staff Stephen Miller, according to reports."
     },
     {
       "title": "Massive hope for pancreatic cancer pill after trial saw tumours vanish",
@@ -3547,7 +3543,7 @@
       "description": "Cumin-laced sodas are capturing a bigger market share in India as demand for homegrown flavours goes up."
     },
     {
-      "title": "Anthropic shares fall a day after blockbuster opening",
+      "title": "Anthropic shares fall after blockbuster opening as wider tech sell-off continues",
       "url": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 20, 2026",
       "description": "Other tech companies have also taken a hit as share markets broadly slump."
@@ -3889,6 +3885,30 @@
       "description": "The BBC's Samira Hussain speaks to a retail investor eagerly waiting for the AI company's stock to go live on Thursday."
     },
     {
+      "title": "Zohran Mamdani unveils plan to close New York’s Rikers Island jail by 2032",
+      "url": "https://www.aljazeera.com/news/2026/11/20/mamdani-unveils-plan-to-close-new-yorks-rikers-island-by-2032?traffic_source=rss",
+      "date": "November 20, 2026",
+      "description": "The plan would replace the jail complex with four smaller jails and reduce the number of people behind bars."
+    },
+    {
+      "title": "US tech sell-off continues as Anthropic tumbles after mega IPO",
+      "url": "https://www.aljazeera.com/economy/2026/11/20/us-tech-sell-off-continues-as-anthropic-tumbles-after-mega-ipo?traffic_source=rss",
+      "date": "November 20, 2026",
+      "description": "Anthropic's listing had been viewed as a potential boost for an industry struggling to regain its footing."
+    },
+    {
+      "title": "Protests held across Europe over wages, services, high living costs",
+      "url": "https://www.aljazeera.com/news/2026/11/20/protests-held-across-europe-over-wages-services-high-living-costs?traffic_source=rss",
+      "date": "November 20, 2026",
+      "description": "Workers and students take to the streets as protests inspired by demonstrations in France show no sign of abating."
+    },
+    {
+      "title": "Qatar’s emir calls for diplomacy to end regional conflicts",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/20/qatars-emir-calls-for-diplomacy-to-end-regional-conflicts?traffic_source=rss",
+      "date": "November 20, 2026",
+      "description": "Qatar’s Emir Sheikh Tamim bin Hamad Al Thani called for diplomatic efforts to de-escalate conflicts."
+    },
+    {
       "title": "Top US Democrat warns Trump admin against destroying records",
       "url": "https://www.aljazeera.com/news/2026/11/20/top-us-democrat-warns-trump-admin-against-destroying-records?traffic_source=rss",
       "date": "November 20, 2026",
@@ -3983,30 +4003,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/20/spain-court-grants-bail-to-pro-palestinian-activist-james-fergie-chambers?traffic_source=rss",
       "date": "November 20, 2026",
       "description": "Chambers left Aranjuez prison near Madrid on Friday afternoon, shortly after Spain's High Court ordered him released."
-    },
-    {
-      "title": "Brexit debate returns as UK PM seeks closer EU ties",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/20/brexit-debate-returns-as-uk-pm-seeks-closer-eu-ties?traffic_source=rss",
-      "date": "November 20, 2026",
-      "description": "Brexit debate returns as UK PM seeks closer EU ties"
-    },
-    {
-      "title": "Nations League quarterfinal draw: Spain face France, England play Norway",
-      "url": "https://www.aljazeera.com/sports/2026/11/20/nations-league-knockouts-spain-france-england-norway-quarterfinals?traffic_source=rss",
-      "date": "November 20, 2026",
-      "description": "World Cup winners and European champions Spain have reached three of the four Nations League finals, winning in 2023."
-    },
-    {
-      "title": "BaddyDeadpool: The protester blending humour with activism",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/20/baddydeadpool-the-protester-blending-humour-with-activism?traffic_source=rss",
-      "date": "November 20, 2026",
-      "description": "Al Jazeera spoke to BaddyDeadpool, a French protester who uses dance to ease tensions between police and demonstrators."
-    },
-    {
-      "title": "What does the ICJ’s Rohingya genocide ruling mean for Gaza?",
-      "url": "https://www.aljazeera.com/news/2026/11/20/what-does-the-icjs-rohingya-genocide-ruling-mean-for-gaza?traffic_source=rss",
-      "date": "November 20, 2026",
-      "description": "The case sets a precedent for establishing a state's intent to commit genocide beyond explicitly written orders."
     }
   ]
 }
