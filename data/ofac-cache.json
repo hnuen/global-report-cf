@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T15:08:17.118Z",
+  "updatedAt": "2026-11-20T17:08:25.644Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261119",
@@ -3274,16 +3274,16 @@
   ],
   "bbcNews": [
     {
-      "title": "Russia targets Kyiv crossings days after Ukraine hits Crimean Bridge",
-      "url": "https://www.bbc.co.uk/news/articles/c6x29gn4pdn9o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 20, 2026",
-      "description": "Russia launched one of its biggest air attacks yet as it rejected the prospect of security guarantees for Ukraine."
-    },
-    {
       "title": "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
       "url": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 20, 2026",
       "description": "Nobody was hurt and no damage has been reported, but Warsaw described the incident as a \"provocation\" from Moscow."
+    },
+    {
+      "title": "Russia targets Kyiv crossings days after Ukraine hits Crimean Bridge",
+      "url": "https://www.bbc.co.uk/news/articles/c6x29gn4pdn9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 20, 2026",
+      "description": "Russia launched one of its biggest air attacks yet as it rejected the prospect of security guarantees for Ukraine."
     },
     {
       "title": "Europe ready for talks with Russia on ending war in Ukraine, leaders say",
@@ -3292,25 +3292,19 @@
       "description": "European allies of Ukraine say they have a \"united\" negotiating position at a summit in Berlin."
     },
     {
-      "title": "Myanmar committed genocide against Rohingya minority, top UN court rules",
-      "url": "https://www.bbc.co.uk/news/articles/c804wzp20ddvo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 19, 2026",
-      "description": "The unprecedented International Court of Justice verdict concerns a 2017 military crackdown that killed thousands."
-    },
-    {
-      "title": "Putin vows 'far more painful' response to Ukraine's strikes on Crimean Bridge",
-      "url": "https://www.bbc.co.uk/news/articles/cm879dqn3e1jo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 19, 2026",
-      "description": "The bridge - a symbol of Russia's occupation of the Crimean Peninsula - suffered major damaged following a combined attack by Ukraine earlier this week."
-    },
-    {
-      "title": "Venezuela signs military deal with US less than a year after Maduro's removal",
-      "url": "https://www.bbc.co.uk/news/articles/cmwy8pyqlq5vo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 19, 2026",
-      "description": "The US Secretary of Defence says Venezuela has \"gone from our most aggressive regional threat to a compliant security partner\"."
+      "title": "What we know about the latest Russian missile strikes on Ukraine",
+      "url": "https://www.bbc.co.uk/news/videos/c65y19wy3xl8o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 20, 2026",
+      "description": "What we know about the latest Russian missile strikes on Ukraine."
     }
   ],
   "ajNews": [
+    {
+      "title": "Poland condemns Russian ‘provocation’ after airspace violations",
+      "url": "https://www.aljazeera.com/news/2026/11/20/poland-condemns-russian-provocation-after-airspace-violations?traffic_source=rss",
+      "date": "November 20, 2026",
+      "description": "The incidents came as European troops were taking part in a Ukraine post-war military exercise."
+    },
     {
       "title": "Trump, Putin, Xi pledge to increase global petrol supplies – but how?",
       "url": "https://www.aljazeera.com/news/2026/11/20/trump-putin-xi-pledge-to-increase-global-petrol-supplies-but-how?traffic_source=rss",
@@ -3334,30 +3328,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/20/iraqi-forces-deploy-to-jurf-al-sakhar-after-deal-with-iran-backed-group?traffic_source=rss",
       "date": "November 20, 2026",
       "description": "Iraq's Federal Police are due to assume control of town's newly established control headquarters."
-    },
-    {
-      "title": "US targets Iran’s ship-to-ship transfers: Can Tehran break the blockade?",
-      "url": "https://www.aljazeera.com/news/2026/11/20/us-targets-irans-ship-to-ship-transfers-can-tehran-break-the-blockade?traffic_source=rss",
-      "date": "November 20, 2026",
-      "description": "CENTCOM declares vessels bypassing the Iran blockade could be stopped, boarded or even seized by US forces."
-    },
-    {
-      "title": "Kushner says Russia OK with ‘NATO-like’ security pact for Ukraine: Is it?",
-      "url": "https://www.aljazeera.com/news/2026/11/20/kushner-says-russia-ok-with-nato-like-security-pact-for-ukraine-is-it?traffic_source=rss",
-      "date": "November 20, 2026",
-      "description": "NATO Article 5 says attack on one member is an attack on all. Analysts say inclusion of Ukraine 'stretches credulity'."
-    },
-    {
-      "title": "Can the Rohingya genocide verdict deliver justice?",
-      "url": "https://www.aljazeera.com/opinions/2026/11/20/can-the-rohingya-genocide-verdict-deliver-justice?traffic_source=rss",
-      "date": "November 20, 2026",
-      "description": "The ICJ has ruled against Myanmar, but safe return, citizenship and reparations remain far from guaranteed."
-    },
-    {
-      "title": "Russia unleashes retaliatory barrage on Kyiv bridges",
-      "url": "https://www.aljazeera.com/news/2026/11/20/russia-unleashes-retaliatory-barrage-on-kyiv-bridges?traffic_source=rss",
-      "date": "November 20, 2026",
-      "description": "The attack follows Putin's pledge of 'painful' response to Ukraine's attack on symbolic Crimean bridge."
     }
   ],
   "occNews": [
@@ -3475,16 +3445,28 @@
   ],
   "regionsNews": [
     {
+      "title": "Anthropic shares fall a day after blockbuster opening",
+      "url": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 20, 2026",
+      "description": "Other tech companies have also taken a hit as share markets broadly slump."
+    },
+    {
       "title": "Nearly 600 women killed in South Africa within three months",
       "url": "https://www.bbc.co.uk/news/articles/c69vwyjp0339o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 20, 2026",
       "description": "Police officials called for \"greater efforts to prevent... violence\" against women and children."
     },
     {
-      "title": "White House removes cyber-security chief after series of tech outages",
-      "url": "https://www.bbc.co.uk/news/articles/cwz0k3nn5p5mo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Texas death-row inmate screams as execution takes more than one hour",
+      "url": "https://www.bbc.co.uk/news/articles/ck20vl1dd8qzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 20, 2026",
-      "description": "CBS is reporting he has been fired after losing the confidence of White House chief of staff Stephen Miller."
+      "description": "This prolonged execution comes weeks after Christa Pike survived the lethal injection of the same drug."
+    },
+    {
+      "title": "Catherine Zeta-Jones' daughter says parents warned her about 'nepo baby' label",
+      "url": "https://www.bbc.co.uk/news/articles/cmgj35zvjyp9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 20, 2026",
+      "description": "Carys Douglas, 23, made her stage debut this year in Anton Chekhov's play, The Seagull, in the US."
     },
     {
       "title": "South Korea catches 111 students with new measures against exam cheating",
@@ -3493,112 +3475,28 @@
       "description": "The students were caught with banned smart devices while taking the high-stakes Suneung exam."
     },
     {
+      "title": "White House removes cyber-security chief after series of tech outages",
+      "url": "https://www.bbc.co.uk/news/articles/cwz0k3nn5p5mo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 20, 2026",
+      "description": "CBS is reporting he has been fired after losing the confidence of White House chief of staff Stephen Miller."
+    },
+    {
+      "title": "Massive hope for pancreatic cancer pill after trial saw tumours vanish",
+      "url": "https://www.bbc.co.uk/news/articles/cqrmgjnzz9l0o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 20, 2026",
+      "description": "Daily pill daraxonrasib appears to shrink and possibly even eliminate tumours in some patients with one of the deadliest cancers."
+    },
+    {
       "title": "Nigeria moves to end jail terms for attempted suicide",
       "url": "https://www.bbc.co.uk/news/articles/cm3rgnvxj339o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 20, 2026",
       "description": "Nigeria's proposed reform follows years of calls from psychiatrists and a parallel Senate bill."
     },
     {
-      "title": "'I tell my son it's just fireworks': Life inside Yemeni city besieged by Houthis",
-      "url": "https://www.bbc.co.uk/news/articles/cx7v2d8q879eo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Cost of living protests sweep across Europe",
+      "url": "https://www.bbc.co.uk/news/videos/c6dx12ppeqn4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 20, 2026",
-      "description": "Orla Guerin speaks to seven people trapped in the key city of Taiz, cut off from the outside world for weeks."
-    },
-    {
-      "title": "Anthropic becomes one of world's most valuable public companies in stock market debut",
-      "url": "https://www.bbc.co.uk/news/articles/c3x29ggenz12o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 19, 2026",
-      "description": "Anthropic is the first purely AI company to be publicly listed, creating a test for the entire industry."
-    },
-    {
-      "title": "Trump, Putin and Xi release 'peace declaration' after historic meeting",
-      "url": "https://www.bbc.co.uk/news/articles/c623j4ln97x7o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 19, 2026",
-      "description": "While the presidents have previously met for one-on-one meetings, this is their first trilateral discussion."
-    },
-    {
-      "title": "US army warns detonation of unstable explosives will create toxic plume",
-      "url": "https://www.bbc.co.uk/news/articles/cmlye2334wlyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 20, 2026",
-      "description": "The Army has delayed the controlled explosion of unstable lead azide in eastern Iowa to Monday after concerns from residents and lawmakers."
-    },
-    {
-      "title": "Fiona the hippo dies after swallowing a hat at Cincinnati Zoo",
-      "url": "https://www.bbc.co.uk/news/articles/cwz0k3172xzko?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 19, 2026",
-      "description": "Fiona, who became an internet star after her premature birth in 2017, \"fought until she couldn’t anymore\", the zoo says."
-    },
-    {
-      "title": "China issues Mount Fuji warning as family of missing climber offers reward",
-      "url": "https://www.bbc.co.uk/news/articles/c61wr088jnzzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 20, 2026",
-      "description": "The $75,000 reward offered by Chen Jie's family has sparked fears of more reckless climbing attempts."
-    },
-    {
-      "title": "California targets Nvidia in China AI chip probe",
-      "url": "https://www.bbc.co.uk/news/articles/cqn70vxp5p4no?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 19, 2026",
-      "description": "The probe by California, where the AI chipmaker has its global headquarters, follows former CEO Jensen Huang's departure."
-    },
-    {
-      "title": "Judge finds Thomas Markle mentally fit to stand trial on child abuse charges",
-      "url": "https://www.bbc.co.uk/news/articles/crgj35ldz2zxo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 19, 2026",
-      "description": "Markle, who has denied possessing images of child sex abuse was deemed competent after an evaluation by a court-appointed psychiatrist."
-    },
-    {
-      "title": "Trump posthumously pardons US baseball legend Pete Rose",
-      "url": "https://www.bbc.co.uk/news/articles/cx1l0pm7l9jmo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 19, 2026",
-      "description": "Rose, who died in 2024, was given a lifetime ban from the sport for betting on games but was reinstated last year."
-    },
-    {
-      "title": "Dozens missing after boat carrying migrants sinks off Senegal's coast",
-      "url": "https://www.bbc.co.uk/news/articles/c58j484089ewo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 19, 2026",
-      "description": "At least four bodies have been recovered from the boat which was reportedly carrying between 50 and 100 people."
-    },
-    {
-      "title": "Van Gogh painting sells for record $190.4m after row over its Nazi history",
-      "url": "https://www.bbc.co.uk/news/articles/c5dj1dkwzvzwo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 19, 2026",
-      "description": "Châtaigniers en fleurs was painted in 1890 in the final two months of Vincent van Gogh's life."
-    },
-    {
-      "title": "Susan Smith denied parole again 32 years after drowning her two sons",
-      "url": "https://www.bbc.co.uk/news/articles/ckdd1y09eqjmo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 19, 2026",
-      "description": "At a hearing on the possibility of parole, Smith said she wished she could change the past, and her two children \"did not deserve to die\"."
-    },
-    {
-      "title": "US consortium wins huge Kenya mining deal, beating Chinese rivals",
-      "url": "https://www.bbc.co.uk/news/articles/cm9q84gp0gr3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 19, 2026",
-      "description": "The Mrima Hill site is estimated to hold deposits of critical minerals worth more than $60bn (£45bn)."
-    },
-    {
-      "title": "Survivors of Uganda's deadly landslide seek justice at the UN",
-      "url": "https://www.bbc.co.uk/news/articles/c920xgxp5785o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 19, 2026",
-      "description": "Survivors reject relocation plans they say ignore their safety, land rights and livelihoods."
-    },
-    {
-      "title": "Florida pastor found guilty over role in assassination of Haitian president",
-      "url": "https://www.bbc.co.uk/news/articles/cm702q0lg50po?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 19, 2026",
-      "description": "Christian Emmanuel Sanon is convicted of involvement in the plot that resulted in the killing of Jovenel Moïse."
-    },
-    {
-      "title": "Israeli military completes ground operation in Gaza beyond Yellow Line",
-      "url": "https://www.bbc.co.uk/news/articles/cw8r7510degno?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 19, 2026",
-      "description": "Hamas condemned the incursion, which the Israeli military said was to dismantle a \"terror tunnel\", as a \"flagrant\" ceasefire violation."
-    },
-    {
-      "title": "How did Anthropic's stock market debut unfold?",
-      "url": "https://www.bbc.co.uk/news/videos/cwg7l01vg081o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 19, 2026",
-      "description": "The BBC's Samira Hussain breaks down the AI company's first day as a publicly traded company, as shares closed up 17%."
+      "description": "Thousands marched across European cities on Friday to protest against the cost of living and other issues."
     },
     {
       "title": "From premature baby to social media star - Famed hippo Fiona dies",
@@ -3607,34 +3505,28 @@
       "description": "The beloved hippopotamus died days after swallowing a knitted hat that accidentally got into her enclosure at the Cincinnati Zoo."
     },
     {
-      "title": "Rohingya genocide: What was said in court and what happens now?",
-      "url": "https://www.bbc.co.uk/news/videos/c60qj10j0ld5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 19, 2026",
-      "description": "The verdict marks the first time a state has ever been found to have committed genocide by an international court."
-    },
-    {
       "title": "BBC correspondents discuss what Trump, Xi and Putin got out of historic talks",
       "url": "https://www.bbc.co.uk/news/videos/c63rgnq05pdwo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 19, 2026",
       "description": "Trump, Putin and Xi have issued a \"joint declaration of peace\" after historical trilateral talks, but what did they get out of meeting?"
     },
     {
-      "title": "Indian driver wins $1.3m in life-changing lottery prize",
-      "url": "https://www.bbc.co.uk/news/videos/cke89vdn75gyo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "How did Anthropic's stock market debut unfold?",
+      "url": "https://www.bbc.co.uk/news/videos/cwg7l01vg081o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 19, 2026",
-      "description": "A truck driver's fortunes have changed overnight after he won a Diwali lottery in the northern Indian state of Punjab."
+      "description": "The BBC's Samira Hussain breaks down the AI company's first day as a publicly traded company, as shares closed up 17%."
     },
     {
-      "title": "Cumin-laced fizzy sodas are giving cola giants a tough fight in India",
-      "url": "https://www.bbc.co.uk/news/articles/cw1m4ym7ez2eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 19, 2026",
-      "description": "Cumin-laced sodas are capturing a bigger market share in India as demand for homegrown flavours goes up."
-    },
-    {
-      "title": "More climate money for Africa? Europe says use what's already pledged",
-      "url": "https://www.bbc.co.uk/news/articles/c6074k5jjrzko?at_medium=RSS&amp;at_campaign=rss",
+      "title": "'I tell my son it's just fireworks': Life inside Yemeni city besieged by Houthis",
+      "url": "https://www.bbc.co.uk/news/articles/cx7v2d8q879eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 20, 2026",
-      "description": "African countries at the UN climate summit in Turkey are demanding more funding from developed nations to help them cope with climate change."
+      "description": "Orla Guerin speaks to seven people trapped in the key city of Taiz, cut off from the outside world for weeks."
+    },
+    {
+      "title": "Mysterious Mercury is about to get a visitor - after spacecraft's eight-year epic voyage",
+      "url": "https://www.bbc.co.uk/news/articles/c39w9l4v1p9ro?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 20, 2026",
+      "description": "The mission is set to give us our best ever view of Mercury - the closest planet to the Sun."
     },
     {
       "title": "Why Canada is embracing AI data centres while the US pushes back",
@@ -3643,22 +3535,28 @@
       "description": "Shark Tank's Kevin O'Leary is among the big investors looking to Canada as a data centre development destination, while his US project faces local opposition."
     },
     {
-      "title": "This is a remarkable diplomatic moment for China's Xi - but it comes with pitfalls",
-      "url": "https://www.bbc.co.uk/news/articles/cr9d75we51j1o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 19, 2026",
-      "description": "The meeting comes with challenges as there are things Xi does not appear keen to discuss with Putin and Trump."
+      "title": "More climate money for Africa? Europe says use what's already pledged",
+      "url": "https://www.bbc.co.uk/news/articles/c6074k5jjrzko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 20, 2026",
+      "description": "African countries at the UN climate summit in Turkey are demanding more funding from developed nations to help them cope with climate change."
     },
     {
-      "title": "'It's a dream come true' – South African DJ celebrates featuring in GTA 6",
-      "url": "https://www.bbc.co.uk/news/articles/crx20q3qy0vxo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Cumin-laced fizzy sodas are giving cola giants a tough fight in India",
+      "url": "https://www.bbc.co.uk/news/articles/cw1m4ym7ez2eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 19, 2026",
-      "description": "DJ lag, one of South Africa's best-known electronic music producers, is among several African stars to feature on Grand Theft Auto 6."
+      "description": "Cumin-laced sodas are capturing a bigger market share in India as demand for homegrown flavours goes up."
     },
     {
       "title": "Anthropic shares fall a day after blockbuster opening",
       "url": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 20, 2026",
       "description": "Other tech companies have also taken a hit as share markets broadly slump."
+    },
+    {
+      "title": "Faisal Islam: This cost-cutting UK-EU deal doesn't mean lower prices will follow",
+      "url": "https://www.bbc.co.uk/news/articles/cm1wr029evnqo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 20, 2026",
+      "description": "The trade deal is unlikely lower food prices for shoppers, but should boost the economy more than other post-Brexit agreements."
     },
     {
       "title": "Tinned food and long-life milk boost retail sales after 'Be Ready' campaign launch",
@@ -3673,16 +3571,16 @@
       "description": "Eating at your desk? The dos and don'ts of lunch at work"
     },
     {
-      "title": "Airbnb's divisive new house rules come into force",
-      "url": "https://www.bbc.co.uk/news/articles/cmx278n2genyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 20, 2026",
-      "description": "New rules on what Airbnb hosts can reasonably ask guests to do could mean fewer chores but higher costs for customers."
-    },
-    {
       "title": "Should AI be judging our credit worthiness?",
       "url": "https://www.bbc.co.uk/news/articles/c6d94pzk9vleo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 20, 2026",
       "description": "Would AI be a good judge of whether you should get a mortgage, car loan or mobile phone contract?"
+    },
+    {
+      "title": "Airbnb's divisive new house rules come into force",
+      "url": "https://www.bbc.co.uk/news/articles/cmx278n2genyo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 20, 2026",
+      "description": "New rules on what Airbnb hosts can reasonably ask guests to do could mean fewer chores but higher costs for customers."
     },
     {
       "title": "GTA 6 drives spike in download demand, as estimated sales top $2.3bn",
@@ -3805,12 +3703,6 @@
       "description": "Ex-minister Alan Milburn has set out plans to divert spending from benefits towards job support."
     },
     {
-      "title": "Speed camera fault may have allowed drivers to escape fines",
-      "url": "https://www.bbc.co.uk/news/articles/c5y4j7z373kzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 17, 2026",
-      "description": "The Home Office has revoked approval that allowed footage from speed cameras to be used in evidence."
-    },
-    {
       "title": "Europe plans to catch the next computer chip wave",
       "url": "https://www.bbc.co.uk/news/articles/cqglwjd450k0o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 18, 2026",
@@ -3907,6 +3799,12 @@
       "description": "Solar tiles were touted as an attractive alternative to solar panels - why have they not taken off?"
     },
     {
+      "title": "Faisal Islam: This cost-cutting UK-EU deal doesn't mean lower prices will follow",
+      "url": "https://www.bbc.co.uk/news/articles/cm1wr029evnqo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 20, 2026",
+      "description": "The trade deal is unlikely lower food prices for shoppers, but should boost the economy more than other post-Brexit agreements."
+    },
+    {
       "title": "Thousands join cost of living protests across Europe",
       "url": "https://www.bbc.co.uk/news/videos/c62l5jweqr4ko?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 20, 2026",
@@ -3929,12 +3827,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cq772r7kk315o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 20, 2026",
       "description": "More than two thirds of respondents reported noticing rises in the cost of living."
-    },
-    {
-      "title": "More support for households reliant on heating oil",
-      "url": "https://www.bbc.co.uk/news/articles/cwm2mj7vezr3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 19, 2026",
-      "description": "North Northamptonshire Council is encouraging eligible residents to apply for more support."
     },
     {
       "title": "My hometown shows that high streets have to change or die",
@@ -3967,6 +3859,18 @@
       "description": "Many younger people do not believe the state pension will exist when they are older"
     },
     {
+      "title": "Could you spot a fake banknote?",
+      "url": "https://www.bbc.co.uk/news/videos/c6808y974d13o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 20, 2026",
+      "description": "A landlord says he took £100 in fake banknotes during his pub's opening weekend."
+    },
+    {
+      "title": "The secret cyber scramble to protect UK fridge freezers",
+      "url": "https://www.bbc.co.uk/news/videos/cqpv94x1zj89o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 20, 2026",
+      "description": "A behind the scenes cyber-security operation has taken place to secure tens of thousands of refrigeration units from hackers, the BBC has learned."
+    },
+    {
       "title": "How did Anthropic's stock market debut unfold?",
       "url": "https://www.bbc.co.uk/news/videos/cwg7l01vg081o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 19, 2026",
@@ -3985,16 +3889,70 @@
       "description": "The BBC's Samira Hussain speaks to a retail investor eagerly waiting for the AI company's stock to go live on Thursday."
     },
     {
-      "title": "Business Daily",
-      "url": "https://www.bbc.co.uk/sounds/play/w3ct8gm9?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 18, 2026",
-      "description": "We examine the business of the Claude chatbot maker as it starts selling shares"
+      "title": "Top US Democrat warns Trump admin against destroying records",
+      "url": "https://www.aljazeera.com/news/2026/11/20/top-us-democrat-warns-trump-admin-against-destroying-records?traffic_source=rss",
+      "date": "November 20, 2026",
+      "description": "In a new letter, Congressman Jamie Raskin says officials in the US government are ignoring federal recordkeeping laws."
     },
     {
-      "title": "How high is UK inflation and how will you be affected?",
-      "url": "https://www.bbc.co.uk/news/videos/cxp80q5pv4q5o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 18, 2026",
-      "description": "Prices rose 3.6% in the year to October, mainly because of higher petrol and diesel prices, official figures show."
+      "title": "UK far-right activist ‘Danny Tommo’ jailed for slashing migrant boat",
+      "url": "https://www.aljazeera.com/news/2026/11/20/uk-far-right-activist-danny-tommo-jailed-for-slashing-migrant-boat?traffic_source=rss",
+      "date": "November 20, 2026",
+      "description": "Daniel Thomas livestreamed himself slashing a dinghy used to bring migrants from France to the UK."
+    },
+    {
+      "title": "10 years after divisive Brexit referendum, UK weighs a ‘Breturn’ to the EU",
+      "url": "https://www.aljazeera.com/news/2026/11/20/10-years-after-divisive-brexit-referendum-uk-weighs-a-breturn-to-the-eu?traffic_source=rss",
+      "date": "November 20, 2026",
+      "description": "Prime Minister Andy Burnham returns from the UK-EU summit with a potential new deal and a new start."
+    },
+    {
+      "title": "Qatar and Germany deepen strategic ties during emir’s Berlin visit",
+      "url": "https://www.aljazeera.com/news/2026/11/20/qatar-and-germany-deepen-strategic-ties-during-emirs-berlin-visit?traffic_source=rss",
+      "date": "November 20, 2026",
+      "description": "German chancellor says Qatar pledged $16.5bn in new investments as the two countries deepen defence and technology ties."
+    },
+    {
+      "title": "US Senate passes bill to speed up energy project approvals",
+      "url": "https://www.aljazeera.com/news/2026/11/20/us-senate-passes-bill-to-speed-up-energy-project-approvals?traffic_source=rss",
+      "date": "November 20, 2026",
+      "description": "The legislation aims to lower energy bills by making energy project approvals faster and limiting court challenges."
+    },
+    {
+      "title": "‘Expel invaders’: The dangerous promises of Spain’s far-right Vox party",
+      "url": "https://www.aljazeera.com/news/2026/11/20/what-is-vox-and-how-did-spains-far-right-party-rise-to-prominence?traffic_source=rss",
+      "date": "November 20, 2026",
+      "description": "As Spain prepares to vote, Vox is campaigning on mass deportations and 'national priority'."
+    },
+    {
+      "title": "One third of attacks on children worldwide recorded in Palestine",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/20/one-third-of-attacks-on-children-worldwide-recorded-in-palestine?traffic_source=rss",
+      "date": "November 20, 2026",
+      "description": "Almost one in three reported violations against children worldwide occurred in Palestine in 2025."
+    },
+    {
+      "title": "Kansas hosts become guests as Algeria repays World Cup welcome",
+      "url": "https://www.aljazeera.com/sports/2026/11/20/kansas-hosts-become-guests-as-algeria-repays-world-cup-welcome?traffic_source=rss",
+      "date": "November 20, 2026",
+      "description": "A bond between Kansas and Algeria has deepened since the city hosted the North Africans during the World Cup."
+    },
+    {
+      "title": "Jerusalem Daily: Palestinians return home to ruins",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/20/jerusalem-daily-palestinians-return-home-to-ruins?traffic_source=rss",
+      "date": "November 20, 2026",
+      "description": "Palestinians return to find their homes reduced to rubble after Israel’s ground offensive, as attacks on Gaza continue."
+    },
+    {
+      "title": "Blood Gold: The Munduruku’s fight for survival in the Brazilian Amazon",
+      "url": "https://www.aljazeera.com/video/fault-lines/2026/11/20/blood-gold-the-mundurukus-fight-for-survival-in-the-brazilian-amazon?traffic_source=rss",
+      "date": "November 20, 2026",
+      "description": "Fault Lines investigates how illegal gold mining poisons and threatens Indigenous communities in the Brazilian Amazon."
+    },
+    {
+      "title": "Saudi coalition and Houthis exchange threats to bomb key ports",
+      "url": "https://www.aljazeera.com/news/2026/11/20/saudi-coalition-and-houthis-exchange-threats-to-bomb-key-ports?traffic_source=rss",
+      "date": "November 20, 2026",
+      "description": "Yemen's Houthis have warned airlines of military activity in Saudi airspace in the coming hours."
     },
     {
       "title": "Hot potato: Can Japan resist Trump pressure to import food staple?",
@@ -4024,7 +3982,7 @@
       "title": "Spain court grants bail to pro-Palestinian activist James ‘Fergie’ Chambers",
       "url": "https://www.aljazeera.com/news/2026/11/20/spain-court-grants-bail-to-pro-palestinian-activist-james-fergie-chambers?traffic_source=rss",
       "date": "November 20, 2026",
-      "description": "The philanthropist is accused by US authorities of financially supporting Hamas."
+      "description": "Chambers left Aranjuez prison near Madrid on Friday afternoon, shortly after Spain's High Court ordered him released."
     },
     {
       "title": "Brexit debate returns as UK PM seeks closer EU ties",
@@ -4049,54 +4007,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/20/what-does-the-icjs-rohingya-genocide-ruling-mean-for-gaza?traffic_source=rss",
       "date": "November 20, 2026",
       "description": "The case sets a precedent for establishing a state's intent to commit genocide beyond explicitly written orders."
-    },
-    {
-      "title": "Searching for the next Messi at the Under-17 World Cup",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/20/searching-for-the-next-messi-at-the-under-17-world-cup-2?traffic_source=rss",
-      "date": "November 20, 2026",
-      "description": "Nearly 100 football scouts are in Qatar, searching for the next superstar at the FIFA Under-17 World Cup."
-    },
-    {
-      "title": "Newcastle United vs Arsenal: Premier League – Predictions, lineups, preview",
-      "url": "https://www.aljazeera.com/sports/2026/11/20/newcastle-united-arsenal-premier-league-predictions-lineups-saka-saliba?traffic_source=rss",
-      "date": "November 20, 2026",
-      "description": "As players return from international break, Premier League leaders Arsenal face Newcastle away on match day 11."
-    },
-    {
-      "title": "‘We didn’t come here to beg’: Africa’s message at COP31",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/20/we-didnt-come-here-to-beg-africas-message-at-cop31?traffic_source=rss",
-      "date": "November 20, 2026",
-      "description": "Ghana has demanded climate justice and funding for African nations, warning COP31 leaders against empty promises."
-    },
-    {
-      "title": "US appoints new cybersecurity chief after series of tech failures",
-      "url": "https://www.aljazeera.com/news/2026/11/20/us-appoints-new-cybersecurity-chief-after-series-of-tech-failures?traffic_source=rss",
-      "date": "November 20, 2026",
-      "description": "Appointee Kirsten Davies says US has the chance to 'dominate the cyber landscape for generations to come'."
-    },
-    {
-      "title": "‘The deal is done’: EU, UK agree to reset relations 10 years after Brexit",
-      "url": "https://www.aljazeera.com/news/2026/11/20/eu-and-uk-seal-reset-deal?traffic_source=rss",
-      "date": "November 20, 2026",
-      "description": "Deals on food and animal goods, mobility and student fees have been agreed, but months of negotiations lay ahead."
-    },
-    {
-      "title": "Kataib Hezbollah faces deadline to leave Iraqi stronghold",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/20/kataib-hezbollah-faces-deadline-to-leave-iraqi-stronghold?traffic_source=rss",
-      "date": "November 20, 2026",
-      "description": "Kataib Hezbollah faces deadline to leave Iraqi stronghold"
-    },
-    {
-      "title": "Drone operator removes Man United training footage and issues apology",
-      "url": "https://www.aljazeera.com/sports/2026/11/20/drone-operator-removes-man-united-training-footage-and-issues-apology?traffic_source=rss",
-      "date": "November 20, 2026",
-      "description": "The footage, filmed during new manager Mauricio Pochettino's first training session, was uploaded online."
-    },
-    {
-      "title": "Kenya’s growing doping crisis overshadows legacy as athletics powerhouse",
-      "url": "https://www.aljazeera.com/sports/2026/11/20/kenyas-growing-doping-crisis-overshadows-legacy-as-athletics-powerhouse?traffic_source=rss",
-      "date": "November 20, 2026",
-      "description": "More than 140 Kenyan athletes suspended by the Athletics Integrity Unit since 2017, most of them distance runners."
     }
   ]
 }
