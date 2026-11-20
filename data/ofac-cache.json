@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T21:08:23.759Z",
+  "updatedAt": "2026-11-20T22:08:22.498Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261120",
@@ -3252,6 +3252,12 @@
   ],
   "unNotices": [
     {
+      "title": "Security Council ISIL (Da’esh) and Al-Qaida Sanctions Committee Amends One Entry on Its Sanctions List",
+      "url": "https://press.un.org/en/2026/sc16515.doc.htm",
+      "date": "November 20, 2026",
+      "description": "On 20 November 2026, the Security Council Committee pursuant to resolutions 1267 (1999), 1989 (2011) and 2253 (2015) concerning ISIL (Da’esh), Al-Qaida and associated individuals, groups, undertakings and entities enacted the amendments specified with strikethrough and underline in the entry below on its ISIL (Da’esh) and Al-Qaida Sanctions List of individuals and entities subject to the assets freeze, travel ban and arms embargo set out in paragraph 1 of Security Council resolution 2734 (2024), and adopted under Chapter VII of the Charter of the United Nations."
+    },
+    {
       "title": "Security Council, 10276th Meeting (PM) Subsidiary Bodies",
       "url": "https://press.un.org/en/blog/sc16514",
       "date": "November 19, 2026",
@@ -3278,10 +3284,10 @@
       "description": "Russia launched one of its biggest air attacks yet as it rejected the prospect of security guarantees for Ukraine."
     },
     {
-      "title": "Europe ready for talks with Russia on ending war in Ukraine, leaders say",
-      "url": "https://www.bbc.co.uk/news/articles/ckzd9nln5e6go?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Denmark accuses Russia of plotting to assassinate US-Ukrainian rapper",
+      "url": "https://www.bbc.co.uk/news/articles/cmde1lj4yjxno?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 20, 2026",
-      "description": "European allies of Ukraine say they have a \"united\" negotiating position at a summit in Berlin."
+      "description": "The Russian embassy in Denmark has denied the allegation, which has led to Russia's defence attaché being expelled."
     },
     {
       "title": "What we know about the latest Russian missile strikes on Ukraine",
@@ -3291,6 +3297,12 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Trump defends Putin relationship, warns AI data centres must stay in US",
+      "url": "https://www.aljazeera.com/news/2026/11/20/trump-defends-putin-relationship-warns-ai-data-centres-must-stay-in-us?traffic_source=rss",
+      "date": "November 20, 2026",
+      "description": "The US president also spoke about the war in Iran and praised trip to China during a wide-ranging news conference."
+    },
     {
       "title": "Russia complains of ‘new Iron Curtain’ as Estonia shuts its borders",
       "url": "https://www.aljazeera.com/news/2026/11/20/russia-complains-of-new-iron-curtain-as-estonia-shuts-its-borders?traffic_source=rss",
@@ -3497,6 +3509,12 @@
       "description": "Nigeria's proposed reform follows years of calls from psychiatrists and a parallel Senate bill."
     },
     {
+      "title": "What the new UK-EU deal could mean for future post-Brexit relations",
+      "url": "https://www.bbc.co.uk/news/videos/c90k6gl3lyxeo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 20, 2026",
+      "description": "The BBC's political and Europe editors analyse the new agreements between the UK and EU."
+    },
+    {
       "title": "Cost of living protests sweep across Europe",
       "url": "https://www.bbc.co.uk/news/videos/c6dx12ppeqn4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 20, 2026",
@@ -3513,12 +3531,6 @@
       "url": "https://www.bbc.co.uk/news/videos/c63rgnq05pdwo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 19, 2026",
       "description": "Trump, Putin and Xi have issued a \"joint declaration of peace\" after historical trilateral talks, but what did they get out of meeting?"
-    },
-    {
-      "title": "How did Anthropic's stock market debut unfold?",
-      "url": "https://www.bbc.co.uk/news/videos/cwg7l01vg081o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 19, 2026",
-      "description": "The BBC's Samira Hussain breaks down the AI company's first day as a publicly traded company, as shares closed up 17%."
     },
     {
       "title": "'I tell my son it's just fireworks': Life inside Yemeni city besieged by Houthis",
@@ -3893,6 +3905,30 @@
       "description": "The BBC's Samira Hussain speaks to a retail investor eagerly waiting for the AI company's stock to go live on Thursday."
     },
     {
+      "title": "Iraq PM targets militia stronghold in bid to assert state control",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/20/aje-onl-nf_iraq-pm-targets-militia-stronghold-jurf-al-sakhar-201126?traffic_source=rss",
+      "date": "November 20, 2026",
+      "description": "Iraqi PM Ali al-Zaidi said an operation in Jurf al-Sakhar marks the start of a nationwide push to assert state control."
+    },
+    {
+      "title": "Trump threatens tax on US tech firms building AI data centres abroad",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/20/aje-onl-nf_trump-tax-us-tech-firms-ai-data-centres-abroad-201126?traffic_source=rss",
+      "date": "November 20, 2026",
+      "description": "US President Donald Trump warned US tech companies will face “a tremendous tax” if they build AI data centres abroad."
+    },
+    {
+      "title": "Two Salvadoran soldiers killed in Haiti while handling explosives",
+      "url": "https://www.aljazeera.com/news/2026/11/20/two-salvadoran-soldiers-killed-in-haiti-while-handling-explosives?traffic_source=rss",
+      "date": "November 20, 2026",
+      "description": "Two others were injured in the explosion, marking the first deaths among troops deployed to Haiti since late October."
+    },
+    {
+      "title": "Can the UK and EU turn the page on Brexit?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/20/can-the-uk-and-eu-turn-the-page-on-brexit?traffic_source=rss",
+      "date": "November 20, 2026",
+      "description": "A decade after the Brexit vote, the UK and EU have struck deals. But divisions persist."
+    },
+    {
       "title": "Gaza’s displaced children celebrate World Children’s Day",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/20/gazas-displaced-children-celebrate-world-childrens-day?traffic_source=rss",
       "date": "November 20, 2026",
@@ -3993,36 +4029,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/20/10-years-after-divisive-brexit-referendum-uk-weighs-a-breturn-to-the-eu?traffic_source=rss",
       "date": "November 20, 2026",
       "description": "Prime Minister Andy Burnham returns from the UK-EU summit with a potential new deal and a new start."
-    },
-    {
-      "title": "Qatar and Germany deepen strategic ties during emir’s Berlin visit",
-      "url": "https://www.aljazeera.com/news/2026/11/20/qatar-and-germany-deepen-strategic-ties-during-emirs-berlin-visit?traffic_source=rss",
-      "date": "November 20, 2026",
-      "description": "German chancellor says Qatar pledged $16.5bn in new investments as the two countries deepen defence and technology ties."
-    },
-    {
-      "title": "US Senate passes bill to speed up energy project approvals",
-      "url": "https://www.aljazeera.com/news/2026/11/20/us-senate-passes-bill-to-speed-up-energy-project-approvals?traffic_source=rss",
-      "date": "November 20, 2026",
-      "description": "The legislation aims to lower energy bills by making energy project approvals faster and limiting court challenges."
-    },
-    {
-      "title": "‘Expel invaders’: The dangerous promises of Spain’s far-right Vox party",
-      "url": "https://www.aljazeera.com/news/2026/11/20/what-is-vox-and-how-did-spains-far-right-party-rise-to-prominence?traffic_source=rss",
-      "date": "November 20, 2026",
-      "description": "As Spain prepares to vote, Vox is campaigning on mass deportations and 'national priority'."
-    },
-    {
-      "title": "One third of attacks on children worldwide recorded in Palestine",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/20/one-third-of-attacks-on-children-worldwide-recorded-in-palestine?traffic_source=rss",
-      "date": "November 20, 2026",
-      "description": "Almost one in three reported violations against children worldwide occurred in Palestine in 2025."
-    },
-    {
-      "title": "Kansas hosts become guests as Algeria repays World Cup welcome",
-      "url": "https://www.aljazeera.com/sports/2026/11/20/kansas-hosts-become-guests-as-algeria-repays-world-cup-welcome?traffic_source=rss",
-      "date": "November 20, 2026",
-      "description": "A bond between Kansas and Algeria has deepened since the city hosted the North Africans during the World Cup."
     }
   ]
 }
