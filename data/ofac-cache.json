@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T15:08:20.433Z",
+  "updatedAt": "2026-11-21T17:08:14.030Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261120",
@@ -3272,16 +3272,16 @@
       "description": "Ukraine's president says Kyiv acted after 109 separate Russian aerial attacks on bridges in Ukraine."
     },
     {
-      "title": "Zelensky says Putin is a 'killer' after Trump calls Russian leader a friend",
-      "url": "https://www.bbc.co.uk/news/articles/cxnv4zvmdy0jo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 21, 2026",
-      "description": "Earlier this week, Trump greeted Putin ahead of a meeting in China and said the pair have a \"great relationship\"."
-    },
-    {
       "title": "Denmark accuses Russia of plotting to assassinate US-Ukrainian rapper",
       "url": "https://www.bbc.co.uk/news/articles/cmde1lj4yjxno?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 21, 2026",
       "description": "The Russian embassy in Denmark has denied the allegation, which has led to Russia's defence attaché being expelled."
+    },
+    {
+      "title": "Zelensky says Putin is a 'killer' after Trump calls Russian leader a friend",
+      "url": "https://www.bbc.co.uk/news/articles/cxnv4zvmdy0jo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 21, 2026",
+      "description": "Earlier this week, Trump greeted Putin ahead of a meeting in China and said the pair have a \"great relationship\"."
     },
     {
       "title": "What we know about the latest Russian missile strikes on Ukraine",
@@ -3304,22 +3304,16 @@
       "description": "Iran's FM Araghchi says there is 'major strategic debate' about the future of Iran's nuclear doctrine."
     },
     {
-      "title": "Rescue efforts under way as drones hit Russian ship off Finland coast",
+      "title": "Russian crew evacuating ship hit by drones off coast of Finland",
       "url": "https://www.aljazeera.com/news/2026/11/21/russia-says-kaliningrad-bound-ship-struck-by-drones-in-gulf-of-finland?traffic_source=rss",
       "date": "November 21, 2026",
-      "description": "Two drones attack a cargo ship that Finnish authorities say has links to Russia's armed forces."
+      "description": "Two drones attack cargo ship that Finnish authorities say has links to Russia's armed forces."
     },
     {
       "title": "Russian missiles hit Poland: What happened, and could NATO respond?",
       "url": "https://www.aljazeera.com/news/2026/11/21/russian-missiles-hit-poland-what-happened-and-could-nato-respond?traffic_source=rss",
       "date": "November 21, 2026",
       "description": "Warsaw accuses Moscow of intentional provocation, but bar for triggering NATO's collective defence clause remains high."
-    },
-    {
-      "title": "Iran says it downed US drones over Hormuz as bid to end war remains stalled",
-      "url": "https://www.aljazeera.com/news/2026/11/21/irans-irgc-downs-us-drone-over-hormuz-as-efforts-to-end-war-remain-stalled?traffic_source=rss",
-      "date": "November 21, 2026",
-      "description": "Iran reiterates conditions for Hormuz reopening as US slaps sanctions on four Iranians it says acted as 'oil trustees'."
     }
   ],
   "occNews": [
@@ -3453,6 +3447,12 @@
       "url": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 21, 2026",
       "description": "The National Crime Information Center database is used by federal and local law enforcement to share information."
+    },
+    {
+      "title": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
+      "url": "https://www.bbc.co.uk/news/articles/ckz749ey0r75o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 21, 2026",
+      "description": "Fausto Isidro \"Chapo Idisro\" Meza Flores, who is accused of drug trafficking and torture, is detained after gun fight with authorities."
     },
     {
       "title": "French police officers sentenced for beating of music producer Michel Zecler",
@@ -3905,6 +3905,36 @@
       "description": "The BBC's Samira Hussain speaks to a retail investor eagerly waiting for the AI company's stock to go live on Thursday."
     },
     {
+      "title": "India’s opposition stages protests against Meta over account removals",
+      "url": "https://www.aljazeera.com/news/2026/11/21/indias-opposition-stages-protests-against-meta-over-account-removals?traffic_source=rss",
+      "date": "November 21, 2026",
+      "description": "Indian Youth Congress issues a seven-day 'ultimatum' to the US technology giant, urging it to lift all restrictions."
+    },
+    {
+      "title": "Who is El Chapo Isidro, the alleged cartel boss arrested in Mexico?",
+      "url": "https://www.aljazeera.com/news/2026/11/21/who-is-el-chapo-isidro-the-alleged-cartel-boss-arrested-in-mexico?traffic_source=rss",
+      "date": "November 21, 2026",
+      "description": "Mexican forces arrested Chapo Isidro in Sinaloa. He was on the FBI’s most wanted list and faces US drug charges."
+    },
+    {
+      "title": "US midterms 2026: What happens before the new Congress takes office?",
+      "url": "https://www.aljazeera.com/news/2026/11/21/us-midterms-2026-what-happens-before-the-new-congress-takes-office?traffic_source=rss",
+      "date": "November 21, 2026",
+      "description": "What happens between the US midterm elections and January, when Democrats take control of Congress?"
+    },
+    {
+      "title": "French presidential candidate blames media for racist attack",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/21/french-presidential-candidate-blames-media-for-racist-attack?traffic_source=rss",
+      "date": "November 21, 2026",
+      "description": "French presidential candidate blames media for racist attack"
+    },
+    {
+      "title": "Diallo present as Africa’s Motsepe reiterates support for FIFA’s Infantino",
+      "url": "https://www.aljazeera.com/sports/2026/11/21/diallo-present-as-africa-football-boss-motsepe-reiterates-infantino-support?traffic_source=rss",
+      "date": "November 21, 2026",
+      "description": "Africa's CAF join South America's CONMEBOL in giving unanimous support of FIFA President Gianni Infantino's re-election."
+    },
+    {
       "title": "Man City claw back 1-1 draw with Fulham to end three-game losing streak",
       "url": "https://www.aljazeera.com/sports/2026/11/21/man-city-fightback-for-1-1-draw-with-fulham-to-end-three-game-losing-streak?traffic_source=rss",
       "date": "November 21, 2026",
@@ -3941,10 +3971,10 @@
       "description": "Sudan's displaced elderly often have to support grandchildren or fend for themselves."
     },
     {
-      "title": "Israeli attacks on Gaza kill at least four Palestinians",
+      "title": "Israeli strike on vehicle distributing food aid in Gaza kills three",
       "url": "https://www.aljazeera.com/news/2026/11/21/at-least-four-palestinians-killed-in-israeli-attacks-on-gaza?traffic_source=rss",
       "date": "November 21, 2026",
-      "description": "Israeli drone attack kills three people in Gaza City; another is shot dead by Israeli forces in Jabalia."
+      "description": "Separately, Palestinian man is shot dead by Israeli forces in Jabalia and three people injured in attack in Khan Younis."
     },
     {
       "title": "Florida residents turn to kayaks and rafts as floods swamp streets",
@@ -3999,30 +4029,6 @@
       "url": "https://www.aljazeera.com/sports/2026/11/21/cavaliers-james-harden-closes-on-michael-jordan-in-nba-50-point-game-list?traffic_source=rss",
       "date": "November 21, 2026",
       "description": "James Harden climbs NBA career record list in leading Cleveland Cavaliers to 128-119 win over Indiana Pacers."
-    },
-    {
-      "title": "Nations agree to ‘elaborate’ on rules for AI-run ‘killer robots’ by 2028",
-      "url": "https://www.aljazeera.com/news/2026/11/21/nations-agree-to-draft-rules-for-killer-robots-at-arms-control-summit?traffic_source=rss",
-      "date": "November 21, 2026",
-      "description": "Members of the UN's Convention on Certain Conventional Weapons fail to agree on swift adoption of legally binding rules."
-    },
-    {
-      "title": "Verstappen escapes Vegas F1 discipline, takes pole as Antonelli penalised",
-      "url": "https://www.aljazeera.com/sports/2026/11/21/verstappen-escapes-las-vegas-discipline-takes-pole-as-antonelli-penalised?traffic_source=rss",
-      "date": "November 21, 2026",
-      "description": "Max Verstappen escapes discipline in Vegas F1 practice after run-ins and takes pole as Kimi Antonelli hit with penalty."
-    },
-    {
-      "title": "Sandpapergate: Cummins has Australia’s ‘unanimous support’ as Test captain",
-      "url": "https://www.aljazeera.com/sports/2026/11/21/cummins-wins-cricket-australias-unanimous-support-as-test-captain-sandpapergate?traffic_source=rss",
-      "date": "November 21, 2026",
-      "description": "Pat Cummins to remain Test captain after Cricket Australia back cricketer following cheating scandal in South Africa."
-    },
-    {
-      "title": "Fire sprinkler sprays water at flame-covered sign in China",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/21/fire-sprinkler-sprays-water-at-flame-covered-sign-in-china?traffic_source=rss",
-      "date": "November 21, 2026",
-      "description": "An automatic sprinkler system repeatedly sprayed a barbecue sign depicting flames at China’s Wanlong Ski Resort."
     }
   ]
 }
