@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T15:08:23.330Z",
+  "updatedAt": "2026-11-22T17:08:19.502Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261120",
@@ -3266,6 +3266,12 @@
   ],
   "bbcNews": [
     {
+      "title": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
+      "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 22, 2026",
+      "description": "Libya's eastern government says it is working with Russia to investigate the incident."
+    },
+    {
       "title": "Russia-bound ship still on fire after attack in Gulf of Finland",
       "url": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 22, 2026",
@@ -3298,10 +3304,10 @@
   ],
   "ajNews": [
     {
-      "title": "Zelenskyy urges US to release Patriot missiles as Russia kills 3 in Ukraine",
+      "title": "Zelenskyy urges US to release Patriot missiles as Russia kills 5 in Ukraine",
       "url": "https://www.aljazeera.com/news/2026/11/22/zelenskyy-urges-us-to-release-patriot-missiles?traffic_source=rss",
       "date": "November 22, 2026",
-      "description": "A Russian drone attack kills at least two people near Kyiv as Russian shelling kills one in Zaporizhzhia."
+      "description": "Two Russian attacks kill at least four people near Kyiv as Russian shelling kills one in Zaporizhzhia."
     },
     {
       "title": "Iran unveils dual-missile launcher, new ‘missile city’: What to know",
@@ -3326,18 +3332,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/22/whats-behind-irans-escalation-of-attacks-in-the-gulf?traffic_source=rss",
       "date": "November 22, 2026",
       "description": "Tehran has ramped up attacks as the US naval blockade and sanctions campaign hurt the country economically."
-    },
-    {
-      "title": "Russian ship attacked by drone in Baltic Sea off Finland",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/22/russian-ship-attacked-by-drone-in-baltic-sea-off-finland?traffic_source=rss",
-      "date": "November 22, 2026",
-      "description": "Russian ship attacked by drone in Baltic Sea off Finland"
-    },
-    {
-      "title": "Russian cargo ship still on fire off Finland after drone attack",
-      "url": "https://www.aljazeera.com/news/2026/11/22/russian-cargo-ship-still-on-fire-off-finland-after-drone-attack?traffic_source=rss",
-      "date": "November 22, 2026",
-      "description": "The ship, bound for Russia's Kaliningrad, was damaged in international waters before drifting into Finnish territory."
     }
   ],
   "occNews": [
@@ -3485,16 +3479,16 @@
       "description": "The National Crime Information Center database is used by federal and local law enforcement to share information."
     },
     {
-      "title": "Man convicted of starting Palisades fire in Los Angeles",
-      "url": "https://www.bbc.co.uk/news/articles/c64gn0gy8rj3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 21, 2026",
-      "description": "The 30-year-old LA resident was convicted of arson leading to wildfires that killed 12 people and destroyed more than 6,800 buildings."
-    },
-    {
       "title": "Lock of former US President George Washington's hair sells for $4,000",
       "url": "https://www.bbc.co.uk/news/articles/cwe9k23dpz0do?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 21, 2026",
       "description": "The hair was given as a sign of friendship shortly before Washington's death in 1799, according to a descendent of its former owner."
+    },
+    {
+      "title": "Man convicted of starting Palisades fire in Los Angeles",
+      "url": "https://www.bbc.co.uk/news/articles/c64gn0gy8rj3o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 21, 2026",
+      "description": "The 30-year-old LA resident was convicted of arson leading to wildfires that killed 12 people and destroyed more than 6,800 buildings."
     },
     {
       "title": "Deal with EU not dependent on tuition fees agreement, Miliband says",
@@ -3941,6 +3935,36 @@
       "description": "The BBC's Samira Hussain speaks to a retail investor eagerly waiting for the AI company's stock to go live on Thursday."
     },
     {
+      "title": "‘Disappointing’: Delegates react after COP31 climate talks end without deal",
+      "url": "https://www.aljazeera.com/news/2026/11/22/countries-react-after-cop31-climate-talks-end-in-collapse?traffic_source=rss",
+      "date": "November 22, 2026",
+      "description": "Draft text considered too weak to deal with climate change after oil-producing countries oppose the term 'fossil fuels'."
+    },
+    {
+      "title": "Canada’s PM appears next to Trump impersonator at press dinner",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/22/canadas-pm-appears-next-to-trump-impersonator-at-press-dinner?traffic_source=rss",
+      "date": "November 22, 2026",
+      "description": "A Donald Trump impersonator took to the stage alongside Mark Carney at Canada’s annual Parliamentary Press Gallery."
+    },
+    {
+      "title": "Can we build a more ethical AI future?",
+      "url": "https://www.aljazeera.com/video/upfront/2026/11/22/can-we-build-a-more-ethical-ai-future?traffic_source=rss",
+      "date": "November 22, 2026",
+      "description": "Marc Lamont Hill speaks with tech entrepreneur Anil Dash about AI's risks and the fight for ethical technology."
+    },
+    {
+      "title": "Dozens drown as boat capsizes in Nigeria en route to funeral",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/22/dozens-drown-as-boat-capsizes-in-nigeria-en-route-to-funeral?traffic_source=rss",
+      "date": "November 22, 2026",
+      "description": "At least 24 people have been killed after a boat carrying mourners to a funeral capsized in Nigeria."
+    },
+    {
+      "title": "Drone attacks kill four near Sudan’s capital, damage UN building",
+      "url": "https://www.aljazeera.com/news/2026/11/22/rsf-drones-kill-four-in-khartoum?traffic_source=rss",
+      "date": "November 22, 2026",
+      "description": "The Rapid Support Forces are blamed as drones reportedly hit UN and government buildings, as well as Khartoum's airport."
+    },
+    {
       "title": "The Drugs Don’t Work",
       "url": "https://www.aljazeera.com/video/featured-documentaries/2026/11/22/the-drugs-dont-work?traffic_source=rss",
       "date": "November 22, 2026",
@@ -4029,24 +4053,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/22/why-have-un-efforts-to-regulate-killer-robots-stalled?traffic_source=rss",
       "date": "November 22, 2026",
       "description": "CWC countries agree to 'elaborate' on potential accord regulating autonomous weapons in two years, prompting criticism."
-    },
-    {
-      "title": "Messi throws ball in opponent’s face, avoids red card as Inter Miami lose",
-      "url": "https://www.aljazeera.com/sports/2026/11/22/lionel-messi-inter-miami-yellow-red-card-mls-playoffs?traffic_source=rss",
-      "date": "November 22, 2026",
-      "description": "Lionel Messi escapes red-card booking for controversial throw-in in Miami's 3-0 defeat by Columbus in MLS Cup playoffs."
-    },
-    {
-      "title": "Iraqi bodybuilding champion Sajad Jawad dies days after winning the Asian crown",
-      "url": "https://www.aljazeera.com/sports/2026/11/22/iraqi-bodybuilding-champion-sajad-jawad-dies-days-after-winning-the-asian-crown?traffic_source=rss",
-      "date": "November 22, 2026",
-      "description": "Sajad Jawad died three days after winning the gold medal in the 90kg category at the Asian Championships in Thailand."
-    },
-    {
-      "title": "Restored wells bring life back to Hebron’s occupied Old City",
-      "url": "https://www.aljazeera.com/features/2026/11/22/restored-wells-bring-life-back-to-hebrons-occupied-old-city?traffic_source=rss",
-      "date": "November 22, 2026",
-      "description": "Hebron's Old City has been under constant siege by Israeli settlers and the military."
     }
   ]
 }
