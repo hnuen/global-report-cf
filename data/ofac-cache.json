@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T15:08:18.729Z",
+  "updatedAt": "2026-11-23T17:08:21.776Z",
   "recentActions": [],
   "civilPenalties": [
     {
@@ -3249,6 +3249,12 @@
   ],
   "ajNews": [
     {
+      "title": "Russia warns Ukraine of ‘dangerous trend’ after Libya and Baltic attacks",
+      "url": "https://www.aljazeera.com/news/2026/11/23/russia-warns-ukraine-of-dangerous-trend-after-libya-and-baltic-attacks?traffic_source=rss",
+      "date": "November 23, 2026",
+      "description": "Russia has reacted with fury to Ukraine's continued campaign targeting its naval and merchant shipping."
+    },
+    {
       "title": "Iran says it will use ‘all available means’ to counter US blockade",
       "url": "https://www.aljazeera.com/news/2026/11/23/iran-says-it-will-use-all-available-means-to-counter-us-blockade?traffic_source=rss",
       "date": "November 23, 2026",
@@ -3271,18 +3277,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/23/russian-ships-hit-by-drones-off-libya-coast-what-do-we-know?traffic_source=rss",
       "date": "November 23, 2026",
       "description": "Drone strikes on two Russian vessels near Libyan coast fuels fears of Ukraine war's spread."
-    },
-    {
-      "title": "At least 15 killed in Ukraine’s Kyiv region as Russia intensifies attacks",
-      "url": "https://www.aljazeera.com/news/2026/11/23/death-toll-rises-after-deadly-russian-attacks-on-ukraine?traffic_source=rss",
-      "date": "November 23, 2026",
-      "description": "Mulitple strikes unleashed days after Putin promises a ‘painful’ response to Ukrainian attacks."
-    },
-    {
-      "title": "Zelenskyy says Ukraine behind attacks on Russian ships near Libya",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/zelenskyy-says-ukraine-behind-attacks-on-russian-ships-near-libya?traffic_source=rss",
-      "date": "November 23, 2026",
-      "description": "Ukrainian President Volodymyr Zelenskyy has claimed responsibility for an attack that sank the Russian ship ‘Merkury’."
     }
   ],
   "occNews": [
@@ -3400,6 +3394,12 @@
   ],
   "regionsNews": [
     {
+      "title": "Trump says he 'convinced' Nvidia to reinstate Jensen Huang",
+      "url": "https://www.bbc.co.uk/news/articles/cq5y1k8ez407o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 23, 2026",
+      "description": "The US president personally intervened to speak to members of Nvidia's board of directors."
+    },
+    {
       "title": "Longest-ever UN climate talks end with no deal as deep divisions exposed",
       "url": "https://www.bbc.co.uk/news/articles/cqwy06zrd26lo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 23, 2026",
@@ -3412,7 +3412,13 @@
       "description": "The report says there are signs of possible contamination across almost all of Gaza as a result of Israel's actions."
     },
     {
-      "title": "Flights and train services cancelled in Belgium due to strike",
+      "title": "Search and rescue teams race against time to find survivors after Nigeria boat tragedy",
+      "url": "https://www.bbc.co.uk/news/articles/cq7820xjm49po?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 23, 2026",
+      "description": "The government blames overcrowding, poor maintenance, and missing life jackets for boat accidents."
+    },
+    {
+      "title": "Flights cancelled in Belgium due to cost-of-living strike",
       "url": "https://www.bbc.co.uk/news/articles/cwdr155e2d05o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 23, 2026",
       "description": "A series of strikes have hit Belgium in recent months as the prime minister struggles to agree a budget to cut costs."
@@ -3436,7 +3442,7 @@
       "description": "The two leaders committed to upholding sovereignty and \"non-interference in the internal affairs of states\"."
     },
     {
-      "title": "Presidential villa suffers water and power cuts, Nigerian leader says",
+      "title": "Nigeria's president says he is also hit by water and power cuts plaguing country",
       "url": "https://www.bbc.co.uk/news/articles/cv1j65xjjk65o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 23, 2026",
       "description": "Bola Tinubu says he was shaving last week when the water cut out - an experience familiar to many Nigerians."
@@ -3514,22 +3520,16 @@
       "description": "Pressures weighed on US markets, with the S&P 500 and the Dow Jones Industrial Average pushed into correction territory."
     },
     {
-      "title": "In a year of AI solving maths problems, an Anthropic worker says he may have cracked the biggest",
-      "url": "https://www.bbc.co.uk/news/articles/c6pqr2g7w059o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 20, 2026",
-      "description": "A mathematician at Anthropic says he used an AI to prove the famed Riemann hypothesis, though verification will take some time."
-    },
-    {
-      "title": "Mamdani announces plan to close New York's Rikers Island jail by 2032",
-      "url": "https://www.bbc.co.uk/news/articles/cmjeqv89egylo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 21, 2026",
-      "description": "Plans to shutter the troubled facility date back to 2019, when the city council first voted to close it but delays arose over where to place inmates."
-    },
-    {
       "title": "What's next after no deal at COP31 climate talks?",
       "url": "https://www.bbc.co.uk/news/videos/cr1ewge81q4qo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 23, 2026",
       "description": "The talks have been the longest-running in the summit's history, with negotiations breaking down two days after they had been due to end."
+    },
+    {
+      "title": "The rise and fall and rise again of Jensen Huang",
+      "url": "https://www.bbc.co.uk/news/articles/cmze750zg0jeo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 23, 2026",
+      "description": "Days after resigning while mired in scandal of extra-marital affairs, Nvidia's Jensen Huang is making a remarkable return."
     },
     {
       "title": "San Francisco is enjoying an AI boom, but worries about a crash are growing",
@@ -3556,10 +3556,22 @@
       "description": "Fewer young people have registered to vote in next year's election than in 2023 - are young people losing faith in democracy?"
     },
     {
-      "title": "They were fined $811m for conning detained migrants, but the scams didn't stop",
-      "url": "https://www.bbc.co.uk/news/articles/cqgm0zlkgrm2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 21, 2026",
-      "description": "How convicted fraudsters made millions from detained immigrants, evaded efforts to shut down their bail business and left migrants behind bars."
+      "title": "Nvidia shares up 30% and tech stocks rally after Jensen Huang returns",
+      "url": "https://www.bbc.co.uk/news/articles/cq62pn6j42jko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 23, 2026",
+      "description": "The jump in Nvidia shares has also lifted stock markets, with the tech-heavy Nasdaq up 6.5% in early trading."
+    },
+    {
+      "title": "How important are Nvidia and Jensen Huang to the US economy?",
+      "url": "https://www.bbc.co.uk/news/articles/c68798vdprwpo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 23, 2026",
+      "description": "The Nvidia chief executive has been at the centre of the artificial intelligence boom."
+    },
+    {
+      "title": "The rise and fall and rise again of Jensen Huang",
+      "url": "https://www.bbc.co.uk/news/articles/cmze750zg0jeo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 23, 2026",
+      "description": "Days after resigning while mired in scandal of extra-marital affairs, Nvidia's Jensen Huang is making a remarkable return."
     },
     {
       "title": "Capita shares plunge 70% as boss quits after civil service pensions failure",
@@ -3568,10 +3580,10 @@
       "description": "Public sector workers have been hit by delays to pension payments, in a scheme overseen by Capita since last year."
     },
     {
-      "title": "Catering giant to switch main share listing to US in further blow to UK",
-      "url": "https://www.bbc.co.uk/news/articles/ckz74098jq5po?at_medium=RSS&amp;at_campaign=rss",
+      "title": "San Francisco is enjoying an AI boom, but worries about a crash are growing",
+      "url": "https://www.bbc.co.uk/news/articles/cqe9k09j9jv4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 23, 2026",
-      "description": "A growing number of firms have been leaving the UK to list shares in the US in recent years."
+      "description": "AI employees in the industry's epicentre - San Francisco - worry that the sector is overheated."
     },
     {
       "title": "Next data accessed in cyber breach",
@@ -3580,16 +3592,16 @@
       "description": "The fashion retailer says there is no evidence customers' personal data was compromised."
     },
     {
+      "title": "Catering giant to switch main share listing to US in further blow to UK",
+      "url": "https://www.bbc.co.uk/news/articles/ckz74098jq5po?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 23, 2026",
+      "description": "A growing number of firms have been leaving the UK to list shares in the US in recent years."
+    },
+    {
       "title": "Energy bills will soar - here's how you can ease the pain",
       "url": "https://www.bbc.co.uk/news/articles/crm4rygl4m3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 23, 2026",
       "description": "Household energy bills are about to increase but there are ways to keep a lid on your expenditure."
-    },
-    {
-      "title": "San Francisco is enjoying an AI boom, but worries about a crash are growing",
-      "url": "https://www.bbc.co.uk/news/articles/cqe9k09j9jv4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 23, 2026",
-      "description": "AI employees in the industry's epicentre - San Francisco - worry that the sector is overheated."
     },
     {
       "title": "Poundland is facing collapse - what's gone wrong?",
@@ -3694,12 +3706,6 @@
       "description": "Jensen Huang's personal life may have triggered the crisis, but the questions now reach into the White House itself."
     },
     {
-      "title": "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
-      "url": "https://www.bbc.co.uk/news/articles/cmze750zg0jeo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 12, 2026",
-      "description": "Within days, Huang's status as a seemingly untouchable figure leading the global tech race has crumbled."
-    },
-    {
       "title": "Robot vessels take on the dangerous work of mine hunting",
       "url": "https://www.bbc.co.uk/news/articles/cj5yn24llxd6o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 11, 2026",
@@ -3784,7 +3790,7 @@
       "description": "The government commissioned a review into Pip last year after it was forced to water down planned cuts to benefits."
     },
     {
-      "title": "Flights and train services cancelled in Belgium due to strike",
+      "title": "Flights cancelled in Belgium due to cost-of-living strike",
       "url": "https://www.bbc.co.uk/news/articles/cwdr155e2d05o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 23, 2026",
       "description": "A series of strikes have hit Belgium in recent months as the prime minister struggles to agree a budget to cut costs."
@@ -3838,10 +3844,10 @@
       "description": "Many younger people do not believe the state pension will exist when they are older"
     },
     {
-      "title": "US government reassured Nvidia board over Huang",
+      "title": "Nvidia reinstates CEO after affair with alleged spy",
       "url": "https://www.bbc.co.uk/news/videos/cqze7lwdglngo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 23, 2026",
-      "description": "President Trump backed Nvidia's decision to reinstate Jensen Huang as CEO"
+      "description": "Senior US government officials backed Nvidia's decision to reinstate Jensen Huang, the company says in a statement."
     },
     {
       "title": "Witness History",
@@ -3868,10 +3874,52 @@
       "description": "A behind the scenes cyber-security operation has taken place to secure tens of thousands of refrigeration units from hackers, the BBC has learned."
     },
     {
+      "title": "Why did COP31 climate talks collapse without a deal?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/why-did-cop31-climate-talks-collapse-without-a-deal?traffic_source=rss",
+      "date": "November 23, 2026",
+      "description": "The longest UN climate summit in history collapsed without a final deal in Turkiye, the first such failure in 17 years."
+    },
+    {
+      "title": "Israeli strikes kill at least three, including UNRWA worker, in Gaza",
+      "url": "https://www.aljazeera.com/news/2026/11/23/israeli-drone-strike-kills-unrwa-worker-in-gaza?traffic_source=rss",
+      "date": "November 23, 2026",
+      "description": "Israel continues to launch attacks across the enclave, despite an October 2025 'ceasefire' deal."
+    },
+    {
+      "title": "Gaza mourns UNRWA worker killed in Israeli strike",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/gaza-mourns-unrwa-worker-killed-in-israeli-strike?traffic_source=rss",
+      "date": "November 23, 2026",
+      "description": "Palestinians mourned UNRWA employee Adel al-Helou, who was killed on Monday in an Israeli airstrike while on duty"
+    },
+    {
+      "title": "Israeli soldiers assault Palestinian after raiding his home",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/israeli-soldiers-assault-palestinian-after-raiding-his-home?traffic_source=rss",
+      "date": "November 23, 2026",
+      "description": "Israeli forces assault a Palestinian man during a raid on his home in the occupied West Bank."
+    },
+    {
+      "title": "Jensen Huang returns as NVIDIA CEO after intelligence scandal",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/jensen-huang-returns-as-nvidia-ceo-after-intelligence-scandal?traffic_source=rss",
+      "date": "November 23, 2026",
+      "description": "Jensen Huang is reinstated as NVIDIA’s CEO after reports he was targeted in an alleged foreign intelligence operation."
+    },
+    {
+      "title": "Brazil coach mistaken for pitch invader, put in headlock",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/brazil-coach-mistaken-for-pitch-invader-put-in-headlock?traffic_source=rss",
+      "date": "November 23, 2026",
+      "description": "Footage shows Parana Clube coach Tcheco being grabbed by security guard after celebrating a goal with fans."
+    },
+    {
+      "title": "Police investigating bomb threats against schools in Germany and Denmark",
+      "url": "https://www.aljazeera.com/news/2026/11/23/police-investigating-bomb-threats-against-schools-in-germany-and-denmark?traffic_source=rss",
+      "date": "November 23, 2026",
+      "description": "Bomb threats follow hoax emails sent to schools across Europe earlier in November."
+    },
+    {
       "title": "Nvidia board reinstates Jensen Huang as CEO",
       "url": "https://www.aljazeera.com/economy/2026/11/23/nvidia-board-reinstates-jensen-huang-as-ceo?traffic_source=rss",
       "date": "November 23, 2026",
-      "description": "Huang stepped down as CEO earlier this month after revelations of at least two affairs, including with a suspected spy."
+      "description": "Huang stepped down earlier this month after revelations of at least two affairs, including with a suspected Chinese spy."
     },
     {
       "title": "Israeli restrictions cut off vital hearing aid supplies in Gaza",
@@ -3944,42 +3992,6 @@
       "url": "https://www.aljazeera.com/features/2026/11/23/military-zones-in-occupied-west-bank-become-israeli-settler-outpost-lands?traffic_source=rss",
       "date": "November 23, 2026",
       "description": "Closed military zones in the occupied West Bank are being seized by settlers as staging posts for pogroms."
-    },
-    {
-      "title": "Thousands displaced after deadly storm hits Brazil town",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/thousands-displaced-after-deadly-storm-hits-brazil-town?traffic_source=rss",
-      "date": "November 23, 2026",
-      "description": "A powerful supercell storm devastated the Brazilian town of Tupancireta."
-    },
-    {
-      "title": "Gaza turned into ‘toxic wasteland’ by Israel’s war, says new report",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/gaza-turned-into-toxic-wasteland-by-israels-war-says-new-report?traffic_source=rss",
-      "date": "November 23, 2026",
-      "description": "Gaza turned into ‘toxic wasteland’ by Israel’s war, says new report"
-    },
-    {
-      "title": "‘Environmental crimes’: Israel blamed for toxic pollution in 99% of Gaza",
-      "url": "https://www.aljazeera.com/news/2026/11/23/environmental-crimes-israel-blamed-for-toxic-pollution-in-99-of-gaza?traffic_source=rss",
-      "date": "November 23, 2026",
-      "description": "A new report by UK-based charity Oxfam shows how Israel’s destruction of Gaza has created a ‘toxic wasteland'."
-    },
-    {
-      "title": "Artificial superintelligence ‘arriving’, warns top Meta executive",
-      "url": "https://www.aljazeera.com/economy/2026/11/23/ai-superintelligence-arriving-warns-top-meta-executive?traffic_source=rss",
-      "date": "November 23, 2026",
-      "description": "Meta Chief AI Officer Alexandr Wang says humankind's actions over next year will have 'great consequence' for the world."
-    },
-    {
-      "title": "Widowed amid war and displacement: Sudanese mothers struggle to survive",
-      "url": "https://www.aljazeera.com/features/2026/11/23/widowed-amid-war-and-displacement-sudanese-mothers-struggle-to-survive?traffic_source=rss",
-      "date": "November 23, 2026",
-      "description": "War widows in Sudan face growing challenges supporting their children as the cost of living increases."
-    },
-    {
-      "title": "Europe’s hot autumn of protests is a symptom of economic breakdown",
-      "url": "https://www.aljazeera.com/opinions/2026/11/23/europes-hot-autumn-of-protests-is-a-symptom-of-economic-breakdown-2?traffic_source=rss",
-      "date": "November 23, 2026",
-      "description": "European governments beholden to corporate interests no longer have the wellbeing of their nations as a top priority."
     }
   ]
 }
