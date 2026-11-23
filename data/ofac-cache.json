@@ -1,6 +1,67 @@
 {
-  "updatedAt": "2026-11-23T17:08:21.776Z",
-  "recentActions": [],
+  "updatedAt": "2026-11-23T19:08:18.284Z",
+  "recentActions": [
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261123",
+      "code": "20261123",
+      "title": "Iran-related Designations",
+      "date": "November 23, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261120",
+      "code": "20261120",
+      "title": "Iran Designations; Issuance of Cuba Frequently Asked Questions",
+      "date": "November 20, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261119",
+      "code": "20261119",
+      "title": "Counter Narcotics Designations; Cyber-related Designations; Issuance of Illicit Drugs General License; Issuance of Amended Russia-related General License and Frequently Asked Questions",
+      "date": "November 19, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261118",
+      "code": "20261118",
+      "title": "Counter Terrorism Designations",
+      "date": "November 18, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261113",
+      "code": "20261113",
+      "title": "Counter Narcotics and Counter Terrorism Designations",
+      "date": "November 13, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261109",
+      "code": "20261109",
+      "title": "Iran Designation Update",
+      "date": "November 09, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261106",
+      "code": "20261106",
+      "title": "Iran-related Designations",
+      "date": "November 06, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261105",
+      "code": "20261105",
+      "title": "Cyber-related and Transnational Criminal Organizations Designations; Cuba Designations; Publication of Cuba-related Determination",
+      "date": "November 05, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261104",
+      "code": "20261104",
+      "title": "Iran-related Designations; Updates to Certain Iran-related Listings; Publication of Iran-related OFAC Alert; Issuance of Amended Venezuela-related General License and Frequently Asked Question",
+      "date": "November 04, 2026"
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261029",
+      "code": "20261029",
+      "title": "Issuance of Amended Iran-related General License",
+      "date": "October 29, 2026"
+    }
+  ],
   "civilPenalties": [
     {
       "date": "10/27/2026",
@@ -1094,7 +1155,7 @@
     "iran-sanctions": {
       "name": "Iran Sanctions",
       "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions",
-      "lastUpdated": "Nov 20, 2026",
+      "lastUpdated": "Nov 23, 2026",
       "status": "active",
       "statusLabel": "Active",
       "statusReason": "",
@@ -3223,18 +3284,6 @@
       "description": "Finnish defence forces say that Ukraine was likely behind the drone strike on Saturday. Kyiv has yet to comment."
     },
     {
-      "title": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
-      "url": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 21, 2026",
-      "description": "Ukraine's president says Kyiv acted after 109 separate Russian aerial attacks on bridges in Ukraine."
-    },
-    {
-      "title": "Denmark accuses Russia of plotting to assassinate US-Ukrainian rapper",
-      "url": "https://www.bbc.co.uk/news/articles/cmde1lj4yjxno?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 21, 2026",
-      "description": "The Russian embassy in Denmark has denied the allegation, which has led to Russia's defence attaché being expelled."
-    },
-    {
       "title": "Ukraine shares video of strikes on Russian ships off Libya",
       "url": "https://www.bbc.co.uk/news/videos/c6wy93q5wwqvo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 23, 2026",
@@ -3248,6 +3297,18 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "What Russian warship did Ukraine just sink?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/what-russian-warship-did-ukraine-just-sink?traffic_source=rss",
+      "date": "November 23, 2026",
+      "description": "Ukraine says it sank the Russian warship Merkury off the coast of Libya. Here's why the vessel is significant."
+    },
+    {
+      "title": "Tajikistan moves to leave ICC amid US push against court",
+      "url": "https://www.aljazeera.com/news/2026/11/23/tajikistan-moves-to-leave-icc-amid-us-push-against-court?traffic_source=rss",
+      "date": "November 23, 2026",
+      "description": "The ICC found that Tajikistan failed to comply with its request to arrest Russian President Vladimir Putin."
+    },
     {
       "title": "Russia warns Ukraine of ‘dangerous trend’ after Libya and Baltic attacks",
       "url": "https://www.aljazeera.com/news/2026/11/23/russia-warns-ukraine-of-dangerous-trend-after-libya-and-baltic-attacks?traffic_source=rss",
@@ -3394,16 +3455,22 @@
   ],
   "regionsNews": [
     {
-      "title": "Trump says he 'convinced' Nvidia to reinstate Jensen Huang",
-      "url": "https://www.bbc.co.uk/news/articles/cq5y1k8ez407o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Iranian authorities flog singer who performed without hijab, lawyers say",
+      "url": "https://www.bbc.co.uk/news/articles/cq1j6585l5g6o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 23, 2026",
-      "description": "The US president personally intervened to speak to members of Nvidia's board of directors."
+      "description": "Parastoo Ahmadi, three musicians and a producer were reportedly given 74 lashes in Qom."
     },
     {
-      "title": "Longest-ever UN climate talks end with no deal as deep divisions exposed",
-      "url": "https://www.bbc.co.uk/news/articles/cqwy06zrd26lo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "'I want to destroy capitalism, not France': On the streets with the French ultra left",
+      "url": "https://www.bbc.co.uk/news/articles/cw074km48myeo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 23, 2026",
-      "description": "The prime minister of Australia, which co-hosted COP31, attributed the failure to \"difficult geopolitical times\"."
+      "description": "The BBC meets the far-left protesters French President Emmanuel Macron says are trying to bring down the Republic."
+    },
+    {
+      "title": "What failure of COP31 reveals about a divided world",
+      "url": "https://www.bbc.co.uk/news/articles/cky970n83rvjo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 23, 2026",
+      "description": "Interests of oil-producing countries, a US boycott and a dispute over finance may have torpedoed climate talks."
     },
     {
       "title": "Israeli attacks have turned Gaza into 'toxic wasteland', Oxfam says",
@@ -3412,10 +3479,28 @@
       "description": "The report says there are signs of possible contamination across almost all of Gaza as a result of Israel's actions."
     },
     {
+      "title": "India pledges $1.6bn to Nepal in reset of ties",
+      "url": "https://www.bbc.co.uk/news/articles/cwx2ervemj4ko?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 23, 2026",
+      "description": "As Nepal rebuilds after deadly floods, its prime minister sets contentious issues aside to secure Indian funding, port access and a new train service."
+    },
+    {
       "title": "Search and rescue teams race against time to find survivors after Nigeria boat tragedy",
       "url": "https://www.bbc.co.uk/news/articles/cq7820xjm49po?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 23, 2026",
       "description": "The government blames overcrowding, poor maintenance, and missing life jackets for boat accidents."
+    },
+    {
+      "title": "Prominent Zimbabwean preacher arrested on sexual assault allegations",
+      "url": "https://www.bbc.co.uk/news/articles/cxyvdmjr893zo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 23, 2026",
+      "description": "Uebert Angel, a British-Zimbabwean national, leads a charismatic church with branches in several countries."
+    },
+    {
+      "title": "Comedian impersonates Trump's dance moves, mocks trade talks at Canada press dinner",
+      "url": "https://www.bbc.co.uk/news/articles/cr930y92dyx4o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 23, 2026",
+      "description": "The impersonator, Canadian comedian Mark Critch, poked fun at the US president's search for a new press secretary and US-Canada trade talks."
     },
     {
       "title": "Flights cancelled in Belgium due to cost-of-living strike",
@@ -3496,30 +3581,6 @@
       "description": "The hair was given as a sign of friendship shortly before Washington's death in 1799, according to a descendent of its former owner."
     },
     {
-      "title": "Man convicted of starting Palisades fire in Los Angeles",
-      "url": "https://www.bbc.co.uk/news/articles/c64gn0gy8rj3o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 21, 2026",
-      "description": "The 30-year-old LA resident was convicted of arson leading to wildfires that killed 12 people and destroyed more than 6,800 buildings."
-    },
-    {
-      "title": "Deal with EU not dependent on tuition fees agreement, Miliband says",
-      "url": "https://www.bbc.co.uk/news/articles/cm9w9p4geke8o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 21, 2026",
-      "description": "Brussels sources had previously suggested the bloc might not apply the wider deal until fees were lowered for EU students in Britain."
-    },
-    {
-      "title": "French police officers sentenced for beating of music producer Michel Zecler",
-      "url": "https://www.bbc.co.uk/news/articles/ck9d7e9wvvweo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 20, 2026",
-      "description": "The court has upheld the 2020 beating of the black music producer as an aggravated circumstance of racism."
-    },
-    {
-      "title": "Tech stock sell-off drags markets down as Anthropic shares slide",
-      "url": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 20, 2026",
-      "description": "Pressures weighed on US markets, with the S&P 500 and the Dow Jones Industrial Average pushed into correction territory."
-    },
-    {
       "title": "What's next after no deal at COP31 climate talks?",
       "url": "https://www.bbc.co.uk/news/videos/cr1ewge81q4qo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 23, 2026",
@@ -3556,10 +3617,16 @@
       "description": "Fewer young people have registered to vote in next year's election than in 2023 - are young people losing faith in democracy?"
     },
     {
-      "title": "Nvidia shares up 30% and tech stocks rally after Jensen Huang returns",
+      "title": "Faisal Islam: Why Jensen Huang proved too big to fire",
+      "url": "https://www.bbc.co.uk/news/articles/ckr5g8edl94eo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 23, 2026",
+      "description": "Huang's role at the centre of his company's journey to lynchpin of AI proved crucial."
+    },
+    {
+      "title": "Nvidia shares up nearly 33% and tech stocks rally after Jensen Huang returns",
       "url": "https://www.bbc.co.uk/news/articles/cq62pn6j42jko?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 23, 2026",
-      "description": "The jump in Nvidia shares has also lifted stock markets, with the tech-heavy Nasdaq up 6.5% in early trading."
+      "description": "The jump in Nvidia shares has also lifted stock markets, with the tech-heavy Nasdaq up 7%."
     },
     {
       "title": "How important are Nvidia and Jensen Huang to the US economy?",
@@ -3574,16 +3641,16 @@
       "description": "Days after resigning while mired in scandal of extra-marital affairs, Nvidia's Jensen Huang is making a remarkable return."
     },
     {
-      "title": "Capita shares plunge 70% as boss quits after civil service pensions failure",
-      "url": "https://www.bbc.co.uk/news/articles/c65y1qqw3kjxo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 23, 2026",
-      "description": "Public sector workers have been hit by delays to pension payments, in a scheme overseen by Capita since last year."
-    },
-    {
       "title": "San Francisco is enjoying an AI boom, but worries about a crash are growing",
       "url": "https://www.bbc.co.uk/news/articles/cqe9k09j9jv4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 23, 2026",
       "description": "AI employees in the industry's epicentre - San Francisco - worry that the sector is overheated."
+    },
+    {
+      "title": "Capita shares plunge 70% as boss quits after civil service pensions failure",
+      "url": "https://www.bbc.co.uk/news/articles/c65y1qqw3kjxo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 23, 2026",
+      "description": "Public sector workers have been hit by delays to pension payments, in a scheme overseen by Capita since last year."
     },
     {
       "title": "Next data accessed in cyber breach",
@@ -3808,7 +3875,7 @@
       "description": "President Macron has blamed the unrest on the radical left, but who are the protesters and what are they fighting for?"
     },
     {
-      "title": "Househunter swaps Australia for Wales's most affordable town - where locals are struggling to buy",
+      "title": "Househunter swaps Australia for Wales' most affordable town - where locals are struggling to buy",
       "url": "https://www.bbc.co.uk/news/articles/cjkgkdppk1nwo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 23, 2026",
       "description": "The area has attracted investors and even a buyer from Australia, but locals struggle to afford homes."
@@ -3844,6 +3911,12 @@
       "description": "Many younger people do not believe the state pension will exist when they are older"
     },
     {
+      "title": "'Biggest U-turn in economic history': Experts react to Jensen Huang's return to Nvidia",
+      "url": "https://www.bbc.co.uk/news/videos/cq8r7e35mkzlo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 23, 2026",
+      "description": "The Nvidia CEO was reinstated after weeks of controversy over his affair with an alleged Chinese spy."
+    },
+    {
       "title": "Nvidia reinstates CEO after affair with alleged spy",
       "url": "https://www.bbc.co.uk/news/videos/cqze7lwdglngo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 23, 2026",
@@ -3868,10 +3941,16 @@
       "description": "A landlord says he took £100 in fake banknotes during his pub's opening weekend."
     },
     {
-      "title": "The secret cyber scramble to protect UK fridge freezers",
-      "url": "https://www.bbc.co.uk/news/videos/cqpv94x1zj89o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 20, 2026",
-      "description": "A behind the scenes cyber-security operation has taken place to secure tens of thousands of refrigeration units from hackers, the BBC has learned."
+      "title": "India pledges $1.6bn in flood relief for Nepal as Balendra Shah visits Modi",
+      "url": "https://www.aljazeera.com/news/2026/11/23/india-pledges-1-6bn-in-flood-relief-for-nepal?traffic_source=rss",
+      "date": "November 23, 2026",
+      "description": "Nepal's Prime Minister Balendra Shah is in New Delhi for a two-day visit — his first since coming to power in March."
+    },
+    {
+      "title": "Danish top court’s ‘ghetto law’ ruling supports hardline immigration policy",
+      "url": "https://www.aljazeera.com/news/2026/11/23/danish-top-courts-ghetto-law-ruling-supports-hardline-immigration-policy?traffic_source=rss",
+      "date": "November 23, 2026",
+      "description": "The country's top court said eviction of 'non-Western' families did not constitute discrimination."
     },
     {
       "title": "Why did COP31 climate talks collapse without a deal?",
@@ -3968,30 +4047,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/23/cop31-what-next-after-un-climate-talks-collapse?traffic_source=rss",
       "date": "November 23, 2026",
       "description": "UN member states fail to agree on how to fast-track action to reverse global warming in a blow to climate agenda."
-    },
-    {
-      "title": "Lebanese families return to ruins after Israeli attacks in south",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/lebanese-families-return-to-ruins-after-israeli-attacks-in-south?traffic_source=rss",
-      "date": "November 23, 2026",
-      "description": "In southern Lebanon’s Nabatieh, displaced families have been returning to ruins and widespread destruction."
-    },
-    {
-      "title": "CAS decision on Senegal’s AFCON 2025 title appeal on Tuesday",
-      "url": "https://www.aljazeera.com/sports/2026/11/23/senegal-africa-cup-of-nations-afcon-morocco-cas-decision-appeal?traffic_source=rss",
-      "date": "November 23, 2026",
-      "description": "Senegal are contesting CAF's decision to declare Morocco champions, despite Senegal winning the final 1-0 in January."
-    },
-    {
-      "title": "Why is Bangladesh’s Grameen Bank under attack?",
-      "url": "https://www.aljazeera.com/news/2026/11/23/why-is-bangladeshs-grameen-bank-under-attack?traffic_source=rss",
-      "date": "November 23, 2026",
-      "description": "Leading financial institution has found itself at centre of tensions amid violence by Sheikh Hasina supporters."
-    },
-    {
-      "title": "Occupied West Bank ‘military zones’ become de facto Israeli settler land",
-      "url": "https://www.aljazeera.com/features/2026/11/23/military-zones-in-occupied-west-bank-become-israeli-settler-outpost-lands?traffic_source=rss",
-      "date": "November 23, 2026",
-      "description": "Closed military zones in the occupied West Bank are being seized by settlers as staging posts for pogroms."
     }
   ]
 }
