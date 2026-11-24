@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T17:08:19.379Z",
+  "updatedAt": "2026-11-24T19:08:23.068Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261123",
@@ -3265,6 +3265,12 @@
       "description": "Nearly 1,000 children are among those killed or injured by explosives left over from the conflict, figures show."
     },
     {
+      "title": "Zimbabwean convicted in South Africa of trying to fight in Ukraine",
+      "url": "https://www.bbc.co.uk/news/articles/cmqj5qlj5yz9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 24, 2026",
+      "description": "Hundreds of people from different African countries have been recruited to fight for Russia, according to Ukraine."
+    },
+    {
       "title": "Russian governor detained in rare criminal case against regional leader",
       "url": "https://www.bbc.co.uk/news/articles/cmwy868v3nneo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 24, 2026",
@@ -3291,6 +3297,30 @@
   ],
   "ajNews": [
     {
+      "title": "Global landmine casualties hit a five-year high, driven by Myanmar, Syria",
+      "url": "https://www.aljazeera.com/news/2026/11/24/global-landmine-casualties-hit-a-five-year-high-driven-by-myanmar-syria?traffic_source=rss",
+      "date": "November 24, 2026",
+      "description": "Landmine monitor found 84 percent of deaths caused by landmines were in Southeast Asia."
+    },
+    {
+      "title": "Is Libya a new front in the Ukraine war?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/11/24/is-libya-a-new-front-in-the-ukraine-war?traffic_source=rss",
+      "date": "November 24, 2026",
+      "description": "Ukraine's President Volodymyr Zelenskyy says two Russian vessels were targeted in Libya's waters."
+    },
+    {
+      "title": "US sanctions on Lebanon’s Hezbollah-affiliates may have limited impact",
+      "url": "https://www.aljazeera.com/news/2026/11/24/us-sanctions-on-lebanons-hezbollah-affiliates-may-have-limited-impact?traffic_source=rss",
+      "date": "November 24, 2026",
+      "description": "Analysts say US sanctions unlikely to weaken Hezbollah significantly, but risk hurting everyday Lebanese."
+    },
+    {
+      "title": "After Libya, where will Ukraine strike Russia next?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/after-libya-where-will-ukraine-strike-russia-next?traffic_source=rss",
+      "date": "November 24, 2026",
+      "description": "From Libya to Sudan and Mali, Ukraine is targeting Russia's military networks across Africa."
+    },
+    {
       "title": "Qatar urges restraint and dialogue amid US-Iran tensions",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/aje-onl-nf_qatar-urges-restraint-amid-us-iran-tensions-241126?traffic_source=rss",
       "date": "November 24, 2026",
@@ -3313,35 +3343,17 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/russia-tows-it-cargo-ship-back-home-after-ukrainian-drone-attack?traffic_source=rss",
       "date": "November 24, 2026",
       "description": "The Russian cargo ship Sparta II was towed back to home waters after a Ukrainian drone attack in the Gulf of Finland"
-    },
-    {
-      "title": "Could Russia-Ukraine war threaten Libya’s fragile reunification process?",
-      "url": "https://www.aljazeera.com/news-analysis/2026/11/24/could-russia-ukraine-war-threaten-libyas-fragile-reunification-process?traffic_source=rss",
-      "date": "November 24, 2026",
-      "description": "Ukraine's involvement in Libya raises concerns as Zelenskyy admits targeting Russian vessels in a key port city."
-    },
-    {
-      "title": "Hormuz oil traffic is down 40 percent: Are Iran’s tanker attacks working?",
-      "url": "https://www.aljazeera.com/news/2026/11/24/hormuz-oil-traffic-is-down-40-percent-are-irans-tanker-attacks-working?traffic_source=rss",
-      "date": "November 24, 2026",
-      "description": "Attacks on tankers have increased, impacting the flow of oil through the Strait of Hormuz."
-    },
-    {
-      "title": "Russia-Ukraine war live: Moscow will ‘respond’ to attacks on oil refineries",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/russia-ukraine-war-live-kyiv-says-attack-on-ships-off-libya-self-delfence?traffic_source=rss",
-      "date": "November 24, 2026",
-      "description": "Ukrainian drone attacks ​slashed Russian oil refineries' combined crude processing volumes by 45% since late October."
     }
   ],
-  "occNews": [
-    {
-      "title": "OCC Announces Enforcement Actions for October 2026",
-      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-93.html",
-      "date": "October 22, 2026",
-      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for October 2026."
-    }
-  ],
+  "occNews": [],
   "economicsNews": [
+    {
+      "title": "Minutes of the Board's discount rate meetings on October 19 and October 28, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261124a.htm",
+      "date": "November 24, 2026",
+      "description": "Minutes of the Board's discount rate meetings on October 19 and October 28, 2026",
+      "category": "Monetary Policy"
+    },
     {
       "title": "Minutes of the Federal Open Market Committee, October 27-28, 2026",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm",
@@ -3448,10 +3460,10 @@
   ],
   "regionsNews": [
     {
-      "title": "Trump faces backlash after saying he 'convinced' Nvidia to reinstate CEO Jensen Huang",
-      "url": "https://www.bbc.co.uk/news/articles/cq5y1k8ez407o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "US attorney general dodges questions about Nvidia investigation",
+      "url": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 24, 2026",
-      "description": "Nvidia had come under pressure from President Trump to reappoint Huang, whose comeback helped add $1tn to the company's stock value."
+      "description": "Nvidia's share price have fallen 7% as lawmakers demand answers about President Donald Trump's involvement in Huang's reinstatement."
     },
     {
       "title": "What Jensen Huang's return teaches China's Xi about Trump",
@@ -3470,6 +3482,12 @@
       "url": "https://www.bbc.co.uk/news/articles/c6rrg7ggq190o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 24, 2026",
       "description": "Naeem Abu Nahel, who had been in the post for two months, is among seven Palestinians reportedly killed in Israeli strikes on Tuesday."
+    },
+    {
+      "title": "French ex-President Sarkozy and wife Carla Bruni to face trial",
+      "url": "https://www.bbc.co.uk/news/articles/c65y17pwv1z7o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 24, 2026",
+      "description": "It is the latest case involving Nicolas Sarkozy who became the first French ex-president to go to jail last year."
     },
     {
       "title": "Pope Francis' diary reveals claims he saw the devil three times",
@@ -3574,6 +3592,18 @@
       "description": "AI employees in the industry's epicentre - San Francisco - worry that the sector is overheated."
     },
     {
+      "title": "Faisal Islam: Fears over the AI boom haven't gone away",
+      "url": "https://www.bbc.co.uk/news/articles/c6894evgpel5o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 24, 2026",
+      "description": "There were legitimate fears before Huang's abrupt exit from Nvidia - and his return won't fix it"
+    },
+    {
+      "title": "US attorney general dodges questions about Nvidia investigation",
+      "url": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 24, 2026",
+      "description": "Nvidia's share price have fallen 7% as lawmakers demand answers about President Donald Trump's involvement in Huang's reinstatement."
+    },
+    {
       "title": "The shake-up facing renters as a new kind of landlord emerges",
       "url": "https://www.bbc.co.uk/news/articles/c6n90g2l82d1o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 24, 2026",
@@ -3602,12 +3632,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c6zjr3g13zkno?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 24, 2026",
       "description": "Busy mothers on both sides of the Atlantic are paying companies to handle their to-do lists."
-    },
-    {
-      "title": "Faisal Islam: Why Jensen Huang proved too big to fire",
-      "url": "https://www.bbc.co.uk/news/articles/ckr5g8edl94eo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 23, 2026",
-      "description": "Huang's role at the centre of his company's journey to lynchpin of AI proved crucial."
     },
     {
       "title": "Nvidia value climbs by almost $1tn and tech stocks rally after Jensen Huang returns",
@@ -3922,6 +3946,42 @@
       "description": "In 1994, the agreement that created the World Trade Organization was signed in Morrocco"
     },
     {
+      "title": "Senior Hamas security official killed in Israeli drone strikes",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/senior-hamas-security-official-killed-in-israeli-drone-strikes?traffic_source=rss",
+      "date": "November 24, 2026",
+      "description": "A senior Hamas security official has been killed in a series of Israeli strikes across Gaza"
+    },
+    {
+      "title": "Colombia at a Crossroads: Searching for peace amid conflict",
+      "url": "https://www.aljazeera.com/video/witness/2026/11/24/colombia-at-a-crossroads-searching-for-peace-amid-conflict?traffic_source=rss",
+      "date": "November 24, 2026",
+      "description": "A decade after Colombia's peace accords, former FARC fighter and artist honours killed signatories with a mural."
+    },
+    {
+      "title": "Should freedom of movement be a right or a privilege?",
+      "url": "https://www.aljazeera.com/video/doha-debates/2026/11/24/should-freedom-of-movement-be-a-right-or-a-privilege?traffic_source=rss",
+      "date": "November 24, 2026",
+      "description": "Is freedom of movement a right or a privilege?"
+    },
+    {
+      "title": "Cameroon separatist leader pleads not guilty at war crimes trial in Norway",
+      "url": "https://www.aljazeera.com/news/2026/11/24/cameroon-separatist-leader-pleads-not-guilty-in-war-crimes-trial?traffic_source=rss",
+      "date": "November 24, 2026",
+      "description": "Lucas Cho Ayaba is accused of remotely planning attacks that killed and injured dozens of civilians."
+    },
+    {
+      "title": "Five tonnes of explosives set to blow up in Iowa",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/five-tonnes-of-explosives-set-to-blow-up-in-iowa?traffic_source=rss",
+      "date": "November 24, 2026",
+      "description": "The US Army is preparing to detonate nearly five tonnes of unstable explosives in Iowa on Wednesday."
+    },
+    {
+      "title": "How Senegal got their AFCON trophy back",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/aje-onl-nf_how-senegal-got-their-afcon-trophy-back-241126?traffic_source=rss",
+      "date": "November 24, 2026",
+      "description": "Al Jazeera’s Samantha Johnson examines how Senegal’s AFCON title controversy reached sport’s highest court."
+    },
+    {
       "title": "‘Unfinished Beginnings’: Art installation for children affected by war",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/unfinished-beginnings-art-installation-for-children-affected-by-war?traffic_source=rss",
       "date": "November 24, 2026",
@@ -3986,48 +4046,6 @@
       "url": "https://www.aljazeera.com/sports/2026/11/24/senegal-reinstated-as-2025-africa-cup-of-nations-winners-over-morocco?traffic_source=rss",
       "date": "November 24, 2026",
       "description": "Court of Arbitration for Sport rules in Senegal's favour over the controversial final in January."
-    },
-    {
-      "title": "11 injured in Houthi attack on Riyadh tower, Saudi civil defence says",
-      "url": "https://www.aljazeera.com/news/2026/11/24/saudi-led-coalition-condemns-terrorist-attack-on-tower-in-riyadh?traffic_source=rss",
-      "date": "November 24, 2026",
-      "description": "Two Saudi nationals, nine foreigners injured in Houthi attack on building in Riyadh's financial district."
-    },
-    {
-      "title": "Israeli air strike kills senior Hamas security official in Gaza",
-      "url": "https://www.aljazeera.com/news/2026/11/24/israeli-air-strike-kills-senior-hamas-military-official-in-gaza?traffic_source=rss",
-      "date": "November 24, 2026",
-      "description": "Naim Abu Nahl, 50, was killed in a crowded area while four others, including a Palestinian woman, were wounded."
-    },
-    {
-      "title": "Records tumble as Indian teen Sooryavanshi smashes 53-ball 204 against UAE",
-      "url": "https://www.aljazeera.com/sports/2026/11/24/records-tumble-as-indian-teen-sooryavanshi-smashes-53-ball-204-against-uae?traffic_source=rss",
-      "date": "November 24, 2026",
-      "description": "The 15-year-old Sooryavanshi struck a staggering 28 sixes, the most ever in a senior men's innings."
-    },
-    {
-      "title": "Jensen Huang’s Nvidia return: Who are the big winners and losers?",
-      "url": "https://www.aljazeera.com/features/2026/11/24/jensen-huangs-nvidia-return-whore-the-big-winners-and-losers?traffic_source=rss",
-      "date": "November 24, 2026",
-      "description": "Jensen Huang returns to lead the most consequential company powering the AI revolution. But who wins, who loses?"
-    },
-    {
-      "title": "Ten years after its 2016 peace deal, Colombia faces a return to conflict",
-      "url": "https://www.aljazeera.com/news/longform/2026/11/24/ten-years-after-its-2016-peace-deal-colombia-faces-a-return-to-conflict?traffic_source=rss",
-      "date": "November 24, 2026",
-      "description": "Critics fear that a security crackdown under Abelardo de la Espriella could unravel gains made under the 2016 deal."
-    },
-    {
-      "title": "Senegalese families wait for news of missing migrant boat",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/senegalese-families-wait-for-news-of-missing-migrant-boat?traffic_source=rss",
-      "date": "November 24, 2026",
-      "description": "Senegalese families wait for news of missing migrant boat"
-    },
-    {
-      "title": "Heat deaths reach record high in UK in 2026",
-      "url": "https://www.aljazeera.com/news/2026/11/24/heat-deaths-reach-record-high-in-uk-in-2026?traffic_source=rss",
-      "date": "November 24, 2026",
-      "description": "The UK Health Security Agency estimates that the total number of deaths has reached 5,258 for the summer of 2026."
     }
   ]
 }
