@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T19:08:23.068Z",
+  "updatedAt": "2026-11-24T21:08:18.222Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261123",
@@ -3253,16 +3253,16 @@
   "unNotices": [],
   "bbcNews": [
     {
-      "title": "Nato chief vows defence against space threat after Russian nuclear satellite reports",
-      "url": "https://www.bbc.co.uk/news/articles/c9x2er1ry2mzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 24, 2026",
-      "description": "German media said Russia planned to launch a satellite with a nuclear warhead into space in coming weeks."
-    },
-    {
       "title": "Land mine casualties soar in Syria, two years after war",
       "url": "https://www.bbc.co.uk/news/articles/c893rl37ywdgo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 24, 2026",
       "description": "Nearly 1,000 children are among those killed or injured by explosives left over from the conflict, figures show."
+    },
+    {
+      "title": "Nato chief vows defence against space threat after Russian nuclear satellite reports",
+      "url": "https://www.bbc.co.uk/news/articles/c9x2er1ry2mzo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 24, 2026",
+      "description": "German media said Russia planned to launch a satellite with a nuclear warhead into space in coming weeks."
     },
     {
       "title": "Zimbabwean convicted in South Africa of trying to fight in Ukraine",
@@ -3296,6 +3296,18 @@
     }
   ],
   "ajNews": [
+    {
+      "title": "Libya’s Haftar visits Turkiye days after Ukraine hits Russian warship",
+      "url": "https://www.aljazeera.com/news/2026/11/24/libyas-haftar-visits-turkiye-days-after-ukraine-hits-russian-warship?traffic_source=rss",
+      "date": "November 24, 2026",
+      "description": "Ahead of Erdogan’s Libya trip, Haftar’s visit suggests Turkiye seeks another way to bring the country's rivals together."
+    },
+    {
+      "title": "Putin says retaliation ‘inevitable’ after Ukraine hit Russian oil plants",
+      "url": "https://www.aljazeera.com/news/2026/11/24/putin-says-kyiv-hit-russian-oil-plants-despite-trump-plea-vows-retaliation?traffic_source=rss",
+      "date": "November 24, 2026",
+      "description": "Ukrainian attacks subsided after Trump's mid-October declaration of an energy ceasefire, but picked up again afterwards."
+    },
     {
       "title": "Global landmine casualties hit a five-year high, driven by Myanmar, Syria",
       "url": "https://www.aljazeera.com/news/2026/11/24/global-landmine-casualties-hit-a-five-year-high-driven-by-myanmar-syria?traffic_source=rss",
@@ -3331,21 +3343,16 @@
       "url": "https://www.aljazeera.com/sports/liveblog/2026/11/24/arsenal-vs-borussia-dortmund-live-uefa-champions-league?traffic_source=rss",
       "date": "November 24, 2026",
       "description": "Follow updates with build-up and team news coverage from our live text commentary stream as Martin Odegaard headlines."
-    },
-    {
-      "title": "How the Iran war is reshaping the US military presence in the Middle East",
-      "url": "https://www.aljazeera.com/news/2026/11/24/how-the-iran-war-is-reshaping-the-us-military-presence-in-the-middle-east?traffic_source=rss",
-      "date": "November 24, 2026",
-      "description": "Experts say fallout from the war and domestic opposition could force a smaller permanent presence in the Middle East."
-    },
-    {
-      "title": "Russia tows it cargo ship back home after Ukrainian drone attack",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/russia-tows-it-cargo-ship-back-home-after-ukrainian-drone-attack?traffic_source=rss",
-      "date": "November 24, 2026",
-      "description": "The Russian cargo ship Sparta II was towed back to home waters after a Ukrainian drone attack in the Gulf of Finland"
     }
   ],
-  "occNews": [],
+  "occNews": [
+    {
+      "title": "OCC Announces Enforcement Actions for November 2026",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-104.html",
+      "date": "November 24, 2026",
+      "description": "The Office of the Comptroller of the Currency (OCC) today released enforcement actions for November 2026."
+    }
+  ],
   "economicsNews": [
     {
       "title": "Minutes of the Board's discount rate meetings on October 19 and October 28, 2026",
@@ -3466,10 +3473,10 @@
       "description": "Nvidia's share price have fallen 7% as lawmakers demand answers about President Donald Trump's involvement in Huang's reinstatement."
     },
     {
-      "title": "What Jensen Huang's return teaches China's Xi about Trump",
-      "url": "https://www.bbc.co.uk/news/articles/c63rgpy50x98o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "French ex-President Sarkozy and wife Carla Bruni to face trial",
+      "url": "https://www.bbc.co.uk/news/articles/c65y17pwv1z7o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 24, 2026",
-      "description": "Huang being back at the helm of Nvidia is no guarantee of relief for Beijing."
+      "description": "It is the latest case involving Nicolas Sarkozy who became the first French ex-president to go to jail last year."
     },
     {
       "title": "Indian government has 'lost the plot', says 'cockroach' leader barred from UK flight",
@@ -3478,16 +3485,28 @@
       "description": "Saurav Das says immigration authorities at Delhi airport told him his passport had been flagged."
     },
     {
+      "title": "Huawei found guilty of stealing trade secrets but acquitted of racketeering",
+      "url": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 24, 2026",
+      "description": "The verdict follows a months-long trial in New York."
+    },
+    {
+      "title": "Nigerian monarch, 92, suspended after sexual assault claims",
+      "url": "https://www.bbc.co.uk/news/articles/cmglrz462nn6o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 24, 2026",
+      "description": "The Emir of Daura is one of Nigeria's best-known monarchs, with politicians often trying to gain his support."
+    },
+    {
       "title": "Israeli air strike kills Hamas internal security chief in Gaza",
       "url": "https://www.bbc.co.uk/news/articles/c6rrg7ggq190o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 24, 2026",
       "description": "Naeem Abu Nahel, who had been in the post for two months, is among seven Palestinians reportedly killed in Israeli strikes on Tuesday."
     },
     {
-      "title": "French ex-President Sarkozy and wife Carla Bruni to face trial",
-      "url": "https://www.bbc.co.uk/news/articles/c65y17pwv1z7o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "What Jensen Huang's return teaches China's Xi about Trump",
+      "url": "https://www.bbc.co.uk/news/articles/c63rgpy50x98o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 24, 2026",
-      "description": "It is the latest case involving Nicolas Sarkozy who became the first French ex-president to go to jail last year."
+      "description": "Huang being back at the helm of Nvidia is no guarantee of relief for Beijing."
     },
     {
       "title": "Pope Francis' diary reveals claims he saw the devil three times",
@@ -3604,22 +3623,16 @@
       "description": "Nvidia's share price have fallen 7% as lawmakers demand answers about President Donald Trump's involvement in Huang's reinstatement."
     },
     {
-      "title": "The shake-up facing renters as a new kind of landlord emerges",
-      "url": "https://www.bbc.co.uk/news/articles/c6n90g2l82d1o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Huawei found guilty of stealing trade secrets but acquitted of racketeering",
+      "url": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 24, 2026",
-      "description": "Companies building flats that they then rent out could usher in big changes for renters."
+      "description": "The verdict follows a months-long trial in New York."
     },
     {
-      "title": "BBC secret filming shows dog breeder selling sick puppies for £2k each",
-      "url": "https://www.bbc.co.uk/news/articles/c8d36d43y8po?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Will I get the £100 energy payment and when will I receive it?",
+      "url": "https://www.bbc.co.uk/news/articles/c35yn8x748e9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 24, 2026",
-      "description": "The breeder's rating was downgraded but he continued to advertise as five-star, investigation finds."
-    },
-    {
-      "title": "World Cup drove profits surge, says Marston's",
-      "url": "https://www.bbc.co.uk/news/articles/cm7523pyk75lo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 24, 2026",
-      "description": "The company says an \"excellent World Cup\" helped drive strong trading as annual profits rose by 18%."
+      "description": "Here is what you need to know about the payment that millions will receive from January."
     },
     {
       "title": "Trump faces backlash after saying he 'convinced' Nvidia to reinstate CEO Jensen Huang",
@@ -3632,6 +3645,24 @@
       "url": "https://www.bbc.co.uk/news/articles/c6zjr3g13zkno?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 24, 2026",
       "description": "Busy mothers on both sides of the Atlantic are paying companies to handle their to-do lists."
+    },
+    {
+      "title": "World Cup drove profits surge, says Marston's",
+      "url": "https://www.bbc.co.uk/news/articles/cm7523pyk75lo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 24, 2026",
+      "description": "The company says an \"excellent World Cup\" helped drive strong trading as annual profits rose by 18%."
+    },
+    {
+      "title": "The shake-up facing renters as a new kind of landlord emerges",
+      "url": "https://www.bbc.co.uk/news/articles/c6n90g2l82d1o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 24, 2026",
+      "description": "Companies building flats that they then rent out could usher in big changes for renters."
+    },
+    {
+      "title": "BBC secret filming shows dog breeder selling sick puppies for £2k each",
+      "url": "https://www.bbc.co.uk/news/articles/c8d36d43y8po?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 24, 2026",
+      "description": "The breeder's rating was downgraded but he continued to advertise as five-star, investigation finds."
     },
     {
       "title": "Nvidia value climbs by almost $1tn and tech stocks rally after Jensen Huang returns",
@@ -3742,18 +3773,6 @@
       "description": "The US president provided little detail on the potential policy, saying others in his team were hearing about it for the first time."
     },
     {
-      "title": "Tech stock sell-off drags markets down as Anthropic shares slide",
-      "url": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 20, 2026",
-      "description": "Pressures weighed on US markets, with the S&P 500 and the Dow Jones Industrial Average pushed into correction territory."
-    },
-    {
-      "title": "GTA 6 sales hit $3.8bn in a single day - the biggest entertainment launch in history",
-      "url": "https://www.bbc.co.uk/news/articles/c9zr5nyv5dj2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 20, 2026",
-      "description": "The mammoth figure surpasses every video game launch and single-day film box office record."
-    },
-    {
       "title": "San Francisco is enjoying an AI boom, but worries about a crash are growing",
       "url": "https://www.bbc.co.uk/news/articles/cqe9k09j9jv4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 23, 2026",
@@ -3856,6 +3875,12 @@
       "description": "Solar tiles were touted as an attractive alternative to solar panels - why have they not taken off?"
     },
     {
+      "title": "Will I get the £100 energy payment and when will I receive it?",
+      "url": "https://www.bbc.co.uk/news/articles/c35yn8x748e9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 24, 2026",
+      "description": "Here is what you need to know about the payment that millions will receive from January."
+    },
+    {
       "title": "Welfare cuts: What's been happening with Pip and universal credit?",
       "url": "https://www.bbc.co.uk/news/articles/cj924xvzrr2o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 23, 2026",
@@ -3878,12 +3903,6 @@
       "url": "https://www.bbc.co.uk/news/videos/cw5y188vzxn8o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 23, 2026",
       "description": "President Macron has blamed the unrest on the radical left, but who are the protesters and what are they fighting for?"
-    },
-    {
-      "title": "Househunter swaps Australia for Wales' most affordable town - where locals are struggling to buy",
-      "url": "https://www.bbc.co.uk/news/articles/cjkgkdppk1nwo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 23, 2026",
-      "description": "The area has attracted investors and even a buyer from Australia, but locals struggle to afford homes."
     },
     {
       "title": "My hometown shows that high streets have to change or die",
@@ -3944,6 +3963,42 @@
       "url": "https://www.bbc.co.uk/sounds/play/w3ct8r4b?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 23, 2026",
       "description": "In 1994, the agreement that created the World Trade Organization was signed in Morrocco"
+    },
+    {
+      "title": "US Army to detonate more than 4 tonnes of lead azide in Iowa on Wednesday",
+      "url": "https://www.aljazeera.com/news/2026/11/24/us-army-to-detonate-more-than-4-tonnes-of-lead-azide-in-iowa-on-wednesday?traffic_source=rss",
+      "date": "November 24, 2026",
+      "description": "Despite alarm about toxic lead, federal officials say destroying the unstable explosives is the safest course of action."
+    },
+    {
+      "title": "Iraq targets oil smugglers, orders Kurdish oilfield takeover",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/24/iraq-targets-oil-smugglers-orders-kurdish-oilfield-takeover?traffic_source=rss",
+      "date": "November 24, 2026",
+      "description": "Iraq's Prime Minister Ali al-Zaidi has ordered federal forces to take control of oilfields in Kurdish-controlled areas."
+    },
+    {
+      "title": "Turkish military helicopter crash kills five in western Turkiye",
+      "url": "https://www.aljazeera.com/news/2026/11/24/turkish-military-helicopter-crash-kills-five-in-western-turkiye?traffic_source=rss",
+      "date": "November 24, 2026",
+      "description": "The Defence Ministry did not elaborate on the cause of the crash, days after another deadly army helicopter accident."
+    },
+    {
+      "title": "China Southern Airlines unit to buy 50 Boeing 737-8 planes",
+      "url": "https://www.aljazeera.com/economy/2026/11/24/china-southern-airlines-unit-to-buy-50-boeing-737-8-planes?traffic_source=rss",
+      "date": "November 24, 2026",
+      "description": "The agreement marks the US planemaker's first major order from China in almost a decade."
+    },
+    {
+      "title": "US House counsel denies backing controversial raid on Ilhan Omar’s home",
+      "url": "https://www.aljazeera.com/news/2026/11/24/us-house-counsel-denies-backing-controversial-raid-on-ilhan-omars-home?traffic_source=rss",
+      "date": "November 24, 2026",
+      "description": "Legal counsel challenges DOJ's assertion of House's involvement in controversial raid on Ilhan Omar's home."
+    },
+    {
+      "title": "Israel’s Ben-Gvir accused of seeking ‘religious war’ over mosque raids",
+      "url": "https://www.aljazeera.com/news/2026/11/24/israels-ben-gvir-accused-of-seeking-religious-war-over-mosque-raids?traffic_source=rss",
+      "date": "November 24, 2026",
+      "description": "Israeli police have confiscated mosque loudspeakers as far-right lawmakers push legislation to restrict call to prayer."
     },
     {
       "title": "Senior Hamas security official killed in Israeli drone strikes",
@@ -4010,42 +4065,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/24/five-women-killed-every-hour-globally-by-partner-relative-in-2025-un?traffic_source=rss",
       "date": "November 24, 2026",
       "description": "Home remains the most dangerous place for a woman or girl, 'a pattern that has barely shifted in years', UN Women says."
-    },
-    {
-      "title": "Nvidia stock cools after Huang’s return-driven surge",
-      "url": "https://www.aljazeera.com/economy/2026/11/24/nvidia-stock-cools-after-huangs-return-driven-surge?traffic_source=rss",
-      "date": "November 24, 2026",
-      "description": "Nvidia regains $952bn in market value after Jensen Huang reinstated as CEO after resignation less than two weeks ago."
-    },
-    {
-      "title": "China’s probes Shanghai party chief Chen Jining over corruption",
-      "url": "https://www.aljazeera.com/news/2026/11/24/xis-anti-corruption-campaign-targets-shanghai-party-chief-chen-jining?traffic_source=rss",
-      "date": "November 24, 2026",
-      "description": "Chen is the fourth Politburo member to be probed since last year in a campaign that has targeted top Chinese leaders."
-    },
-    {
-      "title": "UK police arrest two after break-in at Prince William’s country residence",
-      "url": "https://www.aljazeera.com/news/2026/11/24/police-arrest-two-after-break-in-at-prince-william-and-kates-country-home?traffic_source=rss",
-      "date": "November 24, 2026",
-      "description": "The arrests were made at a property on ⁠⁠⁠⁠the royal family's Sandringham estate in Norfolk, eastern England."
-    },
-    {
-      "title": "How Brazil’s mosquitoes are helping to fight dengue",
-      "url": "https://www.aljazeera.com/news/2026/11/24/how-brazils-mosquitoes-are-helping-to-fight?traffic_source=rss",
-      "date": "November 24, 2026",
-      "description": "Scientists are increasingly using novel ways to re-engineer mosquitoes and use them to battle the diseases they spread."
-    },
-    {
-      "title": "The photos from Gaza resonating with the people of Sarajevo",
-      "url": "https://www.aljazeera.com/features/2026/11/24/the-photographs-from-gaza-that-sarajevo-took-home?traffic_source=rss",
-      "date": "November 24, 2026",
-      "description": "From a photography exhibition to a weekly vigil reading out the names of killed children, solidarity grows in Sarajevo."
-    },
-    {
-      "title": "Senegal reinstated as 2025 Africa Cup of Nations winners over Morocco",
-      "url": "https://www.aljazeera.com/sports/2026/11/24/senegal-reinstated-as-2025-africa-cup-of-nations-winners-over-morocco?traffic_source=rss",
-      "date": "November 24, 2026",
-      "description": "Court of Arbitration for Sport rules in Senegal's favour over the controversial final in January."
     }
   ]
 }
