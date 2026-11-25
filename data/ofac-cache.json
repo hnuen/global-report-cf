@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T13:08:19.273Z",
+  "updatedAt": "2026-11-25T15:08:24.229Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261123",
@@ -3259,10 +3259,10 @@
       "description": "Leaked data reveal how the full-scale invasion of Ukraine has fundamentally changed mortality patterns in Russia."
     },
     {
-      "title": "Land mine casualties soar in Syria, two years after war",
-      "url": "https://www.bbc.co.uk/news/articles/c893rl37ywdgo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 24, 2026",
-      "description": "Nearly 1,000 children are among those killed or injured by explosives left over from the conflict, figures show."
+      "title": "Five Russian military jets hit in airfield strike, says Ukraine",
+      "url": "https://www.bbc.co.uk/news/articles/ck9q8xp5r5pgo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 25, 2026",
+      "description": "The Savasleyka airfield hosts aircraft used by Russia to launch hypersonic missiles and glide bombs at Ukraine."
     },
     {
       "title": "Ukraine shares video of strikes on Russian ships off Libya",
@@ -3279,7 +3279,13 @@
   ],
   "ajNews": [
     {
-      "title": "Russian strikes on Ukraine cause power outages in five regions",
+      "title": "Syrian teams clear landmines after deadly explosion",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/25/syrian-teams-clear-landmines-after-deadly-explosion?traffic_source=rss",
+      "date": "November 25, 2026",
+      "description": "Syrian teams clear landmines after deadly explosion"
+    },
+    {
+      "title": "Russian strikes on Ukraine kill five, cause power outages in five regions",
       "url": "https://www.aljazeera.com/news/2026/11/25/russian-strikes-on-ukraine-cause-power-outages-in-five-regions?traffic_source=rss",
       "date": "November 25, 2026",
       "description": "A Ukrainian official says attacks on Zaporizhia and Dnipropetrovsk regions damaged a number of energy sites."
@@ -3289,18 +3295,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/25/could-netanyahu-take-israel-into-another-war-with-iran-to-cling-to-power?traffic_source=rss",
       "date": "November 25, 2026",
       "description": "As Israeli opposition leader Eisenkot moves to form a government, could war with Iran derail talks and save Netanyahu?"
-    },
-    {
-      "title": "Iran rations electricity: How deeply are US sanctions, blockade biting?",
-      "url": "https://www.aljazeera.com/features/2026/11/25/iran-rations-electricity-how-deeply-are-us-sanctions-blockade-biting?traffic_source=rss",
-      "date": "November 25, 2026",
-      "description": "Iran, a major oil producer, is facing a worsening energy crisis as winter looms."
-    },
-    {
-      "title": "Two Libyan soldiers die after Ukraine attack on Russian vessel",
-      "url": "https://www.aljazeera.com/news/2026/11/25/two-libyan-soldiers-die-after-ukraine-attack-on-russian-vessel?traffic_source=rss",
-      "date": "November 25, 2026",
-      "description": "Khalifa Haftar’s Libyan National Army, which Russia backs, vowed retaliation for the death of its soldiers"
     }
   ],
   "occNews": [
@@ -3437,16 +3431,16 @@
       "description": "BBC journalist Anastasiya Gribanova investigates who killed her father and grandparents in the war."
     },
     {
-      "title": "US attorney general dodges questions about Nvidia investigation",
-      "url": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 25, 2026",
-      "description": "Nvidia's share price have fallen 7% as lawmakers demand answers about President Donald Trump's involvement in Huang's reinstatement."
-    },
-    {
       "title": "Close-up images to be revealed of asteroid deliberately hit to test ability to protect Earth",
       "url": "https://www.bbc.co.uk/news/articles/cw8dv112r5gmo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 25, 2026",
       "description": "The mission is studying an asteroid deliberately knocked off course by a colliding spacecraft."
+    },
+    {
+      "title": "US attorney general dodges questions about Nvidia investigation",
+      "url": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 25, 2026",
+      "description": "Nvidia's share price have fallen 7% as lawmakers demand answers about President Donald Trump's involvement in Huang's reinstatement."
     },
     {
       "title": "Thomas Markle charged in US for possessing child sex abuse images",
@@ -3455,28 +3449,22 @@
       "description": "The FBI arrested Markle on 6 November after a search of a storage unit he had allegedly rented in Los Angeles uncovered the abuse material."
     },
     {
-      "title": "US preparing to unveil plan for new tariffs on global trading partners",
-      "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 25, 2026",
-      "description": "The new levies would hit many of America's biggest trading partners, including China and the EU."
-    },
-    {
       "title": "Colombian police storm supermarket to free 20 held hostage for 17 hours",
       "url": "https://www.bbc.co.uk/news/articles/ckp80mjr9emyo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 25, 2026",
       "description": "One gunman was killed in the operation to free around 20 shoppers and employees after a 17-hour hostage ordeal."
     },
     {
-      "title": "Veteran Nigerian Nollywood actor Pete Edochie dies aged 79",
-      "url": "https://www.bbc.co.uk/news/articles/cqwy0rr4rr4yo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 25, 2026",
-      "description": "Odochie rose to prominence in 1987 after starring in a television adaptation of Chinua Achebe's acclaimed novel Things Fall Apart."
-    },
-    {
       "title": "Huawei found guilty of stealing US trade secrets but acquitted of racketeering",
       "url": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 25, 2026",
       "description": "The verdict follows a months-long trial in New York."
+    },
+    {
+      "title": "Veteran Nigerian Nollywood actor Pete Edochie dies aged 79",
+      "url": "https://www.bbc.co.uk/news/articles/cqwy0rr4rr4yo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 25, 2026",
+      "description": "Odochie rose to prominence in 1987 after starring in a television adaptation of Chinua Achebe's acclaimed novel Things Fall Apart."
     },
     {
       "title": "Two children among six dead after plane crash off Mississippi coast",
@@ -3506,19 +3494,13 @@
       "title": "Kilmar Ábrego García arrives in Spain, ending Trump deportation battle",
       "url": "https://www.bbc.co.uk/news/articles/c6808pyy5dl9o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 25, 2026",
-      "description": "Ábrego García's deportation to El Salvador and return to the US became a flashpoint in the debate over President Donald Trump's immigration agenda."
+      "description": "His deportation to and return from El Salvador became a flashpoint in the debate the US president's immigration agenda."
     },
     {
       "title": "Israeli air strike kills Hamas internal security chief in Gaza",
       "url": "https://www.bbc.co.uk/news/articles/c6rrg7ggq190o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 24, 2026",
       "description": "Naeem Abu Nahel, who had been in the post for two months, is among seven Palestinians reportedly killed in Israeli strikes on Tuesday."
-    },
-    {
-      "title": "Indian government has 'lost the plot', says 'cockroach' leader barred from UK flight",
-      "url": "https://www.bbc.co.uk/news/articles/cm5y1ezx2gqyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 24, 2026",
-      "description": "Saurav Das says immigration authorities at Delhi airport told him his passport had been flagged."
     },
     {
       "title": "Moment Chinese space mission lifts off with first Pakistan astronaut aboard",
@@ -3587,6 +3569,12 @@
       "description": "More than half a million people have fled their homes since separatist groups demanded independence for Cameroon's English-speaking regions."
     },
     {
+      "title": "US stocks fall further as fears over AI intensify",
+      "url": "https://www.bbc.co.uk/news/articles/cq0md8g14zryo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 25, 2026",
+      "description": "All three main US indexes were down in early trading, with the tech-dominated Nasdaq down almost 4%."
+    },
+    {
       "title": "Energy bills to rise by 26% from January after gas prices surge",
       "url": "https://www.bbc.co.uk/news/articles/cm20qnq33e90o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 25, 2026",
@@ -3605,18 +3593,6 @@
       "description": "Regulator Ofgem is raising the cap affecting the energy bills of millions of households."
     },
     {
-      "title": "US preparing to unveil plan for new tariffs on global trading partners",
-      "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 25, 2026",
-      "description": "The new levies would hit many of America's biggest trading partners, including China and the EU."
-    },
-    {
-      "title": "Zoe Kleinman: Nobody is irreplaceable - unless you're Jensen Huang",
-      "url": "https://www.bbc.co.uk/news/articles/c3rrgqj2zx5yo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 25, 2026",
-      "description": "The BBC's technology and AI editor on how Nvidia's boss made himself impossible to fire."
-    },
-    {
       "title": "Why tiny cars are taking off across Europe",
       "url": "https://www.bbc.co.uk/news/articles/cmwy9jne0g7qo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 25, 2026",
@@ -3627,6 +3603,18 @@
       "url": "https://www.bbc.co.uk/news/articles/c820qnznkrn4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 25, 2026",
       "description": "The BBC speaks to three people about steps they take to keep their energy bills under control."
+    },
+    {
+      "title": "Zoe Kleinman: Nobody is irreplaceable - unless you're Jensen Huang",
+      "url": "https://www.bbc.co.uk/news/articles/c3rrgqj2zx5yo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 25, 2026",
+      "description": "The BBC's technology and AI editor on how Nvidia's boss made himself impossible to fire."
+    },
+    {
+      "title": "US announces new tariffs on host of countries including China",
+      "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 25, 2026",
+      "description": "The new levies would hit many of America's biggest trading partners, including China and the EU."
     },
     {
       "title": "Trump's rescue of Nvidia's Huang brings political risks",
@@ -3803,22 +3791,10 @@
       "description": "Solar tiles were touted as an attractive alternative to solar panels - why have they not taken off?"
     },
     {
-      "title": "Salon owner's chore woes prompt idea for new app",
-      "url": "https://www.bbc.co.uk/news/articles/c6jren0308xzo?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Fuel price hike will make life 'almost impossible'",
+      "url": "https://www.bbc.co.uk/news/articles/c6rrgqknw0jlo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 25, 2026",
-      "description": "A salon owner sets up a skill-swapping app after she and clients were \"moaning\" about chores and admin."
-    },
-    {
-      "title": "'I only use the washing machine on a Sunday' - how we're keeping our energy bills down",
-      "url": "https://www.bbc.co.uk/news/articles/c820qnznkrn4o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 25, 2026",
-      "description": "The BBC speaks to three people about steps they take to keep their energy bills under control."
-    },
-    {
-      "title": "'I use a bowl to wash myself and I'm £400 in debt - energy price rise scares me'",
-      "url": "https://www.bbc.co.uk/news/articles/cmly7q7zk77po?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 25, 2026",
-      "description": "A woman already in energy debt says her anxiety is \"through the roof\" over further cost increases."
+      "description": "The Fuel Bank Foundation says many homes are already cutting back and struggling with bills."
     },
     {
       "title": "Energy bills to rise by 26% from January after gas prices surge",
@@ -3827,10 +3803,22 @@
       "description": "A household using a typical amount of energy would see its annual bill rise from £1,723 to £2,166 if this level was sustained for a year."
     },
     {
-      "title": "Energy bills will soar - here's how you can ease the pain",
-      "url": "https://www.bbc.co.uk/news/articles/crm4rygl4m3o?at_medium=RSS&amp;at_campaign=rss",
+      "title": "Why are bills going up?",
+      "url": "https://www.bbc.co.uk/news/videos/cm3wg47gnjnno?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 25, 2026",
-      "description": "Household energy bills are about to increase but there are ways to keep a lid on your expenditure."
+      "description": "BBC correspondent Colletta Smith explains the January increase."
+    },
+    {
+      "title": "My husband lives off sandwiches due to energy costs",
+      "url": "https://www.bbc.co.uk/news/videos/c539gz4nmjm9o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 25, 2026",
+      "description": "A woman already in energy debt says anxiety is \"through the roof\" over further increases."
+    },
+    {
+      "title": "Salon owner's chore woes prompt skill-swapping app",
+      "url": "https://www.bbc.co.uk/news/articles/c6jren0308xzo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 25, 2026",
+      "description": "A salon owner sets up a skill-swapping app after she and clients were \"moaning\" about chores and admin."
     },
     {
       "title": "My hometown shows that high streets have to change or die",
@@ -3869,10 +3857,22 @@
       "description": "As interest rates rise, we look at the impact this could have on Guernsey's housing market."
     },
     {
+      "title": "Business Daily",
+      "url": "https://www.bbc.co.uk/sounds/play/w3ct98sy?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 24, 2026",
+      "description": "Grant LaFontaine explains how selling Pokémon cards inspired a billion-dollar business"
+    },
+    {
       "title": "Four generations of a family working in one factory",
       "url": "https://www.bbc.co.uk/news/videos/ck7v2r6j1yl3o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 24, 2026",
       "description": "Four generations of the Avis family have now worked at Sweetnam & Bradley in Malmesbury."
+    },
+    {
+      "title": "The Global Story",
+      "url": "https://www.bbc.co.uk/sounds/play/w3ct8mjk?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 24, 2026",
+      "description": "How did the entire global economy become dependent on one man?"
     },
     {
       "title": "A comeback for the ages: Trump's influence on Huang's return to Nvidia",
@@ -3881,16 +3881,22 @@
       "description": "The BBC's business correspondent Michelle Fleury explains what role Trump's support played in Huang's comeback."
     },
     {
-      "title": "'Biggest U-turn in economic history': Experts react to Jensen Huang's return to Nvidia",
-      "url": "https://www.bbc.co.uk/news/videos/cq8r7e35mkzlo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 23, 2026",
-      "description": "The Nvidia CEO was reinstated after weeks of controversy over his affair with an alleged Chinese spy."
+      "title": "US court convicts Huawei of theft: A history of Chinese firm’s global woes",
+      "url": "https://www.aljazeera.com/news/2026/11/25/us-court-convicts-huawei-of-theft-a-history-of-chinese-firms-global-woes?traffic_source=rss",
+      "date": "November 25, 2026",
+      "description": "Chinese tech giant has faced legal problems from Europe to Asia, and its products have been banned in trade war with US."
     },
     {
-      "title": "Nvidia reinstates CEO after affair with alleged spy",
-      "url": "https://www.bbc.co.uk/news/videos/cqze7lwdglngo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 23, 2026",
-      "description": "Senior US government officials backed Nvidia's decision to reinstate Jensen Huang, the company says in a statement."
+      "title": "‘Second home’: Why Israel is celebrating Jensen Huang’s return to Nvidia",
+      "url": "https://www.aljazeera.com/features/2026/11/25/second-home-why-israel-is-celebrating-jensen-huangs-return-to-nvidia?traffic_source=rss",
+      "date": "November 25, 2026",
+      "description": "Israel's tech sector and economy have strong ties to chip giant Nvidia, which invests billions of dollars."
+    },
+    {
+      "title": "Solomon Islands signs security deal with Australia",
+      "url": "https://www.aljazeera.com/news/2026/11/25/solomon-islands-signs-security-deal-with-australia?traffic_source=rss",
+      "date": "November 25, 2026",
+      "description": "Solomon Islands will have to consult Canberra before making new security or infrastructure deals under new pact."
     },
     {
       "title": "Trump to meet Abdul El-Sayed: Will he agree to a renamed Medicare-for-all?",
@@ -3929,7 +3935,7 @@
       "description": "Bangladesh has raised the minimum monthly wage for garment workers by 36% to 17,000 taka, about $138."
     },
     {
-      "title": "Overnight RSF drone attacks kill 19 in Sudan",
+      "title": "Sudan’s RSF kills at least 19 in drone attacks on Blue Nile state",
       "url": "https://www.aljazeera.com/news/2026/11/25/overnight-rsf-drone-attacks-kill-19-in-sudan?traffic_source=rss",
       "date": "November 25, 2026",
       "description": "The attacks on Blue Nile state also wounded at least 20 people – in a drone war that is quickly escalating."
@@ -3965,10 +3971,10 @@
       "description": "Jude Bellingham admits he had 'no idea' what he'd done after scoring a goal that drew comparisons with Zinedine Zidane."
     },
     {
-      "title": "Israeli strike kills Hamas official, his wife and children",
+      "title": "Israeli strike in Gaza kills senior Hamas official, his wife and children",
       "url": "https://www.aljazeera.com/news/2026/11/25/israeli-strike-kills-hamas-official-his-wife-and-children?traffic_source=rss",
       "date": "November 25, 2026",
-      "description": "The air strike hit their Gaza apartment amid escalating Israeli attacks, the Interior Ministry says."
+      "description": "Gaza's internal security director and his family are among seven Palestinians killed by Israeli forces on Wednesday."
     },
     {
       "title": "‘People are going hungry’: Guinea’s gold mining crackdown",
@@ -4005,18 +4011,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/25/dozens-of-ports-close-as-powerful-waves-damage-perus-coastline?traffic_source=rss",
       "date": "November 25, 2026",
       "description": "Dozens of ports close as powerful waves damage Peru’s coastline"
-    },
-    {
-      "title": "‘We need to be seen’: Over a third of UK Muslim students face Islamophobia",
-      "url": "https://www.aljazeera.com/news/2026/11/25/we-need-to-be-seen-over-a-third-of-uk-muslim-students-face-islamophobia?traffic_source=rss",
-      "date": "November 25, 2026",
-      "description": "From being spat on and assaulted to suffering humiliation, Muslims on campus are increasingly vulnerable, report says."
-    },
-    {
-      "title": "Sporting Lisbon vs Manchester United: Champions League – teams, prediction",
-      "url": "https://www.aljazeera.com/sports/2026/11/25/sporting-lisbon-vs-manchester-united-champions-league-teams-prediction?traffic_source=rss",
-      "date": "November 25, 2026",
-      "description": "Man United look to bounce back from defeat in Mauricio Pochettino's first game in charge, as they travel to Lisbon."
     }
   ]
 }
