@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T13:08:17.604Z",
+  "updatedAt": "2026-11-26T15:08:16.463Z",
   "recentActions": [
     {
       "url": "https://ofac.treasury.gov/recent-actions/20261123",
@@ -3260,16 +3260,16 @@
   ],
   "bbcNews": [
     {
-      "title": "Myanmar refuses to comply with parts of ICJ genocide ruling",
-      "url": "https://www.bbc.co.uk/news/articles/c61wr87wyg5wo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 26, 2026",
-      "description": "A landmark ruling by the International Court of Justice (ICJ) convicted Myanmar of genocide against its Rohingya minority."
-    },
-    {
       "title": "Desperate appeals from women on death row in Iran after protests",
       "url": "https://www.bbc.co.uk/news/articles/cm8x0ve4yd7wo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 26, 2026",
       "description": "Female protesters and dissidents are being sentenced to death in numbers not seen for decades, a rights group says."
+    },
+    {
+      "title": "Myanmar refuses to comply with parts of ICJ genocide ruling",
+      "url": "https://www.bbc.co.uk/news/articles/c61wr87wyg5wo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 26, 2026",
+      "description": "A landmark ruling by the International Court of Justice (ICJ) convicted Myanmar of genocide against its Rohingya minority."
     },
     {
       "title": "Five Russian military jets hit in airfield strike, says Ukraine",
@@ -3282,15 +3282,15 @@
       "url": "https://www.bbc.co.uk/news/articles/cq0l34e4kkr5o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 25, 2026",
       "description": "Swiss officials said relations would be kept through North Korea's embassy in Bern, and its own embassy in Beijing."
-    },
-    {
-      "title": "Martin Lewis' advice if you can't afford to heat your home",
-      "url": "https://www.bbc.co.uk/news/videos/cjr4gw12k2lwo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 25, 2026",
-      "description": "Energy bills will soar by 26% for millions of households in January after a surge in gas prices sparked by the Iran war."
     }
   ],
   "ajNews": [
+    {
+      "title": "Can Trump continue with Iran war despite funding restrictions?",
+      "url": "https://www.aljazeera.com/news/2026/11/26/can-trump-continue-with-iran-war-despite-funding-restrictions?traffic_source=rss",
+      "date": "November 26, 2026",
+      "description": "A Congress budget bill could serve as a pressure tactic on Trump to end the war but could also trigger a shutdown."
+    },
     {
       "title": "‘Symbolic’: Why did UK sanction Yemen’s Houthis amid attacks on Saudi?",
       "url": "https://www.aljazeera.com/news/2026/11/26/symbolic-why-did-uk-sanction-yemens-houthis-amid-attacks-on-saudi?traffic_source=rss",
@@ -3302,12 +3302,6 @@
       "url": "https://www.aljazeera.com/news/2026/11/26/ukraine-drone-attack-kills-five-in-russian-occupied-zaporizhia?traffic_source=rss",
       "date": "November 26, 2026",
       "description": "Russian forces launch ballistic missile attack on Ukrainian capital Kyiv, hitting a shopping centre and other buildings."
-    },
-    {
-      "title": "Why has North Korea expelled a Swiss diplomat from Pyongyang?",
-      "url": "https://www.aljazeera.com/news/2026/11/26/why-has-north-korea-expelled-a-swiss-diplomat-from-pyongyang?traffic_source=rss",
-      "date": "November 26, 2026",
-      "description": "At the centre of the diplomatic dispute lies the Songdowon International Children’s Camp."
     }
   ],
   "occNews": [
@@ -3450,6 +3444,12 @@
       "description": "Marvin Reuter is contesting extradition to France, where he could face smuggling, criminal conspiracy and involuntary manslaughter charges."
     },
     {
+      "title": "Gérard Depardieu to stand trial for alleged rape of actress in 2018, court rules",
+      "url": "https://www.bbc.co.uk/news/articles/cmlyd76kyx44o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 26, 2026",
+      "description": "A Paris appeals court rules Depardieu will go on trial for the alleged rape of Charlotte Arnould."
+    },
+    {
       "title": "Diesel tanker carrying up to 7,000 tonnes sinks near Ibiza, killing one",
       "url": "https://www.bbc.co.uk/news/articles/c9gklryvj24do?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 26, 2026",
@@ -3462,6 +3462,12 @@
       "description": "Lenacapavir, administered as an injection twice a year, is nearly 100% effective at preventing HIV infection."
     },
     {
+      "title": "Pregnant US inmate escapes in prison vehicle after medical appointment",
+      "url": "https://www.bbc.co.uk/news/articles/c9m2jke85xzxo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 26, 2026",
+      "description": "Rebecca Taylor had been imprisoned in New Mexico for multiple theft and burglary charges."
+    },
+    {
       "title": "Tributes for Duran Duran guitarist Andy Taylor after his death aged 65",
       "url": "https://www.bbc.co.uk/news/articles/cmp3vk6vr44po?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 26, 2026",
@@ -3471,13 +3477,19 @@
       "title": "Seven injured, four critically, after Bangkok oil refinery explosion",
       "url": "https://www.bbc.co.uk/news/articles/crx209kwk4kzo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 26, 2026",
-      "description": "Black smoke could be seen across Bangkok's skyline after the blast, while officials urged residents to leave the area."
+      "description": "Black smoke could be seen across Bangkok's skyline after the blast, as officials urged residents to leave the area."
     },
     {
       "title": "Hamas political official and wife among eight Palestinians killed in Israeli strikes on Gaza",
       "url": "https://www.bbc.co.uk/news/articles/cqvg2n4mzl1jo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 26, 2026",
       "description": "The killings are the latest from a series of near daily attacks by Israel against what it says are Hamas targets."
+    },
+    {
+      "title": "Miami runway incident disrupts flights on Thanksgiving eve",
+      "url": "https://www.bbc.co.uk/news/articles/ckm2mz3prq77o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 26, 2026",
+      "description": "A FedEx aircraft overran a runway, prompting disruption on one of the busiest travel days of the year."
     },
     {
       "title": "Thirteen dead as mine disaster highlights illegal hunt for gold",
@@ -3534,12 +3546,6 @@
       "description": "Officials say no lead has been detected in the surrounding area, which continues to be tested following concerns from locals."
     },
     {
-      "title": "FedEx plane overshoots Miami runway, causing brief suspension of flights at airport",
-      "url": "https://www.bbc.co.uk/news/articles/ckm2mz3prq77o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 26, 2026",
-      "description": "The brief stoppage came on the eve of the US Thanksgiving holiday, one of the busiest travel days of the year."
-    },
-    {
       "title": "California warns of flooding as King Tides peak over Thanksgiving",
       "url": "https://www.bbc.co.uk/news/articles/ckn806qq760po?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 26, 2026",
@@ -3568,30 +3574,6 @@
       "url": "https://www.bbc.co.uk/sport/cricket/videos/cwx2e0g93l3eo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 25, 2026",
       "description": "A passenger on a motorbike pulled off a remarkable one-handed catch after the ball was hit out of the ground for six in the Swat Premier League in Pakistan."
-    },
-    {
-      "title": "What we know about Trump's Thanksgiving tariffs",
-      "url": "https://www.bbc.co.uk/news/videos/c3x29v11ed1xo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 25, 2026",
-      "description": "Donald Trump is targeting China, the European Union and 12 other jurisdictions in a new round of tariffs."
-    },
-    {
-      "title": "Moment Chinese space mission lifts off with first Pakistan astronaut aboard",
-      "url": "https://www.bbc.co.uk/news/videos/cmz74l0yzzvyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 25, 2026",
-      "description": "China launched its Shenzhou-24 space mission to bring three astronauts to its Tiangong space station."
-    },
-    {
-      "title": "Watch: Flock of turkeys chases woman on Massachusetts pavement",
-      "url": "https://www.bbc.co.uk/news/videos/cknv4mq93gd2o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 24, 2026",
-      "description": "The woman said she had to jump into a stranger's car to escape a flock of turkeys that chased her down the sidewalk."
-    },
-    {
-      "title": "Watch: Moment troops raid home and capture Mexican drug lord",
-      "url": "https://www.bbc.co.uk/news/videos/cm62p9y3y04qo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 24, 2026",
-      "description": "Newly-released bodycam footage shows the moment troops detained 'El Chapo Isidro', who had managed to evade capture for years."
     },
     {
       "title": "A renovation was meant to improve these Hong Kong homes - it ended in a blaze that killed 168",
@@ -3624,6 +3606,24 @@
       "description": "The show, Dar-e-Nijaat, has become a sensation in India but is now embroiled in a political row."
     },
     {
+      "title": "Millions of people to see average monthly mortgage payments rise by £100",
+      "url": "https://www.bbc.co.uk/news/articles/cwg5r02zel9qo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 26, 2026",
+      "description": "More people face higher mortgage repayments when they roll off a fixed deal than previously estimated."
+    },
+    {
+      "title": "Simon Jack: Is Poundland's US owner to blame for its collapse?",
+      "url": "https://www.bbc.co.uk/news/articles/c62klzxvyzyqo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 26, 2026",
+      "description": "Poundland's management and MPs blame the retailer's owners, Gordon Brothers, but the US firm says without them the chain would have collapsed last year."
+    },
+    {
+      "title": "When will Poundland close? Five questions about its future",
+      "url": "https://www.bbc.co.uk/news/articles/c6z9d3pv93glo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 26, 2026",
+      "description": "Why is Poundland closing down, and what will hapen to staff and suppliers?"
+    },
+    {
       "title": "Norse Atlantic suspends all flights as it faces potential collapse",
       "url": "https://www.bbc.co.uk/news/articles/c9kgmd0ldy0lo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 26, 2026",
@@ -3636,6 +3636,12 @@
       "description": "The changes could see drivers over 70 stripped of licences if they do not meet standards."
     },
     {
+      "title": "Guitar wars - the transatlantic battle over the Stratocaster",
+      "url": "https://www.bbc.co.uk/news/articles/cqd01l9x8k48o?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 26, 2026",
+      "description": "US company Fender is in dispute with a German firm that makes generic versions of its key model."
+    },
+    {
       "title": "New UK-EU treaty has 10-year termination clause",
       "url": "https://www.bbc.co.uk/news/articles/c98r7p65edvgo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 26, 2026",
@@ -3646,18 +3652,6 @@
       "url": "https://www.bbc.co.uk/news/articles/c2l9vvj097lo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 26, 2026",
       "description": "Millions could be entitled to compensation as a result of commission arrangements between lenders and dealers."
-    },
-    {
-      "title": "UK signs £8bn deal to ensure submarines are 'warfighting ready'",
-      "url": "https://www.bbc.co.uk/news/articles/cq39gz99l1pyo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 26, 2026",
-      "description": "The deal will allow \"work around the clock to get our submarines back out to sea\" , Wes Streeting says."
-    },
-    {
-      "title": "Guitar wars - the transatlantic battle over the Stratocaster",
-      "url": "https://www.bbc.co.uk/news/articles/cqd01l9x8k48o?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 26, 2026",
-      "description": "US company Fender is in dispute with a German firm that makes generic versions of its key model."
     },
     {
       "title": "Poundland collapses putting 11,000 jobs at risk",
@@ -3858,6 +3852,18 @@
       "description": "Solar tiles were touted as an attractive alternative to solar panels - why have they not taken off?"
     },
     {
+      "title": "When will Poundland close? Five questions about its future",
+      "url": "https://www.bbc.co.uk/news/articles/c6z9d3pv93glo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 26, 2026",
+      "description": "Why is Poundland closing down, and what will hapen to staff and suppliers?"
+    },
+    {
+      "title": "Millions of people to see average monthly mortgage payments rise by £100",
+      "url": "https://www.bbc.co.uk/news/articles/cwg5r02zel9qo?at_medium=RSS&amp;at_campaign=rss",
+      "date": "November 26, 2026",
+      "description": "More people face higher mortgage repayments when they roll off a fixed deal than previously estimated."
+    },
+    {
       "title": "Cost of living roadshow highlights support on offer",
       "url": "https://www.bbc.co.uk/news/articles/cqz0ky4204jlo?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 26, 2026",
@@ -3874,12 +3880,6 @@
       "url": "https://www.bbc.co.uk/news/articles/cq1k98gpzmy4o?at_medium=RSS&amp;at_campaign=rss",
       "date": "November 26, 2026",
       "description": "The chief executive of Worthing Soup Kitchen says some families choose between food and presents."
-    },
-    {
-      "title": "Energy price increase 'could put me in hospital'",
-      "url": "https://www.bbc.co.uk/news/articles/cm5y1g42x2wzo?at_medium=RSS&amp;at_campaign=rss",
-      "date": "November 25, 2026",
-      "description": "People on Teesside share their views on the news energy bills are expected to increase by 26%."
     },
     {
       "title": "My hometown shows that high streets have to change or die",
@@ -3942,6 +3942,48 @@
       "description": "Grant LaFontaine explains how selling Pokémon cards inspired a billion-dollar business"
     },
     {
+      "title": "How an oil feud is deepening rift between Baghdad and Iraq’s Kurdish region",
+      "url": "https://www.aljazeera.com/news/2026/11/26/how-an-oil-feud-is-deepening-rift-between-baghdad-and-iraqs-kurdish-region?traffic_source=rss",
+      "date": "November 26, 2026",
+      "description": "Prime Minister al-Zaidi's move to take control of border crossings and oilfields has drawn a sharp response from Erbil."
+    },
+    {
+      "title": "Inside Liberland, the crypto ‘country’ few have heard of",
+      "url": "https://www.aljazeera.com/news/2026/11/26/inside-liberland-the-crypto-country-few-have-heard-of?traffic_source=rss",
+      "date": "November 26, 2026",
+      "description": "Al Jazeera's Antoine Allen reports on a group of people trying to build a tax-free nation."
+    },
+    {
+      "title": "Haftar meets Erdogan: Can Turkiye reunify Libya as it courts rival sides?",
+      "url": "https://www.aljazeera.com/news/2026/11/26/haftar-meets-erdogan-can-turkiye-reunify-libya-as-it-courts-rival-sides?traffic_source=rss",
+      "date": "November 26, 2026",
+      "description": "Maritime agreement pivotal for Turkiye's Eastern Mediterranean gas claims as Libya's unification process faces hurdles."
+    },
+    {
+      "title": "Are we ready to live longer? | Centre Stage",
+      "url": "https://www.aljazeera.com/video/centre-stage/2026/11/26/are-we-ready-to-live-longer-centre-stage?traffic_source=rss",
+      "date": "November 26, 2026",
+      "description": "Dr Slim Slama of Qatar Foundation's WISH talks to Al Jazeera about the future of healthcare."
+    },
+    {
+      "title": "Jordan Parliament debates ‘antiterror’ law after deadly Karak church attack",
+      "url": "https://www.aljazeera.com/news/2026/11/26/jordan-parliament-debates-antiterror-law-after-deadly-karak-church-attack?traffic_source=rss",
+      "date": "November 26, 2026",
+      "description": "House votes to refer draft amendments to the 2006 Anti-Terrorism Law to its Legal Committee for review."
+    },
+    {
+      "title": "Is UBI the solution to mass unemployment in an AI economy?",
+      "url": "https://www.aljazeera.com/economy/2026/11/26/is-ubi-the-solution-to-mass-unemployment-in-an-ai-economy?traffic_source=rss",
+      "date": "November 26, 2026",
+      "description": "AI's rapid advance has led to calls for universal payments to prevent poverty and wealth inequality."
+    },
+    {
+      "title": "Film shows testimonies of international doctors amid Gaza genocide",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/26/film-shows-testimonies-of-international-doctors-amid-gaza-genocide?traffic_source=rss",
+      "date": "November 26, 2026",
+      "description": "A documentary shows footage from international doctors who bore witness to the collapse of the Gaza's medical system."
+    },
+    {
       "title": "Eyewitnesses describe scenes of Egypt’s deadly vehicle fire",
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/26/eyewitnesses-describe-scenes-of-egypts-deadly-vehicle-fire?traffic_source=rss",
       "date": "November 26, 2026",
@@ -3951,7 +3993,7 @@
       "title": "FIFA says personal and business information stolen in cyberattack",
       "url": "https://www.aljazeera.com/sports/2026/11/26/fifa-says-personal-and-business-information-stolen-in-cyberattack?traffic_source=rss",
       "date": "November 26, 2026",
-      "description": "FIFA sources say no files from the abandoned FIFA Forward Enterprise project were accessed."
+      "description": "No files from the abandoned FIFA Forward Enterprise project were accessed, according to media reports."
     },
     {
       "title": "With the rise of AI, are we close to having universal basic income",
@@ -4030,48 +4072,6 @@
       "url": "https://www.aljazeera.com/video/newsfeed/2026/11/26/explosion-rocks-bangkok-oil-depot?traffic_source=rss",
       "date": "November 26, 2026",
       "description": "A Large explosion at an oil depot in Bangkok sent flames and smoke into the sky."
-    },
-    {
-      "title": "Israeli attacks on Gaza kill senior education official, seven other people",
-      "url": "https://www.aljazeera.com/news/2026/11/26/israeli-attacks-on-gaza-kill-senior-education-official-seven-other-people?traffic_source=rss",
-      "date": "November 26, 2026",
-      "description": "Israeli Prime Minister Benjamin Netanyahu confirms killing of Khaled Abu Nada, undersecretary of Education Ministry."
-    },
-    {
-      "title": "Seven injured in explosion at oil facility in Thailand’s Bangkok",
-      "url": "https://www.aljazeera.com/news/2026/11/26/explosion-occurs-at-oil-facility-in-thailands-bangkok?traffic_source=rss",
-      "date": "November 26, 2026",
-      "description": "Authorities urge residents in area surrounding oil depot in eastern Bangkok to evacuate their homes."
-    },
-    {
-      "title": "Thanksgiving and National Day of Mourning: What is the history?",
-      "url": "https://www.aljazeera.com/news/2026/11/26/thanksgiving-and-national-day-of-mourning-what-is-the-history?traffic_source=rss",
-      "date": "November 26, 2026",
-      "description": "Indigenous activists challenge Thanksgiving narratives and highlight ongoing struggles for sovereignty and recognition."
-    },
-    {
-      "title": "Ms Rachel on Gaza: ‘everybody should speak out’",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/26/ms-rachel-on-gaza-everybody-should-speak?traffic_source=rss",
-      "date": "November 26, 2026",
-      "description": "US content creator Ms Rachel has called for more celebrities to speak out against the Gaza genocide."
-    },
-    {
-      "title": "Rescuers recover bodies after flood at illegal Indonesia gold mine",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/26/rescuers-recover-bodies-after-flood-at-illegal-indonesia-gold-mine?traffic_source=rss",
-      "date": "November 26, 2026",
-      "description": "At least 13 miners died and others remain missing after heavy rain flooded an illegal gold mine in West Java, Indonesia."
-    },
-    {
-      "title": "Photos: Rallies around the world denounce violence against women",
-      "url": "https://www.aljazeera.com/gallery/2026/11/26/photos-rallies-around-the-world-denounce-violence-against-women?traffic_source=rss",
-      "date": "November 26, 2026",
-      "description": "About 47,000 women and girls were intentionally killed by an intimate partner or family member last year, UN data shows."
-    },
-    {
-      "title": "DR Congo Ebola cases surpass 12,000 as fighting disrupts response in east",
-      "url": "https://www.aljazeera.com/news/2026/11/26/dr-congo-ebola-cases-surpass-12000-as-fighting-disrupts-response-in-east?traffic_source=rss",
-      "date": "November 26, 2026",
-      "description": "Authorities struggle to contain country's worst Ebola outbreak, as fighting in east displaces health workers, civilians."
     }
   ]
 }
